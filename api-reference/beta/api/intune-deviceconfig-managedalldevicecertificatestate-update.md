@@ -1,35 +1,37 @@
 ---
 title: Обновление Манажедаллдевицецертификатестате
 description: Обновление свойств объекта Манажедаллдевицецертификатестате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 585a4880ea0c067619ac4d294fccbb2c43392b57
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d0eb7ec8aaedde3f725c09b3eea9b4e537f3015a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42743459"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432137"
 ---
-# <a name="update-managedalldevicecertificatestate"></a><span data-ttu-id="623a0-103">Обновление Манажедаллдевицецертификатестате</span><span class="sxs-lookup"><span data-stu-id="623a0-103">Update managedAllDeviceCertificateState</span></span>
+# <a name="update-managedalldevicecertificatestate"></a><span data-ttu-id="44833-103">Обновление Манажедаллдевицецертификатестате</span><span class="sxs-lookup"><span data-stu-id="44833-103">Update managedAllDeviceCertificateState</span></span>
 
-> <span data-ttu-id="623a0-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="623a0-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="44833-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="44833-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="623a0-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="623a0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="44833-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="44833-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="623a0-106">Обновление свойств объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .</span><span class="sxs-lookup"><span data-stu-id="623a0-106">Update the properties of a [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object.</span></span>
+> <span data-ttu-id="44833-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="44833-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="623a0-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="623a0-107">Prerequisites</span></span>
-<span data-ttu-id="623a0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="623a0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="44833-107">Обновление свойств объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .</span><span class="sxs-lookup"><span data-stu-id="44833-107">Update the properties of a [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object.</span></span>
 
-|<span data-ttu-id="623a0-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="623a0-110">Permission type</span></span>|<span data-ttu-id="623a0-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="623a0-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="44833-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="44833-108">Prerequisites</span></span>
+<span data-ttu-id="44833-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="44833-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="44833-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="44833-111">Permission type</span></span>|<span data-ttu-id="44833-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="44833-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="623a0-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="623a0-112">Delegated (work or school account)</span></span>|<span data-ttu-id="623a0-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="623a0-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="623a0-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="623a0-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="623a0-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="623a0-115">Not supported.</span></span>|
-|<span data-ttu-id="623a0-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="623a0-116">Application</span></span>|<span data-ttu-id="623a0-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="623a0-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="44833-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="44833-113">Delegated (work or school account)</span></span>|<span data-ttu-id="44833-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44833-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="44833-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="44833-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="44833-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="44833-116">Not supported.</span></span>|
+|<span data-ttu-id="44833-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="44833-117">Application</span></span>|<span data-ttu-id="44833-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44833-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="623a0-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="623a0-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="44833-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="44833-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,41 +40,41 @@ ms.locfileid: "42743459"
 PATCH /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates/{managedAllDeviceCertificateStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="623a0-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="623a0-119">Request headers</span></span>
-|<span data-ttu-id="623a0-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="623a0-120">Header</span></span>|<span data-ttu-id="623a0-121">Значение</span><span class="sxs-lookup"><span data-stu-id="623a0-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="44833-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="44833-120">Request headers</span></span>
+|<span data-ttu-id="44833-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="44833-121">Header</span></span>|<span data-ttu-id="44833-122">Значение</span><span class="sxs-lookup"><span data-stu-id="44833-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="623a0-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="623a0-122">Authorization</span></span>|<span data-ttu-id="623a0-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="623a0-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="623a0-124">Accept</span><span class="sxs-lookup"><span data-stu-id="623a0-124">Accept</span></span>|<span data-ttu-id="623a0-125">application/json</span><span class="sxs-lookup"><span data-stu-id="623a0-125">application/json</span></span>|
+|<span data-ttu-id="44833-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="44833-123">Authorization</span></span>|<span data-ttu-id="44833-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="44833-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="44833-125">Accept</span><span class="sxs-lookup"><span data-stu-id="44833-125">Accept</span></span>|<span data-ttu-id="44833-126">application/json</span><span class="sxs-lookup"><span data-stu-id="44833-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="623a0-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="623a0-126">Request body</span></span>
-<span data-ttu-id="623a0-127">В тексте запроса добавьте представление объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="623a0-127">In the request body, supply a JSON representation for the [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="44833-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="44833-127">Request body</span></span>
+<span data-ttu-id="44833-128">В тексте запроса добавьте представление объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="44833-128">In the request body, supply a JSON representation for the [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object.</span></span>
 
-<span data-ttu-id="623a0-128">В следующей таблице приведены свойства, необходимые при создании [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md).</span><span class="sxs-lookup"><span data-stu-id="623a0-128">The following table shows the properties that are required when you create the [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md).</span></span>
+<span data-ttu-id="44833-129">В следующей таблице приведены свойства, необходимые при создании [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md).</span><span class="sxs-lookup"><span data-stu-id="44833-129">The following table shows the properties that are required when you create the [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md).</span></span>
 
-|<span data-ttu-id="623a0-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="623a0-129">Property</span></span>|<span data-ttu-id="623a0-130">Тип</span><span class="sxs-lookup"><span data-stu-id="623a0-130">Type</span></span>|<span data-ttu-id="623a0-131">Описание</span><span class="sxs-lookup"><span data-stu-id="623a0-131">Description</span></span>|
+|<span data-ttu-id="44833-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="44833-130">Property</span></span>|<span data-ttu-id="44833-131">Тип</span><span class="sxs-lookup"><span data-stu-id="44833-131">Type</span></span>|<span data-ttu-id="44833-132">Описание</span><span class="sxs-lookup"><span data-stu-id="44833-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="623a0-132">id</span><span class="sxs-lookup"><span data-stu-id="623a0-132">id</span></span>|<span data-ttu-id="623a0-133">Строка</span><span class="sxs-lookup"><span data-stu-id="623a0-133">String</span></span>|<span data-ttu-id="623a0-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="623a0-134">Key of the entity.</span></span>|
-|<span data-ttu-id="623a0-135">цертификатеревокестатус</span><span class="sxs-lookup"><span data-stu-id="623a0-135">certificateRevokeStatus</span></span>|[<span data-ttu-id="623a0-136">цертификатеревокатионстатус</span><span class="sxs-lookup"><span data-stu-id="623a0-136">certificateRevocationStatus</span></span>](../resources/intune-deviceconfig-certificaterevocationstatus.md)|<span data-ttu-id="623a0-137">Отзыв состояния.</span><span class="sxs-lookup"><span data-stu-id="623a0-137">Revoke status.</span></span> <span data-ttu-id="623a0-138">Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.</span><span class="sxs-lookup"><span data-stu-id="623a0-138">Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.</span></span>|
-|<span data-ttu-id="623a0-139">манажеддевицедисплайнаме</span><span class="sxs-lookup"><span data-stu-id="623a0-139">managedDeviceDisplayName</span></span>|<span data-ttu-id="623a0-140">String</span><span class="sxs-lookup"><span data-stu-id="623a0-140">String</span></span>|<span data-ttu-id="623a0-141">Отображаемое имя устройства</span><span class="sxs-lookup"><span data-stu-id="623a0-141">Device display name</span></span>|
-|<span data-ttu-id="623a0-142">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="623a0-142">userPrincipalName</span></span>|<span data-ttu-id="623a0-143">String</span><span class="sxs-lookup"><span data-stu-id="623a0-143">String</span></span>|<span data-ttu-id="623a0-144">Имя субъекта-пользователя</span><span class="sxs-lookup"><span data-stu-id="623a0-144">User principal name</span></span>|
-|<span data-ttu-id="623a0-145">цертификатикспиратиондатетиме</span><span class="sxs-lookup"><span data-stu-id="623a0-145">certificateExpirationDateTime</span></span>|<span data-ttu-id="623a0-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="623a0-146">DateTimeOffset</span></span>|<span data-ttu-id="623a0-147">Дата окончания срока действия сертификата</span><span class="sxs-lookup"><span data-stu-id="623a0-147">Certificate expiry date</span></span>|
-|<span data-ttu-id="623a0-148">цертификатеиссуернаме</span><span class="sxs-lookup"><span data-stu-id="623a0-148">certificateIssuerName</span></span>|<span data-ttu-id="623a0-149">String</span><span class="sxs-lookup"><span data-stu-id="623a0-149">String</span></span>|<span data-ttu-id="623a0-150">Издатель</span><span class="sxs-lookup"><span data-stu-id="623a0-150">Issuer</span></span>|
-|<span data-ttu-id="623a0-151">certificateThumbprint</span><span class="sxs-lookup"><span data-stu-id="623a0-151">certificateThumbprint</span></span>|<span data-ttu-id="623a0-152">String</span><span class="sxs-lookup"><span data-stu-id="623a0-152">String</span></span>|<span data-ttu-id="623a0-153">Отпечаток</span><span class="sxs-lookup"><span data-stu-id="623a0-153">Thumbprint</span></span>|
-|<span data-ttu-id="623a0-154">цертификатесериалнумбер</span><span class="sxs-lookup"><span data-stu-id="623a0-154">certificateSerialNumber</span></span>|<span data-ttu-id="623a0-155">String</span><span class="sxs-lookup"><span data-stu-id="623a0-155">String</span></span>|<span data-ttu-id="623a0-156">Серийный номер</span><span class="sxs-lookup"><span data-stu-id="623a0-156">Serial number</span></span>|
-|<span data-ttu-id="623a0-157">цертификатесубжектнаме</span><span class="sxs-lookup"><span data-stu-id="623a0-157">certificateSubjectName</span></span>|<span data-ttu-id="623a0-158">String</span><span class="sxs-lookup"><span data-stu-id="623a0-158">String</span></span>|<span data-ttu-id="623a0-159">Имя субъекта сертификата</span><span class="sxs-lookup"><span data-stu-id="623a0-159">Certificate subject name</span></span>|
-|<span data-ttu-id="623a0-160">цертификатекэйусажес</span><span class="sxs-lookup"><span data-stu-id="623a0-160">certificateKeyUsages</span></span>|<span data-ttu-id="623a0-161">Int32</span><span class="sxs-lookup"><span data-stu-id="623a0-161">Int32</span></span>|<span data-ttu-id="623a0-162">Использование ключа</span><span class="sxs-lookup"><span data-stu-id="623a0-162">Key Usage</span></span>|
-|<span data-ttu-id="623a0-163">цертификатикстендедкэйусажес</span><span class="sxs-lookup"><span data-stu-id="623a0-163">certificateExtendedKeyUsages</span></span>|<span data-ttu-id="623a0-164">String</span><span class="sxs-lookup"><span data-stu-id="623a0-164">String</span></span>|<span data-ttu-id="623a0-165">Расширенное использование ключа</span><span class="sxs-lookup"><span data-stu-id="623a0-165">Enhanced Key Usage</span></span>|
-|<span data-ttu-id="623a0-166">цертификатеиссуанцедатетиме</span><span class="sxs-lookup"><span data-stu-id="623a0-166">certificateIssuanceDateTime</span></span>|<span data-ttu-id="623a0-167">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="623a0-167">DateTimeOffset</span></span>|<span data-ttu-id="623a0-168">Дата выпуска</span><span class="sxs-lookup"><span data-stu-id="623a0-168">Issuance date</span></span>|
+|<span data-ttu-id="44833-133">id</span><span class="sxs-lookup"><span data-stu-id="44833-133">id</span></span>|<span data-ttu-id="44833-134">Строка</span><span class="sxs-lookup"><span data-stu-id="44833-134">String</span></span>|<span data-ttu-id="44833-135">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="44833-135">Key of the entity.</span></span>|
+|<span data-ttu-id="44833-136">цертификатеревокестатус</span><span class="sxs-lookup"><span data-stu-id="44833-136">certificateRevokeStatus</span></span>|[<span data-ttu-id="44833-137">цертификатеревокатионстатус</span><span class="sxs-lookup"><span data-stu-id="44833-137">certificateRevocationStatus</span></span>](../resources/intune-deviceconfig-certificaterevocationstatus.md)|<span data-ttu-id="44833-138">Отзыв состояния.</span><span class="sxs-lookup"><span data-stu-id="44833-138">Revoke status.</span></span> <span data-ttu-id="44833-139">Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.</span><span class="sxs-lookup"><span data-stu-id="44833-139">Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.</span></span>|
+|<span data-ttu-id="44833-140">манажеддевицедисплайнаме</span><span class="sxs-lookup"><span data-stu-id="44833-140">managedDeviceDisplayName</span></span>|<span data-ttu-id="44833-141">String</span><span class="sxs-lookup"><span data-stu-id="44833-141">String</span></span>|<span data-ttu-id="44833-142">Отображаемое имя устройства</span><span class="sxs-lookup"><span data-stu-id="44833-142">Device display name</span></span>|
+|<span data-ttu-id="44833-143">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="44833-143">userPrincipalName</span></span>|<span data-ttu-id="44833-144">String</span><span class="sxs-lookup"><span data-stu-id="44833-144">String</span></span>|<span data-ttu-id="44833-145">Имя субъекта-пользователя</span><span class="sxs-lookup"><span data-stu-id="44833-145">User principal name</span></span>|
+|<span data-ttu-id="44833-146">цертификатикспиратиондатетиме</span><span class="sxs-lookup"><span data-stu-id="44833-146">certificateExpirationDateTime</span></span>|<span data-ttu-id="44833-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="44833-147">DateTimeOffset</span></span>|<span data-ttu-id="44833-148">Дата окончания срока действия сертификата</span><span class="sxs-lookup"><span data-stu-id="44833-148">Certificate expiry date</span></span>|
+|<span data-ttu-id="44833-149">цертификатеиссуернаме</span><span class="sxs-lookup"><span data-stu-id="44833-149">certificateIssuerName</span></span>|<span data-ttu-id="44833-150">String</span><span class="sxs-lookup"><span data-stu-id="44833-150">String</span></span>|<span data-ttu-id="44833-151">Издатель</span><span class="sxs-lookup"><span data-stu-id="44833-151">Issuer</span></span>|
+|<span data-ttu-id="44833-152">certificateThumbprint</span><span class="sxs-lookup"><span data-stu-id="44833-152">certificateThumbprint</span></span>|<span data-ttu-id="44833-153">String</span><span class="sxs-lookup"><span data-stu-id="44833-153">String</span></span>|<span data-ttu-id="44833-154">Отпечаток</span><span class="sxs-lookup"><span data-stu-id="44833-154">Thumbprint</span></span>|
+|<span data-ttu-id="44833-155">цертификатесериалнумбер</span><span class="sxs-lookup"><span data-stu-id="44833-155">certificateSerialNumber</span></span>|<span data-ttu-id="44833-156">String</span><span class="sxs-lookup"><span data-stu-id="44833-156">String</span></span>|<span data-ttu-id="44833-157">Серийный номер</span><span class="sxs-lookup"><span data-stu-id="44833-157">Serial number</span></span>|
+|<span data-ttu-id="44833-158">цертификатесубжектнаме</span><span class="sxs-lookup"><span data-stu-id="44833-158">certificateSubjectName</span></span>|<span data-ttu-id="44833-159">String</span><span class="sxs-lookup"><span data-stu-id="44833-159">String</span></span>|<span data-ttu-id="44833-160">Имя субъекта сертификата</span><span class="sxs-lookup"><span data-stu-id="44833-160">Certificate subject name</span></span>|
+|<span data-ttu-id="44833-161">цертификатекэйусажес</span><span class="sxs-lookup"><span data-stu-id="44833-161">certificateKeyUsages</span></span>|<span data-ttu-id="44833-162">Int32</span><span class="sxs-lookup"><span data-stu-id="44833-162">Int32</span></span>|<span data-ttu-id="44833-163">Использование ключа</span><span class="sxs-lookup"><span data-stu-id="44833-163">Key Usage</span></span>|
+|<span data-ttu-id="44833-164">цертификатикстендедкэйусажес</span><span class="sxs-lookup"><span data-stu-id="44833-164">certificateExtendedKeyUsages</span></span>|<span data-ttu-id="44833-165">String</span><span class="sxs-lookup"><span data-stu-id="44833-165">String</span></span>|<span data-ttu-id="44833-166">Расширенное использование ключа</span><span class="sxs-lookup"><span data-stu-id="44833-166">Enhanced Key Usage</span></span>|
+|<span data-ttu-id="44833-167">цертификатеиссуанцедатетиме</span><span class="sxs-lookup"><span data-stu-id="44833-167">certificateIssuanceDateTime</span></span>|<span data-ttu-id="44833-168">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="44833-168">DateTimeOffset</span></span>|<span data-ttu-id="44833-169">Дата выпуска</span><span class="sxs-lookup"><span data-stu-id="44833-169">Issuance date</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="623a0-169">Отклик</span><span class="sxs-lookup"><span data-stu-id="623a0-169">Response</span></span>
-<span data-ttu-id="623a0-170">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="623a0-170">If successful, this method returns a `200 OK` response code and an updated [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="44833-170">Отклик</span><span class="sxs-lookup"><span data-stu-id="44833-170">Response</span></span>
+<span data-ttu-id="44833-171">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="44833-171">If successful, this method returns a `200 OK` response code and an updated [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="623a0-171">Пример</span><span class="sxs-lookup"><span data-stu-id="623a0-171">Example</span></span>
+## <a name="example"></a><span data-ttu-id="44833-172">Пример</span><span class="sxs-lookup"><span data-stu-id="44833-172">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="623a0-172">Запрос</span><span class="sxs-lookup"><span data-stu-id="623a0-172">Request</span></span>
-<span data-ttu-id="623a0-173">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="623a0-173">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="44833-173">Запрос</span><span class="sxs-lookup"><span data-stu-id="44833-173">Request</span></span>
+<span data-ttu-id="44833-174">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="44833-174">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates/{managedAllDeviceCertificateStateId}
 Content-type: application/json
@@ -94,8 +96,8 @@ Content-length: 735
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="623a0-174">Отклик</span><span class="sxs-lookup"><span data-stu-id="623a0-174">Response</span></span>
-<span data-ttu-id="623a0-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="623a0-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="44833-175">Отклик</span><span class="sxs-lookup"><span data-stu-id="44833-175">Response</span></span>
+<span data-ttu-id="44833-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="44833-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -117,7 +119,6 @@ Content-Length: 784
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
 
 
 

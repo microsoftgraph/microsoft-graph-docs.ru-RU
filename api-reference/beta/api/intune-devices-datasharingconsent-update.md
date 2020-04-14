@@ -1,35 +1,37 @@
 ---
 title: Обновление Даташарингконсент
 description: Обновление свойств объекта Даташарингконсент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d0e89b9acfd1211b46d356868e8ba5b1a2b4866a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e37956c7365118f6d5c33a59d911755c3247d404
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814703"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426622"
 ---
-# <a name="update-datasharingconsent"></a><span data-ttu-id="851a1-103">Обновление Даташарингконсент</span><span class="sxs-lookup"><span data-stu-id="851a1-103">Update dataSharingConsent</span></span>
+# <a name="update-datasharingconsent"></a><span data-ttu-id="ec165-103">Обновление Даташарингконсент</span><span class="sxs-lookup"><span data-stu-id="ec165-103">Update dataSharingConsent</span></span>
 
-> <span data-ttu-id="851a1-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="851a1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="ec165-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ec165-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="851a1-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="851a1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ec165-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ec165-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="851a1-106">Обновление свойств объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) .</span><span class="sxs-lookup"><span data-stu-id="851a1-106">Update the properties of a [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object.</span></span>
+> <span data-ttu-id="ec165-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ec165-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="851a1-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="851a1-107">Prerequisites</span></span>
-<span data-ttu-id="851a1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="851a1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ec165-107">Обновление свойств объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) .</span><span class="sxs-lookup"><span data-stu-id="ec165-107">Update the properties of a [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object.</span></span>
 
-|<span data-ttu-id="851a1-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="851a1-110">Permission type</span></span>|<span data-ttu-id="851a1-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="851a1-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="ec165-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="ec165-108">Prerequisites</span></span>
+<span data-ttu-id="ec165-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ec165-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="ec165-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ec165-111">Permission type</span></span>|<span data-ttu-id="ec165-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="ec165-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="851a1-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="851a1-112">Delegated (work or school account)</span></span>|<span data-ttu-id="851a1-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="851a1-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="851a1-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="851a1-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="851a1-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="851a1-115">Not supported.</span></span>|
-|<span data-ttu-id="851a1-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="851a1-116">Application</span></span>|<span data-ttu-id="851a1-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="851a1-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="ec165-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ec165-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ec165-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ec165-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="ec165-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ec165-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ec165-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ec165-116">Not supported.</span></span>|
+|<span data-ttu-id="ec165-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="ec165-117">Application</span></span>|<span data-ttu-id="ec165-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ec165-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="851a1-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="851a1-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ec165-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ec165-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,36 +40,36 @@ ms.locfileid: "42814703"
 PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="851a1-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="851a1-119">Request headers</span></span>
-|<span data-ttu-id="851a1-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="851a1-120">Header</span></span>|<span data-ttu-id="851a1-121">Значение</span><span class="sxs-lookup"><span data-stu-id="851a1-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ec165-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="ec165-120">Request headers</span></span>
+|<span data-ttu-id="ec165-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ec165-121">Header</span></span>|<span data-ttu-id="ec165-122">Значение</span><span class="sxs-lookup"><span data-stu-id="ec165-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="851a1-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="851a1-122">Authorization</span></span>|<span data-ttu-id="851a1-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="851a1-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="851a1-124">Accept</span><span class="sxs-lookup"><span data-stu-id="851a1-124">Accept</span></span>|<span data-ttu-id="851a1-125">application/json</span><span class="sxs-lookup"><span data-stu-id="851a1-125">application/json</span></span>|
+|<span data-ttu-id="ec165-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ec165-123">Authorization</span></span>|<span data-ttu-id="ec165-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ec165-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ec165-125">Accept</span><span class="sxs-lookup"><span data-stu-id="ec165-125">Accept</span></span>|<span data-ttu-id="ec165-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ec165-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="851a1-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="851a1-126">Request body</span></span>
-<span data-ttu-id="851a1-127">В тексте запроса добавьте представление объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="851a1-127">In the request body, supply a JSON representation for the [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ec165-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ec165-127">Request body</span></span>
+<span data-ttu-id="ec165-128">В тексте запроса добавьте представление объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ec165-128">In the request body, supply a JSON representation for the [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object.</span></span>
 
-<span data-ttu-id="851a1-128">В следующей таблице приведены свойства, необходимые при создании [даташарингконсент](../resources/intune-devices-datasharingconsent.md).</span><span class="sxs-lookup"><span data-stu-id="851a1-128">The following table shows the properties that are required when you create the [dataSharingConsent](../resources/intune-devices-datasharingconsent.md).</span></span>
+<span data-ttu-id="ec165-129">В следующей таблице приведены свойства, необходимые при создании [даташарингконсент](../resources/intune-devices-datasharingconsent.md).</span><span class="sxs-lookup"><span data-stu-id="ec165-129">The following table shows the properties that are required when you create the [dataSharingConsent](../resources/intune-devices-datasharingconsent.md).</span></span>
 
-|<span data-ttu-id="851a1-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="851a1-129">Property</span></span>|<span data-ttu-id="851a1-130">Тип</span><span class="sxs-lookup"><span data-stu-id="851a1-130">Type</span></span>|<span data-ttu-id="851a1-131">Описание</span><span class="sxs-lookup"><span data-stu-id="851a1-131">Description</span></span>|
+|<span data-ttu-id="ec165-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="ec165-130">Property</span></span>|<span data-ttu-id="ec165-131">Тип</span><span class="sxs-lookup"><span data-stu-id="ec165-131">Type</span></span>|<span data-ttu-id="ec165-132">Описание</span><span class="sxs-lookup"><span data-stu-id="ec165-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="851a1-132">id</span><span class="sxs-lookup"><span data-stu-id="851a1-132">id</span></span>|<span data-ttu-id="851a1-133">String</span><span class="sxs-lookup"><span data-stu-id="851a1-133">String</span></span>|<span data-ttu-id="851a1-134">Идентификатор согласия общего доступа к данным</span><span class="sxs-lookup"><span data-stu-id="851a1-134">The data sharing consent Id</span></span>|
-|<span data-ttu-id="851a1-135">сервицедисплайнаме</span><span class="sxs-lookup"><span data-stu-id="851a1-135">serviceDisplayName</span></span>|<span data-ttu-id="851a1-136">String</span><span class="sxs-lookup"><span data-stu-id="851a1-136">String</span></span>|<span data-ttu-id="851a1-137">Отображаемое имя рабочего процесса службы</span><span class="sxs-lookup"><span data-stu-id="851a1-137">The display name of the service work flow</span></span>|
-|<span data-ttu-id="851a1-138">термсурл</span><span class="sxs-lookup"><span data-stu-id="851a1-138">termsUrl</span></span>|<span data-ttu-id="851a1-139">String</span><span class="sxs-lookup"><span data-stu-id="851a1-139">String</span></span>|<span data-ttu-id="851a1-140">Термсурл для согласия общего доступа к данным</span><span class="sxs-lookup"><span data-stu-id="851a1-140">The TermsUrl for the data sharing consent</span></span>|
-|<span data-ttu-id="851a1-141">granted</span><span class="sxs-lookup"><span data-stu-id="851a1-141">granted</span></span>|<span data-ttu-id="851a1-142">Логический</span><span class="sxs-lookup"><span data-stu-id="851a1-142">Boolean</span></span>|<span data-ttu-id="851a1-143">Состояние предоставления согласия на общий доступ к данным</span><span class="sxs-lookup"><span data-stu-id="851a1-143">The granted state for the data sharing consent</span></span>|
-|<span data-ttu-id="851a1-144">грантдатетиме</span><span class="sxs-lookup"><span data-stu-id="851a1-144">grantDateTime</span></span>|<span data-ttu-id="851a1-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="851a1-145">DateTimeOffset</span></span>|<span data-ttu-id="851a1-146">Для этой учетной записи предоставлено согласие по времени</span><span class="sxs-lookup"><span data-stu-id="851a1-146">The time consent was granted for this account</span></span>|
-|<span data-ttu-id="851a1-147">грантедбюпн</span><span class="sxs-lookup"><span data-stu-id="851a1-147">grantedByUpn</span></span>|<span data-ttu-id="851a1-148">String</span><span class="sxs-lookup"><span data-stu-id="851a1-148">String</span></span>|<span data-ttu-id="851a1-149">Имя участника-пользователя, которому назначено согласие для этой учетной записи.</span><span class="sxs-lookup"><span data-stu-id="851a1-149">The Upn of the user that granted consent for this account</span></span>|
-|<span data-ttu-id="851a1-150">грантедбюсерид</span><span class="sxs-lookup"><span data-stu-id="851a1-150">grantedByUserId</span></span>|<span data-ttu-id="851a1-151">String</span><span class="sxs-lookup"><span data-stu-id="851a1-151">String</span></span>|<span data-ttu-id="851a1-152">UserId пользователя, который предоставил согласие для этой учетной записи</span><span class="sxs-lookup"><span data-stu-id="851a1-152">The UserId of the user that granted consent for this account</span></span>|
+|<span data-ttu-id="ec165-133">id</span><span class="sxs-lookup"><span data-stu-id="ec165-133">id</span></span>|<span data-ttu-id="ec165-134">String</span><span class="sxs-lookup"><span data-stu-id="ec165-134">String</span></span>|<span data-ttu-id="ec165-135">Идентификатор согласия общего доступа к данным</span><span class="sxs-lookup"><span data-stu-id="ec165-135">The data sharing consent Id</span></span>|
+|<span data-ttu-id="ec165-136">сервицедисплайнаме</span><span class="sxs-lookup"><span data-stu-id="ec165-136">serviceDisplayName</span></span>|<span data-ttu-id="ec165-137">String</span><span class="sxs-lookup"><span data-stu-id="ec165-137">String</span></span>|<span data-ttu-id="ec165-138">Отображаемое имя рабочего процесса службы</span><span class="sxs-lookup"><span data-stu-id="ec165-138">The display name of the service work flow</span></span>|
+|<span data-ttu-id="ec165-139">термсурл</span><span class="sxs-lookup"><span data-stu-id="ec165-139">termsUrl</span></span>|<span data-ttu-id="ec165-140">String</span><span class="sxs-lookup"><span data-stu-id="ec165-140">String</span></span>|<span data-ttu-id="ec165-141">Термсурл для согласия общего доступа к данным</span><span class="sxs-lookup"><span data-stu-id="ec165-141">The TermsUrl for the data sharing consent</span></span>|
+|<span data-ttu-id="ec165-142">granted</span><span class="sxs-lookup"><span data-stu-id="ec165-142">granted</span></span>|<span data-ttu-id="ec165-143">Логическое</span><span class="sxs-lookup"><span data-stu-id="ec165-143">Boolean</span></span>|<span data-ttu-id="ec165-144">Состояние предоставления согласия на общий доступ к данным</span><span class="sxs-lookup"><span data-stu-id="ec165-144">The granted state for the data sharing consent</span></span>|
+|<span data-ttu-id="ec165-145">грантдатетиме</span><span class="sxs-lookup"><span data-stu-id="ec165-145">grantDateTime</span></span>|<span data-ttu-id="ec165-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ec165-146">DateTimeOffset</span></span>|<span data-ttu-id="ec165-147">Для этой учетной записи предоставлено согласие по времени</span><span class="sxs-lookup"><span data-stu-id="ec165-147">The time consent was granted for this account</span></span>|
+|<span data-ttu-id="ec165-148">грантедбюпн</span><span class="sxs-lookup"><span data-stu-id="ec165-148">grantedByUpn</span></span>|<span data-ttu-id="ec165-149">String</span><span class="sxs-lookup"><span data-stu-id="ec165-149">String</span></span>|<span data-ttu-id="ec165-150">Имя участника-пользователя, которому назначено согласие для этой учетной записи.</span><span class="sxs-lookup"><span data-stu-id="ec165-150">The Upn of the user that granted consent for this account</span></span>|
+|<span data-ttu-id="ec165-151">грантедбюсерид</span><span class="sxs-lookup"><span data-stu-id="ec165-151">grantedByUserId</span></span>|<span data-ttu-id="ec165-152">String</span><span class="sxs-lookup"><span data-stu-id="ec165-152">String</span></span>|<span data-ttu-id="ec165-153">UserId пользователя, который предоставил согласие для этой учетной записи</span><span class="sxs-lookup"><span data-stu-id="ec165-153">The UserId of the user that granted consent for this account</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="851a1-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="851a1-153">Response</span></span>
-<span data-ttu-id="851a1-154">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="851a1-154">If successful, this method returns a `200 OK` response code and an updated [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ec165-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="ec165-154">Response</span></span>
+<span data-ttu-id="ec165-155">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ec165-155">If successful, this method returns a `200 OK` response code and an updated [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="851a1-155">Пример</span><span class="sxs-lookup"><span data-stu-id="851a1-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ec165-156">Пример</span><span class="sxs-lookup"><span data-stu-id="ec165-156">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="851a1-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="851a1-156">Request</span></span>
-<span data-ttu-id="851a1-157">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="851a1-157">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="ec165-157">Запрос</span><span class="sxs-lookup"><span data-stu-id="ec165-157">Request</span></span>
+<span data-ttu-id="ec165-158">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ec165-158">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/dataSharingConsents/{dataSharingConsentId}
 Content-type: application/json
@@ -84,8 +86,8 @@ Content-length: 333
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="851a1-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="851a1-158">Response</span></span>
-<span data-ttu-id="851a1-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="851a1-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ec165-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="ec165-159">Response</span></span>
+<span data-ttu-id="ec165-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ec165-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -102,7 +104,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

@@ -1,34 +1,36 @@
 ---
 title: Тип ресурса Деливерйоптимизатионбандвидс
 description: Типы ограничений пропускной способности
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 48bb6520da12bc6f58b82e0c81d8daf3e26feb0d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4ac3d48ac8216e55109c2686fdfb89c55053d6e7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794405"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420788"
 ---
-# <a name="deliveryoptimizationbandwidth-resource-type"></a><span data-ttu-id="591bd-103">Тип ресурса Деливерйоптимизатионбандвидс</span><span class="sxs-lookup"><span data-stu-id="591bd-103">deliveryOptimizationBandwidth resource type</span></span>
+# <a name="deliveryoptimizationbandwidth-resource-type"></a><span data-ttu-id="fc11d-103">Тип ресурса Деливерйоптимизатионбандвидс</span><span class="sxs-lookup"><span data-stu-id="fc11d-103">deliveryOptimizationBandwidth resource type</span></span>
 
-> <span data-ttu-id="591bd-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="591bd-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="fc11d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fc11d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="591bd-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="591bd-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="fc11d-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fc11d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="591bd-106">Типы ограничений пропускной способности</span><span class="sxs-lookup"><span data-stu-id="591bd-106">Bandwidth restriction types</span></span>
+> <span data-ttu-id="fc11d-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="fc11d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="591bd-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="591bd-107">Properties</span></span>
-|<span data-ttu-id="591bd-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="591bd-108">Property</span></span>|<span data-ttu-id="591bd-109">Тип</span><span class="sxs-lookup"><span data-stu-id="591bd-109">Type</span></span>|<span data-ttu-id="591bd-110">Описание</span><span class="sxs-lookup"><span data-stu-id="591bd-110">Description</span></span>|
+<span data-ttu-id="fc11d-107">Типы ограничений пропускной способности</span><span class="sxs-lookup"><span data-stu-id="fc11d-107">Bandwidth restriction types</span></span>
+
+## <a name="properties"></a><span data-ttu-id="fc11d-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="fc11d-108">Properties</span></span>
+|<span data-ttu-id="fc11d-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="fc11d-109">Property</span></span>|<span data-ttu-id="fc11d-110">Тип</span><span class="sxs-lookup"><span data-stu-id="fc11d-110">Type</span></span>|<span data-ttu-id="fc11d-111">Описание</span><span class="sxs-lookup"><span data-stu-id="fc11d-111">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="591bd-111">Связи</span><span class="sxs-lookup"><span data-stu-id="591bd-111">Relationships</span></span>
-<span data-ttu-id="591bd-112">Нет</span><span class="sxs-lookup"><span data-stu-id="591bd-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="fc11d-112">Связи</span><span class="sxs-lookup"><span data-stu-id="fc11d-112">Relationships</span></span>
+<span data-ttu-id="fc11d-113">Нет</span><span class="sxs-lookup"><span data-stu-id="fc11d-113">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="591bd-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="591bd-113">JSON Representation</span></span>
-<span data-ttu-id="591bd-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="591bd-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fc11d-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="fc11d-114">JSON Representation</span></span>
+<span data-ttu-id="fc11d-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fc11d-115">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deliveryOptimizationBandwidth"

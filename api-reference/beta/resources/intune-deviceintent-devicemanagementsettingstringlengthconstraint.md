@@ -1,39 +1,41 @@
 ---
 title: Тип ресурса Девицеманажементсеттингстрингленгсконстраинт
 description: Ограничение, ограничивающее заданный диапазон длины строки
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5e77c60950bef96fc83c3af186598a37c2e58d2a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e79a98ac2b2a250be0172e0095c83a0ccf90940f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785276"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420009"
 ---
-# <a name="devicemanagementsettingstringlengthconstraint-resource-type"></a><span data-ttu-id="a709b-103">Тип ресурса Девицеманажементсеттингстрингленгсконстраинт</span><span class="sxs-lookup"><span data-stu-id="a709b-103">deviceManagementSettingStringLengthConstraint resource type</span></span>
+# <a name="devicemanagementsettingstringlengthconstraint-resource-type"></a><span data-ttu-id="7919d-103">Тип ресурса Девицеманажементсеттингстрингленгсконстраинт</span><span class="sxs-lookup"><span data-stu-id="7919d-103">deviceManagementSettingStringLengthConstraint resource type</span></span>
 
-> <span data-ttu-id="a709b-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a709b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="7919d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7919d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="a709b-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a709b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7919d-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7919d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="a709b-106">Ограничение, ограничивающее заданный диапазон длины строки</span><span class="sxs-lookup"><span data-stu-id="a709b-106">Constraint enforcing a given string length range</span></span>
+> <span data-ttu-id="7919d-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7919d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="7919d-107">Ограничение, ограничивающее заданный диапазон длины строки</span><span class="sxs-lookup"><span data-stu-id="7919d-107">Constraint enforcing a given string length range</span></span>
 
 
-<span data-ttu-id="a709b-107">Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)</span><span class="sxs-lookup"><span data-stu-id="a709b-107">Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span></span>
+<span data-ttu-id="7919d-108">Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)</span><span class="sxs-lookup"><span data-stu-id="7919d-108">Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a709b-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="a709b-108">Properties</span></span>
-|<span data-ttu-id="a709b-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="a709b-109">Property</span></span>|<span data-ttu-id="a709b-110">Тип</span><span class="sxs-lookup"><span data-stu-id="a709b-110">Type</span></span>|<span data-ttu-id="a709b-111">Описание</span><span class="sxs-lookup"><span data-stu-id="a709b-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7919d-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="7919d-109">Properties</span></span>
+|<span data-ttu-id="7919d-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="7919d-110">Property</span></span>|<span data-ttu-id="7919d-111">Тип</span><span class="sxs-lookup"><span data-stu-id="7919d-111">Type</span></span>|<span data-ttu-id="7919d-112">Описание</span><span class="sxs-lookup"><span data-stu-id="7919d-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a709b-112">минимумленгс</span><span class="sxs-lookup"><span data-stu-id="a709b-112">minimumLength</span></span>|<span data-ttu-id="a709b-113">Int32</span><span class="sxs-lookup"><span data-stu-id="a709b-113">Int32</span></span>|<span data-ttu-id="a709b-114">Минимальная разрешенная длина строки</span><span class="sxs-lookup"><span data-stu-id="a709b-114">The minimum permitted string length</span></span>|
-|<span data-ttu-id="a709b-115">максимумленгс</span><span class="sxs-lookup"><span data-stu-id="a709b-115">maximumLength</span></span>|<span data-ttu-id="a709b-116">Int32</span><span class="sxs-lookup"><span data-stu-id="a709b-116">Int32</span></span>|<span data-ttu-id="a709b-117">Максимально допустимая длина строки</span><span class="sxs-lookup"><span data-stu-id="a709b-117">The maximum permitted string length</span></span>|
+|<span data-ttu-id="7919d-113">минимумленгс</span><span class="sxs-lookup"><span data-stu-id="7919d-113">minimumLength</span></span>|<span data-ttu-id="7919d-114">Int32</span><span class="sxs-lookup"><span data-stu-id="7919d-114">Int32</span></span>|<span data-ttu-id="7919d-115">Минимальная разрешенная длина строки</span><span class="sxs-lookup"><span data-stu-id="7919d-115">The minimum permitted string length</span></span>|
+|<span data-ttu-id="7919d-116">максимумленгс</span><span class="sxs-lookup"><span data-stu-id="7919d-116">maximumLength</span></span>|<span data-ttu-id="7919d-117">Int32</span><span class="sxs-lookup"><span data-stu-id="7919d-117">Int32</span></span>|<span data-ttu-id="7919d-118">Максимально допустимая длина строки</span><span class="sxs-lookup"><span data-stu-id="7919d-118">The maximum permitted string length</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="a709b-118">Связи</span><span class="sxs-lookup"><span data-stu-id="a709b-118">Relationships</span></span>
-<span data-ttu-id="a709b-119">Нет</span><span class="sxs-lookup"><span data-stu-id="a709b-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="7919d-119">Связи</span><span class="sxs-lookup"><span data-stu-id="7919d-119">Relationships</span></span>
+<span data-ttu-id="7919d-120">Нет</span><span class="sxs-lookup"><span data-stu-id="7919d-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a709b-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a709b-120">JSON Representation</span></span>
-<span data-ttu-id="a709b-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a709b-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7919d-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7919d-121">JSON Representation</span></span>
+<span data-ttu-id="7919d-122">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7919d-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingStringLengthConstraint"

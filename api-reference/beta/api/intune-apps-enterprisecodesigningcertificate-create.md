@@ -1,35 +1,37 @@
 ---
 title: Создание Ентерприсекодесигнингцертификате
 description: Создание нового объекта Ентерприсекодесигнингцертификате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec8ebd455e34bd83b89372ee2a5aa0e319248a50
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5b57f950e02b870202362db89379e0f0fac46121
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762156"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421739"
 ---
-# <a name="create-enterprisecodesigningcertificate"></a><span data-ttu-id="5398a-103">Создание Ентерприсекодесигнингцертификате</span><span class="sxs-lookup"><span data-stu-id="5398a-103">Create enterpriseCodeSigningCertificate</span></span>
+# <a name="create-enterprisecodesigningcertificate"></a><span data-ttu-id="4290e-103">Создание Ентерприсекодесигнингцертификате</span><span class="sxs-lookup"><span data-stu-id="4290e-103">Create enterpriseCodeSigningCertificate</span></span>
 
-> <span data-ttu-id="5398a-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5398a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="4290e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4290e-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="5398a-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="5398a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4290e-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4290e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="5398a-106">Создание нового объекта [ентерприсекодесигнингцертификате](../resources/intune-apps-enterprisecodesigningcertificate.md) .</span><span class="sxs-lookup"><span data-stu-id="5398a-106">Create a new [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) object.</span></span>
+> <span data-ttu-id="4290e-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="4290e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="5398a-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="5398a-107">Prerequisites</span></span>
-<span data-ttu-id="5398a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5398a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4290e-107">Создание нового объекта [ентерприсекодесигнингцертификате](../resources/intune-apps-enterprisecodesigningcertificate.md) .</span><span class="sxs-lookup"><span data-stu-id="4290e-107">Create a new [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) object.</span></span>
 
-|<span data-ttu-id="5398a-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5398a-110">Permission type</span></span>|<span data-ttu-id="5398a-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="5398a-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="4290e-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="4290e-108">Prerequisites</span></span>
+<span data-ttu-id="4290e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4290e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="4290e-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4290e-111">Permission type</span></span>|<span data-ttu-id="4290e-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="4290e-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5398a-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5398a-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5398a-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5398a-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="5398a-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5398a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5398a-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5398a-115">Not supported.</span></span>|
-|<span data-ttu-id="5398a-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="5398a-116">Application</span></span>|<span data-ttu-id="5398a-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5398a-117">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="4290e-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4290e-113">Delegated (work or school account)</span></span>|<span data-ttu-id="4290e-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4290e-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="4290e-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4290e-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4290e-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4290e-116">Not supported.</span></span>|
+|<span data-ttu-id="4290e-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="4290e-117">Application</span></span>|<span data-ttu-id="4290e-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4290e-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5398a-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5398a-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4290e-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4290e-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,38 +40,38 @@ ms.locfileid: "42762156"
 POST /deviceAppManagement/enterpriseCodeSigningCertificates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5398a-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="5398a-119">Request headers</span></span>
-|<span data-ttu-id="5398a-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="5398a-120">Header</span></span>|<span data-ttu-id="5398a-121">Значение</span><span class="sxs-lookup"><span data-stu-id="5398a-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4290e-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="4290e-120">Request headers</span></span>
+|<span data-ttu-id="4290e-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="4290e-121">Header</span></span>|<span data-ttu-id="4290e-122">Значение</span><span class="sxs-lookup"><span data-stu-id="4290e-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="5398a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="5398a-122">Authorization</span></span>|<span data-ttu-id="5398a-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5398a-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="5398a-124">Accept</span><span class="sxs-lookup"><span data-stu-id="5398a-124">Accept</span></span>|<span data-ttu-id="5398a-125">application/json</span><span class="sxs-lookup"><span data-stu-id="5398a-125">application/json</span></span>|
+|<span data-ttu-id="4290e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="4290e-123">Authorization</span></span>|<span data-ttu-id="4290e-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4290e-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4290e-125">Accept</span><span class="sxs-lookup"><span data-stu-id="4290e-125">Accept</span></span>|<span data-ttu-id="4290e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="4290e-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5398a-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5398a-126">Request body</span></span>
-<span data-ttu-id="5398a-127">В тексте запроса добавьте представление объекта Ентерприсекодесигнингцертификате в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5398a-127">In the request body, supply a JSON representation for the enterpriseCodeSigningCertificate object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4290e-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4290e-127">Request body</span></span>
+<span data-ttu-id="4290e-128">В тексте запроса добавьте представление объекта Ентерприсекодесигнингцертификате в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4290e-128">In the request body, supply a JSON representation for the enterpriseCodeSigningCertificate object.</span></span>
 
-<span data-ttu-id="5398a-128">В следующей таблице приведены свойства, необходимые при создании Ентерприсекодесигнингцертификате.</span><span class="sxs-lookup"><span data-stu-id="5398a-128">The following table shows the properties that are required when you create the enterpriseCodeSigningCertificate.</span></span>
+<span data-ttu-id="4290e-129">В следующей таблице приведены свойства, необходимые при создании Ентерприсекодесигнингцертификате.</span><span class="sxs-lookup"><span data-stu-id="4290e-129">The following table shows the properties that are required when you create the enterpriseCodeSigningCertificate.</span></span>
 
-|<span data-ttu-id="5398a-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="5398a-129">Property</span></span>|<span data-ttu-id="5398a-130">Тип</span><span class="sxs-lookup"><span data-stu-id="5398a-130">Type</span></span>|<span data-ttu-id="5398a-131">Описание</span><span class="sxs-lookup"><span data-stu-id="5398a-131">Description</span></span>|
+|<span data-ttu-id="4290e-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="4290e-130">Property</span></span>|<span data-ttu-id="4290e-131">Тип</span><span class="sxs-lookup"><span data-stu-id="4290e-131">Type</span></span>|<span data-ttu-id="4290e-132">Описание</span><span class="sxs-lookup"><span data-stu-id="4290e-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5398a-132">id</span><span class="sxs-lookup"><span data-stu-id="5398a-132">id</span></span>|<span data-ttu-id="5398a-133">Строка</span><span class="sxs-lookup"><span data-stu-id="5398a-133">String</span></span>|<span data-ttu-id="5398a-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="5398a-134">The key of the entity.</span></span>|
-|<span data-ttu-id="5398a-135">содержимое</span><span class="sxs-lookup"><span data-stu-id="5398a-135">content</span></span>|<span data-ttu-id="5398a-136">Binary</span><span class="sxs-lookup"><span data-stu-id="5398a-136">Binary</span></span>|<span data-ttu-id="5398a-137">Сертификат подписи кода Windows Enterprise в формате необработанных данных.</span><span class="sxs-lookup"><span data-stu-id="5398a-137">The Windows Enterprise Code-Signing Certificate in the raw data format.</span></span>|
-|<span data-ttu-id="5398a-138">status</span><span class="sxs-lookup"><span data-stu-id="5398a-138">status</span></span>|[<span data-ttu-id="5398a-139">цертификатестатус</span><span class="sxs-lookup"><span data-stu-id="5398a-139">certificateStatus</span></span>](../resources/intune-apps-certificatestatus.md)|<span data-ttu-id="5398a-140">Состояние сертификата подготовлено или не подготовлено.</span><span class="sxs-lookup"><span data-stu-id="5398a-140">The Certificate Status Provisioned or not Provisioned.</span></span> <span data-ttu-id="5398a-141">Возможные значения: `notProvisioned`, `provisioned`.</span><span class="sxs-lookup"><span data-stu-id="5398a-141">Possible values are: `notProvisioned`, `provisioned`.</span></span>|
-|<span data-ttu-id="5398a-142">subjectName</span><span class="sxs-lookup"><span data-stu-id="5398a-142">subjectName</span></span>|<span data-ttu-id="5398a-143">String</span><span class="sxs-lookup"><span data-stu-id="5398a-143">String</span></span>|<span data-ttu-id="5398a-144">Имя субъекта для сертификата.</span><span class="sxs-lookup"><span data-stu-id="5398a-144">The Subject Name for the cert.</span></span>|
-|<span data-ttu-id="5398a-145">subject</span><span class="sxs-lookup"><span data-stu-id="5398a-145">subject</span></span>|<span data-ttu-id="5398a-146">String</span><span class="sxs-lookup"><span data-stu-id="5398a-146">String</span></span>|<span data-ttu-id="5398a-147">Значение субъекта для сертификата.</span><span class="sxs-lookup"><span data-stu-id="5398a-147">The Subject Value for the cert.</span></span>|
-|<span data-ttu-id="5398a-148">иссуернаме</span><span class="sxs-lookup"><span data-stu-id="5398a-148">issuerName</span></span>|<span data-ttu-id="5398a-149">String</span><span class="sxs-lookup"><span data-stu-id="5398a-149">String</span></span>|<span data-ttu-id="5398a-150">Имя поставщика сертификата.</span><span class="sxs-lookup"><span data-stu-id="5398a-150">The Issuer Name for the cert.</span></span>|
-|<span data-ttu-id="5398a-151">имени</span><span class="sxs-lookup"><span data-stu-id="5398a-151">issuer</span></span>|<span data-ttu-id="5398a-152">String</span><span class="sxs-lookup"><span data-stu-id="5398a-152">String</span></span>|<span data-ttu-id="5398a-153">Значение издателя для сертификата.</span><span class="sxs-lookup"><span data-stu-id="5398a-153">The Issuer value for the cert.</span></span>|
-|<span data-ttu-id="5398a-154">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="5398a-154">expirationDateTime</span></span>|<span data-ttu-id="5398a-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5398a-155">DateTimeOffset</span></span>|<span data-ttu-id="5398a-156">Дата окончания срока действия сертификата.</span><span class="sxs-lookup"><span data-stu-id="5398a-156">The Cert Expiration Date.</span></span>|
-|<span data-ttu-id="5398a-157">уплоаддатетиме</span><span class="sxs-lookup"><span data-stu-id="5398a-157">uploadDateTime</span></span>|<span data-ttu-id="5398a-158">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5398a-158">DateTimeOffset</span></span>|<span data-ttu-id="5398a-159">Дата и время отправки сертификата соконструирования.</span><span class="sxs-lookup"><span data-stu-id="5398a-159">The date time of CodeSigning Cert when it is uploaded.</span></span>|
+|<span data-ttu-id="4290e-133">id</span><span class="sxs-lookup"><span data-stu-id="4290e-133">id</span></span>|<span data-ttu-id="4290e-134">Строка</span><span class="sxs-lookup"><span data-stu-id="4290e-134">String</span></span>|<span data-ttu-id="4290e-135">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="4290e-135">The key of the entity.</span></span>|
+|<span data-ttu-id="4290e-136">содержимое</span><span class="sxs-lookup"><span data-stu-id="4290e-136">content</span></span>|<span data-ttu-id="4290e-137">Binary</span><span class="sxs-lookup"><span data-stu-id="4290e-137">Binary</span></span>|<span data-ttu-id="4290e-138">Сертификат подписи кода Windows Enterprise в формате необработанных данных.</span><span class="sxs-lookup"><span data-stu-id="4290e-138">The Windows Enterprise Code-Signing Certificate in the raw data format.</span></span>|
+|<span data-ttu-id="4290e-139">status</span><span class="sxs-lookup"><span data-stu-id="4290e-139">status</span></span>|[<span data-ttu-id="4290e-140">цертификатестатус</span><span class="sxs-lookup"><span data-stu-id="4290e-140">certificateStatus</span></span>](../resources/intune-apps-certificatestatus.md)|<span data-ttu-id="4290e-141">Состояние сертификата подготовлено или не подготовлено.</span><span class="sxs-lookup"><span data-stu-id="4290e-141">The Certificate Status Provisioned or not Provisioned.</span></span> <span data-ttu-id="4290e-142">Возможные значения: `notProvisioned`, `provisioned`.</span><span class="sxs-lookup"><span data-stu-id="4290e-142">Possible values are: `notProvisioned`, `provisioned`.</span></span>|
+|<span data-ttu-id="4290e-143">subjectName</span><span class="sxs-lookup"><span data-stu-id="4290e-143">subjectName</span></span>|<span data-ttu-id="4290e-144">String</span><span class="sxs-lookup"><span data-stu-id="4290e-144">String</span></span>|<span data-ttu-id="4290e-145">Имя субъекта для сертификата.</span><span class="sxs-lookup"><span data-stu-id="4290e-145">The Subject Name for the cert.</span></span>|
+|<span data-ttu-id="4290e-146">subject</span><span class="sxs-lookup"><span data-stu-id="4290e-146">subject</span></span>|<span data-ttu-id="4290e-147">String</span><span class="sxs-lookup"><span data-stu-id="4290e-147">String</span></span>|<span data-ttu-id="4290e-148">Значение субъекта для сертификата.</span><span class="sxs-lookup"><span data-stu-id="4290e-148">The Subject Value for the cert.</span></span>|
+|<span data-ttu-id="4290e-149">иссуернаме</span><span class="sxs-lookup"><span data-stu-id="4290e-149">issuerName</span></span>|<span data-ttu-id="4290e-150">String</span><span class="sxs-lookup"><span data-stu-id="4290e-150">String</span></span>|<span data-ttu-id="4290e-151">Имя поставщика сертификата.</span><span class="sxs-lookup"><span data-stu-id="4290e-151">The Issuer Name for the cert.</span></span>|
+|<span data-ttu-id="4290e-152">имени</span><span class="sxs-lookup"><span data-stu-id="4290e-152">issuer</span></span>|<span data-ttu-id="4290e-153">String</span><span class="sxs-lookup"><span data-stu-id="4290e-153">String</span></span>|<span data-ttu-id="4290e-154">Значение издателя для сертификата.</span><span class="sxs-lookup"><span data-stu-id="4290e-154">The Issuer value for the cert.</span></span>|
+|<span data-ttu-id="4290e-155">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="4290e-155">expirationDateTime</span></span>|<span data-ttu-id="4290e-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4290e-156">DateTimeOffset</span></span>|<span data-ttu-id="4290e-157">Дата окончания срока действия сертификата.</span><span class="sxs-lookup"><span data-stu-id="4290e-157">The Cert Expiration Date.</span></span>|
+|<span data-ttu-id="4290e-158">уплоаддатетиме</span><span class="sxs-lookup"><span data-stu-id="4290e-158">uploadDateTime</span></span>|<span data-ttu-id="4290e-159">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4290e-159">DateTimeOffset</span></span>|<span data-ttu-id="4290e-160">Дата и время отправки сертификата соконструирования.</span><span class="sxs-lookup"><span data-stu-id="4290e-160">The date time of CodeSigning Cert when it is uploaded.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="5398a-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="5398a-160">Response</span></span>
-<span data-ttu-id="5398a-161">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ентерприсекодесигнингцертификате](../resources/intune-apps-enterprisecodesigningcertificate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5398a-161">If successful, this method returns a `201 Created` response code and a [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4290e-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="4290e-161">Response</span></span>
+<span data-ttu-id="4290e-162">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ентерприсекодесигнингцертификате](../resources/intune-apps-enterprisecodesigningcertificate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="4290e-162">If successful, this method returns a `201 Created` response code and a [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5398a-162">Пример</span><span class="sxs-lookup"><span data-stu-id="5398a-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4290e-163">Пример</span><span class="sxs-lookup"><span data-stu-id="4290e-163">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="5398a-163">Запрос</span><span class="sxs-lookup"><span data-stu-id="5398a-163">Request</span></span>
-<span data-ttu-id="5398a-164">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5398a-164">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="4290e-164">Запрос</span><span class="sxs-lookup"><span data-stu-id="4290e-164">Request</span></span>
+<span data-ttu-id="4290e-165">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4290e-165">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates
 Content-type: application/json
@@ -88,8 +90,8 @@ Content-length: 390
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="5398a-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="5398a-165">Response</span></span>
-<span data-ttu-id="5398a-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5398a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4290e-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="4290e-166">Response</span></span>
+<span data-ttu-id="4290e-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4290e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -108,7 +110,6 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

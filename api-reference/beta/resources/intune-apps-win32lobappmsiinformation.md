@@ -1,41 +1,43 @@
 ---
 title: Тип ресурса win32LobAppMsiInformation
 description: Содержит свойства приложения MSI для приложения Win32.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd710b166bd1171ed17a2deef7648e580d578301
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 151b0d756258b3c1b5911ab8719c3f72a6e7b263
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797642"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422968"
 ---
-# <a name="win32lobappmsiinformation-resource-type"></a><span data-ttu-id="ac10d-103">Тип ресурса win32LobAppMsiInformation</span><span class="sxs-lookup"><span data-stu-id="ac10d-103">win32LobAppMsiInformation resource type</span></span>
+# <a name="win32lobappmsiinformation-resource-type"></a><span data-ttu-id="05434-103">Тип ресурса win32LobAppMsiInformation</span><span class="sxs-lookup"><span data-stu-id="05434-103">win32LobAppMsiInformation resource type</span></span>
 
-> <span data-ttu-id="ac10d-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ac10d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="05434-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="05434-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ac10d-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ac10d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="05434-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="05434-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="ac10d-106">Содержит свойства приложения MSI для приложения Win32.</span><span class="sxs-lookup"><span data-stu-id="ac10d-106">Contains MSI app properties for a Win32 App.</span></span>
+> <span data-ttu-id="05434-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="05434-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ac10d-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="ac10d-107">Properties</span></span>
-|<span data-ttu-id="ac10d-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="ac10d-108">Property</span></span>|<span data-ttu-id="ac10d-109">Тип</span><span class="sxs-lookup"><span data-stu-id="ac10d-109">Type</span></span>|<span data-ttu-id="ac10d-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ac10d-110">Description</span></span>|
+<span data-ttu-id="05434-107">Содержит свойства приложения MSI для приложения Win32.</span><span class="sxs-lookup"><span data-stu-id="05434-107">Contains MSI app properties for a Win32 App.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="05434-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="05434-108">Properties</span></span>
+|<span data-ttu-id="05434-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="05434-109">Property</span></span>|<span data-ttu-id="05434-110">Тип</span><span class="sxs-lookup"><span data-stu-id="05434-110">Type</span></span>|<span data-ttu-id="05434-111">Описание</span><span class="sxs-lookup"><span data-stu-id="05434-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ac10d-111">productCode</span><span class="sxs-lookup"><span data-stu-id="ac10d-111">productCode</span></span>|<span data-ttu-id="ac10d-112">String</span><span class="sxs-lookup"><span data-stu-id="ac10d-112">String</span></span>|<span data-ttu-id="ac10d-113">Код продукта MSI.</span><span class="sxs-lookup"><span data-stu-id="ac10d-113">The MSI product code.</span></span>|
-|<span data-ttu-id="ac10d-114">productVersion</span><span class="sxs-lookup"><span data-stu-id="ac10d-114">productVersion</span></span>|<span data-ttu-id="ac10d-115">String</span><span class="sxs-lookup"><span data-stu-id="ac10d-115">String</span></span>|<span data-ttu-id="ac10d-116">Версия продукта MSI.</span><span class="sxs-lookup"><span data-stu-id="ac10d-116">The MSI product version.</span></span>|
-|<span data-ttu-id="ac10d-117">upgradeCode</span><span class="sxs-lookup"><span data-stu-id="ac10d-117">upgradeCode</span></span>|<span data-ttu-id="ac10d-118">String</span><span class="sxs-lookup"><span data-stu-id="ac10d-118">String</span></span>|<span data-ttu-id="ac10d-119">Код обновления MSI.</span><span class="sxs-lookup"><span data-stu-id="ac10d-119">The MSI upgrade code.</span></span>|
-|<span data-ttu-id="ac10d-120">рекуиресребут</span><span class="sxs-lookup"><span data-stu-id="ac10d-120">requiresReboot</span></span>|<span data-ttu-id="ac10d-121">Логический</span><span class="sxs-lookup"><span data-stu-id="ac10d-121">Boolean</span></span>|<span data-ttu-id="ac10d-122">Требует ли приложение MSI перезагрузку компьютера для завершения установки.</span><span class="sxs-lookup"><span data-stu-id="ac10d-122">Whether the MSI app requires the machine to reboot to complete installation.</span></span>|
-|<span data-ttu-id="ac10d-123">паккажетипе</span><span class="sxs-lookup"><span data-stu-id="ac10d-123">packageType</span></span>|[<span data-ttu-id="ac10d-124">win32LobAppMsiPackageType</span><span class="sxs-lookup"><span data-stu-id="ac10d-124">win32LobAppMsiPackageType</span></span>](../resources/intune-apps-win32lobappmsipackagetype.md)|<span data-ttu-id="ac10d-125">Тип пакета MSI.</span><span class="sxs-lookup"><span data-stu-id="ac10d-125">The MSI package type.</span></span> <span data-ttu-id="ac10d-126">Возможные значения: `perMachine`, `perUser`, `dualPurpose`.</span><span class="sxs-lookup"><span data-stu-id="ac10d-126">Possible values are: `perMachine`, `perUser`, `dualPurpose`.</span></span>|
-|<span data-ttu-id="ac10d-127">productName</span><span class="sxs-lookup"><span data-stu-id="ac10d-127">productName</span></span>|<span data-ttu-id="ac10d-128">String</span><span class="sxs-lookup"><span data-stu-id="ac10d-128">String</span></span>|<span data-ttu-id="ac10d-129">Имя продукта MSI.</span><span class="sxs-lookup"><span data-stu-id="ac10d-129">The MSI product name.</span></span>|
-|<span data-ttu-id="ac10d-130">publisher</span><span class="sxs-lookup"><span data-stu-id="ac10d-130">publisher</span></span>|<span data-ttu-id="ac10d-131">String</span><span class="sxs-lookup"><span data-stu-id="ac10d-131">String</span></span>|<span data-ttu-id="ac10d-132">Издатель MSI.</span><span class="sxs-lookup"><span data-stu-id="ac10d-132">The MSI publisher.</span></span>|
+|<span data-ttu-id="05434-112">productCode</span><span class="sxs-lookup"><span data-stu-id="05434-112">productCode</span></span>|<span data-ttu-id="05434-113">String</span><span class="sxs-lookup"><span data-stu-id="05434-113">String</span></span>|<span data-ttu-id="05434-114">Код продукта MSI.</span><span class="sxs-lookup"><span data-stu-id="05434-114">The MSI product code.</span></span>|
+|<span data-ttu-id="05434-115">productVersion</span><span class="sxs-lookup"><span data-stu-id="05434-115">productVersion</span></span>|<span data-ttu-id="05434-116">String</span><span class="sxs-lookup"><span data-stu-id="05434-116">String</span></span>|<span data-ttu-id="05434-117">Версия продукта MSI.</span><span class="sxs-lookup"><span data-stu-id="05434-117">The MSI product version.</span></span>|
+|<span data-ttu-id="05434-118">upgradeCode</span><span class="sxs-lookup"><span data-stu-id="05434-118">upgradeCode</span></span>|<span data-ttu-id="05434-119">String</span><span class="sxs-lookup"><span data-stu-id="05434-119">String</span></span>|<span data-ttu-id="05434-120">Код обновления MSI.</span><span class="sxs-lookup"><span data-stu-id="05434-120">The MSI upgrade code.</span></span>|
+|<span data-ttu-id="05434-121">рекуиресребут</span><span class="sxs-lookup"><span data-stu-id="05434-121">requiresReboot</span></span>|<span data-ttu-id="05434-122">Логическое</span><span class="sxs-lookup"><span data-stu-id="05434-122">Boolean</span></span>|<span data-ttu-id="05434-123">Требует ли приложение MSI перезагрузку компьютера для завершения установки.</span><span class="sxs-lookup"><span data-stu-id="05434-123">Whether the MSI app requires the machine to reboot to complete installation.</span></span>|
+|<span data-ttu-id="05434-124">паккажетипе</span><span class="sxs-lookup"><span data-stu-id="05434-124">packageType</span></span>|[<span data-ttu-id="05434-125">win32LobAppMsiPackageType</span><span class="sxs-lookup"><span data-stu-id="05434-125">win32LobAppMsiPackageType</span></span>](../resources/intune-apps-win32lobappmsipackagetype.md)|<span data-ttu-id="05434-126">Тип пакета MSI.</span><span class="sxs-lookup"><span data-stu-id="05434-126">The MSI package type.</span></span> <span data-ttu-id="05434-127">Возможные значения: `perMachine`, `perUser`, `dualPurpose`.</span><span class="sxs-lookup"><span data-stu-id="05434-127">Possible values are: `perMachine`, `perUser`, `dualPurpose`.</span></span>|
+|<span data-ttu-id="05434-128">productName</span><span class="sxs-lookup"><span data-stu-id="05434-128">productName</span></span>|<span data-ttu-id="05434-129">String</span><span class="sxs-lookup"><span data-stu-id="05434-129">String</span></span>|<span data-ttu-id="05434-130">Имя продукта MSI.</span><span class="sxs-lookup"><span data-stu-id="05434-130">The MSI product name.</span></span>|
+|<span data-ttu-id="05434-131">publisher</span><span class="sxs-lookup"><span data-stu-id="05434-131">publisher</span></span>|<span data-ttu-id="05434-132">String</span><span class="sxs-lookup"><span data-stu-id="05434-132">String</span></span>|<span data-ttu-id="05434-133">Издатель MSI.</span><span class="sxs-lookup"><span data-stu-id="05434-133">The MSI publisher.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ac10d-133">Связи</span><span class="sxs-lookup"><span data-stu-id="ac10d-133">Relationships</span></span>
-<span data-ttu-id="ac10d-134">Нет</span><span class="sxs-lookup"><span data-stu-id="ac10d-134">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="05434-134">Связи</span><span class="sxs-lookup"><span data-stu-id="05434-134">Relationships</span></span>
+<span data-ttu-id="05434-135">Нет</span><span class="sxs-lookup"><span data-stu-id="05434-135">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ac10d-135">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ac10d-135">JSON Representation</span></span>
-<span data-ttu-id="ac10d-136">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ac10d-136">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="05434-136">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="05434-136">JSON Representation</span></span>
+<span data-ttu-id="05434-137">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="05434-137">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.win32LobAppMsiInformation"

@@ -1,35 +1,37 @@
 ---
 title: Обновление Девицехеалсскрипт
 description: Обновление свойств объекта Девицехеалсскрипт.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ec2609c17259dcfb04e06aa115be0fe99e33c20
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: e93ee667a8a4b479b8e4b8bde78b7808a7acea0d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062065"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426389"
 ---
-# <a name="update-devicehealthscript"></a><span data-ttu-id="83a58-103">Обновление Девицехеалсскрипт</span><span class="sxs-lookup"><span data-stu-id="83a58-103">Update deviceHealthScript</span></span>
+# <a name="update-devicehealthscript"></a><span data-ttu-id="f2c68-103">Обновление Девицехеалсскрипт</span><span class="sxs-lookup"><span data-stu-id="f2c68-103">Update deviceHealthScript</span></span>
 
-> <span data-ttu-id="83a58-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="83a58-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="f2c68-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f2c68-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="83a58-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="83a58-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f2c68-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f2c68-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="83a58-106">Обновление свойств объекта [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) .</span><span class="sxs-lookup"><span data-stu-id="83a58-106">Update the properties of a [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) object.</span></span>
+> <span data-ttu-id="f2c68-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f2c68-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="83a58-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="83a58-107">Prerequisites</span></span>
-<span data-ttu-id="83a58-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="83a58-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f2c68-107">Обновление свойств объекта [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) .</span><span class="sxs-lookup"><span data-stu-id="f2c68-107">Update the properties of a [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) object.</span></span>
 
-|<span data-ttu-id="83a58-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="83a58-110">Permission type</span></span>|<span data-ttu-id="83a58-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="83a58-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="f2c68-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="f2c68-108">Prerequisites</span></span>
+<span data-ttu-id="f2c68-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f2c68-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="f2c68-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f2c68-111">Permission type</span></span>|<span data-ttu-id="f2c68-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="f2c68-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="83a58-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="83a58-112">Delegated (work or school account)</span></span>|<span data-ttu-id="83a58-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="83a58-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="83a58-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="83a58-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="83a58-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="83a58-115">Not supported.</span></span>|
-|<span data-ttu-id="83a58-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="83a58-116">Application</span></span>|<span data-ttu-id="83a58-117">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="83a58-117">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="f2c68-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f2c68-113">Delegated (work or school account)</span></span>|<span data-ttu-id="f2c68-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="f2c68-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="f2c68-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f2c68-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f2c68-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f2c68-116">Not supported.</span></span>|
+|<span data-ttu-id="f2c68-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="f2c68-117">Application</span></span>|<span data-ttu-id="f2c68-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="f2c68-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="83a58-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="83a58-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f2c68-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f2c68-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,41 +40,44 @@ ms.locfileid: "43062065"
 PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="83a58-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="83a58-119">Request headers</span></span>
-|<span data-ttu-id="83a58-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="83a58-120">Header</span></span>|<span data-ttu-id="83a58-121">Значение</span><span class="sxs-lookup"><span data-stu-id="83a58-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f2c68-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="f2c68-120">Request headers</span></span>
+|<span data-ttu-id="f2c68-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f2c68-121">Header</span></span>|<span data-ttu-id="f2c68-122">Значение</span><span class="sxs-lookup"><span data-stu-id="f2c68-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="83a58-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="83a58-122">Authorization</span></span>|<span data-ttu-id="83a58-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="83a58-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="83a58-124">Accept</span><span class="sxs-lookup"><span data-stu-id="83a58-124">Accept</span></span>|<span data-ttu-id="83a58-125">application/json</span><span class="sxs-lookup"><span data-stu-id="83a58-125">application/json</span></span>|
+|<span data-ttu-id="f2c68-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f2c68-123">Authorization</span></span>|<span data-ttu-id="f2c68-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f2c68-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f2c68-125">Accept</span><span class="sxs-lookup"><span data-stu-id="f2c68-125">Accept</span></span>|<span data-ttu-id="f2c68-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f2c68-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="83a58-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="83a58-126">Request body</span></span>
-<span data-ttu-id="83a58-127">В тексте запроса добавьте представление объекта [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="83a58-127">In the request body, supply a JSON representation for the [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f2c68-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f2c68-127">Request body</span></span>
+<span data-ttu-id="f2c68-128">В тексте запроса добавьте представление объекта [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f2c68-128">In the request body, supply a JSON representation for the [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) object.</span></span>
 
-<span data-ttu-id="83a58-128">В следующей таблице приведены свойства, необходимые при создании [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md).</span><span class="sxs-lookup"><span data-stu-id="83a58-128">The following table shows the properties that are required when you create the [deviceHealthScript](../resources/intune-devices-devicehealthscript.md).</span></span>
+<span data-ttu-id="f2c68-129">В следующей таблице приведены свойства, необходимые при создании [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md).</span><span class="sxs-lookup"><span data-stu-id="f2c68-129">The following table shows the properties that are required when you create the [deviceHealthScript](../resources/intune-devices-devicehealthscript.md).</span></span>
 
-|<span data-ttu-id="83a58-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="83a58-129">Property</span></span>|<span data-ttu-id="83a58-130">Тип</span><span class="sxs-lookup"><span data-stu-id="83a58-130">Type</span></span>|<span data-ttu-id="83a58-131">Описание</span><span class="sxs-lookup"><span data-stu-id="83a58-131">Description</span></span>|
+|<span data-ttu-id="f2c68-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="f2c68-130">Property</span></span>|<span data-ttu-id="f2c68-131">Тип</span><span class="sxs-lookup"><span data-stu-id="f2c68-131">Type</span></span>|<span data-ttu-id="f2c68-132">Описание</span><span class="sxs-lookup"><span data-stu-id="f2c68-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="83a58-132">id</span><span class="sxs-lookup"><span data-stu-id="83a58-132">id</span></span>|<span data-ttu-id="83a58-133">Строка</span><span class="sxs-lookup"><span data-stu-id="83a58-133">String</span></span>|<span data-ttu-id="83a58-134">Уникальный идентификатор сценария работоспособности устройства</span><span class="sxs-lookup"><span data-stu-id="83a58-134">Unique Identifier for the device health script</span></span>|
-|<span data-ttu-id="83a58-135">publisher</span><span class="sxs-lookup"><span data-stu-id="83a58-135">publisher</span></span>|<span data-ttu-id="83a58-136">String</span><span class="sxs-lookup"><span data-stu-id="83a58-136">String</span></span>|<span data-ttu-id="83a58-137">Имя издателя сценария работоспособности устройства</span><span class="sxs-lookup"><span data-stu-id="83a58-137">Name of the device health script publisher</span></span>|
-|<span data-ttu-id="83a58-138">displayName</span><span class="sxs-lookup"><span data-stu-id="83a58-138">displayName</span></span>|<span data-ttu-id="83a58-139">Строка</span><span class="sxs-lookup"><span data-stu-id="83a58-139">String</span></span>|<span data-ttu-id="83a58-140">Имя сценария работоспособности устройства</span><span class="sxs-lookup"><span data-stu-id="83a58-140">Name of the device health script</span></span>|
-|<span data-ttu-id="83a58-141">description</span><span class="sxs-lookup"><span data-stu-id="83a58-141">description</span></span>|<span data-ttu-id="83a58-142">String</span><span class="sxs-lookup"><span data-stu-id="83a58-142">String</span></span>|<span data-ttu-id="83a58-143">Описание сценария работоспособности устройства</span><span class="sxs-lookup"><span data-stu-id="83a58-143">Description of the device health script</span></span>|
-|<span data-ttu-id="83a58-144">детектионскриптконтент</span><span class="sxs-lookup"><span data-stu-id="83a58-144">detectionScriptContent</span></span>|<span data-ttu-id="83a58-145">Binary</span><span class="sxs-lookup"><span data-stu-id="83a58-145">Binary</span></span>|<span data-ttu-id="83a58-146">Весь контент скрипта обнаружения PowerShell</span><span class="sxs-lookup"><span data-stu-id="83a58-146">The entire content of the detection powershell script</span></span>|
-|<span data-ttu-id="83a58-147">ремедиатионскриптконтент</span><span class="sxs-lookup"><span data-stu-id="83a58-147">remediationScriptContent</span></span>|<span data-ttu-id="83a58-148">Binary</span><span class="sxs-lookup"><span data-stu-id="83a58-148">Binary</span></span>|<span data-ttu-id="83a58-149">Все содержимое скрипта PowerShell об исправлении</span><span class="sxs-lookup"><span data-stu-id="83a58-149">The entire content of the remediation powershell script</span></span>|
-|<span data-ttu-id="83a58-150">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="83a58-150">createdDateTime</span></span>|<span data-ttu-id="83a58-151">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="83a58-151">DateTimeOffset</span></span>|<span data-ttu-id="83a58-152">Метка времени создания сценария работоспособности устройства.</span><span class="sxs-lookup"><span data-stu-id="83a58-152">The timestamp of when the device health script was created.</span></span> <span data-ttu-id="83a58-153">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="83a58-153">This property is read-only.</span></span>|
-|<span data-ttu-id="83a58-154">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="83a58-154">lastModifiedDateTime</span></span>|<span data-ttu-id="83a58-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="83a58-155">DateTimeOffset</span></span>|<span data-ttu-id="83a58-156">Метка времени изменения сценария работоспособности устройства.</span><span class="sxs-lookup"><span data-stu-id="83a58-156">The timestamp of when the device health script was modified.</span></span> <span data-ttu-id="83a58-157">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="83a58-157">This property is read-only.</span></span>|
-|<span data-ttu-id="83a58-158">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="83a58-158">runAsAccount</span></span>|[<span data-ttu-id="83a58-159">рунасаккаунттипе</span><span class="sxs-lookup"><span data-stu-id="83a58-159">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="83a58-160">Указывает тип контекста выполнения.</span><span class="sxs-lookup"><span data-stu-id="83a58-160">Indicates the type of execution context.</span></span> <span data-ttu-id="83a58-161">Возможные значения: `system`, `user`.</span><span class="sxs-lookup"><span data-stu-id="83a58-161">Possible values are: `system`, `user`.</span></span>|
-|<span data-ttu-id="83a58-162">Свойства enforcesignaturecheck</span><span class="sxs-lookup"><span data-stu-id="83a58-162">enforceSignatureCheck</span></span>|<span data-ttu-id="83a58-163">Boolean</span><span class="sxs-lookup"><span data-stu-id="83a58-163">Boolean</span></span>|<span data-ttu-id="83a58-164">Указывает, нужно ли проверять подпись скрипта</span><span class="sxs-lookup"><span data-stu-id="83a58-164">Indicate whether the script signature needs be checked</span></span>|
-|<span data-ttu-id="83a58-165">runAs32Bit</span><span class="sxs-lookup"><span data-stu-id="83a58-165">runAs32Bit</span></span>|<span data-ttu-id="83a58-166">Boolean</span><span class="sxs-lookup"><span data-stu-id="83a58-166">Boolean</span></span>|<span data-ttu-id="83a58-167">Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные</span><span class="sxs-lookup"><span data-stu-id="83a58-167">Indicate whether PowerShell script(s) should run as 32-bit</span></span>|
-|<span data-ttu-id="83a58-168">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="83a58-168">roleScopeTagIds</span></span>|<span data-ttu-id="83a58-169">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="83a58-169">String collection</span></span>|<span data-ttu-id="83a58-170">Список идентификаторов тегов области для сценария работоспособности устройства</span><span class="sxs-lookup"><span data-stu-id="83a58-170">List of Scope Tag IDs for the device health script</span></span>|
+|<span data-ttu-id="f2c68-133">id</span><span class="sxs-lookup"><span data-stu-id="f2c68-133">id</span></span>|<span data-ttu-id="f2c68-134">String</span><span class="sxs-lookup"><span data-stu-id="f2c68-134">String</span></span>|<span data-ttu-id="f2c68-135">Уникальный идентификатор сценария работоспособности устройства</span><span class="sxs-lookup"><span data-stu-id="f2c68-135">Unique Identifier for the device health script</span></span>|
+|<span data-ttu-id="f2c68-136">publisher</span><span class="sxs-lookup"><span data-stu-id="f2c68-136">publisher</span></span>|<span data-ttu-id="f2c68-137">String</span><span class="sxs-lookup"><span data-stu-id="f2c68-137">String</span></span>|<span data-ttu-id="f2c68-138">Имя издателя сценария работоспособности устройства</span><span class="sxs-lookup"><span data-stu-id="f2c68-138">Name of the device health script publisher</span></span>|
+|<span data-ttu-id="f2c68-139">version</span><span class="sxs-lookup"><span data-stu-id="f2c68-139">version</span></span>|<span data-ttu-id="f2c68-140">String</span><span class="sxs-lookup"><span data-stu-id="f2c68-140">String</span></span>|<span data-ttu-id="f2c68-141">Версия сценария работоспособности устройства</span><span class="sxs-lookup"><span data-stu-id="f2c68-141">Version of the device health script</span></span>|
+|<span data-ttu-id="f2c68-142">displayName</span><span class="sxs-lookup"><span data-stu-id="f2c68-142">displayName</span></span>|<span data-ttu-id="f2c68-143">Строка</span><span class="sxs-lookup"><span data-stu-id="f2c68-143">String</span></span>|<span data-ttu-id="f2c68-144">Имя сценария работоспособности устройства</span><span class="sxs-lookup"><span data-stu-id="f2c68-144">Name of the device health script</span></span>|
+|<span data-ttu-id="f2c68-145">description</span><span class="sxs-lookup"><span data-stu-id="f2c68-145">description</span></span>|<span data-ttu-id="f2c68-146">String</span><span class="sxs-lookup"><span data-stu-id="f2c68-146">String</span></span>|<span data-ttu-id="f2c68-147">Описание сценария работоспособности устройства</span><span class="sxs-lookup"><span data-stu-id="f2c68-147">Description of the device health script</span></span>|
+|<span data-ttu-id="f2c68-148">детектионскриптконтент</span><span class="sxs-lookup"><span data-stu-id="f2c68-148">detectionScriptContent</span></span>|<span data-ttu-id="f2c68-149">Binary</span><span class="sxs-lookup"><span data-stu-id="f2c68-149">Binary</span></span>|<span data-ttu-id="f2c68-150">Весь контент скрипта обнаружения PowerShell</span><span class="sxs-lookup"><span data-stu-id="f2c68-150">The entire content of the detection powershell script</span></span>|
+|<span data-ttu-id="f2c68-151">ремедиатионскриптконтент</span><span class="sxs-lookup"><span data-stu-id="f2c68-151">remediationScriptContent</span></span>|<span data-ttu-id="f2c68-152">Binary</span><span class="sxs-lookup"><span data-stu-id="f2c68-152">Binary</span></span>|<span data-ttu-id="f2c68-153">Все содержимое скрипта PowerShell об исправлении</span><span class="sxs-lookup"><span data-stu-id="f2c68-153">The entire content of the remediation powershell script</span></span>|
+|<span data-ttu-id="f2c68-154">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="f2c68-154">createdDateTime</span></span>|<span data-ttu-id="f2c68-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f2c68-155">DateTimeOffset</span></span>|<span data-ttu-id="f2c68-156">Метка времени создания сценария работоспособности устройства.</span><span class="sxs-lookup"><span data-stu-id="f2c68-156">The timestamp of when the device health script was created.</span></span> <span data-ttu-id="f2c68-157">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="f2c68-157">This property is read-only.</span></span>|
+|<span data-ttu-id="f2c68-158">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="f2c68-158">lastModifiedDateTime</span></span>|<span data-ttu-id="f2c68-159">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f2c68-159">DateTimeOffset</span></span>|<span data-ttu-id="f2c68-160">Метка времени изменения сценария работоспособности устройства.</span><span class="sxs-lookup"><span data-stu-id="f2c68-160">The timestamp of when the device health script was modified.</span></span> <span data-ttu-id="f2c68-161">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="f2c68-161">This property is read-only.</span></span>|
+|<span data-ttu-id="f2c68-162">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="f2c68-162">runAsAccount</span></span>|[<span data-ttu-id="f2c68-163">рунасаккаунттипе</span><span class="sxs-lookup"><span data-stu-id="f2c68-163">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="f2c68-164">Указывает тип контекста выполнения.</span><span class="sxs-lookup"><span data-stu-id="f2c68-164">Indicates the type of execution context.</span></span> <span data-ttu-id="f2c68-165">Возможные значения: `system`, `user`.</span><span class="sxs-lookup"><span data-stu-id="f2c68-165">Possible values are: `system`, `user`.</span></span>|
+|<span data-ttu-id="f2c68-166">Свойства enforcesignaturecheck</span><span class="sxs-lookup"><span data-stu-id="f2c68-166">enforceSignatureCheck</span></span>|<span data-ttu-id="f2c68-167">Логическое</span><span class="sxs-lookup"><span data-stu-id="f2c68-167">Boolean</span></span>|<span data-ttu-id="f2c68-168">Указывает, нужно ли проверять подпись скрипта</span><span class="sxs-lookup"><span data-stu-id="f2c68-168">Indicate whether the script signature needs be checked</span></span>|
+|<span data-ttu-id="f2c68-169">runAs32Bit</span><span class="sxs-lookup"><span data-stu-id="f2c68-169">runAs32Bit</span></span>|<span data-ttu-id="f2c68-170">Логическое</span><span class="sxs-lookup"><span data-stu-id="f2c68-170">Boolean</span></span>|<span data-ttu-id="f2c68-171">Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные</span><span class="sxs-lookup"><span data-stu-id="f2c68-171">Indicate whether PowerShell script(s) should run as 32-bit</span></span>|
+|<span data-ttu-id="f2c68-172">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="f2c68-172">roleScopeTagIds</span></span>|<span data-ttu-id="f2c68-173">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="f2c68-173">String collection</span></span>|<span data-ttu-id="f2c68-174">Список идентификаторов тегов области для сценария работоспособности устройства</span><span class="sxs-lookup"><span data-stu-id="f2c68-174">List of Scope Tag IDs for the device health script</span></span>|
+|<span data-ttu-id="f2c68-175">исглобалскрипт</span><span class="sxs-lookup"><span data-stu-id="f2c68-175">isGlobalScript</span></span>|<span data-ttu-id="f2c68-176">Логическое</span><span class="sxs-lookup"><span data-stu-id="f2c68-176">Boolean</span></span>|<span data-ttu-id="f2c68-177">Определяет, является ли этот сценарий фирменным (Майкрософт).</span><span class="sxs-lookup"><span data-stu-id="f2c68-177">Determines if this is Microsoft Proprietary Script.</span></span> <span data-ttu-id="f2c68-178">Специальные сценарии доступны только для чтения</span><span class="sxs-lookup"><span data-stu-id="f2c68-178">Proprietary scripts are read-only</span></span>|
+|<span data-ttu-id="f2c68-179">хигхеставаилаблеверсион</span><span class="sxs-lookup"><span data-stu-id="f2c68-179">highestAvailableVersion</span></span>|<span data-ttu-id="f2c68-180">String</span><span class="sxs-lookup"><span data-stu-id="f2c68-180">String</span></span>|<span data-ttu-id="f2c68-181">Самая высокая доступная версия для собственного сценария Майкрософт</span><span class="sxs-lookup"><span data-stu-id="f2c68-181">Highest available version for a Microsoft Proprietary script</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="83a58-171">Отклик</span><span class="sxs-lookup"><span data-stu-id="83a58-171">Response</span></span>
-<span data-ttu-id="83a58-172">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="83a58-172">If successful, this method returns a `200 OK` response code and an updated [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f2c68-182">Отклик</span><span class="sxs-lookup"><span data-stu-id="f2c68-182">Response</span></span>
+<span data-ttu-id="f2c68-183">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f2c68-183">If successful, this method returns a `200 OK` response code and an updated [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="83a58-173">Пример</span><span class="sxs-lookup"><span data-stu-id="83a58-173">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f2c68-184">Пример</span><span class="sxs-lookup"><span data-stu-id="f2c68-184">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="83a58-174">Запрос</span><span class="sxs-lookup"><span data-stu-id="83a58-174">Request</span></span>
-<span data-ttu-id="83a58-175">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="83a58-175">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="f2c68-185">Запрос</span><span class="sxs-lookup"><span data-stu-id="f2c68-185">Request</span></span>
+<span data-ttu-id="f2c68-186">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f2c68-186">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 Content-type: application/json
@@ -81,6 +86,7 @@ Content-length: 575
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
   "publisher": "Publisher value",
+  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
   "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
@@ -90,12 +96,14 @@ Content-length: 575
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
- }
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value"
+}
 ```
 
-### <a name="response"></a><span data-ttu-id="83a58-176">Отклик</span><span class="sxs-lookup"><span data-stu-id="83a58-176">Response</span></span>
-<span data-ttu-id="83a58-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="83a58-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f2c68-187">Отклик</span><span class="sxs-lookup"><span data-stu-id="f2c68-187">Response</span></span>
+<span data-ttu-id="f2c68-p106">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f2c68-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -122,7 +130,6 @@ Content-Length: 747
   "highestAvailableVersion": "Highest Available Version value"
 }
 ```
-
 
 
 

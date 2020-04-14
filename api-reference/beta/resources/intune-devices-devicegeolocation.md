@@ -1,43 +1,45 @@
 ---
 title: Тип ресурса deviceGeoLocation
 description: Расположение устройства
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c3c8251987dee0aadafdb88eebd9e29afbb5f76
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f9dc9e4883030936982b9029d1e14242b2a37e37
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785002"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423643"
 ---
-# <a name="devicegeolocation-resource-type"></a><span data-ttu-id="fa51a-103">Тип ресурса deviceGeoLocation</span><span class="sxs-lookup"><span data-stu-id="fa51a-103">deviceGeoLocation resource type</span></span>
+# <a name="devicegeolocation-resource-type"></a><span data-ttu-id="791e6-103">Тип ресурса deviceGeoLocation</span><span class="sxs-lookup"><span data-stu-id="791e6-103">deviceGeoLocation resource type</span></span>
 
-> <span data-ttu-id="fa51a-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fa51a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="791e6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="791e6-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="fa51a-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="fa51a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="791e6-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="791e6-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="fa51a-106">Расположение устройства</span><span class="sxs-lookup"><span data-stu-id="fa51a-106">Device location</span></span>
+> <span data-ttu-id="791e6-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="791e6-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fa51a-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="fa51a-107">Properties</span></span>
-|<span data-ttu-id="fa51a-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="fa51a-108">Property</span></span>|<span data-ttu-id="fa51a-109">Тип</span><span class="sxs-lookup"><span data-stu-id="fa51a-109">Type</span></span>|<span data-ttu-id="fa51a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="fa51a-110">Description</span></span>|
+<span data-ttu-id="791e6-107">Расположение устройства</span><span class="sxs-lookup"><span data-stu-id="791e6-107">Device location</span></span>
+
+## <a name="properties"></a><span data-ttu-id="791e6-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="791e6-108">Properties</span></span>
+|<span data-ttu-id="791e6-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="791e6-109">Property</span></span>|<span data-ttu-id="791e6-110">Тип</span><span class="sxs-lookup"><span data-stu-id="791e6-110">Type</span></span>|<span data-ttu-id="791e6-111">Описание</span><span class="sxs-lookup"><span data-stu-id="791e6-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fa51a-111">ластколлектеддатетимеутк</span><span class="sxs-lookup"><span data-stu-id="fa51a-111">lastCollectedDateTimeUtc</span></span>|<span data-ttu-id="fa51a-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fa51a-112">DateTimeOffset</span></span>|<span data-ttu-id="fa51a-113">Время записи расположения относительно времени UTC</span><span class="sxs-lookup"><span data-stu-id="fa51a-113">Time at which location was recorded, relative to UTC</span></span>|
-|<span data-ttu-id="fa51a-114">lastCollectedDateTime</span><span class="sxs-lookup"><span data-stu-id="fa51a-114">lastCollectedDateTime</span></span>|<span data-ttu-id="fa51a-115">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fa51a-115">DateTimeOffset</span></span>|<span data-ttu-id="fa51a-116">Время записи расположения относительно времени UTC</span><span class="sxs-lookup"><span data-stu-id="fa51a-116">Time at which location was recorded, relative to UTC</span></span>|
-|<span data-ttu-id="fa51a-117">longitude</span><span class="sxs-lookup"><span data-stu-id="fa51a-117">longitude</span></span>|<span data-ttu-id="fa51a-118">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="fa51a-118">Double</span></span>|<span data-ttu-id="fa51a-119">Долгота расположения устройства</span><span class="sxs-lookup"><span data-stu-id="fa51a-119">Longitude coordinate of the device's location</span></span>|
-|<span data-ttu-id="fa51a-120">latitude</span><span class="sxs-lookup"><span data-stu-id="fa51a-120">latitude</span></span>|<span data-ttu-id="fa51a-121">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="fa51a-121">Double</span></span>|<span data-ttu-id="fa51a-122">Широта расположения устройства</span><span class="sxs-lookup"><span data-stu-id="fa51a-122">Latitude coordinate of the device's location</span></span>|
-|<span data-ttu-id="fa51a-123">altitude</span><span class="sxs-lookup"><span data-stu-id="fa51a-123">altitude</span></span>|<span data-ttu-id="fa51a-124">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="fa51a-124">Double</span></span>|<span data-ttu-id="fa51a-125">Высота (метров над уровнем моря)</span><span class="sxs-lookup"><span data-stu-id="fa51a-125">Altitude, given in meters above sea level</span></span>|
-|<span data-ttu-id="fa51a-126">horizontalAccuracy</span><span class="sxs-lookup"><span data-stu-id="fa51a-126">horizontalAccuracy</span></span>|<span data-ttu-id="fa51a-127">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="fa51a-127">Double</span></span>|<span data-ttu-id="fa51a-128">Точность долготы и широты (м)</span><span class="sxs-lookup"><span data-stu-id="fa51a-128">Accuracy of longitude and latitude in meters</span></span>|
-|<span data-ttu-id="fa51a-129">verticalAccuracy</span><span class="sxs-lookup"><span data-stu-id="fa51a-129">verticalAccuracy</span></span>|<span data-ttu-id="fa51a-130">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="fa51a-130">Double</span></span>|<span data-ttu-id="fa51a-131">Точность высоты (м)</span><span class="sxs-lookup"><span data-stu-id="fa51a-131">Accuracy of altitude in meters</span></span>|
-|<span data-ttu-id="fa51a-132">heading</span><span class="sxs-lookup"><span data-stu-id="fa51a-132">heading</span></span>|<span data-ttu-id="fa51a-133">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="fa51a-133">Double</span></span>|<span data-ttu-id="fa51a-134">Направление от географического севера (градусов)</span><span class="sxs-lookup"><span data-stu-id="fa51a-134">Heading in degrees from true north</span></span>|
-|<span data-ttu-id="fa51a-135">speed</span><span class="sxs-lookup"><span data-stu-id="fa51a-135">speed</span></span>|<span data-ttu-id="fa51a-136">Double</span><span class="sxs-lookup"><span data-stu-id="fa51a-136">Double</span></span>|<span data-ttu-id="fa51a-137">Скорость передвижения устройства (м/с)</span><span class="sxs-lookup"><span data-stu-id="fa51a-137">Speed the device is traveling in meters per second</span></span>|
+|<span data-ttu-id="791e6-112">ластколлектеддатетимеутк</span><span class="sxs-lookup"><span data-stu-id="791e6-112">lastCollectedDateTimeUtc</span></span>|<span data-ttu-id="791e6-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="791e6-113">DateTimeOffset</span></span>|<span data-ttu-id="791e6-114">Время записи расположения относительно времени UTC</span><span class="sxs-lookup"><span data-stu-id="791e6-114">Time at which location was recorded, relative to UTC</span></span>|
+|<span data-ttu-id="791e6-115">lastCollectedDateTime</span><span class="sxs-lookup"><span data-stu-id="791e6-115">lastCollectedDateTime</span></span>|<span data-ttu-id="791e6-116">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="791e6-116">DateTimeOffset</span></span>|<span data-ttu-id="791e6-117">Время записи расположения относительно времени UTC</span><span class="sxs-lookup"><span data-stu-id="791e6-117">Time at which location was recorded, relative to UTC</span></span>|
+|<span data-ttu-id="791e6-118">longitude</span><span class="sxs-lookup"><span data-stu-id="791e6-118">longitude</span></span>|<span data-ttu-id="791e6-119">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="791e6-119">Double</span></span>|<span data-ttu-id="791e6-120">Долгота расположения устройства</span><span class="sxs-lookup"><span data-stu-id="791e6-120">Longitude coordinate of the device's location</span></span>|
+|<span data-ttu-id="791e6-121">latitude</span><span class="sxs-lookup"><span data-stu-id="791e6-121">latitude</span></span>|<span data-ttu-id="791e6-122">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="791e6-122">Double</span></span>|<span data-ttu-id="791e6-123">Широта расположения устройства</span><span class="sxs-lookup"><span data-stu-id="791e6-123">Latitude coordinate of the device's location</span></span>|
+|<span data-ttu-id="791e6-124">altitude</span><span class="sxs-lookup"><span data-stu-id="791e6-124">altitude</span></span>|<span data-ttu-id="791e6-125">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="791e6-125">Double</span></span>|<span data-ttu-id="791e6-126">Высота (метров над уровнем моря)</span><span class="sxs-lookup"><span data-stu-id="791e6-126">Altitude, given in meters above sea level</span></span>|
+|<span data-ttu-id="791e6-127">horizontalAccuracy</span><span class="sxs-lookup"><span data-stu-id="791e6-127">horizontalAccuracy</span></span>|<span data-ttu-id="791e6-128">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="791e6-128">Double</span></span>|<span data-ttu-id="791e6-129">Точность долготы и широты (м)</span><span class="sxs-lookup"><span data-stu-id="791e6-129">Accuracy of longitude and latitude in meters</span></span>|
+|<span data-ttu-id="791e6-130">verticalAccuracy</span><span class="sxs-lookup"><span data-stu-id="791e6-130">verticalAccuracy</span></span>|<span data-ttu-id="791e6-131">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="791e6-131">Double</span></span>|<span data-ttu-id="791e6-132">Точность высоты (м)</span><span class="sxs-lookup"><span data-stu-id="791e6-132">Accuracy of altitude in meters</span></span>|
+|<span data-ttu-id="791e6-133">heading</span><span class="sxs-lookup"><span data-stu-id="791e6-133">heading</span></span>|<span data-ttu-id="791e6-134">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="791e6-134">Double</span></span>|<span data-ttu-id="791e6-135">Направление от географического севера (градусов)</span><span class="sxs-lookup"><span data-stu-id="791e6-135">Heading in degrees from true north</span></span>|
+|<span data-ttu-id="791e6-136">speed</span><span class="sxs-lookup"><span data-stu-id="791e6-136">speed</span></span>|<span data-ttu-id="791e6-137">Double</span><span class="sxs-lookup"><span data-stu-id="791e6-137">Double</span></span>|<span data-ttu-id="791e6-138">Скорость передвижения устройства (м/с)</span><span class="sxs-lookup"><span data-stu-id="791e6-138">Speed the device is traveling in meters per second</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="fa51a-138">Связи</span><span class="sxs-lookup"><span data-stu-id="fa51a-138">Relationships</span></span>
-<span data-ttu-id="fa51a-139">Нет</span><span class="sxs-lookup"><span data-stu-id="fa51a-139">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="791e6-139">Связи</span><span class="sxs-lookup"><span data-stu-id="791e6-139">Relationships</span></span>
+<span data-ttu-id="791e6-140">Нет</span><span class="sxs-lookup"><span data-stu-id="791e6-140">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="fa51a-140">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="fa51a-140">JSON Representation</span></span>
-<span data-ttu-id="fa51a-141">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fa51a-141">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="791e6-141">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="791e6-141">JSON Representation</span></span>
+<span data-ttu-id="791e6-142">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="791e6-142">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceGeoLocation"
