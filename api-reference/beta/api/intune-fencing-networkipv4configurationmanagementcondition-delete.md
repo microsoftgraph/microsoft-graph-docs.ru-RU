@@ -1,18 +1,20 @@
 ---
 title: Удаление networkIPv4ConfigurationManagementCondition
 description: Удаляет объект networkIPv4ConfigurationManagementCondition.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ecf809611d2b089366e1b028f0bcf641d31587ca
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b0299598a7ea520512dc8ba7f2b0ab8fabd32d40
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804718"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384583"
 ---
 # <a name="delete-networkipv4configurationmanagementcondition"></a>Удаление networkIPv4ConfigurationManagementCondition
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42804718"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -64,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managementConditions/{m
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

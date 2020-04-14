@@ -1,18 +1,20 @@
 ---
 title: Удаление Девицехеалсскрипт
 description: Удаляет объект Девицехеалсскрипт.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d369a1aff875f9c93ee2f06af802ecb0a241b22
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a06a7e707d06a17f6117c5bf344090ed3893e2ba
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814640"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380905"
 ---
 # <a name="delete-devicehealthscript"></a>Удаление Девицехеалсскрипт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814640"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Обновление Девицеманажементскриптдевицестате
 description: Обновление свойств объекта Девицеманажементскриптдевицестате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bc964a5ee2f0ac5ba72ae2dad910a9c7e0c02d77
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2ceae9a280a96db064413d1478165779f47aadc2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814437"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380462"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>Обновление Девицеманажементскриптдевицестате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814437"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -101,7 +103,6 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
-
 
 
 

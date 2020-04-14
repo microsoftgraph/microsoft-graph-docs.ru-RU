@@ -2,15 +2,15 @@
 title: Обновление Кондитионалакцессполици
 description: Обновление свойств объекта Кондитионалакцессполици.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 52d325f0a75bfdedf6ebf36d0a775efe9580739f
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 7cec2052a830d1d9c5a30452e49b59fb9037cfa0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062442"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382377"
 ---
 # <a name="update-conditionalaccesspolicy"></a>Обновление Кондитионалакцессполици
 

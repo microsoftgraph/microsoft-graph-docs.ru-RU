@@ -1,20 +1,20 @@
 ---
 title: Список registeredUsers
 description: Получение списка пользователей, являющихся зарегистрированными пользователями устройства.
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bbd9049c30f761d9da4776c9390db7909eade042
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 75410a900201110d04b52c9b1d2b65f5a9e0d4de
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435817"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386853"
 ---
 # <a name="list-registeredusers"></a>Список registeredUsers
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "42435817"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory. Read. ALL или Directory. ReadWrite. ALL или Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Directory.Read.All или Directory.ReadWrite.All |
+|Для приложения | Directory.Read.All или Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

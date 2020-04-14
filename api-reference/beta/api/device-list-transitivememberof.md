@@ -1,20 +1,20 @@
 ---
 title: Перечисление транзитивных групп устройств
-description: Получение групп, участником которых является устройство. Этот запрос API является транзитивным, а также возвращает все группы, в которых устройство является вложенным членом.
+description: Получение групп, участником которых является устройство.
 localization_priority: Normal
-author: davidmu1
+author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a24094a4a53a51e399de3458f4b3f75db537bc2f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9b2d9bba2fff402868317526bc3964db00101199
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435740"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386846"
 ---
 # <a name="list-device-transitive-groups"></a>Перечисление транзитивных групп устройств
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: Действие scheduleActionsForRules
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 07af9d9f21891c0ff3547dcb10ca080584bc6617
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f95c1fadf7d574a6c4f0218400e941897ab486e4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801175"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390722"
 ---
 # <a name="scheduleactionsforrules-action"></a>Действие scheduleActionsForRules
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,7 +30,7 @@ ms.locfileid: "42801175"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -86,7 +88,6 @@ Content-length: 242
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

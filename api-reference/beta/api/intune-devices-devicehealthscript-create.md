@@ -1,18 +1,20 @@
 ---
 title: Создание Девицехеалсскрипт
 description: Создание нового объекта Девицехеалсскрипт.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5638b7ac4452531e4da173dd3bab53a42ce7e339
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6956bb460b3429cf919e9c2e84ccc751d090a7ed
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814647"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380920"
 ---
 # <a name="create-devicehealthscript"></a>Создание Девицехеалсскрипт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814647"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -61,10 +63,10 @@ POST /deviceManagement/deviceHealthScripts
 |createdDateTime|DateTimeOffset|Метка времени создания сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Метка времени изменения сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта|
-|runAs32Bit|Логический|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
+|Свойства enforcesignaturecheck|Логическое|Указывает, нужно ли проверять подпись скрипта|
+|runAs32Bit|Логическое|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для сценария работоспособности устройства|
-|исглобалскрипт|Логический|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
+|исглобалскрипт|Логическое|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
 |хигхеставаилаблеверсион|String|Самая высокая доступная версия для собственного сценария Майкрософт|
 
 
@@ -128,7 +130,6 @@ Content-Length: 747
   "highestAvailableVersion": "Highest Available Version value"
 }
 ```
-
 
 
 

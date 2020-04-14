@@ -1,18 +1,20 @@
 ---
 title: Удаление Секуритибаселинекатегористатесуммари
 description: Удаляет объект Секуритибаселинекатегористатесуммари.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a3de1b0aefdf57b40a670df7a5d30ba858be514d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4ac0188f952bab460bc3fec50cca2d733ef55fbc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814927"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381356"
 ---
 # <a name="delete-securitybaselinecategorystatesummary"></a>Удаление Секуритибаселинекатегористатесуммари
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814927"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

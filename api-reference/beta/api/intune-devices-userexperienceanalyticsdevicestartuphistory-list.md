@@ -1,18 +1,20 @@
 ---
 title: Список Усерекспериенцеаналитиксдевицестартуфисториес
 description: Список свойств и связей объектов Усерекспериенцеаналитиксдевицестартуфистори.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c552c3fa209a06021af2923e4110d3a456d2ac2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 78e6f455625b3e21a5d09c2a70848c972dcd9a71
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813932"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379501"
 ---
 # <a name="list-userexperienceanalyticsdevicestartuphistories"></a>Список Усерекспериенцеаналитиксдевицестартуфисториес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813932"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -87,7 +89,6 @@ Content-Length: 675
   ]
 }
 ```
-
 
 
 

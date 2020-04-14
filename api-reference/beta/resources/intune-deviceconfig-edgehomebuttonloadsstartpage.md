@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Еджехомебуттонлоадсстартпаже
 description: Отображение кнопки "домой"; При нажатии кнопки "домой" загружается Начальная страница — это также значение по умолчанию.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 776eb3d38ffd184a0319661d3c9a23968c0c3de7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5cac7794a82df2d5abb209b94ef27d59a1b5161f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791900"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386363"
 ---
 # <a name="edgehomebuttonloadsstartpage-resource-type"></a>Тип ресурса Еджехомебуттонлоадсстартпаже
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

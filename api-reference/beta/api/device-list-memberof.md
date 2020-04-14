@@ -1,20 +1,20 @@
 ---
 title: Список групп устройств
 description: Получение групп, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d6020ea3a0be67b55e573b71c93235a5896c5e5b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84f1623332d2e4e202236744a18794990322867d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435859"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386923"
 ---
 # <a name="list-device-groups"></a>Список групп устройств
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

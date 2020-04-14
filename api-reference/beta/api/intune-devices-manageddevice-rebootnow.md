@@ -1,18 +1,20 @@
 ---
 title: Действие rebootNow
 description: Перезагрузка устройства
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 717e8ec50a6d3b3c8dd35b2df77083452eb2b512
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a41751677a21b9ae67cc254dbdf2988406c6e540
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814227"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380010"
 ---
 # <a name="rebootnow-action"></a>Действие rebootNow
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814227"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Для приложения|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -67,7 +69,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

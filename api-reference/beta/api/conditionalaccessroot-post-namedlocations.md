@@ -2,15 +2,15 @@
 title: Создание Намедлокатион
 description: Создание нового Намедлокатион.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 948cecd3cc81cd5df5b1caf2948ac6872dccd08a
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: c74ea2fa8e8d652d3a7016aeb0ea3bae985273a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062354"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382132"
 ---
 # <a name="create-namedlocation"></a>Создание Намедлокатион
 
@@ -45,7 +45,7 @@ POST /identity/conditionalAccess/namedLocations
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [ипнамедлокатион](../resources/ipnamedlocation.md) или [КАУНТРИНАМЕДЛОКАТИОН](../resources/countrynamedlocation.md) в формате JSON.
 

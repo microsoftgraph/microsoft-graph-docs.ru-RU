@@ -2,15 +2,15 @@
 title: Список Намедлокатионс
 description: Получение списка объектов Намедлокатион.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d0d9ddb5ad1138fd160de63d9d9876b26d97e34b
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: da3de62116941946a52ab0b8ba32d44b4f8c5dad
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062454"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382346"
 ---
 # <a name="list-namedlocations"></a>Список Намедлокатионс
 
@@ -28,7 +28,7 @@ ms.locfileid: "43062454"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.Read.All |
+| Для приложения                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

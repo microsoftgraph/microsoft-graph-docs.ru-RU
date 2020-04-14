@@ -1,18 +1,20 @@
 ---
 title: Обновление Усерекспериенцеаналитиксдевицеперформанце
 description: Обновление свойств объекта Усерекспериенцеаналитиксдевицеперформанце.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 62beda431bf34efafadc73c1fff7db87ef67a33f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 75719a81a38e70cfbfc487710358a9f75e866690
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813960"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379646"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>Обновление Усерекспериенцеаналитиксдевицеперформанце
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813960"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -126,7 +128,6 @@ Content-Length: 578
   "responsiveDesktopTimeInMs": 9
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Get deviceAppManagement
 description: Чтение свойств и связей объекта deviceAppManagement.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2bb20886dc19e3a1faca1ca7bd7bb640ec43f6cd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8973a5f839f547da652859ddec22ee9c52e6f82d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801273"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43391175"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -30,7 +32,7 @@ ms.locfileid: "42801273"
 | &nbsp;&nbsp; **Приложения**, **книги**, **входящая**миграция, **Интеграция партнеров**или **набор политик** | DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Реадв. ALL |
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| |
+|Для приложения| |
 | &nbsp;&nbsp; **Приложения**, **книги**, **входящая**миграция, **Интеграция партнеров**или **набор политик** | DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Реадв. ALL |
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
@@ -88,7 +90,6 @@ Content-Length: 133
   }
 }
 ```
-
 
 
 

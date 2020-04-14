@@ -1,18 +1,20 @@
 ---
 title: Действие syncMicrosoftStoreForBusinessApps
 description: Синхронизирует учетную запись Intune с Microsoft Store для бизнеса
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7aa2d91f73ee5d55fbb8207e1093ed6fa4ae8d26
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 26e6e2ac6a39d7f10c71ef5cd6cb00d7d10cf26d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801266"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43391168"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>Действие syncMicrosoftStoreForBusinessApps
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42801266"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Адаптация** | |DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Адаптация** | |DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -63,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceAppManagement/syncMicrosoftStoreForB
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

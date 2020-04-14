@@ -1,18 +1,20 @@
 ---
 title: Обновление Виндовсуниверсалаппксконтаинедапп
 description: Обновление свойств объекта Виндовсуниверсалаппксконтаинедапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1bc0e40b60d6055deecebe52cbea5787c97d2e4b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 30046e27c57f7a612919f591b971f9c0c3d41a32
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760615"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43393033"
 ---
 # <a name="update-windowsuniversalappxcontainedapp"></a>Обновление Виндовсуниверсалаппксконтаинедапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760615"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -89,7 +91,6 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

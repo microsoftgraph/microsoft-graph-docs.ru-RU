@@ -1,20 +1,20 @@
 ---
 title: Список registeredOwners
-description: Получение списка пользователей, являющихся зарегистрированными владельцами устройства. Зарегистрированный владелец — пользователь, который присоединил устройство через облако или зарегистрировал личное устройство. Зарегистрированный владелец задается при регистрации. Сейчас можно настроить лишь одного такого владельца.
+description: Получение списка пользователей, являющихся зарегистрированными владельцами устройства.
 localization_priority: Normal
-author: davidmu1
+author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9efc543911d2549573abd454ef0c99e9e637f5d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1d4757abb86e7dc888f8fb3d417f6c0da6442b19
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435831"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386868"
 ---
 # <a name="list-registeredowners"></a>Список registeredOwners
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42435831"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All или Directory.ReadWrite.All |
+|Для приложения | Directory.Read.All или Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

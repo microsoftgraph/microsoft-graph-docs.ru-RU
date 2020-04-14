@@ -2,17 +2,19 @@
 title: Удаление Оффицеклиентконфигуратионассигнмент
 description: Удаляет объект Оффицеклиентконфигуратионассигнмент.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7dca704584bf956f20a3c5a83f99b1d0626da384
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5e6a01d70bcd0a49bfe060d075e7e28a1d17353a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760279"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392000"
 ---
 # <a name="delete-officeclientconfigurationassignment"></a>Удаление Оффицеклиентконфигуратионассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760279"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|* * TODO: определение областей * *|
+|Для приложения|* * TODO: определение областей * *|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

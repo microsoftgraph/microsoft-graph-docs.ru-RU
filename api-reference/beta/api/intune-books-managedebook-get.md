@@ -1,18 +1,20 @@
 ---
 title: Get managedEBook
 description: Чтение свойств и связей объекта managedEBook.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 31741b511472fe1c3049b36e300a565f86e81a4c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 32848bfd81dbc94b74a99f505f95482732451457
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760433"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392497"
 ---
 # <a name="get-managedebook"></a>Get managedEBook
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760433"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -88,7 +90,6 @@ Content-Length: 712
   }
 }
 ```
-
 
 
 

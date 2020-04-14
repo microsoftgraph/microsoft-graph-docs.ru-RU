@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов managedEBookAssignment
 description: Список свойств и связей объектов managedEBookAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2cdf521edc47e3117711e31e4fd1827139c387b7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5187607f9c2850d2632309931e7459b9a86947e5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760398"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392252"
 ---
 # <a name="list-managedebookassignments"></a>Перечисление объектов managedEBookAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760398"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -78,7 +80,6 @@ Content-Length: 300
   ]
 }
 ```
-
 
 
 

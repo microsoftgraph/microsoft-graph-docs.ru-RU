@@ -1,18 +1,20 @@
 ---
 title: Создание объекта deviceCategory
 description: Создание объекта deviceCategory.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1b01cf52fdaa0272ca2bd996ea527ca131dc8ad
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e638d4a5024b901b42fdb6ad840764690f6b7119
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801252"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43391104"
 ---
 # <a name="create-devicecategory"></a>Создание объекта deviceCategory
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -29,7 +31,7 @@ ms.locfileid: "42801252"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -99,7 +101,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

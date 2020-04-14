@@ -1,18 +1,20 @@
 ---
 title: Создание Девицеманажементтемплате
 description: Создание нового объекта Девицеманажементтемплате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0873e16f719d27b5f8288ee2209aa61f282917b4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 01f3c719e0f5ad2b77c48f223dd198aa7b92e96b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815011"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381440"
 ---
 # <a name="create-devicemanagementtemplate"></a>Создание Девицеманажементтемплате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42815011"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,10 +58,10 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 |displayName|Строка|Отображаемое имя шаблона|
 |description|String|Описание шаблона|
 |versionInfo|String|Сведения о версии шаблона|
-|нерекомендуемый|Логический|Шаблон устарел или не является устаревшим. Не удается создать объект "удержания" из устаревшего шаблона.|
+|нерекомендуемый|Логическое|Шаблон устарел или не является устаревшим. Не удается создать объект "удержания" из устаревшего шаблона.|
 |интенткаунт|Int32|Количество целей, созданных на основе этого шаблона.|
 |TemplateType — тип|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|Тип шаблона. Возможные значения: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`.|
-|platformType|[полициплатформтипе](../resources/intune-shared-policyplatformtype.md)|Платформа шаблона. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
+|platformType|[полициплатформтипе](../resources/intune-shared-policyplatformtype.md)|Платформа шаблона. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
 |publishedDateTime|DateTimeOffset|При публикации шаблона|
 
 
@@ -109,7 +111,6 @@ Content-Length: 420
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Усерекспериенцеаналитиксинсигхт
 description: Аналитика пользовательского интерфейса является рекомендацией для усовершенствования оценки анализа взаимодействия с пользователем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c28df3bc40f02948198a67850de6fd573607a366
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b5a712766534793fd11ba8b07955870d7e1195dd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783797"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389247"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксинсигхт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

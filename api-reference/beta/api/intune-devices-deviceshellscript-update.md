@@ -1,18 +1,20 @@
 ---
 title: Обновление Девицешеллскрипт
 description: Обновление свойств объекта Девицешеллскрипт.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f9e3c2da2008b5e44f4b13449abd6b63251fe08f
-ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
+ms.openlocfilehash: 29ae00d26baddc0efaa50f319a3b2759d6f02f66
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034750"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380096"
 ---
 # <a name="update-deviceshellscript"></a>Обновление Девицешеллскрипт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "43034750"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,9 +53,9 @@ PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ексекутионфрекуенци|Длительность|Интервал для запуска скрипта. Если он не определен, сценарий выполняется один раз.|
-|ретрикаунт|Int32|Количество повторных попыток выполнения скрипта в случае сбоя.|
-|блоккексекутионнотификатионс|Boolean|Указывает, является ли пользователь уведомленным при запуске скрипта.|
+|ексекутионфрекуенци|Длительность|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз|
+|ретрикаунт|Int32|Количество повторных попыток выполнения скрипта в случае сбоя|
+|блоккексекутионнотификатионс|Логическое|Не уведомляет пользователя о выполнении сценария|
 |id|Строка|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|Строка|Имя скрипта управления устройствами.|
 |description|String|Необязательное описание скрипта управления устройствами.|
@@ -61,7 +63,7 @@ PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|fileName|String|Имя файла скрипта.|
+|fileName|String|Имя файла сценария.|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
 
 

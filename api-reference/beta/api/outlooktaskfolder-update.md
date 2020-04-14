@@ -1,20 +1,20 @@
 ---
 title: Обновление outlooktaskfolder
 description: Обновление свойств, доступных для записи, папки задач Outlook.
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dc8c04137ef2a8b9acafe852b411617794fbf19d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca2b8ec85c944ac1eea383e107d363525d44ed31
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456140"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389586"
 ---
 # <a name="update-outlooktaskfolder"></a>Обновление outlooktaskfolder
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

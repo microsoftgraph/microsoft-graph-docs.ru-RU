@@ -1,18 +1,20 @@
 ---
 title: Создание deviceManagementScript
 description: Создание нового объекта deviceManagementScript.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d45177375eca0bfdf6575fc4737d53ce0468645b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4d04d93cb2ca2cb883ae52f10dd15495bf55bf6e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800986"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389773"
 ---
 # <a name="create-devicemanagementscript"></a>Создание deviceManagementScript
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +31,7 @@ ms.locfileid: "42800986"
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -63,10 +65,10 @@ POST /deviceManagement/deviceManagementScripts
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта.|
+|Свойства enforcesignaturecheck|Логическое|Указывает, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла сценария.|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
-|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
+|runAs32Bit|Логическое|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
 
 
 
@@ -127,7 +129,6 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
 
 
 

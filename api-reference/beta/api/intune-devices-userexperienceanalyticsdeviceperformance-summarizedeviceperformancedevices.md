@@ -1,18 +1,20 @@
 ---
 title: Функция Суммаризедевицеперформанцедевицес
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 00e6210ed2eb10ee79289451624159bba8769000
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 64c1ea76e0f11e87724a4732727af1a3bca970e9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813967"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379685"
 ---
 # <a name="summarizedeviceperformancedevices-function"></a>Функция Суммаризедевицеперформанцедевицес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813967"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -95,7 +97,6 @@ Content-Length: 675
   ]
 }
 ```
-
 
 
 

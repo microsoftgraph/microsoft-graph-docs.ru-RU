@@ -1,18 +1,20 @@
 ---
 title: Получение Девицеманажементдериведкредентиалсеттингс
 description: Чтение свойств и связей объекта Девицеманажементдериведкредентиалсеттингс.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fbbeb006243d5d59905ebca8246f0de05f0c247e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f8d9808ea462b33d39560248b9ebebad4727fbda
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801014"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389905"
 ---
 # <a name="get-devicemanagementderivedcredentialsettings"></a>Получение Девицеманажементдериведкредентиалсеттингс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +31,7 @@ ms.locfileid: "42801014"
 |&nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |&nbsp;&nbsp; **Политика доступа к ресурсам** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 |&nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |&nbsp;&nbsp; **Политика доступа к ресурсам** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
@@ -83,7 +85,6 @@ Content-Length: 155
     "id": "bc650741-0741-bc65-4107-65bc410765bc"
   }
 }
-
 
 
 

@@ -2,19 +2,19 @@
 title: Тип ресурса Усеркредентиалусажедетаилс
 description: Представляет использование функции самостоятельного сброса пароля для данного клиента.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: cd71091293041d84f0f2c1d5436999fa5793037b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ff48554c7bab011171136181c7a1ab0ce8b01db
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519535"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384984"
 ---
 # <a name="usercredentialusagedetails-resource-type"></a>Тип ресурса Усеркредентиалусажедетаилс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,12 +30,12 @@ ms.locfileid: "42519535"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| аусмесод | строка | Представляет способ проверки подлинности, используемый пользователем. Возможные значения `email`:, `mobileSMS`, `mobileCall` `officePhone`,, `securityQuestion` (только для самостоятельного сброса пароля), `appNotification` `appCode`и `alternateMobileCall` (поддерживается только при регистрации). |
+| аусмесод | string | Представляет способ проверки подлинности, используемый пользователем. Возможные значения `email`:, `mobileSMS`, `mobileCall` `officePhone`,, `securityQuestion` (только для самостоятельного сброса пароля), `appNotification` `appCode`и `alternateMobileCall` (поддерживается только при регистрации). |
 | eventDateTime | DateTimeOffset | Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. |
 | failureReason | String | Предоставляет причину ошибки для соответствующего сброса или рабочего процесса регистрации. |
-| состав | строка | Возможные значения: `registration` и `reset`. |
+| состав | string | Возможные значения: `registration` и `reset`. |
 | id | String | Только для чтения. Уникальный идентификатор действия. Только для чтения.|
-| Выполнение | Логический | Указывает на успешное или неудачное завершение рабочего процесса. |
+| Выполнение | Логическое | Указывает на успешное или неудачное завершение рабочего процесса. |
 | userDisplayName | String | Имя пользователя, выполняющего сброс или регистрацию рабочего процесса. |
 | userPrincipalName | Строка | Имя участника-пользователя, выполняющего сброс или регистрацию. |
 

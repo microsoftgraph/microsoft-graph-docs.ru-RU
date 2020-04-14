@@ -1,18 +1,20 @@
 ---
 title: Создание Усерекспериенцеаналитиксдевицестартуфистори
 description: Создание нового объекта Усерекспериенцеаналитиксдевицестартуфистори.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ca8232f2a013498dcc9dbcce5bfe2d9f1fd54a4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d3c386b01a328667ced4c40159fffab3b9dc3302
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813953"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379567"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>Создание Усерекспериенцеаналитиксдевицестартуфистори
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813953"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -62,8 +64,8 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 |корелогинтимеинмс|Int32|Время входа в ядро устройства аналитики взаимодействия с пользователем (в миллисекундах).|
 |респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
 |тоталлогинтимеинмс|Int32|Общее время входа в систему для устройства аналитики взаимодействия с пользователем (в миллисекундах).|
-|исфирстлогин|Логический|Первое имя входа устройства Analytics User Experience.|
-|исфеатуреупдате|Логический|Загрузочная запись устройства аналитики взаимодействия с пользователем — это обновление компонентов.|
+|исфирстлогин|Логическое|Первое имя входа устройства Analytics User Experience.|
+|исфеатуреупдате|Логическое|Загрузочная запись устройства аналитики взаимодействия с пользователем — это обновление компонентов.|
 |operatingSystemVersion|String|Версия операционной системы для записи загрузки устройства службы аналитики взаимодействия с пользователем.|
 
 
@@ -123,7 +125,6 @@ Content-Length: 582
   "operatingSystemVersion": "Operating System Version value"
 }
 ```
-
 
 
 

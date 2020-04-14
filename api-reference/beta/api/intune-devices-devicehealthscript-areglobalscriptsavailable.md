@@ -1,18 +1,20 @@
 ---
 title: Функция Ареглобалскриптсаваилабле
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c253f7b10c33c763083f5c50429f50998af38201
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: afd259cc97b72863ac78dfdb1ab46e9f73bd02af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814661"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380974"
 ---
 # <a name="areglobalscriptsavailable-function"></a>Функция Ареглобалскриптсаваилабле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814661"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -69,7 +71,6 @@ Content-Length: 26
   "value": "pending"
 }
 ```
-
 
 
 

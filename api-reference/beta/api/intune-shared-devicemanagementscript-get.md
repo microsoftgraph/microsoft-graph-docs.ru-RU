@@ -1,18 +1,20 @@
 ---
 title: Получение deviceManagementScript
 description: Чтение свойств и связей объекта deviceManagementScript.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1bbca2be20bcac217ac09d872afe7ceac2690af9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b8f47ac9d50ff5dc55cef27a7d11c1e93fb82efb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800966"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389719"
 ---
 # <a name="get-devicemanagementscript"></a>Получение deviceManagementScript
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +31,7 @@ ms.locfileid: "42800966"
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
@@ -94,7 +96,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

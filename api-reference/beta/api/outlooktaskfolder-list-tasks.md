@@ -1,20 +1,20 @@
 ---
 title: Перечисление задач
 description: Получение всех задач Outlook в указанной папке.
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5a61aa1792bebfdd26970b4d9a5b028e286d6bea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0a16f9b509f912c3fef5ed8c16b53596f017cd22
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456154"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389680"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

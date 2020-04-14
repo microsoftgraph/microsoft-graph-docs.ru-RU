@@ -2,19 +2,19 @@
 title: Список контактов
 description: Получение всех контактов в почтовом ящике вошедшего пользователя (. ../ме/контактс) или из указанной папки контактов.
 localization_priority: Normal
-author: angelgolfer-ms
+author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 052569c5c58f0e3cfb932724b549767d984b8ca7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5d3013bef0b24e48c850af9b664d829d6ce792c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436897"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381926"
 ---
 # <a name="list-contacts"></a>Список контактов
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

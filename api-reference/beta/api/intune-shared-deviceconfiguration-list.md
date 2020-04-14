@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов deviceConfiguration
 description: Список свойств и связей объектов deviceConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 33cb2258b3635bfd523cf41a5cd6801b7a4c3fd6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e6f445f5afd4be879de3fe53a2482a04cc141acb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801133"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390528"
 ---
 # <a name="list-deviceconfigurations"></a>Перечисление объектов deviceConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +31,7 @@ ms.locfileid: "42801133"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Конфигурация устройства** |DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
@@ -109,7 +111,6 @@ Content-Length: 1355
   ]
 }
 ```
-
 
 
 

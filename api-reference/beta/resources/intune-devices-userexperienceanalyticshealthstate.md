@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Усерекспериенцеаналитикшеалсстате
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e12867ece70127f42fdd7f68d5c2f5f6eaae4718
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 819d2cadd80f26e77a57e10149ff927ee4931cbb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783804"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389270"
 ---
 # <a name="userexperienceanalyticshealthstate-enum-type"></a>тип перечисления Усерекспериенцеаналитикшеалсстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

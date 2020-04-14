@@ -1,18 +1,20 @@
 ---
 title: Функция Жетассигнедролеидсфорлогжединусер
 description: Извлекает назначенные определения ролей и назначения ролей для текущего пользователя, прошедшего проверку подлинности.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b80d34792b54fe6b5f041773179abfea79a0f2f0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6790d5121c8c3eced7ee0a5ea769469b8b9eaee5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801070"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390177"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>Функция Жетассигнедролеидсфорлогжединусер
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42801070"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -76,7 +78,6 @@ Content-Length: 263
   }
 }
 ```
-
 
 
 

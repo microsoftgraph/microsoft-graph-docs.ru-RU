@@ -1,18 +1,20 @@
 ---
 title: Удаление Девицеманажементстрингсеттингинстанце
 description: Удаляет объект Девицеманажементстрингсеттингинстанце.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f04e98f5be1422b382437cffc4068814e8dcfde
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f8f8e5d97ba58f3f2830d6c4621df1f7b9c709a7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815046"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381548"
 ---
 # <a name="delete-devicemanagementstringsettinginstance"></a>Удаление Девицеманажементстрингсеттингинстанце
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42815046"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

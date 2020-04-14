@@ -1,18 +1,20 @@
 ---
 title: Обновление Девицехеалсскриптассигнмент
 description: Обновление свойств объекта Девицехеалсскриптассигнмент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d7c78f85e1ab8e721985a60f79977213205870f7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 89075571f51cad503041a82af99900caeb5a801f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814556"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380654"
 ---
 # <a name="update-devicehealthscriptassignment"></a>Обновление Девицехеалсскриптассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814556"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +55,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{
 |:---|:---|:---|
 |id|String|Ключ объекта назначения сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Группа Azure Active Directory, на которую мы нацелены на скрипт|
-|рунремедиатионскрипт|Логический|Определите, нужно ли выполнять сценарий обнаружения или сценарий обнаружения и устранения неполадок.|
+|рунремедиатионскрипт|Логическое|Определите, нужно ли выполнять сценарий обнаружения или сценарий обнаружения и устранения неполадок.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Расписание запуска сценария для целевой группы|
 
 
@@ -101,7 +103,6 @@ Content-Length: 326
   }
 }
 ```
-
 
 
 

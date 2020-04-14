@@ -1,18 +1,20 @@
 ---
 title: Функция Жетролескопетагсбиресаурце
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7948da2d948e20b80474b9dac5961b4c5edf2f56
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ac24682b69ebeca2767b43cc71d0eb17f34c32c8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801049"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390116"
 ---
 # <a name="getrolescopetagsbyresource-function"></a>Функция Жетролескопетагсбиресаурце
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42801049"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -83,7 +85,6 @@ Content-Length: 231
   ]
 }
 ```
-
 
 
 

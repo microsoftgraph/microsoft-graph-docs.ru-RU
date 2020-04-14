@@ -4,17 +4,17 @@ description: Объявляет необязательные утвержден�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 6d4bca89a9c1489735eea7e215592395b83f3769
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 40f8fd033f5fd5bda5605e7df66ee80b21acfe51
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522139"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389003"
 ---
 # <a name="optionalclaims-resource-type"></a>Тип ресурса Оптионалклаимс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

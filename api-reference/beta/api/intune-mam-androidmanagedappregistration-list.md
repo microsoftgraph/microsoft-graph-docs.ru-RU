@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов androidManagedAppRegistration
 description: Список свойств и связей объектов androidManagedAppRegistration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 73e6d1b3b47e3af9c05b5c1c2d24af860344bee9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cfd1b42f7c6ea8d03b53fde825df5212eddb1b1d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803682"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43391750"
 ---
 # <a name="list-androidmanagedappregistrations"></a>Перечисление объектов androidManagedAppRegistration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42803682"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -96,7 +98,6 @@ Content-Length: 1116
   ]
 }
 ```
-
 
 
 

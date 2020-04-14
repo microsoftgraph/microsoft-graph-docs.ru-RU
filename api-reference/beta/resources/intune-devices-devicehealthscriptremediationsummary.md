@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицехеалсскриптремедиатионсуммари
 description: Количество развернутых сценариев работоспособности устройств и количество устройств, которые были исправлены в сценариях.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b59f2d057f258e60a8182194c1ac930e95012b93
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5ca477131c3051161b17ed3f3e90aaf172662dfc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784946"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388449"
 ---
 # <a name="devicehealthscriptremediationsummary-resource-type"></a>Тип ресурса Девицехеалсскриптремедиатионсуммари
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

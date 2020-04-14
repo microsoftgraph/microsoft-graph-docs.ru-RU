@@ -1,20 +1,20 @@
 ---
 title: Создание объекта outlookTask
 description: Создание задачи Outlook в указанной папке задач.
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d9054dbc262c9350bb3efcc17193d66f27ae5904
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ea84b119fcb92bf6d97510a93fbe25a30bb9de42
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456147"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389641"
 ---
 # <a name="create-outlooktask"></a>Создание объекта outlookTask
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [outlookTask](../resources/outlooktask.md) в формате JSON.
@@ -80,7 +80,7 @@ Content-length: 376
 ##### <a name="response"></a>Отклик
 Метод POST игнорирует часть времени в теле запроса и принимает время в полночь всегда в заданном часовом поясе (PST). Затем по умолчанию метод POST преобразует и отображает все свойства, связанные с датой, в формате UTC в ответе.
 
-Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

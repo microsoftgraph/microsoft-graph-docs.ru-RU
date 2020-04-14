@@ -1,18 +1,20 @@
 ---
 title: Создание объекта deviceInstallState
 description: Создание объекта deviceInstallState.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 05737311591168f951c8f1e7b83b96f1b6564326
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0f2d9ba02725310958f5ce52b6b0fb48a76e16a9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760559"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392839"
 ---
 # <a name="create-deviceinstallstate"></a>Создание объекта deviceInstallState
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760559"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -109,7 +111,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
 
 
 

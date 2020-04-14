@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Еджехомебуттонопенскустомурл
 description: Отображение кнопки "домой"; Нажатие кнопки "домой" загружает определенный URL-адрес.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ba83e4ee870a5e258a40c0c94d8d157f8564a91
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c3be48340552a9e3ba5a0bc8143363846465fbf1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791893"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386332"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>Тип ресурса Еджехомебуттонопенскустомурл
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

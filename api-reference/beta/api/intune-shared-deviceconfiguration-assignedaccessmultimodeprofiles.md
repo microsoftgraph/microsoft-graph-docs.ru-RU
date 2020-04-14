@@ -1,18 +1,20 @@
 ---
 title: Действие assignedAccessMultiModeProfiles
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4189e0d0bacc840c986ce34487fb1e9b8deb4765
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6304bd25dd0c54b3e90c98c637d4bc1976ab99a7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801161"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390644"
 ---
 # <a name="assignedaccessmultimodeprofiles-action"></a>Действие assignedAccessMultiModeProfiles
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,7 +30,7 @@ ms.locfileid: "42801161"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -99,7 +101,6 @@ Content-length: 528
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

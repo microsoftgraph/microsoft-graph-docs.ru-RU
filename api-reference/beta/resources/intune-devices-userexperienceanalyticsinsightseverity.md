@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Усерекспериенцеаналитиксинсигхтсеверити
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b466a9dc84ad5518cb76219d68507d89f379b9c4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b787dfaa0abc81445c8c30769e464d3a3d791244
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783790"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389182"
 ---
 # <a name="userexperienceanalyticsinsightseverity-enum-type"></a>тип перечисления Усерекспериенцеаналитиксинсигхтсеверити
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42783790"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Пока не задокументировано.|
+|нет|нуль|Пока не задокументировано.|
 |справоч|1,1|Пока не задокументировано.|
 |warning|2|Пока не задокументировано.|
 |error|4|Пока не задокументировано.|

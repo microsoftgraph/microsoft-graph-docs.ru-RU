@@ -1,18 +1,20 @@
 ---
 title: Список Девицеманажементдериведкредентиалсеттингсес
 description: Список свойств и связей объектов Девицеманажементдериведкредентиалсеттингс.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e5a9af858fd5b1c2d19458abe4a733660d5f12a2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a7dea6677d69695771674a18fa36d756441d5d1b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801007"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389874"
 ---
 # <a name="list-devicemanagementderivedcredentialsettingses"></a>Список Девицеманажементдериведкредентиалсеттингсес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,7 +30,7 @@ ms.locfileid: "42801007"
 |Делегированные (рабочая или учебная учетная запись)||
 |&nbsp;&nbsp; **Политика доступа к ресурсам**|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 |&nbsp;&nbsp; **Политика доступа к ресурсам**|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -80,7 +82,6 @@ Content-Length: 347
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Домаиннамесаурце
 description: Имя_домена источник.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 748c3b9a90b95233ed083ecb32ae86906800d799
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9f59be2cbf2f248d9f677d47cdfa66e19598f5af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791963"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386495"
 ---
 # <a name="domainnamesource-enum-type"></a>тип перечисления Домаиннамесаурце
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

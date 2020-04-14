@@ -1,20 +1,20 @@
 ---
 title: Получение устройства
 description: Получение свойств и связей объекта устройства.
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e52d339b4be3af43ab6d1c3e5cb6f30bc16c262e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e182ce24be3b85332f6318c7b7096228c60951be
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435887"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386978"
 ---
 # <a name="get-device"></a>Вывод устройства
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "42435887"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Для приложения | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/devices/{id}
 > Примечание. Параметр id в запросе — это свойство id объекта device, а не свойство deviceId.
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

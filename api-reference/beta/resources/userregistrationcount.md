@@ -2,19 +2,19 @@
 title: Тип ресурса Усеррегистратионкаунт
 description: Представляет счетчик регистраций и состояние для пользователей в клиенте.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 2b1a7d2c34ff21c8efd57b358864c4d218630594
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e322f073655ffaa975464d666a365410138f6e51
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519521"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384987"
 ---
 # <a name="userregistrationcount-resource-type"></a>Тип ресурса Усеррегистратионкаунт
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

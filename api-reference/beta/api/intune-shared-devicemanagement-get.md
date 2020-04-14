@@ -1,18 +1,20 @@
 ---
 title: Получение deviceManagement
 description: Чтение свойств и связей объекта deviceManagement.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15b5e1b63cec316de7bd2e6428375a1fd3027b0b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 59d83dbe212c924d74308c6f9c47ce4bfdd864b1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801077"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390240"
 ---
 # <a name="get-devicemanagement"></a>Получение deviceManagement
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -36,19 +38,19 @@ ms.locfileid: "42801077"
 | &nbsp;&nbsp; **Электронная SIM-карта** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Ограждение** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
-| &nbsp; &nbsp; **Уведомление** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **Уведомление** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Одж** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **RBAC** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All |
-| &nbsp; &nbsp; **Удаленный доступ** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp; **Удаленный доступ** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Удаленная помощь** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Управление расходами по телекоммуникационной** связи | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 | &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
-| Приложение | |
+| Для приложения | |
 | &nbsp;&nbsp; **Android для работы** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; **Аудит** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **Условия компании** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
@@ -58,12 +60,12 @@ ms.locfileid: "42801077"
 | &nbsp;&nbsp; **Электронная SIM-карта** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Ограждение** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
-| &nbsp; &nbsp; **Уведомление** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **Уведомление** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Одж** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **RBAC** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All |
-| &nbsp; &nbsp; **Удаленный доступ** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp; **Удаленный доступ** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Удаленная помощь** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Управление расходами по телекоммуникационной** связи | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
@@ -159,7 +161,6 @@ Content-Length: 918
   }
 }
 ```
-
 
 
 

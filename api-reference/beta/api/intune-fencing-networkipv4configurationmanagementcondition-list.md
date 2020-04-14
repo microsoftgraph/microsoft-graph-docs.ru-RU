@@ -1,18 +1,20 @@
 ---
 title: Список networkIPv4ConfigurationManagementConditions
 description: Список свойств и связей объектов networkIPv4ConfigurationManagementCondition.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 573126777af11334fa9e5b3533ae2c30cb0777d8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 31b195b3c160d3b4ca8cd5ef3d42a38f088be5d9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804704"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384465"
 ---
 # <a name="list-networkipv4configurationmanagementconditions"></a>Список networkIPv4ConfigurationManagementConditions
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42804704"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -93,7 +95,6 @@ Content-Length: 810
   ]
 }
 ```
-
 
 
 

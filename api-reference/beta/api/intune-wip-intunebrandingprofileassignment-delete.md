@@ -1,18 +1,20 @@
 ---
 title: Удаление Интунебрандингпрофилеассигнмент
 description: Удаляет объект Интунебрандингпрофилеассигнмент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 78d20f1be2ccf3cda67e7ef6fcaa86ba59b47bb5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 87d665fbc88267dda4fe204ff960907427b8ae3a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799697"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386565"
 ---
 # <a name="delete-intunebrandingprofileassignment"></a>Удаление Интунебрандингпрофилеассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42799697"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

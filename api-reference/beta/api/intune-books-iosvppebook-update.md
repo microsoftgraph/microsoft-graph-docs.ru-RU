@@ -1,18 +1,20 @@
 ---
 title: Обновление объекта iosVppEBook
 description: Обновление свойств объекта iosVppEBook.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a457619d7354bd0c760e58f521c2b726abcbb55
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1bbf07c5eefeca73ae69b7488f7cddf426ce06cd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760482"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392722"
 ---
 # <a name="update-iosvppebook"></a>Обновление объекта iosVppEBook
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760482"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -152,7 +154,6 @@ Content-Length: 1026
   ]
 }
 ```
-
 
 
 

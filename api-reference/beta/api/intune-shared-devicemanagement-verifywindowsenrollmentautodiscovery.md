@@ -1,18 +1,20 @@
 ---
 title: Функция verifyWindowsEnrollmentAutoDiscovery
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af2d2be57342bb3974789ac84ae26e8a3d74a267
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d41adf7447e54ce83d359f3eb074ee073ab41122
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801028"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390023"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>Функция verifyWindowsEnrollmentAutoDiscovery
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42801028"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -76,7 +78,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
 
 
 

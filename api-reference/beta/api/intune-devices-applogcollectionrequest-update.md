@@ -1,18 +1,20 @@
 ---
 title: Обновление appLogCollectionRequest
 description: Обновление свойств объекта appLogCollectionRequest.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c3e0e9e679c5e177ecb7d8078d803636fec3ea5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b6592e8a1d0eb27afff70b1d49ab7a1cfe108e4a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814745"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381075"
 ---
 # <a name="update-applogcollectionrequest"></a>Обновление appLogCollectionRequest
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814745"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -100,7 +102,6 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
 
 
 

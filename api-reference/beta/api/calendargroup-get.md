@@ -1,20 +1,20 @@
 ---
 title: Получение объекта calendarGroup
 description: Получение свойств и связей, принадлежащих объекту группы календарей.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b4d71cb66c930973a6617f05cf52ea49afba6fca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 666271f692f33299ceba5a8f9d83d66aeaba0fd1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440943"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388714"
 ---
 # <a name="get-calendargroup"></a>Получение объекта calendarGroup
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

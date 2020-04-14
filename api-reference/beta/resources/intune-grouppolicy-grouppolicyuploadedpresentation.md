@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Граупполициуплоадедпресентатион
 description: Базовая сущность для отображения представления любого из дополнительных параметров в определении групповой политики.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22269283d71ce05f2ed2714f2010848e801c4426
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 827ac04bbe6e603748b1394e91e7ddff45653c73
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782771"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43385769"
 ---
 # <a name="grouppolicyuploadedpresentation-resource-type"></a>Тип ресурса Граупполициуплоадедпресентатион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

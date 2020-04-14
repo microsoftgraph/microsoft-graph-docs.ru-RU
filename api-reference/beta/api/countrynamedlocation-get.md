@@ -2,15 +2,15 @@
 title: Получение Каунтринамедлокатион
 description: Получение свойств и связей объекта Каунтринамедлокатион.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6924dfd6cf01a12d423f02d9276d73271fba342f
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: f4a5c55cf4130e9a02afd102416c93efcee441f1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061954"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387071"
 ---
 # <a name="get-countrynamedlocation"></a>Получение Каунтринамедлокатион
 
@@ -28,7 +28,7 @@ ms.locfileid: "43061954"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.Read.All |
+| Для приложения                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

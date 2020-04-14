@@ -1,18 +1,20 @@
 ---
 title: Обновление Граупполицимигратионрепорт
 description: Обновление свойств объекта Граупполицимигратионрепорт.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f22148ff9154abda2985d35a3f6aa92290cdca94
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3ab7e6b7a68dbc725f5fc4a875fd153a5f683df1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804613"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383759"
 ---
 # <a name="update-grouppolicymigrationreport"></a>Обновление Граупполицимигратионрепорт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42804613"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -60,7 +62,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |граупполицикреатеддатетиме|DateTimeOffset|Дата и время создания Граупполицимигратионрепорт.|
 |граупполициластмодифиеддатетиме|DateTimeOffset|Дата и время последнего изменения Граупполицимигратионрепорт.|
 |мигратионреадинесс|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|Область действия Intune для связанного файлового объекта групповой политики. Возможные значения: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|таржетединактиведиректори|Логический|Свойство Targeted в Active Directory из XML-контента объекта групповой политики|
+|таржетединактиведиректори|Логическое|Свойство Targeted в Active Directory из XML-контента объекта групповой политики|
 |тоталсеттингскаунт|Int32|Общее количество параметров групповой политики из файла GPO.|
 |суппортедсеттингскаунт|Int32|Количество параметров групповой политики, поддерживаемых Intune.|
 |суппортедсеттингсперцент|Int32|Процент параметров групповой политики, поддерживаемых Intune.|
@@ -118,7 +120,6 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
-
 
 
 

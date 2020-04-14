@@ -1,20 +1,20 @@
 ---
 title: Обновление контакта
 description: Обновление свойств объекта Contact.
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5d06ea7fd6b6ccd860c62de27457c12afbd2bf93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3bdb7c214a60e80088dd60ff6c7a913e2ea9acd7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437016"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382001"
 ---
 # <a name="update-contact"></a>Обновление контакта
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -138,7 +138,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

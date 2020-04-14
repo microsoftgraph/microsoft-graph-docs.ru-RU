@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса edgeSearchEngine
 description: Позволяет ИТ-администраторам предварительно задавать поисковую систему по умолчанию для управляемых устройств.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9471c92dc88d49426a7f8c41f73708594b7cbf8c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9808e5f1c51c6893159d1c04c1fae967e83cef64
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791865"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386176"
 ---
 # <a name="edgesearchengine-resource-type"></a>Тип ресурса edgeSearchEngine
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

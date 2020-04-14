@@ -1,20 +1,20 @@
 ---
 title: Список устройств
 description: 'Получение списка устройств, зарегистрированных в каталоге. '
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 01fea91712c9112165df5709321c00d26269ddab
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e3719037cd1b9646a6eb22aeb8b820c5ce630d5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435733"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381822"
 ---
 # <a name="list-devices"></a>Список устройств
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42435733"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Для приложения | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

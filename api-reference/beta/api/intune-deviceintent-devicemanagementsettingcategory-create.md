@@ -1,18 +1,20 @@
 ---
 title: Создание Девицеманажементсеттингкатегори
 description: Создание нового объекта Девицеманажементсеттингкатегори.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 331437082df79e302c3ab9a2b3603fbf5e8963ea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 52fe09f9c5ebd74c6d665f990836d1e0006a3c7b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815137"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381619"
 ---
 # <a name="create-devicemanagementsettingcategory"></a>Создание Девицеманажементсеттингкатегори
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42815137"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +55,7 @@ POST /deviceManagement/categories
 |:---|:---|:---|
 |id|String|Идентификатор категории|
 |displayName|Строка|Имя категории|
-|хасрекуиредсеттинг|Логический|Категория содержит параметры, необходимые для верхнего уровня|
+|хасрекуиредсеттинг|Логическое|Категория содержит параметры, необходимые для верхнего уровня|
 
 
 
@@ -90,7 +92,6 @@ Content-Length: 193
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Действие assign
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 084f1533cb2e4e2305b13341abc2f213b3940d7c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b317eb825ffb9da5f0a907f1b9ca0e014df764ae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800993"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389820"
 ---
 # <a name="assign-action"></a>Действие назначения
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,7 +30,7 @@ ms.locfileid: "42800993"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -96,7 +98,6 @@ Content-length: 550
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

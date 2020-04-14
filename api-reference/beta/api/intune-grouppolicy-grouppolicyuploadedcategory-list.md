@@ -1,18 +1,20 @@
 ---
 title: Список Граупполициуплоадедкатегориес
 description: Список свойств и связей объектов Граупполициуплоадедкатегори.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 09a136ae6891f31ae67907ed38022a92e84784b2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0e491e6803bfd544a1d8af5e2b00f13dafa9fb93
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803780"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43391971"
 ---
 # <a name="list-grouppolicyuploadedcategories"></a>Список Граупполициуплоадедкатегориес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,9 +27,9 @@ ms.locfileid: "42803780"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -78,7 +80,6 @@ Content-Length: 294
   ]
 }
 ```
-
 
 
 

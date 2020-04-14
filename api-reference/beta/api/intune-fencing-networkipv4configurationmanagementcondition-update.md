@@ -1,18 +1,20 @@
 ---
 title: Обновление networkIPv4ConfigurationManagementCondition
 description: Обновление свойств объекта networkIPv4ConfigurationManagementCondition.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d8edc9742608583aa8f7451030959fa3e7f8978
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 01ade0f662fc909ab8370cc17da5db239ba13893
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804697"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384450"
 ---
 # <a name="update-networkipv4configurationmanagementcondition"></a>Обновление networkIPv4ConfigurationManagementCondition
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42804697"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -131,7 +133,6 @@ Content-Length: 697
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Действие sendCustomNotificationToCompanyPortal
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed98614436bf5cd6c9adea9b5c7d1059c34ec141
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bf850c6bb6866c0f71d6da869e63b5d73f6288d4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801042"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390061"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>Действие sendCustomNotificationToCompanyPortal
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42801042"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -83,7 +85,6 @@ Content-length: 164
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

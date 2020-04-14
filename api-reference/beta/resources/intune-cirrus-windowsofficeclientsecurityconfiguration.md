@@ -2,17 +2,19 @@
 title: Тип ресурса Виндовсоффицеклиентсекуритиконфигуратион
 description: Пока не задокументировано.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 39f4f04233015cab47940d8e812f0878a417800b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d59b90b59c97bb30066a24c0f2763cdd0211d0ef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797285"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383519"
 ---
 # <a name="windowsofficeclientsecurityconfiguration-resource-type"></a>Тип ресурса Виндовсоффицеклиентсекуритиконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

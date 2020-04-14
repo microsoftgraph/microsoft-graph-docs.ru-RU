@@ -1,18 +1,20 @@
 ---
 title: Удаление политики
 description: Удаляет набор политик.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d70d12cad6a73604c35b7352cf467f547c7dfef4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f3d62876f163911c8bcd3ff22f944faebd096f8b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802141"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43391720"
 ---
 # <a name="delete-policyset"></a>Удаление политики
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42802141"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

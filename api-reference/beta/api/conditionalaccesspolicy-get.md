@@ -2,15 +2,15 @@
 title: Получение Кондитионалакцессполици
 description: Получение свойств и связей объекта Кондитионалакцессполици.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f3f55bf81988d492d0dc065cd513f453cfdb08f1
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 4a6b9eee7f7289a4f24ba88ca7a5ba36983018d8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062492"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387190"
 ---
 # <a name="get-conditionalaccesspolicy"></a>Получение Кондитионалакцессполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "43062492"
 |:--------------------------------------|:----------------------------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | Policy.Read.All |
+|Для приложения                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ GET /identity/conditionalAccess/policies/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

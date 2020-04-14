@@ -1,18 +1,20 @@
 ---
 title: действие Жетролескопетагсбид
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c59a7c6c06c2029369e76a2e34834b12607ebf8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 295b7e7a0d5825d45a5f4ae6a5aceb4647904ec0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801588"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386738"
 ---
 # <a name="getrolescopetagsbyid-action"></a>действие Жетролескопетагсбид
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42801588"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+|Для приложения|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -95,7 +97,6 @@ Content-Length: 257
   ]
 }
 ```
-
 
 
 

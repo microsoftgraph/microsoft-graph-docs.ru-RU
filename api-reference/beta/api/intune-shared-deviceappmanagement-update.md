@@ -1,18 +1,20 @@
 ---
 title: Обновление объекта deviceAppManagement
 description: Обновление свойств объекта deviceAppManagement.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bed5a7fd19afb736bdbd5e11eece9dbbd7c3424c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 21362c0df13afe04f0dee6bf5fccc25661c833f1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801259"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43391136"
 ---
 # <a name="update-deviceappmanagement"></a>Обновление объекта deviceAppManagement
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -28,7 +30,7 @@ ms.locfileid: "42801259"
 | &nbsp;&nbsp; **Приложения**, **книги**, **входящая**миграция, **Интеграция партнеров**или **набор политик** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | |
+| Для приложения | |
 | &nbsp;&nbsp; **Приложения**, **книги**, **входящая**миграция, **Интеграция партнеров**или **набор политик** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 
@@ -95,7 +97,6 @@ Content-Length: 110
   "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
 }
 ```
-
 
 
 

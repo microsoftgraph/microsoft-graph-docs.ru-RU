@@ -1,18 +1,20 @@
 ---
 title: Удаление deviceManagementScript
 description: Удаляет объект deviceManagementScript.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b92f2d8bf06e6ff12d37ed56aa61b5fa3c3315d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4cdf7be9a117e0b97099dd310f377cdd9282cd8b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800979"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389742"
 ---
 # <a name="delete-devicemanagementscript"></a>Удаление deviceManagementScript
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +31,7 @@ ms.locfileid: "42800979"
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -67,7 +69,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

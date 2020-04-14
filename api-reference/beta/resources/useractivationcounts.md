@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса Усерактиватионкаунтс
 description: Ниже указано представление ресурса в формате JSON.
-author: dkershaw10
+author: krbain
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 65554254260d640638e7cbbbb2d0a0076e209f22
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 91366f9d2b2308c997c111123d856581db7c00c6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519549"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384956"
 ---
 # <a name="useractivationcounts-resource-type"></a>Тип ресурса Усерактиватионкаунтс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 
@@ -27,7 +27,7 @@ ms.locfileid: "42519549"
 | windows10Mobile   | Int64  | Счетчик активаций для Windows 10 Mobile. |
 | модуле               | Int64  | Счетчик активаций на iOS.             |
 | ОС           | Int64  | Счетчик активаций на устройстве с Android.  |
-| активатедоншаредкомпутер   | Логический | Имеет значение true, если пользователь использовал продукт на общедоступном компьютере. |
+| активатедоншаредкомпутер   | Логическое | Имеет значение true, если пользователь использовал продукт на общедоступном компьютере. |
 
 ## <a name="json-representation"></a>Представление JSON
 

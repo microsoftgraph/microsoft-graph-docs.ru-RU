@@ -2,17 +2,19 @@
 title: Получение officeClientConfiguration
 description: Получение определенной политики.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a7e85b29a5f60b8a12bd5c26635d71aa4c397fe
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 235e2b498b788d15268de197364442d8f7bb75e1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760307"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392171"
 ---
 # <a name="get-officeclientconfiguration"></a>Получение officeClientConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760307"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
+|Для приложения|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -39,7 +41,7 @@ GET /officeConfiguration/clientConfigurations/{key}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
@@ -100,7 +102,6 @@ Content-Length: 1137
   }
 }
 ```
-
 
 
 

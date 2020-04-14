@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Манажеддевицесуммаризедаппстате
 description: Событие, представляющее устройства пользователя с невыполненными или ожидающими приложениями.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6439ad781ad83bcae5bd66bc83f7a566e3b2ea6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 957d25e9b5dfe333529f228eecddb937b1752c2a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765155"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43385717"
 ---
 # <a name="manageddevicesummarizedappstate-resource-type"></a>Тип ресурса Манажеддевицесуммаризедаппстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

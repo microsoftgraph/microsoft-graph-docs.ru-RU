@@ -1,18 +1,20 @@
 ---
 title: Get deviceCompliancePolicy
 description: Чтение свойств и связей объекта deviceCompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b22ac4c5b1f4fb8affdbf89ad08af6223472bab
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b83f9dbd62ff8e54119af023c0ee5646ace8db22
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801210"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390822"
 ---
 # <a name="get-devicecompliancepolicy"></a>Get deviceCompliancePolicy
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +31,7 @@ ms.locfileid: "42801210"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|| 
+|Для приложения|| 
 |&nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
@@ -87,7 +89,6 @@ Content-Length: 433
   }
 }
 ```
-
 
 
 

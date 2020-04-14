@@ -1,18 +1,20 @@
 ---
 title: Обновление Девицеманажементтемплатесеттингкатегори
 description: Обновление свойств объекта Девицеманажементтемплатесеттингкатегори.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ad64ba62a1f778e78da44d2d6cf8aa2309ad2ce
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d6ec210ca9f236edfe396bd54629b1639dbce8b1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814941"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381402"
 ---
 # <a name="update-devicemanagementtemplatesettingcategory"></a>Обновление Девицеманажементтемплатесеттингкатегори
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814941"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +55,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |:---|:---|:---|
 |id|String|Идентификатор категории, наследуемый от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|Строка|Имя категории, унаследованное от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
-|хасрекуиредсеттинг|Логический|Категория содержит обязательный параметр верхнего уровня, наследуемого от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|хасрекуиредсеттинг|Логическое|Категория содержит обязательный параметр верхнего уровня, наследуемого от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 
 
@@ -90,7 +92,6 @@ Content-Length: 201
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

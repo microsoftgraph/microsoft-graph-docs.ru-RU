@@ -2,17 +2,19 @@
 title: Создание Оффицеклиентконфигуратионассигнмент
 description: Добавление целевой группы в существующую политику.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b666bf28f29a3f03504f52c2507a4b4fb253acec
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6e9517ee0937146a7e05b016d5f58a49236ca229
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760286"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392010"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>Создание Оффицеклиентконфигуратионассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760286"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -91,7 +93,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

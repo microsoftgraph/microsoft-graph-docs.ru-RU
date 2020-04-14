@@ -1,18 +1,20 @@
 ---
 title: Список Девицеманажементскриптграупассигнментс
 description: Список свойств и связей объектов Девицеманажементскриптграупассигнмент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f9b0722bfea44751c267378d0e6a40af3896c1f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 94f1fe49a82f56b4c4758751903b70f795910300
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814409"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380234"
 ---
 # <a name="list-devicemanagementscriptgroupassignments"></a>Список Девицеманажементскриптграупассигнментс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814409"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -76,7 +78,6 @@ Content-Length: 218
   ]
 }
 ```
-
 
 
 

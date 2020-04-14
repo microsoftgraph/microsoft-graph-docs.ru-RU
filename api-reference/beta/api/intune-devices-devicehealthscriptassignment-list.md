@@ -1,18 +1,20 @@
 ---
 title: Список Девицехеалсскриптассигнментс
 description: Список свойств и связей объектов Девицехеалсскриптассигнмент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 630af612496e4ec55fb03e526702c60fb13fdc6a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 94502067c582febb3c6044ad70ac0ee5ba8eedca
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814563"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380709"
 ---
 # <a name="list-devicehealthscriptassignments"></a>Список Девицехеалсскриптассигнментс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814563"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -81,7 +83,6 @@ Content-Length: 395
   ]
 }
 ```
-
 
 
 

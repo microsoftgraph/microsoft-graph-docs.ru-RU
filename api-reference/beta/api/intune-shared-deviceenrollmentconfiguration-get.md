@@ -1,18 +1,20 @@
 ---
 title: Получение объекта deviceEnrollmentConfiguration
 description: Чтение свойств и связей объекта deviceEnrollmentConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b0e90822aed702f7fa515846891f26d29f57fe46
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bfe7d8cb231222f6f83c1c01a069618c00cfc092
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801112"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390347"
 ---
 # <a name="get-deviceenrollmentconfiguration"></a>Получение объекта deviceEnrollmentConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +31,7 @@ ms.locfileid: "42801112"
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
@@ -85,7 +87,6 @@ Content-Length: 392
   }
 }
 ```
-
 
 
 

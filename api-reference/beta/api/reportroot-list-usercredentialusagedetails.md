@@ -2,19 +2,19 @@
 title: Список Усеркредентиалусажедетаилс
 description: Получение списка объектов Усеркредентиалусажедетаилс для определенного клиента.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 17e273395e9ae2aa7dd46611f9843359f8456aa3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df98f62df4465c43dede5f6cd293145b6c644e94
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453918"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386558"
 ---
 # <a name="list-usercredentialusagedetails"></a>Список Усеркредентиалусажедетаилс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

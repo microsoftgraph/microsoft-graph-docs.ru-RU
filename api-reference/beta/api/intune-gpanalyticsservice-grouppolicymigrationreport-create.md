@@ -1,18 +1,20 @@
 ---
 title: Создание Граупполицимигратионрепорт
 description: Создание нового объекта Граупполицимигратионрепорт.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e7c5844c1c1d21c87ff3957083038ef7aa5feffb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0c0e52db29b0ce0545b42aa6951afdb4f887b511
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804641"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384138"
 ---
 # <a name="create-grouppolicymigrationreport"></a>Создание Граупполицимигратионрепорт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42804641"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -60,7 +62,7 @@ POST /deviceManagement/groupPolicyMigrationReports
 |граупполицикреатеддатетиме|DateTimeOffset|Дата и время создания Граупполицимигратионрепорт.|
 |граупполициластмодифиеддатетиме|DateTimeOffset|Дата и время последнего изменения Граупполицимигратионрепорт.|
 |мигратионреадинесс|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|Область действия Intune для связанного файлового объекта групповой политики. Возможные значения: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|таржетединактиведиректори|Логический|Свойство Targeted в Active Directory из XML-контента объекта групповой политики|
+|таржетединактиведиректори|Логическое|Свойство Targeted в Active Directory из XML-контента объекта групповой политики|
 |тоталсеттингскаунт|Int32|Общее количество параметров групповой политики из файла GPO.|
 |суппортедсеттингскаунт|Int32|Количество параметров групповой политики, поддерживаемых Intune.|
 |суппортедсеттингсперцент|Int32|Процент параметров групповой политики, поддерживаемых Intune.|
@@ -118,7 +120,6 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
-
 
 
 

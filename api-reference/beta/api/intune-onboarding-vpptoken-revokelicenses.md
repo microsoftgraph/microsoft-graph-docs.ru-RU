@@ -1,18 +1,20 @@
 ---
 title: Действие revokeLicenses
 description: Отзыв лицензий, связанных с определенным appleVolumePurchaseProgramToken
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ad4c51e85f04d8f8f1bdcd851fea831f0b8fc15
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e9aa65a3b84caa54b6be160e25e2c4e595966139
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802666"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383657"
 ---
 # <a name="revokelicenses-action"></a>Действие revokeLicenses
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42802666"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложения|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -78,7 +80,6 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Действие syncWithAppleDeviceEnrollmentProgram
 description: Синхронизация между программой регистрации устройств Apple и Intune
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dd8aa371056d34360fa8e39ed8916bc3062ed31c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a2ab61c00c62b3ef7f4bbc00cb181e74d3cf51fe
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813227"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43391985"
 ---
 # <a name="syncwithappledeviceenrollmentprogram-action"></a>Действие syncWithAppleDeviceEnrollmentProgram
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813227"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложения|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

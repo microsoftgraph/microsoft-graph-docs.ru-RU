@@ -1,18 +1,20 @@
 ---
 title: Создание Секуритибаселинедевицестате
 description: Создание нового объекта Секуритибаселинедевицестате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 03caf18e233369e8294337163f5ab0e8c123ab4b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 66c1aaa521236c190c531840b351a5ec882dbc58
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814899"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381144"
 ---
 # <a name="create-securitybaselinedevicestate"></a>Создание Секуритибаселинедевицестате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814899"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -99,7 +101,6 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

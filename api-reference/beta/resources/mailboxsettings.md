@@ -2,19 +2,19 @@
 title: Тип ресурса mailboxSettings
 description: Параметры основного параметра вошедшего пользователя.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f6dbb44810c9469eb6ddb4dc8fd3299bb2b71e71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e091cba82392ece157864b6ad74ff16a66a67e71
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522871"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389017"
 ---
 # <a name="mailboxsettings-resource-type"></a>Тип ресурса mailboxSettings
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,12 +26,12 @@ ms.locfileid: "42522871"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|archiveFolder|строка|Идентификатор архивной папки пользователя.|
+|archiveFolder|string|Идентификатор архивной папки пользователя.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему.|
-|dateFormat|строка|Формат даты для почтового ящика пользователя.|
+|dateFormat|string|Формат даты для почтового ящика пользователя.|
 |делегатемитингмессажеделиверйоптионс|делегатемитингмессажеделиверйоптионс| Если у пользователя есть представитель календаря, этот параметр указывает, будут ли представитель, владелец почтового ящика или и то, и другое, получать сообщения о собраниях и ответы на приглашения. Возможные значения: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`. Значение по умолчанию: `sendToDelegateOnly`.|
 |language|[localeInfo](localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
-|тимеформат|строка|Формат времени для почтового ящика пользователя.|
+|тимеформат|string|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|
 |workingHours|[workingHours](workinghours.md)|Дни недели и часы работы пользователя в определенном часовом поясе.|
 

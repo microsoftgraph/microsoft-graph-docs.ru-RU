@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Усерекспериенцеаналитиксинсигхтвалуе
 description: Значение в средстве анализа пользовательского интерфейса.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88bdebb1f338a2e8ca325697283ede970ca2a732
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fb7e04517929d75a59a10489f989b92c9d63b522
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783783"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389167"
 ---
 # <a name="userexperienceanalyticsinsightvalue-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксинсигхтвалуе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

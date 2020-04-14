@@ -1,18 +1,20 @@
 ---
 title: Delete deviceInstallState
 description: Удаляет объект deviceInstallState.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 745dedaf1cf18df76a3478120e4a09598c7f867e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 138db4f553c6ab80d10415c3418c695e2257976d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760552"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392792"
 ---
 # <a name="delete-deviceinstallstate"></a>Delete deviceInstallState
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760552"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -64,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

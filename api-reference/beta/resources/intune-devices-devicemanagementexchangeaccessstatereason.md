@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Девицеманажементексчанжеакцессстатереасон
 description: Причина состояния доступа к Exchange для устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 00f9c44237052b4f15917763c6452c1a909543fc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b00f25dd6936e4fd664106d2903ed3451a5ca496
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784925"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388340"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>тип перечисления Девицеманажементексчанжеакцессстатереасон
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42784925"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Не обнаружена Причина состояния доступа в Exchange|
+|нет|нуль|Не обнаружена Причина состояния доступа в Exchange|
 |unknown|1,1|Причина неизвестного состояния доступа|
 |ексчанжеглобалруле|2|Состояние доступа определяется глобальным правилом Exchange|
 |ексчанжеиндивидуалруле|4|Состояние доступа определяется индивидуальной правилом Exchange|

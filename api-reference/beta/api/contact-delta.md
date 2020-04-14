@@ -2,19 +2,19 @@
 title: 'contact: delta'
 description: Получение набора контактов, которые были добавлены в указанную папку, обновлены в ней или удалены из нее.
 localization_priority: Normal
-author: angelgolfer-ms
+author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 15ff738f53e7b23f776173a8185b357c0b42babc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 31c2b41ee0a4cd13d9a4ef8c83e9b06ac27c8b30
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437093"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382015"
 ---
 # <a name="contact-delta"></a>contact: delta
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ GET /users/{id}/contactFolders/{id}/contacts/delta
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
 | $deltatoken | string | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` при предыдущем вызове функции **delta** для той же коллекции контактов и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
-| $skiptoken | строка | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` при предыдущем вызове функции **delta** и указывает, что в коллекции контактов остаются не отслеженные изменения. |
+| $skiptoken | string | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` при предыдущем вызове функции **delta** и указывает, что в коллекции контактов остаются не отслеженные изменения. |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 

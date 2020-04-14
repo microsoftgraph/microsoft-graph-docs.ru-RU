@@ -1,18 +1,20 @@
 ---
 title: Обновление Девицеманажементскриптграупассигнмент
 description: Обновление свойств объекта Девицеманажементскриптграупассигнмент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ce6e977c64177d391d11a168b9c6dac0965a226
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d8fe0c3c84983eb1bb6cb1ca0e12eb59b4fe6eae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814402"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380148"
 ---
 # <a name="update-devicemanagementscriptgroupassignment"></a>Обновление Девицеманажементскриптграупассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814402"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -88,7 +90,6 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

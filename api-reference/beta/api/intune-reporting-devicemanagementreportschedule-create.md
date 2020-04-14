@@ -1,18 +1,20 @@
 ---
 title: Создание Девицеманажементрепортсчедуле
 description: Создание нового объекта Девицеманажементрепортсчедуле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9da17410312e4d4aeb98f535328df5923439bf22
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9cfcdc8202bc6767ef723c47249f42cfba71e1d2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801350"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43391628"
 ---
 # <a name="create-devicemanagementreportschedule"></a>Создание Девицеманажементрепортсчедуле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42801350"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementManagedDevices. ReadWrite. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementManagedDevices. ReadWrite. ALL|
+|Для приложения|DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementManagedDevices. ReadWrite. ALL|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -132,7 +134,6 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
-
 
 
 

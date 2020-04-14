@@ -1,18 +1,20 @@
 ---
 title: Создание Секуритибаселинекатегористатесуммари
 description: Создание нового объекта Секуритибаселинекатегористатесуммари.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a61841aaa1f1902da7f32694583bf1653e5294fc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 99123c0dd864d4a876489b4da51ac3391a31af31
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814934"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381395"
 ---
 # <a name="create-securitybaselinecategorystatesummary"></a>Создание Секуритибаселинекатегористатесуммари
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814934"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -105,7 +107,6 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

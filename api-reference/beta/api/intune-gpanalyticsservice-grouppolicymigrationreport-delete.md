@@ -1,18 +1,20 @@
 ---
 title: Удаление Граупполицимигратионрепорт
 description: Удаляет объект Граупполицимигратионрепорт.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1aef0652c5001a3562caaf9efb761fd5f8129a22
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1a960f8860d97ed88f0e0168020ab01f6965e76b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804634"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383974"
 ---
 # <a name="delete-grouppolicymigrationreport"></a>Удаление Граупполицимигратионрепорт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42804634"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationRep
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

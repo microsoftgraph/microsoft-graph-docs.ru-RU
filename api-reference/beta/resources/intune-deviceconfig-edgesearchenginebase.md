@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса edgeSearchEngineBase
 description: Позволяет ИТ-администраторам устанавливать поисковую систему по умолчанию для управляемых с помощью системы MDM устройств. Пользователи могут переопределять эту настройку и изменять поисковую систему по умолчанию, если не установлена политика AllowSearchEngineCustomization.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e727928a7235cda9bb38c909cc31831d95ee609
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e612d66eb5ea46806b6bd6734b6f63be3524ff2f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791858"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386161"
 ---
 # <a name="edgesearchenginebase-resource-type"></a>Тип ресурса edgeSearchEngineBase
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

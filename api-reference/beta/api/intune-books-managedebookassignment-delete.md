@@ -1,18 +1,20 @@
 ---
 title: Удаление объекта managedEBookAssignment
 description: Удаляет объект managedEBookAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bee7120c4ac4fac2f90d8f74756f502ef0f39027
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c7fcbdb6f18b0724c5de8ba31855a7cfd05abf29
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760412"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392468"
 ---
 # <a name="delete-managedebookassignment"></a>Удаление объекта managedEBookAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760412"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

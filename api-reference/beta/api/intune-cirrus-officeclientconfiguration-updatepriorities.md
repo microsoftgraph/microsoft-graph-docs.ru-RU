@@ -2,17 +2,19 @@
 title: Действие updatePriorities
 description: Обновление приоритетов политики.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dc2ddb07589729db0a51aee885133ad2474965d0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 07bbff5017523849d3be81b800bb2ea37eab1cd8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760293"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392062"
 ---
 # <a name="updatepriorities-action"></a>Действие updatePriorities
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760293"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -84,7 +86,6 @@ Content-length: 143
 ``` http
 HTTP/1.1 200 OK
 ```
-
 
 
 

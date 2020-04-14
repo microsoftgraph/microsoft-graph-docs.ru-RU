@@ -1,18 +1,20 @@
 ---
 title: Обновление объекта deviceManagement
 description: Обновление свойств объекта deviceManagement.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0aecca341cef5b88794f20a9d037b340c33bf97b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 75bca64ce38779e0e9c1f905525414e5b0308f81
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801035"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390054"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -38,19 +40,19 @@ ms.locfileid: "42801035"
 | &nbsp;&nbsp; **Электронная SIM-карта** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Ограждение** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; **Уведомление** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Уведомление** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Одж** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp; &nbsp; **Удаленный доступ** | DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp; **Удаленный доступ** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Удаленная помощь** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Управление расходами по телекоммуникационной** связи | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Траублехутинг** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
-| Приложение ||
+| Для приложения ||
 | &nbsp;&nbsp; **Android для работы** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Аудит** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Условия компании** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -60,12 +62,12 @@ ms.locfileid: "42801035"
 | &nbsp;&nbsp; **Электронная SIM-карта** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Ограждение** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; **Уведомление** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Уведомление** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Одж** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp; &nbsp; **Удаленный доступ** | DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp; **Удаленный доступ** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Удаленная помощь** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Управление расходами по телекоммуникационной** связи | DeviceManagementServiceConfig.ReadWrite.All |
@@ -99,7 +101,7 @@ PATCH /deviceManagement
 |id|String|Уникальный идентификатор устройства.|
 |**Конфигурация устройства**|
 |интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
-|легаципкмананжементенаблед|Логический|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|легаципкмананжементенаблед|Логическое|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -189,7 +191,6 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
-
 
 
 

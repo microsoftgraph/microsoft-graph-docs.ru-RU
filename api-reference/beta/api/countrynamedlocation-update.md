@@ -2,15 +2,15 @@
 title: Обновление Каунтринамедлокатион
 description: Обновление свойств объекта Каунтринамедлокатион.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 49ba8d1c9ce6f4217d0177141c76bbbbd8fbc27a
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: a6d69e8610159955dac4a4f90c57c3f731fafcef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062003"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381861"
 ---
 # <a name="update-countrynamedlocation"></a>Обновление Каунтринамедлокатион
 
@@ -53,7 +53,7 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |каунтриесандрегионс|Коллекция String|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
 |displayName|String|Удобное для человека имя расположения.|
-|инклудеункновнкаунтриесандрегионс|Boolean|Значение, `true` если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
+|инклудеункновнкаунтриесандрегионс|Логическое|Значение, `true` если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
 
 ## <a name="response"></a>Отклик
 

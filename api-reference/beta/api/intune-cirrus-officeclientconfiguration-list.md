@@ -2,17 +2,19 @@
 title: Список Оффицеклиентконфигуратионс
 description: Получить все политики.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 12f9734357a2198b30c2fa6142894aadf8e8d308
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a795cddff58d9070eba7b883e1b78c3cd62d7d64
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760300"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392148"
 ---
 # <a name="list-officeclientconfigurations"></a>Список Оффицеклиентконфигуратионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760300"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
+|Для приложения|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -100,7 +102,6 @@ Content-Length: 1207
   ]
 }
 ```
-
 
 
 

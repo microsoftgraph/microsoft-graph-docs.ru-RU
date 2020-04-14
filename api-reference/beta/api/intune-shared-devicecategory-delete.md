@@ -1,18 +1,20 @@
 ---
 title: Удаление deviceCategory
 description: Удаление объекта deviceCategory.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a54dd7e41e9c705f4a349168ca453d3e408c334a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 730dd3077652e4a9d91bf4741add7a973f005931
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801245"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43391065"
 ---
 # <a name="delete-devicecategory"></a>Удаление deviceCategory
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42801245"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложения||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -68,7 +70,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{devic
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

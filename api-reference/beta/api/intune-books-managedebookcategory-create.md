@@ -1,18 +1,20 @@
 ---
 title: Создание Манажедебуккатегори
 description: Создание нового объекта Манажедебуккатегори.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dce9ea931460e4c54a468617caecce08231335fb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b3d59e4b8e31a894c30237b96ddb524478a420f4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760384"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392227"
 ---
 # <a name="create-managedebookcategory"></a>Создание Манажедебуккатегори
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760384"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -90,7 +92,6 @@ Content-Length: 215
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

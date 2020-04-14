@@ -1,20 +1,20 @@
 ---
 title: Получение контакта
 description: Получение свойств и связей объекта Contact.
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2d6b43844bb2b94be14a0567af0bb849b5e74551
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c94248438f52403e1563725b69c1eea9181b268
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437072"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382008"
 ---
 # <a name="get-contact"></a>Вывод контакта
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/me/contacts/AAMkAGI2THk0AAA=
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

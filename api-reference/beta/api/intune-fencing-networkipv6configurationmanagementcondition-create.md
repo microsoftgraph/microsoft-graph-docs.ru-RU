@@ -1,18 +1,20 @@
 ---
 title: Создание networkIPv6ConfigurationManagementCondition
 description: Создание нового объекта networkIPv6ConfigurationManagementCondition.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d7ad4e3796794456141fc3f1f0f90667f228be58
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1c97e39babe6ee9330ad86314a9347b743f1571c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804690"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384331"
 ---
 # <a name="create-networkipv6configurationmanagementcondition"></a>Создание networkIPv6ConfigurationManagementCondition
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42804690"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -128,7 +130,6 @@ Content-Length: 651
   ]
 }
 ```
-
 
 
 

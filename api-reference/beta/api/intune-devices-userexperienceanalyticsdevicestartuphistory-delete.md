@@ -1,18 +1,20 @@
 ---
 title: Удаление Усерекспериенцеаналитиксдевицестартуфистори
 description: Удаляет объект Усерекспериенцеаналитиксдевицестартуфистори.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 63a337a84d4c41ebf6efe76d1ce37e459055613b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 91804e7ecc1e54786f4cd4c8eb1afd9af6864891
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813946"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379544"
 ---
 # <a name="delete-userexperienceanalyticsdevicestartuphistory"></a>Удаление Усерекспериенцеаналитиксдевицестартуфистори
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813946"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalytics
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Обновление объекта detectedApp
 description: Обновление свойств объекта detectedApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ce58704200c38386f4ed4b12655d5888554e7d58
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bba20ae613457012a3577991afb10480ec428cfe
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814668"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380997"
 ---
 # <a name="update-detectedapp"></a>Обновление объекта detectedApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814668"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -97,7 +99,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
 
 
 
