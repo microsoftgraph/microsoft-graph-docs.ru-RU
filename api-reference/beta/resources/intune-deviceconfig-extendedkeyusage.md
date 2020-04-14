@@ -1,36 +1,38 @@
 ---
 title: Тип ресурса Екстендедкэйусаже
 description: Настраиваемое определение расширенного использования ключа
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 19cf790f692d624d926485fdc26feed1f69c73b7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c4fe1818aca19053242882e45edd1da5bbc544e8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791774"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460037"
 ---
-# <a name="extendedkeyusage-resource-type"></a><span data-ttu-id="5177d-103">Тип ресурса Екстендедкэйусаже</span><span class="sxs-lookup"><span data-stu-id="5177d-103">extendedKeyUsage resource type</span></span>
+# <a name="extendedkeyusage-resource-type"></a><span data-ttu-id="e3ffc-103">Тип ресурса Екстендедкэйусаже</span><span class="sxs-lookup"><span data-stu-id="e3ffc-103">extendedKeyUsage resource type</span></span>
 
-> <span data-ttu-id="5177d-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5177d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="e3ffc-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e3ffc-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="5177d-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="5177d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e3ffc-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e3ffc-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="5177d-106">Настраиваемое определение расширенного использования ключа</span><span class="sxs-lookup"><span data-stu-id="5177d-106">Custom Extended Key Usage definition</span></span>
+> <span data-ttu-id="e3ffc-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e3ffc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5177d-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="5177d-107">Properties</span></span>
-|<span data-ttu-id="5177d-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="5177d-108">Property</span></span>|<span data-ttu-id="5177d-109">Тип</span><span class="sxs-lookup"><span data-stu-id="5177d-109">Type</span></span>|<span data-ttu-id="5177d-110">Описание</span><span class="sxs-lookup"><span data-stu-id="5177d-110">Description</span></span>|
+<span data-ttu-id="e3ffc-107">Настраиваемое определение расширенного использования ключа</span><span class="sxs-lookup"><span data-stu-id="e3ffc-107">Custom Extended Key Usage definition</span></span>
+
+## <a name="properties"></a><span data-ttu-id="e3ffc-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="e3ffc-108">Properties</span></span>
+|<span data-ttu-id="e3ffc-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="e3ffc-109">Property</span></span>|<span data-ttu-id="e3ffc-110">Тип</span><span class="sxs-lookup"><span data-stu-id="e3ffc-110">Type</span></span>|<span data-ttu-id="e3ffc-111">Описание</span><span class="sxs-lookup"><span data-stu-id="e3ffc-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5177d-111">name</span><span class="sxs-lookup"><span data-stu-id="5177d-111">name</span></span>|<span data-ttu-id="5177d-112">String</span><span class="sxs-lookup"><span data-stu-id="5177d-112">String</span></span>|<span data-ttu-id="5177d-113">Имя расширенного использования ключа</span><span class="sxs-lookup"><span data-stu-id="5177d-113">Extended Key Usage Name</span></span>|
-|<span data-ttu-id="5177d-114">обжектидентифиер</span><span class="sxs-lookup"><span data-stu-id="5177d-114">objectIdentifier</span></span>|<span data-ttu-id="5177d-115">String</span><span class="sxs-lookup"><span data-stu-id="5177d-115">String</span></span>|<span data-ttu-id="5177d-116">Идентификатор объекта расширенного использования ключа</span><span class="sxs-lookup"><span data-stu-id="5177d-116">Extended Key Usage Object Identifier</span></span>|
+|<span data-ttu-id="e3ffc-112">name</span><span class="sxs-lookup"><span data-stu-id="e3ffc-112">name</span></span>|<span data-ttu-id="e3ffc-113">String</span><span class="sxs-lookup"><span data-stu-id="e3ffc-113">String</span></span>|<span data-ttu-id="e3ffc-114">Имя расширенного использования ключа</span><span class="sxs-lookup"><span data-stu-id="e3ffc-114">Extended Key Usage Name</span></span>|
+|<span data-ttu-id="e3ffc-115">обжектидентифиер</span><span class="sxs-lookup"><span data-stu-id="e3ffc-115">objectIdentifier</span></span>|<span data-ttu-id="e3ffc-116">String</span><span class="sxs-lookup"><span data-stu-id="e3ffc-116">String</span></span>|<span data-ttu-id="e3ffc-117">Идентификатор объекта расширенного использования ключа</span><span class="sxs-lookup"><span data-stu-id="e3ffc-117">Extended Key Usage Object Identifier</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="5177d-117">Связи</span><span class="sxs-lookup"><span data-stu-id="5177d-117">Relationships</span></span>
-<span data-ttu-id="5177d-118">Нет</span><span class="sxs-lookup"><span data-stu-id="5177d-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="e3ffc-118">Отношения</span><span class="sxs-lookup"><span data-stu-id="e3ffc-118">Relationships</span></span>
+<span data-ttu-id="e3ffc-119">Нет</span><span class="sxs-lookup"><span data-stu-id="e3ffc-119">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="5177d-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5177d-119">JSON Representation</span></span>
-<span data-ttu-id="5177d-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5177d-120">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e3ffc-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e3ffc-120">JSON Representation</span></span>
+<span data-ttu-id="e3ffc-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e3ffc-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.extendedKeyUsage"

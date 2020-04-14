@@ -2,64 +2,64 @@
 title: Обновление Маилсеарчфолдер
 description: Обновление свойств, доступных для записи, объекта Маилсеарчфолдер.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 08a4ad5a7a846689e70f2da4bdd50f8d16218f85
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f99c4125cd64f02421df01692b1dc19ee7c6605
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456994"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464248"
 ---
-# <a name="update-mailsearchfolder"></a><span data-ttu-id="fdd30-103">Обновление Маилсеарчфолдер</span><span class="sxs-lookup"><span data-stu-id="fdd30-103">Update mailSearchFolder</span></span>
+# <a name="update-mailsearchfolder"></a><span data-ttu-id="9d882-103">Обновление Маилсеарчфолдер</span><span class="sxs-lookup"><span data-stu-id="9d882-103">Update mailSearchFolder</span></span>
 
-<span data-ttu-id="fdd30-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="fdd30-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9d882-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9d882-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fdd30-105">Обновление свойств, доступных для записи, объекта [маилсеарчфолдер](../resources/mailsearchfolder.md) .</span><span class="sxs-lookup"><span data-stu-id="fdd30-105">Update the writable properties of a [mailSearchFolder](../resources/mailsearchfolder.md) object.</span></span>
+<span data-ttu-id="9d882-105">Обновление свойств, доступных для записи, объекта [маилсеарчфолдер](../resources/mailsearchfolder.md) .</span><span class="sxs-lookup"><span data-stu-id="9d882-105">Update the writable properties of a [mailSearchFolder](../resources/mailsearchfolder.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fdd30-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fdd30-106">Permissions</span></span>
-<span data-ttu-id="fdd30-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fdd30-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9d882-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9d882-106">Permissions</span></span>
+<span data-ttu-id="9d882-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9d882-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fdd30-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fdd30-109">Permission type</span></span>      | <span data-ttu-id="fdd30-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fdd30-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9d882-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9d882-109">Permission type</span></span>      | <span data-ttu-id="9d882-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9d882-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fdd30-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fdd30-111">Delegated (work or school account)</span></span> | <span data-ttu-id="fdd30-112">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fdd30-112">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="fdd30-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fdd30-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fdd30-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fdd30-114">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="fdd30-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fdd30-115">Application</span></span> | <span data-ttu-id="fdd30-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fdd30-116">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="9d882-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9d882-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9d882-112">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9d882-112">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="9d882-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9d882-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9d882-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9d882-114">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="9d882-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9d882-115">Application</span></span> | <span data-ttu-id="9d882-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9d882-116">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fdd30-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fdd30-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9d882-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9d882-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/mailFolders/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fdd30-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fdd30-118">Request headers</span></span>
-| <span data-ttu-id="fdd30-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="fdd30-119">Header</span></span>       | <span data-ttu-id="fdd30-120">Значение</span><span class="sxs-lookup"><span data-stu-id="fdd30-120">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="9d882-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9d882-118">Request headers</span></span>
+| <span data-ttu-id="9d882-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9d882-119">Header</span></span>       | <span data-ttu-id="9d882-120">Значение</span><span class="sxs-lookup"><span data-stu-id="9d882-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="fdd30-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fdd30-121">Authorization</span></span>  | <span data-ttu-id="fdd30-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fdd30-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="fdd30-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fdd30-124">Content-Type</span></span>  | <span data-ttu-id="fdd30-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fdd30-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="9d882-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9d882-121">Authorization</span></span>  | <span data-ttu-id="9d882-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9d882-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="9d882-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9d882-124">Content-Type</span></span>  | <span data-ttu-id="9d882-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9d882-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="fdd30-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fdd30-127">Request body</span></span>
-<span data-ttu-id="fdd30-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="fdd30-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="fdd30-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="fdd30-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="fdd30-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="fdd30-130">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9d882-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9d882-127">Request body</span></span>
+<span data-ttu-id="9d882-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="9d882-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="9d882-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="9d882-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="9d882-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="9d882-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="fdd30-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="fdd30-131">Property</span></span>     | <span data-ttu-id="fdd30-132">Тип</span><span class="sxs-lookup"><span data-stu-id="fdd30-132">Type</span></span>   |<span data-ttu-id="fdd30-133">Описание</span><span class="sxs-lookup"><span data-stu-id="fdd30-133">Description</span></span>|
+| <span data-ttu-id="9d882-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="9d882-131">Property</span></span>     | <span data-ttu-id="9d882-132">Тип</span><span class="sxs-lookup"><span data-stu-id="9d882-132">Type</span></span>   |<span data-ttu-id="9d882-133">Описание</span><span class="sxs-lookup"><span data-stu-id="9d882-133">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="fdd30-134">displayName</span><span class="sxs-lookup"><span data-stu-id="fdd30-134">displayName</span></span> | <span data-ttu-id="fdd30-135">String</span><span class="sxs-lookup"><span data-stu-id="fdd30-135">String</span></span> | <span data-ttu-id="fdd30-136">Отображаемое имя [mailFolder](../resources/mailfolder.md).</span><span class="sxs-lookup"><span data-stu-id="fdd30-136">The display name of the [mailFolder](../resources/mailfolder.md).</span></span>|
-| <span data-ttu-id="fdd30-137">инклуденестедфолдерс</span><span class="sxs-lookup"><span data-stu-id="fdd30-137">includeNestedFolders</span></span> | <span data-ttu-id="fdd30-138">Логический</span><span class="sxs-lookup"><span data-stu-id="fdd30-138">Boolean</span></span> | <span data-ttu-id="fdd30-139">Способ обхода иерархии папок почтовых ящиков.</span><span class="sxs-lookup"><span data-stu-id="fdd30-139">How the mailbox folder hierarchy should be traversed.</span></span> <span data-ttu-id="fdd30-140">`true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск.</span><span class="sxs-lookup"><span data-stu-id="fdd30-140">`true` means that a deep search should be done while `false` means a shallow search should be done instead.</span></span> |
-| <span data-ttu-id="fdd30-141">саурцефолдеридс</span><span class="sxs-lookup"><span data-stu-id="fdd30-141">sourceFolderIds</span></span> | <span data-ttu-id="fdd30-142">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="fdd30-142">String collection</span></span> | <span data-ttu-id="fdd30-143">Папки почтовых ящиков, которые должны быть mined.</span><span class="sxs-lookup"><span data-stu-id="fdd30-143">The mailbox folders that should be mined.</span></span> |
-| <span data-ttu-id="fdd30-144">филтеркуери</span><span class="sxs-lookup"><span data-stu-id="fdd30-144">filterQuery</span></span> | <span data-ttu-id="fdd30-145">String</span><span class="sxs-lookup"><span data-stu-id="fdd30-145">String</span></span> | <span data-ttu-id="fdd30-146">Запрос OData для фильтрации сообщений.</span><span class="sxs-lookup"><span data-stu-id="fdd30-146">The OData query to filter the messages.</span></span> |
+| <span data-ttu-id="9d882-134">displayName</span><span class="sxs-lookup"><span data-stu-id="9d882-134">displayName</span></span> | <span data-ttu-id="9d882-135">String</span><span class="sxs-lookup"><span data-stu-id="9d882-135">String</span></span> | <span data-ttu-id="9d882-136">Отображаемое имя [mailFolder](../resources/mailfolder.md).</span><span class="sxs-lookup"><span data-stu-id="9d882-136">The display name of the [mailFolder](../resources/mailfolder.md).</span></span>|
+| <span data-ttu-id="9d882-137">инклуденестедфолдерс</span><span class="sxs-lookup"><span data-stu-id="9d882-137">includeNestedFolders</span></span> | <span data-ttu-id="9d882-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="9d882-138">Boolean</span></span> | <span data-ttu-id="9d882-139">Способ обхода иерархии папок почтовых ящиков.</span><span class="sxs-lookup"><span data-stu-id="9d882-139">How the mailbox folder hierarchy should be traversed.</span></span> <span data-ttu-id="9d882-140">`true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск.</span><span class="sxs-lookup"><span data-stu-id="9d882-140">`true` means that a deep search should be done while `false` means a shallow search should be done instead.</span></span> |
+| <span data-ttu-id="9d882-141">саурцефолдеридс</span><span class="sxs-lookup"><span data-stu-id="9d882-141">sourceFolderIds</span></span> | <span data-ttu-id="9d882-142">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="9d882-142">String collection</span></span> | <span data-ttu-id="9d882-143">Папки почтовых ящиков, которые должны быть mined.</span><span class="sxs-lookup"><span data-stu-id="9d882-143">The mailbox folders that should be mined.</span></span> |
+| <span data-ttu-id="9d882-144">филтеркуери</span><span class="sxs-lookup"><span data-stu-id="9d882-144">filterQuery</span></span> | <span data-ttu-id="9d882-145">String</span><span class="sxs-lookup"><span data-stu-id="9d882-145">String</span></span> | <span data-ttu-id="9d882-146">Запрос OData для фильтрации сообщений.</span><span class="sxs-lookup"><span data-stu-id="9d882-146">The OData query to filter the messages.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="fdd30-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdd30-147">Response</span></span>
-<span data-ttu-id="fdd30-148">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="fdd30-148">If successful, this method returns a `200 OK` response code and an updated [mailFolder](../resources/mailfolder.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9d882-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="9d882-147">Response</span></span>
+<span data-ttu-id="9d882-148">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="9d882-148">If successful, this method returns a `200 OK` response code and an updated [mailFolder](../resources/mailfolder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fdd30-149">Пример</span><span class="sxs-lookup"><span data-stu-id="fdd30-149">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="fdd30-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="fdd30-150">Request</span></span>
-<span data-ttu-id="fdd30-151">Ниже приведен пример запроса, который обновляет свойство **филтеркуери** папки поиска.</span><span class="sxs-lookup"><span data-stu-id="fdd30-151">The following is an example request that updates the **filterQuery** property of the search folder.</span></span>
+## <a name="example"></a><span data-ttu-id="9d882-149">Пример</span><span class="sxs-lookup"><span data-stu-id="9d882-149">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="9d882-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="9d882-150">Request</span></span>
+<span data-ttu-id="9d882-151">Ниже приведен пример запроса, который обновляет свойство **филтеркуери** папки поиска.</span><span class="sxs-lookup"><span data-stu-id="9d882-151">The following is an example request that updates the **filterQuery** property of the search folder.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="fdd30-152">HTTP</span><span class="sxs-lookup"><span data-stu-id="fdd30-152">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9d882-152">HTTP</span><span class="sxs-lookup"><span data-stu-id="9d882-152">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGVmMDEzM"],
@@ -74,24 +74,24 @@ Content-type: application/json
   "filterQuery": "contains(subject, 'Analytics')"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="fdd30-153">C#</span><span class="sxs-lookup"><span data-stu-id="fdd30-153">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9d882-153">C#</span><span class="sxs-lookup"><span data-stu-id="9d882-153">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-mailsearchfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="fdd30-154">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fdd30-154">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9d882-154">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9d882-154">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-mailsearchfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="fdd30-155">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fdd30-155">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9d882-155">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9d882-155">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-mailsearchfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="fdd30-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdd30-156">Response</span></span>
-<span data-ttu-id="fdd30-157">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fdd30-157">The following is an example of the response.</span></span>
-><span data-ttu-id="fdd30-158">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="fdd30-158">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="fdd30-159">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fdd30-159">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="9d882-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="9d882-156">Response</span></span>
+<span data-ttu-id="9d882-157">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="9d882-157">The following is an example of the response.</span></span>
+><span data-ttu-id="9d882-158">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="9d882-158">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="9d882-159">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9d882-159">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

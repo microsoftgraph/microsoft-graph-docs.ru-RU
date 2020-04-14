@@ -1,34 +1,36 @@
 ---
 title: тип перечисления Андроидфорворксинкстатус
 description: Состояние синхронизации клиента с помощью API Google EMM
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fb99cda1a32592f9f6fb2ed854004efdc28bef03
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0eef101b3d151bda19b2934b2fd06461068f3c6e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799377"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459195"
 ---
-# <a name="androidforworksyncstatus-enum-type"></a><span data-ttu-id="3cdf8-103">тип перечисления Андроидфорворксинкстатус</span><span class="sxs-lookup"><span data-stu-id="3cdf8-103">androidForWorkSyncStatus enum type</span></span>
+# <a name="androidforworksyncstatus-enum-type"></a><span data-ttu-id="429c7-103">тип перечисления Андроидфорворксинкстатус</span><span class="sxs-lookup"><span data-stu-id="429c7-103">androidForWorkSyncStatus enum type</span></span>
 
-> <span data-ttu-id="3cdf8-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3cdf8-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="429c7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="429c7-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="3cdf8-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="3cdf8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="429c7-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="429c7-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="3cdf8-106">Состояние синхронизации клиента с помощью API Google EMM</span><span class="sxs-lookup"><span data-stu-id="3cdf8-106">Sync status of the tenant with the Google EMM API</span></span>
+> <span data-ttu-id="429c7-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="429c7-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="3cdf8-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="3cdf8-107">Members</span></span>
-|<span data-ttu-id="3cdf8-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="3cdf8-108">Member</span></span>|<span data-ttu-id="3cdf8-109">Значение</span><span class="sxs-lookup"><span data-stu-id="3cdf8-109">Value</span></span>|<span data-ttu-id="3cdf8-110">Описание</span><span class="sxs-lookup"><span data-stu-id="3cdf8-110">Description</span></span>|
+<span data-ttu-id="429c7-107">Состояние синхронизации клиента с помощью API Google EMM</span><span class="sxs-lookup"><span data-stu-id="429c7-107">Sync status of the tenant with the Google EMM API</span></span>
+
+## <a name="members"></a><span data-ttu-id="429c7-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="429c7-108">Members</span></span>
+|<span data-ttu-id="429c7-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="429c7-109">Member</span></span>|<span data-ttu-id="429c7-110">Значение</span><span class="sxs-lookup"><span data-stu-id="429c7-110">Value</span></span>|<span data-ttu-id="429c7-111">Описание</span><span class="sxs-lookup"><span data-stu-id="429c7-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3cdf8-111">success</span><span class="sxs-lookup"><span data-stu-id="3cdf8-111">success</span></span>|<span data-ttu-id="3cdf8-112">нуль</span><span class="sxs-lookup"><span data-stu-id="3cdf8-112">0</span></span>|<span data-ttu-id="3cdf8-113">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="3cdf8-113">Not yet documented</span></span>|
-|<span data-ttu-id="3cdf8-114">кредентиалснотвалид</span><span class="sxs-lookup"><span data-stu-id="3cdf8-114">credentialsNotValid</span></span>|<span data-ttu-id="3cdf8-115">1,1</span><span class="sxs-lookup"><span data-stu-id="3cdf8-115">1</span></span>|<span data-ttu-id="3cdf8-116">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="3cdf8-116">Not yet documented</span></span>|
-|<span data-ttu-id="3cdf8-117">андроидфорворкапиеррор</span><span class="sxs-lookup"><span data-stu-id="3cdf8-117">androidForWorkApiError</span></span>|<span data-ttu-id="3cdf8-118">2</span><span class="sxs-lookup"><span data-stu-id="3cdf8-118">2</span></span>|<span data-ttu-id="3cdf8-119">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="3cdf8-119">Not yet documented</span></span>|
-|<span data-ttu-id="3cdf8-120">манажементсервицееррор</span><span class="sxs-lookup"><span data-stu-id="3cdf8-120">managementServiceError</span></span>|<span data-ttu-id="3cdf8-121">4</span><span class="sxs-lookup"><span data-stu-id="3cdf8-121">3</span></span>|<span data-ttu-id="3cdf8-122">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="3cdf8-122">Not yet documented</span></span>|
-|<span data-ttu-id="3cdf8-123">ункновнеррор</span><span class="sxs-lookup"><span data-stu-id="3cdf8-123">unknownError</span></span>|<span data-ttu-id="3cdf8-124">4 </span><span class="sxs-lookup"><span data-stu-id="3cdf8-124">4</span></span>|<span data-ttu-id="3cdf8-125">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="3cdf8-125">Not yet documented</span></span>|
-|<span data-ttu-id="3cdf8-126">none</span><span class="sxs-lookup"><span data-stu-id="3cdf8-126">none</span></span>|<span data-ttu-id="3cdf8-127">5 </span><span class="sxs-lookup"><span data-stu-id="3cdf8-127">5</span></span>|<span data-ttu-id="3cdf8-128">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="3cdf8-128">Not yet documented</span></span>|
+|<span data-ttu-id="429c7-112">success</span><span class="sxs-lookup"><span data-stu-id="429c7-112">success</span></span>|<span data-ttu-id="429c7-113">нуль</span><span class="sxs-lookup"><span data-stu-id="429c7-113">0</span></span>|<span data-ttu-id="429c7-114">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="429c7-114">Not yet documented</span></span>|
+|<span data-ttu-id="429c7-115">кредентиалснотвалид</span><span class="sxs-lookup"><span data-stu-id="429c7-115">credentialsNotValid</span></span>|<span data-ttu-id="429c7-116">1,1</span><span class="sxs-lookup"><span data-stu-id="429c7-116">1</span></span>|<span data-ttu-id="429c7-117">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="429c7-117">Not yet documented</span></span>|
+|<span data-ttu-id="429c7-118">андроидфорворкапиеррор</span><span class="sxs-lookup"><span data-stu-id="429c7-118">androidForWorkApiError</span></span>|<span data-ttu-id="429c7-119">2</span><span class="sxs-lookup"><span data-stu-id="429c7-119">2</span></span>|<span data-ttu-id="429c7-120">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="429c7-120">Not yet documented</span></span>|
+|<span data-ttu-id="429c7-121">манажементсервицееррор</span><span class="sxs-lookup"><span data-stu-id="429c7-121">managementServiceError</span></span>|<span data-ttu-id="429c7-122">4</span><span class="sxs-lookup"><span data-stu-id="429c7-122">3</span></span>|<span data-ttu-id="429c7-123">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="429c7-123">Not yet documented</span></span>|
+|<span data-ttu-id="429c7-124">ункновнеррор</span><span class="sxs-lookup"><span data-stu-id="429c7-124">unknownError</span></span>|<span data-ttu-id="429c7-125">4 </span><span class="sxs-lookup"><span data-stu-id="429c7-125">4</span></span>|<span data-ttu-id="429c7-126">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="429c7-126">Not yet documented</span></span>|
+|<span data-ttu-id="429c7-127">нет</span><span class="sxs-lookup"><span data-stu-id="429c7-127">none</span></span>|<span data-ttu-id="429c7-128">5 </span><span class="sxs-lookup"><span data-stu-id="429c7-128">5</span></span>|<span data-ttu-id="429c7-129">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="429c7-129">Not yet documented</span></span>|
 
 
 

@@ -1,69 +1,69 @@
 ---
 title: Создание правила
 description: 'Создает объект messageRule, определяя набор условий и действий. '
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7210ec04f8161c1fbf564bae9af3b1d2fa28f179
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d9bba6404911a04e47d53f0bf162b9471406bf6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457029"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467130"
 ---
-# <a name="create-rule"></a><span data-ttu-id="79e40-103">Создание правила</span><span class="sxs-lookup"><span data-stu-id="79e40-103">Create rule</span></span>
+# <a name="create-rule"></a><span data-ttu-id="470d2-103">Создание правила</span><span class="sxs-lookup"><span data-stu-id="470d2-103">Create rule</span></span>
 
-<span data-ttu-id="79e40-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="79e40-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="470d2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="470d2-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="79e40-105">Создает объект [messageRule](../resources/messagerule.md), определяя набор условий и действий.</span><span class="sxs-lookup"><span data-stu-id="79e40-105">Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions.</span></span> 
+<span data-ttu-id="470d2-105">Создает объект [messageRule](../resources/messagerule.md), определяя набор условий и действий.</span><span class="sxs-lookup"><span data-stu-id="470d2-105">Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions.</span></span> 
 
-<span data-ttu-id="79e40-106">Outlook выполняет эти действия, если входящее сообщение в папке "Входящие" пользователя соответствует указанным условиям.</span><span class="sxs-lookup"><span data-stu-id="79e40-106">Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.</span></span>
+<span data-ttu-id="470d2-106">Outlook выполняет эти действия, если входящее сообщение в папке "Входящие" пользователя соответствует указанным условиям.</span><span class="sxs-lookup"><span data-stu-id="470d2-106">Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="79e40-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="79e40-107">Permissions</span></span>
-<span data-ttu-id="79e40-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="79e40-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="470d2-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="470d2-107">Permissions</span></span>
+<span data-ttu-id="470d2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="470d2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="79e40-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="79e40-110">Permission type</span></span>      | <span data-ttu-id="79e40-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="79e40-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="470d2-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="470d2-110">Permission type</span></span>      | <span data-ttu-id="470d2-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="470d2-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="79e40-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="79e40-112">Delegated (work or school account)</span></span> | <span data-ttu-id="79e40-113">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="79e40-113">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="79e40-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="79e40-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="79e40-115">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="79e40-115">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="79e40-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="79e40-116">Application</span></span> | <span data-ttu-id="79e40-117">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="79e40-117">MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="470d2-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="470d2-112">Delegated (work or school account)</span></span> | <span data-ttu-id="470d2-113">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="470d2-113">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="470d2-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="470d2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="470d2-115">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="470d2-115">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="470d2-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="470d2-116">Application</span></span> | <span data-ttu-id="470d2-117">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="470d2-117">MailboxSettings.ReadWrite</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="79e40-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="79e40-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="470d2-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="470d2-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/mailFolders/inbox/messagerules
 POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 ```
-## <a name="request-headers"></a><span data-ttu-id="79e40-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="79e40-119">Request headers</span></span>
-| <span data-ttu-id="79e40-120">Имя</span><span class="sxs-lookup"><span data-stu-id="79e40-120">Name</span></span>       | <span data-ttu-id="79e40-121">Описание</span><span class="sxs-lookup"><span data-stu-id="79e40-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="470d2-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="470d2-119">Request headers</span></span>
+| <span data-ttu-id="470d2-120">Имя</span><span class="sxs-lookup"><span data-stu-id="470d2-120">Name</span></span>       | <span data-ttu-id="470d2-121">Описание</span><span class="sxs-lookup"><span data-stu-id="470d2-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="79e40-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="79e40-122">Authorization</span></span>  | <span data-ttu-id="79e40-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="79e40-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="470d2-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="470d2-122">Authorization</span></span>  | <span data-ttu-id="470d2-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="470d2-p102">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="79e40-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="79e40-125">Request body</span></span>
-<span data-ttu-id="79e40-126">В тексте запроса укажите параметры, применимые к вашему правилу.</span><span class="sxs-lookup"><span data-stu-id="79e40-126">In the request body, supply the parameters that are applicable to your rule.</span></span> <span data-ttu-id="79e40-127">Ниже представлены параметры текста, которые обычно используются при создании правил.</span><span class="sxs-lookup"><span data-stu-id="79e40-127">The following are body parameters that are typically used when creating rules.</span></span> <span data-ttu-id="79e40-128">Можно соответствующим образом указать любые другие записываемые свойства **messageRule** в тексте запроса.</span><span class="sxs-lookup"><span data-stu-id="79e40-128">You can specify any other writable **messageRule** properties as appropriate in the request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="470d2-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="470d2-125">Request body</span></span>
+<span data-ttu-id="470d2-126">В тексте запроса укажите параметры, применимые к вашему правилу.</span><span class="sxs-lookup"><span data-stu-id="470d2-126">In the request body, supply the parameters that are applicable to your rule.</span></span> <span data-ttu-id="470d2-127">Ниже представлены параметры текста, которые обычно используются при создании правил.</span><span class="sxs-lookup"><span data-stu-id="470d2-127">The following are body parameters that are typically used when creating rules.</span></span> <span data-ttu-id="470d2-128">Можно соответствующим образом указать любые другие записываемые свойства **messageRule** в тексте запроса.</span><span class="sxs-lookup"><span data-stu-id="470d2-128">You can specify any other writable **messageRule** properties as appropriate in the request body.</span></span>
 
-| <span data-ttu-id="79e40-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="79e40-129">Parameter</span></span>       | <span data-ttu-id="79e40-130">Тип</span><span class="sxs-lookup"><span data-stu-id="79e40-130">Type</span></span>|<span data-ttu-id="79e40-131">Описание</span><span class="sxs-lookup"><span data-stu-id="79e40-131">Description</span></span>|
+| <span data-ttu-id="470d2-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="470d2-129">Parameter</span></span>       | <span data-ttu-id="470d2-130">Тип</span><span class="sxs-lookup"><span data-stu-id="470d2-130">Type</span></span>|<span data-ttu-id="470d2-131">Описание</span><span class="sxs-lookup"><span data-stu-id="470d2-131">Description</span></span>|
 |:--------|:-------|:----------|
-|<span data-ttu-id="79e40-132">actions</span><span class="sxs-lookup"><span data-stu-id="79e40-132">actions</span></span>|[<span data-ttu-id="79e40-133">messageRuleActions</span><span class="sxs-lookup"><span data-stu-id="79e40-133">messageRuleActions</span></span>](../resources/messageruleactions.md)|<span data-ttu-id="79e40-134">Действия, применимые к сообщению при выполнении соответствующих условий (если таковые имеются).</span><span class="sxs-lookup"><span data-stu-id="79e40-134">Actions to be taken on a message when the corresponding conditions, if any, are fulfilled.</span></span> <span data-ttu-id="79e40-135">Обязательное.</span><span class="sxs-lookup"><span data-stu-id="79e40-135">Required.</span></span>|
-|<span data-ttu-id="79e40-136">conditions</span><span class="sxs-lookup"><span data-stu-id="79e40-136">conditions</span></span>|[<span data-ttu-id="79e40-137">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="79e40-137">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)|<span data-ttu-id="79e40-138">Условия, выполнение которых активирует соответствующие действия для указанного правила.</span><span class="sxs-lookup"><span data-stu-id="79e40-138">Conditions that when fulfilled, will trigger the corresponding actions for that rule.</span></span> <span data-ttu-id="79e40-139">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="79e40-139">Optional.</span></span>|
-|<span data-ttu-id="79e40-140">displayName</span><span class="sxs-lookup"><span data-stu-id="79e40-140">displayName</span></span>| <span data-ttu-id="79e40-141">String</span><span class="sxs-lookup"><span data-stu-id="79e40-141">String</span></span>  | <span data-ttu-id="79e40-142">Отображаемое имя правила.</span><span class="sxs-lookup"><span data-stu-id="79e40-142">The display name of the rule.</span></span> <span data-ttu-id="79e40-143">Обязательное.</span><span class="sxs-lookup"><span data-stu-id="79e40-143">Required.</span></span>|
-|<span data-ttu-id="79e40-144">exceptions</span><span class="sxs-lookup"><span data-stu-id="79e40-144">exceptions</span></span>| [<span data-ttu-id="79e40-145">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="79e40-145">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)| <span data-ttu-id="79e40-146">Представляет условия исключения для правила.</span><span class="sxs-lookup"><span data-stu-id="79e40-146">Represents exception conditions for the rule.</span></span> <span data-ttu-id="79e40-147">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="79e40-147">Optional.</span></span> |
-|<span data-ttu-id="79e40-148">isEnabled</span><span class="sxs-lookup"><span data-stu-id="79e40-148">isEnabled</span></span> | <span data-ttu-id="79e40-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="79e40-149">Boolean</span></span> | <span data-ttu-id="79e40-150">Указывает, включено ли применение правила к сообщениям.</span><span class="sxs-lookup"><span data-stu-id="79e40-150">Indicates whether the rule is enabled to be applied to messages.</span></span> <span data-ttu-id="79e40-151">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="79e40-151">Optional.</span></span> |
-|<span data-ttu-id="79e40-152">sequence</span><span class="sxs-lookup"><span data-stu-id="79e40-152">sequence</span></span>| <span data-ttu-id="79e40-153">Int32</span><span class="sxs-lookup"><span data-stu-id="79e40-153">Int32</span></span> | <span data-ttu-id="79e40-154">Определяет последовательность выполнения правила среди прочих правил.</span><span class="sxs-lookup"><span data-stu-id="79e40-154">Indicates the order in which the rule is executed, among other rules.</span></span> <span data-ttu-id="79e40-155">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="79e40-155">Required.</span></span>|
+|<span data-ttu-id="470d2-132">actions</span><span class="sxs-lookup"><span data-stu-id="470d2-132">actions</span></span>|[<span data-ttu-id="470d2-133">messageRuleActions</span><span class="sxs-lookup"><span data-stu-id="470d2-133">messageRuleActions</span></span>](../resources/messageruleactions.md)|<span data-ttu-id="470d2-134">Действия, применимые к сообщению при выполнении соответствующих условий (если таковые имеются).</span><span class="sxs-lookup"><span data-stu-id="470d2-134">Actions to be taken on a message when the corresponding conditions, if any, are fulfilled.</span></span> <span data-ttu-id="470d2-135">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="470d2-135">Required.</span></span>|
+|<span data-ttu-id="470d2-136">conditions</span><span class="sxs-lookup"><span data-stu-id="470d2-136">conditions</span></span>|[<span data-ttu-id="470d2-137">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="470d2-137">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)|<span data-ttu-id="470d2-138">Условия, выполнение которых активирует соответствующие действия для указанного правила.</span><span class="sxs-lookup"><span data-stu-id="470d2-138">Conditions that when fulfilled, will trigger the corresponding actions for that rule.</span></span> <span data-ttu-id="470d2-139">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="470d2-139">Optional.</span></span>|
+|<span data-ttu-id="470d2-140">displayName</span><span class="sxs-lookup"><span data-stu-id="470d2-140">displayName</span></span>| <span data-ttu-id="470d2-141">String</span><span class="sxs-lookup"><span data-stu-id="470d2-141">String</span></span>  | <span data-ttu-id="470d2-142">Отображаемое имя правила.</span><span class="sxs-lookup"><span data-stu-id="470d2-142">The display name of the rule.</span></span> <span data-ttu-id="470d2-143">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="470d2-143">Required.</span></span>|
+|<span data-ttu-id="470d2-144">exceptions</span><span class="sxs-lookup"><span data-stu-id="470d2-144">exceptions</span></span>| [<span data-ttu-id="470d2-145">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="470d2-145">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)| <span data-ttu-id="470d2-146">Представляет условия исключения для правила.</span><span class="sxs-lookup"><span data-stu-id="470d2-146">Represents exception conditions for the rule.</span></span> <span data-ttu-id="470d2-147">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="470d2-147">Optional.</span></span> |
+|<span data-ttu-id="470d2-148">isEnabled</span><span class="sxs-lookup"><span data-stu-id="470d2-148">isEnabled</span></span> | <span data-ttu-id="470d2-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="470d2-149">Boolean</span></span> | <span data-ttu-id="470d2-150">Указывает, включено ли применение правила к сообщениям.</span><span class="sxs-lookup"><span data-stu-id="470d2-150">Indicates whether the rule is enabled to be applied to messages.</span></span> <span data-ttu-id="470d2-151">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="470d2-151">Optional.</span></span> |
+|<span data-ttu-id="470d2-152">sequence</span><span class="sxs-lookup"><span data-stu-id="470d2-152">sequence</span></span>| <span data-ttu-id="470d2-153">Int32</span><span class="sxs-lookup"><span data-stu-id="470d2-153">Int32</span></span> | <span data-ttu-id="470d2-154">Определяет последовательность выполнения правила среди прочих правил.</span><span class="sxs-lookup"><span data-stu-id="470d2-154">Indicates the order in which the rule is executed, among other rules.</span></span> <span data-ttu-id="470d2-155">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="470d2-155">Required.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="79e40-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="79e40-156">Response</span></span>
-<span data-ttu-id="79e40-157">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект **messageRule** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="79e40-157">If successful, this method returns `201 Created` response code and a **messageRule** object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="470d2-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="470d2-156">Response</span></span>
+<span data-ttu-id="470d2-157">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект **messageRule** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="470d2-157">If successful, this method returns `201 Created` response code and a **messageRule** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="79e40-158">Пример</span><span class="sxs-lookup"><span data-stu-id="79e40-158">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="79e40-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="79e40-159">Request</span></span>
-<span data-ttu-id="79e40-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="79e40-160">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="470d2-158">Пример</span><span class="sxs-lookup"><span data-stu-id="470d2-158">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="470d2-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="470d2-159">Request</span></span>
+<span data-ttu-id="470d2-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="470d2-160">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="79e40-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="79e40-161">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="470d2-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="470d2-161">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_messagerule_from_mailfolder"
@@ -95,22 +95,22 @@ Content-type: application/json
 }
 
 ```
-# <a name="c"></a>[<span data-ttu-id="79e40-162">C#</span><span class="sxs-lookup"><span data-stu-id="79e40-162">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="470d2-162">C#</span><span class="sxs-lookup"><span data-stu-id="470d2-162">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-messagerule-from-mailfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="79e40-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="79e40-163">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="470d2-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="470d2-163">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-messagerule-from-mailfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="79e40-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="79e40-164">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="470d2-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="470d2-164">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-messagerule-from-mailfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="79e40-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="79e40-165">Response</span></span>
-<span data-ttu-id="79e40-p110">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="79e40-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="470d2-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="470d2-165">Response</span></span>
+<span data-ttu-id="470d2-p110">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="470d2-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,30 +1,32 @@
 ---
 title: тип перечисления win32LobAppDeliveryOptimizationPriority
 description: Содержит значение приоритета оптимизации доставки.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b87634f4a2792deafe85ed30fbbb972fee54629
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1daf05249bfbd223c1038b4f145ec3caa0ec695b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797677"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460209"
 ---
-# <a name="win32lobappdeliveryoptimizationpriority-enum-type"></a><span data-ttu-id="f06e3-103">тип перечисления win32LobAppDeliveryOptimizationPriority</span><span class="sxs-lookup"><span data-stu-id="f06e3-103">win32LobAppDeliveryOptimizationPriority enum type</span></span>
+# <a name="win32lobappdeliveryoptimizationpriority-enum-type"></a><span data-ttu-id="71a85-103">тип перечисления win32LobAppDeliveryOptimizationPriority</span><span class="sxs-lookup"><span data-stu-id="71a85-103">win32LobAppDeliveryOptimizationPriority enum type</span></span>
 
-> <span data-ttu-id="f06e3-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f06e3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="71a85-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="71a85-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="f06e3-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f06e3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="71a85-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="71a85-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="f06e3-106">Содержит значение приоритета оптимизации доставки.</span><span class="sxs-lookup"><span data-stu-id="f06e3-106">Contains value for delivery optimization priority.</span></span>
+> <span data-ttu-id="71a85-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="71a85-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="f06e3-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="f06e3-107">Members</span></span>
-|<span data-ttu-id="f06e3-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="f06e3-108">Member</span></span>|<span data-ttu-id="f06e3-109">Значение</span><span class="sxs-lookup"><span data-stu-id="f06e3-109">Value</span></span>|<span data-ttu-id="f06e3-110">Описание</span><span class="sxs-lookup"><span data-stu-id="f06e3-110">Description</span></span>|
+<span data-ttu-id="71a85-107">Содержит значение приоритета оптимизации доставки.</span><span class="sxs-lookup"><span data-stu-id="71a85-107">Contains value for delivery optimization priority.</span></span>
+
+## <a name="members"></a><span data-ttu-id="71a85-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="71a85-108">Members</span></span>
+|<span data-ttu-id="71a85-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="71a85-109">Member</span></span>|<span data-ttu-id="71a85-110">Значение</span><span class="sxs-lookup"><span data-stu-id="71a85-110">Value</span></span>|<span data-ttu-id="71a85-111">Описание</span><span class="sxs-lookup"><span data-stu-id="71a85-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f06e3-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="f06e3-111">notConfigured</span></span>|<span data-ttu-id="f06e3-112">нуль</span><span class="sxs-lookup"><span data-stu-id="f06e3-112">0</span></span>|<span data-ttu-id="f06e3-113">Не настроенный или фоновый приоритет оптимизации доставки.</span><span class="sxs-lookup"><span data-stu-id="f06e3-113">Not configured or background normal delivery optimization priority.</span></span>|
-|<span data-ttu-id="f06e3-114">кист</span><span class="sxs-lookup"><span data-stu-id="f06e3-114">foreground</span></span>|<span data-ttu-id="f06e3-115">1,1</span><span class="sxs-lookup"><span data-stu-id="f06e3-115">1</span></span>|<span data-ttu-id="f06e3-116">Приоритет оптимизации доставки переднего плана.</span><span class="sxs-lookup"><span data-stu-id="f06e3-116">Foreground delivery optimization priority.</span></span>|
+|<span data-ttu-id="71a85-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="71a85-112">notConfigured</span></span>|<span data-ttu-id="71a85-113">нуль</span><span class="sxs-lookup"><span data-stu-id="71a85-113">0</span></span>|<span data-ttu-id="71a85-114">Не настроенный или фоновый приоритет оптимизации доставки.</span><span class="sxs-lookup"><span data-stu-id="71a85-114">Not configured or background normal delivery optimization priority.</span></span>|
+|<span data-ttu-id="71a85-115">кист</span><span class="sxs-lookup"><span data-stu-id="71a85-115">foreground</span></span>|<span data-ttu-id="71a85-116">1,1</span><span class="sxs-lookup"><span data-stu-id="71a85-116">1</span></span>|<span data-ttu-id="71a85-117">Приоритет оптимизации доставки переднего плана.</span><span class="sxs-lookup"><span data-stu-id="71a85-117">Foreground delivery optimization priority.</span></span>|
 
 
 

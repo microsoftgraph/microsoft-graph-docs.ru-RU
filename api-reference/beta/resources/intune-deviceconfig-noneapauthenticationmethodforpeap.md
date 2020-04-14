@@ -1,30 +1,32 @@
 ---
 title: тип перечисления nonEapAuthenticationMethodForPeap
 description: Методы, отличные от EAP, для проверки подлинности, когда PEAP — выбранный тип EAP.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d23178670c881f41d09427b039707319ef617566
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 738adf4a128c7b8f1fac54f590ad878871498569
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788501"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460978"
 ---
-# <a name="noneapauthenticationmethodforpeap-enum-type"></a><span data-ttu-id="ba4a6-103">тип перечисления nonEapAuthenticationMethodForPeap</span><span class="sxs-lookup"><span data-stu-id="ba4a6-103">nonEapAuthenticationMethodForPeap enum type</span></span>
+# <a name="noneapauthenticationmethodforpeap-enum-type"></a><span data-ttu-id="ca7d3-103">тип перечисления nonEapAuthenticationMethodForPeap</span><span class="sxs-lookup"><span data-stu-id="ca7d3-103">nonEapAuthenticationMethodForPeap enum type</span></span>
 
-> <span data-ttu-id="ba4a6-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ba4a6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="ca7d3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ca7d3-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ba4a6-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ba4a6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ca7d3-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ca7d3-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="ba4a6-106">Методы, отличные от EAP, для проверки подлинности, когда PEAP — выбранный тип EAP.</span><span class="sxs-lookup"><span data-stu-id="ba4a6-106">Non-EAP methods for authentication when PEAP is the selected EAP type.</span></span>
+> <span data-ttu-id="ca7d3-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ca7d3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="ba4a6-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="ba4a6-107">Members</span></span>
-|<span data-ttu-id="ba4a6-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="ba4a6-108">Member</span></span>|<span data-ttu-id="ba4a6-109">Значение</span><span class="sxs-lookup"><span data-stu-id="ba4a6-109">Value</span></span>|<span data-ttu-id="ba4a6-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ba4a6-110">Description</span></span>|
+<span data-ttu-id="ca7d3-107">Методы, отличные от EAP, для проверки подлинности, когда PEAP — выбранный тип EAP.</span><span class="sxs-lookup"><span data-stu-id="ca7d3-107">Non-EAP methods for authentication when PEAP is the selected EAP type.</span></span>
+
+## <a name="members"></a><span data-ttu-id="ca7d3-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="ca7d3-108">Members</span></span>
+|<span data-ttu-id="ca7d3-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="ca7d3-109">Member</span></span>|<span data-ttu-id="ca7d3-110">Значение</span><span class="sxs-lookup"><span data-stu-id="ca7d3-110">Value</span></span>|<span data-ttu-id="ca7d3-111">Описание</span><span class="sxs-lookup"><span data-stu-id="ca7d3-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ba4a6-111">none</span><span class="sxs-lookup"><span data-stu-id="ba4a6-111">none</span></span>|<span data-ttu-id="ba4a6-112">нуль</span><span class="sxs-lookup"><span data-stu-id="ba4a6-112">0</span></span>|<span data-ttu-id="ba4a6-113">Нет.</span><span class="sxs-lookup"><span data-stu-id="ba4a6-113">None.</span></span>|
-|<span data-ttu-id="ba4a6-114">микрософтчапверсионтво</span><span class="sxs-lookup"><span data-stu-id="ba4a6-114">microsoftChapVersionTwo</span></span>|<span data-ttu-id="ba4a6-115">1,1</span><span class="sxs-lookup"><span data-stu-id="ba4a6-115">1</span></span>|<span data-ttu-id="ba4a6-116">Microsoft CHAP версии 2 (MS-CHAP v2).</span><span class="sxs-lookup"><span data-stu-id="ba4a6-116">Microsoft CHAP Version 2 (MS-CHAP v2).</span></span>|
+|<span data-ttu-id="ca7d3-112">нет</span><span class="sxs-lookup"><span data-stu-id="ca7d3-112">none</span></span>|<span data-ttu-id="ca7d3-113">нуль</span><span class="sxs-lookup"><span data-stu-id="ca7d3-113">0</span></span>|<span data-ttu-id="ca7d3-114">Нет.</span><span class="sxs-lookup"><span data-stu-id="ca7d3-114">None.</span></span>|
+|<span data-ttu-id="ca7d3-115">микрософтчапверсионтво</span><span class="sxs-lookup"><span data-stu-id="ca7d3-115">microsoftChapVersionTwo</span></span>|<span data-ttu-id="ca7d3-116">1,1</span><span class="sxs-lookup"><span data-stu-id="ca7d3-116">1</span></span>|<span data-ttu-id="ca7d3-117">Microsoft CHAP версии 2 (MS-CHAP v2).</span><span class="sxs-lookup"><span data-stu-id="ca7d3-117">Microsoft CHAP Version 2 (MS-CHAP v2).</span></span>|
 
 
 

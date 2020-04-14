@@ -1,36 +1,38 @@
 ---
 title: Тип ресурса Андроидпермиссионактион
 description: Сопоставление разрешений приложения Android и действия, выполняемого Android, должны выполняться при запросе этого разрешения.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce351edc83ac31c21c05b7d3e64c2f3be315da61
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c0e1b793a447d29d1ed554e1b6466895ccc9e57f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799264"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459144"
 ---
-# <a name="androidpermissionaction-resource-type"></a><span data-ttu-id="6a046-103">Тип ресурса Андроидпермиссионактион</span><span class="sxs-lookup"><span data-stu-id="6a046-103">androidPermissionAction resource type</span></span>
+# <a name="androidpermissionaction-resource-type"></a><span data-ttu-id="9c4b6-103">Тип ресурса Андроидпермиссионактион</span><span class="sxs-lookup"><span data-stu-id="9c4b6-103">androidPermissionAction resource type</span></span>
 
-> <span data-ttu-id="6a046-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6a046-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="9c4b6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9c4b6-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="6a046-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6a046-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9c4b6-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9c4b6-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="6a046-106">Сопоставление разрешений приложения Android и действия, выполняемого Android, должны выполняться при запросе этого разрешения.</span><span class="sxs-lookup"><span data-stu-id="6a046-106">Mapping between an Android app permission and the action Android should take when that permission is requested.</span></span>
+> <span data-ttu-id="9c4b6-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="9c4b6-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6a046-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="6a046-107">Properties</span></span>
-|<span data-ttu-id="6a046-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="6a046-108">Property</span></span>|<span data-ttu-id="6a046-109">Тип</span><span class="sxs-lookup"><span data-stu-id="6a046-109">Type</span></span>|<span data-ttu-id="6a046-110">Описание</span><span class="sxs-lookup"><span data-stu-id="6a046-110">Description</span></span>|
+<span data-ttu-id="9c4b6-107">Сопоставление разрешений приложения Android и действия, выполняемого Android, должны выполняться при запросе этого разрешения.</span><span class="sxs-lookup"><span data-stu-id="9c4b6-107">Mapping between an Android app permission and the action Android should take when that permission is requested.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="9c4b6-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="9c4b6-108">Properties</span></span>
+|<span data-ttu-id="9c4b6-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="9c4b6-109">Property</span></span>|<span data-ttu-id="9c4b6-110">Тип</span><span class="sxs-lookup"><span data-stu-id="9c4b6-110">Type</span></span>|<span data-ttu-id="9c4b6-111">Описание</span><span class="sxs-lookup"><span data-stu-id="9c4b6-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6a046-111">права</span><span class="sxs-lookup"><span data-stu-id="6a046-111">permission</span></span>|<span data-ttu-id="6a046-112">String</span><span class="sxs-lookup"><span data-stu-id="6a046-112">String</span></span>|<span data-ttu-id="6a046-113">Строка разрешений Android, определенная в официальной документации по Android.</span><span class="sxs-lookup"><span data-stu-id="6a046-113">Android permission string, defined in the official Android documentation.</span></span>  <span data-ttu-id="6a046-114">Пример: "Android. Permission. READ_CONTACTS".</span><span class="sxs-lookup"><span data-stu-id="6a046-114">Example 'android.permission.READ_CONTACTS'.</span></span>|
-|<span data-ttu-id="6a046-115">action</span><span class="sxs-lookup"><span data-stu-id="6a046-115">action</span></span>|[<span data-ttu-id="6a046-116">андроидпермиссионактионтипе</span><span class="sxs-lookup"><span data-stu-id="6a046-116">androidPermissionActionType</span></span>](../resources/intune-apps-androidpermissionactiontype.md)|<span data-ttu-id="6a046-117">Тип действия разрешений Android.</span><span class="sxs-lookup"><span data-stu-id="6a046-117">Type of Android permission action.</span></span> <span data-ttu-id="6a046-118">Возможные значения: `prompt`, `autoGrant`, `autoDeny`.</span><span class="sxs-lookup"><span data-stu-id="6a046-118">Possible values are: `prompt`, `autoGrant`, `autoDeny`.</span></span>|
+|<span data-ttu-id="9c4b6-112">права</span><span class="sxs-lookup"><span data-stu-id="9c4b6-112">permission</span></span>|<span data-ttu-id="9c4b6-113">String</span><span class="sxs-lookup"><span data-stu-id="9c4b6-113">String</span></span>|<span data-ttu-id="9c4b6-114">Строка разрешений Android, определенная в официальной документации по Android.</span><span class="sxs-lookup"><span data-stu-id="9c4b6-114">Android permission string, defined in the official Android documentation.</span></span>  <span data-ttu-id="9c4b6-115">Пример: "Android. Permission. READ_CONTACTS".</span><span class="sxs-lookup"><span data-stu-id="9c4b6-115">Example 'android.permission.READ_CONTACTS'.</span></span>|
+|<span data-ttu-id="9c4b6-116">action</span><span class="sxs-lookup"><span data-stu-id="9c4b6-116">action</span></span>|[<span data-ttu-id="9c4b6-117">андроидпермиссионактионтипе</span><span class="sxs-lookup"><span data-stu-id="9c4b6-117">androidPermissionActionType</span></span>](../resources/intune-apps-androidpermissionactiontype.md)|<span data-ttu-id="9c4b6-118">Тип действия разрешений Android.</span><span class="sxs-lookup"><span data-stu-id="9c4b6-118">Type of Android permission action.</span></span> <span data-ttu-id="9c4b6-119">Возможные значения: `prompt`, `autoGrant`, `autoDeny`.</span><span class="sxs-lookup"><span data-stu-id="9c4b6-119">Possible values are: `prompt`, `autoGrant`, `autoDeny`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="6a046-119">Связи</span><span class="sxs-lookup"><span data-stu-id="6a046-119">Relationships</span></span>
-<span data-ttu-id="6a046-120">Нет</span><span class="sxs-lookup"><span data-stu-id="6a046-120">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="9c4b6-120">Отношения</span><span class="sxs-lookup"><span data-stu-id="9c4b6-120">Relationships</span></span>
+<span data-ttu-id="9c4b6-121">Нет</span><span class="sxs-lookup"><span data-stu-id="9c4b6-121">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6a046-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6a046-121">JSON Representation</span></span>
-<span data-ttu-id="6a046-122">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6a046-122">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9c4b6-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9c4b6-122">JSON Representation</span></span>
+<span data-ttu-id="9c4b6-123">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9c4b6-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidPermissionAction"
