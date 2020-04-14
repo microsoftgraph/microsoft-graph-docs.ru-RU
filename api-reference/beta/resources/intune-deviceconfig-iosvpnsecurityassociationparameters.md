@@ -1,38 +1,40 @@
 ---
 title: Тип ресурса ИосвпнсекуритяссоЦиатионпараметерс
 description: Параметры сопоставления безопасности VPN
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d3da905a68222b60bef7225f34afc2b4a0b39a50
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f52d4d05945a29a1eaa44823d13b41eb560f688a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790498"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440102"
 ---
-# <a name="iosvpnsecurityassociationparameters-resource-type"></a><span data-ttu-id="6e550-103">Тип ресурса ИосвпнсекуритяссоЦиатионпараметерс</span><span class="sxs-lookup"><span data-stu-id="6e550-103">iosVpnSecurityAssociationParameters resource type</span></span>
+# <a name="iosvpnsecurityassociationparameters-resource-type"></a><span data-ttu-id="28287-103">Тип ресурса ИосвпнсекуритяссоЦиатионпараметерс</span><span class="sxs-lookup"><span data-stu-id="28287-103">iosVpnSecurityAssociationParameters resource type</span></span>
 
-> <span data-ttu-id="6e550-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6e550-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="28287-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="28287-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="6e550-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6e550-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="28287-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="28287-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="6e550-106">Параметры сопоставления безопасности VPN</span><span class="sxs-lookup"><span data-stu-id="6e550-106">VPN Security Association Parameters</span></span>
+> <span data-ttu-id="28287-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="28287-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6e550-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="6e550-107">Properties</span></span>
-|<span data-ttu-id="6e550-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="6e550-108">Property</span></span>|<span data-ttu-id="6e550-109">Тип</span><span class="sxs-lookup"><span data-stu-id="6e550-109">Type</span></span>|<span data-ttu-id="6e550-110">Описание</span><span class="sxs-lookup"><span data-stu-id="6e550-110">Description</span></span>|
+<span data-ttu-id="28287-107">Параметры сопоставления безопасности VPN</span><span class="sxs-lookup"><span data-stu-id="28287-107">VPN Security Association Parameters</span></span>
+
+## <a name="properties"></a><span data-ttu-id="28287-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="28287-108">Properties</span></span>
+|<span data-ttu-id="28287-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="28287-109">Property</span></span>|<span data-ttu-id="28287-110">Тип</span><span class="sxs-lookup"><span data-stu-id="28287-110">Type</span></span>|<span data-ttu-id="28287-111">Описание</span><span class="sxs-lookup"><span data-stu-id="28287-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6e550-111">секуритенкриптионалгорисм</span><span class="sxs-lookup"><span data-stu-id="6e550-111">securityEncryptionAlgorithm</span></span>|[<span data-ttu-id="6e550-112">vpnEncryptionAlgorithmType</span><span class="sxs-lookup"><span data-stu-id="6e550-112">vpnEncryptionAlgorithmType</span></span>](../resources/intune-deviceconfig-vpnencryptionalgorithmtype.md)|<span data-ttu-id="6e550-113">Алгоритм шифрования.</span><span class="sxs-lookup"><span data-stu-id="6e550-113">Encryption algorithm.</span></span> <span data-ttu-id="6e550-114">Возможные значения: `aes256`, `des`, `tripleDes`, `aes128`, `aes128Gcm`, `aes256Gcm`.</span><span class="sxs-lookup"><span data-stu-id="6e550-114">Possible values are: `aes256`, `des`, `tripleDes`, `aes128`, `aes128Gcm`, `aes256Gcm`.</span></span>|
-|<span data-ttu-id="6e550-115">секуритинтегритялгорисм</span><span class="sxs-lookup"><span data-stu-id="6e550-115">securityIntegrityAlgorithm</span></span>|[<span data-ttu-id="6e550-116">vpnIntegrityAlgorithmType</span><span class="sxs-lookup"><span data-stu-id="6e550-116">vpnIntegrityAlgorithmType</span></span>](../resources/intune-deviceconfig-vpnintegrityalgorithmtype.md)|<span data-ttu-id="6e550-117">Алгоритм проверки целостности.</span><span class="sxs-lookup"><span data-stu-id="6e550-117">Integrity algorithm.</span></span> <span data-ttu-id="6e550-118">Возможные значения: `sha2_256`, `sha1_96`, `sha1_160`, `sha2_384`, `sha2_512`.</span><span class="sxs-lookup"><span data-stu-id="6e550-118">Possible values are: `sha2_256`, `sha1_96`, `sha1_160`, `sha2_384`, `sha2_512`.</span></span>|
-|<span data-ttu-id="6e550-119">секуритидиффиехеллманграуп</span><span class="sxs-lookup"><span data-stu-id="6e550-119">securityDiffieHellmanGroup</span></span>|<span data-ttu-id="6e550-120">Int32</span><span class="sxs-lookup"><span data-stu-id="6e550-120">Int32</span></span>|<span data-ttu-id="6e550-121">Группа Диффи Диффи — Хелмана</span><span class="sxs-lookup"><span data-stu-id="6e550-121">Diffie-Hellman Group</span></span>|
-|<span data-ttu-id="6e550-122">лифетимеинминутес</span><span class="sxs-lookup"><span data-stu-id="6e550-122">lifetimeInMinutes</span></span>|<span data-ttu-id="6e550-123">Int32</span><span class="sxs-lookup"><span data-stu-id="6e550-123">Int32</span></span>|<span data-ttu-id="6e550-124">Срок действия (в минутах)</span><span class="sxs-lookup"><span data-stu-id="6e550-124">Lifetime (minutes)</span></span>|
+|<span data-ttu-id="28287-112">секуритенкриптионалгорисм</span><span class="sxs-lookup"><span data-stu-id="28287-112">securityEncryptionAlgorithm</span></span>|[<span data-ttu-id="28287-113">vpnEncryptionAlgorithmType</span><span class="sxs-lookup"><span data-stu-id="28287-113">vpnEncryptionAlgorithmType</span></span>](../resources/intune-deviceconfig-vpnencryptionalgorithmtype.md)|<span data-ttu-id="28287-114">Алгоритм шифрования.</span><span class="sxs-lookup"><span data-stu-id="28287-114">Encryption algorithm.</span></span> <span data-ttu-id="28287-115">Возможные значения: `aes256`, `des`, `tripleDes`, `aes128`, `aes128Gcm`, `aes256Gcm`.</span><span class="sxs-lookup"><span data-stu-id="28287-115">Possible values are: `aes256`, `des`, `tripleDes`, `aes128`, `aes128Gcm`, `aes256Gcm`.</span></span>|
+|<span data-ttu-id="28287-116">секуритинтегритялгорисм</span><span class="sxs-lookup"><span data-stu-id="28287-116">securityIntegrityAlgorithm</span></span>|[<span data-ttu-id="28287-117">vpnIntegrityAlgorithmType</span><span class="sxs-lookup"><span data-stu-id="28287-117">vpnIntegrityAlgorithmType</span></span>](../resources/intune-deviceconfig-vpnintegrityalgorithmtype.md)|<span data-ttu-id="28287-118">Алгоритм проверки целостности.</span><span class="sxs-lookup"><span data-stu-id="28287-118">Integrity algorithm.</span></span> <span data-ttu-id="28287-119">Возможные значения: `sha2_256`, `sha1_96`, `sha1_160`, `sha2_384`, `sha2_512`.</span><span class="sxs-lookup"><span data-stu-id="28287-119">Possible values are: `sha2_256`, `sha1_96`, `sha1_160`, `sha2_384`, `sha2_512`.</span></span>|
+|<span data-ttu-id="28287-120">секуритидиффиехеллманграуп</span><span class="sxs-lookup"><span data-stu-id="28287-120">securityDiffieHellmanGroup</span></span>|<span data-ttu-id="28287-121">Int32</span><span class="sxs-lookup"><span data-stu-id="28287-121">Int32</span></span>|<span data-ttu-id="28287-122">Группа Диффи Диффи — Хелмана</span><span class="sxs-lookup"><span data-stu-id="28287-122">Diffie-Hellman Group</span></span>|
+|<span data-ttu-id="28287-123">лифетимеинминутес</span><span class="sxs-lookup"><span data-stu-id="28287-123">lifetimeInMinutes</span></span>|<span data-ttu-id="28287-124">Int32</span><span class="sxs-lookup"><span data-stu-id="28287-124">Int32</span></span>|<span data-ttu-id="28287-125">Срок действия (в минутах)</span><span class="sxs-lookup"><span data-stu-id="28287-125">Lifetime (minutes)</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="6e550-125">Связи</span><span class="sxs-lookup"><span data-stu-id="6e550-125">Relationships</span></span>
-<span data-ttu-id="6e550-126">Нет</span><span class="sxs-lookup"><span data-stu-id="6e550-126">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="28287-126">Связи</span><span class="sxs-lookup"><span data-stu-id="28287-126">Relationships</span></span>
+<span data-ttu-id="28287-127">Нет</span><span class="sxs-lookup"><span data-stu-id="28287-127">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6e550-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6e550-127">JSON Representation</span></span>
-<span data-ttu-id="6e550-128">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6e550-128">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="28287-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="28287-128">JSON Representation</span></span>
+<span data-ttu-id="28287-129">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="28287-129">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters"

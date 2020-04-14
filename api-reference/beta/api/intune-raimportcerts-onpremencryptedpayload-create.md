@@ -1,35 +1,37 @@
 ---
 title: Создание Онпременкриптедпайлоад
 description: Создание нового объекта Онпременкриптедпайлоад.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14e18210dc4ea362a8fcf0e685a8f1d272ad1773
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4c9baa176521ef1fcc92fe72d18406f0551ebe07
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801952"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437886"
 ---
-# <a name="create-onpremencryptedpayload"></a><span data-ttu-id="620de-103">Создание Онпременкриптедпайлоад</span><span class="sxs-lookup"><span data-stu-id="620de-103">Create onPremEncryptedPayload</span></span>
+# <a name="create-onpremencryptedpayload"></a><span data-ttu-id="da5d3-103">Создание Онпременкриптедпайлоад</span><span class="sxs-lookup"><span data-stu-id="da5d3-103">Create onPremEncryptedPayload</span></span>
 
-> <span data-ttu-id="620de-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="620de-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="da5d3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="da5d3-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="620de-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="620de-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="da5d3-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da5d3-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="620de-106">Создание нового объекта [онпременкриптедпайлоад](../resources/intune-raimportcerts-onpremencryptedpayload.md) .</span><span class="sxs-lookup"><span data-stu-id="620de-106">Create a new [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) object.</span></span>
+> <span data-ttu-id="da5d3-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="da5d3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="620de-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="620de-107">Prerequisites</span></span>
-<span data-ttu-id="620de-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="620de-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="da5d3-107">Создание нового объекта [онпременкриптедпайлоад](../resources/intune-raimportcerts-onpremencryptedpayload.md) .</span><span class="sxs-lookup"><span data-stu-id="da5d3-107">Create a new [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) object.</span></span>
 
-|<span data-ttu-id="620de-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="620de-110">Permission type</span></span>|<span data-ttu-id="620de-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="620de-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="da5d3-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="da5d3-108">Prerequisites</span></span>
+<span data-ttu-id="da5d3-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da5d3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="da5d3-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="da5d3-111">Permission type</span></span>|<span data-ttu-id="da5d3-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="da5d3-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="620de-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="620de-112">Delegated (work or school account)</span></span>|<span data-ttu-id="620de-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="620de-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="620de-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="620de-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="620de-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="620de-115">Not supported.</span></span>|
-|<span data-ttu-id="620de-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="620de-116">Application</span></span>|<span data-ttu-id="620de-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="620de-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="da5d3-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="da5d3-113">Delegated (work or school account)</span></span>|<span data-ttu-id="da5d3-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da5d3-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="da5d3-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="da5d3-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="da5d3-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da5d3-116">Not supported.</span></span>|
+|<span data-ttu-id="da5d3-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="da5d3-117">Application</span></span>|<span data-ttu-id="da5d3-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da5d3-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="620de-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="620de-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="da5d3-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="da5d3-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,45 +40,45 @@ ms.locfileid: "42801952"
 POST /onPremEncryptedPayloads
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="620de-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="620de-119">Request headers</span></span>
-|<span data-ttu-id="620de-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="620de-120">Header</span></span>|<span data-ttu-id="620de-121">Значение</span><span class="sxs-lookup"><span data-stu-id="620de-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="da5d3-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="da5d3-120">Request headers</span></span>
+|<span data-ttu-id="da5d3-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="da5d3-121">Header</span></span>|<span data-ttu-id="da5d3-122">Значение</span><span class="sxs-lookup"><span data-stu-id="da5d3-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="620de-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="620de-122">Authorization</span></span>|<span data-ttu-id="620de-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="620de-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="620de-124">Accept</span><span class="sxs-lookup"><span data-stu-id="620de-124">Accept</span></span>|<span data-ttu-id="620de-125">application/json</span><span class="sxs-lookup"><span data-stu-id="620de-125">application/json</span></span>|
+|<span data-ttu-id="da5d3-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="da5d3-123">Authorization</span></span>|<span data-ttu-id="da5d3-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="da5d3-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="da5d3-125">Accept</span><span class="sxs-lookup"><span data-stu-id="da5d3-125">Accept</span></span>|<span data-ttu-id="da5d3-126">application/json</span><span class="sxs-lookup"><span data-stu-id="da5d3-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="620de-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="620de-126">Request body</span></span>
-<span data-ttu-id="620de-127">В тексте запроса добавьте представление объекта Онпременкриптедпайлоад в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="620de-127">In the request body, supply a JSON representation for the onPremEncryptedPayload object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="da5d3-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="da5d3-127">Request body</span></span>
+<span data-ttu-id="da5d3-128">В тексте запроса добавьте представление объекта Онпременкриптедпайлоад в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="da5d3-128">In the request body, supply a JSON representation for the onPremEncryptedPayload object.</span></span>
 
-<span data-ttu-id="620de-128">В следующей таблице приведены свойства, необходимые при создании Онпременкриптедпайлоад.</span><span class="sxs-lookup"><span data-stu-id="620de-128">The following table shows the properties that are required when you create the onPremEncryptedPayload.</span></span>
+<span data-ttu-id="da5d3-129">В следующей таблице приведены свойства, необходимые при создании Онпременкриптедпайлоад.</span><span class="sxs-lookup"><span data-stu-id="da5d3-129">The following table shows the properties that are required when you create the onPremEncryptedPayload.</span></span>
 
-|<span data-ttu-id="620de-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="620de-129">Property</span></span>|<span data-ttu-id="620de-130">Тип</span><span class="sxs-lookup"><span data-stu-id="620de-130">Type</span></span>|<span data-ttu-id="620de-131">Описание</span><span class="sxs-lookup"><span data-stu-id="620de-131">Description</span></span>|
+|<span data-ttu-id="da5d3-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="da5d3-130">Property</span></span>|<span data-ttu-id="da5d3-131">Тип</span><span class="sxs-lookup"><span data-stu-id="da5d3-131">Type</span></span>|<span data-ttu-id="da5d3-132">Описание</span><span class="sxs-lookup"><span data-stu-id="da5d3-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="620de-132">tenantId</span><span class="sxs-lookup"><span data-stu-id="620de-132">tenantId</span></span>|<span data-ttu-id="620de-133">GUID</span><span class="sxs-lookup"><span data-stu-id="620de-133">Guid</span></span>|<span data-ttu-id="620de-134">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-134">Not yet documented</span></span>|
-|<span data-ttu-id="620de-135">userId</span><span class="sxs-lookup"><span data-stu-id="620de-135">userId</span></span>|<span data-ttu-id="620de-136">GUID</span><span class="sxs-lookup"><span data-stu-id="620de-136">Guid</span></span>|<span data-ttu-id="620de-137">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-137">Not yet documented</span></span>|
-|<span data-ttu-id="620de-138">deviceId</span><span class="sxs-lookup"><span data-stu-id="620de-138">deviceId</span></span>|<span data-ttu-id="620de-139">Guid</span><span class="sxs-lookup"><span data-stu-id="620de-139">Guid</span></span>|<span data-ttu-id="620de-140">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-140">Not yet documented</span></span>|
-|<span data-ttu-id="620de-141">пайлоадид</span><span class="sxs-lookup"><span data-stu-id="620de-141">payloadId</span></span>|<span data-ttu-id="620de-142">GUID</span><span class="sxs-lookup"><span data-stu-id="620de-142">Guid</span></span>|<span data-ttu-id="620de-143">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-143">Not yet documented</span></span>|
-|<span data-ttu-id="620de-144">девицекэйсумбпринт</span><span class="sxs-lookup"><span data-stu-id="620de-144">deviceKeyThumbprint</span></span>|<span data-ttu-id="620de-145">String</span><span class="sxs-lookup"><span data-stu-id="620de-145">String</span></span>|<span data-ttu-id="620de-146">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-146">Not yet documented</span></span>|
-|<span data-ttu-id="620de-147">cert1PayloadUUID</span><span class="sxs-lookup"><span data-stu-id="620de-147">cert1PayloadUUID</span></span>|<span data-ttu-id="620de-148">String</span><span class="sxs-lookup"><span data-stu-id="620de-148">String</span></span>|<span data-ttu-id="620de-149">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-149">Not yet documented</span></span>|
-|<span data-ttu-id="620de-150">cert2PayloadUUID</span><span class="sxs-lookup"><span data-stu-id="620de-150">cert2PayloadUUID</span></span>|<span data-ttu-id="620de-151">String</span><span class="sxs-lookup"><span data-stu-id="620de-151">String</span></span>|<span data-ttu-id="620de-152">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-152">Not yet documented</span></span>|
-|<span data-ttu-id="620de-153">cert3PayloadUUID</span><span class="sxs-lookup"><span data-stu-id="620de-153">cert3PayloadUUID</span></span>|<span data-ttu-id="620de-154">String</span><span class="sxs-lookup"><span data-stu-id="620de-154">String</span></span>|<span data-ttu-id="620de-155">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-155">Not yet documented</span></span>|
-|<span data-ttu-id="620de-156">плисттемплате</span><span class="sxs-lookup"><span data-stu-id="620de-156">plistTemplate</span></span>|<span data-ttu-id="620de-157">String</span><span class="sxs-lookup"><span data-stu-id="620de-157">String</span></span>|<span data-ttu-id="620de-158">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-158">Not yet documented</span></span>|
-|<span data-ttu-id="620de-159">енкриптедблоб</span><span class="sxs-lookup"><span data-stu-id="620de-159">encryptedBlob</span></span>|<span data-ttu-id="620de-160">Binary</span><span class="sxs-lookup"><span data-stu-id="620de-160">Binary</span></span>|<span data-ttu-id="620de-161">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-161">Not yet documented</span></span>|
-|<span data-ttu-id="620de-162">пайлоадверсион</span><span class="sxs-lookup"><span data-stu-id="620de-162">payloadVersion</span></span>|<span data-ttu-id="620de-163">Int32</span><span class="sxs-lookup"><span data-stu-id="620de-163">Int32</span></span>|<span data-ttu-id="620de-164">Пока нет описания</span><span class="sxs-lookup"><span data-stu-id="620de-164">Not yet documented</span></span>|
-|<span data-ttu-id="620de-165">status</span><span class="sxs-lookup"><span data-stu-id="620de-165">status</span></span>|<span data-ttu-id="620de-166">Int32</span><span class="sxs-lookup"><span data-stu-id="620de-166">Int32</span></span>|<span data-ttu-id="620de-167">Пока нет описания</span><span class="sxs-lookup"><span data-stu-id="620de-167">Not yet documented</span></span>|
-|<span data-ttu-id="620de-168">createdTime</span><span class="sxs-lookup"><span data-stu-id="620de-168">createdTime</span></span>|<span data-ttu-id="620de-169">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="620de-169">DateTimeOffset</span></span>|<span data-ttu-id="620de-170">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-170">Not yet documented</span></span>|
-|<span data-ttu-id="620de-171">lastModifiedTime</span><span class="sxs-lookup"><span data-stu-id="620de-171">lastModifiedTime</span></span>|<span data-ttu-id="620de-172">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="620de-172">DateTimeOffset</span></span>|<span data-ttu-id="620de-173">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-173">Not yet documented</span></span>|
-|<span data-ttu-id="620de-174">eTag</span><span class="sxs-lookup"><span data-stu-id="620de-174">eTag</span></span>|<span data-ttu-id="620de-175">String</span><span class="sxs-lookup"><span data-stu-id="620de-175">String</span></span>|<span data-ttu-id="620de-176">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-176">Not yet documented</span></span>|
-|<span data-ttu-id="620de-177">isDeleted</span><span class="sxs-lookup"><span data-stu-id="620de-177">isDeleted</span></span>|<span data-ttu-id="620de-178">Boolean</span><span class="sxs-lookup"><span data-stu-id="620de-178">Boolean</span></span>|<span data-ttu-id="620de-179">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="620de-179">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-133">tenantId</span><span class="sxs-lookup"><span data-stu-id="da5d3-133">tenantId</span></span>|<span data-ttu-id="da5d3-134">GUID</span><span class="sxs-lookup"><span data-stu-id="da5d3-134">Guid</span></span>|<span data-ttu-id="da5d3-135">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-135">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-136">userId</span><span class="sxs-lookup"><span data-stu-id="da5d3-136">userId</span></span>|<span data-ttu-id="da5d3-137">GUID</span><span class="sxs-lookup"><span data-stu-id="da5d3-137">Guid</span></span>|<span data-ttu-id="da5d3-138">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-138">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-139">deviceId</span><span class="sxs-lookup"><span data-stu-id="da5d3-139">deviceId</span></span>|<span data-ttu-id="da5d3-140">Guid</span><span class="sxs-lookup"><span data-stu-id="da5d3-140">Guid</span></span>|<span data-ttu-id="da5d3-141">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-141">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-142">пайлоадид</span><span class="sxs-lookup"><span data-stu-id="da5d3-142">payloadId</span></span>|<span data-ttu-id="da5d3-143">GUID</span><span class="sxs-lookup"><span data-stu-id="da5d3-143">Guid</span></span>|<span data-ttu-id="da5d3-144">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-144">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-145">девицекэйсумбпринт</span><span class="sxs-lookup"><span data-stu-id="da5d3-145">deviceKeyThumbprint</span></span>|<span data-ttu-id="da5d3-146">String</span><span class="sxs-lookup"><span data-stu-id="da5d3-146">String</span></span>|<span data-ttu-id="da5d3-147">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-147">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-148">cert1PayloadUUID</span><span class="sxs-lookup"><span data-stu-id="da5d3-148">cert1PayloadUUID</span></span>|<span data-ttu-id="da5d3-149">String</span><span class="sxs-lookup"><span data-stu-id="da5d3-149">String</span></span>|<span data-ttu-id="da5d3-150">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-150">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-151">cert2PayloadUUID</span><span class="sxs-lookup"><span data-stu-id="da5d3-151">cert2PayloadUUID</span></span>|<span data-ttu-id="da5d3-152">String</span><span class="sxs-lookup"><span data-stu-id="da5d3-152">String</span></span>|<span data-ttu-id="da5d3-153">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-153">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-154">cert3PayloadUUID</span><span class="sxs-lookup"><span data-stu-id="da5d3-154">cert3PayloadUUID</span></span>|<span data-ttu-id="da5d3-155">String</span><span class="sxs-lookup"><span data-stu-id="da5d3-155">String</span></span>|<span data-ttu-id="da5d3-156">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-156">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-157">плисттемплате</span><span class="sxs-lookup"><span data-stu-id="da5d3-157">plistTemplate</span></span>|<span data-ttu-id="da5d3-158">String</span><span class="sxs-lookup"><span data-stu-id="da5d3-158">String</span></span>|<span data-ttu-id="da5d3-159">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-159">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-160">енкриптедблоб</span><span class="sxs-lookup"><span data-stu-id="da5d3-160">encryptedBlob</span></span>|<span data-ttu-id="da5d3-161">Binary</span><span class="sxs-lookup"><span data-stu-id="da5d3-161">Binary</span></span>|<span data-ttu-id="da5d3-162">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-162">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-163">пайлоадверсион</span><span class="sxs-lookup"><span data-stu-id="da5d3-163">payloadVersion</span></span>|<span data-ttu-id="da5d3-164">Int32</span><span class="sxs-lookup"><span data-stu-id="da5d3-164">Int32</span></span>|<span data-ttu-id="da5d3-165">Пока нет описания</span><span class="sxs-lookup"><span data-stu-id="da5d3-165">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-166">status</span><span class="sxs-lookup"><span data-stu-id="da5d3-166">status</span></span>|<span data-ttu-id="da5d3-167">Int32</span><span class="sxs-lookup"><span data-stu-id="da5d3-167">Int32</span></span>|<span data-ttu-id="da5d3-168">Пока нет описания</span><span class="sxs-lookup"><span data-stu-id="da5d3-168">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-169">createdTime</span><span class="sxs-lookup"><span data-stu-id="da5d3-169">createdTime</span></span>|<span data-ttu-id="da5d3-170">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="da5d3-170">DateTimeOffset</span></span>|<span data-ttu-id="da5d3-171">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-171">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-172">lastModifiedTime</span><span class="sxs-lookup"><span data-stu-id="da5d3-172">lastModifiedTime</span></span>|<span data-ttu-id="da5d3-173">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="da5d3-173">DateTimeOffset</span></span>|<span data-ttu-id="da5d3-174">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-174">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-175">eTag</span><span class="sxs-lookup"><span data-stu-id="da5d3-175">eTag</span></span>|<span data-ttu-id="da5d3-176">String</span><span class="sxs-lookup"><span data-stu-id="da5d3-176">String</span></span>|<span data-ttu-id="da5d3-177">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-177">Not yet documented</span></span>|
+|<span data-ttu-id="da5d3-178">isDeleted</span><span class="sxs-lookup"><span data-stu-id="da5d3-178">isDeleted</span></span>|<span data-ttu-id="da5d3-179">Boolean</span><span class="sxs-lookup"><span data-stu-id="da5d3-179">Boolean</span></span>|<span data-ttu-id="da5d3-180">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da5d3-180">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="620de-180">Ответ</span><span class="sxs-lookup"><span data-stu-id="620de-180">Response</span></span>
-<span data-ttu-id="620de-181">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [онпременкриптедпайлоад](../resources/intune-raimportcerts-onpremencryptedpayload.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="620de-181">If successful, this method returns a `201 Created` response code and a [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="da5d3-181">Ответ</span><span class="sxs-lookup"><span data-stu-id="da5d3-181">Response</span></span>
+<span data-ttu-id="da5d3-182">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [онпременкриптедпайлоад](../resources/intune-raimportcerts-onpremencryptedpayload.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="da5d3-182">If successful, this method returns a `201 Created` response code and a [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="620de-182">Пример</span><span class="sxs-lookup"><span data-stu-id="620de-182">Example</span></span>
+## <a name="example"></a><span data-ttu-id="da5d3-183">Пример</span><span class="sxs-lookup"><span data-stu-id="da5d3-183">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="620de-183">Запрос</span><span class="sxs-lookup"><span data-stu-id="620de-183">Request</span></span>
-<span data-ttu-id="620de-184">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="620de-184">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="da5d3-184">Запрос</span><span class="sxs-lookup"><span data-stu-id="da5d3-184">Request</span></span>
+<span data-ttu-id="da5d3-185">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da5d3-185">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/onPremEncryptedPayloads
 Content-type: application/json
@@ -103,8 +105,8 @@ Content-length: 781
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="620de-185">Отклик</span><span class="sxs-lookup"><span data-stu-id="620de-185">Response</span></span>
-<span data-ttu-id="620de-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="620de-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="da5d3-186">Отклик</span><span class="sxs-lookup"><span data-stu-id="da5d3-186">Response</span></span>
+<span data-ttu-id="da5d3-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="da5d3-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -130,7 +132,6 @@ Content-Length: 781
   "isDeleted": true
 }
 ```
-
 
 
 
