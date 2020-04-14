@@ -1,31 +1,33 @@
 ---
 title: тип перечисления Глобалдевицехеалсскриптстате
 description: Указывает, включены ли сценарии исправности глобальных устройств и находятся ли их в состоянии.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0f838b252b53158724166a2d189fecfbfdf492c8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e9b1ca70ca5c9d30d515b4d20bd27525249806fe
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784042"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470651"
 ---
-# <a name="globaldevicehealthscriptstate-enum-type"></a><span data-ttu-id="99588-103">тип перечисления Глобалдевицехеалсскриптстате</span><span class="sxs-lookup"><span data-stu-id="99588-103">globalDeviceHealthScriptState enum type</span></span>
+# <a name="globaldevicehealthscriptstate-enum-type"></a><span data-ttu-id="013aa-103">тип перечисления Глобалдевицехеалсскриптстате</span><span class="sxs-lookup"><span data-stu-id="013aa-103">globalDeviceHealthScriptState enum type</span></span>
 
-> <span data-ttu-id="99588-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="99588-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="013aa-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="013aa-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="99588-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="99588-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="013aa-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="013aa-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="99588-106">Указывает, включены ли сценарии исправности глобальных устройств и находятся ли их в состоянии.</span><span class="sxs-lookup"><span data-stu-id="99588-106">Indicates whether global device health scripts are enabled and are in which state</span></span>
+> <span data-ttu-id="013aa-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="013aa-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="99588-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="99588-107">Members</span></span>
-|<span data-ttu-id="99588-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="99588-108">Member</span></span>|<span data-ttu-id="99588-109">Значение</span><span class="sxs-lookup"><span data-stu-id="99588-109">Value</span></span>|<span data-ttu-id="99588-110">Описание</span><span class="sxs-lookup"><span data-stu-id="99588-110">Description</span></span>|
+<span data-ttu-id="013aa-107">Указывает, включены ли сценарии исправности глобальных устройств и находятся ли их в состоянии.</span><span class="sxs-lookup"><span data-stu-id="013aa-107">Indicates whether global device health scripts are enabled and are in which state</span></span>
+
+## <a name="members"></a><span data-ttu-id="013aa-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="013aa-108">Members</span></span>
+|<span data-ttu-id="013aa-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="013aa-109">Member</span></span>|<span data-ttu-id="013aa-110">Значение</span><span class="sxs-lookup"><span data-stu-id="013aa-110">Value</span></span>|<span data-ttu-id="013aa-111">Описание</span><span class="sxs-lookup"><span data-stu-id="013aa-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="99588-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="99588-111">notConfigured</span></span>|<span data-ttu-id="99588-112">нуль</span><span class="sxs-lookup"><span data-stu-id="99588-112">0</span></span>|<span data-ttu-id="99588-113">Глобальные сценарии работоспособности устройств не настроены</span><span class="sxs-lookup"><span data-stu-id="99588-113">Global device health scripts are not configured</span></span>|
-|<span data-ttu-id="99588-114">закончен</span><span class="sxs-lookup"><span data-stu-id="99588-114">pending</span></span>|<span data-ttu-id="99588-115">1,1</span><span class="sxs-lookup"><span data-stu-id="99588-115">1</span></span>|<span data-ttu-id="99588-116">Глобальные сценарии работоспособности устройств настроены, но не полностью включены</span><span class="sxs-lookup"><span data-stu-id="99588-116">Global device health scripts are configured but not fully enabled</span></span>|
-|<span data-ttu-id="99588-117">enabled</span><span class="sxs-lookup"><span data-stu-id="99588-117">enabled</span></span>|<span data-ttu-id="99588-118">2</span><span class="sxs-lookup"><span data-stu-id="99588-118">2</span></span>|<span data-ttu-id="99588-119">Глобальные сценарии работоспособности устройств включены и готовы к использованию</span><span class="sxs-lookup"><span data-stu-id="99588-119">Global device health scripts are enabled and ready to use</span></span>|
+|<span data-ttu-id="013aa-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="013aa-112">notConfigured</span></span>|<span data-ttu-id="013aa-113">нуль</span><span class="sxs-lookup"><span data-stu-id="013aa-113">0</span></span>|<span data-ttu-id="013aa-114">Глобальные сценарии работоспособности устройств не настроены</span><span class="sxs-lookup"><span data-stu-id="013aa-114">Global device health scripts are not configured</span></span>|
+|<span data-ttu-id="013aa-115">закончен</span><span class="sxs-lookup"><span data-stu-id="013aa-115">pending</span></span>|<span data-ttu-id="013aa-116">1,1</span><span class="sxs-lookup"><span data-stu-id="013aa-116">1</span></span>|<span data-ttu-id="013aa-117">Глобальные сценарии работоспособности устройств настроены, но не полностью включены</span><span class="sxs-lookup"><span data-stu-id="013aa-117">Global device health scripts are configured but not fully enabled</span></span>|
+|<span data-ttu-id="013aa-118">включено</span><span class="sxs-lookup"><span data-stu-id="013aa-118">enabled</span></span>|<span data-ttu-id="013aa-119">2</span><span class="sxs-lookup"><span data-stu-id="013aa-119">2</span></span>|<span data-ttu-id="013aa-120">Глобальные сценарии работоспособности устройств включены и готовы к использованию</span><span class="sxs-lookup"><span data-stu-id="013aa-120">Global device health scripts are enabled and ready to use</span></span>|
 
 
 
