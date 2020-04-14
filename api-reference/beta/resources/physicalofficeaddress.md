@@ -3,18 +3,18 @@ title: Тип ресурса Фисикалоффицеаддресс
 description: Представляет рабочий адрес ресурса, например контакт или событие.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 24ad96681d099871f8b936308fadf04fafecb6d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: dkershaw10
+ms.openlocfilehash: 59898e05ae749badacbb9e116295d1be41c76e52
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521851"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43316800"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>Тип ресурса Фисикалоффицеаддресс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет рабочий адрес ресурса, например контакта в Организации.
 

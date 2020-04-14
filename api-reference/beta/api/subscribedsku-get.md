@@ -2,19 +2,19 @@
 title: Вывод объекта SubscribedSku
 description: Получение определенной коммерческой подписки, приобретенной организацией.
 localization_priority: Normal
-author: davidmu1
+author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b1e9b3c1885fbafe9cddeef3428fe7c381333880
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5283efcd46c9c78d1e500dafd45dc590d7399d85
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453123"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43318804"
 ---
 # <a name="get-subscribedsku"></a>Вывод объекта SubscribedSku
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса deviceManagementTroubleshootingEvent
 description: Событие, представляющее общий сбой.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 38bbb85ff15d695aa1aab3f8595996e5fbd7bfaf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e430a4f9897c334583999e4df38ad83949a56ae2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765652"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43317883"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>Тип ресурса deviceManagementTroubleshootingEvent
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

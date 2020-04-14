@@ -1,18 +1,20 @@
 ---
 title: тип перечисления windows10VpnConnectionType
 description: Типы VPN-подключений.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a5e514b5cbaecd2272c4bb94e2f21356633e8fb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d2a79f4a29d9f6ae6fa7ccbf6f616e925784bde8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786630"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43318208"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>тип перечисления windows10VpnConnectionType
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

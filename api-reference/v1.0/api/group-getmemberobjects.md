@@ -1,16 +1,16 @@
 ---
 title: 'group: getMemberObjects'
-description: Возврат всех групп, в которых состоит эта группа. Это транзитивная проверка. Примечание. Группы не могут быть членами ролей каталога, поэтому роли каталогов не возвращаются.
+description: Возвращает все группы, в которых входит эта группа.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ab08cd3d4abcaef15b27db676fa5d4bc9d0495ed
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 627d8528216f678ec1f7d5eabc1e8126e7451f41
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42927020"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43316749"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
@@ -38,7 +38,7 @@ POST /groups/{id}/getMemberObjects
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

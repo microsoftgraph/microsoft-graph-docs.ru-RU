@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса messageRuleActions
 description: Представляет набор действий, доступных для правила.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 945656aa89fd5786ce4f072fe85ec196d1e6ce48
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bdc4b7eb03d482660883a190e145058d41381f66
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522668"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43317511"
 ---
 # <a name="messageruleactions-resource-type"></a>Тип ресурса messageRuleActions
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,13 +25,13 @@ ms.locfileid: "42522668"
 |:---------------|:--------|:----------|
 | assignCategories | Коллекция String | Список категорий, которые необходимо назначить сообщению. |
 | copyToFolder | String | Идентификатор папки, в которую необходимо скопировать сообщение. |
-| delete | Логический | Указывает, нужно ли перемещать сообщение в папку "Удаленные". |
+| delete | Boolean | Указывает, нужно ли перемещать сообщение в папку "Удаленные". |
 | forwardAsAttachmentTo | Коллекция [recipient](recipient.md) | Электронные адреса получателей, которым необходимо переслать сообщение как вложение. |
 | forwardTo | Коллекция [recipient](recipient.md) | Электронные адреса получателей, которым необходимо переслать сообщение. |
-| markAsRead | Логический | Указывает, необходимо ли отмечать сообщение как прочтенное. |
+| markAsRead | Boolean | Указывает, необходимо ли отмечать сообщение как прочтенное. |
 | markImportance | String | Задает важность сообщения. Допустимые значения: `low`, `normal`, `high`. |
 | moveToFolder |  String| Идентификатор папки, в которую сообщение будет перемещено. |
-| permanentDelete | Логический | Указывает, нужно ли окончательно удалять сообщение без сохранения в папке "Удаленные". |
+| permanentDelete | Boolean | Указывает, нужно ли окончательно удалять сообщение без сохранения в папке "Удаленные". |
 | redirectTo | [recipient](recipient.md) | Электронный адрес, на который должно быть перенаправлено сообщение. |
 | stopProcessingRules | Boolean | Указывает, должны ли обрабатываться последующие правила. |
 

@@ -1,18 +1,20 @@
 ---
 title: Создание Девицеманажементстрингсеттингинстанце
 description: Создание нового объекта Девицеманажементстрингсеттингинстанце.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c6d567de8a337de9fba3de32b5b8343ef383a314
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f4f52a8bfe2087594da5d8da98e9cac0ca56a2fe
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815053"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43325259"
 ---
 # <a name="create-devicemanagementstringsettinginstance"></a>Создание Девицеманажементстрингсеттингинстанце
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42815053"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +46,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -96,7 +98,6 @@ Content-Length: 233
   "value": "Value value"
 }
 ```
-
 
 
 

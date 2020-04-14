@@ -1,18 +1,20 @@
 ---
 title: Создание Усерекспериенцеаналитиксдевицеперформанце
 description: Создание нового объекта Усерекспериенцеаналитиксдевицеперформанце.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 074882f9d1ebeef0d7d17e8f16f3e538611488c4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ff3b8a6fa39038b2115720647b776dc30c7d1962
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813995"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43322578"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>Создание Усерекспериенцеаналитиксдевицеперформанце
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813995"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -126,7 +128,6 @@ Content-Length: 578
   "responsiveDesktopTimeInMs": 9
 }
 ```
-
 
 
 

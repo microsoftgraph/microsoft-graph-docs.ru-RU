@@ -1,18 +1,20 @@
 ---
 title: Создание объекта enrollmentprofile
 description: Создание нового объекта объекта enrollmentprofile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bc2331048268137a81c2f11150266d75a00057e1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c3eb88d96e9594ab984e9a0f9b47e5c5f663f227
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813199"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43319160"
 ---
 # <a name="create-enrollmentprofile"></a>Создание объекта enrollmentprofile
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813199"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +43,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,10 +56,10 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |id|Строка|GUID объекта|
 |displayName|Строка|Имя профиля|
 |description|String|Описание профиля|
-|рекуиресусераусентикатион|Логический|Указывает, требуется ли для профиля проверка подлинности пользователя|
+|рекуиресусераусентикатион|Boolean|Указывает, требуется ли для профиля проверка подлинности пользователя|
 |конфигуратионендпоинтурл|String|URL-адрес конечной точки конфигурации, используемый для регистрации|
-|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.|
-|рекуирекомпанипорталонсетупассистантенролледдевицес|Логический|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке|
+|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.|
+|рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке|
 
 
 
@@ -102,7 +104,6 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

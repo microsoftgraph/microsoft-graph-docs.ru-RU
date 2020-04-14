@@ -1,18 +1,20 @@
 ---
 title: Удаление пользователя
 description: Удаляет объект user.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42bf2372deed17528b610ca719213ff2e282b9ac
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cda9c66123578bfeb4c662606cd38bbac3634557
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800594"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43319082"
 ---
 # <a name="delete-user"></a>Удаление пользователя
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -30,7 +32,7 @@ ms.locfileid: "42800594"
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложений||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
@@ -50,7 +52,7 @@ DELETE /users/{usersId}
 
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -78,7 +80,6 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

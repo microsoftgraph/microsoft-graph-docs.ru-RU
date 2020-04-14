@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Мобилеаппинтент
 description: Указывает состояние мобильного приложения на устройстве.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7aa8da2d0cb32f641a050ae565568991b1b42ef4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1ea3de0799c31e18603661ef081fc03a0146f341
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765085"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43317839"
 ---
 # <a name="mobileappintent-enum-type"></a>тип перечисления Мобилеаппинтент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

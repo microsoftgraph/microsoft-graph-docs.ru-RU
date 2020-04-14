@@ -1,18 +1,20 @@
 ---
 title: Обновление Девицеманажементинтентусерстате
 description: Обновление свойств объекта Девицеманажементинтентусерстате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6be0a985884131889465e18e2e3f0c80d0c53980
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fa492e9b758e95c80fae589e70fea823b4ac98f8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815158"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43325771"
 ---
 # <a name="update-devicemanagementintentuserstate"></a>Обновление Девицеманажементинтентусерстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42815158"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStates/{deviceMan
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -99,7 +101,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
 
 
 

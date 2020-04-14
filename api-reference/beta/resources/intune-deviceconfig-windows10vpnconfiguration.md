@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса windows10VpnConfiguration
 description: Предоставляя конфигурации в этом профиле, вы можете указать устройству Windows 10 (настольный или мобильный) подключаться к необходимой конечной точке VPN. Указав способ проверки подлинности и типы безопасности, ожидаемые конечной точкой VPN, вы можете сделать VPN-подключение неполноценным для конечного пользователя.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb7eb030856d622ffdbeeba384fc88cab9930234
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 14d15ad8be406c5f47a709152539d3dbe4f1c3b4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786637"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43318353"
 ---
 # <a name="windows10vpnconfiguration-resource-type"></a>Тип ресурса windows10VpnConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -38,7 +40,7 @@ ms.locfileid: "42786637"
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -51,21 +53,21 @@ ms.locfileid: "42786637"
 |customXml|Binary|Настраиваемые XML-команды, которые настраивают VPN-подключение. (Массив байтов в кодировке UTF8) Наследуется от [виндовсвпнконфигуратион](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |профилетаржет|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|Тип целевого объекта профиля. Возможные значения: `user`, `device`, `autoPilotDevice`.|
 |connectionType|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|Тип подключения. Возможные значения: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`, `paloAltoGlobalProtect`.|
-|енаблесплиттуннелинг|Логический|Включение Расщепленного туннелирования.|
-|енаблеалвайсон|Логический|Включение режима "всегда включено".|
-|енабледевицетуннел|Логический|Включите туннель устройства.|
-|енабледнсрегистратион|Логический|Включить регистрацию IP-адресов с использованием внутренней DNS.|
+|енаблесплиттуннелинг|Boolean|Включение Расщепленного туннелирования.|
+|енаблеалвайсон|Boolean|Включение режима "всегда включено".|
+|енабледевицетуннел|Boolean|Включите туннель устройства.|
+|енабледнсрегистратион|Boolean|Включить регистрацию IP-адресов с использованием внутренней DNS.|
 |днссуффиксес|Коллекция String|Укажите DNS-суффиксы, которые необходимо добавить в список поиска DNS, чтобы правильно маршрутизировать короткие имена.|
 |Параметр authenticationmethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `customEapXml`.|
-|ремемберусеркредентиалс|Логический|Запомнить учетные данные пользователя.|
-|енаблекондитионалакцесс|Логический|Включение условного доступа.|
-|енаблесинглесигнонвисалтернатецертификате|Логический|Включите единый вход (SSO) с альтернативным сертификатом.|
+|ремемберусеркредентиалс|Boolean|Запомнить учетные данные пользователя.|
+|енаблекондитионалакцесс|Boolean|Включение условного доступа.|
+|енаблесинглесигнонвисалтернатецертификате|Boolean|Включите единый вход (SSO) с альтернативным сертификатом.|
 |синглесигнонеку|[екстендедкэйусаже](../resources/intune-deviceconfig-extendedkeyusage.md)|Расширенное использование ключа (EKU) единого входа.|
 |синглесигнониссуерхаш|String|Хэш поставщика единого входа.|
 |еапксмл|Binary|XML-файл протокола расширенной проверки подлинности (EAP). (массив байтов в кодировке UTF8).|
 |проксисервер|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|Прокси-сервер.|
 |ассоЦиатедаппс|Коллекция [windows10AssociatedApps](../resources/intune-deviceconfig-windows10associatedapps.md)|Связанные приложения. Эта коллекция может содержать не более 10 000 элементов.|
-|онляссоЦиатедаппсканусеконнектион|Логический|Подключение можно использовать только для связанных приложений (VPN для каждого приложения).|
+|онляссоЦиатедаппсканусеконнектион|Boolean|Подключение можно использовать только для связанных приложений (VPN для каждого приложения).|
 |виндовсинформатионпротектиондомаин|String|Домен Windows Information Protection (WIP) для связи с этим подключением.|
 |траффикрулес|Коллекция [впнтраффикруле](../resources/intune-deviceconfig-vpntrafficrule.md)|Правила трафика. Эта коллекция может содержать не более 1000 элементов.|
 |сылает|Коллекция [впнрауте](../resources/intune-deviceconfig-vpnroute.md)|Маршруты (необязательно для сторонних поставщиков). Эта коллекция может содержать не более 1000 элементов.|

@@ -1,18 +1,20 @@
 ---
 title: Обновление Усерекспериенцеаналитиксбаселине
 description: Обновление свойств объекта Усерекспериенцеаналитиксбаселине.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 99dee6b79626191aeca6ad1b91b4a9be2268ed64
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f2de10d98ff3dccd875a53a6cb11e33690c442a5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814016"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43322749"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>Обновление Усерекспериенцеаналитиксбаселине
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814016"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -95,7 +97,6 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Получение managedDevice
 description: Чтение свойств и связей объекта managedDevice.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a2acc153aef821f32205a6cd04b1331dabd00353
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0eaf878a982f4cde9858f789322b10dd2eaf1d1f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814262"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43324821"
 ---
 # <a name="get-manageddevice"></a>Получение managedDevice
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42814262"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,7 +50,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -70,7 +72,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8076
+Content-Length: 8136
 
 {
   "value": {
@@ -248,11 +250,11 @@ Content-Length: 8076
     },
     "ethernetMacAddress": "Ethernet Mac Address value",
     "physicalMemoryInBytes": 5,
-    "processorArchitecture": "x86"
+    "processorArchitecture": "x86",
+    "specificationVersion": "Specification Version value"
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Удаление Виндовсманажеддевице
 description: Удаляет объект Виндовсманажеддевице.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 83fed761ec1655efe3b28fd68a033f41db66e94e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 82e33fb3afda0275a2211c09428ce8048911e3a4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813665"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43321947"
 ---
 # <a name="delete-windowsmanageddevice"></a>Удаление Виндовсманажеддевице
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813665"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +47,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -67,7 +69,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managed
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

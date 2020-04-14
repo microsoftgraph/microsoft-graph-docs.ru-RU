@@ -1,18 +1,20 @@
 ---
 title: Список Виндовсманажеддевицес
 description: Список свойств и связей объектов Виндовсманажеддевице.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c0a46964a7553730405e84a913ba4c98a8d1549
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ca68256c5a9c187c33371fa2cb4301517bf328f1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813651"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43321750"
 ---
 # <a name="list-windowsmanageddevices"></a>Список Виндовсманажеддевицес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813651"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +45,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8447
+Content-Length: 8509
 
 {
   "value": [
@@ -244,12 +246,12 @@ Content-Length: 8447
       },
       "ethernetMacAddress": "Ethernet Mac Address value",
       "physicalMemoryInBytes": 5,
-      "processorArchitecture": "x86"
+      "processorArchitecture": "x86",
+      "specificationVersion": "Specification Version value"
     }
   ]
 }
 ```
-
 
 
 

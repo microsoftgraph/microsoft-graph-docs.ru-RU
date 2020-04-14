@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Виндовсаутопилотенроллменттипе
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c463aacd54b6720960f26d29a5da3ceb410d900b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6431066743df7043c5afad3dfd23c43f701ef616
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729096"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43317789"
 ---
 # <a name="windowsautopilotenrollmenttype-enum-type"></a>тип перечисления Виндовсаутопилотенроллменттипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

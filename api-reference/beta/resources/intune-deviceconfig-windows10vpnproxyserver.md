@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса windows10VpnProxyServer
 description: VPN-прокси-сервер.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7c346fa236589c060679f77f923a4d043ca6a06f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d68a21863febb3339fe4fcd218d87418428bafe9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786616"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43317890"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>Тип ресурса windows10VpnProxyServer
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +31,7 @@ VPN-прокси-сервер.
 |аутоматикконфигуратионскриптурл|String|URL-адрес скрипта автоматической настройки прокси-сервера. Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|String|Address. Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |порта|Int32|Порта. Допустимые значения — от 0 до 65535, наследуемые от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|бипасспроксисерверфорлокаладдресс|Логический|Обход прокси-сервера для локального адреса.|
+|бипасспроксисерверфорлокаладдресс|Boolean|Обход прокси-сервера для локального адреса.|
 
 ## <a name="relationships"></a>Связи
 Нет

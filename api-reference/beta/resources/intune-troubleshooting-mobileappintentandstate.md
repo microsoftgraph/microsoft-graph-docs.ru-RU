@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Мобилеаппинтентандстате
 description: MobileApp намерения и состояние установки для конкретного устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6235aac4c40e452f7ea2a0076ee38687059d97e6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 90733f18e64a584158c19b1a35b10727cad25fc0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764728"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43317825"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>Тип ресурса Мобилеаппинтентандстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

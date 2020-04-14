@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Мобилеаппсуппортеддевицетипе
 description: Свойства устройства
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: efd91d4ab3e4f267faf371cdb9ef3e828c59ffe1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cee2a17eb6cacab64488693f3a6a6580f3fb3264
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764595"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43317782"
 ---
 # <a name="mobileappsupporteddevicetype-resource-type"></a>Тип ресурса Мобилеаппсуппортеддевицетипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

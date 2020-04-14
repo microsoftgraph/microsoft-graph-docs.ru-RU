@@ -1,16 +1,16 @@
 ---
 title: Create androidCompliancePolicy
 description: Создание нового объекта androidCompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 41e64e0d6084357bb8ecc89d8483baba38663e63
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0515e73d4e348fd9bc413aa1f52319cf7e31bb15
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515401"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43316735"
 ---
 # <a name="create-androidcompliancepolicy"></a>Create androidCompliancePolicy
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -69,8 +69,8 @@ POST /deviceManagement/deviceCompliancePolicies
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |securityBlockJailbrokenDevices|Boolean|Устройства нельзя взламывать и рутовать.|
-|osMinimumVersion|Строка|Минимальная версия Android.|
-|osMaximumVersion|Строка|Максимальная версия Android.|
+|osMinimumVersion|String|Минимальная версия Android.|
+|osMaximumVersion|String|Максимальная версия Android.|
 |minAndroidSecurityPatchLevel|String|Минимальный уровень обновления для системы безопасности Android.|
 |storageRequireEncryption|Boolean|Указывает, что шифрование на устройствах с Android должно быть обязательным.|
 |securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Указывает, что устройству требуется пройти базовую проверку целостности SafetyNet.|
@@ -160,6 +160,8 @@ Content-Length: 1331
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Update androidCompliancePolicy
 description: Обновление свойств объекта androidCompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a6fc9d1bacf507da8b1dfaa26e48910602d7e5ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f762365823ddebc77c2286d51812c8f27f92f226
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515373"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43316721"
 ---
 # <a name="update-androidcompliancepolicy"></a>Update androidCompliancePolicy
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -69,8 +69,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |securityBlockJailbrokenDevices|Boolean|Устройства нельзя взламывать и рутовать.|
-|osMinimumVersion|Строка|Минимальная версия Android.|
-|osMaximumVersion|Строка|Максимальная версия Android.|
+|osMinimumVersion|String|Минимальная версия Android.|
+|osMaximumVersion|String|Максимальная версия Android.|
 |minAndroidSecurityPatchLevel|String|Минимальный уровень обновления для системы безопасности Android.|
 |storageRequireEncryption|Boolean|Указывает, что шифрование на устройствах с Android должно быть обязательным.|
 |securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Указывает, что устройству требуется пройти базовую проверку целостности SafetyNet.|
@@ -160,6 +160,8 @@ Content-Length: 1331
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
+
 
 
 

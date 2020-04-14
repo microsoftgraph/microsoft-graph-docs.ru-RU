@@ -1,18 +1,20 @@
 ---
 title: Удаление Апплеусеринитиатеденроллментпрофиле
 description: Удаляет объект Апплеусеринитиатеденроллментпрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 65af47a00904006f1985f87f3a6f818e752edcca
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d7c22a2bdf6fb98cadd76841bf30f0d76baae587
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813490"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43320698"
 ---
 # <a name="delete-appleuserinitiatedenrollmentprofile"></a>Удаление Апплеусеринитиатеденроллментпрофиле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813490"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +43,7 @@ DELETE /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiate
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrol
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: тип перечисления windows10VpnProfileTarget
 description: Конечные типы профилей VPN Windows 10.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1039650c362332a236b5ba8c6083847bb6160708
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e2a95994051a77c1826ed78e0fe5885deb6b2f8a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786623"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43317912"
 ---
 # <a name="windows10vpnprofiletarget-enum-type"></a>тип перечисления windows10VpnProfileTarget
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

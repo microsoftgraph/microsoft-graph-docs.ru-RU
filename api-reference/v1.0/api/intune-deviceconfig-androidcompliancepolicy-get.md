@@ -1,16 +1,16 @@
 ---
 title: Get androidCompliancePolicy
 description: Чтение свойств и связей объекта androidCompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f66863ca882c2e4fcb21924272ea92ceb162d44
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9135e4ce2fd62254fe5fbafef03f770e1320843
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515387"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43316728"
 ---
 # <a name="get-androidcompliancepolicy"></a>Get androidCompliancePolicy
 
@@ -39,12 +39,12 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -101,6 +101,8 @@ Content-Length: 1406
   }
 }
 ```
+
+
 
 
 
