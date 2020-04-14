@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Усерекспериенцеаналитикссуммаризедби
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: adea92a33643be33b6a9704f1d2adc39bc852051
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: aadab58010265a7c32b69c1a7dda11567dfa5899
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783748"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401835"
 ---
 # <a name="userexperienceanalyticssummarizedby-enum-type"></a>тип перечисления Усерекспериенцеаналитикссуммаризедби
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42783748"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Пока не задокументировано.|
+|нет|нуль|Пока не задокументировано.|
 |model|1,1|Пока не задокументировано.|
 |аллрегрессионс|4|Пока не задокументировано.|
 |моделрегрессион|4 |Пока не задокументировано.|

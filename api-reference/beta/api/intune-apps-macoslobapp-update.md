@@ -1,18 +1,20 @@
 ---
 title: Обновление Макослобапп
 description: Обновление свойств объекта Макослобапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 27e9b9a2e7748fabc7d5eda63083346f003fc07f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6c70f522771c10b437514e92abb20e547cd25960
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761834"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43394160"
 ---
 # <a name="update-macoslobapp"></a>Обновление Макослобапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42761834"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -223,7 +225,6 @@ Content-Length: 1788
   "ignoreVersionDetection": true
 }
 ```
-
 
 
 

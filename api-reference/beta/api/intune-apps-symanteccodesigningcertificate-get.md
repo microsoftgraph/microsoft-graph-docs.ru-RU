@@ -1,18 +1,20 @@
 ---
 title: Получение symantecCodeSigningCertificate
 description: Чтение свойств и связей объекта symantecCodeSigningCertificate.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a36103531c31f2a65367302d2060a2c07dfeea25
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3ba7f979f43fb107569e35347a023fe1840693c6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761077"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43404042"
 ---
 # <a name="get-symanteccodesigningcertificate"></a>Получение symantecCodeSigningCertificate
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42761077"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -84,7 +86,6 @@ Content-Length: 511
   }
 }
 ```
-
 
 
 

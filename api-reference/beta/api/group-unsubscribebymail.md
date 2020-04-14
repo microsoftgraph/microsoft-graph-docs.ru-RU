@@ -1,20 +1,20 @@
 ---
 title: 'group: unsubscribeByMail'
-description: 'Вызов этого метода отключит текущего пользователя на получение уведомлений по электронной почте для этой группы о новых публикациях, событиях и файлах в этой группе. Поддерживается только для групп Office 365. '
+description: Вызов этого метода отключит текущего пользователя на получение уведомлений по электронной почте для этой группы о новых публикациях, событиях и файлах в этой группе.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 252fd8fbcc878c7d77818e2215cd8a06ea4722b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 01554b2cd8b07a75ad576b6d1533a33507e2315f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418237"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396288"
 ---
 # <a name="group-unsubscribebymail"></a>group: unsubscribeByMail
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ POST /groups/{id}/unsubscribeByMail
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательное свойство.  | 
+| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательно.  | 
 
 ## <a name="request-body"></a>Текст запроса
  Не указывайте текст запроса для этого метода. 

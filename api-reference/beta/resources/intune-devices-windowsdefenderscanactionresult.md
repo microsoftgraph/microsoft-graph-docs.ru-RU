@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса windowsDefenderScanActionResult
 description: Результат последнего сканирования, выполненного Защитником Windows
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58e2490e0b473c1a59cb3ac35525fbc57b5790a8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 14ed1b41445625b6c460a1438df2b48e17c5e48a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783741"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401828"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>Тип ресурса windowsDefenderScanActionResult
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

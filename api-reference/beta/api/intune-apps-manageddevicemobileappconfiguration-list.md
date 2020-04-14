@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов managedDeviceMobileAppConfiguration
 description: Перечисление свойств и связей объектов managedDeviceMobileAppConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e1e08322ec9427f76a8a762a80b79fa3c29ce06
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e2c6fc5afc8f302e309584773fd4f9c49a9982e6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815567"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406113"
 ---
 # <a name="list-manageddevicemobileappconfigurations"></a>Перечисление объектов managedDeviceMobileAppConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -85,7 +87,6 @@ Content-Length: 559
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Обновление windowsPhone81StoreApp
 description: Обновление свойств объекта windowsPhone81StoreApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 50f87db27ff37a06946a0fdf852c754f7465ea5f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bc697d972a7f00bd511a88de46e0c1a2a5acbb1e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760762"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43393424"
 ---
 # <a name="update-windowsphone81storeapp"></a>Обновление windowsPhone81StoreApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760762"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -150,7 +152,6 @@ Content-Length: 947
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Андроиддевицеовнерсистемупдатеинсталлтипе
 description: Типы системных обновлений для владельца устройства Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 043f1f22f4994950466e0f07288553d4c4adf101
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b64de74146e6ee6ffe30416d03277919e06490d2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796974"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43402775"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>тип перечисления Андроиддевицеовнерсистемупдатеинсталлтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

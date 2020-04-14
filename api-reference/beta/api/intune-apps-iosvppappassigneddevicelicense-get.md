@@ -1,18 +1,20 @@
 ---
 title: Получение Иосвппаппассигнеддевицелиценсе
 description: Чтение свойств и связей объекта Иосвппаппассигнеддевицелиценсе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b09e0da85083c29e3301e4a1f6eaaa06ea2e030e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5207e19f311f0400173db71e0f0780baf8568486
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761911"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43394457"
 ---
 # <a name="get-iosvppappassigneddevicelicense"></a>Получение Иосвппаппассигнеддевицелиценсе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42761911"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -81,7 +83,6 @@ Content-Length: 411
   }
 }
 ```
-
 
 
 

@@ -2,19 +2,19 @@
 title: Тип ресурса Упдатевиндов
 description: Тип ресурса Упдатевиндов.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d0f509accba2cb73709a4a5fa504a5d2a716b038
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a85cef3d3d87ac3b0c4f3bedcb291d6e6c03a054
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519584"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401660"
 ---
 # <a name="updatewindow-resource-type"></a>Тип ресурса Упдатевиндов
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

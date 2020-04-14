@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов managedMobileLobApp
 description: Список свойств и связей объектов managedMobileLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f27ec0ebaece3aa83a62f57b40f7dcfa8fce4ba
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0e7093e6f04d37be7bc358a4f9a3c298e6c766f4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815347"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43405478"
 ---
 # <a name="list-managedmobilelobapps"></a>Перечисление объектов managedMobileLobApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42815347"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -102,7 +104,6 @@ Content-Length: 1227
   ]
 }
 ```
-
 
 
 

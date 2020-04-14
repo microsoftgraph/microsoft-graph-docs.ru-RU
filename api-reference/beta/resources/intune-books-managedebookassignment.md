@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса managedEBookAssignment
 description: Содержит свойства, используемые при назначении электронной книги группе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44bf08901cda1ecae06f202d03c371f34e2f6402
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 63de532819c855ab647d0d272edfa98f9d0c64c7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797362"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403009"
 ---
 # <a name="managedebookassignment-resource-type"></a>Тип ресурса managedEBookAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

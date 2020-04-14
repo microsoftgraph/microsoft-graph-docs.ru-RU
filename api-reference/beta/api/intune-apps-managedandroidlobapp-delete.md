@@ -1,18 +1,20 @@
 ---
 title: Delete managedAndroidLobApp
 description: Удаляет объект managedAndroidLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 868f216d4db266e3616017c9be4697c0d639830d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 40ce74af8b9a41aee93bc63a9d3c2c6d37ad9d1d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761589"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406362"
 ---
 # <a name="delete-managedandroidlobapp"></a>Delete managedAndroidLobApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

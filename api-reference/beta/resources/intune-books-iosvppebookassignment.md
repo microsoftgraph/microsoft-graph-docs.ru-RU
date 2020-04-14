@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса iosVppEBookAssignment
 description: Содержит свойства, используемые при назначении электронной книги в формате VPP для iOS группе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d68ae7cab6de91ebd30afb0379ea254ae8fc0609
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 54c08746d3659d21d9cd23c23bc69da5af502385
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797376"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403087"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>Тип ресурса iosVppEBookAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

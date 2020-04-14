@@ -1,20 +1,20 @@
 ---
 title: Удаление outlookTaskFolder
 description: Удаление указанной папки задач Outlook.
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a5e5b072cc8853604ef2d413179d67aeea844bc6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7738f51788f417284db5bb11f72a2dc845f76e83
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456169"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403212"
 ---
 # <a name="delete-outlooktaskfolder"></a>Удаление outlookTaskFolder
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

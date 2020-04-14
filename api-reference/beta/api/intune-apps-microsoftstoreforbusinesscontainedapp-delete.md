@@ -1,18 +1,20 @@
 ---
 title: Удаление Микрософтсторефорбусинессконтаинедапп
 description: Удаляет объект Микрософтсторефорбусинессконтаинедапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: be123e7f038e2a7197da4b3f464634f284a3d65a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cc2f3b2303946a5199c41bf4221c7150c42d498c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761456"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43404838"
 ---
 # <a name="delete-microsoftstoreforbusinesscontainedapp"></a>Удаление Микрософтсторефорбусинессконтаинедапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

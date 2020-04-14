@@ -1,18 +1,20 @@
 ---
 title: Получение windowsPhone81AppXBundle
 description: Чтение свойств и связей объекта windowsPhone81AppXBundle.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 45ad80a8dded960ef1fb8e547f9059cf964d8c6c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c752f610365105d596caf5f376fa24f088394cc4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760804"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43393578"
 ---
 # <a name="get-windowsphone81appxbundle"></a>Получение windowsPhone81AppXBundle
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760804"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -145,7 +147,6 @@ Content-Length: 2642
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса managedEBook
 description: Абстрактный класс, содержащий базовые свойства управляемой электронной книги.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fcec7c8dfaa0461e6b88d67a5a0f73373a1af7b0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3f3bcbd777c87150103fe21495370adddf3afe90
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797369"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403016"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

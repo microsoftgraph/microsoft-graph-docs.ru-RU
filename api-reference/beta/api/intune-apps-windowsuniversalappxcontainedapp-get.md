@@ -1,18 +1,20 @@
 ---
 title: Получение Виндовсуниверсалаппксконтаинедапп
 description: Чтение свойств и связей объекта Виндовсуниверсалаппксконтаинедапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d374ae96be7550e3bb3072b11c0a8a6d58d110b3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6fbec95b0f1c59e0f2c7cfaf233d58b1815e48d3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760622"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43393040"
 ---
 # <a name="get-windowsuniversalappxcontainedapp"></a>Получение Виндовсуниверсалаппксконтаинедапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760622"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -78,7 +80,6 @@ Content-Length: 196
   }
 }
 ```
-
 
 
 

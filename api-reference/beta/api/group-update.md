@@ -1,20 +1,20 @@
 ---
 title: Обновление группы
 description: Обновление свойств объекта [Group](../resources/group.md) .
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a2e5e9fa10ec8d37099f09cc294b36a429bb0642
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef9cca7194adeeea1c3fc52c02e4b3d515afe2c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446697"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396099"
 ---
-# <a name="update-group"></a>Обновление группы
+# <a name="update-group"></a>Update group
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +53,7 @@ PATCH /groups/{id}
 |allowExternalSenders|Логическое|Значение по умолчанию: **false**. Указывает, могут ли пользователи за пределами организации отправлять сообщения в группу.|
 |autoSubscribeNewMembers|Boolean|Значение, используемое по умолчанию: **false**. Указывает, будут ли новые участники группы автоматически подписаны на получение уведомлений по электронной почте.|
 |description|String|Необязательное описание для группы. |
-|displayName|Строка|Отображаемое имя для группы. Это свойство необходимо при создании группы. Оно не может быть удалено во время обновления. |
+|displayName|String|Отображаемое имя для группы. Это свойство необходимо при создании группы. Оно не может быть удалено во время обновления. |
 |groupTypes|Коллекция String|Задает тип группы и членства в ней.  <br><br>Если коллекция содержит объект **Unified**, то эта группа является группой Office 365. В противном случае она является группой безопасности.  <br><br>Если коллекция включает объект **DynamicMembership**, то в этой группе используется динамическое членство. В противном случае членство является статическим. |
 |mailEnabled|Boolean|Указывает, включена ли для этой группы поддержка почты. |
 |mailNickname|String|Почтовый псевдоним для группы. Это свойство должно быть указано при создании группы. |
@@ -120,7 +120,7 @@ Content-length: 211
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,

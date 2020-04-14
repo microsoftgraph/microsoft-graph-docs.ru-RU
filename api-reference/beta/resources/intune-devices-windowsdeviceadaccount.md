@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса windowsDeviceADAccount
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1336ed3abea2a64bfe9ae15e169efba69e592b47
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2aad9235560c250d1ae7a4004bf6d6d9b9c3d77d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783727"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401798"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>Тип ресурса windowsDeviceADAccount
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

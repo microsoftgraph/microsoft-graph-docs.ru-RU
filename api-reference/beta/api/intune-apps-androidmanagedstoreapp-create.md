@@ -1,18 +1,20 @@
 ---
 title: Создание Андроидманажедстореапп
 description: Создание нового объекта Андроидманажедстореапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b33eae221380f75b80bd17def157e1f2a507830e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9e6114585389d33197308dd7c2e973878dd67595
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762268"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395057"
 ---
 # <a name="create-androidmanagedstoreapp"></a>Создание Андроидманажедстореапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42762268"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -74,9 +76,10 @@ POST /deviceAppManagement/mobileApps
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
 |appStoreUrl|String|URL-адрес приложения для рабочего хранилища.|
-|Частный|Логический|Указывает, доступно ли приложение только для указанных пользователей предприятия.|
-|иссистемапп|Логический|Указывает, является ли приложение предустановленным системным приложением.|
-|суппортсоемконфиг|Логический|Поддерживает ли это приложение политику Оемконфиг.|
+|Частный|Логическое|Указывает, доступно ли приложение только для указанных пользователей предприятия.|
+|иссистемапп|Логическое|Указывает, является ли приложение предустановленным системным приложением.|
+|апптраккс|Коллекция [андроидманажедстореапптракк](../resources/intune-apps-androidmanagedstoreapptrack.md)|Дорожки, которые видимы для этого предприятия.|
+|суппортсоемконфиг|Логическое|Поддерживает ли это приложение политику Оемконфиг.|
 
 
 
@@ -90,7 +93,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 984
+Content-length: 1168
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -122,6 +125,13 @@ Content-length: 984
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "Track Id value",
+      "trackAlias": "Track Alias value"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```
@@ -131,7 +141,7 @@ Content-length: 984
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1156
+Content-Length: 1340
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -166,10 +176,16 @@ Content-Length: 1156
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "Track Id value",
+      "trackAlias": "Track Alias value"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```
-
 
 
 

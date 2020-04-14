@@ -1,18 +1,20 @@
 ---
 title: Обновление windowsPhone81AppXBundle
 description: Обновление свойств объекта windowsPhone81AppXBundle.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e897df9c2eb845c69a53e59c6dac02d89e78e60
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 18718403d3940a524c376872b39ffc57ba7b4115
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760790"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43393564"
 ---
 # <a name="update-windowsphone81appxbundle"></a>Обновление windowsPhone81AppXBundle
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760790"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -249,7 +251,6 @@ Content-Length: 2483
   ]
 }
 ```
-
 
 
 

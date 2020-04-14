@@ -1,18 +1,20 @@
 ---
 title: Create managedAndroidLobApp
 description: Создание объекта managedAndroidLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e8caac0a8ed804e8fd1c4fd2cbd87b47be6b0dc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f9787b88055896b41c0816ba58d49798a6aa2ea3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761596"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406409"
 ---
 # <a name="create-managedandroidlobapp"></a>Create managedAndroidLobApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -210,7 +212,6 @@ Content-Length: 1663
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

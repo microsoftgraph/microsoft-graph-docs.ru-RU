@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Androidvpnconnectiontype.
 description: Тип VPN-подключения Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a6b639023da1d87fc9be6e16636136d24590d8d5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 60dd51253001c8eec2bcb5af7363d02693ae1553
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796701"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43402637"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>тип перечисления Androidvpnconnectiontype.
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

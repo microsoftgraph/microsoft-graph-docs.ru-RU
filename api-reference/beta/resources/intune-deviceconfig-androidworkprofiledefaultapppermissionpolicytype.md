@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Андроидворкпрофиледефаултапппермиссионполицитипе
 description: Тип политики разрешений приложений для рабочего профиля Android по умолчанию.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: eb43602f0de222817cbeaa6c70ffc7512234b742
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 34a605fcff4d3a38926914c8b37311b858521fe9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796242"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43402300"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>тип перечисления Андроидворкпрофиледефаултапппермиссионполицитипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

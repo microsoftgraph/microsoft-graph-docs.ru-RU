@@ -1,20 +1,20 @@
 ---
 title: 'Группа: Валидатепропертиес'
-description: Убедитесь, что отображаемое имя или псевдоним почты группы Office 365 соответствует политикам именования. Клиенты могут использовать API, чтобы определить, является ли отображаемое имя или псевдоним почты допустимым, прежде чем пытаться **Обновить** группу Office 365. Для проверки свойств перед созданием группы используйте функцию Валидатепропертиес для объектов Directory.
+description: Убедитесь, что отображаемое имя или псевдоним почты группы Office 365 соответствует политикам именования.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cb0d6ca17a7c6bb9d48919235dfc8c3a9cec1059
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b77ccc5fc22ffa9a0829d825a434b32070701a0b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446676"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396020"
 ---
 # <a name="group-validateproperties"></a>Группа: Валидатепропертиес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Убедитесь, что отображаемое имя или псевдоним почты группы Office 365 соответствует политикам именования. Клиенты могут использовать API, чтобы определить, является ли отображаемое имя или псевдоним почты допустимым, прежде чем пытаться **Обновить** группу Office 365. Для проверки свойств перед созданием группы используйте [функцию валидатепропертиес](directoryobject-validateproperties.md) для объектов Directory.
 

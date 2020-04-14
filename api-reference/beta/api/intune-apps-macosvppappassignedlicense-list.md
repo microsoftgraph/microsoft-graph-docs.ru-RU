@@ -1,18 +1,20 @@
 ---
 title: Список Макосвппаппассигнедлиценсес
 description: Список свойств и связей объектов Макосвппаппассигнедлиценсе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d1f7dbd22699870ba1442847102792fa8f91bcb0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 854a483b4690dcb7ebc32739e2d48786636cf627
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761617"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406463"
 ---
 # <a name="list-macosvppappassignedlicenses"></a>Список Макосвппаппассигнедлиценсес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -78,7 +80,6 @@ Content-Length: 342
   ]
 }
 ```
-
 
 
 

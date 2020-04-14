@@ -1,18 +1,20 @@
 ---
 title: Get windowsUniversalAppX
 description: Чтение свойств и связей объекта windowsUniversalAppX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dc92b54f6b7be14afef19cc51ff83d6ca5a70d03
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6aa8d8ac1fdd8ea461e5e072ede4c1c0b93b40a7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760664"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43393213"
 ---
 # <a name="get-windowsuniversalappx"></a>Get windowsUniversalAppX
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760664"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -122,7 +124,6 @@ Content-Length: 1746
   }
 }
 ```
-
 
 
 

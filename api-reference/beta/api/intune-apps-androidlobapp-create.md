@@ -1,18 +1,20 @@
 ---
 title: Create androidLobApp
 description: Создание нового объекта androidLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a6e4bd7c9bca3a1aec9638003821e6e2b01a029f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 00310232a4ba1a35825f42ad63ecdbb080b15024
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762331"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395236"
 ---
 # <a name="create-androidlobapp"></a>Create androidLobApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42762331"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -204,7 +206,6 @@ Content-Length: 1585
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

@@ -4,17 +4,17 @@ description: Содержит ключевые учетные данные, св
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 507ea4283ae34e0148d84cd8f76036880a255e98
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 983cc4c9cbd19cd7f0b4261f28a00e8e020cefe9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523032"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401714"
 ---
 # <a name="keycredential-resource-type"></a>Тип ресурса Кэйкредентиал
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42523032"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |кустомкэйидентифиер|Binary| Настраиваемый идентификатор ключа |
-| displayName | Строка | Понятное имя для ключа. Необязательное свойство. |
+| displayName | Строка | Понятное имя для ключа. Необязательно. |
 |endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Него значение KeyID|GUID|Уникальный идентификатор (GUID) для ключа.|
 |startDateTime|DateTimeOffset|Дата и время, когда учетные данные становятся действительными. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|

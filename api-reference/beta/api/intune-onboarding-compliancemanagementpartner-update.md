@@ -1,18 +1,20 @@
 ---
 title: Обновление Комплианцеманажементпартнер
 description: Обновление свойств объекта Комплианцеманажементпартнер.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 816b0c24c104432852ce81e2b4151fcfab694e26
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c728be22a4e3fa1ab8dec2846da51a462912bc20
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803051"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403490"
 ---
 # <a name="update-compliancemanagementpartner"></a>Обновление Комплианцеманажементпартнер
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42803051"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложения|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,10 +57,10 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пакета пульса после того, как администратор направил соответствие партнеру управления соответствием|
 |partnerState|[девицеманажементпартнертенантстате](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Строка|Отображаемое имя партнера|
-|макосонбоардед|Логический|Партнер, подключенный к устройствам Mac.|
-|виндовсонбоардед|Логический|Партнер, направленный на устройства с Windows.|
-|андроидонбоардед|Логический|Партнер, направленный на устройства с Android.|
-|иосонбоардед|Логический|Партнер, подключенный к устройствам iOS.|
+|макосонбоардед|Логическое|Партнер, подключенный к устройствам Mac.|
+|виндовсонбоардед|Логическое|Партнер, направленный на устройства с Windows.|
+|андроидонбоардед|Логическое|Партнер, направленный на устройства с Android.|
+|иосонбоардед|Логическое|Партнер, подключенный к устройствам iOS.|
 |макосенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Mac через партнера.|
 |виндовсенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Windows с помощью партнера.|
 |андроиденроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства с Android через партнера.|
@@ -173,7 +175,6 @@ Content-Length: 1293
   ]
 }
 ```
-
 
 
 

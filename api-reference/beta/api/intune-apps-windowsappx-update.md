@@ -1,18 +1,20 @@
 ---
 title: Обновление windowsAppX
 description: Обновление свойств объекта windowsAppX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c48539d26294ece1ddb9280c46166c46b8b5dee2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 539e4129757a00e2083da9c50d79d7a6d736de87
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760930"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43393695"
 ---
 # <a name="update-windowsappx"></a>Обновление windowsAppX
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760930"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -199,7 +201,6 @@ Content-Length: 1585
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

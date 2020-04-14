@@ -1,18 +1,20 @@
 ---
 title: Get managedAndroidStoreApp
 description: Чтение свойств и связей объекта managedAndroidStoreApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e62c2fc979068d024ae5a999088ce5ceea4d6d87
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 292fbf26b3612c51d96f77178265727791e57051
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815609"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406276"
 ---
 # <a name="get-managedandroidstoreapp"></a>Get managedAndroidStoreApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -121,7 +123,6 @@ Content-Length: 1547
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Андроиддевицеовнеррекуиредпассвордтипе
 description: Обязательный тип пароля для политики владельца устройств Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e6d783f8bdf5faeed2d3e10a9286a897c8d85783
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6f37ddeb108db777b23f55abd67963688b9a3d3c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796988"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43402806"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>тип перечисления Андроиддевицеовнеррекуиредпассвордтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

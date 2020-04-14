@@ -1,18 +1,20 @@
 ---
 title: Обновление Андроидфорворкмобилеаппконфигуратион
 description: Обновление свойств объекта Андроидфорворкмобилеаппконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 75c2c13b7c6e6229248ed6cf8d805fd668267625
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 64b208535ac03ffcc3f8b63425efabe896def3df
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762338"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395267"
 ---
 # <a name="update-androidforworkmobileappconfiguration"></a>Обновление Андроидфорворкмобилеаппконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42762338"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -62,6 +64,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 |packageId|String|Идентификатор пакета конфигурации приложения Android для рабочего приложения.|
 |пайлоаджсон|String|Полезные данные JSON конфигурации приложения для Android для рабочего приложения.|
 |пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
+|профилеаппликабилити|[андроидпрофилеаппликабилити](../resources/intune-apps-androidprofileapplicability.md)|Применимость профиля предприятия Android (Андроидворкпрофиле, Девицеовнер или Default (применяется к обоим). Возможные значения: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
 
 
 
@@ -75,7 +78,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 Content-type: application/json
-Content-length: 560
+Content-length: 609
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
@@ -96,7 +99,8 @@ Content-length: 560
       "permission": "Permission value",
       "action": "autoGrant"
     }
-  ]
+  ],
+  "profileApplicability": "androidWorkProfile"
 }
 ```
 
@@ -105,7 +109,7 @@ Content-length: 560
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 732
+Content-Length: 781
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
@@ -129,10 +133,10 @@ Content-Length: 732
       "permission": "Permission value",
       "action": "autoGrant"
     }
-  ]
+  ],
+  "profileApplicability": "androidWorkProfile"
 }
 ```
-
 
 
 

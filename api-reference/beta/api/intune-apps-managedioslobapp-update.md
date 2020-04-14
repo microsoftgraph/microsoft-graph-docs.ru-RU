@@ -1,18 +1,20 @@
 ---
 title: Update managedIOSLobApp
 description: Обновление свойств объекта managedIOSLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ffea947189ce4a3d45aef6bc08423f587b741e2a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b86a843e2202297809ffc4036f2ea2a001be87ea
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815396"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43405711"
 ---
 # <a name="update-managedioslobapp"></a>Update managedIOSLobApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -207,7 +209,6 @@ Content-Length: 1661
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

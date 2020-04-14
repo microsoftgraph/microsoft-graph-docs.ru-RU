@@ -1,16 +1,16 @@
 ---
 title: Создание группы
 description: Создание группы Office 365 или группы безопасности.
-author: dkershaw10
+author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ebdf299679daaef688078dd69038b1a568e30a26
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: e4fc80fc664404a0d17d535282e0d791b7e96cbb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218586"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396615"
 ---
 # <a name="create-group"></a>Создание группы
 

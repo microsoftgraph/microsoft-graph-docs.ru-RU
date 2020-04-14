@@ -1,18 +1,20 @@
 ---
 title: Обновить VPP токен
 description: Обновление свойств объекта VPP токен.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cf2916b7444d829d1be71c329d2f7fd0fb41d01e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8804c12df044c11b9cdb7ba32c2b37517aa72b9b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802652"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403281"
 ---
 # <a name="update-vpptoken"></a>Обновить VPP токен
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42802652"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложения|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -64,10 +66,10 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 |lastSyncStatus|[впптокенсинкстатус](../resources/intune-onboarding-vpptokensyncstatus.md)|Текущее состояние последней синхронизации приложения, инициированной с помощью токена Apple Volume Purchase Program. Возможные значения: `none`, `inProgress`, `completed`, `failed`. Возможные значения: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
-|dataSharingConsentGranted|Логический|Разрешение, предоставленное для предоставления общего доступа к данным с помощью программы Apple Volume Purchase Program.|
+|dataSharingConsentGranted|Логическое|Разрешение, предоставленное для предоставления общего доступа к данным с помощью программы Apple Volume Purchase Program.|
 |displayName|Строка|Понятное имя маркера, указанного администратором.|
 |локатионнаме|String|Расположение маркера возвращено от Apple VPP.|
-|клаимтокенманажементфромекстерналмдм|Логический|Согласие администратора, чтобы разрешить управление маркерами из внешних MDM.|
+|клаимтокенманажементфромекстерналмдм|Логическое|Согласие администратора, чтобы разрешить управление маркерами из внешних MDM.|
 |roleScopeTagIds|Коллекция String|Идентификаторы тегов области ролей, назначенных этой сущности.|
 
 
@@ -154,7 +156,6 @@ Content-Length: 1115
   ]
 }
 ```
-
 
 
 

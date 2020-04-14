@@ -1,20 +1,20 @@
 ---
 title: Список acceptedSenders
 description: Получение списка пользователей или групп, включенных в список утвержденных отправителей для этой группы.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3f3c367335a941d6275b9c2d1178387a5efbc357
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de7c7216af4e79547db7963e63d9cd60565740c5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419851"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397192"
 ---
 # <a name="list-acceptedsenders"></a>Список acceptedSenders
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

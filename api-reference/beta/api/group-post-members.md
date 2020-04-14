@@ -2,19 +2,19 @@
 title: Добавление участника
 description: Добавьте члена в группу Office 365 или группу безопасности с помощью свойства навигации **Members** .
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bbb17793b31ccc7b927ad422bab0f49a280e8a30
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e4b209d7b941bc681e63f9f1781072ff501eb1e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418787"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396576"
 ---
 # <a name="add-member"></a>Добавление участника
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "42418787"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложения | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

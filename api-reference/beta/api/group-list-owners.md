@@ -1,20 +1,20 @@
 ---
 title: Список владельцев
-description: Получение списка владельцев группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект группы.
+description: Получение списка владельцев группы.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 98ab9bee1740d623dc962f7e0bf8df921e3ef407
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7bb54eadf4ded1f7b775f3a80a49e6bdcb66e919
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419428"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396923"
 ---
 # <a name="list-owners"></a>Список владельцев
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

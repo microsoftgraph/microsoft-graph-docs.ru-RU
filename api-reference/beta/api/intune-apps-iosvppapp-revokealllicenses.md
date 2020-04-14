@@ -1,18 +1,20 @@
 ---
 title: Действие revokeAllLicenses
 description: Отозвать все назначенные лицензии на Android для данного приложения.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d972ecba6e3c752bcd668e171fb249c5571ec8b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1190b70319703e9c1c6ef235131eb86774b1eae6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761953"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43394550"
 ---
 # <a name="revokealllicenses-action"></a>Действие revokeAllLicenses
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42761953"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +55,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|нотифиманажеддевицес|Логический|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
+|нотифиманажеддевицес|Логическое|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
 
 
 
@@ -80,7 +82,6 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

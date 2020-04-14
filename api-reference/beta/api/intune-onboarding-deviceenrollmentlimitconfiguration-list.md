@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов deviceEnrollmentLimitConfiguration
 description: Список свойств и связей объектов deviceEnrollmentLimitConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3dda88228eea657b95447b610a7772741ec098c0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 92738cac8c36637a40b3a0705127ef4138aad427
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803023"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403334"
 ---
 # <a name="list-deviceenrollmentlimitconfigurations"></a>Перечисление объектов deviceEnrollmentLimitConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42803023"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Для приложения|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -81,7 +83,6 @@ Content-Length: 446
   ]
 }
 ```
-
 
 
 

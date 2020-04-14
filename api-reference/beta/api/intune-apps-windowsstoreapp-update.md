@@ -1,18 +1,20 @@
 ---
 title: Обновление Виндовсстореапп
 description: Обновление свойств объекта Виндовсстореапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ff7228dc606752072d3bf35b4109862905c377f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 101c89634f75dd8d81b85dbfb8ba7bd879674c6c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760685"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43393394"
 ---
 # <a name="update-windowsstoreapp"></a>Обновление Виндовсстореапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760685"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -150,7 +152,6 @@ Content-Length: 940
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
 
 
 

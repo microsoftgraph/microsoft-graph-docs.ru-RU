@@ -1,18 +1,20 @@
 ---
 title: Действие revokeAllLicenses
 description: Отзыв назначенной лицензии пользователя на iOS VPP для данного приложения.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dd216543ff651dbfe603e3ac7a981fcde3b1c0e7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 070e23e6c8f354b11353b8fee3f381208c97ea8b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761939"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43394489"
 ---
 # <a name="revokeuserlicense-action"></a>Действие revokeAllLicenses
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42761939"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +56,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userId|String|Идентификатор пользователя, которому назначена лицензия на приложение|
-|нотифиманажеддевицес|Логический|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
+|нотифиманажеддевицес|Логическое|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
 
 
 
@@ -82,7 +84,6 @@ Content-length: 66
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

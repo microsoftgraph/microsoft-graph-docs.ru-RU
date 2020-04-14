@@ -1,20 +1,20 @@
 ---
 title: Список транзитивных членов группы
-description: Получение списка членов группы. У группы могут быть пользователи, контакты, устройства, субъекты служб и другие группы в качестве участников. Эта операция является транзитивным и также возвращает плоский список всех вложенных элементов.
+description: Получение списка членов группы.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 32c2820a0dc7f5ce690a3342da578d1fccb31bf6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9116569521cb024cd6501e448f8dccad61f64260
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419107"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396819"
 ---
 # <a name="list-group-transitive-members"></a>Список транзитивных членов группы
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42419107"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory. Read. ALL, Directory. AccessAsUser. ALL, User. ReadBasic. ALL, User. Read. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory. Read. ALL, User. Read. ALL |
+|Для приложения | Directory. Read. ALL, User. Read. ALL |
 
 > Note: чтобы получить список членов скрытой группы членства, требуется разрешение Member. Read. Hidden.
 

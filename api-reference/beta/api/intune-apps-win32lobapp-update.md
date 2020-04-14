@@ -1,18 +1,20 @@
 ---
 title: Обновление win32LobApp
 description: Обновление свойств объекта win32LobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ba1e1be5a6fb5bf13cdb900cfc2bf4a6da07358
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 60d20ea301f3553f041b55b5bce31856d81e5cdc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760965"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43393874"
 ---
 # <a name="update-win32lobapp"></a>Обновление win32LobApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760965"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -301,7 +303,6 @@ Content-Length: 3037
   "installLanguage": "Install Language value"
 }
 ```
-
 
 
 

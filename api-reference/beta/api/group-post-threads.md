@@ -1,20 +1,20 @@
 ---
 title: Создание цепочки беседы
 description: 'Начните групповой чат, создав цепочку. '
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 16c0ef903f3693f5326097229a6025332b63699d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3384be421a7afe4c3bd40a463c4e42f118f51c39
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418612"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396352"
 ---
 # <a name="create-conversation-thread"></a>Создание цепочки беседы
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

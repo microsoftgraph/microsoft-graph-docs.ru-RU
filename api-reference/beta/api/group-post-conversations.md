@@ -1,20 +1,20 @@
 ---
 title: Создание беседы
 description: 'Создание беседы путем включения цепочки и записи. '
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ebbe3ece6af2acd71ab8fcffc12bbc65ddd29e1a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 880842f6376d2e19ac86b09adc5d69f90a65b8a9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418850"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396701"
 ---
 # <a name="create-conversation"></a>Создание беседы
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

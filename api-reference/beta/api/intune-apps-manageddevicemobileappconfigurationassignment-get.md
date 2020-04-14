@@ -1,18 +1,20 @@
 ---
 title: Get managedDeviceMobileAppConfigurationAssignment
 description: Чтение свойств и связей объекта managedDeviceMobileAppConfigurationAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: eb1fe7cb9db30da6e3cd92a5ef431ccac0152686
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3c9607f8a2d7467f70143c5f65d18903575cdd27
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815546"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406084"
 ---
 # <a name="get-manageddevicemobileappconfigurationassignment"></a>Get managedDeviceMobileAppConfigurationAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -78,7 +80,6 @@ Content-Length: 263
   }
 }
 ```
-
 
 
 

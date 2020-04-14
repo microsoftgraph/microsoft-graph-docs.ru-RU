@@ -1,18 +1,20 @@
 ---
 title: Получение Виндовсмикрософтеджеапп
 description: Чтение свойств и связей объекта Виндовсмикрософтеджеапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 39e08c3fc54e8a33c405f8c7b3eb13d9fbea44b1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 99c60d30f7f16af1701c98ce4d85264d916254cf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760909"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403753"
 ---
 # <a name="get-windowsmicrosoftedgeapp"></a>Получение Виндовсмикрософтеджеапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760909"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -102,7 +104,6 @@ Content-Length: 1050
   }
 }
 ```
-
 
 
 

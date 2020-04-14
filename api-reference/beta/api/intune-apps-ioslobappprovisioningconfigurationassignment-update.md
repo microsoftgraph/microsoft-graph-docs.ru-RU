@@ -1,18 +1,20 @@
 ---
 title: Обновление Иослобапппровисионингконфигуратионассигнмент
 description: Обновление свойств объекта Иослобапппровисионингконфигуратионассигнмент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0076bbaf7dd895c3852a83b8766022b4fcac11c3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8f0bdd5ac80c537f3908964b17f2c88ec0db6583
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762058"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43394995"
 ---
 # <a name="update-ioslobappprovisioningconfigurationassignment"></a>Обновление Иослобапппровисионингконфигуратионассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42762058"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -91,7 +93,6 @@ Content-Length: 233
   }
 }
 ```
-
 
 
 

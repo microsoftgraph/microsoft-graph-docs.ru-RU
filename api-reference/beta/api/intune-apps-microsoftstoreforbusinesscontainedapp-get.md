@@ -1,18 +1,20 @@
 ---
 title: Получение Микрософтсторефорбусинессконтаинедапп
 description: Чтение свойств и связей объекта Микрософтсторефорбусинессконтаинедапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e19bd01922e2aa23a92759ff67ff2680d9ad05eb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ae0f3e89874d258be6b24daec6139b301ee89168
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761449"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43404807"
 ---
 # <a name="get-microsoftstoreforbusinesscontainedapp"></a>Получение Микрософтсторефорбусинессконтаинедапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -78,7 +80,6 @@ Content-Length: 201
   }
 }
 ```
-
 
 
 

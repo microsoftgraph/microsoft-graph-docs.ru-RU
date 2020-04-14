@@ -1,18 +1,20 @@
 ---
 title: Получение Макосвппаппассигнедлиценсе
 description: Чтение свойств и связей объекта Макосвппаппассигнедлиценсе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7aaeda224f3d5fd1c027ec9a82910856828a4ec9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0a30a3a4305c9c7aba8797c92994fb6ec08aabde
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761624"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406510"
 ---
 # <a name="get-macosvppappassignedlicense"></a>Получение Макосвппаппассигнедлиценсе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -79,7 +81,6 @@ Content-Length: 316
   }
 }
 ```
-
 
 
 

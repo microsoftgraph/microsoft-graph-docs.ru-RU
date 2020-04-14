@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Цертификатеревокатионстатус
 description: Состояние отзыва сертификата.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f0e0342924faf166e6daf0a66149e841b88d6d0c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8d449fc723fd4c3a03c9a72bdbc74768b7db698c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795696"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43402233"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>тип перечисления Цертификатеревокатионстатус
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42795696"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Не отозван.|
+|нет|нуль|Не отозван.|
 |закончен|1,1|Отзыв ожидается.|
 |опубликован|2|Выдана команда отзыва.|
 |сбоев|4|Не удалось выполнить отзыв.|

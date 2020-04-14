@@ -1,18 +1,20 @@
 ---
 title: Создание Андроидманажедстореаппконфигуратионсчема
 description: Создание нового объекта Андроидманажедстореаппконфигуратионсчема.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f57e9a69672044d18f1ceee0f560a811b7b9a09c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cf3990e02c3ea34a9262f1df964ad70d5488e8bb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762436"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395523"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>Создание Андроидманажедстореаппконфигуратионсчема
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42762436"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -185,7 +187,6 @@ Content-Length: 1634
   ]
 }
 ```
-
 
 
 

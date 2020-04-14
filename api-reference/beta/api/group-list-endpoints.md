@@ -1,20 +1,20 @@
 ---
 title: Перечисление конечных точек
 description: Получение списка объектов конечной точки.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c230e394a2cd6c9a706da26cfe083ed6478a80b1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8bf4d52ebe1e59efeb2b47afcf33f028c91567be
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419641"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397019"
 ---
 # <a name="list-endpoints"></a>Перечисление конечных точек
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: Create windowsUniversalAppX
 description: Создание объекта windowsUniversalAppX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ae41bb01dbc67d5c64c63a69789cbc348bb88c1c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ceaf76fe03250e634373d671d37ebe21a8b35c66
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760678"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43393355"
 ---
 # <a name="create-windowsuniversalappx"></a>Create windowsUniversalAppX
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760678"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -200,7 +202,6 @@ Content-Length: 1633
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

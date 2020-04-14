@@ -1,18 +1,20 @@
 ---
 title: Update windowsUniversalAppX
 description: Обновление свойств объекта windowsUniversalAppX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7fa35f4bf7311046e32e7c0d0310c8a01fa0e494
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c666beca7d59d3ffab25464fde3b15b2de3b9416
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760650"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43393127"
 ---
 # <a name="update-windowsuniversalappx"></a>Update windowsUniversalAppX
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760650"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -202,7 +204,6 @@ Content-Length: 1633
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

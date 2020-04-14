@@ -1,20 +1,20 @@
 ---
 title: Список членов группы
-description: Получение списка непосредственных участников группы. У группы могут быть пользователи, контакты, устройства, субъекты служб и другие группы в качестве участников. Эта операция не является транзитивной.
+description: Получение списка непосредственных участников группы.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 25f2585647e81afdf4abb9a2257b9548f1847c37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: feae4be3a16254e15548f53bb19d55d186fa1ac4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419431"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396950"
 ---
 # <a name="list-group-members"></a>Список членов группы
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

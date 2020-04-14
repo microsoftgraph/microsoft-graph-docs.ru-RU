@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Андроиддевицеовнерглобалпроксяутоконфиг
 description: Автонастройка глобального прокси-сервера владельца устройств Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c3acf7ef749a95cd17009284d587e4dd41ef4ec
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3cee579dbd5a8dee57b270e117a0c50aca377f94
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797016"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43402987"
 ---
 # <a name="androiddeviceownerglobalproxyautoconfig-resource-type"></a>Тип ресурса Андроиддевицеовнерглобалпроксяутоконфиг
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

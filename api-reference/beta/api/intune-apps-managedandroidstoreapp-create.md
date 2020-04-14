@@ -1,18 +1,20 @@
 ---
 title: Create managedAndroidStoreApp
 description: Создание нового объекта managedAndroidStoreApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 06bc232f658874244f043cde8c0b2ac178f2c647
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 072557835c0e453d1e0dab1f31321214c8df0633
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761575"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406316"
 ---
 # <a name="create-managedandroidstoreapp"></a>Create managedAndroidStoreApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -192,7 +194,6 @@ Content-Length: 1436
   }
 }
 ```
-
 
 
 

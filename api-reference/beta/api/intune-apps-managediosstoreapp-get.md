@@ -1,18 +1,20 @@
 ---
 title: Get managedIOSStoreApp
 description: Чтение свойств и связей объекта managedIOSStoreApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dfbe1bed4bc656523ccbfb013efde6fc2c059d2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7196d055eadabfddc7f0f160afaab61fa4ddaa14
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815375"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43405618"
 ---
 # <a name="get-managediosstoreapp"></a>Get managedIOSStoreApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -118,7 +120,6 @@ Content-Length: 1515
   }
 }
 ```
-
 
 
 
