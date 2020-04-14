@@ -2,15 +2,15 @@
 title: Использование API Microsoft Bookings в Microsoft Graph
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Priority
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: 6159d830656ed898de1e91a4866c74f145cfa0a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ec78e7eb9a79130d233f12f6c68f36985a102873
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508026"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461001"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Использование API Microsoft Bookings в Microsoft Graph
 
