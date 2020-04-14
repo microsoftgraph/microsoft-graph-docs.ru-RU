@@ -1,35 +1,37 @@
 ---
 title: Действие importAppleDeviceIdentityList
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f1629d9ae2ccac4263b2e6586f3ae48241372976
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 444f895caa9d420fb6c1bad55faefc1dcd550d08
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813115"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451192"
 ---
-# <a name="importappledeviceidentitylist-action"></a><span data-ttu-id="5a2f2-103">Действие importAppleDeviceIdentityList</span><span class="sxs-lookup"><span data-stu-id="5a2f2-103">importAppleDeviceIdentityList action</span></span>
+# <a name="importappledeviceidentitylist-action"></a><span data-ttu-id="980f0-103">Действие importAppleDeviceIdentityList</span><span class="sxs-lookup"><span data-stu-id="980f0-103">importAppleDeviceIdentityList action</span></span>
 
-> <span data-ttu-id="5a2f2-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5a2f2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="980f0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="980f0-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="5a2f2-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="5a2f2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="980f0-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="980f0-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="5a2f2-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="5a2f2-106">Not yet documented</span></span>
+> <span data-ttu-id="980f0-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="980f0-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="5a2f2-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="5a2f2-107">Prerequisites</span></span>
-<span data-ttu-id="5a2f2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5a2f2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="980f0-107">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="980f0-107">Not yet documented</span></span>
 
-|<span data-ttu-id="5a2f2-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5a2f2-110">Permission type</span></span>|<span data-ttu-id="5a2f2-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="5a2f2-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="980f0-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="980f0-108">Prerequisites</span></span>
+<span data-ttu-id="980f0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="980f0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="980f0-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="980f0-111">Permission type</span></span>|<span data-ttu-id="980f0-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="980f0-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5a2f2-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5a2f2-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5a2f2-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5a2f2-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="5a2f2-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5a2f2-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5a2f2-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5a2f2-115">Not supported.</span></span>|
-|<span data-ttu-id="5a2f2-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="5a2f2-116">Application</span></span>|<span data-ttu-id="5a2f2-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5a2f2-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="980f0-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="980f0-113">Delegated (work or school account)</span></span>|<span data-ttu-id="980f0-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="980f0-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="980f0-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="980f0-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="980f0-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="980f0-116">Not supported.</span></span>|
+|<span data-ttu-id="980f0-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="980f0-117">Application</span></span>|<span data-ttu-id="980f0-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="980f0-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5a2f2-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5a2f2-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="980f0-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="980f0-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,31 +40,31 @@ ms.locfileid: "42813115"
 POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAppleDeviceIdentities/importAppleDeviceIdentityList
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5a2f2-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="5a2f2-119">Request headers</span></span>
-|<span data-ttu-id="5a2f2-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="5a2f2-120">Header</span></span>|<span data-ttu-id="5a2f2-121">Значение</span><span class="sxs-lookup"><span data-stu-id="5a2f2-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="980f0-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="980f0-120">Request headers</span></span>
+|<span data-ttu-id="980f0-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="980f0-121">Header</span></span>|<span data-ttu-id="980f0-122">Значение</span><span class="sxs-lookup"><span data-stu-id="980f0-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="5a2f2-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="5a2f2-122">Authorization</span></span>|<span data-ttu-id="5a2f2-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5a2f2-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="5a2f2-124">Accept</span><span class="sxs-lookup"><span data-stu-id="5a2f2-124">Accept</span></span>|<span data-ttu-id="5a2f2-125">application/json</span><span class="sxs-lookup"><span data-stu-id="5a2f2-125">application/json</span></span>|
+|<span data-ttu-id="980f0-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="980f0-123">Authorization</span></span>|<span data-ttu-id="980f0-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="980f0-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="980f0-125">Accept</span><span class="sxs-lookup"><span data-stu-id="980f0-125">Accept</span></span>|<span data-ttu-id="980f0-126">application/json</span><span class="sxs-lookup"><span data-stu-id="980f0-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5a2f2-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5a2f2-126">Request body</span></span>
-<span data-ttu-id="5a2f2-127">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5a2f2-127">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="980f0-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="980f0-127">Request body</span></span>
+<span data-ttu-id="980f0-128">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="980f0-128">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="5a2f2-128">В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="5a2f2-128">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="980f0-129">В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="980f0-129">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="5a2f2-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="5a2f2-129">Property</span></span>|<span data-ttu-id="5a2f2-130">Тип</span><span class="sxs-lookup"><span data-stu-id="5a2f2-130">Type</span></span>|<span data-ttu-id="5a2f2-131">Описание</span><span class="sxs-lookup"><span data-stu-id="5a2f2-131">Description</span></span>|
+|<span data-ttu-id="980f0-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="980f0-130">Property</span></span>|<span data-ttu-id="980f0-131">Тип</span><span class="sxs-lookup"><span data-stu-id="980f0-131">Type</span></span>|<span data-ttu-id="980f0-132">Описание</span><span class="sxs-lookup"><span data-stu-id="980f0-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5a2f2-132">importedAppleDeviceIdentities</span><span class="sxs-lookup"><span data-stu-id="5a2f2-132">importedAppleDeviceIdentities</span></span>|<span data-ttu-id="5a2f2-133">Коллекция [импортедаппледевицеидентити](../resources/intune-enrollment-importedappledeviceidentity.md)</span><span class="sxs-lookup"><span data-stu-id="5a2f2-133">[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) collection</span></span>|<span data-ttu-id="5a2f2-134">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="5a2f2-134">Not yet documented</span></span>|
-|<span data-ttu-id="5a2f2-135">овервритеимпортеддевицеидентитиес</span><span class="sxs-lookup"><span data-stu-id="5a2f2-135">overwriteImportedDeviceIdentities</span></span>|<span data-ttu-id="5a2f2-136">Boolean</span><span class="sxs-lookup"><span data-stu-id="5a2f2-136">Boolean</span></span>|<span data-ttu-id="5a2f2-137">Н/Д</span><span class="sxs-lookup"><span data-stu-id="5a2f2-137">Not yet documented</span></span>|
+|<span data-ttu-id="980f0-133">importedAppleDeviceIdentities</span><span class="sxs-lookup"><span data-stu-id="980f0-133">importedAppleDeviceIdentities</span></span>|<span data-ttu-id="980f0-134">Коллекция [импортедаппледевицеидентити](../resources/intune-enrollment-importedappledeviceidentity.md)</span><span class="sxs-lookup"><span data-stu-id="980f0-134">[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) collection</span></span>|<span data-ttu-id="980f0-135">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="980f0-135">Not yet documented</span></span>|
+|<span data-ttu-id="980f0-136">овервритеимпортеддевицеидентитиес</span><span class="sxs-lookup"><span data-stu-id="980f0-136">overwriteImportedDeviceIdentities</span></span>|<span data-ttu-id="980f0-137">Boolean</span><span class="sxs-lookup"><span data-stu-id="980f0-137">Boolean</span></span>|<span data-ttu-id="980f0-138">Н/Д</span><span class="sxs-lookup"><span data-stu-id="980f0-138">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="5a2f2-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="5a2f2-138">Response</span></span>
-<span data-ttu-id="5a2f2-139">При успешном выполнении это действие возвращает `200 OK` код отклика и коллекцию [импортедаппледевицеидентитиресулт](../resources/intune-enrollment-importedappledeviceidentityresult.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5a2f2-139">If successful, this action returns a `200 OK` response code and a [importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) collection in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="980f0-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="980f0-139">Response</span></span>
+<span data-ttu-id="980f0-140">При успешном выполнении это действие возвращает `200 OK` код отклика и коллекцию [импортедаппледевицеидентитиресулт](../resources/intune-enrollment-importedappledeviceidentityresult.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="980f0-140">If successful, this action returns a `200 OK` response code and a [importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) collection in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5a2f2-140">Пример</span><span class="sxs-lookup"><span data-stu-id="5a2f2-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="980f0-141">Пример</span><span class="sxs-lookup"><span data-stu-id="980f0-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="5a2f2-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="5a2f2-141">Request</span></span>
-<span data-ttu-id="5a2f2-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5a2f2-142">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="980f0-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="980f0-142">Request</span></span>
+<span data-ttu-id="980f0-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="980f0-143">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAppleDeviceIdentities/importAppleDeviceIdentityList
 
@@ -91,8 +93,8 @@ Content-length: 782
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="5a2f2-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="5a2f2-143">Response</span></span>
-<span data-ttu-id="5a2f2-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5a2f2-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="980f0-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="980f0-144">Response</span></span>
+<span data-ttu-id="980f0-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="980f0-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -119,7 +121,6 @@ Content-Length: 741
   ]
 }
 ```
-
 
 
 

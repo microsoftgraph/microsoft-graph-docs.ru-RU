@@ -1,35 +1,37 @@
 ---
 title: действие обновления
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d3714a89ac13b90d79a669ba35e7bb8b541cf13
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bf6d9a48b069d7ee7b9bda3b79464cae97311f55
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802113"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457729"
 ---
-# <a name="update-action"></a><span data-ttu-id="74209-103">действие обновления</span><span class="sxs-lookup"><span data-stu-id="74209-103">update action</span></span>
+# <a name="update-action"></a><span data-ttu-id="18799-103">действие обновления</span><span class="sxs-lookup"><span data-stu-id="18799-103">update action</span></span>
 
-> <span data-ttu-id="74209-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="74209-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="18799-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="18799-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="74209-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="74209-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="18799-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="18799-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="74209-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="74209-106">Not yet documented</span></span>
+> <span data-ttu-id="18799-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="18799-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="74209-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="74209-107">Prerequisites</span></span>
-<span data-ttu-id="74209-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="74209-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="18799-107">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="18799-107">Not yet documented</span></span>
 
-|<span data-ttu-id="74209-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="74209-110">Permission type</span></span>|<span data-ttu-id="74209-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="74209-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="18799-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="18799-108">Prerequisites</span></span>
+<span data-ttu-id="18799-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="18799-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="18799-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="18799-111">Permission type</span></span>|<span data-ttu-id="18799-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="18799-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="74209-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="74209-112">Delegated (work or school account)</span></span>|<span data-ttu-id="74209-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="74209-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="74209-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="74209-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="74209-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="74209-115">Not supported.</span></span>|
-|<span data-ttu-id="74209-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="74209-116">Application</span></span>|<span data-ttu-id="74209-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="74209-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="18799-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="18799-113">Delegated (work or school account)</span></span>|<span data-ttu-id="18799-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18799-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="18799-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="18799-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="18799-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="18799-116">Not supported.</span></span>|
+|<span data-ttu-id="18799-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="18799-117">Application</span></span>|<span data-ttu-id="18799-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18799-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="74209-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="74209-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="18799-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="18799-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,33 +40,33 @@ ms.locfileid: "42802113"
 POST /deviceAppManagement/policySets/{policySetId}/update
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="74209-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="74209-119">Request headers</span></span>
-|<span data-ttu-id="74209-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="74209-120">Header</span></span>|<span data-ttu-id="74209-121">Значение</span><span class="sxs-lookup"><span data-stu-id="74209-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="18799-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="18799-120">Request headers</span></span>
+|<span data-ttu-id="18799-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="18799-121">Header</span></span>|<span data-ttu-id="18799-122">Значение</span><span class="sxs-lookup"><span data-stu-id="18799-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="74209-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="74209-122">Authorization</span></span>|<span data-ttu-id="74209-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="74209-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="74209-124">Accept</span><span class="sxs-lookup"><span data-stu-id="74209-124">Accept</span></span>|<span data-ttu-id="74209-125">application/json</span><span class="sxs-lookup"><span data-stu-id="74209-125">application/json</span></span>|
+|<span data-ttu-id="18799-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="18799-123">Authorization</span></span>|<span data-ttu-id="18799-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="18799-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="18799-125">Accept</span><span class="sxs-lookup"><span data-stu-id="18799-125">Accept</span></span>|<span data-ttu-id="18799-126">application/json</span><span class="sxs-lookup"><span data-stu-id="18799-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="74209-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="74209-126">Request body</span></span>
-<span data-ttu-id="74209-127">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="74209-127">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="18799-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="18799-127">Request body</span></span>
+<span data-ttu-id="18799-128">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="18799-128">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="74209-128">В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="74209-128">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="18799-129">В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="18799-129">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="74209-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="74209-129">Property</span></span>|<span data-ttu-id="74209-130">Тип</span><span class="sxs-lookup"><span data-stu-id="74209-130">Type</span></span>|<span data-ttu-id="74209-131">Описание</span><span class="sxs-lookup"><span data-stu-id="74209-131">Description</span></span>|
+|<span data-ttu-id="18799-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="18799-130">Property</span></span>|<span data-ttu-id="18799-131">Тип</span><span class="sxs-lookup"><span data-stu-id="18799-131">Type</span></span>|<span data-ttu-id="18799-132">Описание</span><span class="sxs-lookup"><span data-stu-id="18799-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="74209-132">аддедполицисетитемс</span><span class="sxs-lookup"><span data-stu-id="74209-132">addedPolicySetItems</span></span>|<span data-ttu-id="74209-133">Коллекция [полицисетитем](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="74209-133">[policySetItem](../resources/intune-policyset-policysetitem.md) collection</span></span>|<span data-ttu-id="74209-134">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="74209-134">Not yet documented</span></span>|
-|<span data-ttu-id="74209-135">упдатедполицисетитемс</span><span class="sxs-lookup"><span data-stu-id="74209-135">updatedPolicySetItems</span></span>|<span data-ttu-id="74209-136">Коллекция [полицисетитем](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="74209-136">[policySetItem](../resources/intune-policyset-policysetitem.md) collection</span></span>|<span data-ttu-id="74209-137">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="74209-137">Not yet documented</span></span>|
-|<span data-ttu-id="74209-138">делетедполицисетитемс</span><span class="sxs-lookup"><span data-stu-id="74209-138">deletedPolicySetItems</span></span>|<span data-ttu-id="74209-139">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="74209-139">String collection</span></span>|<span data-ttu-id="74209-140">Н/Д</span><span class="sxs-lookup"><span data-stu-id="74209-140">Not yet documented</span></span>|
-|<span data-ttu-id="74209-141">assignments</span><span class="sxs-lookup"><span data-stu-id="74209-141">assignments</span></span>|<span data-ttu-id="74209-142">Коллекция [полицисетассигнмент](../resources/intune-policyset-policysetassignment.md)</span><span class="sxs-lookup"><span data-stu-id="74209-142">[policySetAssignment](../resources/intune-policyset-policysetassignment.md) collection</span></span>|<span data-ttu-id="74209-143">Н/Д</span><span class="sxs-lookup"><span data-stu-id="74209-143">Not yet documented</span></span>|
+|<span data-ttu-id="18799-133">аддедполицисетитемс</span><span class="sxs-lookup"><span data-stu-id="18799-133">addedPolicySetItems</span></span>|<span data-ttu-id="18799-134">Коллекция [полицисетитем](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="18799-134">[policySetItem](../resources/intune-policyset-policysetitem.md) collection</span></span>|<span data-ttu-id="18799-135">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="18799-135">Not yet documented</span></span>|
+|<span data-ttu-id="18799-136">упдатедполицисетитемс</span><span class="sxs-lookup"><span data-stu-id="18799-136">updatedPolicySetItems</span></span>|<span data-ttu-id="18799-137">Коллекция [полицисетитем](../resources/intune-policyset-policysetitem.md)</span><span class="sxs-lookup"><span data-stu-id="18799-137">[policySetItem](../resources/intune-policyset-policysetitem.md) collection</span></span>|<span data-ttu-id="18799-138">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="18799-138">Not yet documented</span></span>|
+|<span data-ttu-id="18799-139">делетедполицисетитемс</span><span class="sxs-lookup"><span data-stu-id="18799-139">deletedPolicySetItems</span></span>|<span data-ttu-id="18799-140">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="18799-140">String collection</span></span>|<span data-ttu-id="18799-141">Н/Д</span><span class="sxs-lookup"><span data-stu-id="18799-141">Not yet documented</span></span>|
+|<span data-ttu-id="18799-142">assignments</span><span class="sxs-lookup"><span data-stu-id="18799-142">assignments</span></span>|<span data-ttu-id="18799-143">Коллекция [полицисетассигнмент](../resources/intune-policyset-policysetassignment.md)</span><span class="sxs-lookup"><span data-stu-id="18799-143">[policySetAssignment](../resources/intune-policyset-policysetassignment.md) collection</span></span>|<span data-ttu-id="18799-144">Н/Д</span><span class="sxs-lookup"><span data-stu-id="18799-144">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="74209-144">Ответ</span><span class="sxs-lookup"><span data-stu-id="74209-144">Response</span></span>
-<span data-ttu-id="74209-145">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="74209-145">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="18799-145">Ответ</span><span class="sxs-lookup"><span data-stu-id="18799-145">Response</span></span>
+<span data-ttu-id="18799-146">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="18799-146">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="74209-146">Пример</span><span class="sxs-lookup"><span data-stu-id="74209-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="18799-147">Пример</span><span class="sxs-lookup"><span data-stu-id="18799-147">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="74209-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="74209-147">Request</span></span>
-<span data-ttu-id="74209-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="74209-148">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="18799-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="18799-148">Request</span></span>
+<span data-ttu-id="18799-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="18799-149">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/update
 
@@ -120,12 +122,11 @@ Content-length: 1529
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="74209-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="74209-149">Response</span></span>
-<span data-ttu-id="74209-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="74209-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="18799-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="18799-150">Response</span></span>
+<span data-ttu-id="18799-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="18799-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

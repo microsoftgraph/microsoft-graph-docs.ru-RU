@@ -1,35 +1,37 @@
 ---
 title: Создание политики
 description: Создайте новый объект Policy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 83791cf67af354a2a7a086633c9311028c8dda72
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 22a1d700b0f82cb98876e4fadb439ee5010fed12
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802148"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456294"
 ---
-# <a name="create-policyset"></a><span data-ttu-id="9ae83-103">Создание политики</span><span class="sxs-lookup"><span data-stu-id="9ae83-103">Create policySet</span></span>
+# <a name="create-policyset"></a><span data-ttu-id="61316-103">Создание политики</span><span class="sxs-lookup"><span data-stu-id="61316-103">Create policySet</span></span>
 
-> <span data-ttu-id="9ae83-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9ae83-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="61316-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="61316-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="9ae83-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="9ae83-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="61316-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="61316-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="9ae83-106">Создайте новый объект [Policy](../resources/intune-policyset-policyset.md) .</span><span class="sxs-lookup"><span data-stu-id="9ae83-106">Create a new [policySet](../resources/intune-policyset-policyset.md) object.</span></span>
+> <span data-ttu-id="61316-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="61316-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9ae83-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="9ae83-107">Prerequisites</span></span>
-<span data-ttu-id="9ae83-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9ae83-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="61316-107">Создайте новый объект [Policy](../resources/intune-policyset-policyset.md) .</span><span class="sxs-lookup"><span data-stu-id="61316-107">Create a new [policySet](../resources/intune-policyset-policyset.md) object.</span></span>
 
-|<span data-ttu-id="9ae83-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9ae83-110">Permission type</span></span>|<span data-ttu-id="9ae83-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="9ae83-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="61316-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="61316-108">Prerequisites</span></span>
+<span data-ttu-id="61316-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="61316-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="61316-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="61316-111">Permission type</span></span>|<span data-ttu-id="61316-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="61316-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9ae83-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9ae83-112">Delegated (work or school account)</span></span>|<span data-ttu-id="9ae83-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ae83-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="9ae83-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9ae83-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9ae83-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9ae83-115">Not supported.</span></span>|
-|<span data-ttu-id="9ae83-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="9ae83-116">Application</span></span>|<span data-ttu-id="9ae83-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ae83-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="61316-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="61316-113">Delegated (work or school account)</span></span>|<span data-ttu-id="61316-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61316-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="61316-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="61316-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="61316-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="61316-116">Not supported.</span></span>|
+|<span data-ttu-id="61316-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="61316-117">Application</span></span>|<span data-ttu-id="61316-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61316-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9ae83-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9ae83-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="61316-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="61316-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,38 +40,38 @@ ms.locfileid: "42802148"
 POST /deviceAppManagement/policySets
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9ae83-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="9ae83-119">Request headers</span></span>
-|<span data-ttu-id="9ae83-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9ae83-120">Header</span></span>|<span data-ttu-id="9ae83-121">Значение</span><span class="sxs-lookup"><span data-stu-id="9ae83-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="61316-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="61316-120">Request headers</span></span>
+|<span data-ttu-id="61316-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="61316-121">Header</span></span>|<span data-ttu-id="61316-122">Значение</span><span class="sxs-lookup"><span data-stu-id="61316-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9ae83-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="9ae83-122">Authorization</span></span>|<span data-ttu-id="9ae83-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9ae83-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9ae83-124">Accept</span><span class="sxs-lookup"><span data-stu-id="9ae83-124">Accept</span></span>|<span data-ttu-id="9ae83-125">application/json</span><span class="sxs-lookup"><span data-stu-id="9ae83-125">application/json</span></span>|
+|<span data-ttu-id="61316-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="61316-123">Authorization</span></span>|<span data-ttu-id="61316-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="61316-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="61316-125">Accept</span><span class="sxs-lookup"><span data-stu-id="61316-125">Accept</span></span>|<span data-ttu-id="61316-126">application/json</span><span class="sxs-lookup"><span data-stu-id="61316-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9ae83-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9ae83-126">Request body</span></span>
-<span data-ttu-id="9ae83-127">В тексте запроса добавьте представление объекта Policy в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9ae83-127">In the request body, supply a JSON representation for the policySet object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="61316-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="61316-127">Request body</span></span>
+<span data-ttu-id="61316-128">В тексте запроса добавьте представление объекта Policy в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="61316-128">In the request body, supply a JSON representation for the policySet object.</span></span>
 
-<span data-ttu-id="9ae83-128">В следующей таблице приведены свойства, необходимые при создании этого параметра.</span><span class="sxs-lookup"><span data-stu-id="9ae83-128">The following table shows the properties that are required when you create the policySet.</span></span>
+<span data-ttu-id="61316-129">В следующей таблице приведены свойства, необходимые при создании этого параметра.</span><span class="sxs-lookup"><span data-stu-id="61316-129">The following table shows the properties that are required when you create the policySet.</span></span>
 
-|<span data-ttu-id="9ae83-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="9ae83-129">Property</span></span>|<span data-ttu-id="9ae83-130">Тип</span><span class="sxs-lookup"><span data-stu-id="9ae83-130">Type</span></span>|<span data-ttu-id="9ae83-131">Описание</span><span class="sxs-lookup"><span data-stu-id="9ae83-131">Description</span></span>|
+|<span data-ttu-id="61316-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="61316-130">Property</span></span>|<span data-ttu-id="61316-131">Тип</span><span class="sxs-lookup"><span data-stu-id="61316-131">Type</span></span>|<span data-ttu-id="61316-132">Описание</span><span class="sxs-lookup"><span data-stu-id="61316-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9ae83-132">id</span><span class="sxs-lookup"><span data-stu-id="9ae83-132">id</span></span>|<span data-ttu-id="9ae83-133">String</span><span class="sxs-lookup"><span data-stu-id="9ae83-133">String</span></span>|<span data-ttu-id="9ae83-134">Ключ набора политик.</span><span class="sxs-lookup"><span data-stu-id="9ae83-134">Key of the PolicySet.</span></span>|
-|<span data-ttu-id="9ae83-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="9ae83-135">createdDateTime</span></span>|<span data-ttu-id="9ae83-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9ae83-136">DateTimeOffset</span></span>|<span data-ttu-id="9ae83-137">Время создания набора политик.</span><span class="sxs-lookup"><span data-stu-id="9ae83-137">Creation time of the PolicySet.</span></span>|
-|<span data-ttu-id="9ae83-138">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="9ae83-138">lastModifiedDateTime</span></span>|<span data-ttu-id="9ae83-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9ae83-139">DateTimeOffset</span></span>|<span data-ttu-id="9ae83-140">Время последнего изменения набора политик.</span><span class="sxs-lookup"><span data-stu-id="9ae83-140">Last modified time of the PolicySet.</span></span>|
-|<span data-ttu-id="9ae83-141">displayName</span><span class="sxs-lookup"><span data-stu-id="9ae83-141">displayName</span></span>|<span data-ttu-id="9ae83-142">Строка</span><span class="sxs-lookup"><span data-stu-id="9ae83-142">String</span></span>|<span data-ttu-id="9ae83-143">DisplayName набора политик.</span><span class="sxs-lookup"><span data-stu-id="9ae83-143">DisplayName of the PolicySet.</span></span>|
-|<span data-ttu-id="9ae83-144">description</span><span class="sxs-lookup"><span data-stu-id="9ae83-144">description</span></span>|<span data-ttu-id="9ae83-145">String</span><span class="sxs-lookup"><span data-stu-id="9ae83-145">String</span></span>|<span data-ttu-id="9ae83-146">Описание набора политик.</span><span class="sxs-lookup"><span data-stu-id="9ae83-146">Description of the PolicySet.</span></span>|
-|<span data-ttu-id="9ae83-147">status</span><span class="sxs-lookup"><span data-stu-id="9ae83-147">status</span></span>|[<span data-ttu-id="9ae83-148">policySetStatus</span><span class="sxs-lookup"><span data-stu-id="9ae83-148">policySetStatus</span></span>](../resources/intune-policyset-policysetstatus.md)|<span data-ttu-id="9ae83-149">Состояние проверки или назначения набора политик.</span><span class="sxs-lookup"><span data-stu-id="9ae83-149">Validation/assignment status of the PolicySet.</span></span> <span data-ttu-id="9ae83-150">Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="9ae83-150">Possible values are: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.</span></span>|
-|<span data-ttu-id="9ae83-151">errorCode</span><span class="sxs-lookup"><span data-stu-id="9ae83-151">errorCode</span></span>|[<span data-ttu-id="9ae83-152">errorCode</span><span class="sxs-lookup"><span data-stu-id="9ae83-152">errorCode</span></span>](../resources/intune-policyset-errorcode.md)|<span data-ttu-id="9ae83-153">Код ошибки (при возникновении ошибки).</span><span class="sxs-lookup"><span data-stu-id="9ae83-153">Error code if any occured.</span></span> <span data-ttu-id="9ae83-154">Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.</span><span class="sxs-lookup"><span data-stu-id="9ae83-154">Possible values are: `noError`, `unauthorized`, `notFound`, `deleted`.</span></span>|
-|<span data-ttu-id="9ae83-155">гуидеддеплойменттагс</span><span class="sxs-lookup"><span data-stu-id="9ae83-155">guidedDeploymentTags</span></span>|<span data-ttu-id="9ae83-156">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="9ae83-156">String collection</span></span>|<span data-ttu-id="9ae83-157">Теги в руководстве по развертыванию</span><span class="sxs-lookup"><span data-stu-id="9ae83-157">Tags of the guided deployment</span></span>|
-|<span data-ttu-id="9ae83-158">roleScopeTags</span><span class="sxs-lookup"><span data-stu-id="9ae83-158">roleScopeTags</span></span>|<span data-ttu-id="9ae83-159">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="9ae83-159">String collection</span></span>|<span data-ttu-id="9ae83-160">RoleScopeTags набора политик</span><span class="sxs-lookup"><span data-stu-id="9ae83-160">RoleScopeTags of the PolicySet</span></span>|
+|<span data-ttu-id="61316-133">id</span><span class="sxs-lookup"><span data-stu-id="61316-133">id</span></span>|<span data-ttu-id="61316-134">String</span><span class="sxs-lookup"><span data-stu-id="61316-134">String</span></span>|<span data-ttu-id="61316-135">Ключ набора политик.</span><span class="sxs-lookup"><span data-stu-id="61316-135">Key of the PolicySet.</span></span>|
+|<span data-ttu-id="61316-136">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="61316-136">createdDateTime</span></span>|<span data-ttu-id="61316-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="61316-137">DateTimeOffset</span></span>|<span data-ttu-id="61316-138">Время создания набора политик.</span><span class="sxs-lookup"><span data-stu-id="61316-138">Creation time of the PolicySet.</span></span>|
+|<span data-ttu-id="61316-139">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="61316-139">lastModifiedDateTime</span></span>|<span data-ttu-id="61316-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="61316-140">DateTimeOffset</span></span>|<span data-ttu-id="61316-141">Время последнего изменения набора политик.</span><span class="sxs-lookup"><span data-stu-id="61316-141">Last modified time of the PolicySet.</span></span>|
+|<span data-ttu-id="61316-142">displayName</span><span class="sxs-lookup"><span data-stu-id="61316-142">displayName</span></span>|<span data-ttu-id="61316-143">Строка</span><span class="sxs-lookup"><span data-stu-id="61316-143">String</span></span>|<span data-ttu-id="61316-144">DisplayName набора политик.</span><span class="sxs-lookup"><span data-stu-id="61316-144">DisplayName of the PolicySet.</span></span>|
+|<span data-ttu-id="61316-145">description</span><span class="sxs-lookup"><span data-stu-id="61316-145">description</span></span>|<span data-ttu-id="61316-146">String</span><span class="sxs-lookup"><span data-stu-id="61316-146">String</span></span>|<span data-ttu-id="61316-147">Описание набора политик.</span><span class="sxs-lookup"><span data-stu-id="61316-147">Description of the PolicySet.</span></span>|
+|<span data-ttu-id="61316-148">status</span><span class="sxs-lookup"><span data-stu-id="61316-148">status</span></span>|[<span data-ttu-id="61316-149">policySetStatus</span><span class="sxs-lookup"><span data-stu-id="61316-149">policySetStatus</span></span>](../resources/intune-policyset-policysetstatus.md)|<span data-ttu-id="61316-150">Состояние проверки или назначения набора политик.</span><span class="sxs-lookup"><span data-stu-id="61316-150">Validation/assignment status of the PolicySet.</span></span> <span data-ttu-id="61316-151">Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="61316-151">Possible values are: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.</span></span>|
+|<span data-ttu-id="61316-152">errorCode</span><span class="sxs-lookup"><span data-stu-id="61316-152">errorCode</span></span>|[<span data-ttu-id="61316-153">errorCode</span><span class="sxs-lookup"><span data-stu-id="61316-153">errorCode</span></span>](../resources/intune-policyset-errorcode.md)|<span data-ttu-id="61316-154">Код ошибки (при возникновении ошибки).</span><span class="sxs-lookup"><span data-stu-id="61316-154">Error code if any occured.</span></span> <span data-ttu-id="61316-155">Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.</span><span class="sxs-lookup"><span data-stu-id="61316-155">Possible values are: `noError`, `unauthorized`, `notFound`, `deleted`.</span></span>|
+|<span data-ttu-id="61316-156">гуидеддеплойменттагс</span><span class="sxs-lookup"><span data-stu-id="61316-156">guidedDeploymentTags</span></span>|<span data-ttu-id="61316-157">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="61316-157">String collection</span></span>|<span data-ttu-id="61316-158">Теги в руководстве по развертыванию</span><span class="sxs-lookup"><span data-stu-id="61316-158">Tags of the guided deployment</span></span>|
+|<span data-ttu-id="61316-159">roleScopeTags</span><span class="sxs-lookup"><span data-stu-id="61316-159">roleScopeTags</span></span>|<span data-ttu-id="61316-160">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="61316-160">String collection</span></span>|<span data-ttu-id="61316-161">RoleScopeTags набора политик</span><span class="sxs-lookup"><span data-stu-id="61316-161">RoleScopeTags of the PolicySet</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9ae83-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ae83-161">Response</span></span>
-<span data-ttu-id="9ae83-162">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Policy](../resources/intune-policyset-policyset.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="9ae83-162">If successful, this method returns a `201 Created` response code and a [policySet](../resources/intune-policyset-policyset.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="61316-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="61316-162">Response</span></span>
+<span data-ttu-id="61316-163">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Policy](../resources/intune-policyset-policyset.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="61316-163">If successful, this method returns a `201 Created` response code and a [policySet](../resources/intune-policyset-policyset.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9ae83-163">Пример</span><span class="sxs-lookup"><span data-stu-id="9ae83-163">Example</span></span>
+## <a name="example"></a><span data-ttu-id="61316-164">Пример</span><span class="sxs-lookup"><span data-stu-id="61316-164">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9ae83-164">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ae83-164">Request</span></span>
-<span data-ttu-id="9ae83-165">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9ae83-165">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="61316-165">Запрос</span><span class="sxs-lookup"><span data-stu-id="61316-165">Request</span></span>
+<span data-ttu-id="61316-166">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="61316-166">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/policySets
 Content-type: application/json
@@ -90,8 +92,8 @@ Content-length: 317
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9ae83-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ae83-166">Response</span></span>
-<span data-ttu-id="9ae83-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9ae83-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="61316-167">Отклик</span><span class="sxs-lookup"><span data-stu-id="61316-167">Response</span></span>
+<span data-ttu-id="61316-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="61316-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -114,7 +116,6 @@ Content-Length: 489
   ]
 }
 ```
-
 
 
 

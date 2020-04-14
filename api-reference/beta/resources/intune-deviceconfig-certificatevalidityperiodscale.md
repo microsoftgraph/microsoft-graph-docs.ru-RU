@@ -1,31 +1,33 @@
 ---
 title: тип перечисления certificateValidityPeriodScale
 description: Параметры периода действия сертификата.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e56c931da7a3c210ca5609bcab44dac42bf65378
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 41ad2abf67ce646b3ab0355c8f01ed03b367f614
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795682"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453648"
 ---
-# <a name="certificatevalidityperiodscale-enum-type"></a><span data-ttu-id="74699-103">тип перечисления certificateValidityPeriodScale</span><span class="sxs-lookup"><span data-stu-id="74699-103">certificateValidityPeriodScale enum type</span></span>
+# <a name="certificatevalidityperiodscale-enum-type"></a><span data-ttu-id="50c0d-103">тип перечисления certificateValidityPeriodScale</span><span class="sxs-lookup"><span data-stu-id="50c0d-103">certificateValidityPeriodScale enum type</span></span>
 
-> <span data-ttu-id="74699-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="74699-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="50c0d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="50c0d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="74699-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="74699-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="50c0d-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="50c0d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="74699-106">Параметры периода действия сертификата.</span><span class="sxs-lookup"><span data-stu-id="74699-106">Certificate Validity Period Options.</span></span>
+> <span data-ttu-id="50c0d-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="50c0d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="74699-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="74699-107">Members</span></span>
-|<span data-ttu-id="74699-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="74699-108">Member</span></span>|<span data-ttu-id="74699-109">Значение</span><span class="sxs-lookup"><span data-stu-id="74699-109">Value</span></span>|<span data-ttu-id="74699-110">Описание</span><span class="sxs-lookup"><span data-stu-id="74699-110">Description</span></span>|
+<span data-ttu-id="50c0d-107">Параметры периода действия сертификата.</span><span class="sxs-lookup"><span data-stu-id="50c0d-107">Certificate Validity Period Options.</span></span>
+
+## <a name="members"></a><span data-ttu-id="50c0d-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="50c0d-108">Members</span></span>
+|<span data-ttu-id="50c0d-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="50c0d-109">Member</span></span>|<span data-ttu-id="50c0d-110">Значение</span><span class="sxs-lookup"><span data-stu-id="50c0d-110">Value</span></span>|<span data-ttu-id="50c0d-111">Описание</span><span class="sxs-lookup"><span data-stu-id="50c0d-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="74699-111">срок</span><span class="sxs-lookup"><span data-stu-id="74699-111">days</span></span>|<span data-ttu-id="74699-112">нуль</span><span class="sxs-lookup"><span data-stu-id="74699-112">0</span></span>|<span data-ttu-id="74699-113">Срок.</span><span class="sxs-lookup"><span data-stu-id="74699-113">Days.</span></span>|
-|<span data-ttu-id="74699-114">полугод</span><span class="sxs-lookup"><span data-stu-id="74699-114">months</span></span>|<span data-ttu-id="74699-115">1,1</span><span class="sxs-lookup"><span data-stu-id="74699-115">1</span></span>|<span data-ttu-id="74699-116">Полугод.</span><span class="sxs-lookup"><span data-stu-id="74699-116">Months.</span></span>|
-|<span data-ttu-id="74699-117">годе</span><span class="sxs-lookup"><span data-stu-id="74699-117">years</span></span>|<span data-ttu-id="74699-118">2</span><span class="sxs-lookup"><span data-stu-id="74699-118">2</span></span>|<span data-ttu-id="74699-119">Годе.</span><span class="sxs-lookup"><span data-stu-id="74699-119">Years.</span></span>|
+|<span data-ttu-id="50c0d-112">срок</span><span class="sxs-lookup"><span data-stu-id="50c0d-112">days</span></span>|<span data-ttu-id="50c0d-113">нуль</span><span class="sxs-lookup"><span data-stu-id="50c0d-113">0</span></span>|<span data-ttu-id="50c0d-114">Срок.</span><span class="sxs-lookup"><span data-stu-id="50c0d-114">Days.</span></span>|
+|<span data-ttu-id="50c0d-115">полугод</span><span class="sxs-lookup"><span data-stu-id="50c0d-115">months</span></span>|<span data-ttu-id="50c0d-116">1,1</span><span class="sxs-lookup"><span data-stu-id="50c0d-116">1</span></span>|<span data-ttu-id="50c0d-117">Полугод.</span><span class="sxs-lookup"><span data-stu-id="50c0d-117">Months.</span></span>|
+|<span data-ttu-id="50c0d-118">годе</span><span class="sxs-lookup"><span data-stu-id="50c0d-118">years</span></span>|<span data-ttu-id="50c0d-119">2</span><span class="sxs-lookup"><span data-stu-id="50c0d-119">2</span></span>|<span data-ttu-id="50c0d-120">Годе.</span><span class="sxs-lookup"><span data-stu-id="50c0d-120">Years.</span></span>|
 
 
 

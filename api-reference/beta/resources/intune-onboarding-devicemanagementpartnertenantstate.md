@@ -1,34 +1,36 @@
 ---
 title: тип перечисления Девицеманажементпартнертенантстате
 description: Состояние партнера этого клиента.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b3c2ee7c46e98a9fd834a4a3aba6011845cc5ef
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4ca8c8a0263fe3f8672dd66c5ac620765d176f66
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42778717"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455591"
 ---
-# <a name="devicemanagementpartnertenantstate-enum-type"></a><span data-ttu-id="df03d-103">тип перечисления Девицеманажементпартнертенантстате</span><span class="sxs-lookup"><span data-stu-id="df03d-103">deviceManagementPartnerTenantState enum type</span></span>
+# <a name="devicemanagementpartnertenantstate-enum-type"></a><span data-ttu-id="2ac5f-103">тип перечисления Девицеманажементпартнертенантстате</span><span class="sxs-lookup"><span data-stu-id="2ac5f-103">deviceManagementPartnerTenantState enum type</span></span>
 
-> <span data-ttu-id="df03d-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="df03d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="2ac5f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2ac5f-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="df03d-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="df03d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2ac5f-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2ac5f-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="df03d-106">Состояние партнера этого клиента.</span><span class="sxs-lookup"><span data-stu-id="df03d-106">Partner state of this tenant.</span></span>
+> <span data-ttu-id="2ac5f-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2ac5f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="df03d-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="df03d-107">Members</span></span>
-|<span data-ttu-id="df03d-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="df03d-108">Member</span></span>|<span data-ttu-id="df03d-109">Значение</span><span class="sxs-lookup"><span data-stu-id="df03d-109">Value</span></span>|<span data-ttu-id="df03d-110">Описание</span><span class="sxs-lookup"><span data-stu-id="df03d-110">Description</span></span>|
+<span data-ttu-id="2ac5f-107">Состояние партнера этого клиента.</span><span class="sxs-lookup"><span data-stu-id="2ac5f-107">Partner state of this tenant.</span></span>
+
+## <a name="members"></a><span data-ttu-id="2ac5f-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="2ac5f-108">Members</span></span>
+|<span data-ttu-id="2ac5f-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="2ac5f-109">Member</span></span>|<span data-ttu-id="2ac5f-110">Значение</span><span class="sxs-lookup"><span data-stu-id="2ac5f-110">Value</span></span>|<span data-ttu-id="2ac5f-111">Описание</span><span class="sxs-lookup"><span data-stu-id="2ac5f-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="df03d-111">unknown</span><span class="sxs-lookup"><span data-stu-id="df03d-111">unknown</span></span>|<span data-ttu-id="df03d-112">нуль</span><span class="sxs-lookup"><span data-stu-id="df03d-112">0</span></span>|<span data-ttu-id="df03d-113">Состояние партнера неизвестно.</span><span class="sxs-lookup"><span data-stu-id="df03d-113">Partner state is unknown.</span></span>|
-|<span data-ttu-id="df03d-114">выходе</span><span class="sxs-lookup"><span data-stu-id="df03d-114">unavailable</span></span>|<span data-ttu-id="df03d-115">1,1</span><span class="sxs-lookup"><span data-stu-id="df03d-115">1</span></span>|<span data-ttu-id="df03d-116">Партнер недоступен.</span><span class="sxs-lookup"><span data-stu-id="df03d-116">Partner is unavailable.</span></span>|
-|<span data-ttu-id="df03d-117">enabled</span><span class="sxs-lookup"><span data-stu-id="df03d-117">enabled</span></span>|<span data-ttu-id="df03d-118">2</span><span class="sxs-lookup"><span data-stu-id="df03d-118">2</span></span>|<span data-ttu-id="df03d-119">Партнер включен.</span><span class="sxs-lookup"><span data-stu-id="df03d-119">Partner is enabled.</span></span>|
-|<span data-ttu-id="df03d-120">нулем</span><span class="sxs-lookup"><span data-stu-id="df03d-120">terminated</span></span>|<span data-ttu-id="df03d-121">4</span><span class="sxs-lookup"><span data-stu-id="df03d-121">3</span></span>|<span data-ttu-id="df03d-122">Подключение к партнеру завершается.</span><span class="sxs-lookup"><span data-stu-id="df03d-122">Partner connection is terminated.</span></span>|
-|<span data-ttu-id="df03d-123">клоняет</span><span class="sxs-lookup"><span data-stu-id="df03d-123">rejected</span></span>|<span data-ttu-id="df03d-124">4 </span><span class="sxs-lookup"><span data-stu-id="df03d-124">4</span></span>|<span data-ttu-id="df03d-125">Партнерские сообщения отклоняются.</span><span class="sxs-lookup"><span data-stu-id="df03d-125">Partner messages are rejected.</span></span>|
-|<span data-ttu-id="df03d-126">не отвечает</span><span class="sxs-lookup"><span data-stu-id="df03d-126">unresponsive</span></span>|<span data-ttu-id="df03d-127">5 </span><span class="sxs-lookup"><span data-stu-id="df03d-127">5</span></span>|<span data-ttu-id="df03d-128">Партнер не отвечает.</span><span class="sxs-lookup"><span data-stu-id="df03d-128">Partner is unresponsive.</span></span>|
+|<span data-ttu-id="2ac5f-112">unknown</span><span class="sxs-lookup"><span data-stu-id="2ac5f-112">unknown</span></span>|<span data-ttu-id="2ac5f-113">нуль</span><span class="sxs-lookup"><span data-stu-id="2ac5f-113">0</span></span>|<span data-ttu-id="2ac5f-114">Состояние партнера неизвестно.</span><span class="sxs-lookup"><span data-stu-id="2ac5f-114">Partner state is unknown.</span></span>|
+|<span data-ttu-id="2ac5f-115">выходе</span><span class="sxs-lookup"><span data-stu-id="2ac5f-115">unavailable</span></span>|<span data-ttu-id="2ac5f-116">1,1</span><span class="sxs-lookup"><span data-stu-id="2ac5f-116">1</span></span>|<span data-ttu-id="2ac5f-117">Партнер недоступен.</span><span class="sxs-lookup"><span data-stu-id="2ac5f-117">Partner is unavailable.</span></span>|
+|<span data-ttu-id="2ac5f-118">включено</span><span class="sxs-lookup"><span data-stu-id="2ac5f-118">enabled</span></span>|<span data-ttu-id="2ac5f-119">2</span><span class="sxs-lookup"><span data-stu-id="2ac5f-119">2</span></span>|<span data-ttu-id="2ac5f-120">Партнер включен.</span><span class="sxs-lookup"><span data-stu-id="2ac5f-120">Partner is enabled.</span></span>|
+|<span data-ttu-id="2ac5f-121">нулем</span><span class="sxs-lookup"><span data-stu-id="2ac5f-121">terminated</span></span>|<span data-ttu-id="2ac5f-122">4</span><span class="sxs-lookup"><span data-stu-id="2ac5f-122">3</span></span>|<span data-ttu-id="2ac5f-123">Подключение к партнеру завершается.</span><span class="sxs-lookup"><span data-stu-id="2ac5f-123">Partner connection is terminated.</span></span>|
+|<span data-ttu-id="2ac5f-124">клоняет</span><span class="sxs-lookup"><span data-stu-id="2ac5f-124">rejected</span></span>|<span data-ttu-id="2ac5f-125">4 </span><span class="sxs-lookup"><span data-stu-id="2ac5f-125">4</span></span>|<span data-ttu-id="2ac5f-126">Партнерские сообщения отклоняются.</span><span class="sxs-lookup"><span data-stu-id="2ac5f-126">Partner messages are rejected.</span></span>|
+|<span data-ttu-id="2ac5f-127">не отвечает</span><span class="sxs-lookup"><span data-stu-id="2ac5f-127">unresponsive</span></span>|<span data-ttu-id="2ac5f-128">5 </span><span class="sxs-lookup"><span data-stu-id="2ac5f-128">5</span></span>|<span data-ttu-id="2ac5f-129">Партнер не отвечает.</span><span class="sxs-lookup"><span data-stu-id="2ac5f-129">Partner is unresponsive.</span></span>|
 
 
 

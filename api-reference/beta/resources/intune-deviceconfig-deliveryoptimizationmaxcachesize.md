@@ -1,34 +1,36 @@
 ---
 title: Тип ресурса Деливерйоптимизатионмакскачесизе
 description: Максимальные типы размера кэша для оптимизации доставки.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e3029ece8a43d64cf52cda1c6c58da48d0b7d446
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bbc649d4365b0b013ac632b930813c906c231843
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42793403"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456983"
 ---
-# <a name="deliveryoptimizationmaxcachesize-resource-type"></a><span data-ttu-id="4147e-103">Тип ресурса Деливерйоптимизатионмакскачесизе</span><span class="sxs-lookup"><span data-stu-id="4147e-103">deliveryOptimizationMaxCacheSize resource type</span></span>
+# <a name="deliveryoptimizationmaxcachesize-resource-type"></a><span data-ttu-id="8577d-103">Тип ресурса Деливерйоптимизатионмакскачесизе</span><span class="sxs-lookup"><span data-stu-id="8577d-103">deliveryOptimizationMaxCacheSize resource type</span></span>
 
-> <span data-ttu-id="4147e-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4147e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="8577d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8577d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="4147e-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="4147e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8577d-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8577d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="4147e-106">Максимальные типы размера кэша для оптимизации доставки.</span><span class="sxs-lookup"><span data-stu-id="4147e-106">Delivery Optimization max cache size types.</span></span>
+> <span data-ttu-id="8577d-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8577d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4147e-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="4147e-107">Properties</span></span>
-|<span data-ttu-id="4147e-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="4147e-108">Property</span></span>|<span data-ttu-id="4147e-109">Тип</span><span class="sxs-lookup"><span data-stu-id="4147e-109">Type</span></span>|<span data-ttu-id="4147e-110">Описание</span><span class="sxs-lookup"><span data-stu-id="4147e-110">Description</span></span>|
+<span data-ttu-id="8577d-107">Максимальные типы размера кэша для оптимизации доставки.</span><span class="sxs-lookup"><span data-stu-id="8577d-107">Delivery Optimization max cache size types.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="8577d-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="8577d-108">Properties</span></span>
+|<span data-ttu-id="8577d-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="8577d-109">Property</span></span>|<span data-ttu-id="8577d-110">Тип</span><span class="sxs-lookup"><span data-stu-id="8577d-110">Type</span></span>|<span data-ttu-id="8577d-111">Описание</span><span class="sxs-lookup"><span data-stu-id="8577d-111">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="4147e-111">Связи</span><span class="sxs-lookup"><span data-stu-id="4147e-111">Relationships</span></span>
-<span data-ttu-id="4147e-112">Нет</span><span class="sxs-lookup"><span data-stu-id="4147e-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="8577d-112">Связи</span><span class="sxs-lookup"><span data-stu-id="8577d-112">Relationships</span></span>
+<span data-ttu-id="8577d-113">Нет</span><span class="sxs-lookup"><span data-stu-id="8577d-113">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="4147e-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4147e-113">JSON Representation</span></span>
-<span data-ttu-id="4147e-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4147e-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8577d-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8577d-114">JSON Representation</span></span>
+<span data-ttu-id="8577d-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8577d-115">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
