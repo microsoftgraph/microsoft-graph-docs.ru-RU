@@ -1,38 +1,40 @@
 ---
 title: Тип ресурса Андроиддевицеовнерглобалпроксяутоконфиг
 description: Автонастройка глобального прокси-сервера владельца устройств Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c3acf7ef749a95cd17009284d587e4dd41ef4ec
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3cee579dbd5a8dee57b270e117a0c50aca377f94
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797016"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43402987"
 ---
-# <a name="androiddeviceownerglobalproxyautoconfig-resource-type"></a><span data-ttu-id="f62af-103">Тип ресурса Андроиддевицеовнерглобалпроксяутоконфиг</span><span class="sxs-lookup"><span data-stu-id="f62af-103">androidDeviceOwnerGlobalProxyAutoConfig resource type</span></span>
+# <a name="androiddeviceownerglobalproxyautoconfig-resource-type"></a><span data-ttu-id="1cf15-103">Тип ресурса Андроиддевицеовнерглобалпроксяутоконфиг</span><span class="sxs-lookup"><span data-stu-id="1cf15-103">androidDeviceOwnerGlobalProxyAutoConfig resource type</span></span>
 
-> <span data-ttu-id="f62af-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f62af-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="1cf15-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1cf15-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="f62af-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f62af-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1cf15-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1cf15-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="f62af-106">Автонастройка глобального прокси-сервера владельца устройств Android.</span><span class="sxs-lookup"><span data-stu-id="f62af-106">Android Device Owner Global Proxy Auto Config.</span></span>
+> <span data-ttu-id="1cf15-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1cf15-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="1cf15-107">Автонастройка глобального прокси-сервера владельца устройств Android.</span><span class="sxs-lookup"><span data-stu-id="1cf15-107">Android Device Owner Global Proxy Auto Config.</span></span>
 
 
-<span data-ttu-id="f62af-107">Наследуется от [андроиддевицеовнерглобалпрокси](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)</span><span class="sxs-lookup"><span data-stu-id="f62af-107">Inherits from [androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)</span></span>
+<span data-ttu-id="1cf15-108">Наследуется от [андроиддевицеовнерглобалпрокси](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)</span><span class="sxs-lookup"><span data-stu-id="1cf15-108">Inherits from [androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f62af-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="f62af-108">Properties</span></span>
-|<span data-ttu-id="f62af-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="f62af-109">Property</span></span>|<span data-ttu-id="f62af-110">Тип</span><span class="sxs-lookup"><span data-stu-id="f62af-110">Type</span></span>|<span data-ttu-id="f62af-111">Описание</span><span class="sxs-lookup"><span data-stu-id="f62af-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="1cf15-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="1cf15-109">Properties</span></span>
+|<span data-ttu-id="1cf15-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="1cf15-110">Property</span></span>|<span data-ttu-id="1cf15-111">Тип</span><span class="sxs-lookup"><span data-stu-id="1cf15-111">Type</span></span>|<span data-ttu-id="1cf15-112">Описание</span><span class="sxs-lookup"><span data-stu-id="1cf15-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f62af-112">проксяутоконфигурл</span><span class="sxs-lookup"><span data-stu-id="f62af-112">proxyAutoConfigURL</span></span>|<span data-ttu-id="f62af-113">String</span><span class="sxs-lookup"><span data-stu-id="f62af-113">String</span></span>|<span data-ttu-id="f62af-114">URL-адрес автоматической настройки прокси-сервера</span><span class="sxs-lookup"><span data-stu-id="f62af-114">The proxy auto-config URL</span></span>|
+|<span data-ttu-id="1cf15-113">проксяутоконфигурл</span><span class="sxs-lookup"><span data-stu-id="1cf15-113">proxyAutoConfigURL</span></span>|<span data-ttu-id="1cf15-114">String</span><span class="sxs-lookup"><span data-stu-id="1cf15-114">String</span></span>|<span data-ttu-id="1cf15-115">URL-адрес автоматической настройки прокси-сервера</span><span class="sxs-lookup"><span data-stu-id="1cf15-115">The proxy auto-config URL</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="f62af-115">Связи</span><span class="sxs-lookup"><span data-stu-id="f62af-115">Relationships</span></span>
-<span data-ttu-id="f62af-116">Нет</span><span class="sxs-lookup"><span data-stu-id="f62af-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="1cf15-116">Связи</span><span class="sxs-lookup"><span data-stu-id="1cf15-116">Relationships</span></span>
+<span data-ttu-id="1cf15-117">Нет</span><span class="sxs-lookup"><span data-stu-id="1cf15-117">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="f62af-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f62af-117">JSON Representation</span></span>
-<span data-ttu-id="f62af-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f62af-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1cf15-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1cf15-118">JSON Representation</span></span>
+<span data-ttu-id="1cf15-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1cf15-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig"
