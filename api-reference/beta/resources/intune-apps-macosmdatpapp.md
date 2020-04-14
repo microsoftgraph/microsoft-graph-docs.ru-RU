@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Макосмдатпапп
 description: Содержит свойства и унаследованные свойства для приложения macOS защитника Advanced Threat protection (МДАТП).
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c38066a2d46d504f0f09101bc7e2e6f96da7cd3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0fd295886b5685d3b3da71e114bda116d2acc542
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798037"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458881"
 ---
 # <a name="macosmdatpapp-resource-type"></a>Тип ресурса Макосмдатпапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

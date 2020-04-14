@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Виндовсусераккаунтконтролсеттингс
 description: Возможные значения параметров управления учетными записями пользователей Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c8ff424dbb41356bd732fc2e7b100073b6df2c52
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8e2523949829f858064c9dc7bceca2cd55cf9b2a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786146"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456940"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>тип перечисления Виндовсусераккаунтконтролсеттингс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

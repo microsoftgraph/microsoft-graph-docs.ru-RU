@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Граупполиципресентатионвалуелист
 description: Сущность представляет коллекцию пар "имя-значение" представления списка в определении политики.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 992bf41203e956a40ddb14a95ecf3c87b4abbb74
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d039d96238f3b76dbfbc3df9fbc55dbe3a5f6612
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782899"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455136"
 ---
 # <a name="grouppolicypresentationvaluelist-resource-type"></a>Тип ресурса Граупполиципресентатионвалуелист
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

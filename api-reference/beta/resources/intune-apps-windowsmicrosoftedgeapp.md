@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Виндовсмикрософтеджеапп
 description: Содержит свойства и наследуемые свойства для приложения Microsoft EDGE в Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5308b9773aaad5cd6b0156417245730381fc1a5d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2c9f6b487803a26781bc9b9aafeabc16fe29f173
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797516"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450761"
 ---
 # <a name="windowsmicrosoftedgeapp-resource-type"></a>Тип ресурса Виндовсмикрософтеджеапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

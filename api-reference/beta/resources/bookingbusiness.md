@@ -2,19 +2,19 @@
 title: Тип ресурса Букингбусинесс
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 314228247131386363da89272d459eb68e022e6c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2ba6da0291c0a2153908d14e74deeb83c6c138d5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508012"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453771"
 ---
 # <a name="bookingbusiness-resource-type"></a>Тип ресурса Букингбусинесс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
@@ -37,7 +37,7 @@ ms.locfileid: "42508012"
 |[Список служб](../api/bookingbusiness-list-services.md) |Коллекция [букингсервице](bookingservice.md)| Получение коллекции объектов Букингсервице.|
 |[Создание Букингстаффмембер](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Создание нового Букингстаффмембер путем отправки в коллекцию Стаффмемберс.|
 |[Список Стаффмемберс](../api/bookingbusiness-list-staffmembers.md) |Коллекция [букингстаффмембер](bookingstaffmember.md)| Получение коллекции объектов Букингстаффмембер.|
-|[Список calendarView](../api/bookingbusiness-list-calendarview.md)|Коллекция [букингаппоинтмент](bookingappointment.md)|Получение коллекции объектов **букингаппоинтмент** , выполняемых в указанном диапазоне дат.|
+|[Список экземпляров calendarView](../api/bookingbusiness-list-calendarview.md)|Коллекция [букингаппоинтмент](bookingappointment.md)|Получение коллекции объектов **букингаппоинтмент** , выполняемых в указанном диапазоне дат.|
 |[publish](../api/bookingbusiness-publish.md)|Нет|Сделайте страницу планирования для этого бизнеса доступной внешним клиентам. Задайте для свойства **публикации** значение true, а свойству **публикурл** — URL-адрес страницы планирования.|
 |[unpublish](../api/bookingbusiness-unpublish.md)|Нет| Сделайте страницу планирования этого бизнеса недоступной для внешних клиентов. Задайте для свойства **publishs** значение false, а свойству **публикурл** — значение null.|
 
@@ -51,7 +51,7 @@ ms.locfileid: "42508012"
 |displayName|Строка|Название организации, которая взаимодействует с клиентами. Это имя отображается в верхней части страницы "планирование бизнеса".|
 |email|String|Адрес электронной почты для бизнеса.|
 |id|Строка|Уникальный программный идентификатор для бизнеса. Только для чтения.|
-|Публикации|Логический|Страница планирования стала доступна внешним клиентам. Для задания этого свойства используйте действия " **опубликовать** " и " **отменить публикацию** ". Только для чтения.|
+|Публикации|Логическое|Страница планирования стала доступна внешним клиентам. Для задания этого свойства используйте действия " **опубликовать** " и " **отменить публикацию** ". Только для чтения.|
 |phone|String|Номер телефона для бизнеса. Свойство **Phone** вместе с **адресами** и **вебситеурл**отображается в нижнем колонтитуле страницы бизнес-планирования.|
 |публикурл|String|URL-адрес страницы расписания, который задается после [публикации](../api/bookingbusiness-publish.md) или [отмены публикации](../api/bookingbusiness-unpublish.md) страницы. Только для чтения.|
 |счедулингполици|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Указывает, как можно создавать резервирования для этого бизнеса.|

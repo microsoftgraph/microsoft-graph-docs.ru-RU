@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса uri
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3af5d554796ebb84030350cf533f71e706db9fc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 53eba050c561a1211c9fb98b5ffe63e9f9b1c609
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767381"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449598"
 ---
 # <a name="uri-resource-type"></a>Тип ресурса uri
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

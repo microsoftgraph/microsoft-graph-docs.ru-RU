@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Манажеддевицемобилеаппконфигуратионполицисетитем
 description: Класс, содержащий свойства, используемые для конфигурации мобильного приложения для управляемых устройств Полицисетитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b29bd33dbf68d88c2cf729809657cb2f657d623
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e6ee039f0d92b2ea435e3662c98a2202fb7420e0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775733"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458351"
 ---
 # <a name="manageddevicemobileappconfigurationpolicysetitem-resource-type"></a>Тип ресурса Манажеддевицемобилеаппконфигуратионполицисетитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

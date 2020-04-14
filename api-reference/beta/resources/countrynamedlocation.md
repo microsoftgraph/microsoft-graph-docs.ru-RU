@@ -2,19 +2,19 @@
 title: Тип ресурса Каунтринамедлокатион
 description: Представляет имя расположения Azure Active Directory, определенное странами и регионами. Именованные расположения — это настраиваемые правила, определяющие сетевые расположения, которые можно использовать в политике условного доступа.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0adfe767c23a8f6fda5d44a2520ee307c0499bd1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0683c967d56303cb092b7300e50312ab329ea4b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507375"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458035"
 ---
 # <a name="countrynamedlocation-resource-type"></a>Тип ресурса Каунтринамедлокатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "42507375"
 |createdDateTime|DateTimeOffset|Тип timestamp представляет дату и время создания расположения с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
 |displayName|Строка|Удобное для человека имя расположения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
 |id|String|Идентификатор объекта Намедлокатион. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
-|инклудеункновнкаунтриесандрегионс|Логический|Значение true, если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
+|инклудеункновнкаунтриесандрегионс|Логическое|Значение true, если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
 |modifiedDateTime|DateTimeOffset|Тип timestamp представляет дату и время последнего изменения расположения с использованием формата ISO 8601, которое всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
 
 ## <a name="relationships"></a>Связи

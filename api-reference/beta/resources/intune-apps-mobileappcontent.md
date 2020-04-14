@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса mobileAppContent
 description: Содержит свойства контента для определенной версии приложения. Каждому объекту mobileAppContent может соответствовать несколько объектов mobileAppContentFile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5cc1888288809812b0b2af533641fd61161cee08
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 96058f7af6bdf375ffdc2a6df4558afd96145627
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797848"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458585"
 ---
 # <a name="mobileappcontent-resource-type"></a>Тип ресурса mobileAppContent
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

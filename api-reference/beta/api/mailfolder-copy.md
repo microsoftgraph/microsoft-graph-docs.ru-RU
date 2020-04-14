@@ -1,20 +1,20 @@
 ---
 title: 'mailFolder: copy'
 description: Копирование папки почты со всем ее содержимым в другую папку почты.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 807ab04b53dd00739ae8949b59461ea47027d8f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ebaa9147fd909c46f55ce569cfe328167a3908f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457099"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457161"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,10 +43,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 
 | Заголовок | Значение |
 |:-------|:------|
-| Авторизация | `Bearer {token}`. Обязательный элемент. |
+| Авторизация | `Bearer {token}`. Обязательно. |
 | Content-Type | `application/json`. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 

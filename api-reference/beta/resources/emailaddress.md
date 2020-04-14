@@ -2,19 +2,19 @@
 title: Тип ресурса emailAddress
 description: Представляет имя и SMTP-адрес экземпляра сущности, например, получателя сообщения или владельца календаря.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e0df635fb930816fa29b0d7f75a2075759a4c54d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ba6a1d67db75ce5c08654d74e959e08d529a0e7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499563"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457070"
 ---
 # <a name="emailaddress-resource-type"></a>Тип ресурса emailAddress
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

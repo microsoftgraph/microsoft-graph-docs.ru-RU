@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Иослобапппровисионингконфигуратионполицисетитем
 description: Класс, содержащий свойства, используемые для настройки подготовки бизнес-приложений iOS Полицисетитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bcdb9b02e7470f12dd4b69689d877d15ac9baf2b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7b58d4a68f3324f103cd2a792a5b202eb2ea53d4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775789"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458405"
 ---
 # <a name="ioslobappprovisioningconfigurationpolicysetitem-resource-type"></a>Тип ресурса Иослобапппровисионингконфигуратионполицисетитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

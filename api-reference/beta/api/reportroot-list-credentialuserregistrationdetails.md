@@ -2,19 +2,19 @@
 title: Список Кредентиалусеррегистратиондетаилс
 description: Получение списка объектов Кредентиалусеррегистратиондетаилс для определенного клиента.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 4759e33d3c998f63748c6a1a90088636100bb3e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7f530832a3b256dacf094e59f1193b096e5782dc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453942"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455710"
 ---
 # <a name="list-credentialuserregistrationdetails"></a>Список Кредентиалусеррегистратиондетаилс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -59,7 +59,7 @@ GET /reports/credentialUserRegistrationDetails
 | Authorization | Bearer {token} |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

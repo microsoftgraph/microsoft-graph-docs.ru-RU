@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса iosHomeScreenPage
 description: Страница, содержащая приложения и папки с начального экрана
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1d2316f42356bb5b7cfe642bdcdf1712e4bcff61
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7b0190b31f58ee5532fd1d0f3e3459e552bb00b5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790624"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455143"
 ---
 # <a name="ioshomescreenpage-resource-type"></a>Тип ресурса iosHomeScreenPage
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

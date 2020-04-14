@@ -1,18 +1,20 @@
 ---
 title: Удаление Виндовсдефендераппликатионконтролсупплементалполици
 description: Удаляет объект Виндовсдефендераппликатионконтролсупплементалполици.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 93951b4011ef9ab1e1faf32e0894f954b96e5347
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3361d7752520f9dc9873e6fad6c90dea8e66becd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800069"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455328"
 ---
 # <a name="delete-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Удаление Виндовсдефендераппликатионконтролсупплементалполици
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42800069"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +47,7 @@ DELETE /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplication
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -64,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/wdacSupplementalPoli
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

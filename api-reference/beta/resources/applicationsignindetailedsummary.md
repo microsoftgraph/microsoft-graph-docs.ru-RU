@@ -2,19 +2,19 @@
 title: Тип ресурса Аппликатионсигниндетаиледсуммари — API Microsoft Graph
 description: Представляет подробные сведения о входе в приложение.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 118d26e6d46e5b64861a041eec12d03bea533552
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 754a7f69b4f38fa101fe2fe5c349e089ae25c457
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508277"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455285"
 ---
 # <a name="applicationsignindetailedsummary-resource-type"></a>Тип ресурса Аппликатионсигниндетаиледсуммари
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса "политика"
 description: Класс, содержащий свойства, используемые для объекта Policy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d50b59deb24bba2e10e6060a46b41e435b779f4a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 845f353a7eb1f5fd95e460a68f23404b88b7a0b5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775207"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458330"
 ---
 # <a name="policyset-resource-type"></a>Тип ресурса "политика"
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

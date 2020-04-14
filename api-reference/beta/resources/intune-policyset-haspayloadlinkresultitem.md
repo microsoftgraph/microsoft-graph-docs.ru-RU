@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Хаспайлоадлинкресултитем
 description: Класс, содержащий результат действия Хаспайлоадлинкс.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46568e386c2896db307f78cc12205c115605a76e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3194dc0e7c1f154dcb61ab4f4731111a87fefe9d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775908"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458412"
 ---
 # <a name="haspayloadlinkresultitem-resource-type"></a>Тип ресурса Хаспайлоадлинкресултитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,7 +26,7 @@ ms.locfileid: "42775908"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |пайлоадид|String|Ключ полезных данных в формате GUID.|
-|хаслинк|Логический|Указывает, содержит ли полезная нагрузка какую бы то ни было ссылку.|
+|хаслинк|Логическое|Указывает, содержит ли полезная нагрузка какую бы то ни было ссылку.|
 |error|String|Сведения об исключении указывают на успешность проверки этого элемента. Пустая строка без ошибки.|
 |sources|Коллекция [девицеандаппманажементассигнментсаурце](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Причина, по которой получена ссылка.|
 

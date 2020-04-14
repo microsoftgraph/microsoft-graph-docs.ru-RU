@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса deviceEnrollmentPlatformRestrictionsConfiguration
 description: Настройка регистрации устройств, которая ограничит типы устройств, которые может регистрировать пользователь
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e89a96a111399310a264ff3c9c6f91dca35cf9ae
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 86c8b1a18a8a76b639b5ddc366112f0861a75e72
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42779445"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455122"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestrictionsConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

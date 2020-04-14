@@ -1,18 +1,20 @@
 ---
 title: Создание ГраупполиципресентатионвалуедеЦимал
 description: Создание нового объекта ГраупполиципресентатионвалуедеЦимал.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 87c88f69dc0759b154f8f4ffc7d3d32b6a8fb787
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a494b9f45a33d8fd8ad8207c6c798ad0bea5fd03
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803976"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456569"
 ---
 # <a name="create-grouppolicypresentationvaluedecimal"></a>Создание ГраупполиципресентатионвалуедеЦимал
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,9 +27,9 @@ ms.locfileid: "42803976"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +46,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта ГраупполиципресентатионвалуедеЦимал в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании ГраупполиципресентатионвалуедеЦимал.
@@ -91,7 +93,6 @@ Content-Length: 264
   "value": 5
 }
 ```
-
 
 
 

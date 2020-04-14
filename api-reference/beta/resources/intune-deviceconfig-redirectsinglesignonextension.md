@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Редиректсинглесигнонекстенсион
 description: Представляет расширение единого входа Apple.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9e2acb6e884b0ba64419e6997e9a8fbfd94024b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3ada6f4561112fdb572e3bf6a7b74eff7a333aae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787630"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449699"
 ---
 # <a name="redirectsinglesignonextension-resource-type"></a>Тип ресурса Редиректсинглесигнонекстенсион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

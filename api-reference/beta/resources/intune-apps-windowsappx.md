@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса windowsAppX
 description: Содержит свойства и наследуемые свойства для бизнес-приложений Windows AppX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55be61872a8cf037d937effcd62e33701c18351c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ee43f5bacc8dcc91628d236eaa100783e4a22578
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797537"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450807"
 ---
 # <a name="windowsappx-resource-type"></a>Тип ресурса windowsAppX
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

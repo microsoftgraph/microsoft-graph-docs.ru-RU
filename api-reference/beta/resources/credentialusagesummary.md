@@ -2,19 +2,19 @@
 title: Тип ресурса Кредентиалусажесуммари
 description: Представляет текущее состояние того, сколько пользователей в вашей организации используют возможности самостоятельного сброса пароля.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 17fc4535e5132b6bf6c2f6eab4a94b5a58ef9bb1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 736575ba8958a45cad76f7142967c2a629b0732a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507354"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458028"
 ---
 # <a name="credentialusagesummary-resource-type"></a>Тип ресурса Кредентиалусажесуммари
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,9 +30,9 @@ ms.locfileid: "42507354"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| аусмесод | строка | Представляет способ проверки подлинности, используемый пользователем. Возможные значения `email`:, `mobileSMS`, `mobileCall` `officePhone`,, `securityQuestion` (только для самостоятельного сброса пароля), `appNotification` `appCode`и `alternateMobileCall` (поддерживается только для регистрации). |
+| аусмесод | string | Представляет способ проверки подлинности, используемый пользователем. Возможные значения `email`:, `mobileSMS`, `mobileCall` `officePhone`,, `securityQuestion` (только для самостоятельного сброса пароля), `appNotification` `appCode`и `alternateMobileCall` (поддерживается только для регистрации). |
 | фаилуреактивитикаунт | Int64 | Предоставляет количество неудачных сбросов или регистрационных данных. |
-| состав | строка | Определяет компонент для отчета. Возможные значения: `registration` и `reset`. |
+| состав | string | Определяет компонент для отчета. Возможные значения: `registration` и `reset`. |
 | id | String | Уникальный идентификатор действия. Только для чтения. |
 | сукцессфулактивитикаунт | Int64 | Предоставляет количество успешных регистраций или сбросов. |
 

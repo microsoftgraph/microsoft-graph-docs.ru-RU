@@ -2,19 +2,19 @@
 title: Создание outlookTaskFolder
 description: Создайте папку задач в группе задач по умолчанию (`My Tasks`) почтового ящика пользователя.
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fb6d3e6c66d39bd94c108a3b091f53b742da10e9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63662dffac9cb36031efd11cac76eb8bd23b0da1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456060"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456202"
 ---
 # <a name="create-outlooktaskfolder"></a>Создание outlookTaskFolder
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [outlookTaskFolder](../resources/outlooktaskfolder.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

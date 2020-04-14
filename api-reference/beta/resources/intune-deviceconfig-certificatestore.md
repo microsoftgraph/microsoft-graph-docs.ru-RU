@@ -1,18 +1,20 @@
 ---
 title: тип перечисления certificateStore
 description: Типы CertificateStore
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c0bf46ba0bed6def53e8894bba02effc18e26c18
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4dc148fa09a891cb132098917fbe11283be0e7ae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795689"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453614"
 ---
 # <a name="certificatestore-enum-type"></a>тип перечисления certificateStore
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

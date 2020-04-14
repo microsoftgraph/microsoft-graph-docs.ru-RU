@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса deviceActionResult
 description: Результат действия с устройством
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c187a8b40fcafc9e79331544cb1df468012e79e4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0f0e6612eccf309cc03dea51c50dfcf06d1b6567
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785016"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456880"
 ---
 # <a name="deviceactionresult-resource-type"></a>Тип ресурса deviceActionResult
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

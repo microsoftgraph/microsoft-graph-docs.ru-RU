@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Мдмвиндовсинформатионпротектионполициполицисетитем
 description: Класс, содержащий свойства, используемые для политики Windows Information Protection для MDM Полицисетитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 831acc3523af7a2e51d9a11652e8ba5137fc8953
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3f9c94479cc192fb0871c50974d24aa9e49f68f5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775670"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458344"
 ---
 # <a name="mdmwindowsinformationprotectionpolicypolicysetitem-resource-type"></a>Тип ресурса Мдмвиндовсинформатионпротектионполициполицисетитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

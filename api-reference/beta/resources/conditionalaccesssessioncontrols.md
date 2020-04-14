@@ -2,19 +2,19 @@
 title: Тип ресурса Кондитионалакцесссессионконтролс
 description: Представляет сложный тип элементов управления сеанса, который принудительно применяется после входа.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fe9d3f469b088611c41e006de128a2c695074657
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 13e1bc5b7f042634f1e4d2c9384c88fab5b96b29
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507515"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450820"
 ---
 # <a name="conditionalaccesssessioncontrols-resource-type"></a>Тип ресурса Кондитионалакцесссессионконтролс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

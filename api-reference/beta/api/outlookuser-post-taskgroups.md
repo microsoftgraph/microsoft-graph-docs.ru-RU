@@ -2,19 +2,19 @@
 title: Создание outlookTaskGroup
 description: Создайте группу задач Outlook в почтовом ящике пользователя.
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 19a04ff22ff569dc0f277e3ff434143d3fce4ab2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ed70266ccd093128fa3d3f48c8999f7b615a759c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456049"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456187"
 ---
 # <a name="create-outlooktaskgroup"></a>Создание outlookTaskGroup
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [outlookTaskGroup](../resources/outlooktaskgroup.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

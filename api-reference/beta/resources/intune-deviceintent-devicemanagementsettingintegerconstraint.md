@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеманажементсеттингинтежерконстраинт
 description: Ограничение, ограничивающее диапазон допустимых значений для параметра целого числа
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc06c695ff9ad53a44a8218a64c3d6254db76203
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e5cd1778ca89ad02fa564ed6e57c3e14744635f0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785311"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453367"
 ---
 # <a name="devicemanagementsettingintegerconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингинтежерконстраинт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

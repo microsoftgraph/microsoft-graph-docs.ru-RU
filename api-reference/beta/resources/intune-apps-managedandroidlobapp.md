@@ -1,18 +1,20 @@
 ---
 title: managedAndroidLobApp resource type
 description: Содержит свойства, в том числе унаследованные, для управляемых бизнес-приложений Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f017068696e065309b842ec021b508bead14494
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6b8b720537c9fbf4e793d3466ab060f9a16fbe95
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797988"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458768"
 ---
 # <a name="managedandroidlobapp-resource-type"></a>managedAndroidLobApp resource type
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -3,14 +3,14 @@ title: Создание события
 description: Создайте событие в календаре пользователя по умолчанию или указанном календаре.
 localization_priority: Normal
 doc_type: apiPageType
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 5c5e5d3e8019bc7820692caf173d3d190f769246
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 82672ec05fbee9645af7a257d309d16d6ad5d519
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639904"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458129"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -245,7 +245,7 @@ Content-length: 2197
 ```
 
 
-### <a name="example-2-create-an-event-that-occurs-in-multiple-locations"></a>Пример 2: создание события, которое происходит в нескольких расположениях
+### <a name="example-2-create-an-event-that-occurs-in-multiple-locations"></a>Пример 2. Создание события, которое происходит в нескольких местах
 
 #### <a name="request"></a>Запрос
 В следующем примере задаются 3 расположения, где организатор и участники могут посетить мероприятие.
@@ -832,7 +832,7 @@ Content-type: application/json
 ### <a name="example-5-create-and-enable-an-event-as-an-online-meeting"></a>Пример 5: создание и включение события в качестве собрания по сети
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса, который создает событие и включает его как собрание по сети. Использует заголовок запроса `Prefer: outlook.timezone`, чтобы указать часовой пояс для параметров времени **start** и **end** в отклике.
+Вот пример запроса, который создает событие и включает его в качестве онлайн-встречи. Использует заголовок запроса `Prefer: outlook.timezone`, чтобы указать часовой пояс для параметров времени **start** и **end** в отклике.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

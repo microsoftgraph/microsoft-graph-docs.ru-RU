@@ -1,18 +1,20 @@
 ---
 title: Функция Експортдевицеандаппманажементдата
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93c80b33a6598cd79d1f203a291cf61ff9f9d949
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e482edf33be72a2b01304b0c189ef6189428916a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800587"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447545"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>Функция Експортдевицеандаппманажементдата
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -29,7 +31,7 @@ ms.locfileid: "42800587"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложений||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,7 +51,7 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -88,7 +90,6 @@ Content-Length: 143
   }
 }
 ```
-
 
 
 

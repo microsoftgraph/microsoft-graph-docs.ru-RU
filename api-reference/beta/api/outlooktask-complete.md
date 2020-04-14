@@ -2,19 +2,19 @@
 title: 'outlookTask: завершено'
 description: 'Выполните задачу Outlook, которая устанавливает для свойства **комплетеддатетиме** текущую дату. '
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: afe7f34d634a52c369916ca5acc68c05a1b6030c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2eb50c7f4437ebbae0f2b2778869bb6aef130105
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456191"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449795"
 ---
 # <a name="outlooktask-complete"></a>outlookTask: завершено
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Онпременкриптедпайлоад
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: be5152f0467ea3630d6aeb24534dd149fbc74447
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: edbd98aa1dd2cd357603bb949e753e3df0024f1d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774787"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447995"
 ---
 # <a name="onpremencryptedpayload-resource-type"></a>Тип ресурса Онпременкриптедпайлоад
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

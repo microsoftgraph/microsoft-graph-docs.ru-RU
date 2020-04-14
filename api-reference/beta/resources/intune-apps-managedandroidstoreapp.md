@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса managedAndroidStoreApp
 description: Содержит свойства, в том числе унаследованные, для приложений из магазина Android, которыми вы можете управлять с помощью политики защиты приложений Intune.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e6f190d6a31f357ec624e57f0a39974a687ec6f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 215fc99c6245089600841e072a967e6d7d786b8d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797981"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458761"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>Тип ресурса managedAndroidStoreApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

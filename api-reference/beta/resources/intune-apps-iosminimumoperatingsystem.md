@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса iosMinimumOperatingSystem
 description: Содержит свойства для минимальной версии операционной системы, необходимой для мобильного приложения iOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0fb9c8d60f7ef8b50412824d8d786e596a339a4a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b3cdbf38ada21388f09aa95eed0b59fce0faf47a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798107"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459007"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Тип ресурса iosMinimumOperatingSystem
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,12 +25,12 @@ ms.locfileid: "42798107"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|v8_0|Логический|Версия 8.0 или выше.|
-|v9_0|Логический|Версия 9.0 или выше.|
-|v10_0|Логический|Версия 10.0 или выше.|
+|v8_0|Логическое|Версия 8.0 или выше.|
+|v9_0|Логическое|Версия 9.0 или выше.|
+|v10_0|Логическое|Версия 10.0 или выше.|
 |v11_0|Boolean|Версия 11.0 или выше.|
-|v12_0|Логический|Версия 12,0 или более поздняя.|
-|v13_0|Логический|Версия 13,0 или более поздняя.|
+|v12_0|Логическое|Версия 12,0 или более поздняя.|
+|v13_0|Логическое|Версия 13,0 или более поздняя.|
 
 ## <a name="relationships"></a>Связи
 Нет

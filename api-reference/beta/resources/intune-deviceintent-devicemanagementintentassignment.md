@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеманажементинтентассигнмент
 description: Объект назначения намерения
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dec487feeb8dff155b2f74e94d616399ba659669
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 663fbd0a98f8eae9b324c34c064f181f779a958c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785444"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455674"
 ---
 # <a name="devicemanagementintentassignment-resource-type"></a>Тип ресурса Девицеманажементинтентассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

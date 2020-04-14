@@ -2,19 +2,19 @@
 title: Проверки доступа Azure AD
 description: Вы можете использовать обзоры Azure AD, чтобы настроить однократные или повторяющиеся проверки доступа для подтверждения прав доступа пользователя.
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 536293390da403c4c8375d551bda8643f3ffb9dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3cec4535474fcb4dcff9d9fd14986f9b541fc4f9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508466"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450851"
 ---
 # <a name="azure-ad-access-reviews"></a>Проверки доступа Azure AD
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

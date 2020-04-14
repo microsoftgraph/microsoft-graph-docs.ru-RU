@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Мдмаусорити
 description: Центр управления мобильными устройствами.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b844f35e3116c0aeca82bb31e9fbd799f58732cf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c181d1943a9fdf72ef4c3757e6797bf0b64bb73b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42778318"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455569"
 ---
 # <a name="mdmauthority-enum-type"></a>тип перечисления Мдмаусорити
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42778318"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Неизвестно|
+|unknown|нуль|Unknown|
 |корпоративного|1,1|Intune|
 |SCCM|2|SCCM|
 |Office365|4|Office365|

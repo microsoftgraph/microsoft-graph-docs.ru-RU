@@ -1,20 +1,20 @@
 ---
 title: 'message: replyAll'
 description: 'Ответить всем получателям сообщения, указав комментарий и изменив все обновляемые свойства '
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 49065615cc34d6f6d09c863aac213344ef743968
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53d28496fbb0b82732d4d3aedecf6d9de62199ae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456896"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448503"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

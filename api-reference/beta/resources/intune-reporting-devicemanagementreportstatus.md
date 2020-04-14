@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Девицеманажементрепортстатус
 description: Возможные состояния, связанные с созданным отчетом
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c5578c11ae322fd1745cb5ed5d2f74091997be65
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9f7ab2225d862dc14d1687e286cc71681988f0f8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772309"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453196"
 ---
 # <a name="devicemanagementreportstatus-enum-type"></a>тип перечисления Девицеманажементрепортстатус
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

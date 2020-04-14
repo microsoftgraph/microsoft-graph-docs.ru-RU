@@ -2,15 +2,15 @@
 title: Обновление ипнамедлокатион
 description: Обновление свойств объекта Ипнамедлокатион.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 50ae9a0e1523a625b2deaf971e9031a1e2ea1bb1
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: d31b6a91d052b0b8f717d5696ba56e765a2788cc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062279"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458144"
 ---
 # <a name="update-ipnamedlocation"></a>Обновление Ипнамедлокатион
 
@@ -53,7 +53,7 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |displayName|String|Удобное для человека имя расположения.|
 |ипранжес|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате IPv4 CIDR (1.2.3.4/32) или любом допустимом формате IPv6 из IETF RFC5962.|
-|Доверять|Boolean|Значение, `true` если это расположение явно доверенное.|
+|Доверять|Логическое|Значение, `true` если это расположение явно доверенное.|
 
 ## <a name="response"></a>Отклик
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Даташарингконсент
 description: Сведения о согласии общего доступа к данным.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f98c2967eb9d3e14b0f8e219547aa73104d67614
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 22247866b1f1a4c2a9ae391cd7c9564e67f20f3c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785037"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456910"
 ---
 # <a name="datasharingconsent-resource-type"></a>Тип ресурса Даташарингконсент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -36,7 +38,7 @@ ms.locfileid: "42785037"
 |id|String|Идентификатор согласия общего доступа к данным|
 |сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
 |термсурл|String|Термсурл для согласия общего доступа к данным|
-|granted|Логический|Состояние предоставления согласия на общий доступ к данным|
+|granted|Логическое|Состояние предоставления согласия на общий доступ к данным|
 |грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
 |грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
 |грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|

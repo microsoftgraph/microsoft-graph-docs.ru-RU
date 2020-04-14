@@ -2,19 +2,19 @@
 title: Тип ресурса Провисионингсистемдетаилс
 description: Представляет систему, в которую были подготовлены пользователи.
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 286ae448cbbaee428820d274d11d8584a9150393
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 862933281a2fd1473893368e3500b192d301e462
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521322"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457309"
 ---
 # <a name="provisioningsystemdetails-resource-type"></a>Тип ресурса Провисионингсистемдетаилс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42521322"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|подробности|[detailsInfo](detailsinfo.md)|Сведения о системе.|
+|details|[detailsInfo](detailsinfo.md)|Сведения о системе.|
 |displayName|Строка|Имя системы, в которую были подготовлены пользователи.|
 |id|String|Идентификатор системы, в которую были подготовлены пользователи.|
 

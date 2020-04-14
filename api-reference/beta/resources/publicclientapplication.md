@@ -4,17 +4,17 @@ description: Задает параметры для веб-API без веб-п�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: e22f973f9d133b3c4c7827733f51f2028cd506ce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 55b4afed8db68fe07cb04965c1665f26f61b1c59
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521308"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457302"
 ---
 # <a name="publicclientapplication-resource-type"></a>Тип ресурса publicClientApplication
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

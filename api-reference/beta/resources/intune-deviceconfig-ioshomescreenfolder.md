@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса iosHomeScreenFolder
 description: Папка, содержащая страницы приложений на начальном экране
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e35838ccd8a49bfe2609c29fe795bd21cfed723
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9b1ab55ce4ddcb5f265de8aa5cb130d47b3efb89
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791585"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455164"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>Тип ресурса iosHomeScreenFolder
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

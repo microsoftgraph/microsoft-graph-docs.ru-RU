@@ -1,18 +1,20 @@
 ---
 title: Создание Циркуларжеофенцеманажементкондитион
 description: Создание нового объекта Циркуларжеофенцеманажементкондитион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 62bdf1ad0d891adf32bcbc319fef5f4dfb5c17bb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1bf0ba061ff22502ffbdd28c9c2bac3e7fb6c181
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804844"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452077"
 ---
 # <a name="create-circulargeofencemanagementcondition"></a>Создание Циркуларжеофенцеманажементкондитион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42804844"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +47,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Циркуларжеофенцеманажементкондитион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Циркуларжеофенцеманажементкондитион.
@@ -117,7 +119,6 @@ Content-Length: 612
   "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
 }
 ```
-
 
 
 

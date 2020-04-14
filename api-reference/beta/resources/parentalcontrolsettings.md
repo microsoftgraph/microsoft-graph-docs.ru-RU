@@ -4,17 +4,17 @@ description: Указывает параметры родительского к
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 2a61e851b054556063798f6f58956b6dbb5a7a65
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 606e690a75acd319d23bffc2cd25f8c7eb8e1f09
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522048"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447950"
 ---
 # <a name="parentalcontrolsettings-resource-type"></a>Тип ресурса Паренталконтролсеттингс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

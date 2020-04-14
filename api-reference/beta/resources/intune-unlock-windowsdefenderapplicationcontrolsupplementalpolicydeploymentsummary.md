@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Виндовсдефендераппликатионконтролсупплементалполицидеплойментсуммари
 description: Содержит свойства сводки по развертыванию дополнительной политики Виндовсдефендераппликатионконтрол.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 479e929f2c20126225467144d4ce1fe5cef2c58d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c16cdd6518998f6979260462d844cefa072f2061
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764217"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449561"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary-resource-type"></a>Тип ресурса Виндовсдефендераппликатионконтролсупплементалполицидеплойментсуммари
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

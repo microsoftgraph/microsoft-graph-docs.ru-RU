@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Девицеенроллменттипе
 description: Возможные способы добавления мобильного устройства в управление.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c87f87b6f13d81589788c1c7e0b2834866a94690
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 68910dececddb812c8c5ac25c02020ac9370edcb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771126"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458323"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>тип перечисления Девицеенроллменттипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -35,6 +37,7 @@ ms.locfileid: "42771126"
 |виндовскоманажемент|9 |Управление с помощью Windows 10 инициировано с помощью автопилота или групповой политики.|
 |апплеусеренроллмент|-11:00|Устройство, управляемое регистрацией пользователей Apple|
 |апплеусеренроллментвиссервицеаккаунт|12|Устройство, управляемое регистрацией пользователей Apple, с учетной записью службы|
+|азуреаджоинусингазуревмекстенсион|14 |Регистрация подключения Azure AD при подготовке виртуальной машины Azure|
 
 
 

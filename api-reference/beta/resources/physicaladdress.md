@@ -2,19 +2,19 @@
 title: Тип ресурса physicalAddress
 description: Представляет почтовый адрес ресурса, например контакта или события.
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 53b1e18bd1e7b78e7afb479cac3c5f6cc7ecff88
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 36edf38d16ca5e27fe5995eb59ec9150c3d76d87
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521878"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455555"
 ---
 # <a name="physicaladdress-resource-type"></a>Тип ресурса physicalAddress
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

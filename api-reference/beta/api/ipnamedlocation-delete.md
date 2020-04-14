@@ -2,15 +2,15 @@
 title: Удаление Ипнамедлокатион
 description: Удаление объекта Ипнамедлокатион.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6ba92dc18fce372d963a450798e3037b078963d6
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: fedfc04e1e53f25700a54a9918c47d2b9641b0cd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062324"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458158"
 ---
 # <a name="delete-ipnamedlocation"></a>Удаление Ипнамедлокатион
 
@@ -44,7 +44,7 @@ DELETE /identity/conditionalAccess/namedLocations/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

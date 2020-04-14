@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Виндовсаутопилотдеплойментпрофилеполицисетитем
 description: Класс, содержащий свойства, используемые для профиля развертывания Windows Полицисетитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e958076c046231f8f84f973fc3d3820cfd7f10da
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8e0b5ce3786561bb697da09707fb2f62358229ca
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774871"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448010"
 ---
 # <a name="windowsautopilotdeploymentprofilepolicysetitem-resource-type"></a>Тип ресурса Виндовсаутопилотдеплойментпрофилеполицисетитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

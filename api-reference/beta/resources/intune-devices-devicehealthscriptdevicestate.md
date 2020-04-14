@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицехеалсскриптдевицестате
 description: Содержит свойства состояния запуска для сценария работоспособности устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e491914385a5fc2a1e3b664e606b801cf92bf9f0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 15b88acaf91e82981e821d96f8456cc943965081
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784953"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448122"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>Тип ресурса Девицехеалсскриптдевицестате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

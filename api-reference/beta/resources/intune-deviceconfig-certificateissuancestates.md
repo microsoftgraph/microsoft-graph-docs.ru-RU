@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Цертификатеиссуанцестатес
 description: Параметры состояния выдачи сертификатов.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c4307d8dadf1f3b74f4a7f92bf4b56d44f63ee7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 03bc757288afd670c5329bf45c68f282b3cd5264
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795703"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453635"
 ---
 # <a name="certificateissuancestates-enum-type"></a>тип перечисления Цертификатеиссуанцестатес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

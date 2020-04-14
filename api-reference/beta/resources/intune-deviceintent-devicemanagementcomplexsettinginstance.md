@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеманажементкомплекссеттингинстанце
 description: Экземпляр параметра, представляющий сложное значение
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87b958794064916d9bac7e89e8d26c1b97e83d81
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cf5aa6250d72bc91b4ae345a9d5e99c8856bcd20
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785479"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448346"
 ---
 # <a name="devicemanagementcomplexsettinginstance-resource-type"></a>Тип ресурса Девицеманажементкомплекссеттингинстанце
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

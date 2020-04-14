@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса windowsMinimumOperatingSystem
 description: Минимальная версия операционной системы, необходимая мобильному приложению для Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e0e7f274be302e58692b6a6f18b43906de27fd3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c8a148bc1ace18af3d4fd1206e7caf3849074244
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797509"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450754"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Тип ресурса windowsMinimumOperatingSystem
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,15 +25,15 @@ ms.locfileid: "42797509"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|v8_0|Логический|Windows 8.0 или более поздней версии.|
+|v8_0|Логическое|Windows 8.0 или более поздней версии.|
 |v8_1|Boolean|Windows 8.1 или более поздней версии.|
 |v10_0|Boolean|Windows 10.0 или более поздней версии.|
-|v10_1607|Логический|Windows 10 1607 или более поздняя версия.|
-|v10_1703|Логический|Windows 10 1703 или более поздняя версия.|
-|v10_1709|Логический|Windows 10 1709 или более поздняя версия.|
-|v10_1803|Логический|Windows 10 1803 или более поздняя версия.|
-|v10_1809|Логический|Windows 10 1809 или более поздняя версия.|
-|v10_1903|Логический|Windows 10 1903 или более поздняя версия.|
+|v10_1607|Логическое|Windows 10 1607 или более поздняя версия.|
+|v10_1703|Логическое|Windows 10 1703 или более поздняя версия.|
+|v10_1709|Логическое|Windows 10 1709 или более поздняя версия.|
+|v10_1803|Логическое|Windows 10 1803 или более поздняя версия.|
+|v10_1809|Логическое|Windows 10 1809 или более поздняя версия.|
+|v10_1903|Логическое|Windows 10 1903 или более поздняя версия.|
 
 ## <a name="relationships"></a>Связи
 Нет

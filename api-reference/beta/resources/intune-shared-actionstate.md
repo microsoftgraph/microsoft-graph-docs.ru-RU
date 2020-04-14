@@ -1,18 +1,20 @@
 ---
 title: тип перечисления actionState
 description: Состояние действия на устройстве
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 734fa5b7920c64ed2f649f78a2e81de068e3e0db
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c213567b46c7aea2f91deae8bc8a27d4b0382c7d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772260"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453182"
 ---
 # <a name="actionstate-enum-type"></a>тип перечисления actionState
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42772260"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Недопустимое состояние действия|
+|нет|нуль|Недопустимое состояние действия|
 |закончен|1,1|Ожидается действие|
 |закрыт|2|Действие отменено.|
 |ASP|4|Действие активно.|

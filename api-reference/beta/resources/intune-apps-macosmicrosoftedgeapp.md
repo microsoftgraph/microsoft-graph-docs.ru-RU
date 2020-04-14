@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Макосмикрософтеджеапп
 description: Содержит свойства и наследуемые свойства для приложения MacOS Microsoft Edge.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 105a4cff01f083d4a2fea92e044270d16e5dcb4b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1a7fc2b67a16b7c440aebe9e3bcdbeb1f942b68c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798030"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458874"
 ---
 # <a name="macosmicrosoftedgeapp-resource-type"></a>Тип ресурса Макосмикрософтеджеапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

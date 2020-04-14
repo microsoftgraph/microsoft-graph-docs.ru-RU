@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Конфигуратионусаже
 description: Возможные значения списка Конфигуратионусаже.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9db3809ae91ca3fc1294c2045ebd072f813ae985
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 366765594a559ec8db966458c5a7a1dc2ed1ce10
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795668"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453480"
 ---
 # <a name="configurationusage-enum-type"></a>тип перечисления Конфигуратионусаже
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,7 +26,7 @@ ms.locfileid: "42795668"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |заблокированных|нуль|Разрешена.|
-|Обязательный|1,1|Обязательный.|
+|Обязательный|1,1|Обязательно.|
 |разрешенных|2|Необязательный параметр.|
 
 

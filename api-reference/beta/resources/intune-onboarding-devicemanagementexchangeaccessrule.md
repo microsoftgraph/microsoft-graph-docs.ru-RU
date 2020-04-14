@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеманажементексчанжеакцессруле
 description: Правила доступа к устройству в Exchange.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a6d32744d2fd3cb48f52c85b314e72d50983dffc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: afe7cde845bfff01100f5e8fabea22d6ce863f63
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42779193"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455041"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>Тип ресурса Девицеманажементексчанжеакцессруле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

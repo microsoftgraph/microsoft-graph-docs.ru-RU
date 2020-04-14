@@ -1,18 +1,20 @@
 ---
 title: Действие wipeManagedAppRegistrationByDeviceTag
 description: Стирает данные о регистрации приложений с указанным тегом приложения.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 053d1b290111216653c0cd3e4d71fa5d01fcf8ca
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e65a82c3ae10f182b68bd3cac038682c42bc5dbf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800517"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447418"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>Действие wipeManagedAppRegistrationByDeviceTag
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -29,7 +31,7 @@ ms.locfileid: "42800517"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложений||
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,7 +50,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationByDeviceTag
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тело запроса добавьте параметры в формате JSON.
 
@@ -86,7 +88,6 @@ Content-length: 39
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

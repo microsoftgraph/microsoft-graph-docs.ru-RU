@@ -1,20 +1,20 @@
 ---
 title: Список childFolders
 description: 'Получение коллекции папок в указанной папке. Вы можете использовать короткий путь `.../me/MailFolders` для получения верхнего уровня '
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ec9b2e89dacf80c24c9036ed0d8d932856eac4d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a996c6ea9aeb972b8b3e1bb8b3eb6ce37c4a9b01
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457057"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457133"
 ---
 # <a name="list-childfolders"></a>Список childFolders
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42457057"
 |:---------------------------------------|:------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Mail.ReadBasic, Mail.Read, Mail.ReadWrite           |
 | Делегированные (личная учетная запись Майкрософт) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite           |
-| Приложение                            | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite           |
+| Для приложения                            | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite           |
 
 ## <a name="http-request"></a>HTTP-запрос
 

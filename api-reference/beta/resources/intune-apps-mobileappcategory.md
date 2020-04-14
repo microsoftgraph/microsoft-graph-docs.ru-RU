@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса mobileAppCategory
 description: Содержит свойства для одной категории приложений Intune.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5e085d2403c624c326da519245d1c8bf7499a4ef
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: aeca0599e3793491763796cd210ebd3dcfd80f1d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797855"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458592"
 ---
 # <a name="mobileappcategory-resource-type"></a>Тип ресурса mobileAppCategory
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

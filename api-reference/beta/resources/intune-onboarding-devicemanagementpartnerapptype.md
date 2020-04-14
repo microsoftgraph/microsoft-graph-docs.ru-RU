@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Девицеманажементпартнерапптипе
 description: Тип партнерского приложения.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f4fa69b5a624355f5d51d6ee9a15dba9b8ad9226
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 461258a4daf17502df67ca88d8ae0e1e9d4fa205
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42778843"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455660"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>тип перечисления Девицеманажементпартнерапптипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

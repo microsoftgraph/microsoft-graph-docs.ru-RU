@@ -2,19 +2,19 @@
 title: Создание категории Outlook
 description: Создание объекта outlookCategory в основном списке категорий пользователя.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 55a60cf5ab8d7be5df4a8d0c29fe646131bf1651
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e389ee8cbc8b369664adfeb8b57c22f96bb3b2d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456077"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456209"
 ---
 # <a name="create-outlook-category"></a>Создание категории Outlook
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ POST /users/{id|userPrincipalName}/outlook/masterCategories
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Включите в текст запроса описание объекта [outlookCategory](../resources/outlookcategory.md) в формате JSON.
 
 ## <a name="response"></a>Ответ

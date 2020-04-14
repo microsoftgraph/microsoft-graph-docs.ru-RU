@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса windowsPackageInformation
 description: Содержит свойства для сведений о пакете для бизнес-приложения Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 31c99e8732f100e7d4797fda7d4c71a5086bd227
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 544c29c29b3a2ba530953bdea5f289fdd1eb56d5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797495"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450724"
 ---
 # <a name="windowspackageinformation-resource-type"></a>Тип ресурса windowsPackageInformation
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
