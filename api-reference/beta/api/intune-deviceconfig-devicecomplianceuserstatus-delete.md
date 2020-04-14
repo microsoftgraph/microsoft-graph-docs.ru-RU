@@ -1,18 +1,20 @@
 ---
 title: Удаление объекта deviceComplianceUserStatus
 description: Удаляет объект deviceComplianceUserStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f4ecf10f8cae97a5779da85169110ebd6d5908ba
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ae4a1b7e3f8a68b557d8640a00e8100dde789e3f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42754841"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433706"
 ---
 # <a name="delete-devicecomplianceuserstatus"></a>Удаление объекта deviceComplianceUserStatus
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

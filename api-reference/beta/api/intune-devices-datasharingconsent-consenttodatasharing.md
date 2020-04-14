@@ -1,18 +1,20 @@
 ---
 title: Действие consentToDataSharing
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d7e38ab21ebbe41d9c6269634032836f0c200835
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e79ca3c273e5b7113e62e8cdf07184c319c898ba
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814738"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426769"
 ---
 # <a name="consenttodatasharing-action"></a>Действие consentToDataSharing
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -78,7 +80,6 @@ Content-Length: 417
   }
 }
 ```
-
 
 
 

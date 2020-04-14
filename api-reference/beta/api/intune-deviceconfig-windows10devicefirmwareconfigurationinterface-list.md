@@ -1,18 +1,20 @@
 ---
 title: Список windows10DeviceFirmwareConfigurationInterfaces
 description: Список свойств и связей объектов windows10DeviceFirmwareConfigurationInterface.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f3a0ad701e4d7242c27613f31a59f11648b42c4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9b045c7a1f2d02f3e533452c7191367e002a0aa8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42740778"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43431631"
 ---
 # <a name="list-windows10devicefirmwareconfigurationinterfaces"></a>Список windows10DeviceFirmwareConfigurationInterfaces
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -112,7 +114,6 @@ Content-Length: 1670
   ]
 }
 ```
-
 
 
 

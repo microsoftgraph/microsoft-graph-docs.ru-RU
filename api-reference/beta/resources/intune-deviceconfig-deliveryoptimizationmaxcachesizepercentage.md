@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Деливерйоптимизатионмакскачесизеперцентаже
 description: 'Оптимизация доставки: максимальный размер кэша типы в процентах.'
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f588344fadc5e5c0c64be72a12daad57568ed3d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6cd4f706009990a0257a6f58cf15dd8fce87c498
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42793389"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420412"
 ---
 # <a name="deliveryoptimizationmaxcachesizepercentage-resource-type"></a>Тип ресурса Деливерйоптимизатионмакскачесизеперцентаже
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

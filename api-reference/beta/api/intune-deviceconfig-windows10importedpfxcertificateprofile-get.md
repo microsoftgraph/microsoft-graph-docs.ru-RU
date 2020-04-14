@@ -1,18 +1,20 @@
 ---
 title: Получение windows10ImportedPFXCertificateProfile
 description: Чтение свойств и связей объекта windows10ImportedPFXCertificateProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f0a85ed60501cffcd98b792690e09a0dddf61f7a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b8d2aeba0e9db76d704cbf04385fad8660252b64
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42739525"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43430839"
 ---
 # <a name="get-windows10importedpfxcertificateprofile"></a>Получение windows10ImportedPFXCertificateProfile
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -114,7 +116,6 @@ Content-Length: 1628
   }
 }
 ```
-
 
 
 

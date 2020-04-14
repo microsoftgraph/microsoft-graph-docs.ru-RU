@@ -1,18 +1,20 @@
 ---
 title: Get iosCompliancePolicy
 description: Чтение свойств и связей объекта iosCompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d794f26d99095360e53627d1c80b57e2a45d3939
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 398265886076befa31260184f6b235040fa31c22
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42752585"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432982"
 ---
 # <a name="get-ioscompliancepolicy"></a>Get iosCompliancePolicy
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -109,7 +111,6 @@ Content-Length: 1504
   }
 }
 ```
-
 
 
 

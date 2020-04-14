@@ -1,18 +1,20 @@
 ---
 title: Get deviceConfigurationUserOverview
 description: Чтение свойств и связей объекта deviceConfigurationUserOverview.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 510a3217be430b579b5e81e1df776e258a3e7867
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e3eca0c3aebefe9f31377bb47017a56f0014b00b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42753623"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433310"
 ---
 # <a name="get-deviceconfigurationuseroverview"></a>Get deviceConfigurationUserOverview
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -92,7 +94,6 @@ Content-Length: 394
   }
 }
 ```
-
 
 
 

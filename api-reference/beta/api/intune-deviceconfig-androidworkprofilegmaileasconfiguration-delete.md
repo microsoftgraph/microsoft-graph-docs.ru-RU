@@ -1,18 +1,20 @@
 ---
 title: Удаление Андроидворкпрофилегмаилеасконфигуратион
 description: Удаляет объект Андроидворкпрофилегмаилеасконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 170a5cd582a536624539638bc116382873a57f09
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 28df8cc67fd717ea435e4eb5dbffa545072792e0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758448"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434990"
 ---
 # <a name="delete-androidworkprofilegmaileasconfiguration"></a>Удаление Андроидворкпрофилегмаилеасконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

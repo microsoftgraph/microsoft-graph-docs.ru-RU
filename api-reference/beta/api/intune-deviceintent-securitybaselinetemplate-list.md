@@ -1,18 +1,20 @@
 ---
 title: Список Секуритибаселинетемплатес
 description: Список свойств и связей объектов Секуритибаселинетемплате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 579580c0f1918ef142238fda95a9eea5cbeac49c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 58992abd70ce7d31c5c6c6180e9586bac01ca5c8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814822"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427142"
 ---
 # <a name="list-securitybaselinetemplates"></a>Список Секуритибаселинетемплатес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -83,7 +85,6 @@ Content-Length: 493
   ]
 }
 ```
-
 
 
 

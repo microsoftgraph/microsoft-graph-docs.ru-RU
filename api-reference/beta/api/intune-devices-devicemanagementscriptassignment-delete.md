@@ -1,18 +1,20 @@
 ---
 title: Удаление Девицеманажементскриптассигнмент
 description: Удаляет объект Девицеманажементскриптассигнмент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f164c2e71409c20375a15c3daa01ed2af7b63964
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a78f94414c5234e14dfab29801f25c7ae55d2049
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814493"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426187"
 ---
 # <a name="delete-devicemanagementscriptassignment"></a>Удаление Девицеманажементскриптассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -64,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

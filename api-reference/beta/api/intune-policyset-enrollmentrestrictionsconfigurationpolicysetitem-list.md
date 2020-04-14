@@ -1,18 +1,20 @@
 ---
 title: Список Енроллментрестриктионсконфигуратионполицисетитемс
 description: Список свойств и связей объектов Енроллментрестриктионсконфигуратионполицисетитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e2e03dfd367e7718c6ac9e49dbcf1b13e7bd19c9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3705ca20e37ebe1420d62758e7772877805a44c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802337"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43424132"
 ---
 # <a name="list-enrollmentrestrictionsconfigurationpolicysetitems"></a>Список Енроллментрестриктионсконфигуратионполицисетитемс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -86,7 +88,6 @@ Content-Length: 624
   ]
 }
 ```
-
 
 
 

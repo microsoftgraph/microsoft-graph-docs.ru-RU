@@ -1,18 +1,20 @@
 ---
 title: List deviceComplianceUserStatuses
 description: Перечисление свойств и связей объектов deviceComplianceUserStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 18738068cacbc0e712fcaa5aa7f1761d40f861c0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 45fcc87c06b93a5309675e8c45192086a253b64c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42754757"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433692"
 ---
 # <a name="list-devicecomplianceuserstatuses"></a>List deviceComplianceUserStatuses
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -79,7 +81,6 @@ Content-Length: 397
   ]
 }
 ```
-
 
 
 

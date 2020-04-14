@@ -1,18 +1,20 @@
 ---
 title: Удаление Иослобапппровисионингконфигуратионполицисетитем
 description: Удаляет объект Иослобапппровисионингконфигуратионполицисетитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 122de36b2323868fec65516ec52802fd5ef94762
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: af3204edc1d94b480da1725465899d2f17351108
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802316"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423975"
 ---
 # <a name="delete-ioslobappprovisioningconfigurationpolicysetitem"></a>Удаление Иослобапппровисионингконфигуратионполицисетитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

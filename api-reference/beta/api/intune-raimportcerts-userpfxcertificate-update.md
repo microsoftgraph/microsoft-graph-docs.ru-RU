@@ -1,18 +1,20 @@
 ---
 title: Обновление Усерпфксцертификате
 description: Обновление свойств объекта Усерпфксцертификате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0bba8e970f258ccbfab01209feb024314aa8a99d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: aa08241b3a672914d01058a8e0b817d737403670
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801819"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421522"
 ---
 # <a name="update-userpfxcertificate"></a>Обновление Усерпфксцертификате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -118,7 +120,6 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

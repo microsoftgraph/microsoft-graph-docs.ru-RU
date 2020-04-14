@@ -1,18 +1,20 @@
 ---
 title: Получение Андроидворкпрофилиасемаилпрофилебасе
 description: Чтение свойств и связей объекта Андроидворкпрофилиасемаилпрофилебасе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2686f069ad9597c2d47f050add31b6d6f3159e23
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d8b7d344e5d0ecf82251398c076f0889ec16131f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758539"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435185"
 ---
 # <a name="get-androidworkprofileeasemailprofilebase"></a>Получение Андроидворкпрофилиасемаилпрофилебасе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -113,7 +115,6 @@ Content-Length: 1533
   }
 }
 ```
-
 
 
 

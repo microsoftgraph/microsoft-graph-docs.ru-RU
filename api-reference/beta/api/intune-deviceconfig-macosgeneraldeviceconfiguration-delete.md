@@ -1,18 +1,20 @@
 ---
 title: Удаление объекта macOSGeneralDeviceConfiguration
 description: Удаляет объект macOSGeneralDeviceConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f367df282f5a2d6c35026f125887f3830115b520
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9681f1977d0f12e50c7dbd13f912da52baa0b426
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42745879"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432630"
 ---
 # <a name="delete-macosgeneraldeviceconfiguration"></a>Удаление объекта macOSGeneralDeviceConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

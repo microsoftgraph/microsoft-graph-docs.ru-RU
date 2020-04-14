@@ -1,18 +1,20 @@
 ---
 title: Обновление Дефаултдевицекомплианцеполици
 description: Обновление свойств объекта Дефаултдевицекомплианцеполици.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 161bbba9dccd8a7e554c8a377f2befed0070585d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ac0799c8065d2cc8dee12f4fe9bc5cf3a6e4932d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42756556"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434291"
 ---
 # <a name="update-defaultdevicecompliancepolicy"></a>Обновление Дефаултдевицекомплианцеполици
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -104,7 +106,6 @@ Content-Length: 401
   "version": 7
 }
 ```
-
 
 
 

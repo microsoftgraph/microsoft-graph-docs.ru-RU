@@ -1,18 +1,20 @@
 ---
 title: Удаление Виндовсделиверйоптимизатионконфигуратион
 description: Удаляет объект Виндовсделиверйоптимизатионконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d9307eb2899f3226364c1c0b75ad93947a5cccc1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c14e6457ed0821053a45c2335919f967368fc972
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42735714"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43429734"
 ---
 # <a name="delete-windowsdeliveryoptimizationconfiguration"></a>Удаление Виндовсделиверйоптимизатионконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

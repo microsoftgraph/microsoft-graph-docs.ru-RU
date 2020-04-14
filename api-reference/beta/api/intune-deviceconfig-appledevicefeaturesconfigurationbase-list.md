@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов appleDeviceFeaturesConfigurationBase
 description: Список свойств и связей объектов appleDeviceFeaturesConfigurationBase.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a5c26493b861df7ee635144177236fe95c5273d9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bc2807b65647cd546585a640dee551a15497e366
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42757054"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434509"
 ---
 # <a name="list-appledevicefeaturesconfigurationbases"></a>Перечисление объектов appleDeviceFeaturesConfigurationBase
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -114,7 +116,6 @@ Content-Length: 1646
   ]
 }
 ```
-
 
 
 

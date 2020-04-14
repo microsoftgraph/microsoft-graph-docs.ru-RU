@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов iosCompliancePolicy
 description: Список свойств и связей объектов iosCompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 648848e4268d034eacb8e290587bf9b83828c441
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f0b8ccecbad4114fcbbbab5cbbdab5b4f9c4bdf7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42752494"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432943"
 ---
 # <a name="list-ioscompliancepolicies"></a>Перечисление объектов iosCompliancePolicy
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -108,7 +110,6 @@ Content-Length: 1590
   ]
 }
 ```
-
 
 
 

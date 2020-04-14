@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Девицемананжементинтентвалуетипе
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0ea9783a4487b850fb85eb1d6efa36531ce17ac1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c08d68ce1ee97a042e33bdf67271ab6a2f28f272
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785226"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419886"
 ---
 # <a name="devicemanangementintentvaluetype-enum-type"></a>тип перечисления Девицемананжементинтентвалуетипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

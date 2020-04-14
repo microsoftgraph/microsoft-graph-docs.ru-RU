@@ -1,18 +1,20 @@
 ---
 title: Удаление Ндесконнектор
 description: Удаляет объект Ндесконнектор.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 89ae72e259e7e98c0b6e28ebc3977a936eb1d86b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d1a861a3df26b8b553fdf40a044b78bf68d1d764
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42742808"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43431865"
 ---
 # <a name="delete-ndesconnector"></a>Удаление Ндесконнектор
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/ndesConnectors/{ndesCon
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Удаление windows81WifiImportConfiguration
 description: Удаляет объект windows81WifiImportConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dddb46b21fe2ee2a4180041e4b177b695c6e9d17
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8aa812f849530e4a96e74d9354fabaa18466739f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42736323"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43430083"
 ---
 # <a name="delete-windows81wifiimportconfiguration"></a>Удаление windows81WifiImportConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

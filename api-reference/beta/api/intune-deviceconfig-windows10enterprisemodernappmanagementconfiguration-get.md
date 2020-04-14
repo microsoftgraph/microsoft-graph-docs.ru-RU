@@ -1,18 +1,20 @@
 ---
 title: Get windows10EnterpriseModernAppManagementConfiguration
 description: Чтение свойств и связей объекта windows10EnterpriseModernAppManagementConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 09fe9a773a39a462b907dbd490178fbbde3b356f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a707a19e2fe98cc95a1f1519e59df25b050a9e9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42739987"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43431149"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>Get windows10EnterpriseModernAppManagementConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -108,7 +110,6 @@ Content-Length: 1344
   }
 }
 ```
-
 
 
 

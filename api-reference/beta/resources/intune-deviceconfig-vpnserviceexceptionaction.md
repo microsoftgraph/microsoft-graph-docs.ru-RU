@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Впнсервицеексцептионактион
 description: Действие VPN, выполняемое для определенной службы.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b0c952a14db65e836c2a3391cb44a871957e708
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 125410fb9d501ec3dc205cc29c0728c7c54b007f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787308"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420226"
 ---
 # <a name="vpnserviceexceptionaction-enum-type"></a>тип перечисления Впнсервицеексцептионактион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

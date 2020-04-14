@@ -1,18 +1,20 @@
 ---
 title: Список windowsPhone81SCEPCertificateProfiles
 description: Список свойств и связей объектов windowsPhone81SCEPCertificateProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f9cbe704b80909a0ced48133107095e98527401
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 83337235a7d0f64589349be6d764b75f3b737aae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42733555"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43429341"
 ---
 # <a name="list-windowsphone81scepcertificateprofiles"></a>Список windowsPhone81SCEPCertificateProfiles
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -126,7 +128,6 @@ Content-Length: 2222
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Получение Дефаултдевицекомплианцеполици
 description: Чтение свойств и связей объекта Дефаултдевицекомплианцеполици.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 524b906cf185eb94bb2ba221e923ea4bd8a8950d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2315bf2cea2ced96cbde1dbb26af70a033882a95
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42756605"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434361"
 ---
 # <a name="get-defaultdevicecompliancepolicy"></a>Получение Дефаултдевицекомплианцеполици
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -83,7 +85,6 @@ Content-Length: 440
   }
 }
 ```
-
 
 
 

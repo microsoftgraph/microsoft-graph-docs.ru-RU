@@ -1,18 +1,20 @@
 ---
 title: Список Андроидворкпрофилевпнконфигуратионс
 description: Список свойств и связей объектов Андроидворкпрофилевпнконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 48860ad3f36fbcb31e8f332bd158572700fd0e9d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b9912a3fe3f2e88e09ea47bf3d5dca582ef132b8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42757474"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434629"
 ---
 # <a name="list-androidworkprofilevpnconfigurations"></a>Список Андроидворкпрофилевпнконфигуратионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -133,7 +135,6 @@ Content-Length: 2207
   ]
 }
 ```
-
 
 
 

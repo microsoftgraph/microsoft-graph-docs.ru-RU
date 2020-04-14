@@ -1,18 +1,20 @@
 ---
 title: Получение Девицешеллскрипт
 description: Чтение свойств и связей объекта Девицешеллскрипт.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff502dca1f7915dc0f722b33ef7c933ed8646881
-ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
+ms.openlocfilehash: 08e0d7694b8ec8c7c1e31b543726b9f598699516
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034764"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43425551"
 ---
 # <a name="get-deviceshellscript"></a>Получение Девицешеллскрипт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

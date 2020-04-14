@@ -3,18 +3,18 @@ title: Тип ресурса extension
 description: Абстрактный тип для поддержки открытого типа openTypeExtension в OData 4-й версии.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 43ed2cf25b57ff3c2d5891c5b20ba19aa88075bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: keylimesoda
+ms.openlocfilehash: 9dc9a53e98c43992c09158bac79afb49abcfee2f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499010"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423814"
 ---
 # <a name="extension-resource-type"></a>Тип ресурса extension
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

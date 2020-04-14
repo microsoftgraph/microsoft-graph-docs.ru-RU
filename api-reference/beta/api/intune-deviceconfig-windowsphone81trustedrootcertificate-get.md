@@ -1,18 +1,20 @@
 ---
 title: Получение windowsPhone81TrustedRootCertificate
 description: Чтение свойств и связей объекта windowsPhone81TrustedRootCertificate.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e33d2ba67afb8cbe65f67843dce453c75e135293
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e1d32f1a9bed3415f300ffc9431175f567809831
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42733422"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43429197"
 ---
 # <a name="get-windowsphone81trustedrootcertificate"></a>Получение windowsPhone81TrustedRootCertificate
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -107,7 +109,6 @@ Content-Length: 1406
   }
 }
 ```
-
 
 
 

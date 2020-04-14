@@ -1,18 +1,20 @@
 ---
 title: Получение Усерекспериенцеаналитиксдевицестартуппроцессперформанце
 description: Чтение свойств и связей объекта Усерекспериенцеаналитиксдевицестартуппроцессперформанце.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 06c9bb315d5a79eb2bc8b8836ec4ae403f08fc3f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0c2c07df8d06c6e26da2812766afd0efaca469cb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813868"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43424840"
 ---
 # <a name="get-userexperienceanalyticsdevicestartupprocessperformance"></a>Получение Усерекспериенцеаналитиксдевицестартуппроцессперформанце
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -81,7 +83,6 @@ Content-Length: 369
   }
 }
 ```
-
 
 
 

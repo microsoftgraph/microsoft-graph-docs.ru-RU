@@ -1,18 +1,20 @@
 ---
 title: Получение Макосимпортедпфксцертификатепрофиле
 description: Чтение свойств и связей объекта Макосимпортедпфксцертификатепрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f0498973728c3834df031e6654a94edec9f31c9b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 39d4d4a1fdfa12b7ad697a2064509a23e2577901
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42745606"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432548"
 ---
 # <a name="get-macosimportedpfxcertificateprofile"></a>Получение Макосимпортедпфксцертификатепрофиле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -113,7 +115,6 @@ Content-Length: 1564
   }
 }
 ```
-
 
 
 

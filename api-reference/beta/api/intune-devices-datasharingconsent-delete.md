@@ -1,18 +1,20 @@
 ---
 title: Удаление Даташарингконсент
 description: Удаляет объект Даташарингконсент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 49daec035b98fc93803983639120ead7e60975df
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 48220cfd559bd9e89b2cd80908a67c47c3a9a984
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814724"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426715"
 ---
 # <a name="delete-datasharingconsent"></a>Удаление Даташарингконсент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/dataSharingConsents/{da
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

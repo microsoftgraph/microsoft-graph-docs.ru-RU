@@ -1,18 +1,20 @@
 ---
 title: Delete editionUpgradeConfiguration
 description: Удаляет объект editionUpgradeConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b119d08f1430d3469d21246909d9ba0136edb7a5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f863db46649f0502c596fff675cfe49d90026b36
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42752984"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433092"
 ---
 # <a name="delete-editionupgradeconfiguration"></a>Delete editionUpgradeConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

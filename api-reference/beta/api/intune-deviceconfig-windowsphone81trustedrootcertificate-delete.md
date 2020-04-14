@@ -1,18 +1,20 @@
 ---
 title: Удаление windowsPhone81TrustedRootCertificate
 description: Удаляет объект windowsPhone81TrustedRootCertificate.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a3bd7854e56bf9041cc63493c7eabdf75f97023e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 897922dfd0458ae66447b58678700cd53f285e7f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42733429"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43429228"
 ---
 # <a name="delete-windowsphone81trustedrootcertificate"></a>Удаление windowsPhone81TrustedRootCertificate
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

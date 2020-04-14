@@ -1,18 +1,20 @@
 ---
 title: Действие recoverPasscode
 description: Восстановление секретного кода
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bdf9e1f0b2c6083b40254a82c7745130b16e2c29
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4237257aeef074db96ed7099196012c7999a0b2d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814220"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43425336"
 ---
 # <a name="recoverpasscode-action"></a>Действие recoverPasscode
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -67,7 +69,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

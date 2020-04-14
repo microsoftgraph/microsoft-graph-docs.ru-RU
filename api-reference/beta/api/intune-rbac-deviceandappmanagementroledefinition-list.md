@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов deviceAndAppManagementRoleDefinition
 description: Список свойств и связей объектов deviceAndAppManagementRoleDefinition.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4225e48d5e5c15dd72f1fd98a182e61b9970bb22
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 642dd110923ee0d8b5a241373a7fb44f590baa50
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801756"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421305"
 ---
 # <a name="list-deviceandappmanagementroledefinitions"></a>Перечисление объектов deviceAndAppManagementRoleDefinition
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -119,7 +121,6 @@ Content-Length: 1499
   ]
 }
 ```
-
 
 
 

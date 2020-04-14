@@ -1,18 +1,20 @@
 ---
 title: Get iosCustomConfiguration
 description: Чтение свойств и связей объекта iosCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 73a1a10839700c33082a0ed4aedf2e9232b5d300
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 39db9ce3cb1fd4b755242cf081289e886db5afb8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42752340"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432907"
 ---
 # <a name="get-ioscustomconfiguration"></a>Get iosCustomConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -110,7 +112,6 @@ Content-Length: 1405
   }
 }
 ```
-
 
 
 

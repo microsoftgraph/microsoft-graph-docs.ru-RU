@@ -1,18 +1,20 @@
 ---
 title: Получение Андроидворкпрофилениневоркеасконфигуратион
 description: Чтение свойств и связей объекта Андроидворкпрофилениневоркеасконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ea0a4dd0f4c8a0dea7e742100839e0488bde1547
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4561c269ea33d9edf262e8a36c3dd4de7c2f7bdc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758406"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434893"
 ---
 # <a name="get-androidworkprofilenineworkeasconfiguration"></a>Получение Андроидворкпрофилениневоркеасконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -116,7 +118,6 @@ Content-Length: 1616
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Удаление macOSScepCertificateProfile
 description: Удаляет объект macOSScepCertificateProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e854760ad88104c9addf4de37ab2f4160c9ca774
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5050a49c1d991c57ebc0f9979e40ecc0d2ee75fe
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42745116"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432437"
 ---
 # <a name="delete-macosscepcertificateprofile"></a>Удаление macOSScepCertificateProfile
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

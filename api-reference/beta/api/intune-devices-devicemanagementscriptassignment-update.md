@@ -1,18 +1,20 @@
 ---
 title: Обновление Девицеманажементскриптассигнмент
 description: Обновление свойств объекта Девицеманажементскриптассигнмент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 81e549443d5be939ced99e53e886500a537a922f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 80f58e471710e161af66ca006c2d906df5ae7427
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814472"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426110"
 ---
 # <a name="update-devicemanagementscriptassignment"></a>Обновление Девицеманажементскриптассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -92,7 +94,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Обновление объекта resourceOperation
 description: Обновляет свойства объекта resourceOperation.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b12d4c66c84d5e18cd81c3cd2bd90809eef400fc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d6afbcc8a3b6adc0ade92e17588377e220c247f2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801693"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421090"
 ---
 # <a name="update-resourceoperation"></a>Обновление объекта resourceOperation
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -56,7 +58,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
 |description|String|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
-|енабледфорскопевалидатион|Логический|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
+|енабледфорскопевалидатион|Логическое|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
 
 
 
@@ -99,7 +101,6 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

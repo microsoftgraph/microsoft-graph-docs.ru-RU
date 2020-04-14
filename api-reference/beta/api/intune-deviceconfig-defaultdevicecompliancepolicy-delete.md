@@ -1,18 +1,20 @@
 ---
 title: Удаление Дефаултдевицекомплианцеполици
 description: Удаляет объект Дефаултдевицекомплианцеполици.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a38f61ac069d5f31b8a1787d3b1fdd959e128964
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 744226cb7028c8227582e0275c6c88fc70ed617a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42756724"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434368"
 ---
 # <a name="delete-defaultdevicecompliancepolicy"></a>Удаление Дефаултдевицекомплианцеполици
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

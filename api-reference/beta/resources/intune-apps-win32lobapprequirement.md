@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса win32LobAppRequirement
 description: Базовый класс для обнаружения приложения Win32
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 91c8a23170ba18e2c5c8ec3a3890e548a27df9cd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b32be470753f62b725b0cd1f91177ab8f1826d66
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797565"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422648"
 ---
 # <a name="win32lobapprequirement-resource-type"></a>Тип ресурса win32LobAppRequirement
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

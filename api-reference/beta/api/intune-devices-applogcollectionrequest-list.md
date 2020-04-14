@@ -1,18 +1,20 @@
 ---
 title: Список Апплогколлектионрекуестс
 description: Список свойств и связей объектов appLogCollectionRequest.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 21b47d15aefdaafa8092f12cc042bb605f2f13bc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 287bb5d12b18498d79d2d59dbdbf4df929d2f905
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814752"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426824"
 ---
 # <a name="list-applogcollectionrequests"></a>Список Апплогколлектионрекуестс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -80,7 +82,6 @@ Content-Length: 371
   ]
 }
 ```
-
 
 
 

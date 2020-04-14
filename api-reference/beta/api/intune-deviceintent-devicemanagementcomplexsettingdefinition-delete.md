@@ -1,18 +1,20 @@
 ---
 title: Удаление Девицеманажементкомплекссеттингдефинитион
 description: Удаляет объект Девицеманажементкомплекссеттингдефинитион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec5c479f1a502d125a5757d811e8a56b201660a7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 359d1920b7e460442e5768423c4f81a1de951ed7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42730202"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43428283"
 ---
 # <a name="delete-devicemanagementcomplexsettingdefinition"></a>Удаление Девицеманажементкомплекссеттингдефинитион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -66,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

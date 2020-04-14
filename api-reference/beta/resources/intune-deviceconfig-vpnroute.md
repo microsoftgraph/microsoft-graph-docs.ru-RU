@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Впнрауте
 description: Определение маршрута VPN.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e0d5b07aa04d7e47459923b1b33d3d32008dcc1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1ee8e52bb838a688f11d4242ce85241fe0c06122
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787329"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420327"
 ---
 # <a name="vpnroute-resource-type"></a>Тип ресурса Впнрауте
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

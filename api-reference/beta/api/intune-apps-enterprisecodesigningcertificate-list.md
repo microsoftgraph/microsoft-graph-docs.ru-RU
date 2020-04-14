@@ -1,18 +1,20 @@
 ---
 title: Список enterpriseCodeSigningCertificates
 description: Список свойств и связей объектов Ентерприсекодесигнингцертификате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 88c6b2fceec26d337bc807d3bdd74897ea764670
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 01fbe451e443049fbf8b89a895f9ce0ba085d7a1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762135"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421670"
 ---
 # <a name="list-enterprisecodesigningcertificates"></a>Список enterpriseCodeSigningCertificates
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -82,7 +84,6 @@ Content-Length: 512
   ]
 }
 ```
-
 
 
 

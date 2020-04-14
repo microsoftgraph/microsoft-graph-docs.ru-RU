@@ -1,18 +1,20 @@
 ---
 title: Список windows81WifiImportConfigurations
 description: Список свойств и связей объектов windows81WifiImportConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ebe279d21c7e0a1e9fd086c7344d43a3427c6dd0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 09065ad36c569c776349adf44aaee8a370cb88c0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42736260"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43430045"
 ---
 # <a name="list-windows81wifiimportconfigurations"></a>Список windows81WifiImportConfigurations
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -108,7 +110,6 @@ Content-Length: 1499
   ]
 }
 ```
-
 
 
 

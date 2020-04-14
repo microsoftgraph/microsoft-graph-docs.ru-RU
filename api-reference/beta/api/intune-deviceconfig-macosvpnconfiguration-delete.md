@@ -1,18 +1,20 @@
 ---
 title: Удаление Макосвпнконфигуратион
 description: Удаляет объект Макосвпнконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 17720de216533df6f0610c2b900da0bf4a941b71
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 21c0100118c1c4aa98335fe359e924a1628a9377
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42744411"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432271"
 ---
 # <a name="delete-macosvpnconfiguration"></a>Удаление Макосвпнконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

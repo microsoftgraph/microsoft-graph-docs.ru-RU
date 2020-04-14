@@ -1,18 +1,20 @@
 ---
 title: действие Женератеапплепушнотификатионцертификатесигнингрекуест
 description: Скачивание запроса на подпись сертификата для push-уведомлений Apple
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 45dfdf38a17db91a8af1e11dee194f329177a018
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e4b602e3819f799493a69619309580acb7cc6e77
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814801"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427057"
 ---
 # <a name="generateapplepushnotificationcertificatesigningrequest-action"></a>действие Женератеапплепушнотификатионцертификатесигнингрекуест
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -69,7 +71,6 @@ Content-Length: 85
   "value": "Generate Apple Push Notification Certificate Signing Request value"
 }
 ```
-
 
 
 

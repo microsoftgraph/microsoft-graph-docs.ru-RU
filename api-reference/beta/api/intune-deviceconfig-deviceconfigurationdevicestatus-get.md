@@ -1,18 +1,20 @@
 ---
 title: Get deviceConfigurationDeviceStatus
 description: Чтение свойств и связей объекта deviceConfigurationDeviceStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cf53cbbb3af1b223ed32b547ad7f26d1d6302db4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 193f7f642bfd3b59d64d053ec5c605d0d0b22b86
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42753973"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433430"
 ---
 # <a name="get-deviceconfigurationdevicestatus"></a>Get deviceConfigurationDeviceStatus
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -92,7 +94,6 @@ Content-Length: 535
   }
 }
 ```
-
 
 
 

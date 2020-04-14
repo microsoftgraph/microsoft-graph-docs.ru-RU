@@ -1,18 +1,20 @@
 ---
 title: Get deviceCompliancePolicyDeviceStateSummary
 description: Чтение свойств и связей объекта deviceCompliancePolicyDeviceStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 529bd0255f9f9a5bcc552de2907329b87af6e306
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f2a4661d593512872cfc6739046870e2ff2edd3d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42755695"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434021"
 ---
 # <a name="get-devicecompliancepolicydevicestatesummary"></a>Get deviceCompliancePolicyDeviceStateSummary
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -84,7 +86,6 @@ Content-Length: 439
   }
 }
 ```
-
 
 
 

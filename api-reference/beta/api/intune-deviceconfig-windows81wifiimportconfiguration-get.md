@@ -1,18 +1,20 @@
 ---
 title: Получение windows81WifiImportConfiguration
 description: Чтение свойств и связей объекта windows81WifiImportConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 629d89c45d5868542c9b2ea73c342340c94cec8e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 18f19b562728dbeaf299034f606d4948543e2977
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42736274"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43430068"
 ---
 # <a name="get-windows81wifiimportconfiguration"></a>Получение windows81WifiImportConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -110,7 +112,6 @@ Content-Length: 1415
   }
 }
 ```
-
 
 
 

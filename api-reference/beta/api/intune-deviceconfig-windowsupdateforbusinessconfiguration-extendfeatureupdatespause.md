@@ -1,18 +1,20 @@
 ---
 title: Действие extendFeatureUpdatesPause
 description: Расширение функции PAUSE для центра обновления Windows для бизнеса.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: caf3d88f1a12d0e6252e946b24eedd6752ead296
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7d14da5bed7775779044927aa68fa50e4fe091cf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42732498"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43428585"
 ---
 # <a name="extendfeatureupdatespause-action"></a>Действие extendFeatureUpdatesPause
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

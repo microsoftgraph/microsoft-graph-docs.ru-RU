@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов androidStoreApp
 description: Список свойств и связей объектов androidStoreApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 75d92b15cbf7891a439f112ec225d284f34d197a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 32e157b37210953aafd9019eece16c37a7ed7349
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762170"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421769"
 ---
 # <a name="list-androidstoreapps"></a>Перечисление объектов androidStoreApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -117,7 +119,6 @@ Content-Length: 1615
   ]
 }
 ```
-
 
 
 

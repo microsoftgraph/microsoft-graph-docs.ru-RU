@@ -1,18 +1,20 @@
 ---
 title: Get deviceConfigurationAssignment
 description: Чтение свойств и связей объекта deviceConfigurationAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec3c941cf5bc8fc0d954449bcff6a7ac109ee586
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fb78a1e0023a30782b10aeb2a0a3976162cca7c8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42754582"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433624"
 ---
 # <a name="get-deviceconfigurationassignment"></a>Get deviceConfigurationAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -89,7 +91,6 @@ Content-Length: 312
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Список Манажедаллдевицецертификатестатес
 description: Список свойств и связей объектов Манажедаллдевицецертификатестате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b13b63b41afa3f630acf1012be0089bcd21fe1a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e2952cdfe82edff77ff3d742a32011ba5f0704b8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42743494"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432144"
 ---
 # <a name="list-managedalldevicecertificatestates"></a>Список Манажедаллдевицецертификатестатес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -85,7 +87,6 @@ Content-Length: 869
   ]
 }
 ```
-
 
 
 

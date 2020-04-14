@@ -1,18 +1,20 @@
 ---
 title: Список Иосцертификатепрофилебасес
 description: Список свойств и связей объектов используется.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b02b7f9818fe4d94a6ffc702fc75ae39a7c1f42
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e4824c208d4c0cfc7791d624672bec6645be9d76
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42752718"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433154"
 ---
 # <a name="list-ioscertificateprofilebases"></a>Список Иосцертификатепрофилебасес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -110,7 +112,6 @@ Content-Length: 1600
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Действие sendCustomNotificationToCompanyPortal
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 82f58f23fcc4370eff153e35249a4d250abef741
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5a7625d0a65e19e0c950e7d6fe000d1571758aa5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814164"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43425221"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>Действие sendCustomNotificationToCompanyPortal
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -84,7 +86,6 @@ Content-length: 105
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

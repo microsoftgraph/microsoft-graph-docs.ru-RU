@@ -1,18 +1,20 @@
 ---
 title: Получение Виндовспривацидатаакцессконтролитем
 description: Чтение свойств и связей объекта Виндовспривацидатаакцессконтролитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e0532cd79c6eb7c968fded01e0b1e78905bc2da
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e2d4060b372836a171afd5854b61628ecf9cce8e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42732596"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43428740"
 ---
 # <a name="get-windowsprivacydataaccesscontrolitem"></a>Получение Виндовспривацидатаакцессконтролитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -79,7 +81,6 @@ Content-Length: 330
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Получение Девицеманажементинтентдевицестатесуммари
 description: Чтение свойств и связей объекта Девицеманажементинтентдевицестатесуммари.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 399b0fc48129597f6b954c61576536aab9811713
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ee46255b97ade97ebdfd7437f02d6aa13c2cef44
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815235"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43428167"
 ---
 # <a name="get-devicemanagementintentdevicestatesummary"></a>Получение Девицеманажементинтентдевицестатесуммари
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -81,7 +83,6 @@ Content-Length: 321
   }
 }
 ```
-
 
 
 

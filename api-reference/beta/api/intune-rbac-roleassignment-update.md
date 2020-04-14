@@ -1,18 +1,20 @@
 ---
 title: Обновление объекта roleAssignment
 description: Обновление свойств объекта roleAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ee7e44d3a1856b3618712d26372ed4480265105
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2f65cb41a6c9abfcc5edc9a9515e92e908dc8fca
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801658"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420919"
 ---
 # <a name="update-roleassignment"></a>Обновление объекта roleAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -107,7 +109,6 @@ Content-Length: 326
   ]
 }
 ```
-
 
 
 

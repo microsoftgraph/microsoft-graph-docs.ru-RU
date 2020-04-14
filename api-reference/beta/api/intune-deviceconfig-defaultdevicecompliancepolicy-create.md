@@ -1,18 +1,20 @@
 ---
 title: Создание Дефаултдевицекомплианцеполици
 description: Создание нового объекта Дефаултдевицекомплианцеполици.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 17fa8305efc38d963a1fb3192fae8d093708d980
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 909a0cbebac7f4a6b501361680d1b42e5aa145be
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42756822"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434375"
 ---
 # <a name="create-defaultdevicecompliancepolicy"></a>Создание Дефаултдевицекомплианцеполици
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -104,7 +106,6 @@ Content-Length: 401
   "version": 7
 }
 ```
-
 
 
 

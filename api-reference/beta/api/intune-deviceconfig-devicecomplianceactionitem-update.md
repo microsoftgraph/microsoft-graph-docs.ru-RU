@@ -1,18 +1,20 @@
 ---
 title: Update deviceComplianceActionItem
 description: Обновление свойств объекта deviceComplianceActionItem.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: daccff8c613c563e9672c9865ff2b6954567fb3a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 40bd4155c94846ac799dc404796ec9630d0038a6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42756388"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434240"
 ---
 # <a name="update-devicecomplianceactionitem"></a>Update deviceComplianceActionItem
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -100,7 +102,6 @@ Content-Length: 320
   ]
 }
 ```
-
 
 
 

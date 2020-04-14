@@ -1,18 +1,20 @@
 ---
 title: Список Иосдериведкредентиалаусентикатионконфигуратионс
 description: Список свойств и связей объектов Иосдериведкредентиалаусентикатионконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a328df35d291b0b34d2125446d1c717b4773f634
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 68c24df41f48e7ab553f8a02bf78b00d1c4016ab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42752052"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432809"
 ---
 # <a name="list-iosderivedcredentialauthenticationconfigurations"></a>Список Иосдериведкредентиалаусентикатионконфигуратионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -105,7 +107,6 @@ Content-Length: 1383
   ]
 }
 ```
-
 
 
 

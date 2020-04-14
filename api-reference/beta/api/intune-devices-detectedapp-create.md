@@ -1,18 +1,20 @@
 ---
 title: Создание объекта detectedApp
 description: Создание объекта detectedApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7aa0701707ac61801d3975fec9c7eca94a92d9e4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8cbb1ec1e0e45ae8f8ba7d910a2bb6314acabc9a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814696"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426611"
 ---
 # <a name="create-detectedapp"></a>Создание объекта detectedApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -97,7 +99,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
 
 
 

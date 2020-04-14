@@ -1,18 +1,20 @@
 ---
 title: Список Девицеманажементинтентсеттингкатегориес
 description: Список свойств и связей объектов Девицеманажементинтентсеттингкатегори.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b846d286eaaf97a413f3be7e9b28c17b75188fd7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a54892fa6e8dc2a982d4aea85d893b51f471b8d3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815200"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427988"
 ---
 # <a name="list-devicemanagementintentsettingcategories"></a>Список Девицеманажементинтентсеттингкатегориес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -76,7 +78,6 @@ Content-Length: 248
   ]
 }
 ```
-
 
 
 

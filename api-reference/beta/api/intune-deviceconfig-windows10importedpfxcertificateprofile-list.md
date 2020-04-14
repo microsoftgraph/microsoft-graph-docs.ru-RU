@@ -1,18 +1,20 @@
 ---
 title: Список windows10ImportedPFXCertificateProfiles
 description: Список свойств и связей объектов windows10ImportedPFXCertificateProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d54153c527289b7faa44b52d5ca8edddffae5bd1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 809787ff842f565f80bebb262b62b25855fcea78
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42739476"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43430808"
 ---
 # <a name="list-windows10importedpfxcertificateprofiles"></a>Список windows10ImportedPFXCertificateProfiles
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -112,7 +114,6 @@ Content-Length: 1720
   ]
 }
 ```
-
 
 
 

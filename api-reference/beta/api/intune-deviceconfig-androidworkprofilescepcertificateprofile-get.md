@@ -1,18 +1,20 @@
 ---
 title: Получение Андроидворкпрофилесцепцертификатепрофиле
 description: Чтение свойств и связей объекта Андроидворкпрофилесцепцертификатепрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 604ad0c2952232330856eae4b34793775e2185d0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c365ca2beeeb9cf0f0404b10671d6d5a308dc1da
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42757993"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434782"
 ---
 # <a name="get-androidworkprofilescepcertificateprofile"></a>Получение Андроидворкпрофилесцепцертификатепрофиле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -135,7 +137,6 @@ Content-Length: 2293
   }
 }
 ```
-
 
 
 

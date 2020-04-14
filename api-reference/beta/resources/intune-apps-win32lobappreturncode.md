@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса win32LobAppReturnCode
 description: Содержит свойства кода возврата для приложения Win32
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5e1c312fd7a43c6f685d80211849e9a9280917b8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3110ea120f88f56e49cfe33bf1b47631dc5c1f86
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797551"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422618"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>Тип ресурса win32LobAppReturnCode
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: Обновление Девицеманажементинтентдевицестатесуммари
 description: Обновление свойств объекта Девицеманажементинтентдевицестатесуммари.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: de70cd0e2ac314dad0baaf271b57525be59b73af
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4b63683e1cfaef47943ff2c2fae75856c471a770
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815228"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43428152"
 ---
 # <a name="update-devicemanagementintentdevicestatesummary"></a>Обновление Девицеманажементинтентдевицестатесуммари
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -102,7 +104,6 @@ Content-Length: 286
   "successCount": 12
 }
 ```
-
 
 
 

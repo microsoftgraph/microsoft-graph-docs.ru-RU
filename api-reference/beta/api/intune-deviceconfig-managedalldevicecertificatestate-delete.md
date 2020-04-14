@@ -1,18 +1,20 @@
 ---
 title: Удаление Манажедаллдевицецертификатестате
 description: Удаляет объект Манажедаллдевицецертификатестате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 80dbb47ae7005ab40567fb83bd3d5e510889a830
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ae057325d49fb21f2de5b5763507f939faa9f569
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42743641"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432158"
 ---
 # <a name="delete-managedalldevicecertificatestate"></a>Удаление Манажедаллдевицецертификатестате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationsAll
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

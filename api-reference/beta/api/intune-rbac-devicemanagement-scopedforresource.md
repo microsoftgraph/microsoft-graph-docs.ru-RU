@@ -1,18 +1,20 @@
 ---
 title: Функция Скопедфорресаурце
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 21b683f56c39bcb7bdd62354a504992a197065af
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f49981a46d8e11ef9880edb236d199251c63bb97
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801735"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421252"
 ---
 # <a name="scopedforresource-function"></a>Функция Скопедфорресаурце
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -76,7 +78,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
 
 
 

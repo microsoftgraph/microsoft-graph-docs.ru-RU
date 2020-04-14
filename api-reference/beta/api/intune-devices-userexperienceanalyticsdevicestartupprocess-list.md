@@ -1,18 +1,20 @@
 ---
 title: Список Усерекспериенцеаналитиксдевицестартуппроцессес
 description: Список свойств и связей объектов Усерекспериенцеаналитиксдевицестартуппроцесс.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fcee49227000eedb3aa49485559fd910d79f6ba3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: eef33f885f6a4f1c102e74dd37f44971098edee6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813897"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43424964"
 ---
 # <a name="list-userexperienceanalyticsdevicestartupprocesses"></a>Список Усерекспериенцеаналитиксдевицестартуппроцессес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -79,7 +81,6 @@ Content-Length: 386
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Удаление Девицеманажементтемплате
 description: Удаляет объект Девицеманажементтемплате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c12ac8e12b176bb1fdbd35772bf8ccf85187fdc9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fbe0f94e2e2ae26fa1bbb22a98ac7e62b362096d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814997"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427615"
 ---
 # <a name="delete-devicemanagementtemplate"></a>Удаление Девицеманажементтемплате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -64,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

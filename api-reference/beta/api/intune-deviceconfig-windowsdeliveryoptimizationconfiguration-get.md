@@ -1,18 +1,20 @@
 ---
 title: Получение Виндовсделиверйоптимизатионконфигуратион
 description: Чтение свойств и связей объекта Виндовсделиверйоптимизатионконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e420d124c6946ffa6f3d90cc93c4d0162f38ad72
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 18bc1c7f38e8362d036e32433db4b42e808ba84a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42735646"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43429703"
 ---
 # <a name="get-windowsdeliveryoptimizationconfiguration"></a>Получение Виндовсделиверйоптимизатионконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -132,7 +134,6 @@ Content-Length: 2344
   }
 }
 ```
-
 
 
 

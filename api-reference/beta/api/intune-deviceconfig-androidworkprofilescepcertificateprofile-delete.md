@@ -1,18 +1,20 @@
 ---
 title: Удаление Андроидворкпрофилесцепцертификатепрофиле
 description: Удаляет объект Андроидворкпрофилесцепцертификатепрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9059eecd12b20cbd48d48bf4f36350f446b7a671
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7040791f54bc312a454007952e140ce169e8a386
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758077"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434789"
 ---
 # <a name="delete-androidworkprofilescepcertificateprofile"></a>Удаление Андроидворкпрофилесцепцертификатепрофиле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

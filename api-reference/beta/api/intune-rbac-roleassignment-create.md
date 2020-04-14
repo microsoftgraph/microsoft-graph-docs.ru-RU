@@ -1,18 +1,20 @@
 ---
 title: Создание объекта roleAssignment
 description: Создание объекта roleAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ecf81f0e976cfba9bb159d8234a6118dd129b24
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: becb8ec776092e966bf4af24fc2c32dcad10a6a9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801686"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421019"
 ---
 # <a name="create-roleassignment"></a>Создание объекта roleAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -107,7 +109,6 @@ Content-Length: 326
   ]
 }
 ```
-
 
 
 

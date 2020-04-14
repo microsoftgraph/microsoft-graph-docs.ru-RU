@@ -1,18 +1,20 @@
 ---
 title: Список Девицеманажементсеттингинстанцес
 description: Список свойств и связей объектов Девицеманажементсеттингинстанце.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8c9bb6d018f44773df2331e4723d08d90ea6c42
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bd2f591f6e08b45ed4bf85c06efd9bcacfa39169
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815060"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427646"
 ---
 # <a name="list-devicemanagementsettinginstances"></a>Список Девицеманажементсеттингинстанцес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -79,7 +81,6 @@ Content-Length: 249
   ]
 }
 ```
-
 
 
 

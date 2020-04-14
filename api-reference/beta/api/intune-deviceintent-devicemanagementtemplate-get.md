@@ -1,18 +1,20 @@
 ---
 title: Получение Девицеманажементтемплате
 description: Чтение свойств и связей объекта Девицеманажементтемплате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b7777895768f4409e42c1d46c9f57beb8e88d9d9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 549e5699d1c9adbf79441aa96500fe85c7adae74
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814983"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427584"
 ---
 # <a name="get-devicemanagementtemplate"></a>Получение Девицеманажементтемплате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -84,7 +86,6 @@ Content-Length: 459
   }
 }
 ```
-
 
 
 

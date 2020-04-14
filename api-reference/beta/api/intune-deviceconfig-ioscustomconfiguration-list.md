@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов iosCustomConfiguration
 description: Список свойств и связей объектов iosCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a32c6b5206098cca38367b52a038f77ae4551066
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b333e5cb76c7232994b94190539196e0a1692208
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42752319"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432892"
 ---
 # <a name="list-ioscustomconfigurations"></a>Перечисление объектов iosCustomConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -108,7 +110,6 @@ Content-Length: 1489
   ]
 }
 ```
-
 
 
 

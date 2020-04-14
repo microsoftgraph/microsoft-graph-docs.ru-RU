@@ -1,18 +1,20 @@
 ---
 title: Список Андроидворкпрофилиасемаилпрофилебасес
 description: Список свойств и связей объектов Андроидворкпрофилиасемаилпрофилебасе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d3dc44324e8140238744308f0bc4df6d19b8374
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0ad3f9c820a90ac882077edb0c0507c0167bb9ae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758532"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435146"
 ---
 # <a name="list-androidworkprofileeasemailprofilebases"></a>Список Андроидворкпрофилиасемаилпрофилебасес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -111,7 +113,6 @@ Content-Length: 1623
   ]
 }
 ```
-
 
 
 

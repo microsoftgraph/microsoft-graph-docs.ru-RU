@@ -1,18 +1,20 @@
 ---
 title: Получение windowsPhone81VpnConfiguration
 description: Чтение свойств и связей объекта windowsPhone81VpnConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ee883137e3b2bfd84696ed7caf027d93c66f7aac
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ac8afce4548e3b31f647c9ac89d5961c7ad88eda
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42733030"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43429068"
 ---
 # <a name="get-windowsphone81vpnconfiguration"></a>Получение windowsPhone81VpnConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -136,7 +138,6 @@ Content-Length: 2329
   }
 }
 ```
-
 
 
 

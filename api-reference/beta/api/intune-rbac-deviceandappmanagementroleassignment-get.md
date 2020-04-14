@@ -1,18 +1,20 @@
 ---
 title: Получение объекта deviceAndAppManagementRoleAssignment
 description: Чтение свойств и связей объекта deviceAndAppManagementRoleAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cca18b819d6e25a56001bc14e3c564e7f693f332
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0ef0414334e0c86beb6671886cfc9e7cb1a6b378
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801798"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421498"
 ---
 # <a name="get-deviceandappmanagementroleassignment"></a>Получение объекта deviceAndAppManagementRoleAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -87,7 +89,6 @@ Content-Length: 438
   }
 }
 ```
-
 
 
 

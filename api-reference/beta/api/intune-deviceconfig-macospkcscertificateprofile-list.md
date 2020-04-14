@@ -1,18 +1,20 @@
 ---
 title: Список Макоспкксцертификатепрофилес
 description: Список свойств и связей объектов Макоспкксцертификатепрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 48b9cb955084cf5813b7fbd47f02c7027f74d74d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4b792b1fe836748fc95eada61d8a3e7a97cff86a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42745277"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432482"
 ---
 # <a name="list-macospkcscertificateprofiles"></a>Список Макоспкксцертификатепрофилес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -124,7 +126,6 @@ Content-Length: 2266
   ]
 }
 ```
-
 
 
 

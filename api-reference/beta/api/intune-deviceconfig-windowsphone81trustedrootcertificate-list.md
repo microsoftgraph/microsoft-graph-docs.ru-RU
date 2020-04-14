@@ -1,18 +1,20 @@
 ---
 title: Список windowsPhone81TrustedRootCertificates
 description: Список свойств и связей объектов windowsPhone81TrustedRootCertificate.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a99d7b7806772f87d38f1627eba4074f79875575
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 115a24f4272d7fa1736b9461b60dbe00d64d252b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42733408"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43429174"
 ---
 # <a name="list-windowsphone81trustedrootcertificates"></a>Список windowsPhone81TrustedRootCertificates
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -107,7 +109,6 @@ Content-Length: 1488
   ]
 }
 ```
-
 
 
 

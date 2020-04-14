@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Деливерйоптимизатионграупидкустом
 description: Тип идентификатора настраиваемой группы
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e3dd542a99a7eace79fbc3318117dbf7c539ee79
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d0b818a8c9e2a6a3cb13a8caa00b2115cf7f52b3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794370"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420481"
 ---
 # <a name="deliveryoptimizationgroupidcustom-resource-type"></a>Тип ресурса Деливерйоптимизатионграупидкустом
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

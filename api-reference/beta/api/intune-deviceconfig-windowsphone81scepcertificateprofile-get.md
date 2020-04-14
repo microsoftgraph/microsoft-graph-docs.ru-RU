@@ -1,18 +1,20 @@
 ---
 title: Получение windowsPhone81SCEPCertificateProfile
 description: Чтение свойств и связей объекта windowsPhone81SCEPCertificateProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 007477ae0b66633fc597574b3365be8bd591fbd3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0fab65e31d780be51cd96ba0d027416827f617d7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42733786"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43429368"
 ---
 # <a name="get-windowsphone81scepcertificateprofile"></a>Получение windowsPhone81SCEPCertificateProfile
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -128,7 +130,6 @@ Content-Length: 2102
   }
 }
 ```
-
 
 
 

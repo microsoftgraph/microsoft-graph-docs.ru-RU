@@ -1,18 +1,20 @@
 ---
 title: Get androidStoreApp
 description: Чтение свойств и связей объекта androidStoreApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 66067697aeb6212acfd816974f1b814b635eda2c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 755718475e0c294efedb7dba4506d036d64c68e4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762177"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421784"
 ---
 # <a name="get-androidstoreapp"></a>Get androidStoreApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -120,7 +122,6 @@ Content-Length: 1511
   }
 }
 ```
-
 
 
 

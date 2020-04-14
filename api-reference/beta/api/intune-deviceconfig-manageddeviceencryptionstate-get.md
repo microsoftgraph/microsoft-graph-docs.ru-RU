@@ -1,18 +1,20 @@
 ---
 title: Получение Манажеддевицеенкриптионстате
 description: Чтение свойств и связей объекта Манажеддевицеенкриптионстате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 44ad1e6d61ae4cb7d355f8c1f67381a5a9977c94
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5c90788aa48216cdaa8f0c4cafdaec6baab5723d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42743053"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43431951"
 ---
 # <a name="get-manageddeviceencryptionstate"></a>Получение Манажеддевицеенкриптионстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -92,7 +94,6 @@ Content-Length: 810
   }
 }
 ```
-
 
 
 

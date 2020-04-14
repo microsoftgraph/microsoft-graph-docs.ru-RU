@@ -1,18 +1,20 @@
 ---
 title: Удаление объекта deviceCompliancePolicyAssignment
 description: Удаляет объект deviceCompliancePolicyAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c8f6d7ac6ac457f7e728b6abf6fdc8cc4af5dba5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dee6ba8be91621823bc8bc3cecd38d626997d400
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42755849"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434049"
 ---
 # <a name="delete-devicecompliancepolicyassignment"></a>Удаление объекта deviceCompliancePolicyAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

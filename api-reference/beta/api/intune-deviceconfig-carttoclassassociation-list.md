@@ -1,18 +1,20 @@
 ---
 title: Список свойства carttoclassassociations
 description: Список свойств и связей объектов КарттоклассассоЦиатион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 083fcc121d51fc24e0320e695e0cc9b7cf228a8f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 245d4795e393f4b34decc9e970cfe5b2b0b3e5c9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42756850"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434397"
 ---
 # <a name="list-carttoclassassociations"></a>Список свойства carttoclassassociations
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -85,7 +87,6 @@ Content-Length: 528
   ]
 }
 ```
-
 
 
 

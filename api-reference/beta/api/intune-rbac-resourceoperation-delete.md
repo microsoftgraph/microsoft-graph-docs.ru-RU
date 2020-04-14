@@ -1,18 +1,20 @@
 ---
 title: Удаление resourceOperation
 description: Удаление объекта resourceOperation.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3385304aa77700f94218442240ed052192358d93
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 42ac7ddee5922af5d39adcd91148c2375b1836f1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801721"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421128"
 ---
 # <a name="delete-resourceoperation"></a>Удаление resourceOperation
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/resourceOperations/{res
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Получение КарттоклассассоЦиатион
 description: Чтение свойств и связей объекта КарттоклассассоЦиатион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bcfcb3012eff97adac59b28c336a37b5825440f0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9b255723ac2797e7f15e14ac1a5b90b5f3f52e0e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42756970"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434404"
 ---
 # <a name="get-carttoclassassociation"></a>Получение КарттоклассассоЦиатион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -86,7 +88,6 @@ Content-Length: 488
   }
 }
 ```
-
 
 
 

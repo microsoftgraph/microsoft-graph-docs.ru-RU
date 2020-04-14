@@ -1,18 +1,20 @@
 ---
 title: Get iosVppEBook
 description: Чтение свойств и связей объекта iosVppEBook.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dc47356c61f725522f293062b7a2ae1d4f2275b5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b71271062dacd2d21c52bdc203e01579a1f9ed2b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760496"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423130"
 ---
 # <a name="get-iosvppebook"></a>Get iosVppEBook
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -101,7 +103,6 @@ Content-Length: 1101
   }
 }
 ```
-
 
 
 

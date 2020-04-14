@@ -1,18 +1,20 @@
 ---
 title: Получение iosEasEmailProfileConfiguration
 description: Чтение свойств и связей объекта iosEasEmailProfileConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58dc812c3292397d7004ccc8b44867a3079522c2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: eae8cae1f1b0d20a7d8b4372f6d4b6357a81a172
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42751666"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432698"
 ---
 # <a name="get-ioseasemailprofileconfiguration"></a>Получение iosEasEmailProfileConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -133,7 +135,6 @@ Content-Length: 2438
   }
 }
 ```
-
 
 
 

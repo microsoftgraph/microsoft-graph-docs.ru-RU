@@ -1,18 +1,20 @@
 ---
 title: действие Тригжерконфигуратионманажерактион
 description: Действие триггера в клиенте Конфигуратионманажер
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ab0ad4e3eb73c5368a4f15c96b5e45ea0aea3c7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 79c07cab2b433e196e3cf5a39c73f03b9c42f7bf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814136"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43425081"
 ---
 # <a name="triggerconfigurationmanageraction-action"></a>действие Тригжерконфигуратионманажерактион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -85,7 +87,6 @@ Content-length: 145
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

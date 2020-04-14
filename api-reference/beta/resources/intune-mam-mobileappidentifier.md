@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса mobileAppIdentifier
 description: Идентификатор мобильного приложения.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b073020985d3c32c9e55786edd1dacaaf9a033ad
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a79fe1844ab6d9ac85edeec9586b56a71aff3d69
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42781251"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423572"
 ---
 # <a name="mobileappidentifier-resource-type"></a>Тип ресурса mobileAppIdentifier
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

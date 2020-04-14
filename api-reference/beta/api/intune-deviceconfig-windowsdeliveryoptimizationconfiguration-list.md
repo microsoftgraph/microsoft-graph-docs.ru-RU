@@ -1,18 +1,20 @@
 ---
 title: Список Виндовсделиверйоптимизатионконфигуратионс
 description: Список свойств и связей объектов Виндовсделиверйоптимизатионконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 104fc95bc643f021520b420a0a29f8eead7c4b5a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 470d54b502e541ed15de0e5764244e4b955bb70f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42735639"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43429696"
 ---
 # <a name="list-windowsdeliveryoptimizationconfigurations"></a>Список Виндовсделиверйоптимизатионконфигуратионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -130,7 +132,6 @@ Content-Length: 2472
   ]
 }
 ```
-
 
 
 

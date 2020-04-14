@@ -1,18 +1,20 @@
 ---
 title: Получение appleVpnConfiguration
 description: Чтение свойств и связей объекта appleVpnConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b462cac308567be4af76d62d8316cee16797240f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d993cc29642d6762dbf028847292b45f57521c4e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42757026"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434480"
 ---
 # <a name="get-applevpnconfiguration"></a>Получение appleVpnConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -164,7 +166,6 @@ Content-Length: 2999
   }
 }
 ```
-
 
 
 

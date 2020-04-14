@@ -1,18 +1,20 @@
 ---
 title: Получение Девицеманажементтемплатесеттингкатегори
 description: Чтение свойств и связей объекта Девицеманажементтемплатесеттингкатегори.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a7057cdfae50dc463b53f78833c5f81edc473fc5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 154f4c169e324bd5575bf62dd496dd70dd81e77b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814955"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427461"
 ---
 # <a name="get-devicemanagementtemplatesettingcategory"></a>Получение Девицеманажементтемплатесеттингкатегори
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -77,7 +79,6 @@ Content-Length: 228
   }
 }
 ```
-
 
 
 

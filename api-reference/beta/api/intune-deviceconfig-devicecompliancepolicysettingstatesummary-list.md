@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов deviceCompliancePolicySettingStateSummary
 description: Список свойств и связей объектов deviceCompliancePolicySettingStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 79810273af8529a95fc1c82c3946bbdd04156223
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 145862c60e423f03b44ffa1e9d4722d8750995bb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42755520"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433923"
 ---
 # <a name="list-devicecompliancepolicysettingstatesummaries"></a>Перечисление объектов deviceCompliancePolicySettingStateSummary
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -84,7 +86,6 @@ Content-Length: 532
   ]
 }
 ```
-
 
 
 

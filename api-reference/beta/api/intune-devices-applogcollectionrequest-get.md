@@ -1,18 +1,20 @@
 ---
 title: Получение appLogCollectionRequest
 description: Чтение свойств и связей объекта appLogCollectionRequest.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2bc3331dfeca08af705645f1685b7125d04614a7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 95f84a949aa07f6f11ce47f38b479298c8e26377
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814759"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426855"
 ---
 # <a name="get-applogcollectionrequest"></a>Получение appLogCollectionRequest
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -81,7 +83,6 @@ Content-Length: 341
   }
 }
 ```
-
 
 
 

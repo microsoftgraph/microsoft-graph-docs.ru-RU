@@ -1,18 +1,20 @@
 ---
 title: Получение Ентерприсекодесигнингцертификате
 description: Чтение свойств и связей объекта Ентерприсекодесигнингцертификате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 703790e64ea057019858d3bf7d7702c2c9ccce2f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bd8cf1d24d184be0561a8d002803474745bc5061
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762142"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421677"
 ---
 # <a name="get-enterprisecodesigningcertificate"></a>Получение Ентерприсекодесигнингцертификате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -83,7 +85,6 @@ Content-Length: 478
   }
 }
 ```
-
 
 
 

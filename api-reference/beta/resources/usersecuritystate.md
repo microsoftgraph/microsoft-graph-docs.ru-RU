@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса Усерсекуритистате
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
+description: Содержит сведения о состоянии учетной записи пользователя.
 localization_priority: Normal
-author: dkershaw10
+author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 67e5c7d2feb76346d754f582e34b5afe39af3d32
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f3df36132011cc668950615b2229c76c85237094
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519514"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422395"
 ---
 # <a name="usersecuritystate-resource-type"></a>Тип ресурса Усерсекуритистате
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42519514"
 |имя_учетной_записи|String|Имя учетной записи пользователя (без домена Active Directory или DNS-домена) (также называется `mailNickName`).|
 |domainName|String|NetBIOS/Active Directory учетной записи пользователя (то есть формат домен \ пользователь).|
 |emailRole|emailRole|Для оповещений, связанных с электронной почтой: "роль" — Электронная почта учетной записи пользователя. Возможные значения: `unknown`, `sender`, `recipient`.|
-|исвпн|Логический|Указывает, вошел ли пользователь в систему через VPN.|
+|исвпн|Логическое|Указывает, вошел ли пользователь в систему через VPN.|
 |логондатетиме|DateTimeOffset|Время возникновения входа. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |логонид|String|Идентификатор входа пользователя.|
 |logonIp|String|IP-адрес, с которого поступил запрос на вход.|

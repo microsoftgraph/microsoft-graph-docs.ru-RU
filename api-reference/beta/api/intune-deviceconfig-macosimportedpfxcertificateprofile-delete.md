@@ -1,18 +1,20 @@
 ---
 title: Удаление Макосимпортедпфксцертификатепрофиле
 description: Удаляет объект Макосимпортедпфксцертификатепрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c3141d3db9ee9c7df7821a96b19cbcb50288e50
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8d9485367fc50ea0eb7c137cfb30276de168f7f3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42745669"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432563"
 ---
 # <a name="delete-macosimportedpfxcertificateprofile"></a>Удаление Макосимпортедпфксцертификатепрофиле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

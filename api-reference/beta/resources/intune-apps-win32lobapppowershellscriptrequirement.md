@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса win32LobAppPowerShellScriptRequirement
 description: Содержит свойства скрипта PowerShell для обнаружения приложения Win32
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef7eaa00605214b10438b8c28ba3752903d26bc7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 97f9c8985ffac6dc6f3f736c3b089662d4f2d1ef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797600"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422771"
 ---
 # <a name="win32lobapppowershellscriptrequirement-resource-type"></a>Тип ресурса win32LobAppPowerShellScriptRequirement
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,8 +31,8 @@ ms.locfileid: "42797600"
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор обнаружения наследуется от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |детектионвалуе|String|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
 |displayName|String|Уникальное отображаемое имя для этого правила|
-|Свойства enforcesignaturecheck|Логический|Значение, указывающее, применяется ли проверка подписи|
-|runAs32Bit|Логический|Значение, указывающее, должен ли этот скрипт выполняться как 32 бит|
+|Свойства enforcesignaturecheck|Логическое|Значение, указывающее, применяется ли проверка подписи|
+|runAs32Bit|Логическое|Значение, указывающее, должен ли этот скрипт выполняться как 32 бит|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения, в котором выполняется скрипт. Возможные значения: `system`, `user`.|
 |скриптконтент|String|Содержимое скрипта в кодировке Base64 для обнаружения бизнес-приложения Win32|
 |детектионтипе|[win32LobAppPowerShellScriptDetectionType](../resources/intune-apps-win32lobapppowershellscriptdetectiontype.md)|Тип обнаружения для вывода сценария. Возможные значения: `notConfigured`, `string`, `dateTime`, `integer`, `float`, `version`, `boolean`.|

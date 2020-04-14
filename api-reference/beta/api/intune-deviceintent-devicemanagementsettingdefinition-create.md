@@ -1,18 +1,20 @@
 ---
 title: Создание Девицеманажементсеттингдефинитион
 description: Создание нового объекта Девицеманажементсеттингдефинитион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 584828e743b49b27c7f986587dfd7d03c933da7c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ba658fe605034703c2565f3f8f3a6d70cd6685de
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815102"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427818"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>Создание Девицеманажементсеттингдефинитион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -57,7 +59,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |id|String|Идентификатор определения параметра|
 |Типом|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
 |displayName|Строка|Отображаемое имя параметра|
-|истоплевел|Логический|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
+|истоплевел|Логическое|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
 |description|String|Описание параметра|
 |плацехолдертекст|String|Замещающий текст в качестве примера допустимых входных данных|
 |документатионурл|String|URL-адрес для установки документации|
@@ -158,7 +160,6 @@ Content-Length: 977
   ]
 }
 ```
-
 
 
 

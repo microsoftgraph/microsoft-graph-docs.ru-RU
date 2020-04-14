@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов windows10GeneralConfiguration
 description: Перечисление свойств и связей объектов windows10GeneralConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c7478ccafc1f2e73bfcc894a9a852dbe001291c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c72fb886cdb3d862ef820b87f7c90cefc0331265
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42739707"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43430979"
 ---
 # <a name="list-windows10generalconfigurations"></a>Перечисление объектов windows10GeneralConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -429,7 +431,6 @@ Content-Length: 16638
   ]
 }
 ```
-
 
 
 

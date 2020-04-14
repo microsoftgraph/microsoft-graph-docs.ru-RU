@@ -3,18 +3,18 @@ title: Список объектов mailFolder
 description: Получение всех почтовых папок в почтовом ящике вошедшего пользователя.
 localization_priority: Normal
 doc_type: apiPageType
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 34146d3fab0e4f13e2d9c41e738c57a7e8bdd1cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c2e19f53021b9ec9a214b337f84e7fff8652091d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451828"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423876"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа, который включает в себя **маилсеарчфолдер** , который является дочерней папкой в папке "Входящие". Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа, который включает в себя **маилсеарчфолдер** , который является дочерней папкой в папке "Входящие". Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

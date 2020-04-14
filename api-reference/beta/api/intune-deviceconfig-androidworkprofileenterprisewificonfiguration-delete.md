@@ -1,18 +1,20 @@
 ---
 title: Удаление Андроидворкпрофилинтерприсевификонфигуратион
 description: Удаляет объект Андроидворкпрофилинтерприсевификонфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 930ce35fb94f1f2575fdc423b73b505855fff02d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3cd6a419b452fd7d4ef66ca2a29dc57a4070ecb7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758518"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435116"
 ---
 # <a name="delete-androidworkprofileenterprisewificonfiguration"></a>Удаление Андроидворкпрофилинтерприсевификонфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

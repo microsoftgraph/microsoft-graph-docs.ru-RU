@@ -1,18 +1,20 @@
 ---
 title: Удаление Девицеманажементсеттингкатегори
 description: Удаляет объект Девицеманажементсеттингкатегори.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a59526436b6e8ffe7e2dbee18f5e5a36a56a321
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 547b23b9f28044f353b26aee6a4156349a27fe19
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815130"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427926"
 ---
 # <a name="delete-devicemanagementsettingcategory"></a>Удаление Девицеманажементсеттингкатегори
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/categories/{deviceManag
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

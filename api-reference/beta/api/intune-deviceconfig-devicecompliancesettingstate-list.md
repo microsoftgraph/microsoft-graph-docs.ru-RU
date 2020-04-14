@@ -1,18 +1,20 @@
 ---
 title: List deviceComplianceSettingStates
 description: Перечисление свойств и связей объектов deviceComplianceSettingState.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cda69b2028190cf8953abb66ad15e0f844bbbf4c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 15f89d5e88047a99eaf06c555bb350005f781574
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42755100"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433803"
 ---
 # <a name="list-devicecompliancesettingstates"></a>List deviceComplianceSettingStates
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -86,7 +88,6 @@ Content-Length: 687
   ]
 }
 ```
-
 
 
 

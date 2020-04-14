@@ -1,18 +1,20 @@
 ---
 title: Список Андроидворкпрофилегмаилеасконфигуратионс
 description: Список свойств и связей объектов Андроидворкпрофилегмаилеасконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 66eabfc303cb8cdf8462148fecac4cc05fcdcc30
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a526be887ef364e291b78a4e19ba5ae6982bbb27
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758434"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434960"
 ---
 # <a name="list-androidworkprofilegmaileasconfigurations"></a>Список Андроидворкпрофилегмаилеасконфигуратионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -111,7 +113,6 @@ Content-Length: 1625
   ]
 }
 ```
-
 
 
 

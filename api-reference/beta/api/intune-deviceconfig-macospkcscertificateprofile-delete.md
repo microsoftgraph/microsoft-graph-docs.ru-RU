@@ -1,18 +1,20 @@
 ---
 title: Удаление Макоспкксцертификатепрофиле
 description: Удаляет объект Макоспкксцертификатепрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bb1901cd56c179c42d810a0bf9a0a3750a92495f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ac58dbb22e59064670954fc29a5ea7e652c7b815
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42745326"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43432496"
 ---
 # <a name="delete-macospkcscertificateprofile"></a>Удаление Макоспкксцертификатепрофиле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

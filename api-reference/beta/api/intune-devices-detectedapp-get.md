@@ -1,18 +1,20 @@
 ---
 title: Get detectedApp
 description: Получение свойств и связей объекта detectedApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b182ebe67d481d3f800b9b1e1e76749b9f1055d9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a7f8bc26217230dc5d79fd137c86fc210d366a90
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814682"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426521"
 ---
 # <a name="get-detectedapp"></a>Get detectedApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -80,7 +82,6 @@ Content-Length: 247
   }
 }
 ```
-
 
 
 

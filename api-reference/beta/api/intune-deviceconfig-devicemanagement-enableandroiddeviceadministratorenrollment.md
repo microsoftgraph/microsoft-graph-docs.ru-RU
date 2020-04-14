@@ -1,18 +1,20 @@
 ---
 title: действие Енаблеандроиддевицеадминистраторенроллмент
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bc3ac90b467aa18d039711016a54db96ff6372e2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 18c62f1c6e65751fa4bd6088617527d8c612dadd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42753196"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433183"
 ---
 # <a name="enableandroiddeviceadministratorenrollment-action"></a>действие Енаблеандроиддевицеадминистраторенроллмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/enableAndroidDeviceAdmini
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

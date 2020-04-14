@@ -1,18 +1,20 @@
 ---
 title: Получение Еасемаилпрофилеконфигуратионбасе
 description: Чтение свойств и связей объекта Еасемаилпрофилеконфигуратионбасе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4bd20f7a587d61228adeff7dd870bb709ca7f426
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b217bb2e54cd65fb928136f8f41738b9172dfc60
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42753189"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433168"
 ---
 # <a name="get-easemailprofileconfigurationbase"></a>Получение Еасемаилпрофилеконфигуратионбасе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -111,7 +113,6 @@ Content-Length: 1486
   }
 }
 ```
-
 
 
 

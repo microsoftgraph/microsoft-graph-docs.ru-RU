@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса win32LobAppPowerShellScriptDetection
 description: Содержит свойства скрипта PowerShell для обнаружения приложения Win32
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5efcfdc14c2c32b51db04a93da4aff5730106219
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d36591c566e93f9cf4d0c6a7e300224e74033a1b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797614"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422921"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>Тип ресурса win32LobAppPowerShellScriptDetection
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +28,8 @@ ms.locfileid: "42797614"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Свойства enforcesignaturecheck|Логический|Значение, указывающее, применяется ли проверка подписи|
-|runAs32Bit|Логический|Значение, указывающее, должен ли этот скрипт выполняться как 32 бит|
+|Свойства enforcesignaturecheck|Логическое|Значение, указывающее, применяется ли проверка подписи|
+|runAs32Bit|Логическое|Значение, указывающее, должен ли этот скрипт выполняться как 32 бит|
 |скриптконтент|String|Содержимое скрипта в кодировке Base64 для обнаружения бизнес-приложения Win32|
 
 ## <a name="relationships"></a>Связи

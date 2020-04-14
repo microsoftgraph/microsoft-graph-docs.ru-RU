@@ -1,18 +1,20 @@
 ---
 title: Получение Девицеманажементинтентсеттингкатегори
 description: Чтение свойств и связей объекта Девицеманажементинтентсеттингкатегори.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f44192b03883ecdda75bfab1b0c25e14639290e1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a31bb1578f792ff2e4e53fc08f8da278405eefbc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815207"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43428051"
 ---
 # <a name="get-devicemanagementintentsettingcategory"></a>Получение Девицеманажементинтентсеттингкатегори
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -77,7 +79,6 @@ Content-Length: 226
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Список Ндесконнекторс
 description: Список свойств и связей объектов Ндесконнектор.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 90d87da8916bb9d357e11a058ac8e5b5d1a936d0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 24a559ae9aea91e0c3c016b03bb0c2902c80e895
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42742745"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43431850"
 ---
 # <a name="list-ndesconnectors"></a>Список Ндесконнекторс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -77,7 +79,6 @@ Content-Length: 285
   ]
 }
 ```
-
 
 
 

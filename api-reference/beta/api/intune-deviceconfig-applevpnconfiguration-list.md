@@ -1,18 +1,20 @@
 ---
 title: Список Апплевпнконфигуратионс
 description: Список свойств и связей объектов appleVpnConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f6117d5a96ada36b715754311eb1f9b8163d939
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fc1b3a41e2241e1d1bbee176c585be39b234bb45
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42757005"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434425"
 ---
 # <a name="list-applevpnconfigurations"></a>Список Апплевпнконфигуратионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -162,7 +164,6 @@ Content-Length: 3191
   ]
 }
 ```
-
 
 
 

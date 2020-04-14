@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов deviceConfigurationUserStatus
 description: Список свойств и связей объектов deviceConfigurationUserStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b4020f889faa34562b275d039576a5dc54130373
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f8f18a54ef1e83a4d83761c9b87130c265bf2f8b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42753266"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43433212"
 ---
 # <a name="list-deviceconfigurationuserstatuses"></a>Перечисление объектов deviceConfigurationUserStatus
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -88,7 +90,6 @@ Content-Length: 400
   ]
 }
 ```
-
 
 
 

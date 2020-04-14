@@ -1,18 +1,20 @@
 ---
 title: Обновление Даташарингконсент
 description: Обновление свойств объекта Даташарингконсент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d0e89b9acfd1211b46d356868e8ba5b1a2b4866a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e37956c7365118f6d5c33a59d911755c3247d404
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814703"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426622"
 ---
 # <a name="update-datasharingconsent"></a>Обновление Даташарингконсент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -54,7 +56,7 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |id|String|Идентификатор согласия общего доступа к данным|
 |сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
 |термсурл|String|Термсурл для согласия общего доступа к данным|
-|granted|Логический|Состояние предоставления согласия на общий доступ к данным|
+|granted|Логическое|Состояние предоставления согласия на общий доступ к данным|
 |грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
 |грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
 |грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
@@ -102,7 +104,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Список Андроидворкпрофилеженералдевицеконфигуратионс
 description: Список свойств и связей объектов androidWorkProfileGeneralDeviceConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e7dbfa07fee15e2a36167038620f73eeec98f13e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3dce597d72534aab143b4a09a45b45df959b0726
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758469"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435035"
 ---
 # <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>Список Андроидворкпрофилеженералдевицеконфигуратионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -143,7 +145,6 @@ Content-Length: 3402
   ]
 }
 ```
-
 
 
 

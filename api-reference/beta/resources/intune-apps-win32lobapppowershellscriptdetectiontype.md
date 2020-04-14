@@ -1,18 +1,20 @@
 ---
 title: тип перечисления win32LobAppPowerShellScriptDetectionType
 description: Содержит все поддерживаемые типы обнаружения вывода сценариев PowerShell.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 47fcba9cd87a128c45f79685073d9c5740c8ea0e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 03433546a54cf119a99cafe56109d2e0bcb1dce9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797607"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422794"
 ---
 # <a name="win32lobapppowershellscriptdetectiontype-enum-type"></a>тип перечисления win32LobAppPowerShellScriptDetectionType
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

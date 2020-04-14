@@ -1,18 +1,20 @@
 ---
 title: Удаление Виндовспривацидатаакцессконтролитем
 description: Удаляет объект Виндовспривацидатаакцессконтролитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ce54c660252ac8e51893aa5514ff455f46b20d7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9dea0fce1173141b27f2721cacd618455e58781d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42732659"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43428803"
 ---
 # <a name="delete-windowsprivacydataaccesscontrolitem"></a>Удаление Виндовспривацидатаакцессконтролитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
