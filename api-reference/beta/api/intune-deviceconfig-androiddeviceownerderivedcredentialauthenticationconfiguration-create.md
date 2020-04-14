@@ -1,18 +1,18 @@
 ---
-title: Создание Андроидфорворквификонфигуратион
-description: Создание нового объекта Андроидфорворквификонфигуратион.
+title: Создание Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион
+description: Создание нового объекта Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cebd4dbd837dbecb6c9dcd30950dec868c30afd1
+ms.openlocfilehash: b611e3fcaad5c949b0e29da1a4d61760a16b3081
 ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
-ms.locfileid: "43344997"
+ms.locfileid: "43351448"
 ---
-# <a name="create-androidforworkwificonfiguration"></a>Создание Андроидфорворквификонфигуратион
+# <a name="create-androiddeviceownerderivedcredentialauthenticationconfiguration"></a>Создание Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "43344997"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [андроидфорворквификонфигуратион](../resources/intune-deviceconfig-androidforworkwificonfiguration.md) .
+Создание нового объекта [андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,9 +48,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта Андроидфорворквификонфигуратион в формате JSON.
+В тексте запроса добавьте представление объекта Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион в формате JSON.
 
-В следующей таблице приведены свойства, необходимые при создании Андроидфорворквификонфигуратион.
+В следующей таблице приведены свойства, необходимые при создании Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -63,18 +63,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|нетворкнаме|String|Сетевое имя|
-|SSID|String|Это имя сети Wi-Fi, которая отправляется на все устройства.|
-|коннектаутоматикалли|Логическое|Подключаться автоматически, если сеть находится в диапазоне. Если задать для этого параметра значение true, запрос пользователя будет пропущен и автоматически подключено устройство к сети Wi/Fi.|
-|коннектвхеннетворкнамеишидден|Логическое|Если задано значение true, этот профиль заставляет устройство подключаться к сети, на которой не выполняется трансляция идентификатора SSID на все устройства.|
-|вифисекурититипе|[андроидвифисекурититипе](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Указывает, использует ли конечная точка Wi/Fi тип безопасности на основе EAP. Возможные значения: `open`, `wpaEnterprise`, `wpa2Enterprise`.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [андроидфорворквификонфигуратион](../resources/intune-deviceconfig-androidforworkwificonfiguration.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -83,10 +78,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1215
+Content-length: 1065
 
 {
-  "@odata.type": "#microsoft.graph.androidForWorkWiFiConfiguration",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerDerivedCredentialAuthenticationConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -114,12 +109,7 @@ Content-length: 1215
   },
   "description": "Description value",
   "displayName": "Display Name value",
-  "version": 7,
-  "networkName": "Network Name value",
-  "ssid": "Ssid value",
-  "connectAutomatically": true,
-  "connectWhenNetworkNameIsHidden": true,
-  "wiFiSecurityType": "wpaEnterprise"
+  "version": 7
 }
 ```
 
@@ -128,11 +118,11 @@ Content-length: 1215
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1387
+Content-Length: 1237
 
 {
-  "@odata.type": "#microsoft.graph.androidForWorkWiFiConfiguration",
-  "id": "58bcfe05-fe05-58bc-05fe-bc5805febc58",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerDerivedCredentialAuthenticationConfiguration",
+  "id": "9815f155-f155-9815-55f1-159855f11598",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
@@ -162,12 +152,7 @@ Content-Length: 1387
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
-  "version": 7,
-  "networkName": "Network Name value",
-  "ssid": "Ssid value",
-  "connectAutomatically": true,
-  "connectWhenNetworkNameIsHidden": true,
-  "wiFiSecurityType": "wpaEnterprise"
+  "version": 7
 }
 ```
 

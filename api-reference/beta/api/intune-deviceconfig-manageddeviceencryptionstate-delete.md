@@ -1,18 +1,20 @@
 ---
 title: Удаление Манажеддевицеенкриптионстате
 description: Удаляет объект Манажеддевицеенкриптионстате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 78d079f42acfd37d2d544b9275b9bbe25f88dc51
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a9bda6fc9f061115967eda59b8b202cd799c374
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42743109"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43343010"
 ---
 # <a name="delete-manageddeviceencryptionstate"></a>Удаление Манажеддевицеенкриптионстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42743109"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managedDeviceEncryption
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

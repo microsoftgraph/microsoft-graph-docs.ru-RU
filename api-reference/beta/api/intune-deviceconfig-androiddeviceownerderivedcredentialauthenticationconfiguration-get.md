@@ -1,18 +1,18 @@
 ---
-title: Получение androidForWorkEnterpriseWiFiConfiguration
-description: Чтение свойств и связей объекта androidForWorkEnterpriseWiFiConfiguration.
+title: Получение Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион
+description: Чтение свойств и связей объекта Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 50c71dd0051ad63aed1081ef159b44a6f4a67ec7
+ms.openlocfilehash: 26e592f8b485d1ac921013d2b4d4cc38fda19f9a
 ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
-ms.locfileid: "43347223"
+ms.locfileid: "43351412"
 ---
-# <a name="get-androidforworkenterprisewificonfiguration"></a>Получение androidForWorkEnterpriseWiFiConfiguration
+# <a name="get-androiddeviceownerderivedcredentialauthenticationconfiguration"></a>Получение Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "43347223"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md) .
+Чтение свойств и связей объекта [андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -55,7 +55,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -70,12 +70,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1820
+Content-Length: 1320
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.androidForWorkEnterpriseWiFiConfiguration",
-    "id": "742d953a-953a-742d-3a95-2d743a952d74",
+    "@odata.type": "#microsoft.graph.androidDeviceOwnerDerivedCredentialAuthenticationConfiguration",
+    "id": "9815f155-f155-9815-55f1-159855f11598",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -105,17 +105,7 @@ Content-Length: 1820
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
-    "version": 7,
-    "networkName": "Network Name value",
-    "ssid": "Ssid value",
-    "connectAutomatically": true,
-    "connectWhenNetworkNameIsHidden": true,
-    "wiFiSecurityType": "wpaEnterprise",
-    "eapType": "eapTtls",
-    "authenticationMethod": "usernameAndPassword",
-    "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
-    "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+    "version": 7
   }
 }
 ```

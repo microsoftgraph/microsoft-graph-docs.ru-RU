@@ -1,18 +1,20 @@
 ---
 title: Список Андроидфорворкгмаилеасконфигуратионс
 description: Список свойств и связей объектов Андроидфорворкгмаилеасконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 322a93f4b6f9cc71fe93ce78ed4285e8140fb507
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4c1cf1f2e86abc5e03e84878456a884450a96ccd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759283"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43346624"
 ---
 # <a name="list-androidforworkgmaileasconfigurations"></a>Список Андроидфорворкгмаилеасконфигуратионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42759283"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -111,7 +113,6 @@ Content-Length: 1621
   ]
 }
 ```
-
 
 
 

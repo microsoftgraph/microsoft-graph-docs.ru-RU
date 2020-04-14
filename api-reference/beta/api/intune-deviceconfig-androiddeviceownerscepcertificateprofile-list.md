@@ -1,18 +1,20 @@
 ---
 title: Список Андроиддевицеовнерсцепцертификатепрофилес
 description: Список свойств и связей объектов Андроиддевицеовнерсцепцертификатепрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 99d8d198f03953a819f92b6a5d183591443c875f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 45a5a82d67139ba4fdd0fca7bf91d06609e8066e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759733"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43350580"
 ---
 # <a name="list-androiddeviceownerscepcertificateprofiles"></a>Список Андроиддевицеовнерсцепцертификатепрофилес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42759733"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -133,7 +135,6 @@ Content-Length: 2427
   ]
 }
 ```
-
 
 
 

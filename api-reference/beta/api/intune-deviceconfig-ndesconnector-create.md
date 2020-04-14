@@ -1,18 +1,20 @@
 ---
 title: Создание Ндесконнектор
 description: Создание нового объекта Ндесконнектор.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e1090796b86e991f2581f185cbaaca3eba6e96ae
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: df9dce7a6157ae652cc99d5ac57df34db2c8cce6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42742864"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43342937"
 ---
 # <a name="create-ndesconnector"></a>Создание Ндесконнектор
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42742864"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -93,7 +95,6 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

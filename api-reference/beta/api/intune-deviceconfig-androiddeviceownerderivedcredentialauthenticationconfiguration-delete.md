@@ -1,18 +1,18 @@
 ---
-title: Удаление Макосвиреднетворкконфигуратион
-description: Удаляет объект Макосвиреднетворкконфигуратион.
+title: Удаление Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион
+description: Удаляет объект Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d3d060541c65971bc415a232cbe89f45903f3272
+ms.openlocfilehash: a7bcff0882dc819d6e19ad953fa112d3cf26866b
 ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
-ms.locfileid: "43343483"
+ms.locfileid: "43351419"
 ---
-# <a name="delete-macoswirednetworkconfiguration"></a>Удаление Макосвиреднетворкконфигуратион
+# <a name="delete-androiddeviceownerderivedcredentialauthenticationconfiguration"></a>Удаление Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "43343483"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет объект [макосвиреднетворкконфигуратион](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md).
+Удаляет объект [андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
