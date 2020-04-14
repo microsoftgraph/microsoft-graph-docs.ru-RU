@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Инсталлстате
 description: Возможные значения для состояния установки.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dbe7ce024e1ddae723254c4efd2b7214a0e8990e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8542503a705e14630335b9a4f0498228faf264de
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797390"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472081"
 ---
 # <a name="installstate-enum-type"></a>тип перечисления Инсталлстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

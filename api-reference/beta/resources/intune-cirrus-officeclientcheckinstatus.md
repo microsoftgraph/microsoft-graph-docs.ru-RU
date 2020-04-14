@@ -2,17 +2,19 @@
 title: Тип ресурса Оффицеклиентчеккинстатус
 description: Сущность, описывающая статистику по возврату клиента.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 66087cd47fa70352f8051fc220820ea355805f19
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3a2f8bb8728a43187903016ca3417b8e6655b3ab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797341"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471491"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>Тип ресурса Оффицеклиентчеккинстатус
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,13 +28,13 @@ ms.locfileid: "42797341"
 |deviceName|String|Имя устройства, пытающееся вернуть.|
 |devicePlatform|String|Платформа устройства пытается вернуться.|
 |девицеплатформверсион|String|Версия платформы устройства, пытающаяся вернуть значение.|
-|вассукцессфул|Логический|, Если последний возврат выполнен успешно.|
+|вассукцессфул|Boolean|, Если последний возврат выполнен успешно.|
 |userId|String|Идентификатор пользователя, использующий устройство.|
 |чеккиндатетиме|DateTimeOffset|Время последнего возврата устройства в формате UTC.|
 |Ошибк|String|Сообщение об ошибке, если оно связано с последним возвратом.|
 |appliedPolicies|Коллекция String|Список политик, доставляемых на устройство при последнем возврате.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

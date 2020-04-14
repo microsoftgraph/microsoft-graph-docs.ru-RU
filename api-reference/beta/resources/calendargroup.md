@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса calendarGroup
 description: Группа пользовательских календарей.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 175b3b8372214851ef62cf0740779b19fd2d4ce1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a630d35f5527494ce4cf477219dfd1f22547c490
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507833"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471498"
 ---
 # <a name="calendargroup-resource-type"></a>Тип ресурса calendarGroup
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,10 +25,10 @@ ms.locfileid: "42507833"
 | Метод                                                      | Возвращаемый тип                        | Описание                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
 | [Список групп календарей](../api/user-list-calendargroups.md)  | Коллекция [Calendar](calendar.md) | Получение групп календарей пользователя.                               |
-| [Создание группы календарей](../api/user-post-calendargroups.md) | [Календарь](calendar.md)            | Создание группы календарей.                                  |
+| [Создание группы календарей](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | Создание группы календарей.                                  |
 | [Получение группы календарей](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | Чтение свойств и связей, принадлежащих объекту группы календарей. |
 | [Обновление](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | Обновление объекта calendarGroup.                                  |
-| [удаление](../api/calendargroup-delete.md);                    | Нет                               | Удаление объекта calendarGroup.                                  |
+| [Удаление](../api/calendargroup-delete.md)                    | Нет                               | Удаление объекта calendarGroup.                                  |
 | [Список календарей](../api/calendargroup-list-calendars.md)    | Коллекция объектов [Calendar](calendar.md) | Список календарей в группе календарей.                           |
 | [Создание объекта Calendar](../api/calendargroup-post-calendars.md)   | [Calendar](calendar.md)            | Создание календаря в группе календарей.                    |
 
@@ -41,7 +41,7 @@ ms.locfileid: "42507833"
 | classId   | Guid   | Идентификатор класса. Только для чтения.                                                                                                                                                                          |
 | id        | Строка | Уникальный идентификатор группы. Только для чтения.                                                                                                                                                                 |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип                               | Описание                                                                    |
 | :----------- | :--------------------------------- | :----------------------------------------------------------------------------- |

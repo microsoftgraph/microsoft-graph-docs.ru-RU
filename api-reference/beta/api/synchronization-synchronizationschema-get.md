@@ -3,18 +3,18 @@ title: Получение Синчронизатионсчема
 description: Получение схемы для данного задания или шаблона синхронизации.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 20b47083cbf2bef226dab6680a87a438c719bc31
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7b7d961b70be43f569c391660ef567b1852c42d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452934"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471191"
 ---
 # <a name="get-synchronizationschema"></a>Получение Синчронизатионсчема
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса windowsUniversalAppX
 description: Содержит свойства, в том числе унаследованные, для универсальных бизнес-приложений AppX Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f2a0fa86edac8df7fd437c0660209f09462c9ba
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6e1787d1bfa45ed92b5d2e0a2b8387002fdcbc98
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797453"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472140"
 ---
 # <a name="windowsuniversalappx-resource-type"></a>Тип ресурса windowsUniversalAppX
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,7 @@ ms.locfileid: "42797453"
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
 |identityVersion|String|Версия удостоверения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|

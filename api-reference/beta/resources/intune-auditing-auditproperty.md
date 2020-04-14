@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса auditProperty
 description: Класс, содержащий свойства для свойства аудита.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f1f5cc213f99300811c627692a516ac8c0b6e89
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dd5a43f1837ed3acf8927af5bac4e46d864f3fec
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797425"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472118"
 ---
 # <a name="auditproperty-resource-type"></a>Тип ресурса auditProperty
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42797425"
 |oldValue|String|Старое значение.|
 |newValue|String|Новое значение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

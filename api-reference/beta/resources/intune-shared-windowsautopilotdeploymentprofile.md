@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса windowsAutopilotDeploymentProfile
 description: Профиль развертывания Windows для автопилота
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 981cd4d9b1eb50982c56e59d146a876f4f52ce8f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1ec2ca148b66078f7da8b60fff82a829eba8ce34
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766828"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471961"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса windowsAutopilotDeploymentProfile
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -39,13 +41,13 @@ ms.locfileid: "42766828"
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения профиля|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Настройка "нет на месте"|
 |енроллментстатусскринсеттингс|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Настройка экрана состояния регистрации|
-|екстраксардварехаш|Логический|Извлечение Хардварехаш для профиля|
+|екстраксардварехаш|Boolean|Извлечение Хардварехаш для профиля|
 |девиценаметемплате|String|Шаблон, используемый для именования автопилотного устройства. Это может быть настраиваемый текст, который также может содержать серийный номер устройства или случайное число. Общая длина текста, созданного шаблоном, не может превышать 15 символов.|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства автопилота, к которому применяется этот профиль. Возможные значения: `windowsPc`, `surfaceHub2`.|
-|енаблевхитеглове|Логический|Включите для профиля белый Глове для автопилотного развертывания.|
+|енаблевхитеглове|Boolean|Включите для профиля белый Глове для автопилотного развертывания.|
 |roleScopeTagIds|Коллекция String|Теги областей для профиля.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |**Регистрации**|

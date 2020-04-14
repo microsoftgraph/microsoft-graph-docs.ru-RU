@@ -1,18 +1,20 @@
 ---
 title: Создание Виндовсфеатуреупдатепрофиле
 description: Создание нового объекта Виндовсфеатуреупдатепрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b300cb20e48a35986a8cd2f9ed87151999fc4f4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4fd5beb23e4581be24f6e119dae26403a245638c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800405"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471267"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>Создание Виндовсфеатуреупдатепрофиле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42800405"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +46,7 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Виндовсфеатуреупдатепрофиле в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсфеатуреупдатепрофиле.
@@ -97,7 +99,6 @@ Content-Length: 379
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

@@ -3,16 +3,18 @@ title: 'Синчронизатионсчема: функции'
 description: Перечисление всех функций, которые в настоящее время поддерживаются в Аттрибутемаппингсаурце.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 592c92eccc22f426bf6051391fdeed9ea738e9d3
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 4d47a20fd9a2ddc36b18d411c4fb55939b97362f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724458"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471206"
 ---
 # <a name="synchronizationschema-functions"></a>Синчронизатионсчема: функции
+
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +37,7 @@ GET /servicePrincipals/{id}/synchronization/templates/{templateId}/schema/functi
 GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 
 | Имя           | Тип    | Описание|
 |:---------------|:--------|:-----------|
@@ -45,7 +47,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md) в тексте отклика.
 
@@ -54,7 +56,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_functions"
@@ -62,15 +64,15 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/functions
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationschema-functions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-functions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-functions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

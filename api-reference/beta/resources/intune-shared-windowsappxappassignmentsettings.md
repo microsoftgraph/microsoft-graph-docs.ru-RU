@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Виндовсаппксаппассигнментсеттингс
 description: Содержит свойства, используемые при назначении мобильного приложения Windows AppX группе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f0732a9399f711d3db8b9e95b57182877879fc8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 54adb99d9821971a120995316920c8811e988c72
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766856"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471976"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>Тип ресурса Виндовсаппксаппассигнментсеттингс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,7 +30,7 @@ ms.locfileid: "42766856"
 |:---|:---|:---|
 |useDeviceContext|Boolean|Указывает, следует ли использовать контекст выполнения устройства для мобильного приложения Windows AppX.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

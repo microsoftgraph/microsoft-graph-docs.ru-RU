@@ -1,20 +1,20 @@
 ---
 title: Работа с API отчетов об использовании методов проверки подлинности
 description: Отчет об использовании способов проверки подлинности помогает Организации определить, как их конечные пользователи используют функции Azure Active Directory, такие как самостоятельный сброс паролей и многофакторная проверка подлинности (MFA).
-author: davidmu1
 localization_priority: Normal
-ms.prod: reports
+author: kholtz
+ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 8f20c633d1cfcbadd50a1c892cf6370211e0acb7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d7f7a8e6cddf308c5681f74ca6546a9467704cc6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508082"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472202"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>Работа с API отчетов об использовании методов проверки подлинности
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

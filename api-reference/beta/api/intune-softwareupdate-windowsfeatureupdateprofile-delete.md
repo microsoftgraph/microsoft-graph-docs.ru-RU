@@ -1,18 +1,20 @@
 ---
 title: Удаление Виндовсфеатуреупдатепрофиле
 description: Удаляет объект Виндовсфеатуреупдатепрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a163ac39b4666b0b8146e2785e7dac48cc1f6b2b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ed141ac0125738aa81cde3cfbd225d13ca81dd68
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800398"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471247"
 ---
 # <a name="delete-windowsfeatureupdateprofile"></a>Удаление Виндовсфеатуреупдатепрофиле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42800398"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +46,7 @@ DELETE /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfi
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdatePro
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

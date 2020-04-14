@@ -4,17 +4,17 @@ description: Вы можете добавить связанное содерж�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: angelgolfer-ms
-ms.openlocfilehash: 7aebce941e9af369dc8e04c41f75142479f42d4c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 6774991b2fc117ff35d1d209e2a12f89e7284795
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508166"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472224"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

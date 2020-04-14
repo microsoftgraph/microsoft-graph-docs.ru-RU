@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Девицедетаил
-description: Показывает сведения о устройствах, связанных с устройством, используемом для входа. Содержит такие сведения, как браузер устройств и сведения о ОС, если устройство управляется службой Azure AD.
+description: Показывает сведения о устройствах, связанных с устройством, используемом для входа.
 localization_priority: Normal
-author: davidmu1
+author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 59d0912aefb5578be2bc1c65aeecd0897a94f899
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8d19eefbc9ca7f9a750ddf5ebe231cf57366d765
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507249"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472147"
 ---
 # <a name="devicedetail-resource-type"></a>Тип ресурса Девицедетаил
 
@@ -24,7 +24,7 @@ ms.locfileid: "42507249"
 |Обозреватель|String|Указывает сведения, используемые для входа в браузер.|
 |deviceId|String|Уникальный идентификатор устройства, используемого для входа.|
 |displayName|String|Указывает имя устройства, используемого для входа.|
-|isCompliant|Логический|Указывает, является ли устройство совместимым.|
+|isCompliant|Boolean|Указывает, является ли устройство совместимым.|
 |isManaged|Boolean|Указывает, является ли устройство управляемым.|
 |operatingSystem|String|Указывает имя и версию операционной системы, которые используются для входа в систему.|
 |trustType|String|Указывает, является ли устройство, на который выполнен вход, подключен к рабочему месту, AzureAD присоединен, присоединен к домену. |
