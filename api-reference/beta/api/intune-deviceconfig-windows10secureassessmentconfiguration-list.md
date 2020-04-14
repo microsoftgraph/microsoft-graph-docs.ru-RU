@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов windows10SecureAssessmentConfiguration
 description: Список свойств и связей объектов windows10SecureAssessmentConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3338c80b0deb18509cf2123068b5c60f8b4275a8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9816607542afa0bdab9421ecd1083aceebee5532
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42738286"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43338615"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>Перечисление объектов windows10SecureAssessmentConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42738286"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -113,7 +115,6 @@ Content-Length: 1768
   ]
 }
 ```
-
 
 
 

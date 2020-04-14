@@ -1,18 +1,20 @@
 ---
 title: Получение windows10CertificateProfileBase
 description: Чтение свойств и связей объекта windows10CertificateProfileBase.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c5b798540ed669f2c6f12113ef6b8b293002a473
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ea868d46e839059dfcd43297eb539f37b60b3585
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42741380"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43341138"
 ---
 # <a name="get-windows10certificateprofilebase"></a>Получение windows10CertificateProfileBase
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42741380"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -113,7 +115,6 @@ Content-Length: 1578
   }
 }
 ```
-
 
 
 

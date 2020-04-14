@@ -1,18 +1,20 @@
 ---
 title: Список windows10NetworkBoundaryConfigurations
 description: Список свойств и связей объектов windows10NetworkBoundaryConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c08106ae153b4d9dbc502a24d9f7acd3101979d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2230f1b7ee2d97bc266a26820b3e645d83970031
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42739042"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43339721"
 ---
 # <a name="list-windows10networkboundaryconfigurations"></a>Список windows10NetworkBoundaryConfigurations
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42739042"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -136,7 +138,6 @@ Content-Length: 2474
   ]
 }
 ```
-
 
 
 

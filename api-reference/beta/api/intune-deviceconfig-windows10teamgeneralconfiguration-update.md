@@ -1,18 +1,20 @@
 ---
 title: Обновление windows10TeamGeneralConfiguration
 description: Обновление свойств объекта windows10TeamGeneralConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d1fd44a5d247610529abfa977d8bacdbfcf51cf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dc649d7f289c472a42d5297b0bdb97c94393dbb6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42737921"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43337954"
 ---
 # <a name="update-windows10teamgeneralconfiguration"></a>Обновление windows10TeamGeneralConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42737921"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,7 +58,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Логическое|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -64,18 +66,18 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|azureOperationalInsightsBlockTelemetry|Логический|Указывает, следует ли заблокировать оперативную аналитику Azure.|
+|azureOperationalInsightsBlockTelemetry|Логическое|Указывает, следует ли заблокировать оперативную аналитику Azure.|
 |azureOperationalInsightsWorkspaceId|String|Идентификатор рабочей области оперативной аналитики Azure.|
 |azureOperationalInsightsWorkspaceKey|String|Ключ рабочей области оперативной аналитики Azure.|
-|connectAppBlockAutoLaunch|Логический|Указывает, следует ли автоматически запускать приложение Connect, когда начинается проекция.|
-|maintenanceWindowBlocked|Логический|Указывает, следует ли запретить устанавливать период обслуживания для обновлений устройства.|
+|connectAppBlockAutoLaunch|Логическое|Указывает, следует ли автоматически запускать приложение Connect, когда начинается проекция.|
+|maintenanceWindowBlocked|Логическое|Указывает, следует ли запретить устанавливать период обслуживания для обновлений устройства.|
 |maintenanceWindowDurationInHours|Int32|Длительность периода обслуживания для обновлений устройства. Допустимые значения: от 0 до 5|
 |maintenanceWindowStartTime|TimeOfDay|Начало периода обслуживания для обновлений устройства.|
 |miracastChannel|[miracastChannel](../resources/intune-deviceconfig-miracastchannel.md)|Канал. Возможные значения: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne`, `oneHundredSixtyFive`.|
-|miracastBlocked|Логический|Указывает, следует ли заблокировать беспроводное проецирование.|
-|miracastRequirePin|Логический|Указывает, обязательно ли использовать ПИН-код для беспроводного проецирования.|
-|settingsBlockMyMeetingsAndFiles|Логический|Указывает, следует ли отключить функцию "Мои встречи и файлы" в меню "Пуск", которая показывает собрания и файлы вошедшего пользователя из Office 365.|
-|settingsBlockSessionResume|Логический|Указывает, следует ли разрешить возобновление сеанса после истечения времени.|
+|miracastBlocked|Логическое|Указывает, следует ли заблокировать беспроводное проецирование.|
+|miracastRequirePin|Логическое|Указывает, обязательно ли использовать ПИН-код для беспроводного проецирования.|
+|settingsBlockMyMeetingsAndFiles|Логическое|Указывает, следует ли отключить функцию "Мои встречи и файлы" в меню "Пуск", которая показывает собрания и файлы вошедшего пользователя из Office 365.|
+|settingsBlockSessionResume|Логическое|Указывает, следует ли разрешить возобновление сеанса после истечения времени.|
 |settingsBlockSigninSuggestions|Boolean|Указывает, следует ли отключить автоматическое добавление в диалоговое окно входа приглашенных из запланированных собраний.|
 |settingsDefaultVolume|Int32|Задает объем нового сеанса по умолчанию. Допустимые значения: от 0 до 100. Значение по умолчанию — 45. Допустимые значения: от 0 до 100|
 |settingsScreenTimeoutInMinutes|Int32|Определяет время до отключения экрана Центра (в минутах).|
@@ -214,7 +216,6 @@ Content-Length: 2187
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
-
 
 
 

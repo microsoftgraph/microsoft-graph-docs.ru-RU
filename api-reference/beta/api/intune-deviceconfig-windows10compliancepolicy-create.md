@@ -1,18 +1,20 @@
 ---
 title: Создание windows10CompliancePolicy
 description: Создает объект windows10CompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cc2e2058e989bcea72d8289a02f6ac494537964e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a5222dbd92ba77544e367d6c29e2a1ec7d1de4fb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42741324"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43340820"
 ---
 # <a name="create-windows10compliancepolicy"></a>Создание windows10CompliancePolicy
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42741324"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -59,36 +61,36 @@ POST /deviceManagement/deviceCompliancePolicies
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |passwordRequired|Логический|Указывает на то, что для разблокировки устройства с Windows требуется пароль.|
-|passwordBlockSimple|Логический|Указывает, требуется ли блокировать простой пароль.|
-|passwordRequiredToUnlockFromIdle|Логический|Указывает на то, что для разблокировки неактивного устройства требуется указывать пароль.|
+|passwordBlockSimple|Логическое|Указывает, требуется ли блокировать простой пароль.|
+|passwordRequiredToUnlockFromIdle|Логическое|Указывает на то, что для разблокировки неактивного устройства требуется указывать пароль.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
 |passwordExpirationDays|Int32|Срок действия пароля (в днях).|
 |passwordMinimumLength|Int32|Минимальная длина пароля.|
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, повторное использование которых требуется запретить.|
-|requireHealthyDeviceReport|Логический|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности.|
+|requireHealthyDeviceReport|Логическое|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности.|
 |osMinimumVersion|String|Минимальная версия Windows 10.|
 |osMaximumVersion|String|Максимальная версия Windows 10.|
 |mobileOsMinimumVersion|String|Минимальная версия Windows Phone.|
 |mobileOsMaximumVersion|String|Максимальная версия Windows Phone.|
-|earlyLaunchAntiMalwareDriverEnabled|Логический|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (драйвер раннего запуска антивредоносной программы включен).|
-|bitLockerEnabled|Логический|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (средство BitLocker включено).|
-|secureBootEnabled|Логический|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (безопасная загрузка включена).|
+|earlyLaunchAntiMalwareDriverEnabled|Логическое|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (драйвер раннего запуска антивредоносной программы включен).|
+|bitLockerEnabled|Логическое|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (средство BitLocker включено).|
+|secureBootEnabled|Логическое|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (безопасная загрузка включена).|
 |codeIntegrityEnabled|Boolean|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Windows.|
-|Свойства activefirewallrequired|Логический|Требуется активный брандмауэр на устройствах Windows.|
-|дефендеренаблед|Логический|Требуется антивредоносная программа защитника Windows на устройствах Windows.|
+|Свойства activefirewallrequired|Логическое|Требуется активный брандмауэр на устройствах Windows.|
+|дефендеренаблед|Логическое|Требуется антивредоносная программа защитника Windows на устройствах Windows.|
 |дефендерверсион|String|Требовать минимальную версию защиты от вредоносных программ Защитника Windows на устройствах Windows.|
-|сигнатуреаутофдате|Логический|Обязательное обновление подписи антивредоносной программы защитника Windows на устройствах Windows.|
-|ртпенаблед|Логический|Требование защиты от вредоносных программ Защитника Windows в режиме реального времени на устройствах Windows.|
-|антивирусрекуиред|Логический|Требование наличия антивирусных решений, зарегистрированных в Windows Декурити Center для включения и отслеживания (например, Symantec, защитник Windows).|
-|антиспиваререкуиред|Логический|Обязательное решение для защиты от шпионских программ, зарегистрированное в Windows Декурити Center для включения и мониторинга (например, Symantec, защитник Windows).|
+|сигнатуреаутофдате|Логическое|Обязательное обновление подписи антивредоносной программы защитника Windows на устройствах Windows.|
+|ртпенаблед|Логическое|Требование защиты от вредоносных программ Защитника Windows в режиме реального времени на устройствах Windows.|
+|антивирусрекуиред|Логическое|Требование наличия антивирусных решений, зарегистрированных в Windows Декурити Center для включения и отслеживания (например, Symantec, защитник Windows).|
+|антиспиваререкуиред|Логическое|Обязательное решение для защиты от шпионских программ, зарегистрированное в Windows Декурити Center для включения и мониторинга (например, Symantec, защитник Windows).|
 |validOperatingSystemBuildRanges|Коллекция [оператингсистемверсионранже](../resources/intune-deviceconfig-operatingsystemversionrange.md)|Допустимые диапазоны сборки операционной системы на устройствах Windows. Эта коллекция может содержать не более 10 000 элементов.|
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Потребовать минимального уровня риска для защиты от угроз для отчетов о несоответствии. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|конфигуратионманажеркомплианцерекуиред|Логический|Необходимо учитывать состояние соответствия SCCM в отношении состояния соответствия Intune.|
-|тпмрекуиред|Логический|Требуется наличие доверенного платформенного модуля (TPM).|
+|конфигуратионманажеркомплианцерекуиред|Логическое|Необходимо учитывать состояние соответствия SCCM в отношении состояния соответствия Intune.|
+|тпмрекуиред|Логическое|Требуется наличие доверенного платформенного модуля (TPM).|
 
 
 
@@ -211,7 +213,6 @@ Content-Length: 1862
   "tpmRequired": true
 }
 ```
-
 
 
 

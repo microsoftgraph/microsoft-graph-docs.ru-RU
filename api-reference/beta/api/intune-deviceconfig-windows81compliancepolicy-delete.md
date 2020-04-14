@@ -1,18 +1,20 @@
 ---
 title: Delete windows81CompliancePolicy
 description: Удаляет объект windows81CompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e39c6f1caa97f083b7dbdfe3b9a3c412df474760
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 126ce5b7fbfbbec9b88d4ecbfb5343018fae2358
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42737444"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43337334"
 ---
 # <a name="delete-windows81compliancepolicy"></a>Delete windows81CompliancePolicy
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42737444"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Создание объекта windows81CompliancePolicy
 description: Создание объекта windows81CompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cadbf622d2ebf55504458d10cd3bec0328d434c7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c135dd7951cd36639072bc98b0dcc2b3947e7fff
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42737662"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43337377"
 ---
 # <a name="create-windows81compliancepolicy"></a>Создание объекта windows81CompliancePolicy
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42737662"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -137,7 +139,6 @@ Content-Length: 836
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов windows10TeamGeneralConfiguration
 description: Перечисление свойств и связей объектов windows10TeamGeneralConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 09c67398d544113f587e1c9224f08f745888e2fa
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 608aaa5c4a6160509661c835e939bed0538ba9b5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42737949"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43338113"
 ---
 # <a name="list-windows10teamgeneralconfigurations"></a>Перечисление объектов windows10TeamGeneralConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42737949"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -125,7 +127,6 @@ Content-Length: 2428
   ]
 }
 ```
-
 
 
 

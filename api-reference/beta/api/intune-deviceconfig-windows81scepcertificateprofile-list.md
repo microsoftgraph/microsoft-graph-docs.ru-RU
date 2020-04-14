@@ -1,18 +1,20 @@
 ---
 title: Список windows81SCEPCertificateProfiles
 description: Список свойств и связей объектов windows81SCEPCertificateProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c481e8fe834935136c0ff42d9d01062a49bdb3c9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f0a5b8130e907ce4ec839df2cd7d01891e55158b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42736918"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43337098"
 ---
 # <a name="list-windows81scepcertificateprofiles"></a>Список windows81SCEPCertificateProfiles
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42736918"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -134,7 +136,6 @@ Content-Length: 2473
   ]
 }
 ```
-
 
 
 

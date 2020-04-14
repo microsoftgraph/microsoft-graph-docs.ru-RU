@@ -1,18 +1,20 @@
 ---
 title: Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration
 description: Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c149be4cda30848e67b26bf8bdfd1eebc6f8b43a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ddb8b2c05b0d315c5f90fbed0f151b66c8efb28c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42736057"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43336267"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42736057"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,7 +57,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Логическое|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -65,8 +67,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |адванцедсреатпротектиононбоардингблоб|String|Объект выборкам входящей миграции защитника Windows.|
 |адванцедсреатпротектиононбоардингфиленаме|String|Имя файла, из которого был получен Адванцедсреатпротектиононбоардингблоб.|
-|адванцедсреатпротектионаутопопулатеонбоардингблоб|Логический|Автоматическое заполнение встроенного объекта BLOB программным способом из службы Advanced Threat protection|
-|allowSampleSharing|Логический|Правило "Разрешить общий доступ к выборкам" службы Advanced Threat Protection в Защитнике Windows|
+|адванцедсреатпротектионаутопопулатеонбоардингблоб|Логическое|Автоматическое заполнение встроенного объекта BLOB программным способом из службы Advanced Threat protection|
+|allowSampleSharing|Логическое|Правило "Разрешить общий доступ к выборкам" службы Advanced Threat Protection в Защитнике Windows|
 |enableExpeditedTelemetryReporting|Boolean|Увеличение частоты создания отчетов о телеметрии службой Advanced Threat Protection в Защитнике Windows.|
 |адванцедсреатпротектионоффбоардингблоб|String|Большой двоичный объект отключения защитника Windows выборкам.|
 |адванцедсреатпротектионоффбоардингфиленаме|String|Имя файла, из которого был получен Адванцедсреатпротектионоффбоардингблоб.|
@@ -174,7 +176,6 @@ Content-Length: 1775
   "advancedThreatProtectionOffboardingFilename": "Advanced Threat Protection Offboarding Filename value"
 }
 ```
-
 
 
 
