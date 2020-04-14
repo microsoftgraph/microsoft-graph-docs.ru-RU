@@ -1,62 +1,62 @@
 ---
 title: Параметры каталога списка
 description: Получение списка объектов параметров каталога.
-author: dkershaw10
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 46765047bfa5e24bb8ccd14b95986f9c3878909e
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: e0b105d5bd4c5178b3a9f62aeda781bdb74eae3a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180786"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375638"
 ---
-# <a name="list-directory-settings"></a><span data-ttu-id="baf15-103">Параметры каталога списка</span><span class="sxs-lookup"><span data-stu-id="baf15-103">List directory settings</span></span>
+# <a name="list-directory-settings"></a><span data-ttu-id="39f5e-103">Параметры каталога списка</span><span class="sxs-lookup"><span data-stu-id="39f5e-103">List directory settings</span></span>
 
-<span data-ttu-id="baf15-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="baf15-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="39f5e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="39f5e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="baf15-105">Получение списка объектов параметров каталога.</span><span class="sxs-lookup"><span data-stu-id="baf15-105">Retrieve a list of directory setting objects.</span></span>
+<span data-ttu-id="39f5e-105">Получение списка объектов параметров каталога.</span><span class="sxs-lookup"><span data-stu-id="39f5e-105">Retrieve a list of directory setting objects.</span></span>
 
-> <span data-ttu-id="baf15-106">**Note**: версия/Beta этого API применяется только к группам.</span><span class="sxs-lookup"><span data-stu-id="baf15-106">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="baf15-107">Версия/v1.0 этого API была переименована в *List граупсеттингс*.</span><span class="sxs-lookup"><span data-stu-id="baf15-107">The /v1.0 version of this API has been renamed to *List groupSettings*.</span></span>
+> <span data-ttu-id="39f5e-106">**Note**: версия/Beta этого API применяется только к группам.</span><span class="sxs-lookup"><span data-stu-id="39f5e-106">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="39f5e-107">Версия/v1.0 этого API была переименована в *List граупсеттингс*.</span><span class="sxs-lookup"><span data-stu-id="39f5e-107">The /v1.0 version of this API has been renamed to *List groupSettings*.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="baf15-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="baf15-108">Permissions</span></span>
-<span data-ttu-id="baf15-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="baf15-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="39f5e-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="39f5e-108">Permissions</span></span>
+<span data-ttu-id="39f5e-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="39f5e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="baf15-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="baf15-111">Permission type</span></span>      | <span data-ttu-id="baf15-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="baf15-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="39f5e-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="39f5e-111">Permission type</span></span>      | <span data-ttu-id="39f5e-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="39f5e-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="baf15-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="baf15-113">Delegated (work or school account)</span></span> | <span data-ttu-id="baf15-114">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="baf15-114">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="baf15-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="baf15-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="baf15-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="baf15-116">Not supported.</span></span>    |
-|<span data-ttu-id="baf15-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="baf15-117">Application</span></span> | <span data-ttu-id="baf15-118">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="baf15-118">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="39f5e-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="39f5e-113">Delegated (work or school account)</span></span> | <span data-ttu-id="39f5e-114">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="39f5e-114">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="39f5e-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="39f5e-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="39f5e-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="39f5e-116">Not supported.</span></span>    |
+|<span data-ttu-id="39f5e-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="39f5e-117">Application</span></span> | <span data-ttu-id="39f5e-118">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="39f5e-118">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="baf15-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="baf15-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="39f5e-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="39f5e-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="baf15-120">Перечисление параметров на уровне клиента или группы</span><span class="sxs-lookup"><span data-stu-id="baf15-120">List tenant-wide or group settings</span></span>
+<span data-ttu-id="39f5e-120">Перечисление параметров на уровне клиента или группы</span><span class="sxs-lookup"><span data-stu-id="39f5e-120">List tenant-wide or group settings</span></span>
 ```http
 GET /settings
 GET /group/{id}/settings
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="baf15-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="baf15-121">Optional query parameters</span></span>
-<span data-ttu-id="baf15-122">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="baf15-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="39f5e-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="39f5e-121">Optional query parameters</span></span>
+<span data-ttu-id="39f5e-122">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="39f5e-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="baf15-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="baf15-123">Request headers</span></span>
-| <span data-ttu-id="baf15-124">Имя</span><span class="sxs-lookup"><span data-stu-id="baf15-124">Name</span></span>      |<span data-ttu-id="baf15-125">Описание</span><span class="sxs-lookup"><span data-stu-id="baf15-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="39f5e-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="39f5e-123">Request headers</span></span>
+| <span data-ttu-id="39f5e-124">Имя</span><span class="sxs-lookup"><span data-stu-id="39f5e-124">Name</span></span>      |<span data-ttu-id="39f5e-125">Описание</span><span class="sxs-lookup"><span data-stu-id="39f5e-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="baf15-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="baf15-126">Authorization</span></span>  | <span data-ttu-id="baf15-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="baf15-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="39f5e-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="39f5e-126">Authorization</span></span>  | <span data-ttu-id="39f5e-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="39f5e-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="baf15-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="baf15-129">Request body</span></span>
-<span data-ttu-id="baf15-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="baf15-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="39f5e-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="39f5e-129">Request body</span></span>
+<span data-ttu-id="39f5e-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="39f5e-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="baf15-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="baf15-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="39f5e-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="39f5e-131">Response</span></span>
 
-<span data-ttu-id="baf15-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [директорисеттинг](../resources/directorysetting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="baf15-132">If successful, this method returns a `200 OK` response code and collection of [directorySetting](../resources/directorysetting.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="baf15-133">Пример</span><span class="sxs-lookup"><span data-stu-id="baf15-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="baf15-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="baf15-134">Request</span></span>
-<span data-ttu-id="baf15-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="baf15-135">Here is an example of the request.</span></span>
+<span data-ttu-id="39f5e-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [директорисеттинг](../resources/directorysetting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="39f5e-132">If successful, this method returns a `200 OK` response code and collection of [directorySetting](../resources/directorysetting.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="39f5e-133">Пример</span><span class="sxs-lookup"><span data-stu-id="39f5e-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="39f5e-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="39f5e-134">Request</span></span>
+<span data-ttu-id="39f5e-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="39f5e-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="baf15-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="baf15-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="39f5e-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="39f5e-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_settings"
@@ -64,22 +64,22 @@ GET /group/{id}/settings
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/settings
 ```
-# <a name="c"></a>[<span data-ttu-id="baf15-137">C#</span><span class="sxs-lookup"><span data-stu-id="baf15-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="39f5e-137">C#</span><span class="sxs-lookup"><span data-stu-id="39f5e-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-settings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="baf15-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="baf15-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="39f5e-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="39f5e-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-settings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="baf15-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="baf15-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="39f5e-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="39f5e-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-settings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="baf15-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="baf15-140">Response</span></span>
-<span data-ttu-id="baf15-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="baf15-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="39f5e-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="39f5e-140">Response</span></span>
+<span data-ttu-id="39f5e-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="39f5e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

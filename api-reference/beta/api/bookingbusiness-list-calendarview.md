@@ -2,69 +2,69 @@
 title: Представление календаря "Список резервирований"
 description: Получение коллекции объектов Букингаппоинтмент для Букингбусинесс, которая происходит в указанном диапазоне дат.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 65840517f1029c06ac819ec54a9f2897d440cd1d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a496740bf94ef524560d28b08498da852ccf1e2f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441258"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43366990"
 ---
-# <a name="list-bookings-calendarview"></a><span data-ttu-id="33063-103">Представление календаря "Список резервирований"</span><span class="sxs-lookup"><span data-stu-id="33063-103">List Bookings calendarView</span></span>
+# <a name="list-bookings-calendarview"></a><span data-ttu-id="cd091-103">Представление календаря "Список резервирований"</span><span class="sxs-lookup"><span data-stu-id="cd091-103">List Bookings calendarView</span></span>
 
-<span data-ttu-id="33063-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="33063-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cd091-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cd091-104">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="33063-105">Получение коллекции объектов [букингаппоинтмент](../resources/bookingappointment.md) для [букингбусинесс](../resources/bookingbusiness.md), которая происходит в указанном диапазоне дат.</span><span class="sxs-lookup"><span data-stu-id="33063-105">Get the collection of [bookingAppointment](../resources/bookingappointment.md) objects for a [bookingBusiness](../resources/bookingbusiness.md), that occurs in the specified date range.</span></span>
+<span data-ttu-id="cd091-105">Получение коллекции объектов [букингаппоинтмент](../resources/bookingappointment.md) для [букингбусинесс](../resources/bookingbusiness.md), которая происходит в указанном диапазоне дат.</span><span class="sxs-lookup"><span data-stu-id="cd091-105">Get the collection of [bookingAppointment](../resources/bookingappointment.md) objects for a [bookingBusiness](../resources/bookingbusiness.md), that occurs in the specified date range.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="33063-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="33063-106">Permissions</span></span>
-<span data-ttu-id="33063-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="33063-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cd091-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cd091-106">Permissions</span></span>
+<span data-ttu-id="cd091-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cd091-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="33063-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="33063-109">Permission type</span></span>      | <span data-ttu-id="33063-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="33063-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cd091-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cd091-109">Permission type</span></span>      | <span data-ttu-id="cd091-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cd091-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="33063-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="33063-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="33063-112">Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL</span><span class="sxs-lookup"><span data-stu-id="33063-112">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="33063-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="33063-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="33063-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="33063-114">Not supported.</span></span>   |
-|<span data-ttu-id="33063-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="33063-115">Application</span></span> | <span data-ttu-id="33063-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="33063-116">Not supported.</span></span>  |
+|<span data-ttu-id="cd091-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cd091-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="cd091-112">Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL</span><span class="sxs-lookup"><span data-stu-id="cd091-112">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="cd091-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cd091-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cd091-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd091-114">Not supported.</span></span>   |
+|<span data-ttu-id="cd091-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cd091-115">Application</span></span> | <span data-ttu-id="cd091-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd091-116">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="33063-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="33063-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cd091-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cd091-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="33063-118">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="33063-118">Query parameters</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="cd091-118">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="cd091-118">Query parameters</span></span>
 
-<span data-ttu-id="33063-119">В URL-адресе запроса укажите перечисленные ниже обязательные параметры запроса и их значения.</span><span class="sxs-lookup"><span data-stu-id="33063-119">In the request URL, provide the following required query parameters with values.</span></span>
+<span data-ttu-id="cd091-119">В URL-адресе запроса укажите перечисленные ниже обязательные параметры запроса и их значения.</span><span class="sxs-lookup"><span data-stu-id="cd091-119">In the request URL, provide the following required query parameters with values.</span></span>
 
-| <span data-ttu-id="33063-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="33063-120">Parameter</span></span>    | <span data-ttu-id="33063-121">Тип</span><span class="sxs-lookup"><span data-stu-id="33063-121">Type</span></span>   |<span data-ttu-id="33063-122">Описание</span><span class="sxs-lookup"><span data-stu-id="33063-122">Description</span></span>|
+| <span data-ttu-id="cd091-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="cd091-120">Parameter</span></span>    | <span data-ttu-id="cd091-121">Тип</span><span class="sxs-lookup"><span data-stu-id="cd091-121">Type</span></span>   |<span data-ttu-id="cd091-122">Описание</span><span class="sxs-lookup"><span data-stu-id="cd091-122">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="33063-123">start</span><span class="sxs-lookup"><span data-stu-id="33063-123">start</span></span>|<span data-ttu-id="33063-124">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="33063-124">DateTimeOffset</span></span>|<span data-ttu-id="33063-125">Дата и время начала периода времени, представленного в формате ISO 8601, в формате UTC или смещение относительно времени в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="33063-125">The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="33063-126">Например, полночь UTC 1 января 2018 будет выглядеть следующим образом: ' 2018 г.-01-01T00:00:00Z ', и одно и то же время в PST-файле будет выглядеть следующим образом: ' 2017-12-31T16:00:00-08:00 '.</span><span class="sxs-lookup"><span data-stu-id="33063-126">For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'.</span></span>|
-|<span data-ttu-id="33063-127">end</span><span class="sxs-lookup"><span data-stu-id="33063-127">end</span></span>|<span data-ttu-id="33063-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="33063-128">DateTimeOffset</span></span>|<span data-ttu-id="33063-129">Дата и время окончания периода времени, представленного в формате ISO 8601, в формате UTC или смещение относительно времени в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="33063-129">The end date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="33063-130">Например, 3am UTC на 1 января 2018, будет выглядеть следующим образом: ' 2018 г.-01-01T03:00:00Z ', и одно и то же время в PST-файле будет выглядеть следующим образом: ' 2017-12-31T19:00:00-08:00 '.</span><span class="sxs-lookup"><span data-stu-id="33063-130">For example, 3am UTC on Jan 1, 2018 would look like this: '2018-01-01T03:00:00Z', and the same time in PST would look like this: '2017-12-31T19:00:00-08:00'.</span></span>|
+|<span data-ttu-id="cd091-123">начать</span><span class="sxs-lookup"><span data-stu-id="cd091-123">start</span></span>|<span data-ttu-id="cd091-124">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cd091-124">DateTimeOffset</span></span>|<span data-ttu-id="cd091-125">Дата и время начала периода времени, представленного в формате ISO 8601, в формате UTC или смещение относительно времени в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="cd091-125">The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="cd091-126">Например, полночь UTC 1 января 2018 будет выглядеть следующим образом: ' 2018 г.-01-01T00:00:00Z ', и одно и то же время в PST-файле будет выглядеть следующим образом: ' 2017-12-31T16:00:00-08:00 '.</span><span class="sxs-lookup"><span data-stu-id="cd091-126">For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'.</span></span>|
+|<span data-ttu-id="cd091-127">end</span><span class="sxs-lookup"><span data-stu-id="cd091-127">end</span></span>|<span data-ttu-id="cd091-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cd091-128">DateTimeOffset</span></span>|<span data-ttu-id="cd091-129">Дата и время окончания периода времени, представленного в формате ISO 8601, в формате UTC или смещение относительно времени в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="cd091-129">The end date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC.</span></span> <span data-ttu-id="cd091-130">Например, 3am UTC на 1 января 2018, будет выглядеть следующим образом: ' 2018 г.-01-01T03:00:00Z ', и одно и то же время в PST-файле будет выглядеть следующим образом: ' 2017-12-31T19:00:00-08:00 '.</span><span class="sxs-lookup"><span data-stu-id="cd091-130">For example, 3am UTC on Jan 1, 2018 would look like this: '2018-01-01T03:00:00Z', and the same time in PST would look like this: '2017-12-31T19:00:00-08:00'.</span></span>|
 
-<span data-ttu-id="33063-131">Значения `start` и `end` интерпретируются с использованием смещения часового пояса, указанного в соответствующих значениях, и не влияют на значение `Prefer: outlook.timezone` заголовка, если оно присутствует.</span><span class="sxs-lookup"><span data-stu-id="33063-131">The values of `start` and `end` are interpreted using the timezone offset specified in their corresponding values and are not impacted by the value of the `Prefer: outlook.timezone` header if present.</span></span>
+<span data-ttu-id="cd091-131">Значения `start` и `end` интерпретируются с использованием смещения часового пояса, указанного в соответствующих значениях, и не влияют на значение `Prefer: outlook.timezone` заголовка, если оно присутствует.</span><span class="sxs-lookup"><span data-stu-id="cd091-131">The values of `start` and `end` are interpreted using the timezone offset specified in their corresponding values and are not impacted by the value of the `Prefer: outlook.timezone` header if present.</span></span>
 
-<span data-ttu-id="33063-132">Этот метод также поддерживает некоторые [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="33063-132">This method also supports some of the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="cd091-132">Этот метод также поддерживает некоторые [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="cd091-132">This method also supports some of the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="33063-133">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="33063-133">Request headers</span></span>
-| <span data-ttu-id="33063-134">Имя</span><span class="sxs-lookup"><span data-stu-id="33063-134">Name</span></span>       | <span data-ttu-id="33063-135">Описание</span><span class="sxs-lookup"><span data-stu-id="33063-135">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cd091-133">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cd091-133">Request headers</span></span>
+| <span data-ttu-id="cd091-134">Имя</span><span class="sxs-lookup"><span data-stu-id="cd091-134">Name</span></span>       | <span data-ttu-id="cd091-135">Описание</span><span class="sxs-lookup"><span data-stu-id="cd091-135">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="33063-136">Авторизация</span><span class="sxs-lookup"><span data-stu-id="33063-136">Authorization</span></span>  | <span data-ttu-id="33063-137">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="33063-137">Bearer {code}</span></span>|
+| <span data-ttu-id="cd091-136">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cd091-136">Authorization</span></span>  | <span data-ttu-id="cd091-137">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="cd091-137">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="33063-138">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="33063-138">Request body</span></span>
-<span data-ttu-id="33063-139">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="33063-139">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cd091-138">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cd091-138">Request body</span></span>
+<span data-ttu-id="cd091-139">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cd091-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="33063-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="33063-140">Response</span></span>
-<span data-ttu-id="33063-141">В случае успешного выполнения этот метод `200, OK` возвращает код отклика и объект коллекции [букингаппоинтмент](../resources/bookingappointment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="33063-141">If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cd091-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="cd091-140">Response</span></span>
+<span data-ttu-id="cd091-141">В случае успешного выполнения этот метод `200, OK` возвращает код отклика и объект коллекции [букингаппоинтмент](../resources/bookingappointment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cd091-141">If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="33063-142">Пример</span><span class="sxs-lookup"><span data-stu-id="33063-142">Example</span></span>
-<span data-ttu-id="33063-143">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="33063-143">The following is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="33063-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="33063-144">Request</span></span>
-<span data-ttu-id="33063-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="33063-145">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="cd091-142">Пример</span><span class="sxs-lookup"><span data-stu-id="cd091-142">Example</span></span>
+<span data-ttu-id="cd091-143">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="cd091-143">The following is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="cd091-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="cd091-144">Request</span></span>
+<span data-ttu-id="cd091-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cd091-145">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="33063-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="33063-146">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cd091-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="cd091-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_getcalendarview"
@@ -72,23 +72,23 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
-# <a name="c"></a>[<span data-ttu-id="33063-147">C#</span><span class="sxs-lookup"><span data-stu-id="33063-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cd091-147">C#</span><span class="sxs-lookup"><span data-stu-id="cd091-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusiness-getcalendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="33063-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="33063-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cd091-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cd091-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusiness-getcalendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="33063-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="33063-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cd091-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cd091-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/bookingbusiness-getcalendarview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="33063-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="33063-150">Response</span></span>
-<span data-ttu-id="33063-151">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="33063-151">The following is an example of the response.</span></span> <span data-ttu-id="33063-152">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="33063-152">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="33063-153">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="33063-153">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cd091-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="cd091-150">Response</span></span>
+<span data-ttu-id="cd091-151">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="cd091-151">The following is an example of the response.</span></span> <span data-ttu-id="cd091-152">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="cd091-152">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="cd091-153">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cd091-153">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

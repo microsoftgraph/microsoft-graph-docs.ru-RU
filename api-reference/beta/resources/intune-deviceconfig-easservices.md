@@ -1,34 +1,36 @@
 ---
 title: тип перечисления Еассервицес
 description: Службы Exchange Active Sync.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 85c1bf633fe300f3ddf2efb06345e077d60aa3fc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1286b53a534891b7282b03ade10c6bedaf85c9eb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791928"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43359396"
 ---
-# <a name="easservices-enum-type"></a><span data-ttu-id="263d5-103">тип перечисления Еассервицес</span><span class="sxs-lookup"><span data-stu-id="263d5-103">easServices enum type</span></span>
+# <a name="easservices-enum-type"></a><span data-ttu-id="e3645-103">тип перечисления Еассервицес</span><span class="sxs-lookup"><span data-stu-id="e3645-103">easServices enum type</span></span>
 
-> <span data-ttu-id="263d5-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="263d5-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="e3645-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e3645-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="263d5-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="263d5-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e3645-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e3645-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="263d5-106">Службы Exchange Active Sync.</span><span class="sxs-lookup"><span data-stu-id="263d5-106">Exchange Active Sync services.</span></span>
+> <span data-ttu-id="e3645-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e3645-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="263d5-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="263d5-107">Members</span></span>
-|<span data-ttu-id="263d5-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="263d5-108">Member</span></span>|<span data-ttu-id="263d5-109">Значение</span><span class="sxs-lookup"><span data-stu-id="263d5-109">Value</span></span>|<span data-ttu-id="263d5-110">Описание</span><span class="sxs-lookup"><span data-stu-id="263d5-110">Description</span></span>|
+<span data-ttu-id="e3645-107">Службы Exchange Active Sync.</span><span class="sxs-lookup"><span data-stu-id="e3645-107">Exchange Active Sync services.</span></span>
+
+## <a name="members"></a><span data-ttu-id="e3645-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="e3645-108">Members</span></span>
+|<span data-ttu-id="e3645-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="e3645-109">Member</span></span>|<span data-ttu-id="e3645-110">Значение</span><span class="sxs-lookup"><span data-stu-id="e3645-110">Value</span></span>|<span data-ttu-id="e3645-111">Описание</span><span class="sxs-lookup"><span data-stu-id="e3645-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="263d5-111">none</span><span class="sxs-lookup"><span data-stu-id="263d5-111">none</span></span>|<span data-ttu-id="263d5-112">нуль</span><span class="sxs-lookup"><span data-stu-id="263d5-112">0</span></span>|<span data-ttu-id="263d5-113">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="263d5-113">Not yet documented</span></span>|
-|<span data-ttu-id="263d5-114">calendars</span><span class="sxs-lookup"><span data-stu-id="263d5-114">calendars</span></span>|<span data-ttu-id="263d5-115">1,1</span><span class="sxs-lookup"><span data-stu-id="263d5-115">1</span></span>|<span data-ttu-id="263d5-116">Включает синхронизацию календарей.</span><span class="sxs-lookup"><span data-stu-id="263d5-116">Enables synchronization of calendars.</span></span>|
-|<span data-ttu-id="263d5-117">contacts</span><span class="sxs-lookup"><span data-stu-id="263d5-117">contacts</span></span>|<span data-ttu-id="263d5-118">2</span><span class="sxs-lookup"><span data-stu-id="263d5-118">2</span></span>|<span data-ttu-id="263d5-119">Включает синхронизацию контактов.</span><span class="sxs-lookup"><span data-stu-id="263d5-119">Enables synchronization of contacts.</span></span>|
-|<span data-ttu-id="263d5-120">email</span><span class="sxs-lookup"><span data-stu-id="263d5-120">email</span></span>|<span data-ttu-id="263d5-121">4 </span><span class="sxs-lookup"><span data-stu-id="263d5-121">4</span></span>|<span data-ttu-id="263d5-122">Включает синхронизацию электронной почты.</span><span class="sxs-lookup"><span data-stu-id="263d5-122">Enables synchronization of email.</span></span>|
-|<span data-ttu-id="263d5-123">notes</span><span class="sxs-lookup"><span data-stu-id="263d5-123">notes</span></span>|<span data-ttu-id="263d5-124">8 </span><span class="sxs-lookup"><span data-stu-id="263d5-124">8</span></span>|<span data-ttu-id="263d5-125">Включает синхронизацию заметок.</span><span class="sxs-lookup"><span data-stu-id="263d5-125">Enables synchronization of notes.</span></span>|
-|<span data-ttu-id="263d5-126">напоминания</span><span class="sxs-lookup"><span data-stu-id="263d5-126">reminders</span></span>|<span data-ttu-id="263d5-127">16 </span><span class="sxs-lookup"><span data-stu-id="263d5-127">16</span></span>|<span data-ttu-id="263d5-128">Включает синхронизацию напоминаний.</span><span class="sxs-lookup"><span data-stu-id="263d5-128">Enables synchronization of reminders.</span></span>|
+|<span data-ttu-id="e3645-112">нет</span><span class="sxs-lookup"><span data-stu-id="e3645-112">none</span></span>|<span data-ttu-id="e3645-113">нуль</span><span class="sxs-lookup"><span data-stu-id="e3645-113">0</span></span>|<span data-ttu-id="e3645-114">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="e3645-114">Not yet documented</span></span>|
+|<span data-ttu-id="e3645-115">calendars</span><span class="sxs-lookup"><span data-stu-id="e3645-115">calendars</span></span>|<span data-ttu-id="e3645-116">1,1</span><span class="sxs-lookup"><span data-stu-id="e3645-116">1</span></span>|<span data-ttu-id="e3645-117">Включает синхронизацию календарей.</span><span class="sxs-lookup"><span data-stu-id="e3645-117">Enables synchronization of calendars.</span></span>|
+|<span data-ttu-id="e3645-118">contacts</span><span class="sxs-lookup"><span data-stu-id="e3645-118">contacts</span></span>|<span data-ttu-id="e3645-119">2</span><span class="sxs-lookup"><span data-stu-id="e3645-119">2</span></span>|<span data-ttu-id="e3645-120">Включает синхронизацию контактов.</span><span class="sxs-lookup"><span data-stu-id="e3645-120">Enables synchronization of contacts.</span></span>|
+|<span data-ttu-id="e3645-121">email</span><span class="sxs-lookup"><span data-stu-id="e3645-121">email</span></span>|<span data-ttu-id="e3645-122">4 </span><span class="sxs-lookup"><span data-stu-id="e3645-122">4</span></span>|<span data-ttu-id="e3645-123">Включает синхронизацию электронной почты.</span><span class="sxs-lookup"><span data-stu-id="e3645-123">Enables synchronization of email.</span></span>|
+|<span data-ttu-id="e3645-124">notes</span><span class="sxs-lookup"><span data-stu-id="e3645-124">notes</span></span>|<span data-ttu-id="e3645-125">8 </span><span class="sxs-lookup"><span data-stu-id="e3645-125">8</span></span>|<span data-ttu-id="e3645-126">Включает синхронизацию заметок.</span><span class="sxs-lookup"><span data-stu-id="e3645-126">Enables synchronization of notes.</span></span>|
+|<span data-ttu-id="e3645-127">напоминания</span><span class="sxs-lookup"><span data-stu-id="e3645-127">reminders</span></span>|<span data-ttu-id="e3645-128">16 </span><span class="sxs-lookup"><span data-stu-id="e3645-128">16</span></span>|<span data-ttu-id="e3645-129">Включает синхронизацию напоминаний.</span><span class="sxs-lookup"><span data-stu-id="e3645-129">Enables synchronization of reminders.</span></span>|
 
 
 

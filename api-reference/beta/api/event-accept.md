@@ -1,35 +1,35 @@
 ---
 title: 'event: accept'
 description: Принятие указанного события в календаре пользователя.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: be6fa8113e58c26a5b4253dd511d6ed3de9c94df
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 73fb0b72aa9b7aabcd30aff678c69b8bb205ac5a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423422"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43366420"
 ---
-# <a name="event-accept"></a><span data-ttu-id="a5abd-103">event: accept</span><span class="sxs-lookup"><span data-stu-id="a5abd-103">event: accept</span></span>
+# <a name="event-accept"></a><span data-ttu-id="6ec77-103">event: accept</span><span class="sxs-lookup"><span data-stu-id="6ec77-103">event: accept</span></span>
 
-<span data-ttu-id="a5abd-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="a5abd-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6ec77-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6ec77-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a5abd-105">Принять указанное [событие](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="a5abd-105">Accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="6ec77-105">Принять указанное [событие](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="6ec77-105">Accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a5abd-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a5abd-106">Permissions</span></span>
-<span data-ttu-id="a5abd-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a5abd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6ec77-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6ec77-106">Permissions</span></span>
+<span data-ttu-id="6ec77-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6ec77-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a5abd-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a5abd-109">Permission type</span></span>      | <span data-ttu-id="a5abd-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a5abd-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6ec77-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6ec77-109">Permission type</span></span>      | <span data-ttu-id="6ec77-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6ec77-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a5abd-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a5abd-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a5abd-112">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a5abd-112">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="a5abd-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a5abd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a5abd-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a5abd-114">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="a5abd-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a5abd-115">Application</span></span> | <span data-ttu-id="a5abd-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a5abd-116">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="6ec77-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6ec77-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6ec77-112">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6ec77-112">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="6ec77-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6ec77-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6ec77-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6ec77-114">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="6ec77-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6ec77-115">Application</span></span> | <span data-ttu-id="6ec77-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6ec77-116">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a5abd-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a5abd-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6ec77-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6ec77-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/accept
@@ -47,30 +47,30 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/ac
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/accept
 ```
-## <a name="request-headers"></a><span data-ttu-id="a5abd-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a5abd-118">Request headers</span></span>
-| <span data-ttu-id="a5abd-119">Имя</span><span class="sxs-lookup"><span data-stu-id="a5abd-119">Name</span></span>       | <span data-ttu-id="a5abd-120">Тип</span><span class="sxs-lookup"><span data-stu-id="a5abd-120">Type</span></span> | <span data-ttu-id="a5abd-121">Описание</span><span class="sxs-lookup"><span data-stu-id="a5abd-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6ec77-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6ec77-118">Request headers</span></span>
+| <span data-ttu-id="6ec77-119">Имя</span><span class="sxs-lookup"><span data-stu-id="6ec77-119">Name</span></span>       | <span data-ttu-id="6ec77-120">Тип</span><span class="sxs-lookup"><span data-stu-id="6ec77-120">Type</span></span> | <span data-ttu-id="6ec77-121">Описание</span><span class="sxs-lookup"><span data-stu-id="6ec77-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="a5abd-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a5abd-122">Authorization</span></span>  | <span data-ttu-id="a5abd-123">string</span><span class="sxs-lookup"><span data-stu-id="a5abd-123">string</span></span>  | <span data-ttu-id="a5abd-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a5abd-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a5abd-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a5abd-126">Content-Type</span></span> | <span data-ttu-id="a5abd-127">string</span><span class="sxs-lookup"><span data-stu-id="a5abd-127">string</span></span>  | <span data-ttu-id="a5abd-p103">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a5abd-p103">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="6ec77-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6ec77-122">Authorization</span></span>  | <span data-ttu-id="6ec77-123">string</span><span class="sxs-lookup"><span data-stu-id="6ec77-123">string</span></span>  | <span data-ttu-id="6ec77-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6ec77-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6ec77-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6ec77-126">Content-Type</span></span> | <span data-ttu-id="6ec77-127">string</span><span class="sxs-lookup"><span data-stu-id="6ec77-127">string</span></span>  | <span data-ttu-id="6ec77-p103">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6ec77-p103">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a5abd-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a5abd-130">Request body</span></span>
-<span data-ttu-id="a5abd-131">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="a5abd-131">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6ec77-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6ec77-130">Request body</span></span>
+<span data-ttu-id="6ec77-131">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="6ec77-131">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="a5abd-132">Параметр</span><span class="sxs-lookup"><span data-stu-id="a5abd-132">Parameter</span></span>    | <span data-ttu-id="a5abd-133">Тип</span><span class="sxs-lookup"><span data-stu-id="a5abd-133">Type</span></span>   |<span data-ttu-id="a5abd-134">Описание</span><span class="sxs-lookup"><span data-stu-id="a5abd-134">Description</span></span>|
+| <span data-ttu-id="6ec77-132">Параметр</span><span class="sxs-lookup"><span data-stu-id="6ec77-132">Parameter</span></span>    | <span data-ttu-id="6ec77-133">Тип</span><span class="sxs-lookup"><span data-stu-id="6ec77-133">Type</span></span>   |<span data-ttu-id="6ec77-134">Описание</span><span class="sxs-lookup"><span data-stu-id="6ec77-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a5abd-135">comment</span><span class="sxs-lookup"><span data-stu-id="a5abd-135">comment</span></span>|<span data-ttu-id="a5abd-136">String</span><span class="sxs-lookup"><span data-stu-id="a5abd-136">String</span></span>|<span data-ttu-id="a5abd-p104">Текст, включенный в ответ. Необязательный.</span><span class="sxs-lookup"><span data-stu-id="a5abd-p104">Text included in the response. Optional.</span></span>|
-|<span data-ttu-id="a5abd-139">sendResponse</span><span class="sxs-lookup"><span data-stu-id="a5abd-139">sendResponse</span></span>|<span data-ttu-id="a5abd-140">Логическое</span><span class="sxs-lookup"><span data-stu-id="a5abd-140">Boolean</span></span>|<span data-ttu-id="a5abd-p105">Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.</span><span class="sxs-lookup"><span data-stu-id="a5abd-p105">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
+|<span data-ttu-id="6ec77-135">comment</span><span class="sxs-lookup"><span data-stu-id="6ec77-135">comment</span></span>|<span data-ttu-id="6ec77-136">String</span><span class="sxs-lookup"><span data-stu-id="6ec77-136">String</span></span>|<span data-ttu-id="6ec77-p104">Текст, включенный в ответ. Необязательный.</span><span class="sxs-lookup"><span data-stu-id="6ec77-p104">Text included in the response. Optional.</span></span>|
+|<span data-ttu-id="6ec77-139">sendResponse</span><span class="sxs-lookup"><span data-stu-id="6ec77-139">sendResponse</span></span>|<span data-ttu-id="6ec77-140">Логическое</span><span class="sxs-lookup"><span data-stu-id="6ec77-140">Boolean</span></span>|<span data-ttu-id="6ec77-p105">Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.</span><span class="sxs-lookup"><span data-stu-id="6ec77-p105">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a5abd-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="a5abd-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6ec77-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="6ec77-144">Response</span></span>
 
-<span data-ttu-id="a5abd-p106">В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="a5abd-p106">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="6ec77-p106">В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="6ec77-p106">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a5abd-147">Пример</span><span class="sxs-lookup"><span data-stu-id="a5abd-147">Example</span></span>
-<span data-ttu-id="a5abd-148">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="a5abd-148">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="a5abd-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="a5abd-149">Request</span></span>
-<span data-ttu-id="a5abd-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a5abd-150">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6ec77-147">Пример</span><span class="sxs-lookup"><span data-stu-id="6ec77-147">Example</span></span>
+<span data-ttu-id="6ec77-148">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="6ec77-148">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="6ec77-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="6ec77-149">Request</span></span>
+<span data-ttu-id="6ec77-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6ec77-150">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a5abd-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="a5abd-151">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6ec77-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="6ec77-151">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_accept"
@@ -85,23 +85,23 @@ Content-length: 56
   "sendResponse": true
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a5abd-152">C#</span><span class="sxs-lookup"><span data-stu-id="a5abd-152">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6ec77-152">C#</span><span class="sxs-lookup"><span data-stu-id="6ec77-152">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-accept-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a5abd-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a5abd-153">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6ec77-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6ec77-153">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-accept-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a5abd-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a5abd-154">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6ec77-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6ec77-154">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-accept-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="a5abd-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="a5abd-155">Response</span></span>
-<span data-ttu-id="a5abd-156">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a5abd-156">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="6ec77-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="6ec77-155">Response</span></span>
+<span data-ttu-id="6ec77-156">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="6ec77-156">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
