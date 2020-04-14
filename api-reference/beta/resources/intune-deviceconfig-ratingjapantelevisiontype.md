@@ -1,31 +1,33 @@
 ---
 title: тип перечисления Ратингжапантелевисионтипе
 description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Японии
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2a9b421a80cb2b8f93385d097db2849091123ca1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ac6d056edce19ce6485e11b9efa44ea7a814e586
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787679"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445029"
 ---
-# <a name="ratingjapantelevisiontype-enum-type"></a><span data-ttu-id="097c3-103">тип перечисления Ратингжапантелевисионтипе</span><span class="sxs-lookup"><span data-stu-id="097c3-103">ratingJapanTelevisionType enum type</span></span>
+# <a name="ratingjapantelevisiontype-enum-type"></a><span data-ttu-id="0a6f5-103">тип перечисления Ратингжапантелевисионтипе</span><span class="sxs-lookup"><span data-stu-id="0a6f5-103">ratingJapanTelevisionType enum type</span></span>
 
-> <span data-ttu-id="097c3-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="097c3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="0a6f5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0a6f5-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="097c3-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="097c3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0a6f5-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0a6f5-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="097c3-106">Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Японии</span><span class="sxs-lookup"><span data-stu-id="097c3-106">TV content rating labels in Japan</span></span>
+> <span data-ttu-id="0a6f5-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0a6f5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="097c3-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="097c3-107">Members</span></span>
-|<span data-ttu-id="097c3-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="097c3-108">Member</span></span>|<span data-ttu-id="097c3-109">Значение</span><span class="sxs-lookup"><span data-stu-id="097c3-109">Value</span></span>|<span data-ttu-id="097c3-110">Описание</span><span class="sxs-lookup"><span data-stu-id="097c3-110">Description</span></span>|
+<span data-ttu-id="0a6f5-107">Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Японии</span><span class="sxs-lookup"><span data-stu-id="0a6f5-107">TV content rating labels in Japan</span></span>
+
+## <a name="members"></a><span data-ttu-id="0a6f5-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="0a6f5-108">Members</span></span>
+|<span data-ttu-id="0a6f5-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="0a6f5-109">Member</span></span>|<span data-ttu-id="0a6f5-110">Значение</span><span class="sxs-lookup"><span data-stu-id="0a6f5-110">Value</span></span>|<span data-ttu-id="0a6f5-111">Описание</span><span class="sxs-lookup"><span data-stu-id="0a6f5-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="097c3-111">аллалловед</span><span class="sxs-lookup"><span data-stu-id="097c3-111">allAllowed</span></span>|<span data-ttu-id="097c3-112">нуль</span><span class="sxs-lookup"><span data-stu-id="097c3-112">0</span></span>|<span data-ttu-id="097c3-113">Значение по умолчанию, разрешить все показы контента</span><span class="sxs-lookup"><span data-stu-id="097c3-113">Default value, allow all TV shows content</span></span>|
-|<span data-ttu-id="097c3-114">аллблоккед</span><span class="sxs-lookup"><span data-stu-id="097c3-114">allBlocked</span></span>|<span data-ttu-id="097c3-115">1,1</span><span class="sxs-lookup"><span data-stu-id="097c3-115">1</span></span>|<span data-ttu-id="097c3-116">Не разрешать показ контента</span><span class="sxs-lookup"><span data-stu-id="097c3-116">Do not allow any TV shows content</span></span>|
-|<span data-ttu-id="097c3-117">експлиЦиталловед</span><span class="sxs-lookup"><span data-stu-id="097c3-117">explicitAllowed</span></span>|<span data-ttu-id="097c3-118">2</span><span class="sxs-lookup"><span data-stu-id="097c3-118">2</span></span>|<span data-ttu-id="097c3-119">Все ТЕЛЕВИЗИОНные материалы явно разрешены</span><span class="sxs-lookup"><span data-stu-id="097c3-119">All TV content is explicitly allowed</span></span>|
+|<span data-ttu-id="0a6f5-112">аллалловед</span><span class="sxs-lookup"><span data-stu-id="0a6f5-112">allAllowed</span></span>|<span data-ttu-id="0a6f5-113">нуль</span><span class="sxs-lookup"><span data-stu-id="0a6f5-113">0</span></span>|<span data-ttu-id="0a6f5-114">Значение по умолчанию, разрешить все показы контента</span><span class="sxs-lookup"><span data-stu-id="0a6f5-114">Default value, allow all TV shows content</span></span>|
+|<span data-ttu-id="0a6f5-115">аллблоккед</span><span class="sxs-lookup"><span data-stu-id="0a6f5-115">allBlocked</span></span>|<span data-ttu-id="0a6f5-116">1,1</span><span class="sxs-lookup"><span data-stu-id="0a6f5-116">1</span></span>|<span data-ttu-id="0a6f5-117">Не разрешать показ контента</span><span class="sxs-lookup"><span data-stu-id="0a6f5-117">Do not allow any TV shows content</span></span>|
+|<span data-ttu-id="0a6f5-118">експлиЦиталловед</span><span class="sxs-lookup"><span data-stu-id="0a6f5-118">explicitAllowed</span></span>|<span data-ttu-id="0a6f5-119">2</span><span class="sxs-lookup"><span data-stu-id="0a6f5-119">2</span></span>|<span data-ttu-id="0a6f5-120">Все ТЕЛЕВИЗИОНные материалы явно разрешены</span><span class="sxs-lookup"><span data-stu-id="0a6f5-120">All TV content is explicitly allowed</span></span>|
 
 
 

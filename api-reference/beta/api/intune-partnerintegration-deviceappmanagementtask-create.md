@@ -1,35 +1,37 @@
 ---
 title: Создание Девицеаппманажементтаск
 description: Создание нового объекта Девицеаппманажементтаск.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b532fb65a66f0b40b05dc97de150bff6099ac8f4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1a85d1eab1db9399f89e384f07bca058f2568e96
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802505"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445382"
 ---
-# <a name="create-deviceappmanagementtask"></a><span data-ttu-id="fa3f5-103">Создание Девицеаппманажементтаск</span><span class="sxs-lookup"><span data-stu-id="fa3f5-103">Create deviceAppManagementTask</span></span>
+# <a name="create-deviceappmanagementtask"></a><span data-ttu-id="05bda-103">Создание Девицеаппманажементтаск</span><span class="sxs-lookup"><span data-stu-id="05bda-103">Create deviceAppManagementTask</span></span>
 
-> <span data-ttu-id="fa3f5-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="05bda-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="05bda-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="fa3f5-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="05bda-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="05bda-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="fa3f5-106">Создание нового объекта [девицеаппманажементтаск](../resources/intune-partnerintegration-deviceappmanagementtask.md) .</span><span class="sxs-lookup"><span data-stu-id="fa3f5-106">Create a new [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) object.</span></span>
+> <span data-ttu-id="05bda-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="05bda-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="fa3f5-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="fa3f5-107">Prerequisites</span></span>
-<span data-ttu-id="fa3f5-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fa3f5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="05bda-107">Создание нового объекта [девицеаппманажементтаск](../resources/intune-partnerintegration-deviceappmanagementtask.md) .</span><span class="sxs-lookup"><span data-stu-id="05bda-107">Create a new [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) object.</span></span>
 
-|<span data-ttu-id="fa3f5-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fa3f5-110">Permission type</span></span>|<span data-ttu-id="fa3f5-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="fa3f5-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="05bda-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="05bda-108">Prerequisites</span></span>
+<span data-ttu-id="05bda-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="05bda-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="05bda-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="05bda-111">Permission type</span></span>|<span data-ttu-id="05bda-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="05bda-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="fa3f5-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fa3f5-112">Delegated (work or school account)</span></span>|<span data-ttu-id="fa3f5-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa3f5-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="fa3f5-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fa3f5-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fa3f5-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-115">Not supported.</span></span>|
-|<span data-ttu-id="fa3f5-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="fa3f5-116">Application</span></span>|<span data-ttu-id="fa3f5-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa3f5-117">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="05bda-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="05bda-113">Delegated (work or school account)</span></span>|<span data-ttu-id="05bda-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="05bda-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="05bda-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="05bda-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="05bda-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="05bda-116">Not supported.</span></span>|
+|<span data-ttu-id="05bda-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="05bda-117">Application</span></span>|<span data-ttu-id="05bda-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="05bda-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="fa3f5-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fa3f5-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="05bda-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="05bda-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,40 +40,40 @@ ms.locfileid: "42802505"
 POST /deviceAppManagement/deviceAppManagementTasks
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fa3f5-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="fa3f5-119">Request headers</span></span>
-|<span data-ttu-id="fa3f5-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="fa3f5-120">Header</span></span>|<span data-ttu-id="fa3f5-121">Значение</span><span class="sxs-lookup"><span data-stu-id="fa3f5-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="05bda-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="05bda-120">Request headers</span></span>
+|<span data-ttu-id="05bda-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="05bda-121">Header</span></span>|<span data-ttu-id="05bda-122">Значение</span><span class="sxs-lookup"><span data-stu-id="05bda-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="fa3f5-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="fa3f5-122">Authorization</span></span>|<span data-ttu-id="fa3f5-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="fa3f5-124">Accept</span><span class="sxs-lookup"><span data-stu-id="fa3f5-124">Accept</span></span>|<span data-ttu-id="fa3f5-125">application/json</span><span class="sxs-lookup"><span data-stu-id="fa3f5-125">application/json</span></span>|
+|<span data-ttu-id="05bda-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="05bda-123">Authorization</span></span>|<span data-ttu-id="05bda-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="05bda-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="05bda-125">Accept</span><span class="sxs-lookup"><span data-stu-id="05bda-125">Accept</span></span>|<span data-ttu-id="05bda-126">application/json</span><span class="sxs-lookup"><span data-stu-id="05bda-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fa3f5-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fa3f5-126">Request body</span></span>
-<span data-ttu-id="fa3f5-127">В тексте запроса добавьте представление объекта Девицеаппманажементтаск в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-127">In the request body, supply a JSON representation for the deviceAppManagementTask object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="05bda-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="05bda-127">Request body</span></span>
+<span data-ttu-id="05bda-128">В тексте запроса добавьте представление объекта Девицеаппманажементтаск в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="05bda-128">In the request body, supply a JSON representation for the deviceAppManagementTask object.</span></span>
 
-<span data-ttu-id="fa3f5-128">В следующей таблице приведены свойства, необходимые при создании Девицеаппманажементтаск.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-128">The following table shows the properties that are required when you create the deviceAppManagementTask.</span></span>
+<span data-ttu-id="05bda-129">В следующей таблице приведены свойства, необходимые при создании Девицеаппманажементтаск.</span><span class="sxs-lookup"><span data-stu-id="05bda-129">The following table shows the properties that are required when you create the deviceAppManagementTask.</span></span>
 
-|<span data-ttu-id="fa3f5-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="fa3f5-129">Property</span></span>|<span data-ttu-id="fa3f5-130">Тип</span><span class="sxs-lookup"><span data-stu-id="fa3f5-130">Type</span></span>|<span data-ttu-id="fa3f5-131">Описание</span><span class="sxs-lookup"><span data-stu-id="fa3f5-131">Description</span></span>|
+|<span data-ttu-id="05bda-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="05bda-130">Property</span></span>|<span data-ttu-id="05bda-131">Тип</span><span class="sxs-lookup"><span data-stu-id="05bda-131">Type</span></span>|<span data-ttu-id="05bda-132">Описание</span><span class="sxs-lookup"><span data-stu-id="05bda-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fa3f5-132">id</span><span class="sxs-lookup"><span data-stu-id="fa3f5-132">id</span></span>|<span data-ttu-id="fa3f5-133">String</span><span class="sxs-lookup"><span data-stu-id="fa3f5-133">String</span></span>|<span data-ttu-id="fa3f5-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-134">The entity key.</span></span>|
-|<span data-ttu-id="fa3f5-135">displayName</span><span class="sxs-lookup"><span data-stu-id="fa3f5-135">displayName</span></span>|<span data-ttu-id="fa3f5-136">Строка</span><span class="sxs-lookup"><span data-stu-id="fa3f5-136">String</span></span>|<span data-ttu-id="fa3f5-137">Имя.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-137">The name.</span></span>|
-|<span data-ttu-id="fa3f5-138">description</span><span class="sxs-lookup"><span data-stu-id="fa3f5-138">description</span></span>|<span data-ttu-id="fa3f5-139">String</span><span class="sxs-lookup"><span data-stu-id="fa3f5-139">String</span></span>|<span data-ttu-id="fa3f5-140">Описание.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-140">The description.</span></span>|
-|<span data-ttu-id="fa3f5-141">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="fa3f5-141">createdDateTime</span></span>|<span data-ttu-id="fa3f5-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fa3f5-142">DateTimeOffset</span></span>|<span data-ttu-id="fa3f5-143">Дата создания.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-143">The created date.</span></span>|
-|<span data-ttu-id="fa3f5-144">dueDateTime</span><span class="sxs-lookup"><span data-stu-id="fa3f5-144">dueDateTime</span></span>|<span data-ttu-id="fa3f5-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fa3f5-145">DateTimeOffset</span></span>|<span data-ttu-id="fa3f5-146">Дата выполнения.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-146">The due date.</span></span>|
-|<span data-ttu-id="fa3f5-147">category</span><span class="sxs-lookup"><span data-stu-id="fa3f5-147">category</span></span>|[<span data-ttu-id="fa3f5-148">deviceAppManagementTaskCategory</span><span class="sxs-lookup"><span data-stu-id="fa3f5-148">deviceAppManagementTaskCategory</span></span>](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|<span data-ttu-id="fa3f5-149">Категория.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-149">The category.</span></span> <span data-ttu-id="fa3f5-150">Возможные значения: `unknown`, `advancedThreatProtection`.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-150">Possible values are: `unknown`, `advancedThreatProtection`.</span></span>|
-|<span data-ttu-id="fa3f5-151">priority</span><span class="sxs-lookup"><span data-stu-id="fa3f5-151">priority</span></span>|[<span data-ttu-id="fa3f5-152">deviceAppManagementTaskPriority</span><span class="sxs-lookup"><span data-stu-id="fa3f5-152">deviceAppManagementTaskPriority</span></span>](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|<span data-ttu-id="fa3f5-153">Приоритет.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-153">The priority.</span></span> <span data-ttu-id="fa3f5-154">Возможные значения: `none`, `high`, `low`.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-154">Possible values are: `none`, `high`, `low`.</span></span>|
-|<span data-ttu-id="fa3f5-155">модуль</span><span class="sxs-lookup"><span data-stu-id="fa3f5-155">creator</span></span>|<span data-ttu-id="fa3f5-156">String</span><span class="sxs-lookup"><span data-stu-id="fa3f5-156">String</span></span>|<span data-ttu-id="fa3f5-157">Адрес электронной почты создателя.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-157">The email address of the creator.</span></span>|
-|<span data-ttu-id="fa3f5-158">креаторнотес</span><span class="sxs-lookup"><span data-stu-id="fa3f5-158">creatorNotes</span></span>|<span data-ttu-id="fa3f5-159">String</span><span class="sxs-lookup"><span data-stu-id="fa3f5-159">String</span></span>|<span data-ttu-id="fa3f5-160">Заметки автора.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-160">Notes from the creator.</span></span>|
-|<span data-ttu-id="fa3f5-161">assignedTo</span><span class="sxs-lookup"><span data-stu-id="fa3f5-161">assignedTo</span></span>|<span data-ttu-id="fa3f5-162">String</span><span class="sxs-lookup"><span data-stu-id="fa3f5-162">String</span></span>|<span data-ttu-id="fa3f5-163">Имя или электронная почта администратора, которому назначена эта задача.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-163">The name or email of the admin this task is assigned to.</span></span>|
-|<span data-ttu-id="fa3f5-164">status</span><span class="sxs-lookup"><span data-stu-id="fa3f5-164">status</span></span>|[<span data-ttu-id="fa3f5-165">deviceAppManagementTaskStatus</span><span class="sxs-lookup"><span data-stu-id="fa3f5-165">deviceAppManagementTaskStatus</span></span>](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|<span data-ttu-id="fa3f5-166">Состояние.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-166">The status.</span></span> <span data-ttu-id="fa3f5-167">Возможные значения: `unknown`, `pending`, `active`, `completed`, `rejected`.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-167">Possible values are: `unknown`, `pending`, `active`, `completed`, `rejected`.</span></span>|
+|<span data-ttu-id="05bda-133">id</span><span class="sxs-lookup"><span data-stu-id="05bda-133">id</span></span>|<span data-ttu-id="05bda-134">String</span><span class="sxs-lookup"><span data-stu-id="05bda-134">String</span></span>|<span data-ttu-id="05bda-135">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="05bda-135">The entity key.</span></span>|
+|<span data-ttu-id="05bda-136">displayName</span><span class="sxs-lookup"><span data-stu-id="05bda-136">displayName</span></span>|<span data-ttu-id="05bda-137">Строка</span><span class="sxs-lookup"><span data-stu-id="05bda-137">String</span></span>|<span data-ttu-id="05bda-138">Имя.</span><span class="sxs-lookup"><span data-stu-id="05bda-138">The name.</span></span>|
+|<span data-ttu-id="05bda-139">description</span><span class="sxs-lookup"><span data-stu-id="05bda-139">description</span></span>|<span data-ttu-id="05bda-140">String</span><span class="sxs-lookup"><span data-stu-id="05bda-140">String</span></span>|<span data-ttu-id="05bda-141">Описание.</span><span class="sxs-lookup"><span data-stu-id="05bda-141">The description.</span></span>|
+|<span data-ttu-id="05bda-142">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="05bda-142">createdDateTime</span></span>|<span data-ttu-id="05bda-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="05bda-143">DateTimeOffset</span></span>|<span data-ttu-id="05bda-144">Дата создания.</span><span class="sxs-lookup"><span data-stu-id="05bda-144">The created date.</span></span>|
+|<span data-ttu-id="05bda-145">dueDateTime</span><span class="sxs-lookup"><span data-stu-id="05bda-145">dueDateTime</span></span>|<span data-ttu-id="05bda-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="05bda-146">DateTimeOffset</span></span>|<span data-ttu-id="05bda-147">Дата выполнения.</span><span class="sxs-lookup"><span data-stu-id="05bda-147">The due date.</span></span>|
+|<span data-ttu-id="05bda-148">category</span><span class="sxs-lookup"><span data-stu-id="05bda-148">category</span></span>|[<span data-ttu-id="05bda-149">deviceAppManagementTaskCategory</span><span class="sxs-lookup"><span data-stu-id="05bda-149">deviceAppManagementTaskCategory</span></span>](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|<span data-ttu-id="05bda-150">Категория.</span><span class="sxs-lookup"><span data-stu-id="05bda-150">The category.</span></span> <span data-ttu-id="05bda-151">Возможные значения: `unknown`, `advancedThreatProtection`.</span><span class="sxs-lookup"><span data-stu-id="05bda-151">Possible values are: `unknown`, `advancedThreatProtection`.</span></span>|
+|<span data-ttu-id="05bda-152">priority</span><span class="sxs-lookup"><span data-stu-id="05bda-152">priority</span></span>|[<span data-ttu-id="05bda-153">deviceAppManagementTaskPriority</span><span class="sxs-lookup"><span data-stu-id="05bda-153">deviceAppManagementTaskPriority</span></span>](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|<span data-ttu-id="05bda-154">Приоритет.</span><span class="sxs-lookup"><span data-stu-id="05bda-154">The priority.</span></span> <span data-ttu-id="05bda-155">Возможные значения: `none`, `high`, `low`.</span><span class="sxs-lookup"><span data-stu-id="05bda-155">Possible values are: `none`, `high`, `low`.</span></span>|
+|<span data-ttu-id="05bda-156">модуль</span><span class="sxs-lookup"><span data-stu-id="05bda-156">creator</span></span>|<span data-ttu-id="05bda-157">String</span><span class="sxs-lookup"><span data-stu-id="05bda-157">String</span></span>|<span data-ttu-id="05bda-158">Адрес электронной почты создателя.</span><span class="sxs-lookup"><span data-stu-id="05bda-158">The email address of the creator.</span></span>|
+|<span data-ttu-id="05bda-159">креаторнотес</span><span class="sxs-lookup"><span data-stu-id="05bda-159">creatorNotes</span></span>|<span data-ttu-id="05bda-160">String</span><span class="sxs-lookup"><span data-stu-id="05bda-160">String</span></span>|<span data-ttu-id="05bda-161">Заметки автора.</span><span class="sxs-lookup"><span data-stu-id="05bda-161">Notes from the creator.</span></span>|
+|<span data-ttu-id="05bda-162">assignedTo</span><span class="sxs-lookup"><span data-stu-id="05bda-162">assignedTo</span></span>|<span data-ttu-id="05bda-163">String</span><span class="sxs-lookup"><span data-stu-id="05bda-163">String</span></span>|<span data-ttu-id="05bda-164">Имя или электронная почта администратора, которому назначена эта задача.</span><span class="sxs-lookup"><span data-stu-id="05bda-164">The name or email of the admin this task is assigned to.</span></span>|
+|<span data-ttu-id="05bda-165">status</span><span class="sxs-lookup"><span data-stu-id="05bda-165">status</span></span>|[<span data-ttu-id="05bda-166">deviceAppManagementTaskStatus</span><span class="sxs-lookup"><span data-stu-id="05bda-166">deviceAppManagementTaskStatus</span></span>](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|<span data-ttu-id="05bda-167">Состояние.</span><span class="sxs-lookup"><span data-stu-id="05bda-167">The status.</span></span> <span data-ttu-id="05bda-168">Возможные значения: `unknown`, `pending`, `active`, `completed`, `rejected`.</span><span class="sxs-lookup"><span data-stu-id="05bda-168">Possible values are: `unknown`, `pending`, `active`, `completed`, `rejected`.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="fa3f5-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="fa3f5-168">Response</span></span>
-<span data-ttu-id="fa3f5-169">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеаппманажементтаск](../resources/intune-partnerintegration-deviceappmanagementtask.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-169">If successful, this method returns a `201 Created` response code and a [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="05bda-169">Отклик</span><span class="sxs-lookup"><span data-stu-id="05bda-169">Response</span></span>
+<span data-ttu-id="05bda-170">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеаппманажементтаск](../resources/intune-partnerintegration-deviceappmanagementtask.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="05bda-170">If successful, this method returns a `201 Created` response code and a [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fa3f5-170">Пример</span><span class="sxs-lookup"><span data-stu-id="fa3f5-170">Example</span></span>
+## <a name="example"></a><span data-ttu-id="05bda-171">Пример</span><span class="sxs-lookup"><span data-stu-id="05bda-171">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="fa3f5-171">Запрос</span><span class="sxs-lookup"><span data-stu-id="fa3f5-171">Request</span></span>
-<span data-ttu-id="fa3f5-172">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-172">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="05bda-172">Запрос</span><span class="sxs-lookup"><span data-stu-id="05bda-172">Request</span></span>
+<span data-ttu-id="05bda-173">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="05bda-173">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/deviceAppManagementTasks
 Content-type: application/json
@@ -91,8 +93,8 @@ Content-length: 400
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="fa3f5-173">Отклик</span><span class="sxs-lookup"><span data-stu-id="fa3f5-173">Response</span></span>
-<span data-ttu-id="fa3f5-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fa3f5-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="05bda-174">Отклик</span><span class="sxs-lookup"><span data-stu-id="05bda-174">Response</span></span>
+<span data-ttu-id="05bda-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="05bda-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -113,7 +115,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
 
 
 

@@ -2,37 +2,37 @@
 title: Тип ресурса Провисионингстеп
 description: 'Описывает действия, предпринимаемые для выполнения действия. '
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4275730cfd7c9c9c58496b674062ffedb5d7a6cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0ae3d280d6d9dfc8877739b1003ae0c51f6acd6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521329"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446563"
 ---
-# <a name="provisioningstep-resource-type"></a><span data-ttu-id="9c357-103">Тип ресурса Провисионингстеп</span><span class="sxs-lookup"><span data-stu-id="9c357-103">provisioningStep resource type</span></span>
+# <a name="provisioningstep-resource-type"></a><span data-ttu-id="5a171-103">Тип ресурса Провисионингстеп</span><span class="sxs-lookup"><span data-stu-id="5a171-103">provisioningStep resource type</span></span>
 
-<span data-ttu-id="9c357-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="9c357-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5a171-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5a171-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9c357-105">Описывает действия, предпринимаемые для выполнения действия.</span><span class="sxs-lookup"><span data-stu-id="9c357-105">Describes the steps taken to perform an action.</span></span>
+<span data-ttu-id="5a171-105">Описывает действия, предпринимаемые для выполнения действия.</span><span class="sxs-lookup"><span data-stu-id="5a171-105">Describes the steps taken to perform an action.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9c357-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="9c357-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5a171-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="5a171-106">Properties</span></span>
 
-| <span data-ttu-id="9c357-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="9c357-107">Property</span></span>     | <span data-ttu-id="9c357-108">Тип</span><span class="sxs-lookup"><span data-stu-id="9c357-108">Type</span></span>        | <span data-ttu-id="9c357-109">Описание</span><span class="sxs-lookup"><span data-stu-id="9c357-109">Description</span></span> |
+| <span data-ttu-id="5a171-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="5a171-107">Property</span></span>     | <span data-ttu-id="5a171-108">Тип</span><span class="sxs-lookup"><span data-stu-id="5a171-108">Type</span></span>        | <span data-ttu-id="5a171-109">Описание</span><span class="sxs-lookup"><span data-stu-id="5a171-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="9c357-110">description</span><span class="sxs-lookup"><span data-stu-id="9c357-110">description</span></span>|<span data-ttu-id="9c357-111">String</span><span class="sxs-lookup"><span data-stu-id="9c357-111">String</span></span>|<span data-ttu-id="9c357-112">Сводка действий, произошедших на этапе.</span><span class="sxs-lookup"><span data-stu-id="9c357-112">Summary of what occurred during the step.</span></span>|
-|<span data-ttu-id="9c357-113">подробности</span><span class="sxs-lookup"><span data-stu-id="9c357-113">details</span></span>|[<span data-ttu-id="9c357-114">detailsInfo</span><span class="sxs-lookup"><span data-stu-id="9c357-114">detailsInfo</span></span>](detailsinfo.md)|<span data-ttu-id="9c357-115">Сведения о том, что произошло на этапе.</span><span class="sxs-lookup"><span data-stu-id="9c357-115">Details of what occurred during the step.</span></span>|
-|<span data-ttu-id="9c357-116">name</span><span class="sxs-lookup"><span data-stu-id="9c357-116">name</span></span>|<span data-ttu-id="9c357-117">String</span><span class="sxs-lookup"><span data-stu-id="9c357-117">String</span></span>|<span data-ttu-id="9c357-118">Имя этапа.</span><span class="sxs-lookup"><span data-stu-id="9c357-118">Name of the step.</span></span>|
-|<span data-ttu-id="9c357-119">провисионингстептипе</span><span class="sxs-lookup"><span data-stu-id="9c357-119">provisioningStepType</span></span>|<span data-ttu-id="9c357-120">String</span><span class="sxs-lookup"><span data-stu-id="9c357-120">String</span></span>| <span data-ttu-id="9c357-121">Тип этапа.</span><span class="sxs-lookup"><span data-stu-id="9c357-121">Type of step.</span></span> <span data-ttu-id="9c357-122">Возможные значения: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="9c357-122">Possible values are: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="9c357-123">status</span><span class="sxs-lookup"><span data-stu-id="9c357-123">status</span></span>|<span data-ttu-id="9c357-124">String</span><span class="sxs-lookup"><span data-stu-id="9c357-124">String</span></span>| <span data-ttu-id="9c357-125">Состояние этапа.</span><span class="sxs-lookup"><span data-stu-id="9c357-125">Status of the step.</span></span> <span data-ttu-id="9c357-126">Возможные значения: `success`, `failure`, `skipped`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="9c357-126">Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="5a171-110">description</span><span class="sxs-lookup"><span data-stu-id="5a171-110">description</span></span>|<span data-ttu-id="5a171-111">String</span><span class="sxs-lookup"><span data-stu-id="5a171-111">String</span></span>|<span data-ttu-id="5a171-112">Сводка действий, произошедших на этапе.</span><span class="sxs-lookup"><span data-stu-id="5a171-112">Summary of what occurred during the step.</span></span>|
+|<span data-ttu-id="5a171-113">details</span><span class="sxs-lookup"><span data-stu-id="5a171-113">details</span></span>|[<span data-ttu-id="5a171-114">detailsInfo</span><span class="sxs-lookup"><span data-stu-id="5a171-114">detailsInfo</span></span>](detailsinfo.md)|<span data-ttu-id="5a171-115">Сведения о том, что произошло на этапе.</span><span class="sxs-lookup"><span data-stu-id="5a171-115">Details of what occurred during the step.</span></span>|
+|<span data-ttu-id="5a171-116">name</span><span class="sxs-lookup"><span data-stu-id="5a171-116">name</span></span>|<span data-ttu-id="5a171-117">String</span><span class="sxs-lookup"><span data-stu-id="5a171-117">String</span></span>|<span data-ttu-id="5a171-118">Имя этапа.</span><span class="sxs-lookup"><span data-stu-id="5a171-118">Name of the step.</span></span>|
+|<span data-ttu-id="5a171-119">провисионингстептипе</span><span class="sxs-lookup"><span data-stu-id="5a171-119">provisioningStepType</span></span>|<span data-ttu-id="5a171-120">String</span><span class="sxs-lookup"><span data-stu-id="5a171-120">String</span></span>| <span data-ttu-id="5a171-121">Тип этапа.</span><span class="sxs-lookup"><span data-stu-id="5a171-121">Type of step.</span></span> <span data-ttu-id="5a171-122">Возможные значения: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="5a171-122">Possible values are: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="5a171-123">status</span><span class="sxs-lookup"><span data-stu-id="5a171-123">status</span></span>|<span data-ttu-id="5a171-124">String</span><span class="sxs-lookup"><span data-stu-id="5a171-124">String</span></span>| <span data-ttu-id="5a171-125">Состояние этапа.</span><span class="sxs-lookup"><span data-stu-id="5a171-125">Status of the step.</span></span> <span data-ttu-id="5a171-126">Возможные значения: `success`, `failure`, `skipped`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="5a171-126">Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="9c357-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9c357-127">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5a171-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5a171-127">JSON representation</span></span>
 
-<span data-ttu-id="9c357-128">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9c357-128">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5a171-128">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5a171-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
