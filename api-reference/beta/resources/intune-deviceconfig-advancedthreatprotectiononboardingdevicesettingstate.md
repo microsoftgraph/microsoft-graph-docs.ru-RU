@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Адванцедсреатпротектиононбоардингдевицесеттингстате
 description: Состояние входящей миграции ATP для данного устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 84638cc983b4905537b6ff201bba571527441cfc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e5e93cbec2081fc578b322a5938d08619e9061b2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797222"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471022"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>Тип ресурса Адванцедсреатпротектиононбоардингдевицесеттингстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -46,7 +48,7 @@ ms.locfileid: "42797222"
 |state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия требования для устройства|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

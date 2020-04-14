@@ -5,37 +5,38 @@ description: Возвращает метаданные для списка.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6d71c3c1025e56fa238628d1bf1ffd88f32bd3da
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bac6d7d28971e7850f9a9360e93346f4e9a902a6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457176"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470284"
 ---
 # <a name="get-metadata-for-a-list"></a>Получение метаданных списка
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Возвращает метаданные для [списка][].
 
-[list]: ../resources/list.md
+[списка]: ../resources/list.md
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Sites.Read.All, Sites.ReadWrite.All |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Sites.Read.All, Sites.ReadWrite.All         |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | Sites.Read.All, Sites.ReadWrite.All         |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-title}
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
@@ -53,6 +54,52 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=colu
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>Отклик
+
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
+
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "1234-112-112-4",
+  "name": "MicroFeed",
+  "createdDateTime": "2016-08-30T08:32:00Z",
+  "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+  "list": {
+    "hidden": false,
+    "template": "genericList"
+    }
+}
+```
+
+С помощью операторов `select` и `expand` вы можете получить метаданные списка, определения столбцов и элементы списка в одном запросе.
+
+#### <a name="request"></a>Запрос
+В приведенном ниже примере показано, как получить список из заголовка списка SharePoint Online.
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "get-list" } -->
+
+```msgraph-interactive
+GET /sites/{site-id}/lists/{list-title}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-csharp-snippets.md)]

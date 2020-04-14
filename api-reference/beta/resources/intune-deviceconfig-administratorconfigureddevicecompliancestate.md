@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Администраторконфигуреддевицекомплианцестате
 description: Перечисление состояния соответствия устройства, настроенного администратором
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 99c697f0c8a9acf819c880781d139d37a658826e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0fab2ce01a2f10f1ff3e53b3ed86d0f0d6bd6493
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797236"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471079"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>тип перечисления Администраторконфигуреддевицекомплианцестате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

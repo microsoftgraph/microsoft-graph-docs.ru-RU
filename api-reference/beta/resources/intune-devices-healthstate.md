@@ -1,18 +1,20 @@
 ---
 title: тип перечисления healthState
 description: Указывает состояние работоспособности приложения управления Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 945ae5e9fd4d26e756ca338ddf60e7867ce35d68
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ab80213be215dc4e04f033a66110c5fb9ef8f3ac
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784028"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470622"
 ---
 # <a name="healthstate-enum-type"></a>тип перечисления healthState
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 18958c1ff3789a2a8cdea35d51d605c09331b745
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f20ad594af8819fab9c9f88e0af81a5fbf009a59
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797243"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471126"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -62,6 +62,8 @@ ms.locfileid: "42797243"
 - [Сценарий работоспособности устройства](intune-devices-devicehealthscript.md)
 - [Назначение сценария работоспособности устройства](intune-devices-devicehealthscriptassignment.md)
 - [Состояние устройства сценария работоспособности устройства](intune-devices-devicehealthscriptdevicestate.md)
+- [Журнал исправлений сценариев исправности устройств](intune-devices-devicehealthscriptremediationhistory.md)
+- [Данные журнала исправлений для сценариев исправности устройств](intune-devices-devicehealthscriptremediationhistorydata.md)
 - [Сводка по исправлению сценариев работоспособности устройств](intune-devices-devicehealthscriptremediationsummary.md)
 - [Сводка по запуску сценария работоспособности устройства](intune-devices-devicehealthscriptrunsummary.md)
 - [Определение абстрактного сложного параметра управления устройствами](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
@@ -96,6 +98,7 @@ ms.locfileid: "42797243"
 - [Тип ресурса deviceManagementScriptGroupAssignment](intune-devices-devicemanagementscriptgroupassignment.md)
 - [Тип ресурса deviceManagementScriptRunSummary](intune-devices-devicemanagementscriptrunsummary.md)
 - [Тип ресурса deviceManagementScriptUserState](intune-devices-devicemanagementscriptuserstate.md)
+- [Определение абстрактной реализации для параметра управления устройствами](intune-deviceintent-devicemanagementsettingabstractimplementationconstraint.md)
 - [Ограничение приложения для параметра управления устройствами](intune-deviceintent-devicemanagementsettingappconstraint.md)
 - [Логическое ограничение параметра управления устройствами](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
 - [Категория параметра управления устройствами](intune-deviceintent-devicemanagementsettingcategory.md)
@@ -179,8 +182,6 @@ ms.locfileid: "42797243"
 - [Состояние исправления](intune-devices-remediationstate.md)
 - [Удаленное действие](intune-devices-remoteaction.md)
 - [Аудит удаленных действий](intune-devices-remoteactionaudit.md)
-- [Состояние подключения удаленного помощника](intune-remoteassistance-remoteassistanceonboardingstatus.md)
-- [Партнерская служба удаленного помощника](intune-remoteassistance-remoteassistancepartner.md)
 - [Результат действия "Удаленная блокировка"](intune-devices-remotelockactionresult.md)
 - [Результат действия "Сброс секретного кода"](intune-devices-resetpasscodeactionresult.md)
 - [Результат действия "Отзыв VPP-лицензий Apple "](intune-devices-revokeapplevpplicensesactionresult.md)
@@ -210,7 +211,7 @@ ms.locfileid: "42797243"
 - [Метрика аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsmetric.md)
 - [Обзор анализа пользовательского интерфейса](intune-devices-userexperienceanalyticsoverview.md)
 - [Сводка по регрессии аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsregressionsummary.md)
-- [Журнал оценки запуска аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsstartupscorehistory.md)
+- [Журнал оценки для службы пользовательского интерфейса](intune-devices-userexperienceanalyticsscorehistory.md)
 - [Анализ взаимодействия с пользователем, собранный по](intune-devices-userexperienceanalyticssummarizedby.md)
 - [Выражение условия переменного управления](intune-fencing-variablemanagementconditionexpression.md)
 - [Состояние развертывания Windows для автопилота](intune-troubleshooting-windowsautopilotdeploymentstate.md)

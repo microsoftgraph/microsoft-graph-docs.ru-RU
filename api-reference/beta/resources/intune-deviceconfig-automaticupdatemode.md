@@ -1,18 +1,20 @@
 ---
 title: тип перечисления свойства automaticupdatemode
 description: Возможные значения для режима автоматического обновления.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 845fdacfb0b29449e4464ec0eea03924632e861b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bb7af7e6a54da14c16313a712e1c745467e61783
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795907"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469844"
 ---
 # <a name="automaticupdatemode-enum-type"></a>тип перечисления свойства automaticupdatemode
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Андроидворкпрофилерекуиредпассвордтипе
 description: Необходимый тип пароля для рабочего профиля Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 28b02f37bad557f71901c15d03ba963143cb05f3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4b3c2b0945d91bead7f28ec49e53c68f89fbb19d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796133"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470224"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>тип перечисления Андроидворкпрофилерекуиредпассвордтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,7 +27,7 @@ ms.locfileid: "42796133"
 |:---|:---|:---|
 |девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
 |ловсекуритибиометрик|1,1|Необходим пароль на основе биометрического уровня безопасности.|
-|Обязательный|2|Обязательный.|
+|Обязательный|2|Обязательно.|
 |атлеастнумерик|4|Необходим по крайней мере числовой пароль.|
 |нумериккомплекс|4 |Необходим числовой сложный пароль.|
 |атлеасталфабетик|5 |По крайней мере необходимо указать по крайней мере буквенный пароль.|

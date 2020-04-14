@@ -1,18 +1,20 @@
 ---
 title: тип перечисления deviceRegistrationState
 description: Состояние регистрации устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 908f38a2da8f5960eb9c5f1879b7b54374b806ed
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fb7e522159df19040fcc4da3870e76b7971c95c0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784135"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470680"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>тип перечисления deviceRegistrationState
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

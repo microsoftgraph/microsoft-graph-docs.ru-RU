@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Апплисттипе
 description: Возможные значения списка приложений для обеспечения соответствия требованиям.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 172908882d6a9efd03d9645e8a562a70622fea12
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 61999950fbf9a54a2d93576fe77d950e30b8b561
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795921"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469954"
 ---
 # <a name="applisttype-enum-type"></a>тип перечисления Апплисттипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42795921"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Значение по умолчанию без намерения.|
+|нет|нуль|Значение по умолчанию без намерения.|
 |аппсинлисткомплиант|1,1|Список представляет приложения, которые будут считаться совместимыми (только приложения в списке соответствуют требованиям).|
 |аппснотинлисткомплиант|2|Список представляет приложения, которые будут считаться несовместимыми (все приложения являются совместимыми, кроме приложений в списке).|
 

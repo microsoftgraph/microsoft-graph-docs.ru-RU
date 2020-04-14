@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Андроидворкпрофилевпнконнектионтипе
 description: Тип VPN-подключения для рабочего профиля Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3272f1aebb06440b935e945895db410885a03b9b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f4c72f7980c440ee786b19eab882821ecf9f88a5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796105"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470164"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>тип перечисления Андроидворкпрофилевпнконнектионтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

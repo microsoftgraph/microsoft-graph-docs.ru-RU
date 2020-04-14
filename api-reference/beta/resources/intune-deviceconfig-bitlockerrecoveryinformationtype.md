@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Битлоккеррековеринформатионтипе
 description: Типы Битлоккеррековеринформатионтипе
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e34d91ec138771f05e71520bbea2c736c12d3328
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7e6793766d9f81d298fb42703971fb219f9d10c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795859"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469808"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>тип перечисления Битлоккеррековеринформатионтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

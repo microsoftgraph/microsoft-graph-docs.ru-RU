@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицепротектионовервиев
 description: Сведения об оборудовании для данного устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e9bdadb7cef003a8d22653660d516afe8357d59
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8e6f949cae0ae293c713ba52480d23c44ea093b3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784142"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470727"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>Тип ресурса Девицепротектионовервиев
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -34,7 +36,7 @@ ms.locfileid: "42784142"
 |пендингоффлинескандевицекаунт|Int32|Количество устройств, ожидающих автономной проверки.|
 |критикалфаилуресдевицекаунт|Int32|Количество устройств критических сбоев.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

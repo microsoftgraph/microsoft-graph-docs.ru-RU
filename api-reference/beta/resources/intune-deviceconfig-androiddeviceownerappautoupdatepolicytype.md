@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Андроиддевицеовнераппаутаупдатеполицитипе
 description: Возможные значения для состояний политики автоматического обновления приложений на устройстве Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 55092376dcf0d5e4ae72b5cb6f607cf984959c4d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8fd84350d9685a65dc53e803fc55b7238bfa9908
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797180"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470913"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>тип перечисления Андроиддевицеовнераппаутаупдатеполицитипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

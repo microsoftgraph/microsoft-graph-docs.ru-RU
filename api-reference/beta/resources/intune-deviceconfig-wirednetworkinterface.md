@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Виреднетворкинтерфаце
 description: Тип сетевого интерфейса Apple.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fafbd8bedd3070d0aef46e43fee3efd88cf0dca0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d7e16ecc4d3834059f317debd3c7999e307d92e9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786111"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470847"
 ---
 # <a name="wirednetworkinterface-enum-type"></a>тип перечисления Виреднетворкинтерфаце
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Hardwareinformation.
 description: Сведения об оборудовании для данного устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40edcecb7c581722b7c423e4d76f181689a6020d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 15369ff988d13e7d083358dceb874da2a0ffa6a4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784035"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470644"
 ---
 # <a name="hardwareinformation-resource-type"></a>Тип ресурса Hardwareinformation.
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -35,9 +37,9 @@ ms.locfileid: "42784035"
 |целлулартечнологи|String|Технология сотовой связи устройства|
 |вифимак|String|MAC-адрес устройства Wi-Fi|
 |оператингсистемлангуаже|String|Язык операционной системы устройства|
-|isSupervised|Логический|Контролируемый режим устройства|
+|isSupervised|Boolean|Контролируемый режим устройства|
 |isEncrypted|Boolean|Состояние шифрования устройства|
-|Свойства isshareddevice|Логический|Общие iPad|
+|Свойства isshareddevice|Boolean|Общие iPad|
 |шареддевицекачедусерс|Коллекция [шаредаппледевицеусер](../resources/intune-devices-sharedappledeviceuser.md)|Все пользователи на общем устройстве Apple|
 |тпмспеЦификатионверсион|String|Строка, указывающая версию спецификации.|
 |оператингсистемедитион|String|Строка, задающая выпуск операционной системы.|
@@ -47,7 +49,7 @@ ms.locfileid: "42784035"
 |девицегуардлокалсистемаусоритикредентиалгуардстате|[девицегуардлокалсистемаусоритикредентиалгуардстате](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Состояние Credential Guard в администраторе локальной системы (LSA). . Возможные значения: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
 |осбуилднумбер|String|Номер сборки операционной системы на устройстве с Android|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

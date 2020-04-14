@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Андроидцертификатепрофилебасе
-description: База профиля сертификата Android.
+title: Тип ресурса Аппликспедитедчеккинконфигуратионбасе
+description: Экспериментальный профиль для увеличения частоты операций возврата устройств в день iOS и macOS.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f5c4c15aabc6406a37ad0aa2b6c753417f7362a1
+ms.openlocfilehash: 117c0d24d777edc233b55bdff2351ce7fdad2ec4
 ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470966"
+ms.locfileid: "43470089"
 ---
-# <a name="androidcertificateprofilebase-resource-type"></a>Тип ресурса Андроидцертификатепрофилебасе
+# <a name="appleexpeditedcheckinconfigurationbase-resource-type"></a>Тип ресурса Аппликспедитедчеккинконфигуратионбасе
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "43470966"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-База профиля сертификата Android.
+Экспериментальный профиль для увеличения частоты операций возврата устройств в день iOS и macOS.
 
 
 Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).
@@ -28,8 +28,8 @@ ms.locfileid: "43470966"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Андроидцертификатепрофилебасес](../api/intune-deviceconfig-androidcertificateprofilebase-list.md)|Коллекция [андроидцертификатепрофилебасе](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|Список свойств и связей объектов [андроидцертификатепрофилебасе](../resources/intune-deviceconfig-androidcertificateprofilebase.md) .|
-|[Получение Андроидцертификатепрофилебасе](../api/intune-deviceconfig-androidcertificateprofilebase-get.md)|[андроидцертификатепрофилебасе](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|Чтение свойств и связей объекта [андроидцертификатепрофилебасе](../resources/intune-deviceconfig-androidcertificateprofilebase.md) .|
+|[Список Аппликспедитедчеккинконфигуратионбасес](../api/intune-deviceconfig-appleexpeditedcheckinconfigurationbase-list.md)|Коллекция [аппликспедитедчеккинконфигуратионбасе](../resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)|Список свойств и связей объектов [аппликспедитедчеккинконфигуратионбасе](../resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md) .|
+|[Получение Аппликспедитедчеккинконфигуратионбасе](../api/intune-deviceconfig-appleexpeditedcheckinconfigurationbase-get.md)|[аппликспедитедчеккинконфигуратионбасе](../resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)|Чтение свойств и связей объекта [аппликспедитедчеккинконфигуратионбасе](../resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -45,12 +45,7 @@ ms.locfileid: "43470966"
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|Свойства renewalthresholdpercentage|Int32|Пороговое значение возобновления сертификата. Допустимые значения — от 1 до 99|
-|subjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Формат имени субъекта сертификата. Возможные значения: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Тип альтернативного имени субъекта сертификата. Возможные значения: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
-|certificateValidityPeriodValue|Int32|Значение срока действия сертификата.|
-|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Масштаб срока действия сертификата. Возможные значения: `days`, `months`, `years`.|
-|екстендедкэйусажес|Коллекция [екстендедкэйусаже](../resources/intune-deviceconfig-extendedkeyusage.md)|Параметры расширенного использования ключа (EKU). Эта коллекция может содержать не более 500 элементов.|
+|енабликспедитедчеккин|Boolean|Получает или задает значение, указывающее, следует ли включать и отменять поисковые устройства.|
 
 ## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
@@ -62,19 +57,18 @@ ms.locfileid: "43470966"
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|рутцертификате|[андроидтрустедрутцертификате](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)|Доверенный корневой сертификат.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.androidCertificateProfileBase"
+  "@odata.type": "microsoft.graph.appleExpeditedCheckinConfigurationBase"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.androidCertificateProfileBase",
+  "@odata.type": "#microsoft.graph.appleExpeditedCheckinConfigurationBase",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
@@ -106,18 +100,7 @@ ms.locfileid: "43470966"
   "description": "String",
   "displayName": "String",
   "version": 1024,
-  "renewalThresholdPercentage": 1024,
-  "subjectNameFormat": "String",
-  "subjectAlternativeNameType": "String",
-  "certificateValidityPeriodValue": 1024,
-  "certificateValidityPeriodScale": "String",
-  "extendedKeyUsages": [
-    {
-      "@odata.type": "microsoft.graph.extendedKeyUsage",
-      "name": "String",
-      "objectIdentifier": "String"
-    }
-  ]
+  "enableExpeditedCheckin": true
 }
 ```
 

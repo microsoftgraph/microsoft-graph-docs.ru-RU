@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Андроиддевицеовнербаттериплугжедмоде
 description: Допустимые значения владельца устройств Android для состояний подключаемых режимов питания устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d93048e1a7dbf280ea15ae89ff426dca734cf228
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6c35d3e65e29527d1128961aae6144c2e0637395
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797173"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470898"
 ---
 # <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>тип перечисления Андроиддевицеовнербаттериплугжедмоде
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса appListItem
 description: Представляет приложение в списке управляемых приложений
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7cde9f58fd7deb66fb30f871d1ff7d0968835a40
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a34b8dcfbf3912d5b2a816ddfce6af49596b869
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795928"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469961"
 ---
 # <a name="applistitem-resource-type"></a>Тип ресурса appListItem
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +28,9 @@ ms.locfileid: "42795928"
 |name|Строка|Имя приложения|
 |publisher|String|Издатель приложения|
 |appStoreUrl|String|URL-адрес приложения в Магазине|
-|appId|String|Идентификатор приложения или его пакета|
+|appId|String|Идентификатор пакета приложения|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

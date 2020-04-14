@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса deviceOperatingSystemSummary
 description: Общие сведения об операционной системе устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a88a86a420aa10b32f44e44bc25276040fc9d99c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1c15adc462742adb734a503f55dc69af48bf0f82
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784149"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470742"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Тип ресурса deviceOperatingSystemSummary
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -35,7 +37,7 @@ ms.locfileid: "42784149"
 |андроидворкпрофилекаунт|Int32|Количество устройств с Android в рабочем профиле.|
 |конфигмгрдевицекаунт|Int32|Количество управляемых устройств ConfigMgr.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

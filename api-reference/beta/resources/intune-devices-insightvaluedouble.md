@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Инсигхтвалуедаубле
 description: Значение в средстве анализа пользовательского интерфейса.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9894883a023a56c0cfcffb18dc7d9bd091a322ab
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 73877980b57b3df245893fea9df4898241fe186d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784014"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470608"
 ---
 # <a name="insightvaluedouble-resource-type"></a>Тип ресурса Инсигхтвалуедаубле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,7 +30,7 @@ ms.locfileid: "42784014"
 |:---|:---|:---|
 |значение|Двойное с плавающей точкой|Н/Д|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

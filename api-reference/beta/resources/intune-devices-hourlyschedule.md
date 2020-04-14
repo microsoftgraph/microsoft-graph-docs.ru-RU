@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Хаурлисчедуле
 description: Почасовое расписание выполнения сценария управления повторяющимся устройством.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e798eed75cdb5499bb2ea0c3ca40ac4d7c0b9c54
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2eae0d244eb78e006f74c127a81df1786bc9bd8f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784021"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470615"
 ---
 # <a name="hourlyschedule-resource-type"></a>Тип ресурса Хаурлисчедуле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,7 +30,7 @@ ms.locfileid: "42784021"
 |:---|:---|:---|
 |interval|Int32|Интервал (в часах)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

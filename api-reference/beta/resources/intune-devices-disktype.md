@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Дисктипе
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ff896519862909504ee9756be643c5bd514dcf57
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f51fe5d26377295809d043c8df3308feface4e1a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784121"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470658"
 ---
 # <a name="disktype-enum-type"></a>тип перечисления Дисктипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
