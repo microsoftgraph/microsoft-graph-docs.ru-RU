@@ -2,19 +2,19 @@
 title: 'Reportroot.: Жеткредентиалусажесуммари'
 description: Сообщите о текущем состоянии того, сколько пользователей в вашей организации используют возможности самостоятельного сброса пароля.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 5d1488051a423d044c5cc203e8c8421d485ef232
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 79037b8c941989ddba273a34184d00607758fafb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454544"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473911"
 ---
 # <a name="reportroot-getcredentialusagesummary"></a>Reportroot.: Жеткредентиалусажесуммари
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,7 +61,7 @@ GET /reports/getCredentialUsageSummary
 | Authorization | Bearer {token} |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

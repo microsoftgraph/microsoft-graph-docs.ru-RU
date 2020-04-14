@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Ресултантаппстате
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 99aece736483466a488fd3a301381ba0f26c64a5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9a4b50a903dc60e9f6d152c0b11f55811f85c446
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767927"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473531"
 ---
 # <a name="resultantappstate-enum-type"></a>тип перечисления Ресултантаппстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -2,19 +2,19 @@
 title: Тип ресурса Маилбоксусажестораже
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 40cc5f9b9cab7f17e185619d7fccdec028ae6250
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 636417b5ec299bb11f82c406abecdebe72ee45de
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522836"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473417"
 ---
 # <a name="mailboxusagestorage-resource-type"></a>Тип ресурса Маилбоксусажестораже
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

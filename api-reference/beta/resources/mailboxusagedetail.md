@@ -2,19 +2,19 @@
 title: Тип ресурса Маилбоксусажедетаил
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9c84ee4f36dac10499d553333654635934ca01a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 485dba38275cb437f069abf1309bdc0705ad967a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522864"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473481"
 ---
 # <a name="mailboxusagedetail-resource-type"></a>Тип ресурса Маилбоксусажедетаил
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 
@@ -23,7 +23,7 @@ ms.locfileid: "42522864"
 | репортрефрешдате               | Дата    |
 | userPrincipalName               | String  |
 | displayName                     | Строка  |
-| isDeleted                       | Логический |
+| isDeleted                       | Boolean |
 | делетеддате                     | Дата    |
 | createdDate                     | Дата    |
 | ластактивитидате                | Дата    |

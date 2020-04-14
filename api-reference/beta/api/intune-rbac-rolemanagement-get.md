@@ -1,18 +1,18 @@
 ---
-title: Удаление Виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус
-description: Удаляет объект Виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус.
+title: Получение Ролеманажемент
+description: Чтение свойств и связей объекта Ролеманажемент.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 12566bfc888308274a6ade65e5738762f592ae4b
+ms.openlocfilehash: a59ca1b3f8934670b8cb060257f37cafae533eea
 ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472291"
+ms.locfileid: "43472350"
 ---
-# <a name="delete-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Удаление Виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус
+# <a name="get-rolemanagement"></a>Получение Ролеманажемент
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "43472291"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет объект [виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md).
+Чтение свойств и связей объекта [ролеманажемент](../resources/intune-rbac-rolemanagement.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,10 +37,13 @@ ms.locfileid: "43472291"
 }
 -->
 ``` http
-DELETE /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationControlSupplementalPolicyId}/deviceStatuses/{windowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId}
+GET /roleManagement
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+
+## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
@@ -49,21 +52,30 @@ DELETE /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplication
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [ролеманажемент](../resources/intune-rbac-rolemanagement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationControlSupplementalPolicyId}/deviceStatuses/{windowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId}
+GET https://graph.microsoft.com/beta/roleManagement
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 128
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.roleManagement",
+    "id": "6fb74c1e-4c1e-6fb7-1e4c-b76f1e4cb76f"
+  }
+}
 ```
 
 

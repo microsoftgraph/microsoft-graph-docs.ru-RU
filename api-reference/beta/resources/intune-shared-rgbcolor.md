@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса rgbColor
 description: Цвет в формате RGB.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c7febc0aab64b19cfa7929af95466d9b10ecce2a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 95b8df7634f79a1ebca4df8c89c0580b6442cd02
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767906"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473524"
 ---
 # <a name="rgbcolor-resource-type"></a>Тип ресурса rgbColor
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42767906"
 |g|Байт|Значение зеленого|
 |b|Байт|Значение синего|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

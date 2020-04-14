@@ -2,15 +2,15 @@
 title: Список Оргконтактс
 description: Получение списка контактов Организации для этой Организации.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 134347a227ba33e1134890496710207c83983d79
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87669fb0665a11d1f3bc6f1bf923cd55e1ee3af3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456259"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474732"
 ---
 # <a name="list-orgcontacts"></a>Список Оргконтактс
 
@@ -42,7 +42,7 @@ GET /contacts
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса iPv6Range
 description: Определение диапазона IPv6.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf5dff72f8df369fa48c71ff58bf6e4925cc16e8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 77037ad6e8635a9e83da6fb727b30406e77304b4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769166"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473584"
 ---
 # <a name="ipv6range-resource-type"></a>Тип ресурса iPv6Range
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +31,7 @@ ms.locfileid: "42769166"
 |lowerAddress|String|Адрес нижнего уровня.|
 |upperAddress|String|Верхний адрес.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,18 +1,20 @@
 ---
 title: Создание Мобилеаппинтентандстате
 description: Создание нового объекта Мобилеаппинтентандстате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a6b5132675f09da3b26ffca6e51893ab64afed43
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d134dfb31284a18e7a26a6e1aecb98d01b648111
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800125"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473979"
 ---
 # <a name="create-mobileappintentandstate"></a>Создание Мобилеаппинтентандстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42800125"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +46,7 @@ POST /users/{usersId}/mobileAppIntentAndStates
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Мобилеаппинтентандстате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Мобилеаппинтентандстате.
@@ -127,7 +129,6 @@ Content-Length: 880
   ]
 }
 ```
-
 
 
 

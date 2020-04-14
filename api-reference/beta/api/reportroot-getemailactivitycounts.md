@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 4c44373a8a957249ee3483460d769697b0cd9a0f
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 791a9500645f9c6bd07afadad329ec89c213b31d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589175"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473897"
 ---
 # <a name="reportroot-getemailactivitycounts"></a>reportRoot: getEmailActivityCounts
 
@@ -72,7 +72,9 @@ CSV-файл содержит столбцы со следующими заго�
 - Send (отправлено)
 - Receive (получено)
 - Read (прочитано)
-- "Report Date" (Дата отчета);
+- Собрание создано
+- Собрание с участием
+- Report Date (дата отчета)
 - Report Period (отчетный период)
 
 ### <a name="json"></a>JSON
