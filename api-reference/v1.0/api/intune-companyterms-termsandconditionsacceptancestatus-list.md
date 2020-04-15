@@ -1,35 +1,35 @@
 ---
 title: Перечисление объектов termsAndConditionsAcceptanceStatus
 description: Список свойств и связей объектов termsAndConditionsAcceptanceStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 393223cb077011dec2721427e5abb6f9815810af
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb1fae5108cc1e9f550351090eb57a7e8d1dc27d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515450"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468895"
 ---
-# <a name="list-termsandconditionsacceptancestatuses"></a><span data-ttu-id="438f0-103">Перечисление объектов termsAndConditionsAcceptanceStatus</span><span class="sxs-lookup"><span data-stu-id="438f0-103">List termsAndConditionsAcceptanceStatuses</span></span>
+# <a name="list-termsandconditionsacceptancestatuses"></a><span data-ttu-id="7140f-103">Перечисление объектов termsAndConditionsAcceptanceStatus</span><span class="sxs-lookup"><span data-stu-id="7140f-103">List termsAndConditionsAcceptanceStatuses</span></span>
 
-<span data-ttu-id="438f0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="438f0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7140f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7140f-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="438f0-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="438f0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7140f-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7140f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="438f0-106">Список свойств и связей объектов [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).</span><span class="sxs-lookup"><span data-stu-id="438f0-106">List properties and relationships of the [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) objects.</span></span>
+<span data-ttu-id="7140f-106">Список свойств и связей объектов [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).</span><span class="sxs-lookup"><span data-stu-id="7140f-106">List properties and relationships of the [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="438f0-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="438f0-107">Prerequisites</span></span>
-<span data-ttu-id="438f0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="438f0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="7140f-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="7140f-107">Prerequisites</span></span>
+<span data-ttu-id="7140f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7140f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="438f0-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="438f0-110">Permission type</span></span>|<span data-ttu-id="438f0-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="438f0-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="7140f-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7140f-110">Permission type</span></span>|<span data-ttu-id="7140f-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="7140f-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="438f0-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="438f0-112">Delegated (work or school account)</span></span>|<span data-ttu-id="438f0-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="438f0-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="438f0-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="438f0-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="438f0-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="438f0-115">Not supported.</span></span>|
-|<span data-ttu-id="438f0-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="438f0-116">Application</span></span>|<span data-ttu-id="438f0-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="438f0-117">Not supported.</span></span>|
+|<span data-ttu-id="7140f-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7140f-112">Delegated (work or school account)</span></span>|<span data-ttu-id="7140f-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="7140f-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="7140f-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7140f-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7140f-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7140f-115">Not supported.</span></span>|
+|<span data-ttu-id="7140f-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7140f-116">Application</span></span>|<span data-ttu-id="7140f-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7140f-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="438f0-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="438f0-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7140f-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7140f-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,28 +38,28 @@ ms.locfileid: "42515450"
 GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="438f0-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="438f0-119">Request headers</span></span>
-|<span data-ttu-id="438f0-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="438f0-120">Header</span></span>|<span data-ttu-id="438f0-121">Значение</span><span class="sxs-lookup"><span data-stu-id="438f0-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7140f-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="7140f-119">Request headers</span></span>
+|<span data-ttu-id="7140f-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="7140f-120">Header</span></span>|<span data-ttu-id="7140f-121">Значение</span><span class="sxs-lookup"><span data-stu-id="7140f-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="438f0-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="438f0-122">Authorization</span></span>|<span data-ttu-id="438f0-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="438f0-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="438f0-124">Accept</span><span class="sxs-lookup"><span data-stu-id="438f0-124">Accept</span></span>|<span data-ttu-id="438f0-125">application/json</span><span class="sxs-lookup"><span data-stu-id="438f0-125">application/json</span></span>|
+|<span data-ttu-id="7140f-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="7140f-122">Authorization</span></span>|<span data-ttu-id="7140f-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7140f-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="7140f-124">Accept</span><span class="sxs-lookup"><span data-stu-id="7140f-124">Accept</span></span>|<span data-ttu-id="7140f-125">application/json</span><span class="sxs-lookup"><span data-stu-id="7140f-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="438f0-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="438f0-126">Request body</span></span>
-<span data-ttu-id="438f0-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="438f0-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7140f-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="7140f-126">Request body</span></span>
+<span data-ttu-id="7140f-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="7140f-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="438f0-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="438f0-128">Response</span></span>
-<span data-ttu-id="438f0-129">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="438f0-129">If successful, this method returns a `200 OK` response code and a collection of [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7140f-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="7140f-128">Response</span></span>
+<span data-ttu-id="7140f-129">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="7140f-129">If successful, this method returns a `200 OK` response code and a collection of [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="438f0-130">Пример</span><span class="sxs-lookup"><span data-stu-id="438f0-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7140f-130">Пример</span><span class="sxs-lookup"><span data-stu-id="7140f-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="438f0-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="438f0-131">Request</span></span>
-<span data-ttu-id="438f0-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="438f0-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="7140f-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="7140f-131">Request</span></span>
+<span data-ttu-id="7140f-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7140f-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses
 ```
 
-### <a name="response"></a><span data-ttu-id="438f0-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="438f0-133">Response</span></span>
-<span data-ttu-id="438f0-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="438f0-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7140f-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="7140f-133">Response</span></span>
+<span data-ttu-id="7140f-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7140f-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -77,6 +77,8 @@ Content-Length: 313
   ]
 }
 ```
+
+
 
 
 

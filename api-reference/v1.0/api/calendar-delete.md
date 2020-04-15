@@ -1,34 +1,34 @@
 ---
 title: Удаление календаря
 description: Удаление календаря, отличного от календаря по умолчанию.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f39115551e5bd8890e95075245946f48c8a8bc23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1fcb1f6a26ced9657a528aa27f8248fb008df08c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518828"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471878"
 ---
-# <a name="delete-calendar"></a><span data-ttu-id="c2767-103">Удаление календаря</span><span class="sxs-lookup"><span data-stu-id="c2767-103">Delete calendar</span></span>
+# <a name="delete-calendar"></a><span data-ttu-id="2a825-103">Удаление календаря</span><span class="sxs-lookup"><span data-stu-id="2a825-103">Delete calendar</span></span>
 
-<span data-ttu-id="c2767-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c2767-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2a825-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2a825-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c2767-105">Удаление календаря, отличного от календаря по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="c2767-105">Delete a calendar other than the default calendar.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c2767-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c2767-106">Permissions</span></span>
-<span data-ttu-id="c2767-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c2767-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2a825-105">Удаление календаря, отличного от календаря по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="2a825-105">Delete a calendar other than the default calendar.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2a825-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2a825-106">Permissions</span></span>
+<span data-ttu-id="2a825-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2a825-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c2767-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c2767-109">Permission type</span></span>      | <span data-ttu-id="c2767-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c2767-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2a825-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2a825-109">Permission type</span></span>      | <span data-ttu-id="2a825-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2a825-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c2767-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c2767-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c2767-112">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c2767-112">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="c2767-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c2767-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c2767-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c2767-114">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="c2767-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c2767-115">Application</span></span> | <span data-ttu-id="c2767-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c2767-116">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="2a825-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2a825-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2a825-112">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2a825-112">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="2a825-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2a825-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2a825-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2a825-114">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="2a825-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2a825-115">Application</span></span> | <span data-ttu-id="2a825-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2a825-116">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c2767-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c2767-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2a825-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2a825-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="c2767-118">[Календарь](../resources/calendar.md) пользователя, отличный от календаря по умолчанию, в группе [calendarGroup](../resources/calendargroup.md) по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="c2767-118">A user's [calendar](../resources/calendar.md) other than the default calendar in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="2a825-118">[Календарь](../resources/calendar.md) пользователя, отличный от календаря по умолчанию, в группе [calendarGroup](../resources/calendargroup.md) по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="2a825-118">A user's [calendar](../resources/calendar.md) other than the default calendar in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 DELETE /me/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}
@@ -36,28 +36,28 @@ DELETE /users/{id | userPrincipalName}/calendars/{id}
 DELETE /me/calendarGroup/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
-<span data-ttu-id="c2767-119">[Календарь](../resources/calendar.md), отличный от календаря по умолчанию, в определенной группе [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="c2767-119">A [calendar](../resources/calendar.md) other than the default calendar, in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="2a825-119">[Календарь](../resources/calendar.md), отличный от календаря по умолчанию, в определенной группе [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="2a825-119">A [calendar](../resources/calendar.md) other than the default calendar, in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 DELETE /me/calendarGroups/{id}/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="c2767-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c2767-120">Request headers</span></span>
-| <span data-ttu-id="c2767-121">Имя</span><span class="sxs-lookup"><span data-stu-id="c2767-121">Name</span></span>           |  <span data-ttu-id="c2767-122">Тип</span><span class="sxs-lookup"><span data-stu-id="c2767-122">Type</span></span>    | <span data-ttu-id="c2767-123">Описание</span><span class="sxs-lookup"><span data-stu-id="c2767-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2a825-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2a825-120">Request headers</span></span>
+| <span data-ttu-id="2a825-121">Имя</span><span class="sxs-lookup"><span data-stu-id="2a825-121">Name</span></span>           |  <span data-ttu-id="2a825-122">Тип</span><span class="sxs-lookup"><span data-stu-id="2a825-122">Type</span></span>    | <span data-ttu-id="2a825-123">Описание</span><span class="sxs-lookup"><span data-stu-id="2a825-123">Description</span></span>|
 |:---------------|:---------|:----------|
-| <span data-ttu-id="c2767-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="c2767-124">Authorization</span></span>  |  <span data-ttu-id="c2767-125">string</span><span class="sxs-lookup"><span data-stu-id="c2767-125">string</span></span>  | <span data-ttu-id="c2767-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c2767-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2a825-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="2a825-124">Authorization</span></span>  |  <span data-ttu-id="2a825-125">string</span><span class="sxs-lookup"><span data-stu-id="2a825-125">string</span></span>  | <span data-ttu-id="2a825-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2a825-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c2767-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c2767-128">Request body</span></span>
-<span data-ttu-id="c2767-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c2767-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2a825-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="2a825-128">Request body</span></span>
+<span data-ttu-id="2a825-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2a825-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c2767-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="c2767-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2a825-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="2a825-130">Response</span></span>
 
-<span data-ttu-id="c2767-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="c2767-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="2a825-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="2a825-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c2767-133">Пример</span><span class="sxs-lookup"><span data-stu-id="c2767-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c2767-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="c2767-134">Request</span></span>
-<span data-ttu-id="c2767-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c2767-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2a825-133">Пример</span><span class="sxs-lookup"><span data-stu-id="2a825-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2a825-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="2a825-134">Request</span></span>
+<span data-ttu-id="2a825-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2a825-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c2767-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="c2767-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2a825-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="2a825-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_calendar"
@@ -65,26 +65,26 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/calendar
 ```
-# <a name="c"></a>[<span data-ttu-id="c2767-137">C#</span><span class="sxs-lookup"><span data-stu-id="c2767-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2a825-137">C#</span><span class="sxs-lookup"><span data-stu-id="2a825-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c2767-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c2767-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2a825-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2a825-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c2767-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c2767-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2a825-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2a825-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c2767-140">Java</span><span class="sxs-lookup"><span data-stu-id="c2767-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2a825-140">Java</span><span class="sxs-lookup"><span data-stu-id="2a825-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="c2767-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="c2767-141">Response</span></span>
-<span data-ttu-id="c2767-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c2767-142">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="2a825-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="2a825-141">Response</span></span>
+<span data-ttu-id="2a825-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="2a825-142">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
