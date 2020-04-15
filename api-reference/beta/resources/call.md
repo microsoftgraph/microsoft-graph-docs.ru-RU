@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: fb0767e0dab914f63051524ba6ce2860ae577d6b
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: b97fc0ce4ca6ead942347357dd99d125dd95f583
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082345"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510648"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -87,7 +87,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Содержит возможности собрания. Только для чтения.                                                                                                       |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) или [tokenMeetingInfo](tokenmeetinginfo.md)             | Сведения о собрании. Обязательные сведения для сценариев собраний.                                                                                                              |
 | myParticipantId     | String                                                                                                 | Только для чтения.                                                                                                                                                                        |
-| requestedModalities | Коллекция String                                                                                      | Список запрошенных модальностей. | Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
+| requestedModalities | Коллекция String                                                                                      | Список запрошенных модальностей. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | Сведения о результате. Например, может содержать причину прекращения. Только для чтения.                                                                                                        |
 | ringingTimeoutInSeconds | Int32                                                                                              | Время ожидания звонков в секундах для исходящих одноранговых вызовов. Максимальное значение для этого атрибута составляет 115 секунд.                                                                                        |
 | routingPolicies     | Коллекция String                                                                                      | Это свойство применимо только к одноранговым вызовам. Возможные значения: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`, `preferSkypeForBusiness`.                                                                                                   |
