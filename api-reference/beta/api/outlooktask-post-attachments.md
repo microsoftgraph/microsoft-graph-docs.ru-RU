@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5cc6bf02fceef6467f7d32232c873517c797bd3c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a0d51d32c14ed3cdd2394f7b412078e7312c1e00
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413619"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510877"
 ---
 # <a name="create-attachment"></a>Создание вложения
 
@@ -96,7 +96,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "name": "add_file_attachment_to_task",
@@ -130,7 +130,7 @@ HTTP 201 Created
 Ниже приведен пример, в котором присоединяется событие с другим событием в качестве вложения элемента.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "add_item_attachment_to_task"
 }-->
 
