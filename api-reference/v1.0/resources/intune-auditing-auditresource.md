@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса auditResource
 description: Класс, содержащий свойства ресурса аудита.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 21bc5faffe29d94cc0bddf8ab491b689d792c212
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 35d4385ca16569e1b7e0177995c32ae22e5a0aa0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531029"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439489"
 ---
 # <a name="auditresource-resource-type"></a>Тип ресурса auditResource
 
@@ -28,7 +28,7 @@ ms.locfileid: "42531029"
 |type|String|Тип ресурса аудита.|
 |resourceId|String|ИД ресурса аудита.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,6 +54,9 @@ ms.locfileid: "42531029"
   "resourceId": "String"
 }
 ```
+
+
+
 
 
 

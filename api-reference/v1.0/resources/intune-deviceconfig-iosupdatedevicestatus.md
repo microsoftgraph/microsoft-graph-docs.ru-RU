@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iosUpdateDeviceStatus
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5206eb62b0f0aebb6e6bab5fdda63c317f70b97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bee047acf4d9b5c84ab13cbd2db5bed1e25e15f8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530651"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410382"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>Тип ресурса iosUpdateDeviceStatus
 
@@ -34,18 +34,18 @@ ms.locfileid: "42530651"
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |installStatus|[иосупдатесинсталлстатус](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|Состояние установки отчета о политике. Возможные значения: `success`, `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`,. `sharedDeviceUserLoggedInError`|
-|osVersion|Строка|Версия устройства в отчете.|
+|osVersion|String|Версия устройства в отчете.|
 |deviceId|String|ИД устройства в отчете.|
 |userId|String|ИД пользователя в отчете.|
-|deviceDisplayName|Строка|Имя устройства в объекте DevicePolicyStatus.|
-|userName|Строка|Имя пользователя в отчете|
+|deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
+|userName|String|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
 |status|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
 |userPrincipalName|Строка|Имя участника-пользователя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -73,6 +73,9 @@ ms.locfileid: "42530651"
   "userPrincipalName": "String"
 }
 ```
+
+
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса resourceAction
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae06b047fc93f09bd2b797a4eeaa296d232a0b68
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 899075a8ac494daf345fa6f8d91e3cc38126ec53
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447964"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441625"
 ---
 # <a name="resourceaction-resource-type"></a>Тип ресурса resourceAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -26,7 +26,7 @@ ms.locfileid: "42447964"
 |allowedResourceActions|Коллекция String|Разрешенные действия|
 |notAllowedResourceActions|Коллекция строк|Запрещенные действия|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,9 @@ ms.locfileid: "42447964"
   ]
 }
 ```
+
+
+
 
 
 

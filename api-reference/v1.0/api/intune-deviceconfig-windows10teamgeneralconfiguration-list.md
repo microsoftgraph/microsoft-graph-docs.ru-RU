@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов windows10TeamGeneralConfiguration
 description: Перечисление свойств и связей объектов windows10TeamGeneralConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bf968ac96f7f7640bc320436f4734ea54d111b91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d71e29b1ef9e0fb181334f97afe1523bb6cbd8e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513922"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442014"
 ---
 # <a name="list-windows10teamgeneralconfigurations"></a>Перечисление объектов windows10TeamGeneralConfiguration
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -99,6 +99,8 @@ Content-Length: 1463
   ]
 }
 ```
+
+
 
 
 

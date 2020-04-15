@@ -1,16 +1,16 @@
 ---
 title: Create deviceCompliancePolicySettingStateSummary
 description: Создание объекта deviceCompliancePolicySettingStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 947d2b5fe63e2056c8d2a5ea9626334119f71507
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c63c4a0f31c2db63db0d3ef65d3516f1cea3528
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515016"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399936"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>Create deviceCompliancePolicySettingStateSummary
 
@@ -44,15 +44,15 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта deviceCompliancePolicySettingStateSummary в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта deviceCompliancePolicySettingStateSummary.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|setting|Строка|Имя класса параметров и свойства.|
+|id|String|Ключ объекта.|
+|setting|String|Имя класса параметров и свойства.|
 |settingName|String|Имя параметра.|
 |platformType|[полициплатформтипе](../resources/intune-deviceconfig-policyplatformtype.md)|Настройка платформы. Возможные значения: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
@@ -114,6 +114,8 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

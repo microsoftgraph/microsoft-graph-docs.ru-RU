@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта deviceComplianceScheduledActionForRule
 description: Обновление свойств объекта deviceComplianceScheduledActionForRule.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 751d99a1b4ba108e8bf73ff1053ef87cbf9e2aca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8936ad39af18e51a7f5e7b17a26357a587a3d5d8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514952"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399608"
 ---
 # <a name="update-devicecompliancescheduledactionforrule"></a>Обновление объекта deviceComplianceScheduledActionForRule
 
@@ -44,14 +44,14 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |ruleName|String|Имя правила, к которому применяется это запланированное действие.|
 
 
@@ -87,6 +87,8 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
+
+
 
 
 

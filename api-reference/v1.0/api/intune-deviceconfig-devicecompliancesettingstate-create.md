@@ -1,16 +1,16 @@
 ---
 title: Создание объекта deviceComplianceSettingState
 description: Создание объекта deviceComplianceSettingState.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b7f702f5b9f4b7ab9de29e725c3ab1414753d180
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fd9e6bd67f32061afc2c2187ebfb782fe052fb97
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514945"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399594"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Создание объекта deviceComplianceSettingState
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта deviceComplianceSettingState в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceComplianceSettingState.
@@ -52,15 +52,15 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта|
-|setting|Строка|Имя класса параметров и свойства.|
-|settingName|Строка|Имя параметра в отчете|
-|deviceId|Строка|ИД устройства в отчете|
-|deviceName|Строка|Имя устройства в отчете|
+|setting|String|Имя класса параметров и свойства.|
+|settingName|String|Имя параметра в отчете|
+|deviceId|String|ИД устройства в отчете|
+|deviceName|String|Имя устройства в отчете|
 |userId|String|ИД пользователя в отчете|
 |userEmail|String|Электронный адрес пользователя в отчете|
-|userName|Строка|Имя пользователя в отчете|
+|userName|String|Имя пользователя в отчете|
 |userPrincipalName|String|Имя участника-пользователя в отчете|
-|deviceModel|Строка|Модель устройства в отчете|
+|deviceModel|String|Модель устройства в отчете|
 |state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
 
@@ -117,6 +117,8 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
+
 
 
 

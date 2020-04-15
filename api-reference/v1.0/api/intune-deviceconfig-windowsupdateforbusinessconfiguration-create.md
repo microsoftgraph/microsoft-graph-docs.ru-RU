@@ -1,16 +1,16 @@
 ---
 title: Create windowsUpdateForBusinessConfiguration
 description: Создание объекта windowsUpdateForBusinessConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff70fb3758043e5b32938b5f40dbded767a2702e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c95b51348f839d0ff19c8cc17d8516c6fd38620
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513695"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388925"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>Create windowsUpdateForBusinessConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта windowsUpdateForBusinessConfiguration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, которые необходимо указать при создании объекта windowsUpdateForBusinessConfiguration.
@@ -60,12 +60,12 @@ POST /deviceManagement/deviceConfigurations
 |deliveryOptimizationMode|[виндовсделиверйоптимизатионмоде](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Режим оптимизации доставки. Возможные значения: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|Функции предварительного выпуска. Возможные значения: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
 |automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|Режим автоматического обновления. Возможные значения: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
-|microsoftUpdateServiceAllowed|Boolean|Разрешение использования службы обновлений (Майкрософт).|
-|driversExcluded|Boolean|Исключение драйверов из Центра обновления Windows.|
+|microsoftUpdateServiceAllowed|Логический|Разрешение использования службы обновлений (Майкрософт).|
+|driversExcluded|Логический|Исключение драйверов из Центра обновления Windows.|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)|Расписание установки.|
 |qualityUpdatesDeferralPeriodInDays|Int32|Откладывание исправлений на заданное количество дней.|
 |featureUpdatesDeferralPeriodInDays|Int32|Откладывание обновлений компонентов на заданное количество дней.|
-|qualityUpdatesPaused|Boolean|Приостановка исправлений.|
+|qualityUpdatesPaused|Логический|Приостановка исправлений.|
 |featureUpdatesPaused|Boolean|Приостановка обновлений компонентов.|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Дата и время завершения срока приостановки исправлений.|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Дата и время, когда будет завершен срок приостановки обновлений компонентов.|
@@ -144,6 +144,8 @@ Content-Length: 1082
   "businessReadyUpdatesOnly": "all"
 }
 ```
+
+
 
 
 

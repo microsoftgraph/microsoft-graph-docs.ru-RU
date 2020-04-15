@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов defaultManagedAppProtection
 description: Перечисление свойств и связей объектов defaultManagedAppProtection.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 17253528d073e2462d8d1b7b764f959c59cceafc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4f1d4f6eaf94a8894c2593ebc8097e4fb3110e05
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513275"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362038"
 ---
 # <a name="list-defaultmanagedappprotections"></a>Перечисление объектов defaultManagedAppProtection
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/defaultManagedAppProtections
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -123,6 +123,8 @@ Content-Length: 2380
   ]
 }
 ```
+
+
 
 
 

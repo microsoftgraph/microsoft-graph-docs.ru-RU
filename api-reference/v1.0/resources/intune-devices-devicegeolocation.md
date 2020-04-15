@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceGeoLocation
 description: Расположение устройства
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 48c0b4224225c70a9f5c4a636e1e15e4ddea3364
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 091ef44a52e20acb987adddbac1c561087db718c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533298"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43368314"
 ---
 # <a name="devicegeolocation-resource-type"></a>Тип ресурса deviceGeoLocation
 
@@ -32,7 +32,7 @@ ms.locfileid: "42533298"
 |heading|Двойное с плавающей точкой|Направление от географического севера (градусов)|
 |speed|Double|Скорость передвижения устройства (м/с)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,6 +55,9 @@ ms.locfileid: "42533298"
   "speed": "<Unknown Primitive Type Edm.Double>"
 }
 ```
+
+
+
 
 
 

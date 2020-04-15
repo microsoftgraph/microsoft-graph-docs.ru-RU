@@ -4,13 +4,13 @@ description: Указывает область разрешений OAuth 2,0 и
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 7544d877941ca7457a925811a4ffaca2ba4b09e5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: psignoret
+ms.openlocfilehash: ffc1dc7b6a5c76903245f71d0d562a743b37f4d1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533836"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43368213"
 ---
 # <a name="resourceaccess-resource-type"></a>Тип ресурса Ресаурцеакцесс
 

@@ -1,16 +1,16 @@
 ---
 title: Удаление importedWindowsAutopilotDeviceIdentity
 description: Удаляет importedWindowsAutopilotDeviceIdentity.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b913696ebfe4e0da717be459786f6cf68688a21
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bc889f3b97a17743e1805607ecc8189fb89a9c77
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513422"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43369595"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentity"></a>Удаление importedWindowsAutopilotDeviceIdentity
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{imported
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -64,6 +64,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilo
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

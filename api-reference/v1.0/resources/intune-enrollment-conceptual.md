@@ -1,16 +1,16 @@
 ---
 title: Регистрация корпоративных устройств с помощью Intune
 description: " Сценарий (BYOD)."
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 840fec00f32cd33093bc965157b35af16bb43248
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 749a3396c534222af46f2bf903616def1dd900e4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530266"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439407"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 
@@ -27,4 +27,7 @@ ms.locfileid: "42530266"
 - [Состояние импортированного удостоверения устройства с Windows Autopilot](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
 - [Загрузка импортированного удостоверения устройства Windows AutoPilot](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
 - [Статус загрузки импортированного удостоверения устройства Windows AutoPilot](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
+
+
+
 

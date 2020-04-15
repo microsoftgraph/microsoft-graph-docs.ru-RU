@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта managedAppOperation
 description: Обновление свойств объекта managedAppOperation.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b91f2d0c40c0dede51bd936fce42fd59b72b2fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 19904908a94bd56fa2f454dae5099b3b1bd4754b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513170"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399068"
 ---
 # <a name="update-managedappoperation"></a>Обновление объекта managedAppOperation
 
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [managedAppOperation](../resources/intune-mam-managedappoperation.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedAppOperation](../resources/intune-mam-managedappoperation.md).
@@ -54,7 +54,7 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 |displayName|Строка|Имя операции.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения операции для приложения.|
 |state|String|Текущее состояние операции|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
 
@@ -95,6 +95,8 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
 
 
 

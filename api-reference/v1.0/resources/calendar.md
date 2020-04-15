@@ -2,15 +2,15 @@
 title: Тип ресурса calendar
 description: Календарь, служащий контейнером для сведений о событиях. Это может быть календарь для пользователя или стандартный календарь для группы Office 365.
 localization_priority: Priority
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 67f2fef3c77a2ade4871bbe1da1c2baa95b1e234
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 9de471fb60286aa23c9459498033196662260eef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229502"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407160"
 ---
 # <a name="calendar-resource-type"></a>Тип ресурса calendar
 

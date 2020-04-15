@@ -1,16 +1,16 @@
 ---
 title: Get managedAppRegistration
 description: Чтение свойств и связей объекта managedAppRegistration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 082d5093426ef394b1bbfc15cf6275cb1f80f222
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c57c6147ac1bf171a1576589adb79a9f8914524
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513107"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43398717"
 ---
 # <a name="get-managedappregistration"></a>Get managedAppRegistration
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
@@ -47,7 +47,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -91,6 +91,8 @@ Content-Length: 756
   }
 }
 ```
+
+
 
 
 

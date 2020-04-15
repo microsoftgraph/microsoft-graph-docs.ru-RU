@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Директорйобжектпартнерреференце
 description: Представляет ссылку на объект каталога в клиенте-партнере. Наследуется от directoryObject.
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2f15edcbdc3b78b3565548a740058728c4996770
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78d202cea4b092671a63870c7172dd31d3f70846
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531640"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407090"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>Тип ресурса Директорйобжектпартнерреференце
 
@@ -25,7 +25,7 @@ ms.locfileid: "42531640"
 |description|String| Описание возвращаемого объекта. Только для чтения. |
 |displayName|Строка| Имя возвращаемого объекта каталога, например Group или Application. Только для чтения. |
 |екстерналпартнертенантид|GUID| Идентификатор клиента для партнерского клиента. Только для чтения. |
-|id|Строка| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Только для чтения. |
+|id|String| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Только для чтения. |
 |objectType|String| Тип упоминаемого объекта в партнерской клиенте. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса detectedApp
 description: Управляемое или неуправляемое приложение, которое устанавливается на управляемое устройство. Неуправляемые приложения отображаются только на устройствах, относящихся к корпоративной собственности.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dcf11e763ff826ddc0f3c20ff722b6f3d124af57
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dae22c8a2e939d7ab06a645726f139d5b02ac724
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530297"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407052"
 ---
 # <a name="detectedapp-resource-type"></a>Тип ресурса detectedApp
 
@@ -38,7 +38,7 @@ ms.locfileid: "42530297"
 |sizeInByte|Int64|Размер обнаруженного приложения в байтах. Только для чтения|
 |deviceCount|Int32|Количество устройств, на которых было успешно установлено это приложение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |managedDevices|Коллекция [managedDevice](../resources/intune-devices-manageddevice.md)|Устройства, на которых установлено обнаруженное приложение|
@@ -61,6 +61,9 @@ ms.locfileid: "42530297"
   "deviceCount": 1024
 }
 ```
+
+
+
 
 
 

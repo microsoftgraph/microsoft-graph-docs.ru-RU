@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта MailFolder
 description: Удаление указанного mailFolder.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8c90b06d06b6e6af566b468b3f6159472fcb46ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fae7449da3a86c1cb0881a34b06f52cffbbf1460
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511665"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397588"
 ---
 # <a name="delete-mailfolder"></a>Удаление объекта MailFolder
 
@@ -42,7 +42,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

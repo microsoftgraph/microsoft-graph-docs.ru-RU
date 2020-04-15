@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса windowsDefenderScanActionResult
 description: Результат последнего сканирования, выполненного Защитником Windows
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3fce56be7dcc0d1262bb65420d6ce3986cce1fe3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8f0d0296442ebb9c67dea8dc87b1a42bd980c92c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530270"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406821"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>Тип ресурса windowsDefenderScanActionResult
 
@@ -26,13 +26,13 @@ ms.locfileid: "42530270"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actionName|Строка|Название действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
+|actionName|String|Название действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |actionState|[actionState](../resources/intune-devices-actionstate.md)|Состояние действия, унаследованного от [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |scanType|String|Тип сканирования (полное или краткое).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,6 +52,9 @@ ms.locfileid: "42530270"
   "scanType": "String"
 }
 ```
+
+
+
 
 
 

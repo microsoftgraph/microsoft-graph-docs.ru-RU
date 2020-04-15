@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта deviceConfigurationUserStatus
 description: Обновление свойств объекта deviceConfigurationUserStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 29ac3e9459c915bdf133451cd88c99d1887dded7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 984f1b35ff10cc0e0340567a4fcc5162ae743b99
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514699"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388067"
 ---
 # <a name="update-deviceconfigurationuserstatus"></a>Обновление объекта deviceConfigurationUserStatus
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuse
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).
@@ -99,6 +99,8 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

@@ -2,19 +2,19 @@
 title: Тип ресурса outlookGeoCoordinates
 description: Географические координаты, высота и точность физического местоположения.
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 1926d398a07bb38f27f46b8886ba7454321d5796
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ae101814d7e32be67ae7becc6e2032ff4e2026d2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447271"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43353851"
 ---
 # <a name="outlookgeocoordinates-resource-type"></a>Тип ресурса outlookGeoCoordinates
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Географические координаты, высота и точность физического местоположения.
 

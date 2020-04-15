@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса auditActor
 description: Класс, содержащий свойства субъекта аудита.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c10ac0a18f5bfcf68be56edc402c83d9882a8ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c6a51d99d712305292e17d19487d829bd2e09af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532735"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439534"
 ---
 # <a name="auditactor-resource-type"></a>Тип ресурса auditActor
 
@@ -23,16 +23,16 @@ ms.locfileid: "42532735"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|Строка|Тип субъекта.|
+|type|String|Тип субъекта.|
 |userPermissions|Коллекция строк|Список разрешений пользователей во время аудита.|
-|applicationId|Строка|ИД приложения AAD.|
-|applicationDisplayName|Строка|Имя приложения.|
+|applicationId|String|ИД приложения AAD.|
+|applicationDisplayName|String|Имя приложения.|
 |userPrincipalName|Строка|Имя участника-пользователя (UPN).|
-|servicePrincipalName|Строка|Имя субъекта-службы (SPN).|
+|servicePrincipalName|String|Имя субъекта-службы (SPN).|
 |ipAddress|String|IP-адрес.|
 |userId|String|ИД пользователя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,6 +57,9 @@ ms.locfileid: "42532735"
   "userId": "String"
 }
 ```
+
+
+
 
 
 

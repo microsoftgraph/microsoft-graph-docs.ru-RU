@@ -1,16 +1,16 @@
 ---
 title: Создание объекта deviceComplianceActionItem
 description: Создание объекта deviceComplianceActionItem.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e1d745a9df748ce16ca5f26a8eef0716f809d857
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ae6d23ca7e6b906295f727cfb35132802fbb20f2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515177"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43400922"
 ---
 # <a name="create-devicecomplianceactionitem"></a>Создание объекта deviceComplianceActionItem
 
@@ -44,14 +44,14 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта deviceComplianceActionItem в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceComplianceActionItem.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |gracePeriodHours|Int32|Время ожидания (в часах) до применения действия. Допустимые значения: от 0 до 8760|
 |actionType|[deviceComplianceActionType](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|Действия, которые необходимо выполнить. Возможные значения: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`.|
 |notificationTemplateId|String|Используемый шаблон сообщения уведомления|
@@ -100,6 +100,8 @@ Content-Length: 320
   ]
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта managedDeviceOverview
 description: Обновление свойств объекта managedDeviceOverview.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 20f9ed5acf91ac4debb850fd9822ed92956a1823
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 45b164859bd5d53dc05e22c47aa1ca99335b18f3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513436"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388737"
 ---
 # <a name="update-manageddeviceoverview"></a>Обновление объекта managedDeviceOverview
 
@@ -44,14 +44,14 @@ PATCH /deviceManagement/managedDeviceOverview
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сводки.|
+|id|String|Уникальный идентификатор сводки.|
 |enrolledDeviceCount|Int32|Общее количество зарегистрированных устройств. Не включает устройства ПК, которыми управляет агент Intune для ПК.|
 |mdmEnrolledCount|Int32|Количество устройств, зарегистрированных в MDM.|
 |dualEnrolledDeviceCount|Int32|Количество устройств, зарегистрированных как в MDM, так и в EAS.|
@@ -129,6 +129,8 @@ Content-Length: 734
   }
 }
 ```
+
+
 
 
 

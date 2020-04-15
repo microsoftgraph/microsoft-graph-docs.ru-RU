@@ -1,16 +1,16 @@
 ---
 title: Создание telecomExpenseManagementPartner
 description: Создание объекта telecomExpenseManagementPartner.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: af8df09b4b3f13cf5b5de714d044e91b2572aad2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 49d299fbcd44dbb4fd9a7fb2f1a7263054a8394a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511931"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411152"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>Создание telecomExpenseManagementPartner
 
@@ -44,7 +44,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта telecomExpenseManagementPartner в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта telecomExpenseManagementPartner.
@@ -99,6 +99,8 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
 
 
 

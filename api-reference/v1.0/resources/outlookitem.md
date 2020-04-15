@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса outlookItem
 description: Ниже представлено описание ресурса в формате JSON.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: aa5e4af03171029e8557e38d3a75062161435318
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 365bbb5bc60b97317fa43013e12861d4e3135b25
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534104"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43353772"
 ---
 # <a name="outlookitem-resource-type"></a>Тип ресурса outlookItem
 
@@ -44,12 +44,12 @@ ms.locfileid: "42534104"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |categories|Коллекция String|Категории, связанные с элементом|
-|changeKey|Строка|Определяет версию элемента. Каждый раз при изменении элемента Чанжекэй также изменяются. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения.|
+|changeKey|String|Определяет версию элемента. Каждый раз при изменении элемента Чанжекэй также изменяются. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

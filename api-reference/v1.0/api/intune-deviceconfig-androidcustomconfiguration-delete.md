@@ -1,16 +1,16 @@
 ---
 title: Delete androidCustomConfiguration
 description: Удаляет объект androidCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d9401b6cb0cebc895a41083974726a05902582d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e73ad3db816e21df4b4310b16da8e1c15c9b55e9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515359"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362154"
 ---
 # <a name="delete-androidcustomconfiguration"></a>Delete androidCustomConfiguration
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Получение цепочки беседы
 description: Получение объекта thread.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 63131aa1edc9a6a76c148017cf2a555f8c8fefc5
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: cd639cf6fad46101c034b32350f7044c3e8515db
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219132"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43370937"
 ---
 # <a name="get-conversation-thread"></a>Получение цепочки беседы
 
@@ -41,7 +41,7 @@ GET /groups/{id}/threads/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

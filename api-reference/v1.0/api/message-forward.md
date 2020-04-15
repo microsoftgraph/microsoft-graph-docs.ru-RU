@@ -1,16 +1,16 @@
 ---
 title: 'message: forward'
 description: Пересылка сообщения. Сообщение сохраняется в папке "Отправленные".
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 76b96101dddd1800b36dc0e47ac56c970f8c113f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 086d411091e4476837a531daad93db6b7da3e587
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511525"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43361525"
 ---
 # <a name="message-forward"></a>message: forward
 

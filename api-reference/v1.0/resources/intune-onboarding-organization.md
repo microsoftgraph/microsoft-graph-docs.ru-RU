@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса organization
 description: Ресурс organization представляет экземпляр глобальных параметров и ресурсов, которые действуют и готовятся в работе на уровне клиента.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2c7f832fdce72f2490a45b3dae206eb7de28c686
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c2e4fffa10e81ba83a28fd6eebfc3ba4bf870d7e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448027"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441744"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -34,7 +34,7 @@ ms.locfileid: "42448027"
 |id|String|GUID объекта.|
 |mobileDeviceManagementAuthority|[мдмаусорити](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -69,6 +69,9 @@ ms.locfileid: "42448027"
 
 }
 -->
+
+
+
 
 
 

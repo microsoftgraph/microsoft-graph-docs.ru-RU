@@ -1,16 +1,16 @@
 ---
 title: Delete iosVppEBook
 description: Удаляет объект iosVppEBook.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cd52ebea6679c62209101c2703ed5800b5c67dc1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 723d78b65956d4a783a89862310f79242f30bb2d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515660"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43355963"
 ---
 # <a name="delete-iosvppebook"></a>Delete iosVppEBook
 
@@ -44,7 +44,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

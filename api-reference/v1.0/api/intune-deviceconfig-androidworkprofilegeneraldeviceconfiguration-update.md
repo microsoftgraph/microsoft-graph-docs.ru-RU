@@ -1,16 +1,16 @@
 ---
 title: Обновление androidWorkProfileGeneralDeviceConfiguration
 description: Обновление свойств объекта androidWorkProfileGeneralDeviceConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f6968e62a3c1fb3e86dc4329e569cea5eeda4722
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84f0e526f525e674f3244aa23ee1efbda1220a1d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515198"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401023"
 ---
 # <a name="update-androidworkprofilegeneraldeviceconfiguration"></a>Обновление androidWorkProfileGeneralDeviceConfiguration
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md).
@@ -66,17 +66,17 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек. Допустимые значения — от 1 до 16.|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |воркпрофиледаташарингтипе|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|Тип разрешенного общего доступа к данным. Возможные значения: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
-|воркпрофилеблоккнотификатионсвхиледевицелоккед|Boolean|Указывает, следует ли блокировать уведомления, когда устройство заблокировано.|
-|воркпрофилеблоккаддингаккаунтс|Boolean|Запретить пользователям добавлять и удалять учетные записи в рабочем профиле.|
-|воркпрофилеблуетусенаблеконтактшаринг|Boolean|Разрешить устройствам Bluetooth получать доступ к корпоративным контактам.|
-|воркпрофилеблоккскринкаптуре|Boolean|Блокировать снимок экрана в рабочем профиле.|
-|воркпрофилеблокккросспрофилекаллерид|Boolean|Блокировать отображение идентификатора исполнителя рабочего профиля в личном профиле.|
-|Свойства workprofileblockcamera|Boolean|Блокировать камеру рабочего профиля.|
-|workProfileBlockCrossProfileContactsSearch|Boolean|Блокировать доступность контактов для рабочих профилей в личном профиле.|
-|воркпрофилеблокккросспрофилекопипасте|Boolean|Логическое значение, которое указывает, включено ли для параметра возможность копирования и вставки в нескольких профилях.|
+|воркпрофилеблоккнотификатионсвхиледевицелоккед|Логический|Указывает, следует ли блокировать уведомления, когда устройство заблокировано.|
+|воркпрофилеблоккаддингаккаунтс|Логический|Запретить пользователям добавлять и удалять учетные записи в рабочем профиле.|
+|воркпрофилеблуетусенаблеконтактшаринг|Логический|Разрешить устройствам Bluetooth получать доступ к корпоративным контактам.|
+|воркпрофилеблоккскринкаптуре|Логический|Блокировать снимок экрана в рабочем профиле.|
+|воркпрофилеблокккросспрофилекаллерид|Логический|Блокировать отображение идентификатора исполнителя рабочего профиля в личном профиле.|
+|Свойства workprofileblockcamera|Логический|Блокировать камеру рабочего профиля.|
+|workProfileBlockCrossProfileContactsSearch|Логический|Блокировать доступность контактов для рабочих профилей в личном профиле.|
+|воркпрофилеблокккросспрофилекопипасте|Логический|Логическое значение, которое указывает, включено ли для параметра возможность копирования и вставки в нескольких профилях.|
 |воркпрофиледефаултапппермиссионполици|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
-|Свойства workprofilepasswordblockfingerprintunlock|Boolean|Указывает, следует ли заблокировать разблокировку отпечатков пальцев для рабочего профиля.|
-|workProfilePasswordBlockTrustAgents|Boolean|Указывает, следует ли заблокировать для рабочего профиля интеллектуальную блокировку и другие агенты доверия.|
+|Свойства workprofilepasswordblockfingerprintunlock|Логический|Указывает, следует ли заблокировать разблокировку отпечатков пальцев для рабочего профиля.|
+|workProfilePasswordBlockTrustAgents|Логический|Указывает, следует ли заблокировать для рабочего профиля интеллектуальную блокировку и другие агенты доверия.|
 |workProfilePasswordExpirationDays|Int32|Количество дней до истечения срока действия пароля рабочего профиля. Допустимые значения: от 1 до 365.|
 |workProfilePasswordMinimumLength|Int32|Минимальная длина пароля рабочего профиля. Допустимые значения: от 4 до 16.|
 |воркпрофилепассвордминнумерикчарактерс|Int32|Минимальное количество числовых символов в пароле рабочего профиля. Допустимые значения — от 1 до 10|
@@ -89,7 +89,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |workProfilePasswordPreviousPasswordBlockCount|Int32|Число паролей предыдущих рабочих профилей, которые необходимо заблокировать. Допустимые значения: от 0 до 24.|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа, разрешенных до удаления профиля работы и удаления всех корпоративных данных. Допустимые значения — от 1 до 16.|
 |workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Тип требуемого пароля рабочего профиля. Возможные значения: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
-|workProfileRequirePassword|Boolean|Пароль обязателен или не для рабочего профиля|
+|workProfileRequirePassword|Логический|Пароль обязателен или не для рабочего профиля|
 |securityRequireVerifyApps|Boolean|Указывает, что требуется включить функцию проверки приложений для Android.|
 
 
@@ -199,6 +199,8 @@ Content-Length: 2003
   "securityRequireVerifyApps": true
 }
 ```
+
+
 
 
 

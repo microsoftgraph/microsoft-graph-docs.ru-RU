@@ -2,15 +2,15 @@
 title: Тип ресурса eventMessage
 description: Сообщение, которое представляет собой приглашение на собрание, уведомление об отмене или ответ (принятие, предварительное принятие или отклонение).
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: fafd8916e50353f2334b54ced2888425cc449d7d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1ddd76c1e14a712ed96e13b2606765599d9e873
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531476"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43368513"
 ---
 # <a name="eventmessage-resource-type"></a>Тип ресурса eventMessage
 
@@ -59,7 +59,7 @@ ms.locfileid: "42531476"
 |:---------------|:--------|:----------|
 |bccRecipients|Коллекция [recipient](recipient.md)|Получатели скрытой копии сообщения.|
 |body|[itemBody](itembody.md)|Текст сообщения. В формате HTML или текстовом формате.|
-|bodyPreview|Строка|Первые 255 символов в тексте сообщения. В текстовом формате.|
+|bodyPreview|String|Первые 255 символов в тексте сообщения. В текстовом формате.|
 |categories|Коллекция String|Категории, сопоставленные с сообщением.|
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
 |changeKey|Строка|Версия сообщения.|
@@ -69,9 +69,9 @@ ms.locfileid: "42531476"
 |flag|[followupFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
 |from|[recipient](recipient.md)|Владелец почтового ящика, из которого отправлено сообщение. В большинстве случаев это значение совпадает со свойством **sender**, кроме сценариев предоставления общего доступа или делегирования. Значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении.|
-|id|Строка|Уникальный идентификатор сообщения о событии (Обратите внимание, что это значение может измениться, если сообщение перемещается или изменяется).|
+|id|String|Уникальный идентификатор сообщения о событии (Обратите внимание, что это значение может измениться, если сообщение перемещается или изменяется).|
 |importance|String| Важность сообщения: `low`, `normal`, `high`.|
-|inferenceClassification|Строка| Возможные значения: `focused`, `other`.|
+|inferenceClassification|String| Возможные значения: `focused`, `other`.|
 |internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовков сообщений, установленных по [RFC 5322](https://www.ietf.org/rfc/rfc5322.txt), которые содержат информацию о маршруте прохождения сообщения. Только для чтения.|
 |internetMessageId |Строка |Идентификатор сообщения в формате, установленном документом [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|

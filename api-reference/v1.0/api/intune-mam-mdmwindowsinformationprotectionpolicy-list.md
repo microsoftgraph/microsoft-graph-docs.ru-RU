@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов mdmWindowsInformationProtectionPolicy
 description: Перечисление свойств и связей объектов mdmWindowsInformationProtectionPolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1cef69ab0aafd6a6272f565f894c4b0efd0b17a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84a75998554f7d8bd098a3765d67b86a7e87f143
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513002"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43398259"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>Перечисление объектов mdmWindowsInformationProtectionPolicy
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -197,6 +197,8 @@ Content-Length: 4610
   ]
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта windowsUpdateForBusinessConfiguration
 description: Удаляет объект windowsUpdateForBusinessConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a65c8f2e385de8417f9adbdd4703ca00d1cc46a0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 363964d2cfebb29c9cc098d135b9782896db67ae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513688"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411634"
 ---
 # <a name="delete-windowsupdateforbusinessconfiguration"></a>Удаление объекта windowsUpdateForBusinessConfiguration
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

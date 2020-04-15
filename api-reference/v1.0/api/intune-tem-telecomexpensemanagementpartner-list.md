@@ -1,16 +1,16 @@
 ---
 title: Список объектов telecomExpenseManagementPartner
 description: Список свойств и связей объектов telecomExpenseManagementPartner.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b295168ef2d128a284a63ad0513c9b281197805
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 01b4089643e654f78063c71603cd8559239b1ae0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511917"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411019"
 ---
 # <a name="list-telecomexpensemanagementpartners"></a>Список объектов telecomExpenseManagementPartner
 
@@ -44,7 +44,7 @@ GET /deviceManagement/telecomExpenseManagementPartners
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -79,6 +79,8 @@ Content-Length: 358
   ]
 }
 ```
+
+
 
 
 

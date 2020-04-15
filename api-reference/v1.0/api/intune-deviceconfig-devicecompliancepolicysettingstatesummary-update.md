@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта deviceCompliancePolicySettingStateSummary
 description: Обновление свойств объекта deviceCompliancePolicySettingStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 405dc406af1c6716d514036137bbfdc9c715286e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c5e15705768853b4d840df01fe0b4e76eefc997
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514988"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399740"
 ---
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>Обновление объекта deviceCompliancePolicySettingStateSummary
 
@@ -44,15 +44,15 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|setting|Строка|Имя класса параметров и свойства.|
+|id|String|Ключ объекта.|
+|setting|String|Имя класса параметров и свойства.|
 |settingName|String|Имя параметра.|
 |platformType|[полициплатформтипе](../resources/intune-deviceconfig-policyplatformtype.md)|Настройка платформы. Возможные значения: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
@@ -114,6 +114,8 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

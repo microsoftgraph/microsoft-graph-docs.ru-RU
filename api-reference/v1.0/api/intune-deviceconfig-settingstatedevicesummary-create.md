@@ -1,16 +1,16 @@
 ---
 title: Create settingStateDeviceSummary
 description: Создание объекта settingStateDeviceSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 723ad2be57443411eacbc762f6b97c12576e09ed
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e4931536e501e72b3ba21470130815d2ff017a77
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514293"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387766"
 ---
 # <a name="create-settingstatedevicesummary"></a>Create settingStateDeviceSummary
 
@@ -45,15 +45,15 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта settingStateDeviceSummary в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта settingStateDeviceSummary.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|settingName|Строка|Имя параметра.|
+|id|String|Ключ объекта.|
+|settingName|String|Имя параметра.|
 |instancePath|String|Имя пути к экземпляру для параметра.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств для параметра.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств для параметра.|
@@ -112,6 +112,8 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

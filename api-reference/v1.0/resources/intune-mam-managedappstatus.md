@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса managedAppStatus
 description: Представляет состояние защиты и конфигурации приложений для организации.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: deaca18dd8a11c930bdd052a6e3c1f94f0de1a22
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca78f4dd9a191819e7f5e74ecea491ce7ceb7ec2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448328"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43354291"
 ---
 # <a name="managedappstatus-resource-type"></a>Тип ресурса managedAppStatus
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -33,7 +33,7 @@ ms.locfileid: "42448328"
 |id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,6 +52,9 @@ ms.locfileid: "42448328"
   "version": "String"
 }
 ```
+
+
+
 
 
 

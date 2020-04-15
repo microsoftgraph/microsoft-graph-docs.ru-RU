@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса resetPasscodeActionResult
 description: Результат действия "Сброс секретного кода"
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 456bbc92dba168501fe3114e831665f8e2efce50
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d8510dcb20fa0af50df1db24927b97c32afb1188
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530287"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439444"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>Тип ресурса resetPasscodeActionResult
 
@@ -26,13 +26,13 @@ ms.locfileid: "42530287"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actionName|Строка|Название действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
+|actionName|String|Название действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |actionState|[actionState](../resources/intune-devices-actionstate.md)|Состояние действия, унаследованного от [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |passcode|String|Новый секретный код для устройства |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,6 +52,9 @@ ms.locfileid: "42530287"
   "passcode": "String"
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 'message: copy'
 description: Копирование сообщения в папку.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 70ef296ae46b868c7980546462cc0ba37c793e60
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 92ee0aeaa230015c0073177ab8f48e7ed5b91596
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511574"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43355211"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -43,10 +43,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 | Заголовок | Значение |
 |:-------|:------|
-| Авторизация | `Bearer {token}`. Обязательный элемент. |
+| Авторизация | `Bearer {token}`. Обязательно. |
 | Content-Type | `application/json`. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 

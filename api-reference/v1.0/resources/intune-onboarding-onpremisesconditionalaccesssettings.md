@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса onPremisesConditionalAccessSettings
 description: Одноэлементный объект, представляющий параметры условного доступа к локальной среде Exchange для клиента.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2fda9b2c4e8dff366fc347ea145ba627e6c764ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 44e0174ce6b7c8918e100c345189f79050038f9b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448041"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441767"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>Тип ресурса onPremisesConditionalAccessSettings
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -35,7 +35,7 @@ ms.locfileid: "42448041"
 |excludedGroups|Коллекция объектов Guid|Группы пользователей, на которые не распространяется условный доступ к локальной среде. На всех пользователей из этих группах не будет распространяться политика условного доступа.|
 |overrideDefaultRule|Boolean|Указывает, следует ли переопределять правило доступа по умолчанию при разрешении устройства, чтобы обеспечить предоставление доступа.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,6 +60,9 @@ ms.locfileid: "42448041"
   "overrideDefaultRule": true
 }
 ```
+
+
+
 
 
 

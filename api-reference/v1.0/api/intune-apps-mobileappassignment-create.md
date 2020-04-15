@@ -1,16 +1,16 @@
 ---
 title: Создание объекта mobileAppAssignment
 description: Создание объекта mobileAppAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e4a8561e2bcd2e194c4a092262f173c77d9d008
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d0f6c78d7453e97fd72b7200cd2b86adf78ccfb2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516061"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401573"
 ---
 # <a name="create-mobileappassignment"></a>Создание объекта mobileAppAssignment
 
@@ -44,14 +44,14 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта mobileAppAssignment в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта mobileAppAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки, определенная администратором. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 |settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|Параметры целевого назначения, определенные администратором.|
@@ -101,6 +101,8 @@ Content-Length: 322
   }
 }
 ```
+
+
 
 
 

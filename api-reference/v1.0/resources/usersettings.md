@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса userSettings
 description: 'Параметры текущего пользователя для поиска контента. '
-author: dkershaw10
+author: krbain
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b05dfe80d4131a75f01a3c588ed1c2e33c3df833
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: c2c759822c272d9ef5b5291ff58be4d737844585
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144095"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442321"
 ---
 # <a name="usersettings-resource-type"></a>Тип ресурса userSettings
 

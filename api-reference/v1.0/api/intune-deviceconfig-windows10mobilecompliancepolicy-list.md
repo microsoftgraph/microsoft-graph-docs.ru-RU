@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов windows10MobileCompliancePolicy
 description: Список свойств и связей объектов windows10MobileCompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e47b1d9173e1000069b4b345f2144708a7ea5d1e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a026bbc783fae41594f8017514c0603e7fe9c69a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513995"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43369616"
 ---
 # <a name="list-windows10mobilecompliancepolicies"></a>Перечисление объектов windows10MobileCompliancePolicy
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceCompliancePolicies
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -95,6 +95,8 @@ Content-Length: 1089
   ]
 }
 ```
+
+
 
 
 

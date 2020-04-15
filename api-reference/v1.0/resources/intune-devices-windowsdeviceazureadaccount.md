@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса windowsDeviceAzureADAccount
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58877d42f14452141ffb9aa684421519194f6997
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c13468292fbacf8a6394a177d6c6654b85eb4b6c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533234"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439414"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>Тип ресурса windowsDeviceAzureADAccount
 
@@ -29,7 +29,7 @@ ms.locfileid: "42533234"
 |password|Строка|Н/Д Наследуется от ресурса [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
 |userPrincipalName|String|Пока не задокументировано.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,9 @@ ms.locfileid: "42533234"
   "userPrincipalName": "String"
 }
 ```
+
+
+
 
 
 

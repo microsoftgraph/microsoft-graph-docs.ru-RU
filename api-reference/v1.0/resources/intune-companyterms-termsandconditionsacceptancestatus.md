@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса termsAndConditionsAcceptanceStatus
 description: Объект termsAndConditionsAcceptanceStatus представляет состояние принятия определенной политики условий для заданного пользователя. Чтобы получить доступ к корпоративному порталу, пользователям нужно принять последнюю версию условий.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1020d31fa1889efd7f144fb105ee6cfa473fb002
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2027f357706761dec7c5ae527586960d967aa7d4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763083"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436820"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Тип ресурса termsAndConditionsAcceptanceStatus
 
@@ -38,7 +38,7 @@ ms.locfileid: "42763083"
 |acceptedDateTime|DateTimeOffset|Дата и время последнего принятия условий пользователем.|
 |userPrincipalName|String|UserPrincipalName пользователя, который принял термин.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Ссылка для перехода к назначенным условиям.|
@@ -61,6 +61,9 @@ ms.locfileid: "42763083"
   "userPrincipalName": "String"
 }
 ```
+
+
+
 
 
 

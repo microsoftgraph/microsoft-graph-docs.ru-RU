@@ -1,16 +1,16 @@
 ---
 title: тип перечисления не к windowsdevicetype
 description: Содержит свойства для типа устройства Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e27776acec921d1725e00a3011765d45ee45ddeb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0265d9a6f216b6a86887a008c098987bad930880
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531058"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439593"
 ---
 # <a name="windowsdevicetype-enum-type"></a>тип перечисления не к windowsdevicetype
 
@@ -24,10 +24,13 @@ ms.locfileid: "42531058"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |нет|нуль|Флаги не заданы.|
-|системной|1 |Поддерживается ли тип устройства Windows для настольных ПК.|
-|связь|2 |Поддерживается ли тип мобильного устройства Windows.|
+|системной|1,1|Поддерживается ли тип устройства Windows для настольных ПК.|
+|связь|2|Поддерживается ли тип мобильного устройства Windows.|
 |holographic|4 |Поддерживается ли тип устройства с Windows Holographic.|
 |team|8 |Поддерживается ли тип устройства группы Windows.|
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов windowsPhone81CustomConfiguration
 description: Перечисление свойств и связей объектов windowsPhone81CustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 18b5918f98b1b4ea911ef5f94b0e6f4843705174
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4f8b33c40a2892d3a3568c4afe49d0d5a904c053
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513747"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422017"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>Перечисление объектов windowsPhone81CustomConfiguration
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -88,6 +88,8 @@ Content-Length: 678
   ]
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса remoteLockActionResult
 description: Результат блокирования с ПИН-кодом разблокировки
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9205ba5ede57f87cfc56cdbebaea1d5d2ccaa08
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0fcf663ad633f09a1198c901ffa1b82c2278b3ba
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532181"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406828"
 ---
 # <a name="remotelockactionresult-resource-type"></a>Тип ресурса remoteLockActionResult
 
@@ -26,13 +26,13 @@ ms.locfileid: "42532181"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actionName|Строка|Название действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
+|actionName|String|Название действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |actionState|[actionState](../resources/intune-devices-actionstate.md)|Состояние действия, унаследованного от [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |unlockPin|String|ПИН-код для разблокировки клиента|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,6 +52,9 @@ ms.locfileid: "42532181"
   "unlockPin": "String"
 }
 ```
+
+
+
 
 
 

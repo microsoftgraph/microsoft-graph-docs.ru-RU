@@ -1,16 +1,16 @@
 ---
 title: Delete managedAppOperation
 description: Удаляет объект managedAppOperation.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 773e564cdea4e5d81e4fb0b2c94e47d7fc849e8f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c446112818f5ac43922372da1eeb7bb8f7926b42
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513191"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399113"
 ---
 # <a name="delete-managedappoperation"></a>Delete managedAppOperation
 
@@ -44,7 +44,7 @@ DELETE /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/o
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrati
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

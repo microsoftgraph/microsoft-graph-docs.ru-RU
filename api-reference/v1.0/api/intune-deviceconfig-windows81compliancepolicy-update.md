@@ -1,16 +1,16 @@
 ---
 title: Update windows81CompliancePolicy
 description: Обновление свойств объекта windows81CompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f6a7f82eadee9dffd3d5a5f6a62852657e3ff51e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 094e7146382993ba700b8b85ee63a659b741bcde
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513880"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441940"
 ---
 # <a name="update-windows81compliancepolicy"></a>Update windows81CompliancePolicy
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md).
@@ -65,7 +65,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, повторное использование которых следует запретить. Допустимые значения: от 0 до 24.|
-|osMinimumVersion|Строка|Минимальная версия Windows 8.1.|
+|osMinimumVersion|String|Минимальная версия Windows 8.1.|
 |osMaximumVersion|String|Максимальная версия Windows 8.1.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройстве с Windows 8.1.|
 
@@ -130,6 +130,8 @@ Content-Length: 774
   "storageRequireEncryption": true
 }
 ```
+
+
 
 
 

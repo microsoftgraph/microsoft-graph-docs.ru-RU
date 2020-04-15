@@ -1,16 +1,16 @@
 ---
 title: Функция getManagedAppDiagnosticStatuses
 description: Получает состояние диагностической проверки для определенного пользователя.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d08785b8eff6d8233476132d21934336eadd076
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5a6d816da11ce25041d02523eeb647eb4ebd4aec
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511987"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411322"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>Функция getManagedAppDiagnosticStatuses
 
@@ -45,7 +45,7 @@ GET /users/{usersId}/getManagedAppDiagnosticStatuses
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -79,6 +79,8 @@ Content-Length: 249
   ]
 }
 ```
+
+
 
 
 

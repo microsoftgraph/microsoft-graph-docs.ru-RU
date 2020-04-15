@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса managedAppRegistration
 description: ManagedAppEntity — это базовый тип для всех остальных типов объектов в рабочем процессе управления приложениями. Ресурс ManagedAppRegistration представляет собой сведения об управляемом приложении, используемом членом организации.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 964850f0b4a8cbd2ceed152460385eb4fadf037b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a1919cfa3bd7022eda2413a251735b310829afae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448342"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43354319"
 ---
 # <a name="managedappregistration-resource-type"></a>Тип ресурса managedAppRegistration
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -45,7 +45,7 @@ ManagedAppEntity — это базовый тип для всех осталь�
 |id|Строка|Ключ объекта.|
 |version|Строка|Версия объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |appliedPolicies|Коллекция [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Нуль или более политик, примененных к зарегистрированному приложению, когда оно в последний раз синхронизировалось со службой управления.|
@@ -91,6 +91,9 @@ ManagedAppEntity — это базовый тип для всех осталь�
   ],
 }
 -->
+
+
+
 
 
 

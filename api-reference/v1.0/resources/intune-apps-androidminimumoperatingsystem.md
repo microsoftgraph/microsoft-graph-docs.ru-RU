@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса androidMinimumOperatingSystem
 description: Содержит свойства для минимальной версии операционной системы, необходимой для мобильного приложения Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d59a5186a3b22c25882540138cbbc2db4f0ae384
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef599e37033c6c0e1e101925559560d6a970bbae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531233"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397361"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Тип ресурса androidMinimumOperatingSystem
 
@@ -23,16 +23,16 @@ ms.locfileid: "42531233"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|v4_0|Boolean|Версия 4.0 или выше.|
-|v4_0_3|Boolean|Версия 4.0.3 или выше.|
-|v4_1|Boolean|Версия 4.1 или выше.|
-|v4_2|Boolean|Версия 4.2 или выше.|
-|v4_3|Boolean|Версия 4.3 или выше.|
-|v4_4|Boolean|Версия 4.4 или выше.|
-|v5_0|Boolean|Версия 5.0 или выше.|
+|v4_0|Логический|Версия 4.0 или выше.|
+|v4_0_3|Логический|Версия 4.0.3 или выше.|
+|v4_1|Логический|Версия 4.1 или выше.|
+|v4_2|Логический|Версия 4.2 или выше.|
+|v4_3|Логический|Версия 4.3 или выше.|
+|v4_4|Логический|Версия 4.4 или выше.|
+|v5_0|Логический|Версия 5.0 или выше.|
 |v5_1|Boolean|Версия 5.1 или выше.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,6 +55,9 @@ ms.locfileid: "42531233"
   "v5_1": true
 }
 ```
+
+
+
 
 
 

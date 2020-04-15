@@ -1,16 +1,16 @@
 ---
 title: Обновление пользователя
 description: Обновление свойств объекта пользователя.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7518d65e707badfd857e4508a6d055e22b4945a7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ff722318d1cc4fff866cd309f08d8ef9c6f60df
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511959"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411238"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -48,14 +48,14 @@ PATCH /users/{usersId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [user](../resources/intune-shared-user.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [user](../resources/intune-shared-user.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор пользователя.|
+|id|String|Уникальный идентификатор пользователя.|
 |**Адаптация**|
 |deviceEnrollmentLimit|Int32|Максимальное количество устройств, которые разрешено зарегистрировать пользователю. Допустимые значения: 5 или 1000.|
 
@@ -88,6 +88,8 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
+
 
 
 

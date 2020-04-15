@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса managedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенного набора приложений.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 940811c054da8f1fe30266516b7eda8dfdf0f9d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 33048876cf28de23f9eaf6f562946283b8f19bd7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448356"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43354414"
 ---
 # <a name="managedappprotection-resource-type"></a>Тип ресурса managedAppProtection
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -66,7 +66,7 @@ ms.locfileid: "42448356"
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании.|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -126,5 +126,8 @@ ms.locfileid: "42448356"
   ],
 }
 -->
+
+
+
 
 

@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта deviceCompliancePolicyDeviceStateSummary
 description: Обновление свойств объекта deviceCompliancePolicyDeviceStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a005d29d1da04763978163f8aca5f1d3373d235
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65193c1bfd77a947f707a19b976a62700a35d2f4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515023"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399951"
 ---
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>Обновление объекта deviceCompliancePolicyDeviceStateSummary
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md).
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Количество устройств, для которых действует льготный период.|
 |configManagerCount|Int32|Количество устройств, для которых System Center Configuration Manager управляет соответствием требованиям.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
@@ -111,6 +111,8 @@ Content-Length: 398
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта deviceComplianceDeviceOverview
 description: Обновление свойств объекта deviceComplianceDeviceOverview.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f0e8a2097b31d46120c7000c97459860c0cd303c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e95b95954237c8ae2ddc60b039cc3230576bdc47
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515135"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43400456"
 ---
 # <a name="update-devicecompliancedeviceoverview"></a>Обновление объекта deviceComplianceDeviceOverview
 
@@ -44,14 +44,14 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих устройств.|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
 |successCount|Int32|Количество успешных устройств.|
@@ -105,6 +105,8 @@ Content-Length: 330
   "configurationVersion": 4
 }
 ```
+
+
 
 
 

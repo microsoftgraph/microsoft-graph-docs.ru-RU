@@ -1,16 +1,16 @@
 ---
 title: Список объектов windowsInformationProtectionAppLearningSummary
 description: Список свойств и связей объектов windowsInformationProtectionAppLearningSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7680b698d8bd405ebbb75e83fab4a2e8d7a6b8ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bd0d5ddfbce7c2cc94583d393f09ac4cb5848d7d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511805"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439682"
 ---
 # <a name="list-windowsinformationprotectionapplearningsummaries"></a>Список объектов windowsInformationProtectionAppLearningSummary
 
@@ -44,7 +44,7 @@ GET /deviceManagement/windowsInformationProtectionAppLearningSummaries
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -77,6 +77,8 @@ Content-Length: 293
   ]
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Get managedAppStatusRaw
 description: Чтение свойств и связей объекта managedAppStatusRaw.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2dfcba4465fe9d145e480ab0af87047e77e1293a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b25451f69bc2dcf67882a35976fbfb96a9c7ba1c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513072"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43398602"
 ---
 # <a name="get-managedappstatusraw"></a>Get managedAppStatusRaw
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
@@ -47,7 +47,7 @@ GET /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -80,6 +80,8 @@ Content-Length: 279
   }
 }
 ```
+
+
 
 
 

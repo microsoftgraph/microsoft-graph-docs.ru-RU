@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов iosVppEBook
 description: Список свойств и связей объектов iosVppEBook.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 86693108597a143434df0b596587624db9eb32e3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff138b428d4d679b02f1965fd50addfb2749de8c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515646"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43355781"
 ---
 # <a name="list-iosvppebooks"></a>Перечисление объектов iosVppEBook
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/managedEBooks
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -97,6 +97,8 @@ Content-Length: 1097
   ]
 }
 ```
+
+
 
 
 

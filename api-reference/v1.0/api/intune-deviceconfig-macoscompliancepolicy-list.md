@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов macOSCompliancePolicy
 description: Список свойств и связей объектов macOSCompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f9badf6ce5d45da888d92e23ec11f67c4f2d5fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 151e34335f0bb86f4466334fd851bea7610287ff
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514412"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388940"
 ---
 # <a name="list-macoscompliancepolicies"></a>Перечисление объектов macOSCompliancePolicy
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceCompliancePolicies
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -96,6 +96,8 @@ Content-Length: 1150
   ]
 }
 ```
+
+
 
 
 

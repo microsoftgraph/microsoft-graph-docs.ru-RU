@@ -1,16 +1,16 @@
 ---
 title: Действие removeAllDevicesFromManagement
 description: Прекращение управления всеми устройствами для этого пользователя
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 48e9172e07bdea4f95eecfc2f8d3d10c6b7f397c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d33627cacb676390a54b9eda1253e8f600003ea0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511966"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411245"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>Действие removeAllDevicesFromManagement
 
@@ -45,7 +45,7 @@ POST /users/{usersId}/removeAllDevicesFromManagement
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,6 +66,8 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/removeAllDevicesFromManage
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

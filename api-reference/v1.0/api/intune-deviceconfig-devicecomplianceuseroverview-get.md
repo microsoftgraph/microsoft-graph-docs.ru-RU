@@ -1,16 +1,16 @@
 ---
 title: Get deviceComplianceUserOverview
 description: Чтение свойств и связей объекта deviceComplianceUserOverview.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f4ff660ce34b0b1861f2fa51a04dd6c5554d8ca6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd1c61cb6e5fc30674ea0bbf1899dae88c9b1203
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514910"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399494"
 ---
 # <a name="get-devicecomplianceuseroverview"></a>Get deviceComplianceUserOverview
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userSt
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userSt
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -82,6 +82,8 @@ Content-Length: 365
   }
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Get androidManagedAppProtection
 description: Чтение свойств и связей объекта androidManagedAppProtection.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b4e36212cce242cad57df159835373c632df724a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c43f97564bc3f700297b0fec5fbcd37affdd58ee
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513338"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407308"
 ---
 # <a name="get-androidmanagedappprotection"></a>Get androidManagedAppProtection
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtecti
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
@@ -47,7 +47,7 @@ GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtecti
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -115,6 +115,8 @@ Content-Length: 1967
   }
 }
 ```
+
+
 
 
 

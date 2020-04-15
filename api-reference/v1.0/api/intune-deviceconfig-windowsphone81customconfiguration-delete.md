@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта windowsPhone81CustomConfiguration
 description: Удаляет объект windowsPhone81CustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a264b66a31556f2300dad11b459990264f7b8300
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f10b6bd8e998fdc5254be7cc8f395e3abf2d988a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513761"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422081"
 ---
 # <a name="delete-windowsphone81customconfiguration"></a>Удаление объекта windowsPhone81CustomConfiguration
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

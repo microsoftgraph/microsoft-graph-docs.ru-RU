@@ -1,16 +1,16 @@
 ---
 title: Get iosCompliancePolicy
 description: Чтение свойств и связей объекта iosCompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 91c1d0ea887309574641a6760053e00729305b0c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e9b3ee013d6443f96bc706afa32a9f251ba481f7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514629"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43408061"
 ---
 # <a name="get-ioscompliancepolicy"></a>Get iosCompliancePolicy
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -94,6 +94,8 @@ Content-Length: 978
   }
 }
 ```
+
+
 
 
 

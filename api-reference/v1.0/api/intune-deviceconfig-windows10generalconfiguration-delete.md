@@ -1,16 +1,16 @@
 ---
 title: Delete windows10GeneralConfiguration
 description: Удаляет объект windows10GeneralConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 46687076a9eba8cd751e1322997b3298f7304d16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 27b810d171b87d35586a0c4666a5299c39a4d948
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514044"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422157"
 ---
 # <a name="delete-windows10generalconfiguration"></a>Delete windows10GeneralConfiguration
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Действие scheduleActionsForRules
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5233823359068eb48e6de90933ce1a7c86cef443
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5c4a127acc4a8a7b86091600e8e8de50b52e96ef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515072"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43400073"
 ---
 # <a name="scheduleactionsforrules-action"></a>Действие scheduleActionsForRules
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -84,6 +84,8 @@ Content-length: 242
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

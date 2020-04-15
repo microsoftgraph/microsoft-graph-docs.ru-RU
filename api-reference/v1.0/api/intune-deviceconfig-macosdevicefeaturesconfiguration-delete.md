@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта macOSDeviceFeaturesConfiguration
 description: Удаляет объект macOSDeviceFeaturesConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 736d5d5c014ef6f0d62109bcba8a665c663b99c5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 82d7c65991fcf0cc17ef4852ff6635cb9f0db6c7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514356"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388029"
 ---
 # <a name="delete-macosdevicefeaturesconfiguration"></a>Удаление объекта macOSDeviceFeaturesConfiguration
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

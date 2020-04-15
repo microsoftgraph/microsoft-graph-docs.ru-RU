@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта enrollmentConfigurationAssignment
 description: Обновление свойств объекта enrollmentConfigurationAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f0af3350dfaa963755b749b56b60ee57ea77d3f8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4f4a6d77ec5b4a68c0e074e686aece203aec0cd7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512477"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442382"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>Обновление объекта enrollmentConfigurationAssignment
 
@@ -44,14 +44,14 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Пока не задокументировано.|
 
 
@@ -91,6 +91,8 @@ Content-Length: 222
   }
 }
 ```
+
+
 
 
 

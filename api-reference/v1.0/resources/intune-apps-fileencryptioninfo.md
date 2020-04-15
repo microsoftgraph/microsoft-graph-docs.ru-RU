@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса fileEncryptionInfo
 description: Содержит свойства сведений о шифровании файлов для версии содержимого бизнес-приложения.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a0859447e06b7264f5018e575c047a283d02dc34
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 945376e142a62efdc6b95b3150aa4425cb45f90d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532850"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397316"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Тип ресурса fileEncryptionInfo
 
@@ -27,11 +27,11 @@ ms.locfileid: "42532850"
 |initializationVector|Binary|Вектор инициализации, используемый для алгоритма шифрования.|
 |mac|Binary|Хэш зашифрованного содержимого файла + IV (хэш содержимого).|
 |macKey|Binary|Ключ для получения свойства mac.|
-|profileIdentifier|Строка|Идентификатор профиля.|
+|profileIdentifier|String|Идентификатор профиля.|
 |fileDigest|Binary|Дайджест файла до шифрования.|
 |fileDigestAlgorithm|String|Алгоритм дайджеста файла.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,9 @@ ms.locfileid: "42532850"
   "fileDigestAlgorithm": "String"
 }
 ```
+
+
+
 
 
 

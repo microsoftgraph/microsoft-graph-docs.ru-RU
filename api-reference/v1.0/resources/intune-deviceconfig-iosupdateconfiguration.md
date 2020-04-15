@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iosUpdateConfiguration
 description: Конфигурация обновления iOS. Позволяет настраивать	временной промежуток в рамках недели для установки обновлений iOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53110245e040fe2bc04f9fbdb0eaf1aa6d318049
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e246790da381e6ee4e63e7e6c88bf99478777ce
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532478"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410400"
 ---
 # <a name="iosupdateconfiguration-resource-type"></a>Тип ресурса iosUpdateConfiguration
 
@@ -46,7 +46,7 @@ ms.locfileid: "42532478"
 |scheduledInstallDays|Коллекция [DayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Дни недели, для которых настраивается период активности. Эта коллекция может содержать не более 7 элементов.|
 |utcTimeOffsetInMinutes|Int32|Сдвиг по времени от UTC (в минутах).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -90,6 +90,9 @@ ms.locfileid: "42532478"
   ],
 }
 -->
+
+
+
 
 
 

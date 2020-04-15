@@ -1,20 +1,20 @@
 ---
 title: тип перечисления Впптокенстате
 description: Возможные состояния, связанные с токеном Apple Volume Purchase Program.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 644b1d58a38d23d71a2fa56e7bfd5d678ffee76e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 52b184490f4653898383deeda6996e353964d9b0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447999"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441723"
 ---
 # <a name="vpptokenstate-enum-type"></a>тип перечисления Впптокенстате
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -24,10 +24,13 @@ ms.locfileid: "42447999"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Состояние по умолчанию.|
-|верно|1 |Токен является допустимым.|
-|истек|2 |Срок действия маркера истек.|
-|Недопустимый|3 |Недопустимый маркер.|
+|верно|1,1|Токен является допустимым.|
+|истек|2|Срок действия маркера истек.|
+|Недопустимый|4|Недопустимый маркер.|
 |ассигнедтоекстерналмдм|4 |Маркер управляется другой службой MDM.|
+
+
+
 
 
 

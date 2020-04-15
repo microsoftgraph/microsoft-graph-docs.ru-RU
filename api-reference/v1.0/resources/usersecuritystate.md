@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса Усерсекуритистате
 description: Содержит сведения о состоянии учетной записи пользователя.
-author: dkershaw10
+author: krbain
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1f2c9de090d20f9fc6e1e383b285e31afb1c3d77
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a6192e5a549c646cc9b63117b111a0c5d167d75a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446781"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442336"
 ---
 # <a name="usersecuritystate-resource-type"></a>Тип ресурса Усерсекуритистате
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Содержит сведения о состоянии учетной записи пользователя.
 

@@ -2,15 +2,15 @@
 title: Получение имени руководителя
 description: Получение руководителя этого контакта в Организации.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 92ef5138853502698e9d76858d81cacfeac59fbb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4af7bb87f292ac309cb1837cff3772fcafddc767
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511210"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387351"
 ---
 # <a name="get-manager"></a>Получение имени руководителя
 
@@ -45,7 +45,7 @@ GET /contacts/{id}/manager
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -1,16 +1,16 @@
 ---
 title: Create sharedPCConfiguration
 description: Создание объекта sharedPCConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 67f66460efa0c608ec7ccedd3d2a906f233533cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 27ea8296da13cc1ef8e84637ff0a7208d865f2d0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514258"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387570"
 ---
 # <a name="create-sharedpcconfiguration"></a>Create sharedPCConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта sharedPCConfiguration в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта sharedPCConfiguration.
@@ -59,14 +59,14 @@ POST /deviceManagement/deviceConfigurations
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|Определяет способ управления учетными записями на общем компьютере. Применяется, только если для параметра disableAccountManager установлено значение false.|
 |allowedAccounts|[шаредпкалловедаккаунттипе](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Указывает тип учетных записей, которые можно использовать на общем компьютере. Возможные значения: `guest`, `domain`.|
-|allowLocalStorage|Boolean|Определяет, разрешено ли на общем компьютере локальное хранилище.|
-|disableAccountManager|Boolean|Отключает диспетчер учетных записей в режиме совместного использования компьютера.|
-|disableEduPolicies|Boolean|Указывает, следует ли отключить стандартные политики среды совместного использования компьютера для образования. Для Windows 10 RS2 и более поздних версий эта политика будет применяться без установки значения True для параметра Enabled.|
-|disablePowerPolicies|Boolean|Указывает, следует ли отключить стандартные политики электропитания для общего компьютера.|
+|allowLocalStorage|Логический|Определяет, разрешено ли на общем компьютере локальное хранилище.|
+|disableAccountManager|Логический|Отключает диспетчер учетных записей в режиме совместного использования компьютера.|
+|disableEduPolicies|Логический|Указывает, следует ли отключить стандартные политики среды совместного использования компьютера для образования. Для Windows 10 RS2 и более поздних версий эта политика будет применяться без установки значения True для параметра Enabled.|
+|disablePowerPolicies|Логический|Указывает, следует ли отключить стандартные политики электропитания для общего компьютера.|
 |disableSignInOnResume|Boolean|Отключает обязательный вход в систему при выходе устройства из спящего режима.|
 |enabled|Boolean|Включает режим общего компьютера и применяет политики совместного использования ПК.|
 |idleTimeBeforeSleepInSeconds|Int32|Определяет длительность (в секундах) пребывания устройства в режиме бездействия перед переходом в спящий режим. Если задать значение 0, переход в спящий режим отключается.|
-|kioskAppDisplayName|Строка|Задает текст для учетной записи, который отображается на экране входа в систему и используется для запуска приложения, определяемого с помощью свойства SetKioskAppUserModelId. Применяется, только если задано свойство KioskAppUserModelId.|
+|kioskAppDisplayName|String|Задает текст для учетной записи, который отображается на экране входа в систему и используется для запуска приложения, определяемого с помощью свойства SetKioskAppUserModelId. Применяется, только если задано свойство KioskAppUserModelId.|
 |kioskAppUserModelId|String|Определяет идентификатор пользовательской модели для приложения, используемого с ограниченным доступом.|
 |maintenanceStartTime|TimeOfDay|Указывает ежедневное время начала обслуживания.|
 
@@ -145,6 +145,8 @@ Content-Length: 1032
   "maintenanceStartTime": "11:59:24.7240000"
 }
 ```
+
+
 
 
 

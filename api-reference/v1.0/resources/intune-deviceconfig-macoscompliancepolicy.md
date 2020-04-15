@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса macOSCompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Mac OS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2cad0be6e123acf1f9a14b0c413b06ede2e4deb4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d0f380d129780b825e66757f267a215de90e3af6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418162"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410304"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>Тип ресурса macOSCompliancePolicy
 
@@ -49,7 +49,7 @@ ms.locfileid: "42418162"
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 1 до 24.|
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
-|osMinimumVersion|Строка|Минимальная версия MacOS.|
+|osMinimumVersion|String|Минимальная версия MacOS.|
 |osMaximumVersion|String|Максимальная версия MacOS.|
 |systemIntegrityProtectionEnabled|Boolean|Указывает на то, что защита целостности системы для устройств должна быть включена.|
 |deviceThreatProtectionEnabled|Логический|Указывает, что защита от угроз для устройств должна быть включена.|
@@ -59,7 +59,7 @@ ms.locfileid: "42418162"
 |firewallBlockAllIncoming|Логический|Соответствует параметру "блокировать все входящие подключения".|
 |firewallEnableStealthMode|Логический|Соответствует параметру "включить скрытый режим".|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |scheduledActionsForRule|Коллекция [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|Список запланированных действий для этого правила. Наследуется от [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
@@ -106,6 +106,9 @@ ms.locfileid: "42418162"
   "firewallEnableStealthMode": true
 }
 ```
+
+
+
 
 
 

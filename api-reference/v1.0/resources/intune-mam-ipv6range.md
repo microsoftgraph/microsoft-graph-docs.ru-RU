@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iPv6Range
 description: Определение диапазона IPv6.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6def6fa06d9cad863dcfd8c2cc7bb03f718bab3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0e0b733ceea2585198a46e62d0f033b76748035
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530191"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439371"
 ---
 # <a name="ipv6range-resource-type"></a>Тип ресурса iPv6Range
 
@@ -26,10 +26,10 @@ ms.locfileid: "42530191"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|lowerAddress|Строка|Понижение адреса|
+|lowerAddress|String|Понижение адреса|
 |upperAddress|String|Верхний адрес|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,9 @@ ms.locfileid: "42530191"
   "upperAddress": "String"
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса calendarGroup
 description: Группа пользовательских календарей.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 230d6b0f90b8dec5ad223b7243fbc710dd720a30
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 875bce80b4d4319439acf7c4d202a052770990a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531981"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407129"
 ---
 # <a name="calendargroup-resource-type"></a>Тип ресурса calendarGroup
 
@@ -23,7 +23,7 @@ ms.locfileid: "42531981"
 | Метод                                                      | Возвращаемый тип                        | Описание                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
 | [Список групп календарей](../api/user-list-calendargroups.md)  | Коллекция [Calendar](calendar.md) | Получение групп календарей пользователя.                               |
-| [Создание группы календарей](../api/user-post-calendargroups.md) | [Календарь](calendar.md)            | Создание группы календарей.                                  |
+| [Создание группы календарей](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | Создание группы календарей.                                  |
 | [Получение группы календарей](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | Чтение свойств и связей, принадлежащих объекту группы календарей. |
 | [Обновление](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | Обновление объекта calendarGroup.                                  |
 | [Удаление](../api/calendargroup-delete.md)                    | Нет                               | Удаление объекта calendarGroup.                                  |
@@ -35,11 +35,11 @@ ms.locfileid: "42531981"
 | Свойство  | Тип   | Описание                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | name      | String | Имя группы.                                                                                                                                                                                           |
-| changeKey | Строка | Указывает версию группы календарей. При каждом изменении группы календарей также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения. |
+| changeKey | String | Указывает версию группы календарей. При каждом изменении группы календарей также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения. |
 | classId   | Guid   | Идентификатор класса. Только для чтения.                                                                                                                                                                          |
 | id        | Строка | Уникальный идентификатор группы. Только для чтения.                                                                                                                                                                 |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип                               | Описание                                                                    |
 | :----------- | :--------------------------------- | :----------------------------------------------------------------------------- |

@@ -1,16 +1,16 @@
 ---
 title: Создание объекта enrollmentTroubleshootingEvent
 description: Создание объекта enrollmentTroubleshootingEvent.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 605a4bed084236321d5831d6ef09a4049d70c878
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 770a784cacd9b74529142e3b81ca3cef0f76af92
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511868"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43368746"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>Создание объекта enrollmentTroubleshootingEvent
 
@@ -44,7 +44,7 @@ POST /deviceManagement/troubleshootingEvents
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта enrollmentTroubleshootingEvent в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта enrollmentTroubleshootingEvent.
@@ -53,12 +53,12 @@ POST /deviceManagement/troubleshootingEvents
 |:---|:---|:---|
 |id|Строка|UUID объекта. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
 |eventDateTime|DateTimeOffset|Время возникновения события. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
-|correlationId|Строка|Идентификатор, используемый для трассировки сбоя в службе. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
-|managedDeviceIdentifier|Строка|Идентификатор события, созданный или полученный службой Intune.|
-|operatingSystem|Строка|Операционная система.|
-|osVersion|Строка|Версия ОС.|
+|correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
+|managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
+|operatingSystem|String|Операционная система.|
+|osVersion|String|Версия ОС.|
 |userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
-|deviceId|Строка|Идентификатор устройства Azure AD.|
+|deviceId|String|Идентификатор устройства Azure AD.|
 |enrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |failureCategory|[девицеенроллментфаилуререасон](../resources/intune-troubleshooting-deviceenrollmentfailurereason.md)|Категория сбоя высокого уровня. Возможные значения: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected`, `userAbandonment`.|
 |failureReason|String|Подробная причина ошибки.|
@@ -114,6 +114,8 @@ Content-Length: 558
   "failureReason": "Failure Reason value"
 }
 ```
+
+
 
 
 

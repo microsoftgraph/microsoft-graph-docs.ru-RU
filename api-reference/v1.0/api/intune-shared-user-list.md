@@ -1,16 +1,16 @@
 ---
 title: Перечисление пользователей
 description: Список свойств и связей объектов user.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d6a3a6198421cf7f35e03b7d4c8713a18ba6301d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 42959c59740332f3d330f9938ac284ac837e728f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511973"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411260"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -48,7 +48,7 @@ GET /users
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -80,6 +80,8 @@ Content-Length: 136
   ]
 }
 ```
+
+
 
 
 

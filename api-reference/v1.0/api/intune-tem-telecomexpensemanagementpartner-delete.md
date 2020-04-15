@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта telecomExpenseManagementPartner
 description: Удаляет объект telecomExpenseManagementPartner.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d36bef1c021d6c899ae97658aeddccd9cc5d6f5f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2878cfaf408b8882bdf56855cadef58394d16f4d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511938"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411121"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>Удаление объекта telecomExpenseManagementPartner
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagem
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/telecomExpenseManagemen
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

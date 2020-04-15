@@ -1,16 +1,16 @@
 ---
 title: Список объектов enrollmentConfigurationAssignment
 description: Список свойств и связей объектов enrollmentConfigurationAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 88f3013a3bf223e0acb7344ba5398fdca032a07e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a5787dd76300b45c59bcb0f466bc6d99c8294e48
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512484"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442403"
 ---
 # <a name="list-enrollmentconfigurationassignments"></a>Список объектов enrollmentConfigurationAssignment
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -77,6 +77,8 @@ Content-Length: 275
   ]
 }
 ```
+
+
 
 
 

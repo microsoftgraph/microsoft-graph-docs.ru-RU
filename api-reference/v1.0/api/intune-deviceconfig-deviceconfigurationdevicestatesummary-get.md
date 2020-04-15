@@ -1,16 +1,16 @@
 ---
 title: Получение объекта deviceConfigurationDeviceStateSummary
 description: Чтение свойств и связей объекта deviceConfigurationDeviceStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4dd27a99b06e22190dd7a4a5131b311d5c3405ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d06bf07ba90baeb18292a7380b65c6f22a3f5d3b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514791"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43370270"
 ---
 # <a name="get-deviceconfigurationdevicestatesummary"></a>Получение объекта deviceConfigurationDeviceStateSummary
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceConfigurationDeviceStateSummaries
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceConfigurationDeviceStateSummaries
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -82,6 +82,8 @@ Content-Length: 376
   }
 }
 ```
+
+
 
 
 

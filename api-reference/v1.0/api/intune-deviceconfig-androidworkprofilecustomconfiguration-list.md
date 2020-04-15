@@ -1,16 +1,16 @@
 ---
 title: Список Андроидворкпрофилекустомконфигуратионс
 description: Список свойств и связей объектов Андроидворкпрофилекустомконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f870525f10da21272ac0ab492cbd612e84908d17
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 681028162c7e34f0108c061ef05d296e9d487f39
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515240"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401233"
 ---
 # <a name="list-androidworkprofilecustomconfigurations"></a>Список Андроидворкпрофилекустомконфигуратионс
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -88,6 +88,8 @@ Content-Length: 682
   ]
 }
 ```
+
+
 
 
 

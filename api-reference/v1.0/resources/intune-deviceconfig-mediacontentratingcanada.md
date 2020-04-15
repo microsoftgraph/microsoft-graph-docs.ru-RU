@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса mediaContentRatingCanada
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2abc1018d6f9aa271e444560d53f6db6c566a7c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 08673417c883c2aa2a8082010a0eaa001ca02004
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532451"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410081"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>Тип ресурса mediaContentRatingCanada
 
@@ -26,7 +26,7 @@ ms.locfileid: "42532451"
 |movieRating|[ратингканадамовиестипе](../resources/intune-deviceconfig-ratingcanadamoviestype.md)|Оценка фильмов выбрана для Канады. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`, `restricted`.|
 |tvRating|[ратингканадателевисионтипе](../resources/intune-deviceconfig-ratingcanadatelevisiontype.md)|Рейтинг для телевизора выбран для Канады. Возможные значения: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,9 @@ ms.locfileid: "42532451"
   "tvRating": "String"
 }
 ```
+
+
+
 
 
 

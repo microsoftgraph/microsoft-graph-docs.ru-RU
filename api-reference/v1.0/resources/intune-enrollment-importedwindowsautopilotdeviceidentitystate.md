@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса importedWindowsAutopilotDeviceIdentityState
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe8ae3addc2d4b74323471bc39fd8d5569d4df99
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 696528c00f2dd82f1dd6cba6087acadaa158bbf4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530246"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439385"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>Тип ресурса importedWindowsAutopilotDeviceIdentityState
 
@@ -24,11 +24,11 @@ ms.locfileid: "42530246"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |deviceImportStatus|[импортедвиндовсаутопилотдевицеидентитимпортстатус](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)|Состояние устройства, сообщаемое службой каталогов устройства (DDS). Возможные значения: `unknown`, `pending`, `partial`, `complete`, `error`.|
-|deviceRegistrationId|Строка|Идентификатор регистрации устройства для успешно добавленного устройства, сообщаемый службой каталогов устройства (DDS).|
+|deviceRegistrationId|String|Идентификатор регистрации устройства для успешно добавленного устройства, сообщаемый службой каталогов устройства (DDS).|
 |deviceErrorCode|Int32|Код ошибки устройства, сообщаемый службой каталогов устройства (DDS).|
 |deviceErrorName|Строка|Имя ошибки устройства, сообщаемое службой каталогов устройства (DDS).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,9 @@ ms.locfileid: "42530246"
   "deviceErrorName": "String"
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса appConfigurationSettingItem
 description: Содержит свойства для элемента параметра конфигурации приложения.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb207355a6f637cc1f5c0e3031422f639e2bf357
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 997779a53680042f16c0fb4a4337889dbba377d8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531244"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397339"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>Тип ресурса appConfigurationSettingItem
 
@@ -23,11 +23,11 @@ ms.locfileid: "42531244"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|appConfigKey|Строка|Ключ конфигурации приложения.|
+|appConfigKey|String|Ключ конфигурации приложения.|
 |appConfigKeyType|[мдмаппконфигкэйтипе](../resources/intune-apps-mdmappconfigkeytype.md)|Тип ключа конфигурации приложения. Возможные значения: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
 |appConfigKeyValue|Строка|Значение ключа конфигурации приложения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,9 @@ ms.locfileid: "42531244"
   "appConfigKeyValue": "String"
 }
 ```
+
+
+
 
 
 

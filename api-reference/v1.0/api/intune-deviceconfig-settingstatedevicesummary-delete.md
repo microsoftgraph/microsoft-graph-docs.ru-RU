@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта settingStateDeviceSummary
 description: Удаляет объект settingStateDeviceSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dbafdfb7963dae4055a3999241e918555a6aa47
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4df1f01dc6f54889f4b500fc3d0ff884bc559c3d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514286"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387639"
 ---
 # <a name="delete-settingstatedevicesummary"></a>Удаление объекта settingStateDeviceSummary
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/dev
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -64,6 +64,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 
