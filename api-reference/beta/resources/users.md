@@ -1,16 +1,16 @@
 ---
 title: Работа с пользователями в Microsoft Graph
-description: Вы можете использовать Microsoft Graph для создания привлекательных приложений, учитывающих пользователей, их связи с другими пользователями и группами, а также почту, календарь и файлы.
+description: Создавайте впечатляющие приложения, основанные на пользователях, их отношениях с другими пользователями и группами, а также их почтой, календарем и файлами.
 localization_priority: Priority
-author: dkershaw10
+author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: ac705194cc69eebe8dbfda9aab37cb7c34a10187
-ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
+ms.openlocfilehash: d69870512f8a8e86ddda77fb99a41019879edaa1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37204000"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422462"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Работа с пользователями в Microsoft Graph
 
