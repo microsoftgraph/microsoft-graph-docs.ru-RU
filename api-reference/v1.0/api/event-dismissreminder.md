@@ -1,33 +1,33 @@
 ---
 title: 'event: dismissReminder'
 description: Отклонить напоминание, запущенное для события в календаре пользователя.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a725b576e02772fe31a294343eba839acf646f69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a5613b2a250e5845baa7fd9d53743ed7a24c9da1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517371"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371059"
 ---
-# <a name="event-dismissreminder"></a><span data-ttu-id="c12c6-103">event: dismissReminder</span><span class="sxs-lookup"><span data-stu-id="c12c6-103">event: dismissReminder</span></span>
+# <a name="event-dismissreminder"></a><span data-ttu-id="2f686-103">event: dismissReminder</span><span class="sxs-lookup"><span data-stu-id="2f686-103">event: dismissReminder</span></span>
 
-<span data-ttu-id="c12c6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c12c6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2f686-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2f686-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c12c6-105">Отклонить напоминание, запущенное для [события](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="c12c6-105">Dismiss a reminder that has been triggered for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="2f686-105">Отклонить напоминание, запущенное для [события](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="2f686-105">Dismiss a reminder that has been triggered for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c12c6-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c12c6-106">Permissions</span></span>
-<span data-ttu-id="c12c6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c12c6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2f686-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2f686-106">Permissions</span></span>
+<span data-ttu-id="2f686-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2f686-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c12c6-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c12c6-109">Permission type</span></span>      | <span data-ttu-id="c12c6-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c12c6-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2f686-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2f686-109">Permission type</span></span>      | <span data-ttu-id="2f686-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2f686-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c12c6-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c12c6-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c12c6-112">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c12c6-112">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="c12c6-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c12c6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c12c6-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c12c6-114">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="c12c6-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c12c6-115">Application</span></span> | <span data-ttu-id="c12c6-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c12c6-116">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="2f686-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2f686-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2f686-112">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2f686-112">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="2f686-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2f686-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2f686-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2f686-114">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="2f686-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2f686-115">Application</span></span> | <span data-ttu-id="2f686-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2f686-116">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c12c6-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c12c6-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2f686-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2f686-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -50,26 +50,26 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 <br/>
 
-## <a name="request-headers"></a><span data-ttu-id="c12c6-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c12c6-118">Request headers</span></span>
-| <span data-ttu-id="c12c6-119">Имя</span><span class="sxs-lookup"><span data-stu-id="c12c6-119">Name</span></span>       | <span data-ttu-id="c12c6-120">Тип</span><span class="sxs-lookup"><span data-stu-id="c12c6-120">Type</span></span> | <span data-ttu-id="c12c6-121">Описание</span><span class="sxs-lookup"><span data-stu-id="c12c6-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2f686-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2f686-118">Request headers</span></span>
+| <span data-ttu-id="2f686-119">Имя</span><span class="sxs-lookup"><span data-stu-id="2f686-119">Name</span></span>       | <span data-ttu-id="2f686-120">Тип</span><span class="sxs-lookup"><span data-stu-id="2f686-120">Type</span></span> | <span data-ttu-id="2f686-121">Описание</span><span class="sxs-lookup"><span data-stu-id="2f686-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="c12c6-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c12c6-122">Authorization</span></span>  | <span data-ttu-id="c12c6-123">string</span><span class="sxs-lookup"><span data-stu-id="c12c6-123">string</span></span>  | <span data-ttu-id="c12c6-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c12c6-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2f686-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2f686-122">Authorization</span></span>  | <span data-ttu-id="2f686-123">string</span><span class="sxs-lookup"><span data-stu-id="2f686-123">string</span></span>  | <span data-ttu-id="2f686-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2f686-p102">Bearer {token}. Required.</span></span> |
 
 <br/>
 
-## <a name="response"></a><span data-ttu-id="c12c6-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="c12c6-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2f686-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f686-126">Response</span></span>
 
-<span data-ttu-id="c12c6-p103">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="c12c6-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="2f686-p103">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="2f686-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c12c6-129">Пример</span><span class="sxs-lookup"><span data-stu-id="c12c6-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2f686-129">Пример</span><span class="sxs-lookup"><span data-stu-id="2f686-129">Example</span></span>
 
-<span data-ttu-id="c12c6-130">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="c12c6-130">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="2f686-130">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="2f686-130">Here is an example of how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="c12c6-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="c12c6-131">Request</span></span>
-<span data-ttu-id="c12c6-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c12c6-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="2f686-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="2f686-131">Request</span></span>
+<span data-ttu-id="2f686-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2f686-132">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="c12c6-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="c12c6-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2f686-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f686-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_dismissreminder"
@@ -78,19 +78,19 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 ```
-# <a name="c"></a>[<span data-ttu-id="c12c6-134">C#</span><span class="sxs-lookup"><span data-stu-id="c12c6-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2f686-134">C#</span><span class="sxs-lookup"><span data-stu-id="2f686-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-dismissreminder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c12c6-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c12c6-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2f686-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f686-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-dismissreminder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c12c6-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c12c6-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2f686-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f686-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-dismissreminder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c12c6-137">Java</span><span class="sxs-lookup"><span data-stu-id="c12c6-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2f686-137">Java</span><span class="sxs-lookup"><span data-stu-id="2f686-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-dismissreminder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -99,8 +99,8 @@ POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 
 <br/>
 
-### <a name="response"></a><span data-ttu-id="c12c6-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="c12c6-138">Response</span></span>
-<span data-ttu-id="c12c6-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c12c6-139">Here is an example of the response.</span></span>
+### <a name="response"></a><span data-ttu-id="2f686-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f686-138">Response</span></span>
+<span data-ttu-id="2f686-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="2f686-139">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
