@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceConfiguration
 description: Конфигурация устройства
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf0f541fff8cdf238dc2883efcf82def89fd1ac0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1927b4af889fb98e2e9c33561b9ff63042df5b6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532587"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465743"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Тип ресурса deviceConfiguration
 
@@ -37,7 +37,7 @@ ms.locfileid: "42532587"
 |displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция объектов [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства.|
@@ -66,6 +66,9 @@ ms.locfileid: "42532587"
   "version": 1024
 }
 ```
+
+
+
 
 
 

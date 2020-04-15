@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Импортедвиндовсаутопилотдевицеидентитимпортстатус
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d05795705ac405e82c8789ee2a9779ad97bc6105
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d2a2178295171586b7093c4a68c7fb50e64045a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530251"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474156"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>тип перечисления Импортедвиндовсаутопилотдевицеидентитимпортстатус
 
@@ -24,10 +24,13 @@ ms.locfileid: "42530251"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестное состояние.|
-|закончен|1 |Состояние ожидания.|
-|части|2 |Частичное состояние.|
-|complete|3 |Состояние "завершено".|
+|закончен|1,1|Состояние ожидания.|
+|части|2|Частичное состояние.|
+|complete|4|Состояние "завершено".|
 |error|4 |Состояние ошибки.|
+
+
+
 
 
 

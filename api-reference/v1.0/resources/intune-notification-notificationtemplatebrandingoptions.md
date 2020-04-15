@@ -1,20 +1,20 @@
 ---
 title: тип перечисления Нотификатионтемплатебрандингоптионс
 description: Параметры фирменной символики для шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 807ef6ad5352174685971e4d1539f525a6c1938b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1515af8e14246f117ef359d1c2f9636f14c60b7a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448174"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459604"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>тип перечисления Нотификатионтемплатебрандингоптионс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -24,9 +24,12 @@ ms.locfileid: "42448174"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |нет|нуль|Нет фирменной символики.|
-|инклудекомпанилого|1 |Включите логотип компании.|
-|инклудекомпанинаме|2 |Включите название компании.|
+|инклудекомпанилого|1,1|Включите логотип компании.|
+|инклудекомпанинаме|2|Включите название компании.|
 |инклудеконтактинформатион|4 |Включение контактной информации.|
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Список registeredOwners
-description: Получение списка пользователей, являющихся зарегистрированными владельцами устройства. Зарегистрированный владелец — пользователь, который присоединил устройство через облако или зарегистрировал личное устройство. Зарегистрированный владелец задается при регистрации. Сейчас можно настроить лишь одного такого владельца.
+description: Получение списка пользователей, являющихся зарегистрированными владельцами устройства.
 localization_priority: Normal
-author: davidmu1
+author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bf56b72389ae3ffebde2dbf27af70f216107e10a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3015b58619b0b78315d92470c3181582bbbc9043
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518121"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464002"
 ---
 # <a name="list-registeredowners"></a>Список registeredOwners
 
@@ -42,7 +42,7 @@ GET /devices/{id}/registeredOwners
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

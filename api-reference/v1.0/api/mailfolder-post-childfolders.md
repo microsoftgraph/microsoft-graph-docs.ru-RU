@@ -1,16 +1,16 @@
 ---
 title: Создание объекта MailFolder
 description: С помощью этого API можно создать дочернюю папку почты.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b5a9e475c289f35404512a009fc8df98b0589169
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de1c8723e7a4d1606eba2abf876c85ecf76e67a5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511616"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457970"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 
@@ -43,16 +43,16 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Заголовок | Значение |
 |:-------|:------|
-| Авторизация | `Bearer {token}`. Обязательный элемент. |
+| Авторизация | `Bearer {token}`. Обязательно. |
 | Content-Type | `application/json`. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. **DisplayName** это единственное свойство для записи объекта [mailFolder](../resources/mailfolder.md) .
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-|displayName|Строка|Отображаемое имя новой папки.|
+|displayName|String|Отображаемое имя новой папки.|
 
 ## <a name="response"></a>Ответ
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса omaSettingBase64
 description: Определение параметров OMA в кодировке Base64.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9aa6dd320fd04c352208692f988ea487eb28a47c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0958243a84c738dc1c04bde866e535f488dbcd18
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530592"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473073"
 ---
 # <a name="omasettingbase64-resource-type"></a>Тип ресурса omaSettingBase64
 
@@ -29,10 +29,10 @@ ms.locfileid: "42530592"
 |displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Описание. Наследуется от ресурса [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|Строка|Имя файла, связанное со свойством Value (CER,  | *. CRT | *. p7b | *. bin).|
+|fileName|String|Имя файла, связанное со свойством Value (CER,  | *. CRT | *. p7b | *. bin).|
 |value|Строка|Значение (строка в кодировке Base64).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,6 +52,9 @@ ms.locfileid: "42530592"
   "value": "String"
 }
 ```
+
+
+
 
 
 

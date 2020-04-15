@@ -2,15 +2,15 @@
 title: 'orgContact: getMemberGroups'
 description: Возврат всех групп, членом которых является контактное лицо.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7fa053f38ffc641bdf4549c078a55bfc004e5b17
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 171f9b096cda5cb1dbb78c46155ae6097d215799
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511196"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473177"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact: getMemberGroups
 

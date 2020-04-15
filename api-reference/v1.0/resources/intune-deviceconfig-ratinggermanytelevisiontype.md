@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Ратингжерманителевисионтипе
 description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Германии
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7e9b634b4c03613f0a055e0caa71891fde9e1149
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c4bd0d2bbf27737357205a73c523930abf1e8cee
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530508"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472834"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>тип перечисления Ратингжерманителевисионтипе
 
@@ -24,12 +24,15 @@ ms.locfileid: "42530508"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|аллблоккед|1 |Не разрешать показ контента|
-|обобщен|2 |AB 0 Жахрен, без ограничений по возрасту|
-|agesAbove6|3 |AB 6 Жахрен, от 6 лет и старше|
+|аллблоккед|1,1|Не разрешать показ контента|
+|обобщен|2|AB 0 Жахрен, без ограничений по возрасту|
+|agesAbove6|4|AB 6 Жахрен, от 6 лет и старше|
 |agesAbove12|4 |AB 12 Жахрен, от 12 лет до 12 лет|
 |agesAbove16|5 |AB 16 Жахрен, от 16 лет до 16 лет|
 |взрослые|6 |Только для Жахрен, только для взрослых|
+
+
+
 
 
 

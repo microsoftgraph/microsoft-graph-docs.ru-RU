@@ -1,20 +1,20 @@
 ---
 title: тип перечисления Виндовсинформатионпротектионпинчарактеррекуирементс
 description: Требования к ПИН-символам
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a0b9ab81c33023687e3e85ef5d30e3149d6e0407
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cca3f672fd44ee3db0b94715f55e1f2c4c963e83
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448223"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468392"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>тип перечисления Виндовсинформатионпротектионпинчарактеррекуирементс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -24,8 +24,11 @@ ms.locfileid: "42448223"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notAllow|нуль|Не разрешать|
-|рекуиреатлеастоне|1 |Требуется хотя бы один|
-|разрешить|2 |Разрешить любой номер|
+|рекуиреатлеастоне|1,1|Требуется хотя бы один|
+|разрешить|2|Разрешить любой номер|
+
+
+
 
 
 

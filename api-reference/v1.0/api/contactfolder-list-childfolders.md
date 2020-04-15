@@ -1,16 +1,16 @@
 ---
 title: Список childFolders
 description: Получение коллекции дочерних папок для указанной папки с контактами.
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 79d63c4624b3c2d0ff09ea4a2cfffe2a8da58454
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 170a155b31629cd8a45f36e149d0edd5196a7773
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518268"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462148"
 ---
 # <a name="list-childfolders"></a>Список childFolders
 
@@ -39,7 +39,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

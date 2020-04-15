@@ -1,16 +1,16 @@
 ---
 title: Update auditEvent
 description: Обновление свойств объекта auditEvent.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 33a3a179c4f1c393d3ab7954b53da113f4f0fa7a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5553f8e475d13a96c37ef9170fe302ce29b16f4c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515730"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464343"
 ---
 # <a name="update-auditevent"></a>Update auditEvent
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [auditEvent](../resources/intune-auditing-auditevent.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [auditEvent](../resources/intune-auditing-auditevent.md).
@@ -53,12 +53,12 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |displayName|Строка|Отображаемое имя события.|
-|componentName|Строка|Имя компонента.|
+|componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
-|activity|Строка|Понятное имя действия.|
+|activity|String|Понятное имя действия.|
 |activityDateTime|DateTimeOffset|Дата и время выполнения действия (в формате UTC).|
-|activityType|Строка|Тип выполненного действия.|
-|activityOperationType|Строка|Тип операции HTTP для действия.|
+|activityType|String|Тип выполненного действия.|
+|activityOperationType|String|Тип операции HTTP для действия.|
 |activityResult|String|Результат действия.|
 |correlationId|Guid|ИД клиентского запроса, используемый для согласования действий в системе.|
 |resources|Коллекция [auditResource](../resources/intune-auditing-auditresource.md)|Изменяемые ресурсы.|
@@ -171,6 +171,8 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
+
 
 
 

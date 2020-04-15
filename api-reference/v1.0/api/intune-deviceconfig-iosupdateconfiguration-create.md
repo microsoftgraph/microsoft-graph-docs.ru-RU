@@ -1,16 +1,16 @@
 ---
 title: Create iosUpdateConfiguration
 description: Создание объекта iosUpdateConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 42adbc130e09e237f96bb7bc1354c5fb1294271f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 790a4a7307b3da4d73c89cdfbfe9149ffb8f8e70
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514503"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467474"
 ---
 # <a name="create-iosupdateconfiguration"></a>Create iosUpdateConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта iosUpdateConfiguration в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта iosUpdateConfiguration.
@@ -113,6 +113,8 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
+
+
 
 
 

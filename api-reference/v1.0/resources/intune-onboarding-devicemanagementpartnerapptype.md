@@ -1,20 +1,20 @@
 ---
 title: тип перечисления Девицеманажементпартнерапптипе
 description: Тип партнерского приложения.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0d0667428b8d2bef703e9f7e2d0bc323f9067b16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8fbe64b2f0fad1399cbb71922bc0c4d69fcb3bd5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448090"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459456"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>тип перечисления Девицеманажементпартнерапптипе
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -24,8 +24,11 @@ ms.locfileid: "42448090"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестный тип партнерского приложения.|
-|синглетенантапп|1 |Партнерское приложение — это один клиент в AAD.|
-|мултитенантапп|2 |Партнерское приложение является несколькими клиентами в AAD.|
+|синглетенантапп|1,1|Партнерское приложение — это один клиент в AAD.|
+|мултитенантапп|2|Партнерское приложение является несколькими клиентами в AAD.|
+
+
+
 
 
 

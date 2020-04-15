@@ -2,15 +2,15 @@
 title: 'mailFolder: delta'
 description: Получение набора папок почты, которые были добавлены в почтовый ящик пользователя или удалены из него.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f67f0c808ac227525e5f28b283e544dff6980357
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6be514ab591ed355b4d6661255d0057255900db5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511651"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473184"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -130,7 +130,7 @@ Content-length: 254
 
 ### <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

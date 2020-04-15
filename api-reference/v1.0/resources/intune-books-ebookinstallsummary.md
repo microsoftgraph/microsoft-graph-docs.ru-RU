@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса eBookInstallSummary
 description: Содержит свойства сводки по установке книги для устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8338d2376540d8600d574e56ac38c95d0c6b9626
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e5068e7c84797898e33b13fc503f11aaf7ad081b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531023"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468783"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>Тип ресурса eBookInstallSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "42531023"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |installedDeviceCount|Int32|Количество устройств, на которых была успешно установлена эта книга.|
 |failedDeviceCount|Int32|Количество устройств, на которых не удалось установить эту книгу.|
 |notInstalledDeviceCount|Int32|Количество устройств, на которых не установлена эта книга.|
@@ -37,7 +37,7 @@ ms.locfileid: "42531023"
 |failedUserCount|Int32|Количество пользователей, у которых есть одно или несколько устройств, где не удалось установить эту книгу.|
 |notInstalledUserCount|Int32|Количество пользователей, не установивших эту книгу.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,6 +60,9 @@ ms.locfileid: "42531023"
   "notInstalledUserCount": 1024
 }
 ```
+
+
+
 
 
 

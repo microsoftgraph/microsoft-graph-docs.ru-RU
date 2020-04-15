@@ -1,16 +1,16 @@
 ---
 title: Создание устройства
 description: Создание и регистрация нового устройства в организации.
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 97203f2367b03a48d6cbf89f7ffaeb4d9d529795
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 396d74e2ef423b8efd61877b1a2b1fd8fdeee371
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518093"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466713"
 ---
 # <a name="create-device"></a>Создание устройства
 
@@ -40,7 +40,7 @@ POST /devices
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

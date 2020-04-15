@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта acceptedSender
 description: 'Удаление пользователя или группы из списка принятых отправителей. '
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c458f9eb6e9393d1457b84c83e47a927d0eff5f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8efa4c4675d9b9028449ea753c47dea6514c4eb4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517217"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461443"
 ---
 # <a name="remove-acceptedsender"></a>Удаление объекта acceptedSender
 
@@ -38,7 +38,7 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

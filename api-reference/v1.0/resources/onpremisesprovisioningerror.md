@@ -2,15 +2,15 @@
 title: Тип ресурса onPremisesProvisioningError
 description: Представляет ошибки синхронизации каталогов для группы пользователей и контактных ресурсов при синхронизации локальных каталогов с Azure Active Directory.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 54f11058bc75d6e5e417813b8b257f3a7ff78e94
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e170fa0e86cfb6ebfcdf63b371c6a67bb8766b80
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534150"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468341"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>Тип ресурса onPremisesProvisioningError
 
@@ -24,7 +24,7 @@ ms.locfileid: "42534150"
 |:---------------|:--------|:----------|
 |category|String| Категория ошибки подготовки. Примечание. в настоящее время существует только одно возможное значение. Возможное значение: *пропертиконфликт* — указывает, что значение свойства не является уникальным. Другие объекты содержат одно и то же значение свойства. |
 |оккурреддатетиме|DateTimeOffset| Дата и время возникновения ошибки. |
-|пропертикаусинжеррор|Строка| Имя свойства каталога, вызвавшего ошибку. Текущие возможные значения: *userPrincipalName* или *proxyAddress* |
+|пропертикаусинжеррор|String| Имя свойства каталога, вызвавшего ошибку. Текущие возможные значения: *userPrincipalName* или *proxyAddress* |
 |value|String| Значение свойства, вызвавшего ошибку. |
 
 ## <a name="json-representation"></a>Представление JSON

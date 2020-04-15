@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов androidLobApp
 description: Список свойств и связей объектов androidLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1708864ed4cb8bedccf057b185534c5ab9ff9301
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 75955077a911155de86f4602f11d820c79d01b54
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516674"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463934"
 ---
 # <a name="list-androidlobapps"></a>Перечисление объектов androidLobApp
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mobileApps
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -108,6 +108,8 @@ Content-Length: 1424
   ]
 }
 ```
+
+
 
 
 

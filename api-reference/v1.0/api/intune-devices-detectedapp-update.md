@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта detectedApp
 description: Обновление свойств объекта detectedApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d8c764082d36cccc761ecfe843fe9feb60a02dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e708909b613fc4aceedab6ba7023c042e81b9807
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513611"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456752"
 ---
 # <a name="update-detectedapp"></a>Обновление объекта detectedApp
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [detectedApp](../resources/intune-devices-detectedapp.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [detectedApp](../resources/intune-devices-detectedapp.md).
@@ -96,6 +96,8 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
+
 
 
 

@@ -2,15 +2,15 @@
 title: 'message: delta'
 description: Получение списка сообщений, которые были добавлены в указанную папку, обновлены в ней или удалены из нее.
 localization_priority: Priority
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 38009588fa608ef4f1ebf8926d8380617ada09a2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 95dd32cfa4966fe651f00efb346e154534af62d6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511539"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43361539"
 ---
 # <a name="message-delta"></a>message: delta
 

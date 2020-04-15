@@ -2,15 +2,15 @@
 title: 'Device: Чеккмемберобжектс'
 description: Проверка членства в списке групп или ролей каталогов для указанного объекта Device.
 localization_priority: Normal
-author: davidmu1
+author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5b432947a9696e4f2ac3c13636356d789594d6d0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 55a69b817aab8d8becd579413852c9778605054b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518149"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464054"
 ---
 # <a name="device-checkmemberobjects"></a>Device: Чеккмемберобжектс
 

@@ -4,13 +4,13 @@ description: Задает набор областей разрешений и р
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 45b7e8d2598ca58ef4d78bb45c3b2a8f51955353
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: psignoret
+ms.openlocfilehash: 1dbb7f29f96504701119c8780990c611057c26a5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533842"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465642"
 ---
 # <a name="requiredresourceaccess-resource-type"></a>Тип ресурса Рекуиредресаурцеакцесс
 
@@ -42,7 +42,7 @@ ms.locfileid: "42533842"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |resourceAccess|Коллекция [ресаурцеакцесс](resourceaccess.md)|Список областей разрешений OAuth 2.0 и ролей приложений, которые требуются приложению из указанного ресурса.|
-|ресаурцеаппид|Строка|Уникальный идентификатор ресурса, доступ к которому требуется приложению.  Он должен быть равен **AppID** , объявленному в целевом приложении ресурсов.|
+|ресаурцеаппид|String|Уникальный идентификатор ресурса, доступ к которому требуется приложению.  Он должен быть равен **AppID** , объявленному в целевом приложении ресурсов.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

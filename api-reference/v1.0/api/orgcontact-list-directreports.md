@@ -2,15 +2,15 @@
 title: Список directReports
 description: Получение подчиненных отчетов о контакте.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1513c6f1f970d6a60021db4141c7a0ffa6accbc7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 44f54c6f2767486916eabb50aff153217e390b49
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511182"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463771"
 ---
 # <a name="list-directreports"></a>Список directReports
 
@@ -42,7 +42,7 @@ GET /contacts/{id}/directReports
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

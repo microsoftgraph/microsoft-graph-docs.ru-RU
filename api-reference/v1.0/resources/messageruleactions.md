@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса messageRuleActions
 description: Представляет набор действий, доступных для правила.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 548d5bba0bf176c8cde4d9b46b28ed6e0520c579
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 406632618c4200fc217b993a7df8631b13db3cc8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447397"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468348"
 ---
 # <a name="messageruleactions-resource-type"></a>Тип ресурса messageRuleActions
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 
 Представляет набор действий, доступных для правила.

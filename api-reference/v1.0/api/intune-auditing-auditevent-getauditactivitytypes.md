@@ -1,16 +1,16 @@
 ---
 title: Функция getAuditActivityTypes
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f1749bd523acd02cc39596906be9627604182f87
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 57f3af7dc556f05eeecd7dbb395152f923b41e11
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515751"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464389"
 ---
 # <a name="getauditactivitytypes-function"></a>Функция getAuditActivityTypes
 
@@ -44,7 +44,7 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -78,6 +78,8 @@ Content-Length: 61
   ]
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Список устройств
 description: Получение списка объектов устройств, зарегистрированных в организации.
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6229210b592d043744b8b88f44c7d5048c6c2be8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3309fb8b84750b0e7608c63e33f9eae2b75615fc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518100"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466720"
 ---
 # <a name="list-devices"></a>Список устройств
 
@@ -40,7 +40,7 @@ GET /devices
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

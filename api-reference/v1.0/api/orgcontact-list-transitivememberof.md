@@ -1,16 +1,16 @@
 ---
 title: Список Транситивемембероф
 description: Получение групп, участником которых является контакт органзиатионал. Этот запрос API является транзитивным и также возвращает все группы, в которых пользователь является вложенным.
-author: anchanda
+author: dkershaw10
 localization_priority: Normal
-ms.prod: groups
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 67c3984aa54b733596902a370326ed6ed7b6e232
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: afcda6aee90a6d50741c82b4b37869c97fbfb555
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511168"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463756"
 ---
 # <a name="list-transitivememberof"></a>Список Транситивемембероф
 
@@ -47,7 +47,7 @@ GET /contacts/{id}/transitiveMemberOf
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

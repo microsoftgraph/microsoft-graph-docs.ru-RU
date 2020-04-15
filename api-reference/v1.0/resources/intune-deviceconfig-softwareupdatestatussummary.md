@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса softwareUpdateStatusSummary
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2767a96914af9520bee94280fdbe04d7a8d6f7bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1a1b6263b574c1969be716e0add58c5bf265c65
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530436"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472566"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>Тип ресурса softwareUpdateStatusSummary
 
@@ -46,7 +46,7 @@ ms.locfileid: "42530436"
 |conflictUserCount|Int32|Количество конфликтующих пользователей.|
 |notApplicableUserCount|Int32|Количество неприменимых пользователей.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -78,6 +78,9 @@ ms.locfileid: "42530436"
   "notApplicableUserCount": 1024
 }
 ```
+
+
+
 
 
 

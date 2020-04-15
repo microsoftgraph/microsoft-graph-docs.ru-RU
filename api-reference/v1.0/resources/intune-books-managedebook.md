@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса managedEBook
 description: Абстрактный класс, содержащий базовые свойства управляемой электронной книги.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 66d0efae21a68bd14286af45c4c021dbf7ba96fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a73da0f3f9fc6eb86f158ece8f9a8f8eecb663d9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531009"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468669"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 
@@ -39,9 +39,9 @@ ms.locfileid: "42531009"
 |createdDateTime|DateTimeOffset|Дата и время создания электронной книги.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения электронной книги.|
 |informationUrl|String|URL-адрес с дополнительными сведениями.|
-|privacyInformationUrl|Строка|URL-адрес заявления о конфиденциальности.|
+|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|Список назначений для этой электронной книги.|
@@ -76,6 +76,9 @@ ms.locfileid: "42531009"
   "privacyInformationUrl": "String"
 }
 ```
+
+
+
 
 
 

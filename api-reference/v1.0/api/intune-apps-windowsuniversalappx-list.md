@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов windowsUniversalAppX
 description: Список свойств и связей объектов windowsUniversalAppX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d42e7fe12d17ce85cc83c9b41c72e058425aa22
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 128df90dade0e4e1782f519e2439576da11e3525
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515786"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464456"
 ---
 # <a name="list-windowsuniversalappxs"></a>Перечисление объектов windowsUniversalAppX
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mobileApps
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -107,6 +107,8 @@ Content-Length: 1534
   ]
 }
 ```
+
+
 
 
 

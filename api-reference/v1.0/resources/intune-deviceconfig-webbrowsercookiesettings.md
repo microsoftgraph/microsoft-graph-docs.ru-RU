@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Веббровсеркукиесеттингс
 description: Параметры файлов cookie веб-браузера.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d8ccdda286034a340ccc0f7f65d21f8ffb5a6101
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4223f036da7fbb205764f83021209d7b385cb650
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532318"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472521"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>тип перечисления Веббровсеркукиесеттингс
 
@@ -24,10 +24,13 @@ ms.locfileid: "42532318"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |бровсердефаулт|нуль|Значение по умолчанию браузера без намерения.|
-|блоккалвайс|1 |Всегда блокируйте файлы cookie.|
-|алловкуррентвебсите|2 |Разрешить файлы cookie с текущего веб-сайта.|
-|алловфромвебситесвиситед|3 |Разрешить файлы cookie со посещенных веб-сайтов.|
+|блоккалвайс|1,1|Всегда блокируйте файлы cookie.|
+|алловкуррентвебсите|2|Разрешить файлы cookie с текущего веб-сайта.|
+|алловфромвебситесвиситед|4|Разрешить файлы cookie со посещенных веб-сайтов.|
 |алловалвайс|4 |Всегда разрешать файлы cookie.|
+
+
+
 
 
 

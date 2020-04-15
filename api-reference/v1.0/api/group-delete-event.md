@@ -1,16 +1,16 @@
 ---
 title: Удаление события
 description: Удаление объекта event.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a207c11a092e7d30dbd663842755aaceda5eeb01
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6a88be728fa85c2380e032b49209c9440dc55912
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517203"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461429"
 ---
 # <a name="delete-event"></a>Удаление события
 
@@ -39,7 +39,7 @@ DELETE /groups/{id}/calendar/events/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

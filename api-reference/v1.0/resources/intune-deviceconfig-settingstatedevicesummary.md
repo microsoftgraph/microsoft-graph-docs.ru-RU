@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса settingStateDeviceSummary
 description: Сводка по состоянию параметра конфигурации и политики соответствия требованиям для устройств
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 377ccc56b1bf582324bea057463420622a891bb9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: abf180686d36a29c9d6803f96bec483aa5046614
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530463"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472624"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>Тип ресурса settingStateDeviceSummary
 
@@ -32,8 +32,8 @@ ms.locfileid: "42530463"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|settingName|Строка|Имя параметра.|
+|id|String|Ключ объекта.|
+|settingName|String|Имя параметра.|
 |instancePath|String|Имя пути к экземпляру для параметра.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств для параметра.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств для параметра.|
@@ -43,7 +43,7 @@ ms.locfileid: "42530463"
 |errorDeviceCount|Int32|Количество ошибок устройств для параметра.|
 |conflictDeviceCount|Int32|Количество конфликтов устройств для параметра|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -69,6 +69,9 @@ ms.locfileid: "42530463"
   "conflictDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

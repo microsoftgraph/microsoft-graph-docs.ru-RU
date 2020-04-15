@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса mobileApp
 description: Абстрактный класс, содержащий базовые свойства мобильных приложений Intune.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f0e2635d2b384b46a68e284daace799a196119d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8287895e66c016f92cdee7c4da8e3d9881b239b8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531110"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457878"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
@@ -33,19 +33,19 @@ ms.locfileid: "42531110"
 |id|Строка|Ключ объекта.|
 |displayName|Строка|Администратор предоставил или импортировал название приложения.|
 |description|Строка|Описание приложения.|
-|publisher|Строка|Издатель приложения.|
+|publisher|String|Издатель приложения.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, отображается в сведениях о приложении и используется для отправки значка.|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения приложения.|
 |isFeatured|Boolean|Значение, которое показывает, отмечено ли приложение как подобранное администратором.|
-|privacyInformationUrl|Строка|URL-адрес заявления о конфиденциальности.|
-|informationUrl|Строка|URL-адрес с дополнительными сведениями.|
+|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
+|informationUrl|String|URL-адрес с дополнительными сведениями.|
 |owner|String|Владелец приложения.|
-|developer|Строка|Разработчик приложения.|
+|developer|String|Разработчик приложения.|
 |notes|String|Заметки для приложения.|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения.|
@@ -82,6 +82,9 @@ ms.locfileid: "42531110"
   "publishingState": "String"
 }
 ```
+
+
+
 
 
 

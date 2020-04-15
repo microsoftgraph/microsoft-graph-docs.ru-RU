@@ -1,20 +1,20 @@
 ---
 title: тип перечисления Девицеманажементексчанжеконнекторстатус
 description: Текущее состояние соединителя Exchange Connector.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ecc11286ff4935ee496de72acaceb01e7b272214
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5bd996a4399a74bcc80eebe98f576c3321cff4b4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448118"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459532"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>тип перечисления Девицеманажементексчанжеконнекторстатус
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -24,9 +24,12 @@ ms.locfileid: "42448118"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |нет|нуль|Соединитель не существует.|
-|коннектионпендинг|1 |Ожидание подключения к среде Exchange.|
-|присоединен|2 |Подключение к среде Exchange|
-|подключения|3 |Отключено от среды Exchange|
+|коннектионпендинг|1,1|Ожидание подключения к среде Exchange.|
+|присоединен|2|Подключение к среде Exchange|
+|подключения|4|Отключено от среды Exchange|
+
+
+
 
 
 

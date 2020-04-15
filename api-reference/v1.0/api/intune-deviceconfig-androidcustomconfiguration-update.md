@@ -1,16 +1,16 @@
 ---
 title: Update androidCustomConfiguration
 description: Обновление свойств объекта androidCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a9c22f05bc3d847fc1db1bd41f77ac0178c6ae8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b40b9872f3ac1b14a9eea245be297d8939963550
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515338"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474665"
 ---
 # <a name="update-androidcustomconfiguration"></a>Update androidCustomConfiguration
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [androidCustomConfiguration](../resources/intune-deviceconfig-androidcustomconfiguration.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [androidCustomConfiguration](../resources/intune-deviceconfig-androidcustomconfiguration.md).
@@ -116,6 +116,8 @@ Content-Length: 574
   ]
 }
 ```
+
+
 
 
 

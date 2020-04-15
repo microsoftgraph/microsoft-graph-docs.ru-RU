@@ -2,15 +2,15 @@
 title: 'message: reply'
 description: 'Ответ отправителю сообщения, добавление комментария или изменение любых обновляемых свойств одновременно в одном вызове **reply**. '
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 079571dc0e77d69353212130c04e69b113a1090d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65119240411d8643c73722a0781a28311edf8743
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511497"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467280"
 ---
 # <a name="message-reply"></a>message: reply
 

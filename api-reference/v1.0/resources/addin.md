@@ -4,13 +4,13 @@ description: Ниже представлено описание ресурса �
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: b4729d8291611ece0218bd00e059e9f7ee6b4d59
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 124ea40d7d10c3104ef98634c1af4ea40038c211
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532134"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461923"
 ---
 # <a name="addin-resource-type"></a>Тип ресурса addIn
 

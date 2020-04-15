@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов managedDevice
 description: Перечисление свойств и связей объектов managedDevice.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a29c2eb7224b2468cc029ba94e0be652815fe00
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 86233781a60895f9823457b7a8ec894c02cf6f84
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513555"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456626"
 ---
 # <a name="list-manageddevices"></a>Перечисление объектов managedDevice
 
@@ -46,7 +46,7 @@ GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -172,6 +172,8 @@ Content-Length: 5130
   ]
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта contactFolder
 description: Обновление свойств объекта contactFolder.
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: efab6a02f4e5eba8081c5d5e2e17e748e1a55bd6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3ff8c5a0532db0dc9d35902ffd76e26695ccfdcf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518240"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467653"
 ---
 # <a name="update-contactfolder"></a>Обновление объекта contactFolder
 
@@ -44,7 +44,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |displayName|String|Отображаемое имя папки.|
-|parentFolderId|Строка|Идентификатор родительской папки для папки.|
+|parentFolderId|String|Идентификатор родительской папки для папки.|
 
 ## <a name="response"></a>Отклик
 

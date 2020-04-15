@@ -2,15 +2,15 @@
 title: Удаление владельца
 description: С помощью этого API можно удалить владельца из группы Office 365 или группы безопасности (обычной или с поддержкой почты) через свойство навигации owners.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 87880e417af00695b3644fac87d47db5d91f8047
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: aeab64f63c24991025d15816470742640d6b4648
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892641"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461407"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 

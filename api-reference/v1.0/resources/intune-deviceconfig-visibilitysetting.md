@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Висибилитисеттинг
 description: Универсальное состояние видимости.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bd8c89ea705c26909e236c65213dfeac11a55875
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 157db98c6d00d5c228e8d14d002cc49ae742dd04
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530435"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472536"
 ---
 # <a name="visibilitysetting-enum-type"></a>тип перечисления Висибилитисеттинг
 
@@ -24,8 +24,11 @@ ms.locfileid: "42530435"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|скрытых|1 |Скрытых.|
-|отобразит|2 |Отобразит.|
+|скрытых|1,1|Скрытых.|
+|отобразит|2|Отобразит.|
+
+
+
 
 
 

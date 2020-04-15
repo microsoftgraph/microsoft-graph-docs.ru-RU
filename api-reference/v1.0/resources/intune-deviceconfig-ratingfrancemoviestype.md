@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Ратингфранцемовиестипе
 description: Метки оценок фильмов во Франции
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 39f82f66df342c9d887160be4eeee62ab1456b4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5ff13f06aa732efedbf12f53a1e7dd9a68a9e5d1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530523"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472871"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>тип перечисления Ратингфранцемовиестипе
 
@@ -24,11 +24,14 @@ ms.locfileid: "42530523"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |аллалловед|нуль|Значение по умолчанию, разрешить все содержимое фильмов|
-|аллблоккед|1 |Не разрешать никакие видеоролики|
-|agesAbove10|2 |10 классификация запрещает обблокировка пленки мелкими 10|
-|agesAbove12|3 |Классификация не позволяет обменять пленку небольшими уровнями в соответствии с 12|
+|аллблоккед|1,1|Не разрешать никакие видеоролики|
+|agesAbove10|2|10 классификация запрещает обблокировка пленки мелкими 10|
+|agesAbove12|4|Классификация не позволяет обменять пленку небольшими уровнями в соответствии с 12|
 |agesAbove16|4 |Классификация "16" запрещает обблокировка пленки мелкими уровнями в 16|
 |agesAbove18|5 |Категория "18" запрещает отбор незначительных элементов в 18|
+
+
+
 
 
 

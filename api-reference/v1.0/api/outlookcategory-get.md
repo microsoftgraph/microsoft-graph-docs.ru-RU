@@ -1,16 +1,16 @@
 ---
 title: Получение категории Outlook
 description: Получение свойств и отношений указанного объекта outlookCategory.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 60b21bafc8b39807c4cb711a06ef6b2bbda8cfee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 58a415545570331e07677a9616128ecc13fe1c6b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511147"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456336"
 ---
 # <a name="get-outlook-category"></a>Получение категории Outlook
 
@@ -42,7 +42,7 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

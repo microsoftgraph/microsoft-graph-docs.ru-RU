@@ -1,16 +1,16 @@
 ---
 title: Список объектов mailFolder
 description: 'Получение коллекции папок почты в корневой папке вошедшего пользователя. '
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 7849a1e8cab0424c3e09afa52646df3c0af76eee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3d232f130da7ef2e036f542ff40dd06af163a071
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509082"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376771"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 

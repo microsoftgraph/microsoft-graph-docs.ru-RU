@@ -2,19 +2,19 @@
 title: Тип ресурса Маилсеарчфолдер
 description: Маилсеарчфолдер — это виртуальная папка в почтовом ящике пользователя, содержащая все элементы электронной почты, удовлетворяющие указанным условиям поиска. Маилсеарчфолдер наследуется от mailFolder.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: eb2ff38cc2089c143e98f8297177341685879635
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3e0c392270ac6b82462c7ffb99afb722c6e60bc9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447495"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461871"
 ---
 # <a name="mailsearchfolder-resource-type"></a>Тип ресурса Маилсеарчфолдер
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 **Маилсеарчфолдер** — это виртуальная папка в почтовом ящике пользователя, содержащая все элементы электронной почты, удовлетворяющие указанным условиям поиска. **маилсеарчфолдер** наследуется от [mailFolder](mailfolder.md). Папки поиска можно создавать в любой папке почтового ящика Exchange Online пользователя. Однако для отображения папки поиска в Outlook, Outlook для Интернета или Outlook Live необходимо создать папку в папке **веллкновнфолдернаме. SearchFolders** . 
 
@@ -37,7 +37,7 @@ ms.locfileid: "42447495"
 | [Получение папки поиска](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | Получение указанной папки поиска. |
 | [Обновление папки поиска](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | Обновление указанной папки поиска. |
 | [Удаление папки поиска](../api/mailfolder-delete.md) | Нет | Удаление указанной папки поиска. |
-| [Перечисление всех сообщений в папке поиска](../api/mailfolder-list-messages.md) | Коллекция [message](message.md) | Перечисление всех сообщений в указанной папке поиска. |
+| [Перечисление всех сообщений в папке поиска](../api/mailfolder-list-messages.md) | Коллекция объектов [message](message.md) | Перечисление всех сообщений в указанной папке поиска. |
 
 ## <a name="properties"></a>Свойства
 

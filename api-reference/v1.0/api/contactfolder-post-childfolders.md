@@ -1,16 +1,16 @@
 ---
 title: Создание объекта ContactFolder
 description: 'Создание дочернего объекта contactFolder указанной папки. '
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3f87b0a9db2c2179bbca4745c52ee2aa22195656
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f3acdfc18b0727704c94ed84741a3413734ab90f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518254"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474703"
 ---
 # <a name="create-contactfolder"></a>Создание объекта ContactFolder
 
@@ -40,7 +40,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [ContactFolder](../resources/contactfolder.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

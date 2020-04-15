@@ -1,16 +1,16 @@
 ---
 title: Добавление вложения
 description: С помощью этого API можно добавить вложение к событию. Так как
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: af1226e5a8fbf9cd19c198a622e90f3a29873702
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 750c86af5b7dab98e806abdba6b01e7dfe935aac
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517343"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461639"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 

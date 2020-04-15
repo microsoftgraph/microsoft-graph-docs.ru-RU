@@ -1,16 +1,16 @@
 ---
 title: Получение устройства
 description: Получение свойств и связей объекта устройства.
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0b963d03d92752f75fbbf73fb3ce9174e1529b61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4065c0180c8d7e313c9773310884d26967bc9df6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518135"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464024"
 ---
 # <a name="get-device"></a>Вывод устройства
 
@@ -42,7 +42,7 @@ GET /devices/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

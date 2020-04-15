@@ -2,19 +2,19 @@
 title: Тип ресурса Маилтипсеррор
 description: Ошибка, возникающая во время действия.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 476e48f0b9729aebdefcb2e263b597b1e8e9fbdb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d9f5df716d62f2ae33e9a6c90d5803413b8c69b9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447488"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461833"
 ---
 # <a name="mailtipserror-resource-type"></a>Тип ресурса Маилтипсеррор
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Ошибка, возникающая во время действия.
 

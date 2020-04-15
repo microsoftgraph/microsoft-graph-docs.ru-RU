@@ -1,16 +1,16 @@
 ---
 title: Список групп устройств
 description: Получение групп, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e94db6ecaccac9f931384ab3f787d1a513f93e9a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0164345ca2d58ba5d097b6e872f08c1b4801aeb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518128"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464017"
 ---
 # <a name="list-device-groups"></a>Список групп устройств
 
@@ -43,7 +43,7 @@ GET /devices/{id}/memberOf
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

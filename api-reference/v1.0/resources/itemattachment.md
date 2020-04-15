@@ -3,14 +3,14 @@ title: Тип ресурса itemAttachment
 description: 'Контакт, событие или сообщение, вложенное в другое событие, сообщение или запись.  '
 localization_priority: Priority
 ms.prod: outlook
-author: angelgolfer-ms
+author: svpsiva
 doc_type: resourcePageType
-ms.openlocfilehash: c5c565e81ed9218d3d04f15585236b87a362d5e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1450d365da1146900a661273fa5e19dac58e2903
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447642"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461908"
 ---
 # <a name="itemattachment-resource-type"></a>Тип ресурса itemAttachment
 

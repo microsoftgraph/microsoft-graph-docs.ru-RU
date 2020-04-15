@@ -1,16 +1,16 @@
 ---
 title: Удаление события
 description: Удаление события.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 172ce64c23c50cd91647dee3be5e28333cd9e6a2
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 5198db8d842f81c2968fa3a3a5315f34ec246790
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144221"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461684"
 ---
 # <a name="delete-event"></a>Удаление события
 

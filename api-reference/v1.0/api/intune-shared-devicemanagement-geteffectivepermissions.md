@@ -1,16 +1,16 @@
 ---
 title: Функция getEffectivePermissions
 description: Получает действующие разрешения пользователя, прошедшего проверку подлинности
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d03ab6dd6633de58df090710e1ecae7bb216804
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 26bc43b1dbd7e82133ad4ff54b7b9ba1bbf855bd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512071"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463838"
 ---
 # <a name="geteffectivepermissions-function"></a>Функция getEffectivePermissions
 
@@ -45,7 +45,7 @@ GET /deviceManagement/getEffectivePermissions
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -93,6 +93,8 @@ Content-Length: 471
   ]
 }
 ```
+
+
 
 
 

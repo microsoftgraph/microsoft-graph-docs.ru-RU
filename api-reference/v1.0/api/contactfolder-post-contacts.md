@@ -1,16 +1,16 @@
 ---
 title: Создание контакта
 description: Добавление контакта в корневую папку с контактами или конечную точку `contacts` другой папки с контактами.
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f6edf7a86e3e2513d975127312514fa09e6f2886
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78d967862d586c064975c82872b8263a92c345e5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518247"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467662"
 ---
 # <a name="create-contact"></a>Создание контакта
 
@@ -49,7 +49,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса представьте объект [Contact](../resources/contact.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

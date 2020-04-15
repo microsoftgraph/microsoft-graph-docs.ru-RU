@@ -1,16 +1,16 @@
 ---
 title: Создание объекта macOSCustomConfiguration
 description: Создание объекта macOSCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 90583d103211f374ed761813a033000546fbc036
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7d9b3869843092185e44407fcbed392e3cceffee
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514398"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468835"
 ---
 # <a name="create-macoscustomconfiguration"></a>Создание объекта macOSCustomConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта macOSCustomConfiguration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта macOSCustomConfiguration.
@@ -57,7 +57,7 @@ POST /deviceManagement/deviceConfigurations
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|payloadName|Строка|Имя, которое видит пользователь.|
+|payloadName|String|Имя, которое видит пользователь.|
 |payloadFileName|String|Имя файла полезных данных (*.mobileconfig | *.xml).|
 |payload|Binary|Полезные данные (массив байтов в кодировке UTF8).|
 
@@ -106,6 +106,8 @@ Content-Length: 453
   "payload": "cGF5bG9hZA=="
 }
 ```
+
+
 
 
 

@@ -2,15 +2,15 @@
 title: 'contactFolder: delta'
 description: Получение набора папок контактов, которые были добавлены в почтовый ящик пользователя или удалены из него.
 localization_priority: Normal
-author: angelgolfer-ms
+author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3704b7a4a79641b1d3905f298c519247678ccb5f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7065463c73f45c415f9ae64256952a4752669d52
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518282"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462170"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -131,7 +131,7 @@ Content-length: 254
 
 ### <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

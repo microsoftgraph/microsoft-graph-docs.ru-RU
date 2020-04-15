@@ -1,16 +1,16 @@
 ---
 title: Получение deviceManagement
 description: Чтение свойств и связей объекта deviceManagement.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 78b9c2a70a594feb0f1ab0fb8ccbf333a0883056
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4deb0f0fa4e33b1b3451deb4a15ee4a41f5599ad
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512078"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463877"
 ---
 # <a name="get-devicemanagement"></a>Получение deviceManagement
 
@@ -60,7 +60,7 @@ GET /deviceManagement
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -107,6 +107,8 @@ Content-Length: 918
   }
 }
 ```
+
+
 
 
 

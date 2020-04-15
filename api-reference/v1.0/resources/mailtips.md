@@ -2,19 +2,19 @@
 title: Тип ресурса подсказки
 description: 'Информативные сообщения о получателе, которые отображаются для пользователей во время составления сообщения. Например, сообщение об отсутствии на работе '
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5d109e2e378e5a0b0df978f10b65783484ccd695
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 926f2c48981da637083e747245ecdee1b94351cb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447502"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461840"
 ---
 # <a name="mailtips-resource-type"></a>Тип ресурса подсказки
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Информативные сообщения о получателе, которые отображаются для пользователей во время составления сообщения. Например, сообщение об отсутствии на работе в качестве автоматического ответа для получателя сообщения.
 

@@ -1,20 +1,20 @@
 ---
 title: тип перечисления Манажедапппинчарактерсет
 description: Набор знаков, который будет использоваться для ПИН-кода приложения пользователя
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0418c0ca7220efc0b3699f8e96c17ab13b0e9678
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 897150a1cdc8a6c372b39f1ca3d8f361f93b8585
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448391"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468535"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>тип перечисления Манажедапппинчарактерсет
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -24,7 +24,10 @@ ms.locfileid: "42448391"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |числовых|нуль|Числовые символы|
-|алфанумерикандсимбол|1 |Буквенно-цифровые и символьные символы|
+|алфанумерикандсимбол|1,1|Буквенно-цифровые и символьные символы|
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов mobileAppCategory
 description: Список свойств и связей объектов mobileAppCategory.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1488a1d366f39148fed072d5e4469d9852878e3e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bc04c3ab4acf0a3bfed861fde6ea297ac6eeab69
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516004"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464829"
 ---
 # <a name="list-mobileappcategories"></a>Перечисление объектов mobileAppCategory
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -77,6 +77,8 @@ Content-Length: 261
   ]
 }
 ```
+
+
 
 
 

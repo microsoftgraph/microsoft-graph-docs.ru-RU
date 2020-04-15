@@ -1,16 +1,16 @@
 ---
 title: Удаление календаря
 description: Удаление календаря, отличного от календаря по умолчанию.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f39115551e5bd8890e95075245946f48c8a8bc23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1fcb1f6a26ced9657a528aa27f8248fb008df08c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518828"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471878"
 ---
 # <a name="delete-calendar"></a>Удаление календаря
 
@@ -46,7 +46,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 |:---------------|:---------|:----------|
 | Authorization  |  string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

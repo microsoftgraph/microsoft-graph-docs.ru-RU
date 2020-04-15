@@ -1,22 +1,22 @@
 ---
 title: 'orgContact: Чеккмемберграупс'
-description: Проверка членства в указанном списке групп. Возвращает из списка идентификаторы групп, в которых Контактное лицо имеет прямое или транзитивное членство.
+description: Проверка участия в указанном списке групп. Возвращает из списка идентификаторы групп, в которых Контактное лицо имеет прямое или транзитивное членство.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e9ce7ba67aa979349b5a3aeae287d52bfb55a995
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d221b749384c398e355b63a3a08227d2c418a89a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511217"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463778"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact: Чеккмемберграупс
 
 Пространство имен: microsoft.graph
 
-Проверка членства в указанном списке групп. Возвращает из списка идентификаторы групп, в которых [Контактное лицо](../resources/orgcontact.md) имеет прямое или транзитивное членство.
+Проверка участия в указанном списке групп. Возвращает из списка идентификаторы групп, в которых [Контактное лицо](../resources/orgcontact.md) имеет прямое или транзитивное членство.
 
 В одном запросе можно проверять до 20 групп. Эта функция поддерживает Office 365 и другие типы групп, подготовленные в Azure Active Directory (Azure AD).
 

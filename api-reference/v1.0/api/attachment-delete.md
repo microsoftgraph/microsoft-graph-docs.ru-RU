@@ -2,15 +2,15 @@
 title: Удаление вложения
 description: Удаление вложения из данных календаря о событии, сообщения почты или записи группы.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 688611650b7ae8ccd9f87a35fe958d5f0f17aa94
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f2cfe082fe0a493e6b78c2a74171cc02da852063
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518842"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462919"
 ---
 # <a name="delete-attachment"></a>Удаление вложения
 
@@ -94,7 +94,7 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
