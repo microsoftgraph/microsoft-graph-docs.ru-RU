@@ -1,16 +1,16 @@
 ---
 title: Действие setPriority
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d498bf9364ad68080b50ac2845ba5b241fba4ad0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f19600712ebd4ca127c17503449ddc9ecb6984a6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512701"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451854"
 ---
 # <a name="setpriority-action"></a>Действие setPriority
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -78,6 +78,8 @@ Content-length: 21
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

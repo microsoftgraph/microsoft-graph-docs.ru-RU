@@ -1,16 +1,16 @@
 ---
 title: Создание объекта deviceConfigurationUserStatus
 description: Создание объекта deviceConfigurationUserStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 56b0b87056ec07b66e13859fab172479a6600ae1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 25d56d5fd4ac6b16fc71cd01f2c7e31f51432526
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514727"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450635"
 ---
 # <a name="create-deviceconfigurationuserstatus"></a>Создание объекта deviceConfigurationUserStatus
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта deviceConfigurationUserStatus в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceConfigurationUserStatus.
@@ -99,6 +99,8 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

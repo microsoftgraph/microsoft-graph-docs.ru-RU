@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceHealthAttestationState
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d56cc2689a9987f99ac7abd7a132ff1526bf88c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 41c9fd4f09749857c9aeb588086ef23ce5775d48
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532220"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454006"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>Тип ресурса deviceHealthAttestationState
 
@@ -23,40 +23,40 @@ ms.locfileid: "42532220"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|lastUpdateDateTime|Строка|Метка времени последнего обновления.|
-|contentNamespaceUrl|Строка|Версия отчета DHA (версия пространства имен).|
-|deviceHealthAttestationStatus|Строка|Версия отчета DHA (версия пространства имен).|
-|contentVersion|Строка|Версия схемы состояния HealthAttestation.|
+|lastUpdateDateTime|String|Метка времени последнего обновления.|
+|contentNamespaceUrl|String|Версия отчета DHA (версия пространства имен).|
+|deviceHealthAttestationStatus|String|Версия отчета DHA (версия пространства имен).|
+|contentVersion|String|Версия схемы состояния HealthAttestation.|
 |issuedDateTime|DateTimeOffset|Дата и время оценки устройства или его публикации для MDM.|
-|attestationIdentityKey|Строка|Если на устройстве имеется ключ удостоверения подлинности (AIK), это свойство указывает на наличие у устройства сертификата ключа подтверждения (EK).|
+|attestationIdentityKey|String|Если на устройстве имеется ключ удостоверения подлинности (AIK), это свойство указывает на наличие у устройства сертификата ключа подтверждения (EK).|
 |resetCount|Int64|Количество переходов компьютера в режим гибернации или возобновлений его работы.|
 |restartCount|Int64|Количество перезапусков компьютера.|
-|dataExcutionPolicy|Строка|Политика предотвращения выполнения данных (DEP) определяет набор аппаратных и программных технологий, обеспечивающих дополнительные проверки в памяти. |
-|bitLockerStatus|Строка|Включение или выключение шифрования диска BitLocker.|
-|bootManagerVersion|Строка|Версия диспетчера загрузки.|
-|codeIntegrityCheckVersion|Строка|Версия диспетчера загрузки.|
-|secureBoot|Строка|Если включена безопасная загрузка, основные компоненты должны включать правильные криптографические подписи.|
-|bootDebugging|Строка|Если включено свойство bootDebugging, устройство используется при разработке и тестировании.|
-|operatingSystemKernelDebugging|Строка|Если включено свойство operatingSystemKernelDebugging, устройство используется при разработке и тестировании.|
-|codeIntegrity|Строка| Если включена целостность кода, выполняется только код, который прошел проверку на целостность.|
-|testSigning|Строка|Если разрешена тестовая подпись, устройство не применяет проверку подписи во время загрузки.|
-|safeMode|Строка|Безопасный режим — это средство устранения неполадок в Windows, которое запускает компьютер в ограниченном состоянии.|
-|windowsPE|Строка|Операционная система, которая запускается с ограниченным набором служб и используется для подготовки компьютера к работе с Windows.|
-|earlyLaunchAntiMalwareDriverProtection|Строка|Драйвер ELAM обеспечивает защиту компьютеров в сети при их запуске.|
-|virtualSecureMode|Строка|VSM — это контейнер, защищающий ценные ресурсы от компрометации ядра.|
-|pcrHashAlgorithm|Строка|Информационный атрибут, определяющий хэш-алгоритм, который использовался доверенным платформенным модулем (TPM).|
-|bootAppSecurityVersion|Строка|Номер версии системы безопасности для приложения загрузки.|
-|bootManagerSecurityVersion|Строка|Номер версии системы безопасности для приложения загрузки.|
-|tpmVersion|Строка|Номер версии системы безопасности для приложения загрузки.|
-|pcr0|Строка|Измерение, которое записывается в реестр конфигурации платформы (PCR).\[0\]|
-|secureBootConfigurationPolicyFingerPrint|Строка|Отпечаток пользовательской политики настройки безопасной загрузки.|
-|codeIntegrityPolicy|Строка|Политика целостности кода, которая управляет безопасностью среды загрузки.|
-|bootRevisionListInfo|Строка|Список проверок при загрузке, загруженный во время начальной загрузки на аттестированном устройстве.|
-|operatingSystemRevListInfo|Строка|Список проверок операционной системы, загруженный во время начальной загрузки на аттестированном устройстве.|
+|dataExcutionPolicy|String|Политика предотвращения выполнения данных (DEP) определяет набор аппаратных и программных технологий, обеспечивающих дополнительные проверки в памяти. |
+|bitLockerStatus|String|Включение или выключение шифрования диска BitLocker.|
+|bootManagerVersion|String|Версия диспетчера загрузки.|
+|codeIntegrityCheckVersion|String|Версия диспетчера загрузки.|
+|secureBoot|String|Если включена безопасная загрузка, основные компоненты должны включать правильные криптографические подписи.|
+|bootDebugging|String|Если включено свойство bootDebugging, устройство используется при разработке и тестировании.|
+|operatingSystemKernelDebugging|String|Если включено свойство operatingSystemKernelDebugging, устройство используется при разработке и тестировании.|
+|codeIntegrity|String| Если включена целостность кода, выполняется только код, который прошел проверку на целостность.|
+|testSigning|String|Если разрешена тестовая подпись, устройство не применяет проверку подписи во время загрузки.|
+|safeMode|String|Безопасный режим — это средство устранения неполадок в Windows, которое запускает компьютер в ограниченном состоянии.|
+|windowsPE|String|Операционная система, которая запускается с ограниченным набором служб и используется для подготовки компьютера к работе с Windows.|
+|earlyLaunchAntiMalwareDriverProtection|String|Драйвер ELAM обеспечивает защиту компьютеров в сети при их запуске.|
+|virtualSecureMode|String|VSM — это контейнер, защищающий ценные ресурсы от компрометации ядра.|
+|pcrHashAlgorithm|String|Информационный атрибут, определяющий хэш-алгоритм, который использовался доверенным платформенным модулем (TPM).|
+|bootAppSecurityVersion|String|Номер версии системы безопасности для приложения загрузки.|
+|bootManagerSecurityVersion|String|Номер версии системы безопасности для приложения загрузки.|
+|tpmVersion|String|Номер версии системы безопасности для приложения загрузки.|
+|pcr0|String|Измерение, которое записывается в реестр конфигурации платформы (PCR).\[0\]|
+|secureBootConfigurationPolicyFingerPrint|String|Отпечаток пользовательской политики настройки безопасной загрузки.|
+|codeIntegrityPolicy|String|Политика целостности кода, которая управляет безопасностью среды загрузки.|
+|bootRevisionListInfo|String|Список проверок при загрузке, загруженный во время начальной загрузки на аттестированном устройстве.|
+|operatingSystemRevListInfo|String|Список проверок операционной системы, загруженный во время начальной загрузки на аттестированном устройстве.|
 |healthStatusMismatchInfo|String|Этот атрибут отображается, когда служба DHA обнаруживает ошибку целостности данных.|
 |healthAttestationSupportedStatus|String|Этот атрибут указывает, поддерживается ли DHA для устройства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -103,6 +103,9 @@ ms.locfileid: "42532220"
   "healthAttestationSupportedStatus": "String"
 }
 ```
+
+
+
 
 
 

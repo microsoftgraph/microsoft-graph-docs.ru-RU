@@ -1,20 +1,20 @@
 ---
 title: тип перечисления Комплианцестатус
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 284425285f06fc7106348c88f5b71701c1d78adb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f185694d51f2d9defee66d5859d32a46b50dfe0e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447894"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448323"
 ---
 # <a name="compliancestatus-enum-type"></a>тип перечисления Комплианцестатус
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -24,13 +24,16 @@ ms.locfileid: "42447894"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Пока не задокументировано.|
-|нотаппликабле|1 |Пока не задокументировано.|
-|совместимо|2 |Пока не задокументировано.|
-|исправленных|3 |Пока не задокументировано.|
+|нотаппликабле|1,1|Пока не задокументировано.|
+|совместимо|2|Пока не задокументировано.|
+|исправленных|4|Пока не задокументировано.|
 |Несоответствующих|4 |Пока не задокументировано.|
 |error|5 |Пока не задокументировано.|
 |противоречивы|6 |Пока не задокументировано.|
 |нотассигнед|7 |Пока не задокументировано.|
+
+
+
 
 
 

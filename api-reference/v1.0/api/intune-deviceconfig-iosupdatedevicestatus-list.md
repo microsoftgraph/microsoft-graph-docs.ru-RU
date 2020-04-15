@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов iosUpdateDeviceStatus
 description: Список свойств и связей объектов iosUpdateDeviceStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4650f1e9c8e89334e144b9d945f5e922b1a9c469
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1daed1064108f37df74eb2312251a905078691dd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514447"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446100"
 ---
 # <a name="list-iosupdatedevicestatuses"></a>Перечисление объектов iosUpdateDeviceStatus
 
@@ -44,7 +44,7 @@ GET /deviceManagement/iosUpdateStatuses
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -85,6 +85,8 @@ Content-Length: 686
   ]
 }
 ```
+
+
 
 
 

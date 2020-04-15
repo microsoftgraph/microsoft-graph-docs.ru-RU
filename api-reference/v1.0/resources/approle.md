@@ -4,13 +4,13 @@ description: Представляет роль приложения, котор�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 2bda5d65d71873c1427ae99ded550962ad135433
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: e94b1bce8f7888cf2bca4f316dfa8d6a6a96c244
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533144"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451659"
 ---
 # <a name="approle-resource-type"></a>Тип ресурса Аппроле
 

@@ -1,16 +1,16 @@
 ---
 title: Действие sync
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b6a77deed92d3cbdfae21e2ca4d890612845e79
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9f0e4a7f8d31fa4542e01180257ca601685dc4eb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512561"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451787"
 ---
 # <a name="sync-action"></a>Действие синхронизации
 
@@ -44,7 +44,7 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -78,6 +78,8 @@ Content-length: 31
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Создание объекта deviceEnrollmentLimitConfiguration
 description: Создание объекта deviceEnrollmentLimitConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: decd6c0ae44bf6e4d62d99f766acfc6b2d6b62b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 277cea3de8ada82e5661070eacacf345f0cc79ab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512694"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451830"
 ---
 # <a name="create-deviceenrollmentlimitconfiguration"></a>Создание объекта deviceEnrollmentLimitConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта deviceEnrollmentLimitConfiguration в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceEnrollmentLimitConfiguration.
@@ -103,6 +103,8 @@ Content-Length: 377
   "limit": 5
 }
 ```
+
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса managedAppDiagnosticStatus
 description: Представляет состояние диагностики.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9bb957258f43eeb9303876bcc0fa41a4b622cc45
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a8c7eb75b2bb8b146c9b227562d7b9cdabe8da41
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448412"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445757"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>Тип ресурса managedAppDiagnosticStatus
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,7 +27,7 @@ ms.locfileid: "42448412"
 |state|String|Состояние операции|
 |mitigationInstruction|String|Инструкции по исправлению неудачной проверки|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,9 @@ ms.locfileid: "42448412"
   "mitigationInstruction": "String"
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Создание объекта deviceManagementExchangeConnector
 description: Создание объекта deviceManagementExchangeConnector.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 57e770f1c6929016e1ef15e806aec5924316d5b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a95094f735e1b01f5670875cf8d54b2e0aabf325
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512687"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443522"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>Создание объекта deviceManagementExchangeConnector
 
@@ -44,22 +44,22 @@ POST /deviceManagement/exchangeConnectors
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта deviceManagementExchangeConnector в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта deviceManagementExchangeConnector.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
 |status|[девицеманажементексчанжеконнекторстатус](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
-|primarySmtpAddress|Строка|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
-|serverName|Строка|Имя сервера Exchange Server.|
-|connectorServerName|Строка|Имя сервера, на котором размещается соединитель Exchange.|
+|primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
+|serverName|String|Имя сервера Exchange Server.|
+|connectorServerName|String|Имя сервера, на котором размещается соединитель Exchange.|
 |exchangeConnectorType|[девицеманажементексчанжеконнектортипе](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|Строка|Версия объекта ExchangeConnectorAgent|
-|exchangeAlias|Строка|Псевдоним, назначенный серверу Exchange Server|
+|exchangeAlias|String|Псевдоним, назначенный серверу Exchange Server|
 |exchangeOrganization|String|Организация Exchange, соответствующая серверу Exchange Server|
 
 
@@ -111,6 +111,8 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
+
 
 
 

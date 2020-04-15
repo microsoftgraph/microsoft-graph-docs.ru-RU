@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Фиреваллпрешаредкэйенкодингмесодтипе
 description: Возможные значения для Фиреваллпрешаредкэйенкодингмесод
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dadb35cb95db83c03c74bdb2e4eac70a5951cc5e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 61820ed71b6923ff464f25183f7408eea885b7af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532521"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445952"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>тип перечисления Фиреваллпрешаредкэйенкодингмесодтипе
 
@@ -24,8 +24,11 @@ ms.locfileid: "42532521"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
-|нет|1 |Общий ключ не кодируется. Вместо этого он хранится в расширенном формате символов|
-|utF8|2 |Кодирование общего ключа с помощью UTF – 8|
+|нет|1,1|Общий ключ не кодируется. Вместо этого он хранится в расширенном формате символов|
+|utF8|2|Кодирование общего ключа с помощью UTF – 8|
+
+
+
 
 
 

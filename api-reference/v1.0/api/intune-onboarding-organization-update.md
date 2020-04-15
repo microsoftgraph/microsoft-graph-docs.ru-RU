@@ -1,16 +1,16 @@
 ---
 title: Обновление организации
 description: Обновление свойств объекта organization.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e62b040aa80469065631dfa45f8c4564ad906866
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 286d793d75f66212f464a38fa07cb3dc6a764cab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512407"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452882"
 ---
 # <a name="update-organization"></a>Обновление организации
 
@@ -44,14 +44,14 @@ PATCH /organization/{organizationId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [organization](../resources/intune-onboarding-organization.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [organization](../resources/intune-onboarding-organization.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта.|
+|id|String|GUID объекта.|
 |mobileDeviceManagementAuthority|[мдмаусорити](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
 
 
@@ -87,6 +87,8 @@ Content-Length: 151
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
+
+
 
 
 

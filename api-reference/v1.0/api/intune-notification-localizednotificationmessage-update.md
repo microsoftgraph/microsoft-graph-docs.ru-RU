@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта localizedNotificationMessage
 description: Обновление свойств объекта localizedNotificationMessage.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 43787410df4a24160c52769d069929ca9dff377f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0cb9baa539abe27449603392dda96d362e9c5b30
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512771"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453008"
 ---
 # <a name="update-localizednotificationmessage"></a>Обновление объекта localizedNotificationMessage
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).
@@ -53,7 +53,7 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|locale|Строка|Языковой стандарт, для которого предназначено сообщение.|
+|locale|String|Языковой стандарт, для которого предназначено сообщение.|
 |subject|String|Тема шаблона сообщения.|
 |messageTemplate|String|Содержимое шаблона сообщения.|
 |isDefault|Boolean|Флаг, указывающий, используется ли этот языковой стандарт в качестве базового языка. Можно устанавливать только этот флаг. Чтобы снять его, задайте этому свойству значение true для другого локализованного сообщения уведомления.|
@@ -98,6 +98,8 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
+
 
 
 

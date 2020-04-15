@@ -1,16 +1,16 @@
 ---
 title: Управление устройствами в Microsoft Intune
 description: Ресурсы по управлению устройствами в Microsoft Intune
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 435b10f59848a40e9801700ae240ad33ce0465a9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 426b3f8cc3f21547cec191afbfb954bf37e6969a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530980"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449398"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -58,4 +58,7 @@ ms.locfileid: "42530980"
 - [Учетная запись устройства с Windows](intune-devices-windowsdeviceaccount.md)
 - [Учетная запись AD для устройства с Windows](intune-devices-windowsdeviceadaccount.md)
 - [Учетная запись Azure AD для устройства с Windows](intune-devices-windowsdeviceazureadaccount.md)
+
+
+
 

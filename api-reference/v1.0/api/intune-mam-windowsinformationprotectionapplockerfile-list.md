@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов windowsInformationProtectionAppLockerFile
 description: Список свойств и связей объектов windowsInformationProtectionAppLockerFile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d4437ef303aed3486c0978fd1a9f0c19a86d6efd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 890d3eaef84879404c4dbcb44831ba1f2c241561
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512848"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450142"
 ---
 # <a name="list-windowsinformationprotectionapplockerfiles"></a>Перечисление объектов windowsInformationProtectionAppLockerFile
 
@@ -47,7 +47,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -81,6 +81,8 @@ Content-Length: 317
   ]
 }
 ```
+
+
 
 
 

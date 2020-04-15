@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса mimeContent
 description: Содержит свойства обычного содержимого MIME.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05ddc4b1b1c4c27d72a128460b6d156d78542764
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: adfab3e4a791e32e5c6a69cea9f48d246a99365e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447824"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445690"
 ---
 # <a name="mimecontent-resource-type"></a>Тип ресурса mimeContent
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -26,7 +26,7 @@ ms.locfileid: "42447824"
 |type|String|Указывает MIME-тип содержимого.|
 |value|Binary|Массив байтов содержимого.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,9 @@ ms.locfileid: "42447824"
   "value": "binary"
 }
 ```
+
+
+
 
 
 

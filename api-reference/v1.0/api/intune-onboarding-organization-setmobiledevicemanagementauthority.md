@@ -1,16 +1,16 @@
 ---
 title: Действие setMobileDeviceManagementAuthority
 description: Задание центра управления мобильными устройствами
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f8713d62ed082a368b915ca4e44706209f73ee7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 872a9b590aba6150a8d38789b9dea0a5a132281e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512414"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452889"
 ---
 # <a name="setmobiledevicemanagementauthority-action"></a>Действие setMobileDeviceManagementAuthority
 
@@ -44,7 +44,7 @@ POST /organization/{organizationId}/setMobileDeviceManagementAuthority
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -69,6 +69,8 @@ Content-Length: 18
   "value": 2
 }
 ```
+
+
 
 
 

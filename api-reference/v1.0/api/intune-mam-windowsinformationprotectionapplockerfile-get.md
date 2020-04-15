@@ -1,16 +1,16 @@
 ---
 title: Получение объекта windowsInformationProtectionAppLockerFile
 description: Чтение свойств и связей объекта windowsInformationProtectionAppLockerFile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8221533ce630be8a3615c4f46d2458fc2d5aa561
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a517f9b99cf3ba4563253efcf87634c22f72e2e0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512869"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450149"
 ---
 # <a name="get-windowsinformationprotectionapplockerfile"></a>Получение объекта windowsInformationProtectionAppLockerFile
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -82,6 +82,8 @@ Content-Length: 291
   }
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов deviceConfigurationDeviceStatus
 description: Список свойств и связей объектов deviceConfigurationDeviceStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 583d39f3a214468dc29ac3de7da0e2c663649e5e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d3b951856fef974fea97bd4aaced778273760f86
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514755"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450695"
 ---
 # <a name="list-deviceconfigurationdevicestatuses"></a>Перечисление объектов deviceConfigurationDeviceStatus
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuse
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -81,6 +81,8 @@ Content-Length: 547
   ]
 }
 ```
+
+
 
 
 

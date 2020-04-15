@@ -2,15 +2,15 @@
 title: Тип ресурса Фисикалоффицеаддресс
 description: Представляет рабочий адрес ресурса, например контакт или событие.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0c7b0280d8b9e7d62357985b88ead034b015aef1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 46674ad9be3e86fd36f5a5beb52829959bbd340b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534059"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445548"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>Тип ресурса Фисикалоффицеаддресс
 
@@ -22,10 +22,10 @@ ms.locfileid: "42534059"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|city|Строка|Город.|
+|city|String|Город.|
 |countryOrRegion|String|Страна или регион. Это строковое значение в произвольном формате, например "США".|
-|officeLocation  | Строка | Местоположение Office, например здание и номер офиса для контакта в Организации.  |
-|postalCode|Строка|Почтовый индекс.|
+|officeLocation  | String | Местоположение Office, например здание и номер офиса для контакта в Организации.  |
+|postalCode|String|Почтовый индекс.|
 |state|String|Штат.|
 |street|String|Улица.|
 

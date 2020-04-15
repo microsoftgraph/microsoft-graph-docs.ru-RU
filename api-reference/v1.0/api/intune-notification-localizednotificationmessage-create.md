@@ -1,16 +1,16 @@
 ---
 title: Создание объекта localizedNotificationMessage
 description: Создание объекта localizedNotificationMessage.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8fb9ba4002ccc3c90a7ddeee68b2f2434749d00e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 13ae59211fa5b96113e60f80563d44fa89734f0c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512792"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453060"
 ---
 # <a name="create-localizednotificationmessage"></a>Создание объекта localizedNotificationMessage
 
@@ -44,7 +44,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта localizedNotificationMessage в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта localizedNotificationMessage.
@@ -53,7 +53,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|locale|Строка|Языковой стандарт, для которого предназначено сообщение.|
+|locale|String|Языковой стандарт, для которого предназначено сообщение.|
 |subject|String|Тема шаблона сообщения.|
 |messageTemplate|String|Содержимое шаблона сообщения.|
 |isDefault|Boolean|Флаг, указывающий, используется ли этот языковой стандарт в качестве базового языка. Можно устанавливать только этот флаг. Чтобы снять его, задайте этому свойству значение true для другого локализованного сообщения уведомления.|
@@ -98,6 +98,8 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
+
 
 
 

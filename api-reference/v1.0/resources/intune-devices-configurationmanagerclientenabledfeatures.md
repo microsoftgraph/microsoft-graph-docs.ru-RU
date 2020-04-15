@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса configurationManagerClientEnabledFeatures
 description: Включенные клиентом функции диспетчера конфигураций
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e8622f6f1772948295f9389cf97aef0b6f260e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da8a32960b1a8e82f60161e329abcf68916b4f37
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533311"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451274"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Тип ресурса configurationManagerClientEnabledFeatures
 
@@ -23,14 +23,14 @@ ms.locfileid: "42533311"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|inventory|Boolean|Управляет ли Intune данными инвентаризации|
-|modernApps|Boolean|Управляет ли Intune современным приложением|
-|resourceAccess|Boolean|Управляет ли Intune доступом к ресурсам|
-|deviceConfiguration|Boolean|Управляет ли Intune конфигурацией устройства|
-|compliancePolicy|Boolean|Управляется ли Intune политикой соответствия требованиям|
+|inventory|Логический|Управляет ли Intune данными инвентаризации|
+|modernApps|Логический|Управляет ли Intune современным приложением|
+|resourceAccess|Логический|Управляет ли Intune доступом к ресурсам|
+|deviceConfiguration|Логический|Управляет ли Intune конфигурацией устройства|
+|compliancePolicy|Логический|Управляется ли Intune политикой соответствия требованиям|
 |windowsUpdateForBusiness|Boolean|Управляет ли Intune Центром обновления Windows для бизнеса|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,6 +51,9 @@ ms.locfileid: "42533311"
   "windowsUpdateForBusiness": true
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов managedDeviceMobileAppConfigurationUserStatus
 description: Список свойств и связей объектов managedDeviceMobileAppConfigurationUserStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4afd7922a13bba4d8532e7525dfdb6dfceb42fe1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b89b95e3133fd1e792c04c92523dcedf105e479
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516231"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442696"
 ---
 # <a name="list-manageddevicemobileappconfigurationuserstatuses"></a>Перечисление объектов managedDeviceMobileAppConfigurationUserStatus
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -79,6 +79,8 @@ Content-Length: 416
   ]
 }
 ```
+
+
 
 
 

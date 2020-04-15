@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса groupAssignmentTarget
 description: Представляет ресурс, назначенный группе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f103315cc0c0499545a7fe3adb8bc31f9d24880
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4467c312581307a6603f5c83e4aa2e4e7fa1fa8b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447838"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445712"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>Тип ресурса groupAssignmentTarget
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -28,7 +28,7 @@ ms.locfileid: "42447838"
 |:---|:---|:---|
 |groupId|String|Идентификатор группы-объекта назначения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,9 @@ ms.locfileid: "42447838"
   "groupId": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68939fa29a259d3f5a463d731c79a4a8ebff44d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 74f43ab54f9ba1dbc92c50d594ae8af58e630126
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447817"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445683"
 ---
 # <a name="report-resource-type"></a>Тип ресурса report
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
@@ -26,7 +26,7 @@ ms.locfileid: "42447817"
 |:---|:---|:---|
 |содержимое|Поток|Н/Д|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 
@@ -43,4 +43,7 @@ ms.locfileid: "42447817"
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
+
+
+
 

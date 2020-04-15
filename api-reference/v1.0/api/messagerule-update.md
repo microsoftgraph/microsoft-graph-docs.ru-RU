@@ -1,16 +1,16 @@
 ---
 title: Обновление правила
 description: Изменение записываемых свойств объекта messageRule и сохранение изменений.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 303a83bb65af1b3ae564118c6dd7c14f873bafed
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a2e633f4121d9b57b450764460d6d2b874c024d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511448"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451704"
 ---
 # <a name="update-rule"></a>Обновление правила
 
@@ -40,16 +40,16 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](../resources/messageruleactions.md) | Действия, которые нужно применить к сообщению при выполнении определенных условий. |
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | Условия, выполнение которых активирует соответствующие действия для указанного правила. |
-| displayName | Строка | Отображаемое имя правила. |
+| displayName | String | Отображаемое имя правила. |
 | exceptions | [messageRulePredicates](../resources/messagerulepredicates.md) | Условия исключения для правила. |
-| isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. |
+| isEnabled | Логический | Указывает, включено ли применение правила к сообщениям. |
 | isReadOnly | Boolean | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
 | sequence | Int32 | Определяет последовательность выполнения правила среди прочих правил. |
 

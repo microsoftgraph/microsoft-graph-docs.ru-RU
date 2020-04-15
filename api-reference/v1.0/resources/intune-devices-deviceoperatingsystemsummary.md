@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceOperatingSystemSummary
 description: Общие сведения об операционной системе устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82eb7fe0feb0f410a0ef80ab6756aa499f73b71d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 460edb4724dcff002e207d7c5df6095cc3a8f130
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533265"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453978"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Тип ресурса deviceOperatingSystemSummary
 
@@ -30,7 +30,7 @@ ms.locfileid: "42533265"
 |windowsCount|Int32|Количество устройств с Windows.|
 |unknownCount|Int32|Количество неизвестных устройств.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,6 +51,9 @@ ms.locfileid: "42533265"
   "unknownCount": 1024
 }
 ```
+
+
+
 
 
 

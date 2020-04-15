@@ -1,20 +1,20 @@
 ---
 title: тип перечисления Манажедаппдатасторажелокатион
 description: Места хранения, в которых управляемые приложения потенциально могут хранить свои данные
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bc4c0f1fc01165805235279492cb30d53c6ee7b4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de09f36f8823927a42fd5508be90db8ced098b71
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448426"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445772"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>тип перечисления Манажедаппдатасторажелокатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -23,9 +23,12 @@ ms.locfileid: "42448426"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|онедривефорбусинесс|1 |OneDrive для бизнеса;|
-|sharePoint|2 |SharePoint|
+|онедривефорбусинесс|1,1|OneDrive для бизнеса;|
+|sharePoint|2|SharePoint|
 |localStorage|6 |Локальное хранилище на устройстве|
+
+
+
 
 
 

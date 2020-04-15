@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceComplianceSettingState
 description: Состояние параметров соответствия требованиям для определенного устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 96ac7526d8392a3c34a719c4a28b30e568bdd213
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78605a0f2f2749ba00e1aade7f20b2aaae0522b4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530802"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446011"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>Тип ресурса deviceComplianceSettingState
 
@@ -33,19 +33,19 @@ ms.locfileid: "42530802"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта|
-|setting|Строка|Имя класса параметров и свойства.|
-|settingName|Строка|Имя параметра в отчете|
-|deviceId|Строка|ИД устройства в отчете|
-|deviceName|Строка|Имя устройства в отчете|
+|setting|String|Имя класса параметров и свойства.|
+|settingName|String|Имя параметра в отчете|
+|deviceId|String|ИД устройства в отчете|
+|deviceName|String|Имя устройства в отчете|
 |userId|String|ИД пользователя в отчете|
 |userEmail|String|Электронный адрес пользователя в отчете|
-|userName|Строка|Имя пользователя в отчете|
+|userName|String|Имя пользователя в отчете|
 |userPrincipalName|String|Имя участника-пользователя в отчете|
-|deviceModel|Строка|Модель устройства в отчете|
+|deviceModel|String|Модель устройства в отчете|
 |state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия требования для устройства|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -73,6 +73,9 @@ ms.locfileid: "42530802"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

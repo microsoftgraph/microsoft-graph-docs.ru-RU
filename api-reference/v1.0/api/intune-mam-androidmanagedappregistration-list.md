@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов androidManagedAppRegistration
 description: Список свойств и связей объектов androidManagedAppRegistration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cf490f36274916a44ac28b609f78cd020292be89
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 00f1cbcf35ad98a79ea5f7213fc0689a8342cda0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513303"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446026"
 ---
 # <a name="list-androidmanagedappregistrations"></a>Перечисление объектов androidManagedAppRegistration
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/managedAppRegistrations
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -91,6 +91,8 @@ Content-Length: 862
   ]
 }
 ```
+
+
 
 
 

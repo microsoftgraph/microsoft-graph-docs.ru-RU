@@ -1,16 +1,16 @@
 ---
 title: Создание объекта deviceInstallState
 description: Создание объекта deviceInstallState.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f5d57957517f78949ce166f70cbd083a6dafec07
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d672672efd1bac5752b9b93b878b207a603fff2a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515723"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455541"
 ---
 # <a name="create-deviceinstallstate"></a>Создание объекта deviceInstallState
 
@@ -45,21 +45,21 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта deviceInstallState в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceInstallState.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|deviceName|Строка|Имя устройства.|
-|deviceId|Строка|Идентификатор устройства.|
+|id|String|Ключ объекта.|
+|deviceName|String|Имя устройства.|
+|deviceId|String|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
 |installState|[installState](../resources/intune-books-installstate.md)|Состояние установки электронной книги. Возможные значения: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|Строка|Код ошибки для сбоев при установке.|
-|osVersion|Строка|Версия ОС.|
-|osDescription|Строка|Описание ОС.|
+|errorCode|String|Код ошибки для сбоев при установке.|
+|osVersion|String|Версия ОС.|
+|osDescription|String|Описание ОС.|
 |userName|String|Имя пользователя устройства.|
 
 
@@ -109,6 +109,8 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
+
 
 
 

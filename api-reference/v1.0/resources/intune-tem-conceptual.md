@@ -2,19 +2,19 @@
 title: Управление затратами на телекоммуникации в Microsoft Intune
 description: Используя Saaswedo (службу управления затратами на телекоммуникации), которая интегрируется с Intune, вы можете ограничить использование данных и роуминг на корпоративных устройствах. Эта служба позволяет настроить и применить ограничения на использование, а также отправлять пользователям оповещения при превышении настроенного порогового значения. Кроме того, вы можете настроить эту службу на выполнение различных действий, таких как отключение роуминга при превышении порогового значения. Отчеты об использовании данных и сведения о мониторинге доступны в консоли Saaswedo. Прежде чем использовать службу управления затратами на телекоммуникации Saaswedo с Intune, необходимо настроить параметры в консоли Saaswedo и в Intune. Нужно включить соединение как для службы Saaswedo, так и для Intune. Если соединение активировано только со стороны службы Saaswedo, Intune примет соединение, но проигнорирует его.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: ebb91dbfacf511252cde8fd37ba6119dd3aeeb34
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c93338c39a2dfce144688fb7c042d6e520ed6ac8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447782"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445577"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Управление затратами на телекоммуникации в Microsoft Intune
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune надлежащим образом.
 
@@ -23,4 +23,7 @@ ms.locfileid: "42447782"
 Для управления затратами на телекоммуникации в Intune используются перечисленные ниже ресурсы Graph.  
 
 - [Партнер по управлению затратами на телекоммуникации](intune-tem-telecomexpensemanagementpartner.md)
+
+
+
 

@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса deviceManagementTroubleshootingEvent
 description: Событие, представляющее общий сбой.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 330eb14f15902b47b9136e426869f5755e66857b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba52be83003c826970ce8b3941007e398323058e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447775"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451267"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>Тип ресурса deviceManagementTroubleshootingEvent
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -36,7 +36,7 @@ ms.locfileid: "42447775"
 |eventDateTime|DateTimeOffset|Время возникновения события.|
 |correlationId|String|ИД, используемый для трассировки сбоя в службе.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,6 +55,9 @@ ms.locfileid: "42447775"
   "correlationId": "String"
 }
 ```
+
+
+
 
 
 

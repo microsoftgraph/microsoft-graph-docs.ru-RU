@@ -3,14 +3,14 @@ title: Тип ресурса referenceAttachment
 description: Ссылка на файл (например, текстовый файл или документ Word) на облачном диске OneDrive для бизнеса или в других поддерживаемых местах хранения, вложенный в событие, сообщение или запись.
 localization_priority: Normal
 ms.prod: outlook
-author: angelgolfer-ms
+author: svpsiva
 doc_type: resourcePageType
-ms.openlocfilehash: 9c17070e2ff10877039a98e42303f06f7842da2f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb3298d5fc316c86c3befb8a937b3d9477831121
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533869"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445517"
 ---
 # <a name="referenceattachment-resource-type"></a>Тип ресурса referenceAttachment
 
@@ -24,7 +24,7 @@ ms.locfileid: "42533869"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
+|[получение](../api/attachment-get.md); | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
 |[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта referenceAttachment. |
 
 ## <a name="properties"></a>Свойства
@@ -37,7 +37,7 @@ ms.locfileid: "42533869"
 |name|String|Текст, который отображается под значком, представляет внедренное вложение. Он может не быть фактическим именем файла.|
 |size|Int32|Объем метаданных, которые хранятся в сообщении с вложением (в байтах). Это значение не отображает фактический размер файла.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

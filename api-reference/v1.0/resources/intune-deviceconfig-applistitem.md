@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса appListItem
 description: Представляет приложение в списке управляемых приложений
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: acb27cacd61685c36043789b25f70f015d1fe0b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a018be94068c0edf478f78fc692b9abcd036a060
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530931"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449164"
 ---
 # <a name="applistitem-resource-type"></a>Тип ресурса appListItem
 
@@ -24,11 +24,11 @@ ms.locfileid: "42530931"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |name|Строка|Имя приложения|
-|publisher|Строка|Издатель приложения|
+|publisher|String|Издатель приложения|
 |appStoreUrl|String|URL-адрес приложения в Магазине|
 |appId|String|Идентификатор приложения или его пакета|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,9 @@ ms.locfileid: "42530931"
   "appId": "String"
 }
 ```
+
+
+
 
 
 

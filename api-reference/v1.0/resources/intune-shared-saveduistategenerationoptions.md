@@ -1,20 +1,20 @@
 ---
 title: тип перечисления Саведуистатеженератионоптионс
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 17063fe489f8bc88951437f5b9ae83d1b83fa61e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f709eee1d560215730fe42fb002b27dd50c7fca9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447803"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445645"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>тип перечисления Саведуистатеженератионоптионс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -24,7 +24,10 @@ ms.locfileid: "42447803"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |нет|нуль|Пока не задокументировано.|
-|омитсилверлигхтполициреференцес|1 |Пока не задокументировано.|
+|омитсилверлигхтполициреференцес|1,1|Пока не задокументировано.|
+
+
+
 
 
 

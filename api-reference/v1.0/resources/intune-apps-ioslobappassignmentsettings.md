@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iosLobAppAssignmentSettings
 description: Содержит свойства, используемые при назначении бизнес-приложения для iOS группе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 307421c7fa5bf15628fb6bb1e10d6ba36bef5705
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc764c68fb6ad872fba7a7e12e3a53f92b9ba2c1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531226"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451623"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>Тип ресурса iosLobAppAssignmentSettings
 
@@ -28,7 +28,7 @@ ms.locfileid: "42531226"
 |:---|:---|:---|
 |vpnConfigurationId|String|ИД конфигурации VPN, применяемой к этому приложению.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,9 @@ ms.locfileid: "42531226"
   "vpnConfigurationId": "String"
 }
 ```
+
+
+
 
 
 
