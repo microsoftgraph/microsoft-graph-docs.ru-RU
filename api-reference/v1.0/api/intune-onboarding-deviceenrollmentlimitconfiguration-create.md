@@ -1,35 +1,35 @@
 ---
 title: Создание объекта deviceEnrollmentLimitConfiguration
 description: Создание объекта deviceEnrollmentLimitConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: decd6c0ae44bf6e4d62d99f766acfc6b2d6b62b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 277cea3de8ada82e5661070eacacf345f0cc79ab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512694"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451830"
 ---
-# <a name="create-deviceenrollmentlimitconfiguration"></a><span data-ttu-id="5eaf0-103">Создание объекта deviceEnrollmentLimitConfiguration</span><span class="sxs-lookup"><span data-stu-id="5eaf0-103">Create deviceEnrollmentLimitConfiguration</span></span>
+# <a name="create-deviceenrollmentlimitconfiguration"></a><span data-ttu-id="7d975-103">Создание объекта deviceEnrollmentLimitConfiguration</span><span class="sxs-lookup"><span data-stu-id="7d975-103">Create deviceEnrollmentLimitConfiguration</span></span>
 
-<span data-ttu-id="5eaf0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5eaf0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7d975-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7d975-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="5eaf0-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="5eaf0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7d975-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7d975-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="5eaf0-106">Создание объекта [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="5eaf0-106">Create a new [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object.</span></span>
+<span data-ttu-id="7d975-106">Создание объекта [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="7d975-106">Create a new [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="5eaf0-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="5eaf0-107">Prerequisites</span></span>
-<span data-ttu-id="5eaf0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5eaf0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="7d975-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="7d975-107">Prerequisites</span></span>
+<span data-ttu-id="7d975-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7d975-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5eaf0-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5eaf0-110">Permission type</span></span>|<span data-ttu-id="5eaf0-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="5eaf0-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="7d975-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7d975-110">Permission type</span></span>|<span data-ttu-id="7d975-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="7d975-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5eaf0-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5eaf0-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5eaf0-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5eaf0-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="5eaf0-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5eaf0-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5eaf0-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5eaf0-115">Not supported.</span></span>|
-|<span data-ttu-id="5eaf0-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5eaf0-116">Application</span></span>|<span data-ttu-id="5eaf0-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5eaf0-117">Not supported.</span></span>|
+|<span data-ttu-id="7d975-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7d975-112">Delegated (work or school account)</span></span>|<span data-ttu-id="7d975-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d975-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="7d975-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7d975-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7d975-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7d975-115">Not supported.</span></span>|
+|<span data-ttu-id="7d975-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7d975-116">Application</span></span>|<span data-ttu-id="7d975-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7d975-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5eaf0-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5eaf0-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7d975-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7d975-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,37 +38,37 @@ ms.locfileid: "42512694"
 POST /deviceManagement/deviceEnrollmentConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5eaf0-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="5eaf0-119">Request headers</span></span>
-|<span data-ttu-id="5eaf0-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="5eaf0-120">Header</span></span>|<span data-ttu-id="5eaf0-121">Значение</span><span class="sxs-lookup"><span data-stu-id="5eaf0-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7d975-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="7d975-119">Request headers</span></span>
+|<span data-ttu-id="7d975-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="7d975-120">Header</span></span>|<span data-ttu-id="7d975-121">Значение</span><span class="sxs-lookup"><span data-stu-id="7d975-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="5eaf0-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="5eaf0-122">Authorization</span></span>|<span data-ttu-id="5eaf0-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5eaf0-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="5eaf0-124">Accept</span><span class="sxs-lookup"><span data-stu-id="5eaf0-124">Accept</span></span>|<span data-ttu-id="5eaf0-125">application/json</span><span class="sxs-lookup"><span data-stu-id="5eaf0-125">application/json</span></span>|
+|<span data-ttu-id="7d975-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="7d975-122">Authorization</span></span>|<span data-ttu-id="7d975-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7d975-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="7d975-124">Accept</span><span class="sxs-lookup"><span data-stu-id="7d975-124">Accept</span></span>|<span data-ttu-id="7d975-125">application/json</span><span class="sxs-lookup"><span data-stu-id="7d975-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5eaf0-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5eaf0-126">Request body</span></span>
-<span data-ttu-id="5eaf0-127">В тексте запроса добавьте представление объекта deviceEnrollmentLimitConfiguration в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5eaf0-127">In the request body, supply a JSON representation for the deviceEnrollmentLimitConfiguration object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7d975-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="7d975-126">Request body</span></span>
+<span data-ttu-id="7d975-127">В тексте запроса добавьте представление объекта deviceEnrollmentLimitConfiguration в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7d975-127">In the request body, supply a JSON representation for the deviceEnrollmentLimitConfiguration object.</span></span>
 
-<span data-ttu-id="5eaf0-128">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceEnrollmentLimitConfiguration.</span><span class="sxs-lookup"><span data-stu-id="5eaf0-128">The following table shows the properties that are required when you create the deviceEnrollmentLimitConfiguration.</span></span>
+<span data-ttu-id="7d975-128">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceEnrollmentLimitConfiguration.</span><span class="sxs-lookup"><span data-stu-id="7d975-128">The following table shows the properties that are required when you create the deviceEnrollmentLimitConfiguration.</span></span>
 
-|<span data-ttu-id="5eaf0-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="5eaf0-129">Property</span></span>|<span data-ttu-id="5eaf0-130">Тип</span><span class="sxs-lookup"><span data-stu-id="5eaf0-130">Type</span></span>|<span data-ttu-id="5eaf0-131">Описание</span><span class="sxs-lookup"><span data-stu-id="5eaf0-131">Description</span></span>|
+|<span data-ttu-id="7d975-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="7d975-129">Property</span></span>|<span data-ttu-id="7d975-130">Тип</span><span class="sxs-lookup"><span data-stu-id="7d975-130">Type</span></span>|<span data-ttu-id="7d975-131">Описание</span><span class="sxs-lookup"><span data-stu-id="7d975-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5eaf0-132">id</span><span class="sxs-lookup"><span data-stu-id="5eaf0-132">id</span></span>|<span data-ttu-id="5eaf0-133">String</span><span class="sxs-lookup"><span data-stu-id="5eaf0-133">String</span></span>|<span data-ttu-id="5eaf0-134">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5eaf0-134">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5eaf0-135">displayName</span><span class="sxs-lookup"><span data-stu-id="5eaf0-135">displayName</span></span>|<span data-ttu-id="5eaf0-136">Строка</span><span class="sxs-lookup"><span data-stu-id="5eaf0-136">String</span></span>|<span data-ttu-id="5eaf0-137">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5eaf0-137">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5eaf0-138">description</span><span class="sxs-lookup"><span data-stu-id="5eaf0-138">description</span></span>|<span data-ttu-id="5eaf0-139">String</span><span class="sxs-lookup"><span data-stu-id="5eaf0-139">String</span></span>|<span data-ttu-id="5eaf0-140">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5eaf0-140">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5eaf0-141">priority</span><span class="sxs-lookup"><span data-stu-id="5eaf0-141">priority</span></span>|<span data-ttu-id="5eaf0-142">Int32</span><span class="sxs-lookup"><span data-stu-id="5eaf0-142">Int32</span></span>|<span data-ttu-id="5eaf0-143">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5eaf0-143">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5eaf0-144">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="5eaf0-144">createdDateTime</span></span>|<span data-ttu-id="5eaf0-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5eaf0-145">DateTimeOffset</span></span>|<span data-ttu-id="5eaf0-146">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5eaf0-146">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5eaf0-147">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="5eaf0-147">lastModifiedDateTime</span></span>|<span data-ttu-id="5eaf0-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5eaf0-148">DateTimeOffset</span></span>|<span data-ttu-id="5eaf0-149">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5eaf0-149">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5eaf0-150">version</span><span class="sxs-lookup"><span data-stu-id="5eaf0-150">version</span></span>|<span data-ttu-id="5eaf0-151">Int32</span><span class="sxs-lookup"><span data-stu-id="5eaf0-151">Int32</span></span>|<span data-ttu-id="5eaf0-152">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5eaf0-152">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5eaf0-153">limit</span><span class="sxs-lookup"><span data-stu-id="5eaf0-153">limit</span></span>|<span data-ttu-id="5eaf0-154">Int32</span><span class="sxs-lookup"><span data-stu-id="5eaf0-154">Int32</span></span>|<span data-ttu-id="5eaf0-155">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="5eaf0-155">Not yet documented</span></span>|
+|<span data-ttu-id="7d975-132">id</span><span class="sxs-lookup"><span data-stu-id="7d975-132">id</span></span>|<span data-ttu-id="7d975-133">String</span><span class="sxs-lookup"><span data-stu-id="7d975-133">String</span></span>|<span data-ttu-id="7d975-134">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7d975-134">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="7d975-135">displayName</span><span class="sxs-lookup"><span data-stu-id="7d975-135">displayName</span></span>|<span data-ttu-id="7d975-136">Строка</span><span class="sxs-lookup"><span data-stu-id="7d975-136">String</span></span>|<span data-ttu-id="7d975-137">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7d975-137">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="7d975-138">description</span><span class="sxs-lookup"><span data-stu-id="7d975-138">description</span></span>|<span data-ttu-id="7d975-139">String</span><span class="sxs-lookup"><span data-stu-id="7d975-139">String</span></span>|<span data-ttu-id="7d975-140">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7d975-140">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="7d975-141">priority</span><span class="sxs-lookup"><span data-stu-id="7d975-141">priority</span></span>|<span data-ttu-id="7d975-142">Int32</span><span class="sxs-lookup"><span data-stu-id="7d975-142">Int32</span></span>|<span data-ttu-id="7d975-143">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7d975-143">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="7d975-144">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="7d975-144">createdDateTime</span></span>|<span data-ttu-id="7d975-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7d975-145">DateTimeOffset</span></span>|<span data-ttu-id="7d975-146">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7d975-146">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="7d975-147">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="7d975-147">lastModifiedDateTime</span></span>|<span data-ttu-id="7d975-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7d975-148">DateTimeOffset</span></span>|<span data-ttu-id="7d975-149">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7d975-149">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="7d975-150">version</span><span class="sxs-lookup"><span data-stu-id="7d975-150">version</span></span>|<span data-ttu-id="7d975-151">Int32</span><span class="sxs-lookup"><span data-stu-id="7d975-151">Int32</span></span>|<span data-ttu-id="7d975-152">Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7d975-152">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="7d975-153">limit</span><span class="sxs-lookup"><span data-stu-id="7d975-153">limit</span></span>|<span data-ttu-id="7d975-154">Int32</span><span class="sxs-lookup"><span data-stu-id="7d975-154">Int32</span></span>|<span data-ttu-id="7d975-155">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="7d975-155">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="5eaf0-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="5eaf0-156">Response</span></span>
-<span data-ttu-id="5eaf0-157">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5eaf0-157">If successful, this method returns a `201 Created` response code and a [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7d975-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="7d975-156">Response</span></span>
+<span data-ttu-id="7d975-157">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="7d975-157">If successful, this method returns a `201 Created` response code and a [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5eaf0-158">Пример</span><span class="sxs-lookup"><span data-stu-id="5eaf0-158">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7d975-158">Пример</span><span class="sxs-lookup"><span data-stu-id="7d975-158">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="5eaf0-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="5eaf0-159">Request</span></span>
-<span data-ttu-id="5eaf0-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5eaf0-160">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="7d975-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="7d975-159">Request</span></span>
+<span data-ttu-id="7d975-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7d975-160">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
@@ -84,8 +84,8 @@ Content-length: 205
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="5eaf0-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="5eaf0-161">Response</span></span>
-<span data-ttu-id="5eaf0-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5eaf0-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7d975-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="7d975-161">Response</span></span>
+<span data-ttu-id="7d975-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7d975-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -103,6 +103,8 @@ Content-Length: 377
   "limit": 5
 }
 ```
+
+
 
 
 
