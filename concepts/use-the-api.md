@@ -4,12 +4,12 @@ description: Microsoft Graph — это соответствующий огра
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0be1d19f9968d5da7d4c3f7ff84a76397dfa2115
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e374f124824705cc88aa7f991d99f2c99e7caa9a
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448531"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510506"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Использование API Microsoft Graph
 
@@ -109,6 +109,33 @@ GET https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@con
 GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:00.0000000&endDateTime=2019-09-01T17:00:00.0000000
 ```
 
+## <a name="tools-for-interacting-with-microsoft-graph"></a>Инструменты для взаимодействия с Microsoft Graph
+
+### <a name="graph-explorer"></a>Песочница Graph
+
+Песочница Graph — это веб-инструмент, который можно использовать для создания и тестирования запросов с помощью API Microsoft Graph. Песочница Graph доступна по адресу: `https://developer.microsoft.com/graph/graph-explorer`.
+
+Вы можете получить доступ к демонстрационным данным без входа или можете войти в свой клиент. Для создания запроса выполните следующие действия:
+
+1. Выберите метод HTTP.
+2. Выберите версию API, которую нужно использовать.
+3. Введите запрос в текстовое поле запроса.
+4. Нажмите **Запуск запроса**. 
+
+В следующем примере показан запрос, возвращающий сведения о пользователях в демонстрационном клиенте:
+
+![Снимок экрана: песочница Graph с выделенным запросом пользователя GET](./images/graph-explorer.png)
+
+Примеры запросов представлены в песочнице Graph, чтобы вы могли быстрее запускать распространенные запросы. Чтобы просмотреть доступные примеры, выберите **Показать другие примеры**. Выберите **Вкл** для набора примеров, который вы хотите просмотреть, и после закрытия окна выбора должен появиться список готовых запросов.
+
+После отправки запроса отображается код состояния и сообщение, а запрос выводится на вкладке **Просмотр отклика**.
+
+### <a name="postman"></a>Postman
+
+Postman — это инструмент, который можно использовать для создания и тестирования запросов с помощью API Microsoft Graph. Вы можете скачать Postman по адресу: `https://www.getpostman.com/`. Чтобы взаимодействовать с Microsoft Graph в Postman, используйте коллекцию Microsoft Graph.
+
+Дополнительные сведения см. в статье [Использование Postman с API Microsoft Graph](https://docs.microsoft.comgraph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta).
+
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Все готово для настройки Microsoft Graph. Чтобы узнать больше, перейдите в [песочницу Graph](https://developer.microsoft.com/graph/graph-explorer) и опробуйте запросы, воспользуйтесь [кратким руководством](https://developer.microsoft.com/graph/quick-start) или начните с одного из [пакетов SDK или примеров кода](https://developer.microsoft.com/graph/code-samples-and-sdks).
+Все готово для настройки Microsoft Graph. Воспользуйтесь [кратким руководством по началу работы](https://developer.microsoft.com/graph/quick-start) или начните использовать один из наших [пакетов SDK и примеров кода](https://developer.microsoft.com/graph/code-samples-and-sdks).
