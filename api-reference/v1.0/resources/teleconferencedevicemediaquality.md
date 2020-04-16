@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: faf9c5c7aca7da0e54f9d7b50899a5340b142a1b
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: bd0603c220e0bd90f1f8ace2889efe5124175153
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082769"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43511178"
 ---
 # <a name="teleconferencedevicemediaquality-resource-type"></a>Тип ресурса Телеконференцедевицемедиакуалити
 
@@ -43,6 +43,14 @@ ms.locfileid: "43082769"
 |аутбаундпаккетс|Int64|Общее число исходящих пакетов.|
 |ремотеипаддресс|String|Удаленный IP-адрес для сеанса мультимедиа.|
 |ремотепорт|Int32|Удаленный порт мультимедиа.|
+
+### <a name="derived-types"></a>Производные типы
+
+| Тип                                                 | Описание                                                         |
+|:-----------------------------------------------------|:--------------------------------------------------------------------|
+| [teleconferenceDeviceAudioQuality](teleconferencedeviceaudioquality.md)    | Данные о качестве звука устройства видеоконференций для видеоконференций.                          |
+| [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md)    | Данные о качестве видео о качестве видеоконференций для видеоконференций.                          |
+| [телеконференцедевицескриншарингкуалити](teleconferencedevicescreensharingquality.md)    | Данные о качестве общего доступа устройства для видеоконференций для видеоконференций. |
 
 ## <a name="json-representation"></a>Представление JSON
 

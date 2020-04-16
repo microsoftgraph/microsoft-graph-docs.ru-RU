@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b6c51a2c3722e3c62691b357f87749f63b968d2b
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: bbcc0b99a75a61375bcf68dc20d32c4052d4f885
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082768"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43511171"
 ---
 # <a name="teleconferencedevicevideoquality-resource-type"></a>Тип ресурса Телеконференцедевицевидеокуалити
 
@@ -28,6 +28,12 @@ ms.locfileid: "43082768"
 |аверажеинбаундфрамерате|Двойное с плавающей точкой|Средняя частота входящего потока видеокадров в секунду.|
 |аверажеаутбаундбитрате|Двойное с плавающей точкой|Средняя скорость передачи данных по исходящему потоку в секунду.|
 |аверажеаутбаундфрамерате|Двойное с плавающей точкой|Средняя частота исходящих покадровых кадров в секунду.|
+
+### <a name="derived-types"></a>Производные типы
+
+| Тип                                                 | Описание                                                         |
+|:-----------------------------------------------------|:--------------------------------------------------------------------|
+| [телеконференцедевицескриншарингкуалити](teleconferencedevicescreensharingquality.md)    | Данные о качестве общего доступа устройства для видеоконференций для видеоконференций. |
 
 ## <a name="json-representation"></a>Представление JSON
 

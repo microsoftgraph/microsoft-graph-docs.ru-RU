@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 166218acee43d69495f68721445678235c1e62f8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d9398c42c8f4404e2d61a8d63f9d30870cb9d751
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518681"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510835"
 ---
 # <a name="call-redirect"></a>вызов: redirect
 
@@ -294,7 +294,7 @@ Content-Type: application/json
 ##### <a name="request"></a>Запросить
 
 <!-- {
-  "blockType": "request", 
+  "blockType": "ignored", 
   "name": "call-redirect-simuring"
 } -->
 
