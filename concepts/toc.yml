@@ -89,11 +89,11 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Предложение нового времени собрания (предварительная версия)
             href: outlook-calendar-meeting-proposals.md
-          - name: Организация и посещение собраний по сети (предварительная версия)
+          - name: Организация и посещение собраний по сети
             href: outlook-calendar-online-meetings.md
           - name: Планирование повторяющихся событий
             href: outlook-schedule-recurring-events.md
-          - name: Предоставление доступа к календарю или его делегирование (Предварительная версия)
+          - name: Предоставление доступа к календарю или его делегирование
             href: outlook-share-or-delegate-calendar.md
           - name: Получение общих событий
             href: outlook-get-shared-events-calendars.md
@@ -357,6 +357,8 @@ items:
             href: auth-cloudsolutionprovider.md
           - name: Ограничение доступа к почтовому ящику
             href: auth-limit-mailbox-access.md
+          - name: Устранить ошибки авторизации
+            href: resolve-auth-errors.md
       - name: Использование API
         items:
           - name: Обзор
