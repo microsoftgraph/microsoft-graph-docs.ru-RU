@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4f5878c85adc65b5ec2ff0b71d1ceda6e28fb7ca
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: be58f906ae9de82240fc022e293851da44e24510
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082114"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510466"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -74,7 +74,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Только для чтения. Состояние мультимедиа компонентов вызова. |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) или [tokenMeetingInfo](tokenmeetinginfo.md)             | Сведения о собрании, необходимые для присоединения к собранию.                                                                                                            |
 | myParticipantId     | String                                                                                                 | Только для чтения.                                                                                                                                                                        |
-| requestedModalities | Коллекция String                                                                                      | Список запрошенных модальностей. | Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
+| requestedModalities | Коллекция String                                                                                      | Список запрошенных модальностей. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | Сведения о результате. Например, может содержать причину прекращения. Только для чтения.                                                                                                        |
 | source              | [participantInfo](participantinfo.md)                                                                  | Создатель вызова.                                                                                                                                                                         |
 | state               | String                                                                                                 | Состояние вызова. Возможные значения: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Только для чтения.                          |
