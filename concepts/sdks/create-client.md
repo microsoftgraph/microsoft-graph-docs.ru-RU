@@ -10,13 +10,13 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 07/18/2019
 ms.locfileid: "35778735"
 ---
-# <a name="create-a-microsoft-graph-client"></a><span data-ttu-id="40078-104">Создание клиента Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="40078-104">Create a Microsoft Graph client</span></span>
+# <a name="create-a-microsoft-graph-client"></a><span data-ttu-id="2dd94-104">Создание клиента Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="2dd94-104">Create a Microsoft Graph client</span></span>
 
-<span data-ttu-id="40078-105">Клиент Microsoft Graph предназначен для упрощения вызовов Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="40078-105">The Microsoft Graph client is designed to make it simple to make calls to Microsoft Graph.</span></span> <span data-ttu-id="40078-106">Вы можете использовать один экземпляр клиента в течение всего времени существования приложения.</span><span class="sxs-lookup"><span data-stu-id="40078-106">You can use a single client instance for the lifetime of the application.</span></span> <span data-ttu-id="40078-107">Сведения о том, как добавить и установить клиентский пакет Microsoft Graph в свой проект, можно найти в [статье Установка пакета SDK](sdk-installation.md).</span><span class="sxs-lookup"><span data-stu-id="40078-107">For information about how to add and install the Microsoft Graph client package into your project, see  [Install the SDK](sdk-installation.md).</span></span>
+<span data-ttu-id="2dd94-105">Клиент Microsoft Graph предназначен для упрощения вызовов Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="2dd94-105">The Microsoft Graph client is designed to make it simple to make calls to Microsoft Graph.</span></span> <span data-ttu-id="2dd94-106">Вы можете использовать один экземпляр клиента в течение всего времени существования приложения.</span><span class="sxs-lookup"><span data-stu-id="2dd94-106">You can use a single client instance for the lifetime of the application.</span></span> <span data-ttu-id="2dd94-107">Сведения о том, как добавить и установить клиентский пакет Microsoft Graph в свой проект, можно найти в [статье Установка пакета SDK](sdk-installation.md).</span><span class="sxs-lookup"><span data-stu-id="2dd94-107">For information about how to add and install the Microsoft Graph client package into your project, see  [Install the SDK](sdk-installation.md).</span></span>
 
-<span data-ttu-id="40078-108">В приведенных ниже примерах кода показано, как создать экземпляр клиента Microsoft Graph с поставщиком проверки подлинности на поддерживаемых языках.</span><span class="sxs-lookup"><span data-stu-id="40078-108">The following code examples show how to create an instance of a Microsoft Graph client with an authentication provider in the supported languages.</span></span> <span data-ttu-id="40078-109">Поставщик проверки подлинности будет обрабатывать получение маркеров доступа для приложения.</span><span class="sxs-lookup"><span data-stu-id="40078-109">The authentication provider will handle acquiring access tokens for the application.</span></span> <span data-ttu-id="40078-110">Для каждого языка и платформы доступно множество различных поставщиков проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="40078-110">Many different authentication providers are available for each language and platform.</span></span> <span data-ttu-id="40078-111">Различные поставщики приложений поддерживают различные сценарии клиентов.</span><span class="sxs-lookup"><span data-stu-id="40078-111">The different application providers support different client scenarios.</span></span> <span data-ttu-id="40078-112">Для получения дополнительных сведений о поставщиках и параметрах, которые подходят для вашего сценария, ознакомьтесь со статьей [Выбор поставщика проверки](choose-authentication-providers.md)подлинности.</span><span class="sxs-lookup"><span data-stu-id="40078-112">For details about which provider and options are appropriate for your scenario, see [Choose an Authentication Provider](choose-authentication-providers.md).</span></span>
+<span data-ttu-id="2dd94-108">В приведенных ниже примерах кода показано, как создать экземпляр клиента Microsoft Graph с поставщиком проверки подлинности на поддерживаемых языках.</span><span class="sxs-lookup"><span data-stu-id="2dd94-108">The following code examples show how to create an instance of a Microsoft Graph client with an authentication provider in the supported languages.</span></span> <span data-ttu-id="2dd94-109">Поставщик проверки подлинности будет обрабатывать получение маркеров доступа для приложения.</span><span class="sxs-lookup"><span data-stu-id="2dd94-109">The authentication provider will handle acquiring access tokens for the application.</span></span> <span data-ttu-id="2dd94-110">Для каждого языка и платформы доступно множество различных поставщиков проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="2dd94-110">Many different authentication providers are available for each language and platform.</span></span> <span data-ttu-id="2dd94-111">Различные поставщики приложений поддерживают различные сценарии клиентов.</span><span class="sxs-lookup"><span data-stu-id="2dd94-111">The different application providers support different client scenarios.</span></span> <span data-ttu-id="2dd94-112">Для получения дополнительных сведений о поставщиках и параметрах, которые подходят для вашего сценария, ознакомьтесь со статьей [Выбор поставщика проверки подлинности](choose-authentication-providers.md).</span><span class="sxs-lookup"><span data-stu-id="2dd94-112">For details about which provider and options are appropriate for your scenario, see [Choose an Authentication Provider](choose-authentication-providers.md).</span></span>
 
-# <a name="ctabcs"></a>[<span data-ttu-id="40078-113">C#</span><span class="sxs-lookup"><span data-stu-id="40078-113">C#</span></span>](#tab/CS)
+# <a name="c"></a>[<span data-ttu-id="2dd94-113">C#</span><span class="sxs-lookup"><span data-stu-id="2dd94-113">C#</span></span>](#tab/CS)
 
 ```csharp
 // Build a client application.
@@ -29,7 +29,7 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 ```
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="40078-114">Javascript</span><span class="sxs-lookup"><span data-stu-id="40078-114">Javascript</span></span>](#tab/Javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2dd94-114">Javascript</span><span class="sxs-lookup"><span data-stu-id="2dd94-114">Javascript</span></span>](#tab/Javascript)
 
 ```javascript
 const clientId = "INSERT-CLIENT-APP-ID"; // Client Id of the registered application
@@ -45,7 +45,7 @@ const userAgentApplication = new UserAgentApplication(clientId, undefined, callb
 const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
 ```
 
-# <a name="javatabjava"></a>[<span data-ttu-id="40078-115">Java</span><span class="sxs-lookup"><span data-stu-id="40078-115">Java</span></span>](#tab/Java)
+# <a name="java"></a>[<span data-ttu-id="2dd94-115">Java</span><span class="sxs-lookup"><span data-stu-id="2dd94-115">Java</span></span>](#tab/Java)
 
 ```java
 ClientCredentialProvider authProvider = new ClientCredentialProvider(CLIENT_ID, SCOPES, CLIENT_SECRET, TENANT_GUID, NATIONAL_CLOUD);
@@ -56,7 +56,7 @@ IGraphServiceClient graphClient = GraphServiceClient
                 .buildClient();
 ```
 
-# <a name="androidtabandroid"></a>[<span data-ttu-id="40078-116">Android</span><span class="sxs-lookup"><span data-stu-id="40078-116">Android</span></span>](#tab/Android)
+# <a name="android"></a>[<span data-ttu-id="2dd94-116">Android</span><span class="sxs-lookup"><span data-stu-id="2dd94-116">Android</span></span>](#tab/Android)
 
 ```java
 PublicClientApplication publicClientApplication = new PublicClientApplication(getApplicationContext(), "INSERT-CLIENT-APP-ID");
@@ -73,7 +73,7 @@ IGraphServiceClient graphClient = GraphServiceClient
                 .buildClient();
 ```
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="40078-117">Цель — C</span><span class="sxs-lookup"><span data-stu-id="40078-117">Objective-C</span></span>](#tab/Objective-C)
+# <a name="objective-c"></a>[<span data-ttu-id="2dd94-117">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2dd94-117">Objective-C</span></span>](#tab/Objective-C)
 
 ```objc
 // Create the authenticationProvider.
@@ -99,7 +99,7 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 [meDataTask execute];
 ```
 
-# <a name="phptabphp"></a>[<span data-ttu-id="40078-118">PHP</span><span class="sxs-lookup"><span data-stu-id="40078-118">PHP</span></span>](#tab/PHP)
+# <a name="php"></a>[<span data-ttu-id="2dd94-118">PHP</span><span class="sxs-lookup"><span data-stu-id="2dd94-118">PHP</span></span>](#tab/PHP)
 
 ```php
 // PHP client currently doesn't have an authentication provider. You will need to handle

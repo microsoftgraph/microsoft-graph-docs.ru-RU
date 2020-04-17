@@ -10,29 +10,29 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/04/2020
 ms.locfileid: "43144312"
 ---
-# <a name="login-component-in-the-microsoft-graph-toolkit"></a><span data-ttu-id="cd18a-103">Компонент входа в набор средств Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="cd18a-103">Login component in the Microsoft Graph Toolkit</span></span>
+# <a name="login-component-in-the-microsoft-graph-toolkit"></a><span data-ttu-id="1cc82-103">Компонент входа в набор средств Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="1cc82-103">Login component in the Microsoft Graph Toolkit</span></span>
 
-<span data-ttu-id="cd18a-104">Компонент входа — это кнопка и всплывающий элемент управления для упрощения проверки подлинности на платформе Microsoft Identity.</span><span class="sxs-lookup"><span data-stu-id="cd18a-104">A Login component is a button and flyout control to facilitate Microsoft identity platform authentication.</span></span> <span data-ttu-id="cd18a-105">Он предоставляет два состояния:</span><span class="sxs-lookup"><span data-stu-id="cd18a-105">It provides two states:</span></span>
-* <span data-ttu-id="cd18a-106">Если пользователь не вошел в систему, элемент управления является простой кнопкой для запуска процесса входа.</span><span class="sxs-lookup"><span data-stu-id="cd18a-106">When user is not signed in, the control is a simple button to initiate the sign in process.</span></span>
-* <span data-ttu-id="cd18a-107">Когда пользователь вошел в систему, элемент управления отображает имя пользователя, изображение профиля и адрес электронной почты, которые вошли в систему.</span><span class="sxs-lookup"><span data-stu-id="cd18a-107">When user is signed in, the control displays the current signed in user name, profile image, and email.</span></span> <span data-ttu-id="cd18a-108">При нажатии открывается раскрывающееся меню с командой для выхода.</span><span class="sxs-lookup"><span data-stu-id="cd18a-108">When clicked, a flyout is opened with a command to sign out.</span></span>
+<span data-ttu-id="1cc82-104">Компонент входа — это кнопка и всплывающий элемент управления для упрощения проверки подлинности на платформе Microsoft Identity.</span><span class="sxs-lookup"><span data-stu-id="1cc82-104">A Login component is a button and flyout control to facilitate Microsoft identity platform authentication.</span></span> <span data-ttu-id="1cc82-105">Он предоставляет два состояния:</span><span class="sxs-lookup"><span data-stu-id="1cc82-105">It provides two states:</span></span>
+* <span data-ttu-id="1cc82-106">Если пользователь не вошел в систему, элемент управления является простой кнопкой для запуска процесса входа.</span><span class="sxs-lookup"><span data-stu-id="1cc82-106">When user is not signed in, the control is a simple button to initiate the sign in process.</span></span>
+* <span data-ttu-id="1cc82-107">Когда пользователь вошел в систему, элемент управления отображает имя пользователя, изображение профиля и адрес электронной почты, которые вошли в систему.</span><span class="sxs-lookup"><span data-stu-id="1cc82-107">When user is signed in, the control displays the current signed in user name, profile image, and email.</span></span> <span data-ttu-id="1cc82-108">При нажатии открывается раскрывающееся меню с командой для выхода.</span><span class="sxs-lookup"><span data-stu-id="1cc82-108">When clicked, a flyout is opened with a command to sign out.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cd18a-109">Пример</span><span class="sxs-lookup"><span data-stu-id="cd18a-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1cc82-109">Пример</span><span class="sxs-lookup"><span data-stu-id="1cc82-109">Example</span></span>
 
-<span data-ttu-id="cd18a-110">В следующем примере показан `mgt-login` компонент с пользователь, вошедшего в систему.</span><span class="sxs-lookup"><span data-stu-id="cd18a-110">The following example shows the `mgt-login` component with a signed-in user.</span></span> 
+<span data-ttu-id="1cc82-110">В следующем примере показан `mgt-login` компонент с пользователь, вошедшего в систему.</span><span class="sxs-lookup"><span data-stu-id="1cc82-110">The following example shows the `mgt-login` component with a signed-in user.</span></span> 
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-login--login&source=docs" height="350"></iframe>
 
-[<span data-ttu-id="cd18a-111">Откройте этот пример в меню упр. dev.</span><span class="sxs-lookup"><span data-stu-id="cd18a-111">Open this example in mgt.dev</span></span>](https://mgt.dev/?path=/story/components-mgt-login--login&source=docs)
+[<span data-ttu-id="1cc82-111">Откройте этот пример в меню упр. dev.</span><span class="sxs-lookup"><span data-stu-id="1cc82-111">Open this example in mgt.dev</span></span>](https://mgt.dev/?path=/story/components-mgt-login--login&source=docs)
 
-## <a name="using-the-control-without-an-authentication-provider"></a><span data-ttu-id="cd18a-112">Использование элемента управления без поставщика проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="cd18a-112">Using the control without an authentication provider</span></span>
+## <a name="using-the-control-without-an-authentication-provider"></a><span data-ttu-id="1cc82-112">Использование элемента управления без поставщика проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="1cc82-112">Using the control without an authentication provider</span></span>
 
-<span data-ttu-id="cd18a-113">Компонент работает с поставщиком и Microsoft Graph из этого ящика.</span><span class="sxs-lookup"><span data-stu-id="cd18a-113">The component works with a provider and Microsoft Graph out of the box.</span></span> <span data-ttu-id="cd18a-114">Тем не менее, если вы хотите предоставить собственную логику и проверку подлинности, `userDetails` вы можете использовать свойство, чтобы задать сведения о пользователе, выполнившего вход в систему.</span><span class="sxs-lookup"><span data-stu-id="cd18a-114">However, if you want to provide your own logic and authentication, you can use the `userDetails` property to set the signed in user's details.</span></span> 
+<span data-ttu-id="1cc82-113">Компонент работает с поставщиком и Microsoft Graph из этого ящика.</span><span class="sxs-lookup"><span data-stu-id="1cc82-113">The component works with a provider and Microsoft Graph out of the box.</span></span> <span data-ttu-id="1cc82-114">Тем не менее, если вы хотите предоставить собственную логику и проверку подлинности, `userDetails` вы можете использовать свойство, чтобы задать сведения о пользователе, выполнившего вход в систему.</span><span class="sxs-lookup"><span data-stu-id="1cc82-114">However, if you want to provide your own logic and authentication, you can use the `userDetails` property to set the signed in user's details.</span></span> 
 
-| <span data-ttu-id="cd18a-115">Атрибут</span><span class="sxs-lookup"><span data-stu-id="cd18a-115">Attribute</span></span> | <span data-ttu-id="cd18a-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="cd18a-116">Property</span></span> | <span data-ttu-id="cd18a-117">Описание</span><span class="sxs-lookup"><span data-stu-id="cd18a-117">Description</span></span> |
+| <span data-ttu-id="1cc82-115">Атрибут</span><span class="sxs-lookup"><span data-stu-id="1cc82-115">Attribute</span></span> | <span data-ttu-id="1cc82-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="1cc82-116">Property</span></span> | <span data-ttu-id="1cc82-117">Описание</span><span class="sxs-lookup"><span data-stu-id="1cc82-117">Description</span></span> |
 | --- | --- | -- |
-| <span data-ttu-id="cd18a-118">пользователь — сведения</span><span class="sxs-lookup"><span data-stu-id="cd18a-118">user-details</span></span> | <span data-ttu-id="cd18a-119">усердетаилс</span><span class="sxs-lookup"><span data-stu-id="cd18a-119">userDetails</span></span> | <span data-ttu-id="cd18a-120">Задайте объект пользователя, который будет отображаться в элементе управления.</span><span class="sxs-lookup"><span data-stu-id="cd18a-120">Set the user object that will be displayed on the control.</span></span> |
+| <span data-ttu-id="1cc82-118">пользователь — сведения</span><span class="sxs-lookup"><span data-stu-id="1cc82-118">user-details</span></span> | <span data-ttu-id="1cc82-119">усердетаилс</span><span class="sxs-lookup"><span data-stu-id="1cc82-119">userDetails</span></span> | <span data-ttu-id="1cc82-120">Задайте объект пользователя, который будет отображаться в элементе управления.</span><span class="sxs-lookup"><span data-stu-id="1cc82-120">Set the user object that will be displayed on the control.</span></span> |
 
-<span data-ttu-id="cd18a-121">В приведенном ниже примере задаются сведения о лице.</span><span class="sxs-lookup"><span data-stu-id="cd18a-121">The following example sets the person details.</span></span>
+<span data-ttu-id="1cc82-121">В приведенном ниже примере задаются сведения о лице.</span><span class="sxs-lookup"><span data-stu-id="1cc82-121">The following example sets the person details.</span></span>
 
 ```js
 let loginControl = document.getElementById('myLoginControl');
@@ -43,13 +43,13 @@ loginControl.userDetails = {
 }
 ```
 
-<span data-ttu-id="cd18a-122">Для `userDetails` `null` параметра значение будет указано состояние "выход выполнен".</span><span class="sxs-lookup"><span data-stu-id="cd18a-122">Setting `userDetails` to `null` will go to the signed out state.</span></span>
+<span data-ttu-id="1cc82-122">Для `userDetails` `null` параметра значение будет указано состояние "выход выполнен".</span><span class="sxs-lookup"><span data-stu-id="1cc82-122">Setting `userDetails` to `null` will go to the signed out state.</span></span>
 
-<span data-ttu-id="cd18a-123">Используйте события `loginInitiated` и `logoutInitiated` для обработки входа и выхода из нее.</span><span class="sxs-lookup"><span data-stu-id="cd18a-123">Use the `loginInitiated` and `logoutInitiated` events to handle signing in and out.</span></span> 
+<span data-ttu-id="1cc82-123">Используйте события `loginInitiated` и `logoutInitiated` для обработки входа и выхода из нее.</span><span class="sxs-lookup"><span data-stu-id="1cc82-123">Use the `loginInitiated` and `logoutInitiated` events to handle signing in and out.</span></span> 
 
-## <a name="css-custom-properties"></a><span data-ttu-id="cd18a-124">Настраиваемые свойства CSS</span><span class="sxs-lookup"><span data-stu-id="cd18a-124">CSS custom properties</span></span>
+## <a name="css-custom-properties"></a><span data-ttu-id="1cc82-124">Настраиваемые свойства CSS</span><span class="sxs-lookup"><span data-stu-id="1cc82-124">CSS custom properties</span></span>
 
-<span data-ttu-id="cd18a-125">`mgt-login` Компонент определяет следующие НАСТРАИВАЕМЫЕ свойства CSS.</span><span class="sxs-lookup"><span data-stu-id="cd18a-125">The `mgt-login` component defines the following CSS custom properties.</span></span>
+<span data-ttu-id="1cc82-125">`mgt-login` Компонент определяет следующие НАСТРАИВАЕМЫЕ свойства CSS.</span><span class="sxs-lookup"><span data-stu-id="1cc82-125">The `mgt-login` component defines the following CSS custom properties.</span></span>
 
 ```css
 mgt-login {
@@ -68,47 +68,47 @@ mgt-login {
 }
 ```
 
-<span data-ttu-id="cd18a-126">Чтобы узнать больше, ознакомьтесь с разделами [стилизация компонентов](../style.md).</span><span class="sxs-lookup"><span data-stu-id="cd18a-126">To learn more, see [styling components](../style.md).</span></span>
+<span data-ttu-id="1cc82-126">Чтобы узнать больше, ознакомьтесь с разделами [стилизация компонентов](../style.md).</span><span class="sxs-lookup"><span data-stu-id="1cc82-126">To learn more, see [styling components](../style.md).</span></span>
 
-## <a name="events"></a><span data-ttu-id="cd18a-127">Мероприятия</span><span class="sxs-lookup"><span data-stu-id="cd18a-127">Events</span></span>
+## <a name="events"></a><span data-ttu-id="1cc82-127">События</span><span class="sxs-lookup"><span data-stu-id="1cc82-127">Events</span></span>
 
-<span data-ttu-id="cd18a-128">Из элемента управления запускаются следующие события.</span><span class="sxs-lookup"><span data-stu-id="cd18a-128">The following events are fired from the control.</span></span>
+<span data-ttu-id="1cc82-128">Из элемента управления запускаются следующие события.</span><span class="sxs-lookup"><span data-stu-id="1cc82-128">The following events are fired from the control.</span></span>
 
-| <span data-ttu-id="cd18a-129">Событие</span><span class="sxs-lookup"><span data-stu-id="cd18a-129">Event</span></span> | <span data-ttu-id="cd18a-130">Описание</span><span class="sxs-lookup"><span data-stu-id="cd18a-130">Description</span></span> |
+| <span data-ttu-id="1cc82-129">Событие</span><span class="sxs-lookup"><span data-stu-id="1cc82-129">Event</span></span> | <span data-ttu-id="1cc82-130">Описание</span><span class="sxs-lookup"><span data-stu-id="1cc82-130">Description</span></span> |
 | --- | --- |
-| `loginInitiated` | <span data-ttu-id="cd18a-131">Пользователь нажимает кнопку входа, чтобы запустить процесс входа в систему с отменой входа.</span><span class="sxs-lookup"><span data-stu-id="cd18a-131">The user clicked the sign in button to start the login process - cancelable.</span></span>|
-| `loginCompleted` | <span data-ttu-id="cd18a-132">процесс входа выполнен успешно, и пользователь вошел в систему.</span><span class="sxs-lookup"><span data-stu-id="cd18a-132">the login process was successful and the user is now signed in.</span></span> |
-| `loginFailed` | <span data-ttu-id="cd18a-133">Пользователь отменил процесс входа или не смог выполнить вход.</span><span class="sxs-lookup"><span data-stu-id="cd18a-133">The user canceled the login process or was unable to sign in.</span></span>|
-| `logoutInitiated` | <span data-ttu-id="cd18a-134">Пользователь начал выход из системы и отменяется.</span><span class="sxs-lookup"><span data-stu-id="cd18a-134">The user started to logout - cancelable.</span></span> |
-| `logoutCompleted` | <span data-ttu-id="cd18a-135">Пользователь вышел.</span><span class="sxs-lookup"><span data-stu-id="cd18a-135">The user signed out.</span></span> |
+| `loginInitiated` | <span data-ttu-id="1cc82-131">Пользователь нажимает кнопку входа, чтобы запустить процесс входа в систему с отменой входа.</span><span class="sxs-lookup"><span data-stu-id="1cc82-131">The user clicked the sign in button to start the login process - cancelable.</span></span>|
+| `loginCompleted` | <span data-ttu-id="1cc82-132">процесс входа выполнен успешно, и пользователь вошел в систему.</span><span class="sxs-lookup"><span data-stu-id="1cc82-132">the login process was successful and the user is now signed in.</span></span> |
+| `loginFailed` | <span data-ttu-id="1cc82-133">Пользователь отменил процесс входа или не смог выполнить вход.</span><span class="sxs-lookup"><span data-stu-id="1cc82-133">The user canceled the login process or was unable to sign in.</span></span>|
+| `logoutInitiated` | <span data-ttu-id="1cc82-134">Пользователь начал выход из системы и отменяется.</span><span class="sxs-lookup"><span data-stu-id="1cc82-134">The user started to logout - cancelable.</span></span> |
+| `logoutCompleted` | <span data-ttu-id="1cc82-135">Пользователь вышел.</span><span class="sxs-lookup"><span data-stu-id="1cc82-135">The user signed out.</span></span> |
 
-## <a name="microsoft-graph-permissions"></a><span data-ttu-id="cd18a-136">Разрешения Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="cd18a-136">Microsoft Graph permissions</span></span>
+## <a name="microsoft-graph-permissions"></a><span data-ttu-id="1cc82-136">Разрешения Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="1cc82-136">Microsoft Graph permissions</span></span>
 
-<span data-ttu-id="cd18a-137">Этот компонент использует [компонент Person](./person.md) для отображения пользователя и наследования всех разрешений.</span><span class="sxs-lookup"><span data-stu-id="cd18a-137">This component uses the [Person component](./person.md) to display the user and inherits all permissions.</span></span> 
+<span data-ttu-id="1cc82-137">Этот компонент использует [компонент Person](./person.md) для отображения пользователя и наследования всех разрешений.</span><span class="sxs-lookup"><span data-stu-id="1cc82-137">This component uses the [Person component](./person.md) to display the user and inherits all permissions.</span></span> 
 
-## <a name="authentication"></a><span data-ttu-id="cd18a-138">Проверка подлинности</span><span class="sxs-lookup"><span data-stu-id="cd18a-138">Authentication</span></span>
+## <a name="authentication"></a><span data-ttu-id="1cc82-138">Проверка подлинности</span><span class="sxs-lookup"><span data-stu-id="1cc82-138">Authentication</span></span>
 
-<span data-ttu-id="cd18a-139">Элемент управления входом использует глобальный поставщик проверки подлинности, описанный в [документации по проверке подлинности](./../providers.md).</span><span class="sxs-lookup"><span data-stu-id="cd18a-139">The login control uses the global authentication provider described in the [authentication documentation](./../providers.md).</span></span> 
+<span data-ttu-id="1cc82-139">Элемент управления входом использует глобальный поставщик проверки подлинности, описанный в [документации по проверке подлинности](./../providers.md).</span><span class="sxs-lookup"><span data-stu-id="1cc82-139">The login control uses the global authentication provider described in the [authentication documentation](./../providers.md).</span></span> 
 
-## <a name="extend-for-more-control"></a><span data-ttu-id="cd18a-140">Расширение для дополнительных элементов управления</span><span class="sxs-lookup"><span data-stu-id="cd18a-140">Extend for more control</span></span>
+## <a name="extend-for-more-control"></a><span data-ttu-id="1cc82-140">Расширение для дополнительных элементов управления</span><span class="sxs-lookup"><span data-stu-id="1cc82-140">Extend for more control</span></span>
 
-<span data-ttu-id="cd18a-141">Для более сложных сценариев или для действительно настраиваемого пользовательского интерфейса этот компонент предоставляет `protected render*` несколько способов переопределения в расширениях компонентов.</span><span class="sxs-lookup"><span data-stu-id="cd18a-141">For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.</span></span>
+<span data-ttu-id="1cc82-141">Для более сложных сценариев или для действительно настраиваемого пользовательского интерфейса этот компонент предоставляет `protected render*` несколько способов переопределения в расширениях компонентов.</span><span class="sxs-lookup"><span data-stu-id="1cc82-141">For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.</span></span>
 
-| <span data-ttu-id="cd18a-142">Метод</span><span class="sxs-lookup"><span data-stu-id="cd18a-142">Method</span></span> | <span data-ttu-id="cd18a-143">Описание</span><span class="sxs-lookup"><span data-stu-id="cd18a-143">Description</span></span> |
+| <span data-ttu-id="1cc82-142">Метод</span><span class="sxs-lookup"><span data-stu-id="1cc82-142">Method</span></span> | <span data-ttu-id="1cc82-143">Описание</span><span class="sxs-lookup"><span data-stu-id="1cc82-143">Description</span></span> |
 | - | - |
-| <span data-ttu-id="cd18a-144">рендербуттон</span><span class="sxs-lookup"><span data-stu-id="cd18a-144">renderButton</span></span> | <span data-ttu-id="cd18a-145">Отрисовывает хром кнопки.</span><span class="sxs-lookup"><span data-stu-id="cd18a-145">Renders the button chrome.</span></span> |
-| <span data-ttu-id="cd18a-146">рендербуттонконтент</span><span class="sxs-lookup"><span data-stu-id="cd18a-146">renderButtonContent</span></span> | <span data-ttu-id="cd18a-147">Отрисовывает содержимое кнопки.</span><span class="sxs-lookup"><span data-stu-id="cd18a-147">Renders the button content.</span></span> |
-| <span data-ttu-id="cd18a-148">рендерфлйоут</span><span class="sxs-lookup"><span data-stu-id="cd18a-148">renderFlyout</span></span> | <span data-ttu-id="cd18a-149">Отрисовывает всплывающий хром.</span><span class="sxs-lookup"><span data-stu-id="cd18a-149">Renders the flyout chrome.</span></span> |
-| <span data-ttu-id="cd18a-150">рендерфлйоутконтент</span><span class="sxs-lookup"><span data-stu-id="cd18a-150">renderFlyoutContent</span></span> | <span data-ttu-id="cd18a-151">Отрисовывает содержимое всплывающего меню.</span><span class="sxs-lookup"><span data-stu-id="cd18a-151">Renders the flyout content.</span></span> |
+| <span data-ttu-id="1cc82-144">рендербуттон</span><span class="sxs-lookup"><span data-stu-id="1cc82-144">renderButton</span></span> | <span data-ttu-id="1cc82-145">Отрисовывает хром кнопки.</span><span class="sxs-lookup"><span data-stu-id="1cc82-145">Renders the button chrome.</span></span> |
+| <span data-ttu-id="1cc82-146">рендербуттонконтент</span><span class="sxs-lookup"><span data-stu-id="1cc82-146">renderButtonContent</span></span> | <span data-ttu-id="1cc82-147">Отрисовывает содержимое кнопки.</span><span class="sxs-lookup"><span data-stu-id="1cc82-147">Renders the button content.</span></span> |
+| <span data-ttu-id="1cc82-148">рендерфлйоут</span><span class="sxs-lookup"><span data-stu-id="1cc82-148">renderFlyout</span></span> | <span data-ttu-id="1cc82-149">Отрисовывает всплывающий хром.</span><span class="sxs-lookup"><span data-stu-id="1cc82-149">Renders the flyout chrome.</span></span> |
+| <span data-ttu-id="1cc82-150">рендерфлйоутконтент</span><span class="sxs-lookup"><span data-stu-id="1cc82-150">renderFlyoutContent</span></span> | <span data-ttu-id="1cc82-151">Отрисовывает содержимое всплывающего меню.</span><span class="sxs-lookup"><span data-stu-id="1cc82-151">Renders the flyout content.</span></span> |
 
-### <a name="bring-your-own-flyout"></a><span data-ttu-id="cd18a-152">Перенесите собственное всплывающее окно</span><span class="sxs-lookup"><span data-stu-id="cd18a-152">Bring your own flyout</span></span>
+### <a name="bring-your-own-flyout"></a><span data-ttu-id="1cc82-152">Перенесите собственное всплывающее окно</span><span class="sxs-lookup"><span data-stu-id="1cc82-152">Bring your own flyout</span></span>
 
-<span data-ttu-id="cd18a-153">Можно использовать собственный компонент всплывающего окна вместо встроенного, переопределив `renderFlyout()` метод и указав новое всплывающее окно.</span><span class="sxs-lookup"><span data-stu-id="cd18a-153">It is possible to use your own flyout component in place of the built-in one, by overriding the `renderFlyout()` method and providing the new flyout.</span></span>
+<span data-ttu-id="1cc82-153">Можно использовать собственный компонент всплывающего окна вместо встроенного, переопределив `renderFlyout()` метод и указав новое всплывающее окно.</span><span class="sxs-lookup"><span data-stu-id="1cc82-153">It is possible to use your own flyout component in place of the built-in one, by overriding the `renderFlyout()` method and providing the new flyout.</span></span>
 
-<span data-ttu-id="cd18a-154">В этом случае убедитесь, что компонент входа продолжает работать должным образом, переопределяя методы `protected` всплывающего отображения, чтобы обновить видимость альтернативного всплывающего меню.</span><span class="sxs-lookup"><span data-stu-id="cd18a-154">In this case, ensure the login component continues to work as expected by overriding the `protected` flyout display methods to update the visibility of your alternative flyout.</span></span>
+<span data-ttu-id="1cc82-154">В этом случае убедитесь, что компонент входа продолжает работать должным образом, переопределяя методы `protected` всплывающего отображения, чтобы обновить видимость альтернативного всплывающего меню.</span><span class="sxs-lookup"><span data-stu-id="1cc82-154">In this case, ensure the login component continues to work as expected by overriding the `protected` flyout display methods to update the visibility of your alternative flyout.</span></span>
 
-| <span data-ttu-id="cd18a-155">Метод</span><span class="sxs-lookup"><span data-stu-id="cd18a-155">Method</span></span> | <span data-ttu-id="cd18a-156">Описание</span><span class="sxs-lookup"><span data-stu-id="cd18a-156">Description</span></span> |
+| <span data-ttu-id="1cc82-155">Метод</span><span class="sxs-lookup"><span data-stu-id="1cc82-155">Method</span></span> | <span data-ttu-id="1cc82-156">Описание</span><span class="sxs-lookup"><span data-stu-id="1cc82-156">Description</span></span> |
 | - | - |
-| <span data-ttu-id="cd18a-157">хидефлйоут</span><span class="sxs-lookup"><span data-stu-id="cd18a-157">hideFlyout</span></span> | <span data-ttu-id="cd18a-158">Закрывает всплывающее окно.</span><span class="sxs-lookup"><span data-stu-id="cd18a-158">Dismisses the flyout.</span></span> |
-| <span data-ttu-id="cd18a-159">шовфлйоут</span><span class="sxs-lookup"><span data-stu-id="cd18a-159">showFlyout</span></span> | <span data-ttu-id="cd18a-160">Отображает всплывающее меню.</span><span class="sxs-lookup"><span data-stu-id="cd18a-160">Displays the flyout.</span></span> |
-| <span data-ttu-id="cd18a-161">тогглефлйоут</span><span class="sxs-lookup"><span data-stu-id="cd18a-161">toggleFlyout</span></span> | <span data-ttu-id="cd18a-162">Переключает состояние всплывающего меню.</span><span class="sxs-lookup"><span data-stu-id="cd18a-162">Toggles the state of the flyout.</span></span> |
+| <span data-ttu-id="1cc82-157">хидефлйоут</span><span class="sxs-lookup"><span data-stu-id="1cc82-157">hideFlyout</span></span> | <span data-ttu-id="1cc82-158">Закрывает всплывающее окно.</span><span class="sxs-lookup"><span data-stu-id="1cc82-158">Dismisses the flyout.</span></span> |
+| <span data-ttu-id="1cc82-159">шовфлйоут</span><span class="sxs-lookup"><span data-stu-id="1cc82-159">showFlyout</span></span> | <span data-ttu-id="1cc82-160">Отображает всплывающее меню.</span><span class="sxs-lookup"><span data-stu-id="1cc82-160">Displays the flyout.</span></span> |
+| <span data-ttu-id="1cc82-161">тогглефлйоут</span><span class="sxs-lookup"><span data-stu-id="1cc82-161">toggleFlyout</span></span> | <span data-ttu-id="1cc82-162">Переключает состояние всплывающего меню.</span><span class="sxs-lookup"><span data-stu-id="1cc82-162">Toggles the state of the flyout.</span></span> |

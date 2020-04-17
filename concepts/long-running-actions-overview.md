@@ -31,7 +31,7 @@ ms.locfileid: "41635091"
 <span data-ttu-id="c368f-116">На выполнение этого запроса, вероятно, потребуется несколько секунд, так как необходимо передать большой объем данных.</span><span class="sxs-lookup"><span data-stu-id="c368f-116">This request will likely take several seconds to complete since the amount of data is large.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c368f-117">HTTP</span><span class="sxs-lookup"><span data-stu-id="c368f-117">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c368f-117">HTTP</span><span class="sxs-lookup"><span data-stu-id="c368f-117">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "lro-copy-item-example", "scopes": "files.readwrite" } -->
 
 ```http
@@ -45,15 +45,15 @@ Content-Type: application/json
   "name": "Copy of LargeFolder1"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c368f-118">C#</span><span class="sxs-lookup"><span data-stu-id="c368f-118">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c368f-118">C#</span><span class="sxs-lookup"><span data-stu-id="c368f-118">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lro-copy-item-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c368f-119">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c368f-119">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c368f-119">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c368f-119">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c368f-120">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c368f-120">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c368f-120">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c368f-120">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -132,7 +132,7 @@ Content-type: application/json
 <span data-ttu-id="c368f-137">Вы можете обратиться к этому новому элементу с использованием идентификатора ресурса, например:</span><span class="sxs-lookup"><span data-stu-id="c368f-137">You can address this new item using the resourceId, for example:</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c368f-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="c368f-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c368f-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="c368f-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lro-copy-item-example-complete",
@@ -142,15 +142,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c368f-139">C#</span><span class="sxs-lookup"><span data-stu-id="c368f-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c368f-139">C#</span><span class="sxs-lookup"><span data-stu-id="c368f-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lro-copy-item-example-complete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c368f-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c368f-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c368f-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c368f-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-complete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c368f-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c368f-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c368f-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c368f-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-complete-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
