@@ -1,5 +1,5 @@
 ---
-title: Поставщик прокси-сервера
+title: Поставщик прокси
 description: Поставщик прокси-сервера позволяет использовать собственную проверку подлинности на стороне сервера с помощью набора средств Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
@@ -10,7 +10,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 12/10/2019
 ms.locfileid: "39955773"
 ---
-# <a name="proxy-provider"></a>Поставщик прокси-сервера
+# <a name="proxy-provider"></a>Поставщик прокси
 
 При использовании поставщика прокси-сервера вы можете использовать внутреннюю проверку подлинности (например, auth 2.0 on-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of-of
 

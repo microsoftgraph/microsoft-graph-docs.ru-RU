@@ -13,7 +13,7 @@ ms.locfileid: "33630211"
 ---
 # <a name="request-differences-between-azure-ad-graph-and-microsoft-graph"></a>Запрос различий между Azure AD Graph и Microsoft Graph
 
-Эта статья входит в *Шаг 1: ознакомьтесь* с различиями в API [процесса переноса приложений](migrate-azure-ad-graph-planning-checklist.md).
+Эта статья входит в *Шаг 1: Ознакомьтесь с различиями* в API [процесса переноса приложений](migrate-azure-ad-graph-planning-checklist.md).
 
 Microsoft Graph и API Graph для Azure AD — это интерфейсы API REST и каждая из них поддерживает соглашения ODATA для параметров запроса. Тем не менее синтаксис различается для этих двух интерфейсов API.
 
@@ -32,7 +32,7 @@ Microsoft Graph и API Graph для Azure AD — это интерфейсы API
 |-&nbsp;Американский&nbsp;gov&nbsp;на&nbsp;уровне 5 (DoD)|`https://graph.microsoftazure.us`|`https://dod-graph.microsoft.us`|
 |-&nbsp;Германия|`https://graph.cloudapi.de`|`https://graph.microsoft.de`|
 |-&nbsp;Китай&nbsp;(21vianet)| `https://graph.chinacloudapi.cn`|`https://microsoftgraph.chinacloudapi.cn`|
-|{тенант_ид}|Укажите идентификатор клиента в запросе.|Необязательно указывать идентификатор клиента в запросе, так как он выводится из маркера доступа.<br><br>Если указать идентификатор клиента, он поместится между параметром `{version}` и `{resource}` в URL-адресе запроса.|
+|{tenant_id}|Укажите идентификатор клиента в запросе.|Необязательно указывать идентификатор клиента в запросе, так как он выводится из маркера доступа.<br><br>Если указать идентификатор клиента, он поместится между параметром `{version}` и `{resource}` в URL-адресе запроса.|
 |Отслеживание|Укажите в запросе окончательную версию Azure AD Graph, используя обязательный параметр запроса.|Укажите версию Microsoft Graph в запросе в качестве части URL-пути сразу после конечной точки службы.|
 
 Вы можете продолжать использовать одни и те же параметры запроса в Microsoft Graph как Azure AD Graph.
@@ -99,7 +99,7 @@ https://graph.microsoft.com/v1.0/me/?$select=displayName,streetAddress,city,stat
 
 - Свойства по умолчанию для пользователя, обратитесь к разделу [Пользователи](/graph/api/resources/users?view=graph-rest-1.0)
 - `$select` Параметр и другие поддерживаемые параметры запроса ODATA в разделе [Использование параметров запроса для настройки ответов](/graph/query-parameters).
-- Эта и другие Рекомендуемые оптимизации приведены в разделе [](/graph/best-practices-concept)рекомендации.
+- Эта и другие Рекомендуемые [оптимизации приведены в разделе рекомендации.](/graph/best-practices-concept)
 
 ## <a name="relationships-and-navigation-properties"></a>Отношения и свойства навигации
 
@@ -111,12 +111,12 @@ https://graph.microsoft.com/v1.0/me/?$select=displayName,streetAddress,city,stat
 
 В следующей таблице приведено несколько примеров.
 
-| Задачи | Azure AD Graph | Microsoft Graph |
+| Задача | Azure AD Graph | Microsoft Graph |
 |------|----------------|-----------------|
-| Добавление члена        | ```POST /groups/{id}/$link/members```        | ```POST /groups/{id}/members/$ref```        |
+| Добавление участника        | ```POST /groups/{id}/$link/members```        | ```POST /groups/{id}/members/$ref```        |
 | Ссылки на элементы списка | ```GET /groups/{id}/$link/members```         | ```GET /groups/{id}/members/$ref```         |
-| Список элементов      | ```GET /groups/{id}/members```                | ```GET /groups/{id}/members```               |
-| Удаление члена     | ```DELETE /groups/{id}/$link/members/{id}``` | ```DELETE /groups/{id}/members/{id}/$ref``` |
+| Список участников      | ```GET /groups/{id}/members```                | ```GET /groups/{id}/members```               |
+| Удаление участника     | ```DELETE /groups/{id}/$link/members/{id}``` | ```DELETE /groups/{id}/members/{id}/$ref``` |
 
 При переносе приложений в Microsoft Graph ищите запросы, которые используются `$link` для связи ресурсов; Измените их, чтобы `$ref` использовать вместо них.
 

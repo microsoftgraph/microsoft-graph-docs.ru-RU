@@ -35,11 +35,11 @@ ms.locfileid: "40868536"
 | | Интерактивны | Делегированный потребитель/org | [Интерактивный поставщик](#InteractiveProvider) |
 
 
-## <a name="a-nameauthcodeproviderauthorization-code-provider"></a><a name="AuthCodeProvider"/>Поставщик кода авторизации
+## <a name="authorization-code-provider"></a><a name="AuthCodeProvider"/>Поставщик кода авторизации
 
 Потоки кода авторизации позволяют встроенным и веб-приложениям безопасно получать маркеры в имени пользователя. Для получения дополнительных сведений см [код кода авторизации платформы Microsoft Identity и OAuth 2,0](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
@@ -51,11 +51,11 @@ IConfidentialClientApplication confidentialClientApplication = ConfidentialClien
 AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(confidentialClientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 В настоящее время код авторизации, учетные данные клиента и потоки OAuth "от имени" требуют реализации настраиваемого поставщика проверки подлинности. Дополнительные сведения см. в разделе [Использование настраиваемого поставщика проверки подлинности](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md).
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 ```java
 AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(
@@ -66,29 +66,29 @@ AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(
                                                     clientSecret);
 ```
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Неприменимо.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Неприменимо.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Пока недоступно. Поддержка или открытие [запроса функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) , если это важно.
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 
 ---
 
-##  <a name="a-nameclientcredentialsproviderclient-credentials-provider"></a><a name="ClientCredentialsProvider"/>Поставщик учетных данных клиента
+##  <a name="client-credentials-provider"></a><a name="ClientCredentialsProvider"/>Поставщик учетных данных клиента
 
 Поток учетных данных клиента позволяет приложениям службы работать без взаимодействия с пользователем. Доступ зависит от удостоверения приложения. Дополнительные сведения см. [в статье платформа идентификации Майкрософт и процесс учетных данных клиента OAuth 2,0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
@@ -100,11 +100,11 @@ IConfidentialClientApplication confidentialClientApplication = ConfidentialClien
 ClientCredentialProvider authProvider = new ClientCredentialProvider(confidentialClientApplication);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 В настоящее время код авторизации, учетные данные клиента и потоки OAuth "от имени" требуют реализации настраиваемого поставщика проверки подлинности. Дополнительные сведения см. в разделе [Использование настраиваемого поставщика проверки подлинности](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md).
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 ```java
 ClientCredentialProvider authProvider = new ClientCredentialProvider(
@@ -115,29 +115,29 @@ ClientCredentialProvider authProvider = new ClientCredentialProvider(
                                                     endpoint);
 ```
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Неприменимо.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Неприменимо.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Пока недоступно. Поддержка или открытие [запроса функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) , если это важно.
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Пока недоступно. Поддержка или открытие [запроса функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) , если это важно.
 
 ---
 
-##  <a name="a-nameonbehalfofprovideron-behalf-of-provider"></a><a name="OnBehalfOfProvider"/>Поставщик от имени
+##  <a name="on-behalf-of-provider"></a><a name="OnBehalfOfProvider"/>Поставщик от имени
 
 Потоки "от имени" применяются, когда приложение вызывает службу или веб-API, которые в своюмся вызывает API Microsoft Graph. Узнайте больше, прочитав [платформу Microsoft Identity и OAuth 2,0 от имени по поручению](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
@@ -149,41 +149,41 @@ IConfidentialClientApplication confidentialClientApplication = ConfidentialClien
 OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 В настоящее время код авторизации, учетные данные клиента и потоки OAuth "от имени" требуют реализации настраиваемого поставщика проверки подлинности. Для получения дополнительных сведений ознакомьтесь [с использованием настраиваемого поставщика проверки подлинности](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) .
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Неприменимо.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Неприменимо.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 
 ---
 
-## <a name="a-nameimplicitproviderimplicit-provider"></a><a name="ImplicitProvider"/>Неявный поставщик
+## <a name="implicit-provider"></a><a name="ImplicitProvider"/>Неявный поставщик
 
 Неявный поток предоставления используется в приложениях, основанных на браузерах. Для получения дополнительных сведений см [Microsoft Identity Platform и неявный поток предоставления разрешений](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 Неприменимо.
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 ```javascript
 const clientId = "your_client_id"; // Client Id of the registered application
@@ -205,33 +205,33 @@ const Client = MicrosoftGraph.Client;
 const client = Client.initWithMiddleware(options);
 ```
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 Неприменимо.
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Неприменимо.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Неприменимо.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Неприменимо.
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Неприменимо.
 
 ---
 
-##  <a name="a-namedevicecodeproviderdevice-code-provider"></a><a name="DeviceCodeProvider"/>Поставщик кода устройства
+##  <a name="device-code-provider"></a><a name="DeviceCodeProvider"/>Поставщик кода устройства
 
 Потоки кода устройства позволяют выполнять вход на устройства с помощью другого устройства. Дополнительные сведения см. [в статье платформа идентификации Майкрософт и код устройства OAuth 2,0](/azure/active-directory/develop/v2-oauth2-device-code).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
@@ -243,37 +243,37 @@ Func<DeviceCodeResult, Task> deviceCodeReadyCallback = async dcr => await Consol
 DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication, scopes, deviceCodeReadyCallback);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 Пока недоступно. Поддержка или открытие [запроса функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) , если это важно.
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Неприменимо.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Неприменимо.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 
 ---
 
-##  <a name="a-nameintegratedwindowsproviderintegrated-windows-provider"></a><a name="IntegratedWindowsProvider"/>Интегрированный поставщик Windows
+##  <a name="integrated-windows-provider"></a><a name="IntegratedWindowsProvider"/>Интегрированный поставщик Windows
 
 Интегрированный поток Windows предоставляет компьютеру Windows способ получить маркер доступа без уведомления при присоединении к домену. Подробнее: [Встроенная проверка подлинности Windows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
@@ -284,37 +284,37 @@ IPublicClientApplication publicClientApplication = PublicClientApplicationBuilde
 IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuthenticationProvider(publicClientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 Неприменимо.
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 Неприменимо.
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Неприменимо.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Неприменимо.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Неприменимо.
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Неприменимо.
 
 ---
 
-##  <a name="a-nameinteractiveproviderinteractive-provider"></a><a name="InteractiveProvider"/>Интерактивный поставщик
+##  <a name="interactive-provider"></a><a name="InteractiveProvider"/>Интерактивный поставщик
 
 Интерактивный обмен используется приложениями для мобильных устройств (Xamarin и UWP) и приложениями для настольных ПК, чтобы вызывать Microsoft Graph в имени пользователя. Дополнительные сведения см в разделе [получение маркеров в интерактивном режиме](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
@@ -324,15 +324,15 @@ IPublicClientApplication publicClientApplication = PublicClientApplicationBuilde
 InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationProvider(publicClientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 ```java
 PublicClientApplication publicClientApplication = new PublicClientApplication(getApplicationContext(), "CLIENT_ID_OF_YOUR_APPLICATION");
@@ -349,7 +349,7 @@ IGraphServiceClient graphClient =
     .buildClient();
 ```
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 ```objc
 NSError *error = nil;
@@ -362,23 +362,23 @@ MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProv
  andOptions:authProviderOptions];
 ```
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Неприменимо.
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Неприменимо.
 
 ---
 
-##  <a name="a-nameusernamepasswordproviderusernamepassword-provider"></a><a name="UsernamePasswordProvider"/>Имя пользователя и поставщик паролей
+##  <a name="usernamepassword-provider"></a><a name="UsernamePasswordProvider"/>Имя пользователя и поставщик паролей
 
 Поставщик имени пользователя и пароля позволяет приложению выполнять вход в систему, используя имя пользователя и пароль. Используйте этот поток, только если вы не можете использовать другие потоки OAuth. Для получения дополнительных сведений см [платформа идентификации Майкрософт и учетные данные пароля владельца ресурса OAuth 2,0](/azure/active-directory/develop/v2-oauth-ropc)
 
 
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
@@ -395,11 +395,11 @@ User me = await graphClient.Me.Request()
                 .GetAsync();
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 ```java
 UsernamePasswordProvider authProvider = new UsernamePasswordProvider(
@@ -409,19 +409,19 @@ UsernamePasswordProvider authProvider = new UsernamePasswordProvider(
                                                     password);
 ```
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Неприменимо.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Неприменимо.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 

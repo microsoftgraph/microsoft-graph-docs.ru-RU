@@ -61,7 +61,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 ```json
 {

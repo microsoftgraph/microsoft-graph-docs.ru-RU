@@ -19,7 +19,7 @@ ms.locfileid: "42892676"
 
 ## <a name="search-sharepoint-or-onedrive-files"></a>Поиск файлов SharePoint или OneDrive
 
-KQL можно использовать в терминах поиска запросов для SharePoint и OneDrive. Пример.
+KQL можно использовать в терминах поиска запросов для SharePoint и OneDrive. Например:
 
 - `"query": "contoso filetype:docx OR filetype:doc"`ограничивает область запроса документами Word.
 - `"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`ограничивает область запроса определенной папкой на сайте.

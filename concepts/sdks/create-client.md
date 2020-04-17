@@ -14,9 +14,9 @@ ms.locfileid: "35778735"
 
 Клиент Microsoft Graph предназначен для упрощения вызовов Microsoft Graph. Вы можете использовать один экземпляр клиента в течение всего времени существования приложения. Сведения о том, как добавить и установить клиентский пакет Microsoft Graph в свой проект, можно найти в [статье Установка пакета SDK](sdk-installation.md).
 
-В приведенных ниже примерах кода показано, как создать экземпляр клиента Microsoft Graph с поставщиком проверки подлинности на поддерживаемых языках. Поставщик проверки подлинности будет обрабатывать получение маркеров доступа для приложения. Для каждого языка и платформы доступно множество различных поставщиков проверки подлинности. Различные поставщики приложений поддерживают различные сценарии клиентов. Для получения дополнительных сведений о поставщиках и параметрах, которые подходят для вашего сценария, ознакомьтесь со статьей [Выбор поставщика проверки](choose-authentication-providers.md)подлинности.
+В приведенных ниже примерах кода показано, как создать экземпляр клиента Microsoft Graph с поставщиком проверки подлинности на поддерживаемых языках. Поставщик проверки подлинности будет обрабатывать получение маркеров доступа для приложения. Для каждого языка и платформы доступно множество различных поставщиков проверки подлинности. Различные поставщики приложений поддерживают различные сценарии клиентов. Для получения дополнительных сведений о поставщиках и параметрах, которые подходят для вашего сценария, ознакомьтесь со статьей [Выбор поставщика проверки подлинности](choose-authentication-providers.md).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 // Build a client application.
@@ -29,7 +29,7 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 ```javascript
 const clientId = "INSERT-CLIENT-APP-ID"; // Client Id of the registered application
@@ -45,7 +45,7 @@ const userAgentApplication = new UserAgentApplication(clientId, undefined, callb
 const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
 ```
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 ```java
 ClientCredentialProvider authProvider = new ClientCredentialProvider(CLIENT_ID, SCOPES, CLIENT_SECRET, TENANT_GUID, NATIONAL_CLOUD);
@@ -56,7 +56,7 @@ IGraphServiceClient graphClient = GraphServiceClient
                 .buildClient();
 ```
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 ```java
 PublicClientApplication publicClientApplication = new PublicClientApplication(getApplicationContext(), "INSERT-CLIENT-APP-ID");
@@ -73,7 +73,7 @@ IGraphServiceClient graphClient = GraphServiceClient
                 .buildClient();
 ```
 
-# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 ```objc
 // Create the authenticationProvider.
@@ -99,7 +99,7 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 [meDataTask execute];
 ```
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 ```php
 // PHP client currently doesn't have an authentication provider. You will need to handle

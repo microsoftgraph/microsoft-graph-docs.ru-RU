@@ -18,9 +18,9 @@ ms.locfileid: "37653519"
 
 Чтобы прочитать данные из Microsoft Graph, сначала необходимо создать объект Request, а затем выполнить `GET` метод для запроса.
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 [!INCLUDE [sample-code](includes/snippets/csharp/create-requests-read.md)]
-# <a name="typescripttabtypescript"></a>[TypeScript](#tab/TypeScript)
+# <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-read.md)]
 ---
 
@@ -28,9 +28,9 @@ ms.locfileid: "37653519"
 
 При получении объекта автоматически извлекаются не все свойства; Иногда они должны быть явно выбраны. Кроме того, в некоторых случаях не требуется возвращать набор свойств по умолчанию. Выбор только обязательных свойств может увеличить производительность запроса. Вы можете настроить объект *request* так, чтобы он `$select` выдать параметр запроса с помощью списка свойств.
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 [!INCLUDE [sample-code](includes/snippets/csharp/create-requests-select.md)]
-# <a name="typescripttabtypescript"></a>[TypeScript](#tab/TypeScript)
+# <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-select.md)]
 ---
 
@@ -39,9 +39,9 @@ ms.locfileid: "37653519"
 
 Получение списка сущностей аналогично получению одного объекта, за исключением ряда других вариантов настройки запроса. Параметр `$filter` Query можно использовать, чтобы уменьшить набор результатов до тех строк, которые соответствуют заданному условию.  Параметр `$orderBy` запроса будет запрашивать, чтобы сервер предоставил список сущностей, отсортированных по указанным свойствам.
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 [!INCLUDE [sample-code](includes/snippets/csharp/create-requests-list.md)]
-# <a name="typescripttabtypescript"></a>[TypeScript](#tab/TypeScript)
+# <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-list.md)]
 ---
 
@@ -51,9 +51,9 @@ ms.locfileid: "37653519"
 
 Для пакетов SDK, поддерживающих стиль Fluent, доступ к коллекциям сущностей можно получить с помощью индекса массива. Для пакетов SDK на основе шаблонов достаточно внедрить идентификатор элемента в сегмент пути, следующий за коллекцией.
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 [!INCLUDE [sample-code](includes/snippets/csharp/create-requests-index.md)]
-# <a name="typescripttabtypescript"></a>[TypeScript](#tab/TypeScript)
+# <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-index.md)]
 ---
 
@@ -61,9 +61,9 @@ ms.locfileid: "37653519"
 
 С помощью `$expand` фильтра можно запрашивать связанную сущность или коллекцию сущностей, которые запрашивают основной объект.  `Expand()` Функция в объекте *request* добавляет необходимый параметр запроса.
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 [!INCLUDE [sample-code](includes/snippets/csharp/create-requests-expand.md)]
-# <a name="typescripttabtypescript"></a>[TypeScript](#tab/TypeScript)
+# <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-expand.md)]
 ---
 
@@ -72,9 +72,9 @@ ms.locfileid: "37653519"
 
 Чтобы удалить сущность, создайте *запрос* так же, как и для получения объекта. Метод *Delete* объекта *request* указывает на необходимость удаления объекта.
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 [!INCLUDE [sample-code](includes/snippets/csharp/create-requests-delete.md)]
-# <a name="typescripttabtypescript"></a>[TypeScript](#tab/TypeScript)
+# <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-delete.md)]
 ---
 
@@ -82,9 +82,9 @@ ms.locfileid: "37653519"
 
 Чтобы создать новый объект в коллекции, вызовите метод `add` или `post` и передайте объект, содержащий сведения, которые будут использоваться для создания нового объекта. Обновленная версия созданной сущности обычно возвращается при вызове.
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 [!INCLUDE [sample-code](includes/snippets/csharp/create-requests-create.md)]
-# <a name="typescripttabtypescript"></a>[TypeScript](#tab/TypeScript)
+# <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-create.md)]
 ---
 
@@ -92,9 +92,9 @@ ms.locfileid: "37653519"
 
 Большинство обновлений в Microsoft Graph выполняются с помощью `PATCH` метода, поэтому необходимо включить в передаваемый объект только те свойства, которые нужно изменить.  
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 [!INCLUDE [sample-code](includes/snippets/csharp/create-requests-update.md)]
-# <a name="typescripttabtypescript"></a>[TypeScript](#tab/TypeScript)
+# <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-update.md)]
 ---
 
@@ -103,9 +103,9 @@ ms.locfileid: "37653519"
 
 Вы можете использовать `header()` функцию для присоединения пользовательских заголовков к запросу. В некоторых сценариях Microsoft Graph для настройки поведения запроса используются настраиваемые заголовки.
  
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 [!INCLUDE [sample-code](includes/snippets/csharp/create-requests-headers.md)]
-# <a name="typescripttabtypescript"></a>[TypeScript](#tab/TypeScript)
+# <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-headers.md)]
 ---
 
@@ -113,8 +113,8 @@ ms.locfileid: "37653519"
 
 В ситуациях, когда вызов API позволяет использовать пользовательские параметры запроса, можно предоставить эти значения параметров с помощью списка `QueryOptions` объектов.
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 [!INCLUDE [sample-code](includes/snippets/csharp/create-requests-queryparams.md)]
-# <a name="typescripttabtypescript"></a>[TypeScript](#tab/TypeScript)
+# <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-queryparams.md)]
 ---

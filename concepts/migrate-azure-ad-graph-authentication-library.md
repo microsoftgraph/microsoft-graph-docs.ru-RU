@@ -17,8 +17,8 @@ ms.locfileid: "37113886"
 
 Большинство приложений используют библиотеку проверки подлинности для получения и управления маркерами доступа для вызова Microsoft Graph.  Корпорация Майкрософт предлагает две библиотеки проверки подлинности:
 
-- [Библиотека проверки подлинности Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) ADAL
-- [Библиотека проверки подлинности (Майкрософт](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) ) MSAL
+- [Библиотека проверки подлинности Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
+- [Библиотека проверки подлинности (Майкрософт](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) ) (MSAL)
 
 ## <a name="updating-adal"></a>Обновление ADAL
 

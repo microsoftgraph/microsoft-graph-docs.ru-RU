@@ -75,8 +75,8 @@ mgt-teams-channel-picker {
 }
 ```
 
-## <a name="events"></a>Мероприятия
-| Событие | Detail (Сведения) | Описание |
+## <a name="events"></a>События
+| Событие | Сведения | Описание |
 | --- | --- | --- |
 | selectionChanged | Сведения содержит выделенный в данный момент элемент `{channel : ` [MicrosoftGraph. Channel](/graph/api/resources/channel?view=graph-rest-1.0)`, team: `[MicrosoftGraph. Team](/graph/api/resources/team?view=graph-rest-1.0)`}` | Возникает, когда пользователь вносит изменения в выбор канала. |
 

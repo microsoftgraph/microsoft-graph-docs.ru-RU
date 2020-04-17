@@ -42,7 +42,7 @@ ms.locfileid: "35645256"
 - Повторное изучение [контрольного списка](migrate-azure-ad-graph-overview.md)
 - Отправка вопросов в [сайте StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph)
 - Просмотрите примеры Microsoft Graph и сравните их с существующим кодом приложения:
-  - **Приложения, ИСПОЛЬЗУЮЩИЕ REST API**: краткие [руководства по началу работы и примеры](https://developer.microsoft.com/graph/get-started), выбор вашей платформы и запуск с помощью краткого руководства или поиск подходящего примера
+  - **Приложения, ИСПОЛЬЗУЮЩИЕ REST API**: [краткие руководства по началу работы и примеры](https://developer.microsoft.com/graph/get-started), выбор вашей платформы и запуск с помощью краткого руководства или поиск подходящего примера
   - **Приложение, использующее клиентскую библиотеку .NET**: "Рецензирование", " [консоль CSharp-сниппетов-фрагменты-Sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) " и/или [дотнеткоре-Console-Sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
 ## <a name="next-steps"></a>Дальнейшие действия
