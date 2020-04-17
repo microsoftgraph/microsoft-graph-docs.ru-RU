@@ -2,15 +2,15 @@
 title: Получение directoryAudit
 description: Описывает метод Get ресурса Директоряудит (Entity) из API Microsoft Graph (бета-версия).
 localization_priority: Normal
-author: cloudhandler
+author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5446be0c88dbd7512d6a80501327a451ca6b9881
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 7be5578e1417ca930acd986febffffb244309712
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180988"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543354"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 

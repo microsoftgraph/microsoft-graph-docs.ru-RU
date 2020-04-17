@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6f6a525a5da309333eade6b9b5f611fcc0eda598
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bc0a049e7fb7a27fd2bf80fb942b74628d836e55
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510580"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543389"
 ---
 # <a name="update-range"></a>Обновление диапазона
 
@@ -39,7 +39,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -72,7 +72,7 @@ Content-length: 169
 
 {
 "values" : [["Hello", "100"],["1/1/2016", null]],
-"formula" : [[null, null], [null, "=B1*2"]],
+"formulas" : [[null, null], [null, "=B1*2"]],
 "numberFormat" : [[null,null], ["m-ddd", null]]
 }
 ```

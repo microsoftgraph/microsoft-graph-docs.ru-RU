@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса directoryAudit
 description: Описывает ресурс Директоряудит (Entity) API Microsoft Graph (REST), который помогает выполнять аудит действий с каталогом (клиентом) (бета-версия).
-author: cloudhandler
+author: SarahBar
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 723c9089ed19e6d69375bd815b4233594be286a2
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: e7e3c3a72834d3dc44ad274f35c03454b17494c9
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181974"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543410"
 ---
 # <a name="directoryaudit-resource-type"></a>Тип ресурса directoryAudit
 

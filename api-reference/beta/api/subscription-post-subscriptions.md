@@ -5,16 +5,16 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 2b01ed0193c5360b46aaa24da6fe257a6a86bb47
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb14da71db128d3180555d47405e0be0148118ab
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453095"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543347"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -138,13 +138,13 @@ Content-type: application/json
 |Groups|groups|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
-|Список|Site/{site-ID}/Lists/{List-ID}|
+|Список|sites/{Site-ID}/Lists/{List-ID}|
 |Security alert|security/alerts?$filter=status eq ‘New’|
 |Записи звонков|связь/Каллрекордс|
 
 ### <a name="response"></a>Отклик
 
-Ниже показан пример ответа. 
+Ниже показан пример отклика. 
 
 >**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
