@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 488527475534faa92eb223be19e1bf247a9b11fd
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 05914a1014e9d635da8d38927e207a5c17823c93
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229593"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543431"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -126,7 +126,7 @@ Content-type: application/json
 |Groups|groups|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
-|Список|site/{site-id}/lists/{list-id}|
+|Список|sites/{site-id}/lists/{list-id}|
 |Оповещение безопасности|security/alerts?$filter=status eq 'New'|
 
 ##### <a name="response"></a>Отклик
