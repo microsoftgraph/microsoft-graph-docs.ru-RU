@@ -289,7 +289,7 @@
                       href: api/usersettings-get.md
                     - name: Обновление параметров
                       href: api/usersettings-update.md
-            - name: Mail
+            - name: Почта
               href: resources/message.md
               items:
                 - name: Создание папки почты
@@ -312,7 +312,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: Отправка почты
                   href: api/user-sendmail.md
-            - name: Notes
+            - name: Примечания
               href: resources/onenote.md
               items:
                 - name: Создание записной книжки
@@ -9151,12 +9151,16 @@
             - name: Предоставление разрешения OAuth2
               href: resources/oauth2permissiongrant.md
               items:
-                - name: Получение предоставленного разрешения OAuth2
+                - name: Перечисление
+                  href: api/oauth2permissiongrant-list.md
+                - name: Получение
                   href: api/oauth2permissiongrant-get.md
-                - name: Обновление предоставленных разрешений OAuth2
+                - name: Обновление
                   href: api/oauth2permissiongrant-update.md
-                - name: Удаление предоставленного разрешения OAuth2
+                - name: Delete
                   href: api/oauth2permissiongrant-delete.md
+                - name: Получение дельты
+                  href: api/oauth2permissiongrant-delta.md
             - name: Локальная публикация
               href: resources/onpremisespublishingprofile-root.md
               items:
@@ -10304,7 +10308,7 @@
             - name: Службы
               href: resources/printservice.md
               items:
-                - name: Перечисление
+                - name: Список
                   href: api/print-list-services.md
                 - name: Получение
                   href: api/printservice-get.md
@@ -10326,6 +10330,13 @@
           items:
             - name: Отчеты об удостоверениях и доступе
               items:
+                - name: Действия приложений AD FS
+                  items:
+                    - name: Подробная сводка по проверяющей стороне
+                      href: resources/relyingpartydetailedsummary.md
+                      items:
+                        - name: Список
+                          href: api/relyingpartydetailedsummary-list.md
                 - name: Вход в приложение
                   items:
                     - name: Сводка по входу
@@ -10565,7 +10576,7 @@
         - name: Поиск (предварительный просмотр)
           displayname: Microsoft Search API
           items:
-            - name: Query
+            - name: Запрос
               items:
                 - name: Обзор
                   href: resources/search-api-overview.md
