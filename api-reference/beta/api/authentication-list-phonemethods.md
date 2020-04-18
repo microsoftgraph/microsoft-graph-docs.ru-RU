@@ -1,0 +1,130 @@
+---
+title: Список Фонемесодс
+description: Получение списка объектов метода проверки подлинности телефона.
+localization_priority: Normal
+author: mmcla
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 3074a1bfd7510de930478ae201f4979f3990e93b
+ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "43557674"
+---
+# <a name="list-phonemethods"></a><span data-ttu-id="76b28-103">Список Фонемесодс</span><span class="sxs-lookup"><span data-stu-id="76b28-103">List phoneMethods</span></span>
+
+<span data-ttu-id="76b28-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="76b28-104">Namespace: microsoft.graph</span></span>
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="76b28-105">Получение списка объектов [метода проверки подлинности телефона](../resources/phoneauthenticationmethod.md) .</span><span class="sxs-lookup"><span data-stu-id="76b28-105">Retrieve a list of [phone authentication method](../resources/phoneauthenticationmethod.md) objects.</span></span> <span data-ttu-id="76b28-106">При этом будет возвращено до трех объектов, так как пользователь может использовать до трех телефонов для проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="76b28-106">This will return up to three objects, as a user can have up to three phones usable for authentication.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="76b28-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="76b28-107">Permissions</span></span>
+
+<span data-ttu-id="76b28-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="76b28-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="76b28-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="76b28-110">Permission type</span></span>                        | <span data-ttu-id="76b28-111">Разрешения, действующие на себя (по крайней мере для самых привилегированных)</span><span class="sxs-lookup"><span data-stu-id="76b28-111">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="76b28-112">Разрешения, действующие на других (по крайней мере для самых привилегированных)</span><span class="sxs-lookup"><span data-stu-id="76b28-112">Permissions acting on others (from least to most privileged)</span></span>|
+|:---------------------------------------|:-------------------------|:-----------------|
+| <span data-ttu-id="76b28-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="76b28-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="76b28-114">Усераусентикатионмесод. Read, Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite, Усераусентикатионмесод. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="76b28-114">UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All</span></span> | <span data-ttu-id="76b28-115">Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="76b28-115">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
+| <span data-ttu-id="76b28-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="76b28-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="76b28-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="76b28-117">Not supported.</span></span> | <span data-ttu-id="76b28-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="76b28-118">Not supported.</span></span> |
+| <span data-ttu-id="76b28-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="76b28-119">Application</span></span>                            | <span data-ttu-id="76b28-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="76b28-120">Not supported.</span></span> | <span data-ttu-id="76b28-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="76b28-121">Not supported.</span></span> |
+
+<span data-ttu-id="76b28-122">Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="76b28-122">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
+
+* <span data-ttu-id="76b28-123">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="76b28-123">Global admin</span></span>
+* <span data-ttu-id="76b28-124">Глобальный читатель</span><span class="sxs-lookup"><span data-stu-id="76b28-124">Global reader</span></span>
+* <span data-ttu-id="76b28-125">Привилегированный администратор проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="76b28-125">Privileged authentication admin</span></span>
+* <span data-ttu-id="76b28-126">Администратор проверки подлинности (видит только скрытые номера телефонов)</span><span class="sxs-lookup"><span data-stu-id="76b28-126">Authentication admin (only sees masked phone numbers)</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="76b28-127">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="76b28-127">HTTP request</span></span>
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /me/authentication/phoneMethods
+GET /users/{id}/authentication/phoneMethods
+```
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="76b28-128">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="76b28-128">Optional query parameters</span></span>
+
+<span data-ttu-id="76b28-129">Этот метод не поддерживает дополнительные параметры запроса для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="76b28-129">This method does not support optional query parameters to customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="76b28-130">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="76b28-130">Request headers</span></span>
+
+| <span data-ttu-id="76b28-131">Имя</span><span class="sxs-lookup"><span data-stu-id="76b28-131">Name</span></span>      |<span data-ttu-id="76b28-132">Описание</span><span class="sxs-lookup"><span data-stu-id="76b28-132">Description</span></span>|
+|:----------|:----------|
+| <span data-ttu-id="76b28-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="76b28-133">Authorization</span></span> | <span data-ttu-id="76b28-134">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="76b28-134">Bearer {token}</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="76b28-135">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="76b28-135">Request body</span></span>
+
+<span data-ttu-id="76b28-136">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="76b28-136">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="76b28-137">Ответ</span><span class="sxs-lookup"><span data-stu-id="76b28-137">Response</span></span>
+
+<span data-ttu-id="76b28-138">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [фонеаусентикатионмесод](../resources/phoneauthenticationmethod.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="76b28-138">If successful, this method returns a `200 OK` response code and a collection of [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) objects in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="76b28-139">Примеры</span><span class="sxs-lookup"><span data-stu-id="76b28-139">Examples</span></span>
+
+### <a name="request"></a><span data-ttu-id="76b28-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="76b28-140">Request</span></span>
+
+<span data-ttu-id="76b28-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="76b28-141">The following is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_phonemethods"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/authentication/phoneMethods
+```
+
+### <a name="response"></a><span data-ttu-id="76b28-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="76b28-142">Response</span></span>
+
+<span data-ttu-id="76b28-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="76b28-143">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="76b28-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="76b28-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.phoneAuthenticationMethod",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "phoneNumber": "+1 2065555555",
+      "phoneType": "mobile",
+      "smsSignInState": "ready",
+      "id": "3179e48a-750b-4051-897c-87b9720928f7"
+    },
+    {
+      "phoneNumber": "+1 2065555556",
+      "phoneType": "alternateMobile",
+      "smsSignInState": "notSupported",
+      "id": "b6332ec1-7057-4abe-9331-3d72feddfe41"
+    },
+    {
+      "phoneNumber": "+1 2065555557",
+      "phoneType": "office",
+      "smsSignInState": "notSupported",
+      "id": "e37fc753-ff3b-4958-9484-eaa9425c82bc"
+    }
+  ]
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List phoneMethods",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
