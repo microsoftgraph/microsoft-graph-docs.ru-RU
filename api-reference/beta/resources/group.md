@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 4d9a9cc75214bc3dcbcc765d3a1797eb266ff26b
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: f539a22f7e3841c2a6251cc83c2a1e1960f3fdfc
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124912"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581690"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -113,6 +113,7 @@ ms.locfileid: "43124912"
 |assignedLicenses|Коллекция [assignedLicense](assignedlicense.md)|Лицензии, назначенные группе. <br><br>Возвращается только с помощью оператора $select. Только для чтения.|
 |autoSubscribeNewMembers|Логический|Указывает, будут ли новые участники группы автоматически подписаны на получение уведомлений по электронной почте. Это свойство можно задать в запросе PATCH для группы. Не задавайте его в первоначальном запросе POST, создающем группу. Значение по умолчанию: **false**. <br><br>Возвращается только с помощью оператора $select.|
 |classification|String|Описывает классификацию для группы (например, незначительное, среднее или значительное влияние на бизнес). Допустимые значения для этого свойства определяются созданием значения [setting](directorysetting.md) ClassificationList на базе [определения шаблона](directorysettingtemplate.md).<br><br>Возвращается по умолчанию.|
+|createdByAppId|String|Идентификатор приложения, использованного для создания группы. Для некоторых групп может иметь значение NULL. <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает параметр $filter.|
 |createdDateTime|DateTimeOffset| Метка времени создания группы. Значение не может изменяться и заполняется автоматически, когда создается группа. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается по умолчанию. Только для чтения. |
 |deletedDateTime|DateTimeOffset| При удалении некоторых объектов Azure Active Directory (пользователя, группы, приложения) сначала имеет место логическое удаление, а это свойство обновляется в соответствии с датой и временем удаления объекта. В противном случае это свойство имеет значение null. При восстановлении объекта это свойство обновляется до null. |
 |description|String|Необязательное описание для группы. <br><br>Возвращается по умолчанию.|
@@ -236,6 +237,7 @@ ms.locfileid: "43124912"
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "description": "string",
