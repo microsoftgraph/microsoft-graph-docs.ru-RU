@@ -14,7 +14,7 @@ ms.locfileid: "42521301"
 ---
 # <a name="publicerror-resource-type"></a>Тип ресурса Публицеррор
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

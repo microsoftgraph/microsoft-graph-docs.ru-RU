@@ -15,7 +15,7 @@ ms.locfileid: "42521091"
 ---
 # <a name="restoreaction-resource-type"></a>Тип ресурса RestoreAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

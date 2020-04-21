@@ -1,20 +1,20 @@
 ---
-title: 'Table: Range'
+title: 'Воркбуктабле: Range'
 description: Получает объект диапазона, связанный со всей таблицей.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5ae2fcf801eb163e2bbc3d1fd346ac074ff482dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e227769aca8f3a0773bdc446ea9016e8c4653ff
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452801"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581664"
 ---
-# <a name="table-range"></a>Table: Range
+# <a name="workbooktable-range"></a>Воркбуктабле: Range
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,15 +24,15 @@ ms.locfileid: "42452801"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Files.ReadWrite    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/Range
-POST /workbook/worksheets/{id|name}/tables/{id|name}/Range
+GET /workbook/tables/{id|name}/Range
+GET /workbook/worksheets/{id|name}/tables/{id|name}/Range
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,11 +45,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/Range
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/workbookrange.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [workbookRange](../resources/workbookrange.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -58,7 +58,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/Range
   "name": "table_range"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/Range
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/Range
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/table-range-csharp-snippets.md)]
@@ -75,8 +75,10 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 ---
 
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

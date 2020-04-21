@@ -1,16 +1,16 @@
 ---
-title: Получение объектов каталога из списка идентификаторов
-description: Параметр запроса select недоступен для этой операции.
+title: 'directoryObject: Жетбидс'
+description: 'Возвращает объекты каталогов, указанные в списке идентификаторов. '
 author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 093e39a6d70193c03d0b2ae9d91b61f6bdf5bbbb
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: f71233b25d4ede3479960e44a4de2876b4c9a0c7
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180946"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581655"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Получение объектов каталога из списка идентификаторов
 
@@ -18,12 +18,12 @@ ms.locfileid: "43180946"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Возвращает объекты каталогов, указанные в списке идентификаторов.  ПРИМЕЧАНИЕ. Возвращаемые объекты каталогов представляют собой полные объекты, содержащие **все** свойства. Параметр запроса `$select` недоступен для этой операции.
+Возврат объектов каталогов, указанных в списке идентификаторов.  
 
 Ниже перечислены некоторые распространенные случаи использования этой функции.
 
 * Разрешение идентификаторов, возвращаемых как часть коллекций идентификаторов функциями, например [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) или [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta), в базовые объекты каталогов.
-* Разрешение идентификаторов, которые приложение хранит во внешнем хранилище, в базовые объекты каталогов.
+* Разрешение идентификаторов, сохраненных во внешнем хранилище приложения, в объекты каталога резервного копирования.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,8 +32,8 @@ ms.locfileid: "43180946"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | Directory.Read.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -51,7 +51,7 @@ POST /directoryObjects/getByIds
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | application/json  |
+| Content-Type  | string | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -59,16 +59,16 @@ POST /directoryObjects/getByIds
 
 | Параметр   | Тип |Описание|
 |:---------------|:--------|:----------|
-|ids|Коллекция String| Коллекция идентификаторов, для которой необходимо возвратить объекты. Вы можете указать до 1000 идентификаторов. |
-|types|Коллекция объектов string| Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск. Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге. В коллекции можно указать любой объект, производный от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta). Пример: [user](/graph/api/resources/user?view=graph-rest-beta), [group](/graph/api/resources/group?view=graph-rest-beta), [device](/graph/api/resources/device?view=graph-rest-beta). Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/en-us/cloud-solution-provider), укажите ресурс [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta). Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/en-us/cloud-solution-provider). В значениях не учитывается регистр символов.|
+|ids|Коллекция String| Коллекция идентификаторов, для которой необходимо возвратить объекты. Идентификаторы идентификаторов GUID, представленные в виде строк. Вы можете указать до 1000 идентификаторов. |
+|types|Коллекция объектов string| Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск. Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге. В коллекции можно указать любой объект, производный от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta). Пример: [user](/graph/api/resources/user?view=graph-rest-beta), [group](/graph/api/resources/group?view=graph-rest-beta), [device](/graph/api/resources/device?view=graph-rest-beta). Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider), укажите ресурс [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta). Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/en-us/cloud-solution-provider). В значениях не учитывается регистр символов.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции String в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции String в тексте отклика.
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -101,9 +101,9 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

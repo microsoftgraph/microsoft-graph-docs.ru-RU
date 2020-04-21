@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0ce3e2f6fdadcd4d4e9cb991dc0d2f855913c93a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: cd159f8efd7cf0789be143034f5edce073d23398
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219321"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581669"
 ---
 # <a name="remove-claimsmappingpolicy"></a>Удаление типа ресурса claimsMappingPolicy
 
@@ -26,8 +26,8 @@ ms.locfileid: "43219321"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL  |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL  |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Policy. Read. ALL и Application. ReadWrite. Овнедби, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. Овнедби, Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -35,7 +35,7 @@ ms.locfileid: "43219321"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{id}/claimsMappingPolicies/{id}$ref
+DELETE /servicePrincipals/{id}/claimsMappingPolicies/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,7 +44,7 @@ DELETE /servicePrincipals/{id}/claimsMappingPolicies/{id}$ref
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

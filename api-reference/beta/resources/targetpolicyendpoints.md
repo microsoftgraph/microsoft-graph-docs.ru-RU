@@ -14,7 +14,7 @@ ms.locfileid: "42520004"
 ---
 # <a name="targetpolicyendpoints-resource-type"></a>Тип ресурса Таржетполициендпоинтс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
