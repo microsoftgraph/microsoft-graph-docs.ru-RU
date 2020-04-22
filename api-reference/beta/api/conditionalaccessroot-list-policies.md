@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4c1d56cde38b7dfd3acbff3c20d399c5b762f3da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7deae297b3f1f1b8f513af5906031549d446e6cd
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382291"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43720832"
 ---
 # <a name="list-policies"></a>Список политик
 
@@ -26,9 +26,9 @@ ms.locfileid: "43382291"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                       |
 |:--------------------------------------|:----------------------------------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения                            | Policy.Read.All |
+|Делегированное (рабочая или учебная учетная запись)     | Policy.Read.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Для приложений                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ GET /identity/conditionalAccess/policies
 |:----------|:----------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -120,6 +120,7 @@ Content-type: application/json
                 "platforms": null,
                 "locations": null,
                 "deviceStates": null,
+                "devices": null,
                 "applications": {
                     "includeApplications": [
                         "None"
@@ -160,6 +161,7 @@ Content-type: application/json
                 "platforms": null,
                 "locations": null,
                 "deviceStates": null,
+                "devices": null,
                 "applications": {
                     "includeApplications": [
                         "None"

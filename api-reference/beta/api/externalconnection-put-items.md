@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 1fb15ef50dfba8318691085f43a8967b155d9d3f
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 7d6b7f1abf94aacd7732c7fb767a0220d6892abf
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892553"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43718607"
 ---
 # <a name="create-externalitem"></a>Создание Екстерналитем
 
@@ -30,9 +30,9 @@ ms.locfileid: "42892553"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | ExternalItem.ReadWrite.All |
+| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,7 +56,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 | Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [екстерналитем](../resources/externalitem.md) в формате JSON. Размер полезных данных не может превышать 4 МБ.
 
@@ -125,7 +125,10 @@ Content-type: application/json
     "priority": 1,
     "assignee": "john@contoso.com"
   },
-  "content": "Textual content of the file"
+  "content": {
+    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
+    "type": "html"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
