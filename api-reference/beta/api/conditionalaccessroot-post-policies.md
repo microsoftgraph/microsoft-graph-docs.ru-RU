@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6472bda1ecf840b0fc700b831e3ee48e153aa5bf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9941dfbfbf7e1db8c1ec1bab46d050cad6caea20
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382095"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43720602"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Создание Кондитионалакцессполици
 
@@ -26,8 +26,8 @@ ms.locfileid: "43382095"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
 > [!NOTE]
@@ -128,7 +128,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -244,7 +244,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -549,6 +549,120 @@ Content-type: application/json
             "type": "hours",
             "isEnabled": true
         }
+    }
+}
+```
+
+### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>Пример 4: запрос MFA для Exchange Online с устройств, не являющихся жалобами
+
+>**Примечание:** Мы рекомендуем использовать условие **девицестатес** , и оно может быть удалено в будущем. Перемотка вперед, используйте состояние **Devices** .
+
+#### <a name="request"></a>Запрос
+В приведенном ниже примере показан запрос на перевод в Exchange Online с помощью сервера MFA в Exchange Online с устройств, не являющихся жалобами.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/policies
+Content-type: application/json
+
+{
+    "displayName": "Require MFA to EXO from non-complaint devices.",
+    "state": "enabled",
+    "conditions": {
+        "applications": {
+            "includeApplications": [
+                "00000002-0000-0ff1-ce00-000000000000"
+            ]
+        },
+        "users": {
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+        },
+        "devices": {
+            "includeDeviceStates": [
+                "All"
+            ],
+            "excludeDeviceStates": [
+                "Compliant"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ]
+    }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/policies/$entity",
+     "id": "b3f1298e-8e93-49af-bdbf-94cf7d453ca3",
+    "displayName": "Require MFA to EXO from non-complaint devices.",
+    "createdDateTime": "2020-04-01T00:55:12.9571747Z",
+    "modifiedDateTime": null,
+    "state": "enabled",
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [],
+        "platforms": null,
+        "locations": null,
+        "times": null,
+        "deviceStates": null,
+        "applications": {
+            "includeApplications": [
+                "00000002-0000-0ff1-ce00-000000000000"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeProtectionLevels": []
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [],
+            "includeGroups": [
+                "ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"
+            ],
+            "excludeGroups": [],
+            "includeRoles": [],
+            "excludeRoles": []
+        },
+        "devices": {
+            "includeDeviceStates": [
+                "All"
+            ],
+            "excludeDeviceStates": [
+                "Compliant"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
     }
 }
 ```

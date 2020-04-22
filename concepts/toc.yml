@@ -40,7 +40,7 @@ items:
           - name: Angular
             href: /graph/tutorials/angular
           - name: ASP.NET
-            href: /graph/tutorials/aspnet
+            href: /learn/modules/msgraph-build-aspnetmvc-apps
           - name: Microsoft Flow
             href: /graph/tutorials/flow
           - name: iOS Objective-C
@@ -151,8 +151,14 @@ items:
           - name: 'Советы '
             href: data-connect-tips.md
       - name: Устройства и приложения
-        href: intune-concept-overview.md
-        displayName: Intune
+        expanded: true
+        items:
+          - name: Облачная печать (предварительная версия)
+            href: universal-print-concept-overview.md
+            displayName: Universal Print
+          - name: Корпоративное управление
+            href: intune-concept-overview.md
+            displayName: Intune
       - name: Образование
         items:
           - name: Общие сведения
@@ -317,10 +323,6 @@ items:
             href: teams-protected-apis.md
           - name: Отправка упреждающих сообщений с помощью бота
             href: teams-proactive-messaging.md
-      - name: Универсальная печать
-        items:
-          - name: Обзор
-            href: universal-print-concept-overview.md
       - name: Книги и диаграммы
         displayName: Excel
         items:

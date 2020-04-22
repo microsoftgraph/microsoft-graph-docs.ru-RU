@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 104e5c95b27f555e174c2f1669b758bf69fdda6d
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: de4b983592978ca05b2e2db8fe1eccd0697147fb
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892453"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43718621"
 ---
 # <a name="update-externalitem"></a>Обновление екстерналитем
 
@@ -28,9 +28,9 @@ ms.locfileid: "42892453"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | ExternalItem.ReadWrite.All |
+| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -61,7 +61,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 | Свойство   | Тип                                  | Описание               |
 |:-----------|:--------------------------------------|:--------------------------|
 | списки        | Коллекция [списков управления доступом](../resources/acl.md) | Массив элементов управления доступом. Каждая запись указывает доступ, который предоставляется пользователю или группе. |
-| content    | String                                | Представление содержимого элемента в виде обычного текста. Текст в этом свойстве является полнотекстовым индексированным. |
+| содержимое    | [екстерналитемконтент](../resources/externalitemcontent.md) | Представление содержимого элемента в виде обычного текста или в формате HTML. Текст в этом свойстве является полнотекстовым индексированным. |
 | properties | Объект                                | Контейнер свойств со свойствами элемента. Свойства должны соответствовать [схеме](../resources/schema.md) , определенной для [екстерналконнектион](../resources/externalconnection.md). |
 
 ### <a name="updating-the-acl-collection"></a>Обновление коллекции ACL
@@ -149,7 +149,10 @@ Content-type: application/json
     "priority": 1,
     "assignee": "john@contoso.com"
   },
-  "content": "Textual content of the file"
+  "content": {
+    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
+    "type": "html"
+  }
 }
 ```
 

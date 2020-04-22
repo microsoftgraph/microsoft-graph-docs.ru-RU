@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4a6b9eee7f7289a4f24ba88ca7a5ba36983018d8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9bf059fb728a34dbaefb813dc9a4b177fd9e0834
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387190"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43720911"
 ---
 # <a name="get-conditionalaccesspolicy"></a>Получение Кондитионалакцессполици
 
@@ -26,9 +26,9 @@ ms.locfileid: "43387190"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                       |
 |:--------------------------------------|:----------------------------------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения                            | Policy.Read.All |
+|Делегированное (рабочая или учебная учетная запись)     | Policy.Read.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Для приложений                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ GET /identity/conditionalAccess/policies/{id}
 |:----------|:----------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -172,11 +172,12 @@ Content-type: application/json
                 "d2136c9c-b049-47ae-b9cf-316e04ef7198"
             ]
         },
-        "deviceStates": {
-            "includeStates": [
+        "deviceStates": null,
+        "devices": {
+            "includeDeviceStates": [
                 "All"
             ],
-            "excludeStates": [
+            "excludeDeviceStates": [
                 "Compliant"
             ]
         }
