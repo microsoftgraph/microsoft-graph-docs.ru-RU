@@ -1,17 +1,18 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 0cbf6f788a5878bc4a1d45670c3d2c22169f7034
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 7ce5f8765e45dfcb7edac8a150f83c679287479f
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082192"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43771166"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-OrgContact orgContact = graphClient.contacts("delta")
+IOrgContactDeltaCollectionPage delta = graphClient.contacts()
+    .delta()
     .buildRequest()
     .get();
 

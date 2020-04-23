@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3889f23353b46c852547501c59d8a94653c67b75
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: f1837551b5ee863769277a3ed023afa21f3c7c92
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986150"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581641"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -145,5 +145,6 @@ Microsoft Graph позволяет получать доступ к данным
 | POST 1: 1 / сообщение в групповом чате | 2 запроса в секунду | 20 запросов в секунду |
 
 Максимально 4 запроса в секунду на приложение могут быть отправлены для данной команды или канала.
+Приложение может отправлять в определенный канал не более 3000 сообщений в день.
 
 См. Также [ограничения Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) и [требования к опросу](/graph/api/resources/teams-api-overview#polling-requirements).

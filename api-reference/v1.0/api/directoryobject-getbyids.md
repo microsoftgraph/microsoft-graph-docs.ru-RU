@@ -1,25 +1,22 @@
 ---
-title: Получение объектов каталога из списка идентификаторов
-description: Параметр запроса select недоступен для этой операции.
+title: 'directoryObject: getByIds'
+description: Возвращает объекты каталогов, указанные в списке идентификаторов.
 author: keylimesoda
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8ff81002804a445ab102b3df0bac2b57332fec2b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 7ed4066709e351d8500cbd9e40ba47e69fd1420d
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181932"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581697"
 ---
-# <a name="get-directory-objects-from-a-list-of-ids"></a>Получение объектов каталога из списка идентификаторов
+# <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 
 Пространство имен: microsoft.graph
 
-Возвращает объекты каталогов, указанные в списке идентификаторов.
-
->[!NOTE]
->Возвращаемые объекты каталогов представляют собой полные объекты, содержащие все свойства. Параметр запроса `$select` недоступен для этой операции.
+Возвращение объектов каталогов, указанных в списке идентификаторов.
 
 >[!NOTE]
 >У этого API есть [известная проблема](/graph/known-issues#incomplete-objects-when-using-getbyids-request). Не все возвращаемые объекты каталогов представляют собой полные объекты, содержащие все свойства.
@@ -55,24 +52,24 @@ POST /directoryObjects/getByIds
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | string | application/json  |
+| Content-Type  | строка | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр   | Тип |Описание|
 |:---------------|:--------|:----------|
-|ids|Коллекция String| Коллекция идентификаторов, для которой необходимо возвратить объекты. Вы можете указать до 1000 идентификаторов. |
+|ids|Коллекция String| Коллекция идентификаторов, для которой необходимо возвратить объекты.  Идентификаторы имеют формат GUID и представлены в виде строк.  Вы можете указать до 1000 идентификаторов. |
 |types|Коллекция объектов string| Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск. Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0), который содержит все типы ресурсов, определенные в каталоге. В коллекции можно указать любой объект, производный от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Пример: [user](/graph/api/resources/user?view=graph-rest-v1.0), [group](/graph/api/resources/group?view=graph-rest-v1.0), [device](/graph/api/resources/device?view=graph-rest-v1.0). Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/ru-RU/cloud-solution-provider), укажите ресурс [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0). Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/ru-RU/cloud-solution-provider). В значениях не учитывается регистр символов.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции String в тексте отклика.
+В случае успеха этот метод возвращает код ответа `200 OK` и объект коллекции строк в тексте ответа.
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -109,9 +106,9 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
