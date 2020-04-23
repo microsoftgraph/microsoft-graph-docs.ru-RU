@@ -5,16 +5,18 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a82a3e9132ba01d9643fe8a6ec712a8cec1c4631
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: c56839b9df70c73104841702931d21331e4d43f7
+ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125269"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "43557859"
 ---
 # <a name="list-conversations"></a>Список бесед
 
-Пространство имен: Microsoft. Graph. Получение списка [бесед](../resources/conversation.md) в этой группе.
+Пространство имен: microsoft.graph
+
+Получение списка объектов [conversation](../resources/conversation.md) в этой группе.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +41,7 @@ GET /groups/{id}/conversations
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

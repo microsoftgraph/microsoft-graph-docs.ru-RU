@@ -5,18 +5,20 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8ff75cf4b3ff1f48a895c4be98b3c8fb8576128c
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: f2890f1158819c58378ec89782be053506140774
+ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229523"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "43557880"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
 Пространство имен: microsoft.graph
 
-Представляет приложение. Любое приложение, передающее проверку подлинности в Azure Active Directory (Azure AD), должно быть зарегистрировано в каталоге. Регистрация приложения включает уведомление Azure AD о вашем приложении, в том числе URL-адрес его расположения, URL-адрес для отправки ответов после проверки подлинности, URI для определения приложения и многое другое. Дополнительную информацию см. в статье [Основные сведения о регистрации приложения в Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Наследуется от [directoryObject](directoryobject.md). 
+Представляет приложение. Любое приложение, передающее проверку подлинности в Azure Active Directory (Azure AD), должно быть зарегистрировано в каталоге. Регистрация приложения включает уведомление Azure AD о вашем приложении, в том числе URL-адрес его расположения, URL-адрес для отправки ответов после проверки подлинности, URI для определения приложения и многое другое. Дополнительную информацию см. в статье [Основные сведения о регистрации приложения в Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Наследуется от [directoryObject](directoryobject.md).
+
+Этот ресурс поддерживает отслеживание добавлений, удалений и обновлений с помощью [разностного запроса](/graph/delta-query-overview) с функцией [delta](../api/application-delta.md).
 
 ## <a name="methods"></a>Методы
 
@@ -27,6 +29,7 @@ ms.locfileid: "43229523"
 |[Получение приложения](../api/application-get.md) | [application](application.md) |Считывание свойств и связей объекта application.|
 |[Обновление приложения](../api/application-update.md) | [application](application.md) |Обновление объекта application. |
 |[Удаление приложения](../api/application-delete.md) | Нет |Удаление объекта application. |
+|[Получение дельты](../api/application-delta.md)|[application](application.md)|Создавайте, обновляйте или удаляйте приложения без необходимости чтения всей коллекции ресурсов.|
 |[Список удаленных приложений](../api/directory-deleteditems-list.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка недавно удаленных приложений. |
 |[Получение удаленного приложения](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Получение свойств недавно удаленного приложения. |
 |[Окончательное удаление приложения](../api/directory-deleteditems-delete.md) | Нет | Окончательное удаление приложения. |

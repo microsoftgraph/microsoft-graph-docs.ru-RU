@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 0742ac1f35e10cfbed09ca164d4cb2af6a1c8484
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 448c9b0063a04cf0ddaa375092a1dd9ceff6694a
+ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229369"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "43557852"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -28,10 +28,28 @@ ms.locfileid: "43229369"
   - Можно создать или обновить [мероприятие](/graph/api/resources/event?view=graph-rest-1.0), доступное по сети, и предоставить участникам сведения для присоединения к собранию по сети. 
   - В частности, можно использовать **onlineMeetingProvider** и **onlineMeeting** — это новые свойства **мероприятий**, с помощью которых можно задать или указать Microsoft Teams в качестве поставщика собраний по сети. Это временное решение [известной проблемы](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) со свойством **onlineMeetingUrl**.
 
-## <a name="april-2020-new-in-preview-only"></a>Апрель 2020 г.: новые возможности только в предварительной версии
+### <a name="files"></a>Файлы
+- [Извлекайте](/graph/api/driveitem-checkout?view=graph-rest-1.0) и [возвращайте](/graph/api/driveitem-checkin?view=graph-rest-1.0) файлы в OneDrive, чтобы управлять их обновлением и делать обновления доступными для других пользователей.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
-Чтобы управлять ролями и назначать доступ к ресурсам в провайдерах управления доступом на основе ролей (RBAC), таких как Microsoft Intune, используйте [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta). Ресурс **unifiedRoleAssignmentMultiple** поддерживает определение одной роли в массиве областей и назначение роли для нескольких субъектов (например, пользователей). 
+- Чтобы управлять ролями и назначать доступ к ресурсам в провайдерах управления доступом на основе ролей (RBAC), таких как Microsoft Intune, используйте [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-1.0). Ресурс **unifiedRoleAssignmentMultiple** поддерживает определение одной роли в массиве областей и назначение роли для нескольких субъектов (например, пользователей).
+- Получите доступ к определенным типам [политик для организации](/graph/api/resources/policy-overview?view=graph-rest-1.0), используя `/policies`сегмент URL и указав тип политики. Например, организация может применить политику для автоматического выхода пользователя из веб-сеанса после периода бездействия; см. операции CRUD для экземпляров [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-1.0). Это [серьезное изменение](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-1.0/), упрощающее обнаружение всех политик путем группировки всех типизированных политик в сегменте `/policies`. Доступ к другим типизированным политикам осуществляется аналогичным образом: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0) и [tokenIssuancePolicy](/graph/api/resources/tokenissuancetimepolicy?view=graph-rest-1.0). 
+
+## <a name="april-2020-new-in-preview-only"></a>Апрель 2020 г.: новые возможности только в предварительной версии
+
+### <a name="devices-and-apps"></a>Устройства и приложения
+Обновления Intune за [апрель](changelog.md#april-2020).
+
+### <a name="identity-and-access"></a>Удостоверение и доступ
+- [Отслеживание изменений](/graph/api/administrativeunit-delta?view=graph-rest-beta), касающихся [административных единиц](/graph/api/resources/administrativeunit?view=graph-rest-beta).
+- [Отслеживание изменений](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta), касающихся [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta).
+- [Управление](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta) пользовательскими [методами проверки подлинности](/graph/api/resources/authenticationmethod?view=graph-rest-beta), среди которых [пароль](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta) или [телефон](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta). Например, [сброс пароля пользователя](/graph/api/passwordauthenticationmethod-resetpassword?view=graph-rest-beta) и [получение состояния сброса](/graph/api/authenticationoperation-get?view=graph-rest-beta) или [добавление номера телефона](/graph/api/authentication-post-phonemethods?view=graph-rest-beta) пользователя для проверки подлинности с помощью SMS или голосового вызова, если для этого пользователя включена соответствующая политика.
+
+### <a name="reports--identity-and-access-reports"></a>Отчеты | Отчеты об удостоверениях и доступе
+[Список](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) [проверяющих сторон](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts), настроенных в службах федерации Active Directory.
+
+### <a name="reports--office-365-usage-reports"></a>Отчеты | Отчеты об использовании Office 365
+Просмотр данных о **созданных собраниях** и **действиях с уведомлениями о собраниях** в отчетах CSV, включающих [счетчики действий с электронной почтой](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta), [счетчики пользователей, совершающих действия с электронной почтой](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) и [данные о действиях пользователей с электронной почтой](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta).
 
 
 ## <a name="march-2020-new-and-generally-available"></a>Март 2020 г.: новые и общедоступные возможности

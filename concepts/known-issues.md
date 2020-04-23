@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 6a62de57a5fe18438807f817f67a17bcf0a731dd
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: e673e03ea0750fbdbb6c289ceff114b4f5ea1a71
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200308"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543179"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -86,11 +86,11 @@ GET /me/calendars/{id}/events
 
 ### <a name="additional-notifications-for-users"></a>Дополнительные уведомления для пользователей
 
-В [подписки](/graph/api/resources/subscription) на изменения для **пользователей** с параметром **changeType**, имеющим значение **updated**, также будут поступать уведомления **changeType**: **updated** при создании и удалении пользователей.
+[Подписки](/graph/api/resources/subscription) на изменения для **пользователя** с **changeType**, для которого установлено значение **обновлено**, также будут получать уведомления о **changeType**: **обновлено** при создании пользователя и обратимом удалении пользователя.
 
 ### <a name="additional-notifications-for-groups"></a>Дополнительные уведомления для групп
 
-В [подписки](/graph/api/resources/subscription) на изменения для **групп** с параметром **changeType**, имеющим значение **updated**, также будут поступать уведомления **changeType**: **updated** при создании и удалении групп.
+[Подписки](/graph/api/resources/subscription) на изменения для **группы** с **changeType**, для которого установлено значение **обновлено**, также будут получать уведомления о **changeType**: **обновлено** при создании группы и обратимом удалении группы.
 
 ## <a name="cloud-communications"></a>Облачные коммуникации 
 
@@ -316,10 +316,12 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ## <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
 
-### <a name="get-teams-and-post-teams-are-not-supported"></a>Методы GET /teams и POST /teams не поддерживаются
+### <a name="get-teams-is-not-supported"></a>GET / команды не поддерживается
 
-Сведения о получении списка команд см. в статьях [Перечисление всех команд](teams-list-all-teams.md) и [Перечисление ваших команд](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
-Сведения о создании команд см. в статье [Создание команды](/graph/api/team-put-teams?view=graph-rest-1.0).
+Чтобы получить список команд, см. [список всех команд](teams-list-all-teams.md) и [список ваших команд](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
+
+### <a name="post-teams-is-only-available-in-beta"></a>POST / команды доступны только в бета-версии
+Чтобы создать команды в v1.0, см. [создание команды](/graph/api/team-put-teams?view=graph-rest-1.0).
 
 ### <a name="missing-teams-in-list-all-teams"></a>Отсутствующие команды в списке всех команд
 

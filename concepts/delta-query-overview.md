@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 59c3418c2f3596264f4e6029c926c51f5d37169b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 47d28c4bced21ad182acc9c04452f7172f5b821b
+ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471581"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "43557887"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -104,7 +104,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 | **Коллекция ресурсов**                                        | **API**                                                                                                                                                                                |
 | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Приложения (предварительная версия)                                         | Функция [delta](/graph/api/application-delta) ресурса [application](/graph/api/resources/application) (предварительная версия)                     |
+| Приложения                                         | Функция [delta](/graph/api/application-delta) ресурса [application](/graph/api/resources/application)                     |
 | Административные единицы (предварительная версия)                                         | Функция [delta](/graph/api/administrativeunit-delta) ресурса [administrativeUnit](/graph/api/resources/administrativeunit) (предварительная версия)                     |
 | Сообщения чата в канале (предварительная версия)                            | Функция [delta](/graph/api/chatmessage-delta) [chatMessage](/graph/api/resources/chatmessage) |
 | Классы (предварительная версия)                                              | Функция [delta](/graph/api/educationclass-delta) ресурса [educationClass](/graph/api/resources/educationclass) (предварительная версия)                     |
@@ -117,6 +117,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | Папки почты                                                   | Функция [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) ресурса [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)                                    |
 | Сообщения в папке                                           | Функция [delta](/graph/api/message-delta?view=graph-rest-1.0) ресурса [message](/graph/api/resources/message?view=graph-rest-1.0)                                             |
 | Контакты организации | функция[delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) ресурса [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) |
+| OAuth2PermissionGrants (предварительная версия) | Функция [delta](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta) ресурса [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta) (предварительная версия) |
 | Папки личных контактов                                       | Функция [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) ресурса [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0)                           |
 | Личные контакты в папке                                  | Функция [delta](/graph/api/contact-delta?view=graph-rest-1.0) ресурса [contact](/graph/api/resources/contact?view=graph-rest-1.0)    
 | Элементы Planner\*\* (предварительная версия)                                    | Функция [delta](/graph/api/planneruser-list-delta) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser) (предварительный просмотр)|                                         |
