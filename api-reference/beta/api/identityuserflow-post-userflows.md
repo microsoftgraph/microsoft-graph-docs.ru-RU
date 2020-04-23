@@ -2,19 +2,19 @@
 title: Создание Усерфлов
 description: Используйте этот API для создания нового Усерфлов.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cc74c441e1dcf1c508f7192dea9812f067e5a8c3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 777adf601bf71676c505d1a9340f87b7575fc0c7
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446452"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218824"
 ---
 # <a name="create-userflow"></a>Создание Усерфлов
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ POST /identity/userFlows
 | Авторизация | Bearer {токен}. Обязательный. |
 |Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [усерфлов](../resources/identityuserflow.md) в формате JSON.
 
