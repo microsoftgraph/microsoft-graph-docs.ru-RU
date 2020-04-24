@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f4df58deab010d6cb7b5374210ebde1aad2eb6d2
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 7119135f1019e2b1309abdaebbda2dd9ac960f09
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218985"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43806374"
 ---
 # <a name="delete-unifiedroleassignmentmultiple"></a>Удаление unifiedRoleAssignmentMultiple
 
@@ -26,9 +26,9 @@ ms.locfileid: "43218985"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Ролеманажемент. ReadWrite. Directory |
+| Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | Ролеманажемент. Read. Directory, Ролеманажемент. ReadWrite. Directory |
+| Для приложений | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ DELETE /roleManagement/deviceManagement/roleAssignments/{id}
 
 | Имя | Описание |
 |:---- |:----------- |
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

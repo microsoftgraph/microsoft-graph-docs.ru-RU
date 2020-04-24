@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7e227769aca8f3a0773bdc446ea9016e8c4653ff
-ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
+ms.openlocfilehash: 4eca16f51df83f1cd7c54776dfea7554cff7c382
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43581664"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43805752"
 ---
 # <a name="workbooktable-range"></a>Воркбуктабле: Range
 
@@ -24,7 +24,7 @@ ms.locfileid: "43581664"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Files.ReadWrite    |
 |Для приложений | Не поддерживается. |
 
@@ -57,7 +57,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/Range
   "blockType": "request",
   "name": "table_range"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/Range
 ```
 # <a name="c"></a>[C#](#tab/csharp)
