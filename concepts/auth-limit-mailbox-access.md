@@ -4,12 +4,12 @@ description: Чтобы ограничить область разрешений
 author: svpsiva
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9ccc33acff5c95cde3f4ba210684b177cc69334c
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 75778efe46552eef0c7798cd602eed99ef871d5e
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969491"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43806835"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>Ограничение области разрешений для приложений с указанием определенных почтовых ящиков Exchange Online 
 
@@ -48,6 +48,8 @@ ms.locfileid: "37969491"
 ## <a name="supported-permissions-and-additional-resources"></a>Поддерживаемые разрешения и дополнительные ресурсы
 Администраторы могут использовать командлеты ApplicationAccessPolicy для управления доступом к почтовым ящикам приложения, которому предоставлены указанные ниже разрешения. 
 - Mail.Read
+- Mail.ReadBasic
+- Mail.ReadBasic.All
 - Mail.ReadWrite
 - Mail.Send
 - MailboxSettings.Read  
