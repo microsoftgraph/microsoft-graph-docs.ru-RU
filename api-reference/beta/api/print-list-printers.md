@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c399e5e375ccd0890c2b8e31663d39d952467c09
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 33171e0878c05d044a1f0d4dbde181600e0605ed
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062142"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812536"
 ---
 # <a name="list-printers"></a>Список принтеров
 
@@ -27,7 +27,7 @@ ms.locfileid: "43062142"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /print/printers
 
 ### <a name="exceptions"></a>Исключения
 * Операторы `$expand` and `select` поддерживаются для свойства `share` навигации, но не для `jobs`.
-* `$count` Оператор не поддерживается.
+* Некоторые операторы не поддерживаются: `$count`, `$orderby`, `$search`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|

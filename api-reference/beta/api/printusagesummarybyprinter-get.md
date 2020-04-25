@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: universal-print
 ms.date: 2/4/2020
 doc_type: apiPageType
-ms.openlocfilehash: 71bce2c90d9ade62f5d473e2d0e530767e8092fe
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: ceccd866e4ba8e19f2c4e93ff8e06e9da700cc47
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896164"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812564"
 ---
 # <a name="get-printusagesummarybyprinter"></a>Получение Принтусажесуммарибипринтер
 
@@ -30,7 +30,7 @@ ms.locfileid: "42896164"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,12 +41,15 @@ GET /print/reports/dailyPrintUsageSummariesByPrinter/{id}
 GET /print/reports/monthlyPrintUsageSummariesByPrinter/{id}
 ```
 
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [принтусажесуммарибипринтер](../resources/printusagesummarybyprinter.md) в тексте отклика.

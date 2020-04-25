@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 02fc83e45a19165a23600c9c03bc94e74ff9f493
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 824c54b4a20ed24357ce1aaf4764240042b4cb2d
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42948299"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812502"
 ---
 # <a name="list-printershares"></a>Список Принтершарес
 
@@ -41,8 +41,7 @@ GET /print/printerShares
 Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
 ### <a name="exceptions"></a>Исключения
-
-* `$count` Оператор не поддерживается.
+Некоторые операторы не поддерживаются: `$count`, `$orderby`, `$search`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|

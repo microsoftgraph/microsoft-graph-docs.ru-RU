@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: efeb9a9007fbe09636db266f145a294f12ab4d6e
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 4ea105329440bfb28ec9b03b323d7482e42725ed
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896161"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812571"
 ---
 # <a name="get-printusagesummarybyuser"></a>Получение Принтусажесуммарибюсер
 
@@ -29,7 +29,7 @@ ms.locfileid: "42896161"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,12 +40,15 @@ GET /print/reports/dailyPrintUsageSummariesByUser/{id}
 GET /print/reports/monthlyPrintUsageSummariesByUser/{id}
 ```
 
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [принтусажесуммарибюсер](../resources/printusagesummarybyuser.md) в тексте отклика.

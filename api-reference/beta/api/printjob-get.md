@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d1996ab8a7b1a5e8058654b54bba72907ba2fadf
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 2833251d9d9ad7e65caafcebbc494f31c1ed8f7b
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42947570"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812504"
 ---
 # <a name="get-printjob"></a>Получение printJob
 
@@ -36,6 +36,9 @@ ms.locfileid: "42947570"
 ```http
 GET /print/printers/{id}/jobs/{id}
 ```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|

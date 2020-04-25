@@ -4,12 +4,12 @@ description: В этой статье представлены ответы на
 author: jasonjoh
 ms.author: jasonjoh
 localization_priority: Normal
-ms.openlocfilehash: bd1405f4805bb9740fb7119adcf2f877236d19cf
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
-ms.translationtype: HT
+ms.openlocfilehash: 00e1d3d20276c888f2f22d7e62f7434da282bca9
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084091"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43806822"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Краткое руководство по Microsoft Graph: вопросы и ответы
 
@@ -36,7 +36,7 @@ ms.locfileid: "35084091"
 
 ### <a name="can-i-get-the-quick-start-code-without-downloading-through-the-quick-start-page"></a>Можно ли получить код из краткого руководства, не выполняя скачивание на странице краткого руководства?
 
-Да, конечно! Каждый скачиваемый экземпляр краткого руководства основан на [учебнике по Microsoft Graph](tutorials.md), поэтому у вас есть два других варианта для получения такого же исходного кода:
+Да, конечно! Каждый скачиваемый экземпляр краткого руководства основан на [учебнике по Microsoft Graph](tutorials.yml), поэтому у вас есть два других варианта для получения такого же исходного кода:
 
 - Выполнить сборку кода самостоятельно, следуя пошаговым инструкциям из учебника.
 - Скачать готовый проект из соответствующего репозитория GitHub и выполнить инструкции из файла сведений, чтобы настроить и запустить пример.
@@ -50,17 +50,18 @@ ms.locfileid: "35084091"
 
 | Краткое руководство | Учебник | Репозиторий GitHub |
 |-------------|----------|-------------------|
-| Android | [Учебник](/graph/tutorials/android) | [GitHub](https://github.com/microsoftgraph/android-java-connect-sample) |
+| Android | [Учебник](/graph/tutorials/android) | [GitHub](https://github.com/microsoftgraph/msgraph-training-android) |
 | Angular | [Учебник](/graph/tutorials/angular) | [GitHub](https://github.com/microsoftgraph/msgraph-training-angularspa) |
-| ASP.NET MVC | [Учебник](/graph/tutorials/aspnet) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
-| iOS Swift | Нет | [GitHub](https://github.com/microsoftgraph/ios-swift-connect-sample) |
-| iOS Objective-C | Нет | [GitHub](https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample) |
+| ASP.NET MVC | [Учебник](/learn/modules/msgraph-build-aspnetmvc-apps) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
+| iOS Swift | Повторен (/граф/туториалс/Иос-Свифт | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-swift) |
+| iOS Objective-C | Повторен (/граф/туториалс/Иос-обжективек | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-objectivec) |
 | Node.js | [Учебник](/graph/tutorials/node) | [GitHub](https://github.com/microsoftgraph/msgraph-training-nodeexpressapp) |
 | PHP | [Учебник](/graph/tutorials/php) | [GitHub](https://github.com/microsoftgraph/msgraph-training-phpapp) |
 | Python | [Учебник](/graph/tutorials/python) | [GitHub](https://github.com/microsoftgraph/msgraph-training-pythondjangoapp) |
+| React | [Учебник](/graph/tutorials/react) | [GitHub](https://github.com/microsoftgraph/msgraph-training-reactspa) |
 | Ruby | [Учебник](/graph/tutorials/ruby) | [GitHub](https://github.com/microsoftgraph/msgraph-training-rubyrailsapp) |
 | UWP | [Учебник](/graph/tutorials/uwp) | [GitHub](https://github.com/microsoftgraph/msgraph-training-uwp) |
-| Xamarin | Нет | [GitHub](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) |
+| Xamarin | Повторен (/граф/туториалс/ксамарин | [GitHub](https://github.com/microsoftgraph/msgraph-training-xamarin) |
 
 ### <a name="why-dont-any-of-the-quick-start-samples-show-advanced-authentication-use-cases"></a>Почему в примерах из краткого руководства нет вариантов использования расширенной проверки подлинности?
 
