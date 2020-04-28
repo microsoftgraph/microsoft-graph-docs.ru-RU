@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 8aa9312bf8b7e8f9a2cec049b8275d4ce7a04012
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 26715bb8eed9c671b88951bd1deb875f1d11d467
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43806844"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917574"
 ---
 # <a name="printershare-resource-type"></a>Тип ресурса Принтершаре
 
@@ -26,12 +26,12 @@ ms.locfileid: "43806844"
 |:-------------|:------------|:------------|
 | [List](../api/print-list-printershares.md) | Коллекция [принтершаре](printershare.md) | Получение списка общих принтеров в клиенте. |
 | [получение](../api/printershare-get.md); | [принтершаре](printershare.md) | Чтение свойств и связей объекта **принтершаре** . |
-| [Обновление](../api/printershare-update.md) | [принтершаре](printershare.md) | Обновление объекта **принтершаре** . |
+| [обновление](../api/printershare-update.md). | [принтершаре](printershare.md) | Обновление объекта **принтершаре** . |
 | [удаление](../api/printershare-delete.md); | Нет | Отменяет общий доступ к принтеру. |
-| [Список allowedUsers](../api/printershare-list-allowedusers.md) | Коллекция [userIdentity](useridentity.md) | Получение списка пользователей, которым предоставлен доступ к отправку заданий печати на связанный общий принтер. |
+| [Список allowedUsers](../api/printershare-list-allowedusers.md) | Коллекция [принтусеридентити](printuseridentity.md) | Получение списка пользователей, которым предоставлен доступ к отправку заданий печати на связанный общий принтер. |
 | [Добавление allowedUser](../api/printershare-post-allowedusers.md) | Нет | Предоставьте заданному пользователю доступ на отправку заданий печати в соответствующую общую папку принтера. |
 | [Удаление allowedUser](../api/printershare-delete-alloweduser.md) | Нет | Отозвать доступ к общему принтеру для указанного пользователя. |
-| [Список allowedGroups](../api/printershare-list-allowedgroups.md) | Коллекция [удостоверений](identity.md) | Получение списка групп, которым предоставлен доступ на отправку заданий печати на связанный общий принтер. |
+| [Список allowedGroups](../api/printershare-list-allowedgroups.md) | Коллекция [принтидентити](printidentity.md) | Получение списка групп, которым предоставлен доступ на отправку заданий печати на связанный общий принтер. |
 | [Добавление allowedGroup](../api/printershare-post-allowedgroups.md) | Нет | Предоставление указанному групповому доступу на отправку заданий печати на связанный общий принтер. |
 | [Удаление allowedGroup](../api/printershare-delete-allowedgroup.md) | Нет | Отзыв доступа к общему принтеру из указанной группы. |
 
@@ -46,8 +46,8 @@ ms.locfileid: "43806844"
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |Printer|[Printer](printer.md)|Принтер, с которым связан этот общий принтер. |
-|алловедусерс|Коллекция [userIdentity](useridentity.md)|Пользователи, у которых есть доступ к печати с помощью принтера.|
-|алловедграупс|[identity](identity.md)|Группы, у которых пользователи имеют доступ к печати с помощью принтера.|
+|алловедусерс|Коллекция [принтусеридентити](printuseridentity.md)|Пользователи, у которых есть доступ к печати с помощью принтера.|
+|алловедграупс|[принтидентити](printidentity.md)|Группы, у которых пользователи имеют доступ к печати с помощью принтера.|
 
 ## <a name="json-representation"></a>Представление JSON
 

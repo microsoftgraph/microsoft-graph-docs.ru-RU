@@ -2,15 +2,15 @@
 title: Список appliesTo
 description: Получение списка объектов directoryObject, к которым был применен объект Токенлифетимеполици.
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 91f92a58c6e6f0c04c667e0f46e7497f102a79eb
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: f5b0b2ea97ada9896b6606a18bc7d1d73d609b36
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216332"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917420"
 ---
 # <a name="list-appliesto"></a>Список appliesTo
 
@@ -46,7 +46,7 @@ GET /policies/tokenLifetimePolicies/{id}/appliesTo
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

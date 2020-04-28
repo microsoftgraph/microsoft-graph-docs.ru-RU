@@ -2,15 +2,15 @@
 title: Создание Активитибаседтимеаутполици
 description: Создание нового Активитибаседтимеаутполици.
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a862e485be19f432ee3a2abc8519639444e9f169
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d6c8bcecd10d91c4298635d9268e0b3fe7688633
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217941"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916358"
 ---
 # <a name="create-activitybasedtimeoutpolicy"></a>Создание Активитибаседтимеаутполици
 
@@ -42,7 +42,7 @@ POST policies/activityBasedTimeoutPolicies
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса

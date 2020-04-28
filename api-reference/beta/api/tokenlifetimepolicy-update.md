@@ -2,15 +2,15 @@
 title: Обновление токенлифетимеполици
 description: Обновление свойств объекта Токенлифетимеполици.
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 949a2d0a1f06e25c4c5323f45164bbc915009cc0
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 4fef59f4161feffcb7a4e5ce5adf77cb0af2c4b1
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216010"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916328"
 ---
 # <a name="update-tokenlifetimepolicy"></a>Обновление токенлифетимеполици
 
@@ -42,7 +42,7 @@ PATCH /policies/tokenLifetimePolicies/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,9 +51,9 @@ PATCH /policies/tokenLifetimePolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный атрибут.|
+|RDLC|Коллекция объектов string| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный.|
 |description|String| Описание для этой политики.|
-|displayName|Строка| Отображаемое имя для этой политики. Обязательный атрибут.|
+|displayName|Строка| Отображаемое имя для этой политики. Обязательный.|
 |исорганизатиондефаулт|Boolean|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
 
 ## <a name="response"></a>Отклик

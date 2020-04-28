@@ -2,15 +2,15 @@
 title: Обновление Токениссуанцеполици
 description: Обновление свойств объекта Токениссуанцеполици.
 localization_priority: Normal
-author: dkershaw10
+author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0cfb3cf1f7f24ad1431181f94248770a53d7f265
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: a521a6b8999abb9ff48959be8f42e7f7094d83f7
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216416"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916313"
 ---
 # <a name="update-tokenissuancepolicy"></a>Обновление Токениссуанцеполици
 
@@ -51,9 +51,9 @@ PATCH /policies/tokenIssuancePolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный атрибут.|
+|RDLC|Коллекция объектов string| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный.|
 |description|String| Описание для этой политики.|
-|displayName|Строка| Отображаемое имя для этой политики. Обязательный атрибут.|
+|displayName|Строка| Отображаемое имя для этой политики. Обязательный.|
 |исорганизатиондефаулт|Boolean|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
 
 ## <a name="response"></a>Отклик

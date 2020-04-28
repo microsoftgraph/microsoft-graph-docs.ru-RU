@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 4d83c17334616af40bb77f6af8ce3246e188ef20
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 3923681a8cb44ab0d610c44ec6f8c4961f1f71e3
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43807129"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916958"
 ---
 # <a name="list-allowedgroups"></a>Список allowedGroups
 
@@ -45,7 +45,7 @@ GET /print/printerShares/{id}/allowedGroups
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Identity](../resources/identity.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принтидентити](../resources/printidentity.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/print/printerShares/{id}/allowedGroups
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.identity",
+  "@odata.type": "microsoft.graph.printIdentity",
   "isCollection": true
 } -->
 ```http

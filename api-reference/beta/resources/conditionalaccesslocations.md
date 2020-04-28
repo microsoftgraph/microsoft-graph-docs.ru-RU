@@ -2,15 +2,15 @@
 title: Тип ресурса Кондитионалакцесслокатионс
 description: Представляет расположения, включенные в область политики и исключенные из нее.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 09440c789ae98ae2d5eb46de26f56b32bf0ce578
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a92d99d7a9e80084b8ec1ce385ce76d1f522b359
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413410"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916790"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>Тип ресурса Кондитионалакцесслокатионс
 
@@ -24,8 +24,8 @@ ms.locfileid: "43413410"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| инклуделокатионс | Коллекция String | Идентификаторы расположений в области применения политики, если `All`явно не `AllTrusted`исключены, или. |
-| ексклуделокатионс | Коллекция String | Идентификаторы расположений, исключенные из области применения политики. |
+| инклуделокатионс | Коллекция объектов string | Идентификаторы расположений в области применения политики, если `All`явно не `AllTrusted`исключены, или. |
+| ексклуделокатионс | Коллекция объектов string | Идентификаторы расположений, исключенные из области применения политики. |
 
 ## <a name="json-representation"></a>Представление JSON
 

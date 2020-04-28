@@ -2,15 +2,15 @@
 title: Список политик
 description: Получение списка объектов Кондитионалакцессполици.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7deae297b3f1f1b8f513af5906031549d446e6cd
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: e0142ca08495bf13545c6a41d9b49e13f0c721c1
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43720832"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916474"
 ---
 # <a name="list-policies"></a>Список политик
 
@@ -26,8 +26,8 @@ ms.locfileid: "43720832"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                       |
 |:--------------------------------------|:----------------------------------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)     | Policy.Read.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,9 +46,9 @@ GET /identity/conditionalAccess/policies
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

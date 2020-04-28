@@ -2,15 +2,15 @@
 title: Тип ресурса Намедлокатион
 description: Это базовый класс, представляющий имя расположения Azure Active Directory. Именованные расположения — это настраиваемые правила, определяющие сетевые расположения, которые можно использовать в политике условного доступа.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f12d72b11c7db0a34b068b92f23e1c425f5b6495
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4537824971d2417c7f202ad12c1e8c371acf5650
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459792"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917140"
 ---
 # <a name="namedlocation-resource-type"></a>Тип ресурса Намедлокатион
 

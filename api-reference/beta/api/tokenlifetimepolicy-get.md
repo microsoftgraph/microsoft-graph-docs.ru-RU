@@ -2,15 +2,15 @@
 title: Получение Токенлифетимеполици
 description: Получение свойств и связей объекта Токенлифетимеполици.
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b5172537da834969846acce2193547f3597d1acb
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 257c8890d92f2121d104c57e60dab9cad1d81013
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216339"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916351"
 ---
 # <a name="get-tokenlifetimepolicy"></a>Получение Токенлифетимеполици
 
@@ -46,7 +46,7 @@ GET /policies/tokenLifetimePolicies/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

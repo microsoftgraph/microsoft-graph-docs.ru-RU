@@ -2,15 +2,15 @@
 title: Тип ресурса Кондитионалакцесскондитионсет
 description: Представляет тип условий, определяющих, когда применяется политика.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f5db4c6367834733a4a5fbbb6c7a8d6b08393160
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 4eaacea812417af2429b1da8784197945d01bc4b
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805679"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916825"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>Тип ресурса Кондитионалакцесскондитионсет
 

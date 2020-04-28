@@ -2,15 +2,15 @@
 title: Список АктивитибаседтимеаутполиЦиес
 description: Получение списка объектов Активитибаседтимеаутполици.
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 81ea78bab6a1725711696aefb9d0a46656248212
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 0fd9326b58be97d99282c944b14a503d0b638cbf
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217948"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916362"
 ---
 # <a name="list-activitybasedtimeoutpolicies"></a>Список АктивитибаседтимеаутполиЦиес
 
@@ -46,7 +46,7 @@ GET policies/activityBasedTimeoutPolicies
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

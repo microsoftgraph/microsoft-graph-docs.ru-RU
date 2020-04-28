@@ -2,15 +2,15 @@
 title: Список appliesTo
 description: Получение списка объектов directoryObject, к которым был применен объект Клаимсмаппингполици.
 localization_priority: Normal
-author: dkershaw10
+author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5d6f0b99694b2799c924a57592b8e844acf51188
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 42a44da13ce5b986fe2830303f4dc9cb1fd67598
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216897"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916622"
 ---
 # <a name="list-appliesto"></a>Список appliesTo
 
@@ -46,7 +46,7 @@ GET /policies/claimsMappingPolicies/{id}/appliesTo
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 85e9d8361ef54725493712765b847c14b4af4110
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: b4325f30133ad42e4b7c3df9669bede2b82722c8
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986126"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916425"
 ---
 # <a name="get-onlinemeeting"></a>Получение Онлинемитинг
 
@@ -30,7 +30,7 @@ ms.locfileid: "42986126"
 |:---------------------------------------|:------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Для приложения                            | OnlineMeetings.Read.All                               |
+| Для приложений                            | OnlineMeetings.Read.All                               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,11 +47,11 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
-| Accept-Language  | Язык. Необязательное свойство. |
+| Принять-Язык  | Язык. Необязательное. |
 
-Если `Accept-Language` запрос содержит заголовок HTTP, то `content` `joinInformation` будет выбран язык и языковой стандарт, указанный в `Accept-Language` заголовке. Контент по умолчанию будет отображаться на английском языке.
+Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`. Контент по умолчанию будет на английском языке.
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -104,8 +104,8 @@ Content-Length: 1574
   "@odata.type": "#microsoft.graph.onlineMeeting",
   "autoAdmittedUsers": "everyone",
   "audioConferencing": {
-    "tollNumber": "+12525634478",
-    "tollFreeNumber": "+18666390588",
+    "tollNumber": "55525634478",
+    "tollFreeNumber": "55566390588",
     "ConferenceId": "9999999",
     "dialinUrl": "https://dialin.teams.microsoft.com/6787A136-B9B8-4D39-846C-C0F1FF937F10?id=xxxxxxx"
   },
@@ -127,7 +127,7 @@ Content-Length: 1574
             "@odata.type": "#microsoft.graph.identity",
             "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8",
             "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
-            "displayName": "John"
+            "displayName": "Tyler Stein"
           }
         },
         "upn": "upn-value"
@@ -140,7 +140,7 @@ Content-Length: 1574
           "@odata.type": "#microsoft.graph.identity",
           "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
           "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
-          "displayName": "Bob"
+          "displayName": "Jasmine Miller"
         }
       },
       "upn": "upn-value"
@@ -151,7 +151,7 @@ Content-Length: 1574
   "videoTeleconferenceId": "123456789"
 }
 ```
->**Примечание:** Если для параметра Accept-Language: JA указан японский, например, в ответ будут включены указанные ниже данные.
+>**Примечание.** если указан японский язык, в ответ будут включены перечисленные ниже данные.
 
 ```json
     "joinInformation": {

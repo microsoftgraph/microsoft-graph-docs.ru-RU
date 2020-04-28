@@ -2,15 +2,15 @@
 title: Список appliesTo
 description: Получение списка объектов directoryObject, к которым был применен объект Хомереалмдисковериполици.
 localization_priority: Normal
-author: dkershaw10
+author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 69948b2c30a16b5764573712b29ce51b98fa849d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 6160a43a0d07e8c3da821898093e3531cb84bebe
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218515"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916495"
 ---
 # <a name="list-appliesto"></a>Список appliesTo
 
@@ -46,7 +46,7 @@ GET /policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

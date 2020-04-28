@@ -2,15 +2,15 @@
 title: Удаление Активитибаседтимеаутполици
 description: Удаление Активитибаседтимеаутполици.
 localization_priority: Normal
-author: davidmu1
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2d6514bf2b217e08cc58afab54b4e7e33773d8ae
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 9ee3ed0c1abd7c1e392bbed47e5fba568506be1b
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806339"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917106"
 ---
 # <a name="delete-activitybasedtimeoutpolicy"></a>Удаление Активитибаседтимеаутполици
 

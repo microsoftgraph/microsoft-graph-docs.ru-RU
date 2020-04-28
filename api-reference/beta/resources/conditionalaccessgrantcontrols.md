@@ -2,15 +2,15 @@
 title: Тип ресурса Кондитионалакцессгрантконтролс
 description: Представляет элементы управления предоставлением, которые должны быть выполнены для передачи политики.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9746bfb37dd3887def0f070256d90e46efecbdb6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a4312accf3b908689a0037d3c16a7ba2242c2ddf
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413433"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916793"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>Тип ресурса Кондитионалакцессгрантконтролс
 
@@ -25,9 +25,9 @@ ms.locfileid: "43413433"
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
 | operator | String | Определяет связь элементов управления предоставлением. Возможные значения: `AND`, `OR`. |
-| буилтинконтролс | Коллекция String | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `Block`, `Mfa`, `CompliantDevice`, `DomainJoinedDevice`, `ApprovedApplication`,`CompliantApplication` |
-| кустомаусентикатионфакторс | Коллекция String | Список идентификаторов настраиваемых элементов управления, необходимых для политики. Дополнительные сведения о настраиваемых элементах управления:https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
-| термсофусе | Коллекция String | Список [условий использования](agreement.md) идентификаторов, необходимых для политики. |
+| буилтинконтролс | Коллекция объектов string | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `Block`, `Mfa`, `CompliantDevice`, `DomainJoinedDevice`, `ApprovedApplication`,`CompliantApplication` |
+| кустомаусентикатионфакторс | Коллекция объектов string | Список идентификаторов настраиваемых элементов управления, необходимых для политики. Дополнительные сведения о настраиваемых элементах управления:https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
+| термсофусе | Коллекция объектов string | Список [условий использования](agreement.md) идентификаторов, необходимых для политики. |
 
 ## <a name="relationships"></a>Связи
 

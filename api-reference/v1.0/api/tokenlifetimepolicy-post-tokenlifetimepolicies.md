@@ -2,15 +2,15 @@
 title: Создание Токенлифетимеполици
 description: Создание нового Токенлифетимеполици.
 localization_priority: Normal
-author: davidmu1
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: db33f9a5e02e2e5b7763f412be3dd7e49669a003
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: e2e5843d29261d4f6fd98d0b6bb3810a17536020
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806082"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917007"
 ---
 # <a name="create-tokenlifetimepolicy"></a>Создание Токенлифетимеполици
 
@@ -45,7 +45,7 @@ POST policies/tokenLifetimePolicies
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В тексте запроса добавьте представление объекта [токенлифетимеполици](../resources/tokenlifetimepolicy.md) в формате JSON.
 

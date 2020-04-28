@@ -2,15 +2,15 @@
 title: Тип ресурса Кондитионалакцессплатформс
 description: Платформы, включенные в область политики и исключенные из нее.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5907e7162093b7d0d9fb796f61fc0cf110350417
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 27cf8f2b6a022f4d5ca17d716b35b6f357d23471
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413355"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916797"
 ---
 # <a name="conditionalaccessplatforms-resource-type"></a>Тип ресурса Кондитионалакцессплатформс
 
@@ -24,8 +24,8 @@ ms.locfileid: "43413355"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|инклудеплатформс|Коллекция String| Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`.|
-|ексклудеплатформс|Коллекция String| Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`.|
+|инклудеплатформс|Коллекция объектов string| Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`.|
+|ексклудеплатформс|Коллекция объектов string| Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`.|
 
 ## <a name="relationships"></a>Связи
 

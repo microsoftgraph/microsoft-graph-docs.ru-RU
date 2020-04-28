@@ -2,15 +2,15 @@
 title: Список Токениссуанцеполици
 description: Получение списка объектов Токениссуанцеполици.
 localization_priority: Normal
-author: dkershaw10
+author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0e1f743123afe283dca9824599ca5b29607a85ae
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 108091747e7fd9e0b14db9161c05bd0a25b2ef4e
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216556"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916347"
 ---
 # <a name="list-tokenissuancepolicy"></a>Список Токениссуанцеполици
 

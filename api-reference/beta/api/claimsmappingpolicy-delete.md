@@ -2,15 +2,15 @@
 title: Удаление Клаимсмаппингполици
 description: Удаление Клаимсмаппингполици.
 localization_priority: Normal
-author: dkershaw10
+author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5365bd013a52b08459ded94d4ebf384f9cea6255
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 4f1075d4f9cdd2ac8f9635566fbccc3d49921d80
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216956"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916692"
 ---
 # <a name="delete-claimsmappingpolicy"></a>Удаление Клаимсмаппингполици
 
@@ -42,7 +42,7 @@ DELETE /policies/claimsMappingPolicies/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

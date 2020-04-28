@@ -2,15 +2,15 @@
 title: Получение Активитибаседтимеаутполици
 description: Получение свойств объекта Активитибаседтимеаутполици.
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6f855ab41589303fc0695f367e6c885564769648
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 4fbfb2155d0921de33b9aea78e6ab015994d6208
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217955"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916397"
 ---
 # <a name="get-activitybasedtimeoutpolicy"></a>Получение Активитибаседтимеаутполици
 
@@ -46,7 +46,7 @@ GET /policies/activityBasedTimeoutPolicies/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

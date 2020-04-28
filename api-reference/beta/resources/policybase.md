@@ -2,15 +2,15 @@
 title: Тип ресурса основы
 description: Представляет абстрактный базовый тип для типов политик, от которых наследуется наследование.
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 23b023d55c54789b07ccc1a3b95affbf6a79f6b5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a2a07ba2d639faf83d6e8bb4eab3a3e2437333d1
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436888"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917595"
 ---
 # <a name="policybase-resource-type"></a>Тип ресурса основы
 
@@ -20,7 +20,7 @@ ms.locfileid: "43436888"
 
 Представляет абстрактный базовый тип для типов политик, от которых наследуется наследование.
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 
 Нет
 

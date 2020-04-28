@@ -2,15 +2,15 @@
 title: Создание Токениссуанцеполици
 description: Создание нового Токениссуанцеполици.
 localization_priority: Normal
-author: dkershaw10
+author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ca9d61aec1c24198b28f088f0b6aa1e054d89c25
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 56bb0c89d8194f73498f0847d533b2f2c97532b0
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216430"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917440"
 ---
 # <a name="create-tokenissuancepolicy"></a>Создание Токениссуанцеполици
 
@@ -45,7 +45,7 @@ POST policies/tokenIssuancePolicies
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В тексте запроса добавьте представление объекта [токениссуанцеполици](../resources/tokenissuancepolicy.md) в формате JSON.
 

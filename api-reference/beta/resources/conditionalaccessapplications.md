@@ -2,15 +2,15 @@
 title: Тип ресурса Кондитионалакцессаппликатионс
 description: Представляет приложения и действия пользователя, включенные в область политики и исключенные из нее.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6484ec54b5e39ad2e6b189cc70c05fd666b81297
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a1ce31fd39c94299ccb6e2a0cc1330a44a149db3
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413526"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916853"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>Тип ресурса Кондитионалакцессаппликатионс
 
@@ -24,9 +24,9 @@ ms.locfileid: "43413526"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| инклудеаппликатионс | Коллекция String | Список идентификаторов приложений, к которым применяется политика, если явно не исключено (в Ексклудеаппликатионс). Также можно задать значение `All`. |
-| ексклудеаппликатионс | Коллекция String | Список идентификаторов приложений, явно исключенных из политики. |
-| инклудеусерактионс | Коллекция String | Включаемые действия пользователя (например, `urn:user:registersecurityinfo`); |
+| инклудеаппликатионс | Коллекция объектов string | Список идентификаторов приложений, к которым применяется политика, если явно не исключено (в Ексклудеаппликатионс). Также можно задать значение `All`. |
+| ексклудеаппликатионс | Коллекция объектов string | Список идентификаторов приложений, явно исключенных из политики. |
+| инклудеусерактионс | Коллекция объектов string | Включаемые действия пользователя (например, `urn:user:registersecurityinfo`); |
 
 ## <a name="relationships"></a>Связи
 

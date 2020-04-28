@@ -2,15 +2,15 @@
 title: Тип ресурса Кондитионалакцессполици
 description: Представляет политику условного доступа Azure Active Directory. Политики условного доступа — это настраиваемые правила, определяющие сценарий доступа.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0c41993bd31c5ab01a2f89a41a08cde3764df029
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 81eec9b9d1a8a8f931959dced4929a062f506628
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466422"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916755"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>Тип ресурса Кондитионалакцессполици
 
@@ -44,7 +44,7 @@ ms.locfileid: "43466422"
 |сессионконтролс|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Задает элементы управления сеансом, которые применяются после входа. |
 |состояние|string| Задает состояние объекта Кондитионалакцессполици. Возможные значения: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Обязательное. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

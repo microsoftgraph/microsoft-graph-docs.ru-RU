@@ -2,15 +2,15 @@
 title: Тип ресурса Релингпартидетаиледсуммари
 description: Представляет проверяющую сторону в AD FS.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 306c20c31120d2f130562993d8ebd2d7e4083c23
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 291aa6cc327f6c01ec80c95e4da101d3e8f03aae
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543481"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916504"
 ---
 # <a name="relyingpartydetailedsummary-resource-type"></a>Тип ресурса Релингпартидетаиледсуммари
 
@@ -44,7 +44,7 @@ ms.locfileid: "43543481"
 |тоталсигнинкаунт|Int64|Количество успешных и неудачных входных входов в службу федерации Active Directory в указанном периоде.|
 |уникуеусеркаунт|Int64|Количество уникальных пользователей, выполнивших вход в приложение.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

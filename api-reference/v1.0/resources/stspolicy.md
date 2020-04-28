@@ -2,15 +2,15 @@
 title: Тип ресурса Стсполици
 description: Представляет абстрактный базовый тип для типов политики, которые управляют поведением платформы Microsoft Identity.
 localization_priority: Normal
-author: davidmu1
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 29a9125119f360aa4f5eda24393d4098c9d60f73
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 56032480861e52190c9ea2dd80da82c70068c429
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805327"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917525"
 ---
 # <a name="stspolicy-resource-type"></a>Тип ресурса Стсполици
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: c1d8805e54a194eeb584bb980ed8082502b4a872
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 6688f36aef36fa8efc00bf2458911ca719f697cc
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896083"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917588"
 ---
 # <a name="printer-resource-type"></a>Тип ресурса Printer
 
@@ -32,12 +32,12 @@ ms.locfileid: "42896083"
 | [Список заданий](../api/printer-list-jobs.md) | Коллекция [printJob](printjob.md) | Получение списка заданий печати, помещенных в очередь для обработки принтером. |
 | [Создание задания](../api/printer-post-jobs.md) | [printJob](printjob.md) | Создание нового задания печати для принтера. Чтобы начать печать задания, используйте [стартпринтжоб](../api/printjob-startprintjob.md). |
 | [Список соединителей](../api/printer-list-connectors.md) | Коллекция [принтконнектор](printconnector.md) | Получение списка соединителей, с которыми связан этот принтер. |
-| [Список Алловедусерс](../api/printer-list-allowedusers.md) | Коллекция [userIdentity](useridentity.md) | Получение списка пользователей, которым предоставлен доступ к отправку заданий печати на связанный принтер. |
-| [Добавление Алловедусер](../api/printer-post-allowedusers.md) | Нет | Предоставьте заданному пользователю доступ на отправку заданий печати на связанный принтер. |
-| [Удаление Алловедусер](../api/printer-delete-alloweduser.md) | Нет | Отзыв доступа к принтеру для указанного пользователя. |
-| [Список Алловедграупс](../api/printer-list-allowedgroups.md) | Коллекция [удостоверений](identity.md) | Получение списка групп, которым предоставлен доступ на отправку заданий печати на связанный принтер. |
-| [Добавление Алловедграуп](../api/printer-post-allowedgroups.md) | Нет | Предоставление указанному групповому доступу на отправку заданий печати на связанный принтер. |
-| [Удаление Алловедграуп](../api/printer-delete-allowedgroup.md) | Нет | Отзыв доступа к принтеру из указанной группы. |
+| [Список allowedUsers](../api/printer-list-allowedusers.md) | Коллекция [принтусеридентити](printuseridentity.md) | Получение списка пользователей, которым предоставлен доступ к отправку заданий печати на связанный принтер. |
+| [Добавление allowedUser](../api/printer-post-allowedusers.md) | Нет | Предоставьте заданному пользователю доступ на отправку заданий печати на связанный принтер. |
+| [Удаление allowedUser](../api/printer-delete-alloweduser.md) | Нет | Отзыв доступа к принтеру для указанного пользователя. |
+| [Список allowedGroups](../api/printer-list-allowedgroups.md) | Коллекция [принтидентити](printidentity.md) | Получение списка групп, которым предоставлен доступ на отправку заданий печати на связанный принтер. |
+| [Добавление allowedGroup](../api/printer-post-allowedgroups.md) | Нет | Предоставление указанному групповому доступу на отправку заданий печати на связанный принтер. |
+| [Удаление allowedGroup](../api/printer-delete-allowedgroup.md) | Нет | Отзыв доступа к принтеру из указанной группы. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
@@ -46,7 +46,7 @@ ms.locfileid: "42896083"
 |name|String|Имя принтера.|
 |manufacturer|String|Производитель, сообщаемый принтером. Только для чтения.|
 |model|String|Имя модели, сообщаемое принтером. Только для чтения.|
-|регистередби|[userIdentity](useridentity.md)|Пользователь, который зарегистрировал принтер.|
+|регистередби|[принтусеридентити](printuseridentity.md)|Пользователь, который зарегистрировал принтер.|
 |регистереддатетиме|DateTimeOffset|Значение DateTimeOffset при регистрации принтера. Только для чтения.|
 |status|[принтерстатус](printerstatus.md)|Состояние обработки принтера, включая ошибки. Только для чтения.|
 |IsShared|Boolean|Значение true, если принтер является общим; в противном случае — false. Только для чтения.|
@@ -54,14 +54,14 @@ ms.locfileid: "42896083"
 |location|[принтерлокатион](printerlocation.md)|Физическое и/или организационное расположение принтера.|
 |по умолчанию|[принтердефаултс](printerdefaults.md)|Параметры печати по умолчанию для принтера.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |работе|Коллекция [printJob](printjob.md)| Список заданий, помещенных в очередь на печать принтером. Только для чтения. Допускается значение null.|
 |shares|[принтершаре](printershare.md)| Принтершаре, связанный с принтером. Только для чтения. Допускается значение null.|
 |аудиовыход|[принтконнектор](printconnector.md)|Соединители, связанные с принтером.|
-|алловедусерс|Коллекция [userIdentity](useridentity.md)|Пользователи, у которых есть доступ к печати с помощью принтера.|
-|алловедграупс|[identity](identity.md)|Группы, у которых пользователи имеют доступ к печати с помощью принтера.|
+|алловедусерс|Коллекция [принтусеридентити](printuseridentity.md)|Пользователи, у которых есть доступ к печати с помощью принтера.|
+|алловедграупс|[принтидентити](printidentity.md)|Группы, у которых пользователи имеют доступ к печати с помощью принтера.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -86,7 +86,7 @@ ms.locfileid: "42896083"
   "isShared": true,
   "registeredDateTime": "String (timestamp)",
   "acceptingJobs": true,
-  "registeredBy": {"@odata.type": "microsoft.graph.userIdentity"},
+  "registeredBy": {"@odata.type": "microsoft.graph.printUserIdentity"},
   "location": {"@odata.type": "microsoft.graph.printerLocation"},
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
   "defaults": {"@odata.type": "microsoft.graph.printerDefaults"}

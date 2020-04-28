@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: microsoft-identity-platform
 author: kholtz
-ms.openlocfilehash: 7bd0a0d0f5c32f36d887880c148fcd29caeeb7be
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 3e27d397087781e7afc35e5f5ca1b06b3ae4062c
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124471"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917581"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Обзор API журнала аудита Azure AD
 
@@ -61,7 +61,7 @@ Azure AD предоставляет три типа журналов актив�
 :----------|:----
 Получение действий пользователей клиента | [https://graph.microsoft.com/beta/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
 Получение входов пользователей клиента | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
-Получение журналов подготовки | [https://graph.microsoft.com/beta/auditLogs/directoryProvisioning](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryProvisioning&version=beta)
+Получение журналов подготовки | [https://graph.microsoft.com/beta/auditLogs/provisioning](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/Provisioning&version=beta)
 
 ## <a name="what-licenses-do-i-need"></a>Какие лицензии нужны?
 

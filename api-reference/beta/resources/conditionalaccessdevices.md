@@ -2,15 +2,15 @@
 title: Тип ресурса Кондитионалакцессдевицес
 description: Представляет устройства в области политики.
 localization_priority: Normal
-author: davidmu1
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8ada9dc6b9b9714941f4086d3ca49761fcbeb2ac
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: b10bef4904d443ca975f5f98834b3b2d1c72a7e7
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805671"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916818"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>Тип ресурса Кондитионалакцессдевицес
 

@@ -2,15 +2,15 @@
 title: Список Релингпартидетаиледсуммари
 description: Получение списка объектов Релингпартидетаиледсуммари.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7edbc02278506a037521031b9db39eadf01efcb9
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 23aebcc68e0f0aa2fec0be895dffb8c723a1ddc8
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806149"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917131"
 ---
 # <a name="list-relyingpartydetailedsummary"></a>Список Релингпартидетаиледсуммари
 

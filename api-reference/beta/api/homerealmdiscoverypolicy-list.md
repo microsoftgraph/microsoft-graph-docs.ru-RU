@@ -2,15 +2,15 @@
 title: Перечисление типов ресурсов homeRealmDiscoveryPolicy
 description: Получение списка объектов Хомереалмдисковериполици.
 localization_priority: Normal
-author: dkershaw10
+author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b3b7e0ec81b94ac7fa6e176f5f8bc9f75128f244
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 04d7d427da71a22aaf818249dee5035cc6f2655d
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218536"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916525"
 ---
 # <a name="list-homerealmdiscoverypolicies"></a>Перечисление типов ресурсов homeRealmDiscoveryPolicy
 
@@ -46,7 +46,7 @@ GET policies/homeRealmDiscoveryPolicies
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

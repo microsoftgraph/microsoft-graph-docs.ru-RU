@@ -2,15 +2,15 @@
 title: Тип ресурса Кондитионалакцессдевицестатес
 description: Представляет состояния устройства в области политики.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 03981fc5be0388e8146c163ab4500eae87d65704
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c23406f63ae94a494e972d4063277c277d655423
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413504"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916804"
 ---
 # <a name="conditionalaccessdevicestates-resource-type"></a>Тип ресурса Кондитионалакцессдевицестатес
 
@@ -24,8 +24,8 @@ ms.locfileid: "43413504"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| инклудестатес | Коллекция String | Состояния политики. `All`— Единственное допустимое значение. |
-| ексклудестатес | Коллекция String | Состояния, исключенные из области применения политики. Возможные значения: `Compliant`, `DomainJoined`. |
+| инклудестатес | Коллекция объектов string | Состояния политики. `All`— Единственное допустимое значение. |
+| ексклудестатес | Коллекция объектов string | Состояния, исключенные из области применения политики. Возможные значения: `Compliant`, `DomainJoined`. |
 
 ## <a name="relationships"></a>Связи
 

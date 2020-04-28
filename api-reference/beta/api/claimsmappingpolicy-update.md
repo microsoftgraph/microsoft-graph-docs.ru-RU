@@ -2,15 +2,15 @@
 title: Обновление клаимсмаппингполици
 description: Обновление свойств объекта Клаимсмаппингполици.
 localization_priority: Normal
-author: dkershaw10
+author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cfc04c7455d254978f1cd0b8bc56c94bf7e03655
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 3b1b5967b1e10279f30f2f8f64be627b2664bcb4
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217969"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916550"
 ---
 # <a name="update-claimsmappingpolicy"></a>Обновление клаимсмаппингполици
 
@@ -42,7 +42,7 @@ PATCH /policies/claimsMappingPolicies/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,9 +51,9 @@ PATCH /policies/claimsMappingPolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный атрибут.|
+|RDLC|Коллекция объектов string| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный.|
 |description|String| Описание для этой политики.|
-|displayName|Строка| Отображаемое имя для этой политики. Обязательный атрибут.|
+|displayName|Строка| Отображаемое имя для этой политики. Обязательный.|
 |исорганизатиондефаулт|Boolean|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
 
 ## <a name="response"></a>Отклик
