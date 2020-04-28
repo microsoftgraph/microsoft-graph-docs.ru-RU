@@ -25,7 +25,7 @@ ms.locfileid: "43439975"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Отправка ответов LM & NTLM|
+|Нет|нуль|Отправка ответов LM & NTLM|
 |requireNtmlV2SessionSecurity|1,1|Отправлять LM & NTLM — использовать сеансовую безопасность NTLMv2 при согласовании|
 |require128BitEncryption|2|Отправлять только LM & NTLM ответы|
 |ntlmV2And128BitEncryption|4|Отправлять только LM & только ответы NTLMv2.|

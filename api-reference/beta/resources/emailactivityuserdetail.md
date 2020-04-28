@@ -23,13 +23,13 @@ ms.locfileid: "43440571"
 | репортрефрешдате | Дата              |
 | userPrincipalName | String            |
 | displayName       | Строка            |
-| isDeleted         | Логическое           |
+| isDeleted         | Boolean           |
 | делетеддате       | Дата              |
 | ластактивитидате  | Дата              |
 | сендкаунт         | Int64             |
 | рецеивекаунт      | Int64             |
 | реадкаунт         | Int64             |
-| ассигнедпродуктс  | Коллекция String |
+| ассигнедпродуктс  | Коллекция объектов string |
 | репортпериод      | String            |
 
 ## <a name="json-representation"></a>Представление JSON

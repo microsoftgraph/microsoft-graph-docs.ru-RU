@@ -39,7 +39,7 @@ ms.locfileid: "43437461"
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|Коллекция String|приложение-обработчик Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этой сущности конфигурации приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этой сущности конфигурации приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |description|String|Администратор предоставил описание конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
@@ -48,7 +48,7 @@ ms.locfileid: "43437461"
 |packageId|String|Идентификатор пакета конфигурации приложения Android для рабочего приложения.|
 |пайлоаджсон|String|Полезные данные JSON конфигурации приложения для Android для рабочего приложения.|
 |пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
-|профилеаппликабилити|[андроидпрофилеаппликабилити](../resources/intune-apps-androidprofileapplicability.md)|Применимость профиля предприятия Android (Андроидворкпрофиле, Девицеовнер или Default (применяется к обоим). Возможные значения: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
+|профилеаппликабилити|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Применимость профиля предприятия Android (Андроидворкпрофиле, Девицеовнер или Default (применяется к обоим). Возможные значения: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

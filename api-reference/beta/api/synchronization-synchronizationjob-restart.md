@@ -41,7 +41,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите объект JSON со следующим параметром.
 
@@ -49,7 +49,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 |:--------------|:----------|:---------------|
 |criteria       |[синчронизатионжобрестарткритериа](../resources/synchronization-synchronizationjobrestartcriteria.md) |Условия перезапуска|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха возвращает `204 No Content` отклик. В тексте отклика не возвращается никаких данных.
 

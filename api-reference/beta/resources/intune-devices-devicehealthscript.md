@@ -36,7 +36,7 @@ Intune предоставит клиенту возможность выполн
 |[действие Енаблеглобалскриптс](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|Нет|Н/Д|
 |[Функция Ареглобалскриптсаваилабле](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|Пока не задокументировано.|
 |[Функция Жетремедиатионсуммари](../api/intune-devices-devicehealthscript-getremediationsummary.md)|[deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md)|Пока не задокументировано.|
-|[Функция Жетремедиатионхистори](../api/intune-devices-devicehealthscript-getremediationhistory.md)|[девицехеалсскриптремедиатионхистори](../resources/intune-devices-devicehealthscriptremediationhistory.md)|Функция для получения числа исправлений с помощью сценариев работоспособности устройств|
+|[Функция Жетремедиатионхистори](../api/intune-devices-devicehealthscript-getremediationhistory.md)|[deviceHealthScriptRemediationHistory](../resources/intune-devices-devicehealthscriptremediationhistory.md)|Функция для получения числа исправлений с помощью сценариев работоспособности устройств|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -51,10 +51,10 @@ Intune предоставит клиенту возможность выполн
 |createdDateTime|DateTimeOffset|Метка времени создания сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Метка времени изменения сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логическое|Указывает, нужно ли проверять подпись скрипта|
-|runAs32Bit|Логическое|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для сценария работоспособности устройства|
-|исглобалскрипт|Логическое|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
+|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
+|runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
+|roleScopeTagIds|Коллекция объектов string|Список идентификаторов тегов области для сценария работоспособности устройства|
+|исглобалскрипт|Boolean|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
 |хигхеставаилаблеверсион|String|Самая высокая доступная версия для собственного сценария Майкрософт|
 
 ## <a name="relationships"></a>Связи

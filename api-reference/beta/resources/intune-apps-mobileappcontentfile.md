@@ -46,8 +46,8 @@ ms.locfileid: "43440424"
 |azureStorageUriExpirationDateTime|DateTimeOffset|Время, когда заканчивается срок действия URI для службы хранилища Azure.|
 |manifest|Binary|Данные манифеста.|
 |uploadState|[мобилеаппконтентфилеуплоадстате](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Состояние текущего запроса на отправку. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-|исфрамеворкфиле|Логическое|Значение, указывающее, является ли файл файлом платформы.|
-|Dependency|Логическое|Является ли файл содержимого зависимостью от основного файла содержимого.|
+|исфрамеворкфиле|Boolean|Значение, указывающее, является ли файл файлом платформы.|
+|Dependency|Boolean|Является ли файл содержимого зависимостью от основного файла содержимого.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -41,11 +41,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [синчронизатионжоб](../resources/synchronization-synchronizationjob.md) в формате JSON. Единственное обязательное свойство — `templateId`. `templateId` Свойство должно быть соответствующим одному из шаблонов, созданных для этого приложения или субъекта-службы. Чтобы найти доступные шаблоны, используйте [шаблоны списков](synchronization-synchronizationtemplate-list.md).
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха возвращает код `201 Created` отклика и объект [синчронизатионжоб](../resources/synchronization-synchronizationjob.md) в тексте отклика.
 

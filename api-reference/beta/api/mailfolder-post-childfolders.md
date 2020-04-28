@@ -1,5 +1,5 @@
 ---
-title: Создание объекта mailFolder
+title: Создание mailFolder
 description: Используйте этот API для создания нового дочернего элемента mailFolder.
 author: svpsiva
 localization_priority: Normal
@@ -12,7 +12,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
 ms.locfileid: "43443374"
 ---
-# <a name="create-mailfolder"></a>Создание объекта mailFolder
+# <a name="create-mailfolder"></a>Создание mailFolder
 
 Пространство имен: microsoft.graph
 
@@ -48,7 +48,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 | Авторизация | `Bearer {token}`. Обязательно. |
 | Content-Type | `application/json`. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Предоставьте в тексте запроса объект JSON с указанными ниже параметрами. **displayName** — это единственное доступное для записи свойство объекта [MailFolder](../resources/mailfolder.md).
 

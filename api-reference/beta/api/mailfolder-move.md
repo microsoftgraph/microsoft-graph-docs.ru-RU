@@ -46,7 +46,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 | Авторизация | `Bearer {token}`. Обязательно. |
 | Content-Type | `application/json`. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
