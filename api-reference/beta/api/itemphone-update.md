@@ -12,25 +12,25 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/11/2020
 ms.locfileid: "43229019"
 ---
-# <a name="update-itemphonenumber"></a><span data-ttu-id="49ba5-103">Обновление итемфоненумбер</span><span class="sxs-lookup"><span data-stu-id="49ba5-103">Update itemphonenumber</span></span>
+# <a name="update-itemphonenumber"></a><span data-ttu-id="65d98-103">Обновление итемфоненумбер</span><span class="sxs-lookup"><span data-stu-id="65d98-103">Update itemphonenumber</span></span>
 
-<span data-ttu-id="49ba5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="49ba5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="65d98-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="65d98-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="49ba5-105">Обновление свойств объекта [итемфоне](../resources/itemphone.md) в [профиле](../resources/profile.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="49ba5-105">Update the properties of an [itemPhone](../resources/itemphone.md) object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="65d98-105">Обновление свойств объекта [итемфоне](../resources/itemphone.md) в [профиле](../resources/profile.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="65d98-105">Update the properties of an [itemPhone](../resources/itemphone.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="49ba5-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="49ba5-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="65d98-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="65d98-106">Permissions</span></span>
 
-<span data-ttu-id="49ba5-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="49ba5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="65d98-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="65d98-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="49ba5-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="49ba5-109">Permission type</span></span>                        | <span data-ttu-id="49ba5-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="49ba5-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="65d98-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="65d98-109">Permission type</span></span>                        | <span data-ttu-id="65d98-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="65d98-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="49ba5-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="49ba5-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="49ba5-112">User. ReadWrite, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="49ba5-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="49ba5-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="49ba5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="49ba5-114">User. ReadWrite, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="49ba5-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="49ba5-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="49ba5-115">Application</span></span>                            | <span data-ttu-id="49ba5-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49ba5-116">User.ReadWrite.All</span></span>                          |
+| <span data-ttu-id="65d98-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="65d98-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="65d98-112">User. ReadWrite, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="65d98-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="65d98-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="65d98-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="65d98-114">User. ReadWrite, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="65d98-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="65d98-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="65d98-115">Application</span></span>                            | <span data-ttu-id="65d98-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="65d98-116">User.ReadWrite.All</span></span>                          |
 
-## <a name="http-request"></a><span data-ttu-id="49ba5-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="49ba5-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="65d98-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="65d98-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,34 +38,34 @@ ms.locfileid: "43229019"
 PATCH /me/profile/phones/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="49ba5-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="49ba5-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="65d98-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="65d98-118">Request headers</span></span>
 
-| <span data-ttu-id="49ba5-119">Имя</span><span class="sxs-lookup"><span data-stu-id="49ba5-119">Name</span></span>           |<span data-ttu-id="49ba5-120">Описание</span><span class="sxs-lookup"><span data-stu-id="49ba5-120">Description</span></span>                  |
+| <span data-ttu-id="65d98-119">Имя</span><span class="sxs-lookup"><span data-stu-id="65d98-119">Name</span></span>           |<span data-ttu-id="65d98-120">Описание</span><span class="sxs-lookup"><span data-stu-id="65d98-120">Description</span></span>                  |
 |:---------------|:----------------------------|
-| <span data-ttu-id="49ba5-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="49ba5-121">Authorization</span></span>  | <span data-ttu-id="49ba5-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="49ba5-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="49ba5-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="49ba5-124">Content-Type</span></span>   | <span data-ttu-id="49ba5-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="49ba5-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="65d98-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="65d98-121">Authorization</span></span>  | <span data-ttu-id="65d98-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="65d98-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="65d98-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="65d98-124">Content-Type</span></span>   | <span data-ttu-id="65d98-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="65d98-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="49ba5-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="49ba5-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="65d98-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="65d98-127">Request body</span></span>
 
-<span data-ttu-id="49ba5-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="49ba5-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="49ba5-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="49ba5-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="49ba5-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="49ba5-130">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="65d98-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="65d98-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="65d98-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="65d98-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="65d98-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="65d98-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="49ba5-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="49ba5-131">Property</span></span>     | <span data-ttu-id="49ba5-132">Тип</span><span class="sxs-lookup"><span data-stu-id="49ba5-132">Type</span></span>        | <span data-ttu-id="49ba5-133">Описание</span><span class="sxs-lookup"><span data-stu-id="49ba5-133">Description</span></span>                                                                                                                     |
+| <span data-ttu-id="65d98-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="65d98-131">Property</span></span>     | <span data-ttu-id="65d98-132">Тип</span><span class="sxs-lookup"><span data-stu-id="65d98-132">Type</span></span>        | <span data-ttu-id="65d98-133">Описание</span><span class="sxs-lookup"><span data-stu-id="65d98-133">Description</span></span>                                                                                                                     |
 |:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="49ba5-134">displayName</span><span class="sxs-lookup"><span data-stu-id="49ba5-134">displayName</span></span>   |<span data-ttu-id="49ba5-135">Строка</span><span class="sxs-lookup"><span data-stu-id="49ba5-135">String</span></span>       | <span data-ttu-id="49ba5-136">Содержит понятное имя для номера телефона.</span><span class="sxs-lookup"><span data-stu-id="49ba5-136">Contains a friendly name for the phone number.</span></span>                                                                                  |
-|<span data-ttu-id="49ba5-137">число</span><span class="sxs-lookup"><span data-stu-id="49ba5-137">number</span></span>        |<span data-ttu-id="49ba5-138">String</span><span class="sxs-lookup"><span data-stu-id="49ba5-138">String</span></span>       | <span data-ttu-id="49ba5-139">Содержит номер телефона.</span><span class="sxs-lookup"><span data-stu-id="49ba5-139">Contains the phone number.</span></span>                                                                                                      |
-|<span data-ttu-id="49ba5-140">type</span><span class="sxs-lookup"><span data-stu-id="49ba5-140">type</span></span>          |<span data-ttu-id="49ba5-141">string</span><span class="sxs-lookup"><span data-stu-id="49ba5-141">string</span></span>       | <span data-ttu-id="49ba5-142">Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span><span class="sxs-lookup"><span data-stu-id="49ba5-142">Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
+|<span data-ttu-id="65d98-134">displayName</span><span class="sxs-lookup"><span data-stu-id="65d98-134">displayName</span></span>   |<span data-ttu-id="65d98-135">Строка</span><span class="sxs-lookup"><span data-stu-id="65d98-135">String</span></span>       | <span data-ttu-id="65d98-136">Содержит понятное имя для номера телефона.</span><span class="sxs-lookup"><span data-stu-id="65d98-136">Contains a friendly name for the phone number.</span></span>                                                                                  |
+|<span data-ttu-id="65d98-137">число</span><span class="sxs-lookup"><span data-stu-id="65d98-137">number</span></span>        |<span data-ttu-id="65d98-138">String</span><span class="sxs-lookup"><span data-stu-id="65d98-138">String</span></span>       | <span data-ttu-id="65d98-139">Содержит номер телефона.</span><span class="sxs-lookup"><span data-stu-id="65d98-139">Contains the phone number.</span></span>                                                                                                      |
+|<span data-ttu-id="65d98-140">type</span><span class="sxs-lookup"><span data-stu-id="65d98-140">type</span></span>          |<span data-ttu-id="65d98-141">string</span><span class="sxs-lookup"><span data-stu-id="65d98-141">string</span></span>       | <span data-ttu-id="65d98-142">Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span><span class="sxs-lookup"><span data-stu-id="65d98-142">Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="49ba5-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="49ba5-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="65d98-143">Ответ</span><span class="sxs-lookup"><span data-stu-id="65d98-143">Response</span></span>
 
-<span data-ttu-id="49ba5-144">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [итемфоне](../resources/itemphone.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="49ba5-144">If successful, this method returns a `200 OK` response code and an updated [itemPhone](../resources/itemphone.md) object in the response body.</span></span>
+<span data-ttu-id="65d98-144">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [итемфоне](../resources/itemphone.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="65d98-144">If successful, this method returns a `200 OK` response code and an updated [itemPhone](../resources/itemphone.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="49ba5-145">Примеры</span><span class="sxs-lookup"><span data-stu-id="49ba5-145">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="65d98-145">Примеры</span><span class="sxs-lookup"><span data-stu-id="65d98-145">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="49ba5-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="49ba5-146">Request</span></span>
+### <a name="request"></a><span data-ttu-id="65d98-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="65d98-146">Request</span></span>
 
-<span data-ttu-id="49ba5-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="49ba5-147">The following is an example of the request.</span></span>
+<span data-ttu-id="65d98-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="65d98-147">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="49ba5-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="49ba5-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="65d98-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="65d98-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_itemphone"
@@ -81,25 +81,25 @@ Content-type: application/json
   "number": "number-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="49ba5-149">C#</span><span class="sxs-lookup"><span data-stu-id="49ba5-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="65d98-149">C#</span><span class="sxs-lookup"><span data-stu-id="65d98-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-itemphone-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="49ba5-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="49ba5-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="65d98-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="65d98-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-itemphone-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="49ba5-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="49ba5-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="65d98-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="65d98-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-itemphone-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="49ba5-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="49ba5-152">Response</span></span>
+### <a name="response"></a><span data-ttu-id="65d98-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="65d98-152">Response</span></span>
 
-<span data-ttu-id="49ba5-153">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="49ba5-153">The following is an example of the response.</span></span>
+<span data-ttu-id="65d98-153">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="65d98-153">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="49ba5-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="49ba5-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="65d98-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="65d98-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
