@@ -14,7 +14,7 @@ ms.locfileid: "42456574"
 ---
 # <a name="list-notebooks"></a>Список записных книжек
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

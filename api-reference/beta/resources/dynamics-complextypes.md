@@ -16,7 +16,7 @@ ms.locfileid: "42504988"
 ---
 # <a name="complex-types-json"></a>сложные типы JSON
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,11 +29,11 @@ ms.locfileid: "42504988"
 ### <a name="properties"></a>Свойства
 | Свойство     | Тип       |Описание             |
 |:-------------|:---------|:-----------------------|
-|street        |строка    |Улица (почтовый адрес).  |
-|city          |строка    |Город (почтовый адрес).    |
+|street        |string    |Улица (почтовый адрес).  |
+|city          |string    |Город (почтовый адрес).    |
 |состояние         |string    |Состояние почтового адреса.   |
-|countryLetterCode|строка |Код письма для почтового адреса (два символа)|
-|postalCode    |строка    |Почтовый индекс в почтовом адресе|
+|countryLetterCode|string |Код письма для почтового адреса (два символа)|
+|postalCode    |string    |Почтовый индекс в почтовом адресе|
 
 ```json
 "PostalAddress" 

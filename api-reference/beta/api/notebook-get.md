@@ -14,7 +14,7 @@ ms.locfileid: "42456753"
 ---
 # <a name="get-notebook"></a>Вывод записной книжки
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

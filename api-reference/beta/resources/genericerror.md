@@ -14,7 +14,7 @@ ms.locfileid: "42497645"
 ---
 # <a name="genericerror-resource-type"></a>Тип ресурса Женерицеррор
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

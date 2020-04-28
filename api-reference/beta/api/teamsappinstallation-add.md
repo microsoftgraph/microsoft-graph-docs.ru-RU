@@ -14,7 +14,7 @@ ms.locfileid: "42452542"
 ---
 # <a name="add-app-to-team"></a>Добавление приложения в команду
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ POST /teams/{id}/installedApps
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
@@ -86,7 +86,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 

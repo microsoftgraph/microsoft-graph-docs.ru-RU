@@ -14,7 +14,7 @@ ms.locfileid: "42507487"
 ---
 # <a name="connectionoperation-resource-type"></a>Тип ресурса Коннектионоператион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

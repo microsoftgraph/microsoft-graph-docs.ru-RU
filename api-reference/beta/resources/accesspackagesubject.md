@@ -14,7 +14,7 @@ ms.locfileid: "42508494"
 ---
 # <a name="accesspackagesubject-resource-type"></a>Тип ресурса Акцесспаккажесубжект
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

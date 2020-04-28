@@ -15,7 +15,7 @@ ms.locfileid: "42441034"
 ---
 # <a name="get-bundle"></a>Получение пакета
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,14 +48,14 @@ GET /drive/items/{bundle-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Authorization | Носитель \{токен\}. Обязательный. |
-| if-none-match | тегом. Необязательное свойство. Если указан заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то возвращается отклик `HTTP 304 Not Modified`.
+| Авторизация | Носитель \{токен\}. Обязательный. |
+| if-none-match | тегом. Необязательное. Если указан заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то возвращается отклик `HTTP 304 Not Modified`.
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает объект [driveItem][driveItem] resource with the [bundle][bundle] в тексте отклика.
 

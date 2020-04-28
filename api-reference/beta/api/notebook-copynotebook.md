@@ -14,7 +14,7 @@ ms.locfileid: "42456763"
 ---
 # <a name="notebook-copynotebook"></a>Записная книжка: Включеныcopynotebook
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 |groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Office 365.|
 |ренамеас|String|Имя копии. По умолчанию используется имя существующего элемента. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика `Operation-Location` и заголовок. Опросить конечную точку Operations to Location, чтобы [получить состояние операции копирования](onenoteoperation-get.md).
 

@@ -15,7 +15,7 @@ ms.locfileid: "42432329"
 ---
 # <a name="unfollow-drive-item"></a>Отписаться от элемента Drive
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42454569"
 ---
 # <a name="rangeformat-autofitrows"></a>RangeFormat: autofitRows
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

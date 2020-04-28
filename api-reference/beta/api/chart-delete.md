@@ -14,7 +14,7 @@ ms.locfileid: "42440075"
 ---
 # <a name="chart-delete"></a>Chart: delete
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,7 +58,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/delete
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/delete
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

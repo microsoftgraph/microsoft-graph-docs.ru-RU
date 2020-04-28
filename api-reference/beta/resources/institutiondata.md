@@ -14,7 +14,7 @@ ms.locfileid: "42495447"
 ---
 # <a name="institutiondata-resource-type"></a>Тип ресурса Институтиондата
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

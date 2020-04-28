@@ -14,7 +14,7 @@ ms.locfileid: "42394865"
 ---
 # <a name="deviceinfo-resource-type"></a>Тип ресурса Девицеинфо
 
-Пространство имен: Microsoft. Graph. Каллрекордс
+Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42426194"
 ---
 # <a name="update-educationoutcome"></a>Обновление едукатионауткоме
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -52,7 +52,7 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 Все производные типы результатов имеют обычные и публикуемые свойства, соответствующие этому типу результата; Например, **баллы** и **публишедпоинтс**, **Отзывы** и **публишедфидбакк**. Не обновляйте свойство "Опубликовано"; Он предназначен для внутреннего использования. Например, чтобы назначить точки **едукатионпоинтсауткоме**, обновите свойство **points** , но не обновляйте **публишедпоинтс**.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [едукатионауткоме](../resources/educationoutcome.md) в тексте отклика.
 

@@ -14,7 +14,7 @@ ms.locfileid: "42455463"
 ---
 # <a name="post-reply"></a>post: reply
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -133,7 +133,7 @@ Content-length: 1131
 
 
 ##### <a name="response"></a>Отклик
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

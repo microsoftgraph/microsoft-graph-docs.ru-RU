@@ -15,7 +15,7 @@ ms.locfileid: "42507613"
 ---
 # <a name="commentaction-resource-type"></a>Тип ресурса CommentAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

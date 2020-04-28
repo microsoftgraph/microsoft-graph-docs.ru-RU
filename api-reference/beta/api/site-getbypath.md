@@ -15,7 +15,7 @@ ms.locfileid: "42453249"
 ---
 # <a name="get-a-site-resource-by-path"></a>Получение ресурса site по его пути
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +53,7 @@ ms.locfileid: "42453249"
 GET /sites/{hostname}:/{relative-path}
 ```
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Этот метод возвращает ресурс [site][] для сайта, для ссылки на который используется уникальный идентификатор.
 

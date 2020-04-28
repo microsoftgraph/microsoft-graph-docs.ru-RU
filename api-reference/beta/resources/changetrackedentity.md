@@ -14,7 +14,7 @@ ms.locfileid: "42507756"
 ---
 # <a name="changetrackedentity-resource-type"></a>Тип ресурса Чанжетраккедентити
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

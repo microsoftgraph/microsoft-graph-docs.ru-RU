@@ -14,7 +14,7 @@ ms.locfileid: "42508340"
 ---
 # <a name="alerttrigger-resource-type"></a>Тип ресурса Алерттригжер
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

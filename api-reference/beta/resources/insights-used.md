@@ -14,7 +14,7 @@ ms.locfileid: "42495475"
 ---
 # <a name="usedinsight-resource-type"></a>Тип ресурса Усединсигхт
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42508138"
 ---
 # <a name="attendeebase-resource-type"></a>Тип ресурсов attendeeBase
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

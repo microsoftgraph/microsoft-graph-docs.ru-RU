@@ -14,7 +14,7 @@ ms.locfileid: "42436316"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

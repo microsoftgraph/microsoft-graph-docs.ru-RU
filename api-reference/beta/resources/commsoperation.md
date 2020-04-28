@@ -14,7 +14,7 @@ ms.locfileid: "42507592"
 ---
 # <a name="commsoperation-resource-type"></a>Тип ресурса Коммсоператион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

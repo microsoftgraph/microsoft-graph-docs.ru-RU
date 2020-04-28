@@ -14,7 +14,7 @@ ms.locfileid: "42453109"
 ---
 # <a name="get-subscription"></a>Получение подписки
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -66,7 +66,7 @@ GET /subscriptions/{id}
 |:-----------|:-----|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

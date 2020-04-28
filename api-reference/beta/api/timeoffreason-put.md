@@ -14,7 +14,7 @@ ms.locfileid: "42452283"
 ---
 # <a name="replace-timeoffreason"></a>Замена Тимеоффреасон
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 В тексте запроса добавьте представление объекта [тимеоффреасон](../resources/timeoffreason.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [тимеоффреасон](../resources/timeoffreason.md) в тексте отклика.
 

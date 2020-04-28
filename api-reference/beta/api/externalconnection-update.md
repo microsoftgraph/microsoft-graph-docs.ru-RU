@@ -14,7 +14,7 @@ ms.locfileid: "42422049"
 ---
 # <a name="update-connection"></a>Обновление подключения
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

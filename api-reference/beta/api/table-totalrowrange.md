@@ -14,7 +14,7 @@ ms.locfileid: "42452794"
 ---
 # <a name="table-totalrowrange"></a>Table: TotalRowRange
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -15,7 +15,7 @@ ms.locfileid: "42457148"
 ---
 # <a name="get-an-item-in-a-list"></a>Получение элемента списка
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

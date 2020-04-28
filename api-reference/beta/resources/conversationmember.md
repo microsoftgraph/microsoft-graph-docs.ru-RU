@@ -14,7 +14,7 @@ ms.locfileid: "42507403"
 ---
 # <a name="conversationmember-resource-type"></a>Тип ресурса conversationMember
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

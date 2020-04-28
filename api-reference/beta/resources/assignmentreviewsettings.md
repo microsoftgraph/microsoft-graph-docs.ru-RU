@@ -14,7 +14,7 @@ ms.locfileid: "42508180"
 ---
 # <a name="assignmentreviewsettings-resource-type"></a>Тип ресурса Ассигнментревиевсеттингс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

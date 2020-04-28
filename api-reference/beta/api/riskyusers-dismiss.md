@@ -15,7 +15,7 @@ ms.locfileid: "42453872"
 ---
 # <a name="riskyuser-dismiss"></a>Рискюсер: отклонить
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ POST /riskyUsers/dismiss
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Укажите идентификаторы пользователя, которые нужно отклонить в теле запроса.
 
 ## <a name="response"></a>Отклик
@@ -83,7 +83,7 @@ Content-Type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

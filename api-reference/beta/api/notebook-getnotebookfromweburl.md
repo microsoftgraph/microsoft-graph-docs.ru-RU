@@ -14,7 +14,7 @@ ms.locfileid: "42456760"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>Записная книжка: Жетнотебукфромвебурл
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +50,7 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 |:-------------|:------------|:------------|
 | `webUrl`     |`String`     | Путь URL-адреса извлекаемой записной книжки. Он также может содержать префикс "OneNote:".|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Notebook](../resources/notebook.md) в теле отклика.
 ## <a name="example"></a>Пример

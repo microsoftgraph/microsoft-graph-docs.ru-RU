@@ -14,7 +14,7 @@ ms.locfileid: "42451338"
 ---
 # <a name="workbookrange-visibleview"></a>workbookRange: visibleView
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

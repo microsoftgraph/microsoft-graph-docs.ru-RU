@@ -14,7 +14,7 @@ ms.locfileid: "42424437"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Создание Едукатионсинчронизатионпрофиле
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,12 +39,12 @@ POST /synchronizationProfiles
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
-| Content-Type | string | Приложение/JSON. Обязательный элемент. |
+| Content-Type | string | Приложение/JSON. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `202, Accepted` код отклика и объект [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

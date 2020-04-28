@@ -14,7 +14,7 @@ ms.locfileid: "42497323"
 ---
 # <a name="governancerulesetting-resource-type"></a>Тип ресурса Говернанцерулесеттинг
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

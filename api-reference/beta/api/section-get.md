@@ -14,7 +14,7 @@ ms.locfileid: "42453704"
 ---
 # <a name="get-section"></a>Получение раздела
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42508445"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Использование REST API веб-канала активности
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

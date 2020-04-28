@@ -15,7 +15,7 @@ ms.locfileid: "42433141"
 ---
 # <a name="list-recent-files"></a>Список последних файлов
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

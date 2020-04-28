@@ -14,7 +14,7 @@ ms.locfileid: "42437359"
 ---
 # <a name="create-application"></a>Создание приложения
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +37,7 @@ POST /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Обязательна|
+| Авторизация  | Носителя. Обязательна|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса должно быть представление объекта [application](../resources/application.md) в формате JSON.
@@ -63,7 +63,7 @@ Content-length: 329
 }
 ```
 В тексте запроса должно быть представление объекта [application](../resources/application.md) в формате JSON.
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

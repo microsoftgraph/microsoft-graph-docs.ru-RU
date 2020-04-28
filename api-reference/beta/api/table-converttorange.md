@@ -14,7 +14,7 @@ ms.locfileid: "42452864"
 ---
 # <a name="table-converttorange"></a>Table: convertToRange
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

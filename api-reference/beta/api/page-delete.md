@@ -14,7 +14,7 @@ ms.locfileid: "42456021"
 ---
 # <a name="delete-page"></a>Удаление страницы
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -71,7 +71,7 @@ DELETE https://graph.microsoft.com/beta/me/onenote/pages/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

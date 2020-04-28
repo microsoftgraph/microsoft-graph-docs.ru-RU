@@ -14,7 +14,7 @@ ms.locfileid: "42453039"
 ---
 # <a name="create-swapshiftschangerequest"></a>Создание Свапшифтсчанжерекуест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ POST /teams/{id}/schedule/swapShiftsChangeRequests
 ## <a name="request-body"></a>Основной текст запроса
 В тексте запроса укажите представление объекта [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и созданный объект [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) в тексте отклика.
 

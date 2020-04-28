@@ -14,7 +14,7 @@ ms.locfileid: "42453333"
 ---
 # <a name="replace-shift"></a>Замена смены
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ PUT /teams/{teamId}/schedule/shifts/{shiftId}
 
 В тексте запроса добавьте представление объекта [сдвига](../resources/shift.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [сдвига](../resources/shift.md) в тексте отклика.
 

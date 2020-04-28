@@ -15,7 +15,7 @@ ms.locfileid: "42457113"
 ---
 # <a name="listing-versions-of-a-listitem-preview"></a>Создание списка версий элемента ListItem (ознакомительная версия)
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ GET /sites/{site-id}/items/{item-id}/versions
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ```
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [ListItemVersion](../resources/listitemversion.md) в теле отклика.
 

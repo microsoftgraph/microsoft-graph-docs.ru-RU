@@ -2,7 +2,7 @@
 author: JeremyKelley
 description: Ресурс Identity представляет удостоверение субъекта.
 ms.date: 09/14/2017
-title: Удостоверение
+title: Идентификация
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
@@ -15,7 +15,7 @@ ms.locfileid: "42496805"
 ---
 # <a name="identity-resource-type"></a>Тип ресурса Identity
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42451520"
 ---
 # <a name="close-session"></a>Close Session
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Используйте этот API для закрытия существующего сеанса книги. 
 

@@ -14,7 +14,7 @@ ms.locfileid: "42394880"
 ---
 # <a name="callrecord-resource-type"></a>Тип ресурса Каллрекорд
 
-Пространство имен: Microsoft. Graph. Каллрекордс
+Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42394880"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение Каллрекорд](../api/callrecords-callrecord-get.md) | [Microsoft. Graph. Каллрекордс. Каллрекорд](callrecords-callrecord.md) | Чтение свойств и связей объекта Каллрекорд. |
+| [Получение callRecord](../api/callrecords-callrecord-get.md) | [Microsoft. Graph. Каллрекордс. Каллрекорд](callrecords-callrecord.md) | Чтение свойств и связей объекта Каллрекорд. |
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |

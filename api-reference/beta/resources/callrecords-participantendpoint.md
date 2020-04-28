@@ -14,7 +14,7 @@ ms.locfileid: "42394820"
 ---
 # <a name="participantendpoint-resource-type"></a>Тип ресурса ПартиЦипантендпоинт
 
-Пространство имен: Microsoft. Graph. Каллрекордс
+Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

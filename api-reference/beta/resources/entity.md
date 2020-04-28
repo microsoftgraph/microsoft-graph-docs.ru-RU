@@ -14,7 +14,7 @@ ms.locfileid: "42499199"
 ---
 # <a name="entity-resource-type"></a>Тип ресурса entity
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

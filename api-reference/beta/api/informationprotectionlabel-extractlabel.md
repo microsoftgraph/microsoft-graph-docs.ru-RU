@@ -14,7 +14,7 @@ ms.locfileid: "42446347"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>Информатионпротектионлабел: Екстрактлабел
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,10 +46,10 @@ POST /informationprotection/policy/labels/extractLabel
 | Имя          | Описание                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
-| Content-Type  | Content-Type: Application/JSON. Обязательное.                                                                                                                                         |
+| Content-Type  | Content-Type: Application/JSON. Обязательный.                                                                                                                                         |
 | User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -57,7 +57,7 @@ POST /informationprotection/policy/labels/extractLabel
 | :---------- | :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | контентинфо | [контентинфо](../resources/contentinfo.md) | Предоставляет подробные сведения о формате содержимого, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение". |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [информатионпротектионконтентлабел](../resources/informationprotectioncontentlabel.md) в тексте отклика.
 

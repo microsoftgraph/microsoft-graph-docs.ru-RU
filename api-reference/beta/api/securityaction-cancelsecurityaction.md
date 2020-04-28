@@ -14,7 +14,7 @@ ms.locfileid: "42453602"
 ---
 # <a name="securityaction-cancelsecurityaction"></a>securityAction: Канцелсекуритяктион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

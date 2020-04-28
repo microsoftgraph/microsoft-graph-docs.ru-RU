@@ -16,7 +16,7 @@ ms.locfileid: "42429946"
 ---
 # <a name="get-generalledgerentries"></a>Получение Женералледжерентриес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,9 +43,9 @@ GET /financials/companies/{id}/generalLedgerEntries/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок       |Значение             |
 |-------------|------------------|
-|Authorization|Носителя. Обязательный элемент. |
+|Авторизация|Носителя. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

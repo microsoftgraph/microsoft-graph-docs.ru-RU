@@ -14,7 +14,7 @@ ms.locfileid: "42441384"
 ---
 # <a name="applicationtemplate-instantiate"></a>Аппликатионтемплате: создание экземпляра
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ POST /applicationTemplates/{id}/instantiate
 |:-------------|:------------|:------------|
 |displayName|String|Настраиваемое имя приложения|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 OK` код отклика и новый объект [аппликатионсервицепринЦипал](../resources/applicationserviceprincipal.md) в тексте отклика.
 

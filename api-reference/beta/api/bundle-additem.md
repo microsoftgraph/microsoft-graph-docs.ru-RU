@@ -15,7 +15,7 @@ ms.locfileid: "42441055"
 ---
 # <a name="add-item-to-a-bundle"></a>Добавление элемента в пакет
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,13 +44,13 @@ POST /drive/bundles/{bundle-id}/children
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Authorization | Носитель \{токен\}. Обязательный элемент. |
+| Авторизация | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Текст запроса включает идентификатор для элемента, который следует добавить в коллекцию Children набора.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха отклика `204 No Content`.
 

@@ -14,7 +14,7 @@ ms.locfileid: "42507665"
 ---
 # <a name="classificationresult-resource-type"></a>Тип ресурса Классификатионресулт
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

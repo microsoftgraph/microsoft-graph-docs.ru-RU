@@ -16,7 +16,7 @@ ms.locfileid: "42431825"
 ---
 # <a name="create-currencies"></a>Создание валют
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,10 +45,10 @@ POST /financials/companies/{id}/currencies
 |Авторизация  |Bearer {токен}. Обязательный.|
 |Content-Type   |application/json         |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **денежных единиц** в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **валюты** в теле отклика.
 
 ## <a name="example"></a>Пример

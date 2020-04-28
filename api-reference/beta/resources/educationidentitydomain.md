@@ -14,7 +14,7 @@ ms.locfileid: "42501929"
 ---
 # <a name="educationidentitydomain-resource-type"></a>Тип ресурса Едукатионидентитидомаин
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +24,8 @@ ms.locfileid: "42501929"
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **Тег** | строка |  Тип роли пользователя, назначаемый лицензии. Возможные значения: `student`, `teacher`, `faculty`.      |
-| **name** | строка |  Представляет домен для учетной записи пользователя.         |
+| **Тег** | string |  Тип роли пользователя, назначаемый лицензии. Возможные значения: `student`, `teacher`, `faculty`.      |
+| **name** | string |  Представляет домен для учетной записи пользователя.         |
 
 ## <a name="json-representation"></a>Представление JSON
 <!-- {

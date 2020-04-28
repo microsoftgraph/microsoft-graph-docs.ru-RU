@@ -15,7 +15,7 @@ ms.locfileid: "42497638"
 ---
 # <a name="geocoordinates-resource-type"></a>Тип ресурса "геокоординаты"
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

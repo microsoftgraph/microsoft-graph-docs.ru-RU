@@ -14,7 +14,7 @@ ms.locfileid: "42508529"
 ---
 # <a name="accesspackageresource-resource-type"></a>Тип ресурса Акцесспаккажересаурце
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42508529"
 |description|String|Описание ресурса.|
 |displayName|Строка|Отображаемое имя ресурса, например имя приложения, имя группы или имя сайта.|
 |id|String| Только для чтения.|
-|испендингонбоардинг|Логический|Значение true, если ресурс пока недоступен для назначения.|
+|испендингонбоардинг|Boolean|Значение true, если ресурс пока недоступен для назначения.|
 |оригинид|String|Уникальный идентификатор ресурса в исходной системе. В случае группы Azure AD это идентификатор группы. |
 |оригинсистем|String|Тип ресурса в исходной системе, например `SharePointOnline` или. `AadGroup`|
 |Ресурса|String|Тип ресурса, например, `Application` если это приложение, подключаемое к Azure AD, или `SharePoint Online Site` сайт SharePoint Online.|

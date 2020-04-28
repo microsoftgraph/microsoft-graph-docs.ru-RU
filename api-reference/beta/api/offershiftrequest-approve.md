@@ -14,7 +14,7 @@ ms.locfileid: "42456609"
 ---
 # <a name="offershiftrequest-approve"></a>Оффершифтрекуест: утверждение
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

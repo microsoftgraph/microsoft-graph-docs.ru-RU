@@ -14,7 +14,7 @@ ms.locfileid: "42451590"
 ---
 # <a name="get-settings-for-user-analytics"></a>Получение параметров для пользователя Analytics
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,9 +46,9 @@ GET /me/analytics/settings
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

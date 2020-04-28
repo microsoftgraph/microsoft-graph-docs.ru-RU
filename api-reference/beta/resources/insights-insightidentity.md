@@ -14,7 +14,7 @@ ms.locfileid: "42495874"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

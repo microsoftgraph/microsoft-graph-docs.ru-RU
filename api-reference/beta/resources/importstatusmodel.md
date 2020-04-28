@@ -14,7 +14,7 @@ ms.locfileid: "42496413"
 ---
 # <a name="importstatusmodel-resource-type"></a>Тип ресурса Импортстатусмодел
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

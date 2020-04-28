@@ -14,7 +14,7 @@ ms.locfileid: "42453046"
 ---
 # <a name="list-swapshiftschangerequest"></a>Список Свапшифтсчанжерекуест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +50,7 @@ GET /teams/{id}/schedule/swapShiftsChangeRequests
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

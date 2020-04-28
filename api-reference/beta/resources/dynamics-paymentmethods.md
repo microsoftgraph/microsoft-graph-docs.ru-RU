@@ -16,7 +16,7 @@ ms.locfileid: "42503651"
 ---
 # <a name="paymentmethods-resource-type"></a>Тип ресурса Пайментмесодс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "42503651"
 |[Получение Пайментмесодс](../api/dynamics-paymentmethods-get.md)      |пайментмесодс|Возвращает объект метода платежа.   |
 |[POST Пайментмесодс](../api/dynamics-create-paymentmethods.md)  |пайментмесодс|Создает объект метода оплаты.|
 |[Исправление Пайментмесодс](../api/dynamics-paymentmethods-update.md) |пайментмесодс|Обновляет объект метода оплаты.|
-|[Удаление Пайментмесодс](../api/dynamics-paymentmethods-delete.md)|нет          |Удаляет объект метода оплаты.|
+|[Удаление Пайментмесодс](../api/dynamics-paymentmethods-delete.md)|Нет          |Удаляет объект метода оплаты.|
 
 ## <a name="properties"></a>Свойства
 | Свойство           | Тип   |Описание                                                  |

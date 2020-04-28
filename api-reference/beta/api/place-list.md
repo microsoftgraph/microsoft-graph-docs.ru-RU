@@ -14,7 +14,7 @@ ms.locfileid: "42455827"
 ---
 # <a name="list-places"></a>Список мест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -73,7 +73,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -15,7 +15,7 @@ ms.locfileid: "42507868"
 ---
 # <a name="bundle-resource-type"></a>Тип ресурса пакета
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

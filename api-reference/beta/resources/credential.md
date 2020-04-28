@@ -14,7 +14,7 @@ ms.locfileid: "42507361"
 ---
 # <a name="credential-resource-type"></a>Тип ресурса Credential
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

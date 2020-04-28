@@ -14,7 +14,7 @@ ms.locfileid: "42453662"
 ---
 # <a name="list-sectiongroups"></a>Список sectionGroups
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

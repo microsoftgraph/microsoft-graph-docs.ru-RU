@@ -14,7 +14,7 @@ ms.locfileid: "42440761"
 ---
 # <a name="call-reject"></a>вызов: отклонено
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

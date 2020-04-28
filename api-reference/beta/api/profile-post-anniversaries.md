@@ -14,7 +14,7 @@ ms.locfileid: "42455125"
 ---
 # <a name="create-personanniversary"></a>Создание Персонанниверсари
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ POST /me/profile/anniversaries
 
 В тексте запроса добавьте представление объекта [персонанниверсари](../resources/personanniversary.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод `201, Created` возвращает код отклика и новый объект [персонанниверсари](../resources/personanniversary.md) в тексте отклика.
 

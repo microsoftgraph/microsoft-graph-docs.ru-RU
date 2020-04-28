@@ -14,7 +14,7 @@ ms.locfileid: "42456408"
 ---
 # <a name="create-openshift"></a>Создание Опеншифт
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +53,7 @@ POST /teams/{id}/schedule/openShifts
 
 Укажите новый объект [опеншифт](../resources/openshift.md) в тексте запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [опеншифт](../resources/openshift.md) в тексте отклика.
 

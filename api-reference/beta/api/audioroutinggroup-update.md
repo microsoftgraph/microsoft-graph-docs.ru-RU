@@ -14,7 +14,7 @@ ms.locfileid: "42441314"
 ---
 # <a name="update-audio-routing-group"></a>Обновление группы маршрутизации звука
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,11 +47,11 @@ PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| приемники | Коллекция String | Целевые участники в Аудиораутингграуп. |
+| приемники | Коллекция объектов string | Целевые участники в Аудиораутингграуп. |
 | раутингмоде | String | Возможные значения: `oneToOne`, `multicast`. |
-| sources | Коллекция String | Участник источника в Аудиораутингграуп. |
+| sources | Коллекция объектов string | Участник источника в Аудиораутингграуп. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

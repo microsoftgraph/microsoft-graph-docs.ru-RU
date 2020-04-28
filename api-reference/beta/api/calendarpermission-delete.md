@@ -14,7 +14,7 @@ ms.locfileid: "42440915"
 ---
 # <a name="delete-calendarpermission"></a>Удаление Календарпермиссион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Удаление Календарпермиссион.
 
@@ -51,9 +51,9 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

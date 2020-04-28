@@ -14,7 +14,7 @@ ms.locfileid: "42440229"
 ---
 # <a name="patch-channel"></a>Канал исправлений
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -73,7 +73,7 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

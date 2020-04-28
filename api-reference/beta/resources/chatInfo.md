@@ -14,7 +14,7 @@ ms.locfileid: "42507735"
 ---
 # <a name="chatinfo-resource-type"></a>Тип ресурса Чатинфо
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

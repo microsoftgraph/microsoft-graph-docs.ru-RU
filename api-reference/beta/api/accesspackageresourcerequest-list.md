@@ -14,7 +14,7 @@ ms.locfileid: "42441958"
 ---
 # <a name="list-accesspackageresourcerequests"></a>Список Акцесспаккажересаурцерекуестс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceRequests
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

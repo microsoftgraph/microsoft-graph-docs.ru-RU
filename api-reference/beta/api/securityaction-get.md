@@ -14,7 +14,7 @@ ms.locfileid: "42453578"
 ---
 # <a name="get-securityaction"></a>Получение объекта securityAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

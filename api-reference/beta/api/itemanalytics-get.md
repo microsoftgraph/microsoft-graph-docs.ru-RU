@@ -15,7 +15,7 @@ ms.locfileid: "42457274"
 ---
 # <a name="get-analytics"></a>Получение аналитики
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

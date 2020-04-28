@@ -14,7 +14,7 @@ ms.locfileid: "42499717"
 ---
 # <a name="email-app-usage-reports"></a>Отчеты об использовании почтовых приложений
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

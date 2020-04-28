@@ -14,7 +14,7 @@ ms.locfileid: "42426999"
 ---
 # <a name="remove-teacher"></a>Удаление преподавателя
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +44,7 @@ DELETE /education/classes/{id}/teachers/{userId}/$ref
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

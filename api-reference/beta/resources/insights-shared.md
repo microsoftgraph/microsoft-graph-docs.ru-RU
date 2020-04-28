@@ -14,7 +14,7 @@ ms.locfileid: "42495643"
 ---
 # <a name="sharedinsight-resource-type"></a>Тип ресурса Шарединсигхт
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

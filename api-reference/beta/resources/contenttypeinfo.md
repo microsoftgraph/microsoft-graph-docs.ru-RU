@@ -15,7 +15,7 @@ ms.locfileid: "42507431"
 ---
 # <a name="contenttypeinfo-resource-type"></a>Тип ресурса contentTypeInfo
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

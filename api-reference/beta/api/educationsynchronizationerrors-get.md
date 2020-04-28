@@ -14,7 +14,7 @@ ms.locfileid: "42424612"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Получение Едукатионсинчронизатионеррорс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Получение ошибок, возникших во время проверки, и/или во время синхронизации определенного [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте. 
 
@@ -40,7 +40,7 @@ GET /synchronizationProfiles/{id}/errors
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Error синхронизации](../resources/educationsynchronizationerror.md) в теле отклика.

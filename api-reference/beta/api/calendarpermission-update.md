@@ -14,7 +14,7 @@ ms.locfileid: "42440894"
 ---
 # <a name="update-calendarpermission"></a>Обновление Календарпермиссион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Обновление разрешений, назначенных существующему общему ресурсу или представителю, с помощью соответствующего объекта [календарпермиссион](../resources/calendarpermission.md) для календаря.
 
@@ -51,7 +51,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,7 +61,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 |:-------------|:------------|:------------|
 |role|[календарролетипе](../resources/calendarpermission.md#calendarroletype-values)| Уровень разрешений, на который изменяется общий доступ к календарю или представитель. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [календарпермиссион](../resources/calendarpermission.md) в тексте отклика.
 

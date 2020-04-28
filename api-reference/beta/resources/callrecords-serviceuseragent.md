@@ -14,7 +14,7 @@ ms.locfileid: "42394797"
 ---
 # <a name="serviceuseragent-resource-type"></a>Тип ресурса Сервицеусеражент
 
-Пространство имен: Microsoft. Graph. Каллрекордс
+Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

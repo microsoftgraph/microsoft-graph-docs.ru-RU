@@ -14,7 +14,7 @@ ms.locfileid: "42432511"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>Перечисление версий объекта DriveItem
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42497173"
 ---
 # <a name="governancesubject-resource-type"></a>Тип ресурса Говернанцесубжект
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

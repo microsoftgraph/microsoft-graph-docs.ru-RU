@@ -14,7 +14,7 @@ ms.locfileid: "42451422"
 ---
 # <a name="list-workbookcommentreplies"></a>Список Воркбуккомментреплиес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Получение списка объектов [воркбуккомментрепли](../resources/workbookcommentreply.md) .
 
@@ -42,7 +42,7 @@ GET /workbook/comments/{id}/replies
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

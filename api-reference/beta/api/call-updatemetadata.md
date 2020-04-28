@@ -14,7 +14,7 @@ ms.locfileid: "42440705"
 ---
 # <a name="call-updatemetadata"></a>Call: Упдатеметадата
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ POST /communications/calls/{id}/updateMetadata
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
@@ -50,7 +50,7 @@ POST /communications/calls/{id}/updateMetadata
 |метаданных|String|Большой двоичный объект данных, предоставляемый участником в списке.|
 |Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
 
 ## <a name="example"></a>Пример

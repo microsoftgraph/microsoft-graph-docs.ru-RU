@@ -14,7 +14,7 @@ ms.locfileid: "42440341"
 ---
 # <a name="get-channel"></a>Получение канала
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42507473"
 ---
 # <a name="connectorgroup-resource-type"></a>Тип ресурса Коннекторграуп
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,14 +26,14 @@ ms.locfileid: "42507473"
 |[Создание приложения](../api/connectorgroup-post-applications.md) |[application](application.md)| Свяжите приложение с группой соединителей, размещая в коллекции Applications.|
 |[Перечисление приложений](../api/connectorgroup-list-applications.md) |Коллекция [application](application.md)| Получение связанной коллекции объектов Application.|
 |[Создание соединителя](../api/connectorgroup-post-members.md) |[PDIF](connector.md)| Добавьте соединитель в группу соединителей, отправив его в коллекцию Members.|
-|[Список членов](../api/connectorgroup-list-members.md) |Коллекция [соединителей](connector.md)| Получение коллекции объектов Connector.|
+|[Перечисление участников](../api/connectorgroup-list-members.md) |Коллекция [соединителей](connector.md)| Получение коллекции объектов Connector.|
 |[обновление](../api/connectorgroup-update.md). | [connectorGroup](connectorgroup.md)    |Обновление объекта Коннекторграуп. |
 |[удаление](../api/connectorgroup-delete.md); | Нет |Удаление объекта Коннекторграуп. Перед удалением группы соединителей необходимо удалить все соединители. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|коннекторграуптипе|строка| Тип соединителей, которые будут использоваться для группы. Возможные значения: `applicationProxy`.|
+|коннекторграуптипе|string| Тип соединителей, которые будут использоваться для группы. Возможные значения: `applicationProxy`.|
 |id|Строка| Идентификатор объекта Коннекторграуп|
 |isDefault|Boolean| Указывает, является ли Коннекторграуп группой соединителей по умолчанию. Только одна группа соединителей может быть Коннекторграуп по умолчанию и задается системой.|
 |name|String| Имя, связанное с Коннекторграуп.|

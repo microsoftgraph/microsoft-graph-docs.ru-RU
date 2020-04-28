@@ -14,7 +14,7 @@ ms.locfileid: "42453690"
 ---
 # <a name="section-copytosectiongroup"></a>раздел: copyToSectionGroup
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,7 +60,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 <!--|siteCollectionId|String||
 |siteId|String||-->
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика `Operation-Location` и заголовок. Опросить конечную точку Operations to Location, чтобы [получить состояние операции копирования](onenoteoperation-get.md).
 

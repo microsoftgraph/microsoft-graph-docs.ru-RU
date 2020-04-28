@@ -14,7 +14,7 @@ ms.locfileid: "42495538"
 ---
 # <a name="trending-resource-type"></a>Тип ресурса трендов
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

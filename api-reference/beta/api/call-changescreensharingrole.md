@@ -14,7 +14,7 @@ ms.locfileid: "42440880"
 ---
 # <a name="call-changescreensharingrole"></a>Call: Чанжескриншарингроле
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ POST /communications/calls/{id}/changeScreenSharingRole
 |:---------------|:--------|:----------|
 |role|String|Возможные значения: "средство просмотра", "общий доступ"|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика, а все участники получат обновление списка.
 
 ## <a name="example"></a>Пример

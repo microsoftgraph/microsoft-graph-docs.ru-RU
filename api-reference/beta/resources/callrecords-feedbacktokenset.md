@@ -14,7 +14,7 @@ ms.locfileid: "42394852"
 ---
 # <a name="feedbacktokenset-resource-type"></a>Тип ресурса Фидбакктокенсет
 
-Пространство имен: Microsoft. Graph. Каллрекордс
+Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42496210"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Тип ресурса inferenceClassificationOverride
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "42496210"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |classifyAs|string| Указывает, как должны классифицироваться все входящие сообщения от определенного отправителя. Возможные значения: `focused`, `other`.|
-|id|строка| Уникальный идентификатор переопределения. Только для чтения.|
+|id|string| Уникальный идентификатор переопределения. Только для чтения.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|Сведения об электронном адресе отправителя, для которого создано переопределение.|
 
 ## <a name="relationships"></a>Связи

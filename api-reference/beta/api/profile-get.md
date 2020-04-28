@@ -14,7 +14,7 @@ ms.locfileid: "42455246"
 ---
 # <a name="get-profile"></a>Получение профиля
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -16,7 +16,7 @@ ms.locfileid: "42504582"
 ---
 # <a name="customerpaymentsjournals-resource-type"></a>Тип ресурса Кустомерпайментсжаурналс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "42504582"
 |[Получение Кустомерпайментжаурналс](../api/dynamics-customerpaymentsjournal-get.md)      |кустомерпайментжаурналс|Возвращает журнал платежей клиента.   |
 |[POST Кустомерпайментжаурналс](../api/dynamics-create-customerpaymentsjournal.md)  |кустомерпайментжаурналс|Создает журнал платежей клиента.|
 |[Исправление Кустомерпайментжаурналс](../api/dynamics-customerpaymentsjournal-update.md) |кустомерпайментжаурналс|Обновляет журнал платежей клиента.|
-|[Удаление Кустомерпайментжаурналс](../api/dynamics-customerpaymentsjournal-delete.md)|нет                     |Удаляет журнал платежей клиента.|
+|[Удаление Кустомерпайментжаурналс](../api/dynamics-customerpaymentsjournal-delete.md)|Нет                     |Удаляет журнал платежей клиента.|
 
 ## <a name="properties"></a>Свойства
 | Свойство           | Тип                  |Описание                                                             |

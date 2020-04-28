@@ -14,7 +14,7 @@ ms.locfileid: "42454761"
 ---
 # <a name="range-entirerow"></a>Range: EntireRow
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

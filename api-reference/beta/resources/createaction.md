@@ -15,7 +15,7 @@ ms.locfileid: "42507368"
 ---
 # <a name="createaction-resource-type"></a>Тип ресурса CreateAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

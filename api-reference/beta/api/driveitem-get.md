@@ -15,7 +15,7 @@ ms.locfileid: "42432581"
 ---
 # <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

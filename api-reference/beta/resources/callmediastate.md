@@ -14,7 +14,7 @@ ms.locfileid: "42507812"
 ---
 # <a name="callmediastate-resource-type"></a>Тип ресурса Каллмедиастате
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

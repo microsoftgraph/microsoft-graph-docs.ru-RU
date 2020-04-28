@@ -14,7 +14,7 @@ ms.locfileid: "42502013"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>Тип ресурса Едукатионфилесинчронизатионверификатионмессаже
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +25,8 @@ ms.locfileid: "42502013"
 | Свойство | Тип | Описание |
 |:-|:-|:-|
 | **type** | string | Тип сообщения. Возможные значения: `error`, `warning`, `information`. | 
-| **задан** | строка | Исходный файл, который содержит ошибку. |
-| **description** | строка | Подробные сведения о типе сообщения. |
+| **задан** | string | Исходный файл, который содержит ошибку. |
+| **description** | string | Подробные сведения о типе сообщения. |
 
 ## <a name="json-representation"></a>Представление JSON
 

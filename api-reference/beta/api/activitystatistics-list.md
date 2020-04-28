@@ -14,7 +14,7 @@ ms.locfileid: "42441790"
 ---
 # <a name="list-activitystatistics"></a>Список Активитистатистикс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,9 +47,9 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

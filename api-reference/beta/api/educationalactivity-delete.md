@@ -14,7 +14,7 @@ ms.locfileid: "42427902"
 ---
 # <a name="delete-educationalactivity"></a>Удаление Едукатионалактивити
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,11 +44,11 @@ DELETE /me/profile/educationalActivities/{id}
 |:---------------|:----------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.   |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
@@ -66,7 +66,7 @@ DELETE /me/profile/educationalActivities/{id}
 DELETE https://graph.microsoft.com/beta/user/profile/educationalActivities/{id}
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 

@@ -14,7 +14,7 @@ ms.locfileid: "42495867"
 ---
 # <a name="resourcereference-resource-type"></a>Тип ресурса Ресаурцереференце
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

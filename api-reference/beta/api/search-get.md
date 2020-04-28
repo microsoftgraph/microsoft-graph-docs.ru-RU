@@ -14,7 +14,7 @@ ms.locfileid: "42453711"
 ---
 # <a name="search"></a>Поиск
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,13 +44,13 @@ GET /search
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Этот ресурс не должен вызываться таким образом. Любой запрос к ресурсу повлечет некорректный запрос.
 

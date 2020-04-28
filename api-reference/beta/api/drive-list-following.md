@@ -14,7 +14,7 @@ ms.locfileid: "42433267"
 ---
 # <a name="list-followed-items"></a>Список отслеживаемых элементов
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

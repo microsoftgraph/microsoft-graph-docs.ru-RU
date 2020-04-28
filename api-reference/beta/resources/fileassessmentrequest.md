@@ -14,7 +14,7 @@ ms.locfileid: "42498338"
 ---
 # <a name="fileassessmentrequest-resource-type"></a>Тип ресурса Филеассессментрекуест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

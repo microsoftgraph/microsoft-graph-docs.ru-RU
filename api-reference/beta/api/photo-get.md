@@ -14,7 +14,7 @@ ms.locfileid: "42455846"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ GET /drive/root/createdByUser/photo
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -102,7 +102,7 @@ Content-length: 53
 ```http
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo/$value
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 
 <!-- { "blockType": "ignored","@odata.type": "stream" } -->

@@ -14,7 +14,7 @@ ms.locfileid: "42457255"
 ---
 # <a name="delete-itemphonenumber"></a>Удаление Итемфоненумбер
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

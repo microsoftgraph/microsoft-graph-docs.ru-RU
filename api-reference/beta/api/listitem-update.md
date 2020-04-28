@@ -15,7 +15,7 @@ ms.locfileid: "42457120"
 ---
 # <a name="update-an-item-in-a-list"></a>Изменение элемента в списке
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -83,7 +83,7 @@ Content-Type: application/json
 ---
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает объект [fieldValueSet][] для обновленного элемента списка в теле ответа.
 

@@ -14,7 +14,7 @@ ms.locfileid: "42452479"
 ---
 # <a name="add-tab-to-channel"></a>Добавление вкладки в канал
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

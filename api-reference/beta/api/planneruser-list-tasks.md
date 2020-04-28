@@ -14,7 +14,7 @@ ms.locfileid: "42455559"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -15,7 +15,7 @@ ms.locfileid: "42496609"
 ---
 # <a name="identityset-resource-type"></a>Тип ресурса Identity
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -65,7 +65,7 @@ ms.locfileid: "42496609"
 | conversation| [Identity](identity.md) | Необязательный. Группа или канал, связанные с этим действием.       |
 | конверсатионидентититипе| [Identity](identity.md) | Необязательный. Указывает, идентифицирует ли свойство **беседы** группу или канал.|
 | Устройство      | [Идентификация](identity.md) | Необязательный. Устройство, связанное с данным действием.       |
-| phone       | [identity](identity.md) | Необязательное свойство. Номер телефона, связанный с этим действием. |
+| phone       | [identity](identity.md) | Необязательное. Номер телефона, связанный с этим действием. |
 | user        | [Identity](identity.md) | Необязательный. Пользователь, связанный с данным действием.         |
 
 ## <a name="remarks"></a>Заметки 

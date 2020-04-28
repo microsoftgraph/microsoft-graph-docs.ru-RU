@@ -14,7 +14,7 @@ ms.locfileid: "42495930"
 ---
 # <a name="innererrordetail-resource-type"></a>Тип ресурса Иннереррордетаил
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

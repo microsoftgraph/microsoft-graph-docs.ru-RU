@@ -14,7 +14,7 @@ ms.locfileid: "42440901"
 ---
 # <a name="get-calendarpermission"></a>Получение Календарпермиссион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Получение указанного объекта разрешений для календаря пользователя или группы, к которому предоставлен общий доступ.
 
@@ -55,9 +55,9 @@ GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

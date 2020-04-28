@@ -16,7 +16,7 @@ ms.locfileid: "42503658"
 ---
 # <a name="journallines-resource-type"></a>Тип ресурса Жаурналлинес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "42503658"
 |[Получение Жаурналлинес](../api/dynamics-journalline-get.md)      |жаурналлинес|Получает строку журнала.   |
 |[POST Жаурналлинес](../api/dynamics-create-journalline.md)  |жаурналлинес|Создает строку журнала.|
 |[Исправление Жаурналлинес](../api/dynamics-journalline-update.md) |жаурналлинес|Обновляет строку журнала.|
-|[Удаление Жаурналлинес](../api/dynamics-journalline-delete.md)|нет        |Удаляет строку журнала.|
+|[Удаление Жаурналлинес](../api/dynamics-journalline-delete.md)|Нет        |Удаляет строку журнала.|
 
 ## <a name="properties"></a>Свойства
 | Свойство             | Тип                   |Описание                                                        |

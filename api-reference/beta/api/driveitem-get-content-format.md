@@ -15,7 +15,7 @@ ms.locfileid: "42432658"
 ---
 # <a name="download-a-file-in-another-format"></a>Скачивание файла в другом формате
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

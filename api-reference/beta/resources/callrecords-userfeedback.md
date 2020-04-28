@@ -14,7 +14,7 @@ ms.locfileid: "42394791"
 ---
 # <a name="userfeedback-resource-type"></a>Тип ресурса Усерфидбакк
 
-Пространство имен: Microsoft. Graph. Каллрекордс
+Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

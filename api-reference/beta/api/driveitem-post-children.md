@@ -15,7 +15,7 @@ ms.locfileid: "42432476"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Создание папки на диске
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

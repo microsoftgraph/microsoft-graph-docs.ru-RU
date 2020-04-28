@@ -14,7 +14,7 @@ ms.locfileid: "42452619"
 ---
 # <a name="clone-a-team"></a>Клонирование команды
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ POST /teams/{id}/clone
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -65,7 +65,7 @@ POST /teams/{id}/clone
 |партстоклоне| [клонаблетеампартс](../resources/clonableteamparts.md) |Разделенный запятыми список частей, которые необходимо клонировать. Юридическими частями являются "приложения, вкладки, параметры, каналы, элементы".|
 |visibility|[объекта teamvisibilitytype](../resources/teamvisibilitytype.md) (необязательно)| Задает видимость группы. Возможные значения: **Private**, **Public**. Если параметр Visibility не указан, то видимость будет скопирована из исходной группы или группы. Если **Группа является** клонированной, параметр видимости игнорируется, и для отображения новой группы будет задано значение значение hiddenmembership.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвратит код `202 Accepted` отклика с расположением: Header, указывающий на ресурс [Operation](../resources/teamsasyncoperation.md) .
 После завершения операции ресурс Operation сообщит вам идентификатор созданной команды.

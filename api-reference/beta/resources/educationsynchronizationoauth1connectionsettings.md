@@ -14,7 +14,7 @@ ms.locfileid: "42500123"
 ---
 # <a name="educationsynchronizationoauth1connectionsettings-resource"></a>ресурс educationSynchronizationOAuth1ConnectionSettings
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

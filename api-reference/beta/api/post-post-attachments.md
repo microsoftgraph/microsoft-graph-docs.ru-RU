@@ -14,7 +14,7 @@ ms.locfileid: "42455468"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите объект JSON, включающий параметр **POST** .
 
 | Параметр    | Тип   |Описание|
@@ -161,7 +161,7 @@ Content-type: application/json
 ```
 
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

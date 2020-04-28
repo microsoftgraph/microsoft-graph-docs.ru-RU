@@ -14,7 +14,7 @@ ms.locfileid: "42453083"
 ---
 # <a name="swapshiftschangerequest-approve"></a>Свапшифтсчанжерекуест: утверждение
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -94,7 +94,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 <!-- {

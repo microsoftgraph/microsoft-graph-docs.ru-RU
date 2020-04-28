@@ -14,7 +14,7 @@ ms.locfileid: "42427342"
 ---
 # <a name="remove-educationcategory"></a>Удаление Едукатионкатегори
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 

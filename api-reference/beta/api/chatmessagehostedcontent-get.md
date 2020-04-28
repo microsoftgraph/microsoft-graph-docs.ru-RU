@@ -14,7 +14,7 @@ ms.locfileid: "42438297"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Получение Чатмессажехостедконтент
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

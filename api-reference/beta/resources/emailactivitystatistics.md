@@ -14,7 +14,7 @@ ms.locfileid: "42499598"
 ---
 # <a name="emailactivitystatistics-resource-type"></a>Тип ресурса Емаилактивитистатистикс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

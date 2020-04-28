@@ -14,7 +14,7 @@ ms.locfileid: "42451198"
 ---
 # <a name="create-chart"></a>Создание объекта Chart
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ POST /workbook/worksheets/{id|name}/charts/
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [воркбукчарт](../resources/workbookchart.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
 
@@ -82,7 +82,7 @@ Content-length: 52
 ---
 
 В тексте запроса добавьте представление объекта [воркбукчарт](../resources/workbookchart.md) в формате JSON.
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

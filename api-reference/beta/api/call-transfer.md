@@ -14,7 +14,7 @@ ms.locfileid: "42440747"
 ---
 # <a name="call-transfer"></a>Call: Transfer
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

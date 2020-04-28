@@ -15,7 +15,7 @@ ms.locfileid: "42455951"
 ---
 # <a name="update-sharing-permission"></a>Обновление разрешения на общий доступ
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,7 +60,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | Свойство     | Тип   | Описание                   |
 |:-------------|:-------|:------------------------------|
-| **roles**    | Коллекция String | Массив типов разрешений. |
+| **roles**    | Коллекция объектов string | Массив типов разрешений. |
 
 ## <a name="response"></a>Отклик
 

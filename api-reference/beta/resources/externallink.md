@@ -14,7 +14,7 @@ ms.locfileid: "42498688"
 ---
 # <a name="externallink-resource-type"></a>Тип ресурса Екстерналлинк
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

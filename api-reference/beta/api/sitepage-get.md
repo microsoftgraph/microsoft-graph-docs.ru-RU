@@ -15,7 +15,7 @@ ms.locfileid: "42453181"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>Получение страницы в списке страниц сайта
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

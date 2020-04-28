@@ -15,7 +15,7 @@ ms.locfileid: "42457160"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Создание элемента в списке
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -16,7 +16,7 @@ ms.locfileid: "42431433"
 ---
 # <a name="create-journals"></a>Создание журналов
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,10 +46,10 @@ POST /financials/companies/{id}/journals/{id}
 |Авторизация |Bearer {токен}. Обязательный. |
 |Content-Type  |application/json          |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **журналов** в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **журналов** в тексте отклика.
 
 ## <a name="example"></a>Пример

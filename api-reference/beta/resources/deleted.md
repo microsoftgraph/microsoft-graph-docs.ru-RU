@@ -15,7 +15,7 @@ ms.locfileid: "42507270"
 ---
 # <a name="deleted-facet"></a>Аспект Deleted
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

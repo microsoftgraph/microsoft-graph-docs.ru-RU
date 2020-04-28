@@ -14,7 +14,7 @@ ms.locfileid: "42425032"
 ---
 # <a name="create-educationsubmissionresource"></a>Создание Едукатионсубмиссионресаурце
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,11 +41,11 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [едукатионсубмиссионресаурце](../resources/educationsubmissionresource.md) в формате JSON.
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [едукатионсубмиссионресаурце](../resources/educationsubmissionresource.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

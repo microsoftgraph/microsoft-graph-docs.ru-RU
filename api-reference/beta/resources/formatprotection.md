@@ -14,7 +14,7 @@ ms.locfileid: "42497820"
 ---
 # <a name="formatprotection-resource-type"></a>Тип ресурса FormatProtection
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

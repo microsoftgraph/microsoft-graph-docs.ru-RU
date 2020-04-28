@@ -14,7 +14,7 @@ ms.locfileid: "42452402"
 ---
 # <a name="delete-threat-intelligence-indicator"></a>Удаление индикатора службы угроз
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

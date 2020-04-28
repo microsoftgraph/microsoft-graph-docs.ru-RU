@@ -14,7 +14,7 @@ ms.locfileid: "42394857"
 ---
 # <a name="failureinfo-resource-type"></a>Тип ресурса Фаилуреинфо
 
-Пространство имен: Microsoft. Graph. Каллрекордс
+Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

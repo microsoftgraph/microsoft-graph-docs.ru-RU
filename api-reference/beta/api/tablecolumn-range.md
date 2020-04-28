@@ -14,7 +14,7 @@ ms.locfileid: "42452742"
 ---
 # <a name="tablecolumn-range"></a>TableColumn: Range
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

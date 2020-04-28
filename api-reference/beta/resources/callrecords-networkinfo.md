@@ -14,7 +14,7 @@ ms.locfileid: "42394803"
 ---
 # <a name="networkinfo-resource-type"></a>Тип ресурса Нетворкинфо
 
-Пространство имен: Microsoft. Graph. Каллрекордс
+Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

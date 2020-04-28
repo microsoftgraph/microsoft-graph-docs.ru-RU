@@ -14,7 +14,7 @@ ms.locfileid: "42453784"
 ---
 # <a name="replace-schedulinggroup"></a>Замена объекта schedulingGroup
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 В тексте запроса добавьте представление объекта [счедулингграуп](../resources/schedulinggroup.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [счедулингграуп](../resources/schedulinggroup.md) в тексте отклика.
 

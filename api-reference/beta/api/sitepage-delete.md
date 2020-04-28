@@ -15,7 +15,7 @@ ms.locfileid: "42453186"
 ---
 # <a name="delete-page-from-the-site-pages-list-of-a-site"></a>Удаление страницы из списка страниц сайта
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,7 +56,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 Не указывайте текст запроса для этого метода.
 <!-- TODO: should we provide a URL to recover/undelete the file, if one exists? -->
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот вызов возвращает `204 No Content` ответ, указывающий на то, что ресурс был удален и что не было возвращено.
 

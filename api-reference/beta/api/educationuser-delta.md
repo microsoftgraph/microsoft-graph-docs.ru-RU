@@ -14,7 +14,7 @@ ms.locfileid: "42423926"
 ---
 # <a name="educationuser-delta"></a>educationUser: Delta
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

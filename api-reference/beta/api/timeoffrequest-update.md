@@ -14,7 +14,7 @@ ms.locfileid: "42452248"
 ---
 # <a name="update-timeoffrequest"></a>Обновление тимеоффрекуест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,7 +57,7 @@ PATCH /teams/{id}/schedule/timeOffRequests
 |startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014: ' ' 2014 – 01 – 01T00:00:00Z '|
 |тимеоффреасонид|String|Причина для запрошенного времени.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [тимеоффрекуест](../resources/timeoffrequest.md) в тексте отклика.
 

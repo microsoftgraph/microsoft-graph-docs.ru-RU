@@ -15,7 +15,7 @@ ms.locfileid: "42507875"
 ---
 # <a name="booleancolumn-resource-type"></a>Тип ресурса BooleanColumn
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

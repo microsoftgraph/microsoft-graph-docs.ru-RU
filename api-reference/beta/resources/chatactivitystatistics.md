@@ -14,7 +14,7 @@ ms.locfileid: "42507728"
 ---
 # <a name="chatactivitystatistics-resource-type"></a>Тип ресурса Чатактивитистатистикс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

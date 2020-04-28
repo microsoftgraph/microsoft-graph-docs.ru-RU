@@ -14,7 +14,7 @@ ms.locfileid: "42495601"
 ---
 # <a name="sharingdetail-resource-type"></a>Тип ресурса Шарингдетаил
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

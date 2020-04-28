@@ -14,7 +14,7 @@ ms.locfileid: "42441405"
 ---
 # <a name="get-applicationtemplate"></a>Получение Аппликатионтемплате
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

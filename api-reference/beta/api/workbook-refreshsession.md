@@ -14,7 +14,7 @@ ms.locfileid: "42451443"
 ---
 # <a name="refresh-session"></a>Refresh Session
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Используйте этот API для обновления существующего сеанса книги. 
 

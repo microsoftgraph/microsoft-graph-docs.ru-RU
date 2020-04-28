@@ -14,7 +14,7 @@ ms.locfileid: "42424731"
 ---
 # <a name="delete-educationsubmissionresource"></a>Удаление Едукатионсубмиссионресаурце
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,11 +40,11 @@ DELETE /educationClasses/assignments/{id}/submissions/{id}/resources/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -73,7 +73,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 
 ---
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. 
 
 <!-- {

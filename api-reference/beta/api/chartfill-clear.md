@@ -14,7 +14,7 @@ ms.locfileid: "42439494"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42453656"
 ---
 # <a name="create-page"></a>Создание страницы
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -15,7 +15,7 @@ ms.locfileid: "42432777"
 ---
 # <a name="delete-a-driveitem"></a>Удаление ресурса DriveItem
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

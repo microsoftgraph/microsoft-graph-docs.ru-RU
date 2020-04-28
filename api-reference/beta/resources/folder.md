@@ -15,7 +15,7 @@ ms.locfileid: "42497897"
 ---
 # <a name="folder-resource-type"></a>Тип ресурса Folder
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

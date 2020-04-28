@@ -1,6 +1,6 @@
 ---
 author: chackman
-description: Подпишитесь на driveItem.
+description: Отслеживание ресурса driveItem.
 title: Подписаться на диск
 localization_priority: Normal
 ms.prod: sharepoint
@@ -14,7 +14,7 @@ ms.locfileid: "42432672"
 ---
 # <a name="follow-drive-item"></a>Подписаться на диск
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ POST /users/{user-id}/drive/items/{item-id}/follow
 
 Тело запроса не требуется.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Этот метод возвращает объект [DriveItem](../resources/driveitem.md) для отслеживаемого элемента.
 

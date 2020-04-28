@@ -14,7 +14,7 @@ ms.locfileid: "42498240"
 ---
 # <a name="filehash-resource-type"></a>Тип ресурса fileHash
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Содержит сведения о состоянии хэшей файлов (криптографии и зависящие от местонахождения).
 

@@ -14,7 +14,7 @@ ms.locfileid: "42452842"
 ---
 # <a name="table-headerrowrange"></a>Table: HeaderRowRange
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

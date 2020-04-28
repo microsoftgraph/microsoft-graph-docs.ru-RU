@@ -14,7 +14,7 @@ ms.locfileid: "42436218"
 ---
 # <a name="update-conversationthread"></a>Обновление объекта conversationThread
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
 |:---------------|:--------|:----------|
 |isLocked|Логическое|Указывает, заблокирована ли цепочка. Чтобы запретить добавление сообщений, задайте значение `true`.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [conversationThread](../resources/conversationthread.md) в тексте отклика.
 ## <a name="example"></a>Пример

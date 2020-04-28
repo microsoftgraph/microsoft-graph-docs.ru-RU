@@ -14,7 +14,7 @@ ms.locfileid: "42495657"
 ---
 # <a name="resourcevisualization-resource-type"></a>Тип ресурса ресурсе resourcevisualization
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -67,7 +67,7 @@ ms.locfileid: "42495657"
 -   Visio
 -   Publisher
 -   Project
--   Доступ
+-   Access
 -   Почта
 -   Расширения
 -   Архив
@@ -81,7 +81,7 @@ ms.locfileid: "42495657"
 -   Story
 -   екстерналконтент
 -   Folder
--   Другие
+-   Другое
 
 Пример запроса:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -89,7 +89,7 @@ ms.locfileid: "42495657"
 Поддерживаемые типы могут различаться в зависимости от контейнеров, из которых [оффицеграфинсигхтс](officegraphinsights.md) возвращает файлы. Например, только представление [шарединсигхт](insights-shared.md) возвращает файлы из "Dropbox", "Box" и "гдриве".
 
 -   онедривебусинесс
--   Сайт
+-   Site
 -   Почта
 -   Оставляют
 -   Box

@@ -14,7 +14,7 @@ ms.locfileid: "42455993"
 ---
 # <a name="participant-invite"></a>участник: пригласить
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ POST /communications/calls/{id}/participants/invite
 |participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Приглашенных участников.|
 |Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Если сукксессфул, этот метод возвращает код `200 OK` отклика и заголовок Location с URI для [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md) , созданного для этого запроса. В тексте отклика содержится созданный [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md) .
 
 >**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление списка.

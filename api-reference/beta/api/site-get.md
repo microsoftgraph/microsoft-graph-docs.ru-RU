@@ -15,13 +15,13 @@ ms.locfileid: "42453241"
 ---
 # <a name="get-a-site-resource"></a>Получение ресурса site
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение свойств и отношений ресурса [site][]. Ресурс **site** представляет сайт группы в SharePoint.
 
-[сайта]: ../resources/site.md
+[site]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
 

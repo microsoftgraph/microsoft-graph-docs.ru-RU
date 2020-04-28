@@ -14,7 +14,7 @@ ms.locfileid: "42452271"
 ---
 # <a name="timeoffrequest-approve"></a>Тимеоффрекуест: утверждение
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -92,7 +92,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 <!-- {

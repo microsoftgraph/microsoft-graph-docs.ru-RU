@@ -14,7 +14,7 @@ ms.locfileid: "42394806"
 ---
 # <a name="serviceendpoint-resource-type"></a>Тип ресурса Сервицеендпоинт
 
-Пространство имен: Microsoft. Graph. Каллрекордс
+Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42456364"
 ---
 # <a name="create-openshiftchangerequest"></a>Создание Опеншифтчанжерекуест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +53,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests
 ## <a name="request-body"></a>Основной текст запроса
 В тексте запроса укажите представление объекта [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и созданный объект [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) в тексте отклика.
 

@@ -22,7 +22,7 @@ ms.locfileid: "42446396"
 
 Запрос на оценку угроз может иметь один из следующих типов:
 
-* [Почта](../resources/mailAssessmentRequest.md)
+* [почта](../resources/mailAssessmentRequest.md);
 * [Файл электронной почты](../resources/emailFileAssessmentRequest.md)
 * [Файл](../resources/fileAssessmentRequest.md)
 * [URL](../resources/urlAssessmentRequest.md)
@@ -51,11 +51,11 @@ POST /informationProtection/threatAssessmentRequests
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [среатассессментрекуест](../resources/threatassessmentrequest.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [среатассессментрекуест](../resources/threatassessmentrequest.md) в тексте отклика.
 

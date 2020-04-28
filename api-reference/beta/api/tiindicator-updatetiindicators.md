@@ -14,7 +14,7 @@ ms.locfileid: "42452353"
 ---
 # <a name="tiindicator-updatetiindicators"></a>Тииндикатор: Упдатетииндикаторс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ POST /security/tiIndicators/updateTiIndicators
 |:-------------|:------------|:------------|
 |значение|Коллекция Тииндикатор| Коллекция **тииндикаторс** , которую требуется обновить. У каждой сущности должен быть **идентификатор** и другие редактируемые свойства, которые необходимо обновить.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.  При возникновении ошибки этот метод возвращает код `206 Partial Content` отклика.  Дополнительные сведения см. в разделе [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) .
 

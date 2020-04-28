@@ -14,7 +14,7 @@ ms.locfileid: "42452626"
 ---
 # <a name="tablesort-reapply"></a>TableSort: reapply
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42455094"
 ---
 # <a name="create-personname"></a>Создание personName
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ POST /me/profile/names
 
 В тексте запроса добавьте представление объекта [PersonName](../resources/personname.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод `201, Created` возвращает код отклика и новый объект [PersonName](../resources/personname.md) в тексте отклика.
 

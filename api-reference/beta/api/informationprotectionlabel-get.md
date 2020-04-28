@@ -14,7 +14,7 @@ ms.locfileid: "42446368"
 ---
 # <a name="get-informationprotectionlabel"></a>Получение Информатионпротектионлабел
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +50,7 @@ GET /informationprotection/policy/labels
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
 | User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

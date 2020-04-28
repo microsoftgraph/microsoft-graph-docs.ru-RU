@@ -14,7 +14,7 @@ ms.locfileid: "42452381"
 ---
 # <a name="tiindicator-deletetiindicators"></a>Тииндикатор: Делететииндикаторс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,9 +50,9 @@ POST /security/tiIndicators/deleteTiIndicators
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|значение|Коллекция String| Коллекция Тииндикатор `id`s, которую необходимо удалить. |
+|значение|Коллекция объектов string| Коллекция Тииндикатор `id`s, которую необходимо удалить. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод `200, OK` возвращает код отклика и объект коллекции [ресултинфо](../resources/resultinfo.md) в тексте отклика. При возникновении ошибки этот метод возвращает код `206 Partial Content` отклика.  Дополнительные сведения см. в разделе [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) .
 

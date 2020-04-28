@@ -14,7 +14,7 @@ ms.locfileid: "42438360"
 ---
 # <a name="list-replies"></a>Список ответов
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ GET /chats/{id}/messages/{id}/replies
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatMessage](../resources/chatmessage.md) в тексте отклика.
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/replies
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 

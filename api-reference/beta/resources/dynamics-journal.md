@@ -16,7 +16,7 @@ ms.locfileid: "42503749"
 ---
 # <a name="journal-resource-type"></a>Тип ресурса "журнал"
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "42503749"
 |[Получение журнала](../api/dynamics-journal-get.md)      |Фин    |Получает журнал.   |
 |[Разноска журнала](../api/dynamics-create-journal.md)  |Фин    |Создает журнал.|
 |[Журнал исправлений](../api/dynamics-journal-update.md) |Фин    |Обновляет журнал.|
-|[Удаление журнала](../api/dynamics-journal-delete.md)|нет       |Удаляет журнал.|
+|[Удаление журнала](../api/dynamics-journal-delete.md)|Нет       |Удаляет журнал.|
 
 ## <a name="properties"></a>Свойства
 | Свойство           | Тип                  |Описание                                           |

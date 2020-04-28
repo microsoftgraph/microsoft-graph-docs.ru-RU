@@ -15,7 +15,7 @@ ms.locfileid: "42432315"
 ---
 # <a name="update-driveitem-properties"></a>Обновление свойств ресурса DriveItem
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

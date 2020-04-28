@@ -14,7 +14,7 @@ ms.locfileid: "42436582"
 ---
 # <a name="add-conversationmember"></a>Добавление Конверсатионмембер
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -95,7 +95,7 @@ content-length: 26
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 

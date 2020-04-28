@@ -14,7 +14,7 @@ ms.locfileid: "42423520"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,8 +56,8 @@ PATCH /education/users/{id}
 | surname          | String                                               | Фамилия пользователя                                                                                                                                  |
 | mail             | String                                               | Электронный адрес                                                                                                                                    |
 | mobilePhone      | String                                               | Номер мобильного телефона пользователя                                                                                                                            |
-| externalSource   | строка                                               | Возможные значения: `sis`, `manual`, `enum_sentinel`.                                                                                           |
-| externalSource   | строка                                               | Источник для создания пользователя.  Возможные значения: `sis`, `manual`, `enum_sentinel`.                                                        |
+| externalSource   | string                                               | Возможные значения: `sis`, `manual`, `enum_sentinel`.                                                                                           |
+| externalSource   | string                                               | Источник для создания пользователя.  Возможные значения: `sis`, `manual`, `enum_sentinel`.                                                        |
 | mailingAddress   | [physicalAddress](../resources/physicaladdress.md)   | Почтовый адрес пользователя.                                                                                                                            |
 | residenceAddress | [physicalAddress](../resources/physicaladdress.md)   | Адрес проживания пользователя.                                                                                                                        |
 | primaryRole      | string                                               | Роль по умолчанию для пользователя.  Роль пользователя для отдельного курса может отличаться. Возможные значения: `student`, `teacher`, `enum_sentinel`. |

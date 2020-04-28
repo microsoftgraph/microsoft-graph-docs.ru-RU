@@ -14,7 +14,7 @@ ms.locfileid: "42451314"
 ---
 # <a name="update-workposition"></a>Обновление Воркпоситион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ PATCH /me/profile/positions/{id}
 |categories|Коллекция String                                | Содержит категории, связанные с положением пользователя. (например: цифровое преобразование, MS Graph, люди) |
 |описаны    |[поситиондетаил](../resources/positiondetail.md) | Содержит подробные сведения о положении, в котором работают пользователи.                                                                |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркпоситион](../resources/workposition.md) в тексте отклика.
 

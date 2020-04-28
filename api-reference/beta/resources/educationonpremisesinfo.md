@@ -14,7 +14,7 @@ ms.locfileid: "42501516"
 ---
 # <a name="educationonpremisesinfo-resource-type"></a>Тип ресурса Едукатиононпремисесинфо
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Дополнительные сведения, используемые для сопоставления локальной учетной записи пользователя Active Directory с их объектом пользователя Azure AD.
 

@@ -15,7 +15,7 @@ ms.locfileid: "42457106"
 ---
 # <a name="get-a-listitemversion-resource-preview"></a>Получение ресурса ListItemVersion (ознакомительная версия)
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 ```
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [ListItemVersion](../resources/listitemversion.md) в теле отклика.
 

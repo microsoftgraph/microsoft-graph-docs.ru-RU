@@ -14,7 +14,7 @@ ms.locfileid: "42508410"
 ---
 # <a name="addcontentheaderaction-resource-type"></a>Тип ресурса Аддконтенсеадерактион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

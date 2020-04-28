@@ -14,7 +14,7 @@ ms.locfileid: "42453674"
 ---
 # <a name="get-sectiongroup"></a>Получение sectionGroup
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +37,7 @@ GET /groups/{id}/onenote/sectionGroups/{id}
 GET /sites/{id}/onenote/sectionGroups/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
 
 Запрос по умолчанию `parentNotebook` разворачивает и выбирает `id`свойства `name`, и `self` . Допустимые `expand` значения для групп разделов `parentNotebook` — `parentSectionGroup`и.
 

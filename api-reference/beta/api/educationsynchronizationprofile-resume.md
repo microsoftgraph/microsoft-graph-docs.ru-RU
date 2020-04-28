@@ -14,7 +14,7 @@ ms.locfileid: "42424381"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Возобновление синхронизации в Едукатионсинчронизатионпрофиле
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,9 +40,9 @@ POST /synchronizationProfiles/{id}/resume
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 ## <a name="example"></a>Пример

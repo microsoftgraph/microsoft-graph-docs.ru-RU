@@ -14,7 +14,7 @@ ms.locfileid: "42451458"
 ---
 # <a name="workbookapplication-calculate"></a>Воркбукаппликатион: Calculate
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

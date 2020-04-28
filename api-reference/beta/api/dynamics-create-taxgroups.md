@@ -16,7 +16,7 @@ ms.locfileid: "42431150"
 ---
 # <a name="create-taxgroups"></a>Создание Таксграупс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,10 +46,10 @@ POST /financials/companies/{id}/taxGroups
 |Авторизация  |Bearer {токен}. Обязательный. |
 |Content-Type  |application/json   |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **таксграупс** в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **таксграупс** в тексте отклика.
 
 ## <a name="example"></a>Пример

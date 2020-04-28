@@ -15,7 +15,7 @@ ms.locfileid: "42508361"
 ---
 # <a name="album-resource-type"></a>Тип ресурса "альбом"
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42508508"
 ---
 # <a name="accesspackageresourcerolescope-resource-type"></a>Тип ресурса Акцесспаккажересаурцеролескопе
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

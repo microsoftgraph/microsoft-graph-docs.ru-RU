@@ -14,7 +14,7 @@ ms.locfileid: "42442000"
 ---
 # <a name="delete-accesspackagecatalog"></a>Удаление Акцесспаккажекаталог
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,9 +42,9 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Носитель \{токен\}. Обязательный элемент. |
+| Авторизация | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

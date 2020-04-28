@@ -14,7 +14,7 @@ ms.locfileid: "42426306"
 ---
 # <a name="update-educationclass-properties"></a>Обновление свойств educationclass
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

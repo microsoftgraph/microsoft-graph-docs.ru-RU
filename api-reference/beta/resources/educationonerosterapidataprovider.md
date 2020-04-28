@@ -14,7 +14,7 @@ ms.locfileid: "42501530"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>ресурс Едукатиононеростерапидатапровидер
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42501530"
 | Свойство | Тип | Описание |
 |:-|:-|:-|
 | **коннектионурл** | String | URL-адрес подключения к экземпляру OneRoster. |
-| **счулсидс** | Коллекция String |  Список Саурцедидс School для синхронизации. |
+| **счулсидс** | Коллекция объектов string |  Список Саурцедидс School для синхронизации. |
 | **providerName** | String | Имя поставщика службы OneRoster, как определено [спецификацией OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
 | **коннектионсеттингс** | [Microsoft. Graph. Едукатионсинчронизатионконнектионсеттингс](educationsynchronizationconnectionsettings.md) | Параметры подключения для экземпляра OneRoster. Должен иметь тип [Microsoft. Graph. educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md) или [Microsoft. Graph. educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md). |
 | **настроек** | [Microsoft. Graph. Едукатионсинчронизатионкустомизатионс](educationsynchronizationcustomizations.md) | Необязательная настройка, применяемая к профилю синхронизации.|

@@ -16,7 +16,7 @@ ms.locfileid: "42503847"
 ---
 # <a name="itemcategories-resource-type"></a>Тип ресурса Итемкатегориес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "42503847"
 |[Получение Итемкатегориес](../api/dynamics-itemcategories-get.md)      |итемкатегориес|Получение категории элемента.   |
 |[POST Итемкатегориес](../api/dynamics-create-itemcategories.md)  |итемкатегориес|Создайте категорию элемента.|
 |[Исправление Итемкатегориес](../api/dynamics-itemcategories-update.md) |итемкатегориес|Обновление категории элемента.|
-|[Удаление Итемкатегориес](../api/dynamics-itemcategories-delete.md)|нет          |Удаление категории элемента.|
+|[Удаление Итемкатегориес](../api/dynamics-itemcategories-delete.md)|Нет          |Удаление категории элемента.|
 
 ## <a name="properties"></a>Свойства
 | Свойство           | Тип   |Описание                                     |

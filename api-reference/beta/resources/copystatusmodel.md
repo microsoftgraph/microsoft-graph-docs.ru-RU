@@ -14,7 +14,7 @@ ms.locfileid: "42507382"
 ---
 # <a name="copystatusmodel-resource-type"></a>Тип ресурса Копистатусмодел
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

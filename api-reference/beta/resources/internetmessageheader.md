@@ -14,7 +14,7 @@ ms.locfileid: "42495405"
 ---
 # <a name="internetmessageheader-resource-type"></a>Тип ресурса internetMessageHeader
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -15,7 +15,7 @@ ms.locfileid: "42432420"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>Отправка или замена содержимого элемента DriveItem
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -78,7 +78,7 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает ресурс [driveItem][item-resource] в тексте отклика для вновь созданного или обновленного файла.
 

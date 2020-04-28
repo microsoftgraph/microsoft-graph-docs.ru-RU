@@ -14,7 +14,7 @@ ms.locfileid: "42421440"
 ---
 # <a name="get-device-command-status"></a>Получение состояния команд для устройства
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ GET me/devices/{id}/commands/{id}
 |Авторизация| Bearer {токен}. Обязательный. |
 |Accept | application/json |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -105,7 +105,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 <!-- {
   "blockType": "ignored",
   "truncated": false,
@@ -162,7 +162,7 @@ GET me/devices/{id}/command/{id}/responsePayload
 |Авторизация| Bearer {токен}. Обязательный. |
 |Accept | application/json |
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 <!-- { "blockType": "ignored" } -->
 
 ```http

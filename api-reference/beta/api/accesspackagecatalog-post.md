@@ -14,7 +14,7 @@ ms.locfileid: "42441965"
 ---
 # <a name="create-accesspackagecatalog"></a>Создание Акцесспаккажекаталог
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,14 +42,14 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Носитель \{токен\}. Обязательный элемент. |
+| Авторизация | Носитель \{токен\}. Обязательно. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [акцесспаккажекаталог](../resources/accesspackagecatalog.md) в формате JSON.  Включите свойства **DisplayName**, **Description**и **исекстерналливисибле** .
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажекаталог](../resources/accesspackagecatalog.md) в тексте отклика.
 

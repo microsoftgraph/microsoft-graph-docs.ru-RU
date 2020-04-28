@@ -14,7 +14,7 @@ ms.locfileid: "42508117"
 ---
 # <a name="audioduckingconfiguration-resource-type"></a>Тип ресурса Аудиодуккингконфигуратион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

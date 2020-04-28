@@ -14,7 +14,7 @@ ms.locfileid: "42425788"
 ---
 # <a name="update-educationrubric"></a>Обновление Едукатионрубрик
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ PATCH /education/me/assignments/{id}/rubric
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -59,7 +59,7 @@ PATCH /education/me/assignments/{id}/rubric
 |тонов|Коллекция Рубриклевел|Коллекция уровней, составляющих данный Rubric.|
 |являются|Коллекция Рубриккуалити|Коллекция качеств, составляющих этот Rubric.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [едукатионрубрик](../resources/educationrubric.md) в тексте отклика.
 

@@ -14,7 +14,7 @@ ms.locfileid: "42452374"
 ---
 # <a name="get-threat-intelligence-indicator"></a>Получение индикатора логики операций с угрозами
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

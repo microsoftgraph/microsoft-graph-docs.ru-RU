@@ -14,7 +14,7 @@ ms.locfileid: "42456539"
 ---
 # <a name="get-onenoteoperation"></a>Получение onenoteOperation
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42454722"
 ---
 # <a name="range-lastrow"></a>Range: LastRow
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

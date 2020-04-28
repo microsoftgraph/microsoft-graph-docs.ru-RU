@@ -14,7 +14,7 @@ ms.locfileid: "42451604"
 ---
 # <a name="update-useraccountinformation"></a>Обновление усераккаунтинформатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,7 +56,7 @@ PATCH /me/profile/account/{id}
 |преферредлангуажетаг |[localeInfo](../resources/localeinfo.md) |Содержит язык, который пользователь связал с учетной записью как предпочитаемый.                     |
 |userPrincipalName    |String                                   |Имя участника-пользователя (UPN) пользователя, связанного с учетной записью.                          |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усераккаунтинформатион](../resources/useraccountinformation.md) в тексте отклика.
 

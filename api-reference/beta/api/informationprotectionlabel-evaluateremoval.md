@@ -14,7 +14,7 @@ ms.locfileid: "42446357"
 ---
 # <a name="informationprotectionlabel-evaluateremoval"></a>Информатионпротектионлабел: Евалуатеремовал
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ POST /informationprotection/policy/labels/evaluateRemoval
 | Content-Type  | application/json. Обязательный.                                                                                                                                                       |
 | User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -65,7 +65,7 @@ POST /informationprotection/policy/labels/evaluateRemoval
 | довнградежустификатион | [довнградежустификатион](../resources/downgradejustification.md) | Обоснование, которое должно быть предоставлено логикой пользователя или приложения.                                                               |
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [информатионпротектионактион](../resources/informationprotectionaction.md) в тексте отклика. [Объект информатионпротектионактион](../resources/informationprotectionaction.md) будет содержать объект [метадатаактион](../resources/metadataaction.md) , который информирует приложение о том, какие метаданные необходимо удалить. 
 

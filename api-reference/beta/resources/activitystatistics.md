@@ -14,7 +14,7 @@ ms.locfileid: "42508431"
 ---
 # <a name="activitystatistics-resource-type"></a>Тип ресурса Активитистатистикс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

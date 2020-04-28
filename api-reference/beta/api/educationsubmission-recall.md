@@ -14,7 +14,7 @@ ms.locfileid: "42424878"
 ---
 # <a name="educationsubmission-recall"></a>educationSubmission: отзыв
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -64,7 +64,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/recall
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/recall
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 

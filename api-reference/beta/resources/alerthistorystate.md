@@ -14,7 +14,7 @@ ms.locfileid: "42508347"
 ---
 # <a name="alerthistorystate-resource-type"></a>Тип ресурса Алерсистористате
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42507242"
 ---
 # <a name="diagnostic-resource-type"></a>Тип ресурса диагностики
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

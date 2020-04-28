@@ -14,7 +14,7 @@ ms.locfileid: "42508124"
 ---
 # <a name="audioconferencing-resource-type"></a>Тип ресурса АудиоконференЦинг
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42427657"
 ---
 # <a name="get-educationrubric-attached-to-educationassignment"></a>Получение Едукатионрубрик, подключенных к educationAssignment
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,9 +42,9 @@ GET /education/classes/{id}/assignments/{id}/rubric
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

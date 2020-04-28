@@ -15,7 +15,7 @@ ms.locfileid: "42496931"
 ---
 # <a name="hashes-resource-type"></a>Тип ресурса hashs
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42507319"
 ---
 # <a name="customtimezone-resource-type"></a>Тип ресурса customTimeZone
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

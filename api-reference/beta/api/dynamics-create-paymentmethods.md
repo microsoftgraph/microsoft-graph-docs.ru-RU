@@ -16,7 +16,7 @@ ms.locfileid: "42431346"
 ---
 # <a name="create-paymentmethods"></a>Создание Пайментмесодс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,10 +45,10 @@ POST /financials/companies/{id}/paymentMethods
 |Авторизация  |Bearer {токен}. Обязательный.    |
 |Content-Type   |application/json             |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **пайментмесодс** в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **пайментмесодс** в тексте отклика.
 
 ## <a name="example"></a>Пример

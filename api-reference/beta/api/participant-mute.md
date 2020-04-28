@@ -14,7 +14,7 @@ ms.locfileid: "42455973"
 ---
 # <a name="participant-mute"></a>участник: выкл.
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ POST /communications/calls/{id}/participants/{id}/mute
 |:---------------|:--------|:----------|
 |Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [мутепартиЦипантоператион](../resources/muteParticipantoperation.md) в тексте отклика.
 
 >**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление списка.

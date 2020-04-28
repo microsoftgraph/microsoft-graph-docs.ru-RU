@@ -14,7 +14,7 @@ ms.locfileid: "42456413"
 ---
 # <a name="update-openshift"></a>Обновление Опеншифт
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 |schedulingGroupId|String| Планирование кода группы. |
 |шаредопеншифт|опеншифтитем|Опубликованная открытая смена.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [опеншифт](../resources/openshift.md) в тексте отклика.
 

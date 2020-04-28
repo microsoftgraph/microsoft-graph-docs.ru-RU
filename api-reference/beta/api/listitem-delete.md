@@ -15,7 +15,7 @@ ms.locfileid: "42457145"
 ---
 # <a name="delete-an-item-from-a-list"></a>Удаление элемента из списка
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

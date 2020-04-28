@@ -16,7 +16,7 @@ ms.locfileid: "42504141"
 ---
 # <a name="dimensionvalues-resource-type"></a>Тип ресурса Дименсионвалуес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

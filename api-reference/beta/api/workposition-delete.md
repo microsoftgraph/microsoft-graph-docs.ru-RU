@@ -14,7 +14,7 @@ ms.locfileid: "42451261"
 ---
 # <a name="delete-workposition"></a>Удаление Воркпоситион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

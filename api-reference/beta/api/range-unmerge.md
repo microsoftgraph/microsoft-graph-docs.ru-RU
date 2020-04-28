@@ -14,7 +14,7 @@ ms.locfileid: "42454703"
 ---
 # <a name="range-unmerge"></a>Range: unmerge
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

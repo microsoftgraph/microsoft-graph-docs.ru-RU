@@ -14,7 +14,7 @@ ms.locfileid: "42502279"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ ms.locfileid: "42502279"
 | externalId     | String                                | Идентификатор курса из системы синхронизации.                                                |
 | externalName   | String                                | Название курса в системе синхронизации.                                                |
 | externalSource | string                                | Способ создания этого курса. Возможные значения: `sis`, `manual`, `unknownFutureValue`. |
-| оценка          | строка                                | Уровень категории класса.                                                               |
+| оценка          | string                                | Уровень категории класса.                                                               |
 | mailNickname   | String                                | Почтовое имя для отправки почты всем участникам, если это возможно.                         |
 | term           | [educationTerm]                       | Термин для класса.                                                                     |
 

@@ -14,7 +14,7 @@ ms.locfileid: "42507326"
 ---
 # <a name="customaction-resource-type"></a>Тип ресурса customAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

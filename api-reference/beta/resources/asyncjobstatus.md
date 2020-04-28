@@ -15,7 +15,7 @@ ms.locfileid: "42508173"
 ---
 # <a name="asyncjobstatus-resource"></a>Ресурс AsyncJobStatus
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

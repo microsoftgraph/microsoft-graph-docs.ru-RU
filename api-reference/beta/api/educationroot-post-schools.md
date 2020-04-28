@@ -14,7 +14,7 @@ ms.locfileid: "42426061"
 ---
 # <a name="create-educationschool"></a>Создание educationSchool
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +44,7 @@ POST /education/schools
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json          |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса предоставьте описание объекта [educationSchool](../resources/educationschool.md) в формате JSON.
 

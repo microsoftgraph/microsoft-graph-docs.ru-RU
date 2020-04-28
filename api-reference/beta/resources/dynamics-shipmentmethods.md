@@ -16,7 +16,7 @@ ms.locfileid: "42503574"
 ---
 # <a name="shipmentmethods-resource-type"></a>Тип ресурса Шипментмесодс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "42503574"
 |[Получение Шипментмесодс](../api/dynamics-shipmentmethods-get.md)|шипментмесодс|Получает метод отгрузки.|
 |[POST Шипментмесодс](../api/dynamics-create-shipmentmethods.md)|шипментмесодс|Создает метод отгрузки.|
 |[Исправление Шипментмесодс](../api/dynamics-shipmentmethods-update.md)|шипментмесодс|Обновляет метод отгрузки.|
-|[Удаление Шипментмесодс](../api/dynamics-shipmentmethods-delete.md)|нет|Удаляет метод отгрузки.|
+|[Удаление Шипментмесодс](../api/dynamics-shipmentmethods-delete.md)|Нет|Удаляет метод отгрузки.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

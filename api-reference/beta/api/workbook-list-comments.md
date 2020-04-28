@@ -14,7 +14,7 @@ ms.locfileid: "42451485"
 ---
 # <a name="list-workbookcomments"></a>Список Воркбуккомментс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Получение списка объектов [воркбуккоммент](../resources/workbookcomment.md) .
 
@@ -42,7 +42,7 @@ GET /workbook/comments
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

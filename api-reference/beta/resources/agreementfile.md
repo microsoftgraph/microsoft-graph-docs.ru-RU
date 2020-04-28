@@ -14,7 +14,7 @@ ms.locfileid: "42508375"
 ---
 # <a name="agreementfile-resource-type"></a>Тип ресурса Агриментфиле
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

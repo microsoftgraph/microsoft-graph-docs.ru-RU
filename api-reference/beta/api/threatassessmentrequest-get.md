@@ -22,7 +22,7 @@ ms.locfileid: "42452430"
 
 Запрос на оценку угроз может иметь один из следующих типов:
 
-* [Почта](../resources/mailAssessmentRequest.md)
+* [почта](../resources/mailAssessmentRequest.md);
 * [Файл электронной почты](../resources/emailFileAssessmentRequest.md)
 * [Файл](../resources/fileAssessmentRequest.md)
 * [URL](../resources/urlAssessmentRequest.md)
@@ -60,7 +60,7 @@ GET /informationProtection/threatAssessmentRequests/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

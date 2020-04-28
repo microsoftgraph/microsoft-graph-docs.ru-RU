@@ -14,7 +14,7 @@ ms.locfileid: "42451387"
 ---
 # <a name="workbookpivottable-refresh"></a>workbookPivotTable: refresh
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

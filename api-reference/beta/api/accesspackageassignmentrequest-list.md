@@ -14,7 +14,7 @@ ms.locfileid: "42442056"
 ---
 # <a name="list-accesspackageassignmentrequests"></a>Список Акцесспаккажеассигнментрекуестс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,9 +47,9 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Носитель \{токен\}. Обязательный элемент. |
+| Авторизация | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

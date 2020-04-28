@@ -14,7 +14,7 @@ ms.locfileid: "42507721"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

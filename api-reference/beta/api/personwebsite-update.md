@@ -14,7 +14,7 @@ ms.locfileid: "42455867"
 ---
 # <a name="update-personwebsite"></a>Обновление персонвебсите
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,7 +56,7 @@ PATCH /me/profile/websites/{id}
 |displayName   |Строка           | Содержит понятное имя для веб-сайта.                                           |
 |webUrl        |String           | Содержит ссылку на сам веб-сайт.                                              |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [персонвебсите](../resources/personwebsite.md) в тексте отклика.
 

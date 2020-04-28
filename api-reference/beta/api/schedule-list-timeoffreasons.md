@@ -14,7 +14,7 @@ ms.locfileid: "42453837"
 ---
 # <a name="list-timeoffreasons"></a>Список Тимеоффреасонс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Получение списка [тимеоффреасонс](../resources/timeoffreason.md) по [расписанию](../resources/schedule.md).
@@ -47,7 +47,7 @@ GET /teams/{teamId}/schedule/timeOffReasons
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

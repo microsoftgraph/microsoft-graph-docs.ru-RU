@@ -14,7 +14,7 @@ ms.locfileid: "42425242"
 ---
 # <a name="add-educationclass-to-educationschool"></a>Добавление educationClass к educationSchool
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ POST /education/schools/{id}/classes/$ref
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса предоставьте описание объекта [educationClass](../resources/educationclass.md) в формате JSON.
 
 
@@ -80,7 +80,7 @@ Content-length: 224
 ---
 
 
-##### <a name="response"></a>Отклик 
+##### <a name="response"></a>Ответ 
 Ниже приведен пример ответа. 
 
 <!-- Add the educationClass resource to the response. -->

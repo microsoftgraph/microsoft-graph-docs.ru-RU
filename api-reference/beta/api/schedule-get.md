@@ -14,7 +14,7 @@ ms.locfileid: "42453865"
 ---
 # <a name="get-schedule"></a>Получение расписания
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

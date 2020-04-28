@@ -15,7 +15,7 @@ ms.locfileid: "42453200"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Создание страницы в списке страниц сайта
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "42453200"
 POST /sites/{site-id}/pages
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса добавьте представление ресурса [ситепаже][] , который требуется создать, в формате JSON.
 

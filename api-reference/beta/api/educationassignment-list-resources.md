@@ -14,7 +14,7 @@ ms.locfileid: "42427398"
 ---
 # <a name="list-educationassignmentresources"></a>Список Едукатионассигнментресаурцес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments/{id}/resources
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в тексте отклика.

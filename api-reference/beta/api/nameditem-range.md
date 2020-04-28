@@ -14,7 +14,7 @@ ms.locfileid: "42456837"
 ---
 # <a name="nameditem-range"></a>NamedItem: Range
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

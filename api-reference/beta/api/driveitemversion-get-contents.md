@@ -15,7 +15,7 @@ ms.locfileid: "42432294"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>Скачивание содержимого ресурса DriveItemVersion (ознакомительная версия)
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

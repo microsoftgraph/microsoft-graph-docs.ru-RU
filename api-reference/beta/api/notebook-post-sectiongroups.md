@@ -14,7 +14,7 @@ ms.locfileid: "42456700"
 ---
 # <a name="create-sectiongroup"></a>Создание sectionGroup
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | `application/json` |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса укажите имя группы разделов.

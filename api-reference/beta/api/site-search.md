@@ -15,7 +15,7 @@ ms.locfileid: "42453207"
 ---
 # <a name="search-for-sites"></a>Поиск сайтов
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

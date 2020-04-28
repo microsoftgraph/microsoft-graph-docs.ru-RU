@@ -14,7 +14,7 @@ ms.locfileid: "42394800"
 ---
 # <a name="segment-resource-type"></a>Тип ресурса "сегмент"
 
-Пространство имен: Microsoft. Graph. Каллрекордс
+Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,8 +31,8 @@ ms.locfileid: "42394800"
 |id|String|Уникальный идентификатор сегмента. Только для чтения.|
 |объекта|[Microsoft. Graph. Каллрекордс. Endpoint](callrecords-endpoint.md)|Конечная точка, которая инициировала этот сегмент.|
 |вызываемого абонента|[Microsoft. Graph. Каллрекордс. Endpoint](callrecords-endpoint.md)|Конечная точка, которая ответила на этот сегмент.|
-|фаилуреинфо|[Microsoft. Graph. Каллрекордс. Фаилуреинфо](callrecords-failureinfo.md)|Сведения об ошибке, связанные с сегментом, если произошел сбой.|
-|СМИ|Коллекция [Microsoft. Graph. каллрекордс. Media](callrecords-media.md)|Носитель, связанный с этим сегментом.|
+|failureInfo|[Microsoft. Graph. Каллрекордс. Фаилуреинфо](callrecords-failureinfo.md)|Сведения об ошибке, связанные с сегментом, если произошел сбой.|
+|media|Коллекция [Microsoft. Graph. каллрекордс. Media](callrecords-media.md)|Носитель, связанный с этим сегментом.|
 |startDateTime|DateTimeOffset|Время в формате UTC, когда начался сегмент. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |endDateTime|DateTimeOffset|Время в формате UTC, когда сегмент закончился. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 

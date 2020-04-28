@@ -14,7 +14,7 @@ ms.locfileid: "42451793"
 ---
 # <a name="list-people"></a>Список людей
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -59,7 +59,7 @@ GET /users/{id | userPrincipalName}/people
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Accept | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

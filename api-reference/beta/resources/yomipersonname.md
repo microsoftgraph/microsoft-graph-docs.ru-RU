@@ -14,7 +14,7 @@ ms.locfileid: "42518975"
 ---
 # <a name="yomipersonname-resource-type"></a>Тип ресурса Йомиперсоннаме
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

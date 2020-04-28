@@ -14,7 +14,7 @@ ms.locfileid: "42502272"
 ---
 # <a name="educationcourse-resource-type"></a>Тип ресурса Едукатионкаурсе
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

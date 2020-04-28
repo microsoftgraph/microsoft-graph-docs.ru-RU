@@ -14,7 +14,7 @@ ms.locfileid: "42507606"
 ---
 # <a name="commsnotification-resource-type"></a>Тип ресурса Коммснотификатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

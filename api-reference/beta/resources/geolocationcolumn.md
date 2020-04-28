@@ -15,7 +15,7 @@ ms.locfileid: "42497631"
 ---
 # <a name="geolocationcolumn-resource-type"></a>Тип ресурса Жеолокатионколумн
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

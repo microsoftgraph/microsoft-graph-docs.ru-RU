@@ -14,7 +14,7 @@ ms.locfileid: "42456602"
 ---
 # <a name="offershiftrequest-decline"></a>Оффершифтрекуест: отклонить
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

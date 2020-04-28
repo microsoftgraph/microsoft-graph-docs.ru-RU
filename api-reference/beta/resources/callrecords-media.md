@@ -14,7 +14,7 @@ ms.locfileid: "42394849"
 ---
 # <a name="media-resource-type"></a>Тип ресурса мультимедиа
 
-Пространство имен: Microsoft. Graph. Каллрекордс
+Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

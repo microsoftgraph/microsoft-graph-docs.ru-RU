@@ -14,7 +14,7 @@ ms.locfileid: "42507585"
 ---
 # <a name="companydetail-resource-type"></a>Тип ресурса Компанидетаил
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ ms.locfileid: "42507585"
 | Свойство       | Тип                                | Описание                                 |
 |:---------------|:------------------------------------|:--------------------------------------------|
 |address         |[physicalAddress](physicaladdress.md)| Адрес компании.                     |
-|department      |String                               | Название отдела в компании.           |
+|отделу;      |String                               | Название отдела в компании.           |
 |displayName     |Строка                               | Название компании.                               |
 |officeLocation  |String                               | Местонахождение комнаты для пользователя, на который ссылается.  |
 |произношение   |String                               | Рекомендации по произношению названия компании.   |

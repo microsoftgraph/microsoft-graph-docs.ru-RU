@@ -14,7 +14,7 @@ ms.locfileid: "42500088"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>Тип ресурса Едукатионсинчронизатионпрофиле
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "42500088"
 | [Возобновление приостановленной синхронизации](../api/educationsynchronizationprofile-resume.md) | Нет | Возобновление приостановленной синхронизации. |
 | [Сброс синхронизации](../api/educationsynchronizationprofile-reset.md) | Нет | Сбросьте состояние профиля и перезапустите синхронизацию. |
 | [Запуск синхронизации для отправленных файлов](../api/educationsynchronizationprofile-start.md) | Коллекция [едукатионфилесинчронизатионверификатионмессаже](educationfilesynchronizationverificationmessage.md)| Проверьте отправленные исходные файлы и запустите синхронизацию. Применяется только в том случае, если поставщик данных — [едукатионксвдатапровидер](educationcsvdataprovider.md). |
-| [Получение URL-адреса отправки](../api/educationsynchronizationprofile-uploadurl.md) | строка | Возвращает кратковременный URL-адрес для отправки CSV-файлов данных. Применяется только в том случае, если поставщик данных — [едукатионксвдатапровидер](educationcsvdataprovider.md). |
+| [Получение URL-адреса отправки](../api/educationsynchronizationprofile-uploadurl.md) | string | Возвращает кратковременный URL-адрес для отправки CSV-файлов данных. Применяется только в том случае, если поставщик данных — [едукатионксвдатапровидер](educationcsvdataprovider.md). |
 | [Получение состояния синхронизации](../api/educationsynchronizationprofilestatus-get.md) | [status](educationsynchronizationprofilestatus.md) | Возврат состояния определенного профиля синхронизации. |
 | [Получение ошибок синхронизации](../api/educationsynchronizationerrors-get.md) | Коллекция [educationSynchronizationError](educationsynchronizationerror.md)| Получение всех ошибок, возникших во время синхронизации. |
 
@@ -40,7 +40,7 @@ ms.locfileid: "42500088"
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **displayName** | строка |  Имя профиля конфигурации для удостоверений синхронизации.         |
+| **displayName** | string |  Имя профиля конфигурации для удостоверений синхронизации.         |
 | **Предоставление dataProvider** | [едукатионсинчронизатиондатапровидер](educationsynchronizationdataprovider.md) |  Поставщик данных, используемый для профиля.         |
 | **идентитисинчронизатионконфигуратион** | [едукатионидентитисинчронизатионконфигуратион](educationidentitysynchronizationconfiguration.md) | [Создание](educationidentitycreationconfiguration.md) удостоверения или [соответствующая](educationidentitymatchingconfiguration.md) конфигурация.        |
 | **лиценсестоассигн** | Коллекция [едукатионсинчронизатионлиценсеассигнмент](educationsynchronizationlicenseassignment.md)|  Конфигурация установки лицензий.        |

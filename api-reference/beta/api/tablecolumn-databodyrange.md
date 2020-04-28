@@ -14,7 +14,7 @@ ms.locfileid: "42452780"
 ---
 # <a name="tablecolumn-databodyrange"></a>TableColumn: DataBodyRange
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

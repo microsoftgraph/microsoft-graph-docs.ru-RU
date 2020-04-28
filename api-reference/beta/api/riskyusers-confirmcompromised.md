@@ -15,7 +15,7 @@ ms.locfileid: "42453886"
 ---
 # <a name="riskyuser-confirmcompromised"></a>Рискюсер: Конфирмкомпромисед
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +44,7 @@ POST /riskyUsers/confirmCompromised
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Укажите рискованные идентификаторы пользователей, которые нужно отклонить в теле запроса.
 
 ## <a name="response"></a>Отклик
@@ -84,7 +84,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

@@ -14,7 +14,7 @@ ms.locfileid: "42455237"
 ---
 # <a name="delete-profile"></a>Удаление профиля
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

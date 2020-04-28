@@ -14,7 +14,7 @@ ms.locfileid: "42438045"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>Клаудкоммуникатионс: Жетпресенцесбюсерид
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +50,7 @@ POST /communications/getPresencesByUserId
 |:---------------|:--------|:----------|
 |ids|Коллекция String|Идентификаторы объектов пользователя.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [присутствия](../resources/presence.md) в тексте отклика.
 
@@ -90,7 +90,7 @@ Content-Type: application/json
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 
 > **Примечание:** Объекты ответа могут быть сокращены для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

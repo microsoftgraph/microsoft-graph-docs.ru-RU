@@ -92,7 +92,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->Примечание. Если срок действия идентификатора сеанса истек, для сеанса будет возвращен код ошибки HTTP `404`. В таком случае вы можете создать другой сеанс и продолжить работу. Можно использовать другой подход — периодически обновлять сеанс, чтобы он не был завершен. Как правило, срок действия постоянного сеанса истечет через 5 минут бездействия. Срок действия несохраняемого сеанса истечет через 7 минут бездействия. 
+>Примечание. Если срок действия идентификатора сеанса истек, для сеанса будет возвращен код ошибки HTTP `404`. В таком случае вы можете создать другой сеанс и продолжить работу. Можно использовать другой подход — периодически обновлять сеанс, чтобы он не был завершен. Обычно срок действия сохраняемого сеанса истекает через 5 минут бездействия. Срок действия несохраняемого сеанса истекает через 7 минут бездействия. 
 
 ## <a name="common-excel-scenarios"></a>Стандартные сценарии Excel
 
@@ -101,7 +101,7 @@ workbook-session-id: {session-id}
 ### <a name="worksheet-operations"></a>Операции с листами
 
 #### <a name="list-worksheets-part-of-the-workbook"></a>Список листов, являющихся частью книги 
-Запрос 
+Запросить 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -196,7 +196,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="delete-a-worksheet"></a>Удаление листа
 
-Запрос
+Запросить
 ```
 DELETE /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D')
 content-type: Application/Json 
@@ -213,7 +213,7 @@ HTTP code: 204 No Content
 
 #### <a name="update-worksheet-properties"></a>Обновление свойств листа
 
-Запрос 
+Запросить 
 
 ```
 PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
@@ -246,7 +246,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="list-charts-that-are-part-of-the-worksheet"></a>Список диаграмм, являющихся частью листа 
 
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
@@ -281,7 +281,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-chart-image"></a>Получение изображения диаграммы
 
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
@@ -303,7 +303,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-chart"></a>Добавление диаграммы  
 
-Запрос
+Запросить
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -367,7 +367,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-chart-source-data"></a>Обновление исходных данных диаграммы 
 
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
@@ -389,7 +389,7 @@ HTTP code: 204 No Content
 
 #### <a name="get-list-of-tables"></a>Получение списка таблиц 
 
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
@@ -407,7 +407,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="create-table"></a>Создание таблицы
 
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
@@ -437,7 +437,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-table"></a>Обновление таблицы
 
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
@@ -466,7 +466,7 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="get-list-of-table-rows"></a>Получение списка строк таблицы
-Запрос 
+Запросить 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -557,7 +557,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-list-of-table-columns"></a>Получение списка столбцов таблицы
 
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns
@@ -669,7 +669,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-row"></a>Добавление строки таблицы
 
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
@@ -702,7 +702,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-column"></a>Добавление столбца таблицы 
 
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/Columns
@@ -742,7 +742,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="delete-table-row"></a>Удаление строки таблицы
 
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http  
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows/$/ItemAt(index=6)
@@ -757,7 +757,7 @@ HTTP code: 204 No Content
 ```
 
 #### <a name="delete-table-column"></a>Удаление столбца таблицы 
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns('3')
@@ -772,7 +772,7 @@ HTTP code: 204 No Content
 ```
 
 #### <a name="convert-table-to-range"></a>Преобразование таблицы в диапазон 
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
@@ -788,7 +788,7 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="table-sort"></a>Сортировка таблицы
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
@@ -812,7 +812,7 @@ HTTP code: 204 No Content
 ```
 
 #### <a name="table-filter"></a>Фильтрация таблицы
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
@@ -838,7 +838,7 @@ HTTP code: 204 No Content
 
 
 #### <a name="clear-filter"></a>Очистка фильтра
-Запрос
+Запросить
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
@@ -846,7 +846,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -864,7 +864,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Отклик 
+Ответ 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1078,7 +1078,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -1095,7 +1095,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Отклик 
+Ответ 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -1179,9 +1179,9 @@ content-type: application/json
 }
 ```
 
-Значение null также возвращается в ответе в следующих случаях:
-- Если ошибка возникает при попытке получить определенное свойство объекта, а данное свойство может быть задано как null, свойство может возвращать значение NULL в ответе.
-- Для объекта Range при извлечении диапазона для всей строки или всего столбца некоторые свойства могут возвращать значение NULL в качестве ответа. Если размер диапазона превышает верхнее ограничение (5M Cells), некоторые свойства будут возвращать значение NULL в качестве значения.
+Значение null также возвращается в отклике в указанных ниже случаях.
+- Если при попытке получить определенное свойство объекта возникает ошибка, и для такого свойства можно задать значение null, свойство может возвращать в отклике значение null.
+- Для объекта Range при получении диапазона для целой строки или целого столбца некоторые свойства могут возвращать значение null в качестве отклика. Если размер диапазона превышает верхнее ограничение (5 млн ячеек), некоторые свойства возвращают null в качестве значения.
 
 ### <a name="blank-input-and-output"></a>Пустые входные и выходные данные
 

@@ -14,7 +14,7 @@ ms.locfileid: "42446366"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>Информатионпротектионлабел: Евалуатеклассификатионресултс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -64,7 +64,7 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 | Content-Type  | application/json. Обязательный.                                                                                                                                           |
 | User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -73,7 +73,7 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 | контентинфо           | [контентинфо](../resources/contentInfo.md)                              | Предоставляет подробные сведения о формате содержимого, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение".                                                                                                                                                   |
 | классификатионресултс | Коллекция [классификатионресулт](../resources/classificationresult.md) | Содержит набор результатов классификации, возвращаемых конечной точкой классификации данных. Сведения о классификаитон используются для определения соответствующей метки на основе конфигурации метки политики защиты информации Майкрософт в центре безопасности и соответствия требованиям Office 365. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [информатионпротектионактион](../resources/informationprotectionaction.md) в тексте отклика.
 

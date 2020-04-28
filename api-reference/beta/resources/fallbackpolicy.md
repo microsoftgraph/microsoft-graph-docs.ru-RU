@@ -14,7 +14,7 @@ ms.locfileid: "42498576"
 ---
 # <a name="fallbackpolicy-resource-type"></a>Тип ресурса Фаллбаккполици
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

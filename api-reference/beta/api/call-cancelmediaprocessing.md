@@ -14,7 +14,7 @@ ms.locfileid: "42440887"
 ---
 # <a name="call-cancelmediaprocessing"></a>Call: Канцелмедиапроцессинг
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +50,7 @@ POST /communications/calls/{id}/cancelMediaProcessing
 |:---------------|:--------|:---------------------------------------------------------------|
 | Контекст  | String  | Контекст клиента.                                            |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код HTTP-ответа и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
 
 ## <a name="example"></a>Пример

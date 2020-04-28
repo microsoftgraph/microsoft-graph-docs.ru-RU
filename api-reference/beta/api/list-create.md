@@ -15,7 +15,7 @@ ms.locfileid: "42457172"
 ---
 # <a name="create-a-new-list"></a>Создание списка
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "42457172"
 POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса укажите представление ресурса [списка][], который необходимо создать, в формате JSON.
 

@@ -15,7 +15,7 @@ ms.locfileid: "42432413"
 ---
 # <a name="driveitem-restore"></a>driveItem: восстановление
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,9 +43,9 @@ POST /me/drive/items/{item-id}/restore
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -54,7 +54,7 @@ POST /me/drive/items/{item-id}/restore
 |parentReference|[ItemReference](../resources/itemreference.md)| Необязательный. Ссылка на родительский элемент, на который будет восстановлен удаленный элемент. |
 |name           |String                                        | Необязательный параметр. Новое имя восстановленного элемента. Если оно не предоставлено, будет использовано такое же имя, как в оригинале. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод `200 OK` возвращает код отклика и восстановленный объект [driveItem](../resources/driveitem.md) в тексте отклика.
 

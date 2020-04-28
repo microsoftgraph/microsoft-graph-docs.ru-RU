@@ -20,7 +20,7 @@ ms.locfileid: "42503910"
 
 Вы можете использовать Microsoft Graph для подключения и интеграции веб-службы или решения SaaS с Microsoft Dynamics 365 Business Central. С помощью Microsoft Graph вы можете создавать приложения, которые обеспечивают доступ к данным и тесно интегрируются с Microsoft Dynamics 365 Business Central.
 
-## <a name="authorization"></a>Authorization
+## <a name="authorization"></a>Авторизация
 Используйте конечную точку Azure AD версии 2.0 для проверки подлинности в Dynamics 365 Business Central API. Для `Authorization: Bearer {access-token}` всех API требуется заголовок запроса. Дополнительные сведения о проверке подлинности приведены [в разделе получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
 
 ## <a name="common-dynamics-365-business-central-scenarios"></a>Распространенные сценарии Dynamics 365 Business Central

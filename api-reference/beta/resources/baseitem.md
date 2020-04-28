@@ -15,7 +15,7 @@ ms.locfileid: "42508033"
 ---
 # <a name="baseitem-resource-type"></a>Тип ресурса baseItem
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

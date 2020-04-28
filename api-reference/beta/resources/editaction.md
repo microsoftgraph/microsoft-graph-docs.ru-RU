@@ -15,7 +15,7 @@ ms.locfileid: "42502853"
 ---
 # <a name="editaction-resource-type"></a>Тип ресурса EditAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

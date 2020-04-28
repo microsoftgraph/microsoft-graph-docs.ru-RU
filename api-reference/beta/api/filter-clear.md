@@ -14,7 +14,7 @@ ms.locfileid: "42421650"
 ---
 # <a name="filter-clear"></a>Filter: clear
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

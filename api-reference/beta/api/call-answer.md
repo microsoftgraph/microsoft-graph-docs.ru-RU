@@ -14,7 +14,7 @@ ms.locfileid: "42440908"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,10 +53,10 @@ POST /communications/calls/{id}/answer
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |Позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления в дальнейшем. Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot. Это должно быть `https`.    |
-|акцептедмодалитиес|Коллекция String                         |Список принимаемых модальности. Возможные значения: `audio`, `video`,. `videoBasedScreenSharing` Необходимо для ответа на вызов. |
+|акцептедмодалитиес|Коллекция объектов string                         |Список принимаемых модальности. Возможные значения: `audio`, `video`,. `videoBasedScreenSharing` Необходимо для ответа на вызов. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) или [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |Настройка мультимедиа. Потребоваться                                                                                                            |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Этот метод возвращает код `202 Accepted` отклика.
 
 ## <a name="examples"></a>Примеры

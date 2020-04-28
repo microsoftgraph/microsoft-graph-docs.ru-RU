@@ -14,7 +14,7 @@ ms.locfileid: "42440726"
 ---
 # <a name="call-unmute"></a>вызов: включение звука
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ POST /communications/calls/{id}/unmute
 |:---------------|:--------|:----------|
 |Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [унмутепартиЦипантоператион](../resources/unmuteParticipantoperation.md) в тексте отклика.
 
 >**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление списка.

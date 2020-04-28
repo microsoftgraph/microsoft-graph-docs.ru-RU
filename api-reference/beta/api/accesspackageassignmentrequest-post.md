@@ -14,7 +14,7 @@ ms.locfileid: "42442028"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Создание Акцесспаккажеассигнментрекуест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Носитель \{токен\}. Обязательный элемент. |
+| Авторизация | Носитель \{токен\}. Обязательно. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Основной текст запроса
@@ -53,7 +53,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 Чтобы удалить назначение, значение свойства **requestType** — `AdminRemove`, и свойство **акцесспаккажеассигнмент** содержит свойство **ID** , идентифицирующее удаляемое [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) .
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) в тексте отклика.
 

@@ -14,7 +14,7 @@ ms.locfileid: "42456011"
 ---
 # <a name="get-page"></a>Вывод страницы
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

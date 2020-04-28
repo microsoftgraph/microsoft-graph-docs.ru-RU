@@ -16,7 +16,7 @@ ms.locfileid: "42503259"
 ---
 # <a name="taxgroups-resource-type"></a>Тип ресурса Таксграупс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42503259"
 |[Получение Таксграупс](../api/dynamics-taxgroups-get.md)|таксграупс|Получает объект налоговой группы.|
 |[POST Таксграупс](../api/dynamics-create-taxgroups.md)|таксграупс|Создает объект налоговой группы.|
 |[Исправление Таксграупс](../api/dynamics-taxgroups-update.md)|таксграупс|Обновляет объект налоговой группы.|
-|[Удаление Таксграупс](../api/dynamics-taxgroups-delete.md)|нет|Удаляет объект налоговой группы.|
+|[Удаление Таксграупс](../api/dynamics-taxgroups-delete.md)|Нет|Удаляет объект налоговой группы.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -36,7 +36,7 @@ ms.locfileid: "42503259"
 |id|GUID|Уникальный идентификатор Таксграуп. Только для чтения.|
 |code|string|Указывает налоговую группу.|
 |displayName|string|Задает отображаемое имя налоговой группы.|
-|такстипе|строка|Указывает тип налога для группы.|
+|такстипе|string|Указывает тип налога для группы.|
 |lastModifiedDateTime|datetime|Дата и время последнего изменения налоговой группы. Только для чтения.|  
 
 

@@ -15,7 +15,7 @@ ms.locfileid: "42507686"
 ---
 # <a name="choicecolumn-resource-type"></a>Тип ресурса choiceColumn
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42451317"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: range
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -15,7 +15,7 @@ ms.locfileid: "42496539"
 ---
 # <a name="image-resource-type"></a>Тип ресурса Image
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

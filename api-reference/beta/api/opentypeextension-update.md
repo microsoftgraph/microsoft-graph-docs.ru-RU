@@ -14,7 +14,7 @@ ms.locfileid: "42456343"
 ---
 # <a name="update-open-extension"></a>Обновление открытого расширения
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -75,7 +75,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Задайте основной текст JSON объекта [openTypeExtension](../resources/opentypeextension.md) с указанными ниже обязательными парами имя-значение и любыми пользовательскими данными, которые необходимо изменить или добавить в это расширение. Полезные данные JSON могут иметь простой тип или представлять собой массив элементов простого типа.
 
@@ -84,7 +84,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 | @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %уникальная_строка% |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [openTypeExtension](../resources/opentypeextension.md).
 

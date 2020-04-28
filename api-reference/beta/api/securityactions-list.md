@@ -14,7 +14,7 @@ ms.locfileid: "42453606"
 ---
 # <a name="list-securityactions"></a>Список Секуритяктионс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
