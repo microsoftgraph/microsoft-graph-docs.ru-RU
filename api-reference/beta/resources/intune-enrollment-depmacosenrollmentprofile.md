@@ -71,7 +71,7 @@ ms.locfileid: "43460941"
 |иклаудсторажедисаблед|Boolean|Указывает, отключен ли документ iCloud и экран рабочего стола|
 |чусэйаурлоккскриндисаблед|Boolean|Указывает, отключен ли документ iCloud и экран рабочего стола|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

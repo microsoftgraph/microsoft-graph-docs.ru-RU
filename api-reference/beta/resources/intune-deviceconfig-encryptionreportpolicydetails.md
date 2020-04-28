@@ -28,7 +28,7 @@ ms.locfileid: "43460067"
 |полициид|String|Идентификатор политики для отчета о шифровании|
 |policyName|String|Имя политики для отчета о шифровании|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

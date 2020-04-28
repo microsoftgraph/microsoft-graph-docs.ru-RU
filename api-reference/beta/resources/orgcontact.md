@@ -32,9 +32,9 @@ ms.locfileid: "43463318"
 |[Получение имени руководителя](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| Получение руководителя контакта.|
 |[Список directReports](../api/orgcontact-list-directreports.md) |Коллекция [directoryObject](directoryobject.md)| Перечислите непосредственные отчеты контакта.|
 |[Перечисление memberOf](../api/orgcontact-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции memberOf Objects.|
-|[Удаление](../api/orgcontact-delete.md) | Нет |Удаление объекта orgContact. |
-|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|Коллекция String| Проверьте принадлежность к группе. |
-|[getMemberGroups](../api/orgcontact-getmembergroups.md)|Коллекция String| Возврат всех групп, членом которых является указанный контакт. |
+|[удаление](../api/orgcontact-delete.md); | Нет |Удаление объекта orgContact. |
+|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|Коллекция объектов string| Проверьте принадлежность к группе. |
+|[getMemberGroups](../api/orgcontact-getmembergroups.md)|Коллекция объектов string| Возврат всех групп, членом которых является указанный контакт. |
 |[getMemberObjects](../api/orgcontact-getmemberobjects.md)|Коллекция String| Возвращает список Директорйобжектс, членом которых является контакт. |
 
 ## <a name="properties"></a>Свойства
@@ -43,7 +43,7 @@ ms.locfileid: "43463318"
 |:---------------|:--------|:----------|
 | устраняющее                    | Коллекция [фисикалоффицеаддресс](physicalofficeaddress.md)           | Почтовые адреса для этого организационного контакта. Теперь контакт может иметь только один физический адрес. |
 | companyName                  | String                                                    | Имя компании, к которой принадлежит это Контактное лицо.                                                                                                                                                                                                                                                                                                                 |
-| department                   | String                                                     | Имя отдела, в котором работает контакт.                                                                                                                                                                                                                                                                                                                                |
+| отделу;                   | String                                                     | Имя отдела, в котором работает контакт.                                                                                                                                                                                                                                                                                                                                |
 | displayName                  | Строка                                                     | Отображаемое имя для этого организационного контакта.                                                                                                                                                                                                                                                                                                                                   |
 | givenName                    | String                                                     | Имя для этого организационного контакта.                                                                                                                                                                                                                                                                                                                                     |
 | id                           | Строка                                                     | Уникальный идентификатор для этого организационного контакта.                                                                                                                                                                                                                                                                                                                             |
@@ -57,7 +57,7 @@ ms.locfileid: "43463318"
 | proxyAddresses               | Коллекция String                                         | Пример: "SMTP: bob@contoso.com", "SMTP: bob@sales.contoso.com". Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Поддерживает \$фильтр.                                                                                                                                                                               |
 | surname                      | String                                                     | Фамилия для этого организационного контакта.                          |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|

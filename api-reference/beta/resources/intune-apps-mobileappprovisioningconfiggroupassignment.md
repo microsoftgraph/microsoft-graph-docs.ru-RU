@@ -37,7 +37,7 @@ ms.locfileid: "43463540"
 |таржетграупид|String|Идентификатор группы AAD, в которой нацелена конфигурация подготовки приложений.|
 |id|String|Ключ объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

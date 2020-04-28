@@ -41,7 +41,7 @@ ms.locfileid: "43459857"
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о намерениях|
 |state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние пользователя для намерения. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

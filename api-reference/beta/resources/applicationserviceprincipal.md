@@ -20,7 +20,7 @@ ms.locfileid: "43455300"
 
 При добавлении экземпляра приложения из коллекции приложений Azure AD объекты [Application](../resources/application.md) и [servicePrincipal](../resources/serviceprincipal.md) создаются в каталоге. **АппликатионсервицепринЦипал** представляет сцепление объекта **Application** и **servicePrincipal** .
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 
 Нет
 

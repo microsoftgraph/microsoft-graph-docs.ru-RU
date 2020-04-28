@@ -33,7 +33,7 @@ ms.locfileid: "43462229"
 
 Нет
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

@@ -43,7 +43,7 @@ POST /deviceAppManagement/policySets
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -60,12 +60,12 @@ POST /deviceAppManagement/policySets
 |description|String|Описание набора политик.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние проверки или назначения набора политик. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|гуидеддеплойменттагс|Коллекция String|Теги в руководстве по развертыванию|
-|roleScopeTags|Коллекция String|RoleScopeTags набора политик|
+|гуидеддеплойменттагс|Коллекция объектов string|Теги в руководстве по развертыванию|
+|roleScopeTags|Коллекция объектов string|RoleScopeTags набора политик|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Policy](../resources/intune-policyset-policyset.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

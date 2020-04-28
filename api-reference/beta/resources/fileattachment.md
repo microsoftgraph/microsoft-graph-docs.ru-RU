@@ -35,7 +35,7 @@ ms.locfileid: "43460233"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств, связей или необработанного содержимого объекта fileAttachment.|
-|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта fileAttachment. |
+|[удаление](../api/attachment-delete.md); | Нет |Удаление объекта fileAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

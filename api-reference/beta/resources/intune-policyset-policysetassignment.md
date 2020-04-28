@@ -38,7 +38,7 @@ ms.locfileid: "43463369"
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Полицисетассигнмент.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевая группа Полицисетассигнмент|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

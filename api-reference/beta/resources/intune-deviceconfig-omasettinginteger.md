@@ -34,7 +34,7 @@ ms.locfileid: "43462990"
 |value|Int32|Значение.|
 |isReadOnly|Boolean|Если задано значение true, CSP (поставщик услуг по настройке), указанный в OMA-URI, будет выполнять Get, а не Set|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

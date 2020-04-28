@@ -28,7 +28,7 @@ ms.locfileid: "43460724"
 |отпечаток|String|Отпечаток сертификата управления|
 |certificate|String|Сертификат управления Base 64 с шифрованием|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

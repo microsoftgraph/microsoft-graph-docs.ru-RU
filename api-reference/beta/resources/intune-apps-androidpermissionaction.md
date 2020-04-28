@@ -28,7 +28,7 @@ ms.locfileid: "43459144"
 |права|String|Строка разрешений Android, определенная в официальной документации по Android.  Пример: "Android. Permission. READ_CONTACTS".|
 |action|[андроидпермиссионактионтипе](../resources/intune-apps-androidpermissionactiontype.md)|Тип действия разрешений Android. Возможные значения: `prompt`, `autoGrant`, `autoDeny`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

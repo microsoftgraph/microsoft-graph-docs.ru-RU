@@ -47,7 +47,7 @@ ms.locfileid: "43462417"
 |isDeleted|Boolean|Пока не задокументировано|
 |eTag|String|Пока не задокументировано.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

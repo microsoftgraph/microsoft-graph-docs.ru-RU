@@ -61,7 +61,7 @@ ms.locfileid: "43459843"
 |манажеддевицеид|String|Управляемый идентификатор устройства|
 |displayName|String|"Display Name" (Отображаемое имя);|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |деплойментпрофиле|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Профиль развертывания, назначенный устройству автопилота Windows в настоящее время.|

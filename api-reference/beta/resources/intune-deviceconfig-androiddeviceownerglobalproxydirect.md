@@ -30,9 +30,9 @@ ms.locfileid: "43463488"
 |:---|:---|:---|
 |host|String|Имя узла|
 |порта|Int32|Порт|
-|ексклудедхостс|Коллекция String|Исключенные узлы|
+|ексклудедхостс|Коллекция объектов string|Исключенные узлы|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

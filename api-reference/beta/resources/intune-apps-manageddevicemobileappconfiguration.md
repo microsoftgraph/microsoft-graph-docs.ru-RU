@@ -34,7 +34,7 @@ ms.locfileid: "43458724"
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |targetedMobileApps|Коллекция String|приложение-обработчик|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этой сущности конфигурации приложения.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этой сущности конфигурации приложения.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |description|String|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|

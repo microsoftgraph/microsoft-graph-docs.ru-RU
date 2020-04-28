@@ -43,7 +43,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -55,7 +55,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
 |parentId|String|Родительский идентификатор параметра групповой политики.|
-|чилдидлист|Коллекция String|Список дочерних идентификаторов параметра групповой политики.|
+|чилдидлист|Коллекция объектов string|Список дочерних идентификаторов параметра групповой политики.|
 |settingName|String|Имя этого параметра групповой политики.|
 |settingValue|String|Значение этого параметра групповой политики.|
 |сеттингвалуетипе|String|Тип значения этого параметра групповой политики.|
@@ -68,15 +68,15 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |мдмсеттингури|String|Универсальный код ресурса (URI) MDM CSP, которому соответствует этот параметр групповой политики.|
 |мдмминимумосверсион|Int32|Минимальная версия ОС, поддерживаемая параметром MDM.|
 |сеттингтипе|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (Security или ADMX) групповой политики. Возможные значения: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
-|исмдмсуппортед|Логическое|Указывает, поддерживается ли Intune или нет|
+|исмдмсуппортед|Boolean|Указывает, поддерживается ли Intune или нет|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Указывает, поддерживается ли параметр в MDM. Возможные значения: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |сеттингскопе|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область применения параметра. Возможные значения: `unknown`, `device`, `user`.|
-|интунесеттингурилист|Коллекция String|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
+|интунесеттингурилист|Коллекция объектов string|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
 |интунесеттингдефинитионид|String|Идентификатор определения параметра Intune|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

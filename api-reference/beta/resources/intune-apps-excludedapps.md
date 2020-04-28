@@ -40,7 +40,7 @@ ms.locfileid: "43459106"
 |Visio|Boolean|Значение, заданное для if MS Office Visio, должно быть исключено.|
 |текстовых|Boolean|Значение, заданное для if MS Office Word, должно быть исключено.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

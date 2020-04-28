@@ -30,7 +30,7 @@ ms.locfileid: "43460023"
 |:---|:---|:---|
 |userName|String|Локальный пользователь, который будет заблокирован для этой конфигурации киоска|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

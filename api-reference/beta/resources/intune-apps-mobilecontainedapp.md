@@ -33,7 +33,7 @@ ms.locfileid: "43462570"
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

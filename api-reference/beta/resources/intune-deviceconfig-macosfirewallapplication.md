@@ -28,7 +28,7 @@ ms.locfileid: "43464152"
 |bundleId|String|Свойства bundleid приложения.|
 |алловсинкомингконнектионс|Boolean|Разрешены ли входящие подключения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

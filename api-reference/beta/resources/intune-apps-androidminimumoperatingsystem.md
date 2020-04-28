@@ -40,7 +40,7 @@ ms.locfileid: "43463595"
 |v8_1|Boolean|Версия 8,1 или более поздняя.|
 |v9_0|Boolean|Версия 9.0 или выше.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

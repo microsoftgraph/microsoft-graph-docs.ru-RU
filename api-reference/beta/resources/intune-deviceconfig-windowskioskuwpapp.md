@@ -36,7 +36,7 @@ ms.locfileid: "43462491"
 |appId|String|Это указывает на приложение Intune, которое будет нацелено на те же назначения, что и настройка киоска|
 |контаинедаппид|String|Это указывает на автономное приложение из приложения Intune|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -28,7 +28,7 @@ ms.locfileid: "43460037"
 |name|String|Имя расширенного использования ключа|
 |обжектидентифиер|String|Идентификатор объекта расширенного использования ключа|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

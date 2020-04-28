@@ -43,8 +43,8 @@ ms.locfileid: "43458330"
 |description|String|Описание набора политик.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние проверки или назначения набора политик. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|гуидеддеплойменттагс|Коллекция String|Теги в руководстве по развертыванию|
-|roleScopeTags|Коллекция String|RoleScopeTags набора политик|
+|гуидеддеплойменттагс|Коллекция объектов string|Теги в руководстве по развертыванию|
+|roleScopeTags|Коллекция объектов string|RoleScopeTags набора политик|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
