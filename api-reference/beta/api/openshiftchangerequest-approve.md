@@ -14,7 +14,7 @@ ms.locfileid: "42456399"
 ---
 # <a name="openshiftchangerequest-approve"></a>Опеншифтчанжерекуест: утверждение
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -78,7 +78,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 <!-- {

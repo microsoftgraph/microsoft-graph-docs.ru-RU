@@ -39,7 +39,7 @@ ms.locfileid: "43422508"
 |displayName|Строка|DisplayName объекта Полицисетитем.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние Полицисетитем. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|гуидеддеплойменттагс|Коллекция String|Теги в руководстве по развертыванию|
+|гуидеддеплойменттагс|Коллекция объектов string|Теги в руководстве по развертыванию|
 
 ## <a name="relationships"></a>Связи
 Нет

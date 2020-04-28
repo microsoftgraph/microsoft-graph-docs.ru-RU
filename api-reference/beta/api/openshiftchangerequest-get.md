@@ -14,7 +14,7 @@ ms.locfileid: "42456376"
 ---
 # <a name="get-openshiftchangerequest"></a>Получение Опеншифтчанжерекуест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

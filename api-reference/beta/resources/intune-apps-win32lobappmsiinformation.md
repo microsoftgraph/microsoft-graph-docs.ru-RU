@@ -28,7 +28,7 @@ ms.locfileid: "43422968"
 |productCode|String|Код продукта MSI.|
 |productVersion|String|Версия продукта MSI.|
 |upgradeCode|String|Код обновления MSI.|
-|рекуиресребут|Логическое|Требует ли приложение MSI перезагрузку компьютера для завершения установки.|
+|рекуиресребут|Boolean|Требует ли приложение MSI перезагрузку компьютера для завершения установки.|
 |паккажетипе|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|Тип пакета MSI. Возможные значения: `perMachine`, `perUser`, `dualPurpose`.|
 |productName|String|Имя продукта MSI.|
 |publisher|String|Издатель MSI.|
