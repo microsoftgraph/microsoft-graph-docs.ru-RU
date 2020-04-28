@@ -12,26 +12,26 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
 ms.locfileid: "43445223"
 ---
-# <a name="list-rolescopetagautoassignments"></a><span data-ttu-id="e9e32-103">Список Ролескопетагаутоассигнментс</span><span class="sxs-lookup"><span data-stu-id="e9e32-103">List roleScopeTagAutoAssignments</span></span>
+# <a name="list-rolescopetagautoassignments"></a><span data-ttu-id="35430-103">Список Ролескопетагаутоассигнментс</span><span class="sxs-lookup"><span data-stu-id="35430-103">List roleScopeTagAutoAssignments</span></span>
 
-<span data-ttu-id="e9e32-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e9e32-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="35430-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="35430-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e9e32-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e9e32-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="35430-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="35430-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e9e32-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e9e32-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="35430-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="35430-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e9e32-107">Список свойств и связей объектов [ролескопетагаутоассигнмент](../resources/intune-rbac-rolescopetagautoassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="e9e32-107">List properties and relationships of the [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) objects.</span></span>
+<span data-ttu-id="35430-107">Список свойств и связей объектов [ролескопетагаутоассигнмент](../resources/intune-rbac-rolescopetagautoassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="35430-107">List properties and relationships of the [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e9e32-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="e9e32-108">Prerequisites</span></span>
-<span data-ttu-id="e9e32-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e9e32-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="35430-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="35430-108">Prerequisites</span></span>
+<span data-ttu-id="35430-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="35430-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e9e32-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e9e32-111">Permission type</span></span>|<span data-ttu-id="e9e32-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="e9e32-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="35430-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="35430-111">Permission type</span></span>|<span data-ttu-id="35430-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="35430-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e9e32-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e9e32-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e9e32-114">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="e9e32-114">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
-|<span data-ttu-id="e9e32-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e9e32-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e9e32-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e9e32-116">Not supported.</span></span>|
-|<span data-ttu-id="e9e32-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e9e32-117">Application</span></span>|<span data-ttu-id="e9e32-118">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="e9e32-118">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
+|<span data-ttu-id="35430-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="35430-113">Delegated (work or school account)</span></span>|<span data-ttu-id="35430-114">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="35430-114">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
+|<span data-ttu-id="35430-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="35430-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="35430-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="35430-116">Not supported.</span></span>|
+|<span data-ttu-id="35430-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="35430-117">Application</span></span>|<span data-ttu-id="35430-118">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="35430-118">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e9e32-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e9e32-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="35430-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="35430-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,28 +40,28 @@ ms.locfileid: "43445223"
 GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/microsoft.graph.deviceAndAppManagementRoleAssignment/roleScopeTags/{roleScopeTagId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e9e32-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="e9e32-120">Request headers</span></span>
-|<span data-ttu-id="e9e32-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e9e32-121">Header</span></span>|<span data-ttu-id="e9e32-122">Значение</span><span class="sxs-lookup"><span data-stu-id="e9e32-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="35430-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="35430-120">Request headers</span></span>
+|<span data-ttu-id="35430-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="35430-121">Header</span></span>|<span data-ttu-id="35430-122">Значение</span><span class="sxs-lookup"><span data-stu-id="35430-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e9e32-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e9e32-123">Authorization</span></span>|<span data-ttu-id="e9e32-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e9e32-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e9e32-125">Accept</span><span class="sxs-lookup"><span data-stu-id="e9e32-125">Accept</span></span>|<span data-ttu-id="e9e32-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e9e32-126">application/json</span></span>|
+|<span data-ttu-id="35430-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="35430-123">Authorization</span></span>|<span data-ttu-id="35430-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="35430-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="35430-125">Accept</span><span class="sxs-lookup"><span data-stu-id="35430-125">Accept</span></span>|<span data-ttu-id="35430-126">application/json</span><span class="sxs-lookup"><span data-stu-id="35430-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e9e32-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e9e32-127">Request body</span></span>
-<span data-ttu-id="e9e32-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e9e32-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="35430-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="35430-127">Request body</span></span>
+<span data-ttu-id="35430-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="35430-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e9e32-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="e9e32-129">Response</span></span>
-<span data-ttu-id="e9e32-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [ролескопетагаутоассигнмент](../resources/intune-rbac-rolescopetagautoassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e9e32-130">If successful, this method returns a `200 OK` response code and a collection of [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="35430-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="35430-129">Response</span></span>
+<span data-ttu-id="35430-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [ролескопетагаутоассигнмент](../resources/intune-rbac-rolescopetagautoassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="35430-130">If successful, this method returns a `200 OK` response code and a collection of [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e9e32-131">Пример</span><span class="sxs-lookup"><span data-stu-id="e9e32-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="35430-131">Пример</span><span class="sxs-lookup"><span data-stu-id="35430-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e9e32-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="e9e32-132">Request</span></span>
-<span data-ttu-id="e9e32-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e9e32-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="35430-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="35430-132">Request</span></span>
+<span data-ttu-id="35430-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="35430-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/microsoft.graph.deviceAndAppManagementRoleAssignment/roleScopeTags/{roleScopeTagId}/assignments
 ```
 
-### <a name="response"></a><span data-ttu-id="e9e32-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="e9e32-134">Response</span></span>
-<span data-ttu-id="e9e32-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e9e32-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="35430-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="35430-134">Response</span></span>
+<span data-ttu-id="35430-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="35430-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
