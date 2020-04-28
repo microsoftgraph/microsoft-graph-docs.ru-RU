@@ -14,7 +14,7 @@ ms.locfileid: "42520522"
 ---
 # <a name="siteusagestorage-resource-type"></a>Тип ресурса Ситеусажестораже
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

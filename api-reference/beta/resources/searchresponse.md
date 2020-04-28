@@ -14,7 +14,7 @@ ms.locfileid: "42520894"
 ---
 # <a name="searchresponse-resource-type"></a>Тип ресурса Сеарчреспонсе
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42520894"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |хитсконтаинерс|Коллекция [сеарчхитсконтаинер](searchhitscontainer.md)|Коллекция результатов поиска.|
-|searchTerms|Коллекция String|Содержит условия поиска, отправленные в исходном поисковом запросе.|
+|searchTerms|Коллекция объектов string|Содержит условия поиска, отправленные в исходном поисковом запросе.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -14,7 +14,7 @@ ms.locfileid: "42523046"
 ---
 # <a name="json-resource-type"></a>Тип ресурса Json
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет данные, возвращаемые в формате JSON.
 ## <a name="properties"></a>Свойства

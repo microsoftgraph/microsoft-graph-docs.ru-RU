@@ -46,11 +46,11 @@ POST /trustFramework/policies
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|Application/XML. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) . Необходимый тип контента — `application/xml`.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [трустфрамеворкполици](../resources/trustframeworkpolicy.md) в тексте отклика. В случае неудачи возвращается ошибка `4xx` с подробностями.
 

@@ -14,7 +14,7 @@ ms.locfileid: "42522577"
 ---
 # <a name="networkinterface-resource-type"></a>Тип ресурса Нетворкинтерфаце
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет сетевую карту (NIC), связанную с этим узлом.
 

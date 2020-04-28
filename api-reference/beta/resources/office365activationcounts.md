@@ -14,7 +14,7 @@ ms.locfileid: "42522493"
 ---
 # <a name="office365activationcounts-resource-type"></a>Тип ресурса office365ActivationCounts
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

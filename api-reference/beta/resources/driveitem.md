@@ -205,8 +205,8 @@ URL-адрес будет доступен в течение короткого 
 | [Удаление разрешения](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [Получение канала WebSocket][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [Предварительный просмотр элемента][item-preview]                             | `POST /drive/items/{item-id}/preview`
-| [Зарегистрируйся](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
-| [Извлечь](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
+| [Регистрация](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [Выписка](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
 
 [item-preview]: ../api/driveitem-preview.md
 [Получение аналитики]: ../api/itemanalytics-get.md

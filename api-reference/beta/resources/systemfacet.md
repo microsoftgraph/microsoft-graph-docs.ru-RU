@@ -15,7 +15,7 @@ ms.locfileid: "42520011"
 ---
 # <a name="system-facet"></a>Аспект System
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

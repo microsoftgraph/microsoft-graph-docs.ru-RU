@@ -14,7 +14,7 @@ ms.locfileid: "42523004"
 ---
 # <a name="labelingoptions-resource-type"></a>Тип ресурса Лабелингоптионс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

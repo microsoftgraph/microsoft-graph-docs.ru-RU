@@ -14,13 +14,13 @@ ms.locfileid: "42519318"
 ---
 # <a name="workbookchartgridlinesformat-resource-type"></a>Тип ресурса Воркбукчартгридлинесформат
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Инкапсулирует свойства формата для линий сетки диаграммы.
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 Нет
 
 ## <a name="properties"></a>Свойства

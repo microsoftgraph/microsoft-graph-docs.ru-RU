@@ -48,7 +48,7 @@ POST /directory/featureRolloutPolicies/{id}/appliesTo/$ref
 
 В тексте запроса добавьте представление объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [directoryObject](../resources/directoryobject.md) в тексте отклика.
 

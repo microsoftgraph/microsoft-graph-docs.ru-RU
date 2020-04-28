@@ -14,7 +14,7 @@ ms.locfileid: "42522360"
 ---
 # <a name="onenoteidentity-resource-type"></a>Тип ресурса Оненотеидентити
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ ms.locfileid: "42522360"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |displayName|string|Отображаемое имя удостоверения.|
-|id|строка|Уникальный идентификатор удостоверения.|
+|id|string|Уникальный идентификатор удостоверения.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

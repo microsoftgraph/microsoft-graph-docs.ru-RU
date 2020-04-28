@@ -14,7 +14,7 @@ ms.locfileid: "42520979"
 ---
 # <a name="scheduleinformation-resource-type"></a>Тип ресурса Счедулеинформатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

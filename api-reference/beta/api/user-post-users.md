@@ -115,7 +115,7 @@ Content-type: application/json
 ---
 
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >[!NOTE]

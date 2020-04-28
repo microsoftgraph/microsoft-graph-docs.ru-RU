@@ -15,7 +15,7 @@ ms.locfileid: "42520536"
 ---
 # <a name="sitepage-resource"></a>ресурс Ситепаже
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -94,7 +94,7 @@ ms.locfileid: "42520536"
 | Имя свойства      | Тип                       | Описание
 |:-------------------|:---------------------------|:---------------------------
 | title              | string                     | Заголовок страницы.
-| pageLayout         | строка                     | Имя макета страницы.
+| pageLayout         | string                     | Имя макета страницы.
 | webParts           | [Частей][]                | Веб-части на странице.
 
 ## <a name="authoring-metadata"></a>Метаданные для разработки

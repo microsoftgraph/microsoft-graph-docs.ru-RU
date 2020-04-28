@@ -15,7 +15,7 @@ ms.locfileid: "42520690"
 ---
 # <a name="sharepointids-resource-type"></a>Тип ресурса SharePointIds
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,10 +49,10 @@ ms.locfileid: "42520690"
 
 | Свойство         | Тип         | Описание
 |:-----------------|:-------------|:-------------------------------------------
-| listId           | строка       | Уникальный идентификатор (GUID) списка, содержащего элемент, в SharePoint.
-| listItemId       | строка       | Целочисленный идентификатор элемента в списке.
+| listId           | string       | Уникальный идентификатор (GUID) списка, содержащего элемент, в SharePoint.
+| listItemId       | string       | Целочисленный идентификатор элемента в списке.
 | listItemUniqueId | string       | Уникальный идентификатор (GUID) элемента в OneDrive для бизнеса или на сайте SharePoint.
-| siteId           | строка       | Уникальный идентификатор (GUID) семейства веб-сайтов (SPSite), содержащего элемент.
+| siteId           | string       | Уникальный идентификатор (GUID) семейства веб-сайтов (SPSite), содержащего элемент.
 | siteUrl          | string (url) | URL-адрес SharePoint для сайта, содержащего элемент.
 | tenantId         | string       | Уникальный идентификатор (GUID) для клиента.
 | webId            | string       | Уникальный идентификатор (GUID) семейства веб-сайтов (SPWeb), содержащего элемент.

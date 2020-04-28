@@ -15,7 +15,7 @@ ms.locfileid: "42521978"
 ---
 # <a name="pendingcontentupdate-resource-type"></a>Тип ресурса Пендингконтентупдате
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

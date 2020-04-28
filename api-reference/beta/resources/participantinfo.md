@@ -14,7 +14,7 @@ ms.locfileid: "42522034"
 ---
 # <a name="participantinfo-resource-type"></a>Тип ресурса ПартиЦипантинфо
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

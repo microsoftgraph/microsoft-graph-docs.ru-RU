@@ -14,7 +14,7 @@ ms.locfileid: "42521266"
 ---
 # <a name="recentnotebook-resource-type"></a>Тип ресурса recentNotebook
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

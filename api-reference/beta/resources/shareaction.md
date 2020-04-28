@@ -15,7 +15,7 @@ ms.locfileid: "42520747"
 ---
 # <a name="shareaction-resource-type"></a>Тип ресурса ShareAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42522346"
 ---
 # <a name="onenoteoperation-resource-type"></a>Тип ресурса onenoteOperation
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,10 +52,10 @@ ms.locfileid: "42522346"
 |error|[оненотеоператионеррор](onenoteoperationerror.md)|Ошибка, возвращенная операцией.|
 |id|строка|Идентификатор операции. Только для чтения.|
 |ластактиондатетиме| DateTimeOffset |Время последнего действия операции.|
-|resourceId|строка|Идентификатор ресурса.|
-|ресаурцелокатион|строка|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
+|resourceId|string|Идентификатор ресурса.|
+|ресаурцелокатион|string|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
 |status|string|Текущее состояние операции: `notstarted`, `running`,, `completed``failed` |
-|percentComplete|строка|Процент завершения операции, если операция все еще находится в `running` состоянии.
+|percentComplete|string|Процент завершения операции, если операция все еще находится в `running` состоянии.
 
 ## <a name="relationships"></a>Связи
 Нет

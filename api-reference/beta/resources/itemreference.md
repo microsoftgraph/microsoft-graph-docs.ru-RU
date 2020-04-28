@@ -15,7 +15,7 @@ ms.locfileid: "42523053"
 ---
 # <a name="itemreference-resource-type"></a>Тип ресурса ItemReference
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Ресурс **ItemReference** предоставляет сведения, необходимые для обращения к ресурсу [DriveItem](driveitem.md) через API.
 

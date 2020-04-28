@@ -27,8 +27,8 @@ ms.locfileid: "43227708"
 | Метод                                     | Возвращаемый тип                 | Описание                                             |
 |:-------------------------------------------|:----------------------------|:--------------------------------------------------------|
 | [Получение personName](../api/personname-get.md) | [personName](personname.md) | Чтение свойств и связей объекта personName. |
-| [Обновление](../api/personname-update.md)      | [personName](personname.md) | Обновление объекта personName.                               |
-| [Удаление](../api/personname-delete.md)      | Нет                        | Удаление объекта personName.                               |
+| [обновление](../api/personname-update.md).      | [personName](personname.md) | Обновление объекта personName.                               |
+| [удаление](../api/personname-delete.md);      | Нет                        | Удаление объекта personName.                               |
 
 ## <a name="properties"></a>Свойства
 

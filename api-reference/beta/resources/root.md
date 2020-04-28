@@ -15,7 +15,7 @@ ms.locfileid: "42521028"
 ---
 # <a name="root-resource-type"></a>Тип ресурса Root
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

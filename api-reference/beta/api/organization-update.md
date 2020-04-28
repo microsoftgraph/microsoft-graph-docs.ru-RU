@@ -46,13 +46,13 @@ PATCH /organization/{id}
 | Content-Type   | application/json |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство  | Тип |Описание|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|Коллекция строк|                                        **Примечание.** Значение NULL не допускается.            |
+|marketingNotificationEmails|Коллекция объектов string|                                        **Примечание.** Значение NULL не допускается.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|Профиль конфиденциальности организации (заданные свойства statementUrl и contactEmail).            |
 |securityComplianceNotificationMails|Коллекция String||
 |securityComplianceNotificationPhones|Коллекция String||

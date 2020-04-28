@@ -13,7 +13,7 @@ ms.locfileid: "42527503"
 ---
 # <a name="manage-resource-access-certificates-in-intune"></a>Управление сертификатами доступа к ресурсам в Intune
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 

@@ -14,7 +14,7 @@ ms.locfileid: "42519843"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>Тип ресурса Теамстабконфигуратион (Open Type)
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +25,9 @@ ms.locfileid: "42519843"
 
 |Свойство|Тип|Описание|
 |-|-|-|
-|  entityId   |   строка |  Идентификатор для сущности, размещенной у поставщика вкладок.     |
-|  contentUrl |   строка |  URL-адрес, используемый для отображения содержимого вкладки в Teams. Обязательное.    |
-|  removeUrl  |   строка |  URL-адрес, вызываемый клиентом Teams при удалении вкладки с помощью клиента Teams.     |
+|  entityId   |   string |  Идентификатор для сущности, размещенной у поставщика вкладок.     |
+|  contentUrl |   string |  URL-адрес, используемый для отображения содержимого вкладки в Teams. Обязательный.    |
+|  removeUrl  |   string |  URL-адрес, вызываемый клиентом Teams при удалении вкладки с помощью клиента Teams.     |
 |  websiteUrl |   string |  URL-адрес для отображения содержимого вкладки вне Teams.     |
 
 ## <a name="json-representation"></a>Представление JSON

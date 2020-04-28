@@ -15,7 +15,7 @@ ms.locfileid: "42520340"
 ---
 # <a name="specialfolder-resource-type"></a>Тип ресурса SpecialFolder
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

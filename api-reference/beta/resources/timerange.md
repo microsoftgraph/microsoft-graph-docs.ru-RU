@@ -14,7 +14,7 @@ ms.locfileid: "42519710"
 ---
 # <a name="timerange-resource-type"></a>Тип ресурса Тимеранже
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

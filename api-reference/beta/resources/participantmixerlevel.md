@@ -14,7 +14,7 @@ ms.locfileid: "42522027"
 ---
 # <a name="participantmixerlevel-resource-type"></a>Тип ресурса ПартиЦипантмиксерлевел
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

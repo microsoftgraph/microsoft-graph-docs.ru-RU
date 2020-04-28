@@ -14,7 +14,7 @@ ms.locfileid: "42520564"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>Тип ресурса singleValueLegacyExtendedProperty
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "42520564"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|строка|Идентификатор свойства. Только для чтения.|
+|id|string|Идентификатор свойства. Только для чтения.|
 |значение|string|Значение свойства.|
 
 ## <a name="relationships"></a>Связи

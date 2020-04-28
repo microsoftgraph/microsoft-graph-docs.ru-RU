@@ -14,7 +14,7 @@ ms.locfileid: "42521623"
 ---
 # <a name="playpromptoperation-resource-type"></a>Тип ресурса Плайпромптоператион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

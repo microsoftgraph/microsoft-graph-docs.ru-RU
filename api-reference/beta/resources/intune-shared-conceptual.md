@@ -35,7 +35,7 @@ ms.locfileid: "42527479"
 - [Управление приложениями для устройств](intune-shared-deviceappmanagement.md)
 - [Категория устройств](intune-shared-devicecategory.md)
 - [Политика соответствия устройств требованиям](intune-shared-devicecompliancepolicy.md)
-- [Конфигурация устройства](intune-shared-deviceconfiguration.md)
+- [Конфигурация устройств](intune-shared-deviceconfiguration.md)
 - [Настройка регистрации устройств](intune-shared-deviceenrollmentconfiguration.md)
 - [Тип регистрации устройства](intune-shared-deviceenrollmenttype.md)
 - [Управление устройствами](intune-shared-devicemanagement.md)

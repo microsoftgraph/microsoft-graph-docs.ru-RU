@@ -25,7 +25,7 @@ ms.locfileid: "43217551"
 <!-- Add descriptions for the properties. -->
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|code|Строка||
+|code|String||
 |message|String||
 |тенантактионабле|Boolean||
 

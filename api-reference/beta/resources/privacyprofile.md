@@ -14,7 +14,7 @@ ms.locfileid: "42521567"
 ---
 # <a name="privacyprofile-resource-type"></a>Тип ресурса privacyProfile
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

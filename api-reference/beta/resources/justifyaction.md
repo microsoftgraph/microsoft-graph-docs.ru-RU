@@ -14,7 +14,7 @@ ms.locfileid: "42523039"
 ---
 # <a name="justifyaction-resource-type"></a>Тип ресурса Жустифяктион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

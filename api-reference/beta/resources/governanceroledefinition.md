@@ -38,9 +38,9 @@ ms.locfileid: "43217927"
 |resourceId |String     |Обязательный. Идентификатор ресурса, связанного с определением роли. |
 |externalId   |String     |Внешний идентификатор определения роли.|
 |displayName|Строка     |Отображаемое имя определения роли.|
-|templateId | Строка | |
+|templateId | String | |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Только для чтения. Связанный ресурс для определения роли.|

@@ -14,7 +14,7 @@ ms.locfileid: "42522423"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>Тип ресурса office365ServicesUserCounts
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

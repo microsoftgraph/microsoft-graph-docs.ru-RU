@@ -14,7 +14,7 @@ ms.locfileid: "42519087"
 ---
 # <a name="workforceintegration-resource-type"></a>Тип ресурса Воркфорцеинтегратион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,8 +35,8 @@ ms.locfileid: "42519087"
 |апиверсион|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
 |displayName|String|Имя интеграции трудовых ресурсов.|
 |шифрования|[воркфорцеинтегратионенкриптион](workforceintegrationencryption.md)|Ресурс для шифрования взаимодействия сотрудников.|
-|isActive|Логический|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
-|имеется|строка| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`,, `openShiftRequest``userShiftPreferences`|
+|isActive|Boolean|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
+|имеется|string| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`,, `openShiftRequest``userShiftPreferences`|
 |url|String| URL-адрес интеграции сотрудников для обратных вызовов из службы смены.|
 
 ## <a name="relationships"></a>Связи

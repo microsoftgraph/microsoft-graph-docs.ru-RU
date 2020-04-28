@@ -14,7 +14,7 @@ ms.locfileid: "42520515"
 ---
 # <a name="sizerange-resource-type"></a>Тип ресурса sizeRange
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

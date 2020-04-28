@@ -14,7 +14,7 @@ ms.locfileid: "42519668"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>Тип ресурса Токенмитингинфо
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

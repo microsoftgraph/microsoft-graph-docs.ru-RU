@@ -14,7 +14,7 @@ ms.locfileid: "42520613"
 ---
 # <a name="shiftpreferences-resource-type"></a>Тип ресурса Шифтпреференцес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

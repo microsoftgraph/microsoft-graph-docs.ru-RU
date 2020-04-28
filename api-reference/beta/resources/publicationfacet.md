@@ -15,7 +15,7 @@ ms.locfileid: "42521315"
 ---
 # <a name="publicationfacet-resource-type"></a>Тип ресурса publicationFacet
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

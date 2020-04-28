@@ -45,10 +45,10 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Для создания объекта [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) требуются следующие свойства:
 
@@ -56,7 +56,7 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 |:-------------|:------------|:------------|
 |цертификатеаусоритиес| Коллекция [цертификатеаусорити](../resources/certificateauthority.md) |Коллекция центров сертификации, которая создает доверенную цепочку сертификатов.  Каждый член коллекции должен содержать свойства **Certificate** и **исрутаусорити** . |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод `201 Created` возвращает код отклика и новый объект [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) в тексте отклика.
 

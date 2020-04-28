@@ -14,7 +14,7 @@ ms.locfileid: "42520803"
 ---
 # <a name="service-root"></a>Корневой каталог для обслуживания
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

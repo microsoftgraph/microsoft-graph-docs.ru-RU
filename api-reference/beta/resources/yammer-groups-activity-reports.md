@@ -14,7 +14,7 @@ ms.locfileid: "42519045"
 ---
 # <a name="yammer-groups-activity-reports"></a>Отчеты об активности в группах Yammer
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

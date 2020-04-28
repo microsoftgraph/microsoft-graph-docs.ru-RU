@@ -15,7 +15,7 @@ ms.locfileid: "42519437"
 ---
 # <a name="webpart-resource"></a>ресурс webPart
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

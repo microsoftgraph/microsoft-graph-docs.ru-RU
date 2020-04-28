@@ -14,7 +14,7 @@ ms.locfileid: "42521175"
 ---
 # <a name="reminder-resource-type"></a>Тип ресурса reminder
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

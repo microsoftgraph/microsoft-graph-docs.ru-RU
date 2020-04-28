@@ -30,7 +30,7 @@ ms.locfileid: "43181766"
 |[Получение параметра](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |Считывание свойств определенного объекта setting.|
 |[Перечисление параметров](../api/directorysetting-list.md) | Коллекция [directorySetting](directorysetting.md) |Перечисление свойств всех объектов setting.|
 |[Обновление параметра](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)  |Обновление объекта setting. В обновлении можно изменить только Сеттингвалуес.|
-|[Удаление параметра](../api/directorysetting-delete.md) | Нет |Удаление объекта параметра. |
+|[Удаление параметра](../api/directorysetting-delete.md) | Нет |Удаление объекта setting. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -40,7 +40,7 @@ ms.locfileid: "43181766"
 |templateId|string| Уникальный идентификатор шаблона, который используется для создания этой группы параметров. Только для чтения.|
 |values|Коллекция [settingValue](settingvalue.md)| Коллекция пар "имя-значение". Должен содержать и задавать все параметры, определенные в шаблоне.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

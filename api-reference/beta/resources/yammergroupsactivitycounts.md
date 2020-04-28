@@ -14,7 +14,7 @@ ms.locfileid: "42518996"
 ---
 # <a name="yammergroupsactivitycounts-resource-type"></a>Тип ресурса Яммерграупсактивитикаунтс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

@@ -14,7 +14,7 @@ ms.locfileid: "42519745"
 ---
 # <a name="timeconstraint-resource-type"></a>Тип ресурсов timeConstraint
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42519206"
 ---
 # <a name="workbookpivottable-resource-type"></a>Тип ресурса workbookPivotTable
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

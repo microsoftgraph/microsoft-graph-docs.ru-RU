@@ -27,7 +27,7 @@ ms.locfileid: "43218459"
 | [List](../api/identityuserflow-list.md) | Коллекция [усерфлов](identityuserflow.md) | Список Усерфловс. |
 | [создание](../api/identityuserflow-post-userflows.md); | [усерфлов](identityuserflow.md) | Создание объекта Усерфлов. |
 | [получение](../api/identityuserflow-get.md); | [усерфлов](identityuserflow.md) | Чтение свойств и связей объекта Усерфлов. |
-| [Удаление](../api/identityuserflow-delete.md) | Нет | Удаление объекта Усерфлов. |
+| [удаление](../api/identityuserflow-delete.md); | Нет | Удаление объекта Усерфлов. |
 
 ## <a name="properties"></a>Свойства
 
@@ -37,7 +37,7 @@ ms.locfileid: "43218459"
 |усерфловтипе|string| Возможные значения: `signUp`, `signIn`, `signUpOrSignIn`, `passwordReset`, `profileUpdate`, `resourceOwner`, `unknownFutureValue`.|
 |усерфловтипеверсион|Одинарное| Это версия пользовательского типа. Каждый тип пользовательского типа может иметь различные варианты, например 1, 1,1 или 2.  |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

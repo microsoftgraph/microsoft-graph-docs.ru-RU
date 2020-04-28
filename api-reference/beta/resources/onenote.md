@@ -14,7 +14,7 @@ ms.locfileid: "42522367"
 ---
 # <a name="onenote-resource-type"></a>Тип ресурса onenote
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -66,7 +66,7 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Создание записной книжки](../api/onenote-post-notebooks.md) |[notebook](notebook.md)| Создание записной книжки путем публикации в коллекции записных книжек.|
-|[Список записных книжек](../api/onenote-list-notebooks.md) |Коллекция объектов [notebook](notebook.md)| Получение коллекции записных книжек.|
+|[Перечисление записных книжек](../api/onenote-list-notebooks.md) |Коллекция объектов [notebook](notebook.md)| Получение коллекции записных книжек.|
 |[Создание страницы](../api/onenote-post-pages.md) |[оненотепаже](onenotepage.md) | Создание страницы путем публикации в коллекции страниц.|
 |[Перечисление страниц](../api/onenote-list-pages.md) |Коллекция [оненотепаже](onenotepage.md)| Получение коллекции страниц.|
 |[Перечисление групп разделов](../api/onenote-list-sectiongroups.md) |Коллекция [sectionGroup](sectiongroup.md)| Получение коллекции групп разделов.|

@@ -27,7 +27,7 @@ ms.locfileid: "43218466"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [получение](../api/identitysecuritydefaultsenforcementpolicy-get.md); | [идентитисекуритидефаултсенфорцементполици](identitysecuritydefaultsenforcementpolicy.md) | Чтение свойств объекта **идентитисекуритидефаултсенфорцементполици** . |
-| [Update](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [идентитисекуритидефаултсенфорцементполици](identitysecuritydefaultsenforcementpolicy.md) | Обновление объекта **идентитисекуритидефаултсенфорцементполици** . |
+| [обновление](../api/identitysecuritydefaultsenforcementpolicy-update.md). | [идентитисекуритидефаултсенфорцементполици](identitysecuritydefaultsenforcementpolicy.md) | Обновление объекта **идентитисекуритидефаултсенфорцементполици** . |
 
 ## <a name="properties"></a>Свойства
 
@@ -38,7 +38,7 @@ ms.locfileid: "43218466"
 |id|String|Идентификатор для этой политики. Только для чтения.|
 |isEnabled|Boolean|Если задано значение true, по умолчанию для клиента будет включен параметр безопасности Azure Active Directory.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

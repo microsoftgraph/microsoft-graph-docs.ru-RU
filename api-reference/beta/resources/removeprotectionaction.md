@@ -14,7 +14,7 @@ ms.locfileid: "42521147"
 ---
 # <a name="removeprotectionaction-resource-type"></a>Тип ресурса Ремовепротектионактион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

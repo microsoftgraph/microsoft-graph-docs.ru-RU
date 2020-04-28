@@ -15,7 +15,7 @@ ms.locfileid: "42521971"
 ---
 # <a name="pendingoperations-resource-type"></a>Тип ресурса Пендингоператионс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42519227"
 ---
 # <a name="workbookfiltercriteria-resource-type"></a>Тип ресурса Воркбукфилтеркритериа
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

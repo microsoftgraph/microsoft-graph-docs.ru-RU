@@ -14,7 +14,7 @@ ms.locfileid: "42521837"
 ---
 # <a name="using-order-hints-in-planner"></a>Использование подсказок порядка в Планировщике
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

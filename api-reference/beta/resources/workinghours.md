@@ -14,7 +14,7 @@ ms.locfileid: "42519073"
 ---
 # <a name="workinghours-resource-type"></a>Тип ресурса workingHours
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

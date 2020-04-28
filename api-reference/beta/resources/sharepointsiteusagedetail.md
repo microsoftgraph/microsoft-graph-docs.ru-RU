@@ -14,7 +14,7 @@ ms.locfileid: "42520683"
 ---
 # <a name="sharepointsiteusagedetail-resource-type"></a>Тип ресурса Шарепоинтситеусажедетаил
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 
@@ -25,7 +25,7 @@ ms.locfileid: "42520683"
 | siteUrl                 | String  |
 | овнердисплайнаме        | String  |
 | овнерпринЦипалнаме      | String  |
-| isDeleted               | Логический |
+| isDeleted               | Boolean |
 | ластактивитидате        | Дата    |
 | филекаунт               | Int64   |
 | активефилекаунт         | Int64   |

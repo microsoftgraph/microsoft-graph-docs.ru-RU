@@ -14,7 +14,7 @@ ms.locfileid: "42521119"
 ---
 # <a name="requestorsettings-resource-type"></a>Тип ресурса Рекуесторсеттингс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "42521119"
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
 | scopeType |String |Кто может запрашивать. Один из `NoSubjects`, `SpecificDirectorySubjects`, `SpecificConnectedOrganizationSubjects`, `AllExistingConnectedOrganizationSubjects` `AllExistingDirectoryMemberUsers`,, `AllExistingDirectorySubjects` или `AllExternalSubjects`.  |
-| акцептрекуестс | Логический | Указывает, принимаются ли новые запросы для этой политики. |
+| акцептрекуестс | Boolean | Указывает, принимаются ли новые запросы для этой политики. |
 | алловедрекуесторс | Коллекция [User](userset.md) Collection| Пользователи, которым разрешено запрашивать эту политику, которая может быть [SingleUser.](singleuser.md), [граупмемберс](groupmembers.md)и [коннектедорганизатионмемберс](connectedorganizationmembers.md). |
 
 ## <a name="json-representation"></a>Представление JSON

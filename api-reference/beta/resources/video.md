@@ -15,7 +15,7 @@ ms.locfileid: "42519472"
 ---
 # <a name="video-resource-type"></a>Тип ресурса video
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ ms.locfileid: "42519472"
 |:--------------------------|:-------|:----------------------------------------
 | **audioBitsPerSample**    | Int32  | Количество разрядов звука на выборку.
 | **audioChannels**         | Int32  | Количество звуковых каналов.
-| **audioFormat**           | строка | Название формата аудио (AAC, MP3, и т. д.).
+| **audioFormat**           | string | Название формата аудио (AAC, MP3, и т. д.).
 | **audioSamplesPerSecond** | Int32  | Количество выборок звука в секунду.
 | **bitrate**               | Int32  | Скорость видео в битах в секунду.
 | **duration**              | Int64  | Длительность файла в миллисекундах.

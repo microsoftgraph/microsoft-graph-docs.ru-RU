@@ -14,7 +14,7 @@ ms.locfileid: "42519332"
 ---
 # <a name="workbookchartfont-resource-type"></a>Тип ресурса Воркбукчартфонт
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42519185"
 ---
 # <a name="workbookrangefill-resource-type"></a>Тип ресурса Воркбукранжефилл
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

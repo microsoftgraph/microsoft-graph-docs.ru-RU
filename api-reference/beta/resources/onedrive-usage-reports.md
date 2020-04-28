@@ -14,7 +14,7 @@ ms.locfileid: "42522402"
 ---
 # <a name="onedrive-usage-reports"></a>Отчеты об использовании OneDrive
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

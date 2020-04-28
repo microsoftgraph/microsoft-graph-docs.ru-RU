@@ -14,7 +14,7 @@ ms.locfileid: "42519311"
 ---
 # <a name="workbookchartlegend-resource-type"></a>Тип ресурса Воркбукчартлеженд
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

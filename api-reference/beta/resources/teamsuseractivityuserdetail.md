@@ -14,7 +14,7 @@ ms.locfileid: "42519815"
 ---
 # <a name="teamsuseractivityuserdetail-resource-type"></a>Тип ресурса Теамсусерактивитюсердетаил
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 
@@ -23,14 +23,14 @@ ms.locfileid: "42519815"
 | репортрефрешдате       | Дата              |
 | userPrincipalName       | String            |
 | ластактивитидате        | Дата              |
-| isDeleted               | Логический           |
+| isDeleted               | Boolean           |
 | делетеддате             | Дата              |
-| ассигнедпродуктс        | Коллекция String |
+| ассигнедпродуктс        | Коллекция объектов string |
 | теамчатмессажекаунт    | Int64             |
 | приватечатмессажекаунт | Int64             |
 | каллкаунт               | Int64             |
 | митингкаунт            | Int64             |
-| хасосерактион          | Логический           |
+| хасосерактион          | Boolean           |
 | репортпериод            | String            |
 
 ## <a name="json-representation"></a>Представление JSON

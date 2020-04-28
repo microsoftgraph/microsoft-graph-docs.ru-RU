@@ -14,7 +14,7 @@ ms.locfileid: "42521764"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>Тип ресурса Планнерчекклиститемс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

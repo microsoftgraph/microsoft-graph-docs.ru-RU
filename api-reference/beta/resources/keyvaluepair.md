@@ -14,7 +14,7 @@ ms.locfileid: "42523018"
 ---
 # <a name="keyvaluepair-resource-type"></a>Тип ресурса keyValuePair
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

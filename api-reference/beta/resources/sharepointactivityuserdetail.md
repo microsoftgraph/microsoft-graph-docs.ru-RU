@@ -14,7 +14,7 @@ ms.locfileid: "42520697"
 ---
 # <a name="sharepointactivityuserdetail-resource-type"></a>Тип ресурса Шарепоинтактивитюсердетаил
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 
@@ -22,7 +22,7 @@ ms.locfileid: "42520697"
 | :------------------------ | :---------------- |
 | репортрефрешдате         | Дата              |
 | userPrincipalName         | String            |
-| isDeleted                 | Логический           |
+| isDeleted                 | Boolean           |
 | делетеддате               | Дата              |
 | ластактивитидате          | Дата              |
 | виеведоредитедфилекаунт   | Int64             |
@@ -30,7 +30,7 @@ ms.locfileid: "42520697"
 | шарединтерналлифилекаунт | Int64             |
 | шаредекстерналлифилекаунт | Int64             |
 | виситедпажекаунт          | Int64             |
-| ассигнедпродуктс          | Коллекция String |
+| ассигнедпродуктс          | Коллекция объектов string |
 | репортпериод              | String            |
 
 ## <a name="json-representation"></a>Представление JSON

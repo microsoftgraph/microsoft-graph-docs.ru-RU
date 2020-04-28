@@ -14,7 +14,7 @@ ms.locfileid: "42520711"
 ---
 # <a name="sharepointactivitypages-resource-type"></a>Тип ресурса Шарепоинтактивитипажес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

@@ -14,7 +14,7 @@ ms.locfileid: "42522857"
 ---
 # <a name="manage-focused-inbox"></a>Управление сортировкой почты
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

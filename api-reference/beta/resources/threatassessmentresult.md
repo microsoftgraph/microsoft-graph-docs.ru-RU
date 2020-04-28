@@ -14,7 +14,7 @@ ms.locfileid: "42519773"
 ---
 # <a name="threatassessmentresult-resource-type"></a>Тип ресурса Среатассессментресулт
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

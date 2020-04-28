@@ -44,7 +44,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 | ------------- | ------------------------- |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса требуются следующие параметры:
 
@@ -54,7 +54,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 |type|String|Тип собственных объектов, которые требуется вернуть; `group` в настоящее время является единственным поддерживаемым значением.|
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешные запросы `200 OK` возвращают коды ответа; объект Response содержит свойства [Directory (удаленные элементы)](../resources/directory.md) .
 

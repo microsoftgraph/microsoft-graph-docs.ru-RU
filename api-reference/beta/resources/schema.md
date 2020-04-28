@@ -36,7 +36,7 @@ ms.locfileid: "42892537"
 | baseType   | String                             | Необходимо указать значение `microsoft.graph.externalItem`. Обязательный. |
 | properties | Коллекция [свойств](property.md) | Свойства, заданные для элементов в подключении. Минимальное число свойств — 1, максимальное — 64. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

@@ -14,7 +14,7 @@ ms.locfileid: "42519150"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>Тип ресурса workbookSessionInfo
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "42519150"
 
 | Свойство | Тип  | Описание                               |
 |:---------|:------|:------------------------------------------|
-| id  | строка | Идентификатор сеанса книги. |
+| id  | string | Идентификатор сеанса книги. |
 | persistChanges | строка |  Имеет значение `true` для сохраняемого сеанса. Имеет значение `false` для несохраняемого сеанса (режим просмотра) |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

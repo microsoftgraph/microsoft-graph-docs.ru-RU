@@ -14,7 +14,7 @@ ms.locfileid: "42522458"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>Тип ресурса office365GroupsActivityCounts
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

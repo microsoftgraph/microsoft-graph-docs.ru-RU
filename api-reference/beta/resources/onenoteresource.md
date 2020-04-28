@@ -14,7 +14,7 @@ ms.locfileid: "42522325"
 ---
 # <a name="onenoteresource-resource-type"></a>Тип ресурса Оненотересаурце
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

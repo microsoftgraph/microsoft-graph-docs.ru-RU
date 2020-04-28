@@ -14,7 +14,7 @@ ms.locfileid: "42522773"
 ---
 # <a name="mediainfo-resource-type"></a>Тип ресурса Медиаинфо
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

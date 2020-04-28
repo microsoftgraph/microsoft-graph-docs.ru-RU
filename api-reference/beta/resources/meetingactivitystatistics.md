@@ -14,7 +14,7 @@ ms.locfileid: "42522752"
 ---
 # <a name="meetingactivitystatistics-resource-type"></a>Тип ресурса Митингактивитистатистикс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

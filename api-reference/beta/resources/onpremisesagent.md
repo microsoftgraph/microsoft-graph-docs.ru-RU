@@ -39,7 +39,7 @@ ms.locfileid: "43199755"
 |status|string| Возможные значения: `active`, `inactive`.|
 |публишингтипе|string| Возможные значения: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

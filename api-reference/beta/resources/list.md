@@ -39,7 +39,7 @@ ms.locfileid: "43109049"
 | [Удаление элемента списка][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Создание элемента в списке][]      | POST /lists/{list-id}
 | [Получение последних действий][] | GET /lists/{list-id}/activities
-| [Получение канала WebSocket][] | ПОЛУЧЕНИЕ/Листс/{лист-ИД}/субскриптионс/соккетио
+| [Получение канала WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
 
 [Получение списка]: ../api/list-get.md
 [Создание списка]: ../api/list-create.md
@@ -50,7 +50,7 @@ ms.locfileid: "43109049"
 [Получение последних действий]: ../api/activities-list.md
 [Получение канала WebSocket]: ../api/subscriptions-socketio.md
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление ресурса **list** в формате JSON.
 
@@ -104,7 +104,7 @@ ms.locfileid: "43109049"
 
 | Имя свойства            | Тип             | Описание
 |:-------------------------|:-----------------|:-------------------------------
-| **id**                   | строка           | Уникальный идентификатор элемента. Только для чтения.
+| **id**                   | string           | Уникальный идентификатор элемента. Только для чтения.
 | **name**                 | string           | Имя элемента.
 | **createdBy**            | [identitySet][]  | Удостоверение создателя данного элемента. Только для чтения.
 | **createdDateTime**      | DateTimeOffset   | Дата и время создания элемента. Только для чтения.
@@ -122,7 +122,7 @@ ms.locfileid: "43109049"
 | **activities**    | Коллекция [itemActivity][] | Последние действия, выполненные в списке.
 | **drive**         | [drive][]                   | Доступна только для библиотек документов. Разрешает доступ к списку как к ресурсу [drive][] с объектами [driveItem][driveItem].
 | **items**         | Коллекция ([listItem][])    | Все элементы, содержащиеся в списке.
-| subscriptions      | Коллекция [subscription][] | Набор подписок в списке.
+| subscriptions      | Коллекция [subscription][] | Набор подписок на список.
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md

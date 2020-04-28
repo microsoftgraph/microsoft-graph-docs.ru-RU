@@ -15,7 +15,7 @@ ms.locfileid: "42521133"
 ---
 # <a name="renameaction-resource-type"></a>Тип ресурса RenameAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "42521133"
 | Имя свойства | Тип   | Описание
 |:--------------|:-------|:----------------------------------------------------
 | oldName       | string | Предыдущее имя элемента.
-| Новое       | строка | Новое имя элемента.
+| Новое       | string | Новое имя элемента.
 
 ## <a name="remarks"></a>Замечания
 

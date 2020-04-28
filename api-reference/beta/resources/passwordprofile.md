@@ -14,7 +14,7 @@ ms.locfileid: "42522013"
 ---
 # <a name="passwordprofile-resource-type"></a>Тип ресурса passwordProfile
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

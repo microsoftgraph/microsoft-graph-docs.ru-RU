@@ -14,7 +14,7 @@ ms.locfileid: "42521792"
 ---
 # <a name="plannerbucket-resource-type"></a>Тип ресурса plannerBucket
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

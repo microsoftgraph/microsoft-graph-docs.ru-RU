@@ -14,7 +14,7 @@ ms.locfileid: "42520431"
 ---
 # <a name="skypeforbusinessactivityuserdetail-resource-type"></a>Тип ресурса Скипефорбусинессактивитюсердетаил
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 
@@ -50,10 +50,10 @@ ms.locfileid: "42520431"
 | participatedConferenceDialInOut3rdPartyCount | Int64             |
 | репортрефрешдате                        | Дата              |
 | userPrincipalName                        | String            |
-| isDeleted                                | Логический           |
+| isDeleted                                | Boolean           |
 | делетеддате                              | Дата              |
 | ластактивитидате                         | Дата              |
-| ассигнедпродуктс                         | Коллекция String |
+| ассигнедпродуктс                         | Коллекция объектов string |
 | репортпериод                             | String            |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -14,7 +14,7 @@ ms.locfileid: "42519031"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>Тип ресурса Яммерактивитюсердетаил
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 
@@ -29,7 +29,7 @@ ms.locfileid: "42519031"
 | постедкаунт       | Int64             |
 | реадкаунт         | Int64             |
 | ликедкаунт        | Int64             |
-| ассигнедпродуктс  | Коллекция String |
+| ассигнедпродуктс  | Коллекция объектов string |
 | репортпериод      | String            |
 
 ## <a name="json-representation"></a>Представление JSON

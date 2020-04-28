@@ -15,7 +15,7 @@ ms.locfileid: "42519479"
 ---
 # <a name="versionaction-resource-type"></a>Тип ресурса VersionAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

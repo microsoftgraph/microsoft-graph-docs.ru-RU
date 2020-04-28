@@ -14,7 +14,7 @@ ms.locfileid: "42519220"
 ---
 # <a name="workbookicon-resource-type"></a>Тип ресурса Воркбукикон
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

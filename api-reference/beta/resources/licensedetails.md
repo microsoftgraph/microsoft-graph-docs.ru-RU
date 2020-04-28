@@ -14,7 +14,7 @@ ms.locfileid: "42522976"
 ---
 # <a name="licensedetails-resource-type"></a>Тип ресурса licenseDetails
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -74,7 +74,7 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancelPrintJ
 ---
 
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",

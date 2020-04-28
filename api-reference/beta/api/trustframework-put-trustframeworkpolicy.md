@@ -47,13 +47,13 @@ PUT /trustFramework/policies/{id}/$value
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|Application/XML. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) . 
 
 >**Note:** тип контента должен быть `application/xml`.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Ответ будет одним из следующих вариантов:
 - Если [трустфрамеворкполици](../resources/trustframeworkpolicy.md) существует, успешный запрос возвращает код `200 OK` отклика.

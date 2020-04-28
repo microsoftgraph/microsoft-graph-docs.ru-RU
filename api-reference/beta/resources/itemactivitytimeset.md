@@ -15,7 +15,7 @@ ms.locfileid: "42523109"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>Тип ресурса ItemActivityTimeSet
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

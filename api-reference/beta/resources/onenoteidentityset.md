@@ -14,7 +14,7 @@ ms.locfileid: "42522353"
 ---
 # <a name="onenoteidentityset-resource-type"></a>Тип ресурса Оненотеидентитисет
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

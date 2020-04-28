@@ -14,7 +14,7 @@ ms.locfileid: "42521757"
 ---
 # <a name="plannerexternalreference-resource-type"></a>Тип ресурса Планнерекстерналреференце
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

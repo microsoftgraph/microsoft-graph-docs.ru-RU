@@ -14,7 +14,7 @@ ms.locfileid: "42520993"
 ---
 # <a name="rubricqualityselectedcolumnmodel-resource-type"></a>Тип ресурса Рубриккуалитиселектедколумнмодел
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

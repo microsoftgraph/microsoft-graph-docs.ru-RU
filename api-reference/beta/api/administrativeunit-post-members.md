@@ -42,7 +42,7 @@ POST /administrativeUnits/{id}/members/$ref
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте `id` запроса укажите [пользователя](../resources/user.md), [группу](../resources/group.md) или [directoryObject](../resources/directoryobject.md) , которого требуется добавить.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,7 @@ Content-length: 109
 ```
 В тексте запроса укажите `id` объект [пользователя](../resources/user.md) или [группы](../resources/group.md) , который вы хотите добавить.
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
  
 ```http

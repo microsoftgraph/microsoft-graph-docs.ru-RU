@@ -14,7 +14,7 @@ ms.locfileid: "42521035"
 ---
 # <a name="roomlist-resource-type"></a>Тип ресурса RoomList принимают одиночные
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

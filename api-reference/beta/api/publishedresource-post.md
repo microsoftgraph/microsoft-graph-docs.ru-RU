@@ -42,7 +42,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -55,7 +55,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 |displayName|String|Отображаемое имя Публишедресаурце.|
 |resourceName|String|Имя Публишедресаурце.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [публишедресаурце](../resources/publishedresource.md) в тексте отклика.
 

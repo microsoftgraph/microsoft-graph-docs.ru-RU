@@ -15,7 +15,7 @@ ms.locfileid: "42522696"
 ---
 # <a name="mentionaction-resource-type"></a>Тип ресурса MentionAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

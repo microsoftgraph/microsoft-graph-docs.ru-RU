@@ -14,7 +14,7 @@ ms.locfileid: "42519913"
 ---
 # <a name="teamsappinstallation-resource-type"></a>Тип ресурса Теамсаппинсталлатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "42519913"
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | строка   | Уникальный идентификатор (не идентификатор AP группы). |
+| id                  | string   | Уникальный идентификатор (не идентификатор AP группы). |
 
 ## <a name="relationships"></a>Связи
 

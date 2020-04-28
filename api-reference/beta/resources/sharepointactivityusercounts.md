@@ -14,7 +14,7 @@ ms.locfileid: "42520704"
 ---
 # <a name="sharepointactivityusercounts-resource-type"></a>Тип ресурса Шарепоинтактивитюсеркаунтс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

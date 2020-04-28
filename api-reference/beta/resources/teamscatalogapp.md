@@ -14,6 +14,6 @@ ms.locfileid: "42519885"
 ---
 # <a name="teamscatalogapp-resource-type"></a>Тип ресурса Теамскаталогапп
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 обратитесь к разделу [teamsApp](teamsapp.md).

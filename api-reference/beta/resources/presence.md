@@ -14,7 +14,7 @@ ms.locfileid: "42521574"
 ---
 # <a name="presence-resource-type"></a>Тип ресурса присутствия
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Содержит сведения о присутствии пользователя, в том числе сведения о доступности и активности пользователей.
 
@@ -32,7 +32,7 @@ ms.locfileid: "42521574"
 
 | Связь        | Тип                                                 | Описание                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-|id    |  строка     |  Идентификатор объекта пользователя   |
+|id    |  string     |  Идентификатор объекта пользователя   |
 |availability    |  Коллекция строк   |   Базовые сведения о присутствии для пользователя. Возможные значения: `Available`, `AvailableIdle`, `Away`, `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb`,,,, `Offline`,`PresenceUnknown`  |
 |activity    |  Коллекция строк      |    Дополнительная информация о доступности пользователя. Возможные значения: `Available`, `Away`, `BeRightBack`,`Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `PresenceUnknown``Presenting` `UrgentInterruptionsOnly`,,,,,,,,,,. `Inactive``InAMeeting` `Offline` `OffWork``OutOfOffice`       |
 

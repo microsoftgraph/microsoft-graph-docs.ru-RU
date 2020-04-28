@@ -14,7 +14,7 @@ ms.locfileid: "42521490"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>Тип ресурса Привилежедролесуммари
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

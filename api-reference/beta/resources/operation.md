@@ -14,13 +14,13 @@ ms.locfileid: "42522161"
 ---
 # <a name="operation-resource-type"></a>Тип ресурса Operation
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Состояние длительной операции.
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 
 Нет
 

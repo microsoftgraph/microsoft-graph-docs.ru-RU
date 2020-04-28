@@ -14,7 +14,7 @@ ms.locfileid: "42521084"
 ---
 # <a name="resultinfo-resource-type"></a>Тип ресурса Ресултинфо
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

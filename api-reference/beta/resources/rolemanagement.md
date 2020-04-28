@@ -20,7 +20,7 @@ ms.locfileid: "43215780"
 
 Объект управления ролями Microsoft 365 RBAC. Предоставляет доступ к определениям ролей и назначениям ролей, предоставляемым поставщикам RBAC. В настоящее время поддерживается только поставщик каталогов. Для получения дополнительных сведений см. [разрешения роли администратора в Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 
 Нет
 
@@ -28,7 +28,7 @@ ms.locfileid: "43215780"
 
 Нет
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

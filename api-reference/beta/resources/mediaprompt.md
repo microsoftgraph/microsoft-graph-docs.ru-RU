@@ -14,7 +14,7 @@ ms.locfileid: "42522766"
 ---
 # <a name="mediaprompt-resource-type"></a>Тип ресурса Медиапромпт
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

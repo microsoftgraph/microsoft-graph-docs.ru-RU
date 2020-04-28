@@ -55,7 +55,7 @@ PATCH /me/profile/languages/{id}
 |навыки   |string       | Возможные значения: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
 |tag           |String       | Содержит 4-символьное имя BCP47 для языка (EN-US, No-NetBIOS, en-AU)                                                                                  |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [лангуажепрофиЦиенци](../resources/languageproficiency.md) в тексте отклика.
 

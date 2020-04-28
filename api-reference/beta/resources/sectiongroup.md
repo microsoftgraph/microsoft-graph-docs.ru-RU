@@ -14,7 +14,7 @@ ms.locfileid: "42520880"
 ---
 # <a name="sectiongroup-resource-type"></a>Тип ресурса sectionGroup
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

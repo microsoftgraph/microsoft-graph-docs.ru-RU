@@ -14,7 +14,7 @@ ms.locfileid: "42522181"
 ---
 # <a name="openshiftchangerequest-resource-type"></a>Тип ресурса Опеншифтчанжерекуест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

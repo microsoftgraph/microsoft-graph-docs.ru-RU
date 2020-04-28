@@ -14,7 +14,7 @@ ms.locfileid: "42521224"
 ---
 # <a name="recordoperation-resource-type"></a>Тип ресурса Рекордоператион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42519920"
 ---
 # <a name="teamsappdefinition-resource-type"></a>Тип ресурса Теамсаппдефинитион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,10 +24,10 @@ ms.locfileid: "42519920"
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | строка   | Уникальный идентификатор (а не идентификаторы Teams). |
-| teamsAppId          | строка   | Идентификатор из манифеста приложения Teams. |
+| id                  | string   | Уникальный идентификатор (а не идентификаторы Teams). |
+| teamsAppId          | string   | Идентификатор из манифеста приложения Teams. |
 | displayName         | string   | Имя приложения, предоставленное разработчиком приложения. |
-| version             | строка   | Номер версии приложения. |
+| version             | string   | Номер версии приложения. |
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

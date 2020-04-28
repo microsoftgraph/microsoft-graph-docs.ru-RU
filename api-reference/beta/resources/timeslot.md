@@ -14,7 +14,7 @@ ms.locfileid: "42519703"
 ---
 # <a name="timeslot-resource-type"></a>Тип ресурсов timeSlot
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

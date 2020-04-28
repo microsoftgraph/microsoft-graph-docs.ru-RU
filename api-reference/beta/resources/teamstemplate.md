@@ -14,7 +14,7 @@ ms.locfileid: "42519836"
 ---
 # <a name="teamstemplate-resource-type"></a>Тип ресурса Теамстемплате
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42519248"
 ---
 # <a name="workbookcomment-resource-type"></a>Тип ресурса Воркбуккоммент
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет комментарий в книге.
 

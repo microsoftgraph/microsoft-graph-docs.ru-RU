@@ -15,7 +15,7 @@ ms.locfileid: "42521287"
 ---
 # <a name="quota-resource-type"></a>Тип ресурса Quota
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

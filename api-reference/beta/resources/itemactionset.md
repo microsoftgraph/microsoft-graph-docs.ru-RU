@@ -15,7 +15,7 @@ ms.locfileid: "42523137"
 ---
 # <a name="itemactionset-resource-type"></a>Тип ресурса ItemActionSet
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42521560"
 ---
 # <a name="privilegedaccess-resource-type"></a>Тип ресурса Привилежедакцесс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

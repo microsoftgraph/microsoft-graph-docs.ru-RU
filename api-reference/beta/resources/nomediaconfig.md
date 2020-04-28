@@ -14,7 +14,7 @@ ms.locfileid: "42522570"
 ---
 # <a name="nomediaconfig-resource-type"></a>Тип ресурса Номедиаконфиг
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42522570"
 
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
-| ремовефромдефаултаудиограуп | Логический |  |
+| ремовефромдефаултаудиограуп | Boolean |  |
 
 ## <a name="json-representation"></a>Представление JSON
 

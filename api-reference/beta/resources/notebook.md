@@ -14,7 +14,7 @@ ms.locfileid: "42522563"
 ---
 # <a name="notebook-resource-type"></a>Тип ресурса для записной книжки
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

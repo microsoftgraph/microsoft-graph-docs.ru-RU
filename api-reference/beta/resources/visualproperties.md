@@ -14,7 +14,7 @@ ms.locfileid: "42519465"
 ---
 # <a name="visualproperties-resource-type"></a>Тип ресурса Висуалпропертиес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -15,7 +15,7 @@ ms.locfileid: "42521934"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Тип ресурса personOrGroupColumn
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "42521934"
 | Имя свойства              | Тип    | Описание
 |:---------------------------|:--------|:--------------------------------------
 | **allowMultipleSelection** | boolean | Указывает, можно ли выбрать несколько значений в источнике.
-| **displayAs**              | строка  | Указывает способ отображения сведений о выбранном человеке или группе. См. ниже.
+| **displayAs**              | string  | Указывает способ отображения сведений о выбранном человеке или группе. См. ниже.
 | **chooseFromType**         | string  | Указывает, что можно выбирать: только людей либо людей и группы. Должно иметь тип `peopleAndGroups` или `peopleOnly`.
 
 ## <a name="displayas-values"></a>Значения DisplayAs

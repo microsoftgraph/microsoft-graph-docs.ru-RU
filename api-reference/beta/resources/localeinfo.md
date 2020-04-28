@@ -14,7 +14,7 @@ ms.locfileid: "42522934"
 ---
 # <a name="localeinfo-resource-type"></a>Тип ресурса localeInfo
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

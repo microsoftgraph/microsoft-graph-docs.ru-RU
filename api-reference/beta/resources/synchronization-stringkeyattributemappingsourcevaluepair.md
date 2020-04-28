@@ -23,7 +23,7 @@ ms.locfileid: "43217579"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|key|Строка|Имя параметра.|
+|key|String|Имя параметра.|
 |значение|[аттрибутемаппингсаурце](synchronization-attributemappingsource.md)|Значение параметра.|
 
 ## <a name="json-representation"></a>Представление JSON

@@ -14,7 +14,7 @@ ms.locfileid: "42522521"
 ---
 # <a name="offershiftrequest-resource-type"></a>Тип ресурса Оффершифтрекуест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

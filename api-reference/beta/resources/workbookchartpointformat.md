@@ -14,14 +14,14 @@ ms.locfileid: "42519283"
 ---
 # <a name="workbookchartpointformat-resource-type"></a>Тип ресурса Воркбукчартпоинтформат
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет объект форматирования для точек диаграммы.
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 Нет
 
 ## <a name="properties"></a>Свойства

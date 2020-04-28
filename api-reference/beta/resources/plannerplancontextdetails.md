@@ -14,7 +14,7 @@ ms.locfileid: "42521694"
 ---
 # <a name="plannerplancontextdetails-resource-type"></a>Тип ресурса Планнерпланконтекстдетаилс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

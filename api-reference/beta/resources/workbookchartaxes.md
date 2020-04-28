@@ -14,14 +14,14 @@ ms.locfileid: "42519388"
 ---
 # <a name="workbookchartaxes-resource-type"></a>Тип ресурса Воркбукчартаксес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет оси диаграммы.
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 Нет
 
 ## <a name="properties"></a>Свойства

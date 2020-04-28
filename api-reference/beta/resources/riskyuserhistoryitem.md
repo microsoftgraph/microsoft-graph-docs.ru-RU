@@ -14,7 +14,7 @@ ms.locfileid: "42521056"
 ---
 # <a name="riskyuserhistoryitem-resource-type"></a>Тип ресурса Рискюсерхисторитем
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Представляет историю риска пользователя Azure AD, определенная службой защиты удостоверений Azure AD. 

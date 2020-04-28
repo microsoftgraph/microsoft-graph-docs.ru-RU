@@ -14,13 +14,13 @@ ms.locfileid: "42519304"
 ---
 # <a name="workbookchartlegendformat-resource-type"></a>Тип ресурса Воркбукчартлежендформат
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Инкапсулирует свойства формата легенды диаграммы.
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 Нет
 
 ## <a name="properties"></a>Свойства

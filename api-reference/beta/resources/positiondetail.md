@@ -14,7 +14,7 @@ ms.locfileid: "42521595"
 ---
 # <a name="positiondetail-resource-type"></a>Тип ресурса Поситиондетаил
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

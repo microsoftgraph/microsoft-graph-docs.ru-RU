@@ -14,7 +14,7 @@ ms.locfileid: "42520810"
 ---
 # <a name="securityvendorinformation-resource-type"></a>Тип ресурса Секуритивендоринформатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

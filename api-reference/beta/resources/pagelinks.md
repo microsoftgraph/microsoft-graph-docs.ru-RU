@@ -14,7 +14,7 @@ ms.locfileid: "42522055"
 ---
 # <a name="pagelinks-resource-type"></a>Тип ресурса Пажелинкс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

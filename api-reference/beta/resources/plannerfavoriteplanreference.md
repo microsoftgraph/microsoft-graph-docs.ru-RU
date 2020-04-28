@@ -14,7 +14,7 @@ ms.locfileid: "42521743"
 ---
 # <a name="plannerfavoriteplanreference-resource-type"></a>Тип ресурса Планнерфаворитепланреференце
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

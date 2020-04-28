@@ -14,7 +14,7 @@ ms.locfileid: "42522388"
 ---
 # <a name="onedriveusageaccountcounts-resource-type"></a>Тип ресурса Онедривеусажеаккаунткаунтс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

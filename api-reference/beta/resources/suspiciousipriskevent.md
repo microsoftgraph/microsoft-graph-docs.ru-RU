@@ -14,7 +14,7 @@ ms.locfileid: "42520277"
 ---
 # <a name="suspiciousipriskevent-resource-type"></a>Тип ресурса СуспиЦиаусиприскевент
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,13 +36,13 @@ ms.locfileid: "42520277"
 |closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
 |id|string| Только для чтения|
-|ipAddress|строка| IP-адрес входа|
-|location|строка| Расположение, подключенное к IP-адресу входа|
+|ipAddress|string| IP-адрес входа|
+|location|string| Расположение, подключенное к IP-адресу входа|
 |рискевентдатетиме|dateTimeOffset| Дата и время возникновения события риска|
-|рискевентстатус|строка| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|рискевенттипе|строка| Тип риска|
-|userDisplayName|строка| Имя пользователя под угрозой|
+|рискевенттипе|string| Тип риска|
+|userDisplayName|string| Имя пользователя под угрозой|
 |userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 

@@ -14,7 +14,7 @@ ms.locfileid: "42519129"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>Тип ресурса Воркбуктаблеколумн
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

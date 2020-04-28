@@ -14,7 +14,7 @@ ms.locfileid: "42519570"
 ---
 # <a name="urlassessmentrequest-resource-type"></a>Тип ресурса Урлассессментрекуест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

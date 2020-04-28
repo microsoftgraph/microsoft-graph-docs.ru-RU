@@ -82,7 +82,7 @@ DELETE https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 

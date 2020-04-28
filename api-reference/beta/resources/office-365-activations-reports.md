@@ -14,7 +14,7 @@ ms.locfileid: "42522514"
 ---
 # <a name="office-365-activations-reports"></a>Отчеты об активации Office 365
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

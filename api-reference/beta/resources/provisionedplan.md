@@ -14,7 +14,7 @@ ms.locfileid: "42521350"
 ---
 # <a name="provisionedplan-resource-type"></a>Тип ресурса provisionedPlan
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

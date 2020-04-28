@@ -14,7 +14,7 @@ ms.locfileid: "42522430"
 ---
 # <a name="office365groupsactivitystorage-resource-type"></a>Тип ресурса office365GroupsActivityStorage
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

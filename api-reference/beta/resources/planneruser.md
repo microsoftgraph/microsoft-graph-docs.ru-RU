@@ -14,7 +14,7 @@ ms.locfileid: "42521638"
 ---
 # <a name="planneruser-resource-type"></a>Тип ресурса plannerUser
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

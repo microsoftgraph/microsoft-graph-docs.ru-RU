@@ -14,7 +14,7 @@ ms.locfileid: "42519157"
 ---
 # <a name="workbookrangeview-resource-type"></a>Тип ресурса workbookRangeView
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

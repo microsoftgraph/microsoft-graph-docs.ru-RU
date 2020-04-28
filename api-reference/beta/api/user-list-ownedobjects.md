@@ -1,5 +1,5 @@
 ---
-title: Список ownedObjects
+title: Перечисление ownedObjects
 description: Получение списка объектов каталога, принадлежащих пользователю.
 author: krbain
 localization_priority: Normal
@@ -12,7 +12,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/02/2020
 ms.locfileid: "43107600"
 ---
-# <a name="list-ownedobjects"></a>Список ownedObjects
+# <a name="list-ownedobjects"></a>Перечисление ownedObjects
 
 Пространство имен: microsoft.graph
 
@@ -46,7 +46,7 @@ GET /users/{id | userPrincipalName}/ownedObjects
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/me/ownedObjects
 
 ---
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

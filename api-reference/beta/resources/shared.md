@@ -15,7 +15,7 @@ ms.locfileid: "42520740"
 ---
 # <a name="shared-resource-type"></a>Тип ресурса Shared
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

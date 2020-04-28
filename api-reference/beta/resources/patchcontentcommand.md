@@ -14,7 +14,7 @@ ms.locfileid: "42521999"
 ---
 # <a name="patchcontentcommand-resource-type"></a>Тип ресурса Патчконтенткомманд
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

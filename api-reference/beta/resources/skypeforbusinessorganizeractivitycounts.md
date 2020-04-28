@@ -14,7 +14,7 @@ ms.locfileid: "42520403"
 ---
 # <a name="skypeforbusinessorganizeractivitycounts-resource-type"></a>Тип ресурса Скипефорбусинессорганизерактивитикаунтс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

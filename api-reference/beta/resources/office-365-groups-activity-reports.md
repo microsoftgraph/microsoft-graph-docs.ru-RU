@@ -14,7 +14,7 @@ ms.locfileid: "42522500"
 ---
 # <a name="office-365-groups-activity-reports"></a>Отчеты об активности в группах Office 365
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -47,16 +47,16 @@ POST /privilegedAccess/azureResources/resources/register
 
 | Имя | Описание |
 |:---- |:----------- |
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 | Свойства | Тип | Описание |
 |:---------- |:---- |:----------- |
 | externalId | String | Внешний идентификатор ресурса, регистрируемого в PIM. При регистрации подписки идентификатором является идентификатор подписки, добавленный в начале `/subscriptions/`. Например, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` отклик.
 

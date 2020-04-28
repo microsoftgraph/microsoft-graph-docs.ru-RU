@@ -14,7 +14,7 @@ ms.locfileid: "42520916"
 ---
 # <a name="searchquery-resource-type"></a>Тип ресурса searchQuery
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

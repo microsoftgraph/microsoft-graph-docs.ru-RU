@@ -46,7 +46,7 @@ ms.locfileid: "43219202"
 |усермаил|string|Адрес электронной почты пользователя.|
 |userName|string|Отображаемое имя пользователя.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

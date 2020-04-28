@@ -14,7 +14,7 @@ ms.locfileid: "42522479"
 ---
 # <a name="office365activationsuserdetail-resource-type"></a>Тип ресурса office365ActivationsUserDetail
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

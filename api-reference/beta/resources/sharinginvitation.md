@@ -15,7 +15,7 @@ ms.locfileid: "42520655"
 ---
 # <a name="sharinginvitation-resource-type"></a>Тип ресурса SharingInvitation
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

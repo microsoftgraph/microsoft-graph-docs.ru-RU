@@ -14,7 +14,7 @@ ms.locfileid: "42519290"
 ---
 # <a name="workbookchartpoint-resource-type"></a>Тип ресурса Воркбукчартпоинт
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "42519290"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |значение|Json|Возвращает значение точки диаграммы. Только для чтения.|
-|id|строка|уникальный идентификатор|
+|id|string|уникальный идентификатор|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|

@@ -14,7 +14,7 @@ ms.locfileid: "42521014"
 ---
 # <a name="rubriclevel-resource-type"></a>Тип ресурса Рубриклевел
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

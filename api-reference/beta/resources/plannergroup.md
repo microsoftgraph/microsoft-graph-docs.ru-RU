@@ -14,7 +14,7 @@ ms.locfileid: "42521729"
 ---
 # <a name="plannergroup-resource-type"></a>Тип ресурса Планнерграуп
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

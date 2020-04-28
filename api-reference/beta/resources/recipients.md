@@ -14,7 +14,7 @@ ms.locfileid: "42521245"
 ---
 # <a name="recipients-resource-type"></a>Тип ресурса Recipients
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42519661"
 ---
 # <a name="toneinfo-resource-type"></a>Тип ресурса Тонеинфо
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

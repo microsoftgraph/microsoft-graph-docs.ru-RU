@@ -40,7 +40,7 @@ PATCH /programs('{programId}')
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [программы](../resources/program.md) в формате JSON.
 
 В следующей таблице приведены свойства, которые можно указать при обновлении программы.
@@ -51,7 +51,7 @@ PATCH /programs('{programId}')
 | `description`               |`String`                              |  Описание программы.           |
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `204, Accepted` код отклика и объект [Program](../resources/program.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

@@ -14,7 +14,7 @@ ms.locfileid: "42521392"
 ---
 # <a name="prompt-resource-type"></a>Тип ресурса Prompt
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

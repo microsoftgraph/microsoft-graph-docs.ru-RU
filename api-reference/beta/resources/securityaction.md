@@ -14,7 +14,7 @@ ms.locfileid: "42520831"
 ---
 # <a name="securityaction-resource-type"></a>Тип ресурса securityAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

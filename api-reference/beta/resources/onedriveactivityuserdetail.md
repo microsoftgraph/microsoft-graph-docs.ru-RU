@@ -14,7 +14,7 @@ ms.locfileid: "42522395"
 ---
 # <a name="onedriveactivityuserdetail-resource-type"></a>Тип ресурса Онедривеактивитюсердетаил
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 
@@ -22,14 +22,14 @@ ms.locfileid: "42522395"
 | :------------------------ | :---------------- |
 | репортрефрешдате         | Дата              |
 | userPrincipalName         | String            |
-| isDeleted                 | Логический           |
+| isDeleted                 | Boolean           |
 | делетеддате               | Дата              |
 | ластактивитидате          | Дата              |
 | виеведоредитедфилекаунт   | Int64             |
 | синцедфилекаунт           | Int64             |
 | шарединтерналлифилекаунт | Int64             |
 | шаредекстерналлифилекаунт | Int64             |
-| ассигнедпродуктс          | Коллекция String |
+| ассигнедпродуктс          | Коллекция объектов string |
 | репортпериод              | String            |
 
 ## <a name="json-representation"></a>Представление JSON

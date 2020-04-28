@@ -74,7 +74,7 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 ---
 
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

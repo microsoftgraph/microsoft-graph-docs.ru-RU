@@ -14,7 +14,7 @@ ms.locfileid: "42519325"
 ---
 # <a name="workbookchartgridlines-resource-type"></a>Тип ресурса Воркбукчартгридлинес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

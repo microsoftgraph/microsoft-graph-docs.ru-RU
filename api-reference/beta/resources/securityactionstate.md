@@ -14,7 +14,7 @@ ms.locfileid: "42520817"
 ---
 # <a name="securityactionstate-resource-type"></a>Тип ресурса Секуритяктионстате
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

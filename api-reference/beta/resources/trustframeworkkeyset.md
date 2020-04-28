@@ -27,8 +27,8 @@ ms.locfileid: "43218053"
 | [List](../api/trustframework-list-keysets.md) | [трустфрамеворккэйсет](trustframeworkkeyset.md) Семейства | Список Трустфрамеворккэйсетс. |
 | [создание](../api/trustframework-post-keysets.md); | [трустфрамеворккэйсет](trustframeworkkeyset.md) | Создайте Трустфрамеворккэйсет. |
 | [получение](../api/trustframeworkkeyset-get.md); | [трустфрамеворккэйсет](trustframeworkkeyset.md) | Чтение свойств и связей объекта Трустфрамеворккэйсет. |
-| [Update](../api/trustframeworkkeyset-update.md) | [трустфрамеворккэйсет](trustframeworkkeyset.md) | Обновление объекта Трустфрамеворккэйсет. |
-| [Удаление](../api/trustframeworkkeyset-delete.md) | Нет | Удаление объекта Трустфрамеворккэйсет. |
+| [обновление](../api/trustframeworkkeyset-update.md). | [трустфрамеворккэйсет](trustframeworkkeyset.md) | Обновление объекта Трустфрамеворккэйсет. |
+| [удаление](../api/trustframeworkkeyset-delete.md); | Нет | Удаление объекта Трустфрамеворккэйсет. |
 |[Создание ключа](../api/trustframeworkkeyset-generatekey.md)|[трустфрамеворккэй](trustframeworkkey.md)| Создание ключа в наборе ключей. |
 |[Получение активного ключа](../api/trustframeworkkeyset-getactivekey.md)|[трустфрамеворккэй](trustframeworkkey.md)| Получить активный в данный момент ключ в наборе ключей. |
 |[Отправка сертификата](../api/trustframeworkkeyset-uploadcertificate.md)|[трустфрамеворккэй](trustframeworkkey.md)| Отправьте сертификат X. 509. |
@@ -39,10 +39,10 @@ ms.locfileid: "43218053"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка| Уникальный идентификатор набора ключей трустфрамеворк |
+|id|String| Уникальный идентификатор набора ключей трустфрамеворк |
 |переключен|Коллекция [трустфрамеворккэй](trustframeworkkey.md)| Коллекция ключей. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

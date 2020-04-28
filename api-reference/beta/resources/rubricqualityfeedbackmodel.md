@@ -14,7 +14,7 @@ ms.locfileid: "42521000"
 ---
 # <a name="rubricqualityfeedbackmodel-resource-type"></a>Тип ресурса Рубриккуалитифидбаккмодел
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

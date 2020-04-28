@@ -14,7 +14,7 @@ ms.locfileid: "42520901"
 ---
 # <a name="searchrequest-resource-type"></a>Тип ресурса Сеарчрекуест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ ms.locfileid: "42520901"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|stored_fields|Коллекция String |Содержит поля, возвращаемые для объекта еарч _so урцес. Обратите внимание, что этот параметр применяется`externalItem` , только если в отклике указан тип EntityType =.|
-|contentSources|Коллекция String|Содержит подключение, которое необходимо задать. <br>В соответствии со следующим `/external/connections/connectionid` форматом `connectionid` : где Коннектионид был определен в администрировании соединителей <br> Note contentSource применяется только в том случае,`externalItem`если EntityType =. |
-|enableTopResults|Логический|Это запускает гибридную сортировку для сообщений: первые 3 сообщения наиболее актуальны<br> Это относится только к типу entityType =`message`.|
+|stored_fields|Коллекция объектов string |Содержит поля, возвращаемые для объекта еарч _so урцес. Обратите внимание, что этот параметр применяется`externalItem` , только если в отклике указан тип EntityType =.|
+|contentSources|Коллекция объектов string|Содержит подключение, которое необходимо задать. <br>В соответствии со следующим `/external/connections/connectionid` форматом `connectionid` : где Коннектионид был определен в администрировании соединителей <br> Note contentSource применяется только в том случае,`externalItem`если EntityType =. |
+|enableTopResults|Boolean|Это запускает гибридную сортировку для сообщений: первые 3 сообщения наиболее актуальны<br> Это относится только к типу entityType =`message`.|
 |entityTypes|Коллекция `entityType`| Возможные значения: `event`, `message`, `driveItem`, `externalFile`, `externalItem`.|
 |from|Int32|Задает смещение результатов поиска. Смещение 0 возвращает самый первый результат.|
 |Запрос|[searchQuery](searchquery.md)|Содержит термины запроса.|

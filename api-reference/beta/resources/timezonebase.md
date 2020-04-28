@@ -14,7 +14,7 @@ ms.locfileid: "42519689"
 ---
 # <a name="timezonebase-resource-type"></a>Тип ресурса timeZoneBase
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

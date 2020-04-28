@@ -15,7 +15,7 @@ ms.locfileid: "42519759"
 ---
 # <a name="thumbnailset-resource-type"></a>Тип ресурса ThumbnailSet
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

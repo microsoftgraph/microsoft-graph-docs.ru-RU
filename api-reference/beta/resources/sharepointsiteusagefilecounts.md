@@ -14,7 +14,7 @@ ms.locfileid: "42520676"
 ---
 # <a name="sharepointsiteusagefilecounts-resource-type"></a>Тип ресурса Шарепоинтситеусажефилекаунтс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

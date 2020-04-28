@@ -14,7 +14,7 @@ ms.locfileid: "42520291"
 ---
 # <a name="subscribetotoneoperation-resource-type"></a>Тип ресурса Субскрибетотонеоператион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
