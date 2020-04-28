@@ -45,11 +45,11 @@ POST /user/profile/interests
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type   | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В тексте запроса добавьте представление объекта [персонинтерест](../resources/personinterest.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [персонинтерест](../resources/personinterest.md) в тексте отклика.
 

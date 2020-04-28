@@ -46,7 +46,7 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Виндовсманажементапфеалсстате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсманажементапфеалсстате.
@@ -62,7 +62,7 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

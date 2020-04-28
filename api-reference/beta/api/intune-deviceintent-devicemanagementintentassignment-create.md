@@ -46,7 +46,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицеманажементинтентассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементинтентассигнмент.
@@ -58,7 +58,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/assignments
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементинтентассигнмент](../resources/intune-deviceintent-devicemanagementintentassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

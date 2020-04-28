@@ -46,7 +46,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/userStates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицеманажементинтентусерстате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементинтентусерстате.

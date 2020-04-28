@@ -45,11 +45,11 @@ POST /me/profile/phones
 | Авторизация  | Bearer {токен}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В тексте запроса добавьте представление объекта [итемфоне](../resources/itemphone.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод `201, Created` возвращает код отклика и новый объект [итемфоне](../resources/itemphone.md) в тексте отклика.
 

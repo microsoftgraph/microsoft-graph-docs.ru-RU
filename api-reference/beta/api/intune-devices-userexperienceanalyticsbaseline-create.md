@@ -46,7 +46,7 @@ POST /deviceManagement/userExperienceAnalyticsBaselines
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксбаселине в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксбаселине.
@@ -61,7 +61,7 @@ POST /deviceManagement/userExperienceAnalyticsBaselines
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userexperienceanalyticsbaseline.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
