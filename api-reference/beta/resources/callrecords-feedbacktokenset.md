@@ -12,21 +12,21 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/03/2020
 ms.locfileid: "42394852"
 ---
-# <a name="feedbacktokenset-resource-type"></a><span data-ttu-id="aa2fb-103">Тип ресурса Фидбакктокенсет</span><span class="sxs-lookup"><span data-stu-id="aa2fb-103">feedbackTokenSet resource type</span></span>
+# <a name="feedbacktokenset-resource-type"></a><span data-ttu-id="fd631-103">Тип ресурса Фидбакктокенсет</span><span class="sxs-lookup"><span data-stu-id="fd631-103">feedbackTokenSet resource type</span></span>
 
-<span data-ttu-id="aa2fb-104">Пространство имен: Microsoft. Graph. Каллрекордс</span><span class="sxs-lookup"><span data-stu-id="aa2fb-104">Namespace: microsoft.graph.callRecords</span></span>
+<span data-ttu-id="fd631-104">Пространство имен: microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="fd631-104">Namespace: microsoft.graph.callRecords</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="aa2fb-105">Это _открытый тип_ , представляющий набор маркеров отзывов, предоставленных пользователем данной конечной точки для сеанса.</span><span class="sxs-lookup"><span data-stu-id="aa2fb-105">This is an _open type_ that represents the set of feedback tokens provided by the user of this endpoint for the Session.</span></span> <span data-ttu-id="aa2fb-106">Это набор логических свойств.</span><span class="sxs-lookup"><span data-stu-id="aa2fb-106">This is a set of Boolean properties.</span></span> <span data-ttu-id="aa2fb-107">Не следует полагаться на имена свойств, так как они могут изменяться в зависимости от того, какие маркеры предлагаются пользователю.</span><span class="sxs-lookup"><span data-stu-id="aa2fb-107">The property names should not be relied upon since they may change depending on what tokens are offered to the user.</span></span>
+<span data-ttu-id="fd631-105">Это _открытый тип_ , представляющий набор маркеров отзывов, предоставленных пользователем данной конечной точки для сеанса.</span><span class="sxs-lookup"><span data-stu-id="fd631-105">This is an _open type_ that represents the set of feedback tokens provided by the user of this endpoint for the Session.</span></span> <span data-ttu-id="fd631-106">Это набор логических свойств.</span><span class="sxs-lookup"><span data-stu-id="fd631-106">This is a set of Boolean properties.</span></span> <span data-ttu-id="fd631-107">Не следует полагаться на имена свойств, так как они могут изменяться в зависимости от того, какие маркеры предлагаются пользователю.</span><span class="sxs-lookup"><span data-stu-id="fd631-107">The property names should not be relied upon since they may change depending on what tokens are offered to the user.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="aa2fb-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="aa2fb-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="fd631-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="fd631-108">Properties</span></span>
 
-<span data-ttu-id="aa2fb-109">Явные имена свойств не задокументированы, так как имена маркеров отзывов могут изменяться, поэтому это [открытый тип](https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4).</span><span class="sxs-lookup"><span data-stu-id="aa2fb-109">Explicit property names will not be documented since the feedback token names can change, hence this is an [open type](https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4).</span></span>
+<span data-ttu-id="fd631-109">Явные имена свойств не задокументированы, так как имена маркеров отзывов могут изменяться, поэтому это [открытый тип](https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4).</span><span class="sxs-lookup"><span data-stu-id="fd631-109">Explicit property names will not be documented since the feedback token names can change, hence this is an [open type](https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="aa2fb-110">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="aa2fb-110">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fd631-110">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="fd631-110">JSON representation</span></span>
 
-<span data-ttu-id="aa2fb-111">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="aa2fb-111">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fd631-111">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fd631-111">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

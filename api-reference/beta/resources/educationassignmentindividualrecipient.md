@@ -12,24 +12,24 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42502559"
 ---
-# <a name="educationassignmentindividualrecipient-resource-type"></a><span data-ttu-id="411c2-104">Тип ресурса ЕдукатионассигнментиндивидуалреЦипиент</span><span class="sxs-lookup"><span data-stu-id="411c2-104">educationAssignmentIndividualRecipient resource type</span></span>
+# <a name="educationassignmentindividualrecipient-resource-type"></a><span data-ttu-id="fadb7-104">Тип ресурса ЕдукатионассигнментиндивидуалреЦипиент</span><span class="sxs-lookup"><span data-stu-id="fadb7-104">educationAssignmentIndividualRecipient resource type</span></span>
 
-<span data-ttu-id="411c2-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="411c2-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fadb7-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fadb7-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="411c2-106">Используется внутри свойства [назначение. ассигнто](educationassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="411c2-106">Used inside the [assignment.assignTo](educationassignment.md) property.</span></span> <span data-ttu-id="411c2-107">Если задан отдельный список получателей, выбранные студенты в классе получат объект отправки при публикации назначения.</span><span class="sxs-lookup"><span data-stu-id="411c2-107">When set to individual recipient list, selected students in the class will receive a submission object when the assignment is published.</span></span>
+<span data-ttu-id="fadb7-106">Используется внутри свойства [назначение. ассигнто](educationassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="fadb7-106">Used inside the [assignment.assignTo](educationassignment.md) property.</span></span> <span data-ttu-id="fadb7-107">Если задан отдельный список получателей, выбранные студенты в классе получат объект отправки при публикации назначения.</span><span class="sxs-lookup"><span data-stu-id="fadb7-107">When set to individual recipient list, selected students in the class will receive a submission object when the assignment is published.</span></span>
 
-<span data-ttu-id="411c2-108">Этот ресурс является подклассом [едукатионассигнментреЦипиент](educationassignmentrecipient.md).</span><span class="sxs-lookup"><span data-stu-id="411c2-108">This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).</span></span>
+<span data-ttu-id="fadb7-108">Этот ресурс является подклассом [едукатионассигнментреЦипиент](educationassignmentrecipient.md).</span><span class="sxs-lookup"><span data-stu-id="fadb7-108">This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="411c2-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="411c2-109">Properties</span></span>
-| <span data-ttu-id="411c2-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="411c2-110">Property</span></span>     | <span data-ttu-id="411c2-111">Тип</span><span class="sxs-lookup"><span data-stu-id="411c2-111">Type</span></span>   |<span data-ttu-id="411c2-112">Описание</span><span class="sxs-lookup"><span data-stu-id="411c2-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="fadb7-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="fadb7-109">Properties</span></span>
+| <span data-ttu-id="fadb7-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="fadb7-110">Property</span></span>     | <span data-ttu-id="fadb7-111">Тип</span><span class="sxs-lookup"><span data-stu-id="fadb7-111">Type</span></span>   |<span data-ttu-id="fadb7-112">Описание</span><span class="sxs-lookup"><span data-stu-id="fadb7-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="411c2-113">recipients</span><span class="sxs-lookup"><span data-stu-id="411c2-113">recipients</span></span>|<span data-ttu-id="411c2-114">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="411c2-114">String collection</span></span>|<span data-ttu-id="411c2-115">Коллекция идентификаторов получателей.</span><span class="sxs-lookup"><span data-stu-id="411c2-115">A collection of ids of the recipients.</span></span>|
+|<span data-ttu-id="fadb7-113">recipients</span><span class="sxs-lookup"><span data-stu-id="fadb7-113">recipients</span></span>|<span data-ttu-id="fadb7-114">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="fadb7-114">String collection</span></span>|<span data-ttu-id="fadb7-115">Коллекция идентификаторов получателей.</span><span class="sxs-lookup"><span data-stu-id="fadb7-115">A collection of ids of the recipients.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="411c2-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="411c2-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fadb7-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="fadb7-116">JSON representation</span></span>
 
-<span data-ttu-id="411c2-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="411c2-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fadb7-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fadb7-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

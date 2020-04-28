@@ -13,25 +13,25 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42432777"
 ---
-# <a name="delete-a-driveitem"></a><span data-ttu-id="df718-103">Удаление ресурса DriveItem</span><span class="sxs-lookup"><span data-stu-id="df718-103">Delete a DriveItem</span></span>
+# <a name="delete-a-driveitem"></a><span data-ttu-id="38c99-103">Удаление ресурса DriveItem</span><span class="sxs-lookup"><span data-stu-id="38c99-103">Delete a DriveItem</span></span>
 
-<span data-ttu-id="df718-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="df718-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="38c99-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="38c99-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="df718-p101">Удаление ресурса [DriveItem](../resources/driveitem.md) по идентификатору или пути. Обратите внимание, что при удалении элементов с помощью этого метода элементы перемещаются в корзину, а не удаляются безвозвратно.</span><span class="sxs-lookup"><span data-stu-id="df718-p101">Delete a [DriveItem](../resources/driveitem.md) by using its ID or path. Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.</span></span>
+<span data-ttu-id="38c99-p101">Удаление ресурса [DriveItem](../resources/driveitem.md) по идентификатору или пути. Обратите внимание, что при удалении элементов с помощью этого метода элементы перемещаются в корзину, а не удаляются безвозвратно.</span><span class="sxs-lookup"><span data-stu-id="38c99-p101">Delete a [DriveItem](../resources/driveitem.md) by using its ID or path. Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="df718-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="df718-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="38c99-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="38c99-107">Permissions</span></span>
 
-<span data-ttu-id="df718-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="df718-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="38c99-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="38c99-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="df718-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="df718-110">Permission type</span></span>      | <span data-ttu-id="df718-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="df718-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="38c99-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="38c99-110">Permission type</span></span>      | <span data-ttu-id="38c99-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="38c99-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="df718-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="df718-112">Delegated (work or school account)</span></span> | <span data-ttu-id="df718-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="df718-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="df718-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="df718-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="df718-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="df718-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="df718-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="df718-116">Application</span></span> | <span data-ttu-id="df718-117">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="df718-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="38c99-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="38c99-112">Delegated (work or school account)</span></span> | <span data-ttu-id="38c99-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38c99-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="38c99-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="38c99-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38c99-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38c99-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="38c99-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="38c99-116">Application</span></span> | <span data-ttu-id="38c99-117">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38c99-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="df718-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="df718-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="38c99-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="38c99-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,41 +43,41 @@ DELETE /sites/{siteId}/drive/items/{itemId}
 DELETE /users/{userId}/drive/items/{itemId}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="df718-119">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="df718-119">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="38c99-119">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="38c99-119">Optional request headers</span></span>
 
-| <span data-ttu-id="df718-120">Имя</span><span class="sxs-lookup"><span data-stu-id="df718-120">Name</span></span>          | <span data-ttu-id="df718-121">Тип</span><span class="sxs-lookup"><span data-stu-id="df718-121">Type</span></span>   | <span data-ttu-id="df718-122">Описание</span><span class="sxs-lookup"><span data-stu-id="df718-122">Description</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="38c99-120">Имя</span><span class="sxs-lookup"><span data-stu-id="38c99-120">Name</span></span>          | <span data-ttu-id="38c99-121">Тип</span><span class="sxs-lookup"><span data-stu-id="38c99-121">Type</span></span>   | <span data-ttu-id="38c99-122">Описание</span><span class="sxs-lookup"><span data-stu-id="38c99-122">Description</span></span>                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="df718-123">if-match</span><span class="sxs-lookup"><span data-stu-id="df718-123">if-match</span></span>      | <span data-ttu-id="df718-124">String</span><span class="sxs-lookup"><span data-stu-id="df718-124">String</span></span> | <span data-ttu-id="df718-125">Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом элемента, то возвращается отклик `412 Precondition Failed`, а элемент не удаляется.</span><span class="sxs-lookup"><span data-stu-id="df718-125">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
+| <span data-ttu-id="38c99-123">if-match</span><span class="sxs-lookup"><span data-stu-id="38c99-123">if-match</span></span>      | <span data-ttu-id="38c99-124">String</span><span class="sxs-lookup"><span data-stu-id="38c99-124">String</span></span> | <span data-ttu-id="38c99-125">Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом элемента, то возвращается отклик `412 Precondition Failed`, а элемент не удаляется.</span><span class="sxs-lookup"><span data-stu-id="38c99-125">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="df718-126">Пример</span><span class="sxs-lookup"><span data-stu-id="df718-126">Example</span></span>
+## <a name="example"></a><span data-ttu-id="38c99-126">Пример</span><span class="sxs-lookup"><span data-stu-id="38c99-126">Example</span></span>
 
-<span data-ttu-id="df718-127">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="df718-127">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="38c99-127">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="38c99-127">Here is an example of how to call this API.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="df718-128">HTTP</span><span class="sxs-lookup"><span data-stu-id="df718-128">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="38c99-128">HTTP</span><span class="sxs-lookup"><span data-stu-id="38c99-128">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "delete-drive-item", "scopes": "files.readwrite" } -->
 
 ```http
 DELETE /me/drive/items/{item-id}
 ```
-# <a name="c"></a>[<span data-ttu-id="df718-129">C#</span><span class="sxs-lookup"><span data-stu-id="df718-129">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="38c99-129">C#</span><span class="sxs-lookup"><span data-stu-id="38c99-129">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-drive-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="df718-130">JavaScript</span><span class="sxs-lookup"><span data-stu-id="df718-130">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="38c99-130">JavaScript</span><span class="sxs-lookup"><span data-stu-id="38c99-130">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-drive-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="df718-131">Objective-C</span><span class="sxs-lookup"><span data-stu-id="df718-131">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="38c99-131">Objective-C</span><span class="sxs-lookup"><span data-stu-id="38c99-131">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-drive-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="df718-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="df718-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="38c99-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="38c99-132">Response</span></span>
 
-<span data-ttu-id="df718-133">При успешном выполнении этот запрос возвращает ответ `204 No Content`, указывающий, что ресурс был удален и что нет данных, которые необходимо возвратить.</span><span class="sxs-lookup"><span data-stu-id="df718-133">If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.</span></span>
+<span data-ttu-id="38c99-133">При успешном выполнении этот запрос возвращает ответ `204 No Content`, указывающий, что ресурс был удален и что нет данных, которые необходимо возвратить.</span><span class="sxs-lookup"><span data-stu-id="38c99-133">If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -85,9 +85,9 @@ DELETE /me/drive/items/{item-id}
 HTTP/1.1 204 No Content
 ```
 
-### <a name="error-responses"></a><span data-ttu-id="df718-134">Ответы с ошибками</span><span class="sxs-lookup"><span data-stu-id="df718-134">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="38c99-134">Ответы с ошибками</span><span class="sxs-lookup"><span data-stu-id="38c99-134">Error responses</span></span>
 
-<span data-ttu-id="df718-135">Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="df718-135">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="38c99-135">Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="38c99-135">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 

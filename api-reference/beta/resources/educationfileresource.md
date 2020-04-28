@@ -12,22 +12,22 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42502041"
 ---
-# <a name="educationfileresource-resource-type"></a><span data-ttu-id="0999e-105">Тип ресурса Едукатионфилересаурце</span><span class="sxs-lookup"><span data-stu-id="0999e-105">educationFileResource resource type</span></span>
+# <a name="educationfileresource-resource-type"></a><span data-ttu-id="06706-105">Тип ресурса Едукатионфилересаурце</span><span class="sxs-lookup"><span data-stu-id="06706-105">educationFileResource resource type</span></span>
 
-<span data-ttu-id="0999e-106">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0999e-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="06706-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="06706-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0999e-107">Подкласс [едукатионресаурце](educationresource.md) , представляющий объект File, связанный с назначением или отправкой.</span><span class="sxs-lookup"><span data-stu-id="0999e-107">A subclass of [educationResource](educationresource.md) that represents a file object that is associated with the assignment or submission.</span></span>  <span data-ttu-id="0999e-108">В этом случае файл не является одним из специальных файлов (Word, Excel и т. д.), но это файл, для которого не определена специальная обработка в системе.</span><span class="sxs-lookup"><span data-stu-id="0999e-108">In this case, the file is not one of the special files (Word, Excel, and so on) but is a file that does not have special handling within the system.</span></span> <span data-ttu-id="0999e-109">Файловый ресурс должен храниться в **ресаурцефолдер** , связанном с назначением или отправкой, к которому присоединен этот ресурс.</span><span class="sxs-lookup"><span data-stu-id="0999e-109">The file resource must be stored in the **resourceFolder** that is associated with the assignment or submission this resource is attached to.</span></span>
+<span data-ttu-id="06706-107">Подкласс [едукатионресаурце](educationresource.md) , представляющий объект File, связанный с назначением или отправкой.</span><span class="sxs-lookup"><span data-stu-id="06706-107">A subclass of [educationResource](educationresource.md) that represents a file object that is associated with the assignment or submission.</span></span>  <span data-ttu-id="06706-108">В этом случае файл не является одним из специальных файлов (Word, Excel и т. д.), но это файл, для которого не определена специальная обработка в системе.</span><span class="sxs-lookup"><span data-stu-id="06706-108">In this case, the file is not one of the special files (Word, Excel, and so on) but is a file that does not have special handling within the system.</span></span> <span data-ttu-id="06706-109">Файловый ресурс должен храниться в **ресаурцефолдер** , связанном с назначением или отправкой, к которому присоединен этот ресурс.</span><span class="sxs-lookup"><span data-stu-id="06706-109">The file resource must be stored in the **resourceFolder** that is associated with the assignment or submission this resource is attached to.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0999e-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="0999e-110">Properties</span></span>
-| <span data-ttu-id="0999e-111">Свойство</span><span class="sxs-lookup"><span data-stu-id="0999e-111">Property</span></span>     | <span data-ttu-id="0999e-112">Тип</span><span class="sxs-lookup"><span data-stu-id="0999e-112">Type</span></span>   |<span data-ttu-id="0999e-113">Описание</span><span class="sxs-lookup"><span data-stu-id="0999e-113">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="06706-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="06706-110">Properties</span></span>
+| <span data-ttu-id="06706-111">Свойство</span><span class="sxs-lookup"><span data-stu-id="06706-111">Property</span></span>     | <span data-ttu-id="06706-112">Тип</span><span class="sxs-lookup"><span data-stu-id="06706-112">Type</span></span>   |<span data-ttu-id="06706-113">Описание</span><span class="sxs-lookup"><span data-stu-id="06706-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0999e-114">fileUrl</span><span class="sxs-lookup"><span data-stu-id="0999e-114">fileUrl</span></span>|<span data-ttu-id="0999e-115">String</span><span class="sxs-lookup"><span data-stu-id="0999e-115">String</span></span>|<span data-ttu-id="0999e-116">Расположение на диске файлового ресурса.</span><span class="sxs-lookup"><span data-stu-id="0999e-116">Location on disk of the file resource.</span></span>|
+|<span data-ttu-id="06706-114">fileUrl</span><span class="sxs-lookup"><span data-stu-id="06706-114">fileUrl</span></span>|<span data-ttu-id="06706-115">String</span><span class="sxs-lookup"><span data-stu-id="06706-115">String</span></span>|<span data-ttu-id="06706-116">Расположение на диске файлового ресурса.</span><span class="sxs-lookup"><span data-stu-id="06706-116">Location on disk of the file resource.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="0999e-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0999e-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="06706-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="06706-117">JSON representation</span></span>
 
-<span data-ttu-id="0999e-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0999e-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="06706-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="06706-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

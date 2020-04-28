@@ -12,17 +12,17 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42500718"
 ---
-# <a name="educationsubmissionrecipient-resource-type"></a><span data-ttu-id="d3b21-105">Тип ресурса ЕдукатионсубмиссионреЦипиент</span><span class="sxs-lookup"><span data-stu-id="d3b21-105">educationSubmissionRecipient resource type</span></span>
+# <a name="educationsubmissionrecipient-resource-type"></a><span data-ttu-id="0903b-105">Тип ресурса ЕдукатионсубмиссионреЦипиент</span><span class="sxs-lookup"><span data-stu-id="0903b-105">educationSubmissionRecipient resource type</span></span>
 
-<span data-ttu-id="d3b21-106">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="d3b21-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0903b-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0903b-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d3b21-107">Абстрактный класс, представляющий различные наборы пользователей, которым можно назначить отправку.</span><span class="sxs-lookup"><span data-stu-id="d3b21-107">Abstract class that represents the different sets of users to whom a submission can be assigned.</span></span> <span data-ttu-id="d3b21-108">Возможные значения: "люди" или "группы".</span><span class="sxs-lookup"><span data-stu-id="d3b21-108">Possible values include individuals or groups.</span></span> <span data-ttu-id="d3b21-109">Используется в свойстве **отправителя. Recipient** .</span><span class="sxs-lookup"><span data-stu-id="d3b21-109">This is used within the **submission.recipient** property.</span></span>
+<span data-ttu-id="0903b-107">Абстрактный класс, представляющий различные наборы пользователей, которым можно назначить отправку.</span><span class="sxs-lookup"><span data-stu-id="0903b-107">Abstract class that represents the different sets of users to whom a submission can be assigned.</span></span> <span data-ttu-id="0903b-108">Возможные значения: "люди" или "группы".</span><span class="sxs-lookup"><span data-stu-id="0903b-108">Possible values include individuals or groups.</span></span> <span data-ttu-id="0903b-109">Используется в свойстве **отправителя. Recipient** .</span><span class="sxs-lookup"><span data-stu-id="0903b-109">This is used within the **submission.recipient** property.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="d3b21-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="d3b21-110">Properties</span></span>
-<span data-ttu-id="d3b21-111">Нет.</span><span class="sxs-lookup"><span data-stu-id="d3b21-111">None.</span></span>
+## <a name="properties"></a><span data-ttu-id="0903b-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="0903b-110">Properties</span></span>
+<span data-ttu-id="0903b-111">Нет.</span><span class="sxs-lookup"><span data-stu-id="0903b-111">None.</span></span>
 
 <!-- {
   "blockType": "resource",

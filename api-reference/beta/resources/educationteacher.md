@@ -12,24 +12,24 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42500018"
 ---
-# <a name="educationteacher-resource-type"></a><span data-ttu-id="3dc62-103">Тип ресурса educationTeacher</span><span class="sxs-lookup"><span data-stu-id="3dc62-103">educationTeacher resource type</span></span>
+# <a name="educationteacher-resource-type"></a><span data-ttu-id="456c0-103">Тип ресурса educationTeacher</span><span class="sxs-lookup"><span data-stu-id="456c0-103">educationTeacher resource type</span></span>
 
-<span data-ttu-id="3dc62-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="3dc62-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="456c0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="456c0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3dc62-105">Дополнительные сведения, добавляемые в объект [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `teacher`.</span><span class="sxs-lookup"><span data-stu-id="3dc62-105">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
+<span data-ttu-id="456c0-105">Дополнительные сведения, добавляемые в объект [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `teacher`.</span><span class="sxs-lookup"><span data-stu-id="456c0-105">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="3dc62-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="3dc62-106">Properties</span></span>
-| <span data-ttu-id="3dc62-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="3dc62-107">Property</span></span>     | <span data-ttu-id="3dc62-108">Тип</span><span class="sxs-lookup"><span data-stu-id="3dc62-108">Type</span></span>   |<span data-ttu-id="3dc62-109">Описание</span><span class="sxs-lookup"><span data-stu-id="3dc62-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="456c0-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="456c0-106">Properties</span></span>
+| <span data-ttu-id="456c0-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="456c0-107">Property</span></span>     | <span data-ttu-id="456c0-108">Тип</span><span class="sxs-lookup"><span data-stu-id="456c0-108">Type</span></span>   |<span data-ttu-id="456c0-109">Описание</span><span class="sxs-lookup"><span data-stu-id="456c0-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3dc62-110">externalId</span><span class="sxs-lookup"><span data-stu-id="3dc62-110">externalId</span></span>|<span data-ttu-id="3dc62-111">String</span><span class="sxs-lookup"><span data-stu-id="3dc62-111">String</span></span>| <span data-ttu-id="3dc62-112">Идентификатор преподавателя в исходной системе.</span><span class="sxs-lookup"><span data-stu-id="3dc62-112">ID of the teacher in the source system.</span></span>|
-|<span data-ttu-id="3dc62-113">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="3dc62-113">teacherNumber</span></span>|<span data-ttu-id="3dc62-114">String</span><span class="sxs-lookup"><span data-stu-id="3dc62-114">String</span></span>|<span data-ttu-id="3dc62-115">Номер преподавателя.</span><span class="sxs-lookup"><span data-stu-id="3dc62-115">Teacher number.</span></span>|
+|<span data-ttu-id="456c0-110">externalId</span><span class="sxs-lookup"><span data-stu-id="456c0-110">externalId</span></span>|<span data-ttu-id="456c0-111">String</span><span class="sxs-lookup"><span data-stu-id="456c0-111">String</span></span>| <span data-ttu-id="456c0-112">Идентификатор преподавателя в исходной системе.</span><span class="sxs-lookup"><span data-stu-id="456c0-112">ID of the teacher in the source system.</span></span>|
+|<span data-ttu-id="456c0-113">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="456c0-113">teacherNumber</span></span>|<span data-ttu-id="456c0-114">String</span><span class="sxs-lookup"><span data-stu-id="456c0-114">String</span></span>|<span data-ttu-id="456c0-115">Номер преподавателя.</span><span class="sxs-lookup"><span data-stu-id="456c0-115">Teacher number.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="3dc62-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3dc62-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="456c0-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="456c0-116">JSON representation</span></span>
 
-<span data-ttu-id="3dc62-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3dc62-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="456c0-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="456c0-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -12,25 +12,25 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42502167"
 ---
-# <a name="educationexcelresource-resource-type"></a><span data-ttu-id="b931d-104">Тип ресурса Едукатионексцелресаурце</span><span class="sxs-lookup"><span data-stu-id="b931d-104">educationExcelResource resource type</span></span>
+# <a name="educationexcelresource-resource-type"></a><span data-ttu-id="1d77f-104">Тип ресурса Едукатионексцелресаурце</span><span class="sxs-lookup"><span data-stu-id="1d77f-104">educationExcelResource resource type</span></span>
 
-<span data-ttu-id="b931d-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="b931d-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1d77f-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1d77f-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b931d-106">Подкласс объекта [едукатионресаурце](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="b931d-106">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="b931d-107">Этот тип ресурса представляет документ Excel.</span><span class="sxs-lookup"><span data-stu-id="b931d-107">This resource type represents an Excel document.</span></span>  
+<span data-ttu-id="1d77f-106">Подкласс объекта [едукатионресаурце](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="1d77f-106">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="1d77f-107">Этот тип ресурса представляет документ Excel.</span><span class="sxs-lookup"><span data-stu-id="1d77f-107">This resource type represents an Excel document.</span></span>  
  
-><span data-ttu-id="b931d-108">**Примечание:** Файл Excel должен находиться в папке ресурсов, связанной с назначением или объектом отправки, к которому принадлежит ресурс.</span><span class="sxs-lookup"><span data-stu-id="b931d-108">**Note:** The Excel file must be in the resource folder associated with the assignment or submission object to which this resource belongs.</span></span>
+><span data-ttu-id="1d77f-108">**Примечание:** Файл Excel должен находиться в папке ресурсов, связанной с назначением или объектом отправки, к которому принадлежит ресурс.</span><span class="sxs-lookup"><span data-stu-id="1d77f-108">**Note:** The Excel file must be in the resource folder associated with the assignment or submission object to which this resource belongs.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="b931d-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="b931d-109">Properties</span></span>
-| <span data-ttu-id="b931d-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="b931d-110">Property</span></span>     | <span data-ttu-id="b931d-111">Тип</span><span class="sxs-lookup"><span data-stu-id="b931d-111">Type</span></span>   |<span data-ttu-id="b931d-112">Описание</span><span class="sxs-lookup"><span data-stu-id="b931d-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="1d77f-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="1d77f-109">Properties</span></span>
+| <span data-ttu-id="1d77f-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="1d77f-110">Property</span></span>     | <span data-ttu-id="1d77f-111">Тип</span><span class="sxs-lookup"><span data-stu-id="1d77f-111">Type</span></span>   |<span data-ttu-id="1d77f-112">Описание</span><span class="sxs-lookup"><span data-stu-id="1d77f-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b931d-113">fileUrl</span><span class="sxs-lookup"><span data-stu-id="b931d-113">fileUrl</span></span>|<span data-ttu-id="b931d-114">String</span><span class="sxs-lookup"><span data-stu-id="b931d-114">String</span></span>|<span data-ttu-id="b931d-115">Указатель на объект файла Excel.</span><span class="sxs-lookup"><span data-stu-id="b931d-115">Pointer to the Excel file object.</span></span>|
+|<span data-ttu-id="1d77f-113">fileUrl</span><span class="sxs-lookup"><span data-stu-id="1d77f-113">fileUrl</span></span>|<span data-ttu-id="1d77f-114">String</span><span class="sxs-lookup"><span data-stu-id="1d77f-114">String</span></span>|<span data-ttu-id="1d77f-115">Указатель на объект файла Excel.</span><span class="sxs-lookup"><span data-stu-id="1d77f-115">Pointer to the Excel file object.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="b931d-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b931d-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1d77f-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1d77f-116">JSON representation</span></span>
 
-<span data-ttu-id="b931d-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b931d-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1d77f-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1d77f-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

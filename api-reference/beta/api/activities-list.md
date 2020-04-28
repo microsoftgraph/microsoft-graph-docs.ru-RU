@@ -14,29 +14,29 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42441827"
 ---
-# <a name="enumerate-activities-preview"></a><span data-ttu-id="e5102-103">Перечисление действий (ознакомительная версия)</span><span class="sxs-lookup"><span data-stu-id="e5102-103">Enumerate activities (preview)</span></span>
+# <a name="enumerate-activities-preview"></a><span data-ttu-id="7d78c-103">Перечисление действий (ознакомительная версия)</span><span class="sxs-lookup"><span data-stu-id="7d78c-103">Enumerate activities (preview)</span></span>
 
-<span data-ttu-id="e5102-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="e5102-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7d78c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7d78c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e5102-105">В этой статье рассказывается, как создать список последних [действий](../resources/itemactivity.md), выполненных над элементом или в иерархии.</span><span class="sxs-lookup"><span data-stu-id="e5102-105">List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.</span></span>
+<span data-ttu-id="7d78c-105">В этой статье рассказывается, как создать список последних [действий](../resources/itemactivity.md), выполненных над элементом или в иерархии.</span><span class="sxs-lookup"><span data-stu-id="7d78c-105">List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.</span></span>
 
-<span data-ttu-id="e5102-106">**Примечание.** Ресурс activities представлен в предварительной версии и пока не доступен всем клиентам.</span><span class="sxs-lookup"><span data-stu-id="e5102-106">**Note:** Activities is in a limited Preview and not yet available to all tenants.</span></span>
+<span data-ttu-id="7d78c-106">**Примечание.** Ресурс activities представлен в предварительной версии и пока не доступен всем клиентам.</span><span class="sxs-lookup"><span data-stu-id="7d78c-106">**Note:** Activities is in a limited Preview and not yet available to all tenants.</span></span>
 
 [activities]: ../resources/itemactivity.md
 
-## <a name="permissions"></a><span data-ttu-id="e5102-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e5102-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7d78c-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7d78c-107">Permissions</span></span>
 
-<span data-ttu-id="e5102-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e5102-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7d78c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7d78c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e5102-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e5102-110">Permission type</span></span>                        | <span data-ttu-id="e5102-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e5102-111">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="7d78c-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7d78c-110">Permission type</span></span>                        | <span data-ttu-id="7d78c-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7d78c-111">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="e5102-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e5102-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="e5102-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5102-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="e5102-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e5102-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e5102-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e5102-115">Not supported.</span></span>
-|<span data-ttu-id="e5102-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e5102-116">Application</span></span>                            | <span data-ttu-id="e5102-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5102-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="7d78c-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7d78c-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="7d78c-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d78c-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="7d78c-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7d78c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7d78c-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7d78c-115">Not supported.</span></span>
+|<span data-ttu-id="7d78c-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7d78c-116">Application</span></span>                            | <span data-ttu-id="7d78c-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7d78c-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e5102-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e5102-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7d78c-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7d78c-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -47,33 +47,33 @@ GET /sites/{site-id}/lists/{list-id}/activities
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 ```
 
-## <a name="example"></a><span data-ttu-id="e5102-119">Пример</span><span class="sxs-lookup"><span data-stu-id="e5102-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7d78c-119">Пример</span><span class="sxs-lookup"><span data-stu-id="7d78c-119">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e5102-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="e5102-120">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7d78c-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="7d78c-120">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="e5102-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5102-121">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7d78c-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="7d78c-121">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "list-activities" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/activities
 ```
-# <a name="c"></a>[<span data-ttu-id="e5102-122">C#</span><span class="sxs-lookup"><span data-stu-id="e5102-122">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7d78c-122">C#</span><span class="sxs-lookup"><span data-stu-id="7d78c-122">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-activities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e5102-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5102-123">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7d78c-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7d78c-123">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-activities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e5102-124">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5102-124">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7d78c-124">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7d78c-124">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-activities-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="e5102-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5102-125">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7d78c-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="7d78c-125">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivity)", "truncated": true } -->
 

@@ -12,27 +12,27 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42440768"
 ---
-# <a name="call-redirect"></a><span data-ttu-id="bc024-103">вызов: redirect</span><span class="sxs-lookup"><span data-stu-id="bc024-103">call: redirect</span></span>
+# <a name="call-redirect"></a><span data-ttu-id="f0cf4-103">вызов: redirect</span><span class="sxs-lookup"><span data-stu-id="f0cf4-103">call: redirect</span></span>
 
-<span data-ttu-id="bc024-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="bc024-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f0cf4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f0cf4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bc024-105">Перенаправление входящего звонка, который еще не [отвечал](./call-answer.md) или не был [отклонен](./call-reject.md) .</span><span class="sxs-lookup"><span data-stu-id="bc024-105">Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet.</span></span> <span data-ttu-id="bc024-106">Термины "перенаправление" и "переадресация" используются взаимозаменяемыми.</span><span class="sxs-lookup"><span data-stu-id="bc024-106">The terms "redirecting" and "forwarding" a call are used interchangeably.</span></span>
+<span data-ttu-id="f0cf4-105">Перенаправление входящего звонка, который еще не [отвечал](./call-answer.md) или не был [отклонен](./call-reject.md) .</span><span class="sxs-lookup"><span data-stu-id="f0cf4-105">Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet.</span></span> <span data-ttu-id="f0cf4-106">Термины "перенаправление" и "переадресация" используются взаимозаменяемыми.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-106">The terms "redirecting" and "forwarding" a call are used interchangeably.</span></span>
 
-<span data-ttu-id="bc024-107">Ожидается, что Bot перенаправляет вызов до истечения времени ожидания вызова. Текущее значение времени ожидания — 15 секунд.</span><span class="sxs-lookup"><span data-stu-id="bc024-107">The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.</span></span>
+<span data-ttu-id="f0cf4-107">Ожидается, что Bot перенаправляет вызов до истечения времени ожидания вызова. Текущее значение времени ожидания — 15 секунд.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-107">The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bc024-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bc024-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f0cf4-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f0cf4-108">Permissions</span></span>
 
-<span data-ttu-id="bc024-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bc024-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f0cf4-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f0cf4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="bc024-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bc024-111">Permission type</span></span> | <span data-ttu-id="bc024-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bc024-112">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="f0cf4-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f0cf4-111">Permission type</span></span> | <span data-ttu-id="f0cf4-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f0cf4-112">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="bc024-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bc024-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="bc024-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="bc024-114">Not Supported</span></span>                |
-| <span data-ttu-id="bc024-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bc024-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bc024-116">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="bc024-116">Not Supported</span></span>                |
-| <span data-ttu-id="bc024-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bc024-117">Application</span></span>     | <span data-ttu-id="bc024-118">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="bc024-118">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="f0cf4-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f0cf4-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="f0cf4-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="f0cf4-114">Not Supported</span></span>                |
+| <span data-ttu-id="f0cf4-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f0cf4-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f0cf4-116">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="f0cf4-116">Not Supported</span></span>                |
+| <span data-ttu-id="f0cf4-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f0cf4-117">Application</span></span>     | <span data-ttu-id="f0cf4-118">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="f0cf4-118">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="bc024-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bc024-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f0cf4-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f0cf4-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,38 +40,38 @@ ms.locfileid: "42440768"
 POST /app/calls/{id}/redirect
 POST /communications/calls/{id}/redirect
 ```
-> <span data-ttu-id="bc024-120">**Примечание.** Путь `/app` является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="bc024-120">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="bc024-121">В дальнейшем используйте путь `/communications`.</span><span class="sxs-lookup"><span data-stu-id="bc024-121">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="f0cf4-120">**Примечание.** Путь `/app` является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-120">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="f0cf4-121">В дальнейшем используйте путь `/communications`.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-121">Going forward, use the `/communications` path.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="bc024-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bc024-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f0cf4-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f0cf4-122">Request headers</span></span>
 
-| <span data-ttu-id="bc024-123">Имя</span><span class="sxs-lookup"><span data-stu-id="bc024-123">Name</span></span>          | <span data-ttu-id="bc024-124">Описание</span><span class="sxs-lookup"><span data-stu-id="bc024-124">Description</span></span>               |
+| <span data-ttu-id="f0cf4-123">Имя</span><span class="sxs-lookup"><span data-stu-id="f0cf4-123">Name</span></span>          | <span data-ttu-id="f0cf4-124">Описание</span><span class="sxs-lookup"><span data-stu-id="f0cf4-124">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="bc024-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bc024-125">Authorization</span></span> | <span data-ttu-id="bc024-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bc024-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f0cf4-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f0cf4-125">Authorization</span></span> | <span data-ttu-id="f0cf4-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="bc024-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="bc024-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f0cf4-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f0cf4-128">Request body</span></span>
 
-<span data-ttu-id="bc024-129">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="bc024-129">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="f0cf4-129">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="bc024-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="bc024-130">Parameter</span></span>      | <span data-ttu-id="bc024-131">Тип</span><span class="sxs-lookup"><span data-stu-id="bc024-131">Type</span></span>    |<span data-ttu-id="bc024-132">Описание</span><span class="sxs-lookup"><span data-stu-id="bc024-132">Description</span></span>|
+| <span data-ttu-id="f0cf4-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="f0cf4-130">Parameter</span></span>      | <span data-ttu-id="f0cf4-131">Тип</span><span class="sxs-lookup"><span data-stu-id="f0cf4-131">Type</span></span>    |<span data-ttu-id="f0cf4-132">Описание</span><span class="sxs-lookup"><span data-stu-id="f0cf4-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="bc024-133">targets</span><span class="sxs-lookup"><span data-stu-id="bc024-133">targets</span></span>|<span data-ttu-id="bc024-134">Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="bc024-134">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="bc024-135">Целевые участники операции перенаправления.</span><span class="sxs-lookup"><span data-stu-id="bc024-135">The target participants of the redirect operation.</span></span> <span data-ttu-id="bc024-136">Если указано несколько целевых объектов, вызывается выполнение.</span><span class="sxs-lookup"><span data-stu-id="bc024-136">If more than one target is specified, it's a simulring call.</span></span> <span data-ttu-id="bc024-137">Это означает, что все целевые объекты будут находиться в одном и том же периоде, и будет подключен только первый целевой объект.</span><span class="sxs-lookup"><span data-stu-id="bc024-137">This means that all of the targets will be rang at the same time and only the first target that picks up will be connected.</span></span> <span data-ttu-id="bc024-138">Поддерживается до 25 целевых объектов для выполнение.</span><span class="sxs-lookup"><span data-stu-id="bc024-138">We support up to 25 targets for simulring.</span></span>
-|<span data-ttu-id="bc024-139">таржетдиспоситион</span><span class="sxs-lookup"><span data-stu-id="bc024-139">targetDisposition</span></span>|<span data-ttu-id="bc024-140">String</span><span class="sxs-lookup"><span data-stu-id="bc024-140">String</span></span>|<span data-ttu-id="bc024-141">Устаревшие Возможные значения: `default` , `simultaneousRing` ,. `forward`</span><span class="sxs-lookup"><span data-stu-id="bc024-141">(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`.</span></span> <span data-ttu-id="bc024-142">Этот параметр является нерекомендуемым, мы автоматически вычислим, является ли это вызов переадресацией или вызовом выполнение из указанного количества целевых объектов.</span><span class="sxs-lookup"><span data-stu-id="bc024-142">This parameter is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.</span></span>|
-|<span data-ttu-id="bc024-143">timeout</span><span class="sxs-lookup"><span data-stu-id="bc024-143">timeout</span></span>|<span data-ttu-id="bc024-144">Int32</span><span class="sxs-lookup"><span data-stu-id="bc024-144">Int32</span></span>|<span data-ttu-id="bc024-145">Время ожидания (в секундах) для операции перенаправления.</span><span class="sxs-lookup"><span data-stu-id="bc024-145">The timeout (in seconds) for the redirect operation.</span></span> <span data-ttu-id="bc024-146">Диапазон значений времени ожидания составляет от 15 до 90 секунд включительно.</span><span class="sxs-lookup"><span data-stu-id="bc024-146">The range of the timeout value is between 15 and 90 seconds inclusive.</span></span> <span data-ttu-id="bc024-147">Значение времени ожидания по умолчанию составляет 55 секунд для одной цели и 60 секунд для нескольких целевых объектов (подлежит изменению).</span><span class="sxs-lookup"><span data-stu-id="bc024-147">The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change).</span></span> |
-|<span data-ttu-id="bc024-148">масккалли</span><span class="sxs-lookup"><span data-stu-id="bc024-148">maskCallee</span></span>|<span data-ttu-id="bc024-149">Логический</span><span class="sxs-lookup"><span data-stu-id="bc024-149">Boolean</span></span>|<span data-ttu-id="bc024-150">Указывает, следует ли скрыть вызываемого абонента от вызывающего абонента.</span><span class="sxs-lookup"><span data-stu-id="bc024-150">Indicates whether the callee is to be hidden from the caller.</span></span> <span data-ttu-id="bc024-151">Если этот параметр имеет значение true, идентификатором вызываемого абонента является "bot".</span><span class="sxs-lookup"><span data-stu-id="bc024-151">If true, then the callee identity is the bot identity.</span></span> <span data-ttu-id="bc024-152">Значение по умолчанию: false.</span><span class="sxs-lookup"><span data-stu-id="bc024-152">Default: false.</span></span>|
-|<span data-ttu-id="bc024-153">масккаллер</span><span class="sxs-lookup"><span data-stu-id="bc024-153">maskCaller</span></span>|<span data-ttu-id="bc024-154">Логический</span><span class="sxs-lookup"><span data-stu-id="bc024-154">Boolean</span></span>|<span data-ttu-id="bc024-155">Указывает, следует ли скрыть абонента от вызываемого абонента.</span><span class="sxs-lookup"><span data-stu-id="bc024-155">Indicates whether the caller is to be hidden from the callee.</span></span> <span data-ttu-id="bc024-156">Если задано значение true, идентификатором звонящего является идентификатор Bot.</span><span class="sxs-lookup"><span data-stu-id="bc024-156">If true, then the caller identity is the bot identity.</span></span> <span data-ttu-id="bc024-157">Значение по умолчанию: false.</span><span class="sxs-lookup"><span data-stu-id="bc024-157">Default: false.</span></span>|
-|<span data-ttu-id="bc024-158">callbackUri</span><span class="sxs-lookup"><span data-stu-id="bc024-158">callbackUri</span></span>|<span data-ttu-id="bc024-159">String</span><span class="sxs-lookup"><span data-stu-id="bc024-159">String</span></span>|<span data-ttu-id="bc024-160">Это позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления позже.</span><span class="sxs-lookup"><span data-stu-id="bc024-160">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="bc024-161">Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot.</span><span class="sxs-lookup"><span data-stu-id="bc024-161">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="bc024-162">Это должно быть `https`.</span><span class="sxs-lookup"><span data-stu-id="bc024-162">This must be `https`.</span></span>|
+|<span data-ttu-id="f0cf4-133">targets</span><span class="sxs-lookup"><span data-stu-id="f0cf4-133">targets</span></span>|<span data-ttu-id="f0cf4-134">Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="f0cf4-134">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="f0cf4-135">Целевые участники операции перенаправления.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-135">The target participants of the redirect operation.</span></span> <span data-ttu-id="f0cf4-136">Если указано несколько целевых объектов, вызывается выполнение.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-136">If more than one target is specified, it's a simulring call.</span></span> <span data-ttu-id="f0cf4-137">Это означает, что все целевые объекты будут находиться в одном и том же периоде, и будет подключен только первый целевой объект.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-137">This means that all of the targets will be rang at the same time and only the first target that picks up will be connected.</span></span> <span data-ttu-id="f0cf4-138">Поддерживается до 25 целевых объектов для выполнение.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-138">We support up to 25 targets for simulring.</span></span>
+|<span data-ttu-id="f0cf4-139">таржетдиспоситион</span><span class="sxs-lookup"><span data-stu-id="f0cf4-139">targetDisposition</span></span>|<span data-ttu-id="f0cf4-140">String</span><span class="sxs-lookup"><span data-stu-id="f0cf4-140">String</span></span>|<span data-ttu-id="f0cf4-141">Устаревшие Возможные значения: `default` , `simultaneousRing` ,. `forward`</span><span class="sxs-lookup"><span data-stu-id="f0cf4-141">(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`.</span></span> <span data-ttu-id="f0cf4-142">Этот параметр является нерекомендуемым, мы автоматически вычислим, является ли это вызов переадресацией или вызовом выполнение из указанного количества целевых объектов.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-142">This parameter is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.</span></span>|
+|<span data-ttu-id="f0cf4-143">timeout</span><span class="sxs-lookup"><span data-stu-id="f0cf4-143">timeout</span></span>|<span data-ttu-id="f0cf4-144">Int32</span><span class="sxs-lookup"><span data-stu-id="f0cf4-144">Int32</span></span>|<span data-ttu-id="f0cf4-145">Время ожидания (в секундах) для операции перенаправления.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-145">The timeout (in seconds) for the redirect operation.</span></span> <span data-ttu-id="f0cf4-146">Диапазон значений времени ожидания составляет от 15 до 90 секунд включительно.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-146">The range of the timeout value is between 15 and 90 seconds inclusive.</span></span> <span data-ttu-id="f0cf4-147">Значение времени ожидания по умолчанию составляет 55 секунд для одной цели и 60 секунд для нескольких целевых объектов (подлежит изменению).</span><span class="sxs-lookup"><span data-stu-id="f0cf4-147">The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change).</span></span> |
+|<span data-ttu-id="f0cf4-148">масккалли</span><span class="sxs-lookup"><span data-stu-id="f0cf4-148">maskCallee</span></span>|<span data-ttu-id="f0cf4-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="f0cf4-149">Boolean</span></span>|<span data-ttu-id="f0cf4-150">Указывает, следует ли скрыть вызываемого абонента от вызывающего абонента.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-150">Indicates whether the callee is to be hidden from the caller.</span></span> <span data-ttu-id="f0cf4-151">Если этот параметр имеет значение true, идентификатором вызываемого абонента является "bot".</span><span class="sxs-lookup"><span data-stu-id="f0cf4-151">If true, then the callee identity is the bot identity.</span></span> <span data-ttu-id="f0cf4-152">Значение по умолчанию: false.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-152">Default: false.</span></span>|
+|<span data-ttu-id="f0cf4-153">масккаллер</span><span class="sxs-lookup"><span data-stu-id="f0cf4-153">maskCaller</span></span>|<span data-ttu-id="f0cf4-154">Boolean</span><span class="sxs-lookup"><span data-stu-id="f0cf4-154">Boolean</span></span>|<span data-ttu-id="f0cf4-155">Указывает, следует ли скрыть абонента от вызываемого абонента.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-155">Indicates whether the caller is to be hidden from the callee.</span></span> <span data-ttu-id="f0cf4-156">Если задано значение true, идентификатором звонящего является идентификатор Bot.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-156">If true, then the caller identity is the bot identity.</span></span> <span data-ttu-id="f0cf4-157">Значение по умолчанию: false.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-157">Default: false.</span></span>|
+|<span data-ttu-id="f0cf4-158">callbackUri</span><span class="sxs-lookup"><span data-stu-id="f0cf4-158">callbackUri</span></span>|<span data-ttu-id="f0cf4-159">String</span><span class="sxs-lookup"><span data-stu-id="f0cf4-159">String</span></span>|<span data-ttu-id="f0cf4-160">Это позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления позже.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-160">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="f0cf4-161">Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-161">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="f0cf4-162">Это должно быть `https`.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-162">This must be `https`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="bc024-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="bc024-163">Response</span></span>
-<span data-ttu-id="bc024-164">В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="bc024-164">If successful, this method returns a `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="f0cf4-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="f0cf4-163">Response</span></span>
+<span data-ttu-id="f0cf4-164">В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-164">If successful, this method returns a `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="bc024-165">Примеры</span><span class="sxs-lookup"><span data-stu-id="bc024-165">Examples</span></span>
-<span data-ttu-id="bc024-166">В этих примерах рассматривается рабочий процесс уведомления о входящем вызове и способ перенаправления этого вызова.</span><span class="sxs-lookup"><span data-stu-id="bc024-166">These examples will cover a workflow of an incoming call notification and how that call will be redirected.</span></span>
+## <a name="examples"></a><span data-ttu-id="f0cf4-165">Примеры</span><span class="sxs-lookup"><span data-stu-id="f0cf4-165">Examples</span></span>
+<span data-ttu-id="f0cf4-166">В этих примерах рассматривается рабочий процесс уведомления о входящем вызове и способ перенаправления этого вызова.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-166">These examples will cover a workflow of an incoming call notification and how that call will be redirected.</span></span>
 
-> <span data-ttu-id="bc024-167">**Примечание:** Показанные здесь объекты отклика могут быть сокращены для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="bc024-167">**Note:** The response objects shown here might be shortened for readability.</span></span> <span data-ttu-id="bc024-168">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="bc024-168">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="f0cf4-167">**Примечание:** Показанные здесь объекты отклика могут быть сокращены для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-167">**Note:** The response objects shown here might be shortened for readability.</span></span> <span data-ttu-id="f0cf4-168">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f0cf4-168">All the properties will be returned from an actual call.</span></span>
 
-### <a name="example-1-forward-a-call-to-a-target"></a><span data-ttu-id="bc024-169">Пример 1: Переадресация вызова на целевой объект</span><span class="sxs-lookup"><span data-stu-id="bc024-169">Example 1: Forward a Call to a Target</span></span>
+### <a name="example-1-forward-a-call-to-a-target"></a><span data-ttu-id="f0cf4-169">Пример 1: Переадресация вызова на целевой объект</span><span class="sxs-lookup"><span data-stu-id="f0cf4-169">Example 1: Forward a Call to a Target</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="bc024-170">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="bc024-170">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="f0cf4-170">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="f0cf4-170">Notification - incoming</span></span>
 <!-- {
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
@@ -123,9 +123,9 @@ POST /communications/calls/{id}/redirect
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="bc024-171">Запрос</span><span class="sxs-lookup"><span data-stu-id="bc024-171">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="f0cf4-171">Запрос</span><span class="sxs-lookup"><span data-stu-id="f0cf4-171">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bc024-172">HTTP</span><span class="sxs-lookup"><span data-stu-id="bc024-172">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f0cf4-172">HTTP</span><span class="sxs-lookup"><span data-stu-id="f0cf4-172">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request", 
   "name": "call-redirect"
@@ -151,21 +151,21 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bc024-173">C#</span><span class="sxs-lookup"><span data-stu-id="bc024-173">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f0cf4-173">C#</span><span class="sxs-lookup"><span data-stu-id="f0cf4-173">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bc024-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bc024-174">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f0cf4-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f0cf4-174">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bc024-175">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bc024-175">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f0cf4-175">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f0cf4-175">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="bc024-176">Отклик</span><span class="sxs-lookup"><span data-stu-id="bc024-176">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f0cf4-176">Отклик</span><span class="sxs-lookup"><span data-stu-id="f0cf4-176">Response</span></span>
 
 <!-- {
   "blockType": "response", 
@@ -174,7 +174,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### <a name="notification---terminated"></a><span data-ttu-id="bc024-177">Уведомление — прервано</span><span class="sxs-lookup"><span data-stu-id="bc024-177">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="f0cf4-177">Уведомление — прервано</span><span class="sxs-lookup"><span data-stu-id="f0cf4-177">Notification - terminated</span></span>
 
 <!-- {
   "blockType": "example", 
@@ -236,9 +236,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a><span data-ttu-id="bc024-178">Пример 2: Переадресация вызова на несколько целевых объектов с одновременным кольцом</span><span class="sxs-lookup"><span data-stu-id="bc024-178">Example 2: Forward a call to multiple targets with simultaneous ring</span></span>
+### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a><span data-ttu-id="f0cf4-178">Пример 2: Переадресация вызова на несколько целевых объектов с одновременным кольцом</span><span class="sxs-lookup"><span data-stu-id="f0cf4-178">Example 2: Forward a call to multiple targets with simultaneous ring</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="bc024-179">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="bc024-179">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="f0cf4-179">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="f0cf4-179">Notification - incoming</span></span>
 
 <!-- {
   "blockType": "example", 
@@ -300,7 +300,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="bc024-180">Запросить</span><span class="sxs-lookup"><span data-stu-id="bc024-180">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="f0cf4-180">Запросить</span><span class="sxs-lookup"><span data-stu-id="f0cf4-180">Request</span></span>
 
 <!-- {
   "blockType": "ignored", 
@@ -343,7 +343,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="bc024-181">Ответ</span><span class="sxs-lookup"><span data-stu-id="bc024-181">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f0cf4-181">Ответ</span><span class="sxs-lookup"><span data-stu-id="f0cf4-181">Response</span></span>
 
 <!-- {
   "blockType": "response", 
@@ -354,7 +354,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="bc024-182">Уведомление — прервано</span><span class="sxs-lookup"><span data-stu-id="bc024-182">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="f0cf4-182">Уведомление — прервано</span><span class="sxs-lookup"><span data-stu-id="f0cf4-182">Notification - terminated</span></span>
 
 <!-- {
   "blockType": "example", 

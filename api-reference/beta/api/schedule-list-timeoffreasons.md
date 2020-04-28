@@ -12,28 +12,28 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42453837"
 ---
-# <a name="list-timeoffreasons"></a><span data-ttu-id="c6bc8-103">Список Тимеоффреасонс</span><span class="sxs-lookup"><span data-stu-id="c6bc8-103">List timeOffReasons</span></span>
+# <a name="list-timeoffreasons"></a><span data-ttu-id="44ac0-103">Список Тимеоффреасонс</span><span class="sxs-lookup"><span data-stu-id="44ac0-103">List timeOffReasons</span></span>
 
-<span data-ttu-id="c6bc8-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="c6bc8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="44ac0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="44ac0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-<span data-ttu-id="c6bc8-105">Получение списка [тимеоффреасонс](../resources/timeoffreason.md) по [расписанию](../resources/schedule.md).</span><span class="sxs-lookup"><span data-stu-id="c6bc8-105">Get the list of [timeOffReasons](../resources/timeoffreason.md) in a [schedule](../resources/schedule.md).</span></span>
+<span data-ttu-id="44ac0-105">Получение списка [тимеоффреасонс](../resources/timeoffreason.md) по [расписанию](../resources/schedule.md).</span><span class="sxs-lookup"><span data-stu-id="44ac0-105">Get the list of [timeOffReasons](../resources/timeoffreason.md) in a [schedule](../resources/schedule.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c6bc8-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c6bc8-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="44ac0-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="44ac0-106">Permissions</span></span>
 
-<span data-ttu-id="c6bc8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c6bc8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="44ac0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="44ac0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c6bc8-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c6bc8-109">Permission type</span></span>      | <span data-ttu-id="c6bc8-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c6bc8-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="44ac0-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="44ac0-109">Permission type</span></span>      | <span data-ttu-id="44ac0-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="44ac0-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c6bc8-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c6bc8-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c6bc8-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c6bc8-112">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c6bc8-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c6bc8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c6bc8-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c6bc8-114">Not supported.</span></span>    |
-|<span data-ttu-id="c6bc8-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c6bc8-115">Application</span></span> | <span data-ttu-id="c6bc8-116">Schedule. Read. All *, Schedule. ReadWrite. ALL*</span><span class="sxs-lookup"><span data-stu-id="c6bc8-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span></span> |
+|<span data-ttu-id="44ac0-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="44ac0-111">Delegated (work or school account)</span></span> | <span data-ttu-id="44ac0-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44ac0-112">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="44ac0-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="44ac0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="44ac0-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="44ac0-114">Not supported.</span></span>    |
+|<span data-ttu-id="44ac0-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="44ac0-115">Application</span></span> | <span data-ttu-id="44ac0-116">Schedule. Read. All *, Schedule. ReadWrite. ALL*</span><span class="sxs-lookup"><span data-stu-id="44ac0-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span></span> |
 
-><span data-ttu-id="c6bc8-117">\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.</span><span class="sxs-lookup"><span data-stu-id="c6bc8-117">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
+><span data-ttu-id="44ac0-117">\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.</span><span class="sxs-lookup"><span data-stu-id="44ac0-117">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
 
-> <span data-ttu-id="c6bc8-118">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="c6bc8-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="c6bc8-119">Глобальные администраторы могут получать доступ к группам, которые не являются участниками.</span><span class="sxs-lookup"><span data-stu-id="c6bc8-119">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="44ac0-118">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="44ac0-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="44ac0-119">Глобальные администраторы могут получать доступ к группам, которые не являются участниками.</span><span class="sxs-lookup"><span data-stu-id="44ac0-119">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c6bc8-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c6bc8-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="44ac0-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="44ac0-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,26 +41,26 @@ ms.locfileid: "42453837"
 GET /teams/{teamId}/schedule/timeOffReasons
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c6bc8-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c6bc8-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="44ac0-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="44ac0-121">Request headers</span></span>
 
-| <span data-ttu-id="c6bc8-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c6bc8-122">Header</span></span>       | <span data-ttu-id="c6bc8-123">Значение</span><span class="sxs-lookup"><span data-stu-id="c6bc8-123">Value</span></span> |
+| <span data-ttu-id="44ac0-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="44ac0-122">Header</span></span>       | <span data-ttu-id="44ac0-123">Значение</span><span class="sxs-lookup"><span data-stu-id="44ac0-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="c6bc8-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c6bc8-124">Authorization</span></span>  | <span data-ttu-id="c6bc8-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c6bc8-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="44ac0-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="44ac0-124">Authorization</span></span>  | <span data-ttu-id="44ac0-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="44ac0-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c6bc8-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c6bc8-127">Request body</span></span>
-<span data-ttu-id="c6bc8-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c6bc8-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="44ac0-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="44ac0-127">Request body</span></span>
+<span data-ttu-id="44ac0-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="44ac0-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c6bc8-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="c6bc8-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="44ac0-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="44ac0-129">Response</span></span>
 
-<span data-ttu-id="c6bc8-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тимеоффреасон](../resources/timeoffreason.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c6bc8-130">If successful, this method returns a `200 OK` response code and a collection of [timeOffReason](../resources/timeoffreason.md) objects in the response body.</span></span>
+<span data-ttu-id="44ac0-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тимеоффреасон](../resources/timeoffreason.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="44ac0-130">If successful, this method returns a `200 OK` response code and a collection of [timeOffReason](../resources/timeoffreason.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c6bc8-131">Пример</span><span class="sxs-lookup"><span data-stu-id="c6bc8-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="44ac0-131">Пример</span><span class="sxs-lookup"><span data-stu-id="44ac0-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c6bc8-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="c6bc8-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="44ac0-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="44ac0-132">Request</span></span>
 
-<span data-ttu-id="c6bc8-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c6bc8-133">The following is an example of the request.</span></span>
+<span data-ttu-id="44ac0-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="44ac0-133">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c6bc8-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="c6bc8-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="44ac0-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="44ac0-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-list-timeoffreasons"
@@ -68,26 +68,26 @@ GET /teams/{teamId}/schedule/timeOffReasons
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 ```
-# <a name="c"></a>[<span data-ttu-id="c6bc8-135">C#</span><span class="sxs-lookup"><span data-stu-id="c6bc8-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="44ac0-135">C#</span><span class="sxs-lookup"><span data-stu-id="44ac0-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-list-timeoffreasons-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c6bc8-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c6bc8-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="44ac0-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="44ac0-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-list-timeoffreasons-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c6bc8-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c6bc8-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="44ac0-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="44ac0-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-list-timeoffreasons-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="c6bc8-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="c6bc8-138">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="44ac0-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="44ac0-138">Response</span></span>
 
-<span data-ttu-id="c6bc8-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c6bc8-139">The following is an example of the response.</span></span> 
+<span data-ttu-id="44ac0-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="44ac0-139">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="c6bc8-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c6bc8-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="44ac0-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="44ac0-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

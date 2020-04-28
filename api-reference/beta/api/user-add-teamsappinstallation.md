@@ -12,55 +12,55 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42452045"
 ---
-# <a name="install-app-for-user"></a><span data-ttu-id="722a0-103">Установка приложения для пользователя</span><span class="sxs-lookup"><span data-stu-id="722a0-103">Install app for user</span></span>
+# <a name="install-app-for-user"></a><span data-ttu-id="561b2-103">Установка приложения для пользователя</span><span class="sxs-lookup"><span data-stu-id="561b2-103">Install app for user</span></span>
 
-<span data-ttu-id="722a0-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="722a0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="561b2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="561b2-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="722a0-105">Установка [приложения](../resources/teamsapp.md) в личной области указанного [пользователя](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="722a0-105">Install an [app](../resources/teamsapp.md) in the personal scope of the specified [user](../resources/user.md).</span></span>
+<span data-ttu-id="561b2-105">Установка [приложения](../resources/teamsapp.md) в личной области указанного [пользователя](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="561b2-105">Install an [app](../resources/teamsapp.md) in the personal scope of the specified [user](../resources/user.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="722a0-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="722a0-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="561b2-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="561b2-106">Permissions</span></span>
 
-<span data-ttu-id="722a0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="722a0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="561b2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="561b2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="722a0-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="722a0-109">Permission type</span></span>      | <span data-ttu-id="722a0-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="722a0-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="561b2-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="561b2-109">Permission type</span></span>      | <span data-ttu-id="561b2-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="561b2-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="722a0-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="722a0-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="722a0-112">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="722a0-112">User.ReadWrite.All, Directory.ReadWrite.All</span></span>     |
-|<span data-ttu-id="722a0-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="722a0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="722a0-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="722a0-114">Not supported.</span></span>    |
-|<span data-ttu-id="722a0-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="722a0-115">Application</span></span> | <span data-ttu-id="722a0-116">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="722a0-116">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="561b2-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="561b2-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="561b2-112">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="561b2-112">User.ReadWrite.All, Directory.ReadWrite.All</span></span>     |
+|<span data-ttu-id="561b2-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="561b2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="561b2-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="561b2-114">Not supported.</span></span>    |
+|<span data-ttu-id="561b2-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="561b2-115">Application</span></span> | <span data-ttu-id="561b2-116">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="561b2-116">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="722a0-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="722a0-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="561b2-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="561b2-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id}/teamwork/installedApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="722a0-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="722a0-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="561b2-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="561b2-118">Request headers</span></span>
 
-| <span data-ttu-id="722a0-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="722a0-119">Header</span></span>       | <span data-ttu-id="722a0-120">Значение</span><span class="sxs-lookup"><span data-stu-id="722a0-120">Value</span></span> |
+| <span data-ttu-id="561b2-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="561b2-119">Header</span></span>       | <span data-ttu-id="561b2-120">Значение</span><span class="sxs-lookup"><span data-stu-id="561b2-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="722a0-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="722a0-121">Authorization</span></span>  | <span data-ttu-id="722a0-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="722a0-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="561b2-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="561b2-121">Authorization</span></span>  | <span data-ttu-id="561b2-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="561b2-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="722a0-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="722a0-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="561b2-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="561b2-124">Request body</span></span>
 
-<span data-ttu-id="722a0-125">В тексте запроса должен содержаться идентификатор существующего приложения каталога, который требуется добавить.</span><span class="sxs-lookup"><span data-stu-id="722a0-125">The request body should contain the ID of the existing catalog app to be added.</span></span>
+<span data-ttu-id="561b2-125">В тексте запроса должен содержаться идентификатор существующего приложения каталога, который требуется добавить.</span><span class="sxs-lookup"><span data-stu-id="561b2-125">The request body should contain the ID of the existing catalog app to be added.</span></span>
 
-| <span data-ttu-id="722a0-126">Свойство</span><span class="sxs-lookup"><span data-stu-id="722a0-126">Property</span></span>   | <span data-ttu-id="722a0-127">Тип</span><span class="sxs-lookup"><span data-stu-id="722a0-127">Type</span></span> |<span data-ttu-id="722a0-128">Описание</span><span class="sxs-lookup"><span data-stu-id="722a0-128">Description</span></span>|
+| <span data-ttu-id="561b2-126">Свойство</span><span class="sxs-lookup"><span data-stu-id="561b2-126">Property</span></span>   | <span data-ttu-id="561b2-127">Тип</span><span class="sxs-lookup"><span data-stu-id="561b2-127">Type</span></span> |<span data-ttu-id="561b2-128">Описание</span><span class="sxs-lookup"><span data-stu-id="561b2-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="722a0-129">teamsApp</span><span class="sxs-lookup"><span data-stu-id="722a0-129">teamsApp</span></span>|<span data-ttu-id="722a0-130">String</span><span class="sxs-lookup"><span data-stu-id="722a0-130">String</span></span>|<span data-ttu-id="722a0-131">Идентификатор добавляемого приложения.</span><span class="sxs-lookup"><span data-stu-id="722a0-131">The ID of the app to add.</span></span>|
+|<span data-ttu-id="561b2-129">teamsApp</span><span class="sxs-lookup"><span data-stu-id="561b2-129">teamsApp</span></span>|<span data-ttu-id="561b2-130">String</span><span class="sxs-lookup"><span data-stu-id="561b2-130">String</span></span>|<span data-ttu-id="561b2-131">Идентификатор добавляемого приложения.</span><span class="sxs-lookup"><span data-stu-id="561b2-131">The ID of the app to add.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="722a0-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="722a0-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="561b2-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="561b2-132">Response</span></span>
 
-<span data-ttu-id="722a0-p103">При успешном выполнении этот метод возвращает код отклика `201 Created`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="722a0-p103">If successful, this method returns a `201 Created` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="561b2-p103">При успешном выполнении этот метод возвращает код отклика `201 Created`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="561b2-p103">If successful, this method returns a `201 Created` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="722a0-135">Пример</span><span class="sxs-lookup"><span data-stu-id="722a0-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="561b2-135">Пример</span><span class="sxs-lookup"><span data-stu-id="561b2-135">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="722a0-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="722a0-136">Request</span></span>
+### <a name="request"></a><span data-ttu-id="561b2-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="561b2-136">Request</span></span>
 
-<span data-ttu-id="722a0-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="722a0-137">The following is an example of the request.</span></span>
+<span data-ttu-id="561b2-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="561b2-137">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="722a0-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="722a0-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="561b2-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="561b2-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_add_teamsApp"
@@ -73,24 +73,24 @@ Content-type: application/json
    "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="722a0-139">C#</span><span class="sxs-lookup"><span data-stu-id="722a0-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="561b2-139">C#</span><span class="sxs-lookup"><span data-stu-id="561b2-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-add-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="722a0-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="722a0-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="561b2-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="561b2-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-add-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="722a0-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="722a0-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="561b2-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="561b2-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-add-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="722a0-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="722a0-142">Response</span></span>
+### <a name="response"></a><span data-ttu-id="561b2-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="561b2-142">Response</span></span>
 
-<span data-ttu-id="722a0-143">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="722a0-143">The following is an example of the response.</span></span>
+<span data-ttu-id="561b2-143">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="561b2-143">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

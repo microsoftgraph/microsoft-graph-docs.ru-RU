@@ -12,23 +12,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42501551"
 ---
-# <a name="educationonenoteresource-resource-type"></a><span data-ttu-id="418ac-104">Тип ресурса Едукатиононенотересаурце</span><span class="sxs-lookup"><span data-stu-id="418ac-104">educationOneNoteResource resource type</span></span>
+# <a name="educationonenoteresource-resource-type"></a><span data-ttu-id="2e887-104">Тип ресурса Едукатиононенотересаурце</span><span class="sxs-lookup"><span data-stu-id="2e887-104">educationOneNoteResource resource type</span></span>
 
-<span data-ttu-id="418ac-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="418ac-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2e887-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2e887-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="418ac-106">Подкласс объекта [едукатионресаурце](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="418ac-106">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="418ac-107">Представляет расположение страницы OneNote.</span><span class="sxs-lookup"><span data-stu-id="418ac-107">This represents the location of the OneNote page.</span></span>  
+<span data-ttu-id="2e887-106">Подкласс объекта [едукатионресаурце](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="2e887-106">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="2e887-107">Представляет расположение страницы OneNote.</span><span class="sxs-lookup"><span data-stu-id="2e887-107">This represents the location of the OneNote page.</span></span>  
 
-## <a name="properties"></a><span data-ttu-id="418ac-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="418ac-108">Properties</span></span>
-| <span data-ttu-id="418ac-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="418ac-109">Property</span></span>     | <span data-ttu-id="418ac-110">Тип</span><span class="sxs-lookup"><span data-stu-id="418ac-110">Type</span></span>   |<span data-ttu-id="418ac-111">Описание</span><span class="sxs-lookup"><span data-stu-id="418ac-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2e887-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="2e887-108">Properties</span></span>
+| <span data-ttu-id="2e887-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="2e887-109">Property</span></span>     | <span data-ttu-id="2e887-110">Тип</span><span class="sxs-lookup"><span data-stu-id="2e887-110">Type</span></span>   |<span data-ttu-id="2e887-111">Описание</span><span class="sxs-lookup"><span data-stu-id="2e887-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="418ac-112">pageUrl</span><span class="sxs-lookup"><span data-stu-id="418ac-112">pageUrl</span></span>|<span data-ttu-id="418ac-113">String</span><span class="sxs-lookup"><span data-stu-id="418ac-113">String</span></span>|<span data-ttu-id="418ac-114">URL-адрес Microsoft Graph на страницу в OneNote.</span><span class="sxs-lookup"><span data-stu-id="418ac-114">The Microsoft Graph URL to the page in OneNote.</span></span>|
-|<span data-ttu-id="418ac-115">sectionName</span><span class="sxs-lookup"><span data-stu-id="418ac-115">sectionName</span></span>|<span data-ttu-id="418ac-116">String</span><span class="sxs-lookup"><span data-stu-id="418ac-116">String</span></span>|<span data-ttu-id="418ac-117">Имя раздела, в который должны копироваться дистрибутивы или скопированы в.</span><span class="sxs-lookup"><span data-stu-id="418ac-117">Section name that distributions should be copied into or were copied into.</span></span>|
+|<span data-ttu-id="2e887-112">pageUrl</span><span class="sxs-lookup"><span data-stu-id="2e887-112">pageUrl</span></span>|<span data-ttu-id="2e887-113">String</span><span class="sxs-lookup"><span data-stu-id="2e887-113">String</span></span>|<span data-ttu-id="2e887-114">URL-адрес Microsoft Graph на страницу в OneNote.</span><span class="sxs-lookup"><span data-stu-id="2e887-114">The Microsoft Graph URL to the page in OneNote.</span></span>|
+|<span data-ttu-id="2e887-115">sectionName</span><span class="sxs-lookup"><span data-stu-id="2e887-115">sectionName</span></span>|<span data-ttu-id="2e887-116">String</span><span class="sxs-lookup"><span data-stu-id="2e887-116">String</span></span>|<span data-ttu-id="2e887-117">Имя раздела, в который должны копироваться дистрибутивы или скопированы в.</span><span class="sxs-lookup"><span data-stu-id="2e887-117">Section name that distributions should be copied into or were copied into.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="418ac-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="418ac-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2e887-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2e887-118">JSON representation</span></span>
 
-<span data-ttu-id="418ac-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="418ac-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2e887-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2e887-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

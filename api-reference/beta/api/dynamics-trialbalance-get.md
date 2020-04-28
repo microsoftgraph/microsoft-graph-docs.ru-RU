@@ -14,56 +14,56 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42428175"
 ---
-# <a name="get-trialbalance"></a><span data-ttu-id="d2358-103">Получение Триалбаланце</span><span class="sxs-lookup"><span data-stu-id="d2358-103">Get trialBalance</span></span>
+# <a name="get-trialbalance"></a><span data-ttu-id="da957-103">Получение Триалбаланце</span><span class="sxs-lookup"><span data-stu-id="da957-103">Get trialBalance</span></span>
 
-<span data-ttu-id="d2358-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="d2358-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="da957-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="da957-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d2358-105">Получение свойств и связей объекта отчета по оборотному балансу для Dynamics 365 Business Central.</span><span class="sxs-lookup"><span data-stu-id="d2358-105">Retrieve the properties and relationships of a trial balance report object for Dynamics 365 Business Central.</span></span>
+<span data-ttu-id="da957-105">Получение свойств и связей объекта отчета по оборотному балансу для Dynamics 365 Business Central.</span><span class="sxs-lookup"><span data-stu-id="da957-105">Retrieve the properties and relationships of a trial balance report object for Dynamics 365 Business Central.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d2358-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d2358-106">Permissions</span></span>
-<span data-ttu-id="d2358-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d2358-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="da957-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="da957-106">Permissions</span></span>
+<span data-ttu-id="da957-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da957-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d2358-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d2358-109">Permission type</span></span> |<span data-ttu-id="d2358-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d2358-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="da957-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="da957-109">Permission type</span></span> |<span data-ttu-id="da957-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="da957-110">Permissions (from least to most privileged)</span></span>|
 |:---------------|:------------------------------------------|
-|<span data-ttu-id="d2358-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d2358-111">Delegated (work or school account)</span></span>|<span data-ttu-id="d2358-112">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d2358-112">Financials.ReadWrite.All</span></span> |
-|<span data-ttu-id="d2358-113">Делегированная учетная запись (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d2358-113">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="d2358-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d2358-114">Not supported.</span></span>|
-|<span data-ttu-id="d2358-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d2358-115">Application</span></span>|<span data-ttu-id="d2358-116">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d2358-116">Financials.ReadWrite.All</span></span>|
+|<span data-ttu-id="da957-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="da957-111">Delegated (work or school account)</span></span>|<span data-ttu-id="da957-112">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da957-112">Financials.ReadWrite.All</span></span> |
+|<span data-ttu-id="da957-113">Делегированная учетная запись (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="da957-113">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="da957-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da957-114">Not supported.</span></span>|
+|<span data-ttu-id="da957-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="da957-115">Application</span></span>|<span data-ttu-id="da957-116">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da957-116">Financials.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d2358-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d2358-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="da957-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="da957-117">HTTP request</span></span>
 ```
 GET /financials/companies/{id}/trialBalance
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d2358-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d2358-118">Optional query parameters</span></span>
-<span data-ttu-id="d2358-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="d2358-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="da957-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="da957-118">Optional query parameters</span></span>
+<span data-ttu-id="da957-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="da957-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d2358-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d2358-120">Request headers</span></span>
-|<span data-ttu-id="d2358-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="d2358-121">Header</span></span>|<span data-ttu-id="d2358-122">Значение</span><span class="sxs-lookup"><span data-stu-id="d2358-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="da957-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="da957-120">Request headers</span></span>
+|<span data-ttu-id="da957-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="da957-121">Header</span></span>|<span data-ttu-id="da957-122">Значение</span><span class="sxs-lookup"><span data-stu-id="da957-122">Value</span></span>|
 |------|-----|
-|<span data-ttu-id="d2358-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d2358-123">Authorization</span></span>  |<span data-ttu-id="d2358-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d2358-p102">Bearer {token}. Required.</span></span> |
+|<span data-ttu-id="da957-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="da957-123">Authorization</span></span>  |<span data-ttu-id="da957-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="da957-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d2358-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d2358-126">Request body</span></span>
-<span data-ttu-id="d2358-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d2358-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="da957-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="da957-126">Request body</span></span>
+<span data-ttu-id="da957-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="da957-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d2358-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="d2358-128">Response</span></span>
-<span data-ttu-id="d2358-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **триалбаланце** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d2358-129">If successful, this method returns a `200 OK` response code and a **trialBalance** object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="da957-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="da957-128">Response</span></span>
+<span data-ttu-id="da957-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **триалбаланце** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="da957-129">If successful, this method returns a `200 OK` response code and a **trialBalance** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d2358-130">Пример</span><span class="sxs-lookup"><span data-stu-id="d2358-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="da957-130">Пример</span><span class="sxs-lookup"><span data-stu-id="da957-130">Example</span></span>
 
-<span data-ttu-id="d2358-131">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="d2358-131">**Request**</span></span>
+<span data-ttu-id="da957-131">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="da957-131">**Request**</span></span>
 
-<span data-ttu-id="d2358-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d2358-132">Here is an example of the request.</span></span>
+<span data-ttu-id="da957-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da957-132">Here is an example of the request.</span></span>
 ```json
 GET https://graph.microsoft.com/beta/financials/companies/{id}/trialBalance?$orderby number&$filter=dateFilter ge 2019-01-01 and dateFilter le 2019-12-31
 ```
 
-<span data-ttu-id="d2358-133">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="d2358-133">**Response**</span></span>
+<span data-ttu-id="da957-133">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="da957-133">**Response**</span></span>
 
-<span data-ttu-id="d2358-134">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d2358-134">Here is an example of the response.</span></span> 
+<span data-ttu-id="da957-134">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="da957-134">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="d2358-135">**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="d2358-135">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d2358-136">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d2358-136">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="da957-135">**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="da957-135">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="da957-136">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="da957-136">All the properties will be returned from an actual call.</span></span>
 
 ```json
 {

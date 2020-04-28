@@ -12,25 +12,25 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42452326"
 ---
-# <a name="create-threat-intelligence-indicator"></a><span data-ttu-id="c7b79-103">Создание индикатора для логики операций с угрозами</span><span class="sxs-lookup"><span data-stu-id="c7b79-103">Create threat intelligence indicator</span></span>
+# <a name="create-threat-intelligence-indicator"></a><span data-ttu-id="7cf26-103">Создание индикатора для логики операций с угрозами</span><span class="sxs-lookup"><span data-stu-id="7cf26-103">Create threat intelligence indicator</span></span>
 
-<span data-ttu-id="c7b79-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="c7b79-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7cf26-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7cf26-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c7b79-105">Создание нового объекта [тииндикатор](../resources/tiindicator.md) .</span><span class="sxs-lookup"><span data-stu-id="c7b79-105">Create a new [tiIndicator](../resources/tiindicator.md) object.</span></span>
+<span data-ttu-id="7cf26-105">Создание нового объекта [тииндикатор](../resources/tiindicator.md) .</span><span class="sxs-lookup"><span data-stu-id="7cf26-105">Create a new [tiIndicator](../resources/tiindicator.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c7b79-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c7b79-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7cf26-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7cf26-106">Permissions</span></span>
 
-<span data-ttu-id="c7b79-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c7b79-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7cf26-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7cf26-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="c7b79-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c7b79-109">Permission type</span></span>                        | <span data-ttu-id="c7b79-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c7b79-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="7cf26-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7cf26-109">Permission type</span></span>                        | <span data-ttu-id="7cf26-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7cf26-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="c7b79-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c7b79-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="c7b79-112">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="c7b79-112">ThreatIndicators.ReadWrite.OwnedBy</span></span>  |
-| <span data-ttu-id="c7b79-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c7b79-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c7b79-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c7b79-114">Not supported.</span></span> |
-| <span data-ttu-id="c7b79-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c7b79-115">Application</span></span>                            | <span data-ttu-id="c7b79-116">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="c7b79-116">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
+| <span data-ttu-id="7cf26-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7cf26-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="7cf26-112">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="7cf26-112">ThreatIndicators.ReadWrite.OwnedBy</span></span>  |
+| <span data-ttu-id="7cf26-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7cf26-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7cf26-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7cf26-114">Not supported.</span></span> |
+| <span data-ttu-id="7cf26-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7cf26-115">Application</span></span>                            | <span data-ttu-id="7cf26-116">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="7cf26-116">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c7b79-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c7b79-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7cf26-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7cf26-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,27 +38,27 @@ ms.locfileid: "42452326"
 POST /security/tiIndicators
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c7b79-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c7b79-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7cf26-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7cf26-118">Request headers</span></span>
 
-| <span data-ttu-id="c7b79-119">Имя</span><span class="sxs-lookup"><span data-stu-id="c7b79-119">Name</span></span>          | <span data-ttu-id="c7b79-120">Описание</span><span class="sxs-lookup"><span data-stu-id="c7b79-120">Description</span></span>   |
+| <span data-ttu-id="7cf26-119">Имя</span><span class="sxs-lookup"><span data-stu-id="7cf26-119">Name</span></span>          | <span data-ttu-id="7cf26-120">Описание</span><span class="sxs-lookup"><span data-stu-id="7cf26-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="c7b79-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c7b79-121">Authorization</span></span> | <span data-ttu-id="c7b79-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="c7b79-122">Bearer {code}</span></span> |
+| <span data-ttu-id="7cf26-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7cf26-121">Authorization</span></span> | <span data-ttu-id="7cf26-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="7cf26-122">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c7b79-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c7b79-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7cf26-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7cf26-123">Request body</span></span>
 
-<span data-ttu-id="c7b79-124">В тексте запроса добавьте представление объекта [тииндикатор](../resources/tiindicator.md) в [формате](../resources/tiindicator.md#indicator-observables---file)JSON, содержащий хотя бы один наблюдаемый [адрес электронной почты](../resources/tiindicator.md#indicator-observables---email), файл или [сеть](../resources/tiindicator.md#indicator-observables---network) , а также следующие обязательные поля `action`: `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`,.</span><span class="sxs-lookup"><span data-stu-id="c7b79-124">In the request body, supply a JSON representation of a [tiIndicator](../resources/tiindicator.md) object containing at least one [email](../resources/tiindicator.md#indicator-observables---email), [file](../resources/tiindicator.md#indicator-observables---file), or [network](../resources/tiindicator.md#indicator-observables---network) observable, and the following required fields: `action`, `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`.</span></span> 
+<span data-ttu-id="7cf26-124">В тексте запроса добавьте представление объекта [тииндикатор](../resources/tiindicator.md) в [формате](../resources/tiindicator.md#indicator-observables---file)JSON, содержащий хотя бы один наблюдаемый [адрес электронной почты](../resources/tiindicator.md#indicator-observables---email), файл или [сеть](../resources/tiindicator.md#indicator-observables---network) , а также следующие обязательные поля `action`: `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`,.</span><span class="sxs-lookup"><span data-stu-id="7cf26-124">In the request body, supply a JSON representation of a [tiIndicator](../resources/tiindicator.md) object containing at least one [email](../resources/tiindicator.md#indicator-observables---email), [file](../resources/tiindicator.md#indicator-observables---file), or [network](../resources/tiindicator.md#indicator-observables---network) observable, and the following required fields: `action`, `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`.</span></span> 
 
-## <a name="response"></a><span data-ttu-id="c7b79-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="c7b79-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7cf26-125">Ответ</span><span class="sxs-lookup"><span data-stu-id="7cf26-125">Response</span></span>
 
-<span data-ttu-id="c7b79-126">В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [тииндикатор](../resources/tiindicator.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c7b79-126">If successful, this method returns `201 Created` response code and a [tiIndicator](../resources/tiindicator.md) object in the response body.</span></span>
+<span data-ttu-id="7cf26-126">В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [тииндикатор](../resources/tiindicator.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="7cf26-126">If successful, this method returns `201 Created` response code and a [tiIndicator](../resources/tiindicator.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c7b79-127">Примеры</span><span class="sxs-lookup"><span data-stu-id="c7b79-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7cf26-127">Примеры</span><span class="sxs-lookup"><span data-stu-id="7cf26-127">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="c7b79-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="c7b79-128">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7cf26-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="7cf26-128">Request</span></span>
 
-<span data-ttu-id="c7b79-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c7b79-129">The following is an example of the request.</span></span>
+<span data-ttu-id="7cf26-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7cf26-129">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c7b79-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="c7b79-130">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7cf26-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="7cf26-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_tiindicator_from_security"
@@ -86,27 +86,27 @@ Content-type: application/json
   "tlpLevel": "green"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="c7b79-131">C#</span><span class="sxs-lookup"><span data-stu-id="c7b79-131">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7cf26-131">C#</span><span class="sxs-lookup"><span data-stu-id="7cf26-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-tiindicator-from-security-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c7b79-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c7b79-132">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7cf26-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7cf26-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-tiindicator-from-security-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c7b79-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c7b79-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7cf26-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7cf26-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-tiindicator-from-security-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="c7b79-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="c7b79-134">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7cf26-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="7cf26-134">Response</span></span>
 
-<span data-ttu-id="c7b79-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c7b79-135">The following is an example of the response.</span></span>
+<span data-ttu-id="7cf26-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="7cf26-135">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c7b79-136">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="c7b79-136">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="c7b79-137">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c7b79-137">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="7cf26-136">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="7cf26-136">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="7cf26-137">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7cf26-137">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

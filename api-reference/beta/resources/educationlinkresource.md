@@ -12,23 +12,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42501789"
 ---
-# <a name="educationlinkresource-resource-type"></a><span data-ttu-id="263b0-104">Тип ресурса Едукатионлинкресаурце</span><span class="sxs-lookup"><span data-stu-id="263b0-104">educationLinkResource resource type</span></span>
+# <a name="educationlinkresource-resource-type"></a><span data-ttu-id="3c49c-104">Тип ресурса Едукатионлинкресаурце</span><span class="sxs-lookup"><span data-stu-id="3c49c-104">educationLinkResource resource type</span></span>
 
-<span data-ttu-id="263b0-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="263b0-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3c49c-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3c49c-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="263b0-106">Подкласс объекта [едукатионресаурце](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="263b0-106">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="263b0-107">Этот ресурс является ссылкой и не имеет дополнительных данных, связанных с ней.</span><span class="sxs-lookup"><span data-stu-id="263b0-107">This resource is a link and does not have any additional data associated with it.</span></span>
+<span data-ttu-id="3c49c-106">Подкласс объекта [едукатионресаурце](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="3c49c-106">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="3c49c-107">Этот ресурс является ссылкой и не имеет дополнительных данных, связанных с ней.</span><span class="sxs-lookup"><span data-stu-id="3c49c-107">This resource is a link and does not have any additional data associated with it.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="263b0-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="263b0-108">Properties</span></span>
-| <span data-ttu-id="263b0-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="263b0-109">Property</span></span>     | <span data-ttu-id="263b0-110">Тип</span><span class="sxs-lookup"><span data-stu-id="263b0-110">Type</span></span>   |<span data-ttu-id="263b0-111">Описание</span><span class="sxs-lookup"><span data-stu-id="263b0-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3c49c-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="3c49c-108">Properties</span></span>
+| <span data-ttu-id="3c49c-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="3c49c-109">Property</span></span>     | <span data-ttu-id="3c49c-110">Тип</span><span class="sxs-lookup"><span data-stu-id="3c49c-110">Type</span></span>   |<span data-ttu-id="3c49c-111">Описание</span><span class="sxs-lookup"><span data-stu-id="3c49c-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="263b0-112">ссылка</span><span class="sxs-lookup"><span data-stu-id="263b0-112">link</span></span>|<span data-ttu-id="263b0-113">String</span><span class="sxs-lookup"><span data-stu-id="263b0-113">String</span></span>|<span data-ttu-id="263b0-114">URL-адрес ресурса.</span><span class="sxs-lookup"><span data-stu-id="263b0-114">URL to the resource.</span></span>|
+|<span data-ttu-id="3c49c-112">ссылка</span><span class="sxs-lookup"><span data-stu-id="3c49c-112">link</span></span>|<span data-ttu-id="3c49c-113">String</span><span class="sxs-lookup"><span data-stu-id="3c49c-113">String</span></span>|<span data-ttu-id="3c49c-114">URL-адрес ресурса.</span><span class="sxs-lookup"><span data-stu-id="3c49c-114">URL to the resource.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="263b0-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="263b0-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3c49c-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3c49c-115">JSON representation</span></span>
 
-<span data-ttu-id="263b0-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="263b0-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3c49c-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3c49c-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

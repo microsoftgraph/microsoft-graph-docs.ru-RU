@@ -12,24 +12,24 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42501712"
 ---
-# <a name="educationmakecoderesource-resource-type"></a><span data-ttu-id="5cef6-103">Тип ресурса Едукатионмакекодересаурце</span><span class="sxs-lookup"><span data-stu-id="5cef6-103">educationMakeCodeResource resource type</span></span>
+# <a name="educationmakecoderesource-resource-type"></a><span data-ttu-id="73fc1-103">Тип ресурса Едукатионмакекодересаурце</span><span class="sxs-lookup"><span data-stu-id="73fc1-103">educationMakeCodeResource resource type</span></span>
 
-<span data-ttu-id="5cef6-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="5cef6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="73fc1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="73fc1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5cef6-105">Ресурс, представляющий проект [макекоде](https://www.microsoft.com/en-us/makecode) .</span><span class="sxs-lookup"><span data-stu-id="5cef6-105">A resource representing a [MakeCode](https://www.microsoft.com/en-us/makecode) project.</span></span>
+<span data-ttu-id="73fc1-105">Ресурс, представляющий проект [макекоде](https://www.microsoft.com/en-us/makecode) .</span><span class="sxs-lookup"><span data-stu-id="73fc1-105">A resource representing a [MakeCode](https://www.microsoft.com/en-us/makecode) project.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5cef6-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="5cef6-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="73fc1-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="73fc1-106">Properties</span></span>
 
-| <span data-ttu-id="5cef6-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="5cef6-107">Property</span></span>     | <span data-ttu-id="5cef6-108">Тип</span><span class="sxs-lookup"><span data-stu-id="5cef6-108">Type</span></span>        | <span data-ttu-id="5cef6-109">Описание</span><span class="sxs-lookup"><span data-stu-id="5cef6-109">Description</span></span> |
+| <span data-ttu-id="73fc1-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="73fc1-107">Property</span></span>     | <span data-ttu-id="73fc1-108">Тип</span><span class="sxs-lookup"><span data-stu-id="73fc1-108">Type</span></span>        | <span data-ttu-id="73fc1-109">Описание</span><span class="sxs-lookup"><span data-stu-id="73fc1-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="5cef6-110">projectId</span><span class="sxs-lookup"><span data-stu-id="5cef6-110">projectId</span></span>|<span data-ttu-id="5cef6-111">String</span><span class="sxs-lookup"><span data-stu-id="5cef6-111">String</span></span>|<span data-ttu-id="5cef6-112">ИДЕНТИФИКАТОР проекта Макекоде</span><span class="sxs-lookup"><span data-stu-id="5cef6-112">ID of the MakeCode project</span></span>|
-|<span data-ttu-id="5cef6-113">хоствебурл</span><span class="sxs-lookup"><span data-stu-id="5cef6-113">hostWebUrl</span></span>|<span data-ttu-id="5cef6-114">String</span><span class="sxs-lookup"><span data-stu-id="5cef6-114">String</span></span>|<span data-ttu-id="5cef6-115">Узел для типа ресурса Макекоде (например, аркаде, Микробит)</span><span class="sxs-lookup"><span data-stu-id="5cef6-115">Host for the type of MakeCode resource (for example, arcade, microbit)</span></span>|
+|<span data-ttu-id="73fc1-110">projectId</span><span class="sxs-lookup"><span data-stu-id="73fc1-110">projectId</span></span>|<span data-ttu-id="73fc1-111">String</span><span class="sxs-lookup"><span data-stu-id="73fc1-111">String</span></span>|<span data-ttu-id="73fc1-112">ИДЕНТИФИКАТОР проекта Макекоде</span><span class="sxs-lookup"><span data-stu-id="73fc1-112">ID of the MakeCode project</span></span>|
+|<span data-ttu-id="73fc1-113">хоствебурл</span><span class="sxs-lookup"><span data-stu-id="73fc1-113">hostWebUrl</span></span>|<span data-ttu-id="73fc1-114">String</span><span class="sxs-lookup"><span data-stu-id="73fc1-114">String</span></span>|<span data-ttu-id="73fc1-115">Узел для типа ресурса Макекоде (например, аркаде, Микробит)</span><span class="sxs-lookup"><span data-stu-id="73fc1-115">Host for the type of MakeCode resource (for example, arcade, microbit)</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="5cef6-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5cef6-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="73fc1-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="73fc1-116">JSON representation</span></span>
 
-<span data-ttu-id="5cef6-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5cef6-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="73fc1-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="73fc1-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

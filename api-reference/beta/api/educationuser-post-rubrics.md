@@ -12,25 +12,25 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42423583"
 ---
-# <a name="create-educationrubric"></a><span data-ttu-id="f33e2-103">Создание Едукатионрубрик</span><span class="sxs-lookup"><span data-stu-id="f33e2-103">Create educationRubric</span></span>
+# <a name="create-educationrubric"></a><span data-ttu-id="0f79c-103">Создание Едукатионрубрик</span><span class="sxs-lookup"><span data-stu-id="0f79c-103">Create educationRubric</span></span>
 
-<span data-ttu-id="f33e2-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f33e2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0f79c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0f79c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f33e2-105">Создание нового объекта [едукатионрубрик](../resources/educationrubric.md) .</span><span class="sxs-lookup"><span data-stu-id="f33e2-105">Create a new [educationRubric](../resources/educationrubric.md) object.</span></span>
+<span data-ttu-id="0f79c-105">Создание нового объекта [едукатионрубрик](../resources/educationrubric.md) .</span><span class="sxs-lookup"><span data-stu-id="0f79c-105">Create a new [educationRubric](../resources/educationrubric.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f33e2-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f33e2-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0f79c-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0f79c-106">Permissions</span></span>
 
-<span data-ttu-id="f33e2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f33e2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0f79c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0f79c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f33e2-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f33e2-109">Permission type</span></span>                        | <span data-ttu-id="f33e2-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f33e2-110">Permissions (from least to most privileged)</span></span>             |
+| <span data-ttu-id="0f79c-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0f79c-109">Permission type</span></span>                        | <span data-ttu-id="0f79c-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0f79c-110">Permissions (from least to most privileged)</span></span>             |
 | :------------------------------------- | :------------------------------------------------------ |
-| <span data-ttu-id="f33e2-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f33e2-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f33e2-112">EduAssignments. Реадвритебасик, EduAssignments. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f33e2-112">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
-| <span data-ttu-id="f33e2-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f33e2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f33e2-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f33e2-114">Not supported.</span></span>                                          |
-| <span data-ttu-id="f33e2-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f33e2-115">Application</span></span>                            | <span data-ttu-id="f33e2-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f33e2-116">Not supported.</span></span>                                          |
+| <span data-ttu-id="0f79c-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0f79c-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="0f79c-112">EduAssignments. Реадвритебасик, EduAssignments. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0f79c-112">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
+| <span data-ttu-id="0f79c-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0f79c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0f79c-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0f79c-114">Not supported.</span></span>                                          |
+| <span data-ttu-id="0f79c-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0f79c-115">Application</span></span>                            | <span data-ttu-id="0f79c-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0f79c-116">Not supported.</span></span>                                          |
 
-## <a name="http-request"></a><span data-ttu-id="f33e2-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f33e2-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0f79c-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0f79c-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,29 +38,29 @@ ms.locfileid: "42423583"
 POST /education/me/rubrics
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f33e2-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f33e2-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0f79c-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0f79c-118">Request headers</span></span>
 
-| <span data-ttu-id="f33e2-119">Имя</span><span class="sxs-lookup"><span data-stu-id="f33e2-119">Name</span></span>          | <span data-ttu-id="f33e2-120">Описание</span><span class="sxs-lookup"><span data-stu-id="f33e2-120">Description</span></span>    |
+| <span data-ttu-id="0f79c-119">Имя</span><span class="sxs-lookup"><span data-stu-id="0f79c-119">Name</span></span>          | <span data-ttu-id="0f79c-120">Описание</span><span class="sxs-lookup"><span data-stu-id="0f79c-120">Description</span></span>    |
 | :------------ | :------------- |
-| <span data-ttu-id="f33e2-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f33e2-121">Authorization</span></span> | <span data-ttu-id="f33e2-122">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="f33e2-122">Bearer {token}</span></span> |
+| <span data-ttu-id="0f79c-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0f79c-121">Authorization</span></span> | <span data-ttu-id="0f79c-122">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="0f79c-122">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f33e2-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f33e2-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0f79c-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="0f79c-123">Request body</span></span>
 
-<span data-ttu-id="f33e2-124">В тексте запроса добавьте представление объекта [едукатионрубрик](../resources/educationrubric.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f33e2-124">In the request body, supply a JSON representation of an [educationRubric](../resources/educationrubric.md) object.</span></span>
+<span data-ttu-id="0f79c-124">В тексте запроса добавьте представление объекта [едукатионрубрик](../resources/educationrubric.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0f79c-124">In the request body, supply a JSON representation of an [educationRubric](../resources/educationrubric.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f33e2-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="f33e2-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0f79c-125">Ответ</span><span class="sxs-lookup"><span data-stu-id="0f79c-125">Response</span></span>
 
-<span data-ttu-id="f33e2-126">В случае успешного выполнения этот метод `201 Created` возвращает код отклика и новый объект [едукатионрубрик](../resources/educationrubric.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f33e2-126">If successful, this method returns `201 Created` response code and a new [educationRubric](../resources/educationrubric.md) object in the response body.</span></span>
+<span data-ttu-id="0f79c-126">В случае успешного выполнения этот метод `201 Created` возвращает код отклика и новый объект [едукатионрубрик](../resources/educationrubric.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0f79c-126">If successful, this method returns `201 Created` response code and a new [educationRubric](../resources/educationrubric.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f33e2-127">Примеры</span><span class="sxs-lookup"><span data-stu-id="f33e2-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="0f79c-127">Примеры</span><span class="sxs-lookup"><span data-stu-id="0f79c-127">Examples</span></span>
 
-### <a name="example-1-posting-a-credit-rubric"></a><span data-ttu-id="f33e2-128">Пример 1: учет кредитных Rubric</span><span class="sxs-lookup"><span data-stu-id="f33e2-128">Example 1: Posting a Credit Rubric</span></span>
+### <a name="example-1-posting-a-credit-rubric"></a><span data-ttu-id="0f79c-128">Пример 1: учет кредитных Rubric</span><span class="sxs-lookup"><span data-stu-id="0f79c-128">Example 1: Posting a Credit Rubric</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f33e2-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="f33e2-129">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="0f79c-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="0f79c-129">Request</span></span>
 
-<span data-ttu-id="f33e2-130">Ниже приведен пример запроса на разноску кредита Rubric (Rubric без точек).</span><span class="sxs-lookup"><span data-stu-id="f33e2-130">The following is an example of the request to post a credit rubric (a rubric with no points).</span></span>
+<span data-ttu-id="0f79c-130">Ниже приведен пример запроса на разноску кредита Rubric (Rubric без точек).</span><span class="sxs-lookup"><span data-stu-id="0f79c-130">The following is an example of the request to post a credit rubric (a rubric with no points).</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f33e2-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="f33e2-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="0f79c-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="0f79c-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationrubric_from_educationuser"
@@ -136,27 +136,27 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f33e2-132">C#</span><span class="sxs-lookup"><span data-stu-id="f33e2-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0f79c-132">C#</span><span class="sxs-lookup"><span data-stu-id="0f79c-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f33e2-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f33e2-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0f79c-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0f79c-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f33e2-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f33e2-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="0f79c-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0f79c-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="f33e2-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="f33e2-135">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="0f79c-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="0f79c-135">Response</span></span>
 
-<span data-ttu-id="f33e2-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f33e2-136">The following is an example of the response.</span></span>
+<span data-ttu-id="0f79c-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="0f79c-136">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f33e2-137">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="f33e2-137">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="f33e2-138">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f33e2-138">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="0f79c-137">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="0f79c-137">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="0f79c-138">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0f79c-138">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -240,9 +240,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-posting-a-points-rubric"></a><span data-ttu-id="f33e2-139">Пример 2: отправка точек Rubric</span><span class="sxs-lookup"><span data-stu-id="f33e2-139">Example 2: Posting a Points Rubric</span></span>
+### <a name="example-2-posting-a-points-rubric"></a><span data-ttu-id="0f79c-139">Пример 2: отправка точек Rubric</span><span class="sxs-lookup"><span data-stu-id="0f79c-139">Example 2: Posting a Points Rubric</span></span>
 
-<span data-ttu-id="f33e2-140">Ниже приведен пример запроса на размещение Rubric с точками.</span><span class="sxs-lookup"><span data-stu-id="f33e2-140">The following is an example of the request to post a rubric with points.</span></span>
+<span data-ttu-id="0f79c-140">Ниже приведен пример запроса на размещение Rubric с точками.</span><span class="sxs-lookup"><span data-stu-id="0f79c-140">The following is an example of the request to post a rubric with points.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_educationrubric_from_educationuser"
@@ -332,12 +332,12 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="f33e2-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="f33e2-141">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="0f79c-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="0f79c-141">Response</span></span>
 
-<span data-ttu-id="f33e2-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f33e2-142">The following is an example of the response.</span></span>
+<span data-ttu-id="0f79c-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="0f79c-142">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f33e2-143">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="f33e2-143">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="f33e2-144">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f33e2-144">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="0f79c-143">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="0f79c-143">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="0f79c-144">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0f79c-144">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

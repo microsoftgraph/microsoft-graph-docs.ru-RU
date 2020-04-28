@@ -12,23 +12,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42501299"
 ---
-# <a name="educationpowerpointresource-resource-type"></a><span data-ttu-id="cbc44-105">Тип ресурса Едукатионповерпоинтресаурце</span><span class="sxs-lookup"><span data-stu-id="cbc44-105">educationPowerPointResource resource type</span></span>
+# <a name="educationpowerpointresource-resource-type"></a><span data-ttu-id="e435a-105">Тип ресурса Едукатионповерпоинтресаурце</span><span class="sxs-lookup"><span data-stu-id="e435a-105">educationPowerPointResource resource type</span></span>
 
-<span data-ttu-id="cbc44-106">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="cbc44-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e435a-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e435a-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cbc44-107">Подкласс объекта [едукатионресаурце](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="cbc44-107">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="cbc44-108">Это ресурс PowerPoint.</span><span class="sxs-lookup"><span data-stu-id="cbc44-108">This is a PowerPoint resource.</span></span> <span data-ttu-id="cbc44-109">Файл PowerPoint необходимо отправить в каталоге **филересаурце** , связанном с назначением или отправкой.</span><span class="sxs-lookup"><span data-stu-id="cbc44-109">The PowerPoint file must be uploaded in the **fileResource** directory associated with the assignment or submission.</span></span>
+<span data-ttu-id="e435a-107">Подкласс объекта [едукатионресаурце](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="e435a-107">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="e435a-108">Это ресурс PowerPoint.</span><span class="sxs-lookup"><span data-stu-id="e435a-108">This is a PowerPoint resource.</span></span> <span data-ttu-id="e435a-109">Файл PowerPoint необходимо отправить в каталоге **филересаурце** , связанном с назначением или отправкой.</span><span class="sxs-lookup"><span data-stu-id="e435a-109">The PowerPoint file must be uploaded in the **fileResource** directory associated with the assignment or submission.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="cbc44-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="cbc44-110">Properties</span></span>
-| <span data-ttu-id="cbc44-111">Свойство</span><span class="sxs-lookup"><span data-stu-id="cbc44-111">Property</span></span>     | <span data-ttu-id="cbc44-112">Тип</span><span class="sxs-lookup"><span data-stu-id="cbc44-112">Type</span></span>   |<span data-ttu-id="cbc44-113">Описание</span><span class="sxs-lookup"><span data-stu-id="cbc44-113">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e435a-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="e435a-110">Properties</span></span>
+| <span data-ttu-id="e435a-111">Свойство</span><span class="sxs-lookup"><span data-stu-id="e435a-111">Property</span></span>     | <span data-ttu-id="e435a-112">Тип</span><span class="sxs-lookup"><span data-stu-id="e435a-112">Type</span></span>   |<span data-ttu-id="e435a-113">Описание</span><span class="sxs-lookup"><span data-stu-id="e435a-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="cbc44-114">fileUrl</span><span class="sxs-lookup"><span data-stu-id="cbc44-114">fileUrl</span></span>|<span data-ttu-id="cbc44-115">String</span><span class="sxs-lookup"><span data-stu-id="cbc44-115">String</span></span>|<span data-ttu-id="cbc44-116">Расположение файла на диске.</span><span class="sxs-lookup"><span data-stu-id="cbc44-116">Location of the file on disk.</span></span>|
+|<span data-ttu-id="e435a-114">fileUrl</span><span class="sxs-lookup"><span data-stu-id="e435a-114">fileUrl</span></span>|<span data-ttu-id="e435a-115">String</span><span class="sxs-lookup"><span data-stu-id="e435a-115">String</span></span>|<span data-ttu-id="e435a-116">Расположение файла на диске.</span><span class="sxs-lookup"><span data-stu-id="e435a-116">Location of the file on disk.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="cbc44-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cbc44-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e435a-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e435a-117">JSON representation</span></span>
 
-<span data-ttu-id="cbc44-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cbc44-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e435a-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e435a-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

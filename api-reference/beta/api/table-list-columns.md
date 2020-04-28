@@ -12,48 +12,48 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42452850"
 ---
-# <a name="list-columns"></a><span data-ttu-id="5f771-103">Перечисление столбцов</span><span class="sxs-lookup"><span data-stu-id="5f771-103">List columns</span></span>
+# <a name="list-columns"></a><span data-ttu-id="e1488-103">Перечисление столбцов</span><span class="sxs-lookup"><span data-stu-id="e1488-103">List columns</span></span>
 
-<span data-ttu-id="5f771-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="5f771-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e1488-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e1488-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5f771-105">Получение списка объектов tablecolumn.</span><span class="sxs-lookup"><span data-stu-id="5f771-105">Retrieve a list of tablecolumn objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5f771-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5f771-106">Permissions</span></span>
-<span data-ttu-id="5f771-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5f771-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e1488-105">Получение списка объектов tablecolumn.</span><span class="sxs-lookup"><span data-stu-id="e1488-105">Retrieve a list of tablecolumn objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e1488-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e1488-106">Permissions</span></span>
+<span data-ttu-id="e1488-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e1488-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5f771-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5f771-109">Permission type</span></span>      | <span data-ttu-id="5f771-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5f771-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e1488-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e1488-109">Permission type</span></span>      | <span data-ttu-id="e1488-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e1488-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5f771-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5f771-111">Delegated (work or school account)</span></span> | <span data-ttu-id="5f771-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5f771-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="5f771-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5f771-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5f771-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5f771-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="5f771-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5f771-115">Application</span></span> | <span data-ttu-id="5f771-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5f771-116">Not supported.</span></span> |
+|<span data-ttu-id="e1488-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e1488-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e1488-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e1488-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e1488-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e1488-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e1488-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e1488-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e1488-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e1488-115">Application</span></span> | <span data-ttu-id="e1488-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e1488-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5f771-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5f771-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e1488-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e1488-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/tables/{id|name}/columns
 GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="5f771-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="5f771-118">Optional query parameters</span></span>
-<span data-ttu-id="5f771-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="5f771-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="5f771-120">Для получения надежных результатов применяйте параметры запросов [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) на странице.</span><span class="sxs-lookup"><span data-stu-id="5f771-120">For reliable results, use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through the results.</span></span> <span data-ttu-id="5f771-121">Это поможет избежать проблем с производительностью, связанных с большими результирующими наборами.</span><span class="sxs-lookup"><span data-stu-id="5f771-121">This will help avoid performance problems related to large result sets.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e1488-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="e1488-118">Optional query parameters</span></span>
+<span data-ttu-id="e1488-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="e1488-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="e1488-120">Для получения надежных результатов применяйте параметры запросов [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) на странице.</span><span class="sxs-lookup"><span data-stu-id="e1488-120">For reliable results, use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through the results.</span></span> <span data-ttu-id="e1488-121">Это поможет избежать проблем с производительностью, связанных с большими результирующими наборами.</span><span class="sxs-lookup"><span data-stu-id="e1488-121">This will help avoid performance problems related to large result sets.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5f771-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5f771-122">Request headers</span></span>
-| <span data-ttu-id="5f771-123">Имя</span><span class="sxs-lookup"><span data-stu-id="5f771-123">Name</span></span>      |<span data-ttu-id="5f771-124">Описание</span><span class="sxs-lookup"><span data-stu-id="5f771-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e1488-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e1488-122">Request headers</span></span>
+| <span data-ttu-id="e1488-123">Имя</span><span class="sxs-lookup"><span data-stu-id="e1488-123">Name</span></span>      |<span data-ttu-id="e1488-124">Описание</span><span class="sxs-lookup"><span data-stu-id="e1488-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="5f771-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5f771-125">Authorization</span></span>  | <span data-ttu-id="5f771-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5f771-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5f771-128">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="5f771-128">Workbook-Session-Id</span></span>  | <span data-ttu-id="5f771-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="5f771-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e1488-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e1488-125">Authorization</span></span>  | <span data-ttu-id="e1488-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e1488-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e1488-128">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e1488-128">Workbook-Session-Id</span></span>  | <span data-ttu-id="e1488-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="e1488-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5f771-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5f771-131">Request body</span></span>
-<span data-ttu-id="5f771-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="5f771-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e1488-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e1488-131">Request body</span></span>
+<span data-ttu-id="e1488-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e1488-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5f771-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="5f771-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e1488-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="e1488-133">Response</span></span>
 
-<span data-ttu-id="5f771-134">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5f771-134">If successful, this method returns a `200 OK` response code and collection of [workbookTableColumn](../resources/workbooktablecolumn.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="5f771-135">Пример</span><span class="sxs-lookup"><span data-stu-id="5f771-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5f771-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="5f771-136">Request</span></span>
-<span data-ttu-id="5f771-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5f771-137">Here is an example of the request.</span></span>
+<span data-ttu-id="e1488-134">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e1488-134">If successful, this method returns a `200 OK` response code and collection of [workbookTableColumn](../resources/workbooktablecolumn.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e1488-135">Пример</span><span class="sxs-lookup"><span data-stu-id="e1488-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e1488-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="e1488-136">Request</span></span>
+<span data-ttu-id="e1488-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e1488-137">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5f771-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="5f771-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e1488-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="e1488-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_columns"
@@ -61,22 +61,22 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5&$skip=5
 ```
-# <a name="c"></a>[<span data-ttu-id="5f771-139">C#</span><span class="sxs-lookup"><span data-stu-id="5f771-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e1488-139">C#</span><span class="sxs-lookup"><span data-stu-id="e1488-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-columns-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5f771-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5f771-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e1488-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e1488-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-columns-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5f771-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5f771-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e1488-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e1488-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-columns-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="5f771-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="5f771-142">Response</span></span>
-<span data-ttu-id="5f771-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5f771-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e1488-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="e1488-142">Response</span></span>
+<span data-ttu-id="e1488-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e1488-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,10 +100,10 @@ Content-length: 126
 }
 ```
 
-> <span data-ttu-id="5f771-146">
-  \*\*Примечание.\*\* Используйте параметры запросов [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter), чтобы просматривать постранично большое количество столбцов.</span><span class="sxs-lookup"><span data-stu-id="5f771-146">**Note:** Use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through large numbers of columns.</span></span>
+> <span data-ttu-id="e1488-146">
+  \*\*Примечание.\*\* Используйте параметры запросов [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter), чтобы просматривать постранично большое количество столбцов.</span><span class="sxs-lookup"><span data-stu-id="e1488-146">**Note:** Use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through large numbers of columns.</span></span>
 
-<span data-ttu-id="5f771-147">Пример.</span><span class="sxs-lookup"><span data-stu-id="5f771-147">Example:</span></span> 
+<span data-ttu-id="e1488-147">Пример.</span><span class="sxs-lookup"><span data-stu-id="e1488-147">Example:</span></span> 
 
 `https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5`
 `https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5&$skip=5`

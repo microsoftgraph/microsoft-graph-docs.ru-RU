@@ -12,55 +12,55 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42455685"
 ---
-# <a name="update-plannerplan"></a><span data-ttu-id="2411f-103">Обновление plannerPlan</span><span class="sxs-lookup"><span data-stu-id="2411f-103">Update plannerPlan</span></span>
+# <a name="update-plannerplan"></a><span data-ttu-id="43373-103">Обновление plannerPlan</span><span class="sxs-lookup"><span data-stu-id="43373-103">Update plannerPlan</span></span>
 
-<span data-ttu-id="2411f-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="2411f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="43373-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="43373-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2411f-105">Обновление свойств объекта **plannerPlan** .</span><span class="sxs-lookup"><span data-stu-id="2411f-105">Update the properties of a **plannerPlan** object.</span></span>
+<span data-ttu-id="43373-105">Обновление свойств объекта **plannerPlan** .</span><span class="sxs-lookup"><span data-stu-id="43373-105">Update the properties of a **plannerPlan** object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2411f-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2411f-106">Permissions</span></span>
-<span data-ttu-id="2411f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2411f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="43373-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="43373-106">Permissions</span></span>
+<span data-ttu-id="43373-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="43373-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2411f-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2411f-109">Permission type</span></span>      | <span data-ttu-id="2411f-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2411f-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="43373-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="43373-109">Permission type</span></span>      | <span data-ttu-id="43373-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="43373-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2411f-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2411f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2411f-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2411f-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2411f-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2411f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2411f-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2411f-114">Not supported.</span></span>    |
-|<span data-ttu-id="2411f-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2411f-115">Application</span></span> | <span data-ttu-id="2411f-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2411f-116">Not supported.</span></span> |
+|<span data-ttu-id="43373-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="43373-111">Delegated (work or school account)</span></span> | <span data-ttu-id="43373-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="43373-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="43373-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="43373-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43373-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43373-114">Not supported.</span></span>    |
+|<span data-ttu-id="43373-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="43373-115">Application</span></span> | <span data-ttu-id="43373-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43373-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2411f-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2411f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="43373-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="43373-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/plans/{plan-id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2411f-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2411f-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="43373-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="43373-118">Request headers</span></span>
 
-| <span data-ttu-id="2411f-119">Имя</span><span class="sxs-lookup"><span data-stu-id="2411f-119">Name</span></span>       | <span data-ttu-id="2411f-120">Описание</span><span class="sxs-lookup"><span data-stu-id="2411f-120">Description</span></span>|
+| <span data-ttu-id="43373-119">Имя</span><span class="sxs-lookup"><span data-stu-id="43373-119">Name</span></span>       | <span data-ttu-id="43373-120">Описание</span><span class="sxs-lookup"><span data-stu-id="43373-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="2411f-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2411f-121">Authorization</span></span>  | <span data-ttu-id="2411f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2411f-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="2411f-124">If-Match</span><span class="sxs-lookup"><span data-stu-id="2411f-124">If-Match</span></span>  | <span data-ttu-id="2411f-p103">Последнее известное значение ETag обновляемого объекта plannerPlan. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2411f-p103">Last known ETag value for the plannerPlan to be updated. Required.</span></span>|
+| <span data-ttu-id="43373-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="43373-121">Authorization</span></span>  | <span data-ttu-id="43373-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="43373-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="43373-124">If-Match</span><span class="sxs-lookup"><span data-stu-id="43373-124">If-Match</span></span>  | <span data-ttu-id="43373-p103">Последнее известное значение ETag обновляемого объекта plannerPlan. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="43373-p103">Last known ETag value for the plannerPlan to be updated. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2411f-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2411f-127">Request body</span></span>
-<span data-ttu-id="2411f-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="2411f-128">In the request body, supply the values for relevant fields to update.</span></span> <span data-ttu-id="2411f-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="2411f-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="2411f-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="2411f-130">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="43373-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="43373-127">Request body</span></span>
+<span data-ttu-id="43373-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="43373-128">In the request body, supply the values for relevant fields to update.</span></span> <span data-ttu-id="43373-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="43373-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="43373-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="43373-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="2411f-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="2411f-131">Property</span></span>     | <span data-ttu-id="2411f-132">Тип</span><span class="sxs-lookup"><span data-stu-id="2411f-132">Type</span></span>   |<span data-ttu-id="2411f-133">Описание</span><span class="sxs-lookup"><span data-stu-id="2411f-133">Description</span></span>|
+| <span data-ttu-id="43373-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="43373-131">Property</span></span>     | <span data-ttu-id="43373-132">Тип</span><span class="sxs-lookup"><span data-stu-id="43373-132">Type</span></span>   |<span data-ttu-id="43373-133">Описание</span><span class="sxs-lookup"><span data-stu-id="43373-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2411f-134">owner</span><span class="sxs-lookup"><span data-stu-id="2411f-134">owner</span></span>|<span data-ttu-id="2411f-135">String</span><span class="sxs-lookup"><span data-stu-id="2411f-135">String</span></span>|<span data-ttu-id="2411f-p105">Идентификатор `id` [группы](../resources/group.md), которой принадлежит план. Чтобы в этом поле можно было указать значение, должна существовать подходящая группа. Указанное значение может изменить только владелец.</span><span class="sxs-lookup"><span data-stu-id="2411f-p105">[Group](../resources/group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.</span></span>|
-|<span data-ttu-id="2411f-139">title</span><span class="sxs-lookup"><span data-stu-id="2411f-139">title</span></span>|<span data-ttu-id="2411f-140">String</span><span class="sxs-lookup"><span data-stu-id="2411f-140">String</span></span>|<span data-ttu-id="2411f-141">Название плана.</span><span class="sxs-lookup"><span data-stu-id="2411f-141">Title of the plan.</span></span>|
+|<span data-ttu-id="43373-134">owner</span><span class="sxs-lookup"><span data-stu-id="43373-134">owner</span></span>|<span data-ttu-id="43373-135">String</span><span class="sxs-lookup"><span data-stu-id="43373-135">String</span></span>|<span data-ttu-id="43373-p105">Идентификатор `id` [группы](../resources/group.md), которой принадлежит план. Чтобы в этом поле можно было указать значение, должна существовать подходящая группа. Указанное значение может изменить только владелец.</span><span class="sxs-lookup"><span data-stu-id="43373-p105">[Group](../resources/group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.</span></span>|
+|<span data-ttu-id="43373-139">title</span><span class="sxs-lookup"><span data-stu-id="43373-139">title</span></span>|<span data-ttu-id="43373-140">String</span><span class="sxs-lookup"><span data-stu-id="43373-140">String</span></span>|<span data-ttu-id="43373-141">Название плана.</span><span class="sxs-lookup"><span data-stu-id="43373-141">Title of the plan.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="2411f-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="2411f-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="43373-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="43373-142">Response</span></span>
 
-<span data-ttu-id="2411f-143">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [plannerPlan](../resources/plannerplan.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2411f-143">If successful, this method returns a `200 OK` response code and an updated [plannerPlan](../resources/plannerplan.md) object in the response body.</span></span>
+<span data-ttu-id="43373-143">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [plannerPlan](../resources/plannerplan.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="43373-143">If successful, this method returns a `200 OK` response code and an updated [plannerPlan](../resources/plannerplan.md) object in the response body.</span></span>
 
-<span data-ttu-id="2411f-p106">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="2411f-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="43373-p106">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="43373-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="2411f-147">Пример</span><span class="sxs-lookup"><span data-stu-id="2411f-147">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2411f-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="2411f-148">Request</span></span>
-<span data-ttu-id="2411f-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2411f-149">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="43373-147">Пример</span><span class="sxs-lookup"><span data-stu-id="43373-147">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="43373-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="43373-148">Request</span></span>
+<span data-ttu-id="43373-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="43373-149">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2411f-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="2411f-150">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="43373-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="43373-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannerplan"
@@ -75,24 +75,24 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   "title": "title-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2411f-151">C#</span><span class="sxs-lookup"><span data-stu-id="2411f-151">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="43373-151">C#</span><span class="sxs-lookup"><span data-stu-id="43373-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-plannerplan-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2411f-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2411f-152">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="43373-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="43373-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannerplan-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2411f-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2411f-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="43373-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="43373-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-plannerplan-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="2411f-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="2411f-154">Response</span></span>
-<span data-ttu-id="2411f-155">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="2411f-155">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="43373-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="43373-154">Response</span></span>
+<span data-ttu-id="43373-155">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="43373-155">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="2411f-p107">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2411f-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="43373-p107">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="43373-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

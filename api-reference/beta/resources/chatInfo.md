@@ -12,25 +12,25 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42507735"
 ---
-# <a name="chatinfo-resource-type"></a><span data-ttu-id="1357f-103">Тип ресурса Чатинфо</span><span class="sxs-lookup"><span data-stu-id="1357f-103">chatInfo resource type</span></span>
+# <a name="chatinfo-resource-type"></a><span data-ttu-id="f7a88-103">Тип ресурса Чатинфо</span><span class="sxs-lookup"><span data-stu-id="f7a88-103">chatInfo resource type</span></span>
 
-<span data-ttu-id="1357f-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1357f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f7a88-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f7a88-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1357f-105">Содержит сведения, связанные с собраниями Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="1357f-105">Contains information associated with Microsoft Teams meetings.</span></span>
+<span data-ttu-id="f7a88-105">Содержит сведения, связанные с собраниями Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="f7a88-105">Contains information associated with Microsoft Teams meetings.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1357f-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="1357f-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f7a88-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="f7a88-106">Properties</span></span>
 
-| <span data-ttu-id="1357f-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="1357f-107">Property</span></span>            | <span data-ttu-id="1357f-108">Тип</span><span class="sxs-lookup"><span data-stu-id="1357f-108">Type</span></span>    | <span data-ttu-id="1357f-109">Описание</span><span class="sxs-lookup"><span data-stu-id="1357f-109">Description</span></span>|
+| <span data-ttu-id="f7a88-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="f7a88-107">Property</span></span>            | <span data-ttu-id="f7a88-108">Тип</span><span class="sxs-lookup"><span data-stu-id="f7a88-108">Type</span></span>    | <span data-ttu-id="f7a88-109">Описание</span><span class="sxs-lookup"><span data-stu-id="f7a88-109">Description</span></span>|
 |:--------------------|:--------|:-----------|
-| <span data-ttu-id="1357f-110">messageId</span><span class="sxs-lookup"><span data-stu-id="1357f-110">messageId</span></span>           | <span data-ttu-id="1357f-111">String</span><span class="sxs-lookup"><span data-stu-id="1357f-111">String</span></span>  | <span data-ttu-id="1357f-112">Уникальный идентификатор сообщения в канале Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="1357f-112">The unique identifier for a message in a Microsoft Teams channel.</span></span> |
-| <span data-ttu-id="1357f-113">репличаинмессажеид</span><span class="sxs-lookup"><span data-stu-id="1357f-113">replyChainMessageId</span></span> | <span data-ttu-id="1357f-114">String</span><span class="sxs-lookup"><span data-stu-id="1357f-114">String</span></span>  | <span data-ttu-id="1357f-115">Идентификатор ответного сообщения.</span><span class="sxs-lookup"><span data-stu-id="1357f-115">The ID of the reply message.</span></span> |
-| <span data-ttu-id="1357f-116">Tидентификатор</span><span class="sxs-lookup"><span data-stu-id="1357f-116">threadId</span></span>            | <span data-ttu-id="1357f-117">String</span><span class="sxs-lookup"><span data-stu-id="1357f-117">String</span></span>  | <span data-ttu-id="1357f-118">Уникальный идентификатор потока в Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="1357f-118">The unique identifier for a thread in Microsoft Teams.</span></span> |
+| <span data-ttu-id="f7a88-110">messageId</span><span class="sxs-lookup"><span data-stu-id="f7a88-110">messageId</span></span>           | <span data-ttu-id="f7a88-111">String</span><span class="sxs-lookup"><span data-stu-id="f7a88-111">String</span></span>  | <span data-ttu-id="f7a88-112">Уникальный идентификатор сообщения в канале Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="f7a88-112">The unique identifier for a message in a Microsoft Teams channel.</span></span> |
+| <span data-ttu-id="f7a88-113">репличаинмессажеид</span><span class="sxs-lookup"><span data-stu-id="f7a88-113">replyChainMessageId</span></span> | <span data-ttu-id="f7a88-114">String</span><span class="sxs-lookup"><span data-stu-id="f7a88-114">String</span></span>  | <span data-ttu-id="f7a88-115">Идентификатор ответного сообщения.</span><span class="sxs-lookup"><span data-stu-id="f7a88-115">The ID of the reply message.</span></span> |
+| <span data-ttu-id="f7a88-116">Tидентификатор</span><span class="sxs-lookup"><span data-stu-id="f7a88-116">threadId</span></span>            | <span data-ttu-id="f7a88-117">String</span><span class="sxs-lookup"><span data-stu-id="f7a88-117">String</span></span>  | <span data-ttu-id="f7a88-118">Уникальный идентификатор потока в Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="f7a88-118">The unique identifier for a thread in Microsoft Teams.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="1357f-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1357f-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f7a88-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f7a88-119">JSON representation</span></span>
 
-<span data-ttu-id="1357f-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1357f-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f7a88-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f7a88-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

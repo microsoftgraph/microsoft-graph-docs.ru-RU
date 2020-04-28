@@ -13,18 +13,18 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42507613"
 ---
-# <a name="commentaction-resource-type"></a><span data-ttu-id="da68d-103">Тип ресурса CommentAction</span><span class="sxs-lookup"><span data-stu-id="da68d-103">CommentAction resource type</span></span>
+# <a name="commentaction-resource-type"></a><span data-ttu-id="433fd-103">Тип ресурса CommentAction</span><span class="sxs-lookup"><span data-stu-id="433fd-103">CommentAction resource type</span></span>
 
-<span data-ttu-id="da68d-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="da68d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="433fd-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="433fd-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="da68d-105">В ресурсе **CommentAction** содержатся сведения о [действии][] добавления комментария, выполненном над элементом.</span><span class="sxs-lookup"><span data-stu-id="da68d-105">The **CommentAction** resource provides information about a comment [activity][] made on an item.</span></span>
+<span data-ttu-id="433fd-105">В ресурсе **CommentAction** содержатся сведения о [действии][] добавления комментария, выполненном над элементом.</span><span class="sxs-lookup"><span data-stu-id="433fd-105">The **CommentAction** resource provides information about a comment [activity][] made on an item.</span></span>
 
 [действии]: itemactivity.md
 [activity]: itemactivity.md
 
-## <a name="json-representation"></a><span data-ttu-id="da68d-107">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="da68d-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="433fd-107">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="433fd-107">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -40,19 +40,19 @@ ms.locfileid: "42507613"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="da68d-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="da68d-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="433fd-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="433fd-108">Properties</span></span>
 
-| <span data-ttu-id="da68d-109">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="da68d-109">Property name</span></span>    | <span data-ttu-id="da68d-110">Тип</span><span class="sxs-lookup"><span data-stu-id="da68d-110">Type</span></span>                       | <span data-ttu-id="da68d-111">Описание</span><span class="sxs-lookup"><span data-stu-id="da68d-111">Description</span></span>
+| <span data-ttu-id="433fd-109">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="433fd-109">Property name</span></span>    | <span data-ttu-id="433fd-110">Тип</span><span class="sxs-lookup"><span data-stu-id="433fd-110">Type</span></span>                       | <span data-ttu-id="433fd-111">Описание</span><span class="sxs-lookup"><span data-stu-id="433fd-111">Description</span></span>
 |:-----------------|:---------------------------|:-----------------------------
-| <span data-ttu-id="da68d-112">isReply</span><span class="sxs-lookup"><span data-stu-id="da68d-112">isReply</span></span>          | <span data-ttu-id="da68d-113">boolean</span><span class="sxs-lookup"><span data-stu-id="da68d-113">boolean</span></span>                    | <span data-ttu-id="da68d-114">Если это свойство имеет значение true, то данное действие было ответом на существующий поток комментариев.</span><span class="sxs-lookup"><span data-stu-id="da68d-114">If true, this activity was a reply to an existing comment thread.</span></span>
-| <span data-ttu-id="da68d-115">parentAuthor</span><span class="sxs-lookup"><span data-stu-id="da68d-115">parentAuthor</span></span>     | <span data-ttu-id="da68d-116">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="da68d-116">[identitySet][]</span></span>            | <span data-ttu-id="da68d-117">Удостоверение пользователя, начавшего ветвь комментариев.</span><span class="sxs-lookup"><span data-stu-id="da68d-117">The identity of the user who started the comment thread.</span></span>
-| <span data-ttu-id="da68d-118">participants</span><span class="sxs-lookup"><span data-stu-id="da68d-118">participants</span></span>     | <span data-ttu-id="da68d-119">Коллекция [identitySet][]</span><span class="sxs-lookup"><span data-stu-id="da68d-119">[identitySet][] collection</span></span> | <span data-ttu-id="da68d-120">Удостоверения пользователей, участвующих в ветви комментариев.</span><span class="sxs-lookup"><span data-stu-id="da68d-120">The identities of the users participating in this comment thread.</span></span>
+| <span data-ttu-id="433fd-112">isReply</span><span class="sxs-lookup"><span data-stu-id="433fd-112">isReply</span></span>          | <span data-ttu-id="433fd-113">boolean</span><span class="sxs-lookup"><span data-stu-id="433fd-113">boolean</span></span>                    | <span data-ttu-id="433fd-114">Если это свойство имеет значение true, то данное действие было ответом на существующий поток комментариев.</span><span class="sxs-lookup"><span data-stu-id="433fd-114">If true, this activity was a reply to an existing comment thread.</span></span>
+| <span data-ttu-id="433fd-115">parentAuthor</span><span class="sxs-lookup"><span data-stu-id="433fd-115">parentAuthor</span></span>     | <span data-ttu-id="433fd-116">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="433fd-116">[identitySet][]</span></span>            | <span data-ttu-id="433fd-117">Удостоверение пользователя, начавшего ветвь комментариев.</span><span class="sxs-lookup"><span data-stu-id="433fd-117">The identity of the user who started the comment thread.</span></span>
+| <span data-ttu-id="433fd-118">participants</span><span class="sxs-lookup"><span data-stu-id="433fd-118">participants</span></span>     | <span data-ttu-id="433fd-119">Коллекция [identitySet][]</span><span class="sxs-lookup"><span data-stu-id="433fd-119">[identitySet][] collection</span></span> | <span data-ttu-id="433fd-120">Удостоверения пользователей, участвующих в ветви комментариев.</span><span class="sxs-lookup"><span data-stu-id="433fd-120">The identities of the users participating in this comment thread.</span></span>
 
 [identitySet]: identityset.md
 
-## <a name="remarks"></a><span data-ttu-id="da68d-122">Замечания</span><span class="sxs-lookup"><span data-stu-id="da68d-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="433fd-122">Замечания</span><span class="sxs-lookup"><span data-stu-id="433fd-122">Remarks</span></span>
 
-<span data-ttu-id="da68d-123">На данный момент записи о действиях над элементом доступны только в SharePoint и OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="da68d-123">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+<span data-ttu-id="433fd-123">На данный момент записи о действиях над элементом доступны только в SharePoint и OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="433fd-123">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
 <!--
 {

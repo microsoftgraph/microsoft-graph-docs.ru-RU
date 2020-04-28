@@ -14,47 +14,47 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42431517"
 ---
-# <a name="create-items"></a><span data-ttu-id="1788a-103">Создание элементов</span><span class="sxs-lookup"><span data-stu-id="1788a-103">Create items</span></span>
+# <a name="create-items"></a><span data-ttu-id="975c7-103">Создание элементов</span><span class="sxs-lookup"><span data-stu-id="975c7-103">Create items</span></span>
 
-<span data-ttu-id="1788a-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1788a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="975c7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="975c7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1788a-105">Создание элемента в Dynamics 365 Business Central для использования в счетах, квотах и т. д.</span><span class="sxs-lookup"><span data-stu-id="1788a-105">Create an item in Dynamics 365 Business Central for use on invoices, quotes, etc.</span></span>
+<span data-ttu-id="975c7-105">Создание элемента в Dynamics 365 Business Central для использования в счетах, квотах и т. д.</span><span class="sxs-lookup"><span data-stu-id="975c7-105">Create an item in Dynamics 365 Business Central for use on invoices, quotes, etc.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1788a-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1788a-106">Permissions</span></span>
-<span data-ttu-id="1788a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1788a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="975c7-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="975c7-106">Permissions</span></span>
+<span data-ttu-id="975c7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="975c7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1788a-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1788a-109">Permission type</span></span> |<span data-ttu-id="1788a-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1788a-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="975c7-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="975c7-109">Permission type</span></span> |<span data-ttu-id="975c7-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="975c7-110">Permissions (from least to most privileged)</span></span>|
 |:---------------|:------------------------------------------|
-|<span data-ttu-id="1788a-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1788a-111">Delegated (work or school account)</span></span>|<span data-ttu-id="1788a-112">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1788a-112">Financials.ReadWrite.All</span></span> |
-|<span data-ttu-id="1788a-113">Делегированная учетная запись (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1788a-113">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="1788a-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1788a-114">Not supported.</span></span>|
-|<span data-ttu-id="1788a-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1788a-115">Application</span></span>|<span data-ttu-id="1788a-116">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1788a-116">Financials.ReadWrite.All</span></span>|
+|<span data-ttu-id="975c7-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="975c7-111">Delegated (work or school account)</span></span>|<span data-ttu-id="975c7-112">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="975c7-112">Financials.ReadWrite.All</span></span> |
+|<span data-ttu-id="975c7-113">Делегированная учетная запись (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="975c7-113">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="975c7-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="975c7-114">Not supported.</span></span>|
+|<span data-ttu-id="975c7-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="975c7-115">Application</span></span>|<span data-ttu-id="975c7-116">Financials.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="975c7-116">Financials.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1788a-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1788a-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="975c7-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="975c7-117">HTTP request</span></span>
 ```
 POST /financials/companies/{id}/items
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1788a-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="1788a-118">Optional query parameters</span></span>
-<span data-ttu-id="1788a-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="1788a-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="975c7-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="975c7-118">Optional query parameters</span></span>
+<span data-ttu-id="975c7-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="975c7-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1788a-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1788a-120">Request headers</span></span>
-|<span data-ttu-id="1788a-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1788a-121">Header</span></span>       |<span data-ttu-id="1788a-122">Значение</span><span class="sxs-lookup"><span data-stu-id="1788a-122">Value</span></span>                    |
+## <a name="request-headers"></a><span data-ttu-id="975c7-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="975c7-120">Request headers</span></span>
+|<span data-ttu-id="975c7-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="975c7-121">Header</span></span>       |<span data-ttu-id="975c7-122">Значение</span><span class="sxs-lookup"><span data-stu-id="975c7-122">Value</span></span>                    |
 |-------------|-------------------------|
-|<span data-ttu-id="1788a-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1788a-123">Authorization</span></span>|<span data-ttu-id="1788a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1788a-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="1788a-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1788a-126">Content-Type</span></span> |<span data-ttu-id="1788a-127">application/json</span><span class="sxs-lookup"><span data-stu-id="1788a-127">application/json</span></span>         |
+|<span data-ttu-id="975c7-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="975c7-123">Authorization</span></span>|<span data-ttu-id="975c7-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="975c7-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="975c7-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="975c7-126">Content-Type</span></span> |<span data-ttu-id="975c7-127">application/json</span><span class="sxs-lookup"><span data-stu-id="975c7-127">application/json</span></span>         |
 
-## <a name="request-body"></a><span data-ttu-id="1788a-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1788a-128">Request body</span></span>
-<span data-ttu-id="1788a-129">В тексте запроса добавьте представление объекта **Items** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1788a-129">In the request body, supply a JSON representation of an **items** object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="975c7-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="975c7-128">Request body</span></span>
+<span data-ttu-id="975c7-129">В тексте запроса добавьте представление объекта **Items** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="975c7-129">In the request body, supply a JSON representation of an **items** object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1788a-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="1788a-130">Response</span></span>
-<span data-ttu-id="1788a-131">В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **Items** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1788a-131">If successful, this method returns ```201 Created``` response code and an **items** object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="975c7-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="975c7-130">Response</span></span>
+<span data-ttu-id="975c7-131">В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **Items** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="975c7-131">If successful, this method returns ```201 Created``` response code and an **items** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1788a-132">Пример</span><span class="sxs-lookup"><span data-stu-id="1788a-132">Example</span></span>
-<span data-ttu-id="1788a-133">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="1788a-133">**Request**</span></span>
+## <a name="example"></a><span data-ttu-id="975c7-132">Пример</span><span class="sxs-lookup"><span data-stu-id="975c7-132">Example</span></span>
+<span data-ttu-id="975c7-133">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="975c7-133">**Request**</span></span>
 
-<span data-ttu-id="1788a-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1788a-134">Here is an example of a request.</span></span>
+<span data-ttu-id="975c7-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="975c7-134">Here is an example of a request.</span></span>
 
 ```json
 POST https://graph.microsoft.com/beta/financials/companies/{id}/items
@@ -77,11 +77,11 @@ Content-type: application/json
 
 ```
 
-<span data-ttu-id="1788a-135">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="1788a-135">**Response**</span></span>
+<span data-ttu-id="975c7-135">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="975c7-135">**Response**</span></span>
 
-<span data-ttu-id="1788a-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="1788a-136">Here is an example of the response.</span></span> 
+<span data-ttu-id="975c7-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="975c7-136">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="1788a-137">**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="1788a-137">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="1788a-138">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1788a-138">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="975c7-137">**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="975c7-137">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="975c7-138">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="975c7-138">All the properties will be returned from an actual call.</span></span>
 
 ```json
 HTTP/1.1 201 Created
