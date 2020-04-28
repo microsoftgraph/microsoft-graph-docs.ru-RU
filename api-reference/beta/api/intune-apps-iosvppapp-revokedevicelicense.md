@@ -12,26 +12,26 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
 ms.locfileid: "43416779"
 ---
-# <a name="revokedevicelicense-action"></a><span data-ttu-id="80d91-103">Действие revokeAllLicenses</span><span class="sxs-lookup"><span data-stu-id="80d91-103">revokeDeviceLicense action</span></span>
+# <a name="revokedevicelicense-action"></a><span data-ttu-id="8d479-103">Действие revokeAllLicenses</span><span class="sxs-lookup"><span data-stu-id="8d479-103">revokeDeviceLicense action</span></span>
 
-<span data-ttu-id="80d91-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="80d91-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8d479-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8d479-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="80d91-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="80d91-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="8d479-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8d479-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="80d91-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="80d91-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8d479-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8d479-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="80d91-107">Отзыв назначенной лицензии на устройство VPP для iOS для данного приложения.</span><span class="sxs-lookup"><span data-stu-id="80d91-107">Revoke assigned iOS VPP device license for given app.</span></span>
+<span data-ttu-id="8d479-107">Отзыв назначенной лицензии на устройство VPP для iOS для данного приложения.</span><span class="sxs-lookup"><span data-stu-id="8d479-107">Revoke assigned iOS VPP device license for given app.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="80d91-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="80d91-108">Prerequisites</span></span>
-<span data-ttu-id="80d91-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="80d91-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="8d479-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="8d479-108">Prerequisites</span></span>
+<span data-ttu-id="8d479-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8d479-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="80d91-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="80d91-111">Permission type</span></span>|<span data-ttu-id="80d91-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="80d91-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="8d479-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8d479-111">Permission type</span></span>|<span data-ttu-id="8d479-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="8d479-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="80d91-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="80d91-113">Delegated (work or school account)</span></span>|<span data-ttu-id="80d91-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="80d91-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="80d91-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="80d91-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="80d91-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="80d91-116">Not supported.</span></span>|
-|<span data-ttu-id="80d91-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="80d91-117">Application</span></span>|<span data-ttu-id="80d91-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="80d91-118">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="8d479-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8d479-113">Delegated (work or school account)</span></span>|<span data-ttu-id="8d479-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8d479-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="8d479-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8d479-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8d479-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8d479-116">Not supported.</span></span>|
+|<span data-ttu-id="8d479-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8d479-117">Application</span></span>|<span data-ttu-id="8d479-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8d479-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="80d91-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="80d91-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8d479-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8d479-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -42,31 +42,31 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/revokeDeviceLicense
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="80d91-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="80d91-120">Request headers</span></span>
-|<span data-ttu-id="80d91-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="80d91-121">Header</span></span>|<span data-ttu-id="80d91-122">Значение</span><span class="sxs-lookup"><span data-stu-id="80d91-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8d479-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="8d479-120">Request headers</span></span>
+|<span data-ttu-id="8d479-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="8d479-121">Header</span></span>|<span data-ttu-id="8d479-122">Значение</span><span class="sxs-lookup"><span data-stu-id="8d479-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="80d91-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="80d91-123">Authorization</span></span>|<span data-ttu-id="80d91-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="80d91-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="80d91-125">Accept</span><span class="sxs-lookup"><span data-stu-id="80d91-125">Accept</span></span>|<span data-ttu-id="80d91-126">application/json</span><span class="sxs-lookup"><span data-stu-id="80d91-126">application/json</span></span>|
+|<span data-ttu-id="8d479-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8d479-123">Authorization</span></span>|<span data-ttu-id="8d479-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8d479-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="8d479-125">Accept</span><span class="sxs-lookup"><span data-stu-id="8d479-125">Accept</span></span>|<span data-ttu-id="8d479-126">application/json</span><span class="sxs-lookup"><span data-stu-id="8d479-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="80d91-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="80d91-127">Request body</span></span>
-<span data-ttu-id="80d91-128">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="80d91-128">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8d479-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="8d479-127">Request body</span></span>
+<span data-ttu-id="8d479-128">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8d479-128">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="80d91-129">В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="80d91-129">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="8d479-129">В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="8d479-129">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="80d91-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="80d91-130">Property</span></span>|<span data-ttu-id="80d91-131">Тип</span><span class="sxs-lookup"><span data-stu-id="80d91-131">Type</span></span>|<span data-ttu-id="80d91-132">Описание</span><span class="sxs-lookup"><span data-stu-id="80d91-132">Description</span></span>|
+|<span data-ttu-id="8d479-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="8d479-130">Property</span></span>|<span data-ttu-id="8d479-131">Тип</span><span class="sxs-lookup"><span data-stu-id="8d479-131">Type</span></span>|<span data-ttu-id="8d479-132">Описание</span><span class="sxs-lookup"><span data-stu-id="8d479-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="80d91-133">манажеддевицеид</span><span class="sxs-lookup"><span data-stu-id="80d91-133">managedDeviceId</span></span>|<span data-ttu-id="80d91-134">String</span><span class="sxs-lookup"><span data-stu-id="80d91-134">String</span></span>|<span data-ttu-id="80d91-135">DeviceId, для которого назначена лицензия на приложение</span><span class="sxs-lookup"><span data-stu-id="80d91-135">DeviceId for whom assigned app license is to be revoked</span></span>|
-|<span data-ttu-id="80d91-136">нотифиманажеддевицес</span><span class="sxs-lookup"><span data-stu-id="80d91-136">notifyManagedDevices</span></span>|<span data-ttu-id="80d91-137">Логическое</span><span class="sxs-lookup"><span data-stu-id="80d91-137">Boolean</span></span>|<span data-ttu-id="80d91-138">Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство</span><span class="sxs-lookup"><span data-stu-id="80d91-138">Boolean that indicates if revoke notification should be sent to device</span></span>|
+|<span data-ttu-id="8d479-133">манажеддевицеид</span><span class="sxs-lookup"><span data-stu-id="8d479-133">managedDeviceId</span></span>|<span data-ttu-id="8d479-134">String</span><span class="sxs-lookup"><span data-stu-id="8d479-134">String</span></span>|<span data-ttu-id="8d479-135">DeviceId, для которого назначена лицензия на приложение</span><span class="sxs-lookup"><span data-stu-id="8d479-135">DeviceId for whom assigned app license is to be revoked</span></span>|
+|<span data-ttu-id="8d479-136">нотифиманажеддевицес</span><span class="sxs-lookup"><span data-stu-id="8d479-136">notifyManagedDevices</span></span>|<span data-ttu-id="8d479-137">Boolean</span><span class="sxs-lookup"><span data-stu-id="8d479-137">Boolean</span></span>|<span data-ttu-id="8d479-138">Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство</span><span class="sxs-lookup"><span data-stu-id="8d479-138">Boolean that indicates if revoke notification should be sent to device</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="80d91-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="80d91-139">Response</span></span>
-<span data-ttu-id="80d91-140">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="80d91-140">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="8d479-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="8d479-139">Response</span></span>
+<span data-ttu-id="8d479-140">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="8d479-140">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="80d91-141">Пример</span><span class="sxs-lookup"><span data-stu-id="80d91-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8d479-141">Пример</span><span class="sxs-lookup"><span data-stu-id="8d479-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="80d91-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="80d91-142">Request</span></span>
-<span data-ttu-id="80d91-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="80d91-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="8d479-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="8d479-142">Request</span></span>
+<span data-ttu-id="8d479-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8d479-143">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/revokeDeviceLicense
 
@@ -79,8 +79,8 @@ Content-length: 85
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="80d91-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="80d91-144">Response</span></span>
-<span data-ttu-id="80d91-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="80d91-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="8d479-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d479-144">Response</span></span>
+<span data-ttu-id="8d479-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8d479-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

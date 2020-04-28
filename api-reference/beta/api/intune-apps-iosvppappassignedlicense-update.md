@@ -12,26 +12,26 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
 ms.locfileid: "43416579"
 ---
-# <a name="update-iosvppappassignedlicense"></a><span data-ttu-id="456f0-103">Обновление Иосвппаппассигнедлиценсе</span><span class="sxs-lookup"><span data-stu-id="456f0-103">Update iosVppAppAssignedLicense</span></span>
+# <a name="update-iosvppappassignedlicense"></a><span data-ttu-id="b726b-103">Обновление Иосвппаппассигнедлиценсе</span><span class="sxs-lookup"><span data-stu-id="b726b-103">Update iosVppAppAssignedLicense</span></span>
 
-<span data-ttu-id="456f0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="456f0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b726b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b726b-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="456f0-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="456f0-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="b726b-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b726b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="456f0-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="456f0-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b726b-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b726b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="456f0-107">Обновление свойств объекта [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md) .</span><span class="sxs-lookup"><span data-stu-id="456f0-107">Update the properties of a [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) object.</span></span>
+<span data-ttu-id="b726b-107">Обновление свойств объекта [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md) .</span><span class="sxs-lookup"><span data-stu-id="b726b-107">Update the properties of a [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="456f0-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="456f0-108">Prerequisites</span></span>
-<span data-ttu-id="456f0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="456f0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b726b-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="b726b-108">Prerequisites</span></span>
+<span data-ttu-id="b726b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b726b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="456f0-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="456f0-111">Permission type</span></span>|<span data-ttu-id="456f0-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="456f0-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="b726b-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b726b-111">Permission type</span></span>|<span data-ttu-id="b726b-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="b726b-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="456f0-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="456f0-113">Delegated (work or school account)</span></span>|<span data-ttu-id="456f0-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="456f0-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="456f0-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="456f0-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="456f0-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="456f0-116">Not supported.</span></span>|
-|<span data-ttu-id="456f0-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="456f0-117">Application</span></span>|<span data-ttu-id="456f0-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="456f0-118">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="b726b-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b726b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="b726b-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b726b-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="b726b-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b726b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b726b-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b726b-116">Not supported.</span></span>|
+|<span data-ttu-id="b726b-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b726b-117">Application</span></span>|<span data-ttu-id="b726b-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b726b-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="456f0-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="456f0-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b726b-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b726b-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,34 +40,34 @@ ms.locfileid: "43416579"
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assignedLicenses/{iosVppAppAssignedLicenseId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="456f0-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="456f0-120">Request headers</span></span>
-|<span data-ttu-id="456f0-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="456f0-121">Header</span></span>|<span data-ttu-id="456f0-122">Значение</span><span class="sxs-lookup"><span data-stu-id="456f0-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b726b-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="b726b-120">Request headers</span></span>
+|<span data-ttu-id="b726b-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="b726b-121">Header</span></span>|<span data-ttu-id="b726b-122">Значение</span><span class="sxs-lookup"><span data-stu-id="b726b-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="456f0-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="456f0-123">Authorization</span></span>|<span data-ttu-id="456f0-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="456f0-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="456f0-125">Accept</span><span class="sxs-lookup"><span data-stu-id="456f0-125">Accept</span></span>|<span data-ttu-id="456f0-126">application/json</span><span class="sxs-lookup"><span data-stu-id="456f0-126">application/json</span></span>|
+|<span data-ttu-id="b726b-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b726b-123">Authorization</span></span>|<span data-ttu-id="b726b-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b726b-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="b726b-125">Accept</span><span class="sxs-lookup"><span data-stu-id="b726b-125">Accept</span></span>|<span data-ttu-id="b726b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="b726b-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="456f0-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="456f0-127">Request body</span></span>
-<span data-ttu-id="456f0-128">В тексте запроса добавьте представление объекта [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="456f0-128">In the request body, supply a JSON representation for the [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b726b-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b726b-127">Request body</span></span>
+<span data-ttu-id="b726b-128">В тексте запроса добавьте представление объекта [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b726b-128">In the request body, supply a JSON representation for the [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) object.</span></span>
 
-<span data-ttu-id="456f0-129">В следующей таблице приведены свойства, необходимые при создании [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md).</span><span class="sxs-lookup"><span data-stu-id="456f0-129">The following table shows the properties that are required when you create the [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md).</span></span>
+<span data-ttu-id="b726b-129">В следующей таблице приведены свойства, необходимые при создании [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md).</span><span class="sxs-lookup"><span data-stu-id="b726b-129">The following table shows the properties that are required when you create the [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md).</span></span>
 
-|<span data-ttu-id="456f0-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="456f0-130">Property</span></span>|<span data-ttu-id="456f0-131">Тип</span><span class="sxs-lookup"><span data-stu-id="456f0-131">Type</span></span>|<span data-ttu-id="456f0-132">Описание</span><span class="sxs-lookup"><span data-stu-id="456f0-132">Description</span></span>|
+|<span data-ttu-id="b726b-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="b726b-130">Property</span></span>|<span data-ttu-id="b726b-131">Тип</span><span class="sxs-lookup"><span data-stu-id="b726b-131">Type</span></span>|<span data-ttu-id="b726b-132">Описание</span><span class="sxs-lookup"><span data-stu-id="b726b-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="456f0-133">id</span><span class="sxs-lookup"><span data-stu-id="456f0-133">id</span></span>|<span data-ttu-id="456f0-134">Строка</span><span class="sxs-lookup"><span data-stu-id="456f0-134">String</span></span>|<span data-ttu-id="456f0-135">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="456f0-135">Key of the entity.</span></span>|
-|<span data-ttu-id="456f0-136">усеремаиладдресс</span><span class="sxs-lookup"><span data-stu-id="456f0-136">userEmailAddress</span></span>|<span data-ttu-id="456f0-137">String</span><span class="sxs-lookup"><span data-stu-id="456f0-137">String</span></span>|<span data-ttu-id="456f0-138">Адрес электронной почты пользователя.</span><span class="sxs-lookup"><span data-stu-id="456f0-138">The user email address.</span></span>|
-|<span data-ttu-id="456f0-139">userId</span><span class="sxs-lookup"><span data-stu-id="456f0-139">userId</span></span>|<span data-ttu-id="456f0-140">String</span><span class="sxs-lookup"><span data-stu-id="456f0-140">String</span></span>|<span data-ttu-id="456f0-141">Идентификатор пользователя.</span><span class="sxs-lookup"><span data-stu-id="456f0-141">The user ID.</span></span>|
-|<span data-ttu-id="456f0-142">userName</span><span class="sxs-lookup"><span data-stu-id="456f0-142">userName</span></span>|<span data-ttu-id="456f0-143">String</span><span class="sxs-lookup"><span data-stu-id="456f0-143">String</span></span>|<span data-ttu-id="456f0-144">Имя пользователя.</span><span class="sxs-lookup"><span data-stu-id="456f0-144">The user name.</span></span>|
-|<span data-ttu-id="456f0-145">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="456f0-145">userPrincipalName</span></span>|<span data-ttu-id="456f0-146">Строка</span><span class="sxs-lookup"><span data-stu-id="456f0-146">String</span></span>|<span data-ttu-id="456f0-147">Имя участника-пользователя.</span><span class="sxs-lookup"><span data-stu-id="456f0-147">The user principal name.</span></span>|
+|<span data-ttu-id="b726b-133">id</span><span class="sxs-lookup"><span data-stu-id="b726b-133">id</span></span>|<span data-ttu-id="b726b-134">Строка</span><span class="sxs-lookup"><span data-stu-id="b726b-134">String</span></span>|<span data-ttu-id="b726b-135">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="b726b-135">Key of the entity.</span></span>|
+|<span data-ttu-id="b726b-136">усеремаиладдресс</span><span class="sxs-lookup"><span data-stu-id="b726b-136">userEmailAddress</span></span>|<span data-ttu-id="b726b-137">String</span><span class="sxs-lookup"><span data-stu-id="b726b-137">String</span></span>|<span data-ttu-id="b726b-138">Адрес электронной почты пользователя.</span><span class="sxs-lookup"><span data-stu-id="b726b-138">The user email address.</span></span>|
+|<span data-ttu-id="b726b-139">userId</span><span class="sxs-lookup"><span data-stu-id="b726b-139">userId</span></span>|<span data-ttu-id="b726b-140">String</span><span class="sxs-lookup"><span data-stu-id="b726b-140">String</span></span>|<span data-ttu-id="b726b-141">Идентификатор пользователя.</span><span class="sxs-lookup"><span data-stu-id="b726b-141">The user ID.</span></span>|
+|<span data-ttu-id="b726b-142">userName</span><span class="sxs-lookup"><span data-stu-id="b726b-142">userName</span></span>|<span data-ttu-id="b726b-143">String</span><span class="sxs-lookup"><span data-stu-id="b726b-143">String</span></span>|<span data-ttu-id="b726b-144">Имя пользователя.</span><span class="sxs-lookup"><span data-stu-id="b726b-144">The user name.</span></span>|
+|<span data-ttu-id="b726b-145">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="b726b-145">userPrincipalName</span></span>|<span data-ttu-id="b726b-146">Строка</span><span class="sxs-lookup"><span data-stu-id="b726b-146">String</span></span>|<span data-ttu-id="b726b-147">Имя участника-пользователя.</span><span class="sxs-lookup"><span data-stu-id="b726b-147">The user principal name.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="456f0-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="456f0-148">Response</span></span>
-<span data-ttu-id="456f0-149">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="456f0-149">If successful, this method returns a `200 OK` response code and an updated [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b726b-148">Ответ</span><span class="sxs-lookup"><span data-stu-id="b726b-148">Response</span></span>
+<span data-ttu-id="b726b-149">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b726b-149">If successful, this method returns a `200 OK` response code and an updated [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="456f0-150">Пример</span><span class="sxs-lookup"><span data-stu-id="456f0-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b726b-150">Пример</span><span class="sxs-lookup"><span data-stu-id="b726b-150">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="456f0-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="456f0-151">Request</span></span>
-<span data-ttu-id="456f0-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="456f0-152">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="b726b-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="b726b-151">Request</span></span>
+<span data-ttu-id="b726b-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b726b-152">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assignedLicenses/{iosVppAppAssignedLicenseId}
 Content-type: application/json
@@ -82,8 +82,8 @@ Content-length: 234
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="456f0-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="456f0-153">Response</span></span>
-<span data-ttu-id="456f0-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="456f0-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="b726b-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="b726b-153">Response</span></span>
+<span data-ttu-id="b726b-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b726b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
