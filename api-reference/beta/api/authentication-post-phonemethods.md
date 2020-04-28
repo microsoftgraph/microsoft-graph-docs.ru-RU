@@ -56,7 +56,7 @@ POST /users/{id}/authentication/phoneMethods
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В тексте запроса добавьте представление объекта [фонеаусентикатионмесод](../resources/phoneauthenticationmethod.md) в формате JSON. Формат JSON должен включать `phoneNumber` и `phoneType`, но не `smsSignInState` (доступен только для чтения).
 
@@ -65,7 +65,7 @@ POST /users/{id}/authentication/phoneMethods
 |phoneNumber|String|Номер телефона для текста или вызов для проверки подлинности. Номера телефонов используют\<формат "+ добавочный\> \<номер\>страны x\<расширение\>", с расширением Optional. Например, допустимые + 1 5555551234 или + 1 5555551234x123. При создании или обновлении числа отклоняются, если они не совпадают с требуемым форматом.|
 |фонетипе|String|Возможные значения: `mobile`, `alternateMobile`и. `office`|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [фонеаусентикатионмесод](../resources/phoneauthenticationmethod.md) в тексте отклика.
 

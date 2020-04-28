@@ -27,7 +27,7 @@ ms.locfileid: "43467953"
 |isEnabled     |Boolean      | Указывает, включен ли элемент управления сеансом. |
 |клаудаппсекурититипе|String | Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Подробнее об этих значениях:https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

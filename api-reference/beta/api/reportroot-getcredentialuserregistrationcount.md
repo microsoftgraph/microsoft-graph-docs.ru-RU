@@ -42,7 +42,7 @@ GET /reports/getCredentialUserRegistrationCount
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Тело запроса

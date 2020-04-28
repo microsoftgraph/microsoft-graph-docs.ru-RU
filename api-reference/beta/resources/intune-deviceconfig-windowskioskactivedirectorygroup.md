@@ -30,7 +30,7 @@ ms.locfileid: "43466862"
 |:---|:---|:---|
 |groupName|String|Имя группы Active Directory, которая будет заблокирована для этой конфигурации киоска|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

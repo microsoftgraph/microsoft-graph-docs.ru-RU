@@ -30,7 +30,7 @@ ms.locfileid: "43469277"
 |name|String|Имя объекта.|
 |ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Тип правила применимости. Возможные значения: `include`, `exclude`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

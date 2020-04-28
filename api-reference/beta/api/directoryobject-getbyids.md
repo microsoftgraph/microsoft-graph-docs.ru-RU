@@ -1,5 +1,5 @@
 ---
-title: 'directoryObject: Жетбидс'
+title: 'directoryObject: getByIds'
 description: 'Возвращает объекты каталогов, указанные в списке идентификаторов. '
 author: keylimesoda
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.locfileid: "43581655"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Возврат объектов каталогов, указанных в списке идентификаторов.  
+Возвращение объектов каталогов, указанных в списке идентификаторов.  
 
 Ниже перечислены некоторые распространенные случаи использования этой функции.
 
 * Разрешение идентификаторов, возвращаемых как часть коллекций идентификаторов функциями, например [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) или [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta), в базовые объекты каталогов.
-* Разрешение идентификаторов, сохраненных во внешнем хранилище приложения, в объекты каталога резервного копирования.
+* Разрешение идентификаторов, которые приложение хранит во внешнем хранилище, в базовые объекты каталогов.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,8 +32,8 @@ ms.locfileid: "43581655"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Directory.Read.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -51,7 +51,7 @@ POST /directoryObjects/getByIds
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | string | application/json. Обязательный.  |
+| Content-Type  | строка | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -59,12 +59,12 @@ POST /directoryObjects/getByIds
 
 | Параметр   | Тип |Описание|
 |:---------------|:--------|:----------|
-|ids|Коллекция String| Коллекция идентификаторов, для которой необходимо возвратить объекты. Идентификаторы идентификаторов GUID, представленные в виде строк. Вы можете указать до 1000 идентификаторов. |
+|ids|Коллекция String| Коллекция идентификаторов, для которой необходимо возвратить объекты. Идентификаторы имеют формат GUID и представлены в виде строк. Вы можете указать до 1000 идентификаторов. |
 |types|Коллекция объектов string| Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск. Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге. В коллекции можно указать любой объект, производный от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta). Пример: [user](/graph/api/resources/user?view=graph-rest-beta), [group](/graph/api/resources/group?view=graph-rest-beta), [device](/graph/api/resources/device?view=graph-rest-beta). Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider), укажите ресурс [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta). Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/en-us/cloud-solution-provider). В значениях не учитывается регистр символов.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции String в тексте отклика.
+В случае успеха этот метод возвращает код ответа `200 OK` и объект коллекции строк в тексте ответа.
 
 ## <a name="example"></a>Пример
 

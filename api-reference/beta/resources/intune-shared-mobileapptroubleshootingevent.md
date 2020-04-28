@@ -46,7 +46,7 @@ ms.locfileid: "43466124"
 |траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
 |userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |**Управление устройствами**|

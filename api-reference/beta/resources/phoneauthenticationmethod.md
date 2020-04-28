@@ -56,7 +56,7 @@ ms.locfileid: "43557901"
 |фонетипе|string|Тип телефона. Возможные значения: `mobile`, `alternateMobile`, или. `office`|
 |смссигнинстате|string|Указывает, готов ли телефон к использованию для входа в SMS. Возможные `notSupported`значения:, `notAllowedByPolicy`, `notEnabled`, `phoneNumberNotUnique`, `ready`, или. `notConfigured`|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

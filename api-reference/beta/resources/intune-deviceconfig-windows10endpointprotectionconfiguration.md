@@ -39,7 +39,7 @@ ms.locfileid: "43473787"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -191,7 +191,7 @@ ms.locfileid: "43473787"
 |дефендеремаилконтентексекутион|[дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Значение, указывающее, следует ли удалять исполняемые файлы (exe, DLL, PS, JS, VBS и т. д.) из электронной почты (почтовая или почтовая программа). Возможные значения: `userDefined`, `enable`, `auditMode`.|
 |дефендерадванцедрансомеварепротектионтипе|[дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Значение, указывающее на использование расширенной защиты в рансомеваре. Возможные значения: `userDefined`, `enable`, `auditMode`.|
 |дефендергуардмифолдерстипе|[фолдерпротектионтипе](../resources/intune-deviceconfig-folderprotectiontype.md)|Значение, указывающее поведение защищенных папок. Возможные значения: `userDefined`, `enable`, `auditMode`, `blockDiskModification`, `auditDiskModification`.|
-|defenderGuardedFoldersAllowedAppPaths|Коллекция String|Список путей к файлам EXE, которым разрешен доступ к защищенным папкам|
+|defenderGuardedFoldersAllowedAppPaths|Коллекция объектов string|Список путей к файлам EXE, которым разрешен доступ к защищенным папкам|
 |defenderAdditionalGuardedFolders|Коллекция String|Список путей к папкам, которые следует добавить в список защищенных папок|
 |дефендернетворкпротектионтипе|[дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Значение, указывающее поведение Нетворкпротектион. Возможные значения: `userDefined`, `enable`, `auditMode`.|
 |defenderExploitProtectionXml|Binary|XML-файл с информацией о защите от эксплойтов.|
@@ -258,8 +258,8 @@ ms.locfileid: "43473787"
 |дефендердисаблекатчупфуллскан|Boolean|Этот параметр политики позволяет настроить поиск по расписанию для полного сканирования. Вторичное сканирование — это сканирование, которое инициируется из-за пропускной ошибки запланированной проверки. Обычно эти запланированные проверки пропущены, так как компьютер был отключен в запланированное время.|
 |дефендердисаблекатчупкуиккскан|Boolean|Этот параметр политики позволяет настроить дополнительные проверки для запланированных быстрых проверок. Вторичное сканирование — это сканирование, которое инициируется из-за пропускной ошибки запланированной проверки. Обычно эти запланированные проверки пропущены, так как компьютер был отключен в запланированное время.|
 |дефендеренаблеловкпуприорити|Boolean|Этот параметр политики позволяет включать или отключать минимальный приоритет ЦП для запланированных проверок.|
-|defenderFileExtensionsToExclude|Коллекция String|Расширения файлов, которые необходимо исключить из проверки и защиты в режиме реального времени.|
-|defenderFilesAndFoldersToExclude|Коллекция String|Файлы и папки, которые необходимо исключить из проверки и защиты в режиме реального времени.|
+|defenderFileExtensionsToExclude|Коллекция объектов string|Расширения файлов, которые необходимо исключить из проверки и защиты в режиме реального времени.|
+|defenderFilesAndFoldersToExclude|Коллекция объектов string|Файлы и папки, которые необходимо исключить из проверки и защиты в режиме реального времени.|
 |defenderProcessesToExclude|Коллекция String|Процессы, которые необходимо исключить из проверки и защиты в режиме реального времени.|
 |дефендерпотентиаллюнвантедаппактион|[дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Добавлено в Windows 10 версии 1607. Задает уровень обнаружения для потенциально нежелательных приложений (Пуас). Защитник Windows предупреждает вас о том, что загружается потенциально нежелательное программное обеспечение, или пытается установить себя на компьютер. Возможные значения: `userDefined`, `enable`, `auditMode`.|
 |дефендерскандиректион|[defenderRealtimeScanDirection](../resources/intune-deviceconfig-defenderrealtimescandirection.md)|Определяет, какие наборы файлов следует отслеживать. Возможные значения: `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
@@ -271,7 +271,7 @@ ms.locfileid: "43473787"
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md);|Проверка уровня согласия пользователя в Защитнике Windows для отправки данных. Возможные значения: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Позволяет администратору указать допустимые уровни серьезности угроз и соответствующий идентификатор действия по умолчанию.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|Коллекция [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|

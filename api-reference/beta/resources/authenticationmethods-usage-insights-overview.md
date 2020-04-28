@@ -30,7 +30,7 @@ ms.locfileid: "43472202"
 
 В следующей таблице перечислены некоторые распространенные запросы, которые можно использовать с этим API.
 
-| Operation | Попробовать в песочнице Graph | Описание |
+| Операция | Попробовать в песочнице Graph | Описание |
 | --------- | --- | ----------- |
 | [жеткредентиалусеррегистратионкаунт](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta) | [ПОЛУЧЕНИЕ/кредентиалусеррегистратионкаунт](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Получение числа пользователей, зарегистрированных для самостоятельного сброса пароля и MFA. |
 | [жеткредентиалусажесуммари](/graph/api/resources/credentialusagesummary?view=graph-rest-beta) | [ПОЛУЧЕНИЕ/кредентиалусажесуммари](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Получение числа пользователей, использующих самостоятельный сброс пароля. |

@@ -42,7 +42,7 @@ POST /print/printerShares/{id}/allowedUsers/$ref
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В теле запроса добавьте ссылку на объект пользователя, используя `@odata.id` формат, как показано в следующем примере.
 
 ## <a name="response"></a>Ответ
@@ -67,7 +67,7 @@ Content-length: 66
 ```
 В теле запроса добавьте ссылку на объект пользователя, включив URI Microsoft Graph пользователя в `@odata.id` поле тела JSON.
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",

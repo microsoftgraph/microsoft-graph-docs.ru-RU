@@ -42,7 +42,7 @@ ms.locfileid: "43469532"
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
 |conflictDeviceCount|Int32|Количество конфликтующих устройств|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

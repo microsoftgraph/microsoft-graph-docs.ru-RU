@@ -27,11 +27,11 @@ ms.locfileid: "43465392"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Конфигурация устройств** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений||
-| &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Конфигурация устройств** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,7 +46,7 @@ PATCH /reports
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса

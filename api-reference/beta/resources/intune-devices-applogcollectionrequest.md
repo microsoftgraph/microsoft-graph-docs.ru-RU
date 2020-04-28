@@ -38,10 +38,10 @@ ms.locfileid: "43465251"
 |id|String|Уникальный идентификатор. Это userId_DeviceId_AppId идентификатор.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Запись состояния отправки. Возможные значения: `pending`, `completed`, `failed`.|
 |Ошибк|String|Сообщение об ошибке, если оно возникло во время процесса отправки|
-|кустомлогфолдерс|Коллекция String|Список папок журналов. |
+|кустомлогфолдерс|Коллекция объектов string|Список папок журналов. |
 |completedDateTime|DateTimeOffset|Время, когда запрос на отправку журнала достигает состояния терминала|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

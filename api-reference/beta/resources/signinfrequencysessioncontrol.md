@@ -28,7 +28,7 @@ ms.locfileid: "43466041"
 |type          |String       | Возможные значения: `days`, `hours`.|
 |value         |Int32        | Количество `days` или `hours`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

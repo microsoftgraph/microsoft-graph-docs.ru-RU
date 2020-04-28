@@ -45,7 +45,7 @@ DELETE /roleManagement/directory/roleDefinitions/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

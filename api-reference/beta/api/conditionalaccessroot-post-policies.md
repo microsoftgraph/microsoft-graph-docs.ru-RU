@@ -54,7 +54,7 @@ POST /identity/conditionalAccess/policies
 
 Допустимая политика должна содержать по крайней [application](../resources/conditionalaccessapplications.md) мере одно правило `'includeApplications': 'none'`приложения, например, одно правило [пользователя](../resources/conditionalaccessusers.md) `'includeUsers': 'none'`, например, и по крайней мере один элемент управления " [предоставление](../resources/conditionalaccessgrantcontrols.md)/[сеанса](../resources/conditionalaccesssessioncontrols.md) ".
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) в тексте отклика.
 
@@ -242,7 +242,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -429,7 +429,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -599,7 +599,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 

@@ -28,7 +28,7 @@ ms.locfileid: "43465024"
 |клиентидентифиер|String|Идентификатор клиента Configuration Manager из SCCM|
 |Блокировка|Boolean|Состояние блокировки клиента Configuration Manager из SCCM|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

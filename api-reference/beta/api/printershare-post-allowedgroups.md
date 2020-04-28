@@ -42,7 +42,7 @@ POST /print/printerShares/{id}/allowedGroups/$ref
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В теле запроса добавьте ссылку на объект Group с помощью `@odata.id` формата, как показано в следующем примере.
 
 ## <a name="response"></a>Ответ
@@ -68,7 +68,7 @@ Content-length: 67
 
 В теле запроса добавьте ссылку на объект Group, указав URI Microsoft Graph в `@odata.id` поле тела JSON.
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",

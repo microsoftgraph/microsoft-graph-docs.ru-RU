@@ -56,7 +56,7 @@ POST /roleManagement/directory/roleDefinitions
 |isEnabled |Boolean |Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения.|
 |rolePermissions |Коллекция [унифиедролепермиссион](../resources/unifiedrolepermission.md) |Список разрешений, включенных в роль.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод `201 Created` возвращает код отклика и новый объект [унифиедроледефинитион](../resources/unifiedroledefinition.md) в тексте отклика.
 

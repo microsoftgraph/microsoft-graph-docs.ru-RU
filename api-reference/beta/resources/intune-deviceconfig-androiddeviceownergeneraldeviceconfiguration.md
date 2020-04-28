@@ -39,7 +39,7 @@ ms.locfileid: "43467862"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -60,7 +60,7 @@ ms.locfileid: "43467862"
 |цертификатекредентиалконфигуратиондисаблед|Boolean|Указывает, следует ли запретить пользователям настраивать учетные данные сертификатов.|
 |датароамингблоккед|Boolean|Указывает, следует ли запретить пользователю перемещать данные.|
 |датетимеконфигуратионблоккед|Boolean|Указывает, следует ли запретить пользователю вручную изменять дату или время на устройстве.|
-|факториресетдевицеадминистраторемаилс|Коллекция String|Список сообщений учетных записей Google, которые потребуются для проверки подлинности после завершения фабричного сброса устройства перед его настройкой.|
+|факториресетдевицеадминистраторемаилс|Коллекция объектов string|Список сообщений учетных записей Google, которые потребуются для проверки подлинности после завершения фабричного сброса устройства перед его настройкой.|
 |factoryResetBlocked|Boolean|Указывает, отключен ли параметр Reset фабрики в параметрах.|
 |глобалпрокси|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|Прокси-сервер настраивается напрямую с узлом, портом и исключенными узлами.|
 |гуглеаккаунтсблоккед|Boolean|Указывает, будут ли блокироваться учетные записи Google.|
@@ -117,7 +117,7 @@ ms.locfileid: "43467862"
 |вифиблоккедитконфигуратионс|Boolean|Указывает, следует ли запретить пользователю редактировать параметры подключения WiFi.|
 |вифиблоккедитполицидефинедконфигуратионс|Boolean|Указывает, следует ли запретить пользователю редактировать только сети, определенные политикой.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|Коллекция [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|

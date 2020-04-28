@@ -48,7 +48,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 |:---------------|:--------|:----------|
 |name|String|Имя группы задач.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
 ## <a name="example"></a>Пример

@@ -26,7 +26,7 @@ ms.locfileid: "43466138"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

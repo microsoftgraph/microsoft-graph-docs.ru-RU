@@ -33,7 +33,7 @@ ms.locfileid: "43470127"
 |appStoreUrl|String|URL-адрес хранилища приложения, унаследованного от [апплиститем](../resources/intune-deviceconfig-applistitem.md)|
 |appId|String|Идентификатор пакета приложения, унаследованного от [апплиститем](../resources/intune-deviceconfig-applistitem.md)|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

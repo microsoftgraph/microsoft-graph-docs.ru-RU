@@ -31,7 +31,7 @@ ms.locfileid: "43473584"
 |lowerAddress|String|Адрес нижнего уровня.|
 |upperAddress|String|Верхний адрес.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

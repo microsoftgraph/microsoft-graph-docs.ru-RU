@@ -39,7 +39,7 @@ ms.locfileid: "43472088"
 |failedUserCount|Int32|Количество пользователей, у которых есть одно или несколько устройств, где не удалось установить эту книгу.|
 |notInstalledUserCount|Int32|Количество пользователей, не установивших эту книгу.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

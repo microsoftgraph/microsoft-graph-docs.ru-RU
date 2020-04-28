@@ -29,7 +29,7 @@ ms.locfileid: "43469815"
 |requireEncryptionForWriteAccess|Boolean|Этот параметр политики определяет, требуется ли защита BitLocker для несъемных дисков с данными на компьютере.|
 |recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md);|Этот параметр политики позволяет управлять восстановлением несъемных дисков с данными, защищенных с помощью BitLocker, в отсутствие необходимых учетных данных. Этот параметр политики применяется при включении BitLocker.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -41,10 +41,10 @@ DELETE /print/printerShare/{id}/allowedUsers/{id}/$ref
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -59,7 +59,7 @@ DELETE /print/printerShare/{id}/allowedUsers/{id}/$ref
 DELETE https://graph.microsoft.com/beta/print/printerShare/{id}/allowedUsers/{id}/$ref
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {

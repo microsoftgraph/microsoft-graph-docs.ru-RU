@@ -36,9 +36,9 @@ ms.locfileid: "43470029"
 |ciscoAnyConnectV2|8 |Cisco Аниконнект v2.|
 |Элемент paloaltoglobalprotect|9 |Palo Alto сети Глобалпротект.|
 |зскалерприватеакцесс|10 |Частный доступ зскалер.|
-|f5Access2018|-11:00|F5 доступ 2018.|
-|Цитриксссо|12|Единый вход Citrix.|
-|paloAltoGlobalProtectV2|13 |Palo Alto сети Глобалпротект v2.|
+|f5Access2018|11 |F5 доступ 2018.|
+|Цитриксссо|12 |Единый вход Citrix.|
+|paloAltoGlobalProtectV2|13|Palo Alto сети Глобалпротект v2.|
 |Клиентских|14 |Клиентских.|
 |Группа|15 |Группа.|
 

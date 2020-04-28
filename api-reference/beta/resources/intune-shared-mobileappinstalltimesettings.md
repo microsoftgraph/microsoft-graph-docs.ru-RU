@@ -29,7 +29,7 @@ ms.locfileid: "43466131"
 |startDateTime|DateTimeOffset|Время, когда приложение должно быть доступно для установки.|
 |деадлинедатетиме|DateTimeOffset|Время установки приложения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

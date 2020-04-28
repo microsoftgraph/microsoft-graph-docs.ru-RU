@@ -56,7 +56,7 @@ GET /users/{id}/authentication/phoneMethods/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

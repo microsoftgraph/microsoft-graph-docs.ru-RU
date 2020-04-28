@@ -39,7 +39,7 @@ ms.locfileid: "43471947"
 |applicationType|[аппликатионтипе](../resources/intune-wip-applicationtype.md)|Тип приложения. Возможные значения: `universal`, `desktop`.|
 |deviceCount|Int32|Количество устройств|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

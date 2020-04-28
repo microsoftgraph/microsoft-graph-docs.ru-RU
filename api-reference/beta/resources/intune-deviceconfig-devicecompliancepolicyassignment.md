@@ -39,7 +39,7 @@ ms.locfileid: "43469547"
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для политики соответствия требованиям устройств, Direct или в упаковке/политике. Возможные значения: `direct`, `policySets`.|
 |Идентификатор|String|Идентификатор источника назначения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -30,7 +30,7 @@ ms.locfileid: "43466072"
 |:---|:---|:---|
 |содержимое|Поток|Содержимое отчета; сведения зависят от типа отчета.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

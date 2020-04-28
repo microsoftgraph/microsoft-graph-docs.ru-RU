@@ -29,7 +29,7 @@ ms.locfileid: "43465039"
 |errorCode|Int32|Код ошибки для состояния сбоя.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации с точкой управления Configuration Manager.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

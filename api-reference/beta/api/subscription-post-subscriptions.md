@@ -138,13 +138,13 @@ Content-type: application/json
 |Groups|groups|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
-|Список|sites/{Site-ID}/Lists/{List-ID}|
-|Security alert|security/alerts?$filter=status eq ‘New’|
+|Список|sites/{site-id}/lists/{list-id}|
+|Оповещение безопасности|security/alerts?$filter=status eq ‘New’|
 |Записи звонков|связь/Каллрекордс|
 
 ### <a name="response"></a>Отклик
 
-Ниже показан пример отклика. 
+Ниже показан пример ответа. 
 
 >**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {

@@ -49,7 +49,7 @@ POST /identity/conditionalAccess/namedLocations
 
 В тексте запроса добавьте представление объекта [ипнамедлокатион](../resources/ipnamedlocation.md) или [КАУНТРИНАМЕДЛОКАТИОН](../resources/countrynamedlocation.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created`код отклика и новый объект [ипнамедлокатион](../resources/ipnamedlocation.md) или [каунтринамедлокатион](../resources/countrynamedlocation.md) в теле отклика.
 
@@ -159,7 +159,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 

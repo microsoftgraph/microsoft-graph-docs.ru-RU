@@ -36,9 +36,9 @@ ms.locfileid: "43466884"
 |windows10ProfessionalEducation|8 |Windows 10 профессиональная образование|
 |windows10ProfessionalEducationN|9 |Windows 10 профессиональная Едукатионн|
 |windows10ProfessionalWorkstation|10 |Windows 10 профессиональная для рабочих станций|
-|windows10ProfessionalWorkstationN|-11:00|Windows 10 профессиональная для рабочих станций N|
-|notConfigured|12|NotConfigured|
-|windows10Home|13 |Windows 10 Домашняя|
+|windows10ProfessionalWorkstationN|11 |Windows 10 профессиональная для рабочих станций N|
+|notConfigured|12 |NotConfigured|
+|windows10Home|13|Windows 10 Домашняя|
 |windows10HomeChina|14 |Windows 10 домашняя (Китай)|
 |windows10HomeN|15 |Windows 10 Домашняя N|
 |windows10HomeSingleLanguage|16 |Windows 10 Домашняя, для одного языка|

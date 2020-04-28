@@ -43,7 +43,7 @@ POST /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -60,7 +60,7 @@ POST /deviceManagement/roleDefinitions
 |rolePermissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|
 |исбуилтинроледефинитион|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False.|
 |isBuiltIn|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False.|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности.|
 
 
 

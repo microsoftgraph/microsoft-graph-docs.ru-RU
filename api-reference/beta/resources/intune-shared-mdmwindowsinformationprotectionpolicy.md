@@ -44,7 +44,7 @@ ms.locfileid: "43466206"
 |description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |enforcementLevel|[виндовсинформатионпротектионенфорцементлевел](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|Уровень принудительного применения НЗП. Ознакомьтесь с определением перечисления для поддерживаемых значений, наследуемых от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md). Возможные значения: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
 |enterpriseDomain|String|Основной домен предприятия. Наследуется от объекта [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
@@ -69,7 +69,7 @@ ms.locfileid: "43466206"
 |smbAutoEncryptedFileExtensions|Коллекция [windowsInformationProtectionResourceCollection](../resources/intune-mam-windowsinformationprotectionresourcecollection.md)|Задает список расширений. Файлы с этими расширениями шифруются при копировании из общей папки SMB в пределах предприятия. Наследуется от объекта [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 |isAssigned|Логический|Указывает, развернута ли политика в группах включения. Наследуется от объекта [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |**Управление мобильным приложением (MAM)**|

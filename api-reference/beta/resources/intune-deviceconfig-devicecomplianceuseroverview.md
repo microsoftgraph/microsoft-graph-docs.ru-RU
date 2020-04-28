@@ -41,7 +41,7 @@ ms.locfileid: "43469489"
 |lastUpdateDateTime|DateTimeOffset|Время последнего обновления.|
 |configurationVersion|Int32|Версия политики для этого обзора|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -27,7 +27,7 @@ ms.locfileid: "43473538"
 |:---|:---|:---|
 |[Получение объекта reportRoot](../api/intune-shared-reportroot-get.md)|Чтение свойств и связей объекта [reportRoot](../resources/intune-shared-reportroot.md).|
 |[Обновление объекта reportRoot](../api/intune-shared-reportroot-update.md)|Обновление свойств объекта [reportRoot](../resources/intune-shared-reportroot.md).|
-|**Конфигурация устройства**|
+|**Конфигурация устройств**|
 |[Функция deviceConfigurationUserActivity](../api/intune-shared-reportroot-deviceconfigurationuseractivity.md)|Метаданные для отчета о действиях пользователей с конфигурацией устройств|
 |[Функция deviceConfigurationDeviceActivity](../api/intune-shared-reportroot-deviceconfigurationdeviceactivity.md)|Метаданные для отчета о работе устройств|
 |**Устранение неполадок**|
@@ -42,7 +42,7 @@ ms.locfileid: "43473538"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для этого объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

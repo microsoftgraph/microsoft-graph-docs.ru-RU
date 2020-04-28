@@ -46,7 +46,7 @@ PUT /applications/{id}/synchronization/templates/{templateId}/schema
 
 В теле запроса добавьте объект [синчронизатионсчема](../resources/synchronization-synchronizationschema.md) для замены существующей схемы.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха возвращает код `204 No Content` отклика. В тексте отклика не возвращается никаких данных.
 

@@ -27,7 +27,7 @@ ms.locfileid: "43472238"
 | дуратиониндайс | Int32 |  |
 | рекурренцекаунт | Int32 |  |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

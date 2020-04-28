@@ -51,7 +51,7 @@ ms.locfileid: "43467931"
 |компаникодес|Коллекция [андроиденроллменткомпаникоде](../resources/intune-androidforwork-androidenrollmentcompanycode.md)|Коды компаний для ресурса androidmanagedstoreaccountenterprisesettings|
 |андроиддевицеовнерфуллиманажеденроллментенаблед|Boolean|Коды компаний для ресурса androidmanagedstoreaccountenterprisesettings|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

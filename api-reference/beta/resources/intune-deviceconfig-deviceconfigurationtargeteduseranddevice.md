@@ -32,7 +32,7 @@ ms.locfileid: "43469369"
 |userPrincipalName|Строка|Имя участника-пользователя в возврате.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата для этой связи пользователя и устройства.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

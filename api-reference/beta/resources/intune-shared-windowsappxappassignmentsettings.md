@@ -30,7 +30,7 @@ ms.locfileid: "43471976"
 |:---|:---|:---|
 |useDeviceContext|Boolean|Указывает, следует ли использовать контекст выполнения устройства для мобильного приложения Windows AppX.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

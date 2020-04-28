@@ -31,7 +31,7 @@ ms.locfileid: "43466795"
 |displayName|String|Отображаемое имя группы AzureAD, которая будет заблокирована для этой конфигурации киоска|
 |groupId|String|Идентификатор группы AzureAD, которая будет заблокирована для этой конфигурации киоска|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -29,7 +29,7 @@ ms.locfileid: "43469248"
 |description|String|Описание локального пользователя или группы администратором.|
 |securityIdentifier|String|Идентификатор безопасности этого локального пользователя или группы (например, * S-1-5-32-544).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

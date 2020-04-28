@@ -37,7 +37,7 @@ ms.locfileid: "43473860"
 |id|String|Уникальный идентификатор объекта.|
 |таржетграупид|String|Уникальный идентификатор группы, которой назначена политика T&C.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Ссылка для перехода к назначенным условиям.|

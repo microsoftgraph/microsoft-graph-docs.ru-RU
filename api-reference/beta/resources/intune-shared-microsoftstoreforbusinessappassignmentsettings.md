@@ -30,7 +30,7 @@ ms.locfileid: "43466191"
 |:---|:---|:---|
 |useDeviceContext|Boolean|Указывает, следует ли использовать контекст работы устройства для мобильного приложения Microsoft Store для бизнеса.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

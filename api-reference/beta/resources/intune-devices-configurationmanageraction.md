@@ -27,7 +27,7 @@ ms.locfileid: "43465138"
 |:---|:---|:---|
 |action|[configurationManagerActionType](../resources/intune-devices-configurationmanageractiontype.md)|Тип действия для триггера в клиенте Configuration Manager. Возможные значения: `refreshMachinePolicy`, `refreshUserPolicy`, `wakeUpClient`, `appEvaluation`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

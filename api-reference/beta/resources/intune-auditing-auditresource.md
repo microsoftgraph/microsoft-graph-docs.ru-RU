@@ -30,7 +30,7 @@ ms.locfileid: "43472099"
 |type|String|Тип ресурса аудита.|
 |resourceId|String|ИД ресурса аудита.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

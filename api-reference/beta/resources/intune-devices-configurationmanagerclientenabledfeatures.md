@@ -34,7 +34,7 @@ ms.locfileid: "43465062"
 |ендпоинтпротектион|Boolean|Управляет ли Intune Endpoint Protection|
 |оффицеаппс|Boolean|Управляет ли Intune приложением Office|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

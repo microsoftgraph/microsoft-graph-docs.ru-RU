@@ -30,7 +30,7 @@ ms.locfileid: "43470553"
 |:---|:---|:---|
 |значение|Int32|Н/Д|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

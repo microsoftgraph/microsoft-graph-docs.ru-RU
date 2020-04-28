@@ -39,7 +39,7 @@ ms.locfileid: "43469517"
 |currentValue|String|Текущее значение параметра на устройстве|
 |сеттингинстанцеид|String|сеттингинстанцеид|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

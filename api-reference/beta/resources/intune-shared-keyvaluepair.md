@@ -28,7 +28,7 @@ ms.locfileid: "43473553"
 |name|String|Имя для этой пары "ключ-значение"|
 |value|String|Значение для этой пары "ключ-значение"|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -46,7 +46,7 @@ ms.locfileid: "43469510"
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
 |conflictDeviceCount|Int32|Количество конфликтующих устройств|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |deviceComplianceSettingStates|Коллекция [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md)|Н/Д|

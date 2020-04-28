@@ -45,11 +45,11 @@ POST /roleManagement/deviceManagement/roleAssignments
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В тексте запроса добавьте представление объекта [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) в формате JSON. В запросе должна быть область, определенная в Azure AD, например `directoryScopeIds`, или область, зависящая от `appScopeId`приложения, например. Примеры областей Azure AD: клиент ("/"), административные единицы или приложения. 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) в тексте отклика.
 

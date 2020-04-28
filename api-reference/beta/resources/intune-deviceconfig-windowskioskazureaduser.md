@@ -31,7 +31,7 @@ ms.locfileid: "43466780"
 |userId|String|Идентификатор пользователя AzureAD, который будет заблокирован для этой конфигурации киоска|
 |userPrincipalName|String|Учетные записи пользователей, которые будут заблокированы для этой конфигурации киоска|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

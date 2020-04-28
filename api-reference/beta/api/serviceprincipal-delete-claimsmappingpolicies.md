@@ -26,8 +26,8 @@ ms.locfileid: "43581669"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL  |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL  |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Policy. Read. ALL и Application. ReadWrite. Овнедби, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. Овнедби, Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,7 +42,7 @@ DELETE /servicePrincipals/{id}/claimsMappingPolicies/{id}/$ref
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 

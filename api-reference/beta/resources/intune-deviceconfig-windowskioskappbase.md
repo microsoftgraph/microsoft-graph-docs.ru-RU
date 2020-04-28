@@ -30,7 +30,7 @@ ms.locfileid: "43466847"
 |Тип|[виндовскиоскапптипе](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения. Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
 |Автозапуск|Boolean|Разрешение автоматического запуска приложения в полноэкранном режиме с поддержкой нескольких приложений|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -39,7 +39,7 @@ ms.locfileid: "43469419"
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для конфигурации устройства, Direct или в упаковке/политике. Это свойство доступно только для чтения. Возможные значения: `direct`, `policySets`.|
 |Идентификатор|String|Идентификатор источника назначения. Это свойство доступно только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

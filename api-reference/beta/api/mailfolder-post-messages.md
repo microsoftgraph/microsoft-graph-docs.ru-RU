@@ -40,7 +40,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 Предоставьте в тексте запроса описание объекта [Message](../resources/message.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -84,7 +84,7 @@ Content-length: 248
 ---
 
 Предоставьте в тексте запроса описание объекта [message](../resources/message.md) в формате JSON.
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

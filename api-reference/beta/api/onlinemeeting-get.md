@@ -51,10 +51,10 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 
 Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`. Контент по умолчанию будет на английском языке.
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры

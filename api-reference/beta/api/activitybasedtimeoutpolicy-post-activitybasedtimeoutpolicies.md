@@ -45,11 +45,11 @@ POST policies/activityBasedTimeoutPolicies
 | Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [активитибаседтимеаутполици](../resources/activitybasedtimeoutpolicy.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [активитибаседтимеаутполици](../resources/activitybasedtimeoutpolicy.md) в тексте отклика.
 
@@ -92,7 +92,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 

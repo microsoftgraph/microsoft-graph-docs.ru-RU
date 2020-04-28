@@ -28,7 +28,7 @@ ms.locfileid: "43470523"
 |userId|String|Идентификатор пользователя|
 |ластлогондатетиме|DateTimeOffset|Дата и время, когда пользователь входит в систему|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

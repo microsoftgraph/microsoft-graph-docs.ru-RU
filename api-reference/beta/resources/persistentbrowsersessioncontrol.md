@@ -27,7 +27,7 @@ ms.locfileid: "43469061"
 |isEnabled     |Boolean      | Указывает, включен ли элемент управления сеансом. |
 |mode|String| Возможные значения: `always`, `never`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

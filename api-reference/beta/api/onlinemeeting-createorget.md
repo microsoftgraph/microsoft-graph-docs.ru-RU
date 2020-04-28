@@ -57,7 +57,7 @@ POST /me/onlineMeetings/createOrGet
 
 >**Примечание:** Если "startDateTime" и "endDateTime" не указаны, значения по умолчанию будут иметь значение даты и времени по умолчанию для системы. В C# это значение равно "01/01/0001"
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры

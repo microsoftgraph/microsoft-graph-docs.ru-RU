@@ -74,7 +74,7 @@ GET /auditLogs/directoryAudits
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryAudit](../resources/directoryaudit.md) в тексте отклика.
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика. 
 

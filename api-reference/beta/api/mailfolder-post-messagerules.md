@@ -49,10 +49,10 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 
 | Параметр       | Тип|Описание|
 |:--------|:-------|:----------|
-|actions|[messageRuleActions](../resources/messageruleactions.md)|Действия, применимые к сообщению при выполнении соответствующих условий (если таковые имеются). Обязательно.|
-|conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Условия, выполнение которых активирует соответствующие действия для указанного правила. Необязательное свойство.|
-|displayName| String  | Отображаемое имя правила. Обязательно.|
-|exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Представляет условия исключения для правила. Необязательное свойство. |
+|actions|[messageRuleActions](../resources/messageruleactions.md)|Действия, применимые к сообщению при выполнении соответствующих условий (если таковые имеются). Обязательный.|
+|conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Условия, выполнение которых активирует соответствующие действия для указанного правила. Необязательное.|
+|displayName| String  | Отображаемое имя правила. Обязательный.|
+|exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Представляет условия исключения для правила. Необязательное. |
 |isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. Необязательное свойство. |
 |sequence| Int32 | Определяет последовательность выполнения правила среди прочих правил. Обязательный.|
 

@@ -28,11 +28,11 @@ ms.locfileid: "43471281"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Конфигурация устройств** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений||
-| &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Конфигурация устройств** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,7 +47,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -70,7 +70,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

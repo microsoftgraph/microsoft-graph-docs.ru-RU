@@ -41,7 +41,7 @@ ms.locfileid: "43470980"
 |conflictDeviceCount|Int32|Количество конфликтующих устройств.|
 |нотассигнеддевицекаунт|Int32|Количество неназначенных устройств|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |адванцедсреатпротектиононбоардингдевицесеттингстатес|Коллекция [адванцедсреатпротектиононбоардингдевицесеттингстате](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Н/Д|

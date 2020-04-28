@@ -37,7 +37,7 @@ ms.locfileid: "43470742"
 |андроидворкпрофилекаунт|Int32|Количество устройств с Android в рабочем профиле.|
 |конфигмгрдевицекаунт|Int32|Количество управляемых устройств ConfigMgr.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

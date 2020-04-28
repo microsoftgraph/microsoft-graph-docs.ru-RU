@@ -48,7 +48,7 @@ POST /roleManagement/directory/roleAssignments
 
 В тексте запроса добавьте представление объекта [унифиедролеассигнмент](../resources/unifiedroleassignment.md) в формате JSON. В запросе должна быть область, определенная в Azure AD, например `directoryScopeId`, или область, зависящая от `appScopeId`приложения, например. Примеры областей Azure AD: клиент ("/"), административные единицы или приложения. Дополнительные сведения см. в разделе [аппскопе](../resources/appscope.md).
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [унифиедролеассигнмент](../resources/unifiedroleassignment.md) в тексте отклика.
 

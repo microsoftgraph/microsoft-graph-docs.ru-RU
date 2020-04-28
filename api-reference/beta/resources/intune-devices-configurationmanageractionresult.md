@@ -35,7 +35,7 @@ ms.locfileid: "43465084"
 |актионделиверистатус|[configurationManagerActionDeliveryStatus](../resources/intune-devices-configurationmanageractiondeliverystatus.md)|Состояние действия, которое доставляется на локальный сервер. Возможные значения: `unknown`, `pendingDelivery`, `deliveredToConnectorService`, `failedToDeliverToConnectorService`, `deliveredToOnPremisesServer`.|
 |errorCode|Int32|Код ошибки действия Configuration Manager от клиента|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

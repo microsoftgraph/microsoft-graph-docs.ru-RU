@@ -55,11 +55,11 @@ POST /users/{id}/authentication/phoneMethods/{id}/enableSmsSignIn
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.
 
@@ -95,7 +95,7 @@ POST https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-75
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 <!-- {

@@ -45,7 +45,7 @@ POST /applications/{id}/synchronization/templates/
 
 В теле запроса добавьте объект [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) , который требуется создать. `id`Свойства `applicationId` и `factoryTag` свойства являются обязательными. Если с `schema` шаблоном не предоставляется никакой шаблон, будет использоваться схема по умолчанию, связанная со `factoryTag` свойством.
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) в тексте отклика.
 

@@ -30,7 +30,7 @@ ms.locfileid: "43469961"
 |appStoreUrl|String|URL-адрес приложения в Магазине|
 |appId|String|Идентификатор пакета приложения|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

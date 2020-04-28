@@ -42,7 +42,7 @@ ms.locfileid: "43470793"
 |валуежсон|String|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |имплементатионид|String|Идентификатор определения для выбранной реализации этого сложного параметра|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |значение|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Значения, составляющие сложный параметр|

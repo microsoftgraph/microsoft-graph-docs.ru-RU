@@ -38,7 +38,7 @@ ms.locfileid: "43469383"
 |таржетграупид|String|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
 |excludeGroup|Boolean|Указывает, следует ли исключить эту группу. Значения по умолчанию, включаемые в группу|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |deviceConfiguration|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md);|Ссылка навигации на целевую конфигурацию устройства.|

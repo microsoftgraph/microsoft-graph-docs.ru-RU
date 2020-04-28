@@ -48,11 +48,11 @@ GET /policies/claimsMappingPolicies/{id}/appliesTo
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
@@ -70,7 +70,7 @@ GET /policies/claimsMappingPolicies/{id}/appliesTo
 GET https://graph.microsoft.com/beta/claimsMappingPolicies/{id}/appliesTo
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 

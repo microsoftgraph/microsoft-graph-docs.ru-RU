@@ -44,7 +44,7 @@ ms.locfileid: "43543417"
 |scope|String| Указывает значение утверждения [области](/graph/permissions-reference) , которое должно ожидать приложение ресурсов в маркере доступа OAuth 2,0. Например, *User. Read* |
 |startTime|DateTimeOffset| В настоящее время значение времени начала игнорируется. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

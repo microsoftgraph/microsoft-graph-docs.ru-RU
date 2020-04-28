@@ -30,7 +30,7 @@ ms.locfileid: "43470615"
 |:---|:---|:---|
 |interval|Int32|Интервал (в часах)|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

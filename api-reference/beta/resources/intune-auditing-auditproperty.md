@@ -29,7 +29,7 @@ ms.locfileid: "43472118"
 |oldValue|String|Старое значение.|
 |newValue|String|Новое значение.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

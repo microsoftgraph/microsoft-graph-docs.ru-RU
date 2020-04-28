@@ -40,7 +40,7 @@ ms.locfileid: "43464988"
 |девицебутперформанцехеалсстате|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние работоспособности категории аналитики взаимодействия с пользователем "Бутперформанце". Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |бестпрактицешеалсстате|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние работоспособности категории аналитики взаимодействия с пользователем "Бестпрактицес". Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

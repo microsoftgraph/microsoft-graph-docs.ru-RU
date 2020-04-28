@@ -43,7 +43,7 @@ ms.locfileid: "43465273"
 |цертификатесериалнумбер|String|Серийный номер сертификата. Это свойство доступно только для чтения.|
 |certificate|String|Н/Д|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
