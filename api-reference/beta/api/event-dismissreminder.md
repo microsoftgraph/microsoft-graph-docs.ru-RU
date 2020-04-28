@@ -92,7 +92,7 @@ POST https://graph.microsoft.com/beta/me/events/{id}/dismissReminder
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 
 <!-- {

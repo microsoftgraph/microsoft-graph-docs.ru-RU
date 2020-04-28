@@ -34,7 +34,7 @@ ms.locfileid: "43367182"
 GET /bookingBusinesses/{id}/appointments
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
 
 Чтобы получить набор встреч из зарезервированных дел в диапазоне дат, вместо `$filter`этого [получите calendarView](bookingbusiness-list-calendarview.md) для этого диапазона дат.
 

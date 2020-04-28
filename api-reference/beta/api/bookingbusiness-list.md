@@ -40,7 +40,7 @@ ms.locfileid: "43366628"
 GET /bookingBusinesses
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
 
 Этот метод также поддерживает `query` параметр, который принимает строковое значение. Этот параметр позволяет ограничить результаты получения для предприятий, которые совпадают с указанной строкой. Вы можете увидеть [Пример](#request-2) ниже.
 
@@ -52,7 +52,7 @@ GET /bookingBusinesses
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [букингбусинесс](../resources/bookingbusiness.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request-1"></a>Запрос 1

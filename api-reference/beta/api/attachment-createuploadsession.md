@@ -62,10 +62,10 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -73,7 +73,7 @@ POST /me/messages/{id}/attachments/createUploadSession
 |:-------------|:------------|:------------|
 |аттачментитем|[аттачментитем](../resources/attachmentitem.md)|Представляет атрибуты элемента, который требуется отправить и вложить. Как минимум, укажите тип вложения (`file`), имя и размер файла.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [uploadSession](../resources/uploadsession.md) в тексте отклика.
 

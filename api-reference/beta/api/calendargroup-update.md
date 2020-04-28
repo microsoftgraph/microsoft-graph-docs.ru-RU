@@ -56,7 +56,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 | :------- | :----- | :-------------- |
 | name     | String | Имя группы. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [calendarGroup](../resources/calendargroup.md) в тексте отклика.
 

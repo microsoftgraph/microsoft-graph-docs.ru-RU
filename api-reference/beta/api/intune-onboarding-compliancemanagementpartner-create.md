@@ -43,7 +43,7 @@ POST /deviceManagement/complianceManagementPartners
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -57,10 +57,10 @@ POST /deviceManagement/complianceManagementPartners
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пакета пульса после того, как администратор направил соответствие партнеру управления соответствием|
 |partnerState|[девицеманажементпартнертенантстате](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Строка|Отображаемое имя партнера|
-|макосонбоардед|Логическое|Партнер, подключенный к устройствам Mac.|
-|виндовсонбоардед|Логическое|Партнер, направленный на устройства с Windows.|
-|андроидонбоардед|Логическое|Партнер, направленный на устройства с Android.|
-|иосонбоардед|Логическое|Партнер, подключенный к устройствам iOS.|
+|макосонбоардед|Boolean|Партнер, подключенный к устройствам Mac.|
+|виндовсонбоардед|Boolean|Партнер, направленный на устройства с Windows.|
+|андроидонбоардед|Boolean|Партнер, направленный на устройства с Android.|
+|иосонбоардед|Boolean|Партнер, подключенный к устройствам iOS.|
 |макосенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Mac через партнера.|
 |виндовсенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Windows с помощью партнера.|
 |андроиденроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства с Android через партнера.|
@@ -68,7 +68,7 @@ POST /deviceManagement/complianceManagementPartners
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

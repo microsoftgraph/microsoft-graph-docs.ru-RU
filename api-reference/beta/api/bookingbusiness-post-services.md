@@ -43,7 +43,7 @@ POST /bookingBusinesses/{id}/services
 В тексте запроса добавьте представление объекта [букингсервице](../resources/bookingservice.md) в формате JSON.
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод `201, Created` возвращает код отклика и объект [букингсервице](../resources/bookingservice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -134,7 +134,7 @@ Content-type: application/json
 ---
 
 В тексте запроса добавьте представление объекта [букингсервице](../resources/bookingservice.md) в формате JSON.
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

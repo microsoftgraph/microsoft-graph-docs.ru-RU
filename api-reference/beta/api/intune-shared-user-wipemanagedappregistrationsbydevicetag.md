@@ -48,7 +48,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса

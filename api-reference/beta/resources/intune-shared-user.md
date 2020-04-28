@@ -42,7 +42,7 @@ ms.locfileid: "43447980"
 |[Функция Експортдевицеандаппманажементдата](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md);|Пока не задокументировано.|
 |[Функция Жетеффективедевицеенроллментконфигуратионс](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|Коллекция объектов [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|Пока не задокументировано.|
 |**Устранение неполадок**|
-|[Функция Жетманажеддевицесвисаппфаилурес](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|Коллекция String|Получает список устройств с неудачными приложениями.|
+|[Функция Жетманажеддевицесвисаппфаилурес](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|Коллекция объектов string|Получает список устройств с неудачными приложениями.|
 
 
 ## <a name="properties"></a>Свойства

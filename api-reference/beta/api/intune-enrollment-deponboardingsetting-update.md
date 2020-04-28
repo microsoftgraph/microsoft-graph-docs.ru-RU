@@ -43,7 +43,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -59,17 +59,17 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |lastModifiedDateTime|DateTimeOffset|При подключении службы.|
 |ластсукцессфулсинкдатетиме|DateTimeOffset|Когда служба последний синед с Intune|
 |ластсинктригжереддатетиме|DateTimeOffset|При последнем запросе синхронизации в Intune.|
-|Свойства sharetokenwithschooldatasyncservice|Логическое|Указывает, включен ли общий доступ к маркеру DEP для службы School Data Sync.|
+|Свойства sharetokenwithschooldatasyncservice|Boolean|Указывает, включен ли общий доступ к маркеру DEP для службы School Data Sync.|
 |Lastsyncerrorcode к объекту|Int32|Код ошибки, полученный от Apple во время последней синхронизации DEP.|
 |токентипе|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип токена DEP. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
 |токеннаме|String|Понятное имя для токена DEP|
 |синцеддевицекаунт|Int32|Получает число синхронизированных устройств|
-|dataSharingConsentGranted|Логическое|Разрешение, предоставленное для предоставления общего доступа к данным с помощью службы Apple DEP|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
+|dataSharingConsentGranted|Boolean|Разрешение, предоставленное для предоставления общего доступа к данным с помощью службы Apple DEP|
+|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

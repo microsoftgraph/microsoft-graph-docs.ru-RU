@@ -130,7 +130,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 

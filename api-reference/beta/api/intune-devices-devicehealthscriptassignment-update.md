@@ -29,7 +29,7 @@ ms.locfileid: "43380654"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,10 +43,10 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [девицехеалсскриптассигнмент](../resources/intune-devices-devicehealthscriptassignment.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицехеалсскриптассигнмент](../resources/intune-devices-devicehealthscriptassignment.md).
@@ -55,12 +55,12 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{
 |:---|:---|:---|
 |id|String|Ключ объекта назначения сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Группа Azure Active Directory, на которую мы нацелены на скрипт|
-|рунремедиатионскрипт|Логическое|Определите, нужно ли выполнять сценарий обнаружения или сценарий обнаружения и устранения неполадок.|
+|рунремедиатионскрипт|Boolean|Определите, нужно ли выполнять сценарий обнаружения или сценарий обнаружения и устранения неполадок.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Расписание запуска сценария для целевой группы|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицехеалсскриптассигнмент](../resources/intune-devices-devicehealthscriptassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

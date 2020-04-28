@@ -45,9 +45,9 @@ GET /groups/{id}/events/{id}/attachments
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
 
-В частности, параметр `$expand` запроса можно использовать для включения всех вложений в события, встроенных в остальные свойства события. Пример:
+В частности, параметр `$expand` запроса можно использовать для включения всех вложений в события, встроенных в остальные свойства события. Например:
 
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
@@ -59,11 +59,11 @@ GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Attachment](../resources/attachment.md) в тексте отклика.
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

@@ -37,8 +37,8 @@ ms.locfileid: "43356620"
 |id|String|Уникальный идентификатор для этой сущности|
 |репортнаме|String|Имя отчета|
 |filter|String|Фильтры, применяемые при создании отчета.|
-|select|Коллекция String|Столбцы, выбранные из отчета|
-|orderBy|Коллекция String|Упорядочение столбцов в отчете|
+|select|Коллекция объектов string|Столбцы, выбранные из отчета|
+|orderBy|Коллекция объектов string|Упорядочение столбцов в отчете|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние кэшированного отчета. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |ластрефрешдатетиме|DateTimeOffset|Время последнего обновления кэшированного отчета|
 |expirationDateTime|DateTimeOffset|Время истечения срока действия кэшированного отчета|

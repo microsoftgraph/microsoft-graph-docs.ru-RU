@@ -36,7 +36,7 @@ ms.locfileid: "43372378"
 |description|String|Описание политики.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики.|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности.|
 |id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 

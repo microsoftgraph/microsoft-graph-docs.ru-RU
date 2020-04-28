@@ -43,7 +43,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -59,7 +59,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 |рекуестеденроллментпрофилеассигнментдатетиме|DateTimeOffset|Для устройства назначен профиль регистрации времени.|
 |isSupervised|Boolean|Указывает, защищено ли устройство Apple. Дополнительные сведения:https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md);|Источник обнаружения устройств Apple. Возможные значения: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
-|isDeleted|Логическое|Указывает, было ли устройство удалено из Apple Business Manager|
+|isDeleted|Boolean|Указывает, было ли устройство удалено из Apple Business Manager|
 |createdDateTime|DateTimeOffset|Дата и время создания устройства|
 |ластконтактеддатетиме|DateTimeOffset|Дата и время последнего обращения к устройству|
 |description|String|Описание устройства|
@@ -68,7 +68,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [импортедаппледевицеидентити](../resources/intune-enrollment-importedappledeviceidentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

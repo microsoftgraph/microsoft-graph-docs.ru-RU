@@ -40,7 +40,7 @@ ms.locfileid: "43446906"
 |label|String|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|Ключ объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|дефаултчеккед|Логическое|Значение по умолчанию для этого флажка. Значение по умолчанию  false.|
+|дефаултчеккед|Boolean|Значение по умолчанию для этого флажка. Значение по умолчанию  false.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

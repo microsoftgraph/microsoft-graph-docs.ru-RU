@@ -37,7 +37,7 @@ ms.locfileid: "43356573"
 |id|String|Уникальный идентификатор для этой сущности|
 |репортнаме|String|Имя отчета|
 |filter|String|Фильтры, примененные к отчету|
-|select|Коллекция String|Столбцы, выбранные из отчета|
+|select|Коллекция объектов string|Столбцы, выбранные из отчета|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат экспортированного отчета. Возможные значения: `csv`, `pdf`.|
 |снапшотид|String|Моментальный снимок является идентифицируемым подмножеством набора данных, представленным Репортнаме. Здесь можно использовать идентификатор sessionId или Качедрепортконфигуратион. Если указан идентификатор sessionId, фильтрация, выбор и OrderBy применяются к данным, представленным в sessionId. Filter, SELECT и OrderBy не могут указываться вместе с идентификатором Качедрепортконфигуратион.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние задания экспорта. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|

@@ -46,7 +46,7 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 |displayName|String|Имя клиента.|
 |emailAddress|String|SMTP-адрес клиента.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [букингкустомер](../resources/bookingcustomer.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

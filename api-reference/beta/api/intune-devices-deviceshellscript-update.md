@@ -29,7 +29,7 @@ ms.locfileid: "43380096"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,10 +43,10 @@ PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md).
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 |:---|:---|:---|
 |ексекутионфрекуенци|Длительность|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз|
 |ретрикаунт|Int32|Количество повторных попыток выполнения скрипта в случае сбоя|
-|блоккексекутионнотификатионс|Логическое|Не уведомляет пользователя о выполнении сценария|
+|блоккексекутионнотификатионс|Boolean|Не уведомляет пользователя о выполнении сценария|
 |id|Строка|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|Строка|Имя скрипта управления устройствами.|
 |description|String|Необязательное описание скрипта управления устройствами.|
@@ -64,11 +64,11 @@ PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
 |fileName|String|Имя файла сценария.|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
+|roleScopeTagIds|Коллекция объектов string|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

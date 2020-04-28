@@ -1,6 +1,6 @@
 ---
 title: Тип ресурса addIn
-description: Ниже показано представление ресурса в формате JSON.
+description: Ниже представлено описание ресурса в формате JSON.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform

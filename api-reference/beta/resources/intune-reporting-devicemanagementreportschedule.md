@@ -37,15 +37,15 @@ ms.locfileid: "43453203"
 |id|Строка|Уникальный идентификатор для этой сущности|
 |репортсчедуленаме|String|Имя расписания|
 |subject|String|Тема запланированных отчетов, которые доставляются|
-|письма|Коллекция String|Сообщения электронной почты, на которые доставляются запланированные отчеты|
+|письма|Коллекция объектов string|Сообщения электронной почты, на которые доставляются запланированные отчеты|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Периодичность запланированной доставки отчета. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Время, когда начинается доставка запланированных отчетов|
 |endDateTime|DateTimeOffset|Время окончания доставки запланированных отчетов|
 |userId|String|Идентификатор пользователя, создавшего отчет|
 |репортнаме|String|Имя отчета|
 |filter|String|Фильтры, примененные к отчету|
-|select|Коллекция String|Столбцы, выбранные из отчета|
-|orderBy|Коллекция String|Упорядочение столбцов в отчете|
+|select|Коллекция объектов string|Столбцы, выбранные из отчета|
+|orderBy|Коллекция объектов string|Упорядочение столбцов в отчете|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат запланированного отчета. Возможные значения: `csv`, `pdf`.|
 
 ## <a name="relationships"></a>Связи

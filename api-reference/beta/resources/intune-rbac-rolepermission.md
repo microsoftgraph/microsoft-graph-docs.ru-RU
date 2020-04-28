@@ -25,7 +25,7 @@ ms.locfileid: "43356862"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actions|Коллекция String|Разрешенные действия — устарело|
+|actions|Коллекция объектов string|Разрешенные действия — устарело|
 |resourceActions|Коллекция объектов [resourceAction](../resources/intune-rbac-resourceaction.md)|Действия с ресурсами, содержащие набор разрешенных и запрещенных разрешений.|
 
 ## <a name="relationships"></a>Связи

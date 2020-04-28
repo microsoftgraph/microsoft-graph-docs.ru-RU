@@ -26,16 +26,16 @@ ms.locfileid: "43376919"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Граупполициоператионс](../api/intune-grouppolicy-grouppolicyoperation-list.md)|Коллекция [граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md)|Список свойств и связей объектов [граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md) .|
-|[Получение Граупполициоператион](../api/intune-grouppolicy-grouppolicyoperation-get.md)|[граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md)|Чтение свойств и связей объекта [граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md) .|
-|[Создание Граупполициоператион](../api/intune-grouppolicy-grouppolicyoperation-create.md)|[граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md)|Создание нового объекта [граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md) .|
+|[Получение Граупполициоператион](../api/intune-grouppolicy-grouppolicyoperation-get.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Чтение свойств и связей объекта [граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md) .|
+|[Создание Граупполициоператион](../api/intune-grouppolicy-grouppolicyoperation-create.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Создание нового объекта [граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md) .|
 |[Удаление Граупполициоператион](../api/intune-grouppolicy-grouppolicyoperation-delete.md)|Нет|Удаляет объект [граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md).|
-|[Обновление Граупполициоператион](../api/intune-grouppolicy-grouppolicyoperation-update.md)|[граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md)|Обновление свойств объекта [граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md) .|
+|[Обновление Граупполициоператион](../api/intune-grouppolicy-grouppolicyoperation-update.md)|[groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md)|Обновление свойств объекта [граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|оператионтипе|[граупполициоператионтипе](../resources/intune-grouppolicy-grouppolicyoperationtype.md)|Тип операции с групповой политикой. Возможные значения: `none`, `upload`, `uploadNewVersion`, `addLanguageFiles`, `removeLanguageFiles`, `updateLanguageFiles`, `remove`.|
-|оператионстатус|[граупполициоператионстатус](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|Состояние операции групповой политики. Возможные значения: `unknown`, `inProgress`, `success`, `failed`.|
+|оператионтипе|[groupPolicyOperationType](../resources/intune-grouppolicy-grouppolicyoperationtype.md)|Тип операции с групповой политикой. Возможные значения: `none`, `upload`, `uploadNewVersion`, `addLanguageFiles`, `removeLanguageFiles`, `updateLanguageFiles`, `remove`.|
+|оператионстатус|[groupPolicyOperationStatus](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|Состояние операции групповой политики. Возможные значения: `unknown`, `inProgress`, `success`, `failed`.|
 |статусдетаилс|String|Сведения о состоянии операции групповой политики.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|

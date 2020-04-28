@@ -1,6 +1,6 @@
 ---
 title: 'group: checkMemberGroups'
-description: Проверка членства в указанном списке групп.
+description: Проверка участия в указанном списке групп.
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
@@ -30,7 +30,7 @@ ms.locfileid: "43364063"
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Для приложения                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
+| Приложение                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ POST /groups/{id}/checkMemberGroups
 | :------------ | :----- | :------------------------ |
 | Authorization | string | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -99,7 +99,7 @@ Content-length: 44
 ---
 
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 

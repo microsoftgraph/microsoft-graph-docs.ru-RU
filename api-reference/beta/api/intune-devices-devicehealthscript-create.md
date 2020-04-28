@@ -29,7 +29,7 @@ ms.locfileid: "43380920"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,10 +43,10 @@ POST /deviceManagement/deviceHealthScripts
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицехеалсскрипт в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицехеалсскрипт.
@@ -63,15 +63,15 @@ POST /deviceManagement/deviceHealthScripts
 |createdDateTime|DateTimeOffset|Метка времени создания сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Метка времени изменения сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логическое|Указывает, нужно ли проверять подпись скрипта|
-|runAs32Bit|Логическое|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для сценария работоспособности устройства|
-|исглобалскрипт|Логическое|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
+|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
+|runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
+|roleScopeTagIds|Коллекция объектов string|Список идентификаторов тегов области для сценария работоспособности устройства|
+|исглобалскрипт|Boolean|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
 |хигхеставаилаблеверсион|String|Самая высокая доступная версия для собственного сценария Майкрософт|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

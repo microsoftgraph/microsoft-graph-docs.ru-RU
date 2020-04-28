@@ -49,7 +49,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 |parentFolderId|String|Идентификатор родительской папки для папки.|
 |wellKnownName|string|Имя папки, если она является распознаваемой папкой. В `contacts` настоящее время это единственная распознанная папка контактов.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [contactFolder](../resources/contactfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример

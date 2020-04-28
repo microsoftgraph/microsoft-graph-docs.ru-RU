@@ -39,7 +39,7 @@ ms.locfileid: "43377082"
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |displayName|Строка|Предоставленное пользователем имя объекта ресурса.|
 |description|String|Предоставленное пользователем описание объекта ресурса.|
-|roleScopeTagIds|Коллекция String|Список тегов области для конфигурации.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для конфигурации.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 

@@ -39,8 +39,8 @@ ms.locfileid: "43447217"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Логическое|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -48,55 +48,55 @@ ms.locfileid: "43447217"
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|appsBlockClipboardSharing|Логическое|Указывает, следует ли запретить совместное использование буфера обмена для копирования данных между приложениями.|
-|appsBlockCopyPaste|Логическое|Указывает, следует ли запретить копирование данных между приложениями.|
-|appsBlockYouTube|Логическое|Указывает, следует ли заблокировать приложение YouTube.|
+|appsBlockClipboardSharing|Boolean|Указывает, следует ли запретить совместное использование буфера обмена для копирования данных между приложениями.|
+|appsBlockCopyPaste|Boolean|Указывает, следует ли запретить копирование данных между приложениями.|
+|appsBlockYouTube|Boolean|Указывает, следует ли заблокировать приложение YouTube.|
 |bluetoothBlocked|Логический|Указывает, следует ли заблокировать Bluetooth.|
-|cameraBlocked|Логическое|Указывает, следует ли запретить использовать камеру.|
-|cellularBlockDataRoaming|Логическое|Указывает, следует ли блокировать передачу данных в роуминге.|
-|cellularBlockMessaging|Логическое|Указывает, следует ли запретить обмениваться SMS и MMS.|
-|cellularBlockVoiceRoaming|Логическое|Указывает, следует ли заблокировать голосовой роуминг.|
-|cellularBlockWiFiTethering|Логическое|Указывает, следует ли блокировать синхронизацию модема Wi-Fi.|
+|cameraBlocked|Boolean|Указывает, следует ли запретить использовать камеру.|
+|cellularBlockDataRoaming|Boolean|Указывает, следует ли блокировать передачу данных в роуминге.|
+|cellularBlockMessaging|Boolean|Указывает, следует ли запретить обмениваться SMS и MMS.|
+|cellularBlockVoiceRoaming|Boolean|Указывает, следует ли заблокировать голосовой роуминг.|
+|cellularBlockWiFiTethering|Boolean|Указывает, следует ли блокировать синхронизацию модема Wi-Fi.|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, соответствующих требованиям (список разрешений или блокировок, определяется свойством CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
 |compliantAppListType|[апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Тип списка, определенного свойством CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Boolean|Указывает, следует ли заблокировать отправку диагностических данных.|
-|locationServicesBlocked|Логическое|Указывает, следует ли заблокировать службы определения местоположения.|
-|googleAccountBlockAutoSync|Логическое|Указывает, следует ли блокировать автоматическую синхронизацию учетной записи Google.|
-|googlePlayStoreBlocked|Логическое|Указывает, следует ли блокировать Google Play Маркет.|
-|kioskModeBlockSleepButton|Логическое|Указывает, следует ли блокировать кнопку спящего режима экрана в режиме терминала.|
-|kioskModeBlockVolumeButtons|Логическое|Указывает, следует ли блокировать кнопки громкости в режиме терминала.|
-|датеандтимеблоккчанжес|Логическое|Указывает, следует ли заблокировать изменение даты и времени в режиме KNOX.|
+|locationServicesBlocked|Boolean|Указывает, следует ли заблокировать службы определения местоположения.|
+|googleAccountBlockAutoSync|Boolean|Указывает, следует ли блокировать автоматическую синхронизацию учетной записи Google.|
+|googlePlayStoreBlocked|Boolean|Указывает, следует ли блокировать Google Play Маркет.|
+|kioskModeBlockSleepButton|Boolean|Указывает, следует ли блокировать кнопку спящего режима экрана в режиме терминала.|
+|kioskModeBlockVolumeButtons|Boolean|Указывает, следует ли блокировать кнопки громкости в режиме терминала.|
+|датеандтимеблоккчанжес|Boolean|Указывает, следует ли заблокировать изменение даты и времени в режиме KNOX.|
 |kioskModeApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список разрешенных приложений в режиме терминала. Эта коллекция может содержать не более 500 элементов.|
-|nfcBlocked|Логическое|Указывает, следует ли заблокировать NFC.|
-|passwordBlockFingerprintUnlock|Логическое|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
-|passwordBlockTrustAgents|Логическое|Указывает, следует ли блокировать Smart Lock и другие агенты безопасности.|
+|nfcBlocked|Boolean|Указывает, следует ли заблокировать NFC.|
+|passwordBlockFingerprintUnlock|Boolean|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
+|passwordBlockTrustAgents|Boolean|Указывает, следует ли блокировать Smart Lock и другие агенты безопасности.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 365.|
 |passwordMinimumLength|Int32|Минимальная длина паролей. Допустимые значения: от 4 до 16.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Время с момента последнего действия до отключения экрана (в минутах).|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые следует заблокировать. Допустимые значения: от 0 до 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек. Допустимые значения — от 1 до 16.|
 |passwordRequiredType|[андроидрекуиредпассвордтипе](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
-|passwordRequired|Логическое|Указывает, обязательно ли использовать пароль.|
-|powerOffBlocked|Логическое|Указывает, следует ли блокировать отключение устройства.|
-|factoryResetBlocked|Логическое|Указывает, следует ли запретить пользователю восстанавливать заводские настройки.|
-|screenCaptureBlocked|Логическое|Указывает, следует ли запретить делать снимки экрана.|
-|deviceSharingAllowed|Логическое|Указывает, следует ли разрешить режим совместного доступа к устройству.|
-|storageBlockGoogleBackup|Логическое|Указывает, следует ли блокировать резервное копирование Google.|
+|passwordRequired|Boolean|Указывает, обязательно ли использовать пароль.|
+|powerOffBlocked|Boolean|Указывает, следует ли блокировать отключение устройства.|
+|factoryResetBlocked|Boolean|Указывает, следует ли запретить пользователю восстанавливать заводские настройки.|
+|screenCaptureBlocked|Boolean|Указывает, следует ли запретить делать снимки экрана.|
+|deviceSharingAllowed|Boolean|Указывает, следует ли разрешить режим совместного доступа к устройству.|
+|storageBlockGoogleBackup|Boolean|Указывает, следует ли блокировать резервное копирование Google.|
 |storageBlockRemovableStorage|Логический|Указывает, следует ли запретить использовать съемные носители.|
-|storageRequireDeviceEncryption|Логическое|Указывает, обязательно ли шифрование устройства.|
-|storageRequireRemovableStorageEncryption|Логическое|Указывает, обязательно ли шифрование съемных носителей.|
-|voiceAssistantBlocked|Логическое|Указывает, следует ли блокировать использование голосового помощника.|
+|storageRequireDeviceEncryption|Boolean|Указывает, обязательно ли шифрование устройства.|
+|storageRequireRemovableStorageEncryption|Boolean|Указывает, обязательно ли шифрование съемных носителей.|
+|voiceAssistantBlocked|Boolean|Указывает, следует ли блокировать использование голосового помощника.|
 |voiceDialingBlocked|Логический|Указывает, следует ли заблокировать голосовой набор.|
-|webBrowserBlockPopups|Логическое|Указывает, следует ли блокировать всплывающие окна в веб-браузере.|
-|webBrowserBlockAutofill|Логическое|Указывает, следует ли заблокировать функцию автозаполнения в веб-браузере.|
-|webBrowserBlockJavaScript|Логическое|Указывает, следует ли заблокировать JavaScript в веб-браузере.|
+|webBrowserBlockPopups|Boolean|Указывает, следует ли блокировать всплывающие окна в веб-браузере.|
+|webBrowserBlockAutofill|Boolean|Указывает, следует ли заблокировать функцию автозаполнения в веб-браузере.|
+|webBrowserBlockJavaScript|Boolean|Указывает, следует ли заблокировать JavaScript в веб-браузере.|
 |webBrowserBlocked|Boolean|Указывает, следует ли заблокировать веб-браузер.|
 |webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Настройки файлов cookie в веб-браузере. Возможные значения: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
 |wiFiBlocked|Boolean|Указывает, следует ли заблокировать синхронизацию Wi-Fi.|
 |appsInstallAllowList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, которые можно установить на устройстве KNOX. Эта коллекция может содержать не более 500 элементов.|
 |appsLaunchBlockList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, которые запрещено запускать на устройстве KNOX. Эта коллекция может содержать не более 500 элементов.|
 |appsHideList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, которые следует скрыть на устройстве KNOX. Эта коллекция может содержать не более 500 элементов.|
-|securityRequireVerifyApps|Логическое|Обязательное включение функции Android "Проверка приложений".|
+|securityRequireVerifyApps|Boolean|Обязательное включение функции Android "Проверка приложений".|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

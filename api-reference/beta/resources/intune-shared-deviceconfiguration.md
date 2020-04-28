@@ -27,7 +27,7 @@ ms.locfileid: "43356555"
 |:---|:---|:---|
 |[Список объектов deviceConfiguration](../api/intune-shared-deviceconfiguration-list.md)|Коллекция [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|Список свойств и связей объектов [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |[Получение объекта deviceConfiguration](../api/intune-shared-deviceconfiguration-get.md)|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|Чтение свойств и связей объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|**Конфигурация устройства**|
+|**Конфигурация устройств**|
 |[Действие assign](../api/intune-shared-deviceconfiguration-assign.md)|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Н/Д|
 |[Действие windowsPrivacyAccessControls](../api/intune-shared-deviceconfiguration-windowsprivacyaccesscontrols.md)|Нет|Пока не задокументировано|
 |[Действие assignedAccessMultiModeProfiles](../api/intune-shared-deviceconfiguration-assignedaccessmultimodeprofiles.md)|Нет|Пока не задокументировано|
@@ -40,8 +40,8 @@ ms.locfileid: "43356555"
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
-|суппортсскопетагс|Логическое|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности.|
+|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения.|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики.|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики.|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики.|
@@ -53,7 +53,7 @@ ms.locfileid: "43356555"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|**Конфигурация устройства**|
+|**Конфигурация устройств**|
 |groupAssignments|Коллекция [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства.|
 |assignments|Коллекция объектов [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства.|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства.|
