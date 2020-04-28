@@ -12,23 +12,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/10/2020
 ms.locfileid: "43218417"
 ---
-# <a name="metadataentry-resource-type"></a><span data-ttu-id="92bae-103">Тип ресурса Метадатаентри</span><span class="sxs-lookup"><span data-stu-id="92bae-103">metadataEntry resource type</span></span>
+# <a name="metadataentry-resource-type"></a><span data-ttu-id="8f642-103">Тип ресурса Метадатаентри</span><span class="sxs-lookup"><span data-stu-id="8f642-103">metadataEntry resource type</span></span>
 
-<span data-ttu-id="92bae-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="92bae-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8f642-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8f642-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="92bae-105">Метаданные для данного объекта.</span><span class="sxs-lookup"><span data-stu-id="92bae-105">Metadata for the given object.</span></span>
+<span data-ttu-id="8f642-105">Метаданные для данного объекта.</span><span class="sxs-lookup"><span data-stu-id="8f642-105">Metadata for the given object.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="92bae-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="92bae-106">Properties</span></span>
-| <span data-ttu-id="92bae-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="92bae-107">Property</span></span>     | <span data-ttu-id="92bae-108">Тип</span><span class="sxs-lookup"><span data-stu-id="92bae-108">Type</span></span>   |<span data-ttu-id="92bae-109">Описание</span><span class="sxs-lookup"><span data-stu-id="92bae-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8f642-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="8f642-106">Properties</span></span>
+| <span data-ttu-id="8f642-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="8f642-107">Property</span></span>     | <span data-ttu-id="8f642-108">Тип</span><span class="sxs-lookup"><span data-stu-id="8f642-108">Type</span></span>   |<span data-ttu-id="8f642-109">Описание</span><span class="sxs-lookup"><span data-stu-id="8f642-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="92bae-110">key</span><span class="sxs-lookup"><span data-stu-id="92bae-110">key</span></span>|<span data-ttu-id="92bae-111">Строка</span><span class="sxs-lookup"><span data-stu-id="92bae-111">String</span></span>|<span data-ttu-id="92bae-112">Имя свойства метаданных.</span><span class="sxs-lookup"><span data-stu-id="92bae-112">Name of the metadata property.</span></span>|
-|<span data-ttu-id="92bae-113">value</span><span class="sxs-lookup"><span data-stu-id="92bae-113">value</span></span>|<span data-ttu-id="92bae-114">String</span><span class="sxs-lookup"><span data-stu-id="92bae-114">String</span></span>|<span data-ttu-id="92bae-115">Значение свойства метаданных.</span><span class="sxs-lookup"><span data-stu-id="92bae-115">Value of the metadata property.</span></span>|
+|<span data-ttu-id="8f642-110">key</span><span class="sxs-lookup"><span data-stu-id="8f642-110">key</span></span>|<span data-ttu-id="8f642-111">String</span><span class="sxs-lookup"><span data-stu-id="8f642-111">String</span></span>|<span data-ttu-id="8f642-112">Имя свойства метаданных.</span><span class="sxs-lookup"><span data-stu-id="8f642-112">Name of the metadata property.</span></span>|
+|<span data-ttu-id="8f642-113">value</span><span class="sxs-lookup"><span data-stu-id="8f642-113">value</span></span>|<span data-ttu-id="8f642-114">String</span><span class="sxs-lookup"><span data-stu-id="8f642-114">String</span></span>|<span data-ttu-id="8f642-115">Значение свойства метаданных.</span><span class="sxs-lookup"><span data-stu-id="8f642-115">Value of the metadata property.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="92bae-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="92bae-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8f642-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8f642-116">JSON representation</span></span>
 
-<span data-ttu-id="92bae-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="92bae-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8f642-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8f642-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

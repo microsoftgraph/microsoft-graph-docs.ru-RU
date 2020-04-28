@@ -12,17 +12,17 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42522339"
 ---
-# <a name="onenoteoperationerror-resource-type"></a><span data-ttu-id="9c7bd-103">Тип ресурса Оненотеоператионеррор</span><span class="sxs-lookup"><span data-stu-id="9c7bd-103">onenoteOperationError resource type</span></span>
+# <a name="onenoteoperationerror-resource-type"></a><span data-ttu-id="2686b-103">Тип ресурса Оненотеоператионеррор</span><span class="sxs-lookup"><span data-stu-id="2686b-103">onenoteOperationError resource type</span></span>
 
-<span data-ttu-id="9c7bd-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="9c7bd-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2686b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2686b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9c7bd-105">Ошибка при выполнении операции с OneNote.</span><span class="sxs-lookup"><span data-stu-id="9c7bd-105">An error from a failed OneNote operation.</span></span>
+<span data-ttu-id="2686b-105">Ошибка при выполнении операции с OneNote.</span><span class="sxs-lookup"><span data-stu-id="2686b-105">An error from a failed OneNote operation.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9c7bd-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9c7bd-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2686b-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2686b-106">JSON representation</span></span>
 
-<span data-ttu-id="9c7bd-107">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9c7bd-107">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2686b-107">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2686b-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -39,11 +39,11 @@ ms.locfileid: "42522339"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="9c7bd-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="9c7bd-108">Properties</span></span>
-| <span data-ttu-id="9c7bd-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="9c7bd-109">Property</span></span>     | <span data-ttu-id="9c7bd-110">Тип</span><span class="sxs-lookup"><span data-stu-id="9c7bd-110">Type</span></span>   |<span data-ttu-id="9c7bd-111">Описание</span><span class="sxs-lookup"><span data-stu-id="9c7bd-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2686b-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="2686b-108">Properties</span></span>
+| <span data-ttu-id="2686b-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="2686b-109">Property</span></span>     | <span data-ttu-id="2686b-110">Тип</span><span class="sxs-lookup"><span data-stu-id="2686b-110">Type</span></span>   |<span data-ttu-id="2686b-111">Описание</span><span class="sxs-lookup"><span data-stu-id="2686b-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9c7bd-112">code</span><span class="sxs-lookup"><span data-stu-id="9c7bd-112">code</span></span>|<span data-ttu-id="9c7bd-113">строка</span><span class="sxs-lookup"><span data-stu-id="9c7bd-113">string</span></span>|<span data-ttu-id="9c7bd-114">Код ошибки.</span><span class="sxs-lookup"><span data-stu-id="9c7bd-114">The error code.</span></span>|
-|<span data-ttu-id="9c7bd-115">message</span><span class="sxs-lookup"><span data-stu-id="9c7bd-115">message</span></span>|<span data-ttu-id="9c7bd-116">string</span><span class="sxs-lookup"><span data-stu-id="9c7bd-116">string</span></span>|<span data-ttu-id="9c7bd-117">Сообщение об ошибке.</span><span class="sxs-lookup"><span data-stu-id="9c7bd-117">The error message.</span></span>|
+|<span data-ttu-id="2686b-112">code</span><span class="sxs-lookup"><span data-stu-id="2686b-112">code</span></span>|<span data-ttu-id="2686b-113">string</span><span class="sxs-lookup"><span data-stu-id="2686b-113">string</span></span>|<span data-ttu-id="2686b-114">Код ошибки.</span><span class="sxs-lookup"><span data-stu-id="2686b-114">The error code.</span></span>|
+|<span data-ttu-id="2686b-115">message</span><span class="sxs-lookup"><span data-stu-id="2686b-115">message</span></span>|<span data-ttu-id="2686b-116">string</span><span class="sxs-lookup"><span data-stu-id="2686b-116">string</span></span>|<span data-ttu-id="2686b-117">Сообщение об ошибке.</span><span class="sxs-lookup"><span data-stu-id="2686b-117">The error message.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

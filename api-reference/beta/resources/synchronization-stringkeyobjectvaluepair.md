@@ -12,23 +12,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/10/2020
 ms.locfileid: "43217565"
 ---
-# <a name="stringkeyobjectvaluepair-resource-type"></a><span data-ttu-id="5b6d0-104">Тип ресурса Стрингкэйобжектвалуепаир</span><span class="sxs-lookup"><span data-stu-id="5b6d0-104">stringKeyObjectValuePair resource type</span></span>
+# <a name="stringkeyobjectvaluepair-resource-type"></a><span data-ttu-id="fa092-104">Тип ресурса Стрингкэйобжектвалуепаир</span><span class="sxs-lookup"><span data-stu-id="fa092-104">stringKeyObjectValuePair resource type</span></span>
 
-<span data-ttu-id="5b6d0-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5b6d0-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fa092-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fa092-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5b6d0-106">Представляет собой запись "ключ-значение", в которой ключ является строкой, а значение — произвольным объектом JSON.</span><span class="sxs-lookup"><span data-stu-id="5b6d0-106">Represents a key-value pair where the key is a string and the value is an arbitrary JSON object.</span></span> <span data-ttu-id="5b6d0-107">Это открытый тип OData, который предполагает наличие свойства с именем `value` , которое является допустимым объектом JSON.</span><span class="sxs-lookup"><span data-stu-id="5b6d0-107">This is an OData open type that expects to have a property named `value` that is a valid JSON object.</span></span>
+<span data-ttu-id="fa092-106">Представляет собой запись "ключ-значение", в которой ключ является строкой, а значение — произвольным объектом JSON.</span><span class="sxs-lookup"><span data-stu-id="fa092-106">Represents a key-value pair where the key is a string and the value is an arbitrary JSON object.</span></span> <span data-ttu-id="fa092-107">Это открытый тип OData, который предполагает наличие свойства с именем `value` , которое является допустимым объектом JSON.</span><span class="sxs-lookup"><span data-stu-id="fa092-107">This is an OData open type that expects to have a property named `value` that is a valid JSON object.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5b6d0-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="5b6d0-108">Properties</span></span>
-| <span data-ttu-id="5b6d0-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="5b6d0-109">Property</span></span>     | <span data-ttu-id="5b6d0-110">Тип</span><span class="sxs-lookup"><span data-stu-id="5b6d0-110">Type</span></span>   |<span data-ttu-id="5b6d0-111">Описание</span><span class="sxs-lookup"><span data-stu-id="5b6d0-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="fa092-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="fa092-108">Properties</span></span>
+| <span data-ttu-id="fa092-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="fa092-109">Property</span></span>     | <span data-ttu-id="fa092-110">Тип</span><span class="sxs-lookup"><span data-stu-id="fa092-110">Type</span></span>   |<span data-ttu-id="fa092-111">Описание</span><span class="sxs-lookup"><span data-stu-id="fa092-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5b6d0-112">ключа</span><span class="sxs-lookup"><span data-stu-id="5b6d0-112">key</span></span>|<span data-ttu-id="5b6d0-113">Строка</span><span class="sxs-lookup"><span data-stu-id="5b6d0-113">String</span></span>|<span data-ttu-id="5b6d0-114">Ключ.</span><span class="sxs-lookup"><span data-stu-id="5b6d0-114">Key.</span></span>|
-|<span data-ttu-id="5b6d0-115">значение</span><span class="sxs-lookup"><span data-stu-id="5b6d0-115">value</span></span>|<span data-ttu-id="5b6d0-116">Json</span><span class="sxs-lookup"><span data-stu-id="5b6d0-116">Json</span></span>|<span data-ttu-id="5b6d0-117">Произвольный объект JSON.</span><span class="sxs-lookup"><span data-stu-id="5b6d0-117">Arbitrary JSON object.</span></span>|
+|<span data-ttu-id="fa092-112">ключа</span><span class="sxs-lookup"><span data-stu-id="fa092-112">key</span></span>|<span data-ttu-id="fa092-113">String</span><span class="sxs-lookup"><span data-stu-id="fa092-113">String</span></span>|<span data-ttu-id="fa092-114">Ключ.</span><span class="sxs-lookup"><span data-stu-id="fa092-114">Key.</span></span>|
+|<span data-ttu-id="fa092-115">значение</span><span class="sxs-lookup"><span data-stu-id="fa092-115">value</span></span>|<span data-ttu-id="fa092-116">Json</span><span class="sxs-lookup"><span data-stu-id="fa092-116">Json</span></span>|<span data-ttu-id="fa092-117">Произвольный объект JSON.</span><span class="sxs-lookup"><span data-stu-id="fa092-117">Arbitrary JSON object.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="5b6d0-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5b6d0-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fa092-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="fa092-118">JSON representation</span></span>
 
-<span data-ttu-id="5b6d0-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5b6d0-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fa092-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fa092-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

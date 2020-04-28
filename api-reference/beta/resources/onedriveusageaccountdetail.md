@@ -12,29 +12,29 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42522381"
 ---
-# <a name="onedriveusageaccountdetail-resource-type"></a><span data-ttu-id="44dd7-103">Тип ресурса Онедривеусажеаккаунтдетаил</span><span class="sxs-lookup"><span data-stu-id="44dd7-103">oneDriveUsageAccountDetail resource type</span></span>
+# <a name="onedriveusageaccountdetail-resource-type"></a><span data-ttu-id="9ddde-103">Тип ресурса Онедривеусажеаккаунтдетаил</span><span class="sxs-lookup"><span data-stu-id="9ddde-103">oneDriveUsageAccountDetail resource type</span></span>
 
-<span data-ttu-id="44dd7-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="44dd7-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9ddde-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9ddde-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="44dd7-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="44dd7-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="9ddde-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="9ddde-105">Properties</span></span>
 
-| <span data-ttu-id="44dd7-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="44dd7-106">Property</span></span>                | <span data-ttu-id="44dd7-107">Тип</span><span class="sxs-lookup"><span data-stu-id="44dd7-107">Type</span></span>    |
+| <span data-ttu-id="9ddde-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="9ddde-106">Property</span></span>                | <span data-ttu-id="9ddde-107">Тип</span><span class="sxs-lookup"><span data-stu-id="9ddde-107">Type</span></span>    |
 | :---------------------- | :------ |
-| <span data-ttu-id="44dd7-108">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="44dd7-108">reportRefreshDate</span></span>       | <span data-ttu-id="44dd7-109">Дата</span><span class="sxs-lookup"><span data-stu-id="44dd7-109">Date</span></span>    |
-| <span data-ttu-id="44dd7-110">siteUrl</span><span class="sxs-lookup"><span data-stu-id="44dd7-110">siteUrl</span></span>                 | <span data-ttu-id="44dd7-111">String</span><span class="sxs-lookup"><span data-stu-id="44dd7-111">String</span></span>  |
-| <span data-ttu-id="44dd7-112">овнердисплайнаме</span><span class="sxs-lookup"><span data-stu-id="44dd7-112">ownerDisplayName</span></span>        | <span data-ttu-id="44dd7-113">String</span><span class="sxs-lookup"><span data-stu-id="44dd7-113">String</span></span>  |
-| <span data-ttu-id="44dd7-114">овнерпринЦипалнаме</span><span class="sxs-lookup"><span data-stu-id="44dd7-114">ownerPrincipalName</span></span>      | <span data-ttu-id="44dd7-115">String</span><span class="sxs-lookup"><span data-stu-id="44dd7-115">String</span></span>  |
-| <span data-ttu-id="44dd7-116">isDeleted</span><span class="sxs-lookup"><span data-stu-id="44dd7-116">isDeleted</span></span>               | <span data-ttu-id="44dd7-117">Логический</span><span class="sxs-lookup"><span data-stu-id="44dd7-117">Boolean</span></span> |
-| <span data-ttu-id="44dd7-118">ластактивитидате</span><span class="sxs-lookup"><span data-stu-id="44dd7-118">lastActivityDate</span></span>        | <span data-ttu-id="44dd7-119">Дата</span><span class="sxs-lookup"><span data-stu-id="44dd7-119">Date</span></span>    |
-| <span data-ttu-id="44dd7-120">филекаунт</span><span class="sxs-lookup"><span data-stu-id="44dd7-120">fileCount</span></span>               | <span data-ttu-id="44dd7-121">Int64</span><span class="sxs-lookup"><span data-stu-id="44dd7-121">Int64</span></span>   |
-| <span data-ttu-id="44dd7-122">активефилекаунт</span><span class="sxs-lookup"><span data-stu-id="44dd7-122">activeFileCount</span></span>         | <span data-ttu-id="44dd7-123">Int64</span><span class="sxs-lookup"><span data-stu-id="44dd7-123">Int64</span></span>   |
-| <span data-ttu-id="44dd7-124">сторажеусединбитес</span><span class="sxs-lookup"><span data-stu-id="44dd7-124">storageUsedInBytes</span></span>      | <span data-ttu-id="44dd7-125">Int64</span><span class="sxs-lookup"><span data-stu-id="44dd7-125">Int64</span></span>   |
-| <span data-ttu-id="44dd7-126">сторажеаллокатединбитес</span><span class="sxs-lookup"><span data-stu-id="44dd7-126">storageAllocatedInBytes</span></span> | <span data-ttu-id="44dd7-127">Int64</span><span class="sxs-lookup"><span data-stu-id="44dd7-127">Int64</span></span>   |
-| <span data-ttu-id="44dd7-128">репортпериод</span><span class="sxs-lookup"><span data-stu-id="44dd7-128">reportPeriod</span></span>            | <span data-ttu-id="44dd7-129">String</span><span class="sxs-lookup"><span data-stu-id="44dd7-129">String</span></span>  |
+| <span data-ttu-id="9ddde-108">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="9ddde-108">reportRefreshDate</span></span>       | <span data-ttu-id="9ddde-109">Дата</span><span class="sxs-lookup"><span data-stu-id="9ddde-109">Date</span></span>    |
+| <span data-ttu-id="9ddde-110">siteUrl</span><span class="sxs-lookup"><span data-stu-id="9ddde-110">siteUrl</span></span>                 | <span data-ttu-id="9ddde-111">String</span><span class="sxs-lookup"><span data-stu-id="9ddde-111">String</span></span>  |
+| <span data-ttu-id="9ddde-112">овнердисплайнаме</span><span class="sxs-lookup"><span data-stu-id="9ddde-112">ownerDisplayName</span></span>        | <span data-ttu-id="9ddde-113">String</span><span class="sxs-lookup"><span data-stu-id="9ddde-113">String</span></span>  |
+| <span data-ttu-id="9ddde-114">овнерпринЦипалнаме</span><span class="sxs-lookup"><span data-stu-id="9ddde-114">ownerPrincipalName</span></span>      | <span data-ttu-id="9ddde-115">String</span><span class="sxs-lookup"><span data-stu-id="9ddde-115">String</span></span>  |
+| <span data-ttu-id="9ddde-116">isDeleted</span><span class="sxs-lookup"><span data-stu-id="9ddde-116">isDeleted</span></span>               | <span data-ttu-id="9ddde-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="9ddde-117">Boolean</span></span> |
+| <span data-ttu-id="9ddde-118">ластактивитидате</span><span class="sxs-lookup"><span data-stu-id="9ddde-118">lastActivityDate</span></span>        | <span data-ttu-id="9ddde-119">Дата</span><span class="sxs-lookup"><span data-stu-id="9ddde-119">Date</span></span>    |
+| <span data-ttu-id="9ddde-120">филекаунт</span><span class="sxs-lookup"><span data-stu-id="9ddde-120">fileCount</span></span>               | <span data-ttu-id="9ddde-121">Int64</span><span class="sxs-lookup"><span data-stu-id="9ddde-121">Int64</span></span>   |
+| <span data-ttu-id="9ddde-122">активефилекаунт</span><span class="sxs-lookup"><span data-stu-id="9ddde-122">activeFileCount</span></span>         | <span data-ttu-id="9ddde-123">Int64</span><span class="sxs-lookup"><span data-stu-id="9ddde-123">Int64</span></span>   |
+| <span data-ttu-id="9ddde-124">сторажеусединбитес</span><span class="sxs-lookup"><span data-stu-id="9ddde-124">storageUsedInBytes</span></span>      | <span data-ttu-id="9ddde-125">Int64</span><span class="sxs-lookup"><span data-stu-id="9ddde-125">Int64</span></span>   |
+| <span data-ttu-id="9ddde-126">сторажеаллокатединбитес</span><span class="sxs-lookup"><span data-stu-id="9ddde-126">storageAllocatedInBytes</span></span> | <span data-ttu-id="9ddde-127">Int64</span><span class="sxs-lookup"><span data-stu-id="9ddde-127">Int64</span></span>   |
+| <span data-ttu-id="9ddde-128">репортпериод</span><span class="sxs-lookup"><span data-stu-id="9ddde-128">reportPeriod</span></span>            | <span data-ttu-id="9ddde-129">String</span><span class="sxs-lookup"><span data-stu-id="9ddde-129">String</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="44dd7-130">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="44dd7-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9ddde-130">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9ddde-130">JSON representation</span></span>
 
-<span data-ttu-id="44dd7-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="44dd7-131">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9ddde-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9ddde-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

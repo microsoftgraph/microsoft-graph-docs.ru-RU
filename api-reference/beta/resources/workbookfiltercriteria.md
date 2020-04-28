@@ -12,17 +12,17 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42519227"
 ---
-# <a name="workbookfiltercriteria-resource-type"></a><span data-ttu-id="95970-103">Тип ресурса Воркбукфилтеркритериа</span><span class="sxs-lookup"><span data-stu-id="95970-103">workbookFilterCriteria resource type</span></span>
+# <a name="workbookfiltercriteria-resource-type"></a><span data-ttu-id="05255-103">Тип ресурса Воркбукфилтеркритериа</span><span class="sxs-lookup"><span data-stu-id="05255-103">workbookFilterCriteria resource type</span></span>
 
-<span data-ttu-id="95970-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="95970-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="05255-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="05255-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="95970-105">Представляет условия фильтра, применяемые к столбцу.</span><span class="sxs-lookup"><span data-stu-id="95970-105">Represents the filtering criteria applied to a column.</span></span>
+<span data-ttu-id="05255-105">Представляет условия фильтра, применяемые к столбцу.</span><span class="sxs-lookup"><span data-stu-id="05255-105">Represents the filtering criteria applied to a column.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="95970-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="95970-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="05255-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="05255-106">JSON representation</span></span>
 
-<span data-ttu-id="95970-107">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="95970-107">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="05255-107">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="05255-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

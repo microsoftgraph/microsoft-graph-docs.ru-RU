@@ -12,55 +12,55 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "43199588"
 ---
-# <a name="delete-identityprovider"></a><span data-ttu-id="452bd-103">Удаление identityProvider</span><span class="sxs-lookup"><span data-stu-id="452bd-103">Delete identityProvider</span></span>
+# <a name="delete-identityprovider"></a><span data-ttu-id="b6f6e-103">Удаление identityProvider</span><span class="sxs-lookup"><span data-stu-id="b6f6e-103">Delete identityProvider</span></span>
 
-<span data-ttu-id="452bd-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="452bd-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b6f6e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b6f6e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="452bd-105">Удаление существующего объекта [identityProvider](../resources/identityprovider.md).</span><span class="sxs-lookup"><span data-stu-id="452bd-105">Delete an existing [identityProvider](../resources/identityprovider.md).</span></span>
+<span data-ttu-id="b6f6e-105">Удаление существующего объекта [identityProvider](../resources/identityprovider.md).</span><span class="sxs-lookup"><span data-stu-id="b6f6e-105">Delete an existing [identityProvider](../resources/identityprovider.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="452bd-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="452bd-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b6f6e-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b6f6e-106">Permissions</span></span>
 
-<span data-ttu-id="452bd-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="452bd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b6f6e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b6f6e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="452bd-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="452bd-109">Permission type</span></span>      | <span data-ttu-id="452bd-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="452bd-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b6f6e-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b6f6e-109">Permission type</span></span>      | <span data-ttu-id="b6f6e-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b6f6e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="452bd-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="452bd-111">Delegated (work or school account)</span></span>|<span data-ttu-id="452bd-112">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="452bd-112">IdentityProvider.ReadWrite.All</span></span>|
-|<span data-ttu-id="452bd-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="452bd-113">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="452bd-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="452bd-114">Not supported.</span></span>|
-|<span data-ttu-id="452bd-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="452bd-115">Application</span></span>|<span data-ttu-id="452bd-116">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="452bd-116">IdentityProvider.ReadWrite.All</span></span>|
+|<span data-ttu-id="b6f6e-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b6f6e-111">Delegated (work or school account)</span></span>|<span data-ttu-id="b6f6e-112">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b6f6e-112">IdentityProvider.ReadWrite.All</span></span>|
+|<span data-ttu-id="b6f6e-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b6f6e-113">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="b6f6e-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b6f6e-114">Not supported.</span></span>|
+|<span data-ttu-id="b6f6e-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b6f6e-115">Application</span></span>|<span data-ttu-id="b6f6e-116">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b6f6e-116">IdentityProvider.ReadWrite.All</span></span>|
 
-<span data-ttu-id="452bd-117">Рабочая или учебная учетная запись должна быть глобальным администратором клиента.</span><span class="sxs-lookup"><span data-stu-id="452bd-117">The work or school account must be a global administrator of the tenant.</span></span>
+<span data-ttu-id="b6f6e-117">Рабочая или учебная учетная запись должна быть глобальным администратором клиента.</span><span class="sxs-lookup"><span data-stu-id="b6f6e-117">The work or school account must be a global administrator of the tenant.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="452bd-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="452bd-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b6f6e-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b6f6e-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /identityProviders/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="452bd-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="452bd-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b6f6e-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b6f6e-119">Request headers</span></span>
 
-|<span data-ttu-id="452bd-120">Имя</span><span class="sxs-lookup"><span data-stu-id="452bd-120">Name</span></span>|<span data-ttu-id="452bd-121">Описание</span><span class="sxs-lookup"><span data-stu-id="452bd-121">Description</span></span>|
+|<span data-ttu-id="b6f6e-120">Имя</span><span class="sxs-lookup"><span data-stu-id="b6f6e-120">Name</span></span>|<span data-ttu-id="b6f6e-121">Описание</span><span class="sxs-lookup"><span data-stu-id="b6f6e-121">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="452bd-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="452bd-122">Authorization</span></span>|<span data-ttu-id="452bd-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="452bd-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="b6f6e-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b6f6e-122">Authorization</span></span>|<span data-ttu-id="b6f6e-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b6f6e-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="452bd-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="452bd-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b6f6e-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b6f6e-125">Request body</span></span>
 
-<span data-ttu-id="452bd-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="452bd-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="b6f6e-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b6f6e-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="452bd-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="452bd-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b6f6e-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="b6f6e-127">Response</span></span>
 
-<span data-ttu-id="452bd-128">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="452bd-128">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="b6f6e-128">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="b6f6e-128">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="452bd-129">Пример</span><span class="sxs-lookup"><span data-stu-id="452bd-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b6f6e-129">Пример</span><span class="sxs-lookup"><span data-stu-id="b6f6e-129">Example</span></span>
 
-<span data-ttu-id="452bd-130">В приведенном ниже примере удаляется объект **identityProvider**.</span><span class="sxs-lookup"><span data-stu-id="452bd-130">The following example deletes an **identityProvider**.</span></span>
+<span data-ttu-id="b6f6e-130">В приведенном ниже примере удаляется объект **identityProvider**.</span><span class="sxs-lookup"><span data-stu-id="b6f6e-130">The following example deletes an **identityProvider**.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="452bd-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="452bd-131">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="b6f6e-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="b6f6e-131">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="452bd-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="452bd-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b6f6e-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="b6f6e-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_identityprovider"
@@ -68,22 +68,22 @@ DELETE /identityProviders/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 ```
-# <a name="c"></a>[<span data-ttu-id="452bd-133">C#</span><span class="sxs-lookup"><span data-stu-id="452bd-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b6f6e-133">C#</span><span class="sxs-lookup"><span data-stu-id="b6f6e-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="452bd-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="452bd-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b6f6e-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b6f6e-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="452bd-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="452bd-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b6f6e-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b6f6e-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="452bd-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="452bd-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b6f6e-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="b6f6e-136">Response</span></span>
 
 <!-- {
   "blockType": "response",

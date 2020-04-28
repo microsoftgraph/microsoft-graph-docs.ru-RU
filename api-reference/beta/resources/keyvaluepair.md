@@ -12,24 +12,24 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42523018"
 ---
-# <a name="keyvaluepair-resource-type"></a><span data-ttu-id="e7a68-103">Тип ресурса keyValuePair</span><span class="sxs-lookup"><span data-stu-id="e7a68-103">keyValuePair resource type</span></span>
+# <a name="keyvaluepair-resource-type"></a><span data-ttu-id="a8e2b-103">Тип ресурса keyValuePair</span><span class="sxs-lookup"><span data-stu-id="a8e2b-103">keyValuePair resource type</span></span>
 
-<span data-ttu-id="e7a68-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="e7a68-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a8e2b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a8e2b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e7a68-105">Ключевое значение для параметров Action.</span><span class="sxs-lookup"><span data-stu-id="e7a68-105">Key value pair for action parameters.</span></span>
+<span data-ttu-id="a8e2b-105">Ключевое значение для параметров Action.</span><span class="sxs-lookup"><span data-stu-id="a8e2b-105">Key value pair for action parameters.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e7a68-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="e7a68-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a8e2b-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="a8e2b-106">Properties</span></span>
 
-| <span data-ttu-id="e7a68-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="e7a68-107">Property</span></span>     | <span data-ttu-id="e7a68-108">Тип</span><span class="sxs-lookup"><span data-stu-id="e7a68-108">Type</span></span>        | <span data-ttu-id="e7a68-109">Описание</span><span class="sxs-lookup"><span data-stu-id="e7a68-109">Description</span></span> |
+| <span data-ttu-id="a8e2b-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="a8e2b-107">Property</span></span>     | <span data-ttu-id="a8e2b-108">Тип</span><span class="sxs-lookup"><span data-stu-id="a8e2b-108">Type</span></span>        | <span data-ttu-id="a8e2b-109">Описание</span><span class="sxs-lookup"><span data-stu-id="a8e2b-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="e7a68-110">name</span><span class="sxs-lookup"><span data-stu-id="e7a68-110">name</span></span>|<span data-ttu-id="e7a68-111">String</span><span class="sxs-lookup"><span data-stu-id="e7a68-111">String</span></span>|<span data-ttu-id="e7a68-112">Имя для этой пары "ключ-значение"</span><span class="sxs-lookup"><span data-stu-id="e7a68-112">Name for this key-value pair</span></span>|
-|<span data-ttu-id="e7a68-113">value</span><span class="sxs-lookup"><span data-stu-id="e7a68-113">value</span></span>|<span data-ttu-id="e7a68-114">String</span><span class="sxs-lookup"><span data-stu-id="e7a68-114">String</span></span>|<span data-ttu-id="e7a68-115">Значение для этой пары "ключ-значение"</span><span class="sxs-lookup"><span data-stu-id="e7a68-115">Value for this key-value pair</span></span>|
+|<span data-ttu-id="a8e2b-110">name</span><span class="sxs-lookup"><span data-stu-id="a8e2b-110">name</span></span>|<span data-ttu-id="a8e2b-111">String</span><span class="sxs-lookup"><span data-stu-id="a8e2b-111">String</span></span>|<span data-ttu-id="a8e2b-112">Имя для этой пары "ключ-значение"</span><span class="sxs-lookup"><span data-stu-id="a8e2b-112">Name for this key-value pair</span></span>|
+|<span data-ttu-id="a8e2b-113">value</span><span class="sxs-lookup"><span data-stu-id="a8e2b-113">value</span></span>|<span data-ttu-id="a8e2b-114">String</span><span class="sxs-lookup"><span data-stu-id="a8e2b-114">String</span></span>|<span data-ttu-id="a8e2b-115">Значение для этой пары "ключ-значение"</span><span class="sxs-lookup"><span data-stu-id="a8e2b-115">Value for this key-value pair</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="e7a68-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e7a68-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a8e2b-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a8e2b-116">JSON representation</span></span>
 
-<span data-ttu-id="e7a68-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e7a68-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a8e2b-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a8e2b-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

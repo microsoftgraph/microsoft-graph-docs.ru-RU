@@ -12,23 +12,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/10/2020
 ms.locfileid: "43217572"
 ---
-# <a name="stringkeylongvaluepair-resource-type"></a><span data-ttu-id="d3a5d-103">Тип ресурса Стрингкэйлонгвалуепаир</span><span class="sxs-lookup"><span data-stu-id="d3a5d-103">stringKeyLongValuePair resource type</span></span>
+# <a name="stringkeylongvaluepair-resource-type"></a><span data-ttu-id="cdab1-103">Тип ресурса Стрингкэйлонгвалуепаир</span><span class="sxs-lookup"><span data-stu-id="cdab1-103">stringKeyLongValuePair resource type</span></span>
 
-<span data-ttu-id="d3a5d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d3a5d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cdab1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cdab1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d3a5d-105">Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, и значением является Int64.</span><span class="sxs-lookup"><span data-stu-id="d3a5d-105">Represents a key-value pair where the key is a string and the value is an Int64.</span></span>
+<span data-ttu-id="cdab1-105">Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, и значением является Int64.</span><span class="sxs-lookup"><span data-stu-id="cdab1-105">Represents a key-value pair where the key is a string and the value is an Int64.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d3a5d-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="d3a5d-106">Properties</span></span>
-| <span data-ttu-id="d3a5d-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="d3a5d-107">Property</span></span>     | <span data-ttu-id="d3a5d-108">Тип</span><span class="sxs-lookup"><span data-stu-id="d3a5d-108">Type</span></span>   |<span data-ttu-id="d3a5d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="d3a5d-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="cdab1-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="cdab1-106">Properties</span></span>
+| <span data-ttu-id="cdab1-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="cdab1-107">Property</span></span>     | <span data-ttu-id="cdab1-108">Тип</span><span class="sxs-lookup"><span data-stu-id="cdab1-108">Type</span></span>   |<span data-ttu-id="cdab1-109">Описание</span><span class="sxs-lookup"><span data-stu-id="cdab1-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d3a5d-110">ключа</span><span class="sxs-lookup"><span data-stu-id="d3a5d-110">key</span></span>|<span data-ttu-id="d3a5d-111">Строка</span><span class="sxs-lookup"><span data-stu-id="d3a5d-111">String</span></span>|<span data-ttu-id="d3a5d-112">Ключ.</span><span class="sxs-lookup"><span data-stu-id="d3a5d-112">Key.</span></span>|
-|<span data-ttu-id="d3a5d-113">значение</span><span class="sxs-lookup"><span data-stu-id="d3a5d-113">value</span></span>|<span data-ttu-id="d3a5d-114">Int64</span><span class="sxs-lookup"><span data-stu-id="d3a5d-114">Int64</span></span>|<span data-ttu-id="d3a5d-115">Значение</span><span class="sxs-lookup"><span data-stu-id="d3a5d-115">Value.</span></span>|
+|<span data-ttu-id="cdab1-110">ключа</span><span class="sxs-lookup"><span data-stu-id="cdab1-110">key</span></span>|<span data-ttu-id="cdab1-111">String</span><span class="sxs-lookup"><span data-stu-id="cdab1-111">String</span></span>|<span data-ttu-id="cdab1-112">Ключ.</span><span class="sxs-lookup"><span data-stu-id="cdab1-112">Key.</span></span>|
+|<span data-ttu-id="cdab1-113">значение</span><span class="sxs-lookup"><span data-stu-id="cdab1-113">value</span></span>|<span data-ttu-id="cdab1-114">Int64</span><span class="sxs-lookup"><span data-stu-id="cdab1-114">Int64</span></span>|<span data-ttu-id="cdab1-115">Значение</span><span class="sxs-lookup"><span data-stu-id="cdab1-115">Value.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d3a5d-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d3a5d-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cdab1-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cdab1-116">JSON representation</span></span>
 
-<span data-ttu-id="d3a5d-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d3a5d-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="cdab1-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cdab1-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

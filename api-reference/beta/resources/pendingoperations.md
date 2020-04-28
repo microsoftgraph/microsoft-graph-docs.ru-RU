@@ -13,23 +13,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42521971"
 ---
-# <a name="pendingoperations-resource-type"></a><span data-ttu-id="80c98-103">Тип ресурса Пендингоператионс</span><span class="sxs-lookup"><span data-stu-id="80c98-103">pendingOperations resource type</span></span>
+# <a name="pendingoperations-resource-type"></a><span data-ttu-id="2c931-103">Тип ресурса Пендингоператионс</span><span class="sxs-lookup"><span data-stu-id="2c931-103">pendingOperations resource type</span></span>
 
-<span data-ttu-id="80c98-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="80c98-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2c931-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2c931-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="80c98-105">Указывает, что одна или несколько операций, которые могут повлиять на состояние **driveItem** , ожидают завершения.</span><span class="sxs-lookup"><span data-stu-id="80c98-105">Indicates that one or more operations that might affect the state of the **driveItem** are pending completion.</span></span>
+<span data-ttu-id="2c931-105">Указывает, что одна или несколько операций, которые могут повлиять на состояние **driveItem** , ожидают завершения.</span><span class="sxs-lookup"><span data-stu-id="2c931-105">Indicates that one or more operations that might affect the state of the **driveItem** are pending completion.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="80c98-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="80c98-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="2c931-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="2c931-106">Properties</span></span>
 
-| <span data-ttu-id="80c98-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="80c98-107">Property</span></span>     | <span data-ttu-id="80c98-108">Тип</span><span class="sxs-lookup"><span data-stu-id="80c98-108">Type</span></span>        | <span data-ttu-id="80c98-109">Описание</span><span class="sxs-lookup"><span data-stu-id="80c98-109">Description</span></span> |
+| <span data-ttu-id="2c931-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="2c931-107">Property</span></span>     | <span data-ttu-id="2c931-108">Тип</span><span class="sxs-lookup"><span data-stu-id="2c931-108">Type</span></span>        | <span data-ttu-id="2c931-109">Описание</span><span class="sxs-lookup"><span data-stu-id="2c931-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="80c98-110">пендингконтентупдате</span><span class="sxs-lookup"><span data-stu-id="80c98-110">pendingContentUpdate</span></span>|[<span data-ttu-id="80c98-111">пендингконтентупдате</span><span class="sxs-lookup"><span data-stu-id="80c98-111">pendingContentUpdate</span></span>](pendingcontentupdate.md)|<span data-ttu-id="80c98-112">Свойство, указывающее на то, что операция, которая может обновить двоичный контент файла, ожидает завершения.</span><span class="sxs-lookup"><span data-stu-id="80c98-112">A property that indicates that an operation that might update the binary content of a file is pending completion.</span></span>|
+|<span data-ttu-id="2c931-110">пендингконтентупдате</span><span class="sxs-lookup"><span data-stu-id="2c931-110">pendingContentUpdate</span></span>|[<span data-ttu-id="2c931-111">пендингконтентупдате</span><span class="sxs-lookup"><span data-stu-id="2c931-111">pendingContentUpdate</span></span>](pendingcontentupdate.md)|<span data-ttu-id="2c931-112">Свойство, указывающее на то, что операция, которая может обновить двоичный контент файла, ожидает завершения.</span><span class="sxs-lookup"><span data-stu-id="2c931-112">A property that indicates that an operation that might update the binary content of a file is pending completion.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="80c98-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="80c98-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2c931-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2c931-113">JSON representation</span></span>
 
-<span data-ttu-id="80c98-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="80c98-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2c931-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2c931-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

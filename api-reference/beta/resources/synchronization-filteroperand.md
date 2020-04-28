@@ -12,22 +12,22 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/10/2020
 ms.locfileid: "43218424"
 ---
-# <a name="filteroperand-resource-type"></a><span data-ttu-id="fe87d-103">Тип ресурса Филтероперанд</span><span class="sxs-lookup"><span data-stu-id="fe87d-103">filterOperand resource type</span></span>
+# <a name="filteroperand-resource-type"></a><span data-ttu-id="7394d-103">Тип ресурса Филтероперанд</span><span class="sxs-lookup"><span data-stu-id="7394d-103">filterOperand resource type</span></span>
 
-<span data-ttu-id="fe87d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fe87d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7394d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7394d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fe87d-105">Содержит коллекцию значений для операнда.</span><span class="sxs-lookup"><span data-stu-id="fe87d-105">Contains a collection of values for the operand.</span></span>
+<span data-ttu-id="7394d-105">Содержит коллекцию значений для операнда.</span><span class="sxs-lookup"><span data-stu-id="7394d-105">Contains a collection of values for the operand.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fe87d-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="fe87d-106">Properties</span></span>
-| <span data-ttu-id="fe87d-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="fe87d-107">Property</span></span>     | <span data-ttu-id="fe87d-108">Тип</span><span class="sxs-lookup"><span data-stu-id="fe87d-108">Type</span></span>   |<span data-ttu-id="fe87d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="fe87d-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7394d-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="7394d-106">Properties</span></span>
+| <span data-ttu-id="7394d-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="7394d-107">Property</span></span>     | <span data-ttu-id="7394d-108">Тип</span><span class="sxs-lookup"><span data-stu-id="7394d-108">Type</span></span>   |<span data-ttu-id="7394d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="7394d-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fe87d-110">values</span><span class="sxs-lookup"><span data-stu-id="fe87d-110">values</span></span>|<span data-ttu-id="fe87d-111">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="fe87d-111">String collection</span></span>|<span data-ttu-id="fe87d-112">Коллекция значений.</span><span class="sxs-lookup"><span data-stu-id="fe87d-112">Collection of values.</span></span>|
+|<span data-ttu-id="7394d-110">values</span><span class="sxs-lookup"><span data-stu-id="7394d-110">values</span></span>|<span data-ttu-id="7394d-111">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="7394d-111">String collection</span></span>|<span data-ttu-id="7394d-112">Коллекция значений.</span><span class="sxs-lookup"><span data-stu-id="7394d-112">Collection of values.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="fe87d-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="fe87d-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7394d-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7394d-113">JSON representation</span></span>
 
-<span data-ttu-id="fe87d-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fe87d-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7394d-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7394d-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

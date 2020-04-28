@@ -12,24 +12,24 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42520445"
 ---
-# <a name="skypeforbusinessactivityusercounts-resource-type"></a><span data-ttu-id="99622-103">Тип ресурса Скипефорбусинессактивитюсеркаунтс</span><span class="sxs-lookup"><span data-stu-id="99622-103">skypeForBusinessActivityUserCounts resource type</span></span>
+# <a name="skypeforbusinessactivityusercounts-resource-type"></a><span data-ttu-id="626d5-103">Тип ресурса Скипефорбусинессактивитюсеркаунтс</span><span class="sxs-lookup"><span data-stu-id="626d5-103">skypeForBusinessActivityUserCounts resource type</span></span>
 
-<span data-ttu-id="99622-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="99622-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="626d5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="626d5-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="99622-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="99622-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="626d5-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="626d5-105">Properties</span></span>
 
-| <span data-ttu-id="99622-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="99622-106">Property</span></span>          | <span data-ttu-id="99622-107">Тип</span><span class="sxs-lookup"><span data-stu-id="99622-107">Type</span></span>   |
+| <span data-ttu-id="626d5-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="626d5-106">Property</span></span>          | <span data-ttu-id="626d5-107">Тип</span><span class="sxs-lookup"><span data-stu-id="626d5-107">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="99622-108">пиртопир</span><span class="sxs-lookup"><span data-stu-id="99622-108">peerToPeer</span></span>        | <span data-ttu-id="99622-109">Int64</span><span class="sxs-lookup"><span data-stu-id="99622-109">Int64</span></span>  |
-| <span data-ttu-id="99622-110">распределяют</span><span class="sxs-lookup"><span data-stu-id="99622-110">organized</span></span>         | <span data-ttu-id="99622-111">Int64</span><span class="sxs-lookup"><span data-stu-id="99622-111">Int64</span></span>  |
-| <span data-ttu-id="99622-112">участвовал</span><span class="sxs-lookup"><span data-stu-id="99622-112">participated</span></span>      | <span data-ttu-id="99622-113">Int64</span><span class="sxs-lookup"><span data-stu-id="99622-113">Int64</span></span>  |
-| <span data-ttu-id="99622-114">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="99622-114">reportRefreshDate</span></span> | <span data-ttu-id="99622-115">Дата</span><span class="sxs-lookup"><span data-stu-id="99622-115">Date</span></span>   |
-| <span data-ttu-id="99622-116">reportDate</span><span class="sxs-lookup"><span data-stu-id="99622-116">reportDate</span></span>        | <span data-ttu-id="99622-117">Дата</span><span class="sxs-lookup"><span data-stu-id="99622-117">Date</span></span>   |
-| <span data-ttu-id="99622-118">репортпериод</span><span class="sxs-lookup"><span data-stu-id="99622-118">reportPeriod</span></span>      | <span data-ttu-id="99622-119">String</span><span class="sxs-lookup"><span data-stu-id="99622-119">String</span></span> |
+| <span data-ttu-id="626d5-108">пиртопир</span><span class="sxs-lookup"><span data-stu-id="626d5-108">peerToPeer</span></span>        | <span data-ttu-id="626d5-109">Int64</span><span class="sxs-lookup"><span data-stu-id="626d5-109">Int64</span></span>  |
+| <span data-ttu-id="626d5-110">распределяют</span><span class="sxs-lookup"><span data-stu-id="626d5-110">organized</span></span>         | <span data-ttu-id="626d5-111">Int64</span><span class="sxs-lookup"><span data-stu-id="626d5-111">Int64</span></span>  |
+| <span data-ttu-id="626d5-112">участвовал</span><span class="sxs-lookup"><span data-stu-id="626d5-112">participated</span></span>      | <span data-ttu-id="626d5-113">Int64</span><span class="sxs-lookup"><span data-stu-id="626d5-113">Int64</span></span>  |
+| <span data-ttu-id="626d5-114">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="626d5-114">reportRefreshDate</span></span> | <span data-ttu-id="626d5-115">Дата</span><span class="sxs-lookup"><span data-stu-id="626d5-115">Date</span></span>   |
+| <span data-ttu-id="626d5-116">reportDate</span><span class="sxs-lookup"><span data-stu-id="626d5-116">reportDate</span></span>        | <span data-ttu-id="626d5-117">Дата</span><span class="sxs-lookup"><span data-stu-id="626d5-117">Date</span></span>   |
+| <span data-ttu-id="626d5-118">репортпериод</span><span class="sxs-lookup"><span data-stu-id="626d5-118">reportPeriod</span></span>      | <span data-ttu-id="626d5-119">String</span><span class="sxs-lookup"><span data-stu-id="626d5-119">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="99622-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="99622-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="626d5-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="626d5-120">JSON representation</span></span>
 
-<span data-ttu-id="99622-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="99622-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="626d5-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="626d5-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -12,26 +12,26 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42519822"
 ---
-# <a name="teamsuseractivityusercounts-resource-type"></a><span data-ttu-id="7423f-103">Тип ресурса Теамсусерактивитюсеркаунтс</span><span class="sxs-lookup"><span data-stu-id="7423f-103">teamsUserActivityUserCounts resource type</span></span>
+# <a name="teamsuseractivityusercounts-resource-type"></a><span data-ttu-id="bc3c2-103">Тип ресурса Теамсусерактивитюсеркаунтс</span><span class="sxs-lookup"><span data-stu-id="bc3c2-103">teamsUserActivityUserCounts resource type</span></span>
 
-<span data-ttu-id="7423f-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="7423f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bc3c2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bc3c2-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7423f-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="7423f-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="bc3c2-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="bc3c2-105">Properties</span></span>
 
-| <span data-ttu-id="7423f-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="7423f-106">Property</span></span>            | <span data-ttu-id="7423f-107">Тип</span><span class="sxs-lookup"><span data-stu-id="7423f-107">Type</span></span>   |
+| <span data-ttu-id="bc3c2-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="bc3c2-106">Property</span></span>            | <span data-ttu-id="bc3c2-107">Тип</span><span class="sxs-lookup"><span data-stu-id="bc3c2-107">Type</span></span>   |
 | :------------------ | :----- |
-| <span data-ttu-id="7423f-108">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="7423f-108">reportRefreshDate</span></span>   | <span data-ttu-id="7423f-109">Дата</span><span class="sxs-lookup"><span data-stu-id="7423f-109">Date</span></span>   |
-| <span data-ttu-id="7423f-110">reportDate</span><span class="sxs-lookup"><span data-stu-id="7423f-110">reportDate</span></span>          | <span data-ttu-id="7423f-111">Дата</span><span class="sxs-lookup"><span data-stu-id="7423f-111">Date</span></span>   |
-| <span data-ttu-id="7423f-112">теамчатмессажес</span><span class="sxs-lookup"><span data-stu-id="7423f-112">teamChatMessages</span></span>    | <span data-ttu-id="7423f-113">Int64</span><span class="sxs-lookup"><span data-stu-id="7423f-113">Int64</span></span>  |
-| <span data-ttu-id="7423f-114">приватечатмессажес</span><span class="sxs-lookup"><span data-stu-id="7423f-114">privateChatMessages</span></span> | <span data-ttu-id="7423f-115">Int64</span><span class="sxs-lookup"><span data-stu-id="7423f-115">Int64</span></span>  |
-| <span data-ttu-id="7423f-116">calls</span><span class="sxs-lookup"><span data-stu-id="7423f-116">calls</span></span>               | <span data-ttu-id="7423f-117">Int64</span><span class="sxs-lookup"><span data-stu-id="7423f-117">Int64</span></span>  |
-| <span data-ttu-id="7423f-118">meetings</span><span class="sxs-lookup"><span data-stu-id="7423f-118">meetings</span></span>            | <span data-ttu-id="7423f-119">Int64</span><span class="sxs-lookup"><span data-stu-id="7423f-119">Int64</span></span>  |
-| <span data-ttu-id="7423f-120">осерактионс</span><span class="sxs-lookup"><span data-stu-id="7423f-120">otherActions</span></span>        | <span data-ttu-id="7423f-121">Int64</span><span class="sxs-lookup"><span data-stu-id="7423f-121">Int64</span></span>  |
-| <span data-ttu-id="7423f-122">репортпериод</span><span class="sxs-lookup"><span data-stu-id="7423f-122">reportPeriod</span></span>        | <span data-ttu-id="7423f-123">String</span><span class="sxs-lookup"><span data-stu-id="7423f-123">String</span></span> |
+| <span data-ttu-id="bc3c2-108">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="bc3c2-108">reportRefreshDate</span></span>   | <span data-ttu-id="bc3c2-109">Дата</span><span class="sxs-lookup"><span data-stu-id="bc3c2-109">Date</span></span>   |
+| <span data-ttu-id="bc3c2-110">reportDate</span><span class="sxs-lookup"><span data-stu-id="bc3c2-110">reportDate</span></span>          | <span data-ttu-id="bc3c2-111">Дата</span><span class="sxs-lookup"><span data-stu-id="bc3c2-111">Date</span></span>   |
+| <span data-ttu-id="bc3c2-112">теамчатмессажес</span><span class="sxs-lookup"><span data-stu-id="bc3c2-112">teamChatMessages</span></span>    | <span data-ttu-id="bc3c2-113">Int64</span><span class="sxs-lookup"><span data-stu-id="bc3c2-113">Int64</span></span>  |
+| <span data-ttu-id="bc3c2-114">приватечатмессажес</span><span class="sxs-lookup"><span data-stu-id="bc3c2-114">privateChatMessages</span></span> | <span data-ttu-id="bc3c2-115">Int64</span><span class="sxs-lookup"><span data-stu-id="bc3c2-115">Int64</span></span>  |
+| <span data-ttu-id="bc3c2-116">calls</span><span class="sxs-lookup"><span data-stu-id="bc3c2-116">calls</span></span>               | <span data-ttu-id="bc3c2-117">Int64</span><span class="sxs-lookup"><span data-stu-id="bc3c2-117">Int64</span></span>  |
+| <span data-ttu-id="bc3c2-118">meetings</span><span class="sxs-lookup"><span data-stu-id="bc3c2-118">meetings</span></span>            | <span data-ttu-id="bc3c2-119">Int64</span><span class="sxs-lookup"><span data-stu-id="bc3c2-119">Int64</span></span>  |
+| <span data-ttu-id="bc3c2-120">осерактионс</span><span class="sxs-lookup"><span data-stu-id="bc3c2-120">otherActions</span></span>        | <span data-ttu-id="bc3c2-121">Int64</span><span class="sxs-lookup"><span data-stu-id="bc3c2-121">Int64</span></span>  |
+| <span data-ttu-id="bc3c2-122">репортпериод</span><span class="sxs-lookup"><span data-stu-id="bc3c2-122">reportPeriod</span></span>        | <span data-ttu-id="bc3c2-123">String</span><span class="sxs-lookup"><span data-stu-id="bc3c2-123">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="7423f-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7423f-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bc3c2-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bc3c2-124">JSON representation</span></span>
 
-<span data-ttu-id="7423f-125">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7423f-125">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="bc3c2-125">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bc3c2-125">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

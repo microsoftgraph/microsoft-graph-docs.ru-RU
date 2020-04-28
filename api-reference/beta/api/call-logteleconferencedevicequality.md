@@ -12,29 +12,29 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/03/2020
 ms.locfileid: "43123274"
 ---
-# <a name="call-logteleconferencedevicequality"></a><span data-ttu-id="03ab3-103">Call: Логтелеконференцедевицекуалити</span><span class="sxs-lookup"><span data-stu-id="03ab3-103">call: logTeleconferenceDeviceQuality</span></span>
+# <a name="call-logteleconferencedevicequality"></a><span data-ttu-id="ace5a-103">Call: Логтелеконференцедевицекуалити</span><span class="sxs-lookup"><span data-stu-id="ace5a-103">call: logTeleconferenceDeviceQuality</span></span>
 
-<span data-ttu-id="03ab3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="03ab3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ace5a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ace5a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="03ab3-105">Запись в журнал данных о качестве устройств для видеоконференций.</span><span class="sxs-lookup"><span data-stu-id="03ab3-105">Log video teleconferencing device quality data.</span></span>
+<span data-ttu-id="ace5a-105">Запись в журнал данных о качестве устройств для видеоконференций.</span><span class="sxs-lookup"><span data-stu-id="ace5a-105">Log video teleconferencing device quality data.</span></span>
 
-<span data-ttu-id="03ab3-106">Bot-канал видеоконференций (КВИ) представляет устройства видеоконференций (VTC) и выступает в роли фонового агента для устройства VTC в конференц-связи.</span><span class="sxs-lookup"><span data-stu-id="03ab3-106">The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.</span></span> <span data-ttu-id="03ab3-107">Так как Кви Bot находится в центре инфраструктуры VTC и Microsoft Teams в качестве прокси-сервера VTC, у него есть два носителя.</span><span class="sxs-lookup"><span data-stu-id="03ab3-107">Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.</span></span> <span data-ttu-id="03ab3-108">Одна из сторон является одной из сторон ленты Кви и Teams, например сервера конференц-связи Teams или клиента Teams.</span><span class="sxs-lookup"><span data-stu-id="03ab3-108">One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.</span></span> <span data-ttu-id="03ab3-109">Остальные стороны между носителями находятся между Кви Bot и устройством VTC.</span><span class="sxs-lookup"><span data-stu-id="03ab3-109">The other media leg is between the CVI bot and the VTC device.</span></span> 
+<span data-ttu-id="ace5a-106">Bot-канал видеоконференций (КВИ) представляет устройства видеоконференций (VTC) и выступает в роли фонового агента для устройства VTC в конференц-связи.</span><span class="sxs-lookup"><span data-stu-id="ace5a-106">The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.</span></span> <span data-ttu-id="ace5a-107">Так как Кви Bot находится в центре инфраструктуры VTC и Microsoft Teams в качестве прокси-сервера VTC, у него есть два носителя.</span><span class="sxs-lookup"><span data-stu-id="ace5a-107">Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.</span></span> <span data-ttu-id="ace5a-108">Одна из сторон является одной из сторон ленты Кви и Teams, например сервера конференц-связи Teams или клиента Teams.</span><span class="sxs-lookup"><span data-stu-id="ace5a-108">One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.</span></span> <span data-ttu-id="ace5a-109">Остальные стороны между носителями находятся между Кви Bot и устройством VTC.</span><span class="sxs-lookup"><span data-stu-id="ace5a-109">The other media leg is between the CVI bot and the VTC device.</span></span> 
 
-<span data-ttu-id="03ab3-110">Сторонние партнеры владеют VTCом, а инфраструктура Teams не может получить доступ к данным о качестве стороннего абонента.</span><span class="sxs-lookup"><span data-stu-id="03ab3-110">The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.</span></span>  <span data-ttu-id="03ab3-111">Этот метод предназначен только для партнеров Кви для предоставления данных о качестве их качества мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="03ab3-111">This method is only for the CVI partners to provide their media quality data.</span></span>
+<span data-ttu-id="ace5a-110">Сторонние партнеры владеют VTCом, а инфраструктура Teams не может получить доступ к данным о качестве стороннего абонента.</span><span class="sxs-lookup"><span data-stu-id="ace5a-110">The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.</span></span>  <span data-ttu-id="ace5a-111">Этот метод предназначен только для партнеров Кви для предоставления данных о качестве их качества мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="ace5a-111">This method is only for the CVI partners to provide their media quality data.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="03ab3-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="03ab3-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ace5a-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ace5a-112">Permissions</span></span>
 
-<span data-ttu-id="03ab3-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="03ab3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ace5a-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ace5a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="03ab3-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="03ab3-115">Permission type</span></span>                        | <span data-ttu-id="03ab3-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="03ab3-116">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ace5a-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ace5a-115">Permission type</span></span>                        | <span data-ttu-id="ace5a-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ace5a-116">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="03ab3-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="03ab3-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="03ab3-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="03ab3-118">Not supported.</span></span> |
-| <span data-ttu-id="03ab3-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="03ab3-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="03ab3-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="03ab3-120">Not supported.</span></span> |
-| <span data-ttu-id="03ab3-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="03ab3-121">Application</span></span>                            | <span data-ttu-id="03ab3-122">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="03ab3-122">Calls.AccessMedia.All</span></span> |
+| <span data-ttu-id="ace5a-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ace5a-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="ace5a-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ace5a-118">Not supported.</span></span> |
+| <span data-ttu-id="ace5a-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ace5a-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ace5a-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ace5a-120">Not supported.</span></span> |
+| <span data-ttu-id="ace5a-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ace5a-121">Application</span></span>                            | <span data-ttu-id="ace5a-122">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="ace5a-122">Calls.AccessMedia.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="03ab3-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="03ab3-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ace5a-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ace5a-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,34 +42,34 @@ ms.locfileid: "43123274"
 POST /communications/calls/logTeleconferenceDeviceQuality
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="03ab3-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="03ab3-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ace5a-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ace5a-124">Request headers</span></span>
 
-| <span data-ttu-id="03ab3-125">Имя</span><span class="sxs-lookup"><span data-stu-id="03ab3-125">Name</span></span>          | <span data-ttu-id="03ab3-126">Описание</span><span class="sxs-lookup"><span data-stu-id="03ab3-126">Description</span></span>   |
+| <span data-ttu-id="ace5a-125">Имя</span><span class="sxs-lookup"><span data-stu-id="ace5a-125">Name</span></span>          | <span data-ttu-id="ace5a-126">Описание</span><span class="sxs-lookup"><span data-stu-id="ace5a-126">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="03ab3-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="03ab3-127">Authorization</span></span> | <span data-ttu-id="03ab3-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="03ab3-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="03ab3-130">User — Agent</span><span class="sxs-lookup"><span data-stu-id="03ab3-130">User-Agent</span></span>    | <span data-ttu-id="03ab3-131">Описывает имя и версию вызывающего приложения.</span><span class="sxs-lookup"><span data-stu-id="03ab3-131">Describes the name and version of the calling application.</span></span> <span data-ttu-id="03ab3-132">Подробные сведения отображаются в Azure Information Protection Analytics.</span><span class="sxs-lookup"><span data-stu-id="03ab3-132">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="03ab3-133">Рекомендуемый формат — ApplicationName/Version.</span><span class="sxs-lookup"><span data-stu-id="03ab3-133">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="03ab3-134">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="03ab3-134">Required.</span></span>|
+| <span data-ttu-id="ace5a-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ace5a-127">Authorization</span></span> | <span data-ttu-id="ace5a-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ace5a-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ace5a-130">User — Agent</span><span class="sxs-lookup"><span data-stu-id="ace5a-130">User-Agent</span></span>    | <span data-ttu-id="ace5a-131">Описывает имя и версию вызывающего приложения.</span><span class="sxs-lookup"><span data-stu-id="ace5a-131">Describes the name and version of the calling application.</span></span> <span data-ttu-id="ace5a-132">Подробные сведения отображаются в Azure Information Protection Analytics.</span><span class="sxs-lookup"><span data-stu-id="ace5a-132">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="ace5a-133">Рекомендуемый формат — ApplicationName/Version.</span><span class="sxs-lookup"><span data-stu-id="ace5a-133">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="ace5a-134">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="ace5a-134">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="03ab3-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="03ab3-135">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ace5a-135">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ace5a-135">Request body</span></span>
 
-<span data-ttu-id="03ab3-136">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="03ab3-136">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="ace5a-136">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="ace5a-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="03ab3-137">Параметр</span><span class="sxs-lookup"><span data-stu-id="03ab3-137">Parameter</span></span>    | <span data-ttu-id="03ab3-138">Тип</span><span class="sxs-lookup"><span data-stu-id="03ab3-138">Type</span></span>        | <span data-ttu-id="03ab3-139">Описание</span><span class="sxs-lookup"><span data-stu-id="03ab3-139">Description</span></span> |
+| <span data-ttu-id="ace5a-137">Параметр</span><span class="sxs-lookup"><span data-stu-id="ace5a-137">Parameter</span></span>    | <span data-ttu-id="ace5a-138">Тип</span><span class="sxs-lookup"><span data-stu-id="ace5a-138">Type</span></span>        | <span data-ttu-id="ace5a-139">Описание</span><span class="sxs-lookup"><span data-stu-id="ace5a-139">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="03ab3-140">отображения</span><span class="sxs-lookup"><span data-stu-id="03ab3-140">quality</span></span>|[<span data-ttu-id="03ab3-141">teleconferenceDeviceQuality</span><span class="sxs-lookup"><span data-stu-id="03ab3-141">teleconferenceDeviceQuality</span></span>](../resources/teleconferencedevicequality.md)|<span data-ttu-id="03ab3-142">Данные о качестве VTCной стороны носителя.</span><span class="sxs-lookup"><span data-stu-id="03ab3-142">Quality data of VTC media leg.</span></span>|
+|<span data-ttu-id="ace5a-140">отображения</span><span class="sxs-lookup"><span data-stu-id="ace5a-140">quality</span></span>|[<span data-ttu-id="ace5a-141">teleconferenceDeviceQuality</span><span class="sxs-lookup"><span data-stu-id="ace5a-141">teleconferenceDeviceQuality</span></span>](../resources/teleconferencedevicequality.md)|<span data-ttu-id="ace5a-142">Данные о качестве VTCной стороны носителя.</span><span class="sxs-lookup"><span data-stu-id="ace5a-142">Quality data of VTC media leg.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="03ab3-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="03ab3-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ace5a-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="ace5a-143">Response</span></span>
 
-<span data-ttu-id="03ab3-p106">При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="03ab3-p106">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="ace5a-p106">При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="ace5a-p106">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="03ab3-146">Примеры</span><span class="sxs-lookup"><span data-stu-id="03ab3-146">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ace5a-146">Примеры</span><span class="sxs-lookup"><span data-stu-id="ace5a-146">Examples</span></span>
 
-<span data-ttu-id="03ab3-147">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="03ab3-147">The following example shows how to call this API.</span></span>
+<span data-ttu-id="ace5a-147">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="ace5a-147">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="03ab3-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="03ab3-148">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ace5a-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="ace5a-148">Request</span></span>
 
-<span data-ttu-id="03ab3-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="03ab3-149">The following is an example of the request.</span></span>
+<span data-ttu-id="ace5a-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ace5a-149">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="03ab3-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="03ab3-150">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ace5a-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="ace5a-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call_logteleconferencedevicequality"
@@ -164,24 +164,24 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="03ab3-151">C#</span><span class="sxs-lookup"><span data-stu-id="03ab3-151">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ace5a-151">C#</span><span class="sxs-lookup"><span data-stu-id="ace5a-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-logteleconferencedevicequality-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="03ab3-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="03ab3-152">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ace5a-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ace5a-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-logteleconferencedevicequality-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="03ab3-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="03ab3-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ace5a-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ace5a-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-logteleconferencedevicequality-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="03ab3-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="03ab3-154">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ace5a-154">Ответ</span><span class="sxs-lookup"><span data-stu-id="ace5a-154">Response</span></span>
 
-<span data-ttu-id="03ab3-155">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="03ab3-155">The following is an example of the response.</span></span>
+<span data-ttu-id="ace5a-155">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ace5a-155">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

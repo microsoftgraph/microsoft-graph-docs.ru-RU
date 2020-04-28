@@ -12,30 +12,30 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42521084"
 ---
-# <a name="resultinfo-resource-type"></a><span data-ttu-id="855f1-103">Тип ресурса Ресултинфо</span><span class="sxs-lookup"><span data-stu-id="855f1-103">resultInfo resource type</span></span>
+# <a name="resultinfo-resource-type"></a><span data-ttu-id="a5bc9-103">Тип ресурса Ресултинфо</span><span class="sxs-lookup"><span data-stu-id="a5bc9-103">resultInfo resource type</span></span>
 
-<span data-ttu-id="855f1-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="855f1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a5bc9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a5bc9-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="855f1-105">Содержит сведения о результатах, относящиеся к успехам и сбоям.</span><span class="sxs-lookup"><span data-stu-id="855f1-105">Contains success and failure-specific result information.</span></span> 
+<span data-ttu-id="a5bc9-105">Содержит сведения о результатах, относящиеся к успехам и сбоям.</span><span class="sxs-lookup"><span data-stu-id="a5bc9-105">Contains success and failure-specific result information.</span></span> 
 
-<span data-ttu-id="855f1-106">Код указывает, является ли результат универсальным успехом или ошибкой.</span><span class="sxs-lookup"><span data-stu-id="855f1-106">The code specifies whether the result is a generic success or failure.</span></span> 
+<span data-ttu-id="a5bc9-106">Код указывает, является ли результат универсальным успехом или ошибкой.</span><span class="sxs-lookup"><span data-stu-id="a5bc9-106">The code specifies whether the result is a generic success or failure.</span></span> 
 
-<span data-ttu-id="855f1-107">Вспомогательные коды предоставляют дополнительные сведения, связанные с типом успешного или неудачного завершения (например, успешная передача вызова).</span><span class="sxs-lookup"><span data-stu-id="855f1-107">The subcodes provide supplementary information related to the type of success or failure (for example, a call transfer was successful).</span></span>
+<span data-ttu-id="a5bc9-107">Вспомогательные коды предоставляют дополнительные сведения, связанные с типом успешного или неудачного завершения (например, успешная передача вызова).</span><span class="sxs-lookup"><span data-stu-id="a5bc9-107">The subcodes provide supplementary information related to the type of success or failure (for example, a call transfer was successful).</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="855f1-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="855f1-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a5bc9-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="a5bc9-108">Properties</span></span>
 
-| <span data-ttu-id="855f1-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="855f1-109">Property</span></span> | <span data-ttu-id="855f1-110">Тип</span><span class="sxs-lookup"><span data-stu-id="855f1-110">Type</span></span>   | <span data-ttu-id="855f1-111">Описание</span><span class="sxs-lookup"><span data-stu-id="855f1-111">Description</span></span>          |
+| <span data-ttu-id="a5bc9-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="a5bc9-109">Property</span></span> | <span data-ttu-id="a5bc9-110">Тип</span><span class="sxs-lookup"><span data-stu-id="a5bc9-110">Type</span></span>   | <span data-ttu-id="a5bc9-111">Описание</span><span class="sxs-lookup"><span data-stu-id="a5bc9-111">Description</span></span>          |
 | :------- | :----- | :------------------  |
-| <span data-ttu-id="855f1-112">code</span><span class="sxs-lookup"><span data-stu-id="855f1-112">code</span></span>     | <span data-ttu-id="855f1-113">Int32</span><span class="sxs-lookup"><span data-stu-id="855f1-113">Int32</span></span> | <span data-ttu-id="855f1-114">Код результата.</span><span class="sxs-lookup"><span data-stu-id="855f1-114">The result code.</span></span>     |
-| <span data-ttu-id="855f1-115">message</span><span class="sxs-lookup"><span data-stu-id="855f1-115">message</span></span>  | <span data-ttu-id="855f1-116">String</span><span class="sxs-lookup"><span data-stu-id="855f1-116">String</span></span> | <span data-ttu-id="855f1-117">Сообщение.</span><span class="sxs-lookup"><span data-stu-id="855f1-117">The message.</span></span>         |
-| <span data-ttu-id="855f1-118">Subcode</span><span class="sxs-lookup"><span data-stu-id="855f1-118">subcode</span></span>  | <span data-ttu-id="855f1-119">Int32</span><span class="sxs-lookup"><span data-stu-id="855f1-119">Int32</span></span> | <span data-ttu-id="855f1-120">Дочерний код результата.</span><span class="sxs-lookup"><span data-stu-id="855f1-120">The result sub-code.</span></span> |
+| <span data-ttu-id="a5bc9-112">code</span><span class="sxs-lookup"><span data-stu-id="a5bc9-112">code</span></span>     | <span data-ttu-id="a5bc9-113">Int32</span><span class="sxs-lookup"><span data-stu-id="a5bc9-113">Int32</span></span> | <span data-ttu-id="a5bc9-114">Код результата.</span><span class="sxs-lookup"><span data-stu-id="a5bc9-114">The result code.</span></span>     |
+| <span data-ttu-id="a5bc9-115">message</span><span class="sxs-lookup"><span data-stu-id="a5bc9-115">message</span></span>  | <span data-ttu-id="a5bc9-116">String</span><span class="sxs-lookup"><span data-stu-id="a5bc9-116">String</span></span> | <span data-ttu-id="a5bc9-117">Сообщение.</span><span class="sxs-lookup"><span data-stu-id="a5bc9-117">The message.</span></span>         |
+| <span data-ttu-id="a5bc9-118">Subcode</span><span class="sxs-lookup"><span data-stu-id="a5bc9-118">subcode</span></span>  | <span data-ttu-id="a5bc9-119">Int32</span><span class="sxs-lookup"><span data-stu-id="a5bc9-119">Int32</span></span> | <span data-ttu-id="a5bc9-120">Дочерний код результата.</span><span class="sxs-lookup"><span data-stu-id="a5bc9-120">The result sub-code.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="855f1-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="855f1-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a5bc9-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a5bc9-121">JSON representation</span></span>
 
-<span data-ttu-id="855f1-122">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="855f1-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a5bc9-122">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a5bc9-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

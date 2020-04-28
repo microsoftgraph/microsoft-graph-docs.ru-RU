@@ -13,18 +13,18 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42520529"
 ---
-# <a name="sitepagedata-resource"></a><span data-ttu-id="08af2-104">ресурс Ситепажедата</span><span class="sxs-lookup"><span data-stu-id="08af2-104">sitePageData resource</span></span>
+# <a name="sitepagedata-resource"></a><span data-ttu-id="5e2e9-104">ресурс Ситепажедата</span><span class="sxs-lookup"><span data-stu-id="5e2e9-104">sitePageData resource</span></span>
 
-<span data-ttu-id="08af2-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="08af2-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5e2e9-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5e2e9-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="08af2-106">Ресурс **ситепажедата** представляет свойства [веб-части][].</span><span class="sxs-lookup"><span data-stu-id="08af2-106">The **sitePageData** resource represents the properties of a [webPart][].</span></span> <span data-ttu-id="08af2-107">Так как эти свойства зависят от веб-части, это OpenType без фиксированных свойств.</span><span class="sxs-lookup"><span data-stu-id="08af2-107">As these properties vary by web part, this is an OpenType with no fixed properties.</span></span>
+<span data-ttu-id="5e2e9-106">Ресурс **ситепажедата** представляет свойства [веб-части][].</span><span class="sxs-lookup"><span data-stu-id="5e2e9-106">The **sitePageData** resource represents the properties of a [webPart][].</span></span> <span data-ttu-id="5e2e9-107">Так как эти свойства зависят от веб-части, это OpenType без фиксированных свойств.</span><span class="sxs-lookup"><span data-stu-id="5e2e9-107">As these properties vary by web part, this is an OpenType with no fixed properties.</span></span>
 
 [Частей]: webpart.md
 [webPart]: webpart.md
 
-## <a name="json-representation"></a><span data-ttu-id="08af2-109">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="08af2-109">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5e2e9-109">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5e2e9-109">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -38,8 +38,8 @@ ms.locfileid: "42520529"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="08af2-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="08af2-110">Properties</span></span>
-<span data-ttu-id="08af2-111">У этого ресурса нет фиксированных свойств, но это OpenType содержит все свойства, необходимые для определения веб-части.</span><span class="sxs-lookup"><span data-stu-id="08af2-111">This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.</span></span>
+## <a name="properties"></a><span data-ttu-id="5e2e9-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="5e2e9-110">Properties</span></span>
+<span data-ttu-id="5e2e9-111">У этого ресурса нет фиксированных свойств, но это OpenType содержит все свойства, необходимые для определения веб-части.</span><span class="sxs-lookup"><span data-stu-id="5e2e9-111">This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.</span></span>
 
 <!--
 {

@@ -12,23 +12,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42522153"
 ---
-# <a name="operationerror-resource-type"></a><span data-ttu-id="8a4d0-103">Тип ресурса Оператионеррор</span><span class="sxs-lookup"><span data-stu-id="8a4d0-103">operationError resource type</span></span>
+# <a name="operationerror-resource-type"></a><span data-ttu-id="f11a5-103">Тип ресурса Оператионеррор</span><span class="sxs-lookup"><span data-stu-id="f11a5-103">operationError resource type</span></span>
 
-<span data-ttu-id="8a4d0-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="8a4d0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f11a5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f11a5-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8a4d0-105">Описание ошибок в [теамсасинкоператион](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="8a4d0-105">Describes errors in [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
+<span data-ttu-id="f11a5-105">Описание ошибок в [теамсасинкоператион](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="f11a5-105">Describes errors in [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
 
-## <a name="operationerror-properties"></a><span data-ttu-id="8a4d0-106">Свойства Оператионеррор</span><span class="sxs-lookup"><span data-stu-id="8a4d0-106">operationError Properties</span></span>
-| <span data-ttu-id="8a4d0-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="8a4d0-107">Property</span></span>     | <span data-ttu-id="8a4d0-108">Тип</span><span class="sxs-lookup"><span data-stu-id="8a4d0-108">Type</span></span>   |<span data-ttu-id="8a4d0-109">Описание</span><span class="sxs-lookup"><span data-stu-id="8a4d0-109">Description</span></span>|
+## <a name="operationerror-properties"></a><span data-ttu-id="f11a5-106">Свойства Оператионеррор</span><span class="sxs-lookup"><span data-stu-id="f11a5-106">operationError Properties</span></span>
+| <span data-ttu-id="f11a5-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="f11a5-107">Property</span></span>     | <span data-ttu-id="f11a5-108">Тип</span><span class="sxs-lookup"><span data-stu-id="f11a5-108">Type</span></span>   |<span data-ttu-id="f11a5-109">Описание</span><span class="sxs-lookup"><span data-stu-id="f11a5-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8a4d0-110">code</span><span class="sxs-lookup"><span data-stu-id="8a4d0-110">code</span></span>|<span data-ttu-id="8a4d0-111">string (только для чтения)</span><span class="sxs-lookup"><span data-stu-id="8a4d0-111">string (readonly)</span></span>|<span data-ttu-id="8a4d0-112">Код ошибки операции.</span><span class="sxs-lookup"><span data-stu-id="8a4d0-112">Operation error code.</span></span>|
-|<span data-ttu-id="8a4d0-113">message</span><span class="sxs-lookup"><span data-stu-id="8a4d0-113">message</span></span>|<span data-ttu-id="8a4d0-114">string (только для чтения)</span><span class="sxs-lookup"><span data-stu-id="8a4d0-114">string (readonly)</span></span>|<span data-ttu-id="8a4d0-115">Сообщение об ошибке операции.</span><span class="sxs-lookup"><span data-stu-id="8a4d0-115">Operation error message.</span></span>|
+|<span data-ttu-id="f11a5-110">code</span><span class="sxs-lookup"><span data-stu-id="f11a5-110">code</span></span>|<span data-ttu-id="f11a5-111">string (только для чтения)</span><span class="sxs-lookup"><span data-stu-id="f11a5-111">string (readonly)</span></span>|<span data-ttu-id="f11a5-112">Код ошибки операции.</span><span class="sxs-lookup"><span data-stu-id="f11a5-112">Operation error code.</span></span>|
+|<span data-ttu-id="f11a5-113">message</span><span class="sxs-lookup"><span data-stu-id="f11a5-113">message</span></span>|<span data-ttu-id="f11a5-114">string (только для чтения)</span><span class="sxs-lookup"><span data-stu-id="f11a5-114">string (readonly)</span></span>|<span data-ttu-id="f11a5-115">Сообщение об ошибке операции.</span><span class="sxs-lookup"><span data-stu-id="f11a5-115">Operation error message.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="8a4d0-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8a4d0-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f11a5-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f11a5-116">JSON representation</span></span>
 
-<span data-ttu-id="8a4d0-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8a4d0-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f11a5-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f11a5-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

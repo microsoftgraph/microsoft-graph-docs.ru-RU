@@ -12,21 +12,21 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42521364"
 ---
-# <a name="protectdonotforwardaction-resource-type"></a><span data-ttu-id="905a1-103">Тип ресурса Протектдонотфорвардактион</span><span class="sxs-lookup"><span data-stu-id="905a1-103">protectDoNotForwardAction resource type</span></span>
+# <a name="protectdonotforwardaction-resource-type"></a><span data-ttu-id="e2c11-103">Тип ресурса Протектдонотфорвардактион</span><span class="sxs-lookup"><span data-stu-id="e2c11-103">protectDoNotForwardAction resource type</span></span>
 
-<span data-ttu-id="905a1-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="905a1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e2c11-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e2c11-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="905a1-105">Информирует приложение о необходимости защиты от пересылки.</span><span class="sxs-lookup"><span data-stu-id="905a1-105">Informs the application to apply Do Not Forward protection.</span></span> <span data-ttu-id="905a1-106">**протектиондонотфорвардактион** может быть возвращено [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md) или [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md) , если результирующая метка настроена для применения [защиты от пересылки](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).</span><span class="sxs-lookup"><span data-stu-id="905a1-106">**protectionDoNotForwardAction** may be returned by [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) or [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) if the resulting label has been configured to apply [Do Not Forward protection](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).</span></span> <span data-ttu-id="905a1-107">Приложение, использующее приложение, должно использовать клиентскую библиотеку для применения защиты с помощью Azure Information Protection.</span><span class="sxs-lookup"><span data-stu-id="905a1-107">The consuming application must use a client library to apply protection via Azure Information Protection.</span></span>
+<span data-ttu-id="e2c11-105">Информирует приложение о необходимости защиты от пересылки.</span><span class="sxs-lookup"><span data-stu-id="e2c11-105">Informs the application to apply Do Not Forward protection.</span></span> <span data-ttu-id="e2c11-106">**протектиондонотфорвардактион** может быть возвращено [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md) или [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md) , если результирующая метка настроена для применения [защиты от пересылки](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).</span><span class="sxs-lookup"><span data-stu-id="e2c11-106">**protectionDoNotForwardAction** may be returned by [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) or [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) if the resulting label has been configured to apply [Do Not Forward protection](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).</span></span> <span data-ttu-id="e2c11-107">Приложение, использующее приложение, должно использовать клиентскую библиотеку для применения защиты с помощью Azure Information Protection.</span><span class="sxs-lookup"><span data-stu-id="e2c11-107">The consuming application must use a client library to apply protection via Azure Information Protection.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="905a1-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="905a1-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e2c11-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="e2c11-108">Properties</span></span>
 
-<span data-ttu-id="905a1-109">Нет</span><span class="sxs-lookup"><span data-stu-id="905a1-109">None</span></span>
+<span data-ttu-id="e2c11-109">Нет</span><span class="sxs-lookup"><span data-stu-id="e2c11-109">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="905a1-110">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="905a1-110">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e2c11-110">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e2c11-110">JSON representation</span></span>
 
-<span data-ttu-id="905a1-111">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="905a1-111">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e2c11-111">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e2c11-111">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

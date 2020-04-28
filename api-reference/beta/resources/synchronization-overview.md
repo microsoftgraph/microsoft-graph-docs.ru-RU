@@ -12,69 +12,69 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/10/2020
 ms.locfileid: "43217614"
 ---
-# <a name="azure-ad-synchronization-api-overview"></a><span data-ttu-id="cfc32-103">Общие сведения об API синхронизации Azure AD</span><span class="sxs-lookup"><span data-stu-id="cfc32-103">Azure AD synchronization API overview</span></span>
+# <a name="azure-ad-synchronization-api-overview"></a><span data-ttu-id="e427e-103">Общие сведения об API синхронизации Azure AD</span><span class="sxs-lookup"><span data-stu-id="e427e-103">Azure AD synchronization API overview</span></span>
 
-<span data-ttu-id="cfc32-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cfc32-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e427e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e427e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cfc32-105">Синхронизация удостоверений Azure Active Directory (также называемая "наполнением") позволяет автоматизировать создание, Обслуживание и удаление удостоверений в Cloud (программное обеспечение, в виде службы или SaaS), например Dropbox, Salesforce, ServiceNow и т. д.</span><span class="sxs-lookup"><span data-stu-id="cfc32-105">Azure Active Directory (Azure AD) identity synchronization (also called "provisioning") allows you to automate the creation, maintenance, and removal of identities in cloud (software as a service, or SaaS) applications such as Dropbox, Salesforce, ServiceNow, and more.</span></span> <span data-ttu-id="cfc32-106">С помощью API синхронизации в Microsoft Graph можно управлять синхронизацией удостоверений программным способом, в том числе:</span><span class="sxs-lookup"><span data-stu-id="cfc32-106">You can use the synchronization APIs in Microsoft Graph to manage identity synchronization programmatically, including:</span></span>
+<span data-ttu-id="e427e-105">Синхронизация удостоверений Azure Active Directory (также называемая "наполнением") позволяет автоматизировать создание, Обслуживание и удаление удостоверений в Cloud (программное обеспечение, в виде службы или SaaS), например Dropbox, Salesforce, ServiceNow и т. д.</span><span class="sxs-lookup"><span data-stu-id="e427e-105">Azure Active Directory (Azure AD) identity synchronization (also called "provisioning") allows you to automate the creation, maintenance, and removal of identities in cloud (software as a service, or SaaS) applications such as Dropbox, Salesforce, ServiceNow, and more.</span></span> <span data-ttu-id="e427e-106">С помощью API синхронизации в Microsoft Graph можно управлять синхронизацией удостоверений программным способом, в том числе:</span><span class="sxs-lookup"><span data-stu-id="e427e-106">You can use the synchronization APIs in Microsoft Graph to manage identity synchronization programmatically, including:</span></span>
 
-- <span data-ttu-id="cfc32-107">Создание, запуск и остановка заданий синхронизации</span><span class="sxs-lookup"><span data-stu-id="cfc32-107">Create, start, and stop synchronization jobs</span></span>
-- <span data-ttu-id="cfc32-108">Внесение изменений в схему синхронизации для заданий</span><span class="sxs-lookup"><span data-stu-id="cfc32-108">Make changes to the synchronization schema for jobs</span></span>
-- <span data-ttu-id="cfc32-109">Проверка текущего состояния синхронизации</span><span class="sxs-lookup"><span data-stu-id="cfc32-109">Verify the current synchronization status</span></span>
+- <span data-ttu-id="e427e-107">Создание, запуск и остановка заданий синхронизации</span><span class="sxs-lookup"><span data-stu-id="e427e-107">Create, start, and stop synchronization jobs</span></span>
+- <span data-ttu-id="e427e-108">Внесение изменений в схему синхронизации для заданий</span><span class="sxs-lookup"><span data-stu-id="e427e-108">Make changes to the synchronization schema for jobs</span></span>
+- <span data-ttu-id="e427e-109">Проверка текущего состояния синхронизации</span><span class="sxs-lookup"><span data-stu-id="e427e-109">Verify the current synchronization status</span></span>
 
-<span data-ttu-id="cfc32-110">Дополнительные сведения о синхронизации в Azure AD приведены в следующих статьях:</span><span class="sxs-lookup"><span data-stu-id="cfc32-110">For more information about synchronization in Azure AD, see:</span></span>
+<span data-ttu-id="e427e-110">Дополнительные сведения о синхронизации в Azure AD приведены в следующих статьях:</span><span class="sxs-lookup"><span data-stu-id="e427e-110">For more information about synchronization in Azure AD, see:</span></span>
 
-* [<span data-ttu-id="cfc32-111">Автоматизация подготовки пользователей и их отмена в приложениях SaaS с помощью Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="cfc32-111">Automate user provisioning and deprovisioning to SaaS applications with Azure Active Directory</span></span>](/azure/active-directory/active-directory-saas-app-provisioning)
-* [<span data-ttu-id="cfc32-112">Управление предоставлением учетных записей пользователей для корпоративных приложений на портале Azure</span><span class="sxs-lookup"><span data-stu-id="cfc32-112">Managing user account provisioning for enterprise apps in the Azure portal</span></span>](/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
+* [<span data-ttu-id="e427e-111">Автоматизация подготовки пользователей и их отмена в приложениях SaaS с помощью Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="e427e-111">Automate user provisioning and deprovisioning to SaaS applications with Azure Active Directory</span></span>](/azure/active-directory/active-directory-saas-app-provisioning)
+* [<span data-ttu-id="e427e-112">Управление предоставлением учетных записей пользователей для корпоративных приложений на портале Azure</span><span class="sxs-lookup"><span data-stu-id="e427e-112">Managing user account provisioning for enterprise apps in the Azure portal</span></span>](/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
 
-<span data-ttu-id="cfc32-113">Вы также можете попробовать API в [проводнике Graph](https://developer.microsoft.com/graph/graph-explorer) в образце клиента или в собственном клиенте.</span><span class="sxs-lookup"><span data-stu-id="cfc32-113">You can also try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) in a sample tenant or your own tenant.</span></span>
+<span data-ttu-id="e427e-113">Вы также можете попробовать API в [проводнике Graph](https://developer.microsoft.com/graph/graph-explorer) в образце клиента или в собственном клиенте.</span><span class="sxs-lookup"><span data-stu-id="e427e-113">You can also try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) in a sample tenant or your own tenant.</span></span>
 
-## <a name="synchronization-job"></a><span data-ttu-id="cfc32-114">Задание синхронизации</span><span class="sxs-lookup"><span data-stu-id="cfc32-114">Synchronization job</span></span>
+## <a name="synchronization-job"></a><span data-ttu-id="e427e-114">Задание синхронизации</span><span class="sxs-lookup"><span data-stu-id="e427e-114">Synchronization job</span></span>
 
-<span data-ttu-id="cfc32-115">Задания синхронизации выполняют синхронизацию, периодически запуская в фоновом режиме, запрашивают изменения в одном каталоге и отправляют их в другой каталог.</span><span class="sxs-lookup"><span data-stu-id="cfc32-115">Synchronization jobs perform synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.</span></span> <span data-ttu-id="cfc32-116">Задание синхронизации всегда относится к определенному экземпляру приложения в клиенте.</span><span class="sxs-lookup"><span data-stu-id="cfc32-116">The synchronization job is always specific to a particular instance of an application in your tenant.</span></span> <span data-ttu-id="cfc32-117">В рамках настройки задания синхронизации необходимо предоставить авторизацию для чтения и записи объектов в целевом каталоге, а также для настройки схемы синхронизации задания.</span><span class="sxs-lookup"><span data-stu-id="cfc32-117">As part of the synchronization job setup, you need to give authorization to read and write objects in your target directory, and customize the job's synchronization schema.</span></span>
+<span data-ttu-id="e427e-115">Задания синхронизации выполняют синхронизацию, периодически запуская в фоновом режиме, запрашивают изменения в одном каталоге и отправляют их в другой каталог.</span><span class="sxs-lookup"><span data-stu-id="e427e-115">Synchronization jobs perform synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.</span></span> <span data-ttu-id="e427e-116">Задание синхронизации всегда относится к определенному экземпляру приложения в клиенте.</span><span class="sxs-lookup"><span data-stu-id="e427e-116">The synchronization job is always specific to a particular instance of an application in your tenant.</span></span> <span data-ttu-id="e427e-117">В рамках настройки задания синхронизации необходимо предоставить авторизацию для чтения и записи объектов в целевом каталоге, а также для настройки схемы синхронизации задания.</span><span class="sxs-lookup"><span data-stu-id="e427e-117">As part of the synchronization job setup, you need to give authorization to read and write objects in your target directory, and customize the job's synchronization schema.</span></span>
 
-<span data-ttu-id="cfc32-118">Более подробную информацию можно узнать в статье [Задание синхронизации](synchronization-synchronizationjob.md).</span><span class="sxs-lookup"><span data-stu-id="cfc32-118">For more information, see [synchronization job](synchronization-synchronizationjob.md).</span></span>
+<span data-ttu-id="e427e-118">Более подробную информацию можно узнать в статье [Задание синхронизации](synchronization-synchronizationjob.md).</span><span class="sxs-lookup"><span data-stu-id="e427e-118">For more information, see [synchronization job](synchronization-synchronizationjob.md).</span></span>
 
-## <a name="synchronization-schema"></a><span data-ttu-id="cfc32-119">Схема синхронизации</span><span class="sxs-lookup"><span data-stu-id="cfc32-119">Synchronization schema</span></span>
+## <a name="synchronization-schema"></a><span data-ttu-id="e427e-119">Схема синхронизации</span><span class="sxs-lookup"><span data-stu-id="e427e-119">Synchronization schema</span></span>
 
-<span data-ttu-id="cfc32-120">Схема синхронизации определяет объекты, которые будут синхронизированы и как они будут синхронизированы.</span><span class="sxs-lookup"><span data-stu-id="cfc32-120">The synchronization schema defines what objects will be synchronized and how they will be synchronized.</span></span> <span data-ttu-id="cfc32-121">Схема синхронизации содержит большую часть сведений о настройке для определенного задания синхронизации.</span><span class="sxs-lookup"><span data-stu-id="cfc32-121">The synchronization schema contains most of the setup information for a particular synchronization job.</span></span> <span data-ttu-id="cfc32-122">Как правило, вы настраиваете некоторые [сопоставления атрибутов](synchronization-attributemapping.md)или добавляете [Фильтр областей](synchronization-filter.md) для синхронизации только объектов, удовлетворяющих определенному условию.</span><span class="sxs-lookup"><span data-stu-id="cfc32-122">Typically, you will customize some of the [attribute mappings](synchronization-attributemapping.md), or add a [scoping filter](synchronization-filter.md) to synchronize only objects that satisfy a certain condition.</span></span>
+<span data-ttu-id="e427e-120">Схема синхронизации определяет объекты, которые будут синхронизированы и как они будут синхронизированы.</span><span class="sxs-lookup"><span data-stu-id="e427e-120">The synchronization schema defines what objects will be synchronized and how they will be synchronized.</span></span> <span data-ttu-id="e427e-121">Схема синхронизации содержит большую часть сведений о настройке для определенного задания синхронизации.</span><span class="sxs-lookup"><span data-stu-id="e427e-121">The synchronization schema contains most of the setup information for a particular synchronization job.</span></span> <span data-ttu-id="e427e-122">Как правило, вы настраиваете некоторые [сопоставления атрибутов](synchronization-attributemapping.md)или добавляете [Фильтр областей](synchronization-filter.md) для синхронизации только объектов, удовлетворяющих определенному условию.</span><span class="sxs-lookup"><span data-stu-id="e427e-122">Typically, you will customize some of the [attribute mappings](synchronization-attributemapping.md), or add a [scoping filter](synchronization-filter.md) to synchronize only objects that satisfy a certain condition.</span></span>
 
-<span data-ttu-id="cfc32-123">Схема синхронизации включает в себя следующие компоненты:</span><span class="sxs-lookup"><span data-stu-id="cfc32-123">The synchronization schema includes the following components:</span></span>
+<span data-ttu-id="e427e-123">Схема синхронизации включает в себя следующие компоненты:</span><span class="sxs-lookup"><span data-stu-id="e427e-123">The synchronization schema includes the following components:</span></span>
 
-- <span data-ttu-id="cfc32-124">Определения каталогов</span><span class="sxs-lookup"><span data-stu-id="cfc32-124">Directory definitions</span></span>
-- <span data-ttu-id="cfc32-125">Правила синхронизации</span><span class="sxs-lookup"><span data-stu-id="cfc32-125">Synchronization rules</span></span>
-- <span data-ttu-id="cfc32-126">Сопоставления объектов</span><span class="sxs-lookup"><span data-stu-id="cfc32-126">Object mappings</span></span>
+- <span data-ttu-id="e427e-124">Определения каталогов</span><span class="sxs-lookup"><span data-stu-id="e427e-124">Directory definitions</span></span>
+- <span data-ttu-id="e427e-125">Правила синхронизации</span><span class="sxs-lookup"><span data-stu-id="e427e-125">Synchronization rules</span></span>
+- <span data-ttu-id="e427e-126">Сопоставления объектов</span><span class="sxs-lookup"><span data-stu-id="e427e-126">Object mappings</span></span>
 
-<span data-ttu-id="cfc32-127">Более подробную информацию можно узнать в статье [схема синхронизации](synchronization-synchronizationschema.md).</span><span class="sxs-lookup"><span data-stu-id="cfc32-127">For more information, see [synchronization schema](synchronization-synchronizationschema.md).</span></span>
+<span data-ttu-id="e427e-127">Более подробную информацию можно узнать в статье [схема синхронизации](synchronization-synchronizationschema.md).</span><span class="sxs-lookup"><span data-stu-id="e427e-127">For more information, see [synchronization schema](synchronization-synchronizationschema.md).</span></span>
 
-## <a name="synchronization-template"></a><span data-ttu-id="cfc32-128">Шаблон синхронизации</span><span class="sxs-lookup"><span data-stu-id="cfc32-128">Synchronization template</span></span>
+## <a name="synchronization-template"></a><span data-ttu-id="e427e-128">Шаблон синхронизации</span><span class="sxs-lookup"><span data-stu-id="e427e-128">Synchronization template</span></span>
 
-<span data-ttu-id="cfc32-129">Шаблон синхронизации предоставляет предварительно настроенные параметры синхронизации для определенного приложения.</span><span class="sxs-lookup"><span data-stu-id="cfc32-129">The synchronization template provides pre-configured synchronization settings for a particular application.</span></span> <span data-ttu-id="cfc32-130">Эти параметры (наиболее важное, [схема синхронизации](synchronization-synchronizationschema.md)) будут использоваться по умолчанию для всех [заданий синхронизации](synchronization-synchronizationjob.md) , основанных на этом шаблоне.</span><span class="sxs-lookup"><span data-stu-id="cfc32-130">These settings (most importantly, [synchronization schema](synchronization-synchronizationschema.md)) will be used by default for any [synchronization job](synchronization-synchronizationjob.md) that is based on the template.</span></span> <span data-ttu-id="cfc32-131">Шаблоны задаются разработчиком приложения.</span><span class="sxs-lookup"><span data-stu-id="cfc32-131">Templates are specified by the application developer.</span></span>
+<span data-ttu-id="e427e-129">Шаблон синхронизации предоставляет предварительно настроенные параметры синхронизации для определенного приложения.</span><span class="sxs-lookup"><span data-stu-id="e427e-129">The synchronization template provides pre-configured synchronization settings for a particular application.</span></span> <span data-ttu-id="e427e-130">Эти параметры (наиболее важное, [схема синхронизации](synchronization-synchronizationschema.md)) будут использоваться по умолчанию для всех [заданий синхронизации](synchronization-synchronizationjob.md) , основанных на этом шаблоне.</span><span class="sxs-lookup"><span data-stu-id="e427e-130">These settings (most importantly, [synchronization schema](synchronization-synchronizationschema.md)) will be used by default for any [synchronization job](synchronization-synchronizationjob.md) that is based on the template.</span></span> <span data-ttu-id="e427e-131">Шаблоны задаются разработчиком приложения.</span><span class="sxs-lookup"><span data-stu-id="e427e-131">Templates are specified by the application developer.</span></span>
 
-<span data-ttu-id="cfc32-132">Для получения дополнительных сведений см [шаблон синхронизации](synchronization-synchronizationtemplate.md).</span><span class="sxs-lookup"><span data-stu-id="cfc32-132">For more information, see [synchronization template](synchronization-synchronizationtemplate.md).</span></span>
+<span data-ttu-id="e427e-132">Для получения дополнительных сведений см [шаблон синхронизации](synchronization-synchronizationtemplate.md).</span><span class="sxs-lookup"><span data-stu-id="e427e-132">For more information, see [synchronization template](synchronization-synchronizationtemplate.md).</span></span>
 
-## <a name="working-with-the-synchronization-api"></a><span data-ttu-id="cfc32-133">Работа с API синхронизации</span><span class="sxs-lookup"><span data-stu-id="cfc32-133">Working with the synchronization API</span></span>
+## <a name="working-with-the-synchronization-api"></a><span data-ttu-id="e427e-133">Работа с API синхронизации</span><span class="sxs-lookup"><span data-stu-id="e427e-133">Working with the synchronization API</span></span>
 
-<span data-ttu-id="cfc32-134">Работа с API синхронизации в основном включает доступ к ресурсам [синчронизатионжоб](synchronization-synchronizationjob.md) и [синчронизатионсчема](synchronization-synchronizationschema.md) .</span><span class="sxs-lookup"><span data-stu-id="cfc32-134">Working with synchronization API primarily involves accessing the [synchronizationJob](synchronization-synchronizationjob.md) and [synchronizationSchema](synchronization-synchronizationschema.md) resources.</span></span> <span data-ttu-id="cfc32-135">Чтобы найти ресурс [синчронизатионжоб](synchronization-synchronizationjob.md) , необходимо знать идентификатор объекта участника службы, к которому относится задание синхронизации.</span><span class="sxs-lookup"><span data-stu-id="cfc32-135">To find your [synchronizationJob](synchronization-synchronizationjob.md) resource, you need to know the ID of the service principal object that the synchronization job belongs to.</span></span> <span data-ttu-id="cfc32-136">В приведенных ниже примерах показано, как работать с ресурсами **синчронизатионжоб** и **синчронизатионсчема** .</span><span class="sxs-lookup"><span data-stu-id="cfc32-136">The following examples show you how to work with the **synchronizationJob** and **synchronizationSchema** resources.</span></span>
+<span data-ttu-id="e427e-134">Работа с API синхронизации в основном включает доступ к ресурсам [синчронизатионжоб](synchronization-synchronizationjob.md) и [синчронизатионсчема](synchronization-synchronizationschema.md) .</span><span class="sxs-lookup"><span data-stu-id="e427e-134">Working with synchronization API primarily involves accessing the [synchronizationJob](synchronization-synchronizationjob.md) and [synchronizationSchema](synchronization-synchronizationschema.md) resources.</span></span> <span data-ttu-id="e427e-135">Чтобы найти ресурс [синчронизатионжоб](synchronization-synchronizationjob.md) , необходимо знать идентификатор объекта участника службы, к которому относится задание синхронизации.</span><span class="sxs-lookup"><span data-stu-id="e427e-135">To find your [synchronizationJob](synchronization-synchronizationjob.md) resource, you need to know the ID of the service principal object that the synchronization job belongs to.</span></span> <span data-ttu-id="e427e-136">В приведенных ниже примерах показано, как работать с ресурсами **синчронизатионжоб** и **синчронизатионсчема** .</span><span class="sxs-lookup"><span data-stu-id="e427e-136">The following examples show you how to work with the **synchronizationJob** and **synchronizationSchema** resources.</span></span>
 
-### <a name="authorization"></a><span data-ttu-id="cfc32-137">Authorization</span><span class="sxs-lookup"><span data-stu-id="cfc32-137">Authorization</span></span>
+### <a name="authorization"></a><span data-ttu-id="e427e-137">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e427e-137">Authorization</span></span>
 
-<span data-ttu-id="cfc32-138">API синхронизации Azure AD использует OAuth 2,0 для проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="cfc32-138">The Azure AD synchronization API uses OAuth 2.0 for authorization.</span></span> <span data-ttu-id="cfc32-139">Перед выполнением запросов к API необходимо получить маркер доступа.</span><span class="sxs-lookup"><span data-stu-id="cfc32-139">Before making any requests to the API, you need to get an access token.</span></span> <span data-ttu-id="cfc32-140">Дополнительные сведения [можно найти в статье получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span><span class="sxs-lookup"><span data-stu-id="cfc32-140">For more information, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span></span> <span data-ttu-id="cfc32-141">Для доступа к ресурсам синхронизации приложению требуются разрешения Directory. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="cfc32-141">To access synchronization resources, your application needs Directory.ReadWrite.All permissions.</span></span> <span data-ttu-id="cfc32-142">Для получения дополнительных сведений ознакомьтесь с [разрешениями для каталогов](/graph/permissions-reference#directory-permissions).</span><span class="sxs-lookup"><span data-stu-id="cfc32-142">For more information, see [Directory permissions](/graph/permissions-reference#directory-permissions).</span></span>
+<span data-ttu-id="e427e-138">API синхронизации Azure AD использует OAuth 2,0 для проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="e427e-138">The Azure AD synchronization API uses OAuth 2.0 for authorization.</span></span> <span data-ttu-id="e427e-139">Перед выполнением запросов к API необходимо получить маркер доступа.</span><span class="sxs-lookup"><span data-stu-id="e427e-139">Before making any requests to the API, you need to get an access token.</span></span> <span data-ttu-id="e427e-140">Дополнительные сведения [можно найти в статье получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span><span class="sxs-lookup"><span data-stu-id="e427e-140">For more information, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span></span> <span data-ttu-id="e427e-141">Для доступа к ресурсам синхронизации приложению требуются разрешения Directory. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="e427e-141">To access synchronization resources, your application needs Directory.ReadWrite.All permissions.</span></span> <span data-ttu-id="e427e-142">Для получения дополнительных сведений ознакомьтесь с [разрешениями для каталогов](/graph/permissions-reference#directory-permissions).</span><span class="sxs-lookup"><span data-stu-id="e427e-142">For more information, see [Directory permissions](/graph/permissions-reference#directory-permissions).</span></span>
 
-### <a name="find-the-service-principal-object-by-display-name"></a><span data-ttu-id="cfc32-143">Поиск объекта субъекта службы по отображаемому имени</span><span class="sxs-lookup"><span data-stu-id="cfc32-143">Find the service principal object by display name</span></span>
+### <a name="find-the-service-principal-object-by-display-name"></a><span data-ttu-id="e427e-143">Поиск объекта субъекта службы по отображаемому имени</span><span class="sxs-lookup"><span data-stu-id="e427e-143">Find the service principal object by display name</span></span>
 
-<span data-ttu-id="cfc32-144">В приведенном ниже примере показано, как найти объект участника службы по отображаемому имени.</span><span class="sxs-lookup"><span data-stu-id="cfc32-144">The following example shows how to find service principal object by display name.</span></span>
+<span data-ttu-id="e427e-144">В приведенном ниже примере показано, как найти объект участника службы по отображаемому имени.</span><span class="sxs-lookup"><span data-stu-id="e427e-144">The following example shows how to find service principal object by display name.</span></span>
 
-<span data-ttu-id="cfc32-145">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="cfc32-145">**Request**</span></span>
+<span data-ttu-id="e427e-145">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="e427e-145">**Request**</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 ```
 
-<span data-ttu-id="cfc32-146">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="cfc32-146">**Response**</span></span>
+<span data-ttu-id="e427e-146">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="e427e-146">**Response**</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -95,17 +95,17 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="find-the-service-principal-object-by-app-id"></a><span data-ttu-id="cfc32-147">Поиск объекта субъекта службы по ИДЕНТИФИКАТОРу приложения</span><span class="sxs-lookup"><span data-stu-id="cfc32-147">Find the service principal object by app ID</span></span>
+### <a name="find-the-service-principal-object-by-app-id"></a><span data-ttu-id="e427e-147">Поиск объекта субъекта службы по ИДЕНТИФИКАТОРу приложения</span><span class="sxs-lookup"><span data-stu-id="e427e-147">Find the service principal object by app ID</span></span>
 
-<span data-ttu-id="cfc32-148">В приведенном ниже примере показано, как найти объект субъекта службы по ИДЕНТИФИКАТОРу приложения.</span><span class="sxs-lookup"><span data-stu-id="cfc32-148">The following example shows how to find the service principal object by app ID.</span></span>
+<span data-ttu-id="e427e-148">В приведенном ниже примере показано, как найти объект субъекта службы по ИДЕНТИФИКАТОРу приложения.</span><span class="sxs-lookup"><span data-stu-id="e427e-148">The following example shows how to find the service principal object by app ID.</span></span>
 
-<span data-ttu-id="cfc32-149">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="cfc32-149">**Request**</span></span>
+<span data-ttu-id="e427e-149">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="e427e-149">**Request**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'
 ```
 
-<span data-ttu-id="cfc32-150">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="cfc32-150">**Response**</span></span>
+<span data-ttu-id="e427e-150">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="e427e-150">**Response**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
@@ -120,18 +120,18 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="list-existing-synchronization-jobs"></a><span data-ttu-id="cfc32-151">Перечисление существующих заданий синхронизации</span><span class="sxs-lookup"><span data-stu-id="cfc32-151">List existing synchronization jobs</span></span>
+### <a name="list-existing-synchronization-jobs"></a><span data-ttu-id="e427e-151">Перечисление существующих заданий синхронизации</span><span class="sxs-lookup"><span data-stu-id="e427e-151">List existing synchronization jobs</span></span>
 
-<span data-ttu-id="cfc32-152">В приведенном ниже примере показано, как перечислить существующие задания синхронизации.</span><span class="sxs-lookup"><span data-stu-id="cfc32-152">The following example shows you how to list existing synchronization jobs.</span></span>
+<span data-ttu-id="e427e-152">В приведенном ниже примере показано, как перечислить существующие задания синхронизации.</span><span class="sxs-lookup"><span data-stu-id="e427e-152">The following example shows you how to list existing synchronization jobs.</span></span>
 
-<span data-ttu-id="cfc32-153">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="cfc32-153">**Request**</span></span>
+<span data-ttu-id="e427e-153">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="e427e-153">**Request**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 ```
 
-<span data-ttu-id="cfc32-154">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="cfc32-154">**Response**</span></span>
+<span data-ttu-id="e427e-154">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="e427e-154">**Response**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
@@ -151,10 +151,10 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="get-synchronization-job-status"></a><span data-ttu-id="cfc32-155">Получение состояния задания синхронизации</span><span class="sxs-lookup"><span data-stu-id="cfc32-155">Get synchronization job status</span></span>
-<span data-ttu-id="cfc32-156">В приведенном ниже примере показано, как получить состояние задания синхронизации.</span><span class="sxs-lookup"><span data-stu-id="cfc32-156">The following example shows you how to get the status of a synchronization job.</span></span>
+### <a name="get-synchronization-job-status"></a><span data-ttu-id="e427e-155">Получение состояния задания синхронизации</span><span class="sxs-lookup"><span data-stu-id="e427e-155">Get synchronization job status</span></span>
+<span data-ttu-id="e427e-156">В приведенном ниже примере показано, как получить состояние задания синхронизации.</span><span class="sxs-lookup"><span data-stu-id="e427e-156">The following example shows you how to get the status of a synchronization job.</span></span>
 
-<span data-ttu-id="cfc32-157">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="cfc32-157">**Request**</span></span>
+<span data-ttu-id="e427e-157">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="e427e-157">**Request**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}
@@ -162,7 +162,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs/SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa
 ```
 
-<span data-ttu-id="cfc32-158">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="cfc32-158">**Response**</span></span>
+<span data-ttu-id="e427e-158">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="e427e-158">**Response**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
     HTTP/1.1 200 OK
@@ -178,16 +178,16 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
     }
 ```
 
-### <a name="get-synchronization-schema"></a><span data-ttu-id="cfc32-159">Получение схемы синхронизации</span><span class="sxs-lookup"><span data-stu-id="cfc32-159">Get synchronization schema</span></span>
-<span data-ttu-id="cfc32-160">В приведенном ниже примере показано, как получить схему синхронизации.</span><span class="sxs-lookup"><span data-stu-id="cfc32-160">The following example shows you how to get the synchronization schema.</span></span>
+### <a name="get-synchronization-schema"></a><span data-ttu-id="e427e-159">Получение схемы синхронизации</span><span class="sxs-lookup"><span data-stu-id="e427e-159">Get synchronization schema</span></span>
+<span data-ttu-id="e427e-160">В приведенном ниже примере показано, как получить схему синхронизации.</span><span class="sxs-lookup"><span data-stu-id="e427e-160">The following example shows you how to get the synchronization schema.</span></span>
 
-<span data-ttu-id="cfc32-161">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="cfc32-161">**Request**</span></span>
+<span data-ttu-id="e427e-161">**Запрос**</span><span class="sxs-lookup"><span data-stu-id="e427e-161">**Request**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-<span data-ttu-id="cfc32-162">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="cfc32-162">**Response**</span></span>
+<span data-ttu-id="e427e-162">**Отклик**</span><span class="sxs-lookup"><span data-stu-id="e427e-162">**Response**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
@@ -196,10 +196,10 @@ HTTP/1.1 200 OK
     "synchronizationRules": []
 }
 ```
-## <a name="see-also"></a><span data-ttu-id="cfc32-163">См. также</span><span class="sxs-lookup"><span data-stu-id="cfc32-163">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e427e-163">См. также</span><span class="sxs-lookup"><span data-stu-id="e427e-163">See also</span></span>
 
-* [<span data-ttu-id="cfc32-164">Настройка синхронизации с атрибутами расширения каталога</span><span class="sxs-lookup"><span data-stu-id="cfc32-164">Configure synchronization with directory extension attributes</span></span>](../resources/synchronization-configure-with-directory-extension-attributes.md)
-* [<span data-ttu-id="cfc32-165">Настройка синхронизации с пользовательскими целевыми атрибутами</span><span class="sxs-lookup"><span data-stu-id="cfc32-165">Configure synchronization with custom target attributes</span></span>](../resources/synchronization-configure-with-custom-target-attributes.md)
+* [<span data-ttu-id="e427e-164">Настройка синхронизации с атрибутами расширения каталога</span><span class="sxs-lookup"><span data-stu-id="e427e-164">Configure synchronization with directory extension attributes</span></span>](../resources/synchronization-configure-with-directory-extension-attributes.md)
+* [<span data-ttu-id="e427e-165">Настройка синхронизации с пользовательскими целевыми атрибутами</span><span class="sxs-lookup"><span data-stu-id="e427e-165">Configure synchronization with custom target attributes</span></span>](../resources/synchronization-configure-with-custom-target-attributes.md)
 
 
 

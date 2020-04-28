@@ -12,21 +12,21 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42523039"
 ---
-# <a name="justifyaction-resource-type"></a><span data-ttu-id="090c4-103">Тип ресурса Жустифяктион</span><span class="sxs-lookup"><span data-stu-id="090c4-103">justifyAction resource type</span></span>
+# <a name="justifyaction-resource-type"></a><span data-ttu-id="f5aad-103">Тип ресурса Жустифяктион</span><span class="sxs-lookup"><span data-stu-id="f5aad-103">justifyAction resource type</span></span>
 
-<span data-ttu-id="090c4-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="090c4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f5aad-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f5aad-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="090c4-105">Указывает, что для указанной операции необходимо обоснование.</span><span class="sxs-lookup"><span data-stu-id="090c4-105">Indicates that a justification is required for the specified operation.</span></span> <span data-ttu-id="090c4-106">API [евалуатеаппликатион](../api/informationprotectionlabel-evaluateApplication.md), [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateClassificationResults.md)или [евалуатеремовал](../api/informationprotectionlabel-evaluateRemoval.md) могут возвращать **жустифяктион**.</span><span class="sxs-lookup"><span data-stu-id="090c4-106">The [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md), or [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md) APIs may return **justifyAction**.</span></span> <span data-ttu-id="090c4-107">Обоснование предоставляется с помощью [лабелингоптионс](../resources/labelingoptions.md).</span><span class="sxs-lookup"><span data-stu-id="090c4-107">Justification is provided via [labelingOptions](../resources/labelingoptions.md).</span></span> <span data-ttu-id="090c4-108">Предыдущий вызов должен повторяться, но свойство **довнградежустификатион** объекта **лабелингоптионс** Set с сообщением обоснования предоставляется с помощью пользовательского ввода или логики приложения.</span><span class="sxs-lookup"><span data-stu-id="090c4-108">The previous call should be repeated, but with the **downgradeJustification** property of **labelingOptions** set with a justification message, provided via user input or application logic.</span></span>
+<span data-ttu-id="f5aad-105">Указывает, что для указанной операции необходимо обоснование.</span><span class="sxs-lookup"><span data-stu-id="f5aad-105">Indicates that a justification is required for the specified operation.</span></span> <span data-ttu-id="f5aad-106">API [евалуатеаппликатион](../api/informationprotectionlabel-evaluateApplication.md), [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateClassificationResults.md)или [евалуатеремовал](../api/informationprotectionlabel-evaluateRemoval.md) могут возвращать **жустифяктион**.</span><span class="sxs-lookup"><span data-stu-id="f5aad-106">The [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md), or [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md) APIs may return **justifyAction**.</span></span> <span data-ttu-id="f5aad-107">Обоснование предоставляется с помощью [лабелингоптионс](../resources/labelingoptions.md).</span><span class="sxs-lookup"><span data-stu-id="f5aad-107">Justification is provided via [labelingOptions](../resources/labelingoptions.md).</span></span> <span data-ttu-id="f5aad-108">Предыдущий вызов должен повторяться, но свойство **довнградежустификатион** объекта **лабелингоптионс** Set с сообщением обоснования предоставляется с помощью пользовательского ввода или логики приложения.</span><span class="sxs-lookup"><span data-stu-id="f5aad-108">The previous call should be repeated, but with the **downgradeJustification** property of **labelingOptions** set with a justification message, provided via user input or application logic.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="090c4-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="090c4-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f5aad-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="f5aad-109">Properties</span></span>
 
-<span data-ttu-id="090c4-110">Нет</span><span class="sxs-lookup"><span data-stu-id="090c4-110">None</span></span>
+<span data-ttu-id="f5aad-110">Нет</span><span class="sxs-lookup"><span data-stu-id="f5aad-110">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="090c4-111">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="090c4-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f5aad-111">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f5aad-111">JSON representation</span></span>
 
-<span data-ttu-id="090c4-112">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="090c4-112">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f5aad-112">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f5aad-112">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

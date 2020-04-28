@@ -12,30 +12,30 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42519283"
 ---
-# <a name="workbookchartpointformat-resource-type"></a><span data-ttu-id="f8a0c-103">Тип ресурса Воркбукчартпоинтформат</span><span class="sxs-lookup"><span data-stu-id="f8a0c-103">workbookChartPointFormat resource type</span></span>
+# <a name="workbookchartpointformat-resource-type"></a><span data-ttu-id="1a53b-103">Тип ресурса Воркбукчартпоинтформат</span><span class="sxs-lookup"><span data-stu-id="1a53b-103">workbookChartPointFormat resource type</span></span>
 
-<span data-ttu-id="f8a0c-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f8a0c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1a53b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1a53b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f8a0c-105">Представляет объект форматирования для точек диаграммы.</span><span class="sxs-lookup"><span data-stu-id="f8a0c-105">Represents formatting object for chart points.</span></span>
+<span data-ttu-id="1a53b-105">Представляет объект форматирования для точек диаграммы.</span><span class="sxs-lookup"><span data-stu-id="1a53b-105">Represents formatting object for chart points.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="f8a0c-106">Методы</span><span class="sxs-lookup"><span data-stu-id="f8a0c-106">Methods</span></span>
-<span data-ttu-id="f8a0c-107">Нет</span><span class="sxs-lookup"><span data-stu-id="f8a0c-107">None</span></span>
+## <a name="methods"></a><span data-ttu-id="1a53b-106">Methods</span><span class="sxs-lookup"><span data-stu-id="1a53b-106">Methods</span></span>
+<span data-ttu-id="1a53b-107">Нет</span><span class="sxs-lookup"><span data-stu-id="1a53b-107">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f8a0c-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="f8a0c-108">Properties</span></span>
-<span data-ttu-id="f8a0c-109">Нет</span><span class="sxs-lookup"><span data-stu-id="f8a0c-109">None</span></span>
+## <a name="properties"></a><span data-ttu-id="1a53b-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="1a53b-108">Properties</span></span>
+<span data-ttu-id="1a53b-109">Нет</span><span class="sxs-lookup"><span data-stu-id="1a53b-109">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="f8a0c-110">Связи</span><span class="sxs-lookup"><span data-stu-id="f8a0c-110">Relationships</span></span>
-| <span data-ttu-id="f8a0c-111">Связь</span><span class="sxs-lookup"><span data-stu-id="f8a0c-111">Relationship</span></span> | <span data-ttu-id="f8a0c-112">Тип</span><span class="sxs-lookup"><span data-stu-id="f8a0c-112">Type</span></span>   |<span data-ttu-id="f8a0c-113">Описание</span><span class="sxs-lookup"><span data-stu-id="f8a0c-113">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="1a53b-110">Связи</span><span class="sxs-lookup"><span data-stu-id="1a53b-110">Relationships</span></span>
+| <span data-ttu-id="1a53b-111">Связь</span><span class="sxs-lookup"><span data-stu-id="1a53b-111">Relationship</span></span> | <span data-ttu-id="1a53b-112">Тип</span><span class="sxs-lookup"><span data-stu-id="1a53b-112">Type</span></span>   |<span data-ttu-id="1a53b-113">Описание</span><span class="sxs-lookup"><span data-stu-id="1a53b-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f8a0c-114">fill</span><span class="sxs-lookup"><span data-stu-id="f8a0c-114">fill</span></span>|[<span data-ttu-id="f8a0c-115">воркбукчартфилл</span><span class="sxs-lookup"><span data-stu-id="f8a0c-115">workbookChartFill</span></span>](workbookchartfill.md)|<span data-ttu-id="f8a0c-116">Представляет формат заливки диаграммы, включая сведения о форматировании фона.</span><span class="sxs-lookup"><span data-stu-id="f8a0c-116">Represents the fill format of a chart, which includes background formating information.</span></span> <span data-ttu-id="f8a0c-117">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="f8a0c-117">Read-only.</span></span>|
+|<span data-ttu-id="1a53b-114">fill</span><span class="sxs-lookup"><span data-stu-id="1a53b-114">fill</span></span>|[<span data-ttu-id="1a53b-115">воркбукчартфилл</span><span class="sxs-lookup"><span data-stu-id="1a53b-115">workbookChartFill</span></span>](workbookchartfill.md)|<span data-ttu-id="1a53b-116">Представляет формат заливки диаграммы, включая сведения о форматировании фона.</span><span class="sxs-lookup"><span data-stu-id="1a53b-116">Represents the fill format of a chart, which includes background formating information.</span></span> <span data-ttu-id="1a53b-117">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="1a53b-117">Read-only.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="f8a0c-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f8a0c-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1a53b-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1a53b-118">JSON representation</span></span>
 
-<span data-ttu-id="f8a0c-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f8a0c-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1a53b-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1a53b-119">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

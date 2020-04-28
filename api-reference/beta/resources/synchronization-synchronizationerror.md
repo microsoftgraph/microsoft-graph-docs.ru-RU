@@ -12,26 +12,26 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/10/2020
 ms.locfileid: "43217551"
 ---
-# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="23d08-103">Тип ресурса Синчронизатионеррор</span><span class="sxs-lookup"><span data-stu-id="23d08-103">synchronizationError resource type</span></span>
+# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="97514-103">Тип ресурса Синчронизатионеррор</span><span class="sxs-lookup"><span data-stu-id="97514-103">synchronizationError resource type</span></span>
 
-<span data-ttu-id="23d08-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="23d08-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="97514-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="97514-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="23d08-105">Представляет сообщение об ошибке, возникшей во время процесса синхронизации.</span><span class="sxs-lookup"><span data-stu-id="23d08-105">Represents an error that occurred during the synchronization process.</span></span>
+<span data-ttu-id="97514-105">Представляет сообщение об ошибке, возникшей во время процесса синхронизации.</span><span class="sxs-lookup"><span data-stu-id="97514-105">Represents an error that occurred during the synchronization process.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="23d08-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="23d08-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="97514-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="97514-106">Properties</span></span>
 
 <!-- Add descriptions for the properties. -->
-| <span data-ttu-id="23d08-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="23d08-107">Property</span></span>     | <span data-ttu-id="23d08-108">Тип</span><span class="sxs-lookup"><span data-stu-id="23d08-108">Type</span></span>   |<span data-ttu-id="23d08-109">Описание</span><span class="sxs-lookup"><span data-stu-id="23d08-109">Description</span></span>|
+| <span data-ttu-id="97514-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="97514-107">Property</span></span>     | <span data-ttu-id="97514-108">Тип</span><span class="sxs-lookup"><span data-stu-id="97514-108">Type</span></span>   |<span data-ttu-id="97514-109">Описание</span><span class="sxs-lookup"><span data-stu-id="97514-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="23d08-110">code</span><span class="sxs-lookup"><span data-stu-id="23d08-110">code</span></span>|<span data-ttu-id="23d08-111">Строка</span><span class="sxs-lookup"><span data-stu-id="23d08-111">String</span></span>||
-|<span data-ttu-id="23d08-112">message</span><span class="sxs-lookup"><span data-stu-id="23d08-112">message</span></span>|<span data-ttu-id="23d08-113">String</span><span class="sxs-lookup"><span data-stu-id="23d08-113">String</span></span>||
-|<span data-ttu-id="23d08-114">тенантактионабле</span><span class="sxs-lookup"><span data-stu-id="23d08-114">tenantActionable</span></span>|<span data-ttu-id="23d08-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="23d08-115">Boolean</span></span>||
+|<span data-ttu-id="97514-110">code</span><span class="sxs-lookup"><span data-stu-id="97514-110">code</span></span>|<span data-ttu-id="97514-111">String</span><span class="sxs-lookup"><span data-stu-id="97514-111">String</span></span>||
+|<span data-ttu-id="97514-112">message</span><span class="sxs-lookup"><span data-stu-id="97514-112">message</span></span>|<span data-ttu-id="97514-113">String</span><span class="sxs-lookup"><span data-stu-id="97514-113">String</span></span>||
+|<span data-ttu-id="97514-114">тенантактионабле</span><span class="sxs-lookup"><span data-stu-id="97514-114">tenantActionable</span></span>|<span data-ttu-id="97514-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="97514-115">Boolean</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="23d08-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="23d08-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="97514-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="97514-116">JSON representation</span></span>
 
-<span data-ttu-id="23d08-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="23d08-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="97514-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="97514-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
