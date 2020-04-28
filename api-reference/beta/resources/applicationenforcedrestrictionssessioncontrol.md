@@ -12,27 +12,27 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
 ms.locfileid: "43472231"
 ---
-# <a name="applicationenforcedrestrictionssessioncontrol-resource-type"></a><span data-ttu-id="acc90-103">Тип ресурса Аппликатионенфорцедрестриктионссессионконтрол</span><span class="sxs-lookup"><span data-stu-id="acc90-103">applicationEnforcedRestrictionsSessionControl resource type</span></span>
+# <a name="applicationenforcedrestrictionssessioncontrol-resource-type"></a><span data-ttu-id="8e120-103">Тип ресурса Аппликатионенфорцедрестриктионссессионконтрол</span><span class="sxs-lookup"><span data-stu-id="8e120-103">applicationEnforcedRestrictionsSessionControl resource type</span></span>
 
-<span data-ttu-id="acc90-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="acc90-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8e120-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8e120-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="acc90-105">Управление сеансами для применения ограничений приложений.</span><span class="sxs-lookup"><span data-stu-id="acc90-105">Session control to enforce application restrictions.</span></span> <span data-ttu-id="acc90-106">Инехритс из [управления сеансом условного доступа](conditionalaccesssessioncontrol.md).</span><span class="sxs-lookup"><span data-stu-id="acc90-106">Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).</span></span>
+<span data-ttu-id="8e120-105">Управление сеансами для применения ограничений приложений.</span><span class="sxs-lookup"><span data-stu-id="8e120-105">Session control to enforce application restrictions.</span></span> <span data-ttu-id="8e120-106">Инехритс из [управления сеансом условного доступа](conditionalaccesssessioncontrol.md).</span><span class="sxs-lookup"><span data-stu-id="8e120-106">Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="acc90-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="acc90-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8e120-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="8e120-107">Properties</span></span>
 
-| <span data-ttu-id="acc90-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="acc90-108">Property</span></span>     | <span data-ttu-id="acc90-109">Тип</span><span class="sxs-lookup"><span data-stu-id="acc90-109">Type</span></span>        | <span data-ttu-id="acc90-110">Описание</span><span class="sxs-lookup"><span data-stu-id="acc90-110">Description</span></span> |
+| <span data-ttu-id="8e120-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="8e120-108">Property</span></span>     | <span data-ttu-id="8e120-109">Тип</span><span class="sxs-lookup"><span data-stu-id="8e120-109">Type</span></span>        | <span data-ttu-id="8e120-110">Описание</span><span class="sxs-lookup"><span data-stu-id="8e120-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="acc90-111">isEnabled</span><span class="sxs-lookup"><span data-stu-id="acc90-111">isEnabled</span></span>     |<span data-ttu-id="acc90-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="acc90-112">Boolean</span></span>      | <span data-ttu-id="acc90-113">Указывает, включен ли элемент управления сеансом.</span><span class="sxs-lookup"><span data-stu-id="acc90-113">Specifies whether the session control is enabled or not.</span></span> |
+|<span data-ttu-id="8e120-111">isEnabled</span><span class="sxs-lookup"><span data-stu-id="8e120-111">isEnabled</span></span>     |<span data-ttu-id="8e120-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="8e120-112">Boolean</span></span>      | <span data-ttu-id="8e120-113">Указывает, включен ли элемент управления сеансом.</span><span class="sxs-lookup"><span data-stu-id="8e120-113">Specifies whether the session control is enabled or not.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="acc90-114">Отношения</span><span class="sxs-lookup"><span data-stu-id="acc90-114">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="8e120-114">Связи</span><span class="sxs-lookup"><span data-stu-id="8e120-114">Relationships</span></span>
 
-<span data-ttu-id="acc90-115">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="acc90-115">None.</span></span>
+<span data-ttu-id="8e120-115">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="8e120-115">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="acc90-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="acc90-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8e120-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="8e120-116">JSON representation</span></span>
 
-<span data-ttu-id="acc90-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="acc90-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8e120-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8e120-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

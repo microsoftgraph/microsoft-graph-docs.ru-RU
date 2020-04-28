@@ -12,27 +12,27 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
 ms.locfileid: "43470321"
 ---
-# <a name="manageddeviceenrollmentfailuredetails-function"></a><span data-ttu-id="3091b-103">Функция Манажеддевицеенроллментфаилуредетаилс</span><span class="sxs-lookup"><span data-stu-id="3091b-103">managedDeviceEnrollmentFailureDetails function</span></span>
+# <a name="manageddeviceenrollmentfailuredetails-function"></a><span data-ttu-id="ed69e-103">Функция Манажеддевицеенроллментфаилуредетаилс</span><span class="sxs-lookup"><span data-stu-id="ed69e-103">managedDeviceEnrollmentFailureDetails function</span></span>
 
-<span data-ttu-id="3091b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3091b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ed69e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ed69e-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="3091b-105">**Важно!** API в версии/Beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="3091b-105">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="3091b-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3091b-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ed69e-105">**Важно!** API в версии/Beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="ed69e-105">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ed69e-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ed69e-106">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="3091b-107">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="3091b-107">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ed69e-107">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ed69e-107">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3091b-108">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="3091b-108">Not yet documented</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="3091b-109">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="3091b-109">Prerequisites</span></span>
-<span data-ttu-id="3091b-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3091b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ed69e-108">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="ed69e-108">Not yet documented</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ed69e-109">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="ed69e-109">Prerequisites</span></span>
+<span data-ttu-id="ed69e-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ed69e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3091b-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3091b-112">Permission type</span></span>|<span data-ttu-id="3091b-113">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="3091b-113">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ed69e-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ed69e-112">Permission type</span></span>|<span data-ttu-id="ed69e-113">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="ed69e-113">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="3091b-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3091b-114">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="3091b-115">&nbsp; &nbsp; **Устранение неполадок**</span><span class="sxs-lookup"><span data-stu-id="3091b-115">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="3091b-116">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3091b-116">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="3091b-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3091b-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3091b-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3091b-118">Not supported.</span></span>|
-|<span data-ttu-id="3091b-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3091b-119">Application</span></span>||
-| <span data-ttu-id="3091b-120">&nbsp; &nbsp; **Устранение неполадок**</span><span class="sxs-lookup"><span data-stu-id="3091b-120">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="3091b-121">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3091b-121">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="ed69e-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ed69e-114">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="ed69e-115">&nbsp; &nbsp; **Устранение неполадок**</span><span class="sxs-lookup"><span data-stu-id="ed69e-115">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="ed69e-116">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ed69e-116">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="ed69e-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ed69e-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ed69e-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ed69e-118">Not supported.</span></span>|
+|<span data-ttu-id="ed69e-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ed69e-119">Application</span></span>||
+| <span data-ttu-id="ed69e-120">&nbsp; &nbsp; **Устранение неполадок**</span><span class="sxs-lookup"><span data-stu-id="ed69e-120">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="ed69e-121">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ed69e-121">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="3091b-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3091b-122">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ed69e-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ed69e-122">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -41,36 +41,36 @@ ms.locfileid: "43470321"
 GET /reports/managedDeviceEnrollmentFailureDetails
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3091b-123">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="3091b-123">Request headers</span></span>
-|<span data-ttu-id="3091b-124">Заголовок</span><span class="sxs-lookup"><span data-stu-id="3091b-124">Header</span></span>|<span data-ttu-id="3091b-125">Значение</span><span class="sxs-lookup"><span data-stu-id="3091b-125">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ed69e-123">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="ed69e-123">Request headers</span></span>
+|<span data-ttu-id="ed69e-124">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ed69e-124">Header</span></span>|<span data-ttu-id="ed69e-125">Значение</span><span class="sxs-lookup"><span data-stu-id="ed69e-125">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="3091b-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="3091b-126">Authorization</span></span>|<span data-ttu-id="3091b-127">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3091b-127">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="3091b-128">Accept</span><span class="sxs-lookup"><span data-stu-id="3091b-128">Accept</span></span>|<span data-ttu-id="3091b-129">application/json</span><span class="sxs-lookup"><span data-stu-id="3091b-129">application/json</span></span>|
+|<span data-ttu-id="ed69e-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ed69e-126">Authorization</span></span>|<span data-ttu-id="ed69e-127">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ed69e-127">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ed69e-128">Accept</span><span class="sxs-lookup"><span data-stu-id="ed69e-128">Accept</span></span>|<span data-ttu-id="ed69e-129">application/json</span><span class="sxs-lookup"><span data-stu-id="ed69e-129">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3091b-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="3091b-130">Request body</span></span>
-<span data-ttu-id="3091b-131">В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.</span><span class="sxs-lookup"><span data-stu-id="3091b-131">The following table shows the parameters that can be used with this function.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ed69e-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ed69e-130">Request body</span></span>
+<span data-ttu-id="ed69e-131">В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.</span><span class="sxs-lookup"><span data-stu-id="ed69e-131">The following table shows the parameters that can be used with this function.</span></span>
 
-|<span data-ttu-id="3091b-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="3091b-132">Property</span></span>|<span data-ttu-id="3091b-133">Тип</span><span class="sxs-lookup"><span data-stu-id="3091b-133">Type</span></span>|<span data-ttu-id="3091b-134">Описание</span><span class="sxs-lookup"><span data-stu-id="3091b-134">Description</span></span>|
+|<span data-ttu-id="ed69e-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="ed69e-132">Property</span></span>|<span data-ttu-id="ed69e-133">Тип</span><span class="sxs-lookup"><span data-stu-id="ed69e-133">Type</span></span>|<span data-ttu-id="ed69e-134">Описание</span><span class="sxs-lookup"><span data-stu-id="ed69e-134">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3091b-135">filter</span><span class="sxs-lookup"><span data-stu-id="3091b-135">filter</span></span>|<span data-ttu-id="3091b-136">String</span><span class="sxs-lookup"><span data-stu-id="3091b-136">String</span></span>|<span data-ttu-id="3091b-137">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="3091b-137">Not yet documented</span></span>|
-|<span data-ttu-id="3091b-138">skipToken</span><span class="sxs-lookup"><span data-stu-id="3091b-138">skipToken</span></span>|<span data-ttu-id="3091b-139">String</span><span class="sxs-lookup"><span data-stu-id="3091b-139">String</span></span>|<span data-ttu-id="3091b-140">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="3091b-140">Not yet documented</span></span>|
-|<span data-ttu-id="3091b-141">skip</span><span class="sxs-lookup"><span data-stu-id="3091b-141">skip</span></span>|<span data-ttu-id="3091b-142">Int32</span><span class="sxs-lookup"><span data-stu-id="3091b-142">Int32</span></span>|<span data-ttu-id="3091b-143">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="3091b-143">Not yet documented</span></span>|
-|<span data-ttu-id="3091b-144">top</span><span class="sxs-lookup"><span data-stu-id="3091b-144">top</span></span>|<span data-ttu-id="3091b-145">Int32</span><span class="sxs-lookup"><span data-stu-id="3091b-145">Int32</span></span>|<span data-ttu-id="3091b-146">Н/Д</span><span class="sxs-lookup"><span data-stu-id="3091b-146">Not yet documented</span></span>|
+|<span data-ttu-id="ed69e-135">filter</span><span class="sxs-lookup"><span data-stu-id="ed69e-135">filter</span></span>|<span data-ttu-id="ed69e-136">String</span><span class="sxs-lookup"><span data-stu-id="ed69e-136">String</span></span>|<span data-ttu-id="ed69e-137">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="ed69e-137">Not yet documented</span></span>|
+|<span data-ttu-id="ed69e-138">skipToken</span><span class="sxs-lookup"><span data-stu-id="ed69e-138">skipToken</span></span>|<span data-ttu-id="ed69e-139">String</span><span class="sxs-lookup"><span data-stu-id="ed69e-139">String</span></span>|<span data-ttu-id="ed69e-140">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="ed69e-140">Not yet documented</span></span>|
+|<span data-ttu-id="ed69e-141">skip</span><span class="sxs-lookup"><span data-stu-id="ed69e-141">skip</span></span>|<span data-ttu-id="ed69e-142">Int32</span><span class="sxs-lookup"><span data-stu-id="ed69e-142">Int32</span></span>|<span data-ttu-id="ed69e-143">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="ed69e-143">Not yet documented</span></span>|
+|<span data-ttu-id="ed69e-144">top</span><span class="sxs-lookup"><span data-stu-id="ed69e-144">top</span></span>|<span data-ttu-id="ed69e-145">Int32</span><span class="sxs-lookup"><span data-stu-id="ed69e-145">Int32</span></span>|<span data-ttu-id="ed69e-146">Н/Д</span><span class="sxs-lookup"><span data-stu-id="ed69e-146">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="3091b-147">Ответ</span><span class="sxs-lookup"><span data-stu-id="3091b-147">Response</span></span>
-<span data-ttu-id="3091b-148">В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект [report](../resources/intune-shared-report.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3091b-148">If successful, this function returns a `200 OK` response code and a [report](../resources/intune-shared-report.md) in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ed69e-147">Ответ</span><span class="sxs-lookup"><span data-stu-id="ed69e-147">Response</span></span>
+<span data-ttu-id="ed69e-148">В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект [report](../resources/intune-shared-report.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ed69e-148">If successful, this function returns a `200 OK` response code and a [report](../resources/intune-shared-report.md) in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3091b-149">Пример</span><span class="sxs-lookup"><span data-stu-id="3091b-149">Example</span></span>
-### <a name="request"></a><span data-ttu-id="3091b-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="3091b-150">Request</span></span>
-<span data-ttu-id="3091b-151">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3091b-151">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ed69e-149">Пример</span><span class="sxs-lookup"><span data-stu-id="ed69e-149">Example</span></span>
+### <a name="request"></a><span data-ttu-id="ed69e-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="ed69e-150">Request</span></span>
+<span data-ttu-id="ed69e-151">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ed69e-151">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureDetails(skip=4,top=3,filter='parameterValue',skipToken='parameterValue')
 ```
 
-### <a name="response"></a><span data-ttu-id="3091b-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="3091b-152">Response</span></span>
-<span data-ttu-id="3091b-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3091b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ed69e-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="ed69e-152">Response</span></span>
+<span data-ttu-id="ed69e-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ed69e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

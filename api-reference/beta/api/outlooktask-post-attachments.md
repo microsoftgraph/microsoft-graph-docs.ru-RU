@@ -12,25 +12,25 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/15/2020
 ms.locfileid: "43510877"
 ---
-# <a name="create-attachment"></a><span data-ttu-id="5fda3-103">Создание вложения</span><span class="sxs-lookup"><span data-stu-id="5fda3-103">Create attachment</span></span>
+# <a name="create-attachment"></a><span data-ttu-id="ab2c4-103">Создание вложения</span><span class="sxs-lookup"><span data-stu-id="ab2c4-103">Create attachment</span></span>
 
-<span data-ttu-id="5fda3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5fda3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ab2c4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ab2c4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5fda3-105">Используйте этот API, чтобы добавить [вложение](../resources/attachment.md) в объект [outlookTask](../resources/outlooktask.md).</span><span class="sxs-lookup"><span data-stu-id="5fda3-105">Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md).</span></span> <span data-ttu-id="5fda3-106">Вложение может представлять собой файл (из типа [fileAttachment](../resources/fileattachment.md) ) или элемент Outlook (тип[itemAttachment](../resources/itemattachment.md) ).</span><span class="sxs-lookup"><span data-stu-id="5fda3-106">The attachment can be a file (of [fileAttachment](../resources/fileattachment.md) type) or Outlook item ([itemAttachment](../resources/itemattachment.md) type).</span></span>
+<span data-ttu-id="ab2c4-105">Используйте этот API, чтобы добавить [вложение](../resources/attachment.md) в объект [outlookTask](../resources/outlooktask.md).</span><span class="sxs-lookup"><span data-stu-id="ab2c4-105">Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md).</span></span> <span data-ttu-id="ab2c4-106">Вложение может представлять собой файл (из типа [fileAttachment](../resources/fileattachment.md) ) или элемент Outlook (тип[itemAttachment](../resources/itemattachment.md) ).</span><span class="sxs-lookup"><span data-stu-id="ab2c4-106">The attachment can be a file (of [fileAttachment](../resources/fileattachment.md) type) or Outlook item ([itemAttachment](../resources/itemattachment.md) type).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5fda3-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5fda3-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ab2c4-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ab2c4-107">Permissions</span></span>
 
-<span data-ttu-id="5fda3-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5fda3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ab2c4-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ab2c4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5fda3-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5fda3-110">Permission type</span></span>      | <span data-ttu-id="5fda3-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5fda3-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ab2c4-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ab2c4-110">Permission type</span></span>      | <span data-ttu-id="ab2c4-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ab2c4-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5fda3-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5fda3-112">Delegated (work or school account)</span></span> | <span data-ttu-id="5fda3-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5fda3-113">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="5fda3-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5fda3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5fda3-115">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5fda3-115">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="5fda3-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5fda3-116">Application</span></span> | <span data-ttu-id="5fda3-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5fda3-117">Not supported.</span></span> |
+|<span data-ttu-id="ab2c4-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ab2c4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ab2c4-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ab2c4-113">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="ab2c4-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ab2c4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ab2c4-115">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ab2c4-115">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="ab2c4-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ab2c4-116">Application</span></span> | <span data-ttu-id="ab2c4-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ab2c4-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5fda3-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5fda3-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ab2c4-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ab2c4-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,31 +39,31 @@ POST /me/outlook/tasks/{id}/attachments
 POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5fda3-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5fda3-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ab2c4-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ab2c4-119">Request headers</span></span>
 
-| <span data-ttu-id="5fda3-120">Имя</span><span class="sxs-lookup"><span data-stu-id="5fda3-120">Name</span></span>       | <span data-ttu-id="5fda3-121">Описание</span><span class="sxs-lookup"><span data-stu-id="5fda3-121">Description</span></span>|
+| <span data-ttu-id="ab2c4-120">Имя</span><span class="sxs-lookup"><span data-stu-id="ab2c4-120">Name</span></span>       | <span data-ttu-id="ab2c4-121">Описание</span><span class="sxs-lookup"><span data-stu-id="ab2c4-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="5fda3-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5fda3-122">Authorization</span></span>  | <span data-ttu-id="5fda3-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5fda3-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5fda3-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5fda3-125">Content-Type</span></span> | <span data-ttu-id="5fda3-126">Строка, представляющая тип данных в теле объекта.</span><span class="sxs-lookup"><span data-stu-id="5fda3-126">A string that represents the type of data in the body of an entity.</span></span> <span data-ttu-id="5fda3-127">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="5fda3-127">Required.</span></span> |
+| <span data-ttu-id="ab2c4-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ab2c4-122">Authorization</span></span>  | <span data-ttu-id="ab2c4-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ab2c4-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ab2c4-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ab2c4-125">Content-Type</span></span> | <span data-ttu-id="ab2c4-126">Строка, представляющая тип данных в теле объекта.</span><span class="sxs-lookup"><span data-stu-id="ab2c4-126">A string that represents the type of data in the body of an entity.</span></span> <span data-ttu-id="ab2c4-127">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="ab2c4-127">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5fda3-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5fda3-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ab2c4-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ab2c4-128">Request body</span></span>
 
-<span data-ttu-id="5fda3-129">Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5fda3-129">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+<span data-ttu-id="ab2c4-129">Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ab2c4-129">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5fda3-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="5fda3-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ab2c4-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="ab2c4-130">Response</span></span>
 
-<span data-ttu-id="5fda3-131">В случае успеха этот метод возвращает код отклика `201 Created` и объект [attachment](../resources/attachment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5fda3-131">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
+<span data-ttu-id="ab2c4-131">В случае успеха этот метод возвращает код отклика `201 Created` и объект [attachment](../resources/attachment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ab2c4-131">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5fda3-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="5fda3-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ab2c4-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="ab2c4-132">Examples</span></span>
 
-### <a name="example-1-add-file-attachment"></a><span data-ttu-id="5fda3-133">Пример 1: Добавление вложенного файла</span><span class="sxs-lookup"><span data-stu-id="5fda3-133">Example 1: Add file attachment</span></span> 
+### <a name="example-1-add-file-attachment"></a><span data-ttu-id="ab2c4-133">Пример 1: Добавление вложенного файла</span><span class="sxs-lookup"><span data-stu-id="ab2c4-133">Example 1: Add file attachment</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="5fda3-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="5fda3-134">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ab2c4-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="ab2c4-134">Request</span></span>
 
-<span data-ttu-id="5fda3-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5fda3-135">Here is an example of the request.</span></span>
+<span data-ttu-id="ab2c4-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ab2c4-135">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="5fda3-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="5fda3-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ab2c4-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="ab2c4-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_file_attachment_to_task"
@@ -79,24 +79,24 @@ Content-type: application/json
     "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="5fda3-137">C#</span><span class="sxs-lookup"><span data-stu-id="5fda3-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ab2c4-137">C#</span><span class="sxs-lookup"><span data-stu-id="ab2c4-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-file-attachment-to-task-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5fda3-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5fda3-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ab2c4-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ab2c4-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/add-file-attachment-to-task-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5fda3-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5fda3-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ab2c4-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ab2c4-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/add-file-attachment-to-task-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="5fda3-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="5fda3-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ab2c4-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="ab2c4-140">Response</span></span>
 
-<span data-ttu-id="5fda3-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="5fda3-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="ab2c4-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ab2c4-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "add_file_attachment_to_task",
@@ -123,11 +123,11 @@ HTTP 201 Created
 }
 ```
 
-### <a name="example-2-add-item-attachment"></a><span data-ttu-id="5fda3-144">Пример 2: Добавление вложения элемента</span><span class="sxs-lookup"><span data-stu-id="5fda3-144">Example 2: Add item attachment</span></span>
+### <a name="example-2-add-item-attachment"></a><span data-ttu-id="ab2c4-144">Пример 2: Добавление вложения элемента</span><span class="sxs-lookup"><span data-stu-id="ab2c4-144">Example 2: Add item attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5fda3-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="5fda3-145">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ab2c4-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="ab2c4-145">Request</span></span>
 
-<span data-ttu-id="5fda3-146">Ниже приведен пример, в котором присоединяется событие с другим событием в качестве вложения элемента.</span><span class="sxs-lookup"><span data-stu-id="5fda3-146">Here is an example which attaches an event with another event as an item attachment.</span></span>
+<span data-ttu-id="ab2c4-146">Ниже приведен пример, в котором присоединяется событие с другим событием в качестве вложения элемента.</span><span class="sxs-lookup"><span data-stu-id="ab2c4-146">Here is an example which attaches an event with another event as an item attachment.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -161,9 +161,9 @@ Content-type: application/json
 ```
 
 
-#### <a name="response"></a><span data-ttu-id="5fda3-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="5fda3-147">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ab2c4-147">Ответ</span><span class="sxs-lookup"><span data-stu-id="ab2c4-147">Response</span></span>
 
-<span data-ttu-id="5fda3-p106">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5fda3-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="ab2c4-p106">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ab2c4-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "add_item_attachment_to_task",

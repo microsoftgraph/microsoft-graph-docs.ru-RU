@@ -12,32 +12,32 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/22/2020
 ms.locfileid: "43806433"
 ---
-# <a name="get-phoneauthenticationmethod"></a><span data-ttu-id="ce624-103">Получение Фонеаусентикатионмесод</span><span class="sxs-lookup"><span data-stu-id="ce624-103">Get phoneAuthenticationMethod</span></span>
+# <a name="get-phoneauthenticationmethod"></a><span data-ttu-id="e54f9-103">Получение Фонеаусентикатионмесод</span><span class="sxs-lookup"><span data-stu-id="e54f9-103">Get phoneAuthenticationMethod</span></span>
 
-<span data-ttu-id="ce624-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ce624-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e54f9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e54f9-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ce624-105">Получение одного объекта [фонеаусентикатионмесод](../resources/phoneauthenticationmethod.md) .</span><span class="sxs-lookup"><span data-stu-id="ce624-105">Retrieve a single [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object.</span></span>
+<span data-ttu-id="e54f9-105">Получение одного объекта [фонеаусентикатионмесод](../resources/phoneauthenticationmethod.md) .</span><span class="sxs-lookup"><span data-stu-id="e54f9-105">Retrieve a single [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ce624-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ce624-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e54f9-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e54f9-106">Permissions</span></span>
 
-<span data-ttu-id="ce624-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ce624-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e54f9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e54f9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ce624-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ce624-109">Permission type</span></span>                        | <span data-ttu-id="ce624-110">Разрешения, действующие на себя (по крайней мере для самых привилегированных)</span><span class="sxs-lookup"><span data-stu-id="ce624-110">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="ce624-111">Разрешения, действующие на других (по крайней мере для самых привилегированных)</span><span class="sxs-lookup"><span data-stu-id="ce624-111">Permissions acting on others (from least to most privileged)</span></span>|
+| <span data-ttu-id="e54f9-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e54f9-109">Permission type</span></span>                        | <span data-ttu-id="e54f9-110">Разрешения, действующие на себя (по крайней мере для самых привилегированных)</span><span class="sxs-lookup"><span data-stu-id="e54f9-110">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="e54f9-111">Разрешения, действующие на других (по крайней мере для самых привилегированных)</span><span class="sxs-lookup"><span data-stu-id="e54f9-111">Permissions acting on others (from least to most privileged)</span></span>|
 |:---------------------------------------|:-------------------------|:-----------------|
-| <span data-ttu-id="ce624-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ce624-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="ce624-113">Усераусентикатионмесод. Read, Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite, Усераусентикатионмесод. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="ce624-113">UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All</span></span> | <span data-ttu-id="ce624-114">Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="ce624-114">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
-| <span data-ttu-id="ce624-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ce624-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce624-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ce624-116">Not supported.</span></span> | <span data-ttu-id="ce624-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ce624-117">Not supported.</span></span> |
-| <span data-ttu-id="ce624-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ce624-118">Application</span></span>                            | <span data-ttu-id="ce624-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ce624-119">Not supported.</span></span> | <span data-ttu-id="ce624-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ce624-120">Not supported.</span></span> |
+| <span data-ttu-id="e54f9-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e54f9-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="e54f9-113">Усераусентикатионмесод. Read, Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite, Усераусентикатионмесод. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="e54f9-113">UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All</span></span> | <span data-ttu-id="e54f9-114">Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="e54f9-114">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
+| <span data-ttu-id="e54f9-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e54f9-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e54f9-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e54f9-116">Not supported.</span></span> | <span data-ttu-id="e54f9-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e54f9-117">Not supported.</span></span> |
+| <span data-ttu-id="e54f9-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e54f9-118">Application</span></span>                            | <span data-ttu-id="e54f9-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e54f9-119">Not supported.</span></span> | <span data-ttu-id="e54f9-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e54f9-120">Not supported.</span></span> |
 
-<span data-ttu-id="ce624-121">Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="ce624-121">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
+<span data-ttu-id="e54f9-121">Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="e54f9-121">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
 
-* <span data-ttu-id="ce624-122">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="ce624-122">Global admin</span></span>
-* <span data-ttu-id="ce624-123">Глобальный читатель</span><span class="sxs-lookup"><span data-stu-id="ce624-123">Global reader</span></span>
-* <span data-ttu-id="ce624-124">Привилегированный администратор проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="ce624-124">Privileged authentication admin</span></span>
-* <span data-ttu-id="ce624-125">Администратор проверки подлинности (видит только скрытые номера телефонов)</span><span class="sxs-lookup"><span data-stu-id="ce624-125">Authentication admin (only sees masked phone numbers)</span></span>
+* <span data-ttu-id="e54f9-122">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="e54f9-122">Global admin</span></span>
+* <span data-ttu-id="e54f9-123">Глобальный читатель</span><span class="sxs-lookup"><span data-stu-id="e54f9-123">Global reader</span></span>
+* <span data-ttu-id="e54f9-124">Привилегированный администратор проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="e54f9-124">Privileged authentication admin</span></span>
+* <span data-ttu-id="e54f9-125">Администратор проверки подлинности (видит только скрытые номера телефонов)</span><span class="sxs-lookup"><span data-stu-id="e54f9-125">Authentication admin (only sees masked phone numbers)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="ce624-126">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ce624-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e54f9-126">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e54f9-126">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -46,31 +46,31 @@ GET /me/authentication/phoneMethods/{id}
 GET /users/{id}/authentication/phoneMethods/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="ce624-127">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ce624-127">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e54f9-127">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="e54f9-127">Optional query parameters</span></span>
 
-<span data-ttu-id="ce624-128">Этот метод не поддерживает дополнительные параметры запроса для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="ce624-128">This method does not support optional query parameters to customize the response.</span></span>
+<span data-ttu-id="e54f9-128">Этот метод не поддерживает дополнительные параметры запроса для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="e54f9-128">This method does not support optional query parameters to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ce624-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ce624-129">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e54f9-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e54f9-129">Request headers</span></span>
 
-| <span data-ttu-id="ce624-130">Имя</span><span class="sxs-lookup"><span data-stu-id="ce624-130">Name</span></span>      |<span data-ttu-id="ce624-131">Описание</span><span class="sxs-lookup"><span data-stu-id="ce624-131">Description</span></span>|
+| <span data-ttu-id="e54f9-130">Имя</span><span class="sxs-lookup"><span data-stu-id="e54f9-130">Name</span></span>      |<span data-ttu-id="e54f9-131">Описание</span><span class="sxs-lookup"><span data-stu-id="e54f9-131">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="ce624-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ce624-132">Authorization</span></span> | <span data-ttu-id="ce624-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ce624-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e54f9-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e54f9-132">Authorization</span></span> | <span data-ttu-id="e54f9-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e54f9-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ce624-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ce624-135">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e54f9-135">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e54f9-135">Request body</span></span>
 
-<span data-ttu-id="ce624-136">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ce624-136">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="e54f9-136">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e54f9-136">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ce624-137">Ответ</span><span class="sxs-lookup"><span data-stu-id="ce624-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e54f9-137">Ответ</span><span class="sxs-lookup"><span data-stu-id="e54f9-137">Response</span></span>
 
-<span data-ttu-id="ce624-138">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [фонеаусентикатионмесод](../resources/phoneauthenticationmethod.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ce624-138">If successful, this method returns a `200 OK` response code and the requested [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object in the response body.</span></span>
+<span data-ttu-id="e54f9-138">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [фонеаусентикатионмесод](../resources/phoneauthenticationmethod.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e54f9-138">If successful, this method returns a `200 OK` response code and the requested [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ce624-139">Примеры</span><span class="sxs-lookup"><span data-stu-id="ce624-139">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e54f9-139">Примеры</span><span class="sxs-lookup"><span data-stu-id="e54f9-139">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="ce624-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="ce624-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e54f9-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="e54f9-140">Request</span></span>
 
-<span data-ttu-id="ce624-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ce624-141">The following is an example of the request.</span></span>
+<span data-ttu-id="e54f9-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e54f9-141">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ce624-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="ce624-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e54f9-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="e54f9-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_phoneauthenticationmethod"
@@ -79,26 +79,26 @@ GET /users/{id}/authentication/phoneMethods/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7
 ```
-# <a name="c"></a>[<span data-ttu-id="ce624-143">C#</span><span class="sxs-lookup"><span data-stu-id="ce624-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e54f9-143">C#</span><span class="sxs-lookup"><span data-stu-id="e54f9-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-phoneauthenticationmethod-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ce624-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ce624-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e54f9-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e54f9-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-phoneauthenticationmethod-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ce624-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ce624-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e54f9-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e54f9-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-phoneauthenticationmethod-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="ce624-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="ce624-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="e54f9-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="e54f9-146">Response</span></span>
 
-<span data-ttu-id="ce624-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ce624-147">The following is an example of the response.</span></span>
+<span data-ttu-id="e54f9-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e54f9-147">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="ce624-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ce624-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="e54f9-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e54f9-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
