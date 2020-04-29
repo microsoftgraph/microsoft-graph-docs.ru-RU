@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Используя действие createLink, вы можете поделиться ресурсом DriveItem с помощью ссылки для совместного доступа.
 doc_type: apiPageType
-ms.openlocfilehash: 29d29e476a3991fd725d1c1774ac90725436b8db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: edd0259e35191c112c779b0afd545f7848675e8d
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517785"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934852"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Создание ссылки для доступа к ресурсу DriveItem
 
@@ -51,9 +51,11 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 В теле запроса определяются свойства ссылки для совместного доступа, запрашиваемой приложением.
 Запрос должен быть объектом JSON с указанными ниже свойствами.
 
-|   Имя    |  Тип  |                                 Описание                                  |
-| :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | string | Тип создаваемой ссылки для совместного доступа. Возможные значения: `view`, `edit` или `embed`.       |
+|   Имя       |  Тип  |                                 Описание                                  |
+| :------------| :----- | :--------------------------------------------------------------------------- |
+| **type**     | string | Тип создаваемой ссылки для совместного доступа. Возможные значения: `view`, `edit` или `embed`.       |
+| **password** | string | Пароль ссылки для совместного доступа, заданной создателем. Только необязательные и OneDrive персональный.
+| **expirationDateTime** | string | Строка с форматом ГГГГ – MM – ДДВчч: mm: ССЧП DateTime указывает срок действия разрешения. |
 | **scope** | string | Необязательный параметр. Область создаваемой ссылки. Возможные значения: `anonymous` или `organization`. |
 
 
@@ -104,6 +106,7 @@ Content-type: application/json
 
 {
   "type": "view",
+  "password": "ThisIsMyPrivatePassword",
   "scope": "anonymous"
 }
 ```
@@ -145,7 +148,8 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
+  "hasPassword": true
 }
 ```
 
@@ -208,7 +212,7 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
 }
 ```
 

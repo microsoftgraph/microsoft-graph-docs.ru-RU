@@ -5,20 +5,20 @@ ms.date: 09/10/2017
 title: Отправка приглашения на доступ к элементу
 localization_priority: Normal
 ms.prod: sharepoint
-description: Отправляет приглашение к совместному использованию ресурса DriveItem.
+description: Отправляет приглашение на доступ к driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 129cbeaf43c9c409b645a7a94b8b4a3371329a8b
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: 327f929a6b3fb2d3c45a39fc50af659a119fbe5c
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146424"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934845"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
 Пространство имен: microsoft.graph
 
-Отправляет приглашение к совместному использованию ресурса **DriveItem**.
+Отправляет приглашение на доступ к **driveItem**.
 Приглашение к совместному использованию предоставляет получателям разрешения и при необходимости отправляет им сообщение электронной почты с [ссылкой совместного доступа][].
 
 ## <a name="permissions"></a>Разрешения
@@ -69,6 +69,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | requireSignIn    | Boolean                        | Указывает, должен ли получатель приглашения выполнить вход, чтобы просмотреть элемент, к которому предоставлен общий доступ.
 | sendInvitation   | Boolean                        | Если указано значение true, получателю отправляется [ссылка совместного доступа][]. В противном случае разрешение предоставляется напрямую без отправки уведомления.
 | roles            | Collection(String)             | Указывает роли, которые необходимо предоставить получателям приглашения к совместному использованию.
+| expirationDateTime | DateTimeOffset                       | Укажите значение даты и времени, после которого истечет срок действия разрешения. Доступно в OneDrive для бизнеса, SharePoint и в личных учетных записях OneDrive для бизнеса.
+| password           | Строка                         | Пароль, установленный в приглашении создателем. Только необязательные и OneDrive персональный.
 
 ## <a name="example"></a>Пример
 
@@ -96,7 +98,9 @@ Content-type: application/json
   "message": "Here's the file that we're collaborating on.",
   "requireSignIn": true,
   "sendInvitation": true,
-  "roles": [ "write" ]
+  "roles": [ "write" ],
+  "password": "password123",
+  "expirationDateTime": "2018-07-15T14:00:00.000Z"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -137,12 +141,14 @@ Content-type: application/json
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
+      "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
         "email": "ryan@contoso.com",
         "signInRequired": true
       },
-      "roles": [ "write" ]
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
     }
   ]
 }

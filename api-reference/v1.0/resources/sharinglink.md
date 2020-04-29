@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс SharingLink группирует связанные ссылками элементы данных в единую структуру.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3195207588061840c4e1394e1460f74d3728510c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6a696a95c3c636a84bb79498375b0c023617548d
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446865"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934887"
 ---
 # <a name="sharinglink-resource-type"></a>Тип ресурса SharingLink
 
@@ -35,6 +35,7 @@ ms.locfileid: "42446865"
 ```json
 {
   "application": { "@odata.type": "microsoft.graph.identity" },
+  "preventsDownload": false,
   "type": "view | edit | embed",
   "scope": "anonymous | organization",
   "webHtml": "string",
@@ -49,6 +50,7 @@ ms.locfileid: "42446865"
 | application | [identity][]  | Приложение, с которым сопоставлена ссылка.
 | type        | String        | Тип созданной ссылки.
 | scope       | String        | Область ссылки, представленная этим разрешением. Значение `anonymous` указывает, что ссылку может использовать любой пользователь, значение `organization` указывает, что ссылку могут использовать только пользователи, выполнившие вход в один и тот же клиент.
+| превентсдовнлоад | Boolean       | Если этот параметр имеет значение true, пользователь может использовать эту ссылку только для просмотра элемента в Интернете и не может использовать его для загрузки содержимого элемента. Только для OneDrive для бизнеса и SharePoint.
 | webHtml     | String        | Для ссылок `embed` это свойство содержит HTML-код элемента `<iframe>`, который внедряет элемент на веб-страницу.
 | webUrl      | Строка        | URL-адрес, который открывает элемент в браузере на веб-сайте OneDrive.
 

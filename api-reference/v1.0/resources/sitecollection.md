@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Ресурс siteCollection предоставляет больше сведений о семействе веб-сайтов.
 doc_type: resourcePageType
-ms.openlocfilehash: 2e34b4fdb63a825e87cea8eda6117232ee1da93d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f73505ead4ad060f81bdfe7e77099783a8ff0242
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533690"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934824"
 ---
 # <a name="sitecollection-resource"></a>Ресурс SiteCollection
 
@@ -36,6 +36,7 @@ ms.locfileid: "42533690"
 ```json
 {
   "hostname": "contoso.sharepoint.com",
+  "dataLocationCode": "EUR",
   "root": { "@odata.type": "microsoft.graph.root" }
 }
 ```
@@ -45,6 +46,7 @@ ms.locfileid: "42533690"
 | Имя свойства        | Тип     | Описание
 |:---------------------|:---------|:---------------------------------------------------
 | **hostname**         | строка   | Имя узла для семейства веб-сайтов. Только для чтения.
+| **даталокатионкоде** | string   | Код географического региона, в котором располагается это семейство веб-сайтов. Только для чтения.
 | **root**             | [root][] | Если задано, это указывает на то, что это корневое семейство веб-сайтов в SharePoint. Только для чтения.
 
 [root]: root.md

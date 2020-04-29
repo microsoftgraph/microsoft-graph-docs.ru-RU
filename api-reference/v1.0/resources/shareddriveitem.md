@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс sharedDriveItem возвращается при использовании API shares для доступа к общему driveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9864d982e58304c684b267c59ec1925aec8baeff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 10e6146151b64470386b6071bc19cb8764744b3e
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533730"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934901"
 ---
 # <a name="shareddriveitem-resource-type"></a>Тип ресурса SharedDriveItem
 
@@ -63,6 +63,7 @@ ms.locfileid: "42533730"
 | **driveItem**     | [**driveItem**][driveItem]   | Используется для доступа к базовому объекту **driveItem**
 | **list**          | [**перечн**][list]        | Используется для доступа к базовому объекту **list**
 | **listItem**      | [**listItem**][listItem]    | Используется для доступа к базовому объекту **listItem**
+| **permission**    | [**права**][permission] | Используется для доступа к **разрешению** , представляющему базовую ссылку для совместного доступа
 | **site**          | [**страницу**][site]        | Используется для доступа к базовому объекту **site**
 
 Кроме того, для объектов **driveItem**, к которым предоставлен доступ в личных учетных записях OneDrive, можно использовать указанные ниже связи.
@@ -75,6 +76,7 @@ ms.locfileid: "42533730"
 [driveItem]: driveitem.md
 [list]: list.md
 [listItem]: listitem.md
+[permission]: permission.md
 [site]: site.md
 
 ## <a name="methods"></a>Методы
