@@ -4,12 +4,12 @@ description: В этой статье представлены ответы на
 author: jasonjoh
 ms.author: jasonjoh
 localization_priority: Normal
-ms.openlocfilehash: 00e1d3d20276c888f2f22d7e62f7434da282bca9
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 9b260a29512595fe39d556a57d8e30d86ae06ca6
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806822"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916916"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Краткое руководство по Microsoft Graph: вопросы и ответы
 
@@ -53,15 +53,15 @@ ms.locfileid: "43806822"
 | Android | [Учебник](/graph/tutorials/android) | [GitHub](https://github.com/microsoftgraph/msgraph-training-android) |
 | Angular | [Учебник](/graph/tutorials/angular) | [GitHub](https://github.com/microsoftgraph/msgraph-training-angularspa) |
 | ASP.NET MVC | [Учебник](/learn/modules/msgraph-build-aspnetmvc-apps) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
-| iOS Swift | Повторен (/граф/туториалс/Иос-Свифт | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-swift) |
-| iOS Objective-C | Повторен (/граф/туториалс/Иос-обжективек | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-objectivec) |
+| iOS Swift | [Учебник](/graph/tutorials/ios-swift) | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-swift) |
+| iOS Objective-C | [Учебник](/graph/tutorials/ios-objectivec) | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-objectivec) |
 | Node.js | [Учебник](/graph/tutorials/node) | [GitHub](https://github.com/microsoftgraph/msgraph-training-nodeexpressapp) |
 | PHP | [Учебник](/graph/tutorials/php) | [GitHub](https://github.com/microsoftgraph/msgraph-training-phpapp) |
 | Python | [Учебник](/graph/tutorials/python) | [GitHub](https://github.com/microsoftgraph/msgraph-training-pythondjangoapp) |
 | React | [Учебник](/graph/tutorials/react) | [GitHub](https://github.com/microsoftgraph/msgraph-training-reactspa) |
 | Ruby | [Учебник](/graph/tutorials/ruby) | [GitHub](https://github.com/microsoftgraph/msgraph-training-rubyrailsapp) |
 | UWP | [Учебник](/graph/tutorials/uwp) | [GitHub](https://github.com/microsoftgraph/msgraph-training-uwp) |
-| Xamarin | Повторен (/граф/туториалс/ксамарин | [GitHub](https://github.com/microsoftgraph/msgraph-training-xamarin) |
+| Xamarin | [Учебник](/graph/tutorials/xamarin) | [GitHub](https://github.com/microsoftgraph/msgraph-training-xamarin) |
 
 ### <a name="why-dont-any-of-the-quick-start-samples-show-advanced-authentication-use-cases"></a>Почему в примерах из краткого руководства нет вариантов использования расширенной проверки подлинности?
 
