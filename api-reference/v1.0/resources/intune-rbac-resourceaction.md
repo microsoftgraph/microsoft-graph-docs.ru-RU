@@ -23,10 +23,10 @@ ms.locfileid: "43441625"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedResourceActions|Коллекция String|Разрешенные действия|
+|allowedResourceActions|Коллекция объектов string|Разрешенные действия|
 |notAllowedResourceActions|Коллекция строк|Запрещенные действия|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

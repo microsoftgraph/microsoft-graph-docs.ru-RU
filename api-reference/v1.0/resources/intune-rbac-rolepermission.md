@@ -25,7 +25,7 @@ ms.locfileid: "43441589"
 |:---|:---|:---|
 |resourceActions|Коллекция объектов [resourceAction](../resources/intune-rbac-resourceaction.md)|Действия|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -23,10 +23,10 @@ ms.locfileid: "43397293"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|iPad|Логический|Указывает, должно ли приложение работать на iPad.|
+|iPad|Boolean|Указывает, должно ли приложение работать на iPad.|
 |iPhoneAndIPod|Boolean|Указывает, должно ли приложение работать на iPhone и iPod.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

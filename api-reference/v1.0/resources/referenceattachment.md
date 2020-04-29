@@ -25,7 +25,7 @@ ms.locfileid: "43445517"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[получение](../api/attachment-get.md); | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
-|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта referenceAttachment. |
+|[удаление](../api/attachment-delete.md); | Нет |Удаление объекта referenceAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -37,7 +37,7 @@ ms.locfileid: "43445517"
 |name|String|Текст, который отображается под значком, представляет внедренное вложение. Он может не быть фактическим именем файла.|
 |size|Int32|Объем метаданных, которые хранятся в сообщении с вложением (в байтах). Это значение не отображает фактический размер файла.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

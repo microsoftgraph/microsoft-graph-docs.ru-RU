@@ -26,7 +26,7 @@ ms.locfileid: "43445690"
 |type|String|Указывает MIME-тип содержимого.|
 |value|Binary|Массив байтов содержимого.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -61,7 +61,7 @@ ms.locfileid: "43449405"
 - [Тип ресурса deviceComplianceSettingState](intune-deviceconfig-devicecompliancesettingstate.md)
 - [Обзор пользователей, касающийся соответствия устройств требованиям](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [Состояние пользователей, касающийся соответствия устройств требованиям](intune-deviceconfig-devicecomplianceuserstatus.md)
-- [Конфигурация устройства](intune-deviceconfig-deviceconfiguration.md)
+- [Конфигурация устройств](intune-deviceconfig-deviceconfiguration.md)
 - [Назначение конфигурации устройства](intune-deviceconfig-deviceconfigurationassignment.md)
 - [Обзор конфигураций устройств](intune-deviceconfig-deviceconfigurationdeviceoverview.md)
 - [Ресурс DeviceConfigurationDeviceStateSummary](intune-deviceconfig-deviceconfigurationdevicestatesummary.md)

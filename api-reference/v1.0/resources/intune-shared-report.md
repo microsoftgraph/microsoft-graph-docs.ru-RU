@@ -26,7 +26,7 @@ ms.locfileid: "43445683"
 |:---|:---|:---|
 |содержимое|Поток|Н/Д|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

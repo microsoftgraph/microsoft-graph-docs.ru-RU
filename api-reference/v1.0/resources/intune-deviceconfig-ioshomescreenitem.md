@@ -25,7 +25,7 @@ ms.locfileid: "43410632"
 |:---|:---|:---|
 |displayName|String|Имя приложения|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

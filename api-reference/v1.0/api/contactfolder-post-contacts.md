@@ -49,7 +49,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В теле запроса представьте объект [Contact](../resources/contact.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -106,7 +106,7 @@ Content-length: 210
 
 В теле запроса представьте объект [Contact](../resources/contact.md) в формате JSON.
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика. **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 

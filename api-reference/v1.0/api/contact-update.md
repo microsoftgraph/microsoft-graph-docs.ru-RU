@@ -62,7 +62,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |categories|String|Категории, связанные с контактом.|
 |children|String|Имена детей контакта.|
 |companyName|String|Название компании контакта.|
-|department|String|Отдел контакта.|
+|отделу;|String|Отдел контакта.|
 |displayName|Строка|Отображаемое имя контакта. Обратите внимание, что последующие обновления других свойств могут привести к тому, что автоматически созданное значение перезапишет указанное значение displayName. Чтобы сохранить существующее значение, всегда добавляйте его как displayName в операцию обновления.|
 |emailAddresses|Коллекция [EmailAddress](../resources/emailaddress.md)|Электронные адреса контакта.|
 |fileAs|String|Имя, под которым хранится контакт.|

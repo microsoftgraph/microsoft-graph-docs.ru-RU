@@ -112,7 +112,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Отклик включает все параметры почтового ящика вошедшего пользователя.
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -196,7 +196,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 
 ---
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Отклик включает только параметры автоматических ответов. Примечание. Показанный здесь объект отклика может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

@@ -29,7 +29,7 @@ ms.locfileid: "43468483"
 |productName|String|Название продукта.|
 |denied|Boolean|Если задано значение true, то приложению отказано в защите или исключении.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

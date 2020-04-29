@@ -35,7 +35,7 @@ ms.locfileid: "43468413"
 |binaryVersionLow|String|Нижняя двоичная версия.|
 |binaryVersionHigh|String|Верхняя двоичная версия.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

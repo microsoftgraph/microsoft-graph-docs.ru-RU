@@ -26,7 +26,7 @@ ms.locfileid: "43410074"
 |movieRating|[ратингфранцемовиестипе](../resources/intune-deviceconfig-ratingfrancemoviestype.md)|Оценка фильмов выбрана для Франции. Возможные значения: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
 |tvRating|[ратингфранцетелевисионтипе](../resources/intune-deviceconfig-ratingfrancetelevisiontype.md)|Рейтинг телевизора выбран для Франции. Возможные значения: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

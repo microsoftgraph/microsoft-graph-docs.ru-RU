@@ -34,7 +34,7 @@ ms.locfileid: "43472464"
 |windows10ProfessionalEducation|8 |Windows 10 профессиональная образование|
 |windows10ProfessionalEducationN|9 |Windows 10 профессиональная Едукатионн|
 |windows10ProfessionalWorkstation|10 |Windows 10 профессиональная для рабочих станций|
-|windows10ProfessionalWorkstationN|-11:00|Windows 10 профессиональная для рабочих станций N|
+|windows10ProfessionalWorkstationN|11 |Windows 10 профессиональная для рабочих станций N|
 
 
 

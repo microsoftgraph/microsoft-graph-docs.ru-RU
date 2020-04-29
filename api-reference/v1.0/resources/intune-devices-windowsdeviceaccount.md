@@ -25,7 +25,7 @@ ms.locfileid: "43406782"
 |:---|:---|:---|
 |password|Строка|Н/Д|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

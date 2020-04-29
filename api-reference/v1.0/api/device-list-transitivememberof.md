@@ -53,7 +53,7 @@ GET /devices/{id | userPrincipalName}/transitiveMemberOf
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика. 
 

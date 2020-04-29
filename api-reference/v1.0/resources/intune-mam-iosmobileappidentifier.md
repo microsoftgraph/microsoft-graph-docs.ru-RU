@@ -28,7 +28,7 @@ ms.locfileid: "43468564"
 |:---|:---|:---|
 |bundleId|String|Идентификатор приложения, указанный в магазине приложений.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

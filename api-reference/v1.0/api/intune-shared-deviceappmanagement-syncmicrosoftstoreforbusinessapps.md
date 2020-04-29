@@ -42,13 +42,13 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example-request"></a>Пример запроса
@@ -57,7 +57,7 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Объект Response, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 

@@ -31,9 +31,9 @@ ms.locfileid: "43443501"
 | conditions | [messageRulePredicates](messagerulepredicates.md) | Условия, выполнение которых активирует соответствующие действия для указанного правила. |
 | displayName | Строка | Отображаемое имя правила. |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Условия исключения для правила. |
-| hasError | Логический | Указывает, является ли правило ошибкой. Только для чтения. |
+| hasError | Boolean | Указывает, является ли правило ошибкой. Только для чтения. |
 | id |String|Уникальный идентификатор правила. Только для чтения.|
-| isEnabled | Логический | Указывает, включено ли применение правила к сообщениям. |
+| isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. |
 | isReadOnly | Boolean | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
 | sequence | Int32 | Определяет последовательность выполнения правила среди прочих правил. |
 
@@ -71,7 +71,7 @@ ms.locfileid: "43443501"
 |[Получение правила](../api/messagerule-get.md) | [messageRule](messagerule.md) |Считывает свойства и отношения объекта **messageRule**.|
 |[Создание](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Создает объект **messageRule**, определяя набор условий и действий.|
 |[Обновление](../api/messagerule-update.md) | [messageRule](messagerule.md) |Изменяет записываемые свойства объекта **messageRule** и сохраняет изменения. |
-|[Удаление](../api/messagerule-delete.md) | Нет |Удаляет указанный объект **messageRule**. |
+|[удаление](../api/messagerule-delete.md); | Нет |Удаляет указанный объект **messageRule**. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

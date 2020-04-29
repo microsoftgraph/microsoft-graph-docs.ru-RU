@@ -29,7 +29,7 @@ ms.locfileid: "43439371"
 |lowerAddress|String|Понижение адреса|
 |upperAddress|String|Верхний адрес|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

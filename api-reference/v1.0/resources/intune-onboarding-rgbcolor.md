@@ -27,7 +27,7 @@ ms.locfileid: "43441737"
 |g|Байт|Значение зеленого|
 |b|Байт|Значение синего|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

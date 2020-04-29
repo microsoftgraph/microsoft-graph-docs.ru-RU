@@ -29,7 +29,7 @@ ms.locfileid: "43451401"
 |activeHoursStart|TimeOfDay|Время начала периода активности|
 |activeHoursEnd|TimeOfDay|Время окончания периода активности|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

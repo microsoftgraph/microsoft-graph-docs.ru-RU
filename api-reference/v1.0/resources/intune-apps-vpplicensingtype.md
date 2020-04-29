@@ -23,10 +23,10 @@ ms.locfileid: "43439647"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|supportsUserLicensing|Логический|Указывает, поддерживает ли программа тип лицензирования пользователя.|
+|supportsUserLicensing|Boolean|Указывает, поддерживает ли программа тип лицензирования пользователя.|
 |supportsDeviceLicensing|Boolean|Указывает, поддерживает ли программа тип лицензирования устройства.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -28,7 +28,7 @@ ms.locfileid: "43468430"
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата восстановления данных|
 |certificate|Двоичный|Сертификат восстановления данных|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

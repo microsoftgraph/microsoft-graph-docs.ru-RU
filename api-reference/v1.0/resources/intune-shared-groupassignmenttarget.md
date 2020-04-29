@@ -28,7 +28,7 @@ ms.locfileid: "43445712"
 |:---|:---|:---|
 |groupId|String|Идентификатор группы-объекта назначения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -26,7 +26,7 @@ ms.locfileid: "43468399"
 |displayName|String|Отображаемое имя|
 |ranges|Коллекция объектов [ipRange](../resources/intune-mam-iprange.md)|Коллекция диапазонов адресов протокола Интернета|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

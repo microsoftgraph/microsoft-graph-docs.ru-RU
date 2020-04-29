@@ -26,7 +26,7 @@ ms.locfileid: "43468495"
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Развертывание приложения.|
 |configurationAppliedUserCount|Int32|Количество пользователей, к которым применяется политика.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

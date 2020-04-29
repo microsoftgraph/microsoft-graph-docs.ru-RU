@@ -30,7 +30,7 @@ ms.locfileid: "43445906"
 |domainName|String|Н/Д|
 |userName|String|Пока не задокументировано.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

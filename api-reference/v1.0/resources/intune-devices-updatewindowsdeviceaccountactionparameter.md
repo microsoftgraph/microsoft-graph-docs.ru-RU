@@ -30,7 +30,7 @@ ms.locfileid: "43439421"
 |exchangeServer|String|Пока не задокументировано.|
 |sessionInitiationProtocalAddress|String|Пока не задокументировано.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

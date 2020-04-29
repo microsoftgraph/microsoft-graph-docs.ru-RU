@@ -38,7 +38,7 @@ ms.locfileid: "43448969"
 |notificationTemplateId|String|Используемый шаблон сообщения уведомления|
 |notificationMessageCCList|Коллекция String|Список идентификаторов групп, которым будет отправлена копия этого сообщения уведомления.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

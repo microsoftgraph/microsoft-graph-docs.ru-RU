@@ -39,7 +39,7 @@ ms.locfileid: "43459584"
 |lastModifiedDateTime|DateTimeOffset|Н/Д|
 |version|Int32|Пока нет описания|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства.|

@@ -103,7 +103,7 @@ Content-length: 56
 
 
 ##### <a name="response"></a>Отклик
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

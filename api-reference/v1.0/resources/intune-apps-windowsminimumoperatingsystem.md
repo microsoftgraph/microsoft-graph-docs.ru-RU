@@ -23,11 +23,11 @@ ms.locfileid: "43439592"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|v8_0|Логический|Windows 8.0 или более поздней версии.|
+|v8_0|Boolean|Windows 8.0 или более поздней версии.|
 |v8_1|Boolean|Windows 8.1 или более поздней версии.|
 |v10_0|Boolean|Windows 10.0 или более поздней версии.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

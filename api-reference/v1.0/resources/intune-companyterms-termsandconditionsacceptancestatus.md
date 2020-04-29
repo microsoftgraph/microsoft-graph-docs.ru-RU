@@ -38,7 +38,7 @@ ms.locfileid: "43436820"
 |acceptedDateTime|DateTimeOffset|Дата и время последнего принятия условий пользователем.|
 |userPrincipalName|String|UserPrincipalName пользователя, который принял термин.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Ссылка для перехода к назначенным условиям.|

@@ -56,7 +56,7 @@ ms.locfileid: "43454006"
 |healthStatusMismatchInfo|String|Этот атрибут отображается, когда служба DHA обнаруживает ошибку целостности данных.|
 |healthAttestationSupportedStatus|String|Этот атрибут указывает, поддерживается ли DHA для устройства.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

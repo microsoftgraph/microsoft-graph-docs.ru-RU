@@ -36,7 +36,7 @@ ms.locfileid: "43451267"
 |eventDateTime|DateTimeOffset|Время возникновения события.|
 |correlationId|String|ИД, используемый для трассировки сбоя в службе.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

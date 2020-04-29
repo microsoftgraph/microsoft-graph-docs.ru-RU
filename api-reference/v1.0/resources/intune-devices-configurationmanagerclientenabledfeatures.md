@@ -23,14 +23,14 @@ ms.locfileid: "43451274"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|inventory|Логический|Управляет ли Intune данными инвентаризации|
-|modernApps|Логический|Управляет ли Intune современным приложением|
-|resourceAccess|Логический|Управляет ли Intune доступом к ресурсам|
-|deviceConfiguration|Логический|Управляет ли Intune конфигурацией устройства|
-|compliancePolicy|Логический|Управляется ли Intune политикой соответствия требованиям|
+|inventory|Boolean|Управляет ли Intune данными инвентаризации|
+|modernApps|Boolean|Управляет ли Intune современным приложением|
+|resourceAccess|Boolean|Управляет ли Intune доступом к ресурсам|
+|deviceConfiguration|Boolean|Управляет ли Intune конфигурацией устройства|
+|compliancePolicy|Boolean|Управляется ли Intune политикой соответствия требованиям|
 |windowsUpdateForBusiness|Boolean|Управляет ли Intune Центром обновления Windows для бизнеса|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

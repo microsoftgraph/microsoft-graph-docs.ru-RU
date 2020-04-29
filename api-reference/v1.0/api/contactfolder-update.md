@@ -46,7 +46,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 |displayName|String|Отображаемое имя папки.|
 |parentFolderId|String|Идентификатор родительской папки для папки.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [contactFolder](../resources/contactfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример

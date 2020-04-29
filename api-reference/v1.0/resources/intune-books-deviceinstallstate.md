@@ -42,7 +42,7 @@ ms.locfileid: "43468798"
 |osDescription|String|Описание ОС.|
 |userName|String|Имя пользователя устройства.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

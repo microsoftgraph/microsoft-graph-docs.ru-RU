@@ -36,7 +36,7 @@ ms.locfileid: "43441529"
 |url|String|URL-адрес веб-сайта|
 |deviceCount|Int32|Количество устройств|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
