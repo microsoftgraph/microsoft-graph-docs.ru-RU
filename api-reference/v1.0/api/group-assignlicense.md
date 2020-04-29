@@ -12,53 +12,53 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
 ms.locfileid: "43461496"
 ---
-# <a name="group-assignlicense"></a><span data-ttu-id="2c974-104">Группа: Ассигнлиценсе</span><span class="sxs-lookup"><span data-stu-id="2c974-104">group: assignLicense</span></span>
+# <a name="group-assignlicense"></a><span data-ttu-id="ce0f6-104">Группа: Ассигнлиценсе</span><span class="sxs-lookup"><span data-stu-id="ce0f6-104">group: assignLicense</span></span>
 
-<span data-ttu-id="2c974-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2c974-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ce0f6-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ce0f6-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="2c974-106">Добавление и удаление лицензий для группы.</span><span class="sxs-lookup"><span data-stu-id="2c974-106">Add or remove licenses on the group.</span></span> <span data-ttu-id="2c974-107">Лицензии, назначенные группе, будут назначены всем пользователям в группе.</span><span class="sxs-lookup"><span data-stu-id="2c974-107">Licenses assigned to the group will be assigned to all users in the group.</span></span> <span data-ttu-id="2c974-108">Чтобы узнать больше о лицензировании на основе групп, ознакомьтесь со статьей " [Лицензирование на основе групп" в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span><span class="sxs-lookup"><span data-stu-id="2c974-108">To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span></span>
+<span data-ttu-id="ce0f6-106">Добавление и удаление лицензий для группы.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-106">Add or remove licenses on the group.</span></span> <span data-ttu-id="ce0f6-107">Лицензии, назначенные группе, будут назначены всем пользователям в группе.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-107">Licenses assigned to the group will be assigned to all users in the group.</span></span> <span data-ttu-id="ce0f6-108">Чтобы узнать больше о лицензировании на основе групп, ознакомьтесь со статьей " [Лицензирование на основе групп" в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span><span class="sxs-lookup"><span data-stu-id="ce0f6-108">To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span></span>
 
-<span data-ttu-id="2c974-109">Чтобы получить доступ к подпискам в каталоге, выполните [запрос Get субскрибедскус](../resources/subscribedsku.md).</span><span class="sxs-lookup"><span data-stu-id="2c974-109">To get the subscriptions available in the directory, perform a [GET subscribedSkus request](../resources/subscribedsku.md).</span></span>
+<span data-ttu-id="ce0f6-109">Чтобы получить доступ к подпискам в каталоге, выполните [запрос Get субскрибедскус](../resources/subscribedsku.md).</span><span class="sxs-lookup"><span data-stu-id="ce0f6-109">To get the subscriptions available in the directory, perform a [GET subscribedSkus request](../resources/subscribedsku.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2c974-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2c974-110">Permissions</span></span>
-<span data-ttu-id="2c974-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2c974-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ce0f6-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ce0f6-110">Permissions</span></span>
+<span data-ttu-id="ce0f6-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ce0f6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2c974-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2c974-113">Permission type</span></span>      | <span data-ttu-id="2c974-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2c974-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ce0f6-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ce0f6-113">Permission type</span></span>      | <span data-ttu-id="ce0f6-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ce0f6-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2c974-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2c974-115">Delegated (work or school account)</span></span> | <span data-ttu-id="2c974-116">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2c974-116">Group.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2c974-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2c974-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2c974-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2c974-118">Not supported.</span></span>    |
-|<span data-ttu-id="2c974-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2c974-119">Application</span></span> | <span data-ttu-id="2c974-120">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2c974-120">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="ce0f6-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ce0f6-115">Delegated (work or school account)</span></span> | <span data-ttu-id="ce0f6-116">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce0f6-116">Group.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ce0f6-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ce0f6-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce0f6-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-118">Not supported.</span></span>    |
+|<span data-ttu-id="ce0f6-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ce0f6-119">Application</span></span> | <span data-ttu-id="ce0f6-120">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce0f6-120">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2c974-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2c974-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ce0f6-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ce0f6-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/assignLicense
 ```
-## <a name="request-headers"></a><span data-ttu-id="2c974-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2c974-122">Request headers</span></span>
-| <span data-ttu-id="2c974-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="2c974-123">Header</span></span>       | <span data-ttu-id="2c974-124">Значение</span><span class="sxs-lookup"><span data-stu-id="2c974-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="ce0f6-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ce0f6-122">Request headers</span></span>
+| <span data-ttu-id="ce0f6-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ce0f6-123">Header</span></span>       | <span data-ttu-id="ce0f6-124">Значение</span><span class="sxs-lookup"><span data-stu-id="ce0f6-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="2c974-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2c974-125">Authorization</span></span>  | <span data-ttu-id="2c974-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2c974-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="2c974-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2c974-128">Content-Type</span></span>  | <span data-ttu-id="2c974-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2c974-p105">application/json. Required.</span></span>  |
+| <span data-ttu-id="ce0f6-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ce0f6-125">Authorization</span></span>  | <span data-ttu-id="ce0f6-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="ce0f6-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ce0f6-128">Content-Type</span></span>  | <span data-ttu-id="ce0f6-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-p105">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="2c974-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2c974-131">Request body</span></span>
-<span data-ttu-id="2c974-132">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="2c974-132">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ce0f6-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ce0f6-131">Request body</span></span>
+<span data-ttu-id="ce0f6-132">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-132">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="2c974-133">Параметр</span><span class="sxs-lookup"><span data-stu-id="2c974-133">Parameter</span></span>    | <span data-ttu-id="2c974-134">Тип</span><span class="sxs-lookup"><span data-stu-id="2c974-134">Type</span></span>   |<span data-ttu-id="2c974-135">Описание</span><span class="sxs-lookup"><span data-stu-id="2c974-135">Description</span></span>|
+| <span data-ttu-id="ce0f6-133">Параметр</span><span class="sxs-lookup"><span data-stu-id="ce0f6-133">Parameter</span></span>    | <span data-ttu-id="ce0f6-134">Тип</span><span class="sxs-lookup"><span data-stu-id="ce0f6-134">Type</span></span>   |<span data-ttu-id="ce0f6-135">Описание</span><span class="sxs-lookup"><span data-stu-id="ce0f6-135">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2c974-136">addLicenses</span><span class="sxs-lookup"><span data-stu-id="2c974-136">addLicenses</span></span>|<span data-ttu-id="2c974-137">Коллекция [assignedLicense](../resources/assignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="2c974-137">[assignedLicense](../resources/assignedlicense.md) collection</span></span>|<span data-ttu-id="2c974-138">Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии.</span><span class="sxs-lookup"><span data-stu-id="2c974-138">A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add.</span></span> <span data-ttu-id="2c974-139">Вы можете отключить Сервицепланс, связанные с лицензией, задав свойство **дисабледпланс** для объекта [коллекция assignedlicense](../resources/assignedlicense.md) .</span><span class="sxs-lookup"><span data-stu-id="2c974-139">You can disable servicePlans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.</span></span>|
-|<span data-ttu-id="2c974-140">removeLicenses</span><span class="sxs-lookup"><span data-stu-id="2c974-140">removeLicenses</span></span>|<span data-ttu-id="2c974-141">Коллекция GUID</span><span class="sxs-lookup"><span data-stu-id="2c974-141">GUID collection</span></span>|<span data-ttu-id="2c974-142">Коллекция Скуидс, идентифицирующая лицензии, которые требуется удалить.</span><span class="sxs-lookup"><span data-stu-id="2c974-142">A collection of skuIds that identify the licenses to remove.</span></span>|
+|<span data-ttu-id="ce0f6-136">addLicenses</span><span class="sxs-lookup"><span data-stu-id="ce0f6-136">addLicenses</span></span>|<span data-ttu-id="ce0f6-137">Коллекция [assignedLicense](../resources/assignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="ce0f6-137">[assignedLicense](../resources/assignedlicense.md) collection</span></span>|<span data-ttu-id="ce0f6-138">Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-138">A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add.</span></span> <span data-ttu-id="ce0f6-139">Вы можете отключить Сервицепланс, связанные с лицензией, задав свойство **дисабледпланс** для объекта [коллекция assignedlicense](../resources/assignedlicense.md) .</span><span class="sxs-lookup"><span data-stu-id="ce0f6-139">You can disable servicePlans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.</span></span>|
+|<span data-ttu-id="ce0f6-140">removeLicenses</span><span class="sxs-lookup"><span data-stu-id="ce0f6-140">removeLicenses</span></span>|<span data-ttu-id="ce0f6-141">Коллекция GUID</span><span class="sxs-lookup"><span data-stu-id="ce0f6-141">GUID collection</span></span>|<span data-ttu-id="ce0f6-142">Коллекция Скуидс, идентифицирующая лицензии, которые требуется удалить.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-142">A collection of skuIds that identify the licenses to remove.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="2c974-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="2c974-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ce0f6-143">Ответ</span><span class="sxs-lookup"><span data-stu-id="ce0f6-143">Response</span></span>
 
-<span data-ttu-id="2c974-144">В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и целевой объект [Group](../resources/group.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2c974-144">If successful, this method returns a `202 Accepted` response code and a target [group](../resources/group.md) object in the response body.</span></span>
+<span data-ttu-id="ce0f6-144">В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и целевой объект [Group](../resources/group.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-144">If successful, this method returns a `202 Accepted` response code and a target [group](../resources/group.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2c974-145">Примеры</span><span class="sxs-lookup"><span data-stu-id="2c974-145">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ce0f6-145">Примеры</span><span class="sxs-lookup"><span data-stu-id="ce0f6-145">Examples</span></span>
 
-### <a name="example-1-add-licenses-to-the-group"></a><span data-ttu-id="2c974-146">Пример 1: Добавление лицензий в группу</span><span class="sxs-lookup"><span data-stu-id="2c974-146">Example 1: Add licenses to the group</span></span>
-<span data-ttu-id="2c974-147">В следующем примере в группу добавляются лицензии.</span><span class="sxs-lookup"><span data-stu-id="2c974-147">The following example adds licenses to the group.</span></span>
-#### <a name="request"></a><span data-ttu-id="2c974-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="2c974-148">Request</span></span>
+### <a name="example-1-add-licenses-to-the-group"></a><span data-ttu-id="ce0f6-146">Пример 1: Добавление лицензий в группу</span><span class="sxs-lookup"><span data-stu-id="ce0f6-146">Example 1: Add licenses to the group</span></span>
+<span data-ttu-id="ce0f6-147">В следующем примере в группу добавляются лицензии.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-147">The following example adds licenses to the group.</span></span>
+#### <a name="request"></a><span data-ttu-id="ce0f6-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="ce0f6-148">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2c974-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="2c974-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ce0f6-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="ce0f6-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_assignlicense"
@@ -82,30 +82,30 @@ Content-type: application/json
   "removeLicenses": []
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2c974-150">C#</span><span class="sxs-lookup"><span data-stu-id="2c974-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ce0f6-150">C#</span><span class="sxs-lookup"><span data-stu-id="ce0f6-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-assignlicense-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2c974-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2c974-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ce0f6-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ce0f6-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-assignlicense-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2c974-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2c974-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ce0f6-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ce0f6-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-assignlicense-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2c974-153">Java</span><span class="sxs-lookup"><span data-stu-id="2c974-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ce0f6-153">Java</span><span class="sxs-lookup"><span data-stu-id="ce0f6-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-assignlicense-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2c974-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="2c974-154">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ce0f6-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="ce0f6-154">Response</span></span>
 
-<span data-ttu-id="2c974-155">Отклик — обновленный объект Group.</span><span class="sxs-lookup"><span data-stu-id="2c974-155">The response is the updated group object.</span></span>
+<span data-ttu-id="ce0f6-155">Отклик — обновленный объект Group.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-155">The response is the updated group object.</span></span>
 
-><span data-ttu-id="2c974-156">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="2c974-156">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="2c974-157">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2c974-157">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="ce0f6-156">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-156">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ce0f6-157">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-157">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,12 +126,12 @@ location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/di
 }
 ```
 
-### <a name="example-2-remove-licenses-from-the-group"></a><span data-ttu-id="2c974-158">Пример 2: Удаление лицензий из группы</span><span class="sxs-lookup"><span data-stu-id="2c974-158">Example 2: Remove licenses from the group</span></span>
-<span data-ttu-id="2c974-159">В следующем примере удаляются лицензии из группы.</span><span class="sxs-lookup"><span data-stu-id="2c974-159">The following example removes licenses from the group.</span></span>
+### <a name="example-2-remove-licenses-from-the-group"></a><span data-ttu-id="ce0f6-158">Пример 2: Удаление лицензий из группы</span><span class="sxs-lookup"><span data-stu-id="ce0f6-158">Example 2: Remove licenses from the group</span></span>
+<span data-ttu-id="ce0f6-159">В следующем примере удаляются лицензии из группы.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-159">The following example removes licenses from the group.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2c974-160">Запрос</span><span class="sxs-lookup"><span data-stu-id="2c974-160">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ce0f6-160">Запрос</span><span class="sxs-lookup"><span data-stu-id="ce0f6-160">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2c974-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="2c974-161">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ce0f6-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="ce0f6-161">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_removelicense"
@@ -147,30 +147,30 @@ Content-type: application/json
   "removeLicenses": ["skuId-value-1", "skuId-value-2"]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2c974-162">C#</span><span class="sxs-lookup"><span data-stu-id="2c974-162">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ce0f6-162">C#</span><span class="sxs-lookup"><span data-stu-id="ce0f6-162">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-removelicense-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2c974-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2c974-163">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ce0f6-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ce0f6-163">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-removelicense-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2c974-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2c974-164">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ce0f6-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ce0f6-164">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-removelicense-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2c974-165">Java</span><span class="sxs-lookup"><span data-stu-id="2c974-165">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ce0f6-165">Java</span><span class="sxs-lookup"><span data-stu-id="ce0f6-165">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-removelicense-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2c974-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="2c974-166">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ce0f6-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="ce0f6-166">Response</span></span>
 
-<span data-ttu-id="2c974-167">Отклик — обновленный объект Group.</span><span class="sxs-lookup"><span data-stu-id="2c974-167">The response is the updated group object.</span></span>
+<span data-ttu-id="ce0f6-167">Отклик — обновленный объект Group.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-167">The response is the updated group object.</span></span>
 
-><span data-ttu-id="2c974-168">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="2c974-168">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="2c974-169">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2c974-169">All the properties will be returned from an actual call..</span></span>
+><span data-ttu-id="ce0f6-168">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-168">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ce0f6-169">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ce0f6-169">All the properties will be returned from an actual call..</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

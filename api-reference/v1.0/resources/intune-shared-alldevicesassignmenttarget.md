@@ -12,26 +12,26 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
 ms.locfileid: "43441552"
 ---
-# <a name="alldevicesassignmenttarget-resource-type"></a><span data-ttu-id="ef538-103">Тип ресурса allDevicesAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="ef538-103">allDevicesAssignmentTarget resource type</span></span>
+# <a name="alldevicesassignmenttarget-resource-type"></a><span data-ttu-id="ab839-103">Тип ресурса allDevicesAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="ab839-103">allDevicesAssignmentTarget resource type</span></span>
 
-<span data-ttu-id="ef538-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ef538-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ab839-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ab839-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ef538-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ef538-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ab839-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ab839-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ef538-106">Представляет ресурс, назначенный всем управляемым устройствам в клиенте.</span><span class="sxs-lookup"><span data-stu-id="ef538-106">Represents an assignment to all managed devices in the tenant.</span></span>
+<span data-ttu-id="ab839-106">Представляет ресурс, назначенный всем управляемым устройствам в клиенте.</span><span class="sxs-lookup"><span data-stu-id="ab839-106">Represents an assignment to all managed devices in the tenant.</span></span>
 
 
-<span data-ttu-id="ef538-107">Наследуется от ресурса [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="ef538-107">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>
+<span data-ttu-id="ab839-107">Наследуется от ресурса [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="ab839-107">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ef538-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="ef538-108">Properties</span></span>
-|<span data-ttu-id="ef538-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="ef538-109">Property</span></span>|<span data-ttu-id="ef538-110">Тип</span><span class="sxs-lookup"><span data-stu-id="ef538-110">Type</span></span>|<span data-ttu-id="ef538-111">Описание</span><span class="sxs-lookup"><span data-stu-id="ef538-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ab839-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="ab839-108">Properties</span></span>
+|<span data-ttu-id="ab839-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="ab839-109">Property</span></span>|<span data-ttu-id="ab839-110">Тип</span><span class="sxs-lookup"><span data-stu-id="ab839-110">Type</span></span>|<span data-ttu-id="ab839-111">Описание</span><span class="sxs-lookup"><span data-stu-id="ab839-111">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="ef538-112">Отношения</span><span class="sxs-lookup"><span data-stu-id="ef538-112">Relationships</span></span>
-<span data-ttu-id="ef538-113">Нет</span><span class="sxs-lookup"><span data-stu-id="ef538-113">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="ab839-112">Связи</span><span class="sxs-lookup"><span data-stu-id="ab839-112">Relationships</span></span>
+<span data-ttu-id="ab839-113">Нет</span><span class="sxs-lookup"><span data-stu-id="ab839-113">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ef538-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ef538-114">JSON Representation</span></span>
-<span data-ttu-id="ef538-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ef538-115">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ab839-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ab839-114">JSON Representation</span></span>
+<span data-ttu-id="ab839-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ab839-115">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"

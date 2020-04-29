@@ -12,24 +12,24 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
 ms.locfileid: "43461134"
 ---
-# <a name="delete-windowsinformationprotectionnetworklearningsummary"></a><span data-ttu-id="2f075-103">Удаление windowsInformationProtectionNetworkLearningSummary</span><span class="sxs-lookup"><span data-stu-id="2f075-103">Delete windowsInformationProtectionNetworkLearningSummary</span></span>
+# <a name="delete-windowsinformationprotectionnetworklearningsummary"></a><span data-ttu-id="42388-103">Удаление windowsInformationProtectionNetworkLearningSummary</span><span class="sxs-lookup"><span data-stu-id="42388-103">Delete windowsInformationProtectionNetworkLearningSummary</span></span>
 
-<span data-ttu-id="2f075-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2f075-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="42388-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="42388-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="2f075-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2f075-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="42388-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="42388-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2f075-106">Удаление объекта [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).</span><span class="sxs-lookup"><span data-stu-id="2f075-106">Deletes a [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).</span></span>
+<span data-ttu-id="42388-106">Удаление объекта [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).</span><span class="sxs-lookup"><span data-stu-id="42388-106">Deletes a [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2f075-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="2f075-107">Prerequisites</span></span>
-<span data-ttu-id="2f075-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2f075-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="42388-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="42388-107">Prerequisites</span></span>
+<span data-ttu-id="42388-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="42388-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2f075-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2f075-110">Permission type</span></span>|<span data-ttu-id="2f075-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="2f075-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="42388-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="42388-110">Permission type</span></span>|<span data-ttu-id="42388-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="42388-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2f075-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2f075-112">Delegated (work or school account)</span></span>|<span data-ttu-id="2f075-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f075-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="2f075-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2f075-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2f075-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2f075-115">Not supported.</span></span>|
-|<span data-ttu-id="2f075-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2f075-116">Application</span></span>|<span data-ttu-id="2f075-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2f075-117">Not supported.</span></span>|
+|<span data-ttu-id="42388-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="42388-112">Delegated (work or school account)</span></span>|<span data-ttu-id="42388-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="42388-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="42388-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="42388-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="42388-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="42388-115">Not supported.</span></span>|
+|<span data-ttu-id="42388-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="42388-116">Application</span></span>|<span data-ttu-id="42388-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="42388-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2f075-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2f075-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="42388-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="42388-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,28 +38,28 @@ ms.locfileid: "43461134"
 DELETE /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2f075-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="2f075-119">Request headers</span></span>
-|<span data-ttu-id="2f075-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="2f075-120">Header</span></span>|<span data-ttu-id="2f075-121">Значение</span><span class="sxs-lookup"><span data-stu-id="2f075-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="42388-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="42388-119">Request headers</span></span>
+|<span data-ttu-id="42388-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="42388-120">Header</span></span>|<span data-ttu-id="42388-121">Значение</span><span class="sxs-lookup"><span data-stu-id="42388-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2f075-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2f075-122">Authorization</span></span>|<span data-ttu-id="2f075-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2f075-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2f075-124">Accept</span><span class="sxs-lookup"><span data-stu-id="2f075-124">Accept</span></span>|<span data-ttu-id="2f075-125">application/json</span><span class="sxs-lookup"><span data-stu-id="2f075-125">application/json</span></span>|
+|<span data-ttu-id="42388-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="42388-122">Authorization</span></span>|<span data-ttu-id="42388-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="42388-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="42388-124">Accept</span><span class="sxs-lookup"><span data-stu-id="42388-124">Accept</span></span>|<span data-ttu-id="42388-125">application/json</span><span class="sxs-lookup"><span data-stu-id="42388-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2f075-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="2f075-126">Request body</span></span>
-<span data-ttu-id="2f075-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2f075-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="42388-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="42388-126">Request body</span></span>
+<span data-ttu-id="42388-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="42388-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2f075-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f075-128">Response</span></span>
-<span data-ttu-id="2f075-129">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="2f075-129">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="42388-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="42388-128">Response</span></span>
+<span data-ttu-id="42388-129">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="42388-129">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2f075-130">Пример</span><span class="sxs-lookup"><span data-stu-id="2f075-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="42388-130">Пример</span><span class="sxs-lookup"><span data-stu-id="42388-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2f075-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="2f075-131">Request</span></span>
-<span data-ttu-id="2f075-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2f075-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="42388-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="42388-131">Request</span></span>
+<span data-ttu-id="42388-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="42388-132">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}
 ```
 
-### <a name="response"></a><span data-ttu-id="2f075-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f075-133">Response</span></span>
-<span data-ttu-id="2f075-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2f075-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="42388-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="42388-133">Response</span></span>
+<span data-ttu-id="42388-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="42388-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

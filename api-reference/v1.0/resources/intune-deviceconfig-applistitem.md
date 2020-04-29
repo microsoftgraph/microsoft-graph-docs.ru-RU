@@ -12,27 +12,27 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/14/2020
 ms.locfileid: "43449164"
 ---
-# <a name="applistitem-resource-type"></a><span data-ttu-id="78bd1-103">Тип ресурса appListItem</span><span class="sxs-lookup"><span data-stu-id="78bd1-103">appListItem resource type</span></span>
+# <a name="applistitem-resource-type"></a><span data-ttu-id="d0b31-103">Тип ресурса appListItem</span><span class="sxs-lookup"><span data-stu-id="d0b31-103">appListItem resource type</span></span>
 
-<span data-ttu-id="78bd1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="78bd1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d0b31-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d0b31-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="78bd1-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="78bd1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d0b31-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d0b31-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="78bd1-106">Представляет приложение в списке управляемых приложений</span><span class="sxs-lookup"><span data-stu-id="78bd1-106">Represents an app in the list of managed applications</span></span>
+<span data-ttu-id="d0b31-106">Представляет приложение в списке управляемых приложений</span><span class="sxs-lookup"><span data-stu-id="d0b31-106">Represents an app in the list of managed applications</span></span>
 
-## <a name="properties"></a><span data-ttu-id="78bd1-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="78bd1-107">Properties</span></span>
-|<span data-ttu-id="78bd1-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="78bd1-108">Property</span></span>|<span data-ttu-id="78bd1-109">Тип</span><span class="sxs-lookup"><span data-stu-id="78bd1-109">Type</span></span>|<span data-ttu-id="78bd1-110">Описание</span><span class="sxs-lookup"><span data-stu-id="78bd1-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d0b31-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="d0b31-107">Properties</span></span>
+|<span data-ttu-id="d0b31-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="d0b31-108">Property</span></span>|<span data-ttu-id="d0b31-109">Тип</span><span class="sxs-lookup"><span data-stu-id="d0b31-109">Type</span></span>|<span data-ttu-id="d0b31-110">Описание</span><span class="sxs-lookup"><span data-stu-id="d0b31-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="78bd1-111">name</span><span class="sxs-lookup"><span data-stu-id="78bd1-111">name</span></span>|<span data-ttu-id="78bd1-112">Строка</span><span class="sxs-lookup"><span data-stu-id="78bd1-112">String</span></span>|<span data-ttu-id="78bd1-113">Имя приложения</span><span class="sxs-lookup"><span data-stu-id="78bd1-113">The application name</span></span>|
-|<span data-ttu-id="78bd1-114">publisher</span><span class="sxs-lookup"><span data-stu-id="78bd1-114">publisher</span></span>|<span data-ttu-id="78bd1-115">String</span><span class="sxs-lookup"><span data-stu-id="78bd1-115">String</span></span>|<span data-ttu-id="78bd1-116">Издатель приложения</span><span class="sxs-lookup"><span data-stu-id="78bd1-116">The publisher of the application</span></span>|
-|<span data-ttu-id="78bd1-117">appStoreUrl</span><span class="sxs-lookup"><span data-stu-id="78bd1-117">appStoreUrl</span></span>|<span data-ttu-id="78bd1-118">String</span><span class="sxs-lookup"><span data-stu-id="78bd1-118">String</span></span>|<span data-ttu-id="78bd1-119">URL-адрес приложения в Магазине</span><span class="sxs-lookup"><span data-stu-id="78bd1-119">The Store URL of the application</span></span>|
-|<span data-ttu-id="78bd1-120">appId</span><span class="sxs-lookup"><span data-stu-id="78bd1-120">appId</span></span>|<span data-ttu-id="78bd1-121">String</span><span class="sxs-lookup"><span data-stu-id="78bd1-121">String</span></span>|<span data-ttu-id="78bd1-122">Идентификатор приложения или его пакета</span><span class="sxs-lookup"><span data-stu-id="78bd1-122">The application or bundle identifier of the application</span></span>|
+|<span data-ttu-id="d0b31-111">name</span><span class="sxs-lookup"><span data-stu-id="d0b31-111">name</span></span>|<span data-ttu-id="d0b31-112">Строка</span><span class="sxs-lookup"><span data-stu-id="d0b31-112">String</span></span>|<span data-ttu-id="d0b31-113">Имя приложения</span><span class="sxs-lookup"><span data-stu-id="d0b31-113">The application name</span></span>|
+|<span data-ttu-id="d0b31-114">publisher</span><span class="sxs-lookup"><span data-stu-id="d0b31-114">publisher</span></span>|<span data-ttu-id="d0b31-115">String</span><span class="sxs-lookup"><span data-stu-id="d0b31-115">String</span></span>|<span data-ttu-id="d0b31-116">Издатель приложения</span><span class="sxs-lookup"><span data-stu-id="d0b31-116">The publisher of the application</span></span>|
+|<span data-ttu-id="d0b31-117">appStoreUrl</span><span class="sxs-lookup"><span data-stu-id="d0b31-117">appStoreUrl</span></span>|<span data-ttu-id="d0b31-118">String</span><span class="sxs-lookup"><span data-stu-id="d0b31-118">String</span></span>|<span data-ttu-id="d0b31-119">URL-адрес приложения в Магазине</span><span class="sxs-lookup"><span data-stu-id="d0b31-119">The Store URL of the application</span></span>|
+|<span data-ttu-id="d0b31-120">appId</span><span class="sxs-lookup"><span data-stu-id="d0b31-120">appId</span></span>|<span data-ttu-id="d0b31-121">String</span><span class="sxs-lookup"><span data-stu-id="d0b31-121">String</span></span>|<span data-ttu-id="d0b31-122">Идентификатор приложения или его пакета</span><span class="sxs-lookup"><span data-stu-id="d0b31-122">The application or bundle identifier of the application</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="78bd1-123">Отношения</span><span class="sxs-lookup"><span data-stu-id="78bd1-123">Relationships</span></span>
-<span data-ttu-id="78bd1-124">Нет</span><span class="sxs-lookup"><span data-stu-id="78bd1-124">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="d0b31-123">Связи</span><span class="sxs-lookup"><span data-stu-id="d0b31-123">Relationships</span></span>
+<span data-ttu-id="d0b31-124">Нет</span><span class="sxs-lookup"><span data-stu-id="d0b31-124">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="78bd1-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="78bd1-125">JSON Representation</span></span>
-<span data-ttu-id="78bd1-126">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="78bd1-126">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d0b31-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d0b31-125">JSON Representation</span></span>
+<span data-ttu-id="d0b31-126">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d0b31-126">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appListItem"
