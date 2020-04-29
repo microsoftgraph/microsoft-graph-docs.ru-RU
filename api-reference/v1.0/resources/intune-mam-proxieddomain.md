@@ -26,7 +26,7 @@ ms.locfileid: "43474105"
 |ipAddressOrFQDN|Строка|IP-адрес или полное доменное имя|
 |proxy|Строка|IP-адрес или полное доменное имя прокси|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

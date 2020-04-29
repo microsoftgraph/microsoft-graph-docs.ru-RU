@@ -32,7 +32,7 @@ ms.locfileid: "43473073"
 |fileName|String|Имя файла, связанное со свойством Value (CER,  | *. CRT | *. p7b | *. bin).|
 |value|Строка|Значение (строка в кодировке Base64).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

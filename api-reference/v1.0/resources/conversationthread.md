@@ -28,7 +28,7 @@ conversationThread — это коллекция экземпляров [post](p
 |[Создание цепочки](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Создание беседы путем создания цепочки. В группе создаются беседа, цепочка беседы и запись.|
 |[Получение conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Получение определенной цепочки, принадлежащей группе. |
 |[Обновление](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Обновление объекта conversationThread. |
-|[Удаление](../api/conversationthread-delete.md) | Нет |Удаление объекта conversationThread. |
+|[удаление](../api/conversationthread-delete.md); | Нет |Удаление объекта conversationThread. |
 |[Ответ](../api/conversationthread-reply.md)|Нет|Создание ответа для этой цепочки с помощью создания сущности Post.|
 |[Список сущностей Post](../api/conversationthread-list-posts.md) |Коллекция [post](post.md)| Получение записей для указанной цепочки. |
 
@@ -45,7 +45,7 @@ conversationThread — это коллекция экземпляров [post](p
 |preview|String|Краткая сводка из текста последней записи в этой беседе.|
 |isLocked|Boolean|Указывает, заблокирована ли цепочка.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |posts|Коллекция [post](post.md)| Только для чтения. Допускается значение null.|

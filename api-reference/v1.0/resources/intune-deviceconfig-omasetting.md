@@ -27,7 +27,7 @@ ms.locfileid: "43473080"
 |description|String|Описание.|
 |omaUri|String|OMA.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -28,7 +28,7 @@ ms.locfileid: "43474126"
 |:---|:---|:---|
 |packageId|String|Идентификатор приложения, указанный в магазине Google Play.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

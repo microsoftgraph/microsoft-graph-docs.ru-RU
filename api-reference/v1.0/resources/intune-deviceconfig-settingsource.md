@@ -26,7 +26,7 @@ ms.locfileid: "43472663"
 |id|String|Пока не задокументировано.|
 |displayName|Строка|Пока не задокументировано.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

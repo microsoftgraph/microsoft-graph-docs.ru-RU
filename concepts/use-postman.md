@@ -3,12 +3,12 @@ title: Использование Postman с API Microsoft Graph
 description: Используйте коллекцию Microsoft Graph Postman, чтобы начать работу с API Microsoft Graph в считанные минуты.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: e548fed509bcf26ce7c733354a5ab3c52ab551c1
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9ca41df4321426181589ab3dbab5a76c0c683aaa
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868487"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916888"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Использование Postman с API Microsoft Graph
 
@@ -22,30 +22,7 @@ ms.locfileid: "40868487"
 Доступ к коллекции в Postman можно получить двумя способами: путем ее использования или путем добавления в нее. Вначале вам потребуется запустить [Postman](https://www.getpostman.com/) на компьютере.
 
 ### <a name="consume-the-collection"></a>Использование коллекции
-Использование коллекции ⁠— самый простой способ начать работу с API Microsoft Graph. [Ссылка совместного доступа Postman](https://www.getpostman.com/collections/d89a737b5f0c0825898a) запустит Postman.
-
-Преимущество использования коллекции с общим доступом заключается в том, что новые запросы будут автоматически отображаться без каких-либо дополнительных действий с вашей стороны.
-
-После получения доступа к коллекции необходимо настроить переменные среды:
-
-1. Выберите **Файл | Импорт...**.
-2. Выберите **Импорт из ссылки**.
-3. Скопируйте и вставьте следующий URL-адрес, затем выберите **Импорт**.
- 
-    ```
-    https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json
-    ```
-
-В правой верхней части окна должна отобразиться **среда Microsoft Graph** в виде значка с изображением глаза. Теперь необходимо [настроить среду](#using-the-collection).
-
-### <a name="contribute-to-the-collection"></a>Добавление в коллекцию
-Если вы хотите добавить собственные запросы, вам потребуется создать вилку репозитория GitHub [коллекций Postman Microsoft Graph](https://github.com/microsoftgraph/microsoftgraph-postman-collections). 
-
-Дополнительные сведения о том, как это сделать, см. в следующем видео.
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/4tg-OBdv_8o]
-
-Чтобы импортировать коллекции Postman:
+Использование коллекции ⁠— самый простой способ начать работу с API Microsoft Graph. Чтобы импортировать коллекции Postman:
 
 1. Скачайте [Postman](https://www.getpostman.com/) и зарегистрируйтесь для его использования.
 2. Выберите **Файл | Импорт...**.
@@ -61,7 +38,7 @@ ms.locfileid: "40868487"
 
     ```
 
-Теперь в области **Коллекции** должна отобразиться коллекция **Microsoft Graph**.
+В правой верхней части окна должна отобразиться **среда Microsoft Graph** в виде значка с изображением глаза. Теперь необходимо [настроить среду](#using-the-collection).
 
 ## <a name="using-the-collection"></a>Использование коллекции
 После создания коллекции **Microsoft Graph** и **среды Microsoftr Graph** в Postman выполните указанные ниже действия.
@@ -105,3 +82,11 @@ ms.locfileid: "40868487"
 6. Скопируйте маркер доступа, откройте ваши переменные среды и вставьте его в поле **UserAccessToken** (Маркер доступа пользователя).
 
 Теперь все ваши запросы будут рабочими.
+
+
+### <a name="contribute-to-the-collection"></a>Добавление в коллекцию
+Если вы хотите добавить собственные запросы, вам потребуется создать вилку репозитория GitHub [коллекций Postman Microsoft Graph](https://github.com/microsoftgraph/microsoftgraph-postman-collections). 
+
+Дополнительные сведения о том, как это сделать, см. в следующем видео.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/4tg-OBdv_8o]

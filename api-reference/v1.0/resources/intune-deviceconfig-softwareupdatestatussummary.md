@@ -46,7 +46,7 @@ ms.locfileid: "43472566"
 |conflictUserCount|Int32|Количество конфликтующих пользователей.|
 |notApplicableUserCount|Int32|Количество неприменимых пользователей.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

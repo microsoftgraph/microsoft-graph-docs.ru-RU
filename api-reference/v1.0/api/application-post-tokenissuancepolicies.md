@@ -43,7 +43,7 @@ POST /applications/{id}/tokenIssuancePolicies/$ref
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В тексте запроса укажите идентификатор объекта [токениссуанцеполици](../resources/tokenissuancepolicy.md) (с помощью `@odata.id` свойства), который должен быть назначен приложению.
 
@@ -91,7 +91,7 @@ Content-Type: application/json
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 

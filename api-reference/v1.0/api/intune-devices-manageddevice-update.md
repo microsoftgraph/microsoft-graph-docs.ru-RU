@@ -43,7 +43,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -67,10 +67,10 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |jailBroken|String|Указывает, является ли устройство взломанным или рутованным.|
 |managementAgent|[манажементаженттипе](../resources/intune-devices-managementagenttype.md)|Канал управления устройством. Intune, EAS и т. д. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |osVersion|String|Версия операционной системы устройства.|
-|easActivated|Логический|Указывает, активировано ли устройство в Exchange ActiveSync.|
+|easActivated|Boolean|Указывает, активировано ли устройство в Exchange ActiveSync.|
 |easDeviceId|String|Идентификатор устройства в Exchange ActiveSync.|
 |easActivationDateTime|DateTimeOffset|Время активации устройства в Exchange ActivationSync.|
-|azureADRegistered|Логический|Указывает, зарегистрировано ли устройство в Azure Active Directory.|
+|azureADRegistered|Boolean|Указывает, зарегистрировано ли устройство в Azure Active Directory.|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Тип регистрации устройства. Возможные значения: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |activationLockBypassCode|String|Код, позволяющий обойти блокировку активации на устройстве.|
 |emailAddress|String|Адреса электронной почты пользователя, связанного с устройством|

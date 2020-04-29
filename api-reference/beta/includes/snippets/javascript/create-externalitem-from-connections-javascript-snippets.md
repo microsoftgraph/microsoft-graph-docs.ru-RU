@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 34ed1f0208deca5f0325f10297fea78b4b13629e
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 6bba7fad557ac49a141a0a45301fa42b39a5e163
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994574"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43935192"
 ---
 ```javascript
 
@@ -30,7 +30,10 @@ const externalItem = {
     priority: 1,
     assignee: "john@contoso.com"
   },
-  content: "Textual content of the file"
+  content: {
+    value: "<h1>Error in payment gateway</h1><p>Error details...</p>",
+    type: "html"
+  }
 };
 
 let res = await client.api('/connections/contosohr/items/TSP228082938')

@@ -59,7 +59,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 |:-------------|:------------|:------------|
 |role|[календарролетипе](../resources/calendarpermission.md#calendarroletype-values)| Уровень разрешений, на который изменяется общий доступ к календарю или представитель. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [календарпермиссион](../resources/calendarpermission.md) в тексте отклика.
 
