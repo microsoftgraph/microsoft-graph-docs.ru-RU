@@ -19,7 +19,7 @@ ms.locfileid: "42533099"
 Инкапсулирует свойства формата для ряда диаграммы.
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 Нет
 
 ## <a name="properties"></a>Свойства

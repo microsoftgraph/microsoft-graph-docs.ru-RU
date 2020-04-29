@@ -14,7 +14,7 @@ ms.locfileid: "42447369"
 ---
 # <a name="networkconnection-resource-type"></a>Тип ресурса networkConnection
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Содержит сведения о состоянии сетевого подключения, связанного с оповещением.
 

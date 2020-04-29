@@ -14,7 +14,7 @@ ms.locfileid: "42446685"
 ---
 # <a name="workinghours-resource-type"></a>Тип ресурса workingHours
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет дни недели и часы работы пользователя в определенном часовом поясе.
 

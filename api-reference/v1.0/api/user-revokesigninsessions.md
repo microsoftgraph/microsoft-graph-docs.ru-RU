@@ -46,7 +46,7 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В этой операции нет содержимого запроса.
 
 ## <a name="response"></a>Отклик

@@ -14,7 +14,7 @@ ms.locfileid: "42447033"
 ---
 # <a name="provisionedplan-resource-type"></a>Тип ресурса provisionedPlan
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Свойство **provisionedPlans** объектов [user](user.md) и [organization](organization.md) представляет собой коллекцию объектов **provisionedPlan**.
 

@@ -14,7 +14,7 @@ ms.locfileid: "42447180"
 ---
 # <a name="physicaladdress-resource-type"></a>Тип ресурса physicalAddress
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет почтовый адрес ресурса, например контакта или события.
 

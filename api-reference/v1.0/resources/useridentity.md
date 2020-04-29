@@ -14,7 +14,7 @@ ms.locfileid: "42446795"
 ---
 # <a name="useridentity-resource-type"></a>Тип ресурса userIdentity
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 В контексте журнала аудита Azure AD — это сведения о пользователях, которые были инициированы или затронуты действием аудита.
 

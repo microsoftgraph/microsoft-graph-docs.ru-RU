@@ -27,7 +27,7 @@ ms.locfileid: "42962551"
 | resultInfo          | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения.                                                 |
 | status              | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`.               |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

@@ -14,7 +14,7 @@ ms.locfileid: "42447579"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>Тип ресурса licenseUnitsDetail
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Свойство **prepaidUnits** объекта [subscribedSku](subscribedsku.md) относится к типу **licenseUnitsDetail**.
 

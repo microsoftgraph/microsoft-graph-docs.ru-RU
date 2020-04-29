@@ -40,7 +40,7 @@ PUT /users/{id}/manager/$ref
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тексте запроса добавьте представление объекта [directoryObject](../resources/directoryobject.md), [пользователя](../resources/user.md)или [контакта Организации](../resources/orgcontact.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

@@ -14,7 +14,7 @@ ms.locfileid: "42447453"
 ---
 # <a name="mediainfo-resource-type"></a>Тип ресурса Медиаинфо
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Сведения о мультимедиа, используемые в действиях для запросов.
 

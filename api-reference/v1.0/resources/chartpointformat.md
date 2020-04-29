@@ -19,7 +19,7 @@ ms.locfileid: "42533104"
 Представляет объект форматирования для точек диаграммы.
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 Нет
 
 ## <a name="properties"></a>Свойства

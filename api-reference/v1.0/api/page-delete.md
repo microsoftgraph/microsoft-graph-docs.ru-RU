@@ -73,7 +73,7 @@ DELETE https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

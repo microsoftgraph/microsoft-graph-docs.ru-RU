@@ -14,7 +14,7 @@ ms.locfileid: "42447425"
 ---
 # <a name="meetinginfo-resource-type"></a>Тип ресурса Митингинфо
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Это абстрактный класс, который содержит сведения о собрании.
  

@@ -14,7 +14,7 @@ ms.locfileid: "42447593"
 ---
 # <a name="licensedetails-resource-type"></a>Тип ресурса licenseDetails
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Содержит сведения о лицензии, назначенной пользователю.
 

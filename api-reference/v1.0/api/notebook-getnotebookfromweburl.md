@@ -48,7 +48,7 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 |:-------------|:------------|:------------|
 | `webUrl`     |`String`     | Путь URL-адреса извлекаемой записной книжки. Он также может содержать префикс "OneNote:".|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Notebook](../resources/notebook.md) в теле отклика.
 ## <a name="example"></a>Пример

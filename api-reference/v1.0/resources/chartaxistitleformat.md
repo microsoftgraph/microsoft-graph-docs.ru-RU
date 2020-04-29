@@ -19,7 +19,7 @@ ms.locfileid: "42531884"
 Представляет форматирование для названий осей диаграммы.
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 Нет
 
 ## <a name="properties"></a>Свойства

@@ -46,7 +46,7 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
 |:---------------|:--------|:----------|
 |isLocked|Логическое|Указывает, заблокирована ли цепочка. Чтобы запретить добавление сообщений, задайте значение `true`.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [conversationThread](../resources/conversationthread.md) в тексте отклика.
 ## <a name="example"></a>Пример

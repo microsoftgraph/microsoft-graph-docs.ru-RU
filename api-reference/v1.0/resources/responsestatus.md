@@ -14,7 +14,7 @@ ms.locfileid: "42446970"
 ---
 # <a name="responsestatus-resource-type"></a>Тип ресурса responseStatus
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Состояние ответа к приглашению на собрание.
 

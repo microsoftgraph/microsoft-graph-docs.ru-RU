@@ -14,7 +14,7 @@ ms.locfileid: "42447285"
 ---
 # <a name="operationerror-resource-type"></a>Тип ресурса Оператионеррор
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 
 

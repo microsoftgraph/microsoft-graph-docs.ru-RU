@@ -47,7 +47,7 @@ POST /communications/calls
 ## <a name="request-body"></a>Основной текст запроса
 В тексте запроса добавьте представление объекта [Call](../resources/call.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Call](../resources/call.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры

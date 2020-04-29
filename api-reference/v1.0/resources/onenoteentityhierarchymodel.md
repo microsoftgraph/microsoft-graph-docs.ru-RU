@@ -14,7 +14,7 @@ ms.locfileid: "42447439"
 ---
 # <a name="onenoteentityhierarchymodel-resource"></a>ресурс Оненотинтитихиерарчимодел
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Это базовый тип для объектов OneNote.
 

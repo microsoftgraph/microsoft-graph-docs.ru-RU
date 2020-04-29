@@ -38,7 +38,7 @@ POST /planner/buckets
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Включите в текст запроса описание объекта [plannerBucket](../resources/plannerbucket.md) в формате JSON.
 
 ## <a name="response"></a>Ответ
@@ -86,7 +86,7 @@ Content-length: 92
 ---
 
 Включите в текст запроса описание объекта [plannerBucket](../resources/plannerbucket.md) в формате JSON.
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

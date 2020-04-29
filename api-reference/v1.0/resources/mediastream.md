@@ -14,7 +14,7 @@ ms.locfileid: "42447432"
 ---
 # <a name="mediastream-resource-type"></a>Тип ресурса Медиастреам
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Содержит сведения о канале мультимедиа.
 
@@ -25,7 +25,7 @@ ms.locfileid: "42447432"
 | direction   | String  | Направление. `inactive`Возможные значения: `sendOnly`,, `receiveOnly`,. `sendReceive`                  |
 | label       | String  | Метка потока мультимедиа.                                                                                       |
 | mediaType   | String  | Тип мультимедиа. Возможные `unknown`значения:, `audio` `video`,, `videoBasedScreenSharing`,. `data`        |
-| сервермутед | Логический | Если сервер отключен на носителе.                                                                          |
+| сервермутед | Boolean | Если сервер отключен на носителе.                                                                          |
 | Идентификатор    | String  | Идентификатор источника.                                                                                                |
 
 ## <a name="json-representation"></a>Представление JSON

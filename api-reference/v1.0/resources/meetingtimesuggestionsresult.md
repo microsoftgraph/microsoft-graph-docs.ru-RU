@@ -14,7 +14,7 @@ ms.locfileid: "42447411"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>Тип ресурса meetingTimeSuggestionsResult
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Коллекция предложений (если они есть) или причина их отсутствия.
 

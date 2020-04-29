@@ -22,7 +22,7 @@ ms.locfileid: "42531510"
 
 | Метод                                                   | Возвращаемый тип                                    | Описание                                                                                 |
 | :------------------------------------------------------- | :--------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| [Получение](../api/educationschool-get.md)                     | [educationSchool](educationschool.md)          | Считывание свойств и отношений объекта **educationSchool**.                         |
+| [получение](../api/educationschool-get.md);                     | [educationSchool](educationschool.md)          | Считывание свойств и отношений объекта **educationSchool**.                         |
 | [Добавление класса](../api/educationschool-post-classes.md)      | [educationClass](educationclass.md)            | Добавление нового объекта **educationClass** в учебное заведение через публикацию в свойстве навигации classes.  |
 | [Перечисление классов](../api/educationschool-list-classes.md)   | Коллекция [educationClass](educationclass.md) | Получение коллекции объектов **educationClass**.                                               |
 | [Удаление класса](../api/educationschool-delete-classes.md) | [educationClass](educationclass.md)            | Удаление **educationClass** из учебного заведения через свойство навигации classes.       |
@@ -30,23 +30,23 @@ ms.locfileid: "42531510"
 | [Перечисление пользователей](../api/educationschool-list-users.md)       | Коллекция [educationUser](educationuser.md)   | Получение коллекции объектов **educationUser**.                                                |
 | [Удаление пользователя](../api/educationschool-delete-users.md)    | [educationUser](educationuser.md)              | Удаление **educationUser** из учебного заведения через свойство навигации **users**.      |
 | [Обновление](../api/educationschool-update.md)               | [educationSchool](educationschool.md)          | Обновление объекта **educationSchool**.                                                       |
-| [Удаление](../api/educationschool-delete.md)               | Нет                                           | Удаление объекта **educationSchool**.                                                       |
+| [удаление](../api/educationschool-delete.md);               | Нет                                           | Удаление объекта **educationSchool**.                                                       |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип                                  | Описание                                                                        |
 | :------------------ | :------------------------------------ | :--------------------------------------------------------------------------------- |
-| id                  | Строка                                | GUID этого учебного заведения.                                                               |
+| id                  | String                                | GUID этого учебного заведения.                                                               |
 | displayName         | Строка                                | Отображаемое имя учебного заведения.                                                        |
 | description         | Строка                                | Описание учебного заведения.                                                         |
 | status              | string                                | Только для чтения. Допустимые значения: `inactive`, `active`, `expired`, `deleteable`. |
 | externalSource      | едукатионекстерналсаурце               | Только для чтения.  Допустимые значения: `sis`, `manual`, `unknownFutureValue`.        |
-| principalEmail      | Строка                                | Адрес электронной почты директора.                                                    |
-| principalName       | Строка                                | Имя директора.                                                             |
-| externalPrincipalId | Строка                                | Идентификатор директора в системе синхронизации.                                                 |
-| highestGrade        | Строка                                | Самый старший класс.                                                              |
-| lowestGrade         | Строка                                | Самый младший класс.                                                               |
-| schoolNumber        | Строка                                | Номер школы.                                                                     |
+| principalEmail      | String                                | Адрес электронной почты директора.                                                    |
+| principalName       | String                                | Имя директора.                                                             |
+| externalPrincipalId | String                                | Идентификатор директора в системе синхронизации.                                                 |
+| highestGrade        | String                                | Самый старший класс.                                                              |
+| lowestGrade         | String                                | Самый младший класс.                                                               |
+| schoolNumber        | String                                | Номер школы.                                                                     |
 | externalId          | String                                | Идентификатор учебного заведения в системе синхронизации.                                                    |
 | phone               | String                                | Номер телефона учебного заведения.                                                            |
 | address             | [physicalAddress](physicaladdress.md) | Адрес учебного заведения.                                                             |

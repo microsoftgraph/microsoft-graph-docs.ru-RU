@@ -14,7 +14,7 @@ ms.locfileid: "42447110"
 ---
 # <a name="plannerplandetails-resource-type"></a>Тип ресурса plannerPlanDetails
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 
 Ресурс **plannerPlanDetails** представляет дополнительные сведения о плане. Каждый объект [Plan](plannerplan.md) содержит объект Details.

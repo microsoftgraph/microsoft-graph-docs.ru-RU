@@ -14,7 +14,7 @@ ms.locfileid: "42446928"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Ответы на ошибки API безопасности Microsoft Graph
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Ошибки в API безопасности Microsoft Graph возвращаются с помощью стандартного кода состояния частичного содержимого HTTP 206 и доставляются с помощью заголовка предупреждения.
 

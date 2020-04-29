@@ -53,7 +53,7 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 |:---------------|:--------|:----------|
 |classifyAs|string| Указывает, как должны классифицироваться все входящие сообщения от определенного отправителя. Возможные значения: `focused`, `other`.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) в тексте отклика.
 ## <a name="example"></a>Пример

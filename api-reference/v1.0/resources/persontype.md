@@ -14,7 +14,7 @@ ms.locfileid: "42447194"
 ---
 # <a name="persontype-resource-type"></a>тип ресурса personType
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет тип пользователя.
 

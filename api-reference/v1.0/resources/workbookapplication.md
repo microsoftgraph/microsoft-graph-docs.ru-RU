@@ -14,7 +14,7 @@ ms.locfileid: "42446725"
 ---
 # <a name="workbookapplication-resource-type"></a>Тип ресурса Воркбукаппликатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет приложение Excel, которое управляет книгой.
 

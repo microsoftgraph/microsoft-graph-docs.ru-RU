@@ -41,9 +41,9 @@ POST /shares/{encoded-sharing-url}/permission/grant
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Authorization | Носитель \{токен\}. Обязательно. |
+| Авторизация | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -65,7 +65,7 @@ POST /shares/{encoded-sharing-url}/permission/grant
 
 Список доступных ролей приведен в разделе [значения свойств Roles](../resources/permission.md#roles-property-values).
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию [разрешений][] в тексте отклика.
 

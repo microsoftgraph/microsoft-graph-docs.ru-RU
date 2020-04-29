@@ -47,14 +47,14 @@ PUT /appCatalogs/teamsApps/{id}
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type  | приложение/ZIP-индекс |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Полезные данные манифеста ZIP для teams: в ZIP-файле приложения Teams [см. Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package)
 
 >**Примечание:** Используйте идентификатор, возвращенный при вызове [списка опубликованных приложений](./teamsapp-list.md) , для ссылки на приложение, которое вы хотите обновить.
 Не используйте идентификатор из манифеста пакета приложения ZIP.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 ```
 HTTP/1.1 204 No Content

@@ -38,7 +38,7 @@ ms.locfileid: "42511742"
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса укажите представление ресурса [списка][], который необходимо создать, в формате JSON.
 

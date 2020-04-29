@@ -14,7 +14,7 @@ ms.locfileid: "42446991"
 ---
 # <a name="reminder-resource-type"></a>Тип ресурса reminder
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Напоминание о [событии](event.md) в [календаре](calendar.md)пользователя.
 

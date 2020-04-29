@@ -22,7 +22,7 @@ ms.locfileid: "42532030"
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|бы|Строка|Тип области. Допустимые значения: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
+|бы|String|Тип области. Допустимые значения: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
 |аверажескоре|Двойное с плавающей точкой|Средняя оценка в указанном базисе.|
 
 ## <a name="json-representation"></a>Представление JSON

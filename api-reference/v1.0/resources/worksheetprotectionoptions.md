@@ -14,7 +14,7 @@ ms.locfileid: "42446662"
 ---
 # <a name="worksheetprotectionoptions-resource-type"></a>Тип ресурса WorksheetProtectionOptions
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет параметры защиты листа.
 

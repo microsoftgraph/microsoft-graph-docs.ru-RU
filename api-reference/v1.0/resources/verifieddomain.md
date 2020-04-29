@@ -14,7 +14,7 @@ ms.locfileid: "42446774"
 ---
 # <a name="verifieddomain-resource-type"></a>Тип ресурса verifiedDomain
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Задает домен клиента. Свойство **verifiedDomains** объекта [organization](organization.md) представляет собой коллекцию объектов **VerifiedDomain**.
 
@@ -23,7 +23,7 @@ ms.locfileid: "42446774"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |capabilities|String|Примеры: “Email”, “OfficeCommunicationsOnline”.|
-|isDefault|Логический|                Значение **true** указывает, что это связанный с клиентом домен по умолчанию. В противном случае используется значение **false**.            |
+|isDefault|Boolean|                Значение **true** указывает, что это связанный с клиентом домен по умолчанию. В противном случае используется значение **false**.            |
 |при инициализации|Boolean|Значение **true** указывает, что это первоначальный домен, связанный с клиентом. В противном случае используется значение **false**.|
 |name|String|Доменное имя, например "contoso.onmicrosoft.com"|
 |type|String|Пример: "Managed".|

@@ -32,7 +32,7 @@ ms.locfileid: "43368314"
 |heading|Двойное с плавающей точкой|Направление от географического севера (градусов)|
 |speed|Double|Скорость передвижения устройства (м/с)|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

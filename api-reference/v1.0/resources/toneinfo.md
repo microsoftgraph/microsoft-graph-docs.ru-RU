@@ -14,7 +14,7 @@ ms.locfileid: "42446802"
 ---
 # <a name="toneinfo-resource-type"></a>Тип ресурса Тонеинфо
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Одно событие DTMF.
 

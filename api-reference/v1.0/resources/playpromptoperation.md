@@ -14,7 +14,7 @@ ms.locfileid: "42447089"
 ---
 # <a name="playpromptoperation-resource-type"></a>Тип ресурса Плайпромптоператион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Операция Плайпромпт для получения результата действия Плайпромпт.
 

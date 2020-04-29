@@ -49,7 +49,7 @@ PATCH /organization/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|Коллекция строк|                                        **Примечание.** Значение NULL не допускается.            |
+|marketingNotificationEmails|Коллекция объектов string|                                        **Примечание.** Значение NULL не допускается.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|Профиль конфиденциальности организации (заданные свойства statementUrl и contactEmail).            |
 |securityComplianceNotificationMails|Коллекция String||
 |securityComplianceNotificationPhones|Коллекция String||

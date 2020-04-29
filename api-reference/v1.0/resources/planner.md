@@ -25,7 +25,7 @@ ms.locfileid: "42534037"
 |:---------------|:--------|:----------|
 |[Создание объекта plannerBucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md);| Создание нового **plannerBucket** путем публикации в коллекции "сегменты".|
 |[Создание объекта plannerPlan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| Создание нового **plannerPlan** путем публикации в коллекции plans.|
-|[Создание объекта plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md)| Создание нового **plannerTask** путем публикации в коллекции Tasks.|
+|[Создание объекта plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md);| Создание нового **plannerTask** путем публикации в коллекции Tasks.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|

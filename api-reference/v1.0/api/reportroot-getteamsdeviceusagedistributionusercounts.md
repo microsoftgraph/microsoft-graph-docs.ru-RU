@@ -67,7 +67,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "iOS";
 - "Mac";
 - "Windows";
-- Report Period (Отчетный период).
+- "Report Period" (Отчетный период).
 
 ## <a name="example"></a>Пример
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageDistributionUser
 ```
 
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 

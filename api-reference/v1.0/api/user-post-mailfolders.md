@@ -38,12 +38,12 @@ POST /users/{id | userPrincipalName}/mailFolders
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Предоставьте в тексте запроса объект JSON с указанными ниже параметрами. **displayName** — это единственное доступное для записи свойство объекта [MailFolder](../resources/mailfolder.md).
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка|Отображаемое имя новой папки.|
+|displayName|String|Отображаемое имя новой папки.|
 
 ## <a name="response"></a>Ответ
 

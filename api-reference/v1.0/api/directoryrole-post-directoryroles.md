@@ -39,7 +39,7 @@ POST /directoryRoles
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | string  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса укажите описание объекта [directoryRole](../resources/directoryrole.md) в формате JSON.
 
 В приведенной ниже таблице показаны обязательные свойства при активации роли каталога.

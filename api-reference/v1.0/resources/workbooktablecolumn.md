@@ -29,7 +29,7 @@ ms.locfileid: "42533375"
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|Получает объект диапазона, связанный со строкой заголовков столбца.|
 |[Range](../api/tablecolumn-range.md)|[Range](range.md)|Получает объект диапазона, связанный со всем столбцом.|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|Получает объект диапазона, связанный со строкой итогов столбца.|
-|[Удаление](../api/tablecolumn-delete.md)|Нет|Удаляет столбец из таблицы.|
+|[удаление](../api/tablecolumn-delete.md);|Нет|Удаляет столбец из таблицы.|
 |[Список](../api/tablecolumn-list.md) | Коллекция [WorkbookTableColumn](workbooktablecolumn.md) |Получение коллекции объектов tableColumn. |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[WorkbookTableColumn](workbooktablecolumn.md)|Возвращает столбец на основании его позиции в коллекции.|
 |[Add](../api/tablecolumncollection-add.md)|[WorkbookTableColumn](workbooktablecolumn.md)|Добавляет новый столбец в таблицу.|

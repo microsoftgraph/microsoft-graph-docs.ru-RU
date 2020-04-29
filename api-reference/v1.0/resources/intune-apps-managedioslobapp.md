@@ -61,7 +61,7 @@ ms.locfileid: "43382475"
 |versionNumber|String|Номер версии управляемого бизнес-приложения для iOS.|
 |buildNumber|String|Номер сборки управляемого бизнес-приложения для iOS.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|

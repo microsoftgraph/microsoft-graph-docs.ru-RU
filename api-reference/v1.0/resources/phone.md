@@ -14,7 +14,7 @@ ms.locfileid: "42447187"
 ---
 # <a name="phone-resource-type"></a>Тип ресурса Phone
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет номер телефона.
 
@@ -22,7 +22,7 @@ ms.locfileid: "42447187"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|число|строка|Номер телефона.|
+|число|string|Номер телефона.|
 |type|фонетипе|Тип номера телефона. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="json-representation"></a>Представление JSON

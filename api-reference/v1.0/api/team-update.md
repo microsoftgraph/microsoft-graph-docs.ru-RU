@@ -44,7 +44,7 @@ PATCH /teams/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [группы](../resources/team.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

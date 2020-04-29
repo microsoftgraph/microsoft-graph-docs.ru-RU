@@ -14,7 +14,7 @@ ms.locfileid: "42446732"
 ---
 # <a name="workbookcommentreply-resource-type"></a>Тип ресурса Воркбуккомментрепли
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет ответ на комментарий Excel.
 

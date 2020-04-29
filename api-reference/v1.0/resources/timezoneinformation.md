@@ -14,7 +14,7 @@ ms.locfileid: "42446809"
 ---
 # <a name="timezoneinformation-resource-type"></a>Тип ресурса timeZoneInformation
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 
 Представляет часовой пояс. Поддерживаются формат Windows и формат [часового пояса IANA](https://www.iana.org/time-zones), также известного как часовой пояс Олсона (после устранения известной проблемы).

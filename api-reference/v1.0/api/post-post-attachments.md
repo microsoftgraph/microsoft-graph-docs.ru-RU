@@ -50,7 +50,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите объект JSON, включающий параметр **POST** .
 
 | Параметр    | Тип   |Описание|
@@ -163,7 +163,7 @@ Content-type: application/json
 ```
 
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

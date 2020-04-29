@@ -16,7 +16,7 @@ ms.locfileid: "42446949"
 ---
 # <a name="searchresult-resource-type"></a>Тип ресурса SearchResult
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Ресурс **SearchResult** указывает, что элемент представляет собой отклик на поисковый запрос.
 

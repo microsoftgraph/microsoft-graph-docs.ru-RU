@@ -41,7 +41,7 @@ PATCH /groups/{id}/settings/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание |
 |:-----------|:-----------|
-| Authorization  | {Token}. Обязательно. |
+| Авторизация  | {Token}. Обязательно. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса

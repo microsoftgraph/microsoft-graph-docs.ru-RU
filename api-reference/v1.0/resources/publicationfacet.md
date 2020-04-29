@@ -14,7 +14,7 @@ ms.locfileid: "42447040"
 ---
 # <a name="publicationfacet-resource-type"></a>Тип ресурса publicationFacet
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Ресурс **publicationFacet** содержит сведения о состоянии публикации ресурса [driveItemVersion](driveitemversion.md) или [driveItem](driveitem.md).
 

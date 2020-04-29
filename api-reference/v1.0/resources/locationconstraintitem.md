@@ -14,7 +14,7 @@ ms.locfileid: "42447530"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Тип ресурсов locationConstraintItem
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Условия, заданные клиентом в отношении расположения для проведения собрания.
 

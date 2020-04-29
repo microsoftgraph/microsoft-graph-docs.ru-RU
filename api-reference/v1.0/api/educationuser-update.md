@@ -44,10 +44,10 @@ PATCH /education/users/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |displayName| Строка| Отображаемое имя пользователя|
-|givenName| Строка | Имя |
+|givenName| String | Имя |
 |middleName| String | Отчество пользователя|
-|surname| Строка | Фамилия пользователя|
-|mail| Строка| Электронный адрес|
+|surname| String | Фамилия пользователя|
+|mail| String| Электронный адрес|
 |mobilePhone| String | Номер мобильного телефона пользователя |
 |externalSource|string| Допустимые значения: `sis`, `manual`, `enum_sentinel`.|
 |externalSource|string| Источник для создания пользователя.  Допустимые значения: `sis`, `manual`, `enum_sentinel`.|

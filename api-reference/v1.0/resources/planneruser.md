@@ -14,7 +14,7 @@ ms.locfileid: "42447096"
 ---
 # <a name="planneruser-resource-type"></a>Тип ресурса plannerUser
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Ресурс **plannerUser** предоставляет доступ к ресурсам планировщика для [пользователя](user.md). Он не содержит пригодных для использования свойств.
 

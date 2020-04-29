@@ -14,7 +14,7 @@ ms.locfileid: "42446977"
 ---
 # <a name="onenoteresource-resource-type"></a>Тип ресурса Оненотересаурце
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Изображение или другой файловый ресурс на странице OneNote. 
 

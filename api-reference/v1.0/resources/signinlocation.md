@@ -14,7 +14,7 @@ ms.locfileid: "42446858"
 ---
 # <a name="signinlocation-resource-type"></a>Тип ресурса signInLocation
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Предоставляет город, область и страну или регион, из которых выполняется вход.
 

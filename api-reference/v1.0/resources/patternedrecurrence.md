@@ -14,7 +14,7 @@ ms.locfileid: "42447229"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Тип ресурса patternedRecurrence
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Расписание и диапазон повторения.
 

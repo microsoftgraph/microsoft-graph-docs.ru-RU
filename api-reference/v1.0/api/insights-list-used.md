@@ -49,7 +49,7 @@ GET /users/{id | userPrincipalName}/insights/used/{id}/resource
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
 
 С помощью параметра `$filter` запроса можно отфильтровать используемые элементы. Например, на основе **типа**:
 
@@ -68,7 +68,7 @@ GET /users/{id | userPrincipalName}/insights/used/{id}/resource
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

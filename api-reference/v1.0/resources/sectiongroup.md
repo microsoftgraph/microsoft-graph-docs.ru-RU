@@ -14,7 +14,7 @@ ms.locfileid: "42446942"
 ---
 # <a name="sectiongroup-resource-type"></a>Тип ресурса sectionGroup
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Группа разделов в записной книжке OneNote. Группы разделов могут содержать разделы и группы разделов.
 

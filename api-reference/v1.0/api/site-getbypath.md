@@ -52,7 +52,7 @@ ms.locfileid: "42509789"
 GET /sites/{hostname}:/{relative-path}
 ```
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Этот метод возвращает ресурс [site][] для сайта, для ссылки на который используется уникальный идентификатор.
 

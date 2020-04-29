@@ -42,7 +42,7 @@ GET /groups/{id}/onenote/operations/{id}
 GET /sites/{id}/onenote/operations/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Отсутствуют.
+Нет.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|

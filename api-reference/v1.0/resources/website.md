@@ -14,7 +14,7 @@ ms.locfileid: "42446739"
 ---
 # <a name="website-resource-type"></a>Тип ресурса веб-сайта
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет веб-сайт.
 

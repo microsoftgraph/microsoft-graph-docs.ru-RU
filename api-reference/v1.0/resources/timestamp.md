@@ -14,7 +14,7 @@ ms.locfileid: "42446816"
 ---
 # <a name="timestamp-resource-type"></a>Тип ресурса timeStamp
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Сведения о дате и времени для определенного момента времени.
 

@@ -14,7 +14,7 @@ ms.locfileid: "42447012"
 ---
 # <a name="recentnotebook-resource-type"></a>Тип ресурса recentNotebook
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Недавно открытая записная книжка OneNote. Ресурс **recentNotebook** похож на ресурс [notebook](notebook.md), но имеет меньше свойств.
 

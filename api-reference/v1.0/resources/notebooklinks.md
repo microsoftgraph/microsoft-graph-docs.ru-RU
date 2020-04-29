@@ -14,7 +14,7 @@ ms.locfileid: "42447362"
 ---
 # <a name="notebooklinks-resource-type"></a>Тип ресурса Нотебуклинкс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Ссылки для открытия записной книжки OneNote.
 

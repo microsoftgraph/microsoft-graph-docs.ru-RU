@@ -14,7 +14,7 @@ ms.locfileid: "42446914"
 ---
 # <a name="service-root"></a>Корневой каталог для обслуживания
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 
 ## <a name="methods"></a>Методы

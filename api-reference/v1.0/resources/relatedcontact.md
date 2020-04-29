@@ -22,7 +22,7 @@ ms.locfileid: "42533862"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|Строка|Идентификатор контакта в Azure Active Directory.|
-|displayName|Строка|Имя контакта. Обязательный элемент.|
+|displayName|Строка|Имя контакта. Обязательный.|
 |emailAddress|String|Основной адрес электронной почты контакта.|
 |mobilePhone|String|Номер мобильного телефона контакта.|
 |Отношение|`contactRelationship`|Отношение к пользователю. Возможные значения: `parent`, `relative`, `aide`, `doctor` `guardian` `child`,,, `other`, `unknownFutureValue`.|

@@ -14,7 +14,7 @@ ms.locfileid: "42446893"
 ---
 # <a name="settingvalue-resource-type"></a>Тип ресурса settingValue
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Параметр, представленный в виде "имя-значение".
 

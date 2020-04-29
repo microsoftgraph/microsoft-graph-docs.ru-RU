@@ -14,7 +14,7 @@ ms.locfileid: "42446907"
 ---
 # <a name="serviceplaninfo-resource-type"></a>Тип ресурса servicePlanInfo
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Содержит сведения о плане обслуживания, связанном с подписанным SKU. Свойство **servicePlans** объекта [subscribedSku](subscribedsku.md) представляет собой коллекцию объектов **servicePlanInfo**.
 

@@ -37,7 +37,7 @@ ms.locfileid: "43387314"
 |displayName|Строка|Отображаемое имя категории устройств.|
 |description|String|Необязательное описание категории устройств.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

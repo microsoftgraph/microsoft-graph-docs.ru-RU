@@ -19,7 +19,7 @@ ms.locfileid: "42531911"
 Представляет оси диаграммы.
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 Нет
 
 ## <a name="properties"></a>Свойства

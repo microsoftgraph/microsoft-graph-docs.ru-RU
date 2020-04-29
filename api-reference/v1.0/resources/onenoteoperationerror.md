@@ -14,7 +14,7 @@ ms.locfileid: "42447306"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>Тип ресурса Оненотеоператионеррор
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Ошибка при выполнении операции с OneNote.
 
@@ -40,7 +40,7 @@ ms.locfileid: "42447306"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|code|строка|Код ошибки.|
+|code|string|Код ошибки.|
 |message|string|Сообщение об ошибке.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

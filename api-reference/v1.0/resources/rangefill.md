@@ -14,7 +14,7 @@ ms.locfileid: "42447026"
 ---
 # <a name="rangefill-resource-type"></a>Тип ресурса RangeFill
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет фон объекта диапазона.
 

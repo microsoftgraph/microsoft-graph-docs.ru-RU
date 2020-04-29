@@ -14,7 +14,7 @@ ms.locfileid: "42447152"
 ---
 # <a name="plannerbucket-resource-type"></a>Тип ресурса plannerBucket
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Ресурс **plannerBucket** представляет сегмент (или "настраиваемый столбец") для задач в плане в Office 365. Он находится в [plannerPlan](plannerplan.md) и может иметь коллекцию [перечисление plannertasks](plannertask.md).
 

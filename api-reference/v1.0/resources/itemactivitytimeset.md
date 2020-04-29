@@ -15,7 +15,7 @@ ms.locfileid: "42447663"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>Тип ресурса itemActivityTimeSet
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Ресурс **itemActivityTimeSet** предоставляет сведения о том, когда выполнялось [действие][activity] для элемента.
 

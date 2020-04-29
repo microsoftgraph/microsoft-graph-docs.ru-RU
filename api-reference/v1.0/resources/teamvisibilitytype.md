@@ -1,5 +1,5 @@
 ---
-title: Members
+title: "\"Участники\""
 description: 'Описывает видимость команды. '
 author: nkramer
 localization_priority: Normal

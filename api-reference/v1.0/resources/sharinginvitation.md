@@ -16,7 +16,7 @@ ms.locfileid: "42446879"
 ---
 # <a name="sharinginvitation-resource-type"></a>Тип ресурса SharingInvitation
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Ресурс **SharingInvitation** группирует элементы данных, связанные с приглашением, в единую структуру.
 

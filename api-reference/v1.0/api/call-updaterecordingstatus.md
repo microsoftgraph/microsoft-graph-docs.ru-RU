@@ -49,7 +49,7 @@ POST /communications/calls/{id}/updateRecordingStatus
 | Контекст   | String  | Уникальная строка контекста клиента. Максимальный лимит — 256 символов.                                 |
 | status          | String  | Состояние записи. Возможные значения: `notRecording`, `recording`, или. `failed`  |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Этот метод возвращает код `200 OK` отклика и заголовок Location с URI для объекта [упдатерекордингстатусоператион](../resources/updaterecordingstatusoperation.md) , созданного для этого запроса.
 
 ## <a name="example"></a>Пример

@@ -14,7 +14,7 @@ ms.locfileid: "42447712"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>Тип ресурса ИнвитатионпартиЦипантинфо
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Этот ресурс используется для представления объекта, приглашенного на вызов группы. 
 

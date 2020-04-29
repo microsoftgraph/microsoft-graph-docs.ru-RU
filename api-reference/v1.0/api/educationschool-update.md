@@ -50,13 +50,13 @@ PATCH /education/schools/{id}
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
 | displayName         | Строка                                             | Отображаемое имя школы         |
 | description         | String                                             | Описание школы          |
-| principalEmail      | Строка                                             | Адрес электронной почты директора     |
-| principalName       | Строка                                             | Имя директора              |
-| externalPrincipalId | Строка                                             | Идентификатор директора в системе синхронизации. |
-| highestGrade        | Строка                                             | Самый старший класс.              |
-| lowestGrade         | Строка                                             | Самый младший класс.               |
-| schoolNumber        | Строка                                             | Номер школы.                     |
-| externalId          | Строка                                             | Идентификатор учебного заведения в системе синхронизации.    |
+| principalEmail      | String                                             | Адрес электронной почты директора     |
+| principalName       | String                                             | Имя директора              |
+| externalPrincipalId | String                                             | Идентификатор директора в системе синхронизации. |
+| highestGrade        | String                                             | Самый старший класс.              |
+| lowestGrade         | String                                             | Самый младший класс.               |
+| schoolNumber        | String                                             | Номер школы.                     |
+| externalId          | String                                             | Идентификатор учебного заведения в системе синхронизации.    |
 | phone               | String                                             | Номер телефона учебного заведения.            |
 | address             | [physicalAddress](../resources/physicaladdress.md) | Адрес учебного заведения.             |
 | createdBy           | [identitySet](../resources/identityset.md)         | Объект, который создал учебное заведение.     |

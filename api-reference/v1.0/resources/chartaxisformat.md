@@ -19,7 +19,7 @@ ms.locfileid: "42531904"
 Инкапсулирует свойства формата для оси диаграммы.
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 Нет
 ## <a name="properties"></a>Свойства
 Нет

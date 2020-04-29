@@ -1,6 +1,6 @@
 ---
 title: Тип ресурса outlookItem
-description: Ниже представлено описание ресурса в формате JSON.
+description: Ниже показано представление JSON ресурса.
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
@@ -49,7 +49,7 @@ ms.locfileid: "43353772"
 |id|String| Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

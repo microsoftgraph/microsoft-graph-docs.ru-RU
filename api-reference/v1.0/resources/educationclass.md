@@ -33,7 +33,7 @@ ms.locfileid: "42531541"
 |[Удаление преподавателя](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| Удаление **educationUser** для курса с использованием свойства навигации teachers.|
 |[Получение группы](../api/educationclass-get-group.md) |[group](group.md)| Получение **группы** Office 365, которая соответствует этому объекту **educationClass**.|
 |[Обновление](../api/educationclass-update.md) | [educationClass](educationclass.md)    |Обновление объекта **educationClass**. |
-|[Удаление](../api/educationclass-delete.md) | Нет |Удаление объекта **educationClass**. |
+|[удаление](../api/educationclass-delete.md); | Нет |Удаление объекта **educationClass**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -41,10 +41,10 @@ ms.locfileid: "42531541"
 |id| Строка| Уникальный идентификатор для курса.|
 |description|String| Описание курса.|
 |displayName|Строка| Название курса.|
-|mailNickname|Строка| Почтовое имя для отправки почты всем участникам, если это возможно. |
+|mailNickname|String| Почтовое имя для отправки почты всем участникам, если это возможно. |
 |createdBy|[identitySet](identityset.md)| Объект, который создал курс. |
-|classCode|Строка| Код курса, используемый учебным заведением для идентификации курса.|
-|externalId|Строка| Идентификатор курса из системы синхронизации. |
+|classCode|String| Код курса, используемый учебным заведением для идентификации курса.|
+|externalId|String| Идентификатор курса из системы синхронизации. |
 |externalName|String|Название курса в системе синхронизации.|
 |externalSource|едукатионекстерналсаурце| Способ создания этого курса. Допустимые значения: `sis`, `manual`, `unknownFutureValue`.|
 |term|[educationTerm](educationterm.md)|Срок для этого курса.|
