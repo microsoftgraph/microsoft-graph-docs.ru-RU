@@ -9279,7 +9279,7 @@
                   href: api/identityprovider-update.md
                 - name: Удаление поставщика удостоверений
                   href: api/identityprovider-delete.md
-            - name: Защита информации
+            - name: защита информации;
               items:
                 - name: Метки
                   href: resources/informationprotectionlabel.md
@@ -9710,7 +9710,7 @@
                 - name: Определение каталога
                   href: resources/synchronization-directorydefinition.md
                   items:
-                    - name: Поиск
+                    - name: Обнаружение
                       href: api/directorydefinition-discover.md
                 - name: Задание
                   href: resources/synchronization-synchronizationjob.md
@@ -10766,6 +10766,8 @@
                   href: api/site-follow.md
                 - name: Прекращение отслеживания сайта
                   href: api/site-unfollow.md
+                - name: Список отслеживаемых сайтов
+                  href: api/sites-list-followed.md
             - name: Списки
               href: resources/list.md
               items:
@@ -11312,7 +11314,7 @@
             - name: Группа задач Outlook
               href: resources/outlooktaskgroup.md
               items:
-                - name: Список
+                - name: Перечисление
                   href: api/outlookuser-list-taskgroups.md
                 - name: Создание
                   href: api/outlookuser-post-taskgroups.md
@@ -11399,7 +11401,7 @@
             - name: Комментарии к книге
               href: resources/workbookcomment.md
               items:
-                - name: Перечисление
+                - name: Список
                   href: api/workbook-list-comments.md
                 - name: Получение
                   href: api/workbookcomment-get.md
