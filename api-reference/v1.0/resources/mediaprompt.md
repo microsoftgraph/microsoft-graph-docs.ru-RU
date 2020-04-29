@@ -12,21 +12,21 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42447446"
 ---
-# <a name="mediaprompt-resource-type"></a><span data-ttu-id="ee845-103">Тип ресурса Медиапромпт</span><span class="sxs-lookup"><span data-stu-id="ee845-103">mediaPrompt resource type</span></span>
+# <a name="mediaprompt-resource-type"></a><span data-ttu-id="7bd62-103">Тип ресурса Медиапромпт</span><span class="sxs-lookup"><span data-stu-id="7bd62-103">mediaPrompt resource type</span></span>
 
-<span data-ttu-id="ee845-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="ee845-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7bd62-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7bd62-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="ee845-105">Этот тип ресурса содержит сведения о звуковом файле, который необходимо воспроизвести, и другие дополнительные параметры.</span><span class="sxs-lookup"><span data-stu-id="ee845-105">This resource type contains information about the audio file to be played and other additional settings.</span></span>
+<span data-ttu-id="7bd62-105">Этот тип ресурса содержит сведения о звуковом файле, который необходимо воспроизвести, и другие дополнительные параметры.</span><span class="sxs-lookup"><span data-stu-id="7bd62-105">This resource type contains information about the audio file to be played and other additional settings.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ee845-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="ee845-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7bd62-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="7bd62-106">Properties</span></span>
 
-| <span data-ttu-id="ee845-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="ee845-107">Property</span></span>    | <span data-ttu-id="ee845-108">Тип</span><span class="sxs-lookup"><span data-stu-id="ee845-108">Type</span></span>                      | <span data-ttu-id="ee845-109">Описание</span><span class="sxs-lookup"><span data-stu-id="ee845-109">Description</span></span>                                                                     |
+| <span data-ttu-id="7bd62-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="7bd62-107">Property</span></span>    | <span data-ttu-id="7bd62-108">Тип</span><span class="sxs-lookup"><span data-stu-id="7bd62-108">Type</span></span>                      | <span data-ttu-id="7bd62-109">Описание</span><span class="sxs-lookup"><span data-stu-id="7bd62-109">Description</span></span>                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| <span data-ttu-id="ee845-110">медиаинфо</span><span class="sxs-lookup"><span data-stu-id="ee845-110">mediaInfo</span></span>   | [<span data-ttu-id="ee845-111">медиаинфо</span><span class="sxs-lookup"><span data-stu-id="ee845-111">mediaInfo</span></span>](mediainfo.md) | <span data-ttu-id="ee845-112">Сведения о мультимедиа</span><span class="sxs-lookup"><span data-stu-id="ee845-112">The media information</span></span>                                                           |
+| <span data-ttu-id="7bd62-110">медиаинфо</span><span class="sxs-lookup"><span data-stu-id="7bd62-110">mediaInfo</span></span>   | [<span data-ttu-id="7bd62-111">медиаинфо</span><span class="sxs-lookup"><span data-stu-id="7bd62-111">mediaInfo</span></span>](mediainfo.md) | <span data-ttu-id="7bd62-112">Сведения о мультимедиа</span><span class="sxs-lookup"><span data-stu-id="7bd62-112">The media information</span></span>                                                           |
 
-## <a name="json-representation"></a><span data-ttu-id="ee845-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ee845-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7bd62-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7bd62-113">JSON representation</span></span>
 
-<span data-ttu-id="ee845-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ee845-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7bd62-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7bd62-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

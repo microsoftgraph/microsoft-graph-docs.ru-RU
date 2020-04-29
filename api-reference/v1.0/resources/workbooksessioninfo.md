@@ -12,16 +12,16 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42446694"
 ---
-# <a name="workbooksessioninfo-resource-type"></a><span data-ttu-id="d6bcc-103">Тип ресурса workbookSessionInfo</span><span class="sxs-lookup"><span data-stu-id="d6bcc-103">workbookSessionInfo resource type</span></span>
+# <a name="workbooksessioninfo-resource-type"></a><span data-ttu-id="979a3-103">Тип ресурса workbookSessionInfo</span><span class="sxs-lookup"><span data-stu-id="979a3-103">workbookSessionInfo resource type</span></span>
 
-<span data-ttu-id="d6bcc-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="d6bcc-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="979a3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="979a3-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="d6bcc-105">Предоставляет сведения о сеансе книги.</span><span class="sxs-lookup"><span data-stu-id="d6bcc-105">Provides information about workbook session.</span></span>
+<span data-ttu-id="979a3-105">Предоставляет сведения о сеансе книги.</span><span class="sxs-lookup"><span data-stu-id="979a3-105">Provides information about workbook session.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="d6bcc-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d6bcc-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="979a3-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="979a3-106">JSON representation</span></span>
 
-<span data-ttu-id="d6bcc-107">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="d6bcc-107">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="979a3-107">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="979a3-107">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,10 +36,10 @@ ms.locfileid: "42446694"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="d6bcc-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="d6bcc-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="979a3-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="979a3-108">Properties</span></span>
 
-| <span data-ttu-id="d6bcc-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="d6bcc-109">Property</span></span> | <span data-ttu-id="d6bcc-110">Тип</span><span class="sxs-lookup"><span data-stu-id="d6bcc-110">Type</span></span>  | <span data-ttu-id="d6bcc-111">Описание</span><span class="sxs-lookup"><span data-stu-id="d6bcc-111">Description</span></span>                               |
+| <span data-ttu-id="979a3-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="979a3-109">Property</span></span> | <span data-ttu-id="979a3-110">Тип</span><span class="sxs-lookup"><span data-stu-id="979a3-110">Type</span></span>  | <span data-ttu-id="979a3-111">Описание</span><span class="sxs-lookup"><span data-stu-id="979a3-111">Description</span></span>                               |
 |:---------|:------|:------------------------------------------|
-| <span data-ttu-id="d6bcc-112">id</span><span class="sxs-lookup"><span data-stu-id="d6bcc-112">id</span></span>  | <span data-ttu-id="d6bcc-113">строка</span><span class="sxs-lookup"><span data-stu-id="d6bcc-113">string</span></span> | <span data-ttu-id="d6bcc-114">Идентификатор сеанса книги.</span><span class="sxs-lookup"><span data-stu-id="d6bcc-114">Id of the workbook session.</span></span> |
-| <span data-ttu-id="d6bcc-115">persistChanges</span><span class="sxs-lookup"><span data-stu-id="d6bcc-115">persistChanges</span></span> | <span data-ttu-id="d6bcc-116">boolean</span><span class="sxs-lookup"><span data-stu-id="d6bcc-116">boolean</span></span> |  <span data-ttu-id="d6bcc-117">Имеет значение `true` для сохраняемого сеанса.</span><span class="sxs-lookup"><span data-stu-id="d6bcc-117">`true` for persistent session.</span></span> <span data-ttu-id="d6bcc-118">Имеет значение `false` для несохраняемого сеанса (режим просмотра)</span><span class="sxs-lookup"><span data-stu-id="d6bcc-118">`false` for non-persistent session (view mode)</span></span> |
+| <span data-ttu-id="979a3-112">id</span><span class="sxs-lookup"><span data-stu-id="979a3-112">id</span></span>  | <span data-ttu-id="979a3-113">string</span><span class="sxs-lookup"><span data-stu-id="979a3-113">string</span></span> | <span data-ttu-id="979a3-114">Идентификатор сеанса книги.</span><span class="sxs-lookup"><span data-stu-id="979a3-114">Id of the workbook session.</span></span> |
+| <span data-ttu-id="979a3-115">persistChanges</span><span class="sxs-lookup"><span data-stu-id="979a3-115">persistChanges</span></span> | <span data-ttu-id="979a3-116">boolean</span><span class="sxs-lookup"><span data-stu-id="979a3-116">boolean</span></span> |  <span data-ttu-id="979a3-117">Имеет значение `true` для сохраняемого сеанса.</span><span class="sxs-lookup"><span data-stu-id="979a3-117">`true` for persistent session.</span></span> <span data-ttu-id="979a3-118">Имеет значение `false` для несохраняемого сеанса (режим просмотра)</span><span class="sxs-lookup"><span data-stu-id="979a3-118">`false` for non-persistent session (view mode)</span></span> |
 

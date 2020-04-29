@@ -12,23 +12,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42446739"
 ---
-# <a name="website-resource-type"></a><span data-ttu-id="9be16-103">Тип ресурса веб-сайта</span><span class="sxs-lookup"><span data-stu-id="9be16-103">website resource type</span></span>
+# <a name="website-resource-type"></a><span data-ttu-id="83edd-103">Тип ресурса веб-сайта</span><span class="sxs-lookup"><span data-stu-id="83edd-103">website resource type</span></span>
 
-<span data-ttu-id="9be16-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="9be16-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="83edd-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="83edd-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="9be16-105">Представляет веб-сайт.</span><span class="sxs-lookup"><span data-stu-id="9be16-105">Represents a website.</span></span>
+<span data-ttu-id="83edd-105">Представляет веб-сайт.</span><span class="sxs-lookup"><span data-stu-id="83edd-105">Represents a website.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="9be16-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="9be16-106">Properties</span></span>
-| <span data-ttu-id="9be16-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="9be16-107">Property</span></span>     | <span data-ttu-id="9be16-108">Тип</span><span class="sxs-lookup"><span data-stu-id="9be16-108">Type</span></span>   |<span data-ttu-id="9be16-109">Описание</span><span class="sxs-lookup"><span data-stu-id="9be16-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="83edd-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="83edd-106">Properties</span></span>
+| <span data-ttu-id="83edd-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="83edd-107">Property</span></span>     | <span data-ttu-id="83edd-108">Тип</span><span class="sxs-lookup"><span data-stu-id="83edd-108">Type</span></span>   |<span data-ttu-id="83edd-109">Описание</span><span class="sxs-lookup"><span data-stu-id="83edd-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9be16-110">type</span><span class="sxs-lookup"><span data-stu-id="9be16-110">type</span></span>|<span data-ttu-id="9be16-111">websiteType</span><span class="sxs-lookup"><span data-stu-id="9be16-111">websiteType</span></span>| <span data-ttu-id="9be16-112">Допустимые значения: `other`, `home`, `work`, `blog`, `profile`.</span><span class="sxs-lookup"><span data-stu-id="9be16-112">The possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
-|<span data-ttu-id="9be16-113">address</span><span class="sxs-lookup"><span data-stu-id="9be16-113">address</span></span>|<span data-ttu-id="9be16-114">string</span><span class="sxs-lookup"><span data-stu-id="9be16-114">string</span></span>|<span data-ttu-id="9be16-115">URL-адрес веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="9be16-115">The URL of the website.</span></span>|
-|<span data-ttu-id="9be16-116">displayName</span><span class="sxs-lookup"><span data-stu-id="9be16-116">displayName</span></span>|<span data-ttu-id="9be16-117">string</span><span class="sxs-lookup"><span data-stu-id="9be16-117">string</span></span>|<span data-ttu-id="9be16-118">Отображаемое имя веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="9be16-118">The display name of the web site.</span></span>|
+|<span data-ttu-id="83edd-110">type</span><span class="sxs-lookup"><span data-stu-id="83edd-110">type</span></span>|<span data-ttu-id="83edd-111">websiteType</span><span class="sxs-lookup"><span data-stu-id="83edd-111">websiteType</span></span>| <span data-ttu-id="83edd-112">Допустимые значения: `other`, `home`, `work`, `blog`, `profile`.</span><span class="sxs-lookup"><span data-stu-id="83edd-112">The possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
+|<span data-ttu-id="83edd-113">address</span><span class="sxs-lookup"><span data-stu-id="83edd-113">address</span></span>|<span data-ttu-id="83edd-114">string</span><span class="sxs-lookup"><span data-stu-id="83edd-114">string</span></span>|<span data-ttu-id="83edd-115">URL-адрес веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="83edd-115">The URL of the website.</span></span>|
+|<span data-ttu-id="83edd-116">displayName</span><span class="sxs-lookup"><span data-stu-id="83edd-116">displayName</span></span>|<span data-ttu-id="83edd-117">string</span><span class="sxs-lookup"><span data-stu-id="83edd-117">string</span></span>|<span data-ttu-id="83edd-118">Отображаемое имя веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="83edd-118">The display name of the web site.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="9be16-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9be16-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="83edd-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="83edd-119">JSON representation</span></span>
 
-<span data-ttu-id="9be16-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9be16-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="83edd-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="83edd-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

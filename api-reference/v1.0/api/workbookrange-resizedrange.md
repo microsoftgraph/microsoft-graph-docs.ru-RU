@@ -12,49 +12,49 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42508753"
 ---
-# <a name="workbookrange-resizedrange"></a><span data-ttu-id="4e792-103">workbookRange: resizedRange</span><span class="sxs-lookup"><span data-stu-id="4e792-103">workbookRange: resizedRange</span></span>
+# <a name="workbookrange-resizedrange"></a><span data-ttu-id="6d531-103">workbookRange: resizedRange</span><span class="sxs-lookup"><span data-stu-id="6d531-103">workbookRange: resizedRange</span></span>
 
-<span data-ttu-id="4e792-104">Пространство имен: Microsoft. Graph получает объект Range, подобный текущему объекту Range, но с развернутым (или контрактным) углом нижнего угла, на некоторое количество строк и столбцов.</span><span class="sxs-lookup"><span data-stu-id="4e792-104">Namespace: microsoft.graph Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.</span></span>
+<span data-ttu-id="6d531-104">Пространство имен: Microsoft. Graph получает объект Range, подобный текущему объекту Range, но с развернутым (или контрактным) углом нижнего угла, на некоторое количество строк и столбцов.</span><span class="sxs-lookup"><span data-stu-id="6d531-104">Namespace: microsoft.graph Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4e792-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4e792-105">Permissions</span></span>
-<span data-ttu-id="4e792-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4e792-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6d531-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6d531-105">Permissions</span></span>
+<span data-ttu-id="6d531-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6d531-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4e792-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4e792-108">Permission type</span></span>      | <span data-ttu-id="4e792-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4e792-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6d531-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6d531-108">Permission type</span></span>      | <span data-ttu-id="6d531-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6d531-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4e792-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4e792-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4e792-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4e792-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="4e792-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4e792-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4e792-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4e792-113">Not supported.</span></span>    |
-|<span data-ttu-id="4e792-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4e792-114">Application</span></span> | <span data-ttu-id="4e792-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4e792-115">Not supported.</span></span> |
+|<span data-ttu-id="6d531-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6d531-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6d531-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6d531-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="6d531-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6d531-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6d531-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6d531-113">Not supported.</span></span>    |
+|<span data-ttu-id="6d531-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6d531-114">Application</span></span> | <span data-ttu-id="6d531-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6d531-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4e792-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4e792-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6d531-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6d531-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="4e792-117">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="4e792-117">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="6d531-117">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="6d531-117">Function parameters</span></span>
 
-| <span data-ttu-id="4e792-118">Параметр</span><span class="sxs-lookup"><span data-stu-id="4e792-118">Parameter</span></span>    | <span data-ttu-id="4e792-119">Тип</span><span class="sxs-lookup"><span data-stu-id="4e792-119">Type</span></span>   |<span data-ttu-id="4e792-120">Описание</span><span class="sxs-lookup"><span data-stu-id="4e792-120">Description</span></span>|
+| <span data-ttu-id="6d531-118">Параметр</span><span class="sxs-lookup"><span data-stu-id="6d531-118">Parameter</span></span>    | <span data-ttu-id="6d531-119">Тип</span><span class="sxs-lookup"><span data-stu-id="6d531-119">Type</span></span>   |<span data-ttu-id="6d531-120">Описание</span><span class="sxs-lookup"><span data-stu-id="6d531-120">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4e792-121">deltaRows</span><span class="sxs-lookup"><span data-stu-id="4e792-121">deltaRows</span></span>|<span data-ttu-id="4e792-122">Int32</span><span class="sxs-lookup"><span data-stu-id="4e792-122">Int32</span></span>|<span data-ttu-id="4e792-p102">Количество строк, добавляемых в правый нижний угол текущего диапазона. Используйте положительное число, чтобы расширить диапазон, или отрицательное число, чтобы уменьшить его.</span><span class="sxs-lookup"><span data-stu-id="4e792-p102">The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it</span></span>|
-|<span data-ttu-id="4e792-125">deltaColumns</span><span class="sxs-lookup"><span data-stu-id="4e792-125">deltaColumns</span></span>|<span data-ttu-id="4e792-126">Int32</span><span class="sxs-lookup"><span data-stu-id="4e792-126">Int32</span></span>|<span data-ttu-id="4e792-127">Количество столбцов, по которым разворачивается нижний правый угол относительно текущего диапазона.</span><span class="sxs-lookup"><span data-stu-id="4e792-127">The number of columns by which to expand the bottom-right corner, relative to the current range.</span></span> <span data-ttu-id="4e792-128">Используйте положительное число, чтобы расширить диапазон или отрицательное число, чтобы уменьшить его.</span><span class="sxs-lookup"><span data-stu-id="4e792-128">Use a positive number to expand the range, or a negative number to decrease it.</span></span>|
+|<span data-ttu-id="6d531-121">deltaRows</span><span class="sxs-lookup"><span data-stu-id="6d531-121">deltaRows</span></span>|<span data-ttu-id="6d531-122">Int32</span><span class="sxs-lookup"><span data-stu-id="6d531-122">Int32</span></span>|<span data-ttu-id="6d531-p102">Количество строк, добавляемых в правый нижний угол текущего диапазона. Используйте положительное число, чтобы расширить диапазон, или отрицательное число, чтобы уменьшить его.</span><span class="sxs-lookup"><span data-stu-id="6d531-p102">The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it</span></span>|
+|<span data-ttu-id="6d531-125">deltaColumns</span><span class="sxs-lookup"><span data-stu-id="6d531-125">deltaColumns</span></span>|<span data-ttu-id="6d531-126">Int32</span><span class="sxs-lookup"><span data-stu-id="6d531-126">Int32</span></span>|<span data-ttu-id="6d531-127">Количество столбцов, по которым разворачивается нижний правый угол относительно текущего диапазона.</span><span class="sxs-lookup"><span data-stu-id="6d531-127">The number of columns by which to expand the bottom-right corner, relative to the current range.</span></span> <span data-ttu-id="6d531-128">Используйте положительное число, чтобы расширить диапазон или отрицательное число, чтобы уменьшить его.</span><span class="sxs-lookup"><span data-stu-id="6d531-128">Use a positive number to expand the range, or a negative number to decrease it.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="4e792-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4e792-129">Request headers</span></span>
-| <span data-ttu-id="4e792-130">Имя</span><span class="sxs-lookup"><span data-stu-id="4e792-130">Name</span></span>       | <span data-ttu-id="4e792-131">Описание</span><span class="sxs-lookup"><span data-stu-id="4e792-131">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6d531-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6d531-129">Request headers</span></span>
+| <span data-ttu-id="6d531-130">Имя</span><span class="sxs-lookup"><span data-stu-id="6d531-130">Name</span></span>       | <span data-ttu-id="6d531-131">Описание</span><span class="sxs-lookup"><span data-stu-id="6d531-131">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="4e792-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4e792-132">Authorization</span></span>  | <span data-ttu-id="4e792-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4e792-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4e792-135">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="4e792-135">Workbook-Session-Id</span></span>  | <span data-ttu-id="4e792-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="4e792-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="6d531-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6d531-132">Authorization</span></span>  | <span data-ttu-id="6d531-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6d531-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6d531-135">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="6d531-135">Workbook-Session-Id</span></span>  | <span data-ttu-id="6d531-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="6d531-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4e792-138">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4e792-138">Request body</span></span>
-<span data-ttu-id="4e792-139">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="4e792-139">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6d531-138">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="6d531-138">Request body</span></span>
+<span data-ttu-id="6d531-139">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6d531-139">Do not supply a request body for this method.</span></span>
 
-### <a name="response"></a><span data-ttu-id="4e792-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="4e792-140">Response</span></span>
-<span data-ttu-id="4e792-141">В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/range.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="4e792-141">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
+### <a name="response"></a><span data-ttu-id="6d531-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="6d531-140">Response</span></span>
+<span data-ttu-id="6d531-141">В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/range.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="6d531-141">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4e792-142">Пример</span><span class="sxs-lookup"><span data-stu-id="4e792-142">Example</span></span>
-<span data-ttu-id="4e792-143">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="4e792-143">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="4e792-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="4e792-144">Request</span></span>
-<span data-ttu-id="4e792-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4e792-145">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6d531-142">Пример</span><span class="sxs-lookup"><span data-stu-id="6d531-142">Example</span></span>
+<span data-ttu-id="6d531-143">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="6d531-143">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="6d531-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="6d531-144">Request</span></span>
+<span data-ttu-id="6d531-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6d531-145">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -65,8 +65,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 ```
 
-##### <a name="response"></a><span data-ttu-id="4e792-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="4e792-146">Response</span></span>
-<span data-ttu-id="4e792-p106">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4e792-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="6d531-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="6d531-146">Response</span></span>
+<span data-ttu-id="6d531-p106">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6d531-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

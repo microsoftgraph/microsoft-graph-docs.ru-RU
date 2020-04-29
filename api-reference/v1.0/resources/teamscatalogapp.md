@@ -12,8 +12,8 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42446844"
 ---
-# <a name="teamscatalogapp-resource-type"></a><span data-ttu-id="71f1c-103">Тип ресурса Теамскаталогапп</span><span class="sxs-lookup"><span data-stu-id="71f1c-103">teamsCatalogApp resource type</span></span>
+# <a name="teamscatalogapp-resource-type"></a><span data-ttu-id="df21b-103">Тип ресурса Теамскаталогапп</span><span class="sxs-lookup"><span data-stu-id="df21b-103">teamsCatalogApp resource type</span></span>
 
-<span data-ttu-id="71f1c-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="71f1c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="df21b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="df21b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="71f1c-105">обратитесь к разделу [teamsApp](teamsapp.md).</span><span class="sxs-lookup"><span data-stu-id="71f1c-105">see [teamsApp](teamsapp.md).</span></span>
+<span data-ttu-id="df21b-105">обратитесь к разделу [teamsApp](teamsapp.md).</span><span class="sxs-lookup"><span data-stu-id="df21b-105">see [teamsApp](teamsapp.md).</span></span>

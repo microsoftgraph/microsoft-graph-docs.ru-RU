@@ -12,23 +12,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/03/2020
 ms.locfileid: "43124436"
 ---
-# <a name="follow-site"></a><span data-ttu-id="bc0ca-103">Отслеживание сайта</span><span class="sxs-lookup"><span data-stu-id="bc0ca-103">Follow site</span></span> 
+# <a name="follow-site"></a><span data-ttu-id="045b7-103">Отслеживание сайта</span><span class="sxs-lookup"><span data-stu-id="045b7-103">Follow site</span></span> 
 
-<span data-ttu-id="bc0ca-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bc0ca-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="045b7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="045b7-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="bc0ca-105">Подпишитесь на [сайт](../resources/site.md) пользователя или несколько сайтов.</span><span class="sxs-lookup"><span data-stu-id="bc0ca-105">Follow a user's [site](../resources/site.md) or multiple sites.</span></span>
+<span data-ttu-id="045b7-105">Подпишитесь на [сайт](../resources/site.md) пользователя или несколько сайтов.</span><span class="sxs-lookup"><span data-stu-id="045b7-105">Follow a user's [site](../resources/site.md) or multiple sites.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bc0ca-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bc0ca-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="045b7-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="045b7-106">Permissions</span></span>
 
-<span data-ttu-id="bc0ca-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bc0ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="045b7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="045b7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="bc0ca-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bc0ca-109">Permission type</span></span>             | <span data-ttu-id="bc0ca-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bc0ca-110">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="045b7-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="045b7-109">Permission type</span></span>             | <span data-ttu-id="045b7-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="045b7-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="bc0ca-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bc0ca-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="bc0ca-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bc0ca-112">Sites.ReadWrite.All</span></span>                         |
-| <span data-ttu-id="bc0ca-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bc0ca-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bc0ca-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bc0ca-114">Not supported.</span></span>                              |
-| <span data-ttu-id="bc0ca-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bc0ca-115">Application</span></span>                            | <span data-ttu-id="bc0ca-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bc0ca-116">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="045b7-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="045b7-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="045b7-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="045b7-112">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="045b7-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="045b7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="045b7-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="045b7-114">Not supported.</span></span>                              |
+| <span data-ttu-id="045b7-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="045b7-115">Application</span></span>                            | <span data-ttu-id="045b7-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="045b7-116">Sites.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="bc0ca-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bc0ca-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="045b7-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="045b7-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,29 +36,29 @@ ms.locfileid: "43124436"
 POST /users/{user-id}/followedSites/add
 ```
 
-## <a name="request-body"></a><span data-ttu-id="bc0ca-118">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="bc0ca-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="045b7-118">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="045b7-118">Request body</span></span>
 
-<span data-ttu-id="bc0ca-119">В теле запроса добавьте массив объектов JSON с параметром ID, указанным в приведенной ниже таблице.</span><span class="sxs-lookup"><span data-stu-id="bc0ca-119">In the request body, supply an array of JSON objects with the id parameter mentioned in the table below.</span></span> 
+<span data-ttu-id="045b7-119">В теле запроса добавьте массив объектов JSON с параметром ID, указанным в приведенной ниже таблице.</span><span class="sxs-lookup"><span data-stu-id="045b7-119">In the request body, supply an array of JSON objects with the id parameter mentioned in the table below.</span></span> 
 
 
-| <span data-ttu-id="bc0ca-120">Имя</span><span class="sxs-lookup"><span data-stu-id="bc0ca-120">Name</span></span>                 | <span data-ttu-id="bc0ca-121">Значение</span><span class="sxs-lookup"><span data-stu-id="bc0ca-121">Value</span></span>  | <span data-ttu-id="bc0ca-122">Описание</span><span class="sxs-lookup"><span data-stu-id="bc0ca-122">Description</span></span>                                                            |
+| <span data-ttu-id="045b7-120">Имя</span><span class="sxs-lookup"><span data-stu-id="045b7-120">Name</span></span>                 | <span data-ttu-id="045b7-121">Значение</span><span class="sxs-lookup"><span data-stu-id="045b7-121">Value</span></span>  | <span data-ttu-id="045b7-122">Описание</span><span class="sxs-lookup"><span data-stu-id="045b7-122">Description</span></span>                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
-|   <span data-ttu-id="bc0ca-123">id</span><span class="sxs-lookup"><span data-stu-id="bc0ca-123">id</span></span>                 | <span data-ttu-id="bc0ca-124">строка</span><span class="sxs-lookup"><span data-stu-id="bc0ca-124">string</span></span> | <span data-ttu-id="bc0ca-125">[Уникальный идентификатор](../resources/site.md#id-property) элемента.</span><span class="sxs-lookup"><span data-stu-id="bc0ca-125">The [unique identifier](../resources/site.md#id-property) of the item.</span></span> |
+|   <span data-ttu-id="045b7-123">id</span><span class="sxs-lookup"><span data-stu-id="045b7-123">id</span></span>                 | <span data-ttu-id="045b7-124">строка</span><span class="sxs-lookup"><span data-stu-id="045b7-124">string</span></span> | <span data-ttu-id="045b7-125">[Уникальный идентификатор](../resources/site.md#id-property) элемента.</span><span class="sxs-lookup"><span data-stu-id="045b7-125">The [unique identifier](../resources/site.md#id-property) of the item.</span></span> |
 
 
-## <a name="response"></a><span data-ttu-id="bc0ca-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="bc0ca-126">Response</span></span> 
+## <a name="response"></a><span data-ttu-id="045b7-126">Ответ</span><span class="sxs-lookup"><span data-stu-id="045b7-126">Response</span></span> 
 
-* <span data-ttu-id="bc0ca-127">Если запрос выполнен успешно, этот метод возвращает массив сайтов, которые были выполнены.</span><span class="sxs-lookup"><span data-stu-id="bc0ca-127">If the request is successful, this method returns an array of sites that were followed.</span></span>  
-* <span data-ttu-id="bc0ca-128">Если при выполнении какого-либо из указанных сайтов возникла ошибка, этот метод возвращает `207` код состояния, а текст отклика будет содержать массив записей, содержащих объекты [Error](/graph/errors) , и ситеидс, указывающие, какие сайты не могут быть выполнены.</span><span class="sxs-lookup"><span data-stu-id="bc0ca-128">If an error occurred while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.</span></span>
+* <span data-ttu-id="045b7-127">Если запрос выполнен успешно, этот метод возвращает массив сайтов, которые были выполнены.</span><span class="sxs-lookup"><span data-stu-id="045b7-127">If the request is successful, this method returns an array of sites that were followed.</span></span>  
+* <span data-ttu-id="045b7-128">Если при выполнении какого-либо из указанных сайтов возникла ошибка, этот метод возвращает `207` код состояния, а текст отклика будет содержать массив записей, содержащих объекты [Error](/graph/errors) , и ситеидс, указывающие, какие сайты не могут быть выполнены.</span><span class="sxs-lookup"><span data-stu-id="045b7-128">If an error occurred while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bc0ca-129">Пример</span><span class="sxs-lookup"><span data-stu-id="bc0ca-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="045b7-129">Пример</span><span class="sxs-lookup"><span data-stu-id="045b7-129">Example</span></span>
 
-<span data-ttu-id="bc0ca-130">В приведенном ниже примере показано, как подписаться на несколько сайтов.</span><span class="sxs-lookup"><span data-stu-id="bc0ca-130">The following example shows how to follow multiple sites.</span></span> 
+<span data-ttu-id="045b7-130">В приведенном ниже примере показано, как подписаться на несколько сайтов.</span><span class="sxs-lookup"><span data-stu-id="045b7-130">The following example shows how to follow multiple sites.</span></span> 
 
-### <a name="request"></a><span data-ttu-id="bc0ca-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="bc0ca-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="045b7-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="045b7-131">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="bc0ca-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="bc0ca-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="045b7-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="045b7-132">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -77,27 +77,27 @@ Content-Type: application/json
     ] 
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bc0ca-133">C#</span><span class="sxs-lookup"><span data-stu-id="bc0ca-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="045b7-133">C#</span><span class="sxs-lookup"><span data-stu-id="045b7-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/follow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bc0ca-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bc0ca-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="045b7-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="045b7-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/follow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bc0ca-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bc0ca-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="045b7-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="045b7-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/follow-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="bc0ca-136">Java</span><span class="sxs-lookup"><span data-stu-id="bc0ca-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="045b7-136">Java</span><span class="sxs-lookup"><span data-stu-id="045b7-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/follow-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="bc0ca-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="bc0ca-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="045b7-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="045b7-137">Response</span></span>
 
-<span data-ttu-id="bc0ca-138">В случае успешного выполнения возвращается следующий ответ JSON.</span><span class="sxs-lookup"><span data-stu-id="bc0ca-138">If successful, it returns the following JSON response.</span></span> 
+<span data-ttu-id="045b7-138">В случае успешного выполнения возвращается следующий ответ JSON.</span><span class="sxs-lookup"><span data-stu-id="045b7-138">If successful, it returns the following JSON response.</span></span> 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -137,7 +137,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="bc0ca-139">Если возникла ошибка, возвращается следующий ответ JSON</span><span class="sxs-lookup"><span data-stu-id="bc0ca-139">If an error occured, it returns the following JSON response</span></span> 
+<span data-ttu-id="045b7-139">Если возникла ошибка, возвращается следующий ответ JSON</span><span class="sxs-lookup"><span data-stu-id="045b7-139">If an error occured, it returns the following JSON response</span></span> 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

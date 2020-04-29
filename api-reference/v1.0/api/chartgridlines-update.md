@@ -12,48 +12,48 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42518436"
 ---
-# <a name="update-chartgridlines"></a><span data-ttu-id="8996d-103">Обновление объекта chartgridlines</span><span class="sxs-lookup"><span data-stu-id="8996d-103">Update chartgridlines</span></span>
+# <a name="update-chartgridlines"></a><span data-ttu-id="49435-103">Обновление объекта chartgridlines</span><span class="sxs-lookup"><span data-stu-id="49435-103">Update chartgridlines</span></span>
 
-<span data-ttu-id="8996d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8996d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="49435-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="49435-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="8996d-105">Обновление свойств объекта chartgridlines.</span><span class="sxs-lookup"><span data-stu-id="8996d-105">Update the properties of chartgridlines object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="8996d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8996d-106">Permissions</span></span>
-<span data-ttu-id="8996d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8996d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="49435-105">Обновление свойств объекта chartgridlines.</span><span class="sxs-lookup"><span data-stu-id="49435-105">Update the properties of chartgridlines object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="49435-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="49435-106">Permissions</span></span>
+<span data-ttu-id="49435-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="49435-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8996d-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8996d-109">Permission type</span></span>      | <span data-ttu-id="8996d-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8996d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="49435-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="49435-109">Permission type</span></span>      | <span data-ttu-id="49435-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="49435-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8996d-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8996d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8996d-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8996d-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="8996d-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8996d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8996d-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8996d-114">Not supported.</span></span>    |
-|<span data-ttu-id="8996d-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8996d-115">Application</span></span> | <span data-ttu-id="8996d-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8996d-116">Not supported.</span></span> |
+|<span data-ttu-id="49435-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="49435-111">Delegated (work or school account)</span></span> | <span data-ttu-id="49435-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="49435-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="49435-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="49435-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="49435-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="49435-114">Not supported.</span></span>    |
+|<span data-ttu-id="49435-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="49435-115">Application</span></span> | <span data-ttu-id="49435-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="49435-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8996d-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8996d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="49435-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="49435-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/minorGridlines
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/majorGridlines
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorGridlines
 ```
-## <a name="request-headers"></a><span data-ttu-id="8996d-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8996d-118">Request headers</span></span>
-| <span data-ttu-id="8996d-119">Имя</span><span class="sxs-lookup"><span data-stu-id="8996d-119">Name</span></span>       | <span data-ttu-id="8996d-120">Описание</span><span class="sxs-lookup"><span data-stu-id="8996d-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="49435-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="49435-118">Request headers</span></span>
+| <span data-ttu-id="49435-119">Имя</span><span class="sxs-lookup"><span data-stu-id="49435-119">Name</span></span>       | <span data-ttu-id="49435-120">Описание</span><span class="sxs-lookup"><span data-stu-id="49435-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="8996d-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8996d-121">Authorization</span></span>  | <span data-ttu-id="8996d-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8996d-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="8996d-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="8996d-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="8996d-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="8996d-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="49435-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="49435-121">Authorization</span></span>  | <span data-ttu-id="49435-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="49435-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="49435-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="49435-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="49435-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="49435-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8996d-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8996d-127">Request body</span></span>
-<span data-ttu-id="8996d-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="8996d-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="49435-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="49435-127">Request body</span></span>
+<span data-ttu-id="49435-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="49435-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="8996d-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="8996d-131">Property</span></span>     | <span data-ttu-id="8996d-132">Тип</span><span class="sxs-lookup"><span data-stu-id="8996d-132">Type</span></span>   |<span data-ttu-id="8996d-133">Описание</span><span class="sxs-lookup"><span data-stu-id="8996d-133">Description</span></span>|
+| <span data-ttu-id="49435-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="49435-131">Property</span></span>     | <span data-ttu-id="49435-132">Тип</span><span class="sxs-lookup"><span data-stu-id="49435-132">Type</span></span>   |<span data-ttu-id="49435-133">Описание</span><span class="sxs-lookup"><span data-stu-id="49435-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8996d-134">visible</span><span class="sxs-lookup"><span data-stu-id="8996d-134">visible</span></span>|<span data-ttu-id="8996d-135">boolean</span><span class="sxs-lookup"><span data-stu-id="8996d-135">boolean</span></span>|<span data-ttu-id="8996d-136">Логическое значение, определяющее, отображаются ли линии сетки оси.</span><span class="sxs-lookup"><span data-stu-id="8996d-136">Boolean value representing if the axis gridlines are visible or not.</span></span>|
+|<span data-ttu-id="49435-134">visible</span><span class="sxs-lookup"><span data-stu-id="49435-134">visible</span></span>|<span data-ttu-id="49435-135">boolean</span><span class="sxs-lookup"><span data-stu-id="49435-135">boolean</span></span>|<span data-ttu-id="49435-136">Логическое значение, определяющее, отображаются ли линии сетки оси.</span><span class="sxs-lookup"><span data-stu-id="49435-136">Boolean value representing if the axis gridlines are visible or not.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8996d-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="8996d-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="49435-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="49435-137">Response</span></span>
 
-<span data-ttu-id="8996d-138">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукчартгридлинес](../resources/chartgridlines.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8996d-138">If successful, this method returns a `200 OK` response code and updated [WorkbookChartGridlines](../resources/chartgridlines.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="8996d-139">Пример</span><span class="sxs-lookup"><span data-stu-id="8996d-139">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8996d-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="8996d-140">Request</span></span>
-<span data-ttu-id="8996d-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8996d-141">Here is an example of the request.</span></span>
+<span data-ttu-id="49435-138">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукчартгридлинес](../resources/chartgridlines.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="49435-138">If successful, this method returns a `200 OK` response code and updated [WorkbookChartGridlines](../resources/chartgridlines.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="49435-139">Пример</span><span class="sxs-lookup"><span data-stu-id="49435-139">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="49435-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="49435-140">Request</span></span>
+<span data-ttu-id="49435-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="49435-141">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="8996d-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="8996d-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="49435-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="49435-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_chartgridlines"
@@ -67,26 +67,26 @@ Content-length: 21
   "visible": true
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="8996d-143">C#</span><span class="sxs-lookup"><span data-stu-id="8996d-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="49435-143">C#</span><span class="sxs-lookup"><span data-stu-id="49435-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-chartgridlines-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8996d-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8996d-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="49435-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="49435-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-chartgridlines-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8996d-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8996d-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="49435-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="49435-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-chartgridlines-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="8996d-146">Java</span><span class="sxs-lookup"><span data-stu-id="8996d-146">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="49435-146">Java</span><span class="sxs-lookup"><span data-stu-id="49435-146">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-chartgridlines-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="8996d-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="8996d-147">Response</span></span>
-<span data-ttu-id="8996d-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8996d-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="49435-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="49435-147">Response</span></span>
+<span data-ttu-id="49435-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="49435-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

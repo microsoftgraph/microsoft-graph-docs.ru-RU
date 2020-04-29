@@ -12,23 +12,23 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42447033"
 ---
-# <a name="provisionedplan-resource-type"></a><span data-ttu-id="11662-103">Тип ресурса provisionedPlan</span><span class="sxs-lookup"><span data-stu-id="11662-103">provisionedPlan resource type</span></span>
+# <a name="provisionedplan-resource-type"></a><span data-ttu-id="11c64-103">Тип ресурса provisionedPlan</span><span class="sxs-lookup"><span data-stu-id="11c64-103">provisionedPlan resource type</span></span>
 
-<span data-ttu-id="11662-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="11662-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="11c64-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="11c64-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="11662-105">Свойство **provisionedPlans** объектов [user](user.md) и [organization](organization.md) представляет собой коллекцию объектов **provisionedPlan**.</span><span class="sxs-lookup"><span data-stu-id="11662-105">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
+<span data-ttu-id="11c64-105">Свойство **provisionedPlans** объектов [user](user.md) и [organization](organization.md) представляет собой коллекцию объектов **provisionedPlan**.</span><span class="sxs-lookup"><span data-stu-id="11c64-105">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="11662-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="11662-106">Properties</span></span>
-| <span data-ttu-id="11662-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="11662-107">Property</span></span>     | <span data-ttu-id="11662-108">Тип</span><span class="sxs-lookup"><span data-stu-id="11662-108">Type</span></span>   |<span data-ttu-id="11662-109">Описание</span><span class="sxs-lookup"><span data-stu-id="11662-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="11c64-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="11c64-106">Properties</span></span>
+| <span data-ttu-id="11c64-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="11c64-107">Property</span></span>     | <span data-ttu-id="11c64-108">Тип</span><span class="sxs-lookup"><span data-stu-id="11c64-108">Type</span></span>   |<span data-ttu-id="11c64-109">Описание</span><span class="sxs-lookup"><span data-stu-id="11c64-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="11662-110">капабилитистатус</span><span class="sxs-lookup"><span data-stu-id="11662-110">capabilityStatus</span></span>|<span data-ttu-id="11662-111">String</span><span class="sxs-lookup"><span data-stu-id="11662-111">String</span></span>|<span data-ttu-id="11662-112">Пример: "Enabled".</span><span class="sxs-lookup"><span data-stu-id="11662-112">For example, “Enabled”.</span></span>|
-|<span data-ttu-id="11662-113">provisioningStatus</span><span class="sxs-lookup"><span data-stu-id="11662-113">provisioningStatus</span></span>|<span data-ttu-id="11662-114">String</span><span class="sxs-lookup"><span data-stu-id="11662-114">String</span></span>|<span data-ttu-id="11662-115">Пример: "Success".</span><span class="sxs-lookup"><span data-stu-id="11662-115">For example, “Success”.</span></span>|
-|<span data-ttu-id="11662-116">service</span><span class="sxs-lookup"><span data-stu-id="11662-116">service</span></span>|<span data-ttu-id="11662-117">String</span><span class="sxs-lookup"><span data-stu-id="11662-117">String</span></span>|<span data-ttu-id="11662-118">Имя службы, например “AccessControlS2S”.</span><span class="sxs-lookup"><span data-stu-id="11662-118">The name of the service; for example, “AccessControlS2S”</span></span>|
+|<span data-ttu-id="11c64-110">капабилитистатус</span><span class="sxs-lookup"><span data-stu-id="11c64-110">capabilityStatus</span></span>|<span data-ttu-id="11c64-111">String</span><span class="sxs-lookup"><span data-stu-id="11c64-111">String</span></span>|<span data-ttu-id="11c64-112">Пример: "Enabled".</span><span class="sxs-lookup"><span data-stu-id="11c64-112">For example, “Enabled”.</span></span>|
+|<span data-ttu-id="11c64-113">provisioningStatus</span><span class="sxs-lookup"><span data-stu-id="11c64-113">provisioningStatus</span></span>|<span data-ttu-id="11c64-114">String</span><span class="sxs-lookup"><span data-stu-id="11c64-114">String</span></span>|<span data-ttu-id="11c64-115">Пример: "Success".</span><span class="sxs-lookup"><span data-stu-id="11c64-115">For example, “Success”.</span></span>|
+|<span data-ttu-id="11c64-116">service</span><span class="sxs-lookup"><span data-stu-id="11c64-116">service</span></span>|<span data-ttu-id="11c64-117">String</span><span class="sxs-lookup"><span data-stu-id="11c64-117">String</span></span>|<span data-ttu-id="11c64-118">Имя службы, например “AccessControlS2S”.</span><span class="sxs-lookup"><span data-stu-id="11c64-118">The name of the service; for example, “AccessControlS2S”</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="11662-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="11662-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="11c64-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="11c64-119">JSON representation</span></span>
 
-<span data-ttu-id="11662-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="11662-120">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="11c64-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="11c64-120">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

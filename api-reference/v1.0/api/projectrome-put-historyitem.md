@@ -12,24 +12,24 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42510706"
 ---
-# <a name="create-or-replace-a-historyitem"></a><span data-ttu-id="a35ca-103">Создание или замена объекта historyItem</span><span class="sxs-lookup"><span data-stu-id="a35ca-103">Create or replace a historyItem</span></span>
+# <a name="create-or-replace-a-historyitem"></a><span data-ttu-id="b601b-103">Создание или замена объекта historyItem</span><span class="sxs-lookup"><span data-stu-id="b601b-103">Create or replace a historyItem</span></span>
 
-<span data-ttu-id="a35ca-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a35ca-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b601b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b601b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="a35ca-105">Создание нового или замена существующего элемента журнала для существующего действия пользователя.</span><span class="sxs-lookup"><span data-stu-id="a35ca-105">Create a new or replace an existing history item for an existing user activity.</span></span>
+<span data-ttu-id="b601b-105">Создание нового или замена существующего элемента журнала для существующего действия пользователя.</span><span class="sxs-lookup"><span data-stu-id="b601b-105">Create a new or replace an existing history item for an existing user activity.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a35ca-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a35ca-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b601b-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b601b-106">Permissions</span></span>
 
-<span data-ttu-id="a35ca-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a35ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b601b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b601b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="a35ca-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a35ca-109">Permission type</span></span>      | <span data-ttu-id="a35ca-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a35ca-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b601b-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b601b-109">Permission type</span></span>      | <span data-ttu-id="b601b-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b601b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a35ca-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a35ca-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a35ca-112">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="a35ca-112">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="a35ca-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a35ca-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a35ca-114">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="a35ca-114">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="a35ca-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a35ca-115">Application</span></span> | <span data-ttu-id="a35ca-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a35ca-116">Not supported.</span></span> |
+|<span data-ttu-id="b601b-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b601b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b601b-112">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="b601b-112">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="b601b-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b601b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b601b-114">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="b601b-114">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="b601b-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b601b-115">Application</span></span> | <span data-ttu-id="b601b-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b601b-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a35ca-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a35ca-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b601b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b601b-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,27 +37,27 @@ ms.locfileid: "42510706"
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-<span data-ttu-id="a35ca-118">Идентификатор должен быть идентификатором GUID.</span><span class="sxs-lookup"><span data-stu-id="a35ca-118">Id needs to be a GUID.</span></span>
+<span data-ttu-id="b601b-118">Идентификатор должен быть идентификатором GUID.</span><span class="sxs-lookup"><span data-stu-id="b601b-118">Id needs to be a GUID.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a35ca-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a35ca-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b601b-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b601b-119">Request headers</span></span>
 
-|<span data-ttu-id="a35ca-120">Имя</span><span class="sxs-lookup"><span data-stu-id="a35ca-120">Name</span></span> | <span data-ttu-id="a35ca-121">Тип</span><span class="sxs-lookup"><span data-stu-id="a35ca-121">Type</span></span> | <span data-ttu-id="a35ca-122">Описание</span><span class="sxs-lookup"><span data-stu-id="a35ca-122">Description</span></span>|
+|<span data-ttu-id="b601b-120">Имя</span><span class="sxs-lookup"><span data-stu-id="b601b-120">Name</span></span> | <span data-ttu-id="b601b-121">Тип</span><span class="sxs-lookup"><span data-stu-id="b601b-121">Type</span></span> | <span data-ttu-id="b601b-122">Описание</span><span class="sxs-lookup"><span data-stu-id="b601b-122">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="a35ca-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a35ca-123">Authorization</span></span> | <span data-ttu-id="a35ca-124">string</span><span class="sxs-lookup"><span data-stu-id="a35ca-124">string</span></span> | <span data-ttu-id="a35ca-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a35ca-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="b601b-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b601b-123">Authorization</span></span> | <span data-ttu-id="b601b-124">string</span><span class="sxs-lookup"><span data-stu-id="b601b-124">string</span></span> | <span data-ttu-id="b601b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b601b-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a35ca-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a35ca-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b601b-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b601b-127">Request body</span></span>
 
-<span data-ttu-id="a35ca-128">В тексте запроса добавьте представление объекта [historyItem](../resources/projectrome-historyitem.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a35ca-128">In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.</span></span>
+<span data-ttu-id="b601b-128">В тексте запроса добавьте представление объекта [historyItem](../resources/projectrome-historyitem.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b601b-128">In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a35ca-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="a35ca-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b601b-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="b601b-129">Response</span></span>
 
-<span data-ttu-id="a35ca-130">В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если был создан `200 OK` historyItem, или если historyItem был заменен.</span><span class="sxs-lookup"><span data-stu-id="a35ca-130">If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.</span></span>
+<span data-ttu-id="b601b-130">В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если был создан `200 OK` historyItem, или если historyItem был заменен.</span><span class="sxs-lookup"><span data-stu-id="b601b-130">If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a35ca-131">Пример</span><span class="sxs-lookup"><span data-stu-id="a35ca-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b601b-131">Пример</span><span class="sxs-lookup"><span data-stu-id="b601b-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a35ca-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="a35ca-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b601b-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="b601b-132">Request</span></span>
 
-<span data-ttu-id="a35ca-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a35ca-133">Here is an example of the request.</span></span>
+<span data-ttu-id="b601b-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b601b-133">Here is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -76,9 +76,9 @@ Content-length: 364
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="a35ca-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="a35ca-134">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="b601b-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="b601b-134">Response</span></span>
 
-<span data-ttu-id="a35ca-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a35ca-135">Here is an example of the response.</span></span>
+<span data-ttu-id="b601b-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b601b-135">Here is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",

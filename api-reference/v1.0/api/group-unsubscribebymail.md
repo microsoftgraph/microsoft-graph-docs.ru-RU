@@ -12,41 +12,41 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/03/2020
 ms.locfileid: "43123974"
 ---
-# <a name="group-unsubscribebymail"></a><span data-ttu-id="f0f2c-104">group: unsubscribeByMail</span><span class="sxs-lookup"><span data-stu-id="f0f2c-104">group: unsubscribeByMail</span></span>
+# <a name="group-unsubscribebymail"></a><span data-ttu-id="f94af-104">group: unsubscribeByMail</span><span class="sxs-lookup"><span data-stu-id="f94af-104">group: unsubscribeByMail</span></span>
 
-<span data-ttu-id="f0f2c-105">Пространство имен: вызов Microsoft. Graph. Этот метод не позволит текущему пользователю получать уведомления по электронной почте для этой группы о новых сообщениях, событиях и файлах в этой группе.</span><span class="sxs-lookup"><span data-stu-id="f0f2c-105">Namespace: microsoft.graph Calling this method will prevent the current user from receiving email notifications for this group about new posts, events, and files in that group.</span></span> <span data-ttu-id="f0f2c-106">Поддерживается только для групп Office 365.</span><span class="sxs-lookup"><span data-stu-id="f0f2c-106">Supported for Office 365 groups only.</span></span> 
+<span data-ttu-id="f94af-105">Пространство имен: вызов Microsoft. Graph. Этот метод не позволит текущему пользователю получать уведомления по электронной почте для этой группы о новых сообщениях, событиях и файлах в этой группе.</span><span class="sxs-lookup"><span data-stu-id="f94af-105">Namespace: microsoft.graph Calling this method will prevent the current user from receiving email notifications for this group about new posts, events, and files in that group.</span></span> <span data-ttu-id="f94af-106">Поддерживается только для групп Office 365.</span><span class="sxs-lookup"><span data-stu-id="f94af-106">Supported for Office 365 groups only.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="f0f2c-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f0f2c-107">Permissions</span></span>
-<span data-ttu-id="f0f2c-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f0f2c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f94af-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f94af-107">Permissions</span></span>
+<span data-ttu-id="f94af-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f94af-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f0f2c-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f0f2c-110">Permission type</span></span>      | <span data-ttu-id="f0f2c-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f0f2c-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f94af-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f94af-110">Permission type</span></span>      | <span data-ttu-id="f94af-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f94af-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f0f2c-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f0f2c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f0f2c-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f0f2c-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f0f2c-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f0f2c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f0f2c-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f0f2c-115">Not supported.</span></span>    |
-|<span data-ttu-id="f0f2c-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f0f2c-116">Application</span></span> | <span data-ttu-id="f0f2c-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f0f2c-117">Not supported.</span></span> |
+|<span data-ttu-id="f94af-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f94af-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f94af-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f94af-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f94af-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f94af-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f94af-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f94af-115">Not supported.</span></span>    |
+|<span data-ttu-id="f94af-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f94af-116">Application</span></span> | <span data-ttu-id="f94af-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f94af-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f0f2c-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f0f2c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f94af-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f94af-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/unsubscribeByMail
 ```
-## <a name="request-headers"></a><span data-ttu-id="f0f2c-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f0f2c-119">Request headers</span></span>
-| <span data-ttu-id="f0f2c-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f0f2c-120">Header</span></span>       | <span data-ttu-id="f0f2c-121">Значение</span><span class="sxs-lookup"><span data-stu-id="f0f2c-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="f94af-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f94af-119">Request headers</span></span>
+| <span data-ttu-id="f94af-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f94af-120">Header</span></span>       | <span data-ttu-id="f94af-121">Значение</span><span class="sxs-lookup"><span data-stu-id="f94af-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="f0f2c-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f0f2c-122">Authorization</span></span>  | <span data-ttu-id="f0f2c-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f0f2c-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="f0f2c-125">Prefer</span><span class="sxs-lookup"><span data-stu-id="f0f2c-125">Prefer</span></span> | <span data-ttu-id="f0f2c-126">return=minimal.</span><span class="sxs-lookup"><span data-stu-id="f0f2c-126">return=minimal.</span></span> <span data-ttu-id="f0f2c-127">Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="f0f2c-127">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="f0f2c-128">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="f0f2c-128">Optional.</span></span>  | 
+| <span data-ttu-id="f94af-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f94af-122">Authorization</span></span>  | <span data-ttu-id="f94af-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f94af-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f94af-125">Prefer</span><span class="sxs-lookup"><span data-stu-id="f94af-125">Prefer</span></span> | <span data-ttu-id="f94af-126">return=minimal.</span><span class="sxs-lookup"><span data-stu-id="f94af-126">return=minimal.</span></span> <span data-ttu-id="f94af-127">Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="f94af-127">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="f94af-128">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="f94af-128">Optional.</span></span>  | 
 
-## <a name="request-body"></a><span data-ttu-id="f0f2c-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f0f2c-129">Request body</span></span>
-<span data-ttu-id="f0f2c-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f0f2c-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f94af-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f94af-129">Request body</span></span>
+<span data-ttu-id="f94af-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f94af-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f0f2c-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="f0f2c-131">Response</span></span>
-<span data-ttu-id="f0f2c-p106">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="f0f2c-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f94af-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="f94af-131">Response</span></span>
+<span data-ttu-id="f94af-p106">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="f94af-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f0f2c-134">Пример</span><span class="sxs-lookup"><span data-stu-id="f0f2c-134">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="f0f2c-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="f0f2c-135">Request</span></span>
-<span data-ttu-id="f0f2c-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f0f2c-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f94af-134">Пример</span><span class="sxs-lookup"><span data-stu-id="f94af-134">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="f94af-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="f94af-135">Request</span></span>
+<span data-ttu-id="f94af-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f94af-136">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f0f2c-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="f0f2c-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f94af-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="f94af-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_unsubscribebymail"
@@ -54,27 +54,27 @@ POST /groups/{id}/unsubscribeByMail
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/unsubscribeByMail
 ```
-# <a name="c"></a>[<span data-ttu-id="f0f2c-138">C#</span><span class="sxs-lookup"><span data-stu-id="f0f2c-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f94af-138">C#</span><span class="sxs-lookup"><span data-stu-id="f94af-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-unsubscribebymail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f0f2c-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f0f2c-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f94af-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f94af-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-unsubscribebymail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f0f2c-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f0f2c-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f94af-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f94af-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-unsubscribebymail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f0f2c-141">Java</span><span class="sxs-lookup"><span data-stu-id="f0f2c-141">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="f94af-141">Java</span><span class="sxs-lookup"><span data-stu-id="f94af-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-unsubscribebymail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="f0f2c-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="f0f2c-142">Response</span></span>
-<span data-ttu-id="f0f2c-143">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="f0f2c-143">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="f94af-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="f94af-142">Response</span></span>
+<span data-ttu-id="f94af-143">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="f94af-143">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

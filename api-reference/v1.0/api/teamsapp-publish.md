@@ -12,53 +12,53 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42509323"
 ---
-# <a name="publish-apps-to-your-organizations-app-catalog"></a><span data-ttu-id="8d2e2-103">Публикация приложений в каталоге приложений Организации</span><span class="sxs-lookup"><span data-stu-id="8d2e2-103">Publish apps to your organization's app catalog</span></span>
+# <a name="publish-apps-to-your-organizations-app-catalog"></a><span data-ttu-id="926a4-103">Публикация приложений в каталоге приложений Организации</span><span class="sxs-lookup"><span data-stu-id="926a4-103">Publish apps to your organization's app catalog</span></span>
 
-<span data-ttu-id="8d2e2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8d2e2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="926a4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="926a4-104">Namespace: microsoft.graph</span></span>
 
 
 
-<span data-ttu-id="8d2e2-105">Опубликуйте [приложение](../resources/teamsapp.md) в каталоге приложений Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="8d2e2-105">Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.</span></span>
-<span data-ttu-id="8d2e2-106">В частности, этот API публикует приложение в каталоге организации (Каталог приложений клиента); созданный ресурс будет иметь `distributionMethod`  =  `organization`.</span><span class="sxs-lookup"><span data-stu-id="8d2e2-106">Specifically, this API publishes the app to your organization's catalog (the tenant app catalog); the created resource will have `distributionMethod` = `organization`.</span></span>
+<span data-ttu-id="926a4-105">Опубликуйте [приложение](../resources/teamsapp.md) в каталоге приложений Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="926a4-105">Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.</span></span>
+<span data-ttu-id="926a4-106">В частности, этот API публикует приложение в каталоге организации (Каталог приложений клиента); созданный ресурс будет иметь `distributionMethod`  =  `organization`.</span><span class="sxs-lookup"><span data-stu-id="926a4-106">Specifically, this API publishes the app to your organization's catalog (the tenant app catalog); the created resource will have `distributionMethod` = `organization`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8d2e2-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8d2e2-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="926a4-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="926a4-107">Permissions</span></span>
 
-<span data-ttu-id="8d2e2-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="8d2e2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
+<span data-ttu-id="926a4-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="926a4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
 
-><span data-ttu-id="8d2e2-110">**Примечание:** Только глобальные администраторы могут вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="8d2e2-110">**Note:** Only global administrators can call this API.</span></span>
+><span data-ttu-id="926a4-110">**Примечание:** Только глобальные администраторы могут вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="926a4-110">**Note:** Only global administrators can call this API.</span></span>
 
-| <span data-ttu-id="8d2e2-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8d2e2-111">Permission Type</span></span>                        | <span data-ttu-id="8d2e2-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8d2e2-112">Permissions (from least to most privileged)</span></span>|
+| <span data-ttu-id="926a4-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="926a4-111">Permission Type</span></span>                        | <span data-ttu-id="926a4-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="926a4-112">Permissions (from least to most privileged)</span></span>|
 |:----------------------------------     |:-------------|
-| <span data-ttu-id="8d2e2-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8d2e2-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="8d2e2-114">AppCatalog.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8d2e2-114">AppCatalog.ReadWrite.All</span></span> |
-| <span data-ttu-id="8d2e2-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8d2e2-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8d2e2-116">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="8d2e2-116">Not supported</span></span>|
-| <span data-ttu-id="8d2e2-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8d2e2-117">Application</span></span>                            | <span data-ttu-id="8d2e2-118">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="8d2e2-118">Not supported</span></span>|
+| <span data-ttu-id="926a4-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="926a4-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="926a4-114">AppCatalog.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="926a4-114">AppCatalog.ReadWrite.All</span></span> |
+| <span data-ttu-id="926a4-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="926a4-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="926a4-116">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="926a4-116">Not supported</span></span>|
+| <span data-ttu-id="926a4-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="926a4-117">Application</span></span>                            | <span data-ttu-id="926a4-118">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="926a4-118">Not supported</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="8d2e2-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8d2e2-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="926a4-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="926a4-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /appCatalogs/teamsApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8d2e2-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8d2e2-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="926a4-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="926a4-120">Request headers</span></span>
 
-| <span data-ttu-id="8d2e2-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="8d2e2-121">Header</span></span>        | <span data-ttu-id="8d2e2-122">Значение</span><span class="sxs-lookup"><span data-stu-id="8d2e2-122">Value</span></span>           |
+| <span data-ttu-id="926a4-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="926a4-121">Header</span></span>        | <span data-ttu-id="926a4-122">Значение</span><span class="sxs-lookup"><span data-stu-id="926a4-122">Value</span></span>           |
 |:--------------|:--------------  |
-| <span data-ttu-id="8d2e2-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8d2e2-123">Authorization</span></span> | <span data-ttu-id="8d2e2-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8d2e2-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="8d2e2-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8d2e2-126">Content-Type</span></span>  | <span data-ttu-id="8d2e2-127">приложение/ZIP-индекс</span><span class="sxs-lookup"><span data-stu-id="8d2e2-127">application/zip</span></span> |
+| <span data-ttu-id="926a4-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="926a4-123">Authorization</span></span> | <span data-ttu-id="926a4-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="926a4-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="926a4-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="926a4-126">Content-Type</span></span>  | <span data-ttu-id="926a4-127">приложение/ZIP-индекс</span><span class="sxs-lookup"><span data-stu-id="926a4-127">application/zip</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8d2e2-128">Основной текст запроса</span><span class="sxs-lookup"><span data-stu-id="8d2e2-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="926a4-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="926a4-128">Request body</span></span>
 
-<span data-ttu-id="8d2e2-129">Полезные данные манифеста ZIP Teams.</span><span class="sxs-lookup"><span data-stu-id="8d2e2-129">Teams Zip Manifest Payload.</span></span>
-<span data-ttu-id="8d2e2-130">Для ZIP-файла приложения Teams [в разделе Create a App Package](/microsoftteams/platform/concepts/apps/apps-package).</span><span class="sxs-lookup"><span data-stu-id="8d2e2-130">For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
-<span data-ttu-id="8d2e2-131">Вы не можете создать приложение для Организации с таким же ИДЕНТИФИКАТОРом манифеста, что и у другого приложения в этой Организации.</span><span class="sxs-lookup"><span data-stu-id="8d2e2-131">You can't create an app for an organization that has the same manifest ID as another app in that organization.</span></span>
+<span data-ttu-id="926a4-129">Полезные данные манифеста ZIP Teams.</span><span class="sxs-lookup"><span data-stu-id="926a4-129">Teams Zip Manifest Payload.</span></span>
+<span data-ttu-id="926a4-130">Для ZIP-файла приложения Teams [в разделе Create a App Package](/microsoftteams/platform/concepts/apps/apps-package).</span><span class="sxs-lookup"><span data-stu-id="926a4-130">For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
+<span data-ttu-id="926a4-131">Вы не можете создать приложение для Организации с таким же ИДЕНТИФИКАТОРом манифеста, что и у другого приложения в этой Организации.</span><span class="sxs-lookup"><span data-stu-id="926a4-131">You can't create an app for an organization that has the same manifest ID as another app in that organization.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8d2e2-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d2e2-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="926a4-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="926a4-132">Response</span></span>
 
-<span data-ttu-id="8d2e2-133">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [теамскаталогапп](../resources/teamsapp.md) .</span><span class="sxs-lookup"><span data-stu-id="8d2e2-133">If successful, this method returns a `200 OK` response code and a [teamsCatalogApp](../resources/teamsapp.md) object.</span></span>
+<span data-ttu-id="926a4-133">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [теамскаталогапп](../resources/teamsapp.md) .</span><span class="sxs-lookup"><span data-stu-id="926a4-133">If successful, this method returns a `200 OK` response code and a [teamsCatalogApp](../resources/teamsapp.md) object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8d2e2-134">Пример</span><span class="sxs-lookup"><span data-stu-id="8d2e2-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="926a4-134">Пример</span><span class="sxs-lookup"><span data-stu-id="926a4-134">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="8d2e2-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="8d2e2-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="926a4-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="926a4-135">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
@@ -68,9 +68,9 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-<span data-ttu-id="8d2e2-136">Сведения о том, как создать ZIP-файл приложения Microsoft Teams, можно найти в разделе [Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package).</span><span class="sxs-lookup"><span data-stu-id="8d2e2-136">For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
+<span data-ttu-id="926a4-136">Сведения о том, как создать ZIP-файл приложения Microsoft Teams, можно найти в разделе [Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package).</span><span class="sxs-lookup"><span data-stu-id="926a4-136">For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
 
-### <a name="response"></a><span data-ttu-id="8d2e2-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d2e2-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="926a4-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="926a4-137">Response</span></span>
 
 ```
 HTTP/1.1 201 Created

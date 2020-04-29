@@ -12,21 +12,21 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42510468"
 ---
-# <a name="rangesort-apply"></a><span data-ttu-id="07860-103">RangeSort: apply</span><span class="sxs-lookup"><span data-stu-id="07860-103">RangeSort: apply</span></span>
+# <a name="rangesort-apply"></a><span data-ttu-id="06c2a-103">RangeSort: apply</span><span class="sxs-lookup"><span data-stu-id="06c2a-103">RangeSort: apply</span></span>
 
-<span data-ttu-id="07860-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="07860-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="06c2a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="06c2a-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="07860-105">Выполнение сортировки.</span><span class="sxs-lookup"><span data-stu-id="07860-105">Perform a sort operation.</span></span>
-## <a name="permissions"></a><span data-ttu-id="07860-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="07860-106">Permissions</span></span>
-<span data-ttu-id="07860-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="07860-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="06c2a-105">Выполнение сортировки.</span><span class="sxs-lookup"><span data-stu-id="06c2a-105">Perform a sort operation.</span></span>
+## <a name="permissions"></a><span data-ttu-id="06c2a-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="06c2a-106">Permissions</span></span>
+<span data-ttu-id="06c2a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="06c2a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="07860-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="07860-109">Permission type</span></span>      | <span data-ttu-id="07860-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="07860-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="06c2a-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="06c2a-109">Permission type</span></span>      | <span data-ttu-id="06c2a-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="06c2a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="07860-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="07860-111">Delegated (work or school account)</span></span> | <span data-ttu-id="07860-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="07860-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="07860-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="07860-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="07860-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="07860-114">Not supported.</span></span>    |
-|<span data-ttu-id="07860-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="07860-115">Application</span></span> | <span data-ttu-id="07860-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="07860-116">Not supported.</span></span> |
+|<span data-ttu-id="06c2a-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="06c2a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="06c2a-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="06c2a-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="06c2a-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="06c2a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="06c2a-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="06c2a-114">Not supported.</span></span>    |
+|<span data-ttu-id="06c2a-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="06c2a-115">Application</span></span> | <span data-ttu-id="06c2a-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="06c2a-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="07860-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="07860-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="06c2a-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="06c2a-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/{name}/range/sort/apply
@@ -34,33 +34,33 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
 POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="07860-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="07860-118">Request headers</span></span>
-| <span data-ttu-id="07860-119">Имя</span><span class="sxs-lookup"><span data-stu-id="07860-119">Name</span></span>       | <span data-ttu-id="07860-120">Описание</span><span class="sxs-lookup"><span data-stu-id="07860-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="06c2a-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="06c2a-118">Request headers</span></span>
+| <span data-ttu-id="06c2a-119">Имя</span><span class="sxs-lookup"><span data-stu-id="06c2a-119">Name</span></span>       | <span data-ttu-id="06c2a-120">Описание</span><span class="sxs-lookup"><span data-stu-id="06c2a-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="07860-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="07860-121">Authorization</span></span>  | <span data-ttu-id="07860-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="07860-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="07860-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="07860-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="07860-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="07860-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="06c2a-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="06c2a-121">Authorization</span></span>  | <span data-ttu-id="06c2a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="06c2a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="06c2a-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="06c2a-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="06c2a-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="06c2a-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="07860-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="07860-127">Request body</span></span>
-<span data-ttu-id="07860-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="07860-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="06c2a-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="06c2a-127">Request body</span></span>
+<span data-ttu-id="06c2a-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="06c2a-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="07860-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="07860-129">Parameter</span></span>    | <span data-ttu-id="07860-130">Тип</span><span class="sxs-lookup"><span data-stu-id="07860-130">Type</span></span>   |<span data-ttu-id="07860-131">Описание</span><span class="sxs-lookup"><span data-stu-id="07860-131">Description</span></span>|
+| <span data-ttu-id="06c2a-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="06c2a-129">Parameter</span></span>    | <span data-ttu-id="06c2a-130">Тип</span><span class="sxs-lookup"><span data-stu-id="06c2a-130">Type</span></span>   |<span data-ttu-id="06c2a-131">Описание</span><span class="sxs-lookup"><span data-stu-id="06c2a-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="07860-132">fields</span><span class="sxs-lookup"><span data-stu-id="07860-132">fields</span></span>|<span data-ttu-id="07860-133">Коллекция Воркбуксортфиелд</span><span class="sxs-lookup"><span data-stu-id="07860-133">WorkbookSortField collection</span></span>|<span data-ttu-id="07860-134">Список условий для сортировки.</span><span class="sxs-lookup"><span data-stu-id="07860-134">The list of conditions to sort on.</span></span>|
-|<span data-ttu-id="07860-135">matchCase</span><span class="sxs-lookup"><span data-stu-id="07860-135">matchCase</span></span>|<span data-ttu-id="07860-136">boolean</span><span class="sxs-lookup"><span data-stu-id="07860-136">boolean</span></span>|<span data-ttu-id="07860-p104">Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.</span><span class="sxs-lookup"><span data-stu-id="07860-p104">Optional. Whether to have the casing impact string ordering.</span></span>|
-|<span data-ttu-id="07860-139">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="07860-139">hasHeaders</span></span>|<span data-ttu-id="07860-140">boolean</span><span class="sxs-lookup"><span data-stu-id="07860-140">boolean</span></span>|<span data-ttu-id="07860-p105">Необязательный параметр. Указывает, есть ли у диапазона заголовок.</span><span class="sxs-lookup"><span data-stu-id="07860-p105">Optional. Whether the range has a header.</span></span>|
-|<span data-ttu-id="07860-143">orientation</span><span class="sxs-lookup"><span data-stu-id="07860-143">orientation</span></span>|<span data-ttu-id="07860-144">string</span><span class="sxs-lookup"><span data-stu-id="07860-144">string</span></span>|<span data-ttu-id="07860-145">Необязательный.</span><span class="sxs-lookup"><span data-stu-id="07860-145">Optional.</span></span> <span data-ttu-id="07860-146">Указывает направление сортировки: по строкам или по столбцам.</span><span class="sxs-lookup"><span data-stu-id="07860-146">Whether the operation is sorting rows or columns.</span></span>  <span data-ttu-id="07860-147">Возможные значения: `Rows`, `Columns`.</span><span class="sxs-lookup"><span data-stu-id="07860-147">The possible values are: `Rows`, `Columns`.</span></span>|
-|<span data-ttu-id="07860-148">method</span><span class="sxs-lookup"><span data-stu-id="07860-148">method</span></span>|<span data-ttu-id="07860-149">string</span><span class="sxs-lookup"><span data-stu-id="07860-149">string</span></span>|<span data-ttu-id="07860-150">Необязательный.</span><span class="sxs-lookup"><span data-stu-id="07860-150">Optional.</span></span> <span data-ttu-id="07860-151">Метод сортировки, используемый для китайских символов.</span><span class="sxs-lookup"><span data-stu-id="07860-151">The ordering method used for Chinese characters.</span></span>  <span data-ttu-id="07860-152">Возможные значения: `PinYin`, `StrokeCount`.</span><span class="sxs-lookup"><span data-stu-id="07860-152">The possible values are: `PinYin`, `StrokeCount`.</span></span>|
+|<span data-ttu-id="06c2a-132">fields</span><span class="sxs-lookup"><span data-stu-id="06c2a-132">fields</span></span>|<span data-ttu-id="06c2a-133">Коллекция Воркбуксортфиелд</span><span class="sxs-lookup"><span data-stu-id="06c2a-133">WorkbookSortField collection</span></span>|<span data-ttu-id="06c2a-134">Список условий для сортировки.</span><span class="sxs-lookup"><span data-stu-id="06c2a-134">The list of conditions to sort on.</span></span>|
+|<span data-ttu-id="06c2a-135">matchCase</span><span class="sxs-lookup"><span data-stu-id="06c2a-135">matchCase</span></span>|<span data-ttu-id="06c2a-136">boolean</span><span class="sxs-lookup"><span data-stu-id="06c2a-136">boolean</span></span>|<span data-ttu-id="06c2a-p104">Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.</span><span class="sxs-lookup"><span data-stu-id="06c2a-p104">Optional. Whether to have the casing impact string ordering.</span></span>|
+|<span data-ttu-id="06c2a-139">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="06c2a-139">hasHeaders</span></span>|<span data-ttu-id="06c2a-140">boolean</span><span class="sxs-lookup"><span data-stu-id="06c2a-140">boolean</span></span>|<span data-ttu-id="06c2a-p105">Необязательный параметр. Указывает, есть ли у диапазона заголовок.</span><span class="sxs-lookup"><span data-stu-id="06c2a-p105">Optional. Whether the range has a header.</span></span>|
+|<span data-ttu-id="06c2a-143">orientation</span><span class="sxs-lookup"><span data-stu-id="06c2a-143">orientation</span></span>|<span data-ttu-id="06c2a-144">string</span><span class="sxs-lookup"><span data-stu-id="06c2a-144">string</span></span>|<span data-ttu-id="06c2a-145">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="06c2a-145">Optional.</span></span> <span data-ttu-id="06c2a-146">Указывает направление сортировки: по строкам или по столбцам.</span><span class="sxs-lookup"><span data-stu-id="06c2a-146">Whether the operation is sorting rows or columns.</span></span>  <span data-ttu-id="06c2a-147">Возможные значения: `Rows`, `Columns`.</span><span class="sxs-lookup"><span data-stu-id="06c2a-147">The possible values are: `Rows`, `Columns`.</span></span>|
+|<span data-ttu-id="06c2a-148">method</span><span class="sxs-lookup"><span data-stu-id="06c2a-148">method</span></span>|<span data-ttu-id="06c2a-149">string</span><span class="sxs-lookup"><span data-stu-id="06c2a-149">string</span></span>|<span data-ttu-id="06c2a-150">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="06c2a-150">Optional.</span></span> <span data-ttu-id="06c2a-151">Метод сортировки, используемый для китайских символов.</span><span class="sxs-lookup"><span data-stu-id="06c2a-151">The ordering method used for Chinese characters.</span></span>  <span data-ttu-id="06c2a-152">Возможные значения: `PinYin`, `StrokeCount`.</span><span class="sxs-lookup"><span data-stu-id="06c2a-152">The possible values are: `PinYin`, `StrokeCount`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="07860-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="07860-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="06c2a-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="06c2a-153">Response</span></span>
 
-<span data-ttu-id="07860-p108">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="07860-p108">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="06c2a-p108">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="06c2a-p108">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="07860-156">Пример</span><span class="sxs-lookup"><span data-stu-id="07860-156">Example</span></span>
-<span data-ttu-id="07860-157">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="07860-157">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="07860-158">Запрос</span><span class="sxs-lookup"><span data-stu-id="07860-158">Request</span></span>
-<span data-ttu-id="07860-159">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="07860-159">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="06c2a-156">Пример</span><span class="sxs-lookup"><span data-stu-id="06c2a-156">Example</span></span>
+<span data-ttu-id="06c2a-157">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="06c2a-157">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="06c2a-158">Запрос</span><span class="sxs-lookup"><span data-stu-id="06c2a-158">Request</span></span>
+<span data-ttu-id="06c2a-159">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="06c2a-159">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="07860-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="07860-160">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="06c2a-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="06c2a-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "rangesort_apply"
@@ -90,27 +90,27 @@ Content-length: 358
   "method": "method-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="07860-161">C#</span><span class="sxs-lookup"><span data-stu-id="07860-161">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="06c2a-161">C#</span><span class="sxs-lookup"><span data-stu-id="06c2a-161">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/rangesort-apply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="07860-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="07860-162">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="06c2a-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="06c2a-162">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/rangesort-apply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="07860-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="07860-163">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="06c2a-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="06c2a-163">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/rangesort-apply-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="07860-164">Java</span><span class="sxs-lookup"><span data-stu-id="07860-164">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="06c2a-164">Java</span><span class="sxs-lookup"><span data-stu-id="06c2a-164">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/rangesort-apply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="07860-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="07860-165">Response</span></span>
-<span data-ttu-id="07860-166">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="07860-166">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="06c2a-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="06c2a-165">Response</span></span>
+<span data-ttu-id="06c2a-166">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="06c2a-166">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response"
 } -->

@@ -12,62 +12,62 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42509943"
 ---
-# <a name="update-schemaextension"></a><span data-ttu-id="cd8eb-103">Обновление schemaExtension</span><span class="sxs-lookup"><span data-stu-id="cd8eb-103">Update schemaExtension</span></span>
+# <a name="update-schemaextension"></a><span data-ttu-id="db37e-103">Обновление schemaExtension</span><span class="sxs-lookup"><span data-stu-id="db37e-103">Update schemaExtension</span></span>
 
-<span data-ttu-id="cd8eb-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cd8eb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="db37e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="db37e-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="cd8eb-105">Обновление свойств в определении указанного [schemaExtension](../resources/schemaextension.md).</span><span class="sxs-lookup"><span data-stu-id="cd8eb-105">Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).</span></span>
+<span data-ttu-id="db37e-105">Обновление свойств в определении указанного [schemaExtension](../resources/schemaextension.md).</span><span class="sxs-lookup"><span data-stu-id="db37e-105">Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).</span></span>
 
-<span data-ttu-id="cd8eb-106">Обновление применяется ко всем ресурсам, включенным в свойство **TargetType** расширения.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-106">The update applies to all the resources that are included in the **targetTypes** property of the extension.</span></span> <span data-ttu-id="cd8eb-107">Эти ресурсы относятся к [типам вспомогательных ресурсов](/graph/extensibility-overview#supported-resources).</span><span class="sxs-lookup"><span data-stu-id="cd8eb-107">These resources are among the [supporting resource types](/graph/extensibility-overview#supported-resources).</span></span>
+<span data-ttu-id="db37e-106">Обновление применяется ко всем ресурсам, включенным в свойство **TargetType** расширения.</span><span class="sxs-lookup"><span data-stu-id="db37e-106">The update applies to all the resources that are included in the **targetTypes** property of the extension.</span></span> <span data-ttu-id="db37e-107">Эти ресурсы относятся к [типам вспомогательных ресурсов](/graph/extensibility-overview#supported-resources).</span><span class="sxs-lookup"><span data-stu-id="db37e-107">These resources are among the [supporting resource types](/graph/extensibility-overview#supported-resources).</span></span>
 
-<span data-ttu-id="cd8eb-108">Только приложение, которое создало расширение схемы (приложение-владелец), может вносить добавочные обновления расширения, когда расширение находится в состоянии " **разрабатывает** " или " **доступно** ".</span><span class="sxs-lookup"><span data-stu-id="cd8eb-108">Only the app that created a schema extension (owner app) can make additive updates to the extension when the extension is in the **InDevelopment** or **Available** status.</span></span> <span data-ttu-id="cd8eb-109">Это означает, что приложение не может удалять настраиваемые свойства или целевые типы ресурсов из определения.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-109">That means the app cannot remove custom properties or target resource types from the definition.</span></span> <span data-ttu-id="cd8eb-110">Однако приложение может изменить описание расширения.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-110">The app can, however, change the description of the extension.</span></span>
+<span data-ttu-id="db37e-108">Только приложение, которое создало расширение схемы (приложение-владелец), может вносить добавочные обновления расширения, когда расширение находится в состоянии " **разрабатывает** " или " **доступно** ".</span><span class="sxs-lookup"><span data-stu-id="db37e-108">Only the app that created a schema extension (owner app) can make additive updates to the extension when the extension is in the **InDevelopment** or **Available** status.</span></span> <span data-ttu-id="db37e-109">Это означает, что приложение не может удалять настраиваемые свойства или целевые типы ресурсов из определения.</span><span class="sxs-lookup"><span data-stu-id="db37e-109">That means the app cannot remove custom properties or target resource types from the definition.</span></span> <span data-ttu-id="db37e-110">Однако приложение может изменить описание расширения.</span><span class="sxs-lookup"><span data-stu-id="db37e-110">The app can, however, change the description of the extension.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cd8eb-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cd8eb-111">Permissions</span></span>
-<span data-ttu-id="cd8eb-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cd8eb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="db37e-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="db37e-111">Permissions</span></span>
+<span data-ttu-id="db37e-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="db37e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="cd8eb-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cd8eb-114">Permission type</span></span>      | <span data-ttu-id="cd8eb-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cd8eb-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="db37e-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="db37e-114">Permission type</span></span>      | <span data-ttu-id="db37e-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="db37e-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cd8eb-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cd8eb-116">Delegated (work or school account)</span></span> | <span data-ttu-id="cd8eb-117">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="cd8eb-117">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="cd8eb-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cd8eb-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cd8eb-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-119">Not supported.</span></span>    |
-|<span data-ttu-id="cd8eb-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cd8eb-120">Application</span></span> | <span data-ttu-id="cd8eb-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-121">Not supported.</span></span> |
+|<span data-ttu-id="db37e-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="db37e-116">Delegated (work or school account)</span></span> | <span data-ttu-id="db37e-117">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="db37e-117">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="db37e-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="db37e-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="db37e-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="db37e-119">Not supported.</span></span>    |
+|<span data-ttu-id="db37e-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="db37e-120">Application</span></span> | <span data-ttu-id="db37e-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="db37e-121">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cd8eb-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cd8eb-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="db37e-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="db37e-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /schemaExtensions/{id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="cd8eb-123">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cd8eb-123">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="db37e-123">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="db37e-123">Optional request headers</span></span>
 
-| <span data-ttu-id="cd8eb-124">Имя</span><span class="sxs-lookup"><span data-stu-id="cd8eb-124">Name</span></span>      |<span data-ttu-id="cd8eb-125">Описание</span><span class="sxs-lookup"><span data-stu-id="cd8eb-125">Description</span></span>|
+| <span data-ttu-id="db37e-124">Имя</span><span class="sxs-lookup"><span data-stu-id="db37e-124">Name</span></span>      |<span data-ttu-id="db37e-125">Описание</span><span class="sxs-lookup"><span data-stu-id="db37e-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="cd8eb-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cd8eb-126">Authorization</span></span>  | <span data-ttu-id="cd8eb-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="cd8eb-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cd8eb-129">Content-Type</span></span>   | <span data-ttu-id="cd8eb-130">application/json</span><span class="sxs-lookup"><span data-stu-id="cd8eb-130">application/json</span></span> |
+| <span data-ttu-id="db37e-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="db37e-126">Authorization</span></span>  | <span data-ttu-id="db37e-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="db37e-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="db37e-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="db37e-129">Content-Type</span></span>   | <span data-ttu-id="db37e-130">application/json</span><span class="sxs-lookup"><span data-stu-id="db37e-130">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cd8eb-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cd8eb-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="db37e-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="db37e-131">Request body</span></span>
 
-<span data-ttu-id="cd8eb-p105">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="db37e-p105">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="db37e-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="cd8eb-135">Свойство</span><span class="sxs-lookup"><span data-stu-id="cd8eb-135">Property</span></span>   | <span data-ttu-id="cd8eb-136">Тип</span><span class="sxs-lookup"><span data-stu-id="cd8eb-136">Type</span></span> |<span data-ttu-id="cd8eb-137">Описание</span><span class="sxs-lookup"><span data-stu-id="cd8eb-137">Description</span></span>|
+| <span data-ttu-id="db37e-135">Свойство</span><span class="sxs-lookup"><span data-stu-id="db37e-135">Property</span></span>   | <span data-ttu-id="db37e-136">Тип</span><span class="sxs-lookup"><span data-stu-id="db37e-136">Type</span></span> |<span data-ttu-id="db37e-137">Описание</span><span class="sxs-lookup"><span data-stu-id="db37e-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="cd8eb-138">description</span><span class="sxs-lookup"><span data-stu-id="cd8eb-138">description</span></span>|<span data-ttu-id="cd8eb-139">String</span><span class="sxs-lookup"><span data-stu-id="cd8eb-139">String</span></span>|<span data-ttu-id="cd8eb-140">Описание расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-140">Description for the schema extension.</span></span>|
-|<span data-ttu-id="cd8eb-141">properties</span><span class="sxs-lookup"><span data-stu-id="cd8eb-141">properties</span></span>|<span data-ttu-id="cd8eb-142">Коллекция [extensionSchemaProperty](../resources/extensionschemaproperty.md)</span><span class="sxs-lookup"><span data-stu-id="cd8eb-142">[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection</span></span>|<span data-ttu-id="cd8eb-143">Коллекция имен и типов свойств, составляющих определение расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-143">The collection of property names and types that make up the schema extension definition.</span></span> <span data-ttu-id="cd8eb-144">Разрешены только добавочные изменения.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-144">Only additive changes are permitted.</span></span> |
-|<span data-ttu-id="cd8eb-145">status</span><span class="sxs-lookup"><span data-stu-id="cd8eb-145">status</span></span>|<span data-ttu-id="cd8eb-146">String</span><span class="sxs-lookup"><span data-stu-id="cd8eb-146">String</span></span>|<span data-ttu-id="cd8eb-147">Состояние жизненного цикла расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-147">The lifecycle state of the schema extension.</span></span> <span data-ttu-id="cd8eb-148">Начальное состояние при создании **разрабатывается**.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-148">The initial state upon creation is **InDevelopment**.</span></span> <span data-ttu-id="cd8eb-149">Переход между состояниями возможен из **разработки** в **доступном** и **доступном** для **устаревших**состояниях.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-149">Possible states transitions are from **InDevelopment** to **Available** and **Available** to **Deprecated**.</span></span>|
-|<span data-ttu-id="cd8eb-150">targetTypes</span><span class="sxs-lookup"><span data-stu-id="cd8eb-150">targetTypes</span></span>|<span data-ttu-id="cd8eb-151">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="cd8eb-151">String collection</span></span>|<span data-ttu-id="cd8eb-152">Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-152">Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.</span></span>  <span data-ttu-id="cd8eb-153">Разрешены только добавочные изменения.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-153">Only additive changes are permitted.</span></span>|
+|<span data-ttu-id="db37e-138">description</span><span class="sxs-lookup"><span data-stu-id="db37e-138">description</span></span>|<span data-ttu-id="db37e-139">String</span><span class="sxs-lookup"><span data-stu-id="db37e-139">String</span></span>|<span data-ttu-id="db37e-140">Описание расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="db37e-140">Description for the schema extension.</span></span>|
+|<span data-ttu-id="db37e-141">properties</span><span class="sxs-lookup"><span data-stu-id="db37e-141">properties</span></span>|<span data-ttu-id="db37e-142">Коллекция [extensionSchemaProperty](../resources/extensionschemaproperty.md)</span><span class="sxs-lookup"><span data-stu-id="db37e-142">[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection</span></span>|<span data-ttu-id="db37e-143">Коллекция типов и имен свойств, составляющих определение расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="db37e-143">The collection of property names and types that make up the schema extension definition.</span></span> <span data-ttu-id="db37e-144">Разрешены только добавочные изменения.</span><span class="sxs-lookup"><span data-stu-id="db37e-144">Only additive changes are permitted.</span></span> |
+|<span data-ttu-id="db37e-145">status</span><span class="sxs-lookup"><span data-stu-id="db37e-145">status</span></span>|<span data-ttu-id="db37e-146">String</span><span class="sxs-lookup"><span data-stu-id="db37e-146">String</span></span>|<span data-ttu-id="db37e-147">Состояние жизненного цикла расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="db37e-147">The lifecycle state of the schema extension.</span></span> <span data-ttu-id="db37e-148">Начальное состояние при создании **разрабатывается**.</span><span class="sxs-lookup"><span data-stu-id="db37e-148">The initial state upon creation is **InDevelopment**.</span></span> <span data-ttu-id="db37e-149">Переход между состояниями возможен из **разработки** в **доступном** и **доступном** для **устаревших**состояниях.</span><span class="sxs-lookup"><span data-stu-id="db37e-149">Possible states transitions are from **InDevelopment** to **Available** and **Available** to **Deprecated**.</span></span>|
+|<span data-ttu-id="db37e-150">targetTypes</span><span class="sxs-lookup"><span data-stu-id="db37e-150">targetTypes</span></span>|<span data-ttu-id="db37e-151">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="db37e-151">String collection</span></span>|<span data-ttu-id="db37e-152">Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы.</span><span class="sxs-lookup"><span data-stu-id="db37e-152">Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.</span></span>  <span data-ttu-id="db37e-153">Разрешены только добавочные изменения.</span><span class="sxs-lookup"><span data-stu-id="db37e-153">Only additive changes are permitted.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="cd8eb-154">Ответ</span><span class="sxs-lookup"><span data-stu-id="cd8eb-154">Response</span></span>
+## <a name="response"></a><span data-ttu-id="db37e-154">Ответ</span><span class="sxs-lookup"><span data-stu-id="db37e-154">Response</span></span>
 
-<span data-ttu-id="cd8eb-155">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-155">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="db37e-155">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="db37e-155">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cd8eb-156">Пример</span><span class="sxs-lookup"><span data-stu-id="cd8eb-156">Example</span></span>
+## <a name="example"></a><span data-ttu-id="db37e-156">Пример</span><span class="sxs-lookup"><span data-stu-id="db37e-156">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="cd8eb-157">Запрос</span><span class="sxs-lookup"><span data-stu-id="cd8eb-157">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="db37e-157">Запрос</span><span class="sxs-lookup"><span data-stu-id="db37e-157">Request</span></span>
 
-<span data-ttu-id="cd8eb-158">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cd8eb-158">Here is an example of the request.</span></span>
+<span data-ttu-id="db37e-158">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="db37e-158">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="cd8eb-159">HTTP</span><span class="sxs-lookup"><span data-stu-id="cd8eb-159">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="db37e-159">HTTP</span><span class="sxs-lookup"><span data-stu-id="db37e-159">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_schemaextension"
@@ -90,26 +90,26 @@ Content-length: 201
   ],
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="cd8eb-160">C#</span><span class="sxs-lookup"><span data-stu-id="cd8eb-160">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="db37e-160">C#</span><span class="sxs-lookup"><span data-stu-id="db37e-160">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-schemaextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cd8eb-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cd8eb-161">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="db37e-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="db37e-161">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-schemaextension-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cd8eb-162">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cd8eb-162">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="db37e-162">Objective-C</span><span class="sxs-lookup"><span data-stu-id="db37e-162">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-schemaextension-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="cd8eb-163">Java</span><span class="sxs-lookup"><span data-stu-id="cd8eb-163">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="db37e-163">Java</span><span class="sxs-lookup"><span data-stu-id="db37e-163">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-schemaextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="cd8eb-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="cd8eb-164">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="db37e-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="db37e-164">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -120,10 +120,10 @@ Content-length: 201
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a><span data-ttu-id="cd8eb-165">См. также</span><span class="sxs-lookup"><span data-stu-id="cd8eb-165">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="db37e-165">См. также</span><span class="sxs-lookup"><span data-stu-id="db37e-165">See also</span></span>
 
-- [<span data-ttu-id="cd8eb-166">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="cd8eb-166">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="cd8eb-167">Добавление пользовательских данных в группы с помощью расширений схемы</span><span class="sxs-lookup"><span data-stu-id="cd8eb-167">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="db37e-166">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="db37e-166">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="db37e-167">Добавление пользовательских данных в группы с помощью расширений схемы</span><span class="sxs-lookup"><span data-stu-id="db37e-167">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

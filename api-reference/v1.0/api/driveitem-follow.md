@@ -1,6 +1,6 @@
 ---
 author: learafa
-description: Подпишитесь на driveItem.
+description: Отслеживание ресурса driveItem.
 title: Подписаться на диск
 localization_priority: Normal
 ms.prod: sharepoint
@@ -12,25 +12,25 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/03/2020
 ms.locfileid: "43124359"
 ---
-# <a name="follow-drive-item"></a><span data-ttu-id="30d46-103">Подписаться на диск</span><span class="sxs-lookup"><span data-stu-id="30d46-103">Follow drive item</span></span>
+# <a name="follow-drive-item"></a><span data-ttu-id="30aae-103">Подписаться на диск</span><span class="sxs-lookup"><span data-stu-id="30aae-103">Follow drive item</span></span>
 
-<span data-ttu-id="30d46-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="30d46-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="30aae-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="30aae-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="30d46-105">Подпишитесь на [driveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="30d46-105">Follow a [driveItem](../resources/driveitem.md).</span></span>
+<span data-ttu-id="30aae-105">Подпишитесь на [driveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="30aae-105">Follow a [driveItem](../resources/driveitem.md).</span></span>
 
-><span data-ttu-id="30d46-106">**Примечание:** Чтобы отписаться от элемента, ознакомьтесь со статьей [элемент не подписаться](driveitem-unfollow.md).</span><span class="sxs-lookup"><span data-stu-id="30d46-106">**Note:** To unfollow an item, see [Unfollow item](driveitem-unfollow.md).</span></span>
+><span data-ttu-id="30aae-106">**Примечание:** Чтобы отписаться от элемента, ознакомьтесь со статьей [элемент не подписаться](driveitem-unfollow.md).</span><span class="sxs-lookup"><span data-stu-id="30aae-106">**Note:** To unfollow an item, see [Unfollow item](driveitem-unfollow.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="30d46-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="30d46-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="30aae-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="30aae-107">Permissions</span></span>
 
-<span data-ttu-id="30d46-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="30d46-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="30aae-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="30aae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="30d46-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="30d46-110">Permission type</span></span>      | <span data-ttu-id="30d46-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="30d46-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="30aae-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="30aae-110">Permission type</span></span>      | <span data-ttu-id="30aae-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="30aae-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="30d46-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="30d46-112">Delegated (work or school account)</span></span> | <span data-ttu-id="30d46-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="30d46-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="30d46-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="30d46-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="30d46-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="30d46-115">Not supported.</span></span>    |
-|<span data-ttu-id="30d46-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="30d46-116">Application</span></span> | <span data-ttu-id="30d46-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="30d46-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="30aae-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="30aae-112">Delegated (work or school account)</span></span> | <span data-ttu-id="30aae-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="30aae-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="30aae-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="30aae-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="30aae-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="30aae-115">Not supported.</span></span>    |
+|<span data-ttu-id="30aae-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="30aae-116">Application</span></span> | <span data-ttu-id="30aae-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="30aae-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="30d46-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="30d46-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="30aae-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="30aae-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,38 +42,38 @@ POST /sites/{site-id}/drive/items/{item-id}/follow
 POST /users/{user-id}/drive/items/{item-id}/follow
 ```
 
-## <a name="request-body"></a><span data-ttu-id="30d46-119">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="30d46-119">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="30aae-119">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="30aae-119">Request body</span></span>
 
-<span data-ttu-id="30d46-120">Тело запроса не требуется.</span><span class="sxs-lookup"><span data-stu-id="30d46-120">No request body is required.</span></span>
+<span data-ttu-id="30aae-120">Тело запроса не требуется.</span><span class="sxs-lookup"><span data-stu-id="30aae-120">No request body is required.</span></span>
 
-## <a name="response"></a><span data-ttu-id="30d46-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="30d46-121">Response</span></span>
+## <a name="response"></a><span data-ttu-id="30aae-121">Ответ</span><span class="sxs-lookup"><span data-stu-id="30aae-121">Response</span></span>
 
-<span data-ttu-id="30d46-122">Этот метод возвращает объект [DriveItem](../resources/driveitem.md) для отслеживаемого элемента.</span><span class="sxs-lookup"><span data-stu-id="30d46-122">This method returns a [DriveItem](../resources/driveitem.md) for the item being followed.</span></span>
+<span data-ttu-id="30aae-122">Этот метод возвращает объект [DriveItem](../resources/driveitem.md) для отслеживаемого элемента.</span><span class="sxs-lookup"><span data-stu-id="30aae-122">This method returns a [DriveItem](../resources/driveitem.md) for the item being followed.</span></span>
 
-## <a name="example"></a><span data-ttu-id="30d46-123">Пример</span><span class="sxs-lookup"><span data-stu-id="30d46-123">Example</span></span>
+## <a name="example"></a><span data-ttu-id="30aae-123">Пример</span><span class="sxs-lookup"><span data-stu-id="30aae-123">Example</span></span>
 
-<span data-ttu-id="30d46-124">В этом примере используется элемент, `{item-id}`идентифицируемый.</span><span class="sxs-lookup"><span data-stu-id="30d46-124">This example follows an item identified by `{item-id}`.</span></span>
+<span data-ttu-id="30aae-124">В этом примере используется элемент, `{item-id}`идентифицируемый.</span><span class="sxs-lookup"><span data-stu-id="30aae-124">This example follows an item identified by `{item-id}`.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="30d46-125">HTTP</span><span class="sxs-lookup"><span data-stu-id="30d46-125">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="30aae-125">HTTP</span><span class="sxs-lookup"><span data-stu-id="30aae-125">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "follow-item", "scopes": "files.read", "target": "action" } -->
 
 ```http
 POST /me/drive/items/{item-id}/follow
 ```
-# <a name="c"></a>[<span data-ttu-id="30d46-126">C#</span><span class="sxs-lookup"><span data-stu-id="30d46-126">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="30aae-126">C#</span><span class="sxs-lookup"><span data-stu-id="30aae-126">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/follow-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="30d46-127">JavaScript</span><span class="sxs-lookup"><span data-stu-id="30d46-127">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="30aae-127">JavaScript</span><span class="sxs-lookup"><span data-stu-id="30aae-127">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/follow-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="30d46-128">Objective-C</span><span class="sxs-lookup"><span data-stu-id="30d46-128">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="30aae-128">Objective-C</span><span class="sxs-lookup"><span data-stu-id="30aae-128">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/follow-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="30d46-129">Java</span><span class="sxs-lookup"><span data-stu-id="30d46-129">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="30aae-129">Java</span><span class="sxs-lookup"><span data-stu-id="30aae-129">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/follow-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -12,46 +12,46 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42509274"
 ---
-# <a name="delete-tab-from-channel"></a><span data-ttu-id="debda-103">Удаление вкладки из канала</span><span class="sxs-lookup"><span data-stu-id="debda-103">Delete tab from channel</span></span>
+# <a name="delete-tab-from-channel"></a><span data-ttu-id="1a42c-103">Удаление вкладки из канала</span><span class="sxs-lookup"><span data-stu-id="1a42c-103">Delete tab from channel</span></span>
 
-<span data-ttu-id="debda-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="debda-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1a42c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1a42c-104">Namespace: microsoft.graph</span></span>
 
 
 
-<span data-ttu-id="debda-105">Удаляет (открепляет) вкладку из указанного [канала](../resources/channel.md) в [команде](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="debda-105">Removes (unpins) a tab from the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> 
+<span data-ttu-id="1a42c-105">Удаляет (открепляет) вкладку из указанного [канала](../resources/channel.md) в [команде](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="1a42c-105">Removes (unpins) a tab from the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="debda-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="debda-106">Permissions</span></span>
-<span data-ttu-id="debda-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="debda-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1a42c-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1a42c-106">Permissions</span></span>
+<span data-ttu-id="1a42c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1a42c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="debda-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="debda-109">Permission type</span></span>      | <span data-ttu-id="debda-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="debda-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1a42c-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1a42c-109">Permission type</span></span>      | <span data-ttu-id="1a42c-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1a42c-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="debda-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="debda-111">Delegated (work or school account)</span></span> | <span data-ttu-id="debda-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="debda-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="debda-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="debda-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="debda-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="debda-114">Not supported.</span></span>    |
-|<span data-ttu-id="debda-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="debda-115">Application</span></span> | <span data-ttu-id="debda-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="debda-116">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="1a42c-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1a42c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1a42c-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1a42c-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="1a42c-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1a42c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a42c-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1a42c-114">Not supported.</span></span>    |
+|<span data-ttu-id="1a42c-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1a42c-115">Application</span></span> | <span data-ttu-id="1a42c-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1a42c-116">Group.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="debda-117">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="debda-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="debda-118">Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.</span><span class="sxs-lookup"><span data-stu-id="debda-118">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="1a42c-117">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="1a42c-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="1a42c-118">Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.</span><span class="sxs-lookup"><span data-stu-id="1a42c-118">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="debda-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="debda-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1a42c-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1a42c-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /teams/{id}/channels/{id}/tabs/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="debda-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="debda-120">Request headers</span></span>
-| <span data-ttu-id="debda-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="debda-121">Header</span></span>       | <span data-ttu-id="debda-122">Значение</span><span class="sxs-lookup"><span data-stu-id="debda-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="1a42c-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1a42c-120">Request headers</span></span>
+| <span data-ttu-id="1a42c-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1a42c-121">Header</span></span>       | <span data-ttu-id="1a42c-122">Значение</span><span class="sxs-lookup"><span data-stu-id="1a42c-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="debda-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="debda-123">Authorization</span></span>  | <span data-ttu-id="debda-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="debda-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="1a42c-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1a42c-123">Authorization</span></span>  | <span data-ttu-id="1a42c-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1a42c-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="debda-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="debda-126">Request body</span></span>
-<span data-ttu-id="debda-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="debda-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1a42c-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="1a42c-126">Request body</span></span>
+<span data-ttu-id="1a42c-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1a42c-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="debda-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="debda-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1a42c-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="1a42c-128">Response</span></span>
 
-<span data-ttu-id="debda-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="debda-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="1a42c-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="1a42c-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="debda-131">Пример</span><span class="sxs-lookup"><span data-stu-id="debda-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="debda-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="debda-132">Request</span></span>
-<span data-ttu-id="debda-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="debda-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="1a42c-131">Пример</span><span class="sxs-lookup"><span data-stu-id="1a42c-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="1a42c-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="1a42c-132">Request</span></span>
+<span data-ttu-id="1a42c-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1a42c-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -59,8 +59,8 @@ DELETE /teams/{id}/channels/{id}/tabs/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 ```
-#### <a name="response"></a><span data-ttu-id="debda-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="debda-134">Response</span></span>
-<span data-ttu-id="debda-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="debda-135">The following is an example of the response.</span></span> <span data-ttu-id="debda-136">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="debda-136">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="debda-137">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="debda-137">All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="1a42c-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="1a42c-134">Response</span></span>
+<span data-ttu-id="1a42c-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="1a42c-135">The following is an example of the response.</span></span> <span data-ttu-id="1a42c-136">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="1a42c-136">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="1a42c-137">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1a42c-137">All of the properties will be returned from an actual call.</span></span>
 ```http
 HTTP/1.1 204 No Content
 ```

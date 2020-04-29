@@ -12,57 +12,57 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42518695"
 ---
-# <a name="call-playprompt"></a><span data-ttu-id="fa12a-103">Call: Плайпромпт</span><span class="sxs-lookup"><span data-stu-id="fa12a-103">call: playPrompt</span></span>
+# <a name="call-playprompt"></a><span data-ttu-id="47754-103">Call: Плайпромпт</span><span class="sxs-lookup"><span data-stu-id="47754-103">call: playPrompt</span></span>
 
-<span data-ttu-id="fa12a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fa12a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="47754-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="47754-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="fa12a-105">Проигрывать запрос в вызове.</span><span class="sxs-lookup"><span data-stu-id="fa12a-105">Play a prompt in the call.</span></span>
+<span data-ttu-id="47754-105">Проигрывать запрос в вызове.</span><span class="sxs-lookup"><span data-stu-id="47754-105">Play a prompt in the call.</span></span>
 
-<span data-ttu-id="fa12a-106">Дополнительные сведения об обработке операций можно найти в статье [коммсоператион](../resources/commsoperation.md)</span><span class="sxs-lookup"><span data-stu-id="fa12a-106">For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md)</span></span>
+<span data-ttu-id="47754-106">Дополнительные сведения об обработке операций можно найти в статье [коммсоператион](../resources/commsoperation.md)</span><span class="sxs-lookup"><span data-stu-id="47754-106">For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md)</span></span>
 
 > [!Note]
-> <span data-ttu-id="fa12a-107">Действие **плайпромпт** поддерживается только для [вызовов](../resources/call.md) , инициированных с помощью [сервицехостедмедиаконфиг](../resources/servicehostedmediaconfig.md).</span><span class="sxs-lookup"><span data-stu-id="fa12a-107">The **playPrompt** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span></span>
+> <span data-ttu-id="47754-107">Действие **плайпромпт** поддерживается только для [вызовов](../resources/call.md) , инициированных с помощью [сервицехостедмедиаконфиг](../resources/servicehostedmediaconfig.md).</span><span class="sxs-lookup"><span data-stu-id="47754-107">The **playPrompt** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fa12a-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fa12a-108">Permissions</span></span>
-<span data-ttu-id="fa12a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fa12a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="47754-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="47754-108">Permissions</span></span>
+<span data-ttu-id="47754-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="47754-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="fa12a-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fa12a-111">Permission type</span></span>                        | <span data-ttu-id="fa12a-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fa12a-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="47754-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="47754-111">Permission type</span></span>                        | <span data-ttu-id="47754-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="47754-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="fa12a-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fa12a-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="fa12a-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fa12a-114">Not Supported.</span></span>                               |
-| <span data-ttu-id="fa12a-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fa12a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fa12a-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fa12a-116">Not Supported.</span></span>                               |
-| <span data-ttu-id="fa12a-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fa12a-117">Application</span></span>                            | <span data-ttu-id="fa12a-118">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="fa12a-118">None.</span></span>                                        |
+| <span data-ttu-id="47754-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="47754-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="47754-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="47754-114">Not Supported.</span></span>                               |
+| <span data-ttu-id="47754-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="47754-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="47754-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="47754-116">Not Supported.</span></span>                               |
+| <span data-ttu-id="47754-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="47754-117">Application</span></span>                            | <span data-ttu-id="47754-118">Нет.</span><span class="sxs-lookup"><span data-stu-id="47754-118">None.</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="fa12a-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fa12a-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="47754-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="47754-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /communications/calls/{id}/playPrompt
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fa12a-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fa12a-120">Request headers</span></span>
-| <span data-ttu-id="fa12a-121">Имя</span><span class="sxs-lookup"><span data-stu-id="fa12a-121">Name</span></span>          | <span data-ttu-id="fa12a-122">Описание</span><span class="sxs-lookup"><span data-stu-id="fa12a-122">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="47754-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="47754-120">Request headers</span></span>
+| <span data-ttu-id="47754-121">Имя</span><span class="sxs-lookup"><span data-stu-id="47754-121">Name</span></span>          | <span data-ttu-id="47754-122">Описание</span><span class="sxs-lookup"><span data-stu-id="47754-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="fa12a-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fa12a-123">Authorization</span></span> | <span data-ttu-id="fa12a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fa12a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="47754-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="47754-123">Authorization</span></span> | <span data-ttu-id="47754-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="47754-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fa12a-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fa12a-126">Request body</span></span>
-<span data-ttu-id="fa12a-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="fa12a-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="47754-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="47754-126">Request body</span></span>
+<span data-ttu-id="47754-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="47754-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="fa12a-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="fa12a-128">Parameter</span></span>      | <span data-ttu-id="fa12a-129">Тип</span><span class="sxs-lookup"><span data-stu-id="fa12a-129">Type</span></span>    |<span data-ttu-id="fa12a-130">Описание</span><span class="sxs-lookup"><span data-stu-id="fa12a-130">Description</span></span>|
+| <span data-ttu-id="47754-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="47754-128">Parameter</span></span>      | <span data-ttu-id="47754-129">Тип</span><span class="sxs-lookup"><span data-stu-id="47754-129">Type</span></span>    |<span data-ttu-id="47754-130">Описание</span><span class="sxs-lookup"><span data-stu-id="47754-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fa12a-131">выдан</span><span class="sxs-lookup"><span data-stu-id="fa12a-131">prompts</span></span>|<span data-ttu-id="fa12a-132">Коллекция [медиапромпт](../resources/mediaprompt.md)</span><span class="sxs-lookup"><span data-stu-id="fa12a-132">[MediaPrompt](../resources/mediaprompt.md) collection</span></span>| <span data-ttu-id="fa12a-133">Приглашения для воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="fa12a-133">The prompts to be played.</span></span> <span data-ttu-id="fa12a-134">Максимальный поддерживаемый размер коллекции Медиапромпт составляет 20.</span><span class="sxs-lookup"><span data-stu-id="fa12a-134">The maximum supported MediaPrompt collection size is 20.</span></span>|
-|<span data-ttu-id="fa12a-135">Контекст</span><span class="sxs-lookup"><span data-stu-id="fa12a-135">clientContext</span></span>|<span data-ttu-id="fa12a-136">Строка</span><span class="sxs-lookup"><span data-stu-id="fa12a-136">String</span></span>|<span data-ttu-id="fa12a-137">Уникальная строка контекста клиента.</span><span class="sxs-lookup"><span data-stu-id="fa12a-137">Unique client context string.</span></span> <span data-ttu-id="fa12a-138">Может содержать до 256 символов.</span><span class="sxs-lookup"><span data-stu-id="fa12a-138">Can have a maximum of 256 characters.</span></span>|
+|<span data-ttu-id="47754-131">выдан</span><span class="sxs-lookup"><span data-stu-id="47754-131">prompts</span></span>|<span data-ttu-id="47754-132">Коллекция [медиапромпт](../resources/mediaprompt.md)</span><span class="sxs-lookup"><span data-stu-id="47754-132">[MediaPrompt](../resources/mediaprompt.md) collection</span></span>| <span data-ttu-id="47754-133">Приглашения для воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="47754-133">The prompts to be played.</span></span> <span data-ttu-id="47754-134">Максимальный поддерживаемый размер коллекции Медиапромпт составляет 20.</span><span class="sxs-lookup"><span data-stu-id="47754-134">The maximum supported MediaPrompt collection size is 20.</span></span>|
+|<span data-ttu-id="47754-135">Контекст</span><span class="sxs-lookup"><span data-stu-id="47754-135">clientContext</span></span>|<span data-ttu-id="47754-136">String</span><span class="sxs-lookup"><span data-stu-id="47754-136">String</span></span>|<span data-ttu-id="47754-137">Уникальная строка контекста клиента.</span><span class="sxs-lookup"><span data-stu-id="47754-137">Unique client context string.</span></span> <span data-ttu-id="47754-138">Может содержать до 256 символов.</span><span class="sxs-lookup"><span data-stu-id="47754-138">Can have a maximum of 256 characters.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="fa12a-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="fa12a-139">Response</span></span>
-<span data-ttu-id="fa12a-140">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [плайпромптоператион](../resources/playpromptoperation.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="fa12a-140">If successful, this method returns a `200 OK` response code and a [playPromptOperation](../resources/playpromptoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="47754-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="47754-139">Response</span></span>
+<span data-ttu-id="47754-140">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [плайпромптоператион](../resources/playpromptoperation.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="47754-140">If successful, this method returns a `200 OK` response code and a [playPromptOperation](../resources/playpromptoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fa12a-141">Пример</span><span class="sxs-lookup"><span data-stu-id="fa12a-141">Example</span></span>
-<span data-ttu-id="fa12a-142">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="fa12a-142">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="47754-141">Пример</span><span class="sxs-lookup"><span data-stu-id="47754-141">Example</span></span>
+<span data-ttu-id="47754-142">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="47754-142">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="fa12a-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="fa12a-143">Request</span></span>
-<span data-ttu-id="fa12a-144">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fa12a-144">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="47754-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="47754-143">Request</span></span>
+<span data-ttu-id="47754-144">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="47754-144">The following example shows the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="fa12a-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="fa12a-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="47754-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="47754-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-playPrompt"
@@ -86,17 +86,17 @@ Content-Length: 166
   ]
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="fa12a-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fa12a-146">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="47754-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="47754-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-playprompt-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="fa12a-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="fa12a-147">Response</span></span>
-<span data-ttu-id="fa12a-148">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fa12a-148">The following is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="47754-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="47754-147">Response</span></span>
+<span data-ttu-id="47754-148">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="47754-148">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="fa12a-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fa12a-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="47754-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="47754-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -117,7 +117,7 @@ Content-Type: application/json
 
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="fa12a-151">Уведомление о завершении операции</span><span class="sxs-lookup"><span data-stu-id="fa12a-151">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="47754-151">Уведомление о завершении операции</span><span class="sxs-lookup"><span data-stu-id="47754-151">Notification - operation completed</span></span>
  
 ```http
 POST https://bot.contoso.com/api/calls

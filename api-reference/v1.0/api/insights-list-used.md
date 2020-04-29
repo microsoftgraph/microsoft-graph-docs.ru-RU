@@ -12,80 +12,80 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42516705"
 ---
-# <a name="list-used"></a><span data-ttu-id="1e1e2-103">Список "Использованные"</span><span class="sxs-lookup"><span data-stu-id="1e1e2-103">List used</span></span>
+# <a name="list-used"></a><span data-ttu-id="b841b-103">Список "Использованные"</span><span class="sxs-lookup"><span data-stu-id="b841b-103">List used</span></span>
 
-<span data-ttu-id="1e1e2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1e1e2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b841b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b841b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="1e1e2-105">Вычисляемое представление, содержащее список документов, измененных пользователем.</span><span class="sxs-lookup"><span data-stu-id="1e1e2-105">Calculated insight that includes a list of documents the user has modified.</span></span>
+<span data-ttu-id="b841b-105">Вычисляемое представление, содержащее список документов, измененных пользователем.</span><span class="sxs-lookup"><span data-stu-id="b841b-105">Calculated insight that includes a list of documents the user has modified.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1e1e2-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1e1e2-106">Permissions</span></span>
-<span data-ttu-id="1e1e2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1e1e2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b841b-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b841b-106">Permissions</span></span>
+<span data-ttu-id="b841b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b841b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1e1e2-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1e1e2-109">Permission type</span></span>      | <span data-ttu-id="1e1e2-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1e1e2-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b841b-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b841b-109">Permission type</span></span>      | <span data-ttu-id="b841b-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b841b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1e1e2-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1e1e2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1e1e2-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e1e2-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1e1e2-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1e1e2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1e1e2-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1e1e2-114">Not supported.</span></span>    |
-|<span data-ttu-id="1e1e2-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1e1e2-115">Application</span></span> | <span data-ttu-id="1e1e2-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e1e2-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="b841b-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b841b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b841b-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b841b-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b841b-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b841b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b841b-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b841b-114">Not supported.</span></span>    |
+|<span data-ttu-id="b841b-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b841b-115">Application</span></span> | <span data-ttu-id="b841b-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b841b-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1e1e2-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1e1e2-117">HTTP request</span></span>
-<span data-ttu-id="1e1e2-118">Получение списка документов, измененных пользователем, вошедших в систему:</span><span class="sxs-lookup"><span data-stu-id="1e1e2-118">Get a list of documents that the signed-in user has modified:</span></span>
+## <a name="http-request"></a><span data-ttu-id="b841b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b841b-117">HTTP request</span></span>
+<span data-ttu-id="b841b-118">Получение списка документов, измененных пользователем, вошедших в систему:</span><span class="sxs-lookup"><span data-stu-id="b841b-118">Get a list of documents that the signed-in user has modified:</span></span>
 
 ```http
 GET /me/insights/used
 ```
 
-<span data-ttu-id="1e1e2-119">Получение списка документов, измененных указанным пользователем.</span><span class="sxs-lookup"><span data-stu-id="1e1e2-119">Get a list of documents that the specified user has modified.</span></span>
+<span data-ttu-id="b841b-119">Получение списка документов, измененных указанным пользователем.</span><span class="sxs-lookup"><span data-stu-id="b841b-119">Get a list of documents that the specified user has modified.</span></span>
 
-><span data-ttu-id="1e1e2-120">**Примечание**. Запрос документов, **использованных** другим пользователем, возвращает результаты, отсортированные по **lastModifiedDateTime**.</span><span class="sxs-lookup"><span data-stu-id="1e1e2-120">**Note**: Requesting another user's **used** documents returns results sorted by **lastModifiedDateTime**.</span></span> <span data-ttu-id="1e1e2-121">Затем для **свойство lastaccesseddatetime** устанавливается значение **lastModifiedDateTime**.</span><span class="sxs-lookup"><span data-stu-id="1e1e2-121">**lastAccessedDateTime** is then set to **lastModifiedDateTime**.</span></span>
+><span data-ttu-id="b841b-120">**Примечание**. Запрос документов, **использованных** другим пользователем, возвращает результаты, отсортированные по **lastModifiedDateTime**.</span><span class="sxs-lookup"><span data-stu-id="b841b-120">**Note**: Requesting another user's **used** documents returns results sorted by **lastModifiedDateTime**.</span></span> <span data-ttu-id="b841b-121">Затем для **свойство lastaccesseddatetime** устанавливается значение **lastModifiedDateTime**.</span><span class="sxs-lookup"><span data-stu-id="b841b-121">**lastAccessedDateTime** is then set to **lastModifiedDateTime**.</span></span>
 ```http
 GET /users/{id | userPrincipalName}/insights/used
 ```
 
-<span data-ttu-id="1e1e2-122">Разверните ресурс, на который ссылается **использованная** аналитика:</span><span class="sxs-lookup"><span data-stu-id="1e1e2-122">Expand the resource referenced by a **used** insight:</span></span>
+<span data-ttu-id="b841b-122">Разверните ресурс, на который ссылается **использованная** аналитика:</span><span class="sxs-lookup"><span data-stu-id="b841b-122">Expand the resource referenced by a **used** insight:</span></span>
 
 ```http
 GET /me/insights/used/{id}/resource
 GET /users/{id | userPrincipalName}/insights/used/{id}/resource
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1e1e2-123">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="1e1e2-123">Optional query parameters</span></span>
-<span data-ttu-id="1e1e2-124">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="1e1e2-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b841b-123">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="b841b-123">Optional query parameters</span></span>
+<span data-ttu-id="b841b-124">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="b841b-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="1e1e2-125">С помощью параметра `$filter` запроса можно отфильтровать используемые элементы.</span><span class="sxs-lookup"><span data-stu-id="1e1e2-125">You can use the `$filter` query parameter to filter used items.</span></span> <span data-ttu-id="1e1e2-126">Например, на основе **типа**:</span><span class="sxs-lookup"><span data-stu-id="1e1e2-126">For example, based on **type**:</span></span>
+<span data-ttu-id="b841b-125">С помощью параметра `$filter` запроса можно отфильтровать используемые элементы.</span><span class="sxs-lookup"><span data-stu-id="b841b-125">You can use the `$filter` query parameter to filter used items.</span></span> <span data-ttu-id="b841b-126">Например, на основе **типа**:</span><span class="sxs-lookup"><span data-stu-id="b841b-126">For example, based on **type**:</span></span>
 
 `https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-<span data-ttu-id="1e1e2-127">Или на основе **контаинертипе**:</span><span class="sxs-lookup"><span data-stu-id="1e1e2-127">Or based on **containerType**:</span></span>
+<span data-ttu-id="b841b-127">Или на основе **контаинертипе**:</span><span class="sxs-lookup"><span data-stu-id="b841b-127">Or based on **containerType**:</span></span>
 
 `https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-<span data-ttu-id="1e1e2-128">Просмотрите доступные типы и типы контейнеров, которые можно фильтровать в [ресурсе resourcevisualization](../resources/insights-resourcevisualization.md).</span><span class="sxs-lookup"><span data-stu-id="1e1e2-128">See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).</span></span>
+<span data-ttu-id="b841b-128">Просмотрите доступные типы и типы контейнеров, которые можно фильтровать в [ресурсе resourcevisualization](../resources/insights-resourcevisualization.md).</span><span class="sxs-lookup"><span data-stu-id="b841b-128">See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).</span></span>
 
 
-## <a name="request-headers"></a><span data-ttu-id="1e1e2-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1e1e2-129">Request headers</span></span>
-| <span data-ttu-id="1e1e2-130">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1e1e2-130">Header</span></span>       |  <span data-ttu-id="1e1e2-131">Значение</span><span class="sxs-lookup"><span data-stu-id="1e1e2-131">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b841b-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b841b-129">Request headers</span></span>
+| <span data-ttu-id="b841b-130">Заголовок</span><span class="sxs-lookup"><span data-stu-id="b841b-130">Header</span></span>       |  <span data-ttu-id="b841b-131">Значение</span><span class="sxs-lookup"><span data-stu-id="b841b-131">Value</span></span>|
 |:-------------|:------|
-| <span data-ttu-id="1e1e2-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1e1e2-132">Authorization</span></span>  | <span data-ttu-id="1e1e2-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1e1e2-p104">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="1e1e2-135">Accept</span><span class="sxs-lookup"><span data-stu-id="1e1e2-135">Accept</span></span>  | <span data-ttu-id="1e1e2-136">application/json</span><span class="sxs-lookup"><span data-stu-id="1e1e2-136">application/json</span></span>|
+| <span data-ttu-id="b841b-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b841b-132">Authorization</span></span>  | <span data-ttu-id="b841b-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b841b-p104">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="b841b-135">Accept</span><span class="sxs-lookup"><span data-stu-id="b841b-135">Accept</span></span>  | <span data-ttu-id="b841b-136">application/json</span><span class="sxs-lookup"><span data-stu-id="b841b-136">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1e1e2-137">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1e1e2-137">Request body</span></span>
-<span data-ttu-id="1e1e2-138">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1e1e2-138">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b841b-137">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b841b-137">Request body</span></span>
+<span data-ttu-id="b841b-138">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b841b-138">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1e1e2-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="1e1e2-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b841b-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="b841b-139">Response</span></span>
 
-<span data-ttu-id="1e1e2-140">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список [использованных](../resources/insights-used.md) элементов в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="1e1e2-140">If successful, this method returns a `200 OK` response code and a list of [used](../resources/insights-used.md) items in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1e1e2-141">Пример</span><span class="sxs-lookup"><span data-stu-id="1e1e2-141">Example</span></span>
+<span data-ttu-id="b841b-140">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список [использованных](../resources/insights-used.md) элементов в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="b841b-140">If successful, this method returns a `200 OK` response code and a list of [used](../resources/insights-used.md) items in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="b841b-141">Пример</span><span class="sxs-lookup"><span data-stu-id="b841b-141">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="1e1e2-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="1e1e2-142">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="b841b-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="b841b-142">Request</span></span>
 
-<span data-ttu-id="1e1e2-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1e1e2-143">Here is an example of the request.</span></span>
+<span data-ttu-id="b841b-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b841b-143">Here is an example of the request.</span></span>
 ```http
 GET https://graph.microsoft.com/v1.0/me/insights/used
 ```
 
-##### <a name="response"></a><span data-ttu-id="1e1e2-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="1e1e2-144">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b841b-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="b841b-144">Response</span></span>
 
-<span data-ttu-id="1e1e2-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1e1e2-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span> 
+<span data-ttu-id="b841b-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b841b-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span> 
 ```http
 {
     "value": [

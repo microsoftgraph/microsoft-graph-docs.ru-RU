@@ -12,22 +12,22 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42446809"
 ---
-# <a name="timezoneinformation-resource-type"></a><span data-ttu-id="d65f9-104">Тип ресурса timeZoneInformation</span><span class="sxs-lookup"><span data-stu-id="d65f9-104">timeZoneInformation resource type</span></span>
+# <a name="timezoneinformation-resource-type"></a><span data-ttu-id="d0220-104">Тип ресурса timeZoneInformation</span><span class="sxs-lookup"><span data-stu-id="d0220-104">timeZoneInformation resource type</span></span>
 
-<span data-ttu-id="d65f9-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="d65f9-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d0220-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d0220-105">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="d65f9-106">Представляет часовой пояс.</span><span class="sxs-lookup"><span data-stu-id="d65f9-106">Represents a time zone.</span></span> <span data-ttu-id="d65f9-107">Поддерживаются формат Windows и формат [часового пояса IANA](https://www.iana.org/time-zones), также известного как часовой пояс Олсона (после устранения известной проблемы).</span><span class="sxs-lookup"><span data-stu-id="d65f9-107">The supported format is Windows, and [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format as well when the current known problem is fixed.</span></span>
+<span data-ttu-id="d0220-106">Представляет часовой пояс.</span><span class="sxs-lookup"><span data-stu-id="d0220-106">Represents a time zone.</span></span> <span data-ttu-id="d0220-107">Поддерживаются формат Windows и формат [часового пояса IANA](https://www.iana.org/time-zones), также известного как часовой пояс Олсона (после устранения известной проблемы).</span><span class="sxs-lookup"><span data-stu-id="d0220-107">The supported format is Windows, and [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format as well when the current known problem is fixed.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d65f9-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="d65f9-108">Properties</span></span>
-| <span data-ttu-id="d65f9-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="d65f9-109">Property</span></span>     | <span data-ttu-id="d65f9-110">Тип</span><span class="sxs-lookup"><span data-stu-id="d65f9-110">Type</span></span>   |<span data-ttu-id="d65f9-111">Описание</span><span class="sxs-lookup"><span data-stu-id="d65f9-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d0220-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="d0220-108">Properties</span></span>
+| <span data-ttu-id="d0220-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="d0220-109">Property</span></span>     | <span data-ttu-id="d0220-110">Тип</span><span class="sxs-lookup"><span data-stu-id="d0220-110">Type</span></span>   |<span data-ttu-id="d0220-111">Описание</span><span class="sxs-lookup"><span data-stu-id="d0220-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d65f9-112">alias</span><span class="sxs-lookup"><span data-stu-id="d65f9-112">alias</span></span>|<span data-ttu-id="d65f9-113">string</span><span class="sxs-lookup"><span data-stu-id="d65f9-113">string</span></span>|<span data-ttu-id="d65f9-114">Идентификатор часового пояса.</span><span class="sxs-lookup"><span data-stu-id="d65f9-114">An identifier for the time zone.</span></span>|
-|<span data-ttu-id="d65f9-115">displayName</span><span class="sxs-lookup"><span data-stu-id="d65f9-115">displayName</span></span>|<span data-ttu-id="d65f9-116">string</span><span class="sxs-lookup"><span data-stu-id="d65f9-116">string</span></span>|<span data-ttu-id="d65f9-117">Отображаемое имя часового пояса.</span><span class="sxs-lookup"><span data-stu-id="d65f9-117">A display string that represents the time zone.</span></span>|
+|<span data-ttu-id="d0220-112">alias</span><span class="sxs-lookup"><span data-stu-id="d0220-112">alias</span></span>|<span data-ttu-id="d0220-113">string</span><span class="sxs-lookup"><span data-stu-id="d0220-113">string</span></span>|<span data-ttu-id="d0220-114">Идентификатор часового пояса.</span><span class="sxs-lookup"><span data-stu-id="d0220-114">An identifier for the time zone.</span></span>|
+|<span data-ttu-id="d0220-115">displayName</span><span class="sxs-lookup"><span data-stu-id="d0220-115">displayName</span></span>|<span data-ttu-id="d0220-116">string</span><span class="sxs-lookup"><span data-stu-id="d0220-116">string</span></span>|<span data-ttu-id="d0220-117">Отображаемое имя часового пояса.</span><span class="sxs-lookup"><span data-stu-id="d0220-117">A display string that represents the time zone.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d65f9-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d65f9-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d0220-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d0220-118">JSON representation</span></span>
 
-<span data-ttu-id="d65f9-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d65f9-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d0220-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d0220-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
