@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 0d88d67f9a98292cac4c8a74694f6d09f4eb0916
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 70872cb67dd69be3fb363362f9de6070cedcddda
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917329"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934810"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -77,6 +77,19 @@ ms.locfileid: "43917329"
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлены действия по [регистрации](/graph/api/driveitem-checkin?view=graph-rest-v1.0) и [извлечению](/graph/api/driveitem-checkin?view=graph-rest-v1.0) на ресурсе [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0) |
 
+### <a name="files-onedrive-for-business"></a>Файлы (OneDrive для бизнеса)
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение        | Бета        | Добавил свойство навигации [folowedSites](/graph/api/sites-list-followed?view=graph-rest-beta) в набор [пользовательских](/graph/api/resources/user?view=graph-rest-beta) сущностей |
+| Дополнение        | 1.0        | Добавил свойство навигации [folowedSites](/graph/api/sites-list-followed?view=graph-rest-1.0) в набор [пользовательских](/graph/api/resources/user?view=graph-rest-1.0) сущностей |
+| Дополнение        | 1.0        | Добавлены свойства **expirationDateTime**, **password**и **message** в действии [createLink][/graph/api/driveitem-createlink?view=graph-rest-1.0] для ресурса [driveItem](/graph/resources/driveitem?view=graph-rest-1.0). |
+| Дополнение        | 1.0        | Добавлено свойство **dataLocaton** на ресурсе [siteCollection](/graph/resources/sitecollection?view=graph-rest-1.0). |
+| Дополнение        | 1.0        | Добавлено свойство **preventsDownload** на ресурсе [sharingLink](/graph/resources/sharinglink?view=graph-rest-1.0). |
+| Дополнение        | 1.0        | Добавлено свойство **tenantId** в ресурс [sharepointIds](/graph/resources/sharepointids?view=graph-rest-1.0). |
+| Дополнение        | 1.0        | Добавлено свойство **разрешения** в ресурс [sharedDriveItem](/graph/resources/shareddriveitem?view=graph-rest-1.0). |
+| Дополнение        | 1.0        | Добавлены свойства **expirationDateTime**, **hasPassword** и **grantedToIdentities** для ресурса [разрешений](/graph/resources/permission?view=graph-rest-1.0). |
+| Дополнение        | 1.0        | Добавлены свойства **expirationDateTime** и **пароль** для действия [приглашения](/graph/api/driveitem-invite?view=graph-rest-1.0) на ресурсе [driveItem](/graph/resources/driveitem?view=graph-rest-1.0). |
 
 ### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
 
@@ -2285,7 +2298,7 @@ ms.locfileid: "43917329"
 | :-------------- | :------------ | :--------------------------------------- |
 |Изменение|бета|Обновлен ресурс [chatmessage](/graph/api/resources/chatmessage?view=graph-rest-beta)|
 |Дополнение|Бета-версия|Добавлен тип ресурса [вложения для чата](/graph/api/resources/chatmessageattachment?view=graph-rest-beta)|
-|Дополнение|бета|Добавлен тип ресурса [упоминания для чата](/graph/api/resources/chatmessageattachment?view=graph-rest-beta)|
+|Дополнение|Бета-версия|Добавлен тип ресурса [упоминания для чата](/graph/api/resources/chatmessageattachment?view=graph-rest-beta)|
 |Дополнение|Бета-версия|Добавлен тип ресурса [реакции для чата](/graph/api/resources/chatmessageattachment?view=graph-rest-beta)|
 |Дополнение|Бета-версия|Добавлен [API получения всех сообщений в канале](/graph/api/channel-list-messages?view=graph-rest-beta) |
 |Дополнение|Бета-версия|Добавлена возможность [получения API сообщений в канале](/graph/api/channel-get-message?view=graph-rest-beta) |
@@ -4088,7 +4101,7 @@ ms.locfileid: "43917329"
 | Изменение      | Бета    | Добавлены свойства **createdDateTime** и **lastModifiedDateTime** к объекту [managedAppPolicy](/graph/api/resources/intune-mam-managedapppolicy?view=graph-rest-beta). |
 | Изменение      | Бета    | Удалено свойство **deviceRegistrationState** из объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
 | Изменение      | Бета    | Добавлено свойство **manifest** к объекту [mobileAppContentFile](/graph/api/resources/intune-apps-mobileappcontentfile?view=graph-rest-beta). |
-| Изменение      | Бета    | Добавлены свойства **osDescription** и **userName** к объекту [mobileAppInstallStatus](/graph/api/resources/intune-apps-mobileappinstallstatus?view=graph-rest-beta). |
+| Изменение      | бета    | Добавлены свойства **osDescription** и **userName** к объекту [mobileAppInstallStatus](/graph/api/resources/intune-apps-mobileappinstallstatus?view=graph-rest-beta). |
 | Изменение      | Бета    | Удалено свойство **deviceType** из объекта [mobileAppInstallStatus](/graph/api/resources/intune-apps-mobileappinstallstatus?view=graph-rest-beta). |
 | Изменение      | Бета    | Изменен тип следующих свойств объекта [mobileAppInstallStatus](/graph/api/resources/intune-apps-mobileappinstallstatus?view=graph-rest-beta):<br/>**mobileAppInstallStatusValue** (с Int32 на String) |
 | Изменение      | Бета    | Добавлены свойства **targetedSecurityGroupIds** и **targetedSecurityGroupsCount** к объекту [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-beta). |
@@ -4372,7 +4385,7 @@ ms.locfileid: "43917329"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Существенные изменения | Бета        | Свойство _settingTemplateId_ теперь называется _templateId_. Это изменение вступило в силу 19 мая 2016 г. |
+| Существенные изменения | бета        | Свойство _settingTemplateId_ теперь называется _templateId_. Это изменение вступило в силу 19 мая 2016 г. |
 
 ### <a name="calendar-outlook"></a>Календарь (Outlook)
 

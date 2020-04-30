@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a4d215fa25ad0d31964fd0ca512a251b13268a45
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: eada468003831d44c35a49c34f3a2d73d232f6e4
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43511038"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43935079"
 ---
 ```javascript
 
@@ -41,7 +41,6 @@ const event = {
       type: "required"
     }
   ],
-  allowNewTimeProposals: true,
   isOnlineMeeting: true,
   onlineMeetingProvider: "teamsForBusiness"
 };
