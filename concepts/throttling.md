@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: f1837551b5ee863769277a3ed023afa21f3c7c92
-ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
+ms.openlocfilehash: 7f14491ade48411421e0115d3703a428832254cb
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43581641"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917429"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -148,3 +148,12 @@ Microsoft Graph позволяет получать доступ к данным
 Приложение может отправлять в определенный канал не более 3000 сообщений в день.
 
 См. Также [ограничения Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) и [требования к опросу](/graph/api/resources/teams-api-overview#polling-requirements).
+
+### <a name="microsoft-graph-change-notifications-subscription-operations"></a>Операции подписки на уведомления об изменениях в Microsoft Graph
+
+Указанные ниже ограничения применяются к любому запросу в `/subscriptions`.
+
+| Операция                 | Ограничение на приложение по клиенту     | Ограничение на приложение по всем клиентам |
+|---------------------------|------------------------------|-----------------------------------|
+| POST, PUT, DELETE, PATCH  | 1000 запросов за 20 секунд | 2000 запросов за 20 секунд      |
+| Все остальные методы HTTP    | 5000 запросов за 20 секунд | 10000 запросов за 20 секунд     |
