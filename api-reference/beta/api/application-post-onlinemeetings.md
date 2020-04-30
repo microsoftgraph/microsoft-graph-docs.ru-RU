@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9fe122c20a2b8eaef32a72c5dea6784e189b9174
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 9f85832dc557a2e2242c30cd983cfb9800382176
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805947"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934712"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
@@ -31,7 +31,7 @@ ms.locfileid: "43805947"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
 | Для приложений                            | OnlineMeetings.ReadWrite.All*  |
 
-> \* **Примечание.** Поддержка разрешений приложений прекращается, и они будут удалены в июле 2020 г. Чтобы создать собрание по сети с использованием разрешений приложений, см. статью [Создание события](user-post-events.md).
+> \* **Примечание.** Поддержка разрешений приложений прекращается, и они будут удалены в июле 2020 г. Чтобы создать событие Outlook с использованием разрешений приложений, см. статью [Создание события](user-post-events.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

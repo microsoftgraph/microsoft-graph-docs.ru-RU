@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: be567e1ba44790c54127ccee17dbb0d396f15e0c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a3389737581e9c327ff48e9ff3065c399c568cb8
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520557"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934880"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -36,6 +36,7 @@ ms.locfileid: "42520557"
 | [Поиск сайтов][]           | GET /sites?search={query}
 | [Отслеживание сайта][]                | POST /users/{user-id}/followedSites/add
 | [Прекращение отслеживания сайта][]              | POST /users/{user-id}/followedSites/remove
+| [Перечисление отслеживаемых сайтов][]        | POST /me/followedSites
 
 [Получение сайта]: ../api/site-get.md
 [Получение корневого сайта]: ../api/site-get.md
@@ -48,6 +49,7 @@ ms.locfileid: "42520557"
 [Поиск сайтов]: ../api/site-search.md
 [Отслеживание сайта]: ../api/site-follow.md
 [Прекращение отслеживания сайта]: ../api/site-unfollow.md
+[Перечисление отслеживаемых сайтов]: ../api/sites-list-followed.md
 
 
 ## <a name="properties"></a>Свойства

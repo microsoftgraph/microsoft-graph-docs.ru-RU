@@ -5,16 +5,18 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3420f229d26ecbcce1a39de03c50dd084c828d94
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d11d5043e759900810315d4b3e3af8310cb996f0
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447061"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934908"
 ---
 # <a name="profilephoto-resource-type"></a>Тип ресурса profilePhoto
 
-Пространство имен: microsoft.graph Фотография профиля пользователя, группы или контакта Outlook из Exchange Online. Это двоичные данные, не представленные в кодировке base-64.
+Пространство имен: microsoft.graph
+
+Фотография профиля пользователя, группы или контакта Outlook из Exchange Online. Это двоичные данные, не представленные в кодировке base-64.
 
 Поддерживаемые размеры фотографий в формате HD для Exchange Online: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 и 648x648. 
 

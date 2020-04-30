@@ -7,12 +7,12 @@ localization_priority: Priority
 description: Ресурс Permission содержит сведения о разрешении на совместный доступ, предоставленном для ресурса DriveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 770a57c3e8a0fa5bd0579bbfeb6e4fab5089cca2
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: 5c4b881aaf10a56b65342dccebd417867c2b7b26
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146417"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934705"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса Permission
 
@@ -32,9 +32,12 @@ ms.locfileid: "43146417"
   "optionalProperties": [
     "link",
     "grantedTo",
+    "grantedToIdentities",
     "invitation",
     "inheritedFrom",
-    "shareId"
+    "shareId",
+    "expirationDateTime",
+    "hasPassword"
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
@@ -44,11 +47,14 @@ ms.locfileid: "43146417"
 {
   "id": "string (identifier)",
   "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
+  "grantedToIdentities": [{"@odata.type": "microsoft.graph.identitySet"}],
   "inheritedFrom": {"@odata.type": "microsoft.graph.itemReference"},
   "invitation": {"@odata.type": "microsoft.graph.sharingInvitation"},
   "link": {"@odata.type": "microsoft.graph.sharingLink"},
   "roles": ["string"],
-  "shareId": "string"
+  "shareId": "string",
+  "expirationDateTime": "string (timestamp)",
+  "hasPassword": "boolean"
 }
 ```
 
@@ -58,11 +64,14 @@ ms.locfileid: "43146417"
 |:--------------|:------------------------------------------|:-----------------
 | id            | Строка                                    | Уникальный идентификатор разрешения среди всех разрешений для элемента. Только для чтения.
 | grantedTo     | [IdentitySet](identityset.md)             | Для разрешений типа user: сведения о пользователях и приложениях для этого разрешения. Только для чтения.
+| grantedToIdentities | Collection([IdentitySet](identityset.md)) | Для разрешений типа link: сведения о пользователях, которым предоставлено разрешение. Только для чтения.
 | invitation    | [SharingInvitation][]                     | Сведения обо всех сопоставленных приглашениях к совместному использованию для данного разрешения. Только для чтения.
 | inheritedFrom | [ItemReference](itemreference.md)         | Предоставляет ссылку на предка текущего разрешения, если оно унаследовано от предка. Только для чтения.
 | ссылка          | [SharingLink][]                           | Предоставляет сведения о ссылке для текущего разрешения, если это разрешение типа link. Только для чтения.
 | roles         | Коллекция строк                      | Тип разрешения, например `read`. Полный список ролей см. ниже. Только для чтения.
 | shareId       | Строка                                    | Уникальный токен, с помощью которого можно получить доступ к общему элементу через [API **shares**](../api/shares-get.md). Только для чтения.
+| expirationDateTime  | DateTimeOffset              | Формат гггг-ММ-ддTЧЧ:мм:ссZ свойства DateTimeOffset указывает время окончания срока действия разрешения. DateTime.MinValue указывает, что для этого разрешения не установлен срок действия. Необязательно.
+| hasPassword         | Логическое                     | Указывает, настроен ли для этого разрешения пароль. Отображается только в отклике. Необязательно, только для чтения и предназначено только для OneDrive персональный.
 
 Ресурс Permission предоставляет сведения о типе разрешения, представленного ресурсом, с помощью _аспектов_.
 
@@ -98,7 +107,8 @@ ms.locfileid: "43146417"
     "webUrl": "https://onedrive.live.com/redir?resid=5D33DD65C6932946!70859&authkey=!AL7N1QAfSWcjNU8&ithint=folder%2cgif",
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
-  "shareId": "!LKj1lkdlals90j1nlkascl"
+  "shareId": "!LKj1lkdlals90j1nlkascl",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -115,7 +125,40 @@ ms.locfileid: "43146417"
     "webUrl": "https://onedrive.live.com/redir?resid=5D33DD65C6932946!70859&authkey=!AL7N1QAfSWcjNU8&ithint=folder%2cgif",
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
-  "shareId": "!LKj1lkdlals90j1nlkascl"
+  "shareId": "!LKj1lkdlals90j1nlkascl",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
+}
+```
+### <a name="specific-people-link"></a>Ссылка для определенных пользователей
+
+Эта ссылка предоставляет доступ для чтения и записи определенным пользователям в коллекции `grantedToIdentities`.
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
+
+```json
+{
+  "id": "3",
+  "grantedToIdentities": [
+    {
+       "user": {
+        "id": "35fij1974gb8832",
+        "displayName": "Misty Suarez"
+      }
+    },
+    {
+       "user": {
+        "id": "9397721fh4hgh73",
+        "displayName": "Judith Clemons"
+      }
+    }
+  ],
+  "roles": ["write"],
+  "link": {
+    "webUrl": "https://contoso.sharepoint.com/:w:/t/design/a577ghg9hgh737613bmbjf839026561fmzhsr85ng9f3hjck2t5s",
+    "application": { "id": "1234", "displayName": "Sample Application" }
+  },
+  "shareId": "!LKj1lkdlals90j1nlkascl",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -153,7 +196,8 @@ ms.locfileid: "43146417"
     "email": "jd@gmail.com",
     "signInRequired": true
   },
-  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U"
+  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -174,7 +218,8 @@ ms.locfileid: "43146417"
     "email": "jd@outlook.com",
     "signInRequired": true
   },
-  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U"
+  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
