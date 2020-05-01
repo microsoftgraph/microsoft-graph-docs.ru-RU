@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5a30e9378cceb5c1dd533f62bc28be097660536f
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9f14a39442a5119a9965753669c5837a46f8fc88
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218964"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991812"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>Обновление unifiedRoleAssignmentMultiple
 
@@ -26,9 +26,9 @@ ms.locfileid: "43218964"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Ролеманажемент. ReadWrite. Directory |
+| Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | Ролеманажемент. Read. Directory, Ролеманажемент. ReadWrite. Directory |
+| Для приложений | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ PATCH /roleManagement/deviceManagement/roleAssignments
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [унифиедассигнментмултипле](../resources/unifiedroleassignmentMultiple.md) в тексте отклика.
 

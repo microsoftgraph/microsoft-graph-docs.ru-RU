@@ -5,15 +5,13 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 67b55dc01cbbc9ae5188e93a5bf24248e2ded483
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 2097f67c23923d7d61c8a16aa389487ee6a45de8
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948389"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991826"
 ---
-# <a name="enum-values"></a>Значения перечисления
-
 Пространство имен: microsoft.graph
 
 ### <a name="attachmenttype-values"></a>значения attachmentType
@@ -428,7 +426,7 @@ ms.locfileid: "42948389"
 | NotStarted
 | Работает
 | Completed
-| Ошибка
+| Не выполнено
 
 
 ### <a name="onenotepatchactiontype-values"></a>значения Оненотепатчактионтипе
@@ -535,7 +533,7 @@ ms.locfileid: "42948389"
 | Member
 |:---------------------
 | Unknown
-| OneDrive
+| OneDrive;
 | онедривефорбусинесс
 | онпремонедривефорбусинесс
 
@@ -1103,7 +1101,7 @@ Enum для типов значений реестра, определенных
 |:---|:---|
 |Нет|нуль|
 |High (Высокий)|1,1|
-|Низкий|2|
+|Низкая|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения Среатассессментконтенттипе
 
