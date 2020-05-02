@@ -5,16 +5,18 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c24668a6a33c41b32fed67462d57a984745d32b1
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 90a332f7dba8ec19dc84d440ecff76d4c303d108
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124135"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991761"
 ---
 # <a name="create-conversation-thread"></a>Создание цепочки беседы
 
-Пространство имен: Microsoft. Graph начните новую беседу группы, создавая сначала поток. 
+Пространство имен: microsoft.graph
+
+Начните групповой чат, создав цепочку. 
 
 В группе создаются беседа, цепочка беседы и запись. Размещать в цепочке дальнейшие записи можно с помощью ответов на [цепочки](conversationthread-reply.md) и [записи](post-reply.md).
 
@@ -40,7 +42,7 @@ POST /groups/{id}/threads
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [conversationThread](../resources/conversationthread.md), содержащего объект [post](../resources/post.md), в формате JSON.
 
 ## <a name="response"></a>Отклик

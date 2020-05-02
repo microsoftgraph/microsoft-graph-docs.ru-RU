@@ -5,16 +5,22 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: e78f4226b2b2a2a100c4e3dedfa096d1120c91b8
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 6f2a9c2b59661e820a89268f83c3868d29b9f558
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229488"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991833"
 ---
-# <a name="enum-values"></a>Значения перечисления
-
 Пространство имен: microsoft.graph
+
+### <a name="attachmenttype-values"></a>значения attachmentType
+
+| Member
+|:--------------
+| file
+| item
+| ссылка
 
 ### <a name="contactrelationship-values"></a>значения Контактрелатионшип
 
@@ -269,7 +275,7 @@ ms.locfileid: "43229488"
 | NotStarted
 | Работает
 | Completed
-| Ошибка
+| Не выполнено
 
 
 ### <a name="onenotepatchactiontype-values"></a>значения Оненотепатчактионтипе
@@ -376,7 +382,7 @@ ms.locfileid: "43229488"
 | Member
 |:---------------------
 | Unknown
-| OneDrive
+| OneDrive;
 | онедривефорбусинесс
 | онпремонедривефорбусинесс
 

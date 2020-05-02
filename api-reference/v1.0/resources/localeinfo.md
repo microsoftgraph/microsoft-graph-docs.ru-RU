@@ -2,15 +2,15 @@
 title: Тип ресурса localeInfo
 description: Сведения о языковом стандарте, в частности предпочитаемом языке и стране или регионе, вошедшего пользователя.
 localization_priority: Normal
-author: ''
-ms.prod: ''
+author: svpsiva
+ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4b393038a1728b26b827ba4f577bfd6bd449cd41
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 06fa04c528591e5a6353b73b13fbca302e95cca3
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447551"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991805"
 ---
 # <a name="localeinfo-resource-type"></a>Тип ресурса localeInfo
 
