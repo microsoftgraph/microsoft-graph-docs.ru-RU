@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a994c3a5aa3e9077169afabf3098dcc82c867dcd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0dc07c3c649cb472abc2a33a819fcaf9a7935589
+ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455839"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44006323"
 ---
 # <a name="get-place"></a>Получение
 
@@ -45,13 +45,9 @@ GET /places/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Используйте $select, чтобы получить конкретные свойства **места** .
 
-Этот метод поддерживает следующие параметры запроса, помогающие настроить ответ:
-* $filter
-* $select
-* $top
-
-Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Дополнительные сведения о параметрах запроса OData: [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,11 +55,11 @@ GET /places/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [Place](../resources/place.md) в тексте отклика.
 

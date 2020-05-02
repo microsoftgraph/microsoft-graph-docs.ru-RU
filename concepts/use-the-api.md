@@ -4,12 +4,12 @@ description: Microsoft Graph — это соответствующий огра
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e374f124824705cc88aa7f991d99f2c99e7caa9a
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 54d22a0f0b1b18eeaaaf8bda317d8dc08d0448ee
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510506"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991742"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Использование API Microsoft Graph
 
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:0
 
 Postman — это инструмент, который можно использовать для создания и тестирования запросов с помощью API Microsoft Graph. Вы можете скачать Postman по адресу: `https://www.getpostman.com/`. Чтобы взаимодействовать с Microsoft Graph в Postman, используйте коллекцию Microsoft Graph.
 
-Дополнительные сведения см. в статье [Использование Postman с API Microsoft Graph](https://docs.microsoft.comgraph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta).
+Дополнительные сведения см. в статье [Использование Postman с API Microsoft Graph](https://docs.microsoft.com/graph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

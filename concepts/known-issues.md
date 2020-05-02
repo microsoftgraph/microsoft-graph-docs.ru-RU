@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: e673e03ea0750fbdbb6c289ceff114b4f5ea1a71
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: efe8d631437761da775fb029d88fa59b36a138c0
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543179"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991840"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -75,6 +75,9 @@ GET /me/calendars/{id}/events
 * Вы можете добавить календарь ICS в почтовый ящик пользователя через интерфейс пользователя, но не через API Microsoft Graph.
 * [Перечисление календарей пользователя](/graph/api/user-list-calendars?view=graph-rest-1.0) позволяет получить свойства **name**, **color** и **id** всех [календарей](/graph/api/resources/calendar?view=graph-rest-1.0) в группе календарей пользователя по умолчанию или указанной группе календарей, в том числе календарей ICS. URL-адрес ICS невозможно хранить и открывать в ресурсе calendar.
 * Вы также можете [отобразить события](/graph/api/calendar-list-events?view=graph-rest-1.0) календаря ICS.
+
+### <a name="attaching-large-files-to-events"></a>Прикрепление больших файлов к событиям
+Приложение с делегированными разрешениями возвращает `HTTP 403 Forbidden` при попытке [присоединить большие файлы](outlook-large-attachments.md) к сообщению Outlook или событию, которое находится в общем или делегированном почтовом ящике. С делегированными разрешениями [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) завершается успешно, только если сообщение или событие находятся в почтовом ящике вошедшего в систему пользователя.
 
 ### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Поддержка свойства onlineMeetingUrl для Microsoft Teams
 
@@ -304,7 +307,7 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 ## <a name="mail-outlook"></a>Почта (Outlook)
 
 ### <a name="attaching-large-files-to-messages"></a>Вложение больших файлов в сообщения
-Приложение с делегированными разрешениями возвращает `HTTP 403 Forbidden` при попытке [вложить большие файлы](outlook-large-attachments.md) в сообщение Outlook в общем или делегированном почтовом ящике. С делегированными разрешениями [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) выполняется успешно только в том случае, если сообщение находится в почтовом ящике вошедшего пользователя.
+Приложение с делегированными разрешениями возвращает `HTTP 403 Forbidden` при попытке [присоединить большие файлы](outlook-large-attachments.md) к сообщению Outlook или событию, которое находится в общем или делегированном почтовом ящике. С делегированными разрешениями [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) завершается успешно, только если сообщение или событие находятся в почтовом ящике вошедшего в систему пользователя.
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>Параметр comment для создания черновика
 

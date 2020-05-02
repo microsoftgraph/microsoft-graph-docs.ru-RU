@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ee17676564f747064e08066c830e7ebc21d36805
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 704bb439bfab3a35f6cebb191430b27b7444e418
+ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455827"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44006351"
 ---
 # <a name="list-places"></a>Список мест
 
@@ -26,6 +26,8 @@ ms.locfileid: "42455827"
 * [Список помещений](../resources/roomlist.md) , включающий адрес электронной почты для списка помещений, и свойство навигации для получения коллекции экземпляров комнаты в списке помещений. 
 
 **Комната** и **RoomList принимают одиночные** являются производными от объекта **Place** .
+
+По умолчанию эта операция возвращает число почтовых мест в 100 на страницу. 
 
 В сравнении с функциями [финдрумс](../api/user-findrooms.md) и [финдрумлистс](../api/user-findroomlists.md) эта операция возвращает расширенные полезные данные для комнат и списков помещений. Подробнее [о](../resources/place.md#using-the-places-api) том, как они сравниваются.
 
@@ -64,8 +66,14 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 >**Note**: для получения комнат в списке помещений необходимо указать список помещений по свойству **EmailAddress** , а не по **идентификатору**. 
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает следующие параметры запроса, помогающие настроить ответ:
+- $filter
+- $select
+- $top
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Используйте $top, чтобы настроить размер страницы. Размер страницы по умолчанию — 100.
+
+Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -73,11 +81,11 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Place](../resources/place.md) в тексте отклика.
 
