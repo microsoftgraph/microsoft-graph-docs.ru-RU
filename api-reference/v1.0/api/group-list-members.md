@@ -5,16 +5,18 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fdb70c70f066c459b2188e90fce40ed73adc0050
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: fa1852b52ec5f8e2651666076d2adb544544208c
+ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181717"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44006344"
 ---
 # <a name="list-members"></a>Список участников
 
-Пространство имен: microsoft.graph. Получение списка непосредственных участников группы. Участниками групп могут быть пользователи, контакты организации и другие группы. Эта операция не является транзитивной.
+Пространство имен: microsoft.graph
+
+Получение списка непосредственных участников группы. Участниками групп могут быть пользователи, контакты организации и другие группы. Эта операция не является транзитивной.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
