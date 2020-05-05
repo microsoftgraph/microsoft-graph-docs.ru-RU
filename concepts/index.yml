@@ -49,7 +49,7 @@ conceptualContent:
       text: Подключение к данным Microsoft Graph
     - url: https://developer.microsoft.com/graph/quick-start
       itemType: quickstart
-      text: Quickstarts
+      text: Примеры использования
     - url: /graph/tutorials
       itemType: tutorial
       text: Учебники
@@ -63,7 +63,7 @@ conceptualContent:
       text: Командная работа
     - url: /graph/onedrive-concept-overview
       itemType: overview
-      text: Files
+      text: Файлы
     - url: /graph/outlook-calendar-concept-overview
       itemType: overview
       text: Календарь

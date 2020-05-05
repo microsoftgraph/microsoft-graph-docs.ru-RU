@@ -94,7 +94,7 @@ sections:
             title: Xamarin
           - image:
               src: ../images/index/logo_reactnative.svg
-            title: Собственный реагирующий
+            title: React Native
         rows:
           - title: Microsoft
             values:
