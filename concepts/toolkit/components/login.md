@@ -3,12 +3,12 @@ title: Компонент входа в набор средств Microsoft Grap
 description: Компонент входа — это кнопка и всплывающий элемент управления для упрощения проверки подлинности на платформе Microsoft Identity.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: b269ddda5c4c71517e77a7ed038daeeb0d920403
-ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
+ms.openlocfilehash: 0ac0c39fea0f6cb2712bd69663256b4634ed7bc0
+ms.sourcegitcommit: 889096fb1821ee90ffa1b2dcce046efd6e97acef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "43812557"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022812"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Компонент входа в набор средств Microsoft Graph
 
@@ -38,7 +38,7 @@ ms.locfileid: "43812557"
 let loginControl = document.getElementById('myLoginControl');
 loginControl.userDetails = {
     displayName: 'Nikola Metulev',
-    email: 'nikola@contoso.com',
+    mail: 'nikola@contoso.com',
     personImage: 'url'
 }
 ```

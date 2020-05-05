@@ -3,12 +3,12 @@ title: Компонент Person в наборе инструментов Micros
 description: Компонент Person используется для отображения человека или контакта, используя фотографию, имя и/или адрес электронной почты.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: a23d5432c868881f05c04b84626962d684f7d1eb
-ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
+ms.openlocfilehash: 097dd2030f6622d067c26875a717568c1b3ef8c2
+ms.sourcegitcommit: 889096fb1821ee90ffa1b2dcce046efd6e97acef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "43812550"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022798"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент Person в наборе инструментов Microsoft Graph
 
@@ -39,7 +39,7 @@ ms.locfileid: "43812550"
     let personControl = document.getElementById('myPersonControl');
     personControl.personDetails = {
         displayName: 'Nikola Metulev',
-        email: 'nikola@contoso.com',
+        mail: 'nikola@contoso.com',
         personImage: 'url'
     }
     ```
@@ -124,7 +124,7 @@ mgt-person {
 
 Этот элемент управления использует указанные ниже API и разрешения Microsoft Graph.
 
-| Resource                                                                                                    | Разрешение     |
+| Ресурс                                                                                                    | Разрешение     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
 | [/ме](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
 | [/ме/фото/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |

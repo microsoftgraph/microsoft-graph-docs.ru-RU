@@ -5,16 +5,18 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 869ea2c0cebcce8957abfc32374ee288cdcc4fc2
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: eaf689a51e675d5d134a841971b35122fd7e88be
+ms.sourcegitcommit: 889096fb1821ee90ffa1b2dcce046efd6e97acef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125199"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022819"
 ---
 # <a name="list-photos"></a>Перечисление фотографий
 
-Пространство имен: Microsoft. Graph получение списка объектов [profilePhoto](../resources/profilephoto.md) .
+Пространство имен: microsoft.graph
+
+Получение списка объектов [profilePhoto](../resources/profilephoto.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,10 +41,10 @@ GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код ответа `200 OK` и коллекцию объектов [profilePhoto](../resources/profilephoto.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
