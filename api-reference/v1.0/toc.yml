@@ -802,7 +802,7 @@
                   items:
                     - name: Получение
                       href: api/participant-get.md
-                    - name: List
+                    - name: Список
                       href: api/call-list-participants.md
                     - name: Отключение звука для участника
                       href: api/participant-mute.md
@@ -4514,6 +4514,152 @@
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: Получение открытого расширения
                   href: api/opentypeextension-get.md
+            - name: Сдвигает
+              items:
+                - name: Смена
+                  href: resources/shift.md
+                  items:
+                    - name: Список
+                      href: api/schedule-list-shifts.md
+                    - name: Создание
+                      href: api/schedule-post-shifts.md
+                    - name: Получение
+                      href: api/shift-get.md
+                    - name: Замена
+                      href: api/shift-put.md
+                    - name: Удаление
+                      href: api/shift-delete.md
+                - name: Расписание
+                  href: resources/schedule.md
+                  items:
+                    - name: Создание или замена
+                      href: api/team-put-schedule.md
+                    - name: Получение
+                      href: api/schedule-get.md
+                    - name: Предоставление общего доступа
+                      href: api/schedule-share.md
+                - name: Группа планирования
+                  href: resources/schedulinggroup.md
+                  items:
+                    - name: Список
+                      href: api/schedule-list-schedulinggroups.md
+                    - name: Создание
+                      href: api/schedule-post-schedulinggroups.md
+                    - name: Получение
+                      href: api/schedulinggroup-get.md
+                    - name: Замена
+                      href: api/schedulinggroup-put.md
+                    - name: Удаление
+                      href: api/schedulinggroup-delete.md
+                - name: Смена
+                  href: resources/offershiftrequest.md
+                  items:
+                    - name: Создание
+                      href: api/offershiftrequest-post.md
+                    - name: Получение
+                      href: api/offershiftrequest-get.md
+                    - name: Список
+                      href: api/offershiftrequest-list.md
+                    - name: Утвердить
+                      href: api/offershiftrequest-approve.md
+                    - name: Отклоня
+                      href: api/offershiftrequest-decline.md
+                - name: Открыть смену
+                  href: resources/openshift.md
+                  items:
+                    - name: Список
+                      href: api/openshift-list.md
+                    - name: Создание
+                      href: api/openshift-post.md
+                    - name: Получение
+                      href: api/openshift-get.md
+                    - name: Обновление
+                      href: api/openshift-update.md
+                    - name: Delete
+                      href: api/openshift-delete.md
+                - name: Открыть запрос на изменение сочетания клавиш
+                  href: resources/openshiftchangerequest.md
+                  items:
+                    - name: Список
+                      href: api/openshiftchangerequest-list.md
+                    - name: Создание
+                      href: api/openshiftchangerequest-post.md
+                    - name: Получение
+                      href: api/openshiftchangerequest-get.md
+                    - name: Утвердить
+                      href: api/openshiftchangerequest-approve.md
+                    - name: Отклоня
+                      href: api/openshiftchangerequest-decline.md
+                - name: Настройки сдвига
+                  href: resources/shiftpreferences.md
+                  items:
+                    - name: Получение
+                      href: api/shiftpreferences-get.md
+                    - name: Обновление
+                      href: api/shiftpreferences-put.md
+                - name: Переключить запрос на изменение смены
+                  href: resources/swapshiftschangerequest.md
+                  items:
+                    - name: Список
+                      href: api/swapshiftschangerequest-list.md
+                    - name: Создание
+                      href: api/swapshiftschangerequest-post.md
+                    - name: Получение
+                      href: api/swapshiftschangerequest-get.md
+                    - name: Утвердить
+                      href: api/swapshiftschangerequest-approve.md
+                    - name: Отклоня
+                      href: api/swapshiftschangerequest-decline.md
+                - name: Отгул
+                  href: resources/timeoff.md
+                  items:
+                    - name: Список
+                      href: api/schedule-list-timesoff.md
+                    - name: Создание
+                      href: api/schedule-post-timesoff.md
+                    - name: Получение
+                      href: api/timeoff-get.md
+                    - name: Замена
+                      href: api/timeoff-put.md
+                    - name: Удаление
+                      href: api/timeoff-delete.md
+                - name: Причина отгула
+                  href: resources/timeoffreason.md
+                  items:
+                    - name: Список
+                      href: api/schedule-list-timeoffreasons.md
+                    - name: Создание
+                      href: api/schedule-post-timeoffreasons.md
+                    - name: Получение
+                      href: api/timeoffreason-get.md
+                    - name: Замена
+                      href: api/timeoffreason-put.md
+                    - name: Удаление
+                      href: api/timeoffreason-delete.md
+                - name: Запрос времени отключения
+                  href: resources/timeoffrequest.md
+                  items:
+                    - name: Получение
+                      href: api/timeoffrequest-get.md
+                    - name: Удалить
+                      href: api/timeoffrequest-delete.md
+                    - name: Утвердить
+                      href: api/timeoffrequest-approve.md
+                    - name: Отклоня
+                      href: api/timeoffrequest-decline.md
+                - name: Интеграция сотрудников
+                  href: resources/workforceintegration.md
+                  items:
+                    - name: Список
+                      href: api/workforceintegration-list.md
+                    - name: Создание
+                      href: api/workforceintegration-post.md
+                    - name: Получение
+                      href: api/workforceintegration-get.md
+                    - name: Обновление
+                      href: api/workforceintegration-update.md
+                    - name: Delete
+                      href: api/workforceintegration-delete.md
             - name: Диск
               href: resources/drive.md
               items:
@@ -4563,7 +4709,7 @@
             - name: Комментарии к книге
               href: resources/workbookcomment.md
               items:
-                - name: Список
+                - name: Перечисление
                   href: api/workbook-list-comments.md
                 - name: Получение
                   href: api/workbookcomment-get.md
