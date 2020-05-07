@@ -1,16 +1,16 @@
 ---
 title: Удаление Тимеоффреасон
-description: Пометка Тимеоффреасон как неактивной с помощью задания свойства GetProperty
-author: nkramer
+description: Помечайте Тимеоффреасон как неактивную, устанавливая свойство.
+author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b33b6ff6b91923e6821f9e4ae8a0aa8043373f4a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e71e976167b94d144037d93bf9bb3dff59cc5b7
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452304"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154425"
 ---
 # <a name="delete-timeoffreason"></a>Удаление Тимеоффреасон
 
@@ -18,9 +18,9 @@ ms.locfileid: "42452304"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Помечайте Тимеоффреасон как неактивную **isActive** , устанавливая свойство [timeOffReason](../resources/timeoffreason.md) .
+Помечайте Тимеоффреасон как неактивную **isActive** , устанавливая свойство [timeOffReason](../resources/timeoffreason.md) . Каждая команда должна включать по крайней мере один **тимеоффреасон**.
 
-Этот метод не удаляет указанный экземпляр [тимеоффреасон](../resources/timeoffreason.md) . экземпляры [тимеоффитем](../resources/timeoffitem.md) , которым назначена эта причина, остались назначенными по этой причине.
+Этот метод не удаляет указанный экземпляр **тимеоффреасон** . экземпляры [тимеоффитем](../resources/timeoffitem.md) , которым назначена эта причина, остались назначенными по этой причине.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -50,10 +50,10 @@ DELETE /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
@@ -86,7 +86,7 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{
 ---
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 

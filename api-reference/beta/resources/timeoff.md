@@ -4,13 +4,13 @@ description: Единица измерения, которая не работа
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-doc_type: resourcePageType_
-ms.openlocfilehash: 3ff9edf6bf3834faf5d91773b6c94ecbc4158d79
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+doc_type: resourcePageType
+ms.openlocfilehash: 04cdadefd9c784c07d4b93c02bf7c9f51e7e3e73
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519738"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154453"
 ---
 # <a name="timeoff-resource-type"></a>Тип ресурса Тимеофф
 
@@ -26,7 +26,7 @@ ms.locfileid: "42519738"
 |:---------------|:--------|:----------|
 |[Создание](../api/schedule-post-timesoff.md) | [тимеофф](timeoff.md) | Создание нового объекта **тимеофф** .|
 |[List](../api/schedule-list-timesoff.md) | Коллекция [тимеофф](timeoff.md) | Получение списка объектов **тимеофф** в этом расписании.|
-|[Get (.. /АПИ/тимеофф-жет.МД) | [тимеофф](timeoff.md) | Получение объекта **тимеофф** по идентификатору.|
+|[получение](../api/timeoff-get.md); | [тимеофф](timeoff.md) | Получение объекта **тимеофф** по идентификатору.|
 |[Replace](../api/timeoff-put.md) | [тимеофф](timeoff.md) | Замена объекта **тимеофф** .|
 |[удаление](../api/timeoff-delete.md); | Нет | Удаление объекта **тимеофф** из расписания.|
 

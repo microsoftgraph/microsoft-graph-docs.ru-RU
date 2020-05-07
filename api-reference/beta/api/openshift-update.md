@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0b9c38e5be9e4f55d8d1b71460cf6735c73d5478
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 000a8ae7c91b0d5c2b896615cc1e60ba2b360aed
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456413"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153508"
 ---
 # <a name="update-openshift"></a>Обновление Опеншифт
 
@@ -47,15 +47,15 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+Предоставьте измененный объект [опеншифт](../resources/openshift.md) в тексте запроса для этого метода.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |драфтопеншифт|опеншифтитем|Неопубликованная открытая смена.|
-|schedulingGroupId|String| Планирование кода группы. |
+|schedulingGroupId|Строка| Планирование кода группы. |
 |шаредопеншифт|опеншифтитем|Опубликованная открытая смена.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [опеншифт](../resources/openshift.md) в тексте отклика.
 
@@ -72,7 +72,7 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 }-->
 
 ```http
-PUT https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/{openShiftId}
+PUT https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
 Content-type: application/json
 
 {

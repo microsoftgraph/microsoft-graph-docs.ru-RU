@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 33d837aa24e7c13bf47821ca90417407de81c97a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d6b6ec17b574e23c08beee85d77e5a61e2f4c5a
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456602"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153991"
 ---
 # <a name="offershiftrequest-decline"></a>Оффершифтрекуест: отклонить
 
@@ -37,7 +37,7 @@ ms.locfileid: "42456602"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/schedule/offerShiftRequests/decline
+POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -72,7 +72,7 @@ POST /teams/schedule/offerShiftRequests/decline
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests/decline
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
 Content-type: application/json
 
 {

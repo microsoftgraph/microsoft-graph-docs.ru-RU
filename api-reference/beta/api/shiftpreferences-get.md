@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 30837607b484d98856f5296e1fd0a1a30ca3a619
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9bbf5be71676b942a3df0174f781a0a6708493e2
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453298"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154334"
 ---
 # <a name="get-shiftpreferences"></a>Получение Шифтпреференцес
 
@@ -38,16 +38,20 @@ ms.locfileid: "42453298"
 GET /users/{userId}/settings/shiftPreferences
 ```
 
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Этот метод не поддерживает параметры запросов OData для настройки отклика.
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [шифтпреференцес](../resources/shiftpreferences.md) в тексте отклика.
 

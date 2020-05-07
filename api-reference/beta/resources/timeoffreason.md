@@ -4,13 +4,13 @@ description: Допустимая причина для выполнения в�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-doc_type: resourcePageType_
-ms.openlocfilehash: f9d84ae6b86d7d97af5ec2376879a5961da7367b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+doc_type: resourcePageType
+ms.openlocfilehash: c766a29a75bfe96ca6d0175b3017f4a310448c2d
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519724"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154446"
 ---
 # <a name="timeoffreason-resource-type"></a>Тип ресурса Тимеоффреасон
 

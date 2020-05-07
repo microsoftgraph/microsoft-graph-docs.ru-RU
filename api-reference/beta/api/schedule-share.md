@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dafe66d3aa63b87942ada0b87cf8ceee2715554d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fce02b8f18a2745b06d1782ecadb7bc7bd3adc0
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453802"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154243"
 ---
 # <a name="schedule-share"></a>Расписание: общий доступ
 
@@ -19,8 +19,8 @@ ms.locfileid: "42453802"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Предоставьте общий доступ к диапазону [расписания](../resources/schedule.md) с участниками расписания.
-Сделайте коллекции элементов [SHIFT](../resources/shift.md) и [тимеофф](../resources/timeoff.md) в указанном диапазоне времени [расписания](../resources/schedule.md) , отображаемого указанными участниками группы, включая "сотрудники" и "руководители".
-Каждый экземпляр [SHIFT](../resources/shift.md) и [тимеофф](../resources/timeoff.md) в [расписании](../resources/schedule.md) поддерживает черновую и общую версии элемента. Черновая версия доступна для просмотра только руководителями, а общая версия доступна для просмотра сотрудниками и руководителями. Для каждого экземпляра [SHIFT](../resources/shift.md) и [тимеофф](../resources/timeoff.md) в указанном диапазоне времени, действие Share обновляет общую версию из черновой версии, поэтому в дополнение к менеджерам сотрудники также могут просматривать самую актуальную информацию об элементе. Параметр **нотифитеам** указывает, какие сотрудники могут просматривать элемент.
+Сделайте коллекции элементов [SHIFT](../resources/shift.md), [опеншифт](../resources/openshift.md) и [тимеофф](../resources/timeoff.md) в указанном диапазоне времени [расписания](../resources/schedule.md) , отображаемых указанными участниками группы, включая "сотрудники" и "руководители".
+Каждый [из](../resources/shift.md)экземпляров [опеншифт](../resources/openshift.md) и [тимеофф](../resources/timeoff.md) в [расписании](../resources/schedule.md) поддерживает черновую и общую версии элемента. Черновая версия доступна для просмотра только руководителями, а общая версия доступна для просмотра сотрудниками и руководителями. Для каждого экземпляра [SHIFT](../resources/shift.md), [опеншифт](../resources/openshift.md) и [тимеофф](../resources/timeoff.md) в указанном диапазоне времени, действие Share обновляет общую версию из черновой версии, поэтому в дополнение к менеджерам сотрудники также могут просматривать самую актуальную информацию об элементе. Параметр **нотифитеам** указывает, какие сотрудники могут просматривать элемент.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -101,7 +101,7 @@ Content-type: application/json
 ---
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. 
 

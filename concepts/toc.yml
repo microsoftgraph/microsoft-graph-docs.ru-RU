@@ -457,10 +457,18 @@ items:
             href: sdks/sdk-installation.md
           - name: Создание клиента
             href: sdks/create-client.md
+          - name: Настройка клиента
+            href: sdks/customize-client.md
           - name: Выбор поставщика проверки подлинности
             href: sdks/choose-authentication-providers.md
           - name: Создание запросов
             href: sdks/create-requests.md
+          - name: Постраничное разбиение коллекции
+            href: sdks/paging.md
+          - name: Создание пакетного запроса
+            href: sdks/batch-requests.md
+          - name: Отправка больших файлов
+            href: sdks/large-file-upload.md
       - name: Использование набора средств
         items:
           - name: Общие сведения о наборе средств

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 6f2a9c2b59661e820a89268f83c3868d29b9f558
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 7ec8619b24dd642050151b49cf066df7e892c78c
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991833"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153487"
 ---
 Пространство имен: microsoft.graph
 
@@ -34,6 +34,52 @@ ms.locfileid: "43991833"
 |ребенка|5 | Дочерний элемент пользователя.|
 |остальные|6 | Незаданное отношение для пользователя.|
 |unknownFutureValue|7 | Значение маркера для обеспечения совместимости с будущими версиями.|
+
+### <a name="scheduleentitytheme-values"></a>значения Счедулинтитисеме
+
+| Member
+|:-------------------------
+| white
+| blue
+| green
+| purple
+| pink
+| yellow
+| участка
+| даркблуе
+| даркгрин
+| даркпурпле
+| даркпинк
+| даркеллов
+| unknownFutureValue
+
+
+### <a name="timeoffreasonicontype-values"></a>значения Тимеоффреасониконтипе
+
+|Member|
+|:---|
+|Нет|
+|Мойка|
+|calendar|
+|запускается|
+|ходил|
+|фирстаид|
+|врача|
+|нотворкинг|
+|регистрации|
+|журидути|
+|любой|
+|кружк|
+|phone|
+|Погода|
+|Общий|
+|пиггибанк|
+|Dog|
+|очень|
+|траффикконе|
+|крепления|
+|Веселая|
+|unknownFutureValue|
 
 ### <a name="timezonestandard-values"></a>значения Тимезонестандард
 
@@ -275,7 +321,7 @@ ms.locfileid: "43991833"
 | NotStarted
 | Работает
 | Completed
-| Не выполнено
+| Failed
 
 
 ### <a name="onenotepatchactiontype-values"></a>значения Оненотепатчактионтипе
@@ -382,7 +428,7 @@ ms.locfileid: "43991833"
 | Member
 |:---------------------
 | Unknown
-| OneDrive;
+| OneDrive
 | онедривефорбусинесс
 | онпремонедривефорбусинесс
 
@@ -729,7 +775,7 @@ Enum для типов значений реестра, определенных
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1,1     | Почтовые угрозы.            |
+| mail   | 1,1     | Почтовые угрозы.            |
 | url    | 2     | Угроза URL-адресов.             |
 | file   | 4     | Угроза файла вложения. |
 

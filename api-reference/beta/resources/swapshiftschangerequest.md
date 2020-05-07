@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 96589309cbeb2880e533b5607dc05beec78894ed
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9bd867642da41b2aa0644744655c94b1d842d977
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520270"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154271"
 ---
 # <a name="swapshiftschangerequest-resource-type"></a>Тип ресурса Свапшифтсчанжерекуест
 
@@ -34,7 +34,7 @@ ms.locfileid: "42520270"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|реЦипиентшифтид|String|Идентификатор получателя запроса на замену. Это пользователь, с которым запрос перенаправляется.|
+|реЦипиентшифтид|Строка|Идентификатор смены для пользователя получателя, с которым отправляется запрос на переключение.|
 
 ## <a name="relationships"></a>Связи
 

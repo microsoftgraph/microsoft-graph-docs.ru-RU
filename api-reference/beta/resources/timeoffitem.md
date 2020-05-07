@@ -4,13 +4,13 @@ description: Представляет версию объекта Тимеофф
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-doc_type: resourcePageType_
-ms.openlocfilehash: 019bb366ad9d960fd2eff6365ef987f186a0d6c3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+doc_type: resourcePageType
+ms.openlocfilehash: 3fcd7c0e046cb9ae3df9ea371329058fa0472fc3
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519731"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154390"
 ---
 # <a name="timeoffitem-resource-type"></a>Тип ресурса Тимеоффитем
 

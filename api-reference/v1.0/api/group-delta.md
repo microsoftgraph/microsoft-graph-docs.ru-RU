@@ -5,16 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 906665d0fa0250a14ea916d8e0b9bf286e6cf2d0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 86c4ec4e419fb9305c0a11ba4443e991ed062020
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436858"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155112"
 ---
 # <a name="group-delta"></a>group: delta
 
-Пространство имен: Microsoft. Graph получает новые, обновленные или удаленные группы, в том числе изменения членства в группах, без необходимости выполнять полный просмотр всей коллекции групп. Сведения об [использовании запроса изменений](/graph/delta-query-overview) см.
+Пространство имен: microsoft.graph
+
+Получите только что созданные, обновленные или удаленные группы, в том числе изменения членства в группах, без необходимости выполнять полный доступ ко всей коллекции групп. Сведения об [использовании запроса изменений](/graph/delta-query-overview) см.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -66,11 +68,11 @@ GET /groups/delta
 | Content-Type  | application/json |
 | Prefer | return=minimal <br><br>Указание этого заголовка с запросом, использующим параметр `deltaLink`, приведет к возвращению только свойств объекта, измененных с момента последнего цикла. Необязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект коллекции [group](../resources/group.md) в тексте отклика. Ответ также включает маркер состояния, который является `nextLink` URL-адресом или `deltaLink` URL-адресом.
 

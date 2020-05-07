@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 53ee7663d50b4dd67ebb0f2391dfe185a60289fa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 705c42339dc64ff66f89ce72715d51a6753357d0
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453865"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154250"
 ---
 # <a name="get-schedule"></a>Получение расписания
 
@@ -49,6 +49,10 @@ ms.locfileid: "42453865"
 GET /teams/{teamId}/schedule
 ```
 
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Этот метод не поддерживает параметры запросов OData для настройки отклика.
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок       | Значение |
@@ -59,7 +63,7 @@ GET /teams/{teamId}/schedule
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Schedule](../resources/schedule.md) в тексте отклика.
 
