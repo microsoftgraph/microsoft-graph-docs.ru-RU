@@ -5,94 +5,94 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c1ae04f4e2cd97cca0ad0f7c7719c4f1b6d4b5c5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 20bfcafa501872e84d91549b3723029298119add
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456593"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153550"
 ---
-# <a name="get-offershiftrequest"></a><span data-ttu-id="5bcb0-103">Получение Оффершифтрекуест</span><span class="sxs-lookup"><span data-stu-id="5bcb0-103">Get offerShiftRequest</span></span>
+# <a name="get-offershiftrequest"></a><span data-ttu-id="45cc4-103">Получение Оффершифтрекуест</span><span class="sxs-lookup"><span data-stu-id="45cc4-103">Get offerShiftRequest</span></span>
 
-<span data-ttu-id="5bcb0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5bcb0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="45cc4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="45cc4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5bcb0-105">Получение свойств и связей объекта [оффершифтрекуест](../resources/offershiftrequest.md) .</span><span class="sxs-lookup"><span data-stu-id="5bcb0-105">Retrieve the properties and relationships of an [offerShiftRequest](../resources/offershiftrequest.md) object.</span></span>
+<span data-ttu-id="45cc4-105">Получение свойств и связей объекта [оффершифтрекуест](../resources/offershiftrequest.md) .</span><span class="sxs-lookup"><span data-stu-id="45cc4-105">Retrieve the properties and relationships of an [offerShiftRequest](../resources/offershiftrequest.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5bcb0-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5bcb0-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="45cc4-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="45cc4-106">Permissions</span></span>
 
-<span data-ttu-id="5bcb0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5bcb0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="45cc4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="45cc4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5bcb0-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5bcb0-109">Permission type</span></span>                        | <span data-ttu-id="5bcb0-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5bcb0-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="45cc4-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="45cc4-109">Permission type</span></span>                        | <span data-ttu-id="45cc4-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="45cc4-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="5bcb0-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5bcb0-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="5bcb0-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5bcb0-112">Group.Read.All, Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="5bcb0-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5bcb0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5bcb0-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5bcb0-114">Not supported.</span></span> |
-| <span data-ttu-id="5bcb0-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5bcb0-115">Application</span></span>                            | <span data-ttu-id="5bcb0-116">Schedule. Read. All *, Schedule. ReadWrite. ALL*</span><span class="sxs-lookup"><span data-stu-id="5bcb0-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span></span> |
+| <span data-ttu-id="45cc4-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="45cc4-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="45cc4-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="45cc4-112">Group.Read.All, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="45cc4-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="45cc4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="45cc4-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="45cc4-114">Not supported.</span></span> |
+| <span data-ttu-id="45cc4-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="45cc4-115">Application</span></span>                            | <span data-ttu-id="45cc4-116">Schedule. Read. All *, Schedule. ReadWrite. ALL*</span><span class="sxs-lookup"><span data-stu-id="45cc4-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span></span> |
 
-><span data-ttu-id="5bcb0-117">\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.</span><span class="sxs-lookup"><span data-stu-id="5bcb0-117">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
+><span data-ttu-id="45cc4-117">\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.</span><span class="sxs-lookup"><span data-stu-id="45cc4-117">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="5bcb0-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5bcb0-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="45cc4-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="45cc4-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/schedule/offerShiftRequests
+GET /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="5bcb0-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="5bcb0-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="45cc4-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="45cc4-119">Optional query parameters</span></span>
 
-<span data-ttu-id="5bcb0-120">Этот метод поддерживает некоторые параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="5bcb0-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="5bcb0-121">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="5bcb0-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="45cc4-120">Этот метод не поддерживает параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="45cc4-120">This method does not support OData query parameters to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5bcb0-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5bcb0-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="45cc4-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="45cc4-121">Request headers</span></span>
 
-| <span data-ttu-id="5bcb0-123">Имя</span><span class="sxs-lookup"><span data-stu-id="5bcb0-123">Name</span></span>      |<span data-ttu-id="5bcb0-124">Описание</span><span class="sxs-lookup"><span data-stu-id="5bcb0-124">Description</span></span>|
+| <span data-ttu-id="45cc4-122">Имя</span><span class="sxs-lookup"><span data-stu-id="45cc4-122">Name</span></span>      |<span data-ttu-id="45cc4-123">Описание</span><span class="sxs-lookup"><span data-stu-id="45cc4-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="5bcb0-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5bcb0-125">Authorization</span></span> | <span data-ttu-id="5bcb0-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5bcb0-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="45cc4-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="45cc4-124">Authorization</span></span> | <span data-ttu-id="45cc4-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="45cc4-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5bcb0-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="5bcb0-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="45cc4-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="45cc4-127">Request body</span></span>
 
-<span data-ttu-id="5bcb0-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="5bcb0-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="45cc4-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="45cc4-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5bcb0-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="5bcb0-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="45cc4-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="45cc4-129">Response</span></span>
 
-<span data-ttu-id="5bcb0-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [оффершифтрекуест](../resources/offershiftrequest.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5bcb0-131">If successful, this method returns a `200 OK` response code and the requested [offerShiftRequest](../resources/offershiftrequest.md) object in the response body.</span></span>
+<span data-ttu-id="45cc4-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [оффершифтрекуест](../resources/offershiftrequest.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="45cc4-130">If successful, this method returns a `200 OK` response code and the requested [offerShiftRequest](../resources/offershiftrequest.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5bcb0-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="5bcb0-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="45cc4-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="45cc4-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="5bcb0-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="5bcb0-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="45cc4-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="45cc4-132">Request</span></span>
 
-<span data-ttu-id="5bcb0-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5bcb0-134">The following is an example of the request.</span></span>
+<span data-ttu-id="45cc4-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="45cc4-133">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5bcb0-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="5bcb0-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="45cc4-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="45cc4-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_offershiftrequest"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}
 ```
-# <a name="c"></a>[<span data-ttu-id="5bcb0-136">C#</span><span class="sxs-lookup"><span data-stu-id="5bcb0-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="45cc4-135">C#</span><span class="sxs-lookup"><span data-stu-id="45cc4-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-offershiftrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5bcb0-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5bcb0-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="45cc4-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="45cc4-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-offershiftrequest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5bcb0-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5bcb0-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="45cc4-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="45cc4-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-offershiftrequest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="5bcb0-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="5bcb0-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="45cc4-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="45cc4-138">Response</span></span>
 
-<span data-ttu-id="5bcb0-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="5bcb0-140">The following is an example of the response.</span></span>
+<span data-ttu-id="45cc4-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="45cc4-139">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="5bcb0-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5bcb0-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="45cc4-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="45cc4-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

@@ -5,38 +5,38 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dafe66d3aa63b87942ada0b87cf8ceee2715554d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fce02b8f18a2745b06d1782ecadb7bc7bd3adc0
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453802"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154243"
 ---
-# <a name="schedule-share"></a><span data-ttu-id="92cee-103">Расписание: общий доступ</span><span class="sxs-lookup"><span data-stu-id="92cee-103">schedule: share</span></span>
+# <a name="schedule-share"></a><span data-ttu-id="9da3c-103">Расписание: общий доступ</span><span class="sxs-lookup"><span data-stu-id="9da3c-103">schedule: share</span></span>
 
-<span data-ttu-id="92cee-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="92cee-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9da3c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9da3c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="92cee-105">Предоставьте общий доступ к диапазону [расписания](../resources/schedule.md) с участниками расписания.</span><span class="sxs-lookup"><span data-stu-id="92cee-105">Share a [schedule](../resources/schedule.md) time range with schedule members.</span></span>
-<span data-ttu-id="92cee-106">Сделайте коллекции элементов [SHIFT](../resources/shift.md) и [тимеофф](../resources/timeoff.md) в указанном диапазоне времени [расписания](../resources/schedule.md) , отображаемого указанными участниками группы, включая "сотрудники" и "руководители".</span><span class="sxs-lookup"><span data-stu-id="92cee-106">Make the collections of [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) items in the specified time range of the [schedule](../resources/schedule.md) viewable by the specified team members, including employees and managers.</span></span>
-<span data-ttu-id="92cee-107">Каждый экземпляр [SHIFT](../resources/shift.md) и [тимеофф](../resources/timeoff.md) в [расписании](../resources/schedule.md) поддерживает черновую и общую версии элемента.</span><span class="sxs-lookup"><span data-stu-id="92cee-107">Each [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) supports a draft version and a shared version of the item.</span></span> <span data-ttu-id="92cee-108">Черновая версия доступна для просмотра только руководителями, а общая версия доступна для просмотра сотрудниками и руководителями.</span><span class="sxs-lookup"><span data-stu-id="92cee-108">The draft version is viewable by only managers, and the shared version is viewable by employees and managers.</span></span> <span data-ttu-id="92cee-109">Для каждого экземпляра [SHIFT](../resources/shift.md) и [тимеофф](../resources/timeoff.md) в указанном диапазоне времени, действие Share обновляет общую версию из черновой версии, поэтому в дополнение к менеджерам сотрудники также могут просматривать самую актуальную информацию об элементе.</span><span class="sxs-lookup"><span data-stu-id="92cee-109">For each [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.</span></span> <span data-ttu-id="92cee-110">Параметр **нотифитеам** указывает, какие сотрудники могут просматривать элемент.</span><span class="sxs-lookup"><span data-stu-id="92cee-110">The **notifyTeam** parameter further specifies which employees can view the item.</span></span>
+<span data-ttu-id="9da3c-105">Предоставьте общий доступ к диапазону [расписания](../resources/schedule.md) с участниками расписания.</span><span class="sxs-lookup"><span data-stu-id="9da3c-105">Share a [schedule](../resources/schedule.md) time range with schedule members.</span></span>
+<span data-ttu-id="9da3c-106">Сделайте коллекции элементов [SHIFT](../resources/shift.md), [опеншифт](../resources/openshift.md) и [тимеофф](../resources/timeoff.md) в указанном диапазоне времени [расписания](../resources/schedule.md) , отображаемых указанными участниками группы, включая "сотрудники" и "руководители".</span><span class="sxs-lookup"><span data-stu-id="9da3c-106">Make the collections of [shift](../resources/shift.md), [openshift](../resources/openshift.md) and [timeOff](../resources/timeoff.md) items in the specified time range of the [schedule](../resources/schedule.md) viewable by the specified team members, including employees and managers.</span></span>
+<span data-ttu-id="9da3c-107">Каждый [из](../resources/shift.md)экземпляров [опеншифт](../resources/openshift.md) и [тимеофф](../resources/timeoff.md) в [расписании](../resources/schedule.md) поддерживает черновую и общую версии элемента.</span><span class="sxs-lookup"><span data-stu-id="9da3c-107">Each [shift](../resources/shift.md), [openshift](../resources/openshift.md) and [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) supports a draft version and a shared version of the item.</span></span> <span data-ttu-id="9da3c-108">Черновая версия доступна для просмотра только руководителями, а общая версия доступна для просмотра сотрудниками и руководителями.</span><span class="sxs-lookup"><span data-stu-id="9da3c-108">The draft version is viewable by only managers, and the shared version is viewable by employees and managers.</span></span> <span data-ttu-id="9da3c-109">Для каждого экземпляра [SHIFT](../resources/shift.md), [опеншифт](../resources/openshift.md) и [тимеофф](../resources/timeoff.md) в указанном диапазоне времени, действие Share обновляет общую версию из черновой версии, поэтому в дополнение к менеджерам сотрудники также могут просматривать самую актуальную информацию об элементе.</span><span class="sxs-lookup"><span data-stu-id="9da3c-109">For each [shift](../resources/shift.md), [openshift](../resources/openshift.md) and [timeOff](../resources/timeoff.md) instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.</span></span> <span data-ttu-id="9da3c-110">Параметр **нотифитеам** указывает, какие сотрудники могут просматривать элемент.</span><span class="sxs-lookup"><span data-stu-id="9da3c-110">The **notifyTeam** parameter further specifies which employees can view the item.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="92cee-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="92cee-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9da3c-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9da3c-111">Permissions</span></span>
 
-<span data-ttu-id="92cee-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="92cee-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9da3c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9da3c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="92cee-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="92cee-114">Permission type</span></span>      | <span data-ttu-id="92cee-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="92cee-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9da3c-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9da3c-114">Permission type</span></span>      | <span data-ttu-id="9da3c-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9da3c-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="92cee-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="92cee-116">Delegated (work or school account)</span></span> | <span data-ttu-id="92cee-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92cee-117">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="92cee-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="92cee-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92cee-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="92cee-119">Not supported.</span></span>    |
-|<span data-ttu-id="92cee-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="92cee-120">Application</span></span> | <span data-ttu-id="92cee-121">Schedule. ReadWrite. ALL \*</span><span class="sxs-lookup"><span data-stu-id="92cee-121">Schedule.ReadWrite.All\*</span></span> |
+|<span data-ttu-id="9da3c-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9da3c-116">Delegated (work or school account)</span></span> | <span data-ttu-id="9da3c-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9da3c-117">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9da3c-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9da3c-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9da3c-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9da3c-119">Not supported.</span></span>    |
+|<span data-ttu-id="9da3c-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9da3c-120">Application</span></span> | <span data-ttu-id="9da3c-121">Schedule. ReadWrite. ALL \*</span><span class="sxs-lookup"><span data-stu-id="9da3c-121">Schedule.ReadWrite.All\*</span></span> |
 
-><span data-ttu-id="92cee-122">\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.</span><span class="sxs-lookup"><span data-stu-id="92cee-122">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
+><span data-ttu-id="9da3c-122">\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.</span><span class="sxs-lookup"><span data-stu-id="9da3c-122">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
 
-> <span data-ttu-id="92cee-123">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="92cee-123">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="92cee-124">Глобальные администраторы могут получать доступ к группам, которые не являются участниками.</span><span class="sxs-lookup"><span data-stu-id="92cee-124">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="9da3c-123">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="9da3c-123">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="9da3c-124">Глобальные администраторы могут получать доступ к группам, которые не являются участниками.</span><span class="sxs-lookup"><span data-stu-id="9da3c-124">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="92cee-125">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="92cee-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9da3c-125">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9da3c-125">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -44,34 +44,34 @@ ms.locfileid: "42453802"
 POST /teams/{teamId}/schedule/share
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="92cee-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="92cee-126">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9da3c-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9da3c-126">Request headers</span></span>
 
-| <span data-ttu-id="92cee-127">Заголовок</span><span class="sxs-lookup"><span data-stu-id="92cee-127">Header</span></span>       | <span data-ttu-id="92cee-128">Значение</span><span class="sxs-lookup"><span data-stu-id="92cee-128">Value</span></span> |
+| <span data-ttu-id="9da3c-127">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9da3c-127">Header</span></span>       | <span data-ttu-id="9da3c-128">Значение</span><span class="sxs-lookup"><span data-stu-id="9da3c-128">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="92cee-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="92cee-129">Authorization</span></span>  | <span data-ttu-id="92cee-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="92cee-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="92cee-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="92cee-132">Content-Type</span></span>  | <span data-ttu-id="92cee-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="92cee-p105">application/json. Required.</span></span>  |
+| <span data-ttu-id="9da3c-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9da3c-129">Authorization</span></span>  | <span data-ttu-id="9da3c-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9da3c-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="9da3c-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9da3c-132">Content-Type</span></span>  | <span data-ttu-id="9da3c-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9da3c-p105">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="92cee-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="92cee-135">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9da3c-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9da3c-135">Request body</span></span>
 
-<span data-ttu-id="92cee-136">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="92cee-136">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="9da3c-136">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="9da3c-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-|<span data-ttu-id="92cee-137">Параметр</span><span class="sxs-lookup"><span data-stu-id="92cee-137">Parameter</span></span>                   |<span data-ttu-id="92cee-138">Тип</span><span class="sxs-lookup"><span data-stu-id="92cee-138">Type</span></span>           |<span data-ttu-id="92cee-139">Описание</span><span class="sxs-lookup"><span data-stu-id="92cee-139">Description</span></span>  |
+|<span data-ttu-id="9da3c-137">Параметр</span><span class="sxs-lookup"><span data-stu-id="9da3c-137">Parameter</span></span>                   |<span data-ttu-id="9da3c-138">Тип</span><span class="sxs-lookup"><span data-stu-id="9da3c-138">Type</span></span>           |<span data-ttu-id="9da3c-139">Описание</span><span class="sxs-lookup"><span data-stu-id="9da3c-139">Description</span></span>  |
 |-----------------------|-------------------|--------------|
-| <span data-ttu-id="92cee-140">нотифитеам</span><span class="sxs-lookup"><span data-stu-id="92cee-140">notifyTeam</span></span>            |`Boolean`             |<span data-ttu-id="92cee-141">Указывает, должна ли вся группа получить видимое уведомление о данном действии или только те сотрудники, которым назначена смена.</span><span class="sxs-lookup"><span data-stu-id="92cee-141">Indicates whether the entire team should get a visible notification of this action, or only employees that have a shift assigned to them that was shared.</span></span> <span data-ttu-id="92cee-142">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="92cee-142">Required.</span></span>       |
-| <span data-ttu-id="92cee-143">startDateTime</span><span class="sxs-lookup"><span data-stu-id="92cee-143">startDateTime</span></span>         |`DateTimeOffset`   |<span data-ttu-id="92cee-144">Время начала совместного использования смен по расписанию.</span><span class="sxs-lookup"><span data-stu-id="92cee-144">The start time to share shifts on the schedule from.</span></span> <span data-ttu-id="92cee-145">Обязательный элемент.</span><span class="sxs-lookup"><span data-stu-id="92cee-145">Required.</span></span>   |
-| <span data-ttu-id="92cee-146">endDateTime</span><span class="sxs-lookup"><span data-stu-id="92cee-146">endDateTime</span></span>           |`DateTimeOffset`   | <span data-ttu-id="92cee-147">Время окончания для совместного использования смены графика до.</span><span class="sxs-lookup"><span data-stu-id="92cee-147">The end time to share shifts on the schedule until.</span></span>   |
+| <span data-ttu-id="9da3c-140">нотифитеам</span><span class="sxs-lookup"><span data-stu-id="9da3c-140">notifyTeam</span></span>            |`Boolean`             |<span data-ttu-id="9da3c-141">Указывает, должна ли вся группа получить видимое уведомление о данном действии или только те сотрудники, которым назначена смена.</span><span class="sxs-lookup"><span data-stu-id="9da3c-141">Indicates whether the entire team should get a visible notification of this action, or only employees that have a shift assigned to them that was shared.</span></span> <span data-ttu-id="9da3c-142">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9da3c-142">Required.</span></span>       |
+| <span data-ttu-id="9da3c-143">startDateTime</span><span class="sxs-lookup"><span data-stu-id="9da3c-143">startDateTime</span></span>         |`DateTimeOffset`   |<span data-ttu-id="9da3c-144">Время начала совместного использования смен по расписанию.</span><span class="sxs-lookup"><span data-stu-id="9da3c-144">The start time to share shifts on the schedule from.</span></span> <span data-ttu-id="9da3c-145">Обязательный элемент.</span><span class="sxs-lookup"><span data-stu-id="9da3c-145">Required.</span></span>   |
+| <span data-ttu-id="9da3c-146">endDateTime</span><span class="sxs-lookup"><span data-stu-id="9da3c-146">endDateTime</span></span>           |`DateTimeOffset`   | <span data-ttu-id="9da3c-147">Время окончания для совместного использования смены графика до.</span><span class="sxs-lookup"><span data-stu-id="9da3c-147">The end time to share shifts on the schedule until.</span></span>   |
 
-## <a name="response"></a><span data-ttu-id="92cee-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="92cee-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9da3c-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="9da3c-148">Response</span></span>
 
-<span data-ttu-id="92cee-p108">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="92cee-p108">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="9da3c-p108">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="9da3c-p108">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="92cee-151">Пример</span><span class="sxs-lookup"><span data-stu-id="92cee-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9da3c-151">Пример</span><span class="sxs-lookup"><span data-stu-id="9da3c-151">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="92cee-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="92cee-152">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9da3c-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="9da3c-152">Request</span></span>
 
-<span data-ttu-id="92cee-153">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="92cee-153">The following is an example of the request.</span></span>
+<span data-ttu-id="9da3c-153">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9da3c-153">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="92cee-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="92cee-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9da3c-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="9da3c-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-share"
@@ -86,24 +86,24 @@ Content-type: application/json
   "endDateTime": "2018-10-15T00:00:00.000Z"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="92cee-155">C#</span><span class="sxs-lookup"><span data-stu-id="92cee-155">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9da3c-155">C#</span><span class="sxs-lookup"><span data-stu-id="9da3c-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-share-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="92cee-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="92cee-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9da3c-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9da3c-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-share-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="92cee-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="92cee-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9da3c-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9da3c-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-share-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="92cee-158">Ответ</span><span class="sxs-lookup"><span data-stu-id="92cee-158">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9da3c-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="9da3c-158">Response</span></span>
 
-<span data-ttu-id="92cee-159">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="92cee-159">The following is an example of the response.</span></span> 
+<span data-ttu-id="9da3c-159">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="9da3c-159">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
