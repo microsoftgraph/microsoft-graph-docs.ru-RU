@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aef00c4de700624eac54e3aca8bbc2773799b377
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e01b1055d24740c08a23fbd9fd18dedcf00e81c5
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456609"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154026"
 ---
 # <a name="offershiftrequest-approve"></a>Оффершифтрекуест: утверждение
 
@@ -37,7 +37,7 @@ ms.locfileid: "42456609"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/schedule/offerShiftRequests/approve
+POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -72,7 +72,7 @@ POST /teams/schedule/offerShiftRequests/approve
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests/approve
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve
 Content-type: application/json
 
 {

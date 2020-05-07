@@ -4,13 +4,13 @@ description: Коллекция Счедулингграупс, Shift, Тиме�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-doc_type: resourcePageType_
-ms.openlocfilehash: d2d6a1e9890e5aea8e23185281c171f7356e8a7d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+doc_type: resourcePageType
+ms.openlocfilehash: 2fb40dc62e2a8c583c9e3c4f29ad4d9905acb6d6
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520986"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154138"
 ---
 # <a name="schedule-resource-type"></a>Тип ресурса "Расписание"
 

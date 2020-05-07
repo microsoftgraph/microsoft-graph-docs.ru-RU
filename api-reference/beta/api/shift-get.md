@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1074150b77b8608a158a25db2224bd913f8cd157
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7059b58689173e5e47fc96ad32babbb85dc0b046
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453305"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154215"
 ---
 # <a name="get-shift"></a>Получение смены
 
@@ -28,7 +28,7 @@ ms.locfileid: "42453305"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |s
-|Для приложений | Schedule. Read. All *, Schedule. ReadWrite. ALL* |
+|Application | Schedule. Read. All *, Schedule. ReadWrite. ALL* |
 
 >\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
@@ -42,16 +42,20 @@ ms.locfileid: "42453305"
 GET /teams/{teamId}/schedule/shifts/{shiftId}
 ```
 
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Этот метод не поддерживает параметры запросов OData для настройки отклика.
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [сдвига](../resources/shift.md) в тексте отклика.
 

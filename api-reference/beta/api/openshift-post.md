@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 96aa613dade7ea26c7f5a9f075b0c248b4e16564
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a89971d91bf1a8c77e2c14b5190fa7ef0dfdc24b
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456408"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153506"
 ---
 # <a name="create-openshift"></a>Создание Опеншифт
 
@@ -38,10 +38,6 @@ ms.locfileid: "42456408"
 POST /teams/{id}/schedule/openShifts
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
-  
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
@@ -49,11 +45,11 @@ POST /teams/{id}/schedule/openShifts
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 Укажите новый объект [опеншифт](../resources/openshift.md) в тексте запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [опеншифт](../resources/openshift.md) в тексте отклика.
 
@@ -92,23 +88,7 @@ Content-length: 244
          }
       ]
    },
-   "draftOpenShift":{
-      "notes":"InventoryManagement",
-      "openSlotCount":3,
-      "displayName":"Dayshift",
-      "startDateTime":"2018-10-04T00: 58: 45.332Z",
-      "endDateTime":"2018-10-04T08: 58: 45.340Z",
-      "theme":"white",
-      "activities":[
-         {
-            "isPaid":true,
-            "startDateTime":"2018-10-04T00: 58: 45.340Z",
-            "endDateTime":"2018-10-04T07: 58: 45.332Z",
-            "code":"Break",
-            "displayName":"Lunch"
-         }
-      ]
-   },
+   "draftOpenShift":null,
    "createdDateTime":"2019-03-14T04: 32: 51.451Z",
    "lastModifiedDateTime":"2019-03-14T05: 32: 51.451Z",
    "lastModifiedBy":{
@@ -159,23 +139,7 @@ Content-type: application/json
     }
     ]
     },
-    "draftOpenShift": {
-    "notes": "Inventory Management",
-    "openSlotCount":3,
-    "displayName": "Day shift",
-    "startDateTime": "2018-10-04T00:58:45.332Z",
-    "endDateTime": "2018-10-04T08:58:45.340Z",
-    "theme": "white",
-    "activities": [
-    {
-    "isPaid": true,
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T07:58:45.332Z",
-    "code": "Break",
-    "displayName": "Lunch"
-    }
-    ]
-    },
+    "draftOpenShift": null,
     "createdDateTime": "2019-03-14T04:32:51.451Z",
     "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
     "lastModifiedBy": {

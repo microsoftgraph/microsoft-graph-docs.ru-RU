@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5532d9749e949d30b0a417908b7804606ead07af
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 644d5a2fa0a93a100ecba0e1632c29eae6ad37e6
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456584"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153557"
 ---
 # <a name="create-offershiftrequest"></a>Создание Оффершифтрекуест
 
@@ -37,12 +37,8 @@ ms.locfileid: "42456584"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{teamId}/offerShiftRequests
+POST /teams/{teamId}/schedule/offerShiftRequests
 ```
-
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -50,10 +46,10 @@ POST /teams/{teamId}/offerShiftRequests
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Укажите новый объект [оффершифтрекуест](../resources/offershiftrequest.md) в тексте запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [оффершифтрекуест](../resources/offershiftrequest.md) в тексте отклика.
 

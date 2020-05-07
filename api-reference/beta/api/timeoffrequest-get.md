@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1036ef42706c95cd5aeada2db32f7bd6ffffd110
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b7210c32b28c15b5eac0d3709f89c1c55127f6fb
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452255"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154439"
 ---
 # <a name="get-timeoffrequest"></a>Получение Тимеоффрекуест
 
@@ -37,12 +37,12 @@ ms.locfileid: "42452255"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/timeOffRequests
+GET /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод не поддерживает параметры запросов OData для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -50,11 +50,11 @@ GET /teams/{id}/schedule/timeOffRequests
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [тимеоффрекуест](../resources/timeoffrequest.md) в тексте отклика.
 
@@ -71,7 +71,7 @@ GET /teams/{id}/schedule/timeOffRequests
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/timeOffRequests
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-timeoffrequest-csharp-snippets.md)]

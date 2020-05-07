@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c1df99a56ed27724d9ff670f4b100d0b7ba93e71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b3f87e6981abf18a4f082839c3e3e47455d36961
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453284"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154327"
 ---
 # <a name="update-shiftpreferences"></a>Обновление Шифтпреференцес
 
@@ -35,7 +35,7 @@ ms.locfileid: "42453284"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{userId}/settings/shiftPreferences
+PUT /users/{userId}/settings/shiftPreferences
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,8 +45,8 @@ GET /users/{userId}/settings/shiftPreferences
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Основной текст запроса
-Укажите новый объект [шифтпреференцес](../resources/shiftpreferences.md) в тексте запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта [шифтпреференцес](../resources/shiftpreferences.md) в формате JSON.
 
 ## <a name="response"></a>Ответ
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0e1418b83cc8e673afb1055a75849347bdab740d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2907c492c373dfcc11bf8699085505f0edb61e7c
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453074"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153403"
 ---
 # <a name="get-swapshiftschangerequest"></a>Получение Свапшифтсчанжерекуест
 
@@ -37,7 +37,7 @@ ms.locfileid: "42453074"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/swapShiftsChangeRequests
+GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -50,11 +50,11 @@ GET /teams/{id}/schedule/swapShiftsChangeRequests
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) в тексте отклика.
 
@@ -71,7 +71,7 @@ GET /teams/{id}/schedule/swapShiftsChangeRequests
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftsChangeRequestId}
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftsChangeRequestId}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-swapshiftschangerequest-csharp-snippets.md)]

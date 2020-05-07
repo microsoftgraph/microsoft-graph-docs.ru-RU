@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 378ec619584b4b6dba67871bd927a0d6852feda8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f66479af44efcbc686ad5d3acfa7155b26447a0f
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451301"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154103"
 ---
 # <a name="get-workforceintegration"></a>Получение Воркфорцеинтегратион
 
@@ -35,7 +35,7 @@ ms.locfileid: "42451301"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teamwork/workforceIntegrations
+GET /teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -46,13 +46,13 @@ GET /teamwork/workforceIntegrations
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [воркфорцеинтегратион](../resources/workforceintegration.md) в тексте отклика.
 

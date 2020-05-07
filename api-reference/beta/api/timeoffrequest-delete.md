@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c860c1948d798ec949b9ed611882d65a22b7ad93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: baa7ed94a438c1b40a5f70c7bc12e166450b023d
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452276"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154355"
 ---
 # <a name="delete-timeoffrequest"></a>Удаление Тимеоффрекуест
 
@@ -37,7 +37,7 @@ ms.locfileid: "42452276"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teams/{id}/schedule/timeOffRequests
+DELETE /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -46,11 +46,11 @@ DELETE /teams/{id}/schedule/timeOffRequests
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
@@ -67,7 +67,7 @@ DELETE /teams/{id}/schedule/timeOffRequests
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/schedule/timeOffRequests
+DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-timeoffrequest-csharp-snippets.md)]
@@ -84,7 +84,7 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/schedule/timeOffRequests
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 

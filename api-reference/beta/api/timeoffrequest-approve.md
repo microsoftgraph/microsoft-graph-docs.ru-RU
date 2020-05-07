@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1e161d21b25e474f3433e3c3b49ff5a739e87605
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3cd518d14d7fdef9c954f8538e0dbc021cb35ccc
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452271"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154411"
 ---
 # <a name="timeoffrequest-approve"></a>Тимеоффрекуест: утверждение
 
@@ -37,7 +37,7 @@ ms.locfileid: "42452271"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/timeOffRequests/approve
+POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -74,7 +74,7 @@ POST /teams/{id}/schedule/timeOffRequests/approve
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/timeOffRequests/approve
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/approve
 Content-type: application/json
 
 {
@@ -92,7 +92,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 <!-- {

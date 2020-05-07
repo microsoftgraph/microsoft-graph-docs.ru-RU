@@ -5,14 +5,14 @@ localization_priority: Normal
 doc_type: enumPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c8f2b733363ecbd79a885a0b76c170f076664590
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0d8c87f79580107d56ec84aa9b1a4bc397d4171
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498226"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154145"
 ---
-# <a name="filehashtype-enum"></a>Перечисление Филехаштипе
+# <a name="filehashtype-enum-type"></a>тип перечисления Филехаштипе
 
 Пространство имен: microsoft.graph
 

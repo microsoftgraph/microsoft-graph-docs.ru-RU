@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5d1eb7ffa6659275f333966306c74b8bd7f0e7ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1563837620e65c71ec834b8b877a795e5e0e5c22
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453039"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154397"
 ---
 # <a name="create-swapshiftschangerequest"></a>Создание Свапшифтсчанжерекуест
 
@@ -37,7 +37,7 @@ ms.locfileid: "42453039"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/swapShiftsChangeRequests
+POST /teams/{teamId}/schedule/swapShiftsChangeRequests
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -51,10 +51,10 @@ POST /teams/{id}/schedule/swapShiftsChangeRequests
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление объекта [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и созданный объект [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) в тексте отклика.
 

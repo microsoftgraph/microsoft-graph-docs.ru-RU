@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1e836a4346fe5e31f39c1f6383acbf78530ae9e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d32d3f665a8ea22ac4374df794031caaa9fa1964
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519087"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154075"
 ---
 # <a name="workforceintegration-resource-type"></a>Тип ресурса Воркфорцеинтегратион
 
@@ -24,6 +24,8 @@ ms.locfileid: "42519087"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
+| [List](../api/workforceintegration-list.md) | Коллекция [воркфорцеинтегратион](workforceintegration.md) | Получение списка объектов **воркфорцеинтегратион** , связанных с этим расписанием.|
+| [создание](../api/workforceintegration-post.md); | [воркфорцеинтегратион](workforceintegration.md) | Создание нового объекта **воркфорцеинтегратион** .|
 | [получение](../api/workforceintegration-get.md); | [воркфорцеинтегратион](workforceintegration.md) | Чтение свойств и связей объекта **воркфорцеинтегратион** . |
 | [обновление](../api/workforceintegration-update.md). | [воркфорцеинтегратион](workforceintegration.md) | Обновление объекта **воркфорцеинтегратион** . |
 | [удаление](../api/workforceintegration-delete.md); | Нет | Удаление объекта **воркфорцеинтегратион** . |
@@ -33,10 +35,11 @@ ms.locfileid: "42519087"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |апиверсион|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
-|displayName|String|Имя интеграции трудовых ресурсов.|
+|displayName|Строка|Имя интеграции трудовых ресурсов.|
 |шифрования|[воркфорцеинтегратионенкриптион](workforceintegrationencryption.md)|Ресурс для шифрования взаимодействия сотрудников.|
 |isActive|Boolean|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
-|имеется|string| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`,, `openShiftRequest``userShiftPreferences`|
+|имеется|string| Сущности сдвигов, поддерживаемые для синхронных уведомлений об изменении. Смены потребуют обратного вызова на URL-адрес, указанный в изменениях клиентов для этих сущностей, добавленных здесь. По умолчанию для уведомлений об изменениях не поддерживаются никакие сущности. Возможные значения: `none`, `shift`, `swapRequest`, `openshift`,, `openShiftRequest``userShiftPreferences`|
+|суппортедентитиес|string| Это свойство **будет заменено** в версии 1.0. Мы рекомендуем использовать это свойство вместо **поддерживаемых**. Свойство **Supports будет по-** прежнему поддерживаться в бета-версии в течение этого времени. Возможные значения: `none`, `shift` `swapRequest` `openshift`,,, `openShiftRequest`, `userShiftPreferences`. Если выбрано более одного значения, все значения должны начинаться с первой буквы в верхнем регистре.|
 |url|String| URL-адрес интеграции сотрудников для обратных вызовов из службы смены.|
 
 ## <a name="relationships"></a>Связи
