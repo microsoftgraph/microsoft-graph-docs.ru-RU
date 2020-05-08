@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 8b398ee8b0dbe14570f4ae59c71372502f3d0565
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 2e378229e8b001070db274c812cdb307934717cf
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227709"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168570"
 ---
 # <a name="profile-resource-type"></a>Тип ресурса Profile
 
@@ -18,7 +18,9 @@ ms.locfileid: "43227709"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет свойства описания человека в клиенте. Эти свойства отображаются в общедоступных людях в Microsoft 365 и сторонних службах и возможностях в Microsoft Graph. 
+Представляет свойства, которые являются описательными для пользователя в клиенте, например юбилеев и действия по образованию. Эти свойства отображаются в общедоступных людях в Microsoft 365 и сторонних службах и возможностях в Microsoft Graph. 
+
+Программным способом эти свойства выражаются в виде [связей](#relationships) ресурса **профиля** . Чтобы получить одно из этих свойств навигации или создать экземпляр этих свойств для пользователя, используйте соответствующий метод GET или POST для этого свойства там, где это уместно. Ознакомьтесь с приведенными ниже [способами](#methods) .
 
 ## <a name="methods"></a>Методы
 
@@ -91,6 +93,12 @@ ms.locfileid: "43227709"
 }-->
 
 ```json
+{
+    "id": "String (identifier)"
+}
+```
+
+<!--
 {
     "id": "profileId",
     "anniversaries": [],
@@ -326,7 +334,8 @@ ms.locfileid: "43227709"
     ],
     "webAccounts": []
 }
-```
+-->
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

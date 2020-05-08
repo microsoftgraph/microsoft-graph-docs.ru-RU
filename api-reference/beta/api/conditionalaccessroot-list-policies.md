@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e0142ca08495bf13545c6a41d9b49e13f0c721c1
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 7fc97177ee453a4968aafc52514c5fb58dafb2fe
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916474"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168529"
 ---
 # <a name="list-policies"></a>Список политик
 
@@ -48,7 +48,7 @@ GET /identity/conditionalAccess/policies
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -116,7 +116,9 @@ Content-type: application/json
             "sessionControls": null,
             "conditions": {
                 "signInRiskLevels": [],
-                "clientAppTypes": [],
+                "clientAppTypes": [
+                    "all"
+                ],
                 "platforms": null,
                 "locations": null,
                 "deviceStates": null,
@@ -157,7 +159,9 @@ Content-type: application/json
             "sessionControls": null,
             "conditions": {
                 "signInRiskLevels": [],
-                "clientAppTypes": [],
+                "clientAppTypes": [
+                    "all"
+                ],
                 "platforms": null,
                 "locations": null,
                 "deviceStates": null,

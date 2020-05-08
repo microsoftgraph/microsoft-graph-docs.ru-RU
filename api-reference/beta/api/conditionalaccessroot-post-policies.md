@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c2540264f083f30b835ed14340f5af964afeba3c
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: c6ecc51d169341273a0093f86e7e4c2f0f7bf230
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916481"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168508"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Создание Кондитионалакцессполици
 
@@ -48,7 +48,7 @@ POST /identity/conditionalAccess/policies
 | Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) в формате JSON.
 
@@ -63,7 +63,7 @@ POST /identity/conditionalAccess/policies
 ### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>Пример 1: запрос MFA для доступа к Exchange Online вне надежных расположений
 
 #### <a name="request"></a>Запрос
-В следующем примере показан общий запрос для использования многофакторной проверки подлинности для доступа к Exchange Online из браузера или современного клиента проверки подлинности вне надежных расположений для определенной группы.
+В следующем примере показан общий запрос на проверку подлинности многофакторной проверки подлинности для доступа к Exchange Online из современных клиентов проверки подлинности вне надежных расположений для определенной группы.
 
 >**Примечание:** Перед использованием этой операции необходимо настроить надежные расположения.
 
@@ -83,7 +83,7 @@ Content-type: application/json
     "state": "enabled",
     "conditions": {
         "clientAppTypes": [
-            "modern",
+            "mobileAppsAndDesktopClients",
             "browser"
         ],
         "applications": {
@@ -151,7 +151,7 @@ Content-type: application/json
     "conditions": {
         "signInRiskLevels": [],
         "clientAppTypes": [
-            "modern",
+            "mobileAppsAndDesktopClients",
             "browser"
         ],
         "platforms": null,
@@ -213,11 +213,7 @@ Content-type: application/json
     "state": "enabled",
     "conditions": {
         "clientAppTypes": [
-            "modern",
-            "browser",
-            "easSupported",
-            "easUnsupported",
-            "other"
+            "all"
         ],
         "applications": {
             "includeApplications": [
@@ -267,11 +263,7 @@ Content-type: application/json
     "conditions": {
         "signInRiskLevels": [],
         "clientAppTypes": [
-            "modern",
-            "browser",
-            "easSupported",
-            "easUnsupported",
-            "other"
+            "all"
         ],
         "platforms": null,
         "deviceStates": null,
@@ -332,9 +324,8 @@ Content-type: application/json
             "medium"
         ],
         "clientAppTypes": [
-            "modern",
-            "easSupported",
-            "easUnsupported",
+            "mobileAppsAndDesktopClients",
+            "exchangeActiveSync",
             "other"
         ],
         "applications": {
@@ -456,9 +447,8 @@ Content-type: application/json
             "medium"
         ],
         "clientAppTypes": [
-            "modern",
-            "easSupported",
-            "easUnsupported",
+            "mobileAppsAndDesktopClients",
+            "exchangeActiveSync",
             "other"
         ],
         "applications": {
@@ -624,7 +614,9 @@ Content-type: application/json
     "conditions": {
         "userRiskLevels": [],
         "signInRiskLevels": [],
-        "clientAppTypes": [],
+        "clientAppTypes": [
+            "all"
+        ],
         "platforms": null,
         "locations": null,
         "times": null,

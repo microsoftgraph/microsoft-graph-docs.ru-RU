@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 576a6508de497fb4ca84c3ecd5abdda8d98d1df5
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: be3ceb32d37efaae2946c334503a896ccad801a8
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916548"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168518"
 ---
 # <a name="get-conditionalaccesspolicy"></a>Получение Кондитионалакцессполици
 
@@ -48,7 +48,7 @@ GET /identity/conditionalAccess/policies/{id}
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -115,9 +115,8 @@ Content-type: application/json
             "low"
         ],
         "clientAppTypes": [
-            "modern",
-            "easSupported",
-            "easUnsupported",
+            "mobileAppsAndDesktopClients",
+            "exchangeActiveSync",
             "other"
         ],
         "applications": {

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d0bc20c6e83f8f2bd9e67268eb9471d84bbdcb16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fd6c68f79ffb417b12eb1f8e28d874f4461fb24e
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455246"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168558"
 ---
 # <a name="get-profile"></a>Получение профиля
 
@@ -19,6 +19,8 @@ ms.locfileid: "42455246"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение свойств и связей объекта [Profile](../resources/profile.md) для определенного пользователя.
+
+Ресурс **Profile** предоставляет различные расширенные свойства, которые могут быть описательными для пользователя как [отношения](../resources/profile.md#relationships), например юбилеи и действия по образованию. Чтобы получить одно из этих свойств навигации, используйте соответствующий метод GET для этого свойства. Просмотрите [методы](../resources/profile.md) , предоставляемые **профилем**.
 
 ## <a name="permissions"></a>Разрешения
 
