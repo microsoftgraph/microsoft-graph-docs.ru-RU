@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c0778305544b80715864a7a8e5441356ed160b45
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: 7e734d47e85ea18874a6440b5e7dab871ac667c3
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006330"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153480"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -23,6 +23,12 @@ ms.locfileid: "44006330"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлены свойства **resourceBehaviorOptions** и **resourceProvisioningOptions** в объект [group](/graph/api/resources/group?view=graph-rest-beta).|
+
+### <a name="teamwork--shifts"></a>Командная работа | Смены
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение | 1.0 | Введены API-интерфейсы Shifts, включая [shift](/graph/api/resources/shift?view=graph-rest-1.0), [workforceintegration]((/graph/api/resources/workforceintegration?view=graph-rest-1.0) и связанные методы.|
 
 ## <a name="april-2020"></a>Апрель 2020 г.
 
@@ -145,7 +151,6 @@ ms.locfileid: "44006330"
 | Дополнение        | 1.0        | Добавлено свойство навигации **followedSites** в объект [user](/graph/api/resources/user?view=graph-rest-1.0), чтобы [список сайтов, на которые подписан выполнивший вход пользователь](/graph/api/sites-list-followed?view=graph-rest-1.0). |
 | Дополнение        | 1.0        | Добавлено свойство **dataLocatonCode** на ресурсе [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0). |
 | Дополнение        | 1.0        | Добавлено свойство **tenantId** в ресурс [sharepointIds](/graph/api/resources/sharepointids?view=graph-rest-1.0). |
-
 
 
 ## <a name="march-2020"></a>Март 2020 г.
@@ -280,6 +285,8 @@ ms.locfileid: "44006330"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
+| Дополнение | Бета-версия |Добавлено новое свойство **supportedEntities** к объекту [workforceintegration](/graph/api/resources/workforceintegration?view=graph-rest-beta).|
+| Дополнение | 1.0 | Добавлена новая сущность [командной работы](/graph/api/resources/teamwork?view=graph-rest-1.0).
 | Дополнение | Бета-версия | Добавлена поддержка ChannelMessage.Read.All в API для чтения [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) в каналах. |
 
 ### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
@@ -1673,7 +1680,7 @@ ms.locfileid: "44006330"
 |Дополнение|Бета|Добавлены свойства **restrictPeerSelectionBy**, **groupIdSource**, **bandwidthMode**, **backgroundDownloadFromHttpDelayInSeconds**, **foregroundDownloadFromHttpDelayInSeconds**, **minimumRamAllowedToPeerInGigabytes**, **minimumDiskSizeAllowedToPeerInGigabytes**, **minimumFileSizeToCacheInMegabytes**, **minimumBatteryPercentageAllowedToUpload**, **modifyCacheLocation**, **maximumCacheAgeInDays**, **maximumCacheSize** и **vpnPeerCaching** для объекта [windowsDeliveryOptimizationConfiguration](/graph/api/resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration?view=graph-rest-beta).|
 |Дополнение|бета|Добавлено свойство **lastCheckInDateTime** для объекта [windowsInformationProtectionWipeAction](/graph/api/resources/intune-mam-windowsinformationprotectionwipeaction?view=graph-rest-beta)|
 |Дополнение|бета|Добавлено свойство навигации **managedDeviceEncryptionStates** для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
-|Дополнение|бета|Добавлены свойства **endpointProtection** и **officeApps** для сложного типа [configurationManagerClientEnabledFeatures](/graph/api/resources/intune-devices-configurationmanagerclientenabledfeatures?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлены свойства **endpointProtection** и **officeApps** для сложного типа [configurationManagerClientEnabledFeatures](/graph/api/resources/intune-devices-configurationmanagerclientenabledfeatures?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены свойства **productName** и **publisher** для сложного типа [win32LobAppMsiInformation](/graph/api/resources/intune-apps-win32lobappmsiinformation?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлен элемент **warn** для типа перечисления [managedAppRemediationAction](/graph/api/resources/intune-mam-managedappremediationaction?view=graph-rest-beta)|
 
@@ -2279,7 +2286,7 @@ ms.locfileid: "44006330"
 |Изменение|бета| Свойство **malwareWasRunning** перемещено из объекта [alert](/graph/api/resources/alert?view=graph-rest-beta ) в [malwareState](/graph/api/resources/malwarestate?view=graph-rest-beta) и переименовано в **wasRunning**. |
 | Дополнение        | бета       | Добавлены свойства **applicationName**, **destinationDomain**, **direction**, **domainRegisteredDateTime**, **localDnsName **, **natDestinationAddress**, **natDestinationPort**, **natSourceAddress**, **natSourcePort**, **riskScore**, **status** и **urlParameters** для объекта [networkConnection](/graph/api/resources/networkconnection?view=graph-rest-beta ).|
 |Изменение|бета| Свойство **uri** изменено на **destinationUrl** в объекте [networkConnection](/graph/api/resources/networkconnection?view=graph-rest-beta ). |
-| Дополнение        | бета       | Добавлено свойство **fileHash** для объекта [process](/graph/api/resources/process?view=graph-rest-beta ).|
+| Дополнение        | Бета       | Добавлено свойство **fileHash** для объекта [process](/graph/api/resources/process?view=graph-rest-beta ).|
 |Удаление|бета| Удалены свойства **authenticodeHash256** и **sha256** из объекта [process](/graph/api/resources/process?view=graph-rest-beta ). |
 | Дополнение        | бета       | Добавлены свойства **aadUserId**, **emailRole**, **isVpn** и **logonIp** для объекта [userSecurityState](/graph/api/resources/usersecuritystate?view=graph-rest-beta).|
 |Изменение|бета| Свойство **logonIpAddress** изменено на **logonIp** в объекте [userSecurityState](/graph/api/resources/usersecuritystate?view=graph-rest-beta). |
