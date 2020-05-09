@@ -346,6 +346,12 @@
                       href: api/outlookuser-list-mastercategories.md
                 - name: Преобразование идентификаторов
                   href: api/user-translateexchangeids.md
+            - name: Люди
+              items:
+                - name: Человек
+                  href: resources/person.md
+                - name: Список людей
+                  href: api/user-list-people.md
             - name: Фотография
               href: resources/profilephoto.md
               items:
@@ -1714,7 +1720,7 @@
                   items:
                     - name: Получение
                       href: api/intune-deviceconfig-deviceconfigurationuseroverview-get.md
-                    - name: Update
+                    - name: Обновление
                       href: api/intune-deviceconfig-deviceconfigurationuseroverview-update.md
                 - name: 'Состояние пользователей, касающееся конфигураций устройств'
                   href: resources/intune-deviceconfig-deviceconfigurationuserstatus.md
@@ -2347,7 +2353,7 @@
                 - name: Событие "Устранение проблем с управлением устройствами"
                   href: resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
                     - name: Получение
                       href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
@@ -2364,7 +2370,7 @@
                 - name: Событие "Устранение проблем с регистрацией"
                   href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
                     - name: Получение
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
@@ -2995,7 +3001,7 @@
                 - name: Определение роли управления устройствами и приложениями
                   href: resources/intune-rbac-deviceandappmanagementroledefinition.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-rbac-deviceandappmanagementroledefinition-list.md
                     - name: Получение
                       href: api/intune-rbac-deviceandappmanagementroledefinition-get.md
@@ -3010,7 +3016,7 @@
                 - name: Операция ресурса
                   href: resources/intune-rbac-resourceoperation.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-rbac-resourceoperation-list.md
                     - name: Получение
                       href: api/intune-rbac-resourceoperation-get.md
@@ -3601,7 +3607,7 @@
                       href: api/activitybasedtimeoutpolicy-get.md
                     - name: Обновление
                       href: api/activitybasedtimeoutpolicy-update.md
-                    - name: Delete
+                    - name: Удаление
                       href: api/activitybasedtimeoutpolicy-delete.md
                 - name: Политика обнаружения домашней области
                   href: resources/homerealmdiscoverypolicy.md
@@ -3614,7 +3620,7 @@
                       href: api/homerealmdiscoverypolicy-get.md
                     - name: Обновление
                       href: api/homerealmdiscoverypolicy-update.md
-                    - name: Delete
+                    - name: Удаление
                       href: api/homerealmdiscoverypolicy-delete.md
                     - name: Список субъектов-служб и приложений
                       href: api/homerealmdiscoverypolicy-list-appliesto.md
@@ -3629,7 +3635,7 @@
                       href: api/tokenissuancepolicy-get.md
                     - name: Обновление
                       href: api/tokenissuancepolicy-update.md
-                    - name: Delete
+                    - name: Удаление
                       href: api/tokenissuancepolicy-delete.md
                     - name: Список субъектов-служб и приложений
                       href: api/tokenissuancepolicy-list-appliesto.md
@@ -3644,7 +3650,7 @@
                       href: api/tokenlifetimepolicy-get.md
                     - name: Обновление
                       href: api/tokenlifetimepolicy-update.md
-                    - name: Delete
+                    - name: Удаление
                       href: api/tokenlifetimepolicy-delete.md
                     - name: Список субъектов-служб и приложений
                       href: api/tokenlifetimepolicy-list-appliesto.md
@@ -3915,9 +3921,10 @@
           items:
             - name: Обзор
               href: resources/social-overview.md
-            - name: Человек
-              href: resources/person.md
+            - name: Люди
               items:
+                - name: Человек
+                  href: resources/person.md
                 - name: Список людей
                   href: api/user-list-people.md
             - name: Аналитика
@@ -4658,7 +4665,7 @@
                       href: api/workforceintegration-get.md
                     - name: Обновление
                       href: api/workforceintegration-update.md
-                    - name: Delete
+                    - name: Удаление
                       href: api/workforceintegration-delete.md
             - name: Диск
               href: resources/drive.md
