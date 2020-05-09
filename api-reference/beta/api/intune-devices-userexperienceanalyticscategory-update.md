@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 550aea2dce1fb11c6888f8652ef39b9d0a6d84cb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 58d8e932c53c372a0ad68de9f97ad7c86708c137
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43322593"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176087"
 ---
 # <a name="update-userexperienceanalyticscategory"></a>Обновление Усерекспериенцеаналитикскатегори
 
@@ -48,14 +48,14 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитикскатегори](../resources/intune-devices-userexperienceanalyticscategory.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитикскатегори](../resources/intune-devices-userexperienceanalyticscategory.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор категории аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор категории аналитики взаимодействия с пользователем.|
 |овераллскоре|Int32|Общий показатель категории аналитики взаимодействия с пользователем.|
 |insights|Коллекция [усерекспериенцеаналитиксинсигхт](../resources/intune-devices-userexperienceanalyticsinsight.md)|Аналитика для категории аналитики взаимодействия с пользователем.|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние работоспособности категории аналитики взаимодействия с пользователем. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
@@ -72,7 +72,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
 Content-type: application/json
-Content-length: 572
+Content-length: 553
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
@@ -85,7 +85,7 @@ Content-length: 572
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": 1.6666666666666667
         }
       ],
       "severity": "informational"
@@ -100,7 +100,7 @@ Content-length: 572
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 621
+Content-Length: 602
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
@@ -114,7 +114,7 @@ Content-Length: 621
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": 1.6666666666666667
         }
       ],
       "severity": "informational"

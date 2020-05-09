@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 549e5699d1c9adbf79441aa96500fe85c7adae74
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 34dc094d6b14a2d0b95273d90f8e96bff74f8312
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427584"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177207"
 ---
 # <a name="get-devicemanagementtemplate"></a>Получение Девицеманажементтемплате
 
@@ -50,7 +50,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagemen
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 459
+Content-Length: 495
 
 {
   "value": {
@@ -82,6 +82,7 @@ Content-Length: 459
     "intentCount": 11,
     "templateType": "specializedDevices",
     "platformType": "androidForWork",
+    "templateSubtype": "firewall",
     "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
   }
 }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ff1691745987c7ea39f29697f8b600738beb108
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cc5954add0ab651e96bf0274944cb2f1c2ef7368
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43340274"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179095"
 ---
 # <a name="update-windows10customconfiguration"></a>Обновление объекта windows10CustomConfiguration
 
@@ -48,7 +48,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [windows10CustomConfiguration](../resources/intune-deviceconfig-windows10customconfiguration.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windows10CustomConfiguration](../resources/intune-deviceconfig-windows10customconfiguration.md).
@@ -80,7 +80,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1296
+Content-length: 1243
 
 {
   "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
@@ -114,12 +114,10 @@ Content-length: 1296
   "version": 7,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSettingInteger",
+      "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value",
-      "value": 5,
-      "isReadOnly": true
+      "omaUri": "Oma Uri value"
     }
   ]
 }
@@ -130,7 +128,7 @@ Content-length: 1296
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1468
+Content-Length: 1415
 
 {
   "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
@@ -167,12 +165,10 @@ Content-Length: 1468
   "version": 7,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSettingInteger",
+      "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value",
-      "value": 5,
-      "isReadOnly": true
+      "omaUri": "Oma Uri value"
     }
   ]
 }

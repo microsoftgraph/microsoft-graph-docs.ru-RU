@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Андроиддевицеовнеренроллментпрофиле
-description: Профиль регистрации, используемый для регистрации устройств COSU с помощью управления облачными клиентами от Google.
+description: Профиль регистрации, используемый для регистрации корпоративных устройств с Android с помощью облачного управления Google.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4cbf037372b2e623bf389a01b1caa6aac348c669
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6fbe8b7d23831a4fba0eb015197eadc3e9c722db
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459320"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179420"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>Тип ресурса Андроиддевицеовнеренроллментпрофиле
 
@@ -20,7 +20,7 @@ ms.locfileid: "43459320"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Профиль регистрации, используемый для регистрации устройств COSU с помощью управления облачными клиентами от Google.
+Профиль регистрации, используемый для регистрации корпоративных устройств с Android с помощью облачного управления Google.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -36,13 +36,13 @@ ms.locfileid: "43459320"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|accountId|String|GUID клиента, которому принадлежит профиль регистрации.|
+|accountId|Строка|GUID клиента, которому принадлежит профиль регистрации.|
 |id|Строка|Уникальный GUID профиля регистрации.|
 |displayName|Строка|Отображаемое имя для профиля регистрации.|
 |description|String|Описание профиля регистрации.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
-|tokenValue|String|Значение последнего созданного маркера для этого профиля регистрации.|
+|tokenValue|Строка|Значение последнего созданного маркера для этого профиля регистрации.|
 |токенкреатиондатетиме|DateTimeOffset|Дата и время создания последнего созданного маркера.|
 |tokenExpirationDateTime|DateTimeOffset|Дата и время, когда истекает срок действия последнего созданного маркера.|
 |enrolledDeviceCount|Int32|Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.|

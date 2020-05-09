@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b562a565c9dd06cc30b80d26a90bb2b75694ca7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e40690f90fb8289f1b7994a5148f649c89ec57ea
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444492"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178264"
 ---
 # <a name="getpolicynoncompliancereport-action"></a>действие Жетполицинонкомплианцерепорт
 
@@ -46,7 +46,7 @@ POST /deviceManagement/reports/getPolicyNonComplianceReport
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -102,10 +102,10 @@ Content-length: 278
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 54
+Content-Length: 95
 
 {
-  "value": "<Unknown Primitive Type Edm.Stream>"
+  "value": "Z2V0UG9saWN5Tm9uQ29tcGxpYW5jZVJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAtNjU2NTI5OTUw"
 }
 ```
 

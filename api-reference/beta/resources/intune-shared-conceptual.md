@@ -2,14 +2,14 @@
 title: Общие ресурсы в Microsoft Intune — API Microsoft Graph
 description: Перечисляет API Microsoft Graph для конечных точек Intune (REST), поддерживающих несколько рабочих процессов для организации клиента.
 localization_priority: Normal
-author: rolyon
+author: dougeby
 ms.prod: intune
-ms.openlocfilehash: db7746504a7bd31df99941ffc7bc85065eb5d56a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d138f4c92999477054e8fe154c426fd18181037
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527479"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178096"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -27,6 +27,7 @@ ms.locfileid: "42527479"
 - [Объект назначения всех устройств](intune-shared-alldevicesassignmenttarget.md)
 - [Объект назначения всех лицензированных пользователей](intune-shared-alllicensedusersassignmenttarget.md)
 - [Защита управляемых приложений для Android](intune-shared-androidmanagedappprotection.md)
+- [Параметры назначения приложений с управляемым хранилищем Android](intune-shared-androidmanagedstoreappassignmentsettings.md)
 - [Действие портала компании](intune-shared-companyportalaction.md)
 - [Действие блокирования портала компании](intune-shared-companyportalblockedaction.md)
 - [Состояние соответствия](intune-shared-compliancestatus.md)
@@ -80,10 +81,11 @@ ms.locfileid: "42527479"
 - [Сохраненные параметры создания состояния пользовательского интерфейса](intune-shared-saveduistategenerationoptions.md)
 - [Целевая конфигурация управляемых приложений](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
-- [User](intune-shared-user.md)
+- [Пользователь](intune-shared-user.md)
 - [Тип учетной записи токена VPP](intune-shared-vpptokenaccounttype.md)
 - [Причина сбоя действия с токеном VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Настройки назначения бизнес-приложения Win32](intune-shared-win32lobappassignmentsettings.md)
+- [Приоритет оптимизации доставки бизнес-приложений Win32](intune-shared-win32lobappdeliveryoptimizationpriority.md)
 - [Уведомление бизнес-приложения Win32](intune-shared-win32lobappnotification.md)
 - [Параметры перезапуска приложения Win32 LOB](intune-shared-win32lobapprestartsettings.md)
 - [Настройки назначения приложения Windows AppX](intune-shared-windowsappxappassignmentsettings.md)
@@ -91,4 +93,3 @@ ms.locfileid: "42527479"
 - [Конфигурация присоединения к домену Windows](intune-shared-windowsdomainjoinconfiguration.md)
 - [Настройки назначения универсального приложения Windows AppX](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Состояние центра обновления Windows](intune-shared-windowsupdatestate.md)
-

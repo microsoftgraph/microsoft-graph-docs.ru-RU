@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c7fde6cc402f783f6402744123a4fef6fca6f691
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9d12eee3c5f19bad5b0f8d12ef20b66b52bbe62d
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380951"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177081"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assign
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -68,7 +68,7 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assign
 POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assign
 
 Content-type: application/json
-Content-length: 419
+Content-length: 513
 
 {
   "deviceHealthScriptAssignments": [
@@ -76,11 +76,14 @@ Content-length: 419
       "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
       "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
       },
       "runRemediationScript": true,
       "runSchedule": {
-        "@odata.type": "microsoft.graph.runSchedule"
+        "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+        "interval": 8,
+        "useUtc": true,
+        "time": "11:58:36.2550000"
       }
     }
   ]

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29fe908ce4e729766edab015dc91f3109f6e9b51
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e8239ac7e4583841d3c8a095bc85d9c9eb9b9d78
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464995"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178397"
 ---
 # <a name="userexperienceanalyticsmetric-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксметрик
 
@@ -34,9 +34,9 @@ ms.locfileid: "43464995"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
 |значение|Двойное с плавающей точкой|Значение метрики аналитики взаимодействия с пользователем.|
-|устройств|String|Единица измерения показателя взаимодействия с пользователем.|
+|устройств|Строка|Единица измерения показателя взаимодействия с пользователем.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -53,7 +53,7 @@ ms.locfileid: "43464995"
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "String (identifier)",
-  "value": "<Unknown Primitive Type Edm.Double>",
+  "value": "4.2",
   "unit": "String"
 }
 ```

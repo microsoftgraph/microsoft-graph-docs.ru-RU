@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 34183918522e9036aba005bac0086cbbc396e527
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0e9d7c280fe006f45f3df825472fa95eb7ba1300
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43430964"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179055"
 ---
 # <a name="update-windows10generalconfiguration"></a>Обновление объекта windows10GeneralConfiguration
 
@@ -48,7 +48,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md).
@@ -82,14 +82,14 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |микрософтаккаунтсигнинассистантсеттингс|[сигнинассистантоптионс](../resources/intune-deviceconfig-signinassistantoptions.md)|Управляет службой NT помощника по входу в учетную запись Майкрософт (влидсвк). Возможные значения: `notConfigured`, `disabled`.|
 |аусентикатионалловсекондаридевице|Boolean|Позволяет устройствам вторичной проверки подлинности работать с Windows.|
 |аусентикатионвебсигнин|[Включение](../resources/intune-shared-enablement.md)|Указывает, будет ли включен поставщик учетных данных веб-служб. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|аусентикатионпреферредазуреадтенантдомаиннаме|String|Указывает предпочитаемый домен между доступными доменами в клиенте Azure AD.|
+|аусентикатионпреферредазуреадтенантдомаиннаме|Строка|Указывает предпочитаемый домен между доступными доменами в клиенте Azure AD.|
 |криптографялловфипсалгорисмполици|Boolean|Укажите, следует ли включить или отключить политику федеральной обработки информации (FIPS).|
 |дисплайапплиствисгдидпискалингтурнедон|Коллекция объектов string|Список устаревших приложений с включенным масштабированием GDI.|
 |дисплайапплиствисгдидпискалингтурнедофф|Коллекция объектов string|Список устаревших приложений, для которых масштабирование GDI отключено.|
-|enterpriseCloudPrintDiscoveryEndPoint|String|Конечная точка для обнаружения облачных принтеров.|
-|enterpriseCloudPrintOAuthAuthority|String|Конечная точка аутентификации для получения токенов OAuth.|
-|enterpriseCloudPrintOAuthClientIdentifier|String|GUID клиентского приложения, которому разрешено получать токены OAuth из системы OAuth.|
-|enterpriseCloudPrintResourceIdentifier|String|URI ресурса OAuth для службы печати, настроенный на портале Azure.|
+|enterpriseCloudPrintDiscoveryEndPoint|Строка|Конечная точка для обнаружения облачных принтеров.|
+|enterpriseCloudPrintOAuthAuthority|Строка|Конечная точка аутентификации для получения токенов OAuth.|
+|enterpriseCloudPrintOAuthClientIdentifier|Строка|GUID клиентского приложения, которому разрешено получать токены OAuth из системы OAuth.|
+|enterpriseCloudPrintResourceIdentifier|Строка|URI ресурса OAuth для службы печати, настроенный на портале Azure.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Максимальное количество принтеров, запрашиваемых с конечной точки обнаружения. Этот параметр применяется только к мобильным устройствам. Допустимые значения: от 1 до 65 535.|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|URI ресурса OAuth для службы обнаружения принтеров, настроенный на портале Azure.|
 |експериенцедонотсинкбровсерсеттингс|[бровсерсинксеттинг](../resources/intune-deviceconfig-browsersyncsetting.md)|Разрешить или запретить синхронизацию параметров браузера Microsoft Edge. Возможность для ИТ для ИТ, чтобы предотвратить синхронизацию между устройствами, но разрешить переопределение пользователей. Возможные значения: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
@@ -97,7 +97,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |мессагингблоккммс|Boolean|Указывает, следует ли заблокировать функцию отправки и получения MMS на устройстве.|
 |мессагингблоккричкоммуникатионсервицес|Boolean|Указывает, следует ли заблокировать функцию отправки и получения RCS на устройстве.|
 |Свойства printernames|Коллекция объектов string|Автоматическая подготовка принтеров на основе их имен (имена узлов сети).|
-|принтердефаултнаме|String|Имя установленного принтера (имя узла сети).|
+|принтердефаултнаме|Строка|Имя установленного принтера (имя узла сети).|
 |принтерблоккаддитион|Boolean|Запретить пользователю установку дополнительных принтеров из параметров принтеров.|
 |searchBlockDiacritics|Boolean|Указывает, можно ли использовать диакритические знаки в поиске.|
 |searchDisableAutoLanguageDetection|Boolean|Указывает, следует ли использовать автоматическое определение языка при индексировании контента и свойств.|
@@ -113,14 +113,14 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |секуритиблокказуреаджоинеддевицесаутоенкриптион|Boolean|Укажите, следует ли разрешить автоматическое шифрование устройства во время OOBE, когда устройство присоединяется к Azure AD (только для настольных компьютеров).|
 |diagnosticsDataSubmissionMode|[диагностикдатасубмиссионмоде](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Возвращает или задает значение, позволяющее устройству отправлять данные диагностики и телеметрии использования, такие как Watson. Возможные значения: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Возвращает или задает значение, позволяющее ИТ-администраторам запретить работу приложений и функций с файлами в OneDrive.|
-|системтелеметрипроксисервер|String|Получает или задает полное доменное имя или IP-адрес прокси-сервера для переадресации запросов на взаимодействие с пользователем и телеметрию с подключением.|
+|системтелеметрипроксисервер|Строка|Получает или задает полное доменное имя или IP-адрес прокси-сервера для переадресации запросов на взаимодействие с пользователем и телеметрию с подключением.|
 |edgeTelemetryForMicrosoft365Analytics|[еджетелеметримоде](../resources/intune-deviceconfig-edgetelemetrymode.md)|Указывает, какие типы данных телеметрии (нет, интрасеть, Интернет и т. д.) отправляются в Microsoft 365 Analytics. Возможные значения: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
 |инкворкспацеакцесс|[инкакцесссеттинг](../resources/intune-deviceconfig-inkaccesssetting.md)|Управляет доступом пользователей к рабочей области для рукописного ввода с рабочего стола и с экрана блокировки. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |инкворкспацеакцессстате|[статеманажементсеттинг](../resources/intune-deviceconfig-statemanagementsetting.md)|Управляет доступом пользователей к рабочей области для рукописного ввода с рабочего стола и с экрана блокировки. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
 |инкворкспацеблокксугжестедаппс|Boolean|Укажите, следует ли отображать Рекомендуемые предложения приложения в рабочей области для рукописного ввода.|
 |smartScreenEnableAppInstallControl|Boolean|Это свойство будет признано устаревшим в июле 2019 и будет заменено свойством Смартскринаппинсталлконтрол. Позволяет ИТ-администраторам разрешать или запрещать установку приложений из мест, отличных от Store.|
 |смартскринаппинсталлконтрол|[appInstallControlType](../resources/intune-deviceconfig-appinstallcontroltype.md)|Добавлено в Windows 10 версии 1703. Позволяет ИТ-администраторам разрешать или запрещать установку приложений из мест, отличных от Store. Возможные значения: `notConfigured`, `anywhere`, `storeOnly`, `recommendations`, `preferStore`.|
-|personalizationDesktopImageUrl|String|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на рабочем столе, или URL-адрес локального изображения в файловой системе, которое нужно разместить на рабочем столе.|
+|personalizationDesktopImageUrl|Строка|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на рабочем столе, или URL-адрес локального изображения в файловой системе, которое нужно разместить на рабочем столе.|
 |personalizationLockScreenImageUrl|String|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на экране блокировки, или URL-адрес локального изображения в файловой системе, которое нужно разместить на экране блокировки.|
 |bluetoothAllowedServices|Коллекция String|Укажите список разрешенных служб и профилей Bluetooth в шестнадцатеричном формате.|
 |bluetoothBlockAdvertising|Boolean|Указывает, следует ли запретить использовать рекламу по Bluetooth.|
@@ -143,9 +143,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |edgeDisableFirstRunPage|Boolean|Позволяет заблокировать веб-страницу Майкрософт, которая открывается при первом запуске Microsoft Edge. Эта политика позволяет предприятиям, зарегистрированным в конфигурациях с нулевым выбросом, блокировать эту страницу.|
 |edgeBlockLiveTileDataCollection|Boolean|Позволяет запретить Майкрософт собирать информацию о создании живых плиток, когда пользователи закрепляют сайты из Microsoft Edge на начальном экране.|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Указывает, следует ли включить синхронизацию избранного между Internet Explorer и Microsoft Edge. Браузеры обмениваются данными о добавлении, удалении и изменении избранных элементов, а также их порядка.|
-|еджефаворитеслистлокатион|String|Расположение списка избранного для подготовки. Это может быть локальный файл, локальная сеть или HTTP-адрес.|
+|еджефаворитеслистлокатион|Строка|Расположение списка избранного для подготовки. Это может быть локальный файл, локальная сеть или HTTP-адрес.|
 |еджеблоккедитфаворитес|Boolean|Указывает, следует ли запретить пользователю вносить изменения в папку "Избранное".|
-|едженевтабпажеурл|String|Указание страницы, открытой при создании новых вкладок.|
+|едженевтабпажеурл|Строка|Указание страницы, открытой при создании новых вкладок.|
 |еджехомебуттонконфигуратион|[еджехомебуттонконфигуратион](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|Вызывает скрытие кнопки "домой", Загрузка начальной страницы по умолчанию, загрузка новой страницы вкладки или настраиваемый URL-адрес.|
 |еджехомебуттонконфигуратионенаблед|Boolean|Включите конфигурацию кнопки "домой".|
 |еджеопенсвис|[еджеопеноптионс](../resources/intune-deviceconfig-edgeopenoptions.md)|Укажите, какие типы страниц открыты при запуске. Возможные значения: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
@@ -165,42 +165,42 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |cellularBlockDataWhenRoaming|Boolean|Указывает, следует ли запретить использовать мобильные данные в роуминге.|
 |cellularBlockVpn|Boolean|Указывает, следует ли запретить использовать VPN по сотовой сети.|
 |cellularBlockVpnWhenRoaming|Boolean|Указывает, следует ли запретить использовать VPN по сотовой сети в роуминге.|
-|целлулардата|[конфигуратионусаже](../resources/intune-deviceconfig-configurationusage.md)|Указывает, следует ли разрешить канал сотовой связи на устройстве. Если этот параметр не задан, канал передачи данных разрешен и пользователь может его отключить. Возможные значения: `blocked`, `required`, `allowed`.|
-|defenderBlockEndUserAccess|Boolean|Указывает, следует ли заблокировать доступ пользователей к Защитнику.|
-|defenderDaysBeforeDeletingQuarantinedMalware|Int32|Время до удаления вредоносного ПО на карантине (в днях). Допустимые значения: от 0 до 90.|
-|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Возвращает или задает действия Защитника в отношении обнаруженного вредоносного ПО для каждого уровня угрозы.|
-|defenderSystemScanSchedule|[виклисчедуле](../resources/intune-deviceconfig-weeklyschedule.md)|День проверки системы Защитником. Возможные значения: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
-|defenderFilesAndFoldersToExclude|Коллекция объектов string|Файлы и папки, которые необходимо исключить из проверки и защиты в режиме реального времени.|
-|defenderFileExtensionsToExclude|Коллекция объектов string|Расширения файлов, которые необходимо исключить из проверки и защиты в режиме реального времени.|
-|defenderScanMaxCpu|Int32|Максимальный процент загрузки ЦП во время проверки. Допустимые значения: от 0 до 100|
-|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|Значение для отслеживания действий с файлами. Возможные значения: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
-|дефендерпотентиаллюнвантедаппактион|[дефендерпотентиаллюнвантедаппактион](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Получает или задает действие защитника, которое будет выполняться в потенциально нежелательном приложении (ПУА), которое включает программное обеспечение с поведением AD-Injection, объединением программного обеспечения, постоянным запросом на оплату или подписку и т. д. Пользователь оповещений защитника при загрузке Пуа или попытке его установки. Добавлено в Windows 10 для настольных ПК. Возможные значения: `deviceDefault`, `block`, `audit`.|
-|дефендерпотентиаллюнвантедаппактионсеттинг|[дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Получает или задает действие защитника, которое будет выполняться в потенциально нежелательном приложении (ПУА), которое включает программное обеспечение с поведением AD-Injection, объединением программного обеспечения, постоянным запросом на оплату или подписку и т. д. Пользователь оповещений защитника при загрузке Пуа или попытке его установки. Добавлено в Windows 10 для настольных ПК. Возможные значения: `userDefined`, `enable`, `auditMode`.|
-|defenderProcessesToExclude|Коллекция String|Процессы, которые необходимо исключить из проверки и защиты в режиме реального времени.|
-|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|Позволяет указать, нужно ли спрашивать пользователя перед отправкой образцов. Возможные значения: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
-|defenderRequireBehaviorMonitoring|Boolean|Указывает, обязательно ли использовать наблюдение за поведением.|
-|defenderRequireCloudProtection|Boolean|Указывает, обязательно ли использовать облачную защиту.|
-|defenderRequireNetworkInspectionSystem|Boolean|Указывает, обязательно ли использовать систему проверки сети.|
+|целлулардата|[конфигуратионусаже](../resources/intune-deviceconfig-configurationusage.md)|Указывает, следует ли разрешить канал сотовой связи на устройстве. Если этот параметр не задан, канал передачи данных разрешен и пользователь может его отключить. Возможные значения: `blocked`, `required`, `allowed`, `notConfigured`.|
 |defenderRequireRealTimeMonitoring|Boolean|Указывает, обязательно ли использовать мониторинг в режиме реального времени.|
-|defenderScanArchiveFiles|Boolean|Указывает, следует ли проверять архивные файлы.|
+|defenderRequireBehaviorMonitoring|Boolean|Указывает, обязательно ли использовать наблюдение за поведением.|
+|defenderRequireNetworkInspectionSystem|Boolean|Указывает, обязательно ли использовать систему проверки сети.|
 |defenderScanDownloads|Boolean|Указывает, следует ли проверять загрузки.|
 |дефендерсчедулесканенаблеловкпуприорити|Boolean|Если этот параметр включен, во время запланированных проверок будет использоваться недостаточный приоритет ЦП.|
 |дефендердисаблекатчупкуиккскан|Boolean|При блокировании будет отключено дополнительное сканирование для запланированных быстрых проверок.|
 |дефендердисаблекатчупфуллскан|Boolean|При блокировании будет отключено дополнительное сканирование для запланированных полных проверок.|
-|defenderScanNetworkFiles|Boolean|Указывает, следует ли сканировать файлы, открытые из сетевой папки.|
-|defenderScanIncomingMail|Boolean|Указывает, следует ли проверять входящую почту.|
-|defenderScanMappedNetworkDrivesDuringFullScan|Boolean|Указывает, следует ли сканировать подключенные сетевые диски во время полной проверки.|
-|defenderScanRemovableDrivesDuringFullScan|Boolean|Указывает, следует ли сканировать съемные диски во время полной проверки.|
 |defenderScanScriptsLoadedInInternetExplorer|Boolean|Указывает, следует ли проверять сценарии, загружаемые в браузере Internet Explorer.|
+|defenderBlockEndUserAccess|Boolean|Указывает, следует ли заблокировать доступ пользователей к Защитнику.|
 |defenderSignatureUpdateIntervalInHours|Int32|Интервал обновления сигнатур (в часах). Укажите 0, чтобы не проверять. Допустимые значения: от 0 до 24.|
-|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|Тип проверки системы Защитником. Возможные значения: `userDefined`, `disabled`, `quick`, `full`.|
-|defenderScheduledScanTime|TimeOfDay|Время проверки системы Защитником.|
-|defenderScheduledQuickScanTime|TimeOfDay|Время ежедневной быстрой проверки.|
+|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|Значение для отслеживания действий с файлами. Возможные значения: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
+|defenderDaysBeforeDeletingQuarantinedMalware|Int32|Время до удаления вредоносного ПО на карантине (в днях). Допустимые значения: от 0 до 90.|
+|defenderScanMaxCpu|Int32|Максимальный процент загрузки ЦП во время проверки. Допустимые значения: от 0 до 100|
+|defenderScanArchiveFiles|Boolean|Указывает, следует ли проверять архивные файлы.|
+|defenderScanIncomingMail|Boolean|Указывает, следует ли проверять входящую почту.|
+|defenderScanRemovableDrivesDuringFullScan|Boolean|Указывает, следует ли сканировать съемные диски во время полной проверки.|
+|defenderScanMappedNetworkDrivesDuringFullScan|Boolean|Указывает, следует ли сканировать подключенные сетевые диски во время полной проверки.|
+|defenderScanNetworkFiles|Boolean|Указывает, следует ли сканировать файлы, открытые из сетевой папки.|
+|defenderRequireCloudProtection|Boolean|Указывает, обязательно ли использовать облачную защиту.|
 |defenderCloudBlockLevel|[дефендерклаудблокклевелтипе](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Определяет уровень облачной защиты. Возможные значения: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
 |дефендерклаудекстендедтимеаут|Int32|Расширение времени ожидания для сканирования файлов в облаке. Допустимые значения: от 0 до 50.|
 |дефендерклаудекстендедтимеаутинсекондс|Int32|Расширение времени ожидания для сканирования файлов в облаке. Допустимые значения: от 0 до 50.|
-|дефендерблокконакцесспротектион|Boolean|Разрешает или запрещает защитник Windows для функций защиты доступа.|
+|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|Позволяет указать, нужно ли спрашивать пользователя перед отправкой образцов. Возможные значения: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
+|defenderScheduledQuickScanTime|TimeOfDay|Время ежедневной быстрой проверки.|
+|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|Тип проверки системы Защитником. Возможные значения: `userDefined`, `disabled`, `quick`, `full`.|
+|defenderSystemScanSchedule|[виклисчедуле](../resources/intune-deviceconfig-weeklyschedule.md)|День проверки системы Защитником. Возможные значения: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
+|defenderScheduledScanTime|TimeOfDay|Время проверки системы Защитником.|
+|дефендерпотентиаллюнвантедаппактион|[дефендерпотентиаллюнвантедаппактион](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Получает или задает действие защитника, которое будет выполняться в потенциально нежелательном приложении (ПУА), которое включает программное обеспечение с поведением AD-Injection, объединением программного обеспечения, постоянным запросом на оплату или подписку и т. д. Пользователь оповещений защитника при загрузке Пуа или попытке его установки. Добавлено в Windows 10 для настольных ПК. Возможные значения: `deviceDefault`, `block`, `audit`.|
+|дефендерпотентиаллюнвантедаппактионсеттинг|[дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Получает или задает действие защитника, которое будет выполняться в потенциально нежелательном приложении (ПУА), которое включает программное обеспечение с поведением AD-Injection, объединением программного обеспечения, постоянным запросом на оплату или подписку и т. д. Пользователь оповещений защитника при загрузке Пуа или попытке его установки. Добавлено в Windows 10 для настольных ПК. Возможные значения: `userDefined`, `enable`, `auditMode`.|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md);|Проверка уровня согласия пользователя в Защитнике Windows для отправки данных. Возможные значения: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
+|дефендерблокконакцесспротектион|Boolean|Разрешает или запрещает защитник Windows для функций защиты доступа.|
+|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Возвращает или задает действия Защитника в отношении обнаруженного вредоносного ПО для каждого уровня угрозы.|
+|defenderFileExtensionsToExclude|Коллекция объектов string|Расширения файлов, которые необходимо исключить из проверки и защиты в режиме реального времени.|
+|defenderFilesAndFoldersToExclude|Коллекция объектов string|Файлы и папки, которые необходимо исключить из проверки и защиты в режиме реального времени.|
+|defenderProcessesToExclude|Коллекция String|Процессы, которые необходимо исключить из проверки и защиты в режиме реального времени.|
 |lockScreenAllowTimeoutConfiguration|Boolean|Указывает, следует ли отображать настройку, позволяющую определить время до отключения экрана на экране блокировки мобильных устройств с Windows 10. Если для этой политики установлено значение Allow, значение, заданное свойством lockScreenTimeoutInSeconds, игнорируется.|
 |lockScreenBlockActionCenterNotifications|Boolean|Указывает, следует ли запретить показ уведомлений из центра уведомлений на экране блокировки.|
 |lockScreenBlockCortana|Boolean|Указывает, может ли пользователь взаимодействовать с Кортаной с помощью голоса при заблокированной системе.|
@@ -294,7 +294,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Указывает, следует ли переключить трафик интрасети от края к Internet Explorer. Note: имя этого свойства является недостоверным; свойство устарело, вместо него используйте Еджесендинтранеттраффиктоинтернетексплорер.|
 |еджесендинтранеттраффиктоинтернетексплорер|Boolean|Указывает, следует ли переключить трафик интрасети от края к Internet Explorer.|
 |edgeRequireSmartScreen|Boolean|Указывает, обязательно ли использовать фильтр Smart Screen.|
-|edgeEnterpriseModeSiteListLocation|String|Указывает расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или http-адрес.|
+|edgeEnterpriseModeSiteListLocation|Строка|Указывает расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или http-адрес.|
 |edgeFirstRunUrl|String|URL-адрес, открываемый в браузере Edge при первом запуске.|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)|Позволяет ИТ-администраторам устанавливать поисковую систему по умолчанию для управляемых с помощью системы MDM устройств. Пользователи могут переопределять эту настройку и изменять поисковую систему по умолчанию, если не установлена политика AllowSearchEngineCustomization.|
 |edgeHomepageUrls|Коллекция String|Список URL-адресов домашних страниц, показываемых на зарегистрированных в системе MDM устройствах в браузере Edge.|
@@ -347,7 +347,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |датапротектионблоккдиректмеморякцесс|Boolean|Этот параметр политики позволяет заблокировать прямой доступ к памяти (DMA) для всех подключенных портов PCI, подключенных к горячему подключению, пока пользователь не войдет в систему Windows.|
 |аппманажементпаккажефамилинаместолаунчафтерлогон|Коллекция объектов string|Список имен семейств пакетов для приложений Windows, разделенных точкой с запятой. Перечисленные приложения Windows будут запущены после входа в систему.|
 |uninstallBuiltInApps|Boolean|Указывает, следует ли удалить фиксированный список встроенных приложений Windows.|
-|конфигуретимезоне|String|Указывает часовой пояс, применяемый к устройству. Это стандартное имя Windows для целевого часового пояса.|
+|конфигуретимезоне|Строка|Указывает часовой пояс, применяемый к устройству. Это стандартное имя Windows для целевого часового пояса.|
 
 
 
@@ -510,8 +510,37 @@ Content-length: 15009
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
   "cellularData": "required",
+  "defenderRequireRealTimeMonitoring": true,
+  "defenderRequireBehaviorMonitoring": true,
+  "defenderRequireNetworkInspectionSystem": true,
+  "defenderScanDownloads": true,
+  "defenderScheduleScanEnableLowCpuPriority": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderDisableCatchupFullScan": true,
+  "defenderScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderSignatureUpdateIntervalInHours": 6,
+  "defenderMonitorFileActivity": "disable",
   "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderScanMaxCpu": 2,
+  "defenderScanArchiveFiles": true,
+  "defenderScanIncomingMail": true,
+  "defenderScanRemovableDrivesDuringFullScan": true,
+  "defenderScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderScanNetworkFiles": true,
+  "defenderRequireCloudProtection": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeout": 12,
+  "defenderCloudExtendedTimeoutInSeconds": 5,
+  "defenderPromptForSampleSubmission": "alwaysPrompt",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScanType": "disabled",
+  "defenderSystemScanSchedule": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderPotentiallyUnwantedAppAction": "block",
+  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderSubmitSamplesConsentType": "alwaysPrompt",
+  "defenderBlockOnAccessProtection": true,
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
     "lowSeverity": "clean",
@@ -519,44 +548,15 @@ Content-length: 15009
     "highSeverity": "clean",
     "severeSeverity": "clean"
   },
-  "defenderSystemScanSchedule": "everyday",
-  "defenderFilesAndFoldersToExclude": [
-    "Defender Files And Folders To Exclude value"
-  ],
   "defenderFileExtensionsToExclude": [
     "Defender File Extensions To Exclude value"
   ],
-  "defenderScanMaxCpu": 2,
-  "defenderMonitorFileActivity": "disable",
-  "defenderPotentiallyUnwantedAppAction": "block",
-  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
-  "defenderPromptForSampleSubmission": "alwaysPrompt",
-  "defenderRequireBehaviorMonitoring": true,
-  "defenderRequireCloudProtection": true,
-  "defenderRequireNetworkInspectionSystem": true,
-  "defenderRequireRealTimeMonitoring": true,
-  "defenderScanArchiveFiles": true,
-  "defenderScanDownloads": true,
-  "defenderScheduleScanEnableLowCpuPriority": true,
-  "defenderDisableCatchupQuickScan": true,
-  "defenderDisableCatchupFullScan": true,
-  "defenderScanNetworkFiles": true,
-  "defenderScanIncomingMail": true,
-  "defenderScanMappedNetworkDrivesDuringFullScan": true,
-  "defenderScanRemovableDrivesDuringFullScan": true,
-  "defenderScanScriptsLoadedInInternetExplorer": true,
-  "defenderSignatureUpdateIntervalInHours": 6,
-  "defenderScanType": "disabled",
-  "defenderScheduledScanTime": "11:59:10.9990000",
-  "defenderScheduledQuickScanTime": "11:58:49.3840000",
-  "defenderCloudBlockLevel": "high",
-  "defenderCloudExtendedTimeout": 12,
-  "defenderCloudExtendedTimeoutInSeconds": 5,
-  "defenderBlockOnAccessProtection": true,
-  "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
@@ -877,8 +877,37 @@ Content-Length: 15181
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
   "cellularData": "required",
+  "defenderRequireRealTimeMonitoring": true,
+  "defenderRequireBehaviorMonitoring": true,
+  "defenderRequireNetworkInspectionSystem": true,
+  "defenderScanDownloads": true,
+  "defenderScheduleScanEnableLowCpuPriority": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderDisableCatchupFullScan": true,
+  "defenderScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderSignatureUpdateIntervalInHours": 6,
+  "defenderMonitorFileActivity": "disable",
   "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderScanMaxCpu": 2,
+  "defenderScanArchiveFiles": true,
+  "defenderScanIncomingMail": true,
+  "defenderScanRemovableDrivesDuringFullScan": true,
+  "defenderScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderScanNetworkFiles": true,
+  "defenderRequireCloudProtection": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeout": 12,
+  "defenderCloudExtendedTimeoutInSeconds": 5,
+  "defenderPromptForSampleSubmission": "alwaysPrompt",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScanType": "disabled",
+  "defenderSystemScanSchedule": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderPotentiallyUnwantedAppAction": "block",
+  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderSubmitSamplesConsentType": "alwaysPrompt",
+  "defenderBlockOnAccessProtection": true,
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
     "lowSeverity": "clean",
@@ -886,44 +915,15 @@ Content-Length: 15181
     "highSeverity": "clean",
     "severeSeverity": "clean"
   },
-  "defenderSystemScanSchedule": "everyday",
-  "defenderFilesAndFoldersToExclude": [
-    "Defender Files And Folders To Exclude value"
-  ],
   "defenderFileExtensionsToExclude": [
     "Defender File Extensions To Exclude value"
   ],
-  "defenderScanMaxCpu": 2,
-  "defenderMonitorFileActivity": "disable",
-  "defenderPotentiallyUnwantedAppAction": "block",
-  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
-  "defenderPromptForSampleSubmission": "alwaysPrompt",
-  "defenderRequireBehaviorMonitoring": true,
-  "defenderRequireCloudProtection": true,
-  "defenderRequireNetworkInspectionSystem": true,
-  "defenderRequireRealTimeMonitoring": true,
-  "defenderScanArchiveFiles": true,
-  "defenderScanDownloads": true,
-  "defenderScheduleScanEnableLowCpuPriority": true,
-  "defenderDisableCatchupQuickScan": true,
-  "defenderDisableCatchupFullScan": true,
-  "defenderScanNetworkFiles": true,
-  "defenderScanIncomingMail": true,
-  "defenderScanMappedNetworkDrivesDuringFullScan": true,
-  "defenderScanRemovableDrivesDuringFullScan": true,
-  "defenderScanScriptsLoadedInInternetExplorer": true,
-  "defenderSignatureUpdateIntervalInHours": 6,
-  "defenderScanType": "disabled",
-  "defenderScheduledScanTime": "11:59:10.9990000",
-  "defenderScheduledQuickScanTime": "11:58:49.3840000",
-  "defenderCloudBlockLevel": "high",
-  "defenderCloudExtendedTimeout": 12,
-  "defenderCloudExtendedTimeoutInSeconds": 5,
-  "defenderBlockOnAccessProtection": true,
-  "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,

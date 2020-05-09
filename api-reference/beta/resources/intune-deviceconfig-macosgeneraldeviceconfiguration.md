@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea18b7274039c49838752a2eac7aaaf7c603fbbd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 25b7a321b116116e1bb4a5353fdfb964118e4364
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447202"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177445"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>Тип ресурса macOSGeneralDeviceConfiguration
 
@@ -96,6 +96,7 @@ ms.locfileid: "43447202"
 |классрумфорцерекуестпермиссионтолеавеклассес|Boolean|Указывает, должен ли студент, зарегистрированный в неуправляемом курсе, запрашивать разрешение у преподавателя при попытке выйти из курса. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
 |классрумфорцеунпромптедаппанддевицелокк|Boolean|Указывает, следует ли запретить преподавателю блокировать приложения или устройство, не запрашивая учащихся. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
 |iCloudBlockActivityContinuation|Boolean|Указывает, следует ли запретить пользователю продолжать работу, начатую на устройстве MacOS, на другом устройстве iOS или MacOS (MacOS 10,15 или более поздней версии).|
+|привациакцессконтролс|Коллекция [макоспривациакцессконтролитем](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md)|Список элементов управления политикой настройки конфиденциальности. Эта коллекция может содержать не более 10 000 элементов.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -207,7 +208,46 @@ ms.locfileid: "43447202"
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
   "classroomForceUnpromptedAppAndDeviceLock": true,
-  "iCloudBlockActivityContinuation": true
+  "iCloudBlockActivityContinuation": true,
+  "privacyAccessControls": [
+    {
+      "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+      "displayName": "String",
+      "identifier": "String",
+      "identifierType": "String",
+      "codeRequirement": "String",
+      "staticCodeValidation": true,
+      "blockCamera": true,
+      "blockMicrophone": true,
+      "blockScreenCapture": true,
+      "blockListenEvent": true,
+      "speechRecognition": "String",
+      "accessibility": "String",
+      "addressBook": "String",
+      "calendar": "String",
+      "reminders": "String",
+      "photos": "String",
+      "mediaLibrary": "String",
+      "fileProviderPresence": "String",
+      "systemPolicyAllFiles": "String",
+      "systemPolicySystemAdminFiles": "String",
+      "systemPolicyDesktopFolder": "String",
+      "systemPolicyDocumentsFolder": "String",
+      "systemPolicyDownloadsFolder": "String",
+      "systemPolicyNetworkVolumes": "String",
+      "systemPolicyRemovableVolumes": "String",
+      "postEvent": "String",
+      "appleEventsAllowedReceivers": [
+        {
+          "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+          "codeRequirement": "String",
+          "identifier": "String",
+          "identifierType": "String",
+          "allowed": true
+        }
+      ]
+    }
+  ]
 }
 ```
 

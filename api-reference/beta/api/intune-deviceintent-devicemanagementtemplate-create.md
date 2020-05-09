@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 01f3c719e0f5ad2b77c48f223dd198aa7b92e96b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fde54f63aaff5e93273bf022630c2c15a1f43f99
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381440"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177214"
 ---
 # <a name="create-devicemanagementtemplate"></a>Создание Девицеманажементтемплате
 
@@ -47,7 +47,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементтемплате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементтемплате.
@@ -57,11 +57,12 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 |id|String|Идентификатор шаблона|
 |displayName|Строка|Отображаемое имя шаблона|
 |description|String|Описание шаблона|
-|versionInfo|String|Сведения о версии шаблона|
+|versionInfo|Строка|Сведения о версии шаблона|
 |нерекомендуемый|Boolean|Шаблон устарел или не является устаревшим. Не удается создать объект "удержания" из устаревшего шаблона.|
 |интенткаунт|Int32|Количество целей, созданных на основе этого шаблона.|
 |TemplateType — тип|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|Тип шаблона. Возможные значения: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`.|
 |platformType|[полициплатформтипе](../resources/intune-shared-policyplatformtype.md)|Платформа шаблона. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
+|темплатесубтипе|[девицеманажементтемплатесубтипе](../resources/intune-deviceintent-devicemanagementtemplatesubtype.md)|Подтип шаблона. Возможные значения: `none`, `firewall`, `diskEncryption`, `attackSurfaceReduction`, `endpointDetectionReponse`, `accountProtection`, `antivirus`.|
 |publishedDateTime|DateTimeOffset|При публикации шаблона|
 
 
@@ -76,7 +77,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/templates
 Content-type: application/json
-Content-length: 371
+Content-length: 405
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -87,6 +88,7 @@ Content-length: 371
   "intentCount": 11,
   "templateType": "specializedDevices",
   "platformType": "androidForWork",
+  "templateSubtype": "firewall",
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
@@ -96,7 +98,7 @@ Content-length: 371
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 420
+Content-Length: 454
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -108,6 +110,7 @@ Content-Length: 420
   "intentCount": 11,
   "templateType": "specializedDevices",
   "platformType": "androidForWork",
+  "templateSubtype": "firewall",
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
