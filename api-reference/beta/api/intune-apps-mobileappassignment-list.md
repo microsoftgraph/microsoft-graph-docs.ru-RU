@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c8b9532aa4d950149b155cefd5e35da7ddf720a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 93a17dd103025ee48965639d2dc45d76990500d2
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43404621"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177942"
 ---
 # <a name="list-mobileappassignments"></a>Перечисление объектов mobileAppAssignment
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 460
+Content-Length: 558
 
 {
   "value": [
@@ -74,10 +74,12 @@ Content-Length: 460
       "id": "591620b7-20b7-5916-b720-1659b7201659",
       "intent": "required",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       },
       "settings": {
-        "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+        "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+        "vpnConfigurationId": "Vpn Configuration Id value",
+        "uninstallOnDeviceRemoval": true
       },
       "source": "policySets",
       "sourceId": "Source Id value"

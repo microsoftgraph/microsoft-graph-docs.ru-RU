@@ -1,18 +1,18 @@
 ---
-title: Получение Секуритибаселинетемплате
-description: Чтение свойств и связей объекта Секуритибаселинетемплате.
+title: Получение Феатурефлигхтедконфигуратион
+description: Чтение свойств и связей объекта Феатурефлигхтедконфигуратион.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c484b78e17c92751c5ce8f0aa55006fe6e3145b
+ms.openlocfilehash: af6293458b983359c878a7648b1c410954957c24
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177172"
+ms.locfileid: "44178642"
 ---
-# <a name="get-securitybaselinetemplate"></a>Получение Секуритибаселинетемплате
+# <a name="get-featureflightedconfiguration"></a>Получение Феатурефлигхтедконфигуратион
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "44177172"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [секуритибаселинетемплате](../resources/intune-deviceintent-securitybaselinetemplate.md) .
+Чтение свойств и связей объекта [феатурефлигхтедконфигуратион](../resources/intune-deviceconfig-featureflightedconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,8 +37,9 @@ ms.locfileid: "44177172"
 }
 -->
 ``` http
-GET /deviceManagement/templates/{deviceManagementTemplateId}
-GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -54,14 +55,14 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devic
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [секуритибаселинетемплате](../resources/intune-deviceintent-securitybaselinetemplate.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [феатурефлигхтедконфигуратион](../resources/intune-deviceconfig-featureflightedconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -69,21 +70,42 @@ GET https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagemen
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 495
+Content-Length: 1286
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.securityBaselineTemplate",
-    "id": "3f61d4c2-d4c2-3f61-c2d4-613fc2d4613f",
-    "displayName": "Display Name value",
+    "@odata.type": "#microsoft.graph.featureFlightedConfiguration",
+    "id": "c4725458-5458-c472-5854-72c4585472c4",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
+    "deviceManagementApplicabilityRuleOsEdition": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+      "osEditionTypes": [
+        "windows10EnterpriseN"
+      ],
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleOsVersion": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+      "minOSVersion": "Min OSVersion value",
+      "maxOSVersion": "Max OSVersion value",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleDeviceMode": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+      "deviceMode": "sModeConfiguration",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
-    "versionInfo": "Version Info value",
-    "isDeprecated": true,
-    "intentCount": 11,
-    "templateType": "specializedDevices",
-    "platformType": "androidForWork",
-    "templateSubtype": "firewall",
-    "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
+    "displayName": "Display Name value",
+    "version": 7
   }
 }
 ```

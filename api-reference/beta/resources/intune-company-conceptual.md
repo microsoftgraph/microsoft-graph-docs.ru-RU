@@ -2,14 +2,14 @@
 title: Условия и условия компании в Microsoft Intune — API Microsoft Graph
 description: Список API Microsoft Graph для конечных точек Intune (REST), определяющих термины и условия для организации клиента.
 localization_priority: Normal
-author: rolyon
+author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 58eb3050ab2057c0178c77e5ae0a309b708096f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09fc1499b76526b08bbfa1861553182fc827a991
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487951"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175352"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Корпоративные условия в Microsoft Intune
 

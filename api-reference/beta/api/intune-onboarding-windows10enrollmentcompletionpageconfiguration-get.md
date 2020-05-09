@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f975fbd14c0944e4bf49fd6aafe41a4af8dca6b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 05ca80e8b76663f998c148baeffa2a40785db7ad
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43377496"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178446"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>Получение windows10EnrollmentCompletionPageConfiguration
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 915
+Content-Length: 983
 
 {
   "value": {
@@ -80,6 +80,9 @@ Content-Length: 915
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "version": 7,
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
     "showInstallationProgress": true,
     "blockDeviceSetupRetryByUser": true,
     "allowDeviceResetOnInstallFailure": true,

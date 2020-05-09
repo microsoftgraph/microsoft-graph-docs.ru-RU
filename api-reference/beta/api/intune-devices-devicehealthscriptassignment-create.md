@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b73e5cb8f263680e034d3273e3d3311936699928
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cb4c3a13fbdeee0189f028ef979db7bf7514fcec
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426343"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176752"
 ---
 # <a name="create-devicehealthscriptassignment"></a>Создание Девицехеалсскриптассигнмент
 
@@ -46,17 +46,17 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицехеалсскриптассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицехеалсскриптассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта назначения сценария работоспособности устройства. Это свойство доступно только для чтения.|
+|id|Строка|Ключ объекта назначения сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Группа Azure Active Directory, на которую мы нацелены на скрипт|
 |рунремедиатионскрипт|Boolean|Определите, нужно ли выполнять сценарий обнаружения или сценарий обнаружения и устранения неполадок.|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Расписание запуска сценария для целевой группы|
+|runSchedule|[девицехеалсскриптрунсчедуле](../resources/intune-devices-devicehealthscriptrunschedule.md)|Расписание запуска сценария для целевой группы|
 
 
 
@@ -70,16 +70,19 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 Content-type: application/json
-Content-length: 277
+Content-length: 359
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "runRemediationScript": true,
   "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
+    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+    "interval": 8,
+    "useUtc": true,
+    "time": "11:58:36.2550000"
   }
 }
 ```
@@ -89,17 +92,20 @@ Content-length: 277
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 326
+Content-Length: 408
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "runRemediationScript": true,
   "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
+    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+    "interval": 8,
+    "useUtc": true,
+    "time": "11:58:36.2550000"
   }
 }
 ```

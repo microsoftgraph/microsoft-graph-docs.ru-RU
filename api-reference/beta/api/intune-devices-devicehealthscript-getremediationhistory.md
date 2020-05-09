@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d071f91e4433edf2eda7d749aaea65a7d686d02
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5469f8c5c4ae35d69e92b6d1e007bf4a0b3703ea
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426466"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176983"
 ---
 # <a name="getremediationhistory-function"></a>Функция Жетремедиатионхистори
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/getRemediationH
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{devic
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 420
+Content-Length: 397
 
 {
   "value": {
@@ -74,7 +74,7 @@ Content-Length: 420
     "historyData": [
       {
         "@odata.type": "microsoft.graph.deviceHealthScriptRemediationHistoryData",
-        "date": "<Unknown Primitive Type Edm.Date>",
+        "date": "2016-12-31",
         "remediatedDeviceCount": 5,
         "noIssueDeviceCount": 2
       }

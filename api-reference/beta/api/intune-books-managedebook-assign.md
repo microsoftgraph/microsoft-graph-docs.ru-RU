@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 515457075612c33994841a928e914ca589fc7e18
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 675b146e14516d897672e27cd38ea111cc150b49
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392504"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175107"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -46,7 +46,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -68,7 +68,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/assign
 
 Content-type: application/json
-Content-length: 318
+Content-length: 312
 
 {
   "managedEBookAssignments": [
@@ -76,7 +76,7 @@ Content-length: 318
       "@odata.type": "#microsoft.graph.managedEBookAssignment",
       "id": "ae8b0d27-0d27-ae8b-270d-8bae270d8bae",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       },
       "installIntent": "required"
     }

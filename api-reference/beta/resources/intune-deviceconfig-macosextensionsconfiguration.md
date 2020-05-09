@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f1dd814e49c01a23624e0ea9af77a7bc9f57b241
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2bf171e535e38561fd4020db905c290280be6840
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462506"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179216"
 ---
 # <a name="macosextensionsconfiguration-resource-type"></a>Тип ресурса Макосекстенсионсконфигуратион
 
@@ -51,6 +51,10 @@ ms.locfileid: "43462506"
 |кернелекстенсионоверридесалловед|Boolean|Если задано значение true, пользователи могут утверждать дополнительные расширения ядра, не разрешенные профилями конфигураций.|
 |кернелекстенсионалловедтеамидентифиерс|Коллекция объектов string|Все расширения ядра, подписанные с помощью идентификаторов команд в этом списке, могут быть загружены.|
 |кернелекстенсионсалловед|Коллекция [макоскернелекстенсион](../resources/intune-deviceconfig-macoskernelextension.md)|Список расширений ядра, которые будут разрешены для загрузки. . Эта коллекция может содержать не более 500 элементов.|
+|системекстенсионсблокковерриде|Boolean|Получает или задает значение, указывающее, следует ли разрешить пользователю утверждать дополнительные системные расширения, которые явно не разрешены профилями конфигурации.|
+|системекстенсионсалловедтеамидентифиерс|Коллекция объектов string|Получает или задает список разрешенных идентификаторов групп. Все системные расширения, подписанные с помощью любого из указанных идентификаторов, будут утверждены.|
+|системекстенсионсалловед|Коллекция [макоссистемекстенсион](../resources/intune-deviceconfig-macossystemextension.md)|Получает или задает список разрешенных расширений системы macOS. Эта коллекция может содержать не более 500 элементов.|
+|системекстенсионсалловедтипес|Коллекция [макоссистемекстенсионтипемаппинг](../resources/intune-deviceconfig-macossystemextensiontypemapping.md)|Получает или задает список разрешенных типов расширений системы macOS. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -114,6 +118,24 @@ ms.locfileid: "43462506"
       "@odata.type": "microsoft.graph.macOSKernelExtension",
       "teamIdentifier": "String",
       "bundleId": "String"
+    }
+  ],
+  "systemExtensionsBlockOverride": true,
+  "systemExtensionsAllowedTeamIdentifiers": [
+    "String"
+  ],
+  "systemExtensionsAllowed": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtension",
+      "teamIdentifier": "String",
+      "bundleId": "String"
+    }
+  ],
+  "systemExtensionsAllowedTypes": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+      "teamIdentifier": "String",
+      "allowedTypes": "String"
     }
   ]
 }

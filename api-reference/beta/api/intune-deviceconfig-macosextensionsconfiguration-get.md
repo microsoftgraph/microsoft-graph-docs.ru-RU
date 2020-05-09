@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b46c8958a82c02145ef7107333f52a22a0a2848c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6350e588fd80faf10a02b706d4862afefa32ba24
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437954"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177984"
 ---
 # <a name="get-macosextensionsconfiguration"></a>Получение Макосекстенсионсконфигуратион
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1660
+Content-Length: 2278
 
 {
   "value": {
@@ -115,6 +115,24 @@ Content-Length: 1660
         "@odata.type": "microsoft.graph.macOSKernelExtension",
         "teamIdentifier": "Team Identifier value",
         "bundleId": "Bundle Id value"
+      }
+    ],
+    "systemExtensionsBlockOverride": true,
+    "systemExtensionsAllowedTeamIdentifiers": [
+      "System Extensions Allowed Team Identifiers value"
+    ],
+    "systemExtensionsAllowed": [
+      {
+        "@odata.type": "microsoft.graph.macOSSystemExtension",
+        "teamIdentifier": "Team Identifier value",
+        "bundleId": "Bundle Id value"
+      }
+    ],
+    "systemExtensionsAllowedTypes": [
+      {
+        "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+        "teamIdentifier": "Team Identifier value",
+        "allowedTypes": "networkExtensionsAllowed"
       }
     ]
   }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 833a2dee09caae20b9a58fb5c82d9de06ce5cf33
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4bf6a767c71c7212e0499bb6281e3a0d9477b3cd
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418961"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175261"
 ---
 # <a name="compliancemanagementpartnerassignment-resource-type"></a>Тип ресурса Комплианцеманажементпартнерассигнмент
 
@@ -41,7 +41,7 @@ ms.locfileid: "43418961"
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartnerAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```
