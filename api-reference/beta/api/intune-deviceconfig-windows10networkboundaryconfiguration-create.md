@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 94af228fe3a888e421dcd3e44ac64eeb7db9264e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 42fd951f745ec02b8b2ef61eb5ad80de9115b1f3
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43430575"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179048"
 ---
 # <a name="create-windows10networkboundaryconfiguration"></a>Создание windows10NetworkBoundaryConfiguration
 
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта windows10NetworkBoundaryConfiguration в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании windows10NetworkBoundaryConfiguration.
@@ -79,7 +79,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2017
+Content-length: 1919
 
 {
   "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
@@ -125,9 +125,7 @@ Content-length: 2017
     ],
     "enterpriseIPRanges": [
       {
-        "@odata.type": "microsoft.graph.iPv6Range",
-        "lowerAddress": "Lower Address value",
-        "upperAddress": "Upper Address value"
+        "@odata.type": "microsoft.graph.ipRange"
       }
     ],
     "enterpriseInternalProxyServers": [
@@ -150,7 +148,7 @@ Content-length: 2017
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2189
+Content-Length: 2091
 
 {
   "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
@@ -199,9 +197,7 @@ Content-Length: 2189
     ],
     "enterpriseIPRanges": [
       {
-        "@odata.type": "microsoft.graph.iPv6Range",
-        "lowerAddress": "Lower Address value",
-        "upperAddress": "Upper Address value"
+        "@odata.type": "microsoft.graph.ipRange"
       }
     ],
     "enterpriseInternalProxyServers": [

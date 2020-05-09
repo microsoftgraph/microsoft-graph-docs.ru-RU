@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 006f71353658fcbc0d8deffc3283fe861877b9aa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a86057676acf99b7c5843bbf0092880eabbc8273
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434126"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178705"
 ---
 # <a name="getdevicesscheduledtoretire-action"></a>действие Жетдевицессчедуледторетире
 
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceCompliancePolicies/getDevicesScheduledToRetire
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -65,7 +65,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 596
+Content-Length: 670
 
 {
   "value": [
@@ -80,7 +80,10 @@ Content-Length: 596
       "managementAgent": "mdm",
       "ownerType": "company",
       "deviceCompliancePolicyName": "Device Compliance Policy Name value",
-      "deviceCompliancePolicyId": "Device Compliance Policy Id value"
+      "deviceCompliancePolicyId": "Device Compliance Policy Id value",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }

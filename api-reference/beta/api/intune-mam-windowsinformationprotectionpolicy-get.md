@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fa83b3f7abc82984881417163c494caa08163b36
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d32f9a6af0d654c56e9e2d1f26450fe8762b9e39
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43363250"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178173"
 ---
 # <a name="get-windowsinformationprotectionpolicy"></a>Получение объекта windowsInformationProtectionPolicy
 
@@ -49,7 +49,7 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformatio
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProte
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4938
+Content-Length: 4832
 
 {
   "value": {
@@ -153,9 +153,7 @@ Content-Length: 4938
         "displayName": "Display Name value",
         "ranges": [
           {
-            "@odata.type": "microsoft.graph.iPv6Range",
-            "lowerAddress": "Lower Address value",
-            "upperAddress": "Upper Address value"
+            "@odata.type": "microsoft.graph.ipRange"
           }
         ]
       }

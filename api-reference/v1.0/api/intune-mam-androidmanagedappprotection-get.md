@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c43f97564bc3f700297b0fec5fbcd37affdd58ee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6929fa504aec3d18ead5d9ff7b2ddd9ebdaa858c
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407308"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178201"
 ---
 # <a name="get-androidmanagedappprotection"></a>Get androidManagedAppProtection
 
@@ -27,7 +27,7 @@ ms.locfileid: "43407308"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,7 +47,7 @@ GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtecti
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/androidManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1967
+Content-Length: 2143
 
 {
   "value": {
@@ -105,19 +105,19 @@ Content-Length: 1967
     "minimumWarningOsVersion": "Minimum Warning Os Version value",
     "minimumRequiredAppVersion": "Minimum Required App Version value",
     "minimumWarningAppVersion": "Minimum Warning App Version value",
+    "managedBrowser": "microsoftEdge",
     "isAssigned": true,
     "screenCaptureBlocked": true,
     "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
     "encryptAppData": true,
     "deployedAppCount": 0,
     "minimumRequiredPatchVersion": "Minimum Required Patch Version value",
-    "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
+    "minimumWarningPatchVersion": "Minimum Warning Patch Version value",
+    "customBrowserPackageId": "Custom Browser Package Id value",
+    "customBrowserDisplayName": "Custom Browser Display Name value"
   }
 }
 ```
-
-
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b1c84b3010c382c55c855e9b94e38fb70710c624
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 909c57fd17afb3cd0aa087ad1faeaed58be3d9a7
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432660"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177879"
 ---
 # <a name="update-macosextensionsconfiguration"></a>Обновление Макосекстенсионсконфигуратион
 
@@ -48,7 +48,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md).
@@ -69,6 +69,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |кернелекстенсионоверридесалловед|Boolean|Если задано значение true, пользователи могут утверждать дополнительные расширения ядра, не разрешенные профилями конфигураций.|
 |кернелекстенсионалловедтеамидентифиерс|Коллекция объектов string|Все расширения ядра, подписанные с помощью идентификаторов команд в этом списке, могут быть загружены.|
 |кернелекстенсионсалловед|Коллекция [макоскернелекстенсион](../resources/intune-deviceconfig-macoskernelextension.md)|Список расширений ядра, которые будут разрешены для загрузки. . Эта коллекция может содержать не более 500 элементов.|
+|системекстенсионсблокковерриде|Boolean|Получает или задает значение, указывающее, следует ли разрешить пользователю утверждать дополнительные системные расширения, которые явно не разрешены профилями конфигурации.|
+|системекстенсионсалловедтеамидентифиерс|Коллекция объектов string|Получает или задает список разрешенных идентификаторов групп. Все системные расширения, подписанные с помощью любого из указанных идентификаторов, будут утверждены.|
+|системекстенсионсалловед|Коллекция [макоссистемекстенсион](../resources/intune-deviceconfig-macossystemextension.md)|Получает или задает список разрешенных расширений системы macOS. Эта коллекция может содержать не более 500 элементов.|
+|системекстенсионсалловедтипес|Коллекция [макоссистемекстенсионтипемаппинг](../resources/intune-deviceconfig-macossystemextensiontypemapping.md)|Получает или задает список разрешенных типов расширений системы macOS. Эта коллекция может содержать не более 500 элементов.|
 
 
 
@@ -82,7 +86,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1383
+Content-length: 1965
 
 {
   "@odata.type": "#microsoft.graph.macOSExtensionsConfiguration",
@@ -124,6 +128,24 @@ Content-length: 1383
       "teamIdentifier": "Team Identifier value",
       "bundleId": "Bundle Id value"
     }
+  ],
+  "systemExtensionsBlockOverride": true,
+  "systemExtensionsAllowedTeamIdentifiers": [
+    "System Extensions Allowed Team Identifiers value"
+  ],
+  "systemExtensionsAllowed": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtension",
+      "teamIdentifier": "Team Identifier value",
+      "bundleId": "Bundle Id value"
+    }
+  ],
+  "systemExtensionsAllowedTypes": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+      "teamIdentifier": "Team Identifier value",
+      "allowedTypes": "networkExtensionsAllowed"
+    }
   ]
 }
 ```
@@ -133,7 +155,7 @@ Content-length: 1383
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1555
+Content-Length: 2137
 
 {
   "@odata.type": "#microsoft.graph.macOSExtensionsConfiguration",
@@ -177,6 +199,24 @@ Content-Length: 1555
       "@odata.type": "microsoft.graph.macOSKernelExtension",
       "teamIdentifier": "Team Identifier value",
       "bundleId": "Bundle Id value"
+    }
+  ],
+  "systemExtensionsBlockOverride": true,
+  "systemExtensionsAllowedTeamIdentifiers": [
+    "System Extensions Allowed Team Identifiers value"
+  ],
+  "systemExtensionsAllowed": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtension",
+      "teamIdentifier": "Team Identifier value",
+      "bundleId": "Bundle Id value"
+    }
+  ],
+  "systemExtensionsAllowedTypes": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+      "teamIdentifier": "Team Identifier value",
+      "allowedTypes": "networkExtensionsAllowed"
     }
   ]
 }

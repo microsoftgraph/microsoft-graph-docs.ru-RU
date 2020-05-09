@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса windows10NetworkBoundaryConfiguration
-description: Конфигурация границы сети Windows10
+title: Тип ресурса Феатурефлигхтедконфигуратион
+description: Конфигурация устройства
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8aa6f72ed76acbc3865c6a8801d0825ee62a5a26
+ms.openlocfilehash: a6731b67d051bc187adea8cd746f6ac2bac85a4a
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178124"
+ms.locfileid: "44178257"
 ---
-# <a name="windows10networkboundaryconfiguration-resource-type"></a>Тип ресурса windows10NetworkBoundaryConfiguration
+# <a name="featureflightedconfiguration-resource-type"></a>Тип ресурса Феатурефлигхтедконфигуратион
 
 Пространство имен: microsoft.graph
 
@@ -20,19 +20,16 @@ ms.locfileid: "44178124"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Конфигурация границы сети Windows10
+Конфигурация устройства
 
 
-Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).
+Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список windows10NetworkBoundaryConfigurations](../api/intune-deviceconfig-windows10networkboundaryconfiguration-list.md)|Коллекция [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md)|Список свойств и связей объектов [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) .|
-|[Получение windows10NetworkBoundaryConfiguration](../api/intune-deviceconfig-windows10networkboundaryconfiguration-get.md)|[windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md)|Чтение свойств и связей объекта [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) .|
-|[Создание windows10NetworkBoundaryConfiguration](../api/intune-deviceconfig-windows10networkboundaryconfiguration-create.md)|[windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md)|Создание нового объекта [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) .|
-|[Удаление windows10NetworkBoundaryConfiguration](../api/intune-deviceconfig-windows10networkboundaryconfiguration-delete.md)|Нет|Удаляет объект [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md).|
-|[Обновление windows10NetworkBoundaryConfiguration](../api/intune-deviceconfig-windows10networkboundaryconfiguration-update.md)|[windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md)|Обновление свойств объекта [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) .|
+|[Список Феатурефлигхтедконфигуратионс](../api/intune-deviceconfig-featureflightedconfiguration-list.md)|Коллекция [феатурефлигхтедконфигуратион](../resources/intune-deviceconfig-featureflightedconfiguration.md)|Список свойств и связей объектов [феатурефлигхтедконфигуратион](../resources/intune-deviceconfig-featureflightedconfiguration.md) .|
+|[Получение Феатурефлигхтедконфигуратион](../api/intune-deviceconfig-featureflightedconfiguration-get.md)|[феатурефлигхтедконфигуратион](../resources/intune-deviceconfig-featureflightedconfiguration.md)|Чтение свойств и связей объекта [феатурефлигхтедконфигуратион](../resources/intune-deviceconfig-featureflightedconfiguration.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -47,8 +44,7 @@ ms.locfileid: "44178124"
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|windowsNetworkIsolationPolicy|[windowsNetworkIsolationPolicy](../resources/intune-deviceconfig-windowsnetworkisolationpolicy.md)|Политика сетевой изоляции Windows|
+|version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -66,12 +62,12 @@ ms.locfileid: "44178124"
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.windows10NetworkBoundaryConfiguration"
+  "@odata.type": "microsoft.graph.featureFlightedConfiguration"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
+  "@odata.type": "#microsoft.graph.featureFlightedConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
@@ -102,36 +98,7 @@ ms.locfileid: "44178124"
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
-  "version": 1024,
-  "windowsNetworkIsolationPolicy": {
-    "@odata.type": "microsoft.graph.windowsNetworkIsolationPolicy",
-    "enterpriseNetworkDomainNames": [
-      "String"
-    ],
-    "enterpriseCloudResources": [
-      {
-        "@odata.type": "microsoft.graph.proxiedDomain",
-        "ipAddressOrFQDN": "String",
-        "proxy": "String"
-      }
-    ],
-    "enterpriseIPRanges": [
-      {
-        "@odata.type": "microsoft.graph.ipRange"
-      }
-    ],
-    "enterpriseInternalProxyServers": [
-      "String"
-    ],
-    "enterpriseIPRangesAreAuthoritative": true,
-    "enterpriseProxyServers": [
-      "String"
-    ],
-    "enterpriseProxyServersAreAuthoritative": true,
-    "neutralDomainResources": [
-      "String"
-    ]
-  }
+  "version": 1024
 }
 ```
 

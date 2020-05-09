@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 362a673ba2fd13d6e82c59c0d18b75a7af6eaa8a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 226e2627c377411ef09e140d216e0bc1d4abce0b
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452269"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44174876"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -46,7 +46,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -68,7 +68,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 POST https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assign
 
 Content-type: application/json
-Content-length: 287
+Content-length: 281
 
 {
   "assignments": [
@@ -76,7 +76,7 @@ Content-length: 287
       "@odata.type": "#microsoft.graph.embeddedSIMActivationCodePoolAssignment",
       "id": "e7304dcc-4dcc-e730-cc4d-30e7cc4d30e7",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       }
     }
   ]
@@ -88,7 +88,7 @@ Content-length: 287
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 275
 
 {
   "value": [
@@ -96,7 +96,7 @@ Content-Length: 281
       "@odata.type": "#microsoft.graph.embeddedSIMActivationCodePoolAssignment",
       "id": "e7304dcc-4dcc-e730-cc4d-30e7cc4d30e7",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       }
     }
   ]

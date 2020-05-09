@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fa2d3f3a458672daad8d15ef588e0703380ed369
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4476053806c2f30f3ddbee5f125035e57fb763ad
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440699"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44174260"
 ---
 # <a name="get-mobileapppolicysetitem"></a>Получение Мобилеаппполицисетитем
 
@@ -49,7 +49,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 641
+Content-Length: 741
 
 {
   "value": {
@@ -86,7 +86,9 @@ Content-Length: 641
     ],
     "intent": "required",
     "settings": {
-      "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+      "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+      "vpnConfigurationId": "Vpn Configuration Id value",
+      "uninstallOnDeviceRemoval": true
     }
   }
 }

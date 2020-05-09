@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f5f15cacbab24f5821728eaba32e0543bc24dbb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e7b10749e15f609c72533e019471717b927d0157
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43333124"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178943"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>Перечисление объектов windowsUpdateForBusinessConfiguration
 
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3329
+Content-Length: 3283
 
 {
   "value": [
@@ -122,8 +122,8 @@ Content-Length: 3329
       "businessReadyUpdatesOnly": "all",
       "skipChecksBeforeRestart": true,
       "updateWeeks": "firstWeek",
-      "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
-      "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+      "qualityUpdatesPauseStartDate": "2016-12-31",
+      "featureUpdatesPauseStartDate": "2016-12-31",
       "featureUpdatesRollbackWindowInDays": 2,
       "qualityUpdatesWillBeRolledBack": true,
       "featureUpdatesWillBeRolledBack": true,

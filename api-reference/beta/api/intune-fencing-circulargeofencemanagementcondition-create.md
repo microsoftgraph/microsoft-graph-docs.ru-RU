@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1bf0ba061ff22502ffbdd28c9c2bac3e7fb6c181
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 76159bf269522433cd3f3dc905d913c71cc4a3ed
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452077"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177613"
 ---
 # <a name="create-circulargeofencemanagementcondition"></a>Создание Циркуларжеофенцеманажементкондитион
 
@@ -47,15 +47,15 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Циркуларжеофенцеманажементкондитион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Циркуларжеофенцеманажементкондитион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
-|uniqueName|String|Уникальное имя условия управления. Используется в выражениях условия управления. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|id|Строка|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|uniqueName|Строка|Уникальное имя условия управления. Используется в выражениях условия управления. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 |displayName|Строка|Имя условия управления, определенное администратором. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 |description|String|Описание условия управления, заданное администратором. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|Время создания условия управления. Созданная сторона службы. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
@@ -78,7 +78,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managementConditions
 Content-type: application/json
-Content-length: 444
+Content-length: 371
 
 {
   "@odata.type": "#microsoft.graph.circularGeofenceManagementCondition",
@@ -89,9 +89,9 @@ Content-length: 444
   "applicablePlatforms": [
     "androidForWork"
   ],
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+  "latitude": 2.6666666666666665,
+  "longitude": 3.0,
+  "radiusInMeters": 4.666666666666667
 }
 ```
 
@@ -100,7 +100,7 @@ Content-length: 444
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 612
+Content-Length: 539
 
 {
   "@odata.type": "#microsoft.graph.circularGeofenceManagementCondition",
@@ -114,9 +114,9 @@ Content-Length: 612
   "applicablePlatforms": [
     "androidForWork"
   ],
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+  "latitude": 2.6666666666666665,
+  "longitude": 3.0,
+  "radiusInMeters": 4.666666666666667
 }
 ```
 

@@ -1,15 +1,15 @@
 ---
 title: Как защитить данные приложения компании с помощью Microsoft Intune — API Microsoft Graph
 description: Перечисляет API Microsoft Graph для конечных точек Intune (REST), которые управляют приложениями и их политиками для организации клиента.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9f609132a455e605996facc5d0b26c3c0af75b28
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9308faf6185520bddcab1f5153205bdb109c2323
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437483"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177732"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -43,7 +43,6 @@ ms.locfileid: "43437483"
 - [Цель регистрации учетной записи управляемого магазина Android](intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)
 - [Корпоративные параметры учетной записи управляемого магазина Android](intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)
 - [Управляемое приложение из магазина для Android](intune-apps-androidmanagedstoreapp.md)
-- [Параметры назначения приложений с управляемым хранилищем Android](intune-apps-androidmanagedstoreappassignmentsettings.md)
 - [Конфигурация управляемого приложения магазина для Android](intune-apps-androidmanagedstoreappconfiguration.md)
 - [Схема конфигурации управляемого приложения магазина для Android](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Элемент схемы конфигурации управляемого приложения магазина Android](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
@@ -139,7 +138,6 @@ ms.locfileid: "43437483"
 - [Тип лицензирования VPP](intune-apps-vpplicensingtype.md)
 - [Веб-приложение](intune-apps-webapp.md)
 - [Бизнес-приложение Win32](intune-apps-win32lobapp.md)
-- [Приоритет оптимизации доставки бизнес-приложений Win32](intune-apps-win32lobappdeliveryoptimizationpriority.md)
 - [Определение бизнес-приложения Win32](intune-apps-win32lobappdetection.md)
 - [Оператор определения бизнес-приложения Win32](intune-apps-win32lobappdetectionoperator.md)
 - [Определение файловой системы бизнес-приложения Win32](intune-apps-win32lobappfilesystemdetection.md)

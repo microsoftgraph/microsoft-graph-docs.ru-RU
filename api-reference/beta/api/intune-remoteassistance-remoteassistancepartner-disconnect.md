@@ -1,18 +1,18 @@
 ---
-title: Список Секуритибаселинетемплатес
-description: Список свойств и связей объектов Секуритибаселинетемплате.
+title: Действие disconnect
+description: Запрос на удаление активного соединителя TeamViewer Connector
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: da244d8a31974c8620aa6c6888543dbd10b84c20
+ms.openlocfilehash: 6aa911eaf8207ad60dda8c693ff70d6bb5763b23
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177144"
+ms.locfileid: "44176269"
 ---
-# <a name="list-securitybaselinetemplates"></a>Список Секуритибаселинетемплатес
+# <a name="disconnect-action"></a>Действие disconnect
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "44177144"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [секуритибаселинетемплате](../resources/intune-deviceintent-securitybaselinetemplate.md) .
+Запрос на удаление активного соединителя TeamViewer Connector
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,8 +37,7 @@ ms.locfileid: "44177144"
 }
 -->
 ``` http
-GET /deviceManagement/templates
-GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
+POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/disconnect
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -51,40 +50,20 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [секуритибаселинетемплате](../resources/intune-deviceintent-securitybaselinetemplate.md) в тексте отклика.
+В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/templates
+POST https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/disconnect
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 531
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.securityBaselineTemplate",
-      "id": "3f61d4c2-d4c2-3f61-c2d4-613fc2d4613f",
-      "displayName": "Display Name value",
-      "description": "Description value",
-      "versionInfo": "Version Info value",
-      "isDeprecated": true,
-      "intentCount": 11,
-      "templateType": "specializedDevices",
-      "platformType": "androidForWork",
-      "templateSubtype": "firewall",
-      "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
 
