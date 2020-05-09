@@ -1,18 +1,18 @@
 ---
-title: Get managedDeviceMobileAppConfigurationAssignment
-description: Чтение свойств и связей объекта managedDeviceMobileAppConfigurationAssignment.
+title: Список объектов remoteAssistancePartner
+description: Список свойств и связей объектов remoteAssistancePartner.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ce3837926847e9e1f754dcf48e08fe82b57c23c8
+ms.openlocfilehash: 5c21f647e1f02fe53f3b2871b2103e164e2f87c9
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177998"
+ms.locfileid: "44176226"
 ---
-# <a name="get-manageddevicemobileappconfigurationassignment"></a>Get managedDeviceMobileAppConfigurationAssignment
+# <a name="list-remoteassistancepartners"></a>Список объектов remoteAssistancePartner
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "44177998"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md).
+Список свойств и связей объектов [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).
 
-## <a name="prerequisites"></a>Необходимые разрешения
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,13 +37,10 @@ ms.locfileid: "44177998"
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/assignments/{managedDeviceMobileAppConfigurationAssignmentId}
+GET /deviceManagement/remoteAssistancePartners
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
-
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -53,14 +50,14 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/assignments/{managedDeviceMobileAppConfigurationAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners
 ```
 
 ### <a name="response"></a>Отклик
@@ -68,16 +65,19 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 257
+Content-Length: 372
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment",
-    "id": "4df81c9c-1c9c-4df8-9c1c-f84d9c1cf84d",
-    "target": {
-      "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.remoteAssistancePartner",
+      "id": "7443c8b9-c8b9-7443-b9c8-4374b9c84374",
+      "displayName": "Display Name value",
+      "onboardingUrl": "https://example.com/onboardingUrl/",
+      "onboardingStatus": "onboarding",
+      "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
     }
-  }
+  ]
 }
 ```
 

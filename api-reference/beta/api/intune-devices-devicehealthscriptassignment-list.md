@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 94502067c582febb3c6044ad70ac0ee5ba8eedca
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c7b152ded162a36b635d8c9e1b1c88cb3258f995
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380709"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177837"
 ---
 # <a name="list-devicehealthscriptassignments"></a>Список Девицехеалсскриптассигнментс
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{devic
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 395
+Content-Length: 489
 
 {
   "value": [
@@ -73,11 +73,14 @@ Content-Length: 395
       "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
       "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
       },
       "runRemediationScript": true,
       "runSchedule": {
-        "@odata.type": "microsoft.graph.runSchedule"
+        "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+        "interval": 8,
+        "useUtc": true,
+        "time": "11:58:36.2550000"
       }
     }
   ]

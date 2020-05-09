@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 19f4f8c8aee4a49494ec27acd50a64609235d8d4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f2a846661715cd60259479174aaf2b4bb636369b
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43402488"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179251"
 ---
 # <a name="androidworkprofilecertificateprofilebase-resource-type"></a>Тип ресурса Андроидворкпрофилецертификатепрофилебасе
 
@@ -23,7 +23,7 @@ ms.locfileid: "43402488"
 База профиля сертификата рабочего профиля Android.
 
 
-Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).
+Наследуется от [феатурефлигхтедконфигуратион](../resources/intune-deviceconfig-featureflightedconfiguration.md)
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c0248baaa77d94d39218bea3d184cd123574afc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c7883eaa31beeada26fd6fc0893249efdf251406
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43378392"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175954"
 ---
 # <a name="get-windowsmanageddevice"></a>Получение Виндовсманажеддевице
 
@@ -53,7 +53,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8143
+Content-Length: 8256
 
 {
   "value": {
@@ -112,7 +112,8 @@ Content-Length: 8143
       "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
       "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
       "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
-      "osBuildNumber": "Os Build Number value"
+      "osBuildNumber": "Os Build Number value",
+      "operatingSystemProductType": 10
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -251,7 +252,9 @@ Content-Length: 8143
     "ethernetMacAddress": "Ethernet Mac Address value",
     "physicalMemoryInBytes": 5,
     "processorArchitecture": "x86",
-    "specificationVersion": "Specification Version value"
+    "specificationVersion": "Specification Version value",
+    "joinType": "azureADJoined",
+    "skuFamily": "Sku Family value"
   }
 }
 ```
