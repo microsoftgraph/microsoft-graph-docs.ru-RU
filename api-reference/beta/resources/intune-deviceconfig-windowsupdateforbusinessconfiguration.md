@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73e24b7630803cbf26fe311618c4014c89b6b21d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4fdff332b1f4e18d6efd8a9e1ca2e95543e9ddce
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441154"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179209"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>Тип ресурса windowsUpdateForBusinessConfiguration
 
@@ -159,8 +159,8 @@ ms.locfileid: "43441154"
   "businessReadyUpdatesOnly": "String",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "String",
-  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
-  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "qualityUpdatesPauseStartDate": "String (Date)",
+  "featureUpdatesPauseStartDate": "String (Date)",
   "featureUpdatesRollbackWindowInDays": 1024,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,

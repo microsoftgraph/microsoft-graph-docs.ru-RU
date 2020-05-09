@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd52a4c78873a55c6b7635538cac11c2c5168542
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3b5206d83b65b95726dbf6710673567e3a77e35a
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439712"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175338"
 ---
 # <a name="managementconditionstatement-resource-type"></a>Тип ресурса Манажементкондитионстатемент
 
@@ -36,7 +36,7 @@ ms.locfileid: "43439712"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
+|id|Строка|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
 |displayName|Строка|Имя, определенное администратором оператора условия управления.|
 |description|String|Заданное администратором описание оператора условия управления.|
 |createdDateTime|DateTimeOffset|Время создания оператора условия управления. Созданная сторона службы.|
@@ -68,7 +68,8 @@ ms.locfileid: "43439712"
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)",
   "expression": {
-    "@odata.type": "microsoft.graph.managementConditionExpression"
+    "@odata.type": "microsoft.graph.managementConditionExpressionString",
+    "value": "String"
   },
   "eTag": "String",
   "applicablePlatforms": [

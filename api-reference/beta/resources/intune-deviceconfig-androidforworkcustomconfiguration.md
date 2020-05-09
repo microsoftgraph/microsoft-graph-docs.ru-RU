@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5e04d9357c86055f45b57a33ee51276766f844e1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9e24a1a7d1d43578c1916882d601ea400b520a98
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442904"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177788"
 ---
 # <a name="androidforworkcustomconfiguration-resource-type"></a>Тип ресурса Андроидфорворккустомконфигуратион
 
@@ -105,12 +105,10 @@ ms.locfileid: "43442904"
   "version": 1024,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSettingInteger",
+      "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "String",
       "description": "String",
-      "omaUri": "String",
-      "value": 1024,
-      "isReadOnly": true
+      "omaUri": "String"
     }
   ]
 }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e93ee667a8a4b479b8e4b8bde78b7808a7acea0d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5acd729b38bff70c2d44494528130517dae7c764
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426389"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176815"
 ---
 # <a name="update-devicehealthscript"></a>Обновление Девицехеалсскрипт
 
@@ -46,15 +46,15 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сценария работоспособности устройства|
-|publisher|String|Имя издателя сценария работоспособности устройства|
+|id|Строка|Уникальный идентификатор сценария работоспособности устройства|
+|publisher|Строка|Имя издателя сценария работоспособности устройства|
 |version|String|Версия сценария работоспособности устройства|
 |displayName|Строка|Имя сценария работоспособности устройства|
 |description|String|Описание сценария работоспособности устройства|
@@ -67,7 +67,9 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
 |roleScopeTagIds|Коллекция объектов string|Список идентификаторов тегов области для сценария работоспособности устройства|
 |исглобалскрипт|Boolean|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
-|хигхеставаилаблеверсион|String|Самая высокая доступная версия для собственного сценария Майкрософт|
+|хигхеставаилаблеверсион|Строка|Самая высокая доступная версия для собственного сценария Майкрософт|
+|детектионскриптпараметерс|Коллекция [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов Детектионскриптпараметерс в ComplexType.|
+|ремедиатионскриптпараметерс|Коллекция [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов Ремедиатионскриптпараметерс в ComplexType.|
 
 
 
@@ -81,7 +83,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 Content-type: application/json
-Content-length: 575
+Content-length: 1221
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -98,7 +100,27 @@ Content-length: 575
     "Role Scope Tag Ids value"
   ],
   "isGlobalScript": true,
-  "highestAvailableVersion": "Highest Available Version value"
+  "highestAvailableVersion": "Highest Available Version value",
+  "detectionScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ],
+  "remediationScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ]
 }
 ```
 
@@ -107,7 +129,7 @@ Content-length: 575
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 747
+Content-Length: 1393
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -127,7 +149,27 @@ Content-Length: 747
     "Role Scope Tag Ids value"
   ],
   "isGlobalScript": true,
-  "highestAvailableVersion": "Highest Available Version value"
+  "highestAvailableVersion": "Highest Available Version value",
+  "detectionScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ],
+  "remediationScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ]
 }
 ```
 

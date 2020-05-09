@@ -1,18 +1,18 @@
 ---
-title: Список Андроидворкпрофилекустомконфигуратионс
-description: Список свойств и связей объектов Андроидворкпрофилекустомконфигуратион.
+title: Список Феатурефлигхтедконфигуратионс
+description: Список свойств и связей объектов Феатурефлигхтедконфигуратион.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f321d142417fa7030416b53a54057e043e2582d
+ms.openlocfilehash: c5057d13152fbaac2e4bb9b3cc3877051052ab7e
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178712"
+ms.locfileid: "44178635"
 ---
-# <a name="list-androidworkprofilecustomconfigurations"></a>Список Андроидворкпрофилекустомконфигуратионс
+# <a name="list-featureflightedconfigurations"></a>Список Феатурефлигхтедконфигуратионс
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "44178712"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [андроидворкпрофилекустомконфигуратион](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) .
+Список свойств и связей объектов [феатурефлигхтедконфигуратион](../resources/intune-deviceconfig-featureflightedconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [андроидворкпрофилекустомконфигуратион](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [феатурефлигхтедконфигуратион](../resources/intune-deviceconfig-featureflightedconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -66,13 +66,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1617
+Content-Length: 1364
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.androidWorkProfileCustomConfiguration",
-      "id": "76c5d59b-d59b-76c5-9bd5-c5769bd5c576",
+      "@odata.type": "#microsoft.graph.featureFlightedConfiguration",
+      "id": "c4725458-5458-c472-5854-72c4585472c4",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
@@ -102,15 +102,7 @@ Content-Length: 1617
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
-      "version": 7,
-      "omaSettings": [
-        {
-          "@odata.type": "microsoft.graph.omaSetting",
-          "displayName": "Display Name value",
-          "description": "Description value",
-          "omaUri": "Oma Uri value"
-        }
-      ]
+      "version": 7
     }
   ]
 }

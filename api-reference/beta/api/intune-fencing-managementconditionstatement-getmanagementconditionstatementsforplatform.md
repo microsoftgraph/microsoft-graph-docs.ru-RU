@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a745012db7de61a781fa29daf7f11a3cb6fbcac3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 92a557fd31f68a41e6c5757059b1cae362fac164
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455456"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178075"
 ---
 # <a name="getmanagementconditionstatementsforplatform-function"></a>Функция Жетманажементкондитионстатементсфорплатформ
 
@@ -47,7 +47,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managementConditionStateme
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 576
+Content-Length: 615
 
 {
   "value": [
@@ -85,7 +85,8 @@ Content-Length: 576
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
       "expression": {
-        "@odata.type": "microsoft.graph.managementConditionExpression"
+        "@odata.type": "microsoft.graph.managementConditionExpressionString",
+        "value": "Value value"
       },
       "eTag": "ETag value",
       "applicablePlatforms": [

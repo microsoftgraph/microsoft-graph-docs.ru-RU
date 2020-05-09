@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 697b952af6227114ecd967b1597cac674688e208
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0c13a4ffa1e62ad6515871fd1f23e0d5841c411d
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432593"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177851"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>Update macOSGeneralDeviceConfiguration
 
@@ -48,7 +48,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md).
@@ -114,6 +114,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |классрумфорцерекуестпермиссионтолеавеклассес|Boolean|Указывает, должен ли студент, зарегистрированный в неуправляемом курсе, запрашивать разрешение у преподавателя при попытке выйти из курса. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
 |классрумфорцеунпромптедаппанддевицелокк|Boolean|Указывает, следует ли запретить преподавателю блокировать приложения или устройство, не запрашивая учащихся. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
 |iCloudBlockActivityContinuation|Boolean|Указывает, следует ли запретить пользователю продолжать работу, начатую на устройстве MacOS, на другом устройстве iOS или MacOS (MacOS 10,15 или более поздней версии).|
+|привациакцессконтролс|Коллекция [макоспривациакцессконтролитем](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md)|Список элементов управления политикой настройки конфиденциальности. Эта коллекция может содержать не более 10 000 элементов.|
 
 
 
@@ -127,7 +128,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 3146
+Content-length: 4545
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -216,7 +217,46 @@ Content-length: 3146
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
   "classroomForceUnpromptedAppAndDeviceLock": true,
-  "iCloudBlockActivityContinuation": true
+  "iCloudBlockActivityContinuation": true,
+  "privacyAccessControls": [
+    {
+      "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+      "displayName": "Display Name value",
+      "identifier": "Identifier value",
+      "identifierType": "path",
+      "codeRequirement": "Code Requirement value",
+      "staticCodeValidation": true,
+      "blockCamera": true,
+      "blockMicrophone": true,
+      "blockScreenCapture": true,
+      "blockListenEvent": true,
+      "speechRecognition": "enabled",
+      "accessibility": "enabled",
+      "addressBook": "enabled",
+      "calendar": "enabled",
+      "reminders": "enabled",
+      "photos": "enabled",
+      "mediaLibrary": "enabled",
+      "fileProviderPresence": "enabled",
+      "systemPolicyAllFiles": "enabled",
+      "systemPolicySystemAdminFiles": "enabled",
+      "systemPolicyDesktopFolder": "enabled",
+      "systemPolicyDocumentsFolder": "enabled",
+      "systemPolicyDownloadsFolder": "enabled",
+      "systemPolicyNetworkVolumes": "enabled",
+      "systemPolicyRemovableVolumes": "enabled",
+      "postEvent": "enabled",
+      "appleEventsAllowedReceivers": [
+        {
+          "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+          "codeRequirement": "Code Requirement value",
+          "identifier": "Identifier value",
+          "identifierType": "path",
+          "allowed": true
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -225,7 +265,7 @@ Content-length: 3146
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3318
+Content-Length: 4717
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -317,7 +357,46 @@ Content-Length: 3318
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
   "classroomForceUnpromptedAppAndDeviceLock": true,
-  "iCloudBlockActivityContinuation": true
+  "iCloudBlockActivityContinuation": true,
+  "privacyAccessControls": [
+    {
+      "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+      "displayName": "Display Name value",
+      "identifier": "Identifier value",
+      "identifierType": "path",
+      "codeRequirement": "Code Requirement value",
+      "staticCodeValidation": true,
+      "blockCamera": true,
+      "blockMicrophone": true,
+      "blockScreenCapture": true,
+      "blockListenEvent": true,
+      "speechRecognition": "enabled",
+      "accessibility": "enabled",
+      "addressBook": "enabled",
+      "calendar": "enabled",
+      "reminders": "enabled",
+      "photos": "enabled",
+      "mediaLibrary": "enabled",
+      "fileProviderPresence": "enabled",
+      "systemPolicyAllFiles": "enabled",
+      "systemPolicySystemAdminFiles": "enabled",
+      "systemPolicyDesktopFolder": "enabled",
+      "systemPolicyDocumentsFolder": "enabled",
+      "systemPolicyDownloadsFolder": "enabled",
+      "systemPolicyNetworkVolumes": "enabled",
+      "systemPolicyRemovableVolumes": "enabled",
+      "postEvent": "enabled",
+      "appleEventsAllowedReceivers": [
+        {
+          "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+          "codeRequirement": "Code Requirement value",
+          "identifier": "Identifier value",
+          "identifierType": "path",
+          "allowed": true
+        }
+      ]
+    }
+  ]
 }
 ```
 

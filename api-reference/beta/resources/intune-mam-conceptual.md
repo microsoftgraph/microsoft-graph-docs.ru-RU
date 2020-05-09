@@ -1,15 +1,15 @@
 ---
 title: Управление мобильными приложениями с помощью Microsoft Intune API Microsoft Graph
 description: Перечисляет API Microsoft Graph для конечных точек Intune (REST), связанных с управлением мобильными приложениями (MAM) для организации клиента.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c8ac4358b9f3011422d2f65d56f3f76f67b2f25b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e436e32fd235128e57f96fbf916a9d51c4206e64
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782456"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178894"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 

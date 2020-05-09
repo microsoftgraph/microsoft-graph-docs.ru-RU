@@ -1,18 +1,18 @@
 ---
-title: Список Девицеманажементскриптассигнментс
-description: Список свойств и связей объектов Девицеманажементскриптассигнмент.
+title: Получение remoteAssistancePartner
+description: Чтение свойств и связей объекта remoteAssistancePartner.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 133676783e26ede198494f5539cf9e40f744054c
+ms.openlocfilehash: b50d3180e7884d235038bf5caf30d9d5139f7850
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176584"
+ms.locfileid: "44176266"
 ---
-# <a name="list-devicemanagementscriptassignments"></a>Список Девицеманажементскриптассигнментс
+# <a name="get-remoteassistancepartner"></a>Получение remoteAssistancePartner
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "44176584"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md) .
+Чтение свойств и связей объекта [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,11 +37,13 @@ ms.locfileid: "44176584"
 }
 -->
 ``` http
-GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments
-GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
+GET /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+
+## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -51,14 +53,14 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignm
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments
+GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -66,18 +68,17 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{device
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 262
+Content-Length: 346
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
-      "id": "a87a601e-601e-a87a-1e60-7aa81e607aa8",
-      "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
-      }
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.remoteAssistancePartner",
+    "id": "7443c8b9-c8b9-7443-b9c8-4374b9c84374",
+    "displayName": "Display Name value",
+    "onboardingUrl": "https://example.com/onboardingUrl/",
+    "onboardingStatus": "onboarding",
+    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+  }
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 56ab161a77f21d06c034322a4daa84c5880db0da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 152f5ef93db38ffced60bf93e3215d45cf822ba5
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464988"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175520"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксовервиев
 
@@ -31,7 +31,7 @@ ms.locfileid: "43464988"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для обзора аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор для обзора аналитики взаимодействия с пользователем.|
 |овераллскоре|Int32|Общий показатель аналитики взаимодействия с пользователем.|
 |девицебутперформанцеовераллскоре|Int32|Общая оценка производительности при загрузке устройства Analytics.|
 |бестпрактицесовераллскоре|Int32|Общая оценка рекомендаций по анализу пользовательских интерфейсов.|
@@ -66,7 +66,7 @@ ms.locfileid: "43464988"
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": "4.2"
         }
       ],
       "severity": "String"

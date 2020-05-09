@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ef1a4a8e27d3ef86bf86a8e3e060f01630698c4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 09e33fdf896dba3e58366ee594aa20d94de5aa12
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379422"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176080"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>Создание Усерекспериенцеаналитиксметрик
 
@@ -49,16 +49,16 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксметрик в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксметрик.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
 |значение|Двойное с плавающей точкой|Значение метрики аналитики взаимодействия с пользователем.|
-|устройств|String|Единица измерения показателя взаимодействия с пользователем.|
+|устройств|Строка|Единица измерения показателя взаимодействия с пользователем.|
 
 
 
@@ -72,11 +72,11 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRegressionSummary/modelRegression
 Content-type: application/json
-Content-length: 147
+Content-length: 128
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
-  "value": "<Unknown Primitive Type Edm.Double>",
+  "value": 1.6666666666666667,
   "unit": "Unit value"
 }
 ```
@@ -86,12 +86,12 @@ Content-length: 147
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 196
+Content-Length: 177
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "1371822e-822e-1371-2e82-71132e827113",
-  "value": "<Unknown Primitive Type Edm.Double>",
+  "value": 1.6666666666666667,
   "unit": "Unit value"
 }
 ```

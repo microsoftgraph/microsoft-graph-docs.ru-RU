@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 77c588ed8e5e6843e9ab0540c8dddc1e8dfa99fb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b7ab72ad429f18d9272fc3ac3dc03767929ae485
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392475"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175030"
 ---
 # <a name="create-managedebookassignment"></a>Создание объекта managedEBookAssignment
 
@@ -46,14 +46,14 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта managedEBookAssignment в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта managedEBookAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги.|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки электронной книги. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
@@ -69,12 +69,12 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 Content-type: application/json
-Content-length: 194
+Content-length: 188
 
 {
   "@odata.type": "#microsoft.graph.managedEBookAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "installIntent": "required"
 }
@@ -85,13 +85,13 @@ Content-length: 194
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 243
+Content-Length: 237
 
 {
   "@odata.type": "#microsoft.graph.managedEBookAssignment",
   "id": "ae8b0d27-0d27-ae8b-270d-8bae270d8bae",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "installIntent": "required"
 }
