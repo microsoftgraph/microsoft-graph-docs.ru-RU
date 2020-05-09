@@ -5,31 +5,31 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7692b514e9b5e0b22f9100c0e59674268b1fbf06
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7fee1b975468341ecd7466659e0a0f460707d566
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399143"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177270"
 ---
-# <a name="list-iosmanagedappprotections"></a><span data-ttu-id="d9f81-103">Перечисление объектов iosManagedAppProtection</span><span class="sxs-lookup"><span data-stu-id="d9f81-103">List iosManagedAppProtections</span></span>
+# <a name="list-iosmanagedappprotections"></a><span data-ttu-id="e5277-103">Перечисление объектов iosManagedAppProtection</span><span class="sxs-lookup"><span data-stu-id="e5277-103">List iosManagedAppProtections</span></span>
 
-<span data-ttu-id="d9f81-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d9f81-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e5277-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e5277-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="d9f81-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d9f81-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e5277-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e5277-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d9f81-106">Перечисление свойств и связей объектов [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).</span><span class="sxs-lookup"><span data-stu-id="d9f81-106">List properties and relationships of the [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) objects.</span></span>
+<span data-ttu-id="e5277-106">Перечисление свойств и связей объектов [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).</span><span class="sxs-lookup"><span data-stu-id="e5277-106">List properties and relationships of the [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="d9f81-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="d9f81-107">Prerequisites</span></span>
-<span data-ttu-id="d9f81-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d9f81-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e5277-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="e5277-107">Prerequisites</span></span>
+<span data-ttu-id="e5277-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e5277-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d9f81-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d9f81-110">Permission type</span></span>|<span data-ttu-id="d9f81-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="d9f81-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e5277-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e5277-110">Permission type</span></span>|<span data-ttu-id="e5277-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="e5277-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d9f81-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d9f81-112">Delegated (work or school account)</span></span>|<span data-ttu-id="d9f81-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="d9f81-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="d9f81-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d9f81-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d9f81-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d9f81-115">Not supported.</span></span>|
-|<span data-ttu-id="d9f81-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d9f81-116">Application</span></span>|<span data-ttu-id="d9f81-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d9f81-117">Not supported.</span></span>|
+|<span data-ttu-id="e5277-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e5277-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e5277-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="e5277-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="e5277-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e5277-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e5277-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e5277-115">Not supported.</span></span>|
+|<span data-ttu-id="e5277-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e5277-116">Application</span></span>|<span data-ttu-id="e5277-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="e5277-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d9f81-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d9f81-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e5277-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e5277-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,32 +38,32 @@ ms.locfileid: "43399143"
 GET /deviceAppManagement/iosManagedAppProtections
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d9f81-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="d9f81-119">Request headers</span></span>
-|<span data-ttu-id="d9f81-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="d9f81-120">Header</span></span>|<span data-ttu-id="d9f81-121">Значение</span><span class="sxs-lookup"><span data-stu-id="d9f81-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e5277-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="e5277-119">Request headers</span></span>
+|<span data-ttu-id="e5277-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e5277-120">Header</span></span>|<span data-ttu-id="e5277-121">Значение</span><span class="sxs-lookup"><span data-stu-id="e5277-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d9f81-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d9f81-122">Authorization</span></span>|<span data-ttu-id="d9f81-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d9f81-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="d9f81-124">Accept</span><span class="sxs-lookup"><span data-stu-id="d9f81-124">Accept</span></span>|<span data-ttu-id="d9f81-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d9f81-125">application/json</span></span>|
+|<span data-ttu-id="e5277-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e5277-122">Authorization</span></span>|<span data-ttu-id="e5277-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e5277-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e5277-124">Accept</span><span class="sxs-lookup"><span data-stu-id="e5277-124">Accept</span></span>|<span data-ttu-id="e5277-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e5277-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d9f81-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d9f81-126">Request body</span></span>
-<span data-ttu-id="d9f81-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d9f81-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e5277-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e5277-126">Request body</span></span>
+<span data-ttu-id="e5277-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e5277-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d9f81-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="d9f81-128">Response</span></span>
-<span data-ttu-id="d9f81-129">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="d9f81-129">If successful, this method returns a `200 OK` response code and a collection of [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e5277-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="e5277-128">Response</span></span>
+<span data-ttu-id="e5277-129">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="e5277-129">If successful, this method returns a `200 OK` response code and a collection of [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d9f81-130">Пример</span><span class="sxs-lookup"><span data-stu-id="d9f81-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e5277-130">Пример</span><span class="sxs-lookup"><span data-stu-id="e5277-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d9f81-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="d9f81-131">Request</span></span>
-<span data-ttu-id="d9f81-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d9f81-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="e5277-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="e5277-131">Request</span></span>
+<span data-ttu-id="e5277-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e5277-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections
 ```
 
-### <a name="response"></a><span data-ttu-id="d9f81-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="d9f81-133">Response</span></span>
-<span data-ttu-id="d9f81-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d9f81-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e5277-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5277-133">Response</span></span>
+<span data-ttu-id="e5277-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e5277-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1933
+Content-Length: 2040
 
 {
   "value": [
@@ -103,18 +103,17 @@ Content-Length: 1933
       "minimumWarningOsVersion": "Minimum Warning Os Version value",
       "minimumRequiredAppVersion": "Minimum Required App Version value",
       "minimumWarningAppVersion": "Minimum Warning App Version value",
+      "managedBrowser": "microsoftEdge",
       "isAssigned": true,
       "appDataEncryptionType": "afterDeviceRestart",
       "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
       "deployedAppCount": 0,
-      "faceIdBlocked": true
+      "faceIdBlocked": true,
+      "customBrowserProtocol": "Custom Browser Protocol value"
     }
   ]
 }
 ```
-
-
-
 
 
 
