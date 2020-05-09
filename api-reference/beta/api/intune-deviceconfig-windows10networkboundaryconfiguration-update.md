@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dcb2e7c03dc54200054491cf641e5680b52ddbfe
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 157ef8754a44a74392c5fd89c468fe074866f0d2
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43339663"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179027"
 ---
 # <a name="update-windows10networkboundaryconfiguration"></a>Обновление windows10NetworkBoundaryConfiguration
 
@@ -48,7 +48,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md).
@@ -80,7 +80,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2017
+Content-length: 1919
 
 {
   "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
@@ -126,9 +126,7 @@ Content-length: 2017
     ],
     "enterpriseIPRanges": [
       {
-        "@odata.type": "microsoft.graph.iPv6Range",
-        "lowerAddress": "Lower Address value",
-        "upperAddress": "Upper Address value"
+        "@odata.type": "microsoft.graph.ipRange"
       }
     ],
     "enterpriseInternalProxyServers": [
@@ -151,7 +149,7 @@ Content-length: 2017
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2189
+Content-Length: 2091
 
 {
   "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
@@ -200,9 +198,7 @@ Content-Length: 2189
     ],
     "enterpriseIPRanges": [
       {
-        "@odata.type": "microsoft.graph.iPv6Range",
-        "lowerAddress": "Lower Address value",
-        "upperAddress": "Upper Address value"
+        "@odata.type": "microsoft.graph.ipRange"
       }
     ],
     "enterpriseInternalProxyServers": [

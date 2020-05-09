@@ -1,15 +1,15 @@
 ---
 title: Управление устройствами в Microsoft Intune — API Microsoft Graph
 description: Список API Microsoft Graph для конечных точек Intune (REST), определяющих Управление устройствами для организации клиента.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f20ad594af8819fab9c9f88e0af81a5fbf009a59
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 959c7c7d0f38dfa036f74cd4fd36f26a2fbfb442
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471126"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179322"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -36,7 +36,6 @@ ms.locfileid: "43471126"
 - [Результат группового действия в отношении управляемых устройств](intune-devices-bulkmanageddeviceactionresult.md)
 - [Тип корпуса](intune-devices-chassistype.md)
 - [Условие управления циклического геофенсинга](intune-fencing-circulargeofencemanagementcondition.md)
-- [Тип подходящего управления для совместного управления](intune-devices-comanagementeligibletype.md)
 - [Состояние соответствия требованиям](intune-devices-compliancestate.md)
 - [Действие диспетчера конфигураций](intune-devices-configurationmanageraction.md)
 - [Состояние доставки действий Configuration Manager](intune-devices-configurationmanageractiondeliverystatus.md)
@@ -46,12 +45,10 @@ ms.locfileid: "43471126"
 - [Состояние работоспособности клиента Configuration Manager](intune-devices-configurationmanagerclienthealthstate.md)
 - [Сведения о клиенте Configuration Manager](intune-devices-configurationmanagerclientinformation.md)
 - [Состояние клиента Configuration Manager](intune-devices-configurationmanagerclientstate.md)
-- [Расписание на каждый день](intune-devices-dailyschedule.md)
 - [Согласие на предоставление общего доступа к данным](intune-devices-datasharingconsent.md)
 - [Удаление пользователя из результата действия над общим устройством Apple](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [Обнаруженное приложение](intune-devices-detectedapp.md)
 - [Результат действия над устройством](intune-devices-deviceactionresult.md)
-- [Тип фильтра назначения управления устройствами и приложениями](intune-esim-deviceandappmanagementassignmentfiltertype.md)
 - [Причина сбоя регистрации устройства](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [Сводка по состоянию доступа к Exchange для устройств](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Геолокация устройств](intune-devices-devicegeolocation.md)
@@ -61,11 +58,20 @@ ms.locfileid: "43471126"
 - [Состояние подтверждения работоспособности устройства](intune-devices-devicehealthattestationstate.md)
 - [Сценарий работоспособности устройства](intune-devices-devicehealthscript.md)
 - [Назначение сценария работоспособности устройства](intune-devices-devicehealthscriptassignment.md)
+- [Логический параметр сценария работоспособности устройства](intune-devices-devicehealthscriptbooleanparameter.md)
+- [Расписание рабочего времени для сценария работоспособности устройства](intune-devices-devicehealthscriptdailyschedule.md)
 - [Состояние устройства сценария работоспособности устройства](intune-devices-devicehealthscriptdevicestate.md)
+- [Расписание работоспособности для сценария работоспособности устройства](intune-devices-devicehealthscripthourlyschedule.md)
+- [Параметр целого числа сценариев работоспособности устройства](intune-devices-devicehealthscriptintegerparameter.md)
+- [Параметр сценария работоспособности устройства](intune-devices-devicehealthscriptparameter.md)
 - [Журнал исправлений сценариев исправности устройств](intune-devices-devicehealthscriptremediationhistory.md)
 - [Данные журнала исправлений для сценариев исправности устройств](intune-devices-devicehealthscriptremediationhistorydata.md)
 - [Сводка по исправлению сценариев работоспособности устройств](intune-devices-devicehealthscriptremediationsummary.md)
+- [Сценарий работоспособности устройства запускается один раз по расписанию](intune-devices-devicehealthscriptrunonceschedule.md)
+- [Расписание выполнения сценария работоспособности устройства](intune-devices-devicehealthscriptrunschedule.md)
 - [Сводка по запуску сценария работоспособности устройства](intune-devices-devicehealthscriptrunsummary.md)
+- [Параметр строки сценария работоспособности устройства](intune-devices-devicehealthscriptstringparameter.md)
+- [Расписание времени для сценария работоспособности устройства](intune-devices-devicehealthscripttimeschedule.md)
 - [Определение абстрактного сложного параметра управления устройствами](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [Экземпляр абстрактного сложного параметра управления устройствами](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Событие автопилота управления устройствами](intune-troubleshooting-devicemanagementautopilotevent.md)
@@ -121,6 +127,7 @@ ms.locfileid: "43471126"
 - [Подписки на управление устройствами](intune-devices-devicemanagementsubscriptions.md)
 - [Шаблон управления устройствами](intune-deviceintent-devicemanagementtemplate.md)
 - [Категория параметра шаблона управления устройствами](intune-deviceintent-devicemanagementtemplatesettingcategory.md)
+- [Подтип шаблона управления устройствами](intune-deviceintent-devicemanagementtemplatesubtype.md)
 - [Тип шаблона управления устройствами](intune-deviceintent-devicemanagementtemplatetype.md)
 - [Данные ошибки "Устранение проблем с управлением устройствами"](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
 - [Ресурс ошибки "Устранение проблем с управлением устройствами"](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
@@ -140,9 +147,9 @@ ms.locfileid: "43471126"
 - [Глобальное состояние сценария работоспособности устройства](intune-devices-globaldevicehealthscriptstate.md)
 - [Сведения об оборудовании](intune-devices-hardwareinformation.md)
 - [Состояние работоспособности](intune-devices-healthstate.md)
-- [Почасовое расписание](intune-devices-hourlyschedule.md)
 - [Ценное значение Double](intune-devices-insightvaluedouble.md)
 - [Значение int](intune-devices-insightvalueint.md)
+- [Тип присоединения](intune-devices-jointype.md)
 - [Локализованное сообщение уведомления](intune-notification-localizednotificationmessage.md)
 - [Результат действия "Поиск устройства"](intune-devices-locatedeviceactionresult.md)
 - [Условие управления расположением](intune-fencing-locationmanagementcondition.md)
@@ -182,12 +189,13 @@ ms.locfileid: "43471126"
 - [Состояние исправления](intune-devices-remediationstate.md)
 - [Удаленное действие](intune-devices-remoteaction.md)
 - [Аудит удаленных действий](intune-devices-remoteactionaudit.md)
+- [Состояние подключения удаленного помощника](intune-remoteassistance-remoteassistanceonboardingstatus.md)
+- [Партнерская служба удаленного помощника](intune-remoteassistance-remoteassistancepartner.md)
 - [Результат действия "Удаленная блокировка"](intune-devices-remotelockactionresult.md)
 - [Результат действия "Сброс секретного кода"](intune-devices-resetpasscodeactionresult.md)
 - [Результат действия "Отзыв VPP-лицензий Apple "](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Сведения о теге области применения роли](intune-auditing-rolescopetaginfo.md)
 - [Результат действия устройства при вращении ключей BitLocker](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
-- [Расписание запуска](intune-devices-runschedule.md)
 - [Сводка по состоянию категории базовых показателей безопасности](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Состояние соответствия требованиям базового плана безопасности](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Состояние устройства базового плана безопасности](intune-deviceintent-securitybaselinedevicestate.md)
@@ -237,5 +245,3 @@ ms.locfileid: "43471126"
 - [Тип ресурса windowsManagementApp](intune-devices-windowsmanagementapp.md)
 - [Тип ресурса windowsManagementAppHealthState](intune-devices-windowsmanagementapphealthstate.md)
 - [Состояние защиты Windows](intune-devices-windowsprotectionstate.md)
-
-
