@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 7e734d47e85ea18874a6440b5e7dab871ac667c3
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: bcbf6cad0c71b29900af209710bc91b211063606
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44153480"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177627"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -18,17 +18,50 @@ ms.locfileid: "44153480"
 
 ## <a name="may-2020"></a>Май 2020 г.
 
+### <a name="devices-and-apps--corporate-management-intune"></a>Устройства и приложения | Корпоративное управление (Intune)
+
+| **Тип изменения** | **Версия**   | **Описание** |
+|:---|:---|:---|
+|Дополнение|Бета|Добавлены новые объекты:<br/>[featureFlightedConfiguration](/graph/api/resources/intune-deviceconfig-featureflightedconfiguration?view=graph-rest-beta)<br/>|
+|Дополнение|Бета|Добавлены новые сложные типы:<br/>[deviceHealthScriptBooleanParameter](/graph/api/resources/intune-devices-devicehealthscriptbooleanparameter?view=graph-rest-beta)<br/>[deviceHealthScriptDailySchedule](/graph/api/resources/intune-devices-devicehealthscriptdailyschedule?view=graph-rest-beta)<br/>[deviceHealthScriptHourlySchedule](/graph/api/resources/intune-devices-devicehealthscripthourlyschedule?view=graph-rest-beta)<br/>[deviceHealthScriptIntegerParameter](/graph/api/resources/intune-devices-devicehealthscriptintegerparameter?view=graph-rest-beta)<br/>[deviceHealthScriptParameter](/graph/api/resources/intune-devices-devicehealthscriptparameter?view=graph-rest-beta)<br/>[deviceHealthScriptRunOnceSchedule](/graph/api/resources/intune-devices-devicehealthscriptrunonceschedule?view=graph-rest-beta)<br/>[deviceHealthScriptRunSchedule](/graph/api/resources/intune-devices-devicehealthscriptrunschedule?view=graph-rest-beta)<br/>[deviceHealthScriptStringParameter](/graph/api/resources/intune-devices-devicehealthscriptstringparameter?view=graph-rest-beta)<br/>[deviceHealthScriptTimeSchedule](/graph/api/resources/intune-devices-devicehealthscripttimeschedule?view=graph-rest-beta)<br/>[macOSAppleEventReceiver](/graph/api/resources/intune-deviceconfig-macosappleeventreceiver?view=graph-rest-beta)<br/>[macOSPrivacyAccessControlItem](/graph/api/resources/intune-deviceconfig-macosprivacyaccesscontrolitem?view=graph-rest-beta)<br/>[macOSSystemExtension](/graph/api/resources/intune-deviceconfig-macossystemextension?view=graph-rest-beta)<br/>[macOSSystemExtensionTypeMapping](/graph/api/resources/intune-deviceconfig-macossystemextensiontypemapping?view=graph-rest-beta)<br/>|
+|Дополнение|бета|Добавлены новые типы перечисления:<br/>[androidDeviceOwnerEnrollmentProfileType](/graph/api/resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype?view=graph-rest-beta)<br/>[deviceManagementTemplateSubtype](/graph/api/resources/intune-deviceintent-devicemanagementtemplatesubtype?view=graph-rest-beta)<br/>[joinType](/graph/api/resources/intune-devices-jointype?view=graph-rest-beta)<br/>[macOSProcessIdentifierType](/graph/api/resources/intune-deviceconfig-macosprocessidentifiertype?view=graph-rest-beta)<br/>[macOSSystemExtensionType](/graph/api/resources/intune-deviceconfig-macossystemextensiontype?view=graph-rest-beta)<br/>|
+|Дополнение|Бета|Добавлено действие [validateXml](/graph/api/intune-apps-mobileapp-validatexml?view=graph-rest-beta) для коллекции [mobileApp](/graph/api/resources/intune-shared-mobileapp?view=graph-rest-beta) |
+|Дополнение|Бета|Добавлено действие [createCopy](/graph/api/intune-deviceintent-devicemanagementintent-createcopy?view=graph-rest-beta) для объекта [deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta) |
+|Удаление|Бета|Удалены следующие объекты:<br/>**comanagementEligibleDeviceEntity**<br/>**comanagementEligibleSummaryEntity**<br/>|
+|Удаление|Бета-версия|Удалены следующие сложные типы:<br/>**dailySchedule**<br/>**hourlySchedule**<br/>**runSchedule**<br/>|
+|Удаление|бета|Удалены следующие типы перечисления:<br/>**coManagementEligibleType**<br/>|
+|Дополнение|Бета|Добавлены свойства **microsoftLauncherConfigurationEnabled** и **enrollmentProfile** для объекта [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлено свойство **roleScopeTagIds** для объекта [deviceEnrollmentConfiguration](/graph/api/resources/intune-shared-deviceenrollmentconfiguration?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлены свойства **detectionScriptParameters** и **remediationScriptParameters** для объекта [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta)|
+|Изменение|Бета|Изменен тип следующих свойств объекта [deviceHealthScriptAssignment](/graph/api/resources/intune-devices-devicehealthscriptassignment?view=graph-rest-beta):<br/>**runSchedule** изменено с [runSchedule](/graph/api/resources/runSchedule.md?view=graph-rest-beta) на [deviceHealthScriptRunSchedule](/graph/api/resources/intune-devices-devicehealthscriptrunschedule?view=graph-rest-beta)<br/>|
+|Дополнение|Бета|Добавлено свойство **templateSubtype** для объекта [deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлены свойства **systemExtensionsBlockOverride**, **systemExtensionsAllowedTeamIdentifiers**, **systemExtensionsAllowed** и **systemExtensionsAllowedTypes** для объекта [macOSExtensionsConfiguration](/graph/api/resources/intune-deviceconfig-macosextensionsconfiguration?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлено свойство **privacyAccessControls** для объекта [macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлены свойства **joinType** и **skuFamily** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлено свойство навигации **rootCertificateForClientValidation** для объекта [windowsWifiEnterpriseEAPConfiguration](/graph/api/resources/intune-deviceconfig-windowswifienterpriseeapconfiguration?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлено свойство **operatingSystemProductType** для сложного типа [hardwareInformation](/graph/api/resources/intune-devices-hardwareinformation?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлено свойство **roleScopeTagIds** для сложного типа [retireScheduledManagedDevice](/graph/api/resources/intune-deviceconfig-retirescheduledmanageddevice?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлен элемент **notConfigured** для типа перечисления [configurationUsage](/graph/api/resources/intune-deviceconfig-configurationusage?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлены элементы **androidEnterpriseDedicatedDevice**, **androidEnterpriseFullyManaged** и **androidEnterpriseCorporateWorkProfile** для типа перечисления [deviceEnrollmentType](/graph/api/resources/intune-shared-deviceenrollmenttype?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлен элемент **syncDevice** для типа перечисления [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction?view=graph-rest-beta)|
+|Дополнение|1.0|Добавлены новые типы перечисления:<br/>[managedBrowserType](/graph/api/resources/intune-mam-managedbrowsertype?view=graph-rest-1.0)<br/>|
+|Дополнение|1.0|Добавлены свойства **customBrowserPackageId** и **customBrowserDisplayName** для объекта [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-1.0)|
+|Дополнение|1.0|Добавлено свойство **customBrowserProtocol** для объекта [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-1.0)|
+|Дополнение|1.0|Добавлено свойство **managedBrowser** для объекта [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-1.0)|
+
+
 ### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлены свойства **resourceBehaviorOptions** и **resourceProvisioningOptions** в объект [group](/graph/api/resources/group?view=graph-rest-beta).|
+| Изменение | Бета | Обновлено свойство **clientAppTypes** в [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta), чтобы заменить `modern` на `mobileAppsAndDesktopClients`. Удален параметр `easUnsupported` и добавлен параметр `exchangeActiveSync`, включающий поддерживаемые и неподдерживаемые платформы Exchange ActiveSync. |
 
 ### <a name="teamwork--shifts"></a>Командная работа | Смены
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение | 1.0 | Введены API-интерфейсы Shifts, включая [shift](/graph/api/resources/shift?view=graph-rest-1.0), [workforceintegration]((/graph/api/resources/workforceintegration?view=graph-rest-1.0) и связанные методы.|
+| Дополнение | 1.0 | Представлены API смен, в том числе [shift](/graph/api/resources/shift?view=graph-rest-1.0), [workforceintegration](/graph/api/resources/workforceintegration?view=graph-rest-1.0) и связанные методы.|
 
 ## <a name="april-2020"></a>Апрель 2020 г.
 
@@ -1024,7 +1057,7 @@ ms.locfileid: "44153480"
 
 ### <a name="mail-outlook"></a>Почта (Outlook)
 
-| **Тип изменения** | **Версия**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0          | Добавлена возможность [получения содержимого MIME сообщения](outlook-get-mime-message.md). |
 
@@ -1653,7 +1686,7 @@ ms.locfileid: "44153480"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Изменение | Бета | Изменен тип данных для следующих параметров [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta): <br>**attendees**: с **attendeeBase** на [attendeeDataModel](/graph/api/resources/attendeedatamodel?view=graph-rest-beta) <br>**locationConstraint**: с **locationConstraint** на [locationConstraints](/graph/api/resources/locationconstraints?view=graph-rest-beta) <br> **timeConstraint**: с **timeConstraint** на [findMeetingTimesTimeConstraints](/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta)|
+|Изменение | бета | Изменен тип данных для следующих параметров [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta): <br>**attendees**: с **attendeeBase** на [attendeeDataModel](/graph/api/resources/attendeedatamodel?view=graph-rest-beta) <br>**locationConstraint**: с **locationConstraint** на [locationConstraints](/graph/api/resources/locationconstraints?view=graph-rest-beta) <br> **timeConstraint**: с **timeConstraint** на [findMeetingTimesTimeConstraints](/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta)|
 |Изменение | Бета | Изменен возвращаемый тип **findMeetingTimes** с **meetingTimeSuggestionsResult** чтобы [findMeetingTimesResponse](/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta) |
 |Изменение | Бета | Изменены полезные данные ответа **findMeetingTimes**, чтобы исключить **тип** каждого присутствующего, который указывает, является ли участник обязательным, необязательным или представляет ресурс |
 |Изменение | бета | Изменен базовый тип [locationConstraintItem](/graph/api/resources/locationconstraintitem?view=graph-rest-beta) с [location](/graph/api/resources/location?view=graph-rest-beta) на [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) |
@@ -1870,7 +1903,7 @@ ms.locfileid: "44153480"
 | Дополнение | 1.0 | Добавлено действие [forceDelete](/graph/api/domain-forcedelete?view=graph-rest-1.0) для объекта [domains](/graph/api/resources/domain?view=graph-rest-1.0).|
 | Дополнение | бета | Добавлен новый метод transitiveMembers для объекта [groups](/graph/api/group-list-transitivemembers?view=graph-rest-beta). Этот метод возвращает плоский список элементов, включая вложенные элементы.|
 | Дополнение | бета | Добавлен новый метод transitiveMemberOf для объектов [users](/graph/api/user-list-transitivemembersof?view=graph-rest-beta), [groups](/graph/api/group-list-transitivemembersof?view=graph-rest-beta), [devices](/graph/api/device-list-transitivemembersof?view=graph-rest-beta) и [service principals](/graph/api/serviceprincipal-list-transitivemembersof?view=graph-rest-beta).|
-| Дополнение | бета | Добавлен метод memberOf, чтобы получить сведения о непосредственном [участии](/graph/api/device-list-members?view=graph-rest-beta) для устройств. Этот метод добавлен для получения списка участий, включая вложенные участия.|
+| Дополнение | Бета | Добавлен метод memberOf, чтобы получить сведения о непосредственном [участии](/graph/api/device-list-members?view=graph-rest-beta) для устройств. Этот метод добавлен для получения списка участий, включая вложенные участия.|
 | Дополнение | бета | Добавлены новые свойства в объект [users](/graph/api/resources/user?view=graph-rest-beta): **faxNumber**, **onPremisesDistinguishedName** и **otherMails**.|
 | Дополнение | бета | Добавлено свойство **forceChangePasswordNextSignInWithMfa** в сложный тип [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-beta).|
 | Дополнение    | бета | Добавлены свойства externalUserState и externalUserStateChangeDateTime в объект [user](/graph/api/resources/user?view=graph-rest-beta).|
@@ -2241,7 +2274,7 @@ ms.locfileid: "44153480"
 |Дополнение|бета|Добавлены элементы **zscalerPrivateAccess**, **f5Access2018**, **citrixSso** и **paloAltoGlobalProtectV2** для типа перечисления [appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta)|
 |Дополнение|бета|Добавлен элемент **userAbandonment** для типа перечисления [deviceEnrollmentFailureReason](/graph/api/resources/intune-troubleshooting-deviceenrollmentfailurereason?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлен элемент **blocked** для типа перечисления [enrollmentState](/graph/api/resources/intune-enrollment-enrollmentstate?view=graph-rest-beta)|
-|Дополнение|бета|Добавлен элемент **microsoft365ManagedMdm** для типа перечисления [managementAgentType](/graph/api/resources/intune-shared-managementagenttype?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлен элемент **microsoft365ManagedMdm** для типа перечисления [managementAgentType](/graph/api/resources/intune-shared-managementagenttype?view=graph-rest-beta)|
 |Дополнение|бета|Добавлен элемент **domainNameService** для типа перечисления [subjectAlternativeNameType](/graph/api/resources/intune-deviceconfig-subjectalternativenametype?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены элементы **wpa2Personal** и **wpa2Enterprise** для типа перечисления [wiFiSecurityType](/graph/api/resources/intune-deviceconfig-wifisecuritytype?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены элементы **enterpriseUnwantedSoftware**, **ransom** и **hipsRule** для типа перечисления [windowsMalwareCategory](/graph/api/resources/intune-devices-windowsmalwarecategory?view=graph-rest-beta)|
@@ -2821,7 +2854,7 @@ ms.locfileid: "44153480"
 
 ### <a name="identity-and-access-directory-apis"></a>Удостоверение и доступ (API каталогов)
 
-| **Тип изменения** | **Версия** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлен сложный тип **onPremisesExtensionAttributes** для объекта [user](/graph/api/resources/user?view=graph-rest-beta). Он содержит локальные атрибуты расширения AD 1–15. |
 | Дополнение        | Бета-версия        | Добавлен сложный тип **privacyProfile** для объекта [organization](/graph/api/resources/organization?view=graph-rest-beta). |
