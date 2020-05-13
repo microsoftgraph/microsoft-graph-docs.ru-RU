@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: b9bc875b3bd01cc2083f7726a1c0abb42c0bb316
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "42453784"
 ---
 # <a name="replace-schedulinggroup"></a>Замена объекта schedulingGroup
@@ -20,7 +20,7 @@ ms.locfileid: "42453784"
 
 Замена существующего [счедулингграуп](../resources/schedulinggroup.md).
 
-Если указанный [счедулингграуп](../resources/schedulinggroup.md) не существует, этот метод возвращает значение `404 Not found`.
+Если указанный [счедулингграуп](../resources/schedulinggroup.md) не существует, этот метод возвращает значение `404 Not found` .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,7 +51,7 @@ PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [счедулингграуп](../resources/schedulinggroup.md) в формате JSON.
 

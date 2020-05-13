@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
 ms.openlocfilehash: 823f3e044d3235d018725a2e08230526b78f7ca9
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "44174232"
 ---
 # <a name="managedmobileapp-resource-type"></a>Тип ресурса managedMobileApp
@@ -35,7 +35,7 @@ ms.locfileid: "44174232"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор приложения с типом его операционной системы.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Связи

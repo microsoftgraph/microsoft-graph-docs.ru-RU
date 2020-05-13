@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Девицеманажементтемплатетипе
 description: Тип шаблона
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d75494230ae69e06511e7d6eb818e4592e1496b5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 954a4030cacd8448e0ae1816afda69f4d02237bb
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785234"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43449719"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>тип перечисления Девицеманажементтемплатетипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,8 +26,8 @@ ms.locfileid: "42785234"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |секуритибаселине|нуль|Шаблон базового плана безопасности|
-|спеЦиализеддевицес|1,1|Шаблон специализированных устройств|
-|адванцедсреатпротектионсекуритибаселине|2|Основной шаблон безопасности Advanced Threat protection|
+|спеЦиализеддевицес|1 |Шаблон специализированных устройств|
+|адванцедсреатпротектионсекуритибаселине|2 |Основной шаблон безопасности Advanced Threat protection|
 |deviceConfiguration|4|Шаблон конфигурации устройства|
 |собственный|4 |Настраиваемый шаблон, определенный администратором|
 |секурититемплате|5 |Шаблоны с определенными параметрами безопасности|

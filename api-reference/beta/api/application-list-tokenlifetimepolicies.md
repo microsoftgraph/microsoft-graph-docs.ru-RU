@@ -6,10 +6,10 @@ author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 7c0523d501dd6b77bc5808b0f936f6692b12951b
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43107236"
 ---
 # <a name="list-assigned-tokenlifetimepolicy"></a>Список назначенных Токенлифетимеполици
@@ -43,9 +43,9 @@ GET /servicePrincipals/{id}/tokenLifetimePolicies
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

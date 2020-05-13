@@ -6,10 +6,10 @@ author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
 ms.openlocfilehash: b834de13ccfeb59cd88fae093406a380c9aa5b58
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43181794"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>Тип ресурса Цертификатебаседаусконфигуратион

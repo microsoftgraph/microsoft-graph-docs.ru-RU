@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
 ms.openlocfilehash: 1a8d5c63648a720cad5e5ceaed77b25eff867abe
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43317393"
 ---
 # <a name="messagerulepredicates-resource-type"></a>Тип ресурса messageRulePredicates
@@ -41,7 +41,7 @@ ms.locfileid: "43317393"
 | isReadReceipt | Boolean | Указывает, должно ли входящее сообщение быть уведомлением о прочтении, чтобы применялось условие или исключение. |
 | isSigned | Boolean | Указывает, должно ли входящее сообщение иметь подпись S/MIME, чтобы применялось условие или исключение. |
 | isVoicemail | Boolean | Указывает, должно ли входящее сообщение быть сообщением голосовой почты, чтобы к нему применялось условие или исключение. |
-| messageActionFlag | messageActionFlag  | Представляет значение флага для действия, которое должно присутствовать во входящем сообщении, чтобы к нему применялось условие или исключение. `any`Возможные значения:, `call`, `doNotForward`, `followUp`, `fyi`, `forward`, `noResponseNecessary`, `read`, `reply`, `replyToAll`,. `review` |
+| messageActionFlag | messageActionFlag  | Представляет значение флага для действия, которое должно присутствовать во входящем сообщении, чтобы к нему применялось условие или исключение. Возможные значения: `any` , `call` ,,, `doNotForward` `followUp` `fyi` , `forward` , `noResponseNecessary` ,,, `read` `reply` `replyToAll` , `review` . |
 | notSentToMe | Boolean | Указывает, должно ли условие или исключение применяться только в том случае, если владелец почтового ящика не является получателем входящего сообщения. |
 | recipientContains | Коллекция объектов string | Представляет строки, которые должны присутствовать в свойстве **toRecipients** или **ccRecipients** входящего сообщения, чтобы к нему применялось условие или исключение. |
 | senderContains | Коллекция объектов string | Представляет строки, которые должны присутствовать в свойстве **from** входящего сообщения, чтобы к нему применялось условие или исключение. |

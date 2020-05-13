@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Ратингканадателевисионтипе
 description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Канаде
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 763e274b4280a821bb924d473874a74b011a14d2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fb242f4f17539ec2d99b1667ae2a669d48d61dd9
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787735"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43449758"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>тип перечисления Ратингканадателевисионтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,8 +26,8 @@ ms.locfileid: "42787735"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|аллблоккед|1,1|Не разрешать показ контента|
-|children|2|Классификация C подходит для детей от 2 до 7 лет|
+|аллблоккед|1 |Не разрешать показ контента|
+|children|2 |Классификация C подходит для детей от 2 до 7 лет|
 |childrenAbove8|4|Классификация C8 подходит для детей от 8 до 8 лет|
 |обобщен|4 |Классификация "G" подходит для общей аудитории|
 |паренталгуиданце|5 |PG, с родительским руководством|

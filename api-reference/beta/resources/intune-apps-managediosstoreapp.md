@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
 ms.openlocfilehash: 2a9bea6bb5811554ba165492c756fd26b90c9cf3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43440446"
 ---
 # <a name="managediosstoreapp-resource-type"></a>Тип ресурса managedIOSStoreApp

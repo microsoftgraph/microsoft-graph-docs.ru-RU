@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b0028c76b9c3f83b7277b3cf229bb4105a51b105
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3db487f3b8583c0fc25ab5ef834d1e10479c0d35
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43368126"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43510617"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit: Delta
 
@@ -56,7 +56,7 @@ GET /administrativeunits/delta
 - Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство **id** возвращается всегда. 
 
 - Имеется ограниченная поддержка параметра `$filter`:
-  * Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам: `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}`. Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
+  * Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам: `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}` . Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -69,9 +69,9 @@ GET /administrativeunits/delta
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект коллекции [administrativeUnit](../resources/administrativeunit.md) в тексте отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`. 
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [administrativeUnit](../resources/administrativeunit.md) в тексте отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`. 
 
-- Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. **AdministrativeUnit** продолжает совершать запросы, используя `nextLink` URL-адрес `deltaLink` , пока в ответ не будет включен URL-адрес.
+- Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. **AdministrativeUnit** продолжает совершать запросы, используя `nextLink` URL-адрес, пока `deltaLink` в ответ не будет включен URL-адрес.
 
 - Если возвращается URL-адрес `deltaLink`, это означает, что больше нет данных о текущем состоянии ресурса. Следует оставить и использовать `deltaLink` URL-адрес для получения сведений об изменениях в ресурсе в будущем.
 
@@ -80,6 +80,8 @@ GET /administrativeunits/delta
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "administrativeunit_delta"
@@ -87,6 +89,20 @@ GET /administrativeunits/delta
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeunits/delta
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/administrativeunit-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/administrativeunit-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/administrativeunit-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

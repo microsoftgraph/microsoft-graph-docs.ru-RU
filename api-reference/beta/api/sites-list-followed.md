@@ -1,18 +1,18 @@
 ---
 author: learafa
-description: Перечислите сайты, за которыми подписан пользователь.
-title: Список отслеживаемых сайтов
+description: Перечисление сайтов, отслеживаемых вошедшим пользователем.
+title: Перечисление отслеживаемых сайтов
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: a5a1fa349440a998bdd33a6bdddddf32fcbc162d
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: c705b7d9880fffbc96b2b863669862ff01c0739e
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934866"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44052297"
 ---
-# <a name="list-followed-sites"></a>Список отслеживаемых сайтов
+# <a name="list-followed-sites"></a>Перечисление отслеживаемых сайтов
 
 Пространство имен: microsoft.graph
 
@@ -62,11 +62,23 @@ POST /me/followedSites
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
 ```msgraph-interactive
 POST /me/followedSites
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### <a name="response"></a>Отклик
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 

@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Рекуиредпассвордтипе
 description: Возможные значения обязательных паролей.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 00397b5356e12dfa0268ed016248f1ffbc44cc44
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 84b2b5516effa0f0100f19611c27f33e193a27a8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787623"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43449712"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>тип перечисления Рекуиредпассвордтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,8 +26,8 @@ ms.locfileid: "42787623"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|цифрового|1,1|Необходимо указать буквенно-цифровой пароль.|
-|числовых|2|Необходим числовой пароль.|
+|цифрового|1 |Необходимо указать буквенно-цифровой пароль.|
+|числовых|2 |Необходим числовой пароль.|
 
 
 
