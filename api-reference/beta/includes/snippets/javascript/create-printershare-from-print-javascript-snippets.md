@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a7f3d018d202d86f28d84d03b6c303ba227f2154
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: b28d293e44dcabdc0c7e6816c18b4783b8090afe
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948234"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44216940"
 ---
 ```javascript
 
@@ -20,7 +20,7 @@ const printerShare = {
   printer@odata.bind: "https://graph.microsoft.com/beta/print/printers/{id}"
 };
 
-let res = await client.api('/print/printerShares')
+let res = await client.api('/print/shares')
     .version('beta')
     .post(printerShare);
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8f4e7ce70d8374d1c04cb6d69feaf33b69b5e954
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 3d73fb4066b04bf60b854ea03e9eed43dd2bf003
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43807091"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44216779"
 ---
 # <a name="create-alloweduser"></a>Создание Алловедусер
 
@@ -34,7 +34,7 @@ ms.locfileid: "43807091"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /print/printerShares/{id}/allowedUsers/$ref
+POST /print/shares/{id}/allowedUsers/$ref
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
@@ -42,8 +42,8 @@ POST /print/printerShares/{id}/allowedUsers/$ref
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса добавьте ссылку на объект пользователя, используя `@odata.id` формат, как показано в следующем примере.
+## <a name="request-body"></a>Текст запроса
+В теле запроса добавьте ссылку на объект пользователя, используя `@odata.id` Формат, как показано в следующем примере.
 
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `201 Created`.
@@ -52,12 +52,14 @@ POST /print/printerShares/{id}/allowedUsers/$ref
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_alloweduser_from_printers"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/print/printerShares/{id}/allowedUsers/$ref
+POST https://graph.microsoft.com/beta/print/shares/{id}/allowedUsers/$ref
 Content-type: application/json
 Content-length: 66
 
@@ -65,6 +67,20 @@ Content-length: 66
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-alloweduser-from-printers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-alloweduser-from-printers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-alloweduser-from-printers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 В теле запроса добавьте ссылку на объект пользователя, включив URI Microsoft Graph пользователя в `@odata.id` поле тела JSON.
 
 ### <a name="response"></a>Ответ

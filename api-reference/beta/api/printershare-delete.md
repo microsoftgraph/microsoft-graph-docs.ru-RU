@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 78d81fe559d40f6d1244c4ea1c281d48a4337cde
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 0f890a5311321a100d32419dfaa9515c714c6030
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947701"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44216919"
 ---
 # <a name="delete-printershare"></a>Удаление Принтершаре
 
@@ -34,7 +34,7 @@ ms.locfileid: "42947701"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /print/printerShares/{id}
+DELETE /print/shares/{id}
 DELETE /print/printers/{id}/share
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -42,7 +42,7 @@ DELETE /print/printers/{id}/share
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -58,7 +58,7 @@ DELETE /print/printers/{id}/share
   "name": "delete_printershare"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/printerShares/{id}
+DELETE https://graph.microsoft.com/beta/print/shares/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-printershare-csharp-snippets.md)]

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7ce074d9081f7b795007590c443afb2552b404fd
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: befd85b96c6c1df3e4ac957a19cb6b92126d1bcc
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947666"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44216884"
 ---
 # <a name="get-printershare"></a>Получение Принтершаре
 
@@ -34,7 +34,7 @@ ms.locfileid: "42947666"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/printerShares/{id}
+GET /print/shares/{id}
 GET /print/printers/{id}/share
 ```
 
@@ -42,14 +42,14 @@ GET /print/printers/{id}/share
 Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
 ### <a name="exceptions"></a>Исключения
-* `$count` Оператор не поддерживается.
+* `$count`Оператор не поддерживается.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [принтершаре](../resources/printershare.md) в тексте отклика.
@@ -63,7 +63,7 @@ GET /print/printers/{id}/share
   "name": "get_printershare"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/printerShares/{id}
+GET https://graph.microsoft.com/beta/print/shares/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printershare-csharp-snippets.md)]
@@ -93,7 +93,7 @@ Content-type: application/json
 Content-length: 225
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printerShares/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
   "id": "d837c17b-3296-4384-a053-828d56e10f50",
   "name": "ShareName",
   "createdDateTime": "2020-02-04T00:00:00.0000000Z"

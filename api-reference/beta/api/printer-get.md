@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8d825808bc7f6af0101c0cd966759f861ee77cef
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: ae3a930153cd919fb21e54fade8e9b11fa6a1c70
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062122"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44216926"
 ---
 # <a name="get-printer"></a>Получение принтера
 
@@ -35,7 +35,7 @@ ms.locfileid: "43062122"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/printers/{id}
-GET /print/printerShares/{id}/printer
+GET /print/shares/{id}/printer
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -46,7 +46,7 @@ GET /print/printerShares/{id}/printer
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Printer](../resources/printer.md) в тексте отклика.

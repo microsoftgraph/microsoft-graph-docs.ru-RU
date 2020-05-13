@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 3ef5c05be520bb407f17d0af14bbd4355e736c62
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: b0af3f7443b77920804f5868fe9ecc3f8b4cec41
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896101"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44217089"
 ---
 # <a name="print-resource-type"></a>Тип ресурса Print
 
@@ -25,9 +25,9 @@ ms.locfileid: "42896101"
 |:-------------|:------------|:------------|
 | [Список соединителей](../api/print-list-connectors.md) | Коллекция [принтконнектор](printconnector.md) | Получение списка соединителей печати. |
 | [Список принтеров](../api/print-list-printers.md) | Коллекция [принтеров](printer.md) | Получение списка принтеров. |
-| [Список Принтершарес](../api/print-list-printershares.md) | Коллекция [принтершаре](printershare.md) | Получение списка общих принтеров. |
+| [Список общих папок](../api/print-list-shares.md) | Коллекция [принтершаре](printershare.md) | Получение списка общих принтеров. |
 | [Список служб](../api/print-list-services.md) | Коллекция [принтсервице](printservice.md) | Получение списка служб. |
-| [Создание Принтершаре](../api/print-post-printershares.md) | [принтершаре](printershare.md) | Создайте новый общий ресурс для принтера, отправив его в коллекцию **принтершарес** . |
+| [Создание Принтершаре](../api/print-post-shares.md) | [принтершаре](printershare.md) | Создайте новый общий ресурс для принтера, отправив его в коллекцию **shares** . |
 | [Обновление параметров](../api/print-update-settings.md) |  [принтсеттингс](printsettings.md) | Обновляет параметры на уровне клиента для универсальной службы печати. |
 
 ## <a name="properties"></a>Свойства
@@ -40,7 +40,7 @@ ms.locfileid: "42896101"
 |:-------------|:------------|:------------|
 |служб|Коллекция [принтсервице](printservice.md)|Список доступных конечных точек универсальной службы печати.|
 |типографи|Коллекция [принтеров](printer.md)|Список принтеров, зарегистрированных в клиенте.|
-|принтершарес|Коллекция коллекции [принтершаре](printershare.md)|Список общих принтеров, зарегистрированных в клиенте.|
+|shares|Коллекция [принтершаре](printershare.md)|Список общих принтеров, зарегистрированных в клиенте.|
 
 ## <a name="json-representation"></a>Представление JSON
 
