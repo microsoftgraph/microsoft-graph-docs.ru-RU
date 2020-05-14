@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4252147e23f0c71d4e7acd04976ca73b457a78ba
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 2de8dec1048aec0353a5bcc4dc0abc69f659df4a
+ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991777"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44226913"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>Получение unifiedRoleAssignmentMultiple
 
@@ -47,7 +47,7 @@ GET /roleManagement/deviceManagement/roleAssignments/{id}
 |:----- |:----------- |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -113,11 +113,80 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>Пример 2: получение Ролеассигнментмултипле с областью действия в каталоге с`$expand`
+### <a name="example-2-get-a-roleassignmentmultiple-in-intune-assigned-to-a-group"></a>Пример 2: получение Ролеассигнментмултипле в Intune, назначенной группе
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса с параметром `$expand` Query.
+Ниже приведен пример запроса.
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedroleassignmentmultiple"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignments?$filter = principalIds/any(x:x eq '564ae70c-73d9-476b-820b-fb61eb7384b9')
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignmentmultiple-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignmentmultiple-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/deviceManagement/roleAssignments",
+    "@odata.count": 7,
+    "value": [
+        {
+            "id": "893fc648-73fc-482b-b964-ddd1cabf0db4",
+            "condition": null,
+            "displayName": "Assign Contoso_App_Admin to School Admin",
+            "description": "test",
+            "roleDefinitionId": "2f9f4f7e-2d13-427b-adf2-361a1eef7ae8",
+            "principalIds": [
+                "564ae70c-73d9-476b-820b-fb61eb7384b9"
+            ],
+            "directoryScopeIds": [],
+            "appScopeIds": [
+                "0",
+                "AllLicensedUsers"
+            ]
+        }
+    ]
+}
+```
+
+### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>Пример 3: получение Ролеассигнментмултипле с областью действия в каталоге с`$expand`
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса с `$expand` параметром Query.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
