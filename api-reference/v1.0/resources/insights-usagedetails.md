@@ -1,22 +1,23 @@
 ---
 title: Тип ресурса Усажедетаилс
-description: Сложный тип, содержащий свойства используемых элементов. Сведения о том, когда ресурс был последний раз обращался (просматривался) и изменен (изменен) пользователем.
+description: Сложный тип, содержащий свойства используемых элементов. Сведения о том, когда ресурс был последний раз обращался (просматривался) или изменился (редактируется) пользователем.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 66ac63b17e97e5754779c5d5ccc786cd8ba4a265
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d73af15dc3578e9e6c0a568eebfd42480f7065e2
+ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531273"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44227026"
 ---
 # <a name="usagedetails-resource-type"></a>Тип ресурса Усажедетаилс
 
 Пространство имен: microsoft.graph
 
-Сложный тип, содержащий свойства [используемых](insights-used.md) элементов. Сведения о том, когда ресурс был последний раз обращался (просматривался) и изменен (изменен) пользователем.
+Сложный тип, содержащий свойства [используемых](insights-used.md) элементов. Сведения о том, когда ресурс был последний раз обращался (просматривался) или изменился (редактируется) пользователем.
+
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: adb4b5a802987e6b3ec21cbe1a1f9766faad9962
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: ba2b21714549c6fed05c63801a2410d2162ebed3
+ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006337"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44227012"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -143,7 +143,7 @@ ms.locfileid: "44006337"
 |proxyAddresses|Коллекция String| Адреса электронной почты для группы, ведущие в один почтовый ящик группы. Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для выражений фильтра в случае многозначных свойств требуется оператор **any**. <br><br>Возвращается по умолчанию. Только для чтения. Значение null не допускается. Поддерживает параметр $filter. |
 |renewedDateTime|DateTimeOffset| Метка времени последнего обновления группы. Не может изменяться непосредственно. Обновляется только при выполнении [действия обновления](../api/grouplifecyclepolicy-renewgroup.md). Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается по умолчанию. Только для чтения.|
 |resourceBehaviorOptions|Коллекция объектов string|Определяет поведение группы, которое может быть задано для группы Office 365 во время ее создания. Это можно сделать только в рамках операции создания (POST). Возможные значения: `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`.  Дополнительные сведения см. далее в этом разделе.|
-|resourceProvisioningOptions|Коллекция объектов string|Определяет ресурсы группы, которые были подготовлены в рамках создания групп Office 365 и обычно не являются частью процесса создания группы по умолчанию. Возможное значение: `Teams`. Дополнительные сведения см. далее в этом разделе.|
+|resourceProvisioningOptions|Коллекция объектов string|Определяет ресурсы группы, которые были подготовлены в рамках создания групп Office 365 и обычно не являются частью процесса создания группы по умолчанию. Возможное значение: `Team`. Дополнительные сведения см. далее в этом разделе.|
 |securityEnabled|Логический|Указывает, является ли эта группа группой безопасности. <br><br>Возвращается по умолчанию. Поддерживает `$filter`.|
 |securityIdentifier|String|Идентификатор безопасности группы, используемый в сценариях Windows. <br><br>Возвращается по умолчанию.|
 |theme|String|Указывает цветовую тему группы Office 365. Возможные значения: `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` или `Red`. <br><br>Возвращается по умолчанию. |

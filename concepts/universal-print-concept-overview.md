@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 84a8a97315bb8ca62afb22f76db06fa67fb4e307
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: d3df3a36ac9994b3ce4560b995a52288dd197e34
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557866"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44215656"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Обзор API облачной среды универсальной печати
 
@@ -56,7 +56,7 @@ ms.locfileid: "43557866"
 
 ### <a name="seamlessly-replace-or-update-printer-hardware"></a>Комфорт при замене и обновлении оборудования для печати
 
-Принтеры не видны пользователям до момента, когда они получают к ним [доступ](/graph/api/print-post-printershares?view=graph-rest-beta). Это позволяет администраторам детально контролировать доступность определенного оборудования для печати в определенный момент времени.
+Принтеры не видны пользователям до момента, когда они получают к ним [доступ](/graph/api/print-post-shares?view=graph-rest-beta). Это позволяет администраторам детально контролировать доступность определенного оборудования для печати в определенный момент времени.
 
 При общем доступе к принтеру создается ресурс [printerShare](/graph/api/resources/printershare?view=graph-rest-beta), который в любой момент можно обновить для перевода на другой принтер, что упрощает замену неисправного оборудования для печати и отправку принтеров в текущий ремонт.
 
