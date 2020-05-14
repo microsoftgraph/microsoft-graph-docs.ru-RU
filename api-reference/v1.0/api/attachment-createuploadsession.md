@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 006a0ac5428aeca18549f8f66863d7312c63750d
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: ffd44a8927f6c93ea7b8886b770f8e391c41f613
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991864"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44052409"
 ---
 # <a name="attachment-createuploadsession"></a>вложение: createUploadSession
 
@@ -18,7 +18,7 @@ ms.locfileid: "43991864"
 
 Создайте сеанс отправки, позволяющий приложению итеративно отправлять диапазоны файлов, чтобы прикрепить файл к указанному элементу Outlook. Элемент может быть [сообщением](../resources/message.md) или [событием](../resources/event.md).
 
-Используйте этот способ, чтобы вложить файл, если размер файла находится в пределах от 3 МБ до 150 МБ. Чтобы присоединить файл размером менее 3 МБ, выполните `POST` операцию для свойства навигации **вложений** элемента Outlook; сведения о том, как сделать это [для сообщения](message-post-attachments.md) или [события](event-post-attachments.md). 
+Используйте этот способ, чтобы вложить файл, если размер файла находится в пределах от 3 МБ до 150 МБ. Чтобы присоединить файл размером менее 3 МБ, выполните `POST` операцию над свойством навигации **вложений** элемента Outlook, чтобы узнать, как это сделать [для сообщения](message-post-attachments.md) или [для события](event-post-attachments.md). 
 
 В качестве части ответа это действие возвращает URL-адрес отправки, который можно использовать в последующих последовательных `PUT` запросах. Заголовки запросов для каждой `PUT` операции позволяют указать точный диапазон байтов для отправки. Это позволяет возобновить передачу в случае, если сетевое подключение будет разорвано во время отправки. 
 
@@ -45,7 +45,7 @@ ms.locfileid: "43991864"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Calendars. ReadWrite, mail. ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Calendars. ReadWrite, mail. ReadWrite |
-| Application                            | Calendars. ReadWrite, mail. ReadWrite |
+| Для приложений                            | Calendars. ReadWrite, mail. ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -67,7 +67,7 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -76,17 +76,17 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|аттачментитем|[аттачментитем](../resources/attachmentitem.md)|Представляет атрибуты элемента, который требуется отправить и вложить. Как минимум, укажите тип вложения (`file`), имя и размер файла.|
+|аттачментитем|[аттачментитем](../resources/attachmentitem.md)|Представляет атрибуты элемента, который требуется отправить и вложить. Как минимум, укажите тип вложения ( `file` ), имя и размер файла.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [uploadSession](../resources/uploadsession.md) в тексте отклика.
 
 >**Примечание.** 
 >
->Свойство **адрес uploadurl** , возвращаемое как часть объекта Response **uploadSession** , является непрозрачным URL- `PUT` адресом для последующих запросов на отправку диапазонов байтов файла. Он содержит соответствующий маркер проверки подлинности `PUT` для последующих запросов, срок действия которых истечет через **expirationDateTime**. Не настраивайте этот URL-адрес.
+>Свойство **адрес uploadurl** , возвращаемое как часть объекта Response **uploadSession** , является непрозрачным URL-адресом для последующих `PUT` запросов на отправку диапазонов байтов файла. Он содержит соответствующий маркер проверки подлинности для последующих `PUT` запросов, срок действия которых истечет через **expirationDateTime**. Не настраивайте этот URL-адрес.
 >
->Свойство **nextExpectedRanges** указывает местоположение байта следующего файла, из которого необходимо выполнить загрузку, например `"NextExpectedRanges":["2097152"]`. Байты файла необходимо отправлять по порядку.
+>Свойство **nextExpectedRanges** указывает местоположение байта следующего файла, из которого необходимо выполнить загрузку, например `"NextExpectedRanges":["2097152"]` . Байты файла необходимо отправлять по порядку.
 
 <!-- The **nextExpectedRanges** property specifies one or more ranges of bytes that the server is still missing for the file. These ranges are zero-indexed and of the format `{start}-{end}`, unless if the server misses the remainder of the bytes from the start of that range, in which case the format is simply `{start}`.  -->
 
@@ -97,6 +97,8 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "attachment_createuploadsession",
@@ -115,6 +117,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/attachment-createuploadsession-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/attachment-createuploadsession-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/attachment-createuploadsession-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

@@ -2,15 +2,15 @@
 title: 'message: createReplyAll'
 description: Создание черновика ответа отправителю и всем получателям указанного сообщения. После этого можно обновить черновик, чтобы добавить содержимое ответа в **текст** или изменить другие свойства сообщения, либо просто отправить черновик.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 53ccfac6ea9f2805c34a2c2367ffa41d3c1d18b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 999a4582a67813f3a16590145529508dd5fc42e7
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511553"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43361848"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 

@@ -1,16 +1,16 @@
 ---
 title: Создание правила
 description: 'Создает объект messageRule, определяя набор условий и действий. '
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1f20f341fd12b13aed023aca3a3947b0fdbf0648
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9525480d123aa2689ed2ae05b3766d35aa4aec53
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511609"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43361972"
 ---
 # <a name="create-rule"></a>Создание правила
 
@@ -48,10 +48,10 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 
 | Имя       | Тип|Описание|
 |:--------|:-------|:----------|
-|actions|[messageRuleActions](../resources/messageruleactions.md)|Действия, применимые к сообщению при выполнении соответствующих условий (если таковые имеются). Обязательный элемент.|
-|conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Условия, выполнение которых активирует соответствующие действия для указанного правила. Необязательный.|
-|displayName| Строка  | Отображаемое имя правила. Обязательный элемент.|
-|exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Представляет условия исключения для правила. Необязательный. |
+|actions|[messageRuleActions](../resources/messageruleactions.md)|Действия, применимые к сообщению при выполнении соответствующих условий (если таковые имеются). Обязательный.|
+|conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Условия, выполнение которых активирует соответствующие действия для указанного правила. Необязательное свойство.|
+|displayName| String  | Отображаемое имя правила. Обязательный.|
+|exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Представляет условия исключения для правила. Необязательное свойство. |
 |isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. Необязательное свойство. |
 |sequence| Int32 | Определяет последовательность выполнения правила среди прочих правил. Обязательный.|
 

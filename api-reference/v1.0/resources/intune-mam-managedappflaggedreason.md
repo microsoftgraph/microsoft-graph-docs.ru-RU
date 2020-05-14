@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
 ms.openlocfilehash: ff149521b5f6f7ad88170c6290ca652e711c2a4e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43406696"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>тип перечисления Манажедаппфлагжедреасон
@@ -24,7 +24,7 @@ ms.locfileid: "43406696"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Нет ошибок.|
-|рутеддевице|1,1|Регистрация приложения выполняется на корневом/незаблокированном устройстве.|
+|рутеддевице|1 |Регистрация приложения выполняется на корневом/незаблокированном устройстве.|
 
 
 

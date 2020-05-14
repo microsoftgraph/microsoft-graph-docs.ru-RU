@@ -5,12 +5,12 @@ title: 'driveItem: checkin'
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6a48578b3b823f881b5f34e5d18a169f595d038d
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 7cf999dc338c4a16a4040e8b48b4824c6da09e94
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227895"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43511135"
 ---
 # <a name="driveitem-checkin"></a>driveItem: checkin
 
@@ -47,18 +47,20 @@ POST /users/{userId}/drive/items/{itemId}/checkin
 
 |   Имя    | Значение  |                                                Описание                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
-| checkInAs | string | Необязательно. Состояние документа после завершения операции возврата. Может иметь значение `published` либо значение может быть не указано. |
+| checkInAs | string | Необязательный параметр. Состояние документа после завершения операции возврата. Может иметь значение `published` либо значение может быть не указано. |
 | comment   | string | Комментарий к возврату, сопоставленный с версией.                                                   |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха вызов API возвращает `204 No content`.
+В случае успеха вызов API возвращает `204 No content` .
 
 ## <a name="example"></a>Пример
 
 В этом примере показано, как возвратить файл, идентифицируемый по `{item-id}`.
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "checkin-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
@@ -69,6 +71,24 @@ Content-Type: application/json
   "comment": "Updating the latest guidelines"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/checkin-item-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/checkin-item-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/checkin-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/checkin-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

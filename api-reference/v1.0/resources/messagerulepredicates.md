@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса messageRulePredicates
 description: Представляет набор условий и исключений, доступных для правила.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d40763e53aef06209818476314bca76ad2ba1293
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 98481d80f76d1dffd5c15faf7315aaf2c8dfb8b8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534236"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43452612"
 ---
 # <a name="messagerulepredicates-resource-type"></a>Тип ресурса messageRulePredicates
 
@@ -40,7 +40,7 @@ ms.locfileid: "42534236"
 | isReadReceipt | Boolean | Указывает, должно ли входящее сообщение быть уведомлением о прочтении, чтобы применялось условие или исключение. |
 | isSigned | Boolean | Указывает, должно ли входящее сообщение иметь подпись S/MIME, чтобы применялось условие или исключение. |
 | isVoicemail | Boolean | Указывает, должно ли входящее сообщение быть сообщением голосовой почты, чтобы к нему применялось условие или исключение. |
-| messageActionFlag | messageActionFlag  | Представляет значение флага для действия, которое должно присутствовать во входящем сообщении, чтобы к нему применялось условие или исключение. `any`Возможные значения:, `call`, `doNotForward`, `followUp`, `fyi`, `forward`, `noResponseNecessary`, `read`, `reply`, `replyToAll`,. `review` |
+| messageActionFlag | messageActionFlag  | Представляет значение флага для действия, которое должно присутствовать во входящем сообщении, чтобы к нему применялось условие или исключение. Возможные значения: `any` , `call` ,,, `doNotForward` `followUp` `fyi` , `forward` , `noResponseNecessary` ,,, `read` `reply` `replyToAll` , `review` . |
 | notSentToMe | Boolean | Указывает, должно ли условие или исключение применяться только в том случае, если владелец почтового ящика не является получателем входящего сообщения. |
 | recipientContains | Collection(String) | Представляет строки, которые должны присутствовать в свойстве **toRecipients** или **ccRecipients** входящего сообщения, чтобы к нему применялось условие или исключение. |
 | senderContains | Collection(String) | Представляет строки, которые должны присутствовать в свойстве **from** входящего сообщения, чтобы к нему применялось условие или исключение. |

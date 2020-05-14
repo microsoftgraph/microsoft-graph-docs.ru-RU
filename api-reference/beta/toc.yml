@@ -312,7 +312,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: Отправка почты
                   href: api/user-sendmail.md
-            - name: Примечания
+            - name: Notes
               href: resources/onenote.md
               items:
                 - name: Создание записной книжки
@@ -354,9 +354,10 @@
                       href: api/outlookuser-list-mastercategories.md
                 - name: Преобразование идентификаторов
                   href: api/user-translateexchangeids.md
-            - name: Задачи Outlook
-              href: resources/outlooktask.md
+            - name: Задачи Outlook (Предварительная версия)
               items:
+                - name: Задачи Outlook
+                  href: resources/outlooktask.md
                 - name: Создание задач
                   href: api/outlookuser-post-tasks.md
                 - name: Перечисление задач
@@ -387,9 +388,10 @@
                   href: api/planneruser-list-tasks.md
                 - name: Обновление параметров
                   href: api/planneruser-update.md
-            - name: Профиль
-              href: resources/profile.md
+            - name: Профиль (предварительная версия)
               items:
+                - name: Профиль
+                  href: resources/profile.md
                 - name: Получение профиля пользователя
                   href: api/profile-get.md
                 - name: Удаление профиля пользователя
@@ -799,7 +801,7 @@
                   href: api/event-delta.md
                 - name: Представление напоминаний
                   href: api/user-reminderview.md
-            - name: Category
+            - name: Категория
               href: resources/outlookcategory.md
               items:
                 - name: Перечисление категорий
@@ -1126,9 +1128,9 @@
                   href: resources/printershare.md
                   items:
                     - name: Список
-                      href: api/print-list-printershares.md
+                      href: api/print-list-shares.md
                     - name: Создание
-                      href: api/print-post-printershares.md
+                      href: api/print-post-shares.md
                     - name: Получение
                       href: api/printershare-get.md
                     - name: Update
@@ -4495,7 +4497,7 @@
                     - name: Конфигурация обновления iOS
                       href: resources/intune-deviceconfig-iosupdateconfiguration.md
                       items:
-                        - name: Список
+                        - name: Перечисление
                           href: api/intune-deviceconfig-iosupdateconfiguration-list.md
                         - name: Получение
                           href: api/intune-deviceconfig-iosupdateconfiguration-get.md
@@ -4508,7 +4510,7 @@
                     - name: Тип ресурса iosUpdateDeviceStatus
                       href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                       items:
-                        - name: Перечисление
+                        - name: Список
                           href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                         - name: Получение
                           href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -6406,7 +6408,7 @@
                     - name: Категория параметра управления устройствами
                       href: resources/intune-deviceintent-devicemanagementsettingcategory.md
                       items:
-                        - name: Список
+                        - name: Перечисление
                           href: api/intune-deviceintent-devicemanagementsettingcategory-list.md
                         - name: Получение
                           href: api/intune-deviceintent-devicemanagementsettingcategory-get.md
@@ -6423,7 +6425,7 @@
                     - name: Определение параметра управления устройствами
                       href: resources/intune-deviceintent-devicemanagementsettingdefinition.md
                       items:
-                        - name: Перечисление
+                        - name: Список
                           href: api/intune-deviceintent-devicemanagementsettingdefinition-list.md
                         - name: Получение
                           href: api/intune-deviceintent-devicemanagementsettingdefinition-get.md
@@ -8350,7 +8352,7 @@
                   href: api/educationassignment-put-rubric.md
                 - name: Удаление Rubric из назначения
                   href: api/educationassignment-delete-rubric.md
-            - name: Category
+            - name: Категория
               href: resources/educationcategory.md
               items:
                 - name: Создание категории
@@ -9431,7 +9433,7 @@
                 - name: Опубликованный ресурс
                   href: resources/publishedresource.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/publishedresource-list.md
                     - name: Получение
                       href: api/publishedresource-get.md
@@ -10054,7 +10056,7 @@
                   href: api/onenote-post-notebooks.md
                 - name: Вывод списка разделов
                   href: api/onenote-list-sections.md
-                - name: Список групп разделов
+                - name: Вывод списка групп разделов
                   href: api/onenote-list-sectiongroups.md
                 - name: Вывод списка страниц
                   href: api/onenote-list-pages.md
@@ -10153,8 +10155,9 @@
                 - name: Список людей
                   href: api/user-list-people.md
             - name: Профиль (предварительная версия)
-              href: resources/profile.md
               items:
+                - name: Профиль
+                  href: resources/profile.md
                 - name: Получение профиля пользователя
                   href: api/profile-get.md
                 - name: Удаление профиля пользователя

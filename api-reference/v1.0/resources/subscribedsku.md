@@ -2,15 +2,15 @@
 title: Тип ресурса subscribedSku
 description: Содержит сведения о SKU службы, на которую компания подписана.
 localization_priority: Normal
-author: davidmu1
+author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b7f1d532c88b3b289e0d337236843fada7c0dd2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb9933ddc93ca647bca1427d3401cb912662ab2c
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533613"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43384942"
 ---
 # <a name="subscribedsku-resource-type"></a>Тип ресурса subscribedSku
 
@@ -30,15 +30,15 @@ ms.locfileid: "42533613"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Тег|String| Например, User или Company. |
-|капабилитистатус|Строка|  Возможные значения: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
+|капабилитистатус|String|  Возможные значения: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
 |consumedUnits|Int32| Количество лицензий, которые были назначены. |
-|id|Строка| Уникальный идентификатор объекта sku, подписка на который выполнена. Key, не допускающая значение null. |
+|id|String| Уникальный идентификатор объекта sku, подписка на который выполнена. Key, не допускающая значение null. |
 |препаидунитс|[licenseUnitsDetail](licenseunitsdetail.md)| Сведения о количестве и состоянии предварительно оплаченных лицензий. |
 |сервицепланс|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, доступных в отношении SKU. Не допускает значение null |
 |skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. |
 |скупартнумбер|String| Артикул SKU, например: AAD_PREMIUM или RMSBASIC. Чтобы получить список коммерческих подписок, приобретенных в Организации, ознакомьтесь со статьей [List субскрибедскус](../api/subscribedsku-list.md).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

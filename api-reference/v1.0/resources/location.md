@@ -2,19 +2,19 @@
 title: Тип ресурса Location
 description: Представляет сведения о месте проведения события.
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 51c04110cf41a6934658c82d7436854adfc9c45f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3f1839bdb7bb06dc0df11020ef14e51cf53d2d5e
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447544"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43441483"
 ---
 # <a name="location-resource-type"></a>Тип ресурса Location
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Представляет сведения о месте проведения [мероприятия](event.md).
 
@@ -35,7 +35,7 @@ ms.locfileid: "42447544"
 | displayName  | String | Имя, связанное с расположением.                       |
 | locationEmailAddress | String | Необязательный электронный адрес для расположения.              |
 | locationUri | String | Необязательный URI, представляющий местоположение. |
-| locationType | locationType | Тип расположения. Возможные `default`значения:, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`,. `postalAddress` Только для чтения.|
+| locationType | locationType | Тип расположения. Возможные значения:,, `default` `conferenceRoom` ,, `homeAddress` `businessAddress` `geoCoordinates` , `streetAddress` , `hotel` , `restaurant` , `localBusiness` , `postalAddress` . Только для чтения.|
 | uniqueId | String | Только для внутреннего использования.|
 | uniqueIdType | локатионуникуеидтипе | Только для внутреннего использования. |
 

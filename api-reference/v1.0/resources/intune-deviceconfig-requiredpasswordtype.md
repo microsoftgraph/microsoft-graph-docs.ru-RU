@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
 ms.openlocfilehash: bbc454719d11df4e3c00cd62a35c940cacb61fbb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43472685"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>тип перечисления Рекуиредпассвордтипе
@@ -24,8 +24,8 @@ ms.locfileid: "43472685"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|цифрового|1,1|Необходимо указать буквенно-цифровой пароль.|
-|числовых|2|Необходим числовой пароль.|
+|цифрового|1 |Необходимо указать буквенно-цифровой пароль.|
+|числовых|2 |Необходим числовой пароль.|
 
 
 
