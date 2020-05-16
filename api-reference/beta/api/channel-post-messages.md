@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 02d91e5880e1eb19b7da18c36177f080c9154083
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 155efb7680b2e50e4ef3a726c93dd62b5d7562d4
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440131"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272649"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>Создание объекта chatMessage в канале
 
@@ -51,7 +51,7 @@ POST /teams/{id}/channels/{id}/messages
 В тексте запроса добавьте представление объекта [Message](../resources/chatmessage.md) в формате JSON. Только свойство Body является обязательным, другие свойства являются необязательными.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [chatMessage](../resources/chatmessage.md) в тексте отклика.
 
@@ -178,7 +178,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 <!-- {
@@ -274,7 +274,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 <!-- {
@@ -330,9 +330,96 @@ Content-length: 160
 }
 ```
 
+### <a name="example-4-file-attachments"></a>Пример 4: вложенные файлы
+
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+
+>**Примечание:** Файл уже должен находиться в SharePoint. Чтобы найти свойства файла, получите **driveItem** для файла. Например,/дривес/{ИД}/итемс/{ИД}. Идентификатор вложения — это идентификатор GUID в элементе **ETag** объекта **DriveItem**, вложение **ContentURL** — это **webUrl** папки **driveItem**плюс имя **driveItem**, а имя вложения — имя **driveItem**.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_chatmessage_from_channel"
+}-->
+```http
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+Content-type: application/json
+
+{
+    "body": {
+        "contentType": "html",
+        "content": "Here's the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>"
+    },
+    "attachments": [
+        {
+            "id": "153fa47d-18c9-4179-be08-9879815a9f90",
+            "contentType": "reference",
+            "contentUrl": "https://m365x987948.sharepoint.com/sites/test/Shared%20Documents/General/test%20doc.docx",
+            "name": "Budget.docx"
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('13a99602-a5d3-4fed-99d2-7dc3ffe3730d')/channels('19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2')/messages/$entity",
+    "id": "1589481435511",
+    "replyToId": null,
+    "etag": "1589481435511",
+    "messageType": "message",
+    "createdDateTime": "2020-05-14T18:37:15.511Z",
+    "lastModifiedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2/1589481435511?groupId=13a99602-a5d3-4fed-99d2-7dc3ffe3730d&tenantId=e5648b2b-1dea-445a-ab65-4f9326c2bd10&createdTime=1589481435511&parentMessageId=1589481435511",
+    "policyViolation": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "598efcd4-e549-402a-9602-0b50201faebe",
+            "displayName": "MOD Administrator",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "Here's the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>"
+    },
+    "attachments": [
+        {
+            "id": "153fa47d-18c9-4179-be08-9879815a9f90",
+            "contentType": "reference",
+            "contentUrl": "https://m365x987948.sharepoint.com/sites/test/Shared%20Documents/General/test%20doc.docx",
+            "content": null,
+            "name": "Budget.docx",
+            "thumbnailUrl": null
+        }
+    ],
+    "mentions": [],
+    "reactions": []
+}
+```
+
 ## <a name="see-also"></a>См. также
 
-- [Справочник по карточкам](/microsoftteams/platform/concepts/cards/cards-reference)
+- [Ссылки на карточки](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0cb40f4d9815ed0c95f319fd5f112dfd5802f10a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e82ff5959e47ac6ec0832e31f6228282a14e671f
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384972"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272733"
 ---
 # <a name="useridentity-type"></a>Тип userIdentity
 
@@ -25,10 +25,11 @@ ms.locfileid: "43384972"
 
 ## <a name="methods"></a>Methods
 
-Нет.  При [создании акцессревиев](../api/accessreview-create.md)необходимо включить в текст запроса объекты этого типа.
+Отсутствуют.  При [создании акцессревиев](../api/accessreview-create.md)необходимо включить в текст запроса объекты этого типа.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
+
+| Свойство | Тип | Описание|
 |:---------------|:--------|:----------|
 | `displayName` | `String` | Отображаемое имя удостоверения. Обратите внимание, что эта возможность не всегда доступна или не актуальна.    |
 | `id`          | `String` | Уникальный идентификатор удостоверения.  |
@@ -45,11 +46,11 @@ ms.locfileid: "43384972"
 
 ## <a name="see-also"></a>См. также
 
-| Метод           | Возвращаемый тип    |Описание|
+| Method | Описание возвращаемого типа|
 |:---------------|:--------|:----------|
-|[Получение рецензентов Акцессревиев](../api/accessreview-listreviewers.md) |       Коллекция [userIdentity](useridentity.md)| Получение рецензентов объекта Акцессревиев. |
-|[Добавление рецензента Акцессревиев](../api/accessreview-addreviewer.md) |      Нет.   |   Добавьте проверяющего в объект Акцессревиев. |
-|[Удаление рецензента Акцессревиев](../api/accessreview-removereviewer.md) | Нет.  |   Удаление проверяющего из Акцессревиев. |
+|[Получение рецензентов Акцессревиев](../api/accessreview-listreviewers.md) | Коллекция [userIdentity](useridentity.md)| Получение рецензентов объекта Акцессревиев. |
+|[Добавление рецензента Акцессревиев](../api/accessreview-addreviewer.md) | Отсутствуют. | Добавьте проверяющего в объект Акцессревиев. |
+|[Удаление рецензента Акцессревиев](../api/accessreview-removereviewer.md) | Отсутствуют. |Удаление проверяющего из Акцессревиев. |
 
 ## <a name="json-representation"></a>Представление JSON
 

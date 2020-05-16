@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5443f88005f46a07353d6d24ed07bea11df7b30b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a5f59c16e19fae5da17f8d43efc1f2ba63f00d4
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507721"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272691"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -51,7 +51,7 @@ ms.locfileid: "42507721"
 |replyToId| string | Только для чтения. Идентификатор родительского сообщения чата или сообщения корневого сеанса беседы в цепочке. (Применяется только к сообщениям чата в каналах без чатов) |
 |from|[identitySet](identityset.md)| Только для чтения. Сведения об отправителе сообщения чата.|
 |etag| string | Только для чтения. Номер версии сообщения чата. |
-|messageType|чатмессажетипе|Тип сообщения чата. Возможные значения: `message`.|
+|messageType|string|Тип сообщения чата. Возможные значения: `message` .|
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения чата.|
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени создания или изменения сообщения чата, в том числе когда выполняется ответ (если он является корневым сообщением в канале) или добавляется или удаляется реакция. |
 |deletedDateTime|dateTimeOffset|Только для чтения. Временная метка, в которой сообщение чата удалено, или значение null, если оно не удалено. |
@@ -60,8 +60,8 @@ ms.locfileid: "42507721"
 |summary|string| Сводный текст сообщения чата, которое можно использовать для push-уведомлений и сводных представлений, а также для обратного просмотра. Применяется только к сообщениям разговора по каналу, а не к сообщениям в чате. |
 |attachments|Коллекция [chatMessageAttachment](chatmessageattachment.md) |Вложенные файлы. В настоящее время вложения доступны только для чтения. Отправка вложений не поддерживается. |
 |mentions|Коллекция [chatMessageMention](chatmessagemention.md)| Список сущностей, упоминаемых в сообщении чата. В настоящее время поддерживаются значения user, bot, team и channel.|
-|importance| чатмессажеимпортанце | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
-|reactions| Коллекция [chatMessageReaction](chatmessagereaction.md) | Реакции на это сообщение чата (например, например).|
+|importance|string | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
+|reactions| Коллекция [chatMessageReaction](./chatmessagereaction.md) | Реакции на это сообщение чата (например, например).|
 |языковые стандарты|string|Язык сообщения чата, заданное клиентом.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -101,7 +101,7 @@ ms.locfileid: "42507721"
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
   "policyViolation": "string",
-  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
+  "reactions":  "string",
   "locale": "string",
   "deleted": true
 }

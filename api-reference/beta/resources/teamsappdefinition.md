@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a3c40433a1be214141dff8eda99142a96be0a003
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b8dd3e7b3e50ed5642aeb23076705f4995e27759
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519920"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272712"
 ---
 # <a name="teamsappdefinition-resource-type"></a>Тип ресурса Теамсаппдефинитион
 
@@ -26,6 +26,7 @@ ms.locfileid: "42519920"
 |:------------------- |:-------- |:----------- |
 | id                  | string   | Уникальный идентификатор (а не идентификаторы Teams). |
 | teamsAppId          | string   | Идентификатор из манифеста приложения Teams. |
+| азуреадаппид        | string   | WebApplicationInfo.id из манифеста приложения Teams. |
 | displayName         | string   | Имя приложения, предоставленное разработчиком приложения. |
 | version             | string   | Номер версии приложения. |
 
@@ -46,7 +47,7 @@ ms.locfileid: "42519920"
 }
 ```
 
-# <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также
 
 - [teamsApp](teamsapp.md)
 - [teamsAppInstallation](teamsappinstallation.md)
