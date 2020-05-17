@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Получение маркеров аутентификации
     items:
-      - name: Обзор
+      - name: Общие сведения
         href: /graph/auth/index?context=graph/api/1.0
       - name: Основы
         href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -22,7 +22,7 @@ items:
         href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
   - name: Использование API
     items:
-      - name: Обзор
+      - name: Общие сведения
         href: /graph/use-the-api?context=graph/api/1.0
       - name: Разбиение на страницы
         href: /graph/paging?context=graph/api/1.0
@@ -58,7 +58,7 @@ items:
       - name: Добавление пользовательских данных
         displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: /graph/extensibility-overview?context=graph/api/1.0
           - name: Использование открытых расширений (пример)
             href: /graph/extensibility-open-users?context=graph/api/1.0
@@ -72,7 +72,7 @@ items:
       - name: Azure AD Graph
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
           - name: Контрольный список для переноса приложений
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -167,11 +167,11 @@ items:
   - name: Справочник по версии 1.0
     expanded: true
     items:
-      - name: Обзор
+      - name: Общие сведения
         href: overview.md
       - name: Пользователи
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -374,7 +374,7 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Группы
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/groups-overview.md
           - name: Группа
             href: resources/group.md
@@ -870,7 +870,7 @@ items:
       - name: Устройства и приложения
         displayName: Intune
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/intune-graph-overview.md
           - name: Управление приложениями
             href: resources/intune-app-conceptual.md
@@ -3164,7 +3164,7 @@ items:
                     href: api/intune-tem-telecomexpensemanagementpartner-update.md
       - name: Образование
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/education-overview.md
           - name: Учебные заведения
             href: resources/educationschool.md
@@ -3232,7 +3232,7 @@ items:
       - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/onedrive.md
           - name: Диски
             href: resources/drive.md
@@ -3318,7 +3318,7 @@ items:
       - name: Удостоверения и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/azure-ad-overview.md
           - name: Приложение
             href: resources/application.md
@@ -3542,7 +3542,7 @@ items:
             items:
               - name: Оценка угроз
                 items:
-                  - name: Обзор
+                  - name: Общие сведения
                     href: resources/threatassessment-api-overview.md
                   - name: Запрос оценки угроз
                     href: resources/threatassessmentrequest.md
@@ -3672,7 +3672,7 @@ items:
       - name: Почта
         displayName: 'Outlook, Outlook mail'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/mail-api-overview.md
           - name: Сообщение
             href: resources/message.md
@@ -3927,7 +3927,7 @@ items:
                 href: api/resource-get.md
       - name: Люди и рабочая аналитика
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/social-overview.md
           - name: Люди
             items:
@@ -4266,7 +4266,7 @@ items:
       - name: Сайты и списки
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/sharepoint.md
           - name: Сайты
             href: resources/site.md
@@ -4312,7 +4312,7 @@ items:
       - name: Задачи и планы
         displayName: Planner
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/planner-overview.md
           - name: План
             href: resources/plannerplan.md
@@ -4470,6 +4470,17 @@ items:
                 href: api/channel-patch.md
               - name: Удаление канала
                 href: api/channel-delete.md
+              - name: Отправка сообщения
+                href: api/channel-post-messages.md
+              - name: Ответ на сообщение
+                href: api/channel-post-messagereply.md
+          - name: Сообщение чата
+            href: resources/chatmessage.md
+            items:
+              - name: Отправка сообщения
+                href: api/channel-post-messages.md
+              - name: Ответ на сообщение
+                href: api/channel-post-messagereply.md
           - name: Каталог приложений
             href: resources/teamsapp.md
             items:
