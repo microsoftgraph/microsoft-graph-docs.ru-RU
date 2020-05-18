@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 491352231980e841ebe215c9c0680dc1c672b36c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 243c3ea1e203ceaca4b31cb82dca77c873af7cb0
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507749"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272698"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -56,7 +56,7 @@ ms.locfileid: "42507749"
 
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
-|messages|Коллекция [chatMessage](chatmessage.md)|Коллекция всех сообщений в канале. Свойство навигации. Допускается значение null. В настоящее время этот API поддерживает чтение, но в конечном итоге будет также поддерживать написание сообщений.|
+|messages|Коллекция [chatMessage](chatmessage.md)|Коллекция всех сообщений в канале. Свойство навигации. Допускается значение null.|
 |tabs|Коллекция [teamsTab](../resources/teamstab.md)|Коллекция всех вкладок в канале. Свойство навигации.|
 |members|Коллекция [conversationMember](conversationmember.md)|Коллекция записей участников, сопоставленных с каналом.|
 |filesFolder|[driveItem](driveitem.md)|Метаданные для расположения, в котором хранятся файлы канала.|

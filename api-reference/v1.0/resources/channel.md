@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 4117190df40eb3bcf5a837fdad298cefe5121793
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f995fa1cb725ae5c0764f349180e7f757a9f423e
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531932"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272656"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -35,7 +35,8 @@ ms.locfileid: "42531932"
 |[Обновление вкладки](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Обновление свойств вкладки.|
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
+
+| Свойство   | Тип | Описание|
 |:---------------|:--------|:----------|
 |description|String|Необязательное текстовое описание канала.|
 |displayName|String|Имя канала, отображаемое для пользователя в Microsoft Teams.|
@@ -44,9 +45,12 @@ ms.locfileid: "42531932"
 |webUrl|String|Гиперссылка, ведущая к каналу в Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по каналу в Microsoft Teams и выборе пункта "Получить ссылку на канал". Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
-| Связь | Тип   |Описание|
+
+| Связь | Тип | Описание|
 |:---------------|:--------|:----------|
+|messages|Коллекция [chatMessage](./chatmessage.md)|Коллекция всех сообщений в канале. Свойство навигации. Допускается значение null.|
 |tabs|Коллекция [teamsTab](../resources/teamstab.md)|Коллекция всех вкладок в канале. Свойство навигации.|
+|filesFolder|[driveItem](driveitem.md)|Метаданные для расположения, в котором хранятся файлы канала.|
 
 
 ## <a name="json-representation"></a>Представление JSON
