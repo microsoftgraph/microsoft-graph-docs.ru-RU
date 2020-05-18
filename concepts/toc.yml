@@ -173,9 +173,13 @@ items:
       - name: Финансовые показатели (предварительная версия)
         href: dynamics-business-central-concept-overview.md
         displayname: 'Dynamics, Dynamics 365 Business Central'
-      - name: Удостоверения и доступ
-        href: azuread-identity-access-management-concept-overview.md
-        displaName: 'Azure AD, Microsoft identity platform'
+      - name: Удостоверение и доступ
+        displayName: 'Azure AD, Microsoft identity platform'
+        items:
+          - name: Обзор
+            href: azuread-identity-access-management-concept-overview.md
+          - name: Методы проверки подлинности
+            href: authenticationmethods-get-started.md
       - name: Почта
         displayName: 'Outlook, Outlook mail'
         items:
