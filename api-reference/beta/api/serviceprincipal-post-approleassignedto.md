@@ -5,30 +5,28 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 557c7673f299cb37a90bf20357e093b80ca3a264
+ms.openlocfilehash: 6ecfbd4f85fb1c991a9097688daa40634a630c3a
 ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290021"
+ms.locfileid: "44290028"
 ---
-# <a name="grant-an-approleassignment-to-a-service-principal"></a>Предоставление Аппролеассигнмент участнику службы
-
-Пространство имен: microsoft.graph
+# <a name="grant-an-approleassignment-for-a-service-principal"></a>Предоставление Аппролеассигнмент для субъекта службы
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Назначьте роль приложения участнику клиентской службы.
+Назначение роли приложения для субъекта службы ресурсов пользователю, группе или участнику клиентской службы.
 
 Роли приложений, назначенные субъектам служб, также называются [разрешениями приложений](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Разрешения приложения могут быть предоставлены непосредственно с назначениями ролей приложения или с помощью [согласия пользователя](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
 
-Чтобы назначить роль приложения для участника клиентской службы, необходимы три идентификатора:
+Чтобы предоставить назначение роли приложения, вам потребуется три идентификатора:
 
-- `principalId`: `id` Клиент службы, которому назначается роль приложения.
-- `resourceId`: `id` Ресурс `servicePrincipal` (API), в котором определена роль приложения (разрешение приложения).
-- `appRoleId`: Значение `id` `appRole` (заданное для субъекта-службы ресурса), которое необходимо назначить участнику клиентской службы.
+- `principalId`: `id` **Пользователь**, **Группа** или клиент **servicePrincipal** , которому назначается роль приложения.
+- `resourceId`: `id` Ресурс **servicePrincipal** , в котором определена роль приложения.
+- `appRoleId`: Объект `id` **аппроле** (определенный для субъекта-службы ресурса), назначаемый пользователю, группе или субъекту-службе.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,11 +42,8 @@ ms.locfileid: "44290021"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/{id}/appRoleAssignments
+POST /servicePrincipals/{id}/appRoleAssignedTo
 ```
-
-> [!NOTE]
-> Рекомендуется создавать назначения ролей приложений с помощью [ `appRoleAssignedTo` отношения между субъектом службы _ресурсов_ ](serviceprincipal-post-approleassignedto.md), а не с `appRoleAssignments` назначенным пользователем, группой или субъектом службы.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -73,11 +68,11 @@ POST /servicePrincipals/{id}/appRoleAssignments
 
 <!-- {
   "blockType": "request",
-  "name": "group_create_approleassignment"
+  "name": "serviceprincipal_create_approleassignedto"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo
 Content-Type: application/json
 Content-Length: 110
 
@@ -88,7 +83,7 @@ Content-Length: 110
 }
 ```
 
-В этом примере и то, `{id}` и другое — это `{principalId-value}` `id` назначенный субъект-службу клиента, и будет `{resoruceId}` иметь значение `id` субъекта-службы ресурсов (API).
+В этом примере `{id}` и будет `{resourceId-value}` `id` назначена субъектом службы ресурсов, и будет `{principalId}` `id` назначен участник службы, назначенный пользователю, группе или клиенту.
 
 ### <a name="response"></a>Отклик
 
