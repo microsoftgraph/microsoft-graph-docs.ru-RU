@@ -5,31 +5,31 @@ localization_priority: Normal
 author: merzink
 ms.prod: notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 822a5d24acbec878b864c70d357f76a1fa115e4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fd76d6798ab92fdfa319b732dd926fbec22e798
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498576"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290183"
 ---
-# <a name="fallbackpolicy-resource-type"></a><span data-ttu-id="88562-103">Тип ресурса Фаллбаккполици</span><span class="sxs-lookup"><span data-stu-id="88562-103">fallbackPolicy resource type</span></span>
+# <a name="fallbackpolicy-resource-type"></a><span data-ttu-id="69f35-103">Тип ресурса Фаллбаккполици</span><span class="sxs-lookup"><span data-stu-id="69f35-103">fallbackPolicy resource type</span></span>
 
-<span data-ttu-id="88562-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="88562-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="69f35-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="69f35-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="88562-105">Позволяет указать резервную политику только для конечных точек iOS и предназначена для использования для необработанных уведомлений с высоким приоритетом, которые могут не доставляться на устройства из-за ограничений, определенных платформой (например, режим экономии заряда).</span><span class="sxs-lookup"><span data-stu-id="88562-105">Allows fallback policy to be specified for iOS endpoints only and is designed to be used for high-priority raw notifications that might not be delivered to devices due to platform specific restrictions (e.g. battery saver mode).</span></span>
+<span data-ttu-id="69f35-105">Позволяет указать резервную политику только для конечных точек iOS и предназначена для использования для необработанных уведомлений с высоким приоритетом, которые могут не доставляться на устройства из-за ограничений, определенных платформой (например, режим экономии заряда).</span><span class="sxs-lookup"><span data-stu-id="69f35-105">Allows fallback policy to be specified for iOS endpoints only and is designed to be used for high-priority raw notifications that might not be delivered to devices due to platform specific restrictions (e.g. battery saver mode).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="88562-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="88562-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="69f35-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="69f35-106">Properties</span></span>
 
-| <span data-ttu-id="88562-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="88562-107">Property</span></span>     | <span data-ttu-id="88562-108">Тип</span><span class="sxs-lookup"><span data-stu-id="88562-108">Type</span></span>        | <span data-ttu-id="88562-109">Описание</span><span class="sxs-lookup"><span data-stu-id="88562-109">Description</span></span> |
+| <span data-ttu-id="69f35-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="69f35-107">Property</span></span>     | <span data-ttu-id="69f35-108">Тип</span><span class="sxs-lookup"><span data-stu-id="69f35-108">Type</span></span>        | <span data-ttu-id="69f35-109">Описание</span><span class="sxs-lookup"><span data-stu-id="69f35-109">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="88562-110">ендпоинтфаллбакк</span><span class="sxs-lookup"><span data-stu-id="88562-110">endpointFallback</span></span> | [<span data-ttu-id="88562-111">фаллбаккполиципропертиес</span><span class="sxs-lookup"><span data-stu-id="88562-111">fallbackPolicyProperties</span></span>](fallbackpolicyproperties.md) | <span data-ttu-id="88562-112">Объект политики Ендпоинтфаллбакк обрабатывает политику резервного использования уведомлений на уровне конечной точки и в настоящее время ограничивается iOS.</span><span class="sxs-lookup"><span data-stu-id="88562-112">EndpointFallback policy object handles notification fallback policy at an end point level and is currently limited to iOS.</span></span> |   
+| <span data-ttu-id="69f35-110">ендпоинтфаллбакк</span><span class="sxs-lookup"><span data-stu-id="69f35-110">endpointFallback</span></span> | [<span data-ttu-id="69f35-111">фаллбаккполиципропертиес</span><span class="sxs-lookup"><span data-stu-id="69f35-111">fallbackpolicyProperties</span></span>](fallbackpolicyproperties.md) | <span data-ttu-id="69f35-112">Объект политики Ендпоинтфаллбакк обрабатывает политику резервного использования уведомлений на уровне конечной точки и в настоящее время ограничивается iOS.</span><span class="sxs-lookup"><span data-stu-id="69f35-112">EndpointFallback policy object handles notification fallback policy at an end point level and is currently limited to iOS.</span></span> |   
 
 
-## <a name="json-representation"></a><span data-ttu-id="88562-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="88562-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="69f35-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="69f35-113">JSON representation</span></span>
 
-<span data-ttu-id="88562-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="88562-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="69f35-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="69f35-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
