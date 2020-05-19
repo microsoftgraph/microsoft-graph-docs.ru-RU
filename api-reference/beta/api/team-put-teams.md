@@ -5,41 +5,41 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c91116c014816b7ddc2a766daaf083e1222654e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
-ms.translationtype: HT
+ms.openlocfilehash: fda2bdb82ce94c9f0b19dffc5adc3891928aa6fa
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452586"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290162"
 ---
-# <a name="create-team-from-group"></a><span data-ttu-id="875f8-103">Создание команды из группы</span><span class="sxs-lookup"><span data-stu-id="875f8-103">Create team from group</span></span>
+# <a name="create-team-from-group"></a><span data-ttu-id="56fc7-103">Создание команды из группы</span><span class="sxs-lookup"><span data-stu-id="56fc7-103">Create team from group</span></span>
 
-<span data-ttu-id="875f8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="875f8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="56fc7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="56fc7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!IMPORTANT]
-> <span data-ttu-id="875f8-105">Этот API-интерфейс находится в процессе замены на интерфейс [Создание команды](../api/team-post.md) и будет удален до конца 2019.</span><span class="sxs-lookup"><span data-stu-id="875f8-105">This API is in the process of being deprecated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019.</span></span> <span data-ttu-id="875f8-106">Сведения о создании команды из группы см. в примерах 4 и 5 статьи [Создание команды](../api/team-post.md).</span><span class="sxs-lookup"><span data-stu-id="875f8-106">For details about how to create a team from a group, see examples 4 and 5 in [Create team](../api/team-post.md).</span></span>
+> <span data-ttu-id="56fc7-105">Этот API-интерфейс находится в процессе замены на интерфейс [Создание команды](../api/team-post.md) и будет удален до конца 2019.</span><span class="sxs-lookup"><span data-stu-id="56fc7-105">This API is in the process of being deprecated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019.</span></span> <span data-ttu-id="56fc7-106">Сведения о создании команды из группы см. в примерах 4 и 5 статьи [Создание команды](../api/team-post.md).</span><span class="sxs-lookup"><span data-stu-id="56fc7-106">For details about how to create a team from a group, see examples 4 and 5 in [Create team](../api/team-post.md).</span></span>
 
-<span data-ttu-id="875f8-107">Создание новой [команды](../resources/team.md) из [группы](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="875f8-107">Create a new [team](../resources/team.md) from a [group](../resources/group.md).</span></span>
+<span data-ttu-id="56fc7-107">Создание новой [команды](../resources/team.md) из [группы](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="56fc7-107">Create a new [team](../resources/team.md) from a [group](../resources/group.md).</span></span>
 
-<span data-ttu-id="875f8-108">Чтобы создать команду, в группе должен быть хотя бы один владелец.</span><span class="sxs-lookup"><span data-stu-id="875f8-108">In order to create a team, the group must have a least one owner.</span></span>
+<span data-ttu-id="56fc7-108">Чтобы создать команду, в группе должен быть хотя бы один владелец.</span><span class="sxs-lookup"><span data-stu-id="56fc7-108">In order to create a team, the group must have a least one owner.</span></span>
 
-<span data-ttu-id="875f8-109">Если группа создана менее 15 минут назад, вызов метода "Создание команды" может завершиться ошибкой с кодом 404 из-за задержек репликации.</span><span class="sxs-lookup"><span data-stu-id="875f8-109">If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.</span></span> <span data-ttu-id="875f8-110">В качестве рекомендуемого шаблона следует повторить вызов метода "Создание команды" три раза с 10-секундной задержкой между вызовами.</span><span class="sxs-lookup"><span data-stu-id="875f8-110">The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.</span></span>
+<span data-ttu-id="56fc7-109">Если группа создана менее 15 минут назад, вызов метода "Создание команды" может завершиться ошибкой с кодом 404 из-за задержек репликации.</span><span class="sxs-lookup"><span data-stu-id="56fc7-109">If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.</span></span> <span data-ttu-id="56fc7-110">В качестве рекомендуемого шаблона следует повторить вызов метода "Создание команды" три раза с 10-секундной задержкой между вызовами.</span><span class="sxs-lookup"><span data-stu-id="56fc7-110">The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="875f8-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="875f8-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="56fc7-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="56fc7-111">Permissions</span></span>
 
-<span data-ttu-id="875f8-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="875f8-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="56fc7-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="56fc7-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="875f8-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="875f8-114">Permission type</span></span>      | <span data-ttu-id="875f8-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="875f8-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="56fc7-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="56fc7-114">Permission type</span></span>      | <span data-ttu-id="56fc7-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="56fc7-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="875f8-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="875f8-116">Delegated (work or school account)</span></span> | <span data-ttu-id="875f8-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="875f8-117">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="875f8-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="875f8-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="875f8-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="875f8-119">Not supported.</span></span>    |
-|<span data-ttu-id="875f8-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="875f8-120">Application</span></span> | <span data-ttu-id="875f8-121">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="875f8-121">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="56fc7-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="56fc7-116">Delegated (work or school account)</span></span> | <span data-ttu-id="56fc7-117">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="56fc7-117">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="56fc7-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="56fc7-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="56fc7-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="56fc7-119">Not supported.</span></span>    |
+|<span data-ttu-id="56fc7-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="56fc7-120">Application</span></span> | <span data-ttu-id="56fc7-121">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="56fc7-121">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="875f8-122">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="875f8-122">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="875f8-123">Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к группам, в которых они не состоят.</span><span class="sxs-lookup"><span data-stu-id="875f8-123">Global admins and Microsoft Teams service admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="56fc7-122">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="56fc7-122">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="56fc7-123">Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к группам, в которых они не состоят.</span><span class="sxs-lookup"><span data-stu-id="56fc7-123">Global admins and Microsoft Teams service admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="875f8-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="875f8-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="56fc7-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="56fc7-124">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -47,28 +47,28 @@ ms.locfileid: "42452586"
 PUT /groups/{id}/team
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="875f8-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="875f8-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="56fc7-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="56fc7-125">Request headers</span></span>
 
-| <span data-ttu-id="875f8-126">Заголовок</span><span class="sxs-lookup"><span data-stu-id="875f8-126">Header</span></span>       | <span data-ttu-id="875f8-127">Значение</span><span class="sxs-lookup"><span data-stu-id="875f8-127">Value</span></span> |
+| <span data-ttu-id="56fc7-126">Заголовок</span><span class="sxs-lookup"><span data-stu-id="56fc7-126">Header</span></span>       | <span data-ttu-id="56fc7-127">Значение</span><span class="sxs-lookup"><span data-stu-id="56fc7-127">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="875f8-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="875f8-128">Authorization</span></span>  | <span data-ttu-id="875f8-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="875f8-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="875f8-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="875f8-131">Content-Type</span></span>  | <span data-ttu-id="875f8-132">application/json</span><span class="sxs-lookup"><span data-stu-id="875f8-132">application/json</span></span>  |
+| <span data-ttu-id="56fc7-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="56fc7-128">Authorization</span></span>  | <span data-ttu-id="56fc7-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="56fc7-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="56fc7-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="56fc7-131">Content-Type</span></span>  | <span data-ttu-id="56fc7-132">application/json</span><span class="sxs-lookup"><span data-stu-id="56fc7-132">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="875f8-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="875f8-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="56fc7-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="56fc7-133">Request body</span></span>
 
-<span data-ttu-id="875f8-134">Предоставьте в тексте запроса описание объекта [team](../resources/team.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="875f8-134">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
+<span data-ttu-id="56fc7-134">Предоставьте в тексте запроса описание объекта [team](../resources/team.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="56fc7-134">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="875f8-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="875f8-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="56fc7-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="56fc7-135">Response</span></span>
 
-<span data-ttu-id="875f8-136">При успешном выполнении этот метод должен вернуть код отклика `201 Created` и объект [team](../resources/team.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="875f8-136">If successful, this method should return a `201 Created` response code and a [team](../resources/team.md) object in the response body.</span></span>
+<span data-ttu-id="56fc7-136">При успешном выполнении этот метод должен вернуть код отклика `201 Created` и объект [team](../resources/team.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="56fc7-136">If successful, this method should return a `201 Created` response code and a [team](../resources/team.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="875f8-137">Пример</span><span class="sxs-lookup"><span data-stu-id="875f8-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="56fc7-137">Пример</span><span class="sxs-lookup"><span data-stu-id="56fc7-137">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="875f8-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="875f8-138">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="56fc7-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="56fc7-138">Request</span></span>
 
-<span data-ttu-id="875f8-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="875f8-139">The following is an example of the request.</span></span>
+<span data-ttu-id="56fc7-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="56fc7-139">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="875f8-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="875f8-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="56fc7-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="56fc7-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team"
@@ -94,26 +94,26 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="875f8-141">C#</span><span class="sxs-lookup"><span data-stu-id="875f8-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="56fc7-141">C#</span><span class="sxs-lookup"><span data-stu-id="56fc7-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="875f8-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="875f8-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="56fc7-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56fc7-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-team-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="875f8-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="875f8-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="56fc7-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56fc7-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="875f8-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="875f8-144">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="56fc7-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="56fc7-144">Response</span></span>
 
-<span data-ttu-id="875f8-145">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="875f8-145">The following is an example of the response.</span></span> 
+<span data-ttu-id="56fc7-145">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="56fc7-145">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="875f8-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="875f8-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="56fc7-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="56fc7-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -169,6 +169,6 @@ Content-length: 401
 }
 -->
 
-## <a name="see-also"></a><span data-ttu-id="875f8-148">См. также</span><span class="sxs-lookup"><span data-stu-id="875f8-148">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="56fc7-148">См. также</span><span class="sxs-lookup"><span data-stu-id="56fc7-148">See also</span></span>
 
-- [<span data-ttu-id="875f8-149">Создание группы с командой</span><span class="sxs-lookup"><span data-stu-id="875f8-149">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
+- [<span data-ttu-id="56fc7-149">Создание группы с командой</span><span class="sxs-lookup"><span data-stu-id="56fc7-149">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
