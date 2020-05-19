@@ -3,14 +3,14 @@ title: Получение конечной точки
 description: Получение свойств и связей определенного объекта конечной точки.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 15ccf9b6a250cf75d613826899a30a0c8e20b420
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: 4bea857418cf4dc911021da58a465cfc53cc30fc
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423492"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289646"
 ---
 # <a name="get-endpoint"></a>Получение конечной точки
 
@@ -42,16 +42,15 @@ GET /groups/{id}/endpoints/{id}
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.|
-| Content-Type   | Приложение/JSON |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [конечной точки](../resources/endpoint.md) в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -76,8 +75,9 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
+>Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

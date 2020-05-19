@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 704bb439bfab3a35f6cebb191430b27b7444e418
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: fea5be249ae7d5494637410794987c5b554e2b1d
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006351"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290077"
 ---
 # <a name="list-places"></a>Список мест
 
@@ -70,6 +70,8 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 - $filter
 - $select
 - $top
+- $skip
+- $count = true
 
 Используйте $top, чтобы настроить размер страницы. Размер страницы по умолчанию — 100.
 
@@ -81,7 +83,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

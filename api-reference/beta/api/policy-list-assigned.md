@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: dkershaw10
-ms.openlocfilehash: beb5afedd33d16fefaaeb83c46fddd45c9c9ad3c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6aa20deefa63325bf369fc2c59db97add4732569
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408373"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289709"
 ---
 # <a name="list-policies-assigned-to-application-or-service-principal"></a>Список политик, назначенных для приложения или участника службы
 
@@ -38,16 +38,16 @@ GET /applications/{id}/policies
 > Note: "ID" в запросе — это свойство "ID" приложения или субъекта-службы, а не свойство AppID.
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя           | Описание                |
+|:---------------|:---------------------------|
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объекты [политики](../resources/policy.md) в тексте отклика. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объекты [политики](../resources/policy.md) в тексте отклика. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="example"></a>Пример
 В следующем примере извлекаются политики, назначенные приложению.

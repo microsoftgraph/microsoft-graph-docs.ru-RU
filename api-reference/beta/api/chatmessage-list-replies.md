@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d8e3332a7ed50dd7c1ba383b247cd5016af5a768
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d82d2fe3268cb95af19b39b6be192fe44f747a20
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438360"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287106"
 ---
 # <a name="list-replies"></a>Список ответов
 
@@ -28,7 +28,7 @@ ms.locfileid: "42438360"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Chat.Read, Chat.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Chat.Read.All |
+| Для приложения                            | Chat.Read.All, Chat.ReadWrite.All |
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
@@ -55,7 +55,7 @@ GET /chats/{id}/messages/{id}/replies
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatMessage](../resources/chatmessage.md) в тексте отклика.
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/replies
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

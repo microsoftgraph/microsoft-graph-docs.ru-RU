@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 7cea993bfaeaf7de82268747518288aaac836198
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c498abb711a336f3627ef0b63e6c742e633ea05a
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500088"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289937"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>Тип ресурса Едукатионсинчронизатионпрофиле
 
@@ -46,7 +46,7 @@ ms.locfileid: "42500088"
 | **лиценсестоассигн** | Коллекция [едукатионсинчронизатионлиценсеассигнмент](educationsynchronizationlicenseassignment.md)|  Конфигурация установки лицензий.        |
 | **state** | едукатионсинчронизатионпрофилестате |  Состояние профиля. Возможные значения: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`.          |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
@@ -79,3 +79,16 @@ ms.locfileid: "42500088"
     "handleSpecialCharacterConstraint": "Boolean"
 }
 ```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2020-05-06 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "educationSynchronizationProfile resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+      "Error: microsoft.graph.educationSynchronizationProfile/dataProvider:\r\n      Referenced type microsoft.graph.educationSynchronizationDataProvider is not defined in the doc set! Potential suggestion: UNKNOWN"
+  ]
+}-->

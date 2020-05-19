@@ -5,12 +5,12 @@ localization_priority: Normal
 author: merzink
 ms.prod: notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 822a5d24acbec878b864c70d357f76a1fa115e4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fd76d6798ab92fdfa319b732dd926fbec22e798
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498576"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290183"
 ---
 # <a name="fallbackpolicy-resource-type"></a>Тип ресурса Фаллбаккполици
 

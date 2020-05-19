@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b380d6c274c2d0ca2771cd44a7015f84f7d9a0e7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 94c6a33f24780ad9941ecd54fddd55611fe44822
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436421"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288503"
 ---
 # <a name="update-conversationmember"></a>Обновление Конверсатионмембер
 
@@ -21,7 +21,7 @@ ms.locfileid: "42436421"
 Обновление роли [конверсатионмембер](../resources/conversationmember.md) в [канале](../resources/channel.md).
 
 > [!NOTE]
-> Эта операция поддерживается только для каналов с [чаннелмембершиптипе](../resources/enums.md#channelmembershiptype-values) `private`. Вызовы с любым другим [чаннелмембершиптипе](../resources/enums.md#channelmembershiptype-values) будут возвращать `400 Bad Request` ответ.
+> Эта операция поддерживается только для каналов с [чаннелмембершиптипе](../resources/enums.md#channelmembershiptype-values) `private` . Вызовы с любым другим [чаннелмембершиптипе](../resources/enums.md#channelmembershiptype-values) будут возвращать `400 Bad Request` ответ.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,9 +29,9 @@ ms.locfileid: "42436421"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)|Group.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|Group.ReadWrite.All|
+|Для приложений| Member. ReadWrite. Group ([RSC](https://aka.ms/teams-rsc)), Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -92,7 +92,7 @@ content-length: 26
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

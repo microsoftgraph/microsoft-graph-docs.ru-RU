@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bc330896b68f404bb23855bc5726fad5a8473b7d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 056ec5a26c8eb38809acbbe56f5097137d265fbb
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729180"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289315"
 ---
 # <a name="create-call"></a>Создание звонка
 
@@ -51,7 +51,7 @@ POST /communications/calls
 ## <a name="request-body"></a>Основной текст запроса
 В тексте запроса добавьте представление объекта [Call](../resources/call.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Call](../resources/call.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
@@ -94,7 +94,7 @@ Content-Type: application/json
     "audio"
   ],
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
 }
 ```
@@ -417,7 +417,7 @@ Content-Type: application/json
 ### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>Пример 3: Создание группового звонка с размещенными у службы носителями
 
 Поддерживает до 5 пользователей VoIP. В этом примере показано, как создать групповой вызов с двумя пользователями VoIP.
-> **Примечание:** В этом примере для `Calls.InitiateGroupCalls.All` вызова требуется разрешение. Созданный групповой вызов не поддерживает чат или запись.
+> **Примечание:** В этом примере для вызова требуется `Calls.InitiateGroupCalls.All` разрешение. Созданный групповой вызов не поддерживает чат или запись.
 
 ##### <a name="request"></a>Запрос
 ```http
@@ -483,7 +483,7 @@ Content-Type: application/json
 ### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>Пример 4: создание групповой связи с размещенными в приложении носителями
 
 Поддерживает до 5 пользователей VoIP. В этом примере показано, как создать групповой вызов с двумя пользователями VoIP.
-> **Примечание:** В этом примере для `Calls.InitiateGroupCalls.All` вызова требуется разрешение. Созданный групповой вызов не поддерживает чат или запись.
+> **Примечание:** В этом примере для вызова требуется `Calls.InitiateGroupCalls.All` разрешение. Созданный групповой вызов не поддерживает чат или запись.
 
 ##### <a name="request"></a>Запрос
 ```http
@@ -552,7 +552,7 @@ Content-Type: application/json
 Эту информацию можно получить из [API получения Интернет-собраний](../api/onlinemeeting-get.md).
 
 Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены вместе со сведениями, полученными от [получения API собраний по сети](../api/onlinemeeting-get.md) с фактическими значениями, чтобы сделать пример работать.
-> **Примечание:** В `Calls.JoinGroupCalls.All` этом примере требуется разрешение.
+> **Примечание:** В этом примере требуется `Calls.JoinGroupCalls.All` разрешение.
 
 ##### <a name="request"></a>Запрос
 
@@ -932,7 +932,7 @@ Content-Type: application/json
 
 Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены вместе со сведениями, полученными от [получения API собраний по сети](../api/onlinemeeting-get.md) с фактическими значениями, чтобы сделать пример работать.
 
-> **Примечание:** В `Calls.JoinGroupCalls.All` этом примере требуется разрешение.
+> **Примечание:** В этом примере требуется `Calls.JoinGroupCalls.All` разрешение.
 
 ##### <a name="request"></a>Запрос
 
@@ -989,7 +989,7 @@ Content-Type: application/json
 Для присоединения к собранию по каналу в качестве гостя необходимо создать гостевой [идентификацию](../resources/identityset.md) и добавить ее в качестве источника звонка в приглашении на собрание.
 Отображаемое имя — это имя, которое должно отображаться на собрании для удостоверения гостей. Идентификатором может быть уникальный идентификатор, идентифицирующий гостевую идентификацию.
 
-> **Примечание:** В `Calls.JoinGroupCallsAsGuest.All` этом примере требуется разрешение.
+> **Примечание:** В этом примере требуется `Calls.JoinGroupCallsAsGuest.All` разрешение.
 
 ##### <a name="request"></a>Запрос
 

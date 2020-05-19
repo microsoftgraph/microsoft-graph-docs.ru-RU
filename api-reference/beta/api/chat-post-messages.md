@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66e73ac2c3523c7c374c78143a91fc7a5e846778
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 917b5ec5ac140079f30f6c03db485de849d6b56b
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438570"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287516"
 ---
 # <a name="create-chatmessage"></a>Создание chatMessage
 
@@ -26,9 +26,9 @@ ms.locfileid: "42438570"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Chat.ReadWrite |
+| Делегированные (рабочая или учебная учетная запись)     | ChatMessage. Send, Chat. ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Для приложений                            | Chat. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ POST /users/{id}/chats/{id}/messages
 
 В тексте запроса добавьте представление объекта [chatMessage](../resources/chatmessage.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [chatMessage](../resources/chatmessage.md) в тексте отклика.
 

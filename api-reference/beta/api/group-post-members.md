@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8e4b209d7b941bc681e63f9f1781072ff501eb1e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a41ef1abeeece64c3a8ea689e19596e07931e82f
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396576"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289590"
 ---
 # <a name="add-member"></a>Добавление участника
 
@@ -20,7 +20,7 @@ ms.locfileid: "43396576"
 
 Добавьте члена в группу Office 365 или группу безопасности с помощью свойства навигации **Members** .
 
-Вы можете добавлять пользователей или другие группы. 
+Вы можете добавлять пользователей, участников служб или другие группы. 
 
 > [!Important]
 > Вы можете добавлять пользователей только в группы безопасности и группы Office 365, управляемые через облако.
@@ -83,7 +83,7 @@ Content-length: 30
 
 ---
 
-В тексте запроса добавьте `id` представление объекта [directoryObject](../resources/directoryobject.md), [пользователя](../resources/user.md)или [группы](../resources/group.md) , который вы хотите добавить, в формате JSON.
+В тексте запроса `id` добавьте представление объекта [directoryObject](../resources/directoryobject.md), [пользователя](../resources/user.md)или [группы](../resources/group.md) , который вы хотите добавить, в формате JSON.
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример отклика.

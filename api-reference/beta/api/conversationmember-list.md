@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 62f55b286bdea316b087a018f342f564f0341406
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
-ms.translationtype: HT
+ms.openlocfilehash: f5454db8b04fee03c2c5ae27e0842df6aa0781fb
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436484"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288517"
 ---
 # <a name="list-conversationmembers"></a>Список объектов conversationMember
 
@@ -26,9 +26,9 @@ ms.locfileid: "42436484"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)|Chat.Read, Chat.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложения| Chat.Read.All, Chat.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)| Чат. ReadBasic, Chat. Read, Chat. ReadWrite |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения| Chat. ReadBasic. ALL, Chat. Read. ALL, Chat. ReadWrite. ALL |
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 87669fb0665a11d1f3bc6f1bf923cd55e1ee3af3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 471fbe6625faf3a3aaac2173bd589b43cc605c3f
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474732"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290225"
 ---
 # <a name="list-orgcontacts"></a>Список Оргконтактс
 
@@ -35,21 +35,27 @@ ms.locfileid: "43474732"
 GET /contacts
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, включая `$search` , `$count` и `$filter` . Можно использовать `$search` свойство **DisplayName** . При добавлении или обновлении элементов для этого ресурса они могут индексироваться для использования с `$count` `$search` параметрами запроса. Между добавлением или обновлением элемента может быть небольшая задержка, а когда он доступен в индексе.
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:-----------|:----------|
+| Авторизация  | Bearer {токен}. Обязательный. |
+| консистенцилевел | закончить. Этот заголовок и `$count` обязательные при использовании `$search` `$filter` с `$orderby` параметром Query. Он использует индекс, который может быть не последним в актуальном изменении объекта. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [orgContact](../resources/orgcontact.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-get-organizational-contacts-for-an-organization"></a>Пример 1: получение организационных контактов для Организации
+
+#### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -74,8 +80,11 @@ GET https://graph.microsoft.com/beta/contacts
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика. 
+>**Примечание.**  Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,25 +99,148 @@ Content-length: 222
 {
   "value": [
     {
+      "companyName":"Contoso",
+      "department":"Accounting",
+      "displayName":"Eric Solomon",
+      "givenName":"Eric",
+      "jobTitle":"Accountant",
+      "mail":"erics@contoso.com",
+      "mailNickname":"erics",
+      "surname":"Solomon",
       "addresses":[
-          {
-            "city": "string",
-            "countryOrRegion": "string",
-            "officeLocation": "string",
-            "postalCode": "string",
-            "state": "string",
-            "street": "string"
-          }
+        {
+          "city":"MyCity",
+          "countryOrRegion":"United States",
+          "officeLocation":"MyCity",
+          "postalCode":"98000",
+          "state":"WA",
+          "street":"Contoso Way"
+        }
       ],
-      "companyName": "companyName-value",
-      "department": "department-value",
-      "displayName": "displayName-value",
       "phones":[
-          {
-            "type": "string",
-            "number": "string"
-          }
+        {
+          "number":"111-1111",
+          "type":"businessFax"
+        }
       ]
+    }
+  ]
+}
+```
+
+### <a name="example-2-get-only-a-count-of-organizational-contacts"></a>Пример 2: получение только количества контактов Организации
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/contacts/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.orgcontact",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+893
+
+### <a name="example-3-use-filter-and-top-to-get-one-organizational-contact-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3: использование $filter и $top для получения одного организационного контакта с отображаемым именем, начинающимся с "a", включая количество возвращаемых объектов
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/contacts?$filter=startswith(displayName,'A')&$count=true&$top=1&$orderby=displayName
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.orgcontact",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#contacts",
+  "@odata.count":1,
+  "value":[
+    {
+      "displayName":"Abigail Jackson",
+      "mail":"abigailJ@contoso.com",
+      "mailNickname":"abigailJ"
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>Пример 4: использование $search для получения организационных контактов с отображаемыми именами, содержащими "WA", в том числе от количества возвращаемых объектов.
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_phone_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/contacts?$search="displayName:wa"&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.orgcontact",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#contacts",
+  "@odata.count":22,
+  "value":[
+    {
+      "displayName":"Nicole Wagner",
+      "mail":"nicolewa@contoso.com",
+      "mailNickname":"nicolewa"
     }
   ]
 }

@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0a6ac8b72f5dea24c0f60062b91dac7648b91e85
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0774b2c214191949857444ae7d6673bd2b49bade
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436568"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288559"
 ---
 # <a name="delete-conversationmember"></a>Удаление Конверсатионмембер
 
@@ -21,7 +21,7 @@ ms.locfileid: "42436568"
 Удаление [конверсатионмембер](../resources/conversationmember.md) из [канала](../resources/channel.md).
 
 > [!NOTE]
-> Эта операция поддерживается только для каналов с [чаннелмембершиптипе](../resources/enums.md#channelmembershiptype-values) `private`. Вызовы с любым другим [чаннелмембершиптипе](../resources/enums.md#channelmembershiptype-values) будут возвращать `400 Bad Request` ответ.
+> Эта операция поддерживается только для каналов с [чаннелмембершиптипе](../resources/enums.md#channelmembershiptype-values) `private` . Вызовы с любым другим [чаннелмембершиптипе](../resources/enums.md#channelmembershiptype-values) будут возвращать `400 Bad Request` ответ.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,9 +29,9 @@ ms.locfileid: "42436568"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)|Для ресурса **user** или **chat**:<br/>Chat.Read, Chat.ReadWrite<br/><br/>Для ресурса **channel**:<br/>Group.Read.All, Group.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение| Для ресурса **user** или **chat**:<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>Для ресурса **channel**:<br/>Group.Read.All, Group.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений| Member. ReadWrite. Group ([RSC](https://aka.ms/teams-rsc)), Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -49,7 +49,7 @@ DELETE /teams/{id}/channels/{id}/members/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -82,7 +82,7 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members/{id}
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

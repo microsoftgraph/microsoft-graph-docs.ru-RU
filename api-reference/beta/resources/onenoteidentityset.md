@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 115621ce482a60aa0e6544123888938524528882
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0d2f0b4ed65ac83a59036c362136b7af772d21c
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522353"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290583"
 ---
 # <a name="onenoteidentityset-resource-type"></a>Тип ресурса Оненотеидентитисет
 

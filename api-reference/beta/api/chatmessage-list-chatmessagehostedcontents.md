@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 50459ee2ec043773480e40d9d3bf3f011f5528d1
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 019778894e9af80bf5ede1108bfd82ab7082a22a
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562698"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287096"
 ---
 # <a name="list-hostedcontents"></a>Список Хостедконтентс
 
@@ -26,9 +26,9 @@ ms.locfileid: "42562698"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Для ресурса **user** или **chat**:<br/>Chat.Read, Chat.ReadWrite<br/><br/>Для ресурса **channel**:<br/>ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение| Для ресурса **user** или **chat**:<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>Для ресурса **channel**:<br/>ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)| Для ресурсов " **пользователь** " или " **чат** ": Chat. Read, Chat. ReadWrite<br/><br/>Для ресурса **Channel** : Чаннелмессаже. Read. ALL, Group. Read. ALL, Group. Read. вритеалл |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений| Для ресурсов " **пользователь** " или " **чат** ": Chat. Read. ALL, Chat. ReadWrite. ALL<br/><br/>Для ресурса **Channel** : Чаннелмессаже. Read. Group ([RSC](https://aka.ms/teams-rsc)), Чаннелмессаже. Read. ALL, Group. Read. ALL, Group. ReadWrite. ALL |
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
@@ -57,7 +57,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [чатмессажехостедконтент](../resources/chatmessagehostedcontent.md) в тексте отклика.
 

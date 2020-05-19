@@ -6,12 +6,12 @@ title: File
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d3f4e2b8d6c5e5df6b8be10a4876d4e9ebe03168
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aaf662575552a37d28e9a429297f8f58f825b6e6
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498352"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44291162"
 ---
 # <a name="file-resource-type"></a>Тип ресурса file
 
@@ -44,7 +44,7 @@ ms.locfileid: "42498352"
 
 | Свойство | Тип                    | Описание                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| hashes   | [HashesType](hashes.md) | Хэши двоичного содержимого файла (если они доступны). Только для чтения.                                                                                    |
+| hashes   | [hashes](hashes.md) | Хэши двоичного содержимого файла (если они доступны). Только для чтения.                                                                                    |
 | mimeType | string                  | Тип MIME файла. Он определяется логикой на сервере и может не совпадать со значением, предоставленным при отправке файла. Только для чтения. |
 
 ## <a name="remarks"></a>Замечания 

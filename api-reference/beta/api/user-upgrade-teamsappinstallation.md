@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 01a08e81279883225b2cf096e7f6b8767e8eb0d5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09d306a51f5b56265e6c1b553bfbb226f5999b2a
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451599"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290660"
 ---
 # <a name="teamsappinstallation-upgrade"></a>Теамсаппинсталлатион: обновление
 
@@ -26,7 +26,7 @@ ms.locfileid: "42451599"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite.All, Directory.ReadWrite.All   |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -46,7 +46,7 @@ POST /users/{id}/teamwork/installedApps/{id}/upgrade
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
@@ -80,7 +80,7 @@ POST /users/{id}/teamwork/installedApps/{id}/upgrade
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 

@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 01d0f5c566a3c633caab8e321202e422bbad62a8
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: f0686491f0d19bf0dd4911d0f60fe05b84326081
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43511003"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289951"
 ---
 # <a name="riskdetection-resource-type"></a>Тип ресурса Рискдетектион
 
@@ -41,17 +41,17 @@ Azure AD постоянно оценивает [риски пользовате�
 |`id`|`string`|Уникальный идентификатор обнаружения риска. |
 |`requestId`|`string`|Идентификатор запроса, связанный с обнаружением риска. Это свойство имеет значение null, если обнаружение риска не связано с входом.|
 |`correlationId`|`string`|Корреляционный идентификатор входа, связанный с обнаружением риска. Это свойство имеет значение null, если обнаружение риска не связано с входом. |
-|`riskEventType`|`string`|Тип обнаруженного события риска. Возможные значения: `unlikelyTravel` `anonymizedIPAddress`,, `maliciousIPAddress`, `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials`,,,, `investigationsThreatIntelligence`, `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `unknownFutureValue`,,,, и. `maliciousIPAddressValidCredentialsBlockedIP` |
+|`riskEventType`|`string`|Тип обнаруженного события риска. Возможные значения:,,,,,,,,,,,, `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` и `unknownFutureValue` . |
 |`riskType`|`riskEventType`|Список типов событий риска.<br/>**Примечание:** Это свойство является устаревшим. Вместо этого используйте **рискевенттипес** . |
 |`riskState`|`riskState`|Состояние обнаруженного опасного пользователя или входа. Возможные значения: None, Конфирмедсафе, remediateо, Атриск, Конфирмедкомпромисед и unknownFutureValue. |
-|`riskLevel`|`riskLevel`|Уровень обнаруженного риска. Возможные значения: "минимум", "средний", "высокий", "скрытый", "нет", unknownFutureValue. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Клиенты P1 будут возвращены `hidden`.|
-|`riskDetail`|`riskDetail`|Сведения об обнаруженном риске. Возможные значения: None, Админженератедтемпорарипассворд, Усерперформедсекуредпассвордчанже, Усерперформедсекуредпассвордресет, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, Hidden, adminConfirmedUserCompromised, unknownFutureValue. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Клиенты P1 будут возвращены `hidden`.|
+|`riskLevel`|`riskLevel`|Уровень обнаруженного риска. Возможные значения: "минимум", "средний", "высокий", "скрытый", "нет", unknownFutureValue. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Клиенты P1 будут возвращены `hidden` .|
+|`riskDetail`|`riskDetail`|Сведения об обнаруженном риске. Возможные значения: None, Админженератедтемпорарипассворд, Усерперформедсекуредпассвордчанже, Усерперформедсекуредпассвордресет, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, Hidden, adminConfirmedUserCompromised, unknownFutureValue. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Клиенты P1 будут возвращены `hidden` .|
 |`source`|`string`|Источник обнаружения риска. Например, "activeDirectory". |
 |`detectionTimingType`|`riskDetectionTimingType`|Время обнаружения риска в режиме реального времени (режим реального времени/автономный режим). Возможные значения: Нотдефинед, реального времени, Неарреалтиме, offline, unknownFutureValue. |
 |`activity`|`activityType`|Указывает тип действия, с которым связан обнаруженный риск. Возможные значения: Signing, User, unknownFutureValue. |
 |`tokenIssuerType`|`tokenIssuerType`|Указывает тип поставщика маркеров для обнаруженного риска при входе. Возможные значения: AzureAD, Адфедератионсервицес и unknownFutureValue. |
 |`ipAddress`|`string`|Предоставляет IP-адрес клиента, с которого произошел риск. |
-|`location`|[`signInLocation`](signinlocation.md)|Расположение входа в систему. |
+|`location`|[signInLocation](signinlocation.md)|Расположение входа в систему. |
 |`activityDateTime`|`datetimeoffset`|Дата и время, когда возникло опасное действие. |
 |`detectedDateTime`|`datetimeoffset`|Дата и время обнаружения риска. |
 |`lastUpdatedDateTime`|`datetime`|Дата и время последнего обновления обнаружения риска. |

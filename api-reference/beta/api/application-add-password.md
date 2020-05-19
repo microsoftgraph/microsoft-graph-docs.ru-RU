@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d755914128e5945fcd45e2df79fce95f7d5c03df
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 944c0a2e30a7202ad85510be84ef8b426059f4b6
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107264"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289399"
 ---
 # <a name="add-application-password"></a>Добавление пароля приложения
 
@@ -25,9 +25,9 @@ ms.locfileid: "43107264"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
+|Для приложений | Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,9 +43,9 @@ POST /applications/{id}/addPassword
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект Password в тексте отклика. Azure AD создает надежный пароль, который возвращается с `secretText` помощью свойства. В будущем невозможно получить этот пароль.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект Password в тексте отклика. Azure AD создает надежный пароль, который возвращается с помощью `secretText` Свойства. В будущем невозможно получить этот пароль.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -55,7 +55,7 @@ POST /applications/{id}/addPassword
 POST https://graph.microsoft.com/beta/applications/{id}/addPassword
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 ```http
 HTTP/1.1 200 OK

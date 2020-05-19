@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c39e9849c8e1120cf9b9867c9f5c03310ad41831
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: a98f932150532e4ee844b1cc243e068157e32585
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107040"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289133"
 ---
 # <a name="application-removepassword"></a>Приложение: Ремовепассворд
 
@@ -26,9 +26,9 @@ ms.locfileid: "43107040"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+| Для приложений                            | Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ POST /applications/{id}/removePassword
 
 | Свойство  | Тип | Описание|
 |:----------|:-----|:-----------|
-| Него значение KeyID     | GUID | Уникальный идентификатор пароля. Обязательный. |
+| Него значение KeyID     | Идентификатор GUID | Уникальный идентификатор пароля. Обязательный. |
 
 ## <a name="response"></a>Отклик
 

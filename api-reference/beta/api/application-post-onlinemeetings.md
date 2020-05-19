@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9f85832dc557a2e2242c30cd983cfb9800382176
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
-ms.translationtype: HT
+ms.openlocfilehash: f0d6f7ff7b5fb7d6259f5154f9d021823995cb67
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934712"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289294"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
@@ -31,7 +31,7 @@ ms.locfileid: "43934712"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
 | Для приложений                            | OnlineMeetings.ReadWrite.All*  |
 
-> \* **Примечание.** Поддержка разрешений приложений прекращается, и они будут удалены в июле 2020 г. Чтобы создать событие Outlook с использованием разрешений приложений, см. статью [Создание события](user-post-events.md).
+>**Примечание:** В ближайшем будущем будет поддерживаться создание собрания по сети с маркером приложения. Мы будем предоставлять дополнительные политики приложений, которые будут дополнять область разрешений на основе приложения. На данный момент мы рекомендуем использовать путь/ме с маркером пользователя
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,6 @@ POST /app/onlineMeetings
 POST /communications/onlineMeetings
 POST /me/onlineMeetings
 ```
-> **Примечание.** путь `/app` или `/communications` с маркером приложения является устаревшим. В дальнейшем используйте путь /me с маркером пользователя для создания онлайн-собраний.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
