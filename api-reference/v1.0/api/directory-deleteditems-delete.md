@@ -5,71 +5,71 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: da214ef7cdaf1291bd85ecf0fcdf4a4290d56259
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 72a75d1227e1b6810bb43517ea51a60f3b91bc1b
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181780"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290513"
 ---
-# <a name="permanently-delete-item"></a><span data-ttu-id="11ab9-103">Удаление элемента без возможности восстановления</span><span class="sxs-lookup"><span data-stu-id="11ab9-103">Permanently delete item</span></span>
+# <a name="permanently-delete-item"></a><span data-ttu-id="fc52a-103">Удаление элемента без возможности восстановления</span><span class="sxs-lookup"><span data-stu-id="fc52a-103">Permanently delete item</span></span>
 
-<span data-ttu-id="11ab9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="11ab9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fc52a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fc52a-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="11ab9-105">Окончательное удаление элемента из контейнера для [удаленных элементов](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="11ab9-105">Permanently deletes an item from [deleted items](../resources/directory.md).</span></span>
+<span data-ttu-id="fc52a-105">Окончательное удаление элемента из контейнера для [удаленных элементов](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="fc52a-105">Permanently deletes an item from [deleted items](../resources/directory.md).</span></span>
 
-<span data-ttu-id="11ab9-106">В настоящее время функции удаленных элементов поддерживаются только для ресурсов [приложения](../resources/application.md), [групп](../resources/group.md) и [пользователей](../resources/user.md) .</span><span class="sxs-lookup"><span data-stu-id="11ab9-106">Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="11ab9-107">Вы можете окончательно удалить элемент из папки "Удаленные".</span><span class="sxs-lookup"><span data-stu-id="11ab9-107">You can permanently delete an item from deleted items.</span></span> <span data-ttu-id="11ab9-108">После окончательного удаления элемент **невозможно** восстановить.</span><span class="sxs-lookup"><span data-stu-id="11ab9-108">But, once an item is permanently deleted, it **cannot** be restored.</span></span>
+<span data-ttu-id="fc52a-106">В настоящее время функции удаленных элементов поддерживаются только для ресурсов [приложения](../resources/application.md), [групп](../resources/group.md) и [пользователей](../resources/user.md) .</span><span class="sxs-lookup"><span data-stu-id="fc52a-106">Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="fc52a-107">Вы можете окончательно удалить элемент из папки "Удаленные".</span><span class="sxs-lookup"><span data-stu-id="fc52a-107">You can permanently delete an item from deleted items.</span></span> <span data-ttu-id="fc52a-108">После окончательного удаления элемент **невозможно** восстановить.</span><span class="sxs-lookup"><span data-stu-id="fc52a-108">But, once an item is permanently deleted, it **cannot** be restored.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="11ab9-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="11ab9-109">Permissions</span></span>
-<span data-ttu-id="11ab9-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="11ab9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="fc52a-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fc52a-109">Permissions</span></span>
+<span data-ttu-id="fc52a-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fc52a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="11ab9-112">Для приложений:</span><span class="sxs-lookup"><span data-stu-id="11ab9-112">For applications:</span></span>
+<span data-ttu-id="fc52a-112">Для приложений:</span><span class="sxs-lookup"><span data-stu-id="fc52a-112">For applications:</span></span>
 
-|<span data-ttu-id="11ab9-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="11ab9-113">Permission type</span></span>      | <span data-ttu-id="11ab9-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="11ab9-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fc52a-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fc52a-113">Permission type</span></span>      | <span data-ttu-id="fc52a-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fc52a-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="11ab9-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="11ab9-115">Delegated (work or school account)</span></span> | <span data-ttu-id="11ab9-116">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="11ab9-116">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="11ab9-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="11ab9-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="11ab9-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="11ab9-118">Not supported.</span></span>    |
-|<span data-ttu-id="11ab9-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="11ab9-119">Application</span></span> | <span data-ttu-id="11ab9-120">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="11ab9-120">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
+|<span data-ttu-id="fc52a-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fc52a-115">Delegated (work or school account)</span></span> | <span data-ttu-id="fc52a-116">Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="fc52a-116">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="fc52a-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fc52a-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc52a-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fc52a-118">Not supported.</span></span>    |
+|<span data-ttu-id="fc52a-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fc52a-119">Application</span></span> | <span data-ttu-id="fc52a-120">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc52a-120">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
 
-<span data-ttu-id="11ab9-121">Для пользователей:</span><span class="sxs-lookup"><span data-stu-id="11ab9-121">For users:</span></span>
+<span data-ttu-id="fc52a-121">Для пользователей:</span><span class="sxs-lookup"><span data-stu-id="fc52a-121">For users:</span></span>
 
-|<span data-ttu-id="11ab9-122">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="11ab9-122">Permission type</span></span>      | <span data-ttu-id="11ab9-123">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="11ab9-123">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fc52a-122">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fc52a-122">Permission type</span></span>      | <span data-ttu-id="fc52a-123">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fc52a-123">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="11ab9-124">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="11ab9-124">Delegated (work or school account)</span></span> | <span data-ttu-id="11ab9-125">User.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="11ab9-125">User.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="11ab9-126">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="11ab9-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="11ab9-127">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="11ab9-127">Not supported.</span></span> |
-|<span data-ttu-id="11ab9-128">Для приложений</span><span class="sxs-lookup"><span data-stu-id="11ab9-128">Application</span></span> | <span data-ttu-id="11ab9-129">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="11ab9-129">User.ReadWrite.All</span></span> |
+|<span data-ttu-id="fc52a-124">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fc52a-124">Delegated (work or school account)</span></span> | <span data-ttu-id="fc52a-125">User.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="fc52a-125">User.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="fc52a-126">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fc52a-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc52a-127">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fc52a-127">Not supported.</span></span> |
+|<span data-ttu-id="fc52a-128">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fc52a-128">Application</span></span> | <span data-ttu-id="fc52a-129">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc52a-129">User.ReadWrite.All</span></span> |
 
-<span data-ttu-id="11ab9-130">Для групп:</span><span class="sxs-lookup"><span data-stu-id="11ab9-130">For groups:</span></span>
+<span data-ttu-id="fc52a-130">Для групп:</span><span class="sxs-lookup"><span data-stu-id="fc52a-130">For groups:</span></span>
 
-|<span data-ttu-id="11ab9-131">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="11ab9-131">Permission type</span></span>      | <span data-ttu-id="11ab9-132">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="11ab9-132">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fc52a-131">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fc52a-131">Permission type</span></span>      | <span data-ttu-id="fc52a-132">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fc52a-132">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="11ab9-133">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="11ab9-133">Delegated (work or school account)</span></span> | <span data-ttu-id="11ab9-134">Group.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="11ab9-134">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="11ab9-135">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="11ab9-135">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="11ab9-136">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="11ab9-136">Not supported.</span></span>    |
-|<span data-ttu-id="11ab9-137">Для приложений</span><span class="sxs-lookup"><span data-stu-id="11ab9-137">Application</span></span> | <span data-ttu-id="11ab9-138">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="11ab9-138">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="fc52a-133">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fc52a-133">Delegated (work or school account)</span></span> | <span data-ttu-id="fc52a-134">Group.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="fc52a-134">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="fc52a-135">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fc52a-135">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc52a-136">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fc52a-136">Not supported.</span></span>    |
+|<span data-ttu-id="fc52a-137">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fc52a-137">Application</span></span> | <span data-ttu-id="fc52a-138">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc52a-138">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="11ab9-139">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="11ab9-139">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fc52a-139">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fc52a-139">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directory/deletedItems/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="11ab9-140">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="11ab9-140">Request headers</span></span>
-| <span data-ttu-id="11ab9-141">Имя</span><span class="sxs-lookup"><span data-stu-id="11ab9-141">Name</span></span>       | <span data-ttu-id="11ab9-142">Описание</span><span class="sxs-lookup"><span data-stu-id="11ab9-142">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fc52a-140">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fc52a-140">Request headers</span></span>
+| <span data-ttu-id="fc52a-141">Имя</span><span class="sxs-lookup"><span data-stu-id="fc52a-141">Name</span></span>       | <span data-ttu-id="fc52a-142">Описание</span><span class="sxs-lookup"><span data-stu-id="fc52a-142">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="11ab9-143">Авторизация</span><span class="sxs-lookup"><span data-stu-id="11ab9-143">Authorization</span></span>  | <span data-ttu-id="11ab9-144">Bearer &lt;code&gt; *Обязательный*.</span><span class="sxs-lookup"><span data-stu-id="11ab9-144">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="11ab9-145">Accept</span><span class="sxs-lookup"><span data-stu-id="11ab9-145">Accept</span></span>  | <span data-ttu-id="11ab9-146">application/json</span><span class="sxs-lookup"><span data-stu-id="11ab9-146">application/json</span></span> |
+| <span data-ttu-id="fc52a-143">Authorization</span><span class="sxs-lookup"><span data-stu-id="fc52a-143">Authorization</span></span>  | <span data-ttu-id="fc52a-144">Bearer &lt;code&gt; *Обязательный*.</span><span class="sxs-lookup"><span data-stu-id="fc52a-144">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="fc52a-145">Accept</span><span class="sxs-lookup"><span data-stu-id="fc52a-145">Accept</span></span>  | <span data-ttu-id="fc52a-146">application/json</span><span class="sxs-lookup"><span data-stu-id="fc52a-146">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="11ab9-147">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="11ab9-147">Request body</span></span>
-<span data-ttu-id="11ab9-148">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="11ab9-148">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fc52a-147">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fc52a-147">Request body</span></span>
+<span data-ttu-id="fc52a-148">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fc52a-148">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="11ab9-149">Ответ</span><span class="sxs-lookup"><span data-stu-id="11ab9-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fc52a-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="fc52a-149">Response</span></span>
 
-<span data-ttu-id="11ab9-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="11ab9-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="fc52a-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="fc52a-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="11ab9-152">Пример</span><span class="sxs-lookup"><span data-stu-id="11ab9-152">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="11ab9-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="11ab9-153">Request</span></span>
+## <a name="example"></a><span data-ttu-id="fc52a-152">Пример</span><span class="sxs-lookup"><span data-stu-id="fc52a-152">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fc52a-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="fc52a-153">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="11ab9-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="11ab9-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fc52a-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="fc52a-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_directory"
@@ -77,26 +77,26 @@ DELETE /directory/deletedItems/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
-# <a name="c"></a>[<span data-ttu-id="11ab9-155">C#</span><span class="sxs-lookup"><span data-stu-id="11ab9-155">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fc52a-155">C#</span><span class="sxs-lookup"><span data-stu-id="fc52a-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="11ab9-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="11ab9-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fc52a-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fc52a-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="11ab9-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="11ab9-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fc52a-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fc52a-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="11ab9-158">Java</span><span class="sxs-lookup"><span data-stu-id="11ab9-158">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="fc52a-158">Java</span><span class="sxs-lookup"><span data-stu-id="fc52a-158">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="11ab9-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="11ab9-159">Response</span></span>
-<span data-ttu-id="11ab9-p104">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="11ab9-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="fc52a-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="fc52a-159">Response</span></span>
+<span data-ttu-id="fc52a-p104">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fc52a-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
