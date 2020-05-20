@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5f0ef27563906c6a172ad0b8315842cfc95e7192
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fdf4bde774bdfa701ce730faec9f70f723b7e1b6
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509445"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290351"
 ---
 # <a name="clone-a-team"></a>Клонирование команды
 
@@ -38,9 +38,9 @@ ms.locfileid: "42509445"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений                            | Group.ReadWrite.All |
+|Для приложений                            | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -65,9 +65,9 @@ POST /teams/{id}/clone
 |партстоклоне| [клонаблетеампартс](../resources/clonableteamparts.md) |Разделенный запятыми список частей, которые необходимо клонировать. Юридическими частями являются "приложения, вкладки, параметры, каналы, элементы".|
 |visibility|[объекта teamvisibilitytype](../resources/teamvisibilitytype.md) (необязательно)| Задает видимость группы. Возможные значения: **Private**, **Public**. Если параметр Visibility не указан, то видимость будет скопирована из исходной группы или группы. Если **Группа является** клонированной, параметр видимости игнорируется, и для отображения новой группы будет задано значение значение hiddenmembership.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвратит код `202 Accepted` отклика с расположением: Header, указывающий на ресурс [Operation](../resources/teamsasyncoperation.md) .
+В случае успеха этот метод возвратит `202 Accepted` код отклика с расположением: Header, указывающий на ресурс [Operation](../resources/teamsasyncoperation.md) .
 После завершения операции ресурс Operation сообщит вам идентификатор созданной команды.
 
 ## <a name="example"></a>Пример

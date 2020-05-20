@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9de471fb60286aa23c9459498033196662260eef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
-ms.translationtype: HT
+ms.openlocfilehash: 64967be5454428591c81cc955038424156409948
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407160"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290464"
 ---
 # <a name="calendar-resource-type"></a>Тип ресурса calendar
 
@@ -54,7 +54,6 @@ ms.locfileid: "43407160"
 |color|calendarColor|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|Стандартный поставщик для собраний по сети, отправленных из этого календаря. Возможные значения: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |id|String|Уникальный идентификатор календаря. Только для чтения.|
-|isDefaultCalendar|Логический|Значение True, если это стандартный календарь, где новые события создаются по умолчанию. В противном случае используется значение False.|
 |isRemovable|Логический| Указывает, можно ли удалить этот календарь из почтового ящика пользователя.|
 |isTallyingResponses|Логический|Указывает, поддерживает ли этот пользовательский календарь отслеживание ответов на приглашения на собрания. Только приглашения на собрания, отправленные из основных календарей пользователей, поддерживают отслеживание ответов на приглашения на собрания.|
 |name|String|Имя календаря.|
@@ -65,7 +64,7 @@ ms.locfileid: "43407160"
 |:---------------|:--------|:----------|
 |calendarPermissions|Коллекция [calendarPermission](calendarpermission.md)| Разрешения пользователей, которым предоставлен доступ к календарю.|
 |calendarView|Коллекция [Event](event.md)|Представление календаря для календаря. Свойство навигации. Только для чтения.|
-|события|Коллекция [Event](event.md)|События в календаре. Свойство навигации. Только для чтения.|
+|events|Коллекция [Event](event.md)|События в календаре. Свойство навигации. Только для чтения.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для календаря. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для календаря. Только для чтения. Допускается значение null.|
 
@@ -119,7 +118,6 @@ ms.locfileid: "43407160"
   "color": "String",
   "defaultOnlineMeetingProvider": "string",
   "id": "string (identifier)",
-  "isDefaultCalendar": "boolean",
   "isRemovable": "boolean",
   "isTallyingResponses": "boolean",
   "name": "string",

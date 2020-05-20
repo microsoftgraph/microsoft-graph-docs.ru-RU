@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 95c3f5355b31733189b45b0fa0383fb5afa86202
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: aa5de4a999dc57b9f9aab9c970530a0da56bf4f8
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082317"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289702"
 ---
 # <a name="create-call"></a>Создание звонка
 
@@ -47,7 +47,7 @@ POST /communications/calls
 ## <a name="request-body"></a>Основной текст запроса
 В тексте запроса добавьте представление объекта [Call](../resources/call.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Call](../resources/call.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
@@ -90,7 +90,7 @@ Content-Type: application/json
     "audio"
   ],
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
 }
 ```
@@ -399,7 +399,7 @@ Content-Type: application/json
 ### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>Пример 3: Создание группового звонка с размещенными у службы носителями
 
 Поддерживает до 5 пользователей VoIP. В этом примере показано, как создать групповой вызов с двумя пользователями VoIP.
-> **Примечание:** В этом примере для `Calls.InitiateGroupCalls.All` вызова требуется разрешение. Созданный групповой вызов не поддерживает чат или запись.
+> **Примечание:** В этом примере для вызова требуется `Calls.InitiateGroupCalls.All` разрешение. Созданный групповой вызов не поддерживает чат или запись.
 
 ##### <a name="request"></a>Запрос
 
@@ -466,7 +466,7 @@ Content-Type: application/json
 ### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>Пример 4: создание групповой связи с размещенными в приложении носителями
 
 Поддерживает до 5 пользователей VoIP. В этом примере показано, как создать групповой вызов с двумя пользователями VoIP.
-> **Примечание:** В этом примере для `Calls.InitiateGroupCalls.All` вызова требуется разрешение. Созданный групповой вызов не поддерживает чат или запись.
+> **Примечание:** В этом примере для вызова требуется `Calls.InitiateGroupCalls.All` разрешение. Созданный групповой вызов не поддерживает чат или запись.
 
 ##### <a name="request"></a>Запрос
 
@@ -535,7 +535,7 @@ Content-Type: application/json
 Эти сведения можно получить из API " [Получение собраний по сети](../api/onlinemeeting-get.md) " (только для собраний на основе VTC).
 
 Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены вместе со сведениями, полученными из [API получения Интернет-собраний](../api/onlinemeeting-get.md) (только для собраний на основе VTC) с фактическими значениями, чтобы обеспечить работу примера.
-> **Примечание:** В `Calls.JoinGroupCalls.All` этом примере требуется разрешение.
+> **Примечание:** В этом примере требуется `Calls.JoinGroupCalls.All` разрешение.
 
 ##### <a name="request"></a>Запрос
 

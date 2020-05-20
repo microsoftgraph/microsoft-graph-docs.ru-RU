@@ -1,17 +1,17 @@
 ---
-title: Общие сведения о собраниях по сети
+title: Использование API облачных коммуникаций для создания собраний по сети или присоединения к ним
 description: У вас будет возможность создать собрание, которое будет выполняться в будущем или мгновенно
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: bd85c3be66890d4763e2c2b1910ee7049573d446
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 22d44c32b6ece847283f2e572eeaf468eaac3dbe
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871661"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289643"
 ---
-# <a name="online-meetings-overview"></a>Общие сведения о собраниях по сети
+# <a name="use-the-cloud-communications-api-to-create-or-join-online-meetings"></a>Использование API облачных коммуникаций для создания собраний по сети или присоединения к ним
 
 В собраниях по сети предоставляется возможность указать определенные сведения, например тему собрания, и всех участников. Вы также можете задать дату и время начала и окончания собрания.
 
@@ -28,10 +28,11 @@ ms.locfileid: "40871661"
 ## <a name="join-an-online-meeting"></a>Присоединение к собранию по сети
 После создания собрания по сети пользователи могут присоединиться двумя способами:
 
-1. Через браузер, используя **жоинурл** , возвращенный в составе [координат собрания](/graph/api/resources/onlinemeeting).
+1. Через браузер, используя **жоинвебурл** , возвращенный в составе [координат собрания](/graph/api/resources/onlinemeeting).
 
 2. С помощью [API создания вызовов](/graph/api/application-post-calls#example-5-join-scheduled-meeting-with-service-hosted-media), для которого необходимо предоставить [координаты собрания](/graph/api/resources/onlinemeeting)([организермитингинфо](/graph/api/resources/organizermeetinginfo)и [чатинфо](/graph/api/resources/chatinfo)).
 
 ## <a name="see-also"></a>См. также
 
 - [Разрешения для собраний по сети](/graph/permissions-reference#online-meetings-permissions)
+- [Выбор API в Microsoft Graph для создания собраний по сети и присоединения к ним](choose-online-meeting-api.md)

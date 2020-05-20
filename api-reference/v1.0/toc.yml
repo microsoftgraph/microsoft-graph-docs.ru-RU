@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Получение маркеров аутентификации
     items:
-      - name: Общие сведения
+      - name: Обзор
         href: /graph/auth/index?context=graph/api/1.0
       - name: Основы
         href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -22,7 +22,7 @@ items:
         href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
   - name: Использование API
     items:
-      - name: Общие сведения
+      - name: Обзор
         href: /graph/use-the-api?context=graph/api/1.0
       - name: Разбиение на страницы
         href: /graph/paging?context=graph/api/1.0
@@ -58,7 +58,7 @@ items:
       - name: Добавление пользовательских данных
         displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: /graph/extensibility-overview?context=graph/api/1.0
           - name: Использование открытых расширений (пример)
             href: /graph/extensibility-open-users?context=graph/api/1.0
@@ -72,7 +72,7 @@ items:
       - name: Azure AD Graph
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
           - name: Контрольный список для переноса приложений
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -167,11 +167,11 @@ items:
   - name: Справочник по версии 1.0
     expanded: true
     items:
-      - name: Общие сведения
+      - name: Обзор
         href: overview.md
       - name: Пользователи
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -188,6 +188,15 @@ items:
                 href: api/user-delete.md
               - name: Получение дельты
                 href: api/user-delta.md
+          - name: Назначения ролей приложений
+            href: resources/approleassignment.md
+            items:
+              - name: List
+                href: api/user-list-approleassignments.md
+              - name: Добавить
+                href: api/user-post-approleassignments.md
+              - name: Удалить
+                href: api/user-delete-approleassignments.md
           - name: Календарь
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
@@ -223,6 +232,10 @@ items:
                 href: api/user-list-contacts.md
               - name: Список папок контактов
                 href: api/user-list-contactfolders.md
+          - name: Предоставление делегированных разрешений
+            items:
+              - name: List
+                href: api/user-list-oauth2permissiongrants.md
           - name: Объекты каталога
             href: resources/directoryobject.md
             items:
@@ -312,7 +325,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Notes
+          - name: Примечания
             href: resources/onenote.md
             items:
               - name: Создание записной книжки
@@ -374,7 +387,7 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Группы
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/groups-overview.md
           - name: Группа
             href: resources/group.md
@@ -454,6 +467,15 @@ items:
                     href: api/grouplifecyclepolicy-removegroup.md
               - name: Проверка свойств
                 href: api/group-validateproperties.md
+          - name: Назначения ролей приложений
+            href: resources/approleassignment.md
+            items:
+              - name: List
+                href: api/group-list-approleassignments.md
+              - name: Добавить
+                href: api/group-post-approleassignments.md
+              - name: Удалить
+                href: api/group-delete-approleassignments.md
           - name: Вложение
             href: resources/attachment.md
             items:
@@ -746,7 +768,7 @@ items:
                 href: api/calendarpermission-get.md
               - name: Обновление
                 href: api/calendarpermission-update.md
-              - name: Delete
+              - name: Удаление
                 href: api/calendarpermission-delete.md
           - name: Категории
             href: resources/outlookcategory.md
@@ -778,6 +800,20 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
+              - name: Заключит
+                items:
+                  - name: Заключит
+                    href: resources/place.md
+                  - name: Тип комнаты
+                    href: resources/room.md
+                  - name: Тип списка помещений
+                    href: resources/roomlist.md
+                  - name: Список мест
+                    href: api/place-list.md
+                  - name: Получение
+                    href: api/place-get.md
+                  - name: Обновление места
+                    href: api/place-update.md
       - name: Коммуникации из облака
         displayName: Cloud communications
         items:
@@ -807,7 +843,7 @@ items:
                 items:
                   - name: Воспроизведение запроса
                     href: api/call-playprompt.md
-                  - name: Запись
+                  - name: Ответ на запись
                     href: api/call-record.md
                   - name: Подписка на гудок
                     href: api/call-subscribetotone.md
@@ -870,7 +906,7 @@ items:
       - name: Устройства и приложения
         displayName: Intune
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/intune-graph-overview.md
           - name: Управление приложениями
             href: resources/intune-app-conceptual.md
@@ -1020,7 +1056,7 @@ items:
               - name: Набор приложений Office для macOS
                 href: resources/intune-apps-macosofficesuiteapp.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-apps-macosofficesuiteapp-list.md
                   - name: Получение
                     href: api/intune-apps-macosofficesuiteapp-get.md
@@ -1068,7 +1104,7 @@ items:
               - name: Конфигурация мобильного приложения на управляемом устройстве
                 href: resources/intune-apps-manageddevicemobileappconfiguration.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-apps-manageddevicemobileappconfiguration-list.md
                   - name: Получение
                     href: api/intune-apps-manageddevicemobileappconfiguration-get.md
@@ -1254,7 +1290,7 @@ items:
               - name: Файл содержимого мобильного приложения
                 href: resources/intune-apps-mobileappcontentfile.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-apps-mobileappcontentfile-list.md
                   - name: Получение
                     href: api/intune-apps-mobileappcontentfile-get.md
@@ -1282,7 +1318,7 @@ items:
               - name: Тип ресурса userInstallStateSummary
                 href: resources/intune-books-userinstallstatesummary.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-books-userinstallstatesummary-list.md
                   - name: Получение
                     href: api/intune-books-userinstallstatesummary-get.md
@@ -1728,7 +1764,7 @@ items:
                 items:
                   - name: Получение
                     href: api/intune-deviceconfig-deviceconfigurationuseroverview-get.md
-                  - name: Обновление
+                  - name: Update
                     href: api/intune-deviceconfig-deviceconfigurationuseroverview-update.md
               - name: 'Состояние пользователей, касающееся конфигураций устройств'
                 href: resources/intune-deviceconfig-deviceconfigurationuserstatus.md
@@ -1901,7 +1937,7 @@ items:
               - name: Специальная конфигурация macOS
                 href: resources/intune-deviceconfig-macoscustomconfiguration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -1927,7 +1963,7 @@ items:
               - name: Общая конфигурация устройств macOS
                 href: resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-get.md
@@ -2103,7 +2139,7 @@ items:
               - name: Конфигурация Windows 10 Endpoint Protection
                 href: resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
@@ -2142,7 +2178,7 @@ items:
               - name: Политика соответствия требованиями для Windows 10 Mobile
                 href: resources/intune-deviceconfig-windows10mobilecompliancepolicy.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-windows10mobilecompliancepolicy-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-windows10mobilecompliancepolicy-get.md
@@ -2309,7 +2345,7 @@ items:
               - name: Событие аудита
                 href: resources/intune-auditing-auditevent.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-auditing-auditevent-list.md
                   - name: Получение
                     href: api/intune-auditing-auditevent-get.md
@@ -2361,7 +2397,7 @@ items:
               - name: Событие "Устранение проблем с управлением устройствами"
                 href: resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
                   - name: Получение
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
@@ -2753,7 +2789,7 @@ items:
               - name: Сводка по обучению для приложения Windows Information Protection
                 href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
                   - name: Получение
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
@@ -2787,7 +2823,7 @@ items:
               - name: Сводка по обучению сети Windows Information Protection
                 href: resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-list.md
                   - name: Получение
                     href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-get.md
@@ -2960,7 +2996,7 @@ items:
                     href: api/intune-onboarding-organization-list.md
                   - name: Получение
                     href: api/intune-onboarding-organization-get.md
-                  - name: Update
+                  - name: Обновление
                     href: api/intune-onboarding-organization-update.md
                   - name: Действие setMobileDeviceManagementAuthority
                     href: api/intune-onboarding-organization-setmobiledevicemanagementauthority.md
@@ -2969,7 +3005,7 @@ items:
               - name: Токен VPP
                 href: resources/intune-onboarding-vpptoken.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-onboarding-vpptoken-list.md
                   - name: Получение
                     href: api/intune-onboarding-vpptoken-get.md
@@ -3009,7 +3045,7 @@ items:
               - name: Определение роли управления устройствами и приложениями
                 href: resources/intune-rbac-deviceandappmanagementroledefinition.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-rbac-deviceandappmanagementroledefinition-list.md
                   - name: Получение
                     href: api/intune-rbac-deviceandappmanagementroledefinition-get.md
@@ -3232,7 +3268,7 @@ items:
       - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/onedrive.md
           - name: Диски
             href: resources/drive.md
@@ -3315,10 +3351,10 @@ items:
                 href: api/permission-update.md
               - name: Удаление разрешения
                 href: api/permission-delete.md
-      - name: Удостоверения и доступ
+      - name: Удостоверение и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/azure-ad-overview.md
           - name: Приложение
             href: resources/application.md
@@ -3343,34 +3379,32 @@ items:
                 href: api/directory-deleteditems-delete.md
               - name: Восстановление удаленного приложения
                 href: api/directory-deleteditems-restore.md
-              - name: Добавление пароля
-                href: api/application-addpassword.md
-              - name: Удаление пароля
-                href: api/application-removepassword.md
-              - name: Создание расширения
-                href: api/application-post-extensionproperty.md
-              - name: Список расширений
-                href: api/application-list-extensionproperty.md
-              - name: Удаление расширения
-                href: api/application-delete-extensionproperty.md
-              - name: Список владельцев
-                href: api/application-list-owners.md
-              - name: Добавление владельца
-                href: api/application-post-owners.md
-              - name: Удаление владельца
-                href: api/application-delete-owners.md
-              - name: Добавление политики выдачи маркеров
-                href: api/application-post-tokenissuancepolicies.md
-              - name: Список политик выдачи маркеров
-                href: api/application-list-tokenissuancepolicies.md
-              - name: Удаление политики выдачи маркеров
-                href: api/application-delete-tokenissuancepolicies.md
-              - name: Добавление политики срока действия маркера
-                href: api/application-post-tokenlifetimepolicies.md
-              - name: Политики времени существования маркеров списка
-                href: api/application-list-tokenlifetimepolicies.md
-              - name: Удаление политики срока действия маркера
-                href: api/application-delete-tokenlifetimepolicies.md
+              - name: Сертификаты и секреты
+                items:
+                  - name: Добавление пароля
+                    href: api/application-addpassword.md
+                  - name: Удаление пароля
+                    href: api/application-removepassword.md
+                  - name: Клавиша прибавления
+                    href: api/application-addkey.md
+                  - name: Удалить ключ
+                    href: api/application-removekey.md
+              - name: Расширения
+                items:
+                  - name: Список
+                    href: api/application-list-extensionproperty.md
+                  - name: Создание
+                    href: api/application-post-extensionproperty.md
+                  - name: Удалить
+                    href: api/application-delete-extensionproperty.md
+              - name: Владельцы
+                items:
+                  - name: List
+                    href: api/application-list-owners.md
+                  - name: Добавить
+                    href: api/application-post-owners.md
+                  - name: Удалить
+                    href: api/application-delete-owners.md
           - name: Журналы аудита
             href: resources/azure-ad-auditlog-overview.md
             items:
@@ -3542,7 +3576,7 @@ items:
             items:
               - name: Оценка угроз
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/threatassessment-api-overview.md
                   - name: Запрос оценки угроз
                     href: resources/threatassessmentrequest.md
@@ -3565,6 +3599,19 @@ items:
             items:
               - name: Создание приглашения
                 href: api/invitation-post.md
+          - name: Предоставление делегированных разрешений
+            href: resources/oauth2permissiongrant.md
+            items:
+              - name: Список
+                href: api/oauth2permissiongrant-list.md
+              - name: Создание
+                href: api/oauth2permissiongrant-post.md
+              - name: Получение
+                href: api/oauth2permissiongrant-get.md
+              - name: Обновление
+                href: api/oauth2permissiongrant-update.md
+              - name: Удаление
+                href: api/oauth2permissiongrant-delete.md
           - name: Организация
             href: resources/organization.md
             items:
@@ -3662,6 +3709,74 @@ items:
                     href: api/tokenlifetimepolicy-delete.md
                   - name: Список субъектов-служб и приложений
                     href: api/tokenlifetimepolicy-list-appliesto.md
+          - name: Субъект-служба
+            href: resources/serviceprincipal.md
+            items:
+              - name: Список
+                href: api/serviceprincipal-list.md
+              - name: Создание
+                href: api/serviceprincipal-post-serviceprincipals.md
+              - name: Получение
+                href: api/serviceprincipal-get.md
+              - name: Обновление
+                href: api/serviceprincipal-update.md
+              - name: Удаление
+                href: api/serviceprincipal-delete.md
+              - name: Список созданных объектов
+                href: api/serviceprincipal-list-createdobjects.md
+              - name: Список корпоративных объектов
+                href: api/serviceprincipal-list-ownedobjects.md
+              - name: Назначения ролей приложений
+                href: resources/approleassignment.md
+                items:
+                  - name: List
+                    href: api/serviceprincipal-list-approleassignments.md
+                  - name: Добавить
+                    href: api/serviceprincipal-post-approleassignments.md
+                  - name: Удалить
+                    href: api/serviceprincipal-delete-approleassignments.md
+                  - name: 'Список, назначенный'
+                    href: api/serviceprincipal-list-approleassignedto.md
+                  - name: Добавление назначения
+                    href: api/serviceprincipal-post-approleassignedto.md
+                  - name: Удаление назначения
+                    href: api/serviceprincipal-delete-approleassignedto.md
+              - name: Сертификаты и секреты
+                items:
+                  - name: Добавление пароля
+                    href: api/serviceprincipal-addpassword.md
+                  - name: Удаление пароля
+                    href: api/serviceprincipal-removepassword.md
+                  - name: Клавиша прибавления
+                    href: api/serviceprincipal-addkey.md
+                  - name: Удалить ключ
+                    href: api/serviceprincipal-removekey.md
+              - name: Предоставление делегированных разрешений
+                items:
+                  - name: List
+                    href: api/serviceprincipal-list-oauth2permissiongrants.md
+              - name: Участие
+                items:
+                  - name: Список свойств member of
+                    href: api/serviceprincipal-list-memberof.md
+                  - name: Список транзитивных участников
+                    href: api/serviceprincipal-list-transitivememberof.md
+                  - name: Проверка членства в группах
+                    href: api/serviceprincipal-checkmembergroups.md
+                  - name: Проверка объектов Member
+                    href: api/serviceprincipal-checkmemberobjects.md
+                  - name: Вывод групп пользователя
+                    href: api/serviceprincipal-getmembergroups.md
+                  - name: Вывод объектов членства
+                    href: api/serviceprincipal-getmemberobjects.md
+              - name: Владельцы
+                items:
+                  - name: List
+                    href: api/serviceprincipal-list-owners.md
+                  - name: Добавить
+                    href: api/serviceprincipal-post-owners.md
+                  - name: Удалить
+                    href: api/serviceprincipal-delete-owners.md
           - name: Подписанная единица SKU
             href: resources/subscribedsku.md
             items:
@@ -3672,7 +3787,7 @@ items:
       - name: Почта
         displayName: 'Outlook, Outlook mail'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/mail-api-overview.md
           - name: Сообщение
             href: resources/message.md
@@ -3850,7 +3965,7 @@ items:
                 href: api/onenote-list-sections.md
               - name: Список групп разделов
                 href: api/onenote-list-sectiongroups.md
-              - name: Вывод списка страниц
+              - name: Список страниц
                 href: api/onenote-list-pages.md
               - name: Создание страницы
                 href: api/onenote-post-pages.md
@@ -3927,7 +4042,7 @@ items:
                 href: api/resource-get.md
       - name: Люди и рабочая аналитика
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/social-overview.md
           - name: Люди
             items:
@@ -4266,7 +4381,7 @@ items:
       - name: Сайты и списки
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/sharepoint.md
           - name: Сайты
             href: resources/site.md
@@ -4312,7 +4427,7 @@ items:
       - name: Задачи и планы
         displayName: Planner
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/planner-overview.md
           - name: План
             href: resources/plannerplan.md
@@ -4787,7 +4902,7 @@ items:
                 href: api/range-unmerge.md
               - name: Очистка
                 href: api/range-clear.md
-              - name: Удаление
+              - name: Удалить
                 href: api/range-delete.md
           - name: Таблица
             href: resources/table.md

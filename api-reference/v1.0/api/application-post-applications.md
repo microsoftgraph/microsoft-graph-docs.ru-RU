@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 43b837f2d9f85168b7e4c031f41eabcffe38c72a
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
-ms.translationtype: HT
+ms.openlocfilehash: afc2e7d49352643f63f817d208e6ef552e9af7fd
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108671"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290232"
 ---
 # <a name="create-application"></a>Создание приложения
 
@@ -18,15 +18,18 @@ ms.locfileid: "43108671"
 
 Создайте новый объект [application](../resources/application.md).
 
+> [!IMPORTANT]
+> Добавление [**пассвордкредентиал**](../resources/passwordcredential.md) при создании приложений не поддерживается. Используйте метод [аддпассворд](application-addpassword.md) , чтобы добавить пароли для приложения.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Для приложений | Application. ReadWrite. ALL, Application. ReadWrite. Овнедби |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -35,9 +38,10 @@ POST /applications
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя           | Описание                |
+|:---------------|:---------------------------|
+| Авторизация  | Bearer {токен}. Обязательный.  |
+| Content-Type   | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса должно быть представление объекта [application](../resources/application.md) в формате JSON. Текст запроса должен включать обязательное свойство **displayName**.
@@ -84,7 +88,7 @@ Content-length: 67
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

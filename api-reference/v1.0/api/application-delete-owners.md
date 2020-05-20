@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2c2191685d3cb033964e14dd67edc60dfeb4cb7c
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: e6c5689fd46ef68ef38727d92bbbfedcc6ad1e58
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108482"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290295"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
@@ -23,14 +23,14 @@ ms.locfileid: "43108482"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/{id}/owners/{id}/$ref
+DELETE /applications/{id}/owners/{id}/$ref
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -59,13 +59,6 @@ POST /applications/{id}/owners/{id}/$ref
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/applications/{id}/owners/{id}/$ref
-Content-type: application/json
-Content-length: 30
-
-{
-"@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
-}
-
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-delete-owners-csharp-snippets.md)]
