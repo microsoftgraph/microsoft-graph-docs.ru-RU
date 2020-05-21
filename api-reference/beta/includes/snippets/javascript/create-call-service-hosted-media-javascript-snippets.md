@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2711a2d48b83f597903b45c2e8af4a024f91e99b
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 91ce0f34c0eb82b5d5d2d0ca419fdf48f2ff160b
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39856735"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44338902"
 ---
 ```javascript
 
@@ -35,7 +35,7 @@ const call = {
     "audio"
   ],
   mediaConfig: {
-    @odata.type: "#microsoft.graph.serviceHostedMediaConfig",
+    @odata.type: "#microsoft.graph.serviceHostedMediaConfig"
   }
 };
 
