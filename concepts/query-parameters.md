@@ -1,15 +1,15 @@
 ---
 title: Настройка ответов с помощью параметров запроса
-description: В Microsoft Graph предусмотрены необязательные параметры запросов, с помощью которых можно указывать и регулировать объем возвращаемых данных. Поддерживаются указанные ниже параметры запросов.
-author: mumbi-o
+description: Microsoft Graph предоставляет необязательные параметры запроса, которые можно использовать для указания и управления объемом данных, возвращаемых в ответе.
+author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 85da7f35425a84572f3853853815762be847a9ee
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
-ms.translationtype: HT
+ms.openlocfilehash: 890b65f607ee66725650002ffc576491571ecab4
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543438"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44291043"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -36,7 +36,7 @@ API Microsoft Graph может поддерживать один или неск
 | [$filter](#filter-parameter)       | Фильтрует результаты (строки).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
 | [$format](#format-parameter)       | Возвращает результаты в указанном формате мультимедиа.|[`/users?$format=json`][format-example]
 | [$orderby](#orderby-parameter)     | Упорядочивает результаты.|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search-parameter)       | Возвращает результаты на основании условий поиска. В настоящее время поддерживается в коллекциях **messages** и **person**.|[`/me/messages?$search=pizza`][search-example]
+| [$search](#search-parameter)       | Возвращает результаты на основании условий поиска. |[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | Фильтрует свойства (столбцы).|[`/users?$select=givenName,surname`][select-example]
 | [$skip](#skip-parameter)           | Применяется для индексации в результирующем наборе. Также используется некоторыми API для разбиения по страницам и может использоваться вместе с параметром `$top` для разбиения результатов по страницам вручную. | [`/me/messages?$skip=11`][skip-example]
 | [$top](#top-parameter)             | Задает размер страницы результатов. |[`/users?$top=2`][top-example]
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 Параметр запроса `$count` позволяет включить общее количество элементов коллекции вместе со страницей значений, возвращенных из Microsoft Graph. 
 
-Например, приведенный ниже запрос возвращает коллекцию **contact** текущего пользователя, а также ряд элементов коллекции **contact** в свойстве `@odata.count`.
+Например, следующий запрос возвращает коллекцию **Contact** текущего пользователя и число элементов в коллекции **Contacts** в `@odata.count` свойстве.
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
@@ -94,7 +94,13 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 [Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
->**Примечание.** Параметр `$count` не поддерживается коллекциями ресурсов, производных от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), такими как коллекции [users](/graph/api/resources/user?view=graph-rest-1.0) или [groups](/graph/api/resources/group?view=graph-rest-1.0).
+`$count`Параметр Query поддерживается для этих коллекций ресурсов и их отношений, производных от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
+- [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
+- [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
+- [device](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
+- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
+- [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
+- [Пользователи](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta).
 
 ## <a name="expand-parameter"></a>Параметр expand
 
@@ -124,9 +130,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 ## <a name="filter-parameter"></a>Параметр filter
 
-Параметр запроса `$filter` позволяет получить только подмножество объектов коллекции. 
+Параметр запроса `$filter` позволяет получить только подмножество объектов коллекции. `$filter`Параметр запроса также можно использовать для получения отношений, таких как Members, memberOf, транситивемемберс и транситивемембероф. Например, получите все группы безопасности, участником которых он является.
 
-Например, чтобы найти пользователей, чье отображаемое имя начинается с буквы J, используйте `startswith`.
+Следующий пример можно использовать для поиска пользователей, отображаемое имя которых начинается с буквы J, и используйте `startswith` .
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
@@ -149,7 +155,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 > **Примечание.** При одновременном использовании `$filter` и `$orderby` в одном запросе [задайте свойства определенным образом](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query), чтобы получать сообщения.  
 
-Примеры использования см. в приведенной ниже таблице. Дополнительные сведения о синтаксисе `$filter` см. в [статье о протоколе OData][odata-filter].  
+Некоторые примеры использования приведены в следующей таблице. Дополнительные сведения о синтаксисе `$filter` см. в [статье о протоколе OData][odata-filter].  
 
 Приведенная ниже таблица содержит несколько примеров использования параметра запроса `$filter`.
 
@@ -163,6 +169,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 | Получение всех сообщений, полученных вошедшим пользователем в апреле 2017 г. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) 
 | Получение всех непрочитанных сообщений в папке "Входящие" вошедшего пользователя. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) 
 | Получение списка всех групп Office 365 в организации. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) 
+| Используйте приведение OData для получения транзитивного членства в группах с отображаемым именем, начинающимся с "a", включая количество возвращаемых объектов. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')Метод&= GET&Version = v 1.0) |
 
 > **Примечание.** Ресурсы Azure AD не поддерживают следующие операторы `$filter`: `ne`, `gt`, `ge`, `lt`, `le` и `not`. В настоящее время строковый оператор `contains` не поддерживается ни одним ресурсом Microsoft Graph.
 
@@ -225,11 +232,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 Параметр запроса `$search` позволяет ограничить результаты запроса с помощью условия поиска.
 
-> **Примечание.** Сейчас можно выполнять поиск **только** в коллекциях [message](/graph/api/resources/message?view=graph-rest-1.0) и [person](/graph/api/resources/person?view=graph-rest-1.0). Запрос `$search` возвращает до 250 результатов. В поисковых запросах невозможно указать [`$filter`](#filter-parameter) или [`$orderby`](#orderby-parameter).
-
 ### <a name="using-search-on-message-collections"></a>Использование параметра $search в коллекциях message
 
-Можно искать сообщения, основываясь на их конкретных свойствах. Результаты поиска сортируются по дате и времени отправки сообщения.
+Можно искать сообщения, основываясь на их конкретных свойствах. Результаты поиска сортируются по дате и времени отправки сообщения. `$search`Запрос возвращает до 250 результатов.
 
 Если при поиске сообщений указано только значение, а конкретные свойства не заданы, поиск выполняется по свойствам поиска по умолчанию: **from**, **subject** и **body**.
 
@@ -273,7 +278,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 ### <a name="using-search-on-person-collections"></a>Использование параметра $search в коллекциях person
 
-API People Microsoft Graph можно использовать для получения сведений о наиболее релевантных для пользователя людях. Релевантность определяется шаблонами общения и совместной работы пользователя, а также его бизнес-отношениями. API People поддерживает параметр запроса `$search`.
+Вы можете использовать API людей Microsoft Graph, чтобы получить пользователей, наиболее релевантных для пользователя. Релевантность определяется шаблонами общения и совместной работы пользователя, а также его бизнес-отношениями. API людей поддерживает `$search` параметр запроса. `$search`Запрос возвращает до 250 результатов.
 
 Поиск людей выполняется по свойствам **displayName** и **emailAddress** ресурса [person](/graph/api/resources/person?view=graph-rest-1.0).
 
@@ -331,6 +336,41 @@ Content-type: application/json
 ```
 
 Дополнительные сведения об API поиска людей см. в [этой статье](./people-example.md#search-people).  
+
+### <a name="using-search-on-directory-object-collections"></a>Использование $search для коллекций объектов каталога
+
+`$search`С помощью параметра запроса можно ограничить результаты в соответствии с критерием поиска, например поиском слов в строках, разделенных пробелами, регистром и символьными типами (числами и специальными знаками). Поддержка маркированного поиска выполняется только в полях displayName и Description. Любое поле может быть размещено `$search` , поля, отличные от **DisplayName** и **Description** , по умолчанию заменяют `$filter` поведение StartsWith. Пример
+
+`https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
+ 
+Выполняется поиск всех групп с отображаемыми именами, похожими на "Оневидео". `$search`также можно использовать вместе `$filter` . Пример 
+ 
+`https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"` 
+ 
+Выполняется поиск всех групп с включенной поддержкой почты с отображаемыми именами, похожими на "Оневидео". Результаты ограничены на основе логического умножения ("и") `$filter` всего запроса и всего запроса в `$search` . Текст поиска размечен с учетом регистра, но совпадения выполняются без учета регистра. Например, "Оневидео" разбивается на два маркера ввода "один" и "Video", но соответствует свойствам без учета регистра. 
+ 
+ 
+Синтаксис поиска состоит из следующих правил: 
+ 
+- Универсальный формат: $search = "Clause1" [и | ИЛИ] "[Клаусекс]". 
+- Поддерживается любое число предложений. Также поддерживаются круглые скобки для приоритета. 
+- Синтаксис для каждого предложения <property> : <text to search> . 
+- В предложении должно быть указано имя свойства. Любое свойство, которое можно использовать в, `$filter` также можно использовать внутри `$search` . В зависимости от свойства, поведение поиска может быть "Поиск" или "StartsWith", если в свойстве не поддерживается поиск. 
+- Часть предложения целиком должна быть заключена в двойные кавычки.  
+- Логический оператор ' и ' или ' должен быть заключен в двойные кавычки. Они должны располагаться в верхнем и верхнем регистре. 
+- При условии, что часть предложения целиком должна быть заключена в двойные кавычки, если <text to search> она содержит двойные кавычки и обратную косую черту, она должна быть экранирована с помощью Никакие другие символы не требуются для экранирования. 
+
+В приведенной ниже таблице показаны некоторые примеры. 
+ 
+
+| Класс Object | Описание | Пример |
+| ------------ | ----------- | ------- |
+| User | Отображаемое имя адресной книги пользователя. |  `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
+| User | Отображаемое имя или почта пользователя в адресной книге. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
+| Group | Отображаемое имя или описание группы адресных книг. | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
+| Group | Отображаемое имя адресной книги в группе с включенной поддержкой почты. | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
+
+Вводимые и указанные `$search` выше свойства, доступные для поиска, делятся на части с помощью пробелов, разных регистров и типов символов (чисел и специальных символов).
 
 ## <a name="select-parameter"></a>Параметр select
 

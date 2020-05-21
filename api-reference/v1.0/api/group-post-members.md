@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 06afa7ef7426e65b3b9a83eeb45a9af4353f1342
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
-ms.translationtype: HT
+ms.openlocfilehash: 5eb51c3fd246d79921f53a4d5dad78bbefa1690b
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123645"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290945"
 ---
 # <a name="add-member"></a>Добавление участника
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123645"
 
 Добавляйте участника в группу Office 365 или группу безопасности через свойство навигации **members**.
 
-Вы можете добавлять пользователей, контакты организации или другие группы. 
+Вы можете добавлять пользователей, организационные контакты, субъекты служб или другие группы. 
 
 > [!IMPORTANT]
 > Вы можете добавлять пользователей только в группы безопасности и группы Office 365, управляемые через облако.
@@ -50,7 +50,8 @@ POST /groups/{id}/members/$ref
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
+### <a name="example-1-add-a-member-to-a-group"></a>Пример 1: Добавление участника в группу
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -66,6 +67,59 @@ Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+}
+```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-member-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-member-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-member-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-member-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-add-multiple-members-to-a-group-in-a-single-request"></a>Пример 2: Добавление нескольких участников в группу в едином запросе
+В этом примере показано, как добавить несколько членов в группу с поддержкой BIND в операции PATCH. Обратите внимание, что в один запрос можно добавить до 20 участников. Операция POST не поддерживается.
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_member_from_group"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/groups/{id}
+Content-type: application/json
+Content-length: 30
+
+{
+  "members@odata.bind": [
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+    ]
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)

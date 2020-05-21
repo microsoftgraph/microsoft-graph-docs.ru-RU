@@ -4,12 +4,12 @@ description: В Outlook владелец календаря может поде�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 7654928f0fab1080f7f85eee48186964957224dc
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
-ms.translationtype: HT
+ms.openlocfilehash: 534e7819ddcf58b9b51b4655470bc21a5645973c
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229425"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290744"
 ---
 # <a name="share-or-delegate-a-calendar-in-outlook"></a>Предоставление общего доступа к календарю или его делегирование в Outlook
 
@@ -38,9 +38,12 @@ ms.locfileid: "43229425"
 - [Получение общего или делегированного календаря Outlook или его событий](outlook-get-shared-events-calendars.md)
 - [Создание событий Outlook в общем или делегированном календаре](outlook-create-event-in-shared-delegated-calendar.md)
 
+> [!NOTE]
+> Свойства и API для общего доступа к календарю и делегирования, как описано в этой статье, в настоящее время доступны в конечной точке версии 1.0, за исключением свойств календаря, которые поддаются **доступу** и **исшаредвисме**. Эти два свойства доступны только в конечной точке бета-версии.
+
 ## <a name="get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions"></a>Получение сведений календаря о получателях общего доступа и делегатах, а также обновление отдельных разрешений
 
-Содержание:
+Содержание
 
 - [Владелец календаря. Получение разрешений и сведений об общем доступе или делегировании](#calendar-owner-get-sharing-or-delegation-information-and-permissions)
 - [Владелец календаря. Обновление разрешений для существующего получателя общего доступа или делегата в календаре](#calendar-owner-update-permissions-for-an-existing-sharee-or-delegate-on-a-calendar)
@@ -225,7 +228,7 @@ Content-type: application/json
 
 ## <a name="get-properties-of-a-shared-or-delegated-calendar"></a>Получение свойств общего или делегированного календаря
 
-Содержание:
+Содержание
 
 - [Владелец календаря. Получение свойств общего или делегированного календаря](#calendar-owner-get-properties-of-a-shared-or-delegated-calendar)
 - [Получатель общего доступа или делегат. Получение свойств общего или делегированного календаря](#sharee-or-delegate-get-properties-of-shared-or-delegated-calendar)
@@ -287,7 +290,6 @@ Content-type: application/json
     "name": "Calendar",
     "color": "auto",
     "hexColor": "",
-    "isDefaultCalendar": true,
     "changeKey": "NEXywgsVrkeNsFsyVyRrtAAAAAACOg==",
     "canShare": true,
     "canViewPrivateItems": true,
@@ -366,7 +368,6 @@ Content-type: application/json
     "name": "Alex Wilber",
     "color": "auto",
     "hexColor": "",
-    "isDefaultCalendar": false,
     "changeKey": "E6LznKWmX0KTsAD9qRJjeAAAYWo3EQ==",
     "canShare": false,
     "canViewPrivateItems": true,

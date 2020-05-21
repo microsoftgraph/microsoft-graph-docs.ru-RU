@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: d2c1810d25fe2ad50a82f20ab2a35612953e5837
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 94a651a613d64ee5cefeed6a7e8f3f0b4656a916
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44288940"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44332322"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -92,7 +92,7 @@ ms.locfileid: "44288940"
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Субъекты (пользователи, группы и субъекты-службы), которые назначены для субъекта-службы. Только для чтения.|
 |appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Приложения, которым назначен этот субъект-служба. Только для чтения. Может иметь значение null.|
 |createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные субъектом-службой. Только для чтения. Может иметь значение null.|
-|endpoints|Коллекция [конечных точек](endpoint.md)|Конечные точки, доступные для обнаружения. Такие службы, как SharePoint, заполняют это свойство определенными конечными точками SharePoint для клиента, которые другие приложения могут обнаружить и использовать в своих впечатлениях.|
+|endpoints|Коллекция [endpoint](endpoint.md)|Конечные точки, доступные для обнаружения. Такие службы, как SharePoint, заполняют это свойство определенными конечными точками SharePoint для клиента, которые другие приложения могут обнаружить и использовать в своих впечатлениях.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Роли, в которых участвует субъект-служба. Методы HTTP: GET. Только для чтения. Допускается значение null.|
 |oauth2PermissionGrants|Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)|Делегированное разрешение предоставляет авторизацию этого субъекта-службы для доступа к API от имени пользователя, выполнившего вход в систему. Только для чтения. Может иметь значение null.|
 |ownedObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, принадлежащие субъекту-службе. Только для чтения. Допускается значение null.|
@@ -108,6 +108,7 @@ ms.locfileid: "44288940"
     "appRoleAssignments",
     "createdObjects",
     "createdOnBehalfOf",
+    "endpoints",
     "memberOf",
     "oauth2PermissionGrants",
     "ownedObjects",
@@ -153,7 +154,6 @@ ms.locfileid: "44288940"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-     "Error: microsoft.graph.servicePrincipal/endpoints:\r\n      Referenced type microsoft.graph.endPoint is not defined in the doc  set! Potential suggestion: microsoft.graph.callRecords.endpoint"
     ]
 }
 -->

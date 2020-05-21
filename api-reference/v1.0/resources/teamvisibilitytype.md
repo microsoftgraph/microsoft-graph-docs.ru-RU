@@ -1,18 +1,18 @@
 ---
-title: "\"Участники\""
+title: Members
 description: 'Описывает видимость команды. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: 46f84541e88924e9d5a0cb4ec0ac414e422f6d5b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b33fc01a0bb0ef14df8b764c1808eeb309ebb2bd
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033672"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44333537"
 ---
-#<a name="teamvisibilitytype-enum-type"></a>тип перечисления объекта teamvisibilitytype
+# <a name="teamvisibilitytype-enum-type"></a>тип перечисления объекта teamvisibilitytype
 
 
 
@@ -23,4 +23,4 @@ ms.locfileid: "36033672"
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
 |закрытый|нуль|Любой пользователь может видеть команду, но только владелец может добавить в нее пользователя.|
-|public|1,1|Любой пользователь может присоединиться к команде.|
+|public|1 |Любой пользователь может присоединиться к команде.|
