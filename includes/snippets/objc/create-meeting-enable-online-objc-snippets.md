@@ -1,17 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a985d8e244199f3bcfaf2e9baa12b35e9ca10a9a
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: bccd89a9ae63caa5929ff2a121cdb5228aaae7f2
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39637000"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44333596"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/events"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"outlook.timezone=\"Pacific Standard Time\"" forHTTPHeaderField:@"Prefer"];
