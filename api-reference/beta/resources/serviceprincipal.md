@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: da297ad1ae6646bdab952f56c403bfc34e799d05
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: fc46c88d2ec676ac313602c279683da2c483deba
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290653"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44336722"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -91,7 +91,6 @@ ms.locfileid: "44290653"
 |appRoles|Коллекция [appRole](approle.md)|Роли, предоставляемые приложением, которое представляет этот участник службы. Дополнительные сведения см. в определении свойства **appRoles** для объекта [application](application.md). Значение null не допускается. |
 | deletedDateTime | DateTimeOffset | Дата и время удаления участника службы. Только для чтения. |
 |displayName|Строка|Отображаемое имя для субъекта-службы.|
-|endpoints|Коллекция [endpoint](endpoint.md)|Конечные точки, доступные для обнаружения. Такие службы, как SharePoint, заполняют это свойство с конечными точками клиента, которые другие службы могут обнаружить и использовать. Это коллекция типов вложенных сущностей.|
 |errorUrl|String|Устаревшие. Не следует использовать.|
 |homepage|String|Домашняя или целевая страница приложения.|
 | id | String | Уникальный идентификатор для субъекта-службы. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
@@ -121,8 +120,8 @@ ms.locfileid: "44290653"
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Субъекты (пользователи, группы и субъекты-службы), которые назначены для субъекта-службы. Только для чтения.|
 |appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Приложения, которым назначен этот субъект-служба. Только для чтения. Допускается значение null.|
 |createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные субъектом-службой. Только для чтения. Допускается значение null.|
+|endpoints|Коллекция [endpoint](endpoint.md)|Конечные точки, доступные для обнаружения. Такие службы, как SharePoint, заполняют это свойство определенными конечными точками SharePoint для клиента, которые другие приложения могут обнаружить и использовать в своих впечатлениях.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Роли, в которых участвует субъект-служба. Методы HTTP: GET. Только для чтения. Допускается значение null.|
-|endpoints|Коллекция [конечных точек](endpoint.md)|Конечные точки, доступные для обнаружения. Такие службы, как SharePoint, заполняют это свойство определенными конечными точками SharePoint для клиента, которые другие приложения могут обнаружить и использовать в своих впечатлениях.|
 |oauth2PermissionGrants|Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)|Делегированное разрешение предоставляет авторизацию этого субъекта-службы для доступа к API от имени пользователя, выполнившего вход в систему. Только для чтения. Может иметь значение null.|
 |ownedObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, принадлежащие субъекту-службе. Только для чтения. Допускается значение null.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, являющиеся владельцами этого servicePrincipal. Владельцы являются набором пользователей, не являющихся администраторами, или СервицепринЦипалс, которым разрешено изменять этот объект. Только для чтения. Может иметь значение null.|
@@ -140,6 +139,7 @@ ms.locfileid: "44290653"
     "appRoleAssignments",
     "createdObjects",
     "createdOnBehalfOf",
+    "endpoints",
     "memberOf",
     "oauth2PermissionGrants",
     "ownedObjects",
@@ -196,7 +196,6 @@ ms.locfileid: "44290653"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-     "Error: microsoft.graph.servicePrincipal/endpoints:\r\n      Referenced type microsoft.graph.endPoint is not defined in the doc  set! Potential suggestion: microsoft.graph.callRecords.endpoint"
-]
+  ]
 }
 -->

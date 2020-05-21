@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 00db367cccc06f7d9e8670176f88bbc5ddf05261
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 7bf7fccc221ef5a87184b0b4b7d5e38337604dc3
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35716465"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44336738"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/transitiveMemberOf')
+let res = await client.api('/users/{id}/transitiveMemberOf')
     .version('beta')
     .get();
 
