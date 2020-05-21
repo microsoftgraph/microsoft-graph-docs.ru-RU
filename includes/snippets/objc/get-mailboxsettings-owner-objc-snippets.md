@@ -2,7 +2,7 @@
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
 ms.openlocfilehash: 35f1dbdf710a793ca4245d38cdb69be7367e3b13
 ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/05/2020
 ms.locfileid: "41774887"
