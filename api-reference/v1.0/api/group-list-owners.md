@@ -5,27 +5,29 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 57ca7bd1e84f507dbf59f515f6f7b2ec1ef020ed
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
-ms.translationtype: HT
+ms.openlocfilehash: 2294378620f6d02da7cb98be657fb587a8a7b46b
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125220"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44335413"
 ---
 # <a name="list-owners"></a>Список владельцев
 
 Пространство имен: microsoft.graph
 
-Получение списка владельцев группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект группы. 
+Получение списка владельцев группы. Владельцы являются набором пользователей, не являющихся администраторами, или субъектов служб, которым разрешено изменять объект Group. 
+
+>**Примечание:** В настоящее время субъекты-службы не указаны как владельцы групп из-за поэтапного развертывания субъектов-служб в конечной точке Microsoft Graph 1.0.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All и User.ReadBasic.All, Group.Read.All и User.Read.All, Group.Read.All и User.ReadWrite.All   |
+|Делегированные (рабочая или учебная учетная запись) | Group. Read. ALL и User. ReadBasic. ALL, Group. Read. ALL и User. Read. ALL, Group. Read. ALL и User. ReadWrite. ALL, Group. Read. ALL и User. Read. ALL и User. Read. ALL   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All и User.Read.All, Group.Read.All и User.ReadWrite.All |
+|Для приложений | Group. Read. ALL и User. Read. ALL, Group. Read. ALL и User. ReadWrite. ALL, Group. Read. ALL и User. Read. ALL и Application. Read. ALL. |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -43,7 +45,7 @@ GET /groups/{id}/owners
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
