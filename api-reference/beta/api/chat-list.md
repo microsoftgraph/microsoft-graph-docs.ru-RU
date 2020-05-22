@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 46afd5b3cc76c9df74cce5d26c13d6af28382d13
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 5c4c061c7f78fcb907f81481ea86c6a31b0692c1
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287642"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345683"
 ---
 # <a name="list-chats"></a>Список чатов
 
@@ -28,7 +28,7 @@ ms.locfileid: "44287642"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Чат. ReadBasic, Chat. Read, Chat. ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Chat. ReadBasic. ALL, Chat. Read. ALL, Chat. ReadWrite. ALL | 
+|Для приложений | Не поддерживается.    |
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).

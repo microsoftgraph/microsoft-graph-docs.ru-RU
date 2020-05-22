@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 917b5ec5ac140079f30f6c03db485de849d6b56b
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 90a79aabab8faafa1b44f83981a6e0814c6b2db4
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287516"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345676"
 ---
 # <a name="create-chatmessage"></a>Создание chatMessage
 
@@ -28,7 +28,7 @@ ms.locfileid: "44287516"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ChatMessage. Send, Chat. ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Chat. ReadWrite. ALL |
+| Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 

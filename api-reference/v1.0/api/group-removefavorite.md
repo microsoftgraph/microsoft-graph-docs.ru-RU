@@ -5,16 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ce8f8494bde3c3e5bf791fc4711ee07bc7bfc98a
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: b3279fb525b6556eadee6dd35a2d090b0e3ff9f2
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124142"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345851"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 
-Пространство имен: Microsoft. Graph удаление группы из списка избранных групп текущего пользователя. Поддерживается только для групп Office 365.
+Пространство имен: microsoft.graph
+
+Удаление группы из списка избранных групп текущего пользователя. Поддерживается только для Групп Office 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +41,7 @@ POST /groups/{id}/removeFavorite
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример

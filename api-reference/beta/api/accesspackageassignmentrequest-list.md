@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e6b436c59feda5fbb890a5f83cb5d11a3c3dc0de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f0c338c5cea44f6ef979495e929d757779f4ad7
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442056"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345655"
 ---
 # <a name="list-accesspackageassignmentrequests"></a>Список Акцесспаккажеассигнментрекуестс
 
@@ -26,7 +26,7 @@ ms.locfileid: "42442056"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -40,20 +40,20 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Например, чтобы получить пакет доступа для каждого запроса, включите `$expand=accessPackage` в запрос.  Чтобы получить только запросы для определенного пакета доступа, включите в запрос фильтр, например `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'`.
+Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Например, чтобы получить пакет доступа для каждого запроса, включите `$expand=accessPackage` в запрос.  Чтобы получить только запросы для определенного пакета доступа, включите в запрос фильтр, например `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` .
 Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательный элемент. |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) в тексте отклика.
 

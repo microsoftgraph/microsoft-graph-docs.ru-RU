@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e49f605610169e8169ced20014fba89d47f50857
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 86d246098801954c811d56e2357356f9b5c4a4c2
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335089"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345802"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Ответ на сообщение в канале
 
@@ -28,7 +28,7 @@ ms.locfileid: "44335089"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Чаннелмессаже. Send, Group. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.ReadWrite.All |
+| Для приложений                           | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

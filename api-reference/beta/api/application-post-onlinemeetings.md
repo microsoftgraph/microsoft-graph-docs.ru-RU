@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f0d6f7ff7b5fb7d6259f5154f9d021823995cb67
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: cef3822e418b822c74293fbff9c0def9a7104c63
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289294"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345172"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
@@ -61,9 +61,6 @@ POST /me/onlineMeetings
 ### <a name="example-1-create-an-online-meeting-with-application-token"></a>Пример 1. Создание собрания по сети с помощью маркера приложения
 
 #### <a name="request"></a>Запрос
-
-> [!Note]
-> Создание собрания по сети с помощью маркера приложения является устаревшим способом, и его поддержка будет прекращена в июле 2020 г. В дальнейшем используйте путь /me с маркером пользователя, чтобы создавать собрания по сети.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

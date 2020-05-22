@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2ee3e91979b91610520ebcb80e5414bf27255e84
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 24a20255d39cb6789b655702c0de6a54cc2cf59f
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332608"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345781"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>Создание объекта chatMessage в канале
 
@@ -28,7 +28,7 @@ ms.locfileid: "44332608"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Чаннелмессаже. Send, Group. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Group.ReadWrite.All |
+| Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bf075b4fb78068a80c533c74ec52884efa6b5ca5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b13becb36bbcc9fb4eb579f1997c66ae7262fe2b
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441993"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345480"
 ---
 # <a name="get-accesspackagecatalog"></a>Получение Акцесспаккажекаталог
 
@@ -26,7 +26,7 @@ ms.locfileid: "42441993"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     |  EntitlementManagement.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -46,13 +46,13 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательный элемент. |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [акцесспаккажекаталог](../resources/accesspackagecatalog.md) в тексте отклика.
 

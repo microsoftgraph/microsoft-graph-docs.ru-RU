@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1278c352cb69b5a25c64437a554911866f23294b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6324c868a4c78f108a8eb8177b70504d9129d8d7
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448559"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345211"
 ---
 # <a name="get-accesspackage"></a>Получение Акцесспаккаже
 
@@ -26,7 +26,7 @@ ms.locfileid: "42448559"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -40,19 +40,19 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Например, чтобы получить доступ к политикам пакетов доступа, `$expand=accessPackageAssignmentPolicies`добавьте. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Например, чтобы получить доступ к политикам пакетов доступа, добавьте `$expand=accessPackageAssignmentPolicies` . Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательный элемент. |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [акцесспаккаже](../resources/accesspackage.md) в тексте отклика.
 

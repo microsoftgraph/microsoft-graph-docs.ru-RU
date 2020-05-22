@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e56173d69af1499f7ca49d81d9262487f2c880c2
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 79938562c1290fa9c4924aea87c1b643ef1a10e1
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290702"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345732"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>Обновление приложений, опубликованных в каталоге приложений вашей организации
 
@@ -32,7 +32,7 @@ ms.locfileid: "44290702"
 |:----------------------------------     |:-------------|
 | Делегированные (рабочая или учебная учетная запись)     | CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
-| Для приложений                            | CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
+| Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

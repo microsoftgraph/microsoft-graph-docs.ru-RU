@@ -6,12 +6,12 @@ description: Получение Итеманалитицистатс для де
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 42329601112ae052030a5d9e48e7cfd2d48f3dcf
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: f39fdcb00b367bed4044bad521b658c897fdc016
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124870"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345711"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Получение статистики по действиям элемента по интервалу
 
@@ -39,7 +39,7 @@ ms.locfileid: "43124870"
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-01-01',endDateTime='2017-01-10',interval='day')
-GET /sites/{site-id}/getActivitiesByInterval(startDateTime='2016',endDateTime='2017',interval='month')
+GET /sites/{site-id}/getActivitiesByInterval(startDateTime='2016-01-01',endDateTime='2017-05-20',interval='month')
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-05-01',interval='week')
 ```
 
@@ -64,7 +64,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ 
+## <a name="response"></a>Отклик 
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объекта [итемактивитистатс][] в тексте отклика. 
 

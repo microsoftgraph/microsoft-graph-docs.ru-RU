@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3d224b0458a26b35ba330c508eeac65bea2b068f
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 8fe918b6e584fb3f22e00c2ca488cb7ef2937bdd
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290330"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345893"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>Удаление приложения из каталога приложений Организации
 
@@ -30,7 +30,7 @@ ms.locfileid: "44290330"
 |:----------------------------------     |:-------------|
 | Делегированные (рабочая или учебная учетная запись)     | CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
-| Для приложений                            | CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
+| Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
