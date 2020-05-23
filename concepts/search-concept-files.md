@@ -4,31 +4,31 @@ description: Вы можете использовать API службы пои�
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: a75eb8e90c8656ced3d9f50d6526b5ebe48584aa
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 7a7e5c92f3ffe9399732d6454d3e06d2013f8768
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892676"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345844"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-files"></a><span data-ttu-id="a23cd-103">Использование API службы поиска Microsoft в Microsoft Graph для поиска файлов</span><span class="sxs-lookup"><span data-stu-id="a23cd-103">Use the Microsoft Search API in Microsoft Graph to search files</span></span>
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-files"></a><span data-ttu-id="56162-103">Использование API службы поиска Microsoft в Microsoft Graph для поиска файлов</span><span class="sxs-lookup"><span data-stu-id="56162-103">Use the Microsoft Search API in Microsoft Graph to search files</span></span>
 
-<span data-ttu-id="a23cd-104">Вы можете использовать API службы поиска Microsoft для поиска файлов, хранящихся в SharePoint или OneDrive.</span><span class="sxs-lookup"><span data-stu-id="a23cd-104">You can use the Microsoft Search API to search files stored in SharePoint or OneDrive.</span></span> <span data-ttu-id="a23cd-105">API поиска Microsoft использует модель релевантности, которая использует сигналы из Microsoft Graph о связях и действиях пользователей.</span><span class="sxs-lookup"><span data-stu-id="a23cd-105">The Microsoft Search API uses a relevance model that makes use of signals from Microsoft Graph about users' relationships and activities.</span></span> <span data-ttu-id="a23cd-106">Это позволяет вернуть и повысить уровень содержимого, которое пользователи волнует, в интерфейсе поиска файлов, который соответствует вкладке **файлы** , в которой отображаются результаты поиска в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="a23cd-106">This enables you to return and promote the content that users care about, in a file search experience that is consistent with the **Files** tab that lists search results in SharePoint.</span></span>
+<span data-ttu-id="56162-104">Вы можете использовать API службы поиска Microsoft для поиска файлов, хранящихся в SharePoint или OneDrive.</span><span class="sxs-lookup"><span data-stu-id="56162-104">You can use the Microsoft Search API to search files stored in SharePoint or OneDrive.</span></span> <span data-ttu-id="56162-105">API поиска Microsoft использует модель релевантности, которая использует сигналы из Microsoft Graph о связях и действиях пользователей.</span><span class="sxs-lookup"><span data-stu-id="56162-105">The Microsoft Search API uses a relevance model that makes use of signals from Microsoft Graph about users' relationships and activities.</span></span> <span data-ttu-id="56162-106">Это позволяет вернуть и повысить уровень содержимого, которое пользователи волнует, в интерфейсе поиска файлов, который соответствует вкладке **файлы** , в которой отображаются результаты поиска в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="56162-106">This enables you to return and promote the content that users care about, in a file search experience that is consistent with the **Files** tab that lists search results in SharePoint.</span></span>
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
-## <a name="search-sharepoint-or-onedrive-files"></a><span data-ttu-id="a23cd-107">Поиск файлов SharePoint или OneDrive</span><span class="sxs-lookup"><span data-stu-id="a23cd-107">Search SharePoint or OneDrive files</span></span>
+## <a name="search-sharepoint-or-onedrive-files"></a><span data-ttu-id="56162-107">Поиск файлов SharePoint или OneDrive</span><span class="sxs-lookup"><span data-stu-id="56162-107">Search SharePoint or OneDrive files</span></span>
 
-<span data-ttu-id="a23cd-108">KQL можно использовать в терминах поиска запросов для SharePoint и OneDrive.</span><span class="sxs-lookup"><span data-stu-id="a23cd-108">You can use KQL in search terms of queries for SharePoint and OneDrive.</span></span> <span data-ttu-id="a23cd-109">Например:</span><span class="sxs-lookup"><span data-stu-id="a23cd-109">For example:</span></span>
+<span data-ttu-id="56162-108">KQL можно использовать в терминах поиска запросов для SharePoint и OneDrive.</span><span class="sxs-lookup"><span data-stu-id="56162-108">You can use KQL in search terms of queries for SharePoint and OneDrive.</span></span> <span data-ttu-id="56162-109">Например,</span><span class="sxs-lookup"><span data-stu-id="56162-109">For example:</span></span>
 
-- <span data-ttu-id="a23cd-110">`"query": "contoso filetype:docx OR filetype:doc"`ограничивает область запроса документами Word.</span><span class="sxs-lookup"><span data-stu-id="a23cd-110">`"query": "contoso filetype:docx OR filetype:doc"` scopes the query to Word documents.</span></span>
-- <span data-ttu-id="a23cd-111">`"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`ограничивает область запроса определенной папкой на сайте.</span><span class="sxs-lookup"><span data-stu-id="a23cd-111">`"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.</span></span>
+- <span data-ttu-id="56162-110">`"query": "contoso filetype:docx OR filetype:doc"`ограничивает область запроса документами Word.</span><span class="sxs-lookup"><span data-stu-id="56162-110">`"query": "contoso filetype:docx OR filetype:doc"` scopes the query to Word documents.</span></span>
+- <span data-ttu-id="56162-111">`"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`ограничивает область запроса определенной папкой на сайте.</span><span class="sxs-lookup"><span data-stu-id="56162-111">`"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.</span></span>
 
-<span data-ttu-id="a23cd-112">Для того чтобы оно было допустимым, ограничение свойств должно указывать допустимое имя управляемого свойства, запрашиваемое в условии.</span><span class="sxs-lookup"><span data-stu-id="a23cd-112">In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.</span></span>
+<span data-ttu-id="56162-112">Для того чтобы оно было допустимым, ограничение свойств должно указывать допустимое имя управляемого свойства, запрашиваемое в условии.</span><span class="sxs-lookup"><span data-stu-id="56162-112">In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.</span></span>
 
-### <a name="example"></a><span data-ttu-id="a23cd-113">Пример</span><span class="sxs-lookup"><span data-stu-id="a23cd-113">Example</span></span>
+### <a name="example"></a><span data-ttu-id="56162-113">Пример</span><span class="sxs-lookup"><span data-stu-id="56162-113">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a23cd-114">Запрос</span><span class="sxs-lookup"><span data-stu-id="a23cd-114">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="56162-114">Запрос</span><span class="sxs-lookup"><span data-stu-id="56162-114">Request</span></span>
 
 ```HTTP
 POST /search/query
@@ -54,7 +54,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="a23cd-115">Ответ</span><span class="sxs-lookup"><span data-stu-id="a23cd-115">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="56162-115">Ответ</span><span class="sxs-lookup"><span data-stu-id="56162-115">Response</span></span>
 
 <!---TODO nmoreau team Include one example of externalItem response.-->
 ```json
@@ -100,6 +100,6 @@ Content-Type: application/json
 }
 ```
 
-## <a name="next-steps"></a><span data-ttu-id="a23cd-116">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="a23cd-116">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="56162-116">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="56162-116">Next steps</span></span>
 
-- [<span data-ttu-id="a23cd-117">Использование API Поиска (Майкрософт) для запроса данных</span><span class="sxs-lookup"><span data-stu-id="a23cd-117">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [<span data-ttu-id="56162-117">Использование API Поиска (Майкрософт) для запроса данных</span><span class="sxs-lookup"><span data-stu-id="56162-117">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta)

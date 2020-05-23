@@ -333,7 +333,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: Notes
             href: resources/onenote.md
             items:
               - name: Создание записной книжки
@@ -9384,23 +9384,6 @@ items:
                 href: api/identityprovider-update.md
               - name: Удаление поставщика удостоверений
                 href: api/identityprovider-delete.md
-          - name: Защита информации
-            items:
-              - name: Метки
-                href: resources/informationprotectionlabel.md
-                items:
-                  - name: Список меток
-                    href: api/informationprotectionpolicy-list-labels.md
-                  - name: Получение метки
-                    href: api/informationprotectionlabel-get.md
-                  - name: Оценка приложения
-                    href: api/informationprotectionlabel-evaluateapplication.md
-                  - name: Оценка результатов классификации
-                    href: api/informationprotectionlabel-evaluateclassificationresults.md
-                  - name: Оценка удаления
-                    href: api/informationprotectionlabel-evaluateremoval.md
-                  - name: Извлечь метку
-                    href: api/informationprotectionlabel-extractlabel.md
               - name: Оценка угроз
                 items:
                   - name: Обзор
@@ -10287,7 +10270,7 @@ items:
               - name: Сведения об учетной записи
                 href: resources/useraccountinformation.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-account.md
                   - name: Получение
                     href: api/useraccountinformation-get.md
@@ -10748,7 +10731,7 @@ items:
               - name: Действия в Skype для бизнеса
                 href: resources/skype-for-business-activity-reports.md
                 items:
-                  - name: Получение сведений о пользователях
+                  - name: Получение сведений о пользователе
                     href: api/reportroot-getskypeforbusinessactivityuserdetail.md
                   - name: Получение количества действий
                     href: api/reportroot-getskypeforbusinessactivitycounts.md
@@ -10895,6 +10878,23 @@ items:
                 href: api/alert-update.md
               - name: Обновление нескольких оповещений
                 href: api/alert-updatealerts.md
+          - name: Защита информации
+            items:
+              - name: Метки
+                href: resources/informationprotectionlabel.md
+                items:
+                  - name: Список меток
+                    href: api/informationprotectionpolicy-list-labels.md
+                  - name: Получение метки
+                    href: api/informationprotectionlabel-get.md
+                  - name: Оценка приложения
+                    href: api/informationprotectionlabel-evaluateapplication.md
+                  - name: Оценка результатов классификации
+                    href: api/informationprotectionlabel-evaluateclassificationresults.md
+                  - name: Оценка удаления
+                    href: api/informationprotectionlabel-evaluateremoval.md
+                  - name: Извлечь метку
+                    href: api/informationprotectionlabel-extractlabel.md
           - name: Оценки безопасности
             href: resources/securescores.md
             items:
