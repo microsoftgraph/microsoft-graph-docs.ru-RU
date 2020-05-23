@@ -4,12 +4,12 @@ description: Вы можете использовать API службы пои�
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: a75eb8e90c8656ced3d9f50d6526b5ebe48584aa
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 7a7e5c92f3ffe9399732d6454d3e06d2013f8768
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892676"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345844"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-files"></a>Использование API службы поиска Microsoft в Microsoft Graph для поиска файлов
 
@@ -19,10 +19,10 @@ ms.locfileid: "42892676"
 
 ## <a name="search-sharepoint-or-onedrive-files"></a>Поиск файлов SharePoint или OneDrive
 
-KQL можно использовать в терминах поиска запросов для SharePoint и OneDrive. Например:
+KQL можно использовать в терминах поиска запросов для SharePoint и OneDrive. Например,
 
 - `"query": "contoso filetype:docx OR filetype:doc"`ограничивает область запроса документами Word.
-- `"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`ограничивает область запроса определенной папкой на сайте.
+- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`ограничивает область запроса определенной папкой на сайте.
 
 Для того чтобы оно было допустимым, ограничение свойств должно указывать допустимое имя управляемого свойства, запрашиваемое в условии.
 

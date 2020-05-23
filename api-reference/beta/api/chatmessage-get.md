@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3388dea0e1c337f25ffff149a635181a92fad3b1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63761dbe89b41f89a07089ac903fb99bc0faee89
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438416"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287376"
 ---
 # <a name="get-chatmessage"></a>Получение объекта chatMessage
 
@@ -26,9 +26,9 @@ ms.locfileid: "42438416"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Chat.Read, Chat.ReadWrite   |
+|Делегированные (рабочая или учебная учетная запись) | Chat.Read, Chat.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Chat.Read.All   |
+|Для приложения | Chat.Read.All, Chat.ReadWrite.All |
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).

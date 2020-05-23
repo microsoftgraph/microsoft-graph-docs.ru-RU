@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4e0e9126564074d34fd88d48751440dede270d8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d444bb967aea89206c4c0a47d82cdcb6218c5e89
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438654"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287712"
 ---
 # <a name="get-chat"></a>Получение чата
 
@@ -27,9 +27,9 @@ ms.locfileid: "42438654"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Chat.Read   |
+|Делегированные (рабочая или учебная учетная запись) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Chat.Read.All, Chat.ReadWrite.All   |
+|Сервер приложений | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
 > [!NOTE]
 > С разрешениями приложений поддерживается получение отдельного чата, но не поддерживается [получение списка чатов](chat-list.md).
