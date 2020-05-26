@@ -39,6 +39,8 @@ items:
             href: /graph/tutorials/android
           - name: Angular
             href: /graph/tutorials/angular
+          - name: ASP.NET Core
+            href: /graph/tutorials/aspnet-core
           - name: ASP.NET
             href: /learn/modules/msgraph-build-aspnetmvc-apps
           - name: Microsoft Flow
@@ -91,6 +93,8 @@ items:
             href: outlook-calendar-meeting-proposals.md
           - name: Организация и посещение собраний по сети
             href: outlook-calendar-online-meetings.md
+          - name: Выбор API собрания по сети
+            href: choose-online-meeting-api.md
           - name: Планирование повторяющихся событий
             href: outlook-schedule-recurring-events.md
           - name: Предоставление доступа к календарю или его делегирование
@@ -115,6 +119,8 @@ items:
             href: cloud-communications-media.md
           - name: Собрания по сети
             href: cloud-communications-online-meetings.md
+          - name: Выбор API собрания по сети
+            href: choose-online-meeting-api.md
           - name: Записи звонков (предварительная версия)
             href: cloud-communications-callrecords.md
           - name: Управление номерами телефонов для ботов
@@ -323,6 +329,8 @@ items:
             href: teams-create-group-and-team.md
           - name: Перечисление всех команд
             href: teams-list-all-teams.md
+          - name: Выбор API собрания по сети
+            href: choose-online-meeting-api.md
           - name: Настройка встроенных вкладок
             href: teams-configuring-builtin-tabs.md
           - name: Защищенные API
