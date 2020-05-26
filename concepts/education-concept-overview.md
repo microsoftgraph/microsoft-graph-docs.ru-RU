@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Priority
 ms.prod: education
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 90e8e2342b66a7768cecbc22c6e3a1591bc06a59
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 433fa802230e8b3b903b3bd5410fbe99fbb470f1
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969838"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345865"
 ---
 # <a name="education-api-overview"></a>Обзор API для образования
 
@@ -78,9 +78,6 @@ API управления School Data Sync поддерживают полноц�
 - Опробуйте API для образования в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Ознакомьтесь со следующими примерами, связанными с образованием:
   - [Пример единого входа и составления списков на .NET](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
-  - [Пример единого входа и составления списков на Angular Node](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
-  - [Пример единого входа и составления списков на Python](https://github.com/OfficeDev/O365-EDU-Python-Samples)
-  - [Пример единого входа и составления списков на PHP](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
   - [Пример использования API для управления профилями](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
 
 

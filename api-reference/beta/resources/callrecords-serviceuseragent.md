@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c8cfe517b127bcdf359c69ab600146593f5ef288
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 9cf6b0483ebda33068824f0a3345c12894fd2d7e
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394797"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353122"
 ---
 # <a name="serviceuseragent-resource-type"></a>Тип ресурса Сервицеусеражент
 
@@ -26,7 +26,7 @@ ms.locfileid: "42394797"
 |:-------------|:------------|:------------|
 |applicationVersion|String|Определяет версию программного обеспечения приложения, используемого конечной точкой.|
 |headerValue|String|Значение заголовка User — Agent, указанное конечной точкой.|
-|role|String|Определяет роль службы, используемой этой конечной точкой. Возможные значения: `unknown`, `customBot`, `skypeForBusinessMicrosoftTeamsGateway`, `skypeForBusinessAudioVideoMcu`, `skypeForBusinessApplicationSharingMcu`, `skypeForBusinessCallQueues`, `skypeForBusinessAutoAttendant`, `mediationServer`, `mediationServerCloudConnectorEdition`, `exchangeUnifiedMessagingService`, `mediaController`, `conferencingAnnouncementService`, `conferencingAttendant`, `audioTeleconferencerController`, `skypeForBusinessUnifiedCommunicationApplicationPlatform`, `responseGroupServiceAnnouncementService`, `gateway`, `skypeTranslator`, `skypeForBusinessAttendant`, `responseGroupService`, `unknownFutureValue`.|
+|role|Microsoft. Graph. Каллрекордс. Сервицероле|Определяет роль службы, используемой этой конечной точкой. Возможные значения: `unknown`, `customBot`, `skypeForBusinessMicrosoftTeamsGateway`, `skypeForBusinessAudioVideoMcu`, `skypeForBusinessApplicationSharingMcu`, `skypeForBusinessCallQueues`, `skypeForBusinessAutoAttendant`, `mediationServer`, `mediationServerCloudConnectorEdition`, `exchangeUnifiedMessagingService`, `mediaController`, `conferencingAnnouncementService`, `conferencingAttendant`, `audioTeleconferencerController`, `skypeForBusinessUnifiedCommunicationApplicationPlatform`, `responseGroupServiceAnnouncementService`, `gateway`, `skypeTranslator`, `skypeForBusinessAttendant`, `responseGroupService`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

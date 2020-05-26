@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 2204197e169188e36466db783e513e2a1bc85317
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
-ms.translationtype: HT
+ms.openlocfilehash: 971cfc675fce4c4633c4e331ca20679321112ad8
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618661"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353429"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Справочные материалы по REST API Microsoft Graph v1.0
 
@@ -59,6 +59,9 @@ https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 ```
 
 Дополнительные сведения см. в статье [Использование API Microsoft Graph](/graph/use-the-api).
+
+## <a name="whats-new"></a>Новые возможности
+Сведения о [последних новых возможностях и обновлениях](/graph/whats-new-overview) в конечной точке версии 1.0.
 
 ## <a name="connect-with-us"></a>Обратная связь
 

@@ -4,12 +4,12 @@ description: В Outlook организатор собрания может ра�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: a8329c433d51dc1d7f675e947b9a8ec4d437c80c
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: e17ffc92ae77324e855452b981e90ee4b4f3f3c5
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333599"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353247"
 ---
 # <a name="use-outlook-to-organize-or-attend-meetings-online"></a>Используйте Outlook для организации или посещения собраний в Интернете
 
@@ -472,7 +472,9 @@ Content-type: application/json
 
 
 ## <a name="see-also"></a>См. также
-- Сведения о взаимодействии Microsoft Teams с Office 365 см. в статье [Параметры сосуществования и обновления](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings).
+- Сведения о взаимодействии с Microsoft Teams в Office 365 можно найти в следующих статьях:
+  - [Взаимодействие Exchange и Microsoft Teams](/microsoftteams/exchange-teams-interact)
+  - [Настройка параметров сосуществования и обновления](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
 - [Выбор API в Microsoft Graph для создания собраний по сети и присоединения к ним](choose-online-meeting-api.md)
 - [Поиск времени для проведения собрания в календаре Outlook](findmeetingtimes-example.md)
 - [Получение расписания доступности пользователей и ресурсов](outlook-get-free-busy-schedule.md)

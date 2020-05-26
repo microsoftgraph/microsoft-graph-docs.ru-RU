@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 6ea433e6e8eb348f770fd691f16397ddea001301
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 3e9873d8def179bfdbe8d77767d5a521af5cebf3
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345956"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353261"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -83,6 +83,8 @@ POST /subscriptions
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Subscription](../resources/subscription.md) в тексте отклика.
+
+Сведения о том, как возвращаются ошибки, приведены в разделе [ошибочные ответы][error-response].
 
 ## <a name="example"></a>Пример
 
@@ -175,6 +177,8 @@ Content-length: 252
 ## <a name="notification-endpoint-validation"></a>Проверка конечной точки уведомлений
 
 Конечная точка уведомления о подписке (указанная в свойстве **notificationUrl** ) должна иметь возможность отвечать на запрос проверки, как описано в статье [Настройка уведомлений для изменений в пользовательских данных](/graph/webhooks#notification-endpoint-validation). Если проверка завершилась сбоем, запрос на создание подписки возвращает ошибку 400 (неверный запрос).
+
+[error-response]: /graph/errors
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

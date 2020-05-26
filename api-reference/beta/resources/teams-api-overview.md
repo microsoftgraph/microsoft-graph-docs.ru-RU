@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 3771a9e62a317e292b8d2a821ecb21e6b354d8af
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
-ms.translationtype: HT
+ms.openlocfilehash: 34f5186e9933f5edcd8a91b1cb95b21b6deb4a50
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962333"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353905"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -114,6 +114,9 @@ Microsoft Teams — это рабочее пространство с чатам
 При опросе для ресурса раз за разом выполняется операция GET, чтобы проверить, не изменился ли он. Операцию GET разрешается выполнять на одном и том же ресурсе несколько раз в день, пока не проводится опрос. Например, хорошо выполнять операцию GET на /me/joinedTeams каждый раз, когда пользователь посещает или обновляет вашу веб-страницу, но было бы неправильно выполнять GET на /me/joinedTeams в цикле каждые 30 секунд, чтобы обновлять эту веб-страницу.
 
 Если приложения не удовлетворяют требованиям опроса, это будет рассматриваться как нарушение [условий использования API Майкрософт](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use). Такое нарушение может привести к дополнительному [регулированию](/graph/throttling), а также приостановке или прекращению использования API Майкрософт.
+
+## <a name="whats-new"></a>Новые возможности
+Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="see-also"></a>См. также
 

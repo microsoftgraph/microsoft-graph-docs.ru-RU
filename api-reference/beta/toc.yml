@@ -1010,7 +1010,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Удаление элемента журнала
                     href: api/projectrome-delete-historyitem.md
-      - name: Резервирование для пользователей
+      - name: Запись клиентов (предварительная версия)
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Обзор
@@ -10240,7 +10240,7 @@ items:
             items:
               - name: Вывод ресурса
                 href: api/resource-get.md
-      - name: Уведомления
+      - name: Уведомления (предварительная версия)
         items:
           - name: Обзор
             href: resources/notifications-api-overview.md

@@ -3,12 +3,12 @@ title: Рекомендации по работе с Microsoft Graph
 description: Эта статья содержит рекомендации по эффективному использованию Microsoft Graph в приложениях, независимо от текущей задачи — знакомство с Microsoft Graph, увеличение производительности или повышение надежности приложения.
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 9eb52f5b2a7c2453c0e99622077c6b37de47f58c
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 87a6fbdce7364dbccbef04a2da58b97bddb7f5c4
+ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969321"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44226877"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Рекомендации по работе с Microsoft Graph
 

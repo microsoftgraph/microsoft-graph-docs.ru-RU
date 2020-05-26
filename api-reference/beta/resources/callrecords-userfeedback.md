@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0ab9c49563bb4715b1736618a939b681178ddae8
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 63cfdedd0b8902426e86aa1943cbeead669f92b3
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394791"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353801"
 ---
 # <a name="userfeedback-resource-type"></a>Тип ресурса Усерфидбакк
 
@@ -24,7 +24,7 @@ ms.locfileid: "42394791"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|расчета|String|Оценка, предоставленная пользователем этой конечной точки относительно качества этого сеанса. Возможные значения: `notRated`, `bad`, `poor`, `fair`, `good`, `excellent`, `unknownFutureValue`.|
+|расчета|Microsoft. Graph. Каллрекордс. Усерфидбаккратинг|Оценка, предоставленная пользователем этой конечной точки относительно качества этого сеанса. Возможные значения: `notRated`, `bad`, `poor`, `fair`, `good`, `excellent`, `unknownFutureValue`.|
 |текст|String|Текст отзыва, предоставленный пользователем этой конечной точки для сеанса.|
 |обнаружения|[Microsoft. Graph. Каллрекордс. Фидбакктокенсет](callrecords-feedbacktokenset.md)|Набор маркеров отзывов, предоставленных пользователем данной конечной точки для сеанса. Это набор логических свойств. Не следует полагаться на имена свойств, так как они могут изменяться в зависимости от того, какие маркеры предлагаются пользователю.|
 

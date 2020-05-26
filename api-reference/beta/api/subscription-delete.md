@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 2c61619d82484c41f4201f64e6be3849209f5799
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 8ce81955a4436f65d0833d3b4f9301bb44c62a3f
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345837"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353275"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -62,13 +62,15 @@ DELETE /subscriptions/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+
+Сведения о том, как возвращаются ошибки, приведены в разделе [ошибочные ответы][error-response].
 
 ## <a name="example"></a>Пример
 
@@ -112,6 +114,8 @@ DELETE https://graph.microsoft.com/beta/subscriptions/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+
+[error-response]: /graph/errors
 
 <!--
 {

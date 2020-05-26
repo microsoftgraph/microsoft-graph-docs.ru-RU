@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: conceptualPageType
-ms.openlocfilehash: 5df39b82febc9e68df3fe0facadf67fe8caeb943
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 85d66e33df5c168c212225bb8145268f3b98ea25
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966463"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353464"
 ---
 # <a name="use-the-onenote-rest-api"></a>Использование REST API для OneNote
 
@@ -33,7 +33,7 @@ https://graph.microsoft.com/{version}/{location}/onenote/
 
 ![Стек разработки API OneNote](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/onenote-dev-diagram.png)
 
-### <a name="user-notebooks"></a>Записные книжки пользователей
+## <a name="user-notebooks"></a>Записные книжки пользователей
 Чтобы получить доступ к персональным записным книжкам в OneDrive для бизнеса или личном хранилище OneDrive, воспользуйтесь одним из следующих URL-адресов:
 
 ```
@@ -46,16 +46,19 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 - Значение `users/{id}` предназначено для содержимого OneNote, которым указанный (в URL-адресе) пользователь поделился с текущим пользователем. Используйте API для работы с [пользователями](users.md).
 > **Примечание.** Вы можете получить идентификаторы пользователей, отправив запрос GET к конечной точке `https://graph.microsoft.com/v1.0/users`.
 
-### <a name="group-notebooks"></a>Записные книжки группы
+## <a name="group-notebooks"></a>Записные книжки группы
 
 Чтобы получить доступ к записным книжкам группы, воспользуйтесь следующим корневым URL-адресом службы:
 
 ```
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
-### <a name="sharepoint-site-notebooks"></a>Записные книжки на сайте SharePoint
+## <a name="sharepoint-site-notebooks"></a>Записные книжки на сайте SharePoint
 Чтобы получить доступ к записным книжкам на сайте группы SharePoint, воспользуйтесь следующим корневым URL-адресом службы:
 
 ```
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
+
+## <a name="whats-new"></a>Новые возможности
+Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.

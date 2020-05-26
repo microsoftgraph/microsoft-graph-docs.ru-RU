@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0619bd21c5db0bf4ee85d34bf54210baf4d04b4f
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 6e985d99c1fb86c71b862d0f055af96eba2c2a66
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394868"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353625"
 ---
 # <a name="clientuseragent-resource-type"></a>Тип ресурса Клиентусеражент
 
@@ -26,8 +26,8 @@ ms.locfileid: "42394868"
 |:-------------|:------------|:------------|
 |applicationVersion|String|Определяет версию программного обеспечения приложения, используемого конечной точкой.|
 |headerValue|String|Значение заголовка User — Agent, указанное конечной точкой.|
-|platform|String|Определяет платформу, используемую этой конечной точкой. Возможные значения: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
-|продуктфамили|String|Определяет семейство программного обеспечения приложений, используемое этой конечной точкой. Возможные значения: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
+|platform|Microsoft. Graph. Каллрекордс. Клиентплатформ|Определяет платформу, используемую этой конечной точкой. Возможные значения: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
+|продуктфамили|Microsoft. Graph. Каллрекордс. Продуктфамили|Определяет семейство программного обеспечения приложений, используемое этой конечной точкой. Возможные значения: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

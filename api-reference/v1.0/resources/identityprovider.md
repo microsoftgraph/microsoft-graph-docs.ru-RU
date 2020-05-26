@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6b59e5d703e9f10de43e87703ba853e13c69d74a
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 1fe32bcc519e697198281376ba433a8754a660ab
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200273"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44215782"
 ---
 # <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
 
@@ -43,7 +43,7 @@ ms.locfileid: "43200273"
 |clientSecret|String|Да|Нет|Секрет клиента для приложения. Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает "\*\*\*\*".|
 |id|String|Нет|Нет|Идентификатор поставщика удостоверений.|
 |name|String|Нет|Нет|Отображаемое имя поставщика удостоверений.|
-|type|String|Да|Нет|Тип поставщика удостоверений Для сценариев B2C должно быть присвоено одно из указанных ниже значений. <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>Для сценариев B2B должно быть присвоено значение Google.|
+|type|String|Да|Нет|Тип поставщика удостоверений Для сценариев B2C должно быть присвоено одно из указанных ниже значений. <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>Для сценариев B2B должно быть присвоено значение Google или Facebook.|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>Где взять идентификатор и секрет клиента
 

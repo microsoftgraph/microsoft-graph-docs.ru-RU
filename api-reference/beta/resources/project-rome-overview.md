@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: cbec95682b552210781ecd7390726f8d92c4aa03
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd3608c458b7e1f1fe3e39fdd35e1ba03a9f531e
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965623"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353670"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Использование API Microsoft Graph для работы с проектом Рим 
 
@@ -57,3 +57,5 @@ ms.locfileid: "35965623"
 - [Отправка команды устройству](../api/send-device-command.md)
 - [Получение состояния команды](../api/get-device-command-status.md)
 
+## <a name="whats-new"></a>Новые возможности
+Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.

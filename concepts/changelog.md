@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: ba8362962989dc6b5bb541a984f6355679de723e
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 333ddc360be1f718d51fb2aad46c185eab72f5c7
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345963"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353436"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -82,9 +82,9 @@ ms.locfileid: "44345963"
 | Добавление | бета | Добавлено свойство **рискевенттипе** для ресурсов [рискдетектион](/graph/api/resources/riskdetection?view=graph-rest-beta) и [рискюсерхисторитем](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta) . Используйте это свойство вместо свойства **рисктипе** , чтобы получить тип обнаружения риска для защиты удостоверений.
 | Изменение | Бета | Обновлено свойство **clientAppTypes** в [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta), чтобы заменить `modern` на `mobileAppsAndDesktopClients`. Удален параметр `easUnsupported` и добавлен параметр `exchangeActiveSync`, включающий поддерживаемые и неподдерживаемые платформы Exchange ActiveSync. |
 | Дополнение | бета | Добавлены приложения Application. Read. ALL и Application. ReadWrite. ALL Permissions для [приложения-List](/graph/api/application-list?view=graph-rest-beta)<br>Добавлены сведения о `$count` поддержке `$search` и `$filter` параметрах запросов для следующих действий: <br><ul><li>[Перечисление приложений](/graph/api/application-list?view=graph-rest-beta)</li><li>[Список групп устройств](/graph/api/device-list-memberof?view=graph-rest-beta)</li><li>[Перечисление транзитивных групп устройств](/graph/api/device-list-transitivememberof?view=graph-rest-beta)</li><li>[Список объектов device](/graph/api/device-list?view=graph-rest-beta)</li><li>[Группа списка memberOf](/graph/api/group-list-memberof?view=graph-rest-beta)</li><li>[Список членов группы](/graph/api/group-list-members?view=graph-rest-beta)</li><li>[Список транзитивных групп memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-beta)</li><li>[Список транзитивных членов группы](/graph/api/group-list-transitivemembers?view=graph-rest-beta)</li><li>[Список групп](/graph/api/group-list?view=graph-rest-beta)</li><li>[Список Оргконтактс](/graph/api/orgcontact-list?view=graph-rest-beta)</li><li>[Список servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta)</li><li>[Перечисление транзитивных servicePrincipal memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta)</li><li>[Перечисление servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-beta)</li><li>[Перечисление пользователя memberOf](/graph/api/user-list-memberof?view=graph-rest-beta)</li><li>[Список транзитивных пользователей memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-beta)</li><li>[Перечисление пользователей](/graph/api/user-list?view=graph-rest-beta)</li></ul><br>Добавлены примеры использования функции приведения OData в следующих целях: <ul><li>[Группа списка memberOf](/graph/api/group-list-memberof?view=graph-rest-beta)</li><li>[Список членов группы](/graph/api/group-list-members?view=graph-rest-beta)</li><li>[Список транзитивных групп memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-beta)</li><li>[Список servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta)</li><li>[Перечисление транзитивных servicePrincipal memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta)</li><li>[Перечисление пользователя memberOf](/graph/api/user-list-memberof?view=graph-rest-beta)</li><li>[Список транзитивных пользователей memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-beta)</li></ul> |
-| Дополнение | 1.0 | Добавлен новый тип объекта: [servicePrincipal](/graph/resources/serviceprincipal?view=graph-rest-v1.0).|
-| Дополнение | 1.0 | Добавлен новый тип объекта: [аппролеассигнмент](/graph/resources/approleassignment?view=graph-rest-v1.0).|
-| Дополнение | Бета-версия, версия 1.0 | Добавлены разрешения только для приложений и делегированные разрешения [аппролеассигнмент. ReadWrite. ALL](permissions-reference.md#group-permissions). |
+| Дополнение | 1.0 | Добавлен новый тип объекта: [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).|
+| Дополнение | 1.0 | Добавлен новый тип объекта: [аппролеассигнмент](/graph/api/resources/approleassignment?view=graph-rest-1.0).|
+| Дополнение | Бета-версия, версия 1.0 | Добавлены разрешения только для приложений и делегированные разрешения [аппролеассигнмент. ReadWrite. ALL](permissions-reference.md#application-resource-permissions). |
 | Добавление | Бета | Добавлено делегированное разрешение [ентитлементманажемент. Read. ALL](permissions-reference.md#entitlement-management-permissions). |
 
 ### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)

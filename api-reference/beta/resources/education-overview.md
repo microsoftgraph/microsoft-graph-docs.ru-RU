@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 935a34a4b3bf8ed63fc33893ade19dbe16fdf60c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ad050afee8b3772aa9a03e52ed2c1a715813bfd4
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006495"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353149"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Работа с интерфейсами API для образования в Microsoft Graph
 
@@ -123,6 +123,8 @@ API управления для School Data Sync поддерживают сле
 - [Получение состояния синхронизации](../api/educationsynchronizationprofilestatus-get.md)
 - [Получение ошибок синхронизации](../api/educationsynchronizationerrors-get.md)
 
+## <a name="whats-new"></a>Новые возможности
+Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Используйте API Microsoft Graph для образования, чтобы создавать решения для образования, которые получают доступ к назначениям учащихся и их спискам учебного заведения. Чтобы узнать больше:

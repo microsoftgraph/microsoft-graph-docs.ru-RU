@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 7229b10b0cd7173c3adb9e51b0d3f9fe8790c9a9
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 7611ed3b52861066fe7fbc666895c99cb7bc9003
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345942"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353268"
 ---
 # <a name="update-subscription"></a>Обновление подписки
 
@@ -67,6 +67,8 @@ PATCH /subscriptions/{id}
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [subscription](../resources/subscription.md) в тексте отклика.
+
+Сведения о том, как возвращаются ошибки, приведены в разделе [ошибочные ответы][error-response].
 
 ## <a name="example"></a>Пример
 
@@ -129,6 +131,8 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2"
 }
 ```
+
+[error-response]: /graph/errors
 
 <!--
 {

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 183cc096719ffee6441c93018fd0858d2aaf39a5
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: 9a7ca111f0f61577ea4b02a9ea76e48c35bd2fbe
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822748"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353751"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Работа с Excel в Microsoft Graph
 
@@ -864,7 +864,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ 
+Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1078,7 +1078,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -1095,7 +1095,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ 
+Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -1326,3 +1326,5 @@ Content-Type: application/json
 }
 ```
 
+## <a name="whats-new"></a>Новые возможности
+Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.

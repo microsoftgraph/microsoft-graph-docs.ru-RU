@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: d6e99dc0eecfdf3ee2644b79d0a74bc5f4703fb4
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: e26cc38761ac55f1c39bc2e41459c7567692f2a3
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290035"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353485"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -86,6 +86,9 @@ Microsoft Teams — это рабочее пространство с чатам
 
 При выборе медленного пути, если текущий участник или владелец команды вошел в систему в приложении или на веб-сайте Microsoft Teams, изменения отразятся в течение часа.
 Если ни один из таких пользователей не вошел в систему в приложении или на веб-сайте Microsoft Teams, изменения не отразятся, пока не пройдет час после входа одного из них.
+
+## <a name="whats-new"></a>Новые возможности
+Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="see-also"></a>См. также
 

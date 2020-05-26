@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0eddc25f92c7043425ff63c46ce5fbba23f5a1be
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: e2fba1240ca3a5679844d4ee5a7030eb60a3528f
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394880"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353632"
 ---
 # <a name="callrecord-resource-type"></a>Тип ресурса Каллрекорд
 
@@ -30,17 +30,17 @@ ms.locfileid: "42394880"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |endDateTime|DateTimeOffset|Время в формате UTC, когда последний пользователь оставил вызов. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|id|Строка|Уникальный идентификатор для записи вызова. Только для чтения.|
+|id|String|Уникальный идентификатор для записи вызова. Только для чтения.|
 |жоинвебурл|String|URL-адрес собрания, связанный с вызовом. Может быть недоступен для типа записи вызовов Пиртопир.|
 |lastModifiedDateTime|DateTimeOffset|Время в формате UTC при создании записи вызова. Тип DatetimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается как время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|модальности|Коллекция строк|Список всех модальности, используемых в вызове. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
+|модальности|коллекция Microsoft. Graph. Каллрекордс. Modal|Список всех модальности, используемых в вызове. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
 |organizer|[identitySet](identityset.md)|Удостоверение субъекта Организации.|
 |participants|Коллекция [identitySet](identityset.md)|Список уникальных удостоверений, участвующих в вызове.|
 |startDateTime|DateTimeOffset|Время в формате UTC, когда первый пользователь присоединился к вызову. Тип DatetimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается как время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|type|string|Указывает тип вызова. Возможные значения: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
+|type|Microsoft. Graph. Каллрекордс. callType|Указывает тип вызова. Возможные значения: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
 |version|Int64|Монотонно увеличивающаяся версия записи вызова. Более высокие записи вызовов с одинаковым идентификатором содержат дополнительные данные по сравнению с более низкой версией.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

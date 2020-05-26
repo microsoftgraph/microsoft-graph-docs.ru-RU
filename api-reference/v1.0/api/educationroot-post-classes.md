@@ -5,18 +5,18 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e07e5f24c45c4847c35af5999a8ed16bc470564d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56ca90f828d5b7b14c2761b5a73983268b12b5e7
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517525"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353534"
 ---
 # <a name="create-educationclass"></a>Создание educationClass
 
 Пространство имен: microsoft.graph
 
-Создание курса. При этом будет также создана универсальная группа. Если вы используете этот API для создания курса, он добавит специальные свойства в группу, что приведет к добавлению возможностей, таких как задания и специальная обработка в Microsoft Teams.
+Создание курса. При этом будет также создана универсальная группа. При использовании этого API для создания класса в группу добавляются специальные свойства, в результате чего в Microsoft Teams добавляются такие функции, как назначения и специальная обработка в Microsoft Teams при создании Teams с помощью группы. Обратите внимание, что этот API создает только универсальную группу и не создает команду. Microsoft Teams предоставляет пользователям интерфейс для преподавателей, позволяющий создавать команды для собственных классов, используя группы, созданные этим API.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,7 +25,7 @@ ms.locfileid: "42517525"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All | 
+|Сервер приложений | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ POST /education/classes
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса предоставьте описание объекта [educationClass](../resources/educationclass.md) в формате JSON.
 
 
