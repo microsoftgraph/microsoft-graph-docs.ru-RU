@@ -2,15 +2,15 @@
 title: 'Приложение: Ремовекэй'
 description: Удаление ключевых учетных данных из приложения
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cff4739320db34bdc1c757372c5da6fa3e2a3a71
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 282584ad9a6b8f1d20f46538a8938f9194f5a649
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333181"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383693"
 ---
 # <a name="application-removekey"></a>Приложение: Ремовекэй
 
@@ -51,7 +51,7 @@ POST /applications/{id}/removeKey
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите следующие обязательные свойства.
 

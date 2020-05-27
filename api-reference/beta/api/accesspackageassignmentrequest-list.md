@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5f0c338c5cea44f6ef979495e929d757779f4ad7
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: c4e73ccbd556ad63cc6adf92e343cdaa9c4c3c4b
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345655"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383496"
 ---
 # <a name="list-accesspackageassignmentrequests"></a>Список Акцесспаккажеассигнментрекуестс
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Например, чтобы получить пакет доступа для каждого запроса, включите `$expand=accessPackage` в запрос.  Чтобы получить только запросы для определенного пакета доступа, включите в запрос фильтр, например `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` .
+Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Например, чтобы получить пакет доступа для каждого запроса, включите `$expand=accessPackage` в запрос.  Чтобы получить только запросы для определенного пакета доступа, включите в запрос фильтр, например `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` .  Чтобы получить результирующее назначение, включите `$expand=accessPackageAssignment` в запрос.
 Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -49,7 +49,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 |:----------|:----------|
 | Authorization | Носитель \{токен\}. Обязательный элемент. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

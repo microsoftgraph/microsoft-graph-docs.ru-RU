@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 89db8b352e6117de998339b245531da10745b267
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce8572f3f71a64a41f02b33da51c35132d162201
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499346"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383758"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления обслуживанием Azure AD
 
@@ -34,7 +34,7 @@ ms.locfileid: "42499346"
 
 Обратите внимание, что функция управления обслуживанием, включая API, включена в Azure AD Premium P2. Клиент, на котором используется управление обслуживанием, должен иметь допустимую приобретенную или пробную подписку на Azure AD Premium P2 или EMS.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
 В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с управлением ресурсами.
 
@@ -64,6 +64,13 @@ ms.locfileid: "42499346"
 | [Список ролей ресурсов Акцесспаккажекаталог](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | Коллекция [акцесспаккажересаурцероле](accesspackageresourcerole.md) | Получение списка объектов **акцесспаккажересаурцероле** . |
 | [Список Акцесспаккажересаурцерекуестс](../api/accesspackageresourcerequest-list.md) | Коллекция [акцесспаккажересаурцерекуест](accesspackageresourcerequest.md) | Чтение свойств и связей объектов **акцесспаккажересаурцерекуест** . |
 | [Создание Акцесспаккажересаурцерекуест](../api/accesspackageresourcerequest-post.md) | [акцесспаккажекаталог](accesspackageresourcerequest.md) | Создание нового объекта **акцесспаккажересаурцерекуест** . |
+
+## <a name="types"></a>Типы
+
+- [рекуесторсеттингс](requestorsettings.md), [аппровалсеттингс](approvalsettings.md) и [ассигнментревиевсеттингс](assignmentreviewsettings.md) — используется в [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) , чтобы указать, кто может запрашивать, кто утверждает и кто просматривает запросы на назначение пакетов для этой политики.
+- [аппровалстаже](approvalstage.md) — используется в [аппровалсеттингс](approvalsettings.md) для указания основного, резервного и технического утверждающих лиц.
+- [пользовательские](userset.md) подтипы [SingleUser.](singleuser.md), [граупмемберс](groupmembers.md), [коннектедорганизатионмемберс](connectedorganizationmembers.md), [рекуесторманажер](requestormanager.md), [интерналспонсорс](internalsponsors.md)и екстерналспонсорс используются в [externalSponsors](externalsponsors.md) [requestorSettings](requestorsettings.md), [approvalStage](approvalstage.md) и [assignmentReviewSettings](assignmentreviewsettings.md).
+- [акцесспаккажесубжект](accesspackagesubject.md) — используется в [акцесспаккажеассигнмент](accesspackageassignment.md) в качестве пользователя темы с назначенным пакетом Access.
 
 ## <a name="see-also"></a>См. также
 

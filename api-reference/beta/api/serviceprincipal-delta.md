@@ -4,13 +4,13 @@ description: Получите только что созданных, обнов
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 3eca743218861bbd83912ea355124a541c63601d
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: sureshja
+ms.openlocfilehash: 8158de169f462a21512001b06474976e397b12b8
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291274"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383415"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal: Delta
 
@@ -29,7 +29,7 @@ ms.locfileid: "44291274"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Сервер приложений | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -64,7 +64,7 @@ GET /servicePrincipals/delta
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ### <a name="response"></a>Отклик

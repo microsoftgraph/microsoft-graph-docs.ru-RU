@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 77b5482bca2db2ca105095add0e7ab5e5709d311
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: fec1b34769d55c487df5a19f7c82c85c9638fddd
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345620"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383464"
 ---
 # <a name="list-accesspackageassignmentresourceroles"></a>Список Акцесспаккажеассигнментресаурцеролес
 
@@ -42,13 +42,16 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 
 Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
+Например, чтобы получить только роли ресурса назначения пакетов доступа для определенного пользователя, можно включить запрос с фильтром, предназначенным для идентификатора объекта этого пользователя `?$expand=accessPackageSubject&$filter=accessPackageSubject/objectId+eq+'9b835e5c-bf18-4ad9-8556-9b1ea0019c6b'` .
+
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
 | Authorization | Носитель \{токен\}. Обязательный элемент. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

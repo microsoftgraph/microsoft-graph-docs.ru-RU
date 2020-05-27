@@ -2,15 +2,15 @@
 title: 'servicePrincipal: Ремовекэй'
 description: Удаление ключа учетных данных из servicePrincipal
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4cad5e893064a8680288753be457099a2f78450d
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 210e8b522d82c576c72cdcfe53e8e294b5888abe
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333423"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44382664"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal: Ремовекэй
 
@@ -51,7 +51,7 @@ POST /serviceprincipals/{id}/removeKey
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите следующие обязательные свойства.
 

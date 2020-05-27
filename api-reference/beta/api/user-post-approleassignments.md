@@ -4,13 +4,13 @@ description: Предоставьте пользователю назначен�
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: c6a34fa1116b5679c70997913b93b74d41b9e459
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: psignoret
+ms.openlocfilehash: c60e1f584f8d4caacb4f0bd643494fed578f21a8
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332507"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383835"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>Предоставление пользователю Аппролеассигнмент
 
@@ -32,7 +32,7 @@ ms.locfileid: "44332507"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Аппролеассигнмент. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Аппролеассигнмент. ReadWrite. ALL |
+|Сервер приложений | Аппролеассигнмент. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /users/{id | userPrincipalName}/appRoleAssignments
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [аппролеассигнмент](../resources/approleassignment.md) в формате JSON.
 

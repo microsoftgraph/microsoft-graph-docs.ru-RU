@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3db487f3b8583c0fc25ab5ef834d1e10479c0d35
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 0f449461fe204002daf0f65bbbb6b2db2af42086
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43510617"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383681"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit: Delta
 
@@ -37,7 +37,7 @@ ms.locfileid: "43510617"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeunits/delta
+GET /administrativeUnits/delta
 ```
 
 ## <a name="query-parameters"></a>Параметры запроса
@@ -62,12 +62,12 @@ GET /administrativeunits/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носитель &lt;токен&gt;. Обязательно.|
+| Authorization  | Носитель &lt;токен&gt;. Обязательный элемент.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [administrativeUnit](../resources/administrativeunit.md) в тексте отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`. 
 

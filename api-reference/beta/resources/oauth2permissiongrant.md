@@ -4,13 +4,13 @@ description: Представляет делегированные разреш�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: bd88f0e7f323b3408e7552148db032c53bd03e94
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: psignoret
+ms.openlocfilehash: 39401f1708e8e27443348a766f171680fbd9efd7
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290113"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383752"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>Тип ресурса oAuth2PermissionGrant
 
@@ -47,7 +47,7 @@ ms.locfileid: "44290113"
 | startTime | DateTimeOffset | В настоящее время значение времени начала игнорируется, но при создании объекта **oAuth2PermissionGrant**необходимо указать значение. Обязательный элемент. |
 | експиритиме | DateTimeOffset | В настоящее время значение конечного времени игнорируется, но при создании **oAuth2PermissionGrant**необходимо указать значение. Обязательный элемент. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -75,7 +75,7 @@ ms.locfileid: "44290113"
 |scope|String| Указывает значение утверждения [области](/graph/permissions-reference) , которое должно ожидать приложение ресурсов в маркере доступа OAuth 2,0. Например, *User. Read* |
 |startTime|DateTimeOffset| В настоящее время значение времени начала игнорируется. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

@@ -1,16 +1,16 @@
 ---
 title: Обновление serviceprincipal
 description: Обновление свойств объекта serviceprincipal.
-author: davidmu1
+author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fabb5eeda97945fbb510a5cd7fc91c212de5ee5d
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: be62c70b225cc7698a95c4765ba8e603af6226e9
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333460"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44382715"
 ---
 # <a name="update-serviceprincipal"></a>Обновление servicePrincipal
 
@@ -30,7 +30,7 @@ ms.locfileid: "44333460"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Сервер приложений | Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 47edf467e3c66313a33f238497b5e9b917edd382
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 05657e2d84501536c62805958187323f4a61b4e1
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "42451982"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383695"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -52,11 +52,11 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attendees|Коллекция объектов [attendeeBase](../resources/attendeebase.md)|Коллекция участников или ресурсов для собрания. В соответствующем свойстве **введите** `required` или выберите `optional` для человека и `resource` для ресурса, например комнаты для собраний. Если этот параметр не указан, **findMeetingTimes** предполагается `required` для свойства **Type** . Если указана пустая коллекция, действие **findMeetingTimes** ищет свободные периоды времени для организатора. Необязательный параметр.|
+|attendees|Коллекция объектов [attendeeBase](../resources/attendeebase.md)|Коллекция участников или ресурсов для собрания. В соответствующем свойстве **введите** `required` или выберите `optional` для человека и `resource` для ресурса, например комнаты для собраний. Если этот параметр не указан, **findMeetingTimes** предполагается `required` для свойства **Type** . Если указана пустая коллекция, действие **findMeetingTimes** ищет свободные периоды времени для организатора. Необязательное свойство.|
 |isOrganizerOptional|Edm.Boolean|Задайте значение `True`, если присутствие организатора не обязательно. Значение по умолчанию: `false`. Необязательный параметр.|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|Требования организатора к месту проведения собрания (например, требуется ли соответствующее предложение или собрание может пройти только в определенных местах). Необязательный параметр.|
 |maxCandidates|Edm.Int32|Максимальное количество возвращаемых предложений времени проведения собрания. Необязательный параметр.|
-|meetingDuration|Edm.Duration|Длительность собрания, обозначенная в формате [ISO 8601](https://www.iso.org/iso/iso8601) . Например, 1 час обозначается как "PT1H", где "P" — это обозначение длительности, а "H" — обозначение часа. Используйте M, чтобы указать минуты для длительности; Например, 2 часа и 30 минут будут иметь вид "PT2H30M". Если продолжительность собрания не указана, метод **findMeetingTimes** использует значение по умолчанию — 30 минут. Необязательный параметр.|
+|meetingDuration|Edm.Duration|Длительность собрания, обозначенная в формате [ISO 8601](https://www.iso.org/iso/iso8601) . Например, 1 час обозначается как "PT1H", где "P" — это обозначение длительности, а "H" — обозначение часа. Используйте M, чтобы указать минуты для длительности; Например, 2 часа и 30 минут будут иметь вид "PT2H30M". Если продолжительность собрания не указана, метод **findMeetingTimes** использует значение по умолчанию — 30 минут. Необязательное свойство.|
 |minimumAttendeePercentage|Edm.Double| Минимальная [достоверность](#the-confidence-of-a-meeting-suggestion), необходимая, чтобы вернуть период времени в ответе. Это процентное значение от 0 до 100. Необязательный параметр.|
 |returnSuggestionReasons|Edm.Boolean|Задайте значение `True`, если требуется вернуть причину каждого предложения в свойстве **suggestionReason**. По умолчанию задано значение `false`, и это свойство не возвращается. Необязательный параметр.|
 |timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Ограничения по времени для собрания, к которым могут относиться характер собрания (свойство **activityDomain**) и возможное время проведения собрания (свойство **timeSlots**). Если параметр **activityDomain** не задан, метод **findMeetingTimes** считает, что для него установлено значение `work`. Необязательный параметр.|
@@ -155,7 +155,7 @@ Content-Type: application/json
   },  
   "timeConstraint": {
     "activityDomain":"work", 
-    "timeslots": [ 
+    "timeSlots": [ 
       { 
         "start": { 
           "dateTime": "2019-04-16T09:00:00",  

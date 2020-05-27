@@ -4,13 +4,13 @@ description: Проверка участия в указанном списке 
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: c3d060e7b573fe05704e2b7f2dc0490b1fe0654a
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 47edde97d964b6f860a4b6d41a9d3bda04bb9e08
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334042"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383450"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: Чеккмемберграупс
 

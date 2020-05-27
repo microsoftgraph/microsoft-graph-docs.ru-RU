@@ -4,13 +4,13 @@ description: Получение списка назначений ролей п�
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: b16b48affc8d4ba07305537ed805294f8b2475e3
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+author: sureshja
+ms.openlocfilehash: b9d18d0b0d2b069847a564c8543ade0b73559af9
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345921"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383254"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>Список Аппролеассигнментс, назначенных субъекту службы
 
@@ -32,7 +32,7 @@ ms.locfileid: "44345921"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Сервер приложений | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /servicePrincipals/{id}/appRoleAssignments
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

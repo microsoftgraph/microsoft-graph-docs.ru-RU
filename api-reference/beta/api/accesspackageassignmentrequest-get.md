@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: da26d23027cd77e986a40c66cb6e7acbdff08ef8
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 4f218e01cf389668ea1f7b680c2c58af4afa9094
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345662"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383499"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>Получение Акцесспаккажеассигнментрекуест
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Например, чтобы получить запрошенный пакет Access, включите его `$expand=accessPackage` в запрос. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Например, чтобы получить запрошенный пакет Access, включите его `$expand=accessPackage` в запрос. Чтобы получить результирующее назначение, включите `$expand=accessPackageAssignment` в запрос.  Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,7 +48,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 |:----------|:----------|
 | Authorization | Носитель \{токен\}. Обязательный элемент. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

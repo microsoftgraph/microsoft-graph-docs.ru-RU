@@ -2,15 +2,15 @@
 title: 'servicePrincipal: Аддкэй'
 description: Добавление ключевых учетных данных в servicePrincipal.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fccde0dac4e447f0e8558e65d375bb475e652f62
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: be1e1cae6907b853a32cf0038f465127ea86f0b1
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333984"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383457"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal: Аддкэй
 
@@ -53,7 +53,7 @@ POST /serviceprincipals/{id}/addKey
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите следующие обязательные свойства.
 

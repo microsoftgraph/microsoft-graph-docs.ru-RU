@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c9eddff042af5b2cd724e87e3438f398e8d68c19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6ef0827736d16f1dbf3aedfb664467011e75e7b2
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508543"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383779"
 ---
 # <a name="accesspackageassignmentresourcerole-resource-type"></a>Тип ресурса Акцесспаккажеассигнментресаурцероле
 
@@ -24,6 +24,7 @@ ms.locfileid: "42508543"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
+| [Получение Акцесспаккажеассигнментресаурцероле](../api/accesspackageassignmentresourcerole-get.md) | [акцесспаккажеассигнментресаурцероле](accesspackageassignmentresourcerole.md)  | Получение объекта Акцесспаккажеассигнментресаурцероле. |
 | [Список Акцесспаккажеассигнментресаурцеролес](../api/accesspackageassignmentresourcerole-list.md) | Коллекция [акцесспаккажеассигнментресаурцероле](accesspackageassignmentresourcerole.md) | Получение списка объектов Акцесспаккажеассигнментресаурцероле. |
 
 ## <a name="properties"></a>Свойства
@@ -32,7 +33,7 @@ ms.locfileid: "42508543"
 |:-------------|:------------|:------------|
 |id|String| Только для чтения.|
 |оригинид|String|Уникальный идентификатор, связанный с исходной системой. |
-|оригинсистем|String|Система, в которой необходимо создать назначение ролей для назначения пакета Access.|
+|оригинсистем|String|Система, в которой необходимо создать назначение роли или она была создана для назначения пакета Access, например `SharePointOnline` .|
 |status|String|Значение задается, `Fulfilled` когда назначение пакета Access было доставлено в исходную систему.|
 
 ## <a name="relationships"></a>Связи

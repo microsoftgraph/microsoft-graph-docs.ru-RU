@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 06fe6ed015a7aa9e6d90a473e89750be058b236f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4696a0c90e15eefe6e4dc9135438b911d8b6b591
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442028"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383471"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Создание Акцесспаккажеассигнментрекуест
 
@@ -42,26 +42,26 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательный элемент. |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) в формате JSON.
 
-Чтобы `AdminAdd`создать назначение для пользователя, используется значение свойства **requestType** , а свойство **акцесспаккажеассигнмент** `targetId` содержит назначенного пользователя, свойство **ассигнментполициид** , идентифицирующее [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md), и свойство **акцесспаккажеид** , определяющее [accessPackage](../resources/accesspackage.md).
+Чтобы создать назначение для пользователя, используется значение свойства **requestType** `AdminAdd` , а свойство **акцесспаккажеассигнмент** содержит `targetId` назначенного пользователя, свойство **ассигнментполициид** , идентифицирующее [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md), и свойство **акцесспаккажеид** , определяющее [accessPackage](../resources/accesspackage.md).
 
-Чтобы удалить назначение, значение свойства **requestType** — `AdminRemove`, и свойство **акцесспаккажеассигнмент** содержит свойство **ID** , идентифицирующее удаляемое [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) .
+Чтобы удалить назначение, значение свойства **requestType** — `AdminRemove` , и свойство **акцесспаккажеассигнмент** содержит свойство **ID** , идентифицирующее удаляемое [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) в тексте отклика.  Если это `AdminAdd` запрос, затем [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) и, при необходимости, также создаются [акцесспаккажесубжект](../resources/accesspackagesubject.md) . Вы можете указать их, используя параметры запроса при [выводе акцесспаккажеассигнментс](accesspackageassignment-list.md).
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса для прямого назначения.  Значение **targetID** — это идентификатор объекта, которому назначен пользователь, значение **акцесспаккажеид** — это необходимый пакет доступа, а значение **ассигнментполициид** — это прямая политика назначения в этом пакете доступа.
+Ниже приведен пример запроса для прямого назначения, в котором администратор запрашивает создание назначения для пользователя. Так как [акцесспаккажесубжект](../resources/accesspackagesubject.md) может еще не существовать, значение **TARGETID** — это идентификатор объекта, которому назначен пользователь, значение **акцесспаккажеид** — это необходимый пакет доступа для этого пользователя, а значение **ассигнментполициид** — это прямая политика назначения в этом пакете доступа.
  
 
 # <a name="http"></a>[HTTP](#tab/http)

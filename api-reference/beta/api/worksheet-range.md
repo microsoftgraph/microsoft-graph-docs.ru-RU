@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 86bc1295382146fbfd9350f838b5884d1c792556
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a7ae6fe3f01eb5105791770451fba1bf1525290e
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451191"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383824"
 ---
 # <a name="worksheet-range"></a>Worksheet: Range
 
@@ -31,7 +31,7 @@ ms.locfileid: "42451191"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/Range
+GET /workbook/worksheets/{id|name}/Range
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -40,7 +40,7 @@ POST /workbook/worksheets/{id|name}/Range
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

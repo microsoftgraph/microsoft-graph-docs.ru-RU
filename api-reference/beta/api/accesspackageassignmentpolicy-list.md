@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0ba846a7e5dc407db52cf4f343444cb7f84fd5f6
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: c3d2a732bdc8ecc9fc0b4efded56f4d9751c8d11
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345207"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383515"
 ---
 # <a name="list-accesspackageassignmentpolicies"></a>Список АкцесспаккажеассигнментполиЦиес
 
@@ -18,7 +18,7 @@ ms.locfileid: "44345207"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md) в [службе управления обслуживанием Azure AD](../resources/entitlementmanagement-root.md).   Полученный список включает все политики назначения, которые абонент имеет доступ для чтения, во всех каталогах и пакетах доступа.
+Получение списка объектов [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md) в [службе управления обслуживанием Azure AD](../resources/entitlementmanagement-root.md). Если делегированный пользователь находится в роли каталога, полученный список включает все политики назначения, которые абонент имеет доступ для чтения, во всех каталогах и пакетах доступа.  Если делегированный пользователь является диспетчером пакетов доступа или владельцем каталога, он должен вместо этого получать политики для пакетов доступа, которые они могут читать с помощью [List акцесспаккажес](accesspackage-list.md) , включая `$expand=accessPackageAssignmentPolicies` в качестве параметра запроса.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,7 +48,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 |:----------|:----------|
 | Authorization | Носитель \{токен\}. Обязательный элемент. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

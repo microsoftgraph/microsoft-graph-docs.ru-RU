@@ -1,16 +1,16 @@
 ---
 title: Создание serviceprincipal
 description: Создание нового объекта serviceprincipal.
-author: davidmu1
+author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4de473f2051747e1f8ee5a4ed18ee5524742dc38
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 4e5548d375ea27197a40ddb9cd61ec2d8463103d
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333476"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44382638"
 ---
 # <a name="create-serviceprincipal"></a>Создание servicePrincipal
 
@@ -31,7 +31,7 @@ ms.locfileid: "44333476"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Сервер приложений | Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ POST /serviceprincipals
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [serviceprincipal](../resources/serviceprincipal.md) в формате JSON. Текст запроса должен содержать **AppID**.
 
 ## <a name="response"></a>Отклик
