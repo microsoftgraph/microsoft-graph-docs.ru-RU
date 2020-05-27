@@ -5,31 +5,38 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 38ccc3094521283c6c496b1d0e35b97a6cf37199
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 2cf41a75f829b9b694b41d7fc0ea543ba6c39523
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353618"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383632"
 ---
-# <a name="failureinfo-resource-type"></a><span data-ttu-id="3d126-103">Тип ресурса Фаилуреинфо</span><span class="sxs-lookup"><span data-stu-id="3d126-103">failureInfo resource type</span></span>
+# <a name="failureinfo-resource-type"></a><span data-ttu-id="9ba78-103">Тип ресурса Фаилуреинфо</span><span class="sxs-lookup"><span data-stu-id="9ba78-103">failureInfo resource type</span></span>
 
-<span data-ttu-id="3d126-104">Пространство имен: microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="3d126-104">Namespace: microsoft.graph.callRecords</span></span>
+<span data-ttu-id="9ba78-104">Пространство имен: microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="9ba78-104">Namespace: microsoft.graph.callRecords</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3d126-105">Представляет сведения о причине сбоя вызова или части вызова.</span><span class="sxs-lookup"><span data-stu-id="3d126-105">Represents information about why a call or portion of a call failed.</span></span>
+<span data-ttu-id="9ba78-105">Представляет сведения о причине сбоя вызова или части вызова.</span><span class="sxs-lookup"><span data-stu-id="9ba78-105">Represents information about why a call or portion of a call failed.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3d126-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="3d126-106">Properties</span></span>
+<span data-ttu-id="9ba78-106">Ошибка может относиться к двум типам:</span><span class="sxs-lookup"><span data-stu-id="9ba78-106">The failure can be of two types:</span></span> 
 
-| <span data-ttu-id="3d126-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="3d126-107">Property</span></span>     | <span data-ttu-id="3d126-108">Тип</span><span class="sxs-lookup"><span data-stu-id="3d126-108">Type</span></span>        | <span data-ttu-id="3d126-109">Описание</span><span class="sxs-lookup"><span data-stu-id="3d126-109">Description</span></span> |
+- <span data-ttu-id="9ba78-107">Сбой при установке вызовов</span><span class="sxs-lookup"><span data-stu-id="9ba78-107">Call setup failure</span></span>
+- <span data-ttu-id="9ba78-108">Метод MID — Drop</span><span class="sxs-lookup"><span data-stu-id="9ba78-108">Mid-call drop</span></span>
+
+<span data-ttu-id="9ba78-109">Если один или несколько потоков мультимедиа имеют какие-либо из этих ошибок, то этот сбой распространяется на уровне сегмента.</span><span class="sxs-lookup"><span data-stu-id="9ba78-109">If one or more media streams have any of these failures, that failure is propagated at the segment level.</span></span> <span data-ttu-id="9ba78-110">Если один или несколько сегментов имеют какие-либо из этих ошибок, то этот сбой распространяется на уровне сеанса.</span><span class="sxs-lookup"><span data-stu-id="9ba78-110">If one or more segments have any of these failures, that failure is propagated at the session level.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="9ba78-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="9ba78-111">Properties</span></span>
+
+| <span data-ttu-id="9ba78-112">Свойство</span><span class="sxs-lookup"><span data-stu-id="9ba78-112">Property</span></span>     | <span data-ttu-id="9ba78-113">Тип</span><span class="sxs-lookup"><span data-stu-id="9ba78-113">Type</span></span>        | <span data-ttu-id="9ba78-114">Описание</span><span class="sxs-lookup"><span data-stu-id="9ba78-114">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="3d126-110">reason</span><span class="sxs-lookup"><span data-stu-id="3d126-110">reason</span></span>|<span data-ttu-id="3d126-111">String</span><span class="sxs-lookup"><span data-stu-id="3d126-111">String</span></span>|<span data-ttu-id="3d126-112">Классификация причин сбоя вызова или части вызова.</span><span class="sxs-lookup"><span data-stu-id="3d126-112">Classification of why a call or portion of a call failed.</span></span>|
-|<span data-ttu-id="3d126-113">разместить</span><span class="sxs-lookup"><span data-stu-id="3d126-113">stage</span></span>|<span data-ttu-id="3d126-114">Microsoft. Graph. Каллрекордс. Фаилурестаже</span><span class="sxs-lookup"><span data-stu-id="3d126-114">microsoft.graph.callRecords.failureStage</span></span>|<span data-ttu-id="3d126-115">Рабочая область при возникновении ошибки.</span><span class="sxs-lookup"><span data-stu-id="3d126-115">The stage when the failure occurred.</span></span> <span data-ttu-id="3d126-116">Возможные значения: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="3d126-116">Possible values are: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="9ba78-115">reason</span><span class="sxs-lookup"><span data-stu-id="9ba78-115">reason</span></span>|<span data-ttu-id="9ba78-116">String</span><span class="sxs-lookup"><span data-stu-id="9ba78-116">String</span></span>|<span data-ttu-id="9ba78-117">Классификация причин сбоя вызова или части вызова.</span><span class="sxs-lookup"><span data-stu-id="9ba78-117">Classification of why a call or portion of a call failed.</span></span>|
+|<span data-ttu-id="9ba78-118">разместить</span><span class="sxs-lookup"><span data-stu-id="9ba78-118">stage</span></span>|<span data-ttu-id="9ba78-119">Microsoft. Graph. Каллрекордс. Фаилурестаже</span><span class="sxs-lookup"><span data-stu-id="9ba78-119">microsoft.graph.callRecords.failureStage</span></span>|<span data-ttu-id="9ba78-120">Рабочая область при возникновении ошибки.</span><span class="sxs-lookup"><span data-stu-id="9ba78-120">The stage when the failure occurred.</span></span> <span data-ttu-id="9ba78-121">Возможные значения: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="9ba78-121">Possible values are: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="3d126-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3d126-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9ba78-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9ba78-122">JSON representation</span></span>
 
-<span data-ttu-id="3d126-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3d126-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9ba78-123">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9ba78-123">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
