@@ -2,15 +2,15 @@
 title: 'Приложение: Аддкэй'
 description: Добавление в приложение учетных данных ключа.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1ea747f50138304a497acacdea188d5beb2d2a98
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 38b7fa91f1c22d14565eb5cd82170f8a73851045
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336598"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383863"
 ---
 # <a name="application-addkey"></a>Приложение: Аддкэй
 
@@ -51,7 +51,7 @@ POST /applications/{id}/addKey
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите следующие обязательные свойства.
 

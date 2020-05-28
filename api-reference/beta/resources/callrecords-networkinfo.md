@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 95686742ad52663d518659d1f25b1bc74b9014ca
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 5fead75d9d1ea076990daf42f8818bca6fd2d83a
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353772"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408341"
 ---
 # <a name="networkinfo-resource-type"></a>Тип ресурса Нетворкинфо
 
@@ -39,7 +39,7 @@ ms.locfileid: "44353772"
 |релайпорт|Int32|Номер сетевого порта, выделенный на сервере ретрансляции мультимедиа конечной точкой мультимедиа.|
 |сенткуалитевентратио|Двойное с плавающей точкой|Доля звонка, когда конечная точка мультимедиа обнаружила, что сеть привела к низкому качеству отправленного звука.|
 |подсети|String|Подсеть, используемая конечной точкой мультимедиа для потока мультимедиа.|
-|вифибанд|Microsoft. Graph. Каллрекордс. Вифибанд|Полоса Wi-Fi, используемая конечной точкой носителя. Возможные значения: `unknown`, `frequency24GHz`, `frequency50GHz`.|
+|вифибанд|Microsoft. Graph. Каллрекордс. Вифибанд|Полоса Wi-Fi, используемая конечной точкой носителя. Возможные значения: `unknown`, `frequency24GHz`, `frequency50GHz`, `frequency60GHz`, `unknownFutureValue`.|
 |вифибаттеричарже|Int32|Оценка оставшегося заряда батареи в процентах от конечной точки носителя.|
 |вифичаннел|Int32|Канал Wi-Fi, используемый конечной точкой носителя.|
 |вифимикрософтдривер|String|Имя драйвера Microsoft WiFi, используемого конечной точкой носителя. Значение может быть локализовано на основе языка, используемого конечной точкой.|

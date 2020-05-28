@@ -1,24 +1,24 @@
 ---
-title: Получение callRecord
-description: Получение свойств и связей объекта каллрекорд.
+title: Список сеансов Каллрекорд
+description: Получение списка объектов Session для объекта Каллрекорд.
 localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a913e4b1e355295cf6e34a025c6b26e16d7bca6b
+ms.openlocfilehash: a0faa79814d82572d6b4a57cb16ee9ef2172161e
 ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408299"
+ms.locfileid: "44408379"
 ---
-# <a name="get-callrecord"></a>Получение callRecord
+# <a name="list-callrecord-sessions"></a>Список сеансов Каллрекорд
 
 Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [каллрекорд](../resources/callrecords-callrecord.md) .
+Получение списка [сеансов](../resources/callrecords-session.md) , связанных с объектом [каллрекорд](../resources/callrecords-callrecord.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -35,7 +35,7 @@ ms.locfileid: "44408299"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /communications/callRecords/{id}
+GET /communications/callRecords/{id}/sessions
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -54,23 +54,23 @@ GET /communications/callRecords/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [Microsoft. Graph. Каллрекордс. каллрекорд](../resources/callrecords-callrecord.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенные объекты [Session](../resources/callrecords-session.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-basic-details"></a>Пример 1: получение основных сведений
+### <a name="example-1-get-session-list"></a>Пример 1: получение списка сеансов
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на получение основных сведений из [каллрекорд](../resources/callrecords-callrecord.md).
+Ниже приведен пример запроса на получение списка [сеансов](../resources/callrecords-session.md) для [каллрекорд](../resources/callrecords-callrecord.md).
 
 <!-- {
   "blockType": "request",
-  "name": "get_callrecord"
+  "name": "get_callrecord_sessions"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/communications/callRecords/{id}
+GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions
 ```
 
 #### <a name="response"></a>Отклик
@@ -82,7 +82,8 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecords.callRecord"
+  "@odata.type": "microsoft.graph.callRecords.session",
+  "isCollection": true
 } -->
 
 ```http
@@ -90,67 +91,93 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords/$entity",
-    "version": 1,
-    "type": "peerToPeer",
-    "modalities": [
-        "audio"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions",
+    "value": [
+        {
+            "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
+            "modalities": [
+                "audio"
+            ],
+            "startDateTime": "2020-02-25T18:52:21.2169889Z",
+            "endDateTime": "2020-02-25T18:52:46.7640013Z",
+            "caller": {
+                "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                "userAgent": {
+                    "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
+                    "headerValue": "RTCC/7.0.0.0 UCWA/7.0.0.0 AndroidLync/6.25.0.27 (SM-G930U Android 8.0.0)",
+                    "platform": "android",
+                    "productFamily": "skypeForBusiness"
+                },
+                "identity": {
+                    "@odata.type": "#microsoft.graph.identitySet",
+                    "user": {
+                        "id": "821809f5-0000-0000-0000-3b5136c0e777",
+                        "displayName": "Abbie Wilkins",
+                        "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+                    }
+                }
+            },
+            "callee": {
+                "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                "userAgent": {
+                    "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
+                    "headerValue": "UCCAPI/16.0.12527.20122 OC/16.0.12527.20194 (Skype for Business)",
+                    "platform": "windows",
+                    "productFamily": "skypeForBusiness"
+                },
+                "identity": {
+                    "user": {
+                        "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
+                        "displayName": "Owen Franklin",
+                        "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+                    }
+                },
+                "feedback": {
+                    "rating": "poor",
+                    "tokens": {
+                        "NoSound": false,
+                        "OtherNoSound": false,
+                        "Echo": false,
+                        "Noisy": true,
+                        "LowVolume": false,
+                        "Stopped": false,
+                        "DistortedSound": false,
+                        "Interruptions": false
+                    }
+                }
+            }
+        }
     ],
-    "lastModifiedDateTime": "2020-02-25T19:00:24.582757Z",
-    "startDateTime": "2020-02-25T18:52:21.2169889Z",
-    "endDateTime": "2020-02-25T18:52:46.7640013Z",
-    "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
-    "organizer": {
-        "user": {
-            "id": "821809f5-0000-0000-0000-3b5136c0e777",
-            "displayName": "Abbie Wilkins",
-            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-        }
-    },
-    "participants": [
-        {
-            "user": {
-                "id": "821809f5-0000-0000-0000-3b5136c0e777",
-                "displayName": "Abbie Wilkins",
-                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-            }
-        },
-        {
-            "user": {
-                "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
-                "displayName": "Owen Franklin",
-                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-            }
-        }
-    ]
+    "@odata.nextlink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$skiptoken=abc"
 }
 ```
 
-### <a name="example-2-get-full-details"></a>Пример 2: получение полных сведений
+### <a name="example-2-get-session-list-with-segments"></a>Пример 2: получение списка сеансов с сегментами
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на получение полных сведений из [каллрекорд](../resources/callrecords-callrecord.md), включая компоненты Session и Segment.
+Ниже приведен пример запроса на получение списка [сеансов](../resources/callrecords-session.md) для [каллрекорд](../resources/callrecords-callrecord.md) с включенными [сегментами](../resources/callrecords-segment.md) .
 
 <!-- {
   "blockType": "request",
-  "name": "get_callrecord_expanded"
+  "name": "get_callrecord_sessions_expanded"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=sessions($expand=segments)
+GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions?$expand=segments
 ```
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Если список сеансов усекается, `sessions@odata.nextlink` будет предоставлено значение для получения следующей страницы сеансов.
+Ниже приведен пример отклика.
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecords.callRecord"
+  "@odata.type": "microsoft.graph.callRecords.session",
+  "isCollection": true
 } -->
 
 ```http
@@ -158,48 +185,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords(sessions(segments()))/$entity",
-    "version": 1,
-    "type": "peerToPeer",
-    "modalities": [
-        "audio"
-    ],
-    "lastModifiedDateTime": "2020-02-25T19:00:24.582757Z",
-    "startDateTime": "2020-02-25T18:52:21.2169889Z",
-    "endDateTime": "2020-02-25T18:52:46.7640013Z",
-    "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
-    "organizer": {
-        "user": {
-            "id": "821809f5-0000-0000-0000-3b5136c0e777",
-            "displayName": "Abbie Wilkins",
-            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-        }
-    },
-    "participants": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions",
+    "value": [
         {
-            "user": {
-                "id": "821809f5-0000-0000-0000-3b5136c0e777",
-                "displayName": "Abbie Wilkins",
-                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-            }
-        },
-        {
-            "user": {
-                "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
-                "displayName": "Owen Franklin",
-                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-            }
-        }
-    ],
-    "sessions@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions(segments())",
-    "sessions": [
-        {
+            "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
             "modalities": [
                 "audio"
             ],
             "startDateTime": "2020-02-25T18:52:21.2169889Z",
             "endDateTime": "2020-02-25T18:52:46.7640013Z",
-            "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
             "caller": {
                 "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
                 "userAgent": {
@@ -385,7 +379,7 @@ Content-type: application/json
             ]
         }
     ],
-    "sessions@odata.nextlink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
+    "@odata.nextlink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
 }
 ```
 
@@ -393,7 +387,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get callRecord",
+  "description": "List sessions",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e2fba1240ca3a5679844d4ee5a7030eb60a3528f
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 68eeb5fbdf110aa4a8f97c7bf4246897feb22133
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353632"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408348"
 ---
 # <a name="callrecord-resource-type"></a>Тип ресурса Каллрекорд
 
@@ -25,6 +25,7 @@ ms.locfileid: "44353632"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Получение callRecord](../api/callrecords-callrecord-get.md) | [Microsoft. Graph. Каллрекордс. Каллрекорд](callrecords-callrecord.md) | Чтение свойств и связей объекта Каллрекорд. |
+
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
@@ -40,7 +41,7 @@ ms.locfileid: "44353632"
 |type|Microsoft. Graph. Каллрекордс. callType|Указывает тип вызова. Возможные значения: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
 |version|Int64|Монотонно увеличивающаяся версия записи вызова. Более высокие записи вызовов с одинаковым идентификатором содержат дополнительные данные по сравнению с более низкой версией.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

@@ -4,13 +4,13 @@ description: Получение списка владельцев servicePrincip
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 0818c9ef7ee0924fb782cf61b7e01f1aac0f9628
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: a0da9f2bbf0fb3b42c7077672a3cfa10c0b2eb5b
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333953"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383954"
 ---
 # <a name="serviceprincipals-list-owners"></a>СервицепринЦипалс: список владельцев
 
@@ -25,7 +25,7 @@ ms.locfileid: "44333953"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Сервер приложений | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -42,7 +42,7 @@ GET /servicePrincipals/{id}/owners
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

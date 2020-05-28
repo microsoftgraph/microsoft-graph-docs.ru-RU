@@ -4,13 +4,13 @@ description: Представляет экземпляр приложения в
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 94a651a613d64ee5cefeed6a7e8f3f0b4656a916
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: f04b7324c31d0ec0f33976f60a736d25cd69af5e
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332322"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383478"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -86,7 +86,7 @@ ms.locfileid: "44332322"
 |tags|Коллекция String| Настраиваемые строки, которые можно использовать для категоризации и идентификации участника службы. Значение null не допускается. |
 | tokenEncryptionKeyId |String|Задает значение открытого ключа keyId из коллекции keyCredentials. При настройке в Azure AD маркеры проблем для этого приложения шифруются с помощью ключа, указанного этим свойством. Код приложения, получающий зашифрованный маркер, должен использовать соответствующий закрытый ключ для расшифровки маркера, прежде чем его можно будет применить для пользователя, выполнившего вход.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Субъекты (пользователи, группы и субъекты-службы), которые назначены для субъекта-службы. Только для чтения.|

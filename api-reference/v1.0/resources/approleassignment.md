@@ -4,13 +4,13 @@ description: Используется для записи при назначе�
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: ece6f668e60525fd24dd6a58ba500b656a36a54d
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: psignoret
+ms.openlocfilehash: 98af5eb0812e0e3857e154bc51a663038b1230a7
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290751"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383709"
 ---
 # <a name="approleassignment-resource-type"></a>Тип ресурса appRoleAssignment
 

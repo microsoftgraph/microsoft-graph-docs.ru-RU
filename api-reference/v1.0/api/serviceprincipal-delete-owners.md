@@ -1,16 +1,16 @@
 ---
 title: Удаление владельца
 description: Удаление владельца из СервицепринЦипалс.
-author: davidmu1
+author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3999d5d193e4084b57f59fc2c5ca4fa647fa29a4
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 894eb238d5ea663b4fc9b1224e956e22e7e81dbe
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334177"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383576"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
@@ -25,7 +25,7 @@ ms.locfileid: "44334177"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. ReadWrite. ALL, Application. ReadWrite. Овнедби |
+|Сервер приложений | Application. ReadWrite. ALL, Application. ReadWrite. Овнедби |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ DELETE /serviceprincipals/{id}/owners/{id}/$ref
 |:---- |:---------- |
 | Авторизация | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите идентификатор объекта каталога, который необходимо назначить владельцем.
 
 ## <a name="response"></a>Ответ

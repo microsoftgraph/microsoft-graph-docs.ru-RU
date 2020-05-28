@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8c1af52332c5650123d604b8e405bf88d0c2f965
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: cf3be35bd7b1ee1a4ec6185199c3cd5ab3b9b7fc
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353128"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408285"
 ---
 # <a name="session-resource-type"></a>Тип ресурса Session
 
@@ -20,9 +20,12 @@ ms.locfileid: "44353128"
 
 Представляет пользовательское взаимодействие с пользователем или собрание пользователя в случае вызова конференции.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
-Не существует методов для прямого доступа к сеансам. Используйте API [Get каллрекорд](../api/callrecords-callrecord-get.md) , `$expand=sessions` чтобы получить сеансы для [каллрекорд](callrecords-callrecord.md).
+| Метод       | Возвращаемый тип | Описание |
+|:-------------|:------------|:------------|
+| [Список сеансов](../api/callrecords-session-list.md) | Коллекция [Microsoft. Graph. каллрекордс. Session](callrecords-session.md) | Получение списка сеансов, связанных с объектом [каллрекорд](callrecords-callrecord.md) .
+ |
 
 ## <a name="properties"></a>Свойства
 
@@ -37,7 +40,7 @@ ms.locfileid: "44353128"
 |endDateTime|DateTimeOffset|Время в формате UTC, когда последний пользователь оставил сеанс. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ddb6645e65f2f055056c5cde38e976f94ad0af87
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 168ce4053899e49cee2b96ccf09e61c17a2c7f93
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394800"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408334"
 ---
 # <a name="segment-resource-type"></a>Тип ресурса "сегмент"
 
@@ -20,9 +20,9 @@ ms.locfileid: "42394800"
 
 Представляет часть взаимодействия пользователя с пользователем или собрание по телефону в случае Конференции. Типичный вызов VOIP будет иметь по одному сегменту на сеанс. В определенных сценариях, таких как звонки по протоколу PSTN, для каждого сеанса будет использоваться несколько сегментов из-за дополнительного обмена данными между серверами, необходимыми для подключения вызова.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
-Не существует методов для прямого доступа к сегментам. Используйте API [Get каллрекорд](../api/callrecords-callrecord-get.md) , `$expand=sessions($expand=segments)` чтобы получить сегменты для объекта [каллрекорд](callrecords-callrecord.md).
+Не существует методов для прямого доступа к сегментам. Для получения сегментов для Каллрекорд используйте API [Get каллрекорд](../api/callrecords-callrecord-get.md) с `$expand=sessions($expand=segments)` API [сеанса или списка](../api/callrecords-session-list.md) `$expand=segments` . [callRecord](callrecords-callrecord.md)
 
 ## <a name="properties"></a>Свойства
 
@@ -32,7 +32,7 @@ ms.locfileid: "42394800"
 |объекта|[Microsoft. Graph. Каллрекордс. Endpoint](callrecords-endpoint.md)|Конечная точка, которая инициировала этот сегмент.|
 |вызываемого абонента|[Microsoft. Graph. Каллрекордс. Endpoint](callrecords-endpoint.md)|Конечная точка, которая ответила на этот сегмент.|
 |failureInfo|[Microsoft. Graph. Каллрекордс. Фаилуреинфо](callrecords-failureinfo.md)|Сведения об ошибке, связанные с сегментом, если произошел сбой.|
-|media|Коллекция [Microsoft. Graph. каллрекордс. Media](callrecords-media.md)|Носитель, связанный с этим сегментом.|
+|СМИ|Коллекция [Microsoft. Graph. каллрекордс. Media](callrecords-media.md)|Носитель, связанный с этим сегментом.|
 |startDateTime|DateTimeOffset|Время в формате UTC, когда начался сегмент. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |endDateTime|DateTimeOffset|Время в формате UTC, когда сегмент закончился. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 

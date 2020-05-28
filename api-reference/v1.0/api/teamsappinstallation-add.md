@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9501c12114df74bab57e589a9b3cad31a9899014
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 6198af51cd341898609b7b13b1a73384fef91c56
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291190"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383919"
 ---
 # <a name="add-app-to-team"></a>Добавление приложения в команду
 
@@ -40,7 +40,7 @@ POST /teams/{id}/installedApps
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
@@ -48,7 +48,7 @@ POST /teams/{id}/installedApps
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.
+При успешном выполнении этот метод возвращает код отклика `201 Created`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -99,7 +99,7 @@ Content-type: application/json
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

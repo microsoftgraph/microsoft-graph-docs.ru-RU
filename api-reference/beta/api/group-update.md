@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ef9cca7194adeeea1c3fc52c02e4b3d515afe2c3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4cf94b24204b29524010161abf05e6f6747e2d5e
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396099"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408294"
 ---
 # <a name="update-group"></a>Update group
 
@@ -60,7 +60,7 @@ PATCH /groups/{id}
 |securityEnabled|Логический|Указывает, является ли группа группой безопасности, в том числе группами Office 365. |
 |visibility|String|Определяет видимость группы Office 365. Возможные значения: **Private** (частная), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public**).|
 
-Так как ресурс **Group** поддерживает [расширения](/graph/extensibility-overview), с помощью `PATCH` операции можно добавлять, обновлять или удалять собственные данные, зависящие от приложения, в настраиваемых свойствах расширения в существующем экземпляре **группы** .
+Так как ресурс **Group** поддерживает [расширения](/graph/extensibility-overview), с помощью операции можно `PATCH` добавлять, обновлять или удалять собственные данные, зависящие от приложения, в настраиваемых свойствах расширения в существующем экземпляре **группы** .
 
 
 > **Примечание.**
@@ -75,13 +75,13 @@ PATCH /groups/{id}
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
+### <a name="example-1-update-display-name-and-description-of-a-group"></a>Пример 1: обновление отображаемого имени и описания группы
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_group"
@@ -95,30 +95,47 @@ Content-length: 211
 {
   "description": "description-value",
   "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value",
-  "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a>Отклик
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+Ниже приведен пример отклика.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 
----
+```http
+HTTP/1.1 204 No Content
+```
+### <a name="example-2-apply-sensitivity-label-to-an-office-365-group"></a>Пример 2: применение метки конфиденциальности к группе Office 365
+#### <a name="request"></a>Запрос
 
+Вы можете получить идентификатор метки, которую нужно применить к группе Office 365, с помощью [метки списка](informationprotectionpolicy-list-labels.md). После этого можно обновить свойство [ассигнедлабелс](../resources/assignedlabel.md) группы, указав идентификатор метки. 
 
-#### <a name="response"></a>Ответ
+<!-- {
+  "blockType": "request",
+  "name": "update_group"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/groups/{id}
+Content-type: application/json
+Content-length: 211
+
+{
+  "assignedLabels": 
+  [
+    {
+        "labelId" : "45cd0c48-c540-4358-ad79-a3658cdc5b88"
+    }
+  ]
+}
+```
+
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 <!-- {

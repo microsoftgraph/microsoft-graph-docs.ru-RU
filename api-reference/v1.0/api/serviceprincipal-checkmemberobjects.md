@@ -2,15 +2,15 @@
 title: 'servicePrincipal: Чеккмемберобжектс'
 description: Проверка членства в списке групп, ролей каталогов или административных единиц для указанного объекта участника службы.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c3f6045e2ff4046136e11fee51d2e8a3f417ed43
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 89c98d2d136ba60f438409b36f0ecbffdb3937ef
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334338"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383597"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal: Чеккмемберобжектс
 
