@@ -1,15 +1,15 @@
 ---
 title: Настройка ответов с помощью параметров запроса
 description: Microsoft Graph предоставляет необязательные параметры запроса, которые можно использовать для указания и управления объемом данных, возвращаемых в ответе.
-author: baywet
+author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 890b65f607ee66725650002ffc576491571ecab4
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 71f63c6038019ae0b669ff8dfe95fecffdfab11a
+ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291043"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429616"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -339,11 +339,11 @@ Content-type: application/json
 
 ### <a name="using-search-on-directory-object-collections"></a>Использование $search для коллекций объектов каталога
 
-`$search`С помощью параметра запроса можно ограничить результаты в соответствии с критерием поиска, например поиском слов в строках, разделенных пробелами, регистром и символьными типами (числами и специальными знаками). Поддержка маркированного поиска выполняется только в полях displayName и Description. Любое поле может быть размещено `$search` , поля, отличные от **DisplayName** и **Description** , по умолчанию заменяют `$filter` поведение StartsWith. Пример
+`$search`С помощью параметра запроса можно ограничить результаты в соответствии с критерием поиска, например поиском слов в строках, разделенных пробелами, регистром и символьными типами (числами и специальными знаками). Поддержка маркированного поиска выполняется только в полях displayName и Description. Любое поле может быть размещено `$search` , поля, отличные от **DisplayName** и **Description** , по умолчанию заменяют `$filter` поведение StartsWith. Например:
 
 `https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
  
-Выполняется поиск всех групп с отображаемыми именами, похожими на "Оневидео". `$search`также можно использовать вместе `$filter` . Пример 
+Выполняется поиск всех групп с отображаемыми именами, похожими на "Оневидео". `$search`также можно использовать вместе `$filter` . Например: 
  
 `https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"` 
  
