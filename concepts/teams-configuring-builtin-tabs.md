@@ -4,17 +4,23 @@ description: Создание или настройка вкладки Microsoft
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ffe2799f557b12dd72fa72e6bf8b20f72f507647
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: ec60248bc43c21e476c56b768af4644298b34ae5
+ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345991"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44413485"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Настройка встроенных типов вкладок в Microsoft Teams
 
 Чтобы [создать](/graph/api/teamstab-add?view=graph-rest-beta) или [настроить](/graph/api/teamstab-update?view=graph-rest-beta) вкладку Microsoft Teams с помощью API Microsoft Graph, нужно знать значение `teamsAppId` приложения, и предоставить для этого типа приложения значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl`.
 В этой статье объясняется, как получить эти значения для встроенных типов вкладок.
+
+## <a name="custom-tabs"></a>Настраиваемые вкладки
+
+Чтобы использовать Microsoft Graph для настройки вкладки, связанной с [поставщиком вкладок](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview), которого вы записали, определите значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl`, предоставляемые [интерфейсом конфигурации приложения для Microsoft Teams](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest), и передайте эти же значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl` в Microsoft Graph.
+
+Объект `teamsAppId` аналогичен `id` в [схеме манифеста приложения для Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema).
 
 ## <a name="website-tabs"></a>Вкладки веб-сайтов
 
@@ -64,3 +70,66 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
   }
 }
 ```
+
+## <a name="document-library-tabs"></a>Вкладки библиотеки документов
+
+Для вкладок библиотеки документов объекту `teamsAppId` соответствует `com.microsoft.teamspace.tab.files.sharepoint`. Ниже приведена конфигурация.
+
+| Свойство   | Тип        | Описание                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | string      | Пустая строка ("")                                        |
+| contentUrl | string      | URL-адрес корневой папки библиотеки документов. Этот URL-адрес можно найти, открыв папку SharePoint в браузере, скопировав URL-адрес и удалив "/Формс/аллитемс.аспкс" и все после этого. |
+| removeUrl  | string      | NULL                                                     |
+| websiteUrl | string      | Null                                                     |
+
+### <a name="example-create-a-configured-document-library-tab"></a>Пример: создание настроенной вкладки библиотеки документов
+
+Приведенный ниже пример создает настроенную вкладку Word.
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
+{
+    "displayName": "Document%20Library1",
+    "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint",
+    "configuration": {
+        "entityId": "",
+        "contentUrl": "https://microsoft.sharepoint.com/teams/WWWtest/Shared%20Documents",
+        "removeUrl": null,
+        "websiteUrl": null
+    }
+}
+```
+
+## <a name="wiki-tabs"></a>Вкладки вики-сайта
+
+Для вкладок вики-сайта объекту `teamsAppId` соответствует `com.microsoft.teamspace.tab.wiki`.
+Вкладки вики-сайта не поддерживают конфигурацию через Graph.
+Однако обратите внимание, что практически отсутствуют параметры для конфигурации — в ненастроенной вкладке вики-сайта первому пользователю просто нужно выбрать **Настройка вкладки**, чтобы выполнить ее настройку.
+
+## <a name="planner-tabs"></a>Вкладки планировщика
+
+Для вкладок планировщика объекту teamsAppId соответствует `com.microsoft.teamspace.tab.planner`. Конфигурация не поддерживается.
+
+## <a name="microsoft-stream-tabs"></a>Вкладки Microsoft Stream
+
+Для вкладок Microsoft Stream объекту `teamsAppId` соответствует `com.microsoftstream.embed.skypeteamstab`. Конфигурация не поддерживается.
+
+## <a name="microsoft-forms-tabs"></a>Вкладки Microsoft Forms
+
+Для вкладок Microsoft Forms объекту `teamsAppId` соответствует `81fef3a6-72aa-4648-a763-de824aeafb7d`.
+Конфигурация не поддерживается.
+
+## <a name="onenote-tabs"></a>Вкладки OneNote
+
+Для вкладок OneNote объекту `teamsAppId` соответствует `0d820ecd-def2-4297-adad-78056cde7c78`. Конфигурация не поддерживается.
+
+## <a name="power-bi-tabs"></a>Вкладки Power BI
+
+Для вкладок Power BI объекту `teamsAppId` соответствует `com.microsoft.teamspace.tab.powerbi`.
+Конфигурация не поддерживается.
+
+## <a name="sharepoint-page-and-list-tabs"></a>Вкладки страниц и списков SharePoint
+
+Для вкладок страниц и списков SharePoint объекту `teamsAppId` соответствует `2a527703-1f6f-4559-a332-d8a7d288cd88`.
+Конфигурация не поддерживается.
+Если вы хотите настроить вкладку, попробуйте использовать вкладку веб-сайта.

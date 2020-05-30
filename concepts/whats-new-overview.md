@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: fc17bb684d2adc54ebd6616353c9a865a90b0e58
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 21bad04b4fceeecc1eddd18fbae1a1a20b50e50a
+ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353884"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44413436"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -71,7 +71,7 @@ Intune [может](changelog.md#may-2020) обновляться в бета-в
 - Укажите ресурсы для подготовки в свойстве **ресаурцепровисионингоптионс** , которые обычно не входят в создание [группы](/graph/api/resources/group?view=graph-rest-beta) по умолчанию. В настоящее время поддерживается предоставление [группы в качестве группы с возможностями](/graph/api/resources/team?view=graph-rest-beta) Microsoft Teams.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
-- Применяйте системные параметры запросов OData ( `$count` , `$filter` , `$search` ) при извлечении коллекций сущностей, являющихся производными от [directoryObject](). Вы можете [Искать маркеры соеЦифик](/graph/query-parameters?#using-search-on-directory-object-collections) в свойствах **DisplayName** и **Description** этих сущностей и использовать приведение OData для обрезки результатов **directoryObject** до определенных производных типов. Более подробную информацию можно найти в [статье Создание расширенных запросов в Microsoft Graph с помощью $Count, $Filter, $Search и $OrderBy](https://developer.microsoft.com/en-us/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
+- Применяйте системные параметры запросов OData ( `$count` , `$filter` , `$search` ) при извлечении коллекций сущностей, являющихся производными от [directoryObject](). Можно [выполнить поиск определенных маркеров](/graph/query-parameters?#using-search-on-directory-object-collections) в свойствах **DisplayName** и **Description** для этих сущностей и использовать приведение OData для обрезки результатов **directoryObject** до определенных производных типов. Более подробную информацию можно найти в [статье Создание расширенных запросов в Microsoft Graph с помощью $Count, $Filter, $Search и $OrderBy](https://developer.microsoft.com/en-us/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
 - В рамках [API защиты удостоверений](/graph/api/resources/identityprotection-root?view=graph-rest-beta)используйте свойство **рискевенттипе** , чтобы [получить тип обнаруженного риска](/graph/api/riskdetection-get?view=graph-rest-beta), или [Получите тип риска в журнале пользователя](/graph/api/riskyuser-list-history?view=graph-rest-beta). Не используйте свойство **рисктипе** , так как оно является устаревшим.
 - Укажите типы клиентских приложений в свойстве **клиентапптипес** [набора условий](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) для [политики условного доступа](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
 - Используйте делегированное разрешение, `EntitlementManagement.Read.All` чтобы разрешить приложению считывать пакеты доступа и связанные ресурсы управления обслуживанием от имени пользователя, выполнившего вход в систему.
