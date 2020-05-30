@@ -814,6 +814,24 @@ items:
                     href: api/place-get.md
                   - name: Обновление места
                     href: api/place-update.md
+      - name: Уведомления об изменениях
+        displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+        items:
+          - name: Обзор
+            href: resources/webhooks.md
+          - name: Подписка
+            href: resources/subscription.md
+            items:
+              - name: Список подписки
+                href: api/subscription-list.md
+              - name: Получение подписки
+                href: api/subscription-get.md
+              - name: Создание подписки
+                href: api/subscription-post-subscriptions.md
+              - name: Обновление подписки
+                href: api/subscription-update.md
+              - name: Удаление подписки
+                href: api/subscription-delete.md
       - name: Коммуникации из облака
         displayName: Cloud communications
         items:
@@ -1264,7 +1282,7 @@ items:
               - name: Категория мобильных приложений
                 href: resources/intune-apps-mobileappcategory.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-apps-mobileappcategory-list.md
                   - name: Получение
                     href: api/intune-apps-mobileappcategory-get.md
@@ -1290,7 +1308,7 @@ items:
               - name: Файл содержимого мобильного приложения
                 href: resources/intune-apps-mobileappcontentfile.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-apps-mobileappcontentfile-list.md
                   - name: Получение
                     href: api/intune-apps-mobileappcontentfile-get.md
@@ -1487,7 +1505,7 @@ items:
               - name: Общая конфигурация устройств для Android
                 href: resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
@@ -1502,7 +1520,7 @@ items:
               - name: Политика соответствия требованиям рабочего профиля Android
                 href: resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md
@@ -1711,7 +1729,7 @@ items:
               - name: Настройка устройства
                 href: resources/intune-deviceconfig-deviceconfiguration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-deviceconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-deviceconfiguration-get.md
@@ -1720,7 +1738,7 @@ items:
               - name: Назначение конфигурации устройств
                 href: resources/intune-deviceconfig-deviceconfigurationassignment.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
@@ -1909,7 +1927,7 @@ items:
               - name: Тип ресурса iosUpdateDeviceStatus
                 href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -1937,7 +1955,7 @@ items:
               - name: Специальная конфигурация macOS
                 href: resources/intune-deviceconfig-macoscustomconfiguration.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -2111,7 +2129,7 @@ items:
               - name: Политика соответствия требованиям для Windows 10
                 href: resources/intune-deviceconfig-windows10compliancepolicy.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-windows10compliancepolicy-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-windows10compliancepolicy-get.md
@@ -2139,7 +2157,7 @@ items:
               - name: Конфигурация Windows 10 Endpoint Protection
                 href: resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
@@ -2778,18 +2796,18 @@ items:
               - name: Windows Information Protection
                 href: resources/intune-mam-windowsinformationprotection.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-mam-windowsinformationprotection-list.md
                   - name: Получение
                     href: api/intune-mam-windowsinformationprotection-get.md
-                  - name: Действие назначения
+                  - name: назначения действия
                     href: api/intune-mam-windowsinformationprotection-assign.md
               - name: Приложение Windows Information Protection
                 href: resources/intune-mam-windowsinformationprotectionapp.md
               - name: Сводка по обучению для приложения Windows Information Protection
                 href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
                   - name: Получение
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
@@ -2992,7 +3010,7 @@ items:
               - name: Организация
                 href: resources/intune-onboarding-organization.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-onboarding-organization-list.md
                   - name: Получение
                     href: api/intune-onboarding-organization-get.md
@@ -3005,7 +3023,7 @@ items:
               - name: Токен VPP
                 href: resources/intune-onboarding-vpptoken.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-onboarding-vpptoken-list.md
                   - name: Получение
                     href: api/intune-onboarding-vpptoken-get.md
@@ -3265,6 +3283,34 @@ items:
                 href: api/educationuser-get.md
               - name: Удаление пользователя
                 href: api/educationuser-delete.md
+      - name: Расширения
+        items:
+          - name: Открытые расширения
+            href: resources/opentypeextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            items:
+              - name: Создание открытого расширения
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: Получение открытого расширения
+                href: api/opentypeextension-get.md
+              - name: Обновление открытого расширения
+                href: api/opentypeextension-update.md
+              - name: Удаление открытого расширения
+                href: api/opentypeextension-delete.md
+          - name: Расширения схемы
+            href: resources/schemaextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            items:
+              - name: Перечисление расширений схемы
+                href: api/schemaextension-list.md
+              - name: Создание расширения схемы
+                href: api/schemaextension-post-schemaextensions.md
+              - name: Получение расширения схемы
+                href: api/schemaextension-get.md
+              - name: Обновление расширения схемы
+                href: api/schemaextension-update.md
+              - name: Удаление расширения схемы
+                href: api/schemaextension-delete.md
       - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
@@ -3610,7 +3656,7 @@ items:
                 href: api/oauth2permissiongrant-get.md
               - name: Обновление
                 href: api/oauth2permissiongrant-update.md
-              - name: Удаление
+              - name: Delete
                 href: api/oauth2permissiongrant-delete.md
           - name: Организация
             href: resources/organization.md
@@ -4957,50 +5003,3 @@ items:
                 href: api/nameditem-add.md
               - name: Список диапазона
                 href: api/nameditem-range.md
-      - name: Средства
-        expanded: true
-        items:
-          - name: Открытые расширения
-            href: resources/opentypeextension.md
-            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
-            items:
-              - name: Создание открытого расширения
-                href: api/opentypeextension-post-opentypeextension.md
-              - name: Получение открытого расширения
-                href: api/opentypeextension-get.md
-              - name: Обновление открытого расширения
-                href: api/opentypeextension-update.md
-              - name: Удаление открытого расширения
-                href: api/opentypeextension-delete.md
-          - name: Расширения схемы
-            href: resources/schemaextension.md
-            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
-            items:
-              - name: Перечисление расширений схемы
-                href: api/schemaextension-list.md
-              - name: Создание расширения схемы
-                href: api/schemaextension-post-schemaextensions.md
-              - name: Получение расширения схемы
-                href: api/schemaextension-get.md
-              - name: Обновление расширения схемы
-                href: api/schemaextension-update.md
-              - name: Удаление расширения схемы
-                href: api/schemaextension-delete.md
-          - name: Уведомления об изменениях
-            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
-            items:
-              - name: Обзор
-                href: resources/webhooks.md
-              - name: Подписка
-                href: resources/subscription.md
-                items:
-                  - name: Список подписки
-                    href: api/subscription-list.md
-                  - name: Получение подписки
-                    href: api/subscription-get.md
-                  - name: Создание подписки
-                    href: api/subscription-post-subscriptions.md
-                  - name: Обновление подписки
-                    href: api/subscription-update.md
-                  - name: Удаление подписки
-                    href: api/subscription-delete.md
