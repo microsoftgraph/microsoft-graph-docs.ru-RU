@@ -5,55 +5,53 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d0694e100f36ae6e806bed30c88664cc21becc09
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 92d087f07964bba8c9304791c38a660725896865
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290246"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491681"
 ---
-# <a name="update-tab"></a><span data-ttu-id="8003e-103">Обновление вкладки</span><span class="sxs-lookup"><span data-stu-id="8003e-103">Update tab</span></span>
+# <a name="update-tab"></a><span data-ttu-id="18f0f-103">Обновление вкладки</span><span class="sxs-lookup"><span data-stu-id="18f0f-103">Update tab</span></span>
 
-<span data-ttu-id="8003e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8003e-104">Namespace: microsoft.graph</span></span>
-
-
-<span data-ttu-id="8003e-105">Обновление свойств указанной [вкладки](../resources/teamstab.md). Это можно использовать для настройки контента вкладки.</span><span class="sxs-lookup"><span data-stu-id="8003e-105">Update the properties of the specified [tab](../resources/teamstab.md). This can be used to configure the content of the tab.</span></span>
-
-## <a name="permissions"></a><span data-ttu-id="8003e-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8003e-106">Permissions</span></span>
-<span data-ttu-id="8003e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8003e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="18f0f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="18f0f-104">Namespace: microsoft.graph</span></span>
 
 
-|<span data-ttu-id="8003e-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8003e-109">Permission type</span></span>      | <span data-ttu-id="8003e-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8003e-110">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="18f0f-105">Обновление свойств указанной [вкладки](../resources/teamstab.md). Это можно использовать для настройки контента вкладки.</span><span class="sxs-lookup"><span data-stu-id="18f0f-105">Update the properties of the specified [tab](../resources/teamstab.md). This can be used to configure the content of the tab.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="18f0f-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="18f0f-106">Permissions</span></span>
+<span data-ttu-id="18f0f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="18f0f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+
+|<span data-ttu-id="18f0f-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="18f0f-109">Permission type</span></span>      | <span data-ttu-id="18f0f-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="18f0f-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8003e-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8003e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8003e-112">TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="8003e-112">TeamsTab.ReadWrite.All, Group.ReadWrite.All</span></span> |
-|<span data-ttu-id="8003e-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8003e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8003e-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8003e-114">Not supported.</span></span>    |
-|<span data-ttu-id="8003e-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8003e-115">Application</span></span>                            | <span data-ttu-id="8003e-116">TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="8003e-116">TeamsTab.ReadWrite.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="18f0f-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="18f0f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="18f0f-112">TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="18f0f-112">TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="18f0f-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="18f0f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="18f0f-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="18f0f-114">Not supported.</span></span>    |
+|<span data-ttu-id="18f0f-115">Сервер приложений</span><span class="sxs-lookup"><span data-stu-id="18f0f-115">Application</span></span> | <span data-ttu-id="18f0f-116">TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="18f0f-116">TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-<span data-ttu-id="8003e-117">| Делегированная (Рабочая или учебная учетная запись) | TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL | | Делегированная учетная запись (личная учетная запись Майкрософт) | Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8003e-117">|Delegated (work or school account) | TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All | |Delegated (personal Microsoft account) | Not supported.</span></span>    <span data-ttu-id="8003e-118">| | Приложение | TeamsTab. Edit. Group ([RSC](https://aka.ms/teams-rsc)), TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |</span><span class="sxs-lookup"><span data-stu-id="8003e-118">| |Application | TeamsTab.Edit.Group ([RSC](https://aka.ms/teams-rsc)), TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |</span></span>
+> <span data-ttu-id="18f0f-117">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="18f0f-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="18f0f-118">Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.</span><span class="sxs-lookup"><span data-stu-id="18f0f-118">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-> <span data-ttu-id="8003e-119">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="8003e-119">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="8003e-120">Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.</span><span class="sxs-lookup"><span data-stu-id="8003e-120">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
-
-## <a name="http-request"></a><span data-ttu-id="8003e-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8003e-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="18f0f-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="18f0f-119">HTTP request</span></span>
 ```http
 PATCH /teams/{id}/channels/{id}/tabs/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8003e-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8003e-122">Request headers</span></span>
-| <span data-ttu-id="8003e-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="8003e-123">Header</span></span>       | <span data-ttu-id="8003e-124">Значение</span><span class="sxs-lookup"><span data-stu-id="8003e-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="18f0f-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="18f0f-120">Request headers</span></span>
+| <span data-ttu-id="18f0f-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="18f0f-121">Header</span></span>       | <span data-ttu-id="18f0f-122">Значение</span><span class="sxs-lookup"><span data-stu-id="18f0f-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="8003e-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8003e-125">Authorization</span></span>  | <span data-ttu-id="8003e-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8003e-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="8003e-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8003e-128">Content-Type</span></span>  | <span data-ttu-id="8003e-129">application/json</span><span class="sxs-lookup"><span data-stu-id="8003e-129">application/json</span></span>  |
+| <span data-ttu-id="18f0f-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="18f0f-123">Authorization</span></span>  | <span data-ttu-id="18f0f-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="18f0f-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="18f0f-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="18f0f-126">Content-Type</span></span>  | <span data-ttu-id="18f0f-127">application/json</span><span class="sxs-lookup"><span data-stu-id="18f0f-127">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="8003e-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="8003e-130">Request body</span></span>
-<span data-ttu-id="8003e-131">В тексте запроса добавьте представление объекта [Tab](../resources/teamstab.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8003e-131">In the request body, supply a JSON representation of [tab](../resources/teamstab.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="18f0f-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="18f0f-128">Request body</span></span>
+<span data-ttu-id="18f0f-129">В тексте запроса добавьте представление объекта [Tab](../resources/teamstab.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="18f0f-129">In the request body, supply a JSON representation of [tab](../resources/teamstab.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8003e-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="8003e-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="18f0f-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="18f0f-130">Response</span></span>
 
-<span data-ttu-id="8003e-133">В случае успешного выполнения этот метод возвращает код отклика `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="8003e-133">If successful, this method returns a `200 OK` response code.</span></span>
+<span data-ttu-id="18f0f-131">В случае успешного выполнения этот метод возвращает код отклика `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="18f0f-131">If successful, this method returns a `200 OK` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8003e-134">Пример</span><span class="sxs-lookup"><span data-stu-id="8003e-134">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="8003e-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="8003e-135">Request</span></span>
-<span data-ttu-id="8003e-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8003e-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="18f0f-132">Пример</span><span class="sxs-lookup"><span data-stu-id="18f0f-132">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="18f0f-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="18f0f-133">Request</span></span>
+<span data-ttu-id="18f0f-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="18f0f-134">The following is an example of the request.</span></span>
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
@@ -63,7 +61,7 @@ Content-length: 211
   "displayName": "My Contoso Tab - updated"
 }
 ```
-#### <a name="response"></a><span data-ttu-id="8003e-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="8003e-137">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="18f0f-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="18f0f-135">Response</span></span>
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -83,9 +81,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="8003e-138">См. также</span><span class="sxs-lookup"><span data-stu-id="8003e-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="18f0f-136">См. также</span><span class="sxs-lookup"><span data-stu-id="18f0f-136">See also</span></span>
 
-[<span data-ttu-id="8003e-139">Настройка встроенных типов вкладок</span><span class="sxs-lookup"><span data-stu-id="8003e-139">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
+[<span data-ttu-id="18f0f-137">Настройка встроенных типов вкладок</span><span class="sxs-lookup"><span data-stu-id="18f0f-137">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
