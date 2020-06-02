@@ -5,14 +5,16 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: e26cc38761ac55f1c39bc2e41459c7567692f2a3
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: cae0d7796baa10cdabc10214c98a37d3b0130592
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353485"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491821"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Teams — это рабочее пространство с чатами в Office 365, обеспечивающее встроенный доступ к календарям команд, файлам, заметкам OneNote, планам Планировщика, расписаниям Смен и многому другому.
 
@@ -20,19 +22,29 @@ Microsoft Teams — это рабочее пространство с чатам
 
 | Ресурс | Методы |
 |:---------------|:--------|
-|[team](../resources/team.md)| [Перечисление ваших команд](../api/user-list-joinedteams.md), [перечисление всех команд](/graph/teams-list-all-teams), [создание](../api/team-put-teams.md), [чтение](../api/team-get.md), [обновление](../api/team-update.md), [удаление](/graph/api/group-delete?view=graph-rest-1.0), [клонирование](../api/team-clone.md), [архивирование](../api/team-archive.md), [распаковка](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [Добавление участника](../api/group-post-members.md), [удаление участника](../api/group-delete-members.md), [добавление владельца](../api/group-post-owners.md), [удаление владельца](../api/group-delete-owners.md), [получение файлов](drive.md), [получение записной книжки](/graph/api/resources/notebook?view=graph-rest-1.0), [получение планов](plannergroup.md), [получение календаря](event.md) |
+|[team](../resources/team.md)| [Перечисление ваших команд](../api/user-list-joinedteams.md), [перечисление всех команд](/graph/teams-list-all-teams), [создание](../api/team-put-teams.md), [чтение](../api/team-get.md), [обновление](../api/team-update.md), [удаление](../api/group-delete.md), [клонирование](../api/team-clone.md), [архивирование](../api/team-archive.md), [распаковка](../api/team-unarchive.md) |
+|[group](../resources/group.md)| [Добавление участника](../api/group-post-members.md), [удаление участника](../api/group-delete-members.md), [добавление владельца](../api/group-post-owners.md), [удаление владельца](../api/group-delete-owners.md), [получение файлов](drive.md), [получение записной книжки](../resources/notebook.md), [получение планов](plannergroup.md), [получение календаря](event.md) |
 |[channel](../resources/channel.md)|[Список](../api/channel-list.md), [создание](../api/channel-post.md), [чтение](../api/channel-get.md), [обновление](../api/channel-patch.md), [удаление](../api/channel-delete.md)|
 |[teamsTab](../resources/teamstab.md) |[Список](../api/teamstab-list.md), [создание](../api/teamstab-add.md), [чтение](../api/teamstab-get.md), [обновление](../api/teamstab-update.md), [удаление](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[Список](../api/teamsapp-list.md), [публикация](../api/teamsapp-publish.md), [обновление](../api/teamsapp-update.md), [удаление](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [Список](../api/teamsappinstallation-list.md), [установка](../api/teamsappinstallation-add.md), [обновление](../api/teamsappinstallation-delete.md), [удаление](../api/teamsappinstallation-delete.md) |
-|[chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)| [Список](/graph/api/channel-list-messages?view=graph-rest-beta), [отправка](/graph/api/channel-post-messages?view=graph-rest-beta), [чтение](/graph/api/channel-get-message?view=graph-rest-beta) |
-|[call](/graph/api/resources/call?view=graph-rest-beta)| [Ответ](/graph/api/call-answer?view=graph-rest-beta), [отклонение](/graph/api/call-reject?view=graph-rest-beta), [перенаправление](/graph/api/call-redirect?view=graph-rest-beta), [отключение звука](/graph/api/call-mute?view=graph-rest-beta), [включение звука](/graph/api/call-unmute?view=graph-rest-beta), [обновление метаданных](/graph/api/call-updatemetadata?view=graph-rest-beta), [изменение роли при демонстрации экрана](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [перечисление участников](/graph/api/call-list-participants?view=graph-rest-beta), [приглашение участников](/graph/api/participant-invite?view=graph-rest-beta), [отключение звука всех участников](/graph/api/participant-muteall?view=graph-rest-beta) |
-|[schedule](/graph/api/resources/schedule?view=graph-rest-beta)| [Создание или замена](/graph/api/team-put-schedule?view=graph-rest-beta), [получение](/graph/api/schedule-get?view=graph-rest-beta), [предоставление общего доступа](/graph/api/schedule-share?view=graph-rest-beta) |
-|[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta)| [Создание](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta), [список](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta), [получение](/graph/api/schedulinggroup-get?view=graph-rest-beta), [замена](/graph/api/schedulinggroup-put?view=graph-rest-beta), [удаление](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
-|[shift](/graph/api/resources/shift?view=graph-rest-beta)| [Создание](/graph/api/schedule-post-shifts?view=graph-rest-beta), [список](/graph/api/schedule-list-shifts?view=graph-rest-beta), [получение](/graph/api/shift-get?view=graph-rest-beta), [замена](/graph/api/shift-put?view=graph-rest-beta), [удаление](/graph/api/shift-delete?view=graph-rest-beta) |
-|[тимеофф](/graph/api/resources/timeoff?view=graph-rest-beta)| [Создание](/graph/api/schedule-post-timesoff?view=graph-rest-beta), [список](/graph/api/schedule-list-timesoff?view=graph-rest-beta), [получение](/graph/api/timeoff-get?view=graph-rest-beta), [замена](/graph/api/timeoff-put?view=graph-rest-beta), [удаление](/graph/api/timeoff-delete?view=graph-rest-beta) |
-|[тимеоффреасон](/graph/api/resources/timeoffreason?view=graph-rest-beta)| [Создание](/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta), [список](/graph/api/schedule-list-timeoffreasons?view=graph-rest-beta), [получение](/graph/api/timeoffreason-get?view=graph-rest-beta), [замена](/graph/api/timeoffreason-put?view=graph-rest-beta), [удаление](/graph/api/timeoffreason-delete?view=graph-rest-beta) |
+|[chatMessage](../resources/chatmessage.md)| [send](../api/channel-post-messages.md) |
+|[call](../resources/call.md)| [Ответ](../api/call-answer.md), [отклонение](../api/call-reject.md), [Перенаправление](../api/call-redirect.md), [Отключение](../api/call-mute.md)и включение [звука](../api/call-unmute.md), [изменение роли общего доступа к экрану](../api/call-changescreensharingrole.md), [список участников](../api/call-list-participants.md), [приглашение участников](../api/participant-invite.md) |
+|[schedule](../resources/schedule.md)| [Создание или замена](../api/team-put-schedule.md), [получение](../api/schedule-get.md), [предоставление общего доступа](../api/schedule-share.md) |
+|[schedulingGroup](../resources/schedulinggroup.md)| [Создание](../api/schedule-post-schedulinggroups.md), [список](../api/schedule-list-schedulinggroups.md), [получение](../api/schedulinggroup-get.md), [замена](../api/schedulinggroup-put.md), [удаление](../api/schedulinggroup-delete.md) |
+|[shift](../resources/shift.md)| [Создание](../api/schedule-post-shifts.md), [список](../api/schedule-list-shifts.md), [получение](../api/shift-get.md), [замена](../api/shift-put.md), [удаление](../api/shift-delete.md) |
+|[тимеофф](../resources/timeoff.md)| [Создание](../api/schedule-post-timesoff.md), [список](../api/schedule-list-timesoff.md), [получение](../api/timeoff-get.md), [замена](../api/timeoff-put.md), [удаление](../api/timeoff-delete.md) |
+|[тимеоффреасон](../resources/timeoffreason.md)| [Создание](../api/schedule-post-timeoffreasons.md), [список](../api/schedule-list-timeoffreasons.md), [получение](../api/timeoffreason-get.md), [замена](../api/timeoffreason-put.md), [удаление](../api/timeoffreason-delete.md) |
+
+## <a name="microsoft-teams-limits"></a>Ограничения Microsoft Teams
+
+Протестированные ограничения производительности (мощности) Microsoft Teams описаны в статье [Ограничения и спецификации для Microsoft Teams](/microsoftteams/limits-specifications-teams).
+Эти ограничения применяются при непосредственном использовании Microsoft Teams или с помощью API Microsoft Graph.
+Так как у каждой команды есть соответствующая группа, а каждая группа является объектом каталога, ограничение [количества групп](/microsoft-365/admin/create-groups/office-365-groups#group-limits) и [количества объектов каталога ("ресурсов")](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions) может также оказывать влияние. 
+
+Файлы в каналах хранятся в SharePoint; при этом применяются [ограничения SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
+
+См. также [Ограничения регулирования для служб Microsoft Teams](/graph/throttling).
 
 ## <a name="teams-and-groups"></a>Команды и группы
 
@@ -45,7 +57,10 @@ Microsoft Teams — это рабочее пространство с чатам
 
 Ниже указаны различия на уровне API между командами и группами.
 
+- Сохраняемый чат доступен только в Microsoft Teams. Эта функция иерархически представлена ресурсами [channel](../resources/channel.md) и [chatMessage](../resources/chatmessage.md).
+- Групповые беседы доступны только в группах Office 365. Эта функция иерархически представлена ресурсами [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) и [post](../resources/post.md).
 - Метод [Перечисление команд, к которым присоединился пользователь](../api/user-list-joinedteams.md) применяется только к Microsoft Teams.
+- [API звонков и собраний по сети](./communications-api-overview.md) применяются только к Microsoft Teams.
 - См. также [известные проблемы](/graph/known-issues) для этих API.
 
 >Примечание. Если вы используете интерфейсы API для групп в приложении Microsoft Teams, а не в отдельном приложении (например, для вкладки или бота в Microsoft Teams), следуйте инструкциям из статьи Использование Microsoft Graph на страницах Microsoft Teams.
@@ -74,8 +89,8 @@ Microsoft Teams — это рабочее пространство с чатам
 
 | Скорость | Синтаксис |
 | ------ | ----- |
-| Быстро | https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref |
-| Медленно | https://graph.microsoft.com/v1.0/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref |
+| Быстро | `https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref` |
+| Медленно | `https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref` |
 
 Аналогичным образом, если параметр `userId` в URL-адресе или полезных данных выражается как имя участника-пользователя (UPN), а не как идентификатор GUID, производительность будет ниже.
 
@@ -86,6 +101,19 @@ Microsoft Teams — это рабочее пространство с чатам
 
 При выборе медленного пути, если текущий участник или владелец команды вошел в систему в приложении или на веб-сайте Microsoft Teams, изменения отразятся в течение часа.
 Если ни один из таких пользователей не вошел в систему в приложении или на веб-сайте Microsoft Teams, изменения не отразятся, пока не пройдет час после входа одного из них.
+
+> [!Note]
+> Гости клиента всегда обрабатываются с помощью медленного пути.
+
+## <a name="polling-requirements"></a>Требования к опросу
+
+Если приложение опрашивает вас на предмет изменения ресурса, это можно делать раз в день. ([teamsAsyncOperation](teamsasyncoperation.md) является исключением из общего правила, так как опрашивается часто.) Если нужно узнавать об изменениях чаще, [создайте подписку](../api/subscription-post-subscriptions.md) на этот ресурс и получайте уведомления об изменениях (веб-перехватчики). Если вы не нашли поддержку для нужного типа подписки, рекомендуем оставить свой отзыв с помощью [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
+
+При опросе на предмет новых сообщений необходимо определить диапазон дат, в котором поддерживается опрос. Дополнительные сведения см. в статье [Получение изменившихся данных о сообщениях в каналах](/graph/api/chatmessage-delta?view=graph-rest-beta).
+
+При опросе для ресурса раз за разом выполняется операция GET, чтобы проверить, не изменился ли он. Операцию GET разрешается выполнять на одном и том же ресурсе несколько раз в день, пока не проводится опрос. Например, хорошо выполнять операцию GET на /me/joinedTeams каждый раз, когда пользователь посещает или обновляет вашу веб-страницу, но было бы неправильно выполнять GET на /me/joinedTeams в цикле каждые 30 секунд, чтобы обновлять эту веб-страницу.
+
+Если приложения не удовлетворяют требованиям опроса, это будет рассматриваться как нарушение [условий использования API Майкрософт](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use). Такое нарушение может привести к дополнительному [регулированию](/graph/throttling), а также приостановке или прекращению использования API Майкрософт.
 
 ## <a name="whats-new"></a>Новые возможности
 Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.

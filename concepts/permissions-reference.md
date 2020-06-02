@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: dbeb2b752da552fafb994e8593fbd9c4ce953d09
-ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
+ms.openlocfilehash: f76d8534e0cea72cb6b66d0d94466c248be2dc9a
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408313"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491877"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -421,8 +421,8 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 #### <a name="application"></a>Для приложений
 
-* _CallRecords.Read.All_. Получение записи звонка (`GET /beta/communications/callRecords/{id}`).
-* _CallRecords.Read.All_. Подписка на новые записи звонков (`POST /beta/subscriptions`).
+* _CallRecords.Read.All_. Получение записи звонка (`GET /v1.0/communications/callRecords/{id}`).
+* _CallRecords.Read.All_. Подписка на новые записи звонков (`POST /v1.0/subscriptions`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e7f3f9e3bfab3be42960a38d117ba7e89cea84d3
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 4ad0c71e8658b8c87f4e7a94dbc95a749aa8592c
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289098"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491639"
 ---
 # <a name="get-channel-message"></a>Получение сообщения в канале
 
@@ -27,7 +27,9 @@ ms.locfileid: "44289098"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Чаннелмессаже. Read. Group ([RSC](https://aka.ms/teams-rsc)), Чаннелмессаже. Read. ALL, Group. Read. ALL, Group. ReadWrite. ALL |
+|Для приложений| Чаннелмессаже. Read. Group *, Чаннелмессаже. Read. ALL, Group. Read. ALL, Group. ReadWrite. ALL |
+
+> **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).

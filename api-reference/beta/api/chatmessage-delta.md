@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: f04fb42dfc4b85690b0a128ac06d15554f3f4957
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
-ms.translationtype: HT
+ms.openlocfilehash: a78d7cbeef36f5b6f15fca3d1131c8efe1270002
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438542"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491317"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -33,7 +33,7 @@ ms.locfileid: "42438542"
 
 Маркеры состояния полностью непрозрачны для клиента. Чтобы продолжить цикл отслеживания изменений, просто скопируйте и примените URL-адрес `nextLink` или `deltaLink`, возвращенный последним запросом GET, при следующем вызове функции delta для этого представления календаря. Ссылка `deltaLink` в ответе означает, что текущий цикл отслеживания изменений завершен. Вы можете сохранить и использовать URL-адрес `deltaLink` в начале следующего цикла.
 
-Дополнительные сведения см. в документации по [разностному запросу](/graph/delta-query-overview.md).
+Дополнительные сведения см. в документации по [разностному запросу](/graph/delta-query-overview).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,9 +41,11 @@ ms.locfileid: "42438542"
 
 |Тип разрешения                        |Разрешения (в порядке повышения привилегий)  |
 |---------------------------------------|---------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     |ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All          |
+|Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается                                |
-|Для приложений                            |ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All          |
+|Для приложений                            | Чаннелмессаже. Read. Group *, Чаннелмессаже. Read. ALL, Group. Read. ALL, Group. ReadWrite. ALL |
+
+> **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).

@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8b08832ca7bcb02b62765c69ad1312753306f908
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 3d327042486f1d5fe29a86f8e65b58908f8f9931
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289091"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491625"
 ---
 # <a name="get-channel"></a>Получение канала
 
@@ -28,7 +28,9 @@ ms.locfileid: "44289091"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Channel. ReadBasic. ALL, Чаннелсеттингс. Read. ALL, Чаннелсеттингс. ReadWrite. ALL, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Channel. ReadBasic. ALL, Чаннелсеттингс. Read. ALL, Чаннелсеттингс. ReadWrite. ALL, Чаннелсеттингс. Read. Group ([RSC](https://aka.ms/teams-rsc)), Чаннелсеттингс. Edit. Group ([RSC](https://aka.ms/teams-rsc)), Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL    |
+|Для приложений | Channel. ReadBasic. ALL, Чаннелсеттингс. Read. ALL, Чаннелсеттингс. ReadWrite. ALL, Чаннелсеттингс. Read. Group *, чаннелсеттингс. Edit. Group*, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL    |
+
+> **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом]( https://aka.ms/teams-rsc).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 

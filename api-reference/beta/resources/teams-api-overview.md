@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 34f5186e9933f5edcd8a91b1cb95b21b6deb4a50
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 968ce6806da2d14bd2c6cb53d749a43694bcf0bb
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353905"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491905"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -22,19 +22,19 @@ Microsoft Teams — это рабочее пространство с чатам
 
 | Ресурс | Методы |
 |:---------------|:--------|
-|[team](../resources/team.md)| [Перечисление ваших команд](../api/user-list-joinedteams.md), [перечисление всех команд](/graph/teams-list-all-teams), [создание](../api/team-put-teams.md), [чтение](../api/team-get.md), [обновление](../api/team-update.md), [удаление](/graph/api/group-delete?view=graph-rest-1.0), [клонирование](../api/team-clone.md), [архивирование](../api/team-archive.md), [распаковка](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [Добавление участника](../api/group-post-members.md), [удаление участника](../api/group-delete-members.md), [добавление владельца](../api/group-post-owners.md), [удаление владельца](../api/group-delete-owners.md), [получение файлов](drive.md), [получение записной книжки](/graph/api/resources/notebook?view=graph-rest-1.0), [получение планов](plannergroup.md), [получение календаря](event.md) |
+|[team](../resources/team.md)| [Перечисление ваших команд](../api/user-list-joinedteams.md), [перечисление всех команд](/graph/teams-list-all-teams), [создание](../api/team-put-teams.md), [чтение](../api/team-get.md), [обновление](../api/team-update.md), [удаление](../api/group-delete.md), [клонирование](../api/team-clone.md), [архивирование](../api/team-archive.md), [распаковка](../api/team-unarchive.md) |
+|[group](../resources/group.md)| [Добавление участника](../api/group-post-members.md), [удаление участника](../api/group-delete-members.md), [добавление владельца](../api/group-post-owners.md), [удаление владельца](../api/group-delete-owners.md), [получение файлов](drive.md), [получение записной книжки](../resources/notebook.md), [получение планов](plannergroup.md), [получение календаря](event.md) |
 |[channel](../resources/channel.md)|[Список](../api/channel-list.md), [создание](../api/channel-post.md), [чтение](../api/channel-get.md), [обновление](../api/channel-patch.md), [удаление](../api/channel-delete.md)|
 |[teamsTab](../resources/teamstab.md) |[Список](../api/teamstab-list.md), [создание](../api/teamstab-add.md), [чтение](../api/teamstab-get.md), [обновление](../api/teamstab-update.md), [удаление](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[Список](../api/teamsapp-list.md), [публикация](../api/teamsapp-publish.md), [обновление](../api/teamsapp-update.md), [удаление](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [Список](../api/teamsappinstallation-list.md), [установка](../api/teamsappinstallation-add.md), [обновление](../api/teamsappinstallation-delete.md), [удаление](../api/teamsappinstallation-delete.md) |
-|[chatMessage](../resources/chatmessage.md) (предварительная версия)| [Список](../api/channel-list-messages.md), [отправка](../api/channel-post-messages.md), [чтение](/graph/api/channel-get-message?view=graph-rest-beta) |
-|[call](/graph/api/resources/communications-api-overview.md) (предварительная версия) | [Ответ](/graph/api/call-answer?view=graph-rest-beta), [отклонение](/graph/api/call-reject?view=graph-rest-beta), [перенаправление](/graph/api/call-redirect?view=graph-rest-beta), [отключение звука](/graph/api/call-mute?view=graph-rest-beta), [включение звука](/graph/api/call-unmute?view=graph-rest-beta), [обновление метаданных](/graph/api/call-updatemetadata?view=graph-rest-beta), [изменение роли при демонстрации экрана](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [перечисление участников](/graph/api/call-list-participants?view=graph-rest-beta), [приглашение участников](/graph/api/participant-invite?view=graph-rest-beta), [отключение звука всех участников](/graph/api/participant-muteall?view=graph-rest-beta) |
-|[schedule](/graph/api/resources/schedule?view=graph-rest-beta) (предварительная версия)| [Создание или замена](/graph/api/team-put-schedule?view=graph-rest-beta), [получение](/graph/api/schedule-get?view=graph-rest-beta), [предоставление общего доступа](/graph/api/schedule-share?view=graph-rest-beta) |
-|[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta) (предварительная версия)| [Создание](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta), [список](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta), [получение](/graph/api/schedulinggroup-get?view=graph-rest-beta), [замена](/graph/api/schedulinggroup-put?view=graph-rest-beta), [удаление](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
-|[shift](/graph/api/resources/shift?view=graph-rest-beta) (предварительная версия)| [Создание](/graph/api/schedule-post-shifts?view=graph-rest-beta), [список](/graph/api/schedule-list-shifts?view=graph-rest-beta), [получение](/graph/api/shift-get?view=graph-rest-beta), [замена](/graph/api/shift-put?view=graph-rest-beta), [удаление](/graph/api/shift-delete?view=graph-rest-beta) |
-|[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta) (предварительная версия)| [Создание](/graph/api/schedule-post-timesoff?view=graph-rest-beta), [список](/graph/api/schedule-list-timesoff?view=graph-rest-beta), [получение](/graph/api/timeoff-get?view=graph-rest-beta), [замена](/graph/api/timeoff-put?view=graph-rest-beta), [удаление](/graph/api/timeoff-delete?view=graph-rest-beta) |
-|[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta) (предварительная версия)| [Создание](/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta), [список](/graph/api/schedule-list-timeoffreasons?view=graph-rest-beta), [получение](/graph/api/timeoffreason-get?view=graph-rest-beta), [замена](/graph/api/timeoffreason-put?view=graph-rest-beta), [удаление](/graph/api/timeoffreason-delete?view=graph-rest-beta) |
+|[chatMessage](../resources/chatmessage.md)| [Список](../api/channel-list-messages.md), [отправка](../api/channel-post-messages.md), [чтение](../api/channel-get-message.md) |
+| [call](../resources/call.md)| [Ответ](../api/call-answer.md), [отклонение](../api/call-reject.md), [перенаправление](../api/call-redirect.md), [отключение звука](../api/call-mute.md), [включение звука](../api/call-unmute.md), [обновление метаданных](../api/call-updatemetadata.md), [изменение роли при демонстрации экрана](../api/call-changescreensharingrole.md), [перечисление участников](../api/call-list-participants.md), [приглашение участников](../api/participant-invite.md), [отключение звука всех участников](../api/participant-muteall.md) |
+|[schedule](../resources/schedule.md)| [Создание или замена](../api/team-put-schedule.md), [получение](../api/schedule-get.md), [предоставление общего доступа](../api/schedule-share.md) |
+|[schedulingGroup](../resources/schedulinggroup.md)| [Создание](../api/schedule-post-schedulinggroups.md), [список](../api/schedule-list-schedulinggroups.md), [получение](../api/schedulinggroup-get.md), [замена](../api/schedulinggroup-put.md), [удаление](../api/schedulinggroup-delete.md) |
+|[shift](../resources/shift.md)| [Создание](../api/schedule-post-shifts.md), [список](../api/schedule-list-shifts.md), [получение](../api/shift-get.md), [замена](../api/shift-put.md), [удаление](../api/shift-delete.md) |
+|[тимеофф](../resources/timeoff.md)| [Создание](../api/schedule-post-timesoff.md), [список](../api/schedule-list-timesoff.md), [получение](../api/timeoff-get.md), [замена](../api/timeoff-put.md), [удаление](../api/timeoff-delete.md) |
+|[тимеоффреасон](../resources/timeoffreason.md)| [Создание](../api/schedule-post-timeoffreasons.md), [список](../api/schedule-list-timeoffreasons.md), [получение](../api/timeoffreason-get.md), [замена](../api/timeoffreason-put.md), [удаление](../api/timeoffreason-delete.md) |
 
 ## <a name="microsoft-teams-limits"></a>Ограничения Microsoft Teams
 
@@ -109,7 +109,7 @@ Microsoft Teams — это рабочее пространство с чатам
 
 Если приложение опрашивает вас на предмет изменения ресурса, это можно делать раз в день. ([teamsAsyncOperation](teamsasyncoperation.md) является исключением из общего правила, так как опрашивается часто.) Если нужно узнавать об изменениях чаще, [создайте подписку](../api/subscription-post-subscriptions.md) на этот ресурс и получайте уведомления об изменениях (веб-перехватчики). Если вы не нашли поддержку для нужного типа подписки, рекомендуем оставить свой отзыв с помощью [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
 
-При опросе на предмет новых сообщений необходимо определить диапазон дат, в котором поддерживается опрос. Дополнительные сведения см. в статье [Получение изменившихся данных о сообщениях в каналах](/graph/api/chatmessage-delta?view=graph-rest-beta).
+При опросе на предмет новых сообщений необходимо определить диапазон дат, в котором поддерживается опрос. Дополнительные сведения см. в статье [Получение изменившихся данных о сообщениях в каналах](../api/chatmessage-delta.md).
 
 При опросе для ресурса раз за разом выполняется операция GET, чтобы проверить, не изменился ли он. Операцию GET разрешается выполнять на одном и том же ресурсе несколько раз в день, пока не проводится опрос. Например, хорошо выполнять операцию GET на /me/joinedTeams каждый раз, когда пользователь посещает или обновляет вашу веб-страницу, но было бы неправильно выполнять GET на /me/joinedTeams в цикле каждые 30 секунд, чтобы обновлять эту веб-страницу.
 
@@ -120,4 +120,5 @@ Microsoft Teams — это рабочее пространство с чатам
 
 ## <a name="see-also"></a>См. также
 
-[Обзор API Microsoft Teams](/graph/teams-concept-overview)
+- [Обзор API Microsoft Teams](/graph/teams-concept-overview)
+- Примеры кода: [Авиакомпания Contoso](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [мини-примеры C#](https://github.com/microsoftgraph/csharp-teams-sample-graph)

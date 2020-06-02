@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a1ce7a8eb9e584d9654872f58787de8f51ec3ec6
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 4df3c51a75bd20b024642f5eeba1bc28aa7d6cc7
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332539"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491667"
 ---
 # <a name="get-team"></a>Получение команды
 
@@ -27,7 +27,8 @@ ms.locfileid: "44332539"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Team. ReadBasic. ALL, Теамсеттингс. Read. ALL, Теамсеттингс. ReadWrite. ALL, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Теамсеттингс. Read. Group ([RSC](https://aka.ms/teams-rsc)), Team. ReadBasic. ALL, Теамсеттингс. Read. ALL, Теамсеттингс. ReadWrite. ALL, Теамсеттингс. Edit. Group ([RSC](https://aka.ms/teams-rsc)), Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL    |
+|Для приложений | Теамсеттингс. Read. Group *, Team. ReadBasic. ALL, теамсеттингс. Read. ALL, теамсеттингс. ReadWrite. ALL, теамсеттингс. Edit. Group*, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL    |
+> **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом](https://aka.ms/teams-rsc).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 

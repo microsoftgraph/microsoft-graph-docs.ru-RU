@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 81507c205b4935f6d355b35526e84d627bbb665c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 9e98e389882dfe2f6dbe55194c6e589829a6e6f4
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44288580"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491590"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -28,7 +28,9 @@ ms.locfileid: "44288580"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Channel. Create. Group ([RSC](https://aka.ms/teams-rsc)), Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
+|Сервер приложений | Channel. Create. Group *, Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
+
+> **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом]( https://aka.ms/teams-rsc).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d0694e100f36ae6e806bed30c88664cc21becc09
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 92d087f07964bba8c9304791c38a660725896865
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290246"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491681"
 ---
 # <a name="update-tab"></a>Обновление вкладки
 
@@ -25,11 +25,9 @@ ms.locfileid: "44290246"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений                            | TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL |
-
-| Делегированная (Рабочая или учебная учетная запись) | TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL | | Делегированная учетная запись (личная учетная запись Майкрософт) | Не поддерживается.    | | Приложение | TeamsTab. Edit. Group ([RSC](https://aka.ms/teams-rsc)), TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Сервер приложений | TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -44,7 +42,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [Tab](../resources/teamstab.md) в формате JSON.
 
 ## <a name="response"></a>Ответ
