@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: b9bc875b3bd01cc2083f7726a1c0abb42c0bb316
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "42453784"
 ---
 # <a name="replace-schedulinggroup"></a>Замена объекта schedulingGroup
@@ -30,7 +30,7 @@ ms.locfileid: "42453784"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule. ReadWrite. ALL *  |
+|Сервер приложений | Schedule. ReadWrite. ALL *  |
 
 >\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
@@ -55,7 +55,7 @@ PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 В тексте запроса добавьте представление объекта [счедулингграуп](../resources/schedulinggroup.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [счедулингграуп](../resources/schedulinggroup.md) в тексте отклика.
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 33171e0878c05d044a1f0d4dbde181600e0605ed
-ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
+ms.openlocfilehash: 6625be6f12c3d2b430afa2d9099072955c68efdf
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "43812536"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44251109"
 ---
 # <a name="list-printers"></a>Список принтеров
 
@@ -27,7 +27,7 @@ ms.locfileid: "43812536"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Сервер приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,17 +39,17 @@ GET /print/printers
 Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
 ### <a name="exceptions"></a>Исключения
-* Операторы `$expand` and `select` поддерживаются для свойства `share` навигации, но не для `jobs`.
-* Некоторые операторы не поддерживаются: `$count`, `$orderby`, `$search`.
+* `$expand`Операторы and `select` поддерживаются для `share` Свойства навигации, но не для `jobs` .
+* Некоторые операторы не поддерживаются: `$count` , `$search` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Printer](../resources/printer.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: b394515e8f69b49f42f9fb517b3077a2fb1d8ee3
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "42453830"
 ---
 # <a name="create-schedulinggroup"></a>Создание объекта schedulingGroup
@@ -28,7 +28,7 @@ ms.locfileid: "42453830"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений |Schedule. ReadWrite. ALL * |
+|Сервер приложений |Schedule. ReadWrite. ALL * |
 
 >\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
@@ -49,7 +49,7 @@ POST /teams/{teamId}/schedule/schedulingGroups
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [счедулингграуп](../resources/schedulinggroup.md) в тексте отклика.
 

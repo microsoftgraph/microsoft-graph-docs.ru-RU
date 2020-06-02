@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f154cbf1b59a67a8d2e306ea14e1ef490c63b3fe
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: e6c3fb214126d4414ed35d6ba58a52acc6b65bab
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43807137"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44216622"
 ---
 # <a name="delete-allowedgroup"></a>Удаление Алловедграуп
 
@@ -29,22 +29,22 @@ ms.locfileid: "43807137"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Сервер приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /print/printerShares/{id}/allowedGroups/{id}/$ref
+DELETE /print/shares/{id}/allowedGroups/{id}/$ref
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -55,7 +55,7 @@ DELETE /print/printerShares/{id}/allowedGroups/{id}/$ref
   "name": "delete_allowedgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/printerShares/{id}/allowedGroup/{id}/$ref
+DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroup/{id}/$ref
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.

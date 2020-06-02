@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: cddc49db3bb9ad19e172fe7bc8b6dc9ad0bc6edc
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 80292a11b3430f00958f82c51a290bc701a23dfe
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947639"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44216751"
 ---
 # <a name="update-printershare"></a>Обновление принтершаре
 
@@ -31,12 +31,12 @@ ms.locfileid: "42947639"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Сервер приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /print/printerShares/{id}
+PATCH /print/shares/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,7 +45,7 @@ PATCH /print/printerShares/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей [принтершаре](../resources/printershare.md) , которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство     | Тип        | Описание |
@@ -54,7 +54,7 @@ PATCH /print/printerShares/{id}
 
 >**Примечание:** Обновление имени общего принтера не поддерживается.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [принтершаре](../resources/printershare.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -66,7 +66,7 @@ PATCH /print/printerShares/{id}
   "name": "update_printershare"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/print/printerShares/{id}
+PATCH https://graph.microsoft.com/beta/print/shares/{id}
 Content-type: application/json
 Content-length: 109
 
@@ -103,7 +103,7 @@ Content-type: application/json
 Content-length: 225
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printerShares/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
   "id": "d837c17b-3296-4384-a053-828d56e10f50",
   "name": "ShareName",
   "createdDateTime": "2020-02-04T00:00:00.0000000Z"

@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 1e71e976167b94d144037d93bf9bb3dff59cc5b7
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "44154425"
 ---
 # <a name="delete-timeoffreason"></a>Удаление Тимеоффреасон
@@ -30,7 +30,7 @@ ms.locfileid: "44154425"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule. ReadWrite. ALL * |
+|Сервер приложений | Schedule. ReadWrite. ALL * |
 
 >\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
@@ -53,7 +53,7 @@ DELETE /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
@@ -86,7 +86,7 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{
 ---
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 

@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 7234fc4f630064acf1934079a4ed485a2c3b1524
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "42452311"
 ---
 # <a name="replace-timeoff"></a>Замена Тимеофф
@@ -30,7 +30,7 @@ ms.locfileid: "42452311"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule. ReadWrite. ALL *  |
+|Сервер приложений | Schedule. ReadWrite. ALL *  |
 
 >\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
@@ -55,7 +55,7 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 В тексте запроса добавьте представление объекта [тимеофф](../resources/timeoff.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [тимеофф](../resources/timeoff.md) в тексте отклика.
 

@@ -6,10 +6,10 @@ author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 80b688d700dff94d1a746e651b83a4b0236d1a39
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "44154404"
 ---
 # <a name="update-workforceintegration"></a>Обновление воркфорцеинтегратион
@@ -53,12 +53,12 @@ PATCH /teamwork/workforceIntegrations
 |апиверсион|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
 |displayName|String|Имя интеграции трудовых ресурсов.|
 |шифрования|воркфорцеинтегратионенкриптион|Ресурс для шифрования взаимодействия сотрудников. |
-|isActive|Boolean|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
+|isActive|Логический|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
 |имеется|string| Возможные значения:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` , `userShiftPreferences` . Если выбрано более одного значения, все значения должны начинаться с первой буквы в верхнем регистре.|
 |суппортедентитиес|string| Это свойство **будет заменено** в версии 1.0. Мы рекомендуем использовать это свойство вместо **поддерживаемых**. Свойство **Supports будет по-** прежнему поддерживаться в бета-версии в течение этого времени. Возможные значения:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` , `userShiftPreferences` . Если выбрано более одного значения, все значения должны начинаться с первой буквы в верхнем регистре.|
 |url|String| URL-адрес интеграции сотрудников для обратных вызовов из службы смены. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркфорцеинтегратион](../resources/workforceintegration.md) в тексте отклика.
 
@@ -164,7 +164,7 @@ Content-type: application/json
 }
 
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 ```
@@ -207,7 +207,7 @@ Accept-Language: en-us
    }]
 }
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа от службы интеграции сотрудников.
 ```

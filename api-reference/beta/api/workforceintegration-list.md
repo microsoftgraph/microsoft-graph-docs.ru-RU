@@ -6,10 +6,10 @@ author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 7854a2bded54d8480e9423fb8e7e6d6548455430
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "42451287"
 ---
 # <a name="list-workforceintegrations"></a>Список Воркфорцеинтегратионс
@@ -52,7 +52,7 @@ GET /teamwork/workforceIntegrations
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркфорцеинтегратион](../resources/workforceintegration.md) в тексте отклика.
 
