@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 81017fbf7dcf3aa2191131e8547cadc0175e60b5
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: b9cbbfe106af827d34f7bdbcc50af03c59ec5aeb
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287029"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491268"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Получение Чатмессажехостедконтент
 
@@ -28,7 +28,9 @@ ms.locfileid: "44287029"
 |:---------------------------------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Для ресурсов " **пользователь** " или " **чат** ": Chat. Read, Chat. ReadWrite<br/><br/>Для ресурса **Channel** : Чаннелмессаже. Read. ALL, Group. Read. ALL, Group. Read. вритеалл |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Для ресурсов " **пользователь** " или " **чат** ": Chat. Read. ALL, Chat. ReadWrite. ALL<br/><br/>Для ресурса **Channel** : Чаннелмессаже. Read. Group ([RSC](https://aka.ms/teams-rsc)), Чаннелмессаже. Read. ALL, Group. Read. ALL, Group. ReadWrite. ALL |
+|Сервер приложений| Для ресурсов " **пользователь** " или " **чат** ": Chat. Read. ALL, Chat. ReadWrite. ALL<br/><br/>Для ресурса **Channel** : Чаннелмессаже. Read. Group *, Чаннелмессаже. Read. ALL, Group. Read. ALL, Group. ReadWrite. ALL |
+
+> **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).

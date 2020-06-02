@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8a2816ee0e71c4deec42a9b909642367f2b902c9
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 59f67434e131b871723ba152be945a37b18215eb
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44288573"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491291"
 ---
 # <a name="add-conversationmember"></a>Добавление Конверсатионмембер
 
@@ -31,7 +31,7 @@ ms.locfileid: "44288573"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Чаннелмембер. ReadWrite. ALL, Member. ReadWrite. Group ([RSC](https://aka.ms/teams-rsc)), Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Сервер приложений| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -52,7 +52,7 @@ POST /teams/{id}/channels/{id}/members
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |roles|Коллекция строк|Роли этого пользователя.|
-|user|[user](../resources/user.md)|Пользователь, добавляемый в канал.|
+|пользователь;|[user](../resources/user.md)|Пользователь, добавляемый в канал.|
 
 ## <a name="response"></a>Отклик
 
