@@ -991,13 +991,17 @@ items:
               - name: Обзор
                 href: resources/callrecords-api-overview.md
               - name: Запись звонка
-                href: resources/callrecords-callrecord.md
-              - name: Получение записи вызова
-                href: api/callrecords-callrecord-get.md
+                items:
+                  - name: Запись звонка
+                    href: resources/callrecords-callrecord.md
+                  - name: Получение записи вызова
+                    href: api/callrecords-callrecord-get.md
               - name: Сеанс
-                href: resources/callrecords-session.md
-              - name: Список сеансов
-                href: api/callrecords-session-list.md
+                items:
+                  - name: Сеанс
+                    href: resources/callrecords-session.md
+                  - name: Список сеансов
+                    href: api/callrecords-session-list.md
       - name: Взаимодействие с разными устройствами
         displayName: Project Rome
         items:
@@ -1283,7 +1287,7 @@ items:
                         href: api/intune-apps-androidforworkapp-get.md
                       - name: Создание
                         href: api/intune-apps-androidforworkapp-create.md
-                      - name: Удалить
+                      - name: Удаление
                         href: api/intune-apps-androidforworkapp-delete.md
                       - name: Обновление
                         href: api/intune-apps-androidforworkapp-update.md
@@ -3613,7 +3617,7 @@ items:
                   - name: 'Элемент действия, касающегося соответствия устройства требованиям'
                     href: resources/intune-deviceconfig-devicecomplianceactionitem.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-devicecomplianceactionitem-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-devicecomplianceactionitem-get.md
@@ -3648,7 +3652,7 @@ items:
                   - name: Назначение политик соответствия устройства требованиям
                     href: resources/intune-deviceconfig-devicecompliancepolicyassignment.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-devicecompliancepolicyassignment-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-devicecompliancepolicyassignment-get.md
@@ -5553,7 +5557,7 @@ items:
                   - name: Конфигурация VPN для Windows 8.1
                     href: resources/intune-deviceconfig-windows81vpnconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-windows81vpnconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-windows81vpnconfiguration-get.md
@@ -5568,7 +5572,7 @@ items:
                   - name: Конфигурация импорта Wi-Fi для Windows 8.1
                     href: resources/intune-deviceconfig-windows81wifiimportconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-windows81wifiimportconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-windows81wifiimportconfiguration-get.md
@@ -6160,7 +6164,7 @@ items:
                   - name: Экземпляр абстрактного сложного параметра управления устройствами
                     href: resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-get.md
@@ -6203,7 +6207,7 @@ items:
                   - name: Экземпляр логического параметра управления устройствами
                     href: resources/intune-deviceintent-devicemanagementbooleansettinginstance.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceintent-devicemanagementbooleansettinginstance-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementbooleansettinginstance-get.md
@@ -7680,7 +7684,7 @@ items:
                   - name: Соединитель Mobile Threat Defense
                     href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                       - name: Получение
                         href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -7702,7 +7706,7 @@ items:
                   - name: Организация
                     href: resources/intune-onboarding-organization.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-onboarding-organization-list.md
                       - name: Получение
                         href: api/intune-onboarding-organization-get.md
