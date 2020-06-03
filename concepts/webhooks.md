@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: c4e8b968330ee29427893eb41dd7f4595333d629
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 562eaccdd776ed22a4e171f6c0107f83be6acaab
+ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491695"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44524255"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -46,7 +46,7 @@ API Microsoft Graph использует механизм веб-перехва�
 
 Например, вы можете создать подписку на определенную папку Outlook, например, папку Входящие: `me/mailFolders('inbox')/messages`
 
-либо на ресурс верхнего уровня: `me/messages`, `me/contacts`, `me/events`, `users` или `groups`;
+Или на ресурс верхнего уровня:,, `/me/messages` `/me/contacts` ,, `/me/events` `users` `groups` или`/communications/callRecords`
 
 либо на определенный экземпляр ресурса: `users/{id}`, `groups/{id}`, `groups/{id}/conversations`;
 
