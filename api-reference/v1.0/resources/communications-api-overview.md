@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: b17dc07431bfe579125d162754c4f4ad4110e73f
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
-ms.translationtype: HT
+ms.openlocfilehash: b0337dfe620318482f3cc400512d5c381bf123a9
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023077"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491884"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>Работа с API коммуникаций в Microsoft Graph
 
@@ -27,6 +27,7 @@ API коммуникаций можно использовать для созд
 |:------------------------------------|:---------------------------------------------|
 | Звонки                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
 | Собрания                 | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
+| Записи звонков             | CallRecords.Read.All |
 
 ## <a name="common-use-cases"></a>Основные варианты использования
 
@@ -38,6 +39,7 @@ API коммуникаций можно использовать для созд
 |Звонки с интерактивным речевым взаимодействием   |     | [Методы для интерактивного речевого взаимодействия](https://docs.microsoft.com/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0)
 | Элементы управления звонком (участник) | [Участник](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0)   ||
 |Собрания|[onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [Методы для собраний](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
+| Получение записей звонков | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) | [Подписки веб-перехватчиков](/graph/api/resources/webhooks?view=graph-rest-1.0) |
 
 ## <a name="common-properties"></a>Общие свойства
 
@@ -46,6 +48,10 @@ API коммуникаций можно использовать для созд
 | call                               | [свойства объекта call](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0#properties)  |
 | participant                         | [свойства объекта participant](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0#properties) |
 | onlineMeeting                            | [свойства объекта onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#properties)                     |
+| callRecord | [Свойства callRecord](/graph/api/resources/callrecords-callrecord#properties) |
+
+## <a name="whats-new"></a>Новые возможности
+Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="see-also"></a>См. также
 
