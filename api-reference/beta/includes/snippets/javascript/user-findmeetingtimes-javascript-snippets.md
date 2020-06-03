@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7d8748a3c9bc6ba05d409fa56e4a05298f7c9791
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 688f49c97a6cdc4db361e293a6b32171ab5cfbbe
+ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "35716633"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44533553"
 ---
 ```javascript
 
@@ -37,7 +37,7 @@ const meetingTimeSuggestionsResult = {
   },  
   timeConstraint: {
     activityDomain:"work", 
-    timeslots: [ 
+    timeSlots: [ 
       { 
         start: { 
           dateTime: "2019-04-16T09:00:00",  
