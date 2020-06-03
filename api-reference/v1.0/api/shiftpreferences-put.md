@@ -5,32 +5,32 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 51ebeecb555c426c124975682fb85f77988d6e99
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 05ba41d09fd30f03c76c990f57fb25bb010c418f
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154709"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44215971"
 ---
-# <a name="update-shiftpreferences"></a><span data-ttu-id="a9abb-103">Обновление Шифтпреференцес</span><span class="sxs-lookup"><span data-stu-id="a9abb-103">Update shiftPreferences</span></span>
+# <a name="update-shiftpreferences"></a><span data-ttu-id="e0af9-103">Обновление Шифтпреференцес</span><span class="sxs-lookup"><span data-stu-id="e0af9-103">Update shiftPreferences</span></span>
 
-<span data-ttu-id="a9abb-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a9abb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e0af9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e0af9-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="a9abb-105">Обновление свойств и связей объекта [шифтпреференцес](../resources/shiftpreferences.md) .</span><span class="sxs-lookup"><span data-stu-id="a9abb-105">Update the properties and relationships of a [shiftPreferences](../resources/shiftpreferences.md) object.</span></span>
+<span data-ttu-id="e0af9-105">Обновление свойств и связей объекта [шифтпреференцес](../resources/shiftpreferences.md) .</span><span class="sxs-lookup"><span data-stu-id="e0af9-105">Update the properties and relationships of a [shiftPreferences](../resources/shiftpreferences.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a9abb-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a9abb-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e0af9-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e0af9-106">Permissions</span></span>
 
-<span data-ttu-id="a9abb-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a9abb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e0af9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e0af9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a9abb-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a9abb-109">Permission type</span></span>      | <span data-ttu-id="a9abb-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a9abb-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e0af9-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e0af9-109">Permission type</span></span>      | <span data-ttu-id="e0af9-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e0af9-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a9abb-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a9abb-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a9abb-112">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a9abb-112">User.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a9abb-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a9abb-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a9abb-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a9abb-114">Not supported.</span></span>    |
-|<span data-ttu-id="a9abb-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a9abb-115">Application</span></span> | <span data-ttu-id="a9abb-116">Усершифтпреференцес. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="a9abb-116">UserShiftPreferences.ReadWrite.All</span></span> |
+|<span data-ttu-id="e0af9-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e0af9-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e0af9-112">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e0af9-112">User.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e0af9-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e0af9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e0af9-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e0af9-114">Not supported.</span></span>    |
+|<span data-ttu-id="e0af9-115">Сервер приложений</span><span class="sxs-lookup"><span data-stu-id="e0af9-115">Application</span></span> | <span data-ttu-id="e0af9-116">Усершифтпреференцес. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="e0af9-116">UserShiftPreferences.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="a9abb-117">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="a9abb-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="a9abb-118">Глобальные администраторы могут получать доступ к группам, которые не являются участниками.</span><span class="sxs-lookup"><span data-stu-id="a9abb-118">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="e0af9-117">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="e0af9-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="e0af9-118">Глобальные администраторы могут получать доступ к группам, которые не являются участниками.</span><span class="sxs-lookup"><span data-stu-id="e0af9-118">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="a9abb-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a9abb-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e0af9-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e0af9-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,26 +38,28 @@ ms.locfileid: "44154709"
 PUT /users/{userId}/settings/shiftPreferences
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a9abb-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a9abb-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e0af9-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e0af9-120">Request headers</span></span>
 
-| <span data-ttu-id="a9abb-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="a9abb-121">Header</span></span>       | <span data-ttu-id="a9abb-122">Значение</span><span class="sxs-lookup"><span data-stu-id="a9abb-122">Value</span></span> |
+| <span data-ttu-id="e0af9-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e0af9-121">Header</span></span>       | <span data-ttu-id="e0af9-122">Значение</span><span class="sxs-lookup"><span data-stu-id="e0af9-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="a9abb-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a9abb-123">Authorization</span></span>  | <span data-ttu-id="a9abb-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a9abb-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="a9abb-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a9abb-126">Content-Type</span></span>  | <span data-ttu-id="a9abb-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a9abb-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="e0af9-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e0af9-123">Authorization</span></span>  | <span data-ttu-id="e0af9-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e0af9-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="e0af9-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e0af9-126">Content-Type</span></span>  | <span data-ttu-id="e0af9-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e0af9-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="a9abb-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a9abb-129">Request body</span></span>
-<span data-ttu-id="a9abb-130">В тексте запроса добавьте представление объекта [шифтпреференцес](../resources/shiftpreferences.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a9abb-130">In the request body, supply a JSON representation of a [shiftPreferences](../resources/shiftpreferences.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e0af9-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e0af9-129">Request body</span></span>
+<span data-ttu-id="e0af9-130">В тексте запроса добавьте представление объекта [шифтпреференцес](../resources/shiftpreferences.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e0af9-130">In the request body, supply a JSON representation of a [shiftPreferences](../resources/shiftpreferences.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a9abb-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="a9abb-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e0af9-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="e0af9-131">Response</span></span>
 
-<span data-ttu-id="a9abb-132">В случае успешного выполнения этот метод возвращает код отклика `204 NO CONTENT`.</span><span class="sxs-lookup"><span data-stu-id="a9abb-132">If successful, this method returns a `204 NO CONTENT` response code.</span></span>
+<span data-ttu-id="e0af9-132">В случае успешного выполнения этот метод возвращает код отклика `204 NO CONTENT`.</span><span class="sxs-lookup"><span data-stu-id="e0af9-132">If successful, this method returns a `204 NO CONTENT` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a9abb-133">Пример</span><span class="sxs-lookup"><span data-stu-id="a9abb-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e0af9-133">Пример</span><span class="sxs-lookup"><span data-stu-id="e0af9-133">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a9abb-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="a9abb-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e0af9-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="e0af9-134">Request</span></span>
 
-<span data-ttu-id="a9abb-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a9abb-135">The following is an example of the request.</span></span>
+<span data-ttu-id="e0af9-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e0af9-135">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="e0af9-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="e0af9-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "shift-get"
@@ -87,12 +89,30 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="e0af9-137">C#</span><span class="sxs-lookup"><span data-stu-id="e0af9-137">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="e0af9-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e0af9-138">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="e0af9-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e0af9-139">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="e0af9-140">Java</span><span class="sxs-lookup"><span data-stu-id="e0af9-140">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 
-### <a name="response"></a><span data-ttu-id="a9abb-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="a9abb-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="e0af9-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="e0af9-141">Response</span></span>
 
-<span data-ttu-id="a9abb-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="a9abb-137">The following is an example of the response.</span></span>
+<span data-ttu-id="e0af9-142">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e0af9-142">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response", 
