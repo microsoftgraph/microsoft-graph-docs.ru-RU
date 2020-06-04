@@ -5,60 +5,61 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 2e73cfcb18fa11b6d4a66f11e5e5bdc0f4802168
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6af22c5e4ab1756aecaa384a78e010e12f071c16
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455450"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556291"
 ---
-# <a name="get-presence"></a><span data-ttu-id="cb1d8-103">Получение сведений о присутствии</span><span class="sxs-lookup"><span data-stu-id="cb1d8-103">Get presence</span></span>
+# <a name="get-presence"></a><span data-ttu-id="04140-103">Получение сведений о присутствии</span><span class="sxs-lookup"><span data-stu-id="04140-103">Get presence</span></span>
 
-<span data-ttu-id="cb1d8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cb1d8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="04140-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="04140-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cb1d8-105">Получение сведений о [присутствии](../resources/presence.md) пользователя.</span><span class="sxs-lookup"><span data-stu-id="cb1d8-105">Get a user's [presence](../resources/presence.md) information.</span></span>
+<span data-ttu-id="04140-105">Получение сведений о [присутствии](../resources/presence.md) пользователя.</span><span class="sxs-lookup"><span data-stu-id="04140-105">Get a user's [presence](../resources/presence.md) information.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cb1d8-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cb1d8-106">Permissions</span></span>
-<span data-ttu-id="cb1d8-107">Для вызова этих API требуется одно из следующих разрешений.</span><span class="sxs-lookup"><span data-stu-id="cb1d8-107">One of the following permissions is required to call these APIs.</span></span> <span data-ttu-id="cb1d8-108">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cb1d8-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="04140-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="04140-106">Permissions</span></span>
+<span data-ttu-id="04140-107">Для вызова этих API требуется одно из следующих разрешений.</span><span class="sxs-lookup"><span data-stu-id="04140-107">One of the following permissions is required to call these APIs.</span></span> <span data-ttu-id="04140-108">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="04140-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="cb1d8-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cb1d8-109">Permission type</span></span> | <span data-ttu-id="cb1d8-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cb1d8-110">Permissions (from least to most privileged)</span></span>                  |
+| <span data-ttu-id="04140-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="04140-109">Permission type</span></span> | <span data-ttu-id="04140-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="04140-110">Permissions (from least to most privileged)</span></span>                  |
 | :-------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="cb1d8-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cb1d8-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="cb1d8-112">Presence.Read, Presence.Read.All</span><span class="sxs-lookup"><span data-stu-id="cb1d8-112">Presence.Read, Presence.Read.All</span></span>                         |
-| <span data-ttu-id="cb1d8-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cb1d8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cb1d8-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cb1d8-114">Not Supported.</span></span>                         |
-| <span data-ttu-id="cb1d8-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cb1d8-115">Application</span></span>                            | <span data-ttu-id="cb1d8-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cb1d8-116">Not Supported.</span></span>                                  |
+| <span data-ttu-id="04140-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="04140-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="04140-112">Presence.Read, Presence.Read.All</span><span class="sxs-lookup"><span data-stu-id="04140-112">Presence.Read, Presence.Read.All</span></span>      |
+| <span data-ttu-id="04140-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="04140-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="04140-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="04140-114">Not Supported.</span></span>                        |
+| <span data-ttu-id="04140-115">Сервер приложений</span><span class="sxs-lookup"><span data-stu-id="04140-115">Application</span></span>                            | <span data-ttu-id="04140-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="04140-116">Not Supported.</span></span>                        |
 
-## <a name="http-requests"></a><span data-ttu-id="cb1d8-117">HTTP-запросы</span><span class="sxs-lookup"><span data-stu-id="cb1d8-117">HTTP Requests</span></span>
+## <a name="http-requests"></a><span data-ttu-id="04140-117">HTTP-запросы</span><span class="sxs-lookup"><span data-stu-id="04140-117">HTTP Requests</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/presence
 GET /users/{id}/presence
+GET /communications/presences
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cb1d8-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cb1d8-118">Request Headers</span></span>
-| <span data-ttu-id="cb1d8-119">Имя</span><span class="sxs-lookup"><span data-stu-id="cb1d8-119">Name</span></span>          | <span data-ttu-id="cb1d8-120">Описание</span><span class="sxs-lookup"><span data-stu-id="cb1d8-120">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="04140-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="04140-118">Request Headers</span></span>
+| <span data-ttu-id="04140-119">Имя</span><span class="sxs-lookup"><span data-stu-id="04140-119">Name</span></span>          | <span data-ttu-id="04140-120">Описание</span><span class="sxs-lookup"><span data-stu-id="04140-120">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="cb1d8-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cb1d8-121">Authorization</span></span> | <span data-ttu-id="cb1d8-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cb1d8-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="04140-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="04140-121">Authorization</span></span> | <span data-ttu-id="04140-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="04140-p102">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="cb1d8-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="cb1d8-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="04140-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="04140-124">Request body</span></span>
 
-<span data-ttu-id="cb1d8-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cb1d8-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="04140-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="04140-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cb1d8-126">Ответ</span><span class="sxs-lookup"><span data-stu-id="cb1d8-126">Response</span></span>
-<span data-ttu-id="cb1d8-127">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [присутствия](../resources/presence.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="cb1d8-127">If successful, this method returns a `200 OK` response code and a [presence](../resources/presence.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="04140-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="04140-126">Response</span></span>
+<span data-ttu-id="04140-127">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [присутствия](../resources/presence.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="04140-127">If successful, this method returns a `200 OK` response code and a [presence](../resources/presence.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="cb1d8-128">Примеры</span><span class="sxs-lookup"><span data-stu-id="cb1d8-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="04140-128">Примеры</span><span class="sxs-lookup"><span data-stu-id="04140-128">Examples</span></span>
 
-### <a name="example-1-get-your-own-presence-information"></a><span data-ttu-id="cb1d8-129">Пример 1: получение собственных сведений о присутствии</span><span class="sxs-lookup"><span data-stu-id="cb1d8-129">Example 1: Get your own presence information</span></span>
+### <a name="example-1-get-your-own-presence-information"></a><span data-ttu-id="04140-129">Пример 1: получение собственных сведений о присутствии</span><span class="sxs-lookup"><span data-stu-id="04140-129">Example 1: Get your own presence information</span></span>
 
-<span data-ttu-id="cb1d8-130">В приведенном ниже примере показано, как получить сведения о присутствии.</span><span class="sxs-lookup"><span data-stu-id="cb1d8-130">The following example shows how to get your own presence information.</span></span> <span data-ttu-id="cb1d8-131">Для выполнения этой операции требуется разрешение на присутствие. чтение.</span><span class="sxs-lookup"><span data-stu-id="cb1d8-131">This operation requires the Presence.Read permission.</span></span>
+<span data-ttu-id="04140-130">В приведенном ниже примере показано, как получить сведения о присутствии.</span><span class="sxs-lookup"><span data-stu-id="04140-130">The following example shows how to get your own presence information.</span></span> <span data-ttu-id="04140-131">Для выполнения этой операции требуется разрешение на присутствие. чтение.</span><span class="sxs-lookup"><span data-stu-id="04140-131">This operation requires the Presence.Read permission.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="cb1d8-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb1d8-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="04140-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="04140-132">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="cb1d8-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="cb1d8-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="04140-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="04140-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-your-presence"
@@ -67,22 +68,22 @@ GET /users/{id}/presence
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/presence
 ```
-# <a name="c"></a>[<span data-ttu-id="cb1d8-134">C#</span><span class="sxs-lookup"><span data-stu-id="cb1d8-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="04140-134">C#</span><span class="sxs-lookup"><span data-stu-id="04140-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-your-presence-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cb1d8-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cb1d8-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="04140-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="04140-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-your-presence-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cb1d8-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cb1d8-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="04140-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="04140-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-your-presence-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="cb1d8-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb1d8-137">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="04140-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="04140-137">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -102,13 +103,13 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-2-get-the-presence-information-of-another-user"></a><span data-ttu-id="cb1d8-138">Пример 2: получение сведений о присутствии другого пользователя</span><span class="sxs-lookup"><span data-stu-id="cb1d8-138">Example 2: Get the presence information of another user</span></span>
+### <a name="example-2-get-the-presence-information-of-another-user"></a><span data-ttu-id="04140-138">Пример 2: получение сведений о присутствии другого пользователя</span><span class="sxs-lookup"><span data-stu-id="04140-138">Example 2: Get the presence information of another user</span></span>
 
-<span data-ttu-id="cb1d8-139">В приведенном ниже примере показано, как получить сведения о присутствии для другого пользователя.</span><span class="sxs-lookup"><span data-stu-id="cb1d8-139">The following example shows how to get the presence information for another user.</span></span> <span data-ttu-id="cb1d8-140">Для выполнения этой операции требуется разрешение на присутствие. Read. ALL.</span><span class="sxs-lookup"><span data-stu-id="cb1d8-140">This operation requires the Presence.Read.All permission.</span></span>
+<span data-ttu-id="04140-139">В приведенном ниже примере показано, как получить сведения о присутствии для другого пользователя.</span><span class="sxs-lookup"><span data-stu-id="04140-139">The following example shows how to get the presence information for another user.</span></span> <span data-ttu-id="04140-140">Для выполнения этой операции требуется разрешение на присутствие. Read. ALL.</span><span class="sxs-lookup"><span data-stu-id="04140-140">This operation requires the Presence.Read.All permission.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="cb1d8-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb1d8-141">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="04140-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="04140-141">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="cb1d8-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="cb1d8-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="04140-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="04140-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-user-presence"
@@ -116,22 +117,22 @@ Content-Length: 1574
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/66825e03-7ef5-42da-9069-724602c31f6b/presence
 ```
-# <a name="c"></a>[<span data-ttu-id="cb1d8-143">C#</span><span class="sxs-lookup"><span data-stu-id="cb1d8-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="04140-143">C#</span><span class="sxs-lookup"><span data-stu-id="04140-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presence-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cb1d8-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cb1d8-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="04140-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="04140-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-user-presence-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cb1d8-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cb1d8-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="04140-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="04140-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-user-presence-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="cb1d8-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb1d8-146">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="04140-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="04140-146">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -151,6 +152,45 @@ Content-Length: 1574
     "activity": "Presenting"
 }
 ```
+
+### <a name="example-3-get-the-presence-information-of-another-user"></a><span data-ttu-id="04140-147">Пример 3: получение сведений о присутствии другого пользователя</span><span class="sxs-lookup"><span data-stu-id="04140-147">Example 3: Get the presence information of another user</span></span>
+
+<span data-ttu-id="04140-148">В приведенном ниже примере показано, как получить сведения о присутствии для другого пользователя.</span><span class="sxs-lookup"><span data-stu-id="04140-148">The following example shows how to get the presence information for another user.</span></span> <span data-ttu-id="04140-149">Для выполнения этой операции требуется разрешение на присутствие. Read. ALL.</span><span class="sxs-lookup"><span data-stu-id="04140-149">This operation requires the Presence.Read.All permission.</span></span>
+
+#### <a name="request"></a><span data-ttu-id="04140-150">Запросить</span><span class="sxs-lookup"><span data-stu-id="04140-150">Request</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get-user-presences"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d-8eaa-e39d80d3a647
+```
+
+#### <a name="response"></a><span data-ttu-id="04140-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="04140-151">Response</span></span>
+
+<!-- {
+  "blockType": "response",
+  "name": "get-user-presences",
+  "@odata.type": "microsoft.graph.presence",
+  "truncated":"true"
+}-->
+
+```http
+HTTP/1.1 200 OK
+
+{
+    "value": [
+        {
+            "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+            "availability": "Away",
+            "activity": "BeRightBack"
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
