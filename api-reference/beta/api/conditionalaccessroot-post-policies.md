@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c6ecc51d169341273a0093f86e7e4c2f0f7bf230
-ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
+ms.openlocfilehash: 7f5aec736483650b847184343a58777243a266fb
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44168508"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556102"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Создание Кондитионалакцессполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "44168508"
 |:--------------------------------------|:---------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
+|Сервер приложений                            | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
 
 > [!NOTE]
 > У этого API есть [известная проблема](/graph/known-issues#permissions) , связанная с разрешениями.
@@ -52,9 +52,9 @@ POST /identity/conditionalAccess/policies
 
 В тексте запроса добавьте представление объекта [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) в формате JSON.
 
-Допустимая политика должна содержать по крайней [application](../resources/conditionalaccessapplications.md) мере одно правило `'includeApplications': 'none'`приложения, например, одно правило [пользователя](../resources/conditionalaccessusers.md) `'includeUsers': 'none'`, например, и по крайней мере один элемент управления " [предоставление](../resources/conditionalaccessgrantcontrols.md)/[сеанса](../resources/conditionalaccesssessioncontrols.md) ".
+Допустимая политика должна содержать по крайней мере одно правило [приложения](../resources/conditionalaccessapplications.md) , например, `'includeApplications': 'none'` одно правило [пользователя](../resources/conditionalaccessusers.md) , например, `'includeUsers': 'none'` и по крайней мере один элемент управления " [предоставление](../resources/conditionalaccessgrantcontrols.md) / [сеанса](../resources/conditionalaccesssessioncontrols.md) ".
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) в тексте отклика.
 
@@ -238,7 +238,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -420,7 +420,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -589,7 +589,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 

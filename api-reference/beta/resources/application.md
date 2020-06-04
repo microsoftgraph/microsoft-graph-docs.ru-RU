@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0dd65de04f395c7014897b1f1caa0e9a507a5799
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 2b65eeaddd11e2f83b0558609b1316dc412b00bf
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291022"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556284"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -78,6 +78,8 @@ ms.locfileid: "44291022"
 | isFallbackPublicClient | Boolean | Указывает резервный тип приложения как общедоступный клиент, например установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию — `false`. Это означает, что резервный тип приложения является конфиденциальным клиентом, таким как веб-приложение. Существуют определенные сценарии, при которых Azure AD не удается определить тип клиентского приложения (например, поток [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) с настройкой без указания URI перенаправления). В таких случаях Azure AD будет интерпретировать тип приложения на основе значения этого свойства.|
 | keyCredentials | Коллекция [keyCredential](keycredential.md) | Коллекция ключевых учетных данных, связанных с приложением. Значение null не допускается. |
 | logo | Stream | Основной логотип для приложения. Значение null не допускается. |
+| oauth2RequiredPostResponse | Boolean | Указывает, будет ли Azure AD в рамках запросов маркеров OAuth 2.0 разрешать запросы POST в отличие от запросов GET. Значение по умолчанию — false. В таком случае будут разрешены только запросы GET. |
+| онпремисеспублишинг |[онпремисеспублишинг](onpremisespublishing.md)| Представляет набор свойств, необходимых для настройки прокси приложения для этого приложения. Настройка этих свойств позволяет опубликовать локальное приложение для безопасного удаленного доступа. |
 | optionalClaims | [optionalClaims](optionalclaims.md) | Разработчики приложений могут настраивать необязательные утверждения в своих приложениях Azure AD, чтобы указать, какие утверждения им нужны в маркерах, отправляемых в приложения службой маркеров безопасности (Майкрософт). Дополнительные сведения см. в статье [Предоставление необязательных утверждений для приложения Azure AD](/azure/active-directory/develop/active-directory-optional-claims).|
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Указывает параметры родительского контроля для приложения. |
 | passwordCredentials | Коллекция [passwordCredential](passwordcredential.md)|Коллекция учетных данных паролей, связанных с приложением. Значение null не допускается.|

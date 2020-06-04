@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fedfc04e1e53f25700a54a9918c47d2b9641b0cd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d1a2dd808dade4b4a28cde1b14d644ad843e069b
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458158"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556333"
 ---
 # <a name="delete-ipnamedlocation"></a>Удаление Ипнамедлокатион
 
@@ -26,9 +26,9 @@ ms.locfileid: "43458158"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ConditionalAccess |
+| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Сервер приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,11 +44,11 @@ DELETE /identity/conditionalAccess/namedLocations/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
@@ -82,7 +82,7 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocation
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 

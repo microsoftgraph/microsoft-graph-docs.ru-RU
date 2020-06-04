@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4aee6888f37958d226d00ad68c11230309df66af
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 653397a076e930ac38119c99703db97157b84ccb
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218936"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556277"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>Обновление Идентитисекуритидефаултсенфорцементполици
 
@@ -26,9 +26,9 @@ ms.locfileid: "43218936"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. ReadWrite. Кондитионалакцесс |
+| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy. ReadWrite. Кондитионалакцесс |
+| Сервер приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -92,7 +92,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 

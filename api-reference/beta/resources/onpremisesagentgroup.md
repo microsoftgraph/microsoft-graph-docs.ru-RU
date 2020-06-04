@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a211fb4245e8f4e4ef23158c0f553876303ea9c9
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 861c17b55a50f35579eb820fbe76352077ded149
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199720"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556256"
 ---
 # <a name="onpremisesagentgroup-resource-type"></a>Тип ресурса Онпремисесажентграуп
 
@@ -37,7 +37,7 @@ ms.locfileid: "43199720"
 |displayName|Строка|Отображаемое имя **онпремисесажентграуп**.|
 |id|String| Идентификатор объекта **онпремисесажентграуп**. Только для чтения.|
 |isDefault|Boolean|Указывает, является ли **онпремисесажентграуп** группой агентов по умолчанию. Только одна группа агентов может быть **онпремисесажентграуп** по умолчанию и задается системой.|
-|публишингтипе|string| Возможные значения: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|публишингтипе|string| Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## <a name="relationships"></a>Связи
 

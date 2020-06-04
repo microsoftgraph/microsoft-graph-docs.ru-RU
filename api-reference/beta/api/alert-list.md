@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: af59360a3947a98c0bd4cdcbbb826bb014747535
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 926a0ab60f32affc502a9890407e953e33d97b0a
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441618"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556156"
 ---
 # <a name="list-alerts"></a>Перечисление оповещений
 
@@ -47,11 +47,23 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 Этот метод поддерживает указанные ниже [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 - `$count`
-- `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` возвращает объединенные лучшие результаты от каждого поставщика API безопасности.
+- `$top`— Возвращает Объединенные основные результаты каждого поставщика API безопасности.
+- `$filter`
+
+В приведенной ниже таблице перечислены `$filter` Ключевые слова по имени каждого поставщика.
+
+| Имя поставщика      |ключевое слово $filter|
+|:----------|:----------|
+| Расширенная защита от угроз Azure | Расширенная защита от угроз Azure | 
+| Центр безопасности Azure | ASC |
+| Microsoft Cloud App Security | мкас |
+| Защита идентификации Azure Active Directory | ДЕРЖЕК |
+| Azure Sentinel | Azure Sentinel |
+| Advanced Threat Protection в Microsoft Defender | ATP в Microsoft Defender |
+| Office 365 |  В настоящее время не поддерживается. |
 
 Чтобы возвратить альтернативный набор свойств, используйте параметр запроса OData `$select`, чтобы указать нужный набор свойств **alert**.  Например, чтобы вернуть свойства **assignedTo**, **category** и **severity**, добавьте в свой запрос следующее: `$select=assignedTo,category,severity`.
 
@@ -63,7 +75,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода. Текст запроса будет игнорироваться.
 

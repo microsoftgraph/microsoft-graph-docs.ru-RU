@@ -2,23 +2,24 @@
 title: Список приложений
 description: Получение списка объектов приложения, связанных с Коннекторграуп.
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 350bc05c94bf177a350ee681e83cc16323f26046
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 546bc83891aa81d5c687906275df5d5a05bdd8bb
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437471"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44555784"
 ---
-# <a name="list-applications"></a>Список приложений
+# <a name="list-applications-assigned-to-a-connectorgroup"></a>Список приложений, назначенных Коннекторграуп
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов приложения, связанных с Коннекторграуп.
+Получение списка объектов [приложения](../resources/application.md) , связанных с [коннекторграуп](../resources/connectorgroup.md). Этот список содержит все приложения, назначенные определенной группе соединителей.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,12 +27,12 @@ ms.locfileid: "42437471"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Сервер приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /connectorGroups/{id}/applications
+GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
@@ -39,14 +40,15 @@ GET /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Носителя. Обязательна|
+| Authorization  | Носителя. Обязательное|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Application](../resources/application.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -55,10 +57,10 @@ GET /connectorGroups/{id}/applications
   "name": "get_applications"
 }-->
 ```http
-GET https://graph.microsoft.com/{ver}/connectorGroups/{id}/applications
+GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -73,14 +75,49 @@ Content-length: 420
 {
   "value": [
     {
-      "appId": "appId-value",
+      "id": "id-value",
       "onPremisesPublishing": {
         "externalUrl": "externalUrl-value",
         "internalUrl": "internalUrl-value",
         "externalAuthenticationType": "externalAuthenticationType-value",
-        "customDomainCertificate": "customDomainCertificate-value",
         "isTranslateHostHeaderEnabled": true,
-        "isOnPremPublishingEnabled": true
+        "isTranslateLinksInBodyEnabled": true,
+        "isOnPremPublishingEnabled": true,
+        "applicationServerTimeout": "applicationServerTimeout-value",
+        "applicationType": "applicationType-value",
+        "verifiedCustomDomainKeyCredential": {
+          "customKeyIdentifier": "customKeyIdentifier-value",
+          "endDate": "datetime-value",
+          "keyId": "keyId-value",
+          "startDate": "datetime-value",
+          "type": "type-value",
+          "usage": "usage-value",
+          "value": "value-value"
+        },
+        "verifiedCustomDomainPasswordCredential": {
+          "customKeyIdentifier": "customKeyIdentifier-value",
+          "endDate": "datetime-value",
+          "keyId": "keyId-value",
+          "startDate": "datetime-value",
+          "value": "value-value"
+        },
+        "verifiedCustomDomainCertificatesMetadata": {
+          "thumbprint": "thumbprint-value",
+          "subjectName": "subjectName-value",
+          "issuerName": "issuerName-value",
+          "issueDate": "datetime-value",
+          "expiryDate": "datetime-value"
+        },
+        "singleSignOnSettings": {
+          "SingleSignOnMode": "SingleSignOnMode-value",
+          "KerberosSignOnSettings": {
+            "KerberosServicePrincipalName": "KerberosServicePrincipalName-value",
+            "KerberosSignOnMappingAttributeType": "KerberosSignOnMappingAttributeType-value"
+          }
+        },
+        "isHttpOnlyCookieEnabled": true,
+        "isSecureCookieEnabled": true,
+        "isPersistentCookieEnabled": true
       }
     }
   ]

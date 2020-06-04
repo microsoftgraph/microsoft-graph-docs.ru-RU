@@ -2,15 +2,15 @@
 title: Список Коннекторграупс
 description: Получение списка объектов коннекторграуп.
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 9b18fec85e36e662ae92e5e5f70f3c14a67709a3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d2d256c9a80006554af541af05412835c2145c67
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437380"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44555794"
 ---
 # <a name="list-connectorgroups"></a>Список Коннекторграупс
 
@@ -18,7 +18,8 @@ ms.locfileid: "42437380"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов коннекторграуп.
+Получение списка объектов [коннекторграуп](../resources/connectorgroup.md) .
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,39 +27,43 @@ ms.locfileid: "42437380"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Сервер приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /connectorGroups
+GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Носителя. Обязательна|
+| Authorization  | Носителя. Обязательное|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [коннекторграуп](../resources/connectorgroup.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
+
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
   "name": "get_connectorgroups"
 }-->
 ```http
-GET https://graph.microsoft.com/{ver}/connectorGroups
+GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,7 +81,8 @@ Content-length: 164
       "id": "id-value",
       "name": "name-value",
       "connectorGroupType": "connectorGroupType-value",
-      "isDefault": true
+      "isDefault": true,
+      "region": "region-value"
     }
   ]
 }

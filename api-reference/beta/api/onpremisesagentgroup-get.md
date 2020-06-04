@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 46c7b46c9a7183ddb9706212f6afb73bbf01caa1
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 73abcc34462f776d669e9188ffeef92b28f15d01
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199944"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556270"
 ---
 # <a name="get-onpremisesagentgroup"></a>Получение Онпремисесажентграуп
 
@@ -35,7 +35,7 @@ ms.locfileid: "43199944"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}
+GET /onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -46,13 +46,13 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [онпремисесажентграуп](../resources/onpremisesagentgroup.md) в тексте отклика.
 

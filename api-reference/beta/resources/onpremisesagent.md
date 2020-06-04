@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fdc6355b33539899ab51a4a6881a8109cb8d87a6
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: d6f07ea537f334796f29656ce05ea20351752402
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199755"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556263"
 ---
 # <a name="onpremisesagent-resource-type"></a>Тип ресурса Онпремисесажент
 
@@ -37,7 +37,7 @@ ms.locfileid: "43199755"
 |id|Строка| Идентификатор объекта Онпремисесажент. Только для чтения.|
 |ИмяКомпьютера|String|Имя компьютера, на котором выполняется агжент. Только для чтения|
 |status|string| Возможные значения: `active`, `inactive`.|
-|публишингтипе|string| Возможные значения: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|публишингтипе|string| Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## <a name="relationships"></a>Связи
 

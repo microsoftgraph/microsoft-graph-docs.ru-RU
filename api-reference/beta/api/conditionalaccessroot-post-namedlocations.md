@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 473b935d5daab59167949e49cdc2b79fec191811
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: da7dae139fd4de25909dd8fd3c7bb090761de8ca
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916460"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556109"
 ---
 # <a name="create-namedlocation"></a>Создание Намедлокатион
 
@@ -26,9 +26,9 @@ ms.locfileid: "43916460"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ConditionalAccess |
+| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Сервер приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,13 +45,13 @@ POST /identity/conditionalAccess/namedLocations
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [ипнамедлокатион](../resources/ipnamedlocation.md) или [КАУНТРИНАМЕДЛОКАТИОН](../resources/countrynamedlocation.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created`код отклика и новый объект [ипнамедлокатион](../resources/ipnamedlocation.md) или [каунтринамедлокатион](../resources/countrynamedlocation.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [Ипнамедлокатион](../resources/ipnamedlocation.md) или [каунтринамедлокатион](../resources/countrynamedlocation.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -159,7 +159,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

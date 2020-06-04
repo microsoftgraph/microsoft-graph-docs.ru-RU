@@ -2,15 +2,15 @@
 title: Создание Коннекторграуп
 description: Используйте этот API для создания нового Коннекторграуп.
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 21cdb4ec3da098ed787c13a4b8c4c24244dd6c8c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 70811eac163b0d62e8058eb03615ecd098787022
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437310"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44555798"
 ---
 # <a name="create-connectorgroup"></a>Создание Коннекторграуп
 
@@ -18,7 +18,8 @@ ms.locfileid: "42437310"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API для создания нового Коннекторграуп.
+Создание нового [коннекторграуп](../resources/connectorgroup.md).
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,25 +27,25 @@ ms.locfileid: "42437310"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Сервер приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /connectorGroups
+POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Носителя. рекуриед|
+| Authorization  | Носителя. рекуриед|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [коннекторграуп](../resources/connectorgroup.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [коннекторграуп](../resources/connectorgroup.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [коннекторграуп](../resources/connectorgroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -54,18 +55,17 @@ POST /connectorGroups
   "name": "create_connectorgroup_from_connectorgroups"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectorGroups
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups
 Content-type: application/json
 Content-length: 99
 
 {
   "name": "name-value",
-  "connectorGroupType": "connectorGroupType-value",
   "isDefault": false
 }
 ```
 В тексте запроса добавьте представление объекта [коннекторграуп](../resources/connectorgroup.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -81,7 +81,8 @@ Content-length: 119
   "id": "id-value",
   "name": "name-value",
   "connectorGroupType": "connectorGroupType-value",
-  "isDefault": false
+  "isDefault": false,
+  "region": "region-value"
 }
 ```
 

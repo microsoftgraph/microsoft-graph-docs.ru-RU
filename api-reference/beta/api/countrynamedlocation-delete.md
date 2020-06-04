@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3043e1caa24ef7ad3da94b6a7cf5c3162f656ddd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8ad89d4c61f7e624bf4fc02f86a57e0b03bbd4fb
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375827"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44555815"
 ---
 # <a name="delete-countrynamedlocation"></a>Удаление Каунтринамедлокатион
 
@@ -26,9 +26,9 @@ ms.locfileid: "43375827"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ConditionalAccess |
+| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Сервер приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,11 +44,11 @@ DELETE /identity/conditionalAccess/namedLocations/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
@@ -82,7 +82,7 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocation
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 

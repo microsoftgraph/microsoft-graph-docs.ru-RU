@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec365d44ac83eec8c50645aed92d91aa50c34bbb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 12382d8639a3e211cf634199712efe813074bb4f
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43425144"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556186"
 ---
 # <a name="syncdevice-action"></a>Действие syncDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "43425144"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Сервер приложений|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,13 +47,13 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример

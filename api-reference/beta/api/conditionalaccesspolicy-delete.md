@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 29e8bc18b4608f08a8285c6b575e2ce96c204fc4
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: dd5420aff55a058d464f87414b9b7aa8199c30ae
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916517"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556123"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>Удаление Кондитионалакцессполици
 
@@ -26,9 +26,9 @@ ms.locfileid: "43916517"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ConditionalAccess |
+|Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
+|Сервер приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,11 +44,11 @@ DELETE /identity/conditionalAccess/policies/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
@@ -82,7 +82,7 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 

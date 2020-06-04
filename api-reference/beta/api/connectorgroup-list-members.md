@@ -2,15 +2,15 @@
 title: Список участников
 description: Получение списка объектов Connector, связанных с Коннекторграуп.
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 923751c409b109d95ac105a4ae96dc6ba33bc6b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df3ed26af0888b0d6b5bcc092f894b012287bc4e
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437429"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44555778"
 ---
 # <a name="list-members"></a>Список участников
 
@@ -18,7 +18,8 @@ ms.locfileid: "42437429"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов Connector, связанных с Коннекторграуп.
+Получение списка объектов [Connector](../resources/connector.md) , связанных с [коннекторграуп](../resources/connectorgroup.md).
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,12 +27,12 @@ ms.locfileid: "42437429"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Сервер приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /connectorGroups/{id}/members
+GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
@@ -39,15 +40,17 @@ GET /connectorGroups/{id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Носителя. Обязательна|
+| Authorization  | Носителя. Обязательное|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Connector](../resources/connector.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
+
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
@@ -55,10 +58,10 @@ GET /connectorGroups/{id}/members
   "name": "get_connectorgroup_members"
 }-->
 ```http
-GET https://graph.microsoft.com/{ver}/connectorGroups/{id}/members
+GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

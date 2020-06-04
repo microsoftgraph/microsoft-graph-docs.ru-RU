@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d57ede14ba5c5d392c0a2a0388e1757cc481242c
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: d42464fa6e249fef8d7b535b6327751f48d17167
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199993"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556326"
 ---
 # <a name="publishedresource-resource-type"></a>Тип ресурса Публишедресаурце
 
@@ -38,7 +38,7 @@ ms.locfileid: "43199993"
 |:-------------|:------------|:------------|
 |displayName|Строка| Отображаемое имя Публишедресаурце.|
 |id|String| Идентификатор объекта Публишедресаурце. Только для чтения.|
-|публишингтипе|string| Возможные значения: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|публишингтипе|string| Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 |resourceName|String|Имя Публишедресаурце.|
 
 ## <a name="relationships"></a>Связи

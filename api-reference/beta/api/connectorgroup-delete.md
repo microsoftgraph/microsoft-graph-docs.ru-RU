@@ -2,15 +2,15 @@
 title: Удаление Коннекторграуп
 description: Удаление объекта Коннекторграуп.
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 960fe8a61dc00eaddcd6c96e255ea7cb7033434c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 45b0216562ce8fefa139726446fbf3eb97daaabd
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437485"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556067"
 ---
 # <a name="delete-connectorgroup"></a>Удаление Коннекторграуп
 
@@ -18,7 +18,8 @@ ms.locfileid: "42437485"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта Коннекторграуп.
+Удаление объекта [коннекторграуп](../resources/connectorgroup.md). Все [соединители](../resources/connector.md) и приложения необходимо удалить из группы соединителей, прежде чем можно будет удалить группу соединителей.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -27,24 +28,22 @@ ms.locfileid: "42437485"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
-
-> **Примечание:** У группы соединителей не должно быть связанных соединителей.
+|Сервер приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /connectorGroups/{id}
+DELETE /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Носителя. Обязательна|
+| Authorization  | Носителя. Обязательное|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -56,10 +55,10 @@ DELETE /connectorGroups/{id}
   "name": "delete_connectorgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/{ver}/connectorGroups/{id}
+DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true

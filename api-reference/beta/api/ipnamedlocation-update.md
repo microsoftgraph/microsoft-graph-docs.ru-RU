@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d31b6a91d052b0b8f717d5696ba56e765a2788cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0566e66454a95d19c4d45f5882415e6c5ba90139
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458144"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556209"
 ---
 # <a name="update-ipnamedlocation"></a>Обновление Ипнамедлокатион
 
@@ -26,9 +26,9 @@ ms.locfileid: "43458144"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ConditionalAccess |
+| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Сервер приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |displayName|String|Удобное для человека имя расположения.|
 |ипранжес|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате IPv4 CIDR (1.2.3.4/32) или любом допустимом формате IPv6 из IETF RFC5962.|
-|Доверять|Boolean|Значение, `true` если это расположение явно доверенное.|
+|Доверять|Логический|Значение, `true` если это расположение явно доверенное.|
 
 ## <a name="response"></a>Отклик
 
@@ -95,7 +95,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

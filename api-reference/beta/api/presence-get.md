@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 2e73cfcb18fa11b6d4a66f11e5e5bdc0f4802168
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6af22c5e4ab1756aecaa384a78e010e12f071c16
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455450"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556291"
 ---
 # <a name="get-presence"></a>Получение сведений о присутствии
 
@@ -20,20 +20,21 @@ ms.locfileid: "42455450"
 
 Получение сведений о [присутствии](../resources/presence.md) пользователя.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 Для вызова этих API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | Presence.Read, Presence.Read.All                         |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Для приложений                            | Не поддерживается.                                  |
+| Делегированные (рабочая или учебная учетная запись)     | Presence.Read, Presence.Read.All      |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                        |
+| Сервер приложений                            | Не поддерживается.                        |
 
 ## <a name="http-requests"></a>HTTP-запросы
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/presence
 GET /users/{id}/presence
+GET /communications/presences
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -42,11 +43,11 @@ GET /users/{id}/presence
 | Авторизация | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [присутствия](../resources/presence.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
@@ -151,6 +152,45 @@ Content-Length: 1574
     "activity": "Presenting"
 }
 ```
+
+### <a name="example-3-get-the-presence-information-of-another-user"></a>Пример 3: получение сведений о присутствии другого пользователя
+
+В приведенном ниже примере показано, как получить сведения о присутствии для другого пользователя. Для выполнения этой операции требуется разрешение на присутствие. Read. ALL.
+
+#### <a name="request"></a>Запросить
+
+<!-- {
+  "blockType": "request",
+  "name": "get-user-presences"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d-8eaa-e39d80d3a647
+```
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "name": "get-user-presences",
+  "@odata.type": "microsoft.graph.presence",
+  "truncated":"true"
+}-->
+
+```http
+HTTP/1.1 200 OK
+
+{
+    "value": [
+        {
+            "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+            "availability": "Away",
+            "activity": "BeRightBack"
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

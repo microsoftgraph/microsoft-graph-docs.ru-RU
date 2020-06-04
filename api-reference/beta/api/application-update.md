@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e8de4c713c2229ecd31f811bde73b8df667d219c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 013423e57d5150ea4854ce233333f1cedaa29595
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289126"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556158"
 ---
 # <a name="update-application"></a>Обновление приложения
 
@@ -31,7 +31,7 @@ ms.locfileid: "44289126"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Сервер приложений | Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -58,6 +58,7 @@ PATCH /applications/{id}
 | isFallbackPublicClient | Boolean | Указывает резервный тип приложения как общедоступный клиент, например установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию `false` , то есть резервный тип приложения — это конфиденциальный клиент, например веб-приложение. Существует несколько сценариев, в которых Azure AD не может определить тип клиентского приложения (например, [ропк](https://tools.ietf.org/html/rfc6749#section-4.3) , где он настроен без указания URI перенаправления). В этих случаях Azure AD будет интерпретировать тип приложения на основе значения этого свойства.|
 | keyCredentials | Коллекция [keyCredential](../resources/keycredential.md) | Коллекция ключевых учетных данных, связанных с приложением. Значение null не допускается. |
 | logo | Stream | Основной логотип для приложения. Значение null не допускается. |
+| онпремисеспублишинг | [онпремисеспублишинг](../resources/onpremisespublishing.md) | Представляет набор свойств для настройки [прокси-сервера приложений AD в Azure](https://aka.ms/whyappproxy) для локального приложения. Это свойство можно задать только после создания приложения. |
 | optionalClaims | optionalClaims | Разработчики приложений могут настраивать необязательные утверждения в своих приложениях Azure AD, чтобы указать, какие утверждения им нужны в маркерах, отправляемых в приложения службой маркеров безопасности (Майкрософт). Дополнительные сведения см. в статье дополнительные [утверждения](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims) . |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md) |Указывает параметры родительского контроля для приложения. |
 | publicClient | [publicClientApplication](../resources/publicclientapplication.md) | Указывает параметры для установленных клиентов, например классических или мобильных устройств. |

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a6d69e8610159955dac4a4f90c57c3f731fafcef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 17eeefa194a220ddadfc094dd2d25a7fe8389c34
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381861"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44555760"
 ---
 # <a name="update-countrynamedlocation"></a>Обновление Каунтринамедлокатион
 
@@ -26,9 +26,9 @@ ms.locfileid: "43381861"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ConditionalAccess |
+| Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Сервер приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |каунтриесандрегионс|Коллекция объектов string|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
 |displayName|String|Удобное для человека имя расположения.|
-|инклудеункновнкаунтриесандрегионс|Boolean|Значение, `true` если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
+|инклудеункновнкаунтриесандрегионс|Логический|Значение, `true` Если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
 
 ## <a name="response"></a>Отклик
 
@@ -96,7 +96,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 

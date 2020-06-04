@@ -1,16 +1,16 @@
 ---
 title: 'Онлинемитинг: Креатеоржет'
-description: Создайте собрание по сети с настраиваемым указанным внешним ИДЕНТИФИКАТОРом. Если внешний идентификатор уже существует, этот API возвратит объект [онлинемитинг](../resources/onlinemeeting.md) с этим внешним идентификатором.
+description: Создайте собрание по сети с настраиваемым указанным внешним ИДЕНТИФИКАТОРом. Если внешний идентификатор уже существует, этот API возвратит объект **онлинемитинг** с этим внешним идентификатором.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6ad76e9362643f29ae93dd2daa03e739ba763e03
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: e59029da6265f2acd7ca515a0bbe4283c788dec7
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916924"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556312"
 ---
 # <a name="onlinemeeting-createorget"></a>Онлинемитинг: Креатеоржет
 
@@ -55,10 +55,14 @@ POST /me/onlineMeetings/createOrGet
 | startDateTime    | DateTime                                 | Время начала собрания в формате UTC. |
 | subject          | String                                   | Тема собрания по сети. |
 
->**Примечание:** Если "startDateTime" и "endDateTime" не указаны, значения по умолчанию будут иметь значение даты и времени по умолчанию для системы. В C# это значение равно "01/01/0001"
+>**Примечание:** Если он `startDateTime` `endDateTime` не указан, по `startDateTime` умолчанию используется текущее значение DateTime и `endDateTime` значение равно startDateTime + 1 час. 
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.
+>Если `startDateTime` предоставлено значение, но `endDateTime` оно не задано, `endDateTime` значение будет равно `startDateTime` + 1 час. 
+
+>Если предоставлено значение, не `endDateTime` `startDateTime` `endDateTime` совпадающее с `startDateTime` .
+
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если создается новое собрание, или `200 OK` код ответа при получении существующего собрания. В обоих случаях объект [онлинемитинг](../resources/onlinemeeting.md) возвращается в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

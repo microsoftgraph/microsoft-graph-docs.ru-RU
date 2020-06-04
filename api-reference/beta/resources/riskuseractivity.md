@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ddf71668af9d66c1d3ea495a8438c444b9317a23
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 8032a721a8f8a94d7cd1481edf58ee785092bcfd
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510996"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556319"
 ---
 # <a name="riskuseractivity-resource-type"></a>Тип ресурса Рискусерактивити
 
@@ -22,9 +22,9 @@ ms.locfileid: "43510996"
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| евенттипес | Коллекция Рискевенттипе |Список типов событий риска. Устаревшие. Вместо этого используйте **рискевенттипес** . |
-|рискевенттипе|string|Тип обнаруженного события риска. Возможные значения: `unlikelyTravel` `anonymizedIPAddress`,, `maliciousIPAddress`, `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials`,,,, `investigationsThreatIntelligence`, `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `unknownFutureValue`,,,, и. `maliciousIPAddressValidCredentialsBlockedIP` |
-| описаны     | riskDetail  | Возможные значения: `none` `adminGeneratedTemporaryPassword`,, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` `adminConfirmedUserCompromised` `unknownFutureValue`,,,,,,,,. `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `hidden`  |
+| евенттипес | Коллекция Рискевенттипе |Список типов событий риска. Устаревшие. Вместо этого используйте **рискевенттипе** . |
+|рискевенттипе|string|Тип обнаруженного события риска. Возможные значения:,,,,,,,,,,,, `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` и `unknownFutureValue` . |
+| описаны     | riskDetail  | Возможные значения:,,,,,,,,,, `none` `adminGeneratedTemporaryPassword` `userPerformedSecuredPasswordChange` `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `hidden` `adminConfirmedUserCompromised` , `unknownFutureValue` .  |
 
 ## <a name="json-representation"></a>Представление JSON
 
