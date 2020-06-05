@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 3815040e03b94d3448feb0e08816fd062e1086ea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c86a6bb7533fbda16c1796d4b4a7023c0463e4fe
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453732"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568826"
 ---
 # <a name="search-query"></a>Поиск: запрос
 
@@ -53,9 +53,9 @@ POST /search/query
 |:-------------|:------------|:------------|
 |обращения|Коллекция [сеарчрекуест](../resources/searchrequest.md)|Запрос поиска, отправляемый в конечную точку запроса, отформатированное в большом двоичном объекте JSON. Он содержит тип сущностей, ожидаемых в ответе, базовые источники, параметры разбиения по страницам, запрашиваемые поля и фактический поисковый запрос.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `HTTP 200 OK` возвращает код отклика и объект коллекции [сеарчреспонсе](../resources/searchresponse.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `HTTP 200 OK` код отклика и объект коллекции [сеарчреспонсе](../resources/searchresponse.md) в тексте отклика.
 
 ## <a name="common-use-cases"></a>Основные варианты использования
 
@@ -84,7 +84,7 @@ Content-type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.externalItem"
+        "externalItem"
       ],
       "contentSources": [
         "/external/connections/connectionfriendlyname"

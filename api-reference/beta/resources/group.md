@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: fb812dce8fdb9756be161c0b2e9998c21da12667
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 479681dfb4ee267c881293fa635700e25f9a4626
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345998"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568833"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -50,7 +50,7 @@ ms.locfileid: "44345998"
 |[Добавление участника](../api/group-post-members.md) |[directoryObject](directoryobject.md)| Добавление пользователя или группы в данную группу путем помещения в свойство навигации **members** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты).|
 |[Удаление участника](../api/group-delete-members.md) | Нет |Удаление участника из группы Office 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**. Вы можете удалять пользователей или другие группы. |
 |[Список memberOf](../api/group-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп и административных единиц, непосредственным участником которых является группа, из свойства навигации memberOf.|
-|[Перечисление транзитивных свойств memberOf](../api/group-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп и административных единиц, в которых состоит пользователь. Эта операция является транзитивной и включает группы, в которых эта группа является вложенным элементом. |
+|[Перечисление транзитивных свойств memberOf](../api/group-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп и административных единиц, участником которых является данная группа. Эта операция является транзитивной и включает группы, в которых эта группа является вложенным элементом. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|Коллекция String|Проверка участия в списке групп. Это транзитивная функция.|
 |[checkMemberObjects](../api/group-checkmemberobjects.md)|Коллекция String|Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная функция.|
 |[getMemberGroups](../api/group-getmembergroups.md)|Коллекция String|Возврат всех групп, в которых состоит эта группа. Это транзитивная функция.|
