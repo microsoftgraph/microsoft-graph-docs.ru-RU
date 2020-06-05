@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 05ba41d09fd30f03c76c990f57fb25bb010c418f
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 5f6ace7ad00d51494f3474aadaafd1fecc4d0f35
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44215971"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556130"
 ---
 # <a name="update-shiftpreferences"></a>Обновление Шифтпреференцес
 
@@ -35,7 +35,7 @@ ms.locfileid: "44215971"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /users/{userId}/settings/shiftPreferences
+PATCH /users/{userId}/settings/shiftPreferences
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -65,7 +65,7 @@ PUT /users/{userId}/settings/shiftPreferences
   "name": "shift-get"
 }-->
 ```msgraph-interactive
-PUT https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
+PATCH https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
 Content-type: application/json
 
 {

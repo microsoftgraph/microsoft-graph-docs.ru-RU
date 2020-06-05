@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 531413ee2a9c322af99a98ecf2270faa50ccb0e0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 812f094667b217d167509be324843227e552e0a5
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534158"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556228"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса Онлинемитинг
 
@@ -24,7 +24,8 @@ ms.locfileid: "42534158"
 |:---------------|:--------|:----------|
 | [Создание объекта onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Создайте собрание по сети. |
 | [Получение Онлинемитинг](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Чтение свойств и связей объекта **онлинемитинг** . |
-| [Удаление Онлинемитинг](../api/onlinemeeting-delete.md) | Нет | Удаление собрания по сети |
+| [Удаление Онлинемитинг](../api/onlinemeeting-delete.md) | Нет | Удаление собрания по сети. |
+| [Создание или получение Онлинемитинг](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Создайте собрание по сети с пользовательским внешним ИДЕНТИФИКАТОРом. Если собрание уже существует, извлеките его свойства. |
 
 ## <a name="properties"></a>Свойства
 
@@ -40,7 +41,7 @@ ms.locfileid: "42534158"
 | participants              | [митингпартиЦипантс](meetingparticipants.md)          | Участники, связанные с собранием по сети.  Сюда входят Организатор и участники. |
 | subject                   | String                                                 | Тема собрания по сети. |
 | видеотелеконференцеид     | String                                                 | Идентификатор видеоконференций для видеоконференций. Только для чтения. |
-
+| жоининформатион | [itemBody](itembody.md) | Сведения о присоединении на языке и языковом варианте, указанном в `Accept-Language` HTTP-заголовке Request. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON
 

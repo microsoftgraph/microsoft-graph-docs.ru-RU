@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b3c11b74eeffa724ad3e70ba3d5fe210a572d117
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0fb4ceed2274e9b3a1d9a35226ed0ed337f97d4
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511399"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556305"
 ---
 # <a name="nameditem-range"></a>NamedItem: Range
 
@@ -29,7 +29,7 @@ ms.locfileid: "42511399"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range
+GET /workbook/names/{name}/range
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -56,7 +56,7 @@ POST /workbook/names/{name}/range
   "name": "nameditem_range"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/nameditem-range-csharp-snippets.md)]
