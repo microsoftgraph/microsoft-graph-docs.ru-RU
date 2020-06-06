@@ -4,12 +4,12 @@ description: Вы можете использовать API службы пои�
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 7a7e5c92f3ffe9399732d6454d3e06d2013f8768
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 52b2d5b54577bfb744bff5f3dacf4ad77da3761a
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345844"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568812"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-files"></a>Использование API службы поиска Microsoft в Microsoft Graph для поиска файлов
 
@@ -19,7 +19,7 @@ ms.locfileid: "44345844"
 
 ## <a name="search-sharepoint-or-onedrive-files"></a>Поиск файлов SharePoint или OneDrive
 
-KQL можно использовать в терминах поиска запросов для SharePoint и OneDrive. Например,
+KQL можно использовать в терминах поиска запросов для SharePoint и OneDrive. Пример.
 
 - `"query": "contoso filetype:docx OR filetype:doc"`ограничивает область запроса документами Word.
 - `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`ограничивает область запроса определенной папкой на сайте.
@@ -40,7 +40,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.driveItem"
+        "driveItem"
       ],
       "query": {
         "query_string": {

@@ -4,12 +4,12 @@ description: Вы можете использовать API Microsoft Search API
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 978ce45b9882190a31e7840ba402d6eb283270dd
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 1b47155e761a28ccaf3e93719bd9967b9f9eff67
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332329"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568777"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-messages"></a>Использование API службы поиска Microsoft в Microsoft Graph для поиска сообщений
 
@@ -43,7 +43,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.message"
+        "message"
       ],
       "query": {
         "query_string": {
@@ -119,6 +119,7 @@ Content-Type: application/json
 ```
 
 ### <a name="example-2-search-top-results-messages"></a>Пример 2: Поиск в сообщениях с наибольшим результатом
+
 В следующем примере используется поисковый запрос, показанный в примере 1, и отсортирует результаты по релевантности. 
 
 <!-- markdownlint-disable MD024 -->
@@ -134,7 +135,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.message"
+        "message"
       ],
       "query": {
         "query_string": {

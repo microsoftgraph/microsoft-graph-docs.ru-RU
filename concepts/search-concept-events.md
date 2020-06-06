@@ -4,12 +4,12 @@ description: Вы можете выполнять поиск в собствен
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: b7ea957419801c6e100412e5f46d2e1757387b3b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 6326fead96cd0b777ff6c3e257d6aa36d4d5c4ce
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868529"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568783"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-calendar-events"></a>Использование API службы поиска Microsoft в Microsoft Graph для поиска событий календаря
 
@@ -33,7 +33,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.event"
+        "event"
       ],
       "query": {
         "query_string": {

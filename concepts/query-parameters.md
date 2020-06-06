@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет необязательн
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 71f63c6038019ae0b669ff8dfe95fecffdfab11a
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: 29d11ec09cbf64d507bd2b97a8940c5b33ac7744
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429616"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568679"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -163,13 +163,13 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 | Описание | Пример
 |:------------|:--------|
-| Поиск пользователей с именем Mary по нескольким свойствам. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) 
-| Получение всех событий для вошедшего пользователя, которые начинаются после 01.07.2017 г. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) 
-| Получение всех сообщений с определенного адреса, полученных вошедшим пользователем. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) 
-| Получение всех сообщений, полученных вошедшим пользователем в апреле 2017 г. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) 
-| Получение всех непрочитанных сообщений в папке "Входящие" вошедшего пользователя. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) 
-| Получение списка всех групп Office 365 в организации. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) 
-| Используйте приведение OData для получения транзитивного членства в группах с отображаемым именем, начинающимся с "a", включая количество возвращаемых объектов. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')Метод&= GET&Version = v 1.0) |
+| Поиск пользователей с именем Mary по нескольким свойствам. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
+| Получение всех событий для вошедшего пользователя, которые начинаются после 01.07.2017 г. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
+| Получение всех сообщений с определенного адреса, полученных вошедшим пользователем. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
+| Получение всех сообщений, полученных вошедшим пользователем в апреле 2017 г. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
+| Получение всех непрочитанных сообщений в папке "Входящие" вошедшего пользователя. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
+| Получение списка всех групп Office 365 в организации. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
+| Используйте приведение OData для получения транзитивного членства в группах с отображаемым именем, начинающимся с "a", включая количество возвращаемых объектов. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
 
 > **Примечание.** Ресурсы Azure AD не поддерживают следующие операторы `$filter`: `ne`, `gt`, `ge`, `lt`, `le` и `not`. В настоящее время строковый оператор `contains` не поддерживается ни одним ресурсом Microsoft Graph.
 
@@ -339,11 +339,11 @@ Content-type: application/json
 
 ### <a name="using-search-on-directory-object-collections"></a>Использование $search для коллекций объектов каталога
 
-`$search`С помощью параметра запроса можно ограничить результаты в соответствии с критерием поиска, например поиском слов в строках, разделенных пробелами, регистром и символьными типами (числами и специальными знаками). Поддержка маркированного поиска выполняется только в полях displayName и Description. Любое поле может быть размещено `$search` , поля, отличные от **DisplayName** и **Description** , по умолчанию заменяют `$filter` поведение StartsWith. Например:
+`$search`С помощью параметра запроса можно ограничить результаты в соответствии с критерием поиска, например поиском слов в строках, разделенных пробелами, регистром и символьными типами (числами и специальными знаками). Поддержка маркированного поиска выполняется только в полях displayName и Description. Любое поле может быть размещено `$search` , поля, отличные от **DisplayName** и **Description** , по умолчанию заменяют `$filter` поведение StartsWith. Пример.
 
 `https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
  
-Выполняется поиск всех групп с отображаемыми именами, похожими на "Оневидео". `$search`также можно использовать вместе `$filter` . Например: 
+Выполняется поиск всех групп с отображаемыми именами, похожими на "Оневидео". `$search`также можно использовать вместе `$filter` . Пример. 
  
 `https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"` 
  

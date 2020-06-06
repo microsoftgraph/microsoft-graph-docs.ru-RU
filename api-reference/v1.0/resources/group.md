@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 2aba6b7a48958b4ed588dbecb350bda8b2c6a189
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: 8af272a542a28430a4360fa73c995c22b9d656e9
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44524461"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568847"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -48,7 +48,7 @@ ms.locfileid: "44524461"
 |[Добавление члена](../api/group-post-members.md) |Нет| Добавление пользователя или группы в данную группу путем помещения в свойство навигации **members** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты).|
 |[Список членов](../api/group-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей и групп, являющихся непосредственными участниками этой группы, из свойства навигации **members**.|
 |[Перечисление транзитивных участников](../api/group-list-transitivemembers.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, групп и устройств, являющихся участниками, включая вложенных участников этой группы.|
-|[Перечисление транзитивных свойств memberOf](../api/group-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп, участником которых является пользователь. Эта операция является транзитивной и включает группы, в которых состоит группа. |
+|[Перечисление транзитивных свойств memberOf](../api/group-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, участником которых является данная группа. Эта операция является транзитивной и включает группы, в которых состоит группа. |
 |[Удаление участника](../api/group-delete-members.md) | Нет |Удаление участника из группы Office 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**. Вы можете удалять пользователей или другие группы. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|Коллекция объектов string|Проверка данной группы на членство в списке групп. Это транзитивная функция.|
 |[checkMemberObjects](../api/group-checkmemberobjects.md)|Коллекция String|Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная функция.|
