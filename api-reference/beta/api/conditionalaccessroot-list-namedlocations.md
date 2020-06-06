@@ -2,35 +2,35 @@
 title: Список Намедлокатионс
 description: Получение списка объектов Намедлокатион.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: da3de62116941946a52ab0b8ba32d44b4f8c5dad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e8ff107c2689491dcc057381c4ff2510db55caa3
+ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382346"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "44593648"
 ---
-# <a name="list-namedlocations"></a><span data-ttu-id="f9cc8-103">Список Намедлокатионс</span><span class="sxs-lookup"><span data-stu-id="f9cc8-103">List namedLocations</span></span>
+# <a name="list-namedlocations"></a><span data-ttu-id="11de5-103">Список Намедлокатионс</span><span class="sxs-lookup"><span data-stu-id="11de5-103">List namedLocations</span></span>
 
-<span data-ttu-id="f9cc8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f9cc8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="11de5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="11de5-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f9cc8-105">Получение списка объектов [намедлокатион](../resources/namedlocation.md) .</span><span class="sxs-lookup"><span data-stu-id="f9cc8-105">Get a list of [namedLocation](../resources/namedlocation.md) objects.</span></span>
+<span data-ttu-id="11de5-105">Получение списка объектов [намедлокатион](../resources/namedlocation.md) .</span><span class="sxs-lookup"><span data-stu-id="11de5-105">Get a list of [namedLocation](../resources/namedlocation.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f9cc8-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f9cc8-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="11de5-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="11de5-106">Permissions</span></span>
 
-<span data-ttu-id="f9cc8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f9cc8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="11de5-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="11de5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f9cc8-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f9cc8-109">Permission type</span></span>                        | <span data-ttu-id="f9cc8-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f9cc8-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="11de5-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="11de5-109">Permission type</span></span>                        | <span data-ttu-id="11de5-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="11de5-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="f9cc8-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f9cc8-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f9cc8-112">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="f9cc8-112">Policy.Read.All</span></span> |
-| <span data-ttu-id="f9cc8-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f9cc8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f9cc8-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-114">Not supported.</span></span> |
-| <span data-ttu-id="f9cc8-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f9cc8-115">Application</span></span>                            | <span data-ttu-id="f9cc8-116">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="f9cc8-116">Policy.Read.All</span></span> |
+| <span data-ttu-id="11de5-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="11de5-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="11de5-112">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="11de5-112">Policy.Read.All</span></span> |
+| <span data-ttu-id="11de5-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="11de5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="11de5-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="11de5-114">Not supported.</span></span> |
+| <span data-ttu-id="11de5-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="11de5-115">Application</span></span>                            | <span data-ttu-id="11de5-116">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="11de5-116">Policy.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f9cc8-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f9cc8-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="11de5-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="11de5-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,33 +38,33 @@ ms.locfileid: "43382346"
 GET /identity/conditionalAccess/namedLocations
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f9cc8-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="f9cc8-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="11de5-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="11de5-118">Optional query parameters</span></span>
 
-<span data-ttu-id="f9cc8-119">Этот метод поддерживает параметры `$count`запросов `$filter`, `$orderBy` `$select` `$skip`,,, и `$top` OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-119">This method supports the `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response.</span></span> <span data-ttu-id="f9cc8-120">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="f9cc8-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="11de5-119">Этот метод поддерживает `$count` параметры запросов,,,, `$filter` `$orderBy` `$select` `$skip` и `$top` OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="11de5-119">This method supports the `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response.</span></span> <span data-ttu-id="11de5-120">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="11de5-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f9cc8-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f9cc8-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="11de5-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="11de5-121">Request headers</span></span>
 
-| <span data-ttu-id="f9cc8-122">Имя</span><span class="sxs-lookup"><span data-stu-id="f9cc8-122">Name</span></span>      |<span data-ttu-id="f9cc8-123">Описание</span><span class="sxs-lookup"><span data-stu-id="f9cc8-123">Description</span></span>|
+| <span data-ttu-id="11de5-122">Имя</span><span class="sxs-lookup"><span data-stu-id="11de5-122">Name</span></span>      |<span data-ttu-id="11de5-123">Описание</span><span class="sxs-lookup"><span data-stu-id="11de5-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="f9cc8-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f9cc8-124">Authorization</span></span> | <span data-ttu-id="f9cc8-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="11de5-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="11de5-124">Authorization</span></span> | <span data-ttu-id="11de5-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="11de5-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f9cc8-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f9cc8-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="11de5-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="11de5-127">Request body</span></span>
 
-<span data-ttu-id="f9cc8-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="11de5-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="11de5-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f9cc8-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="f9cc8-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="11de5-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="11de5-129">Response</span></span>
 
-<span data-ttu-id="f9cc8-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [намедлокатион](../resources/namedlocation.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-130">If successful, this method returns a `200 OK` response code and a collection of [namedLocation](../resources/namedlocation.md) objects in the response body.</span></span>
+<span data-ttu-id="11de5-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [намедлокатион](../resources/namedlocation.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="11de5-130">If successful, this method returns a `200 OK` response code and a collection of [namedLocation](../resources/namedlocation.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f9cc8-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="f9cc8-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="11de5-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="11de5-131">Examples</span></span>
 
-### <a name="example-1-list-all-namedlocations"></a><span data-ttu-id="f9cc8-132">Пример 1: List All ALL Намедлокатионс</span><span class="sxs-lookup"><span data-stu-id="f9cc8-132">Example 1: List all namedLocations</span></span>
+### <a name="example-1-list-all-namedlocations"></a><span data-ttu-id="11de5-132">Пример 1: List All ALL Намедлокатионс</span><span class="sxs-lookup"><span data-stu-id="11de5-132">Example 1: List all namedLocations</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f9cc8-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="f9cc8-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="11de5-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="11de5-133">Request</span></span>
 
-<span data-ttu-id="f9cc8-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-134">The following is an example of the request.</span></span>
+<span data-ttu-id="11de5-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="11de5-134">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f9cc8-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="f9cc8-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="11de5-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="11de5-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_namedlocations"
@@ -73,26 +73,26 @@ GET /identity/conditionalAccess/namedLocations
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 ```
-# <a name="c"></a>[<span data-ttu-id="f9cc8-136">C#</span><span class="sxs-lookup"><span data-stu-id="f9cc8-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="11de5-136">C#</span><span class="sxs-lookup"><span data-stu-id="11de5-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-namedlocations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f9cc8-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f9cc8-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="11de5-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="11de5-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-namedlocations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f9cc8-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f9cc8-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="11de5-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="11de5-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-namedlocations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="f9cc8-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="f9cc8-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="11de5-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="11de5-139">Response</span></span>
 
-<span data-ttu-id="f9cc8-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-140">The following is an example of the response.</span></span>
+<span data-ttu-id="11de5-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="11de5-140">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="f9cc8-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="11de5-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="11de5-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -160,13 +160,13 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-2-list-all-ipnamedlocations"></a><span data-ttu-id="f9cc8-143">Пример 2: список всех Ипнамедлокатионс</span><span class="sxs-lookup"><span data-stu-id="f9cc8-143">Example 2: List all ipNamedLocations</span></span>
+### <a name="example-2-list-all-ipnamedlocations"></a><span data-ttu-id="11de5-143">Пример 2: список всех Ипнамедлокатионс</span><span class="sxs-lookup"><span data-stu-id="11de5-143">Example 2: List all ipNamedLocations</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f9cc8-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="f9cc8-144">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="11de5-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="11de5-144">Request</span></span>
 
-<span data-ttu-id="f9cc8-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-145">The following is an example of the request.</span></span>
+<span data-ttu-id="11de5-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="11de5-145">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f9cc8-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="f9cc8-146">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="11de5-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="11de5-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_namedlocations"
@@ -175,26 +175,26 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$filter=isof('microsoft.graph.ipNamedLocation')
 ```
-# <a name="c"></a>[<span data-ttu-id="f9cc8-147">C#</span><span class="sxs-lookup"><span data-stu-id="f9cc8-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="11de5-147">C#</span><span class="sxs-lookup"><span data-stu-id="11de5-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-namedlocations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f9cc8-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f9cc8-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="11de5-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="11de5-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-namedlocations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f9cc8-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f9cc8-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="11de5-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="11de5-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-namedlocations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="f9cc8-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="f9cc8-150">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="11de5-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="11de5-150">Response</span></span>
 
-<span data-ttu-id="f9cc8-151">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-151">The following is an example of the response.</span></span>
+<span data-ttu-id="11de5-151">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="11de5-151">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="f9cc8-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="11de5-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="11de5-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -250,13 +250,13 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a><span data-ttu-id="f9cc8-154">Пример 3: список всех Намедлокатионс, созданных после определенной даты</span><span class="sxs-lookup"><span data-stu-id="f9cc8-154">Example 3: List all namedLocations created after a certain date</span></span>
+### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a><span data-ttu-id="11de5-154">Пример 3: список всех Намедлокатионс, созданных после определенной даты</span><span class="sxs-lookup"><span data-stu-id="11de5-154">Example 3: List all namedLocations created after a certain date</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f9cc8-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="f9cc8-155">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="11de5-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="11de5-155">Request</span></span>
 
-<span data-ttu-id="f9cc8-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-156">The following is an example of the request.</span></span>
+<span data-ttu-id="11de5-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="11de5-156">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f9cc8-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="f9cc8-157">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="11de5-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="11de5-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_namedlocations"
@@ -265,26 +265,26 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$filter=createdDateTime ge 2019-09-01T00:00:00Z
 ```
-# <a name="c"></a>[<span data-ttu-id="f9cc8-158">C#</span><span class="sxs-lookup"><span data-stu-id="f9cc8-158">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="11de5-158">C#</span><span class="sxs-lookup"><span data-stu-id="11de5-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-namedlocations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f9cc8-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f9cc8-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="11de5-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="11de5-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-namedlocations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f9cc8-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f9cc8-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="11de5-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="11de5-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-namedlocations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="f9cc8-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="f9cc8-161">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="11de5-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="11de5-161">Response</span></span>
 
-<span data-ttu-id="f9cc8-162">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-162">The following is an example of the response.</span></span>
+<span data-ttu-id="11de5-162">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="11de5-162">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="f9cc8-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="11de5-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="11de5-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -322,13 +322,13 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a><span data-ttu-id="f9cc8-165">Пример 4: список всех Каунтринамедлокатионс, содержащих определенную страну или регион</span><span class="sxs-lookup"><span data-stu-id="f9cc8-165">Example 4: List all countryNamedLocations containing a certain country or region</span></span>
+### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a><span data-ttu-id="11de5-165">Пример 4: список всех Каунтринамедлокатионс, содержащих определенную страну или регион</span><span class="sxs-lookup"><span data-stu-id="11de5-165">Example 4: List all countryNamedLocations containing a certain country or region</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f9cc8-166">Запрос</span><span class="sxs-lookup"><span data-stu-id="f9cc8-166">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="11de5-166">Запрос</span><span class="sxs-lookup"><span data-stu-id="11de5-166">Request</span></span>
 
-<span data-ttu-id="f9cc8-167">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-167">The following is an example of the request.</span></span>
+<span data-ttu-id="11de5-167">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="11de5-167">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f9cc8-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="f9cc8-168">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="11de5-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="11de5-168">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_namedlocations"
@@ -337,26 +337,26 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$filter=microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')
 ```
-# <a name="c"></a>[<span data-ttu-id="f9cc8-169">C#</span><span class="sxs-lookup"><span data-stu-id="f9cc8-169">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="11de5-169">C#</span><span class="sxs-lookup"><span data-stu-id="11de5-169">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-namedlocations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f9cc8-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f9cc8-170">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="11de5-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="11de5-170">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-namedlocations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f9cc8-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f9cc8-171">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="11de5-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="11de5-171">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-namedlocations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="f9cc8-172">Отклик</span><span class="sxs-lookup"><span data-stu-id="f9cc8-172">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="11de5-172">Отклик</span><span class="sxs-lookup"><span data-stu-id="11de5-172">Response</span></span>
 
-<span data-ttu-id="f9cc8-173">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-173">The following is an example of the response.</span></span>
+<span data-ttu-id="11de5-173">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="11de5-173">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="f9cc8-p107">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f9cc8-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="11de5-p107">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="11de5-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
