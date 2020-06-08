@@ -26,9 +26,9 @@ ms.locfileid: "44288517"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)| Чат. ReadBasic, Chat. Read, Chat. ReadWrite |
+|Делегированные (рабочая или учебная учетная запись)| Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения| Chat. ReadBasic. ALL, Chat. Read. ALL, Chat. ReadWrite. ALL |
+|Сервер приложений| Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).

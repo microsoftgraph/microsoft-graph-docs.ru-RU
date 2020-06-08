@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
 title: Получение списка SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
 description: Возвращает метаданные для списка.
 doc_type: apiPageType
-ms.openlocfilehash: c0692812fab6589fe0c446140e94cc74d5d52efd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5739c4cf84bd308c113f88a0bbacbaf28aff7214
+ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43362016"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "44593655"
 ---
 # <a name="get-metadata-for-a-list"></a>Получение метаданных списка
 
@@ -36,7 +35,7 @@ ms.locfileid: "43362016"
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-title}
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-title}
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
