@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: bba1be37d3a654fa6d2bd64cc443cde76d844a60
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
+ms.lasthandoff: 06/09/2020
 ms.locfileid: "44491646"
 ---
 # <a name="delete-channel"></a>Удаление канала
@@ -29,7 +29,7 @@ ms.locfileid: "44491646"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Channel. Delete. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Channel. Delete. ALL, Channel. Delete. Group *, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
+|Для приложений | Channel. Delete. ALL, Channel. Delete. Group *, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
 
 > **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом](https://aka.ms/teams-rsc).
 
@@ -45,7 +45,7 @@ DELETE /teams/{id}/channels/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
