@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 3bcb4d9c198d4b53e589322d0f597cfb5fd88350
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1bbf75e08a4d418123707a2525a7234c46cfa67f
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441629"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44680964"
 ---
 # <a name="get-alert"></a>Получение оповещения
 
@@ -48,7 +48,7 @@ GET /security/alerts/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **Alert** в тексте отклика. Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
 
@@ -154,6 +154,7 @@ Content-type: application/json
     }
   ],
   "id": "String (identifier)",
+  "incidentIds": ["String"],
   "lastModifiedDateTime": "String (timestamp)",
   "malwareStates": [
     {
@@ -169,6 +170,7 @@ Content-type: application/json
       "applicationName": "String",
       "destinationAddress": "String",
       "destinationDomain": "String",
+      "destinationLocation": "String",
       "destinationPort": "String",
       "destinationUrl": "String",
       "direction": "@odata.type: microsoft.graph.connectionDirection",
@@ -181,6 +183,7 @@ Content-type: application/json
       "protocol": "String",
       "riskScore": "String",
       "sourceAddress": "String",
+      "sourceLocation": "String",
       "sourcePort": "String",
       "status": "@odata.type: microsoft.graph.connectionStatus",
       "urlParameters": "String"
@@ -220,6 +223,12 @@ Content-type: application/json
       "valueType": "@odata.type: microsoft.graph.registryValueType"
     }
   ],
+   "securityResources": [
+    {
+      "resource": "String",
+      "resourceType": "@odata.type: microsoft.graph.securityResourceType"
+    }
+   ],
   "severity": "@odata.type: microsoft.graph.alertSeverity",
   "sourceMaterials": ["String"],
   "status": "@odata.type: microsoft.graph.alertStatus",

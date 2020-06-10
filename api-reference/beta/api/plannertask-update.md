@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 515bb5b7b8403aab01e12eaa40b0ade5d2a68268
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 424897e61a5ea16ae9c7b76322f626324f09bb19
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455615"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44680622"
 ---
 # <a name="update-plannertask"></a>Обновление объекта plannertask
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ PATCH /planner/tasks/{id}
 |dueDateTime|DateTimeOffset|Срок выполнения задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
 |percentComplete|Int32|Процент выполнения задачи. Если установлено значение `100`, задача считается выполненной. |
-|priority|Int32|Приоритет задачи. Допустимый диапазон значений: между `0` и `10` (включительно), при котором увеличивается значение низкого приоритета (`0` имеет самый высокий `10` приоритет и имеет самый низкий приоритет).  В настоящее время планировщик интерпретирует значения `0` , `1` а также как "срочные `3` " `4` , `2` а также `5` `6` `7` "средний", "средний" и "средний" `8`, `9` `10` а также "средний".  В настоящее время планировщик устанавливает значение `1` "срочно", `3` "важно" `5` , "среднее" и `9` "недорогой".|
+|priority|Int32|Приоритет задачи. Допустимый диапазон значений: между `0` и `10` (включительно), при котором увеличивается значение низкого приоритета ( `0` имеет самый высокий приоритет и `10` имеет самый низкий приоритет).  В настоящее время планировщик интерпретирует значения `0` , а также как " `1` срочные", а также "средний", " `2` `3` средний" и " `4` `5` `6` `7` средний", а также "средний" `8` `9` `10` .  В настоящее время планировщик устанавливает значение `1` "срочно", " `3` важно", `5` "среднее" и `9` "недорогой".|
 |startDateTime|DateTimeOffset|Дата и время начала задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |title|Строка|Название задачи.|
 
@@ -92,6 +92,10 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertask-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-plannertask-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

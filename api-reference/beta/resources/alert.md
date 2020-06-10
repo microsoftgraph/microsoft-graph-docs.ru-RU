@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 83bd3689ca7dc695ac538a7d87e0d44ce561f9dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 75274fd208541bcc1bee7d1a5e0bd111c4da23ad
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508354"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681755"
 ---
 # <a name="alert-resource-type"></a>Тип ресурса alert
 
@@ -38,7 +38,7 @@ ms.locfileid: "42508354"
 |activityGroupName|String|Имя или псевдоним группы действий (злоумышленник), с которым связано это оповещение.|
 |assignedTo|String|Имя аналитика, которому назначено оповещение для рассмотрения, изучения или исправления (поддерживает [обновление](../api/alert-update.md)).|
 |azureSubscriptionId|String|Идентификатор подписки Azure, указываемый, если это оповещение связано с ресурсом Azure.|
-|azureTenantId |String|Идентификатор клиента Azure Active Directory. Обязательный. |
+|azureTenantId |String|Идентификатор клиента Azure Active Directory. Обязательный элемент. |
 |category|String|Категория оповещения (например, credentialTheft, ransomware и т. д.).|
 |closedDateTime|DateTimeOffset|Время закрытия оповещения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'` (поддерживает [обновление](../api/alert-update.md)).|
 |cloudAppStates|Коллекция [cloudAppSecurityState](cloudappsecuritystate.md)|Сведения, связанные с отслеживанием состояния безопасности, созданные поставщиком об облачных приложениях, относящихся к оповещению.|
@@ -47,23 +47,25 @@ ms.locfileid: "42508354"
 |createdDateTime |DateTimeOffset|Время создания оповещения поставщиком оповещения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Обязательный.|
 |description|String|Описание оповещения.|
 |detectionIds|Коллекция объектов string|Набор оповещений, связанных с объектом оповещения (каждое оповещение передается в SIEM как отдельная запись).|
-|eventDateTime |DateTimeOffset|Время возникновения событий, запустивших создание оповещения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Обязательный.|
+|eventDateTime |DateTimeOffset|Время возникновения событий, запустивших создание оповещения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Обязательный атрибут.|
 |feedback|alertFeedback|Отзыв аналитика об оповещении. Возможные значения: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. (Поддерживает [обновление](../api/alert-update.md))|
 |fileStates|Коллекция [fileSecurityState](filesecuritystate.md)|Сведения, связанные с отслеживанием состояния безопасности, созданные поставщиком о файлах, относящихся к оповещению.|
 |хистористатес|Коллекция [алерсистористате](alerthistorystate.md)| Коллекция **алерсистористатес** , состоящая из журнала аудита всех обновлений, внесенных в оповещение. |
 |hostStates|Коллекция [hostSecurityState](hostsecuritystate.md)|Сведения, связанные с отслеживанием состояния безопасности, созданные поставщиком об узлах, относящихся к оповещению.|
-|id |String|GUID или уникальный идентификатор, созданный поставщиком. Только для чтения. Обязательный.|
+|id |String|GUID или уникальный идентификатор, созданный поставщиком. Только для чтения. Обязательный атрибут.|
+|инЦидентидс|Коллекция объектов string|Идентификаторы инцидентов, связанных с текущим оповещением.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения объекта оповещения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |malwareStates|Коллекция [malwareState](malwarestate.md)|Аналитика угроз, относящаяся к вредоносным программам, связанным с оповещением.|
 |networkConnections|Коллекция [networkConnection](networkconnection.md)|Сведения, связанные с отслеживанием состояния безопасности, созданные поставщиком о сетевых подключениях, относящихся к оповещению.|
 |processes|Коллекция [process](process.md)|Сведения, связанные с отслеживанием состояния безопасности, созданные поставщиком о процессе или процессах, относящихся к оповещению.|
-|recommendedActions|Коллекция объектов string|Рекомендуемые поставщиком действия в ответ на оповещение (например, изоляция компьютера, применение двухфакторной проверки подлинности, повторное создание образа узла).|
+|recommendedActions|Коллекция String|Рекомендуемые поставщиком действия в ответ на оповещение (например, изоляция компьютера, применение двухфакторной проверки подлинности, повторное создание образа узла).|
 |registryKeyStates|Коллекция [registryKeyState](registrykeystate.md)|Сведения, связанные с отслеживанием состояния безопасности, созданные поставщиком о разделах реестра, относящихся к оповещению.|
-|severity |alertSeverity|Серьезность оповещения, заданная поставщиком. Возможные значения: `unknown`, `informational`, `low`, `medium`, `high`. Обязательный атрибут.|
+|секуритиресаурцес|Коллекция [секуритиресаурце](securityResource.md)|Ресурсы, связанные с текущим оповещением. Например, для некоторых оповещений это может быть значение ресурса Azure.|
+|severity |alertSeverity|Серьезность оповещения, заданная поставщиком. Возможные значения: `unknown`, `informational`, `low`, `medium`, `high`. Обязательный элемент.|
 |sourceMaterials|Коллекция String|Гиперссылки (URI) на исходные материалы, связанные с оповещением, например пользовательский интерфейс поставщика для оповещений или поиска в журнале и т. д.|
-|status |alertStatus|Оповещение о состоянии жизненного цикла (этапа). Возможные значения: `unknown`, `newAlert`, `inProgress`, `resolved`. (Поддерживает [обновление](../api/alert-update.md)). Обязательный.|
+|status |alertStatus|Оповещение о состоянии жизненного цикла (этапа). Возможные значения: `unknown`, `newAlert`, `inProgress`, `resolved`. (Поддерживает [обновление](../api/alert-update.md)). Обязательный элемент.|
 |tags|Коллекция String|Определяемые пользователем метки, которые можно применять к оповещению и использовать в качестве условий фильтра (например, HVA, SAW и т. д.) (поддерживает [обновление](../api/alert-update.md)).|
-|title |String|Заголовок оповещения. Обязательный.|
+|title |String|Заголовок оповещения. Обязательный элемент.|
 |triggers|Коллекция [alertTrigger](alerttrigger.md)|Сведения, связанные с безопасностью, об определенных свойствах, запустивших оповещение (свойства, отображаемые в оповещении). Оповещения могут содержать сведения о нескольких пользователях, узлах, файлах, IP-адресах. Это поле указывает, какие свойства запустили создание оповещения.|
 |userStates|Коллекция [userSecurityState](usersecuritystate.md)|Сведения, связанные с отслеживанием состояния безопасности, созданные поставщиком об учетных записях пользователей, относящихся к оповещению.|
 |vendorInformation |[securityVendorInformation](securityvendorinformation.md)|Сложный тип, содержащий подробные сведения о безопасности продавца продукта или услуги, поставщика субпоставщика (например, продавец = Майкрософт; поставщик = ATP в Защитнике Windows; субпоставщик = AppLocker). Обязательный атрибут.|
@@ -105,12 +107,14 @@ ms.locfileid: "42508354"
   "historyStates": [{"@odata.type": "microsoft.graph.alertHistoryState"}],
   "hostStates": [{"@odata.type": "microsoft.graph.hostSecurityState"}],
   "id": "String (identifier)",
+  "incidentIds": ["String"],
   "lastModifiedDateTime": "String (timestamp)",
   "malwareStates": [{"@odata.type": "microsoft.graph.malwareState"}],
   "networkConnections": [{"@odata.type": "microsoft.graph.networkConnection"}],
   "processes": [{"@odata.type": "microsoft.graph.process"}],
   "recommendedActions": ["String"],
   "registryKeyStates": [{"@odata.type": "microsoft.graph.registryKeyState"}],
+  "securityResources": [{"@odata.type": "microsoft.graph.securityResource"}],
   "severity": "@odata.type: microsoft.graph.alertSeverity",
   "sourceMaterials": ["String"],
   "status": "@odata.type: microsoft.graph.alertStatus",

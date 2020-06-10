@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 117bd9c6ab25ca1db00233a15b8d984f6bb512a4
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: 1bb5f8d5177e294a969fb48d335bd4a3061f1bb1
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44430615"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681762"
 ---
 # <a name="changenotification-resource-type"></a>Тип ресурса Чанженотификатион
 
@@ -22,7 +22,7 @@ ms.locfileid: "44430615"
 
 Дополнительные сведения см. [в статье Использование API Microsoft Graph для получения уведомлений об изменениях](webhooks.md).
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 
 Отсутствуют.
 
@@ -31,13 +31,13 @@ ms.locfileid: "44430615"
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
 | changeType | string | Указывает тип изменения, которое вызовет уведомление об изменении. Поддерживаемые значения: `created`, `updated`, `deleted`. Обязательный элемент. |
-| clientState | string | Значение свойства **clientState** , указанное в запросе на подписку (при наличии). Максимальная длина: 255 символов. Клиент может проверить, что уведомление об изменении поступило из службы, сравнив значение свойства **clientState** , отправленного с подпиской, со значением свойства **clientState** , полученного с каждым уведомлением об изменении. Необязательное свойство. |
+| clientState | string | Значение свойства **clientState** , указанное в запросе на подписку (при наличии). Максимальная длина: 255 символов. Клиент может проверить, что уведомление об изменении поступило из службы, сравнив значение свойства **clientState** , отправленного с подпиской, со значением свойства **clientState** , полученного с каждым уведомлением об изменении. Необязательное. |
 | енкриптедконтент | [Microsoft. Graph. Чанженотификатионенкриптедконтент](changenotificationencryptedcontent.md) | Просмотреть Зашифрованное содержимое, связанное с уведомлением об изменении. Предоставляется только в том случае, если **енкриптионцертификате** и **инклудересаурцедата** определены во время запроса на подписку, и если он поддерживается ресурсом. Необязательный |
-| лифецикливент | string | Тип уведомления о жизненном цикле, если текущее уведомление является уведомлением жизненного цикла. Необязательное свойство. Поддерживаемые значения: `missed` , `removed` , `reauthorizationRequired` . |
-| id | строка | Уникальный идентификатор уведомления. Необязательное свойство. |
+| лифецикливент | string | Тип уведомления о жизненном цикле, если текущее уведомление является уведомлением жизненного цикла. Необязательное. Поддерживаемые значения: `missed` , `removed` , `reauthorizationRequired` . |
+| id | строка | Уникальный идентификатор уведомления. Необязательное. |
 | resource | string | URI ресурса, который выдал уведомление об изменении относительно `https://graph.microsoft.com` . Обязательный элемент. |
 | resourceData | [Microsoft. Graph. resourceData](resourcedata.md) | Содержимое этого свойства зависит от типа связанного с ним ресурса. Обязательный элемент. |
-| sequenceNumber | int | Можно использовать, чтобы получать уведомления по порядку. Необязательное свойство. |
+| sequenceNumber | int | Число в последовательности для уведомления, помогающее клиентскому приложению определить, находятся ли уведомления в последовательности, или если уведомление отсутствует. Необязательное. |
 | subscriptionExpirationDateTime | [дата и время](https://tools.ietf.org/html/rfc3339) | Время окончания срока действия подписки. Обязательный элемент. |
 | subscriptionId | string | Уникальный идентификатор подписки, создавшей уведомление. |
 | tenantId | кодом | Уникальный идентификатор клиента, с которого поступило уведомление об изменении. |
@@ -62,7 +62,11 @@ ms.locfileid: "44430615"
 {
   "subscriptionId": "76222963-cc7b-42d2-882d-8aaa69cb2ba3",
   "changeType": "created",
-  // Other properties typical in a resource change notification
+  "clientState": "client state provided when creating subscription",
+  "id": "15ee1d1f-af7b-42d9-885b-9d00db065dd9",
+  "sequenceNumber": 20,
+  "tenantId": "2c937fad-a8a7-496c-b0e4-bf77dcc7eb2a",
+  "subscriptionExpirationDateTime": "2020-04-12T23:20:50.52Z",
   "resource": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')",
   "resourceData": {
     "id": "1565293727947",

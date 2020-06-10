@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c587d9d6e11354a136948bbbf37565e42e0bb678
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fc6bb8b60c6c9df08373a76bd6bc5714758fc9cb
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522584"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682140"
 ---
 # <a name="networkconnection-resource-type"></a>Тип ресурса networkConnection
 
@@ -27,6 +27,7 @@ ms.locfileid: "42522584"
 |applicationName|String|Имя приложения, управляющего сетевым подключением (например, Facebook, SMTP и т. д.).|
 |дестинатионаддресс|String|Конечный IP-адрес (сетевого подключения).|
 |дестинатиондомаин|String|Часть конечного домена, в которой находится конечный URL-адрес. (например, "www.contoso.com").|
+|дестинатионлокатион|String|Расположение (по сопоставлению IP-адресов), связанное с назначением сетевого подключения.|
 |дестинатионпорт|String|Порт назначения (для сетевого подключения).|
 |дестинатионурл|String|URL-адрес сетевого подключения/URI-строка — без параметров. (например, "www.contoso.com/products/default.html")|
 |direction|connectionDirection|Направление сетевого подключения. Возможные значения: `unknown`, `inbound`, `outbound`.|
@@ -36,9 +37,10 @@ ms.locfileid: "42522584"
 |натдестинатионпорт|String|Порт назначения преобразования сетевых адресов.|
 |натсаурцеаддресс|String|IP-адрес источника преобразования сетевых адресов.|
 |натсаурцепорт|String|Порт источника преобразования сетевых адресов.|
-|Protocol|securityNetworkProtocol|Сетевой протокол. Возможные `unknown`значения:, `ip`, `icmp`, `igmp` `ggp` `ipv4` `tcp` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `raw` `ipx` `spx` `spxII`,,,,,,, `ipv6FragmentHeader`,,,,,,,,,,,,,,,,,,. `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader`|
+|Protocol|securityNetworkProtocol|Сетевой протокол. Возможные значения:,,,,,,,,,,, `unknown` `ip` `icmp` `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader` , `ipSecEncapsulatingSecurityPayload` , `ipSecAuthenticationHeader` , `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `raw` `ipx` `spx` `spxII` ,,,,,,,,,,,,,,.|
 |riskScore|String|Созданный поставщиком/вычисляемый показатель риска для сетевого подключения. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 |саурцеаддресс|String|Источник (то есть источник) IP-адрес сетевого подключения.|
+|sourceLocation|String|Расположение (по сопоставлению IP-адресов), связанное с источником сетевого подключения.|
 |саурцепорт|String|Исходный (то есть источник) IP-порт (сетевого подключения).|
 |status|connectionStatus|Состояние сетевого подключения. Возможные значения: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
 |урлпараметерс|String|Параметры (суффикс) конечного URL-адреса.|
@@ -49,7 +51,7 @@ ms.locfileid: "42522584"
 |:---|:---|:---|
 |unknown|–1|Неизвестный протокол.|
 |см|нуль|Протокол IP.|
-|полученных|1,1| Протокол управления сообщениями в Интернете.|
+|полученных|1 | Протокол управления сообщениями в Интернете.|
 |режимы|2| Протокол управления группами Интернет.|
 |ггп|4| Протокол шлюза для шлюза.|
 |IPv4|4 | Протокол Интернета версии 4.|
@@ -88,6 +90,7 @@ ms.locfileid: "42522584"
   "applicationName": "String",
   "destinationAddress": "String",
   "destinationDomain": "String",
+  "destinationLocation": "String",
   "destinationPort": "String",
   "destinationUrl": "String",
   "direction": "String",
@@ -100,6 +103,7 @@ ms.locfileid: "42522584"
   "protocol": "string",
   "riskScore": "String",
   "sourceAddress": "String",
+  "sourceLocation": "String",
   "sourcePort": "String",
   "status": "String",
   "urlParameters": "String"

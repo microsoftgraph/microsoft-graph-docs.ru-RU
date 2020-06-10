@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 699718c5a51e074e15d964d0e8c925bc303d4e89
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 4d19a726e2f09c1df994bc8aee7d91eb53ef2628
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556249"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682007"
 ---
 # <a name="onpremisespublishing-resource-type"></a>Тип ресурса Онпремисеспублишинг
 
@@ -22,7 +22,7 @@ ms.locfileid: "44556249"
 
 Объект **онпремисеспублишинг** представляет набор свойств для настройки прокси приложения для локального [приложения](application.md). 
 
-После [создания приложения](../api/application-post-applications.md)параметры прокси-сервера для приложения можно настроить, обновив свойства онпремисеспублишинг [приложения](../api/application-update.md) .
+После создания [экземпляра настраиваемого приложения](../api/applicationtemplate-instantiate.md) или [создания приложения](../api/application-post-applications.md)параметры прокси-сервера для приложения можно настроить, обновив свойства онпремисеспублишинг [приложения](../api/application-update.md) .
 
 ## <a name="properties"></a>Свойства
 

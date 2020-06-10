@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae4e03f7057cec80bdba362df806ad7b0532af5c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5e1bc88a6b1438d6dbc94c73c03f92033a6c56f8
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43364556"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681863"
 ---
 # <a name="update-event"></a>Обновление события
 
@@ -63,20 +63,20 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |:---------------|:--------|:------------|
 | attendees|Attendee|Коллекция участников события.|
 | body|ItemBody|Текст сообщения, связанного с событием.|
-| categories|String|Категории, связанные с событием.|
+| categories|Коллекция String|Категории, связанные с событием.|
 | end|DateTimeTimeZone|Дата, время и часовой пояс завершения события. |
 | importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
 | isAllDay|Boolean|Задайте значение true, если событие длится весь день. Если значение равно true, то независимо от того, один или несколько дней длится событие, время его начала и окончания должно быть установлено на полночь в одном и том же часовом поясе.|
 |isOnlineMeeting|Boolean| `True`, если это событие содержит информацию о собраниях по сети; в противном случае — `false`. Значение по умолчанию: false. Необязательное.|
-| isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
-| location|Расположение|Место проведения события.|
+| isReminderOn|Логический|Задайте значение true, если установлено напоминание пользователю о событии.|
+| location|Location|Место проведения события.|
 |locations|Коллекция [Location](../resources/location.md)|Места проведения события или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
 |onlineMeetingProvider|onlineMeetingProviderType| Представляет поставщика службы собраний по сети. Возможные значения: `teamsForBusiness`, `skypeForBusiness` и `skypeForConsumer`. Необязательно. |
 | recurrence|PatternedRecurrence|Расписание повторения события.|
 | reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
 | responseRequested|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
 | sensitivity|String| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
-| showAs|String|Отображаемое состояние. Возможные `free` значения:, `tentative`, `busy`, `oof`, `workingElsewhere`,. `unknown`|
+| showAs|String|Отображаемое состояние. Возможные значения: `free` ,, `tentative` , `busy` , `oof` `workingElsewhere` , `unknown` .|
 | начать|DateTimeTimeZone|Дата, время и часовой пояс начала события. |
 | subject|String|Текст в строке темы сообщения о событии.|
 
@@ -118,7 +118,8 @@ Content-length: 285
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
-  "isReminderOn": true
+  "isReminderOn": true,
+  "categories": ["Red category"]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -132,7 +133,7 @@ Content-length: 285
 ---
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

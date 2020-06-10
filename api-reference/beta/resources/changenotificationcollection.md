@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 583a6444fb7f0f1be65c68a4eb772089ddb768bd
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: d93cbc16411d3090ba4133047ad07cd55997fec5
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44430612"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681748"
 ---
 # <a name="changenotificationcollection-resource-type"></a>Тип ресурса Чанженотификатионколлектион
 
@@ -18,11 +18,11 @@ ms.locfileid: "44430612"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет коллекцию уведомлений о подписке, отправляемых подписчику.
+Представляет коллекцию уведомлений об изменении ресурсов, отправляемых подписчику.
 
 Дополнительные сведения см. [в статье Использование API Microsoft Graph для получения уведомлений об изменениях](webhooks.md).
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 
 Отсутствуют.
 
