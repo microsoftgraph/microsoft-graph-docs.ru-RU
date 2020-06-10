@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 82a3a3583d7e2f4ce6d2326188e6691d70f890d1
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 79adb9e95d1c886649e1782b796347205a8f030d
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216758"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684862"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var printUserIdentity = new PrintUserIdentity
 {
     AdditionalData = new Dictionary<string, object>()
     {
-        {"@odata.id","https://graph.microsoft.com/beta/users/{id}"}
+        {"@odata.id", "https://graph.microsoft.com/beta/users/{id}"}
     }
 };
 

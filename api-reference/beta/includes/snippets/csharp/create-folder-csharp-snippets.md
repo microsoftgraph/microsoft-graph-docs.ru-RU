@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 3c1e2bca2fe9b76d26cb1eee22ac545f8fbd5d8d
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: f069b928af20b5646a2903b8adf374c1e18a9346
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302840"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684399"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var driveItem = new DriveItem
     },
     AdditionalData = new Dictionary<string, object>()
     {
-        {"@microsoft.graph.conflictBehavior","rename"}
+        {"@microsoft.graph.conflictBehavior", "rename"}
     }
 };
 
