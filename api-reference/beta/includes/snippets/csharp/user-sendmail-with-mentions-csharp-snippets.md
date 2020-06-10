@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a45cea4e87c3bb2933095804e1e75e68c4556fe4
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: 2da74c032f1dd3259e24de7d1674cc45c87ff071
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402466"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683927"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var message = new Message
             }
         }
     },
-    Mentions = new List<Mention>()
+    Mentions = (IMessageMentionsCollectionPage)new List<Mention>()
     {
         new Mention
         {
