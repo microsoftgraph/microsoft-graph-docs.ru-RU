@@ -5,32 +5,32 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 3bcb4d9c198d4b53e589322d0f597cfb5fd88350
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1bbf75e08a4d418123707a2525a7234c46cfa67f
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441629"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44680964"
 ---
-# <a name="get-alert"></a><span data-ttu-id="e7f1c-103">Получение оповещения</span><span class="sxs-lookup"><span data-stu-id="e7f1c-103">Get alert</span></span>
+# <a name="get-alert"></a><span data-ttu-id="75ec6-103">Получение оповещения</span><span class="sxs-lookup"><span data-stu-id="75ec6-103">Get alert</span></span>
 
-<span data-ttu-id="e7f1c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e7f1c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="75ec6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="75ec6-104">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e7f1c-105">Получение свойств и связей объекта [Alert](../resources/alert.md) .</span><span class="sxs-lookup"><span data-stu-id="e7f1c-105">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
+<span data-ttu-id="75ec6-105">Получение свойств и связей объекта [Alert](../resources/alert.md) .</span><span class="sxs-lookup"><span data-stu-id="75ec6-105">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e7f1c-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e7f1c-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="75ec6-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="75ec6-106">Permissions</span></span>
 
-<span data-ttu-id="e7f1c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e7f1c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="75ec6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="75ec6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e7f1c-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e7f1c-109">Permission type</span></span>      | <span data-ttu-id="e7f1c-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e7f1c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="75ec6-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="75ec6-109">Permission type</span></span>      | <span data-ttu-id="75ec6-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="75ec6-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e7f1c-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e7f1c-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="e7f1c-112">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e7f1c-112">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
-|<span data-ttu-id="e7f1c-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e7f1c-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="e7f1c-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e7f1c-114">Not supported.</span></span>  |
-|<span data-ttu-id="e7f1c-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="e7f1c-115">Application</span></span> | <span data-ttu-id="e7f1c-116">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e7f1c-116">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="75ec6-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="75ec6-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="75ec6-112">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="75ec6-112">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
+|<span data-ttu-id="75ec6-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="75ec6-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="75ec6-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="75ec6-114">Not supported.</span></span>  |
+|<span data-ttu-id="75ec6-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="75ec6-115">Application</span></span> | <span data-ttu-id="75ec6-116">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="75ec6-116">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e7f1c-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e7f1c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="75ec6-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="75ec6-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,27 +38,27 @@ ms.locfileid: "42441629"
 GET /security/alerts/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e7f1c-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e7f1c-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="75ec6-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="75ec6-118">Request headers</span></span>
 
-| <span data-ttu-id="e7f1c-119">Имя</span><span class="sxs-lookup"><span data-stu-id="e7f1c-119">Name</span></span>      |<span data-ttu-id="e7f1c-120">Описание</span><span class="sxs-lookup"><span data-stu-id="e7f1c-120">Description</span></span>|
+| <span data-ttu-id="75ec6-119">Имя</span><span class="sxs-lookup"><span data-stu-id="75ec6-119">Name</span></span>      |<span data-ttu-id="75ec6-120">Описание</span><span class="sxs-lookup"><span data-stu-id="75ec6-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="e7f1c-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e7f1c-121">Authorization</span></span>  | <span data-ttu-id="e7f1c-122">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="e7f1c-122">Bearer {code}.</span></span> <span data-ttu-id="e7f1c-123">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="e7f1c-123">Required.</span></span>|
+| <span data-ttu-id="75ec6-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="75ec6-121">Authorization</span></span>  | <span data-ttu-id="75ec6-122">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="75ec6-122">Bearer {code}.</span></span> <span data-ttu-id="75ec6-123">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="75ec6-123">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e7f1c-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e7f1c-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="75ec6-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="75ec6-124">Request body</span></span>
 
-<span data-ttu-id="e7f1c-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e7f1c-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="75ec6-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="75ec6-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e7f1c-126">Ответ</span><span class="sxs-lookup"><span data-stu-id="e7f1c-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="75ec6-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="75ec6-126">Response</span></span>
 
-<span data-ttu-id="e7f1c-127">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **Alert** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e7f1c-127">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="e7f1c-128">Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения.</span><span class="sxs-lookup"><span data-stu-id="e7f1c-128">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="e7f1c-129">Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="e7f1c-129">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+<span data-ttu-id="75ec6-127">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **Alert** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="75ec6-127">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="75ec6-128">Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения.</span><span class="sxs-lookup"><span data-stu-id="75ec6-128">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="75ec6-129">Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="75ec6-129">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="e7f1c-130">Пример</span><span class="sxs-lookup"><span data-stu-id="e7f1c-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="75ec6-130">Пример</span><span class="sxs-lookup"><span data-stu-id="75ec6-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e7f1c-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="e7f1c-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="75ec6-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="75ec6-131">Request</span></span>
 
-<span data-ttu-id="e7f1c-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e7f1c-132">The following is an example of the request.</span></span>
+<span data-ttu-id="75ec6-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="75ec6-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e7f1c-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="e7f1c-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="75ec6-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="75ec6-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_alert"
@@ -67,24 +67,24 @@ GET /security/alerts/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/alerts/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="e7f1c-134">C#</span><span class="sxs-lookup"><span data-stu-id="e7f1c-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="75ec6-134">C#</span><span class="sxs-lookup"><span data-stu-id="75ec6-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-alert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e7f1c-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e7f1c-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="75ec6-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="75ec6-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-alert-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e7f1c-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e7f1c-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="75ec6-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="75ec6-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-alert-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="e7f1c-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="e7f1c-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="75ec6-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="75ec6-137">Response</span></span>
 
-<span data-ttu-id="e7f1c-138">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e7f1c-138">The following is an example of the response.</span></span>
+<span data-ttu-id="75ec6-138">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="75ec6-138">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -154,6 +154,7 @@ Content-type: application/json
     }
   ],
   "id": "String (identifier)",
+  "incidentIds": ["String"],
   "lastModifiedDateTime": "String (timestamp)",
   "malwareStates": [
     {
@@ -169,6 +170,7 @@ Content-type: application/json
       "applicationName": "String",
       "destinationAddress": "String",
       "destinationDomain": "String",
+      "destinationLocation": "String",
       "destinationPort": "String",
       "destinationUrl": "String",
       "direction": "@odata.type: microsoft.graph.connectionDirection",
@@ -181,6 +183,7 @@ Content-type: application/json
       "protocol": "String",
       "riskScore": "String",
       "sourceAddress": "String",
+      "sourceLocation": "String",
       "sourcePort": "String",
       "status": "@odata.type: microsoft.graph.connectionStatus",
       "urlParameters": "String"
@@ -220,6 +223,12 @@ Content-type: application/json
       "valueType": "@odata.type: microsoft.graph.registryValueType"
     }
   ],
+   "securityResources": [
+    {
+      "resource": "String",
+      "resourceType": "@odata.type: microsoft.graph.securityResourceType"
+    }
+   ],
   "severity": "@odata.type: microsoft.graph.alertSeverity",
   "sourceMaterials": ["String"],
   "status": "@odata.type: microsoft.graph.alertStatus",
