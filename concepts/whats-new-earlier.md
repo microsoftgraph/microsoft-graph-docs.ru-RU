@@ -3,14 +3,69 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 9f722134a70f7ff7876f7db19bd2f51b5aa7eeac
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 251d41dfae2aac6c15e26304a1f57f540bd65a82
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291057"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681629"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
+
+## <a name="april-2020-new-and-generally-available"></a>Апрель 2020 г.: новые и общедоступные возможности
+
+### <a name="calendar"></a>Календарь
+- [Делитесь календарями или делегируйте их](outlook-share-or-delegate-calendar.md) программным способом, соответствующим пользовательскому интерфейсу Outlook. Поддерживается отслеживание разрешений текущего пользователя и состояния общего доступа к календарю, а также следующие возможности:
+  - Для каждого [календаря](/graph/api/resources/calendar?view=graph-rest-1.0) теперь можно управлять [разрешениями](/graph/api/resources/calendarpermission?view=graph-rest-1.0) каждого пользователя, которому предоставлен доступ к календарю. 
+  - Для каждого [почтового ящика](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) теперь можно указать, кто получает сообщения о собраниях и ответы на эти сообщения: делегат, владелец почтового ящика или и тот, и другой. 
+- [Создание или обновление события в виде собрания по сети](outlook-calendar-online-meetings.md):
+  - В каждом **календаре** можно указать разрешенных и используемых по умолчанию поставщиков собраний по сети.
+  - Можно создать или обновить [мероприятие](/graph/api/resources/event?view=graph-rest-1.0), доступное по сети, и предоставить участникам сведения для присоединения к собранию по сети. 
+  - В частности, можно использовать **onlineMeetingProvider** и **onlineMeeting** — это новые свойства **мероприятий**, с помощью которых можно задать или указать Microsoft Teams в качестве поставщика собраний по сети. Это временное решение [известной проблемы](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) со свойством **onlineMeetingUrl**.
+- Добавление [файловых вложений до 150 МБ](outlook-large-attachments.md) в [событие](/graph/api/resources/event?view=graph-rest-1.0).
+
+### <a name="files"></a>Файлы
+- [Извлекайте](/graph/api/driveitem-checkout?view=graph-rest-1.0) и [возвращайте](/graph/api/driveitem-checkin?view=graph-rest-1.0) файлы в OneDrive, чтобы управлять их обновлением и делать обновления доступными для других пользователей.
+- Применение необязательных параметров и даты истечения срока действия к ссылке " [пригласить](/graph/api/driveitem-invite?view=graph-rest-1.0) " и " [Создание ссылки для совместного доступа](/graph/api/driveitem-createlink?view=graph-rest-1.0) " для предоставления общего доступа к [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).
+- Получение или установка пароля и даты истечения срока действия [разрешения](/graph/api/resources/permission?view=graph-rest-1.0), а также отслеживание [набора удостоверений](/graph/api/resources/identityset?view=graph-rest-1.0) пользователей, которым предоставлено разрешение на общий доступ к **driveItem**.
+- Получение [разрешения](/graph/api/resources/permission?view=graph-rest-1.0) для [элемента общего диска](/graph/api/resources/shareddriveitem?view=graph-rest-1.0) с помощью свойства навигации **разрешений** .
+- Ограничьте для пользователей, имеющих [ссылку для совместного доступа](/graph/api/resources/sharinglink?view=graph-rest-1.0) , только просматривать и загружать содержимое общих**driveItem** в OneDrive для бизнеса или SharePoint.
+
+### <a name="identity-and-access"></a>Удостоверение и доступ
+- Чтобы управлять ролями и назначать доступ к ресурсам в провайдерах управления доступом на основе ролей (RBAC), таких как Microsoft Intune, используйте [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-1.0). Ресурс **unifiedRoleAssignmentMultiple** поддерживает определение одной роли в массиве областей и назначение роли для нескольких субъектов (например, пользователей).
+- Получите доступ к определенным типам [политик для организации](/graph/api/resources/policy-overview?view=graph-rest-1.0), используя `/policies`сегмент URL и указав тип политики. Например, организация может применить политику для автоматического выхода пользователя из веб-сеанса после периода бездействия; см. операции CRUD для экземпляров [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-1.0). Это [серьезное изменение](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-1.0/), упрощающее обнаружение всех политик путем группировки всех типизированных политик в сегменте `/policies`. Доступ к другим типизированным политикам осуществляется аналогичным образом: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0) и [tokenIssuancePolicy](/graph/api/resources/tokenissuancetimepolicy?view=graph-rest-1.0). 
+
+### <a name="mail"></a>Почта
+Добавление [файловых вложений до 150 МБ](outlook-large-attachments.md) в [сообщение](/graph/api/resources/message?view=graph-rest-1.0).
+
+### <a name="sites-and-lists"></a>Сайты и списки
+- [Список сайтов](/graph/api/sites-list-followed?view=graph-rest-1.0), на которые подписан пользователь.
+- Определите географический регион [семейства веб-сайтов](/graph/api/resources/sitecollection?view=graph-rest-1.0) с помощью свойства **даталокатионкоде** .
+- Определите клиент для файла, папки или другого элемента в SharePoint, обратившись к свойству **tenantId** , которое является частью **sharepointIds** [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).
+
+## <a name="april-2020-new-in-preview-only"></a>Апрель 2020 г.: новые возможности только в предварительной версии
+
+### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
+
+Назначьте разрешенным пользователям и группам доступ к определенным [общим принтерам](/graph/api/resources/printershare?view=graph-rest-beta) Универсальной печати — облачной инфраструктуры печати Microsoft 365. Чтобы воспользоваться возможностями надежного централизованного управления печатью и предложить пользователям простой, но полнофункциональный и безопасный интерфейс печати, ознакомьтесь с [объявлением Универсальной печати](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/announcing-universal-print-a-cloud-based-print-solution/ba-p/1204775) и присоединитесь к программе по ознакомлению с предварительной версией.
+
+### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
+Обновления Intune за [апрель](changelog.md#april-2020).
+
+### <a name="groups"></a>Группы
+Определите, какое приложение создало [группу](/graph/api/resources/group?view=graph-rest-beta), по идентификатору приложения.
+
+### <a name="identity-and-access"></a>Удостоверение и доступ
+- [Отслеживание изменений](/graph/api/administrativeunit-delta?view=graph-rest-beta), касающихся [административных единиц](/graph/api/resources/administrativeunit?view=graph-rest-beta).
+- [Отслеживание изменений](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta), касающихся [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta).
+- [Управление](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta) пользовательскими [методами проверки подлинности](/graph/api/resources/authenticationmethod?view=graph-rest-beta), среди которых [пароль](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta) или [телефон](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta). Например, [сброс пароля пользователя](/graph/api/passwordauthenticationmethod-resetpassword?view=graph-rest-beta) и [получение состояния сброса](/graph/api/authenticationoperation-get?view=graph-rest-beta) или [добавление номера телефона](/graph/api/authentication-post-phonemethods?view=graph-rest-beta) пользователя для проверки подлинности с помощью SMS или голосового вызова, если для этого пользователя включена соответствующая политика.
+
+### <a name="reports--identity-and-access-reports"></a>Отчеты | Отчеты об удостоверениях и доступе
+[Список](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) [проверяющих сторон](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts), настроенных в службах федерации Active Directory.
+
+### <a name="reports--office-365-usage-reports"></a>Отчеты | Отчеты об использовании Office 365
+Просмотр данных о **созданных собраниях** и **действиях с уведомлениями о собраниях** в отчетах CSV, включающих [счетчики действий с электронной почтой](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta), [счетчики пользователей, совершающих действия с электронной почтой](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) и [данные о действиях пользователей с электронной почтой](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta).
+
 
 ## <a name="march-2020-new-and-generally-available"></a>Март 2020 г.: новые и общедоступные возможности
 
@@ -182,7 +237,7 @@ API аналитики имеет общедоступное состояние.
 - Использование разрешения приложения Group.Create для создания групп без необходимости входа пользователя.
 - Для указанной [группы](/graph/api/resources/group?view=graph-rest-1.0) [проверка участия](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) в других группах или ролях каталога.
 
-### <a name="identity-and-access"></a>Удостоверение и доступ
+### <a name="identity-and-access"></a>Идентификация и доступ
 - Регистрация [приложений](/graph/api/resources/application?view=graph-rest-1.0), проходящих проверку подлинности в Azure Active Directory (Azure AD). Используйте делегированные [разрешения](/graph/permissions-reference#application-resource-permissions), Application.Read.All и Application.ReadWrite.All, или разрешение приложения, Application.Read.All.
 - Для указанного [устройства](/graph/api/resources/device?view=graph-rest-1.0) [проверка участия](/graph/api/device-checkmemberobjects?view=graph-rest-1.0) в других группах или ролях каталога.
 
@@ -243,7 +298,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 
 ## <a name="october-2019-new-and-generally-available"></a>Октябрь 2019 г.: новые и общедоступные возможности
 
-### <a name="identity-and-access"></a>Идентификация и доступ
+### <a name="identity-and-access"></a>Удостоверение и доступ
 - Использование [контактов организации](/graph/api/resources/orgcontact?view=graph-rest-1.0) в рабочих приложениях. Контакты организации находятся под управлением администраторов организации и синхронизируются из локальной службы каталогов Active Directory или из Exchange Online.
 - Настройка [проверки подлинности на основе сертификатов](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started) в [организации](/graph/api/resources/organization?view=graph-rest-1.0).
 - Добавление и удаление [учетных данных с паролем](/graph/api/resources/passwordcredential?view=graph-rest-1.0) для [приложений](/graph/api/resources/application?view=graph-rest-1.0).
@@ -303,7 +358,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 - Новые переключатели добавлены в [соединитель безопасности Microsoft Graph](https://docs.microsoft.com/connectors/microsoftgraphsecurity/) и в [сборники схем](https://docs.microsoft.com/azure/security-center/security-center-playbooks) для логических приложений и потоков. См. [примеры сборников схем](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks).
 - Поддержка отправки [индикаторов угроз](/graph/api/resources/security-api-overview?view=graph-rest-beta#threat-indicators-preview) в Microsoft Defender ATP для блокирования или отправки оповещений об угрозах с использованием собственных источников аналитики. Интеграция с партнерами, такими как ThreatConnect, дает заказчикам возможность отправлять индикаторы непосредственно из решений аналитики угроз и автоматизации. 
 
-### <a name="notifications"></a>Уведомления
+### <a name="notifications"></a>Notifications
 - [Создание и отправка уведомлений](/graph/api/user-post-notifications?view=graph-rest-beta) всем клиентам приложения во всех конечных точках устройств, где пользователи могли войти в систему, без необходимости управлять разрешениями, делегированными пользователями.
 - [Целевые конечные точки политики](/graph/api/resources/targetpolicyendpoints?view=graph-rest-beta) в [уведомлениях](/graph/api/resources/notification?view=graph-rest-beta) пользователей позволяют целенаправленно управлять уведомлениями на платформах Windows, iOS, Android или WebPush.
 - Можно указать [политику отката](/graph/api/resources/fallbackpolicy?view=graph-rest-beta) для уведомлений для конечных точек iOS, чтобы отправлять высокоприоритетные необработанные уведомления, доставка которых на устройства другими способами может быть невозможной из-за ограничений, действующих для конкретной платформы, например, из-за использования режима экономии заряда аккумулятора.
@@ -407,7 +462,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 ### <a name="example-code-snippets"></a>Примеры фрагментов кода
 Теперь имеются фрагменты кода Objective-C для всех статей по API в справочных материалах для версии 1.0 и бета-версии. См. пример Objective-C для [получения события](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example).
 
-### <a name="group"></a>Group
+### <a name="group"></a>Группа
 - Используйте функцию [validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0), чтобы отображаемое имя или почтовый псевдоним существующей группы Office 365 соответствовали политикам именования.
 - Кроме того, перед созданием группы вы можете использовать функцию [validateProperties](/graph/api/directoryobject-validateproperties?view=graph-rest-1.0) для объекта [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), чтобы сначала проверить имена.
 
@@ -485,7 +540,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 ### <a name="group"></a>Группа
 Получите [метки конфиденциальности](/graph/api/resources/assignedlabel?view=graph-rest-beta), чтобы обеспечить защиту конфиденциальных данных группы Office 365 и выполнение политик в отношении соответствия требованиям. Эти метки являются объектами [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta), опубликованными администраторами в Центре безопасности и соответствия требованиям Microsoft 365, в рамках возможностей Microsoft Information Protection. 
 
-### <a name="identity-and-access"></a>Удостоверения и доступ
+### <a name="identity-and-access"></a>Удостоверение и доступ
 - Получите экземпляр [приложения](/graph/api/resources/applicationtemplate?view=graph-rest-beta) или добавьте экземпляр из коллекции приложений Azure AD в ваш каталог в качестве шаблона.
 - Получите журнал всех [событий подготовки](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta) каталога в клиенте.
 - Получите сведения об [обнаруженном пользователе или рисках входа в систему](/graph/api/resources/riskdetection?view=graph-rest-beta) в среде Azure AD. Эта функциональность обнаружения рисков является частью Azure AD Identity Protection (Защиты идентификации Azure AD).

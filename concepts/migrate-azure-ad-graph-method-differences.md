@@ -4,12 +4,12 @@ description: Описываются различия методов между A
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 00649e4f55a8bfcfd5354d2a75793447e3686109
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: cd9bc7ac842795d95f26ff5208f69cd3f1facb5c
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38656531"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682091"
 ---
 # <a name="method-differences-between-azure-ad-and-microsoft-graph"></a>Различия в методах между Azure AD и Microsoft Graph
 
@@ -17,13 +17,13 @@ ms.locfileid: "38656531"
 
 Кроме того, изменилось несколько методов Azure AD Graph.  Если метод **не** отображается в этом списке, он уже доступен в [версии 1.0](/graph/api/overview?view=graph-rest-1.0) для Microsoft Graph, в котором используется то же имя, что и в Azure AD Graph.
 
-|Azure AD Graph <br>метод (v 1.6) |Microsoft Graph<br>(ресурс/метод)|Примечания|
+|Azure AD Graph <br>метод (v 1.6) |Microsoft Graph<br>(ресурс/метод)|Комментарии|
 |---|---|---|
-| жетаваилабликстенсионпропертиес | бета-версия _недоступна_ <br> Версия 1.0 — _недоступна_ |  |
-| жетобжектсбйобжектид | бета&nbsp;-&nbsp;-версия каталога/жетбидс <br> v 1.0-Directory/Жетбидс | |
-| invalidateAllRefreshTokens | бета-Ревокесигнинсессионс <br> Версия 1.0 — Ревокесигнинсессионс | |
-| исмембероф | бета-версия _не запланирована_ <br> v 1.0 — _не запланировано_ | Вместо этого используйте Чеккмемберграупс. |
-| restore | &nbsp;-&nbsp;восстановление&nbsp;бета-версии (&nbsp;приложения,&nbsp;пользователи&nbsp;и группы)<br> &nbsp;-&nbsp;восстановление&nbsp;версии 1.0 (пользователи&nbsp;и&nbsp;группы) | Вы также можете просматривать удаленные приложения, пользователей и группы, а также окончательно удалять их. |
+| жетаваилабликстенсионпропертиес | бета-версия &nbsp; - &nbsp; _недоступна_ <br> Версия 1.0 &nbsp; - &nbsp; [жетаваилабликстенсионпропертиес](/graph/api/application-getavailableextensionproperties?view=graph-rest-1.0) |  |
+| жетобжектсбйобжектид | бета-версия &nbsp; - &nbsp; [директорйобжектс/жетбидс](/graph/api/directoryobject-getbyids?view=graph-rest-beta) <br> Версия 1.0 &nbsp; - &nbsp; [директорйобжектс/жетбидс](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) | |
+| invalidateAllRefreshTokens | бета- &nbsp; - &nbsp; [ревокесигнинсессионс](/graph/api/user-revokesigninsessions?view=graph-rest-beta) <br> Версия 1.0 &nbsp; - &nbsp; [ревокесигнинсессионс](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) | |
+| исмембероф | бета-версия &nbsp; - &nbsp; _не запланирована_ <br> Версия 1.0 &nbsp; - &nbsp; _не запланирована_ | Вместо этого используйте Чеккмемберграупс. |
+| restore | Восстановление бета-версии &nbsp; - &nbsp; [ &nbsp; (приложения, &nbsp; Пользователи &nbsp; и &nbsp; группы)](/graph/api/directory-deleteditems-restore?view=graph-rest-beta)<br> восстановление версии 1.0 &nbsp; - &nbsp; [ &nbsp; (приложения, &nbsp; Пользователи &nbsp; и &nbsp; группы)](/graph/api/directory-deleteditems-restore?view=graph-rest-1.0) | Вы также можете просматривать удаленные приложения, пользователей и группы, а также окончательно удалять их. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

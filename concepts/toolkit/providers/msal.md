@@ -1,18 +1,18 @@
 ---
 title: Поставщик MSAL
-description: Поставщик MSAL использует MSAL. js для входа пользователей и получения маркеров для использования с Microsoft Graph.
+description: Поставщик MSAL использует MSAL.js для входа пользователей и получения маркеров для использования с Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 84962c0df0be9012f09ba8a87e17dcd3954d6e22
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 20ed3b95d48a29886a521040b09e06934effe6c2
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43806013"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682084"
 ---
 # <a name="msal-provider"></a>Поставщик MSAL
 
-Поставщик MSAL использует [MSAL. js](https://github.com/AzureAD/microsoft-authentication-library-for-js) для входа пользователей и получения маркеров для использования с Microsoft Graph.
+Поставщик MSAL использует [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) для входа пользователей и получения маркеров для использования с Microsoft Graph.
 
 Чтобы узнать больше, ознакомьтесь со статьей [поставщики](../providers.md).
 
@@ -28,16 +28,18 @@ ms.locfileid: "43806013"
 <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"
                    login-type="redirect/popup"
                    scopes="user.read,people.read"
+                   redirect-uri="https://my.redirect/uri"
                    authority=""></mgt-msal-provider>
 ```
 
 | Атрибут | Описание |
 | --- | --- | --- |
-| Client — ID   | Идентификатор строкового клиента (см. Создание идентификатора приложения или клиента). Обязательный.|
-| Тип входа  | `redirect` Перечисление `popup` между значением и значением `redirect`по умолчанию —. Необязательное свойство. |
-| scopes  | Строки, разделенные запятыми, для областей, которые пользователь должен согласиться на вход в систему. Необязательное свойство.|
-| авторитет  | Строка Authority — значение по умолчанию — общий центр. Для приложений с одним клиентом используйте идентификатор клиента или имя клиента. Например, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` или `https://login.microsoftonline.com/[your-tenant-id]`. Необязательное свойство.|
-| зависит от | Строка выбора элемента с другим компонентом поставщика более высокого приоритета. Необязательное свойство. |
+| Client — ID   | Идентификатор строкового клиента (см. Создание идентификатора приложения или клиента). Обязательный элемент.|
+| Тип входа  | Перечисление между `redirect` `popup` значением и значением по умолчанию — `redirect` . Необязательное. |
+| scopes  | Строки, разделенные запятыми, для областей, которые пользователь должен согласиться на вход в систему. Необязательное.|
+| авторитет  | Строка Authority — значение по умолчанию — общий центр. Для приложений с одним клиентом используйте идентификатор клиента или имя клиента. Например, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` или `https://login.microsoftonline.com/[your-tenant-id]` . Необязательное.|
+| Redirect — URI  | Строка URI перенаправления — по умолчанию используется текущий URI окна. Необязательное.|
+| зависит от | Строка выбора элемента с другим компонентом поставщика более высокого приоритета. Необязательное. |
 
 ### <a name="initialize-in-javascript"></a>Инициализация в JavaScript
 
@@ -57,14 +59,16 @@ interface MsalConfig {
   clientId: string;
   scopes?: string[];
   authority?: string;
-  loginType?: LoginType;
+  redirectUri?: string;
+  loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
+  loginHint?: string
   options?: Configuration; // msal js Configuration object
 }
 ```
 
-Необходимо указать `clientId` (чтобы создать новый `UserAgentApplication`).
+Необходимо указать `clientId` (чтобы создать новый `UserAgentApplication` ).
 
-Дополнительные сведения о MSAL. js и дополнительных параметрах, которые можно использовать при инициализации библиотеки MSAL, представлены в [документации по MSAL](https://docs.microsoft.com/azure/active-directory/develop/msal-js-initializing-client-applications).
+Дополнительные сведения о MSAL.js и дополнительных параметрах, которые можно использовать при инициализации библиотеки MSAL, приведены в [документации по MSAL](https://docs.microsoft.com/azure/active-directory/develop/msal-js-initializing-client-applications).
 
 ## <a name="creating-an-appclient-id"></a>Создание идентификатора приложения или клиента
 
