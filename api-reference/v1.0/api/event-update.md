@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 167984de2c5c9d9326da38a8c0d8b774d8b8cfe3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c6e3fb6d28ee5d1b1c0fbe0a76d00ad89982f6e1
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461586"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44680987"
 ---
 # <a name="update-event"></a>Обновление события
 
@@ -61,7 +61,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |:---------------|:--------|:----------|
 |attendees|[Attendee](../resources/attendee.md)|Коллекция участников события.|
 |body|[ItemBody](../resources/itembody.md)|Текст сообщения, связанного с событием.|
-|categories|String|Категории, связанные с событием.|
+|categories|Коллекция String|Категории, связанные с событием.|
 | end|DateTimeTimeZone|Дата, время и часовой пояс завершения события.|
 |importance|String|Важность события. Допустимые значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
@@ -116,7 +116,8 @@ Content-length: 285
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
-  "isReminderOn": true
+  "isReminderOn": true,
+  "categories": ["Red category"]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
