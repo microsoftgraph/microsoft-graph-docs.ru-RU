@@ -5,12 +5,12 @@ title: Перечисление отслеживаемых сайтов
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: c08def6b72869cdc1886a71d1083dfdef51dbebd
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: f5057a91f317ae309cf899ab6daa1288c41bace0
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44052336"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682252"
 ---
 # <a name="list-followed-sites"></a>Перечисление отслеживаемых сайтов
 
@@ -35,8 +35,14 @@ ms.locfileid: "44052336"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /me/followedSites
+GET /me/followedSites
 ```
+Получение списка сайтов, за которыми следует целевой пользователь, в зависимости от его идентификатора.
+
+```http
+GET /users/{user-id}/followedSites
+```
+**Примечание:** Чтобы получить доступ к списку отслеживаемых сайтов другого пользователя, необходимы разрешения приложения.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.
@@ -51,7 +57,7 @@ POST /me/followedSites
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Этот метод возвращает коллекцию ресурсов [сайта](../resources/site.md) , которые подписаны пользователем.
 Если сайты не найдены, возвращается пустая коллекция.
@@ -65,7 +71,7 @@ POST /me/followedSites
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
 ```msgraph-interactive
-POST /me/followedSites
+GET /me/followedSites
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]

@@ -2,15 +2,15 @@
 title: Тип ресурса networkConnection
 description: Содержит сведения о состоянии сетевого подключения, связанного с оповещением.
 localization_priority: Normal
-author: ''
-ms.prod: ''
+author: chinguyen1
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 86986178bc7104118dfb4db83ae43f7780307fe6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 72fcfcd3c6849e9c8e9f05b50671e1aa611dc129
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447369"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682056"
 ---
 # <a name="networkconnection-resource-type"></a>Тип ресурса networkConnection
 
@@ -22,8 +22,9 @@ ms.locfileid: "42447369"
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|applicationName|String|Имя приложения, управляющего сетевым подключением (например, Facebook, SMTP и т. д.).|
+|applicationName|String|Имя приложения, управляющего сетевым подключением (например, Facebook или SMTP).|
 |дестинатионаддресс|String|Конечный IP-адрес (сетевого подключения).|
+|дестинатионлокатион|String|Расположение (по сопоставлению IP-адресов), связанное с назначением сетевого подключения.|
 |дестинатиондомаин|String|Часть конечного домена, в которой находится конечный URL-адрес. (например, "www.contoso.com").|
 |дестинатионпорт|String|Порт назначения (для сетевого подключения).|
 |дестинатионурл|String|URL-адрес сетевого подключения/URI-строка — без параметров. (например, "www.contoso.com/products/default.html")|
@@ -34,9 +35,10 @@ ms.locfileid: "42447369"
 |натдестинатионпорт|String|Порт назначения преобразования сетевых адресов.|
 |натсаурцеаддресс|String|IP-адрес источника преобразования сетевых адресов.|
 |натсаурцепорт|String|Порт источника преобразования сетевых адресов.|
-|Protocol|[securityNetworkProtocol](securitynetworkprotocol.md)|Сетевой протокол. Возможные `unknown`значения:, `ip`, `icmp`, `igmp` `ggp` `ipv4` `tcp` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `raw` `ipx` `spx` `spxII`,,,,,,, `ipv6FragmentHeader`,,,,,,,,,,,,,,,,,,. `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader`|
+|Protocol|[securityNetworkProtocol](securitynetworkprotocol.md)|Сетевой протокол. Возможные значения:,,,,,,,,,,, `unknown` `ip` `icmp` `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader` , `ipSecEncapsulatingSecurityPayload` , `ipSecAuthenticationHeader` , `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `raw` `ipx` `spx` `spxII` ,,,,,,,,,,,,,,.|
 |riskScore|String|Созданный поставщиком/вычисляемый показатель риска для сетевого подключения. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 |саурцеаддресс|String|Источник (то есть источник) IP-адрес сетевого подключения.|
+|sourceLocation|String|Расположение (по сопоставлению IP-адресов), связанное с источником сетевого подключения.|
 |саурцепорт|String|Исходный (то есть источник) IP-порт (сетевого подключения).|
 |status|connectionStatus|Состояние сетевого подключения. Возможные значения: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
 |урлпараметерс|String|Параметры (суффикс) конечного URL-адреса.|
@@ -57,6 +59,7 @@ ms.locfileid: "42447369"
 {
   "applicationName": "String",
   "destinationAddress": "String",
+  "destinationLocation": "String",
   "destinationDomain": "String",
   "destinationPort": "String",
   "destinationUrl": "String",
@@ -70,6 +73,7 @@ ms.locfileid: "42447369"
   "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
   "riskScore": "String",
   "sourceAddress": "String",
+  "sourceLocation": "String",
   "sourcePort": "String",
   "status": "@odata.type: microsoft.graph.connectionStatus",
   "urlParameters": "String"

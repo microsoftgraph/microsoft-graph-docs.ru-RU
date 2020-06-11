@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 987d0d691bef1b5e9aa2a1e1500a8be74c67d8e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fe4db80727bc2af3dc3e1d41be6d4207ffacf96d
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518688"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682155"
 ---
 # <a name="call-recordresponse"></a>Call: Рекордреспонсе
 
@@ -53,16 +53,16 @@ POST /communications/calls/{id}/recordResponse
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |выдан|Коллекция [медиапромпт](../resources/mediaprompt.md) | Приглашения для воспроизведения. Максимальный поддерживаемый размер коллекции Медиапромпт составляет 1.|
-|баржеиналловед|Boolean| Если этот параметр имеет значение true, запрос Рекордреспонсе будет барже в другие существующие запросы записи или плайпромпт в очереди. Значение по умолчанию = false. |
+|баржеиналловед|Логический| Если этот параметр имеет значение true, запрос Рекордреспонсе будет барже в другие существующие запросы записи или плайпромпт в очереди. Значение по умолчанию = false. |
 |инитиалсиленцетимеаутинсекондс | Int32| Максимальное значение параметра "тишина" (тишина пользователя) разрешено с момента запуска операции записи ответа до истечения времени ожидания и сбоев операции. При воспроизведении приглашения этот таймер запускается после завершения приглашения. Значение по умолчанию = 5 секунд, минимум = 1 секунда, максимум = 120 секунд |
 |макссиленцетимеаутинсекондс|Int32| Максимально допустимое время тишины (пауза) после начала диктовки пользователя. Значение по умолчанию = 5 секунд, минимум = 1 секунда, максимум = 120 секунд.|
 |максрекорддуратионинсекондс|Int32| Максимальная длительность операции Рекордреспонсе перед остановкой записи. Значение по умолчанию = 5 секунд, минимум = 1 секунда, максимум = 120 секунд.|
-|плайбип|Boolean| Если этот параметр имеет значение true, воспроизводит звуковой сигнал, указывающий пользователю, что он может начать запись сообщения. Значение по умолчанию = true.|
+|плайбип|Логический| Если этот параметр имеет значение true, воспроизводит звуковой сигнал, указывающий пользователю, что он может начать запись сообщения. Значение по умолчанию = true.|
 |стоптонес|Коллекция объектов string|Остановка заданных тонов в конец записи.|
 |Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
-## <a name="response"></a>Ответ
-Этот метод возвращает код `200 OK` отклика и заголовок Location с URI для [рекордоператион](../resources/recordoperation.md) , созданного для этого запроса.
+## <a name="response"></a>Отклик
+Этот метод возвращает `200 OK` код отклика и заголовок Location с URI для [рекордоператион](../resources/recordoperation.md) , созданного для этого запроса.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -106,11 +106,23 @@ Content-Length: 394
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-recordresponse-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-recordresponse-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-recordresponse-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-recordresponse-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>Отклик
-Ниже показан пример ответа.
+Ниже показан пример отклика.
 
 > **Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

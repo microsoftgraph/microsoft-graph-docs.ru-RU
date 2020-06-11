@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c009cb4a608c14a3fab0a81891ecd290251cb3ea
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 2c78b205ceb35ca7d663830d201b64b26db45d46
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "35705140"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684866"
 ---
 ```csharp
 
@@ -15,7 +15,10 @@ var plannerAssignedToTaskBoardTaskFormat = new PlannerAssignedToTaskBoardTaskFor
 {
     OrderHintsByAssignee = new PlannerOrderHintsByAssignee
     {
-        Aaa27244-1db4-476a-a5cb-004607466324 = "8566473P 957764Jk!"
+        AdditionalData = new Dictionary<string, object>()
+        {
+            {"aaa27244-1db4-476a-a5cb-004607466324", "8566473P 957764Jk!"}
+        }
     }
 };
 

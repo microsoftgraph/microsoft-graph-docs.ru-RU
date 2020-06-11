@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: b33a360bc41eafde3315a28142ee02bc776fbb29
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: d6f8ed14ecc521b60bc6a3ff2ad620e2fe43f8b5
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35722895"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683670"
 ---
 ```csharp
 
@@ -14,10 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var groups = await graphClient.Groups
     .Request()
     .Filter("hasMembersWithLicenseErrors+eq+true,")
-    .Select( e => new {
-             e.Id,
-             e.DisplayName 
-             })
+    .Select("id,displayName")
     .GetAsync();
 
 ```

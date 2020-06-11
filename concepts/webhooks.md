@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 562eaccdd776ed22a4e171f6c0107f83be6acaab
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: d3a2e12a37035f6b89499e73615441dc1514c139
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44524255"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682098"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -190,15 +190,16 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 ## <a name="change-notifications"></a>Уведомления об изменениях
 
-Клиент начинает получать уведомления об изменениях после создания подписки. При изменении ресурса Microsoft Graph отправляет запрос POST на URL-адрес уведомлений. Уведомления об изменениях отправляются только для изменений типа, указанного в подписке, например `created` .
+Если клиент выполняет подписку на изменения ресурса, Microsoft Graph отправляет `POST` запрос на URL-адрес уведомлений при каждом изменении ресурса. Он отправляет уведомления только для тех изменений типа, которые указаны в подписке, например `created` .
 
-> **Примечание:** При использовании нескольких подписок, отслеживающих один и тот же тип ресурса и использующих одинаковый URL-адрес уведомлений, можно отправить сообщение POST, которое будет содержать несколько уведомлений об изменении с разными идентификаторами подписки. Нет гарантии того, что все уведомления об изменениях в записи будут относиться к одной подписке.
+> **Примечание:** Если клиент имеет несколько подписок, контролирующих один и тот же URL-адрес уведомления, Microsoft Graph может отправлять несколько уведомлений об изменениях, соответствующих разным подпискам, каждый из которых отображает соответствующий идентификатор подписки. Нет гарантии, что все уведомления об изменениях в `POST` запросе принадлежат одной подписке.
 
 ### <a name="change-notification-example"></a>Пример уведомления об изменении
 
-> **Примечание:** полное описание данных, отправленных при доставке уведомлений об изменении, приведено в разделе [чанженотификатионколлектион](/graph/api/resources/changenotificationcollection).
+В этом разделе представлен пример уведомления для создания сообщения. Когда пользователь получает электронное письмо, Microsoft Graph отправляет уведомление об изменении, как показано в следующем примере.
+Обратите внимание, что уведомление представлено в коллекции, представленной в `value` поле. Сведения о полезных данных уведомления можно найти в [чанженотификатионколлектион](/graph/api/resources/changenotificationcollection) . 
 
-Когда пользователь получает электронное письмо, Microsoft Graph отправляет уведомление об изменении, как показано ниже:
+При возникновении большого количества изменений Microsoft Graph может отправлять несколько уведомлений, соответствующих разным подпискам в одном `POST` запросе.
 
 ```json
 {
@@ -206,29 +207,27 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
     {
       "id": "lsgTZMr9KwAAA",
       "sequenceNumber": 10,
-      "subscriptionId":"<subscription_guid>",
+      "subscriptionId":"{subscription_guid}",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",
       "changeType":"created",
-      "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
+      "resource":"users/{user_guid}@{tenant_guid}/messages/{long_id_string}",
       "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
-        "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
+        "@odata.id":"Users/{user_guid}@{tenant_guid}/Messages/{long_id_string}",
         "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
-        "id":"<long_id_string>"
+        "id":"{long_id_string}"
       }
     }
   ]
 }
 ```
 
-> **Note:** `value` поле является массивом объектов. Когда в очередь помещаются много уведомлений об изменении, Microsoft Graph может отправить несколько элементов в один запрос. Уведомления об изменениях из разных подписок можно включить в один запрос.
-
 ### <a name="processing-the-change-notification"></a>Обработка уведомления об изменении
 
-Каждое уведомление об изменении, получаемое приложением, должно обрабатываться. Ниже приведены минимальные задачи, которые приложение должно выполнить для обработки уведомления об изменении.
+Процесс должен обрабатывать каждое уведомление об изменении, которое он получает. Ниже приведены минимальные задачи, которые приложение должно выполнить для обработки уведомления об изменении.
 
 1. Отправьте код состояния `202 - Accepted` в ответе, предназначенном Microsoft Graph. Если Microsoft Graph не получает код класса 2xx, он попытается опубликовать уведомление об изменении несколько раз в течение 4 часов; После этого уведомление об изменении будет удалено и не будет доставлено.
 
@@ -262,6 +261,8 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 - [Тип ресурса subscription](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [Получение подписки](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Создание подписки](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- Тип ресурса [чанженотификатион](/graph/api/resources/changenotification?view=graph-rest-beta)
+- Тип ресурса [чанженотификатионколлектион](/graph/api/resources/changenotificationcollection?view=graph-rest-beta)
 - [Учебник по уведомлениям об изменениях](/graph/tutorials/change-notifications)
 - [Уведомления в жизненном цикле (Предварительная версия)](/graph/concepts/webhooks-outlook-authz.md)
 
