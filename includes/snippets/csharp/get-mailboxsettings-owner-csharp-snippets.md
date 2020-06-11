@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e1471757657a4cb5a9d10b1dbe3015ca36c7fb50
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 3ed3eaf38bb87a4efca309807500b709bb69c02b
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774885"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44685188"
 ---
 ```csharp
 
@@ -13,9 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var users = await graphClient.Users["AlexW@contoso.OnMicrosoft.com"]
     .Request()
-    .Select( e => new {
-             e.MailboxSettings 
-             })
+    .Select("MailboxSettings")
     .GetAsync();
 
 var mailboxSettings = users.MailboxSettings;
