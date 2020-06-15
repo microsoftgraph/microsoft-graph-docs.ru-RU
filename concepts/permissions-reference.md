@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: f2985bec835f5390ec74b8dc3e126a2447025310
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 662c79bb10dc348676aecd09d1bc247bcd793aa3
+ms.sourcegitcommit: d6374f42bee4de11fd7a3d0d8c2a7f8c4e7739bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682014"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44710645"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -1581,7 +1581,7 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 
 ---
 
-## <a name="team-permissions"></a>Разрешения для группы
+## <a name="teams-permissions"></a>Разрешения Teams
 
 
 #### <a name="delegated-permissions"></a>Делегированные разрешения
