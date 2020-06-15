@@ -11102,7 +11102,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -11342,8 +11342,9 @@ items:
               - name: Получение размещенного контента
                 href: api/chatmessagehostedcontent-get.md
           - name: Каталог приложений
-            href: resources/teamsapp.md
             items:
+              - name: Приложение в каталоге
+                href: resources/teamsapp.md
               - name: Публикация приложения в каталоге
                 href: api/teamsapp-publish.md
               - name: Список приложений в каталоге
