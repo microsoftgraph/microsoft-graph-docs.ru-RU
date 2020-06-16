@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 920ad77383eaec5a3bf90d5960c8ca79c411dbca
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 36a2e70ae8ab0183ffa25ca0c6e97cb1fa10c3b6
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43806224"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744095"
 ---
 # <a name="create-unifiedroleassignment"></a>Создание Унифиедролеассигнмент
 
@@ -46,9 +46,9 @@ POST /roleManagement/directory/roleAssignments
 
 ## <a name="request-body"></a>Тело запроса
 
-В тексте запроса добавьте представление объекта [унифиедролеассигнмент](../resources/unifiedroleassignment.md) в формате JSON. В запросе должна быть область, определенная в Azure AD, например `directoryScopeId`, или область, зависящая от `appScopeId`приложения, например. Примеры областей Azure AD: клиент ("/"), административные единицы или приложения. Дополнительные сведения см. в разделе [аппскопе](../resources/appscope.md).
+В тексте запроса добавьте представление объекта [унифиедролеассигнмент](../resources/unifiedroleassignment.md) в формате JSON. В запросе должна быть область, определенная в Azure AD, например `directoryScopeId` , или область, зависящая от приложения, например `appScopeId` . Примеры областей Azure AD: клиент ("/"), административные единицы или приложения. Дополнительные сведения см. в разделе [аппскопе](../resources/appscope.md).
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [унифиедролеассигнмент](../resources/unifiedroleassignment.md) в тексте отклика.
 
@@ -139,7 +139,7 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
     "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1", //template id of User Account Administrator
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScopeId": "5d107bba-d8e2-4e13-b6ae-884be90e5d1a" //object id of an administrative unit
+    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a" //object id of an administrative unit
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -178,7 +178,7 @@ Content-type: application/json
     "id": "BH21sHQtUEyvox7IA_Eu_mm3jqnUe4lEhvatluHIWb7-1",
     "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScopeId": "5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
+    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
 }
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 3e9873d8def179bfdbe8d77767d5a521af5cebf3
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: e199e2c9fa0240eda593843d88490e7f22b0f506
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353261"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744082"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -143,6 +143,7 @@ Content-type: application/json
 |Список|sites/{site-id}/lists/{list-id}|
 |Оповещение безопасности|security/alerts?$filter=status eq ‘New’|
 |Записи звонков|связь/Каллрекордс|
+|[Сообщение чата](../resources/chatmessage.md) | Chats/{ID}/messages, Chats/Аллмессажес, Teams/{ID}/channels/{ID}/messages, Teams/Аллмессажес |
 
 ### <a name="response"></a>Отклик
 
