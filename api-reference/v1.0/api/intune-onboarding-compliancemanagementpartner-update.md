@@ -1,0 +1,158 @@
+---
+title: Обновление Комплианцеманажементпартнер
+description: Обновление свойств объекта Комплианцеманажементпартнер.
+author: dougeby
+localization_priority: Normal
+ms.prod: Intune
+doc_type: apiPageType
+ms.openlocfilehash: 9574c2ddaacb60f9c41ea73608445de93365cb6e
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744171"
+---
+# <a name="update-compliancemanagementpartner"></a>Обновление Комплианцеманажементпартнер
+
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+
+Обновление свойств объекта [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) .
+
+## <a name="prerequisites"></a>Необходимые компоненты
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartnerId}
+```
+
+## <a name="request-headers"></a>Заголовки запроса
+|Заголовок|Значение|
+|:---|:---|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
+
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) в формате JSON.
+
+В следующей таблице приведены свойства, необходимые при создании [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md).
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|id|String|Идентификатор объекта|
+|lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пакета пульса после того, как администратор направил соответствие партнеру управления соответствием|
+|partnerState|[девицеманажементпартнертенантстате](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
+|displayName|Строка|Отображаемое имя партнера|
+|макосонбоардед|Boolean|Партнер, подключенный к устройствам Mac.|
+|андроидонбоардед|Boolean|Партнер, направленный на устройства с Android.|
+|иосонбоардед|Boolean|Партнер, подключенный к устройствам iOS.|
+|макосенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Mac через партнера.|
+|андроиденроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства с Android через партнера.|
+|иосенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства с iOS через партнера.|
+
+
+
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте отклика.
+
+## <a name="example"></a>Пример
+
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+``` http
+PATCH https://graph.microsoft.com/v1.0/deviceManagement/complianceManagementPartners/{complianceManagementPartnerId}
+Content-type: application/json
+Content-length: 982
+
+{
+  "@odata.type": "#microsoft.graph.complianceManagementPartner",
+  "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
+  "partnerState": "unavailable",
+  "displayName": "Display Name value",
+  "macOsOnboarded": true,
+  "androidOnboarded": true,
+  "iosOnboarded": true,
+  "macOsEnrollmentAssignments": [
+    {
+      "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ],
+  "androidEnrollmentAssignments": [
+    {
+      "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ],
+  "iosEnrollmentAssignments": [
+    {
+      "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ]
+}
+```
+
+### <a name="response"></a>Отклик
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 1031
+
+{
+  "@odata.type": "#microsoft.graph.complianceManagementPartner",
+  "id": "d6d46d0d-6d0d-d6d4-0d6d-d4d60d6dd4d6",
+  "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
+  "partnerState": "unavailable",
+  "displayName": "Display Name value",
+  "macOsOnboarded": true,
+  "androidOnboarded": true,
+  "iosOnboarded": true,
+  "macOsEnrollmentAssignments": [
+    {
+      "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ],
+  "androidEnrollmentAssignments": [
+    {
+      "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ],
+  "iosEnrollmentAssignments": [
+    {
+      "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ]
+}
+```
+
+
+
