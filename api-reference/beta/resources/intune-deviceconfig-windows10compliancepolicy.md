@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed945d93b88c024116277d6744c7c815fa98b1f0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 777bac83cf84c251a0f2e8009f3254ee8f8fa2c3
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383338"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44788173"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>Тип ресурса windows10CompliancePolicy
 
@@ -37,7 +37,7 @@ ms.locfileid: "43383338"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
@@ -75,6 +75,7 @@ ms.locfileid: "43383338"
 |deviceThreatProtectionRequiredSecurityLevel|[девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Потребовать минимального уровня риска для защиты от угроз для отчетов о несоответствии. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |конфигуратионманажеркомплианцерекуиред|Boolean|Необходимо учитывать состояние соответствия SCCM в отношении состояния соответствия Intune.|
 |тпмрекуиред|Boolean|Требуется наличие доверенного платформенного модуля (TPM).|
+|девицекомплианцеполицискрипт|[девицекомплианцеполицискрипт](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|Н/Д|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -144,7 +145,12 @@ ms.locfileid: "43383338"
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
   "configurationManagerComplianceRequired": true,
-  "tpmRequired": true
+  "tpmRequired": true,
+  "deviceCompliancePolicyScript": {
+    "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
+    "deviceComplianceScriptId": "String",
+    "rulesContent": "binary"
+  }
 }
 ```
 

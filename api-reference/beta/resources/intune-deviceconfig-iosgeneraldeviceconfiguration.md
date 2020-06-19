@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ed5f1688b82196883887b558ea5f74d6018e478
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c73743b5e2091171f6eb0671dc954ec874d51551
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455257"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44788089"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>Тип ресурса iosGeneralDeviceConfiguration
 
@@ -39,7 +39,7 @@ ms.locfileid: "43455257"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -91,7 +91,7 @@ ms.locfileid: "43455257"
 |documentsBlockUnmanagedDocumentsInManagedApps|Boolean|Указывает, следует ли запретить пользователю просматривать неуправляемые документы в управляемых приложениях.|
 |emailInDomainSuffixes|Коллекция String|Адрес электронной почты без суффикса, соответствующего одной из этих строк, будет считаться внешним.|
 |enterpriseAppBlockTrust|Boolean|Указывает, следует ли запретить пользователю подтверждать доверие корпоративному приложению.|
-|enterpriseAppBlockTrustModification|Boolean|\[Нерекомендуемая\] Настройка этого параметра и установка для этого параметра значения "true" не оказывает никакого действия на устройстве.|
+|enterpriseAppBlockTrustModification|Boolean|\[Нерекомендуемая \] Настройка этого параметра и установка для этого параметра значения "true" не оказывает никакого действия на устройстве.|
 |есимблоккмодификатион|Boolean|Указывает, следует ли разрешить добавление или удаление планов сотовой связи на eSIM контролируемого устройства.|
 |faceTimeBlocked|Boolean|Указывает, следует ли запретить использовать FaceTime. Для iOS 13 и более поздних версий требуется контролируемое устройство.|
 |findMyFriendsBlocked|Boolean|Указывает, следует ли заблокировать изменения для поиска друзей, когда устройство находится в защищенном режиме.|
@@ -181,7 +181,7 @@ ms.locfileid: "43455257"
 |safariBlockPopups|Boolean|Указывает, следует ли блокировать всплывающие окна в Safari.|
 |safariBlocked|Boolean|Указывает, следует ли запретить использовать Safari. Для iOS 13 и более поздних версий требуется контролируемое устройство.|
 |safariCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Настройки файлов cookie для Safari. Возможные значения: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
-|safariManagedDomains|Коллекция объектов string|URL-адреса, соответствующие приведенным здесь шаблонам, будут считаться управляемыми.|
+|safariManagedDomains|Коллекция String|URL-адреса, соответствующие приведенным здесь шаблонам, будут считаться управляемыми.|
 |safariPasswordAutoFillDomains|Коллекция String|Пользователи могут сохранять пароли в Safari только с URL-адресов, соответствующих приведенным здесь шаблонам. Применяется к устройствам в защищенном режиме (iOS 9.3 и более поздних версий).|
 |safariRequireFraudWarning|Boolean|Указывает, обязательно ли предупреждение о мошенничестве в Safari.|
 |screenCaptureBlocked|Boolean|Указывает, следует ли запретить пользователю делать снимки экрана.|
@@ -223,6 +223,7 @@ ms.locfileid: "43455257"
 |финдмидевицеинфиндмяппблоккед|Boolean|Указывает, следует ли заблокировать Поиск устройства, когда устройство защищено (iOS 13 или более поздней версии).|
 |финдмифриендсинфиндмяппблоккед|Boolean|Указывает, следует ли заблокировать "найти друзей", когда устройство защищено (iOS 13 или более поздней версии).|
 |итунесблоккед|Boolean|Указывает, следует ли заблокировать приложение iTunes. Для iOS 13 и более поздних версий требуется контролируемое устройство.|
+|шареддевицеблокктемпорарисессионс|Boolean|Указывает, следует ли заблокировать временные сеансы на общем iPad (iOS 13,4 или более поздней версии).|
 |киоскмодеапптипе|[иоскиоскмодеапптипе](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Тип приложения, которое будет запускаться в режиме киоска. Возможные значения: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 ## <a name="relationships"></a>Связи
@@ -534,6 +535,7 @@ ms.locfileid: "43455257"
   "findMyDeviceInFindMyAppBlocked": true,
   "findMyFriendsInFindMyAppBlocked": true,
   "iTunesBlocked": true,
+  "sharedDeviceBlockTemporarySessions": true,
   "kioskModeAppType": "String"
 }
 ```

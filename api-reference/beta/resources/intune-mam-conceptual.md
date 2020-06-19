@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e436e32fd235128e57f96fbf916a9d51c4206e64
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: ceb14a8ee5f1504a9e3bb0d0bc5ebef59f1eac06
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178894"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44788726"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -48,6 +48,7 @@ ms.locfileid: "44178894"
 - [Причина пометки управляемого приложения](intune-mam-managedappflaggedreason.md)
 - [Ограничение на уведомления управляемого приложения](intune-mam-managedappnotificationrestriction.md)
 - [Операция управляемых приложений](intune-mam-managedappoperation.md)
+- [Уровень перенаправления для номера телефона управляемого приложения](intune-mam-managedappphonenumberredirectlevel.md)
 - [Набор символов ПИН-кода управляемого приложения](intune-mam-managedapppincharacterset.md)
 - [Политика управляемых приложений](intune-mam-managedapppolicy.md)
 - [Сводка по развертыванию политик для управляемых приложений](intune-mam-managedapppolicydeploymentsummary.md)

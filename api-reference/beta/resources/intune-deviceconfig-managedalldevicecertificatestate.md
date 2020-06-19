@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf190cae98f86fa3361255ebe1632089dd94b70d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3f6bd2a1511ea51962c67bee0be88b11c3579e3a
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437334"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790105"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>Тип ресурса Манажедаллдевицецертификатестате
 
@@ -46,6 +46,7 @@ ms.locfileid: "43437334"
 |цертификатекэйусажес|Int32|Использование ключа|
 |цертификатикстендедкэйусажес|String|Расширенное использование ключа|
 |цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
+|цертификатеревокестатусластчанжедатетиме|DateTimeOffset|Время последнего изменения состояния отзыва|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -72,7 +73,8 @@ ms.locfileid: "43437334"
   "certificateSubjectName": "String",
   "certificateKeyUsages": 1024,
   "certificateExtendedKeyUsages": "String",
-  "certificateIssuanceDateTime": "String (timestamp)"
+  "certificateIssuanceDateTime": "String (timestamp)",
+  "certificateRevokeStatusLastChangeDateTime": "String (timestamp)"
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 65ec840aaab89ee3558ee2882c5c3ed048f4c65a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 35ffae18d564ccda9d54599833195ea845d654f4
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383184"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44788061"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>Тип ресурса resetPasscodeActionResult
 
@@ -33,6 +33,7 @@ ms.locfileid: "43383184"
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |passcode|String|Новый секретный код для устройства |
+|errorCode|Int32|Код ошибки действия Ротатебитлоккеркэйс. Допустимые значения — от 0 до 2147483647|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -51,7 +52,8 @@ ms.locfileid: "43383184"
   "actionState": "String",
   "startDateTime": "String (timestamp)",
   "lastUpdatedDateTime": "String (timestamp)",
-  "passcode": "String"
+  "passcode": "String",
+  "errorCode": 1024
 }
 ```
 

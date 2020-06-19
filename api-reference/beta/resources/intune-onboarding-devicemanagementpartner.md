@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ded5ca40f2dbc37dabef915793bcf8f9c6c872c6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 652e6671b46570d418bc7669d93ec69a37a31b79
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455667"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44788894"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>Тип ресурса deviceManagementPartner
 
@@ -76,7 +76,9 @@ ms.locfileid: "43455667"
     {
       "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String"
       }
     }
   ]
