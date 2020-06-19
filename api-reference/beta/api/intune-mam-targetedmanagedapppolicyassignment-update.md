@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b042361ef684c09d59ecb44934391118bfc841d5
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 923b0a6e26e13a8a8b51998ad027ecb7276dd8f8
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178348"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791905"
 ---
-# <a name="update-targetedmanagedapppolicyassignment"></a><span data-ttu-id="68bf8-103">Обновление объекта targetedManagedAppPolicyAssignment</span><span class="sxs-lookup"><span data-stu-id="68bf8-103">Update targetedManagedAppPolicyAssignment</span></span>
+# <a name="update-targetedmanagedapppolicyassignment"></a><span data-ttu-id="aebdc-103">Обновление объекта targetedManagedAppPolicyAssignment</span><span class="sxs-lookup"><span data-stu-id="aebdc-103">Update targetedManagedAppPolicyAssignment</span></span>
 
-<span data-ttu-id="68bf8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="68bf8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="aebdc-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="aebdc-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="68bf8-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="68bf8-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="aebdc-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="aebdc-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="68bf8-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="68bf8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="aebdc-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="aebdc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="68bf8-107">Обновление свойств объекта [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md).</span><span class="sxs-lookup"><span data-stu-id="68bf8-107">Update the properties of a [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) object.</span></span>
+<span data-ttu-id="aebdc-107">Обновление свойств объекта [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md).</span><span class="sxs-lookup"><span data-stu-id="aebdc-107">Update the properties of a [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="68bf8-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="68bf8-108">Prerequisites</span></span>
-<span data-ttu-id="68bf8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="68bf8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="aebdc-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="aebdc-108">Prerequisites</span></span>
+<span data-ttu-id="aebdc-109">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="aebdc-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="aebdc-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aebdc-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="68bf8-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="68bf8-111">Permission type</span></span>|<span data-ttu-id="68bf8-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="68bf8-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="aebdc-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="aebdc-111">Permission type</span></span>|<span data-ttu-id="aebdc-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="aebdc-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="68bf8-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="68bf8-113">Delegated (work or school account)</span></span>|<span data-ttu-id="68bf8-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="68bf8-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="68bf8-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="68bf8-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="68bf8-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="68bf8-116">Not supported.</span></span>|
-|<span data-ttu-id="68bf8-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="68bf8-117">Application</span></span>|<span data-ttu-id="68bf8-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="68bf8-118">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="aebdc-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="aebdc-113">Delegated (work or school account)</span></span>|<span data-ttu-id="aebdc-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aebdc-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="aebdc-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="aebdc-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="aebdc-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="aebdc-116">Not supported.</span></span>|
+|<span data-ttu-id="aebdc-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="aebdc-117">Application</span></span>|<span data-ttu-id="aebdc-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aebdc-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="68bf8-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="68bf8-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aebdc-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="aebdc-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -44,60 +44,64 @@ PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformat
 PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/assignments/{targetedManagedAppPolicyAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="68bf8-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="68bf8-120">Request headers</span></span>
-|<span data-ttu-id="68bf8-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="68bf8-121">Header</span></span>|<span data-ttu-id="68bf8-122">Значение</span><span class="sxs-lookup"><span data-stu-id="68bf8-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="aebdc-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="aebdc-120">Request headers</span></span>
+|<span data-ttu-id="aebdc-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="aebdc-121">Header</span></span>|<span data-ttu-id="aebdc-122">Значение</span><span class="sxs-lookup"><span data-stu-id="aebdc-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="68bf8-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="68bf8-123">Authorization</span></span>|<span data-ttu-id="68bf8-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="68bf8-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="68bf8-125">Accept</span><span class="sxs-lookup"><span data-stu-id="68bf8-125">Accept</span></span>|<span data-ttu-id="68bf8-126">application/json</span><span class="sxs-lookup"><span data-stu-id="68bf8-126">application/json</span></span>|
+|<span data-ttu-id="aebdc-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="aebdc-123">Authorization</span></span>|<span data-ttu-id="aebdc-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="aebdc-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="aebdc-125">Accept</span><span class="sxs-lookup"><span data-stu-id="aebdc-125">Accept</span></span>|<span data-ttu-id="aebdc-126">application/json</span><span class="sxs-lookup"><span data-stu-id="aebdc-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="68bf8-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="68bf8-127">Request body</span></span>
-<span data-ttu-id="68bf8-128">В теле запроса добавьте представление объекта [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="68bf8-128">In the request body, supply a JSON representation for the [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="aebdc-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="aebdc-127">Request body</span></span>
+<span data-ttu-id="aebdc-128">В теле запроса добавьте представление объекта [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="aebdc-128">In the request body, supply a JSON representation for the [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) object.</span></span>
 
-<span data-ttu-id="68bf8-129">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md).</span><span class="sxs-lookup"><span data-stu-id="68bf8-129">The following table shows the properties that are required when you create the [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md).</span></span>
+<span data-ttu-id="aebdc-129">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md).</span><span class="sxs-lookup"><span data-stu-id="aebdc-129">The following table shows the properties that are required when you create the [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md).</span></span>
 
-|<span data-ttu-id="68bf8-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="68bf8-130">Property</span></span>|<span data-ttu-id="68bf8-131">Тип</span><span class="sxs-lookup"><span data-stu-id="68bf8-131">Type</span></span>|<span data-ttu-id="68bf8-132">Описание</span><span class="sxs-lookup"><span data-stu-id="68bf8-132">Description</span></span>|
+|<span data-ttu-id="aebdc-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="aebdc-130">Property</span></span>|<span data-ttu-id="aebdc-131">Тип</span><span class="sxs-lookup"><span data-stu-id="aebdc-131">Type</span></span>|<span data-ttu-id="aebdc-132">Описание</span><span class="sxs-lookup"><span data-stu-id="aebdc-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="68bf8-133">id</span><span class="sxs-lookup"><span data-stu-id="68bf8-133">id</span></span>|<span data-ttu-id="68bf8-134">Строка</span><span class="sxs-lookup"><span data-stu-id="68bf8-134">String</span></span>|<span data-ttu-id="68bf8-135">Id</span><span class="sxs-lookup"><span data-stu-id="68bf8-135">Id</span></span>|
-|<span data-ttu-id="68bf8-136">target</span><span class="sxs-lookup"><span data-stu-id="68bf8-136">target</span></span>|[<span data-ttu-id="68bf8-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="68bf8-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="68bf8-138">Идентификатор для развертывания в группе или приложении</span><span class="sxs-lookup"><span data-stu-id="68bf8-138">Identifier for deployment to a group or app</span></span>|
-|<span data-ttu-id="68bf8-139">source</span><span class="sxs-lookup"><span data-stu-id="68bf8-139">source</span></span>|[<span data-ttu-id="68bf8-140">deviceAndAppManagementAssignmentSource</span><span class="sxs-lookup"><span data-stu-id="68bf8-140">deviceAndAppManagementAssignmentSource</span></span>](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|<span data-ttu-id="68bf8-141">Тип ресурса, используемого для развертывания в группу, Direct или в упаковке/набор политик.</span><span class="sxs-lookup"><span data-stu-id="68bf8-141">Type of resource used for deployment to a group, direct or parcel/policySet.</span></span> <span data-ttu-id="68bf8-142">Возможные значения: `direct`, `policySets`.</span><span class="sxs-lookup"><span data-stu-id="68bf8-142">Possible values are: `direct`, `policySets`.</span></span>|
-|<span data-ttu-id="68bf8-143">Идентификатор</span><span class="sxs-lookup"><span data-stu-id="68bf8-143">sourceId</span></span>|<span data-ttu-id="68bf8-144">Строка</span><span class="sxs-lookup"><span data-stu-id="68bf8-144">String</span></span>|<span data-ttu-id="68bf8-145">Идентификатор ресурса, используемого для развертывания в группе</span><span class="sxs-lookup"><span data-stu-id="68bf8-145">Identifier for resource used for deployment to a group</span></span>|
+|<span data-ttu-id="aebdc-133">id</span><span class="sxs-lookup"><span data-stu-id="aebdc-133">id</span></span>|<span data-ttu-id="aebdc-134">String</span><span class="sxs-lookup"><span data-stu-id="aebdc-134">String</span></span>|<span data-ttu-id="aebdc-135">Id</span><span class="sxs-lookup"><span data-stu-id="aebdc-135">Id</span></span>|
+|<span data-ttu-id="aebdc-136">target</span><span class="sxs-lookup"><span data-stu-id="aebdc-136">target</span></span>|[<span data-ttu-id="aebdc-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="aebdc-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="aebdc-138">Идентификатор для развертывания в группе или приложении</span><span class="sxs-lookup"><span data-stu-id="aebdc-138">Identifier for deployment to a group or app</span></span>|
+|<span data-ttu-id="aebdc-139">source</span><span class="sxs-lookup"><span data-stu-id="aebdc-139">source</span></span>|[<span data-ttu-id="aebdc-140">deviceAndAppManagementAssignmentSource</span><span class="sxs-lookup"><span data-stu-id="aebdc-140">deviceAndAppManagementAssignmentSource</span></span>](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|<span data-ttu-id="aebdc-141">Тип ресурса, используемого для развертывания в группу, Direct или в упаковке/набор политик.</span><span class="sxs-lookup"><span data-stu-id="aebdc-141">Type of resource used for deployment to a group, direct or parcel/policySet.</span></span> <span data-ttu-id="aebdc-142">Возможные значения: `direct`, `policySets`.</span><span class="sxs-lookup"><span data-stu-id="aebdc-142">Possible values are: `direct`, `policySets`.</span></span>|
+|<span data-ttu-id="aebdc-143">Идентификатор</span><span class="sxs-lookup"><span data-stu-id="aebdc-143">sourceId</span></span>|<span data-ttu-id="aebdc-144">String</span><span class="sxs-lookup"><span data-stu-id="aebdc-144">String</span></span>|<span data-ttu-id="aebdc-145">Идентификатор ресурса, используемого для развертывания в группе</span><span class="sxs-lookup"><span data-stu-id="aebdc-145">Identifier for resource used for deployment to a group</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="68bf8-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="68bf8-146">Response</span></span>
-<span data-ttu-id="68bf8-147">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="68bf8-147">If successful, this method returns a `200 OK` response code and an updated [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="aebdc-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="aebdc-146">Response</span></span>
+<span data-ttu-id="aebdc-147">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="aebdc-147">If successful, this method returns a `200 OK` response code and an updated [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="68bf8-148">Пример</span><span class="sxs-lookup"><span data-stu-id="68bf8-148">Example</span></span>
+## <a name="example"></a><span data-ttu-id="aebdc-148">Пример</span><span class="sxs-lookup"><span data-stu-id="aebdc-148">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="68bf8-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="68bf8-149">Request</span></span>
-<span data-ttu-id="68bf8-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="68bf8-150">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="aebdc-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="aebdc-149">Request</span></span>
+<span data-ttu-id="aebdc-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="aebdc-150">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/assignments/{targetedManagedAppPolicyAssignmentId}
 Content-type: application/json
-Content-length: 223
+Content-length: 390
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "source": "policySets",
   "sourceId": "Source Id value"
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="68bf8-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="68bf8-151">Response</span></span>
-<span data-ttu-id="68bf8-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="68bf8-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="aebdc-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="aebdc-151">Response</span></span>
+<span data-ttu-id="aebdc-152">Here is an example of the response.</span><span class="sxs-lookup"><span data-stu-id="aebdc-152">Here is an example of the response.</span></span> <span data-ttu-id="aebdc-153">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="aebdc-153">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="aebdc-154">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="aebdc-154">All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 272
+Content-Length: 439
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "source": "policySets",
   "sourceId": "Source Id value"

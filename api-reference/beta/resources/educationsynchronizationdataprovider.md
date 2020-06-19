@@ -5,30 +5,41 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 26a702440ffde361982b8a3ce7cb66aea45a5412
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0691a7157fb189e75e862448069ff8ebdeee9f7
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500347"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790924"
 ---
-# <a name="educationsynchronizationdataprovider-resource-type"></a><span data-ttu-id="31c96-104">Тип ресурса Едукатионсинчронизатиондатапровидер</span><span class="sxs-lookup"><span data-stu-id="31c96-104">educationSynchronizationDataProvider resource type</span></span>
+# <a name="educationsynchronizationdataprovider-resource-type"></a><span data-ttu-id="1ef26-104">Тип ресурса Едукатионсинчронизатиондатапровидер</span><span class="sxs-lookup"><span data-stu-id="1ef26-104">educationSynchronizationDataProvider resource type</span></span>
 
-<span data-ttu-id="31c96-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="31c96-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1ef26-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1ef26-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="31c96-106">Представляет исходную схему SIS.</span><span class="sxs-lookup"><span data-stu-id="31c96-106">Represents the source SIS schema.</span></span> <span data-ttu-id="31c96-107">Это позволяет системе узнать, как сопоставить входящие данные с схемой Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="31c96-107">This allows the system to know how to map the incoming data to the Azure Active Directory (Azure AD) schema.</span></span>
+<span data-ttu-id="1ef26-106">Представляет поставщика данных, который будет использоваться в качестве источника синхронизации для объекта [едукатионсинчронизатионпрофиле].</span><span class="sxs-lookup"><span data-stu-id="1ef26-106">Represents the data provider to use as the synchronization source for a [educationSynchronizationProfile].</span></span>
 
-> <span data-ttu-id="31c96-108">**Примечание:** Этот сложный тип является абстрактным.</span><span class="sxs-lookup"><span data-stu-id="31c96-108">**Note:** This complex type is abstract.</span></span> <span data-ttu-id="31c96-109">Ознакомьтесь со списками определенных типов поставщиков данных.</span><span class="sxs-lookup"><span data-stu-id="31c96-109">Refer to the specific types of data providers listed.</span></span>
+> <span data-ttu-id="1ef26-107">**Примечание:** Этот сложный тип является абстрактным.</span><span class="sxs-lookup"><span data-stu-id="1ef26-107">**Note:** This complex type is abstract.</span></span> <span data-ttu-id="1ef26-108">Ознакомьтесь со списками определенных типов поставщиков данных.</span><span class="sxs-lookup"><span data-stu-id="1ef26-108">Refer to the specific types of data providers listed.</span></span>
 
-## <a name="derived-types"></a><span data-ttu-id="31c96-110">Производные типы</span><span class="sxs-lookup"><span data-stu-id="31c96-110">Derived types</span></span>
-| <span data-ttu-id="31c96-111">Тип</span><span class="sxs-lookup"><span data-stu-id="31c96-111">Type</span></span> | <span data-ttu-id="31c96-112">Описание</span><span class="sxs-lookup"><span data-stu-id="31c96-112">Description</span></span> |
-|:-|:-|:-|
-| [<span data-ttu-id="31c96-113">едукатионксвдатапровидер</span><span class="sxs-lookup"><span data-stu-id="31c96-113">educationcsvdataprovider</span></span>](educationcsvdataprovider.md) | <span data-ttu-id="31c96-114">Используется с CSV-файлами в качестве источника входных данных.</span><span class="sxs-lookup"><span data-stu-id="31c96-114">Used with CSV files as the input source.</span></span> |
-| [<span data-ttu-id="31c96-115">едукатионповерсчулдатапровидер</span><span class="sxs-lookup"><span data-stu-id="31c96-115">educationpowerschooldataprovider</span></span>](educationpowerschooldataprovider.md) | <span data-ttu-id="31c96-116">Используется с PowerSchool в качестве источника входных данных.</span><span class="sxs-lookup"><span data-stu-id="31c96-116">Used with PowerSchool as the input source.</span></span> |
-| [<span data-ttu-id="31c96-117">едукатиононеростерапидатапровидер</span><span class="sxs-lookup"><span data-stu-id="31c96-117">educationonerosterapidataprovider</span></span>](educationonerosterapidataprovider.md) | <span data-ttu-id="31c96-118">Используется с API OneRoster в качестве источника входных данных.</span><span class="sxs-lookup"><span data-stu-id="31c96-118">Used with OneRoster API as the input source.</span></span> |
+## <a name="providers"></a><span data-ttu-id="1ef26-109">Поставщики</span><span class="sxs-lookup"><span data-stu-id="1ef26-109">Providers</span></span>
 
-## <a name="properties"></a><span data-ttu-id="31c96-119">Свойства</span><span class="sxs-lookup"><span data-stu-id="31c96-119">Properties</span></span>
+| <span data-ttu-id="1ef26-110">Поставщик данных</span><span class="sxs-lookup"><span data-stu-id="1ef26-110">Data Provider</span></span>                       | <span data-ttu-id="1ef26-111">Описание</span><span class="sxs-lookup"><span data-stu-id="1ef26-111">Description</span></span>                                                                                        |
+| :---------------------------------- | :------------------------------------------------------------------------------------------------- |
+| <span data-ttu-id="1ef26-112">[едукатионксвдатапровидер]</span><span class="sxs-lookup"><span data-stu-id="1ef26-112">[educationCsvDataProvider]</span></span>          | <span data-ttu-id="1ef26-113">CSV-файлы, отправленные на [URL-адрес профиля SAS](../api/educationsynchronizationprofile-uploadurl.md)</span><span class="sxs-lookup"><span data-stu-id="1ef26-113">CSV files uploaded to the Profile's [SAS URL](../api/educationsynchronizationprofile-uploadurl.md)</span></span> |
+| [<span data-ttu-id="1ef26-114">едукатиононеростерапидатапровидер</span><span class="sxs-lookup"><span data-stu-id="1ef26-114">educationOneRosterApiDataProvider</span></span>](educationonerosterapidataprovider.md) | <span data-ttu-id="1ef26-115">API OneRoster 1.1</span><span class="sxs-lookup"><span data-stu-id="1ef26-115">OneRoster v1.1 API</span></span>                                                                                 |
+| <span data-ttu-id="1ef26-116">[едукатионповерсчулдатапровидер]</span><span class="sxs-lookup"><span data-stu-id="1ef26-116">[educationPowerSchoolDataProvider]</span></span>  | <span data-ttu-id="1ef26-117">API PowerSchool</span><span class="sxs-lookup"><span data-stu-id="1ef26-117">PowerSchool API</span></span>                                                                                    |
 
-<span data-ttu-id="31c96-120">Этот тип не представляет свойства.</span><span class="sxs-lookup"><span data-stu-id="31c96-120">No properties are exposed by this type.</span></span>
+## <a name="properties"></a><span data-ttu-id="1ef26-118">Свойства</span><span class="sxs-lookup"><span data-stu-id="1ef26-118">Properties</span></span>
+
+<span data-ttu-id="1ef26-119">Этот тип не представляет свойства.</span><span class="sxs-lookup"><span data-stu-id="1ef26-119">No properties are exposed by this type.</span></span>
+
+[едукатионсинчронизатионпрофиле]: educationsynchronizationprofile.md
+[educationsynchronizationprofile]: educationsynchronizationprofile.md
+[едукатионксвдатапровидер]: educationCsvDataProvider.md
+[educationcsvdataprovider]: educationCsvDataProvider.md
+[educationsynchronizationdataprovider]: educationSynchronizationDataProvider.md
+[едукатионповерсчулдатапровидер]: educationPowerSchoolDataProvider.md
+[educationpowerschooldataprovider]: educationPowerSchoolDataProvider.md
+[едукатионксвдатапровидер]: educationCsvDataProvider.md
+[educationcsvdataprovider]: educationCsvDataProvider.md
