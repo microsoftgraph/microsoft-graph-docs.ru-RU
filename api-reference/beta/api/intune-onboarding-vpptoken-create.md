@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8a0052e927410feb098d45fafc82c013c38c5de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d217e4b4b299236125027ff4673e871fe4436abe
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43362986"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791772"
 ---
 # <a name="create-vpptoken"></a>Создать VPP токен
 
@@ -23,7 +23,7 @@ ms.locfileid: "43362986"
 Создайте новый объект [vppToken](../resources/intune-onboarding-vpptoken.md).
 
 ## <a name="prerequisites"></a>Обязательные требования
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -61,7 +61,7 @@ POST /deviceAppManagement/vppTokens
 |lastSyncDateTime|DateTimeOffset|Последнее выполнение синхронизации приложения при помощи службы Apple Volume Purchase Program с использованием токена Apple Volume Purchase Program.|
 |токен|String|Строка токена Apple Volume Purchase Program; загрузка выполнена из Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения, связанного с токеном Apple Volume Purchase Program.|
-|состояние|[впптокенстате](../resources/intune-onboarding-vpptokenstate.md)|Текущее состояние токена Apple Volume Purchase Program. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`.|
+|состояние|[впптокенстате](../resources/intune-onboarding-vpptokenstate.md)|Текущее состояние токена Apple Volume Purchase Program. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`, `duplicateLocationId`.|
 |токенактионресултс|Коллекция [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|Коллекция состояний действий, выполняемых с помощью маркера Apple Volume Purchase Program.|
 |lastSyncStatus|[впптокенсинкстатус](../resources/intune-onboarding-vpptokensyncstatus.md)|Текущее состояние последней синхронизации приложения, инициированной с помощью токена Apple Volume Purchase Program. Возможные значения: `none`, `inProgress`, `completed`, `failed`. Возможные значения: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
@@ -70,7 +70,7 @@ POST /deviceAppManagement/vppTokens
 |displayName|Строка|Понятное имя маркера, указанного администратором.|
 |локатионнаме|String|Расположение маркера возвращено от Apple VPP.|
 |клаимтокенманажементфромекстерналмдм|Boolean|Согласие администратора, чтобы разрешить управление маркерами из внешних MDM.|
-|roleScopeTagIds|Коллекция объектов string|Идентификаторы тегов области ролей, назначенных этой сущности.|
+|roleScopeTagIds|Коллекция String|Идентификаторы тегов области ролей, назначенных этой сущности.|
 
 
 
@@ -118,7 +118,7 @@ Content-length: 1002
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

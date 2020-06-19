@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d441843394e8fc20f3a909a9417b01e94fce77c0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3c4e73fad4f577accd9bdfe8b86d0280f51d6f37
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43363484"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791884"
 ---
 # <a name="list-targetedmanagedappprotections"></a>Перечисление объектов targetedManagedAppProtection
 
@@ -23,7 +23,7 @@ ms.locfileid: "43363484"
 Перечисление свойств и связей объектов [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).
 
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -51,7 +51,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -63,11 +63,11 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2675
+Content-Length: 2723
 
 {
   "value": [
@@ -126,6 +126,7 @@ Content-Length: 2675
         "sharePoint"
       ],
       "appActionIfUnableToAuthenticateUser": "wipe",
+      "dialerRestrictionLevel": "managedApps",
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged"
     }

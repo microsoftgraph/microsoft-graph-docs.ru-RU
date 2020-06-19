@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 545066786e2c896229bdf5f7327ba465c1b5f9f5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 09bb88a6ba5b69de979f2cc9292ebfa23f0e1af9
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452499"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792059"
 ---
 # <a name="create-windowsautopilotdeploymentprofileassignment"></a>Создание Виндовсаутопилотдеплойментпрофилеассигнмент
 
@@ -23,7 +23,7 @@ ms.locfileid: "43452499"
 Создание нового объекта [виндовсаутопилотдеплойментпрофилеассигнмент](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -60,7 +60,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсаутопилотдеплойментпрофилеассигнмент](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -70,12 +70,14 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignments
 Content-type: application/json
-Content-length: 244
+Content-length: 411
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeploymentProfileAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -83,17 +85,19 @@ Content-length: 244
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 293
+Content-Length: 460
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeploymentProfileAssignment",
   "id": "de7e1e1e-1e1e-de7e-1e1e-7ede1e1e7ede",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "source": "policySets",
   "sourceId": "Source Id value"

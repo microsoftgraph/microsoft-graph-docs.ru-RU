@@ -5,12 +5,12 @@ author: jasonbro
 localization_priority: Normal
 ms.prod: settings
 doc_type: apiPageType
-ms.openlocfilehash: 493af1c75e20552e9fb420402365894a04717e17
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 6ff0e617656524e43fafa85a800a3adb99282f70
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744242"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791182"
 ---
 # <a name="get-regionalandlanguagesettings"></a>Получение Регионаландлангуажесеттингс
 
@@ -21,7 +21,7 @@ ms.locfileid: "44744242"
 Получение свойств объекта [регионаландлангуажесеттингс](../resources/regionalAndLanguageSettings.md) .
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения                   |Разрешение (по крайней мере для самых привилегированных)     |
 |----------------------------------|---------------------------------------------- |
@@ -42,7 +42,7 @@ GET /settings/regionalAndLanguageSettings
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Required.|
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,9 +54,9 @@ GET /settings/regionalAndLanguageSettings
 
 ## <a name="example"></a>Пример
 
-### <a name="example-1-get-the-properties-of-the-signed-in-user"></a>Пример 1. Получение свойств вошедшего пользователя
+В следующем примере возвращаются свойства вошедшего пользователя.
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -66,9 +66,24 @@ GET /settings/regionalAndLanguageSettings
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-regionalandlanguagesettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. 
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-regionalandlanguagesettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-regionalandlanguagesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a>Отклик
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 43611ebcd9873dfde4c00e85788186d80f5dc0aa
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 718a2e538b619a4138ef64987009bd5f6415851a
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178579"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791211"
 ---
 # <a name="update-intunebrandingprofileassignment"></a>Обновление Интунебрандингпрофилеассигнмент
 
@@ -23,7 +23,7 @@ ms.locfileid: "44178579"
 Обновление свойств объекта [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -46,19 +46,19 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignm
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, которой назначен профиль фирменной символики.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -68,28 +68,32 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignm
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignments/{intuneBrandingProfileAssignmentId}
 Content-type: application/json
-Content-length: 159
+Content-length: 326
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfileAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   }
 }
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 208
+Content-Length: 375
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfileAssignment",
   "id": "ee38a117-a117-ee38-17a1-38ee17a138ee",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   }
 }
 ```

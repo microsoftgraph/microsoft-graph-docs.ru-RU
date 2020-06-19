@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 90759c222b4e4941c07a54553948da4b74d9c1cb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3e35a9704f2028e1879c6b3d1988db6a2cc6f31b
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460216"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790847"
 ---
 # <a name="win32lobapp-resource-type"></a>Тип ресурса win32LobApp
 
@@ -53,7 +53,7 @@ ms.locfileid: "43460216"
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|roleScopeTagIds|Коллекция объектов string|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
@@ -68,6 +68,7 @@ ms.locfileid: "43460216"
 |минимумкпуспидинмхз|Int32|Значение минимальной скорости ЦП, необходимое для установки этого приложения.|
 |детектионрулес|Коллекция [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)|Правила обнаружения для определения бизнес-приложения Win32 (LoB).|
 |рекуирементрулес|Коллекция [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|Правила требований для обнаружения бизнес-приложения Win32.|
+|правила|Коллекция [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)|Правила обнаружения и требований для этого приложения.|
 |инсталлекспериенце|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Установка приложения.|
 |ретурнкодес|Коллекция [win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Коды возврата для поведения после установки.|
 |мсиинформатион|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Сведения о MSI, если это приложение Win32 является приложением MSI.|
@@ -162,6 +163,18 @@ ms.locfileid: "43460216"
       "keyPath": "String",
       "valueName": "String",
       "detectionType": "String"
+    }
+  ],
+  "rules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+      "ruleType": "String",
+      "check32BitOn64System": true,
+      "keyPath": "String",
+      "valueName": "String",
+      "operationType": "String",
+      "operator": "String",
+      "comparisonValue": "String"
     }
   ],
   "installExperience": {

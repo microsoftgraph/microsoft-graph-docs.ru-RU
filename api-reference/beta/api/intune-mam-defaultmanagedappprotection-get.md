@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9cacdefe6f9f4ec93ddbafb03026fc7078afd8d8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c5254f93d791a33366319d8b02e8ec288fe4f173
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444566"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791954"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Get defaultManagedAppProtection
 
@@ -23,7 +23,7 @@ ms.locfileid: "43444566"
 Чтение свойств и связей объекта [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md).
 
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -52,7 +52,7 @@ GET /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtecti
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -64,11 +64,11 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtec
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4930
+Content-Length: 5190
 
 {
   "value": {
@@ -126,6 +126,7 @@ Content-Length: 4930
       "sharePoint"
     ],
     "appActionIfUnableToAuthenticateUser": "wipe",
+    "dialerRestrictionLevel": "managedApps",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -179,7 +180,10 @@ Content-Length: 4930
     "allowedAndroidDeviceModels": [
       "Allowed Android Device Models value"
     ],
-    "appActionIfAndroidDeviceModelNotAllowed": "wipe"
+    "appActionIfAndroidDeviceModelNotAllowed": "wipe",
+    "customDialerAppProtocol": "Custom Dialer App Protocol value",
+    "customDialerAppPackageId": "Custom Dialer App Package Id value",
+    "customDialerAppDisplayName": "Custom Dialer App Display Name value"
   }
 }
 ```

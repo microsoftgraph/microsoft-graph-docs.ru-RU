@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e508d41a4e00c454d7eefe9c29147772612e4f0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 025ff655059bebaef39f3ef9c5a371effa2b7e66
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459063"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790896"
 ---
 # <a name="ioslobappprovisioningconfigurationassignment-resource-type"></a>Тип ресурса Иослобапппровисионингконфигуратионассигнмент
 
@@ -53,7 +53,9 @@ ms.locfileid: "43459063"
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfigurationAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "String",
+    "deviceAndAppManagementAssignmentFilterType": "String"
   }
 }
 ```

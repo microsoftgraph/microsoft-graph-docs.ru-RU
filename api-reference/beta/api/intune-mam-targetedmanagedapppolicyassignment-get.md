@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 56267d73fd49b9e0b36c41780b7d49b455dcc702
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: fd5451539eeb97e1611a68fa467a41ca1dfdaa7d
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177557"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791919"
 ---
 # <a name="get-targetedmanagedapppolicyassignment"></a>Get targetedManagedAppPolicyAssignment
 
@@ -23,7 +23,7 @@ ms.locfileid: "44177557"
 Чтение свойств и связей объекта [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md).
 
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -53,10 +53,10 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -68,18 +68,20 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtection
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 305
+Content-Length: 476
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
     "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
     "target": {
-      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+      "deviceAndAppManagementAssignmentFilterType": "include"
     },
     "source": "policySets",
     "sourceId": "Source Id value"

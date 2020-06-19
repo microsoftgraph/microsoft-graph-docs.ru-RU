@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: da399b05962eee48bc6b8290f914117a98e146ec
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 4cfd37a54c29a5f531158984b70afb92da73737b
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178600"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791239"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -23,7 +23,7 @@ ms.locfileid: "44178600"
 Пока не задокументировано.
 
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -46,7 +46,7 @@ POST /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assign
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -68,7 +68,7 @@ POST /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assign
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assign
 
 Content-type: application/json
-Content-length: 267
+Content-length: 442
 
 {
   "assignments": [
@@ -76,7 +76,9 @@ Content-length: 267
       "@odata.type": "#microsoft.graph.intuneBrandingProfileAssignment",
       "id": "ee38a117-a117-ee38-17a1-38ee17a138ee",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       }
     }
   ]
@@ -84,7 +86,7 @@ Content-length: 267
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 204 No Content
 ```

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0f988b7ccfb7d68261574acedcbdfb485e9f4a27
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f6f33b8dfd5fa8f966d959a015bd641a6a1100b7
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453935"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791106"
 ---
 # <a name="list-riskyusers"></a>Список riskyUsers
 
@@ -23,7 +23,7 @@ ms.locfileid: "42453935"
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,13 +42,13 @@ GET /riskyUsers
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-| Workbook-Session-Id  | Идентификатор сеанса книги, который определяет, сохраняются ли изменения. Необязательное свойство.|
+| Авторизация  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Идентификатор сеанса книги, который определяет, сохраняются ли изменения. Необязательный параметр.|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [рискюсер](../resources/riskyuser.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
@@ -95,7 +95,6 @@ Content-type: application/json
         {
             "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
             "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-            "isGuest": true,
             "isProcessing": true,
             "isDeleted": true,
             "riskDetail": "adminConfirmedSigninCompromised",
@@ -110,7 +109,7 @@ Content-type: application/json
 
 ### <a name="example-2-list-risky-users-and-filter-the-results"></a>Пример 2: список рискованных пользователей и фильтрация результатов
 #### <a name="request"></a>Запрос
-В приведенном ниже примере показано, `$filter` как получить коллекцию рискюсер с уровнем агрегированного риска среднего размера.
+В приведенном ниже примере показано, как `$filter` получить коллекцию рискюсер с уровнем агрегированного риска среднего размера.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -153,7 +152,6 @@ Content-type: application/json
         {
             "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
             "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
-            "isGuest": false,
             "isProcessing": true,
             "isDeleted": false,
             "riskDetail": "none",

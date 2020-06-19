@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b097e7ef8a6d87307a8f407d9a9e299a9b78e3c
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: b0c8a931a50b10f7694312bd618bdc20000299ca
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179266"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791716"
 ---
 # <a name="create-policysetassignment"></a>Создание Полицисетассигнмент
 
@@ -23,7 +23,7 @@ ms.locfileid: "44179266"
 Создание нового объекта [полицисетассигнмент](../resources/intune-policyset-policysetassignment.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -46,20 +46,20 @@ POST /deviceAppManagement/policySets/{policySetId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Полицисетассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Полицисетассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ Полицисетассигнмент.|
+|id|String|Ключ Полицисетассигнмент.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Полицисетассигнмент.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевая группа Полицисетассигнмент|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [полицисетассигнмент](../resources/intune-policyset-policysetassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -69,29 +69,33 @@ POST /deviceAppManagement/policySets/{policySetId}/assignments
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/assignments
 Content-type: application/json
-Content-length: 147
+Content-length: 314
 
 {
   "@odata.type": "#microsoft.graph.policySetAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   }
 }
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 260
+Content-Length: 427
 
 {
   "@odata.type": "#microsoft.graph.policySetAssignment",
   "id": "0a8e7d40-7d40-0a8e-407d-8e0a407d8e0a",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   }
 }
 ```

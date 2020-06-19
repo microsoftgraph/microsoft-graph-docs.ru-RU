@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e391c713324b69747e0528285580e3300e71868
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 92a86a9b875caf47d5c06145716642bb3d6a7e81
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459106"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790903"
 ---
 # <a name="excludedapps-resource-type"></a>Тип ресурса Excludedapps к объекту
 
@@ -26,6 +26,7 @@ ms.locfileid: "43459106"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |обращения|Boolean|Значение, если доступ к MS Office должен быть исключен или нет.|
+|Bing|Boolean|Значение, если Microsoft Search по умолчанию следует исключить.|
 |невозможно|Boolean|Значение, заданное в поле IF MS Office Excel, не должно быть исключено.|
 |тень|Boolean|Значение, которое должно быть исключено, если MS Office OneDrive для бизнеса — Groove.|
 |infoPath|Boolean|Значение, если MS Office InfoPath следует исключить.|
@@ -54,6 +55,7 @@ ms.locfileid: "43459106"
 {
   "@odata.type": "#microsoft.graph.excludedApps",
   "access": true,
+  "bing": true,
   "excel": true,
   "groove": true,
   "infoPath": true,

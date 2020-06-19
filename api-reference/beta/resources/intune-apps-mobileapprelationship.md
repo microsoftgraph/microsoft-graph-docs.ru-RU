@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Мобилеаппрелатионшип
-description: Описывает связь для дочернего мобильного приложения с родительским мобильным приложением.
+description: Описывает отношение между двумя мобильными приложениями.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80cf0fd5897d0ff3d1b3b3adc5343ad4c059442e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d09d9d7604699ee89b6dccc0f2f980cef26225e7
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462584"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790868"
 ---
 # <a name="mobileapprelationship-resource-type"></a>Тип ресурса Мобилеаппрелатионшип
 
@@ -20,7 +20,7 @@ ms.locfileid: "43462584"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Описывает связь для дочернего мобильного приложения с родительским мобильным приложением.
+Описывает отношение между двумя мобильными приложениями.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -32,8 +32,8 @@ ms.locfileid: "43462584"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор сущности отношения.|
-|targetId|String|Идентификатор приложения целевого дочернего мобильного приложения.|
-|таржетдисплайнаме|String|Отображаемое имя целевого дочернего мобильного приложения.|
+|targetId|String|Идентификатор приложения целевого приложения для мобильных устройств.|
+|таржетдисплайнаме|String|Отображаемое имя целевого мобильного приложения.|
 
 ## <a name="relationships"></a>Связи
 Нет

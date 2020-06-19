@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 452abee6423b2cb2f9fbf0662f99ae71b9a6bfdf
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 0b4c649b78c4fa798a9051795105f1699877a483
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177795"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792073"
 ---
 # <a name="list-appleenrollmentprofileassignments"></a>Список Апплинроллментпрофилеассигнментс
 
@@ -23,7 +23,7 @@ ms.locfileid: "44177795"
 Список свойств и связей объектов [апплинроллментпрофилеассигнмент](../resources/intune-enrollment-appleenrollmentprofileassignment.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -46,10 +46,10 @@ GET /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEn
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [апплинроллментпрофилеассигнмент](../resources/intune-enrollment-appleenrollmentprofileassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -61,11 +61,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrollme
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 262
+Content-Length: 437
 
 {
   "value": [
@@ -73,7 +73,9 @@ Content-Length: 262
       "@odata.type": "#microsoft.graph.appleEnrollmentProfileAssignment",
       "id": "5b603771-3771-5b60-7137-605b7137605b",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       }
     }
   ]

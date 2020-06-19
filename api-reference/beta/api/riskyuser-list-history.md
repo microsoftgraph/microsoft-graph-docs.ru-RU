@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 927d9b623c4aa35d3b1314d2152d1efa91633cb0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3199528b297394ca7fc282bbf0a4346a52d185fe
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453900"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791120"
 ---
 # <a name="list-history-of-riskyuser"></a>Журнал списка Рискюсер
 
@@ -23,7 +23,7 @@ ms.locfileid: "42453900"
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,12 +41,12 @@ GET /riskyUsers/{id}/history
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [рискюсершисторитем](../resources/riskyuserhistoryitem.md) в тексте отклика.
 
@@ -95,7 +95,6 @@ Content-type: application/json
         {
             "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "isDeleted": false,
-            "isGuest": false,
             "isProcessing": false,
             "riskLevel": "none",
             "riskState": "remediated",
@@ -113,7 +112,6 @@ Content-type: application/json
         {
             "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69636901009342322587",
             "isDeleted": false,
-            "isGuest": false,
             "isProcessing": false,
             "riskLevel": "high",
             "riskState": "atRisk",
@@ -133,7 +131,6 @@ Content-type: application/json
         {
             "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69636901020140973557",
             "isDeleted": false,
-            "isGuest": false,
             "isProcessing": false,
             "riskLevel": "none",
             "riskState": "remediated",

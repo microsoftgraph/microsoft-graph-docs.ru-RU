@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9308faf6185520bddcab1f5153205bdb109c2323
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a7aa3d37a78217301f4b5fd150f558dcec55de7f
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177732"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790910"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -142,21 +142,31 @@ ms.locfileid: "44177732"
 - [Оператор определения бизнес-приложения Win32](intune-apps-win32lobappdetectionoperator.md)
 - [Определение файловой системы бизнес-приложения Win32](intune-apps-win32lobappfilesystemdetection.md)
 - [Тип определения файловой системы бизнес-приложения Win32](intune-apps-win32lobappfilesystemdetectiontype.md)
+- [Тип операции файловой системы Win32 бизнес-приложения Win32](intune-apps-win32lobappfilesystemoperationtype.md)
 - [Требования к файловой системе для бизнес-приложения Win32](intune-apps-win32lobappfilesystemrequirement.md)
+- [Правило системы файловой системы Win32 для бизнес-приложения](intune-apps-win32lobappfilesystemrule.md)
 - [Интерфейс установки бизнес-приложения Win32](intune-apps-win32lobappinstallexperience.md)
 - [Информация msi бизнес-приложения Win32](intune-apps-win32lobappmsiinformation.md)
 - [Тип пакета msi бизнес-приложения Win32](intune-apps-win32lobappmsipackagetype.md)
 - [Определение скрипта power shell бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptdetection.md)
 - [Тип обнаружения скрипта PowerShell для бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptdetectiontype.md)
 - [Требование к скрипту PowerShell для бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptrequirement.md)
+- [Правило скрипта PowerShell для бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptrule.md)
 - [Определение кода продукта бизнес-приложения Win32](intune-apps-win32lobappproductcodedetection.md)
+- [Правило для кода продукта Win32 бизнес-приложения](intune-apps-win32lobappproductcoderule.md)
 - [Определение реестра бизнес-приложения Win32](intune-apps-win32lobappregistrydetection.md)
 - [Тип определения реестра бизнес-приложения Win32](intune-apps-win32lobappregistrydetectiontype.md)
 - [Требования к реестру бизнес-приложений Win32](intune-apps-win32lobappregistryrequirement.md)
+- [Правило реестра для бизнес-приложения Win32](intune-apps-win32lobappregistryrule.md)
+- [Тип операции правила реестра для бизнес-приложения Win32](intune-apps-win32lobappregistryruleoperationtype.md)
 - [Требования к бизнес-приложениям Win32](intune-apps-win32lobapprequirement.md)
 - [Поведение при перезапуске бизнес-приложения Win32](intune-apps-win32lobapprestartbehavior.md)
 - [Код возврата бизнес-приложения Win32](intune-apps-win32lobappreturncode.md)
 - [Тип кода возврата бизнес-приложения Win32](intune-apps-win32lobappreturncodetype.md)
+- [Правило бизнес-приложения Win32](intune-apps-win32lobapprule.md)
+- [Оператор правила бизнес-приложения Win32](intune-apps-win32lobappruleoperator.md)
+- [Тип правила бизнес-приложения Win32](intune-apps-win32lobappruletype.md)
+- [Тип операции правила скрипта PowerShell для Win32 LOB](intune-apps-win32lobpowershellscriptruleoperationtype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Архитектура Windows](intune-apps-windowsarchitecture.md)
 - [Тип устройства Windows](intune-apps-windowsdevicetype.md)

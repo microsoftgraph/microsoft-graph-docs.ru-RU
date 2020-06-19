@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4fda7cc98c8041aad45a0ef8453affc9af34edc5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9b85870f44eae936411e2aacf71781876858eee3
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501229"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790945"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>ресурс Едукатионповерсчулдатапровидер
 
@@ -24,17 +24,21 @@ ms.locfileid: "42501229"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Описание |
-|:-|:-|:-|
-| **коннектионурл** | String | URL-адрес подключения к экземпляру PowerSchool. |
-| **clientId** | String |  Идентификатор клиента, используемый для подключения к PowerSchool. |
-| **clientSecret** | String |  Секрет клиента для проверки подлинности подключения к экземпляру PowerSchool. |
-| **счулсидс** | Коллекция объектов string |  Список учебных заведений для синхронизации. |
-| **счулеар** | String |  Год учебного заведения для синхронизации. |
-| **алловтеачерсинмултиплесчулс** | Boolean |  Указывает, содержит ли источник несколько идентификаторов для одного учащегося или преподавателя. |
-| **настроек** | [едукатионсинчронизатионкустомизатионс](educationsynchronizationcustomizations.md) | Необязательная настройка, применяемая к профилю синхронизации.|
+| Свойство                       | Тип                                     | Описание                                                                            |
+| :----------------------------- | :--------------------------------------- | :------------------------------------------------------------------------------------- |
+| алловтеачерсинмултиплесчулс | Boolean                                  | Указывает, содержит ли источник несколько идентификаторов для одного учащегося или преподавателя. |
+| clientId                       | String                                   | Идентификатор клиента, используемый для подключения к PowerSchool.                                          |
+| clientSecret                   | String                                   | Секрет клиента для проверки подлинности подключения к экземпляру PowerSchool.          |
+| коннектионурл                  | String                                   | URL-адрес подключения к экземпляру PowerSchool.                                        |
+| счулсидс                     | Коллекция String                        | Список учебных заведений для синхронизации.                                                           |
+| счулеар                     | String                                   | Год учебного заведения для синхронизации.                                                               |
+| настроек                 | [едукатионсинчронизатионкустомизатионс] | Необязательная настройка, применяемая к профилю синхронизации.                   |
+
+[educationsynchronizationconnectionsettings]: educationsynchronizationconnectionsettings.md
+[едукатионсинчронизатионкустомизатионс]: educationsynchronizationcustomizations.md
 
 ## <a name="json-representation"></a>Представление JSON
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -52,6 +56,8 @@ ms.locfileid: "42501229"
   "schoolsIds": ["String"],
   "schoolYear": "String",
   "allowTeachersInMultipleSchools": "Boolean",
-  "customizations": {"@odata.type": "microsoft.graph.educationSynchronizationCustomizations"}
+  "customizations": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
+  }
 }
 ```

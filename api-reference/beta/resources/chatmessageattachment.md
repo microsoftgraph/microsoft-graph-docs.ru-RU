@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 45058b5d3217072d5e70875574fdee9de7eb20a0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1b9ddbb0b8dac124370b1d20ac42e3ab1da7d1e3
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507714"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791085"
 ---
 # <a name="chatmessageattachment-resource-type"></a>Тип ресурса Чатмессажеаттачмент
 
@@ -26,9 +26,9 @@ ms.locfileid: "42507714"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|string| Только для чтения. Уникальный идентификатор вложения.|
-|contentType| string | Тип мультимедиа вложенного содержимого. Он может иметь следующие значения: <br><ul><li>Ссылка: вложение — это ссылка на другой файл. Заполните contentURL ссылкой на объект.<br></li><li>файл: необработанный файл вложения. Заполните поле contenturl кодировкой base64 файла в data: format.<br></li><li>Image/: тип изображения с типом изображения, указанным в файле ex: Image/PNG, Image/JPEG, image/gif. Заполните поле contentUrl кодировкой base64 файла в data: format.<br></li><li>Video/: тип видео с указанным форматом. Пример: Video/MP4. Заполните поле contentUrl кодировкой base64 файла в data: format.<br></li><li>Audio/: тип аудио в указанном формате. Пример: Audio/ВМВ. Заполните поле contentUrl кодировкой base64 файла в data: format.<br></li><li>Тип приложения или карточки: тип вложения с типом "карточка" с указанием точного формата карты, который необходимо использовать. Присвойте контенту формат JSON карточки. Для типа карточки поддерживаются следующие значения:<br><ul><li>Application/ВНД. Microsoft. Card. адаптивный: Расширенная карточка, которая может содержать любую комбинацию текста, речи, изображений, кнопок и полей ввода. Задайте для свойства Content объект Адаптивекард.</li><li>Application/ВНД. Microsoft. Card. Animation: Расширенная карточка, на которой воспроизводится анимация. Задайте для свойства Content значение Аниматионкардобжект.</li><li>Application/ВНД. Microsoft. Card. Audio: Расширенная карточка, воспроизводящая звуковые файлы. Задайте свойство Content для объекта Аудиокард.</li><li>Application/ВНД. Microsoft. Card. Video: обширная карточка для воспроизведения видеороликов. Задайте свойство Content для объекта Видеокард.</li><li>Application/ВНД. Microsoft. Card. Главный Имиджевый баннер: карточка главный Имиджевый баннер. Присвойте свойству Content объект Херокард.</li><li>Application/ВНД. Microsoft. Card. thumbnail: карточка эскиза. Присвойте свойству Content объект Сумбнаилкард.</li><li>Application/ВНД. Microsoft. com. Card. квитанция: карточка приемки. Присвойте свойству Content объект Рецеипткард.</li><li>Application/ВНД. Microsoft. com. Card. SignIn: карточка входа пользователя. Присвойте свойству Content объект Сигнинкард.</ul></ul>|
+|contentType| string | Тип мультимедиа вложенного содержимого. Он может иметь следующие значения: <br><ul><li>`reference`: Вложение — это ссылка на другой файл. Заполните contentURL ссылкой на объект.</li><li>Все типы контента, поддерживаемые [объектом приложения](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object) Bot Framework</li><li>`application/vnd.microsoft.card.codesnippet`: Фрагмент кода. </li><li>`application/vnd.microsoft.card.announcement`: Заголовок извещения. </li>|
 |contentUrl|string|URL-адрес содержимого вложения. Поддерживаемые протоколы: HTTP, HTTPS, File и Data.|
-|содержимое|string|Содержимое вложения. Если вложение является расширенной карточкой, задайте свойству объект с богатыми карточками. Это свойство и contentUrl являются взаимоисключающими.|
+|содержимое|string|Содержимое вложения. Если вложение является [расширенной карточкой](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference), задайте свойству объект с богатыми карточками. Это свойство и contentUrl являются взаимоисключающими.|
 |name|string|Имя вложения.|
 |thumbnailUrl| string |URL-адрес эскиза, который может использоваться каналом, если он поддерживается в альтернативной, меньшей форме содержимого или contentUrl. Например, если для объекта contentType задано значение Application/Word, а для параметра contentUrl задано расположение документа Word, можно включить эскиз изображения, представляющий документ. Вместо документа в канале может отображаться миниатюрное изображение. Когда пользователь щелкает изображение, канал открывает документ.|
 

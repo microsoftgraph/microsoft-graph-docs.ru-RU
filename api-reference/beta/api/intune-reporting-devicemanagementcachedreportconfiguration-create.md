@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bf67c0409dae250af6cabc24de186879f3b3cedf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7340fffa01f99c33433c60b08b12748a2505cfae
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445209"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791365"
 ---
 # <a name="create-devicemanagementcachedreportconfiguration"></a>Создание Девицеманажементкачедрепортконфигуратион
 
@@ -23,7 +23,7 @@ ms.locfileid: "43445209"
 Создание нового объекта [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -56,15 +56,16 @@ POST /deviceManagement/reports/cachedReportConfigurations
 |id|String|Уникальный идентификатор для этой сущности|
 |репортнаме|String|Имя отчета|
 |filter|String|Фильтры, применяемые при создании отчета.|
-|select|Коллекция объектов string|Столбцы, выбранные из отчета|
-|orderBy|Коллекция объектов string|Упорядочение столбцов в отчете|
+|select|Коллекция String|Столбцы, выбранные из отчета|
+|orderBy|Коллекция String|Упорядочение столбцов в отчете|
+|метаданных|String|Управляемые вызывающими метаданными метаданные, связанные с отчетом|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние кэшированного отчета. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |ластрефрешдатетиме|DateTimeOffset|Время последнего обновления кэшированного отчета|
 |expirationDateTime|DateTimeOffset|Время истечения срока действия кэшированного отчета|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -74,7 +75,7 @@ POST /deviceManagement/reports/cachedReportConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/reports/cachedReportConfigurations
 Content-type: application/json
-Content-length: 385
+Content-length: 418
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementCachedReportConfiguration",
@@ -86,6 +87,7 @@ Content-length: 385
   "orderBy": [
     "Order By value"
   ],
+  "metadata": "Metadata value",
   "status": "notStarted",
   "lastRefreshDateTime": "2016-12-31T23:58:49.97047-08:00",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
@@ -93,11 +95,11 @@ Content-length: 385
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 434
+Content-Length: 467
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementCachedReportConfiguration",
@@ -110,6 +112,7 @@ Content-Length: 434
   "orderBy": [
     "Order By value"
   ],
+  "metadata": "Metadata value",
   "status": "notStarted",
   "lastRefreshDateTime": "2016-12-31T23:58:49.97047-08:00",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"

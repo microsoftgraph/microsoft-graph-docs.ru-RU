@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a34e09b233a60858e23155f87808e40d080867f7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 421ed3b1c439a7ae550100a113c651ab3e0a34b9
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507707"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791071"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>Тип ресурса Чатмессажехостедконтент
 
@@ -18,7 +18,8 @@ ms.locfileid: "42507707"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет контент, размещенный в сообщении чата, например изображения или фрагменты кода.
+Представляет контент Teams, размещенный в сообщении чата, например в виде изображений или фрагментов кода.
+[Вложенные файлы](chatmessageattachment.md) не являются размещающих контентом, они хранятся в SharePoint или OneDrive.
 
 ## <a name="methods"></a>Методы
 

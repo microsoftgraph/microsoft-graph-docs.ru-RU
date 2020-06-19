@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe2ddc85cec48ec0057b959b7b9066244bd62a4f
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: eb87cf961ce36a4615e511cb37c5278dbcc5b436
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44175674"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790889"
 ---
 # <a name="manageddevicemobileappconfigurationassignment-resource-type"></a>Тип ресурса managedDeviceMobileAppConfigurationAssignment
 
@@ -34,7 +34,7 @@ ms.locfileid: "44175674"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
 ## <a name="relationships"></a>Связи
@@ -53,7 +53,9 @@ ms.locfileid: "44175674"
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "String",
+    "deviceAndAppManagementAssignmentFilterType": "String"
   }
 }
 ```

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8585cdada8c2f36fae74e46ff404543c6d5aa78c
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 4a369dbc55e7b3736fcb811fb3212cea20bf889d
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178138"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790882"
 ---
 # <a name="mobileappassignment-resource-type"></a>Тип ресурса mobileAppAssignment
 
@@ -34,12 +34,12 @@ ms.locfileid: "44178138"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки, определенная администратором. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 |settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|Параметры целевого назначения, определенные администратором.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Тип ресурса, который является источником для назначения. Возможные значения: `direct`, `policySets`.|
-|Идентификатор|Строка|Идентификатор источника назначения.|
+|Идентификатор|String|Идентификатор источника назначения.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,7 +58,9 @@ ms.locfileid: "44178138"
   "id": "String (identifier)",
   "intent": "String",
   "target": {
-    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "String",
+    "deviceAndAppManagementAssignmentFilterType": "String"
   },
   "settings": {
     "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",

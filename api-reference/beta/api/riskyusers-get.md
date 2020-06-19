@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 105fd22c8b86187dbee128affabd5948a987a727
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: edbbfc520ac40ca5532f6d44c503c61dab808e5a
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453879"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791113"
 ---
 # <a name="get-riskyuser"></a>Получение Рискюсер
 
@@ -23,7 +23,7 @@ ms.locfileid: "42453879"
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,13 +41,13 @@ GET /riskyUsers/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-| Workbook-Session-Id  | Идентификатор сеанса книги, который определяет, сохраняются ли изменения. Необязательное свойство.|
+| Авторизация  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Идентификатор сеанса книги, который определяет, сохраняются ли изменения. Необязательный параметр.|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [рискюсер](../resources/riskyuser.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -91,7 +91,6 @@ Content-type: application/json
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": true,
   "isProcessing": true,
   "isDeleted": true,
   "riskDetail": "adminConfirmedSigninCompromised",

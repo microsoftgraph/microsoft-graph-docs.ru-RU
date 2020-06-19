@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e1476a6db0308546cd2f7771e00f8ac11c7fa0ed
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 01292d15da4bac6ff65c0412e2b40097804d20e5
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44175912"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792101"
 ---
 # <a name="list-windowsmanageddevices"></a>Список Виндовсманажеддевицес
 
@@ -23,7 +23,7 @@ ms.locfileid: "44175912"
 Список свойств и связей объектов [виндовсманажеддевице](../resources/intune-devices-windowsmanageddevice.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -38,6 +38,7 @@ ms.locfileid: "44175912"
 -->
 ``` http
 GET /deviceManagement/managedDevices
+GET /deviceManagement/comanagedDevices
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices
 ```
@@ -48,10 +49,10 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [виндовсманажеддевице](../resources/intune-devices-windowsmanageddevice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -63,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
