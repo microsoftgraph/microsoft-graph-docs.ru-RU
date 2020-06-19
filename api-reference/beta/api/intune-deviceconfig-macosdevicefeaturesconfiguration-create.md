@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d66fbcadd2957735e4244bde6ebabfd6d3775b74
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 900862aa7f7d423faa9c27a9907a3a50b2fc39c9
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177928"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792774"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>Создание объекта macOSDeviceFeaturesConfiguration
 
@@ -23,7 +23,7 @@ ms.locfileid: "44177928"
 Создание объекта [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md).
 
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта macOSDeviceFeaturesConfiguration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта macOSDeviceFeaturesConfiguration.
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -68,7 +68,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |аирпринтдестинатионс|Коллекция [аирпринтдестинатион](../resources/intune-deviceconfig-airprintdestination.md)|Массив принтеров Аирпринт, которые должны отображаться всегда. Эта коллекция может содержать не более 500 элементов. Наследуется от [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
 |аутолаунчитемс|Коллекция [макослаунчитем](../resources/intune-deviceconfig-macoslaunchitem.md)|Список приложений, файлов, папок и других элементов, которые запускаются при входе пользователя. Эта коллекция может содержать не более 500 элементов.|
 |админшовхостинфо|Boolean|Показывать ли сведения об узле администратора в окне входа.|
-|логинвиндовтекст|Строка|Настраиваемый текст, отображаемый в окне входа.|
+|логинвиндовтекст|String|Настраиваемый текст, отображаемый в окне входа.|
 |аусоризедусерслиссидден|Boolean|Указывает, следует ли отображать диалоговое окно имя и пароль или список пользователей в окне входа.|
 |аусоризедусерслиссиделокалусерс|Boolean|Отображение только сетевых и системных пользователей в списке авторизованных пользователей в окне входа.|
 |аусоризедусерслиссидемобилеаккаунтс|Boolean|Следует ли скрыть пользователей для мобильных устройств в списке авторизованных пользователей в окне входа.|
@@ -87,6 +87,25 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |ассоЦиатеддомаинс|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Получает или задает список, который сопоставляет приложения с их связанными доменами. Ключ должен соответствовать ИДЕНТИФИКАТОРу приложения, а значение должно быть строкой в виде "Service: domain", где Domain — это полное доменное имя узла (например,:ексампле.. com). Эта коллекция может содержать не более 500 элементов.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Получает или задает профиль расширения единого входа. Устарело: вместо этого используйте Макоссинглесигнонекстенсион.|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Получает или задает профиль расширения единого входа.|
+|контенткачинженаблед|Boolean|Включает кэширование контента и предотвращает его отключение пользователем.|
+|контенткачингтипе|[макосконтенткачингтипе](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Определяет, какой тип контента может кэшироваться службой кэширования контента Apple. Возможные значения: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
+|контенткачингмакссизебитес|Int32|Максимальное количество байт дискового пространства, которое будет использоваться для кэша контента. Значение 0 (по умолчанию) указывает на неограниченное дисковое пространство. |
+|контенткачингдатапас|String|Путь к каталогу, используемому для хранения кэшированного содержимого. Значение должно быть (или оканчиваться) поддержкой/Library/Application/Apple/Ассеткаче/Data|
+|контенткачингдисаблеконнектионшаринг|Boolean|Отключает общий доступ к подключению к Интернету.|
+|контенткачингфорцеконнектионшаринг|Boolean|Обеспечивает принудительное предоставление общего доступа к подключению к Интернету. Контенткачингдисаблеконнектионшаринг переопределяет этот параметр.|
+|контенткачингклиентполици|[макосконтенткачингклиентполици](../resources/intune-deviceconfig-macoscontentcachingclientpolicy.md)|Определяет метод, используемый серверами кэширования контента для прослушивания клиентов. Возможные значения: `notConfigured`, `clientsInLocalNetwork`, `clientsWithSamePublicIpAddress`, `clientsInCustomLocalNetworks`, `clientsInCustomLocalNetworksWithFallback`.|
+|контенткачингклиентлистенранжес|Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)|Список настраиваемых диапазонов содержимого диапазонов IP-адресов будет использоваться для прослушивания клиентов. Эта коллекция может содержать не более 500 элементов.|
+|контенткачингпирполици|[макосконтенткачингпирполици](../resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md)|Определяет метод, в котором содержимое кэшируется на одноранговом узле с другими кэшами. Возможные значения: `notConfigured`, `peersInLocalNetwork`, `peersWithSamePublicIpAddress`, `peersInCustomLocalNetworks`.|
+|контенткачингпирлистенранжес|Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)|Список настраиваемых диапазонов содержимого диапазонов IP-адресов будет использоваться для прослушивания одноранговых кэшей. Эта коллекция может содержать не более 500 элементов.|
+|контенткачингпирфилтерранжес|Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)|Список настраиваемых диапазонов содержимого диапазонов IP-адресов будет использоваться для запроса контента от кэш-памяти одноранговых узлов. Эта коллекция может содержать не более 500 элементов.|
+|контенткачингпарентселектионполици|[макосконтенткачингпарентселектионполици](../resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md)|Определяет метод, в котором серверы кэширования контента будут выбирать родительские элементы, если они есть. Возможные значения: `notConfigured`, `roundRobin`, `firstAvailable`, `urlPathHash`, `random`, `stickyAvailable`.|
+|контенткачингпарентс|Коллекция String|Список IP-адресов, представляющих родительские кэши контента.|
+|контенткачинглогклиентидентитиес|Boolean|Включает ведение журнала IP-адресов и портов клиентов, запрашивающих кэшированное содержимое.|
+|контенткачингпубликранжес|Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)|Список настраиваемых диапазонов IP-адресов, которые служба кэширования контента Apple должна использовать для согласования клиентов со кэшами контента. Эта коллекция может содержать не более 500 элементов.|
+|контенткачингблоккделетион|Boolean|Предотвращает очистку содержимого кэшами, чтобы освободить место на диске для других приложений.|
+|контенткачингшовалертс|Boolean|Отображение оповещений о кэшировании содержимого как системных уведомлений.|
+|контенткачингкипаваке|Boolean|Запретите переустановку устройства в спящий режим, если включено кэширование содержимого.|
+|контенткачингпорт|Int32|Задает порт, используемый для кэширования контента. Если значение равно 0, будет выбран произвольный доступный порт. Допустимые значения — от 0 до 65535|
 
 
 
@@ -100,7 +119,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3879
+Content-length: 5388
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -217,16 +236,61 @@ Content-length: 3879
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
-  }
+  },
+  "contentCachingEnabled": true,
+  "contentCachingType": "userContentOnly",
+  "contentCachingMaxSizeBytes": 10,
+  "contentCachingDataPath": "Content Caching Data Path value",
+  "contentCachingDisableConnectionSharing": true,
+  "contentCachingForceConnectionSharing": true,
+  "contentCachingClientPolicy": "clientsInLocalNetwork",
+  "contentCachingClientListenRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingPeerPolicy": "peersInLocalNetwork",
+  "contentCachingPeerListenRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingPeerFilterRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingParentSelectionPolicy": "roundRobin",
+  "contentCachingParents": [
+    "Content Caching Parents value"
+  ],
+  "contentCachingLogClientIdentities": true,
+  "contentCachingPublicRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingBlockDeletion": true,
+  "contentCachingShowAlerts": true,
+  "contentCachingKeepAwake": true,
+  "contentCachingPort": 2
 }
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4051
+Content-Length: 5560
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -346,7 +410,52 @@ Content-Length: 4051
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
-  }
+  },
+  "contentCachingEnabled": true,
+  "contentCachingType": "userContentOnly",
+  "contentCachingMaxSizeBytes": 10,
+  "contentCachingDataPath": "Content Caching Data Path value",
+  "contentCachingDisableConnectionSharing": true,
+  "contentCachingForceConnectionSharing": true,
+  "contentCachingClientPolicy": "clientsInLocalNetwork",
+  "contentCachingClientListenRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingPeerPolicy": "peersInLocalNetwork",
+  "contentCachingPeerListenRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingPeerFilterRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingParentSelectionPolicy": "roundRobin",
+  "contentCachingParents": [
+    "Content Caching Parents value"
+  ],
+  "contentCachingLogClientIdentities": true,
+  "contentCachingPublicRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingBlockDeletion": true,
+  "contentCachingShowAlerts": true,
+  "contentCachingKeepAwake": true,
+  "contentCachingPort": 2
 }
 ```
 

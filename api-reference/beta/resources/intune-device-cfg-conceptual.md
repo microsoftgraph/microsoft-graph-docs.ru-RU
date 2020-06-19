@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 11597599cc7303c2190d5991d0fb2c502a17b86a
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: f7b00de9363d4145165596d8ded2339de1843df0
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179329"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793481"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -44,6 +44,7 @@ ms.locfileid: "44179329"
 - [Автонастройка глобального прокси-сервера владельца устройств Android](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
 - [Глобальный прокси-сервер владельца устройства Android Direct](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
 - [Профиль сертификата PFX, импортированный владельцем устройства Android](intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md)
+- [Профиль сертификата PKCS для владельца устройства Android](intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md)
 - [Режим хранения владельца устройства Android](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Требуемый тип пароля для владельца устройства с Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Профиль сертификата SCEP владельца устройства Android](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
@@ -119,6 +120,7 @@ ms.locfileid: "44179329"
 - [Тип общего доступа к буферу обмена в блоке Application Guard](intune-deviceconfig-applicationguardblockclipboardsharingtype.md)
 - [Тип передачи данных в блоке Application Guard](intune-deviceconfig-applicationguardblockfiletransfertype.md)
 - [Активированные опции Application Guard](intune-deviceconfig-applicationguardenabledoptions.md)
+- [Константа преобразования проверки подлинности](intune-deviceconfig-authenticationtransformconstant.md)
 - [Метода отключения уведомления автоматического перезапуска](intune-deviceconfig-autorestartnotificationdismissalmethod.md)
 - [Режим автоматического обновления](intune-deviceconfig-automaticupdatemode.md)
 - [Метод шифрования BitLocker](intune-deviceconfig-bitlockerencryptionmethod.md)
@@ -136,10 +138,13 @@ ms.locfileid: "44179329"
 - [Хранилище сертификатов](intune-deviceconfig-certificatestore.md)
 - [Шкала срока действия сертификата](intune-deviceconfig-certificatevalidityperiodscale.md)
 - [Разрешение на изменение параметров UEFI](intune-deviceconfig-changeuefisettingspermission.md)
+- [Code](intune-deviceconfig-code.md)
 - [Использование конфигурации](intune-deviceconfig-configurationusage.md)
 - [Расширение единого входа для учетных данных](intune-deviceconfig-credentialsinglesignonextension.md)
+- [Набор криптографии](intune-deviceconfig-cryptographysuite.md)
 - [Альтернативное имя настраиваемого субъекта](intune-deviceconfig-customsubjectalternativename.md)
 - [Настраиваемое окно времени обновления](intune-deviceconfig-customupdatetimewindow.md)
+- [Тип данных](intune-deviceconfig-datatype.md)
 - [День недели](intune-deviceconfig-dayofweek.md)
 - [Политика соответствия устройств требованиям по умолчанию](intune-deviceconfig-defaultdevicecompliancepolicy.md)
 - [Тип направления атак для Защитника](intune-deviceconfig-defenderattacksurfacetype.md)
@@ -175,9 +180,14 @@ ms.locfileid: "44179329"
 - [Состояние устройств, касающееся соответствия устройств требованиям](intune-deviceconfig-devicecompliancedevicestatus.md)
 - [Назначение политик соответствия устройства требованиям](intune-deviceconfig-devicecompliancepolicyassignment.md)
 - [Общие сведения о состоянии устройства с учетом политики соответствия устройств требованиям](intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)
+- [Сценарий политики соответствия требованиям устройств](intune-deviceconfig-devicecompliancepolicyscript.md)
 - [Состояние соответствия устройства параметру политики](intune-deviceconfig-devicecompliancepolicysettingstate.md)
 - [Сводка по состоянию соответствия устройств параметру политики](intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)
 - [Запланированное действие для правила соответствия требованиям](intune-deviceconfig-devicecompliancescheduledactionforrule.md)
+- [Ошибка сценария соответствия требованиям устройства](intune-deviceconfig-devicecompliancescripterror.md)
+- [Правило соответствия требованиям устройств](intune-deviceconfig-devicecompliancescriptrule.md)
+- [Ошибка правила для сценария соответствия требованиям устройства](intune-deviceconfig-devicecompliancescriptruleerror.md)
+- [Результат проверки сценария соответствия требованиям устройства](intune-deviceconfig-devicecompliancescriptvalidationresult.md)
 - [Тип ресурса deviceComplianceSettingState](intune-deviceconfig-devicecompliancesettingstate.md)
 - [Обзор пользователей, касающийся соответствия устройств требованиям](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [Состояние пользователей, касающийся соответствия устройств требованиям](intune-deviceconfig-devicecomplianceuserstatus.md)
@@ -197,12 +207,14 @@ ms.locfileid: "44179329"
 - [Правило применимости управления устройствами для ОС OS Edition](intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)
 - [Версия ОС правила применимости управления устройствами](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
 - [Тип правила применимости управления устройствами](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
+- [Центр сертификации для управления устройствами](intune-deviceconfig-devicemanagementcertificationauthority.md)
 - [Параметры управления устройствами](intune-deviceconfig-devicemanagementsettings.md)
 - [Локальный пользователь или группа для прав пользователя для управления устройством](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [Параметры прав пользователя для управления устройства](intune-deviceconfig-devicemanagementuserrightssetting.md)
 - [Уровень защиты устройства от угроз](intune-deviceconfig-devicethreatprotectionlevel.md)
 - [Типы устройств](intune-deviceconfig-devicetypes.md)
 - [Режим отправки диагностических данных](intune-deviceconfig-diagnosticdatasubmissionmode.md)
+- [Группа Диффи Диффи/Хелмана](intune-deviceconfig-diffiehellmangroup.md)
 - [Тип политики перечисления устройства защиты DMA](intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)
 - [Источник доменных имен](intune-deviceconfig-domainnamesource.md)
 - [Быстрая настройка EAP](intune-deviceconfig-eapfastconfiguration.md)
@@ -346,6 +358,10 @@ ms.locfileid: "44179329"
 - [macOS связанные домены ключей и значений](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
 - [База профилей сертификатов для macOS](intune-deviceconfig-macoscertificateprofilebase.md)
 - [Политика соответствия macOS](intune-deviceconfig-macoscompliancepolicy.md)
+- [политика клиента кэширования содержимого macOS](intune-deviceconfig-macoscontentcachingclientpolicy.md)
+- [родительская политика выбора кэширования содержимого macOS](intune-deviceconfig-macoscontentcachingparentselectionpolicy.md)
+- [Политика однорангового кэширования содержимого macOS](intune-deviceconfig-macoscontentcachingpeerpolicy.md)
+- [тип кэширования контента macOS](intune-deviceconfig-macoscontentcachingtype.md)
 - [расширение единого входа для учетных данных macOS](intune-deviceconfig-macoscredentialsinglesignonextension.md)
 - [Конфигурация настраиваемого приложения macOS](intune-deviceconfig-macoscustomappconfiguration.md)
 - [Специальная конфигурация macOS](intune-deviceconfig-macoscustomconfiguration.md)
@@ -389,6 +405,8 @@ ms.locfileid: "44179329"
 - [Оценка мультимедийного содержимого для Соединенного Королевства](intune-deviceconfig-mediacontentratingunitedkingdom.md)
 - [Рейтинг мультимедийного содержимого для Соединенных Штатов](intune-deviceconfig-mediacontentratingunitedstates.md)
 - [Тип ограничения для лимитного подключения](intune-deviceconfig-meteredconnectionlimittype.md)
+- [Сведения о присутствии запуска Microsoft Launcher](intune-deviceconfig-microsoftlauncherdockpresence.md)
+- [Размещение панели поиска Microsoft Launcher](intune-deviceconfig-microsoftlaunchersearchbarplacement.md)
 - [Канал Miracast](intune-deviceconfig-miracastchannel.md)
 - [Соединитель NDES](intune-deviceconfig-ndesconnector.md)
 - [Состояние соединителя NDES](intune-deviceconfig-ndesconnectorstate.md)
@@ -406,6 +424,8 @@ ms.locfileid: "44179329"
 - [Параметр OMA, строка, XML](intune-deviceconfig-omasettingstringxml.md)
 - [Локальная зашифрованная полезная нагрузка](intune-raimportcerts-onpremencryptedpayload.md)
 - [Диапазон версий операционной системы](intune-deviceconfig-operatingsystemversionrange.md)
+- [Operator](intune-deviceconfig-operator.md)
+- [Безопасная пересылка группы](intune-deviceconfig-perfectforwardsecrecygroup.md)
 - [Запрос на получение шифрования PFX](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Сертификат пользователя PFX](intune-raimportcerts-pfxusercertificate.md)
 - [Тип действия по питанию](intune-deviceconfig-poweractiontype.md)

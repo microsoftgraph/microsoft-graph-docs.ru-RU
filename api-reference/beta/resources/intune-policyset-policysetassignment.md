@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0729ac909dbe11829bdb98c54a2c73fe6c300f1e
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: f7d3ff168f01a7b89c5e7abb46100de0120c677a
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179350"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793768"
 ---
 # <a name="policysetassignment-resource-type"></a>Тип ресурса Полицисетассигнмент
 
@@ -34,7 +34,7 @@ ms.locfileid: "44179350"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ Полицисетассигнмент.|
+|id|String|Ключ Полицисетассигнмент.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Полицисетассигнмент.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевая группа Полицисетассигнмент|
 
@@ -55,7 +55,9 @@ ms.locfileid: "44179350"
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "String",
+    "deviceAndAppManagementAssignmentFilterType": "String"
   }
 }
 ```

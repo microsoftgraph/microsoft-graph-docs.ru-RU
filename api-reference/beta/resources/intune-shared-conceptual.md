@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 2d138f4c92999477054e8fe154c426fd18181037
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 06be7eefad204f0cef73d8c0d16d70159f9142db
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178096"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793761"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -31,6 +31,7 @@ ms.locfileid: "44178096"
 - [Действие портала компании](intune-shared-companyportalaction.md)
 - [Действие блокирования портала компании](intune-shared-companyportalblockedaction.md)
 - [Состояние соответствия](intune-shared-compliancestatus.md)
+- [Тип фильтра назначения управления устройствами и приложениями](intune-shared-deviceandappmanagementassignmentfiltertype.md)
 - [Источник назначения для управления устройствами и приложениями](intune-shared-deviceandappmanagementassignmentsource.md)
 - [Объект назначения для управления устройствами и приложениями](intune-shared-deviceandappmanagementassignmenttarget.md)
 - [Управление приложениями для устройств](intune-shared-deviceappmanagement.md)
@@ -81,7 +82,7 @@ ms.locfileid: "44178096"
 - [Сохраненные параметры создания состояния пользовательского интерфейса](intune-shared-saveduistategenerationoptions.md)
 - [Целевая конфигурация управляемых приложений](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
-- [Пользователь](intune-shared-user.md)
+- [User](intune-shared-user.md)
 - [Тип учетной записи токена VPP](intune-shared-vpptokenaccounttype.md)
 - [Причина сбоя действия с токеном VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Настройки назначения бизнес-приложения Win32](intune-shared-win32lobappassignmentsettings.md)

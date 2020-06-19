@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7759a9c42ca9178dc95266ffa4630ef891832ecd
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 2390ff2f9aab1fe74aa6aebf0cfdbeeb6a2d5131
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062639"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793593"
 ---
 # <a name="riskyuser-resource-type"></a>Тип ресурса Рискюсер
 
@@ -39,8 +39,7 @@ ms.locfileid: "43062639"
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
 |`id`|`string`|Уникальный идентификатор пользователя под угрозой|
-|`isDeleted`|`bool`|Указывает, удален ли пользователь. Возможные значения: `true`,`false`|
-|`isGuest`|`bool`|Указывает, является ли пользователь гостямй. Возможные значения: `true`, `false`. Имеет значение true, если удостоверение пользователя находится вне клиента. Это может быть B2B или пользователь B2C с удостоверением в Azure AD, MSA или сторонним поставщиком удостоверений. False, если удостоверение пользователя находится внутри клиента в данный момент|
+|`isDeleted`|`bool`|Указывает, удален ли пользователь. Возможные значения: `true` ,`false`|
 |`isProcessing`|`bool`|Указывает, вехсер ли опасное состояние пользователя при обработке внутренней|
 |`riskLastUpdatedDateTime`|`datetime`|Дата и время последнего обновления рискованного пользователя|
 |`riskLevel`|`riskLevel`| Возможные значения: "минимум", "средний", "высокий", "скрытый", "нет", unknownFutureValue.  |
@@ -70,7 +69,6 @@ ms.locfileid: "43062639"
 {
 "id": "string",
 "riskLastUpdatedDateTime": "dateTimeOffset",
-"isGuest": "boolean",
 "isProcessing": "boolean",
 "isDeleted": "boolean",
 "riskDetail":  "string",

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: af1aee725e5bfecb3acd0cdb24fe7632c20b85f7
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 6777a84dd9ff74820bce35bacd209f90981d97b6
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177718"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793572"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>Тип ресурса androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -39,7 +39,7 @@ ms.locfileid: "44177718"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -59,21 +59,30 @@ ms.locfileid: "44177718"
 |cellularBlockWiFiTethering|Boolean|Указывает, следует ли заблокировать модем Wi-Fi.|
 |цертификатекредентиалконфигуратиондисаблед|Boolean|Указывает, следует ли запретить пользователям настраивать учетные данные сертификатов.|
 |микрософтлаунчерконфигуратионенаблед|Boolean|Указывает, следует ли настроить средство запуска Microsoft.|
-|enrollmentProfile|[андроиддевицеовнеренроллментпрофилетипе](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|Указывает, какой профиль регистрации вы хотите настроить. Возможные значения: `notConfigured`, `dedicatedDevice`, `fullyManaged`.|
+|микрософтлаунчеркустомваллпаперенаблед|Boolean|Указывает, следует ли настраивать фоновый рисунок на целевых устройствах.|
+|микрософтлаунчеркустомваллпаперимажеурл|String|Указывает URL-адрес для файла изображения, который будет использоваться в качестве фонового рисунка на целевых устройствах.|
+|микрософтлаунчеркустомваллпапералловусермодификатион|Boolean|Указывает, может ли пользователь изменять фоновый рисунок для персонализации своего устройства.|
+|микрософтлаунчерфиденаблед|Boolean|Указывает, следует ли включить веб-канал запуска на устройстве.|
+|микрософтлаунчерфидалловусермодификатион|Boolean|Указывает, может ли пользователь изменять веб-канал запуска на устройстве.|
+|микрософтлаунчердоккпресенцеконфигуратион|[микрософтлаунчердоккпресенце](../resources/intune-deviceconfig-microsoftlauncherdockpresence.md)|Указывает, следует ли настроить закрепление устройства. Возможные значения: `notConfigured`, `show`, `hide`, `disabled`.|
+|микрософтлаунчердоккпресенцеалловусермодификатион|Boolean|Указывает, может ли пользователь изменять конфигурацию закрепления устройств на устройстве.|
+|микрософтлаунчерсеарчбарплацементконфигуратион|[микрософтлаунчерсеарчбарплацемент](../resources/intune-deviceconfig-microsoftlaunchersearchbarplacement.md)|Указывает конфигурацию размещения панели поиска на устройстве. Возможные значения: `notConfigured`, `top`, `bottom`, `hide`.|
+|микрософтлаунчерсеарчбарплацементалловусермодификатион|Boolean|Указывает, может ли пользователь изменять расположение панели поиска на устройстве.|
+|enrollmentProfile|[androidDeviceOwnerEnrollmentProfileType](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|Указывает, какой профиль регистрации вы хотите настроить. Возможные значения: `notConfigured`, `dedicatedDevice`, `fullyManaged`.|
 |датароамингблоккед|Boolean|Указывает, следует ли запретить пользователю перемещать данные.|
 |датетимеконфигуратионблоккед|Boolean|Указывает, следует ли запретить пользователю вручную изменять дату или время на устройстве.|
-|факториресетдевицеадминистраторемаилс|Коллекция объектов string|Список сообщений учетных записей Google, которые потребуются для проверки подлинности после завершения фабричного сброса устройства перед его настройкой.|
+|факториресетдевицеадминистраторемаилс|Коллекция String|Список сообщений учетных записей Google, которые потребуются для проверки подлинности после завершения фабричного сброса устройства перед его настройкой.|
 |factoryResetBlocked|Boolean|Указывает, отключен ли параметр Reset фабрики в параметрах.|
 |глобалпрокси|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|Прокси-сервер настраивается напрямую с узлом, портом и исключенными узлами.|
 |гуглеаккаунтсблоккед|Boolean|Указывает, будут ли блокироваться учетные записи Google.|
 |киоскмодескринсаверконфигуратионенаблед|Boolean|Указывает, следует ли включить режим экранной заставки или не в режиме киоска.|
-|киоскмодескринсаверимажеурл|Строка|URL-адрес изображения, которое будет экранной заставкой устройства в режиме киоска.|
+|киоскмодескринсаверимажеурл|String|URL-адрес изображения, которое будет экранной заставкой устройства в режиме киоска.|
 |киоскмодескринсавердисплайтимеинсекондс|Int32|Время (в секундах), в течение которого устройство будет отображать экранную заставку в режиме киоска. Допустимые значения — от 0 до 9999999|
 |киоскмодескринсаверстартделайинсекондс|Int32|Время (в секундах), в течение которого устройство должно быть неактивным, чтобы экранная заставка отображалась в режиме киоска. Допустимые значения — от 1 до 9999999|
 |киоскмодескринсавердетектмедиадисаблед|Boolean|Указывает, должно ли устройство отображать экранную заставку при воспроизведении аудио-и видеоконференций в полноэкранном режиме.|
 |kioskModeApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список управляемых приложений, которые будут отображаться, когда устройство находится в режиме киоска. Эта коллекция может содержать не более 500 элементов.|
-|киоскмодеваллпаперурл|Строка|URL-адрес общедоступного изображения, которое будет использоваться для фонового рисунка, когда устройство находится в режиме киоска.|
-|киоскмодикситкоде|Строка|Код выхода, позволяющий пользователю выходить из режима киоска, когда устройство находится в режиме киоска.|
+|киоскмодеваллпаперурл|String|URL-адрес общедоступного изображения, которое будет использоваться для фонового рисунка, когда устройство находится в режиме киоска.|
+|киоскмодикситкоде|String|Код выхода, позволяющий пользователю выходить из режима киоска, когда устройство находится в режиме киоска.|
 |киоскмодевиртуалхомебуттоненаблед|Boolean|Указывает, следует ли отображать кнопку виртуальной домашней страницы, когда устройство находится в режиме киоска.|
 |киоскмодевиртуалхомебуттонтипе|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|Указывает, является ли кнопка "Виртуальная Домашняя страница" кнопкой "Прокрутка вверх" или плавающей кнопкой "домой". Возможные значения: `notConfigured`, `swipeUp`, `floating`.|
 |киоскмодеблуетусконфигуратионенаблед|Boolean|Указывает, следует ли запретить пользователю настраивать параметры Bluetooth в режиме киоска.|
@@ -115,7 +124,7 @@ ms.locfileid: "44177718"
 |усерсблоккремове|Boolean|Указывает, следует ли отключить удаление других пользователей с устройства.|
 |волумеблоккаджустмент|Boolean|Указывает, отключена ли настройка главного тома.|
 |впналвайсонлоккдовнмоде|Boolean|Указывает, следует ли блокировать сетевой трафик при отключении VPN-подключения.|
-|Свойства vpnalwaysonpackageidentifier|Строка|Имя пакета приложения Android для приложения, которое будет обрабатывать постоянное VPN-подключение.|
+|Свойства vpnalwaysonpackageidentifier|String|Имя пакета приложения Android для приложения, которое будет обрабатывать постоянное VPN-подключение.|
 |вифиблоккедитконфигуратионс|Boolean|Указывает, следует ли запретить пользователю редактировать параметры подключения WiFi.|
 |вифиблоккедитполицидефинедконфигуратионс|Boolean|Указывает, следует ли запретить пользователю редактировать только сети, определенные политикой.|
 
@@ -183,6 +192,15 @@ ms.locfileid: "44177718"
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
   "microsoftLauncherConfigurationEnabled": true,
+  "microsoftLauncherCustomWallpaperEnabled": true,
+  "microsoftLauncherCustomWallpaperImageUrl": "String",
+  "microsoftLauncherCustomWallpaperAllowUserModification": true,
+  "microsoftLauncherFeedEnabled": true,
+  "microsoftLauncherFeedAllowUserModification": true,
+  "microsoftLauncherDockPresenceConfiguration": "String",
+  "microsoftLauncherDockPresenceAllowUserModification": true,
+  "microsoftLauncherSearchBarPlacementConfiguration": "String",
+  "microsoftLauncherSearchBarPlacementAllowUserModification": true,
   "enrollmentProfile": "String",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,

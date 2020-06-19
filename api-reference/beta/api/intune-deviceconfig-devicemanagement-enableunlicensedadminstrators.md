@@ -1,0 +1,70 @@
+---
+title: действие Енаблеунлиценседадминстраторс
+description: После включения пользователи, которым назначена роль "Администраторы" через членство в назначениях ролей, больше не требуют назначенной лицензии Intune. У вас может быть до 350 нелицензированных нелицензированных участников для каждой группы безопасности AAD в назначении ролей, но для одной роли можно назначить несколько групп безопасности AAD, если вам требуется поддержка более 350 нелицензированных администраторов. Лицензированные администраторы продолжат действовать без ограничений, так как в этом случае применяются эти транзитивные членства, и они не подчиняются ограничению члена 350.
+author: dougeby
+localization_priority: Normal
+ms.prod: Intune
+doc_type: apiPageType
+ms.openlocfilehash: 882a5d1cafa8e25d4a69a0c525c0bb8d3b971cd1
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792809"
+---
+# <a name="enableunlicensedadminstrators-action"></a>действие Енаблеунлиценседадминстраторс
+
+Пространство имен: microsoft.graph
+
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+
+После включения пользователи, которым назначена роль "Администраторы" через членство в назначениях ролей, больше не требуют назначенной лицензии Intune. У вас может быть до 350 нелицензированных нелицензированных участников для каждой группы безопасности AAD в назначении ролей, но для одной роли можно назначить несколько групп безопасности AAD, если вам требуется поддержка более 350 нелицензированных администраторов. Лицензированные администраторы продолжат действовать без ограничений, так как в этом случае применяются эти транзитивные членства, и они не подчиняются ограничению члена 350.
+
+## <a name="prerequisites"></a>Необходимые компоненты
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/enableUnlicensedAdminstrators
+```
+
+## <a name="request-headers"></a>Заголовки запроса
+|Заголовок|Значение|
+|:---|:---|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
+
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
+
+## <a name="example"></a>Пример
+
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/enableUnlicensedAdminstrators
+```
+
+### <a name="response"></a>Отклик
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+``` http
+HTTP/1.1 204 No Content
+```
+
+
+

@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 959c7c7d0f38dfa036f74cd4fd36f26a2fbfb442
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a6043023bd734a571028baad6b0f8ad26e12d04e
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179322"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793474"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -36,6 +36,10 @@ ms.locfileid: "44179322"
 - [Результат группового действия в отношении управляемых устройств](intune-devices-bulkmanageddeviceactionresult.md)
 - [Тип корпуса](intune-devices-chassistype.md)
 - [Условие управления циклического геофенсинга](intune-fencing-circulargeofencemanagementcondition.md)
+- [Сводка по соуправлению устройствами](intune-devices-comanageddevicessummary.md)
+- [Устройство, подлежащий управлению](intune-devices-comanagementeligibledevice.md)
+- [Сводка по подходящим устройствам для управления](intune-devices-comanagementeligibledevicessummary.md)
+- [Тип подходящего управления](intune-devices-comanagementeligibletype.md)
 - [Состояние соответствия требованиям](intune-devices-compliancestate.md)
 - [Действие диспетчера конфигураций](intune-devices-configurationmanageraction.md)
 - [Состояние доставки действий Configuration Manager](intune-devices-configurationmanageractiondeliverystatus.md)
@@ -49,6 +53,9 @@ ms.locfileid: "44179322"
 - [Удаление пользователя из результата действия над общим устройством Apple](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [Обнаруженное приложение](intune-devices-detectedapp.md)
 - [Результат действия над устройством](intune-devices-deviceactionresult.md)
+- [Сценарий соответствия устройства требованиям](intune-devices-devicecompliancescript.md)
+- [Состояние устройства со сценариями соответствия требованиям устройства](intune-devices-devicecompliancescriptdevicestate.md)
+- [Сводка по запуску сценария соответствия требованиям устройства](intune-devices-devicecompliancescriptrunsummary.md)
 - [Причина сбоя регистрации устройства](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [Сводка по состоянию доступа к Exchange для устройств](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Геолокация устройств](intune-devices-devicegeolocation.md)
@@ -220,6 +227,7 @@ ms.locfileid: "44179322"
 - [Обзор анализа пользовательского интерфейса](intune-devices-userexperienceanalyticsoverview.md)
 - [Сводка по регрессии аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsregressionsummary.md)
 - [Журнал оценки для службы пользовательского интерфейса](intune-devices-userexperienceanalyticsscorehistory.md)
+- [Параметры аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticssettings.md)
 - [Анализ взаимодействия с пользователем, собранный по](intune-devices-userexperienceanalyticssummarizedby.md)
 - [Выражение условия переменного управления](intune-fencing-variablemanagementconditionexpression.md)
 - [Состояние развертывания Windows для автопилота](intune-troubleshooting-windowsautopilotdeploymentstate.md)

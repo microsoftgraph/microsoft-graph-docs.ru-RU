@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 02441b9a19c8648f0ec921c66bfd6cb541939b42
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8056b2d592545dbb8cda81c559c33fd356b2c35c
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453210"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793614"
 ---
 # <a name="devicemanagementreports-resource-type"></a>Тип ресурса Девицеманажементрепортс
 
@@ -32,6 +32,7 @@ ms.locfileid: "43453210"
 |[действие Жетполицинонкомплианцеметадата](../api/intune-reporting-devicemanagementreports-getpolicynoncompliancemetadata.md)|Stream|Н/Д|
 |[действие Жетполицинонкомплианцесуммарирепорт](../api/intune-reporting-devicemanagementreports-getpolicynoncompliancesummaryreport.md)|Stream|Н/Д|
 |[действие Жетсеттингнонкомплианцерепорт](../api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport.md)|Stream|Н/Д|
+|[действие Жетрепортфилтерс](../api/intune-reporting-devicemanagementreports-getreportfilters.md)|Stream|Н/Д|
 |[действие Жесисторикалрепорт](../api/intune-reporting-devicemanagementreports-gethistoricalreport.md)|Stream|Н/Д|
 |[действие Жеткачедрепорт](../api/intune-reporting-devicemanagementreports-getcachedreport.md)|Stream|Н/Д|
 

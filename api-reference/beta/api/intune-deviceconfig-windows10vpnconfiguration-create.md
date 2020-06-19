@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 805333ca59440bcf0abfe097c9ab9faf4360160b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d0e413faebe78dd10736b30f9f5e37a16e089cee
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43337932"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792613"
 ---
 # <a name="create-windows10vpnconfiguration"></a>Создание windows10VpnConfiguration
 
@@ -23,7 +23,7 @@ ms.locfileid: "43337932"
 Создание нового объекта [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -74,7 +74,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |енаблеалвайсон|Boolean|Включение режима "всегда включено".|
 |енабледевицетуннел|Boolean|Включите туннель устройства.|
 |енабледнсрегистратион|Boolean|Включить регистрацию IP-адресов с использованием внутренней DNS.|
-|днссуффиксес|Коллекция объектов string|Укажите DNS-суффиксы, которые необходимо добавить в список поиска DNS, чтобы правильно маршрутизировать короткие имена.|
+|днссуффиксес|Коллекция String|Укажите DNS-суффиксы, которые необходимо добавить в список поиска DNS, чтобы правильно маршрутизировать короткие имена.|
 |Параметр authenticationmethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `customEapXml`.|
 |ремемберусеркредентиалс|Boolean|Запомнить учетные данные пользователя.|
 |енаблекондитионалакцесс|Boolean|Включение условного доступа.|
@@ -89,11 +89,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |траффикрулес|Коллекция [впнтраффикруле](../resources/intune-deviceconfig-vpntrafficrule.md)|Правила трафика. Эта коллекция может содержать не более 1000 элементов.|
 |сылает|Коллекция [впнрауте](../resources/intune-deviceconfig-vpnroute.md)|Маршруты (необязательно для сторонних поставщиков). Эта коллекция может содержать не более 1000 элементов.|
 |днсрулес|Коллекция [впнднсруле](../resources/intune-deviceconfig-vpndnsrule.md)|Правила DNS. Эта коллекция может содержать не более 1000 элементов.|
-|trustedNetworkDomains|Коллекция объектов string|Доверенные сетевые домены|
+|trustedNetworkDomains|Коллекция String|Доверенные сетевые домены|
+|криптографисуите|[криптографисуите](../resources/intune-deviceconfig-cryptographysuite.md)|Параметры безопасности комплекта шифрования для VPN-подключения по протоколу IKEv2 в Windows10 и более поздних версий |
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -103,7 +104,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 4160
+Content-length: 4463
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -241,16 +242,25 @@ Content-length: 4160
   ],
   "trustedNetworkDomains": [
     "Trusted Network Domains value"
-  ]
+  ],
+  "cryptographySuite": {
+    "@odata.type": "microsoft.graph.cryptographySuite",
+    "encryptionMethod": "des",
+    "integrityCheckMethod": "sha1_96",
+    "dhGroup": "group2",
+    "cipherTransformConstants": "des",
+    "authenticationTransformConstants": "sha1_96",
+    "pfsGroup": "pfs2"
+  }
 }
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4332
+Content-Length: 4635
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -391,7 +401,16 @@ Content-Length: 4332
   ],
   "trustedNetworkDomains": [
     "Trusted Network Domains value"
-  ]
+  ],
+  "cryptographySuite": {
+    "@odata.type": "microsoft.graph.cryptographySuite",
+    "encryptionMethod": "des",
+    "integrityCheckMethod": "sha1_96",
+    "dhGroup": "group2",
+    "cipherTransformConstants": "des",
+    "authenticationTransformConstants": "sha1_96",
+    "pfsGroup": "pfs2"
+  }
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3bb1de3dbd95145bc7f1ce631175e9867deb1dde
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5800977f704b82ba83d82b7a0acdda8a2d6e6df2
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407696"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793432"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>Тип ресурса groupAssignmentTarget
 
@@ -28,6 +28,8 @@ ms.locfileid: "43407696"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
+|девицеандаппманажементассигнментфилтерид|String|Идентификатор фильтра для назначения назначения. Наследуется от [девицеандаппманажементассигнменттаржет](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
+|девицеандаппманажементассигнментфилтертипе|[девицеандаппманажементассигнментфилтертипе](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|Тип фильтра целевого назначения, например, Exclude или include. Наследуется от [девицеандаппманажементассигнменттаржет](../resources/intune-shared-deviceandappmanagementassignmenttarget.md). Возможные значения: `none`, `include`.|
 |groupId|String|Идентификатор группы-объекта назначения.|
 
 ## <a name="relationships"></a>Связи
@@ -43,6 +45,8 @@ ms.locfileid: "43407696"
 ``` json
 {
   "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+  "deviceAndAppManagementAssignmentFilterId": "String",
+  "deviceAndAppManagementAssignmentFilterType": "String",
   "groupId": "String"
 }
 ```

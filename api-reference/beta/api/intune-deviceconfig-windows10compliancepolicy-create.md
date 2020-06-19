@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a5222dbd92ba77544e367d6c29e2a1ec7d1de4fb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e69151a5f0b7a0bc8c0558fc9f178714e7520d1c
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43340820"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792641"
 ---
 # <a name="create-windows10compliancepolicy"></a>Создание windows10CompliancePolicy
 
@@ -23,7 +23,7 @@ ms.locfileid: "43340820"
 Создает объект [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -53,7 +53,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
@@ -91,6 +91,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |deviceThreatProtectionRequiredSecurityLevel|[девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Потребовать минимального уровня риска для защиты от угроз для отчетов о несоответствии. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |конфигуратионманажеркомплианцерекуиред|Boolean|Необходимо учитывать состояние соответствия SCCM в отношении состояния соответствия Intune.|
 |тпмрекуиред|Boolean|Требуется наличие доверенного платформенного модуля (TPM).|
+|девицекомплианцеполицискрипт|[девицекомплианцеполицискрипт](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|Пока не задокументировано.|
 
 
 
@@ -104,7 +105,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1690
+Content-length: 1911
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -151,16 +152,21 @@ Content-length: 1690
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
   "configurationManagerComplianceRequired": true,
-  "tpmRequired": true
+  "tpmRequired": true,
+  "deviceCompliancePolicyScript": {
+    "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
+    "deviceComplianceScriptId": "Device Compliance Script Id value",
+    "rulesContent": "cnVsZXNDb250ZW50"
+  }
 }
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1862
+Content-Length: 2083
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -210,7 +216,12 @@ Content-Length: 1862
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
   "configurationManagerComplianceRequired": true,
-  "tpmRequired": true
+  "tpmRequired": true,
+  "deviceCompliancePolicyScript": {
+    "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
+    "deviceComplianceScriptId": "Device Compliance Script Id value",
+    "rulesContent": "cnVsZXNDb250ZW50"
+  }
 }
 ```
 

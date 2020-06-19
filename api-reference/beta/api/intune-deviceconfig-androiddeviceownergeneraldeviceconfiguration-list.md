@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e5032a36c2a1ea889b798b9cf20876e1e4f21e5
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 50a9d91cae7975d259720219932872b4579ee183
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178733"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793124"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Список Андроиддевицеовнерженералдевицеконфигуратионс
 
@@ -23,7 +23,7 @@ ms.locfileid: "44178733"
 Список свойств и связей объектов [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -62,11 +62,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5148
+Content-Length: 5761
 
 {
   "value": [
@@ -114,6 +114,15 @@ Content-Length: 5148
       "cellularBlockWiFiTethering": true,
       "certificateCredentialConfigurationDisabled": true,
       "microsoftLauncherConfigurationEnabled": true,
+      "microsoftLauncherCustomWallpaperEnabled": true,
+      "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
+      "microsoftLauncherCustomWallpaperAllowUserModification": true,
+      "microsoftLauncherFeedEnabled": true,
+      "microsoftLauncherFeedAllowUserModification": true,
+      "microsoftLauncherDockPresenceConfiguration": "show",
+      "microsoftLauncherDockPresenceAllowUserModification": true,
+      "microsoftLauncherSearchBarPlacementConfiguration": "top",
+      "microsoftLauncherSearchBarPlacementAllowUserModification": true,
       "enrollmentProfile": "dedicatedDevice",
       "dataRoamingBlocked": true,
       "dateTimeConfigurationBlocked": true,

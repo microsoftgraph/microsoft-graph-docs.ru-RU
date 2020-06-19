@@ -1,0 +1,106 @@
+---
+title: Обновление Девицекомплианцескриптрунсуммари
+description: Обновление свойств объекта Девицекомплианцескриптрунсуммари.
+author: dougeby
+localization_priority: Normal
+ms.prod: Intune
+doc_type: apiPageType
+ms.openlocfilehash: 906f98b2d6bc3603c750e38d8583ba37dc937a72
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792431"
+---
+# <a name="update-devicecompliancescriptrunsummary"></a>Обновление Девицекомплианцескриптрунсуммари
+
+Пространство имен: microsoft.graph
+
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+
+Обновление свойств объекта [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md) .
+
+## <a name="prerequisites"></a>Необходимые компоненты
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSummary
+```
+
+## <a name="request-headers"></a>Заголовки запроса
+|Заголовок|Значение|
+|:---|:---|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
+
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md) в формате JSON.
+
+В следующей таблице приведены свойства, необходимые при создании [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md).
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|id|String|Ключевой объект сводки запуска сценария соответствия устройства. Это свойство доступно только для чтения.|
+|ноиссуедетектеддевицекаунт|Int32|Количество устройств, для которых сценарий обнаружения не обнаружил проблему, и устройство находится в работоспособном состоянии. Допустимые значения: от 2147483648 до 2147483647|
+|иссуедетектеддевицекаунт|Int32|Количество устройств, для которых сценарий обнаружения обнаружил неполадку. Допустимые значения: от 2147483648 до 2147483647|
+|детектионскриптеррордевицекаунт|Int32|Количество устройств, на которых возникла ошибка при выполнении сценария обнаружения и который не был выполнен. Допустимые значения: от 2147483648 до 2147483647|
+|детектионскриптпендингдевицекаунт|Int32|Количество устройств, на которых еще не выполнялась последняя версия сценария соответствия требованиям устройства. Допустимые значения: от 2147483648 до 2147483647|
+|ластскриптрундатетиме|DateTimeOffset|Время последнего запуска сценария на всех устройствах|
+
+
+
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md) в тексте отклика.
+
+## <a name="example"></a>Пример
+
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+``` http
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSummary
+Content-type: application/json
+Content-length: 295
+
+{
+  "@odata.type": "#microsoft.graph.deviceComplianceScriptRunSummary",
+  "noIssueDetectedDeviceCount": 10,
+  "issueDetectedDeviceCount": 8,
+  "detectionScriptErrorDeviceCount": 15,
+  "detectionScriptPendingDeviceCount": 1,
+  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
+}
+```
+
+### <a name="response"></a>Отклик
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 344
+
+{
+  "@odata.type": "#microsoft.graph.deviceComplianceScriptRunSummary",
+  "id": "dad42f14-2f14-dad4-142f-d4da142fd4da",
+  "noIssueDetectedDeviceCount": 10,
+  "issueDetectedDeviceCount": 8,
+  "detectionScriptErrorDeviceCount": 15,
+  "detectionScriptPendingDeviceCount": 1,
+  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
+}
+```
+
+
+

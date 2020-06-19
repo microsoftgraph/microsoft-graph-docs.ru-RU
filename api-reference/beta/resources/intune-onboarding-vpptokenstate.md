@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 21979c33bc1dcc06b83f9169341aa67ca516f066
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c286785522405946776907a296e475924ba8d4a8
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446825"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793635"
 ---
 # <a name="vpptokenstate-enum-type"></a>тип перечисления Впптокенстате
 
@@ -26,10 +26,11 @@ ms.locfileid: "43446825"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Состояние по умолчанию.|
-|верно|1,1|Токен является допустимым.|
+|верно|1 |Токен является допустимым.|
 |истек|2|Срок действия маркера истек.|
 |Недопустимый|4|Недопустимый маркер.|
 |ассигнедтоекстерналмдм|4 |Маркер управляется другой службой MDM.|
+|дупликателокатионид|5 |Маркер связан с тем же расположением, что и другой маркер учетной записи.|
 
 
 

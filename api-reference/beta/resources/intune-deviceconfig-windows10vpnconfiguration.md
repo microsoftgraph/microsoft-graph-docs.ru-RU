@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14d15ad8be406c5f47a709152539d3dbe4f1c3b4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e2bd8c1cdc310959b647df0783aa99feab00bf59
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43318353"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793558"
 ---
 # <a name="windows10vpnconfiguration-resource-type"></a>Тип ресурса windows10VpnConfiguration
 
@@ -39,7 +39,7 @@ ms.locfileid: "43318353"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -57,7 +57,7 @@ ms.locfileid: "43318353"
 |енаблеалвайсон|Boolean|Включение режима "всегда включено".|
 |енабледевицетуннел|Boolean|Включите туннель устройства.|
 |енабледнсрегистратион|Boolean|Включить регистрацию IP-адресов с использованием внутренней DNS.|
-|днссуффиксес|Коллекция объектов string|Укажите DNS-суффиксы, которые необходимо добавить в список поиска DNS, чтобы правильно маршрутизировать короткие имена.|
+|днссуффиксес|Коллекция String|Укажите DNS-суффиксы, которые необходимо добавить в список поиска DNS, чтобы правильно маршрутизировать короткие имена.|
 |Параметр authenticationmethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `customEapXml`.|
 |ремемберусеркредентиалс|Boolean|Запомнить учетные данные пользователя.|
 |енаблекондитионалакцесс|Boolean|Включение условного доступа.|
@@ -72,7 +72,8 @@ ms.locfileid: "43318353"
 |траффикрулес|Коллекция [впнтраффикруле](../resources/intune-deviceconfig-vpntrafficrule.md)|Правила трафика. Эта коллекция может содержать не более 1000 элементов.|
 |сылает|Коллекция [впнрауте](../resources/intune-deviceconfig-vpnroute.md)|Маршруты (необязательно для сторонних поставщиков). Эта коллекция может содержать не более 1000 элементов.|
 |днсрулес|Коллекция [впнднсруле](../resources/intune-deviceconfig-vpndnsrule.md)|Правила DNS. Эта коллекция может содержать не более 1000 элементов.|
-|trustedNetworkDomains|Коллекция объектов string|Доверенные сетевые домены|
+|trustedNetworkDomains|Коллекция String|Доверенные сетевые домены|
+|криптографисуите|[криптографисуите](../resources/intune-deviceconfig-cryptographysuite.md)|Параметры безопасности комплекта шифрования для VPN-подключения по протоколу IKEv2 в Windows10 и более поздних версий |
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -234,7 +235,16 @@ ms.locfileid: "43318353"
   ],
   "trustedNetworkDomains": [
     "String"
-  ]
+  ],
+  "cryptographySuite": {
+    "@odata.type": "microsoft.graph.cryptographySuite",
+    "encryptionMethod": "String",
+    "integrityCheckMethod": "String",
+    "dhGroup": "String",
+    "cipherTransformConstants": "String",
+    "authenticationTransformConstants": "String",
+    "pfsGroup": "String"
+  }
 }
 ```
 

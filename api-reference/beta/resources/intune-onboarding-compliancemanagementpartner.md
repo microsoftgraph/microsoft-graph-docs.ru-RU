@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8acd32a4fbb664e40ead3ac125ad1ef1b4f29168
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a8a8ae2ff09fe47326c218af9bc84b7c51c882f0
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419008"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793824"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>Тип ресурса Комплианцеманажементпартнер
 
@@ -73,7 +73,9 @@ ms.locfileid: "43419008"
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String"
       }
     }
   ],
@@ -81,7 +83,9 @@ ms.locfileid: "43419008"
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String"
       }
     }
   ],
@@ -89,7 +93,9 @@ ms.locfileid: "43419008"
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String"
       }
     }
   ],
@@ -97,7 +103,9 @@ ms.locfileid: "43419008"
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String"
       }
     }
   ]

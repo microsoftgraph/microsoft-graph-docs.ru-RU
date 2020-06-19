@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 727efb9ad4a51790c0c07203ed5aef21f04aeef5
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: b5ce010bd629ff0c2bb149bc30a022f642494bcd
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44174981"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793194"
 ---
 # <a name="list-managedebookassignments"></a>Перечисление объектов managedEBookAssignment
 
@@ -23,7 +23,7 @@ ms.locfileid: "44174981"
 Список свойств и связей объектов [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).
 
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -46,10 +46,10 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -61,11 +61,11 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedE
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 294
+Content-Length: 469
 
 {
   "value": [
@@ -73,7 +73,9 @@ Content-Length: 294
       "@odata.type": "#microsoft.graph.managedEBookAssignment",
       "id": "ae8b0d27-0d27-ae8b-270d-8bae270d8bae",
       "target": {
-        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       },
       "installIntent": "required"
     }

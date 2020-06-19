@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8caa1958ff2eaffbea4e2f001d1dfbe43055c06a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a12d81edd4079b7bea9dabe576dfe57a6420cc10
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43393889"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793264"
 ---
 # <a name="get-win32lobapp"></a>Получение win32LobApp
 
@@ -23,7 +23,7 @@ ms.locfileid: "43393889"
 Чтение свойств и связей объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -54,7 +54,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [win32LobApp](../resources/intune-apps-win32lobapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -66,11 +66,11 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3242
+Content-Length: 3625
 
 {
   "value": {
@@ -141,6 +141,18 @@ Content-Length: 3242
         "keyPath": "Key Path value",
         "valueName": "Value Name value",
         "detectionType": "exists"
+      }
+    ],
+    "rules": [
+      {
+        "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+        "ruleType": "requirement",
+        "check32BitOn64System": true,
+        "keyPath": "Key Path value",
+        "valueName": "Value Name value",
+        "operationType": "exists",
+        "operator": "equal",
+        "comparisonValue": "Comparison Value value"
       }
     ],
     "installExperience": {
