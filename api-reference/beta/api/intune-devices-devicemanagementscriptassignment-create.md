@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58365f649fb8641345a655144ea230aa091cae2e
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 8b43ec4ffeb081eb4865d0fbb7e7f7110bfeefa3
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176696"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792368"
 ---
-# <a name="create-devicemanagementscriptassignment"></a><span data-ttu-id="a752c-103">Создание Девицеманажементскриптассигнмент</span><span class="sxs-lookup"><span data-stu-id="a752c-103">Create deviceManagementScriptAssignment</span></span>
+# <a name="create-devicemanagementscriptassignment"></a><span data-ttu-id="cee17-103">Создание Девицеманажементскриптассигнмент</span><span class="sxs-lookup"><span data-stu-id="cee17-103">Create deviceManagementScriptAssignment</span></span>
 
-<span data-ttu-id="a752c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a752c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cee17-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cee17-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="a752c-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a752c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="cee17-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cee17-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a752c-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a752c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="cee17-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="cee17-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a752c-107">Создание нового объекта [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="a752c-107">Create a new [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) object.</span></span>
+<span data-ttu-id="cee17-107">Создание нового объекта [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="cee17-107">Create a new [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a752c-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="a752c-108">Prerequisites</span></span>
-<span data-ttu-id="a752c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a752c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="cee17-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="cee17-108">Prerequisites</span></span>
+<span data-ttu-id="cee17-109">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="cee17-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="cee17-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cee17-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a752c-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a752c-111">Permission type</span></span>|<span data-ttu-id="a752c-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="a752c-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="cee17-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cee17-111">Permission type</span></span>|<span data-ttu-id="cee17-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="cee17-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a752c-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a752c-113">Delegated (work or school account)</span></span>|<span data-ttu-id="a752c-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a752c-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="a752c-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a752c-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a752c-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a752c-116">Not supported.</span></span>|
-|<span data-ttu-id="a752c-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a752c-117">Application</span></span>|<span data-ttu-id="a752c-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a752c-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="cee17-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cee17-113">Delegated (work or school account)</span></span>|<span data-ttu-id="cee17-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cee17-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="cee17-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cee17-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cee17-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cee17-116">Not supported.</span></span>|
+|<span data-ttu-id="cee17-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cee17-117">Application</span></span>|<span data-ttu-id="cee17-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cee17-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a752c-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a752c-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cee17-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cee17-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -41,56 +41,60 @@ POST /deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a752c-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="a752c-120">Request headers</span></span>
-|<span data-ttu-id="a752c-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="a752c-121">Header</span></span>|<span data-ttu-id="a752c-122">Значение</span><span class="sxs-lookup"><span data-stu-id="a752c-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cee17-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="cee17-120">Request headers</span></span>
+|<span data-ttu-id="cee17-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="cee17-121">Header</span></span>|<span data-ttu-id="cee17-122">Значение</span><span class="sxs-lookup"><span data-stu-id="cee17-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a752c-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a752c-123">Authorization</span></span>|<span data-ttu-id="a752c-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a752c-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a752c-125">Accept</span><span class="sxs-lookup"><span data-stu-id="a752c-125">Accept</span></span>|<span data-ttu-id="a752c-126">application/json</span><span class="sxs-lookup"><span data-stu-id="a752c-126">application/json</span></span>|
+|<span data-ttu-id="cee17-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cee17-123">Authorization</span></span>|<span data-ttu-id="cee17-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cee17-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="cee17-125">Accept</span><span class="sxs-lookup"><span data-stu-id="cee17-125">Accept</span></span>|<span data-ttu-id="cee17-126">application/json</span><span class="sxs-lookup"><span data-stu-id="cee17-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a752c-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a752c-127">Request body</span></span>
-<span data-ttu-id="a752c-128">В тексте запроса добавьте представление объекта Девицеманажементскриптассигнмент в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a752c-128">In the request body, supply a JSON representation for the deviceManagementScriptAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cee17-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="cee17-127">Request body</span></span>
+<span data-ttu-id="cee17-128">В тексте запроса добавьте представление объекта Девицеманажементскриптассигнмент в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cee17-128">In the request body, supply a JSON representation for the deviceManagementScriptAssignment object.</span></span>
 
-<span data-ttu-id="a752c-129">В следующей таблице приведены свойства, необходимые при создании Девицеманажементскриптассигнмент.</span><span class="sxs-lookup"><span data-stu-id="a752c-129">The following table shows the properties that are required when you create the deviceManagementScriptAssignment.</span></span>
+<span data-ttu-id="cee17-129">В следующей таблице приведены свойства, необходимые при создании Девицеманажементскриптассигнмент.</span><span class="sxs-lookup"><span data-stu-id="cee17-129">The following table shows the properties that are required when you create the deviceManagementScriptAssignment.</span></span>
 
-|<span data-ttu-id="a752c-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="a752c-130">Property</span></span>|<span data-ttu-id="a752c-131">Тип</span><span class="sxs-lookup"><span data-stu-id="a752c-131">Type</span></span>|<span data-ttu-id="a752c-132">Описание</span><span class="sxs-lookup"><span data-stu-id="a752c-132">Description</span></span>|
+|<span data-ttu-id="cee17-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="cee17-130">Property</span></span>|<span data-ttu-id="cee17-131">Тип</span><span class="sxs-lookup"><span data-stu-id="cee17-131">Type</span></span>|<span data-ttu-id="cee17-132">Описание</span><span class="sxs-lookup"><span data-stu-id="cee17-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a752c-133">id</span><span class="sxs-lookup"><span data-stu-id="a752c-133">id</span></span>|<span data-ttu-id="a752c-134">Строка</span><span class="sxs-lookup"><span data-stu-id="a752c-134">String</span></span>|<span data-ttu-id="a752c-135">Ключ объекта назначения группы сценариев управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="a752c-135">Key of the device management script group assignment entity.</span></span> <span data-ttu-id="a752c-136">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a752c-136">This property is read-only.</span></span>|
-|<span data-ttu-id="a752c-137">target</span><span class="sxs-lookup"><span data-stu-id="a752c-137">target</span></span>|[<span data-ttu-id="a752c-138">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="a752c-138">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="a752c-139">Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.</span><span class="sxs-lookup"><span data-stu-id="a752c-139">The Id of the Azure Active Directory group we are targeting the script to.</span></span>|
+|<span data-ttu-id="cee17-133">id</span><span class="sxs-lookup"><span data-stu-id="cee17-133">id</span></span>|<span data-ttu-id="cee17-134">String</span><span class="sxs-lookup"><span data-stu-id="cee17-134">String</span></span>|<span data-ttu-id="cee17-135">Ключ объекта назначения группы сценариев управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="cee17-135">Key of the device management script group assignment entity.</span></span> <span data-ttu-id="cee17-136">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cee17-136">This property is read-only.</span></span>|
+|<span data-ttu-id="cee17-137">target</span><span class="sxs-lookup"><span data-stu-id="cee17-137">target</span></span>|[<span data-ttu-id="cee17-138">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="cee17-138">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="cee17-139">Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.</span><span class="sxs-lookup"><span data-stu-id="cee17-139">The Id of the Azure Active Directory group we are targeting the script to.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a752c-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="a752c-140">Response</span></span>
-<span data-ttu-id="a752c-141">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a752c-141">If successful, this method returns a `201 Created` response code and a [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cee17-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="cee17-140">Response</span></span>
+<span data-ttu-id="cee17-141">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cee17-141">If successful, this method returns a `201 Created` response code and a [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a752c-142">Пример</span><span class="sxs-lookup"><span data-stu-id="a752c-142">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cee17-142">Пример</span><span class="sxs-lookup"><span data-stu-id="cee17-142">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a752c-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="a752c-143">Request</span></span>
-<span data-ttu-id="a752c-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a752c-144">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="cee17-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="cee17-143">Request</span></span>
+<span data-ttu-id="cee17-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cee17-144">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments
 Content-type: application/json
-Content-length: 160
+Content-length: 327
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   }
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a752c-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="a752c-145">Response</span></span>
-<span data-ttu-id="a752c-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a752c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="cee17-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="cee17-145">Response</span></span>
+<span data-ttu-id="cee17-146">Here is an example of the response.</span><span class="sxs-lookup"><span data-stu-id="cee17-146">Here is an example of the response.</span></span> <span data-ttu-id="cee17-147">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="cee17-147">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="cee17-148">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="cee17-148">All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 209
+Content-Length: 376
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
   "id": "a87a601e-601e-a87a-1e60-7aa81e607aa8",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   }
 }
 ```
