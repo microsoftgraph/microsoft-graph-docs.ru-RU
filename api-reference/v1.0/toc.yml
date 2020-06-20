@@ -4593,6 +4593,8 @@ items:
                 href: api/user-list-joinedteams.md
               - name: Список всех команд
                 href: /graph/teams-list-all-teams?context=graph/api/1.0
+              - name: Получение первичного канала
+                href: api/team-get-primarychannel.md
           - name: Группа (команда)
             href: resources/group.md
             items:
@@ -4649,6 +4651,8 @@ items:
                 href: api/channel-patch.md
               - name: Удаление канала
                 href: api/channel-delete.md
+              - name: Получение папки с файлами
+                href: api/channel-get-filesfolder.md
               - name: Отправка сообщения
                 href: api/channel-post-messages.md
               - name: Ответ на сообщение
@@ -4967,7 +4971,7 @@ items:
                 href: api/range-unmerge.md
               - name: Очистка
                 href: api/range-clear.md
-              - name: Удалить
+              - name: Удаление
                 href: api/range-delete.md
           - name: Таблица
             href: resources/table.md
