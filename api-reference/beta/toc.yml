@@ -2209,8 +2209,12 @@ items:
                     href: resources/intune-apps-win32lobappfilesystemdetection.md
                   - name: Тип определения файловой системы бизнес-приложения Win32
                     href: resources/intune-apps-win32lobappfilesystemdetectiontype.md
+                  - name: Тип операции файловой системы Win32 бизнес-приложения Win32
+                    href: resources/intune-apps-win32lobappfilesystemoperationtype.md
                   - name: Требования к файловой системе для бизнес-приложения Win32
                     href: resources/intune-apps-win32lobappfilesystemrequirement.md
+                  - name: Правило системы файловой системы Win32 для бизнес-приложения
+                    href: resources/intune-apps-win32lobappfilesystemrule.md
                   - name: Интерфейс установки бизнес-приложения Win32
                     href: resources/intune-apps-win32lobappinstallexperience.md
                   - name: Информация msi бизнес-приложения Win32
@@ -2223,14 +2227,22 @@ items:
                     href: resources/intune-apps-win32lobapppowershellscriptdetectiontype.md
                   - name: Требование к скрипту PowerShell для бизнес-приложения Win32
                     href: resources/intune-apps-win32lobapppowershellscriptrequirement.md
+                  - name: Правило скрипта PowerShell для бизнес-приложения Win32
+                    href: resources/intune-apps-win32lobapppowershellscriptrule.md
                   - name: Определение кода продукта бизнес-приложения Win32
                     href: resources/intune-apps-win32lobappproductcodedetection.md
+                  - name: Правило для кода продукта Win32 бизнес-приложения
+                    href: resources/intune-apps-win32lobappproductcoderule.md
                   - name: Определение реестра бизнес-приложения Win32
                     href: resources/intune-apps-win32lobappregistrydetection.md
                   - name: Тип определения реестра бизнес-приложения Win32
                     href: resources/intune-apps-win32lobappregistrydetectiontype.md
                   - name: Требования к реестру бизнес-приложений Win32
                     href: resources/intune-apps-win32lobappregistryrequirement.md
+                  - name: Правило реестра для бизнес-приложения Win32
+                    href: resources/intune-apps-win32lobappregistryrule.md
+                  - name: Тип операции правила реестра для бизнес-приложения Win32
+                    href: resources/intune-apps-win32lobappregistryruleoperationtype.md
                   - name: Требования к бизнес-приложениям Win32
                     href: resources/intune-apps-win32lobapprequirement.md
                   - name: Поведение при перезапуске бизнес-приложения Win32
@@ -2239,6 +2251,14 @@ items:
                     href: resources/intune-apps-win32lobappreturncode.md
                   - name: Тип кода возврата бизнес-приложения Win32
                     href: resources/intune-apps-win32lobappreturncodetype.md
+                  - name: Правило бизнес-приложения Win32
+                    href: resources/intune-apps-win32lobapprule.md
+                  - name: Оператор правила бизнес-приложения Win32
+                    href: resources/intune-apps-win32lobappruleoperator.md
+                  - name: Тип правила бизнес-приложения Win32
+                    href: resources/intune-apps-win32lobappruletype.md
+                  - name: Тип операции правила скрипта PowerShell для Win32 LOB
+                    href: resources/intune-apps-win32lobpowershellscriptruleoperationtype.md
                   - name: Windows AppX
                     href: resources/intune-apps-windowsappx.md
                     items:
@@ -2328,7 +2348,7 @@ items:
                   - name: AppX-пакет Windows Phone 8.1
                     href: resources/intune-apps-windowsphone81appxbundle.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-windowsphone81appxbundle-list.md
                       - name: Получение
                         href: api/intune-apps-windowsphone81appxbundle-get.md
@@ -2354,7 +2374,7 @@ items:
                   - name: Windows Phone XAP
                     href: resources/intune-apps-windowsphonexap.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-apps-windowsphonexap-list.md
                       - name: Получение
                         href: api/intune-apps-windowsphonexap-get.md
@@ -2529,7 +2549,7 @@ items:
                   - name: Профиль регистрации DEP
                     href: resources/intune-enrollment-depenrollmentprofile.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-enrollment-depenrollmentprofile-list.md
                       - name: Получение
                         href: api/intune-enrollment-depenrollmentprofile-get.md
@@ -2568,7 +2588,7 @@ items:
                   - name: Параметр подключения DEP
                     href: resources/intune-enrollment-deponboardingsetting.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-enrollment-deponboardingsetting-list.md
                       - name: Получение
                         href: api/intune-enrollment-deponboardingsetting-get.md
@@ -2749,7 +2769,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-enrollment-windowsautopilotsettings-get.md
-                      - name: Update
+                      - name: Обновление
                         href: api/intune-enrollment-windowsautopilotsettings-update.md
                       - name: Действие sync
                         href: api/intune-enrollment-windowsautopilotsettings-sync.md
@@ -2786,7 +2806,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-get.md
-                      - name: Обновление
+                      - name: Update
                         href: api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-update.md
                   - name: Целевой объект AirPrint
                     href: resources/intune-deviceconfig-airprintdestination.md
@@ -2813,7 +2833,7 @@ items:
                   - name: Специальная конфигурация Android
                     href: resources/intune-deviceconfig-androidcustomconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androidcustomconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidcustomconfiguration-get.md
@@ -2909,6 +2929,19 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-update.md
+                  - name: Профиль сертификата PKCS для владельца устройства Android
+                    href: resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md
+                    items:
+                      - name: Список
+                        href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-list.md
+                      - name: Получение
+                        href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-get.md
+                      - name: Создание
+                        href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-create.md
+                      - name: Удалить
+                        href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-delete.md
+                      - name: Обновление
+                        href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-update.md
                   - name: Режим хранения владельца устройства Android
                     href: resources/intune-deviceconfig-androiddeviceownerplaystoremode.md
                   - name: Требуемый тип пароля для владельца устройства с Android
@@ -3004,7 +3037,7 @@ items:
                   - name: База профилей сертификатов Android for Work
                     href: resources/intune-deviceconfig-androidforworkcertificateprofilebase.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-androidforworkcertificateprofilebase-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidforworkcertificateprofilebase-get.md
@@ -3182,7 +3215,7 @@ items:
                   - name: Общая конфигурация устройств для Android
                     href: resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
@@ -3223,7 +3256,7 @@ items:
                   - name: Профиль сертификата PKCS Android
                     href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-get.md
@@ -3501,6 +3534,8 @@ items:
                     href: resources/intune-deviceconfig-applicationguardblockfiletransfertype.md
                   - name: Активированные опции Application Guard
                     href: resources/intune-deviceconfig-applicationguardenabledoptions.md
+                  - name: Константа преобразования проверки подлинности
+                    href: resources/intune-deviceconfig-authenticationtransformconstant.md
                   - name: Метода отключения уведомления автоматического перезапуска
                     href: resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md
                   - name: Режим автоматического обновления
@@ -3546,20 +3581,26 @@ items:
                     href: resources/intune-deviceconfig-certificatevalidityperiodscale.md
                   - name: Разрешение на изменение параметров UEFI
                     href: resources/intune-deviceconfig-changeuefisettingspermission.md
+                  - name: Код
+                    href: resources/intune-deviceconfig-code.md
                   - name: Использование конфигурации
                     href: resources/intune-deviceconfig-configurationusage.md
                   - name: Расширение единого входа для учетных данных
                     href: resources/intune-deviceconfig-credentialsinglesignonextension.md
+                  - name: Набор криптографии
+                    href: resources/intune-deviceconfig-cryptographysuite.md
                   - name: Альтернативное имя настраиваемого субъекта
                     href: resources/intune-deviceconfig-customsubjectalternativename.md
                   - name: Настраиваемое окно времени обновления
                     href: resources/intune-deviceconfig-customupdatetimewindow.md
+                  - name: Тип данных
+                    href: resources/intune-deviceconfig-datatype.md
                   - name: День недели
                     href: resources/intune-deviceconfig-dayofweek.md
                   - name: Политика соответствия устройств требованиям по умолчанию
                     href: resources/intune-deviceconfig-defaultdevicecompliancepolicy.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-defaultdevicecompliancepolicy-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-defaultdevicecompliancepolicy-get.md
@@ -3626,7 +3667,7 @@ items:
                   - name: 'Элемент действия, касающегося соответствия устройства требованиям'
                     href: resources/intune-deviceconfig-devicecomplianceactionitem.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-devicecomplianceactionitem-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-devicecomplianceactionitem-get.md
@@ -3643,7 +3684,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-deviceconfig-devicecompliancedeviceoverview-get.md
-                      - name: Обновление
+                      - name: Update
                         href: api/intune-deviceconfig-devicecompliancedeviceoverview-update.md
                   - name: 'Состояние устройств, касающееся соответствия устройств требованиям'
                     href: resources/intune-deviceconfig-devicecompliancedevicestatus.md
@@ -3678,6 +3719,8 @@ items:
                         href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-get.md
                       - name: Update
                         href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-update.md
+                  - name: Сценарий политики соответствия требованиям устройств
+                    href: resources/intune-deviceconfig-devicecompliancepolicyscript.md
                   - name: Состояние соответствия устройства параметру политики
                     href: resources/intune-deviceconfig-devicecompliancepolicysettingstate.md
                   - name: Сводка по состоянию соответствия устройств параметру политики
@@ -3706,6 +3749,14 @@ items:
                         href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-update.md
+                  - name: Ошибка сценария соответствия требованиям устройства
+                    href: resources/intune-deviceconfig-devicecompliancescripterror.md
+                  - name: Правило соответствия требованиям устройств
+                    href: resources/intune-deviceconfig-devicecompliancescriptrule.md
+                  - name: Ошибка правила для сценария соответствия требованиям устройства
+                    href: resources/intune-deviceconfig-devicecompliancescriptruleerror.md
+                  - name: Результат проверки сценария соответствия требованиям устройства
+                    href: resources/intune-deviceconfig-devicecompliancescriptvalidationresult.md
                   - name: Тип ресурса deviceComplianceSettingState
                     href: resources/intune-deviceconfig-devicecompliancesettingstate.md
                     items:
@@ -3821,7 +3872,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-deviceconfig-deviceconfigurationuserstatesummary-get.md
-                      - name: Обновление
+                      - name: Update
                         href: api/intune-deviceconfig-deviceconfigurationuserstatesummary-update.md
                   - name: 'Состояние пользователей, касающееся конфигураций устройств'
                     href: resources/intune-deviceconfig-deviceconfigurationuserstatus.md
@@ -3846,6 +3897,8 @@ items:
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md
                   - name: Тип правила применимости управления устройствами
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md
+                  - name: Центр сертификации для управления устройствами
+                    href: resources/intune-deviceconfig-devicemanagementcertificationauthority.md
                   - name: Параметры управления устройствами
                     href: resources/intune-deviceconfig-devicemanagementsettings.md
                   - name: Локальный пользователь или группа для прав пользователя для управления устройством
@@ -3858,6 +3911,8 @@ items:
                     href: resources/intune-deviceconfig-devicetypes.md
                   - name: Режим отправки диагностических данных
                     href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
+                  - name: Группа Диффи Диффи/Хелмана
+                    href: resources/intune-deviceconfig-diffiehellmangroup.md
                   - name: Тип политики перечисления устройства защиты DMA
                     href: resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md
                   - name: Источник доменных имен
@@ -4002,7 +4057,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-grouppolicy-grouppolicydefinitionfile-get.md
-                      - name: Update
+                      - name: Обновление
                         href: api/intune-grouppolicy-grouppolicydefinitionfile-update.md
                   - name: Значение определения политики группы
                     href: resources/intune-grouppolicy-grouppolicydefinitionvalue.md
@@ -4432,7 +4487,7 @@ items:
                   - name: Конфигурация устройств с iOS для образования
                     href: resources/intune-deviceconfig-ioseducationdeviceconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-ioseducationdeviceconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-ioseducationdeviceconfiguration-get.md
@@ -4494,7 +4549,7 @@ items:
                   - name: Профиль импортированного сертификата PFX для iOS
                     href: resources/intune-deviceconfig-iosimportedpfxcertificateprofile.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-get.md
@@ -4615,7 +4670,7 @@ items:
                   - name: Конфигурация Wi-Fi для iOS
                     href: resources/intune-deviceconfig-ioswificonfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-ioswificonfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-ioswificonfiguration-get.md
@@ -4698,6 +4753,14 @@ items:
                         href: api/intune-deviceconfig-macoscompliancepolicy-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-macoscompliancepolicy-update.md
+                  - name: политика клиента кэширования содержимого macOS
+                    href: resources/intune-deviceconfig-macoscontentcachingclientpolicy.md
+                  - name: родительская политика выбора кэширования содержимого macOS
+                    href: resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md
+                  - name: Политика однорангового кэширования содержимого macOS
+                    href: resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md
+                  - name: тип кэширования контента macOS
+                    href: resources/intune-deviceconfig-macoscontentcachingtype.md
                   - name: расширение единого входа для учетных данных macOS
                     href: resources/intune-deviceconfig-macoscredentialsinglesignonextension.md
                   - name: Конфигурация настраиваемого приложения macOS
@@ -4716,7 +4779,7 @@ items:
                   - name: Специальная конфигурация macOS
                     href: resources/intune-deviceconfig-macoscustomconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -4787,7 +4850,7 @@ items:
                   - name: Общая конфигурация устройств с macOS
                     href: resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-get.md
@@ -4924,7 +4987,7 @@ items:
                   - name: Состояние сертификата управляемого устройства
                     href: resources/intune-deviceconfig-manageddevicecertificatestate.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-manageddevicecertificatestate-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-manageddevicecertificatestate-get.md
@@ -4971,12 +5034,16 @@ items:
                     href: resources/intune-deviceconfig-mediacontentratingunitedstates.md
                   - name: Тип ограничения для лимитного подключения
                     href: resources/intune-deviceconfig-meteredconnectionlimittype.md
+                  - name: Сведения о присутствии запуска Microsoft Launcher
+                    href: resources/intune-deviceconfig-microsoftlauncherdockpresence.md
+                  - name: Размещение панели поиска Microsoft Launcher
+                    href: resources/intune-deviceconfig-microsoftlaunchersearchbarplacement.md
                   - name: Канал Miracast
                     href: resources/intune-deviceconfig-miracastchannel.md
                   - name: Соединитель NDES
                     href: resources/intune-deviceconfig-ndesconnector.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-ndesconnector-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-ndesconnector-get.md
@@ -5027,6 +5094,10 @@ items:
                         href: api/intune-raimportcerts-onpremencryptedpayload-update.md
                   - name: Диапазон версий операционной системы
                     href: resources/intune-deviceconfig-operatingsystemversionrange.md
+                  - name: Оператор
+                    href: resources/intune-deviceconfig-operator.md
+                  - name: Безопасная пересылка группы
+                    href: resources/intune-deviceconfig-perfectforwardsecrecygroup.md
                   - name: Запрос на получение шифрования PFX
                     href: resources/intune-raimportcerts-pfxrecryptionrequest.md
                     items:
@@ -5131,7 +5202,7 @@ items:
                   - name: Объект settingStateDeviceSummary
                     href: resources/intune-deviceconfig-settingstatedevicesummary.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-settingstatedevicesummary-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-settingstatedevicesummary-get.md
@@ -5184,7 +5255,7 @@ items:
                   - name: Неподдерживаемая конфигурация устройства
                     href: resources/intune-deviceconfig-unsupporteddeviceconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-unsupporteddeviceconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-unsupporteddeviceconfiguration-get.md
@@ -5339,7 +5410,7 @@ items:
                   - name: Конфигурация профиля электронной почты EAS для Windows 10
                     href: resources/intune-deviceconfig-windows10easemailprofileconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-windows10easemailprofileconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-windows10easemailprofileconfiguration-get.md
@@ -5488,7 +5559,7 @@ items:
                   - name: "Конфигурация VPN для Windows\_10"
                     href: resources/intune-deviceconfig-windows10vpnconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-windows10vpnconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-windows10vpnconfiguration-get.md
@@ -5566,7 +5637,7 @@ items:
                   - name: Конфигурация VPN для Windows 8.1
                     href: resources/intune-deviceconfig-windows81vpnconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-windows81vpnconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-windows81vpnconfiguration-get.md
@@ -5889,7 +5960,7 @@ items:
                   - name: Конфигурация VPN для Windows
                     href: resources/intune-deviceconfig-windowsvpnconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-windowsvpnconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-windowsvpnconfiguration-get.md
@@ -5978,7 +6049,7 @@ items:
                   - name: Событие аудита
                     href: resources/intune-auditing-auditevent.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-auditing-auditevent-list.md
                       - name: Получение
                         href: api/intune-auditing-auditevent-get.md
@@ -6013,6 +6084,25 @@ items:
                         href: api/intune-fencing-circulargeofencemanagementcondition-delete.md
                       - name: Обновление
                         href: api/intune-fencing-circulargeofencemanagementcondition-update.md
+                  - name: Сводка по соуправлению устройствами
+                    href: resources/intune-devices-comanageddevicessummary.md
+                  - name: 'Устройство, подлежащий управлению'
+                    href: resources/intune-devices-comanagementeligibledevice.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-comanagementeligibledevice-list.md
+                      - name: Получение
+                        href: api/intune-devices-comanagementeligibledevice-get.md
+                      - name: Создание
+                        href: api/intune-devices-comanagementeligibledevice-create.md
+                      - name: Удалить
+                        href: api/intune-devices-comanagementeligibledevice-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-comanagementeligibledevice-update.md
+                  - name: Сводка по подходящим устройствам для управления
+                    href: resources/intune-devices-comanagementeligibledevicessummary.md
+                  - name: Тип подходящего управления
+                    href: resources/intune-devices-comanagementeligibletype.md
                   - name: Состояние соответствия требованиям
                     href: resources/intune-devices-compliancestate.md
                   - name: Действие диспетчера конфигураций
@@ -6053,7 +6143,7 @@ items:
                   - name: Обнаруженное приложение
                     href: resources/intune-devices-detectedapp.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-detectedapp-list.md
                       - name: Получение
                         href: api/intune-devices-detectedapp-get.md
@@ -6065,6 +6155,41 @@ items:
                         href: api/intune-devices-detectedapp-update.md
                   - name: Результат действия с устройством
                     href: resources/intune-devices-deviceactionresult.md
+                  - name: Сценарий соответствия устройства требованиям
+                    href: resources/intune-devices-devicecompliancescript.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-devicecompliancescript-list.md
+                      - name: Получение
+                        href: api/intune-devices-devicecompliancescript-get.md
+                      - name: Создание
+                        href: api/intune-devices-devicecompliancescript-create.md
+                      - name: Удалить
+                        href: api/intune-devices-devicecompliancescript-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-devicecompliancescript-update.md
+                      - name: Действие назначения
+                        href: api/intune-devices-devicecompliancescript-assign.md
+                  - name: Состояние устройства со сценариями соответствия требованиям устройства
+                    href: resources/intune-devices-devicecompliancescriptdevicestate.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-devicecompliancescriptdevicestate-list.md
+                      - name: Получение
+                        href: api/intune-devices-devicecompliancescriptdevicestate-get.md
+                      - name: Создание
+                        href: api/intune-devices-devicecompliancescriptdevicestate-create.md
+                      - name: Удалить
+                        href: api/intune-devices-devicecompliancescriptdevicestate-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-devicecompliancescriptdevicestate-update.md
+                  - name: Сводка по запуску сценария соответствия требованиям устройства
+                    href: resources/intune-devices-devicecompliancescriptrunsummary.md
+                    items:
+                      - name: Получение
+                        href: api/intune-devices-devicecompliancescriptrunsummary-get.md
+                      - name: Update
+                        href: api/intune-devices-devicecompliancescriptrunsummary-update.md
                   - name: Причина сбоя регистрации устройства
                     href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
                   - name: Сводка по состоянию доступа к Exchange с устройств
@@ -6173,7 +6298,7 @@ items:
                   - name: Экземпляр абстрактного сложного параметра управления устройствами
                     href: resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-get.md
@@ -6270,7 +6395,7 @@ items:
                   - name: Экземпляр сложного параметра управления устройствами
                     href: resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-get.md
@@ -6390,7 +6515,7 @@ items:
                   - name: Состояния пользователя намерения управления устройствами
                     href: resources/intune-deviceintent-devicemanagementintentuserstate.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceintent-devicemanagementintentuserstate-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementintentuserstate-get.md
@@ -6492,7 +6617,7 @@ items:
                   - name: Определение параметра управления устройствами
                     href: resources/intune-deviceintent-devicemanagementsettingdefinition.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceintent-devicemanagementsettingdefinition-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementsettingdefinition-get.md
@@ -6835,7 +6960,7 @@ items:
                   - name: Намерение и состояние мобильного приложения
                     href: resources/intune-troubleshooting-mobileappintentandstate.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-troubleshooting-mobileappintentandstate-list.md
                       - name: Получение
                         href: api/intune-troubleshooting-mobileappintentandstate-get.md
@@ -6920,7 +7045,7 @@ items:
                   - name: Аудит удаленных действий
                     href: resources/intune-devices-remoteactionaudit.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-remoteactionaudit-list.md
                       - name: Получение
                         href: api/intune-devices-remoteactionaudit-get.md
@@ -7141,6 +7266,8 @@ items:
                         href: api/intune-devices-userexperienceanalyticsscorehistory-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsscorehistory-update.md
+                  - name: Параметры аналитики взаимодействия с пользователем
+                    href: resources/intune-devices-userexperienceanalyticssettings.md
                   - name: 'Анализ взаимодействия с пользователем, собранный по'
                     href: resources/intune-devices-userexperienceanalyticssummarizedby.md
                   - name: Выражение условия переменного управления
@@ -7228,7 +7355,7 @@ items:
                   - name: Тип ресурса windowsManagementAppHealthState
                     href: resources/intune-devices-windowsmanagementapphealthstate.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-devices-windowsmanagementapphealthstate-list.md
                       - name: Получение
                         href: api/intune-devices-windowsmanagementapphealthstate-get.md
@@ -7347,7 +7474,7 @@ items:
                   - name: Работа управляемых приложений
                     href: resources/intune-mam-managedappoperation.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-mam-managedappoperation-list.md
                       - name: Получение
                         href: api/intune-mam-managedappoperation-get.md
@@ -7357,6 +7484,8 @@ items:
                         href: api/intune-mam-managedappoperation-delete.md
                       - name: Обновление
                         href: api/intune-mam-managedappoperation-update.md
+                  - name: Уровень перенаправления для номера телефона управляемого приложения
+                    href: resources/intune-mam-managedappphonenumberredirectlevel.md
                   - name: Набор символов ПИН-кода управляемого приложения
                     href: resources/intune-mam-managedapppincharacterset.md
                   - name: Политика управляемых приложений
@@ -7473,7 +7602,7 @@ items:
                   - name: Файл AppLocker для Windows Information Protection
                     href: resources/intune-mam-windowsinformationprotectionapplockerfile.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-mam-windowsinformationprotectionapplockerfile-list.md
                       - name: Получение
                         href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
@@ -7524,7 +7653,7 @@ items:
                   - name: Политика Windows Information Protection
                     href: resources/intune-mam-windowsinformationprotectionpolicy.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-mam-windowsinformationprotectionpolicy-list.md
                       - name: Получение
                         href: api/intune-mam-windowsinformationprotectionpolicy-get.md
@@ -7693,7 +7822,7 @@ items:
                   - name: Соединитель Mobile Threat Defense
                     href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                       - name: Получение
                         href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -7768,7 +7897,7 @@ items:
                   - name: Настройка страницы завершения регистрации в Windows 10
                     href: resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-list.md
                       - name: Получение
                         href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-get.md
@@ -7883,7 +8012,7 @@ items:
                         href: api/intune-rbac-rolescopetag-delete.md
                       - name: Обновление
                         href: api/intune-rbac-rolescopetag-update.md
-                      - name: Действие назначения
+                      - name: назначения действия
                         href: api/intune-rbac-rolescopetag-assign.md
                       - name: действие Жетролескопетагсбид
                         href: api/intune-rbac-rolescopetag-getrolescopetagsbyid.md
@@ -7934,6 +8063,8 @@ items:
                     href: resources/intune-shared-companyportalblockedaction.md
                   - name: Состояние соответствия
                     href: resources/intune-shared-compliancestatus.md
+                  - name: Тип фильтра назначения управления устройствами и приложениями
+                    href: resources/intune-shared-deviceandappmanagementassignmentfiltertype.md
                   - name: Источник назначения для управления устройствами и приложениями
                     href: resources/intune-shared-deviceandappmanagementassignmentsource.md
                   - name: Объект назначения для управления устройствами и приложениями
@@ -7943,7 +8074,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-shared-deviceappmanagement-get.md
-                      - name: Update
+                      - name: Обновление
                         href: api/intune-shared-deviceappmanagement-update.md
                       - name: Действие syncMicrosoftStoreForBusinessApps
                         href: api/intune-shared-deviceappmanagement-syncmicrosoftstoreforbusinessapps.md
@@ -7993,7 +8124,7 @@ items:
                   - name: Конфигурация регистрации устройств
                     href: resources/intune-shared-deviceenrollmentconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-shared-deviceenrollmentconfiguration-list.md
                       - name: Получение
                         href: api/intune-shared-deviceenrollmentconfiguration-get.md
@@ -8010,7 +8141,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-shared-devicemanagement-get.md
-                      - name: Обновление
+                      - name: Update
                         href: api/intune-shared-devicemanagement-update.md
                       - name: Действие enableLegacyPcManagement
                         href: api/intune-shared-devicemanagement-enablelegacypcmanagement.md
@@ -8153,7 +8284,7 @@ items:
                   - name: 'Устранение неполадок с мобильным приложением: событие'
                     href: resources/intune-shared-mobileapptroubleshootingevent.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-shared-mobileapptroubleshootingevent-list.md
                       - name: Получение
                         href: api/intune-shared-mobileapptroubleshootingevent-get.md
@@ -8176,7 +8307,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-shared-reportroot-get.md
-                      - name: Update
+                      - name: Обновление
                         href: api/intune-shared-reportroot-update.md
                   - name: Итоговое состояние приложения
                     href: resources/intune-shared-resultantappstate.md
@@ -9061,7 +9192,7 @@ items:
                 items:
                   - name: Получение
                     href: api/authenticationflowspolicy-get.md
-                  - name: Обновление
+                  - name: Update
                     href: api/authenticationflowspolicy-update.md
           - name: Методы проверки подлинности
             items:
@@ -9515,7 +9646,7 @@ items:
               - name: Локальная группа агентов
                 href: resources/onpremisesagentgroup.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/onpremisesagentgroup-list.md
                   - name: Получение
                     href: api/onpremisesagentgroup-get.md
@@ -9535,7 +9666,7 @@ items:
               - name: Опубликованный ресурс
                 href: resources/publishedresource.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/publishedresource-list.md
                   - name: Получение
                     href: api/publishedresource-get.md
@@ -9552,7 +9683,7 @@ items:
               - name: PDIF
                 href: resources/connector.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/connector-list.md
                   - name: Получение
                     href: api/connector-get.md
@@ -9563,7 +9694,7 @@ items:
               - name: Группа соединителей
                 href: resources/connectorgroup.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/connectorgroup-list.md
                   - name: Получение
                     href: api/connectorgroup-get.md
@@ -10053,7 +10184,7 @@ items:
                 href: api/trustframeworkpolicy-get.md
               - name: Обновление
                 href: api/trustframework-put-trustframeworkpolicy.md
-              - name: Удаление
+              - name: Delete
                 href: api/trustframeworkpolicy-delete.md
           - name: Набор ключей инфраструктуры доверия
             href: resources/trustframeworkkeyset.md
@@ -10066,7 +10197,7 @@ items:
                 href: api/trustframeworkkeyset-get.md
               - name: Обновление
                 href: api/trustframeworkkeyset-update.md
-              - name: Удаление
+              - name: Delete
                 href: api/trustframeworkkeyset-delete.md
               - name: Создание ключа
                 href: api/trustframeworkkeyset-generatekey.md
@@ -10272,9 +10403,9 @@ items:
                 href: api/onenote-post-notebooks.md
               - name: Вывод списка разделов
                 href: api/onenote-list-sections.md
-              - name: Вывод списка групп разделов
+              - name: Список групп разделов
                 href: api/onenote-list-sectiongroups.md
-              - name: Вывод списка страниц
+              - name: Список страниц
                 href: api/onenote-list-pages.md
               - name: Создание страницы
                 href: api/onenote-post-pages.md
@@ -10798,7 +10929,7 @@ items:
               - name: Действия в OneDrive
                 href: resources/onedrive-activity-reports.md
                 items:
-                  - name: Получение сведений о пользователях
+                  - name: Получение сведений о пользователе
                     href: api/reportroot-getonedriveactivityuserdetail.md
                   - name: Получение количества пользователей
                     href: api/reportroot-getonedriveactivityusercounts.md
@@ -11232,6 +11363,8 @@ items:
                 href: api/user-list-joinedteams.md
               - name: Список всех команд
                 href: /graph/teams-list-all-teams?context=graph/api/beta
+              - name: Получение первичного канала
+                href: api/team-get-primarychannel.md
               - name: Как получить фотографию группы
                 href: api/team-get-photo.md
               - name: Обновление фотографии команды
@@ -11292,6 +11425,8 @@ items:
                 href: api/channel-patch.md
               - name: Удаление канала
                 href: api/channel-delete.md
+              - name: Получение папки с файлами
+                href: api/channel-get-filesfolder.md
               - name: Перечисление сообщений в каналах
                 href: api/channel-list-messages.md
               - name: Получение Дельта сообщений канала
@@ -11626,7 +11761,7 @@ items:
           - name: Группа задач Outlook
             href: resources/outlooktaskgroup.md
             items:
-              - name: Список
+              - name: Перечисление
                 href: api/outlookuser-list-taskgroups.md
               - name: Создание
                 href: api/outlookuser-post-taskgroups.md
@@ -11713,7 +11848,7 @@ items:
           - name: Комментарии к книге
             href: resources/workbookcomment.md
             items:
-              - name: Перечисление
+              - name: Список
                 href: api/workbook-list-comments.md
               - name: Получение
                 href: api/workbookcomment-get.md
