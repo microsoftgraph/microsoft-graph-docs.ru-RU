@@ -1,18 +1,22 @@
 ---
 title: Известные проблемы с Microsoft Graph
-description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
+description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: efe8d631437761da775fb029d88fa59b36a138c0
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
-ms.translationtype: HT
+ms.openlocfilehash: 98c61991ec99b1f7776c03f5fa5bc2400b5950a6
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991840"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744053"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
-В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в [журнале изменений Microsoft Graph](changelog.md).
+В этой статье описываются известные проблемы, связанные с Microsoft Graph. 
+
+Чтобы сообщить о известной проблеме, посетите страницу [поддержки Microsoft Graph](https://developer.microsoft.com/graph/support) .
+
+Сведения о последних обновлениях API Microsoft Graph можно найти в [журнале изменений Microsoft Graph](changelog.md).
 
 ## <a name="bookings"></a>Bookings
 
@@ -45,7 +49,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 GET /users/{id}/calendars/{id}/events
 ```
 
-Может возникнуть ошибка HTTP 500 `ErrorInternalServerTransientError`. Ошибка возникает, потому что:
+You may get HTTP 500 with the error code `ErrorInternalServerTransientError`. The error occurs because:
 
 - Существуют два способа реализации общего доступа к календарю, которые для ясности мы будем называть "старый" способ и "новый" способ.
 - Новый способ в настоящее время доступен для предоставления доступа к календарям с разрешениями на просмотр или редактирование, но не с делегированными разрешениями.
@@ -59,10 +63,10 @@ GET /users/{id}/calendars/{id}/events
 Чтобы с этой целью вручную обновить общий календарь, выполните следующие действия:
 1.  Получатель удаляет календарь, доступ к которому был ранее ему предоставлен.
 2.  Владелец повторно предоставляет доступ к календарю в Outlook в Интернете, Outlook на iOS или Outlook на Android.
-3.  Получатель повторно принимает календарь, используя Outlook в Интернете. (Скоро можно будет использовать другие клиенты Outlook.)
+3.  The recipient re-accepts the shared calendar using Outlook on the web. (It will be possible to use other Outlook clients soon.)
 4.  Доступ к календарю успешно предоставлен новым способом, если получатель может просмотреть его в Outlook на iOS или Outlook на Android.
 
-Календарь, доступ к которому предоставлен новым способом, выглядит как один из стандартных календарей в вашем почтовом ящике. С помощью REST API календаря можно просматривать и редактировать события в общем календаре, как в своем собственном. Например:
+A calendar shared with you in the new approach appears as just another calendar in your mailbox. You can use the calendar REST API to view or edit events in the shared calendar, as if it's your own calendar. As an example:
 
 ```http
 GET /me/calendars/{id}/events
@@ -73,7 +77,7 @@ GET /me/calendars/{id}/events
 В настоящее время календари ICS поддерживаются частично:
 
 * Вы можете добавить календарь ICS в почтовый ящик пользователя через интерфейс пользователя, но не через API Microsoft Graph.
-* [Перечисление календарей пользователя](/graph/api/user-list-calendars?view=graph-rest-1.0) позволяет получить свойства **name**, **color** и **id** всех [календарей](/graph/api/resources/calendar?view=graph-rest-1.0) в группе календарей пользователя по умолчанию или указанной группе календарей, в том числе календарей ICS. URL-адрес ICS невозможно хранить и открывать в ресурсе calendar.
+* [Listing the user's calendars](/graph/api/user-list-calendars?view=graph-rest-1.0) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
 * Вы также можете [отобразить события](/graph/api/calendar-list-events?view=graph-rest-1.0) календаря ICS.
 
 ### <a name="attaching-large-files-to-events"></a>Прикрепление больших файлов к событиям
@@ -103,7 +107,7 @@ GET /me/calendars/{id}/events
 
 ### <a name="csp-apps-must-use-azure-ad-endpoint"></a>Приложения CSP должны использовать конечную точку Azure AD
 
-Приложения CSP должны получать маркеры из конечных точек Azure AD (версии 1) для успешного вызова Microsoft Graph в своих клиентах, управляемых партнерами. В настоящее время получение маркера через конечную точку Azure AD версии 2.0 не поддерживается.
+Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
 
 ### <a name="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants"></a>В некоторых клиентах предоставленные приложениям CSP разрешения не работают
 
@@ -116,9 +120,9 @@ GET /me/calendars/{id}/events
 
 Для целей разработки и тестирования можно использовать следующее временное решение.
 
->**ПРИМЕЧАНИЕ.** Это не окончательное решение и предназначено только для целей разработки.  Оно станет ненужным после исправления упомянутой выше ошибки.  Удалять указанный ниже субъект-службу не нужно.
+>**NOTE:** This is not a permanent solution and is only intended to unblock development.  This workaround will not be required once the aforementioned issue is fixed.  This workaround does not need to be undone once the fix is in place.
 
-1. Откройте сеанс Azure AD PowerShell 2 и подключитесь к клиенту `customer`, введя учетные данные администратора в окне входа. Скачать и установить Azure AD PowerShell 2 можно [здесь](https://www.powershellgallery.com/packages/AzureAD).
+1. Open an Azure AD v2 PowerShell session and connect to your `customer` tenant by entering your admin credentials into the sign-in window. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).
 
     ```PowerShell
     Connect-AzureAd -TenantId {customerTenantIdOrDomainName}
@@ -133,13 +137,13 @@ GET /me/calendars/{id}/events
 
 ### <a name="organization-contacts-available-in-only-beta"></a>Контакты организации доступны только в бета-версии
 
-В настоящее время поддерживаются только личные контакты. В настоящее время контакты организации не поддерживаются в версии `/v1.0`, но их можно найти в версии `/beta`.
+Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
 
 ### <a name="default-contacts-folder"></a>Папка контактов по умолчанию
 
 В версии `/v1.0` запрос `GET /me/contactFolders` не включает папку контактов пользователя по умолчанию.
 
-Эта ошибка будет исправлена. Чтобы получить идентификатор папки контактов по умолчанию, вы можете использовать следующий запрос на [отображение контактов](/graph/api/user-list-contacts?view=graph-rest-1.0) и свойство **parentFolderId**:
+A fix will be made available. Meanwhile, you can use the following [list contacts](/graph/api/user-list-contacts?view=graph-rest-1.0) query and the **parentFolderId** property as a workaround to get the folder ID of the default contacts folder:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
@@ -162,7 +166,7 @@ GET /me/contactfolders/{id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
 
-* Доступ к контакту в дочерней папке папки **contactFolder**.  В приведенном ниже примере показан один уровень вложения, но для хранения контакта допускается несколько.
+* Accessing a contact contained in a child folder of a **contactFolder**.  The example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
@@ -189,7 +193,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="creating-a-resource-and-open-extension-at-the-same-time"></a>Одновременное создание ресурса и открытого расширения
 
-Невозможно указать открытое расширение при создании экземпляра **administrativeUnit**, **device**, **group**, **organization** или **user**. Сначала необходимо создать экземпляр, а затем указать данные открытого расширения в последующем запросе ``POST`` к этому экземпляру.
+You cannot specify an open extension at the same time you create an instance of **administrativeUnit**, **device**, **group**, **organization** or **user**. You must first create the instance and then specify the open extension data in a subsequent ``POST`` request on that instance.
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>Создание экземпляра ресурса с одновременным добавлением данных расширения схемы
 
@@ -216,7 +220,7 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 Эти разрешения должен предоставить администратор.
 В будущем мы планируем добавить новые разрешения для групп и команд, которые смогут предоставлять пользователи.
 
-Кроме того, только API для базового администрирования групп и управления ими поддерживает доступ с помощью разрешений только для приложений или делегированных разрешений. Все остальные функции API групп поддерживают только делегированные разрешения.
+Also, only the API for core group administration and management supports access using delegated or app-only permissions. All other features of the group API support only delegated permissions.
 
 Примеры функций групп, поддерживающих разрешения только для приложений и делегированные разрешения:
 
@@ -224,10 +228,11 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 * получение и обновление свойств групп, связанных с администрированием групп и управлением ими;
 * синхронизация, типы и [параметры каталогов](/graph/api/resources/directoryobject?view=graph-rest-1.0) групп;
 * владельцы и члены групп.
+* Извлечение групповых бесед и потоков
 
 Примеры функций групп, поддерживающих только делегированные разрешения:
 
-* групповые беседы, события, фотографии;
+* События групп, Фото
 * внешние отправители, разрешенные или запрещенные отправители, подписка на группы;
 * избранное пользователей и счетчик непросмотренных элементов.
 
@@ -245,7 +250,7 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ## <a name="identity-and-access--application-and-service-principal-apis"></a>Удостоверение и доступ | API приложений и субъектов-служб
 
-Скоро в объекты [application](/graph/api/resources/application?view=graph-rest-beta) и [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) будут внесены изменения. Ниже приведено краткое описание текущих ограничений и возможностей API, находящихся в разработке.
+There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) entities currently in development. The following is a summary of current limitations and in-development API features.
 
 Текущие ограничения:
 
@@ -280,15 +285,15 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ### <a name="all-individual-requests-must-be-synchronous"></a>Все отдельные запросы должны быть синхронными
 
-Все запросы, содержащиеся в пакетном запросе, должны выполняться синхронно. Параметр `respond-async`, если он имеется, будет игнорироваться.
+All requests contained in a batch request must be executed synchronously. If present, the `respond-async` preference will be ignored.
 
 ### <a name="no-transactions"></a>Не поддерживается диалоговая обработка
 
-В настоящее время Microsoft Graph не поддерживает диалоговую обработку отдельных запросов. Свойство `atomicityGroup` отдельных запросов будет игнорироваться.
+Microsoft Graph does not currently support transactional processing of individual requests. The `atomicityGroup` property on individual requests will be ignored.
 
 ### <a name="uris-must-be-relative"></a>URI должны быть относительными
 
-Всегда указывайте относительные URI в пакетных запросах. Microsoft Graph сделает эти URL-адреса абсолютными с помощью конечной точки версии, включенной в URL-адрес пакета.
+Always specify relative URIs in batch requests. Microsoft Graph then makes these URLs absolute by using the version endpoint included in the batch URL.
 
 ### <a name="limit-on-batch-size"></a>Ограничение на размер пакета
 
@@ -296,7 +301,7 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ### <a name="simplified-dependencies"></a>Упрощенные зависимости
 
-Отдельные запросы могут зависеть от других отдельных запросов. В настоящее время запросы могут зависеть только от одного другого запроса и должны соответствовать одному из этих шаблонов:
+Individual requests can depend on other individual requests. Currently, requests can only depend on a single other request, and must follow one of these three patterns:
 
 1. Параллельный — для отдельных запросов не указаны зависимости в свойстве `dependsOn`.
 2. Последовательный — все отдельные запросы зависят от предыдущего отдельного запроса.
@@ -324,7 +329,7 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 Чтобы получить список команд, см. [список всех команд](teams-list-all-teams.md) и [список ваших команд](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
 
 ### <a name="post-teams-is-only-available-in-beta"></a>POST / команды доступны только в бета-версии
-Чтобы создать команды в v1.0, см. [создание команды](/graph/api/team-put-teams?view=graph-rest-1.0).
+Чтобы создавать команды в версии 1.0, ознакомьтесь со статьей [Создание группы](/graph/api/team-put-teams?view=graph-rest-1.0).
 
 ### <a name="missing-teams-in-list-all-teams"></a>Отсутствующие команды в списке всех команд
 
@@ -337,19 +342,20 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ### <a name="no-instant-access-after-creation"></a>Нет мгновенного доступа после создания
 
-Пользователей можно создавать мгновенно с помощью метода POST для объекта user. Для доступа к службам Office 365 пользователю нужна соответствующая лицензия. Из-за распределенного характера службы файлы, сообщения и события этого пользователя станут доступны посредством API Microsoft Graph через 15 минут после назначения лицензии. В течение этого времени приложения будут получать ошибку HTTP 404.
+Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response.
 
 ### <a name="photo-restrictions"></a>Ограничения для фотографий
 
-Просмотреть и обновить фотографию профиля пользователя можно, только если у пользователя есть почтовый ящик. Кроме того, все фотографии, которые *могли* быть сохранены ранее с помощью свойства **thumbnailPhoto** (с помощью предварительной версии единого API Office 365, Azure AD Graph или службы синхронизации AD Connect), больше не доступны через свойство **photo** Microsoft Graph ресурса [user](/graph/api/resources/user?view=graph-rest-1.0). В этом случае, если фотографию не удастся просмотреть или обновить, возникнет следующая ошибка:
+Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.
+Failure to read or update a photo, in this case, would result in the following error:
 
 ```javascript
-    {
-      "error": {
-        "code": "ErrorNonExistentMailbox",
-        "message": "The SMTP address has no mailbox associated with it."
-      }
-    }
+{
+  "error": {
+    "code": "ErrorNonExistentMailbox",
+    "message": "The SMTP address has no mailbox associated with it."
+  }
+}
 ```
 
 ### <a name="using-delta-query"></a>Запрос изменений
@@ -368,7 +374,7 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 * Не поддерживается несколько пространств имен.
 * Не поддерживаются запросы GET для `$ref` и приведение для пользователей, групп, устройств, субъектов-служб и приложений.
-* Не поддерживается `@odata.bind`. Это значит, что разработчики не смогут правильно настроить свойство **acceptedSenders** или **rejectedSenders** для группы.
+* `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * Отсутствует `@odata.id` для навигации по объектам без вложений (например, сообщениям) при использовании минимальных метаданных.
 * `$expand`:
   * Отсутствует поддержка `nextLink`.
