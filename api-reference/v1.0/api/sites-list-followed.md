@@ -5,86 +5,94 @@ title: Перечисление отслеживаемых сайтов
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: f5057a91f317ae309cf899ab6daa1288c41bace0
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: f18a3349c4b37ed96e19781df5f910002c6b122c
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682252"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793937"
 ---
-# <a name="list-followed-sites"></a><span data-ttu-id="925a2-103">Перечисление отслеживаемых сайтов</span><span class="sxs-lookup"><span data-stu-id="925a2-103">List followed sites</span></span>
+# <a name="list-followed-sites"></a><span data-ttu-id="414d8-103">Перечисление отслеживаемых сайтов</span><span class="sxs-lookup"><span data-stu-id="414d8-103">List followed sites</span></span>
 
-<span data-ttu-id="925a2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="925a2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="414d8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="414d8-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="925a2-105">Перечислите [сайты](../resources/site.md) , за которыми подписан пользователь.</span><span class="sxs-lookup"><span data-stu-id="925a2-105">List the [sites](../resources/site.md) that have been followed by the signed in user.</span></span>
+<span data-ttu-id="414d8-105">Перечислите [сайты](../resources/site.md) , за которыми подписан пользователь.</span><span class="sxs-lookup"><span data-stu-id="414d8-105">List the [sites](../resources/site.md) that have been followed by the signed in user.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="925a2-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="925a2-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="414d8-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="414d8-106">Permissions</span></span>
 
-<span data-ttu-id="925a2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="925a2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="414d8-107">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="414d8-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="414d8-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="414d8-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="925a2-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="925a2-109">Permission type</span></span>      | <span data-ttu-id="925a2-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="925a2-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="414d8-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="414d8-109">Permission type</span></span>      | <span data-ttu-id="414d8-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="414d8-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="925a2-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="925a2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="925a2-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="925a2-112">Sites.Read.All, Sites.ReadWrite.All</span></span>  |
-|<span data-ttu-id="925a2-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="925a2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="925a2-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="925a2-114">Not supported.</span></span>    |
-|<span data-ttu-id="925a2-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="925a2-115">Application</span></span> | <span data-ttu-id="925a2-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="925a2-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="414d8-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="414d8-111">Delegated (work or school account)</span></span> | <span data-ttu-id="414d8-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="414d8-112">Sites.Read.All, Sites.ReadWrite.All</span></span>  |
+|<span data-ttu-id="414d8-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="414d8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="414d8-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="414d8-114">Not supported.</span></span>    |
+|<span data-ttu-id="414d8-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="414d8-115">Application</span></span> | <span data-ttu-id="414d8-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="414d8-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="925a2-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="925a2-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="414d8-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="414d8-117">HTTP request</span></span>
 
-<span data-ttu-id="925a2-118">Этот метод доступен только в OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="925a2-118">This method is accessible only through OneDrive for Business.</span></span>
+<span data-ttu-id="414d8-118">Этот метод доступен только в OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="414d8-118">This method is accessible only through OneDrive for Business.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/followedSites
 ```
-<span data-ttu-id="925a2-119">Получение списка сайтов, за которыми следует целевой пользователь, в зависимости от его идентификатора.</span><span class="sxs-lookup"><span data-stu-id="925a2-119">Get a list of the sites followed by a target user, based on its ID.</span></span>
+<span data-ttu-id="414d8-119">Получение списка сайтов, за которыми следует целевой пользователь, в зависимости от его идентификатора.</span><span class="sxs-lookup"><span data-stu-id="414d8-119">Get a list of the sites followed by a target user, based on its ID.</span></span>
 
 ```http
 GET /users/{user-id}/followedSites
 ```
-<span data-ttu-id="925a2-120">**Примечание:** Чтобы получить доступ к списку отслеживаемых сайтов другого пользователя, необходимы разрешения приложения.</span><span class="sxs-lookup"><span data-stu-id="925a2-120">**Note:** To access another targeted user's list of followed sites, you need application permissions.</span></span>
+<span data-ttu-id="414d8-120">**Примечание:** Чтобы получить доступ к списку отслеживаемых сайтов другого пользователя, необходимы разрешения приложения.</span><span class="sxs-lookup"><span data-stu-id="414d8-120">**Note:** To access another targeted user's list of followed sites, you need application permissions.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="925a2-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="925a2-121">Optional query parameters</span></span>
-<span data-ttu-id="925a2-122">Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="925a2-122">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="414d8-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="414d8-121">Optional query parameters</span></span>
+<span data-ttu-id="414d8-122">Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="414d8-122">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="925a2-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="925a2-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="414d8-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="414d8-123">Request headers</span></span>
 
-| <span data-ttu-id="925a2-124">Имя</span><span class="sxs-lookup"><span data-stu-id="925a2-124">Name</span></span>      |<span data-ttu-id="925a2-125">Описание</span><span class="sxs-lookup"><span data-stu-id="925a2-125">Description</span></span>|
+| <span data-ttu-id="414d8-124">Имя</span><span class="sxs-lookup"><span data-stu-id="414d8-124">Name</span></span>      |<span data-ttu-id="414d8-125">Описание</span><span class="sxs-lookup"><span data-stu-id="414d8-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="925a2-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="925a2-126">Authorization</span></span>  | <span data-ttu-id="925a2-127">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="925a2-127">Bearer {code}.</span></span> <span data-ttu-id="925a2-128">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="925a2-128">Required.</span></span>|
+| <span data-ttu-id="414d8-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="414d8-126">Authorization</span></span>  | <span data-ttu-id="414d8-127">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="414d8-127">Bearer {code}.</span></span> <span data-ttu-id="414d8-128">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="414d8-128">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="925a2-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="925a2-129">Request Body</span></span>
+## <a name="request-body"></a><span data-ttu-id="414d8-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="414d8-129">Request Body</span></span>
 
-<span data-ttu-id="925a2-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="925a2-130">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="414d8-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="414d8-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="925a2-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="925a2-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="414d8-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="414d8-131">Response</span></span>
 
-<span data-ttu-id="925a2-132">Этот метод возвращает коллекцию ресурсов [сайта](../resources/site.md) , которые подписаны пользователем.</span><span class="sxs-lookup"><span data-stu-id="925a2-132">This method returns a collection of [site](../resources/site.md) resources that the user is following.</span></span>
-<span data-ttu-id="925a2-133">Если сайты не найдены, возвращается пустая коллекция.</span><span class="sxs-lookup"><span data-stu-id="925a2-133">If no sites were found, an empty collection is returned.</span></span>
+<span data-ttu-id="414d8-132">Этот метод возвращает коллекцию ресурсов [сайта](../resources/site.md) , которые подписаны пользователем.</span><span class="sxs-lookup"><span data-stu-id="414d8-132">This method returns a collection of [site](../resources/site.md) resources that the user is following.</span></span>
+<span data-ttu-id="414d8-133">Если сайты не найдены, возвращается пустая коллекция.</span><span class="sxs-lookup"><span data-stu-id="414d8-133">If no sites were found, an empty collection is returned.</span></span>
 
-## <a name="example"></a><span data-ttu-id="925a2-134">Пример</span><span class="sxs-lookup"><span data-stu-id="925a2-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="414d8-134">Пример</span><span class="sxs-lookup"><span data-stu-id="414d8-134">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="925a2-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="925a2-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="414d8-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="414d8-135">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="925a2-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="925a2-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="414d8-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="414d8-136">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
 ```msgraph-interactive
 GET /me/followedSites
 ```
-# <a name="javascript"></a>[<span data-ttu-id="925a2-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="925a2-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="414d8-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="414d8-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="925a2-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="925a2-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="414d8-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="414d8-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[<span data-ttu-id="414d8-139">C#</span><span class="sxs-lookup"><span data-stu-id="414d8-139">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-analytics-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="414d8-140">Java</span><span class="sxs-lookup"><span data-stu-id="414d8-140">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-analytics-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="925a2-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="925a2-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="414d8-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="414d8-141">Response</span></span>
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
 ```json
