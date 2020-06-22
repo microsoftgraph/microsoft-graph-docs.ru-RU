@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b7fbcfa13ba78238c32e9a2c9056ea49edd499a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 460bbfaa522cf4767d7f35992a4371bf870c8948
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533564"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793684"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -61,7 +61,7 @@ ms.locfileid: "42533564"
 |:---------------|:--------|:----------|
 |channels|Коллекция [channel](channel.md)|Коллекция каналов и сообщений, связанных с командой.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в команде.|
-|primaryChannel|[channel](channel.md)| Общий канал для команды. | 
+|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| Общий канал для команды. | 
 
 ## <a name="json-representation"></a>Представление JSON
 

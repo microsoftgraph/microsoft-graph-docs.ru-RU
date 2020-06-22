@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 243c3ea1e203ceaca4b31cb82dca77c873af7cb0
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: 1f14b7240500cceebd39e2bde1b91e2dbf477322
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272698"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791092"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -59,7 +59,7 @@ ms.locfileid: "44272698"
 |messages|Коллекция [chatMessage](chatmessage.md)|Коллекция всех сообщений в канале. Свойство навигации. Допускается значение null.|
 |tabs|Коллекция [teamsTab](../resources/teamstab.md)|Коллекция всех вкладок в канале. Свойство навигации.|
 |members|Коллекция [conversationMember](conversationmember.md)|Коллекция записей участников, сопоставленных с каналом.|
-|filesFolder|[driveItem](driveitem.md)|Метаданные для расположения, в котором хранятся файлы канала.|
+|[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Метаданные для расположения, в котором хранятся файлы канала.|
 
 ## <a name="json-representation"></a>Представление JSON
 
