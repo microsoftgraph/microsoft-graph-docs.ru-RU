@@ -4,12 +4,12 @@ description: q=excelstarter).
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a8fcc90d4050cb6f0db2fb5e2b3a22d267f8cede
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1dd914289342a80a3efbe258a0bfad30506d63f1
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526316"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793670"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>Запись данных в книгу Excel с помощью Microsoft Graph
 
@@ -154,7 +154,7 @@ REST API для Excel обеспечивает простой независим
           .catch(err => console.error(err));
       }
 
-##<a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также
 
 * [Управление сеансами в Excel с помощью Microsoft Graph](excel-manage-sessions.md)
 * [Использование функций книг в Excel с помощью Microsoft Graph](excel-use-functions.md)
