@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 6ca705555bb912daa8710315ab8dc4766c7ffb4c
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: b613cf9c12a48420acb1e3c8e936ccda9b119407
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896131"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845467"
 ---
 # <a name="reports-getgrouparchivedprintjobs"></a>отчеты: Жетграупарчиведпринтжобс
 
@@ -21,7 +21,7 @@ ms.locfileid: "42896131"
 Получение списка архивных заданий печати для определенной группы.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
 
@@ -40,17 +40,17 @@ GET /reports/getGroupArchivedPrintJobs
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Required. |
 
 ## <a name="function-parameters"></a>Параметры функции
 
-|Параметр|Тип|Обязательный?|Описание|
-|-|-|-|-|-|
-|`groupId`|`Edm.String`|Да|Идентификатор группы, для которой требуется возвратить данные.|
-|`periodStart`|`Edm.DateTimeOffset`|Нет|Дата начала (включительно) периода времени, из которого требуется включить данные.|
-|`periodEnd`|`Edm.DateTimeOffset`|Нет|Дата окончания (включительно) периода времени, из которого требуется включить данные.|
+| Параметр     | Тип                 | Обязательный? | Description                                                          |
+|---------------|----------------------|-----------|----------------------------------------------------------------------|
+| `groupId`     | `Edm.String`         | Да       | Идентификатор группы, для которой требуется возвратить данные.                              |
+| `periodStart` | `Edm.DateTimeOffset` | Нет        | Дата начала (включительно) периода времени, из которого требуется включить данные. |
+| `periodEnd`   | `Edm.DateTimeOffset` | Нет        | Дата окончания (включительно) периода времени, из которого требуется включить данные.   |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [арчиведпринтжоб](../resources/archivedprintjob.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/print/reports/getGroupArchivedPrintJobs(gro
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства. 
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

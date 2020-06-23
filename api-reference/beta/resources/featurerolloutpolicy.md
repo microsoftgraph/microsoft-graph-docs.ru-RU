@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 27e421283c9908c648769ccbe652f990f2728fce
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 8ec1f42ba951fa1bde827b2900b98e37c62d6160
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181724"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845283"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>Тип ресурса Феатурероллаутполици
 
@@ -41,19 +41,19 @@ ms.locfileid: "43181724"
 
 ### <a name="passwordhashsync"></a>пассвордхашсинк
 
-* Включите [пассвордхашсинк](/azure/active-directory/hybrid/whatis-phs) на странице "дополнительные компоненты" в Azure AD Connect.
+* Включите [пассвордхашсинк](/azure/active-directory/hybrid/whatis-phs)   на странице "дополнительные компоненты" в Azure AD Connect.
 
 ## <a name="methods"></a>Методы
 
-| Метод       | Возвращаемый тип | Описание |
-|:-------------|:------------|:------------|
-| [Список ФеатурероллаутполиЦиес](../api/directory-list-featurerolloutpolicies.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Получение списка объектов Феатурероллаутполици. |
-| [Получение Феатурероллаутполици](../api/featurerolloutpolicy-get.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Получение свойств и связей объекта феатурероллаутполици. ||
-| [Создание Феатурероллаутполици](../api/directory-post-featurerolloutpolicies.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Создание нового объекта Феатурероллаутполици.
-| [Обновление Феатурероллаутполици](../api/featurerolloutpolicy-update.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Обновление свойств объекта феатурероллаутполици. |
-| [Удаление Феатурероллаутполици](../api/featurerolloutpolicy-delete.md) | Нет | Удаление объекта Феатурероллаутполици. |
-| [Назначение appliesTo](../api/featurerolloutpolicy-post-appliesto.md) | [directoryObject](directoryobject.md) | Назначение directoryObject для развертывания компонентов. |
-| [Удаление appliesTo](../api/featurerolloutpolicy-delete-appliesto.md) | Нет | Удаление directoryObject из развертывания компонента. |
+| Метод                                                                         | Возвращаемый тип                                     | Описание                                                               |
+|:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
+| [Список ФеатурероллаутполиЦиес](../api/directory-list-featurerolloutpolicies.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Получение списка объектов Феатурероллаутполици.                          |
+| [Получение Феатурероллаутполици](../api/featurerolloutpolicy-get.md)                 | [феатурероллаутполици](featurerolloutpolicy.md) | Получение свойств и связей объекта феатурероллаутполици. |
+| [Создание Феатурероллаутполици](../api/directory-post-featurerolloutpolicies.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Создание нового объекта Феатурероллаутполици.                                 |
+| [Обновление Феатурероллаутполици](../api/featurerolloutpolicy-update.md)           | [феатурероллаутполици](featurerolloutpolicy.md) | Обновление свойств объекта феатурероллаутполици.                     |
+| [Удаление Феатурероллаутполици](../api/featurerolloutpolicy-delete.md)           | Нет                                            | Удаление объекта Феатурероллаутполици.                                     |
+| [Назначение appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Назначение directoryObject для развертывания компонентов.                              |
+| [Удаление appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | Нет                                            | Удаление directoryObject из развертывания компонента.                            |
 
 ## <a name="properties"></a>Свойства
 
@@ -66,7 +66,7 @@ ms.locfileid: "43181724"
 |исапплиедтурганизатион|Boolean|Указывает, следует ли применять эту политику развертывания функций ко всей Организации.|
 |isEnabled|Boolean|Указывает, включен ли выпуск компонентов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

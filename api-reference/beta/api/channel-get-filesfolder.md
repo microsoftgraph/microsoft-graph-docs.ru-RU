@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 70ca3b79a736075af1bed233a836f1000d85c5ef
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: d10e0758e0d323f17534c1651268b74fd077fd3d
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793418"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845339"
 ---
 # <a name="get-filesfolder"></a>Получение Филесфолдер
 
@@ -18,8 +18,7 @@ ms.locfileid: "44793418"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Получение пути навигации Филесфолдер, который представляет собой метаданные для расположения, в котором хранятся файлы канала, для [канала](../resources/channel.md).
+Получение метаданных для расположения, в котором хранятся файлы [канала](../resources/channel.md) . 
 
 ## <a name="permissions"></a>Разрешения
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

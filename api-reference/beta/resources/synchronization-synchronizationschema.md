@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7f67a830f53fcfc7e55682b467e5ca373da240e8
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d463fa5a00318936ef0f1612f233851e42a9db11
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217334"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846137"
 ---
 # <a name="synchronizationschema-resource-type"></a>Тип ресурса Синчронизатионсчема
 
@@ -28,7 +28,7 @@ ms.locfileid: "43217334"
 
 ## <a name="synchronization-rules"></a>Правила синхронизации
 
-[Правила синхронизации](synchronization-synchronizationrule.md) являются ядром настройки синхронизации. Они определяют для обработчика синхронизации, как следует выполнять синхронизацию, в том числе объекты, которые должны быть синхронизированы, как объекты из исходного каталога должны сопоставляться с объектами в целевом каталоге, а также как преобразуются атрибуты при их синхронизации из источника в целевой каталог. 
+[Правила синхронизации](synchronization-synchronizationrule.md) являются ядром настройки синхронизации. Они определяют для обработчика синхронизации, как следует выполнять синхронизацию, в том числе объекты, которые должны быть синхронизированы, как объекты из исходного каталога должны сопоставляться с объектами в целевом каталоге, а также как преобразуются атрибуты при их синхронизации из источника в целевой каталог.
 
 ## <a name="object-mappings"></a>Сопоставления объектов
 
@@ -36,14 +36,14 @@ ms.locfileid: "43217334"
 
 ## <a name="methods"></a>Методы
 
-| Метод        | Возвращаемый тип               | Описание                  |
-|:--------------|:--------------------------|:-----------------------------|
-|[Получение схемы](../api/synchronization-synchronizationschema-get.md)    |[синчронизатионсчема](synchronization-synchronizationschema.md)   |Чтение свойств и связей объекта **синчронизатионсчема** .|
-|[Обновление схемы](../api/synchronization-synchronizationschema-update.md)    |Нет   |Обновите схему синхронизации. |
-|[Удаление схемы](../api/synchronization-synchronizationschema-delete.md)    |Нет   |Удаление настраиваемой схемы путем сброса схемы к конфигурации по умолчанию. |
-|[Операторы фильтра списка](../api/synchronization-synchronizationschema-filteroperators.md)    |Коллекция [филтероператорсчема](../resources/synchronization-filteroperatorschema.md)   |Перечисление всех операторов, поддерживаемых в фильтрах областей видимости. |
-|[Функции сопоставления атрибутов списка](../api/synchronization-synchronizationschema-functions.md)    |Коллекция [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md)   |Перечисление всех функций, поддерживаемых в выражениях сопоставления атрибутов. |
-|[Анализ выражения сопоставления атрибутов](../api/synchronization-synchronizationschema-parseexpression.md)|[парсикспрессионреспонсе](synchronization-parseexpressionresponse.md)|Синтаксический анализ строкового выражения в объект [Аттрибутемаппингсаурце|(.. Объект/ресаурцес/synchronization_attributemappingsource. md).|
+| Метод                                                                                                | Возвращаемый тип                                                                                                 | Описание                                                                                                                |
+|:------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------|
+| [Получение схемы](../api/synchronization-synchronizationschema-get.md)                                     | [синчронизатионсчема](synchronization-synchronizationschema.md)                                           | Чтение свойств и связей объекта **синчронизатионсчема** .                                                 |
+| [Обновление схемы](../api/synchronization-synchronizationschema-update.md)                               | Нет                                                                                                        | Обновите схему синхронизации.                                                                                         |
+| [Удаление схемы](../api/synchronization-synchronizationschema-delete.md)                               | Нет                                                                                                        | Удаление настраиваемой схемы путем сброса схемы к конфигурации по умолчанию.                                           |
+| [Операторы фильтра списка](../api/synchronization-synchronizationschema-filteroperators.md)              | Коллекция [филтероператорсчема](../resources/synchronization-filteroperatorschema.md)                      | Перечисление всех операторов, поддерживаемых в фильтрах областей видимости.                                                                       |
+| [Функции сопоставления атрибутов списка](../api/synchronization-synchronizationschema-functions.md)         | Коллекция [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md) | Перечисление всех функций, поддерживаемых в выражениях сопоставления атрибутов.                                                         |
+| [Анализ выражения сопоставления атрибутов](../api/synchronization-synchronizationschema-parseexpression.md) | [парсикспрессионреспонсе](synchronization-parseexpressionresponse.md)                                       | Синтаксический анализ строкового выражения в объект [аттрибутемаппингсаурце](../resources/synchronization-attributemappingsource.md) . |
 
 
 ## <a name="properties"></a>Свойства

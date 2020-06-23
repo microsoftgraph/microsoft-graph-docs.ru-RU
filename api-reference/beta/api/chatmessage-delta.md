@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: a78d7cbeef36f5b6f15fca3d1131c8efe1270002
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: ee62c7caba73a9ab87b15c4a559f4376bcff7a2e
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491317"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845367"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -37,7 +37,7 @@ ms.locfileid: "44491317"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Тип разрешения                        |Разрешения (в порядке повышения привилегий)  |
 |---------------------------------------|---------------------------------------------|
@@ -79,7 +79,7 @@ GET /teams/{id}/channels/{id}/messages/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок        | Значение                     |
 |---------------|---------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Required. |
 | Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Текст запроса
@@ -100,7 +100,7 @@ GET /teams/{id}/channels/{id}/messages/delta
 - Шаг 2. [Пример второго запроса](#second-request) и [ответ](#second-request-response).
 - Шаг 3. [Пример третьего запроса](#third-request) и [последний ответ](#third-request-response).
 
-В примерах показаны только некоторые свойства события. При фактическом вызове возвращается большинство свойств события.
+For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
 
 См. также, что можно сделать в [следующем цикле](#example-2-retrieving-additional-changes).
 
@@ -145,7 +145,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$top=2
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -242,7 +242,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUz
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -339,7 +339,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcy
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -406,14 +406,14 @@ GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc
 
 #### <a name="response"></a>Отклик
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

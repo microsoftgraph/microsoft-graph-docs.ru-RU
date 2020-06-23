@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e091cba82392ece157864b6ad74ff16a66a67e71
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 36cc855b76b7d87d951f733fd0f84739f04aa138
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389017"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846172"
 ---
 # <a name="mailboxsettings-resource-type"></a>Тип ресурса mailboxSettings
 
@@ -26,14 +26,15 @@ ms.locfileid: "43389017"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|archiveFolder|string|Идентификатор архивной папки пользователя.|
+|archiveFolder|string|Идентификатор архивной папки пользователя. Только для чтения.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему.|
 |dateFormat|string|Формат даты для почтового ящика пользователя.|
-|делегатемитингмессажеделиверйоптионс|делегатемитингмессажеделиверйоптионс| Если у пользователя есть представитель календаря, этот параметр указывает, будут ли представитель, владелец почтового ящика или и то, и другое, получать сообщения о собраниях и ответы на приглашения. Возможные значения: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`. Значение по умолчанию: `sendToDelegateOnly`.|
+|делегатемитингмессажеделиверйоптионс|делегатемитингмессажеделиверйоптионс| Если у пользователя есть представитель календаря, этот параметр указывает, будут ли представитель, владелец почтового ящика или и то, и другое, получать сообщения о собраниях и ответы на приглашения. Возможные значения: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`. Значение по умолчанию: `sendToDelegateOnly` .|
 |language|[localeInfo](localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
 |тимеформат|string|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|
 |workingHours|[workingHours](workinghours.md)|Дни недели и часы работы пользователя в определенном часовом поясе.|
+|усерпурпосе|[усерпурпосе](userpurpose.md)|Назначение почтового ящика. Используется для различения почтового ящика одного пользователя из общего почтового ящика и почтового ящика оборудования в Exchange Online. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -56,7 +57,8 @@ ms.locfileid: "43389017"
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
   "timeFormat": "string",
   "timeZone": "string",
-  "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
+  "workingHours": {"@odata.type": "microsoft.graph.workingHours"},
+  "userPurpose": {"@odata.type": "microsoft.graph.userPurpose"}
 }
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d59505f311e1a9e1fd72540a42044151198b5a07
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 12ba305c1fa88bdf42c663af1e37eefada56dab0
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423898"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845437"
 ---
 # <a name="get-user-mailbox-settings"></a>Получение параметров почтового ящика пользователя
 
@@ -29,6 +29,7 @@ ms.locfileid: "43423898"
 - формат времени;
 - часовой пояс;
 - [рабочее время](../resources/workinghours.md).
+- [Назначение пользователя](../resources/userpurpose.md)
 
 С помощью Outlook в Интернете пользователи могут настраивать предпочитаемый формат даты и времени. Пользователи могут выбрать один из поддерживаемых [кратких форматов даты](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) или [кратких форматов времени](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime). Эта операция `GET` возвращает формат, выбранный пользователем.
 
@@ -37,7 +38,7 @@ ms.locfileid: "43423898"
 Эта операция `GET` возвращает предпочитаемый пользователем часовой пояс в формате, настроенном администратором. Чтобы задать определенный формат часового пояса (Windows или IANA), сначала [обновите предпочтительный часовой пояс в этом формате как параметр почтового ящика](user-update-mailboxsettings.md). Затем вы сможете получить часовой пояс в этом формате. Кроме того, вы можете управлять преобразованием форматов в своем приложении. 
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -53,7 +54,7 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Получение определенных параметров (только параметров автоматических ответов, формата даты, языкового стандарта, часового пояса или рабочего времени):
+Для получения определенных параметров можно использовать только параметры автоматических ответов, формат даты, языковой стандарт, формат времени, часовой пояс, рабочие часы и назначение пользователей:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -76,18 +77,21 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 
 GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
+
+GET /me/mailboxSettings/userPurpose
+GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает некоторые [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и один из указанных ниже запрошенных объектов в тексте отклика.
 
@@ -99,12 +103,13 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 - Строка (для параметра **timeFormat**).
 - Строка (для параметра **timeZone**).
 - [workingHours](../resources/workinghours.md)
+- [усерпурпосе](../resources/userpurpose.md)
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1"></a>Пример 1
 #### <a name="request"></a>Запрос 
-В первом примере считываются все параметры для почтового ящика вошедшего пользователя, в том числе параметры автоматических ответов, формата даты, языкового стандарта (язык и страна или регион), формата времени, часового пояса и рабочего времени.
+В первом примере возвращаются все параметры почтового ящика пользователя, выполнившего вход, который включает параметры для автоматических ответов, форматов даты, языкового стандарта (языка и страны/региона), формата времени, часового пояса, рабочих часов и назначения пользователей.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -128,7 +133,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings
 
 ---
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Отклик включает все параметры почтового ящика вошедшего пользователя. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -175,6 +180,9 @@ Content-type: application/json
             "name":"Pacific Standard Time"
         }
     },
+    "userPurpose": {
+        "value": "user"
+    },
     "dateFormat": "MM/dd/yyyy",
     "timeFormat": "hh:mm tt",
     "delegateMeetingMessageDeliveryOptions": "sendToDelegateOnly"
@@ -207,8 +215,8 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 
 ---
 
-#### <a name="response"></a>Ответ
-Отклик включает только параметры автоматических ответов. Примечание. Показанный здесь объект отклика может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+#### <a name="response"></a>Отклик
+The response includes only the automatic replies settings. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -291,6 +299,36 @@ Content-type: application/json
             "year":0
         }
     }
+}
+```
+
+### <a name="example-4"></a>Пример 4
+#### <a name="request"></a>Запрос
+В четвертом примере показано, как получить параметры [пользователя](../resources/userpurpose.md) почтового ящика пользователя, выполнившего вход в систему.
+<!-- {
+  "blockType": "request",
+  "name": "get_mailboxsettings_4"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
+```
+#### <a name="response"></a>Отклик
+Ответ включает только параметры [назначения пользователя](../resources/userpurpose.md) .
+
+<!-- {
+  "blockType": "response",
+  "name": "get_mailboxsettings_4",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userPurpose"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('622eaaff-0683-4862-9de4-f2ec83c2bd98')/mailboxSettings/userPurpose",
+    "value": "user"
 }
 ```
 

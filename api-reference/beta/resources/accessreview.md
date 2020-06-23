@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 57a94a7b2347e4c4b57a431f5075dc65ba76d80c
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 637ebeae4aea6311cbeba6170d29dec047a200ad
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336645"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845773"
 ---
 # <a name="accessreview-resource-type"></a>Тип ресурса Акцессревиев
 
@@ -64,7 +64,7 @@ ms.locfileid: "44336645"
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-| `reviewers`               |Коллекция [userIdentity](useridentity.md)                     | Коллекция проверяющих для проверки доступа, если тип проверки доступа Ревиевертипе имеет значение `delegate` . |
+| `reviewers`               |Коллекция [userIdentity](useridentity.md)                     | Коллекция проверяющих для проверки доступа, если тип проверки доступа Ревиевертипе имеет значение `delegated` . |
 | `decisions`               |Коллекция [акцессревиевдеЦисион](accessreviewdecision.md) | Коллекция решений для этой проверки доступа. |
 | `myDecisions`             |Коллекция [акцессревиевдеЦисион](accessreviewdecision.md) | Коллекция решений для вызывающего абонента, если вызывающий абонент является проверяющим. |
 | `instances`               |Коллекция [акцессревиев](accessreview.md)         | Коллекция просмотров Access, прошедший, присутствующую и будущей, если этот объект является повторяющейся проверкой доступа. |

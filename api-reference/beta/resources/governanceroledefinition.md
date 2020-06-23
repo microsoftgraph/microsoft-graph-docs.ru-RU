@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: b6ff2edcfd1725b31051d1fc73c04539acf73e56
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 1435e8326536aa1a8943e46799d6a5612485a425
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217927"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845745"
 ---
 # <a name="governanceroledefinition-resource-type"></a>Тип ресурса Говернанцероледефинитион
 
@@ -26,21 +26,21 @@ ms.locfileid: "43217927"
 
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:--------|
-|[List](../api/governanceroledefinition-list.md) | Коллекция [говернанцероледефинитион](../resources/governanceroledefinition.md) |Перечисление коллекции определений ролей для ресурса.|
+|[Список](../api/governanceroledefinition-list.md) | Коллекция [говернанцероледефинитион](../resources/governanceroledefinition.md) |Перечисление коллекции определений ролей для ресурса.|
 |[получение](../api/governanceroledefinition-get.md); | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Считывание свойств и связей объекта определения роли, указанного по идентификатору.|
 
-Нет `POST`, `PUT`, `PATCH`, `DELETE` поддерживается в `roleDefinitions` наборе сущностей для Now.
+Нет `POST` , `PUT` , `PATCH` , `DELETE` поддерживается в `roleDefinitions` наборе сущностей для Now.
 
 ## <a name="properties"></a>Свойства
-| Свойство  | Тип      |Описание|
-|:----|:----------|:----------|:----------|
-|id         |Строка     |Идентификатор определения роли. |
-|resourceId |String     |Обязательный. Идентификатор ресурса, связанного с определением роли. |
-|externalId   |String     |Внешний идентификатор определения роли.|
-|displayName|Строка     |Отображаемое имя определения роли.|
-|templateId | String | |
+| Свойство    | Тип   | Описание                                                           |
+|:------------|:-------|:----------------------------------------------------------------------|
+| id          | Строка | Идентификатор определения роли.                                        |
+| resourceId  | String | Обязательный. Идентификатор ресурса, связанного с определением роли. |
+| externalId  | String | Внешний идентификатор определения роли.                               |
+| displayName | Строка | Отображаемое имя определения роли.                              |
+| templateId  | String |                                                                       |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Только для чтения. Связанный ресурс для определения роли.|
@@ -64,7 +64,7 @@ ms.locfileid: "43217927"
   "id": "String (identifier)",
   "resourceId": "String",
   "externalId": "String",
-  "displayName": "String",  
+  "displayName": "String",
   "templateId":"String"
 }
 

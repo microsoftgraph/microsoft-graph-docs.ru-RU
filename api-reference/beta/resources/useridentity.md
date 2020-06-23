@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e82ff5959e47ac6ec0832e31f6228282a14e671f
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: 1ab0a102cf430a98a0a5662af30cdd8cd36a3430
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272733"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846074"
 ---
 # <a name="useridentity-type"></a>Тип userIdentity
 
@@ -18,7 +18,7 @@ ms.locfileid: "44272733"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Для [просмотров Access](accessreviews-root.md)Azure AD этот тип представляет собой удостоверение пользователя Azure AD для создателя или рецензента проверки доступа.  
+Для [просмотров Access](accessreviews-root.md)Azure AD этот тип представляет собой удостоверение пользователя Azure AD для создателя или рецензента проверки доступа.
 В контексте журнала аудита Azure AD — это сведения о пользователях, которые были инициированы или затронуты действием аудита.
 
 Этот тип наследуется от [Identity](identity.md) и имеет одно дополнительное свойство, имя участника пользователя.
@@ -38,19 +38,20 @@ ms.locfileid: "44272733"
 
 ## <a name="remarks"></a>Заметки
 
-В некоторых случаях уникальный идентификатор субъекта может быть недоступен. В таком случае для удостоверения возвращается свойство **displayName**, но в ресурсе будет отсутствовать свойство **id**.
+In some circumstances, the unique identifier for the actor may not be available.
+In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
 ## <a name="see-also"></a>См. также
 
-| Method | Описание возвращаемого типа|
-|:---------------|:--------|:----------|
-|[Получение рецензентов Акцессревиев](../api/accessreview-listreviewers.md) | Коллекция [userIdentity](useridentity.md)| Получение рецензентов объекта Акцессревиев. |
-|[Добавление рецензента Акцессревиев](../api/accessreview-addreviewer.md) | Отсутствуют. | Добавьте проверяющего в объект Акцессревиев. |
-|[Удаление рецензента Акцессревиев](../api/accessreview-removereviewer.md) | Отсутствуют. |Удаление проверяющего из Акцессревиев. |
+| Метод                                                                | Возвращаемый тип                                | Описание                             |
+|:----------------------------------------------------------------------|:-------------------------------------------|:----------------------------------------|
+| [Получение рецензентов Акцессревиев](../api/accessreview-listreviewers.md)    | Коллекция [userIdentity](useridentity.md) | Получение рецензентов объекта Акцессревиев.   |
+| [Добавление рецензента Акцессревиев](../api/accessreview-addreviewer.md)       | Отсутствуют.                                      | Добавьте проверяющего в объект Акцессревиев.      |
+| [Удаление рецензента Акцессревиев](../api/accessreview-removereviewer.md) | Отсутствуют.                                      | Удаление проверяющего из Акцессревиев. |
 
 ## <a name="json-representation"></a>Представление JSON
 
