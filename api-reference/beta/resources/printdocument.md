@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 2a981fbdf7e1126783ae97d93c20e3ec08b1f2f0
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 1e7a1d6a9c131417e4f0ef171ac364e5fe8b106b
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896086"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863784"
 ---
 # <a name="printdocument-resource-type"></a>Тип ресурса printDocument
 
@@ -29,11 +29,11 @@ ms.locfileid: "42896086"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка|Идентификатор документа. Только для чтения.|
-|name|String|Имя документа. Только для чтения.|
-|mimeType|String|Тип MIME документа. Только для чтения.|
-|сизеинбитес|Int64|Размер документа в байтах. Только для чтения.|
-|документконфигуратион|[принтердокументконфигуратион](printerdocumentconfiguration.md) |Группа параметров, которые принтер должен использовать для печати документа. Только для чтения.|
+|id|String|Идентификатор документа. Только для чтения.|
+|displayName|Строка|Имя документа. Только для чтения.|
+|contentType|String|Тип контента документа (MIME). Только для чтения.|
+|size|Int64|Размер документа в байтах. Только для чтения.|
+|configuration|[принтердокументконфигуратион](printerdocumentconfiguration.md) |Группа параметров, которые принтер должен использовать для печати документа. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

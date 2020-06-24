@@ -1,30 +1,32 @@
 ---
-title: Тип ресурса Интежерранже
-description: Представляет включающий диапазон целых чисел, который описывается двумя границами Int64.
+title: Тип ресурса Принтмаргин
+description: Задает ширину полей, используемую при печати.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: bef2bd71d3ac039165146bcc5783eef7ba67a785
+ms.openlocfilehash: 4d7399f45138d6ab7d82f33e6577e7d08967ad15
 ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863707"
+ms.locfileid: "44863700"
 ---
-# <a name="integerrange-resource-type"></a>Тип ресурса Интежерранже
+# <a name="printmargin-complex-type"></a>сложный тип Принтмаргин
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет включающий диапазон целых чисел, который описывается двумя границами Int64.
+Задает ширину полей, используемую при печати.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|начать|Int64|Инклюзивная Нижняя граница диапазона целых чисел.|
-|end|Int64|Включающая верхняя граница диапазона целых чисел.|
+|top|Int32|Маржа в микронах от верхнего края.|
+|bottom|Int32|Маржа в микронах от нижнего края.|
+|Правильно|Int32|Маржа в микронах от правого края.|
+|left|Int32|Маржа в микронах от левого края.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -35,13 +37,15 @@ ms.locfileid: "44863707"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.integerRange"
+  "@odata.type": "microsoft.graph.printMargin"
 }-->
 
 ```json
 {
-    "start": 12345,
-    "end": 12345
+  "top": 123456,
+  "bottom": 123456,
+  "right": 123456,
+  "left": 123456
 }
 ```
 
@@ -49,7 +53,7 @@ ms.locfileid: "44863707"
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "integerRange resource",
+  "description": "printMargin resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

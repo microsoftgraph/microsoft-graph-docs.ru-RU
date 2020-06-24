@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f07fc81fee6fdc8e8ff3b55c246facdc4f155d11
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: ebe5c584b009bd3028aece3cbfca75463f9c86dd
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556444"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44862460"
 ---
 # <a name="onpremisespublishingsinglesignon-resource-type"></a>Тип ресурса Онпремисеспублишингсинглесигнон
 
@@ -28,7 +28,7 @@ ms.locfileid: "44556444"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|кербероссигнонсеттингс| [кербероссигнонсеттингс](kerberossignonsettings.md)| Параметры ограниченного делегирования Kerberos для приложения. |
+|кербероссигнонсеттингс| [кербероссигнонсеттингс](kerberossignonsettings.md)| Параметры ограниченного делегирования Kerberos для приложений, использующих встроенную проверку подлинности Windows. |
 |синглесигнонмоде|String| Предпочтительный режим единого входа для приложения. Возможные значения: `none`, `onPremisesKerberos`, `headerBased`.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,8 +46,8 @@ ms.locfileid: "44556444"
 
 ```json
 {
-  "KerberosSignOnSettings": {"@odata.type": "microsoft.graph.kerberosSignOnSettings"},
-  "SingleSignOnMode": "String"
+  "kerberosSignOnSettings": {"@odata.type": "microsoft.graph.kerberosSignOnSettings"},
+  "singleSignOnMode": "String"
 }
 ```
 

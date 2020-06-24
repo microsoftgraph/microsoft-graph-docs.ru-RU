@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f6f33b8dfd5fa8f966d959a015bd641a6a1100b7
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 3bda35a6855dfbcb6da086cfa67c4e51def40a5d
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791106"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863504"
 ---
 # <a name="list-riskyusers"></a>Список riskyUsers
 
@@ -35,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers
+GET /identityProtection/riskyUsers
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает `$filter` настройку ответа на запрос. Просмотрите пример, приведенный далее в этом разделе. 
@@ -43,9 +44,9 @@ GET /riskyUsers
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Идентификатор сеанса книги, который определяет, сохраняются ли изменения. Необязательный параметр.|
+| Workbook-Session-Id  | Идентификатор сеанса книги, который определяет, сохраняются ли изменения. Необязательное свойство.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -118,7 +119,7 @@ Content-type: application/json
   "name": "list_filter_riskyusers"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
+GET https://graph.microsoft.com/beta/identityProtection/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-filter-riskyusers-csharp-snippets.md)]

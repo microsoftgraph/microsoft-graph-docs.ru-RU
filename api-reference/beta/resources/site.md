@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a3389737581e9c327ff48e9ff3065c399c568cb8
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: fc6a7472da2676d0266d964b7bdddee976d5ac8c
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934880"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864226"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -36,7 +36,7 @@ ms.locfileid: "43934880"
 | [Поиск сайтов][]           | GET /sites?search={query}
 | [Отслеживание сайта][]                | POST /users/{user-id}/followedSites/add
 | [Прекращение отслеживания сайта][]              | POST /users/{user-id}/followedSites/remove
-| [Перечисление отслеживаемых сайтов][]        | POST /me/followedSites
+| [Перечисление отслеживаемых сайтов][]        | GET /me/followedSites
 
 [Получение сайта]: ../api/site-get.md
 [Получение корневого сайта]: ../api/site-get.md
@@ -56,17 +56,17 @@ ms.locfileid: "43934880"
 
 | Имя свойства            | Тип               | Описание
 |:-------------------------|:-------------------|:-----------------------------
-| **id**                   | строка             | [Уникальный идентификатор](#id-property) элемента. Только для чтения.
-| **createdDateTime**      | DateTimeOffset     | Дата и время создания элемента. Только для чтения.
+| **id**                   | string             | [Уникальный идентификатор](#id-property) элемента. Только для чтения.
+| **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
 | **description**          | string             | Текст с описанием сайта.
-| **eTag**                 | string             | ETag для элемента. Только для чтения.                                                                  |
-| **displayName**          | string             | Полное название сайта. Только для чтения.
-| **lastModifiedDateTime** | DateTimeOffset     | Дата и время последнего изменения элемента. Только для чтения.
+| **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
+| **displayName**          | string             | The full title for the site. Read-only.
+| **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.
 | **name**                 | string             | Имя или название элемента.
-| **root**                 | [root][]           | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.
-| **sharepointIds**        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
-| **siteCollection**       | [siteCollection][] | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения.
-| **webUrl**               | строка (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.
+| **root**                 | [root][]           | If present, indicates that this is the root site in the site collection. Read-only.
+| **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
+| **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only.
+| **webUrl**               | string (url-адрес)       | URL that displays the item in the browser. Read-only.
 
 ### <a name="id-property"></a>Свойство id
 Ресурс **site** идентифицируется посредством уникального идентификатора, при создании которого используются следующие значения:
@@ -88,7 +88,7 @@ ms.locfileid: "43934880"
 | **contentTypes**  | Collection([contentType][])      | Коллекция типов контента, определенных для этого сайта.
 | **drive**         | [drive][]                        | Диск по умолчанию (библиотека документов) для этого сайта.
 | **drives**        | Collection([drive][])            | Коллекция дисков (библиотек документов) на этом сайте.
-| **items**         | Collection([baseItem][])         | Используется для адресации любого элемента, содержащегося на этом сайте. Вам не удастся выполнить перечисление этой коллекции.
+| **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
 | **lists**         | Collection([list][])             | Коллекция списков на этом сайте.
 | **pages**         | Collection([sitePage][])         | Коллекция страниц в списке SitePages на этом сайте.
 | **sites**         | Collection([site][])             | Коллекция дочерних сайтов этого сайта.

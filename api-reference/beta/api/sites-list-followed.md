@@ -5,12 +5,12 @@ title: Перечисление отслеживаемых сайтов
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: c705b7d9880fffbc96b2b863669862ff01c0739e
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 8f5435ee027ac33e7076a3b6d8cef11954770227
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44052297"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863476"
 ---
 # <a name="list-followed-sites"></a>Перечисление отслеживаемых сайтов
 
@@ -22,7 +22,7 @@ ms.locfileid: "44052297"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,8 +37,14 @@ ms.locfileid: "44052297"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /me/followedSites
+GET /me/followedSites
 ```
+Получение списка сайтов, за которыми следует целевой пользователь, в зависимости от его идентификатора.
+
+```http
+GET /users/{user-id}/followedSites
+```
+**Примечание:** Чтобы получить доступ к списку отслеживаемых сайтов другого пользователя, необходимы разрешения приложения.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.
@@ -53,7 +59,7 @@ POST /me/followedSites
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Этот метод возвращает коллекцию ресурсов [сайта](../resources/site.md) , которые подписаны пользователем.
 Если сайты не найдены, возвращается пустая коллекция.
@@ -64,10 +70,10 @@ POST /me/followedSites
 
 
 # <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-analytics" } -->
+<!-- { "blockType": "request", "name": "sites-list-followed", "scopes": "sites.readwrite.all" } -->
 
 ```msgraph-interactive
-POST /me/followedSites
+GET /me/followedSites
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]

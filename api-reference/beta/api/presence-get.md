@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 6af22c5e4ab1756aecaa384a78e010e12f071c16
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: f993c68b9858523a621f23bc182f6f6113c50366
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556291"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863352"
 ---
 # <a name="get-presence"></a>Получение сведений о присутствии
 
@@ -20,14 +20,14 @@ ms.locfileid: "44556291"
 
 Получение сведений о [присутствии](../resources/presence.md) пользователя.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 Для вызова этих API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)                  |
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Presence.Read, Presence.Read.All      |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                        |
-| Сервер приложений                            | Не поддерживается.                        |
+| Для приложений                            | Не поддерживается.                        |
 
 ## <a name="http-requests"></a>HTTP-запросы
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /communications/presences
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Required. |
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -157,8 +157,10 @@ Content-Length: 1574
 
 В приведенном ниже примере показано, как получить сведения о присутствии для другого пользователя. Для выполнения этой операции требуется разрешение на присутствие. Read. ALL.
 
-#### <a name="request"></a>Запросить
+#### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-user-presences"
@@ -167,6 +169,20 @@ Content-Length: 1574
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d-8eaa-e39d80d3a647
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presences-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-presences-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-presences-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

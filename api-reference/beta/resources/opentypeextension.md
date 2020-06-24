@@ -4,13 +4,13 @@ description: Открытые расширения (прежнее назван�
 localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 77afcc7c2894e92c02d9383af6c1e3f634122b4c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: extensions
+ms.openlocfilehash: 297055a6edb4eb4d094406e03b9e4136f1df68c4
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522167"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864107"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Тип ресурсов openTypeExtension (открытые расширения)
 
@@ -75,8 +75,8 @@ ms.locfileid: "42522167"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|extensionName|String|Уникальный текстовый идентификатор для модуля обработки данных открытого типа. Обязательный.|
-|id|String| Полный идентификатор, в котором сцеплены тип расширения и свойство **extensionName**. Только для чтения.|
+|extensionName|String|A unique text identifier for an open type data extension. Required.|
+|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
 
 ## <a name="relationships"></a>Связи
 
@@ -86,7 +86,7 @@ ms.locfileid: "42522167"
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(в существующем экземпляре ресурса) или новый [контакт](../resources/contact.md), [событие](../resources/event.md)или [сообщение](../resources/message.md) , содержащее объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.|
+|[Создание](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(в существующем экземпляре ресурса) или новый [контакт](../resources/contact.md), [событие](../resources/event.md)или [сообщение](../resources/message.md) , содержащее объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Чтение свойств и связей объекта openTypeExtension.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Обновление объекта openTypeExtension. |
 |[Delete](../api/opentypeextension-delete.md) | Нет |Удаление объекта openTypeExtension. |
