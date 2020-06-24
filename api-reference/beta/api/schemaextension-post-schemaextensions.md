@@ -4,74 +4,79 @@ description: Создайте новое определение schemaExtension,
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 1d5216278347a0170bf74de1d4696e54a1faff59
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: extensions
+ms.openlocfilehash: e2415e9ede9f31f54e58f911c69310bbf9ad6442
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453760"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44862515"
 ---
-# <a name="create-schemaextension"></a><span data-ttu-id="09caf-103">Создание schemaExtension</span><span class="sxs-lookup"><span data-stu-id="09caf-103">Create schemaExtension</span></span>
+# <a name="create-schemaextension"></a><span data-ttu-id="fd5ce-103">Создание schemaExtension</span><span class="sxs-lookup"><span data-stu-id="fd5ce-103">Create schemaExtension</span></span>
 
-<span data-ttu-id="09caf-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="09caf-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fd5ce-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fd5ce-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="09caf-105">Создайте новое определение [schemaExtension](../resources/schemaextension.md), чтобы расширить [поддерживаемый тип ресурса](/graph/extensibility-overview#supported-resources).</span><span class="sxs-lookup"><span data-stu-id="09caf-105">Create a new [schemaExtension](../resources/schemaextension.md) definition to extend a [supporting resource type](/graph/extensibility-overview#supported-resources).</span></span>
+<span data-ttu-id="fd5ce-105">Создайте новое определение [schemaExtension](../resources/schemaextension.md), чтобы расширить [поддерживаемый тип ресурса](/graph/extensibility-overview#supported-resources).</span><span class="sxs-lookup"><span data-stu-id="fd5ce-105">Create a new [schemaExtension](../resources/schemaextension.md) definition to extend a [supporting resource type](/graph/extensibility-overview#supported-resources).</span></span>
 
-<span data-ttu-id="09caf-p101">Расширения схемы позволяют добавлять в ресурс строго типизированные пользовательские данные. Приложение, которое создает расширение схемы, является приложением-владельцем. В зависимости от [состояния](/graph/extensibility-overview#schema-extensions-lifecycle) расширения, приложение-владелец может обновить или удалить расширение. Другие приложения такого не могут.</span><span class="sxs-lookup"><span data-stu-id="09caf-p101">Schema extensions let you add strongly-typed custom data to a resource. The app that creates a schema extension is the owner app. Depending on the [state](/graph/extensibility-overview#schema-extensions-lifecycle) of the extension, the owner app, and only the owner app, may update or delete the extension.</span></span> 
+<span data-ttu-id="fd5ce-106">Schema extensions let you add strongly-typed custom data to a resource.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-106">Schema extensions let you add strongly-typed custom data to a resource.</span></span> <span data-ttu-id="fd5ce-107">The app that creates a schema extension is the owner app.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-107">The app that creates a schema extension is the owner app.</span></span> <span data-ttu-id="fd5ce-108">Depending on the [state](/graph/extensibility-overview#schema-extensions-lifecycle) of the extension, the owner app, and only the owner app, may update or delete the extension.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-108">Depending on the [state](/graph/extensibility-overview#schema-extensions-lifecycle) of the extension, the owner app, and only the owner app, may update or delete the extension.</span></span> 
 
-<span data-ttu-id="09caf-109">Ознакомьтесь с примерами того, как [определить расширение схемы, описывающее учебный курс](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course), использовать определение расширения схемы для [создания группы с данными учебного курса](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data) и [добавить данные учебного курса в существующую группу](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group).</span><span class="sxs-lookup"><span data-stu-id="09caf-109">See examples of how to [define a schema extension that describes a training course](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course), use the schema extension definition to [create a new group with training course data](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data), and [add training course data to an existing group](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group).</span></span>
+<span data-ttu-id="fd5ce-109">Ознакомьтесь с примерами того, как [определить расширение схемы, описывающее учебный курс](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course), использовать определение расширения схемы для [создания группы с данными учебного курса](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data) и [добавить данные учебного курса в существующую группу](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group).</span><span class="sxs-lookup"><span data-stu-id="fd5ce-109">See examples of how to [define a schema extension that describes a training course](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course), use the schema extension definition to [create a new group with training course data](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data), and [add training course data to an existing group](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="09caf-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="09caf-110">Permissions</span></span>
-<span data-ttu-id="09caf-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="09caf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="fd5ce-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fd5ce-110">Permissions</span></span>
+<span data-ttu-id="fd5ce-111">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-111">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="fd5ce-112">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fd5ce-112">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="09caf-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="09caf-113">Permission type</span></span>      | <span data-ttu-id="09caf-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="09caf-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fd5ce-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fd5ce-113">Permission type</span></span>      | <span data-ttu-id="fd5ce-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fd5ce-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="09caf-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="09caf-115">Delegated (work or school account)</span></span> | <span data-ttu-id="09caf-116">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="09caf-116">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="09caf-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="09caf-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="09caf-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="09caf-118">Not supported.</span></span>    |
-|<span data-ttu-id="09caf-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="09caf-119">Application</span></span> | <span data-ttu-id="09caf-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="09caf-120">Not supported.</span></span> |
+|<span data-ttu-id="fd5ce-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fd5ce-115">Delegated (work or school account)</span></span> | <span data-ttu-id="fd5ce-116">Application. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="fd5ce-116">Application.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="fd5ce-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fd5ce-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fd5ce-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-118">Not supported.</span></span>    |
+|<span data-ttu-id="fd5ce-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fd5ce-119">Application</span></span> | <span data-ttu-id="fd5ce-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-120">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="09caf-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="09caf-121">HTTP request</span></span>
+> [!NOTE]
+> <span data-ttu-id="fd5ce-121">Кроме того, для делегированного процесса вошедшего пользователь должен быть владельцем вызывающего приложения или владельцем (приложением с), `appId` используемым для задания свойства **owner** .</span><span class="sxs-lookup"><span data-stu-id="fd5ce-121">Additionally for the delegated flow, the signed-in user must be the owner of the calling application OR the owner of the (application with the) `appId` used to set the **owner** property.</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="fd5ce-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fd5ce-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /schemaExtensions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="09caf-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="09caf-122">Request headers</span></span>
-| <span data-ttu-id="09caf-123">Имя</span><span class="sxs-lookup"><span data-stu-id="09caf-123">Name</span></span>       | <span data-ttu-id="09caf-124">Описание</span><span class="sxs-lookup"><span data-stu-id="09caf-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fd5ce-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fd5ce-123">Request headers</span></span>
+| <span data-ttu-id="fd5ce-124">Имя</span><span class="sxs-lookup"><span data-stu-id="fd5ce-124">Name</span></span>       | <span data-ttu-id="fd5ce-125">Описание</span><span class="sxs-lookup"><span data-stu-id="fd5ce-125">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="09caf-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="09caf-125">Authorization</span></span>  | <span data-ttu-id="09caf-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="09caf-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="09caf-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="09caf-128">Content-Type</span></span>  | <span data-ttu-id="09caf-129">application/json</span><span class="sxs-lookup"><span data-stu-id="09caf-129">application/json</span></span>  |
+| <span data-ttu-id="fd5ce-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fd5ce-126">Authorization</span></span>  | <span data-ttu-id="fd5ce-127">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-127">Bearer {token}.</span></span> <span data-ttu-id="fd5ce-128">Required.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-128">Required.</span></span> |
+| <span data-ttu-id="fd5ce-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fd5ce-129">Content-Type</span></span>  | <span data-ttu-id="fd5ce-130">application/json</span><span class="sxs-lookup"><span data-stu-id="fd5ce-130">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="09caf-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="09caf-130">Request body</span></span>
-<span data-ttu-id="09caf-131">В теле запроса должно быть представление объекта [schemaExtension](../resources/schemaextension.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="09caf-131">In the request body, supply a JSON representation of [schemaExtension](../resources/schemaextension.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fd5ce-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fd5ce-131">Request body</span></span>
+<span data-ttu-id="fd5ce-132">В теле запроса должно быть представление объекта [schemaExtension](../resources/schemaextension.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-132">In the request body, supply a JSON representation of [schemaExtension](../resources/schemaextension.md) object.</span></span>
 
-<span data-ttu-id="09caf-132">В следующей таблице приведены свойства, доступные при создании расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="09caf-132">The following table shows the properties that are available when you create a schema extension.</span></span>
+<span data-ttu-id="fd5ce-133">В следующей таблице приведены свойства, доступные при создании расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-133">The following table shows the properties that are available when you create a schema extension.</span></span>
 
-| <span data-ttu-id="09caf-133">Параметр</span><span class="sxs-lookup"><span data-stu-id="09caf-133">Parameter</span></span> | <span data-ttu-id="09caf-134">Тип</span><span class="sxs-lookup"><span data-stu-id="09caf-134">Type</span></span> | <span data-ttu-id="09caf-135">Описание</span><span class="sxs-lookup"><span data-stu-id="09caf-135">Description</span></span>|
+| <span data-ttu-id="fd5ce-134">Параметр</span><span class="sxs-lookup"><span data-stu-id="fd5ce-134">Parameter</span></span> | <span data-ttu-id="fd5ce-135">Тип</span><span class="sxs-lookup"><span data-stu-id="fd5ce-135">Type</span></span> | <span data-ttu-id="fd5ce-136">Описание</span><span class="sxs-lookup"><span data-stu-id="fd5ce-136">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="09caf-136">description</span><span class="sxs-lookup"><span data-stu-id="09caf-136">description</span></span>|<span data-ttu-id="09caf-137">String</span><span class="sxs-lookup"><span data-stu-id="09caf-137">String</span></span>|<span data-ttu-id="09caf-138">Описание расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="09caf-138">Description for the schema extension.</span></span>|
-|<span data-ttu-id="09caf-139">id</span><span class="sxs-lookup"><span data-stu-id="09caf-139">id</span></span>|<span data-ttu-id="09caf-140">String</span><span class="sxs-lookup"><span data-stu-id="09caf-140">String</span></span>|<span data-ttu-id="09caf-141">Уникальный идентификатор для определения расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="09caf-141">The unique identifier for the schema extension definition.</span></span> <br><span data-ttu-id="09caf-142">Значение можно присвоить одним из двух способов:</span><span class="sxs-lookup"><span data-stu-id="09caf-142">You can assign a value in one of two ways:</span></span> <ul><li><span data-ttu-id="09caf-143">Сцепите имя одного из ваших проверенных доменов с именем расширения схемы и создайте уникальную строку такого формата: \{_&#65279;доменноеИмя_\}\_\{_&#65279;имяСхемы_\}.</span><span class="sxs-lookup"><span data-stu-id="09caf-143">Concatenate the name of one of your verified domains with a name for the schema extension to form a unique string in this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.</span></span> <span data-ttu-id="09caf-144">Пример: `contoso_mySchema`.</span><span class="sxs-lookup"><span data-stu-id="09caf-144">As an example, `contoso_mySchema`.</span></span> <span data-ttu-id="09caf-145">ПРИМЕЧАНИЕ. Поддерживаются только проверенные домены в следующих доменах верхнего уровня: `.com`,`.net`, `.gov`, `.edu` или `.org`.</span><span class="sxs-lookup"><span data-stu-id="09caf-145">NOTE: Only verified domains under the following top-level domains are supported: `.com`,`.net`, `.gov`, `.edu` or `.org`.</span></span> </li><li><span data-ttu-id="09caf-p105">Укажите имя схемы и предоставьте Microsoft Graph возможность использовать его для назначения **id** в таком формате: ext\{_&#65279;8-случайных-букв-или-цифр_\}\_\{_&#65279;имя-схемы_\}. Например, `extkvbmkofy_mySchema`.</span><span class="sxs-lookup"><span data-stu-id="09caf-p105">Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. An example would be `extkvbmkofy_mySchema`.</span></span></li></ul><span data-ttu-id="09caf-148">После создания это свойство невозможно изменить.</span><span class="sxs-lookup"><span data-stu-id="09caf-148">This property cannot be changed after creation.</span></span> |
-|<span data-ttu-id="09caf-149">owner</span><span class="sxs-lookup"><span data-stu-id="09caf-149">owner</span></span>|<span data-ttu-id="09caf-150">String</span><span class="sxs-lookup"><span data-stu-id="09caf-150">String</span></span>|<span data-ttu-id="09caf-151">(Необязательный параметр) Идентификатор `appId` приложения, которое является владельцем расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="09caf-151">(Optional) The `appId` of the application that is the owner of the schema extension.</span></span> <span data-ttu-id="09caf-152">Это свойство можно указать при создании, чтобы задать владельца.</span><span class="sxs-lookup"><span data-stu-id="09caf-152">This property can be supplied on creation, to set the owner.</span></span>  <span data-ttu-id="09caf-153">Если оно не указано, то в качестве владельца будет задано вызывающее приложение `appId`.</span><span class="sxs-lookup"><span data-stu-id="09caf-153">If not supplied, then the calling application's `appId` will be set as the owner.</span></span> <span data-ttu-id="09caf-154">Таким образом, например, при создании определения расширения схемы с помощью песочницы Graph вам **потребуется** указать свойство владельца.</span><span class="sxs-lookup"><span data-stu-id="09caf-154">So, for example, if creating a new schema extension definition using Graph Explorer, you **must** supply the owner property.</span></span> <span data-ttu-id="09caf-155">После задания свойства оно будет доступно только для чтения, и вам не удастся изменить его.</span><span class="sxs-lookup"><span data-stu-id="09caf-155">Once set, this property is read-only and cannot be changed.</span></span>|
-|<span data-ttu-id="09caf-156">properties</span><span class="sxs-lookup"><span data-stu-id="09caf-156">properties</span></span>|<span data-ttu-id="09caf-157">Коллекция [extensionSchemaProperty](../resources/extensionschemaproperty.md)</span><span class="sxs-lookup"><span data-stu-id="09caf-157">[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection</span></span>|<span data-ttu-id="09caf-158">Коллекция типов и имен свойств, составляющих определение расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="09caf-158">The collection of property names and types that make up the schema extension definition.</span></span>|
-|<span data-ttu-id="09caf-159">targetTypes</span><span class="sxs-lookup"><span data-stu-id="09caf-159">targetTypes</span></span>|<span data-ttu-id="09caf-160">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="09caf-160">String collection</span></span>|<span data-ttu-id="09caf-161">Набор типов ресурсов Microsoft Graph, поддерживающих расширения схемы, к которым может быть применимо данное определение расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="09caf-161">Set of Microsoft Graph resource types (that support schema extensions) that this schema extension definition can be applied to.</span></span>|
+|<span data-ttu-id="fd5ce-137">description</span><span class="sxs-lookup"><span data-stu-id="fd5ce-137">description</span></span>|<span data-ttu-id="fd5ce-138">String</span><span class="sxs-lookup"><span data-stu-id="fd5ce-138">String</span></span>|<span data-ttu-id="fd5ce-139">Описание расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-139">Description for the schema extension.</span></span>|
+|<span data-ttu-id="fd5ce-140">id</span><span class="sxs-lookup"><span data-stu-id="fd5ce-140">id</span></span>|<span data-ttu-id="fd5ce-141">Строка</span><span class="sxs-lookup"><span data-stu-id="fd5ce-141">String</span></span>|<span data-ttu-id="fd5ce-142">Уникальный идентификатор для определения расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-142">The unique identifier for the schema extension definition.</span></span> <br><span data-ttu-id="fd5ce-143">Значение можно присвоить одним из двух способов:</span><span class="sxs-lookup"><span data-stu-id="fd5ce-143">You can assign a value in one of two ways:</span></span> <ul><li><span data-ttu-id="fd5ce-144">Сцепите имя одного из ваших проверенных доменов с именем расширения схемы и создайте уникальную строку такого формата: \{_&#65279;доменноеИмя_\}\_\{_&#65279;имяСхемы_\}.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-144">Concatenate the name of one of your verified domains with a name for the schema extension to form a unique string in this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.</span></span> <span data-ttu-id="fd5ce-145">Пример: `contoso_mySchema`.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-145">As an example, `contoso_mySchema`.</span></span> <span data-ttu-id="fd5ce-146">ПРИМЕЧАНИЕ. Поддерживаются только проверенные домены в следующих доменах верхнего уровня: `.com`,`.net`, `.gov`, `.edu` или `.org`.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-146">NOTE: Only verified domains under the following top-level domains are supported: `.com`,`.net`, `.gov`, `.edu` or `.org`.</span></span> </li><li><span data-ttu-id="fd5ce-147">Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-147">Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.</span></span> <span data-ttu-id="fd5ce-148">An example would be `extkvbmkofy_mySchema`.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-148">An example would be `extkvbmkofy_mySchema`.</span></span></li></ul><span data-ttu-id="fd5ce-149">После создания это свойство невозможно изменить.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-149">This property cannot be changed after creation.</span></span> |
+|<span data-ttu-id="fd5ce-150">owner</span><span class="sxs-lookup"><span data-stu-id="fd5ce-150">owner</span></span>|<span data-ttu-id="fd5ce-151">String</span><span class="sxs-lookup"><span data-stu-id="fd5ce-151">String</span></span>|<span data-ttu-id="fd5ce-152">(Необязательный параметр) Идентификатор `appId` приложения, которое является владельцем расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-152">(Optional) The `appId` of the application that is the owner of the schema extension.</span></span> <span data-ttu-id="fd5ce-153">Это свойство можно указать при создании, чтобы задать владельца.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-153">This property can be supplied on creation, to set the owner.</span></span>  <span data-ttu-id="fd5ce-154">Если оно не указано, то в качестве владельца будет задано вызывающее приложение `appId`.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-154">If not supplied, then the calling application's `appId` will be set as the owner.</span></span> <span data-ttu-id="fd5ce-155">Таким образом, например, при создании определения расширения схемы с помощью песочницы Graph вам **потребуется** указать свойство владельца.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-155">So, for example, if creating a new schema extension definition using Graph Explorer, you **must** supply the owner property.</span></span> <span data-ttu-id="fd5ce-156">После задания свойства оно будет доступно только для чтения, и вам не удастся изменить его.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-156">Once set, this property is read-only and cannot be changed.</span></span>|
+|<span data-ttu-id="fd5ce-157">properties</span><span class="sxs-lookup"><span data-stu-id="fd5ce-157">properties</span></span>|<span data-ttu-id="fd5ce-158">Коллекция [extensionSchemaProperty](../resources/extensionschemaproperty.md)</span><span class="sxs-lookup"><span data-stu-id="fd5ce-158">[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection</span></span>|<span data-ttu-id="fd5ce-159">Коллекция типов и имен свойств, составляющих определение расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-159">The collection of property names and types that make up the schema extension definition.</span></span>|
+|<span data-ttu-id="fd5ce-160">targetTypes</span><span class="sxs-lookup"><span data-stu-id="fd5ce-160">targetTypes</span></span>|<span data-ttu-id="fd5ce-161">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="fd5ce-161">String collection</span></span>|<span data-ttu-id="fd5ce-162">Набор типов ресурсов Microsoft Graph, поддерживающих расширения схемы, к которым может быть применимо данное определение расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-162">Set of Microsoft Graph resource types (that support schema extensions) that this schema extension definition can be applied to.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="09caf-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="09caf-162">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fd5ce-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="fd5ce-163">Response</span></span>
 
-<span data-ttu-id="09caf-163">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [schemaExtension](../resources/schemaextension.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="09caf-163">If successful, this method returns `201 Created` response code and [schemaExtension](../resources/schemaextension.md) object in the response body.</span></span>
+<span data-ttu-id="fd5ce-164">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [schemaExtension](../resources/schemaextension.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-164">If successful, this method returns `201 Created` response code and [schemaExtension](../resources/schemaextension.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="09caf-164">Пример</span><span class="sxs-lookup"><span data-stu-id="09caf-164">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fd5ce-165">Пример</span><span class="sxs-lookup"><span data-stu-id="fd5ce-165">Example</span></span>
 
-##### <a name="request-1"></a><span data-ttu-id="09caf-165">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="09caf-165">Request 1</span></span>
+### <a name="example-1-creating-a-schema-extension-using-a-verified-domain"></a><span data-ttu-id="fd5ce-166">Пример 1: создание расширения схемы с помощью проверенного домена</span><span class="sxs-lookup"><span data-stu-id="fd5ce-166">Example 1: Creating a schema extension using a verified domain</span></span>
 
-<span data-ttu-id="09caf-p107">В первом примере мы создаем уникальную строку со свойством **id** для определения расширения схемы, используя проверенное доменное имя (`graphlearn`) и имя схемы (`courses`). Уникальная строка имеет такой формат: \{_&#65279;доменноеИмя_\}\_\{_&#65279;имяСхемы_\}.</span><span class="sxs-lookup"><span data-stu-id="09caf-p107">The first example shows using a verified domain name, `graphlearn`, and a schema name, `courses`, to form a unique string for the **id** property of the schema extension definition. The unique string is based on this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.</span></span>
+#### <a name="request"></a><span data-ttu-id="fd5ce-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="fd5ce-167">Request</span></span>
 
-<span data-ttu-id="09caf-168">В теле запроса должно быть представление объекта [schemaExtension](../resources/schemaextension.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="09caf-168">In the request body, supply a JSON representation of the [schemaExtension](../resources/schemaextension.md) object.</span></span>
+<span data-ttu-id="fd5ce-168">В этом примере показано использование проверенного имени домена, `graphlearn` а также имени схемы `courses` для формирования уникальной строки для свойства **ID** определения расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-168">This example shows using a verified domain name, `graphlearn`, and a schema name, `courses`, to form a unique string for the **id** property of the schema extension definition.</span></span> <span data-ttu-id="fd5ce-169">Уникальная строка основана на этом формате, \{ _&#65279;имя_домена_ \} \_ \{ _&#65279;schemaName_ \} .</span><span class="sxs-lookup"><span data-stu-id="fd5ce-169">The unique string is based on this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="09caf-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="09caf-169">HTTP</span></span>](#tab/http)
+<span data-ttu-id="fd5ce-170">В теле запроса должно быть представление объекта [schemaExtension](../resources/schemaextension.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-170">In the request body, supply a JSON representation of the [schemaExtension](../resources/schemaextension.md) object.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="fd5ce-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="fd5ce-171">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_schemaextension_from_schemaextensions_1"
@@ -102,24 +107,24 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="09caf-170">C#</span><span class="sxs-lookup"><span data-stu-id="09caf-170">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fd5ce-172">C#</span><span class="sxs-lookup"><span data-stu-id="fd5ce-172">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-schemaextension-from-schemaextensions-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="09caf-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="09caf-171">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fd5ce-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fd5ce-173">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-schemaextension-from-schemaextensions-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="09caf-172">Objective-C</span><span class="sxs-lookup"><span data-stu-id="09caf-172">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fd5ce-174">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fd5ce-174">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response-1"></a><span data-ttu-id="09caf-173">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="09caf-173">Response 1</span></span>
+#### <a name="response"></a><span data-ttu-id="fd5ce-175">Отклик</span><span class="sxs-lookup"><span data-stu-id="fd5ce-175">Response</span></span>
 
-<span data-ttu-id="09caf-p108">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="09caf-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="fd5ce-176">Here is an example of the response.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-176">Here is an example of the response.</span></span> <span data-ttu-id="fd5ce-177">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-177">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="fd5ce-178">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-178">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -155,12 +160,14 @@ Content-length: 420
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="09caf-177">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="09caf-177">Request 2</span></span>
+### <a name="example-2-creating-a-schema-extension-using-just-a-name"></a><span data-ttu-id="fd5ce-179">Пример 2: создание расширения схемы с использованием всего имени</span><span class="sxs-lookup"><span data-stu-id="fd5ce-179">Example 2: Creating a schema extension using just a name</span></span>
 
-<span data-ttu-id="09caf-p109">Во втором примере мы указываем имя схемы (`courses`) в свойстве **id** тела запроса, а также остальные свойства в объекте [schemaExtension](../resources/schemaextension.md) как данные JSON. Microsoft Graph назначит и вернет в отклике уникальное строковое значение.</span><span class="sxs-lookup"><span data-stu-id="09caf-p109">The second example shows specifying just a schema name, `courses`, in the **id** property in the request, together with the JSON representation of the rest of the properties in the [schemaExtension](../resources/schemaextension.md) object. Microsoft Graph will assign and return a unique string value in the response.</span></span>
+#### <a name="request"></a><span data-ttu-id="fd5ce-180">Запрос</span><span class="sxs-lookup"><span data-stu-id="fd5ce-180">Request</span></span>
+
+<span data-ttu-id="fd5ce-181">В этом примере показано, как указать только имя схемы, `courses` в свойстве **ID** в запросе, вместе с представлением в формате JSON остальных свойств объекта [schemaExtension](../resources/schemaextension.md) .</span><span class="sxs-lookup"><span data-stu-id="fd5ce-181">This example shows specifying just a schema name, `courses`, in the **id** property in the request, together with the JSON representation of the rest of the properties in the [schemaExtension](../resources/schemaextension.md) object.</span></span> <span data-ttu-id="fd5ce-182">Microsoft Graph присвоит и возвращает уникальное строковое значение в отклике.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-182">Microsoft Graph will assign and return a unique string value in the response.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="09caf-180">HTTP</span><span class="sxs-lookup"><span data-stu-id="09caf-180">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fd5ce-183">HTTP</span><span class="sxs-lookup"><span data-stu-id="fd5ce-183">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_schemaextension_from_schemaextensions_2"
@@ -191,24 +198,24 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="09caf-181">C#</span><span class="sxs-lookup"><span data-stu-id="09caf-181">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fd5ce-184">C#</span><span class="sxs-lookup"><span data-stu-id="fd5ce-184">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-schemaextension-from-schemaextensions-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="09caf-182">JavaScript</span><span class="sxs-lookup"><span data-stu-id="09caf-182">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fd5ce-185">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fd5ce-185">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-schemaextension-from-schemaextensions-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="09caf-183">Objective-C</span><span class="sxs-lookup"><span data-stu-id="09caf-183">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fd5ce-186">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fd5ce-186">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response-2"></a><span data-ttu-id="09caf-184">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="09caf-184">Response 2</span></span>
+#### <a name="response"></a><span data-ttu-id="fd5ce-187">Отклик</span><span class="sxs-lookup"><span data-stu-id="fd5ce-187">Response</span></span>
 
-<span data-ttu-id="09caf-p110">Отклик включает уникальную строку в свойстве **id**, созданную на основе имени схемы, предоставленном в запросе, и прочее содержимое созданного определения схемы. Значение **id** в отклике имеет формат ext\{_&#65279;8-случайных-букв-или-цифр_\}\_\{_&#65279;имя-схемы_\}. Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="09caf-p110">The response includes a unique string in the **id** property that is based on the schema name provided in the request, together with the rest of the newly created schema definition. The value in **id** in the response is based on the format, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="fd5ce-188">The response includes a unique string in the **id** property that is based on the schema name provided in the request, together with the rest of the newly created schema definition.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-188">The response includes a unique string in the **id** property that is based on the schema name provided in the request, together with the rest of the newly created schema definition.</span></span> <span data-ttu-id="fd5ce-189">The value in **id** in the response is based on the format, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-189">The value in **id** in the response is based on the format, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.</span></span> <span data-ttu-id="fd5ce-190">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-190">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="fd5ce-191">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-191">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -244,11 +251,88 @@ Content-length: 420
 }
 ```
 
+### <a name="example-3-creating-a-schema-extension-setting-the-owner"></a><span data-ttu-id="fd5ce-192">Пример 3: Создание параметра расширения схемы владелец</span><span class="sxs-lookup"><span data-stu-id="fd5ce-192">Example 3: Creating a schema extension setting the owner</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="09caf-189">См. также</span><span class="sxs-lookup"><span data-stu-id="09caf-189">See also</span></span>
+#### <a name="request"></a><span data-ttu-id="fd5ce-193">Запрос</span><span class="sxs-lookup"><span data-stu-id="fd5ce-193">Request</span></span>
 
-- [<span data-ttu-id="09caf-190">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="09caf-190">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="09caf-191">Добавление пользовательских данных в группы с помощью расширений схемы</span><span class="sxs-lookup"><span data-stu-id="09caf-191">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
+<span data-ttu-id="fd5ce-194">В этом примере показано, как создать параметр расширения схемы для **владельца**.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-194">This example shows how to create a schema extension setting the **owner**.</span></span>  <span data-ttu-id="fd5ce-195">В этом сценарии пользователь приложения может не быть владельцем приложения (например, если используется обозреватель Microsoft Graph).</span><span class="sxs-lookup"><span data-stu-id="fd5ce-195">In this scenario, the user of the application might not be the owner of the application (for example if you are using Microsoft Graph Explorer).</span></span>  <span data-ttu-id="fd5ce-196">В этом случае необходимо задать для свойства **owner** **идентификатор AppID** приложения, в противном случае вы не будете иметь права на создание расширения схемы.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-196">In this case you should set the **owner** property to the **appId** of an application you own, otherwise you won't be authorized to create a schema extension.</span></span> <span data-ttu-id="fd5ce-197">Задайте свойство **owner** в запросе вместе с представлением в формате JSON остальных свойств объекта [schemaExtension](../resources/schemaextension.md) .</span><span class="sxs-lookup"><span data-stu-id="fd5ce-197">Set the **owner** property in the request, together with the JSON representation of the rest of the properties in the [schemaExtension](../resources/schemaextension.md) object.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "create_schemaextension_from_schemaextensions_3"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/schemaExtensions
+Content-type: application/json
+
+{
+    "id":"courses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "Group"
+    ],
+    "owner": "50897f70-a455-4adf-87bc-4cf17091d5ac",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
+}
+```
+
+#### <a name="response"></a><span data-ttu-id="fd5ce-198">Отклик</span><span class="sxs-lookup"><span data-stu-id="fd5ce-198">Response</span></span>
+
+<span data-ttu-id="fd5ce-199">Ответ включает в себя **владельца** , которому присвоено указанное значение в запросе.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-199">The response includes the **owner** set to the supplied value in the request.</span></span> <span data-ttu-id="fd5ce-200">Примечание. Представленный здесь объект ответа может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-200">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="fd5ce-201">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fd5ce-201">All of the properties will be returned from an actual call.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 420
+
+{
+    "id": "extk9eruy7c_courses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "Group"
+    ],
+    "status": "InDevelopment",
+    "owner": "50897f70-a455-4adf-87bc-4cf17091d5ac",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "String"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
+}
+```
+
+## <a name="see-also"></a><span data-ttu-id="fd5ce-202">См. также</span><span class="sxs-lookup"><span data-stu-id="fd5ce-202">See also</span></span>
+
+- [<span data-ttu-id="fd5ce-203">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="fd5ce-203">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="fd5ce-204">Добавление пользовательских данных в группы с помощью расширений схемы</span><span class="sxs-lookup"><span data-stu-id="fd5ce-204">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
