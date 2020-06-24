@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: insights
 description: Ресурс personOrGroupColumn в ресурсе columnDefinition указывает, что значения столбца представляют человека или группу, выбранные в каталоге.
 doc_type: resourcePageType
-ms.openlocfilehash: ea89377f38f820ec00fc38343ba714ec22a10c1c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9c3774405dbb8d2e98a9823a84be97d5df09b0b
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447201"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845479"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Тип ресурса personOrGroupColumn
 
@@ -44,7 +44,7 @@ ms.locfileid: "42447201"
 
 | Значение DisplayAs               | Описание
 |:------------------------------|:-----------------------
-| **account**                   | Необработанная закодированная строка утверждения SharePoint для человека или группы (например, i:0#.f|membership|olga@contoso.com).
+| **account**                   | Необработанная закодированная строка утверждения SharePoint для человека или группы (например, `i:0#.f|membership|jane@contoso.com`).
 | **department**                | Отдел человека или группы.
 | **firstName**                 | Имя человека.
 | **id**                        | Идентификатор человека или группы в каталоге.

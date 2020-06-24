@@ -1,12 +1,13 @@
 ---
 title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах.
-ms.openlocfilehash: 0cdd1ee8a14a623d7b65ac5c6453357c2d91aa63
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+author: arpitha-dhanapathi
+ms.openlocfilehash: b437f4d3c33a42a486bec2815ff88af050c78921
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429553"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845493"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -32,10 +33,10 @@ ms.locfileid: "44429553"
 
 | Национальный облако | Конечная точка портала Azure AD| Конечная точка Azure AD|
 |---------------------------|----------------|----------------|
+|Azure AD (глобальная служба)|https://portal.azure.com |`https://login.microsoftonline.com`|
 |Azure AD для государственных организаций США |https://portal.azure.us|`https://login.microsoftonline.us`|
 |Azure AD для Германии |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
 |Azure AD для Китая под управлением 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
-|Azure AD (глобальная служба)|https://portal.azure.com |`https://login.microsoftonline.com`|
 
 Дополнительные сведения о маркерах доступа Azure AD и Microsoft Graph приведены в статье Общие сведения о [проверке подлинности](./auth/auth-concepts.md). Сведения о сценариях проверки [подлинности](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)Azure AD см.
 
@@ -46,14 +47,20 @@ ms.locfileid: "44429553"
 
 | Национальное облако | Microsoft Graph | Песочница Graph |
 |---------------------------|----------------|----------------|
+| Глобальная служба Microsoft Graph | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 | Microsoft Graph для государственных организаций (США), 4 | https://graph.microsoft.us | Не поддерживается. |
 | Microsoft Graph для государственных учреждений (США), на английском (DOD) | https://dod-graph.microsoft.us | Не поддерживается. |
 | Microsoft Graph для Германии | https://graph.microsoft.de | Не поддерживается. |
 | Microsoft Graph для Китая под управлением 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
-| Глобальная служба Microsoft Graph | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
 > [!IMPORTANT]
-> Если у вас уже есть приложение в государственных странах США и вы используете конечную точку `https://graph.microsoft.com` , рекомендуем переключиться на новую `https://graph.microsoft.us` конечную точку. Доступ к данным правительства США с помощью Всемирной конечной точки в настоящее время функционирует, но в ближайшем будущем будет отключен.
+> Для приложения в США:
+>
+> - Если вы работаете в среде Office 365 GCC, продолжайте использовать международные конечные точки: `https://graph.microsoft.com` и `https://portal.azure.com` .
+> - Если вы работаете в среде с высоким уровнем Office 365 GCC, используйте: `https://portal.azure.us` и `https://graph.microsoft.us` .
+> - Если вы работаете в среде Office 365 DoD, используйте `https://portal.azure.us` и `https://dod-graph.microsoft.us` .
+>
+> Доступ к данным правительства США с помощью любой конечной точки в ближайшем будущем будет отключен.
 
 > [!NOTE]
 > Приложения могут получать доступ к данным Организации только через местные облачные конечные точки. Это означает, что приложения могут получать доступ только к данным в клиентах, зарегистрированных в конкретном национальном облаке. Приложения, пытающиеся получить доступ к данным пользователей, связанным с личными учетными записями Майкрософт через Microsoft Graph, должны использовать глобальную службу `https://graph.microsoft.com` . Маркеры доступа, полученные для национального облачного развертывания, не являются взаимозаменяемыми с данными, приобретенными для глобальной службы или любого другого национального облака.
@@ -71,7 +78,9 @@ ms.locfileid: "44429553"
 | Почта Outlook | ✔ | ✔ | ✔ |
 | Календарь Outlook | ✔ | ✔ | ✔ |
 | личные контакты; | ✔ | ✔ | ✔ |
-| SharePoint;| ✔ | ✔ | ✔ |
+| Безопасность | ✔ | ✔ | ✔ |
+| SharePoint| ✔ | ✔ | ✔ |
+| Teams | ✔ | ✔ | ✔ |
 | Планировщик|✔ |✔ |✔ |
 | Отчеты  |➖| ✔ |➖|
 | Уведомления об изменениях (веб-перехватчики)  | ✔ |✔ |✔* |

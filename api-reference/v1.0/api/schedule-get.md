@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 489c98f0fdef7b9523ee00b4b14bb0d93b7e7567
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: b953e911ba834b9707df33926e4a2a355653dcb3
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44218537"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845885"
 ---
 # <a name="get-schedule"></a>Получение расписания
 
@@ -27,13 +27,13 @@ ms.locfileid: "44218537"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |s
-|Сервер приложений | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                    |
+|:---------------------------------------|:-------------------------------------------------------------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                 |
+| Для приложений                            | Schedule. Read. ALL, Schedule. ReadWrite. ALL                                      |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
@@ -53,8 +53,8 @@ GET /teams/{teamId}/schedule
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json. Обязательный.  |
+| Авторизация  | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -101,9 +101,9 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

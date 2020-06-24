@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1aaf4b062bc46241ced0c862972cbfebffb2fbf4
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: 05db56363acd5e7706a6a4acd8a650f0dca3c93b
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272787"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845808"
 ---
 # <a name="chatmessagemention-resource-type"></a>Тип ресурса Чатмессажементион
 
@@ -50,7 +50,6 @@ ms.locfileid: "44272787"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatMessageMention"
 }-->
 

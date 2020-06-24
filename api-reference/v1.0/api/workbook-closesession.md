@@ -5,21 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ee16d09d61df2f805d7af50748935a588e578c1b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5d97f8bc65c9e1711c7a650a34b12670d23ccef5
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508886"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846179"
 ---
 # <a name="close-session"></a>Close Session
 
 Пространство имен: microsoft.graph
 
-Используйте этот API для закрытия существующего сеанса книги. 
+Используйте этот API для закрытия существующего сеанса книги.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -34,9 +34,9 @@ POST /workbook/closeSession
 workbook-session-id: {session-id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Описание|
-|:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. | | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Необязательный параметр.|
+| Имя                | Описание                      |
+|:--------------------|:---------------------------------|
+| Авторизация       | Bearer {token}. Required.        |
 | workbook-session-id | Идентификатор сеанса книги, которую необходимо закрыть |
 
 ## <a name="request-body"></a>Тело запроса
@@ -84,11 +84,11 @@ Content-length: 0
 ---
 
 
-Обратите внимание, что заголовок workbook-session-id является обязательным. 
+Обратите внимание, что заголовок workbook-session-id является обязательным.
 
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

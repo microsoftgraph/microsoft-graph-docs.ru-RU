@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Получение маркеров аутентификации
     items:
-      - name: Обзор
+      - name: Общие сведения
         href: /graph/auth/index?context=graph/api/1.0
       - name: Основы
         href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -22,7 +22,7 @@ items:
         href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
   - name: Использование API
     items:
-      - name: Обзор
+      - name: Общие сведения
         href: /graph/use-the-api?context=graph/api/1.0
       - name: Разбиение на страницы
         href: /graph/paging?context=graph/api/1.0
@@ -58,7 +58,7 @@ items:
       - name: Добавление пользовательских данных
         displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: /graph/extensibility-overview?context=graph/api/1.0
           - name: Использование открытых расширений (пример)
             href: /graph/extensibility-open-users?context=graph/api/1.0
@@ -72,7 +72,7 @@ items:
       - name: Azure AD Graph
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
           - name: Контрольный список для переноса приложений
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -167,11 +167,11 @@ items:
   - name: Справочник по версии 1.0
     expanded: true
     items:
-      - name: Обзор
+      - name: Общие сведения
         href: overview.md
       - name: Пользователи
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -387,7 +387,7 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Группы
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/groups-overview.md
           - name: Группа
             href: resources/group.md
@@ -899,7 +899,7 @@ items:
                 href: api/onlinemeeting-createorget.md
           - name: Записи звонков
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/callrecords-api-overview.md
               - name: Запись звонка
                 items:
@@ -942,7 +942,7 @@ items:
       - name: Устройства и приложения
         displayName: Intune
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/intune-graph-overview.md
           - name: Управление приложениями
             href: resources/intune-app-conceptual.md
@@ -3332,7 +3332,7 @@ items:
       - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/onedrive.md
           - name: Диски
             href: resources/drive.md
@@ -3653,7 +3653,7 @@ items:
             items:
               - name: Оценка угроз
                 items:
-                  - name: Обзор
+                  - name: Общие сведения
                     href: resources/threatassessment-api-overview.md
                   - name: Запрос оценки угроз
                     href: resources/threatassessmentrequest.md
@@ -3743,6 +3743,21 @@ items:
                     href: api/homerealmdiscoverypolicy-delete.md
                   - name: Список субъектов-служб и приложений
                     href: api/homerealmdiscoverypolicy-list-appliesto.md
+              - name: Политика сопоставления утверждений
+                href: resources/claimsmappingpolicy.md
+                items:
+                  - name: Создание
+                    href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+                  - name: Перечисление
+                    href: api/claimsmappingpolicy-list.md
+                  - name: Получение
+                    href: api/claimsmappingpolicy-get.md
+                  - name: Обновление
+                    href: api/claimsmappingpolicy-update.md
+                  - name: Удаление
+                    href: api/claimsmappingpolicy-delete.md
+                  - name: Список субъектов-служб и приложений
+                    href: api/claimsmappingpolicy-list-appliesto.md
               - name: Политика выдачи маркеров
                 href: resources/tokenissuancepolicy.md
                 items:
@@ -3841,6 +3856,32 @@ items:
                     href: api/serviceprincipal-post-owners.md
                   - name: Удалить
                     href: api/serviceprincipal-delete-owners.md
+              - name: Политики
+                items:
+                  - name: Назначение типа ресурса claimsMappingPolicy
+                    href: api/serviceprincipal-post-claimsmappingpolicies.md
+                  - name: Перечисление типов ресурсов claimsMappingPolicy
+                    href: api/serviceprincipal-list-claimsmappingpolicies.md
+                  - name: Удаление типа ресурса claimsMappingPolicy
+                    href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                  - name: Назначение типа ресурса homeRealmDiscoveryPolicy
+                    href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+                  - name: Перечисление типов ресурсов homeRealmDiscoveryPolicy
+                    href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+                  - name: Удаление типа ресурса homeRealmDiscoveryPolicy
+                    href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: Назначить tokenIssuancePolicy
+                    href: api/application-post-tokenissuancepolicies.md
+                  - name: Перечислить tokenIssuancePolicies
+                    href: api/application-list-tokenissuancepolicies.md
+                  - name: Убрать tokenIssuancePolicy
+                    href: api/application-delete-tokenissuancepolicies.md
+                  - name: Назначение типа ресурса tokenLifetimePolicy
+                    href: api/application-post-tokenlifetimepolicies.md
+                  - name: Перечисление типов ресурсов tokenLifetimePolicy
+                    href: api/application-list-tokenlifetimepolicies.md
+                  - name: Удаление типа ресурса tokenLifetimePolicy
+                    href: api/application-delete-tokenlifetimepolicies.md
           - name: Подписанная единица SKU
             href: resources/subscribedsku.md
             items:
@@ -3851,7 +3892,7 @@ items:
       - name: Почта
         displayName: 'Outlook, Outlook mail'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/mail-api-overview.md
           - name: Сообщение
             href: resources/message.md
@@ -4027,9 +4068,9 @@ items:
                 href: api/onenote-post-notebooks.md
               - name: Вывод списка разделов
                 href: api/onenote-list-sections.md
-              - name: Список групп разделов
+              - name: Вывод списка групп разделов
                 href: api/onenote-list-sectiongroups.md
-              - name: Список страниц
+              - name: Вывод списка страниц
                 href: api/onenote-list-pages.md
               - name: Создание страницы
                 href: api/onenote-post-pages.md
@@ -4106,7 +4147,7 @@ items:
                 href: api/resource-get.md
       - name: Люди и рабочая аналитика
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/social-overview.md
           - name: Люди
             items:
@@ -4297,7 +4338,7 @@ items:
           - name: Действия в OneDrive
             href: resources/onedrive-activity-reports.md
             items:
-              - name: Получение сведений о пользователе
+              - name: Получение сведений о пользователях
                 href: api/reportroot-getonedriveactivityuserdetail.md
               - name: Получение количества пользователей
                 href: api/reportroot-getonedriveactivityusercounts.md
@@ -4445,7 +4486,7 @@ items:
       - name: Сайты и списки
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/sharepoint.md
           - name: Сайты
             href: resources/site.md

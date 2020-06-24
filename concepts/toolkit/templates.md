@@ -3,12 +3,12 @@ title: Шаблоны в наборе инструментов Microsoft Graph
 description: Используйте настраиваемые шаблоны для изменения содержимого компонента.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 00be58b006fd4442154f547603cf1f2c5dbeb5a5
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 4f855558b8b1ee5d0f84b9998b62c2f770a4dc6b
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682245"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845955"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Шаблоны в наборе инструментов Microsoft Graph
 
@@ -82,10 +82,10 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 
 Следующие свойства также можно использовать с объектом контекста данных в шаблонах.
 
-| Свойство |  Описание |
-| --- | --- | --- |
-| $index | Числовой индекс элемента, отображаемого в цикле `data-for` . |
-| $parent | Если шаблон отображается в другом шаблоне, это свойство позволяет получить доступ к родительскому контексту данных. |
+| Свойство | Описание                                                                                                    |
+|----------|----------------------------------------------------------------------------------------------------------------|
+| $index   | Числовой индекс элемента, отображаемого в цикле `data-for` .                                     |
+| $parent  | Если шаблон отображается в другом шаблоне, это свойство позволяет получить доступ к родительскому контексту данных. |
 
 В приведенном ниже примере показано, как использовать `$index` свойство в цикле обработки данных.
 
@@ -138,7 +138,7 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 
 1. Непосредственно на компоненте.
 
-    Каждый компонент определяет `templateContext` свойство, которое можно использовать для передачи дополнительных данных любому шаблону в компоненте. 
+    Каждый компонент определяет `templateContext` свойство, которое можно использовать для передачи дополнительных данных любому шаблону в компоненте.
 
     ```ts
     document.querySelector('mgt-agenda').templateContext = {
@@ -195,7 +195,7 @@ document.querySelector('mgt-agenda').templateContext = {
 
 ### <a name="event-or-property-binding"></a>Привязка события или свойства
 
-`data-props`Атрибут позволяет добавить прослушиватель событий или задать значение свойства непосредственно в шаблонах. 
+`data-props`Атрибут позволяет добавить прослушиватель событий или задать значение свойства непосредственно в шаблонах.
 
 ```html
 <template>
@@ -203,7 +203,7 @@ document.querySelector('mgt-agenda').templateContext = {
 </template>
 ```
 
-Свойства Data/PROPS принимают строку с разделителями запятыми для каждого свойства или обработчика событий, который может потребоваться задать. 
+Свойства Data/PROPS принимают строку с разделителями запятыми для каждого свойства или обработчика событий, который может потребоваться задать.
 
 Чтобы добавить обработчик событий, добавьте к имени события префикс `@` . Обработчик события должен быть доступен в `templateContext` элементе.
 
@@ -238,7 +238,7 @@ agenda.addEventListener('templateRendered', (e) => { });
 Сведения о событии будут содержать ссылку на отображаемый элемент, объект контекста данных и тип шаблона.
 
 ```ts
-agenda.addEventListener('templateRendered', (e) => { 
+agenda.addEventListener('templateRendered', (e) => {
   let templateType = e.detail.templateType;
   let dataContext = e.detail.context;
   let element = e.detail.element;

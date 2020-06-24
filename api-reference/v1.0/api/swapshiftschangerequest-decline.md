@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d2b53c049dfb1213fdae049e0d8f1cb72b6a1f95
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 4814fb3ef9d416d6d3bc5be1815b746277a25426
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217470"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846186"
 ---
 # <a name="swapshiftschangerequest-decline"></a>Свапшифтсчанжерекуест: отклонить
 
@@ -20,13 +20,13 @@ ms.locfileid: "44217470"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |s
-|Сервер приложений | Schedule.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | Schedule.ReadWrite.All                      |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
@@ -42,8 +42,8 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
-| Content-Type | application/json. Обязательный. |
+| Авторизация | Bearer {token}. Required. |
+| Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -55,7 +55,7 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## <a name="examples"></a>Примеры
 

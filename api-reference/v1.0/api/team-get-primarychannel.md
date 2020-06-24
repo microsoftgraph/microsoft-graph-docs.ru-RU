@@ -5,18 +5,18 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 188837ac55e2be275722a862c391be9dc4d08e0c
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 15d1f1713e3155dc2fff5e07caf7b5f70fbf1aa8
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793803"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845787"
 ---
 # <a name="get-primarychannel"></a>Получение Примаричаннел
 
 Пространство имен: microsoft.graph
 
-Получение свойства навигации [команды](../resources/team.md) , позволяющей получить доступ к общему [каналу](../resources/channel.md)по умолчанию.
+Получение стандартного [канала](../resources/channel.md), **общего**для [группы](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/primaryChannel
-
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов

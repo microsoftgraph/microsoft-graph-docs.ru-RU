@@ -5,12 +5,12 @@ author: SarahBar
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e9f36828eba3b1f61a0f7ed44028c97abb74b4cb
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 86d2482c974c839597ebb8bc6a5b298f854d07b6
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543424"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845311"
 ---
 # <a name="directoryaudit-resource-type"></a>Тип ресурса directoryAudit
 
@@ -27,19 +27,19 @@ ms.locfileid: "43543424"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|activityDateTime|DateTimeOffset|Указывает дату и время выполнения действия. Тип Timestamp всегда представлен в формате времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|activityDisplayName|String|Указывает имя действия или имя операции (примеры: "Создание пользователя" и "Добавление члена в группу"). Для получения полного списка щелкните [список действий Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
-|additionalDetails|Коллекция [keyValue](keyvalue.md)|Указывает дополнительные сведения о действии.|
-|category|String|Указывает, для какой категории ресурса предназначено действие. (Пример: управление пользователями, управление группами и т. д.)|
-|correlationId|GUID|Указывает уникальный идентификатор, помогающий соотносить действия, происходящие в различных службах. Можно использовать для отслеживания журналов в службах.|
-|id|String| Указывает уникальный идентификатор для действия. Это идентификатор GUID.|
-|initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Указывает сведения о пользователе или приложении, запустившем действие.|
-|loggedByService|String|Указывает, в какой службе запущено действие (например: самостоятельное управление паролями, основной каталог, B2C, приглашенные пользователи, Microsoft Identity Manager, Privileged Identity Management).|
-|result|string| Указывает результат действия. Возможные значения: `success`, `failure`, `timeout`, `unknownFutureValue`.||
-|resultReason|String|Описывает причины появления "сбоя" или "время ожидания".|
-|targetResources|Коллекция [targetResource](targetresource.md)|Указывает, какой ресурс был изменен в результате действия. Возможные типы целевых ресурсов: User, Device, Directory, App, Role, Group, Policy или Other.
+| Свойство            | Тип                                                | Описание                                                                                                                                                                                                                                                                        |
+|:--------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| activityDateTime    | DateTimeOffset                                      | Указывает дату и время выполнения действия. Тип Timestamp всегда представлен в формате времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.                                                                                          |
+| activityDisplayName | String                                              | Указывает имя действия или имя операции (примеры: "Создание пользователя" и "Добавление члена в группу"). Для получения полного списка щелкните [список действий Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list). |
+| additionalDetails   | Коллекция [keyValue](keyvalue.md)                  | Указывает дополнительные сведения о действии.                                                                                                                                                                                                                                      |
+| category            | String                                              | Указывает, для какой категории ресурса предназначено действие. (Пример: управление пользователями, управление группами и т. д.)                                                                                                                                                          |
+| correlationId       | GUID                                                | Указывает уникальный идентификатор, помогающий соотносить действия, происходящие в различных службах. Можно использовать для отслеживания журналов в службах.                                                                                                                                                |
+| id                  | String                                              | Указывает уникальный идентификатор для действия. Это идентификатор GUID.                                                                                                                                                                                                                          |
+| initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | Указывает сведения о пользователе или приложении, запустившем действие.                                                                                                                                                                                                                |
+| loggedByService     | String                                              | Указывает, в какой службе запущено действие (например: самостоятельное управление паролями, основной каталог, B2C, приглашенные пользователи, Microsoft Identity Manager, Privileged Identity Management).                                                                      |
+| result              | string                                              | Указывает результат действия. Возможные значения: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                                   |
+| resultReason        | String                                              | Описывает причины появления "сбоя" или "время ожидания".                                                                                                                                                                                                                                 |
+| targetResources     | Коллекция [targetResource](targetresource.md)      | Указывает, какой ресурс был изменен в результате действия. Возможные типы целевых ресурсов: User, Device, Directory, App, Role, Group, Policy или Other.                                                                                                                   |
 
 ## <a name="relationships"></a>Связи
 
