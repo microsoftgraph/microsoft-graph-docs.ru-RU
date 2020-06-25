@@ -7,22 +7,22 @@ localization_priority: Normal
 description: Ресурс quota предоставляет сведения об ограничениях дискового пространства в ресурсе Drive.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 53aad1392e66f610f85f30ae088dc6f8ca04df73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 293daf950beb5cdf3cbd791a1e8bf0d4b92a220b
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533935"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864212"
 ---
-# <a name="quota-resource-type"></a><span data-ttu-id="0065f-103">Тип ресурса quota</span><span class="sxs-lookup"><span data-stu-id="0065f-103">Quota resource type</span></span>
+# <a name="quota-resource-type"></a><span data-ttu-id="a9e17-103">Тип ресурса quota</span><span class="sxs-lookup"><span data-stu-id="a9e17-103">Quota resource type</span></span>
 
-<span data-ttu-id="0065f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0065f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a9e17-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a9e17-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0065f-105">Ресурс **quota** предоставляет сведения об ограничениях дискового пространства в ресурсе [Drive](drive.md).</span><span class="sxs-lookup"><span data-stu-id="0065f-105">The **quota** resource provides details about space constrains on a [Drive](drive.md) resource.</span></span>
+<span data-ttu-id="a9e17-105">Ресурс **quota** предоставляет сведения об ограничениях дискового пространства в ресурсе [Drive](drive.md).</span><span class="sxs-lookup"><span data-stu-id="a9e17-105">The **quota** resource provides details about space constrains on a [Drive](drive.md) resource.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0065f-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0065f-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a9e17-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a9e17-106">JSON representation</span></span>
 
-<span data-ttu-id="0065f-107">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0065f-107">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a9e17-107">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a9e17-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -35,29 +35,33 @@ ms.locfileid: "42533935"
   "deleted": 1024,
   "remaining": 1024,
   "state": "normal | nearing | critical | exceeded",
+  "storagePlanInformation": {
+    "upgradeAvailable": true
+  },
   "total": 1024,
   "used": 1024
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="0065f-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="0065f-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a9e17-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="a9e17-108">Properties</span></span>
 
-| <span data-ttu-id="0065f-109">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="0065f-109">Property name</span></span> | <span data-ttu-id="0065f-110">Тип</span><span class="sxs-lookup"><span data-stu-id="0065f-110">Type</span></span>   | <span data-ttu-id="0065f-111">Описание</span><span class="sxs-lookup"><span data-stu-id="0065f-111">Description</span></span>                                                                 |
+| <span data-ttu-id="a9e17-109">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="a9e17-109">Property name</span></span> | <span data-ttu-id="a9e17-110">Тип</span><span class="sxs-lookup"><span data-stu-id="a9e17-110">Type</span></span>   | <span data-ttu-id="a9e17-111">Описание</span><span class="sxs-lookup"><span data-stu-id="a9e17-111">Description</span></span>                                                                 |
 |:--------------|:-------|:----------------------------------------------------------------------------|
-| <span data-ttu-id="0065f-112">total</span><span class="sxs-lookup"><span data-stu-id="0065f-112">total</span></span>         | <span data-ttu-id="0065f-113">Int64</span><span class="sxs-lookup"><span data-stu-id="0065f-113">Int64</span></span>  | <span data-ttu-id="0065f-p101">Общий объем разрешенного дискового пространства в байтах. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="0065f-p101">Total allowed storage space, in bytes. Read-only.</span></span>                           |
-| <span data-ttu-id="0065f-116">used</span><span class="sxs-lookup"><span data-stu-id="0065f-116">used</span></span>          | <span data-ttu-id="0065f-117">Int64</span><span class="sxs-lookup"><span data-stu-id="0065f-117">Int64</span></span>  | <span data-ttu-id="0065f-p102">Общий объем использованного дискового пространства в байтах. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="0065f-p102">Total space used, in bytes. Read-only.</span></span>                                      |
-| <span data-ttu-id="0065f-120">remaining</span><span class="sxs-lookup"><span data-stu-id="0065f-120">remaining</span></span>     | <span data-ttu-id="0065f-121">Int64</span><span class="sxs-lookup"><span data-stu-id="0065f-121">Int64</span></span>  | <span data-ttu-id="0065f-p103">Общий объем дискового пространства, оставшегося до достижения максимальной квоты, в байтах. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="0065f-p103">Total space remaining before reaching the quota limit, in bytes. Read-only.</span></span> |
-| <span data-ttu-id="0065f-124">deleted</span><span class="sxs-lookup"><span data-stu-id="0065f-124">deleted</span></span>       | <span data-ttu-id="0065f-125">Int64</span><span class="sxs-lookup"><span data-stu-id="0065f-125">Int64</span></span>  | <span data-ttu-id="0065f-p104">Общий объем дискового пространства, занятого файлами в корзине, в байтах. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="0065f-p104">Total space consumed by files in the recycle bin, in bytes. Read-only.</span></span>      |
-| <span data-ttu-id="0065f-128">состояние</span><span class="sxs-lookup"><span data-stu-id="0065f-128">state</span></span>         | <span data-ttu-id="0065f-129">string</span><span class="sxs-lookup"><span data-stu-id="0065f-129">string</span></span> | <span data-ttu-id="0065f-p105">Значение перечисления, указывающее состояние дискового пространства. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="0065f-p105">Enumeration value that indicates the state of the storage space. Read-only.</span></span> |
+| <span data-ttu-id="a9e17-112">total</span><span class="sxs-lookup"><span data-stu-id="a9e17-112">total</span></span>         | <span data-ttu-id="a9e17-113">Int64</span><span class="sxs-lookup"><span data-stu-id="a9e17-113">Int64</span></span>  | <span data-ttu-id="a9e17-114">Total allowed storage space, in bytes.</span><span class="sxs-lookup"><span data-stu-id="a9e17-114">Total allowed storage space, in bytes.</span></span> <span data-ttu-id="a9e17-115">Read-only.</span><span class="sxs-lookup"><span data-stu-id="a9e17-115">Read-only.</span></span>                           |
+| <span data-ttu-id="a9e17-116">used</span><span class="sxs-lookup"><span data-stu-id="a9e17-116">used</span></span>          | <span data-ttu-id="a9e17-117">Int64</span><span class="sxs-lookup"><span data-stu-id="a9e17-117">Int64</span></span>  | <span data-ttu-id="a9e17-118">Total space used, in bytes.</span><span class="sxs-lookup"><span data-stu-id="a9e17-118">Total space used, in bytes.</span></span> <span data-ttu-id="a9e17-119">Read-only.</span><span class="sxs-lookup"><span data-stu-id="a9e17-119">Read-only.</span></span>                                      |
+| <span data-ttu-id="a9e17-120">remaining</span><span class="sxs-lookup"><span data-stu-id="a9e17-120">remaining</span></span>     | <span data-ttu-id="a9e17-121">Int64</span><span class="sxs-lookup"><span data-stu-id="a9e17-121">Int64</span></span>  | <span data-ttu-id="a9e17-122">Total space remaining before reaching the quota limit, in bytes.</span><span class="sxs-lookup"><span data-stu-id="a9e17-122">Total space remaining before reaching the quota limit, in bytes.</span></span> <span data-ttu-id="a9e17-123">Read-only.</span><span class="sxs-lookup"><span data-stu-id="a9e17-123">Read-only.</span></span> |
+| <span data-ttu-id="a9e17-124">deleted</span><span class="sxs-lookup"><span data-stu-id="a9e17-124">deleted</span></span>       | <span data-ttu-id="a9e17-125">Int64</span><span class="sxs-lookup"><span data-stu-id="a9e17-125">Int64</span></span>  | <span data-ttu-id="a9e17-126">Total space consumed by files in the recycle bin, in bytes.</span><span class="sxs-lookup"><span data-stu-id="a9e17-126">Total space consumed by files in the recycle bin, in bytes.</span></span> <span data-ttu-id="a9e17-127">Read-only.</span><span class="sxs-lookup"><span data-stu-id="a9e17-127">Read-only.</span></span>      |
+| <span data-ttu-id="a9e17-128">состояние</span><span class="sxs-lookup"><span data-stu-id="a9e17-128">state</span></span>         | <span data-ttu-id="a9e17-129">string</span><span class="sxs-lookup"><span data-stu-id="a9e17-129">string</span></span> | <span data-ttu-id="a9e17-130">Enumeration value that indicates the state of the storage space.</span><span class="sxs-lookup"><span data-stu-id="a9e17-130">Enumeration value that indicates the state of the storage space.</span></span> <span data-ttu-id="a9e17-131">Read-only.</span><span class="sxs-lookup"><span data-stu-id="a9e17-131">Read-only.</span></span> |
+| <span data-ttu-id="a9e17-132">storagePlanInformation</span><span class="sxs-lookup"><span data-stu-id="a9e17-132">storagePlanInformation</span></span>  | [<span data-ttu-id="a9e17-133">storagePlanInformation</span><span class="sxs-lookup"><span data-stu-id="a9e17-133">storagePlanInformation</span></span>](storageplaninformation.md) | <span data-ttu-id="a9e17-134">Сведения о планах квот хранилища диска.</span><span class="sxs-lookup"><span data-stu-id="a9e17-134">Information about the drive's storage quota plans.</span></span> <span data-ttu-id="a9e17-135">Только в личном хранилище OneDrive.</span><span class="sxs-lookup"><span data-stu-id="a9e17-135">Only in Personal OneDrive.</span></span>|
 
-## <a name="state-enumeration"></a><span data-ttu-id="0065f-132">Перечисление state</span><span class="sxs-lookup"><span data-stu-id="0065f-132">State Enumeration</span></span>
+## <a name="state-enumeration"></a><span data-ttu-id="a9e17-136">Перечисление state</span><span class="sxs-lookup"><span data-stu-id="a9e17-136">State Enumeration</span></span>
 
-| <span data-ttu-id="0065f-133">Значение</span><span class="sxs-lookup"><span data-stu-id="0065f-133">Value</span></span>      | <span data-ttu-id="0065f-134">Описание</span><span class="sxs-lookup"><span data-stu-id="0065f-134">Description</span></span>                                                                                                                                                                 |
+| <span data-ttu-id="a9e17-137">Значение</span><span class="sxs-lookup"><span data-stu-id="a9e17-137">Value</span></span>      | <span data-ttu-id="a9e17-138">Описание</span><span class="sxs-lookup"><span data-stu-id="a9e17-138">Description</span></span>                                                                                                                                                                 |
 |:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `normal`   | <span data-ttu-id="0065f-135">На диске еще много свободного дискового пространства.</span><span class="sxs-lookup"><span data-stu-id="0065f-135">The drive has plenty of remaining quota left.</span></span>                                                                                                                               |
-| `nearing`  | <span data-ttu-id="0065f-136">Объем свободного дискового пространства менее 10 % общего объема дискового пространства.</span><span class="sxs-lookup"><span data-stu-id="0065f-136">Remaining quota is less than 10% of total quota space.</span></span>                                                                                                                      |
-| `critical` | <span data-ttu-id="0065f-137">Объем свободного дискового пространства менее 1 % общего объема дискового пространства.</span><span class="sxs-lookup"><span data-stu-id="0065f-137">Remaining quota is less than 1% of total quota space.</span></span>                                                                                                                       |
-| `exceeded` | <span data-ttu-id="0065f-p106">Объем использованного дискового пространства превышает максимально допустимый объем дискового пространства. Вам не удастся добавлять новые файлы или папки на диск, пока объем использованного дискового пространства не станет меньше общего объема дискового пространства или пока вы не приобретете дополнительное дисковое пространство.</span><span class="sxs-lookup"><span data-stu-id="0065f-p106">The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased.</span></span> |
+| `normal`   | <span data-ttu-id="a9e17-139">На диске еще много свободного дискового пространства.</span><span class="sxs-lookup"><span data-stu-id="a9e17-139">The drive has plenty of remaining quota left.</span></span>                                                                                                                               |
+| `nearing`  | <span data-ttu-id="a9e17-140">Объем свободного дискового пространства менее 10 % общего объема дискового пространства.</span><span class="sxs-lookup"><span data-stu-id="a9e17-140">Remaining quota is less than 10% of total quota space.</span></span>                                                                                                                      |
+| `critical` | <span data-ttu-id="a9e17-141">Объем свободного дискового пространства менее 1 % общего объема дискового пространства.</span><span class="sxs-lookup"><span data-stu-id="a9e17-141">Remaining quota is less than 1% of total quota space.</span></span>                                                                                                                       |
+| `exceeded` | <span data-ttu-id="a9e17-142">The used quota has exceeded the total quota.</span><span class="sxs-lookup"><span data-stu-id="a9e17-142">The used quota has exceeded the total quota.</span></span> <span data-ttu-id="a9e17-143">New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased.</span><span class="sxs-lookup"><span data-stu-id="a9e17-143">New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased.</span></span> |
 
 <!-- {
   "type": "#page.annotation",

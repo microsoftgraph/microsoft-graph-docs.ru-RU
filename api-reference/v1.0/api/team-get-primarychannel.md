@@ -5,66 +5,86 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 15d1f1713e3155dc2fff5e07caf7b5f70fbf1aa8
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 0c4b209a4f510db2c5a4cd84bbc8bf7064a7935f
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845787"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863903"
 ---
-# <a name="get-primarychannel"></a><span data-ttu-id="bcdc8-103">Получение Примаричаннел</span><span class="sxs-lookup"><span data-stu-id="bcdc8-103">Get primaryChannel</span></span>
+# <a name="get-primarychannel"></a><span data-ttu-id="ffdd7-103">Получение Примаричаннел</span><span class="sxs-lookup"><span data-stu-id="ffdd7-103">Get primaryChannel</span></span>
 
-<span data-ttu-id="bcdc8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bcdc8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ffdd7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ffdd7-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="bcdc8-105">Получение стандартного [канала](../resources/channel.md), **общего**для [группы](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="bcdc8-105">Get the default [channel](../resources/channel.md), **General**, of a [team](../resources/team.md).</span></span>
+<span data-ttu-id="ffdd7-105">Получение стандартного [канала](../resources/channel.md), **общего**для [группы](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="ffdd7-105">Get the default [channel](../resources/channel.md), **General**, of a [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bcdc8-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bcdc8-106">Permissions</span></span>
-<span data-ttu-id="bcdc8-107">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="bcdc8-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="bcdc8-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bcdc8-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ffdd7-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ffdd7-106">Permissions</span></span>
+<span data-ttu-id="ffdd7-107">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="ffdd7-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="ffdd7-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ffdd7-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bcdc8-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bcdc8-109">Permission type</span></span>      | <span data-ttu-id="bcdc8-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bcdc8-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ffdd7-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ffdd7-109">Permission type</span></span>      | <span data-ttu-id="ffdd7-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ffdd7-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bcdc8-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bcdc8-111">Delegated (work or school account)</span></span> | <span data-ttu-id="bcdc8-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bcdc8-112">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="bcdc8-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bcdc8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bcdc8-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bcdc8-114">Not supported.</span></span>    |
-|<span data-ttu-id="bcdc8-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bcdc8-115">Application</span></span> | <span data-ttu-id="bcdc8-116">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bcdc8-116">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ffdd7-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ffdd7-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ffdd7-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ffdd7-112">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ffdd7-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ffdd7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ffdd7-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ffdd7-114">Not supported.</span></span>    |
+|<span data-ttu-id="ffdd7-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="ffdd7-115">Application</span></span> | <span data-ttu-id="ffdd7-116">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ffdd7-116">Group.Read.All, Group.ReadWrite.All</span></span>    |
 
-> <span data-ttu-id="bcdc8-117">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="bcdc8-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="bcdc8-118">Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.</span><span class="sxs-lookup"><span data-stu-id="bcdc8-118">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="ffdd7-117">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="ffdd7-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="ffdd7-118">Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.</span><span class="sxs-lookup"><span data-stu-id="ffdd7-118">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="bcdc8-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bcdc8-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ffdd7-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ffdd7-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/primaryChannel
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="bcdc8-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="bcdc8-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ffdd7-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ffdd7-120">Optional query parameters</span></span>
 
-<span data-ttu-id="bcdc8-121">Этот метод поддерживает `$filter` `$select` `$expand` [Параметры запроса](/graph/query-parameters) , и OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="bcdc8-121">This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="ffdd7-121">Этот метод поддерживает `$filter` `$select` `$expand` [Параметры запроса](/graph/query-parameters) , и OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="ffdd7-121">This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="bcdc8-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bcdc8-122">Request headers</span></span>
-| <span data-ttu-id="bcdc8-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="bcdc8-123">Header</span></span>       | <span data-ttu-id="bcdc8-124">Значение</span><span class="sxs-lookup"><span data-stu-id="bcdc8-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="ffdd7-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ffdd7-122">Request headers</span></span>
+| <span data-ttu-id="ffdd7-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ffdd7-123">Header</span></span>       | <span data-ttu-id="ffdd7-124">Значение</span><span class="sxs-lookup"><span data-stu-id="ffdd7-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="bcdc8-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bcdc8-125">Authorization</span></span>  | <span data-ttu-id="bcdc8-126">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="bcdc8-126">Bearer {token}.</span></span> <span data-ttu-id="bcdc8-127">Required.</span><span class="sxs-lookup"><span data-stu-id="bcdc8-127">Required.</span></span>  |
+| <span data-ttu-id="ffdd7-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ffdd7-125">Authorization</span></span>  | <span data-ttu-id="ffdd7-126">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="ffdd7-126">Bearer {token}.</span></span> <span data-ttu-id="ffdd7-127">Required.</span><span class="sxs-lookup"><span data-stu-id="ffdd7-127">Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="bcdc8-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="bcdc8-128">Request body</span></span>
-<span data-ttu-id="bcdc8-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="bcdc8-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ffdd7-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ffdd7-128">Request body</span></span>
+<span data-ttu-id="ffdd7-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ffdd7-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bcdc8-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="bcdc8-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ffdd7-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="ffdd7-130">Response</span></span>
 
-<span data-ttu-id="bcdc8-131">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [channel](../resources/channel.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="bcdc8-131">If successful, this method returns a `200 OK` response code and a [channel](../resources/channel.md) object in the response body.</span></span>
+<span data-ttu-id="ffdd7-131">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [channel](../resources/channel.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ffdd7-131">If successful, this method returns a `200 OK` response code and a [channel](../resources/channel.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bcdc8-132">Пример</span><span class="sxs-lookup"><span data-stu-id="bcdc8-132">Example</span></span>
-### <a name="request"></a><span data-ttu-id="bcdc8-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="bcdc8-133">Request</span></span>
-<span data-ttu-id="bcdc8-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bcdc8-134">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ffdd7-132">Пример</span><span class="sxs-lookup"><span data-stu-id="ffdd7-132">Example</span></span>
+### <a name="request"></a><span data-ttu-id="ffdd7-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="ffdd7-133">Request</span></span>
+<span data-ttu-id="ffdd7-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ffdd7-134">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="ffdd7-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="ffdd7-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_primaryChannel"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}/primaryChannel
 ```
-### <a name="response"></a><span data-ttu-id="bcdc8-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="bcdc8-135">Response</span></span>
-<span data-ttu-id="bcdc8-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="bcdc8-136">The following is an example of the response.</span></span> 
+# <a name="c"></a>[<span data-ttu-id="ffdd7-136">C#</span><span class="sxs-lookup"><span data-stu-id="ffdd7-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-primarychannel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="bcdc8-137">**Note:** The response object shown here might be shortened for readability.</span><span class="sxs-lookup"><span data-stu-id="bcdc8-137">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="bcdc8-138">All the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="bcdc8-138">All the properties will be returned from an actual call.</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="ffdd7-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ffdd7-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-primarychannel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="ffdd7-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ffdd7-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-primarychannel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="ffdd7-139">Java</span><span class="sxs-lookup"><span data-stu-id="ffdd7-139">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-primarychannel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### <a name="response"></a><span data-ttu-id="ffdd7-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="ffdd7-140">Response</span></span>
+<span data-ttu-id="ffdd7-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ffdd7-141">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="ffdd7-142">**Note:** The response object shown here might be shortened for readability.</span><span class="sxs-lookup"><span data-stu-id="ffdd7-142">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ffdd7-143">All the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="ffdd7-143">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
