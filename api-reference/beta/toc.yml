@@ -4,7 +4,7 @@ items:
     href: /graph/overview
   - name: Получение маркеров аутентификации
     items:
-      - name: Общие сведения
+      - name: Обзор
         href: /graph/auth/index?context=graph/api/beta
       - name: Основы
         href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -22,7 +22,7 @@ items:
         href: /graph/auth-limit-mailbox-access?context=graph/api/beta
   - name: Использование API
     items:
-      - name: Общие сведения
+      - name: Обзор
         href: /graph/use-the-api?context=graph/api/beta
       - name: Разбиение на страницы
         href: /graph/paging?context=graph/api/beta
@@ -39,7 +39,7 @@ items:
           - name: Обзор
             href: /graph/webhooks?context=graph/api/beta
           - name: Учебник
-            href: /graph/tutorials/change-notifications
+            href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: Отсутствие уведомлений в Outlook (предварительная версия)
             href: /graph/webhooks-outlook-authz?context=graph/api/beta
           - name: Уведомления с данными ресурсов (предварительная версия)
@@ -60,7 +60,7 @@ items:
       - name: Добавление пользовательских данных
         displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: /graph/extensibility-overview?context=graph/api/beta
           - name: Использование открытых расширений (пример)
             href: /graph/extensibility-open-users?context=graph/api/beta
@@ -74,7 +74,7 @@ items:
       - name: Azure AD Graph
         displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
           - name: Контрольный список для переноса приложений
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -169,11 +169,11 @@ items:
   - name: Документация для бета-версий
     expanded: true
     items:
-      - name: Общие сведения
+      - name: Обзор
         href: overview.md
       - name: Пользователи
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -438,7 +438,7 @@ items:
                 href: api/usersettings-update.md
       - name: Группы
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/groups-overview.md
           - name: Группа
             href: resources/group.md
@@ -997,7 +997,7 @@ items:
                 href: api/cloudcommunications-getpresencesbyuserid.md
           - name: Записи звонков
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/callrecords-api-overview.md
               - name: Запись звонка
                 items:
@@ -1014,7 +1014,7 @@ items:
       - name: Взаимодействие с разными устройствами
         displayName: Project Rome
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/project-rome-overview.md
           - name: Перечисление пользовательских устройств
             href: api/user-list-devices.md
@@ -1048,7 +1048,7 @@ items:
       - name: Запись клиентов (предварительная версия)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/booking-api-overview.md
           - name: Организация в Microsoft Bookings
             href: resources/bookingbusiness.md
@@ -8669,7 +8669,7 @@ items:
       - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/onedrive.md
           - name: Диски
             href: resources/drive.md
@@ -8763,7 +8763,7 @@ items:
       - name: Финансовые показатели (предварительная версия)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/dynamics-graph-reference.md
           - name: Учетная запись
             href: resources/dynamics-account.md
@@ -9196,7 +9196,7 @@ items:
                     href: api/authenticationflowspolicy-update.md
           - name: Методы проверки подлинности
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/authenticationmethods-overview.md
               - name: Метод проверки подлинности
                 href: resources/authenticationmethod.md
@@ -9606,7 +9606,7 @@ items:
             items:
               - name: Оценка угроз
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/threatassessment-api-overview.md
                   - name: Запрос оценки угроз
                     href: resources/threatassessmentrequest.md
@@ -9646,7 +9646,7 @@ items:
               - name: Локальная группа агентов
                 href: resources/onpremisesagentgroup.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/onpremisesagentgroup-list.md
                   - name: Получение
                     href: api/onpremisesagentgroup-get.md
@@ -9666,7 +9666,7 @@ items:
               - name: Опубликованный ресурс
                 href: resources/publishedresource.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/publishedresource-list.md
                   - name: Получение
                     href: api/publishedresource-get.md
@@ -9680,10 +9680,10 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: Удалить из группы агентов
                     href: api/publishedresource-delete-agentgroups.md
-              - name: PDIF
+              - name: Connector
                 href: resources/connector.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/connector-list.md
                   - name: Получение
                     href: api/connector-get.md
@@ -9696,6 +9696,8 @@ items:
                 items:
                   - name: Список
                     href: api/connectorgroup-list.md
+                  - name: Создание
+                    href: api/connectorgroup-post.md
                   - name: Получение
                     href: api/connectorgroup-get.md
                   - name: Обновление
@@ -10084,12 +10086,6 @@ items:
                     href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                   - name: Удаление типа ресурса homeRealmDiscoveryPolicy
                     href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-                  - name: Назначить tokenIssuancePolicy
-                    href: api/application-post-tokenissuancepolicies.md
-                  - name: Перечислить tokenIssuancePolicies
-                    href: api/application-list-tokenissuancepolicies.md
-                  - name: Убрать tokenIssuancePolicy
-                    href: api/application-delete-tokenissuancepolicies.md
                   - name: Назначение типа ресурса tokenLifetimePolicy
                     href: api/application-post-tokenlifetimepolicies.md
                   - name: Перечисление типов ресурсов tokenLifetimePolicy
@@ -10396,7 +10392,7 @@ items:
       - name: Примечания
         displayName: OneNote
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/onenote-api-overview.md
           - name: Заметки
             href: resources/onenote.md
@@ -10488,7 +10484,7 @@ items:
                 href: api/resource-get.md
       - name: Уведомления (предварительная версия)
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/notifications-api-overview.md
           - name: Уведомление
             href: resources/projectrome-notification.md
@@ -10824,7 +10820,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Регистрация и использование
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Счетчик регистрации пользователей учетных данных
                     href: resources/credentialuserregistrationcount.md
@@ -10848,7 +10844,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Отчеты об использовании Office 365
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/report.md
               - name: Использование устройств Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -11051,13 +11047,13 @@ items:
         items:
           - name: Query
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/search-api-overview.md
               - name: Данные запроса
                 href: api/search-query.md
           - name: Индекс
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/indexing-api-overview.md
               - name: Внешнее подключение
                 items:
@@ -11179,7 +11175,7 @@ items:
       - name: Сайты и списки
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/sharepoint.md
           - name: Сайты
             href: resources/site.md

@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс quota предоставляет сведения об ограничениях дискового пространства в ресурсе Drive.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 53aad1392e66f610f85f30ae088dc6f8ca04df73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 293daf950beb5cdf3cbd791a1e8bf0d4b92a220b
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533935"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864212"
 ---
 # <a name="quota-resource-type"></a>Тип ресурса quota
 
@@ -35,6 +35,9 @@ ms.locfileid: "42533935"
   "deleted": 1024,
   "remaining": 1024,
   "state": "normal | nearing | critical | exceeded",
+  "storagePlanInformation": {
+    "upgradeAvailable": true
+  },
   "total": 1024,
   "used": 1024
 }
@@ -44,11 +47,12 @@ ms.locfileid: "42533935"
 
 | Имя свойства | Тип   | Описание                                                                 |
 |:--------------|:-------|:----------------------------------------------------------------------------|
-| total         | Int64  | Общий объем разрешенного дискового пространства в байтах. Только для чтения.                           |
-| used          | Int64  | Общий объем использованного дискового пространства в байтах. Только для чтения.                                      |
-| remaining     | Int64  | Общий объем дискового пространства, оставшегося до достижения максимальной квоты, в байтах. Только для чтения. |
-| deleted       | Int64  | Общий объем дискового пространства, занятого файлами в корзине, в байтах. Только для чтения.      |
-| состояние         | string | Значение перечисления, указывающее состояние дискового пространства. Только для чтения. |
+| total         | Int64  | Total allowed storage space, in bytes. Read-only.                           |
+| used          | Int64  | Total space used, in bytes. Read-only.                                      |
+| remaining     | Int64  | Total space remaining before reaching the quota limit, in bytes. Read-only. |
+| deleted       | Int64  | Total space consumed by files in the recycle bin, in bytes. Read-only.      |
+| состояние         | string | Enumeration value that indicates the state of the storage space. Read-only. |
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Сведения о планах квот хранилища диска. Только в личном хранилище OneDrive.|
 
 ## <a name="state-enumeration"></a>Перечисление state
 
@@ -57,7 +61,7 @@ ms.locfileid: "42533935"
 | `normal`   | На диске еще много свободного дискового пространства.                                                                                                                               |
 | `nearing`  | Объем свободного дискового пространства менее 10 % общего объема дискового пространства.                                                                                                                      |
 | `critical` | Объем свободного дискового пространства менее 1 % общего объема дискового пространства.                                                                                                                       |
-| `exceeded` | Объем использованного дискового пространства превышает максимально допустимый объем дискового пространства. Вам не удастся добавлять новые файлы или папки на диск, пока объем использованного дискового пространства не станет меньше общего объема дискового пространства или пока вы не приобретете дополнительное дисковое пространство. |
+| `exceeded` | The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased. |
 
 <!-- {
   "type": "#page.annotation",

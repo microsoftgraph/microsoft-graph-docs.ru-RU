@@ -7,12 +7,12 @@ title: Тип ресурса Hashes
 description: Ресурс хэшей группирует доступных хэши в единую структуру для элемента.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cb852ad01394ac463cb3d23ed404a7956bbf1eea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da326576b148fdaee79ebfc3df2d7832bfeee4e5
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532912"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863742"
 ---
 # <a name="hashes-resource-type"></a>Тип ресурса Hashes
 
@@ -36,6 +36,7 @@ ms.locfileid: "42532912"
 {
   "crc32Hash": "string (hex)",
   "sha1Hash": "string (hex)",
+  "sha256Hash": "string (hex)",
   "quickXorHash": "string (base64)"
 }
 ```
@@ -44,15 +45,16 @@ ms.locfileid: "42532912"
 
 | Свойство         | Тип   | Описание                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | Хэш SHA1 для содержимого файла (если доступно). Только для чтения. |
+| **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
+| **sha256Hash**   | String | Хэш SHA256 для содержимого файла (если он доступен). Только для чтения. |
 | **crc32Hash**    | String | Значение CRC32 файла с прямым порядком байтов (при наличии). Только для чтения.            |
-| **quickXorHash** | Строка | Особый хэш файла, который можно использовать, чтобы определить, было ли изменено содержимое файла (если доступно). Только для чтения. |
+| **quickXorHash** | Строка | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
 
-**Примечание.** В некоторых случаях значения хэша могут быть недоступны. Если это так, значения хэша для определенного элемента будут обновлены после загрузки элемента.
+**Note:** In some cases hash values may not be available. If this is the case, the hash values on an item will be updated after the item is downloaded.
 
 ## <a name="remarks"></a>Замечания
 
-В OneDrive для бизнеса и SharePoint Server 2016 значения **sha1Hash** и **crc32Hash** недоступны.
+В OneDrive для бизнеса и SharePoint Server 2016, **sha1Hash** и **Crc32Hash**, а **sha256Hash** недоступны.
 
 В OneDrive персональный значение **quickXorHash** недоступно.
 
