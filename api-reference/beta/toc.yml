@@ -10842,7 +10842,7 @@ items:
                     items:
                       - name: Получение сводки об использовании
                         href: api/reportroot-getcredentialusagesummary.md
-          - name: Отчеты об использовании Office 365
+          - name: Отчеты об использовании Microsoft 365
             items:
               - name: Обзор
                 href: resources/report.md
@@ -10895,7 +10895,7 @@ items:
                     href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
                   - name: Получение занятого объема хранилища
                     href: api/reportroot-getmailboxusagestorage.md
-              - name: Активация Office 365
+              - name: Активация Microsoft 365
                 href: resources/office-365-activations-reports.md
                 items:
                   - name: Получение сведений о пользователе
@@ -10904,7 +10904,7 @@ items:
                     href: api/reportroot-getoffice365activationcounts.md
                   - name: Получение количества пользователей
                     href: api/reportroot-getoffice365activationsusercounts.md
-              - name: Активные пользователи Office 365
+              - name: Активные пользователи Microsoft 365
                 href: resources/office-365-active-users-reports.md
                 items:
                   - name: Получение сведений о пользователе
@@ -10913,7 +10913,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: Получение количества пользователей служб
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Действия с группами Office 365
+              - name: Действия в группах Microsoft 365
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: Получение сведений о группе
