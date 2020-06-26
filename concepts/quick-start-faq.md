@@ -4,12 +4,12 @@ description: В этой статье представлены ответы на
 author: jasonjoh
 ms.author: jasonjoh
 localization_priority: Normal
-ms.openlocfilehash: 4aded41cab30133856041c073699948ed7ae49ff
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: b13961ed13b0b52a951ce20a3381b1db85096da8
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568756"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897710"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Краткое руководство по Microsoft Graph: вопросы и ответы
 
@@ -33,7 +33,7 @@ ms.locfileid: "44568756"
 Для всех примеров быстрого запуска требуется доступ к личной учетной записи Майкрософт с почтовым ящиком на Outlook.com или с помощью рабочей или учебной учетной записи Майкрософт с почтовым ящиком Exchange Online. Если у вас нет учетной записи Майкрософт, у вас есть несколько вариантов для получения бесплатной учетной записи:
 
 - Вы можете [зарегистрироваться для создания новой личной учетной записи Майкрософт](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1).
-- Вы можете [зарегистрироваться в программе для разработчиков office 365](https://developer.microsoft.com/office/dev-program) , чтобы получить бесплатную подписку на Office 365.
+- Вы можете [зарегистрироваться в программе для разработчиков microsoft 365](https://developer.microsoft.com/office/dev-program) , чтобы получить бесплатную подписку на Microsoft 365.
 
 ## <a name="general-quick-start-sample-questions"></a>Общие вопросы, касающиеся примеров из краткого руководства
 

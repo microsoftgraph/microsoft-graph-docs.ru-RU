@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: conceptualPageType
-ms.openlocfilehash: 85d66e33df5c168c212225bb8145268f3b98ea25
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 07b8fdf5486eee041a40b7bc6dd3169ac1af8761
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353464"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896842"
 ---
 # <a name="use-the-onenote-rest-api"></a>Использование REST API для OneNote
 
@@ -29,7 +29,7 @@ https://graph.microsoft.com/{version}/{location}/onenote/
 - Значение `v1.0` предназначено для стабильного производственного кода.
 - Используйте значение `beta`, чтобы опробовать функцию, находящуюся на стадии разработки. Функции бета-версии конечной точки могут меняться. Не рекомендуем использовать ее в рабочем коде.
 
-В качестве расположений можно задавать записные книжки пользователя в Office 365 или личные хранилища OneDrive, записные книжки группы (в том числе размещенные на сайте SharePoint) в Office 365. 
+Местоположение может представлять собой записные книжки для пользователей в Microsoft 365 или OneDrive для пользователей, групповые записные книжки или записные книжки группы SharePoint, размещенные на сайте Microsoft 365. 
 
 ![Стек разработки API OneNote](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/onenote-dev-diagram.png)
 

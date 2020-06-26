@@ -1,22 +1,22 @@
 ---
 title: Вывод группы
-description: Получение **группы** Office 365, которая соответствует этому объекту **educationClass**.
+description: Получите **группу** Microsoft 365, соответствующую этой **educationClass**.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 054e3a36e295903229f14aef58614fa68e17d8db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b246322db24ac1a6a82643bfc4c87562fb2b0328
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517666"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896856"
 ---
 # <a name="get-group"></a>Вывод группы
 
 Пространство имен: microsoft.graph
 
-Получение **группы** Office 365, которая соответствует этому объекту **educationClass**.
+Получите **группу** Microsoft 365, соответствующую этой **educationClass**.
 
 >**Примечание.** Если используется делегированный маркер, участники могут видеть сведения только о своих учебных заведениях. В данном случае используйте ресурс `...beta/education/me/schools`.
 
@@ -27,7 +27,7 @@ ms.locfileid: "42517666"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic, EduRoster.Read или EduRoster.Write плюс Directory.Read.All|
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
+|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,11 +37,11 @@ GET /education/classes/{id}/group
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Required.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [group](../resources/group.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -73,10 +73,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/group
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: b8e3e90424df29218de7a136e4922df59c4af0b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4841377ba8b9aa5a94ca97b50847517be5b2f0cc
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522472"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898074"
 ---
 # <a name="office365activeusercounts-resource-type"></a>Тип ресурса office365ActiveUserCounts
 
@@ -21,7 +21,7 @@ ms.locfileid: "42522472"
 | Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
 | репортрефрешдате | Дата   | Самая поздняя дата контента.          |
-| Office365         | Int64  | Количество активных пользователей в Office 365. Это число включает все активные пользователи в Exchange, OneDrive, SharePoint, Skype для бизнеса, Yammer и Microsoft Teams. Определение активных пользователей для каждого продукта можно найти в описании соответствующего свойства. |
+| Office365         | Int64  | Количество активных пользователей в Microsoft 365. Это число включает все активные пользователи в Exchange, OneDrive, SharePoint, Skype для бизнеса, Yammer и Microsoft Teams. Определение активных пользователей для каждого продукта можно найти в описании соответствующего свойства. |
 | теплообменник          | Int64  | Количество активных пользователей в Exchange. Любой пользователь, который может читать и отправлять электронную почту, считается активным пользователем. |
 | oneDrive          | Int64  | Количество активных пользователей в OneDrive. Любой пользователь, просматривающий или изменяющий файлы, внутренние и внешние файлы, или синхронизированные файлы, считается активным пользователем. |
 | sharePoint        | Int64  | Количество активных пользователей в SharePoint. Любой пользователь, просматривающий или изменяющий файлы, внутренние и внешние файлы, синхронизированные файлы или просмотренные страницы SharePoint, считается активным пользователем. |
@@ -31,7 +31,7 @@ ms.locfileid: "42522472"
 | reportDate        | Дата   | Дата, когда число пользователей было активно. |
 | репортпериод      | String | Количество дней, охватываемых отчетом.    |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: e221652bad08a49e32268b599ae6012db09bde41
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: dfd7991070e29d948ab03511726fbc59cd86ea62
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491870"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897479"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -27,7 +27,7 @@ REST API Microsoft Graph использует механизм веб-перех
 | Личный [контакт][] Outlook | Изменения всех личных контактов в почтовом ящике пользователя:<br>`/users/{id}/contacts` | Нет |
 | [user][] | Изменения для всех пользователей:<br>`/users` <br>Изменения для конкретного пользователя:<br>`/users/{id}`| Нет |
 | [group][] | Изменения во всех группах:<br>`/groups` <br>Изменения в конкретной группе:<br>`/groups/{id}`<br>Изменения владельцев определенной группы:<br>`/groups/{id}/owners`<br>Изменения членов определенной группы:<br>`/groups/{id}/members`  | Нет |
-| Групповой [чат][] Office 365  | Изменения в разговорах группы:<br>`groups/{id}/conversations` | Нет |
+| [Беседа][] группы (майкрософт) 365 | Изменения в разговорах группы:<br>`groups/{id}/conversations` | Нет |
 | [driveItem][]на OneDrive (личный) | Изменения содержимого в иерархии _любой папки_:<br>`/users/{id}/drive/root` | Нет |
 | [driveItem][]на OneDrive для бизнеса | Изменения содержимого в иерархии _корневой папки_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Нет |
 | [список][] на [сайте][] SharePoint | Изменения содержимого в _списке_: <br>`/sites/{id}/lists/{id}` | Нет |
@@ -39,7 +39,7 @@ REST API Microsoft Graph использует механизм веб-перех
 
 ## <a name="permissions"></a>Permissions
 
-В общем случае для операций с подписками необходимо разрешение на чтение ресурса. Например, чтобы получать уведомления для сообщений, приложению необходимо разрешение `Mail.Read`. В статье, посвященной [созданию подписок](../api/subscription-post-subscriptions.md), перечислены разрешения, необходимые для каждого типа ресурса. В таблице ниже перечислены типы разрешений, которые ваше приложение может запрашивать, чтобы использовать веб-перехватчики для определенных типов ресурсов.
+In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api/subscription-post-subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
 
 | Тип разрешения                        | Поддерживаемые типы ресурсов                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |

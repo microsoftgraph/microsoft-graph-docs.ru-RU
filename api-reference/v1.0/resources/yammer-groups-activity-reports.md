@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 961072e088d36748d51a4a6081f0ee06c47b6e20
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 07b5521efb3b89eedc480101f107a421452918a2
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534266"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897647"
 ---
 # <a name="yammer-groups-activity-reports"></a>Отчеты об активности в группах Yammer
 
@@ -18,7 +18,7 @@ ms.locfileid: "42534266"
 
 Эти отчеты позволяют получить представление об активности в группах Yammer в организации и узнать, сколько групп Yammer создается и используется.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).
+> **Примечание:** Сведения о различных представлениях отчетов и их именах можно найти в [статье Microsoft 365 Reports: активность групп Yammer](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).
 
 ## <a name="reports"></a>Отчеты
 

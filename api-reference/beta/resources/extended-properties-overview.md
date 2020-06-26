@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 2941d114fd4b33e6f76c2b93d0204f04047741ed
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bafb7d1c0304dbc26f895e8c4ddb15bf088b21b3
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423853"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896863"
 ---
 # <a name="outlook-extended-properties-overview"></a>Общие сведения о расширенных свойствах Outlook
 
@@ -18,7 +18,8 @@ ms.locfileid: "43423853"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Расширенные свойства позволяют хранить пользовательские данные и специально служат в качестве резервного механизма для приложений, чтобы получать доступ к пользовательским данным для свойств Outlook MAPI, когда эти свойства _еще не представлены в метаданных API Microsoft Graph_. Можно использовать расширенные свойства API REST, чтобы хранить или получать такие пользовательские данные в следующих пользовательских ресурсах:
+Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access custom data for Outlook MAPI properties when these properties are _not already exposed in the Microsoft Graph API metadata_.
+You can use extended properties REST API to store or get such custom data in the following user resources:
 
 - [message](../resources/message.md);
 - [mailFolder](../resources/mailfolder.md);
@@ -29,7 +30,7 @@ ms.locfileid: "43423853"
 - [Задача Outlook](../resources/outlooktask.md)
 - [Папка задач Outlook](../resources/outlooktaskfolder.md)
 
-Или в следующих ресурсах группы Office 365:
+Или в следующих ресурсах группы Microsoft 365:
 
 - group [event](../resources/event.md);
 - [calendar](../resources/calendar.md) для групп;
@@ -37,7 +38,7 @@ ms.locfileid: "43423853"
 
 ## <a name="use-extended-properties-or-open-extensions"></a>Что использовать — расширенные свойства или открытые расширения
 
-В большинстве часто применяемых сценариев у вас должна быть возможность использования открытых расширений (они представлены объектом [openTypeExtension](../resources/opentypeextension.md) и ранее звались расширениями данных Office 365), чтобы хранить пользовательские данные и получать к ним доступ для экземпляров ресурса в почтовом ящике пользователя. Используйте расширенные свойства, только если вам нужно получить доступ к пользовательским данным для свойств MAPI Outlook, которые еще не предоставлены в [метаданных API Microsoft Graph](https://developer.microsoft.com/graph/docs/overview/call_api).
+In most common scenarios, you should be able to use open extensions (represented by [openTypeExtension](../resources/opentypeextension.md), formerly known as Office 365 data extensions) to store and access custom data for resource instances in a user's mailbox. Use extended properties only if you need to access custom data for Outlook MAPI properties that are not already exposed in the [Microsoft Graph API metadata](https://developer.microsoft.com/graph/docs/overview/call_api).
 
 ## <a name="types-of-extended-properties"></a>Типы расширенных свойств
 

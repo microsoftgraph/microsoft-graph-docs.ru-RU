@@ -1,31 +1,31 @@
 ---
-title: Отчеты об активности в группах Office 365
-description: Эти отчеты позволяют получить представление об активности в группах Office 365 в организации и узнать, сколько групп Office 365 создается и используется.
+title: Отчеты об активности в группах Microsoft 365
+description: Отчеты об активности групп можно использовать для получения сведений о действиях в группах Microsoft 365 в Организации и о количестве создаваемых и используемых групп Microsoft 365.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 57749ca15e4eaf4aad14f3f914426d861ea45eeb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0cd0dfc07813714d376a38125835917c712e7ebe
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534179"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898158"
 ---
-# <a name="office-365-groups-activity-reports"></a>Отчеты об активности в группах Office 365
+# <a name="microsoft-365-groups-activity-reports"></a>Отчеты об активности в группах Microsoft 365
 
 Пространство имен: microsoft.graph
 
-Эти отчеты позволяют получить представление об активности в группах Office 365 в организации и узнать, сколько групп Office 365 создается и используется.
+Отчеты об активности групп можно использовать для получения сведений о действиях в группах Microsoft 365 в Организации и о количестве создаваемых и используемых групп Microsoft 365.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
+> **Примечание:** Сведения о различных представлениях отчетов и их именах можно найти в [статье microsoft 365 Reports — microsoft 365 Groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
 ## <a name="reports"></a>Отчеты
 
 | Функция                                 | Возвращаемый тип | Описание                              |
 | :--------------------------------------- | :-------------- |  ---------------------------------------- |
-| [Получение сведений о группах](../api/reportroot-getoffice365groupsactivitydetail.md) | Stream          | Получите сведения об активности в группах Office 365. |
+| [Получение сведений о группах](../api/reportroot-getoffice365groupsactivitydetail.md) | Stream          | Получение сведений о действиях в группах Microsoft 365, сгруппированных по группам. |
 | [Получение количества действий](../api/reportroot-getoffice365groupsactivitycounts.md) | Stream          | Узнайте, сколько различных действий было в группах. |
-| [Получение количества групп](../api/reportroot-getoffice365groupsactivitygroupcounts.md) | Stream          | Узнайте, сколько всего групп в организации и сколько из них были активны на основе цепочек сообщений, публикаций в Yammer и действий с файлами SharePoint за день. |
+| [Получение количества групп](../api/reportroot-getoffice365groupsactivitygroupcounts.md) | Поток          | Узнайте, сколько всего групп в организации и сколько из них были активны на основе цепочек сообщений, публикаций в Yammer и действий с файлами SharePoint за день. |
 | [Получение занятого объема хранилища](../api/reportroot-getoffice365groupsactivitystorage.md) | Поток          | Узнайте, сколько места в хранилище занято всеми почтовыми ящиками и сайтами групп. |
-| [Получение количества файлов](../api/reportroot-getoffice365groupsactivityfilecounts.md) | Поток          | Узнайте, сколько всего файлов на всех связанных с группой Office 365 сайтах и сколько из них были активны. |
+| [Получение количества файлов](../api/reportroot-getoffice365groupsactivityfilecounts.md) | Stream          | Получите общее количество файлов и их количество, которое было активно на всех сайтах группы, связанных с группой Microsoft 365. |

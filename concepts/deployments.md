@@ -2,12 +2,12 @@
 title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах.
 author: arpitha-dhanapathi
-ms.openlocfilehash: b437f4d3c33a42a486bec2815ff88af050c78921
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 7dfb8548df8a8df9cd6babded6202e8289d8c577
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845493"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897248"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -17,7 +17,7 @@ ms.locfileid: "44845493"
 
 - Microsoft Cloud for US Government
 - Microsoft Cloud для Германии
-- Службы Azure и Office 365 под управлением компании 21Vianet в Китае
+- Azure и Microsoft 365 под управлением 21Vianet в Китае
 
 Каждая национальная облачная среда уникальна и отличается от глобальной среды Майкрософт. При разработке приложений для национальных облачных сред важно помнить о некоторых из этих ключевых отличий. Например, регистрация приложений, получение маркеров и вызов API Microsoft Graph могут отличаться.
 
@@ -56,9 +56,9 @@ ms.locfileid: "44845493"
 > [!IMPORTANT]
 > Для приложения в США:
 >
-> - Если вы работаете в среде Office 365 GCC, продолжайте использовать международные конечные точки: `https://graph.microsoft.com` и `https://portal.azure.com` .
-> - Если вы работаете в среде с высоким уровнем Office 365 GCC, используйте: `https://portal.azure.us` и `https://graph.microsoft.us` .
-> - Если вы работаете в среде Office 365 DoD, используйте `https://portal.azure.us` и `https://dod-graph.microsoft.us` .
+> - Если вы работаете в среде Microsoft 365 GCC, продолжайте использовать международные конечные точки: `https://graph.microsoft.com` и `https://portal.azure.com` .
+> - Если вы работаете в среде с высоким уровнем Microsoft 365 GCC, используйте: `https://portal.azure.us` и `https://graph.microsoft.us` .
+> - Если вы работаете в среде Microsoft 365 DoD, используйте `https://portal.azure.us` и `https://dod-graph.microsoft.us` .
 >
 > Доступ к данным правительства США с помощью любой конечной точки в ближайшем будущем будет отключен.
 
@@ -79,7 +79,7 @@ ms.locfileid: "44845493"
 | Календарь Outlook | ✔ | ✔ | ✔ |
 | личные контакты; | ✔ | ✔ | ✔ |
 | Безопасность | ✔ | ✔ | ✔ |
-| SharePoint| ✔ | ✔ | ✔ |
+| SharePoint;| ✔ | ✔ | ✔ |
 | Teams | ✔ | ✔ | ✔ |
 | Планировщик|✔ |✔ |✔ |
 | Отчеты  |➖| ✔ |➖|
@@ -102,8 +102,8 @@ ms.locfileid: "44845493"
 
 Дополнительные сведения о национальных облаках приведены в следующих разделах:
 - [Национальные облака Майкрософт](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
-- [Office 365 для государственных организаций США](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
-- [Служба Office 365, предоставляемая компанией 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+- [Microsoft 365 для государственных организаций США](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
+- [Microsoft 365 под управлением 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
 - [Office 365 Germany](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - [Правительственные учреждения Azure](https://azure.microsoft.com/global-infrastructure/government/)
 - [Azure Китая 21Vianet](https://docs.microsoft.com/azure/china/)

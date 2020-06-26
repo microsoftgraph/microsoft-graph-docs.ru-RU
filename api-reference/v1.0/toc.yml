@@ -3638,6 +3638,31 @@ items:
                 href: api/groupsettingtemplate-list.md
               - name: Получение шаблона параметров группы
                 href: api/groupsettingtemplate-get.md
+          - name: Защита идентификации
+            href: resources/identityprotectionroot.md
+            items:
+              - name: Обнаружение рисков
+                href: resources/riskdetection.md
+                items:
+                  - name: Перечисление
+                    href: api/riskdetection-list.md
+                  - name: Получение
+                    href: api/riskdetection-get.md
+              - name: Рискованный пользователь
+                href: resources/riskyuser.md
+                items:
+                  - name: Список рискованных пользователей
+                    href: api/riskyuser-list.md
+                  - name: Получение рискованных пользователей
+                    href: api/riskyuser-get.md
+                  - name: Журнал списка
+                    href: api/riskyuser-list-history.md
+                  - name: Получение журнала
+                    href: api/riskyuser-get-riskyuserhistoryitem.md
+                  - name: Подтвердить скомпрометированный
+                    href: api/riskyuser-confirmcompromised.md
+                  - name: Отклонить
+                    href: api/riskyuser-dismiss.md
           - name: Поставщик удостоверений
             href: resources/identityprovider.md
             items:
@@ -4070,9 +4095,9 @@ items:
                 href: api/onenote-post-notebooks.md
               - name: Вывод списка разделов
                 href: api/onenote-list-sections.md
-              - name: Вывод списка групп разделов
+              - name: Список групп разделов
                 href: api/onenote-list-sectiongroups.md
-              - name: Вывод списка страниц
+              - name: Список страниц
                 href: api/onenote-list-pages.md
               - name: Создание страницы
                 href: api/onenote-post-pages.md
@@ -4278,7 +4303,7 @@ items:
           - name: Действия в Outlook
             href: resources/email-activity-reports.md
             items:
-              - name: Получение сведений о пользователях
+              - name: Получение сведений о пользователе
                 href: api/reportroot-getemailactivityuserdetail.md
               - name: Получение количества действий
                 href: api/reportroot-getemailactivitycounts.md
@@ -4306,7 +4331,7 @@ items:
                 href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
               - name: Получение занятого объема хранилища
                 href: api/reportroot-getmailboxusagestorage.md
-          - name: Активация Office 365
+          - name: Активация Microsoft 365
             href: resources/office-365-activations-reports.md
             items:
               - name: Получение сведений о пользователе
@@ -4315,7 +4340,7 @@ items:
                 href: api/reportroot-getoffice365activationcounts.md
               - name: Получение количества пользователей
                 href: api/reportroot-getoffice365activationsusercounts.md
-          - name: Активные пользователи Office 365
+          - name: Активные пользователи Microsoft 365
             href: resources/office-365-active-users-reports.md
             items:
               - name: Получение сведений о пользователе
@@ -4324,7 +4349,7 @@ items:
                 href: api/reportroot-getoffice365activeusercounts.md
               - name: Получение количества пользователей служб
                 href: api/reportroot-getoffice365servicesusercounts.md
-          - name: Действия с группами Office 365
+          - name: Действия в группах Microsoft 365
             href: resources/office-365-groups-activity-reports.md
             items:
               - name: Получение сведений о группе
@@ -4962,7 +4987,7 @@ items:
           - name: Комментарии к книге
             href: resources/workbookcomment.md
             items:
-              - name: Перечисление
+              - name: Список
                 href: api/workbook-list-comments.md
               - name: Получение
                 href: api/workbookcomment-get.md

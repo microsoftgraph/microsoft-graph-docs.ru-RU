@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 971cfc675fce4c4633c4e331ca20679321112ad8
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 75672eedd4b1693b31058de6531c470db548a033
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353429"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897934"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Справочные материалы по REST API Microsoft Graph v1.0
 
@@ -36,11 +36,11 @@ ms.locfileid: "44353429"
 8. Получение последней проекции продаж из [диаграммы](./resources/chart.md) в файле Excel в инструменте Марии OneDrive для бизнеса.
 9. [Поиск задач, назначенных Марии, в планировщике](./api/planneruser-list-tasks.md).
 
-### <a name="office-365-group-use-cases-in-v10"></a>Групповые сценарии выполнения Office 365 в версии 1.0
+### <a name="microsoft-365-group-use-cases-in-v10"></a>Варианты использования группы Microsoft 365 в версии 1.0
 
-1. Запуск отчета о группах Office 365 в организации и определение группы с самыми часто [общающимися участниками группы](./api/reportroot-getoffice365groupsactivitycounts.md).
-2. [Поиск планов этой группы Office 365](./api/plannergroup-list-plans.md) и [назначение задач](./resources/plannerassignments.md) в этом плане.
-3. [Начало новой беседы](./api/group-post-conversations.md) в группе Office 365, чтобы определить, хотят ли участники [создать другую группу](./api/group-post-groups.md) для предоставление общего доступа к рабочей нагрузке.
+1. Запустите отчет по группам Microsoft 365 в Организации и определите группу с наибольшим количеством [сообщений среди участников группы](./api/reportroot-getoffice365groupsactivitycounts.md).
+2. [Найдите планы этой группы Microsoft 365](./api/plannergroup-list-plans.md)и [назначение задач](./resources/plannerassignments.md) в этом плане.
+3. [Начните новую беседу](./api/group-post-conversations.md) в группе Microsoft 365, чтобы определить, нужно ли участникам [создавать другую группу](./api/group-post-groups.md) для совместного использования рабочей нагрузки.
 4. [Получение стандартной записной книжки](./api/notebook-get.md) для группы и [создание страницы](./api/section-post-pages.md) для записи результата исследования.
 
 ## <a name="other-api-versions"></a>Другие версии API

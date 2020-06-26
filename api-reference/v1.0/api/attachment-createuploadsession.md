@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ffd44a8927f6c93ea7b8886b770f8e391c41f613
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 153a7e0eef887722278c4e6ac52ba76aa8efdac2
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44052409"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897612"
 ---
 # <a name="attachment-createuploadsession"></a>вложение: createUploadSession
 
@@ -32,20 +32,20 @@ ms.locfileid: "44052409"
 В этом примере показано, [как прикрепить крупные файлы к сообщениям или событиям Outlook](/graph/outlook-large-attachments) .
 
 > [!TIP]
-> Exchange Online позволяет администраторам настраивать ограничения на размер сообщений для почтовых ящиков Office 365, включая вложения в сообщения. По умолчанию это максимальный размер сообщения 35 МБ. Узнайте [, как настроить максимальный размер сообщения](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) для поддержки вложений, превышающих ограничение по умолчанию для клиента. 
+> Exchange Online позволяет администраторам настраивать ограничения на размер сообщений для почтовых ящиков Microsoft 365, включая вложения сообщений. По умолчанию это максимальный размер сообщения 35 МБ. Узнайте [, как настроить максимальный размер сообщения](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) для поддержки вложений, превышающих ограничение по умолчанию для клиента. 
 
 > [!IMPORTANT] 
 > Если вы присоединяете большой файл к сообщению или событию в общем или делегированном почтовом ящике, учитывайте [известную ошибку](/graph/known-issues#attaching-large-files-to-messages) .
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Calendars. ReadWrite, mail. ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Calendars. ReadWrite, mail. ReadWrite |
-| Для приложений                            | Calendars. ReadWrite, mail. ReadWrite |
+| Приложение                            | Calendars. ReadWrite, mail. ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -67,7 +67,7 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -78,7 +78,7 @@ POST /me/messages/{id}/attachments/createUploadSession
 |:-------------|:------------|:------------|
 |аттачментитем|[аттачментитем](../resources/attachmentitem.md)|Представляет атрибуты элемента, который требуется отправить и вложить. Как минимум, укажите тип вложения ( `file` ), имя и размер файла.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [uploadSession](../resources/uploadsession.md) в тексте отклика.
 
@@ -138,7 +138,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

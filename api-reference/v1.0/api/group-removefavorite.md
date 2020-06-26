@@ -1,25 +1,25 @@
 ---
 title: 'group: removeFavorite'
-description: Удаление группы из списка избранных групп текущего пользователя. Поддерживается только для Групп Office 365.
+description: Удаление группы из списка избранных групп текущего пользователя. Поддерживается только для групп Microsoft 365.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b3279fb525b6556eadee6dd35a2d090b0e3ff9f2
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 9bbdf84470a8a4b8e61719cc500bab14b2b9802c
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345851"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897143"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 
 Пространство имен: microsoft.graph
 
-Удаление группы из списка избранных групп текущего пользователя. Поддерживается только для Групп Office 365.
+Удаление группы из списка избранных групп текущего пользователя. Поддерживается только для групп Microsoft 365.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -35,14 +35,14 @@ POST /groups/{id}/removeFavorite
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательное свойство.  | 
+| Авторизация  | Bearer {token}. Required.  |
+| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательный параметр.  | 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос

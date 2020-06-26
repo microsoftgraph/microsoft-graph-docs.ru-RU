@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет необязательн
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 29d11ec09cbf64d507bd2b97a8940c5b33ac7744
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: 68ceeac9baedbb6ef7d8a739b0cf0a900b9434cf
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568679"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897717"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -38,7 +38,7 @@ API Microsoft Graph может поддерживать один или неск
 | [$orderby](#orderby-parameter)     | Упорядочивает результаты.|[`/users?$orderby=displayName desc`][orderby-example]
 | [$search](#search-parameter)       | Возвращает результаты на основании условий поиска. |[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | Фильтрует свойства (столбцы).|[`/users?$select=givenName,surname`][select-example]
-| [$skip](#skip-parameter)           | Применяется для индексации в результирующем наборе. Также используется некоторыми API для разбиения по страницам и может использоваться вместе с параметром `$top` для разбиения результатов по страницам вручную. | [`/me/messages?$skip=11`][skip-example]
+| [$skip](#skip-parameter)           | Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]
 | [$top](#top-parameter)             | Задает размер страницы результатов. |[`/users?$top=2`][top-example]
 
 
@@ -46,7 +46,7 @@ API Microsoft Graph может поддерживать один или неск
 
 | Имя                     | Описание | Пример
 |:-------------------------|:------------|:---------|
-| [$skipToken](#skiptoken-parameter) | Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. (Вместо этого параметра некоторые API используют `$skip`.) | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
 
 ## <a name="other-odata-url-capabilities"></a>Другие возможности URL-адресов OData
 
@@ -106,7 +106,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 Многие ресурсы Microsoft Graph возвращают как объявленные свойства ресурса, так и его связи с другими ресурсами. Эти связи также называются свойствами ссылки или навигации и могут ссылаться как на один ресурс, так и на коллекцию ресурсов. Например, папки почты, руководитель и подчиненные пользователя выводятся как связи. 
 
-Как правило, в одном запросе можно отдельно (но не одновременно) запросить или свойства ресурса, или одно из отношений. С помощью строкового параметра запроса `$expand` в результаты можно включить расширенный ресурс или коллекцию, на которые ссылается одно отношение (свойство навигации).
+Normally, you can query either the properties of a resource or one of its relationships in a single request, but not both. You can use the `$expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results.
 
 В приведенном ниже примере возвращаются сведения о корневом каталоге, а также дочерние элементы верхнего уровня на диске.
 
@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 [Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
-Кроме того, некоторые коллекции ресурсов позволяют указывать свойства, которые должны быть возвращены в расширенных ресурсах, благодаря параметру `$select`. В следующем примере выполняется тот же запрос, что и в предыдущем, но используется оператор [`$select`](#select-parameter), с помощью которого для расширенных дочерних элементов возвращаются только свойства **id** и **name**.
+With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `$select` parameter. The following example performs the same query as the previous example but uses a [`$select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **id** and **name** properties.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 [Попробовать в песочнице Graph][expand-example]
 
-> **Примечание.** Не все связи и ресурсы поддерживают параметр запроса `$expand`. Например, можно расширить связи пользователя **directReports**, **manager** и **memberOf**, но не связи **events**, **messages** или **photo**. Не все ресурсы и связи поддерживают использование параметра `$select` для расширенных элементов. 
+> **Note:** Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
 > 
 > Ресурсы Azure AD, производные от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), такие как [user](/graph/api/resources/user?view=graph-rest-1.0) и [group](/graph/api/resources/group?view=graph-rest-1.0), поддерживают параметр `$expand` только в `beta`, и обычно он возвращает не более 20 элементов расширенных отношений.
 
@@ -168,10 +168,10 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 | Получение всех сообщений с определенного адреса, полученных вошедшим пользователем. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
 | Получение всех сообщений, полученных вошедшим пользователем в апреле 2017 г. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
 | Получение всех непрочитанных сообщений в папке "Входящие" вошедшего пользователя. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
-| Получение списка всех групп Office 365 в организации. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
+| Список всех групп Microsoft 365 в Организации. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 | Используйте приведение OData для получения транзитивного членства в группах с отображаемым именем, начинающимся с "a", включая количество возвращаемых объектов. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
 
-> **Примечание.** Ресурсы Azure AD не поддерживают следующие операторы `$filter`: `ne`, `gt`, `ge`, `lt`, `le` и `not`. В настоящее время строковый оператор `contains` не поддерживается ни одним ресурсом Microsoft Graph.
+> **Note:** The following `$filter` operators are not supported for Azure AD resources:  `ne`, `gt`, `ge`, `lt`, `le`, and `not`. The `contains` string operator is currently not supported on any Microsoft Graph resources.
 
 ## <a name="format-parameter"></a>Параметр format
 
@@ -198,7 +198,7 @@ GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
 [Попробовать в песочнице Graph][orderby-example]
 
-Вы также можете сортировать данные по объектам сложного типа. Приведенный ниже запрос позволяет получить сообщения и отсортировать их по полю **address** свойства **from**, принадлежащего к сложному типу **emailAddress**.
+You can also sort by complex type entities. The following request gets messages and sorts them by the **address** field of the **from** property, which is of the complex type **emailAddress**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
@@ -246,7 +246,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 [Попробовать в песочнице Graph][search-example]
 
-Кроме того, для поиска сообщений можно указать в таблице ниже их имена свойств, распознаваемые синтаксисом языка запросов по ключевым словам (KQL). Эти имена свойств соответствуют свойствам, определенным в сущности **message** в Microsoft Graph. Синтаксис KQL поддерживается в Outlook и других приложениях Office 365, например SharePoint. Благодаря этому возможно использование общего домена обнаружения для соответствующих хранилищ данных.
+Кроме того, для поиска сообщений можно указать в таблице ниже их имена свойств, распознаваемые синтаксисом языка запросов по ключевым словам (KQL). Эти имена свойств соответствуют свойствам, определенным в сущности **message** в Microsoft Graph. Outlook и другие приложения Microsoft 365, такие как SharePoint, поддерживают KQL синтаксис, предоставляя удобство общего домена обнаружения для своих хранилищ данных.
 
 
 | Свойство электронных писем, по которому можно выполнять поиск                | Описание | Пример 
@@ -339,11 +339,11 @@ Content-type: application/json
 
 ### <a name="using-search-on-directory-object-collections"></a>Использование $search для коллекций объектов каталога
 
-`$search`С помощью параметра запроса можно ограничить результаты в соответствии с критерием поиска, например поиском слов в строках, разделенных пробелами, регистром и символьными типами (числами и специальными знаками). Поддержка маркированного поиска выполняется только в полях displayName и Description. Любое поле может быть размещено `$search` , поля, отличные от **DisplayName** и **Description** , по умолчанию заменяют `$filter` поведение StartsWith. Пример.
+`$search`С помощью параметра запроса можно ограничить результаты в соответствии с критерием поиска, например поиском слов в строках, разделенных пробелами, регистром и символьными типами (числами и специальными знаками). Поддержка маркированного поиска выполняется только в полях displayName и Description. Любое поле может быть размещено `$search` , поля, отличные от **DisplayName** и **Description** , по умолчанию заменяют `$filter` поведение StartsWith. Например:
 
 `https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
  
-Выполняется поиск всех групп с отображаемыми именами, похожими на "Оневидео". `$search`также можно использовать вместе `$filter` . Пример. 
+Выполняется поиск всех групп с отображаемыми именами, похожими на "Оневидео". `$search`также можно использовать вместе `$filter` . Например: 
  
 `https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"` 
  
@@ -365,8 +365,8 @@ Content-type: application/json
 
 | Класс Object | Описание | Пример |
 | ------------ | ----------- | ------- |
-| User | Отображаемое имя адресной книги пользователя. |  `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
-| User | Отображаемое имя или почта пользователя в адресной книге. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
+| Пользователь | Отображаемое имя адресной книги пользователя. |  `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
+| Пользователь | Отображаемое имя или почта пользователя в адресной книге. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
 | Group | Отображаемое имя или описание группы адресных книг. | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
 | Group | Отображаемое имя адресной книги в группе с включенной поддержкой почты. | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
 
@@ -386,11 +386,12 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 > **Важно!** Как правило, параметр `$select` рекомендуется использовать, чтобы запрос возвращал только те свойства, которые необходимы вашему приложению. Это особенно касается запросов, которые могут возвращать большой результирующий набор. Ограничение набора свойств, возвращаемых в каждой строке, позволяет уменьшить сетевую нагрузку и повысить производительность вашего приложения.
 >
-> В `v1.0` некоторые ресурсы Azure AD, производные от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), такие как [user](/graph/api/resources/user?view=graph-rest-1.0) и [group](/graph/api/resources/group?view=graph-rest-1.0), возвращают при чтении ограниченное подмножество свойств по умолчанию. С этими ресурсами параметр `$select` необходимо использовать для возврата свойств, не входящих в набор по умолчанию.  
+> In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), like [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.  
 
 ## <a name="skip-parameter"></a>Параметр skip
 
-Параметр запроса `$skip` позволяет задать количество элементов, которое необходимо пропустить в начале коллекции. Например, следующий запрос возвращает события пользователя, отсортированные по дате создания, начиная с 21-го события в коллекции:
+Use the `$skip` query parameter to set the number of items to skip at the start of a collection.
+For example, the following request returns events for the user sorted by date created, starting with the 21st event in the collection:
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
@@ -401,7 +402,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 ## <a name="skiptoken-parameter"></a>Параметр skipToken
 
-Некоторые запросы возвращают несколько страниц данных. Это происходит из-за разбиения по страницам на стороне сервера или из-за использования параметра [`$top`](#top-parameter), который ограничивает размер возвращаемых страниц. Многие API Microsoft Graph используют параметр запроса `skipToken` для ссылки на следующие страницы результатов. Параметр `$skiptoken` содержит непрозрачный маркер, который ссылается на следующую страницу результатов и возвращается в URL-адресе, указанном в свойстве `@odata.nextLink`. Дополнительные сведения см. в статье о [разбиении по страницам](./paging.md).
+Some requests return multiple pages of data either due to server-side paging or due to the use of the [`$top`](#top-parameter) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result. The `$skiptoken` parameter contains an opaque token that references the next page of results and is returned in the URL provided in the `@odata.nextLink` property in the response. To learn more, see [Paging](./paging.md).
 
 
 ## <a name="top-parameter"></a>Параметр top
@@ -423,7 +424,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 
 ## <a name="error-handling-for-query-parameters"></a>Обработка ошибок параметров запроса
 
-Некоторые запросы возвращают сообщение об ошибке, если указанный параметр запроса не поддерживается. Например, невозможно использовать `$expand` для связи `user/photo`. 
+Some requests will return an error message if a specified query parameter is not supported. For example, you cannot use `$expand` on the `user/photo` relationship. 
 
 ```http
 https://graph.microsoft.com/beta/me?$expand=photo

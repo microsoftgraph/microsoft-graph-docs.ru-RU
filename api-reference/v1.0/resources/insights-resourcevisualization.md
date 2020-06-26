@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 876acf56d4f3445d55163a8c4cdb5bc1461c45de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2480f55cf0e7ea12d9bfaf31941a943095f62c31
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531294"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898039"
 ---
 # <a name="resourcevisualization-resource-type"></a>Тип ресурса ресурсе resourcevisualization
 
@@ -18,7 +18,7 @@ ms.locfileid: "42531294"
 
 Сложный тип, содержащий свойства [оффицеграфинсигхтс](officegraphinsights.md).
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -65,7 +65,7 @@ ms.locfileid: "42531294"
 -   Visio
 -   Publisher
 -   Project
--   Access
+-   Доступ
 -   Почта
 -   Расширения
 -   Архив
@@ -79,9 +79,12 @@ ms.locfileid: "42531294"
 -   Story
 -   екстерналконтент
 -   Folder
+- SPSite
 -   Другое
 
 Пример запроса:`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+
+Примечания: для `spsite` получения допустимых результатов может потребоваться выполнить сортировку по `lastUsed/lastAccessedDateTime` возрастанию.
 
 ## <a name="containertype-property-values"></a>значения свойств Контаинертипе
 Поддерживаемые типы могут различаться в зависимости от контейнеров, из которых [оффицеграфинсигхтс](officegraphinsights.md) возвращает файлы. Например, только представление [шарединсигхт](insights-shared.md) возвращает файлы из "Dropbox", "Box" и "гдриве".

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 91366f9d2b2308c997c111123d856581db7c00c6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6433c1680630b5805cd18a22e550e58a51bcefbc
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384956"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898305"
 ---
 # <a name="useractivationcounts-resource-type"></a>Тип ресурса Усерактиватионкаунтс
 
@@ -20,7 +20,7 @@ ms.locfileid: "43384956"
 
 | Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
-| продукттипе       | String | Тип продукта, например "Office 365 профессиональный плюс", "клиент Project" или "Visio Pro для Office 365". |
+| продукттипе       | String | Тип продукта, например "Microsoft 365 профессиональный плюс" или "клиент Project". |
 | ластактиватеддате | Дата   | Дата последней активации.       |
 | под           | Int64  | Счетчик активаций в Windows. Это число включает все активации на любом компьютере с Windows. |
 | mac               | Int64  | Число активаций в Mac OS.          |
@@ -29,7 +29,7 @@ ms.locfileid: "43384956"
 | ОС           | Int64  | Счетчик активаций на устройстве с Android.  |
 | активатедоншаредкомпутер   | Boolean | Имеет значение true, если пользователь использовал продукт на общедоступном компьютере. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

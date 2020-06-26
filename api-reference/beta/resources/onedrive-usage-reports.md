@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 88655e70c501992dc59be2bc2154f644e0b76083
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 553dee26b757913c2d4f2186ce67f9c6f89b6fe3
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522402"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897192"
 ---
 # <a name="onedrive-usage-reports"></a>Отчеты об использовании OneDrive
 
@@ -20,7 +20,7 @@ ms.locfileid: "42522402"
 
 Вы можете получить высокоуровневое представление значения, которое вы получаете из OneDrive, в терминах общего количества файлов и хранилища, используемых для всех учетных записей OneDrive в Организации. Вы также можете получить детализированные сведения для понимания того, каковы тенденции активных учетных записей OneDrive, с каким количеством файлов пользователи работали, какой объем хранилища используется. Кроме того, вы можете получить сведения о каждой учетной записи OneDrive.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в статье [Отчеты в Office 365: использование OneDrive для бизнеса](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).
+> **Примечание:** Сведения о различных представлениях отчетов и их именах можно найти в [статье Microsoft 365 Reports: использование OneDrive для бизнеса](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).
 
 ## <a name="reports"></a>Отчеты
 

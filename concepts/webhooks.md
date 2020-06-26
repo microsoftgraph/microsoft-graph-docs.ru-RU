@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6c635994f4d281938d709ca7c2e7daabfb73da86
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 295f62aeba919fde1384642755b0c51816527d91
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864072"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897080"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -37,7 +37,7 @@ The Microsoft Graph API uses a webhook mechanism to deliver change notifications
 - Личный [контакт][] Outlook
 - [user][]
 - [group][]
-- Групповой [чат][] Office 365 
+- [Беседа][] группы (майкрософт) 365
 - Контент внутри иерархии _любой папки_ [driveItem][] на персональном хранилище OneDrive пользователя
 - Контент внутри иерархии _корневой папки_ [driveItem][] на персональном хранилище OneDrive для бизнеса
 - [Оповещение][] безопасности
@@ -252,7 +252,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 ## <a name="firewall-configuration"></a>Конфигурация брандмауэра
 
-При необходимости можно настроить брандмауэр, защищающий URL-адрес уведомлений, чтобы разрешить входящие подключения только из Microsoft Graph. Это позволяет уменьшить риск недопустимых уведомлений об изменениях, отправляемых на URL-адрес уведомлений. Эти недопустимые уведомления об изменении могут пытаться активировать реализованную пользовательскую логику. Полный список IP-адресов, используемых Microsoft Graph для доставки уведомлений об изменениях, приведен в разделе [дополнительные конечные точки для Office 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
+При необходимости можно настроить брандмауэр, защищающий URL-адрес уведомлений, чтобы разрешить входящие подключения только из Microsoft Graph. Это позволяет уменьшить риск недопустимых уведомлений об изменениях, отправляемых на URL-адрес уведомлений. Эти недопустимые уведомления об изменении могут пытаться активировать реализованную пользовательскую логику. Полный список IP-адресов, используемых Microsoft Graph для доставки уведомлений об изменениях, приведен в разделе [дополнительные конечные точки для microsoft 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
 > **Примечание:** Указанные IP-адреса, используемые для доставки уведомлений об изменениях, можно обновить в любое время без уведомления.
 

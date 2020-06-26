@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 7772fb1de249c84785e5b19df03eab0b37ac4b83
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 245f5b760d4a755162107267b1836c5760a1c22a
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511105"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898340"
 ---
 # <a name="page-copytosection"></a>Страница: copyToSection
 
@@ -19,7 +19,7 @@ ms.locfileid: "42511105"
 Для операций копирования необходимо использовать шаблон асинхронного вызова: сначала вызвать действие Copy, а затем опросить конечную точку операции, чтобы получить результат.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,7 +37,7 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -45,12 +45,12 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Office 365.|
+|groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Microsoft 365.|
 |id|String|Обязательный. Идентификатор раздела назначения.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика `Operation-Location` и заголовок. Опросить конечную точку Operations to Location, чтобы [получить состояние операции копирования](onenoteoperation-get.md).
+В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и `Operation-Location` заголовок. Опросить конечную точку Operations to Location, чтобы [получить состояние операции копирования](onenoteoperation-get.md).
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

@@ -1,22 +1,22 @@
 ---
 title: Работа с Microsoft Teams при помощи API Microsoft Graph
-description: Microsoft Teams — это рабочее пространство с чатами в Office 365, обеспечивающее встроенный доступ к календарям команд, файлам, заметкам OneNote, планам Планировщика и многому другому.
+description: Microsoft Teams — это Рабочая область на основе чата в Microsoft 365, которая предоставляет встроенный доступ к календарям, файлам, заметкам OneNote, планам планировщика и т. д.
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: cae0d7796baa10cdabc10214c98a37d3b0130592
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: b9b7954c234e1d76e8f9d27080488b932af515ce
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491821"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896821"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Teams — это рабочее пространство с чатами в Office 365, обеспечивающее встроенный доступ к календарям команд, файлам, заметкам OneNote, планам Планировщика, расписаниям Смен и многому другому.
+Microsoft Teams — это Рабочая область на основе чата в Microsoft 365, которая предоставляет встроенный доступ к календарям, файлам, заметкам OneNote, планам планирования, сдвигам и многому другому.
 
 ## <a name="key-resources-in-microsoft-teams"></a>Основные ресурсы в Microsoft Teams
 
@@ -48,7 +48,7 @@ Microsoft Teams — это рабочее пространство с чатам
 
 ## <a name="teams-and-groups"></a>Команды и группы
 
-В Microsoft Graph приложение Microsoft Teams представлено ресурсом [group](../resources/group.md). Группы Microsoft Teams и Office 365 предназначены для различных требований совместной работы в группе. Почти всех групповые функции применимы к группам Microsoft Teams и Office 365, например календарь группы, файлы, заметки, фотографии, планы и т. д. Основное различие между [командой](team.md) и группой Office 365 состоит в режиме общения участников. Участники команды общаются в сохраняемом чате в контексте определенной команды. Участники группы Office 365 общаются с помощью групповых бесед, которые являются беседами по электронной почте, осуществляемыми в контексте группы в Outlook.
+В Microsoft Graph приложение Microsoft Teams представлено ресурсом [group](../resources/group.md). Как Microsoft Teams, так и группы Microsoft 365 имеют различные требования к совместной работе групп. Практически все функции на основе групп применяются к Microsoft Teams и группам Microsoft 365, например календарю группы, файлам, заметкам, фотографиям, планам и т. д. Основное различие между [командой](team.md) и группой Microsoft 365 заключается в режиме взаимодействия между участниками. Участники команды общаются в сохраняемом чате в контексте определенной команды. Члены группы Microsoft 365 обмениваются сообщениями групповых бесед, которые представляют собой беседы по электронной почте, происходящие в контексте группы в Outlook.
 
 У любой группы, содержащей команду, есть свойство **resourceProvisioningOptions** со значением Team.
 
@@ -58,7 +58,7 @@ Microsoft Teams — это рабочее пространство с чатам
 Ниже указаны различия на уровне API между командами и группами.
 
 - Сохраняемый чат доступен только в Microsoft Teams. Эта функция иерархически представлена ресурсами [channel](../resources/channel.md) и [chatMessage](../resources/chatmessage.md).
-- Групповые беседы доступны только в группах Office 365. Эта функция иерархически представлена ресурсами [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) и [post](../resources/post.md).
+- Групповые беседы доступны только для групп Microsoft 365. Эта функция иерархически представлена ресурсами [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) и [post](../resources/post.md).
 - Метод [Перечисление команд, к которым присоединился пользователь](../api/user-list-joinedteams.md) применяется только к Microsoft Teams.
 - [API звонков и собраний по сети](./communications-api-overview.md) применяются только к Microsoft Teams.
 - См. также [известные проблемы](/graph/known-issues) для этих API.

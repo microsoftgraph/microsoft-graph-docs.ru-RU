@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 171f9b096cda5cb1dbb78c46155ae6097d215799
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 431f5e01f9e74f5c9c8d5adf9b9cc2ffa8473b04
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473177"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897185"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact: getMemberGroups
 
@@ -18,19 +18,19 @@ ms.locfileid: "43473177"
 
 Возврат всех групп, членом которых является [Контактное лицо](../resources/orgcontact.md) . Проверка промежуточная, в отличие от считывания свойства навигации **memberOf** (возвращаются только группы, для которых пользователь является непосредственным членом).
 
-Эта функция поддерживает Office 365 и другие типы групп, подготовленные в Azure Active Directory (Azure AD). Максимальное количество групп, которые может вернуть каждый запрос, — 2046. 
+Эта функция поддерживает Microsoft 365 и другие типы групп, подготовленные в Azure Active Directory (Azure AD). Максимальное количество групп, которые может вернуть каждый запрос, — 2046. 
 
 >[!NOTE]
->Группы Office 365 не могут содержать группы. Членство в группе Office 365 всегда является прямым.
+>Группы Microsoft 365 не могут содержать группы. Членство в группе Microsoft 365 всегда является прямым.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
+|Приложение | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,15 +41,15 @@ POST /contacts/{id}/getMemberGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:----------|
-| Авторизация  |  Bearer {токен}. Обязательный. |
-| Content-Type   | application/json. Обязательный. |
+| Авторизация  |  Bearer {token}. Required. |
+| Content-Type   | application/json. Required. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Логическое|Значение `false`. Возвращение лишь защищенных групп поддерживается только для пользователей.|
+|securityEnabledOnly|Логическое|Значение `false` . Возвращение лишь защищенных групп поддерживается только для пользователей.|
 
 ## <a name="response"></a>Отклик
 

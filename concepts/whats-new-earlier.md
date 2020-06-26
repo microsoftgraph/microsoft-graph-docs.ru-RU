@@ -3,12 +3,12 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 251d41dfae2aac6c15e26304a1f57f540bd65a82
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 607de64280dbf91939fe48b32bccee2f162812f1
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681629"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897318"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
 
@@ -63,7 +63,7 @@ ms.locfileid: "44681629"
 ### <a name="reports--identity-and-access-reports"></a>Отчеты | Отчеты об удостоверениях и доступе
 [Список](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) [проверяющих сторон](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts), настроенных в службах федерации Active Directory.
 
-### <a name="reports--office-365-usage-reports"></a>Отчеты | Отчеты об использовании Office 365
+### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
 Просмотр данных о **созданных собраниях** и **действиях с уведомлениями о собраниях** в отчетах CSV, включающих [счетчики действий с электронной почтой](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta), [счетчики пользователей, совершающих действия с электронной почтой](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) и [данные о действиях пользователей с электронной почтой](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta).
 
 
@@ -88,7 +88,7 @@ ms.locfileid: "44681629"
 - Используйте делегированное разрешение `User.ManageIdentities.All`, чтобы разрешить приложению считывать, обновлять и удалять удостоверения, связанные с учетной записью пользователя, к которой имеет доступ зарегистрированный пользователь. Используйте это разрешение на уровне приложения без зарегистрированного пользователя. Это позволяет приложению [определить](/graph/api/user-update?view=graph-rest-1.0), с помощью каких удостоверений пользователь может войти.
 
 ### <a name="reports"></a>Отчеты
-Используйте Администратор службы Teams и Администратор связи Teams в качестве принятых ролей пользователя, чтобы приложения могли читать отчеты об использовании службы Office 365 от имени пользователя в качестве [форм делегированной пользователем авторизации](reportroot-authorization.md). 
+Использование администратора службы Teams и администратора служб Teams в качестве обслуживаемых ролей пользователей позволяет приложениям читать отчеты об использовании служб Microsoft 365 от имени пользователя, а также [формы авторизации, делегированные пользователю](reportroot-authorization.md). 
 
 ### <a name="sites"></a>Сайты
 - Предоставляйте пользователям возможность [отслеживать](/graph/api/site-follow?view=graph-rest-1.0) или [прекращать отслеживание](/graph/api/site-unfollow?view=graph-rest-1.0) сайтов SharePoint. 
@@ -157,7 +157,7 @@ ms.locfileid: "44681629"
 Обновления Intune за [Февраль](changelog.md#february-2020)
 
 ### <a name="groups"></a>Группы
-Используйте метод [assignLicense](/graph/api/group-assignlicense?view=graph-rest-beta), чтобы назначить лицензии для продуктов, таких как Office 365 или Enterprise Mobility + Security, группе. Поскольку Azure AD обеспечивает назначение лицензий членам группы, для участников, вступающих в группу или покидающих ее, больше не требуется управление лицензиями на индивидуальном уровне.
+Используйте метод [ассигнлиценсе](/graph/api/group-assignlicense?view=graph-rest-beta) для назначения лицензий на продукты, такие как Microsoft 365 или Enterprise Mobility + Security, в группу. Поскольку Azure AD обеспечивает назначение лицензий членам группы, для участников, вступающих в группу или покидающих ее, больше не требуется управление лицензиями на индивидуальном уровне.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 - Установите параметры запроса, утверждения и проверки при создании [политики назначения пакетов доступа](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta).
@@ -204,7 +204,7 @@ API аналитики имеет общедоступное состояние.
 - [к которым предоставлен доступ](/graph/api/insights-list-shared?view=graph-rest-1.0) пользователю или пользователем.
 
 ### <a name="reports"></a>Отчеты
-Чтобы получать отчеты об использовании Office 365 с помощью разрешений, делегированных пользователем, администраторам необходимо назначить пользователю роль администратора Azure AD с ограниченными правами. Это может быть одна из следующих ролей: администратор организации, администратор Exchange, администратор SharePoint, администратор Lync, глобальный читатель или читатель отчетов. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Office 365](reportroot-authorization.md).
+Чтобы получить отчеты об использовании Microsoft 365 с помощью разрешений, делегированных пользователем, администраторам необходимо назначить пользователю роль ограниченного администратора Azure AD. Это может быть одна из следующих ролей: администратор организации, администратор Exchange, администратор SharePoint, администратор Lync, глобальный читатель или читатель отчетов. Для получения дополнительных сведений см. [авторизация для API для чтения отчетов об использовании Microsoft 365](reportroot-authorization.md) .
 
 ### <a name="toolkit"></a>Набор средств
 Выпущен набор средств Microsoft Graph версии 1.1. Список улучшений и исправлений ошибок см. в [разделе за декабрь 2019 г.](changelog.md#december-2019) журнала изменений.
@@ -425,9 +425,9 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 
 ### <a name="reports"></a>Отчеты
 - Получите дополнительные [данные об использовании почтового ящика](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0) касательно числа и размера удаленных элементов.
-- Отслеживайте идентификаторы групп Office 365 при [получении сведений о действиях групп](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0).
+- Отслеживайте идентификаторы групп Microsoft 365 при [получения сведений о действиях в группах](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0).
 - Отслеживайте имя субъекта-владельца при получении [сведений об использовании хранилища OneDrive учетной записью](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0) и [сведений об использовании сайта SharePoint](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0).
-- Узнайте число активных и неактивных пользователей в Office 365 при [получении отчета о количестве пользователей в отдельных службах Office 365](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0).
+- Получение числа активных и неактивных пользователей в Microsoft 365 при [получении отчета о счетчиках пользователей для службы microsoft 365](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0).
 
 ### <a name="security"></a>Безопасность
 - Используйте новую [надстройку Microsoft Graph Security API для Splunk](https://aka.ms/graphsecuritysplunkaddon), чтобы передавать оповещения системы безопасности и аналитику из различных продуктов партнеров в Splunk, облегчая сопоставление их данных по безопасности в режиме реального времени. Дополнительные сведения см. в [объявлении](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Introducing-the-new-Microsoft-Graph-Security-API-add-on-for/ba-p/815972). 
@@ -454,7 +454,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 - Администраторы могут [просматривать обзоры доступа](/graph/api/accessreview-list?view=graph-rest-beta), чтобы эффективно проверять членство в группах, доступ к корпоративным приложениям и назначения ролей. Регулярные проверки доступа позволяют гарантировать, что только уполномоченные люди получают постоянный доступ к ресурсам определенными способами.
 
 ### <a name="social-and-workplace-intelligence"></a>Социальная и рабочая аналитика
-Пользователи могли использовать приложение [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights) Office 365 для получения аналитических сведений о распределении рабочего времени, совместной работе и балансе между трудовой и личной жизнью. Теперь с помощью [API аналитики](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) можно интегрировать данные о времени, потраченном на рабочие задачи (например, звонки, чаты и электронную почту), чтобы повысить продуктивность пользователя и улучшить его самочувствие. 
+Конечные пользователи могут использовать приложение Microsoft 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights) , чтобы получить сведения об управлении временем, совместной работе и балансировке сроков работы. Теперь с помощью [API аналитики](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) можно интегрировать данные о времени, потраченном на рабочие задачи (например, звонки, чаты и электронную почту), чтобы повысить продуктивность пользователя и улучшить его самочувствие. 
 
 
 ## <a name="july-2019-new-and-generally-available"></a>Июль 2019 г.: новые и общедоступные возможности 
@@ -463,7 +463,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 Теперь имеются фрагменты кода Objective-C для всех статей по API в справочных материалах для версии 1.0 и бета-версии. См. пример Objective-C для [получения события](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example).
 
 ### <a name="group"></a>Группа
-- Используйте функцию [validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0), чтобы отображаемое имя или почтовый псевдоним существующей группы Office 365 соответствовали политикам именования.
+- Используйте функцию [валидатепропертиес](/graph/api/group-validateproperties?view=graph-rest-1.0) , чтобы убедиться, что отображаемое имя или псевдоним почты существующей группы Microsoft 365 соответствует политикам именования.
 - Кроме того, перед созданием группы вы можете использовать функцию [validateProperties](/graph/api/directoryobject-validateproperties?view=graph-rest-1.0) для объекта [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), чтобы сначала проверить имена.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
@@ -538,7 +538,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 - Разностный запрос и добавления свойств для [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta) и [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta).
 
 ### <a name="group"></a>Группа
-Получите [метки конфиденциальности](/graph/api/resources/assignedlabel?view=graph-rest-beta), чтобы обеспечить защиту конфиденциальных данных группы Office 365 и выполнение политик в отношении соответствия требованиям. Эти метки являются объектами [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta), опубликованными администраторами в Центре безопасности и соответствия требованиям Microsoft 365, в рамках возможностей Microsoft Information Protection. 
+Получение [меток конфиденциальности](/graph/api/resources/assignedlabel?view=graph-rest-beta) для защиты конфиденциальных данных группы Microsoft 365 и соответствие политикам соответствия требованиям. Эти метки являются объектами [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta), опубликованными администраторами в Центре безопасности и соответствия требованиям Microsoft 365, в рамках возможностей Microsoft Information Protection. 
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 - Получите экземпляр [приложения](/graph/api/resources/applicationtemplate?view=graph-rest-beta) или добавьте экземпляр из коллекции приложений Azure AD в ваш каталог в качестве шаблона.

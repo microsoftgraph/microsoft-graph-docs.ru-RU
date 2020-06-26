@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: b6f92ba4745d69cf2ce341412eee88403218414c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3e6979800f11ca9b4334aa14dfa8594b99516dc7
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533361"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897759"
 ---
 # <a name="yammer-activity-reports"></a>Отчеты о действиях в Yammer
 
@@ -18,7 +18,7 @@ ms.locfileid: "42533361"
 
 Благодаря отчетам о действиях в Yammer вы сможете узнать уровень активности использования этой сети в организации, просматривая количество действий, выполняемых в организации, и уникальных пользователей, которые публикуют, оценивают и читают сообщения в Yammer.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в статье [Отчеты в Office 365: действия в Yammer](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).
+> **Примечание:** Сведения о различных представлениях отчетов и их именах можно найти в [статье Microsoft 365 Reports-Activity Yammer](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).
 
 ## <a name="reports"></a>Отчеты
 
