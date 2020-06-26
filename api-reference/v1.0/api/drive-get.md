@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение свойств и связей ресурса Drive.
 doc_type: apiPageType
-ms.openlocfilehash: d3513714ecc20ba4e2036dab2c61d91250cea73e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8538f44a368147ed8c8438ea61c95c94f037923f
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517827"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897073"
 ---
 # <a name="get-drive"></a>Получение ресурса Drive
 
@@ -24,7 +24,7 @@ Drive — это контейнер верхнего уровня для фай
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -218,7 +218,7 @@ GET /drives/{drive-id}
 
 | Имя параметра | Значение  | Описание                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | string | Обязательный. Идентификатор запрошенного диска. |
+| _driveId_      | string | Required. The identifier for the drive requested. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -261,7 +261,7 @@ Content-type: application/json
 
 <!-- {
   "type": "#page.annotation",
-  "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
+  "description": "Get metadata for a OneDrive, OneDrive for Business, or Microsoft 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
   "suppressions": [
