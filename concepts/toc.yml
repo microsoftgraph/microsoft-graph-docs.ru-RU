@@ -278,7 +278,7 @@ items:
         items:
           - name: Обзор
             href: reportroot-concept-overview.md
-          - name: Авторизация для отчетов об использовании Office 365
+          - name: Авторизация для отчетов об использовании Microsoft 365
             href: reportroot-authorization.md
       - name: Поиск (предварительный просмотр)
         items:
@@ -396,7 +396,7 @@ items:
               - name: Обзор
                 href: webhooks.md
               - name: Учебник
-                href: /graph/tutorials/change-notifications
+                href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: Отсутствие уведомлений в Outlook (предварительная версия)
                 href: webhooks-outlook-authz.md
               - name: Уведомления с данными ресурсов (предварительная версия)
