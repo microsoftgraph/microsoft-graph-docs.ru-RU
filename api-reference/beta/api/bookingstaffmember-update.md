@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 67f36a6866f2d569a446f1bd5e42a39d8a5988f4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 999eb8bf61b07d64046a356af510c7cb71011400
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384995"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895659"
 ---
 # <a name="update-bookingstaffmember"></a>Обновление букингстаффмембер
 
@@ -20,7 +20,7 @@ ms.locfileid: "43384995"
 
 Обновление свойств объекта [букингстаффмембер](../resources/bookingstaffmember.md) в указанном [букингбусинесс](../resources/bookingbusiness.md).
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -39,20 +39,20 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|аваилабилитисаффектедбиперсоналкалендар|Boolean|True означает, что если сотрудник является пользователем Office 365, то в API учета используется личный календарь сотрудника в Office 365, а свойство **воркингхаурс** для определения доступности. |
+|аваилабилитисаффектедбиперсоналкалендар|Boolean|Значение true означает, что если сотрудник является пользователем Microsoft 365, то в API учета используется личный календарь сотрудника в Microsoft 365, а свойство **воркингхаурс** для определения доступности. |
 |colorIndex|Int32|Определяет цвет для представления сотрудника. Цвет соответствует цветовой палитре на странице " **сведения о персонале** " в приложении "книги".|
 |displayName|String|Имя сотрудника, отображаемое для клиентов.|
-|emailAddress|String|Адрес электронной почты сотрудника. Это может быть тот же клиент Office 365, что и в Организации, или в другом домене электронной почты. Этот адрес электронной почты используется, если для свойства **сендконфирматионстувнер** в политике планирования бизнеса задано значение true.|
+|emailAddress|String|Адрес электронной почты сотрудника. Это может быть тот же клиент Microsoft 365, что и в Организации, или в другом домене электронной почты. Этот адрес электронной почты используется, если для свойства **сендконфирматионстувнер** в политике планирования бизнеса задано значение true.|
 |role|string| Роль сотрудника в Организации. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`.|
 |усебусинесшаурс|Boolean|Значение true означает, что доступность сотрудника определяется свойством **businessHours** предприятия. Значение false означает, что доступность определяется значением свойства **воркингхаусе** сотрудника.|
 |workingHours|Коллекция [букингворкхаурс](../resources/bookingworkhours.md)|Диапазон часов на каждый день недели, когда сотрудник становится доступен для резервирования.|
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `204 No content`. Метод не возвращает данные в теле отклика.
+If successful, this method returns a `204 No content` response code. It does not return anything in the response body.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 В следующем примере для сотрудника в календарном плане изменяется понедельник.
@@ -146,7 +146,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",

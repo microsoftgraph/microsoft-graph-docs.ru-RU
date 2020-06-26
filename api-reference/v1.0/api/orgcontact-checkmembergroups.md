@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d221b749384c398e355b63a3a08227d2c418a89a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f72b0c51d5ea9f0eff824a85af41bf51ae429c10
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463778"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895960"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact: Чеккмемберграупс
 
@@ -18,20 +18,20 @@ ms.locfileid: "43463778"
 
 Проверка участия в указанном списке групп. Возвращает из списка идентификаторы групп, в которых [Контактное лицо](../resources/orgcontact.md) имеет прямое или транзитивное членство.
 
-В одном запросе можно проверять до 20 групп. Эта функция поддерживает Office 365 и другие типы групп, подготовленные в Azure Active Directory (Azure AD).
+В одном запросе можно проверять до 20 групп. Эта функция поддерживает Microsoft 365 и другие типы групп, подготовленные в Azure Active Directory (Azure AD).
 
 >[!NOTE]
->Группы Office 365 не могут содержать группы. Членство в группе Office 365 всегда является прямым.
+>Группы Microsoft 365 не могут содержать группы. Членство в группе Microsoft 365 всегда является прямым.
 
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
+|Приложение | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,8 +42,8 @@ POST /contacts/{id}/checkMemberGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-| Content-Type   | application/json. Обязательный. |
+| Авторизация  | Bearer {token}. Required. |
+| Content-Type   | application/json. Required. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
@@ -52,7 +52,7 @@ POST /contacts/{id}/checkMemberGroups
 |:---------------|:--------|:----------|
 |groupIds|Коллекция строк | Список идентификаторов групп, которые необходимо проверить. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции String в тексте отклика.
 

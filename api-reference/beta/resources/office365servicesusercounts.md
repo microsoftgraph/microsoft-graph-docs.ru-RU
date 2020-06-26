@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 0deb5eceb31ca3453c1cc5f29ae669f7053738c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8600e79d425d15746fd7015adea98eb49a8a3c82
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522423"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896555"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>Тип ресурса office365ServicesUserCounts
 
@@ -33,11 +33,11 @@ ms.locfileid: "42522423"
 | яммеринактиве           | Int64  | Количество неактивных пользователей в Yammer.  |
 | теамсактиве              | Int64  | Количество активных пользователей в Microsoft Teams. Любой пользователь, который опубликовал сообщения в каналах группы, отправил сообщения в сеансах частного чата или участие в собраниях или вызовах считается активным пользователем. |
 | теамсинактиве            | Int64  | Количество неактивных пользователей в Microsoft Teams.     |
-| office365Active          | Int64  | Количество активных пользователей в Office 365.   |
-| office365Inactive        | Int64  | Количество неактивных пользователей в Office 365.     |
+| office365Active          | Int64  | Количество активных пользователей в Microsoft 365.   |
+| office365Inactive        | Int64  | Количество неактивных пользователей в Microsoft 365.     |
 | репортпериод             | String | Количество дней, охватываемых отчетом.    |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: f20165180db29a0e7157993f5f49d7cfd069f640
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1700f3c6bec06c9f2e7ec6093fccffab443d2b08
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450844"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895974"
 ---
 # <a name="addin-resource-type"></a>Тип ресурса addIn
 
@@ -18,7 +18,7 @@ ms.locfileid: "43450844"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые могут визуализировать файловые потоки, [могут настраивать](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) надстройки для работы с обработчиками файлов. Это позволит таким службам, как Office 365, вызывать приложение в контексте документов, над которыми работает пользователь.
+Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые могут визуализировать файловые потоки, [могут настраивать](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) надстройки для работы с обработчиками файлов. Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документа, над которым работает пользователь.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -27,7 +27,7 @@ ms.locfileid: "43450844"
 |properties|Коллекция [keyValue](keyvalue.md)||
 |type|string||
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

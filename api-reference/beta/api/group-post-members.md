@@ -1,16 +1,16 @@
 ---
 title: Добавление участника
-description: Добавьте члена в группу Office 365 или группу безопасности с помощью свойства навигации **Members** .
+description: Добавьте члена в группу Microsoft 365 или группу безопасности с помощью свойства навигации **Members** .
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a41ef1abeeece64c3a8ea689e19596e07931e82f
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: fe3f3a5fe1bde8c14e9dbc3a6e12e486dd7c1bd2
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289590"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895813"
 ---
 # <a name="add-member"></a>Добавление участника
 
@@ -18,15 +18,15 @@ ms.locfileid: "44289590"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте члена в группу Office 365 или группу безопасности с помощью свойства навигации **Members** .
+Добавьте члена в группу Microsoft 365 или группу безопасности с помощью свойства навигации **Members** .
 
 Вы можете добавлять пользователей, участников служб или другие группы. 
 
 > [!Important]
-> Вы можете добавлять пользователей только в группы безопасности и группы Office 365, управляемые через облако.
+> Вы можете добавлять пользователей только в группы безопасности и Microsoft 365, управляемые через облако.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,13 +43,13 @@ POST /groups/{id}/members/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание|
 |:---- |:-----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) или [group](../resources/group.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос

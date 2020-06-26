@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: e2415e9ede9f31f54e58f911c69310bbf9ad6442
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: e84c7408eb6924205e86059c969201d1c94dcd70
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44862515"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896526"
 ---
 # <a name="create-schemaextension"></a>Создание schemaExtension
 
@@ -257,13 +257,15 @@ Content-length: 420
 
 В этом примере показано, как создать параметр расширения схемы для **владельца**.  В этом сценарии пользователь приложения может не быть владельцем приложения (например, если используется обозреватель Microsoft Graph).  В этом случае необходимо задать для свойства **owner** **идентификатор AppID** приложения, в противном случае вы не будете иметь права на создание расширения схемы. Задайте свойство **owner** в запросе вместе с представлением в формате JSON остальных свойств объекта [schemaExtension](../resources/schemaextension.md) .
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_schemaextension_from_schemaextensions_3"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/schemaExtensions
+POST https://graph.microsoft.com/beta/schemaExtensions
 Content-type: application/json
 
 {
@@ -289,6 +291,20 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-schemaextension-from-schemaextensions-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-schemaextension-from-schemaextensions-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

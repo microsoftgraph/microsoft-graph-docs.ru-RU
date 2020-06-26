@@ -1,16 +1,16 @@
 ---
 title: Список событий
-description: Получение списка событий в календаре. Этот список содержит собрания с одним экземпляром и образцы рядов.
+description: Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 519267d8f6622e40258d7d25138c141a24bd966a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 121e16524fb3edd54fe8cb1562c7fa38cd208fa9
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43361453"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895645"
 ---
 # <a name="list-events"></a>Перечисление событий
 
@@ -18,7 +18,7 @@ ms.locfileid: "43361453"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка событий в календаре.  Это может быть календарь для ресурса [user](../resources/user.md) или стандартный календарь для ресурса [group](../resources/group.md), представляющего группу Office 365. В этом списке указаны единичные собрания и главные собрания в соответствующих рядах.
+Получение списка событий в календаре.  В качестве календаря может использоваться календарь [пользователя](../resources/user.md)или стандартный календарь [группы](../resources/group.md)Microsoft 365. В этом списке указаны единичные собрания и главные собрания в соответствующих рядах.
 
 Чтобы получить расширенные экземпляры события, вы можете [получить представление календаря](calendar-list-calendarview.md) или [экземпляры события](event-list-instances.md).
 
@@ -57,7 +57,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {токен}. Обязательный.  |
+| Authorization  | string | Bearer {token}. Required.  |
 | Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный параметр. |
 
 ## <a name="request-body"></a>Тело запроса
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/me/calendar/events
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

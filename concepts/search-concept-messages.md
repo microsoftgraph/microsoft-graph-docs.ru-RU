@@ -4,12 +4,12 @@ description: Вы можете использовать API Microsoft Search API
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 1b47155e761a28ccaf3e93719bd9967b9f9eff67
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: b788b6be016354b31915310e3e937aaf73907107
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568777"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896030"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-messages"></a>Использование API службы поиска Microsoft в Microsoft Graph для поиска сообщений
 
@@ -86,7 +86,7 @@ Content-Type: application/json
                 "receivedDateTime": "2019-10-07T10:00:09Z",
                 "sentDateTime": "2019-10-07T09:59:52Z",
                 "hasAttachments": false,
-                "subject": "Weekly digest: Office 365 changes",
+                "subject": "Weekly digest: Microsoft 365 changes",
                 "bodyPreview": "Here is a summary of your messages from last week -   New Feature: Live captions in English-US a",
                 "importance": "normal",
                 "replyTo": [

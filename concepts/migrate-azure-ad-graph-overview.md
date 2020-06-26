@@ -4,12 +4,12 @@ description: Описывается перенос приложений API Azur
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 311bc8c800d7415e7e2d192f5b11aed971faafa4
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 4a759516ad5852f0ef73aaacd87d0c8d85d9a0a1
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926780"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896443"
 ---
 # <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>Перенос приложений Azure AD Graph в Microsoft Graph
 
@@ -17,9 +17,9 @@ Microsoft Graph полностью заменяет Graph Azure Active Directory
 
 Кроме того, Microsoft Graph поддерживает множество новых наборов данных Azure AD и функций, недоступных в Azure AD Graph. Переключитесь на Microsoft Graph, чтобы воспользоваться всеми преимуществами этих новых API, используя одну конечную точку, в том числе:
 
-- [Управление группами Office 365](/graph/office365-groups-concept-overview)
+- [Управление группами Microsoft 365](/graph/office365-groups-concept-overview)
 - [Приглашения внешних пользователей](/graph/api/resources/invitation?view=graph-rest-1.0)
-- Возможность [восстановления пользователей и групп Office 365](/graph/api/resources/directory?view=graph-rest-1.0) после их удаления
+- Возможность [восстановления пользователей и групп Microsoft 365](/graph/api/resources/directory?view=graph-rest-1.0) после их удаления
 - [Уведомления веб-перехватчика для пользователей и групп](/graph/webhooks?toc=./ref/toc.json&view=graph-rest-1.0)
 - Функции управления удостоверениями, такие как:
   - [Привилегированное управление удостоверениями](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) (PIM) для повышения уровня доступа пользователей к привилегированным ролям только при необходимости и в течение ограниченного периода времени.

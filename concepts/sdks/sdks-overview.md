@@ -4,12 +4,12 @@ description: Описывает доступные пакеты SDK, Подде�
 localization_priority: Normal
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 93b2606aeb3cea9053c04d4caa87d6cf50e833e4
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: c7be38ff3d79f9c8c1facd6a4da300af00870136
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969474"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895680"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Общие сведения о пакетах SDK Microsoft Graph
 
@@ -37,9 +37,9 @@ ms.locfileid: "37969474"
 - [Python](https://developer.microsoft.com/en-us/graph/get-started/python)
 - [Ruby](https://developer.microsoft.com/en-us/graph/get-started/ruby)
 
-## <a name="office-365-developer-subscription"></a>Подписка на Office 365 для разработчиков
+## <a name="microsoft-365-developer-subscription"></a>Подписка на Microsoft 365 для разработчиков
 
-При создании приложений с помощью Microsoft Graph рекомендуется получить бесплатную подписку на Office 365 для разработчиков, зарегистрировавшись в программе для [разработчиков office 365](https://aka.ms/OfficeDevProgram).
+При создании приложений с помощью Microsoft Graph рекомендуется получить бесплатную подписку на Microsoft 365 для разработчиков, зарегистрировавшись в программе для [разработчиков microsoft 365](https://aka.ms/OfficeDevProgram).
 
 ## <a name="see-also"></a>См. также
 

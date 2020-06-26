@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 2d8c54aeb45eb10e895f7cac84e6591b47bd9f83
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b37e9f6feeb5a175a6064219dcecbf2d9f108ea
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533722"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895988"
 ---
 # <a name="sharepoint-site-usage-reports"></a>Отчеты об использовании сайтов SharePoint
 
@@ -18,7 +18,7 @@ ms.locfileid: "42533722"
 
 Эти отчеты позволяют получить общее представление об отдаче от SharePoint на основе общего количества хранимых на сайтах SharePoint файлов, количества активно используемых файлов и объема хранилища, занятого всеми этими сайтами. После этого вы можете посмотреть развернутые отчеты, чтобы выявить тенденции и особенности для каждого сайта.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
+> **Примечание:** Сведения о различных представлениях и именах отчетов можно найти в [статье Microsoft 365 Reports-SharePoint site Usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
 
 ## <a name="reports"></a>Отчеты
 

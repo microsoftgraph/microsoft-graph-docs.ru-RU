@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bb824a0bd6b79f4450f4a2d3658e0853376db594
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 22fdca19b657bdf439f356fb61e4f805f45b4f4b
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491891"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896128"
 ---
 # <a name="update-team-photo"></a>Обновление фотографии команды
 
@@ -18,14 +18,14 @@ ms.locfileid: "44491891"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вы можете обновить фотографию (изображение) для команды. Поддерживаемые размеры фотографий в формате HD для Office 365: 48 x 48, 64 x 64, 96 x 96, 120 x 120, 240 x 240, 360 x 360, 432 x 432, 504 x 504 и 648 x 648. Фотографии, хранящиеся в Azure Active Directory, могут быть любого размера.
+Вы можете обновить фотографию (изображение) для команды. Ниже приведены поддерживаемые размеры фотографий HD в Microsoft 365:48x48, 64x64, 96x96, 120x120, 240x240, 360 x 360, 432 x 432, 504 504 и 648x648 Пиксели. Фотографии, хранящиеся в Azure Active Directory, могут быть любого размера.
 
 > [!Note]
 > Общий размер запроса не должен превышать 4 МБ. Таким образом, размер фотографии составит менее 4 МБ.
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -51,8 +51,8 @@ PUT /teams/{id}/photo
 
 | Заголовок        | Значение           |
 |:--------------|:--------------  |
-| Авторизация | Bearer {токен}. Обязательный.  |
-| Content-Type | image/jpeg. Обязательный.  |
+| Авторизация | Bearer {token}. Required.  |
+| Content-Type | image/jpeg. Required.  |
 
 ## <a name="request-body"></a>Тело запроса
 

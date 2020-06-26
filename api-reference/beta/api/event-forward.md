@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4d333aab5240b7ff6ae391800e448fe9a36837a3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 03045c2b7fb438e1affa574e1db8682336ac43c3
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43365648"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895736"
 ---
 # <a name="event-forward"></a>событие: Forwarded
 
@@ -20,11 +20,11 @@ ms.locfileid: "43365648"
 
 Это действие позволяет Организатору или участнику [события](../resources/event.md) "собрание" пересылать приглашение на собрание новому получателю. 
 
-Если событие "собрание" переадресовано из почтового ящика Office 365 другому получателю, это действие также отправляет сообщение организатору переадресации и добавляет получателя к копии события собрания организатора. Это удобство недоступно при пересылке с учетной записи Outlook.com.
+Если событие "собрание" переадресовано от почтового ящика Microsoft 365 другому получателю, это действие также отправляет сообщение организатору переадресации и добавляет получателя к копии события собрания организатора. Это удобство недоступно при пересылке с учетной записи Outlook.com.
 
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -55,20 +55,20 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
+| Authorization  | string  | Bearer {token}. Required. |
+| Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Comment|String|Добавляемый комментарий. Может быть пустой строкой.|
+|Comment|String|A comment to include. Can be an empty string.|
 |ToRecipients|Коллекция [recipient](../resources/recipient.md)|Список получателей, на которые пересылается событие.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса educationClass
-description: Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Office 365, для него используется тот же идентификатор.
+description: Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Microsoft 365 и использует тот же идентификатор.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0de9c384c5f48d832180da48c22ed6595ce3922d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dca4ee263418c098194cf37ac66bc6659b9d6061
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502279"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895687"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -18,7 +18,7 @@ ms.locfileid: "42502279"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Office 365, для него используется тот же идентификатор. Учащиеся — постоянные участники курса, а преподаватели являются владельцами и обладают соответствующими правами. Для правильной работы Office 365 преподаватели должны быть членами обеих коллекций преподавателей и Members.
+Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Microsoft 365 и использует тот же идентификатор. Учащиеся — постоянные участники курса, а преподаватели являются владельцами и обладают соответствующими правами. Для правильной работы Microsoft 365 преподаватели должны быть членами обеих коллекций преподавателей и Members.
 
 ## <a name="methods"></a>Методы
 
@@ -34,11 +34,11 @@ ms.locfileid: "42502279"
 | [Удаление преподавателя](../api/educationclass-delete-teachers.md)              | [educationUser]                                | Удаление **educationUser** для курса с использованием свойства навигации teachers.      |
 | [Создание educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | Создание нового **educationAssignment** путем публикации в коллекции назначений.            |
 | [Перечисление заданий](../api/educationclass-list-assignments.md)           | Коллекция [educationAssignment]                | Получение коллекции объектов **educationAssignment** .                                         |
-| [Получение группы](../api/educationclass-get-group.md)                         | [group]                                        | Получение **группы** Office 365, которая соответствует этому объекту **educationClass**.                 |
+| [Получение группы](../api/educationclass-get-group.md)                         | [group]                                        | Получите **группу** Microsoft 365, соответствующую этой **educationClass**.                 |
 | [Создание Едукатионкатегори](../api/educationclass-post-category.md)      | [едукатионкатегори]                            | Создание нового **едукатионкатегори** для этого класса.                                        |
 | [Перечисление категорий](../api/educationclass-list-categories.md)             | Коллекция [едукатионкатегори]                 | Получение списка объектов **едукатионкатегори** , принадлежащих этому классу.                      |
 | [Обновление](../api/educationclass-update.md)                               | [educationClass]                               | Обновление объекта **educationClass**.                                                         |
-| [удаление](../api/educationclass-delete.md);                               | Нет                                           | Удаление объекта **educationClass**.                                                         |
+| [Delete](../api/educationclass-delete.md)                               | Нет                                           | Удаление объекта **educationClass**.                                                         |
 | [Delta](../api/educationclass-delta.md)                                 | Коллекция [educationClass](educationclass.md) | Получение добавочных изменений для **едукатионклассес**                                          |
 
 ## <a name="properties"></a>Свойства

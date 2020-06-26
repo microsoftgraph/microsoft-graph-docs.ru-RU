@@ -4,12 +4,12 @@ description: В Outlook организатор собрания может ра�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: e17ffc92ae77324e855452b981e90ee4b4f3f3c5
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 7b668b6791655291dde71c4ef517c78a48c0fa8a
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353247"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895105"
 ---
 # <a name="use-outlook-to-organize-or-attend-meetings-online"></a>Используйте Outlook для организации или посещения собраний в Интернете
 
@@ -19,7 +19,7 @@ ms.locfileid: "44353247"
 
 В организации, поддерживающей любого из указанных ниже поставщиков собраний по сети, можно настроить календари Outlook и разрешить организацию собраний по сети.
 
-- Microsoft Teams в составе пакета Office 365 бизнес или Office 365 корпоративный
+- Microsoft Teams, приобретенная в составе Microsoft 365 Business или Enterprise Suite
 - Skype
 - Skype для бизнеса
 
@@ -472,7 +472,7 @@ Content-type: application/json
 
 
 ## <a name="see-also"></a>См. также
-- Сведения о взаимодействии с Microsoft Teams в Office 365 можно найти в следующих статьях:
+- Сведения о взаимодействии с Microsoft Teams в Microsoft 365 можно найти в следующих статьях:
   - [Взаимодействие Exchange и Microsoft Teams](/microsoftteams/exchange-teams-interact)
   - [Настройка параметров сосуществования и обновления](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
 - [Выбор API в Microsoft Graph для создания собраний по сети и присоединения к ним](choose-online-meeting-api.md)
