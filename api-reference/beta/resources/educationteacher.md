@@ -5,31 +5,34 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ad01c29313198b0feab2b4258c9eaafcb9a4f727
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4cd8b11d5f398177ec301e6cb7d834268e97c005
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500018"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909710"
 ---
-# <a name="educationteacher-resource-type"></a><span data-ttu-id="456c0-103">Тип ресурса educationTeacher</span><span class="sxs-lookup"><span data-stu-id="456c0-103">educationTeacher resource type</span></span>
+# <a name="educationteacher-resource-type"></a><span data-ttu-id="9331a-103">Тип ресурса educationTeacher</span><span class="sxs-lookup"><span data-stu-id="9331a-103">educationTeacher resource type</span></span>
 
-<span data-ttu-id="456c0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="456c0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9331a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9331a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="456c0-105">Дополнительные сведения, добавляемые в объект [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `teacher`.</span><span class="sxs-lookup"><span data-stu-id="456c0-105">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
+<span data-ttu-id="9331a-105">Дополнительные сведения, добавляемые в объект [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `teacher`.</span><span class="sxs-lookup"><span data-stu-id="9331a-105">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
 
+> [!IMPORTANT]
+> <span data-ttu-id="9331a-106">При использовании делегированных областей разрешений Graph будет возвращать только `externalId` Свойства.</span><span class="sxs-lookup"><span data-stu-id="9331a-106">When using Delegated permission scopes, Graph will only return the `externalId` properties.</span></span> <span data-ttu-id="9331a-107">Для всех остальных свойств требуются области применения.</span><span class="sxs-lookup"><span data-stu-id="9331a-107">All other properties require Application scopes.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="456c0-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="456c0-106">Properties</span></span>
-| <span data-ttu-id="456c0-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="456c0-107">Property</span></span>     | <span data-ttu-id="456c0-108">Тип</span><span class="sxs-lookup"><span data-stu-id="456c0-108">Type</span></span>   |<span data-ttu-id="456c0-109">Описание</span><span class="sxs-lookup"><span data-stu-id="456c0-109">Description</span></span>|
-|:---------------|:--------|:----------|
-|<span data-ttu-id="456c0-110">externalId</span><span class="sxs-lookup"><span data-stu-id="456c0-110">externalId</span></span>|<span data-ttu-id="456c0-111">String</span><span class="sxs-lookup"><span data-stu-id="456c0-111">String</span></span>| <span data-ttu-id="456c0-112">Идентификатор преподавателя в исходной системе.</span><span class="sxs-lookup"><span data-stu-id="456c0-112">ID of the teacher in the source system.</span></span>|
-|<span data-ttu-id="456c0-113">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="456c0-113">teacherNumber</span></span>|<span data-ttu-id="456c0-114">String</span><span class="sxs-lookup"><span data-stu-id="456c0-114">String</span></span>|<span data-ttu-id="456c0-115">Номер преподавателя.</span><span class="sxs-lookup"><span data-stu-id="456c0-115">Teacher number.</span></span>|
+## <a name="properties"></a><span data-ttu-id="9331a-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="9331a-108">Properties</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="456c0-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="456c0-116">JSON representation</span></span>
+| <span data-ttu-id="9331a-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="9331a-109">Property</span></span>      | <span data-ttu-id="9331a-110">Тип</span><span class="sxs-lookup"><span data-stu-id="9331a-110">Type</span></span>   | <span data-ttu-id="9331a-111">Описание</span><span class="sxs-lookup"><span data-stu-id="9331a-111">Description</span></span>                                  |
+| :------------ | :----- | :------------------------------------------- |
+| <span data-ttu-id="9331a-112">externalId</span><span class="sxs-lookup"><span data-stu-id="9331a-112">externalId</span></span>    | <span data-ttu-id="9331a-113">String</span><span class="sxs-lookup"><span data-stu-id="9331a-113">String</span></span> | <span data-ttu-id="9331a-114">Идентификатор преподавателя во внешней исходной системе.</span><span class="sxs-lookup"><span data-stu-id="9331a-114">Id of the Teacher in external source system.</span></span> |
+| <span data-ttu-id="9331a-115">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="9331a-115">teacherNumber</span></span> | <span data-ttu-id="9331a-116">String</span><span class="sxs-lookup"><span data-stu-id="9331a-116">String</span></span> | <span data-ttu-id="9331a-117">Номер преподавателя.</span><span class="sxs-lookup"><span data-stu-id="9331a-117">Teacher number.</span></span>                              |
 
-<span data-ttu-id="456c0-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="456c0-117">The following is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9331a-118">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="9331a-118">JSON representation</span></span>
+
+<span data-ttu-id="9331a-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9331a-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -44,7 +47,6 @@ ms.locfileid: "42500018"
   "externalId": "String",
   "teacherNumber": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
