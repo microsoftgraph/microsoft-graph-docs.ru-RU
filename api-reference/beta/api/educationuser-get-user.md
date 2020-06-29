@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: abe72b4221e30a0616b22ddcfe56859ebce75ab8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e60c09210d649b57cef19099de25561eaa07c2a
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423884"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909590"
 ---
 # <a name="get-user"></a>Получение пользователя
 
@@ -20,8 +20,8 @@ ms.locfileid: "42423884"
 
 Получение простого каталога **user**, который соответствует этому объекту **educationUser**.
 
->[!Note]
->Если используется делегированный маркер, участники могут видеть только сведения о своих учебных заведениях. В данном случае используйте ресурс `...beta/education/me/schools`.
+> [!NOTE]
+> Если используется делегированный маркер, участники могут видеть только сведения о своей учетной записи. В данном случае используйте ресурс `beta/education/me/users`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,12 +29,14 @@ ms.locfileid: "42423884"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                               |
 | :------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic, EduRoster.Read или EduRoster.Write плюс Directory.Read.All или User.Read |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                            |
+| Делегированное (рабочая или учебная учетная запись)     | EduRoster.ReadBasic, EduRoster.Read или EduRoster.Write плюс Directory.Read.All или User.Read |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                                            |
 | Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All                                       |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/me/user
 GET /education/users/{id}/user
@@ -44,13 +46,13 @@ GET /education/users/{id}/user
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Required. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [user](../resources/user.md) в теле отклика.
 
@@ -61,22 +63,28 @@ GET /education/users/{id}/user
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationuser"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/user
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -86,8 +94,7 @@ GET https://graph.microsoft.com/beta/education/me/user
 
 Ниже приведен пример отклика.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
-
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -95,6 +102,7 @@ GET https://graph.microsoft.com/beta/education/me/user
   "@odata.type": "microsoft.graph.user",
   "isCollection": false
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

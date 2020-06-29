@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7da5972914685c5342870a9e4993bb17dc988eec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b010d56f52080e54383e1b89553060780da63cc0
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423611"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909606"
 ---
 # <a name="list-schools"></a>Перечисление учебных заведений
 
@@ -20,21 +20,23 @@ ms.locfileid: "42423611"
 
 Получение списка учебных заведений для этого пользователя.
 
->[!Note]
->Если используется делегированный маркер, участники могут видеть только сведения о своих учебных заведениях. В данном случае используйте ресурс `...beta/education/me/schools`.
-
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированное (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
+> [!NOTE]
+> При использовании делегированных разрешений возвращаются только те ресурсы educationSchool, которые является членом пользователя проверки подлинности.
+
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/me/schools
 GET /education/users/{id}/schools
@@ -48,13 +50,13 @@ GET /education/users/{id}/schools
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Required. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationSchool](../resources/educationschool.md) в теле отклика.
 
@@ -65,22 +67,28 @@ GET /education/users/{id}/schools
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_schools"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/schools
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -90,7 +98,7 @@ GET https://graph.microsoft.com/beta/education/me/schools
 
 Ниже приведен пример отклика.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -98,6 +106,7 @@ GET https://graph.microsoft.com/beta/education/me/schools
   "@odata.type": "microsoft.graph.educationSchool",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

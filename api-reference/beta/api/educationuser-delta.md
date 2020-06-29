@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 37dc85ae1c907aaa1cf43428e7ad19188e7c053d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 408fb43dbad69cbb699db899522cf938e84ec904
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423926"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909559"
 ---
 # <a name="educationuser-delta"></a>educationUser: Delta
 
@@ -22,12 +22,12 @@ ms.locfileid: "42423926"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)     |
 | :------------------------------------- | :---------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                                  |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                  |
+| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается.                                  |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                  |
 | Для приложений                            | EduRoster. Read. ALL или EduRoster. Вритеврите. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,9 +50,12 @@ POST /education/schools/{id}/users/{id}/delta
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [educationUser](../resources/educationuser.md) в тексте отклика.
+
+> [!IMPORTANT]
+> разность educationUser не включает удаленных пользователей.
 
 ## <a name="example"></a>Пример
 
@@ -75,7 +78,7 @@ POST https://graph.microsoft.com/v1.0/education/me/delta
 
 Ниже приведен пример отклика.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

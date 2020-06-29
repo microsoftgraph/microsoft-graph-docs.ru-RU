@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c62905699b8986d9594ccad06d154d93b71313fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e113575745e50f52571636f37a7a2d4c93a9924
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533475"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909774"
 ---
 # <a name="teamstab-resource-type"></a>Тип ресурса teamsTab
 
@@ -38,7 +38,7 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
 |  id              |   string                  |  Идентификатор, который уникальным образом определяет определенный экземпляр вкладки канала. только чтение.     |
 |  displayName            |   string                  |  Имя вкладки.     |
 |  webUrl          |   string                  |  URL-адрес глубокой ссылки для экземпляра вкладки. Только для чтения.     |
-|  конфигурацион        |   [теамстабконфигуратион](teamstabconfiguration.md) |  Контейнер для настраиваемых параметров, применяемых к вкладке. Вкладка считается настроенной только после задания этого свойства.     |
+|  configuration        |   [теамстабконфигуратион](teamstabconfiguration.md) |  Контейнер для настраиваемых параметров, применяемых к вкладке. Вкладка считается настроенной только после задания этого свойства.     |
 
 ## <a name="relationships"></a>Связи
 
@@ -46,7 +46,7 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md) | Приложение, связанное с вкладкой. Его нельзя изменить после создания вкладки. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -64,7 +64,6 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
   "webUrl": "string",
   "configuration" : "teamsTabConfiguration"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

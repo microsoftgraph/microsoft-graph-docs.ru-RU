@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 74dfe42bc48757ffe8799a033dfebf2df61f913d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c5d73738a24e0ffd21b259c58ce44cbe000c54df
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519850"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909732"
 ---
 # <a name="teamstab-resource-type"></a>Тип ресурса teamsTab
 
@@ -41,7 +41,7 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
 |  teamsAppId           |   string             |  Идентификатор определения приложения вкладки. Это значение нельзя изменить после создания вкладки.     |
 |  сортордериндекс  |   string                  |  Индекс заказа, используемого для сортировки вкладок.     |
 |  webUrl          |   string                  |  URL-адрес глубокой ссылки для экземпляра вкладки. Только для чтения.     |
-|  конфигурацион        |   [теамстабконфигуратион](teamstabconfiguration.md) |  Контейнер для настраиваемых параметров, применяемых к вкладке. Вкладка считается настроенной только после задания этого свойства.     |
+|  configuration        |   [теамстабконфигуратион](teamstabconfiguration.md) |  Контейнер для настраиваемых параметров, применяемых к вкладке. Вкладка считается настроенной только после задания этого свойства.     |
 
 ## <a name="relationships"></a>Связи
 
@@ -49,7 +49,7 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md) | Приложение, связанное с вкладкой. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -70,7 +70,6 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
   "configuration": "teamsTabConfiguration",
   "name": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

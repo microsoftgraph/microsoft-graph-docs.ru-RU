@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 67baa3f5a57e968b53ae3f51a6c49b3743be25a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 208527c1b846a307b88e3f96204dba660caedb9a
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500949"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909564"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
 
@@ -35,27 +35,27 @@ ms.locfileid: "42500949"
 | [Удаление пользователя](../api/educationschool-delete-users.md)                      | [educationUser](educationuser.md)                | Удаление **educationUser** из учебного заведения через свойство навигации **users**.      |
 | [Получение administrativeUnit](../api/educationschool-get-administrativeunit.md) | [administrativeUnit](administrativeunit.md)      | Получение **administrativeUnit** , соответствующего этому **educationSchool**.                |
 | [Обновление](../api/educationschool-update.md)                                 | [educationSchool](educationschool.md)            | Обновление объекта **educationSchool**.                                                       |
-| [удаление](../api/educationschool-delete.md);                                 | Нет                                             | Удаление объекта **educationSchool**.                                                       |
+| [Delete](../api/educationschool-delete.md)                                 | Нет                                             | Удаление объекта **educationSchool**.                                                       |
 | [Delta](../api/educationschool-delta.md)                                   | Коллекция [educationSchool](educationschool.md) | Получение добавочных изменений для **едукатионсчулс**                                            |
 
 ## <a name="properties"></a>Свойства
 
-| Свойство            | Тип                                  | Описание                                        |
-| :------------------ | :------------------------------------ | :------------------------------------------------- |
-| id                  | Строка                                | GUID этого учебного заведения.                               |
-| address             | [physicalAddress](physicaladdress.md) | Адрес учебного заведения.                             |
-| createdBy           | [identitySet](identityset.md)         | Объект, который создал учебное заведение.                     |
-| description         | String                                | Описание учебного заведения.                         |
-| displayName         | Строка                                | Отображаемое имя учебного заведения.                        |
-| externalId          | String                                | Идентификатор учебного заведения в системе синхронизации.                    |
-| externalPrincipalId | String                                | Идентификатор директора в системе синхронизации.                 |
-| externalSource      | string                                | Только для чтения. Возможные значения: `sis` или `manual`. |
-| highestGrade        | String                                | Самый старший класс.                              |
-| lowestGrade         | String                                | Самый младший класс.                               |
-| phone               | String                                | Номер телефона учебного заведения.                            |
-| principalEmail      | String                                | Адрес электронной почты директора.                    |
-| principalName       | String                                | Имя директора.                             |
-| schoolNumber        | String                                | Номер школы.                                     |
+| Свойство            | Тип                                  | Описание                                               |
+| :------------------ | :------------------------------------ | :-------------------------------------------------------- |
+| id                  | Строка                                | GUID этого учебного заведения.                                      |
+| address             | [physicalAddress](physicaladdress.md) | Адрес учебного заведения.                                    |
+| createdBy           | [identitySet](identityset.md)         | Объект, который создал учебное заведение.                            |
+| description         | String                                | Описание учебного заведения.                                |
+| displayName         | Строка                                | Отображаемое имя учебного заведения.                               |
+| externalId          | String                                | Идентификатор учебного заведения в системе синхронизации.                           |
+| externalPrincipalId | String                                | Идентификатор директора в системе синхронизации.                        |
+| externalSource      | String                                | Только для чтения. Возможные значения: `sis` , `lms` или `manual` . |
+| highestGrade        | String                                | Самый старший класс.                                     |
+| lowestGrade         | String                                | Самый младший класс.                                      |
+| phone               | String                                | Номер телефона учебного заведения.                                   |
+| principalEmail      | String                                | Адрес электронной почты директора.                           |
+| principalName       | String                                | Имя директора.                                    |
+| schoolNumber        | String                                | Номер школы.                                            |
 
 ## <a name="relationships"></a>Связи
 
@@ -76,7 +76,6 @@ ms.locfileid: "42500949"
 ],
 "@odata.type": "microsoft.graph.educationSchool"
 }-->
-
 
 ```json
 {
@@ -105,7 +104,7 @@ ms.locfileid: "42500949"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [ 
-    "Error: Resource educationSchool has documented navigation properties, but we thought it was a complex type!" 
-  ]  
+  "suppressions": [
+    "Error: Resource educationSchool has documented navigation properties, but we thought it was a complex type!"
+  ]
 }-->

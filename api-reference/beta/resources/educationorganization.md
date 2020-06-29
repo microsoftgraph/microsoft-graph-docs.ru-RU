@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 8652e6841c39442d8b9875ea48c785a0275073ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 015b1c886f439e3c5952d1c1a5fcce02fb21773b
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501488"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909655"
 ---
 # <a name="educationorganization-resource-type"></a>Тип ресурса educationOrganization
 
@@ -18,18 +18,19 @@ ms.locfileid: "42501488"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Абстрактный объект, используемый для моделирования сходства между различными типами организаций в секторе образования.  
+Абстрактный объект, используемый для моделирования сходства между различными типами организаций в секторе образования.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|description|String| Описание организации.|
-|displayName|Строка| Отображаемое имя Организации.|
-|externalSource|string| Источник, из которого была создана данная организация. Возможные значения: `sis`, `manual`, `unknownFutureValue`.|
+
+| Свойство       | Тип   | Описание                                                                       |
+| :------------- | :----- | :-------------------------------------------------------------------------------- |
+| description    | String | Описание организации.                                                         |
+| displayName    | Строка | Отображаемое имя Организации.                                                        |
+| externalSource | String | Источник для создания пользователя. Возможные значения: `sis` , `lms` , или `manual` . |
 
 ## <a name="relationships"></a>Связи
-Отсутствуют.
 
+Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -49,7 +50,6 @@ ms.locfileid: "42501488"
   "displayName": "String",
   "externalSource": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

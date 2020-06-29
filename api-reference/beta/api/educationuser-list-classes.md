@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a95a63a1f24fc3ac2e2bf2513348eeace3e5d5c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f572c642caffe8c944fc3c81eba4a5fc6a4a37ad
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423758"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909536"
 ---
 # <a name="list-classes"></a>Перечисление курсов
 
@@ -18,67 +18,77 @@ ms.locfileid: "42423758"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов курсов. Примечание. Если используется делегированный маркер, участники могут видеть сведения только о своих курсах. 
-
-<!-- Please verify the revision to the delegated token text. -->
+Получение коллекции ресурсов educationClass.
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированное (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+
+> [!NOTE]
+> При использовании делегированных разрешений возвращаются только те ресурсы educationClass, которые является членом пользователя проверки подлинности.
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/me/classes
 GET /education/users/{id}/classes
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Required. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationClass](../resources/educationclass.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_classes"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/classes
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-classes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-classes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -86,9 +96,9 @@ GET https://graph.microsoft.com/beta/education/me/classes
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -96,6 +106,7 @@ GET https://graph.microsoft.com/beta/education/me/classes
   "@odata.type": "microsoft.graph.educationClass",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -118,7 +129,7 @@ Content-length: 277
       "externalName": "Health Level 1",
       "externalSource": "sis",
       "mailNickname": "fineartschool.net"
-    } 
+    }
   ]
 }
 ```

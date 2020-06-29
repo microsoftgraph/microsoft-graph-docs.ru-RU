@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9b8f2de9f3b40a72aab7f9273b9b4fc30594059b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e64899cf56140246373c36428518ebd28bb136c7
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500767"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909725"
 ---
 # <a name="educationstudent-resource-type"></a>Тип ресурса educationStudent
 
@@ -20,17 +20,21 @@ ms.locfileid: "42500767"
 
 Дополнительные сведения, добавляемые в объект [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `student`.
 
-## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|birthDate|Date| Дата рождения учащегося.|
-|externalId|String| Идентификатор учащегося в исходной системе.|
-|gender|едукатионжендер| Возможные значения: `female`, `male`, `other`.|
-|оценка|String|Текущий уровень оценок учащегося.|
-|graduationYear|String| Год выпуска учащегося из школы.|
-|studentNumber|String| Student Number.|
+> [!IMPORTANT]
+> При использовании делегированных областей разрешений Graph будет возвращать только `externalId` Свойства. Для всех остальных свойств требуются области применения.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="properties"></a>Свойства
+
+| Свойство       | Тип            | Описание                                     |
+| :------------- | :-------------- | :---------------------------------------------- |
+| birthDate      | Date            | Дата рождения учащегося.                      |
+| externalId     | String          | Идентификатор учащегося в исходной системе.         |
+| gender         | едукатионжендер | Возможные значения: `female`, `male`, `other`. |
+| оценка          | String          | Текущий уровень оценок учащегося.             |
+| graduationYear | String          | Год выпуска учащегося из школы. |
+| studentNumber  | String          | Student Number.                                 |
+
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

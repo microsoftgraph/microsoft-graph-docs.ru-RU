@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e2b63cd90478eb199d30137a171846fa2c832e2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66407bfab66888af413c1e830702991294456c4c
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423863"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909571"
 ---
 # <a name="get-educationuser"></a>Получение educationUser
 
@@ -22,20 +22,24 @@ ms.locfileid: "42423863"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+> [!NOTE]
+> Если используется делегированный маркер, участники могут видеть только сведения о своей учетной записи. В данном случае используйте ресурс `beta/education/me/users`.
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированное (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
->[!IMPORTANT]
->При использовании делегированных областей разрешений Graph будет возвращать только `id`ограниченный набор свойств:, `primaryRole`, `accountEnabled`, `displayName` `givenName` `surname` `userPrincipalName`,,,, `userType`,. `onPremisesInfo` Если для приложения требуются дополнительные свойства, необходимо использовать области разрешений приложения.
+> [!IMPORTANT]
+> При использовании делегированных областей разрешений Graph будет возвращать только ограниченный набор свойств:,,,,,,,,, `id` `primaryRole` `accountEnabled` `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` , `teacher/externalId` . Если для приложения требуются дополнительные свойства, необходимо использовать области разрешений приложения.
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/me
 GET /education/users/{id}
@@ -49,13 +53,13 @@ GET /education/users/{id}
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Required. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвратит код отклика `200 OK` и объект [educationUser](../resources/educationuser.md) в теле отклика.
 
@@ -71,19 +75,23 @@ GET /education/users/{id}
   "blockType": "request",
   "name": "get_educationuser"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/users/13012
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -91,15 +99,16 @@ GET https://graph.microsoft.com/beta/education/users/13012
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationUser"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

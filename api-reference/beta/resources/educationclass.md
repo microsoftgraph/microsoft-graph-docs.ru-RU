@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: dca4ee263418c098194cf37ac66bc6659b9d6061
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 22f354ff86e055d40a7112cdc71a63fed5e5e5fb
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895687"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909690"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -53,8 +53,8 @@ ms.locfileid: "44895687"
 | displayName    | Строка                                | Название курса.                                                                      |
 | externalId     | String                                | Идентификатор курса из системы синхронизации.                                                |
 | externalName   | String                                | Название курса в системе синхронизации.                                                |
-| externalSource | string                                | Способ создания этого курса. Возможные значения: `sis`, `manual`, `unknownFutureValue`. |
-| оценка          | string                                | Уровень категории класса.                                                               |
+| externalSource | String                                | Способ создания этого курса. Возможные значения: `sis`, `manual`, `lms`. |
+| оценка          | String                                | Уровень категории класса.                                                               |
 | mailNickname   | String                                | Почтовое имя для отправки почты всем участникам, если это возможно.                         |
 | term           | [educationTerm]                       | Термин для класса.                                                                     |
 
@@ -105,7 +105,7 @@ ms.locfileid: "44895687"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [ 
+  "suppressions": [
     "Error: Resource educationClass has documented navigation properties, but we thought it was a complex type!",
     "Resource educationClass has documented navigation properties, but we thought it was a complex type!"
   ]
