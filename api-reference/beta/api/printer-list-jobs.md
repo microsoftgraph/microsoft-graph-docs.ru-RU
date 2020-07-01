@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1f09e91c88e83127e86d441b2c6537d85729b4b6
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 2f0f539f902bd1b83c8efd046af35b0deb28ed05
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44251102"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006704"
 ---
 # <a name="list-jobs"></a>Список заданий
 
@@ -21,15 +21,15 @@ ms.locfileid: "44251102"
 Получение списка заданий печати, связанных с [принтером](../resources/printer.md).
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
+Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать, разрешение, предоставляющее доступ к [принтеру](printer-get.md) , а также одно из разрешений, перечисленных в следующей таблице.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Сервер приложений|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)| Users. Read. ALL |
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений| PrintJob. ReadBasic. ALL, PrintJob. Read. ALL, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,13 +40,13 @@ GET /print/printers/{id}/jobs
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
-### <a name="exceptions"></a>Исключения
+### <a name="exceptions"></a>Exceptions
 Некоторые операторы не поддерживаются: `$count` , `$search` , `$filter` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/jobs
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: de4e793a224466738773f959892a31b002737f92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b946638c4d433e8cae6c6459ac434041c17f7bb
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453767"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990299"
 ---
 # <a name="get-schema"></a>Получение схемы
 
@@ -24,12 +24,12 @@ ms.locfileid: "42453767"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,13 +48,13 @@ GET /external/connections/{id}/schema
 
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Required. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [схемы](../resources/schema.md) в тексте отклика.
 
@@ -108,16 +108,21 @@ Content-type: application/json
   "baseType": "microsoft.graph.externalItem",
   "properties": [
     {
-      "name": "title",
+      "name": "ticketTitle",
       "type": "String",
       "isSearchable": true,
-      "isRetrievable": true
+      "isRetrievable": true,
+      "labels": [
+        "title"
+      ]
     },
     {
       "name": "priority",
       "type": "String",
       "isQueryable": true,
-      "isRetrievable": true
+      "isRetrievable": true,
+      "isRefinable": true,
+      "isSearchable": false
     },
     {
       "name": "assignee",

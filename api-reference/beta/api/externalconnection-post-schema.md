@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: af5756277ddcf41a04ebed795ceeb4f1f0e3d08e
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: afb23aece15371a408c79f2fea3d47861aa5c427
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892558"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990012"
 ---
 # <a name="create-schema"></a>Создание схемы
 
@@ -24,12 +24,12 @@ ms.locfileid: "42892558"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,21 +44,21 @@ POST /external/connections/{id}/schema
 
 | Имя                  | Описание                                                        |
 |:----------------------|:-------------------------------------------------------------------|
-| Авторизация         | Bearer {токен}. Обязательный.                                          |
-| Content-Type          | application/json. Обязательный.                                        |
-| Предпочитать: ответ — Async | Используйте этот параметр, чтобы запрос выполнялся асинхронно. Необязательное свойство. |
+| Авторизация         | Bearer {token}. Required.                                          |
+| Content-Type          | application/json. Required.                                        |
+| Предпочитать: ответ — Async | Используйте этот параметр, чтобы запрос выполнялся асинхронно. Необязательный параметр. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [схемы](../resources/schema.md) в формате JSON.
 
-При регистрации настраиваемой схемы `schema` элемента объекту должно быть присвоено `baseType` свойство, которое `microsoft.graph.externalItem` должно содержать `properties` свойство. `properties` Объект должен содержать по крайней мере одно свойство (не более 64).
+При регистрации настраиваемой схемы элемента `schema` объекту должно быть `baseType` присвоено свойство, которое `microsoft.graph.externalItem` должно содержать `properties` свойство. `properties`Объект должен содержать по крайней мере одно свойство (не более 64).
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Если `Prefer: respond-async` заголовок включен в запрос, в случае успешного выполнения этот метод возвращает код `202 Accepted` ОТКЛИКА и URL-адрес в `Location` заголовке ответа, который можно использовать для [получения состояния операции](../api/connectionoperation-get.md).
+`Prefer: respond-async`Если заголовок включен в запрос, в случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и URL-адрес в `Location` заголовке ответа, который можно использовать для [получения состояния операции](../api/connectionoperation-get.md).
 
-Без `Prefer: respond-async` заголовка, включенного в запрос (при успешном выполнении) Этот метод `201 Created` возвращает код отклика и новый объект [Schema](../resources/schema.md) в тексте отклика.
+Без `Prefer: respond-async` заголовка, включенного в запрос (при успешном выполнении) Этот метод возвращает `201 Created` код отклика и новый объект [Schema](../resources/schema.md) в тексте отклика.
 
 > [!NOTE]
 > Создание схемы — длительный процесс, который может допустить превышение времени ожидания шлюза. Рекомендуется использовать `Prefer: respond-async` заголовок, чтобы избежать ошибок времени ожидания.
@@ -86,16 +86,21 @@ Prefer: respond-async
   "baseType": "microsoft.graph.externalItem",
   "properties": [
     {
-      "name": "title",
+      "name": "ticketTitle",
       "type": "String",
       "isSearchable": "true",
-      "isRetrievable": "true"
+      "isRetrievable": "true",
+      "labels": [
+        "title"
+      ]
     },
     {
       "name": "priority",
       "type": "String",
       "isQueryable": "true",
-      "isRetrievable": "true"
+      "isRetrievable": "true",
+      "isRefinable": "true",
+      "isSearchable": "false"
     },
     {
       "name": "assignee",

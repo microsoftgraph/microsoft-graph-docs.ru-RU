@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: ce7bf6140b831c3e911ebb744106840ae8e027a8
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 255be26ed669e91248df1b007dc56b937ce2af98
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217082"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006888"
 ---
 # <a name="printer-resource-type"></a>Тип ресурса Printer
 
@@ -24,9 +24,10 @@ ms.locfileid: "44217082"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение принтера](../api/printer-get.md) | [Printer](printer.md) | Чтение свойств и связей объекта Printer. |
-| [обновление](../api/printer-update.md). | [Printer](printer.md) | Обновление объекта Printer. |
-| [удаление](../api/printer-delete.md); | Нет | Отмените регистрацию физического принтерфром в универсальной службе печати. |
+| [Создание](../api/printer-create.md); | [принтеркреатеоператион](printerCreateOperation.md) | Создание (регистрация) нового принтера с универсальной печатью. |
+| [Get](../api/printer-get.md) | [Printer](printer.md) | Чтение свойств и связей объекта Printer. |
+| [Update](../api/printer-update.md) | [Printer](printer.md) | Обновление объекта Printer. |
+| [Delete](../api/printer-delete.md) | Нет | Отмените регистрацию физического принтерфром в универсальной службе печати. |
 | [getCapabilities](../api/printer-getcapabilities.md) | [принтеркапабилитиес](printercapabilities.md) | Получение списка возможностей принтера. |
 | [ресетдефаултс](../api/printer-resetdefaults.md) | Нет | Сброс параметров принтера по умолчанию. |
 | [Список заданий](../api/printer-list-jobs.md) | Коллекция [printJob](printjob.md) | Получение списка заданий печати, помещенных в очередь для обработки принтером. |
@@ -62,7 +63,7 @@ ms.locfileid: "44217082"
 |алловедусерс|Коллекция [принтусеридентити](printuseridentity.md)|Пользователи, у которых есть доступ к печати с помощью принтера.|
 |алловедграупс|[принтидентити](printidentity.md)|Группы, у которых пользователи имеют доступ к печати с помощью принтера.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

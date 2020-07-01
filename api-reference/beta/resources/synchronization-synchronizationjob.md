@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 18c8076a55643289e8ef33fa4316cd224abfe02e
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 890da6054328da8619ede99de925b941bd41e20a
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217544"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006963"
 ---
 # <a name="synchronizationjob-resource-type"></a>Тип ресурса Синчронизатионжоб
 
@@ -24,17 +24,17 @@ ms.locfileid: "43217544"
 
 | Метод        | Возвращаемый тип               | Описание                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[List](../api/synchronization-synchronizationjob-list.md)             |Коллекция [синчронизатионжоб](synchronization-synchronizationjob.md)  |Перечисление существующих заданий для определенного экземпляра приложения (субъекта-службы).|
+|[Список](../api/synchronization-synchronizationjob-list.md)             |Коллекция [синчронизатионжоб](synchronization-synchronizationjob.md)  |Перечисление существующих заданий для определенного экземпляра приложения (субъекта-службы).|
 |[Получение Синчронизатионжоб](../api/synchronization-synchronizationjob-get.md) | [синчронизатионжоб](synchronization-synchronizationjob.md) |Чтение свойств и связей объекта Синчронизатионжоб.|
-|[создание](../api/synchronization-synchronizationjob-post.md);         |[синчронизатионжоб](synchronization-synchronizationjob.md)   |Создание нового задания для определенного приложения.|
+|[Создание](../api/synchronization-synchronizationjob-post.md);         |[синчронизатионжоб](synchronization-synchronizationjob.md)   |Создание нового задания для определенного приложения.|
 |[Начало](../api/synchronization-synchronizationjob-start.md)          |Нет   |Запуск синхронизации. Если задание приостановлено, оно продолжается с того места, где было приостановлено задание. Если задание находится в карантине, статус карантина очищается.|
 |[Restart](../api/synchronization-synchronizationjob-restart.md)      |Нет   |Принудительно запустить задание и повторно обработать все объекты в каталоге.|
 |[Pause](../api/synchronization-synchronizationjob-pause.md)          |Нет   |Временная остановка синхронизации. Все ход выполнения, включая состояние задания, хранятся, а задание продолжится с того места, где оно было отключено при выполнении [начального](../api/synchronization-synchronizationjob-start.md) вызова.|
-|[удаление](../api/synchronization-synchronizationjob-delete.md);        |Нет   |Остановите синхронизацию и окончательно удалите все состояния, связанные с заданием.|
+|[Delete](../api/synchronization-synchronizationjob-delete.md)        |Нет   |Остановите синхронизацию и окончательно удалите все состояния, связанные с заданием.|
 |[Получение Синчронизатионсчема](../api/synchronization-synchronizationschema-get.md)    |[синчронизатионсчема](synchronization-synchronizationschema.md)   |Получение действующей схемы синхронизации задания.|
 |[Обновление Синчронизатионсчема](../api/synchronization-synchronizationschema-update.md)    |Нет   |Обновите схему синхронизации задания. |
 |[Проверка учетных данных](../api/synchronization-synchronizationjob-validatecredentials.md)|Нет|Проверка предоставленных учетных данных в целевом каталоге.|
-
+|[провисионондеманд](../api/synchronization-synchronizationjob-provision-on-demand.md)|Коллекция [синчронизатионжобаппликатионпараметерс](../resources/synchronization-synchronizationjobapplicationparameters.md)|Представляет объекты, которые будут подготовлены к работе, и выполняемые правила синхронизации. Ресурс в основном используется для подготовки по требованию. |
 ## <a name="properties"></a>Свойства
 
 | Свойство      | Тип      | Описание    |
@@ -50,7 +50,7 @@ ms.locfileid: "43217544"
 |:---------------|:--------|:----------|
 |схемы|[синчронизатионсчема](synchronization-synchronizationschema.md)| Схема синхронизации, настроенная для задания.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

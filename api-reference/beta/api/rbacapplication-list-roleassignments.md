@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dba161cbfbf6b14f477e9f156858b59d555833b7
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 525fa925ae3c953908138de2e2d61ff921df057f
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216861"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45007124"
 ---
 # <a name="list-unifiedroleassignments"></a>Список Унифиедролеассигнментс
 
@@ -22,12 +22,12 @@ ms.locfileid: "43216861"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -40,19 +40,19 @@ GET /roleManagement/directory/roleAssignments
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Для `$filter` выполнения этой операции требуется параметр запроса. Вы можете отфильтровать `roleDefinitionId` по `principalId` свойствам или. `roleDefinitionId` Свойство может быть идентификатором объекта Role или шаблоном роли. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Для выполнения этой операции требуется `$filter` параметр запроса. Вы можете отфильтровать `roleDefinitionId` по `principalId` свойствам или. `roleDefinitionId`Свойство может быть идентификатором объекта Role или шаблоном роли. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [унифиедролеассигнмент](../resources/unifiedroleassignment.md) в тексте отклика.
 
@@ -72,7 +72,7 @@ GET /roleManagement/directory/roleAssignments
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '62e90394-69f5-4237-9190-012177145e10'
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '62e90394-69f5-4237-9190-012177145e10'&$expand=principal
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roleassignments-csharp-snippets.md)]
@@ -105,49 +105,105 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments(principal())",
     "value": [
         {
-            "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-            "id": "lAPpYvVpN0KRkAEhdxReEGm3jqnUe4lEhvatluHVi2I-1",
+            "id": "lAPpYvVpN0KRkAEhdxReEMmO4KwRqtpKkUWt3wOYIz4-1",
+            "principalId": "ace08ec9-aa11-4ada-9145-addf0398233e",
+            "resourceScope": "/",
+            "directoryScopeId": "/",
             "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
-            "principalId": "a98eb769-7bd4-4489-86f6-ad96e1d58b62",
-            "directoryScopeId": "/"
+            "principal": {
+                "@odata.type": "#microsoft.graph.user",
+                "id": "ace08ec9-aa11-4ada-9145-addf0398233e",
+                "deletedDateTime": null,
+                "accountEnabled": true,
+                "ageGroup": null,
+                "businessPhones": [],
+                "city": "Redmond",
+                "createdDateTime": "2019-02-22T20:29:07Z",
+                "creationType": null,
+                "companyName": null,
+                "consentProvidedForMinor": null,
+                "country": "US",
+                "department": "Office of the CEO",
+                "displayName": "Joey Cruz",
+                "employeeId": null,
+                "faxNumber": null,
+                "givenName": "Joey",
+                "imAddresses": [
+                    "joeyc@woodgrove.ms"
+                ],
+                "infoCatalogs": [],
+                "isResourceAccount": null,
+                "jobTitle": "Chief Security Officer",
+                "legalAgeGroupClassification": null,
+                "mail": "joeyc@woodgrove.ms",
+                "mailNickname": "joeyc",
+                "mobilePhone": null,
+                "onPremisesDistinguishedName": null,
+                "officeLocation": null,
+                "userType": "Member",   
+
+            }
         },
         {
-            "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-            "id": "lAPpYvVpN0KRkAEhdxReEGnbHktRMANMpnGtLZ3MXeY-1",
+            "id": "lAPpYvVpN0KRkAEhdxReEC6Xh29-LklLmYDrOIi9z-E-1",
+            "principalId": "6f87972e-2e7e-4b49-9980-eb3888bdcfe1",
+            "resourceScope": "/",
+            "directoryScopeId": "/",
             "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
-            "principalId": "4b1edb69-3051-4c03-a671-ad2d9dcc5de6",
-            "directoryScopeId": "/"
+            "principal": {
+                "@odata.type": "#microsoft.graph.user",
+                "id": "6f87972e-2e7e-4b49-9980-eb3888bdcfe1",
+                "deletedDateTime": null,
+                "accountEnabled": true,
+                "ageGroup": null,
+                "businessPhones": [],
+                "city": null,
+                "createdDateTime": "2019-07-18T01:38:36Z",
+                "creationType": "Invitation",
+                "companyName": null,
+                "consentProvidedForMinor": null,
+                "country": null,
+                "department": null,
+                "displayName": "Kalyan Krishna",
+                "employeeId": null,
+                "faxNumber": null,
+                "givenName": null,
+                "imAddresses": [],
+                "userType": "Guest",
+    
+            }
         },
         {
-            "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-            "id": "lAPpYvVpN0KRkAEhdxReEKLh1vKaL9NIi6cTuyyN_6Q-1",
+            "id": "lAPpYvVpN0KRkAEhdxReEMgc_BA2rIZBuZsM-BSqLdU-1",
+            "principalId": "10fc1cc8-ac36-4186-b99b-0cf814aa2dd5",
+            "resourceScope": "/",
+            "directoryScopeId": "/",
             "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
-            "principalId": "f2d6e1a2-2f9a-48d3-8ba7-13bb2c8dffa4",
-            "directoryScopeId": "/"
-        },
-        {
-            "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-            "id": "lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1",
-            "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
-            "principalId": "4ab0b690-479b-47ff-af8f-2576cf521872",
-            "directoryScopeId": "/"
-        },
-        {
-            "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-            "id": "lAPpYvVpN0KRkAEhdxReEGXxIcn3O7hBqaGB0NGuCwE-1",
-            "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
-            "principalId": "c921f165-3bf7-41b8-a9a1-81d0d1ae0b01",
-            "directoryScopeId": "/"
-        },
-        {
-            "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-            "id": "lAPpYvVpN0KRkAEhdxReEAWO6-FSXqhEg1mkkLETmA8-1",
-            "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
-            "principalId": "e1eb8e05-5e52-44a8-8359-a490b113980f",
-            "directoryScopeId": "/"
+            "principal": {
+                "@odata.type": "#microsoft.graph.user",
+                "id": "10fc1cc8-ac36-4186-b99b-0cf814aa2dd5",
+                "deletedDateTime": null,
+                "accountEnabled": true,
+                "ageGroup": null,
+                "businessPhones": [],
+                "city": null,
+                "createdDateTime": "2019-11-13T21:54:27Z",
+                "creationType": "Invitation",
+                "companyName": null,
+                "consentProvidedForMinor": null,
+                "country": null,
+                "department": null,
+                "displayName": "Markie Downing",
+                "employeeId": null,
+                "faxNumber": null,
+                "givenName": null,
+                "imAddresses": [],
+                "userType": "Guest",
+        
+            }
         }
     ]
 }
@@ -167,7 +223,7 @@ Content-type: application/json
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId eq 'a98eb769-7bd4-4489-86f6-ad96e1d58b62'
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter = principalId eq 'f1847572-48aa-47aa-96a3-2ec61904f41f'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roleassignments-csharp-snippets.md)]
@@ -203,53 +259,18 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments",
     "value": [
         {
-            "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-            "id": "lAPpYvVpN0KRkAEhdxReEGm3jqnUe4lEhvatluHVi2I-1",
-            "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
-            "principalId": "a98eb769-7bd4-4489-86f6-ad96e1d58b62",
-            "directoryScopeId": "/"            
+            "id": "lAPpYvVpN0KRkAEhdxReEHJ1hPGqSKpHlqMuxhkE9B8-1",
+            "principalId": "f1847572-48aa-47aa-96a3-2ec61904f41f",
+            "resourceScope": "/",
+            "directoryScopeId": "/",
+            "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10"
         },
         {
-            "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-            "id": "uBph6InB6EaU4WAhOrH4FGm3jqnUe4lEhvatluHVi2I-1",
-            "roleDefinitionId": "e8611ab8-c189-46e8-94e1-60213ab1f814",
-            "principalId": "a98eb769-7bd4-4489-86f6-ad96e1d58b62",
-            "directoryScopeId": "/"            
-        },
-        {
-            "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-            "id": "5wuT_mJe20eRr5jDpJo4sWm3jqnUe4lEhvatluHVi2I-1",
-            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
-            "principalId": "a98eb769-7bd4-4489-86f6-ad96e1d58b62",
-            "directoryScopeId": "/"            
-        },
-        {
-            "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-            "id": "5TgczyE2BECny4eWJNztfGm3jqnUe4lEhvatluHVi2I-1",
-            "roleDefinitionId": "cf1c38e5-3621-4004-a7cb-879624dced7c",
-            "principalId": "a98eb769-7bd4-4489-86f6-ad96e1d58b62",
-            "directoryScopeId": "/"            
-        },
-        {
-            "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-            "id": "CRCUdVqRaUir52kb_xgnnmm3jqnUe4lEhvatluHVi2I-1",
-            "roleDefinitionId": "75941009-915a-4869-abe7-691bff18279e",
-            "principalId": "a98eb769-7bd4-4489-86f6-ad96e1d58b62",
-            "directoryScopeId": "/"            
-        },
-        {
-            "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-            "id": "4yeYchSc90m7G5YI8Va7uGm3jqnUe4lEhvatluHVi2I-1",
-            "roleDefinitionId": "729827e3-9c14-49f7-bb1b-9608f156bbb8",
-            "principalId": "a98eb769-7bd4-4489-86f6-ad96e1d58b62",
-            "directoryScopeId": "/"            
-        },
-        {
-            "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-            "id": "y-RKGSaxskC9W2CRs4CXfWm3jqnUe4lEhvatluHVi2I-1",
-            "roleDefinitionId": "194ae4cb-b126-40b2-bd5b-6091b380977d",
-            "principalId": "a98eb769-7bd4-4489-86f6-ad96e1d58b62",
-            "directoryScopeId": "/"
+            "id": "LJnv8vs6uUa3z6Em7nTEUXJ1hPGqSKpHlqMuxhkE9B8-1",
+            "principalId": "f1847572-48aa-47aa-96a3-2ec61904f41f",
+            "resourceScope": "/",
+            "directoryScopeId": "/",
+            "roleDefinitionId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
         }
     ]
 }

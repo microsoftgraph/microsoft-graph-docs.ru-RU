@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: b0af3f7443b77920804f5868fe9ecc3f8b4cec41
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 551fa42736d6fa275a8f998274a6fccf55ac00b7
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217089"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006977"
 ---
 # <a name="print-resource-type"></a>Тип ресурса Print
 
@@ -28,6 +28,7 @@ ms.locfileid: "44217089"
 | [Список общих папок](../api/print-list-shares.md) | Коллекция [принтершаре](printershare.md) | Получение списка общих принтеров. |
 | [Список служб](../api/print-list-services.md) | Коллекция [принтсервице](printservice.md) | Получение списка служб. |
 | [Создание Принтершаре](../api/print-post-shares.md) | [принтершаре](printershare.md) | Создайте новый общий ресурс для принтера, отправив его в коллекцию **shares** . |
+| [Создание принтера](../api/printer-create.md) | [принтеркреатеоператион](printerCreateOperation.md) | Создание (регистрация) нового принтера с универсальной печатью. |
 | [Обновление параметров](../api/print-update-settings.md) |  [принтсеттингс](printsettings.md) | Обновляет параметры на уровне клиента для универсальной службы печати. |
 
 ## <a name="properties"></a>Свойства
@@ -41,8 +42,9 @@ ms.locfileid: "44217089"
 |служб|Коллекция [принтсервице](printservice.md)|Список доступных конечных точек универсальной службы печати.|
 |типографи|Коллекция [принтеров](printer.md)|Список принтеров, зарегистрированных в клиенте.|
 |shares|Коллекция [принтершаре](printershare.md)|Список общих принтеров, зарегистрированных в клиенте.|
+|аудиовыход|Коллекция [принтконнектор](printconnector.md)|Список доступных соединителей печати.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

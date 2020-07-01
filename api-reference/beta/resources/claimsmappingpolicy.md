@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 26596e9e1ea4dc39f233a89fbf6cbf0da0085c5a
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: a7f173cc8949dd0cf493620e08b5fdc5c61b8afb
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916271"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45007012"
 ---
 # <a name="claimsmappingpolicy-resource-type"></a>Тип ресурса Клаимсмаппингполици
 
@@ -38,13 +38,16 @@ ms.locfileid: "43916271"
 | [Обновление Клаимсмаппингполици](../api/claimsmappingpolicy-update.md) | Нет | Обновление объекта Клаимсмаппингполици. |
 | [Удаление Клаимсмаппингполици](../api/claimsmappingpolicy-delete.md) | Нет | Удаление объекта Клаимсмаппингполици. |
 | [Список appliesTo](../api/claimsmappingpolicy-list-appliesto.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка Директорйобжектс, к которым применена эта политика. |
+| [Назначение типа ресурса claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md) | Нет | Назначьте Клаимсмаппингполици объекту [servicePrincipal](serviceprincipal.md) . |
+| [Список назначенных Клаимсмаппингполици](../api/serviceprincipal-list-claimsmappingpolicies.md) | Коллекция [claimsMappingPolicy](claimsmappingpolicy.md) | Перечисление объектов Клаимсмаппингполици, назначенных объекту [servicePrincipal](serviceprincipal.md) . |
+| [Удаление типа ресурса claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md) | Нет | Удаление объекта Клаимсмаппингполици из объекта [servicePrincipal](serviceprincipal.md) . |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Уникальный идентификатор для этой политики. Только для чтения.|
-|RDLC|Коллекция объектов string| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики. Ниже приведены дополнительные сведения о схеме JSON для этого свойства. Обязательный.|
+|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики. Ниже приведены дополнительные сведения о схеме JSON для этого свойства. Обязательный.|
 |description|String| Описание для этой политики.|
 |displayName|Строка| Отображаемое имя для этой политики. Обязательный.|
 |исорганизатиондефаулт|Boolean|Игнорировать это свойство. Политика сопоставления утверждений может применяться только к субъектам служб и не может быть настроена глобально для Организации.|
@@ -96,7 +99,7 @@ ms.locfileid: "43916271"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Версия|Целое число|Установите значение 1. Обязательный.|
+|Версия|Integer|Установите значение 1. Обязательный.|
 |инклудебасикклаимсет|Boolean|Если задано значение true, все утверждения в базовом наборе утверждений порождаются в маркерах, на которые влияет политика. Если задано значение false, утверждения в базовом наборе утверждений не входят в маркеры, если они не добавлены по отдельности в свойство Клаимссчема той же политики.|
 |клаимссчема|Объект JSON|Определяет, какие утверждения присутствуют в маркерах, на которые влияет политика, а также базовый набор утверждений и основной набор утверждений. Для каждой записи схемы утверждений, определенной в этом свойстве, требуются определенные сведения. Укажите, откуда берутся данные (в виде значения или источника/идентификатора), и какие утверждения данные выдаются как (тип утверждения). Дополнительные сведения можно найти в [определении клаимссчема](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-schema).|
 |клаимстрансформатион|Объект JSON| Определяет общие преобразования, которые можно применять к исходным данным для создания выходных данных для утверждений, указанных в Клаимссчема. Дополнительные сведения можно найти в [определении клаимстрансформатион](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation).|

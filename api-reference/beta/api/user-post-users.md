@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4329429d0927b2d97fb606891870d850b4807b93
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 7df3bf4670ee231a12e06427a9d2ca424ec3aef8
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107411"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006921"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -18,7 +18,8 @@ ms.locfileid: "43107411"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание [пользователя](../resources/user.md). В теле запроса указан пользователь, которого нужно создать. Вам нужно указать как минимум обязательные свойства для пользователя. При необходимости вы можете указать другие записываемые свойства.
+Create a new [user](../resources/user.md).
+The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
 
 Эта операция по умолчанию возвращает только подмножество свойств для каждого пользователя. Эти свойства по умолчанию указаны в разделе [Свойства](../resources/user.md#properties). Чтобы получить свойства, которые не возвращаются по умолчанию, выполните [операцию GET](user-get.md) и укажите их в параметре запроса OData `$select`.
 
@@ -27,7 +28,7 @@ ms.locfileid: "43107411"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,7 +44,7 @@ POST /users
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
@@ -55,7 +56,7 @@ POST /users
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
 |accountEnabled |Boolean |Значение true, если учетная запись включена; в противном случае — false.|
-|displayName |строка |Имя, которое следует отобразить в адресной книге для пользователя.|
+|displayName |string |Имя, которое следует отобразить в адресной книге для пользователя.|
 |onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Пароль для профиля пользователя.|
@@ -115,7 +116,7 @@ Content-type: application/json
 ---
 
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >[!NOTE]
@@ -155,8 +156,6 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {  
   "blockType": "request",   
   "name": "create_user_from_users_identities"   
@@ -186,31 +185,18 @@ Content-type: application/json
     }
   ],
   "passwordProfile" : {
-    "password": "password-value"
+    "password": "password-value",
+    "forceChangePasswordNextSignIn": false
   },
   "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-user-from-users-identities-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-user-from-users-identities-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-identities-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика. 
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

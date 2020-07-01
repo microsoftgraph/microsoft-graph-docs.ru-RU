@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f0b607527ed6ef3347404010a27608f6e8df8dd6
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 7f66bb02a1cb38757e18c31004c67dea7bea7b37
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991763"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990292"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>Перечисление объектов unifiedRoleAssignmentMultiple
 
@@ -22,12 +22,12 @@ ms.locfileid: "43991763"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC. Read. ALL, DeviceManagementRBAC. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись) | DeviceManagementRBAC. Read. ALL, DeviceManagementRBAC. ReadWrite. ALL |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | DeviceManagementRBAC. Read. ALL, DeviceManagementRBAC. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -39,20 +39,19 @@ GET /roleManagement/deviceManagement/roleAssignments
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-
-Для `$filter` выполнения этой операции требуется параметр запроса. Вы можете отфильтровать `roleDefinitionId` по `principalId` свойствам или. `roleDefinitionId` Свойство может быть идентификатором объекта Role или шаблоном роли. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Вы можете отфильтровать `roleDefinitionId` по `principalId` свойствам или. `roleDefinitionId`Свойство может быть идентификатором объекта Role или шаблоном роли. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя | Описание |
 |:---- |:----------- |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Required. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) в тексте отклика.
 
@@ -74,7 +73,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

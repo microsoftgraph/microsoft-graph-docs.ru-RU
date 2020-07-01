@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 149c131ee38dc802de8845729ae1266a74eb8e4d
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 143898e33e3e3474bd5caf0d7855ff19a15e4e13
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917364"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006970"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>Тип ресурса Токенлифетимеполици
 
@@ -34,13 +34,16 @@ ms.locfileid: "43917364"
 | [Обновление Токенлифетимеполици](../api/tokenlifetimepolicy-update.md) | Нет | Обновление объекта Токенлифетимеполици. |
 | [Удаление Токенлифетимеполици](../api/tokenlifetimepolicy-delete.md) | Нет | Удаление объекта Токенлифетимеполици. |
 | [Список appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка Директорйобжектс, к которым применена эта политика. |
+| [Назначение типа ресурса tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md) | Нет | Назначьте объект Токенлифетимеполици объекту [Application](application.md) или [servicePrincipal](serviceprincipal.md) . |
+| [Список назначенных Токенлифетимеполици](../api/application-list-tokenlifetimepolicies.md) | Коллекция [tokenLifetimePolicy](tokenlifetimepolicy.md) | Перечисление объектов Токенлифетимеполици, назначенных [приложению](application.md) или объекту [servicePrincipal](serviceprincipal.md) . |
+| [Удаление типа ресурса tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md) | Нет | Удаление объекта Токенлифетимеполици из [приложения](application.md) или объекта [servicePrincipal](serviceprincipal.md) . |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Уникальный идентификатор для этой политики. Только для чтения.|
-|RDLC|Коллекция объектов string| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики. Ниже приведены дополнительные сведения о схеме JSON для этого свойства. Обязательный.|
+|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики. Ниже приведены дополнительные сведения о схеме JSON для этого свойства. Обязательный.|
 |description|String| Описание для этой политики.|
 |displayName|Строка| Отображаемое имя для этой политики. Обязательный.|
 |исорганизатиондефаулт|Boolean|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
@@ -65,7 +68,7 @@ ms.locfileid: "43917364"
 | Свойство     | Тип   |Описание| Минимальное значение | Максимальное значение | Значение по умолчанию|
 |:---------------|:--------|:----------|:--------|:--------|:----|
 |акцесстокенлифетиме|String|Управляет тем, как долго считаются действительными маркеры доступа и ИДЕНТИФИКАТОРы.|10 минут|1 день|1 час|
-|Версия|Целое число|Установите значение 1. Обязательный.|Нет|Нет|Нет|
+|Версия|Integer|Установите значение 1. Обязательный.|Нет|Нет|Нет|
 
 ## <a name="relationships"></a>Связи
 
