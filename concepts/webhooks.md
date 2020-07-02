@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 295f62aeba919fde1384642755b0c51816527d91
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 7db6b2498d039a4f6474b530023a9f4c0e199119
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897080"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44989781"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -65,11 +65,11 @@ The Microsoft Graph API uses a webhook mechanism to deliver change notifications
 
 - Квоты максимальной подписки:
 
-  - На приложение: 50 000 подписок всего
-  - На клиента: 1000 подписок всего во всех приложениях
+  - Для каждого приложения (для всех клиентов): 50 000 всего подписок
+  - Для каждого клиента (для всех приложений в совокупности): 1000 всего подписок для всех приложений
   - На сочетание приложения и клиента: 100 подписок всего
 
-Если ограничения превышены, попытки создать подписку приведут к [ответу с ошибкой](errors.md) - `403 Forbidden`. Свойство `message` указывает, какое ограничение превышено.
+При превышении какого-либо ограничения попытки создать подписку приведут к возникновению [ошибки](errors.md)  -  `403 Forbidden` . Свойство `message` указывает, какое ограничение превышено.
 
 - Клиенты Azure AD B2C не поддерживаются.
 

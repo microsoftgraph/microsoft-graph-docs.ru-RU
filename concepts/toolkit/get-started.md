@@ -3,12 +3,12 @@ title: Начало работы с набором средств Microsoft Grap
 description: Приступите к работе с набором инструментов Microsoft Toolkit в вашем приложении.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 1537a686d25d885a898603ca576f688abdaab3e4
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 2e352a71b7e1f068bfb6dbd13a6ed151dd1b84b0
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639935"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45007068"
 ---
 # <a name="get-started-with-the-microsoft-graph-toolkit"></a>Начало работы с набором средств Microsoft Graph
 
@@ -89,8 +89,60 @@ npm install @microsoft/mgt
 
 Если вы используете модули ES6 из пакета NPM, не забудьте включить в проект только те, которые не включены автоматически. Дополнительные сведения [см.](https://www.webcomponents.org/polyfills)
 
-Если вы используете скрипт МГТ-лоадер. js из пакета в унпкг, то эти функции уже включены.
+Если вы используете mgt-loader.js скрипт из пакета в унпкг, то эти функции уже включены.
 
+### <a name="sharepoint"></a>SharePoint
+
+Если вы планируете поддерживать IE11 в веб SPFx, в следующей процедуре описаны действия, необходимые для обеспечения совместимости между браузерами: 
+
+1. Установите следующие пакеты:
+```cmd
+npm install -D babel-loader @babel/core @babel/preset-env webpack
+npm install -D @webcomponents/webcomponentsjs regenerator-runtime core-js
+npm install @microsoft/mgt
+```
+
+2. Вставьте следующий файл конфигурации в gulpfile.js над build.iniтиалзе (gulp);
+```ts
+build.configureWebpack.mergeConfig({
+  additionalConfiguration: (generatedConfiguration) => {
+    generatedConfiguration.module.rules.push(
+      {
+        test: /\.m?js$/, use:
+        {
+          loader: "babel-loader",
+          options:
+          {
+            presets: [["@babel/preset-env",
+              {
+                targets: {
+                  "ie": "11"
+                }
+              }]]
+          }
+        }
+      }
+    );
+
+    return generatedConfiguration;
+  }
+});
+```
+
+
+3. В файле * WebPart. TS импортируйте указанные ниже части перед импортом поставщиков.
+```ts
+import 'regenerator-runtime/runtime';
+import 'core-js/es/number';
+import 'core-js/es/math';
+import 'core-js/es/string';
+import 'core-js/es/date';
+import 'core-js/es/array';
+import 'core-js/es/regexp';
+import '@webcomponents/webcomponentsjs/webcomponents-bundle.js';
+```
+
+Дополнительные сведения см. в разделе [поставщик SharePoint](./providers/sharepoint.md).
 
 ## <a name="using-the-components-with-react-angular-and-other-frameworks"></a>Использование компонентов с реагирует, радиально и другими платформами
 
@@ -100,7 +152,7 @@ npm install @microsoft/mgt
 
 ### <a name="react"></a>React
 
-Реагирует, что все данные передаются в настраиваемые элементы формы HTML Attributes. Для примитивных данных это нормально, но не работает при передаче форматированных данных, таких как объекты или массивы. В этих случаях для передачи объекта потребуется использовать `ref` объект.
+Реагирует, что все данные передаются в настраиваемые элементы формы HTML Attributes. Для примитивных данных это нормально, но не работает при передаче форматированных данных, таких как объекты или массивы. В этих случаях для передачи объекта потребуется использовать объект `ref` .
 
 Пример
 
@@ -148,13 +200,13 @@ declare global {
 }
 ```
 
-Затем вы можете использовать его в целевом параметре как `<mgt-login></mgt-login>`.
+Затем вы можете использовать его в целевом параметре как `<mgt-login></mgt-login>` .
 
 ### <a name="angular"></a>Angular
 
 Синтаксис привязки по умолчанию в радиальной системе всегда будет задавайте свойства элемента. Это хорошо подходит для сложных данных, таких как объекты и массивы, а также для примитивных значений.
 
-Прежде чем использовать настраиваемые элементы, включите в него `app.module.ts` `CUSTOM_ELEMENT_SCHEMA` `@NgModule() decorator`настраиваемые элементы, как показано в следующем примере.
+Прежде чем использовать настраиваемые элементы, включите в него настраиваемые элементы `app.module.ts` `CUSTOM_ELEMENT_SCHEMA` `@NgModule() decorator` , как показано в следующем примере.
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -172,7 +224,7 @@ import { AppComponent } from './app.component';
 export class AppModule {}
 ```
 
-Затем вы можете импортировать компонент, который вы хотите использовать, в файле Component \*. TS.
+Затем вы можете импортировать компонент, который вы хотите использовать, в файле Component \* . TS.
 
 ```ts
 import { Component } from '@angular/core';
@@ -195,3 +247,4 @@ export class AppComponent {
 ```html
 <mgt-person [personDetails]="person" show-name></mgt-person>
 ```
+

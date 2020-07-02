@@ -1100,7 +1100,7 @@ items:
                 href: api/bookingbusiness-post-customers.md
               - name: Получение
                 href: api/bookingcustomer-get.md
-              - name: Update
+              - name: Обновление
                 href: api/bookingcustomer-update.md
               - name: Delete
                 href: api/bookingcustomer-delete.md
@@ -1113,7 +1113,7 @@ items:
                 href: api/bookingbusiness-post-services.md
               - name: Получение
                 href: api/bookingservice-get.md
-              - name: Update
+              - name: Обновление
                 href: api/bookingservice-update.md
               - name: Удаление
                 href: api/bookingservice-delete.md
@@ -1126,7 +1126,7 @@ items:
                 href: api/bookingbusiness-post-staffmembers.md
               - name: Получение
                 href: api/bookingstaffmember-get.md
-              - name: Update
+              - name: Обновление
                 href: api/bookingstaffmember-update.md
               - name: Delete
                 href: api/bookingstaffmember-delete.md
@@ -1145,7 +1145,7 @@ items:
                     href: api/print-list-connectors.md
                   - name: Получение
                     href: api/printconnector-get.md
-                  - name: Update
+                  - name: Обновление
                     href: api/printconnector-update.md
                   - name: Delete
                     href: api/printconnector-delete.md
@@ -1160,11 +1160,18 @@ items:
                     href: api/printjob-startprintjob.md
                   - name: Отменить
                     href: api/printjob-cancelprintjob.md
+              - name: Операция печати
+                href: resources/printoperation.md
+                items:
+                  - name: Получение
+                    href: api/printoperation-get.md
               - name: Принтер
                 href: resources/printer.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/print-list-printers.md
+                  - name: Создание
+                    href: api/printer-create.md
                   - name: Получение
                     href: api/printer-get.md
                   - name: Удаление
@@ -1200,7 +1207,7 @@ items:
                     href: api/print-post-shares.md
                   - name: Получение
                     href: api/printershare-get.md
-                  - name: Update
+                  - name: Обновление
                     href: api/printershare-update.md
                   - name: Delete
                     href: api/printershare-delete.md
@@ -1259,7 +1266,7 @@ items:
                 items:
                   - name: Получение
                     href: api/print-get-settings.md
-                  - name: Update
+                  - name: Обновление
                     href: api/print-update-settings.md
           - name: Корпоративное управление
             href: resources/intune-graph-overview.md
@@ -1917,7 +1924,7 @@ items:
                   - name: Управляемые мобильные бизнес-приложения
                     href: resources/intune-apps-managedmobilelobapp.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-managedmobilelobapp-list.md
                       - name: Получение
                         href: api/intune-apps-managedmobilelobapp-get.md
@@ -1928,7 +1935,7 @@ items:
                   - name: Приложение Microsoft Store для бизнеса
                     href: resources/intune-apps-microsoftstoreforbusinessapp.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-apps-microsoftstoreforbusinessapp-list.md
                       - name: Получение
                         href: api/intune-apps-microsoftstoreforbusinessapp-get.md
@@ -2145,7 +2152,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-apps-symanteccodesigningcertificate-get.md
-                      - name: Обновление
+                      - name: Update
                         href: api/intune-apps-symanteccodesigningcertificate-update.md
                   - name: Состояние установки приложения пользователем
                     href: resources/intune-apps-userappinstallstatus.md
@@ -5544,7 +5551,7 @@ items:
                   - name: Общая конфигурация Windows 10 для совместной работы
                     href: resources/intune-deviceconfig-windows10teamgeneralconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
@@ -5559,7 +5566,7 @@ items:
                   - name: "Конфигурация VPN для Windows\_10"
                     href: resources/intune-deviceconfig-windows10vpnconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-windows10vpnconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-windows10vpnconfiguration-get.md
@@ -9227,7 +9234,7 @@ items:
                     href: api/phoneauthenticationmethod-update.md
                   - name: Delete
                     href: api/phoneauthenticationmethod-delete.md
-                  - name: Add
+                  - name: Добавление
                     href: api/authentication-post-phonemethods.md
                   - name: Включение входа в SMS
                     href: api/phoneauthenticationmethod-enablesmssignin.md
@@ -10074,24 +10081,33 @@ items:
                     href: api/serviceprincipal-delete-owners.md
               - name: Политики
                 items:
-                  - name: Назначение типа ресурса claimsMappingPolicy
-                    href: api/serviceprincipal-post-claimsmappingpolicies.md
-                  - name: Перечисление типов ресурсов claimsMappingPolicy
-                    href: api/serviceprincipal-list-claimsmappingpolicies.md
-                  - name: Удаление типа ресурса claimsMappingPolicy
-                    href: api/serviceprincipal-delete-claimsmappingpolicies.md
-                  - name: Назначение типа ресурса homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                  - name: Перечисление типов ресурсов homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-                  - name: Удаление типа ресурса homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-                  - name: Назначение типа ресурса tokenLifetimePolicy
-                    href: api/application-post-tokenlifetimepolicies.md
-                  - name: Перечисление типов ресурсов tokenLifetimePolicy
-                    href: api/application-list-tokenlifetimepolicies.md
-                  - name: Удаление типа ресурса tokenLifetimePolicy
-                    href: api/application-delete-tokenlifetimepolicies.md
+                  - name: Политика сопоставления утверждений
+                    href: resources/claimsmappingpolicy.md
+                    items:
+                      - name: Назначение политик сопоставления утверждений
+                        href: api/serviceprincipal-post-claimsmappingpolicies.md
+                      - name: Список политик сопоставления утверждений
+                        href: api/serviceprincipal-list-claimsmappingpolicies.md
+                      - name: Удаление политик сопоставления утверждений
+                        href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                  - name: Политика обнаружения домашней области
+                    href: resources/homerealmdiscoverypolicy.md
+                    items:
+                      - name: Назначение политик обнаружения домашней области
+                        href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+                      - name: Список политик обнаружения домашней области
+                        href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+                      - name: Удаление политик обнаружения домашней области
+                        href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: Политика времени существования маркера
+                    href: resources/tokenlifetimepolicy.md
+                    items:
+                      - name: Назначение политик времени жизни маркеров
+                        href: api/application-post-tokenlifetimepolicies.md
+                      - name: Политики времени существования маркеров списка
+                        href: api/application-list-tokenlifetimepolicies.md
+                      - name: Удаление политик времени существования маркеров
+                        href: api/application-delete-tokenlifetimepolicies.md
               - name: Единый вход
                 items:
                   - name: Создание учетных данных единого входа для пароля
@@ -10138,6 +10154,8 @@ items:
                     href: api/synchronization-synchronizationjob-restart.md
                   - name: Удаление задания
                     href: api/synchronization-synchronizationjob-delete.md
+                  - name: Подготовка по запросу
+                    href: api/synchronization-synchronizationjob-provision-on-demand.md
               - name: Схема
                 href: resources/synchronization-synchronizationschema.md
                 items:
@@ -11045,7 +11063,7 @@ items:
       - name: Поиск (предварительный просмотр)
         displayname: Microsoft Search API
         items:
-          - name: Query
+          - name: Запрос
             items:
               - name: Обзор
                 href: resources/search-api-overview.md
@@ -11087,11 +11105,13 @@ items:
                 items:
                   - name: Внешний элемент
                     href: resources/externalitem.md
-                  - name: Создание внешнего элемента
+                  - name: Создание
                     href: api/externalconnection-put-items.md
-                  - name: Обновление внешнего элемента
+                  - name: Получение
+                    href: api/externalitem-get.md
+                  - name: Обновление
                     href: api/externalitem-update.md
-                  - name: Удаление внешнего элемента
+                  - name: Удаление
                     href: api/externalitem-delete.md
       - name: Безопасность
         displayname: 'Security API, Microsoft Graph Security API'

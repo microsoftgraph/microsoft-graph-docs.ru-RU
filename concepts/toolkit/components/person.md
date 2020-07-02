@@ -3,12 +3,12 @@ title: Компонент Person в наборе инструментов Micros
 description: Компонент Person используется для отображения человека или контакта, используя фотографию, имя и/или адрес электронной почты.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e08e98a29ab454dca546d0fda34b8292ad97bf2d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 7fc3430755c08662186e235cd83d8790968f9ae3
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681881"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990243"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент Person в наборе инструментов Microsoft Graph
 
@@ -84,6 +84,7 @@ mgt-person {
   --font-size: 14px;
   --font-weight: 500;
   --color: black;
+  --background-color: #ffffff;
   --text-transform: none;
   --line2-font-size: 12px;
   --line2-font-weight: 400;
@@ -99,7 +100,7 @@ mgt-person {
 
 `mgt-person`Компонент поддерживает несколько [шаблонов](../templates.md) , позволяющих заменить определенные части компонента. Чтобы указать шаблон, включите элемент в `<template>` компонент и задайте `data-type` для него одно из следующих значений:
 
-| Тип данных | Контекст данных | Description |
+| Тип данных | Контекст данных | Описание |
 | --------- | ------------ | ----------- |
 | загрузки | Нет | Шаблон, который будет отображаться, пока компонент находится в состоянии лаодинг. |
 | нет данных | Нет | Шаблон для отображения при отсутствии изображения или данных, доступных для пользователя. | 
@@ -141,7 +142,7 @@ mgt-person {
 
 Этот элемент управления использует указанные ниже API и разрешения Microsoft Graph.
 
-| Resource                                                                                                    | Permission     |
+| Ресурс                                                                                                    | Permission     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
 | [/ме](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
 | [/ме/фото/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
