@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a770cfe7d30c3480e2e6a81dd3c8f9c10d480452
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: 7d3600799233da9f83dc9510b6f83708d68965bc
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44524646"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006961"
 ---
 # <a name="get-callrecord"></a>Получение callRecord
 
@@ -18,15 +18,20 @@ ms.locfileid: "44524646"
 
 Получение свойств и связей объекта [каллрекорд](../resources/callrecords-callrecord.md) .
 
+Существует два способа получения **идентификатора** **каллрекорд**:
+
+* Подпишитесь, чтобы [изменить уведомления](/graph/api/resources/webhooks?view=graph-rest-1.0) для `/communications/callRecords` конечной точки.
+* Используйте свойство **каллчаинид** [вызова](../resources/call.md). Запись вызова доступна только после завершения связанного вызова.
+
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Сервер приложений                            | CallRecords.Read.All |
+| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -95,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}
 
 Ниже приведен пример отклика.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -183,7 +188,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 
 Ниже приведен пример отклика. Если список сеансов усекается, `sessions@odata.nextlink` будет предоставлено значение для получения следующей страницы сеансов.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
