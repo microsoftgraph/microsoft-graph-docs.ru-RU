@@ -5,12 +5,12 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 2d6c49fcdb0a25c0c15fce6c7f7ae0880a3968dd
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
-ms.translationtype: HT
+ms.openlocfilehash: 641b1f8b6288073a6079d2777bd30f8277467bed
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892627"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44989819"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>Индексирование данных с помощью API Поиска (Майкрософт)
 
@@ -48,8 +48,11 @@ ms.locfileid: "42892627"
 - Приложение может выполнять до четырех одновременных операций с подключением.
 - Емкость подключений ограничена до 700 000 элементов, или примерно 70 ГБ данных.
 - Максимальный размер объекта `externalItem` составляет 4 МБ.
-- Уточнение и сортировка результатов не поддерживается.
+- Сортировка результатов не поддерживается.
 - Результаты ранжируются наилучшим возможным способом.
+
+## <a name="whats-new"></a>Новые возможности
+Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

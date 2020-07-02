@@ -1,19 +1,22 @@
 ---
 title: Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
-description: Запросы изменений позволяют приложениям обнаруживать новые, обновленные и удаленные сущности, не считывая целевой ресурс полностью при каждом запросе. Приложения Microsoft Graph могут использовать запросы изменений, чтобы эффективно синхронизировать изменения с локальным хранилищем данных.
+description: Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 47d28c4bced21ad182acc9c04452f7172f5b821b
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
-ms.translationtype: HT
+ms.openlocfilehash: 7e969858b7537ea36189d24c449803d2a00b125e
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557887"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990040"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
-Запросы изменений позволяют приложениям обнаруживать новые, обновленные и удаленные сущности, не считывая целевой ресурс полностью при каждом запросе. Приложения Microsoft Graph могут использовать запросы изменений, чтобы эффективно синхронизировать изменения с локальным хранилищем данных.
+Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
+
+> [!div class="nextstepaction"]
+> [Руководство: использование уведомлений об изменениях и отслеживание изменений с помощью Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
 
 ## <a name="use-delta-query-to-track-changes-in-a-resource-collection"></a>Отслеживание изменений в коллекции ресурсов с помощью запроса изменений
 
@@ -22,40 +25,43 @@ ms.locfileid: "43557887"
 1. Для начала приложение выполняет запрос GET с функцией delta для нужного ресурса.
 2. Microsoft Graph отправит ответ, содержащий нужный ресурс и [маркер состояния](#state-tokens).
 
-     -  Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса могли быть получены не все страницы данных. Для получения всех страниц данных приложение продолжает отправлять запросы, используя URL-адрес `nextLink`, пока в отклик не будет включен URL-адрес `deltaLink`.
+     a.  If a `nextLink` URL is returned, there may be additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL to retrieve all pages of data until a `deltaLink` URL is returned in the response.
 
-     - Если возвращается URL-адрес `deltaLink`, это означает, что больше нет данных о текущем состоянии ресурса. В последующих запросах приложение использует URL-адрес `deltaLink`, чтобы узнавать об изменениях ресурса.
+     b.  If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the `deltaLink` URL to learn about changes to the resource.
 
-3. Когда приложению требуется узнать об изменениях ресурса, оно совершает новый запрос, используя URL-адрес `deltaLink`, полученный на шаге 2. Этот запрос *может* быть совершен сразу по завершении шага 2 или когда приложение проверяет наличие изменений.
+3. When the application needs to learn about changes to the resource, it makes a new request using the `deltaLink` URL received in step 2. This request *may* be made immediately after completing step 2 or when the application checks for changes.
 4. Microsoft Graph возвращает описание изменений ресурса с момента последнего запроса вместе с URL-адресом `nextLink` или `deltaLink`.
 
->**Примечание.** Ресурсы, хранящиеся в Azure Active Directory (например, пользователи и группы), поддерживают сценарии "синхронизировать с этого момента". Это позволит пропустить действия 1 и 2 (если вы не хотите получать полное состояние ресурса) и запросить последнюю `deltaLink`. Добавьте `$deltaToken=latest` к функции `delta`, и ответ будет содержать ссылку `deltaLink`, но не будет содержать данные ресурсов.  
+>**Примечание.** Ресурсы, хранящиеся в Azure Active Directory (например, пользователи и группы), поддерживают сценарии "синхронизировать с этого момента". Это позволит пропустить действия 1 и 2 (если вы не хотите получать полное состояние ресурса) и запросить последнюю `deltaLink`. Добавьте `$deltaToken=latest` к функции `delta`, и ответ будет содержать ссылку `deltaLink`, но не будет содержать данные ресурсов.
 
 >**Примечание:** Функция запроса изменений обычно упоминается путем добавления `/delta` к имени ресурса. Тем не менее, `/delta` - это сокращение для полного имени`/microsoft.graph.delta`, которое вы видите в запросах, генерируемых Microsoft Graph SDK.
 
+>**Примечание:** Исходный запрос функции Дельта-запроса (без разницы или пропущенного маркера) возвратит ресурсы, которые в данный момент существуют в коллекции. Ресурсы, созданные и удаленные перед первоначальным разностным запросом, не будут возвращены. Обновления, выполненные перед первоначальным запросом, обобщены по отношению к ресурсу, возвращенному в качестве его последнего состояния.
+
 ### <a name="state-tokens"></a>Маркеры состояния
 
-Ответ GET на запрос изменений всегда включает URL-адрес, указанный в заголовке `nextLink` или `deltaLink`. URL-адрес `nextLink` включает маркер _skipToken_, а URL-адрес `deltaLink` — _deltaToken_.
+A delta query GET response always includes a URL specified in a `nextLink` or `deltaLink` response header.
+The `nextLink` URL includes a _skipToken_, and a `deltaLink` URL includes a _deltaToken_.
 
-Эти маркеры непрозрачны для клиента. Вот что вам нужно знать о них:
+These tokens are opaque to the client. The following details are what you need to know about them:
 
 - Каждый маркер отражает состояние и представляет моментальный снимок ресурса в этом цикле отслеживания изменений.
 
-- Маркеры состояния также кодируют и включают другие параметры запроса (такие как `$select`), указанные в исходном запросе изменений. Таким образом, не обязательно повторять их в последующих запросах изменений.
+- The state tokens also encode and include other query parameters (such as `$select`) specified in the initial delta query request. Therefore, it's not required to repeat them in subsequent delta query requests.
 
 - Совершая запрос изменений, вы можете скопировать и применить URL-адрес `nextLink` или `deltaLink` при следующем вызове функции **delta**, не проверяя содержимое URL-адреса, в том числе маркер состояния.
 
 ### <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Если клиент использует параметр запроса, он должен быть указан в исходном запросе. Microsoft Graph автоматически кодирует указанный параметр в ссылке `nextLink` или `deltaLink`, указанной в ответе. Вызывающему приложению достаточно один раз указать параметры запроса. Microsoft Graph автоматически добавляет указанные параметры для всех последующих запросов.
+If a client uses a query parameter, it must be specified in the initial request. Microsoft Graph automatically encodes the specified parameter into the `nextLink` or `deltaLink` provided in the response. The calling application only needs to specify the query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
 
 Обратите внимание на общую ограниченную поддержку следующих необязательных параметров запроса:
 
-- `$orderby` 
-    
+- `$orderby`
+
     Не считайте, что разностный запрос возвращает определенную последовательность ответов. Предполагайте, что один и тот же элемент может встречаться в любом месте последовательности `nextLink`, и учитывайте это в логике объединения.
-- `$top` 
-    
+- `$top`
+
     Число объектов на каждой странице зависит от типа ресурса и типа изменений, внесенных в ресурс.
 
 См. сведения о [поддержке параметров разностного запроса](delta-query-messages.md#use-query-parameters-in-a-delta-query-for-messages) для ресурса [message](/graph/api/resources/message?view=graph-rest-1.0).
@@ -65,17 +71,17 @@ ms.locfileid: "43557887"
 - Параметр `$expand` не поддерживается.
 - Параметр `$top` не поддерживается.
 - Параметр `$orderby` не поддерживается.
-- Если используется параметр запроса `$select`, это означает, что клиент предпочитает отслеживать изменения только для тех свойств или связей, которые указаны в операторе `$select`. При изменении свойства, которое не было выбрано, соответствующий ресурс не появится в отклике с различиями при последующем запросе.
+- If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
 - `$select` также поддерживает навигационные свойства `manager` и `members` для пользователей и групп соответственно. Выбор этих свойств позволяет отслеживать изменения руководства и участия в группах для пользователя.
 
-- Фильтры области позволяют отслеживать изменения одного или нескольких конкретных пользователей или групп с помощью идентификатора объекта. Например, следующий запрос возвращает изменения для групп, соответствующих идентификаторам, указанным в фильтре запроса. 
+- Фильтры области позволяют отслеживать изменения одного или нескольких конкретных пользователей или групп с помощью идентификатора объекта. Например, следующий запрос возвращает изменения для групп, соответствующих идентификаторам, указанным в фильтре запроса.
 
 <!-- {
   "blockType": "request",
   "name": "group_delta"
 }-->
 ```http
-https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' 
+https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e'
 ```
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>Представление ресурсов в отклике на разностный запрос
@@ -84,7 +90,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - Обновленные экземпляры представлены **id** и *по крайней мере* обновленными свойствами, но могут быть включены и другие свойства.
 
-- Связи между пользователями и группами представлены в виде заметок к стандартному представлению ресурса. Эти заметки представлены в формате `propertyName@delta`. Они включаются в отклик на исходный разностный запрос.
+- Relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request.
 
 Удаленные экземпляры представлены только свойством **id** и объектом `@removed`. Объект `@removed` может содержать дополнительные сведения о том, почему удален экземпляр. Например, "@removed": {"reason": "changed"}.
 
@@ -94,7 +100,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - *deleted* указывает, что элемент удален и не может быть восстановлен.
 
-Объект `@removed` может возвращаться в отклике на исходный разностный запрос и в отслеживаемых откликах (deltaLink). Клиенты, использующие разностные запросы, должны иметь возможность обрабатывать эти объекты в откликах.
+The `@removed` object can be returned in the initial delta query response and in tracked (deltaLink) responses. Clients using delta query requests should be designed to handle these objects in the responses.
 
 >**Примечание:** Возможно, что одна сущность будет содержаться в ответе несколько раз, если эта сущность менялась несколько раз и при определенных условиях. Запрос изменений позволяют вашему приложению перечислять все изменения, но не могут гарантировать, что объекты объединены в одном ответе.
 
@@ -102,28 +108,28 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 Разностные запросы поддерживаются для указанных ниже ресурсов.
 
-| **Коллекция ресурсов**                                        | **API**                                                                                                                                                                                |
-| :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Приложения                                         | Функция [delta](/graph/api/application-delta) ресурса [application](/graph/api/resources/application)                     |
-| Административные единицы (предварительная версия)                                         | Функция [delta](/graph/api/administrativeunit-delta) ресурса [administrativeUnit](/graph/api/resources/administrativeunit) (предварительная версия)                     |
-| Сообщения чата в канале (предварительная версия)                            | Функция [delta](/graph/api/chatmessage-delta) [chatMessage](/graph/api/resources/chatmessage) |
-| Классы (предварительная версия)                                              | Функция [delta](/graph/api/educationclass-delta) ресурса [educationClass](/graph/api/resources/educationclass) (предварительная версия)                     |
-| Объекты каталога (предварительная версия)                                    | Функция [delta](/graph/api/directoryobject-delta) ресурса [directoryObject](/graph/api/resources/directoryobject) (предварительная версия)        |
-| Перечисление ролей каталога                                                | Функция [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) ресурса [directoryObjects](/graph/api/resources/directoryrole?view=graph-rest-1.0)                           |
-| Элементы на диске\*                                                  | Функция [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) ресурса [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0)                                       |
-| Пользователи образовательных учреждений (предварительная версия)                                      | Функция [delta](/graph/api/educationuser-delta) ресурса [educationUser](/graph/api/resources/educationuser) (предварительная версия)             |
-| События в представлении (диапазоне дат) основного календаря | Функция [delta](/graph/api/event-delta?view=graph-rest-1.0) ресурса [event](/graph/api/resources/event?view=graph-rest-1.0)                                                   |
-| Группы                                                         | Функция [delta](/graph/api/group-delta?view=graph-rest-1.0) ресурса [group](/graph/api/resources/group?view=graph-rest-1.0)                                                   |
-| Папки почты                                                   | Функция [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) ресурса [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)                                    |
-| Сообщения в папке                                           | Функция [delta](/graph/api/message-delta?view=graph-rest-1.0) ресурса [message](/graph/api/resources/message?view=graph-rest-1.0)                                             |
-| Контакты организации | функция[delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) ресурса [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) |
-| OAuth2PermissionGrants (предварительная версия) | Функция [delta](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta) ресурса [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta) (предварительная версия) |
-| Папки личных контактов                                       | Функция [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) ресурса [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0)                           |
-| Личные контакты в папке                                  | Функция [delta](/graph/api/contact-delta?view=graph-rest-1.0) ресурса [contact](/graph/api/resources/contact?view=graph-rest-1.0)    
-| Элементы Planner\*\* (предварительная версия)                                    | Функция [delta](/graph/api/planneruser-list-delta) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser) (предварительный просмотр)|                                         |
-| Учебные заведения (предварительная версия)                                              | Функция [delta](/graph/api/educationschool-delta) ресурса [educationSchool](/graph/api/resources/educationschool) (предварительная версия)                  |
-| Субъекты-службы (предварительная версия)                                   | Функция [delta](/graph/api/serviceprincipal-delta) ресурса [servicePrincipal](/graph/api/resources/serviceprincipal) (предварительная версия)      |
-| Users                                                          | Функция [delta](/graph/api/user-delta?view=graph-rest-1.0) ресурса [user](/graph/api/resources/user?view=graph-rest-1.0) |
+| **Коллекция ресурсов**                                        | **API**                                                                                                                                                                                          |
+|:---------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Приложения                                                   | Функция [delta](/graph/api/application-delta) ресурса [application](/graph/api/resources/application)                                                                                   |
+| Административные единицы (предварительная версия)                                 | Функция [delta](/graph/api/administrativeunit-delta) ресурса [administrativeUnit](/graph/api/resources/administrativeunit) (предварительная версия)                                                    |
+| Сообщения чата в канале (предварительная версия)                           | Функция [delta](/graph/api/chatmessage-delta) [chatMessage](/graph/api/resources/chatmessage)                                                                                            |
+| Классы (предварительная версия)                                              | Функция [delta](/graph/api/educationclass-delta) ресурса [educationClass](/graph/api/resources/educationclass) (предварительная версия)                                                                |
+| Объекты каталога (предварительная версия)                                    | Функция [delta](/graph/api/directoryobject-delta) ресурса [directoryObject](/graph/api/resources/directoryobject) (предварительная версия)                                                             |
+| Перечисление ролей каталога                                                | Функция [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) ресурса [directoryObjects](/graph/api/resources/directoryrole?view=graph-rest-1.0)                                     |
+| Элементы на диске\*                                                  | Функция [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) ресурса [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0)                                                 |
+| Пользователи образовательных учреждений (предварительная версия)                                      | Функция [delta](/graph/api/educationuser-delta) ресурса [educationUser](/graph/api/resources/educationuser) (предварительная версия)                                                                   |
+| События в представлении (диапазоне дат) основного календаря | Функция [delta](/graph/api/event-delta?view=graph-rest-1.0) ресурса [event](/graph/api/resources/event?view=graph-rest-1.0)                                                             |
+| Группы                                                         | Функция [delta](/graph/api/group-delta?view=graph-rest-1.0) ресурса [group](/graph/api/resources/group?view=graph-rest-1.0)                                                             |
+| Папки почты                                                   | Функция [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) ресурса [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)                                              |
+| Сообщения в папке                                           | Функция [delta](/graph/api/message-delta?view=graph-rest-1.0) ресурса [message](/graph/api/resources/message?view=graph-rest-1.0)                                                       |
+| Контакты организации                                        | функция[delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) ресурса [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0)                                              |
+| OAuth2PermissionGrants (предварительная версия)                               | Функция [delta](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta) ресурса [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta) (предварительная версия) |
+| Папки личных контактов                                       | Функция [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) ресурса [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0)                                     |
+| Личные контакты в папке                                  | Функция [delta](/graph/api/contact-delta?view=graph-rest-1.0) ресурса [contact](/graph/api/resources/contact?view=graph-rest-1.0)                                                       |
+| Элементы Planner\*\* (предварительная версия)                                    | Функция [delta](/graph/api/planneruser-list-delta) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser) (предварительный просмотр)                                                     |
+| Учебные заведения (предварительная версия)                                              | Функция [delta](/graph/api/educationschool-delta) ресурса [educationSchool](/graph/api/resources/educationschool) (предварительная версия)                                                             |
+| Субъекты-службы (предварительная версия)                                   | Функция [delta](/graph/api/serviceprincipal-delta) ресурса [servicePrincipal](/graph/api/resources/serviceprincipal) (предварительная версия)                                                          |
+| Users                                                          | Функция [delta](/graph/api/user-delta?view=graph-rest-1.0) ресурса [user](/graph/api/resources/user?view=graph-rest-1.0)                                                                |
 
 
 > \* Небольшие различия в использовании ресурсов OneDrive и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для ресурсов drive будет обновлен в соответствии с запросами для других типов ресурсов.  Дополнительные сведения о текущем синтаксисе см. в статье [Отслеживание изменений для drive](/graph/api/driveitem-delta?view=graph-rest-1.0).
@@ -175,7 +181,7 @@ Content-type: application/json
 
 ### <a name="processing-delays"></a>Задержка обработки
 
-Ожидайте различные задержки между моментом, когда изменения вносятся в экземпляр ресурса, который может быть через интерфейс приложения или API, и временем, когда отслеживаемое изменение отражается в ответе запроса изменений.  
+Ожидайте различные задержки между моментом, когда изменения вносятся в экземпляр ресурса, который может быть через интерфейс приложения или API, и временем, когда отслеживаемое изменение отражается в ответе запроса изменений.
 
 ### <a name="national-clouds"></a>Национальные облачные развертывания
 
@@ -183,7 +189,7 @@ Content-type: application/json
 
 ### <a name="token-duration"></a>Длительность маркера
 
-Токены изменений действительны только в течение определенного периода, прежде чем клиентскому приложению потребуется снова выполнить полную синхронизацию. Ограничение для объектов удостоверений (**directoryObject**, **directoryRole**, **Группа**, **orgContac**, **Пользователь**) составляет 30 дней.
+Токены изменений действительны только в течение определенного периода, прежде чем клиентскому приложению потребуется снова выполнить полную синхронизацию. Для объектов Directory (**Application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **Group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**и **User**) максимальное значение составляет 7 дней. Для объектов образования (**educationSchool**, **educationUser**и **educationClass**) лимит составляет 7 дней.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 

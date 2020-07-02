@@ -4,12 +4,12 @@ description: Throttling limits the number of concurrent calls to a service to pr
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: f2acb34994f0877a051d31e276feb22b2d47179c
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: HT
+ms.openlocfilehash: 7678b364855381eaf5a138b42d6172a6cbd233f4
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682042"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44989935"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -61,6 +61,7 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 - [хранилище (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0).
 - [внешний элемент (Поиск Майкрософт)](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Subscription](/graph/api/resources/subscription)
+- [Отправлен](/graph/api/resources/invitation)
 
 Развернутое описание регулирования в Microsoft Cloud см. в статье [Модель регулирования](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -85,13 +86,13 @@ Microsoft Graph позволяет получать доступ к данным
 
 ### <a name="outlook-service-limits"></a>Ограничения службы Outlook
 
-Ограничения службы Outlook проверяются для каждого идентификатора приложения и сочетания почтового ящика. Иными словами, описываемые ограничения применяются к конкретному приложению, которое получает доступ к определенному почтовому ящику (пользователя или группы). Если приложение превышает ограничение для одного почтового ящика, оно не повлияет на возможность доступа к другому почтовому ящику.
+Ограничения службы Outlook проверяются для каждого идентификатора приложения и сочетания почтового ящика. Иными словами, описываемые ограничения применяются к конкретному приложению, которое получает доступ к определенному почтовому ящику (пользователя или группы). Если приложение превышает ограничение для одного почтового ящика, оно не повлияет на возможность доступа к другому почтовому ящику. Следующие пределы применяются к общедоступному облаку, а также к [облачным облачным развертываниям](/graph/deployments).
 
 | Ограничение                                                      | Сфера применения      |
 |------------------------------------------------------------|-----------------|
 | 10 000 запросов API в течение 10-минутного периода                  | Конечные точки версии 1.0 и бета-версии |
-| 4 параллельных запроса                                      | Конечная точка бета-версии   |
-| Отправка 15 Мбит (PATCH, POST, PUT) в течение 30 секунд. | Конечная точка бета-версии   |
+| 4 параллельных запроса                                      | Конечные точки версии 1.0 и бета-версии   |
+| Отправка 15 Мбит (PATCH, POST, PUT) в течение 30 секунд. | Конечные точки версии 1.0 и бета-версии   |
 
 #### <a name="outlook-service-resources"></a>Ресурсы службы Outlook
 
@@ -157,11 +158,56 @@ Microsoft Graph позволяет получать доступ к данным
 
 См. Также [ограничения Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) и [требования к опросу](/graph/api/resources/teams-api-overview#polling-requirements).
 
-### <a name="microsoft-graph-change-notifications-subscription-operations"></a>Операции подписки на уведомления об изменениях в Microsoft Graph
+### <a name="invitation-manager-service-limits"></a>Пределы службы диспетчера приглашений
 
-Указанные ниже ограничения применяются к любому запросу в `/subscriptions`.
+Указанные ниже ограничения применяются к любому запросу в `/invitations`.
 
-| Операция                 | Ограничение на приложение по клиенту     | Ограничение на приложение по всем клиентам |
-|---------------------------|------------------------------|-----------------------------------|
-| POST, PUT, DELETE, PATCH  | 1000 запросов за 20 секунд | 2000 запросов за 20 секунд      |
-| Все остальные методы HTTP    | 5000 запросов за 20 секунд | 10000 запросов за 20 секунд     |
+| Операция                 | Максимальное количество для каждого клиента             |
+|---------------------------|------------------------------|
+| Любая операция             | 150 запросов в течение 5 секунд   |
+
+<!-- { "blockType": "throttlinggenstart" } -->
+
+### <a name="education-service-limits"></a>Пределы службы образования
+
+[!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
+
+### <a name="excel-service-limits"></a>Пределы для служб Excel
+
+[!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
+
+### <a name="identity-and-access-audit-logs-service-limits"></a>Пределы службы журналов аудита удостоверений и доступа
+
+[!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
+
+### <a name="identity-providers-service-limits"></a>Пределы службы поставщиков удостоверений
+
+[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
+
+### <a name="intune-service-limits"></a>Пределы службы Intune
+
+[!INCLUDE [Intune applications throttling documentation](../includes/throttling-intune-applications.md)]
+[!INCLUDE [Intune books throttling documentation](../includes/throttling-intune-books.md)]
+[!INCLUDE [Intune company terms throttling documentation](../includes/throttling-intune-company-terms.md)]
+[!INCLUDE [Intune device configuration throttling documentation](../includes/throttling-intune-device-configuration.md)]
+[!INCLUDE [Intune device enrollment throttling documentation](../includes/throttling-intune-device-enrollment.md)]
+[!INCLUDE [Intune devices throttling documentation](../includes/throttling-intune-devices.md)]
+[!INCLUDE [Intune enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
+[!INCLUDE [Intune managed applications throttling documentation](../includes/throttling-intune-managed-applications.md)]
+[!INCLUDE [Intune notifications throttling documentation](../includes/throttling-intune-notifications.md)]
+[!INCLUDE [Intune rbac throttling documentation](../includes/throttling-intune-rbac.md)]
+[!INCLUDE [Intune remote assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
+[!INCLUDE [Intune reporting throttling documentation](../includes/throttling-intune-reporting.md)]
+[!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
+[!INCLUDE [Intune troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
+[!INCLUDE [Intune wip throttling documentation](../includes/throttling-intune-wip.md)]
+
+### <a name="skype-service-limits"></a>Пределы для служб Skype
+
+[!INCLUDE [Skype calling throttling documentation](../includes/throttling-skype-calling.md)]
+
+### <a name="subscription-service-limits"></a>Пределы для службы подписки
+
+[!INCLUDE [Subscription services throttling documentation](../includes/throttling-subscription-services.md)]
+
+<!-- { "blockType": "throttlinggenend" } -->

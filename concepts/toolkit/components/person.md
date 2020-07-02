@@ -3,12 +3,12 @@ title: Компонент Person в наборе инструментов Micros
 description: Компонент Person используется для отображения человека или контакта, используя фотографию, имя и/или адрес электронной почты.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 7fc3430755c08662186e235cd83d8790968f9ae3
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: d944fa470b8d0f6baffb56d5cd997fe2a0bd7c91
+ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44990243"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024420"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент Person в наборе инструментов Microsoft Graph
 
@@ -84,7 +84,7 @@ mgt-person {
   --font-size: 14px;
   --font-weight: 500;
   --color: black;
-  --background-color: #ffffff;
+  --presence-background-color: #ffffff;
   --text-transform: none;
   --line2-font-size: 12px;
   --line2-font-weight: 400;
