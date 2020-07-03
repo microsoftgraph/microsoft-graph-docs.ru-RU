@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d7b31b0a27ca96333087d55b3666f97eefdd70b9
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 2e0396ab39339b9f93ba0db9abe0e3a5b83fde89
+ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898053"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024364"
 ---
 # <a name="identityprotectionroot-resource-type"></a>Тип ресурса Идентитипротектионрут
 
@@ -30,7 +30,7 @@ ms.locfileid: "44898053"
 
 Operation | URL-адрес
 :----------|:----
-ПОЛУЧЕНИЕ рискованных пользователей | [GET https://graph.microsoft.com/v1.0/identityProtection/riskyUser](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskyUsers&version=v1.0)
+ПОЛУЧЕНИЕ рискованных пользователей | [GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskyUsers&version=v1.0)
 ПОЛУЧЕНИЕ обнаруженных рисков | [GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskDetections&version=v1.0)
 ПОЛУЧЕНИЕ журнала рисков пользователя | [GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/{riskyUserId}/history](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskyUsers/{riskyUserId}/history&version=v1.0)
 ПОДТВЕРЖДЕНИЕ того, что пользователь скомпрометирован | [Поместитьhttps://graph.microsoft.com/v1.0/identityProtection/riskyUsers/confirmCompromised](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/confirmCompromised&version=v1.0)
