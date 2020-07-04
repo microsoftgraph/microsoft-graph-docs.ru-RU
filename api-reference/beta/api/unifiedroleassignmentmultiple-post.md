@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 094d55554c3488e61b909e227cb40767a705a64c
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 326f58cdce239c2a33ac555497f67b0bc0387b71
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991819"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038529"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>Создание unifiedRoleAssignmentMultiple
 
@@ -22,13 +22,13 @@ ms.locfileid: "43991819"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | DeviceManagementRBAC.ReadWrite.All |
+| Приложение | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,12 +42,12 @@ POST /roleManagement/deviceManagement/roleAssignments
 
 | Имя | Описание |
 |:---- |:----------- |
-| Авторизация | Bearer {токен}. Обязательный. |
-| Content-Type | application/json. Обязательный. |
+| Авторизация | Bearer {token}. Required. |
+| Content-Type | application/json. Required. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) в формате JSON. В запросе должна быть область, определенная в Azure AD, например `directoryScopeIds`, или область, зависящая от `appScopeId`приложения, например. Примеры областей Azure AD: клиент ("/"), административные единицы или приложения. 
+В тексте запроса добавьте представление объекта [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) в формате JSON. В запросе должна быть область, определенная в Azure AD, например `directoryScopeIds` , или область, зависящая от приложения, например `appScopeId` . Примеры областей Azure AD: клиент ("/"), административные единицы или приложения. 
 
 ## <a name="response"></a>Отклик
 
@@ -74,6 +74,7 @@ Content-type: application/json
 
 { 
     "@odata.type": "#microsoft.graph.unifiedRoleAssignmentMultiple",
+    "displayName": "My test role assignment 1",
     "roleDefinitionId": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
     "principalIds": ["f8ca5a85-489a-49a0-b555-0a6d81e56f0d", "c1518aa9-4da5-4c84-a902-a31404023890"],
     "directoryScopeIds": ["28ca5a85-489a-49a0-b555-0a6d81e56f0d", "8152656a-cf9a-4928-a457-1512d4cae295"],
@@ -97,7 +98,7 @@ Content-type: application/json
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -122,8 +123,8 @@ Content-type: application/json
 ### <a name="example-2-create-a-role-assignment-in-intune-at-intune-specific-scope-of-all-devices"></a>Пример 2: Создание назначения роли в Intune в области, зависящей от Intune, для "All Devices".
 
 Используйте следующие сведения для создания назначений ролей Intune:
-- Чтобы разрешить назначения на всех устройствах Intune, используйте `allDevices` значение в **аппскопеидс**.
-- Чтобы разрешить назначения для всех пользователей, лицензированных в Intune `allLicensedUsers` , используйте значение в **аппскопеидс**.
+- Чтобы разрешить назначения на всех устройствах Intune, используйте `AllDevices` значение в **аппскопеидс**.
+- Чтобы разрешить назначения для всех пользователей, лицензированных в Intune, используйте `AllLicensedUsers` значение в **аппскопеидс**.
 - Чтобы разрешить назначения для всех устройств Intune и лицензированных пользователей, используйте `/` значение в **директорископеидс**.
 
 #### <a name="request"></a>Запрос
@@ -143,6 +144,7 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.unifiedRoleAssignmentMultiple",
+    "displayName": "My test role assignment 1",
     "roleDefinitionId": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
     "principalIds": ["f8ca5a85-489a-49a0-b555-0a6d81e56f0d", "c1518aa9-4da5-4c84-a902-a31404023890"],
     "appScopeIds": ["allDevices"]
@@ -166,7 +168,7 @@ Content-type: application/json
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

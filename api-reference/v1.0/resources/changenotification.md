@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: d45c3973e5b044daf3121a740a60b29e3a181348
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 1120e5bbbecabd2b6ed00dd6796bb8849b0d5151
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45004793"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038501"
 ---
 # <a name="changenotification-resource-type"></a>Тип ресурса Чанженотификатион
 
@@ -33,7 +33,6 @@ ms.locfileid: "45004793"
 | id | string | Уникальный идентификатор уведомления. Необязательный параметр. |
 | resource | string | URI ресурса, который выдал уведомление об изменении относительно `https://graph.microsoft.com` . Обязательный. |
 | resourceData | [Microsoft. Graph. resourceData](resourcedata.md) | Содержимое этого свойства зависит от типа связанного с ним ресурса. Обязательный. |
-| sequenceNumber | int | Число в последовательности для уведомления, помогающее клиентскому приложению определить, находятся ли уведомления в последовательности, или если уведомление отсутствует. Необязательный параметр. |
 | subscriptionExpirationDateTime | [дата и время](https://tools.ietf.org/html/rfc3339) | Время окончания срока действия подписки. Обязательный. |
 | subscriptionId | string | Уникальный идентификатор подписки, создавшей уведомление. |
 | tenantId | кодом | Уникальный идентификатор клиента, с которого поступило уведомление об изменении. |
@@ -60,7 +59,6 @@ ms.locfileid: "45004793"
   "changeType": "created",
   "clientState": "client state provided when creating subscription",
   "id": "15ee1d1f-af7b-42d9-885b-9d00db065dd9",
-  "sequenceNumber": 20,
   "tenantId": "2c937fad-a8a7-496c-b0e4-bf77dcc7eb2a",
   "subscriptionExpirationDateTime": "2020-04-12T23:20:50.52Z",
   "resource": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')",
