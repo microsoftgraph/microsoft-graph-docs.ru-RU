@@ -4,12 +4,12 @@ description: Throttling limits the number of concurrent calls to a service to pr
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7678b364855381eaf5a138b42d6172a6cbd233f4
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 8cf528675b0cdde108063f3fd44acdfdff418941
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989935"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038536"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -60,7 +60,12 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 - [люди и социальные медиа](/graph/api/resources/social-overview?view=graph-rest-beta);
 - [хранилище (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0).
 - [внешний элемент (Поиск Майкрософт)](/graph/api/resources/externalitem?view=graph-rest-beta)
+- [Report](/graph/api/resources/report)
 - [Subscription](/graph/api/resources/subscription)
+- [Популярные](/graph/api/resources/insights-trending)
+- [Использованная аналитика](/graph/api/resources/insights-used)
+- [Общая информация](/graph/api/resources/insights-shared)
+- [Параметры пользователя](/graph/api/resources/usersettings)
 - [Отправлен](/graph/api/resources/invitation)
 
 Развернутое описание регулирования в Microsoft Cloud см. в статье [Модель регулирования](https://docs.microsoft.com/azure/architecture/patterns/throttling).
@@ -92,7 +97,7 @@ Microsoft Graph позволяет получать доступ к данным
 |------------------------------------------------------------|-----------------|
 | 10 000 запросов API в течение 10-минутного периода                  | Конечные точки версии 1.0 и бета-версии |
 | 4 параллельных запроса                                      | Конечные точки версии 1.0 и бета-версии   |
-| Отправка 15 Мбит (PATCH, POST, PUT) в течение 30 секунд. | Конечные точки версии 1.0 и бета-версии   |
+| Загрузка 15 мегабайт (МБ) (исправление, POST, PUT) за 30-секундный период | Конечные точки версии 1.0 и бета-версии   |
 
 #### <a name="outlook-service-resources"></a>Ресурсы службы Outlook
 
@@ -157,6 +162,26 @@ Microsoft Graph позволяет получать доступ к данным
 Приложение может отправлять в определенный канал не более 3000 сообщений в день.
 
 См. Также [ограничения Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) и [требования к опросу](/graph/api/resources/teams-api-overview#polling-requirements).
+
+### <a name="insights-service-limits"></a>Пределы службы аналитики
+
+Следующие пределы применяются к запросам на `me/insights` или `users/{id}/insights` .
+
+| Ограничение                                                      | Сфера применения      |
+|------------------------------------------------------------|-----------------|
+| 10 000 запросов API в течение 10-минутного периода                  | Конечные точки версии 1.0 и бета-версии |
+| 4 параллельных запроса                                      | Конечные точки версии 1.0 и бета-версии   |
+
+### <a name="microsoft-graph-reports-service-limits"></a>Пределы службы отчетов Microsoft Graph
+
+Указанные ниже ограничения применяются к любому запросу в `/reports`.
+
+| Операция                 | Ограничение на приложение по клиенту     | Максимальное количество для каждого клиента           |
+|---------------------------|------------------------------|----------------------------|
+| Любой запрос (CSV)         | 14 запросов в течение 10 минут   | 40 запросов в течение 10 минут |
+| Любой запрос (JSON, бета-версия)  | 100 запросов в течение 10 минут  | н/д                        |
+
+Предыдущие пределы применяются по отдельности к каждому API отчетов. Например, запрос к API отчетов об активности пользователей Microsoft Teams и запрос на отчеты об активности пользователей в Outlook в течение 10 минут будут считаться 1 запросом из 14 для каждого API, а не 2 запросами из 14.
 
 ### <a name="invitation-manager-service-limits"></a>Пределы службы диспетчера приглашений
 

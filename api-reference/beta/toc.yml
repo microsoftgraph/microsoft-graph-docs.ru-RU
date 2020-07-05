@@ -681,6 +681,319 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
+      - name: Приложения
+        items:
+          - name: Приложение
+            href: resources/application.md
+            items:
+              - name: Список приложений
+                href: api/application-list.md
+              - name: Создание приложения
+                href: api/application-post-applications.md
+              - name: Получение приложения
+                href: api/application-get.md
+              - name: Обновление приложения
+                href: api/application-update.md
+              - name: Удаление приложения
+                href: api/application-delete.md
+              - name: Получение дельты
+                href: api/application-delta.md
+              - name: Список удаленных приложений
+                href: api/directory-deleteditems-list.md
+              - name: Получение удаленного приложения
+                href: api/directory-deleteditems-get.md
+              - name: Окончательное удаление приложения
+                href: api/directory-deleteditems-delete.md
+              - name: Восстановление удаленного приложения
+                href: api/directory-deleteditems-restore.md
+              - name: Сертификаты & секреты
+                items:
+                  - name: Добавление пароля
+                    href: api/application-addpassword.md
+                  - name: Удаление пароля
+                    href: api/application-removepassword.md
+                  - name: Клавиша прибавления
+                    href: api/application-addkey.md
+                  - name: Удалить ключ
+                    href: api/application-removekey.md
+              - name: Расширения
+                items:
+                  - name: Список расширений
+                    href: api/application-list-extensionproperty.md
+                  - name: Создание расширения
+                    href: api/application-post-extensionproperty.md
+                  - name: Удаление расширения
+                    href: api/application-delete-extensionproperty.md
+              - name: Owners
+                items:
+                  - name: Список владельцев
+                    href: api/application-list-owners.md
+                  - name: Добавление владельца
+                    href: api/application-post-owners.md
+                  - name: Удаление владельца
+                    href: api/application-delete-owners.md
+              - name: Политики
+                items:
+                  - name: Список назначенных политик
+                    href: api/policy-list-assigned.md
+                  - name: Назначение типа ресурса tokenLifetimePolicy
+                    href: api/application-post-tokenlifetimepolicies.md
+                  - name: Перечисление типов ресурсов tokenLifetimePolicy
+                    href: api/application-list-tokenlifetimepolicies.md
+                  - name: Удаление типа ресурса tokenLifetimePolicy
+                    href: api/application-delete-tokenlifetimepolicies.md
+              - name: Шаблон приложения
+                href: resources/applicationtemplate.md
+                items:
+                  - name: Список шаблонов приложений
+                    href: api/applicationtemplate-list.md
+                  - name: Получение шаблона приложения
+                    href: api/applicationtemplate-get.md
+                  - name: Создание экземпляра шаблона приложения
+                    href: api/applicationtemplate-instantiate.md
+          - name: Локальная публикация
+            href: resources/onpremisespublishingprofile-root.md
+            items:
+              - name: Локальный агент
+                href: resources/onpremisesagent.md
+                items:
+                  - name: Перечисление
+                    href: api/onpremisesagent-list.md
+                  - name: Получение
+                    href: api/onpremisesagent-get.md
+                  - name: Назначить группе агентов
+                    href: api/onpremisesagent-post-agentgroups.md
+                  - name: Удалить из группы агентов
+                    href: api/onpremisesagent-delete-agentgroups.md
+              - name: Локальная группа агентов
+                href: resources/onpremisesagentgroup.md
+                items:
+                  - name: Перечисление
+                    href: api/onpremisesagentgroup-list.md
+                  - name: Получение
+                    href: api/onpremisesagentgroup-get.md
+                  - name: Создание
+                    href: api/onpremisesagentgroup-post.md
+                  - name: Обновление
+                    href: api/onpremisesagentgroup-update.md
+                  - name: Удаление
+                    href: api/onpremisesagentgroup-delete.md
+              - name: Профиль локальной публикации
+                href: resources/onpremisespublishingprofile.md
+                items:
+                  - name: Получение
+                    href: api/onpremisespublishingprofile-get.md
+                  - name: Обновление
+                    href: api/onpremisespublishingprofile-update.md
+              - name: Опубликованный ресурс
+                href: resources/publishedresource.md
+                items:
+                  - name: Перечисление
+                    href: api/publishedresource-list.md
+                  - name: Получение
+                    href: api/publishedresource-get.md
+                  - name: Создание
+                    href: api/publishedresource-post.md
+                  - name: Обновление
+                    href: api/publishedresource-update.md
+                  - name: Удаление
+                    href: api/publishedresource-delete.md
+                  - name: Назначить группе агентов
+                    href: api/publishedresource-post-agentgroups.md
+                  - name: Удалить из группы агентов
+                    href: api/publishedresource-delete-agentgroups.md
+              - name: Connector
+                href: resources/connector.md
+                items:
+                  - name: Перечисление
+                    href: api/connector-list.md
+                  - name: Получение
+                    href: api/connector-get.md
+                  - name: Список memberOf
+                    href: api/connector-list-memberof.md
+                  - name: Добавление соединителя в Коннекторграуп
+                    href: api/connector-post-memberof.md
+              - name: Группа соединителей
+                href: resources/connectorgroup.md
+                items:
+                  - name: Список
+                    href: api/connectorgroup-list.md
+                  - name: Создание
+                    href: api/connectorgroup-post.md
+                  - name: Получение
+                    href: api/connectorgroup-get.md
+                  - name: Обновление
+                    href: api/connectorgroup-update.md
+                  - name: Удаление
+                    href: api/connectorgroup-delete.md
+                  - name: Список приложений
+                    href: api/connectorgroup-list-applications.md
+                  - name: Список участников
+                    href: api/connectorgroup-list-members.md
+                  - name: Добавить соединитель
+                    href: api/connectorgroup-post-members.md
+                  - name: Добавление приложения
+                    href: api/connectorgroup-post-applications.md
+          - name: Субъект-служба
+            href: resources/serviceprincipal.md
+            items:
+              - name: Перечисление субъектов-служб
+                href: api/serviceprincipal-list.md
+              - name: Создание субъекта службы
+                href: api/serviceprincipal-post-serviceprincipals.md
+              - name: Получение субъекта-службы
+                href: api/serviceprincipal-get.md
+              - name: Обновление субъекта службы
+                href: api/serviceprincipal-update.md
+              - name: Удаление субъекта службы
+                href: api/serviceprincipal-delete.md
+              - name: Перечисление createdObjects
+                href: api/serviceprincipal-list-createdobjects.md
+              - name: Перечисление ownedObjects
+                href: api/serviceprincipal-list-ownedobjects.md
+              - name: delta
+                href: api/serviceprincipal-delta.md
+              - name: Назначения ролей приложений
+                href: resources/approleassignment.md
+                items:
+                  - name: Назначения ролей приложений для списков
+                    href: api/serviceprincipal-list-approleassignments.md
+                  - name: Добавление назначения роли приложения
+                    href: api/serviceprincipal-post-approleassignments.md
+                  - name: Удаление назначения роли приложения
+                    href: api/serviceprincipal-delete-approleassignments.md
+                  - name: 'Роль "приложение списка", назначенная пользователю'
+                    href: api/serviceprincipal-list-approleassignedto.md
+                  - name: 'Добавление роли приложения, назначенной'
+                    href: api/serviceprincipal-post-approleassignedto.md
+                  - name: 'Удаление роли приложения, назначенной'
+                    href: api/serviceprincipal-delete-approleassignedto.md
+              - name: Сертификаты и секреты
+                items:
+                  - name: Добавление пароля
+                    href: api/serviceprincipal-addpassword.md
+                  - name: Удаление пароля
+                    href: api/serviceprincipal-removepassword.md
+                  - name: Клавиша прибавления
+                    href: api/serviceprincipal-addkey.md
+                  - name: Удалить ключ
+                    href: api/serviceprincipal-removekey.md
+              - name: Предоставление делегированных разрешений
+                items:
+                  - name: 'Список делегированных разрешений, предоставленных представителем'
+                    href: api/serviceprincipal-list-oauth2permissiongrants.md
+              - name: Участие
+                items:
+                  - name: Список memberOf
+                    href: api/serviceprincipal-list-memberof.md
+                  - name: Перечисление транзитивных свойств memberOf
+                    href: api/serviceprincipal-list-transitivememberof.md
+                  - name: checkMemberGroups
+                    href: api/serviceprincipal-checkmembergroups.md
+                  - name: checkMemberObjects
+                    href: api/serviceprincipal-checkmemberobjects.md
+                  - name: getMemberGroups
+                    href: api/serviceprincipal-getmembergroups.md
+                  - name: getMemberObjects
+                    href: api/serviceprincipal-getmemberobjects.md
+              - name: Owners
+                items:
+                  - name: Список владельцев
+                    href: api/serviceprincipal-list-owners.md
+                  - name: Добавление владельца
+                    href: api/serviceprincipal-post-owners.md
+                  - name: Удаление владельца
+                    href: api/serviceprincipal-delete-owners.md
+              - name: Политики
+                items:
+                  - name: Политика сопоставления утверждений
+                    href: resources/claimsmappingpolicy.md
+                    items:
+                      - name: Назначение политик сопоставления утверждений
+                        href: api/serviceprincipal-post-claimsmappingpolicies.md
+                      - name: Список политик сопоставления утверждений
+                        href: api/serviceprincipal-list-claimsmappingpolicies.md
+                      - name: Удаление политик сопоставления утверждений
+                        href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                  - name: Политика обнаружения домашней области
+                    href: resources/homerealmdiscoverypolicy.md
+                    items:
+                      - name: Назначение политик обнаружения домашней области
+                        href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+                      - name: Список политик обнаружения домашней области
+                        href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+                      - name: Удаление политик обнаружения домашней области
+                        href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: Политика времени существования маркера
+                    href: resources/tokenlifetimepolicy.md
+                    items:
+                      - name: Назначение политик времени жизни маркеров
+                        href: api/application-post-tokenlifetimepolicies.md
+                      - name: Политики времени существования маркеров списка
+                        href: api/application-list-tokenlifetimepolicies.md
+                      - name: Удаление политик времени существования маркеров
+                        href: api/application-delete-tokenlifetimepolicies.md
+              - name: Единый вход
+                items:
+                  - name: Создание учетных данных единого входа для пароля
+                    href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
+                  - name: Получение учетных данных единого входа для пароля
+                    href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
+                  - name: Обновление учетных данных единого входа для пароля
+                    href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
+                  - name: Удаление учетных данных единого входа для пароля
+                    href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
+          - name: Синхронизация
+            href: resources/synchronization-overview.md
+            items:
+              - name: Синхронизация собственных целевых атрибутов
+                href: resources/synchronization-configure-with-custom-target-attributes.md
+              - name: Синхронизации атрибутов расширения каталога
+                href: resources/synchronization-configure-with-directory-extension-attributes.md
+              - name: Определение каталога
+                href: resources/synchronization-directorydefinition.md
+                items:
+                  - name: Поиск
+                    href: api/directorydefinition-discover.md
+              - name: Задание
+                href: resources/synchronization-synchronizationjob.md
+                items:
+                  - name: Список заданий
+                    href: api/synchronization-synchronizationjob-list.md
+                  - name: Создание задания
+                    href: api/synchronization-synchronizationjob-post.md
+                  - name: Получение задания
+                    href: api/synchronization-synchronizationjob-get.md
+                  - name: Запуск задания
+                    href: api/synchronization-synchronizationjob-start.md
+                  - name: Приостановка задания
+                    href: api/synchronization-synchronizationjob-pause.md
+                  - name: Перезапуск задания
+                    href: api/synchronization-synchronizationjob-restart.md
+                  - name: Удаление задания
+                    href: api/synchronization-synchronizationjob-delete.md
+                  - name: Подготовка по запросу
+                    href: api/synchronization-synchronizationjob-provision-on-demand.md
+              - name: Схема
+                href: resources/synchronization-synchronizationschema.md
+                items:
+                  - name: Получение схемы
+                    href: api/synchronization-synchronizationschema-get.md
+                  - name: Получение функций схемы
+                    href: api/synchronization-synchronizationschema-functions.md
+                  - name: Получение операторов фильтра схемы
+                    href: api/synchronization-synchronizationschema-filteroperators.md
+                  - name: Обновление схемы
+                    href: api/synchronization-synchronizationschema-update.md
+                  - name: Сброс схемы
+                    href: api/synchronization-synchronizationschema-delete.md
+              - name: Шаблон
+                href: resources/synchronization-synchronizationtemplate.md
+                items:
+                  - name: Список шаблонов
+                    href: api/synchronization-synchronizationtemplate-list.md
+                  - name: Получение шаблона
+                    href: api/synchronization-synchronizationtemplate-get.md
       - name: Календарь
         href: resources/calendar.md
         displayname: Outlook calendar
@@ -688,7 +1001,7 @@ items:
           - name: Событие
             href: resources/event.md
             items:
-              - name: Перечисление событий
+              - name: Список событий
                 href: api/user-list-events.md
               - name: Создание события
                 href: api/user-post-events.md
@@ -900,7 +1213,7 @@ items:
                 href: api/subscription-get.md
               - name: Обновление
                 href: api/subscription-update.md
-              - name: Delete
+              - name: Удаление
                 href: api/subscription-delete.md
           - name: Коллекция уведомлений об изменениях
             href: resources/changenotificationcollection.md
@@ -1053,7 +1366,7 @@ items:
           - name: Организация в Microsoft Bookings
             href: resources/bookingbusiness.md
             items:
-              - name: Перечисление
+              - name: Список
                 href: api/bookingbusiness-list.md
               - name: Создание
                 href: api/bookingbusiness-post-bookingbusinesses.md
@@ -1128,7 +1441,7 @@ items:
                 href: api/bookingstaffmember-get.md
               - name: Обновление
                 href: api/bookingstaffmember-update.md
-              - name: Delete
+              - name: Удаление
                 href: api/bookingstaffmember-delete.md
       - name: Устройства и приложения
         expanded: true
@@ -1174,7 +1487,9 @@ items:
                     href: api/printer-create.md
                   - name: Получение
                     href: api/printer-get.md
-                  - name: Удаление
+                  - name: Обновление
+                    href: api/printer-update.md
+                  - name: Delete
                     href: api/printer-delete.md
                   - name: Получение возможностей
                     href: api/printer-getcapabilities.md
@@ -1207,9 +1522,9 @@ items:
                     href: api/print-post-shares.md
                   - name: Получение
                     href: api/printershare-get.md
-                  - name: Обновление
+                  - name: Update
                     href: api/printershare-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/printershare-delete.md
                   - name: Список разрешенных пользователей
                     href: api/printershare-list-allowedusers.md
@@ -1266,7 +1581,7 @@ items:
                 items:
                   - name: Получение
                     href: api/print-get-settings.md
-                  - name: Обновление
+                  - name: Update
                     href: api/print-update-settings.md
           - name: Корпоративное управление
             href: resources/intune-graph-overview.md
@@ -1278,7 +1593,7 @@ items:
                   - name: Профиль регистрации владельца устройства Android
                     href: resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-list.md
                       - name: Получение
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-get.md
@@ -1297,7 +1612,7 @@ items:
                   - name: Приложение Android for Work
                     href: resources/intune-apps-androidforworkapp.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-androidforworkapp-list.md
                       - name: Получение
                         href: api/intune-apps-androidforworkapp-get.md
@@ -1329,7 +1644,7 @@ items:
                   - name: Профиль регистрации Android for Work
                     href: resources/intune-androidforwork-androidforworkenrollmentprofile.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-androidforwork-androidforworkenrollmentprofile-list.md
                       - name: Получение
                         href: api/intune-androidforwork-androidforworkenrollmentprofile-get.md
@@ -1348,7 +1663,7 @@ items:
                   - name: Конфигурация мобильного приложения Android for Work
                     href: resources/intune-apps-androidforworkmobileappconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-androidforworkmobileappconfiguration-list.md
                       - name: Получение
                         href: api/intune-apps-androidforworkmobileappconfiguration-get.md
@@ -1596,7 +1911,7 @@ items:
                   - name: 'Приложение iOS, приобретенное по программе VPP'
                     href: resources/intune-apps-iosvppapp.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-iosvppapp-list.md
                       - name: Получение
                         href: api/intune-apps-iosvppapp-get.md
@@ -1682,7 +1997,7 @@ items:
                   - name: Бизнес-приложение macOS
                     href: resources/intune-apps-macoslobapp.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-apps-macoslobapp-list.md
                       - name: Получение
                         href: api/intune-apps-macoslobapp-get.md
@@ -1810,7 +2125,7 @@ items:
                   - name: Назначение конфигурации мобильных приложений для управляемых устройств
                     href: resources/intune-apps-manageddevicemobileappconfigurationassignment.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-manageddevicemobileappconfigurationassignment-list.md
                       - name: Получение
                         href: api/intune-apps-manageddevicemobileappconfigurationassignment-get.md
@@ -1924,7 +2239,7 @@ items:
                   - name: Управляемые мобильные бизнес-приложения
                     href: resources/intune-apps-managedmobilelobapp.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-apps-managedmobilelobapp-list.md
                       - name: Получение
                         href: api/intune-apps-managedmobilelobapp-get.md
@@ -2036,7 +2351,7 @@ items:
                   - name: Состояние установки мобильных приложений
                     href: resources/intune-apps-mobileappinstallstatus.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-mobileappinstallstatus-list.md
                       - name: Получение
                         href: api/intune-apps-mobileappinstallstatus-get.md
@@ -2129,7 +2444,7 @@ items:
                   - name: Приложение из набора Office
                     href: resources/intune-apps-officesuiteapp.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-apps-officesuiteapp-list.md
                       - name: Получение
                         href: api/intune-apps-officesuiteapp-get.md
@@ -2185,7 +2500,7 @@ items:
                   - name: Веб-приложение
                     href: resources/intune-apps-webapp.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-webapp-list.md
                       - name: Получение
                         href: api/intune-apps-webapp-get.md
@@ -2355,7 +2670,7 @@ items:
                   - name: AppX-пакет Windows Phone 8.1
                     href: resources/intune-apps-windowsphone81appxbundle.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-apps-windowsphone81appxbundle-list.md
                       - name: Получение
                         href: api/intune-apps-windowsphone81appxbundle-get.md
@@ -2462,7 +2777,7 @@ items:
                   - name: Назначение условий
                     href: resources/intune-companyterms-termsandconditionsassignment.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-companyterms-termsandconditionsassignment-list.md
                       - name: Получение
                         href: api/intune-companyterms-termsandconditionsassignment-get.md
@@ -2556,7 +2871,7 @@ items:
                   - name: Профиль регистрации DEP
                     href: resources/intune-enrollment-depenrollmentprofile.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-enrollment-depenrollmentprofile-list.md
                       - name: Получение
                         href: api/intune-enrollment-depenrollmentprofile-get.md
@@ -2686,7 +3001,7 @@ items:
                   - name: Результат импорта удостоверения устройства
                     href: resources/intune-enrollment-importeddeviceidentityresult.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-enrollment-importeddeviceidentityresult-list.md
                       - name: Получение
                         href: api/intune-enrollment-importeddeviceidentityresult-get.md
@@ -2745,7 +3060,7 @@ items:
                   - name: Удостоверение устройства с Windows Autopilot
                     href: resources/intune-enrollment-windowsautopilotdeviceidentity.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-list.md
                       - name: Получение
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-get.md
@@ -2776,7 +3091,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-enrollment-windowsautopilotsettings-get.md
-                      - name: Обновление
+                      - name: Update
                         href: api/intune-enrollment-windowsautopilotsettings-update.md
                       - name: Действие sync
                         href: api/intune-enrollment-windowsautopilotsettings-sync.md
@@ -3114,7 +3429,7 @@ items:
                   - name: Настройка EAS для Gmail для Android for Work
                     href: resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-get.md
@@ -3222,7 +3537,7 @@ items:
                   - name: Общая конфигурация устройств для Android
                     href: resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
@@ -3321,7 +3636,7 @@ items:
                   - name: Конфигурация Wi-Fi для Android
                     href: resources/intune-deviceconfig-androidwificonfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androidwificonfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidwificonfiguration-get.md
@@ -3343,7 +3658,7 @@ items:
                   - name: Политика соответствия требованиям рабочего профиля Android
                     href: resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md
@@ -3529,7 +3844,7 @@ items:
                   - name: Конфигурация VPN для Apple
                     href: resources/intune-deviceconfig-applevpnconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-applevpnconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-applevpnconfiguration-get.md
@@ -3607,7 +3922,7 @@ items:
                   - name: Политика соответствия устройств требованиям по умолчанию
                     href: resources/intune-deviceconfig-defaultdevicecompliancepolicy.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-defaultdevicecompliancepolicy-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-defaultdevicecompliancepolicy-get.md
@@ -3746,7 +4061,7 @@ items:
                   - name: Запланированное действие для правила соответствия требованиям
                     href: resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
@@ -3800,7 +4115,7 @@ items:
                   - name: Назначение конфигурации устройства
                     href: resources/intune-deviceconfig-deviceconfigurationassignment.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
@@ -3879,7 +4194,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-deviceconfig-deviceconfigurationuserstatesummary-get.md
-                      - name: Update
+                      - name: Обновление
                         href: api/intune-deviceconfig-deviceconfigurationuserstatesummary-update.md
                   - name: 'Состояние пользователей, касающееся конфигураций устройств'
                     href: resources/intune-deviceconfig-deviceconfigurationuserstatus.md
@@ -4064,7 +4379,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-grouppolicy-grouppolicydefinitionfile-get.md
-                      - name: Обновление
+                      - name: Update
                         href: api/intune-grouppolicy-grouppolicydefinitionfile-update.md
                   - name: Значение определения политики группы
                     href: resources/intune-grouppolicy-grouppolicydefinitionvalue.md
@@ -4398,7 +4713,7 @@ items:
                   - name: Профиль сертификатов для iOS
                     href: resources/intune-deviceconfig-ioscertificateprofile.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-ioscertificateprofile-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-ioscertificateprofile-get.md
@@ -4494,7 +4809,7 @@ items:
                   - name: Конфигурация устройств с iOS для образования
                     href: resources/intune-deviceconfig-ioseducationdeviceconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-ioseducationdeviceconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-ioseducationdeviceconfiguration-get.md
@@ -4613,7 +4928,7 @@ items:
                   - name: Доверенный корневой сертификат для iOS
                     href: resources/intune-deviceconfig-iostrustedrootcertificate.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-iostrustedrootcertificate-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-iostrustedrootcertificate-get.md
@@ -4677,7 +4992,7 @@ items:
                   - name: Конфигурация Wi-Fi для iOS
                     href: resources/intune-deviceconfig-ioswificonfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-ioswificonfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-ioswificonfiguration-get.md
@@ -4799,7 +5114,7 @@ items:
                   - name: Конфигурация функций для устройств с macOS
                     href: resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-get.md
@@ -4857,7 +5172,7 @@ items:
                   - name: Общая конфигурация устройств с macOS
                     href: resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-get.md
@@ -5007,7 +5322,7 @@ items:
                   - name: Состояние шифрования управляемого устройства
                     href: resources/intune-deviceconfig-manageddeviceencryptionstate.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-manageddeviceencryptionstate-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-manageddeviceencryptionstate-get.md
@@ -5050,7 +5365,7 @@ items:
                   - name: Соединитель NDES
                     href: resources/intune-deviceconfig-ndesconnector.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-ndesconnector-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-ndesconnector-get.md
@@ -5209,7 +5524,7 @@ items:
                   - name: Объект settingStateDeviceSummary
                     href: resources/intune-deviceconfig-settingstatedevicesummary.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-settingstatedevicesummary-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-settingstatedevicesummary-get.md
@@ -5262,7 +5577,7 @@ items:
                   - name: Неподдерживаемая конфигурация устройства
                     href: resources/intune-deviceconfig-unsupporteddeviceconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-unsupporteddeviceconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-unsupporteddeviceconfiguration-get.md
@@ -5458,7 +5773,7 @@ items:
                   - name: Общая конфигурация Windows 10
                     href: resources/intune-deviceconfig-windows10generalconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-windows10generalconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-windows10generalconfiguration-get.md
@@ -5551,7 +5866,7 @@ items:
                   - name: Общая конфигурация Windows 10 для совместной работы
                     href: resources/intune-deviceconfig-windows10teamgeneralconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
@@ -5674,7 +5989,7 @@ items:
                   - name: 'База профилей сертификатов Windows '
                     href: resources/intune-deviceconfig-windowscertificateprofilebase.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-windowscertificateprofilebase-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-windowscertificateprofilebase-get.md
@@ -5967,7 +6282,7 @@ items:
                   - name: Конфигурация VPN для Windows
                     href: resources/intune-deviceconfig-windowsvpnconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-windowsvpnconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-windowsvpnconfiguration-get.md
@@ -6056,7 +6371,7 @@ items:
                   - name: Событие аудита
                     href: resources/intune-auditing-auditevent.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-auditing-auditevent-list.md
                       - name: Получение
                         href: api/intune-auditing-auditevent-get.md
@@ -6150,7 +6465,7 @@ items:
                   - name: Обнаруженное приложение
                     href: resources/intune-devices-detectedapp.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-devices-detectedapp-list.md
                       - name: Получение
                         href: api/intune-devices-detectedapp-get.md
@@ -6305,7 +6620,7 @@ items:
                   - name: Экземпляр абстрактного сложного параметра управления устройствами
                     href: resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-get.md
@@ -6402,7 +6717,7 @@ items:
                   - name: Экземпляр сложного параметра управления устройствами
                     href: resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-get.md
@@ -6502,7 +6817,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementintentdevicestatesummary-get.md
-                      - name: Update
+                      - name: Обновление
                         href: api/intune-deviceintent-devicemanagementintentdevicestatesummary-update.md
                   - name: Категория параметра намерения управления устройствами
                     href: resources/intune-deviceintent-devicemanagementintentsettingcategory.md
@@ -6522,7 +6837,7 @@ items:
                   - name: Состояния пользователя намерения управления устройствами
                     href: resources/intune-deviceintent-devicemanagementintentuserstate.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceintent-devicemanagementintentuserstate-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementintentuserstate-get.md
@@ -6624,7 +6939,7 @@ items:
                   - name: Определение параметра управления устройствами
                     href: resources/intune-deviceintent-devicemanagementsettingdefinition.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceintent-devicemanagementsettingdefinition-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementsettingdefinition-get.md
@@ -6800,7 +7115,7 @@ items:
                   - name: Событие "Устранение проблем с регистрацией"
                     href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
                       - name: Получение
                         href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
@@ -6853,7 +7168,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-devices-manageddevice-get.md
-                      - name: Update
+                      - name: Обновление
                         href: api/intune-devices-manageddevice-update.md
                       - name: Действие executeAction
                         href: api/intune-devices-manageddevice-executeaction.md
@@ -7052,7 +7367,7 @@ items:
                   - name: Аудит удаленных действий
                     href: resources/intune-devices-remoteactionaudit.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-devices-remoteactionaudit-list.md
                       - name: Получение
                         href: api/intune-devices-remoteactionaudit-get.md
@@ -7362,7 +7677,7 @@ items:
                   - name: Тип ресурса windowsManagementAppHealthState
                     href: resources/intune-devices-windowsmanagementapphealthstate.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-windowsmanagementapphealthstate-list.md
                       - name: Получение
                         href: api/intune-devices-windowsmanagementapphealthstate-get.md
@@ -7481,7 +7796,7 @@ items:
                   - name: Работа управляемых приложений
                     href: resources/intune-mam-managedappoperation.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-mam-managedappoperation-list.md
                       - name: Получение
                         href: api/intune-mam-managedappoperation-get.md
@@ -7596,7 +7911,7 @@ items:
                   - name: Сводка по обучению для приложения Windows Information Protection
                     href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
                       - name: Получение
                         href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
@@ -7660,7 +7975,7 @@ items:
                   - name: Политика Windows Information Protection
                     href: resources/intune-mam-windowsinformationprotectionpolicy.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-mam-windowsinformationprotectionpolicy-list.md
                       - name: Получение
                         href: api/intune-mam-windowsinformationprotectionpolicy-get.md
@@ -7810,7 +8125,7 @@ items:
                   - name: Назначение конфигураций регистрации
                     href: resources/intune-onboarding-enrollmentconfigurationassignment.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
                       - name: Получение
                         href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
@@ -7904,7 +8219,7 @@ items:
                   - name: Настройка страницы завершения регистрации в Windows 10
                     href: resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-list.md
                       - name: Получение
                         href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-get.md
@@ -8002,7 +8317,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-rbac-rolemanagement-get.md
-                      - name: Update
+                      - name: Обновление
                         href: api/intune-rbac-rolemanagement-update.md
                   - name: Разрешение роли
                     href: resources/intune-rbac-rolepermission.md
@@ -8019,7 +8334,7 @@ items:
                         href: api/intune-rbac-rolescopetag-delete.md
                       - name: Обновление
                         href: api/intune-rbac-rolescopetag-update.md
-                      - name: назначения действия
+                      - name: Действие назначения
                         href: api/intune-rbac-rolescopetag-assign.md
                       - name: действие Жетролескопетагсбид
                         href: api/intune-rbac-rolescopetag-getrolescopetagsbyid.md
@@ -8081,7 +8396,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-shared-deviceappmanagement-get.md
-                      - name: Обновление
+                      - name: Update
                         href: api/intune-shared-deviceappmanagement-update.md
                       - name: Действие syncMicrosoftStoreForBusinessApps
                         href: api/intune-shared-deviceappmanagement-syncmicrosoftstoreforbusinessapps.md
@@ -8131,7 +8446,7 @@ items:
                   - name: Конфигурация регистрации устройств
                     href: resources/intune-shared-deviceenrollmentconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-shared-deviceenrollmentconfiguration-list.md
                       - name: Получение
                         href: api/intune-shared-deviceenrollmentconfiguration-get.md
@@ -8148,7 +8463,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-shared-devicemanagement-get.md
-                      - name: Update
+                      - name: Обновление
                         href: api/intune-shared-devicemanagement-update.md
                       - name: Действие enableLegacyPcManagement
                         href: api/intune-shared-devicemanagement-enablelegacypcmanagement.md
@@ -8291,7 +8606,7 @@ items:
                   - name: 'Устранение неполадок с мобильным приложением: событие'
                     href: resources/intune-shared-mobileapptroubleshootingevent.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-shared-mobileapptroubleshootingevent-list.md
                       - name: Получение
                         href: api/intune-shared-mobileapptroubleshootingevent-get.md
@@ -8314,7 +8629,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-shared-reportroot-get.md
-                      - name: Обновление
+                      - name: Update
                         href: api/intune-shared-reportroot-update.md
                   - name: Итоговое состояние приложения
                     href: resources/intune-shared-resultantappstate.md
@@ -9007,1237 +9322,932 @@ items:
         items:
           - name: Обзор
             href: resources/azure-ad-overview.md
-          - name: Проверки доступа
-            href: resources/accessreviews-root.md
+          - name: Управление каталогами
             items:
-              - name: Проверка доступа
-                href: resources/accessreview.md
+              - name: Административная единица
+                href: resources/administrativeunit.md
                 items:
-                  - name: Просмотр списка проверок доступа
-                    href: api/accessreview-list.md
-                  - name: Проверка получения доступа
-                    href: api/accessreview-get.md
-                  - name: Проверка создания доступа
-                    href: api/accessreview-create.md
-                  - name: Проверка обновления доступа
-                    href: api/accessreview-update.md
-                  - name: Проверка удаления доступа
-                    href: api/accessreview-delete.md
-                  - name: Добавление рецензента
-                    href: api/accessreview-addreviewer.md
-                  - name: Список решений
-                    href: api/accessreview-listdecisions.md
-                  - name: Список "Мои решения"
-                    href: api/accessreview-listmydecisions.md
-                  - name: Список рецензентов
-                    href: api/accessreview-listreviewers.md
-                  - name: Удаление рецензента
-                    href: api/accessreview-removereviewer.md
-                  - name: Сбросить
-                    href: api/accessreview-reset.md
-                  - name: Отправить напоминание
-                    href: api/accessreview-sendreminder.md
-                  - name: Остановить
-                    href: api/accessreview-stop.md
-              - name: Шаблон бизнес-потока
-                href: resources/businessflowtemplate.md
-                items:
-                  - name: List
-                    href: api/businessflowtemplate-list.md
-              - name: Программа
-                href: resources/program.md
-                items:
+                  - name: Список
+                    href: api/administrativeunit-list.md
                   - name: Создание
-                    href: api/program-create.md
-                  - name: Удаление
-                    href: api/program-delete.md
-                  - name: List
-                    href: api/program-list.md
+                    href: api/administrativeunit-post-administrativeunits.md
+                  - name: Получение
+                    href: api/administrativeunit-get.md
                   - name: Обновление
-                    href: api/program-update.md
-                  - name: Список элементов управления
-                    href: api/program-listcontrols.md
-              - name: Элемент управления программы
-                href: resources/programcontrol.md
-                items:
-                  - name: Создать
-                    href: api/programcontrol-create.md
+                    href: api/administrativeunit-update.md
                   - name: Удаление
-                    href: api/programcontrol-delete.md
-                  - name: List
-                    href: api/programcontrol-list.md
-              - name: Тип элемента управления программы
-                href: resources/programcontroltype.md
+                    href: api/administrativeunit-delete.md
+                  - name: Получение дельты
+                    href: api/administrativeunit-delta.md
+                  - name: Добавление участника
+                    href: api/administrativeunit-post-members.md
+                  - name: Список членов
+                    href: api/administrativeunit-list-members.md
+                  - name: Получение члена
+                    href: api/administrativeunit-get-members.md
+                  - name: Удаление участника
+                    href: api/administrativeunit-delete-members.md
+                  - name: Добавление администратора с ролью в заданной области
+                    href: api/administrativeunit-post-scopedrolemembers.md
+                  - name: Список администраторов с ролями в заданной области
+                    href: api/administrativeunit-list-scopedrolemembers.md
+                  - name: Получение администратора с ролью в заданной области
+                    href: api/administrativeunit-get-scopedrolemembers.md
+                  - name: Удаление администратора с ролью в заданной области
+                    href: api/administrativeunit-delete-scopedrolemembers.md
+              - name: Контракты
+                href: resources/contract.md
                 items:
-                  - name: Список
-                    href: api/programcontroltype-list.md
-          - name: Административная единица
-            href: resources/administrativeunit.md
-            items:
-              - name: Список
-                href: api/administrativeunit-list.md
-              - name: Создание
-                href: api/administrativeunit-post-administrativeunits.md
-              - name: Получение
-                href: api/administrativeunit-get.md
-              - name: Обновление
-                href: api/administrativeunit-update.md
-              - name: Удаление
-                href: api/administrativeunit-delete.md
-              - name: Получение дельты
-                href: api/administrativeunit-delta.md
-              - name: Добавление участника
-                href: api/administrativeunit-post-members.md
-              - name: Список членов
-                href: api/administrativeunit-list-members.md
-              - name: Получение члена
-                href: api/administrativeunit-get-members.md
-              - name: Удаление участника
-                href: api/administrativeunit-delete-members.md
-              - name: Добавление администратора с ролью в заданной области
-                href: api/administrativeunit-post-scopedrolemembers.md
-              - name: Список администраторов с ролями в заданной области
-                href: api/administrativeunit-list-scopedrolemembers.md
-              - name: Получение администратора с ролью в заданной области
-                href: api/administrativeunit-get-scopedrolemembers.md
-              - name: Удаление администратора с ролью в заданной области
-                href: api/administrativeunit-delete-scopedrolemembers.md
-          - name: Приложение
-            href: resources/application.md
-            items:
-              - name: Список приложений
-                href: api/application-list.md
-              - name: Создание приложения
-                href: api/application-post-applications.md
-              - name: Получение приложения
-                href: api/application-get.md
-              - name: Обновление приложения
-                href: api/application-update.md
-              - name: Удаление приложения
-                href: api/application-delete.md
-              - name: Получение дельты
-                href: api/application-delta.md
-              - name: Список удаленных приложений
-                href: api/directory-deleteditems-list.md
-              - name: Получение удаленного приложения
-                href: api/directory-deleteditems-get.md
-              - name: Окончательное удаление приложения
-                href: api/directory-deleteditems-delete.md
-              - name: Восстановление удаленного приложения
-                href: api/directory-deleteditems-restore.md
-              - name: Сертификаты & секреты
+                  - name: Получение контрактов
+                    href: api/contract-get.md
+                  - name: Список контрактов
+                    href: api/contract-list.md
+              - name: Удаленные элементы
+                href: resources/directory.md
                 items:
-                  - name: Добавление пароля
-                    href: api/application-addpassword.md
-                  - name: Удаление пароля
-                    href: api/application-removepassword.md
-                  - name: Клавиша прибавления
-                    href: api/application-addkey.md
-                  - name: Удалить ключ
-                    href: api/application-removekey.md
-              - name: Расширения
+                  - name: Получение удаленных элементов
+                    href: api/directory-deleteditems-get.md
+                  - name: Перечисление удаленных элементов
+                    href: api/directory-deleteditems-list.md
+                  - name: Удаление элемента без возможности восстановления
+                    href: api/directory-deleteditems-delete.md
+                  - name: Восстановление удаленного элемента
+                    href: api/directory-deleteditems-restore.md
+                  - name: 'Перечисление удаленных элементов, принадлежащих пользователю'
+                    href: api/directory-deleteditems-user-owned.md
+              - name: Устройство
+                href: resources/device.md
                 items:
-                  - name: Список расширений
-                    href: api/application-list-extensionproperty.md
-                  - name: Создание расширения
-                    href: api/application-post-extensionproperty.md
-                  - name: Удаление расширения
-                    href: api/application-delete-extensionproperty.md
-              - name: Owners
-                items:
-                  - name: Список владельцев
-                    href: api/application-list-owners.md
-                  - name: Добавление владельца
-                    href: api/application-post-owners.md
-                  - name: Удаление владельца
-                    href: api/application-delete-owners.md
-              - name: Политики
-                items:
-                  - name: Список назначенных политик
-                    href: api/policy-list-assigned.md
-                  - name: Назначение типа ресурса tokenLifetimePolicy
-                    href: api/application-post-tokenlifetimepolicies.md
-                  - name: Перечисление типов ресурсов tokenLifetimePolicy
-                    href: api/application-list-tokenlifetimepolicies.md
-                  - name: Удаление типа ресурса tokenLifetimePolicy
-                    href: api/application-delete-tokenlifetimepolicies.md
-              - name: Шаблон приложения
-                href: resources/applicationtemplate.md
-                items:
-                  - name: Список шаблонов приложений
-                    href: api/applicationtemplate-list.md
-                  - name: Получение шаблона приложения
-                    href: api/applicationtemplate-get.md
-                  - name: Создание экземпляра шаблона приложения
-                    href: api/applicationtemplate-instantiate.md
-          - name: Журналы аудита
-            href: resources/azure-ad-auditlog-overview.md
-            items:
-              - name: Аудит каталога
-                href: resources/directoryaudit.md
-                items:
-                  - name: Список аудитов каталога
-                    href: api/directoryaudit-list.md
-                  - name: Получение аудита каталога
-                    href: api/directoryaudit-get.md
-              - name: Вход
-                href: resources/signin.md
-                items:
-                  - name: Перечисление событий входа
-                    href: api/signin-list.md
-                  - name: Получение события входа
-                    href: api/signin-get.md
-              - name: Журналы подготовки
-                href: resources/provisioningobjectsummary.md
-                items:
-                  - name: Подготовка списка
-                    href: api/provisioningobjectsummary-list.md
-          - name: Политика потоков проверки подлинности
-            items:
-              - name: Политика потоков проверки подлинности
-                href: resources/authenticationflowspolicy.md
-                items:
-                  - name: Получение
-                    href: api/authenticationflowspolicy-get.md
-                  - name: Update
-                    href: api/authenticationflowspolicy-update.md
-          - name: Методы проверки подлинности
-            items:
-              - name: Обзор
-                href: resources/authenticationmethods-overview.md
-              - name: Метод проверки подлинности
-                href: resources/authenticationmethod.md
-                items:
-                  - name: Перечисление
-                    href: api/authentication-list-methods.md
-                  - name: Получение
-                    href: api/authenticationmethod-get.md
-              - name: Пароль
-                href: resources/passwordauthenticationmethod.md
-                items:
-                  - name: Перечисление
-                    href: api/authentication-list-passwordmethods.md
-                  - name: Получение
-                    href: api/passwordauthenticationmethod-get.md
-                  - name: Сбросить
-                    href: api/passwordauthenticationmethod-resetpassword.md
-                  - name: Получение состояния операции
-                    href: api/authenticationoperation-get.md
-              - name: Phone
-                href: resources/phoneauthenticationmethod.md
-                items:
-                  - name: Перечисление
-                    href: api/authentication-list-phonemethods.md
-                  - name: Получение
-                    href: api/phoneauthenticationmethod-get.md
-                  - name: Обновление
-                    href: api/phoneauthenticationmethod-update.md
-                  - name: Delete
-                    href: api/phoneauthenticationmethod-delete.md
-                  - name: Добавление
-                    href: api/authentication-post-phonemethods.md
-                  - name: Включение входа в SMS
-                    href: api/phoneauthenticationmethod-enablesmssignin.md
-                  - name: Отключение входа в SMS
-                    href: api/phoneauthenticationmethod-disablesmssignin.md
-          - name: Настройка проверки подлинности на основе сертификатов
-            href: resources/certificatebasedauthconfiguration.md
-            items:
-              - name: Перечисление
-                href: api/certificatebasedauthconfiguration-list.md
-              - name: Получение
-                href: api/certificatebasedauthconfiguration-get.md
-              - name: Создание
-                href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-              - name: Удалить
-                href: api/certificatebasedauthconfiguration-delete.md
-          - name: условный доступ;
-            items:
-              - name: Политики
-                items:
-                  - name: Политика условного доступа
-                    href: resources/conditionalaccesspolicy.md
-                  - name: Список
-                    href: api/conditionalaccessroot-list-policies.md
-                  - name: Создание
-                    href: api/conditionalaccessroot-post-policies.md
-                  - name: Получение
-                    href: api/conditionalaccesspolicy-get.md
-                  - name: Обновление
-                    href: api/conditionalaccesspolicy-update.md
-                  - name: Delete
-                    href: api/conditionalaccesspolicy-delete.md
-              - name: Именованные расположения
-                items:
-                  - name: Именованное расположение
-                    items:
-                      - name: Именованное расположение
-                        href: resources/namedlocation.md
-                      - name: Перечисление
-                        href: api/conditionalaccessroot-list-namedlocations.md
-                      - name: Получение
-                        href: api/namedlocation-get.md
-                      - name: Удаление
-                        href: api/namedlocation-delete.md
-                  - name: Название страны
-                    items:
-                      - name: Название страны
-                        href: resources/countrynamedlocation.md
-                      - name: Список
-                        href: api/conditionalaccessroot-list-namedlocations.md
-                      - name: Создание
-                        href: api/conditionalaccessroot-post-namedlocations.md
-                      - name: Получение
-                        href: api/countrynamedlocation-get.md
-                      - name: Обновление
-                        href: api/countrynamedlocation-update.md
-                      - name: Delete
-                        href: api/countrynamedlocation-delete.md
-                  - name: IP-адрес с именем
-                    items:
-                      - name: IP-адрес с именем
-                        href: resources/ipnamedlocation.md
-                      - name: Список
-                        href: api/conditionalaccessroot-list-namedlocations.md
-                      - name: Создание
-                        href: api/conditionalaccessroot-post-namedlocations.md
-                      - name: Получение
-                        href: api/ipnamedlocation-get.md
-                      - name: Обновление
-                        href: api/ipnamedlocation-update.md
-                      - name: Delete
-                        href: api/ipnamedlocation-delete.md
-          - name: Контракты
-            href: resources/contract.md
-            items:
-              - name: Получение контрактов
-                href: api/contract-get.md
-              - name: Список контрактов
-                href: api/contract-list.md
-          - name: Операции с политикой данных
-            href: resources/datapolicyoperation.md
-            items:
-              - name: Получение операции с политикой данных
-                href: api/datapolicyoperation-get.md
-          - name: Предоставление делегированных разрешений
-            href: resources/oauth2permissiongrant.md
-            items:
-              - name: 'Список делегированных разрешений, предоставленных представителем'
-                href: api/oauth2permissiongrant-list.md
-              - name: Получение делегированных разрешений
-                href: api/oauth2permissiongrant-get.md
-              - name: Создание делегированного разрешения Grant
-                href: api/oauth2permissiongrant-post.md
-              - name: Обновление делегированного разрешения делегирования
-                href: api/oauth2permissiongrant-update.md
-              - name: Разрешение на удаление делегированных разрешений
-                href: api/oauth2permissiongrant-delete.md
-              - name: Получение дельты
-                href: api/oauth2permissiongrant-delta.md
-          - name: Удаленные элементы
-            href: resources/directory.md
-            items:
-              - name: Получение удаленных элементов
-                href: api/directory-deleteditems-get.md
-              - name: Перечисление удаленных элементов
-                href: api/directory-deleteditems-list.md
-              - name: Удаление элемента без возможности восстановления
-                href: api/directory-deleteditems-delete.md
-              - name: Восстановление удаленного элемента
-                href: api/directory-deleteditems-restore.md
-              - name: 'Перечисление удаленных элементов, принадлежащих пользователю'
-                href: api/directory-deleteditems-user-owned.md
-          - name: Устройство
-            href: resources/device.md
-            items:
-              - name: Список устройств
-                href: api/device-list.md
-              - name: Создание устройства
-                href: api/device-post-devices.md
-              - name: Вывод устройства
-                href: api/device-get.md
-              - name: Обновление устройства
-                href: api/device-update.md
-              - name: Удаление устройства
-                href: api/device-delete.md
-              - name: Список зарегистрированных владельцев
-                href: api/device-list-registeredowners.md
-              - name: Список зарегистрированных пользователей
-                href: api/device-list-registeredusers.md
-              - name: Создание зарегистрированного владельца
-                href: api/device-post-registeredowners.md
-              - name: Создание зарегистрированного пользователя
-                href: api/device-post-registeredusers.md
-              - name: Список групп устройств
-                href: api/device-list-memberof.md
-              - name: Перечисление транзитивных групп устройств
-                href: api/device-list-transitivememberof.md
-              - name: Проверка объектов Member
-                href: api/device-checkmemberobjects.md
-          - name: Объект каталога
-            href: resources/directoryobject.md
-            items:
-              - name: Получение объекта каталога
-                href: api/directoryobject-get.md
-              - name: Удаление объекта каталога
-                href: api/directoryobject-delete.md
-              - name: Вывод объектов членства
-                href: api/directoryobject-getmemberobjects.md
-              - name: Вывод групп членов
-                href: api/directoryobject-getmembergroups.md
-              - name: Проверка членства в группах
-                href: api/directoryobject-checkmembergroups.md
-              - name: Получение объектов directoryObjects по идентификаторам
-                href: api/directoryobject-getbyids.md
-              - name: Проверка свойств
-                href: api/directoryobject-validateproperties.md
-          - name: Роль каталога
-            href: resources/directoryrole.md
-            items:
-              - name: Список ролей каталога
-                href: api/directoryrole-list.md
-              - name: Активация роли каталога
-                href: api/directoryrole-post-directoryroles.md
-              - name: Получение роли каталога
-                href: api/directoryrole-get.md
-              - name: Список членов
-                href: api/directoryrole-list-members.md
-              - name: Добавление члена
-                href: api/directoryrole-post-members.md
-              - name: Удаление члена
-                href: api/directoryrole-delete-member.md
-              - name: Список администраторов в заданной области
-                href: api/directoryrole-list-scopedadministrators.md
-          - name: Шаблон для ролей каталога
-            href: resources/directoryroletemplate.md
-            items:
-              - name: Список шаблонов для ролей каталогов
-                href: api/directoryroletemplate-list.md
-              - name: Получение шаблона для ролей каталогов
-                href: api/directoryroletemplate-get.md
-          - name: Параметр каталога
-            href: resources/directorysetting.md
-            items:
-              - name: Создание параметра
-                href: api/directorysetting-post-settings.md
-              - name: Получение параметра
-                href: api/directorysetting-get.md
-              - name: Перечисление параметров
-                href: api/directorysetting-list.md
-              - name: Обновление параметра
-                href: api/directorysetting-update.md
-              - name: Удаление параметра
-                href: api/directorysetting-delete.md
-          - name: Шаблон параметра каталога
-            href: resources/directorysettingtemplate.md
-            items:
-              - name: Список шаблонов для параметров каталогов
-                href: api/directorysettingtemplate-list.md
-              - name: Получение шаблона для параметров каталогов
-                href: api/directorysettingtemplate-get.md
-          - name: Домены
-            href: resources/domain.md
-            items:
-              - name: Список доменов
-                href: api/domain-list.md
-              - name: Создание домена
-                href: api/domain-post-domains.md
-              - name: Удаление домена
-                href: api/domain-forcedelete.md
-              - name: Получение домена
-                href: api/domain-get.md
-              - name: Обновление домена
-                href: api/domain-update.md
-              - name: Проверка домена
-                href: api/domain-verify.md
-          - name: Управление обслуживанием
-            href: resources/entitlementmanagement-root.md
-            items:
-              - name: Пакет Access
-                href: resources/accesspackage.md
-                items:
-                  - name: Список
-                    href: api/accesspackage-list.md
-                  - name: Создание
-                    href: api/accesspackage-post.md
-                  - name: Получение
-                    href: api/accesspackage-get.md
-                  - name: Удаление
-                    href: api/accesspackage-delete.md
-              - name: Назначение пакетов Access
-                href: resources/accesspackageassignment.md
-                items:
-                  - name: List
-                    href: api/accesspackageassignment-list.md
-              - name: Политика назначения пакетов Access
-                href: resources/accesspackageassignmentpolicy.md
-                items:
-                  - name: Список
-                    href: api/accesspackageassignmentpolicy-list.md
-                  - name: Создание
-                    href: api/accesspackageassignmentpolicy-post.md
-                  - name: Получение
-                    href: api/accesspackageassignmentpolicy-get.md
-                  - name: Удаление
-                    href: api/accesspackageassignmentpolicy-delete.md
-              - name: Запрос на назначение пакета Access
-                href: resources/accesspackageassignmentrequest.md
-                items:
-                  - name: Список
-                    href: api/accesspackageassignmentrequest-list.md
-                  - name: Создание
-                    href: api/accesspackageassignmentrequest-post.md
-                  - name: Получение
-                    href: api/accesspackageassignmentrequest-get.md
-              - name: Роль ресурса назначения пакетов Access
-                href: resources/accesspackageassignmentresourcerole.md
-                items:
-                  - name: Перечисление
-                    href: api/accesspackageassignmentresourcerole-list.md
-                  - name: Получение
-                    href: api/accesspackageassignmentresourcerole-get.md
-              - name: Доступ к каталогу пакетов
-                href: resources/accesspackagecatalog.md
-                items:
-                  - name: Список
-                    href: api/accesspackagecatalog-list.md
-                  - name: Создание
-                    href: api/accesspackagecatalog-post.md
-                  - name: Получение
-                    href: api/accesspackagecatalog-get.md
-                  - name: Удаление
-                    href: api/accesspackagecatalog-delete.md
-                  - name: Список ресурсов
-                    href: api/accesspackagecatalog-list-accesspackageresources.md
-                  - name: Список ролей ресурса
-                    href: api/accesspackagecatalog-list-accesspackageresourceroles.md
-              - name: Запрос на доступ к ресурсу пакета
-                href: resources/accesspackageresourcerequest.md
-                items:
-                  - name: Список
-                    href: api/accesspackageresourcerequest-list.md
-                  - name: Создание
-                    href: api/accesspackageresourcerequest-post.md
-              - name: Область применения роли ресурса пакета Access
-                href: resources/accesspackageresourcerolescope.md
-                items:
-                  - name: Список
-                    href: api/accesspackage-list-accesspackageresourcerolescopes.md
-                  - name: Создание
-                    href: api/accesspackage-post-accesspackageresourcerolescopes.md
-          - name: Политика развертывания компонентов
-            href: resources/featurerolloutpolicy.md
-            items:
-              - name: Перечисление
-                href: api/directory-list-featurerolloutpolicies.md
-              - name: Получение
-                href: api/featurerolloutpolicy-get.md
-              - name: Создание
-                href: api/directory-post-featurerolloutpolicies.md
-              - name: Обновление
-                href: api/featurerolloutpolicy-update.md
-              - name: Delete
-                href: api/featurerolloutpolicy-delete.md
-              - name: Создание appliesTo
-                href: api/featurerolloutpolicy-post-appliesto.md
-              - name: Удаление appliesTo
-                href: api/featurerolloutpolicy-delete-appliesto.md
-          - name: Защита идентификации
-            href: resources/identityprotection-root.md
-            items:
-              - name: События с риском для идентификации
-                href: resources/identityriskevent.md
-                items:
-                  - name: Список объектов identityRiskEvent
-                    href: api/identityriskevent-list.md
-                  - name: Получение объекта identityRiskEvent
-                    href: api/identityriskevent-get.md
-                  - name: Список объектов anonymousIpRiskEvent
-                    href: api/anonymousipriskevent-list.md
-                  - name: Получение объекта anonymousIpRiskEvent
-                    href: api/anonymousipriskevent-get.md
-                  - name: Список объектов impossibleTravelRiskEvent
-                    href: api/impossibletravelriskevent-list.md
-                  - name: Получение объекта impossibleTravelRiskEvent
-                    href: api/impossibletravelriskevent-get.md
-                  - name: Список объектов leakedCredentialsRiskEvent
-                    href: api/leakedcredentialsriskevent-list.md
-                  - name: Получение объекта leakedCredentialsRiskEvent
-                    href: api/leakedcredentialsriskevent-get.md
-                  - name: Список объектов malwareRiskEvent
-                    href: api/malwareriskevent-list.md
-                  - name: Получение объекта malwareRiskEvent
-                    href: api/malwareriskevent-get.md
-                  - name: Список объектов suspiciousIpRiskEvent
-                    href: api/suspiciousipriskevent-list.md
-                  - name: Получение объекта suspiciousIpRiskEvent
-                    href: api/suspiciousipriskevent-get.md
-                  - name: Список объектов unfamiliarLocationRiskEvent
-                    href: api/unfamiliarlocationriskevent-list.md
-                  - name: Получение объекта unfamiliarLocationRiskEvent
-                    href: api/unfamiliarlocationriskevent-get.md
-              - name: Обнаружение рисков
-                href: resources/riskdetection.md
-                items:
-                  - name: Список обнаружений рисков
-                    href: api/riskdetection-list.md
-                  - name: Получение определения риска
-                    href: api/riskdetection-get.md
-              - name: Рискованный пользователь
-                href: resources/riskyuser.md
-                items:
-                  - name: Список рискованных пользователей
-                    href: api/riskyusers-list.md
-                  - name: Получение рискованных пользователей
-                    href: api/riskyusers-get.md
-                  - name: Журнал списка
-                    href: api/riskyuser-list-history.md
-                  - name: Подтвердить скомпрометированный
-                    href: api/riskyusers-confirmcompromised.md
-                  - name: Отклонить
-                    href: api/riskyusers-dismiss.md
-          - name: Поставщик удостоверений
-            href: resources/identityprovider.md
-            items:
-              - name: Список поставщиков удостоверений
-                href: api/identityprovider-list.md
-              - name: Создание поставщика удостоверений
-                href: api/identityprovider-post-identityproviders.md
-              - name: Получение поставщика удостоверений
-                href: api/identityprovider-get.md
-              - name: Обновление поставщика удостоверений
-                href: api/identityprovider-update.md
-              - name: Удаление поставщика удостоверений
-                href: api/identityprovider-delete.md
-          - name: Защита информации
-            items:
-              - name: Оценка угроз
-                items:
-                  - name: Обзор
-                    href: resources/threatassessment-api-overview.md
-                  - name: Запрос оценки угроз
-                    href: resources/threatassessmentrequest.md
-                  - name: Запрос оценки почты
-                    href: resources/mailassessmentrequest.md
-                  - name: Запрос на оценку файла электронной почты
-                    href: resources/emailfileassessmentrequest.md
-                  - name: Запрос оценки файла
-                    href: resources/fileAssessmentRequest.md
-                  - name: Запрос оценки URL-адреса
-                    href: resources/urlassessmentrequest.md
-                  - name: Список
-                    href: api/informationprotection-list-threatassessmentrequests.md
-                  - name: Создание
-                    href: api/informationprotection-post-threatassessmentrequests.md
-                  - name: Получение
-                    href: api/threatassessmentrequest-get.md
-          - name: Диспетчер приглашений
-            href: resources/invitation.md
-            items:
-              - name: Создание приглашения
-                href: api/invitation-post.md
-          - name: Локальная публикация
-            href: resources/onpremisespublishingprofile-root.md
-            items:
-              - name: Локальный агент
-                href: resources/onpremisesagent.md
-                items:
-                  - name: Перечисление
-                    href: api/onpremisesagent-list.md
-                  - name: Получение
-                    href: api/onpremisesagent-get.md
-                  - name: Назначить группе агентов
-                    href: api/onpremisesagent-post-agentgroups.md
-                  - name: Удалить из группы агентов
-                    href: api/onpremisesagent-delete-agentgroups.md
-              - name: Локальная группа агентов
-                href: resources/onpremisesagentgroup.md
-                items:
-                  - name: Перечисление
-                    href: api/onpremisesagentgroup-list.md
-                  - name: Получение
-                    href: api/onpremisesagentgroup-get.md
-                  - name: Создание
-                    href: api/onpremisesagentgroup-post.md
-                  - name: Обновление
-                    href: api/onpremisesagentgroup-update.md
-                  - name: Удаление
-                    href: api/onpremisesagentgroup-delete.md
-              - name: Профиль локальной публикации
-                href: resources/onpremisespublishingprofile.md
-                items:
-                  - name: Получение
-                    href: api/onpremisespublishingprofile-get.md
-                  - name: Обновление
-                    href: api/onpremisespublishingprofile-update.md
-              - name: Опубликованный ресурс
-                href: resources/publishedresource.md
-                items:
-                  - name: Перечисление
-                    href: api/publishedresource-list.md
-                  - name: Получение
-                    href: api/publishedresource-get.md
-                  - name: Создание
-                    href: api/publishedresource-post.md
-                  - name: Обновление
-                    href: api/publishedresource-update.md
-                  - name: Удаление
-                    href: api/publishedresource-delete.md
-                  - name: Назначить группе агентов
-                    href: api/publishedresource-post-agentgroups.md
-                  - name: Удалить из группы агентов
-                    href: api/publishedresource-delete-agentgroups.md
-              - name: Connector
-                href: resources/connector.md
-                items:
-                  - name: Перечисление
-                    href: api/connector-list.md
-                  - name: Получение
-                    href: api/connector-get.md
-                  - name: Список memberOf
-                    href: api/connector-list-memberof.md
-                  - name: Добавление соединителя в Коннекторграуп
-                    href: api/connector-post-memberof.md
-              - name: Группа соединителей
-                href: resources/connectorgroup.md
-                items:
-                  - name: Список
-                    href: api/connectorgroup-list.md
-                  - name: Создание
-                    href: api/connectorgroup-post.md
-                  - name: Получение
-                    href: api/connectorgroup-get.md
-                  - name: Обновление
-                    href: api/connectorgroup-update.md
-                  - name: Удаление
-                    href: api/connectorgroup-delete.md
-                  - name: Список приложений
-                    href: api/connectorgroup-list-applications.md
-                  - name: Список участников
-                    href: api/connectorgroup-list-members.md
-                  - name: Добавить соединитель
-                    href: api/connectorgroup-post-members.md
-                  - name: Добавление приложения
-                    href: api/connectorgroup-post-applications.md
-          - name: Организация
-            href: resources/organization.md
-            items:
-              - name: Вывод сведений об организации
-                href: api/organization-get.md
-              - name: Обновление сведений об организации
-                href: api/organization-update.md
-          - name: Контакты организации
-            href: resources/orgcontact.md
-            items:
-              - name: Вывод списка контактов организации
-                href: api/orgcontact-list.md
-              - name: Вывод контакта организации
-                href: api/orgcontact-get.md
-              - name: Обновление контакта организации
-                href: api/orgcontact-update.md
-              - name: Удаление контакта организации
-                href: api/orgcontact-delete.md
-              - name: Получение Дельта контакта для Организации
-                href: api/orgcontact-delta.md
-              - name: Группы
-                href: resources/group.md
-                items:
-                  - name: Вывод свойства memberOf
-                    href: api/orgcontact-list-memberof.md
-                  - name: Вывод групп членов
-                    href: api/orgcontact-getmembergroups.md
-                  - name: Проверка членства в группах
-                    href: api/orgcontact-checkmembergroups.md
-              - name: Организационная иерархия
+                  - name: Список устройств
+                    href: api/device-list.md
+                  - name: Создание устройства
+                    href: api/device-post-devices.md
+                  - name: Вывод устройства
+                    href: api/device-get.md
+                  - name: Обновление устройства
+                    href: api/device-update.md
+                  - name: Удаление устройства
+                    href: api/device-delete.md
+                  - name: Список зарегистрированных владельцев
+                    href: api/device-list-registeredowners.md
+                  - name: Список зарегистрированных пользователей
+                    href: api/device-list-registeredusers.md
+                  - name: Создание зарегистрированного владельца
+                    href: api/device-post-registeredowners.md
+                  - name: Создание зарегистрированного пользователя
+                    href: api/device-post-registeredusers.md
+                  - name: Список групп устройств
+                    href: api/device-list-memberof.md
+                  - name: Перечисление транзитивных групп устройств
+                    href: api/device-list-transitivememberof.md
+                  - name: Проверка объектов Member
+                    href: api/device-checkmemberobjects.md
+              - name: Объект каталога
                 href: resources/directoryobject.md
                 items:
-                  - name: Список подчиненных
-                    href: api/orgcontact-list-directreports.md
-                  - name: Список memberOf
-                    href: api/orgcontact-list-memberof.md
-                  - name: Получение имени руководителя
-                    href: api/orgcontact-get-manager.md
+                  - name: Получение объекта каталога
+                    href: api/directoryobject-get.md
+                  - name: Удаление объекта каталога
+                    href: api/directoryobject-delete.md
                   - name: Вывод объектов членства
-                    href: api/orgcontact-getmemberobjects.md
-          - name: Политика
-            href: resources/policy-overview.md
+                    href: api/directoryobject-getmemberobjects.md
+                  - name: Вывод групп членов
+                    href: api/directoryobject-getmembergroups.md
+                  - name: Проверка членства в группах
+                    href: api/directoryobject-checkmembergroups.md
+                  - name: Получение объектов directoryObjects по идентификаторам
+                    href: api/directoryobject-getbyids.md
+                  - name: Проверка свойств
+                    href: api/directoryobject-validateproperties.md
+              - name: Роль каталога
+                href: resources/directoryrole.md
+                items:
+                  - name: Список ролей каталога
+                    href: api/directoryrole-list.md
+                  - name: Активация роли каталога
+                    href: api/directoryrole-post-directoryroles.md
+                  - name: Получение роли каталога
+                    href: api/directoryrole-get.md
+                  - name: Список членов
+                    href: api/directoryrole-list-members.md
+                  - name: Добавление члена
+                    href: api/directoryrole-post-members.md
+                  - name: Удаление члена
+                    href: api/directoryrole-delete-member.md
+                  - name: Список администраторов в заданной области
+                    href: api/directoryrole-list-scopedadministrators.md
+              - name: Шаблон для ролей каталога
+                href: resources/directoryroletemplate.md
+                items:
+                  - name: Список шаблонов для ролей каталогов
+                    href: api/directoryroletemplate-list.md
+                  - name: Получение шаблона для ролей каталогов
+                    href: api/directoryroletemplate-get.md
+              - name: Параметр каталога
+                href: resources/directorysetting.md
+                items:
+                  - name: Создание параметра
+                    href: api/directorysetting-post-settings.md
+                  - name: Получение параметра
+                    href: api/directorysetting-get.md
+                  - name: Перечисление параметров
+                    href: api/directorysetting-list.md
+                  - name: Обновление параметра
+                    href: api/directorysetting-update.md
+                  - name: Удаление параметра
+                    href: api/directorysetting-delete.md
+              - name: Шаблон параметра каталога
+                href: resources/directorysettingtemplate.md
+                items:
+                  - name: Список шаблонов для параметров каталогов
+                    href: api/directorysettingtemplate-list.md
+                  - name: Получение шаблона для параметров каталогов
+                    href: api/directorysettingtemplate-get.md
+              - name: Домены
+                href: resources/domain.md
+                items:
+                  - name: Список доменов
+                    href: api/domain-list.md
+                  - name: Создание домена
+                    href: api/domain-post-domains.md
+                  - name: Удаление домена
+                    href: api/domain-forcedelete.md
+                  - name: Получение домена
+                    href: api/domain-get.md
+                  - name: Обновление домена
+                    href: api/domain-update.md
+                  - name: Проверка домена
+                    href: api/domain-verify.md
+              - name: Политика развертывания компонентов
+                href: resources/featurerolloutpolicy.md
+                items:
+                  - name: Перечисление
+                    href: api/directory-list-featurerolloutpolicies.md
+                  - name: Получение
+                    href: api/featurerolloutpolicy-get.md
+                  - name: Создание
+                    href: api/directory-post-featurerolloutpolicies.md
+                  - name: Обновление
+                    href: api/featurerolloutpolicy-update.md
+                  - name: Удаление
+                    href: api/featurerolloutpolicy-delete.md
+                  - name: Создание appliesTo
+                    href: api/featurerolloutpolicy-post-appliesto.md
+                  - name: Удаление appliesTo
+                    href: api/featurerolloutpolicy-delete-appliesto.md
+              - name: Организация
+                href: resources/organization.md
+                items:
+                  - name: Вывод сведений об организации
+                    href: api/organization-get.md
+                  - name: Обновление сведений об организации
+                    href: api/organization-update.md
+              - name: Контакты организации
+                href: resources/orgcontact.md
+                items:
+                  - name: Вывод списка контактов организации
+                    href: api/orgcontact-list.md
+                  - name: Вывод контакта организации
+                    href: api/orgcontact-get.md
+                  - name: Обновление контакта организации
+                    href: api/orgcontact-update.md
+                  - name: Удаление контакта организации
+                    href: api/orgcontact-delete.md
+                  - name: Получение Дельта контакта для Организации
+                    href: api/orgcontact-delta.md
+                  - name: Группы
+                    href: resources/group.md
+                    items:
+                      - name: Вывод свойства memberOf
+                        href: api/orgcontact-list-memberof.md
+                      - name: Вывод групп членов
+                        href: api/orgcontact-getmembergroups.md
+                      - name: Проверка членства в группах
+                        href: api/orgcontact-checkmembergroups.md
+                  - name: Организационная иерархия
+                    href: resources/directoryobject.md
+                    items:
+                      - name: Список подчиненных
+                        href: api/orgcontact-list-directreports.md
+                      - name: Список memberOf
+                        href: api/orgcontact-list-memberof.md
+                      - name: Получение имени руководителя
+                        href: api/orgcontact-get-manager.md
+                      - name: Вывод объектов членства
+                        href: api/orgcontact-getmemberobjects.md
+                  - name: Подписанная единица SKU
+                    href: resources/subscribedsku.md
+                    items:
+                      - name: Список объектов SubscribedSku
+                        href: api/subscribedsku-list.md
+                      - name: Вывод объекта SubscribedSku
+                        href: api/subscribedsku-get.md
+          - name: Удостоверение и вход
             items:
-              - name: Политика времени ожидания на основе действий
-                href: resources/activitybasedtimeoutpolicy.md
+              - name: Журналы аудита
+                href: resources/azure-ad-auditlog-overview.md
                 items:
-                  - name: Создание
-                    href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
-                  - name: Перечисление
-                    href: api/activitybasedtimeoutpolicy-list.md
-                  - name: Получение
-                    href: api/activitybasedtimeoutpolicy-get.md
-                  - name: Обновление
-                    href: api/activitybasedtimeoutpolicy-update.md
-                  - name: Удаление
-                    href: api/activitybasedtimeoutpolicy-delete.md
-              - name: Политика авторизации
-                href: resources/authorizationpolicy.md
-                items:
-                  - name: Получение
-                    href: api/authorizationpolicy-get.md
-                  - name: Обновление
-                    href: api/authorizationpolicy-update.md
-              - name: Политика сопоставления утверждений
-                href: resources/claimsmappingpolicy.md
-                items:
-                  - name: Создание
-                    href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
-                  - name: Перечисление
-                    href: api/claimsmappingpolicy-list.md
-                  - name: Получение
-                    href: api/claimsmappingpolicy-get.md
-                  - name: Обновление
-                    href: api/claimsmappingpolicy-update.md
-                  - name: Удаление
-                    href: api/claimsmappingpolicy-delete.md
-                  - name: Список субъектов-служб и приложений
-                    href: api/claimsmappingpolicy-list-appliesto.md
-              - name: Политика обнаружения домашней области
-                href: resources/homerealmdiscoverypolicy.md
-                items:
-                  - name: Создание
-                    href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-                  - name: Перечисление
-                    href: api/homerealmdiscoverypolicy-list.md
-                  - name: Получение
-                    href: api/homerealmdiscoverypolicy-get.md
-                  - name: Обновление
-                    href: api/homerealmdiscoverypolicy-update.md
-                  - name: Удаление
-                    href: api/homerealmdiscoverypolicy-delete.md
-                  - name: Список субъектов-служб и приложений
-                    href: api/homerealmdiscoverypolicy-list-appliesto.md
-              - name: Политика выдачи маркеров
-                href: resources/tokenissuancepolicy.md
-                items:
-                  - name: Создание
-                    href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
-                  - name: Перечисление
-                    href: api/tokenissuancepolicy-list.md
-                  - name: Получение
-                    href: api/tokenissuancepolicy-get.md
-                  - name: Обновление
-                    href: api/tokenissuancepolicy-update.md
-                  - name: Удаление
-                    href: api/tokenissuancepolicy-delete.md
-                  - name: Список субъектов-служб и приложений
-                    href: api/tokenissuancepolicy-list-appliesto.md
-              - name: Политика времени существования маркера
-                href: resources/tokenlifetimepolicy.md
-                items:
-                  - name: Создание
-                    href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
-                  - name: Перечисление
-                    href: api/tokenlifetimepolicy-list.md
-                  - name: Получение
-                    href: api/tokenlifetimepolicy-get.md
-                  - name: Обновление
-                    href: api/tokenlifetimepolicy-update.md
-                  - name: Удаление
-                    href: api/tokenlifetimepolicy-delete.md
-                  - name: Список субъектов-служб и приложений
-                    href: api/tokenlifetimepolicy-list-appliesto.md
-              - name: Политика безопасности по умолчанию
-                href: resources/identitysecuritydefaultsenforcementpolicy.md
-                items:
-                  - name: Получение
-                    href: api/identitysecuritydefaultsenforcementpolicy-get.md
-                  - name: Обновление
-                    href: api/identitysecuritydefaultsenforcementpolicy-update.md
-          - name: Служба Privileged Identity Management
-            items:
-              - name: Служба Privileged Identity Management
-                href: resources/privilegedidentitymanagement-root.md
-              - name: Azure AD
-                items:
-                  - name: Azure AD
-                    href: resources/privilegedidentitymanagement-directory.md
-                  - name: Привилегированная роль
-                    href: resources/privilegedrole.md
+                  - name: Аудит каталога
+                    href: resources/directoryaudit.md
                     items:
-                      - name: Список привилегированных ролей
-                        href: api/privilegedrole-list.md
-                      - name: Получение привилегированной роли
-                        href: api/privilegedrole-get.md
-                      - name: Список назначений ролей
-                        href: api/privilegedrole-list-assignments.md
-                      - name: Самостоятельная активация роли
-                        href: api/privilegedrole-selfactivate.md
-                      - name: Самостоятельная деактивация роли
-                        href: api/privilegedrole-selfdeactivate.md
-                      - name: Получение параметров роли
-                        href: api/privilegedrolesettings-get.md
-                      - name: Обновление параметров роли
-                        href: api/privilegedrolesettings-update.md
-                      - name: Получение сводки по ролям
-                        href: api/privilegedrolesummary-get.md
-                  - name: Назначение привилегированных ролей
-                    href: resources/privilegedroleassignment.md
+                      - name: Список аудитов каталога
+                        href: api/directoryaudit-list.md
+                      - name: Получение аудита каталога
+                        href: api/directoryaudit-get.md
+                  - name: Вход
+                    href: resources/signin.md
                     items:
-                      - name: Список назначений ролей
-                        href: api/privilegedroleassignment-list.md
-                      - name: Получение назначения ролей
-                        href: api/privilegedroleassignment-get.md
-                      - name: Создание назначений ролей
-                        href: api/privilegedroleassignment-post-privilegedroleassignments.md
-                      - name: Удаление назначения ролей
-                        href: api/privilegedroleassignment-delete.md
-                      - name: Получение своих назначений ролей
-                        href: api/privilegedroleassignment-my.md
-                      - name: 'Выполнение назначения ролей, соответствующего требованиям'
-                        href: api/privilegedroleassignment-makeeligible.md
-                      - name: Выполнение бессрочного назначения ролей
-                        href: api/privilegedroleassignment_makepermanent.md
-                  - name: Запрос назначения привилегированных ролей
-                    href: resources/privilegedroleassignmentrequest.md
+                      - name: Перечисление событий входа
+                        href: api/signin-list.md
+                      - name: Получение события входа
+                        href: api/signin-get.md
+                  - name: Журналы подготовки
+                    href: resources/provisioningobjectsummary.md
                     items:
-                      - name: Список назначений ролей
-                        href: api/privilegedroleassignmentrequest-list.md
-                      - name: Создание назначений ролей
-                        href: api/privilegedroleassignmentrequest-post.md
-                      - name: Отмена назначений ролей
-                        href: api/privilegedroleassignmentrequest-cancel.md
-                      - name: Получение своих назначений ролей
-                        href: api/privilegedroleassignmentrequest-my.md
-                  - name: Привилегированные утверждения
-                    href: resources/privilegedapproval.md
-                    items:
-                      - name: Список привилегированных утверждений
-                        href: api/privilegedapproval-list.md
-                      - name: Получение привилегированных утверждений
-                        href: api/privilegedapproval-get.md
-                      - name: Обновление назначения ролей
-                        href: api/privilegedapproval-update.md
-                  - name: Событие аудита
-                    href: resources/privilegedoperationevent.md
-                    items:
-                      - name: Список событий аудита
-                        href: api/privilegedoperationevent-list.md
-              - name: Ресурсы Azure
+                      - name: Подготовка списка
+                        href: api/provisioningobjectsummary-list.md
+              - name: Политика потоков проверки подлинности
                 items:
-                  - name: Ресурсы Azure
-                    href: resources/privilegedidentitymanagement-resources.md
-                  - name: Управляемые ресурсы
-                    href: resources/governanceresource.md
+                  - name: Политика потоков проверки подлинности
+                    href: resources/authenticationflowspolicy.md
                     items:
-                      - name: Перечисление
-                        href: api/governanceresource-list.md
                       - name: Получение
-                        href: api/governanceresource-get.md
-                      - name: Зарегистрировать
-                        href: api/governanceresource-register.md
-                  - name: Определения ролей
-                    href: resources/governanceroledefinition.md
-                    items:
-                      - name: Перечисление
-                        href: api/governanceroledefinition-list.md
-                      - name: Получение
-                        href: api/governanceroledefinition-get.md
-                  - name: Параметры роли
-                    href: resources/governancerolesetting.md
-                    items:
-                      - name: Перечисление
-                        href: api/governancerolesetting-list.md
-                      - name: Получение
-                        href: api/governancerolesetting-get.md
+                        href: api/authenticationflowspolicy-get.md
                       - name: Обновление
-                        href: api/governancerolesetting-update.md
-                  - name: Назначения ролей
-                    href: resources/governanceroleassignment.md
+                        href: api/authenticationflowspolicy-update.md
+              - name: Методы проверки подлинности
+                items:
+                  - name: Обзор
+                    href: resources/authenticationmethods-overview.md
+                  - name: Метод проверки подлинности
+                    href: resources/authenticationmethod.md
                     items:
                       - name: Перечисление
-                        href: api/governanceroleassignment-list.md
+                        href: api/authentication-list-methods.md
                       - name: Получение
-                        href: api/governanceroleassignment-get.md
-                      - name: Экспорт
-                        href: api/governanceroleassignment-export.md
-                  - name: Запросы назначения роли
-                    href: resources/governanceroleassignmentrequest.md
+                        href: api/authenticationmethod-get.md
+                  - name: Пароль
+                    href: resources/passwordauthenticationmethod.md
                     items:
+                      - name: Перечисление
+                        href: api/authentication-list-passwordmethods.md
+                      - name: Получение
+                        href: api/passwordauthenticationmethod-get.md
+                      - name: Сбросить
+                        href: api/passwordauthenticationmethod-resetpassword.md
+                      - name: Получение состояния операции
+                        href: api/authenticationoperation-get.md
+                  - name: Phone
+                    href: resources/phoneauthenticationmethod.md
+                    items:
+                      - name: Перечисление
+                        href: api/authentication-list-phonemethods.md
+                      - name: Получение
+                        href: api/phoneauthenticationmethod-get.md
+                      - name: Обновление
+                        href: api/phoneauthenticationmethod-update.md
+                      - name: Удаление
+                        href: api/phoneauthenticationmethod-delete.md
+                      - name: Добавление
+                        href: api/authentication-post-phonemethods.md
+                      - name: Включение входа в SMS
+                        href: api/phoneauthenticationmethod-enablesmssignin.md
+                      - name: Отключение входа в SMS
+                        href: api/phoneauthenticationmethod-disablesmssignin.md
+              - name: Настройка проверки подлинности на основе сертификатов
+                href: resources/certificatebasedauthconfiguration.md
+                items:
+                  - name: Перечисление
+                    href: api/certificatebasedauthconfiguration-list.md
+                  - name: Получение
+                    href: api/certificatebasedauthconfiguration-get.md
+                  - name: Создание
+                    href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                  - name: Удалить
+                    href: api/certificatebasedauthconfiguration-delete.md
+              - name: условный доступ;
+                items:
+                  - name: Политики
+                    items:
+                      - name: Политика условного доступа
+                        href: resources/conditionalaccesspolicy.md
                       - name: Список
-                        href: api/governanceroleassignmentrequest-list.md
+                        href: api/conditionalaccessroot-list-policies.md
                       - name: Создание
-                        href: api/governanceroleassignmentrequest-post.md
+                        href: api/conditionalaccessroot-post-policies.md
                       - name: Получение
-                        href: api/governanceroleassignmentrequest-get.md
+                        href: api/conditionalaccesspolicy-get.md
                       - name: Обновление
-                        href: api/governanceroleassignmentrequest-update.md
-                      - name: Отмена
-                        href: api/governanceroleassignmentrequest-cancel.md
-          - name: Управление ролями
-            href: resources/rolemanagement.md
-            items:
-              - name: Определение ролей
-                href: resources/unifiedroledefinition.md
+                        href: api/conditionalaccesspolicy-update.md
+                      - name: Delete
+                        href: api/conditionalaccesspolicy-delete.md
+                  - name: Именованные расположения
+                    items:
+                      - name: Именованное расположение
+                        items:
+                          - name: Именованное расположение
+                            href: resources/namedlocation.md
+                          - name: Перечисление
+                            href: api/conditionalaccessroot-list-namedlocations.md
+                          - name: Получение
+                            href: api/namedlocation-get.md
+                          - name: Удаление
+                            href: api/namedlocation-delete.md
+                      - name: Название страны
+                        items:
+                          - name: Название страны
+                            href: resources/countrynamedlocation.md
+                          - name: Список
+                            href: api/conditionalaccessroot-list-namedlocations.md
+                          - name: Создание
+                            href: api/conditionalaccessroot-post-namedlocations.md
+                          - name: Получение
+                            href: api/countrynamedlocation-get.md
+                          - name: Обновление
+                            href: api/countrynamedlocation-update.md
+                          - name: Delete
+                            href: api/countrynamedlocation-delete.md
+                      - name: IP-адрес с именем
+                        items:
+                          - name: IP-адрес с именем
+                            href: resources/ipnamedlocation.md
+                          - name: Список
+                            href: api/conditionalaccessroot-list-namedlocations.md
+                          - name: Создание
+                            href: api/conditionalaccessroot-post-namedlocations.md
+                          - name: Получение
+                            href: api/ipnamedlocation-get.md
+                          - name: Обновление
+                            href: api/ipnamedlocation-update.md
+                          - name: Delete
+                            href: api/ipnamedlocation-delete.md
+              - name: Операции с политикой данных
+                href: resources/datapolicyoperation.md
                 items:
-                  - name: Определение ролей списка
-                    href: api/rbacapplication-list-roledefinitions.md
-                  - name: Создание определения роли
-                    href: api/rbacapplication-post-roledefinitions.md
-                  - name: Получение определения роли
-                    href: api/unifiedroledefinition-get.md
-                  - name: Обновление определения роли
-                    href: api/unifiedroledefinition-update.md
-                  - name: Удаление определения роли
-                    href: api/unifiedroledefinition-delete.md
-              - name: Назначение ролей
-                href: resources/unifiedroleassignment.md
-                items:
-                  - name: Назначение роли списка
-                    href: api/rbacapplication-list-roleassignments.md
-                  - name: Создание назначения роли
-                    href: api/rbacapplication-post-roleassignments.md
-                  - name: Получение назначения ролей
-                    href: api/unifiedroleassignment-get.md
-                  - name: Удаление назначения ролей
-                    href: api/unifiedroleassignment-delete.md
-              - name: Несколько назначений ролей
-                href: resources/unifiedroleassignmentmultiple.md
-                items:
-                  - name: Список
-                    href: api/unifiedroleassignmentmultiple-list.md
-                  - name: Создание
-                    href: api/unifiedroleassignmentmultiple-post.md
-                  - name: Получение
-                    href: api/unifiedroleassignmentmultiple-get.md
-                  - name: Обновление
-                    href: api/unifiedroleassignmentmultiple-update.md
-                  - name: Удаление
-                    href: api/unifiedroleassignmentmultiple-delete.md
-          - name: Субъект-служба
-            href: resources/serviceprincipal.md
-            items:
-              - name: Перечисление субъектов-служб
-                href: api/serviceprincipal-list.md
-              - name: Создание субъекта службы
-                href: api/serviceprincipal-post-serviceprincipals.md
-              - name: Получение субъекта-службы
-                href: api/serviceprincipal-get.md
-              - name: Обновление субъекта службы
-                href: api/serviceprincipal-update.md
-              - name: Удаление субъекта службы
-                href: api/serviceprincipal-delete.md
-              - name: Перечисление createdObjects
-                href: api/serviceprincipal-list-createdobjects.md
-              - name: Перечисление ownedObjects
-                href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
-                href: api/serviceprincipal-delta.md
-              - name: Назначения ролей приложений
-                href: resources/approleassignment.md
-                items:
-                  - name: Назначения ролей приложений для списков
-                    href: api/serviceprincipal-list-approleassignments.md
-                  - name: Добавление назначения роли приложения
-                    href: api/serviceprincipal-post-approleassignments.md
-                  - name: Удаление назначения роли приложения
-                    href: api/serviceprincipal-delete-approleassignments.md
-                  - name: 'Роль "приложение списка", назначенная пользователю'
-                    href: api/serviceprincipal-list-approleassignedto.md
-                  - name: 'Добавление роли приложения, назначенной'
-                    href: api/serviceprincipal-post-approleassignedto.md
-                  - name: 'Удаление роли приложения, назначенной'
-                    href: api/serviceprincipal-delete-approleassignedto.md
-              - name: Сертификаты и секреты
-                items:
-                  - name: Добавление пароля
-                    href: api/serviceprincipal-addpassword.md
-                  - name: Удаление пароля
-                    href: api/serviceprincipal-removepassword.md
-                  - name: Клавиша прибавления
-                    href: api/serviceprincipal-addkey.md
-                  - name: Удалить ключ
-                    href: api/serviceprincipal-removekey.md
+                  - name: Получение операции с политикой данных
+                    href: api/datapolicyoperation-get.md
               - name: Предоставление делегированных разрешений
+                href: resources/oauth2permissiongrant.md
                 items:
                   - name: 'Список делегированных разрешений, предоставленных представителем'
-                    href: api/serviceprincipal-list-oauth2permissiongrants.md
-              - name: Участие
+                    href: api/oauth2permissiongrant-list.md
+                  - name: Получение делегированных разрешений
+                    href: api/oauth2permissiongrant-get.md
+                  - name: Создание делегированного разрешения Grant
+                    href: api/oauth2permissiongrant-post.md
+                  - name: Обновление делегированного разрешения делегирования
+                    href: api/oauth2permissiongrant-update.md
+                  - name: Разрешение на удаление делегированных разрешений
+                    href: api/oauth2permissiongrant-delete.md
+                  - name: Получение дельты
+                    href: api/oauth2permissiongrant-delta.md
+              - name: Защита идентификации
+                href: resources/identityprotection-root.md
                 items:
-                  - name: Список memberOf
-                    href: api/serviceprincipal-list-memberof.md
-                  - name: Перечисление транзитивных свойств memberOf
-                    href: api/serviceprincipal-list-transitivememberof.md
-                  - name: checkMemberGroups
-                    href: api/serviceprincipal-checkmembergroups.md
-                  - name: checkMemberObjects
-                    href: api/serviceprincipal-checkmemberobjects.md
-                  - name: getMemberGroups
-                    href: api/serviceprincipal-getmembergroups.md
-                  - name: getMemberObjects
-                    href: api/serviceprincipal-getmemberobjects.md
-              - name: Owners
+                  - name: События с риском для идентификации
+                    href: resources/identityriskevent.md
+                    items:
+                      - name: Список объектов identityRiskEvent
+                        href: api/identityriskevent-list.md
+                      - name: Получение объекта identityRiskEvent
+                        href: api/identityriskevent-get.md
+                      - name: Список объектов anonymousIpRiskEvent
+                        href: api/anonymousipriskevent-list.md
+                      - name: Получение объекта anonymousIpRiskEvent
+                        href: api/anonymousipriskevent-get.md
+                      - name: Список объектов impossibleTravelRiskEvent
+                        href: api/impossibletravelriskevent-list.md
+                      - name: Получение объекта impossibleTravelRiskEvent
+                        href: api/impossibletravelriskevent-get.md
+                      - name: Список объектов leakedCredentialsRiskEvent
+                        href: api/leakedcredentialsriskevent-list.md
+                      - name: Получение объекта leakedCredentialsRiskEvent
+                        href: api/leakedcredentialsriskevent-get.md
+                      - name: Список объектов malwareRiskEvent
+                        href: api/malwareriskevent-list.md
+                      - name: Получение объекта malwareRiskEvent
+                        href: api/malwareriskevent-get.md
+                      - name: Список объектов suspiciousIpRiskEvent
+                        href: api/suspiciousipriskevent-list.md
+                      - name: Получение объекта suspiciousIpRiskEvent
+                        href: api/suspiciousipriskevent-get.md
+                      - name: Список объектов unfamiliarLocationRiskEvent
+                        href: api/unfamiliarlocationriskevent-list.md
+                      - name: Получение объекта unfamiliarLocationRiskEvent
+                        href: api/unfamiliarlocationriskevent-get.md
+                  - name: Обнаружение рисков
+                    href: resources/riskdetection.md
+                    items:
+                      - name: Список обнаружений рисков
+                        href: api/riskdetection-list.md
+                      - name: Получение определения риска
+                        href: api/riskdetection-get.md
+                  - name: Рискованный пользователь
+                    href: resources/riskyuser.md
+                    items:
+                      - name: Список рискованных пользователей
+                        href: api/riskyusers-list.md
+                      - name: Получение рискованных пользователей
+                        href: api/riskyusers-get.md
+                      - name: Журнал списка
+                        href: api/riskyuser-list-history.md
+                      - name: Подтвердить скомпрометированный
+                        href: api/riskyusers-confirmcompromised.md
+                      - name: Отклонить
+                        href: api/riskyusers-dismiss.md
+              - name: Защита информации
                 items:
-                  - name: Список владельцев
-                    href: api/serviceprincipal-list-owners.md
-                  - name: Добавление владельца
-                    href: api/serviceprincipal-post-owners.md
-                  - name: Удаление владельца
-                    href: api/serviceprincipal-delete-owners.md
-              - name: Политики
+                  - name: Оценка угроз
+                    items:
+                      - name: Обзор
+                        href: resources/threatassessment-api-overview.md
+                      - name: Запрос оценки угроз
+                        href: resources/threatassessmentrequest.md
+                      - name: Запрос оценки почты
+                        href: resources/mailassessmentrequest.md
+                      - name: Запрос на оценку файла электронной почты
+                        href: resources/emailfileassessmentrequest.md
+                      - name: Запрос оценки файла
+                        href: resources/fileAssessmentRequest.md
+                      - name: Запрос оценки URL-адреса
+                        href: resources/urlassessmentrequest.md
+                      - name: Список
+                        href: api/informationprotection-list-threatassessmentrequests.md
+                      - name: Создание
+                        href: api/informationprotection-post-threatassessmentrequests.md
+                      - name: Получение
+                        href: api/threatassessmentrequest-get.md
+              - name: Поставщик удостоверений
+                href: resources/identityprovider.md
                 items:
+                  - name: Список поставщиков удостоверений
+                    href: api/identityprovider-list.md
+                  - name: Создание поставщика удостоверений
+                    href: api/identityprovider-post-identityproviders.md
+                  - name: Получение поставщика удостоверений
+                    href: api/identityprovider-get.md
+                  - name: Обновление поставщика удостоверений
+                    href: api/identityprovider-update.md
+                  - name: Удаление поставщика удостоверений
+                    href: api/identityprovider-delete.md
+              - name: Диспетчер приглашений
+                href: resources/invitation.md
+                items:
+                  - name: Создание приглашения
+                    href: api/invitation-post.md
+              - name: Политика
+                href: resources/policy-overview.md
+                items:
+                  - name: Политика времени ожидания на основе действий
+                    href: resources/activitybasedtimeoutpolicy.md
+                    items:
+                      - name: Создание
+                        href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
+                      - name: Перечисление
+                        href: api/activitybasedtimeoutpolicy-list.md
+                      - name: Получение
+                        href: api/activitybasedtimeoutpolicy-get.md
+                      - name: Обновление
+                        href: api/activitybasedtimeoutpolicy-update.md
+                      - name: Delete
+                        href: api/activitybasedtimeoutpolicy-delete.md
+                  - name: Политика авторизации
+                    href: resources/authorizationpolicy.md
+                    items:
+                      - name: Получение
+                        href: api/authorizationpolicy-get.md
+                      - name: Обновление
+                        href: api/authorizationpolicy-update.md
                   - name: Политика сопоставления утверждений
                     href: resources/claimsmappingpolicy.md
                     items:
-                      - name: Назначение политик сопоставления утверждений
-                        href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Список политик сопоставления утверждений
-                        href: api/serviceprincipal-list-claimsmappingpolicies.md
-                      - name: Удаление политик сопоставления утверждений
-                        href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                      - name: Создание
+                        href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+                      - name: Перечисление
+                        href: api/claimsmappingpolicy-list.md
+                      - name: Получение
+                        href: api/claimsmappingpolicy-get.md
+                      - name: Обновление
+                        href: api/claimsmappingpolicy-update.md
+                      - name: Delete
+                        href: api/claimsmappingpolicy-delete.md
+                      - name: Список субъектов-служб и приложений
+                        href: api/claimsmappingpolicy-list-appliesto.md
                   - name: Политика обнаружения домашней области
                     href: resources/homerealmdiscoverypolicy.md
                     items:
-                      - name: Назначение политик обнаружения домашней области
-                        href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Список политик обнаружения домашней области
-                        href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-                      - name: Удаление политик обнаружения домашней области
-                        href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                      - name: Создание
+                        href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+                      - name: Перечисление
+                        href: api/homerealmdiscoverypolicy-list.md
+                      - name: Получение
+                        href: api/homerealmdiscoverypolicy-get.md
+                      - name: Обновление
+                        href: api/homerealmdiscoverypolicy-update.md
+                      - name: Delete
+                        href: api/homerealmdiscoverypolicy-delete.md
+                      - name: Список субъектов-служб и приложений
+                        href: api/homerealmdiscoverypolicy-list-appliesto.md
+                  - name: Политика выдачи маркеров
+                    href: resources/tokenissuancepolicy.md
+                    items:
+                      - name: Создание
+                        href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
+                      - name: Перечисление
+                        href: api/tokenissuancepolicy-list.md
+                      - name: Получение
+                        href: api/tokenissuancepolicy-get.md
+                      - name: Обновление
+                        href: api/tokenissuancepolicy-update.md
+                      - name: Delete
+                        href: api/tokenissuancepolicy-delete.md
+                      - name: Список субъектов-служб и приложений
+                        href: api/tokenissuancepolicy-list-appliesto.md
                   - name: Политика времени существования маркера
                     href: resources/tokenlifetimepolicy.md
                     items:
-                      - name: Назначение политик времени жизни маркеров
-                        href: api/application-post-tokenlifetimepolicies.md
-                      - name: Политики времени существования маркеров списка
-                        href: api/application-list-tokenlifetimepolicies.md
-                      - name: Удаление политик времени существования маркеров
-                        href: api/application-delete-tokenlifetimepolicies.md
-              - name: Единый вход
+                      - name: Создание
+                        href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+                      - name: Перечисление
+                        href: api/tokenlifetimepolicy-list.md
+                      - name: Получение
+                        href: api/tokenlifetimepolicy-get.md
+                      - name: Обновление
+                        href: api/tokenlifetimepolicy-update.md
+                      - name: Delete
+                        href: api/tokenlifetimepolicy-delete.md
+                      - name: Список субъектов-служб и приложений
+                        href: api/tokenlifetimepolicy-list-appliesto.md
+                  - name: Политика безопасности по умолчанию
+                    href: resources/identitysecuritydefaultsenforcementpolicy.md
+                    items:
+                      - name: Получение
+                        href: api/identitysecuritydefaultsenforcementpolicy-get.md
+                      - name: Update
+                        href: api/identitysecuritydefaultsenforcementpolicy-update.md
+              - name: Управление ролями
+                href: resources/rolemanagement.md
                 items:
-                  - name: Создание учетных данных единого входа для пароля
-                    href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
-                  - name: Получение учетных данных единого входа для пароля
-                    href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
-                  - name: Обновление учетных данных единого входа для пароля
-                    href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
-                  - name: Удаление учетных данных единого входа для пароля
-                    href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
-          - name: Подписанная единица SKU
-            href: resources/subscribedsku.md
-            items:
-              - name: Список объектов SubscribedSku
-                href: api/subscribedsku-list.md
-              - name: Вывод объекта SubscribedSku
-                href: api/subscribedsku-get.md
-          - name: Синхронизация
-            href: resources/synchronization-overview.md
-            items:
-              - name: Синхронизация собственных целевых атрибутов
-                href: resources/synchronization-configure-with-custom-target-attributes.md
-              - name: Синхронизации атрибутов расширения каталога
-                href: resources/synchronization-configure-with-directory-extension-attributes.md
-              - name: Определение каталога
-                href: resources/synchronization-directorydefinition.md
+                  - name: Определение ролей
+                    href: resources/unifiedroledefinition.md
+                    items:
+                      - name: Определение ролей списка
+                        href: api/rbacapplication-list-roledefinitions.md
+                      - name: Создание определения роли
+                        href: api/rbacapplication-post-roledefinitions.md
+                      - name: Получение определения роли
+                        href: api/unifiedroledefinition-get.md
+                      - name: Обновление определения роли
+                        href: api/unifiedroledefinition-update.md
+                      - name: Удаление определения роли
+                        href: api/unifiedroledefinition-delete.md
+                  - name: Назначение ролей
+                    href: resources/unifiedroleassignment.md
+                    items:
+                      - name: Назначение роли списка
+                        href: api/rbacapplication-list-roleassignments.md
+                      - name: Создание назначения роли
+                        href: api/rbacapplication-post-roleassignments.md
+                      - name: Получение назначения ролей
+                        href: api/unifiedroleassignment-get.md
+                      - name: Удаление назначения ролей
+                        href: api/unifiedroleassignment-delete.md
+                  - name: Несколько назначений ролей
+                    href: resources/unifiedroleassignmentmultiple.md
+                    items:
+                      - name: Список
+                        href: api/unifiedroleassignmentmultiple-list.md
+                      - name: Создание
+                        href: api/unifiedroleassignmentmultiple-post.md
+                      - name: Получение
+                        href: api/unifiedroleassignmentmultiple-get.md
+                      - name: Обновление
+                        href: api/unifiedroleassignmentmultiple-update.md
+                      - name: Delete
+                        href: api/unifiedroleassignmentmultiple-delete.md
+              - name: Набор ключей инфраструктуры доверия
+                href: resources/trustframeworkkeyset.md
                 items:
-                  - name: Поиск
-                    href: api/directorydefinition-discover.md
-              - name: Задание
-                href: resources/synchronization-synchronizationjob.md
+                  - name: Список
+                    href: api/trustframework-list-keysets.md
+                  - name: Создание
+                    href: api/trustframework-post-keysets.md
+                  - name: Получение
+                    href: api/trustframeworkkeyset-get.md
+                  - name: Обновление
+                    href: api/trustframeworkkeyset-update.md
+                  - name: Delete
+                    href: api/trustframeworkkeyset-delete.md
+                  - name: Создание ключа
+                    href: api/trustframeworkkeyset-generatekey.md
+                  - name: Получение активного ключа
+                    href: api/trustframeworkkeyset-getactivekey.md
+                  - name: Отправка сертификата
+                    href: api/trustframeworkkeyset-uploadcertificate.md
+                  - name: Отправка сертификата PKCS12
+                    href: api/trustframeworkkeyset-uploadpkcs12.md
+                  - name: Отправка секрета
+                    href: api/trustframeworkkeyset-uploadsecret.md
+              - name: Политика инфраструктуры доверия
+                href: resources/trustframeworkpolicy.md
                 items:
-                  - name: Список заданий
-                    href: api/synchronization-synchronizationjob-list.md
-                  - name: Создание задания
-                    href: api/synchronization-synchronizationjob-post.md
-                  - name: Получение задания
-                    href: api/synchronization-synchronizationjob-get.md
-                  - name: Запуск задания
-                    href: api/synchronization-synchronizationjob-start.md
-                  - name: Приостановка задания
-                    href: api/synchronization-synchronizationjob-pause.md
-                  - name: Перезапуск задания
-                    href: api/synchronization-synchronizationjob-restart.md
-                  - name: Удаление задания
-                    href: api/synchronization-synchronizationjob-delete.md
-                  - name: Подготовка по запросу
-                    href: api/synchronization-synchronizationjob-provision-on-demand.md
-              - name: Схема
-                href: resources/synchronization-synchronizationschema.md
+                  - name: Список
+                    href: api/trustframework-list-trustframeworkpolicies.md
+                  - name: Создание
+                    href: api/trustframework-post-trustframeworkpolicy.md
+                  - name: Получение
+                    href: api/trustframeworkpolicy-get.md
+                  - name: Обновление
+                    href: api/trustframework-put-trustframeworkpolicy.md
+                  - name: Delete
+                    href: api/trustframeworkpolicy-delete.md
+              - name: Потоки пользователей
+                href: resources/identityuserflow.md
                 items:
-                  - name: Получение схемы
-                    href: api/synchronization-synchronizationschema-get.md
-                  - name: Получение функций схемы
-                    href: api/synchronization-synchronizationschema-functions.md
-                  - name: Получение операторов фильтра схемы
-                    href: api/synchronization-synchronizationschema-filteroperators.md
-                  - name: Обновление схемы
-                    href: api/synchronization-synchronizationschema-update.md
-                  - name: Сброс схемы
-                    href: api/synchronization-synchronizationschema-delete.md
-              - name: Шаблон
-                href: resources/synchronization-synchronizationtemplate.md
+                  - name: Список
+                    href: api/identityuserflow-list.md
+                  - name: Создание
+                    href: api/identityuserflow-post-userflows.md
+                  - name: Получение
+                    href: api/identityuserflow-get.md
+                  - name: Удаление
+                    href: api/identityuserflow-delete.md
+          - name: Управление
+            items:
+              - name: Проверки доступа
+                href: resources/accessreviews-root.md
                 items:
-                  - name: Список шаблонов
-                    href: api/synchronization-synchronizationtemplate-list.md
-                  - name: Получение шаблона
-                    href: api/synchronization-synchronizationtemplate-get.md
-          - name: Условия использования
-            href: resources/agreement.md
-            items:
-              - name: Создание соглашения
-                href: api/agreement-post-agreements.md
-              - name: Список соглашений
-                href: api/agreement-list.md
-              - name: Получение соглашения
-                href: api/agreement-get.md
-              - name: Обновление соглашения
-                href: api/agreement-update.md
-              - name: Удаление соглашения
-                href: api/agreement-delete.md
-              - name: Список состояний принятия
-                href: api/user-list-agreementacceptances.md
-          - name: Политика инфраструктуры доверия
-            href: resources/trustframeworkpolicy.md
-            items:
-              - name: Список
-                href: api/trustframework-list-trustframeworkpolicies.md
-              - name: Создание
-                href: api/trustframework-post-trustframeworkpolicy.md
-              - name: Получение
-                href: api/trustframeworkpolicy-get.md
-              - name: Обновление
-                href: api/trustframework-put-trustframeworkpolicy.md
-              - name: Delete
-                href: api/trustframeworkpolicy-delete.md
-          - name: Набор ключей инфраструктуры доверия
-            href: resources/trustframeworkkeyset.md
-            items:
-              - name: Список
-                href: api/trustframework-list-keysets.md
-              - name: Создание
-                href: api/trustframework-post-keysets.md
-              - name: Получение
-                href: api/trustframeworkkeyset-get.md
-              - name: Обновление
-                href: api/trustframeworkkeyset-update.md
-              - name: Delete
-                href: api/trustframeworkkeyset-delete.md
-              - name: Создание ключа
-                href: api/trustframeworkkeyset-generatekey.md
-              - name: Получение активного ключа
-                href: api/trustframeworkkeyset-getactivekey.md
-              - name: Отправка сертификата
-                href: api/trustframeworkkeyset-uploadcertificate.md
-              - name: Отправка сертификата PKCS12
-                href: api/trustframeworkkeyset-uploadpkcs12.md
-              - name: Отправка секрета
-                href: api/trustframeworkkeyset-uploadsecret.md
-          - name: Потоки пользователей
-            href: resources/identityuserflow.md
-            items:
-              - name: Список
-                href: api/identityuserflow-list.md
-              - name: Создание
-                href: api/identityuserflow-post-userflows.md
-              - name: Получение
-                href: api/identityuserflow-get.md
-              - name: Удаление
-                href: api/identityuserflow-delete.md
+                  - name: Проверка доступа
+                    href: resources/accessreview.md
+                    items:
+                      - name: Просмотр списка проверок доступа
+                        href: api/accessreview-list.md
+                      - name: Проверка получения доступа
+                        href: api/accessreview-get.md
+                      - name: Проверка создания доступа
+                        href: api/accessreview-create.md
+                      - name: Проверка обновления доступа
+                        href: api/accessreview-update.md
+                      - name: Проверка удаления доступа
+                        href: api/accessreview-delete.md
+                      - name: Добавление рецензента
+                        href: api/accessreview-addreviewer.md
+                      - name: Список решений
+                        href: api/accessreview-listdecisions.md
+                      - name: Список "Мои решения"
+                        href: api/accessreview-listmydecisions.md
+                      - name: Список рецензентов
+                        href: api/accessreview-listreviewers.md
+                      - name: Удаление рецензента
+                        href: api/accessreview-removereviewer.md
+                      - name: Сбросить
+                        href: api/accessreview-reset.md
+                      - name: Отправить напоминание
+                        href: api/accessreview-sendreminder.md
+                      - name: Остановить
+                        href: api/accessreview-stop.md
+                  - name: Шаблон бизнес-потока
+                    href: resources/businessflowtemplate.md
+                    items:
+                      - name: List
+                        href: api/businessflowtemplate-list.md
+                  - name: Программа
+                    href: resources/program.md
+                    items:
+                      - name: Создать
+                        href: api/program-create.md
+                      - name: Удалить
+                        href: api/program-delete.md
+                      - name: List
+                        href: api/program-list.md
+                      - name: Обновление
+                        href: api/program-update.md
+                      - name: Список элементов управления
+                        href: api/program-listcontrols.md
+                  - name: Элемент управления программы
+                    href: resources/programcontrol.md
+                    items:
+                      - name: Создать
+                        href: api/programcontrol-create.md
+                      - name: Удалить
+                        href: api/programcontrol-delete.md
+                      - name: List
+                        href: api/programcontrol-list.md
+                  - name: Тип элемента управления программы
+                    href: resources/programcontroltype.md
+                    items:
+                      - name: Список
+                        href: api/programcontroltype-list.md
+              - name: Управление обслуживанием
+                href: resources/entitlementmanagement-root.md
+                items:
+                  - name: Пакет Access
+                    href: resources/accesspackage.md
+                    items:
+                      - name: Список
+                        href: api/accesspackage-list.md
+                      - name: Создание
+                        href: api/accesspackage-post.md
+                      - name: Получение
+                        href: api/accesspackage-get.md
+                      - name: Удаление
+                        href: api/accesspackage-delete.md
+                  - name: Назначение пакетов Access
+                    href: resources/accesspackageassignment.md
+                    items:
+                      - name: List
+                        href: api/accesspackageassignment-list.md
+                  - name: Политика назначения пакетов Access
+                    href: resources/accesspackageassignmentpolicy.md
+                    items:
+                      - name: Список
+                        href: api/accesspackageassignmentpolicy-list.md
+                      - name: Создание
+                        href: api/accesspackageassignmentpolicy-post.md
+                      - name: Получение
+                        href: api/accesspackageassignmentpolicy-get.md
+                      - name: Удаление
+                        href: api/accesspackageassignmentpolicy-delete.md
+                  - name: Запрос на назначение пакета Access
+                    href: resources/accesspackageassignmentrequest.md
+                    items:
+                      - name: Список
+                        href: api/accesspackageassignmentrequest-list.md
+                      - name: Создание
+                        href: api/accesspackageassignmentrequest-post.md
+                      - name: Получение
+                        href: api/accesspackageassignmentrequest-get.md
+                  - name: Роль ресурса назначения пакетов Access
+                    href: resources/accesspackageassignmentresourcerole.md
+                    items:
+                      - name: Перечисление
+                        href: api/accesspackageassignmentresourcerole-list.md
+                      - name: Получение
+                        href: api/accesspackageassignmentresourcerole-get.md
+                  - name: Доступ к каталогу пакетов
+                    href: resources/accesspackagecatalog.md
+                    items:
+                      - name: Список
+                        href: api/accesspackagecatalog-list.md
+                      - name: Создание
+                        href: api/accesspackagecatalog-post.md
+                      - name: Получение
+                        href: api/accesspackagecatalog-get.md
+                      - name: Удаление
+                        href: api/accesspackagecatalog-delete.md
+                      - name: Список ресурсов
+                        href: api/accesspackagecatalog-list-accesspackageresources.md
+                      - name: Список ролей ресурса
+                        href: api/accesspackagecatalog-list-accesspackageresourceroles.md
+                  - name: Запрос на доступ к ресурсу пакета
+                    href: resources/accesspackageresourcerequest.md
+                    items:
+                      - name: Список
+                        href: api/accesspackageresourcerequest-list.md
+                      - name: Создание
+                        href: api/accesspackageresourcerequest-post.md
+                  - name: Область применения роли ресурса пакета Access
+                    href: resources/accesspackageresourcerolescope.md
+                    items:
+                      - name: Список
+                        href: api/accesspackage-list-accesspackageresourcerolescopes.md
+                      - name: Создание
+                        href: api/accesspackage-post-accesspackageresourcerolescopes.md
+              - name: Служба Privileged Identity Management
+                items:
+                  - name: Служба Privileged Identity Management
+                    href: resources/privilegedidentitymanagement-root.md
+                  - name: Azure AD
+                    items:
+                      - name: Azure AD
+                        href: resources/privilegedidentitymanagement-directory.md
+                      - name: Привилегированная роль
+                        href: resources/privilegedrole.md
+                        items:
+                          - name: Список привилегированных ролей
+                            href: api/privilegedrole-list.md
+                          - name: Получение привилегированной роли
+                            href: api/privilegedrole-get.md
+                          - name: Список назначений ролей
+                            href: api/privilegedrole-list-assignments.md
+                          - name: Самостоятельная активация роли
+                            href: api/privilegedrole-selfactivate.md
+                          - name: Самостоятельная деактивация роли
+                            href: api/privilegedrole-selfdeactivate.md
+                          - name: Получение параметров роли
+                            href: api/privilegedrolesettings-get.md
+                          - name: Обновление параметров роли
+                            href: api/privilegedrolesettings-update.md
+                          - name: Получение сводки по ролям
+                            href: api/privilegedrolesummary-get.md
+                      - name: Назначение привилегированных ролей
+                        href: resources/privilegedroleassignment.md
+                        items:
+                          - name: Список назначений ролей
+                            href: api/privilegedroleassignment-list.md
+                          - name: Получение назначения ролей
+                            href: api/privilegedroleassignment-get.md
+                          - name: Создание назначений ролей
+                            href: api/privilegedroleassignment-post-privilegedroleassignments.md
+                          - name: Удаление назначения ролей
+                            href: api/privilegedroleassignment-delete.md
+                          - name: Получение своих назначений ролей
+                            href: api/privilegedroleassignment-my.md
+                          - name: 'Выполнение назначения ролей, соответствующего требованиям'
+                            href: api/privilegedroleassignment-makeeligible.md
+                          - name: Выполнение бессрочного назначения ролей
+                            href: api/privilegedroleassignment_makepermanent.md
+                      - name: Запрос назначения привилегированных ролей
+                        href: resources/privilegedroleassignmentrequest.md
+                        items:
+                          - name: Список назначений ролей
+                            href: api/privilegedroleassignmentrequest-list.md
+                          - name: Создание назначений ролей
+                            href: api/privilegedroleassignmentrequest-post.md
+                          - name: Отмена назначений ролей
+                            href: api/privilegedroleassignmentrequest-cancel.md
+                          - name: Получение своих назначений ролей
+                            href: api/privilegedroleassignmentrequest-my.md
+                      - name: Привилегированные утверждения
+                        href: resources/privilegedapproval.md
+                        items:
+                          - name: Список привилегированных утверждений
+                            href: api/privilegedapproval-list.md
+                          - name: Получение привилегированных утверждений
+                            href: api/privilegedapproval-get.md
+                          - name: Обновление назначения ролей
+                            href: api/privilegedapproval-update.md
+                      - name: Событие аудита
+                        href: resources/privilegedoperationevent.md
+                        items:
+                          - name: Список событий аудита
+                            href: api/privilegedoperationevent-list.md
+                  - name: Ресурсы Azure
+                    items:
+                      - name: Ресурсы Azure
+                        href: resources/privilegedidentitymanagement-resources.md
+                      - name: Управляемые ресурсы
+                        href: resources/governanceresource.md
+                        items:
+                          - name: Перечисление
+                            href: api/governanceresource-list.md
+                          - name: Получение
+                            href: api/governanceresource-get.md
+                          - name: Зарегистрировать
+                            href: api/governanceresource-register.md
+                      - name: Определения ролей
+                        href: resources/governanceroledefinition.md
+                        items:
+                          - name: Перечисление
+                            href: api/governanceroledefinition-list.md
+                          - name: Получение
+                            href: api/governanceroledefinition-get.md
+                      - name: Параметры роли
+                        href: resources/governancerolesetting.md
+                        items:
+                          - name: Перечисление
+                            href: api/governancerolesetting-list.md
+                          - name: Получение
+                            href: api/governancerolesetting-get.md
+                          - name: Обновление
+                            href: api/governancerolesetting-update.md
+                      - name: Назначения ролей
+                        href: resources/governanceroleassignment.md
+                        items:
+                          - name: Перечисление
+                            href: api/governanceroleassignment-list.md
+                          - name: Получение
+                            href: api/governanceroleassignment-get.md
+                          - name: Экспорт
+                            href: api/governanceroleassignment-export.md
+                      - name: Запросы назначения роли
+                        href: resources/governanceroleassignmentrequest.md
+                        items:
+                          - name: Список
+                            href: api/governanceroleassignmentrequest-list.md
+                          - name: Создание
+                            href: api/governanceroleassignmentrequest-post.md
+                          - name: Получение
+                            href: api/governanceroleassignmentrequest-get.md
+                          - name: Обновление
+                            href: api/governanceroleassignmentrequest-update.md
+                          - name: Отмена
+                            href: api/governanceroleassignmentrequest-cancel.md
+              - name: Условия использования
+                href: resources/agreement.md
+                items:
+                  - name: Создание соглашения
+                    href: api/agreement-post-agreements.md
+                  - name: Список соглашений
+                    href: api/agreement-list.md
+                  - name: Получение соглашения
+                    href: api/agreement-get.md
+                  - name: Обновление соглашения
+                    href: api/agreement-update.md
+                  - name: Удаление соглашения
+                    href: api/agreement-delete.md
+                  - name: Список состояний принятия
+                    href: api/user-list-agreementacceptances.md
       - name: Почта
         displayName: 'Outlook, Outlook mail'
         items:
@@ -10947,7 +10957,7 @@ items:
               - name: Действия в OneDrive
                 href: resources/onedrive-activity-reports.md
                 items:
-                  - name: Получение сведений о пользователе
+                  - name: Получение сведений о пользователях
                     href: api/reportroot-getonedriveactivityuserdetail.md
                   - name: Получение количества пользователей
                     href: api/reportroot-getonedriveactivityusercounts.md
@@ -11260,7 +11270,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
