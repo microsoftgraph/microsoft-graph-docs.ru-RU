@@ -5,12 +5,11 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ff663e0775a0a18f8f82daaa547a6ca774f9138f
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: 12928d7917ea0a274c69454d82943d72a7587c67
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289119"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050717"
 ---
 # <a name="applicationtemplate-instantiate"></a>Аппликатионтемплате: создание экземпляра
 
@@ -22,13 +21,13 @@ ms.locfileid: "44289119"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+| Приложение                            | Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -63,6 +62,9 @@ POST /applicationTemplates/{id}/instantiate
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+> [!NOTE] 
+> Вы можете использовать этот API для создания экземпляров [приложений, не относящихся к коллекции](https://docs.microsoft.com/azure/active-directory/manage-apps/add-non-gallery-app). Используйте следующий идентификатор для **аппликатионтемплате**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

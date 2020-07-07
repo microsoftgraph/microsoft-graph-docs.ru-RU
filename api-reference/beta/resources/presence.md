@@ -5,12 +5,11 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 797ddac8bc582cd5e5d4d51e0e1ad94645c3c1e0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
-ms.translationtype: MT
+ms.openlocfilehash: 3a185d3f38fb1437205d99be103974f78eb49d6b
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521574"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050920"
 ---
 # <a name="presence-resource-type"></a>Тип ресурса присутствия
 
@@ -19,6 +18,8 @@ ms.locfileid: "42521574"
 Содержит сведения о присутствии пользователя, в том числе сведения о доступности и активности пользователей.
 
 > **Примечание:** Этот ресурс в настоящее время поддерживается только для пользователей Microsoft Teams.
+
+Этот ресурс поддерживает подписку на [уведомления об изменениях](/graph/webhooks).
 
 ## <a name="methods"></a>Методы
 
@@ -33,8 +34,8 @@ ms.locfileid: "42521574"
 | Связь        | Тип                                                 | Описание                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 |id    |  string     |  Идентификатор объекта пользователя   |
-|availability    |  Коллекция строк   |   Базовые сведения о присутствии для пользователя. Возможные значения: `Available`, `AvailableIdle`, `Away`, `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb`,,,, `Offline`,`PresenceUnknown`  |
-|activity    |  Коллекция строк      |    Дополнительная информация о доступности пользователя. Возможные значения: `Available`, `Away`, `BeRightBack`,`Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `PresenceUnknown``Presenting` `UrgentInterruptionsOnly`,,,,,,,,,,. `Inactive``InAMeeting` `Offline` `OffWork``OutOfOffice`       |
+|availability    |  Коллекция строк   |   Базовые сведения о присутствии для пользователя. Возможные значения:,,,,,,, `Available` `AvailableIdle` `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` `Offline` ,`PresenceUnknown`  |
+|activity    |  Коллекция строк      |    Дополнительная информация о доступности пользователя. Возможные значения:,,,,,,,,,,, `Available` `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` , `Presenting` , `UrgentInterruptionsOnly` .       |
 
 >**Примечание:** Чтобы узнать больше о различных состояниях присутствия, ознакомьтесь с разделом сведения о [присутствии пользователей в Teams](https://docs.microsoft.com/microsoftteams/presence-admins). 
 

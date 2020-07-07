@@ -5,12 +5,11 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: efe599d9a1b4f7a928f9b0ae7dabfc845683af30
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: MT
+ms.openlocfilehash: 73f89ac24bedad9cfd632674040b288aac151f23
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491285"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050754"
 ---
 # <a name="get-conversationmember"></a>Получение объекта conversationMember
 
@@ -22,13 +21,13 @@ ms.locfileid: "44491285"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| Для ресурсов " **пользователь** " или " **чат** ": Chat. ReadBasic, Chat. Read, Chat. ReadWrite<br/><br/>Для ресурса **Channel** : Чаннелмембер. Read. ALL, Чаннелмембер. ReadWrite, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Сервер приложений| Для ресурсов " **пользователь** " или " **чат** ": Chat. ReadBasic. ALL, Chat. Read. ALL, Chat. ReadWrite. ALL<br/><br/>Для ресурса **Channel** : Member. Read. Group *, Чаннелмембер. Read. ALL, Чаннелмембер. ReadWrite. ALL, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Приложение| Для ресурсов " **пользователь** " или " **чат** ": Chat. ReadBasic. ALL, Chat. Read. ALL, Chat. ReadWrite. ALL<br/><br/>Для ресурса **Channel** : Member. Read. Group *, Чаннелмембер. Read. ALL, Чаннелмембер. ReadWrite. ALL, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
 
 > **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом](https://aka.ms/teams-rsc).
 
@@ -51,9 +50,9 @@ GET /teams/{id}/channels/{id}/members/{id}
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Required.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -93,10 +92,11 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 
 Ниже приведен пример отклика.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http

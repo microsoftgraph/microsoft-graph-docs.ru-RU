@@ -9502,6 +9502,11 @@ items:
                     href: api/organization-get.md
                   - name: Обновление сведений об организации
                     href: api/organization-update.md
+              - name: Параметры Организации
+                href: resources/organizationSettings.md
+                items:
+                  - name: Получение параметров Организации
+                    href: api/organizationSettings-get.md
               - name: Контакты организации
                 href: resources/orgcontact.md
                 items:
@@ -10700,6 +10705,20 @@ items:
                     href: api/personwebsite-update.md
                   - name: Удаление
                     href: api/personwebsite-delete.md
+          - name: Настройка карточки профиля (Предварительная версия)
+            items:
+              - name: Свойство карточки профиля
+                href: resources/profilecardproperty.md
+              - name: Список
+                href: api/organizationsettings-list-profilecardproperties.md
+              - name: Создание
+                href: api/organizationsettings-post-profilecardproperties.md
+              - name: Получение
+                href: api/profilecardproperty-get.md
+              - name: Обновление
+                href: api/profilecardproperty-update.md
+              - name: Удаление
+                href: api/profilecardproperty-delete.md
           - name: Аналитика
             href: resources/officegraphinsights.md
             items:
@@ -11383,6 +11402,14 @@ items:
                 href: api/team-update.md
               - name: Удаление команды
                 href: api/group-delete.md
+              - name: Список участников
+                href: api/team-list-members.md
+              - name: Добавление элементов
+                href: api/team-post-members.md
+              - name: Удаление участников
+                href: api/team-delete-members.md
+              - name: Обновление участника
+                href: api/conversationmember-update.md
               - name: Архивация объекта команды
                 href: api/team-archive.md
               - name: Распаковка объекта команды
@@ -11791,7 +11818,7 @@ items:
           - name: Группа задач Outlook
             href: resources/outlooktaskgroup.md
             items:
-              - name: Перечисление
+              - name: Список
                 href: api/outlookuser-list-taskgroups.md
               - name: Создание
                 href: api/outlookuser-post-taskgroups.md
@@ -11878,7 +11905,7 @@ items:
           - name: Комментарии к книге
             href: resources/workbookcomment.md
             items:
-              - name: Список
+              - name: Перечисление
                 href: api/workbook-list-comments.md
               - name: Получение
                 href: api/workbookcomment-get.md

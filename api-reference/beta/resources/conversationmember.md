@@ -5,12 +5,11 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 796bbe9f64342f97a9ae18363fdc01dc1712d015
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
-ms.translationtype: MT
+ms.openlocfilehash: d0100f967c5fb2ad154f94bfe777be12517d859e
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507403"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050895"
 ---
 # <a name="conversationmember-resource-type"></a>Тип ресурса conversationMember
 
@@ -19,6 +18,7 @@ ms.locfileid: "42507403"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет пользователя в [чате](chat.md) или [канале](channel.md).
+См. также [аадусерконверсатионмембер](aaduserconversationmember.md).
 
 ## <a name="methods"></a>Методы
 

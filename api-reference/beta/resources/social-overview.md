@@ -5,12 +5,11 @@ localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 9085db75d70932fe3364b5739a33fc480f30032a
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
-ms.translationtype: HT
+ms.openlocfilehash: d1e1f49125aa8959c1cdd6b2f47cc5c4ff81d962
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844262"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050969"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении
 
@@ -33,6 +32,14 @@ Microsoft Graph обеспечивает доступ к полезным дан
 Люди, которые хотят получить контекстные сведения о других сотрудниках организации, обычно просматривают профиль или карточку соответствующего пользователя. 
 
 Ресурс [profile](../resources/profile.md) является богатым источником информации о пользователях в клиенте, который предоставляет удобный механизм хранения и получения информации о людях. 
+
+## <a name="personalize-people-experiences-within-your-organization"></a>Настройка взаимодействия с пользователями в Организации
+
+Функция: Настройка карточки профиля (Предварительная версия)
+
+Позволяет администратору настраивать сведения, отображаемые в карточке профиля, используемой в Microsoft 365 в Организации.
+
+Ресурс [профилекардпроперти](../resources/profileCardProperty.md) представляет атрибут пользователя в карточке профиля Microsoft 365, который Организация будет использовать совместно с другими пользователями.
 
 ## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>Помощь пользователям в получении наиболее важных документов для работы
 
@@ -78,4 +85,7 @@ Include the next sentence when supporting events.
 Используйте API аналитики, чтобы получить статистику о действиях и соответствующие параметры для пользователя:
 
 - [settings](../resources/settings.md). Чтобы API аналитики возвращал результаты для пользователя, в параметрах аналитики текущего пользователя должна отображаться действительная лицензия MyAnalytics, должно быть выбрано использование MyAnalytics и должен применяться облачный почтовый ящик с поддержкой Graph.
-- [activityStatistics](../resources/activitystatistics.md). Получение данных за последнюю полную неделю (или указанный промежуток времени) для действий в Office 365, выполнявшихся пользователем, включая количество часов, потраченное на [звонки](callactivitystatistics.md), [чаты (мгновенные сообщения)](chatactivitystatistics.md), [письма](emailactivitystatistics.md) и [собрания](meetingactivitystatistics.md) в течение и вне рабочего времени, а также часы, доступные для [сосредоточенной работы](focusactivitystatistics.md).
+- [активитистатистикс](../resources/activitystatistics.md): получает данные за последнюю полную неделю (или указанный диапазон времени) для действий Microsoft 365, затраченных пользователем, в том числе количество часов, затраченных на [звонки](callactivitystatistics.md), [беседы (мгновенные сообщения)](chatactivitystatistics.md), [электронную почту](emailactivitystatistics.md)и [собрания](meetingactivitystatistics.md) в течение и за пределами рабочего времени, а также количество часов, доступных для [фокусной работы](focusactivitystatistics.md).
+
+## <a name="whats-new"></a>Новые возможности
+Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этих наборов API.

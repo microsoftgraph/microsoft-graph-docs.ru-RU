@@ -5,18 +5,15 @@ localization_priority: Priority
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: caf8336d58ee40fcc1bf51b569cf334ba99294fc
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
-ms.translationtype: HT
+ms.openlocfilehash: b311326c87f6900bc6db3da6e1e760d2a69b16c7
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228354"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050724"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>Тип ресурса aadUserConversationMember
 
 Пространство имен: microsoft.graph
-
-
 
 Представляет пользователя Azure Active Directory в [чате](chat.md) или [канале](channel.md). Этот тип наследуется от [conversationMember](conversationmember.md).
 

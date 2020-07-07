@@ -5,12 +5,11 @@ localization_priority: Normal
 author: baywet
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: c8a23236d312c6e4d20a6c6018ff3a77957517e6
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: f87dbecca8429d5eeed6196fe0ddab0a5a418eda
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898298"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050899"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -36,6 +35,7 @@ REST API Microsoft Graph использует механизм веб-перех
 | [Оповещение][] безопасности | Изменения в конкретном предупреждении:<br>`/security/alerts/{id}` <br>Изменения в отфильтрованных оповещениях:<br> `/security/alerts/?$filter`| Нет |
 | [Каллрекорд][] Teams | Изменения _всех_ записей вызовов:`/communications/callRecords` | Нет |
 | [chatMessage](/graph/api/resources/subscription?view=graph-rest-beta) Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/allMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/allMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages` | Да |
+| [Присутствие][] в Teams | Изменения, внесенные в сведения о присутствии одного пользователя:`/communications/presences/{id}` <br> Изменения, внесенные в сведения о присутствии нескольких пользователей:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Да |
 
 > **Примечание**. Любой путь ресурса, начинающийся с `/users/{id}`, может принимать `/me` для указания вошедшего пользователя.
 
@@ -45,7 +45,7 @@ In general, subscription operations require read permission to the resource. For
 
 | Тип разрешения                        | Поддерживаемые типы ресурсов                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Делегированное — рабочая или учебная учетная запись     | [alert][], [contact][], [conversation][], [driveItem][], [list][], [event][], [group][], [message][], [user][]|
+| Делегированное — рабочая или учебная учетная запись     | [оповещение][], [контакт][], [беседа][], [driveItem][], [список][], [событие][], [Группа][], [сообщение][], [пользователь][], [присутствие][]|
 | Делегированное — личная учетная запись Майкрософт | [contact][], [driveItem][], [list][], [event][], [message][]                                        |
 | Для приложения                            | [Alert][], [Contact][], [driveItem][], [List][], [event][], [Group][], [Message][], [User][], [каллрекорд][], [chatMessage][]|
 
@@ -70,3 +70,4 @@ In general, subscription operations require read permission to the resource. For
 [user]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
 [alert]: ./alert.md
+[presence]: ./presence.md

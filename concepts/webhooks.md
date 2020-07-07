@@ -5,12 +5,11 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: bfd2ddff5fe87ccabd2c0d7a935ba429c67bda09
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
-ms.translationtype: MT
+ms.openlocfilehash: 47c4357a59b02322769433fb82d0e9fe02fc1aae
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038508"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050927"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -43,10 +42,11 @@ The Microsoft Graph API uses a webhook mechanism to deliver change notifications
 - [Оповещение][] безопасности
 - [Каллрекорд][] Teams
 - Teams [chatMessage][] (предварительная версия)
+- [Присутствие][] в Teams (Предварительная версия)
 
 Например, вы можете создать подписку на определенную папку Outlook, например, папку Входящие: `me/mailFolders('inbox')/messages`
 
-Или на ресурс верхнего уровня:,, `/me/messages` `/me/contacts` ,, `/me/events` `users` `groups` или`/communications/callRecords`
+Или на ресурс верхнего уровня:,, `/me/messages` ,,, `/me/contacts` `/me/events` `users` `groups` `/communications/callRecords` , или`/communications/presences`
 
 либо на определенный экземпляр ресурса: `users/{id}`, `groups/{id}`, `groups/{id}/conversations`;
 
@@ -99,7 +99,7 @@ The Microsoft Graph API uses a webhook mechanism to deliver change notifications
 
 ### <a name="creating-a-subscription"></a>Создание подписки
 
-Creating a subscription is the first step to start receiving change notifications for a resource. The subscription process is as follows:
+Создание подписки — это первый шаг к началу получения уведомлений об изменениях для ресурса. Это происходит следующим образом:
 
 1. Клиент отправляет запрос (POST) на подписку для определенного ресурса.
 
@@ -274,4 +274,5 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
 [callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
+[presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
