@@ -125,8 +125,6 @@ items:
             href: cloud-communications-callrecords.md
           - name: Управление номерами телефонов для ботов
             href: cloud-communications-phone-number.md
-          - name: Ограничения
-            href: cloud-communications-limits.md
       - name: Взаимодействие с разными устройствами
         displayName: Project Rome
         items:
@@ -263,9 +261,9 @@ items:
         items:
           - name: Обзор
             href: social-intel-concept-overview.md
-          - name: Получение информации о релевантных людях
-            href: people-example.md
-      - name: Личные контакты.
+          - name: Настройка карточки профиля (предварительная версия)
+            href: add-properties-profilecard.md
+      - name: Личные контакты
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
         items:
           - name: Обзор
