@@ -5,11 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 974e1e7af86133ef46c7d4360def1aef153ee3ec
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: a577d050ae55ec7b99cbceb23f27a6dd4ec2121f
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45051118"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081363"
 ---
 # <a name="profilecardproperty-resource-type"></a>Тип ресурса Профилекардпроперти
 
@@ -19,7 +20,7 @@ ms.locfileid: "45051118"
 
 Атрибут может быть встроенным атрибутом Azure Active Directory (Azure AD), таким как `Alias` OR `UserPrincipalName` , или может быть настраиваемым атрибутом. Для настраиваемого атрибута администратор может определить `en-us` строку отображаемого имени по умолчанию и набор альтернативных переводов для языков, поддерживаемых в Организации.
 
-Дополнительные сведения о добавлении свойств в карточку профиля для организации можно узнать в статье Настройка карточки профиля.
+Дополнительные сведения о добавлении свойств в карточку профиля для организации можно узнать в статье [Настройка карточки профиля](/graph/add-properties-profilecard).
 
 ## <a name="methods"></a>Методы
 

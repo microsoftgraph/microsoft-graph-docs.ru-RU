@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2d6e406f621222757166da162ff7e026f5ce239c
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: a5f9b077239bf60984aecd0b43a5cbda729d7e3b
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38751834"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080821"
 ---
 ```objc
 
@@ -37,6 +37,7 @@ MSGraphObjectIdentity *identities = [[MSGraphObjectIdentity alloc] init];
 [user setIdentities:identitiesList];
 MSGraphPasswordProfile *passwordProfile = [[MSGraphPasswordProfile alloc] init];
 [passwordProfile setPassword:@"password-value"];
+[passwordProfile setForceChangePasswordNextSignIn: false];
 [user setPasswordProfile:passwordProfile];
 [user setPasswordPolicies:@"DisablePasswordExpiration"];
 

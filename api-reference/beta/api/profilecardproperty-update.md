@@ -5,11 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1271d36a0fb2ec11e117ac4fac4cb3c95dc06c70
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: fa2073ba29270ea9c0dc95e22c192b3ae7decc3c
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45051061"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080665"
 ---
 # <a name="update-profilecardproperty"></a>Обновление Профилекардпроперти
 
@@ -64,6 +65,8 @@ PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperti
 ### <a name="request"></a>Запрос
 
 В примере ниже показано, как добавить локализованную метку "Костнадс Sent" для языкового стандарта "No – NetBIOS".
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_profilecardproperty"
@@ -86,6 +89,12 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-profilecardproperty-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

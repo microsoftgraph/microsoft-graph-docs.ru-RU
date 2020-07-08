@@ -5,11 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1bbdb77ea7d9cd9d76f63198b449b4f03181bc62
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: 24fe1a2f4257475849ecb3c057843d7cd0661a21
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45051134"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080641"
 ---
 # <a name="create-profilecardproperty"></a>Создание Профилекардпроперти
 
@@ -19,7 +20,7 @@ ms.locfileid: "45051134"
 
 Создание нового [профилекардпроперти](../resources/profilecardproperty.md) для Организации. Новое свойство определяется свойством **директорипропертинаме** .
 
-Дополнительные сведения о добавлении свойств в карточку профиля для организации можно узнать в статье Настройка карточки профиля.
+Дополнительные сведения о добавлении свойств в карточку профиля для организации можно узнать в статье [Настройка карточки профиля](/graph/add-properties-profilecard).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -61,6 +62,8 @@ POST https://graph.microsoft.com/beta/organization/settings/profileCardPropertie
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_profilecardproperty_from_organizationsettings"
@@ -85,6 +88,12 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-profilecardproperty-from-organizationsettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

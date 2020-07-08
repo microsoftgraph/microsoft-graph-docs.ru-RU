@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0b22ca9852d89c0d80d52959cef99c68fcc43bb8
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 34766ce4e6fe210369869f71213fb596432cbaab
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006851"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081242"
 ---
 # <a name="educationclass-delta"></a>educationClass: Delta
 
@@ -26,9 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                              |
 | :------------------------------------- | :----------------------------------------------------------------------- |
-| Делегированное (рабочая или учебная учетная запись)     | EduRoster. ReadBasic, EduRoster. Read или EduRoster. ReadWrite              |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                           |
-| Для приложений                            | EduRoster. ReadBasic. ALL, EduRoster. Read. ALL или EduRoster. Вритеврите. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | EduRoster. ReadBasic, EduRoster. Read или EduRoster. ReadWrite              |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                           |
+| Приложение                            | EduRoster. ReadBasic. ALL, EduRoster. Read. ALL или EduRoster. Вритеврите. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -63,14 +63,30 @@ GET /education/classes/delta
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationclass_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/delta
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/educationclass-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationclass-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/educationclass-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
