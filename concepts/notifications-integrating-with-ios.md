@@ -3,12 +3,12 @@ title: Интеграция приложения iOS с клиентским п�
 description: Интеграция приложения iOS с клиентским пакетом SDK уведомления пользователей.
 localization_priority: Priority
 ms.prod: Microsoft Graph notifications
-ms.openlocfilehash: d11acc2d0c83fc6298e5c4d25aff1563ebe6c2c1
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 007a82f18e1cc8bfcb2dfcd4c18753ed6a3f261d
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969866"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080915"
 ---
 # <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>Интеграция приложения iOS с клиентским пакетом SDK для уведомления пользователей
 

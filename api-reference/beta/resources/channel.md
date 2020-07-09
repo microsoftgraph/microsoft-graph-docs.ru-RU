@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1f14b7240500cceebd39e2bde1b91e2dbf477322
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 7361e931dbc8fdb2416d73da499c2ea84bdc37ca
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791092"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081017"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -47,7 +47,7 @@ ms.locfileid: "44791092"
 |description|String|Необязательное текстовое описание канала.|
 |displayName|String|Имя канала, отображаемое для пользователя в Microsoft Teams.|
 |id|String|Уникальный идентификатор канала. Только для чтения.|
-|isFavoriteByDefault|Логический|Указывает, должен ли канал автоматически помечаться как "Избранное" для всех участников команды. Значение по умолчанию: `false`.|
+|isFavoriteByDefault|Логический|Указывает, должен ли канал автоматически помечаться как "Избранное" для всех участников команды. Задается только программными средствами с помощью [Создания группы](../api/team-post.md). Значение по умолчанию: `false`.|
 |email|String| Адрес электронной почты для отправки сообщений в канал. Только для чтения.|
 |webUrl|String|Гиперссылка, ведущая к каналу в Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по каналу в Microsoft Teams и выборе пункта "Получить ссылку на канал". Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|Тип канала. Можно настроить во время создания и нельзя изменить. Значение по умолчанию: standard.|
