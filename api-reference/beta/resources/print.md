@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 551fa42736d6fa275a8f998274a6fccf55ac00b7
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: b32ebb749b3b13ee1d468de69b0724fe281e6793
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006977"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091503"
 ---
 # <a name="print-resource-type"></a>Тип ресурса Print
 
@@ -30,6 +30,10 @@ ms.locfileid: "45006977"
 | [Создание Принтершаре](../api/print-post-shares.md) | [принтершаре](printershare.md) | Создайте новый общий ресурс для принтера, отправив его в коллекцию **shares** . |
 | [Создание принтера](../api/printer-create.md) | [принтеркреатеоператион](printerCreateOperation.md) | Создание (регистрация) нового принтера с универсальной печатью. |
 | [Обновление параметров](../api/print-update-settings.md) |  [принтсеттингс](printsettings.md) | Обновляет параметры на уровне клиента для универсальной службы печати. |
+| [Список Таскдефинитионс](../api/print-list-taskdefinitions.md) | Коллекция [принттаскдефинитион](printtaskdefinition.md) | Получение общего для клиента списка Принттаскдефинитионс, созданного в универсальной печати. |
+| [Создание Таскдефинитион](../api/print-post-taskdefinitions.md) | [принттаскдефинитион](printtaskdefinition.md) | Создание нового Принттаскдефинитион. |
+| [Обновление Таскдефинитион](../api/print-update-taskdefinition.md) | [принттаскдефинитион](printtaskdefinition.md) | Обновление Принттаскдефинитион. |
+| [Удаление Таскдефинитион](../api/print-delete-taskdefinition.md) | Отсутствует | Удаление объекта Принттаскдефинитион. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |

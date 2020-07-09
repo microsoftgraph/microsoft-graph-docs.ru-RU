@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 255be26ed669e91248df1b007dc56b937ce2af98
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 6573f17753a3c9b487324def9973bddd0759ed4b
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006888"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091440"
 ---
 # <a name="printer-resource-type"></a>Тип ресурса Printer
 
@@ -29,16 +29,19 @@ ms.locfileid: "45006888"
 | [Update](../api/printer-update.md) | [Printer](printer.md) | Обновление объекта Printer. |
 | [Delete](../api/printer-delete.md) | Нет | Отмените регистрацию физического принтерфром в универсальной службе печати. |
 | [getCapabilities](../api/printer-getcapabilities.md) | [принтеркапабилитиес](printercapabilities.md) | Получение списка возможностей принтера. |
-| [ресетдефаултс](../api/printer-resetdefaults.md) | Нет | Сброс параметров принтера по умолчанию. |
+| [ресетдефаултс](../api/printer-resetdefaults.md) | Отсутствует | Сброс параметров принтера по умолчанию. |
 | [Список заданий](../api/printer-list-jobs.md) | Коллекция [printJob](printjob.md) | Получение списка заданий печати, помещенных в очередь для обработки принтером. |
 | [Создание задания](../api/printer-post-jobs.md) | [printJob](printjob.md) | Создание нового задания печати для принтера. Чтобы начать печать задания, используйте [стартпринтжоб](../api/printjob-startprintjob.md). |
 | [Список соединителей](../api/printer-list-connectors.md) | Коллекция [принтконнектор](printconnector.md) | Получение списка соединителей, с которыми связан этот принтер. |
 | [Список allowedUsers](../api/printer-list-allowedusers.md) | Коллекция [принтусеридентити](printuseridentity.md) | Получение списка пользователей, которым предоставлен доступ к отправку заданий печати на связанный принтер. |
-| [Добавление allowedUser](../api/printer-post-allowedusers.md) | Нет | Предоставьте заданному пользователю доступ на отправку заданий печати на связанный принтер. |
-| [Удаление allowedUser](../api/printer-delete-alloweduser.md) | Нет | Отзыв доступа к принтеру для указанного пользователя. |
+| [Добавление allowedUser](../api/printer-post-allowedusers.md) | Отсутствует | Предоставьте заданному пользователю доступ на отправку заданий печати на связанный принтер. |
+| [Удаление allowedUser](../api/printer-delete-alloweduser.md) | Отсутствует | Отзыв доступа к принтеру для указанного пользователя. |
 | [Список allowedGroups](../api/printer-list-allowedgroups.md) | Коллекция [принтидентити](printidentity.md) | Получение списка групп, которым предоставлен доступ на отправку заданий печати на связанный принтер. |
-| [Добавление allowedGroup](../api/printer-post-allowedgroups.md) | Нет | Предоставление указанному групповому доступу на отправку заданий печати на связанный принтер. |
-| [Удаление allowedGroup](../api/printer-delete-allowedgroup.md) | Нет | Отзыв доступа к принтеру из указанной группы. |
+| [Добавление allowedGroup](../api/printer-post-allowedgroups.md) | Отсутствует | Предоставление указанному групповому доступу на отправку заданий печати на связанный принтер. |
+| [Удаление allowedGroup](../api/printer-delete-allowedgroup.md) | Отсутствует | Отзыв доступа к принтеру из указанной группы. |
+| [Список Тасктригжерс](../api/printer-list-tasktriggers.md) | Отсутствует | Список [принттасктригжерс](printtasktrigger.md) , связанных с этим принтером. |
+| [Создание Тасктригжер](../api/printer-post-tasktriggers.md) | [принттасктригжер](printtasktrigger.md) | Создание [принттасктригжер](printtasktrigger.md) , выполняемого при возникновении событий печати. |
+| [Удаление Тасктригжер](../api/printer-delete-tasktrigger.md) | Отсутствует | Удаление [принттасктригжер](printtasktrigger.md) , связанного с принтером. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
@@ -62,6 +65,7 @@ ms.locfileid: "45006888"
 |аудиовыход|[принтконнектор](printconnector.md)|Соединители, связанные с принтером.|
 |алловедусерс|Коллекция [принтусеридентити](printuseridentity.md)|Пользователи, у которых есть доступ к печати с помощью принтера.|
 |алловедграупс|[принтидентити](printidentity.md)|Группы, у которых пользователи имеют доступ к печати с помощью принтера.|
+|тасктригжерс|Коллекция [принттасктригжер](printtasktrigger.md)|Список триггеров задач, связанных с принтером.|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
