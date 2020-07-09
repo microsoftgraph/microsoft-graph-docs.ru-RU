@@ -689,6 +689,26 @@ items:
                     href: api/application-post-owners.md
                   - name: Удалить
                     href: api/application-delete-owners.md
+              - name: Политики
+                items:
+                  - name: Политика выдачи маркеров
+                    href: resources/tokenissuancepolicy.md
+                    items:
+                      - name: Назначение
+                        href: api/application-post-tokenissuancepolicies.md
+                      - name: List
+                        href: api/application-list-tokenissuancepolicies.md
+                      - name: Удалить
+                        href: api/application-delete-tokenissuancepolicies.md
+                  - name: Политика времени существования маркера
+                    href: resources/tokenlifetimepolicy.md
+                    items:
+                      - name: Назначение
+                        href: api/application-post-tokenlifetimepolicies.md
+                      - name: List
+                        href: api/application-list-tokenlifetimepolicies.md
+                      - name: Удалить
+                        href: api/application-delete-tokenlifetimepolicies.md
           - name: Субъект-служба
             href: resources/serviceprincipal.md
             items:
@@ -759,30 +779,42 @@ items:
                     href: api/serviceprincipal-delete-owners.md
               - name: Политики
                 items:
-                  - name: Назначение типа ресурса claimsMappingPolicy
-                    href: api/serviceprincipal-post-claimsmappingpolicies.md
-                  - name: Перечисление типов ресурсов claimsMappingPolicy
-                    href: api/serviceprincipal-list-claimsmappingpolicies.md
-                  - name: Удаление типа ресурса claimsMappingPolicy
-                    href: api/serviceprincipal-delete-claimsmappingpolicies.md
-                  - name: Назначение типа ресурса homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                  - name: Перечисление типов ресурсов homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-                  - name: Удаление типа ресурса homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-                  - name: Назначить tokenIssuancePolicy
-                    href: api/application-post-tokenissuancepolicies.md
-                  - name: Перечислить tokenIssuancePolicies
-                    href: api/application-list-tokenissuancepolicies.md
-                  - name: Убрать tokenIssuancePolicy
-                    href: api/application-delete-tokenissuancepolicies.md
-                  - name: Назначение типа ресурса tokenLifetimePolicy
-                    href: api/application-post-tokenlifetimepolicies.md
-                  - name: Перечисление типов ресурсов tokenLifetimePolicy
-                    href: api/application-list-tokenlifetimepolicies.md
-                  - name: Удаление типа ресурса tokenLifetimePolicy
-                    href: api/application-delete-tokenlifetimepolicies.md
+                  - name: Политика сопоставления утверждений
+                    href: resources/claimsmappingpolicy.md
+                    items:
+                      - name: Назначение
+                        href: api/serviceprincipal-post-claimsmappingpolicies.md
+                      - name: List
+                        href: api/serviceprincipal-list-claimsmappingpolicies.md
+                      - name: Удалить
+                        href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                  - name: Политика обнаружения домашней области
+                    href: resources/homerealmdiscoverypolicy.md
+                    items:
+                      - name: Назначение
+                        href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+                      - name: List
+                        href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+                      - name: Удалить
+                        href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: Политика выдачи маркеров
+                    href: resources/tokenissuancepolicy.md
+                    items:
+                      - name: Назначение
+                        href: api/application-post-tokenissuancepolicies.md
+                      - name: List
+                        href: api/application-list-tokenissuancepolicies.md
+                      - name: Удалить
+                        href: api/application-delete-tokenissuancepolicies.md
+                  - name: Политика времени существования маркера
+                    href: resources/tokenlifetimepolicy.md
+                    items:
+                      - name: Назначение
+                        href: api/application-post-tokenlifetimepolicies.md
+                      - name: List
+                        href: api/application-list-tokenlifetimepolicies.md
+                      - name: Удалить
+                        href: api/application-delete-tokenlifetimepolicies.md
       - name: Календарь
         displayname: Outlook calendar
         items:
@@ -933,7 +965,7 @@ items:
                 href: api/calendarpermission-get.md
               - name: Обновление
                 href: api/calendarpermission-update.md
-              - name: Delete
+              - name: Удаление
                 href: api/calendarpermission-delete.md
           - name: Категории
             href: resources/outlookcategory.md
@@ -1160,7 +1192,7 @@ items:
                 items:
                   - name: Получение
                     href: api/intune-books-ebookinstallsummary-get.md
-                  - name: Update
+                  - name: Обновление
                     href: api/intune-books-ebookinstallsummary-update.md
               - name: Информация о шифровании файлов
                 href: resources/intune-apps-fileencryptioninfo.md
@@ -1244,7 +1276,7 @@ items:
               - name: Назначение электронной книги VPP для iOS
                 href: resources/intune-books-iosvppebookassignment.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-books-iosvppebookassignment-list.md
                   - name: Получение
                     href: api/intune-books-iosvppebookassignment-get.md
@@ -1257,7 +1289,7 @@ items:
               - name: Набор приложений Office для macOS
                 href: resources/intune-apps-macosofficesuiteapp.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-apps-macosofficesuiteapp-list.md
                   - name: Получение
                     href: api/intune-apps-macosofficesuiteapp-get.md
@@ -1465,7 +1497,7 @@ items:
               - name: Категория мобильных приложений
                 href: resources/intune-apps-mobileappcategory.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-apps-mobileappcategory-list.md
                   - name: Получение
                     href: api/intune-apps-mobileappcategory-get.md
@@ -1491,7 +1523,7 @@ items:
               - name: Файл содержимого мобильного приложения
                 href: resources/intune-apps-mobileappcontentfile.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-apps-mobileappcontentfile-list.md
                   - name: Получение
                     href: api/intune-apps-mobileappcontentfile-get.md
@@ -1688,7 +1720,7 @@ items:
               - name: Общая конфигурация устройств для Android
                 href: resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
@@ -1703,7 +1735,7 @@ items:
               - name: Политика соответствия требованиям рабочего профиля Android
                 href: resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md
@@ -1894,12 +1926,12 @@ items:
                 items:
                   - name: Получение
                     href: api/intune-deviceconfig-devicecomplianceuseroverview-get.md
-                  - name: Update
+                  - name: Обновление
                     href: api/intune-deviceconfig-devicecomplianceuseroverview-update.md
               - name: 'Состояние пользователей, касающийся соответствия устройств требованиям'
                 href: resources/intune-deviceconfig-devicecomplianceuserstatus.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-get.md
@@ -1921,7 +1953,7 @@ items:
               - name: Назначение конфигурации устройств
                 href: resources/intune-deviceconfig-deviceconfigurationassignment.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
@@ -2110,7 +2142,7 @@ items:
               - name: Тип ресурса iosUpdateDeviceStatus
                 href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -2138,7 +2170,7 @@ items:
               - name: Специальная конфигурация macOS
                 href: resources/intune-deviceconfig-macoscustomconfiguration.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -2312,7 +2344,7 @@ items:
               - name: Политика соответствия требованиям для Windows 10
                 href: resources/intune-deviceconfig-windows10compliancepolicy.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-windows10compliancepolicy-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-windows10compliancepolicy-get.md
@@ -2340,7 +2372,7 @@ items:
               - name: Конфигурация Windows 10 Endpoint Protection
                 href: resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
@@ -2546,7 +2578,7 @@ items:
               - name: Событие аудита
                 href: resources/intune-auditing-auditevent.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-auditing-auditevent-list.md
                   - name: Получение
                     href: api/intune-auditing-auditevent-get.md
@@ -2569,7 +2601,7 @@ items:
               - name: Обнаруженное приложение
                 href: resources/intune-devices-detectedapp.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-devices-detectedapp-list.md
                   - name: Получение
                     href: api/intune-devices-detectedapp-get.md
@@ -2970,7 +3002,7 @@ items:
               - name: Целевая защита управляемых приложений
                 href: resources/intune-mam-targetedmanagedappprotection.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-mam-targetedmanagedappprotection-list.md
                   - name: Получение
                     href: api/intune-mam-targetedmanagedappprotection-get.md
@@ -2983,7 +3015,7 @@ items:
                     href: api/intune-mam-windowsinformationprotection-list.md
                   - name: Получение
                     href: api/intune-mam-windowsinformationprotection-get.md
-                  - name: Действие назначения
+                  - name: назначения действия
                     href: api/intune-mam-windowsinformationprotection-assign.md
               - name: Приложение Windows Information Protection
                 href: resources/intune-mam-windowsinformationprotectionapp.md
@@ -3003,7 +3035,7 @@ items:
               - name: Файл AppLocker для Windows Information Protection
                 href: resources/intune-mam-windowsinformationprotectionapplockerfile.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-list.md
                   - name: Получение
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
@@ -3171,7 +3203,7 @@ items:
               - name: Соединитель Mobile Threat Defense
                 href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                   - name: Получение
                     href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -3188,7 +3220,7 @@ items:
                 items:
                   - name: Получение
                     href: api/intune-onboarding-onpremisesconditionalaccesssettings-get.md
-                  - name: Update
+                  - name: Обновление
                     href: api/intune-onboarding-onpremisesconditionalaccesssettings-update.md
               - name: Организация
                 href: resources/intune-onboarding-organization.md
@@ -3206,7 +3238,7 @@ items:
               - name: Токен VPP
                 href: resources/intune-onboarding-vpptoken.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-onboarding-vpptoken-list.md
                   - name: Получение
                     href: api/intune-onboarding-vpptoken-get.md
@@ -3860,7 +3892,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-get.md
                       - name: Обновление
                         href: api/activitybasedtimeoutpolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Политика обнаружения домашней области
                     href: resources/homerealmdiscoverypolicy.md
@@ -3873,7 +3905,7 @@ items:
                         href: api/homerealmdiscoverypolicy-get.md
                       - name: Обновление
                         href: api/homerealmdiscoverypolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/homerealmdiscoverypolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/homerealmdiscoverypolicy-list-appliesto.md
@@ -4309,7 +4341,7 @@ items:
           - name: Действия в Outlook
             href: resources/email-activity-reports.md
             items:
-              - name: Получение сведений о пользователе
+              - name: Получение сведений о пользователях
                 href: api/reportroot-getemailactivityuserdetail.md
               - name: Получение количества действий
                 href: api/reportroot-getemailactivitycounts.md
@@ -4567,7 +4599,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -5045,7 +5077,7 @@ items:
                 href: api/range-unmerge.md
               - name: Очистка
                 href: api/range-clear.md
-              - name: Удаление
+              - name: Удалить
                 href: api/range-delete.md
           - name: Таблица
             href: resources/table.md
