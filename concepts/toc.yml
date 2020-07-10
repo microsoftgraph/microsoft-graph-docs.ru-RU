@@ -80,6 +80,16 @@ items:
         href: azuread-users-concept-overview.md
       - name: Группы
         href: office365-groups-concept-overview.md
+      - name: Приложения
+        items:
+          - name: Обзор
+            href: applications-concept-overview.md
+          - name: Автоматизация настройки единого входа на основе SAML
+            href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api?context=/graph/context'
+          - name: Настройка прокси приложения
+            href: application-proxy-configure-api.md
+          - name: Настройка подготовки
+            href: 'https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api?context=/graph/context'
       - name: Календарь
         displayName: Outlook
         items:
@@ -261,6 +271,8 @@ items:
         items:
           - name: Обзор
             href: social-intel-concept-overview.md
+          - name: Получение информации о релевантных людях
+            href: people-example.md
           - name: Настройка карточки профиля (предварительная версия)
             href: add-properties-profilecard.md
       - name: Личные контакты
