@@ -6,12 +6,12 @@ title: Поиск файлов
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6869940c6c4e8a22061343f5152f424b5d27adaf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 08774f68c9b5ec17ff3e0c5f4f6ba42e058245e1
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432343"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091405"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Поиск элементов DriveItem на диске
 
@@ -24,7 +24,7 @@ ms.locfileid: "42432343"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -52,20 +52,19 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 | Параметр | Тип  | Описание                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| q  | string | Текст запроса, используемый для поиска элементов. Для поиска можно использовать несколько полей, включая поля имени файла, метаданных и содержимого файла. |
+| q  | string | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Вот пример запроса, выполняющего поиск в хранилище OneDrive текущего пользователя.
-
+В следующем примере выполняется поиск "Contoso Project" для нескольких полей в элементах диска вошедшего пользователя.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search" }-->
 
 ```msgraph-interactive
-GET /me/drive/root/search(q='{search-query}')
+GET /me/drive/root/search(q='Contoso Projec}')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-csharp-snippets.md)]
@@ -84,9 +83,11 @@ GET /me/drive/root/search(q='{search-query}')
 
 ### <a name="response"></a>Отклик
 
-Этот метод возвращает объект, который содержит коллекцию элементов [DriveItem](../resources/driveitem.md), соответствующих условиям поиска. Если не будет найдено ни одного элемента, то будет возвращена пустая коллекция.
+This method returns an object containing an collection of [DriveItems](../resources/driveitem.md) that match the search criteria.
+If no items were found, an empty collection is returned.
 
-Если будет найдено слишком много совпадений, отклик будет разбит на страницы, а свойство **@odata.nextLink** будет содержать URL-адрес на следующую страницу с результатами. Чтобы указать количество элементов на странице, вы можете использовать параметр запроса `$top`.
+If there are too many matches the response will be paged and an **@odata.nextLink** property will contain a URL to the next page of results.
+You can use the `$top` query parameter to specify the number of items in the page.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
@@ -115,7 +116,8 @@ Content-type: application/json
 
 ## <a name="searching-for-items-a-user-can-access"></a>Поиск элементов, к которым пользователь может получить доступ
 
-Помимо поиска элементов на диске ваше приложение может выполнять более широкий поиск и включать элементы, к которым текущему пользователю предоставлен доступ. Чтобы расширить область поиска, используйте метод **search** в ресурсе [Drive](../resources/drive.md).
+In addition to searching for items within a drive, your app can search more broadly to include items shared with the current user.
+To broaden the search scope, use the **search** method on the [Drive](../resources/drive.md) resource.
 
 ### <a name="example"></a>Пример
 
@@ -124,7 +126,7 @@ Content-type: application/json
 <!-- { "blockType": "request", "name": "item_search_all" }-->
 
 ```msgraph-interactive
-GET /me/drive/search(q='{search-query}')
+GET /me/drive/search(q='Contoso Project')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-all-csharp-snippets.md)]
@@ -143,7 +145,8 @@ GET /me/drive/search(q='{search-query}')
 
 ### <a name="response"></a>Отклик
 
-Отклики при поиске на ресурсе **Drive** могут включать элементы, расположенные за пределами диска (элементы, к которым текущему пользователю предоставлен доступ). Эти элементы будут содержать аспект [**remoteItem**](../resources/remoteitem.md), который указывает, что они хранятся не на целевом диске. 
+Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user).
+These items will include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive. 
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
