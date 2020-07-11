@@ -2,12 +2,12 @@
 title: Сообщения об ошибках и типы ресурсов Microsoft Graph
 description: "  "
 localization_priority: Priority
-ms.openlocfilehash: 684c00dfc8618378800faf9aad064370215e7ccd
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: cc3a0a0acacd7477c1cf686089c0235850059443
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926682"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091426"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Сообщения об ошибках и типы ресурсов Microsoft Graph
 
@@ -29,11 +29,11 @@ ms.locfileid: "42926682"
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | Неправильный запрос (Bad Request)                     | Не удается обработать запрос, так как он имеет неправильный формат или содержит ошибку.                                                                       |
 | 401         | Не авторизован (Unauthorized)                    | Требуемые сведения о проверке подлинности отсутствуют или недопустимы для ресурса.                                                   |
-| 403         | Запрещено                       | Доступ к запрошенному ресурсу запрещен. Возможно, у пользователя недостаточно разрешений. <br /><br /> **Важно!** Если к ресурсу применены политики условного доступа, то, возможно, будет возвращена ошибка HTTP 403; Forbidden error=insufficent_claims. Дополнительные сведения о Microsoft Graph и условном доступе см. в статье [Руководство для разработчиков по условному доступу в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)  |
+| 403         | Запрещено                       | Access is denied to the requested resource. The user might not have enough permission. <br /><br /> **Важно!** Если к ресурсу применены политики условного доступа, то, возможно, будет возвращена ошибка HTTP 403; Forbidden error=insufficent_claims. Дополнительные сведения о Microsoft Graph и условном доступе см. в статье [Руководство для разработчиков по условному доступу в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | Не найдено (Not Found)                       | Запрашиваемый ресурс не существует.                                                                                                  |
 | 405         | Недопустимый метод (Method Not Allowed)              | Метод HTTP в запросе недопустим для ресурса.                                                                         |
 | 406         | Неприемлемо (Not Acceptable)                  | Эта служба не поддерживает формат, запрошенный в заголовке Accept.                                                                |
-| 409         | Конфликт (Conflict)                        | Текущее состояние противоречит ожидаемым результатам запроса. Например, может отсутствовать указанная родительская папка.                   |
+| 409         | Конфликт (Conflict)                        | The current state conflicts with what the request expects. For example, the specified parent folder might not exist.                   |
 | 410         | Отсутствует (Gone)                            | Запрошенный ресурс недоступен на сервере.                                               |
 | 411         | Требуется длина (Length Required)                 | В запросе нужно указать заголовок Content-Length.                                                                                    |
 | 412         | Необходимое условие не выполнено (Precondition Failed)             | Необходимое условие, указанное в запросе (например, заголовок If-Match), не соответствует текущему состоянию ресурса.                       |
@@ -45,12 +45,12 @@ ms.locfileid: "42926682"
 | 429         | Слишком много запросов (Too Many Requests)               | Количество запросов клиентского приложения отрегулировано, оно сможет повторить запрос по истечении некоторого времени.                |
 | 500         | Внутренняя ошибка сервера (Internal Server Error)           | При обработке запроса возникла внутренняя ошибка сервера.                                                                       |
 | 501         | Не реализовано (Not Implemented)                 | Запрашиваемая функция не реализована.                                                                                               |
-| 503         | Служба недоступна (Service Unavailable)             | Служба недоступна из-за перегрузки или отключена для проведения технических работ. Вы можете повторить запрос через некоторое время, которое может быть указано в заголовке Retry-After.|
-| 504         | Истекло время ожидания шлюза (Gateway Timeout)                 | При попытке выполнить запрос, сервер, выполняя роль прокси-сервера, не получил своевременный ответ от сервера более высокого уровня, необходимый для доступа. Может возникать вместе с ошибкой 503. |
+| 503         | Служба недоступна (Service Unavailable)             | The service is temporarily unavailable for maintenance or is overloaded. You may repeat the request after a delay, the length of which may be specified in a Retry-After header.|
+| 504         | Истекло время ожидания шлюза (Gateway Timeout)                 | The server, while acting as a proxy, did not receive a timely response from the upstream server it needed to access in attempting to complete the request. May occur together with 503. |
 | 507         | Недостаточно места (Insufficient Storage)            | Достигнута максимальная квота хранилища.                                                                                            |
-| 509         | Превышено ограничение пропускной способности (Bandwidth Limit Exceeded)        | Пропускная способность приложения отрегулирована из-за превышения максимально допустимой пропускной способности. Приложение сможет повторить запрос по истечении некоторого времени. |
+| 509         | Превышено ограничение пропускной способности (Bandwidth Limit Exceeded)        | Your app has been throttled for exceeding the maximum bandwidth cap. Your app can retry the request again after more time has elapsed. |
 
-Сообщение об ошибке — это один объект JSON, содержащий одно свойство **error**. Этот объект включает все сведения об ошибке. Вы можете использовать возвращенные сведения вместо кода состояния HTTP или вместе с ним. Ниже представлен пример полного текста ошибки JSON.
+The error response is a single JSON object that contains a single property named **error**. This object includes all the details of the error. You can use the information returned here instead of or in addition to the HTTP status code. The following is an example of a full JSON error body.
 
 <!-- { "blockType": "ignored", "@odata.type": "odata.error", "expectError": true, "name": "example-error-response" } -->
 ```json
@@ -100,15 +100,15 @@ ms.locfileid: "42926682"
 
 | Имя свойства  | Значение                  | Описание                                                                                               |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
-| **code**       | string                 | Строка с кодом возникшей ошибки.                                                            |
-| **message**    | string                 | Сообщение для разработчика о возникшей ошибке. Оно не предназначено для пользователя. |
-| **innererror** | error object           | Необязательное. Дополнительные объекты ошибки, которые могут быть более информативны, чем сообщение об ошибке верхнего уровня.                     |
+| **code**       | string                 | Строка с кодом возникшей ошибки                                                            |
+| **message**    | string                 | A developer ready message about the error that occurred. This should not be displayed to the user directly. |
+| **innererror** | error object           | Optional. Additional error objects that may be more specific than the top level error.                     |
 
 <!--<a name="msg_code_property"> </a> -->
 
 #### <a name="code-property"></a>Свойство code
 
-Свойство `code` содержит одно из перечисленных ниже значений. Приложения должны быть готовы к любой из этих ошибок.
+The `code` property contains one of the following possible values. Your apps should be prepared to handle any one of these errors.
 
 | Код                      | Описание
 |:--------------------------|:--------------
@@ -124,13 +124,14 @@ ms.locfileid: "42926682"
 | **notSupported**          | Запрос не поддерживается в системе.
 | **resourceModified**      | Обновляемый ресурс изменился с момента последнего чтения вызывающей стороной. Как правило, не совпадают теги eTag.
 | **resyncRequired**        | Разностный токен больше не действителен, а приложение должно сбросить состояние синхронизации.
-| **serviceNotAvailable**   | Служба недоступна. Повторите запрос через некоторое время. Возможно, существует заголовок Retry-After. 
+| **serviceNotAvailable**   | The service is not available. Try the request again after a delay. There may be a Retry-After header. 
+| **syncStateNotFound**     | Создание состояния синхронизации не найдено. Срок действия разностного маркера истек, и данные требуется синхронизировать повторно. 
 | **quotaLimitReached**     | Пользователь превысил квоту.
 | **unauthenticated**       | Вызывающая сторона не прошла проверку подлинности.
 
-Объект `innererror` может рекурсивно содержать дополнительные объекты `innererror` с другими, более подробными кодами ошибок. При обработке ошибок приложения должны перебирать все доступные коды ошибок и использовать самый подробный и понятный. В конце этой страницы приведено несколько более подробных кодов.
+The `innererror` object might recursively contain more `innererror` objects with additional, more specific error codes. When handling an error, apps should loop through all the error codes available and use the most detailed one that they understand. Some of the more detailed codes are listed at the bottom of this page.
 
-Чтобы убедиться, что объект ошибки представляет собой ожидаемую ошибку, необходимо перебрать объекты `innererror` и найти ожидаемые коды ошибок. Например:
+To verify that an error object is an error you are expecting, you must loop over the `innererror` objects, looking for the error codes you expect. For example:
 
 ```csharp
 public bool IsError(string expectedErrorCode)
@@ -148,15 +149,15 @@ public bool IsError(string expectedErrorCode)
 
 В примере [Обработка кодов ошибок](https://gist.github.com/rgregg/a1866be15e685983b441) показано, как правильно обрабатывать ошибки.
 
-Свойство `message` в корне содержит сообщение об ошибке, предназначенное для разработчика. Сообщения об ошибках не локализованы и не предназначены для пользователя. Приложение не должно обрабатывать значения `message`, так как они могут измениться в любое время и часто содержат динамические сведения, связанные с неудачным запросом. Приложение должно обрабатывать только те коды ошибок, которые возвращаются в свойствах `code`.
+The `message` property at the root contains an error message intended for the developer to read. Error messages are not localized and shouldn't be displayed directly to the user. When handling errors, your code should not key off of `message` values because they can change at any time, and they often contain dynamic information specific to the failed request. You should only code against error codes returned in `code` properties.
 
 #### <a name="detailed-error-codes"></a>Подробные коды ошибок
-Ниже приведено несколько дополнительных ошибок, которые могут возникать при работе приложения во вложенных объектах `innererror`. Приложения не обязаны их обрабатывать. Служба в любое время может добавить новые коды ошибок или прекратить возврат старых кодов, поэтому важно, чтобы все приложения могли обрабатывать [основные коды ошибок](#code-property).
+The following are some additional errors that your app might encounter within the nested `innererror` objects. Apps are not required to handle these, but can if they choose. The service might add new error codes or stop returning old ones at any time, so it is important that all apps be able to handle the [basic error codes](#code-property).
 
 | Код                               | Описание
 |:-----------------------------------|:----------------------------------------------------------
 | **accessRestricted**               | Доступ разрешен только владельцу элемента.
-| **cannotSnapshotTree**             | Не удалось получить согласованный разностный моментальный снимок. Повторите попытку позже.
+| **cannotSnapshotTree**             | Failed to get a consistent delta snapshot. Try again later.
 | **childItemCountExceeded**         | Достигнуто максимальное количество дочерних элементов.
 | **entityTagDoesNotMatch**          | Тег ETag не соответствует текущему значению элемента.
 | **fragmentLengthMismatch**         | Объявленный общий размер этого фрагмента отличается от размера сеанса отправки.
@@ -170,7 +171,7 @@ public bool IsError(string expectedErrorCode)
 | **lockMismatch**                   | Маркер блокировки не соответствует существующей блокировке.
 | **lockNotFoundOrAlreadyExpired**   | В данный момент для элемента не задана действительная блокировка.
 | **lockOwnerMismatch**              | Идентификатор владельца блокировки не соответствует указанному идентификатору.
-| **malformedEntityTag**             | Неправильный формат заголовка тега ETag. Теги ETag должны представлять собой строки, заключенные в кавычки.
+| **malformedEntityTag**             | ETag header is malformed. ETags must be quoted strings.
 | **maxDocumentCountExceeded**       | Достигнуто максимальное количество документов.
 | **maxFileSizeExceeded**            | Превышен максимальный размер файла.
 | **maxFolderCountExceeded**         | Достигнуто максимальное количество папок.
@@ -183,9 +184,9 @@ public bool IsError(string expectedErrorCode)
 | **pathIsTooLong**                  | Превышена максимальная длина пути.
 | **pathTooDeep**                    | Достигнуто максимальное число уровней в иерархии папок.
 | **propertyNotUpdateable**          | Свойство не поддерживает обновление.
-| **resyncApplyDifferences**         | Требуется повторная синхронизация. Замените все локальные элементы элементами сервера (в том числе удаленные), если вы уверены, что в службу были внесены все локальные изменения при последней синхронизации. Отправьте все локальные изменения, не загруженные на сервер.
+| **resyncApplyDifferences**         | Resync required. Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about.
 | **resyncRequired**                 | Требуется повторная синхронизация.
-| **resyncUploadDifferences**        | Требуется повторная синхронизация. Отправьте все локальные элементы, которые не возвратила служба, и все файлы, версия которых отличается от версии сервера (сохраняйте обе копии, если вы не знаете, какая из них более актуальна).
+| **resyncUploadDifferences**        | Resync required. Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).
 | **serviceNotAvailable**            | Сервер не может обработать текущий запрос.
 | **serviceReadOnly**                | Ресурс временно доступен только для чтения.
 | **throttledRequest**               | Слишком много запросов.
