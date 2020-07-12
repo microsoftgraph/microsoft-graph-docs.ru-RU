@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: cd899248a53eab2b652ada9287c5e2ca98f5af95
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 77c5485adbbe27e5758d27663ef893e98ca2519e
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455014"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038674"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -18,11 +18,11 @@ ms.locfileid: "42455014"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение указанного объекта [profilePhoto](../resources/profilephoto.md) или его метаданных (свойств **profilePhoto**).
+Получение указанного объекта [profilePhoto](../resources/profilephoto.md) или его метаданных (свойств **profilePhoto**) из Microsoft 365.
 
-Метод GET photo сначала пытается получить указанную фотографию из Office 365. Если фотография недоступна в Office 365, API пытается получить ее из Azure Active Directory.
+> **Примечание**. При попытке ПОЛУЧИТЬ фотографию **пользователя** эта операция сначала делает попытку получить указанную фотографию из Microsoft 365. Если фотография недоступна в Microsoft 365, API пытается получить ее из Azure Active Directory.
 
-Поддерживаемые размеры фотографий в формате HD для Office 365: 48 x 48, 64 x 64, 96 x 96, 120 x 120, 240 x 240, 360 x 360, 432 x 432, 504 x 504 и 648 x 648. Фотографии могут быть любого размера, если они хранятся в Azure Active Directory.
+Поддерживаемые размеры фотографий в формате HD для Microsoft 365: 48 x 48, 64 x 64, 96 x 96, 120 x 120, 240 x 240, 360 x 360, 432 x 432, 504 x 504 и 648 x 648. Фотографии могут быть любого размера, если они хранятся в Azure Active Directory.
 
 Вы можете получить метаданные самой большой доступной фотографии или указать размер и получить метаданные для этого размера.
 Если запрашиваемый размер недоступен, вы можете получить меньший размер, загруженный пользователем.
@@ -30,7 +30,7 @@ ms.locfileid: "42455014"
 Если указанный размер недоступен в почтовом ящике пользователя или Azure Active Directory, возвращается размер 1 x 1 и остальные метаданные.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 > **Примечание.** Метод GET photo в бета-версии поддерживается для рабочих, учебных и личных учетных записей пользователя. Однако метод GET photo metadata поддерживается только для рабочих или учебных, но не личных учетных записей пользователя.
 
@@ -79,7 +79,7 @@ GET /groups/{id}/photos/{size}
 
 |**Параметр**|**Тип**|**Описание**|
 |:-----|:-----|:-----|
-|size  |String  | Размер фотографии. Поддерживаемые размеры фотографий в формате HD для Office 365: 48 x 48, 64 x 64, 96 x 96, 120 x 120, 240 x 240, 360 x 360, 432 x 432, 504 x 504 и 648 x 648. Фотографии могут быть любого размера, если они хранятся в Azure Active Directory. |
+|size  |String  | Размер фотографии. Поддерживаемые размеры фотографий в формате HD для Microsoft 365: 48 x 48, 64 x 64, 96 x 96, 120 x 120, 240 x 240, 360 x 360, 432 x 432, 504 x 504 и 648 x 648. Фотографии могут быть любого размера, если они хранятся в Azure Active Directory. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
@@ -87,14 +87,14 @@ GET /groups/{id}/photos/{size}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 ### <a name="response-for-getting-the-photo"></a>Отклик для запроса на получение фотографии
-При успешном выполнении этот метод возвращает код отклика `200 OK` и двоичные данные запрашиваемой фотографии.  Если фотография не существует, операция возвратит отклик `404 Not Found`.
+If successful, this method returns a `200 OK` response code and binary data of the requested photo.  If no photo exists, the operation returns `404 Not Found`.
 ### <a name="response-for-getting-the-metadata-of-the-photo"></a>Отклик для запроса на получение метаданных фотографии
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [profilePhoto](../resources/profilephoto.md) в тексте отклика.
 

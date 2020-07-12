@@ -4,12 +4,12 @@ description: Все возможности, описанные в этой ст�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: a3f5a2dc137a37012c4d7787d8c57c1045970be3
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: e3c4aa756de62995deef07604d968b172ffc2645
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219610"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038515"
 ---
 # <a name="security-solution-integrations-using-the-microsoft-graph-security-api"></a>Интеграция решений по обеспечению безопасности с помощью Microsoft Graph Security API
 
@@ -24,6 +24,8 @@ ms.locfileid: "42219610"
 | Тип решения | Имя | Соединитель | Объявление |
 |:-----|:--------|:--------|:----------|
 | SIEM |Splunk Enterprise и Splunk Cloud|[Надстройка Microsoft Graph Security API для Splunk](https://aka.ms/graphsecuritysplunkaddon) | [Запись блога](https://aka.ms/graphsecuritysplunkaddonblogpost)<br>[Запись блога о Splunk в облаке](https://aka.ms/graphsecuritysplunkcloudblogpost)|
+| SIEM |QRadar|[Протокол Microsoft Graph Security API и поддерживаемые QRadar DSM](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_logsource_Microsoft_Graph_Security_protocol.html)| - |
+| ITSM |ServiceNow|[Интеграция приема оповещений Microsoft Graph Security API](https://docs.servicenow.com/bundle/orlando-security-management/page/product/secops-integration-sir/secops-integration-ms-graph/concept/ms-graph-about.html)| - |
 | SOAR | Azure Logic Apps / Microsoft Flow | [Соединитель Microsoft Graph Security для Azure Logic Apps, Microsoft Flow и PowerApps](https://aka.ms/graphsecurityconnectors) | [Запись блога](https://aka.ms/graphsecurityconnectorsblogpost) |
 | Автоматизация | Модуль PowerShell | [Модуль PowerShell Microsoft Graph Security](https://aka.ms/graphsecuritypowershellmodule) | [Запись блога](https://aka.ms/graphsecuritypowershellmodulepost) |
 | Отчетность | Power BI | [Соединитель Microsoft Graph Security для Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc) | [Запись блога](https://aka.ms/graphsecuritypowerbiconnectorblogpost) |
