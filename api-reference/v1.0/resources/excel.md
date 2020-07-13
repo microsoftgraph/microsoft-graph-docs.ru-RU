@@ -5,25 +5,25 @@ localization_priority: Priority
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: abbb74553e5993f6760adaf4929678f48b7b2b86
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: 075b37ff04646ef80ea6d83d8461c48471da3aa8
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822769"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353639"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Работа с Excel в Microsoft Graph
 
-Можно использовать Microsoft Graph, чтобы разрешать веб-приложениям и мобильным приложениям считывать и изменять книги Excel, хранящиеся в OneDrive для бизнеса, на сайте SharePoint или диске группы. Ресурс `Workbook` (или файл Excel) содержит все остальные ресурсы Excel благодаря отношениям. Можно получить доступ к книге через интерфейс [API Drive](drive.md), указав расположение файла в URL-адресе. Пример:
+You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive for Business, SharePoint site or Group drive. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the [Drive API](drive.md) by identifying the location of the file in the URL. For example:
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-Можно получить доступ к набору объектов Excel (например, Table, Range или Chart) с помощью стандартных интерфейсов API REST, чтобы выполнять в книге операции создания, чтения, обновления и удаления (CRUD). Например, `GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets`  
+You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform  create, read, update, and delete (CRUD) operations on the workbook. For example, `GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets`  
 возвращает коллекцию объектов листа, включенных в книгу.    
 
 
-REST API Excel поддерживает только книги в формате Office Open XML. Книги с расширением `.xls` не поддерживаются. 
+The Excel REST API supports only Office Open XML file formatted workbooks. The `.xls` extension workbooks are not supported. 
 
 **Примечание.** Поддержка книг, хранящихся в обычном OneDrive, по-прежнему недоступна. В настоящее время REST API Excel поддерживаются только файлы, хранящиеся в OneDrive для бизнеса. 
 
@@ -42,12 +42,12 @@ REST API Excel поддерживает только книги в формат�
 API Excel можно вызвать в одном из трех режимов: 
 
 1. Сохраняемый сеанс: все изменения, внесенные в книгу, сохраняются (записываются). Это наиболее эффективный и производительный режим работы. 
-2. Временный сеанс — изменения, внесенные интерфейсом API, не сохраняются в исходном расположении. Вместо этого внутренний сервер Excel сохраняет временную копию файла, в которой отражены изменения, внесенные во время конкретного сеанса API. Когда истечет срок действия сеанса Excel, изменения будут потеряны. Этот режим удобен для приложений, которым нужно выполнять анализ или получать результаты вычислений или изображение диаграммы, не изменяя состояние документа. 
+2. Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state. 
 3. Без сеанса: вызов API выполняется без сведений о сеансе. Чтобы выполнить операцию, серверам Excel каждый раз необходимо находить копию книги на сервере, и, соответственно, это неэффективный способ вызова API Excel. Он подходит для выполнения одиночных запросов. 
 
 Чтобы представить сеанс в API, используйте заголовок `workbook-session-id: {session-id}`. 
 
->**Примечание.** Заголовок сеанса не является обязательным для работы API Excel. Тем не менее мы рекомендуем использовать заголовок сеанса для повышения производительности. Если вы не используете заголовок сеанса, изменения, внесенные во время вызова API _сохраняются_ в файл.  
+>**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.  
 
 ### <a name="api-call-to-get-a-session"></a>Вызов API для получения сеанса 
 
@@ -195,7 +195,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-** Примечание. Листы также можно получать, используя идентификатор. Однако в настоящее время идентификатор содержит символы `{` и "}", поэтому необходимо использовать кодировку URL, чтобы API работал. Пример. Чтобы получить лист с идентификатором `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, преобразуйте идентификатор в путь URL: `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
+** Note: Worksheets can also be retrieved using the ID. However, currently the ID contains `{` and '}' characters, which needs to be URL encoded for the API to work. Example: In order to get a worksheet with ID of `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, URL encode the ID in the path as `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
 
 #### <a name="delete-a-worksheet"></a>Удаление листа
 
@@ -280,7 +280,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-** Примечание. Идентификатор диаграмма содержит символы `{` и `}` (пример: `{00000000-0008-0000-0100-000003000000}`), поэтому необходимо использовать кодировку URL, чтобы API работал. Пример. Чтобы получить объект диаграммы, преобразуйте идентификатор в путь URL: `/charts/%7B00000000-0008-0000-0100-000003000000%7D`. 
+** Note: Chart ID contains `{` and `}` characters (example: `{00000000-0008-0000-0100-000003000000}`), which needs to be URL encoded for the API to work. Example: In order to get a chart object, URL encode the ID in the path as `/charts/%7B00000000-0008-0000-0100-000003000000%7D`. 
 
 #### <a name="get-chart-image"></a>Получение изображения диаграммы
 
@@ -1137,7 +1137,7 @@ content-type: application/json
 
 #### <a name="null-input-in-2-d-array"></a>Входное значение null в двумерном массиве
 
-Входное значение `null` в двумерном массиве (для значений, числового формата, формулы) игнорируется в ресурсах Range и Table. Предполагаемый целевой объект (ячейка) не будет обновлен, если входное значение `null` отправлено в виде значений, числового формата или сетки значений формулы.
+`null` input inside a two-dimensional array (for values, number-format, formula) is ignored in the Range and Table resources. No update will take place to the intended target (cell) when `null` input is sent in values or number-format or formula grid of values.
 
 Например, чтобы обновить только определенные части Range, такие как числовой формат ячейки, и сохранить существующий числовой формат в других частях Range, установите числовой формат там, где это необходимо, и отправьте `null` для других ячеек.
 
@@ -1152,7 +1152,7 @@ content-type: application/json
 
 #### <a name="null-input-for-a-property"></a>Входное значение null для свойства
 
-`null` не является допустимым входным значением для всего свойства. Например, следующий пример недопустим, так как целые значения нельзя устанавливать на null или игнорировать.
+`null` is not a valid single input for the entire property. For example, the following is not valid because the entire values cannot be set to null or ignored.
 
 ```json
 {
@@ -1173,7 +1173,7 @@ content-type: application/json
 
 Представление свойств форматирования, состоящее из неоднородных значений, приведет к возврату значения null в отклике.
 
-Например, Range может состоять из одной или нескольких ячеек. Если отдельные ячейки в указанном объекте Range не содержат единообразных значений форматирования, представление уровня диапазона будет неопределенным.
+For example, a Range can consist of one or more cells. In cases where the individual cells contained in the Range specified don't have uniform formatting values, the range level representation will be undefined.
 
 ```json
 {
@@ -1188,7 +1188,7 @@ content-type: application/json
 
 ### <a name="blank-input-and-output"></a>Пустые входные и выходные данные
 
-Пустые значения в запросах на обновление считаются указанием на очистку или сброс соответствующего свойства. Пустое значение представляется двумя двойными кавычками, не разделенными пробелом: `""`
+Blank values in update requests are treated as an instruction to clear or reset the respective property. A blank value is represented by two double quotation marks with no space in-between: `""`
 
 Примеры:
 
@@ -1199,7 +1199,7 @@ content-type: application/json
 * Для `formula` и `formulaLocale` значения формулы очищены.
 
 
-При операциях чтения будьте готовы получать пустые значения, если в ячейках нет содержимого. Если ячейка не содержит данных или значений, API возвращает пустое значение. Пустое значение представляется двумя двойными кавычками, не разделенными пробелом: `""`
+For read operations, expect to receive blank values if the contents of the cells are blanks. If the cell contains no data or value, the API returns a blank value. Blank value is represented by two double quotation marks with no space in-between: `""`
 
 ```json
 {
@@ -1223,7 +1223,7 @@ content-type: application/json
 * `C:C`, `A:F`, `A:XFD` (содержит неопределенные строки).
 * `2:2`, `1:4`, `1:1048546` (содержит неопределенные столбцы).
 
-Когда API запрашивает Range без ограничений (`getRange('C:C')`), отклик содержит значение `null` для свойств на уровне ячеек, например `values`, `text`, `numberFormat` или `formula`. Другие свойства Range, например `address` или `cellCount`, отражают неограниченный диапазон.
+When the API makes a request to retrieve an unbounded Range (`getRange('C:C')`), the response returned contains `null` for cell-level properties such as `values`, `text`, `numberFormat`, or `formula`. Other Range properties such as `address` or `cellCount` will reflect the unbounded range.
 
 #### <a name="write"></a>Запись
 
@@ -1245,20 +1245,20 @@ PATCH /workbook/worksheets/{id}/range(address="A:B")
 
 ### <a name="large-range"></a>Большой диапазон
 
-Большой диапазон — это объект Range, размер которого слишком велик для одного вызова API. Множество факторов, например количество ячеек, значений, объектов numberFormat и формул, могут сделать запрос настолько большим, что он станет неподходящим для взаимодействия с API. Интерфейс API делает все возможное для возврата запрашиваемых данных или записи в них. Но обработка крупного запроса может привести к ошибке API из-за чрезмерного использования ресурсов.
+Large Range implies a Range of a size that is too large for a single API call. Many factors such as number of cells, values, numberFormat, and formulas contained in the range can make the response so large that it becomes unsuitable for API interaction. The API makes a best attempt to return or write to the requested data. However, the large size involved might result in an API error condition because of the large resource utilization.
 
 Чтобы избежать этого, рекомендуем выполнять операции чтения и записи для нескольких объектов Range меньшего размера.
 
 
 ### <a name="single-input-copy"></a>Копирование одного входного значения
 
-Для поддержки обновления диапазона с использованием одинаковых значений или числового формата либо для применения одной и той же формулы ко всему диапазону в установленном интерфейсе API используется следующее соглашение. В Excel этот принцип аналогичен вводу значений или формул в диапазон в режиме CTRL+ВВОД.
+To support updating a range with the same values or number-format or applying same formula across a range, the following convention is used in the set API. In Excel, this behavior is similar to inputting values or formulas to a range in the CTRL+Enter mode.
 
 API ищет *значение одной ячейки* и, если размер целевого диапазона не соответствует размеру входного диапазона, обновление применяется ко всему диапазону в режиме CTRL+ВВОД с использованием значения или формулы в запросе.
 
 #### <a name="examples"></a>Примеры
 
-Следующий запрос добавляет в выбранный диапазон текст "Sample text". Обратите внимание, что Range содержит 200 ячеек, в то время как входные данные — значение лишь для одной ячейки.
+The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1308,7 +1308,7 @@ content-type: application/json
 
 ## <a name="error-information"></a>Сведения об ошибках 
 
-Ошибки возвращаются с HTTP-кодом и объектом ошибки. Ошибки `code` и `message` объясняют причины возникновения ошибки.
+Errors are returned with an HTTP error code and an error object. An error `code` and `message` explain the reason for the error.
  
 Ниже приведен пример.
 
@@ -1329,3 +1329,5 @@ Content-Type: application/json
 }
 ```
 
+## <a name="whats-new"></a>Что нового
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.

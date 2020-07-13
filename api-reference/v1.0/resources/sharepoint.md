@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 author: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 963d117bbba945a3acd4bb2ac78928c6eade2506
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b3745078d28f24af9efcffadbbc2701372f1bc74
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863794"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353856"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Работа с сайтами SharePoint в Microsoft Graph
 
@@ -87,7 +87,8 @@ API SharePoint предоставляет три основных типа ре�
 | /sites/{site-id}/lists/{list-id}/items | Перечисление ресурсов [listItem](listitem.md) для ресурса [list](list.md).
 | /groups/{group-id}/sites/root          | Доступ к [сайту][] группы для группы.
 
-К сайту также можно обратиться с помощью соответствующего пути. Для этого укажите имя узла SharePoint, за ним — двоеточие и относительный путь к сайту. При необходимости вы можете менять способ адресации (возвращаться к ресурсной модели), добавляя в конец двоеточие.
+Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site.
+You can optionally transition back to addressing the resource model by putting another colon at the end.
 
 | Путь                                           | Описание
 |:-----------------------------------------------|:-----------------------------------
@@ -122,7 +123,10 @@ URL-адрес, содержащий только идентификатор sit
 GET https://graph.microsoft.com/v1.0/sites/{spsite-id}
 ```
 
-[сайта]: site.md
+## <a name="whats-new"></a>Что нового
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
+
+[site]: site.md
 [list]: list.md
 [drive]: drive.md
 [siteCollection]: sitecollection.md

@@ -5,18 +5,19 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 77a685f4bda0005f27f7acf74eec0f2a3780aee8
-ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
+ms.openlocfilehash: 230b3179ebbe7a3e9c4d3c7fe647278990192cf5
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41839985"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353786"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Использование REST API почты Outlook
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph позволяет вашему приложению получать авторизованный доступ к данным почты Outlook в личной или корпоративной учетной записи. Имея [соответствующие делегированные разрешения или разрешения приложения](/graph/permissions-reference), приложение может получать доступ к данным почты вошедшего пользователя или любого пользователя в клиенте. 
+Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
+With the [appropriate delegated or application permissions](/graph/permissions-reference), your app can access the mail data of the signed-in user or any user in a tenant. 
 
 [!INCLUDE [outlook-mailbox-type-support](../../includes/outlook-mailbox-type-support.md)]
 
@@ -24,7 +25,8 @@ Microsoft Graph позволяет вашему приложению получ�
 
 Запросы API почты выполняются от имени [пользователя](../resources/user.md), который может определяться свойством пользователя **id** (уникальным GUID), адресом электронной почты или псевдонимом `me`, обозначающим вошедшего пользователя.
 
-Сообщения электронной почты представлены ресурсом [message](../resources/message.md) и упорядочены в почтовой папке [mailFolder](../resources/mailfolder.md). Сообщения и почтовые папки определяются свойством **id**, которое можно получить из операций `GET`.
+Email messages are represented by the [message](../resources/message.md) resource and organized in a [mailFolder](../resources/mailfolder.md).
+Messages and mail folders are identified by their **id** property, obtainable from `GET` operations.
 
 >[!IMPORTANT] 
 > Идентификаторы **message** и **mailfolder** не являются уникальными и неизменными в почтовом ящике. Они могут изменяться, например после копирования или перемещения. Вы можете использовать [неизменяемые идентификаторы](/graph/outlook-immutable-id), чтобы сохранять их, пока сообщение находится в том же почтовом ящике, _за исключением отправки черновика и нескольких других сценариев_. Подробные сведения см. в разделе [жизненный цикл неизменяемых идентификаторов](/graph/outlook-immutable-id#lifetime-of-immutable-ids).
@@ -72,6 +74,9 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 | Добавление пользовательских данных приложения в сообщение с помощью расширений | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview) |
 | Доступ к пользовательским данным для редко предоставляемых свойств Outlook MAPI | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Общие сведения о расширенных свойствах Outlook](../resources/extended-properties-overview.md) |
 
+## <a name="whats-new"></a>Что нового
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
+
 ## <a name="next-steps"></a>Дальнейшие действия
 
 API почты открывает новые способы взаимодействия с пользователями:
@@ -80,4 +85,4 @@ API почты открывает новые способы взаимодейс
 - Узнайте больше о [методах](../resources/message.md#methods), [свойствах](../resources/message.md#properties) и [отношениях](../resources/message.md#relationships) ресурсов [message](../resources/message.md) и [mailFolder](../resources/mailfolder.md).
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 
-Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 43d2c00e9651c6bbf73e82102a36eb25efd94215
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 983ca1e7b11e488cec38abc2b54c7e241d4a0719
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39845037"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353898"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-intelligence-in-an-app"></a>Интегрирование аналитики о людях в приложение с помощью Microsoft Graph API
 
@@ -38,3 +38,6 @@ Microsoft Graph позволяет получить доступ к полезн
 - Список [популярных документов](../api/insights-list-trending.md) пользователя
 - Список документов, [используемых](../api/insights-list-used.md) пользователем
 - Список документов, [к которым пользователю предоставлен доступ или к которым пользователь предоставил доступ](../api/insights-list-shared.md)
+
+## <a name="whats-new"></a>Что нового
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.

@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: С помощью этого метода приложение может отслеживать изменения drive и соответствующих дочерних элементов.
 doc_type: apiPageType
-ms.openlocfilehash: a914ea5648cde02805c967d3d639ec02d10c3068
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d86a02efc98d604bb970faea07c058e3a8651bfa
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517764"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038690"
 ---
 # <a name="track-changes-for-a-drive"></a>Отслеживание изменений для Drive
 
@@ -20,17 +20,19 @@ ms.locfileid: "42517764"
 
 С помощью этого метода приложение может отслеживать изменения drive и соответствующих дочерних элементов.
 
-Для начала приложение вызывает `delta` без параметров. Служба начинает перечислять иерархию диска, возвращая страницы элементов и `@odata.nextLink` или `@odata.deltaLink`, как показано ниже. Приложению следует выполнять вызовы с использованием `@odata.nextLink`, пока не будет возвращен отклик без `@odata.nextLink` или с пустым набором изменений.
+Your app begins by calling `delta` without any parameters. The service starts enumerating the drive's hierarchy, returning pages of items and either an `@odata.nextLink` or an `@odata.deltaLink`, as described below.
+Your app should continue calling with the `@odata.nextLink` until you no longer see an `@odata.nextLink` returned, or you see a response with an empty set of changes.
 
-Завершив получать изменения, вы можете применить их к локальному состоянию. Для проверки наличия изменений в будущем снова вызовите `delta` с использованием `@odata.deltaLink` из предыдущего отклика.
+After you have finished receiving all the changes, you may apply them to your local state.
+To check for changes in the future, call `delta` again with the `@odata.deltaLink` from the previous response.
 
-Удаленные элементы возвращаются с [аспектом `deleted`](../resources/deleted.md). Элементы с этим набором свойств следует удалить из локального состояния. 
+Deleted items are returned with the [`deleted` facet](../resources/deleted.md). Items with this property set should be removed from your local state. 
 
-**Примечание.** Локально удалять папку следует, только если после синхронизации всех изменений она пуста.
+>**Примечание.** Локально удалять папку следует, только если после синхронизации всех изменений она пуста.
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -206,11 +208,13 @@ Content-type: application/json
 
 Последняя страница элементов включает свойство **\@odata.deltaLink**, содержащее URL-адрес, с помощью которого можно в дальнейшем восстановить изменения относительно текущего набора элементов.
 
-В некоторых случаях службе не удается предоставить список изменений для определенного маркера (например, если клиент пытается повторно использовать старый маркер после долгого отключения, а также если из-за измененного состояния сервера требуется новый маркер). В таких случаях служба возвращает ошибку `HTTP 410 Gone` с откликом, содержащим один из представленных ниже кодов ошибок, и заголовком `Location`, содержащим новый аргумент nextLink, который начинает новое перечисление delta. По завершении полного перечисления сравните возвращенные элементы с локальным состоянием и выполните указанные ниже действия.
+There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
+In these cases the service will return an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch.
+After finishing the full enumeration, compare the returned items with your local state and follow these instructions.
 
 | Тип ошибки                       | Инструкции                                                                                                                                                                                                                    |
 |:---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resyncChangesApplyDifferences`  | Замените все локальные элементы (в том числе удаленные) соответствующими элементами с сервера, если вы уверены, что при последней синхронизации в службу были внесены все локальные изменения. Отправьте все локальные изменения, не загруженные на сервер. |
+| `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about. |
 | `resyncChangesUploadDifferences` | Отправьте все локальные элементы, не возвращенные службой, и все файлы, отличающиеся от соответствующих файлов на сервере (сохраняйте обе копии, если вы не знаете, какая из них более актуальна).                                       |
 
 ## <a name="retrieving-the-current-deltalink"></a>Получение текущего значения deltaLink
@@ -266,9 +270,9 @@ Content-type: application/json
 
 ## <a name="remarks"></a>Примечания
 
-* В разностном канале показано последнее состояние каждого элемента, а не каждое изменение. Если элемент был переименован дважды, он будет указан только один раз, но с последним именем.
-* По ряду причин один и тот же элемент может отображаться в разностном канале несколько раз. Следует использовать последний представленный вариант.
-* Свойство `parentReference` элементов не включает значение **path**. Это вызвано тем, что при переименовании папки ее потомки не возвращаются с помощью **delta**. **При использовании delta следует всегда отслеживать элементы по идентификатору**.
+* The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it would only show up once, with its latest name.
+* The same item may appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
+* The `parentReference` property on items will not include a value for **path**. This occurs because renaming a folder does not result in any descendants of the folder being returned from **delta**. **When using delta you should always track items by id**.
 * В OneDrive для бизнеса и SharePoint функция `delta` поддерживается только для папки `root`.
 
 * Запрос изменений не возвращает некоторые свойства DriveItem, в зависимости от типа операции и службы, как показано в таблицах ниже.
@@ -287,6 +291,15 @@ Content-type: application/json
     |---------|----------|
     | Создание или изменение | н/д |
     | Удаление | `ctag`, `size` |
+
+## <a name="scanning-permissions-hierarchies"></a>Сканирование иерархии разрешений
+По умолчанию ответ на запрос изменений включает информацию об общем доступе для всех изменившихся элементов в запросе, даже если они наследуют разрешения от родительского элемента и сами непосредственно не имеют изменений общего доступа. Обычно за этим следует дополнительный запрос на получение сведений о разрешениях для каждого элемента, а не только для тех, которые имеют изменения общего доступа. Чтобы получить более детальные сведения о произошедших изменениях разрешений, добавьте в запрос заголовок `Prefer: hierarchicalsharing`.
+
+При наличии заголовка `Prefer: hierarchicalsharing` возвращается информация об общем доступе для корневого элемента иерархии разрешений, а также для элементов с изменениями общего доступа. В случае когда изменения состоят в отмене общего доступа для элемента, отображается пустой аспект общего доступа, что позволяет отличать элементы, наследующие разрешения от родителя, и уникальные элементы, не имеющие ссылок для общего доступа. Пустой аспект общего доступа также отображается для корневого элемента иерархии разрешений, который не имеет общего доступа.
+
+Во многих сценариях сканирования интерес представляют именно изменения разрешений. Чтобы получить сведения о том, какие изменения являются следствием изменений разрешений, можно использовать в запросе заголовок `Prefer: deltashowsharingchanges`. В этом случае для всех элементов, включенных в ответ на запрос в связи с изменениями разрешений, будет отображаться примечание OData `@microsoft.graph.sharedChanged":"True"`. Эта функция применима к SharePoint и OneDrive для бизнеса, но не к личным учетным записям OneDrive.
+
+> **Примечание.** При включении в запрос заголовка `Prefer: deltashowsharingchanges` требуется использовать `Prefer: deltashowremovedasdeleted` и `Prefer: deltatraversepermissiongaps`. Эти значения заголовка можно объединить в один общий заголовок: `Prefer: deltashowremovedasdeleted; deltatraversepermissiongaps; deltashowsharingchanges;`.
 
 ## <a name="error-responses"></a>Ответы с ошибками
 

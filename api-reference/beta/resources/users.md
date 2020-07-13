@@ -1,16 +1,16 @@
 ---
 title: Работа с пользователями в Microsoft Graph
-description: Создавайте впечатляющие приложения, основанные на пользователях, их отношениях с другими пользователями и группами, а также их почтой, календарем и файлами.
+description: Создавайте впечатляющие приложения, учитывающие пользователей, их связи с другими пользователями и группами, а также их почту, календарь и файлы.
 localization_priority: Priority
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: d69870512f8a8e86ddda77fb99a41019879edaa1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 21377bfbc301dc2bffa403bc46407414c08dfaf0
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422462"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353765"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Работа с пользователями в Microsoft Graph
 
@@ -25,7 +25,7 @@ ms.locfileid: "43422462"
 
 ## <a name="authorization"></a>Авторизация
 
-Для операций доступа к пользователям необходимо одно из указанных ниже [разрешений](https://developer.microsoft.com/graph/docs/authorization/permission_scopes). Первые три разрешения могут быть предоставлены приложению пользователем. Остальные разрешения могут быть предоставлены приложению администратором.
+One of the following [permissions](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.
 
 - User.ReadBasic.All
 - User.Read
@@ -64,3 +64,6 @@ ms.locfileid: "43422462"
 |[`/users/{id}/drive`](../api/drive-get.md)| Получение хранилища файлов OneDrive пользователя. |
 |[`/users/{id}/memberOf`](../api/user-list-memberof.md)| Вывод списка групп, участником которых является пользователь. |
 |[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| Вывод списка команд Microsoft Teams, участником которых является пользователь. |
+
+## <a name="whats-new"></a>Что нового
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
