@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 08de40e9f1c6685f8439f3bc72609486950bad5d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5e0034c22be5b8a33d2fe46e1115c2bed5a08958
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43323952"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122716"
 ---
 # <a name="update-manageddeviceoverview"></a>Обновление объекта managedDeviceOverview
 
@@ -23,7 +23,7 @@ ms.locfileid: "43323952"
 Обновление свойств объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).
 
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -46,7 +46,7 @@ PATCH /deviceManagement/managedDeviceOverview
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).
@@ -74,7 +74,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1114
+Content-length: 1158
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -93,6 +93,7 @@ Content-length: 1114
     "androidDeviceAdminCount": 7,
     "androidFullyManagedCount": 8,
     "androidWorkProfileCount": 7,
+    "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4
   },
   "deviceExchangeAccessStateSummary": {
@@ -116,11 +117,11 @@ Content-length: 1114
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1227
+Content-Length: 1271
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -140,6 +141,7 @@ Content-Length: 1227
     "androidDeviceAdminCount": 7,
     "androidFullyManagedCount": 8,
     "androidWorkProfileCount": 7,
+    "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4
   },
   "deviceExchangeAccessStateSummary": {

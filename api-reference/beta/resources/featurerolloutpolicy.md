@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8ec1f42ba951fa1bde827b2900b98e37c62d6160
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 52034dd9d25c5decf8feb4cd3af28ea95224adcb
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845283"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123829"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>Тип ресурса Феатурероллаутполици
 
@@ -43,6 +43,10 @@ ms.locfileid: "44845283"
 
 * Включите [пассвордхашсинк](/azure/active-directory/hybrid/whatis-phs)   на странице "дополнительные компоненты" в Azure AD Connect.
 
+### <a name="emailasalternateid"></a>емаиласалтернатеид
+
+* Свяжите альтернативную электронную почту с учетными записями пользователей.
+
 ## <a name="methods"></a>Методы
 
 | Метод                                                                         | Возвращаемый тип                                     | Описание                                                               |
@@ -51,9 +55,9 @@ ms.locfileid: "44845283"
 | [Получение Феатурероллаутполици](../api/featurerolloutpolicy-get.md)                 | [феатурероллаутполици](featurerolloutpolicy.md) | Получение свойств и связей объекта феатурероллаутполици. |
 | [Создание Феатурероллаутполици](../api/directory-post-featurerolloutpolicies.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Создание нового объекта Феатурероллаутполици.                                 |
 | [Обновление Феатурероллаутполици](../api/featurerolloutpolicy-update.md)           | [феатурероллаутполици](featurerolloutpolicy.md) | Обновление свойств объекта феатурероллаутполици.                     |
-| [Удаление Феатурероллаутполици](../api/featurerolloutpolicy-delete.md)           | Нет                                            | Удаление объекта Феатурероллаутполици.                                     |
+| [Удаление Феатурероллаутполици](../api/featurerolloutpolicy-delete.md)           | Отсутствует                                            | Удаление объекта Феатурероллаутполици.                                     |
 | [Назначение appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Назначение directoryObject для развертывания компонентов.                              |
-| [Удаление appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | Нет                                            | Удаление directoryObject из развертывания компонента.                            |
+| [Удаление appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | Отсутствует                                            | Удаление directoryObject из развертывания компонента.                            |
 
 ## <a name="properties"></a>Свойства
 
@@ -63,10 +67,10 @@ ms.locfileid: "44845283"
 |displayName|Строка|Отображаемое имя для этой политики развертывания компонента.|
 |состав|стажедфеатуренаме| Возможные значения: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`.|
 |id|String| Только для чтения.|
-|исапплиедтурганизатион|Boolean|Указывает, следует ли применять эту политику развертывания функций ко всей Организации.|
+|исапплиедтурганизатион|Логический|Указывает, следует ли применять эту политику развертывания функций ко всей Организации.|
 |isEnabled|Boolean|Указывает, включен ли выпуск компонентов.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

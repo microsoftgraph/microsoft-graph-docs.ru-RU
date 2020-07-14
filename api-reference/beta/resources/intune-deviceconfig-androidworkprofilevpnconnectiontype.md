@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f4c72f7980c440ee786b19eab882821ecf9f88a5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9a06647ac24b094b352d4b0a01b3cfcc654e55db
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470164"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123962"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>тип перечисления Андроидворкпрофилевпнконнектионтипе
 
@@ -26,12 +26,13 @@ ms.locfileid: "43470164"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Цискоаниконнект|нуль|Cisco Аниконнект.|
-|пулсесекуре|1,1|Безопасный импульс.|
-|f5EdgeClient|2|Пограничный клиент F5.|
-|деллсоникваллмобилеконнект|4|Мобильное подключение Dell Сониквалл.|
+|пулсесекуре|1 |Безопасный импульс.|
+|f5EdgeClient|2 |Пограничный клиент F5.|
+|деллсоникваллмобилеконнект|3 |Мобильное подключение Dell Сониквалл.|
 |чеккпоинткапсулевпн|4 |Проверка покапсулы VPN.|
 |клиентов|5 |Клиентов|
 |Элемент paloaltoglobalprotect|6 |Palo Alto сети Глобалпротект.|
+|микрософттуннел|7 |Туннель Microsoft.|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cc6746dca524394be358d1a4c31fc5cfe53c001b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 0ca9452f034600275acbd59d9a86b7d0c7487910
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793117"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123346"
 ---
 # <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>Обновление androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -48,7 +48,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md).
@@ -58,7 +58,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -66,51 +66,58 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|аккаунтсблоккмодификатион|Boolean|Указывает, отключено ли добавление или удаление учетных записей.|
-|аппсалловинсталлфромункновнсаурцес|Boolean|Указывает, может ли пользователь включить параметр "неизвестные источники".|
+|аккаунтсблоккмодификатион|Логический|Указывает, отключено ли добавление или удаление учетных записей.|
+|аппсалловинсталлфромункновнсаурцес|Логический|Указывает, может ли пользователь включить параметр "неизвестные источники".|
 |аппсаутаупдатеполици|[андроиддевицеовнераппаутаупдатеполицитипе](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|Указывает значение политики автоматического обновления приложения. Возможные значения: `notConfigured`, `userChoice`, `never`, `wiFiOnly`, `always`.|
 |аппсдефаултпермиссионполици|[андроиддевицеовнердефаултапппермиссионполицитипе](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|Указывает политику разрешений для запросов для разрешений среды выполнения, если она не определена для приложения особым образом. Возможные значения: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
-|аппсрекоммендскиппингфирстусехинтс|Boolean|Указывает, следует ли запретить всем приложениям пропускать все подсказок по первому использованию, которые они могли добавить.|
-|блуетусблоккконфигуратион|Boolean|Указывает, следует ли запретить пользователю настраивать Bluetooth.|
-|блуетусблоккконтактшаринг|Boolean|Указывает, следует ли запретить пользователю предоставлять общий доступ к контактам через Bluetooth.|
+|аппсрекоммендскиппингфирстусехинтс|Логический|Указывает, следует ли запретить всем приложениям пропускать все подсказок по первому использованию, которые они могли добавить.|
+|блуетусблоккконфигуратион|Логический|Указывает, следует ли запретить пользователю настраивать Bluetooth.|
+|блуетусблоккконтактшаринг|Логический|Указывает, следует ли запретить пользователю предоставлять общий доступ к контактам через Bluetooth.|
 |cameraBlocked|Логический|Указывает, следует ли отключить использование камеры.|
 |cellularBlockWiFiTethering|Boolean|Указывает, следует ли заблокировать модем Wi-Fi.|
-|цертификатекредентиалконфигуратиондисаблед|Boolean|Указывает, следует ли запретить пользователям настраивать учетные данные сертификатов.|
-|микрософтлаунчерконфигуратионенаблед|Boolean|Указывает, следует ли настроить средство запуска Microsoft.|
-|микрософтлаунчеркустомваллпаперенаблед|Boolean|Указывает, следует ли настраивать фоновый рисунок на целевых устройствах.|
+|цертификатекредентиалконфигуратиондисаблед|Логический|Указывает, следует ли запретить пользователям настраивать учетные данные сертификатов.|
+|микрософтлаунчерконфигуратионенаблед|Логический|Указывает, следует ли настроить средство запуска Microsoft.|
+|микрософтлаунчеркустомваллпаперенаблед|Логический|Указывает, следует ли настраивать фоновый рисунок на целевых устройствах.|
 |микрософтлаунчеркустомваллпаперимажеурл|String|Указывает URL-адрес для файла изображения, который будет использоваться в качестве фонового рисунка на целевых устройствах.|
-|микрософтлаунчеркустомваллпапералловусермодификатион|Boolean|Указывает, может ли пользователь изменять фоновый рисунок для персонализации своего устройства.|
-|микрософтлаунчерфиденаблед|Boolean|Указывает, следует ли включить веб-канал запуска на устройстве.|
-|микрософтлаунчерфидалловусермодификатион|Boolean|Указывает, может ли пользователь изменять веб-канал запуска на устройстве.|
-|микрософтлаунчердоккпресенцеконфигуратион|[микрософтлаунчердоккпресенце](../resources/intune-deviceconfig-microsoftlauncherdockpresence.md)|Указывает, следует ли настроить закрепление устройства. Возможные значения: `notConfigured`, `show`, `hide`, `disabled`.|
-|микрософтлаунчердоккпресенцеалловусермодификатион|Boolean|Указывает, может ли пользователь изменять конфигурацию закрепления устройств на устройстве.|
-|микрософтлаунчерсеарчбарплацементконфигуратион|[микрософтлаунчерсеарчбарплацемент](../resources/intune-deviceconfig-microsoftlaunchersearchbarplacement.md)|Указывает конфигурацию размещения панели поиска на устройстве. Возможные значения: `notConfigured`, `top`, `bottom`, `hide`.|
-|микрософтлаунчерсеарчбарплацементалловусермодификатион|Boolean|Указывает, может ли пользователь изменять расположение панели поиска на устройстве.|
+|микрософтлаунчеркустомваллпапералловусермодификатион|Логический|Указывает, может ли пользователь изменять фоновый рисунок для персонализации своего устройства.|
+|микрософтлаунчерфиденаблед|Логический|Указывает, следует ли включить веб-канал запуска на устройстве.|
+|микрософтлаунчерфидалловусермодификатион|Логический|Указывает, может ли пользователь изменять веб-канал запуска на устройстве.|
+|микрософтлаунчердоккпресенцеконфигуратион|[microsoftLauncherDockPresence](../resources/intune-deviceconfig-microsoftlauncherdockpresence.md)|Указывает, следует ли настроить закрепление устройства. Возможные значения: `notConfigured`, `show`, `hide`, `disabled`.|
+|микрософтлаунчердоккпресенцеалловусермодификатион|Логический|Указывает, может ли пользователь изменять конфигурацию закрепления устройств на устройстве.|
+|микрософтлаунчерсеарчбарплацементконфигуратион|[microsoftLauncherSearchBarPlacement](../resources/intune-deviceconfig-microsoftlaunchersearchbarplacement.md)|Указывает конфигурацию размещения панели поиска на устройстве. Возможные значения: `notConfigured`, `top`, `bottom`, `hide`.|
 |enrollmentProfile|[androidDeviceOwnerEnrollmentProfileType](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|Указывает, какой профиль регистрации вы хотите настроить. Возможные значения: `notConfigured`, `dedicatedDevice`, `fullyManaged`.|
-|датароамингблоккед|Boolean|Указывает, следует ли запретить пользователю перемещать данные.|
-|датетимеконфигуратионблоккед|Boolean|Указывает, следует ли запретить пользователю вручную изменять дату или время на устройстве.|
+|датароамингблоккед|Логический|Указывает, следует ли запретить пользователю перемещать данные.|
+|датетимеконфигуратионблоккед|Логический|Указывает, следует ли запретить пользователю вручную изменять дату или время на устройстве.|
 |факториресетдевицеадминистраторемаилс|Коллекция String|Список сообщений учетных записей Google, которые потребуются для проверки подлинности после завершения фабричного сброса устройства перед его настройкой.|
 |factoryResetBlocked|Boolean|Указывает, отключен ли параметр Reset фабрики в параметрах.|
 |глобалпрокси|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|Прокси-сервер настраивается напрямую с узлом, портом и исключенными узлами.|
-|гуглеаккаунтсблоккед|Boolean|Указывает, будут ли блокироваться учетные записи Google.|
-|киоскмодескринсаверконфигуратионенаблед|Boolean|Указывает, следует ли включить режим экранной заставки или не в режиме киоска.|
+|гуглеаккаунтсблоккед|Логический|Указывает, будут ли блокироваться учетные записи Google.|
+|киоскмодескринсаверконфигуратионенаблед|Логический|Указывает, следует ли включить режим экранной заставки или не в режиме киоска.|
 |киоскмодескринсаверимажеурл|String|URL-адрес изображения, которое будет экранной заставкой устройства в режиме киоска.|
 |киоскмодескринсавердисплайтимеинсекондс|Int32|Время (в секундах), в течение которого устройство будет отображать экранную заставку в режиме киоска. Допустимые значения — от 0 до 9999999|
 |киоскмодескринсаверстартделайинсекондс|Int32|Время (в секундах), в течение которого устройство должно быть неактивным, чтобы экранная заставка отображалась в режиме киоска. Допустимые значения — от 1 до 9999999|
-|киоскмодескринсавердетектмедиадисаблед|Boolean|Указывает, должно ли устройство отображать экранную заставку при воспроизведении аудио-и видеоконференций в полноэкранном режиме.|
+|киоскмодескринсавердетектмедиадисаблед|Логический|Указывает, должно ли устройство отображать экранную заставку при воспроизведении аудио-и видеоконференций в полноэкранном режиме.|
 |kioskModeApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список управляемых приложений, которые будут отображаться, когда устройство находится в режиме киоска. Эта коллекция может содержать не более 500 элементов.|
 |киоскмодеваллпаперурл|String|URL-адрес общедоступного изображения, которое будет использоваться для фонового рисунка, когда устройство находится в режиме киоска.|
 |киоскмодикситкоде|String|Код выхода, позволяющий пользователю выходить из режима киоска, когда устройство находится в режиме киоска.|
-|киоскмодевиртуалхомебуттоненаблед|Boolean|Указывает, следует ли отображать кнопку виртуальной домашней страницы, когда устройство находится в режиме киоска.|
+|киоскмодевиртуалхомебуттоненаблед|Логический|Указывает, следует ли отображать кнопку виртуальной домашней страницы, когда устройство находится в режиме киоска.|
 |киоскмодевиртуалхомебуттонтипе|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|Указывает, является ли кнопка "Виртуальная Домашняя страница" кнопкой "Прокрутка вверх" или плавающей кнопкой "домой". Возможные значения: `notConfigured`, `swipeUp`, `floating`.|
-|киоскмодеблуетусконфигуратионенаблед|Boolean|Указывает, следует ли запретить пользователю настраивать параметры Bluetooth в режиме киоска.|
-|киоскмодевификонфигуратионенаблед|Boolean|Указывает, следует ли разрешить пользователю настраивать параметры Wi/Fi в режиме киоска.|
-|киоскмодефлашлигхтконфигуратионенаблед|Boolean|Указывает, следует ли разрешить пользователю использовать флашлигхт в режиме киоска.|
-|киоскмодемедиаволумеконфигуратионенаблед|Boolean|Указывает, следует ли запретить пользователю изменять громкость мультимедиа в режиме киоска.|
-|микрофонефорцемуте|Boolean|Указывает, следует ли запретить разблокирование микрофона устройства.|
-|нетворкескапехатчалловед|Boolean|Указывает, будет ли устройство разрешать подключение к временному сетевому подключению во время загрузки.|
-|нфкблоккаутгоингбеам|Boolean|Указывает, следует ли заблокировать исходящую форму NFC.|
-|пассвордблокккэйгуард|Boolean|Указывает, отключен ли кэйгуард.|
+|киоскмодеблуетусконфигуратионенаблед|Логический|Указывает, следует ли запретить пользователю настраивать параметры Bluetooth в режиме киоска.|
+|киоскмодевификонфигуратионенаблед|Логический|Указывает, следует ли разрешить пользователю настраивать параметры Wi/Fi в режиме киоска.|
+|киоскмодефлашлигхтконфигуратионенаблед|Логический|Указывает, следует ли разрешить пользователю использовать флашлигхт в режиме киоска.|
+|киоскмодемедиаволумеконфигуратионенаблед|Логический|Указывает, следует ли запретить пользователю изменять громкость мультимедиа в режиме киоска.|
+|киоскмодешовдевицеинфо|Логический|Указывает, следует ли разрешить пользователю доступ к сведениям о базовом устройстве.|
+|киоскмодеманажедсеттингсентридисаблед|Логический|Указывает, следует ли отображать точку входа управляемых параметров на управляемом домашнем экране в режиме киоска.|
+|киоскмодедебугменуеасякцессенаблед|Логический|Указывает, следует ли запретить пользователю простой доступ к меню Отладка в режиме киоска.|
+|киоскмодешоваппнотификатионбадже|Логический|Указывает, следует ли отображать эмблемы уведомлений приложений в режиме киоска.|
+|киоскмодескринориентатион|[андроиддевицеовнеркиоскмодескринориентатион](../resources/intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md)|Конфигурация ориентации экрана для управляемого экрана дома в режиме киоска. Возможные значения: `notConfigured`, `portrait`, `landscape`, `autoRotate`.|
+|киоскмодеиконсизе|[андроиддевицеовнеркиоскмодеиконсизе](../resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)|Конфигурация размера значков для управляемого экрана дома в режиме киоска. Возможные значения: `notConfigured`, `smallest`, `small`, `regular`, `large`, `largest`.|
+|киоскмодефолдерикон|[андроиддевицеовнеркиоскмодефолдерикон](../resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)|Конфигурация значков папок для управляемого экрана дома в режиме киоска. Возможные значения: `notConfigured`, `darkSquare`, `darkCircle`, `lightSquare`, `lightCircle`.|
+|киоскмодевифиалловедссидс|Коллекция String|Ограниченный набор подключений WIFI SSID, доступных пользователю для настройки в режиме киоска. Эта коллекция может содержать не более 500 элементов.|
+|микрофонефорцемуте|Логический|Указывает, следует ли запретить разблокирование микрофона устройства.|
+|нетворкескапехатчалловед|Логический|Указывает, будет ли устройство разрешать подключение к временному сетевому подключению во время загрузки.|
+|нфкблоккаутгоингбеам|Логический|Указывает, следует ли заблокировать исходящую форму NFC.|
+|пассвордблокккэйгуард|Логический|Указывает, отключен ли кэйгуард.|
 |пассвордблокккэйгуардфеатурес|Коллекция [андроидкэйгуардфеатуре](../resources/intune-deviceconfig-androidkeyguardfeature.md)|Список компонентов кэйгуард устройств, которые необходимо заблокировать. Эта коллекция может содержать не более 7 элементов. Возможные значения: `notConfigured`, `camera`, `notifications`, `unredactedNotifications`, `trustAgents`, `fingerprint`, `remoteInput`, `allFeatures`.|
 |passwordExpirationDays|Int32|Указывает время в секундах, в течение которого можно задать пароль до истечения срока его действия, и потребуется новый пароль. Допустимые значения: от 1 до 365.|
 |passwordMinimumLength|Int32|Указывает минимальную длину пароля, необходимого для устройства. Допустимые значения: от 4 до 16.|
@@ -125,26 +132,26 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |passwordRequiredType|[андроиддевицеовнеррекуиредпассвордтипе](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Указывает минимальное качество пароля, необходимое для устройства. Возможные значения: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Указывает, сколько раз пользователь может ввести неправильный пароль до очистки устройства. Допустимые значения: от 4 до 11.|
 |плайсторемоде|[androidDeviceOwnerPlayStoreMode](../resources/intune-deviceconfig-androiddeviceownerplaystoremode.md)|Указывает режим проигрывания устройства в хранилище. Возможные значения: `notConfigured`, `allowList`, `blockList`.|
-|сафебутблоккед|Boolean|Указывает, отключена ли загрузка устройства в "безопасная загрузка".|
+|сафебутблоккед|Логический|Указывает, отключена ли загрузка устройства в "безопасная загрузка".|
 |screenCaptureBlocked|Boolean|Указывает, следует ли отключить возможность использования снимков экрана.|
-|секуритялловдебуггингфеатурес|Boolean|Указывает, следует ли запретить пользователю включать функции отладки на устройстве.|
-|securityRequireVerifyApps|Boolean|Указывает, требуется ли проверка приложений.|
-|статусбарблоккед|Boolean|Указывает, отключена ли строка состояния, в том числе уведомления, быстрые параметры и другие наложение экрана.|
+|секуритялловдебуггингфеатурес|Логический|Указывает, следует ли запретить пользователю включать функции отладки на устройстве.|
+|securityRequireVerifyApps|Логический|Указывает, требуется ли проверка приложений.|
+|статусбарблоккед|Логический|Указывает, отключена ли строка состояния, в том числе уведомления, быстрые параметры и другие наложение экрана.|
 |стайонмодес|Коллекция [андроиддевицеовнербаттериплугжедмоде](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)|Список режимов, в которых дисплей устройства остается включенным. Эта коллекция может содержать не более 4 элементов. Возможные значения: `notConfigured`, `ac`, `usb`, `wireless`.|
-|сторажеалловусб|Boolean|Указывает, следует ли разрешить запоминающее устройство USB.|
-|сторажеблоккекстерналмедиа|Boolean|Указывает, следует ли заблокировать внешний носитель.|
-|сторажеблоккусбфилетрансфер|Boolean|Указывает, следует ли запретить передачу файлов через USB.|
+|сторажеалловусб|Логический|Указывает, следует ли разрешить запоминающее устройство USB.|
+|сторажеблоккекстерналмедиа|Логический|Указывает, следует ли заблокировать внешний носитель.|
+|сторажеблоккусбфилетрансфер|Логический|Указывает, следует ли запретить передачу файлов через USB.|
 |системупдатевиндовстартминутесафтермиднигхт|Int32|Указывает количество минут после полуночи, когда запустится окно обновления системы. Допустимые значения — от 0 до 1440|
 |системупдатевиндовендминутесафтермиднигхт|Int32|Указывает количество минут после полуночи, в течение которого будет завершено окно обновления системы. Допустимые значения — от 0 до 1440|
 |системупдатеинсталлтипе|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|Тип конфигурации обновления системы. Возможные значения: `deviceDefault`, `postpone`, `windowed`, `automatic`.|
-|системвиндовсблоккед|Boolean|Указывает, следует ли заблокировать окна командной строки системы Android, например, уведомления, телефонные действия и системные оповещения.|
-|усерсблоккадд|Boolean|Указывает, отключено ли добавление пользователей и профилей.|
-|усерсблоккремове|Boolean|Указывает, следует ли отключить удаление других пользователей с устройства.|
-|волумеблоккаджустмент|Boolean|Указывает, отключена ли настройка главного тома.|
-|впналвайсонлоккдовнмоде|Boolean|Указывает, следует ли блокировать сетевой трафик при отключении VPN-подключения.|
+|системвиндовсблоккед|Логический|Указывает, следует ли заблокировать окна командной строки системы Android, например, уведомления, телефонные действия и системные оповещения.|
+|усерсблоккадд|Логический|Указывает, отключено ли добавление пользователей и профилей.|
+|усерсблоккремове|Логический|Указывает, следует ли отключить удаление других пользователей с устройства.|
+|волумеблоккаджустмент|Логический|Указывает, отключена ли настройка главного тома.|
+|впналвайсонлоккдовнмоде|Логический|Указывает, следует ли блокировать сетевой трафик при отключении VPN-подключения.|
 |Свойства vpnalwaysonpackageidentifier|String|Имя пакета приложения Android для приложения, которое будет обрабатывать постоянное VPN-подключение.|
-|вифиблоккедитконфигуратионс|Boolean|Указывает, следует ли запретить пользователю редактировать параметры подключения WiFi.|
-|вифиблоккедитполицидефинедконфигуратионс|Boolean|Указывает, следует ли запретить пользователю редактировать только сети, определенные политикой.|
+|вифиблоккедитконфигуратионс|Логический|Указывает, следует ли запретить пользователю редактировать параметры подключения WiFi.|
+|вифиблоккедитполицидефинедконфигуратионс|Логический|Указывает, следует ли запретить пользователю редактировать только сети, определенные политикой.|
 
 
 
@@ -158,7 +165,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 5044
+Content-length: 5359
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -209,7 +216,6 @@ Content-length: 5044
   "microsoftLauncherDockPresenceConfiguration": "show",
   "microsoftLauncherDockPresenceAllowUserModification": true,
   "microsoftLauncherSearchBarPlacementConfiguration": "top",
-  "microsoftLauncherSearchBarPlacementAllowUserModification": true,
   "enrollmentProfile": "dedicatedDevice",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
@@ -244,6 +250,16 @@ Content-length: 5044
   "kioskModeWiFiConfigurationEnabled": true,
   "kioskModeFlashlightConfigurationEnabled": true,
   "kioskModeMediaVolumeConfigurationEnabled": true,
+  "kioskModeShowDeviceInfo": true,
+  "kioskModeManagedSettingsEntryDisabled": true,
+  "kioskModeDebugMenuEasyAccessEnabled": true,
+  "kioskModeShowAppNotificationBadge": true,
+  "kioskModeScreenOrientation": "portrait",
+  "kioskModeIconSize": "smallest",
+  "kioskModeFolderIcon": "darkSquare",
+  "kioskModeWifiAllowedSsids": [
+    "Kiosk Mode Wifi Allowed Ssids value"
+  ],
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -294,7 +310,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5216
+Content-Length: 5531
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -348,7 +364,6 @@ Content-Length: 5216
   "microsoftLauncherDockPresenceConfiguration": "show",
   "microsoftLauncherDockPresenceAllowUserModification": true,
   "microsoftLauncherSearchBarPlacementConfiguration": "top",
-  "microsoftLauncherSearchBarPlacementAllowUserModification": true,
   "enrollmentProfile": "dedicatedDevice",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
@@ -383,6 +398,16 @@ Content-Length: 5216
   "kioskModeWiFiConfigurationEnabled": true,
   "kioskModeFlashlightConfigurationEnabled": true,
   "kioskModeMediaVolumeConfigurationEnabled": true,
+  "kioskModeShowDeviceInfo": true,
+  "kioskModeManagedSettingsEntryDisabled": true,
+  "kioskModeDebugMenuEasyAccessEnabled": true,
+  "kioskModeShowAppNotificationBadge": true,
+  "kioskModeScreenOrientation": "portrait",
+  "kioskModeIconSize": "smallest",
+  "kioskModeFolderIcon": "darkSquare",
+  "kioskModeWifiAllowedSsids": [
+    "Kiosk Mode Wifi Allowed Ssids value"
+  ],
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,

@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a7aa3d37a78217301f4b5fd150f558dcec55de7f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: f02aa12b3a0a0f03a49ab65a11c20f642cb27986
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790910"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123780"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -25,6 +25,7 @@ ms.locfileid: "44790910"
 
 Для управления политиками защиты приложений в Intune используются перечисленные ниже ресурсы Graph.
 
+- [Режим регистрации владельца устройства Android](intune-androidforwork-androiddeviceownerenrollmentmode.md)
 - [Профиль регистрации владельца устройства Android](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
 - [Код компании регистрации Android](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Приложение Android for Work](intune-apps-androidforworkapp.md)

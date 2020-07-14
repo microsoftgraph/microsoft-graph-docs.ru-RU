@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e35a9704f2028e1879c6b3d1988db6a2cc6f31b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 85ac7d619966aaf926a001b2c5381d5101e7abef
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790847"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123549"
 ---
 # <a name="win32lobapp-resource-type"></a>Тип ресурса win32LobApp
 
@@ -31,7 +31,7 @@ ms.locfileid: "44790847"
 |[Список win32LobApps](../api/intune-apps-win32lobapp-list.md)|Коллекция [win32LobApp](../resources/intune-apps-win32lobapp.md)|Список свойств и связей объектов [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
 |[Получение win32LobApp](../api/intune-apps-win32lobapp-get.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Чтение свойств и связей объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
 |[Создание win32LobApp](../api/intune-apps-win32lobapp-create.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Создание нового объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
-|[Удаление win32LobApp](../api/intune-apps-win32lobapp-delete.md)|Нет|Удаляет объект [win32LobApp](../resources/intune-apps-win32lobapp.md).|
+|[Удаление win32LobApp](../api/intune-apps-win32lobapp-delete.md)|Отсутствует|Удаляет объект [win32LobApp](../resources/intune-apps-win32lobapp.md).|
 |[Обновление win32LobApp](../api/intune-apps-win32lobapp-update.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Обновление свойств объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
 
 ## <a name="properties"></a>Свойства
@@ -73,7 +73,8 @@ ms.locfileid: "44790847"
 |ретурнкодес|Коллекция [win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Коды возврата для поведения после установки.|
 |мсиинформатион|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Сведения о MSI, если это приложение Win32 является приложением MSI.|
 |сетупфилепас|String|Относительный путь к файлу установки в зашифрованном пакете Win32LobApp.|
-|installLanguage|String|Н/Д|
+|installLanguage|String|Пока не задокументировано.|
+|минимумсуппортедвиндовсрелеасе|String|Значение минимального поддерживаемого выпуска Windows.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -200,7 +201,8 @@ ms.locfileid: "44790847"
     "publisher": "String"
   },
   "setupFilePath": "String",
-  "installLanguage": "String"
+  "installLanguage": "String",
+  "minimumSupportedWindowsRelease": "String"
 }
 ```
 

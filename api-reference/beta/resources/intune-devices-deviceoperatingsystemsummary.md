@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1c15adc462742adb734a503f55dc69af48bf0f82
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2b1a49496357a3688bd9f484d8759fdd0c2140eb
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470742"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122632"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Тип ресурса deviceOperatingSystemSummary
 
@@ -35,6 +35,7 @@ ms.locfileid: "43470742"
 |андроиддевицеадминкаунт|Int32|Число устройств с Android для администрирования устройств.|
 |андроидфуллиманажедкаунт|Int32|Количество полностью управляемых устройств с Android.|
 |андроидворкпрофилекаунт|Int32|Количество устройств с Android в рабочем профиле.|
+|андроидкорпоратеворкпрофилекаунт|Int32|Количество устройств с Android для корпоративных профилей рабочих профилей. Также называется корпоративным владельцем. Допустимые значения: от 1 до 2147483647|
 |конфигмгрдевицекаунт|Int32|Количество управляемых устройств ConfigMgr.|
 
 ## <a name="relationships"></a>Связи
@@ -60,6 +61,7 @@ ms.locfileid: "43470742"
   "androidDeviceAdminCount": 1024,
   "androidFullyManagedCount": 1024,
   "androidWorkProfileCount": 1024,
+  "androidCorporateWorkProfileCount": 1024,
   "configMgrDeviceCount": 1024
 }
 ```

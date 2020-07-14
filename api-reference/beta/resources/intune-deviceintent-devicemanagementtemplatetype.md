@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 954a4030cacd8448e0ae1816afda69f4d02237bb
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 1dd3a03efe602b8b9baeedcd622f6a012ca6ef3c
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43449719"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45124039"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>тип перечисления Девицеманажементтемплатетипе
 
@@ -28,12 +28,13 @@ ms.locfileid: "43449719"
 |секуритибаселине|нуль|Шаблон базового плана безопасности|
 |спеЦиализеддевицес|1 |Шаблон специализированных устройств|
 |адванцедсреатпротектионсекуритибаселине|2 |Основной шаблон безопасности Advanced Threat protection|
-|deviceConfiguration|4|Шаблон конфигурации устройства|
+|deviceConfiguration|3 |Шаблон конфигурации устройства|
 |собственный|4 |Настраиваемый шаблон, определенный администратором|
 |секурититемплате|5 |Шаблоны с определенными параметрами безопасности|
 |микрософтеджесекуритибаселине|6 |Базовый шаблон безопасности Microsoft Edge|
 |microsoftOffice365ProPlusSecurityBaseline|7 |Базовый шаблон безопасности Microsoft Office 365 профессиональный плюс|
 |девицекомплианце|8 |Шаблон соответствия требованиям устройств|
+|deviceConfigurationForOffice365|9 |Настройка устройств для параметров Microsoft Office 365|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d063858501bb8741000234bde8ade8d33550c9f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4b02402ff6c6c0373396bd6fca0cad6ded5cb36d
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43359743"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123773"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a>тип перечисления Девицегуардлокалсистемаусоритикредентиалгуардтипе
 
@@ -26,8 +26,9 @@ ms.locfileid: "43359743"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Отключает Credential Guard удаленно, если ранее настроено без блокировки UEFI.|
-|енаблевисуефилокк|1,1|Включает защиту учетных данных с блокировкой UEFI.|
-|енаблевисаутуефилокк|2|Включает защиту учетных данных без блокировки UEFI.|
+|енаблевисуефилокк|1 |Включает защиту учетных данных с блокировкой UEFI.|
+|енаблевисаутуефилокк|2 |Включает защиту учетных данных без блокировки UEFI.|
+|отключение|3 |Отключает защиту учетных данных. Это значение ОС по умолчанию.|
 
 
 

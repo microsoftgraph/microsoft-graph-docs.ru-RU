@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58f061bd89c3633651e40578e23db1f1f4836406
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 44c9b00511dc3bd8e4a1c9fb9226e6e62a80dc22
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792739"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122975"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>Создание Манажедаллдевицецертификатестате
 
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Манажедаллдевицецертификатестате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Манажедаллдевицецертификатестате.
@@ -55,6 +55,7 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |цертификатеревокестатус|[цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
+|цертификатеревокестатусластчанжедатетиме|DateTimeOffset|Время последнего изменения состояния отзыва|
 |манажеддевицедисплайнаме|String|Отображаемое имя устройства|
 |userPrincipalName|String|Имя субъекта-пользователя|
 |цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
@@ -65,7 +66,6 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 |цертификатекэйусажес|Int32|Использование ключа|
 |цертификатикстендедкэйусажес|String|Расширенное использование ключа|
 |цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
-|цертификатеревокестатусластчанжедатетиме|DateTimeOffset|Время последнего изменения состояния отзыва|
 
 
 
@@ -79,11 +79,12 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 Content-type: application/json
-Content-length: 735
+Content-length: 820
 
 {
   "@odata.type": "#microsoft.graph.managedAllDeviceCertificateState",
   "certificateRevokeStatus": "pending",
+  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:34.9547208-08:00",
   "managedDeviceDisplayName": "Managed Device Display Name value",
   "userPrincipalName": "User Principal Name value",
   "certificateExpirationDateTime": "2017-01-01T00:02:14.9489247-08:00",
@@ -93,8 +94,7 @@ Content-length: 735
   "certificateSubjectName": "Certificate Subject Name value",
   "certificateKeyUsages": 4,
   "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
-  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
+  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
 
@@ -103,12 +103,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 784
+Content-Length: 869
 
 {
   "@odata.type": "#microsoft.graph.managedAllDeviceCertificateState",
   "id": "987c6a17-6a17-987c-176a-7c98176a7c98",
   "certificateRevokeStatus": "pending",
+  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:34.9547208-08:00",
   "managedDeviceDisplayName": "Managed Device Display Name value",
   "userPrincipalName": "User Principal Name value",
   "certificateExpirationDateTime": "2017-01-01T00:02:14.9489247-08:00",
@@ -118,8 +119,7 @@ Content-Length: 784
   "certificateSubjectName": "Certificate Subject Name value",
   "certificateKeyUsages": 4,
   "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
-  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
+  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
 

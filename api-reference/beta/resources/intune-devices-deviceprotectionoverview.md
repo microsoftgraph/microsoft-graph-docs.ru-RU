@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e6f949cae0ae293c713ba52480d23c44ea093b3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5f6d4c325d11ee5f02277ad86f7bb038a2ac3b0f
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470727"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123724"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>Тип ресурса Девицепротектионовервиев
 
@@ -35,6 +35,7 @@ ms.locfileid: "43470727"
 |пендингмануалстепсдевицекаунт|Int32|Количество устройств, ожидающих действий, выполняемых вручную.|
 |пендингоффлинескандевицекаунт|Int32|Количество устройств, ожидающих автономной проверки.|
 |критикалфаилуресдевицекаунт|Int32|Количество устройств критических сбоев.|
+|пендингкуиккскандевицекаунт|Int32|Число ожидающих устройств быстрого сканирования. Допустимые значения: от 2147483648 до 2147483647|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,7 +59,8 @@ ms.locfileid: "43470727"
   "pendingRestartDeviceCount": 1024,
   "pendingManualStepsDeviceCount": 1024,
   "pendingOfflineScanDeviceCount": 1024,
-  "criticalFailuresDeviceCount": 1024
+  "criticalFailuresDeviceCount": 1024,
+  "pendingQuickScanDeviceCount": 1024
 }
 ```
 

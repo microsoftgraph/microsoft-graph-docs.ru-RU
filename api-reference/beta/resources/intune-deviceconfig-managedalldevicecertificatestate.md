@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f6bd2a1511ea51962c67bee0be88b11c3579e3a
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 0684e9cd6e3ca4e34c74ec6315818d94cce208fd
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790105"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45124053"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>Тип ресурса Манажедаллдевицецертификатестате
 
@@ -28,7 +28,7 @@ ms.locfileid: "44790105"
 |[Список Манажедаллдевицецертификатестатес](../api/intune-deviceconfig-managedalldevicecertificatestate-list.md)|Коллекция [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|Список свойств и связей объектов [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .|
 |[Получение Манажедаллдевицецертификатестате](../api/intune-deviceconfig-managedalldevicecertificatestate-get.md)|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|Чтение свойств и связей объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .|
 |[Создание Манажедаллдевицецертификатестате](../api/intune-deviceconfig-managedalldevicecertificatestate-create.md)|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|Создание нового объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .|
-|[Удаление Манажедаллдевицецертификатестате](../api/intune-deviceconfig-managedalldevicecertificatestate-delete.md)|Нет|Удаляет объект [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md).|
+|[Удаление Манажедаллдевицецертификатестате](../api/intune-deviceconfig-managedalldevicecertificatestate-delete.md)|Отсутствует|Удаляет объект [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md).|
 |[Обновление Манажедаллдевицецертификатестате](../api/intune-deviceconfig-managedalldevicecertificatestate-update.md)|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|Обновление свойств объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .|
 
 ## <a name="properties"></a>Свойства
@@ -36,6 +36,7 @@ ms.locfileid: "44790105"
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |цертификатеревокестатус|[цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
+|цертификатеревокестатусластчанжедатетиме|DateTimeOffset|Время последнего изменения состояния отзыва|
 |манажеддевицедисплайнаме|String|Отображаемое имя устройства|
 |userPrincipalName|String|Имя субъекта-пользователя|
 |цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
@@ -46,7 +47,6 @@ ms.locfileid: "44790105"
 |цертификатекэйусажес|Int32|Использование ключа|
 |цертификатикстендедкэйусажес|String|Расширенное использование ключа|
 |цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
-|цертификатеревокестатусластчанжедатетиме|DateTimeOffset|Время последнего изменения состояния отзыва|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -64,6 +64,7 @@ ms.locfileid: "44790105"
   "@odata.type": "#microsoft.graph.managedAllDeviceCertificateState",
   "id": "String (identifier)",
   "certificateRevokeStatus": "String",
+  "certificateRevokeStatusLastChangeDateTime": "String (timestamp)",
   "managedDeviceDisplayName": "String",
   "userPrincipalName": "String",
   "certificateExpirationDateTime": "String (timestamp)",
@@ -73,8 +74,7 @@ ms.locfileid: "44790105"
   "certificateSubjectName": "String",
   "certificateKeyUsages": 1024,
   "certificateExtendedKeyUsages": "String",
-  "certificateIssuanceDateTime": "String (timestamp)",
-  "certificateRevokeStatusLastChangeDateTime": "String (timestamp)"
+  "certificateIssuanceDateTime": "String (timestamp)"
 }
 ```
 

@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a6043023bd734a571028baad6b0f8ad26e12d04e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ccbd1e60b39caf716b9059e0a3e145e42783cae0
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793474"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123906"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -79,6 +79,9 @@ ms.locfileid: "44793474"
 - [Сводка по запуску сценария работоспособности устройства](intune-devices-devicehealthscriptrunsummary.md)
 - [Параметр строки сценария работоспособности устройства](intune-devices-devicehealthscriptstringparameter.md)
 - [Расписание времени для сценария работоспособности устройства](intune-devices-devicehealthscripttimeschedule.md)
+- [Запрос на сбор журнала устройств](intune-devices-devicelogcollectionrequest.md)
+- [Отклик коллекции журнала устройств](intune-devices-devicelogcollectionresponse.md)
+- [Тип шаблона коллекции журнала устройств](intune-devices-devicelogcollectiontemplatetype.md)
 - [Определение абстрактного сложного параметра управления устройствами](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [Экземпляр абстрактного сложного параметра управления устройствами](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Событие автопилота управления устройствами](intune-troubleshooting-devicemanagementautopilotevent.md)

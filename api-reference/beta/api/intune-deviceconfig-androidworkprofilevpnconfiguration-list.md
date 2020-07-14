@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b9912a3fe3f2e88e09ea47bf3d5dca582ef132b8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c5f1950e1d42683b3e8d305c8c5386225f7dcecf
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434629"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123206"
 ---
 # <a name="list-androidworkprofilevpnconfigurations"></a>Список Андроидворкпрофилевпнконфигуратионс
 
@@ -23,7 +23,7 @@ ms.locfileid: "43434629"
 Список свойств и связей объектов [андроидворкпрофилевпнконфигуратион](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [андроидворкпрофилевпнконфигуратион](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -62,11 +62,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2207
+Content-Length: 2592
 
 {
   "value": [
@@ -130,7 +130,18 @@ Content-Length: 2207
           "value": "Value value"
         }
       ],
-      "authenticationMethod": "usernameAndPassword"
+      "authenticationMethod": "usernameAndPassword",
+      "proxyServer": {
+        "@odata.type": "microsoft.graph.vpnProxyServer",
+        "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
+        "address": "Address value",
+        "port": 4
+      },
+      "targetedPackageIds": [
+        "Targeted Package Ids value"
+      ],
+      "alwaysOn": true,
+      "alwaysOnLockdown": true
     }
   ]
 }

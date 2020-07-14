@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f7b00de9363d4145165596d8ded2339de1843df0
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 927ec039942d594fcb34665ed3ff0641904fcb60
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793481"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123927"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -44,6 +44,9 @@ ms.locfileid: "44793481"
 - [Автонастройка глобального прокси-сервера владельца устройств Android](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
 - [Глобальный прокси-сервер владельца устройства Android Direct](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
 - [Профиль сертификата PFX, импортированный владельцем устройства Android](intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md)
+- [Значок папки в режиме киоска владельца устройства Android](intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)
+- [Размер значков в полноэкранном режиме владельца устройства Android](intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)
+- [Ориентация экрана для режима киоска владельца устройства Android](intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md)
 - [Профиль сертификата PKCS для владельца устройства Android](intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md)
 - [Режим хранения владельца устройства Android](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Требуемый тип пароля для владельца устройства с Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
@@ -244,7 +247,6 @@ ms.locfileid: "44793481"
 - [Сведения о политике отчетов шифрования](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [Состояние шифрования](intune-deviceconfig-encryptionstate.md)
 - [Расширенное использование ключа](intune-deviceconfig-extendedkeyusage.md)
-- [Неправильное конфигурирование компонентов](intune-deviceconfig-featureflightedconfiguration.md)
 - [Состояние хранилища файлов](intune-deviceconfig-filevaultstate.md)
 - [Тип метода проверки для списка отзыва сертификатов в брандмауэре](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [Тип метода для добавления пакетов брандмауэра в список](intune-deviceconfig-firewallpacketqueueingmethodtype.md)

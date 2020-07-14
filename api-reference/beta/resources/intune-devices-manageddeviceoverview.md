@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 03e8d7086a2612428e56e81648d6a76e2d58afb2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 582d836ae2b9e701f640026d171046bf962eab92
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443941"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45124116"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Тип ресурса managedDeviceOverview
 
@@ -70,6 +70,7 @@ ms.locfileid: "43443941"
     "androidDeviceAdminCount": 1024,
     "androidFullyManagedCount": 1024,
     "androidWorkProfileCount": 1024,
+    "androidCorporateWorkProfileCount": 1024,
     "configMgrDeviceCount": 1024
   },
   "deviceExchangeAccessStateSummary": {

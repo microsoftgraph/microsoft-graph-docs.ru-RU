@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d9b9e4149f05825e6698703457aeb4b7709382a7
-ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
+ms.openlocfilehash: 763fe78508a61461f824e618867abe96c1afd348
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44168560"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122604"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>Тип ресурса Кондитионалакцесскондитионсет
 
@@ -26,18 +26,19 @@ ms.locfileid: "44168560"
 |:-------------|:------------|:------------|
 |заявлен|[conditionalAccessApplications](conditionalaccessapplications.md)| Приложения и действия пользователя, включенные в политику и исключенные из нее. Обязательный. |
 |users|[conditionalAccessUsers](conditionalaccessusers.md)| Пользователи, группы и роли, включенные в политику и исключенные из нее. Обязательный. |
-|клиентапптипес|Коллекция объектов string| Типы клиентских приложений, включенные в политику. Возможные значения: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
+|клиентапптипес|Коллекция String| Типы клиентских приложений, включенные в политику. Возможные значения: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Состояния устройств в политике. |
 |драйверов|[кондитионалакцессдевицес](conditionalaccessdevices.md)| Устройства в политике. |
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Расположения, включенные в политику и исключенные из нее. |
 |Embedded|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Платформы, включенные в политику и исключенные из нее. |
-|сигнинрисклевелс|Коллекция объектов string| Уровни риска, включенные в политику. Возможные значения: `low`, `medium`, `high`, `none`.|
+|сигнинрисклевелс|Коллекция String| Уровни риска входа, включенные в политику. Возможные значения: `low`, `medium`, `high`, `none`.|
+|усеррисклевелс|Коллекция String| Уровни риска пользователей, включенные в политику. Возможные значения: `low`, `medium`, `high`, `none`.|
 
 >**Примечание.** 
 
->**клиентапптипе** `modern` считается устаревшим и заменяется на `mobileAppsAndDesktopClients`. 
+>**клиентапптипе** `modern` считается устаревшим и заменяется на `mobileAppsAndDesktopClients` . 
 
->**клиентапптипе** `easUnsupported` считается нерекомендуемым, в `exchangeActiveSync` том числе поддерживаемых EAS и неподдерживаемых платформ. 
+>**клиентапптипе** `easUnsupported` считается нерекомендуемым, в том `exchangeActiveSync` числе поддерживаемых и неподдерживаемых платформах EAS. 
 
 >Мы рекомендуем использовать условие **девицестатес** , и оно может быть удалено в будущем. Перемотка вперед, используйте состояние **Devices** .
 

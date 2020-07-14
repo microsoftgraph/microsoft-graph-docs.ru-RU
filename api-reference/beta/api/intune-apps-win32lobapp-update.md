@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e3311aa409752353b3be63915a938a620e3aca2
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 3061d3735cbef06cc848d5f447493929214c743a
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793250"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123395"
 ---
 # <a name="update-win32lobapp"></a>Обновление win32LobApp
 
@@ -48,7 +48,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [win32LobApp](../resources/intune-apps-win32lobapp.md).
@@ -92,10 +92,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |мсиинформатион|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Сведения о MSI, если это приложение Win32 является приложением MSI.|
 |сетупфилепас|String|Относительный путь к файлу установки в зашифрованном пакете Win32LobApp.|
 |installLanguage|String|Пока не задокументировано.|
+|минимумсуппортедвиндовсрелеасе|String|Значение минимального поддерживаемого выпуска Windows.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [win32LobApp](../resources/intune-apps-win32lobapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -105,7 +106,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 3224
+Content-length: 3304
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -209,7 +210,8 @@ Content-length: 3224
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "installLanguage": "Install Language value"
+  "installLanguage": "Install Language value",
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
 }
 ```
 
@@ -218,7 +220,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3396
+Content-Length: 3476
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -325,7 +327,8 @@ Content-Length: 3396
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "installLanguage": "Install Language value"
+  "installLanguage": "Install Language value",
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
 }
 ```
 
