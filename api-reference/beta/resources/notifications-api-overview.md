@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: notifications
 doc_type: conceptualPageType
 author: merzink
-ms.openlocfilehash: e48259463377e14a84c3010e229ccd31c29ec6ec
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 4347be4028debf7f01a80b5ca27a9fd7d1a04cb4
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938900"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353114"
 ---
 # <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>Использование REST API уведомлений в Microsoft Graph
 
@@ -25,6 +25,8 @@ ms.locfileid: "37938900"
 
 Уведомления такого типа, ориентированные на пользователя, представлены ресурсом [notification](../resources/projectrome-notification.md) и хранятся в службе уведомлений Microsoft Graph. Доступ к нему и управление осуществляется клиентским приложением с помощью [клиентских API SDK](https://aka.ms/GNSDK). Если вы впервые работаете со службой уведомлений Microsoft Graph, ознакомьтесь с дополнительными сведениями в разделе [обзора уведомлений](https://docs.microsoft.com/graph/notifications-concept-overview).    
 
+## <a name="whats-new"></a>Что нового
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - См. статью [Ресурс notification](../resources/projectrome-notification.md) и создавайте уведомления для взаимодействия с пользователями. 

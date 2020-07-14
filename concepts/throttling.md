@@ -4,11 +4,12 @@ description: Throttling limits the number of concurrent calls to a service to pr
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5561e8a28440f05adcd074b6cd7d4d61edbb2852
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: 45bc9246fe465328be3d96b029475eae96cc673c
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050787"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091510"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -59,13 +60,13 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 - [люди и социальные медиа](/graph/api/resources/social-overview?view=graph-rest-beta);
 - [хранилище (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0).
 - [внешний элемент (Поиск Майкрософт)](/graph/api/resources/externalitem?view=graph-rest-beta)
-- [Report](/graph/api/resources/report)
-- [Subscription](/graph/api/resources/subscription)
-- [Популярные](/graph/api/resources/insights-trending)
-- [Использованная аналитика](/graph/api/resources/insights-used)
-- [Общая информация](/graph/api/resources/insights-shared)
+- [Отчет](/graph/api/resources/report)
+- [Подписка](/graph/api/resources/subscription)
+- [Популярное](/graph/api/resources/insights-trending)
+- [Используемая аналитика](/graph/api/resources/insights-used)
+- [Совместная аналитика](/graph/api/resources/insights-shared)
 - [Параметры пользователя](/graph/api/resources/usersettings)
-- [Отправлен](/graph/api/resources/invitation)
+- [Приглашение](/graph/api/resources/invitation)
 
 Развернутое описание регулирования в Microsoft Cloud см. в статье [Модель регулирования](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -88,17 +89,17 @@ Microsoft Graph позволяет получать доступ к данным
 > [!NOTE]
 > Описанные здесь отдельные ограничения могут изменяться.
 
-> **Примечание:** В этом разделе термин " *клиент* " относится к организации Microsoft 365, в которой установлено приложение. Это может быть тот же клиент, что и в том случае, когда приложение было создано, в случае одного клиентского приложения, или оно может отличаться в случае [приложения с несколькими клиентами](/azure/active-directory/develop/setup-multi-tenant-app).
+> **Примечание.** В этом разделе термин *“клиент”* обозначает организацию Microsoft 365, в которой установлено приложение. Этот клиент может быть тем же самым, что и клиент, с которым создавалось приложение, в случае приложения с одним клиентом, или же он может отличаться в случае с [приложением, включающим несколько клиентов](/azure/active-directory/develop/setup-multi-tenant-app).
 
 ### <a name="outlook-service-limits"></a>Ограничения службы Outlook
 
-Ограничения службы Outlook проверяются для каждого идентификатора приложения и сочетания почтового ящика. Иными словами, описываемые ограничения применяются к конкретному приложению, которое получает доступ к определенному почтовому ящику (пользователя или группы). Если приложение превышает ограничение для одного почтового ящика, оно не повлияет на возможность доступа к другому почтовому ящику. Следующие пределы применяются к общедоступному облаку, а также к [облачным облачным развертываниям](/graph/deployments).
+Ограничения службы Outlook проверяются для каждого идентификатора приложения и сочетания почтового ящика. Иными словами, описываемые ограничения применяются к конкретному приложению, которое получает доступ к определенному почтовому ящику (пользователя или группы). Если приложение превышает ограничение для одного почтового ящика, оно не повлияет на возможность доступа к другому почтовому ящику. Указанные ниже ограничения относятся к общедоступному облаку, а также к [национальным облачным развертываниям](/graph/deployments).
 
 | Ограничение                                                      | Сфера применения      |
 |------------------------------------------------------------|-----------------|
 | 10 000 запросов API в течение 10-минутного периода                  | Конечные точки версии 1.0 и бета-версии |
 | 4 параллельных запроса                                      | Конечные точки версии 1.0 и бета-версии   |
-| Загрузка 15 мегабайт (МБ) (исправление, POST, PUT) за 30-секундный период | Конечные точки версии 1.0 и бета-версии   |
+| Отправка 15 мегабайт (МБ) (PATCH, POST, PUT) в течение 30 секунд. | Конечные точки версии 1.0 и бета-версии   |
 
 #### <a name="outlook-service-resources"></a>Ресурсы службы Outlook
 
@@ -141,13 +142,13 @@ Microsoft Graph позволяет получать доступ к данным
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
 
-### <a name="cloud-communication-service-limits"></a>Пределы облачных служб связи
+### <a name="cloud-communication-service-limits"></a>Ограничения службы облачного взаимодействия
 
-| Ресурс      | Максимальное число приложений для каждого клиента    |
+| Ресурс      | Ограничения на приложение по клиенту    |
 | -------------- | ------------ |
-| [Звонки](/graph/api/resources/call) | 10 000 звонков/мес и 100 одновременные вызовы   |
-| [Сведения о собрании](/graph/api/resources/meetinginfo)   | 2000 собраний и пользователей в месяц |
-| [Присутствие](/graph/api/resources/presence) (Предварительная версия)   | 2 запроса в секунду |
+| [Звонки](/graph/api/resources/call) | 10 000 звонков в месяц и 100 параллельных вызовов   |
+| [Сведения о собрании](/graph/api/resources/meetinginfo)   | 2000 собраний на пользователя каждый месяц |
+| [Присутствие](/graph/api/resources/presence) (предварительная версия)   | 2 запроса в секунду |
 
 ### <a name="microsoft-teams-service-limits"></a>Ограничения службы Microsoft Teams
 
@@ -166,62 +167,72 @@ Microsoft Graph позволяет получать доступ к данным
 | ПОЛУЧИТЬ 1: 1 / сообщение группового чата  | 3 запроса в секунду | 30 запросов в секунду |
 | Сообщение POST канала | 2 запроса в секунду | 20 запросов в секунду |
 | POST 1: 1 / сообщение в групповом чате | 2 запроса в секунду | 20 запросов в секунду |
-| ПОЛУЧЕНИЕ/Teams/ ```{team-id}``` /счедуле и всех API по этому пути | 60 запросов в секунду | 600 запросов в секунду |
-| POST, PATCH, PUT/Teams/ ```{team-id}``` /счедуле и все API по этому пути | 30 запросов в секунду | 300 запросов в секунду |
-| Удалите/Teams/ ```{team-id}``` /счедуле и все API, расположенные по этому пути | 15 запросов в секунду | 150 запросов в секунду |
+| GET /teams/```{team-id}```/schedule и все API по этому пути | 60 запросов в секунду | 600 запросов в секунду |
+| POST, PATCH, PUT /teams/```{team-id}```/schedule и все API по этому пути | 30 запросов в секунду | 300 запросов в секунду |
+| DELETE /teams/```{team-id}```/schedule и все API по этому пути | 15 запросов в секунду | 150 запросов в секунду |
 
 Максимально 4 запроса в секунду на приложение могут быть отправлены для данной команды или канала.
 Приложение может отправлять в определенный канал не более 3000 сообщений в день.
 
 См. Также [ограничения Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) и [требования к опросу](/graph/api/resources/teams-api-overview#polling-requirements).
 
-### <a name="insights-service-limits"></a>Пределы службы аналитики
+### <a name="identity-protection-and-conditional-access-service-limits"></a>Ограничения в отношении защиты удостоверений и службы условного доступа
 
-Следующие пределы применяются к запросам на `me/insights` или `users/{id}/insights` .
+| Тип запроса | Ограничение для каждого клиента |
+| ------------ | ------- |
+| Любое | 1 запрос в секунду |
+
+Указанные выше ограничения действуют для следующих ресурсов:  
+riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
+
+> **Примечание.** В настоящее время перечисленные выше ресурсы не возвращают заголовок `Retry-After` в ответах `429 Too Many Requests`.
+### <a name="insights-service-limits"></a>Ограничения службы аналитики
+
+Указанные ниже ограничения применяются к любому запросу в `me/insights` или `users/{id}/insights`.
 
 | Ограничение                                                      | Сфера применения      |
 |------------------------------------------------------------|-----------------|
 | 10 000 запросов API в течение 10-минутного периода                  | Конечные точки версии 1.0 и бета-версии |
 | 4 параллельных запроса                                      | Конечные точки версии 1.0 и бета-версии   |
 
-### <a name="microsoft-graph-reports-service-limits"></a>Пределы службы отчетов Microsoft Graph
+### <a name="microsoft-graph-reports-service-limits"></a>Ограничения службы отчетов Microsoft Graph
 
 Указанные ниже ограничения применяются к любому запросу в `/reports`.
 
-| Операция                 | Ограничение на приложение по клиенту     | Максимальное количество для каждого клиента           |
+| Операция                 | Ограничение на приложение по клиенту     | Ограничение для каждого клиента           |
 |---------------------------|------------------------------|----------------------------|
 | Любой запрос (CSV)         | 14 запросов в течение 10 минут   | 40 запросов в течение 10 минут |
-| Любой запрос (JSON, бета-версия)  | 100 запросов в течение 10 минут  | н/д                        |
+| Любой запрос (JSON, beta)  | 100 запросов в течение 10 минут  | н/д                        |
 
-Предыдущие пределы применяются по отдельности к каждому API отчетов. Например, запрос к API отчетов об активности пользователей Microsoft Teams и запрос на отчеты об активности пользователей в Outlook в течение 10 минут будут считаться 1 запросом из 14 для каждого API, а не 2 запросами из 14.
+Указанные выше ограничения применяются по отдельности к каждому API отчетов. Например, запрос на API отчетов об активности пользователей Microsoft Teams и запрос на доступ к отчету об активности пользователей Outlook в течение 10 минут будут рассматриваться как 1 запрос из 14 для каждого API, а не 2 запроса из 14 для обоих.
 
-### <a name="invitation-manager-service-limits"></a>Пределы службы диспетчера приглашений
+### <a name="invitation-manager-service-limits"></a>Ограничения службы диспетчера приглашений
 
 Указанные ниже ограничения применяются к любому запросу в `/invitations`.
 
-| Операция                 | Максимальное количество для каждого клиента             |
+| Операция                 | Ограничение для каждого клиента             |
 |---------------------------|------------------------------|
-| Любая операция             | 150 запросов в течение 5 секунд   |
+| Любая операция             | 150 запросов за 5 секунд   |
 
 <!-- { "blockType": "throttlinggenstart" } -->
 
-### <a name="education-service-limits"></a>Пределы службы образования
+### <a name="education-service-limits"></a>Ограничения службы для образования
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
 
-### <a name="excel-service-limits"></a>Пределы для служб Excel
+### <a name="excel-service-limits"></a>Ограничения службы Excel
 
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
-### <a name="identity-and-access-audit-logs-service-limits"></a>Пределы службы журналов аудита удостоверений и доступа
+### <a name="identity-and-access-audit-logs-service-limits"></a>Ограничения службы журналов аудита удостоверения и доступа
 
 [!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
 
-### <a name="identity-providers-service-limits"></a>Пределы службы поставщиков удостоверений
+### <a name="identity-providers-service-limits"></a>Ограничения службы поставщиков удостоверений
 
 [!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
 
-### <a name="intune-service-limits"></a>Пределы службы Intune
+### <a name="intune-service-limits"></a>Ограничения службы Intune
 
 [!INCLUDE [Intune applications throttling documentation](../includes/throttling-intune-applications.md)]
 [!INCLUDE [Intune books throttling documentation](../includes/throttling-intune-books.md)]
@@ -239,11 +250,11 @@ Microsoft Graph позволяет получать доступ к данным
 [!INCLUDE [Intune troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
 [!INCLUDE [Intune wip throttling documentation](../includes/throttling-intune-wip.md)]
 
-### <a name="skype-service-limits"></a>Пределы для служб Skype
+### <a name="skype-service-limits"></a>Ограничения службы Skype
 
 [!INCLUDE [Skype calling throttling documentation](../includes/throttling-skype-calling.md)]
 
-### <a name="subscription-service-limits"></a>Пределы для службы подписки
+### <a name="subscription-service-limits"></a>Ограничения службы подписки
 
 [!INCLUDE [Subscription services throttling documentation](../includes/throttling-subscription-services.md)]
 

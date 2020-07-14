@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 7869ac59f84f266542254fd0c8fc8ea97ee4815d
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 636eeedb4836a26e5fe2e52683f8baacdb4a8d69
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394584"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353254"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>Работа с API коммуникаций в Microsoft Graph
 
@@ -54,6 +54,9 @@ API коммуникаций можно использовать для созд
 | onlineMeeting                            | [свойства объекта onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
 | presence | [свойства объекта presence](/graph/api/resources/presence#properties) |
 | callRecord | [Свойства callRecord](/graph/api/resources/callrecords-callrecord#properties) |
+
+## <a name="whats-new"></a>Что нового
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="see-also"></a>См. также
 
