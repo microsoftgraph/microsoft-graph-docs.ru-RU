@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a4312accf3b908689a0037d3c16a7ba2242c2ddf
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 7465ecc3f8e1b99c001fca5d6f43391cf0ef682d
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916793"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122506"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>Тип ресурса Кондитионалакцессгрантконтролс
 
@@ -24,10 +24,19 @@ ms.locfileid: "43916793"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| operator | String | Определяет связь элементов управления предоставлением. Возможные значения: `AND`, `OR`. |
-| буилтинконтролс | Коллекция объектов string | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `Block`, `Mfa`, `CompliantDevice`, `DomainJoinedDevice`, `ApprovedApplication`,`CompliantApplication` |
-| кустомаусентикатионфакторс | Коллекция объектов string | Список идентификаторов настраиваемых элементов управления, необходимых для политики. Дополнительные сведения о настраиваемых элементах управления:https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
-| термсофусе | Коллекция объектов string | Список [условий использования](agreement.md) идентификаторов, необходимых для политики. |
+| operator | String | Определяет связь элементов управления предоставлением. Возможные значения: `AND` , `OR` . |
+| буилтинконтролс | Коллекция String | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `block` ,,,,, `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` , `passwordChange` . |
+| кустомаусентикатионфакторс | Коллекция String | Список идентификаторов настраиваемых элементов управления, необходимых для политики. Дополнительные сведения о настраиваемых элементах управления:https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
+| термсофусе | Коллекция String | Список [условий использования](agreement.md) идентификаторов, необходимых для политики. |
+
+### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>Особые рекомендации по использованию `passwordChange` в качестве элемента управления
+
+При использовании `passwordChange` элемента управления учитывайте следующее: 
+
+- `passwordChange`должен сопровождаться `mfa` `AND` оператором. Это сочетание гарантирует, что пароль будет обновлен безопасным способом.
+- `passwordChange`должен использоваться в политике, содержащей `userRiskLevels` . Это предназначено для сценариев, в которых пользователям необходимо использовать пароль для безопасного изменения, чтобы сбросить риск для пользователя.
+- Политика должна целевить `all` приложения и не исключать какие бы то ни было приложения.
+- Политика не может содержать другие условия.
 
 ## <a name="relationships"></a>Связи
 

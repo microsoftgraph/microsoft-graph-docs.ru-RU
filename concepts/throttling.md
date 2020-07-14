@@ -4,12 +4,12 @@ description: Throttling limits the number of concurrent calls to a service to pr
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 45bc9246fe465328be3d96b029475eae96cc673c
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: 12ae7bf122d23c6460dcbc253b1fe743768e49ba
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091510"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123717"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -215,7 +215,6 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 | Любая операция             | 150 запросов за 5 секунд   |
 
 <!-- { "blockType": "throttlinggenstart" } -->
-
 ### <a name="education-service-limits"></a>Ограничения службы для образования
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
