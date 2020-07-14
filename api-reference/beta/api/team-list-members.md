@@ -1,32 +1,34 @@
 ---
 title: Список участников
-description: Получение Конверсатионмемберс команды.
+description: Получение conversationMembers группы.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 214cd5fa426a72a6917431ce7a77287ead915858
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: MT
+ms.openlocfilehash: 2b9840ba7d543a01a8ed458489cf91c257c9f71f
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081046"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45124109"
 ---
 # <a name="list-members"></a>Список участников
 Пространство имен: microsoft.graph
 
-Получение [конверсатионмембер](../resources/conversationmember.md) [команды](../resources/team.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->Note: в настоящее время этот API не поддерживает разбивку на страницы, поэтому при наличии слишком большого количества участников, которые могут помещаться в один запрос, не будут получены все элементы.
+Получение [conversationMember](../resources/conversationmember.md) [группы](../resources/team.md).
+
+>Примечание. в настоящее время данный API не поддерживает разбивку на страницы, поэтому если в одном запросе помещено слишком много участников, вы не сможете получить доступ ко всем участникам.
 
 ## <a name="permissions"></a>Разрешения
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Теаммембер. Read. ALL, Теаммембер. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|TeamMember.Read.All, TeamMember.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение|Теаммембер. Read. ALL, Теаммембер. ReadWrite. ALL|
+|Приложение|TeamMember.Read.All, TeamMember.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,19 +41,19 @@ GET /teams/{teamsId}/members
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Required.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [конверсатионмембер](../resources/conversationmember.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [conversationMember](../resources/conversationmember.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

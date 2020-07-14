@@ -1,30 +1,30 @@
 ---
 title: Удаление участников из группы
-description: Удаление Конверсатионмембер из группы.
+description: Удаление conversationMember из группы.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2dc5359684f0b4d73f08551ea720dc095f482337
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: MT
+ms.openlocfilehash: d76456123f3d60428feb213b0ef8901b03db3fa1
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091447"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45124137"
 ---
-# <a name="delete-members"></a>Удаление элементов
+# <a name="delete-members"></a>Удаление участников
 Пространство имен: microsoft.graph
 
-Удаление нового [конверсатионмембер](../resources/conversationmember.md) из [команды](../resources/team.md).
+Удаление нового [conversationMember](../resources/conversationmember.md) из [группы](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)| Теаммембер. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)| TeamMember.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений| Теаммембер. ReadWrite. ALL|
+|Приложение| TeamMember.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ DELETE /teams/{team-id}/members/{member-id}
 |:---|:---|
 |Авторизация|Bearer {token}. Required.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -78,7 +78,7 @@ DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members
 
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true
