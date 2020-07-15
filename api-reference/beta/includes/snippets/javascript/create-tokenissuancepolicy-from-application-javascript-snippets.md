@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 32dd0bdd523b00b4b2d33145f5bdcdebb4eecd22
+ms.openlocfilehash: e2a5edcac76985bc4093a3fdfd13be9d62c51eb2
 ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142480"
+ms.locfileid: "45142282"
 ---
 ```javascript
 
@@ -15,8 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/organization/{organizationId}/settings/profileCardProperties/fax')
+const tokenIssuancePolicy = {
+  @odata.id:"https://graph.microsoft.com/beta/policies/tokenIssuancePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
+};
+
+let res = await client.api('/applications/{id}/tokenIssuancePolicies/$ref')
     .version('beta')
-    .delete();
+    .post(tokenIssuancePolicy);
 
 ```
