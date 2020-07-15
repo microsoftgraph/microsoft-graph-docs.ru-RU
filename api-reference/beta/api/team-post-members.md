@@ -5,15 +5,17 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fd4c02b3b981394edfafd389eb7adf2afc9e52d9
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 5a6a397e0b9f1b74d657e55354c03f062c8364dd
+ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123815"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45142443"
 ---
 # <a name="create-members"></a>Создание участников
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Добавление нового [conversationMember](../resources/conversationmember.md) в [группу](../resources/team.md).
 

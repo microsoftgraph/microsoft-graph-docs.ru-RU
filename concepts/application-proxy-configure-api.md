@@ -5,12 +5,12 @@ author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 669cb23ab0e7a4197950eb5825ea5b76b6c54ba0
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: Auto
+ms.openlocfilehash: 065e7cdc84a353c4636fc4e7d13c32d22c7bce70
+ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081208"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45142373"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>Автоматизация настройки прокси-сервера приложений с помощью API Microsoft Graph
 
@@ -25,7 +25,7 @@ ms.locfileid: "45081208"
 | [аппликатионтемплате](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)| [Создание экземпляра Аппликатионтемплате](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) |
 |[заявлен](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [онпремисеспублишинг](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)|[Обновление приложения](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Добавление приложения в Коннекторграуп](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
 |[PDIF](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)| [Получение соединителей](https://docs.microsoft.com/graph/api/connector-get?view=graph-rest-beta)
-|[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Создание Коннекторграуп](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Добавление соединителя в Коннекторграуп](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
+|[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Создание connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Добавление соединителя для connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
 |[сервицепринЦипалс](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Обновление servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Создание Аппролеассигнментс](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 >[!NOTE]
@@ -46,6 +46,8 @@ ms.locfileid: "45081208"
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_applicationTemplate"
@@ -59,6 +61,20 @@ Content-type: application/json
   "displayName": "Contoso IWA App"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-applicationtemplate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-applicationtemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-applicationtemplate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик
@@ -142,6 +158,8 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_application"
@@ -159,6 +177,20 @@ Content-type: appplication/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-application-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
@@ -173,7 +205,7 @@ HTTP/1.1 204 No content
 ### <a name="set-the-redirecturi-identifieruri-and-homepageurl-properties"></a>Установка свойств redirectUri, Идентифиерури и Хомепажеурл
 Обновите **redirectUri**, **идентифиерури**и **хомепажеурл** приложения до внешнего URL-адреса.
 
-#### <a name="request"></a>Запрос
+#### <a name="request"></a>Запросить
 
 <!-- {
   "blockType": "request",
@@ -192,7 +224,7 @@ Content-type: appplication/json
    }
 }
 ```
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -211,6 +243,8 @@ HTTP/1.1 204 No content
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "connector"
@@ -220,6 +254,20 @@ HTTP/1.1 204 No content
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/connector-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/connector-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/connector-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
@@ -262,7 +310,7 @@ Content-type: application/json
 ### <a name="create-a-connectorgroup"></a>Создание Коннекторграуп
 В этом примере создается новый Коннекторграуп с именем "Ива Demo Connector Group Connector", который используется для приложения. Кроме того, вы можете пропустить этот шаг, если соединитель уже назначен соответствующему Коннекторграуп. Извлеките и сохраните идентификатор объекта Коннекторграуп, который будет использоваться на следующем шаге.
 
-#### <a name="request"></a>Запрос
+#### <a name="request"></a>Запросить
 
 <!-- {
   "blockType": "request",
@@ -278,7 +326,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -300,7 +348,7 @@ Content-type: connectorGroup/json
 
 ### <a name="assign-a-connector-to-the-connectorgroup"></a>Назначение соединителя для Коннекторграуп
 
-#### <a name="request"></a>Запрос
+#### <a name="request"></a>Запросить
 
 <!-- {
   "blockType": "request",
@@ -316,7 +364,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -331,6 +379,8 @@ HTTP/1.1 204 No content
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "connectorGroup"
@@ -344,6 +394,20 @@ Content-type: application/json
 "@odata.id":"https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/connectorgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Отклик
 
 <!-- {
@@ -359,7 +423,7 @@ HTTP/1.1 204 No content
 Это приложение использует встроенную проверку подлинности Windows (ИВА). Чтобы настроить Ива, установите свойства единого входа в тип ресурса [синглесигнонсеттингс](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) .
 
 
-#### <a name="request"></a>Запрос
+#### <a name="request"></a>Запросить
 
 <!-- {
   "blockType": "request",
@@ -383,7 +447,7 @@ Content-type: appplication/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -399,6 +463,8 @@ HTTP/1.1 204 No content
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -406,6 +472,20 @@ HTTP/1.1 204 No content
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoles
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Отклик
 
 <!-- {

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: af6c1eccfc30259f2b86fb5a65b81d95802b67f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 54cd9f43c5232778b5887f17974d4f556a1f3842
+ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505282"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45142207"
 ---
 # <a name="accounts-resource-type"></a>Тип ресурса Accounts
 
@@ -26,12 +26,12 @@ ms.locfileid: "42505282"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение учетных записей](../api/dynamics-account-get.md)|см|Получение объекта Accounts.|
+|[Получение учетных записей](../api/dynamics-account-get.md)|учетные записи|Получение объекта Accounts.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|GUID|Уникальный идентификатор учетной записи.|
+|id|Идентификатор GUID|Уникальный идентификатор учетной записи.|
 |число|Строка, максимальный размер 20|Указывает номер финансового счета.|
 |displayName|Строка, максимальный размер 50|Указывает имя финансового счета.|
 |category|Строка, максимальный размер 20|Указывает категорию финансового счета.|
@@ -58,5 +58,4 @@ ms.locfileid: "42505282"
   "blocked": "boolean",
   "lastModifiedDateTime": "datetime"
 }
-
 ```
