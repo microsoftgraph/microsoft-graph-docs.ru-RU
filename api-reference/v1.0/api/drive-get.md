@@ -14,219 +14,219 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44897073"
 ---
-# <a name="get-drive"></a><span data-ttu-id="4e7a7-103">Получение ресурса Drive</span><span class="sxs-lookup"><span data-stu-id="4e7a7-103">Get Drive</span></span>
+# <a name="get-drive"></a><span data-ttu-id="e29e6-103">Получение ресурса Drive</span><span class="sxs-lookup"><span data-stu-id="e29e6-103">Get Drive</span></span>
 
-<span data-ttu-id="4e7a7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4e7a7-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e29e6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e29e6-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4e7a7-105">В этой статье рассказывается, как получить свойства и связи ресурса [Drive](../resources/drive.md).</span><span class="sxs-lookup"><span data-stu-id="4e7a7-105">Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.</span></span>
+<span data-ttu-id="e29e6-105">В этой статье рассказывается, как получить свойства и связи ресурса [Drive](../resources/drive.md).</span><span class="sxs-lookup"><span data-stu-id="e29e6-105">Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.</span></span>
 
-<span data-ttu-id="4e7a7-106">Drive — это контейнер верхнего уровня для файловой системы, например OneDrive или библиотек документов SharePoint.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-106">A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.</span></span>
+<span data-ttu-id="e29e6-106">Drive — это контейнер верхнего уровня для файловой системы, например OneDrive или библиотек документов SharePoint.</span><span class="sxs-lookup"><span data-stu-id="e29e6-106">A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4e7a7-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4e7a7-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e29e6-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e29e6-107">Permissions</span></span>
 
-<span data-ttu-id="4e7a7-108">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-108">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="4e7a7-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4e7a7-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e29e6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e29e6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4e7a7-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4e7a7-110">Permission type</span></span>      | <span data-ttu-id="4e7a7-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4e7a7-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e29e6-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e29e6-110">Permission type</span></span>      | <span data-ttu-id="e29e6-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e29e6-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4e7a7-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4e7a7-112">Delegated (work or school account)</span></span> | <span data-ttu-id="4e7a7-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e7a7-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="4e7a7-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4e7a7-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4e7a7-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e7a7-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="4e7a7-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4e7a7-116">Application</span></span> | <span data-ttu-id="4e7a7-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e7a7-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="e29e6-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e29e6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="e29e6-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e29e6-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e29e6-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e29e6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e29e6-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e29e6-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e29e6-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e29e6-116">Application</span></span> | <span data-ttu-id="e29e6-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e29e6-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="get-current-users-onedrive"></a><span data-ttu-id="4e7a7-118">Получение хранилища OneDrive текущего пользователя</span><span class="sxs-lookup"><span data-stu-id="4e7a7-118">Get current user's OneDrive</span></span>
+## <a name="get-current-users-onedrive"></a><span data-ttu-id="e29e6-118">Получение хранилища OneDrive текущего пользователя</span><span class="sxs-lookup"><span data-stu-id="e29e6-118">Get current user's OneDrive</span></span>
 
-<span data-ttu-id="4e7a7-119">Доступ к диску пользователя, выполнившего вход в систему (при использовании делегированной проверки подлинности), можно получить из одноэлементного множества `me`.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-119">The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.</span></span>
+<span data-ttu-id="e29e6-119">Доступ к диску пользователя, выполнившего вход в систему (при использовании делегированной проверки подлинности), можно получить из одноэлементного множества `me`.</span><span class="sxs-lookup"><span data-stu-id="e29e6-119">The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.</span></span>
 
-<span data-ttu-id="4e7a7-120">Если хранилище OneDrive пользователя не подготовлено к работе, но у пользователя есть лицензия на использование OneDrive, то в результате выполнения этого запроса будет автоматически подготовлен диск пользователя (при использовании делегированной проверки подлинности).</span><span class="sxs-lookup"><span data-stu-id="4e7a7-120">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
+<span data-ttu-id="e29e6-120">Если хранилище OneDrive пользователя не подготовлено к работе, но у пользователя есть лицензия на использование OneDrive, то в результате выполнения этого запроса будет автоматически подготовлен диск пользователя (при использовании делегированной проверки подлинности).</span><span class="sxs-lookup"><span data-stu-id="e29e6-120">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="4e7a7-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4e7a7-121">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="e29e6-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e29e6-121">HTTP request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="4e7a7-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="4e7a7-122">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e29e6-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="e29e6-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive
 ```
-# <a name="c"></a>[<span data-ttu-id="4e7a7-123">C#</span><span class="sxs-lookup"><span data-stu-id="4e7a7-123">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e29e6-123">C#</span><span class="sxs-lookup"><span data-stu-id="e29e6-123">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-default-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4e7a7-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4e7a7-124">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e29e6-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e29e6-124">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-default-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4e7a7-125">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4e7a7-125">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e29e6-125">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e29e6-125">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-default-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4e7a7-126">Java</span><span class="sxs-lookup"><span data-stu-id="4e7a7-126">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e29e6-126">Java</span><span class="sxs-lookup"><span data-stu-id="e29e6-126">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-default-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="get-a-users-onedrive"></a><span data-ttu-id="4e7a7-127">Получение хранилища OneDrive пользователя</span><span class="sxs-lookup"><span data-stu-id="4e7a7-127">Get a user's OneDrive</span></span>
+## <a name="get-a-users-onedrive"></a><span data-ttu-id="e29e6-127">Получение хранилища OneDrive пользователя</span><span class="sxs-lookup"><span data-stu-id="e29e6-127">Get a user's OneDrive</span></span>
 
-<span data-ttu-id="4e7a7-128">Чтобы получить доступ к хранилищу OneDrive или OneDrive для бизнеса пользователя, ваше приложение должно запросить связь **drive** в ресурсе User.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-128">To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the User resource.</span></span>
+<span data-ttu-id="e29e6-128">Чтобы получить доступ к хранилищу OneDrive или OneDrive для бизнеса пользователя, ваше приложение должно запросить связь **drive** в ресурсе User.</span><span class="sxs-lookup"><span data-stu-id="e29e6-128">To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the User resource.</span></span>
 
-<span data-ttu-id="4e7a7-129">Если хранилище OneDrive пользователя не подготовлено к работе, но у пользователя есть лицензия на использование OneDrive, то в результате выполнения этого запроса будет автоматически подготовлен диск пользователя (при использовании делегированной проверки подлинности).</span><span class="sxs-lookup"><span data-stu-id="4e7a7-129">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
+<span data-ttu-id="e29e6-129">Если хранилище OneDrive пользователя не подготовлено к работе, но у пользователя есть лицензия на использование OneDrive, то в результате выполнения этого запроса будет автоматически подготовлен диск пользователя (при использовании делегированной проверки подлинности).</span><span class="sxs-lookup"><span data-stu-id="e29e6-129">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="4e7a7-130">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4e7a7-130">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="e29e6-130">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e29e6-130">HTTP request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="4e7a7-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="4e7a7-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e29e6-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="e29e6-131">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /users/{idOrUserPrincipalName}/drive
 ```
-# <a name="c"></a>[<span data-ttu-id="4e7a7-132">C#</span><span class="sxs-lookup"><span data-stu-id="4e7a7-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e29e6-132">C#</span><span class="sxs-lookup"><span data-stu-id="e29e6-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-by-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4e7a7-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4e7a7-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e29e6-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e29e6-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-by-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4e7a7-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4e7a7-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e29e6-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e29e6-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4e7a7-135">Java</span><span class="sxs-lookup"><span data-stu-id="4e7a7-135">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e29e6-135">Java</span><span class="sxs-lookup"><span data-stu-id="e29e6-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="path-parameters"></a><span data-ttu-id="4e7a7-136">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="4e7a7-136">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="e29e6-136">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="e29e6-136">Path parameters</span></span>
 
-| <span data-ttu-id="4e7a7-137">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="4e7a7-137">Parameter name</span></span> | <span data-ttu-id="4e7a7-138">Значение</span><span class="sxs-lookup"><span data-stu-id="4e7a7-138">Value</span></span>  | <span data-ttu-id="4e7a7-139">Описание</span><span class="sxs-lookup"><span data-stu-id="4e7a7-139">Description</span></span>                                       |
+| <span data-ttu-id="e29e6-137">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="e29e6-137">Parameter name</span></span> | <span data-ttu-id="e29e6-138">Значение</span><span class="sxs-lookup"><span data-stu-id="e29e6-138">Value</span></span>  | <span data-ttu-id="e29e6-139">Описание</span><span class="sxs-lookup"><span data-stu-id="e29e6-139">Description</span></span>                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| <span data-ttu-id="4e7a7-140">_idOrUserPrincipalName_</span><span class="sxs-lookup"><span data-stu-id="4e7a7-140">_idOrUserPrincipalName_</span></span>     | <span data-ttu-id="4e7a7-141">строка</span><span class="sxs-lookup"><span data-stu-id="4e7a7-141">string</span></span> | <span data-ttu-id="4e7a7-142">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-142">Required.</span></span> <span data-ttu-id="4e7a7-143">Идентификатор объекта пользователя, которому принадлежит хранилище OneDrive.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-143">The identifier for the user object who owns the OneDrive.</span></span> |
+| <span data-ttu-id="e29e6-140">_idOrUserPrincipalName_</span><span class="sxs-lookup"><span data-stu-id="e29e6-140">_idOrUserPrincipalName_</span></span>     | <span data-ttu-id="e29e6-141">строка</span><span class="sxs-lookup"><span data-stu-id="e29e6-141">string</span></span> | <span data-ttu-id="e29e6-142">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e29e6-142">Required.</span></span> <span data-ttu-id="e29e6-143">Идентификатор объекта пользователя, которому принадлежит хранилище OneDrive.</span><span class="sxs-lookup"><span data-stu-id="e29e6-143">The identifier for the user object who owns the OneDrive.</span></span> |
 
-## <a name="get-the-document-library-associated-with-a-group"></a><span data-ttu-id="4e7a7-144">Получение библиотеки документов, связанной с группой</span><span class="sxs-lookup"><span data-stu-id="4e7a7-144">Get the document library associated with a group</span></span>
+## <a name="get-the-document-library-associated-with-a-group"></a><span data-ttu-id="e29e6-144">Получение библиотеки документов, связанной с группой</span><span class="sxs-lookup"><span data-stu-id="e29e6-144">Get the document library associated with a group</span></span>
 
-<span data-ttu-id="4e7a7-145">Чтобы получить доступ к библиотеке документов, используемой по умолчанию, для группы, ваше приложение должно запросить связь **drive** в объекте Group.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-145">To access a Group's default document library, your app requests the **drive** relationship on the Group.</span></span>
+<span data-ttu-id="e29e6-145">Чтобы получить доступ к библиотеке документов, используемой по умолчанию, для группы, ваше приложение должно запросить связь **drive** в объекте Group.</span><span class="sxs-lookup"><span data-stu-id="e29e6-145">To access a Group's default document library, your app requests the **drive** relationship on the Group.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="4e7a7-146">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4e7a7-146">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="e29e6-146">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e29e6-146">HTTP request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="4e7a7-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="4e7a7-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e29e6-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="e29e6-147">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /groups/{groupId}/drive
 ```
-# <a name="c"></a>[<span data-ttu-id="4e7a7-148">C#</span><span class="sxs-lookup"><span data-stu-id="4e7a7-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e29e6-148">C#</span><span class="sxs-lookup"><span data-stu-id="e29e6-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-by-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4e7a7-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4e7a7-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e29e6-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e29e6-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-by-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4e7a7-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4e7a7-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e29e6-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e29e6-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4e7a7-151">Java</span><span class="sxs-lookup"><span data-stu-id="4e7a7-151">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e29e6-151">Java</span><span class="sxs-lookup"><span data-stu-id="e29e6-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="path-parameters"></a><span data-ttu-id="4e7a7-152">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="4e7a7-152">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="e29e6-152">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="e29e6-152">Path parameters</span></span>
 
-| <span data-ttu-id="4e7a7-153">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="4e7a7-153">Parameter name</span></span> | <span data-ttu-id="4e7a7-154">Значение</span><span class="sxs-lookup"><span data-stu-id="4e7a7-154">Value</span></span>  | <span data-ttu-id="4e7a7-155">Описание</span><span class="sxs-lookup"><span data-stu-id="4e7a7-155">Description</span></span>                                       |
+| <span data-ttu-id="e29e6-153">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="e29e6-153">Parameter name</span></span> | <span data-ttu-id="e29e6-154">Значение</span><span class="sxs-lookup"><span data-stu-id="e29e6-154">Value</span></span>  | <span data-ttu-id="e29e6-155">Описание</span><span class="sxs-lookup"><span data-stu-id="e29e6-155">Description</span></span>                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| <span data-ttu-id="4e7a7-156">_groupId_</span><span class="sxs-lookup"><span data-stu-id="4e7a7-156">_groupId_</span></span>      | <span data-ttu-id="4e7a7-157">строка</span><span class="sxs-lookup"><span data-stu-id="4e7a7-157">string</span></span> | <span data-ttu-id="4e7a7-158">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-158">Required.</span></span> <span data-ttu-id="4e7a7-159">Идентификатор группы, которой принадлежит библиотека документов.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-159">The identifier for the group which owns the document library.</span></span> |
+| <span data-ttu-id="e29e6-156">_groupId_</span><span class="sxs-lookup"><span data-stu-id="e29e6-156">_groupId_</span></span>      | <span data-ttu-id="e29e6-157">строка</span><span class="sxs-lookup"><span data-stu-id="e29e6-157">string</span></span> | <span data-ttu-id="e29e6-158">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e29e6-158">Required.</span></span> <span data-ttu-id="e29e6-159">Идентификатор группы, которой принадлежит библиотека документов.</span><span class="sxs-lookup"><span data-stu-id="e29e6-159">The identifier for the group which owns the document library.</span></span> |
 
-## <a name="get-the-document-library-for-a-site"></a><span data-ttu-id="4e7a7-160">Получение библиотеки документов для сайта</span><span class="sxs-lookup"><span data-stu-id="4e7a7-160">Get the document library for a site</span></span>
+## <a name="get-the-document-library-for-a-site"></a><span data-ttu-id="e29e6-160">Получение библиотеки документов для сайта</span><span class="sxs-lookup"><span data-stu-id="e29e6-160">Get the document library for a site</span></span>
 
-<span data-ttu-id="4e7a7-161">Чтобы получить доступ к библиотеке документов, используемой по умолчанию, для [сайта](../resources/site.md), ваше приложение должно запросить связь **drive** в объекте Site.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-161">To access a [Site's](../resources/site.md) default document library, your app requests the **drive** relationship on the Site.</span></span>
+<span data-ttu-id="e29e6-161">Чтобы получить доступ к библиотеке документов, используемой по умолчанию, для [сайта](../resources/site.md), ваше приложение должно запросить связь **drive** в объекте Site.</span><span class="sxs-lookup"><span data-stu-id="e29e6-161">To access a [Site's](../resources/site.md) default document library, your app requests the **drive** relationship on the Site.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="4e7a7-162">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4e7a7-162">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="e29e6-162">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e29e6-162">HTTP request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="4e7a7-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="4e7a7-163">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e29e6-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="e29e6-163">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-site-id", "scopes": "group.read.all" } -->
 
 ```msgraph-interactive
 GET /sites/{siteId}/drive
 ```
-# <a name="c"></a>[<span data-ttu-id="4e7a7-164">C#</span><span class="sxs-lookup"><span data-stu-id="4e7a7-164">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e29e6-164">C#</span><span class="sxs-lookup"><span data-stu-id="e29e6-164">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-by-site-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4e7a7-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4e7a7-165">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e29e6-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e29e6-165">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-by-site-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4e7a7-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4e7a7-166">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e29e6-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e29e6-166">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-site-id-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4e7a7-167">Java</span><span class="sxs-lookup"><span data-stu-id="4e7a7-167">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e29e6-167">Java</span><span class="sxs-lookup"><span data-stu-id="e29e6-167">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-site-id-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="path-parameters"></a><span data-ttu-id="4e7a7-168">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="4e7a7-168">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="e29e6-168">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="e29e6-168">Path parameters</span></span>
 
-| <span data-ttu-id="4e7a7-169">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="4e7a7-169">Parameter name</span></span> | <span data-ttu-id="4e7a7-170">Значение</span><span class="sxs-lookup"><span data-stu-id="4e7a7-170">Value</span></span>  | <span data-ttu-id="4e7a7-171">Описание</span><span class="sxs-lookup"><span data-stu-id="4e7a7-171">Description</span></span>                                       |
+| <span data-ttu-id="e29e6-169">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="e29e6-169">Parameter name</span></span> | <span data-ttu-id="e29e6-170">Значение</span><span class="sxs-lookup"><span data-stu-id="e29e6-170">Value</span></span>  | <span data-ttu-id="e29e6-171">Описание</span><span class="sxs-lookup"><span data-stu-id="e29e6-171">Description</span></span>                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| <span data-ttu-id="4e7a7-172">_siteId_</span><span class="sxs-lookup"><span data-stu-id="4e7a7-172">_siteId_</span></span>       | <span data-ttu-id="4e7a7-173">строка</span><span class="sxs-lookup"><span data-stu-id="4e7a7-173">string</span></span> | <span data-ttu-id="4e7a7-174">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-174">Required.</span></span> <span data-ttu-id="4e7a7-175">Идентификатор для сайта, который содержит библиотеку документов.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-175">The identifier for the site that contains the document library.</span></span> |
+| <span data-ttu-id="e29e6-172">_siteId_</span><span class="sxs-lookup"><span data-stu-id="e29e6-172">_siteId_</span></span>       | <span data-ttu-id="e29e6-173">строка</span><span class="sxs-lookup"><span data-stu-id="e29e6-173">string</span></span> | <span data-ttu-id="e29e6-174">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e29e6-174">Required.</span></span> <span data-ttu-id="e29e6-175">Идентификатор для сайта, который содержит библиотеку документов.</span><span class="sxs-lookup"><span data-stu-id="e29e6-175">The identifier for the site that contains the document library.</span></span> |
 
-## <a name="get-a-drive-by-id"></a><span data-ttu-id="4e7a7-176">Получение диска с использованием его идентификатора</span><span class="sxs-lookup"><span data-stu-id="4e7a7-176">Get a drive by ID</span></span>
+## <a name="get-a-drive-by-id"></a><span data-ttu-id="e29e6-176">Получение диска с использованием его идентификатора</span><span class="sxs-lookup"><span data-stu-id="e29e6-176">Get a drive by ID</span></span>
 
-<span data-ttu-id="4e7a7-177">Если у вас есть уникальный идентификатор диска, вы можете получить доступ к этому диску непосредственно из коллекции дисков верхнего уровня.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-177">If you have the unique identifier for a drive, you can access it directly from the top-level drives collection.</span></span>
+<span data-ttu-id="e29e6-177">Если у вас есть уникальный идентификатор диска, вы можете получить доступ к этому диску непосредственно из коллекции дисков верхнего уровня.</span><span class="sxs-lookup"><span data-stu-id="e29e6-177">If you have the unique identifier for a drive, you can access it directly from the top-level drives collection.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="4e7a7-178">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4e7a7-178">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="e29e6-178">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e29e6-178">HTTP request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="4e7a7-179">HTTP</span><span class="sxs-lookup"><span data-stu-id="4e7a7-179">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e29e6-179">HTTP</span><span class="sxs-lookup"><span data-stu-id="e29e6-179">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /drives/{drive-id}
 ```
-# <a name="c"></a>[<span data-ttu-id="4e7a7-180">C#</span><span class="sxs-lookup"><span data-stu-id="4e7a7-180">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e29e6-180">C#</span><span class="sxs-lookup"><span data-stu-id="e29e6-180">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-by-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4e7a7-181">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4e7a7-181">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e29e6-181">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e29e6-181">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-by-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4e7a7-182">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4e7a7-182">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e29e6-182">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e29e6-182">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-id-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4e7a7-183">Java</span><span class="sxs-lookup"><span data-stu-id="4e7a7-183">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e29e6-183">Java</span><span class="sxs-lookup"><span data-stu-id="e29e6-183">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-id-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="path-parameters"></a><span data-ttu-id="4e7a7-184">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="4e7a7-184">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="e29e6-184">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="e29e6-184">Path parameters</span></span>
 
-| <span data-ttu-id="4e7a7-185">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="4e7a7-185">Parameter name</span></span> | <span data-ttu-id="4e7a7-186">Значение</span><span class="sxs-lookup"><span data-stu-id="4e7a7-186">Value</span></span>  | <span data-ttu-id="4e7a7-187">Описание</span><span class="sxs-lookup"><span data-stu-id="4e7a7-187">Description</span></span>                                       |
+| <span data-ttu-id="e29e6-185">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="e29e6-185">Parameter name</span></span> | <span data-ttu-id="e29e6-186">Значение</span><span class="sxs-lookup"><span data-stu-id="e29e6-186">Value</span></span>  | <span data-ttu-id="e29e6-187">Описание</span><span class="sxs-lookup"><span data-stu-id="e29e6-187">Description</span></span>                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| <span data-ttu-id="4e7a7-188">_driveId_</span><span class="sxs-lookup"><span data-stu-id="4e7a7-188">_driveId_</span></span>      | <span data-ttu-id="4e7a7-189">string</span><span class="sxs-lookup"><span data-stu-id="4e7a7-189">string</span></span> | <span data-ttu-id="4e7a7-190">Required.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-190">Required.</span></span> <span data-ttu-id="4e7a7-191">The identifier for the drive requested.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-191">The identifier for the drive requested.</span></span> |
+| <span data-ttu-id="e29e6-188">_driveId_</span><span class="sxs-lookup"><span data-stu-id="e29e6-188">_driveId_</span></span>      | <span data-ttu-id="e29e6-189">string</span><span class="sxs-lookup"><span data-stu-id="e29e6-189">string</span></span> | <span data-ttu-id="e29e6-p105">Обязательный. Идентификатор запрошенного диска.</span><span class="sxs-lookup"><span data-stu-id="e29e6-p105">Required. The identifier for the drive requested.</span></span> |
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="4e7a7-192">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="4e7a7-192">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e29e6-192">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="e29e6-192">Optional query parameters</span></span>
 
-<span data-ttu-id="4e7a7-193">Эти методы поддерживают [параметр запроса $select][odata-query-parameters] для формирования ответа.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-193">These method support the [$select query parameter][odata-query-parameters] to shape the response.</span></span>
+<span data-ttu-id="e29e6-193">Эти методы поддерживают [параметр запроса $select][odata-query-parameters] для формирования ответа.</span><span class="sxs-lookup"><span data-stu-id="e29e6-193">These method support the [$select query parameter][odata-query-parameters] to shape the response.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4e7a7-194">Ответ</span><span class="sxs-lookup"><span data-stu-id="4e7a7-194">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e29e6-194">Ответ</span><span class="sxs-lookup"><span data-stu-id="e29e6-194">Response</span></span>
 
-<span data-ttu-id="4e7a7-195">Каждый из этих методов возвращает [ресурс Drive][drive-resource] для соответствующего диска в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-195">Each of these methods returns a [Drive resource][drive-resource] for the matching drive in the response body.</span></span>
+<span data-ttu-id="e29e6-195">Каждый из этих методов возвращает [ресурс Drive][drive-resource] для соответствующего диска в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e29e6-195">Each of these methods returns a [Drive resource][drive-resource] for the matching drive in the response body.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default" , "get-drive-by-site-id"] } -->
 
@@ -252,9 +252,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="error-response-codes"></a><span data-ttu-id="4e7a7-196">Коды ответов с ошибками</span><span class="sxs-lookup"><span data-stu-id="4e7a7-196">Error response codes</span></span>
+### <a name="error-response-codes"></a><span data-ttu-id="e29e6-196">Коды ответов с ошибками</span><span class="sxs-lookup"><span data-stu-id="e29e6-196">Error response codes</span></span>
 
-<span data-ttu-id="4e7a7-197">Если диск не существует, и не удается подготовить его к работе автоматически (при использовании делегированной проверки подлинности), будет возвращен ответ `HTTP 404`.</span><span class="sxs-lookup"><span data-stu-id="4e7a7-197">If the drive does not exist and cannot be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.</span></span>
+<span data-ttu-id="e29e6-197">Если диск не существует, и не удается подготовить его к работе автоматически (при использовании делегированной проверки подлинности), будет возвращен ответ `HTTP 404`.</span><span class="sxs-lookup"><span data-stu-id="e29e6-197">If the drive does not exist and cannot be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.</span></span>
 
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: /graph/query-parameters

@@ -12,52 +12,52 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44898340"
 ---
-# <a name="page-copytosection"></a><span data-ttu-id="29e60-103">Страница: copyToSection</span><span class="sxs-lookup"><span data-stu-id="29e60-103">page: copyToSection</span></span>
+# <a name="page-copytosection"></a><span data-ttu-id="e4cd9-103">Страница: copyToSection</span><span class="sxs-lookup"><span data-stu-id="e4cd9-103">page: copyToSection</span></span>
 
-<span data-ttu-id="29e60-104">Пространство имен: Microsoft. Graph копирует страницу в определенный раздел.</span><span class="sxs-lookup"><span data-stu-id="29e60-104">Namespace: microsoft.graph Copies a page to a specific section.</span></span>
+<span data-ttu-id="e4cd9-104">Пространство имен: Microsoft. Graph копирует страницу в определенный раздел.</span><span class="sxs-lookup"><span data-stu-id="e4cd9-104">Namespace: microsoft.graph Copies a page to a specific section.</span></span>
 
-<span data-ttu-id="29e60-105">Для операций копирования необходимо использовать шаблон асинхронного вызова: сначала вызвать действие Copy, а затем опросить конечную точку операции, чтобы получить результат.</span><span class="sxs-lookup"><span data-stu-id="29e60-105">For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.</span></span>
+<span data-ttu-id="e4cd9-105">Для операций копирования необходимо использовать шаблон асинхронного вызова: сначала вызвать действие Copy, а затем опросить конечную точку операции, чтобы получить результат.</span><span class="sxs-lookup"><span data-stu-id="e4cd9-105">For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="29e60-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="29e60-106">Permissions</span></span>
-<span data-ttu-id="29e60-107">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="29e60-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="29e60-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="29e60-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e4cd9-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e4cd9-106">Permissions</span></span>
+<span data-ttu-id="e4cd9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e4cd9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="29e60-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="29e60-109">Permission type</span></span>      | <span data-ttu-id="29e60-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="29e60-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e4cd9-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e4cd9-109">Permission type</span></span>      | <span data-ttu-id="e4cd9-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e4cd9-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="29e60-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="29e60-111">Delegated (work or school account)</span></span> | <span data-ttu-id="29e60-112">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29e60-112">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="29e60-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="29e60-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="29e60-114">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="29e60-114">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="29e60-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="29e60-115">Application</span></span> | <span data-ttu-id="29e60-116">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29e60-116">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="e4cd9-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e4cd9-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e4cd9-112">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e4cd9-112">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e4cd9-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e4cd9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e4cd9-114">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e4cd9-114">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="e4cd9-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e4cd9-115">Application</span></span> | <span data-ttu-id="e4cd9-116">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e4cd9-116">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="29e60-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="29e60-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e4cd9-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e4cd9-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/pages/{id}/copyToSection
 POST /users/{id | userPrincipalName}/onenote/pages/{id}/copyToSection
 POST /groups/{id}/onenote/pages/{id}/copyToSection
 ```
-## <a name="request-headers"></a><span data-ttu-id="29e60-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="29e60-118">Request headers</span></span>
-| <span data-ttu-id="29e60-119">Имя</span><span class="sxs-lookup"><span data-stu-id="29e60-119">Name</span></span>       | <span data-ttu-id="29e60-120">Тип</span><span class="sxs-lookup"><span data-stu-id="29e60-120">Type</span></span> | <span data-ttu-id="29e60-121">Описание</span><span class="sxs-lookup"><span data-stu-id="29e60-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e4cd9-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e4cd9-118">Request headers</span></span>
+| <span data-ttu-id="e4cd9-119">Имя</span><span class="sxs-lookup"><span data-stu-id="e4cd9-119">Name</span></span>       | <span data-ttu-id="e4cd9-120">Тип</span><span class="sxs-lookup"><span data-stu-id="e4cd9-120">Type</span></span> | <span data-ttu-id="e4cd9-121">Описание</span><span class="sxs-lookup"><span data-stu-id="e4cd9-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="29e60-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="29e60-122">Authorization</span></span>  | <span data-ttu-id="29e60-123">string</span><span class="sxs-lookup"><span data-stu-id="29e60-123">string</span></span>  | <span data-ttu-id="29e60-124">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="29e60-124">Bearer {token}.</span></span> <span data-ttu-id="29e60-125">Required.</span><span class="sxs-lookup"><span data-stu-id="29e60-125">Required.</span></span> |
-| <span data-ttu-id="29e60-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="29e60-126">Content-Type</span></span> | <span data-ttu-id="29e60-127">строка</span><span class="sxs-lookup"><span data-stu-id="29e60-127">string</span></span> | `application/json` |
+| <span data-ttu-id="e4cd9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e4cd9-122">Authorization</span></span>  | <span data-ttu-id="e4cd9-123">string</span><span class="sxs-lookup"><span data-stu-id="e4cd9-123">string</span></span>  | <span data-ttu-id="e4cd9-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e4cd9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e4cd9-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e4cd9-126">Content-Type</span></span> | <span data-ttu-id="e4cd9-127">строка</span><span class="sxs-lookup"><span data-stu-id="e4cd9-127">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="29e60-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="29e60-128">Request body</span></span>
-<span data-ttu-id="29e60-129">В тексте запроса укажите объект JSON, содержащий необходимые для операции параметры.</span><span class="sxs-lookup"><span data-stu-id="29e60-129">In the request body, provide a JSON object that contains the parameters that your operation needs.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e4cd9-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e4cd9-128">Request body</span></span>
+<span data-ttu-id="e4cd9-129">В тексте запроса укажите объект JSON, содержащий необходимые для операции параметры.</span><span class="sxs-lookup"><span data-stu-id="e4cd9-129">In the request body, provide a JSON object that contains the parameters that your operation needs.</span></span>
 
-| <span data-ttu-id="29e60-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="29e60-130">Parameter</span></span>    | <span data-ttu-id="29e60-131">Тип</span><span class="sxs-lookup"><span data-stu-id="29e60-131">Type</span></span>   |<span data-ttu-id="29e60-132">Описание</span><span class="sxs-lookup"><span data-stu-id="29e60-132">Description</span></span>|
+| <span data-ttu-id="e4cd9-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="e4cd9-130">Parameter</span></span>    | <span data-ttu-id="e4cd9-131">Тип</span><span class="sxs-lookup"><span data-stu-id="e4cd9-131">Type</span></span>   |<span data-ttu-id="e4cd9-132">Описание</span><span class="sxs-lookup"><span data-stu-id="e4cd9-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="29e60-133">groupId</span><span class="sxs-lookup"><span data-stu-id="29e60-133">groupId</span></span>|<span data-ttu-id="29e60-134">String</span><span class="sxs-lookup"><span data-stu-id="29e60-134">String</span></span>|<span data-ttu-id="29e60-135">Идентификатор группы, в которую будет копироваться.</span><span class="sxs-lookup"><span data-stu-id="29e60-135">The id of the group to copy to.</span></span> <span data-ttu-id="29e60-136">Используйте только при копировании в группу Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="29e60-136">Use only when copying to a Microsoft 365 group.</span></span>|
-|<span data-ttu-id="29e60-137">id</span><span class="sxs-lookup"><span data-stu-id="29e60-137">id</span></span>|<span data-ttu-id="29e60-138">String</span><span class="sxs-lookup"><span data-stu-id="29e60-138">String</span></span>|<span data-ttu-id="29e60-139">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="29e60-139">Required.</span></span> <span data-ttu-id="29e60-140">Идентификатор раздела назначения.</span><span class="sxs-lookup"><span data-stu-id="29e60-140">The id of the destination section.</span></span>|
+|<span data-ttu-id="e4cd9-133">groupId</span><span class="sxs-lookup"><span data-stu-id="e4cd9-133">groupId</span></span>|<span data-ttu-id="e4cd9-134">String</span><span class="sxs-lookup"><span data-stu-id="e4cd9-134">String</span></span>|<span data-ttu-id="e4cd9-135">Идентификатор группы, в которую будет копироваться.</span><span class="sxs-lookup"><span data-stu-id="e4cd9-135">The id of the group to copy to.</span></span> <span data-ttu-id="e4cd9-136">Используйте только при копировании в группу Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="e4cd9-136">Use only when copying to a Microsoft 365 group.</span></span>|
+|<span data-ttu-id="e4cd9-137">id</span><span class="sxs-lookup"><span data-stu-id="e4cd9-137">id</span></span>|<span data-ttu-id="e4cd9-138">String</span><span class="sxs-lookup"><span data-stu-id="e4cd9-138">String</span></span>|<span data-ttu-id="e4cd9-139">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e4cd9-139">Required.</span></span> <span data-ttu-id="e4cd9-140">Идентификатор раздела назначения.</span><span class="sxs-lookup"><span data-stu-id="e4cd9-140">The id of the destination section.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="29e60-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="29e60-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e4cd9-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="e4cd9-141">Response</span></span>
 
-<span data-ttu-id="29e60-142">В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и `Operation-Location` заголовок.</span><span class="sxs-lookup"><span data-stu-id="29e60-142">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header.</span></span> <span data-ttu-id="29e60-143">Опросить конечную точку Operations to Location, чтобы [получить состояние операции копирования](onenoteoperation-get.md).</span><span class="sxs-lookup"><span data-stu-id="29e60-143">Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).</span></span>
+<span data-ttu-id="e4cd9-142">В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и `Operation-Location` заголовок.</span><span class="sxs-lookup"><span data-stu-id="e4cd9-142">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header.</span></span> <span data-ttu-id="e4cd9-143">Опросить конечную точку Operations to Location, чтобы [получить состояние операции копирования](onenoteoperation-get.md).</span><span class="sxs-lookup"><span data-stu-id="e4cd9-143">Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="29e60-144">Пример</span><span class="sxs-lookup"><span data-stu-id="29e60-144">Example</span></span>
-<span data-ttu-id="29e60-145">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="29e60-145">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="29e60-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="29e60-146">Request</span></span>
-<span data-ttu-id="29e60-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="29e60-147">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e4cd9-144">Пример</span><span class="sxs-lookup"><span data-stu-id="e4cd9-144">Example</span></span>
+<span data-ttu-id="e4cd9-145">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="e4cd9-145">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e4cd9-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="e4cd9-146">Request</span></span>
+<span data-ttu-id="e4cd9-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e4cd9-147">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="29e60-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="29e60-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e4cd9-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="e4cd9-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "page_copytosection"
@@ -72,27 +72,27 @@ Content-length: 52
   "groupId": "groupId-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="29e60-149">C#</span><span class="sxs-lookup"><span data-stu-id="29e60-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e4cd9-149">C#</span><span class="sxs-lookup"><span data-stu-id="e4cd9-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/page-copytosection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="29e60-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="29e60-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e4cd9-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e4cd9-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/page-copytosection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="29e60-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="29e60-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e4cd9-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e4cd9-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/page-copytosection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="29e60-152">Java</span><span class="sxs-lookup"><span data-stu-id="29e60-152">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e4cd9-152">Java</span><span class="sxs-lookup"><span data-stu-id="e4cd9-152">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/page-copytosection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="29e60-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="29e60-153">Response</span></span>
-<span data-ttu-id="29e60-154">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="29e60-154">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="e4cd9-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="e4cd9-153">Response</span></span>
+<span data-ttu-id="e4cd9-154">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e4cd9-154">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

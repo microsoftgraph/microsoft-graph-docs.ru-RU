@@ -12,32 +12,32 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44895638"
 ---
-# <a name="create-event"></a><span data-ttu-id="f614e-103">Создание события</span><span class="sxs-lookup"><span data-stu-id="f614e-103">Create event</span></span>
+# <a name="create-event"></a><span data-ttu-id="b9394-103">Создание события</span><span class="sxs-lookup"><span data-stu-id="b9394-103">Create event</span></span>
 
-<span data-ttu-id="f614e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f614e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b9394-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b9394-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f614e-105">Создайте новое событие в календаре с помощью этого API.</span><span class="sxs-lookup"><span data-stu-id="f614e-105">Use this API to create a new event in a calendar.</span></span> <span data-ttu-id="f614e-106">В качестве календаря может использоваться календарь [пользователя](../resources/user.md)или стандартный календарь [группы](../resources/group.md)Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="f614e-106">The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md).</span></span> 
+<span data-ttu-id="b9394-105">Создайте новое событие в календаре с помощью этого API.</span><span class="sxs-lookup"><span data-stu-id="b9394-105">Use this API to create a new event in a calendar.</span></span> <span data-ttu-id="b9394-106">В качестве календаря может использоваться календарь [пользователя](../resources/user.md)или стандартный календарь [группы](../resources/group.md)Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="b9394-106">The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md).</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="f614e-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f614e-107">Permissions</span></span>
-<span data-ttu-id="f614e-108">В зависимости от типа календаря, к которому относится событие, а также от требуемого типа разрешений (делегированные или разрешения приложений), для вызова этого API необходимо одно из указанных ниже разрешений.</span><span class="sxs-lookup"><span data-stu-id="f614e-108">Depending on the type of calendar that the event is created in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="f614e-109">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f614e-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b9394-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b9394-107">Permissions</span></span>
+<span data-ttu-id="b9394-108">В зависимости от типа календаря, к которому относится событие, а также от требуемого типа разрешений (делегированные или разрешения приложений), для вызова этого API необходимо одно из указанных ниже разрешений.</span><span class="sxs-lookup"><span data-stu-id="b9394-108">Depending on the type of calendar that the event is created in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="b9394-109">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b9394-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f614e-110">Календарь</span><span class="sxs-lookup"><span data-stu-id="f614e-110">Calendar</span></span> | <span data-ttu-id="f614e-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f614e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f614e-112">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f614e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f614e-113">Приложение</span><span class="sxs-lookup"><span data-stu-id="f614e-113">Application</span></span> |
+| <span data-ttu-id="b9394-110">Календарь</span><span class="sxs-lookup"><span data-stu-id="b9394-110">Calendar</span></span> | <span data-ttu-id="b9394-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b9394-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b9394-112">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b9394-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b9394-113">Приложение</span><span class="sxs-lookup"><span data-stu-id="b9394-113">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="f614e-114">календарь пользователя</span><span class="sxs-lookup"><span data-stu-id="f614e-114">user calendar</span></span> | <span data-ttu-id="f614e-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f614e-115">Calendars.ReadWrite</span></span> | <span data-ttu-id="f614e-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f614e-116">Calendars.ReadWrite</span></span> | <span data-ttu-id="f614e-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f614e-117">Calendars.ReadWrite</span></span> |
-| <span data-ttu-id="f614e-118">календарь группы</span><span class="sxs-lookup"><span data-stu-id="f614e-118">group calendar</span></span> | <span data-ttu-id="f614e-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f614e-119">Group.ReadWrite.All</span></span> | <span data-ttu-id="f614e-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f614e-120">Not supported.</span></span> | <span data-ttu-id="f614e-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f614e-121">Not supported.</span></span> |
+| <span data-ttu-id="b9394-114">календарь пользователя</span><span class="sxs-lookup"><span data-stu-id="b9394-114">user calendar</span></span> | <span data-ttu-id="b9394-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b9394-115">Calendars.ReadWrite</span></span> | <span data-ttu-id="b9394-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b9394-116">Calendars.ReadWrite</span></span> | <span data-ttu-id="b9394-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b9394-117">Calendars.ReadWrite</span></span> |
+| <span data-ttu-id="b9394-118">календарь группы</span><span class="sxs-lookup"><span data-stu-id="b9394-118">group calendar</span></span> | <span data-ttu-id="b9394-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9394-119">Group.ReadWrite.All</span></span> | <span data-ttu-id="b9394-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b9394-120">Not supported.</span></span> | <span data-ttu-id="b9394-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b9394-121">Not supported.</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="f614e-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f614e-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b9394-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b9394-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="f614e-123">[Календарь](../resources/calendar.md) пользователя или группы по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="f614e-123">A user's or group's default [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="b9394-123">[Календарь](../resources/calendar.md) пользователя или группы по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="b9394-123">A user's or group's default [calendar](../resources/calendar.md).</span></span>
 ```http
 POST /me/calendar/events
 POST /users/{id | userPrincipalName}/calendar/events
 POST /groups/{id}/calendar/events
 ```
-<span data-ttu-id="f614e-124">Экземпляр [calendar](../resources/calendar.md) пользователя в экземпляре по умолчанию [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="f614e-124">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="b9394-124">Экземпляр [calendar](../resources/calendar.md) пользователя в экземпляре по умолчанию [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="b9394-124">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
@@ -45,34 +45,34 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 POST /me/calendarGroup/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
-<span data-ttu-id="f614e-125">[Календарь](../resources/calendar.md) пользователя в определенной группе [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="f614e-125">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="b9394-125">[Календарь](../resources/calendar.md) пользователя в определенной группе [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="b9394-125">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 POST /me/calendarGroups/{id}/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
-## <a name="request-headers"></a><span data-ttu-id="f614e-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f614e-126">Request headers</span></span>
-| <span data-ttu-id="f614e-127">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f614e-127">Header</span></span>       | <span data-ttu-id="f614e-128">Значение</span><span class="sxs-lookup"><span data-stu-id="f614e-128">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="b9394-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b9394-126">Request headers</span></span>
+| <span data-ttu-id="b9394-127">Заголовок</span><span class="sxs-lookup"><span data-stu-id="b9394-127">Header</span></span>       | <span data-ttu-id="b9394-128">Значение</span><span class="sxs-lookup"><span data-stu-id="b9394-128">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="f614e-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f614e-129">Authorization</span></span>  | <span data-ttu-id="f614e-130">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="f614e-130">Bearer {token}.</span></span> <span data-ttu-id="f614e-131">Required.</span><span class="sxs-lookup"><span data-stu-id="f614e-131">Required.</span></span>  |
-| <span data-ttu-id="f614e-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f614e-132">Content-Type</span></span>  | <span data-ttu-id="f614e-133">application/json.</span><span class="sxs-lookup"><span data-stu-id="f614e-133">application/json.</span></span> <span data-ttu-id="f614e-134">Required.</span><span class="sxs-lookup"><span data-stu-id="f614e-134">Required.</span></span>  |
+| <span data-ttu-id="b9394-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b9394-129">Authorization</span></span>  | <span data-ttu-id="b9394-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b9394-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b9394-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b9394-132">Content-Type</span></span>  | <span data-ttu-id="b9394-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b9394-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="f614e-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f614e-135">Request body</span></span>
-<span data-ttu-id="f614e-136">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f614e-136">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b9394-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b9394-135">Request body</span></span>
+<span data-ttu-id="b9394-136">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b9394-136">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f614e-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="f614e-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b9394-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="b9394-137">Response</span></span>
 
-<span data-ttu-id="f614e-138">В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="f614e-138">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+<span data-ttu-id="b9394-138">В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="b9394-138">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f614e-139">Примеры</span><span class="sxs-lookup"><span data-stu-id="f614e-139">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b9394-139">Примеры</span><span class="sxs-lookup"><span data-stu-id="b9394-139">Examples</span></span>
 
-### <a name="example-1-create-an-event-in-a-specific-calendar"></a><span data-ttu-id="f614e-140">Пример 1. Создание события в определенном календаре</span><span class="sxs-lookup"><span data-stu-id="f614e-140">Example 1: Create an event in a specific calendar</span></span>
+### <a name="example-1-create-an-event-in-a-specific-calendar"></a><span data-ttu-id="b9394-140">Пример 1. Создание события в определенном календаре</span><span class="sxs-lookup"><span data-stu-id="b9394-140">Example 1: Create an event in a specific calendar</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f614e-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="f614e-141">Request</span></span>
-<span data-ttu-id="f614e-142">В следующем примере показано, как создать событие в определенном календаре и назначить ему необязательное значение **трансактионид** .</span><span class="sxs-lookup"><span data-stu-id="f614e-142">The following example creates an event in a specific calendar and assigns the event an optional **transactionId** value.</span></span>
+#### <a name="request"></a><span data-ttu-id="b9394-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="b9394-141">Request</span></span>
+<span data-ttu-id="b9394-142">В следующем примере показано, как создать событие в определенном календаре и назначить ему необязательное значение **трансактионид** .</span><span class="sxs-lookup"><span data-stu-id="b9394-142">The following example creates an event in a specific calendar and assigns the event an optional **transactionId** value.</span></span>
 
-<span data-ttu-id="f614e-143">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f614e-143">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="b9394-143">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b9394-143">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f614e-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="f614e-144">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b9394-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="b9394-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGViNDU7zAAAAAGtlAAA="],
@@ -111,25 +111,25 @@ Content-type: application/json
   "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f614e-145">C#</span><span class="sxs-lookup"><span data-stu-id="f614e-145">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b9394-145">C#</span><span class="sxs-lookup"><span data-stu-id="b9394-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f614e-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f614e-146">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b9394-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b9394-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f614e-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f614e-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b9394-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b9394-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="f614e-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="f614e-148">Response</span></span>
-<span data-ttu-id="f614e-149">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f614e-149">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="b9394-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="b9394-148">Response</span></span>
+<span data-ttu-id="b9394-149">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b9394-149">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="f614e-150">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="f614e-150">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="f614e-151">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f614e-151">All  the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="b9394-150">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="b9394-150">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b9394-151">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b9394-151">All  the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -224,14 +224,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-and-enable-an-event-as-an-online-meeting"></a><span data-ttu-id="f614e-152">Пример 2. Создание и включение события в качестве собрания по сети</span><span class="sxs-lookup"><span data-stu-id="f614e-152">Example 2: Create and enable an event as an online meeting</span></span>
+### <a name="example-2-create-and-enable-an-event-as-an-online-meeting"></a><span data-ttu-id="b9394-152">Пример 2. Создание и включение события в качестве собрания по сети</span><span class="sxs-lookup"><span data-stu-id="b9394-152">Example 2: Create and enable an event as an online meeting</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f614e-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="f614e-153">Request</span></span>
-<span data-ttu-id="f614e-154">В следующем примере показано создание события в указанном календаре пользователя, выполнившего вход, и включение его в качестве собрания по сети.</span><span class="sxs-lookup"><span data-stu-id="f614e-154">The following example creates an event in the specified calendar of the signed-in user and enables it as an online meeting.</span></span>
+#### <a name="request"></a><span data-ttu-id="b9394-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="b9394-153">Request</span></span>
+<span data-ttu-id="b9394-154">В следующем примере показано создание события в указанном календаре пользователя, выполнившего вход, и включение его в качестве собрания по сети.</span><span class="sxs-lookup"><span data-stu-id="b9394-154">The following example creates an event in the specified calendar of the signed-in user and enables it as an online meeting.</span></span>
 
-<span data-ttu-id="f614e-155">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f614e-155">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="b9394-155">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b9394-155">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f614e-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="f614e-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b9394-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="b9394-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGViNDU8zAAAAAGtlAAA="],
@@ -271,25 +271,25 @@ Content-type: application/json
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f614e-157">C#</span><span class="sxs-lookup"><span data-stu-id="f614e-157">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b9394-157">C#</span><span class="sxs-lookup"><span data-stu-id="b9394-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-with-online-meeting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f614e-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f614e-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b9394-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b9394-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-with-online-meeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f614e-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f614e-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b9394-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b9394-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-with-online-meeting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="f614e-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="f614e-160">Response</span></span>
-<span data-ttu-id="f614e-161">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f614e-161">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="b9394-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="b9394-160">Response</span></span>
+<span data-ttu-id="b9394-161">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b9394-161">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="f614e-162">**Note:** The response object shown here might be shortened for readability.</span><span class="sxs-lookup"><span data-stu-id="f614e-162">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="f614e-163">All the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="f614e-163">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="b9394-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b9394-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -12,61 +12,61 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44895841"
 ---
-# <a name="list-group-memberof"></a><span data-ttu-id="782f6-103">Группа списка memberOf</span><span class="sxs-lookup"><span data-stu-id="782f6-103">List group memberOf</span></span>
+# <a name="list-group-memberof"></a><span data-ttu-id="d5708-103">Группа списка memberOf</span><span class="sxs-lookup"><span data-stu-id="d5708-103">List group memberOf</span></span>
 
-<span data-ttu-id="782f6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="782f6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d5708-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d5708-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="782f6-105">Получение групп и административных единиц, непосредственным участником которых является группа.</span><span class="sxs-lookup"><span data-stu-id="782f6-105">Get groups and administrative units that the group is a direct member of.</span></span>
+<span data-ttu-id="d5708-105">Получение групп и административных единиц, непосредственным участником которых является группа.</span><span class="sxs-lookup"><span data-stu-id="d5708-105">Get groups and administrative units that the group is a direct member of.</span></span>
 
-<span data-ttu-id="782f6-106">This operation is not transitive.</span><span class="sxs-lookup"><span data-stu-id="782f6-106">This operation is not transitive.</span></span> <span data-ttu-id="782f6-107">Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.</span><span class="sxs-lookup"><span data-stu-id="782f6-107">Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.</span></span> 
+<span data-ttu-id="d5708-p101">Эта операция не является транзитивным. В отличие от того, что получает группы Microsoft 365 пользователя, возвращаются все типы групп, а не только группы Майкрософт 365.</span><span class="sxs-lookup"><span data-stu-id="d5708-p101">This operation is not transitive. Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="782f6-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="782f6-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d5708-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d5708-108">Permissions</span></span>
 
-<span data-ttu-id="782f6-109">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="782f6-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="782f6-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="782f6-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d5708-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d5708-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="782f6-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="782f6-111">Permission type</span></span> | <span data-ttu-id="782f6-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="782f6-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="d5708-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d5708-111">Permission type</span></span> | <span data-ttu-id="d5708-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d5708-112">Permissions (from least to most privileged)</span></span> |
 |:--------------- |:------------------------------------------- |
-| <span data-ttu-id="782f6-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="782f6-113">Delegated (work or school account)</span></span> | <span data-ttu-id="782f6-114">GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="782f6-114">GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-| <span data-ttu-id="782f6-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="782f6-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="782f6-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="782f6-116">Not supported.</span></span> |
-| <span data-ttu-id="782f6-117">Для приложения</span><span class="sxs-lookup"><span data-stu-id="782f6-117">Application</span></span> | <span data-ttu-id="782f6-118">GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="782f6-118">GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="d5708-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d5708-113">Delegated (work or school account)</span></span> | <span data-ttu-id="d5708-114">GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="d5708-114">GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+| <span data-ttu-id="d5708-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d5708-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5708-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d5708-116">Not supported.</span></span> |
+| <span data-ttu-id="d5708-117">Для приложения</span><span class="sxs-lookup"><span data-stu-id="d5708-117">Application</span></span> | <span data-ttu-id="d5708-118">GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d5708-118">GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="782f6-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="782f6-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d5708-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d5708-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/memberOf
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="782f6-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="782f6-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d5708-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d5708-120">Optional query parameters</span></span>
 
-<span data-ttu-id="782f6-121">Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, включая `$search` , `$count` и `$filter` .</span><span class="sxs-lookup"><span data-stu-id="782f6-121">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response, including `$search`, `$count`, and `$filter`.</span></span> <span data-ttu-id="782f6-122">Приведение OData также включено, например, можно выполнить приведение, чтобы получить только те группы, участником которых является группа.</span><span class="sxs-lookup"><span data-stu-id="782f6-122">OData cast is also enabled, for example, you can cast to get just the groups the group is a member of.</span></span> <span data-ttu-id="782f6-123">Можно использовать `$search` свойство **DisplayName** .</span><span class="sxs-lookup"><span data-stu-id="782f6-123">You can use `$search` on the **displayName** property.</span></span> <span data-ttu-id="782f6-124">При добавлении или обновлении элементов для этого ресурса они могут индексироваться для использования с `$count` `$search` параметрами запроса.</span><span class="sxs-lookup"><span data-stu-id="782f6-124">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="782f6-125">Между добавлением или обновлением элемента может быть небольшая задержка, а когда он доступен в индексе.</span><span class="sxs-lookup"><span data-stu-id="782f6-125">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
+<span data-ttu-id="d5708-121">Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, включая `$search` , `$count` и `$filter` .</span><span class="sxs-lookup"><span data-stu-id="d5708-121">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response, including `$search`, `$count`, and `$filter`.</span></span> <span data-ttu-id="d5708-122">Приведение OData также включено, например, можно выполнить приведение, чтобы получить только те группы, участником которых является группа.</span><span class="sxs-lookup"><span data-stu-id="d5708-122">OData cast is also enabled, for example, you can cast to get just the groups the group is a member of.</span></span> <span data-ttu-id="d5708-123">Можно использовать `$search` свойство **DisplayName** .</span><span class="sxs-lookup"><span data-stu-id="d5708-123">You can use `$search` on the **displayName** property.</span></span> <span data-ttu-id="d5708-124">При добавлении или обновлении элементов для этого ресурса они могут индексироваться для использования с `$count` `$search` параметрами запроса.</span><span class="sxs-lookup"><span data-stu-id="d5708-124">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="d5708-125">Между добавлением или обновлением элемента может быть небольшая задержка, а когда он доступен в индексе.</span><span class="sxs-lookup"><span data-stu-id="d5708-125">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="782f6-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="782f6-126">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d5708-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d5708-126">Request headers</span></span>
 
-| <span data-ttu-id="782f6-127">Имя</span><span class="sxs-lookup"><span data-stu-id="782f6-127">Name</span></span> | <span data-ttu-id="782f6-128">Описание</span><span class="sxs-lookup"><span data-stu-id="782f6-128">Description</span></span> |
+| <span data-ttu-id="d5708-127">Имя</span><span class="sxs-lookup"><span data-stu-id="d5708-127">Name</span></span> | <span data-ttu-id="d5708-128">Описание</span><span class="sxs-lookup"><span data-stu-id="d5708-128">Description</span></span> |
 |:---- |:----------- |
-| <span data-ttu-id="782f6-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="782f6-129">Authorization</span></span>  | <span data-ttu-id="782f6-130">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="782f6-130">Bearer {token}.</span></span> <span data-ttu-id="782f6-131">Required.</span><span class="sxs-lookup"><span data-stu-id="782f6-131">Required.</span></span> |
-| <span data-ttu-id="782f6-132">консистенцилевел</span><span class="sxs-lookup"><span data-stu-id="782f6-132">ConsistencyLevel</span></span> | <span data-ttu-id="782f6-133">закончить.</span><span class="sxs-lookup"><span data-stu-id="782f6-133">eventual.</span></span> <span data-ttu-id="782f6-134">Этот заголовок и `$count` при использовании `$search` `$filter` `$orderby` параметров запроса на приведение,, или OData.</span><span class="sxs-lookup"><span data-stu-id="782f6-134">This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters.</span></span> <span data-ttu-id="782f6-135">Он использует индекс, который может не быть актуальным с последними изменениями объекта.</span><span class="sxs-lookup"><span data-stu-id="782f6-135">It uses an index that might not be up-to-date with recent changes to the object.</span></span> |
+| <span data-ttu-id="d5708-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d5708-129">Authorization</span></span>  | <span data-ttu-id="d5708-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d5708-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d5708-132">консистенцилевел</span><span class="sxs-lookup"><span data-stu-id="d5708-132">ConsistencyLevel</span></span> | <span data-ttu-id="d5708-133">закончить.</span><span class="sxs-lookup"><span data-stu-id="d5708-133">eventual.</span></span> <span data-ttu-id="d5708-134">Этот заголовок и `$count` при использовании `$search` `$filter` `$orderby` параметров запроса на приведение,, или OData.</span><span class="sxs-lookup"><span data-stu-id="d5708-134">This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters.</span></span> <span data-ttu-id="d5708-135">Он использует индекс, который может не быть актуальным с последними изменениями объекта.</span><span class="sxs-lookup"><span data-stu-id="d5708-135">It uses an index that might not be up-to-date with recent changes to the object.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="782f6-136">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="782f6-136">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d5708-136">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d5708-136">Request body</span></span>
 
-<span data-ttu-id="782f6-137">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="782f6-137">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d5708-137">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d5708-137">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="782f6-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="782f6-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d5708-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="d5708-138">Response</span></span>
 
-<span data-ttu-id="782f6-139">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="782f6-139">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+<span data-ttu-id="d5708-139">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d5708-139">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="782f6-140">Примеры</span><span class="sxs-lookup"><span data-stu-id="782f6-140">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="d5708-140">Примеры</span><span class="sxs-lookup"><span data-stu-id="d5708-140">Examples</span></span>
 
-### <a name="example-1-get-groups-and-administrative-units-that-the-group-is-a-direct-member-of"></a><span data-ttu-id="782f6-141">Пример 1: получение групп и административных единиц, непосредственным участником которых является группа</span><span class="sxs-lookup"><span data-stu-id="782f6-141">Example 1: Get groups and administrative units that the group is a direct member of</span></span>
+### <a name="example-1-get-groups-and-administrative-units-that-the-group-is-a-direct-member-of"></a><span data-ttu-id="d5708-141">Пример 1: получение групп и административных единиц, непосредственным участником которых является группа</span><span class="sxs-lookup"><span data-stu-id="d5708-141">Example 1: Get groups and administrative units that the group is a direct member of</span></span>
 
-#### <a name="request"></a><span data-ttu-id="782f6-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="782f6-142">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d5708-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="d5708-142">Request</span></span>
 
-<span data-ttu-id="782f6-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="782f6-143">The following is an example of the request.</span></span>
+<span data-ttu-id="d5708-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d5708-143">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="782f6-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="782f6-144">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d5708-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5708-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_get_memberof"
@@ -74,24 +74,24 @@ GET /groups/{id}/memberOf
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/memberOf
 ```
-# <a name="c"></a>[<span data-ttu-id="782f6-145">C#</span><span class="sxs-lookup"><span data-stu-id="782f6-145">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d5708-145">C#</span><span class="sxs-lookup"><span data-stu-id="d5708-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-memberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="782f6-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="782f6-146">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d5708-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5708-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-memberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="782f6-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="782f6-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d5708-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d5708-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-memberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="782f6-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="782f6-148">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d5708-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="d5708-148">Response</span></span>
 
-<span data-ttu-id="782f6-149">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="782f6-149">The following is an example of the response.</span></span>
-><span data-ttu-id="782f6-150">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="782f6-150">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="782f6-151">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="782f6-151">All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="d5708-149">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d5708-149">The following is an example of the response.</span></span>
+><span data-ttu-id="d5708-150">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="d5708-150">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d5708-151">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d5708-151">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -116,14 +116,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-all-memberships"></a><span data-ttu-id="782f6-152">Пример 2: получение только количества всех членств</span><span class="sxs-lookup"><span data-stu-id="782f6-152">Example 2: Get only a count of all memberships</span></span>
+### <a name="example-2-get-only-a-count-of-all-memberships"></a><span data-ttu-id="d5708-152">Пример 2: получение только количества всех членств</span><span class="sxs-lookup"><span data-stu-id="d5708-152">Example 2: Get only a count of all memberships</span></span>
 
-#### <a name="request"></a><span data-ttu-id="782f6-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="782f6-153">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d5708-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="d5708-153">Request</span></span>
 
-<span data-ttu-id="782f6-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="782f6-154">The following is an example of the request.</span></span>
+<span data-ttu-id="d5708-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d5708-154">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="782f6-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="782f6-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d5708-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5708-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_count_only"
@@ -132,24 +132,24 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/groups/{id}/memberOf/$count
 ConsistencyLevel: eventual
 ```
-# <a name="c"></a>[<span data-ttu-id="782f6-156">C#</span><span class="sxs-lookup"><span data-stu-id="782f6-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d5708-156">C#</span><span class="sxs-lookup"><span data-stu-id="d5708-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="782f6-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="782f6-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d5708-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5708-157">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="782f6-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="782f6-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d5708-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d5708-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="782f6-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="782f6-159">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d5708-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="d5708-159">Response</span></span>
 
-<span data-ttu-id="782f6-160">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="782f6-160">The following is an example of the response.</span></span>
+<span data-ttu-id="d5708-160">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d5708-160">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -162,17 +162,17 @@ HTTP/1.1 200 OK
 Content-type: text/plain
 ```
 
-<span data-ttu-id="782f6-161">394</span><span class="sxs-lookup"><span data-stu-id="782f6-161">394</span></span>
+<span data-ttu-id="d5708-161">394</span><span class="sxs-lookup"><span data-stu-id="d5708-161">394</span></span>
 
 
-### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a><span data-ttu-id="782f6-162">Пример 3: Использование приведения OData для получения только количества участников группы</span><span class="sxs-lookup"><span data-stu-id="782f6-162">Example 3: Use OData cast to get only a count of group membership</span></span>
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a><span data-ttu-id="d5708-162">Пример 3: Использование приведения OData для получения только количества участников группы</span><span class="sxs-lookup"><span data-stu-id="d5708-162">Example 3: Use OData cast to get only a count of group membership</span></span>
 
-#### <a name="request"></a><span data-ttu-id="782f6-163">Запрос</span><span class="sxs-lookup"><span data-stu-id="782f6-163">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d5708-163">Запрос</span><span class="sxs-lookup"><span data-stu-id="d5708-163">Request</span></span>
 
-<span data-ttu-id="782f6-164">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="782f6-164">The following is an example of the request.</span></span>
+<span data-ttu-id="d5708-164">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d5708-164">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="782f6-165">HTTP</span><span class="sxs-lookup"><span data-stu-id="782f6-165">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d5708-165">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5708-165">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_count_group_only"
@@ -181,24 +181,24 @@ Content-type: text/plain
 GET https://graph.microsoft.com/beta/devices/{id}/memberOf/microsoft.graph.group/$count
 ConsistencyLevel: eventual
 ```
-# <a name="c"></a>[<span data-ttu-id="782f6-166">C#</span><span class="sxs-lookup"><span data-stu-id="782f6-166">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d5708-166">C#</span><span class="sxs-lookup"><span data-stu-id="d5708-166">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-count-group-only-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="782f6-167">JavaScript</span><span class="sxs-lookup"><span data-stu-id="782f6-167">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d5708-167">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5708-167">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-count-group-only-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="782f6-168">Objective-C</span><span class="sxs-lookup"><span data-stu-id="782f6-168">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d5708-168">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d5708-168">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-count-group-only-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="782f6-169">Отклик</span><span class="sxs-lookup"><span data-stu-id="782f6-169">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d5708-169">Отклик</span><span class="sxs-lookup"><span data-stu-id="d5708-169">Response</span></span>
 
-<span data-ttu-id="782f6-170">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="782f6-170">The following is an example of the response.</span></span>
+<span data-ttu-id="d5708-170">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d5708-170">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -211,16 +211,16 @@ HTTP/1.1 200 OK
 Content-type: text/plain
 ```
 
-<span data-ttu-id="782f6-171">394</span><span class="sxs-lookup"><span data-stu-id="782f6-171">394</span></span>
+<span data-ttu-id="d5708-171">394</span><span class="sxs-lookup"><span data-stu-id="d5708-171">394</span></span>
 
-### <a name="example-4-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a><span data-ttu-id="782f6-172">Пример 4: использование функции CAST и $search для получения членства с отображаемыми именами, содержащими "видео", в том числе от числа возвращаемых объектов.</span><span class="sxs-lookup"><span data-stu-id="782f6-172">Example 4: Use OData cast and $search to get membership with display names that contain the letters 'Video' including a count of returned objects</span></span>
+### <a name="example-4-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a><span data-ttu-id="d5708-172">Пример 4: использование функции CAST и $search для получения членства с отображаемыми именами, содержащими "видео", в том числе от числа возвращаемых объектов.</span><span class="sxs-lookup"><span data-stu-id="d5708-172">Example 4: Use OData cast and $search to get membership with display names that contain the letters 'Video' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="782f6-173">Запрос</span><span class="sxs-lookup"><span data-stu-id="782f6-173">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d5708-173">Запрос</span><span class="sxs-lookup"><span data-stu-id="d5708-173">Request</span></span>
 
-<span data-ttu-id="782f6-174">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="782f6-174">The following is an example of the request.</span></span>
+<span data-ttu-id="d5708-174">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d5708-174">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="782f6-175">HTTP</span><span class="sxs-lookup"><span data-stu-id="782f6-175">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d5708-175">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5708-175">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_video_count"
@@ -229,25 +229,25 @@ Content-type: text/plain
 GET https://graph.microsoft.com/beta/groups/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:Video"
 ConsistencyLevel: eventual
 ```
-# <a name="c"></a>[<span data-ttu-id="782f6-176">C#</span><span class="sxs-lookup"><span data-stu-id="782f6-176">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d5708-176">C#</span><span class="sxs-lookup"><span data-stu-id="d5708-176">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-video-count-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="782f6-177">JavaScript</span><span class="sxs-lookup"><span data-stu-id="782f6-177">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d5708-177">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5708-177">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-video-count-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="782f6-178">Objective-C</span><span class="sxs-lookup"><span data-stu-id="782f6-178">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d5708-178">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d5708-178">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-video-count-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="782f6-179">Отклик</span><span class="sxs-lookup"><span data-stu-id="782f6-179">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d5708-179">Отклик</span><span class="sxs-lookup"><span data-stu-id="d5708-179">Response</span></span>
 
-<span data-ttu-id="782f6-180">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="782f6-180">The following is an example of the response.</span></span>
-><span data-ttu-id="782f6-181">**Note:** The response object shown here might be shortened for readability.</span><span class="sxs-lookup"><span data-stu-id="782f6-181">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="782f6-182">All the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="782f6-182">All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="d5708-180">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d5708-180">The following is an example of the response.</span></span>
+><span data-ttu-id="d5708-p107">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d5708-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -272,11 +272,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a><span data-ttu-id="782f6-183">Пример 5: использование функции CAST и $filter для получения членства с отображаемым именем, начинающимся с буквы "A", включая количество возвращаемых объектов</span><span class="sxs-lookup"><span data-stu-id="782f6-183">Example 5: Use OData cast and $filter to get membership with a display name that starts with the letter 'A' including a count of returned objects</span></span>
+### <a name="example-5-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a><span data-ttu-id="d5708-183">Пример 5: использование функции CAST и $filter для получения членства с отображаемым именем, начинающимся с буквы "A", включая количество возвращаемых объектов</span><span class="sxs-lookup"><span data-stu-id="d5708-183">Example 5: Use OData cast and $filter to get membership with a display name that starts with the letter 'A' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="782f6-184">Запрос</span><span class="sxs-lookup"><span data-stu-id="782f6-184">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d5708-184">Запрос</span><span class="sxs-lookup"><span data-stu-id="d5708-184">Request</span></span>
 
-<span data-ttu-id="782f6-185">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="782f6-185">The following is an example of the request.</span></span>
+<span data-ttu-id="d5708-185">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d5708-185">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -287,10 +287,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/memberOf/microsoft.graph.group?
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="782f6-186">Ответ</span><span class="sxs-lookup"><span data-stu-id="782f6-186">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d5708-186">Ответ</span><span class="sxs-lookup"><span data-stu-id="d5708-186">Response</span></span>
 
-<span data-ttu-id="782f6-187">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="782f6-187">The following is an example of the response.</span></span>
-><span data-ttu-id="782f6-188">**Note:** The response object shown here might be shortened for readability.</span><span class="sxs-lookup"><span data-stu-id="782f6-188">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="782f6-189">All the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="782f6-189">All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="d5708-187">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d5708-187">The following is an example of the response.</span></span>
+><span data-ttu-id="d5708-p108">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d5708-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
