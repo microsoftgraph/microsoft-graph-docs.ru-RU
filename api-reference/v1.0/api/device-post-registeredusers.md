@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 141d59a4ac49c8aca83d4d3aa658c8b74beac544
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 68b03be62fd05e787422f743c5ed2c31d8cb95f5
+ms.sourcegitcommit: 9c1abb1c87177da20e1f5bbf1fae8131ab7e4f16
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680811"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146675"
 ---
 # <a name="create-registereduser"></a>Создание объекта registeredUser
 
@@ -26,7 +26,7 @@ ms.locfileid: "44680811"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,12 +39,12 @@ POST /devices/{id}/registeredUsers/$ref
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -56,13 +56,12 @@ POST /devices/{id}/registeredUsers/$ref
   "name": "create_directoryobject_from_device"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers
+POST https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "directoryObject": {
-  }
+  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -76,7 +75,7 @@ Content-length: 30
 ---
 
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -84,15 +83,7 @@ Content-length: 30
   "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 51
-
-{
-  "directoryObject": {
-    "id": "id-value"
-  }
-}
+HTTP/1.1 204 No content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
