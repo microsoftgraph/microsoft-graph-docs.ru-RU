@@ -739,7 +739,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -748,7 +748,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -921,7 +921,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: List
+                      - name: Список
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -930,7 +930,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: List
+                      - name: Список
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -939,7 +939,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -948,7 +948,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1276,7 +1276,7 @@ items:
                 items:
                   - name: Получение
                     href: api/participant-get.md
-                  - name: List
+                  - name: Список
                     href: api/call-list-participants.md
                   - name: Настройка микшера
                     href: api/participant-configuremixer.md
@@ -8536,7 +8536,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: Update
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: List
+                      - name: Список
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: 'Девицеманажементдериведкредентиалсеттингс] (.. /ресаурцес/интуне-Шаред-девицеманажементдериведкредентиалсеттингс.МД) | Создание'
                         href: api/intune-shared-devicemanagementderivedcredentialsettings.md
@@ -9458,6 +9458,10 @@ items:
                     href: api/device-post-registeredowners.md
                   - name: Создание зарегистрированного пользователя
                     href: api/device-post-registeredusers.md
+                  - name: Удаление зарегистрированного владельца
+                    href: api/device-delete-registeredowners.md
+                  - name: Удаление зарегистрированного пользователя
+                    href: api/device-delete-registeredusers.md
                   - name: Список групп устройств
                     href: api/device-list-memberof.md
                   - name: Перечисление транзитивных групп устройств
@@ -10076,7 +10080,7 @@ items:
                   - name: Шаблон бизнес-потока
                     href: resources/businessflowtemplate.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/businessflowtemplate-list.md
                   - name: Программа
                     href: resources/program.md
@@ -10085,7 +10089,7 @@ items:
                         href: api/program-create.md
                       - name: Удаление
                         href: api/program-delete.md
-                      - name: List
+                      - name: Список
                         href: api/program-list.md
                       - name: Обновление
                         href: api/program-update.md
@@ -10098,12 +10102,12 @@ items:
                         href: api/programcontrol-create.md
                       - name: Удаление
                         href: api/programcontrol-delete.md
-                      - name: List
+                      - name: Список
                         href: api/programcontrol-list.md
                   - name: Тип элемента управления программы
                     href: resources/programcontroltype.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/programcontroltype-list.md
               - name: Управление обслуживанием
                 href: resources/entitlementmanagement-root.md
@@ -10122,7 +10126,7 @@ items:
                   - name: Назначение пакетов Access
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/accesspackageassignment-list.md
                   - name: Политика назначения пакетов Access
                     href: resources/accesspackageassignmentpolicy.md
@@ -10281,7 +10285,7 @@ items:
                       - name: Назначения ролей
                         href: resources/governanceroleassignment.md
                         items:
-                          - name: Перечисление
+                          - name: Список
                             href: api/governanceroleassignment-list.md
                           - name: Получение
                             href: api/governanceroleassignment-get.md
@@ -10913,7 +10917,7 @@ items:
                   - name: Подробная сводка по проверяющей стороне
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/relyingpartydetailedsummary-list.md
               - name: Вход в приложение
                 items:
@@ -11716,7 +11720,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: List
+                  - name: Список
                     href: api/offershiftrequest-list.md
                   - name: Утвердить
                     href: api/offershiftrequest-approve.md
