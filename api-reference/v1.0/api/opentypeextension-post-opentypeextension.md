@@ -80,18 +80,18 @@ POST /users/{id|userPrincipalName}/extensions
 ## <a name="path-parameters"></a>Параметры пути
 |Параметр|Тип|Описание|
 |:-----|:-----|:-----|
-|id|string|A unique identifier for an object in the corresponding collection. Required.|
+|id|string|Уникальный идентификатор объекта в соответствующей коллекции. Обязательный.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       | Значение |
 |:---------------|:----------|
-| Авторизация | Bearer {token}. Required. |
+| Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
 
-Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md), with the following required name-value pairs, and any additional custom data. The data in the JSON payload can be primitive types, or arrays of primitive types.
+Предоставьте описание объекта [openTypeExtension](../resources/opentypeextension.md) в формате JSON с указанными ниже обязательными парами "имя-значение", а также дополнительными пользовательскими данными. Полезные данные JSON могут относиться к простому типу или представлять собой массив элементов простого типа.
 
 | Имя       | Значение |
 |:---------------|:----------|
@@ -121,7 +121,7 @@ Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md)
 
 ### <a name="request-1"></a>Запрос 1
 
-The first example creates a message and an extension in the same call. The request body includes the following:
+В первом примере сообщение и расширение создаются в одном запросе. Текст запроса включает следующие данные:
 
 - Свойства **subject**, **body** и **toRecipients**, характерные для нового сообщения.
 - Данные для расширения:
@@ -164,13 +164,13 @@ POST https://graph.microsoft.com/v1.0/me/messages
 
 ### <a name="response-1"></a>Отклик 1
 
-Here is the response for the first example. The response body includes properties of the new message, and the following for the new extension:
+Ниже представлен отклик для первого примера. Текст отклика включает свойства нового сообщения и следующие данные для нового расширения:
 
 - Свойство **id** с полным именем `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
 - Стандартное свойство **extensionName**, указанное в запросе.
 - Пользовательские данные из запроса, сохраненные в виде 3 настраиваемых свойств.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -245,7 +245,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 ### <a name="request-2"></a>Запрос 2
 
-The second example creates an extension in the specified message. The request body includes the following for the extension:
+Во втором примере показано создание расширения в указанном сообщении. Текст запроса включает следующие данные для расширения:
 
 - Тип `microsoft.graph.openTypeExtension`.
 - Имя расширения "Com.Contoso.Referral".
@@ -269,7 +269,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi
 
 ### <a name="response-2"></a>Отклик 2
 
-Here is the response for the second example. The response body includes the following for the new extension:
+Ниже представлен отклик для второго примера. Текст отклика включает следующие данные для нового расширения:
 
 - Свойство по умолчанию **extensionName**.
 - Свойство **id** с полным именем `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
@@ -301,7 +301,7 @@ Content-type: application/json
 
 ### <a name="request-3"></a>Запрос 3
 
-The third example creates an extension in the specified group event. The request body includes the following for the extension:
+В третьем примере показано создание расширения в указанном событии группы. Текст запроса включает следующие данные для расширения:
 
 - Тип `microsoft.graph.openTypeExtension`.
 - Имя расширения "Com.Contoso.Deal".
@@ -351,7 +351,7 @@ Content-type: application/json
 
 ### <a name="request-4"></a>Запрос 4
 
-The fourth example creates an extension in a new group post, using the same **reply** action call to an existing group post. The **reply** action creates a new post, and a new extension embedded in the post. The request body includes a **post** property, which in turn contains the **body** of the new post, and the following data for the new extension:
+В четвертом примере показано создание расширения в новой записи группы с помощью одного вызова действия **reply** для существующей записи группы. Действие **reply** создает запись и внедряет в нее новое расширение. Текст запроса включает свойство **post**, которое, в свою очередь, содержит свойство **body** новой записи и следующие данные для нового расширения:
 
 - Тип `microsoft.graph.openTypeExtension`.
 - Имя расширения "Com.Contoso.HR".
@@ -389,7 +389,7 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 
 ### <a name="response-4"></a>Отклик 4
 
-Here is the response from the fourth example. Successfully creating an extension in a new group post results in only the HTTP 202 response code.
+Ниже представлен отклик из четвертого примера. При успешном создании расширения в новой записи группы возвращается только код отклика HTTP 202.
 
 <!-- {
   "blockType": "response",
@@ -405,7 +405,7 @@ Content-Length: 0
 
 ### <a name="request-5"></a>Запрос 5
 
-The fifth example creates an extension in a new group post using the same POST operation to create a conversation. The POST operation creates a new conversation, thread and post, and a new extension embedded in the post. The request body includes the **Topic** and **Threads** properties, and a child **post** object for the new conversation. The **post** object in turn contains the **body** of the new post, and the following data for the extension:
+В пятом примере показано создание расширения в новой записи группы с помощью той же операции POST, которая создает беседу. Операция POST создает беседу, цепочку и запись, а также внедряет в эту запись новое расширение. Текст отклика включает свойства **Topic** и **Threads**, а также дочерний объект **post** для новой беседы. Объект **post**, в свою очередь, содержит свойство **body** новой записи и следующие данные расширения:
 
 - Тип `microsoft.graph.openTypeExtension`.
 - Имя расширения "Com.Contoso.HR".
@@ -450,11 +450,11 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 
 ### <a name="response-5"></a>Отклик 5
 
-Here is the response from the fifth example which contains the new conversation and a thread ID. This new thread contains an automatically created post, which in turn contains the new extension.
+Ниже представлен отклик из пятого примера, содержащий новую беседу и идентификатор цепочки. Эта новая цепочка содержит автоматически созданную запись, включающую новое расширение.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
-To get the new extension, first [get all the posts](../api/conversationthread-list-posts.md) in this thread, and initially there should be only one. Then apply the post ID and the extension name `Com.Contoso.Benefits` to [get the extension](../api/opentypeextension-get.md).
+Чтобы получить новое расширение, сначала [получите все записи](../api/conversationthread-list-posts.md) из цепочки. Изначально в ней должна быть только одна запись. Затем примените идентификатор записи и имя расширения `Com.Contoso.Benefits`, чтобы [получить расширение](../api/opentypeextension-get.md).
 
 <!-- {
   "blockType": "response",
