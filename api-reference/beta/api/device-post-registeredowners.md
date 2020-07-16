@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 43c6a8400148965c4505b2c029bf1f6609b9f196
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 423fd07e20b71a221d593f0cbe142d2f399bf30f
+ms.sourcegitcommit: 9c1abb1c87177da20e1f5bbf1fae8131ab7e4f16
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681111"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146696"
 ---
 # <a name="create-registeredowner"></a>Создание объекта registeredOwner
 
@@ -27,7 +27,7 @@ ms.locfileid: "44681111"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,12 +40,12 @@ POST /devices/{id}/registeredOwners/$ref
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -62,8 +62,7 @@ Content-type: application/json
 Content-length: 30
 
 {
-  "directoryObject": {
-  }
+  "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -77,7 +76,7 @@ Content-length: 30
 ---
 
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -85,15 +84,7 @@ Content-length: 30
   "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 51
-
-{
-  "directoryObject": {
-    "id": "id-value"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
