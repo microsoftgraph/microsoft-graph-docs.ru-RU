@@ -47,11 +47,11 @@ ms.locfileid: "44864212"
 
 | Имя свойства | Тип   | Описание                                                                 |
 |:--------------|:-------|:----------------------------------------------------------------------------|
-| total         | Int64  | Total allowed storage space, in bytes. Read-only.                           |
-| used          | Int64  | Total space used, in bytes. Read-only.                                      |
-| remaining     | Int64  | Total space remaining before reaching the quota limit, in bytes. Read-only. |
-| deleted       | Int64  | Total space consumed by files in the recycle bin, in bytes. Read-only.      |
-| состояние         | string | Enumeration value that indicates the state of the storage space. Read-only. |
+| total         | Int64  | Общий объем разрешенного дискового пространства в байтах. Только для чтения.                           |
+| used          | Int64  | Общий объем использованного дискового пространства в байтах. Только для чтения.                                      |
+| remaining     | Int64  | Общий объем дискового пространства, оставшегося до достижения максимальной квоты, в байтах. Только для чтения. |
+| deleted       | Int64  | Общий объем дискового пространства, занятого файлами в корзине, в байтах. Только для чтения.      |
+| состояние         | string | Значение перечисления, указывающее состояние дискового пространства. Только для чтения. |
 | storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Сведения о планах квот хранилища диска. Только в личном хранилище OneDrive.|
 
 ## <a name="state-enumeration"></a>Перечисление state
@@ -61,7 +61,7 @@ ms.locfileid: "44864212"
 | `normal`   | На диске еще много свободного дискового пространства.                                                                                                                               |
 | `nearing`  | Объем свободного дискового пространства менее 10 % общего объема дискового пространства.                                                                                                                      |
 | `critical` | Объем свободного дискового пространства менее 1 % общего объема дискового пространства.                                                                                                                       |
-| `exceeded` | The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased. |
+| `exceeded` | Объем использованного дискового пространства превышает максимально допустимый объем дискового пространства. Вам не удастся добавлять новые файлы или папки на диск, пока объем использованного дискового пространства не станет меньше общего объема дискового пространства или пока вы не приобретете дополнительное дисковое пространство. |
 
 <!-- {
   "type": "#page.annotation",

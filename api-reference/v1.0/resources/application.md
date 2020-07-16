@@ -90,7 +90,7 @@ ms.locfileid: "45080992"
 | Связь | Тип | Описание |
 |:---------------|:--------|:----------|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Только для чтения.|
-|extensionProperties|Коллекция [extensionProperty](extensionproperty.md)| Read-only. Nullable.|
+|extensionProperties|Коллекция [extensionProperty](extensionproperty.md)| Только для чтения. Допускается значение null.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, владеющие приложением. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Требуется версия 2013-11-08 или более поздняя. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

@@ -7,6 +7,7 @@ ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
 ms.openlocfilehash: be1abf31e87695a7ec0ca074ea741fcd602ae814
 ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45050906"
@@ -37,7 +38,7 @@ ms.locfileid: "45050906"
 ## <a name="properties"></a>Свойства 
 | Свойство | Тип   | Описание |
 |:-------- |:---- |:----------- |
-| assignedPlans | Коллекция [assignedPlan](assignedplan.md) | The collection of service plans associated with the tenant. Not nullable. |
+| assignedPlans | Коллекция [assignedPlan](assignedplan.md) | Коллекция планов обслуживания, сопоставленных с клиентом. Значение null не допускается. |
 | businessPhones | Коллекция строк | Номер телефона организации. **Примечание.** Несмотря на то что это коллекция строк, для этого свойства можно задать только один номер. |
 | city | String | Название города в адресе организации. |
 | country | Строка | Название страны или региона в адресе организации. |
@@ -48,7 +49,7 @@ ms.locfileid: "45050906"
 | id | String | Уникальный идентификатор клиента, представляющий организацию (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | Используется значение **true**, если в организации включена поддержка нескольких регионов. Используется значение **false**, если поддержка нескольких регионов в организации не включена. По умолчанию используется значение **null**. Только для чтения. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Коллекция String | Значение null не допускается. |
-| objectType | String | A string that identifies the object type. For tenants the value is always “Company”. |
+| objectType | String | Строка, которая определяет тип объекта. Для клиентов всегда задается значение Company. |
 | onPremisesLastSyncDateTime | DateTimeOffset | Время и дата последней синхронизации клиента с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 | onPremisesSyncEnabled | Логический | Используется значение **true**, если этот объект синхронизируется из локального каталога. Используется значение **false**, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Используется значение **null**, если этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). |
 | postalCode | String | Почтовый индекс в адресе организации. |
@@ -60,7 +61,7 @@ ms.locfileid: "45050906"
 | state | String | Название республики, области или края в адресе организации. |
 | street | String | Название улицы в адресе организации. |
 | technicalNotificationMails |Коллекция String | Значение null не допускается. |
-| verifiedDomains | Коллекция [коллекция verifieddomain](verifieddomain.md)|The collection of domains associated with this tenant. Not nullable. |
+| verifiedDomains | Коллекция [коллекция verifieddomain](verifieddomain.md)|Коллекция доменов, сопоставленных с этим клиентом. Значение null не допускается. |
 
 ## <a name="relationships"></a>Отношения
 

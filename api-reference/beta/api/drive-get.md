@@ -25,7 +25,7 @@ Drive — это контейнер верхнего уровня для фай
 
 ## <a name="permissions"></a>Разрешения
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -199,7 +199,7 @@ GET /drives/{driveId}
 
 | Имя параметра | Значение  | Описание                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | string | Required. The identifier for the drive requested. |
+| _driveId_      | string | Обязательный. Идентификатор запрошенного диска. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 

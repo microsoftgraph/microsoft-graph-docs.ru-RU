@@ -24,7 +24,7 @@ ms.locfileid: "44895827"
 
 ## <a name="permissions"></a>Разрешения
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 
 | Имя | Описание |
 |:---- |:----------- |
-| Авторизация  | Bearer {token}. Required. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | консистенцилевел | закончить. Этот заголовок и `$count` обязательные при использовании `$search` `$filter` с `$orderby` параметром Query. Он использует индекс, который может быть не последним в актуальном изменении объекта. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -256,7 +256,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -314,7 +314,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -357,7 +357,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

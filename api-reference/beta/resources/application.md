@@ -100,8 +100,8 @@ ms.locfileid: "45080879"
 |calls           |Коллекция [call](call.md)                  |Только для чтения. Может иметь значение null.|
 |connectorGroup|[connectorGroup](connectorgroup.md)| Параметр connectorGroup, используемый приложением с Azure AD Application Proxy. Допускается значение null.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Только для чтения.|
-|extensionProperties|Коллекция [extensionProperty](extensionproperty.md)| Read-only. Nullable.|
-|onlineMeetings  |Коллекция [onlineMeeting](onlinemeeting.md)|Read-only. Nullable.|
+|extensionProperties|Коллекция [extensionProperty](extensionproperty.md)| Только для чтения. Допускается значение null.|
+|onlineMeetings  |Коллекция [onlineMeeting](onlinemeeting.md)|Только для чтения. Допускается значение null.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, владеющие приложением. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Требуется версия 2013-11-08 или более поздняя. Только для чтения. Допускается значение null.|
 |tokenLifetimePolicies|Коллекция [tokenLifetimePolicy](tokenLifetimePolicy.md)|Типы ресурсов tokenLifetimePolicy, назначенные приложению.|
 

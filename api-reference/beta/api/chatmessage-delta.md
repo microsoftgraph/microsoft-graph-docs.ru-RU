@@ -37,7 +37,7 @@ ms.locfileid: "44845367"
 
 ## <a name="permissions"></a>Разрешения
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference.md).
 
 |Тип разрешения                        |Разрешения (в порядке повышения привилегий)  |
 |---------------------------------------|---------------------------------------------|
@@ -79,7 +79,7 @@ GET /teams/{id}/channels/{id}/messages/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок        | Значение                     |
 |---------------|---------------------------|
-| Авторизация | Bearer {token}. Required. |
+| Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Текст запроса
@@ -100,7 +100,7 @@ GET /teams/{id}/channels/{id}/messages/delta
 - Шаг 2. [Пример второго запроса](#second-request) и [ответ](#second-request-response).
 - Шаг 3. [Пример третьего запроса](#third-request) и [последний ответ](#third-request-response).
 
-For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
+В примерах показаны только некоторые свойства события. При фактическом вызове возвращается большинство свойств события.
 
 См. также, что можно сделать в [следующем цикле](#example-2-retrieving-additional-changes).
 
@@ -406,7 +406,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc
 
 #### <a name="response"></a>Отклик
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

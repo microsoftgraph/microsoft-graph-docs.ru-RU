@@ -23,7 +23,7 @@ ms.locfileid: "45142213"
 Получение свойств и связей объекта Account для Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
@@ -43,7 +43,7 @@ GET /financials/companies/{id}/accounts/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |------|-----|
-|Авторизация  |Bearer {token}. Required. |
+|Авторизация  |Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

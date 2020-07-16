@@ -35,7 +35,7 @@ ms.locfileid: "44862534"
 | В настоящее время доступно только в бета-версии. | Доступно в версиях 1.0 и бета-версиях. |
 
 ## <a name="permissions"></a>Разрешения
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -148,9 +148,9 @@ URL-адрес запроса, возвращенный в `nextLink` `deltaLink
 
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
-|startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00". <br>Часовой пояс указывается в части смещения TimeZone значения параметра и не влияет на `Prefer: outlook.timezone` заголовку, если он есть. Если в значении не указано смещение часового пояса, оно интерпретируется в формате UTC.<br>Необязательно для **изменений** событий в календаре. <br>Обязательный для **изменений** в **calendarView**. |
-|endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00". <br>Часовой пояс указывается в части смещения TimeZone значения параметра и не влияет на `Prefer: outlook.timezone` заголовку, если он есть. Если в значении не указано смещение часового пояса, оно интерпретируется в формате UTC.<br>_Не поддерживается_ в **Delta** для событий в календаре. <br>Обязательный для **изменений** в **calendarView**.|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.|
+|startDateTime|String|Дата и время начала диапазона, представленные в формате ISO 8601. Пример: "2019-11-08T19:00:00-08:00".<br>Часовой пояс указывается в части смещения TimeZone значения параметра и не влияет на `Prefer: outlook.timezone` заголовку, если он есть. Если в значении не указано смещение часового пояса, оно интерпретируется в формате UTC.<br>Необязательно для **изменений** событий в календаре. <br>Обязательный для **изменений** в **calendarView**. |
+|endDateTime|String|Дата и время окончания диапазона, представленные в формате ISO 8601. Пример: "2019-11-08T20:00:00-08:00".<br>Часовой пояс указывается в части смещения TimeZone значения параметра и не влияет на `Prefer: outlook.timezone` заголовку, если он есть. Если в значении не указано смещение часового пояса, оно интерпретируется в формате UTC.<br>_Не поддерживается_ в **Delta** для событий в календаре. <br>Обязательный для **изменений** в **calendarView**.|
+| $deltatoken | string | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` при предыдущем вызове функции **delta** для этого же представления календаря и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этого представления календаря.|
 | $skiptoken | string | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` при предыдущем вызове функции **delta** и указывает на то, что в представлении календаря остаются не отслеженные изменения. |
 
 Не поддерживает `$expand` , `$filter` ,, `$orderby` `$select` и `$search` .
@@ -159,9 +159,9 @@ URL-адрес запроса, возвращенный в `nextLink` `deltaLink
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | string  | application/json. Required. |
-| Prefer | string  | odata.maxpagesize={x}. Optional. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type  | string  | application/json. Обязательный. |
+| Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 | Prefer | string | Outlook. TimeZone = {строка часового пояса}. Необязательное, в формате UTC предполагается, что отсутствует.|
 
 ## <a name="response"></a>Отклик

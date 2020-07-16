@@ -22,7 +22,7 @@ ms.locfileid: "45142283"
 
 ## <a name="permissions"></a>Разрешения
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
@@ -42,8 +42,8 @@ POST /applications/{id}/tokenIssuancePolicies/$ref
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token}. Required. |
-| Content-Type | application/json. Required. |
+| Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -51,7 +51,7 @@ POST /applications/{id}/tokenIssuancePolicies/$ref
 
 ## <a name="response"></a>Отклик
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

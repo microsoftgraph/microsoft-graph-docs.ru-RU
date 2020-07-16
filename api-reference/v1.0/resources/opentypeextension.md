@@ -76,8 +76,8 @@ ms.locfileid: "44863812"
 
 |Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|extensionName|String|A unique text identifier for an open type open extension. Required.|
-|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
+|extensionName|String|Уникальный текстовый идентификатор для открытых расширений открытого типа. Обязательно свойство.|
+|id|String| Полный идентификатор, в котором сцеплены тип расширения и свойство **extensionName**. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 

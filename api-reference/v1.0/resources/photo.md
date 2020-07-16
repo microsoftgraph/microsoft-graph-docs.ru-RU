@@ -46,14 +46,14 @@ ms.locfileid: "44863735"
 
 | Свойство                | Тип           | Описание
 |:------------------------|:---------------|:----------------------------------
-| **takenDateTime**       | DateTimeOffset | Represents the date and time the photo was taken. Read-only.
-| **cameraMake**          | Строка         | Camera manufacturer. Read-only.
-| **cameraModel**         | String         | Camera model. Read-only.
-| **fNumber**             | Двойное с плавающей точкой         | The F-stop value from the camera. Read-only.
-| **exposureDenominator** | Двойное с плавающей точкой         | The denominator for the exposure time fraction from the camera. Read-only.
-| **exposureNumerator**   | Двойное с плавающей точкой         | The numerator for the exposure time fraction from the camera. Read-only.
-| **focalLength**         | Double         | The focal length from the camera. Read-only.
-| **iso**                 | Int32          | The ISO value from the camera. Read-only.
+| **takenDateTime**       | DateTimeOffset | Представляет дату и время съемки. Только для чтения.
+| **cameraMake**          | Строка         | Изготовитель камеры. Только для чтения.
+| **cameraModel**         | String         | Модель камеры. Только для чтения.
+| **fNumber**             | Двойное с плавающей точкой         | Значение диафрагмы камеры. Только для чтения.
+| **exposureDenominator** | Двойное с плавающей точкой         | Знаменатель дробного значения выдержки камеры. Только для чтения.
+| **exposureNumerator**   | Двойное с плавающей точкой         | Числитель дробного значения выдержки камеры. Только для чтения.
+| **focalLength**         | Double         | Фокусное расстояние камеры. Только для чтения.
+| **iso**                 | Int32          | Значение ISO камеры. Только для чтения.
 | **orientation**         | Int16          | Значение ориентации камеры. Возможность записи в OneDrive персональный.      |
 
 ## <a name="remarks"></a>Заметки

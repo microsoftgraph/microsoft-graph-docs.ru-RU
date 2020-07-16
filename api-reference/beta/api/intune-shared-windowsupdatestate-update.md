@@ -23,7 +23,7 @@ ms.locfileid: "45124025"
 Обновление свойств объекта [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -97,7 +97,7 @@ Content-length: 504
 ```
 
 ### <a name="response"></a>Отклик
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

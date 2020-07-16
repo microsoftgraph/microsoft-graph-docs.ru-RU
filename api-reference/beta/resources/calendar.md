@@ -36,7 +36,7 @@ ms.locfileid: "44897822"
 |[Обновление](../api/calendar-update.md) | [calendar](calendar.md)  |Обновление свойств объекта **calendar**. В качестве календаря может использоваться календарь пользователя или стандартный календарь группы Microsoft 365. |
 |[Удаление](../api/calendar-delete.md) | Нет |Удаление объекта calendar. |
 |[Список экземпляров calendarView](../api/calendar-list-calendarview.md) |Коллекция [event](event.md)| Получение в представлении календаря повторений, исключений и отдельных экземпляров событий за определенный диапазон времени, указанных в основном календаре пользователя `(../me/calendarview)` или в другом заданном календаре.|
-|[Список событий](../api/calendar-list-events.md) |Коллекция [event](event.md)| Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.|
+|[Список событий](../api/calendar-list-events.md) |Коллекция [event](event.md)| Получение списка событий в календаре. Этот список содержит собрания с одним экземпляром и образцы рядов.|
 |[Создание события](../api/calendar-post-events.md) |[event](event.md)| Создание события в стандартном или указанном календаре.|
 |[getSchedule](../api/calendar-getschedule.md) |Коллекция [scheduleInformation](scheduleinformation.md)|Получение сведений о доступности коллекции пользователей, списков рассылки или ресурсов для определенного периода времени. |
 |[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |Предложение времени проведения собрания и местоположения с учетом доступности организатора и участников, а также ограничений по местоположению или времени. |
@@ -50,14 +50,14 @@ ms.locfileid: "44897822"
 |:---------------|:--------|:----------|
 |allowedOnlineMeetingProviders|Коллекция строк| Представляет поставщиков служб собраний по сети, которых можно использовать для создания собраний в этом календаре. Возможные значения: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |calendarGroupId|Строка|Объект [calendarGroup](calendargroup.md) для создания календаря. Если пользователь не указал группу для календаря явным образом, это свойство будет иметь значение NULL.|
-|canEdit |Boolean |True if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding [calendarPermission](calendarpermission.md) resource. Read-only.|
+|canEdit |Boolean |Значение true, если пользователь может вносить изменения в календарь, в противном случае — значение false. Это свойство имеет значение true для пользователя, создавшего календарь. Это свойство также имеет значение true для пользователей, которые совместно используют календарь и имеют доступ на запись через клиент Outlook или соответствующий ресурс [calendarPermission](calendarpermission.md). Только для чтения.|
 |canShare |Boolean |Значение true, если у пользователя есть разрешение на совместное использование календаря, в противном случае — значение false. Только пользователь, создавший календарь, может предоставлять общий доступ к нему. Только для чтения.|
 |canViewPrivateItems |Boolean |Значение true, если пользователь может читать элементы календаря, которые были помечены как частные, в противном случае — значение false. Это свойство задается через клиент Outlook или соответствующий ресурс [calendarPermission](calendarpermission.md). Только для чтения.|
-|changeKey|String|Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
-|color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|changeKey|String|Указывает версию объекта calendar. При каждом изменении календаря также меняется значение changeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения.|
+|color|String|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|Стандартный поставщик для собраний по сети, отправленных из этого календаря. Возможные значения: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |hexColor|String|Цвет календаря, представленный кодом из трех шестнадцатеричных значений в диапазоне от 00 до FF, которые обозначают красный, зеленый и синий компоненты цвета в цветовом пространстве RGB. Если пользователь не задал цвет календаря явным образом, это свойство будет пустым. |
-|id|String|The calendar's unique identifier. Read-only.|
+|id|String|Уникальный идентификатор календаря. Только для чтения.|
 |isDefaultCalendar|Boolean|Значение True, если это стандартный календарь, где новые события создаются по умолчанию. В противном случае используется значение False.|
 |isRemovable|Boolean| Указывает, можно ли удалить этот календарь из почтового ящика пользователя.|
 |IsShared |Boolean |Значение true, если пользователь поделился календарем с другими пользователями. В противном случае используется значение false. Только пользователь, создавший календарь, может им поделиться, поэтому свойства **isShared** и **isSharedWithMe** не могут иметь значения true для одного пользователя. Это свойство задается в том случае, если общий доступ предоставляется в клиенте Outlook; его можно сбросить, когда общий доступ отменяется через клиент или соответствующий ресурс [calendarPermission](calendarpermission.md). Только для чтения.|
@@ -70,10 +70,10 @@ ms.locfileid: "44897822"
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |calendarPermissions|Коллекция [calendarPermission](calendarpermission.md)| Разрешения пользователей, которым предоставлен доступ к календарю.|
-|calendarView|Коллекция [event](event.md)|The calendar view for the calendar. Navigation property. Read-only.|
-|events|Коллекция [event](event.md)|The events in the calendar. Navigation property. Read-only.|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| The collection of single-value extended properties defined for the calendar. Read-only. Nullable.|
+|calendarView|Коллекция [event](event.md)|Представление календаря для календаря. Свойство навигации. Только для чтения.|
+|events|Коллекция [event](event.md)|События в календаре. Свойство навигации. Только для чтения.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для календаря. Только для чтения. Допускается значение null.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для календаря. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

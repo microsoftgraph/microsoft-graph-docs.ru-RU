@@ -21,7 +21,7 @@ ms.locfileid: "45006870"
 Назначьте [коннекторграуп](../resources/connectorgroup.md) [приложению](../resources/application.md).
 
 ## <a name="permissions"></a>Разрешения
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -39,7 +39,7 @@ PUT /applications/{id}/connectorGroup/$ref
 | Имя       | Описание|
 |:---------------|:----------|
 | Authorization  | Носителя. Обязательный параметр.|
-| Content-Type | application/json. Required.|
+| Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [коннекторграуп](../resources/connectorgroup.md) в формате JSON.

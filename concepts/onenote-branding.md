@@ -43,7 +43,7 @@ ms.locfileid: "44896037"
 
 ## <a name="clear-space"></a>Пустое пространство 
 
-Treat the logo with respect and give it room to breathe. A minimum clear space equivalent to the height of the symbol must surround the logo.
+Чтобы логотип выделялся на странице, необходимо оставить вокруг него определенную часть незаполненного пространства. Минимальный отступ сверху, снизу и по бокам логотипа должен соответствовать его высоте.
 
 ![Логотип, демонстрирующий очистку псаце с высотой символа](images/onenotelogoclearspace.png)
 

@@ -38,8 +38,7 @@ ms.locfileid: "44846074"
 
 ## <a name="remarks"></a>Заметки
 
-In some circumstances, the unique identifier for the actor may not be available.
-In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
+В некоторых случаях уникальный идентификатор субъекта может быть недоступен. В таком случае для удостоверения возвращается свойство **displayName**, но в ресурсе будет отсутствовать свойство **id**.
 
 ## <a name="relationships"></a>Отношения
 

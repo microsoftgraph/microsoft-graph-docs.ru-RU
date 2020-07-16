@@ -7,7 +7,7 @@ ms.prod: groups
 doc_type: resourcePageType
 ms.openlocfilehash: e7cbe462ec01665e97658ba0bef0767c87a10f80
 ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44895512"
@@ -18,8 +18,7 @@ ms.locfileid: "44895512"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, a team in Microsoft Teams, or a security group.
-Inherits from [directoryObject](directoryobject.md).
+Представляет группу Azure Active Directory (Azure AD), которая может быть группой Microsoft 365, группой в Microsoft Teams или группой безопасности. Наследуется от [directoryObject](directoryobject.md).
 
 Чтобы повысить производительность, операции [create](../api/group-post-groups.md), [get](../api/group-get.md) и [list](../api/group-list.md) возвращают только подмножество часто используемых свойств по умолчанию. Эти свойства _по умолчанию_ указаны в разделе [Свойства](#properties). Чтобы получить любые свойства, которые не возвращаются по умолчанию, укажите их в параметре запроса OData `$select`.
 
@@ -49,14 +48,14 @@ Inherits from [directoryObject](directoryobject.md).
 | [Перечисление участников](../api/group-list-members.md)                                | Коллекция [directoryObject](directoryobject.md)                      | Получение пользователей и групп, являющихся непосредственными участниками этой группы, из свойства навигации **members**.                                                                                                              |
 | [Перечисление транзитивных участников](../api/group-list-transitivemembers.md)           | Коллекция [directoryObject](directoryobject.md)                      | Получение пользователей, групп, устройств и субъектов-служб, являющихся участниками, включая вложенных участников этой группы                                                                                                      |
 | [Добавление участника](../api/group-post-members.md)                                  | [directoryObject](directoryobject.md)                                 | Добавление пользователя или группы в данную группу путем помещения в свойство навигации **members** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты).                                                            |
-| [Удаление участника](../api/group-delete-members.md)                             | Нет                                                                  | Remove a member from a Microsoft 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups.                                        |
+| [Удаление участника](../api/group-delete-members.md)                             | Нет                                                                  | Удаление члена из группы Microsoft 365, группы безопасности или группы безопасности с включенной поддержкой почты с помощью свойства навигации **Members** . Вы можете удалить пользователей или другие группы.                                        |
 | [Список memberOf](../api/group-list-memberof.md)                              | Коллекция [directoryObject](directoryobject.md)                      | Получение групп и административных единиц, непосредственным участником которых является группа, из свойства навигации memberOf.                                                                                                  |
 | [Перечисление транзитивных свойств memberOf](../api/group-list-transitivememberof.md)         | Коллекция [directoryObject](directoryobject.md)                      | Список групп и административных единиц, участником которых является данная группа. Эта операция является транзитивной и включает группы, в которых эта группа является вложенным элементом.                                                  |
-| [checkMemberGroups](../api/group-checkmembergroups.md)                      | Коллекция String                                                     | Check for membership in a list of groups. The function is transitive.                                                                                                                                                 |
+| [checkMemberGroups](../api/group-checkmembergroups.md)                      | Коллекция String                                                     | Проверка участия в списке групп. Это транзитивная функция.                                                                                                                                                 |
 | [checkMemberObjects](../api/group-checkmemberobjects.md)                    | Коллекция String                                                     | Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная функция.                                                                                                  |
-| [getMemberGroups](../api/group-getmembergroups.md)                          | Коллекция String                                                     | Return all the groups that the group is a member of. The function is transitive.                                                                                                                                      |
-| [getMemberObjects](../api/group-getmemberobjects.md)                        | Коллекция String                                                     | Return all of the groups and administrative units that the group is a member of. The function is transitive.                                                                                                          |
-| [Создание параметра](../api/directorysetting-post-settings.md)                  | [directorySetting](directorysetting.md)                               | Create a setting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
+| [getMemberGroups](../api/group-getmembergroups.md)                          | Коллекция String                                                     | Возврат всех групп, в которых состоит эта группа. Это транзитивная функция.                                                                                                                                      |
+| [getMemberObjects](../api/group-getmemberobjects.md)                        | Коллекция String                                                     | Возвращение всех групп и административных единиц, в которых состоит группа. Это транзитивная функция.                                                                                                          |
+| [Создание параметра](../api/directorysetting-post-settings.md)                  | [directorySetting](directorysetting.md)                               | Создание объекта setting на основе directorySettingTemplate. POST-запрос должен предоставлять объекты settingValue для всех параметров, определенных в шаблоне. Для этой операции могут использоваться только специальные шаблоны для групп. |
 | [Получение параметра](../api/directorysetting-get.md)                               | [directorySetting](directorysetting.md)                               | Считывание свойств определенного объекта setting.                                                                                                                                                                         |
 | [Перечисление параметров](../api/directorysetting-list.md)                            | Коллекция [directorySetting](directorysetting.md)                    | Перечисление свойств всех объектов setting.                                                                                                                                                                               |
 | [Обновление параметра](../api/directorysetting-update.md)                         | [directorySetting](directorysetting.md)                               | Обновление объекта setting.                                                                                                                                                                                              |
@@ -118,7 +117,7 @@ Inherits from [directoryObject](directoryobject.md).
 |assignedLabels|Коллекция [assignedLabel](assignedlabel.md)|Список пар меток конфиденциальности (идентификатор метки, имя метки), связанных с группой Microsoft 365. <br><br>Возвращается только с помощью оператора $select.|
 |assignedLicenses|Коллекция [assignedLicense](assignedlicense.md)|Лицензии, назначенные группе. <br><br>Возвращается только с помощью оператора $select. Только для чтения.|
 |autoSubscribeNewMembers|Логический|Указывает, будут ли новые участники группы автоматически подписаны на получение уведомлений по электронной почте. Это свойство можно задать в запросе PATCH для группы. Не задавайте его в первоначальном запросе POST, создающем группу. Значение по умолчанию: **false**. <br><br>Возвращается только с помощью оператора $select.|
-|classification|String|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorysetting.md) value, based on the [template definition](directorysettingtemplate.md).<br><br>Возвращается по умолчанию.|
+|classification|String|Описывает классификацию для группы (например, незначительное, среднее или значительное влияние на бизнес). Допустимые значения для этого свойства определяются созданием значения [setting](directorysetting.md) ClassificationList на базе [определения шаблона](directorysettingtemplate.md).<br><br>Возвращается по умолчанию.|
 |createdByAppId|String|Идентификатор приложения, использованного для создания группы. Для некоторых групп может иметь значение NULL. <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает параметр $filter.|
 |createdDateTime|DateTimeOffset| Метка времени создания группы. Значение не может изменяться и заполняется автоматически, когда создается группа. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается по умолчанию. Только для чтения. |
 |deletedDateTime|DateTimeOffset| При удалении некоторых объектов Azure Active Directory (пользователя, группы, приложения) сначала имеет место логическое удаление, а это свойство обновляется в соответствии с датой и временем удаления объекта. В противном случае это свойство имеет значение null. При восстановлении объекта это свойство обновляется до null. |
@@ -172,16 +171,16 @@ Inherits from [directoryObject](directoryobject.md).
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|acceptedSenders|Коллекция [directoryObject](directoryobject.md)|The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.|
-|calendar|[calendar](calendar.md)|The group's calendar. Read-only.|
-|calendarView|Коллекция [event](event.md)|The calendar view for the calendar. Read-only.|
+|acceptedSenders|Коллекция [directoryObject](directoryobject.md)|Список пользователей или групп, которым разрешено создавать записи или события календаря в этой группе. Если этот список не пуст, то добавлять записи разрешено только перечисленным в нем пользователям и группам.|
+|calendar|[calendar](calendar.md)|Календарь группы. Только для чтения.|
+|calendarView|Коллекция [event](event.md)|Представление календаря. Только для чтения.|
 |conversations|Коллекция [conversation](conversation.md)|Беседы группы.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Пользователь (или приложение) – создатель группы. **Примечание.** Этот параметр не задается, если пользователь является администратором. Только для чтения.|
 |drive|[drive](drive.md)|Используемый по умолчанию диск группы. Только для чтения.|
 |drives|Коллекция [drive](drive.md)|Диск группы. Только для чтения.|
 |endpoints|Коллекция [Endpoint](endpoint.md)| Конечные точки для группы. Только для чтения. Может иметь значение null.|
 |events|Коллекция [event](event.md)|События группы.|
-|extensions|Коллекция [extension](extension.md)|The collection of open extensions defined for the group. Read-only. Nullable.|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для группы. Только для чтения. Допускается значение null.|
 |groupLifecyclePolicies|Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md)|Коллекция политик жизненного цикла для этой группы. Только для чтения. Может иметь значение null.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы и административные единицы, в которых состоит группа. Методы HTTP: GET (поддерживается для всех групп). Только для чтения. Может иметь значение null.|
 |members|Коллекция [directoryObject](directoryobject.md)| Пользователи, контакты и группы, состоящие в этой группе. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается только для групп безопасности). Только для чтения. Допускается значение null.|
@@ -189,12 +188,12 @@ Inherits from [directoryObject](directoryobject.md).
 |onenote|[onenote](onenote.md)| Только для чтения.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается только для групп безопасности). Только для чтения. Допускается значение null.|
 |photo|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
-|photos|Коллекция объектов [profilePhoto](profilephoto.md)| The profile photos owned by the group. Read-only. Nullable.|
+|photos|Коллекция объектов [profilePhoto](profilephoto.md)| Фотографии профиля, принадлежащие группе. Только для чтения. Допускается значение null.|
 |planner|[plannerGroup](plannergroup.md)| Выборочные службы Планировщика, доступные для группы. Только для чтения. Может иметь значение null. |
-|rejectedSenders|Коллекция [directoryObject](directoryobject.md)|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
+|rejectedSenders|Коллекция [directoryObject](directoryobject.md)|Список пользователей или групп, которым запрещено создавать записи или события календаря в этой группе. Допускается значение null.|
 |settings|Коллекция [directorySetting](directorysetting.md)| Параметры, управляющие поведением группы, например, могут ли участники приглашать гостевых пользователей в группу. Допускается значение null.|
-|sites|Коллекция объектов [site](site.md)|The list of SharePoint sites in this group. Access the default site with /sites/root.|
-|threads|Коллекция [conversationThread](conversationthread.md)| The group's conversation threads. Nullable.|
+|sites|Коллекция объектов [site](site.md)|Список сайтов SharePoint в этой группе. Для доступа к сайту по умолчанию используйте путь /sites/root.|
+|threads|Коллекция [conversationThread](conversationthread.md)| Цепочки бесед группы. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

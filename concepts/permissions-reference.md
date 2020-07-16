@@ -21,14 +21,14 @@ ms.locfileid: "45038557"
 
 ## <a name="microsoft-graph-permission-names"></a>Имена разрешений Microsoft Graph
 
-Microsoft Graph permission names follow a simple pattern: _resource.operation.constraint_. For example, _User.Read_ grants permission to read the profile of the signed-in user, _User.ReadWrite_ grants permission to read and modify the profile of the signed-in user, and _Mail.Send_ grants permission to send mail on behalf of the signed-in user.
+Имена разрешений Microsoft Graph соответствуют простому шаблону: _ресурс.операция.ограничение_. Например, разрешение _User.Read_ позволяет просматривать профиль вошедшего пользователя, разрешение _User.ReadWrite_ — просматривать и редактировать профиль вошедшего пользователя, а разрешение _Mail.Send_ — отправлять почту от его имени.
 
-The _constraint_ element of the name determines the potential extent of access your app will have within the directory. Currently Microsoft Graph supports the following constraints:
+Указанное в имени _ограничение_ определяет потенциальный уровень доступа приложения в рамках каталога. В настоящее время Microsoft Graph поддерживает следующие ограничения:
 
-* **All** grants permission for the app to perform the operations on all of the resources of the specified type in a directory. For example, _User.Read.All_ potentially grants the app privileges to read the profiles of all of the users in a directory.
-* **Shared** grants permission for the app to perform the operations on resources that other users have shared with the signed-in user. This constraint is mainly used with Outlook resources like mail, calendars, and contacts. For example, _Mail.Read.Shared_, grants privileges to read mail in the mailbox of the signed-in user as well as mail in mailboxes that other users in the organization have shared with the signed-in user.
-* **AppFolder** grants permission for the app to read and write files in a dedicated folder in OneDrive. This constraint is only exposed on [Files permissions](#files-permissions) and is only valid for Microsoft accounts.
-* If **no constraint** is specified the app is limited to performing the operations on the resources owned by the signed-in user. For example, _User.Read_ grants privileges to read the profile of the signed-in user only, and _Mail.Read_ grants permission to read only mail in the mailbox of the signed-in user.
+* **All**, которое позволяет приложению выполнять операции со всеми ресурсами указанного типа в каталоге. Например, разрешение _User.Read.All_ может предоставить приложению права на просмотр профилей всех пользователей в каталоге.
+* **Shared**, которое позволяет приложению выполнять операции с ресурсами, доступ к которым предоставлен вошедшему пользователю другими пользователями. Это ограничение в основном используется с такими ресурсами Outlook, как почта, календари и контакты. Например, разрешение _Mail.Read.Shared_ позволяет просматривать сообщения в почтовом ящике вошедшего пользователя, а также в почтовых ящиках, доступ к которым предоставлен вошедшему пользователю другими пользователями в организации.
+* **AppFolder**, которое предоставляет приложению права на чтение и запись файлов в выделенной папке в OneDrive. Это ограничение доступно только в [разрешениях для файлов](#files-permissions) и действительно только для учетных записей Майкрософт.
+* Если **ограничение не указано**, приложение сможет выполнять операции только с ресурсами, принадлежащими вошедшему пользователю. Например, разрешение _User.Read_ позволяет просматривать только профиль вошедшего пользователя, а _Mail.Read_ — только сообщения в почтовом ящике вошедшего пользователя.
 
 > **Примечание.** При делегировании действующие разрешения, предоставленные приложению, могут быть ограничены привилегиями вошедшего пользователя в организации.
 
@@ -293,7 +293,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 | _Calendars.Read_ |Чтение пользовательских календарей |Позволяет приложению считывать события в пользовательских календарях. |Нет | Да |
 | _Calendars.Read.Shared_ |Чтение пользовательских и общих календарей |Позволяет приложению считывать события во всех календарях, доступных пользователю, в том числе делегированных и общих. |Нет | Нет |
 | _Calendars.ReadWrite_ |Полный доступ к пользовательским календарям |Позволяет приложению создавать, считывать, обновлять и удалять события в пользовательских календарях. |Нет | Да |
-| _Calendars.ReadWrite.Shared_ |Чтение и запись пользовательских и общих календарей |Allows the app to create, read, update and delete events in all calendars the user has permissions to access. This includes delegate and shared calendars.|Нет | Нет |
+| _Calendars.ReadWrite.Shared_ |Чтение и запись пользовательских и общих календарей |Позволяет приложению создавать, читать, обновлять и удалять события во всех календарях, доступных пользователю, в том числе делегированных и общих календарях.|Нет | Нет |
 
 <br/>
 
@@ -592,7 +592,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 |Разрешение    |Отображаемая строка   |Описание |Необходимость в согласии администратора |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_Device.ReadWrite.All_ |Чтение и запись устройств |Allows the app to read and write all device properties without a signed in user. Does not allow device creation, device deletion, or update of device alternative security identifiers. |Да |
+|_Device.ReadWrite.All_ |Чтение и запись устройств |Позволяет приложению считывать и записывать все свойства устройств, когда вход пользователя не выполнен. Не позволяет создавать, удалять и обновлять альтернативные идентификаторы безопасности устройств. |Да |
 
 ### <a name="example-usage"></a>Примеры использования
 
@@ -611,7 +611,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 |   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Directory.Read.All_ |Чтение данных каталога | Позволяет приложению читать данные в каталоге вашей организации, такие как сведения о пользователях, группах и приложениях. **Примечание.** Пользователи могут предоставлять это разрешение, если приложение зарегистрировано в клиенте организации.| Да | Нет |
-| _Directory.ReadWrite.All_ |Чтение и запись данных каталога | Allows the app to read and write data in your organization's directory, such as users, and groups. It does not allow the app to delete users or groups, or reset user passwords. | Да | Нет |
+| _Directory.ReadWrite.All_ |Чтение и запись данных каталога | Позволяет приложению считывать и записывать данные в каталоге вашей организации, такие как пользователи и группы. Не позволяет приложению удалять пользователей и группы или сбрасывать пароли пользователей. | Да | Нет |
 | _Directory.AccessAsUser.All_ |Доступ к каталогу, аналогичный доступу вошедшего пользователя  | Предоставляет приложению такой же доступ к информации в каталоге, как у вошедшего пользователя. | Да | Нет |
 | _PrivilegedAccess.ReadWrite.AzureAD_ |Чтение и запись данных управления привилегированными пользователями для каталога  | Позволяет приложению считывать и записывать право доступа к API управления привилегированными пользователями для Azure AD. | Да | Нет |
 | _PrivilegedAccess.ReadWrite.AzureResources_ |Чтение и запись данных управления привилегированными пользователями для ресурсов Azure | Позволяет приложению считывать и записывать право доступа к API управления привилегированными пользователями для ресурсов Azure. | Да | Нет |
@@ -623,7 +623,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 |   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Directory.Read.All_ | Чтение данных каталога | Позволяет приложению считывать данные в каталоге вашей организации, такие как группы, пользователи и приложения, в случаях, когда вход пользователя не предусмотрен. | Да |
-| _Directory.ReadWrite.All_ | Чтение и запись данных каталога | Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user. Does not allow user or group deletion. | Да |
+| _Directory.ReadWrite.All_ | Чтение и запись данных каталога | Позволяет приложению читать и записывать данные в каталоге вашей организации, например пользователей и группы, без вошедшего пользователя. Не позволяет удалять пользователей или группы. | Да |
 
 ### <a name="remarks"></a>Примечания
 
@@ -737,8 +737,8 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 | _Files.ReadWrite_  | Полный доступ к файлам пользователя | Позволяет приложению считывать, создавать, обновлять и удалять файлы вошедшего пользователя. | Нет| Да |
 | _Files.ReadWrite.All_ | Полный доступ ко всем файлам, доступным пользователю | Позволяет приложению считывать, создавать, обновлять и удалять все файлы, доступные вошедшему пользователю. | Нет | Да |
 | _Files.ReadWrite.AppFolder_ | Полный доступ к папке приложения (предварительная версия) | Позволяет приложению считывать, создавать, обновлять и удалять файлы в папке приложения (предварительная версия). | Нет | Нет |
-| _Files.Read.Selected_  | Чтение файлов, выбранных пользователем | **Ограниченная поддержка в Microsoft Graph (см. замечания)** <br/> (Preview) Allows the app to read files that the user selects. The app has access for several hours after the user selects a file.  | Нет | Нет |
-| _Files.ReadWrite.Selected_ | Чтение и запись файлов, выбранных пользователем | **Ограниченная поддержка в Microsoft Graph (см. замечания)** <br/> (Preview) Allows the app to read and write files that the user selects. The app has access for several hours after the user selects a file. | Нет | Нет |
+| _Files.Read.Selected_  | Чтение файлов, выбранных пользователем | **Ограниченная поддержка в Microsoft Graph (см. замечания)** <br/> Позволяет приложению считывать файлы, которые выбирает пользователь (предварительная версия). После того как пользователь выберет файл, приложение имеет доступ в течение нескольких часов.  | Нет | Нет |
+| _Files.ReadWrite.Selected_ | Чтение и запись файлов, выбранных пользователем | **Ограниченная поддержка в Microsoft Graph (см. замечания)** <br/> Позволяет приложению считывать и записывать файлы, которые выбирает пользователь (предварительная версия). После того как пользователь выберет файл, приложение имеет доступ в течение нескольких часов. | Нет | Нет |
 
 #### <a name="application-permissions"></a>Разрешения приложений
 
@@ -751,8 +751,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 > **Примечание**. В личных учетных записях разрешения Files.Read и Files.ReadWrite также предоставляют доступ к файлам, которыми поделились с вошедшим пользователем другие люди.
 
-The Files.Read.Selected and Files.ReadWrite.Selected delegated permissions are only valid on work or school accounts and are only exposed for working with [Office 365 file handlers (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps).
-They should not be used for directly calling Microsoft Graph APIs.
+Делегированные разрешения Files.Read.Selected и Files.ReadWrite.Selected действительны только в рабочих и учебных учетных записях и доступны для работы только с [обработчиками файлов Office 365 (версия 1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps). Они не должны использоваться для непосредственного вызова API Microsoft Graph.
 
 Делегированное разрешение Files.ReadWrite.AppFolder действует только в личных учетных записях и используется для доступа к [специальной папке App Root](https://dev.onedrive.com/misc/appfolder.htm) с помощью API Microsoft Graph для OneDrive ([получение специальной папки](/graph/api/drive-get-specialfolder?view=graph-rest-1.0)).
 
@@ -783,7 +782,7 @@ They should not be used for directly calling Microsoft Graph APIs.
 
 |   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Group.Read.All_ |    Чтение всех групп | Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. | Да | Нет |
+| _Group.Read.All_ |    Чтение всех групп | Приложение сможет выводить список групп, а также просматривать их свойства и все данные о членстве в группах от имени вошедшего пользователя.  Оно также сможет просматривать календарь, беседы, файлы и другое содержимое всех групп, к которым у вошедшего пользователя есть доступ. | Да | Нет |
 | _Group.ReadWrite.All_ |    Чтение и запись всех групп| Приложение сможет создавать группы, а также просматривать все их свойства и данные о членстве от имени вошедшего пользователя.  Оно также сможет просматривать и создавать календарь, беседы, файлы и другое содержимое всех групп, к которым у вошедшего пользователя есть доступ. Кроме того, владельцы групп смогут управлять своими группами, а участники групп — обновлять содержимое групп. | Да | Нет |
 | _GroupMember.Read.All_ |    Чтение сведений об участии в группе | Позволяет приложению перечислять группы, читать основные свойства групп и читать сведения об участии во всех группах, к которым у вошедшего пользователя есть доступ. | Да | Нет |
 | _GroupMember.ReadWrite.All_ |    Чтение и запись сведений об участии в группах | Позволяет приложению перечислять группы, читать основные свойства, читать и обновлять сведения об участии в группах, к которым у вошедшего пользователя есть доступ. Свойства и владельцев групп нельзя изменить, а группы нельзя удалить. | Да | Нет |
@@ -805,15 +804,15 @@ They should not be used for directly calling Microsoft Graph APIs.
 
 Для групп Microsoft 365 разрешения групп предоставляют приложению доступ к содержимому группы; Например, беседы, файлы, заметки и т. д.
 
-For application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](known-issues.md).
+Для разрешений приложения действуют некоторые ограничения на поддерживаемые API. Дополнительные сведения см. в статье, посвященной [известным проблемам](known-issues.md).
 
-In some cases, an app may need [Directory permissions](#directory-permissions) to read some group properties like `member` and `memberOf`. For example, if a group has a one or more [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) as members, the app will need effective permissions to read service principals through being granted one of the _Directory.\*_ permissions, otherwise Microsoft Graph will return an error. (In the case of delegated permissions, the signed-in user will also need sufficient privileges in the organization to read service principals.) The same guidance applies for the `memberOf` property, which can return [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
+В некоторых случаях, чтобы приложение могло считывать некоторые свойства группы, такие как `member` и `memberOf`, требуются [разрешения для каталогов](#directory-permissions). Например, если среди членов группы есть один или несколько объектов [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta), то приложению потребуются действующие разрешения на чтение субъектов-служб, предоставленные с помощью разрешений _Directory.\*_. В противном случае Microsoft Graph возвращает ошибку. (В случае делегированных разрешений вошедшему пользователю также необходимы права на чтение субъектов-служб в организации.) Это относится и к свойству `memberOf`, которое может возвращать объекты [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
 Чтобы задать атрибут **преферреддаталокатион** для группы Microsoft 365, приложению необходимо разрешение Directory. ReadWrite. ALL. Когда пользователи в среде с поддержкой нескольких регионов создают группу Microsoft 365, значение **преферреддаталокатион** для группы автоматически становится равным значению этого пользователя. Дополнительные сведения о предпочтительном расположении данных для групп приведены в [статье Создание группы Microsoft 365 с определенным параметром PDL](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl).
 
-Group permissions are used to control access to [Microsoft Teams](/graph/api/resources/teams-api-overview) resources and APIs. Personal Microsoft accounts are not supported.
+Разрешения группы позволяют управлять доступом к API и ресурсам [Microsoft Teams](/graph/api/resources/teams-api-overview). Личные учетные записи Майкрософт не поддерживаются.
 
-Group permissions are also used to control access to [Microsoft Planner](/graph/api/resources/planner-overview) resources and APIs. Only delegated permissions are supported for Microsoft Planner APIs; application permissions are not supported. Personal Microsoft accounts are not supported.
+Разрешения группы также позволяют управлять доступом к API и ресурсам [Планировщика (Майкрософт)](/graph/api/resources/planner-overview). Для API Планировщика (Майкрософт) поддерживаются только делегированные разрешения. Разрешения приложения не поддерживаются. Личные учетные записи Майкрософт не поддерживаются.
 
 
 ### <a name="example-usage"></a>Примеры использования
@@ -881,7 +880,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 
 ### <a name="remarks"></a>Заметки
 
-_IdentityRiskEvent.Read.All_ is valid only for work or school accounts. For an app with delegated permissions to read identity risk information, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, or Security Reader. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+Разрешение _IdentityRiskEvent.Read.All_ действительно только для рабочих и учебных учетных записей. Чтобы приложение с делегированными разрешениями могло считывать сведения о риске несанкционированного доступа к удостоверениям, вошедший пользователь должен быть членом одной из следующих ролей администратора: "Глобальный администратор", "Администратор безопасности" или "Читатель безопасности". Дополнительные сведения о ролях администратора см. в статье [Назначение ролей администратора в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
 ### <a name="example-usage"></a>Примеры использования
 
@@ -945,7 +944,7 @@ _IdentityRiskEvent.Read.All_ is valid only for work or school accounts. For an a
 |_DeviceManagementConfiguration.ReadWrite.All_ | Считывание и запись сведений о конфигурации и политиках для устройств Microsoft Intune  | Позволяет приложению считывать и записывать свойства конфигурации и политики соответствия требованиям для устройств, управление которыми выполняется с помощью Microsoft Intune, а также сведения об их назначении группам. | Да | Нет |
 |_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Выполнение удаленных действий, влияющих на пользователей, на устройствах Microsoft Intune | Позволяет приложению выполнять удаленные критичные действия, например очистку устройства или сброс секретного кода на устройствах под управлением Microsoft Intune. | Да | Нет |
 |_DeviceManagementManagedDevices.Read.All_ | Считывание данных устройств Microsoft Intune | Позволяет приложению считывать свойства устройств, управление которыми выполняется с помощью Microsoft Intune. | Да | Нет |
-|_DeviceManagementManagedDevices.ReadWrite.All_ | Считывание и запись данных устройств Microsoft Intune | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner. | Да | Нет |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | Считывание и запись данных устройств Microsoft Intune | Позволяет приложению читать и записывать свойства устройств под управлением Microsoft Intune. Не позволяет выполнять критичные операции, например удаленную очистку и сброс пароля владельца устройства. | Да | Нет |
 |_DeviceManagementRBAC.Read.All_ | Считывание параметров RBAC для Microsoft Intune | Позволяет приложению считывать свойства, связанные с параметрами управления доступом на основе ролей (RBAC) в Microsoft Intune. | Да | Нет |
 |_DeviceManagementRBAC.ReadWrite.All_ | Считывание и запись параметров RBAC для Microsoft Intune | Позволяет приложению считывать и записывать свойства, связанные с параметрами управления доступом на основе ролей (RBAC) в Microsoft Intune. | Да | Нет |
 |_DeviceManagementServiceConfig.Read.All_ | Считывание конфигурации Microsoft Intune | Позволяет приложению считывать свойства службы Intune, в том числе сведения о регистрации устройств и конфигурации подключения к сторонним службам. | Да | Нет |
@@ -961,7 +960,7 @@ _IdentityRiskEvent.Read.All_ is valid only for work or school accounts. For an a
 |_DeviceManagementConfiguration.ReadWrite.All_ | Считывание и запись сведений о конфигурации и политиках для устройств Microsoft Intune  | Позволяет приложению считывать и записывать свойства конфигурации и политики соответствия требованиям для устройств, управление которыми выполняется с помощью Microsoft Intune, а также сведения об их назначении группам. | Да | Нет |
 |_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Выполнение удаленных действий, влияющих на пользователей, на устройствах Microsoft Intune | Позволяет приложению выполнять удаленные критичные действия, например очистку устройства или сброс секретного кода на устройствах под управлением Microsoft Intune. | Да | Нет |
 |_DeviceManagementManagedDevices.Read.All_ | Считывание данных устройств Microsoft Intune | Позволяет приложению считывать свойства устройств, управление которыми выполняется с помощью Microsoft Intune. | Да | Нет |
-|_DeviceManagementManagedDevices.ReadWrite.All_ | Считывание и запись данных устройств Microsoft Intune | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner. | Да | Нет |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | Считывание и запись данных устройств Microsoft Intune | Позволяет приложению читать и записывать свойства устройств под управлением Microsoft Intune. Не позволяет выполнять критичные операции, например удаленную очистку и сброс пароля владельца устройства. | Да | Нет |
 |_DeviceManagementRBAC.Read.All_ | Считывание параметров RBAC для Microsoft Intune | Позволяет приложению считывать свойства, связанные с параметрами управления доступом на основе ролей (RBAC) в Microsoft Intune. | Да | Нет |
 |_DeviceManagementRBAC.ReadWrite.All_ | Считывание и запись параметров RBAC для Microsoft Intune | Позволяет приложению считывать и записывать свойства, связанные с параметрами управления доступом на основе ролей (RBAC) в Microsoft Intune. | Да | Нет |
 |_DeviceManagementServiceConfig.Read.All_ | Считывание конфигурации Microsoft Intune | Позволяет приложению считывать свойства службы Intune, в том числе сведения о регистрации устройств и конфигурации подключения к сторонним службам. | Да | Нет |
@@ -1015,12 +1014,12 @@ _IdentityRiskEvent.Read.All_ is valid only for work or school accounts. For an a
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    Чтение почты пользователя | Позволяет приложению считывать электронную почту в почтовых ящиках пользователя. | Нет | Да
 | _Mail.ReadBasic_ |    Чтение основных свойств почты пользователя | Позволяет приложению читать сообщение электронной почти в почтовом ящике вошедшего пользователя, за исключением **текста сообщения**, **bodyPreview**, **uniqueBody**, **вложений**, **расширений** и любых расширенных свойств. Не содержит разрешений на поиск сообщений. | Нет | Нет
-| _Mail.ReadWrite_ |    Доступ для чтения и записи к почте пользователя | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.| Нет | Да
+| _Mail.ReadWrite_ |    Доступ для чтения и записи к почте пользователя | Приложение сможет создавать, просматривать, обновлять и удалять сообщения в почтовых ящиках пользователей. Не включает разрешение на отправку почты.| Нет | Да
 | _Mail.Read.Shared_ |    Чтение почты пользователя и общей почты | Позволяет приложению считывать почту, доступную пользователю, в том числе собственную почту пользователя и общую почту. | Нет | Нет
-| _Mail.ReadWrite.Shared_ |    Чтение и запись почты пользователя и общей почты | Allows the app to create, read, update, and delete mail that the user has permission to access, including the user's own and shared mail. Does not include permission to send mail. | Нет | Нет
+| _Mail.ReadWrite.Shared_ |    Чтение и запись почты пользователя и общей почты | Позволяет приложению создавать, читать, обновлять и удалять почту, доступную пользователю, в том числе собственную почту пользователя и общую почту. Сюда не входит разрешение на отправку почты. | Нет | Нет
 | _Mail.Send_ |    Отправка почты от имени пользователя | Позволяет приложению отправлять почту от имени пользователей в организации. | Нет | Да
 | _Mail.Send.Shared_ |    Отправка почты от имени других | Позволяет приложению отправлять почту от имени вошедшего пользователя, в том числе от имени других лиц. | Нет | Нет
-| _MailboxSettings.Read_ |  Чтение параметров почтового ящика пользователя | Allows the app to the read user's mailbox settings. Does not include permission to send mail. | Нет | Да
+| _MailboxSettings.Read_ |  Чтение параметров почтового ящика пользователя | Позволяет приложению считывать параметры почтового ящика пользователя. Сюда не входит разрешение на отправку почты. | Нет | Да
 | _MailboxSettings.ReadWrite_ |  Чтение и запись параметров почтового ящика пользователя | Позволяет приложению создавать, читать, обновлять и удалять параметры почтового ящика пользователя. Не включает разрешения на прямую отправку почты, но разрешает приложению создавать правила переадресации или перенаправления сообщений. | Нет | Да
 
 #### <a name="application-permissions"></a>Разрешения приложений
@@ -1029,17 +1028,17 @@ _IdentityRiskEvent.Read.All_ is valid only for work or school accounts. For an a
 |:----------------------------|:-----------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------|
 | _Mail.Read_                 | Чтение почты во всех почтовых ящиках               | Позволяет приложению считывать почту во всех почтовых ящиках в случаях, когда вход пользователя не предусмотрен.                                                                                                             | Да                    |
 | _Mail.ReadBasic.All_        | Чтение основных свойств почты всех пользователей                | Позволяет приложению считывать свойства почтовых ящиков всех пользователей, кроме свойств Body, BodyPreview, UniqueBody, Attachments, ExtendedProperties и Extensions. Не содержит разрешений на поиск сообщений. | Да                    |
-| _Mail.ReadWrite_            | Чтение и запись почты во всех почтовых ящиках     | Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail.                                       | Да                    |
+| _Mail.ReadWrite_            | Чтение и запись почты во всех почтовых ящиках     | Приложение сможет создавать, просматривать, обновлять и удалять сообщения во всех почтовых ящиках без входа пользователя. Не включает разрешение на отправку почты.                                       | Да                    |
 | _Mail.Send_                 | Отправка почты от имени любого пользователя                    | Позволяет приложению отправлять почту от имени любого пользователя в случаях, когда вход пользователя не предусмотрен.                                                                                                                  | Да                    |
-| _MailboxSettings.Read_      | Чтение всех параметров почтового ящика пользователя           | Allows the app to read user's mailbox settings without a signed-in user. Does not include permission to send mail.                                                                 | Нет                     |
-| _MailboxSettings.ReadWrite_ | Чтение и создание всех параметров почтового ящика пользователя | Allows the app to create, read, update, and delete user's mailbox settings without a signed-in user. Does not include permission to send mail.                                     | Да                    |
+| _MailboxSettings.Read_      | Чтение всех параметров почтового ящика пользователя           | Позволяет приложению считывать параметры почтового ящика пользователя в случаях, когда вход пользователя не предусмотрен. Сюда не входит разрешение на отправку почты.                                                                 | Нет                     |
+| _MailboxSettings.ReadWrite_ | Чтение и создание всех параметров почтового ящика пользователя | Позволяет приложению создавать, просматривать, обновлять и удалять параметры почтового ящика пользователя без вошедшего пользователя. Сюда не входит разрешение на отправку почты.                                     | Да                    |
 
 > **Важно!** Администраторы могут настроить [политику доступа приложения](auth-limit-mailbox-access.md), чтобы разрешить приложению доступ к _определенным_ почтовым ящикам, а не ко всеми почтовым ящикам в организации, даже если ему предоставлены разрешения приложений Mail.Read, Mail.ReadWrite, Mail.Send, MailboxSettings.Read или MailboxSettings.ReadWrite.
 
 
 ### <a name="remarks"></a>Примечания
 
-_Mail.Read.Shared_, _Mail.ReadWrite.Shared_, and _Mail.Send.Shared_ are only valid for work or school accounts. All other permissions are valid for both Microsoft accounts and work or school accounts.
+Разрешения _Mail.Read.Shared_, _Mail.ReadWrite.Shared_ и _Mail.Send.Shared_ действительны только для рабочих и учебных учетных записей. Все остальные разрешения поддерживаются как для учетных записей Майкрософт, так и для рабочих или учебных учетных записей.
 
 С помощью разрешения _Mail.Send_ или _Mail.Send.Shared_ приложение может отправлять сообщения, сохраняя их копии в папке "Отправленные", даже если у приложения нет соответствующего разрешения _Mail.ReadWrite_ или _Mail.ReadWrite.Shared_.
 
@@ -1110,7 +1109,7 @@ _Mail.Read.Shared_, _Mail.ReadWrite.Shared_, and _Mail.Send.Shared_ are only val
 | _Notes.ReadWrite_ |    Чтение и запись записных книжек OneNote пользователя | Позволяет приложению считывать и редактировать записные книжки OneNote, а также предоставлять к ним доступ от имени вошедшего пользователя. | Нет | Да
 | _Notes.Read.All_ |    Чтение всех записных книжек OneNote, доступных пользователю | Позволяет приложению считывать записные книжки OneNote, доступные вошедшему пользователю в организации. | Нет | Нет
 | _Notes.ReadWrite.All_ |    Чтение и запись всех записных книжек OneNote, доступных пользователю | Позволяет приложению считывать и редактировать записные книжки OneNote, доступные вошедшему пользователю в организации, а также предоставлять к ним доступ.| Нет | Нет
-| _Notes.ReadWrite.CreatedByApp_ |    Ограниченный доступ к записным книжкам (нерекомендуемое) | **Нерекомендуемое** <br/>Do not use. No privileges are granted by this permission. | Нет | Нет
+| _Notes.ReadWrite.CreatedByApp_ |    Ограниченный доступ к записным книжкам (нерекомендуемое) | **Нерекомендуемое** <br/>Не следует использовать. Это разрешение не предоставляет никаких привилегий. | Нет | Нет
 
 #### <a name="application-permissions"></a>Разрешения приложений
 
@@ -1121,7 +1120,7 @@ _Mail.Read.Shared_, _Mail.ReadWrite.Shared_, and _Mail.Send.Shared_ are only val
 
 
 ### <a name="remarks"></a>Заметки
-_Notes.Read.All_ and _Notes.ReadWrite.All_ are only valid for work or school accounts. All other permissions are valid for both Microsoft accounts and work or school accounts.
+Разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ действительны только для рабочих и учебных учетных записей. Все остальные разрешения поддерживаются как для учетных записей Майкрософт, так и для рабочих или учебных учетных записей.
 
 С помощью разрешения _Notes.Create_ приложение может просматривать иерархию записных книжек OneNote вошедшего пользователя и создавать содержимое OneNote (записные книжки, группы разделов, разделы, страницы и т. д.).
 
@@ -1224,13 +1223,13 @@ _Notes.Read.All_ and _Notes.ReadWrite.All_ are only valid for work or school acc
 Нет.
 
 ### <a name="remarks"></a>Заметки
-You can use these permissions to specify artifacts that you want returned in Azure AD authorization and token requests. They are supported differently by the Azure AD v1.0 and v2.0 endpoints.
+Эти разрешения можно использовать для указания артефактов, которые должны возвращаться в запросах авторизации и токенов Azure AD. Они поддерживаются конечными точками Azure AD 1.0 и 2.0 по-разному.
 
-With the Azure AD (v1.0) endpoint, only the _openid_ permission is used. You specify it in the *scope* parameter in an authorization request to return an ID token when you use the OpenID Connect protocol to sign in a user to your app. For more information, see [Authorize access to web applications using OpenID Connect and Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code). To successfully return an ID token, you must also make sure that the _User.Read_ permission is configured when you register your app.
+С конечной точкой Azure AD 1.0 используется только разрешение _openid_. Вы можете указать его в параметре *scope* в запросе авторизации, чтобы вернуть токен идентификатора при использовании протокола OpenID Connect. Дополнительные сведения см. в статье [Предоставление доступа к веб-приложениям с помощью OpenID Connect и Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code). Чтобы получить токен идентификатора, для приложения должно быть настроено разрешение _User.Read_.
 
-With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in the _scope_ parameter to explicitly request a refresh token when using the OAuth 2.0 or OpenID Connect protocols. With OpenID Connect, you specify the _openid_ permission to request an ID token. You can also specify the _email_ permission, _profile_ permission, or both to return additional claims in the ID token. You do not need to specify _User.Read_ to return an ID token with the v2.0 endpoint. For more information, see [OpenID Connect scopes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
+При использовании конечной точки Azure AD 2.0 и протоколов OAuth 2.0 или OpenID Connect указывается разрешение _offline\_access_ в параметре _scope_ для явного запроса токена обновления. При использовании OpenID Connect указывается разрешение _openid_ для запроса токена идентификации. Вы также можете указать разрешение _email_, _profile_ или оба для возврата дополнительных утверждений в токене идентификации. При использовании конечной точки 2.0 не нужно указывать разрешение _User.Read_ для возврата токена идентификации. Дополнительные сведения см. в разделе [Области OpenID Connect](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
 
-> **Important** The Microsoft Authentication Library (MSAL) currently specifies _offline\_access_, _openid_, _profile_, and _email_ by default in authorization and token requests. This means that, for the default case, if you specify these permissions explicitly, Azure AD may return an error.
+> **Важно!** В настоящее время библиотека Microsoft Authentication Library (MSAL) по умолчанию указывает разрешения _offline\_access_, _openid_, _profile_ и _email_ в запросах авторизации и токенов. Это означает, что если вы укажете эти разрешения явно, Azure AD может вернуть ошибку.
 
 ---
 
@@ -1296,8 +1295,8 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 
 |   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _People.Read_ |    Чтение списков контактов, релевантных для пользователя | Allows the app to read a scored list of people relevant to the signed-in user. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). | Нет | Да |
-| _People.Read.All_ | Чтение списков контактов, релевантных для всех пользователей | Allows the app to read a scored list of people relevant to the signed-in user or other users in the signed-in user's organization. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Да | Нет |
+| _People.Read_ |    Чтение списков контактов, релевантных для пользователя | Приложение сможет читать оцененный список контактов, релевантных для вошедшего пользователя. Список может включать локальные контакты, контакты из социальных сетей или каталога вашей организации, а также пользователей, с которыми он недавно общался (например, с помощью электронной почты и Skype). | Нет | Да |
+| _People.Read.All_ | Чтение списков контактов, релевантных для всех пользователей | Приложение сможет читать оцененный список контактов, релевантных для вошедшего пользователя или других пользователей в его организации. Список может включать локальные контакты, контакты из социальных сетей или каталога вашей организации, а также пользователей, с которыми он недавно общался (например, с помощью электронной почты и Skype). Приложение также сможет выполнять поиск по всему каталогу организации вошедшего пользователя. | Да | Нет |
 
 #### <a name="application-permissions"></a>Разрешения приложений
 
@@ -1612,9 +1611,9 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 Нет.
 
 ### <a name="remarks"></a>Заметки
-_Tasks_ permissions are used to control access for Outlook tasks. Access for Microsoft Planner tasks is controlled by [_Group_ permissions](#group-permissions).
+Разрешения _Tasks_ используются для управления доступом к задачам Outlook. Доступом к задачам Планировщика (Майкрософт) управляют [разрешения _Group_](#group-permissions).
 
-_Shared_ permissions are currently only supported for work or school accounts. Even with _Shared_ permissions, reads and writes may fail if the user who owns the shared content has not granted the accessing user permissions to modify content within the folder.
+В настоящее время разрешения _Shared_ поддерживаются только для рабочих и учебных учетных записей. Даже с разрешениями _Shared_ операции чтения и записи могут завершаться сбоем, если владелец общего содержимого не предоставил пользователю разрешения на изменение содержимого в папке.
 
 ### <a name="example-usage"></a>Примеры использования
 #### <a name="delegated"></a>Делегированные разрешения
@@ -1878,11 +1877,11 @@ _Shared_ permissions are currently only supported for work or school accounts. E
 
 |   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _User.Read_       |    Вход и чтение профиля пользователя | Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users.| Нет | Да |
+| _User.Read_       |    Вход и чтение профиля пользователя | Позволяет пользователям входить в приложение, а приложению — просматривать профили вошедших пользователей. Кроме того, позволяет приложению считывать основные сведения о компании вошедших пользователей.| Нет | Да |
 | _User.ReadWrite_ |    Доступ для чтения и записи к профилю пользователя | Позволяет приложению считывать весь профиль вошедшего пользователя. Также позволяет приложению обновлять информацию профиля вошедшего пользователя от его имени. | Нет | Да |
 | _User.ReadBasic.All_ |    Чтение базовых профилей всех пользователей | Позволяет приложению просматривать базовый набор свойств профилей других пользователей организации от имени вошедшего пользователя. К этим свойствам относятся отображаемое имя, имя и фамилия, адрес электронной почты, открытые расширения, а также фотография. Также позволяет приложению считывать весь профиль вошедшего пользователя. | Нет | Нет |
 | _User.Read.All_  |     Чтение полных профилей всех пользователей           | Позволяет приложению считывать полный набор свойств профилей и сведения о подчиненных и руководителях других пользователей в вашей организации от имени вошедшего пользователя. | Да | Нет |
-| _User.ReadWrite.All_ |     Чтение и запись полных профилей всех пользователей | Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. Also allows the app to create and delete users as well as reset user passwords on behalf of the signed-in user. | Да | Нет |
+| _User.ReadWrite.All_ |     Чтение и запись полных профилей всех пользователей | Позволяет приложению считывать и записывать полный набор свойств профилей и сведения о подчиненных и руководителях других пользователей в вашей организации от имени вошедшего пользователя. Кроме того, приложение сможет создавать и удалять пользователей, а также сбрасывать их пароли от имени вошедшего пользователя. | Да | Нет |
 | _User.Invite.All_  |     Приглашение гостевых пользователей в организацию | Позволяет приложению приглашать гостевых пользователей в организацию от имени вошедшего пользователя. | Да | Нет |
 | _User.Export.All_       |    Экспорт данных пользователей | Позволяет приложению экспортировать данные пользователя организации, если экспорт выполняется администратором компании.| Да | Нет |
 | _User.ManageIdentities.All_       |    Управление удостоверениями пользователей | Позволяет приложению считывать, обновлять и удалять идентификаторы, связанные с учетной записью пользователя, к которой имеет доступ зарегистрированный пользователь. Это определяет, с какими личностями ваши пользователи могут войти. | Да | Нет |
@@ -1893,16 +1892,16 @@ _Shared_ permissions are currently only supported for work or school accounts. E
 |   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _User.Read.All_ |    Чтение полных профилей всех пользователей | Приложение сможет просматривать полный набор свойств профиля, данные о членстве в группах, сведения о подчиненных и руководителях других пользователей в организации без входа пользователя.| Да |
-| _User.ReadWrite.All_ |   Чтение и запись полных профилей всех пользователей | Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.  Also allows the app to create and delete non-administrative users. Does not allow reset of user passwords. | Да |
+| _User.ReadWrite.All_ |   Чтение и запись полных профилей всех пользователей | Позволяет приложению в случаях, когда вход пользователя не предусмотрен, просматривать и записывать полный набор свойств профиля, данные о членстве в группах, сведения о подчиненных и руководителях других пользователей в организации.  Кроме того, приложение сможет создавать и удалять пользователей, не являющихся администраторами. Не позволяет сбрасывать пароли пользователей. | Да |
 | _User.Invite.All_  |     Приглашение гостевых пользователей в организацию | Позволяет приложению приглашать гостевых пользователей в организацию в случаях, когда вход пользователя не предусмотрен. | Да |
 | _User.Export.All_       |    Экспорт данных пользователей | Позволяет приложению экспортировать данные пользователей организации без вошедшего пользователя.| Да |
 | _User.ManageIdentities.All_       |    Управление удостоверениями всех пользователей | Приложение сможет считывать, обновлять и удалять идентификаторы, связанные с учетной записью пользователя, без входа в систему. Это определяет, с какими личностями пользователи могут войти в систему. |  Да |
 
 ### <a name="remarks"></a>Примечания
 
-With the _User.Read_ permission, an app can also read the basic company information of the signed-in user for a work or school account through the [organization](/graph/api/resources/organization?view=graph-rest-1.0) resource. The following properties are available: id, displayName, and verifiedDomains.
+С помощью разрешения _User.Read_ приложение также может считывать основные сведения о компании вошедшего пользователя для рабочей или учебной учетной записи через ресурс [organization](/graph/api/resources/organization?view=graph-rest-1.0). Доступны следующие свойства: id, displayName и verifiedDomains.
 
-For work or school accounts, the full profile includes all of the declared properties of the [User](/graph/api/resources/user?view=graph-rest-1.0) resource. On reads, only a limited number of properties are returned by default. To read properties that are not in the default set, use `$select`. The default properties are:
+Для рабочих и учебных учетных записей полный профиль включает все объявленные свойства ресурса [User](/graph/api/resources/user?view=graph-rest-1.0). При чтении по умолчанию возвращается только ограниченное количество свойств. Чтобы считывать свойства, не входящие в набор по умолчанию, используйте параметр `$select`. Свойства по умолчанию:
 
 - displayName;
 - givenName;
@@ -1935,7 +1934,7 @@ For work or school accounts, the full profile includes all of the declared prope
 
 Для считывания и записи сведений о подчиненных (`directReports`) или руководителе (`manager`) для рабочей или учебной учетной записи приложению необходимо свойство _User.Read.All_ (только для чтения) или _User.ReadWrite.All_.
 
-The _User.ReadBasic.All_ permission constrains app access to a limited set of properties known as the basic profile. This is because the full profile might contain sensitive directory information. The basic profile includes only the following properties:
+Разрешение _User.ReadBasic.All_ предоставляет приложению доступ только к ограниченному набору свойств, называемому базовым профилем. Это вызвано тем, что полный профиль может содержать конфиденциальные сведения о каталоге. Базовый профиль включает только следующие свойства:
 
 - displayName
 - givenName;
@@ -1944,7 +1943,7 @@ The _User.ReadBasic.All_ permission constrains app access to a limited set of pr
 - surname
 - userPrincipalName
 
-To read the group memberships of a user (`memberOf`), the app must have either [_Group.Read.All_](#group-permissions) or [_Group.ReadWrite.All_](#group-permissions). However, if the user also has membership in a [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) or an [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta), the app will need effective permissions to read those resources too, or Microsoft Graph will return an error. This means the app will also need [Directory permissions](#directory-permissions), and, for delegated permissions, the signed-in user will also need sufficient privileges in the organization to access directory roles and administrative units.
+Чтобы приложение могло считывать сведения о членстве пользователя в группах (`memberOf`), приложению необходимо разрешение [_Group.Read.All_](#group-permissions) или [_Group.ReadWrite.All_](#group-permissions). Но если пользователь является членом [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) или [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta), приложению также потребуются действующие разрешения на считывание этих ресурсов. В противном случае Microsoft Graph возвращает ошибку. Это означает, что приложению также потребуются [разрешения Directory](#directory-permissions), а в случае делегированных разрешений вошедшему пользователю потребуются достаточные привилегии в организации для доступа к ролям каталога и административным единицам.
 
 С помощью делегированного или пользовательского разрешения _User.ManageIdentities.All_ можно обновить удостоверения (`identities`) пользователя. Это включает федеративные (или социальные идентификаторы) или локальные идентификаторы с именами для входа по электронной почте или по имени.
 
@@ -2021,7 +2020,7 @@ To read the group memberships of a user (`memberOf`), the app must have either [
 
 ## <a name="permission-scenarios"></a>Сценарии с использованием разрешений
 
-This section shows some common scenarios that target [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform specific operations will depend on whether a permission is an application or delegated permission. In the case of delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information, see  [Delegated permissions, Application permissions, and effective permissions](auth/auth-concepts.md#microsoft-graph-permissions).
+В этом разделе показаны некоторые распространенные сценарии, связанные с ресурсами [user](/graph/api/resources/user?view=graph-rest-1.0) и [group](/graph/api/resources/group?view=graph-rest-1.0) в организации. В таблицах показаны разрешения, необходимые приложению для выполнения определенных операций, требуемых сценарием. Обратите внимание, что в некоторых случаях способность приложения выполнять определенные операции зависит от того, какое разрешение предоставлено — разрешение приложения или делегированное разрешение. В случае делегированных разрешений действующие разрешения приложения также зависят от привилегий вошедшего пользователя в организации. Дополнительные сведения см. в разделе [Разрешения приложения, делегированные разрешения и действующие разрешения](auth/auth-concepts.md#microsoft-graph-permissions).
 
 ### <a name="access-scenarios-on-the-user-resource"></a>Сценарии доступа к ресурсу User
 

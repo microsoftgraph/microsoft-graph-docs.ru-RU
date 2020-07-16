@@ -57,16 +57,16 @@ ms.locfileid: "44864226"
 | Имя свойства            | Тип               | Описание
 |:-------------------------|:-------------------|:-----------------------------
 | **id**                   | string             | [Уникальный идентификатор](#id-property) элемента. Только для чтения.
-| **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
+| **createdDateTime**      | DateTimeOffset     | Дата и время создания элемента. Только для чтения.
 | **description**          | string             | Текст с описанием сайта.
-| **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
-| **displayName**          | string             | The full title for the site. Read-only.
-| **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.
+| **eTag**                 | string             | ETag для элемента. Только для чтения.                                                                  |
+| **displayName**          | string             | Полное название сайта. Только для чтения.
+| **lastModifiedDateTime** | DateTimeOffset     | Дата и время последнего изменения элемента. Только для чтения.
 | **name**                 | string             | Имя или название элемента.
-| **root**                 | [root][]           | If present, indicates that this is the root site in the site collection. Read-only.
-| **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
-| **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only.
-| **webUrl**               | string (url-адрес)       | URL that displays the item in the browser. Read-only.
+| **root**                 | [root][]           | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.
+| **sharepointIds**        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
+| **siteCollection**       | [siteCollection][] | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения.
+| **webUrl**               | string (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.
 
 ### <a name="id-property"></a>Свойство id
 Ресурс **site** идентифицируется посредством уникального идентификатора, при создании которого используются следующие значения:
@@ -88,7 +88,7 @@ ms.locfileid: "44864226"
 | **contentTypes**  | Collection([contentType][])      | Коллекция типов контента, определенных для этого сайта.
 | **drive**         | [drive][]                        | Диск по умолчанию (библиотека документов) для этого сайта.
 | **drives**        | Collection([drive][])            | Коллекция дисков (библиотек документов) на этом сайте.
-| **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
+| **items**         | Collection([baseItem][])         | Используется для адресации любого элемента, содержащегося на этом сайте. Вам не удастся выполнить перечисление этой коллекции.
 | **lists**         | Collection([list][])             | Коллекция списков на этом сайте.
 | **pages**         | Collection([sitePage][])         | Коллекция страниц в списке SitePages на этом сайте.
 | **sites**         | Collection([site][])             | Коллекция дочерних сайтов этого сайта.

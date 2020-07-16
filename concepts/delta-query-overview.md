@@ -1,6 +1,6 @@
 ---
 title: Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
-description: Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
+description: Запросы изменений позволяют приложениям обнаруживать новые, обновленные и удаленные сущности, не считывая целевой ресурс полностью при каждом запросе. Приложения Microsoft Graph могут использовать запросы изменений, чтобы эффективно синхронизировать изменения с локальным хранилищем данных.
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
@@ -13,7 +13,7 @@ ms.locfileid: "44990040"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
-Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
+Запросы изменений позволяют приложениям обнаруживать новые, обновленные и удаленные сущности, не считывая целевой ресурс полностью при каждом запросе. Приложения Microsoft Graph могут использовать запросы изменений, чтобы эффективно синхронизировать изменения с локальным хранилищем данных.
 
 > [!div class="nextstepaction"]
 > [Руководство: использование уведомлений об изменениях и отслеживание изменений с помощью Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
@@ -25,11 +25,11 @@ Delta query enables applications to discover newly created, updated, or deleted 
 1. Для начала приложение выполняет запрос GET с функцией delta для нужного ресурса.
 2. Microsoft Graph отправит ответ, содержащий нужный ресурс и [маркер состояния](#state-tokens).
 
-     a.  If a `nextLink` URL is returned, there may be additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL to retrieve all pages of data until a `deltaLink` URL is returned in the response.
+     -  Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса могли быть получены не все страницы данных. Для получения всех страниц данных приложение продолжает отправлять запросы, используя URL-адрес `nextLink`, пока в отклик не будет включен URL-адрес `deltaLink`.
 
-     b.  If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the `deltaLink` URL to learn about changes to the resource.
+     - Если возвращается URL-адрес `deltaLink`, это означает, что больше нет данных о текущем состоянии ресурса. В последующих запросах приложение использует URL-адрес `deltaLink`, чтобы узнавать об изменениях ресурса.
 
-3. When the application needs to learn about changes to the resource, it makes a new request using the `deltaLink` URL received in step 2. This request *may* be made immediately after completing step 2 or when the application checks for changes.
+3. Когда приложению требуется узнать об изменениях ресурса, оно совершает новый запрос, используя URL-адрес `deltaLink`, полученный на шаге 2. Этот запрос *может* быть совершен сразу по завершении шага 2 или когда приложение проверяет наличие изменений.
 4. Microsoft Graph возвращает описание изменений ресурса с момента последнего запроса вместе с URL-адресом `nextLink` или `deltaLink`.
 
 >**Примечание.** Ресурсы, хранящиеся в Azure Active Directory (например, пользователи и группы), поддерживают сценарии "синхронизировать с этого момента". Это позволит пропустить действия 1 и 2 (если вы не хотите получать полное состояние ресурса) и запросить последнюю `deltaLink`. Добавьте `$deltaToken=latest` к функции `delta`, и ответ будет содержать ссылку `deltaLink`, но не будет содержать данные ресурсов.
@@ -40,20 +40,19 @@ Delta query enables applications to discover newly created, updated, or deleted 
 
 ### <a name="state-tokens"></a>Маркеры состояния
 
-A delta query GET response always includes a URL specified in a `nextLink` or `deltaLink` response header.
-The `nextLink` URL includes a _skipToken_, and a `deltaLink` URL includes a _deltaToken_.
+Ответ GET на запрос изменений всегда включает URL-адрес, указанный в заголовке `nextLink` или `deltaLink`. URL-адрес `nextLink` включает маркер _skipToken_, а URL-адрес `deltaLink` — _deltaToken_.
 
-These tokens are opaque to the client. The following details are what you need to know about them:
+Эти маркеры непрозрачны для клиента. Вот что вам нужно знать о них:
 
 - Каждый маркер отражает состояние и представляет моментальный снимок ресурса в этом цикле отслеживания изменений.
 
-- The state tokens also encode and include other query parameters (such as `$select`) specified in the initial delta query request. Therefore, it's not required to repeat them in subsequent delta query requests.
+- Маркеры состояния также кодируют и включают другие параметры запроса (такие как `$select`), указанные в исходном запросе изменений. Таким образом, не обязательно повторять их в последующих запросах изменений.
 
 - Совершая запрос изменений, вы можете скопировать и применить URL-адрес `nextLink` или `deltaLink` при следующем вызове функции **delta**, не проверяя содержимое URL-адреса, в том числе маркер состояния.
 
 ### <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-If a client uses a query parameter, it must be specified in the initial request. Microsoft Graph automatically encodes the specified parameter into the `nextLink` or `deltaLink` provided in the response. The calling application only needs to specify the query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
+Если клиент использует параметр запроса, он должен быть указан в исходном запросе. Microsoft Graph автоматически кодирует указанный параметр в ссылке `nextLink` или `deltaLink`, указанной в ответе. Вызывающему приложению достаточно один раз указать параметры запроса. Microsoft Graph автоматически добавляет указанные параметры для всех последующих запросов.
 
 Обратите внимание на общую ограниченную поддержку следующих необязательных параметров запроса:
 
@@ -71,7 +70,7 @@ If a client uses a query parameter, it must be specified in the initial request.
 - Параметр `$expand` не поддерживается.
 - Параметр `$top` не поддерживается.
 - Параметр `$orderby` не поддерживается.
-- If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
+- Если используется параметр запроса `$select`, это означает, что клиент предпочитает отслеживать изменения только для тех свойств или связей, которые указаны в операторе `$select`. При изменении свойства, которое не было выбрано, соответствующий ресурс не появится в отклике с различиями при последующем запросе.
 - `$select` также поддерживает навигационные свойства `manager` и `members` для пользователей и групп соответственно. Выбор этих свойств позволяет отслеживать изменения руководства и участия в группах для пользователя.
 
 - Фильтры области позволяют отслеживать изменения одного или нескольких конкретных пользователей или групп с помощью идентификатора объекта. Например, следующий запрос возвращает изменения для групп, соответствующих идентификаторам, указанным в фильтре запроса.
@@ -90,7 +89,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - Обновленные экземпляры представлены **id** и *по крайней мере* обновленными свойствами, но могут быть включены и другие свойства.
 
-- Relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request.
+- Связи между пользователями и группами представлены в виде заметок к стандартному представлению ресурса. Эти заметки представлены в формате `propertyName@delta`. Они включаются в отклик на исходный разностный запрос.
 
 Удаленные экземпляры представлены только свойством **id** и объектом `@removed`. Объект `@removed` может содержать дополнительные сведения о том, почему удален экземпляр. Например, "@removed": {"reason": "changed"}.
 
@@ -100,7 +99,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - *deleted* указывает, что элемент удален и не может быть восстановлен.
 
-The `@removed` object can be returned in the initial delta query response and in tracked (deltaLink) responses. Clients using delta query requests should be designed to handle these objects in the responses.
+Объект `@removed` может возвращаться в отклике на исходный разностный запрос и в отслеживаемых откликах (deltaLink). Клиенты, использующие разностные запросы, должны иметь возможность обрабатывать эти объекты в откликах.
 
 >**Примечание:** Возможно, что одна сущность будет содержаться в ответе несколько раз, если эта сущность менялась несколько раз и при определенных условиях. Запрос изменений позволяют вашему приложению перечислять все изменения, но не могут гарантировать, что объекты объединены в одном ответе.
 

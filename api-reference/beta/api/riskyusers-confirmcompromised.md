@@ -24,7 +24,7 @@ ms.locfileid: "44863322"
 Подтвердите, что один или несколько объектов [рискюсер](../resources/riskyuser.md) считаются скомпрометированными. Это действие устанавливает высокий уровень риска для целевого пользователя.
 
 ## <a name="permissions"></a>Разрешения
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,14 +43,14 @@ POST /identityProtection/riskyUsers/confirmCompromised
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {token}. Required. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Укажите рискованные идентификаторы пользователей, которые нужно отклонить в теле запроса.
 
 ## <a name="response"></a>Отклик
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-confirm-users-as-compromised"></a>Пример 1: подтверждение раскрытого пользователя
 #### <a name="request"></a>Запрос

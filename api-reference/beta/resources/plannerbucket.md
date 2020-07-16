@@ -37,7 +37,7 @@ ms.locfileid: "44897052"
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Идентификатор сегмента. Содержит 28 знаков, учитывается регистр. [Проверка формата](tasks-identifiers-disclaimer.md) проводится для службы.|
 |name|Строка|Имя сегмента.|
-|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
+|orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 |planId|Строка|ИДЕНТИФИКАТОР плана, к которому относится сегмент.|
 
 ## <a name="relationships"></a>Связи

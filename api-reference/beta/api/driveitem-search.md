@@ -24,7 +24,7 @@ ms.locfileid: "45091405"
 
 ## <a name="permissions"></a>Разрешения
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -52,7 +52,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 | Параметр | Тип  | Описание                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| q  | string | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
+| q  | string | Текст запроса, используемый для поиска элементов. Для поиска можно использовать несколько полей, включая поля имени файла, метаданных и содержимого файла. |
 
 ## <a name="example"></a>Пример
 
@@ -83,11 +83,9 @@ GET /me/drive/root/search(q='Contoso Projec}')
 
 ### <a name="response"></a>Отклик
 
-This method returns an object containing an collection of [DriveItems](../resources/driveitem.md) that match the search criteria.
-If no items were found, an empty collection is returned.
+Этот метод возвращает объект, который содержит коллекцию элементов [DriveItem](../resources/driveitem.md), соответствующих условиям поиска. Если не будет найдено ни одного элемента, то будет возвращена пустая коллекция.
 
-If there are too many matches the response will be paged and an **@odata.nextLink** property will contain a URL to the next page of results.
-You can use the `$top` query parameter to specify the number of items in the page.
+Если будет найдено слишком много совпадений, отклик будет разбит на страницы, а свойство **@odata.nextLink** будет содержать URL-адрес на следующую страницу с результатами. Чтобы указать количество элементов на странице, вы можете использовать параметр запроса `$top`.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
@@ -116,8 +114,7 @@ Content-type: application/json
 
 ## <a name="searching-for-items-a-user-can-access"></a>Поиск элементов, к которым пользователь может получить доступ
 
-In addition to searching for items within a drive, your app can search more broadly to include items shared with the current user.
-To broaden the search scope, use the **search** method on the [Drive](../resources/drive.md) resource.
+Помимо поиска элементов на диске ваше приложение может выполнять более широкий поиск и включать элементы, к которым текущему пользователю предоставлен доступ. Чтобы расширить область поиска, используйте метод **search** в ресурсе [Drive](../resources/drive.md).
 
 ### <a name="example"></a>Пример
 
@@ -145,8 +142,7 @@ GET /me/drive/search(q='Contoso Project')
 
 ### <a name="response"></a>Отклик
 
-Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user).
-These items will include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive. 
+Отклики при поиске на ресурсе **Drive** могут включать элементы, расположенные за пределами диска (элементы, к которым текущему пользователю предоставлен доступ). Эти элементы будут содержать аспект [**remoteItem**](../resources/remoteitem.md), который указывает, что они хранятся не на целевом диске. 
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 

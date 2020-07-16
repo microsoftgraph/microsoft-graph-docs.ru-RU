@@ -20,7 +20,7 @@ ms.locfileid: "45006879"
 
 Добавление [соединителя](../resources/connector.md) в [коннекторграуп](../resources/connectorgroup.md).
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,7 +38,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 | Имя       | Описание|
 |:---------------|:----------|
 | Authorization  | Носителя. Обязательный параметр.|
-| Content-Type | application/json. Required. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление ссылки на объект [Connector](../resources/connector.md) в формате JSON.

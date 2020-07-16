@@ -1,6 +1,6 @@
 ---
 title: Тип ресурса user
-description: Represents an Azure AD user account. Inherits from directoryObject.
+description: Представляет учетную запись пользователя Azure AD. Наследуется от directoryObject.
 author: krbain
 localization_priority: Priority
 ms.prod: users
@@ -16,7 +16,7 @@ ms.locfileid: "44863770"
 
 Пространство имен: microsoft.graph
 
-Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
+Представляет учетную запись пользователя Azure AD. Наследуется от [directoryObject](directoryobject.md).
 
 Этот ресурс поддерживает:
 
@@ -47,7 +47,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | [Список календарей](../api/user-list-calendars.md)                                            | Коллекция [calendar](calendar.md)                                               | Получение коллекции объектов Calendar.                                                                                                                                                                                                   |
 | [Список объектов calendarGroup](../api/user-list-calendargroups.md)                                  | Коллекция [calendarGroup](calendargroup.md)                                     | Получение коллекции объектов CalendarGroup.                                                                                                                                                                                              |
 | [Список calendarView](../api/user-list-calendarview.md)                                      | Коллекция [event](event.md)                                                     | Получение коллекции объектов Event.                                                                                                                                                                                                      |
-| [Получение списка событий](../api/user-list-events.md)                                                  | Коллекция [event](event.md)                                                     | Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.                                                                                                                   |
+| [Получение списка событий](../api/user-list-events.md)                                                  | Коллекция [event](event.md)                                                     | Получение списка объектов event в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.                                                                                                                   |
 | [reminderView](../api/user-reminderview.md)                                                | Коллекция [Reminder](reminder.md)                                               | Возвращает список напоминаний календаря за указанный период времени.                                                                                                                                                       |
 | **Контакты**                                                                               |                                                                                  |                                                                                                                                                                                                                                     |
 | [Создание контакта](../api/user-post-contacts.md)                                             | [contact](contact.md)                                                            | Создание объекта Contact путем добавления в коллекцию контактов.                                                                                                                                                                         |
@@ -55,13 +55,13 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | [Список контактов](../api/user-list-contacts.md)                                              | Коллекция [contact](contact.md)                                                 | Получение коллекции контактов из папки контактов по умолчанию для вошедшего пользователя.                                                                                                                                                    |
 | [Список объектов contactFolder](../api/user-list-contactfolders.md)                                  | Коллекция [contactFolder](contactfolder.md)                                     | Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя.                                                                                                                                             |
 | **Объекты каталога**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
-| [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.                                                                                                            |
-| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | Коллекция String                                                                | Check for membership in a list of groups. The check is transitive.                                                                                                                                                                  |
+| [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.                                                                                                            |
+| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | Коллекция String                                                                | Проверка членства в списке групп. Это транзитивная проверка.                                                                                                                                                                  |
 | [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | Коллекция String                                                                | Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная функция.                                                                                                                |
 | [exportPersonalData](../api/user-exportpersonaldata.md)                                    | Нет                                                                             | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации.                                                                                                                   |
 | [getByIds](../api/directoryobject-getbyids.md)                                             | Коллекция String                                                                | Возвращает объекты каталогов, указанные в списке идентификаторов.                                                                                                                                                                           |
-| [getMemberGroups](../api/user-getmembergroups.md)                                          | Коллекция String                                                                | Return all the groups that the user is a member of. The check is transitive.                                                                                                                                                        |
-| [getMemberObjects](../api/user-getmemberobjects.md)                                        | Коллекция строк                                                                | Return all of the groups and directory roles that the user is a member of. The check is transitive.                                                                                                                                 |
+| [getMemberGroups](../api/user-getmembergroups.md)                                          | Коллекция String                                                                | Возвращает все группы, в которых состоит пользователь. Это транзитивная проверка.                                                                                                                                                        |
+| [getMemberObjects](../api/user-getmemberobjects.md)                                        | Коллекция строк                                                                | Возвращает все группы и роли каталога, участником которых является пользователь. Это транзитивная проверка.                                                                                                                                 |
 | [Перечисление createdObjects](../api/user-list-createdobjects.md)                                  | Коллекция [directoryObject](directoryobject.md)                                 | Получение объектов каталога, созданных пользователем, из свойства навигации createdObjects.                                                                                                                                          |
 | [Перечисление licenseDetails](../api/user-list-licensedetails.md)                                  | Коллекция объектов [licenseDetails](licensedetails.md)                                   | Получение коллекции объектов licenseDetails.                                                                                                                                                                                             |
 | [Список ownedDevices](../api/user-list-owneddevices.md)                                      | Коллекция [directoryObject](directoryobject.md)                                 | Получение устройств, принадлежащих пользователю, из свойства навигации ownedDevices.                                                                                                                                               |
@@ -121,39 +121,39 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
 |aboutMe|String|Свободное текстовое поле, где пользователь может рассказать о себе.|
-|accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |
+|accountEnabled|Boolean| Значение **true** указывает, что учетная запись включена. В противном случае используется значение **false**. Это свойство обязательно указывать при создании пользователя. Поддерживает параметр $filter.    |
 |ageGroup|String|Устанавливает возрастную группу пользователя. Допустимые значения: `null`, `minor`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). |
-|assignedLicenses|Коллекция [assignedLicense](assignedlicense.md)|The licenses that are assigned to the user. Not nullable.            |
-|assignedPlans|Коллекция [assignedPlan](assignedplan.md)|The plans that are assigned to the user. Read-only. Not nullable. |
-|birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|businessPhones|Коллекция String|The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.|
-|city|String|The city in which the user is located. Supports $filter.|
+|assignedLicenses|Коллекция [assignedLicense](assignedlicense.md)|Лицензии, назначенные пользователю. Значение null не допускается.            |
+|assignedPlans|Коллекция [assignedPlan](assignedplan.md)|Планы, назначенные пользователю. Только для чтения. Значение null не допускается. |
+|birthday|DateTimeOffset|День рождения пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|businessPhones|Коллекция String|Номера телефонов пользователя. ПРИМЕЧАНИЕ. Несмотря на то что это коллекция строк, в качестве этого свойства можно указать только одно число.|
+|city|String|Город, в котором находится пользователь. Поддерживает параметр $filter.|
 |companyName | String | Название организации, с которой связан пользователь. Это свойство может быть полезно для описания компании внешнего пользователя. |
 |consentProvidedForMinor|String|Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `granted`, `denied` и `notRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions).|
-|country|Строка|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
+|country|Строка|Страна или регион, в котором находится пользователь, например "США" или "Соединенное Королевство". Поддерживает параметр $filter.|
 |createdDateTime | DateTimeOffset |Дата создания объекта пользователя. |
 |creationType|String|Указывает, была ли учетная запись пользователя создана как обычная учебная или рабочая учетная запись (`null`), внешняя учетная запись (`Invitation`), локальная учетная запись для клиента Azure Active Directory B2C (`LocalAccount`) или с помощью самостоятельной регистрации с использованием проверки электронной почты (`EmailVerified`). Только для чтения.|
 |deletedDateTime| DateTimeOffset | Дата и время удаления пользователя. <br><br>Возвращается только с помощью оператора $select. |
-|department|String|The name for the department in which the user works. Supports $filter.|
-|displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
+|department|String|Название отдела, в котором работает пользователь. Поддерживает параметр $filter.|
+|displayName|String|Отображаемое имя пользователя в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает параметры $filter и $orderby.|
 |employeeId|String|Идентификатор сотрудника, назначенный пользователю организацией. Поддерживает параметр $filter.|
 |externalUserState|String|Для внешних пользователей, приглашенных в клиент с помощью [API приглашений](../api/invitation-post.md), это свойство представляет состояние приглашения пользователя. Для приглашенных пользователей значением состояния может быть `PendingAcceptance` или `Accepted`, а для всех остальных пользователей — `null`. <br><br>Возвращается только для `$select` . Поддерживает `$filter` Поддерживаемые значения. Пример: `$filter=externalUserState eq 'PendingAcceptance'`.|
 |externalUserStateChangeDateTime|DateTimeOffset|Показывает отметку времени последнего изменения свойства **Свойства** . <br><br>Возвращается только для `$select` .|
 |faxNumber|String|Номер факса пользователя.|
-|givenName|String|The given name (first name) of the user. Supports $filter.|
-|hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|id|String|The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
+|givenName|String|Простое имя пользователя. Поддерживает параметр $filter.|
+|hireDate|DateTimeOffset|Дата найма пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|id|String|Уникальный идентификатор пользователя. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
 |identities|Коллекция [objectIdentity](objectIdentity.md)| Представляет удостоверения, которые можно использовать для входа в учетную запись пользователя. Цифровое удостоверение может предоставляться корпорацией Майкрософт (также известно как локальная учетная запись), организациями или поставщиками удостоверений социальных сетей, такими как Facebook, Google и Майкрософт, и привязывается к учетной записи пользователя. Может содержать несколько элементов с одинаковым значением **signInType**. <br>Поддерживает параметр $filter.|
-|imAddresses|Коллекция String|The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|
+|imAddresses|Коллекция String|Адреса SIP/VoIP для пользователя. Только для чтения.|
 |interests|Коллекция строк|Список интересов пользователя.|
 |isResourceAccount|Boolean| Не используйте зарезервированное резервирование для будущего использования.|
-|jobTitle;|String|The user’s job title. Supports $filter.|
+|jobTitle;|String|Должность пользователя. Поддерживает параметр $filter.|
 |lastPasswordChangeDateTime| DateTimeOffset | Время последнего изменения своего пароля пользователем Azure AD. Сведения о времени и дате представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z"|
 |legalAgeGroupClassification|String| Используется корпоративными приложениями для определения юридической возрастной группы пользователя. Это свойство предназначено только для чтения. Вычисляется на основе свойств `ageGroup` и `consentProvidedForMinor`. Допустимые значения: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions).|
 |licenseAssignmentStates|Коллекция [licenseAssignmentState](licenseassignmentstate.md)|Состояние назначений лицензий для пользователя. Только для чтения.|
-|mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|
-|mailboxSettings|[mailboxSettings](mailboxsettings.md)|Settings for the primary mailbox of the signed-in user. You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) settings for sending automatic replies to incoming messages, locale and time zone.|
-|mailNickname|String|The mail alias for the user. This property must be specified when a user is created. Supports $filter.|
+|mail|String|SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com". Только для чтения. Поддерживает параметр $filter.|
+|mailboxSettings|[mailboxSettings](mailboxsettings.md)|Параметры основного почтового ящика пользователя, выполнившего вход. Вы можете [получить](../api/user-get-mailboxsettings.md) или [обновить](../api/user-update-mailboxsettings.md) параметры языкового стандарта, часового пояса, отправки автоматических ответов на входящие сообщения.|
+|mailNickname|String|Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя. Поддерживает параметр $filter.|
 |mobilePhone|String|Основной сотовый телефон пользователя.|
 |mySite|String|URL-адрес личного сайта пользователя.|
 |officeLocation|String|Расположение офиса на месте работы пользователя.|
@@ -161,34 +161,34 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 |onPremisesDomainName|String| Содержит локальный параметр `domainFQDN`, также называемый dnsDomainName, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
 |onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Содержит свойства extensionAttribute 1–15 для пользователя. Обратите внимание, что отдельные атрибуты расширения нельзя выбирать и фильтровать. Для `onPremisesSyncEnabled` пользователя источник полномочий для этого набора свойств является локальным и доступен только для чтения. Для исключительно облачных пользователей (где значением для `onPremisesSyncEnabled` является false) эти свойства можно задать при создании или обновлении. Эти атрибуты расширения также называются пользовательскими атрибутами Exchange 1-15. |
 |onPremisesImmutableId|String|Это свойство используется для сопоставления локальной учетной записи Active Directory с объектом пользователя Azure AD. Его необходимо указывать при создании учетной записи пользователя в Graph, если в качестве свойства **userPrincipalName** (имени участника-пользователя) используется федеративный домен. **Важно!** В этом свойстве не допускается использование символов **$** и **\_**. Поддерживает параметр $filter.                            |
-|onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|onPremisesLastSyncDateTime|DateTimeOffset|Указывает время последней синхронизации объекта с локальным каталогом, например: "2013-02-16T03:04:54Z". Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |onPremisesProvisioningErrors|Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Ошибки при использовании продукта синхронизации Майкрософт во время подготовки. |
 |onPremisesSamAccountName|String| Содержит локальный параметр `samAccountName`, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
-|onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only.|
-|onPremisesSyncEnabled|Boolean| **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only |
+|onPremisesSecurityIdentifier|String|Содержит локальный идентификатор безопасности (SID) локальной группы, синхронизированной с облаком. Только для чтения.|
+|onPremisesSyncEnabled|Boolean| Значение **true** указывает, что этот объект синхронизируется из локального каталога. Значение **false** указывает, что этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Значение **null** указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения |
 |onPremisesUserPrincipalName|String| Содержит локальный параметр `userPrincipalName`, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
 |otherMails|String| Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`. Поддерживает параметр $filter.|
-|passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".|
-|passwordProfile|[passwordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
+|passwordPolicies|String|Задает политики паролей для пользователя. Это свойство представляет собой перечисление с единственным возможным значением — "DisableStrongPassword". Оно позволяет использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Вы также можете указать значение "DisablePasswordExpiration". Эти значения можно указать одновременно. Пример: "DisablePasswordExpiration, DisableStrongPassword".|
+|passwordProfile|[passwordProfile](passwordprofile.md)|Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль.|
 |pastProjects|Коллекция String|Список предыдущих проектов пользователя.|
-|postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|
+|postalCode|String|Почтовый индекс адреса пользователя. Формат почтового индекса зависит от страны или региона пользователя. В США для этого атрибута используется ZIP-код.|
 |preferredDataLocation|String|Предпочитаемое расположение данных для пользователя. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|
+|preferredLanguage|String|Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например "ru-RU".|
 |preferredName|String|Предпочитаемое имя пользователя.|
-|provisionedPlans|Коллекция [provisionedPlan](provisionedplan.md)|The plans that are provisioned for the user. Read-only. Not nullable. |
-|proxyAddresses|Коллекция строк|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.|
+|provisionedPlans|Коллекция [provisionedPlan](provisionedplan.md)|Планы, подготовленные для пользователя. Только для чтения. Значение NULL не допускается. |
+|proxyAddresses|Коллекция строк|Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. В выражениях фильтра для свойств с несколькими значениями требуется оператор **any**. Только для чтения. Значение null не допускается. Поддерживает параметр $filter.|
 |refreshTokensValidFromDateTime|DateTimeOffset|Все маркеры обновления или маркеры сеансов (файлы cookie сеанса), выпущенные до этого момента, являются недопустимыми. В приложениях возникает ошибка при использовании недопустимых маркеров обновления или маркеров сеансов для получения маркера делегированного доступа (для доступа к API, например Microsoft Graph).  В этом случае приложению потребуется получить новый маркер обновления, сделав запрос к конечной точке авторизации. <br><br>Возвращается только с помощью оператора $select. Только для чтения. |
 |responsibilities;|Коллекция String|Список обязанностей пользователя.|
 |schools|Коллекция строк|Список учебных заведений, которые посещал пользователь.|
 |showInAddressList|Boolean|Значение **true**, если глобальный список адресов Outlook должен содержать этого пользователя. В противном случае используется значение **false**. Если не задано, будет считаться, что присвоено значение **true**. Для пользователей, приглашенных через диспетчер приглашений, этому свойству присваивается значение **false**.|
 |skills|Коллекция строк|Список навыков пользователя.|
 |signInSessionsValidFromDateTime|DateTimeOffset| Все маркеры обновления или маркеры сеансов (файлы cookie сеанса), выпущенные до этого момента, являются недопустимыми. В приложениях возникает ошибка при использовании недопустимых маркеров обновления или маркеров сеансов для получения маркера делегированного доступа (для доступа к API, например Microsoft Graph).  В этом случае приложению потребуется получить новый маркер обновления, сделав запрос к конечной точке авторизации. Только для чтения. Сброс можно выполнить с помощью [revokeSignInSessions](../api/user-revokesigninsessions.md).|
-|state|Строка|The state or province in the user's address. Supports $filter.|
+|state|Строка|Область, республика, край или округ в адресе пользователя. Поддерживает параметр $filter.|
 |streetAddress|String|Почтовый адрес места работы пользователя.|
-|surname|String|The user's surname (family name or last name). Supports $filter.|
-|usageLocation|String|A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports $filter.|
-|userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby.
-|userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
+|surname|String|Фамилия пользователя. Поддерживает параметр $filter.|
+|usageLocation|String|Двухбуквенный код страны (по стандарту ISO 3166). Необходим для пользователей, которым будут назначены лицензии, в связи с законодательным требованием проверять доступность служб в разных странах.  Примеры: "RU", "JP" и "GB". Значение null не допускается. Поддерживает параметр $filter.|
+|userPrincipalName|String|Имя участника-пользователя. Это имя для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Это свойство обязательно указывать при создании пользователя. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](organization.md). Поддерживает параметры $filter и $orderby.
+|userType|String|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость". Поддерживает параметр $filter.          |
 
 ### <a name="legal-age-group-property-definitions"></a>Определения свойств возрастных групп
 
@@ -236,33 +236,33 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |activities|Коллекция [userActivity](projectrome-activity.md)|Действия пользователя на разных устройствах. Только для чтения. Допускается значение null.|
-|calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
-|calendarGroups|Коллекция [calendarGroup](calendargroup.md)|The user's calendar groups. Read-only. Nullable.|
-|calendarView|Коллекция [event](event.md)|The calendar view for the calendar. Read-only. Nullable.|
-|calendars|Коллекция [calendar](calendar.md)|The user's calendars. Read-only. Nullable.|
-|contactFolders|Коллекция [contactFolder](contactfolder.md)|The user's contacts folders. Read-only. Nullable.|
-|contacts|Коллекция [contact](contact.md)|The user's contacts. Read-only. Nullable.|
-|createdObjects|Коллекция [directoryObject](directoryobject.md)|Directory objects that were created by the user. Read-only. Nullable.|
-|directReports|Коллекция [directoryObject](directoryobject.md)|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. |
-|drive|[drive](drive.md)|The user's OneDrive. Read-only.|
-|drives|Коллекция [drive](drive.md)| A collection of drives available for this user. Read-only. |
-|events|Коллекция [event](event.md)|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
-|extensions|Коллекция [extension](extension.md)|The collection of open extensions defined for the user. Read-only. Nullable.|
+|calendar|[calendar](calendar.md)|Основной календарь пользователя. Только для чтения.|
+|calendarGroups|Коллекция [calendarGroup](calendargroup.md)|Группы календарей пользователя. Только для чтения. Допускается значение null.|
+|calendarView|Коллекция [event](event.md)|Представление календаря. Только для чтения. Допускается значение null.|
+|calendars|Коллекция [calendar](calendar.md)|Календари пользователя. Только для чтения. Допускается значение null.|
+|contactFolders|Коллекция [contactFolder](contactfolder.md)|Папки контактов пользователя. Только для чтения. Допускается значение null.|
+|contacts|Коллекция [contact](contact.md)|Контакты пользователя. Только для чтения. Допускается значение null.|
+|createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные пользователем. Только для чтения. Допускается значение null.|
+|directReports|Коллекция [directoryObject](directoryobject.md)|Пользователи и контакты, являющиеся подчиненными пользователя (пользователи и контакты, у которых в свойстве manager указан этот пользователь). Только для чтения. Допускается значение null. |
+|drive|[drive](drive.md)|Хранилище OneDrive пользователя. Только для чтения.|
+|drives|Коллекция [drive](drive.md)| Коллекция дисков, доступных для этого пользователя. Только для чтения. |
+|events|Коллекция [event](event.md)|События пользователя. По умолчанию отображаются события в стандартном календаре. Только для чтения. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для пользователя. Только для чтения. Допускается значение null.|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | Классификация релевантности для сообщений пользователя, основанная на явных обозначениях, переопределяющих заданные релевантность или важность. |
-|insights|[officeGraphInsights](officegraphinsights.md) | Read-only. Nullable.|
+|insights|[officeGraphInsights](officegraphinsights.md) | Только для чтения. Допускается значение null.|
 |licenseDetails|Коллекция объектов [licenseDetails](licensedetails.md)|Коллекция сведений о лицензии этого пользователя. Только для чтения.|
-|mailFolders|Коллекция [mailFolder](mailfolder.md)| The user's mail folders. Read-only. Nullable.|
-|manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
-|memberOf|Коллекция [directoryObject](directoryobject.md)|The groups and directory roles that the user is a member of. Read-only. Nullable.|
-|messages|Коллекция [message](message.md)|The messages in a mailbox or folder. Read-only. Nullable.|
+|mailFolders|Коллекция [mailFolder](mailfolder.md)| Почтовые папки пользователя. Только для чтения. Допускается значение null.|
+|manager|[directoryObject](directoryobject.md)|Пользователь или контакт, являющийся руководителем пользователя. Только для чтения. (Методы HTTP: GET, PUT, DELETE.)|
+|memberOf|Коллекция [directoryObject](directoryobject.md)|Группы и роли каталога, участником которых является пользователь. Только для чтения. Допускается значение null.|
+|messages|Коллекция [message](message.md)|Сообщения в почтовом ящике или папке. Только для чтения. Допускается значение null.|
 |onenote|[onenote](onenote.md)| Только для чтения.|
 |outlook|[outlookUser](outlookuser.md)| Только для чтения.|
-|ownedDevices|Коллекция [directoryObject](directoryobject.md)|Devices that are owned by the user. Read-only. Nullable.|
-|ownedObjects|Коллекция [directoryObject](directoryobject.md)|Directory objects that are owned by the user. Read-only. Nullable.|
+|ownedDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, принадлежащие пользователю. Только для чтения. Допускается значение null.|
+|ownedObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, принадлежащие пользователю. Только для чтения. Допускается значение null.|
 |people|Коллекция [person](person.md)| Люди, которые являются релевантными для пользователя. Только для чтения. Допускается значение null.
-|photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
+|photo|[profilePhoto](profilephoto.md)| Фотография профиля пользователя. Только для чтения.|
 |planner|[plannerUser](planneruser.md)| Точка входа в ресурс Planner, который может существовать для пользователя. Только для чтения.|
-|registeredDevices|Коллекция [directoryObject](directoryobject.md)|Devices that are registered for the user. Read-only. Nullable.|
+|registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,19 +1,20 @@
 ---
 title: Настройка уведомлений об изменениях в пользовательских данных
-description: The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
+description: API Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений об изменениях клиентам. Клиент — это веб-служба, которая настраивает собственный URL-адрес для получения уведомлений об изменениях. Клиентские приложения используют уведомления об изменениях для обновления состояния после внесения изменений.
 author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
 ms.openlocfilehash: 47c4357a59b02322769433fb82d0e9fe02fc1aae
 ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45050927"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
-The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
+API Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений об изменениях клиентам. Клиент — это веб-служба, которая настраивает собственный URL-адрес для получения уведомлений об изменениях. Клиентские приложения используют уведомления об изменениях для обновления состояния после внесения изменений.
 
 Когда Microsoft Graph принимает запрос на подписку, он передает уведомления об изменениях URL-адресу, указанному в подписке. Затем приложение действует в соответствии с бизнес-логикой. Например, оно получает дополнительные данные, обновляет кэш и представления, а также выполняет другие действия.
 

@@ -24,7 +24,7 @@ ms.locfileid: "44897150"
 > Вы можете добавлять пользователей только в группы безопасности и Microsoft 365, управляемые через облако.
 
 ## <a name="permissions"></a>Разрешения
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,14 +41,14 @@ POST /groups/{id}/members/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:----------|
-| Авторизация  | Bearer {token}. Required. |
-| Content-Type   | application/json. Required. |
+| Авторизация  | Bearer {токен}. Обязательный. |
+| Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Основной текст запроса
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md) или [organizational contact](../resources/orgcontact.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-add-a-member-to-a-group"></a>Пример 1: Добавление участника в группу

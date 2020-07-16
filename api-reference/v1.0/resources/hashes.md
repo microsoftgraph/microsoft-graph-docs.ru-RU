@@ -45,12 +45,12 @@ ms.locfileid: "44863742"
 
 | Свойство         | Тип   | Описание                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
+| **sha1Hash**     | String | Хэш SHA1 для содержимого файла (если доступно). Только для чтения. |
 | **sha256Hash**   | String | Хэш SHA256 для содержимого файла (если он доступен). Только для чтения. |
 | **crc32Hash**    | String | Значение CRC32 файла с прямым порядком байтов (при наличии). Только для чтения.            |
-| **quickXorHash** | Строка | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
+| **quickXorHash** | Строка | Особый хэш файла, который можно использовать, чтобы определить, было ли изменено содержимое файла (если доступно). Только для чтения. |
 
-**Note:** In some cases hash values may not be available. If this is the case, the hash values on an item will be updated after the item is downloaded.
+**Примечание.** В некоторых случаях значения хэша могут быть недоступны. Если это так, значения хэша для определенного элемента будут обновлены после загрузки элемента.
 
 ## <a name="remarks"></a>Замечания
 

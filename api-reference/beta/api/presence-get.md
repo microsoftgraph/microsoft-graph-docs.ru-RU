@@ -40,7 +40,7 @@ GET /communications/presences
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {token}. Required. |
+| Авторизация | Bearer {токен}. Обязательный. |
 
 
 ## <a name="request-body"></a>Текст запроса

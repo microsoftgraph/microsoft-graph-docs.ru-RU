@@ -17,7 +17,7 @@ ms.locfileid: "44744006"
 
 Microsoft Graph придерживается политики [Microsoft Lifecycle](https://support.microsoft.com/lifecycle).
 
-As new versions of the Microsoft Graph REST APIs and Microsoft Graph SDKs are released, earlier versions will be retired. Microsoft will declare a version as deprecated at least 24 months in advance of retiring an API or an SDK.
+Новые версии REST API Microsoft Graph и пакетов SDK Microsoft Graph будут заменять собой более ранние версии. Корпорация Майкрософт будет объявлять о прекращении поддержки версии по крайней мере за 24 месяца до прекращения использования API или SDK.
 
 После увеличения основного номера версии API (например, с 1.0 до 2.0) текущая версия (в этом примере — 1.0) будет объявлена устаревшей, и ее поддержка будет прекращена через 24 месяца после объявления. В политику могут быть внесены исключения, если возникнут проблемы с безопасностью или работоспособностью службы.
 
@@ -25,7 +25,7 @@ As new versions of the Microsoft Graph REST APIs and Microsoft Graph SDKs are re
 
 ### <a name="api-contract-and-non-backward-compatible-changes"></a>Изменения в контракте API и изменения, не совместимые с прежними версиями
 
-Microsoft Graph has a log of changes across versions. These changes are listed in the [Microsoft Graph Changelog](changelog.md). As new functionality and data is added to Microsoft Graph, we will increment the API version number for any non-backward compatible changes to the API.
+В Microsoft Graph имеется журнал изменений во всех версиях. Эти изменения перечислены в [журнале изменений Microsoft Graph](changelog.md). После добавления новых функций и данных в Microsoft Graph мы будем увеличивать номер версии API, если изменения API не совместимы с прежними версиями.
 
 Примеры изменений, не совместимых с прежними версиями:
 
@@ -45,7 +45,7 @@ Microsoft Graph has a log of changes across versions. These changes are listed i
 - изменения порядка свойств;
 - изменения длины или формата непрозрачных строк, таких как идентификаторы ресурсов.
 
->**Note:** Over time, we will update the list of backward compatible changes. If you generate your own client proxies (like WCF clients), our guidance is that your client applications should be prepared to receive properties and derived types not previously defined by the Microsoft Graph API service. Microsoft Graph API follows the guidance described in the [Model Versioning](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) section in the [Microsoft REST API guidelines](https://github.com/microsoft/api-guidelines/).
+>**Примечание.** Корпорация Майкрософт будет обновлять список обратно совместимых изменений. Если вы создаете собственные прокси-серверы клиента (например, клиенты WCF), ваши клиентские приложения должны быть готовы принимать свойства и производные типы, ранее не определенные в службе API Microsoft Graph. API Microsoft Graph соответствует принципам, описанным в разделе [Управление версиями](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) [Правил в отношении REST API Microsoft](https://github.com/microsoft/api-guidelines/).
 
 ## <a name="versions"></a>Версии
 
@@ -54,12 +54,11 @@ Microsoft Graph has a log of changes across versions. These changes are listed i
 ### <a name="beta-version"></a>Бета-версия
 Бета-версия API Microsoft Graph, доступная в разделе ниже, `https://graph.microsoft.com/beta` содержит функции, находящиеся _** на стадии тестирования **_. Документацию по API бета-версии см. в [справочнике по конечной точке бета-версии Microsoft Graph](/graph/api/overview?view=graph-rest-beta). Время от времени в бета-версию могут вноситься критические изменения. Не используйте API /beta в рабочих приложениях.
 
-We make no guarantees that a beta feature will be promoted to the current version. When the Microsoft Graph API team believes that a beta feature is ready for general availability (GA), we will add that feature to the latest current version. If the promotion of the feature would result in a breaking change to the current version, the version number will be incremented, with the new version becoming the current version.
-Our developer community can post feature request on [UserVoice](https://officespdev.uservoice.com/), including requests for new features as well as requests to promote existing beta APIs to the current version.
+Мы не гарантируем, что бета-функция появится в текущей версии. Если команда API Microsoft Graph решит, что бета-функцию можно сделать общедоступной, такую функцию добавят в новую текущую версию. Если добавление функции приведет к критическому изменению текущей версии, номер версии будет увеличен, и новая версия станет текущей. Наше сообщество разработчиков может предлагать функции на сайте [UserVoice](https://officespdev.uservoice.com/), в том числе запрашивать добавление существующих бета-интерфейсов API в текущую версию.
 
 ### <a name="current-version"></a>Текущая версия
 
-The current version of Microsoft Graph is v1.0. Exposed under `https://graph.microsoft.com/v1.0`, the Microsoft Graph API /v1.0 version contains features that are generally available and ready for production use. You can browse the documentation for the v1.0 APIs in the table of contents.
+Текущая версия Microsoft Graph: 1.0. Версия 1.0 API Microsoft Graph предоставляется по адресу `https://graph.microsoft.com/v1.0` и содержит функции, которые общедоступны и готовы к использованию в рабочей среде. В оглавлении приведен список документации по API версии 1.0.
 
 ### <a name="deprecated-and-unsupported-versions"></a>Устаревшие и неподдерживаемые версии
 
@@ -69,4 +68,4 @@ The current version of Microsoft Graph is v1.0. Exposed under `https://graph.mic
 
 Используя API Microsoft Graph, вы принимаете [Условия использования API Microsoft](/legal/microsoft-apis/terms-of-use?context=/graph/context).
 
-Your feedback is important to us. Connect with us on [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Tag your questions with [microsoft-graph].
+Ваши отзывы важны для нас. Свяжитесь с нами в [сайте StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Помечайте свои вопросы с помощью [Microsoft – Graph].

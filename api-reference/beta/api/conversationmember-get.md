@@ -7,6 +7,7 @@ ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 73f89ac24bedad9cfd632674040b288aac151f23
 ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45050754"
@@ -21,7 +22,7 @@ ms.locfileid: "45050754"
 
 ## <a name="permissions"></a>Разрешения
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
@@ -50,7 +51,7 @@ GET /teams/{id}/channels/{id}/members/{id}
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {token}. Required.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -92,7 +93,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 
 Ниже приведен пример отклика.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

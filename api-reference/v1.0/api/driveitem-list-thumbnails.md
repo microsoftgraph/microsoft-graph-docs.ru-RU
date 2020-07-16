@@ -20,12 +20,9 @@ ms.locfileid: "44863392"
 
 Получение коллекции ресурсов [ThumbnailSet](../resources/thumbnailset.md) для ресурса [DriveItem](../resources/driveitem.md).
 
-A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources.
-Each **thumbnailSet** can have one or more [**thumbnail**](../resources/thumbnail.md) objects, which are images that represent the item.
-For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large`.
+Ресурс DriveItem представляют ресурсы [ThumbnailSet](../resources/thumbnailset.md), количество которых может быть нуль и более. Каждый ресурс **thumbnailSet** может включать один или несколько объектов [**thumbnail**](../resources/thumbnail.md) — изображений, представляющих элемент. К примеру, ресурс **thumbnailSet** может включать такие распространенные объекты **thumbnail**, как `small`, `medium` и `large`.
 
-There are many ways to work with thumbnails on OneDrive.
-Here are the most common ones:
+Работать с эскизами в OneDrive можно множеством способов. Ниже представлены наиболее распространенные из них.
 
 * Перечисление доступных эскизов элемента
 * Получение одного эскиза элемента
@@ -37,7 +34,7 @@ Here are the most common ones:
 
 ## <a name="permissions"></a>Разрешения
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -100,8 +97,7 @@ GET /me/drive/items/{item-id}/thumbnails
 
 Этот запрос возвращает массив доступных объектов **thumbnailSet** для элемента. У любого элемента в объекте drive может быть один или несколько эскизов (либо ни одного эскиза).
 
-**Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**.
-For example, `/thumbnails?select=medium` retrieves only the medium sized thumbnails.
+**Примечание.** С помощью параметра _select_ строки запроса вы можете указывать размеры эскизов, возвращаемых в объекте **ThumbnailSet**. Например, запрос `/thumbnails?select=medium` получает только эскизы среднего размера.
 
 
 ### <a name="response"></a>Отклик
@@ -161,7 +157,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 | Имя         | Тип   | Описание                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | Уникальный идентификатор элемента.                                           |
-| **thumb-id** | число | The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0. |
+| **thumb-id** | число | Индекс эскиза (как правило, 0–4). Если присутствует пользовательский эскиз, для него задается индекс 0. |
 | **size**     | string | Размер запрашиваемого эскиза. Это должен быть один из стандартных размеров, указанных ниже, либо пользовательский размер. |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
@@ -298,8 +294,7 @@ Content-type: application/json
 
 ## <a name="size-options"></a>Параметры размера
 
-This table defines the possible thumbnail sizes.
-While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:
+В этой таблице определены возможные размеры эскизов. Хотя вы можете указать в запросе произвольный размер эскиза, определенные значения встречаются намного чаще и позволяют быстрее получить результат.
 
 | Имя           | Разрешение  | Пропорции | Описание                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
@@ -366,7 +361,7 @@ Content-Type: application/json
 | Идентификатор эскиза | Разрешение             | Пропорции | Описание                                                                                                                                         |
 |:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | c300x400             | Заключен в прямоугольник размером 300x400 | Исходные     | Создается эскиз, который помещается в прямоугольник размером 300x400 пикселей с сохранением пропорций.                                                                 |
-| c300x400_Crop        | 300x400                | Обрезанный      | Generate a thumbnail that is 300x400 pixels. This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box. |
+| c300x400_Crop        | 300x400                | Обрезанный      | Создается эскиз размером 300x400. Сначала размер изображения меняется так, чтобы оно помещалось в прямоугольник размером 300x400, а затем обрезается все, что выходит за пределы прямоугольника. |
 
 **Примечание.** Размер возвращаемого эскиза в пикселях может не полностью совпадать с запрашиваемым, но его пропорции будут соответствовать запросу.
 В некоторых случаях возвращаются эскизы большего размера, если эскиз уже существует и легко масштабируется до запрашиваемого разрешения.

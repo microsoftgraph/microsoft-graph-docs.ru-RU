@@ -26,7 +26,7 @@ ms.locfileid: "44897801"
 Этот API возвращает только первую обнаруженную ошибку проверки. Если свойства не прошли несколько проверок, возвращается только первый сбой проверки. Тем не менее, вы можете проверить псевдоним почты и отображаемое имя и получить коллекцию ошибок проверки, если проверяется только политика именования префиксов и суффиксов. Чтобы узнать больше о настройке политик именования, ознакомьтесь со статьей [Настройка политики именования](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell).
 
 ## <a name="permissions"></a>Разрешения
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -44,7 +44,7 @@ POST /directoryObjects/validateProperties
 
 | Имя           | Описание      |
 |:---------------|:-----------------|
-| Авторизация  | Bearer {token}. Required.    |
+| Авторизация  | Bearer {токен}. Обязательный.    |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Текст запроса

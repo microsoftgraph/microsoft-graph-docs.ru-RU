@@ -1,6 +1,6 @@
 ---
 title: Тип ресурса user
-description: Represents an Azure AD user account. Inherits from directoryObject.
+description: Представляет учетную запись пользователя Azure AD. Наследуется от directoryObject.
 author: krbain
 localization_priority: Priority
 ms.prod: users
@@ -18,7 +18,7 @@ ms.locfileid: "44864086"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
+Представляет учетную запись пользователя Azure AD. Наследуется от [directoryObject](directoryobject.md).
 
 **Пользовательские** ресурсы позволяют приложениям задавать пользовательские параметры для языков, а также форматы даты и времени для основных почтовых ящиков пользователя Exchange, а также для профиля пользователя Azure AD. Более подробную информацию можно узнать в разделе [пользовательские параметры для языков и региональных форматов](#user-preferences-for-languages-and-regional-formats).
 
@@ -55,7 +55,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | [Список календарей](../api/user-list-calendars.md)                                            | Коллекция [Calendar](calendar.md)                                               | Получение коллекции объектов Calendar.                                                                                                                                                 |
 | [Список объектов calendarGroup](../api/user-list-calendargroups.md)                                  | Коллекция [CalendarGroup](calendargroup.md)                                     | Получение коллекции объектов CalendarGroup.                                                                                                                                            |
 | [Список calendarView](../api/user-list-calendarview.md)                                      | Коллекция [event](event.md)                                                     | Получение коллекции объектов event.                                                                                                                                                   |
-| [Получение списка событий](../api/user-list-events.md)                                                  | Коллекция [event](event.md)                                                     | Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.                                                                 |
+| [Получение списка событий](../api/user-list-events.md)                                                  | Коллекция [event](event.md)                                                     | Получение списка объектов event в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.                                                                 |
 | [reminderView](../api/user-reminderview.md)                                                | Коллекция [Reminder](reminder.md)                                               | Возвращает список напоминаний календаря за указанный период времени.                                                                                                     |
 | **Контакты**                                                                               |                                                                                  |                                                                                                                                                                                   |
 | [Создание контакта](../api/user-post-contacts.md)                                             | [contact](contact.md)                                                            | Создание контакта путем добавления в коллекцию контактов.                                                                                                                       |
@@ -63,12 +63,12 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | [Список контактов](../api/user-list-contacts.md)                                              | Коллекция [contact](contact.md)                                                 | Получение коллекции контактов из папки контактов по умолчанию для выполнившего вход пользователя.                                                                                                  |
 | [Список объектов contactFolder](../api/user-list-contactfolders.md)                                  | Коллекция [contactFolder](contactfolder.md)                                     | Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя.                                                                                           |
 | **Объекты каталога**                                                                      |                                                                                  |                                                                                                                                                                                   |
-| [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.                                                          |
-| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | Коллекция строк                                                                | Check for membership in a list of groups. The check is transitive.                                                                                                                |
+| [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.                                                          |
+| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | Коллекция строк                                                                | Проверка членства в списке групп. Это транзитивная проверка.                                                                                                                |
 | [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | Коллекция String                                                                | Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная проверка.                                                                 |
 | [exportPersonalData](../api/user-exportpersonaldata.md)                                    | Нет                                                                             | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации.                                                                 |
 | [getByIds](../api/directoryobject-getbyids.md)                                             | Коллекция String                                                                | Возвращает объекты каталогов, указанные в списке идентификаторов.                                                                                                                         |
-| [getMemberGroups](../api/user-getmembergroups.md)                                          | Коллекция строк                                                                | Return all the groups that the user is a member of. The check is transitive.                                                                                                      |
+| [getMemberGroups](../api/user-getmembergroups.md)                                          | Коллекция строк                                                                | Возвращает все группы, в которых состоит пользователь. Это транзитивная проверка.                                                                                                      |
 | [getMemberObjects](../api/user-getmemberobjects.md)                                        | Коллекция строк                                                                | Возвращение всех групп, ролей каталога и административных единиц, в которых состоит пользователь. Это транзитивная проверка.                                                           |
 | [Перечисление createdObjects](../api/user-list-createdobjects.md)                                  | Коллекция [directoryObject](directoryobject.md)                                 | Получение объектов каталога, созданных пользователем, из свойства навигации createdObjects.                                                                                        |
 | [Перечисление licenseDetails](../api/user-list-licensedetails.md)                                  | Коллекция объектов [licenseDetails](licensedetails.md)                                   | Получение коллекции объектов licenseDetails.                                                                                                                                           |
@@ -155,7 +155,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | ageGroup | String | Устанавливает возрастную группу пользователя. Допустимые значения: `null`, `minor`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только с помощью оператора $select. |
 | assignedLicenses | Коллекция [assignedLicense](assignedlicense.md) | Лицензии, назначенные пользователю. <br><br>Возвращается только с помощью оператора $select. Значение null не допускается. |
 | assignedPlans | Коллекция [assignedPlan](assignedplan.md) | Планы, назначенные пользователю. <br><br>Возвращается только с помощью оператора $select. Только для чтения. Значение null не допускается. |
-| birthday | DateTimeOffset | The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` <br><br>Возвращается только с помощью оператора $select. |
+| birthday | DateTimeOffset | День рождения пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается только с помощью оператора $select. |
 | businessPhones | Коллекция строк | Номера телефонов пользователя. Для этого свойства можно указать только один номер. <br><br>Возвращается по умолчанию. |
 | city | String | Город, в котором находится пользователь. <br><br>Возвращается только с помощью оператора $select. Поддерживает параметр $filter. |
 | companyName | String | Название организации, с которой связан пользователь. Это свойство может быть полезно для описания компании внешнего пользователя. <br><br>Возвращается только с помощью оператора $select. |
@@ -171,10 +171,10 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | externalUserStateChangeDateTime | String | Показывает метку времени последнего изменения в свойстве externalUserState. <br><br>Возвращается только с помощью оператора $select. |
 | faxNumber | String | Номер факса пользователя. <br><br>Возвращается только с помощью оператора $select. |
 | givenName | String | Простое имя пользователя. <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
-| hireDate | DateTimeOffset | The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` <br><br>Возвращается только с помощью оператора $select. |
+| hireDate | DateTimeOffset | Дата найма пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается только с помощью оператора $select. |
 | id | Строка | Уникальный идентификатор пользователя. Наследуется от [directoryObject](directoryobject.md). <br><br>Возвращается по умолчанию. Значение null не допускается. Только для чтения.|
 | identities | Коллекция [objectIdentity](objectIdentity.md) | Представляет удостоверения, которые можно использовать для входа в учетную запись пользователя. Цифровое удостоверение может предоставляться корпорацией Майкрософт (также известно как локальная учетная запись), организациями или поставщиками удостоверений социальных сетей, такими как Facebook, Google и Майкрософт, и привязывается к учетной записи пользователя. Может содержать несколько элементов с одинаковым значением **signInType**. <br><br>Возвращается только с помощью оператора $select. Поддерживает параметр $filter. |
-| imAddresses | Коллекция String | The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|
+| imAddresses | Коллекция String | Адреса SIP/VoIP для пользователя. Только для чтения.|
 | interests | Коллекция строк | Список интересов пользователя. <br><br>Возвращается только с помощью оператора $select. |
 | isResourceAccount | Boolean | Не используйте зарезервированное резервирование для будущего использования. |
 | jobTitle; | String | Должность пользователя. <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
@@ -198,12 +198,12 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | onPremisesSyncEnabled | Логический | Значение `true` указывает, что этот объект синхронизируется из локального каталога. Значение `false` указывает, что этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Значение `null` указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). <br><br>Возвращается только с помощью оператора $select. Только для чтения. |
 | onPremisesUserPrincipalName | String | Содержит локальный параметр `userPrincipalName`, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. <br><br>Возвращается только с помощью оператора $select. Только для чтения. |
 | otherMails | Коллекция строк | Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`.<br><br>Возвращается только с помощью оператора $select.  Поддерживает параметр $filter. |
-| passwordPolicies | String | Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".<br><br>Возвращается только с помощью оператора $select. |
-| passwordProfile | [passwordProfile](passwordprofile.md) | Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. <br><br>Возвращается только с помощью оператора $select. |
+| passwordPolicies | String | Задает политики паролей для пользователя. Это свойство представляет собой перечисление с единственным возможным значением — "DisableStrongPassword". Оно позволяет использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Вы также можете указать значение "DisablePasswordExpiration". Эти значения можно указать одновременно. Пример: "DisablePasswordExpiration, DisableStrongPassword".<br><br>Возвращается только с помощью оператора $select. |
+| passwordProfile | [passwordProfile](passwordprofile.md) | Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль. <br><br>Возвращается только с помощью оператора $select. |
 | pastProjects | Коллекция String | Список предыдущих проектов пользователя. <br><br>Возвращается только с помощью оператора $select. |
-| postalCode | String | The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. <br><br>Возвращается только с помощью оператора $select. |
+| postalCode | String | Почтовый индекс адреса пользователя. Формат почтового индекса зависит от страны или региона пользователя. В США для этого атрибута используется ZIP-код. <br><br>Возвращается только с помощью оператора $select. |
 | preferredDataLocation | String | Предпочитаемое расположение данных для пользователя. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Возвращается только с помощью оператора $select. |
-| preferredLanguage | String | The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US". <br><br>Возвращается по умолчанию. |
+| preferredLanguage | String | Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например "ru-RU". <br><br>Возвращается по умолчанию. |
 | preferredName | String | Предпочитаемое имя пользователя. <br><br>Возвращается только с помощью оператора $select. |
 | provisionedPlans | Коллекция [provisionedPlan](provisionedplan.md) | Планы, подготовленные для пользователя. <br><br>Возвращается только с помощью оператора $select. Только для чтения. Значение null не допускается. |
 | proxyAddresses | Коллекция String | Например: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для выражений фильтра в случае многозначных свойств требуется оператор **any**. <br><br>Возвращается только с помощью оператора $select. Только для чтения. Значение null не допускается. Поддерживает параметр $filter. |
@@ -267,38 +267,38 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
 |agreementAcceptances|Коллекция [agreementAcceptance](agreementacceptance.md)| Состояния принятия пользователем условий использования. Только для чтения. Может иметь значение null.|
-|calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
-|calendarGroups|Коллекция [calendarGroup](calendargroup.md)|The user's calendar groups. Read-only. Nullable.|
-|calendarView|Коллекция [event](event.md)|The calendar view for the calendar. Read-only. Nullable.|
-|calendars|Коллекция [calendar](calendar.md)|The user's calendars. Read-only. Nullable.|
-|contactFolders|Коллекция [contactFolder](contactfolder.md)|The user's contacts folders. Read-only. Nullable.|
-|contacts|Коллекция [contact](contact.md)|The user's contacts. Read-only. Nullable.|
-|createdObjects|Коллекция [directoryObject](directoryobject.md)|Directory objects that were created by the user. Read-only. Nullable.|
-|directReports|Коллекция [directoryObject](directoryobject.md)|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. |
-|drive|[drive](drive.md)|The user's OneDrive. Read-only.|
-|drives|Коллекция [drive](drive.md)| A collection of drives available for this user. Read-only. |
+|calendar|[calendar](calendar.md)|Основной календарь пользователя. Только для чтения.|
+|calendarGroups|Коллекция [calendarGroup](calendargroup.md)|Группы календарей пользователя. Только для чтения. Допускается значение null.|
+|calendarView|Коллекция [event](event.md)|Представление календаря. Только для чтения. Допускается значение null.|
+|calendars|Коллекция [calendar](calendar.md)|Календари пользователя. Только для чтения. Допускается значение null.|
+|contactFolders|Коллекция [contactFolder](contactfolder.md)|Папки контактов пользователя. Только для чтения. Допускается значение null.|
+|contacts|Коллекция [contact](contact.md)|Контакты пользователя. Только для чтения. Допускается значение null.|
+|createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные пользователем. Только для чтения. Допускается значение null.|
+|directReports|Коллекция [directoryObject](directoryobject.md)|Пользователи и контакты, являющиеся подчиненными пользователя (пользователи и контакты, у которых в свойстве manager указан этот пользователь). Только для чтения. Допускается значение null. |
+|drive|[drive](drive.md)|Хранилище OneDrive пользователя. Только для чтения.|
+|drives|Коллекция [drive](drive.md)| Коллекция дисков, доступных для этого пользователя. Только для чтения. |
 |events|Коллекция [event](event.md)|События пользователя. По умолчанию отображаются события в стандартном календаре. Только для чтения. Допускается значение null.|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для пользователя. Допускается значение null.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Классификация релевантности для сообщений пользователя, основанная на явных обозначениях, переопределяющих заданные релевантность или важность. |
-|insights|[officeGraphInsights](officegraphinsights.md) | Read-only. Nullable.|
-|joinedGroups|Коллекция [group](group.md)| Read-only. Nullable.|
-|mailFolders|Коллекция [mailFolder](mailfolder.md)| The user's mail folders. Read-only. Nullable.|
-|manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
+|insights|[officeGraphInsights](officegraphinsights.md) | Только для чтения. Допускается значение null.|
+|joinedGroups|Коллекция [group](group.md)| Только для чтения. Допускается значение null.|
+|mailFolders|Коллекция [mailFolder](mailfolder.md)| Почтовые папки пользователя. Только для чтения. Допускается значение null.|
+|manager|[directoryObject](directoryobject.md)|Пользователь или контакт, являющийся руководителем пользователя. Только для чтения. (Методы HTTP: GET, PUT, DELETE.)|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, роли каталога и административные единицы, в которых состоит пользователь. Только для чтения. Может иметь значение null.|
 |joinedTeams|Коллекция [team](team.md)|Команды Microsoft Teams, участником которых является пользователь. Только для чтения. Допускается значение null.|
 |teamwork|[userTeamwork](userteamwork.md)| Контейнер для функций Microsoft Teams, доступных пользователю. Только для чтения. Допускается значение null.|
-|messages|Коллекция [message](message.md)|The messages in a mailbox or folder. Read-only. Nullable.|
+|messages|Коллекция [message](message.md)|Сообщения в почтовом ящике или папке. Только для чтения. Допускается значение null.|
 |onenote|[onenote](onenote.md)| Только для чтения.|
 |outlook|[outlookUser](outlookuser.md)| Выборочные службы Outlook, доступные пользователю. Только для чтения. Допускается значение null.|
-|ownedDevices|Коллекция [directoryObject](directoryobject.md)|Devices that are owned by the user. Read-only. Nullable.|
-|ownedObjects|Коллекция [directoryObject](directoryobject.md)|Directory objects that are owned by the user. Read-only. Nullable.|
+|ownedDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, принадлежащие пользователю. Только для чтения. Допускается значение null.|
+|ownedObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, принадлежащие пользователю. Только для чтения. Допускается значение null.|
 |people|Коллекция [person](person.md)| Только для чтения. Наиболее релевантные люди для пользователя. Коллекция упорядочена по их релевантности для пользователя, которая определяется его общением, совместной работой и бизнес-связями. Человек представляется в виде агрегированных сведений из почты, контактов и социальных сетей.|
-|photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
-|photos|Коллекция [photo](photo.md)| Read-only. Nullable.|
+|photo|[profilePhoto](profilephoto.md)| Фотография профиля пользователя. Только для чтения.|
+|photos|Коллекция [photo](photo.md)| Только для чтения. Допускается значение null.|
 |planner|[plannerUser](planneruser.md)| Выборочные службы Планировщика, доступные пользователю. Только для чтения. Допускается значение null. |
 |scopedRoleMemberOf|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Участие пользователя в административных единицах с ролью в заданной области. Только для чтения. Допускается значение null.|
-|параметры|[userSettings](usersettings.md) | Read-only. Nullable.|
-|registeredDevices|Коллекция [directoryObject](directoryobject.md)|Devices that are registered for the user. Read-only. Nullable.|
+|параметры|[userSettings](usersettings.md) | Только для чтения. Допускается значение null.|
+|registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускается значение null.|
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>Пользовательские параметры для языков и региональных форматов
 Ресурс **User** содержит свойство [mailboxSettings](../resources/mailboxsettings.md) , которое включает предпочитаемый пользователем язык, форматирование даты и времени, часовой пояс по умолчанию и другие параметры, предназначенные специально для основного почтового ящика Exchange. Эти параметры предназначены для почтовых клиентов и доступны только в том случае, если у пользователя настроен почтовый ящик. Вы можете использовать **mailboxSettings** , если ваш сценарий фокусируется только на сообщениях электронной почты, календаря, контактов и задач Outlook.
