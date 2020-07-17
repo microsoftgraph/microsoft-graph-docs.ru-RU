@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f43180f24c217c4f7d63358c235505e19423ac12
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 53a380425da84a98af83be3c7fe2b10a33bfa1e1
+ms.sourcegitcommit: 9c1abb1c87177da20e1f5bbf1fae8131ab7e4f16
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122548"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146668"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -74,6 +74,7 @@ ms.locfileid: "45122548"
 | Дополнение | Бета | Добавлен объект [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta).  |
 | Дополнение | Бета | Для объекта **organizationSettings** добавлено свойство навигации **profileCardProperties**. |
 | Дополнение | Бета | Добавлен объект **profileCardProperty** и следующие операции: <br/> [Список](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Создание](/graph/api/organizationsettings-post-profilecardproperties); <br/> Объект [Get profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta). <br/> [Обновление profileCardProperty](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Удаление](/graph/api/profilecardproperty-delete) |
+| Добавление | Бета-версия и версия 1.0 | Добавлены следующие операции для [устройств](/graph/api/resources/device): <br/> [Удаление зарегистрированного владельца](/graph/api/delete-registeredowners) <br/> [Удаление зарегистрированного пользователя](/graph/api/delete-registeredusers)|
 
 ### <a name="identity-and-access-azure-ad--conditional-access"></a>Удостоверение и доступ (Azure AD) | Условный доступ
 
@@ -2445,7 +2446,7 @@ ms.locfileid: "45122548"
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | бета        | Добавлен аргумент **deferCommit** для действия [createUploadSession](/graph/api/driveitem-createuploadsession?view=graph-rest-beta) в объекте [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)|
 | Дополнение        | бета        | Добавлен сложный тип [storagePlanInformation](/graph/api/resources/storageplaninformation?view=graph-rest-beta) |
-| Дополнение        | бета        | Добавлено свойство **storagePlanInformation** для сложного типа [quota](/graph/api/resources/quota?view=graph-rest-beta) |
+| Добавление        | бета        | Добавлено свойство **storagePlanInformation** для сложного типа [quota](/graph/api/resources/quota?view=graph-rest-beta) |
 | Дополнение        | Бета-версия        | Добавлено свойство навигации **following** для объекта [drive](/graph/api/resources/drive?view=graph-rest-beta) |
 | Дополнение        | бета        | Добавлено действие [follow](/graph/api/driveitem-follow?view=graph-rest-beta) для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) |
 | Дополнение        | бета        | Добавлено свойство **hasPassword** для объекта [permission](/graph/api/resources/permission?view=graph-rest-beta) |
@@ -2633,7 +2634,7 @@ ms.locfileid: "45122548"
 |Удаление|бета| Удалены следующие типы перечисления: <br/> **alertType** <br/> **applicationPermissionsRequired** |
 | Дополнение        | бета       | Добавлено свойство **fileHash** для объекта [fileSecurityState](/graph/api/resources/filesecuritystate?view=graph-rest-beta ).|
 |Удаление|бета| Удалены свойства **authenticodeHash256** и **sha256** из объекта [fileSecurityState](/graph/api/resources/filesecuritystate?view=graph-rest-beta). |
-| Дополнение | бета | Добавлено свойство **os** для объекта [hostSecurityState](/graph/api/resources/hostsecuritystate?view=graph-rest-beta).|
+| Добавление | бета | Добавлено свойство **os** для объекта [hostSecurityState](/graph/api/resources/hostsecuritystate?view=graph-rest-beta).|
 | Дополнение | бета | Добавлены свойства **category**, **family** и **wasRunning** для объекта [malwareState](/graph/api/resources/malwarestate?view=graph-rest-beta).|
 |Удаление|бета| Удалено свойство **aliases** из объекта [malwareState](/graph/api/resources/malwarestate?view=graph-rest-beta). |
 |Изменение|бета| Свойство **malwareWasRunning** перемещено из объекта [alert](/graph/api/resources/alert?view=graph-rest-beta ) в [malwareState](/graph/api/resources/malwarestate?view=graph-rest-beta) и переименовано в **wasRunning**. |
@@ -3624,7 +3625,7 @@ ms.locfileid: "45122548"
 | Изменение      | Бета-версия    | Добавлены API [getSkypeForBusinessDeviceUsageUserDetail](/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta), [getSkypeForBusinessDeviceUsageDistributionUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta) и [getSkypeForBusinessDeviceUsageUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta). Они заменили API SfbDeviceUsage. |
 | Изменение      | Бета-версия    | Добавлены API [getSkypeForBusinessOrganizerActivityCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta), [getSkypeForBusinessOrganizerActivityUserCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta) и [getSkypeForBusinessOrganizerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta). Они заменили API SfbOrganizerActivity. |
 | Изменение      | Бета-версия    | Добавлены API [getSkypeForBusinessParticipantActivityCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta), [getSkypeForBusinessParticipantActivityUserCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta) и [getSkypeForBusinessParticipantActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta). Они заменили API SfbParticipantActivity. |
-| Изменение      | Бета-версия    | Добавлены API [getSkypeForBusinessPeerToPeerActivityCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta), [getSkypeForBusinessPeerToPeerActivityUserCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta) и [getSkypeForBusinessPeerToPeerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta). Они заменили API SfbP2PActivity. |
+| Изменение      | Бета    | Добавлены API [getSkypeForBusinessPeerToPeerActivityCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta), [getSkypeForBusinessPeerToPeerActivityUserCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta) и [getSkypeForBusinessPeerToPeerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta). Они заменили API SfbP2PActivity. |
 | Изменение      | Бета-версия    | Добавлены API [getYammerActivityUserDetail](/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-beta), [getYammerActivityCounts](/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-beta) и [getYammerActivityUserCounts](/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-beta). Они заменили API YammerActivity. |
 | Изменение      | Бета-версия    | Добавлены API [getYammerDeviceUsageUserDetail](/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-beta), [getYammerDeviceUsageDistributionUserCounts](/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-beta) и [getYammerDeviceUsageUserCounts](/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-beta). Они заменили API YammerDeviceUsage. |
 | Изменение      | Бета-версия    | Добавлены API [getYammerGroupsActivityDetail](/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-beta), [getYammerGroupsActivityGroupCounts](/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-beta) и [getYammerGroupsActivityCounts](/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-beta). Они заменили API YammerGroupsActivity. |
