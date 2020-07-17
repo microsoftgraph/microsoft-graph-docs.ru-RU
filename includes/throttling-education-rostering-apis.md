@@ -3,19 +3,19 @@ author: baywet
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 608fff09019b4fdcce15a0ccb9a8b991d0f971b8
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 1cbd1f9e09b596fd10ca9763c15c5b2284fcce71
+ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989932"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45142495"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 
-| Тип запроса | Максимальное количество клиентов для каждого приложения | Ограничение на приложение по клиенту |
+| Тип запроса | Ограничение на приложение для всех арендаторов | Ограничение на приложение по клиенту |
 | ------------ | ------- | ------- |
-| Любые | 23000 запросов в течение 10 секунд | 5000 запросов в течение 10 секунд |
+| Любое | 23000 запросов за 10 секунд | 50000 запросов за 10 секунд |
 
-Предыдущие пределы применяются к следующим ресурсам:  
-educationClass, educationOrganization, Едукатионрут, educationSchool, educationStudent, educationTeacher, Едукатионтерм, educationUser.
+Указанные выше ограничения действуют для следующих ресурсов:  
+educationClass, educationOrganization, educationRoot, educationSchool, educationStudent, educationTeacher, educationTerm, educationUser.
