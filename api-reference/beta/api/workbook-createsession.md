@@ -1,24 +1,24 @@
 ---
-title: Create Session
-description: 'Используйте этот API для создания сеанса книги. '
+title: Создание сеанса
+description: 'Создайте новый сеанс книги. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 33a52d7ce90d7fcd7ea8c20464c81a2d3c907348
-ms.sourcegitcommit: d6374f42bee4de11fd7a3d0d8c2a7f8c4e7739bc
+ms.openlocfilehash: a74b5e670c5a38ea1a959db058d407c4a6bb896e
+ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44710673"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45165102"
 ---
-# <a name="create-session"></a>Create Session
+# <a name="create-session"></a>Создание сеанса
 
 Пространство имен: microsoft.graph
 
-Используйте этот API для создания сеанса книги. 
+Создайте новый сеанс книги. 
 
-API Excel можно вызвать в одном из двух режимов: 
+Интерфейсы API Excel можно вызвать в одном из двух режимов. 
 
 1. Постоянный сеанс — все изменения, внесенные в книгу, сохраняются (сохраненные). Это обычный режим работы. 
 2. Временный сеанс — изменения, внесенные интерфейсом API, не сохраняются в исходном расположении. Вместо этого внутренний сервер Excel сохраняет временную копию файла, в которой отражены изменения, внесенные во время конкретного сеанса API. Когда истечет срок действия сеанса Excel, изменения будут потеряны. Этот режим удобен для приложений, которым нужно выполнять анализ или получать результаты вычислений или изображение диаграммы, не изменяя состояние документа.   
@@ -27,7 +27,13 @@ API Excel можно вызвать в одном из двух режимов:
 
 >**Примечание.** Заголовок сеанса не является обязательным для работы API Excel. Тем не менее мы рекомендуем использовать заголовок сеанса для повышения производительности. Если вы не используете заголовок сеанса, изменения, внесенные во время вызова API _сохраняются_ в файл.  
 
-## <a name="error-handling"></a>Обработка ошибок
+В некоторых случаях для создания нового сеанса требуется неопределенное время. Microsoft Graph также предоставляет шаблон операций длительного выполнения. Этот шаблон предоставляет способ опроса обновлений состояния создания, не дожидаясь завершения создания. Ниже описаны действия, которые следует выполнить.
+
+1. В `Prefer: respond-async` запрос добавляется заголовок, указывающий на выполнение длительной операции.
+2. В ответе возвращается `Location` заголовок, указывающий URL-адрес для опроса состояния операции создания. Вы можете получить состояние операции, обратившись к указанному URL-адресу. Состояние будет одним из следующих: `notStarted` ,, `running` `succeeded` , или `failed` .
+3. После завершения операции можно запросить состояние повторно, а в ответе будет отображаться либо `succeeded` `failed` .
+
+### <a name="error-handling"></a>Обработка ошибок
 
 Иногда при выполнении этого запроса может отображаться сообщение об ошибке 504 HTTP. В этом случае нужно повторить запрос.
 
@@ -50,16 +56,17 @@ POST /workbook/createSession
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажите представление JSON объекта [WorkbookSessionInfo](../resources/workbooksessioninfo.md).
 
 ## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код ответа `201 Created` и объект [WorkbookSessionInfo](../resources/workbooksessioninfo.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [workbookSessionInfo](../resources/workbooksessioninfo.md) в тексте отклика. Для длительной операции она возвращает `202 Accepted ` код отклика и `Location` заголовок с пустым текстом в ответе.
 
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-basic-session-creation"></a>Пример 1: создание базового сеанса
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -89,10 +96,9 @@ Content-length: 52
 
 ---
 
-В теле запроса укажите представление JSON объекта [WorkbookSessionInfo](../resources/workbooksessioninfo.md).
+#### <a name="response"></a>Отклик
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,6 +112,33 @@ Content-length: 52
 {
   "id": "id-value",
   "persistChanges": true
+}
+```
+### <a name="example-2-session-creation-with-long-running-operation-pattern"></a>Пример 2: Создание сеанса с длительным шаблоном операции
+
+#### <a name="request"></a>Запросить
+
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
+Prefer: respond-async
+Content-type: application/json
+{
+    "persistChanges": true
+}
+```
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
+Content-type: application/json
+{
 }
 ```
 

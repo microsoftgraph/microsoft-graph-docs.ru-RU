@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 47a0a9cc517bad5ad005a23b1de94a38992da44e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 34523b5ff0e358344b8c3c5b695e89a9bdddd7a2
+ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519423"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45165109"
 ---
 # <a name="workbook-resource-type"></a>Тип ресурса "книга"
 
@@ -36,6 +36,7 @@ ms.locfileid: "42519423"
 |tables|Коллекция [воркбуктабле](workbooktable.md) |Представляет коллекцию таблиц, сопоставленных с книгой. Только для чтения.|
 |worksheets|Коллекция [воркбукворкшит](workbookworksheet.md) |Представляет коллекцию листов, сопоставленных с книгой. Только для чтения.|
 |воркббукаппликатион|[воркбукаппликатион](workbookapplication.md) |Представляет Воркбукаппликатион Excel, который управляет книгой.|
+|operations|Коллекция [воркбукоператион](workbookoperation.md)|Состояние операций книги. Получение коллекции операций не поддерживается, но вы можете получить состояние длительной операции, если `Location` заголовок возвращается в ответе. Только для чтения. Допускается значение null.|
 
 ## <a name="functions"></a>Функции
 
