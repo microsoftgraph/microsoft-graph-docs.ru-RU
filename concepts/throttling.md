@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 12ae7bf122d23c6460dcbc253b1fe743768e49ba
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 96592654fffb3111a398178d807da702c398e0d2
+ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123717"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45165116"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -62,6 +62,12 @@ ms.locfileid: "45123717"
 - [внешний элемент (Поиск Майкрософт)](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Отчет](/graph/api/resources/report)
 - [Подписка](/graph/api/resources/subscription)
+- [Запрос на оценку угроз](/graph/api/resources/threatassessmentrequest)
+- [Запрос на оценку почты](/graph/api/resources/mailassessmentrequest)
+- [Запрос на оценку файла электронной почты](/graph/api/resources/emailfileassessmentrequest)
+- [Запрос на оценку файла](/graph/api/resources/fileassessmentrequest)
+- [Запрос на оценку URL-адреса](/graph/api/resources/urlassessmentrequest)
+- [Результаты оценки угроз](/graph/api/resources/threatassessmentresult)
 - [Популярное](/graph/api/resources/insights-trending)
 - [Используемая аналитика](/graph/api/resources/insights-used)
 - [Совместная аналитика](/graph/api/resources/insights-shared)
@@ -150,6 +156,13 @@ Microsoft Graph позволяет получать доступ к данным
 | [Сведения о собрании](/graph/api/resources/meetinginfo)   | 2000 собраний на пользователя каждый месяц |
 | [Присутствие](/graph/api/resources/presence) (предварительная версия)   | 2 запроса в секунду |
 
+### <a name="project-rome-service-limits"></a>Ограничения службы Project Rome
+
+| Тип запроса | Ограничение на пользователя для всех приложений | | GET          | 400 запросов в течение 5 минут и 12000 запросов в течение 1 дня | | POST, PUT, PATCH, DELETE | 100 запросов в течение 5 минут и 8000 запросов в течение 1 дня |
+
+Указанные выше ограничения действуют для следующих ресурсов:  
+activityHistoryItem, userActivity
+
 ### <a name="microsoft-teams-service-limits"></a>Ограничения службы Microsoft Teams
 
 Ограничения выражаются в виде запросов в секунду (RPS).
@@ -176,16 +189,28 @@ Microsoft Graph позволяет получать доступ к данным
 
 См. Также [ограничения Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) и [требования к опросу](/graph/api/resources/teams-api-overview#polling-requirements).
 
+### <a name="information-protection"></a>Защита информации
+
+Указанные ниже ограничения применяются к любому запросу в `/informationProtection`.
+
+| Операция                 | Ограничение для каждого клиента                                            | Ограничение на ресурс (электронная почта, URL-адрес, файл)                |
+|---------------------------|-------------------------------------------------------------|------------------------------------------------------|
+| POST                      | 150 запросов в течение 15 минут и 10000 запросов в течение 24 часов | 1 запрос в течение 15 минут и 3 запроса в течение 24 часов |
+
+Указанные выше ограничения действуют для следующих ресурсов:  
+threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFileAssessmentRequest, fileAssessmentRequest, urlAssessmentRequest.
+
 ### <a name="identity-protection-and-conditional-access-service-limits"></a>Ограничения в отношении защиты удостоверений и службы условного доступа
 
 | Тип запроса | Ограничение для каждого клиента |
 | ------------ | ------- |
-| Любое | 1 запрос в секунду |
+| Любой | 1 запрос в секунду |
 
 Указанные выше ограничения действуют для следующих ресурсов:  
 riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
 
 > **Примечание.** В настоящее время перечисленные выше ресурсы не возвращают заголовок `Retry-After` в ответах `429 Too Many Requests`.
+
 ### <a name="insights-service-limits"></a>Ограничения службы аналитики
 
 Указанные ниже ограничения применяются к любому запросу в `me/insights` или `users/{id}/insights`.
@@ -213,6 +238,14 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 | Операция                 | Ограничение для каждого клиента             |
 |---------------------------|------------------------------|
 | Любая операция             | 150 запросов за 5 секунд   |
+
+### <a name="open-and-schema-extensions-service-limits"></a>Ограничения службы для открытых расширений и расширений схемы
+
+| Тип запроса | Ограничение на приложение по клиенту |
+| ------------ | ------------------------ |
+| Любой          | 455 запросов в течение 10 секунд |
+
+Указанные выше ограничения действуют для следующих ресурсов: openTypeExtension, schemaExtension, administrativeUnit, contact, device, event, group, message, organization, post и user.
 
 <!-- { "blockType": "throttlinggenstart" } -->
 ### <a name="education-service-limits"></a>Ограничения службы для образования
