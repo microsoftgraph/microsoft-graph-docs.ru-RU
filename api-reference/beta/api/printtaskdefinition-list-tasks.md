@@ -7,56 +7,56 @@ ms.prod: universal-print
 doc_type: apiPageType
 ms.openlocfilehash: 5344ce081e53e46e482adc34961a4f4e89bcc4d8
 ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/09/2020
 ms.locfileid: "45091672"
 ---
-# <a name="list-tasks"></a><span data-ttu-id="fd5a6-103">Перечисление задач</span><span class="sxs-lookup"><span data-stu-id="fd5a6-103">List tasks</span></span>
+# <a name="list-tasks"></a><span data-ttu-id="2ad97-103">Перечисление задач</span><span class="sxs-lookup"><span data-stu-id="2ad97-103">List tasks</span></span>
 
-<span data-ttu-id="fd5a6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fd5a6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2ad97-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2ad97-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fd5a6-105">Получение списка [задач](../resources/printtask.md) , связанных с [определением задачи](../resources/printtaskdefinition.md).</span><span class="sxs-lookup"><span data-stu-id="fd5a6-105">Retrieve a list of [tasks](../resources/printtask.md) associated with a [task definition](../resources/printtaskdefinition.md).</span></span>
+<span data-ttu-id="2ad97-105">Получение списка [задач](../resources/printtask.md) , связанных с [определением задачи](../resources/printtaskdefinition.md).</span><span class="sxs-lookup"><span data-stu-id="2ad97-105">Retrieve a list of [tasks](../resources/printtask.md) associated with a [task definition](../resources/printtaskdefinition.md).</span></span>
 
-<span data-ttu-id="fd5a6-106">Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).</span><span class="sxs-lookup"><span data-stu-id="fd5a6-106">For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).</span></span>
+<span data-ttu-id="2ad97-106">Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).</span><span class="sxs-lookup"><span data-stu-id="2ad97-106">For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fd5a6-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fd5a6-107">Permissions</span></span>
-<span data-ttu-id="fd5a6-108">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="fd5a6-108">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="fd5a6-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fd5a6-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2ad97-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2ad97-107">Permissions</span></span>
+<span data-ttu-id="2ad97-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2ad97-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="fd5a6-110">В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.</span><span class="sxs-lookup"><span data-stu-id="fd5a6-110">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
+<span data-ttu-id="2ad97-110">В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.</span><span class="sxs-lookup"><span data-stu-id="2ad97-110">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
 
-|<span data-ttu-id="fd5a6-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fd5a6-111">Permission type</span></span> | <span data-ttu-id="fd5a6-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fd5a6-112">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="2ad97-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2ad97-111">Permission type</span></span> | <span data-ttu-id="2ad97-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2ad97-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="fd5a6-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fd5a6-113">Delegated (work or school account)</span></span>| <span data-ttu-id="fd5a6-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fd5a6-114">Not supported.</span></span> |
-|<span data-ttu-id="fd5a6-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fd5a6-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fd5a6-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fd5a6-116">Not Supported.</span></span>|
-|<span data-ttu-id="fd5a6-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fd5a6-117">Application</span></span>| <span data-ttu-id="fd5a6-118">Принттаскдефинитион. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="fd5a6-118">PrintTaskDefinition.ReadWrite.All</span></span> |
+|<span data-ttu-id="2ad97-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2ad97-113">Delegated (work or school account)</span></span>| <span data-ttu-id="2ad97-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2ad97-114">Not supported.</span></span> |
+|<span data-ttu-id="2ad97-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2ad97-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2ad97-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2ad97-116">Not Supported.</span></span>|
+|<span data-ttu-id="2ad97-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2ad97-117">Application</span></span>| <span data-ttu-id="2ad97-118">Принттаскдефинитион. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="2ad97-118">PrintTaskDefinition.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fd5a6-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fd5a6-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2ad97-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2ad97-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/taskDefinitions/{id}/tasks
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="fd5a6-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="fd5a6-120">Optional query parameters</span></span>
-<span data-ttu-id="fd5a6-121">Этот метод поддерживает некоторые параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="fd5a6-121">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="fd5a6-122">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="fd5a6-122">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2ad97-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="2ad97-120">Optional query parameters</span></span>
+<span data-ttu-id="2ad97-121">Этот метод поддерживает некоторые параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="2ad97-121">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="2ad97-122">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="2ad97-122">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-### <a name="exceptions"></a><span data-ttu-id="fd5a6-123">Exceptions</span><span class="sxs-lookup"><span data-stu-id="fd5a6-123">Exceptions</span></span>
-<span data-ttu-id="fd5a6-124">Некоторые операторы не поддерживаются: `$count` , `$format` , `$search` , `$select` , `$skip` , `$top` .</span><span class="sxs-lookup"><span data-stu-id="fd5a6-124">Some operators are not supported: `$count`, `$format`, `$search`, `$select`, `$skip`, `$top`.</span></span>
+### <a name="exceptions"></a><span data-ttu-id="2ad97-123">Exceptions</span><span class="sxs-lookup"><span data-stu-id="2ad97-123">Exceptions</span></span>
+<span data-ttu-id="2ad97-124">Некоторые операторы не поддерживаются: `$count` , `$format` , `$search` , `$select` , `$skip` , `$top` .</span><span class="sxs-lookup"><span data-stu-id="2ad97-124">Some operators are not supported: `$count`, `$format`, `$search`, `$select`, `$skip`, `$top`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="fd5a6-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fd5a6-125">Request headers</span></span>
-| <span data-ttu-id="fd5a6-126">Имя</span><span class="sxs-lookup"><span data-stu-id="fd5a6-126">Name</span></span>      |<span data-ttu-id="fd5a6-127">Описание</span><span class="sxs-lookup"><span data-stu-id="fd5a6-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2ad97-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2ad97-125">Request headers</span></span>
+| <span data-ttu-id="2ad97-126">Имя</span><span class="sxs-lookup"><span data-stu-id="2ad97-126">Name</span></span>      |<span data-ttu-id="2ad97-127">Описание</span><span class="sxs-lookup"><span data-stu-id="2ad97-127">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="fd5a6-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fd5a6-128">Authorization</span></span> | <span data-ttu-id="fd5a6-129">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="fd5a6-129">Bearer {token}.</span></span> <span data-ttu-id="fd5a6-130">Required.</span><span class="sxs-lookup"><span data-stu-id="fd5a6-130">Required.</span></span> |
+| <span data-ttu-id="2ad97-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2ad97-128">Authorization</span></span> | <span data-ttu-id="2ad97-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2ad97-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fd5a6-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fd5a6-131">Request body</span></span>
-<span data-ttu-id="fd5a6-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fd5a6-132">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="fd5a6-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="fd5a6-133">Response</span></span>
-<span data-ttu-id="fd5a6-134">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принттаск](../resources/printtask.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="fd5a6-134">If successful, this method returns a `200 OK` response code and collection of [printTask](../resources/printtask.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="fd5a6-135">Пример</span><span class="sxs-lookup"><span data-stu-id="fd5a6-135">Example</span></span>
-### <a name="request"></a><span data-ttu-id="fd5a6-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="fd5a6-136">Request</span></span>
-<span data-ttu-id="fd5a6-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fd5a6-137">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2ad97-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="2ad97-131">Request body</span></span>
+<span data-ttu-id="2ad97-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2ad97-132">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="2ad97-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="2ad97-133">Response</span></span>
+<span data-ttu-id="2ad97-134">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принттаск](../resources/printtask.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2ad97-134">If successful, this method returns a `200 OK` response code and collection of [printTask](../resources/printtask.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="2ad97-135">Пример</span><span class="sxs-lookup"><span data-stu-id="2ad97-135">Example</span></span>
+### <a name="request"></a><span data-ttu-id="2ad97-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="2ad97-136">Request</span></span>
+<span data-ttu-id="2ad97-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2ad97-137">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -68,9 +68,9 @@ GET https://graph.microsoft.com/beta/print/taskDefinitions/92d72a3d-cad7-4809-89
 
 ---
 
-### <a name="response"></a><span data-ttu-id="fd5a6-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="fd5a6-138">Response</span></span>
-<span data-ttu-id="fd5a6-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fd5a6-139">The following is an example of the response.</span></span>
-><span data-ttu-id="fd5a6-140">**Note:** The response object shown here might be shortened for readability.</span><span class="sxs-lookup"><span data-stu-id="fd5a6-140">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="fd5a6-141">All the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="fd5a6-141">All the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="2ad97-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="2ad97-138">Response</span></span>
+<span data-ttu-id="2ad97-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="2ad97-139">The following is an example of the response.</span></span>
+><span data-ttu-id="2ad97-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2ad97-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
