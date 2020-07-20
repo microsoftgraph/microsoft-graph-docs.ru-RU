@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 75672eedd4b1693b31058de6531c470db548a033
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 83f868f9223f2837d1a4818cf227b94573db3480
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897934"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45184004"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Справочные материалы по REST API Microsoft Graph v1.0
 
@@ -36,11 +36,11 @@ ms.locfileid: "44897934"
 8. Получение последней проекции продаж из [диаграммы](./resources/chart.md) в файле Excel в инструменте Марии OneDrive для бизнеса.
 9. [Поиск задач, назначенных Марии, в планировщике](./api/planneruser-list-tasks.md).
 
-### <a name="microsoft-365-group-use-cases-in-v10"></a>Варианты использования группы Microsoft 365 в версии 1.0
+### <a name="microsoft-365-group-use-cases-in-v10"></a>Варианты использования групп Microsoft 365 в версии 1.0
 
-1. Запустите отчет по группам Microsoft 365 в Организации и определите группу с наибольшим количеством [сообщений среди участников группы](./api/reportroot-getoffice365groupsactivitycounts.md).
-2. [Найдите планы этой группы Microsoft 365](./api/plannergroup-list-plans.md)и [назначение задач](./resources/plannerassignments.md) в этом плане.
-3. [Начните новую беседу](./api/group-post-conversations.md) в группе Microsoft 365, чтобы определить, нужно ли участникам [создавать другую группу](./api/group-post-groups.md) для совместного использования рабочей нагрузки.
+1. Запуск отчета о группах Microsoft 365 в организации и определение группы с самыми часто [общающимися участниками группы](./api/reportroot-getoffice365groupsactivitycounts.md).
+2. [Поиск планов группы Microsoft 365](./api/plannergroup-list-plans.md) и [назначение задач](./resources/plannerassignments.md) в плане.
+3. [Начало новой беседы](./api/group-post-conversations.md) в группе Microsoft 365, чтобы определить, хотят ли участники [создать другую группу](./api/group-post-groups.md) для предоставления общего доступа к рабочей нагрузке.
 4. [Получение стандартной записной книжки](./api/notebook-get.md) для группы и [создание страницы](./api/section-post-pages.md) для записи результата исследования.
 
 ## <a name="other-api-versions"></a>Другие версии API
@@ -54,14 +54,14 @@ ms.locfileid: "44897934"
 
 В запросах API Microsoft Graph к конечной точке версии 1.0 используется следующий шаблон:
 
-```
+```http
 https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 ```
 
 Дополнительные сведения см. в статье [Использование API Microsoft Graph](/graph/use-the-api).
 
 ## <a name="whats-new"></a>Новые возможности
-Сведения о [последних новых возможностях и обновлениях](/graph/whats-new-overview) в конечной точке версии 1.0.
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) конечной точки версии 1.0.
 
 ## <a name="connect-with-us"></a>Обратная связь
 
