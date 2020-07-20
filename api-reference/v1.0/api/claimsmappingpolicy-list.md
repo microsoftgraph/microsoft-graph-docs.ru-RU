@@ -7,7 +7,7 @@ ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 40c3b9bc1f40634aebcc2f975d489323cd8fde50
 ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/24/2020
 ms.locfileid: "44863300"
@@ -20,7 +20,7 @@ ms.locfileid: "44863300"
 
 ## <a name="permissions"></a>Разрешения
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
 
 Ниже приведен пример отклика.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

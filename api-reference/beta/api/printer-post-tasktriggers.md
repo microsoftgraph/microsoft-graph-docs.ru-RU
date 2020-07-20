@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ms.openlocfilehash: 453759faf24ac5c116e3f1d9bf73aa7771aae595
 ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/09/2020
 ms.locfileid: "45091756"
@@ -21,7 +21,7 @@ ms.locfileid: "45091756"
 Создание нового [триггера задачи](../resources/printtasktrigger.md) на указанном [принтере](../resources/printer.md). В настоящее время для каждого принтера можно указать только **один** триггер задачи, но это предельное значение может быть удалено в будущем. Кроме того, только приложение, которое зарегистрировало принтер, может управлять триггерами задач.
 
 ## <a name="permissions"></a>Разрешения
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
 
@@ -40,8 +40,8 @@ POST /print/printers/{id}/taskTriggers
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token}. Required. |
-| Content-Type  | application/json. Required.|
+| Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [принттасктригжер](../resources/printtasktrigger.md) в формате JSON. Предоставьте ссылку на [принттаскдефинитион](../resources/printtaskdefinition.md) с помощью `@odata.bind` формата, как показано в следующем примере.
@@ -70,7 +70,7 @@ POST https://graph.microsoft.com/beta/print/printers/ae63f617-4856-4b45-8ea9-69d
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

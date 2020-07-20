@@ -7,7 +7,7 @@ ms.prod: Intune
 doc_type: apiPageType
 ms.openlocfilehash: 882a5d1cafa8e25d4a69a0c525c0bb8d3b971cd1
 ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "44792809"
@@ -23,7 +23,7 @@ ms.locfileid: "44792809"
 После включения пользователи, которым назначена роль "Администраторы" через членство в назначениях ролей, больше не требуют назначенной лицензии Intune. У вас может быть до 350 нелицензированных нелицензированных участников для каждой группы безопасности AAD в назначении ролей, но для одной роли можно назначить несколько групп безопасности AAD, если вам требуется поддержка более 350 нелицензированных администраторов. Лицензированные администраторы продолжат действовать без ограничений, так как в этом случае применяются эти транзитивные членства, и они не подчиняются ограничению члена 350.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -61,7 +61,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/enableUnlicensedAdminstra
 ```
 
 ### <a name="response"></a>Отклик
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```

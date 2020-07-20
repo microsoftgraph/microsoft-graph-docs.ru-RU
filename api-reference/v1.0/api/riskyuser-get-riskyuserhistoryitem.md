@@ -7,7 +7,7 @@ ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 141aaa6a1c0642159cccfe075aa8934fa65883cd
 ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44897577"
@@ -21,7 +21,7 @@ ms.locfileid: "44897577"
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
 ## <a name="permissions"></a>Разрешения
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -45,7 +45,7 @@ GET /identityProtection/riskyUsers/{userId}/history
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Required.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

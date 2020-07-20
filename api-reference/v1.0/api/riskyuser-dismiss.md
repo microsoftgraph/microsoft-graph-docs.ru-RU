@@ -7,7 +7,7 @@ ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 25bbea620a48b22d4baef4f2e6dd9d2a5681c730
 ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44897584"
@@ -20,7 +20,7 @@ ms.locfileid: "44897584"
 Отклонить риск одного или нескольких объектов [рискюсер](../resources/riskyuser.md) . Это действие задает для уровня риска целевого пользователя значение нет.
 
 ## <a name="permissions"></a>Разрешения
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,8 +41,8 @@ POST /identityProtection/riskyUsers/dismiss
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+|Авторизация|Bearer {токен}. Обязательный.|
+|Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.

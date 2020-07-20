@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ms.openlocfilehash: a0b64166b6d7c95f3ad4995321b50b2c4aaadda9
 ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/08/2020
 ms.locfileid: "45081083"
@@ -21,7 +21,7 @@ ms.locfileid: "45081083"
 Создайте (Зарегистрируйте) принтер с помощью универсальной службы печати. Это длительно выполняемая операция, которая возвращает объект [принтеркреатеоператион](../resources/printercreateoperation.md) , который можно использовать для отслеживания и проверки регистрации принтера.
 
 ## <a name="permissions"></a>Разрешения
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
 
@@ -39,8 +39,8 @@ POST /print/printers/create
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token}. Required. |
-| Content-Type  | application/json. Required.|
+| Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите объект JSON со следующими свойствами.

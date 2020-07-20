@@ -7,7 +7,7 @@ ms.prod: settings
 doc_type: apiPageType
 ms.openlocfilehash: 6ff0e617656524e43fafa85a800a3adb99282f70
 ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "44791182"
@@ -21,7 +21,7 @@ ms.locfileid: "44791182"
 Получение свойств объекта [регионаландлангуажесеттингс](../resources/regionalAndLanguageSettings.md) .
 
 ## <a name="permissions"></a>Разрешения
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                   |Разрешение (по крайней мере для самых привилегированных)     |
 |----------------------------------|---------------------------------------------- |
@@ -42,7 +42,7 @@ GET /settings/regionalAndLanguageSettings
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {token}. Required.|
+| Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Тело запроса

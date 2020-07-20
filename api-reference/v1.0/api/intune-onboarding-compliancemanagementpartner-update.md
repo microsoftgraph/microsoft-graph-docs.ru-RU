@@ -7,7 +7,7 @@ ms.prod: Intune
 doc_type: apiPageType
 ms.openlocfilehash: 9574c2ddaacb60f9c41ea73608445de93365cb6e
 ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/16/2020
 ms.locfileid: "44744171"
@@ -21,7 +21,7 @@ ms.locfileid: "44744171"
 Обновление свойств объекта [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -112,7 +112,7 @@ Content-length: 982
 ```
 
 ### <a name="response"></a>Отклик
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

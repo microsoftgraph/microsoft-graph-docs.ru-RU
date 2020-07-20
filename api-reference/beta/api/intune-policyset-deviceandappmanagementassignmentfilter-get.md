@@ -7,7 +7,7 @@ ms.prod: Intune
 doc_type: apiPageType
 ms.openlocfilehash: 7ef4d24ff9c6cf8a49e1647d2268a73eb76aa274
 ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "44791744"
@@ -23,7 +23,7 @@ ms.locfileid: "44791744"
 Чтение свойств и связей объекта [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/assignmentFilters/{deviceA
 ```
 
 ### <a name="response"></a>Отклик
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

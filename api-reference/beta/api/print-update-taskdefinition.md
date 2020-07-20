@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ms.openlocfilehash: c0f0140b23291b77a5c00ff42b209f1f2af89a67
 ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/09/2020
 ms.locfileid: "45091720"
@@ -23,7 +23,7 @@ ms.locfileid: "45091720"
 Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## <a name="permissions"></a>Разрешения
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
 
@@ -42,8 +42,8 @@ PATCH /print/taskDefinitions/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token}. Required. |
-| Content-Type  | application/json. Required.|
+| Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей [принттаскдефинитион](../resources/printtaskdefinition.md) , которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
@@ -54,7 +54,7 @@ PATCH /print/taskDefinitions/{id}
 |createdBy|String|Сведения о приложении, которое создало определение задачи. `createdBy.displayName`Можно обновить только свойство.|
 
 ## <a name="response"></a>Отклик
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

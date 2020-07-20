@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ms.openlocfilehash: 147e1271ee0f5bcd7c04e167e172c48939a4da98
 ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/09/2020
 ms.locfileid: "45091717"
@@ -23,7 +23,7 @@ ms.locfileid: "45091717"
 Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## <a name="permissions"></a>Разрешения
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
 
@@ -42,8 +42,8 @@ POST /print/taskDefinitions
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token}. Required. |
-| Content-Type  | application/json. Required.|
+| Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [принттаскдефинитион](../resources/printtaskdefinition.md) в формате JSON.
@@ -77,7 +77,7 @@ Content-length: 122
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
