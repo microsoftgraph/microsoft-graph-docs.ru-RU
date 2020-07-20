@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 6625be6f12c3d2b430afa2d9099072955c68efdf
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: bddb5f41d1cab8a48497669e7bccc791b8866cfa
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44251109"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183955"
 ---
 # <a name="list-printers"></a>Список принтеров
 
@@ -25,9 +25,9 @@ ms.locfileid: "44251109"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись)| User.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Сервер приложений|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,9 +36,9 @@ GET /print/printers
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-### <a name="exceptions"></a>Исключения
+### <a name="exceptions"></a>Exceptions
 * `$expand`Операторы and `select` поддерживаются для `share` Свойства навигации, но не для `jobs` .
 * Некоторые операторы не поддерживаются: `$count` , `$search` .
 

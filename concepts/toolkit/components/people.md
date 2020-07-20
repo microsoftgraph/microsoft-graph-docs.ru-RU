@@ -3,12 +3,12 @@ title: Компонент "люди" в наборе инструментов Mi
 description: Вы можете использовать `mgt-people` веб-компонент для отображения группы людей или контактов с помощью фотографий или инициалов.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: aa51f6d0c459425cdb9a01dbd3a61f5613e58678
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 8e942ad0cca446dc8bf982249a7593b8299fe22e
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682028"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183976"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Компонент "люди" в наборе инструментов Microsoft Graph
 
@@ -62,7 +62,7 @@ mgt-people {
 
 `mgt-people`Поддерживает несколько [шаблонов](../templates.md) , которые можно использовать для замены определенных частей компонента. Чтобы указать шаблон, включите элемент в `<template>` компонент и задайте `data-type` для него одно из следующих значений.
 
-| Тип данных | Контекст данных | Description |
+| Тип данных | Контекст данных | Описание |
 | --- | --- | --- |
 | `default` | `people`: список объектов Person | Шаблон по умолчанию заменяет весь компонент своим собственным. |
 | `person` | `person`: объект Person | Шаблон, используемый для отображения каждого пользователя. |
@@ -89,9 +89,16 @@ mgt-people {
 
 В этом компоненте используются следующие API и разрешения Microsoft Graph:
 
-| Resource | Permission |
+| Ресурс | Разрешение |
 | - | - |
 | [/ме/пеопле](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
+
+При использовании шаблонов по умолчанию требуются дополнительные API и разрешения. В шаблоне по умолчанию для этого компонента используется компонент " [упр. Person](person.md) ", для которого требуется следующее.
+
+| Ресурс | Разрешение |
+| - | - |
+| [/Users](/graph/api/user-list?view=graph-rest-1.0) | Users. ReadBasic. ALL |
+| [/ме/календарвиев](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read |
 
 ## <a name="authentication"></a>Проверка подлинности
 

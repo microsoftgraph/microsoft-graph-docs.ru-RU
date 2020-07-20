@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: c0a1bac4fa0a80435d381d62aaa4b90df3352c33
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: 35759e9be3d2ea4aeade45f6e6b040a2b45f3be9
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986105"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183913"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса Онлинемитинг
 
@@ -24,9 +24,10 @@ ms.locfileid: "42986105"
 
 | Метод         | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-| [Создание объекта onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Создайте собрание по сети. |
-| [Получение Онлинемитинг](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Чтение свойств и связей объекта **онлинемитинг** . |
-| [Создание или получение Онлинемитинг](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Создайте собрание по сети с пользовательским внешним ИДЕНТИФИКАТОРом. Если собрание уже существует, извлеките его значение. |
+| [Создание](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Создайте собрание по сети. |
+| [получение](../api/onlinemeeting-get.md); | [onlineMeeting](onlinemeeting.md) | Чтение свойств и связей объекта **онлинемитинг** . |
+| [Создание или получение Онлинемитинг](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Создайте собрание по сети с пользовательским внешним ИДЕНТИФИКАТОРом. Если собрание уже существует, извлеките его свойства. |
+| [обновление](../api/onlinemeeting-update.md). | [onlineMeeting](onlinemeeting.md) | Обновление свойств **startDateTime**, **endDateTime**, **subject**и **участников** собрания по сети. |
 
 ## <a name="properties"></a>Свойства
 
@@ -42,10 +43,10 @@ ms.locfileid: "42986105"
 | жоинвебурл                   | String                                                 | URL-адрес присоединения к собранию по сети. Только для чтения.|
 | participants              | [митингпартиЦипантс](meetingparticipants.md)          | Участники, связанные с собранием по сети.  Сюда входят Организатор и участники. |
 | subject                   | String                                                 | Тема собрания по сети. |
-| capabilities              | Коллекция объектов string                                      | Список возможностей собрания. Возможные значения: `questionAndAnswer`. |
+| capabilities              | Коллекция String                                      | Список возможностей собрания. Возможные значения: `questionAndAnswer` . |
 | видеотелеконференцеид     | String                                                 | Идентификатор видеоконференций для видеоконференций. Только для чтения. |
 | жоининформатион | [itemBody](itembody.md) | Сведения о присоединении на языке и языковом варианте, указанным в HTTP-заголовке запроса Accept-Language. Только для чтения |
-| externalId                | String                                                 | Внешний идентификатор. Настраиваемый идентификатор. Необязательное. |
+| externalId                | String                                                 | Внешний идентификатор. Настраиваемый идентификатор. Необязательный параметр. |
 
 ### <a name="autoadmittedusers-values"></a>значения Аутоадмиттедусерс
 | Значение | Описание  |

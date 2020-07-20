@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a577d050ae55ec7b99cbceb23f27a6dd4ec2121f
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 036b9c84bda2a30e00206194768c621f127a4d75
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081363"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183675"
 ---
 # <a name="profilecardproperty-resource-type"></a>Тип ресурса Профилекардпроперти
 
@@ -26,11 +26,11 @@ ms.locfileid: "45081363"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [Список](../api/organizationsettings-list-profilecardproperties.md) | [профилекардпроперти](profilecardproperty.md) | Чтение свойств и связей объекта **профилекардпроперти** . |
-| [Создание](../api/organizationsettings-post-profilecardproperties.md); | [профилекардпроперти](profilecardproperty.md) | Чтение свойств и связей объекта **профилекардпроперти** . |
-| [Get](../api/profilecardproperty-get.md) | [профилекардпроперти](profilecardproperty.md) | Чтение свойств и связей объекта **профилекардпроперти** . |
-| [Update](../api/profilecardproperty-update.md)               | [профилекардпроперти](profilecardproperty.md) | Обновление объекта **профилекардпроперти** .                               |
-| [Delete](../api/profilecardproperty-delete.md)               | Нет                                          | Удаление объекта **профилекардпроперти** .                               |
+| [Список](../api/organizationsettings-list-profilecardproperties.md) | [профилекардпроперти](profilecardproperty.md) | Получение коллекции ресурсов **профилекардпроперти** Организации. |
+| [создание](../api/organizationsettings-post-profilecardproperties.md); | [профилекардпроперти](profilecardproperty.md) | Создайте новый ресурс **профилекардпроперти** для Организации. |
+| [получение](../api/profilecardproperty-get.md); | [профилекардпроперти](profilecardproperty.md) | Прочитайте свойства и связи ресурса **профилекардпроперти** , в котором содержатся настройки карты профилей, существующие в организации Microsoft 365 для данного поля. |
+| [обновление](../api/profilecardproperty-update.md).               | [профилекардпроперти](profilecardproperty.md) | Обновление объекта **профилекардпроперти** .                               |
+| [удаление](../api/profilecardproperty-delete.md);               | Нет                                          | Удаление объекта **профилекардпроперти** .                               |
 
 ## <a name="properties"></a>Свойства
 
