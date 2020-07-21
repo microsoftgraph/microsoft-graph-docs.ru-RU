@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d463fa5a00318936ef0f1612f233851e42a9db11
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 8ca137dfd96d9e363d43b5c52949fb682acd2794
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846137"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45196906"
 ---
 # <a name="synchronizationschema-resource-type"></a>Тип ресурса Синчронизатионсчема
 
@@ -50,41 +50,35 @@ ms.locfileid: "44846137"
 
 | Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
-|каталоги            |Коллекция [директоридефинитион](synchronization-directorydefinition.md)   |Описывает каталоги и объекты, входящие в состав [синчронизатионжоб](synchronization-synchronizationjob.md) или [синчронизатионтемплате](synchronization-synchronizationtemplate.md). |
-|синчронизатионрулес   |Коллекция [синчронизатионруле](synchronization-synchronizationrule.md)   |Коллекция правил синхронизации, настроенных для [синчронизатионжоб](synchronization-synchronizationjob.md) или [синчронизатионтемплате](synchronization-synchronizationtemplate.md) |
+|id|String|Уникальный идентификатор схемы.|
+|синчронизатионрулес   |Коллекция [синчронизатионруле](synchronization-synchronizationrule.md)   |Коллекция правил синхронизации, настроенных для [синчронизатионжоб](synchronization-synchronizationjob.md) или [синчронизатионтемплате](synchronization-synchronizationtemplate.md). |
 |version                |String                             |Версия схемы, автоматически обновляемая при каждом изменении схемы.|
 
 
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
+|:---|:---|:---|
+|каталоги|Коллекция [директоридефинитион](../resources/synchronization-directorydefinition.md)|Содержит коллекцию каталогов и всех их объектов.|
+
 ## <a name="json-representation"></a>Представление JSON
-
 Ниже указано представление ресурса в формате JSON.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.synchronizationSchema"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.synchronizationSchema",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
 {
-  "directories": [{"@odata.type": "microsoft.graph.directoryDefinition"}],
-  "provisioningTaskIdentifier": "String (identifier)",
-  "synchronizationRules": [{"@odata.type": "microsoft.graph.synchronizationRule"}],
+  "@odata.type": "#microsoft.graph.synchronizationSchema",
+  "id": "String (identifier)",
+  "synchronizationRules": [
+    {
+      "@odata.type": "microsoft.graph.synchronizationRule"
+    }
+  ],
   "version": "String"
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "synchronizationSchema resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->

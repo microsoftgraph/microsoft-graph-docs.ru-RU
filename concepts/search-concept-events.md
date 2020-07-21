@@ -4,12 +4,12 @@ description: Вы можете выполнять поиск в собствен
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 6326fead96cd0b777ff6c3e257d6aa36d4d5c4ce
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: 8cafb01337581d1b1d2e355363aec14f658ee4f6
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568783"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45196829"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-calendar-events"></a>Использование API службы поиска Microsoft в Microsoft Graph для поиска событий календаря
 
@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-Можно получить доступ к собственному календарю пользователя. Общий календарь и делегированный сченариос доступа не поддерживаются.
+Можно получить доступ к собственному календарю пользователя. Сценарии общего календаря и делегированного доступа не поддерживаются.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

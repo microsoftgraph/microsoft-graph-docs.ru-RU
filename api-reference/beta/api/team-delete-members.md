@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1ffce12f12288c7d184a5fd0a591ca6c48dac59c
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: 0e81527c98ea20161db62516827d82c48c2706d2
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142271"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45197032"
 ---
 # <a name="delete-members"></a>Удаление участников
 Пространство имен: microsoft.graph
@@ -35,7 +35,7 @@ ms.locfileid: "45142271"
 }
 -->
 ``` http
-DELETE /teams/{team-id}/members/{member-id}
+DELETE /teams/{team-id}/members/{membership-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -61,7 +61,7 @@ DELETE /teams/{team-id}/members/{member-id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members
+DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members/{membership-id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-members-from-team-csharp-snippets.md)]

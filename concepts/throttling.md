@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 32aa347085701234ffc08c5450aca480a1796e22
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: a62b88927f33b12f9e9738f8b8ba299a22f6d099
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183941"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45197067"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -280,6 +280,17 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 | Любой          | 455 запросов в течение 10 секунд |
 
 Указанные выше ограничения действуют для следующих ресурсов: openTypeExtension, schemaExtension, administrativeUnit, contact, device, event, group, message, organization, post и user.
+
+### <a name="identity-and-access-data-policy-operation-service-limits"></a>Ограничения службы операций с политикой данных удостоверений и доступа
+
+| Тип запроса | Ограничение для каждого клиента |
+| ------------ | ---------------- |
+| POST для `exportPersonalData` | 1000 запросов в день по любой теме и 100 запросов по теме в день |
+| Любой другой запрос | 10000 запросов в час |
+
+Указанные выше ограничения действуют для следующих ресурсов: dataPolicyOperation.
+
+> **Примечание.** Перечисленные выше ресурсы не возвращают заголовок `Retry-After` в откликах `429 Too Many Requests`.
 
 <!-- { "blockType": "throttlinggenstart" } -->
 ### <a name="education-service-limits"></a>Ограничения службы для образования
