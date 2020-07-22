@@ -1309,7 +1309,7 @@ items:
                     href: api/audioroutinggroup-get.md
                   - name: Обновление
                     href: api/audioroutinggroup-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/audioroutinggroup-delete.md
               - name: Запись данных качества устройства видеотелеконференцией
                 href: api/call-logteleconferencedevicequality.md
@@ -1320,8 +1320,6 @@ items:
                 href: api/application-post-onlinemeetings.md
               - name: Получение
                 href: api/onlinemeeting-get.md
-              - name: Обновление
-                href: api/onlinemeeting-patch.md
               - name: Удаление
                 href: api/onlinemeeting-delete.md
               - name: Создание или получение
@@ -1440,7 +1438,7 @@ items:
                 href: api/bookingcustomer-get.md
               - name: Обновление
                 href: api/bookingcustomer-update.md
-              - name: Удаление
+              - name: Delete
                 href: api/bookingcustomer-delete.md
           - name: bookingService
             href: resources/bookingservice.md
@@ -1485,7 +1483,7 @@ items:
                     href: api/printconnector-get.md
                   - name: Обновление
                     href: api/printconnector-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/printconnector-delete.md
               - name: Задание печати
                 href: resources/printjob.md
@@ -3636,7 +3634,7 @@ items:
                   - name: Профиль сертификата PKCS Android
                     href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-get.md
@@ -3651,7 +3649,7 @@ items:
                   - name: Профиль сертификата SCEP для Android
                     href: resources/intune-deviceconfig-androidscepcertificateprofile.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androidscepcertificateprofile-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidscepcertificateprofile-get.md
@@ -5308,7 +5306,7 @@ items:
                   - name: Конфигурация VPN для macOS
                     href: resources/intune-deviceconfig-macosvpnconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-macosvpnconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-macosvpnconfiguration-get.md
@@ -5360,7 +5358,7 @@ items:
                   - name: Состояние сертификата управляемого устройства
                     href: resources/intune-deviceconfig-manageddevicecertificatestate.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-manageddevicecertificatestate-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-manageddevicecertificatestate-get.md
@@ -7043,7 +7041,7 @@ items:
                   - name: Экземпляр параметра строки управления устройствами
                     href: resources/intune-deviceintent-devicemanagementstringsettinginstance.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceintent-devicemanagementstringsettinginstance-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementstringsettinginstance-get.md
@@ -7060,7 +7058,7 @@ items:
                   - name: Шаблон управления устройствами
                     href: resources/intune-deviceintent-devicemanagementtemplate.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceintent-devicemanagementtemplate-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementtemplate-get.md
@@ -8544,8 +8542,6 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: Список
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: 'Девицеманажементдериведкредентиалсеттингс] (.. /ресаурцес/интуне-Шаред-девицеманажементдериведкредентиалсеттингс.МД) | Создание'
-                        href: api/intune-shared-devicemanagementderivedcredentialsettings.md
                       - name: Удалить
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: Сценарий управления устройствами
@@ -10190,6 +10186,13 @@ items:
                         href: api/accesspackage-list-accesspackageresourcerolescopes.md
                       - name: Создание
                         href: api/accesspackage-post-accesspackageresourcerolescopes.md
+                  - name: Параметры управления обслуживанием
+                    href: resources/entitlementmanagementsettings.md
+                    items:
+                      - name: Получение
+                        href: api/entitlementmanagementsettings-get.md
+                      - name: Update
+                        href: api/entitlementmanagementsettings-update.md
               - name: Служба Privileged Identity Management
                 items:
                   - name: Служба Privileged Identity Management
@@ -11361,7 +11364,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
