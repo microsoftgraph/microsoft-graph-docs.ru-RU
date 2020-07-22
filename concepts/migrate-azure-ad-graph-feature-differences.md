@@ -4,12 +4,12 @@ description: Описание различий между функциями API
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7bebb0437ac3f099d7518640ad4fbb0f9fd75990
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 531b2c9b441f328118597802b6478d5b45276965
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845780"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45224880"
 ---
 # <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия между функциями Azure AD Graph и Microsoft Graph
 
@@ -28,6 +28,7 @@ ms.locfileid: "44845780"
 Если ваше приложение использует расширения схемы каталога Graph Azure AD, вы можете продолжать использовать одни и те же базовые API (с URL-адресами запросов Microsoft Graph):
 
 - Управление определениями свойств расширения с помощью свойства **екстенсионпропертиес** в ресурсе [Application] [/граф/АПИ/ресаурцес/аппликатион? View = Graph-REST-v 1.0).
+- Получите доступные свойства расширения с помощью действия [жетаваилабликстенсионпропертиес](/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-v1.0) .
 - Считывание значений расширений с помощью GET и`$select`
 - Поиск по значениям расширений с помощью GET и`$filter`
 - Обновление значений расширений с помощью PATCH

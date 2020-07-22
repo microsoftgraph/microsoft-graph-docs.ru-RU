@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: ce8572f3f71a64a41f02b33da51c35132d162201
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 00b029c5dcbf297d7504a0c30ca7512d523c17ce
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383758"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45225132"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления обслуживанием Azure AD
 
@@ -31,6 +31,7 @@ ms.locfileid: "44383758"
 - [акцесспаккажеассигнментресаурцероле](accesspackageassignmentresourcerole.md): Указывает роль, связанную с определенным ресурсом, которой назначена тема с помощью назначения пакета Access.
 - [акцесспаккажекаталог](accesspackagecatalog.md): контейнер для пакетов доступа.
 - [акцесспаккажересаурцерекуест](accesspackageresourcerequest.md): запрос на Добавление ресурса в каталог пакетов Access.
+- [ентитлементманажементсеттингс](entitlementmanagementsettings.md): параметры на уровне клиента для управления обслуживанием Azure AD.
 
 Обратите внимание, что функция управления обслуживанием, включая API, включена в Azure AD Premium P2. Клиент, на котором используется управление обслуживанием, должен иметь допустимую приобретенную или пробную подписку на Azure AD Premium P2 или EMS.
 
@@ -40,6 +41,8 @@ ms.locfileid: "44383758"
 
 | Метод           | Тип возвращаемых данных    |Описание|
 |:---------------|:--------|:----------|
+| [получение](../api/entitlementmanagementsettings-get.md); | [ентитлементманажементсеттингс](entitlementmanagementsettings.md) | Чтение свойств объекта **ентитлементманажементсеттингс** . |
+| [обновление](../api/entitlementmanagementsettings-update.md). | [ентитлементманажементсеттингс](entitlementmanagementsettings.md) | Обновление свойств объекта **ентитлементманажементсеттингс** . |
 | [Список Акцесспаккажес](../api/accesspackage-list.md) | Коллекция [акцесспаккаже](accesspackage.md) | Получение списка объектов **акцесспаккаже** . |
 | [Создание Акцесспаккаже](../api/accesspackage-post.md) | [акцесспаккаже](accesspackage.md) | Создание нового объекта **акцесспаккаже** . |
 | [Получение Акцесспаккаже](../api/accesspackage-get.md) | [акцесспаккаже](accesspackage.md) | Чтение свойств и связей объекта **акцесспаккаже** . |
