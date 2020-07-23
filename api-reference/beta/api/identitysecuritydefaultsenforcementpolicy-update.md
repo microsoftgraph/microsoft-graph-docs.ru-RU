@@ -2,15 +2,15 @@
 title: Обновление Идентитисекуритидефаултсенфорцементполици
 description: Обновление свойств объекта Идентитисекуритидефаултсенфорцементполици.
 localization_priority: Normal
-author: dkershaw10
+author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 653397a076e930ac38119c99703db97157b84ccb
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: bf4566e08a07147144993c7b17cacbd22890c54e
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556277"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384320"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>Обновление Идентитисекуритидефаултсенфорцементполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "44556277"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Сервер приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Приложение                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 
 ## <a name="http-request"></a>HTTP-запрос
 

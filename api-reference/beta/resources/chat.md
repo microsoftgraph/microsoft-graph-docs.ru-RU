@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 43ed088889a4b81d59cb9e1361ed978c9cb61141
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: dc68d36c63a2cd88eeb7fed91d187b220cbb805d
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864205"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384383"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса Chat
 
@@ -25,7 +25,7 @@ ms.locfileid: "44864205"
 |  Метод       |  Возвращаемый тип  | Описание| Разрешения |
 |:---------------|:--------|:----------|-----------|
 |[Список чатов](../api/chat-list.md) | Коллекция [чата](channel.md) | Получение списка сеансов, в которые входит пользователь.| **Только делегированные** |
-|[Получение чата](../api/chat-get.md) | [отображаются](channel.md) | Чтение свойств и связей чата.| **Только делегированные** |
+|[Получение чата](../api/chat-get.md) | [чат](channel.md) | Чтение свойств и связей чата.| **Только делегированные** |
 |[Список членов чата](../api/conversationmember-list.md) | Коллекция [conversationmember](conversationmember.md) | Получение списка всех пользователей в чате.| Делегирование и приложение * |
 |[Получение члена чата](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Получение одного пользователя в чате.| Делегирование и приложение * |
 |[Список сообщений в чате](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. | Делегирование и приложение * |
@@ -40,7 +40,7 @@ ms.locfileid: "44864205"
 | id| String| Уникальный идентификатор чата. Только для чтения.|
 | topic| String|  Необязательно Тема или тема чата. Доступно только для чатов групп.|
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
-| lastUpdatedDateTime| dateTimeOffset|  Дата и время обновления чата. Только для чтения.|
+| lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или изменения членства. Ластупдатеддатетиме не обновляется при отправке сообщения в чат. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
 
