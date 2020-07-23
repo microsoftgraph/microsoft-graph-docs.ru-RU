@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 923f3b449e649e3710e47ffbcfdceeff2f4d788b
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: MT
+ms.openlocfilehash: e3c281356587fbe96fa06fd760cb76beafc1b06a
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080992"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45224978"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -37,14 +37,15 @@ ms.locfileid: "45080992"
 |**Сертификаты и секреты**| | |
 |[Добавление пароля](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Добавление надежного пароля в приложение.|
 |[Удаление пароля](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Удаление пароля приложения.|
-|[Клавиша прибавления](../api/application-addkey.md)|[кэйкредентиал](keycredential.md)|Добавление в приложение учетных данных ключа.|
-|[Удалить ключ](../api/application-removekey.md)|Нет|Удаление ключевых учетных данных из приложения.|
-|**Extensions**| | |
+|[Добавление ключа](../api/application-addkey.md)|[keyCredential](keycredential.md)|Добавление в приложение учетных данных ключа.|
+|[Удаление ключа](../api/application-removekey.md)|Нет|Удаление из приложения учетных данных ключа.|
+|**Расширения**| | |
 | [Список расширений](../api/application-list-extensionproperty.md) | Коллекция [extensionProperty](extensionProperty.md) | Список свойств расширения для объекта application. |
 | [Создание расширения](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Создание свойства расширения для объекта application. |
 | [Удаление расширения](../api/application-delete-extensionproperty.md) | Нет | Удаление свойства расширения объекта application. |
-|**Owners**| | |
-|[Перечисление владельцев](../api/application-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов owner.|
+|[Получение доступных свойств расширения](../api/directoryobject-getavailableextensionproperties.md)|Коллекция [extensionProperty](../resources/extensionproperty.md)|Получение полного или отфильтрованного списка свойств расширения каталога, которые зарегистрированы в каталоге.|
+|**Владельцы**| | |
+|[Список владельцев](../api/application-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов owner.|
 |[Добавление владельца](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Добавление владельца путем помещения в коллекцию владельцев.|
 |[Удаление владельца](../api/application-delete-owners.md) |Нет| Удаление владельца приложения.|
 |**Политики**| | |
@@ -60,15 +61,15 @@ ms.locfileid: "45080992"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-| addIns | Коллекция [addIn](addin.md)| Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые способны визуализировать файловые потоки, [могут установить свойство addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) для его функции "FileHandler". Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документа, над которым работает пользователь. |
+| addIns | Коллекция [addIn](addin.md)| Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые способны визуализировать файловые потоки, [могут установить свойство addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) для его функции "FileHandler". Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документов, над которыми работает пользователь. |
 | api | [apiApplication](apiapplication.md) | Задает параметры приложения, реализующего веб-API. |
 | appId | String | Уникальный идентификатор, назначенный для приложения с помощью Azure AD. Значение null не допускается. Только для чтения. |
-| appRoles | Коллекция [appRole](approle.md) | Коллекция ролей, объявляемых приложением. С помощью [назначений ролей приложений](approleassignment.md)эти роли могут быть назначены пользователям, группам или субъектам служб других приложений. Значение null не допускается. |
+| appRoles | Коллекция [appRole](approle.md) | Набор ролей, которые объявляет приложение. С помощью команды [назначения ролей приложений](approleassignment.md) эти роли можно назначать пользователям, группам и другим субъектам-службам приложений. Значение null не допускается. |
 | createdDateTime | DateTimeOffset | Дата и время регистрации приложения. Только для чтения. |
 | deletedDateTime | DateTimeOffset | Дата и время удаления приложения. Только для чтения. |
-| displayName | Строка | Отображаемое имя приложения. |
+| displayName | String | Отображаемое имя приложения. |
 | groupMembershipClaims | String | Настраивает утверждение `groups`, выданное в маркере пользователя или маркере доступа OAuth 2.0, которого ожидает приложение. Чтобы задать этот атрибут, используйте одно из следующих допустимых строковых значений.<ul><li>`None`</li><li>`SecurityGroup` — для групп безопасности и ролей Azure AD</li><li>`All` — предоставит все группы безопасности, группы рассылки и роли каталога Azure AD, членом которых является выполнивший вход пользователь</li></ul> |
-| id | Строка | Уникальный идентификатор приложения. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
+| id | String | Уникальный идентификатор приложения. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
 | identifierUris | Коллекция String | URI, идентифицирующие приложение в клиенте Azure AD или в проверенном личном домене, если приложение является мультитенантным. Дополнительные сведения см. в статье [Объекты приложения и субъекта-службы](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals). Для выражений фильтра в случае многозначных свойств требуется оператор *any*. Значение null не допускается. |
 | info | [informationalUrl](informationalurl.md) | Базовые данные профиля для приложения, такие как URL-адреса маркетинга, поддержки, условий обслуживания и заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 | isFallbackPublicClient | Boolean | Указывает резервный тип приложения как общедоступный клиент, например установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию — `false`. Это означает, что резервный тип приложения является конфиденциальным клиентом, таким как веб-приложение. Существуют определенные сценарии, при которых Azure AD не удается определить тип клиентского приложения (например, поток [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) с настройкой без указания URI перенаправления). В таких случаях Azure AD будет интерпретировать тип приложения на основе значения этого свойства.|
