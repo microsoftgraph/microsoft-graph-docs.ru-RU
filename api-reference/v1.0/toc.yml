@@ -722,6 +722,8 @@ items:
                 href: api/serviceprincipal-update.md
               - name: Удаление
                 href: api/serviceprincipal-delete.md
+              - name: Получение дельты
+                href: api/serviceprincipal-delta.md
               - name: Список созданных объектов
                 href: api/serviceprincipal-list-createdobjects.md
               - name: Список корпоративных объектов
@@ -2542,7 +2544,7 @@ items:
               - name: Конфигурация Центра обновления Windows для бизнеса
                 href: resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md
@@ -2578,7 +2580,7 @@ items:
               - name: Событие аудита
                 href: resources/intune-auditing-auditevent.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-auditing-auditevent-list.md
                   - name: Получение
                     href: api/intune-auditing-auditevent-get.md
@@ -2984,7 +2986,7 @@ items:
                     href: api/intune-mam-targetedmanagedappconfiguration-delete.md
                   - name: Обновление
                     href: api/intune-mam-targetedmanagedappconfiguration-update.md
-                  - name: назначения действия
+                  - name: Действие назначения
                     href: api/intune-mam-targetedmanagedappconfiguration-assign.md
                   - name: Действие targetApps
                     href: api/intune-mam-targetedmanagedappconfiguration-targetapps.md
@@ -3006,7 +3008,7 @@ items:
                     href: api/intune-mam-targetedmanagedappprotection-list.md
                   - name: Получение
                     href: api/intune-mam-targetedmanagedappprotection-get.md
-                  - name: Действие назначения
+                  - name: назначения действия
                     href: api/intune-mam-targetedmanagedappprotection-assign.md
               - name: Windows Information Protection
                 href: resources/intune-mam-windowsinformationprotection.md
@@ -3801,7 +3803,7 @@ items:
                     href: api/certificatebasedauthconfiguration-get.md
                   - name: Удаление
                     href: api/certificatebasedauthconfiguration-delete.md
-              - name: условный доступ;
+              - name: Условный доступ
                 items:
                   - name: Политики
                     items:
