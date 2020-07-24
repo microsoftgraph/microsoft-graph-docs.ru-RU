@@ -362,6 +362,11 @@ items:
             href: excel-update-range-format.md
           - name: Запись данных в книгу
             href: excel-write-to-workbook.md
+          - name: Ресурсы
+            expanded: true
+            items:
+              - name: Коды ошибок
+                href: workbook-error-codes.md
   - name: Разработка
     expanded: true
     items:

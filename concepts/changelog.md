@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 2e234134bb848b36768bfff9a17ca64f8db7a827
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 691d72262eb7587fb60e1e387200f9f0f8c0c0ba
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197095"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45224859"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -84,6 +84,7 @@ ms.locfileid: "45197095"
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Дополнение|1.0|Метод [getAvailableExtensionProperties](/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0) добавлен в ресурс [directoryObject](/graph/api/resources/directoryObject?view=graph-rest-1.0).|
 | Дополнение | Бета | Для объекта [organization](/graph/api/resources/organization?view=graph-rest-beta) добавлено свойство навигации **settings**. |
 | Дополнение | Бета | Добавлен объект [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta).  |
 | Дополнение | Бета | Для объекта **organizationSettings** добавлено свойство навигации **profileCardProperties**. |
@@ -96,6 +97,7 @@ ms.locfileid: "45197095"
 | Дополнение | Бета | Добавлен элемент предоставления управления **passwordChange** для объекта [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta). |
 | Добавление | Бета | Добавлено свойство **id** в объект [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta). |
 | Добавление | Бета | Добавлен метод [acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) в ресурс [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta)|
+| Дополнение | Бета | Добавлена сущность [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta). |
 
 ### <a name="people-and-workplace-intelligence--profile-card-customization"></a>Люди и рабочая аналитика | Настройка карточки профиля
 | **Тип изменения** | **Версия**   | **Описание**                          |
@@ -1654,7 +1656,7 @@ ms.locfileid: "45197095"
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение        | бета        | Добавлено свойство **mediaState** для ресурса [call](/api-reference/beta/resources/call.md)|
 | Изменение          | бета        | Свойство **recordResourceLocation** в ресурсе [recordOperation](/api-reference/beta/resources/recordOperation.md) переименовано на **recordingLocation**|
-| Изменение          | Бета-версия        | Свойство **recordResourceAccessToken** в ресурсе [recordOperation](/api-reference/beta/resources/recordOperation.md) переименовано на **recordingAccessToken**|
+| Изменение          | бета        | Свойство **recordResourceAccessToken** в ресурсе [recordOperation](/api-reference/beta/resources/recordOperation.md) переименовано на **recordingAccessToken**|
 | Дополнение        | Бета-версия        | Добавлено свойство **capabilities** для ресурса [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) |
 | Дополнение        | Бета        | Добавлено свойство **videoTeleconferenceId** для ресурса [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) |
 | Дополнение        | бета        | Добавлено свойство **producers** для ресурса [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) |
@@ -2848,7 +2850,7 @@ ms.locfileid: "45197095"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | бета          | Добавлены объект [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta) и следующие методы и действия CRUD: <br> [перечисление](/graph/api/bookingbusiness-list?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta); <br> [получение](/graph/api/bookingbusiness-get?view=graph-rest-beta); <br> [Обновление](/graph/api/bookingbusiness-update?view=graph-rest-beta) <br> [удаление](/graph/api/bookingbusiness-delete?view=graph-rest-beta); <br> [публикация](/graph/api/bookingbusiness-publish?view=graph-rest-beta); <br> [отмена публикации](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta). <br> Узнайте больше об интеграции с [API Microsoft Bookings](booking-concept-overview.md). |
-| Дополнение        | бета          | Добавлены объект [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta) и следующие методы и действие CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta); <br> [Получение](/graph/api/bookingappointment-get?view=graph-rest-beta); <br> [Обновление](/graph/api/bookingappointment-update?view=graph-rest-beta) <br> [удаление](/graph/api/bookingappointment-delete?view=graph-rest-beta); <br> [отмена](/graph/api/bookingappointment-cancel?view=graph-rest-beta). |
+| Дополнение        | бета          | Добавлены объект [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta) и следующие методы и действие CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta); <br> [получение](/graph/api/bookingappointment-get?view=graph-rest-beta); <br> [Обновление](/graph/api/bookingappointment-update?view=graph-rest-beta) <br> [удаление](/graph/api/bookingappointment-delete?view=graph-rest-beta); <br> [отмена](/graph/api/bookingappointment-cancel?view=graph-rest-beta). |
 | Дополнение        | Бета          | Добавлены объект [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta) и следующие методы: <br> [перечисление](/graph/api/bookingcurrency-list?view=graph-rest-beta); <br> [получение](/graph/api/bookingcurrency-get?view=graph-rest-beta). |
 | Дополнение        | Бета          | Добавлены объект [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta) и следующие методы CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta) <br> [создание](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta); <br> [получение](/graph/api/bookingcustomer-get?view=graph-rest-beta); <br> [обновление](/graph/api/bookingcustomer-update?view=graph-rest-beta); <br> [удаление](/graph/api/bookingcustomer-delete?view=graph-rest-beta).|
 | Дополнение        | Бета          | Добавлены объект [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-services?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-services?view=graph-rest-beta); <br> [получение](/graph/api/bookingservice-get?view=graph-rest-beta); <br> [обновление](/graph/api/bookingservice-update?view=graph-rest-beta); <br> [удаление](/graph/api/bookingservice-delete?view=graph-rest-beta).|
@@ -3333,7 +3335,7 @@ ms.locfileid: "45197095"
 |Дополнение|Версия 1.0|Добавлено действие [sync](/graph/api/intune-onboarding-devicemanagementexchangeconnector-sync?view=graph-rest-1.0) для объекта [deviceManagementExchangeConnector](/graph/api/resources/intune-onboarding-devicemanagementexchangeconnector?view=graph-rest-1.0). |
 |Дополнение|1.0|Добавлено действие [setPriority](/graph/api/intune-onboarding-deviceenrollmentconfiguration-setpriority?view=graph-rest-1.0) для объекта [deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [assign](/graph/api/intune-onboarding-deviceenrollmentconfiguration-assign?view=graph-rest-1.0) для объекта [deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration?view=graph-rest-1.0). |
-|Дополнение|Версия 1.0|Добавлено действие [assign](/graph/api/intune-mam-targetedmanagedappprotection-assign?view=graph-rest-1.0) для объекта [targetedManagedAppProtection](/graph/api/resources/intune-mam-targetedmanagedappprotection?view=graph-rest-1.0). |
+|Дополнение|1.0|Добавлено действие [assign](/graph/api/intune-mam-targetedmanagedappprotection-assign?view=graph-rest-1.0) для объекта [targetedManagedAppProtection](/graph/api/resources/intune-mam-targetedmanagedappprotection?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [assign](/graph/api/intune-mam-targetedmanagedappconfiguration-assign?view=graph-rest-1.0) для объекта [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-1.0). |
 |Дополнение|1.0|Добавлено действие [assign](/graph/api/intune-mam-windowsinformationprotection-assign?view=graph-rest-1.0) для объекта [windowsInformationProtection](/graph/api/resources/intune-mam-windowsinformationprotection?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [targetApps](/graph/api/intune-mam-managedapppolicy-targetapps?view=graph-rest-1.0) для объекта [managedAppPolicy](/graph/api/resources/intune-mam-managedapppolicy?view=graph-rest-1.0). |

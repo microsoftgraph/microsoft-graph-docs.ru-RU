@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 423c86bf2d034a87b6c7e5d24a0ec9b9e5b017c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 202bb1aa21330868fe4506bfe75191d818fc32ba
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446368"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408087"
 ---
 # <a name="get-informationprotectionlabel"></a>Получение Информатионпротектионлабел
 
@@ -28,33 +28,38 @@ ms.locfileid: "42446368"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Информатионпротектионполици. Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Информатионпротектионполици. Read. ALL        |
+| Приложение                            | Информатионпротектионполици. Read. ALL        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
-
+Чтобы получить метку, доступную для вошедшего пользователя или указанного пользователя:
 ```http
-GET /informationprotection/policy/labels/{id}
-GET /informationprotection/policy/labels
+GET /me/informationProtection/policy/labels/{id}
+GET /users/{id | user-principal-name}/informationProtection/policy/labels/{id}
+```
+
+Чтобы получить метку, доступную для Организации:
+```http
+GET /informationProtection/policy/labels/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
-| User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
+| User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [информатионпротектионлабел](../resources/informationprotectionlabel.md) в тексте отклика.
 
