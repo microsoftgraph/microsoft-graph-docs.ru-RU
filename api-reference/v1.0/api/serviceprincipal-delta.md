@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 19d7e364c5a3c8a6ea7aa9839ec53320b8c4c434
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: bcdafd649cfc313bfbb8d019c6bb3a6e9080051b
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383562"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408108"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal: Delta
 
@@ -36,7 +36,7 @@ ms.locfileid: "44383562"
 GET /servicePrincipals/delta
 ```
 
-### <a name="query-parameters"></a>Параметры запроса
+## <a name="query-parameters"></a>Параметры запроса
 
 Отслеживание изменений приводит к округлению одного или нескольких вызовов функции **Delta** . Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик. Параметры запроса нужно указать только один раз в первом запросе. Копируйте и применяйте URL-адрес `nextLink` или `deltaLink` из предыдущего ответа в последующих запросах, так как в нем уже содержаться закодированные параметры.
 
@@ -45,7 +45,7 @@ GET /servicePrincipals/delta
 | $deltatoken | string | [Токен состояния](/graph/delta-query-overview) возвращается в `deltaLink` URL-адресе предыдущего вызова функции **Delta** для той же коллекции ресурсов, что указывает на завершение этого круга отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
 | $skiptoken | string | [Токен состояния](/graph/delta-query-overview) возвращается в `nextLink` URL-адресе предыдущего вызова функции **Delta** , указывая, что в коллекции ресурсов отслеживаются другие изменения. |
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+### <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает параметры запросов OData для настройки ответа.
 
