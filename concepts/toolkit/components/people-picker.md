@@ -3,12 +3,12 @@ title: Компонент "Выбор людей"
 description: Вы можете использовать веб-компонент "центр управления", чтобы выполнить поиск указанного числа людей и отобразить список результатов с помощью Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: e3e656c6aef0ab2af9878fb3e4738ade912c4685
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 2e7d03a0c6728d3ff775282343a847ba88afbf42
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681888"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408073"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент "Выбор людей" в наборе инструментов Microsoft Graph
 
@@ -34,6 +34,7 @@ ms.locfileid: "44681888"
 | Тип группы     | groupType      | Тип группы для поиска. Доступные варианты: `unified` ,, `security` `mailenabledsecurity` , `distribution` , `any` . Значение по умолчанию: `any`. Этот атрибут не оказывает никакого действия, если `type` свойство имеет значение `person` .                                                                           |
 |  Выбранные пользователи  | селектедпеопле     | Массив выбранных пользователей. Задайте это значение для программного выбора людей.|
 | people   | people    | Массив людей, найденных и визуализированных в результатах поиска |
+| по умолчанию — выбранные: Users ID | дефаултселектедусеридс | При указании строки с разделителями, разделенными запятыми, компонент отрисовывает соответствующих пользователей, как выбрано при инициализации.
 
 Ниже приведен `show-max` пример.
 
@@ -93,7 +94,9 @@ mgt-people-picker {
 
     --dropdown-background-color: #1f1f1f; /* selection area background color */
     --dropdown-item-hover-background: #333d47; /* person background color on hover */
-
+    
+    --selected-person-background-color: #f1f1f1; /* person item background color */
+    
     --font-color: white; /* input area border focus color */
     --placeholder-default-color: #f1f1f1; /* placeholder text color default*/
     --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
@@ -104,14 +107,14 @@ mgt-people-picker {
 
  `mgt-people-picker`поддерживает несколько [шаблонов](../templates.md) , которые можно использовать для замены определенных частей компонента. Чтобы указать шаблон, включите элемент в `<template>` компонент и задайте `data-type` для него одно из следующих значений.
 
-| Тип данных | Контекст данных | Description |
+| Тип данных | Контекст данных | Описание |
 | --- | --- | --- |
 | Значение  по умолчанию | NULL: нет данных | Шаблон, используемый для переопределения отображения всего компонента.
 | загрузки | NULL: нет данных | Шаблон, используемый для отображения состояния средства выбора при запросе к Graph. |
 | error | NULL: нет данных | Шаблон, используемый, если поиск пользователей не возвращает пользователей. |
 | нет данных | NULL: нет данных | Альтернативный шаблон, используемый в случае, если поиск пользователей не возвращает пользователей. |
 | выбранное лицо | Person: объект сведений о лице | Шаблон для отображения выбранных пользователей. |
-| которому | Person: объект сведений о лице | Шаблон для отображения людей в раскрывающемся меню. |
+| person | Person: объект сведений о лице | Шаблон для отображения людей в раскрывающемся меню. |
 
 В приведенных ниже примерах показано, как использовать `error` шаблон.
 
@@ -127,7 +130,7 @@ mgt-people-picker {
 
 Этот компонент использует указанные ниже API и разрешения Microsoft Graph.
 
-| API                                                                                                              | Permission  |
+| API                                                                                                              | Разрешение  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/ме/пеопле](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
 | [/Users](/graph/api/user-list?view=graph-rest-1.0)  | User.ReadBasic.All |
