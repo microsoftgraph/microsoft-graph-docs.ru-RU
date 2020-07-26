@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 421a169078122c9cf49a82179fcf4d666f2b5b8b
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: Auto
+ms.openlocfilehash: c23cfa46279a3d11824df4f97aafd88f9d9f3dec
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081314"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408122"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -18,31 +18,34 @@ ms.locfileid: "45081314"
 
 Представляет экземпляр приложения в каталоге. Наследуется от [directoryObject](directoryobject.md).
 
+Этот ресурс поддерживает отслеживание добавлений, удалений и обновлений с помощью [разностного запроса](/graph/delta-query-overview) с функцией [delta](../api/serviceprincipal-delta.md).
+
 ## <a name="methods"></a>Методы
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
 |[Перечисление servicePrincipals](../api/serviceprincipal-list.md) | Коллекция [servicePrincipal](serviceprincipal.md) | Получение списка объектов servicePrincipal. |
-|[Создание servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md)| [servicePrincipal](serviceprincipal.md) | Создает новый объект servicePrincipal. |
+|[Создать servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md)| [servicePrincipal](serviceprincipal.md) | Создание нового объекта servicePrincipal. |
 |[Получение объекта servicePrincipal](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |Чтение свойств и связей объекта servicePrincipal.|
-|[Обновление servicePrincipal](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |Обновление объекта servicePrincipal. |
-|[Удаление servicePrincipal](../api/serviceprincipal-delete.md) | Нет. |Удаление объекта servicePrincipal.|
+|[Обновить servicePrincipal](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |Обновление объекта servicePrincipal. |
+|[Удалить servicePrincipal](../api/serviceprincipal-delete.md) | Нет |Удаление объекта servicePrincipal.|
 |[Перечисление createdObjects](../api/serviceprincipal-list-createdobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов createdObject.|
-|[Перечисление ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов ownedObject.|
-|**Назначения ролей приложений**| | |
-|[Перечисление appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |Коллекция [appRoleAssignment](approleassignment.md)| Получение ролей приложений, которым назначен данный участник службы.|
-|[Добавление Аппролеассигнмент](../api/serviceprincipal-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Назначьте роль приложения этому субъекту службы.|
-|[Удаление Аппролеассигнмент](../api/serviceprincipal-delete-approleassignments.md) | Нет | Удаление назначения роли приложения для этого участника службы.|
-|[Список Аппролеассигнедто](../api/serviceprincipal-list-approleassignedto.md) |Коллекция [appRoleAssignment](approleassignment.md)| Получение пользователей, групп и субъектов служб, которым назначены роли приложения для этого участника службы.|
-|[Добавление Аппролеассигнедто](../api/serviceprincipal-post-approleassignedto.md) |[appRoleAssignment](approleassignment.md)| Назначьте роль приложения для этого субъекта службы пользователю, группе или субъекту службы.|
-|[Удаление Аппролеассигнедто](../api/serviceprincipal-delete-approleassignedto.md) | Нет | Удаление назначения роли приложения для этого участника службы от пользователя, группы или субъекта службы.|
+|[Список ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов ownedObject.|
+|[Получение разницы](../api/serviceprincipal-delta.md)|Коллекция servicePrincipal| Получение добавочных изменений для субъектов-служб. |
+|**Назначение ролей приложений**| | |
+|[Перечисление appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |Коллекция [appRoleAssignment](approleassignment.md)| Получение ролей приложений, которым назначен этот субъект-служба.|
+|[Добавление объекта appRoleAssignment](../api/serviceprincipal-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Назначение роли приложения субъекту-службе.|
+|[Удаление объекта appRoleAssignment](../api/serviceprincipal-delete-approleassignments.md) | Нет | Удаление назначения роли приложения субъекта-службы.|
+|[List appRoleAssignedTo](../api/serviceprincipal-list-approleassignedto.md) |Коллекция [appRoleAssignment](approleassignment.md)| Создание пользователей, ролей и назначенных ролей приложений для этого субъекта-службы.|
+|[Add appRoleAssignedTo](../api/serviceprincipal-post-approleassignedto.md) |[appRoleAssignment](approleassignment.md)| Назначение роли для этого субъекта-службы пользователю, группе или субъекту-службе.|
+|[Remove appRoleAssignedTo](../api/serviceprincipal-delete-approleassignedto.md) | Нет | Удаление назначенной роли этого субъекта-службы у пользователя, группы или субъекта-службы.|
 |**Сертификаты и секреты**| | |
-|[Добавление пароля](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|Добавьте надежный пароль для servicePrincipal.|
+|[Добавление пароля](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|Добавление стойкого пароля объекту servicePrincipal.|
 |[Удаление пароля](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|Удаление пароля из servicePrincipal.|
-|[Клавиша прибавления](../api/serviceprincipal-addkey.md)|[кэйкредентиал](keycredential.md)|Добавление ключевых учетных данных в servicePrincipal.|
-|[Удалить ключ](../api/serviceprincipal-removekey.md)|Нет|Удаление ключевых учетных данных из servicePrincipal.|
+|[Добавление ключа](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|Добавление учетных данных ключа объекту servicePrincipal.|
+|[Удаление ключа](../api/serviceprincipal-removekey.md)|Нет|Удаление учетных данных ключа объекта servicePrincipal.|
 |**Предоставление делегированных разрешений**| | |
-|[Перечисление oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)| Получение делегированного разрешения предоставляет авторизацию этого субъекта-службы для доступа к API от имени пользователя, выполнившего вход в систему.|
+|[Перечисление oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)| Получите предоставление делегированных разрешений, предоставляющих этому объекту-службе доступ к API от имени пользователя, вошедшего в систему.|
 |**Членство**.| | |
 |[Перечисление memberOf](../api/serviceprincipal-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп, непосредственным участником которых является субъект-служба, из свойства навигации memberOf.|
 |[Перечисление транзитивных свойств memberOf](../api/serviceprincipal-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп, в которых участвует субъект-служба. Эта операция является транзитивной и включает группы, в которых состоит субъект-служба. |
@@ -50,14 +53,14 @@ ms.locfileid: "45081314"
 |[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|Коллекция String|Проверка участия в указанном списке группы, роли каталога или объектах административных единиц.|
 |[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|Коллекция String|Список групп, в которых участвует субъект-служба.|
 |[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|Коллекция String|Список групп и ролей каталога, в которых участвует субъект-служба.|
-|**Owners**| | |
-|[Перечисление владельцев](../api/serviceprincipal-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов owner.|
+|**Владельцы**| | |
+|[Список владельцев](../api/serviceprincipal-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов owner.|
 |[Добавление владельца](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Создание владельца путем добавления в коллекцию владельцев.|
-|[Удаление владельца](../api/serviceprincipal-delete-owners.md) |Нет| Удаление владельца из serviceprincipal.|
+|[Удаление владельца](../api/serviceprincipal-delete-owners.md) |Нет| Удаление владельца serviceprincipal.|
 |**Политики**| | |
 |[Назначение типа ресурса claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md)| Коллекция [claimsMappingPolicy](claimsmappingpolicy.md)| Назначение типа ресурса claimsMappingPolicy объекту.|
 |[Перечисление типов ресурсов claimsMappingPolicy](../api/serviceprincipal-list-claimsmappingpolicies.md)| Коллекция [claimsMappingPolicy](claimsmappingpolicy.md)| Получение всех типов ресурсов claimsMappingPolicy, назначенных объекту.|
-|[Удаление типа ресурса claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md)| Коллекция [claimsMappingPolicy](claimsmappingpolicy.md)| Удаление объекта Клаимсмаппингполици из этого объекта.|
+|[Удаление типа ресурса claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md)| Коллекция [claimsMappingPolicy](claimsmappingpolicy.md)| Удаление claimsMappingPolicy этого объекта.|
 |[Назначение типа ресурса homeRealmDiscoveryPolicy](../api/serviceprincipal-post-homerealmdiscoverypolicies.md)| Коллекция [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)| Назначение типа ресурса homeRealmDiscoveryPolicy объекту.|
 |[Перечисление типов ресурсов homeRealmDiscoveryPolicy](../api/serviceprincipal-list-homerealmdiscoverypolicies.md)| Коллекция [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)| Получение всех типов ресурсов homeRealmDiscoveryPolicy, назначенных объекту.|
 |[Удаление типа ресурса homeRealmDiscoveryPolicy](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md)| Коллекция [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)| Удаление типа ресурса homeRealmDiscoveryPolicy из объекта.|
@@ -72,32 +75,32 @@ ms.locfileid: "45081314"
 | Свойство     | Тип |Описание|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| Значение **true**, если учетная запись субъекта-службы включена. В противном случае используется значение **false**.|
-| addIns | Коллекция [addIn](addin.md) | Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые способны визуализировать файловые потоки, [могут установить свойство addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) для его функции "FileHandler". Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документа, над которым работает пользователь.|
-|алтернативенамес|Коллекция String| Используется для получения субъектов служб по подписке, идентификации группы ресурсов и полных идентификаторов ресурсов для [управляемых удостоверений](https://aka.ms/azuremanagedidentity).|
+| addIns | Коллекция [addIn](addin.md) | Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые способны визуализировать файловые потоки, [могут установить свойство addIns](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) для его функции "FileHandler". Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документов, над которыми работает пользователь.|
+|alternativeNames|Коллекция строк| Используется для получения субъектов-служб по подпискам, для идентификации групп ресурсов и полных идентификаторов ресурсов для [управляемых удостоверений](https://aka.ms/azuremanagedidentity).|
 |appDisplayName|String|Отображаемое имя, предоставляемое связанным приложением.|
 |appId|String|Уникальный идентификатор для связанного приложения (его свойство **appId**).|
-|аппликатионтемплатеид|String|Уникальный идентификатор Аппликатионтемплате, из которого было создано servicePrincipal. Только для чтения.|
-|апповнерорганизатионид|String|Содержит идентификатор клиента, в котором зарегистрировано приложение. Это относится только к субъектам-службам, которые поддерживаются приложениями.|
-|appRoleAssignmentRequired|Boolean|Указывает, должны ли пользователи или другие субъекты служб предоставлять назначение роли приложения для этого участника службы, прежде чем пользователи смогут входить в систему или получать маркеры. Значение по умолчанию — **false**. Значение null не допускается. |
-|appRoles|Коллекция [appRole](approle.md)|Роли, предоставляемые приложением, которое представляет этот участник службы. Дополнительные сведения см. в определении свойства **appRoles** для объекта [application](application.md). Значение null не допускается. |
-| deletedDateTime | DateTimeOffset | Дата и время удаления участника службы. Только для чтения. |
-|displayName|Строка|Отображаемое имя для субъекта-службы.|
-|homepage|String|Домашняя или целевая страница приложения.|
+|applicationTemplateId|Строка|Уникальный идентификатор шаблона applicationTemplate, из которого создан объект servicePrincipal. Только для чтения.|
+|appOwnerOrganizationId|Строка|Содержит идентификатор клиента, в котором зарегистрировано приложение. Применимо только для субъектов-служб на основе приложений.|
+|appRoleAssignmentRequired|Boolean|Указывает, нужно ли предоставлять назначение роли пользователям или другим субъектам-службам для этого субъекта-службы, прежде чем пользователи смогут выполнять вход, а приложения — получать маркеры. Значение по умолчанию — **false**. Значение null не допускается. |
+|appRoles|Коллекция [appRole](approle.md)|Роли, предоставляемые приложением, которое представляет этот субъект-служба. Дополнительные сведения см. в определении свойства **appRoles** для объекта [application](application.md). Значение null не допускается. |
+| deletedDateTime | DateTimeOffset | Дата и время удаления субъекта-службы. Только для чтения. |
+|displayName|String|Отображаемое имя для субъекта-службы.|
+|homepage|String|Главная или начальная страница приложения.|
 |id|String|Уникальный идентификатор для субъекта-службы. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
-| info | [informationalUrl](informationalurl.md) | Основные сведения о профиле приобретенного приложения, такие как сведения о маркетинговом приложении, поддержке, условия обслуживания и URL-адреса заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
+| info | [informationalUrl](informationalurl.md) | Базовые данные профиля для полученного приложения, такие как URL-адреса маркетинга, поддержки, условий обслуживания и заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 |keyCredentials|Коллекция [keyCredential](keycredential.md)|Коллекция ключевых учетных данных, связанных с субъектом-службой. Значение null не допускается.            |
-|логинурл|String|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует URL-адрес для запуска приложения из Microsoft 365 или Azure AD мои приложения. Если это поле не заполнено, Azure AD выполняет IdP вход для приложений, настроенных с [единым входом на основе SAML](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, "Мои приложения Azure AD" или URL-адрес единого входа Azure AD.|
-|logoutUrl|String| Указывает URL-адрес, который будет использоваться службой авторизации Майкрософт для выхода пользователя из системы, использующей протоколы OpenId подключения [переднего канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или SAML Logout.|
-|oauth2PermissionScopes|Коллекция [permissionScope](permissionScope.md)|Делегированные разрешения, предоставляемые приложением. Дополнительные сведения см. в свойстве **oauth2PermissionScopes** для свойства **API** сущности [приложения](application.md) . Значение null не допускается.|
-|notificationEmailAddresses|Коллекция String|Указывает список адресов электронной почты, на которые служба Azure AD отправляет уведомление, если срок действия активного сертификата приближается к дате окончания срока действия. Это относится только к сертификатам, которые используются для подписи маркера SAML, выпущенного для приложений коллекции Azure AD.|
+|loginUrl|Строка|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует этот URL-адрес для запуска приложения из Microsoft 365 или из раздела "Мои приложения" в Azure AD. Если оставить пустое значение, Azure AD осуществляет вход на основе IdP для приложений, для которых настроен [единый вход на базе SAML](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, из раздела "Мои приложения" в Azure AD или по URL-адресу единого входа Azure AD.|
+|logoutUrl|String| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html) OpenId Connect, [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML.|
+|oauth2PermissionScopes|Коллекция [permissionScope](permissionScope.md)|Делегированные разрешения, предоставляемые приложением. Дополнительные сведения см. в описании свойства **oauth2PermissionScopes** в свойстве **api** объекта [application](application.md). Значение null не допускается.|
+|notificationEmailAddresses|Коллекция строк|Указывает список адресов электронной почты, по которым Azure AD отправляет уведомление, когда приближается срок окончания действия активного сертификата. Используется только для сертификатов, с помощью которых подписан маркер SAML, выпущенный для приложений коллекции Azure AD.|
 |passwordCredentials|Коллекция [passwordCredential](passwordcredential.md)|Коллекция учетных данных паролей, связанных с субъектом-службой. Значение null не допускается. |
-|преферредсинглесигнонмоде|string|Задает режим единого входа, настроенный для этого приложения. Azure AD использует предпочтительный режим единого входа для запуска приложения из Microsoft 365 или Azure AD мои приложения. Поддерживаемые значения: Password, SAML, External и оидк.|
+|preferredSingleSignOnMode|Строка|Указывает режим единого входа, настроенный для этого приложения. Azure AD использует предпочитаемый режим единого входа для запуска этого приложения из Microsoft 365 или из раздела "Мои приложения" Azure AD. Поддерживаются значения: password, saml, external, oidc.|
 |replyUrls|Коллекция String|URL-адреса, которым отправляются маркеры пользователей для входа с помощью связанного приложения, или URI перенаправления, которым отправляются коды авторизации OAuth 2.0 и маркеры доступа для связанного приложения. Значение null не допускается. |
-|самлсинглесигнонсеттингс|[самлсинглесигнонсеттингс](samlsinglesignonsettings.md)|Коллекция параметров, связанных с единым входом SAML.|
-|ServicePrincipalNames|Коллекция String|Содержит список **идентифиерсурис**, скопированных из связанного [приложения](application.md). В гибридные приложения можно добавлять дополнительные значения. Эти значения можно использовать для определения разрешений, предоставляемых приложением в Azure AD. For example,<ul><li>Клиентские приложения могут указывать URI ресурса, основанный на значениях этого свойства для получения маркера доступа, который представляет собой URI, возвращенный в утверждении "ауд".</li></ul><br>Для выражений фильтра в случае многозначных свойств требуется оператор any. Значение null не допускается.|
-|сервицепринЦипалтипе|String|Указывает, представляет ли субъект службы приложение или управляемое удостоверение. Это задается службой Azure AD внутренним образом. Для субъекта-службы, представляющего [приложение](./application.md) , задано значение " __приложение__". Для субъекта-службы, представляющего [управляемый идентификатор](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) , он задается как __манажедидентити__.|
-|tags|Коллекция String| Настраиваемые строки, которые можно использовать для категоризации и идентификации участника службы. Значение null не допускается. |
-| tokenEncryptionKeyId |String|Задает значение открытого ключа keyId из коллекции keyCredentials. При настройке в Azure AD маркеры проблем для этого приложения шифруются с помощью ключа, указанного этим свойством. Код приложения, получающий зашифрованный маркер, должен использовать соответствующий закрытый ключ для расшифровки маркера, прежде чем его можно будет применить для пользователя, выполнившего вход.|
+|samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|Коллекция для параметров, связанных с единым входом SAML.|
+|ServicePrincipalNames|Коллекция объектов string|Содержит список объектов **identifiersUris**, скопированных из связанного объекта [application](application.md). К гибридным приложениям можно добавить дополнительные значения. С помощью этих значений можно идентифицировать разрешения, предоставленные этим приложением в Azure AD. Пример.<ul><li>Клиентские приложения могут указывать URI ресурса, основанный на значениях этого свойства, чтобы получать маркер доступа, который представляет собой URI, возвращенный в запросе "aud".</li></ul><br>Оператор "any" требуется для выражений фильтров, применяемых к многозначным свойствам. Значение null не допускается.|
+|servicePrincipalType|Строка|Указывает, что представляет субъект-служба: приложение или управляемое удостоверение. Это значение устанавливается внутри Azure AD. Если субъект-служба представляет [приложение](./application.md), указывается значение __Application__. Если субъект-служба представляет [управляемое удостоверение](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview), указывается значение __ManagedIdentity__.|
+|tags|Коллекция объектов string| Настраиваемые строки, которые можно использовать для классификации и определения субъекта-службы. Значение null не допускается. |
+| tokenEncryptionKeyId |String|Задает значение открытого ключа keyId из коллекции keyCredentials. Если это свойство настроено, Azure AD выпускает маркеры для этого приложения в зашифрованном виде; шифрование производится с помощью ключа, указанного эти свойством. Код приложения, получающий зашифрованный маркер, должен использовать соответствующий закрытый ключ для расшифровки маркера, прежде чем его можно будет применить для пользователя, выполнившего вход.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип |Описание|
@@ -105,14 +108,14 @@ ms.locfileid: "45081314"
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Субъекты (пользователи, группы и субъекты-службы), которые назначены для субъекта-службы. Только для чтения.|
 |appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Приложения, которым назначен этот субъект-служба. Только для чтения. Допускается значение null.|
 |claimsMappingPolicies|Коллекция [claimsMappingPolicy](claimsmappingpolicy.md)|Типы ресурсов claimsMappingPolicy, назначенные субъекту-службе.|
-|createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные субъектом-службой. Только для чтения. Может иметь значение null.|
-|endpoints|Коллекция [endpoint](endpoint.md)|Конечные точки, доступные для обнаружения. Такие службы, как SharePoint, заполняют это свойство определенными конечными точками SharePoint для клиента, которые другие приложения могут обнаружить и использовать в своих впечатлениях.|
+|createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные субъектом-службой. Только для чтения. Допускается значение null.|
+|endpoints|Коллекция [endpoint](endpoint.md)|Конечные точки, доступные для обнаружения. Службы, такие как Sharepoint, заполняют это свойство конечными точками, относящимися к клиенту SharePoint. Другие приложения могут обнаруживать эти конечные точки и использовать их.|
 |homeRealmDiscoveryPolicies|Коллекция [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)|Типы ресурсов homeRealmDiscoveryPolicy, назначенные субъекту-службе.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Роли, в которых участвует субъект-служба. Методы HTTP: GET. Только для чтения. Допускается значение null.|
-|oauth2PermissionGrants|Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)|Делегированное разрешение предоставляет авторизацию этого субъекта-службы для доступа к API от имени пользователя, выполнившего вход в систему. Только для чтения. Может иметь значение null.|
-|ownedObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, принадлежащие субъекту-службе. Только для чтения. Может иметь значение null.|
-|owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, являющиеся владельцами этого servicePrincipal. Владельцы являются набором пользователей, не являющихся администраторами, или СервицепринЦипалс, которым разрешено изменять этот объект. Только для чтения. Может иметь значение null.|
-|tokenIssuancePolicies|[tokenIssuancePolicy](tokenissuancepolicy.md) Коллекция|ТокениссуанцеполиЦиес, назначенный этому участнику службы.|
+|oauth2PermissionGrants|Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)|Предоставленные делегированные разрешения, разрешающие этому субъекту-службе доступ к API от имени пользователя, вошедшего в систему. Только для чтения. Допускается значение null.|
+|ownedObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, принадлежащие субъекту-службе. Только для чтения. Допускается значение null.|
+|owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, владеющие этим объектом servicePrincipal. Владельцы — это группа пользователей, не являющихся администраторами или объектами servicePrincipal, которым разрешено изменять этот объект. Только для чтения. Допускается значение null.|
+|tokenIssuancePolicies|Коллекция [tokenIssuancePolicy](tokenissuancepolicy.md)|Политики tokenIssuancePoliciy, назначенные этому субъекту-службе.|
 |tokenLifetimePolicies|Коллекция [tokenLifetimePolicy](tokenlifetimepolicy.md)|Типы ресурсов tokenLifetimePolicy, назначенные субъекту-службе.|
 
 ## <a name="json-representation"></a>Представление JSON
