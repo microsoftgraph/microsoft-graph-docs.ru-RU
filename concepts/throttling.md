@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a62b88927f33b12f9e9738f8b8ba299a22f6d099
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 8af7a4ce6c303e2ac07e4387ff3dbad38abd735e
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197067"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408094"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -280,6 +280,20 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 | Любой          | 455 запросов в течение 10 секунд |
 
 Указанные выше ограничения действуют для следующих ресурсов: openTypeExtension, schemaExtension, administrativeUnit, contact, device, event, group, message, organization, post и user.
+
+### <a name="files-and-lists-service-limits"></a>Ограничения службы для файлов и списков
+
+Ограничения службы для OneDrive, OneDrive для бизнеса и SharePoint Online недоступны. Подробнее см. в статье [Почему нельзя просто назвать точные пределы регулирования?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
+
+Сведения, приведенные в этой статье, относятся к следующим ресурсам:  
+baseItem, baseItemVersion, columnDefinition, columnLink, contentType, drive, driveItem, driveItemVersion, fieldValueSet, itemActivity, itemActivityStat, itemAnalytics, list, listItem, listItemVersion, permission, sharedDriveItem, site и thumbnailSet.
+
+### <a name="tasks-and-plans-service-limits"></a>Ограничения службы для задач и планов
+
+Ограничения службы для Планировщика недоступны.
+
+Сведения, приведенные в этой статье, относятся к следующим ресурсам:  
+planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskBoardTaskFormat, plannerGroup, plannerPlan, plannerPlanDetails, plannerProgressTaskBoardTaskFormat, plannerTask, plannerTaskDetails и plannerUser.
 
 ### <a name="identity-and-access-data-policy-operation-service-limits"></a>Ограничения службы операций с политикой данных удостоверений и доступа
 
