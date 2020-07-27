@@ -5,12 +5,12 @@ ms.date: 4/9/2019
 author: anthona
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: db528c5e3e687d32ceacae327531a3f6c7ccee90
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 5823e994a5a4cb5451dcb32875a76c42c5ecb503
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618855"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384334"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Использование API People в Microsoft Graph для получения сведений о наиболее релевантных для вас людях
 
@@ -478,7 +478,7 @@ Content-type: application/json
 ### <a name="types-of-results-included"></a>Типы включаемых результатов
 По умолчанию Microsoft Graph предоставляет результаты только для почтовых ящиков, не включающие результаты для каталогов и организации. Чтобы получить результаты для каталога, укажите заголовок HTTP, как показано ниже.
 
-```
+```http
 "X-PeopleQuery-QuerySources: Mailbox,Directory”
 ```
 ### <a name="select-the-fields-to-return"></a>Выбор возвращаемых полей
@@ -827,13 +827,13 @@ Content-type: application/json
 
 Используйте параметр *$search* для выбора людей, удовлетворяющих определенному набору критериев.
 
-Указанный ниже поисковый запрос возвращает релевантных для пользователя `/me` людей, чье свойство **displayName** или "emailAddress" содержит слово, начинающееся с буквы j.
+Приведенный ниже поисковый запрос возвращает список релевантных для `/me` людей, чье свойство **displayName** или **emailAddress** содержит слово, начинающееся с буквы j.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j
 ```
 
-В примере ниже показан ответ. По умолчанию в каждом ответе возвращается 10 записей. Вы можете изменить количество возвращаемых записей с помощью параметра *$top*. В этом примере показано, как использовать параметр запроса *$top* для ограничения количества записей (до 3 шт.) в ответе.
+В примере ниже показан отклик. По умолчанию в каждом отклике возвращается 10 записей. Вы можете изменить количество возвращаемых записей с помощью параметра *$top*. В этом примере показано, как использовать параметр запроса *$top* для ограничения количества записей (до 3 шт.) в отклике.
 
 ```http
 HTTP/1.1 200 OK
