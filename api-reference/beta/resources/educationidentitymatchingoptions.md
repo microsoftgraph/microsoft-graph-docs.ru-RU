@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d722beaac54cbd57c227457a0883b856f6eca4bc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b17ca8548d7a70b8f652ad2d54455fb6040677d
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501831"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45435028"
 ---
 # <a name="educationidentitymatchingoptions-resource-type"></a>Тип ресурса Едукатионидентитиматчингоптионс
 
@@ -22,14 +22,15 @@ ms.locfileid: "42501831"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Описание |
-|:-|:-|:-|
-| **Тег** | string |  Тип роли пользователя, назначаемый лицензии. Возможные значения: `student`, `teacher`, `faculty`.      |
-| **саурцепропертинаме** | string |  Имя исходного свойства, которое должно быть именем поля в источнике данных. В этом свойстве учитывается регистр.        |
-| **таржетпропертинаме** | string |  Имя целевого свойства, которое должно быть допустимым свойством в Azure AD. В этом свойстве учитывается регистр.     |
-| **таржетдомаин** | string |  Домен в суффикс с исходным свойством, который необходимо найти в целевом объекте. Если задано значение null, свойство Source будет использоваться для сравнения с целевым свойством.        |
+| Свойство           | Тип   | Описание                                                                                                                                                    |
+| :----------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Тег          | String | Тип роли пользователя, назначаемый лицензии. Возможные значения: `student`, `teacher`, `faculty`.                                                             |
+| саурцепропертинаме | Строка | Имя исходного свойства, которое должно быть именем поля в источнике данных. В этом свойстве учитывается регистр.                                             |
+| таржетпропертинаме | Строка | Имя целевого свойства, которое должно быть допустимым свойством в Azure AD. В этом свойстве учитывается регистр.                                                |
+| таржетдомаин       | Строка | Домен в суффикс с исходным свойством, который необходимо найти в целевом объекте. Если задано значение null, свойство Source будет использоваться для сравнения с целевым свойством. |
 
 ## <a name="json-representation"></a>Представление JSON
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -40,9 +41,9 @@ ms.locfileid: "42501831"
 
 ```json
 {
-    "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
-    "sourcePropertyName": "String",
-    "targetPropertyName": "String",
-    "targetDomain": "String"
+  "appliesTo": { "@odata.type": "microsoft.graph.educationUserRole" },
+  "sourcePropertyName": "String",
+  "targetPropertyName": "String",
+  "targetDomain": "String"
 }
 ```

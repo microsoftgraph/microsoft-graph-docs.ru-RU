@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: cc081f9d1fc34f1935f788cf936e376a647cdf7d
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: f2d22f8e74aabd975f182b8cef783f8e94ba05d7
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427553"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45435014"
 ---
 # <a name="get-iteminsightssettings"></a>Получение Итеминсигхтссеттингс
 
@@ -20,7 +20,7 @@ ms.locfileid: "45427553"
 
 Получение свойств объекта [итеминсигхтссеттингс](../resources/iteminsightssettings.md) .
 
-Сведения о том, как настроить конфиденциальность сведений об элементах для вашей организации, можно узнать в разделе [Настройка конфиденциальности Insights](/graph/insights-customize-item-insights-privacy.md). 
+Сведения о том, как настроить конфиденциальность сведений об элементах для вашей организации, можно узнать в разделе [Настройка конфиденциальности Insights](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0). 
 
 ## <a name="permissions"></a>Разрешения
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: dfe0a2fda8d49bd003a6ea2c23eb6a31ce619234
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 00e1e531ff33f28a2e63f76925cd0b4e7759696b
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289441"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434912"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>ресурс educationSynchronizationOAuth2ClientCredentialsConnectionSettings
 
@@ -20,16 +20,21 @@ ms.locfileid: "44289441"
 
 При использовании [предоставления учетных данных клиента OAuth2](https://tools.ietf.org/html/rfc6749#section-4.4) для подключения к поставщику данных этот тип параметров подключения следует использовать для настройки профиля.
 
-Производный от [едукатионсинчронизатионконнектионсеттингс](educationsynchronizationconnectionsettings.md).
+Производный от [едукатионсинчронизатионконнектионсеттингс].
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Описание |
-|:-|:-|:-|
-| **токенурл** | String | URL-адрес для получения маркеров доступа для поставщика данных. |
-| **scope** | String | [Область запроса доступа](https://tools.ietf.org/html/rfc6749#section-3.3). |
+| Свойство     | Тип   | Описание                                                                                                                |
+| :----------- | :----- | :------------------------------------------------------------------------------------------------------------------------- |
+| clientId     | String | Идентификатор клиента, используемый для подключения к поставщику. Наследуется от [едукатионсинчронизатионконнектионсеттингс].                    |
+| clientSecret | String | Секрет клиента для проверки подлинности подключения к поставщику. Наследуется от [едукатионсинчронизатионконнектионсеттингс]. |
+| токенурл     | Строка | URL-адрес для получения маркеров доступа для поставщика данных.                                                                        |
+| scope        | Строка | Область запроса доступа (см. [RFC6749](https://tools.ietf.org/html/rfc6749#section-3.3)).                          |
+
+[едукатионсинчронизатионконнектионсеттингс]: educationsynchronizationconnectionsettings.md
 
 ## <a name="json-representation"></a>Представление JSON
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings"
@@ -37,10 +42,10 @@ ms.locfileid: "44289441"
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings",
-    "clientId": "String",
-    "clientSecret": "String",
-    "tokenUrl": "String",
-    "scope": "String"
+  "@odata.type": "#microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings",
+  "clientId": "String",
+  "clientSecret": "String",
+  "tokenUrl": "String",
+  "scope": "String"
 }
 ```

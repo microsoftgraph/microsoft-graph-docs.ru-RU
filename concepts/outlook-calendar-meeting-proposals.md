@@ -4,28 +4,28 @@ description: В Outlook организатор собрания может ра�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 3e391f82670a2b9a9807ac88cb128ba909264b8b
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: d1273c967f9ea1476e83e7f2905c7ed4c29808d6
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622741"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427482"
 ---
-# <a name="propose-new-meeting-times-in-outlook-preview"></a>Предложение нового времени собрания в Outlook (предварительная версия)
+# <a name="propose-new-meeting-times-in-outlook"></a>Предложение нового времени собрания в Outlook
 
 В Outlook организатор собрания может разрешить приглашенным предлагать другое время собрания, если им не подходит исходное время и дата и они отклоняют или принимают приглашение под вопросом. Организатор может принять предложение, изменив время собрания соответствующим образом.
 
 ## <a name="example-attendee-responds-tentative-and-suggests-a-different-datetime"></a>Пример: участник принимает приглашение под вопросом и предлагает другую дату и время
 Ниже приведен пример, в котором Алекс (Alex) приглашает Адель (Adele) на обед, Адель принимает приглашение под вопросом и предлагает другую дату и время, а Алекс принимает предложение, изменяя собрание соответствующим образом:
 
-1. Алекс в качестве организатора отправляет Адель приглашение на собрание. Он присваивает свойству **allowNewTimeProposals** объекта [event](/graph/api/resources/event?view=graph-rest-beta) значение `true`, чтобы разрешить Адель предложить другое время при необходимости.
+1. Алекс в качестве организатора отправляет Адель приглашение на собрание. Он присваивает свойству **allowNewTimeProposals** объекта [event](/graph/api/resources/event?view=graph-rest-1.0) значение `true`, чтобы разрешить Адель предложить другое время при необходимости.
 
     <!-- {
       "blockType": "request",
       "name": "create_event"
     }-->
     ```http
-    POST https://graph.microsoft.com/beta/me/events
+    POST https://graph.microsoft.com/v1.0/me/events
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
 
@@ -71,7 +71,7 @@ ms.locfileid: "37622741"
     Content-type: application/json
 
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
       "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhBhkg==\"",
       "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
       "createdDateTime": "2019-08-01T06:41:07.805128Z",
@@ -151,14 +151,14 @@ ms.locfileid: "37622741"
     }
     ```
 
-2. Адель получает приглашение в папке "Входящие" в виде объекта [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta). Она замечает, что настроено свойство **allowNewTimeProposals**. [Используя объект **event**, связанный](/graph/api/eventmessage-get#example-2?view=graph-rest-beta) с этим ресурсом **eventMessageRequest**, она принимает приглашение под вопросом и предлагает такое же время на следующий день в параметре текста **proposedNewTime**. Она также присваивает параметру **sendResponse** значение true.
+2. Адель получает приглашение в папке "Входящие" в виде объекта [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0). Она замечает, что настроено свойство **allowNewTimeProposals**. [Используя объект **event**, связанный](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2) с этим ресурсом **eventMessageRequest**, она принимает приглашение под вопросом и предлагает такое же время на следующий день в параметре текста **proposedNewTime**. Она также присваивает параметру **sendResponse** значение true.
 
     <!-- {
       "blockType": "request",
       "name": "event_tentativelyaccept"
     }-->
     ```http
-    POST https://graph.microsoft.com/beta/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
+    POST https://graph.microsoft.com/v1.0/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
     Content-type: application/json
 
     { 
@@ -188,7 +188,7 @@ ms.locfileid: "37622741"
     HTTP/1.1 202 Accepted
     ```
 
-3. Алекс получает письмо типа [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta). Он замечает следующее:
+3. Алекс получает письмо типа [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0). Он замечает следующее:
 
    - Тема содержит префикс и фразу "Предложено новое время: Давайте пообедаем"
    - Отправитель — Адель Вэнс (Adele Vance)
@@ -200,7 +200,7 @@ ms.locfileid: "37622741"
       "name": "get_messages"
     }-->
     ```http
-    GET https://graph.microsoft.com/beta/me/messages?$top=1
+    GET https://graph.microsoft.com/v1.0/me/messages?$top=1
     Prefer: outlook.timezone="Pacific Standard Time"
     ```
 
@@ -219,8 +219,8 @@ ms.locfileid: "37622741"
     Preference-Applied: outlook.timezone="Pacific Standard Time"
 
     {
-       "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/messages",
-       "@odata.nextLink": "https://graph.microsoft.com/beta/me/messages?$top=1&$skip=4"",
+       "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/messages",
+       "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$top=1&$skip=4"",
        "value": [
           {
             "@odata.type": "#microsoft.graph.eventMessageResponse",
@@ -254,7 +254,6 @@ ms.locfileid: "37622741"
             "isAllDay": false,
             "isDelegated": false,
             "responseType": "tentativelyAccepted",
-            "mentionsPreview": null,
             "recurrence": null,
             "body": {
                 "contentType": "html",
@@ -314,14 +313,14 @@ ms.locfileid: "37622741"
     }
     ```
 
-4. Алекс также замечает, что **событие** для обеда теперь включает свойство **proposedNewTime**, содержащее предложение Адель. Это свойство представлено в составе экземпляра [attendee](/graph/api/resources/attendee?view=graph-rest-beta), только если соответствующий участник предложил другое время собрания. 
+4. Алекс также замечает, что **событие** для обеда теперь включает свойство **proposedNewTime**, содержащее предложение Адель. Это свойство представлено в составе экземпляра [attendee](/graph/api/resources/attendee?view=graph-rest-1.0), только если соответствующий участник предложил другое время собрания. 
 
     <!-- {
       "blockType": "request",
       "name": "event_get"
     }-->
     ```http
-    GET https://graph.microsoft.com/beta/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
+    GET https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
     Prefer: outlook.timezone="Pacific Standard Time"
     ```
 
@@ -335,7 +334,7 @@ ms.locfileid: "37622741"
     HTTP/1.1 200 Ok
 
     {
-        "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(subject,allowNewTimeProposals,start,end,attendees,organizer)/$entity",
+        "@odata.context": "https://graph.microsoft.com/testexchangev1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(subject,allowNewTimeProposals,start,end,attendees,organizer)/$entity",
         "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhEDMA==\"",
         "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
         "subject": "Let's go for lunch",
@@ -388,7 +387,7 @@ ms.locfileid: "37622741"
       "name": "event_update"
     }-->
     ```http
-    PATCH https://graph.microsoft.com/beta/me/events/AAMkADAwJXJGu0AAACEhWOAAA=
+    PATCH https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
 
@@ -416,7 +415,7 @@ ms.locfileid: "37622741"
     HTTP/1.1 200 Ok
 
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
       "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhBizA==\"",
       "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
       "createdDateTime": "2019-08-01T06:41:07.805128Z",

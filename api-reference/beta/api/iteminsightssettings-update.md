@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 80ae322bf19406125ef1776102dfb4043743b78d
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: de19cf6f33ed0c5b1930077232945564115cd14a
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427562"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45435007"
 ---
 # <a name="update-iteminsightssettings"></a>Обновление Итеминсигхтссеттингс
 
@@ -20,7 +20,7 @@ ms.locfileid: "45427562"
 
 Обновление свойств указанного ресурса [итеминсигхтссеттингс](../resources/iteminsightssettings.md) .
 
-Сведения о том, как настроить конфиденциальность сведений об элементах для вашей организации, можно узнать в разделе [Настройка конфиденциальности Insights](/graph/insights-customize-item-insights-privacy.md). 
+Сведения о том, как настроить конфиденциальность сведений об элементах для вашей организации, можно узнать в разделе [Настройка конфиденциальности Insights](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0). 
 
 ## <a name="permissions"></a>Разрешения
 
@@ -54,8 +54,8 @@ PATCH /organization/{organizationId}/settings/itemInsights
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|исенаблединорганизатион|Boolean| `true`, если аналитика элемента организации включена; `false`Если аналитика элемента Организации отключена для всех пользователей без исключений. Значение по умолчанию: `true`. Необязательное.|
-|дисабледфорграуп|String| Идентификатор группы Azure AD, для которой отключается аналитика элемента "участники". Значение по умолчанию: `empty`. Необязательный параметр.|
+|исенаблединорганизатион|Логический| `true`, если аналитика элемента организации включена; `false`Если аналитика элемента Организации отключена для всех пользователей без исключений. Значение по умолчанию: `true`. Необязательное.|
+|дисабледфорграуп|Строка| Идентификатор группы Azure AD, для которой отключается аналитика элемента "участники". Значение по умолчанию: `empty`. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 

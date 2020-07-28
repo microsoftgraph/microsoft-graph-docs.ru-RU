@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 921ba639519253e3ecfdde5e59bca54a2ec71175
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 8cb71fae980001657475b82d51c321781a053758
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183668"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427251"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -281,7 +281,7 @@ ms.locfileid: "45183668"
 |Мероприятия|Коллекция [event](event.md)|События пользователя. По умолчанию отображаются события в стандартном календаре. Только для чтения. Допускается значение null.|
 |extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для пользователя. Допускается значение null.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Классификация релевантности для сообщений пользователя, основанная на явных обозначениях, переопределяющих заданные релевантность или важность. |
-|insights|[officeGraphInsights](officegraphinsights.md) | Только для чтения. Допускается значение null.|
+|insights|[itemInsights](iteminsights.md) | Только для чтения. Допускается значение null.|
 |joinedGroups|Коллекция [group](group.md)| Только для чтения. Допускается значение null.|
 |mailFolders|Коллекция [mailFolder](mailfolder.md)| Почтовые папки пользователя. Только для чтения. Допускается значение null.|
 |manager|[directoryObject](directoryobject.md)|Пользователь или контакт, являющийся руководителем пользователя. Только для чтения. (Методы HTTP: GET, PUT, DELETE.)|
@@ -424,7 +424,7 @@ ms.locfileid: "45183668"
   "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "drive": {"@odata.type": "microsoft.graph.drive"},
   "drives": [{"@odata.type": "microsoft.graph.drive"}],
-  "insights": {"@odata.type": "microsoft.graph.officeGraphInsights"},
+  "insights": {"@odata.type": "microsoft.graph.iteminsights"},
   "settings": {"@odata.type": "microsoft.graph.userSettings"},
   "events": [{"@odata.type": "microsoft.graph.event"}],
   "extensions": [{"@odata.type": "microsoft.graph.extension"}],

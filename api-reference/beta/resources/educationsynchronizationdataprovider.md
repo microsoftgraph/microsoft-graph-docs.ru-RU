@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: be0f50ec3cff0a8eec91cd43b4bb08371db806f3
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: f20bea087a23f14acd7184c5211d21687409897a
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846165"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434972"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>Тип ресурса Едукатионсинчронизатиондатапровидер
 
@@ -20,19 +20,16 @@ ms.locfileid: "44846165"
 
 Представляет поставщика данных, который будет использоваться в качестве источника синхронизации для объекта [едукатионсинчронизатионпрофиле].
 
-> **Примечание:** Этот сложный тип является абстрактным. Ознакомьтесь со списками определенных типов поставщиков данных.
+> [!NOTE]
+> Этот сложный тип является абстрактным. Ознакомьтесь со списками определенных типов поставщиков данных.
 
 ## <a name="providers"></a>Поставщики
 
-| Поставщик данных                                                             | Description                                                                                        |
-|:--------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| Поставщик данных                                                             | Описание                                                                                        |
+| :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------- |
 | [едукатионксвдатапровидер]                                                | CSV-файлы, отправленные на [URL-адрес профиля SAS](../api/educationsynchronizationprofile-uploadurl.md) |
 | [едукатиононеростерапидатапровидер](educationonerosterapidataprovider.md) | API OneRoster 1.1                                                                                 |
 | [едукатионповерсчулдатапровидер]                                        | API PowerSchool                                                                                    |
-
-## <a name="properties"></a>Свойства
-
-Этот тип не представляет свойства.
 
 [едукатионсинчронизатионпрофиле]: educationsynchronizationprofile.md
 [едукатионксвдатапровидер]: educationCsvDataProvider.md

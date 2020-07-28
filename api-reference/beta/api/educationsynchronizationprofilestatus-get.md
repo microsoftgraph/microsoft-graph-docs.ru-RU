@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b9683a7f97ca2610efd8fd91a762dffd26a3e3b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b88b6c783702a6c426792ca14db43a263638aa96
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424108"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434853"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Получение состояния Едукатионсинчронизатионпрофиле
 
@@ -21,32 +21,40 @@ ms.locfileid: "42424108"
 Получение состояния определенного [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте. Ответ будет указывать на состояние синхронизации.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения | Разрешения (в порядке повышения привилегий) |
-|:-----------|:----------|
-| Делегированные (рабочая или учебная учетная запись) | Едуадминистратион. Read, Едуадминистратион. ReadWrite |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Едуадминистратион. Read. ALL, Едуадминистратион. ReadWrite. ALL |
+| Тип разрешения                       | Разрешения (в порядке повышения привилегий)                 |
+| :------------------------------------ | :---------------------------------------------------------- |
+| Делегированное (рабочая или учебная учетная запись)    | Едуадминистратион. Read, Едуадминистратион. ReadWrite         |
+| Делегированная учетная запись (личная учетная запись Майкрософт) | Не поддерживается.                                              |
+| Для приложений                           | Едуадминистратион. Read. ALL, Едуадминистратион. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /synchronizationProfiles/{id}/profileStatus
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+| Имя          | Тип   | Описание               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {токен}. Обязательный. |
+
+## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+
+## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [едукатионсинчронизатионпрофилестатус](../resources/educationsynchronizationprofilestatus.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
+
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -71,11 +79,11 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/prof
 
 ---
 
-
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика.
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -88,11 +96,13 @@ Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/profileStatus/$entity",
+    "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
     "status": "inProgress",
     "lastSynchronizationDateTime": "2017-07-04T22:06:37.6472621Z"
 }
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",

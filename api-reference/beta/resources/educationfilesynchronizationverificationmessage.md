@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 45f439adaf45ade7e63dd4cde8ed72852244192c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e82ede1df5c17b99fdc40857fd97f1f90012711
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502013"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434979"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>Тип ресурса Едукатионфилесинчронизатионверификатионмессаже
 
@@ -22,11 +22,11 @@ ms.locfileid: "42502013"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Описание |
-|:-|:-|:-|
-| **type** | string | Тип сообщения. Возможные значения: `error`, `warning`, `information`. | 
-| **задан** | string | Исходный файл, который содержит ошибку. |
-| **description** | string | Подробные сведения о типе сообщения. |
+| Свойство    | Тип   | Описание                                                                  |
+| :---------- | :----- | :--------------------------------------------------------------------------- |
+| type        | string | Тип сообщения. Возможные значения: `error`, `warning`, `information`. |
+| задан    | Строка | Исходный файл, который содержит ошибку.                                         |
+| description | string | Подробные сведения о типе сообщения.                                 |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -40,8 +40,8 @@ ms.locfileid: "42502013"
 
 ```json
 {
-    "type": "String",
-    "fileName": "String",
-    "description": "String"
+  "type": "String",
+  "fileName": "String",
+  "description": "String"
 }
 ```

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 282c96bb9030f066aadbf0515ec0466da62c502f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f53fd9f930beaaf6812a18725441e1cd338b2e6d
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466041"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434993"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>Тип ресурса Сигнинфрекуенцисессионконтрол
 
@@ -18,7 +18,7 @@ ms.locfileid: "43466041"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Управление сеансами для обеспечения частоты входа. Инехритс из [управления сеансом условного доступа](conditionalaccesssessioncontrol.md).
+Управление сеансами для обеспечения частоты входа. Наследуется от [управления сеансом условного доступа](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Свойства
 
@@ -26,7 +26,7 @@ ms.locfileid: "43466041"
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Указывает, включен ли элемент управления сеансом. |
 |type          |String       | Возможные значения: `days`, `hours`.|
-|value         |Int32        | Количество `days` или `hours`.|
+|value         |Int32        | Количество `days` или `hours` .|
 
 ## <a name="relationships"></a>Связи
 

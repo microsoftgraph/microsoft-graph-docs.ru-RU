@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 6553be4afb5f67de8cfe139e673771746f085acc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 525809121b07616c6eb5077f1b12d5b736586065
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500123"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434923"
 ---
 # <a name="educationsynchronizationoauth1connectionsettings-resource"></a>ресурс educationSynchronizationOAuth1ConnectionSettings
 
@@ -20,13 +20,19 @@ ms.locfileid: "42500123"
 
 Когда OAuth1 используется для подключения к поставщику данных, этот тип параметров подключения следует использовать для настройки профиля.
 
-Производный от [Microsoft. Graph. едукатионсинчронизатионконнектионсеттингс](educationsynchronizationconnectionsettings.md).
+Производный от [едукатионсинчронизатионконнектионсеттингс].
 
 ## <a name="properties"></a>Свойства
 
-Этот тип не представляет никакие дополнительные свойства.
+| Свойство     | Тип   | Описание                                                                                                                |
+| :----------- | :----- | :------------------------------------------------------------------------------------------------------------------------- |
+| clientId     | String | Идентификатор клиента, используемый для подключения к поставщику. Наследуется от [едукатионсинчронизатионконнектионсеттингс].                    |
+| clientSecret | String | Секрет клиента для проверки подлинности подключения к поставщику. Наследуется от [едукатионсинчронизатионконнектионсеттингс]. |
+
+[едукатионсинчронизатионконнектионсеттингс]: educationsynchronizationconnectionsettings.md
 
 ## <a name="json-representation"></a>Представление JSON
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings"
@@ -34,8 +40,8 @@ ms.locfileid: "42500123"
 
 ```json
 {
-    "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
-    "clientId": "String",
-    "clientSecret": "String"
+  "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
+  "clientId": "String",
+  "clientSecret": "String"
 }
 ```

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: fd42bc30a1cc1cee34685bc0f33815f3a00d0120
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: da1c5fa65305e23b8483825103117c523c51edd7
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336029"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45435035"
 ---
 # <a name="educationidentitymatchingconfiguration-resource-type"></a>Тип ресурса Едукатионидентитиматчингконфигуратион
 
@@ -18,15 +18,17 @@ ms.locfileid: "44336029"
 
 Определяет параметры для согласованных удостоверений профиля данных учебного заведения. К этим удостоверениям относятся студенты и преподаватели. На основе этих параметров пользователи будут обновлены в каталоге.
 
-> **Примечание:** При выборе этого ресурса пользователи не создаются.
+> [!NOTE]
+> При выборе этого ресурса пользователи не создаются.
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Описание |
-|:-|:-|:-|
-| **матчингоптионс** | Коллекция [Microsoft. Graph. едукатионидентитиматчингоптионс](educationidentitymatchingoptions.md) | Сопоставление между учетной записью пользователя и параметрами, которые необходимо использовать для уникальной идентификации пользователя, для которого необходимо выполнить обновление. |
+| Свойство        | Тип                                                                                               | Описание                                                                                      |
+| :-------------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
+| матчингоптионс | Коллекция [Microsoft. Graph. едукатионидентитиматчингоптионс](educationidentitymatchingoptions.md) | Сопоставление между учетной записью пользователя и параметрами, которые необходимо использовать для уникальной идентификации пользователя, для которого необходимо выполнить обновление. |
 
 ## <a name="json-representation"></a>Представление JSON
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -37,14 +39,14 @@ ms.locfileid: "44336029"
 
 ```json
 {
-    "@odata.type": "microsoft.graph.educationIdentityMatchingConfiguration",
-    "matchingOptions": [
-        {
-            "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
-            "sourcePropertyName": "String",
-            "targetPropertyName": "String",
-            "targetDomain": "String"
-        }
-    ]
+  "@odata.type": "microsoft.graph.educationIdentityMatchingConfiguration",
+  "matchingOptions": [
+    {
+      "appliesTo": { "@odata.type": "microsoft.graph.educationUserRole" },
+      "sourcePropertyName": "String",
+      "targetPropertyName": "String",
+      "targetDomain": "String"
+    }
+  ]
 }
 ```

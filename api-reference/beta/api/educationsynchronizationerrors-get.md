@@ -5,51 +5,63 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 81da0a081976e97254b541c0d4d07e13ed51c854
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d8cedb8eb9dc4eda05968609a11ad728f269a334
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424612"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434867"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Получение Едукатионсинчронизатионеррорс
 
 Пространство имен: microsoft.graph
 
-Получение ошибок, возникших во время проверки, и/или во время синхронизации определенного [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте. 
+Получение ошибок, возникших во время проверки, и/или во время синхронизации определенного [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения | Разрешения (в порядке повышения привилегий) |
-|:-----------|:------|
-| Делегированные (рабочая или учебная учетная запись) | Едуадминистратион. Read, Едуадминистратион. ReadWrite |
-|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Едуадминистратион. Read. ALL, Едуадминистратион. ReadWrite. ALL |
+| Тип разрешения                       | Разрешения (в порядке повышения привилегий)                 |
+| :------------------------------------ | :---------------------------------------------------------- |
+| Делегированное (рабочая или учебная учетная запись)    | Едуадминистратион. Read, Едуадминистратион. ReadWrite         |
+| Делегированная учетная запись (личная учетная запись Майкрософт) | Не поддерживается.                                              |
+| Для приложений                           | Едуадминистратион. Read. ALL, Едуадминистратион. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /synchronizationProfiles/{id}/errors
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает следующие [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика: $filter, $orderby, $top, $skip и $Count.
+
+Этот метод поддерживает следующие [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика: $filter, $orderby, $top, $Skip и \$ Count.
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+| Имя          | Тип   | Описание               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {токен}. Обязательный. |
+
+## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+
+## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Error синхронизации](../resources/educationsynchronizationerror.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationSynchronizationProfile_error"
@@ -71,11 +83,11 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/erro
 
 ---
 
-
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика.
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -88,37 +100,41 @@ Content-type: application/json
 Content-length: 1568
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/errors",
-    "@odata.count": 14,
-    "value": [
-        {
-            "entryType": "Student",
-            "errorCode": "UnsynchronizableChange",
-            "errorMessage": "Student cannot be updated as no matching entry in Active Directory was found for Student.  Verify the identity matching criteria for the profile.",
-            "joiningValue": "richard.2wilson@testschool.edu",
-            "recordedDateTime": "2017-07-05T00:52:45Z",
-            "reportableIdentifier": "richard.2wilson"
-        },
-        {
-            "entryType": "Teacher",
-            "errorCode": "UnsynchronizableChange",
-            "errorMessage": "Teacher cannot be updated as no matching entry in Active Directory was found for Teacher.  Verify the identity matching criteria for the profile.",
-            "joiningValue": "alberto2.dorsey@testschool.edu",
-            "recordedDateTime": "2017-07-05T00:52:57Z",
-            "reportableIdentifier": "alberto2.dorsey"
-        },
-        {
-            "entryType": "Teacher",
-            "errorCode": "UnsynchronizableChange",
-            "errorMessage": "Teacher cannot be updated as no matching entry in Active Directory was found for Teacher.  Verify the identity matching criteria for the profile.",
-            "joiningValue": "madeline2.bullock@testschool.edu",
-            "recordedDateTime": "2017-07-05T00:52:57Z",
-            "reportableIdentifier": "madeline2.bullock"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/errors",
+  "@odata.count": 14,
+  "value": [
+    {
+      "id": "92797B7C-02C3-4326-8ACC-E81C78753831",
+      "entryType": "Student",
+      "errorCode": "UnsynchronizableChange",
+      "errorMessage": "Student cannot be updated as no matching entry in Active Directory was found for Student.  Verify the identity matching criteria for the profile.",
+      "joiningValue": "richard.2wilson@testschool.edu",
+      "recordedDateTime": "2017-07-05T00:52:45Z",
+      "reportableIdentifier": "richard.2wilson"
+    },
+    {
+      "id": "94C1EB0E-8339-4EF4-8CB2-EB15C6228CE1",
+      "entryType": "Teacher",
+      "errorCode": "UnsynchronizableChange",
+      "errorMessage": "Teacher cannot be updated as no matching entry in Active Directory was found for Teacher.  Verify the identity matching criteria for the profile.",
+      "joiningValue": "alberto2.dorsey@testschool.edu",
+      "recordedDateTime": "2017-07-05T00:52:57Z",
+      "reportableIdentifier": "alberto2.dorsey"
+    },
+    {
+      "id": "98A82052-7716-49E9-90CC-C6FF406FC8E5",
+      "entryType": "Teacher",
+      "errorCode": "UnsynchronizableChange",
+      "errorMessage": "Teacher cannot be updated as no matching entry in Active Directory was found for Teacher.  Verify the identity matching criteria for the profile.",
+      "joiningValue": "madeline2.bullock@testschool.edu",
+      "recordedDateTime": "2017-07-05T00:52:57Z",
+      "reportableIdentifier": "madeline2.bullock"
+    }
+  ]
 }
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
