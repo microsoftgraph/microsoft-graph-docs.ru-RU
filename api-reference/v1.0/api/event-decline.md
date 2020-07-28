@@ -5,18 +5,20 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 309c800013ff3ea37e6ec9c73a84ae4bd8ec6244
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f9caef660af5e19cc06dd9214a8c70cc761740fe
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461691"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427104"
 ---
 # <a name="event-decline"></a>event: decline
 
 Пространство имен: microsoft.graph
 
 Отклонить приглашение для указанного [события](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.
+
+Если событие разрешает предложения для нового времени, при отправке события приглашение можно предложить альтернативным способом, включив параметр **пропоседневтиме** . Дополнительные сведения о том, как предлагать время, а также как получать и принимать новое предложение по времени, приведены в разделе [предложение нового времени проведения собрания](/graph/outlook-calendar-meeting-proposals).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -65,11 +67,18 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |comment|String|Текст, включенный в ответ. Необязательный.|
+|пропоседневтиме|[timeSlot](../resources/timeslot.md)|Альтернативная дата/время, предлагаемые приглашению на собрание для начала и завершения. Действует только для событий, которые допускают новые предложения времени. Для установки этого параметра необходимо задать для параметра **сендреспонсе** значение `true` . Необязательный.|
 |sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
+
+Это действие возвращает HTTP-400, если выполняется одно или оба следующих действия:
+
+- Параметр **пропоседневтиме** включен, но свойство **алловневтимепропосалс** **события** имеет значение `false` . 
+- Параметр **пропоседневтиме** включен, но для параметра **сендреспонсе** задано значение `false` .
+
 
 ## <a name="example"></a>Пример
 
@@ -89,11 +98,20 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/decline
 Content-type: application/json
-Content-length: 56
 
 {
-  "comment": "comment-value",
-  "sendResponse": true
+  "comment": "I won't be able to make this week. How about next week?",
+  "sendResponse": true,
+  "proposedNewTime": {
+      "start": { 
+          "dateTime": "2019-12-02T18:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }, 
+      "end": { 
+          "dateTime": "2019-12-02T19:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }     
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

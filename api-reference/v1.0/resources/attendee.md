@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1cadb1ca6d2ab1168c3c7f9ff2b182b57112bfb0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c90d086afb7716dc3696443f18931f17cb291d9
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532092"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427244"
 ---
 # <a name="attendee-resource-type"></a>Тип ресурса attendee
 
@@ -23,9 +23,10 @@ ms.locfileid: "42532092"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
+|emailAddress|[emailAddress](emailaddress.md)|Включает имя и SMTP-адрес участника.|
+|пропоседневтиме|[timeSlot](timeslot.md)|Альтернативная дата/время, предлагаемая участником для начала и конца приглашения на собрание. Если участник не предложил другое время, это свойство не включается в ответ на событие GET.|
 |status|[ResponseStatus](responsestatus.md)|Ответ участника (нет, принято, отклонено и т. д.) на событие, а также дата и время отправки ответа.|
 |type|String|Тип участника: `required`, `optional`, `resource`.|
-|emailAddress|[emailAddress](emailaddress.md)|Включает имя и SMTP-адрес участника.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -35,16 +36,17 @@ ms.locfileid: "42532092"
   "blockType": "resource",
   "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
-
+   "proposedNewTime"
   ],
   "@odata.type": "microsoft.graph.attendee"
 }-->
 
 ```json
 {
+  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
+  "proposedNewTime": {"@odata.type": "microsoft.graph.timeSlot"},
   "status": {"@odata.type": "microsoft.graph.responseStatus"},
-  "type": "String",
-  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
+  "type": "String"
 }
 
 ```

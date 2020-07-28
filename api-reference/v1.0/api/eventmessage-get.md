@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c2fb7318c8c98b02771fac376a3abaf6350e1b7c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6aae4c310ad98c81bec05929699826d4f6eff6c4
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461564"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427489"
 ---
 # <a name="get-eventmessage"></a>Получение объекта eventMessage
 
@@ -45,14 +45,17 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [eventMessage](../resources/eventmessage.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+## <a name="examples"></a>Примеры
+
+### <a name="example-1"></a>Пример 1
+#### <a name="request"></a>Запрос
+
 Первый пример показывает, как получить свойства сообщения о событии с учетом идентификатора этого сообщения.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -82,13 +85,13 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 
 ---
 
-##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventMessage"
+  "@odata.type": "microsoft.graph.eventMessageRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -96,7 +99,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages/$entity",
-    "@odata.type":"#microsoft.graph.eventMessage",
+    "@odata.type":"#microsoft.graph.eventMessageRequest",
     "@odata.etag":"W/\"CwAAABYAAABXlB/SL0N4Q6g6o+jSYAEuAAAImkVD\"",
     "id":"AAMkADYAAAImV_lAAA=",
     "createdDateTime":"2017-12-27T21:58:36Z",
@@ -158,7 +161,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>Запрос 2
+### <a name="example-2"></a>Пример 2
+#### <a name="request"></a>Запрос
 Второй пример показывает, как получить событие, связанное с сообщением о событии. Этот пример кода по идентификатору сообщения о событии получает это сообщение, выполняет приведение этого сообщения для доступа к его свойству навигации **event** и применяет параметр $expand для получения свойств события.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -188,13 +192,13 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=mic
 
 ---
 
-##### <a name="response-2"></a>Отклик 2
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. В отклике возвращаются свойства связанного события. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventMessage"
+  "@odata.type": "microsoft.graph.eventMessageRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -202,7 +206,7 @@ Content-type: application/json
 
 {
    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages/$entity",
-   "@odata.type":"#microsoft.graph.eventMessage",
+   "@odata.type":"#microsoft.graph.eventMessageRequest",
    "@odata.etag":"W/\"CwAAABYAAABXlB/SL0N4Q6g6o+jSYAEuAAAImkVF\"",
    "id":"AAMkADYAAAImV_jAAA=",
    "createdDateTime":"2017-12-27T21:54:55Z",
