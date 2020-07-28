@@ -4,28 +4,28 @@ description: В Outlook организатор собрания может ра�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 3e391f82670a2b9a9807ac88cb128ba909264b8b
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: d1273c967f9ea1476e83e7f2905c7ed4c29808d6
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622741"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427482"
 ---
-# <a name="propose-new-meeting-times-in-outlook-preview"></a><span data-ttu-id="f1e9c-103">Предложение нового времени собрания в Outlook (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="f1e9c-103">Propose new meeting times in Outlook (preview)</span></span>
+# <a name="propose-new-meeting-times-in-outlook"></a><span data-ttu-id="6bc32-103">Предложение нового времени собрания в Outlook</span><span class="sxs-lookup"><span data-stu-id="6bc32-103">Propose new meeting times in Outlook</span></span>
 
-<span data-ttu-id="f1e9c-104">В Outlook организатор собрания может разрешить приглашенным предлагать другое время собрания, если им не подходит исходное время и дата и они отклоняют или принимают приглашение под вопросом.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-104">In Outlook, a meeting organizer can allow invitees to propose alternative meeting times, if they cannot meet at the original set date/time and accept tentatively or decline.</span></span> <span data-ttu-id="f1e9c-105">Организатор может принять предложение, изменив время собрания соответствующим образом.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-105">The organizer can accept a proposal by adjusting the meeting time as appropriate.</span></span>
+<span data-ttu-id="6bc32-104">В Outlook организатор собрания может разрешить приглашенным предлагать другое время собрания, если им не подходит исходное время и дата и они отклоняют или принимают приглашение под вопросом.</span><span class="sxs-lookup"><span data-stu-id="6bc32-104">In Outlook, a meeting organizer can allow invitees to propose alternative meeting times, if they cannot meet at the original set date/time and accept tentatively or decline.</span></span> <span data-ttu-id="6bc32-105">Организатор может принять предложение, изменив время собрания соответствующим образом.</span><span class="sxs-lookup"><span data-stu-id="6bc32-105">The organizer can accept a proposal by adjusting the meeting time as appropriate.</span></span>
 
-## <a name="example-attendee-responds-tentative-and-suggests-a-different-datetime"></a><span data-ttu-id="f1e9c-106">Пример: участник принимает приглашение под вопросом и предлагает другую дату и время</span><span class="sxs-lookup"><span data-stu-id="f1e9c-106">Example: attendee responds tentative and suggests a different date/time</span></span>
-<span data-ttu-id="f1e9c-107">Ниже приведен пример, в котором Алекс (Alex) приглашает Адель (Adele) на обед, Адель принимает приглашение под вопросом и предлагает другую дату и время, а Алекс принимает предложение, изменяя собрание соответствующим образом:</span><span class="sxs-lookup"><span data-stu-id="f1e9c-107">The following is an example where Alex invites Adele to lunch, Adele tentatively accepts and proposes an alternative date and time, and Alex accepts the proposal by adjusting the meeting accordingly:</span></span>
+## <a name="example-attendee-responds-tentative-and-suggests-a-different-datetime"></a><span data-ttu-id="6bc32-106">Пример: участник принимает приглашение под вопросом и предлагает другую дату и время</span><span class="sxs-lookup"><span data-stu-id="6bc32-106">Example: attendee responds tentative and suggests a different date/time</span></span>
+<span data-ttu-id="6bc32-107">Ниже приведен пример, в котором Алекс (Alex) приглашает Адель (Adele) на обед, Адель принимает приглашение под вопросом и предлагает другую дату и время, а Алекс принимает предложение, изменяя собрание соответствующим образом:</span><span class="sxs-lookup"><span data-stu-id="6bc32-107">The following is an example where Alex invites Adele to lunch, Adele tentatively accepts and proposes an alternative date and time, and Alex accepts the proposal by adjusting the meeting accordingly:</span></span>
 
-1. <span data-ttu-id="f1e9c-108">Алекс в качестве организатора отправляет Адель приглашение на собрание.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-108">As the organizer, Alex sends a meeting request to Adele.</span></span> <span data-ttu-id="f1e9c-109">Он присваивает свойству **allowNewTimeProposals** объекта [event](/graph/api/resources/event?view=graph-rest-beta) значение `true`, чтобы разрешить Адель предложить другое время при необходимости.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-109">He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event?view=graph-rest-beta) to `true` to let Adele suggest another time if she needs to.</span></span>
+1. <span data-ttu-id="6bc32-108">Алекс в качестве организатора отправляет Адель приглашение на собрание.</span><span class="sxs-lookup"><span data-stu-id="6bc32-108">As the organizer, Alex sends a meeting request to Adele.</span></span> <span data-ttu-id="6bc32-109">Он присваивает свойству **allowNewTimeProposals** объекта [event](/graph/api/resources/event?view=graph-rest-1.0) значение `true`, чтобы разрешить Адель предложить другое время при необходимости.</span><span class="sxs-lookup"><span data-stu-id="6bc32-109">He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event?view=graph-rest-1.0) to `true` to let Adele suggest another time if she needs to.</span></span>
 
     <!-- {
       "blockType": "request",
       "name": "create_event"
     }-->
     ```http
-    POST https://graph.microsoft.com/beta/me/events
+    POST https://graph.microsoft.com/v1.0/me/events
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
 
@@ -59,7 +59,7 @@ ms.locfileid: "37622741"
     }
     ```
 
-    <span data-ttu-id="f1e9c-110">Алекс получает следующий ответ:</span><span class="sxs-lookup"><span data-stu-id="f1e9c-110">Alex gets the following response:</span></span> 
+    <span data-ttu-id="6bc32-110">Алекс получает следующий ответ:</span><span class="sxs-lookup"><span data-stu-id="6bc32-110">Alex gets the following response:</span></span> 
     <!-- {
       "blockType": "response",
       "name": "create_event",
@@ -71,7 +71,7 @@ ms.locfileid: "37622741"
     Content-type: application/json
 
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
       "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhBhkg==\"",
       "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
       "createdDateTime": "2019-08-01T06:41:07.805128Z",
@@ -151,14 +151,14 @@ ms.locfileid: "37622741"
     }
     ```
 
-2. <span data-ttu-id="f1e9c-111">Адель получает приглашение в папке "Входящие" в виде объекта [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="f1e9c-111">Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta).</span></span> <span data-ttu-id="f1e9c-112">Она замечает, что настроено свойство **allowNewTimeProposals**.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-112">She notices the **allowNewTimeProposals** property is set.</span></span> <span data-ttu-id="f1e9c-113">[Используя объект **event**, связанный](/graph/api/eventmessage-get#example-2?view=graph-rest-beta) с этим ресурсом **eventMessageRequest**, она принимает приглашение под вопросом и предлагает такое же время на следующий день в параметре текста **proposedNewTime**.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-113">[Using the **event** associated](/graph/api/eventmessage-get#example-2?view=graph-rest-beta) with this **eventMessageRequest**, she makes a tentative reply and proposes the next day at the same time, in the **proposedNewTime** body parameter.</span></span> <span data-ttu-id="f1e9c-114">Она также присваивает параметру **sendResponse** значение true.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-114">She also sets the **sendResponse** parameter to true.</span></span>
+2. <span data-ttu-id="6bc32-111">Адель получает приглашение в папке "Входящие" в виде объекта [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="6bc32-111">Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0).</span></span> <span data-ttu-id="6bc32-112">Она замечает, что настроено свойство **allowNewTimeProposals**.</span><span class="sxs-lookup"><span data-stu-id="6bc32-112">She notices the **allowNewTimeProposals** property is set.</span></span> <span data-ttu-id="6bc32-113">[Используя объект **event**, связанный](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2) с этим ресурсом **eventMessageRequest**, она принимает приглашение под вопросом и предлагает такое же время на следующий день в параметре текста **proposedNewTime**.</span><span class="sxs-lookup"><span data-stu-id="6bc32-113">[Using the **event** associated](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2) with this **eventMessageRequest**, she makes a tentative reply and proposes the next day at the same time, in the **proposedNewTime** body parameter.</span></span> <span data-ttu-id="6bc32-114">Она также присваивает параметру **sendResponse** значение true.</span><span class="sxs-lookup"><span data-stu-id="6bc32-114">She also sets the **sendResponse** parameter to true.</span></span>
 
     <!-- {
       "blockType": "request",
       "name": "event_tentativelyaccept"
     }-->
     ```http
-    POST https://graph.microsoft.com/beta/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
+    POST https://graph.microsoft.com/v1.0/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
     Content-type: application/json
 
     { 
@@ -177,7 +177,7 @@ ms.locfileid: "37622741"
     } 
     ```
 
-    <span data-ttu-id="f1e9c-115">Ответ Адель успешно отправляется, и она получает следующий отклик:</span><span class="sxs-lookup"><span data-stu-id="f1e9c-115">Adele's reply succeeds and she gets the following response:</span></span>
+    <span data-ttu-id="6bc32-115">Ответ Адель успешно отправляется, и она получает следующий отклик:</span><span class="sxs-lookup"><span data-stu-id="6bc32-115">Adele's reply succeeds and she gets the following response:</span></span>
 
     <!-- {
       "blockType": "response",
@@ -188,23 +188,23 @@ ms.locfileid: "37622741"
     HTTP/1.1 202 Accepted
     ```
 
-3. <span data-ttu-id="f1e9c-116">Алекс получает письмо типа [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="f1e9c-116">Alex receives an email of the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta) type.</span></span> <span data-ttu-id="f1e9c-117">Он замечает следующее:</span><span class="sxs-lookup"><span data-stu-id="f1e9c-117">He notices the following:</span></span>
+3. <span data-ttu-id="6bc32-116">Алекс получает письмо типа [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="6bc32-116">Alex receives an email of the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) type.</span></span> <span data-ttu-id="6bc32-117">Он замечает следующее:</span><span class="sxs-lookup"><span data-stu-id="6bc32-117">He notices the following:</span></span>
 
-   - <span data-ttu-id="f1e9c-118">Тема содержит префикс и фразу "Предложено новое время: Давайте пообедаем"</span><span class="sxs-lookup"><span data-stu-id="f1e9c-118">The subject includes a prefix and says "New Time Proposed: Let's go for lunch"</span></span>
-   - <span data-ttu-id="f1e9c-119">Отправитель — Адель Вэнс (Adele Vance)</span><span class="sxs-lookup"><span data-stu-id="f1e9c-119">The sender is Adele Vance</span></span>
-   - <span data-ttu-id="f1e9c-120">Свойству **responseType** присвоено значение `tentativelyAccepted`</span><span class="sxs-lookup"><span data-stu-id="f1e9c-120">The **responseType** is `tentativelyAccepted`</span></span>
-   - <span data-ttu-id="f1e9c-121">Предложение Адель указывается в свойстве **proposedNewTime** объекта **eventMessageResponse**</span><span class="sxs-lookup"><span data-stu-id="f1e9c-121">Adele's proposal is in the **proposedNewTime** property of the **eventMessageResponse**</span></span>
+   - <span data-ttu-id="6bc32-118">Тема содержит префикс и фразу "Предложено новое время: Давайте пообедаем"</span><span class="sxs-lookup"><span data-stu-id="6bc32-118">The subject includes a prefix and says "New Time Proposed: Let's go for lunch"</span></span>
+   - <span data-ttu-id="6bc32-119">Отправитель — Адель Вэнс (Adele Vance)</span><span class="sxs-lookup"><span data-stu-id="6bc32-119">The sender is Adele Vance</span></span>
+   - <span data-ttu-id="6bc32-120">Свойству **responseType** присвоено значение `tentativelyAccepted`</span><span class="sxs-lookup"><span data-stu-id="6bc32-120">The **responseType** is `tentativelyAccepted`</span></span>
+   - <span data-ttu-id="6bc32-121">Предложение Адель указывается в свойстве **proposedNewTime** объекта **eventMessageResponse**</span><span class="sxs-lookup"><span data-stu-id="6bc32-121">Adele's proposal is in the **proposedNewTime** property of the **eventMessageResponse**</span></span>
 
     <!-- {
       "blockType": "request",
       "name": "get_messages"
     }-->
     ```http
-    GET https://graph.microsoft.com/beta/me/messages?$top=1
+    GET https://graph.microsoft.com/v1.0/me/messages?$top=1
     Prefer: outlook.timezone="Pacific Standard Time"
     ```
 
-    <span data-ttu-id="f1e9c-122">Для наглядности предположим, что ответ Адель является последним сообщением в почтовом ящике Алекса, и Алекс может просто запросить это последнее сообщение.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-122">For demonstration purpose, assume Adele's reply is the latest message in Alex' mailbox, and Alex can simply request that latest message.</span></span>
+    <span data-ttu-id="6bc32-122">Для наглядности предположим, что ответ Адель является последним сообщением в почтовом ящике Алекса, и Алекс может просто запросить это последнее сообщение.</span><span class="sxs-lookup"><span data-stu-id="6bc32-122">For demonstration purpose, assume Adele's reply is the latest message in Alex' mailbox, and Alex can simply request that latest message.</span></span>
 
     <!-- {
       "blockType": "response",
@@ -219,8 +219,8 @@ ms.locfileid: "37622741"
     Preference-Applied: outlook.timezone="Pacific Standard Time"
 
     {
-       "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/messages",
-       "@odata.nextLink": "https://graph.microsoft.com/beta/me/messages?$top=1&$skip=4"",
+       "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/messages",
+       "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$top=1&$skip=4"",
        "value": [
           {
             "@odata.type": "#microsoft.graph.eventMessageResponse",
@@ -254,7 +254,6 @@ ms.locfileid: "37622741"
             "isAllDay": false,
             "isDelegated": false,
             "responseType": "tentativelyAccepted",
-            "mentionsPreview": null,
             "recurrence": null,
             "body": {
                 "contentType": "html",
@@ -314,14 +313,14 @@ ms.locfileid: "37622741"
     }
     ```
 
-4. <span data-ttu-id="f1e9c-123">Алекс также замечает, что **событие** для обеда теперь включает свойство **proposedNewTime**, содержащее предложение Адель.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-123">Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal.</span></span> <span data-ttu-id="f1e9c-124">Это свойство представлено в составе экземпляра [attendee](/graph/api/resources/attendee?view=graph-rest-beta), только если соответствующий участник предложил другое время собрания.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-124">This property is only present as part of an [attendee](/graph/api/resources/attendee?view=graph-rest-beta) instance if the corresponding attendee has suggested an alternative meeting time.</span></span> 
+4. <span data-ttu-id="6bc32-123">Алекс также замечает, что **событие** для обеда теперь включает свойство **proposedNewTime**, содержащее предложение Адель.</span><span class="sxs-lookup"><span data-stu-id="6bc32-123">Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal.</span></span> <span data-ttu-id="6bc32-124">Это свойство представлено в составе экземпляра [attendee](/graph/api/resources/attendee?view=graph-rest-1.0), только если соответствующий участник предложил другое время собрания.</span><span class="sxs-lookup"><span data-stu-id="6bc32-124">This property is only present as part of an [attendee](/graph/api/resources/attendee?view=graph-rest-1.0) instance if the corresponding attendee has suggested an alternative meeting time.</span></span> 
 
     <!-- {
       "blockType": "request",
       "name": "event_get"
     }-->
     ```http
-    GET https://graph.microsoft.com/beta/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
+    GET https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
     Prefer: outlook.timezone="Pacific Standard Time"
     ```
 
@@ -335,7 +334,7 @@ ms.locfileid: "37622741"
     HTTP/1.1 200 Ok
 
     {
-        "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(subject,allowNewTimeProposals,start,end,attendees,organizer)/$entity",
+        "@odata.context": "https://graph.microsoft.com/testexchangev1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(subject,allowNewTimeProposals,start,end,attendees,organizer)/$entity",
         "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhEDMA==\"",
         "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
         "subject": "Let's go for lunch",
@@ -381,14 +380,14 @@ ms.locfileid: "37622741"
     ```
 
 
-5. <span data-ttu-id="f1e9c-125">Алекс решает принять предложение Адель, обновив **событие** с использованием предложенной даты и времени **начала** и **окончания**.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-125">Alex decides to accept Adele's proposal by updating the **event** to the proposed **start** and **end** date/time.</span></span>
+5. <span data-ttu-id="6bc32-125">Алекс решает принять предложение Адель, обновив **событие** с использованием предложенной даты и времени **начала** и **окончания**.</span><span class="sxs-lookup"><span data-stu-id="6bc32-125">Alex decides to accept Adele's proposal by updating the **event** to the proposed **start** and **end** date/time.</span></span>
 
     <!-- {
       "blockType": "request",
       "name": "event_update"
     }-->
     ```http
-    PATCH https://graph.microsoft.com/beta/me/events/AAMkADAwJXJGu0AAACEhWOAAA=
+    PATCH https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
 
@@ -404,7 +403,7 @@ ms.locfileid: "37622741"
     }
     ```
 
-    <span data-ttu-id="f1e9c-126">Обновление Алекса успешно выполняется, и он получает следующий отклик.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-126">Alex's update succeeds and gets the following response.</span></span>
+    <span data-ttu-id="6bc32-126">Обновление Алекса успешно выполняется, и он получает следующий отклик.</span><span class="sxs-lookup"><span data-stu-id="6bc32-126">Alex's update succeeds and gets the following response.</span></span>
 
     <!-- {
       "blockType": "response",
@@ -416,7 +415,7 @@ ms.locfileid: "37622741"
     HTTP/1.1 200 Ok
 
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
       "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhBizA==\"",
       "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
       "createdDateTime": "2019-08-01T06:41:07.805128Z",
@@ -497,14 +496,14 @@ ms.locfileid: "37622741"
     ```
 
 
-## <a name="no-attendee-proposes-alternative-time"></a><span data-ttu-id="f1e9c-127">Участники не предлагают другое время</span><span class="sxs-lookup"><span data-stu-id="f1e9c-127">No attendee proposes alternative time</span></span>
+## <a name="no-attendee-proposes-alternative-time"></a><span data-ttu-id="6bc32-127">Участники не предлагают другое время</span><span class="sxs-lookup"><span data-stu-id="6bc32-127">No attendee proposes alternative time</span></span>
 
-<span data-ttu-id="f1e9c-128">На шаге 2, если Адель отклонила или приняла приглашение под вопросом и не предложила другое время и дату, произойдет следующее:</span><span class="sxs-lookup"><span data-stu-id="f1e9c-128">In step 2, if Adele replied tentative or declined, and did not propose a different date/time, then the following would happen:</span></span>
+<span data-ttu-id="6bc32-128">На шаге 2, если Адель отклонила или приняла приглашение под вопросом и не предложила другое время и дату, произойдет следующее:</span><span class="sxs-lookup"><span data-stu-id="6bc32-128">In step 2, if Adele replied tentative or declined, and did not propose a different date/time, then the following would happen:</span></span>
 
-- <span data-ttu-id="f1e9c-129">На шаге 3 Алекс получит объект **eventMessageResponse** со значением `tentativelyAccepted` свойства **responseType** (или значением `decline`, если Адель отклонила приглашение).</span><span class="sxs-lookup"><span data-stu-id="f1e9c-129">In step 3, Alex would receive an **eventMessageResponse** with the **responseType** property set to `tentativelyAccepted` (or `decline` if Adele declined).</span></span> <span data-ttu-id="f1e9c-130">Алекс не обнаружит свойство **proposedNewTime** в этом экземпляре объекта **eventMessageResponse**.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-130">Alex would not find a **proposedNewTime** property in this instance of **eventMessageResponse**.</span></span>
-- <span data-ttu-id="f1e9c-131">На шаге 4 Алекс также не обнаружит свойство **proposedNewTime** в связанном объекте **event**.</span><span class="sxs-lookup"><span data-stu-id="f1e9c-131">In step 4, Alex would not find a **proposedNewTime** property in the associated **event** either.</span></span>
+- <span data-ttu-id="6bc32-129">На шаге 3 Алекс получит объект **eventMessageResponse** со значением `tentativelyAccepted` свойства **responseType** (или значением `decline`, если Адель отклонила приглашение).</span><span class="sxs-lookup"><span data-stu-id="6bc32-129">In step 3, Alex would receive an **eventMessageResponse** with the **responseType** property set to `tentativelyAccepted` (or `decline` if Adele declined).</span></span> <span data-ttu-id="6bc32-130">Алекс не обнаружит свойство **proposedNewTime** в этом экземпляре объекта **eventMessageResponse**.</span><span class="sxs-lookup"><span data-stu-id="6bc32-130">Alex would not find a **proposedNewTime** property in this instance of **eventMessageResponse**.</span></span>
+- <span data-ttu-id="6bc32-131">На шаге 4 Алекс также не обнаружит свойство **proposedNewTime** в связанном объекте **event**.</span><span class="sxs-lookup"><span data-stu-id="6bc32-131">In step 4, Alex would not find a **proposedNewTime** property in the associated **event** either.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f1e9c-132">См. также</span><span class="sxs-lookup"><span data-stu-id="f1e9c-132">See also</span></span>
-- [<span data-ttu-id="f1e9c-133">Поиск времени для проведения собрания в календаре Outlook</span><span class="sxs-lookup"><span data-stu-id="f1e9c-133">Finding possible meeting times on the Outlook calendar</span></span>](findmeetingtimes-example.md)
-- [<span data-ttu-id="f1e9c-134">Получение расписания доступности пользователей и ресурсов</span><span class="sxs-lookup"><span data-stu-id="f1e9c-134">Getting the free/busy schedule for users and resources</span></span>](outlook-get-free-busy-schedule.md)
-- [<span data-ttu-id="f1e9c-135">Планирование повторных встреч в качестве повторяющихся мероприятий в Outlook</span><span class="sxs-lookup"><span data-stu-id="f1e9c-135">Scheduling repeating appointments as recurring events in Outlook</span></span>](outlook-schedule-recurring-events.md)
+## <a name="see-also"></a><span data-ttu-id="6bc32-132">См. также</span><span class="sxs-lookup"><span data-stu-id="6bc32-132">See also</span></span>
+- [<span data-ttu-id="6bc32-133">Поиск времени для проведения собрания в календаре Outlook</span><span class="sxs-lookup"><span data-stu-id="6bc32-133">Finding possible meeting times on the Outlook calendar</span></span>](findmeetingtimes-example.md)
+- [<span data-ttu-id="6bc32-134">Получение расписания доступности пользователей и ресурсов</span><span class="sxs-lookup"><span data-stu-id="6bc32-134">Getting the free/busy schedule for users and resources</span></span>](outlook-get-free-busy-schedule.md)
+- [<span data-ttu-id="6bc32-135">Планирование повторных встреч в качестве повторяющихся мероприятий в Outlook</span><span class="sxs-lookup"><span data-stu-id="6bc32-135">Scheduling repeating appointments as recurring events in Outlook</span></span>](outlook-schedule-recurring-events.md)

@@ -5,51 +5,63 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 81da0a081976e97254b541c0d4d07e13ed51c854
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d8cedb8eb9dc4eda05968609a11ad728f269a334
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424612"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434867"
 ---
-# <a name="get-educationsynchronizationerrors"></a><span data-ttu-id="db499-103">Получение Едукатионсинчронизатионеррорс</span><span class="sxs-lookup"><span data-stu-id="db499-103">Get educationSynchronizationErrors</span></span>
+# <a name="get-educationsynchronizationerrors"></a><span data-ttu-id="07a16-103">Получение Едукатионсинчронизатионеррорс</span><span class="sxs-lookup"><span data-stu-id="07a16-103">Get educationSynchronizationErrors</span></span>
 
-<span data-ttu-id="db499-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="db499-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="07a16-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="07a16-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="db499-105">Получение ошибок, возникших во время проверки, и/или во время синхронизации определенного [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте.</span><span class="sxs-lookup"><span data-stu-id="db499-105">Get the errors generated during validation and/or during a sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span> 
+<span data-ttu-id="07a16-105">Получение ошибок, возникших во время проверки, и/или во время синхронизации определенного [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте.</span><span class="sxs-lookup"><span data-stu-id="07a16-105">Get the errors generated during validation and/or during a sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="db499-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="db499-106">Permissions</span></span>
-<span data-ttu-id="db499-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="db499-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="07a16-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="07a16-106">Permissions</span></span>
 
-| <span data-ttu-id="db499-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="db499-109">Permission type</span></span> | <span data-ttu-id="db499-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="db499-110">Permissions (from least to most privileged)</span></span> |
-|:-----------|:------|
-| <span data-ttu-id="db499-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="db499-111">Delegated (work or school account)</span></span> | <span data-ttu-id="db499-112">Едуадминистратион. Read, Едуадминистратион. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="db499-112">EduAdministration.Read, EduAdministration.ReadWrite</span></span> |
-|<span data-ttu-id="db499-113">Делегированная учетная запись (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="db499-113">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="db499-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="db499-114">Not supported.</span></span>|
-|<span data-ttu-id="db499-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="db499-115">Application</span></span>| <span data-ttu-id="db499-116">Едуадминистратион. Read. ALL, Едуадминистратион. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="db499-116">EduAdministration.Read.All, EduAdministration.ReadWrite.All</span></span> |
+<span data-ttu-id="07a16-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="07a16-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="db499-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="db499-117">HTTP request</span></span>
+| <span data-ttu-id="07a16-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="07a16-109">Permission type</span></span>                       | <span data-ttu-id="07a16-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="07a16-110">Permissions (from least to most privileged)</span></span>                 |
+| :------------------------------------ | :---------------------------------------------------------- |
+| <span data-ttu-id="07a16-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="07a16-111">Delegated (work or school account)</span></span>    | <span data-ttu-id="07a16-112">Едуадминистратион. Read, Едуадминистратион. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="07a16-112">EduAdministration.Read, EduAdministration.ReadWrite</span></span>         |
+| <span data-ttu-id="07a16-113">Делегированная учетная запись (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="07a16-113">Delegated (personal Microsoft account</span></span> | <span data-ttu-id="07a16-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="07a16-114">Not supported.</span></span>                                              |
+| <span data-ttu-id="07a16-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="07a16-115">Application</span></span>                           | <span data-ttu-id="07a16-116">Едуадминистратион. Read. ALL, Едуадминистратион. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="07a16-116">EduAdministration.Read.All, EduAdministration.ReadWrite.All</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="07a16-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="07a16-117">HTTP request</span></span>
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /synchronizationProfiles/{id}/errors
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="db499-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="db499-118">Optional query parameters</span></span>
-<span data-ttu-id="db499-119">Этот метод поддерживает следующие [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика: $filter, $orderby, $top, $skip и $Count.</span><span class="sxs-lookup"><span data-stu-id="db499-119">This method supports the following [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response: $filter, $orderby, $top, $skip, and $count.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="db499-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="db499-120">Request headers</span></span>
-| <span data-ttu-id="db499-121">Имя</span><span class="sxs-lookup"><span data-stu-id="db499-121">Name</span></span>       | <span data-ttu-id="db499-122">Тип</span><span class="sxs-lookup"><span data-stu-id="db499-122">Type</span></span> | <span data-ttu-id="db499-123">Описание</span><span class="sxs-lookup"><span data-stu-id="db499-123">Description</span></span>|
-|:-----------|:------|:----------|
-| <span data-ttu-id="db499-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="db499-124">Authorization</span></span>  | <span data-ttu-id="db499-125">string</span><span class="sxs-lookup"><span data-stu-id="db499-125">string</span></span>  | <span data-ttu-id="db499-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="db499-p102">Bearer {token}. Required.</span></span>  |
+## <a name="optional-query-parameters"></a><span data-ttu-id="07a16-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="07a16-118">Optional query parameters</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="db499-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="db499-128">Request body</span></span>
-<span data-ttu-id="db499-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="db499-129">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="db499-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="db499-130">Response</span></span>
-<span data-ttu-id="db499-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Error синхронизации](../resources/educationsynchronizationerror.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="db499-131">If successful, this method returns a `200 OK` response code and a collection of [synchronization error](../resources/educationsynchronizationerror.md) objects in the response body.</span></span>
+<span data-ttu-id="07a16-119">Этот метод поддерживает следующие [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика: $filter, $orderby, $top, $Skip и \$ Count.</span><span class="sxs-lookup"><span data-stu-id="07a16-119">This method supports the following [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response: $filter, $orderby, $top, $skip, and \$count.</span></span>
 
-## <a name="example"></a><span data-ttu-id="db499-132">Пример</span><span class="sxs-lookup"><span data-stu-id="db499-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="db499-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="db499-133">Request</span></span>
-<span data-ttu-id="db499-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="db499-134">The following is an example of the request.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="07a16-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="07a16-120">Request headers</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="db499-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="db499-135">HTTP</span></span>](#tab/http)
+| <span data-ttu-id="07a16-121">Имя</span><span class="sxs-lookup"><span data-stu-id="07a16-121">Name</span></span>          | <span data-ttu-id="07a16-122">Тип</span><span class="sxs-lookup"><span data-stu-id="07a16-122">Type</span></span>   | <span data-ttu-id="07a16-123">Описание</span><span class="sxs-lookup"><span data-stu-id="07a16-123">Description</span></span>               |
+| :------------ | :----- | :------------------------ |
+| <span data-ttu-id="07a16-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="07a16-124">Authorization</span></span> | <span data-ttu-id="07a16-125">string</span><span class="sxs-lookup"><span data-stu-id="07a16-125">string</span></span> | <span data-ttu-id="07a16-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="07a16-p102">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="07a16-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="07a16-128">Request body</span></span>
+
+<span data-ttu-id="07a16-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="07a16-129">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="07a16-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="07a16-130">Response</span></span>
+
+<span data-ttu-id="07a16-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Error синхронизации](../resources/educationsynchronizationerror.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="07a16-131">If successful, this method returns a `200 OK` response code and a collection of [synchronization error](../resources/educationsynchronizationerror.md) objects in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="07a16-132">Пример</span><span class="sxs-lookup"><span data-stu-id="07a16-132">Example</span></span>
+
+##### <a name="request"></a><span data-ttu-id="07a16-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="07a16-133">Request</span></span>
+
+<span data-ttu-id="07a16-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="07a16-134">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="07a16-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="07a16-135">HTTP</span></span>](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationSynchronizationProfile_error"
@@ -57,25 +69,25 @@ GET /synchronizationProfiles/{id}/errors
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/errors
 ```
-# <a name="c"></a>[<span data-ttu-id="db499-136">C#</span><span class="sxs-lookup"><span data-stu-id="db499-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="07a16-136">C#</span><span class="sxs-lookup"><span data-stu-id="07a16-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationsynchronizationprofile-error-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="db499-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="db499-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="07a16-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="07a16-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationsynchronizationprofile-error-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="db499-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="db499-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="07a16-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="07a16-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-error-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+##### <a name="response"></a><span data-ttu-id="07a16-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="07a16-139">Response</span></span>
 
-##### <a name="response"></a><span data-ttu-id="db499-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="db499-139">Response</span></span>
-<span data-ttu-id="db499-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="db499-140">The following is an example of the response.</span></span> 
+<span data-ttu-id="07a16-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="07a16-140">The following is an example of the response.</span></span>
 
-><span data-ttu-id="db499-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="db499-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="07a16-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="07a16-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -88,37 +100,41 @@ Content-type: application/json
 Content-length: 1568
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/errors",
-    "@odata.count": 14,
-    "value": [
-        {
-            "entryType": "Student",
-            "errorCode": "UnsynchronizableChange",
-            "errorMessage": "Student cannot be updated as no matching entry in Active Directory was found for Student.  Verify the identity matching criteria for the profile.",
-            "joiningValue": "richard.2wilson@testschool.edu",
-            "recordedDateTime": "2017-07-05T00:52:45Z",
-            "reportableIdentifier": "richard.2wilson"
-        },
-        {
-            "entryType": "Teacher",
-            "errorCode": "UnsynchronizableChange",
-            "errorMessage": "Teacher cannot be updated as no matching entry in Active Directory was found for Teacher.  Verify the identity matching criteria for the profile.",
-            "joiningValue": "alberto2.dorsey@testschool.edu",
-            "recordedDateTime": "2017-07-05T00:52:57Z",
-            "reportableIdentifier": "alberto2.dorsey"
-        },
-        {
-            "entryType": "Teacher",
-            "errorCode": "UnsynchronizableChange",
-            "errorMessage": "Teacher cannot be updated as no matching entry in Active Directory was found for Teacher.  Verify the identity matching criteria for the profile.",
-            "joiningValue": "madeline2.bullock@testschool.edu",
-            "recordedDateTime": "2017-07-05T00:52:57Z",
-            "reportableIdentifier": "madeline2.bullock"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/errors",
+  "@odata.count": 14,
+  "value": [
+    {
+      "id": "92797B7C-02C3-4326-8ACC-E81C78753831",
+      "entryType": "Student",
+      "errorCode": "UnsynchronizableChange",
+      "errorMessage": "Student cannot be updated as no matching entry in Active Directory was found for Student.  Verify the identity matching criteria for the profile.",
+      "joiningValue": "richard.2wilson@testschool.edu",
+      "recordedDateTime": "2017-07-05T00:52:45Z",
+      "reportableIdentifier": "richard.2wilson"
+    },
+    {
+      "id": "94C1EB0E-8339-4EF4-8CB2-EB15C6228CE1",
+      "entryType": "Teacher",
+      "errorCode": "UnsynchronizableChange",
+      "errorMessage": "Teacher cannot be updated as no matching entry in Active Directory was found for Teacher.  Verify the identity matching criteria for the profile.",
+      "joiningValue": "alberto2.dorsey@testschool.edu",
+      "recordedDateTime": "2017-07-05T00:52:57Z",
+      "reportableIdentifier": "alberto2.dorsey"
+    },
+    {
+      "id": "98A82052-7716-49E9-90CC-C6FF406FC8E5",
+      "entryType": "Teacher",
+      "errorCode": "UnsynchronizableChange",
+      "errorMessage": "Teacher cannot be updated as no matching entry in Active Directory was found for Teacher.  Verify the identity matching criteria for the profile.",
+      "joiningValue": "madeline2.bullock@testschool.edu",
+      "recordedDateTime": "2017-07-05T00:52:57Z",
+      "reportableIdentifier": "madeline2.bullock"
+    }
+  ]
 }
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
