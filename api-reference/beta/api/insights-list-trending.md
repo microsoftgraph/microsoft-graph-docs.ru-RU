@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: a556fecc8075dd63bb81347b5f476b78b09b6eb0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6abd0db1be5ee9a3066de76b00d2f1815a626c2a
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446329"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427097"
 ---
 # <a name="list-trending"></a>Список "Популярные"
 
@@ -32,6 +32,7 @@ ms.locfileid: "42446329"
 
 ## <a name="http-request"></a>HTTP-запрос
 Получение списка документов, обменяющих пользователя, выполнившего вход, или указанного пользователя:
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/insights/trending
@@ -39,6 +40,7 @@ GET /users/{id | userPrincipalName}/insights/trending
 ```
 
 Разверните ресурс, на который ссылается анализ **тенденций** :
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/insights/trending/{id}/resource
@@ -48,11 +50,13 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
 
-С помощью параметра `$filter` запроса можно фильтровать элементы тенденции. Например, на основе **типа**:
+`$filter`С помощью параметра запроса можно фильтровать элементы тенденции. Например, на основе **типа**:
+<!-- { "blockType": "ignored" } -->
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/type eq 'PowerPoint'`
 
 Или на основе **контаинертипе**:
+<!-- { "blockType": "ignored" } -->
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
@@ -65,21 +69,50 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список элементов [тенденции](../resources/insights-trending.md) в тексте отклика. Каждый элемент содержит свойства зрительного образа для отображения элемента в интерфейсе пользователя.
+
+Если сведения об элементе целевого пользователя отключены, этот метод возвращает результат `403 Forbidden` и следующую ошибку:
+<!-- { "blockType": "ignored" } -->
+
+```
+{
+  "error": {
+    "code": "ItemInsightsDisabled",
+    "message": " The access to the requested resource is denied because item insights are disabled.",
+    "innerError": {
+      "requestId": "request-id",
+      "date": "date-time"
+    }
+  }
+}
+```
+Более подробную информацию можно узнать в статье [Настройка конфиденциальности Insights](/graph/insights-customize-item-insights-privacy.md).
 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+<!-- {
+  "blockType": "request",
+  "name": "get_me_trending"
+}-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/insights/trending
 ```
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства. Пример неусеченного ответа в нижней части страницы.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.trending",
+  "name": "get_me_trending"
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -109,5 +142,3 @@ Content-length: 801
     ]
 }
 ```
-
-

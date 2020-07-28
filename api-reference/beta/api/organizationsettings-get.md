@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1de3e239f64b81a6e8f2995bfa626a0d7734ef9e
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: Auto
+ms.openlocfilehash: 755c71a85fe906c1fdf4b24dbceb3a0056d271b3
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080772"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427118"
 ---
 # <a name="get-organizationsettings"></a>Получение Организатионсеттингс
 
@@ -18,7 +18,9 @@ ms.locfileid: "45080772"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [организатионсеттингс](../resources/organizationsettings.md) .
+Получение свойств и связей объекта [организатионсеттингс](../resources/organizationsettings.md) , в том числе **профилекардпропертиес**.
+
+Эта операция не возвращает [итеминсигхтссеттингс](../resources/iteminsightssettings.md) с помощью свойства навигации **итеминсигхтс** . Вместо этого используйте [Get итеминсигхтссеттингс](iteminsightssettings-get.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +28,8 @@ ms.locfileid: "45080772"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. Read. ALL                    |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированное (рабочая или учебная учетная запись)     | User. Read, User. Read. ALL                    |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Не поддерживается.                              |
 
 >**Примечание:** Для этой операции с делегированными разрешениями необходимо, чтобы вошедшего в систему пользователя была назначена роль администратора клиента или роль глобального администратора.
@@ -42,7 +44,7 @@ GET https://graph.microsoft.com/beta/organization/settings
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 

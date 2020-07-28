@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 2992895b2fbc426d4177dd86074dcf5cb8d784ab
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fac5ec3b40467034a583933a6e09399e91badfe0
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495867"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427398"
 ---
 # <a name="resourcereference-resource-type"></a>Тип ресурса Ресаурцереференце
 
@@ -18,7 +18,7 @@ ms.locfileid: "42495867"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сложный тип, содержащий свойства [оффицеграфинсигхтс](officegraphinsights.md).
+Сложный тип, содержащий свойства [итеминсигхтс](iteminsights.md)
 
 ## <a name="json-representation"></a>Представление JSON
 

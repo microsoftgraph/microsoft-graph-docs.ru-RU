@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: b045ae3d66dded3ed6a85e59282a768b22d9f7fe
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 239a479bb8540ebfe7f6ffabf270d0c41ebc5b12
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332722"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427125"
 ---
 # <a name="list-used"></a>Список "Использованные"
 
@@ -40,12 +40,14 @@ ms.locfileid: "44332722"
 
 - Получение списка документов, измененных пользователем, вошедших в систему:
   <!-- { "blockType": "ignored" } -->
+  
   ```http
   GET /me/insights/used
   ```
 
 - Получение списка документов, измененных указанным пользователем.
   <!-- { "blockType": "ignored" } -->
+  
   ```http
   GET /users/{id | userPrincipalName}/insights/used
   ```
@@ -54,6 +56,7 @@ ms.locfileid: "44332722"
 
 - Разверните ресурс, на который ссылается **использованная** аналитика:
   <!-- { "blockType": "ignored" } -->
+  
   ```http
   GET /me/insights/used/{id}/resource
   GET /users/{id | userPrincipalName}/insights/used/{id}/resource
@@ -87,12 +90,30 @@ ms.locfileid: "44332722"
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список [использованных](../resources/insights-used.md) элементов в теле отклика.
+
+Если сведения об элементе целевого пользователя отключены, этот метод возвращает результат `403 Forbidden` и следующую ошибку:
+<!-- { "blockType": "ignored" } -->
+
+```
+{
+  "error": {
+    "code": "ItemInsightsDisabled",
+    "message": " The access to the requested resource is denied because item insights are disabled.",
+    "innerError": {
+      "requestId": "request-id",
+      "date": "date-time"
+    }
+  }
+}
+```
+Более подробную информацию можно узнать в статье [Настройка конфиденциальности Insights](/graph/insights-customize-item-insights-privacy.md). 
+
 ## <a name="example"></a>Пример
 
 ### <a name="example-1-return-documents-that-user-has-modified"></a>Пример 1: возврат документов, измененных пользователем

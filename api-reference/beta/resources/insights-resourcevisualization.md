@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: cb782ff0090c5e89e4a87f86af75f3fb51bb8251
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a318ace2f69269a62cce728d1ececf01df97f3e0
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495657"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427391"
 ---
 # <a name="resourcevisualization-resource-type"></a>Тип ресурса ресурсе resourcevisualization
 
@@ -18,7 +18,7 @@ ms.locfileid: "42495657"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сложный тип, содержащий свойства [оффицеграфинсигхтс](officegraphinsights.md).
+Сложный тип, содержащий свойства [итеминсигхтс](iteminsights.md).
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -49,7 +49,7 @@ ms.locfileid: "42495657"
 | -------------         |---------------| -------------|
 | title                 | String        | Текст заголовка элемента.               |
 | type              | String        | Тип мультимедиа элемента. Можно использовать для фильтрации определенного файла на основе определенного типа. Ниже приведены поддерживаемые типы. |
-| mediaType             | String        | Тип мультимедиа элемента. Может использоваться для фильтрации файлов определенного типа на основе поддерживаемых типов MIME MIME для устройства IANA. Обратите внимание, что поддерживаются не все типы MIME мультимедиа. |
+| MediaType             | String        | Тип мультимедиа элемента. Может использоваться для фильтрации файлов определенного типа на основе поддерживаемых типов MIME MIME для устройства IANA. Обратите внимание, что поддерживаются не все типы MIME мультимедиа. |
 | превиевимажеурл       | String        | URL-адрес, ведущая к изображению для предварительного просмотра элемента. |
 | previewText           | String        | Предварительный текст для элемента. |
 | контаинервебурл       | String        | Путь, начинающийся с папки, в которой хранится элемент. |
@@ -86,7 +86,7 @@ ms.locfileid: "42495657"
 Пример запроса:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 ## <a name="containertype-property-values"></a>значения свойств Контаинертипе
-Поддерживаемые типы могут различаться в зависимости от контейнеров, из которых [оффицеграфинсигхтс](officegraphinsights.md) возвращает файлы. Например, только представление [шарединсигхт](insights-shared.md) возвращает файлы из "Dropbox", "Box" и "гдриве".
+Поддерживаемые типы могут различаться в зависимости от контейнеров, из которых [итеминсигхтс](iteminsights.md) возвращает файлы. Например, только представление [шарединсигхт](insights-shared.md) возвращает файлы из "Dropbox", "Box" и "гдриве".
 
 -   онедривебусинесс
 -   Site
