@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 3d22d73ae4e336f7eae585f8d535d276e29411f6
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: a739ce755c464c47edf5d52c2e4c2eb5b6a6e267
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427426"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509828"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -27,8 +27,8 @@ ms.locfileid: "45427426"
 | Дополнение | Версия 1.0 | Добавлен объект [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0), основанный на объекте [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) и дополнительно содержащий свойства **proposedNewTime** и **responseType**. |
 | Дополнение | Версия 1.0 | Добавлено свойство **proposedNewTime** для сложного типа [attendee](/graph/api/resources/attendee?view=graph-rest-1.0). |
 
-
 ### <a name="change-notifications"></a>Уведомления об изменениях
+
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Удаление | Бета-версия и версия 1.0 | Удалено ошибочно реализованное свойство **sequenceNumber** из типа [changeNotification](/graph/api/resources/changenotification).|
@@ -40,6 +40,21 @@ ms.locfileid: "45427426"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена операция [обновления объекта onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta) для обновления собраний.|
 | Дополнение | бета | Ресурс [presence](/graph/api/resources/presence) теперь поддерживает [уведомления об изменениях](/graph/webhooks). |
+
+### <a name="cloud-communications--call-records"></a>Облачные коммуникации | Записи звонков
+
+Добавление отчетов о звонках по ТСОП и прямой маршрутизации в Microsoft Graph (бета-версия).
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Дополнение| Бета |Добавлены API для [получения отчета о звонках по ТСОП](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) и [получения отчета о прямой маршрутизации](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta).|
+|Дополнение| Бета |Добавлены новые объекты:<br /><li>[pstnCallLogRow](/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta)</li> <li>[directRoutingLogRow](/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta).</li>|
+
+### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета | Добавлен API обнаружения электронных данных для соответствия требованиям, включая [ediscoveryCase](/graph/api/resources/ediscoverycase?view=graph-rest-beta), [reviewSet](/graph/api/resources/reviewset?view=graph-rest-beta) и [reviewSetQuery](/graph/api/resources/reviewsetquery?view=graph-rest-beta), а также операции. |
 
 ### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
 
@@ -84,6 +99,13 @@ ms.locfileid: "45427426"
 |Дополнение|Бета|Добавлен элемент **azureAD** для типа перечисления [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлен элемент **derivedCredential** для типа перечисления [windows10VpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-windows10vpnauthenticationmethod?view=graph-rest-beta)|
 
+### <a name="education"></a>Образование
+
+| **Тип изменения** | **Версия** | **Описание**                                                                                                                                                     |
+| :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Дополнение        | Бета        | Добавлено свойство **expirationDate** в ресурс [`educationSynchronizationProfile`](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta). |
+| Добавление             | Бета        | Добавлено новое свойство **externalSourceDetail** в ресурсы [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta), [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta), [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) |
+
 ### <a name="extensions--schema-extensions"></a>Расширения | Расширения схемы
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
@@ -104,6 +126,7 @@ ms.locfileid: "45427426"
 | Дополнение | Бета | Добавлена сущность [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta). |
 | Дополнение | 1.0 | Добавлен [API identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-1.0), который представляет политику параметров безопасности по умолчанию Azure Active Directory.|
 | Дополнение        | 1.0        | В [servicePrincipal](/graph/api/serviceprincipal-delta) добавлена возможность [delta query](delta-query-overview.md). |
+| Дополнение | Бета | Добавлен объект [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) для управления правами.  |
 | Дополнение        | Версия 1.0        | Добавлена возможность [запроса изменений](delta-query-overview.md) для [oauth2PermissionGrant](/graph/api/oauth2Permissiongrant-delta). |
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
@@ -113,6 +136,9 @@ ms.locfileid: "45427426"
 | Дополнение | Бета | Добавлен элемент предоставления управления **passwordChange** для объекта [conditionalaccessgrantcontrols](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta). |
 | Дополнение | 1.0 | Добавлены новые типы объектов:<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
 | Дополнение | 1.0 | Добавлены новые сложные типы:<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>|
+| Дополнение | 1.0 | Добавлен [API namedLocation](/graph/api/resources/namedLocation?view=graph-rest-v1.0), представляющий именованные расположения в функции условного доступа Azure AD. |
+|Дополнение|Бета|Добавлен сложный тип [openIDConnectProvider](/graph/api/resources/openidconnectprovider?view=graph-rest-beta), метод [availableprovidertypes](/graph/api/identityprovider-list-availableprovidertypes?view=graph-rest-beta) и свойство [claimsMapping](/graph/api/resources/claimsmapping?view=graph-rest-beta).|
+|Изменение|Бета|Обновлено объект [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-beta) и операции [create](/graph/api/identityprovider-post-identityproviders?view=graph-rest-beta), [list](/graph/api/identityprovider-list?view=graph-rest-beta), [get](/graph/api/identityprovider-get?view=graph-rest-beta), [update](/graph/api/identityprovider-update?view=graph-rest-beta), [delete](/graph/api/identityprovider-delete?view=graph-rest-beta), [post](/graph/api/identityprovider-post-identityproviders?view=graph-rest-beta) для включения поставщика OpenID Connect.|
 | Дополнение | 1.0 | Добавлен [API namedLocation](/graph/api/resources/namedLocation?view=graph-rest-1.0), представляющий именованные расположения в функции условного доступа Azure AD. |
 
 ### <a name="people-and-workplace-intelligence--insights"></a>Люди и рабочая аналитика | Аналитические сведения
@@ -138,9 +164,7 @@ ms.locfileid: "45427426"
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Дополнение|Бета-версия и версия 1.0 |Добавлена связь [workbookOperation](/graph/api/resources/workbookoperation) для объекта [Workbook](/graph/api/resources/workbook?view=graph-rest-beta). |
-|Дополнение|Бета-версия и версия 1.0 |Добавлен метод [получения workbookOperation](/graph/api/workbookoperation-get) для объекта [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta). |
-
-## <a name="june-2020"></a>Июнь 2020 г.
+|Дополнение|Бета-версия и версия 1.0 |Добавлен метод [получения workbookOperation](/graph/api/workbookoperation-get) для объекта [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) ## июнь 2020 г.
 
 ### <a name="calendar"></a>Календарь
 | **Тип изменения** | **Версия**   | **Описание**                          |
@@ -796,7 +820,7 @@ ms.locfileid: "45427426"
 
 ### <a name="identity-and-access--information-protection"></a>Удостоверения и доступ | Защита информации
 
-| **Тип изменения** | **Version** | **Описание**              |
+| **Тип изменения** | **Версия** | **Описание**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлены API [создания](/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-1.0), [получения](/graph/api/threatassessmentrequest-get?view=graph-rest-1.0) и [списка](/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-1.0) для управления ресурсами [threatAssessmentRequest](/graph/api/resources/threatAssessmentRequest?view=graph-rest-1.0).|
 
@@ -1842,7 +1866,7 @@ ms.locfileid: "45427426"
 
 ### <a name="mail-outlook"></a>Почта (Outlook)
 
-| **Тип изменения** | **Версия**   | **Описание**                          |
+| **Тип изменения** | **Version**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 | Добавлен объект [mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0), производный от объекта [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) и поддерживающий его методы. |
 
@@ -2022,7 +2046,7 @@ ms.locfileid: "45427426"
 
 ### <a name="files-onedrive-for-business"></a>Файлы (OneDrive для бизнеса)
 
-| **Тип изменения** | **Версия** | **Описание**                          |
+| **Тип изменения** | **Version** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлено свойство навигации **subscriptions** для объекта [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) |
 | Дополнение        | бета        | Добавлено свойство **expirationDateTime** для типа DateTimeOffset [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
@@ -2251,7 +2275,7 @@ ms.locfileid: "45427426"
 |Дополнение |Бета| Представлен новый тип ресурса [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
 |Дополнение |Бета| Добавлены свойства isFavoriteByDefault, email и webUrl для [канала](/graph/api/resources/channel?view=graph-rest-beta).|
 |Дополнение |Бета| Добавлено свойство displayName для [команды](/graph/api/resources/team?view=graph-rest-beta)|
-|Дополнение |бета| Добавлено свойство описания для [команды](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |Бета| Добавлено свойство описания для [команды](/graph/api/resources/team?view=graph-rest-beta).|
 |Дополнение |Бета| Добавлено свойство классификации для [команды](/graph/api/resources/team?view=graph-rest-beta).|
 |Дополнение |бета| Добавлено свойство [specialization](/graph/api/resources/teamspecialization?view=graph-rest-beta) для [команды](/graph/api/resources/team?view=graph-rest-beta).|
 |Дополнение |бета| Добавлено свойство [видимость](/graph/api/resources/teamvisibilitytype?view=graph-rest-beta) для [группы](/graph/api/resources/team?view=graph-rest-beta).|
@@ -2270,7 +2294,7 @@ ms.locfileid: "45427426"
 
 ### <a name="identity-and-access--data-policy-operations"></a>Удостоверение и доступ | Операции с политикой данных
 
-| **Тип изменения** | **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | бета        | Добавлено новое свойство **progress** для [dataPolicyOperation](/graph/api/resources/dataPolicyOperation?view=graph-rest-beta). Оно указывает ход выполнения операции.
 
@@ -3199,7 +3223,7 @@ ms.locfileid: "45427426"
 |Дополнение|1.0|Добавлено свойство <b>root</b> для объекта [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0). |
 |Дополнение|1.0|Добавлено действие [restoreVersion](/graph/api/driveitemversion-restore?view=graph-rest-1.0) для объекта [driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0). |
 |Дополнение|1.0|Добавлено действие [restoreVersion](/graph/api/listitemversion-restore?view=graph-rest-1.0) для объекта [listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0). |
-|Дополнение|бета|Добавлен новый сложный тип:<br/>[itemPreviewInfo](/graph/api/resources/itempreviewinfo?view=graph-rest-beta).<br/> |
+|Дополнение|Бета|Добавлен новый сложный тип:<br/>[itemPreviewInfo](/graph/api/resources/itempreviewinfo?view=graph-rest-beta).<br/> |
 |Дополнение|Бета|Добавлено свойство <b>name</b> для сложного типа [contentTypeInfo](/graph/api/resources/contenttypeinfo?view=graph-rest-beta). |
 |Дополнение|Бета|Добавлено свойство <b>objectType</b> для сложного типа [deleteAction](/graph/api/resources/deleteaction?view=graph-rest-beta). |
 |Дополнение|Бета|Добавлено свойство <b>newName</b> для сложного типа [renameAction](/graph/api/resources/renameaction?view=graph-rest-beta). |
@@ -3492,7 +3516,7 @@ ms.locfileid: "45427426"
 |Изменение|Бета-версия|Добавлены свойства **rolePermissions** и **isBuiltIn** для объекта [roleDefinition](/graph/api/resources/intune-rbac-roledefinition?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **tokenActionResults** для объекта [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta).|
 |Изменение|бета|Добавлено свойство **minimumUpdateAutoInstallClassification** для объекта [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta).|
-|Изменение|Бета|Добавлены свойства **defenderSecurityCenterDisableAppBrowserUI**, **defenderSecurityCenterDisableFamilyUI**, **defenderSecurityCenterDisableHealthUI**, **defenderSecurityCenterDisableNetworkUI**, **defenderSecurityCenterDisableVirusUI**, **defenderSecurityCenterOrganizationDisplayName**, **defenderSecurityCenterHelpEmail**, **defenderSecurityCenterHelpPhone**, **defenderSecurityCenterHelpURL**, **defenderSecurityCenterNotificationsFromApp**, **defenderSecurityCenterITContactDisplay** и **applicationGuardAllowVirtualGPU** для объекта [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta).|
+|Изменение|Бета-версия|Добавлены свойства **defenderSecurityCenterDisableAppBrowserUI**, **defenderSecurityCenterDisableFamilyUI**, **defenderSecurityCenterDisableHealthUI**, **defenderSecurityCenterDisableNetworkUI**, **defenderSecurityCenterDisableVirusUI**, **defenderSecurityCenterOrganizationDisplayName**, **defenderSecurityCenterHelpEmail**, **defenderSecurityCenterHelpPhone**, **defenderSecurityCenterHelpURL**, **defenderSecurityCenterNotificationsFromApp**, **defenderSecurityCenterITContactDisplay** и **applicationGuardAllowVirtualGPU** для объекта [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства **enableAutomaticRedeployment** и **authenticationAllowFIDODevice** для объекта [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **trustedNetworkDomains** для объекта [windows10VpnConfiguration](/graph/api/resources/intune-deviceconfig-windows10vpnconfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **minimumUpdateAutoInstallClassification** для объекта [windows81CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows81compliancepolicy?view=graph-rest-beta).|
@@ -4470,7 +4494,7 @@ ms.locfileid: "45427426"
 | Изменение      | Бета-версия    | Изменен тип следующих свойств объекта [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta):<br/>**deviceStatuses** теперь относится не к коллекции [managedDeviceMobileAppProvisioningConfigurationDeviceStatus](/graph/api/resources/manageddevicemobileappprovisioningconfigurationdevicestatus?view=graph-rest-beta), а к коллекции [managedDeviceMobileAppConfigurationDeviceStatus](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationdevicestatus?view=graph-rest-beta).<br/>**groupAssignments** теперь относится не к коллекции [appProvisioningConfigGroupAssignment](/graph/api/resources/appprovisioningconfiggroupassignment?view=graph-rest-beta), а к коллекции [mobileAppProvisioningConfigGroupAssignment](/graph/api/resources/intune-apps-mobileappprovisioningconfiggroupassignment?view=graph-rest-beta).<br/> |
 | Изменение      | Бета-версия    | Добавлено свойство навигации **managedDeviceCertificateStates** к объекту [iosScepCertificateProfile](/graph/api/resources/intune-deviceconfig-iosscepcertificateprofile?view=graph-rest-beta). |
 | Изменение      | Бета    | Добавлено свойство навигации **managedDeviceCertificateStates** к объекту [macOSScepCertificateProfile](/graph/api/resources/intune-deviceconfig-macosscepcertificateprofile?view=graph-rest-beta). |
-| Изменение      | бета    | Добавлены свойства навигации **deviceConfigurationStates** и **deviceCompliancePolicyStates** к объекту [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
+| Изменение      | Бета-версия    | Добавлены свойства навигации **deviceConfigurationStates** и **deviceCompliancePolicyStates** к объекту [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлены свойства навигации **deviceStatusSummary** и **userStatusSummary** к объекту [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлено свойство навигации **installSummary** к объекту [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Удалено свойство навигации **sideLoadingKeys** из объекта [organization](/graph/api/resources/intune-onboarding-organization?view=graph-rest-beta). |
