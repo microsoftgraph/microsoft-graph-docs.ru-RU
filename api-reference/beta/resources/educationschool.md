@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 208527c1b846a307b88e3f96204dba660caedb9a
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 32ed190f39d84e4c756d265527f4f0a8bcaf73f5
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909564"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509814"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
 
@@ -35,27 +35,28 @@ ms.locfileid: "44909564"
 | [Удаление пользователя](../api/educationschool-delete-users.md)                      | [educationUser](educationuser.md)                | Удаление **educationUser** из учебного заведения через свойство навигации **users**.      |
 | [Получение administrativeUnit](../api/educationschool-get-administrativeunit.md) | [administrativeUnit](administrativeunit.md)      | Получение **administrativeUnit** , соответствующего этому **educationSchool**.                |
 | [Обновление](../api/educationschool-update.md)                                 | [educationSchool](educationschool.md)            | Обновление объекта **educationSchool**.                                                       |
-| [Delete](../api/educationschool-delete.md)                                 | Нет                                             | Удаление объекта **educationSchool**.                                                       |
+| [удаление](../api/educationschool-delete.md);                                 | Нет                                             | Удаление объекта **educationSchool**.                                                       |
 | [Delta](../api/educationschool-delta.md)                                   | Коллекция [educationSchool](educationschool.md) | Получение добавочных изменений для **едукатионсчулс**                                            |
 
 ## <a name="properties"></a>Свойства
 
-| Свойство            | Тип                                  | Описание                                               |
-| :------------------ | :------------------------------------ | :-------------------------------------------------------- |
-| id                  | Строка                                | GUID этого учебного заведения.                                      |
-| address             | [physicalAddress](physicaladdress.md) | Адрес учебного заведения.                                    |
-| createdBy           | [identitySet](identityset.md)         | Объект, который создал учебное заведение.                            |
-| description         | String                                | Описание учебного заведения.                                |
-| displayName         | Строка                                | Отображаемое имя учебного заведения.                               |
-| externalId          | String                                | Идентификатор учебного заведения в системе синхронизации.                           |
-| externalPrincipalId | String                                | Идентификатор директора в системе синхронизации.                        |
-| externalSource      | String                                | Только для чтения. Возможные значения: `sis` , `lms` или `manual` . |
-| highestGrade        | String                                | Самый старший класс.                                     |
-| lowestGrade         | String                                | Самый младший класс.                                      |
-| phone               | String                                | Номер телефона учебного заведения.                                   |
-| principalEmail      | String                                | Адрес электронной почты директора.                           |
-| principalName       | String                                | Имя директора.                                    |
-| schoolNumber        | String                                | Номер школы.                                            |
+| Свойство             | Тип                                  | Описание                                                                                                                                                          |
+| :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                   | Строка                                | GUID этого учебного заведения.                                                                                                                                                 |
+| address              | [physicalAddress](physicaladdress.md) | Адрес учебного заведения.                                                                                                                                               |
+| createdBy            | [identitySet](identityset.md)         | Объект, который создал учебное заведение.                                                                                                                                       |
+| description          | String                                | Описание учебного заведения.                                                                                                                                           |
+| displayName          | Строка                                | Отображаемое имя учебного заведения.                                                                                                                                          |
+| externalId           | String                                | Идентификатор учебного заведения в системе синхронизации.                                                                                                                                      |
+| externalPrincipalId  | Строка                                | Идентификатор директора в системе синхронизации.                                                                                                                                   |
+| externalSource       | Строка                                | Тип внешнего источника, из которого был создан ресурс (определяется автоматически `externalSourceDetail` ). Возможные значения: `sis` , `lms` , или `manual` . |
+| екстерналсаурцедетаил | Строка                                | Имя внешнего источника, из которого были созданы ресурсы.                                                                                                   |
+| highestGrade         | Строка                                | Самый старший класс.                                                                                                                                                |
+| lowestGrade          | Строка                                | Самый младший класс.                                                                                                                                                 |
+| phone                | String                                | Номер телефона учебного заведения.                                                                                                                                              |
+| principalEmail       | Строка                                | Адрес электронной почты директора.                                                                                                                                      |
+| principalName        | Строка                                | Имя директора.                                                                                                                                               |
+| schoolNumber         | Строка                                | Номер школы.                                                                                                                                                       |
 
 ## <a name="relationships"></a>Связи
 

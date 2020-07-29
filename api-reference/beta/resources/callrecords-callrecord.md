@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Каллрекорд
-description: Тип Каллрекорд
+description: Представляет один одноранговый вызов или групповой вызов между несколькими участниками, которые иногда называют собранием по сети.
 localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 68eeb5fbdf110aa4a8f97c7bf4246897feb22133
-ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
+ms.openlocfilehash: 19519ec646e87060e3721add2188ead6533abc15
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408348"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509877"
 ---
 # <a name="callrecord-resource-type"></a>Тип ресурса Каллрекорд
 
@@ -24,22 +24,24 @@ ms.locfileid: "44408348"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение callRecord](../api/callrecords-callrecord-get.md) | [Microsoft. Graph. Каллрекордс. Каллрекорд](callrecords-callrecord.md) | Чтение свойств и связей объекта Каллрекорд. |
+| [Получение callRecord](../api/callrecords-callrecord-get.md) | [Microsoft. Graph. Каллрекордс. Каллрекорд](callrecords-callrecord.md) | Чтение свойств и связей объекта **каллрекорд** . |
+| [Получение звонков PSTN](../api/callrecords-callrecord-getpstncalls.md) | [Microsoft. Graph. Каллрекордс. Пстнкалллогров](callrecords-pstncalllogrow.md)| Чтение свойств объекта **пстнкалллогров** . |
+| [Получение прямых вызовов маршрутизации](../api/callrecords-callrecord-getdirectroutingcalls.md) | [Microsoft. Graph. Каллрекордс. Директраутинглогров](callrecords-directroutinglogrow.md)| Чтение свойств объекта **директраутинглогров** . |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |endDateTime|DateTimeOffset|Время в формате UTC, когда последний пользователь оставил вызов. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|id|String|Уникальный идентификатор для записи вызова. Только для чтения.|
-|жоинвебурл|String|URL-адрес собрания, связанный с вызовом. Может быть недоступен для типа записи вызовов Пиртопир.|
+|id|Строка|Уникальный идентификатор для записи вызова. Только для чтения.|
+|жоинвебурл|Строка|URL-адрес собрания, связанный с вызовом. Может быть недоступен для типа записи вызовов Пиртопир.|
 |lastModifiedDateTime|DateTimeOffset|Время в формате UTC при создании записи вызова. Тип DatetimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается как время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |модальности|коллекция Microsoft. Graph. Каллрекордс. Modal|Список всех модальности, используемых в вызове. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
 |organizer|[identitySet](identityset.md)|Удостоверение субъекта Организации.|
 |participants|Коллекция [identitySet](identityset.md)|Список уникальных удостоверений, участвующих в вызове.|
 |startDateTime|DateTimeOffset|Время в формате UTC, когда первый пользователь присоединился к вызову. Тип DatetimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается как время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |type|Microsoft. Graph. Каллрекордс. callType|Указывает тип вызова. Возможные значения: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
-|version|Int64|Монотонно увеличивающаяся версия записи вызова. Более высокие записи вызовов с одинаковым идентификатором содержат дополнительные данные по сравнению с более низкой версией.|
+|version|Int64|Монотонно увеличивающаяся версия записи вызова. Более высокие записи вызовов с одинаковым ИДЕНТИФИКАТОРом содержат дополнительные данные по сравнению с более низкой версией.|
 
 ## <a name="relationships"></a>Связи
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 20f4477998547d6e98572fd8409f69e811c2198d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7eddc19d3d802174ca015877ec362ec742f2e791
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507494"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509805"
 ---
 # <a name="connectedorganizationmembers-complex-type"></a>сложный тип Коннектедорганизатионмемберс
 
@@ -18,7 +18,7 @@ ms.locfileid: "42507494"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется в параметрах запроса [политики назначения пакетов Access](accesspackageassignmentpolicy.md). `@odata.type` Значение `#microsoft.graph.connectedOrganizationMembers` указывает на то, что этот тип определяет коллекцию пользователей, которые связаны с подключенной Организацией и могут запрашивать пакет Access.
+Используется в параметрах запроса [политики назначения пакетов Access](accesspackageassignmentpolicy.md). `@odata.type`Значение `#microsoft.graph.connectedOrganizationMembers` указывает на то, что этот тип определяет коллекцию пользователей, которые связаны с [подключенной организацией](connectedorganization.md)и могут запрашивать пакет Access.
 
 ## <a name="properties"></a>Свойства
 
@@ -28,7 +28,7 @@ ms.locfileid: "42507494"
 | :--------------------------- | :------------------------ | :---------- |
 | id |Строка | Идентификатор подключенной Организации в управлении обслуживанием. |
 | description |String | Имя подключенной Организации. Только для чтения. |
-| Создание резервной копии | Boolean | Не используется в данный момент. |
+| Создание резервной копии | Логический | Не используется в данный момент. |
 
 ## <a name="json-representation"></a>Представление JSON
 

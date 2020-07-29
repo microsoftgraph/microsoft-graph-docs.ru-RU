@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 00b029c5dcbf297d7504a0c30ca7512d523c17ce
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: c1eb501cb9852d6d7733a6be3e78c4206326ddbe
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225132"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509835"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления обслуживанием Azure AD
 
@@ -31,6 +31,7 @@ ms.locfileid: "45225132"
 - [акцесспаккажеассигнментресаурцероле](accesspackageassignmentresourcerole.md): Указывает роль, связанную с определенным ресурсом, которой назначена тема с помощью назначения пакета Access.
 - [акцесспаккажекаталог](accesspackagecatalog.md): контейнер для пакетов доступа.
 - [акцесспаккажересаурцерекуест](accesspackageresourcerequest.md): запрос на Добавление ресурса в каталог пакетов Access.
+- [коннектедорганизатион](connectedorganization.md): подключенная организация для внешних пользователей, которые могут запрашивать доступ.
 - [ентитлементманажементсеттингс](entitlementmanagementsettings.md): параметры на уровне клиента для управления обслуживанием Azure AD.
 
 Обратите внимание, что функция управления обслуживанием, включая API, включена в Azure AD Premium P2. Клиент, на котором используется управление обслуживанием, должен иметь допустимую приобретенную или пробную подписку на Azure AD Premium P2 или EMS.
@@ -67,6 +68,12 @@ ms.locfileid: "45225132"
 | [Список ролей ресурсов Акцесспаккажекаталог](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | Коллекция [акцесспаккажересаурцероле](accesspackageresourcerole.md) | Получение списка объектов **акцесспаккажересаурцероле** . |
 | [Список Акцесспаккажересаурцерекуестс](../api/accesspackageresourcerequest-list.md) | Коллекция [акцесспаккажересаурцерекуест](accesspackageresourcerequest.md) | Чтение свойств и связей объектов **акцесспаккажересаурцерекуест** . |
 | [Создание Акцесспаккажересаурцерекуест](../api/accesspackageresourcerequest-post.md) | [акцесспаккажекаталог](accesspackageresourcerequest.md) | Создание нового объекта **акцесспаккажересаурцерекуест** . |
+| [Список Коннектедорганизатионс](../api/connectedorganization-list.md) | Коллекция [коннектедорганизатион](connectedorganization.md) | Получение списка объектов **коннектедорганизатион** . |
+| [Создание Коннектедорганизатион](../api/connectedorganization-post.md) | [коннектедорганизатион](connectedorganization.md) | Создание нового объекта **коннектедорганизатион** . |
+| [Получение Коннектедорганизатион](../api/connectedorganization-get.md) | [коннектедорганизатион](connectedorganization.md) | Чтение свойств и связей объекта **коннектедорганизатион** . |
+| [Обновление Коннектедорганизатион](../api/connectedorganization-update.md) |Нет | Обновление **коннектедорганизатион**. |
+| [Удаление Коннектедорганизатион](../api/connectedorganization-delete.md) |Нет | Удаление объекта **коннектедорганизатион**. |
+
 
 ## <a name="types"></a>Типы
 
@@ -74,8 +81,9 @@ ms.locfileid: "45225132"
 - [аппровалстаже](approvalstage.md) — используется в [аппровалсеттингс](approvalsettings.md) для указания основного, резервного и технического утверждающих лиц.
 - [пользовательские](userset.md) подтипы [SingleUser.](singleuser.md), [граупмемберс](groupmembers.md), [коннектедорганизатионмемберс](connectedorganizationmembers.md), [рекуесторманажер](requestormanager.md), [интерналспонсорс](internalsponsors.md)и екстерналспонсорс используются в [externalSponsors](externalsponsors.md) [requestorSettings](requestorsettings.md), [approvalStage](approvalstage.md) и [assignmentReviewSettings](assignmentreviewsettings.md).
 - [акцесспаккажесубжект](accesspackagesubject.md) — используется в [акцесспаккажеассигнмент](accesspackageassignment.md) в качестве пользователя темы с назначенным пакетом Access.
+- [идентитисаурце](identitysource.md) — используется в [коннектедорганизатион](connectedorganization.md), один из [азуреактиведиректоритенант](azureactivedirectorytenant.md), [домаинидентитисаурце](domainidentitysource.md) или [externalDomainFederation](externaldomainfederation.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы:
 
  - [Что такое управление обслуживанием Azure AD?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
 

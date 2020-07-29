@@ -5,18 +5,18 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: dd71918c1086f4eb7ff1378fbb4bfee17ba1a23a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0c48e7e5a0f6e075cbcd2a5042e7c9db21864a56
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459770"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427272"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
 Пространство имен: microsoft.graph
 
-Событие в календаре ресурса [user](user.md) или стандартный календарь для ресурса [group](group.md), представляющего группу Office 365.
+Событие в календаре ресурса [user](user.md) или стандартный календарь для ресурса [group](group.md), представляющего группу Microsoft 365.
 
 Максимальное количество участников в ресурсе **event** и максимальное количество получателей в ресурсе [eventMessage](eventmessage.md), отправленном из почтового ящика Exchange Online, составляют 500. Дополнительные сведения см. в разделе [Ограничения на отправку](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
@@ -64,6 +64,7 @@ ms.locfileid: "43459770"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
+|allowNewTimeProposals| Boolean | Значение `True`, если организатор собрания разрешает приглашенным предлагать новое время при ответе, в противном случае — `false`. Необязательный параметр. Значение по умолчанию: `true`. |
 |attendees|Коллекция объектов [attendee](attendee.md)|Коллекция участников события.|
 |body|[itemBody](itembody.md)|Текст сообщения, связанного с событием. В формате HTML или текстовом формате.|
 |bodyPreview|String|Предварительный просмотр сообщения, связанного с событием. В текстовом формате.|
@@ -92,7 +93,7 @@ ms.locfileid: "43459770"
 |originalStartTimeZone|String|Часовой пояс начала события, указанный при его создании. Значение `tzone://Microsoft/Custom` указывает, что в классическом приложении Outlook задан традиционный пользовательский часовой пояс. |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Расписание повторения события.|
 |reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
-|responseRequested|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
+|responseRequested|Логический|По умолчанию используется значение true, означающее, что организатор запрашивает у приглашенного отправку ответа для события.|
 |responseStatus|[responseStatus](responsestatus.md)|Указывает тип отклика, отправленного в ответ на сообщение о событии.|
 |sensitivity|sensitivity| Допустимые значения: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|Идентификатор для элемента образца повторяющегося ряда, если это событие входит в повторяющийся ряд.|
@@ -189,6 +190,7 @@ ms.locfileid: "43459770"
 
 ```json
 {
+  "allowNewTimeProposals": "Boolean",
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",

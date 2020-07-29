@@ -5,18 +5,20 @@ localization_priority: Priority
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: b3e7d63a140fbd525aac8e360fe94059e3a440d1
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 048ecb37ae9e2d5812fe190132743f6ccfcf1d21
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805452"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427335"
 ---
 # <a name="create-event"></a>Создание события
 
 Пространство имен: microsoft.graph
 
 Создайте [событие](../resources/event.md) в календаре пользователя по умолчанию или указанном календаре.
+
+По умолчанию при создании события для свойства **allowNewTimeProposals** устанавливается значение true. Это означает, что приглашенные могут предлагать другое время и дату события. Дополнительные сведения о том, как предлагать время, а также получать и принимать новое предложенное время, см. в статье [Предложение нового времени собрания](/graph/outlook-calendar-meeting-proposals).
 
 В рамках этих значений вы можете задать часовой пояс для каждого времени начала или окончания события, так как свойства **start** и **end** относятся к типу [dateTimeTimeZone](../resources/datetimetimezone.md). Сначала [найдите поддерживаемые часовые пояса](outlookuser-supportedtimezones.md), чтобы устанавливать только часовые пояса, настроенные для сервера почтового ящика пользователя. 
 
@@ -93,13 +95,12 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 POST https://graph.microsoft.com/v1.0/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 600
 
 {
   "subject": "Let's go for lunch",
   "body": {
     "contentType": "HTML",
-    "content": "Does late morning work for you?"
+    "content": "Does noon work for you?"
   },
   "start": {
       "dateTime": "2017-04-15T12:00:00",
@@ -120,7 +121,8 @@ Content-length: 600
       },
       "type": "required"
     }
-  ]
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -172,7 +174,7 @@ Content-length: 2197
     "isReminderOn":true,
     "hasAttachments":false,
     "subject":"Let's go brunch",
-    "bodyPreview":"Does late morning work for you?",
+    "bodyPreview":"Does noon work for you?",
     "importance":"normal",
     "sensitivity":"normal",
     "isAllDay":false,
@@ -187,6 +189,7 @@ Content-length: 2197
     "isOnlineMeeting":false,
     "onlineMeetingProvider":"unknown",
     "onlineMeeting":null,
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"
@@ -313,8 +316,8 @@ Content-length: 1390
     {
       "displayName": "Home Office"
     }
-  ]
-
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -382,6 +385,7 @@ Content-length: 2985
   "isOnlineMeeting":true,
   "onlineMeetingProvider":"unknown",
   "onlineMeeting":null,
+  "allowNewTimeProposals": true,
   "responseStatus":{
     "response":"organizer",
     "time":"0001-01-01T00:00:00Z"
@@ -519,7 +523,8 @@ Content-type: application/json
       },
       "type": "required"
     }
-  ]
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -585,6 +590,7 @@ Content-type: application/json
     "isOnlineMeeting":true,
     "onlineMeetingProvider":"unknown",
     "onlineMeeting":null,
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"
@@ -697,6 +703,7 @@ Content-type: application/json
       "type": "required"
     }
   ],
+  "allowNewTimeProposals": true,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness"
 }
@@ -764,6 +771,7 @@ Content-type: application/json
     "onlineMeetingUrl":null,
     "isOnlineMeeting": true,
     "onlineMeetingProvider": "teamsForBusiness",
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"
