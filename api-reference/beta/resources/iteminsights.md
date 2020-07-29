@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: eee6362a9689ae299699b82d0129700ab57c5d26
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: e5f0e525f95f988e7cb90c454285d2ecdb6b1072
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427568"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45435000"
 ---
 # <a name="iteminsights-resource-type"></a>Тип ресурса itemInsights
 
@@ -28,7 +28,7 @@ ms.locfileid: "45427568"
 
 ### <a name="limiting-item-insights"></a>Ограничения для аналитики элементов
 
-Обновите [itemInsightsSettings](iteminsightssettings.md), чтобы отключить аналитику элементов для определенной группы Azure AD или всей организации. Дополнительные сведения см. в статье [Настройка конфиденциальности для аналитики](/graph/insights-customize-item-insights-privacy.md).
+Обновите [itemInsightsSettings](iteminsightssettings.md), чтобы отключить аналитику элементов для определенной группы Azure AD или всей организации. Дополнительные сведения см. в статье [Настройка конфиденциальности для аналитики](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0).
 
 ## <a name="relationships"></a>Связи
 
