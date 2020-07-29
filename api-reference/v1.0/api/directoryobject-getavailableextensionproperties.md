@@ -1,16 +1,16 @@
 ---
 title: 'directoryObject: Жетаваилабликстенсионпропертиес'
-description: Получение всех или отфильтрованных списков свойств расширения каталога, зарегистрированных в каталоге.
+description: Получение полного или отфильтрованного списка свойств расширения каталога, которые зарегистрированы в каталоге.
 author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3276b114f3fa6370a4cc8d03b8b6607148bf3c7f
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 3dfc4d3c8e6d2f379d717649c945aaa48e978916
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225009"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509509"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject: Жетаваилабликстенсионпропертиес
 Пространство имен: microsoft.graph
@@ -49,7 +49,7 @@ POST /directoryObjects/getAvailableExtensionProperties
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|иссинцедфромонпремисес|Boolean|`true`чтобы указать, что необходимо вернуть только свойства расширения, синхронизированные из локального каталога; `false`чтобы указать, что необходимо вернуть только свойства расширения, которые не синхронизируются из локального каталога. Если параметр не задан, возвращаются все свойства расширения (синхронизированные и несинхронизированные).|
+|иссинцедфромонпремисес|Логический|`true`чтобы указать, что необходимо вернуть только свойства расширения, синхронизированные из локального каталога; `false`чтобы указать, что необходимо вернуть только свойства расширения, которые не синхронизируются из локального каталога. Если параметр не задан, возвращаются все свойства расширения (синхронизированные и несинхронизированные).|
 
 
 ## <a name="response"></a>Отклик
@@ -59,6 +59,8 @@ POST /directoryObjects/getAvailableExtensionProperties
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_getavailableextensionproperties"
@@ -74,6 +76,12 @@ Content-length: 43
   "isSyncedFromOnPremises": "Boolean"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getavailableextensionproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

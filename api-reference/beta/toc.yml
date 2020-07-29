@@ -1347,14 +1347,26 @@ items:
                 items:
                   - name: Запись звонка
                     href: resources/callrecords-callrecord.md
-                  - name: Получение записи вызова
+                  - name: Получение
                     href: api/callrecords-callrecord-get.md
               - name: Сеанс
                 items:
                   - name: Сеанс
                     href: resources/callrecords-session.md
-                  - name: Список сеансов
+                  - name: Список
                     href: api/callrecords-session-list.md
+              - name: Звонки PSTN
+                items:
+                  - name: Строка журнала PSTN
+                    href: resources/callrecords-pstncalllogrow.md
+                  - name: Список звонков PSTN
+                    href: api/callrecords-callrecord-getpstncalls.md
+              - name: Прямые вызовы маршрутизации
+                items:
+                  - name: Строка журнала прямой маршрутизации
+                    href: resources/callrecords-directroutinglogrow.md
+                  - name: Перечисление вызовов прямой маршрутизации
+                    href: api/callrecords-callrecord-getdirectroutingcalls.md
       - name: Взаимодействие с разными устройствами
         displayName: Project Rome
         items:
@@ -1489,7 +1501,7 @@ items:
                     href: api/print-list-connectors.md
                   - name: Получение
                     href: api/printconnector-get.md
-                  - name: Обновление
+                  - name: Update
                     href: api/printconnector-update.md
                   - name: Delete
                     href: api/printconnector-delete.md
@@ -1702,13 +1714,13 @@ items:
                   - name: Профиль регистрации Android for Work
                     href: resources/intune-androidforwork-androidforworkenrollmentprofile.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-androidforwork-androidforworkenrollmentprofile-list.md
                       - name: Получение
                         href: api/intune-androidforwork-androidforworkenrollmentprofile-get.md
                       - name: Создание
                         href: api/intune-androidforwork-androidforworkenrollmentprofile-create.md
-                      - name: Удалить
+                      - name: Удаление
                         href: api/intune-androidforwork-androidforworkenrollmentprofile-delete.md
                       - name: Обновление
                         href: api/intune-androidforwork-androidforworkenrollmentprofile-update.md
@@ -1894,7 +1906,7 @@ items:
                   - name: Сертификат подписи корпоративного кода
                     href: resources/intune-apps-enterprisecodesigningcertificate.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-enterprisecodesigningcertificate-list.md
                       - name: Получение
                         href: api/intune-apps-enterprisecodesigningcertificate-get.md
@@ -1915,7 +1927,7 @@ items:
                   - name: Бизнес-приложение iOS
                     href: resources/intune-apps-ioslobapp.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-apps-ioslobapp-list.md
                       - name: Получение
                         href: api/intune-apps-ioslobapp-get.md
@@ -2336,7 +2348,7 @@ items:
                   - name: Назначение мобильного приложения
                     href: resources/intune-apps-mobileappassignment.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-mobileappassignment-list.md
                       - name: Получение
                         href: api/intune-apps-mobileappassignment-get.md
@@ -2349,7 +2361,7 @@ items:
                   - name: Категория мобильных приложений
                     href: resources/intune-apps-mobileappcategory.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-apps-mobileappcategory-list.md
                       - name: Получение
                         href: api/intune-apps-mobileappcategory-get.md
@@ -2767,7 +2779,7 @@ items:
                   - name: Приложение из магазина Windows
                     href: resources/intune-apps-windowsstoreapp.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-windowsstoreapp-list.md
                       - name: Получение
                         href: api/intune-apps-windowsstoreapp-get.md
@@ -2780,7 +2792,7 @@ items:
                   - name: Windows Universal AppX
                     href: resources/intune-apps-windowsuniversalappx.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-apps-windowsuniversalappx-list.md
                       - name: Получение
                         href: api/intune-apps-windowsuniversalappx-get.md
@@ -2968,7 +2980,7 @@ items:
                   - name: Параметр подключения DEP
                     href: resources/intune-enrollment-deponboardingsetting.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-enrollment-deponboardingsetting-list.md
                       - name: Получение
                         href: api/intune-enrollment-deponboardingsetting-get.md
@@ -2995,7 +3007,7 @@ items:
                   - name: Профиль регистрации
                     href: resources/intune-enrollment-enrollmentprofile.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-enrollment-enrollmentprofile-list.md
                       - name: Получение
                         href: api/intune-enrollment-enrollmentprofile-get.md
@@ -3186,7 +3198,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-get.md
-                      - name: Update
+                      - name: Обновление
                         href: api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-update.md
                   - name: Целевой объект AirPrint
                     href: resources/intune-deviceconfig-airprintdestination.md
@@ -3200,7 +3212,7 @@ items:
                   - name: Политика соответствия требованиям Android
                     href: resources/intune-deviceconfig-androidcompliancepolicy.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androidcompliancepolicy-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidcompliancepolicy-get.md
@@ -3430,7 +3442,7 @@ items:
                   - name: Политика соответствия требованиям Android for Work
                     href: resources/intune-deviceconfig-androidforworkcompliancepolicy.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-androidforworkcompliancepolicy-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidforworkcompliancepolicy-get.md
@@ -3629,7 +3641,7 @@ items:
                   - name: Настройка OMA cp на Android
                     href: resources/intune-deviceconfig-androidomacpconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androidomacpconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidomacpconfiguration-get.md
@@ -3642,7 +3654,7 @@ items:
                   - name: Профиль сертификата PKCS Android
                     href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-get.md
@@ -4070,7 +4082,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-deviceconfig-devicecompliancedeviceoverview-get.md
-                      - name: Обновление
+                      - name: Update
                         href: api/intune-deviceconfig-devicecompliancedeviceoverview-update.md
                   - name: 'Состояние устройств, касающееся соответствия устройств требованиям'
                     href: resources/intune-deviceconfig-devicecompliancedevicestatus.md
@@ -4473,7 +4485,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-grouppolicy-grouppolicypresentation-get.md
-                      - name: Update
+                      - name: Обновление
                         href: api/intune-grouppolicy-grouppolicypresentation-update.md
                   - name: Флажок представление групповой политики
                     href: resources/intune-grouppolicy-grouppolicypresentationcheckbox.md
@@ -4866,7 +4878,7 @@ items:
                   - name: Конфигурация устройств с iOS для образования
                     href: resources/intune-deviceconfig-ioseducationdeviceconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-ioseducationdeviceconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-ioseducationdeviceconfiguration-get.md
@@ -4928,7 +4940,7 @@ items:
                   - name: Профиль импортированного сертификата PFX для iOS
                     href: resources/intune-deviceconfig-iosimportedpfxcertificateprofile.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-get.md
@@ -7028,7 +7040,7 @@ items:
                   - name: Экземпляр параметра управления устройствами
                     href: resources/intune-deviceintent-devicemanagementsettinginstance.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceintent-devicemanagementsettinginstance-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementsettinginstance-get.md
@@ -7049,7 +7061,7 @@ items:
                   - name: Экземпляр параметра строки управления устройствами
                     href: resources/intune-deviceintent-devicemanagementstringsettinginstance.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-deviceintent-devicemanagementstringsettinginstance-list.md
                       - name: Получение
                         href: api/intune-deviceintent-devicemanagementstringsettinginstance-get.md
@@ -7885,7 +7897,7 @@ items:
                   - name: Политика управляемых приложений
                     href: resources/intune-mam-managedapppolicy.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-mam-managedapppolicy-list.md
                       - name: Получение
                         href: api/intune-mam-managedapppolicy-get.md
@@ -7903,7 +7915,7 @@ items:
                   - name: Защита управляемых приложений
                     href: resources/intune-mam-managedappprotection.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-mam-managedappprotection-list.md
                       - name: Получение
                         href: api/intune-mam-managedappprotection-get.md
@@ -8101,7 +8113,7 @@ items:
                   - name: Настройка ограничения регистрации устройств
                     href: resources/intune-onboarding-deviceenrollmentlimitconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-onboarding-deviceenrollmentlimitconfiguration-list.md
                       - name: Получение
                         href: api/intune-onboarding-deviceenrollmentlimitconfiguration-get.md
@@ -8116,13 +8128,13 @@ items:
                   - name: Настройка ограничений для платформы регистрации устройств
                     href: resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list.md
                       - name: Получение
                         href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-get.md
                       - name: Создание
                         href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create.md
-                      - name: Удалить
+                      - name: Удаление
                         href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-update.md
@@ -8339,7 +8351,7 @@ items:
                     items:
                       - name: Получение
                         href: api/intune-rbac-rbacapplicationmultiple-get.md
-                      - name: Обновление
+                      - name: Update
                         href: api/intune-rbac-rbacapplicationmultiple-update.md
                   - name: Действие ресурса
                     href: resources/intune-rbac-resourceaction.md
@@ -9413,7 +9425,7 @@ items:
                     href: api/administrativeunit-delta.md
                   - name: Добавление участника
                     href: api/administrativeunit-post-members.md
-                  - name: Список членов
+                  - name: Список участников
                     href: api/administrativeunit-list-members.md
                   - name: Получение члена
                     href: api/administrativeunit-get-members.md
@@ -9668,17 +9680,6 @@ items:
                       - name: Получение
                         href: api/authenticationmethod-get.md
                   - name: Password
-                    href: resources/passwordauthenticationmethod.md
-                    items:
-                      - name: Перечисление
-                        href: api/authentication-list-passwordmethods.md
-                      - name: Получение
-                        href: api/passwordauthenticationmethod-get.md
-                      - name: Сбросить
-                        href: api/passwordauthenticationmethod-resetpassword.md
-                      - name: Получение состояния операции
-                        href: api/authenticationoperation-get.md
-                  - name: Phone
                     href: resources/phoneauthenticationmethod.md
                     items:
                       - name: Перечисление
@@ -9836,6 +9837,21 @@ items:
                         href: api/riskyusers-confirmcompromised.md
                       - name: Отклонить
                         href: api/riskyusers-dismiss.md
+              - name: Поставщик удостоверений
+                href: resources/identityprovider.md
+                items:
+                  - name: Список
+                    href: api/identityprovider-list.md
+                  - name: Создание
+                    href: api/identityprovider-post-identityproviders.md
+                  - name: Получение
+                    href: api/identityprovider-get.md
+                  - name: Обновление
+                    href: api/identityprovider-update.md
+                  - name: Delete
+                    href: api/identityprovider-delete.md
+                  - name: Список доступных типов поставщиков
+                    href: api/identityprovider-list-availableprovidertypes.md
               - name: Защита информации
                 items:
                   - name: Оценка угроз
@@ -9858,19 +9874,6 @@ items:
                         href: api/informationprotection-post-threatassessmentrequests.md
                       - name: Получение
                         href: api/threatassessmentrequest-get.md
-              - name: Поставщик удостоверений
-                href: resources/identityprovider.md
-                items:
-                  - name: Список поставщиков удостоверений
-                    href: api/identityprovider-list.md
-                  - name: Создание поставщика удостоверений
-                    href: api/identityprovider-post-identityproviders.md
-                  - name: Получение поставщика удостоверений
-                    href: api/identityprovider-get.md
-                  - name: Обновление поставщика удостоверений
-                    href: api/identityprovider-update.md
-                  - name: Удаление поставщика удостоверений
-                    href: api/identityprovider-delete.md
               - name: Диспетчер приглашений
                 href: resources/invitation.md
                 items:
@@ -10194,6 +10197,19 @@ items:
                         href: api/accesspackage-list-accesspackageresourcerolescopes.md
                       - name: Создание
                         href: api/accesspackage-post-accesspackageresourcerolescopes.md
+                  - name: Подключенная Организация
+                    href: resources/connectedorganization.md
+                    items:
+                      - name: Список
+                        href: api/connectedorganization-list.md
+                      - name: Создание
+                        href: api/connectedorganization-post.md
+                      - name: Получение
+                        href: api/connectedorganization-get.md
+                      - name: Обновление
+                        href: api/connectedorganization-update.md
+                      - name: Delete
+                        href: api/connectedorganization-delete.md
                   - name: Параметры управления обслуживанием
                     href: resources/entitlementmanagementsettings.md
                     items:
@@ -10286,7 +10302,7 @@ items:
                       - name: Определения ролей
                         href: resources/governanceroledefinition.md
                         items:
-                          - name: Список
+                          - name: Перечисление
                             href: api/governanceroledefinition-list.md
                           - name: Получение
                             href: api/governanceroledefinition-get.md
@@ -11159,7 +11175,7 @@ items:
               - name: Действия в Yammer
                 href: resources/yammer-activity-reports.md
                 items:
-                  - name: Получение сведений о пользователе
+                  - name: Получение сведений о пользователях
                     href: api/reportroot-getyammeractivityuserdetail.md
                   - name: Получение количества действий
                     href: api/reportroot-getyammeractivitycounts.md
@@ -11236,6 +11252,50 @@ items:
                     href: api/externalitem-update.md
                   - name: Удаление
                     href: api/externalitem-delete.md
+      - name: Соответствие требованиям
+        displayName: 'Compliance API, Microsoft Graph Compliance API'
+        items:
+          - name: Обзор
+            href: resources/complianceapioverview.md
+          - name: Обнаружение электронных данных
+            items:
+              - name: Обзор
+                href: resources/eDiscoveryapioverview.md
+              - name: дела eDiscovery
+                href: resources/ediscoverycase.md
+                items:
+                  - name: Список
+                    href: api/ediscoverycase-list.md
+                  - name: Создание
+                    href: api/ediscoverycase-post.md
+                  - name: Получение
+                    href: api/ediscoverycase-get.md
+                  - name: Обновление
+                    href: api/ediscoverycase-update.md
+                  - name: Удаление
+                    href: api/ediscoverycase-delete.md
+              - name: набор проверки обнаружения электронных данных
+                href: resources/reviewset.md
+                items:
+                  - name: Список
+                    href: api/reviewset-list.md
+                  - name: Создание
+                    href: api/reviewset-post.md
+                  - name: Получение
+                    href: api/reviewset-get.md
+              - name: Просмотр запроса Set
+                href: resources/reviewsetquery.md
+                items:
+                  - name: Список
+                    href: api/reviewsetquery-list.md
+                  - name: Создание
+                    href: api/reviewsetquery-post.md
+                  - name: Получение
+                    href: api/reviewsetquery-get.md
+                  - name: Обновление
+                    href: api/reviewsetquery-update.md
+                  - name: Удаление
+                    href: api/reviewsetquery-delete.md
       - name: Безопасность
         displayname: 'Security API, Microsoft Graph Security API'
         items:
@@ -11912,7 +11972,7 @@ items:
           - name: Группа задач Outlook
             href: resources/outlooktaskgroup.md
             items:
-              - name: Список
+              - name: Перечисление
                 href: api/outlookuser-list-taskgroups.md
               - name: Создание
                 href: api/outlookuser-post-taskgroups.md
@@ -11999,7 +12059,7 @@ items:
           - name: Комментарии к книге
             href: resources/workbookcomment.md
             items:
-              - name: Перечисление
+              - name: Список
                 href: api/workbook-list-comments.md
               - name: Получение
                 href: api/workbookcomment-get.md
