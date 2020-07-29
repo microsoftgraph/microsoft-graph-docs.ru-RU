@@ -1,24 +1,24 @@
 ---
-title: Перечисление объектов identityProvider
-description: Получение списка объектов identityProvider.
+title: Список Аваилаблепровидертипес
+description: Получение всех доступных типов поставщиков удостоверений в каталоге.
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 640844dd4d1a60b5a4c5864c9ea7d34fe01faabb
+ms.openlocfilehash: 6b3f44c1638bf698c477fd7e0d9e02538a963b21
 ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509730"
+ms.locfileid: "46510316"
 ---
-# <a name="list-identityproviders"></a>Перечисление объектов identityProvider
+# <a name="list-availableprovidertypes"></a>Список Аваилаблепровидертипес
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [идентитипровидерс](../resources/identityprovider.md) .
+Получает все типы поставщиков удостоверений, доступные в каталоге.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -39,7 +39,7 @@ ms.locfileid: "46509730"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityProviders
+GET /identityProviders/availableProviderTypes
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -49,27 +49,25 @@ GET /identityProviders
 |Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Тело запроса
-
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [IdentityProvider](../resources/identityprovider.md) и [Опенидконнектпровидер](../resources/openIdConnectProvider.md) (только для Azure AD B2C) в теле отклика.
+При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию String в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
-
 Ниже приведен пример запроса.
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityprovider"
+  "name": "identityprovider_availableprovidertypes"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identityProviders
+GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ```
 
 ### <a name="response"></a>Отклик
@@ -81,45 +79,27 @@ GET https://graph.microsoft.com/beta/identityProviders
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider",
-  "isCollection": true
-} -->
+  "@odata.type": "Collection(Edm.String)"
+}
+-->
 
-```http
+``` http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityProviders",
-    "value": [
-      {
-          "@odata.type": "microsoft.graph.identityProvider",
-          "id": "Amazon-OAUTH",
-          "name": "Login with Amazon",
-          "type": "Amazon",
-          "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-          "clientSecret": "*****"
-      },
-      {
-          "@odata.type": "microsoft.graph.openIdConnectProvider",
-          "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
-          "name": "Login with the Contoso identity provider",
-          "type": "OpenIDConnect",
-          "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-          "clientSecret": "*****",
-          "claimsMapping": {
-              "userId": "myUserId",
-              "givenName": "myGivenName",
-              "surname": "mySurname",
-              "email": "myEmail",
-              "displayName": "myDisplayName"
-          },
-          "domainHint": "contoso",
-          "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
-          "responseMode": "form_post",
-          "responseType": "code",
-          "scope": "openid"
-      },
-    ]
+  "value": [
+      "Amazon",
+      "OpenIDConnect",
+      "Facebook",
+      "GitHub",
+      "Google",
+      "LinkedIn",
+      "Microsoft",
+      "QQ",
+      "Twitter",
+      "WeChat",
+      "Weibo"
+  ]
 }
 ```

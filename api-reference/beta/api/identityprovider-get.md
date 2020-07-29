@@ -1,16 +1,16 @@
 ---
 title: Получение identityProvider
-description: Получение свойств существующего identityProvider.
+description: Получение свойств и связей объекта identityProvider.
 localization_priority: Normal
 doc_type: apiPageType
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 670c745966f3fecfbbe837e0d8c176d67a436a45
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 288c84eef3efc0ca8495b3d579a0e02607faf40d
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199617"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509728"
 ---
 # <a name="get-identityprovider"></a>Получение identityProvider
 
@@ -18,7 +18,7 @@ ms.locfileid: "43199617"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств существующего объекта [identityProvider](../resources/identityprovider.md).
+Получение свойств и связей объекта [identityProvider](../resources/identityprovider.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,66 +30,59 @@ ms.locfileid: "43199617"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Для приложений|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
+Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+* Глобальный администратор
+* Администратор внешнего поставщика удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /identityProviders/{id}
 ```
-
 ## <a name="request-headers"></a>Заголовки запросов
 
 |Имя|Описание|
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и представление объекта [identityProvider](../resources/identityprovider.md) в формате JSON в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и представление объекта [IdentityProvider](../resources/identityprovider.md) или [Опенидконнектпровидер](../resources/openidconnectprovider.md) (только для Azure AD B2C) в теле отклика.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-В приведенном ниже примере возвращается определенный объект **identityProvider**.
+### <a name="example-1-retrieves-a-specific-identityprovider"></a>Пример 1: получение определенного объекта **identityProvider**
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identityprovider"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/identityProviders/{id}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a>Отклик
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### <a name="response"></a>Отклик
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.IdentityProvider"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -102,17 +95,53 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+### <a name="example-2-retrieves-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>Пример 2: получение определенного **опенидконнектпровидер** (только для Azure AD B2C)
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Get identityProvider",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_identityprovider"
 }
 -->
+
+``` http
+GET https://graph.microsoft.com/beta/identityProviders/{id}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.openIdConnectProvider"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.openIdConnectProvider",
+  "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
+  "name": "Login with the Contoso identity provider",
+  "type": "OpenIDConnect",
+  "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+  "clientSecret": "12345",
+  "claimsMapping": {
+      "userId": "myUserId",
+      "givenName": "myGivenName",
+      "surname": "mySurname",
+      "email": "myEmail",
+      "displayName": "myDisplayName"
+  },
+  "domainHint": "mycustomoidc",
+  "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
+  "responseMode": "form_post",
+  "responseType": "code",
+  "scope": "openid"
+}
+```

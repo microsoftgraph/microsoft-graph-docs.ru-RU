@@ -1,22 +1,26 @@
 ---
 title: Тип ресурса officeGraphInsights
-description: Аналитика — это связи, вычисленные с помощью расширенного анализа и методов машинного обучения. К примеру, вы можете выявить документы OneDrive для бизнеса, пользующиеся популярностью у пользователей.
+description: Представляет базовый тип для itemInsights. officeGraphInsights предназначен для обратной совместимости с более ранними версиями API аналитики. Используйте только itemInsights при получении доступа к API аналитики.
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 266c570169c219259d19a6c1f78e01c83fe8e2c2
-ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
+ms.openlocfilehash: ce1f51a3e0b53dc1ed108febf9a3b91055349ce5
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44226891"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427328"
 ---
 # <a name="officegraphinsights-resource-type"></a>Тип ресурса officeGraphInsights
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Используйте [itemInsights](iteminsights.md) вместо **officeGraphInsights**, чтобы получить доступ к API аналитики.
+
+**officeGraphInsights** предназначен для обратной совместимости с более ранними версиями API аналитики. Это базовый тип для [itemInsights](iteminsights.md).
 
 Аналитика — это связи, вычисленные с помощью расширенного анализа и методов машинного обучения. К примеру, вы можете выявить документы OneDrive для бизнеса, пользующиеся популярностью у пользователей.
 
@@ -32,9 +36,10 @@ ms.locfileid: "44226891"
 
 | Связь      | Тип          | Описание  |
 | ------------- |---------------| -------------|
-| trending      | Коллекция объектов [trending](insights-trending.md)       | Вычисляемая связь, определяющая документы, популярные у пользователя. Документы, популярные у пользователя, рассчитываются на основе действий пользователя в ближайшей сети людей и включают файлы, сохраненные в OneDrive для бизнеса и SharePoint. Аналитика документов, популярных у пользователя, позволяет обнаружить потенциально полезное содержимое, к которому у пользователя есть доступ, но которое он еще не просматривал.|
-| used      | Коллекция объектов [usedInsight](insights-used.md)        | Вычисление соотношения, определяющего последние документы, просмотренные или измененные пользователем, в том числе документы в OneDrive для бизнеса и SharePoint, упорядоченные по давности использования.|
-| общие        | Коллекция объектов [sharedInsight](insights-shared.md)        | Вычисляемая связь, определяющая документы, к которым пользователю или пользователем предоставлен общий доступ. Сюда включены URL-ссылки, вложенные файлы, справочные вложения в OneDrive для бизнеса и файлы SharePoint, которые есть в сообщениях и собраниях Outlook. Кроме того, сюда включены URL-ссылки и справочные вложения в беседах Teams. Упорядочено по давности общего доступа.|
+| trending      | Коллекция объектов [trending](insights-trending.md)       | Получите доступ к этому свойству из производного типа [itemInsights](iteminsights.md).|
+| used      | Коллекция объектов [usedInsight](insights-used.md)        | Получите доступ к этому свойству из производного типа [itemInsights](iteminsights.md).|
+| общие        | Коллекция объектов [sharedInsight](insights-shared.md)        | Получите доступ к этому свойству из производного типа [itemInsights](iteminsights.md).|
+
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -59,3 +64,4 @@ ms.locfileid: "44226891"
   "shared": [ { "@odata.type": "microsoft.graph.shared" } ]
 }
 ```
+

@@ -1,16 +1,16 @@
 ---
 title: Создание identityProvider
-description: Создание объекта identityProvider путем указания отображаемого имени, типа identityProvider, идентификатора клиента и секрета клиента.
+description: Создание нового объекта identityProvider.
 localization_priority: Normal
 doc_type: apiPageType
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 540af7a9ebb9ea56f6f3f61cff89ff6a4d3973d6
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: d5d6eb847179a062bda1c0013bafb73de38ab455
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199594"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509709"
 ---
 # <a name="create-identityprovider"></a>Создание identityProvider
 
@@ -18,7 +18,7 @@ ms.locfileid: "43199594"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [identityProvider](../resources/identityprovider.md) путем указания отображаемого имени, типа identityProvider, идентификатора клиента и секрета клиента.
+Создание нового объекта [identityProvider](../resources/identityprovider.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,11 +30,14 @@ ms.locfileid: "43199594"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Для приложений|IdentityProvider.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
+Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+* Глобальный администратор
+* Администратор внешнего поставщика удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /identityProviders
 ```
@@ -48,69 +51,81 @@ POST /identityProviders
 
 ## <a name="request-body"></a>Текст запроса
 
-Предоставьте в тексте запроса описание объекта [identityProvider](../resources/identityprovider.md) в формате JSON. Все свойства, перечисленные в приведенной ниже таблице, являются обязательными.
+В тексте запроса предоставьте представление объекта [identityProvider](../resources/identityprovider.md) или [опенидконнектпровидер](../resources/openidconnectprovider.md) (только для Azure AD B2C) в формате JSON. Все свойства, перечисленные в приведенной ниже таблице, являются обязательными.
+
+### <a name="identityprovider-object"></a>Объект identityProvider
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
 |clientId|String|Идентификатор клиента для приложения. Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
 |clientSecret|String|Секрет клиента для приложения. Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
 |name|String|Отображаемое имя поставщика удостоверений.|
-|type|String|Тип поставщика удостоверений Он должен иметь одно из следующих значений: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|type|String|Тип поставщика удостоверений <ul>Для сценария B2B:<li/>Google<li/>Facebook</ul><ul>Для сценария B2C:<li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>опенидконнект</ul>|
+
+### <a name="openidconnectprovider-object"></a>Объект Опенидконнектпровидер
+
+|Свойство|Тип|Описание|
+|:---------------|:--------|:----------|
+|clientId|String|Идентификатор клиента для приложения. Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
+|clientSecret|String|Секрет клиента для приложения. Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
+|name|String|Отображаемое имя поставщика удостоверений.|
+|type|String|Тип поставщика удостоверений Значение должно быть `OpenIdConnect` .|
+|клаимсмаппинг|[клаимсмаппинг](../resources/claimsmapping.md)|`userId`Свойства и `displayname` обязательные для объекта клаимсмаппинг.|
+|metadataUrl|Строка|URL-адрес документа метаданных поставщика удостоверений подключения Open ID.|
+|респонсемоде|Строка|Определяет метод, который должен использоваться для отправки данных обратно от настраиваемого поставщика удостоверений в Azure AD B2C. Можно использовать следующие режимы ответа: <ul><li/>`form_post`: Этот режим ответа рекомендуется для обеспечения лучшей безопасности. Ответ передается через HTTP-метод POST с кодом или маркером, закодированным в теле, с помощью формата Application/x-www-Form-урленкодед.<li/>`query`: Код или маркер возвращается в виде параметра запроса.</ul>|
+|responseType|Строка|Описывает тип сведений, которые отправляются обратно при первом вызове authorization_endpoint настраиваемого поставщика удостоверений. Можно использовать следующие типы ответов:<ul><li/> `code`: В соответствии с процессом кода авторизации код вернется обратно в Azure AD B2C. B2C Azure AD выполняет вызов token_endpoint для обмена кодом для маркера.<li/> `id_token`: Токен ID возвращается обратно в Azure AD B2C из настраиваемого поставщика удостоверений. <li/>`token`: Маркер доступа возвращается обратно в Azure AD B2C из настраиваемого поставщика удостоверений. (В настоящее время это значение не поддерживается в Azure AD B2C)</ul>|
+|scope|Строка|Область определяет сведения и разрешения, которые вы собираетесь получить от настраиваемого поставщика удостоверений.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [identityProvider](../resources/identityprovider.md) в тексте отклика. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и [IdentityProvider](../resources/identityprovider.md) или [Опенидконнектпровидер](../resources/openidconnectprovider.md) (только для Azure AD B2C) в теле отклика. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-В приведенном ниже примере создается объект **identityProvider**.
+### <a name="example-1-create-a-specific-identityprovider"></a>Пример 1: создание определенного **identityProvider**
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_identityprovider_from_identityproviders"
-}-->
-```http
+}
+-->
+
+``` http
 POST https://graph.microsoft.com/beta/identityProviders
 Content-type: application/json
+Content-length: 154
 
 {
-    "name": "Login with Amazon",
-    "type": "Amazon",
-    "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-    "clientSecret": "000000000000"
+  "@odata.type": "microsoft.graph.identityProvider",
+  "name": "Login with Amazon",
+  "type": "Amazon",
+  "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+  "clientSecret": "000000000000"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-identityprovider-from-identityproviders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-identityprovider-from-identityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a>Отклик
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-identityprovider-from-identityproviders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+Ниже приведен пример ответа.
 
----
-
-
-##### <a name="response"></a>Отклик
+**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.IdentityProvider"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+   "@odata.type": "microsoft.graph.identityProvider",
     "id": "Amazon-OAUTH",
     "name": "Login with Amazon",
     "type": "Amazon",
@@ -118,16 +133,78 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Create identityProvider",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+### <a name="example-2-create-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>Пример 2: создание определенного **опенидконнектпровидер** (только для Azure AD B2C)
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_openidconnectprovider_from_identityproviders"
 }
 -->
+
+``` http
+POST https://graph.microsoft.com/beta/identityProviders
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.openIdConnectProvider",
+    "name": "Login with the Contoso identity provider",
+    "type": "OpenIDConnect",
+    "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+    "clientSecret": "12345",
+    "claimsMapping": {
+        "userId": "myUserId",
+        "givenName": "myGivenName",
+        "surname": "mySurname",
+        "email": "myEmail",
+        "displayName": "myDisplayName"
+    },
+    "domainHint": "mycustomoidc",
+    "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
+    "responseMode": "form_post",
+    "responseType": "code",
+    "scope": "openid"
+}
+
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.openIdConnectProvider"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.openIdConnectProvider",
+  "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
+  "name": "Login with the Contoso identity provider",
+  "type": "OpenIDConnect",
+  "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+  "clientSecret": "12345",
+  "claimsMapping": {
+      "userId": "myUserId",
+      "givenName": "myGivenName",
+      "surname": "mySurname",
+      "email": "myEmail",
+      "displayName": "myDisplayName"
+  },
+  "domainHint": "mycustomoidc",
+  "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
+  "responseMode": "form_post",
+  "responseType": "code",
+  "scope": "openid"
+}
+```

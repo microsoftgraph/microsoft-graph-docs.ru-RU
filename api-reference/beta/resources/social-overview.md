@@ -5,12 +5,12 @@ localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: d1e1f49125aa8959c1cdd6b2f47cc5c4ff81d962
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: MT
+ms.openlocfilehash: 86a8142882d9a9471ad128ca960ca3840cea7cca
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050969"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427475"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении
 
@@ -34,13 +34,13 @@ Microsoft Graph обеспечивает доступ к полезным дан
 
 Ресурс [profile](../resources/profile.md) является богатым источником информации о пользователях в клиенте, который предоставляет удобный механизм хранения и получения информации о людях. 
 
-## <a name="personalize-people-experiences-within-your-organization"></a>Настройка взаимодействия с пользователями в Организации
+## <a name="personalize-people-experiences-within-your-organization"></a>Персонализация пользовательского интерфейса в организации
 
-Функция: Настройка карточки профиля (Предварительная версия)
+Функция: настройка карточки профиля (предварительная версия)
 
-Позволяет администратору настраивать сведения, отображаемые в карточке профиля, используемой в Microsoft 365 в Организации.
+Предоставляет администратору возможность настроить сведения, указанные в карточке профиля, которая используется в Microsoft 365 в организации.
 
-Ресурс [профилекардпроперти](../resources/profileCardProperty.md) представляет атрибут пользователя в карточке профиля Microsoft 365, который Организация будет использовать совместно с другими пользователями.
+Ресурс [profileCardProperty](../resources/profileCardProperty.md) представляет атрибут пользователя на карточке профиля Microsoft 365 для организации, который отображается в общем интерфейсе.
 
 ## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>Помощь пользователям в получении наиболее важных документов для работы
 
@@ -51,6 +51,7 @@ Microsoft Graph обеспечивает доступ к полезным дан
 - Список [популярных документов](../api/insights-list-trending.md) пользователя
 - Список документов, [используемых](../api/insights-list-used.md) пользователем
 - Список документов, [к которым пользователю предоставлен доступ или к которым пользователь предоставил доступ](../api/insights-list-shared.md)
+- Изучите способы [настройки параметров конфиденциальности для аналитики элементов](/graph/insights-customize-item-insights-privacy.md) в организации.
 
 ## <a name="manage--mentions"></a>Управление @упоминаниями
 
@@ -86,7 +87,7 @@ Include the next sentence when supporting events.
 Используйте API аналитики, чтобы получить статистику о действиях и соответствующие параметры для пользователя:
 
 - [settings](../resources/settings.md). Чтобы API аналитики возвращал результаты для пользователя, в параметрах аналитики текущего пользователя должна отображаться действительная лицензия MyAnalytics, должно быть выбрано использование MyAnalytics и должен применяться облачный почтовый ящик с поддержкой Graph.
-- [активитистатистикс](../resources/activitystatistics.md): получает данные за последнюю полную неделю (или указанный диапазон времени) для действий Microsoft 365, затраченных пользователем, в том числе количество часов, затраченных на [звонки](callactivitystatistics.md), [беседы (мгновенные сообщения)](chatactivitystatistics.md), [электронную почту](emailactivitystatistics.md)и [собрания](meetingactivitystatistics.md) в течение и за пределами рабочего времени, а также количество часов, доступных для [фокусной работы](focusactivitystatistics.md).
+- [activityStatistics](../resources/activitystatistics.md). Получение данных за последнюю полную неделю (или указанный промежуток времени) о действиях в Microsoft 365, выполненных пользователем, включая количество часов, потраченное на [звонки](callactivitystatistics.md), [чаты (мгновенные сообщения)](chatactivitystatistics.md), [письма](emailactivitystatistics.md) и [собрания](meetingactivitystatistics.md) в течение и вне рабочего времени, а также часы, доступные для [сосредоточенной работы](focusactivitystatistics.md).
 
 ## <a name="whats-new"></a>Новые возможности
-Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этих наборов API.
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этих наборов API.

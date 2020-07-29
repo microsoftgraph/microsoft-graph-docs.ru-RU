@@ -4,12 +4,12 @@ description: Записи вызовов дают вам информацию о
 author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 93d102de8d685a2ba7418069ea26024963230cf0
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 43d41184bbb2af9c63b2818f91ef578579df4119
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491709"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509597"
 ---
 # <a name="call-records-overview"></a>Общие сведения о записях звонков
 
@@ -27,6 +27,10 @@ ms.locfileid: "44491709"
 
 Приложения могут получать [запись вызовов](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) по идентификатору. Этот идентификатор можно определить на основе уведомления веб-перехватчика или получить из средства "Администрирование".
 
-## <a name="see-also"></a>См. также
+## <a name="get-call-record-reports"></a>Получение отчетов о записи вызовов
+
+Организации, которые используют Microsoft Teams для подключения к телефонной сети общего пользования (PSTN), обычно заключают отслеживание этих сведений об использовании, чтобы получить представление о связанных затратах. Функции [жетпстнкаллс](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) и [жетдиректраутингкаллс](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) возвращают проекцию данных [записи вызовов](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) в табличном формате.
+
+## <a name="see-also"></a>Дополнительные ресурсы:
 
 - [Разрешения для записей звонков](/graph/permissions-reference#call-records-permissions)

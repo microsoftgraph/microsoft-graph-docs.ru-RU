@@ -1,89 +1,87 @@
 ---
-title: Удаление identityProvider
-description: Удаление identityProvider.
+title: Удаление Коннектедорганизатион
+description: Удаление Коннектедорганизатион.
+author: markwahl-msft
 localization_priority: Normal
-doc_type: apiPageType
-author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c7e1d81f7a8e117bc31f9e827f83cc90bbb8db59
+doc_type: apiPageType
+ms.openlocfilehash: 4f91652b8f7ec479892c6f19d9804b39b521fe58
 ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509765"
+ms.locfileid: "46510258"
 ---
-# <a name="delete-identityprovider"></a>Удаление identityProvider
+# <a name="delete-connectedorganization"></a>Удаление Коннектедорганизатион
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [identityProvider](../resources/identityprovider.md).
+Удаление объекта [коннектедорганизатион](../resources/connectedorganization.md) .
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|IdentityProvider.ReadWrite.All|
-
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
-* Глобальный администратор
-* Администратор внешнего поставщика удостоверений
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|:---|:---|
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
-DELETE /identityProviders/{id}
+DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-
 |Имя|Описание|
-|:---------------|:----------|
+|:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Тело запроса
-
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
-
-Ниже приведен пример запроса.
-
 <!-- {
   "blockType": "request",
-  "name": "delete_identityprovider"
+  "name": "delete_connectedorganization"
 }
 -->
-
 ``` http
-DELETE https://graph.microsoft.com/beta/identityProviders/{id}
+DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ```
 
 
 ### <a name="response"></a>Отклик
-
-Ниже приведен пример ответа.
-
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
-
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Delete connectedOrganization",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
