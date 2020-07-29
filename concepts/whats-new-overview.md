@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: e26203ef0a8846f611d570d98f30fd17dd6db4b3
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 14b02eedcb1636a40a68b2ecbcb3e814ca131c87
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183920"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427321"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -26,10 +26,19 @@ ms.locfileid: "45183920"
 Общая доступность следующих свойств объекта [group](/graph/api/resources/group?view=graph-rest-v1.0): **assignedLabels**, **expirationDateTime**, **membershipRule**, **membershipRuleProcessingState**, **preferredLanguage** и **theme**.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
-Удаление пользователя в качестве зарегистрированного владельца или пользователя [устройства](/graph/api/resources/device).
+- Удаление пользователя в качестве зарегистрированного владельца или пользователя [устройства](/graph/api/resources/device).
+- Отслеживайте изменения в новых, обновленных или удаленных локальных представлениях приложений (представленных ресурсами[servicePrincipals](/graph/api/resources/serviceprincipal)) и делегированных разрешениях (представленных ресурсами [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant)) без полного чтения всей коллекции ресурсов.
+- GA [политики обеспечения безопасности по умолчанию](/graph/api/resources/identitysecuritydefaultsenforcementpolicy), которая защищает организации от распространенных атак.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+- GA [политик условного доступа](/graph/api/resources/conditionalAccessPolicy), которые являются настраиваемыми правилами, определяющими сценарии доступа.
+- GA [именованных расположений](/graph/api/resources/namedLocation), представляющих собой настраиваемые правила, которые определяют сетевые расположения, используемые в политике условного доступа.
 
 ### <a name="schema-extensions"></a>Расширения схемы
-Функция [расширения схемы](/graph/api/resources/schemaextension) теперь общедоступна в [Microsoft Cloud for US Government](/graph/deployments).
+Функция [расширений схемы](/graph/api/resources/schemaextension) теперь общедоступна в [Microsoft Cloud for US Government](/graph/deployments).
+
+### <a name="teamwork"></a>Командная работа
+Используйте делегированные разрешения `TeamsAppInstallation.ReadForTeam` или`TeamsAppInstallation.ReadWriteForTeam`, или разрешения приложений `TeamsAppInstallation.ReadForTeam.All` или `TeamsAppInstallation.ReadWriteForTeam.All`, чтобы [составить список приложений, установленных в группе](/graph/api/teamsappinstallation-list).
 
 ## <a name="july-2020-new-in-preview-only"></a>Июль 2020 г.: новые возможности только в предварительной версии
 
@@ -46,8 +55,15 @@ ms.locfileid: "45183920"
 Обновления Intune за [июль](changelog.md#july-2020) в бета-версии.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
+- [Получите маркер доступа](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) для авторизации службы контроля использования Azure AD для предоставления пользователям доступа к приложению.
+- [Получите](/graph/api/entitlementmanagementsettings-get?view=graph-rest-beta) или[обновите](/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta)настройки управления правами, которые контролируют доступ к группам, приложениям и сайтам SharePoint Online для пользователей внутри или вне вашей организации. 
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 - Включение уровней риска пользователя (`low`, `medium`, `high`, `none`) при рассмотрении применения [политики условного доступа](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
 - [Использование смены пароля в качестве предоставления управления](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta#special-considerations-when-using-passwordchange-as-a-control), чтобы пройти политику условного доступа.
+
+### <a name="people-and-workplace-intelligence--insights"></a>Люди и рабочая аналитика | Аналитические сведения
+Используйте более [детальное управление конфиденциальностью](insights-customize-item-insights-privacy.md) в отношении доступности и отображения[элементов аналитики](/graph/api/resources/iteminsights?view=graph-rest-beta) в Microsoft 365. Эти данные представляют собой отношения между пользователем и документами в OneDrive для бизнеса, вычисляемые с использованием передовых методов анализа и машинного обучения. 
 
 ### <a name="people-and-workplace-intelligence--profile-card-customization"></a>Люди и рабочая аналитика | Настройка карточки профиля
 Администраторы могут [настроить свойства, представленные в карточке профиля для своих организаций](add-properties-profilecard.md), используя API-интерфейс для [свойств карточки профиля](/graph/api/resources/profilecardproperty?view=graph-rest-beta).
@@ -56,6 +72,9 @@ ms.locfileid: "45183920"
 [Получение состояния и любого результата](/graph/api/workbookoperation-get?view=graph-rest-beta) длительной [операции](/graph/api/resources/workbookoperation?view=graph-rest-beta) в [книге](/graph/api/resources/workbook?view=graph-rest-beta).
 
 ## <a name="june-2020-new-and-generally-available"></a>Июнь 2020 г.: новые и общедоступные возможности
+
+### <a name="calendar"></a>Календарь
+GA функции, которая позволяет организаторам предлагать альтернативное время собраний, а приглашенным [предлагать новое время для собрания](outlook-calendar-meeting-proposals.md), когда они [предварительно принимают](/graph/api/event-tentativelyaccept?view=graph-rest-1.0) или[отклоняют](/graph/api/event-decline?view=graph-rest-1.0) событие.
 
 ### <a name="cloud-communications--online-meeting"></a>Облачные коммуникации | Онлайн-собрание
 - Использование `Accept-Language` заголовка HTTP при [создании онлайнового собрания](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0) для предоставления объединенной информации на основе языковой среды.
