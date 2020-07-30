@@ -99,7 +99,7 @@ items:
             href: findmeetingtimes-example.md
           - name: Получение сведений о доступности
             href: outlook-get-free-busy-schedule.md
-          - name: Предложение нового времени собрания (предварительная версия)
+          - name: Предложение нового времени собрания
             href: outlook-calendar-meeting-proposals.md
           - name: Организация и посещение собраний по сети
             href: outlook-calendar-online-meetings.md
@@ -275,6 +275,8 @@ items:
             href: people-example.md
           - name: Настройка карточки профиля (предварительная версия)
             href: add-properties-profilecard.md
+          - name: Настройка конфиденциальности аналитики (предварительная версия)
+            href: insights-customize-item-insights-privacy.md
       - name: Личные контакты
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
         items:
