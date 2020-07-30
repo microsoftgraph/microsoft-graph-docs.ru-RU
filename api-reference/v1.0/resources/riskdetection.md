@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7ad9c9a7ec23efdc86470f8ea3ed5245173cd1d1
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: Auto
+ms.openlocfilehash: df497d42eebe8909fb734365f0272a1e03b4e59f
+ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896877"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46524312"
 ---
 # <a name="riskdetection-resource-type"></a>Тип ресурса Рискдетектион
 
@@ -45,7 +45,7 @@ Azure AD постоянно оценивает [риски пользовате�
 |location|[signInLocation](../resources/signinlocation.md)|Расположение входа в систему.|
 |requestId|String|Идентификатор запроса, связанный с обнаружением риска. Это свойство имеет значение null, если обнаружение риска не связано с входом.|
 |riskDetail|riskDetail|Сведения об обнаруженном риске. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
-|рискевенттипе|String|Тип обнаруженного события риска. Возможные значения:,,,,,,,,,,,, `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` и `unknownFutureValue` .|
+|рискевенттипе|String|Тип обнаруженного события риска. Возможные значения:,,,,,,,,,,,, `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` и `unknownFutureValue` . Если обнаружение риска является определением Premium, отображается`generic`|
 |riskLevel|riskLevel|Уровень обнаруженного риска. Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|riskState|Состояние обнаруженного опасного пользователя или входа. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |source|String|Источник обнаружения риска. Например, "activeDirectory". |
