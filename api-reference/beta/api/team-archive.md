@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f0718763e24ff8155cc9bd6fa6567c302dfc0f5d
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 5eced3dfe4a796f5d6db9340a1db819a7de4781f
+ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491674"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46524361"
 ---
 # <a name="archive-team"></a>Архивация команды
 
@@ -57,7 +57,7 @@ POST /teams/{id}/archive
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-Этот необязательный параметр определяет, следует ли для участников команды задать разрешения только для чтения на сайте Sharepoint Online, связанном с командой. Если присвоить ему значение false или не указать текст, этот этап будет пропущен.
+Этот необязательный параметр определяет, нужно ли устанавливать разрешения для участников группы только для чтения на сайте SharePoint Online, связанном с командой. Если присвоить ему значение false или не указать текст, этот этап будет пропущен.
 
 ## <a name="response"></a>Отклик
 

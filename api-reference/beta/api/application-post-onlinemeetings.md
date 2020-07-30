@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cef3822e418b822c74293fbff9c0def9a7104c63
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
-ms.translationtype: MT
+ms.openlocfilehash: 30f15f495fc73f0d976da820b43c10a88b3d5f9c
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345172"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509527"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
@@ -28,16 +28,15 @@ ms.locfileid: "44345172"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.ReadWrite                    |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | OnlineMeetings.ReadWrite.All*  |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
+| Application                            | Не поддерживается.\* |
 
->**Примечание:** В ближайшем будущем будет поддерживаться создание собрания по сети с маркером приложения. Мы будем предоставлять дополнительные политики приложений, которые будут дополнять область разрешений на основе приложения. На данный момент мы рекомендуем использовать путь/ме с маркером пользователя
+> [!IMPORTANT]
+> \* Поддержка создания собрания по сети с маркером приложения будет доступна в ближайшем будущем. Мы предоставим дополнительные политики приложений, дополняющие область разрешений на основе приложения. В настоящее время вы должны использовать путь /me с маркером пользователя.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /app/onlineMeetings
-POST /communications/onlineMeetings
 POST /me/onlineMeetings
 ```
 
@@ -58,100 +57,7 @@ POST /me/onlineMeetings
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-an-online-meeting-with-application-token"></a>Пример 1. Создание собрания по сети с помощью маркера приложения
-
-#### <a name="request"></a>Запрос
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create-onlinemeeting-app-token"
-}-->
-```http
-POST https://graph.microsoft.com/beta/communications/onlineMeetings
-Content-Type: application/json
-
-{
-  "startDateTime":"2019-09-09T14:33:30.8546353-07:00",
-  "endDateTime":"2019-09-09T15:03:30.8566356-07:00",
-  "subject":"Application Token Meeting",
-  "participants": {
-    "organizer": {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f"
-        }
-      }
-    }
-  }
-}
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-app-token-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-app-token-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-app-token-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-В тексте запроса должно быть представление объекта [onlineMeeting](../resources/onlinemeeting.md) в формате JSON.
-
-#### <a name="response"></a>Отклик
-
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onlineMeeting"
-} -->
-```http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.onlineMeeting",
-  "autoAdmittedUsers": "everyone",
-  "audioConferencing": {
-    "tollNumber": "+12525634478",
-    "tollFreeNumber": "+18666390588",
-    "ConferenceId": "2425999",
-    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
-  },
-  "chatInfo": {
-    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
-    "messageId": "0",
-    "replyChainMessageId": "0"
-  },
-  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
-  "startDateTime": "2019-07-11T02:17:17.6491364Z",
-  "endDateTime": "2019-07-11T02:47:17.651138Z",
-  "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
-  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
-  "participants": {
-    "organizer": {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
-      },
-      "upn": "upn-value"
-    }
-  },
-  "subject": "Application Token Meeting"
-}
-```
-
-### <a name="example-2-create-an-online-meeting-with-user-token"></a>Пример 2. Создание собрания по сети с помощью маркера пользователя
+### <a name="example-1-create-an-online-meeting-with-user-token"></a>Пример 1. Создание собрания по сети с помощью маркера пользователя
 
 #### <a name="request"></a>Запрос
 
@@ -242,7 +148,7 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-3-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a>Пример 3. Создание собрания по сети в канале Microsoft Teams с помощью маркера пользователя
+### <a name="example-2-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a>Пример 2. Создание собрания по сети в канале Microsoft Teams с помощью маркера пользователя
 
 #### <a name="request"></a>Запрос
 >**Примечание.** Идентификатор объекта переданного маркера пользователя должен быть элементом канала, представленного с помощью threadid в полезных данных.

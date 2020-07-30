@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса identityProvider
-description: Представляет поставщика удостоверений Azure Active Directory (Azure AD). Поставщик удостоверений может иметь значение Microsoft, Google, Facebook, Amazon или LinkedIn.
-localization_priority: Normal
+description: Представляет поставщиков удостоверений в клиенте Azure Active Directory и клиенте Azure AD B2C.
+localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: Nickgmicrosoft
-ms.openlocfilehash: 1c71fc88b4365031a126ee5c45f59de25f5fa3d9
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+author: namkedia
+ms.openlocfilehash: 449553213e41cb8b447511584c4905906011a4d4
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897059"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509548"
 ---
 # <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
 
@@ -18,34 +18,38 @@ ms.locfileid: "44897059"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет поставщика удостоверений Azure Active Directory (Azure AD). Поставщик удостоверений может иметь значение Microsoft, Google, Facebook, Amazon или LinkedIn.
+Представляет поставщиков удостоверений в клиенте Azure Active Directory и клиенте Azure AD B2C.
 
-Настройка поставщика удостоверений в клиенте B2C Azure AD позволяет:
+Для сценариев Azure AD B2B в клиенте Azure AD типом поставщика удостоверений может быть Google или Facebook.
 
-* Пользователям выполнять вход и вход с использованием социальных учетных записей в приложении-потребителе. Например, приложение может использовать Azure AD B2C, чтобы разрешить пользователям регистрироваться в службе с помощью учетной записи Facebook.
-* Пользователи могут связать существующую локальную учетную запись с социальными учетными записями в приложении-потребителе. Например, пользователь создал имя пользователя и пароль (локальную учетную запись) в приложении. Затем он захотел связать существующую локальную учетную запись с новой учетной записью Facebook, чтобы входить с помощью Facebook.
+В клиенте Azure AD B2C типом поставщика удостоверений может быть Майкрософт, Google, Facebook, Amazon, LinkedIn, Twitter или любой [openIdConnectProvider](../resources/openidconnectprovider.md). В предварительной версии доступны следующие поставщики удостоверений: Weibo, QQ, WeChat и GitHub.
 
-Настройка поставщика удостоверений в клиенте Azure AD позволяет в будущем применять гостевые сценарии B2B. Например, у Организации есть ресурсы в Microsoft 365, которые должны быть предоставлены пользователю Gmail. Для проверки подлинности и доступа к документам пользователь Gmail использует данные учетной записи Google.
+Настройка поставщика удостоверений в клиенте Azure AD B2C позволяет пользователям регистрироваться и входить с помощью учетных записей социальных сетей или настраиваемого поставщика, поддерживающего OpenID Connect, в приложении. Например, приложение может использовать Azure AD B2C, чтобы разрешить пользователям регистрироваться в службе с помощью учетной записи Facebook или собственного поставщика удостоверений, соответствующего протоколу OIDC.
+
+Настройка поставщика удостоверений в клиенте Azure AD позволяет применять новые гостевые сценарии Azure AD B2B. Например, в организации есть ресурсы в Microsoft 365, которыми нужно поделиться с пользователем Gmail. Для проверки подлинности и доступа к документам пользователь Gmail использует данные учетной записи Google.
+
+Если это настраиваемый поставщик удостоверений OpenID Connect с `OpenIDConnect` в качестве `type`, он представляется с помощью типа ресурса [openIdConnectProvider](../resources/openidconnectprovider.md), наследуемого от типа ресурса identityProvider. 
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение identityProvider](../api/identityprovider-get.md) |identityProvider|Чтение свойств существующего объекта identityProvider.|
-|[Создание identityProvider](../api/identityprovider-post-identityproviders.md)|identityProvider|Создание объекта identityProvider.|
-|[Обновление identityProvider](../api/identityprovider-update.md)|Нет|Обновление существующего объекта identityProvider.|
-|[Удаление identityProvider](../api/identityprovider-delete.md)|Нет|Удаление существующего объекта identityProvider.|
-|[Перечисление объектов identityProvider](../api/identityprovider-list.md)|Коллекция объектов identityProvider|Получение списка всех объектов identityProvider, настроенных в клиенте.|
+|[Перечисление](../api/identityprovider-list.md)|Коллекция объектов identityProvider|Получение всех поставщиков удостоверений, настроенных в клиенте.|
+|[Создание](../api/identityprovider-post-identityproviders.md)|identityProvider|Создание поставщика удостоверений.|
+|[Получение](../api/identityprovider-get.md) |identityProvider|Получение свойств поставщика удостоверений.|
+|[Обновление](../api/identityprovider-update.md)|Нет|Обновление поставщика удостоверений.|
+|[Удаление](../api/identityprovider-delete.md)|Нет|Удаление поставщика удостоверений.|
+|[Перечисление доступных типов поставщиков](../api/identityprovider-list-availableprovidertypes.md)|Коллекция String|Получение всех доступных типов поставщиков удостоверений.|
 
 ## <a name="properties"></a>Свойства
 
-|Свойство|Тип|Обязательное|Допускается значение null|Описание|
-|:---------------|:--------|:--------|:--------|:----------|
-|clientId|String|Да|Нет|Идентификатор клиента для приложения. Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
-|clientSecret|String|Да|Нет|Секрет клиента для приложения. Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает "\*\*\*\*".|
-|id|Строка|Нет|Нет|Идентификатор поставщика удостоверений.|
-|name|String|Нет|Нет|Отображаемое имя поставщика удостоверений.|
-|type|String|Да|Нет|Тип поставщика удостоверений Он должен иметь одно из следующих значений: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|Свойство|Тип|Описание|
+|:---------------|:--------|:----------|
+|clientId|String|Идентификатор клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Это поле обязательно для заполнения.|
+|clientSecret|Строка|Секрет клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает "\*\*\*\*". Это поле обязательно для заполнения.|
+|id|String|Идентификатор поставщика удостоверений.|
+|name|String|Отображаемое имя поставщика удостоверений.|
+|type|Строка|Тип поставщика удостоверений является обязательным полем.<ul>Для сценария B2B:<li/>Google<li/>Facebook</ul><ul>Для сценария B2C:<li/>Майкрософт<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>Где взять идентификатор и секрет клиента
 

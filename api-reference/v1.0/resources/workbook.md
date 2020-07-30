@@ -1,60 +1,41 @@
 ---
 title: Тип ресурса workbook
-description: Workbook — это объект верхнего уровня, содержащий связанные объекты книг, например листы, таблицы, диапазоны и т. д.
+description: Объект верхнего уровня, содержащий связанные объекты книг, такие как листы, таблицы и диапазоны.
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a143cde5a782801c2e840dd263a107eceba2342f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fc1da837c3aacf92136d02371369e1f2ea40005
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533394"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408045"
 ---
 # <a name="workbook-resource-type"></a>Тип ресурса workbook
 
 Пространство имен: microsoft.graph
 
-Workbook — это объект верхнего уровня, содержащий связанные объекты книг, например листы, таблицы, диапазоны и т. д.
-
-## <a name="json-representation"></a>Представление в формате JSON
-
-Ниже показано представление JSON ресурса.
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbook"
-}-->
-
-```json
-{
-  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
-  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
-  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
-}
-```
-
-## <a name="properties"></a>Свойства
-Нет
+Объект верхнего уровня, содержащий связанные объекты книг, такие как листы, таблицы и диапазоны.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Create Session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Создание сеанса книги для запуска сохраняемого или несохраняемого сеанса.|
-|[Close Session](../api/workbook-closesession.md) | Нет |Закрытие существующего сеанса.|
-|[Refresh Session](../api/workbook-refreshsession.md) | Нет |Обновление существующего сеанса.|
+|[Create session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Создание сеанса книги для запуска сохраняемого или несохраняемого сеанса.|
+|[Close session](../api/workbook-closesession.md) | Нет |Закрытие существующего сеанса.|
+|[Refresh session](../api/workbook-refreshsession.md) | Нет |Обновление существующего сеанса.|
 
+## <a name="properties"></a>Свойства
+Нет
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|names|Коллекция [WorkbookNamedItem](nameditem.md)|Представляет коллекцию именованных элементов в книге (именованные диапазоны и константы). Только для чтения.|
-|tables|Коллекция [WorkbookTable](table.md)|Представляет коллекцию таблиц, сопоставленных с книгой. Только для чтения.|
-|worksheets|Коллекция [WorkbookWorksheet](worksheet.md)|Представляет коллекцию листов, сопоставленных с книгой. Только для чтения.|
+|names|Коллекция [workbookNamedItem](nameditem.md)|Представляет коллекцию именованных элементов в книге (именованные диапазоны и константы). Только для чтения.|
+|tables|Коллекция [workbookTable](table.md)|Представляет коллекцию таблиц, сопоставленных с книгой. Только для чтения.|
+|worksheets|Коллекция [workbookWorksheet](worksheet.md)|Представляет коллекцию листов, сопоставленных с книгой. Только для чтения.|
+|operations|Коллекция [workbookOperation](workbookoperation.md)|Состояние операций в книге. Получить коллекцию операций нельзя, но можно получить состояние длительной операции, если в ответе возвращается заголовок `Location`. Только для чтения.|
 
 ## <a name="functions"></a>Функции
 
@@ -157,7 +138,22 @@ content-type: application/json;odata.metadata
   "value": 30
 }
 ```
+## <a name="json-representation"></a>Представление JSON
 
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbook"
+}-->
+
+```json
+{
+  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
+  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
+  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
