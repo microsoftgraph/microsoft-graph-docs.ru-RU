@@ -4,12 +4,12 @@ description: В Microsoft Graph предусмотрены необязател�
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: bd87841a6c7a46d485c7ccd2b0f601f012712f63
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 6893030d8a910ea627a12b1198a8af0b99b95750
+ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183843"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46524368"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -143,6 +143,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 Поддержка операторов `$filter` зависит от того, какой API Microsoft Graph используется. В большинстве случаев поддерживаются следующие операторы: 
 
 - `eq` (равняется);
+- `in` (в);
 - `ne` (не равняется);
 - `gt` (больше чем);
 - `ge` (не меньше чем);
@@ -171,7 +172,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 | Получение списка всех групп Microsoft 365 в организации. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 | Используйте преобразование OData, чтобы получить транзитивное членство в группах с отображаемым именем, которое начинается с "а", включая количество возвращаемых объектов. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
 
-> **Примечание.** Ресурсы Azure AD не поддерживают следующие операторы `$filter`: `ne`, `gt`, `ge`, `lt`, `le` и `not`. В настоящее время строковый оператор `contains` не поддерживается ни одним ресурсом Microsoft Graph.
+> **Примечание.** Ознакомьтесь с документацией по конкретным объектам каталога (ресурсы Azure AD), чтобы узнать больше о поддержке оператора `$filter`.
+> В настоящее время строковый оператор `contains` не поддерживается ни одним ресурсом Microsoft Graph.
 
 ## <a name="format-parameter"></a>Параметр format
 

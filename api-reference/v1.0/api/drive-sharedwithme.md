@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение коллекции ресурсов DriveItem, доступ к которым предоставлен владельцу ресурса Drive.
 doc_type: apiPageType
-ms.openlocfilehash: 9bf79fefdd9b0536830aec4780bfef4f43928724
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5cf4ed628f8f1ff7216c9c278483bb9333fc847
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517806"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509821"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Создание списка элементов, к которым предоставлен доступ пользователю, выполнившему вход в систему
 
@@ -112,6 +112,10 @@ Content-Type: application/json
 ```http
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
+
+По умолчанию **sharedWithMe** возвращает элементы, к которым предоставлен общий доступ в вашем клиенте. Чтобы включить общие элементы из внешних клиентов, добавьте `?allowexternal=true` в запрос GET.
+
+
 
 <!-- {
   "type": "#page.annotation",
