@@ -1,0 +1,36 @@
+---
+title: Использование API обнаружения электронных данных Microsoft Graph
+description: API обнаружения электронных данных Microsoft 365 предоставляют организациям функции для автоматизации повторяющихся задач и интеграции с существующими средствами обнаружения электронных данных для создания повторяющихся рабочих процессов, которые могут требоваться отраслевыми нормами. Вы можете использовать API обнаружения электронных данных для юридических целей.
+localization_priority: Priority
+author: mahage-msft
+ms.prod: compliance
+doc_type: conceptualPageType
+ms.openlocfilehash: 04cacac77e88dc5e7c266c39d5a48ffdd9d65cef
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46510332"
+---
+# <a name="use-the-microsoft-graph-ediscovery-api"></a><span data-ttu-id="e594d-104">Использование API обнаружения электронных данных Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="e594d-104">Use the Microsoft Graph eDiscovery API</span></span>
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="e594d-105">API Microsoft Graph для обнаружения электронных данных предоставляют организациям функции для автоматизации повторяющихся задач и интеграции с существующими средствами обнаружения электронных данных для создания повторяющихся рабочих процессов, которые могут требоваться отраслевыми нормами.</span><span class="sxs-lookup"><span data-stu-id="e594d-105">The Microsoft Graph APIs for eDiscovery provide functionality for organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build a repeatable workflows that might be required based on industry regulations.</span></span> <span data-ttu-id="e594d-106">Вы можете использовать API обнаружения электронных данных для юридических целей.</span><span class="sxs-lookup"><span data-stu-id="e594d-106">You can use the eDiscovery APIs to help with your legal needs.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="e594d-107">API Microsoft Graph для обнаружения электронных данных предназначены для использования в судебных разбирательствах, расследованиях и нормативных запросах.</span><span class="sxs-lookup"><span data-stu-id="e594d-107">The Microsoft Graph APIs for eDiscovery are intended for the use of eDiscovery operations for Litigation, Investigation and regulatory requests.</span></span> <span data-ttu-id="e594d-108">Эти API не следует использовать в качестве замены ведения журнала для данных из системы Microsoft 365 или других массовых загрузок.</span><span class="sxs-lookup"><span data-stu-id="e594d-108">These APIs should not be used as a substitute for journaling data out of the Microsoft 365 system or any other mass download.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e594d-109">В предварительной версии использование этих API может требовать наличия подписок на определенные предложения Майкрософт и регулируется [условиями использования API корпорации Майкрософт](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context).</span><span class="sxs-lookup"><span data-stu-id="e594d-109">During the preview, usage of these APIs may require subscriptions to specific Microsoft offerings and is subject to the [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context).</span></span>  <span data-ttu-id="e594d-110">На этапе общедоступной версии корпорация Майкрософт может требовать от вас или вашего клиента оплаты дополнительных сборов.</span><span class="sxs-lookup"><span data-stu-id="e594d-110">Upon general availability, Microsoft may require you or your customer to pay additional fees.</span></span>
+>
+> <span data-ttu-id="e594d-111">В настоящее время API обнаружения электронных данных в Microsoft Graph поддерживаются только в делах Advanced eDiscovery.</span><span class="sxs-lookup"><span data-stu-id="e594d-111">Currently, the eDiscovery APIs in Microsoft Graph only work with Advanced eDiscovery cases.</span></span>
+
+<span data-ttu-id="e594d-112">API Microsoft Graph включает указанные ниже ключевые объекты.</span><span class="sxs-lookup"><span data-stu-id="e594d-112">The Microsoft Graph API includes the following key entities.</span></span>
+
+| <span data-ttu-id="e594d-113">Имя</span><span class="sxs-lookup"><span data-stu-id="e594d-113">Name</span></span> | <span data-ttu-id="e594d-114">Тип</span><span class="sxs-lookup"><span data-stu-id="e594d-114">Type</span></span>       | <span data-ttu-id="e594d-115">Вариант использования</span><span class="sxs-lookup"><span data-stu-id="e594d-115">Use case</span></span> |
+|:-|:-|:-|
+| <span data-ttu-id="e594d-116">Дело обнаружения электронных данных</span><span class="sxs-lookup"><span data-stu-id="e594d-116">eDiscovery case</span></span> | [<span data-ttu-id="e594d-117">ediscoveryCase</span><span class="sxs-lookup"><span data-stu-id="e594d-117">ediscoveryCase</span></span>](ediscoverycase.md) | <span data-ttu-id="e594d-118">Дела обнаружения электронных данных — это контейнер для всех объектов обнаружения электронных данных, включая хранителей, удержания, поисковые запросы, наборы проверок и операции экспорта.</span><span class="sxs-lookup"><span data-stu-id="e594d-118">eDiscovery cases are the container for all eDiscovery objects including custodians, holds, searches, review set and exports.</span></span> |
+| <span data-ttu-id="e594d-119">Набор проверки обнаружения электронных данных</span><span class="sxs-lookup"><span data-stu-id="e594d-119">eDiscovery review set</span></span>| [<span data-ttu-id="e594d-120">reviewSet</span><span class="sxs-lookup"><span data-stu-id="e594d-120">reviewSet</span></span>](reviewset.md) | <span data-ttu-id="e594d-121">Наборы проверок обнаружения электронных данных — это статический набор хранимой в электронном виде информации, собранной для использования в судебном разбирательстве, расследовании или нормативном запросе.</span><span class="sxs-lookup"><span data-stu-id="e594d-121">eDiscovery review sets are static set of electronically stored information collected for use in a litigation, investigation or regulatory request.</span></span> |
+| <span data-ttu-id="e594d-122">Запрос набора проверки обнаружения электронных данных</span><span class="sxs-lookup"><span data-stu-id="e594d-122">eDiscovery review set query</span></span> | [<span data-ttu-id="e594d-123">reviewSetQuery</span><span class="sxs-lookup"><span data-stu-id="e594d-123">reviewSetQuery</span></span>](reviewsetquery.md) | <span data-ttu-id="e594d-124">Запросы наборов проверок обнаружения электронных данных используются для обнаружения, отбора, проверки и пометки [ESI](https://en.wikipedia.org/wiki/Electronically_stored_information_(Federal_Rules_of_Civil_Procedure)) с конечной целью предоставления запросившей стороне или адвокату другой стороны.</span><span class="sxs-lookup"><span data-stu-id="e594d-124">eDiscovery review set queries are used to discover, cull, review and tag [ESI](https://en.wikipedia.org/wiki/Electronically_stored_information_(Federal_Rules_of_Civil_Procedure)) with the ultimate goal of production to the requestor or opposing counsel.</span></span>
+
