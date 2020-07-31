@@ -173,7 +173,7 @@ items:
         href: overview.md
       - name: Пользователи
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -227,7 +227,7 @@ items:
                 href: api/user-list-events.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Contacts
+          - name: Контакты
             href: resources/contact.md
             items:
               - name: Создание контакта
@@ -8113,7 +8113,7 @@ items:
                   - name: Настройка ограничения регистрации устройств
                     href: resources/intune-onboarding-deviceenrollmentlimitconfiguration.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-onboarding-deviceenrollmentlimitconfiguration-list.md
                       - name: Получение
                         href: api/intune-onboarding-deviceenrollmentlimitconfiguration-get.md
@@ -8128,7 +8128,7 @@ items:
                   - name: Настройка ограничений для платформы регистрации устройств
                     href: resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list.md
                       - name: Получение
                         href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-get.md
@@ -9637,28 +9637,6 @@ items:
                         href: api/subscribedsku-get.md
           - name: Удостоверение и вход
             items:
-              - name: Журналы аудита
-                href: resources/azure-ad-auditlog-overview.md
-                items:
-                  - name: Аудит каталога
-                    href: resources/directoryaudit.md
-                    items:
-                      - name: Список аудитов каталога
-                        href: api/directoryaudit-list.md
-                      - name: Получение аудита каталога
-                        href: api/directoryaudit-get.md
-                  - name: Вход
-                    href: resources/signin.md
-                    items:
-                      - name: Перечисление событий входа
-                        href: api/signin-list.md
-                      - name: Получение события входа
-                        href: api/signin-get.md
-                  - name: Журналы подготовки
-                    href: resources/provisioningobjectsummary.md
-                    items:
-                      - name: Подготовка списка
-                        href: api/provisioningobjectsummary-list.md
               - name: Политика потоков проверки подлинности
                 items:
                   - name: Политика потоков проверки подлинности
@@ -9850,30 +9828,8 @@ items:
                     href: api/identityprovider-update.md
                   - name: Delete
                     href: api/identityprovider-delete.md
-                  - name: Список доступных типов поставщиков
+                  - name: Перечисление доступных типов поставщиков
                     href: api/identityprovider-list-availableprovidertypes.md
-              - name: Защита информации
-                items:
-                  - name: Оценка угроз
-                    items:
-                      - name: Обзор
-                        href: resources/threatassessment-api-overview.md
-                      - name: Запрос на оценку угроз
-                        href: resources/threatassessmentrequest.md
-                      - name: Запрос на оценку почты
-                        href: resources/mailassessmentrequest.md
-                      - name: Запрос на оценку файла электронной почты
-                        href: resources/emailfileassessmentrequest.md
-                      - name: Запрос на оценку файла
-                        href: resources/fileAssessmentRequest.md
-                      - name: Запрос оценки URL-адреса
-                        href: resources/urlassessmentrequest.md
-                      - name: Список
-                        href: api/informationprotection-list-threatassessmentrequests.md
-                      - name: Создание
-                        href: api/informationprotection-post-threatassessmentrequests.md
-                      - name: Получение
-                        href: api/threatassessmentrequest-get.md
               - name: Диспетчер приглашений
                 href: resources/invitation.md
                 items:
@@ -9900,7 +9856,7 @@ items:
                     items:
                       - name: Получение
                         href: api/authorizationpolicy-get.md
-                      - name: Обновление
+                      - name: Update
                         href: api/authorizationpolicy-update.md
                   - name: Политика сопоставления утверждений
                     href: resources/claimsmappingpolicy.md
@@ -9967,7 +9923,7 @@ items:
                     items:
                       - name: Получение
                         href: api/identitysecuritydefaultsenforcementpolicy-get.md
-                      - name: Обновление
+                      - name: Update
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
               - name: Управление ролями
                 href: resources/rolemanagement.md
@@ -10098,7 +10054,7 @@ items:
                   - name: Программа
                     href: resources/program.md
                     items:
-                      - name: Создание
+                      - name: Создать
                         href: api/program-create.md
                       - name: Удаление
                         href: api/program-delete.md
@@ -10215,7 +10171,7 @@ items:
                     items:
                       - name: Получение
                         href: api/entitlementmanagementsettings-get.md
-                      - name: Update
+                      - name: Обновление
                         href: api/entitlementmanagementsettings-update.md
               - name: Служба Privileged Identity Management
                 items:
@@ -10535,9 +10491,9 @@ items:
                 href: api/onenote-post-notebooks.md
               - name: Вывод списка разделов
                 href: api/onenote-list-sections.md
-              - name: Список групп разделов
+              - name: Вывод списка групп разделов
                 href: api/onenote-list-sectiongroups.md
-              - name: Список страниц
+              - name: Вывод списка страниц
                 href: api/onenote-list-pages.md
               - name: Создание страницы
                 href: api/onenote-post-pages.md
@@ -10954,9 +10910,34 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
       - name: Отчеты
         items:
+          - name: Отчеты об активности Azure AD
+            items:
+              - name: Обзор
+                href: resources/azure-ad-auditlog-overview.md
+              - name: Аудит каталога
+                href: resources/directoryaudit.md
+                items:
+                  - name: Список аудитов каталога
+                    href: api/directoryaudit-list.md
+                  - name: Получение аудита каталога
+                    href: api/directoryaudit-get.md
+              - name: Вход
+                href: resources/signin.md
+                items:
+                  - name: Перечисление событий входа
+                    href: api/signin-list.md
+                  - name: Получение события входа
+                    href: api/signin-get.md
+              - name: Provisioning
+                href: resources/provisioningobjectsummary.md
+                items:
+                  - name: Подготовка списка
+                    href: api/provisioningobjectsummary-list.md
           - name: Отчеты об удостоверениях и доступе
             items:
-              - name: Действия приложений AD FS
+              - name: Обзор
+                href: resources/report-identity-access.md
+              - name: Активность приложений AD FS
                 items:
                   - name: Подробная сводка по проверяющей стороне
                     href: resources/relyingpartydetailedsummary.md
@@ -11261,7 +11242,7 @@ items:
             items:
               - name: Обзор
                 href: resources/eDiscoveryapioverview.md
-              - name: дела eDiscovery
+              - name: Дело обнаружения электронных данных
                 href: resources/ediscoverycase.md
                 items:
                   - name: Список
@@ -11340,6 +11321,26 @@ items:
                     href: api/informationprotectionlabel-evaluateremoval.md
                   - name: Извлечь метку
                     href: api/informationprotectionlabel-extractlabel.md
+              - name: Оценка угроз
+                items:
+                  - name: Обзор
+                    href: resources/threatassessment-api-overview.md
+                  - name: Запрос на оценку угроз
+                    href: resources/threatassessmentrequest.md
+                  - name: Запрос на оценку почты
+                    href: resources/mailassessmentrequest.md
+                  - name: Запрос на оценку файла электронной почты
+                    href: resources/emailfileassessmentrequest.md
+                  - name: Запрос на оценку файла
+                    href: resources/fileAssessmentRequest.md
+                  - name: Запрос оценки URL-адреса
+                    href: resources/urlassessmentrequest.md
+                  - name: Список
+                    href: api/informationprotection-list-threatassessmentrequests.md
+                  - name: Создание
+                    href: api/informationprotection-post-threatassessmentrequests.md
+                  - name: Получение
+                    href: api/threatassessmentrequest-get.md
           - name: Оценки безопасности
             href: resources/securescores.md
             items:
