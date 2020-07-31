@@ -1,25 +1,25 @@
 ---
-title: Получение Примаричаннел
-description: Получение свойства навигации команды, позволяющей получить доступ к общему каналу по умолчанию.
+title: Получение primaryChannel
+description: Получение свойства навигации команды, разрешающего доступ к стандартному каналу "Общий".
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0993eb206abb4ddaea321567f4bc21a9ec22fbbe
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: ce7d7bd956eaa1f96cf456a767aeb2950102046f
+ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863461"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531420"
 ---
-# <a name="get-primarychannel"></a>Получение Примаричаннел
+# <a name="get-primarychannel"></a>Получение primaryChannel
 
 Пространство имен: microsoft.graph
 
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение стандартного [канала](../resources/channel.md), **общего**для [группы](../resources/team.md).
+Получение стандартного [канала](../resources/channel.md) (**Общий**) [команды](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,12 +35,12 @@ ms.locfileid: "44863461"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}/primaryChannel
+GET /teams/{id}/primaryChannel
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$filter` `$select` `$expand` [Параметры запроса](/graph/query-parameters) , и OData для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter`, `$select` и `$expand` для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
