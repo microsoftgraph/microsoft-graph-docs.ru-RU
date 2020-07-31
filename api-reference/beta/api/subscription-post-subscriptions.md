@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: bae074c7599119063053069765c0653ce405e231
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 10e764bef772b6874f811048b9ec5cdc101f1807
+ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524340"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531466"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -41,24 +41,25 @@ ms.locfileid: "46524340"
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[presence](../resources/presence.md) | Presence.Read.All | Не поддерживается | Не поддерживается |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-### <a name="chatmessage-microsoft-teams"></a>chatMessage (Microsoft Teams)
+### <a name="chatmessage"></a>chatMessage
 
 подписки **chatMessage** с делегированными разрешениями не поддерживают данные ресурсов (**инклудересаурцедата** должны быть `false` ) и не требуют [шифрования](/graph/webhooks-with-resource-data).
 
-подписки **chatMessage** с разрешениями приложений включают данные ресурсов и требуют [шифрования](/graph/webhooks-with-resource-data). Если [енкриптионцертификате](../resources/subscription.md) не указан, создание подписки завершится с ошибками. Перед созданием подписки на **chatMessage** необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
+подписки **chatMessage** с разрешениями приложений включают данные ресурсов и требуют [шифрования](/graph/webhooks-with-resource-data). Если [енкриптионцертификате](../resources/subscription.md) не указан, создание подписки завершится с ошибками. Перед созданием подписки на **chatMessage** необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis). 
 
 > **Примечание:** `/teams/allMessages` и `/chats/allMessages` в настоящее время находятся в предварительной версии. Во время предварительной версии вы можете использовать этот API без сборов в соответствии с [условиями использования API Майкрософт](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). Однако пользователям приложений, использующих API, может потребоваться подписка на конкретные решения Microsoft 365. После общедоступной доступности Корпорация Майкрософт может потребовать от вас или ваших клиентов взимать дополнительные сборы на основе объема данных, доступ к которым осуществляется через API.
 
-### <a name="driveitem-onedrive"></a>driveItem (OneDrive)
+### <a name="driveitem"></a>driveItem
 
 Дополнительные ограничения применяются к подпискам на элементы OneDrive. Ограничения применяются к созданию и управлению (получению, обновлению и удалению) подписок.
 
 В личном хранилище OneDrive можно подписаться на корневую папку или любую вложенную папку в этом хранилище. В OneDrive для бизнеса можно подписаться только на корневую папку. Уведомления об изменениях отправляются для определенных типов изменений папки, на которую оформлена подписка, любого файла, папки или других экземпляров **driveItem** в ее иерархии. Нельзя подписаться на экземпляры **drive** или **driveItem**, не являющиеся папками, например на отдельные файлы.
 
-### <a name="contact-event-and-message-outlook"></a>Contact, Event и Message (Outlook)
+### <a name="contact-event-and-message"></a>контакты, события и сообщения
 
 Дополнительные ограничения применяются для подписок на элементы Outlook. Ограничения применяются к созданию и управлению (получению, обновлению и удалению) подписок.
 
@@ -67,6 +68,10 @@ ms.locfileid: "46524340"
 
   - Используйте соответствующее разрешение приложения для подписки на изменения элементов в папке или почтовом ящике _любого_ пользователя в клиенте.
   - Не используйте разрешения Outlook на общий доступ (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared и их аналоги для чтения и записи), так как они **не** поддерживают подписку на уведомления об изменениях элементов в общих или делегированных папках.
+
+### <a name="presence"></a>presence
+
+для подписок на **присутствие** требуется [Шифрование](/graph/webhooks-with-resource-data). Если [енкриптионцертификате](../resources/subscription.md) не указан, создание подписки завершится с ошибками.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -130,26 +135,28 @@ Content-type: application/json
 
 ---
 
-
 Ниже приведены допустимые значения свойства Resource.
 
 | Тип ресурса | Примеры |
 |:------ |:----- |
-|Mail|me/mailfolders('inbox')/messages<br />me/messages|
-|Contacts|me/contacts|
-|Calendars|me/events|
-|Users|users|
-|Groups|groups|
-|Conversations|groups('*{id}*')/conversations|
-|Drives|me/drive/root|
-|Список|sites/{site-id}/lists/{list-id}|
-|Оповещение безопасности|security/alerts?$filter=status eq ‘New’|
-|Записи звонков|communications/callRecords|
-|[Сообщение чата](../resources/chatmessage.md) | Chats/{ID}/messages, Chats/Аллмессажес, Teams/{ID}/channels/{ID}/messages, Teams/Аллмессажес |
+|[Записи звонков](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[Сообщение чата](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/allMessages`, `teams/{id}/channels/{id}/messages`, `teams/allMessages` |
+|[Контакты](../resources/contact.md)|`me/contacts`|
+|[Беседы](../resources/conversation.md)|`groups('{id}')/conversations`|
+|[Drives](../resources/driveitem.md)|`me/drive/root`|
+|[События](../resources/event.md)|`me/events`|
+|[Группы](../resources/group.md)|`groups`|
+|[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
+|[Почта](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[Знак](../resources/presence.md)| `/communications/presences/{id}`(один пользователь) `/communications/presences?$filter=id in ({id},{id}…)` (несколько пользователей)|
+|[пользователи](../resources/user.md);|`users`|
+|[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+
+> **Примечание:** Любой путь, начинающийся с, `me` можно также использовать `users/{id}` вместо `me` целевого определенного пользователя вместо текущего пользователя.
 
 ### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика. 
+Ниже показан пример ответа. 
 
 >**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
