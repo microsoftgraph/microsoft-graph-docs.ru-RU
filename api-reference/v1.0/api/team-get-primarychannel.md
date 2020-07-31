@@ -1,22 +1,22 @@
 ---
-title: Получение Примаричаннел
-description: Получение свойства навигации команды, позволяющей получить доступ к общему каналу по умолчанию.
+title: Получение primaryChannel
+description: Получение свойства навигации команды, разрешающего доступ к стандартному каналу "Общий".
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0c4b209a4f510db2c5a4cd84bbc8bf7064a7935f
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 50f3bc5fd03c509afe73616bc79ba3cd1582bfe6
+ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863903"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531511"
 ---
-# <a name="get-primarychannel"></a>Получение Примаричаннел
+# <a name="get-primarychannel"></a>Получение primaryChannel
 
 Пространство имен: microsoft.graph
 
-Получение стандартного [канала](../resources/channel.md), **общего**для [группы](../resources/team.md).
+Получение стандартного [канала](../resources/channel.md) (**Общий**) [команды](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,19 +25,19 @@ ms.locfileid: "44863903"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All    |
+|Для приложений | Group.Read.All, Group.ReadWrite.All    |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}/primaryChannel
+GET /teams/{id}/primaryChannel
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$filter` `$select` `$expand` [Параметры запроса](/graph/query-parameters) , и OData для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter`, `$select` и `$expand` для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
