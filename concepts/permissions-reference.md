@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c3fc325bf49815ead5fc43ea039fac3b22899bbc
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 81f1682bfb47b851728b0521553cac5b74ecd8f0
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509576"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46539124"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -1891,6 +1891,28 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 * _ThreatAssessment.Read.All_: чтение запросов на оценку угроз (`GET /informationProtection/threatAssessmentRequests`)
 
 ---
+
+## <a name="taxonomy-permissions"></a>Разрешения таксономии
+
+#### <a name="delegated-permissions"></a>Делегированные разрешения
+
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TermStore.Read.All_        | Чтение данных банка терминов | Позволяет приложению читать различные термины, наборы и группы в банке терминов | да  | Нет |
+| _TermStore.ReadWrite.All_   | Чтение и запись всех данных банка терминов | Позволяет приложению изменять и удалять термины, наборы и группы в банке терминов | Да  | Нет |
+
+
+### <a name="remarks"></a>Примечания
+
+Разрешения таксономии действительны только для рабочих и учебных учетных записей.
+
+### <a name="example-usage"></a>Примеры использования
+
+#### <a name="delegated"></a>Delegated
+
+* _TermStore.Read.All_: чтение банка терминов для клиента (`GET /termStore`)
+* _TermStore.ReadWrite.All_: создание терминов в банке терминов (`POST /termStore/sets/123/children`)
+
 
 ## <a name="user-permissions"></a>Разрешения пользователей
 
