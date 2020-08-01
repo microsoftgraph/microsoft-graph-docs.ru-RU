@@ -101,9 +101,9 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Предложение нового времени собрания
             href: outlook-calendar-meeting-proposals.md
-          - name: Организация и посещение собраний по сети
+          - name: Задать событие как собрание по сети
             href: outlook-calendar-online-meetings.md
-          - name: Выбор API собрания по сети
+          - name: Выберите API собрания по сети
             href: choose-online-meeting-api.md
           - name: Планирование повторяющихся событий
             href: outlook-schedule-recurring-events.md

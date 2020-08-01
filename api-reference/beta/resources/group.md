@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b4478c0ebec93e5156a46c68f7b8a035225d199f
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 27745539ca9e8288e67d77565deea176f7534054
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427510"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46539117"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -129,6 +129,7 @@ ms.locfileid: "45427510"
 |hideFromAddressLists |Boolean |Значение true указывает, что группа не отображается в определенных частях пользовательского интерфейса Outlook : в **Адресной книге**, в списках адресов для выбора получателей сообщений и в диалоговом окне**Обзор групп** для поиска групп. В других случаях появляется значение false. Значение по умолчанию: **false**. <br><br>Возвращается только с помощью оператора $select.|
 |hideFromOutlookClients |Boolean |Значение true указывает, что группа не отображается в клиентах Outlook, например, Outlook для Windows и Outlook в Интернете. В других случаях появляется значение false. Значение по умолчанию: **false**. <br><br>Возвращается только с помощью оператора $select.|
 |id|String|Уникальный идентификатор группы. <br><br>Возвращается по умолчанию. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
+|isAssignableToRole|Логическое|Указывает, можно ли эту группу назначить роли Azure Active Directory.<br><br>Это свойство можно настроить только при создании группы, и оно является неизменяемым. Только глобальный администратор и администратор привилегированных ролей может настроить это свойство. Дополнительные сведения см. в статье [Использование группы для управления назначениями ролей Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Возвращается по умолчанию.|
 |infoCatalogs|Коллекция объектов string|Определяет сегменты сведений, назначенные группе. Возвращается по умолчанию.|
 |isSubscribedByMail|Логический|Указывает, подписан ли вошедший пользователь на получение бесед по электронной почте. Значение по умолчанию: **true**. <br><br>Возвращается только с помощью оператора $select. |
 |licenseProcessingState|String|Указывает состояние назначения лицензии группы для всех участников группы. Возможные значения: `QueuedForProcessing`, `ProcessingInProgress` и `ProcessingComplete`. <br><br>Возвращается только с помощью оператора $select. Только для чтения. |
@@ -229,6 +230,7 @@ ms.locfileid: "45427510"
     "assignedLicenses",
     "autoSubscribeNewMembers",
     "hasMembersWithLicenseErrors",
+    "isAssignableToRole",
     "isSubscribedByMail",
     "licenseProcessingState",
     "unseenConversationsCount",
@@ -257,6 +259,7 @@ ms.locfileid: "45427510"
   "hideFromOutlookClients": false,
   "id": "string (identifier)",
   "isFavorite": true,
+  "isAssignableRole": false,
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",
   "mail": "string",
