@@ -1,27 +1,31 @@
 ---
-title: Организация и посещение собраний по сети с помощью Outlook
-description: В Outlook организатор собрания может разрешить приглашенным предлагать другое время собрания.
+title: Включение события в виде собрания по сети в календарь Outlook
+description: В организации, которая поддерживает поставщиков собраний по сети, администраторы могут настроить календари Outlook для поддержки собраний, использующих этих поставщиков.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 7b668b6791655291dde71c4ef517c78a48c0fa8a
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 04c3104fa55087f8f848c8efc03af5627e49268e
+ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895105"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531504"
 ---
-# <a name="use-outlook-to-organize-or-attend-meetings-online"></a>Используйте Outlook для организации или посещения собраний в Интернете
+# <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>Включение события в виде собрания по сети в календарь Outlook 
+
+Используйте API календаря Outlook, чтобы организовать событие, в котором приглашенные на собрание могут щелкнуть URL-адрес присоединения и посетить собрание по сети в Microsoft Teams или Skype.
 
 В организации, которая поддерживает поставщиков собраний по сети, администраторы могут настроить календари Outlook для поддержки собраний, использующих этих поставщиков, при этом один из них является поставщиком по умолчанию. Вы можете [создать](#create-and-enable-a-meeting-online) или [обновить](#update-a-meeting-to-enable-it-online) [событие](/graph/api/resources/event) в Outlook и разрешить участникам присоединиться к собранию по сети, используя поддерживаемого поставщика. Вы можете легко [получить сведения о собрании по сети](#get-information-to-join-meeting-online) в связи с **событием**, в том числе URL-адрес для присоединения к собранию. 
+
+> **Примечание**. API календаря позволяет легко создавать собрание по сети в календаре Outlook, где участники могут присоединяться к собранию и продолжать работу в Teams или Skype. Для настраиваемой и более полной интеграции с Teams или Skype используйте API облачных коммуникаций. Дополнительные сведения см. в статье [Выбор API в Microsoft Graph для создания собраний по сети и присоединения к ним](choose-online-meeting-api.md).
 
 ## <a name="calendars-and-online-meeting-providers"></a>Календари и поставщики собраний по сети
 
 В организации, поддерживающей любого из указанных ниже поставщиков собраний по сети, можно настроить календари Outlook и разрешить организацию собраний по сети.
 
-- Microsoft Teams, приобретенная в составе Microsoft 365 Business или Enterprise Suite
+- Microsoft Teams в составе пакета Microsoft 365 бизнес или Microsoft 365 корпоративный
 - Skype
-- Skype для бизнеса
+- Skype для бизнеса ([заменяемый на Microsoft Teams](https://www.microsoft.com/microsoft-365/previous-versions/skype-for-business-online?OCID=AID2100233_SEM_XM02XAAAAIUvHAuF:20200730151407:s&msclkid=19b7c6af2c5c1bcea7d9998c06585710&ef_id=XM02XAAAAIUvHAuF:20200730151407:s))
 
 Найдите свойства **allowedOnlineMeetingProviders** и **defaultOnlineMeetingProvider**, чтобы проверить, поддерживает ли [календарь](/graph/api/resources/calendar) Outlook поставщика собраний по сети. В приведенном ниже примере календарь по умолчанию выполнившего вход пользователя поддерживает двух поставщиков, Microsoft Teams и Skype для бизнеса, и использует Microsoft Teams в качестве поставщика собраний по сети по умолчанию. 
 
@@ -472,8 +476,8 @@ Content-type: application/json
 
 
 ## <a name="see-also"></a>См. также
-- Сведения о взаимодействии с Microsoft Teams в Microsoft 365 можно найти в следующих статьях:
-  - [Взаимодействие Exchange и Microsoft Teams](/microsoftteams/exchange-teams-interact)
+- Сведения о взаимодействии Microsoft Teams с Microsoft 365 см. в следующих статьях:
+  - [Взаимодействие Microsoft Teams и Exchange](/microsoftteams/exchange-teams-interact)
   - [Настройка параметров сосуществования и обновления](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
 - [Выбор API в Microsoft Graph для создания собраний по сети и присоединения к ним](choose-online-meeting-api.md)
 - [Поиск времени для проведения собрания в календаре Outlook](findmeetingtimes-example.md)

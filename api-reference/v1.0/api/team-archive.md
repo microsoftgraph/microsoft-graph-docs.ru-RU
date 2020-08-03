@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c62a8aca9e5c3c3838f9a4d9ec83fea0fd87f173
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: MT
+ms.openlocfilehash: 0a82aadc98bee975b77b5fc989361750afe3b5ec
+ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491793"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46524333"
 ---
 # <a name="archive-team"></a>Архивация команды
 
@@ -30,9 +30,9 @@ ms.locfileid: "44491793"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Теамсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений |Теамсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Application |TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -53,7 +53,7 @@ POST /teams/{id}/archive
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-Этот необязательный параметр определяет, следует ли для участников команды задать разрешения только для чтения на сайте Sharepoint Online, связанном с командой. Если присвоить ему значение false или не указать текст, этот этап будет пропущен.
+Этот необязательный параметр определяет, следует ли для участников команды задать разрешения только для чтения на сайте SharePoint Online, связанном с командой. Если присвоить ему значение false или не указать текст, этот этап будет пропущен.
 
 >[!IMPORTANT]
 >Параметр `shouldSetSpoSiteReadOnlyForMembers` не поддерживается в контексте приложения.
