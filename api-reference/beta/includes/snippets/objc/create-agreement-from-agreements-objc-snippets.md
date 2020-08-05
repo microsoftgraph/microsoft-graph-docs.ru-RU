@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 412cddf5caf8ee8c1290d54cec6363e62599c02d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 204a1f557f76f4c4db927cc9a1256421f7753c92
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35710531"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46570129"
 ---
 ```objc
 
@@ -20,7 +20,7 @@ MSGraphAgreement *agreement = [[MSGraphAgreement alloc] init];
 [agreement setDisplayName:@"MSGraph Sample"];
 [agreement setIsViewingBeforeAcceptanceRequired: true];
 NSMutableArray *filesList = [[NSMutableArray alloc] init];
-MSGraphAgreementFile *files = [[MSGraphAgreementFile alloc] init];
+MSGraphAgreementFileLocalization *files = [[MSGraphAgreementFileLocalization alloc] init];
 [files setFileName:@"TOU.pdf"];
 [files setLanguage:@"en"];
 [files setIsDefault: true];
