@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: cf0c8dfb1eb5915e1a5c7b2b2538959b21cbe0d3
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 50a41ab87d3f105eeec04ced231ca8c3aa7e3bee
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539416"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46565799"
 ---
 # <a name="update-store"></a>Обновление хранилища
 Пространство имен: Microsoft. Graph. банка
@@ -52,7 +52,7 @@ PATCH /termStore
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |дефаултлангуажетаг|String|Язык по умолчанию для [Microsoft. Graph. банка данных Microsoft. Graph.](../resources/termstore-store.md)|
-|лангуажетагс|Коллекция String|Доступные языки в [Microsoft. Graph. банке. Store](../resources/termstore-store.md)|
+|лангуажетагс|Коллекция объектов string|Доступные языки в [Microsoft. Graph. банке. Store](../resources/termstore-store.md)|
 
 
 
@@ -63,6 +63,8 @@ PATCH /termStore
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_store"
@@ -77,6 +79,16 @@ Content-length: 133
   "defaultLanguageTag": "en-US"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-store-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-store-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик
