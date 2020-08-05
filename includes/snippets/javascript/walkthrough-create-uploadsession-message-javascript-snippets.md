@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: efcb757d5e0a77ef77a70708a30421ae7e48af9f
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 5806c56420876c0280f31edbdb35c068ddeafdaf
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44052450"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46567395"
 ---
 ```javascript
 
@@ -24,7 +24,6 @@ const uploadSession = {
 };
 
 let res = await client.api('/me/messages/AAMkADI5MAAIT3drCAAA=/attachments/createUploadSession')
-    .version('beta')
     .post(uploadSession);
 
 ```

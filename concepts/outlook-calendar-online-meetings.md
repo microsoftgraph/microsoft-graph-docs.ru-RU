@@ -4,12 +4,12 @@ description: В организации, которая поддерживает 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 04c3104fa55087f8f848c8efc03af5627e49268e
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: 03c628cd87ef9a6905898fdbc11dded437f4b8cc
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531504"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46567427"
 ---
 # <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>Включение события в виде собрания по сети в календарь Outlook 
 
@@ -25,7 +25,7 @@ ms.locfileid: "46531504"
 
 - Microsoft Teams в составе пакета Microsoft 365 бизнес или Microsoft 365 корпоративный
 - Skype
-- Skype для бизнеса ([заменяемый на Microsoft Teams](https://www.microsoft.com/microsoft-365/previous-versions/skype-for-business-online?OCID=AID2100233_SEM_XM02XAAAAIUvHAuF:20200730151407:s&msclkid=19b7c6af2c5c1bcea7d9998c06585710&ef_id=XM02XAAAAIUvHAuF:20200730151407:s))
+- Skype для бизнеса ([заменяемый на Microsoft Teams](https://www.microsoft.com/microsoft-365/previous-versions/skype-for-business-online))
 
 Найдите свойства **allowedOnlineMeetingProviders** и **defaultOnlineMeetingProvider**, чтобы проверить, поддерживает ли [календарь](/graph/api/resources/calendar) Outlook поставщика собраний по сети. В приведенном ниже примере календарь по умолчанию выполнившего вход пользователя поддерживает двух поставщиков, Microsoft Teams и Skype для бизнеса, и использует Microsoft Teams в качестве поставщика собраний по сети по умолчанию. 
 
