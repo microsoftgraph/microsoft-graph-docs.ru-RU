@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f816593cdf370d3fb2df647d0f91ed09c53117fc
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: fd1b265a1f4d4169dfb16ec8265ae2152cfd5b83
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155077"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "44345774"
 ---
 # <a name="update-openshift"></a>Обновление Опеншифт
 
@@ -52,7 +52,7 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |драфтопеншифт|опеншифтитем|Неопубликованная открытая смена.|
-|schedulingGroupId|Строка| Планирование кода группы. |
+|schedulingGroupId|String| Планирование кода группы. |
 |шаредопеншифт|опеншифтитем|Опубликованная открытая смена.|
 
 ## <a name="response"></a>Отклик
@@ -65,13 +65,15 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_openshift"
 }-->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
+PATCH https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
 Content-type: application/json
 
 {
@@ -96,6 +98,24 @@ Content-type: application/json
 "draftOpenShift": null
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-openshift-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-openshift-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-openshift-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-openshift-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
