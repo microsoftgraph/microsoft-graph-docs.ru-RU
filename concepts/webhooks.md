@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 317afc6fb5a5a7f19a9faae0e1a23183e5f7bbc7
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: 155d09ee373b52307fe4f22fbedee21ee40632d8
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531455"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46567231"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -143,6 +143,8 @@ Content-Type: application/json
 Хотя свойство `clientState` необязательное, рекомендуем указать его в нашем процессе обработки уведомлений об изменениях. Задание этого свойства позволит подтверждать, что полученные уведомления об изменениях поступают от службы Microsoft Graph. По этой причине значение свойства должно оставаться секретным и быть известно только приложению и службе Microsoft Graph.
 
 В случае успешного выполнения Microsoft Graph возвращает код `201 Created` и объект [подписки](/graph/api/resources/subscription?view=graph-rest-1.0) в теле отклика.
+
+> **Примечание.** Любой параметр строки запроса, включенный в свойство `notificationUrl`, будет включен в HTTP-запрос POST при доставке уведомлений.
 
 #### <a name="notification-endpoint-validation"></a>Проверка конечной точки уведомлений
 
