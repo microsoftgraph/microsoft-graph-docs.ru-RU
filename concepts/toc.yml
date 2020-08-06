@@ -85,7 +85,7 @@ items:
           - name: Обзор
             href: applications-concept-overview.md
           - name: Автоматизация настройки единого входа на основе SAML
-            href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api?context=/graph/context'
+            href: application-saml-sso-configure-api.md
           - name: Настройка прокси приложения
             href: application-proxy-configure-api.md
           - name: Настройка подготовки
