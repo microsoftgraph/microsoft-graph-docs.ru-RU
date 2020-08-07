@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 35759e9be3d2ea4aeade45f6e6b040a2b45f3be9
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: bfc1055b3e700b951957ffd1bce0fe7a541846b0
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183913"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589258"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса Онлинемитинг
 
@@ -27,7 +27,8 @@ ms.locfileid: "45183913"
 | [Создание](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Создайте собрание по сети. |
 | [получение](../api/onlinemeeting-get.md); | [onlineMeeting](onlinemeeting.md) | Чтение свойств и связей объекта **онлинемитинг** . |
 | [Создание или получение Онлинемитинг](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Создайте собрание по сети с пользовательским внешним ИДЕНТИФИКАТОРом. Если собрание уже существует, извлеките его свойства. |
-| [обновление](../api/onlinemeeting-update.md). | [onlineMeeting](onlinemeeting.md) | Обновление свойств **startDateTime**, **endDateTime**, **subject**и **участников** собрания по сети. |
+| [Обновление](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Обновление свойств **startDateTime**, **endDateTime**, **subject**и **участников** собрания по сети. |
+| [Удаление](../api/onlinemeeting-delete.md) | Нет | Удаление ресурса **онлинемитинг** . |
 
 ## <a name="properties"></a>Свойства
 
@@ -39,14 +40,14 @@ ms.locfileid: "45183913"
 | креатиондатетиме          | DateTime                                               | Время создания собрания в формате UTC. Только для чтения. |
 | startDateTime             | DateTime                                               | Время начала собрания в формате UTC. |
 | endDateTime               | DateTime                                               | Время окончания собрания в формате UTC. |
-| id                        | Строка                                                 | ИДЕНТИФИКАТОР по умолчанию, связанный с собранием по сети. Только для чтения. |
+| id                        | String                                                 | ИДЕНТИФИКАТОР по умолчанию, связанный с собранием по сети. Только для чтения. |
 | жоинвебурл                   | String                                                 | URL-адрес присоединения к собранию по сети. Только для чтения.|
 | participants              | [митингпартиЦипантс](meetingparticipants.md)          | Участники, связанные с собранием по сети.  Сюда входят Организатор и участники. |
 | subject                   | String                                                 | Тема собрания по сети. |
 | capabilities              | Коллекция String                                      | Список возможностей собрания. Возможные значения: `questionAndAnswer` . |
 | видеотелеконференцеид     | String                                                 | Идентификатор видеоконференций для видеоконференций. Только для чтения. |
 | жоининформатион | [itemBody](itembody.md) | Сведения о присоединении на языке и языковом варианте, указанным в HTTP-заголовке запроса Accept-Language. Только для чтения |
-| externalId                | String                                                 | Внешний идентификатор. Настраиваемый идентификатор. Необязательный параметр. |
+| externalId                | String                                                 | Внешний идентификатор. Настраиваемый идентификатор. Необязательный. |
 
 ### <a name="autoadmittedusers-values"></a>значения Аутоадмиттедусерс
 | Значение | Описание  |
