@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8af7a4ce6c303e2ac07e4387ff3dbad38abd735e
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 71bb61a6bb2a72cc3e2cc4192e1a6d218ab4c3b4
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408094"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589181"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -48,31 +48,7 @@ ms.locfileid: "45408094"
 2. Повторите запрос.
 3. Если запрос снова не удастся и будет получен код ошибки 429, регулирование продолжается. Используйте рекомендуемую задержку `Retry-After`, затем повторите запрос. Выполняйте эти действия, пока запрос не будет удачно выполнен.
 
-Заголовок `Retry-After` сейчас доступен для ресурсов, представляющих следующее:
-
-- [User](/graph/api/resources/user?view=graph-rest-1.0)
-- [фотография](/graph/api/resources/profilephoto?view=graph-rest-1.0);
-- [почта](/graph/api/resources/message?view=graph-rest-1.0);
-- [календарь (пользователи и группы)](/graph/api/resources/event?view=graph-rest-1.0);
-- [контакт](/graph/api/resources/contact?view=graph-rest-1.0);
-- [вложение](/graph/api/resources/attachment?view=graph-rest-1.0);
-- [групповые чаты](/graph/api/resources/conversation?view=graph-rest-1.0);
-- [люди и социальные медиа](/graph/api/resources/social-overview?view=graph-rest-beta);
-- [хранилище (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0).
-- [внешний элемент (Поиск Майкрософт)](/graph/api/resources/externalitem?view=graph-rest-beta)
-- [Отчет](/graph/api/resources/report)
-- [Подписка](/graph/api/resources/subscription)
-- [Запрос на оценку угроз](/graph/api/resources/threatassessmentrequest)
-- [Запрос на оценку почты](/graph/api/resources/mailassessmentrequest)
-- [Запрос на оценку файла электронной почты](/graph/api/resources/emailfileassessmentrequest)
-- [Запрос на оценку файла](/graph/api/resources/fileassessmentrequest)
-- [Запрос на оценку URL-адреса](/graph/api/resources/urlassessmentrequest)
-- [Результаты оценки угроз](/graph/api/resources/threatassessmentresult)
-- [Популярное](/graph/api/resources/insights-trending)
-- [Используемая аналитика](/graph/api/resources/insights-used)
-- [Совместная аналитика](/graph/api/resources/insights-shared)
-- [Параметры пользователя](/graph/api/resources/usersettings)
-- [Приглашение](/graph/api/resources/invitation)
+Все ресурсы и API, описанные в разделе [Ограничения для отдельных служб](#service-specific-limits), предоставляют заголовок `Retry-After`, если не указано иное.
 
 Развернутое описание регулирования в Microsoft Cloud см. в статье [Модель регулирования](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -116,6 +92,14 @@ Microsoft Graph позволяет получать доступ к данным
 #### <a name="outlook-service-resources"></a>Ресурсы службы Outlook
 
 Службой Outlook представляются нижеперечисленные ресурсы.
+
+##### <a name="search-api-resources-preview"></a>Ресурсы API поиска (предварительная версия)
+
+- [Внешний элемент (Поиск Майкрософт)](/graph/api/resources/externalitem?view=graph-rest-beta)
+
+##### <a name="profile-api-resources"></a>Ресурсы API профиля
+
+- [Фотография](/graph/api/resources/profilephoto?view=graph-rest-1.0)
 
 ##### <a name="calendar-api-resources"></a>Ресурсы API календаря
 
@@ -212,6 +196,9 @@ activityHistoryItem, userActivity
 
 См. Также [ограничения Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) и [требования к опросу](/graph/api/resources/teams-api-overview#polling-requirements).
 
+Указанные выше ограничения действуют для следующих ресурсов:  
+aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessage, chatMessageHostedContent, conversationMember, offerShiftRequest, openShift, openShiftChangeRequest, schedule, scheduleChangeRequest, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, team, teamsApp, teamsAppDefinition, teamsAppInstallation, teamsAsyncOperation, teamsTab, teamsTemplate, teamwork, timeOff, timeOffReason, timeOffRequest, userSettings, workforceIntegration.
+
 ### <a name="information-protection"></a>Защита информации
 
 Указанные ниже ограничения применяются к любому запросу в `/informationProtection`.
@@ -243,6 +230,9 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 | 10 000 запросов API в течение 10-минутного периода                  | Конечные точки версии 1.0 и бета-версии |
 | 4 параллельных запроса                                      | Конечные точки версии 1.0 и бета-версии   |
 
+Указанные выше ограничения действуют для следующих ресурсов:  
+people, trending, usedinsight, sharedInsight.
+
 ### <a name="microsoft-graph-reports-service-limits"></a>Ограничения службы отчетов Microsoft Graph
 
 Указанные ниже ограничения применяются к любому запросу в `/reports`.
@@ -252,7 +242,9 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 | Любой запрос (CSV)         | 14 запросов в течение 10 минут   | 40 запросов в течение 10 минут |
 | Любой запрос (JSON, beta)  | 100 запросов в течение 10 минут  | н/д                        |
 
-Указанные выше ограничения применяются по отдельности к каждому API отчетов. Например, запрос на API отчетов об активности пользователей Microsoft Teams и запрос на доступ к отчету об активности пользователей Outlook в течение 10 минут будут рассматриваться как 1 запрос из 14 для каждого API, а не 2 запроса из 14 для обоих.
+Указанные выше ограничения применяются по отдельности к каждому API отчетов. Например, запрос к API отчетов об активности пользователей Microsoft Teams и запрос к API отчетов об активности пользователей Outlook в течение 10 минут будут рассматриваться как 1 запрос из 14 для каждого API, а не 2 запроса из 14 для обоих.
+
+Указанные выше ограничения применяются для ресурса **report**.  
 
 ### <a name="invitation-manager-service-limits"></a>Ограничения службы диспетчера приглашений
 

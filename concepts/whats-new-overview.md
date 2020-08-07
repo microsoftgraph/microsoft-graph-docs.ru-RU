@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: fb555f40b448f50cf1e0a2a548b37ac5c32cfeab
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 85c3a540c6aa2f0c7f3b00bf86a3e727997743b3
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524354"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589146"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -18,7 +18,10 @@ ms.locfileid: "46524354"
 > Функции в состоянии _предварительной версии_, в том числе API и средства, могут меняться без предварительного уведомления, а некоторые из них, возможно, никогда не будут повышены до общедоступного (GA) состояния. Не используйте функции предварительной версии в рабочих приложениях.
 
 ## <a name="july-2020-new-and-generally-available"></a>Июль 2020 г.: новые и общедоступные возможности
-      
+
+### <a name="calendar"></a>Календарь
+GA функции, которая позволяет организаторам предлагать альтернативное время собраний, а приглашенным [предлагать новое время для собрания](outlook-calendar-meeting-proposals.md), когда они [предварительно принимают](/graph/api/event-tentativelyaccept?view=graph-rest-1.0) или[отклоняют](/graph/api/event-decline?view=graph-rest-1.0) событие.
+
 ### <a name="change-notifications"></a>Уведомления об изменениях
 Удалено ошибочно реализованное свойство **sequenceNumber** из ресурса [changeNotification](/graph/api/resources/changenotification).
 
@@ -43,7 +46,16 @@ ms.locfileid: "46524354"
 ## <a name="july-2020-new-in-preview-only"></a>Июль 2020 г.: новые возможности только в предварительной версии
 
 ### <a name="cloud-communications"></a>Облачные коммуникации
-Подписка на уведомления об изменениях о доступности пользователя в Microsoft Teams, представленной ресурсом [presence](/graph/api/resources/presence?view=graph-rest-beta).
+- Использование операции [update](/graph/api/onlinemeeting-update?view=graph-rest-beta), чтобы обновить свойство **startDateTime**, **endDateTime**, **participants** или **subject** для [собрания по сети](/graph/api/resources/onlinemeeting?view=graph-rest-beta).
+- Подписка на уведомления об изменениях о доступности пользователя в Microsoft Teams, представленной ресурсом [presence](/graph/api/resources/presence?view=graph-rest-beta).
+
+### <a name="cloud-communications--call-records"></a>Облачные коммуникации | Записи звонков
+- [Получение](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) записей звонков по ТСОП.
+- [Получение](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) записей звонков прямой маршрутизации.
+
+### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
+Появление [дел обнаружения электронных данных](/graph/api/resources/ediscoverycase?view=graph-rest-beta), которые могут содержать хранителей, удержания, коллекции, наборы для проверки и операции экспорта, доступные для использования в качестве доказательств в судебных делах.
+Приложения теперь могут [запрашивать](/graph/api/resources/reviewsetquery?view=graph-rest-beta) и вызывать [данные наборов для проверки](/graph/api/resources/reviewset?view=graph-rest-beta), собранные для использования в судебных разбирательствах, расследованиях и нормативных запросах. Это добавление входит в состав [Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20?view=o365-worldwide) Microsoft 365.
 
 ### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
 - Использование разрешения приложений `Printer.ReadWrite.All` и [шифрования Internet Printing Protocol (IPP)](https://tools.ietf.org/html/rfc8010) для [обновления принтера](/graph/api/printer-update?view=graph-rest-beta).
@@ -54,6 +66,9 @@ ms.locfileid: "46524354"
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
 Обновления Intune за [июль](changelog.md#july-2020) в бета-версии.
 
+### <a name="groups"></a>Группы
+Используйте свойство **isAssignableToRole** [группы](/graph/api/resources/group?view=graph-rest-beta) Microsoft 365 и настройте его при создании группы, чтобы указать, можно ли назначить группу для роли Azure AD. Эта [помогает управлять назначениями ролей в Azure AD](/azure/active-directory/users-groups-roles/roles-groups-concept). Например, вместо назначения отдельным пользователям роли Azure AD привилегированный администратор ролей или глобальный администратор может создать группу Microsoft 365 и назначить ее этой роли, чтобы при присоединении пользователей к _группе_ им неявно назначалась нужная роль.
+
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 - [Получите маркер доступа](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) для авторизации службы контроля использования Azure AD для предоставления пользователям доступа к приложению.
 - [Получите](/graph/api/entitlementmanagementsettings-get?view=graph-rest-beta) или[обновите](/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta)настройки управления правами, которые контролируют доступ к группам, приложениям и сайтам SharePoint Online для пользователей внутри или вне вашей организации. 
@@ -61,6 +76,7 @@ ms.locfileid: "46524354"
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 - Включение уровней риска пользователя (`low`, `medium`, `high`, `none`) при рассмотрении применения [политики условного доступа](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
 - [Использование смены пароля в качестве предоставления управления](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta#special-considerations-when-using-passwordchange-as-a-control), чтобы пройти политику условного доступа.
+- Использование [поставщика Open ID Connect](/graph/api/resources/openidconnectprovider?view=graph-rest-beta) (ODIC) в качестве поставщика удостоверений в клиенте Azure AD и клиенте Azure AD B2C. Его свойство **claimsMapping** позволяет Azure AD [сопоставлять утверждения](/graph/api/resources/claimsmapping?view=graph-rest-beta) от поставщика OIDC с утверждениями, которые распознает и использует Azure AD.
 
 ### <a name="people-and-workplace-intelligence--insights"></a>Люди и рабочая аналитика | Аналитические сведения
 Используйте более [детальное управление конфиденциальностью](insights-customize-item-insights-privacy.md) в отношении доступности и отображения[элементов аналитики](/graph/api/resources/iteminsights?view=graph-rest-beta) в Microsoft 365. Эти данные представляют собой отношения между пользователем и документами в OneDrive для бизнеса, вычисляемые с использованием передовых методов анализа и машинного обучения. 
@@ -68,13 +84,13 @@ ms.locfileid: "46524354"
 ### <a name="people-and-workplace-intelligence--profile-card-customization"></a>Люди и рабочая аналитика | Настройка карточки профиля
 Администраторы могут [настроить свойства, представленные в карточке профиля для своих организаций](add-properties-profilecard.md), используя API-интерфейс для [свойств карточки профиля](/graph/api/resources/profilecardproperty?view=graph-rest-beta).
 
+### <a name="sites-and-lists"></a>Сайты и списки
+Доступ к таксономии [банка терминов](/graph/api/resources/termstore-store?view=graph-rest-beta) SharePoint — иерархии, состоящей из ресурсов [group](/graph/api/resources/termstore-group?view=graph-rest-beta), [set](/graph/api/resources/termstore-set?view=graph-rest-beta) и [term](/graph/api/resources/termstore-term?view=graph-rest-beta), а также ресурсов [relation](/graph/api/resources/termstore-relation?view=graph-rest-beta) для связей между терминами.
+
 ### <a name="workbooks-and-charts"></a>Книги и диаграммы
 [Получение состояния и любого результата](/graph/api/workbookoperation-get?view=graph-rest-beta) длительной [операции](/graph/api/resources/workbookoperation?view=graph-rest-beta) в [книге](/graph/api/resources/workbook?view=graph-rest-beta).
 
 ## <a name="june-2020-new-and-generally-available"></a>Июнь 2020 г.: новые и общедоступные возможности
-
-### <a name="calendar"></a>Календарь
-GA функции, которая позволяет организаторам предлагать альтернативное время собраний, а приглашенным [предлагать новое время для собрания](outlook-calendar-meeting-proposals.md), когда они [предварительно принимают](/graph/api/event-tentativelyaccept?view=graph-rest-1.0) или[отклоняют](/graph/api/event-decline?view=graph-rest-1.0) событие.
 
 ### <a name="cloud-communications--online-meeting"></a>Облачные коммуникации | Онлайн-собрание
 - Использование `Accept-Language` заголовка HTTP при [создании онлайнового собрания](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0) для предоставления объединенной информации на основе языковой среды.

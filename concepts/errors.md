@@ -1,23 +1,15 @@
 ---
 title: Сообщения об ошибках и типы ресурсов Microsoft Graph
-description: "  "
+description: В этой статье описаны некоторые ошибки, которые могут возвращаться в ответах Microsoft Graph.
 localization_priority: Priority
-ms.openlocfilehash: cc3a0a0acacd7477c1cf686089c0235850059443
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: 2af128f0c15942d5e9b025de8eecbf9af7f07117
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091426"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589279"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Сообщения об ошибках и типы ресурсов Microsoft Graph
-
-<!--In this article:
-  
--   [Status code](#msg-status-code)
--   [Error resource type](#msg-error-resource-type)
--   [Code property](#msg-code-property)
-
-<a name="msg_error_response"> </a> -->
 
 Сообщения об ошибках в Microsoft Graph возвращаются с использованием стандартных кодов состояния HTTP, а также JSON-объекта сообщения об ошибке.
 
@@ -114,6 +106,7 @@ ms.locfileid: "45091426"
 |:--------------------------|:--------------
 | **accessDenied**          | У вызывающей стороны нет разрешения на выполнение действия. 
 | **activityLimitReached**  | Действия приложения или пользователя превысили ограничения.
+| **extensionError**        | Почтовый ящик расположен в локальной системе, а сервер Exchange Server не поддерживает федеративные запросы Microsoft Graph или [ политика приложений](/graph/auth-limit-mailbox-access) не позволяет приложению получить доступ к почтовому ящику.
 | **generalException**      | Произошла неуказанная ошибка.
 | **invalidRange**          | Указан недопустимый или недоступный диапазон байтов.
 | **invalidRequest**        | Запрос имеет неправильный формат или содержит ошибку.
