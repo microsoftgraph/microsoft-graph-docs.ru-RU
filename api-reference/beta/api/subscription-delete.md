@@ -2,15 +2,15 @@
 title: Удаление подписки
 description: Удаление подписки.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 8d4630f2141ae254461eb9faffce676a043476f0
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: 703af25923636ba8c47d7820971e0b464e12324a
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531481"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598208"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 

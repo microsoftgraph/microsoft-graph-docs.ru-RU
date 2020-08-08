@@ -2,15 +2,15 @@
 title: Обновление подписки
 description: Возобновление подписки путем увеличения срока действия.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: ed6bb88e38f0c20c7ca7eeda9db163472afa03ee
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: e23995651f4ad08f75a435bc3a75323c64927c31
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531483"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598131"
 ---
 # <a name="update-subscription"></a>Обновление подписки
 

@@ -2,15 +2,15 @@
 title: Тип ресурса resourceData
 description: Представляет данные ресурсов, вложенные в уведомление об изменении, отправляемое подписчику.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 0f962ddeb118f2f7e98cfa9cc5f3acc45f083071
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: 5ea2380c53414e3ef4fe0845ee2638ba8ce86482
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44430603"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598537"
 ---
 # <a name="resourcedata-resource-type"></a>Тип ресурса resourceData
 
@@ -24,7 +24,7 @@ ms.locfileid: "44430603"
 
 ## <a name="methods"></a>Методы
 
-Отсутствуют.
+Нет.
 
 ## <a name="properties"></a>Свойства
 
@@ -32,8 +32,8 @@ ms.locfileid: "44430603"
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| @odata.type | string | @odata.type — тип сущности OData в Microsoft Graph, который описывает представленный объект. |
-| @odata.id | string | @odata.id — идентификатор OData для объекта. |
+| @odata.type | строка | @odata.type — тип сущности OData в Microsoft Graph, который описывает представленный объект. |
+| @odata.id | строка | @odata.id — идентификатор OData для объекта. |
 | @odata.etag | строка | @odata.etag — HTTP-тег сущности, представляющий версию объекта. |
 | id | строка | Идентификатор объекта. |
 

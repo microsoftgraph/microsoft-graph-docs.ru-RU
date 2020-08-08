@@ -2,19 +2,19 @@
 title: Перечисление подписок
 description: " в приведенных ниже сценариях представлены подробные сведения."
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: d48036e3c54d0014abf6676877a329bcb81964e1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c04d7bb51fa5f99694d01d703b18e5073450cf9
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453168"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598145"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42453168"
 |:---------------- |:-------------------------------------------- |
 | [Делегированная](/graph/auth-v2-user) (Рабочая или учебная учетная запись) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
 | [Делегированная](/graph/auth-v2-user) учетная запись (личная учетная запись Майкрософт) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
-| [Приложение](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
+| [Application](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
 
 Результаты отклика основаны на контексте приложения, отправившего вызов. Ниже представлена сводка общих сценариев.
 

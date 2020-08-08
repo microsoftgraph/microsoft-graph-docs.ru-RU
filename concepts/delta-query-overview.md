@@ -1,15 +1,15 @@
 ---
 title: Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 description: Запросы изменений позволяют приложениям обнаруживать новые, обновленные и удаленные сущности, не считывая целевой ресурс полностью при каждом запросе. Приложения Microsoft Graph могут использовать запросы изменений, чтобы эффективно синхронизировать изменения с локальным хранилищем данных.
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2fed96d480647e848186140096707d503217d57e
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: fac703ecb3f930066f0b186fa1cc86e021a49ae3
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427419"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598264"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 

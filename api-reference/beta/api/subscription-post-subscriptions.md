@@ -2,15 +2,15 @@
 title: Создание подписки
 description: Подписывает приложение прослушивателя на получение уведомлений об изменениях при изменении данных в ресурсе Microsoft Graph.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 10e764bef772b6874f811048b9ec5cdc101f1807
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: 36555a946aa9092d5cab6e27548a16ba783d738e
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531466"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598138"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -150,7 +150,7 @@ Content-type: application/json
 |[Почта](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[Знак](../resources/presence.md)| `/communications/presences/{id}`(один пользователь) `/communications/presences?$filter=id in ({id},{id}…)` (несколько пользователей)|
 |[пользователи](../resources/user.md);|`users`|
-|[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+|[Оповещение системы безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
 
 > **Примечание:** Любой путь, начинающийся с, `me` можно также использовать `users/{id}` вместо `me` целевого определенного пользователя вместо текущего пользователя.
 

@@ -2,15 +2,15 @@
 title: Тип ресурса Чанженотификатионенкриптедконтент
 description: Подписка с данными ресурсов позволяет клиентскому приложению получать уведомления об изменениях, внесенные в данные в Microsoft Graph. Зашифрованное содержимое уведомления об изменении представляет зашифрованные данные, связанные с уведомлением.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 1b89fcf99ed4a724bb86413d6ef369b121e28cd3
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: 4ca2230cf3735cb696136f3b3014e8545202ebfe
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44430609"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598495"
 ---
 # <a name="changenotificationencryptedcontent-resource-type"></a>Тип ресурса Чанженотификатионенкриптедконтент
 
@@ -24,7 +24,7 @@ ms.locfileid: "44430609"
 
 ## <a name="methods"></a>Методы
 
-Отсутствуют.
+Нет.
 
 ## <a name="properties"></a>Свойства
 

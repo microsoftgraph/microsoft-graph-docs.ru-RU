@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Чанженотификатионколлектион
+title: Тип ресурса changeNotificationCollection
 description: Представляет коллекцию уведомлений о подписке, отправляемых подписчику.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: d93cbc16411d3090ba4133047ad07cd55997fec5
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: Auto
+ms.openlocfilehash: 60a7cd0f0a8c31fc6cc03f8bde852744062e205f
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681748"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598502"
 ---
-# <a name="changenotificationcollection-resource-type"></a>Тип ресурса Чанженотификатионколлектион
+# <a name="changenotificationcollection-resource-type"></a>Тип ресурса changeNotificationCollection
 
 Пространство имен: microsoft.graph
 
@@ -22,16 +22,16 @@ ms.locfileid: "44681748"
 
 Дополнительные сведения см. [в статье Использование API Microsoft Graph для получения уведомлений об изменениях](webhooks.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
-Отсутствуют.
+Нет.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
 | валидатионтокенс | Коллекция (string) | Содержит массив маркеров JWT, созданных приложением Microsoft Graph для проверки источника уведомлений. Microsoft Graph создает один маркер для каждой отдельной пары приложения и клиента, для которой существует элемент в массиве value. Имейте в виду, что уведомления могут содержать набор элементов для различных приложений и клиентов, подписанных с использованием того же URL-адреса уведомления. Предоставляется только для [уведомлений об изменениях с данными ресурсов](/graph/webhooks-with-resource-data.md) . |
-| значение | Коллекция ([чанженотификатион](changenotification.md)) | Набор уведомлений, отправляемых на URL-адрес уведомлений. Обязательный элемент. |
+| значение | Коллекция ([чанженотификатион](changenotification.md)) | Набор уведомлений, отправляемых на URL-адрес уведомлений. Обязательный. |
 
 ## <a name="relationships"></a>Связи
 

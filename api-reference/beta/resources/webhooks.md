@@ -2,15 +2,15 @@
 title: 'Получение уведомлений об изменениях с помощью API Microsoft Graph '
 description: REST API Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений об изменениях клиентам. Клиент — это веб-служба, которая настраивает свой URL-адрес для получения уведомлений. С помощью уведомлений клиентские приложения обновляют свое состояние при изменениях. Дополнительные сведения, включая сведения о подписке и обработке входящих уведомлений, см. в статье "Настройка уведомлений об изменениях в пользовательских данных".
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: f87dbecca8429d5eeed6196fe0ddab0a5a418eda
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: 3d06eb1ebc75fb80891e23ae433f53e2a806bb16
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050899"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598565"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -29,12 +29,12 @@ REST API Microsoft Graph использует механизм веб-перех
 | Личный [контакт][] Outlook | Изменения всех личных контактов в почтовом ящике пользователя:<br>`/users/{id}/contacts` | Нет |
 | [user][] | Изменения для всех пользователей:<br>`/users` <br>Изменения для конкретного пользователя:<br>`/users/{id}`| Нет |
 | [group][] | Изменения во всех группах:<br>`/groups` <br>Изменения в конкретной группе:<br>`/groups/{id}`<br>Изменения владельцев определенной группы:<br>`/groups/{id}/owners`<br>Изменения членов определенной группы:<br>`/groups/{id}/members` | Нет |
-| [Беседа][] группы (майкрософт) 365 | Изменения в разговорах группы:<br>`groups/{id}/conversations` | Нет |
+| Групповой [чат][] Microsoft 365  | Изменения в разговорах группы:<br>`groups/{id}/conversations` | Нет |
 | [driveItem][]на OneDrive (личный) | Изменения содержимого в иерархии _любой папки_:<br>`/users/{id}/drive/root` | Нет |
 | [driveItem][]на OneDrive для бизнеса | Изменения содержимого в иерархии _корневой папки_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Нет |
 | [список][] на [сайте][] SharePoint | `/sites/{id}/lists/{id}` | Нет |
 | [Оповещение][] безопасности | Изменения в конкретном предупреждении:<br>`/security/alerts/{id}` <br>Изменения в отфильтрованных оповещениях:<br> `/security/alerts/?$filter`| Нет |
-| [Каллрекорд][] Teams | Изменения _всех_ записей вызовов:`/communications/callRecords` | Нет |
+| Teams [callRecord][] | Изменения _всех_ записей вызовов:`/communications/callRecords` | Нет |
 | [chatMessage](/graph/api/resources/subscription?view=graph-rest-beta) Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/allMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/allMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages` | Да |
 | [Присутствие][] в Teams | Изменения, внесенные в сведения о присутствии одного пользователя:`/communications/presences/{id}` <br> Изменения, внесенные в сведения о присутствии нескольких пользователей:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Да |
 

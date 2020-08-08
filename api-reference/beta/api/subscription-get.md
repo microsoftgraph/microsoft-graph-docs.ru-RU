@@ -2,15 +2,15 @@
 title: Получение подписки
 description: Получение свойств и связей подписки.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: e0915b6a7e458f7a192b4dfc44a1eb562898ff5b
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: c8b4d605e131deeb4e3c421e01513a4cbaf1c7db
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531479"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598222"
 ---
 # <a name="get-subscription"></a>Получение подписки
 
