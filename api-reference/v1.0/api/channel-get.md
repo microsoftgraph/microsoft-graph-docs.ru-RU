@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b9aa260dfe054c05f80cc0c53c9a2b8a4a10779c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fbe5833d25f844b06f70fb4e2b242e6883724d20
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518618"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589293"
 ---
 # <a name="get-channel"></a>Получение канала
 
@@ -35,7 +35,6 @@ ms.locfileid: "42518618"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}
-
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
