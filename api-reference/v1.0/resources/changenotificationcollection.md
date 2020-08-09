@@ -1,42 +1,42 @@
 ---
-title: Тип ресурса Чанженотификатионколлектион
+title: Тип ресурса changeNotificationCollection
 description: Представляет коллекцию уведомлений о подписке, отправляемых подписчику.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 242ab35d95cfc35c19e6d1f37cefa33ee8bd1632
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: Auto
+ms.openlocfilehash: 1eadd0fbc14fe9e6581ab6fa3375837653fc0859
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45004801"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598511"
 ---
-# <a name="changenotificationcollection-resource-type"></a><span data-ttu-id="b735e-103">Тип ресурса Чанженотификатионколлектион</span><span class="sxs-lookup"><span data-stu-id="b735e-103">changeNotificationCollection resource type</span></span>
+# <a name="changenotificationcollection-resource-type"></a><span data-ttu-id="bf67d-103">Тип ресурса changeNotificationCollection</span><span class="sxs-lookup"><span data-stu-id="bf67d-103">changeNotificationCollection resource type</span></span>
 
-<span data-ttu-id="b735e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b735e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bf67d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bf67d-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="b735e-105">Представляет коллекцию уведомлений об изменении ресурсов, отправляемых подписчику.</span><span class="sxs-lookup"><span data-stu-id="b735e-105">Represents a collection of resource change notifications sent to the subscriber.</span></span>
+<span data-ttu-id="bf67d-105">Представляет коллекцию уведомлений об изменении ресурсов, отправляемых подписчику.</span><span class="sxs-lookup"><span data-stu-id="bf67d-105">Represents a collection of resource change notifications sent to the subscriber.</span></span>
 
-<span data-ttu-id="b735e-106">Дополнительные сведения см. [в статье Использование API Microsoft Graph для получения уведомлений об изменениях](webhooks.md).</span><span class="sxs-lookup"><span data-stu-id="b735e-106">For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).</span></span>
+<span data-ttu-id="bf67d-106">Дополнительные сведения см. [в статье Использование API Microsoft Graph для получения уведомлений об изменениях](webhooks.md).</span><span class="sxs-lookup"><span data-stu-id="bf67d-106">For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="b735e-107">Методы</span><span class="sxs-lookup"><span data-stu-id="b735e-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="bf67d-107">Методы</span><span class="sxs-lookup"><span data-stu-id="bf67d-107">Methods</span></span>
 
-<span data-ttu-id="b735e-108">Нет.</span><span class="sxs-lookup"><span data-stu-id="b735e-108">None.</span></span>
+<span data-ttu-id="bf67d-108">Нет.</span><span class="sxs-lookup"><span data-stu-id="bf67d-108">None.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b735e-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="b735e-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="bf67d-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="bf67d-109">Properties</span></span>
 
-| <span data-ttu-id="b735e-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="b735e-110">Property</span></span> | <span data-ttu-id="b735e-111">Тип</span><span class="sxs-lookup"><span data-stu-id="b735e-111">Type</span></span> | <span data-ttu-id="b735e-112">Описание</span><span class="sxs-lookup"><span data-stu-id="b735e-112">Description</span></span> |
+| <span data-ttu-id="bf67d-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="bf67d-110">Property</span></span> | <span data-ttu-id="bf67d-111">Тип</span><span class="sxs-lookup"><span data-stu-id="bf67d-111">Type</span></span> | <span data-ttu-id="bf67d-112">Описание</span><span class="sxs-lookup"><span data-stu-id="bf67d-112">Description</span></span> |
 |:---------|:-----|:------------|
-| <span data-ttu-id="b735e-113">значение</span><span class="sxs-lookup"><span data-stu-id="b735e-113">value</span></span> | <span data-ttu-id="b735e-114">Коллекция ([чанженотификатион](changenotification.md))</span><span class="sxs-lookup"><span data-stu-id="b735e-114">collection([changeNotification](changenotification.md))</span></span> | <span data-ttu-id="b735e-115">Набор уведомлений, отправляемых на URL-адрес уведомлений.</span><span class="sxs-lookup"><span data-stu-id="b735e-115">The set of notifications being sent to the notification URL.</span></span> <span data-ttu-id="b735e-116">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b735e-116">Required.</span></span> |
+| <span data-ttu-id="bf67d-113">значение</span><span class="sxs-lookup"><span data-stu-id="bf67d-113">value</span></span> | <span data-ttu-id="bf67d-114">Коллекция ([чанженотификатион](changenotification.md))</span><span class="sxs-lookup"><span data-stu-id="bf67d-114">collection([changeNotification](changenotification.md))</span></span> | <span data-ttu-id="bf67d-115">Набор уведомлений, отправляемых на URL-адрес уведомлений.</span><span class="sxs-lookup"><span data-stu-id="bf67d-115">The set of notifications being sent to the notification URL.</span></span> <span data-ttu-id="bf67d-116">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bf67d-116">Required.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="b735e-117">Связи</span><span class="sxs-lookup"><span data-stu-id="b735e-117">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="bf67d-117">Связи</span><span class="sxs-lookup"><span data-stu-id="bf67d-117">Relationships</span></span>
 
-<span data-ttu-id="b735e-118">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="b735e-118">None.</span></span>
+<span data-ttu-id="bf67d-118">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="bf67d-118">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b735e-119">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="b735e-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bf67d-119">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="bf67d-119">JSON representation</span></span>
 
-<span data-ttu-id="b735e-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b735e-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="bf67d-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bf67d-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
