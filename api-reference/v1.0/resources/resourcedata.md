@@ -2,15 +2,15 @@
 title: Тип ресурса resourceData
 description: Представляет данные ресурсов, вложенные в уведомление об изменении, отправляемое подписчику.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 689776fe665eae80aab99a2f7fb0856ce3eb65cd
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: Auto
+ms.openlocfilehash: c9da2041a6d982556ec909375ff46b3a9b3e2e2d
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45004797"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598405"
 ---
 # <a name="resourcedata-resource-type"></a>Тип ресурса resourceData
 
@@ -30,8 +30,8 @@ ms.locfileid: "45004797"
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| @odata.type | string | @odata.type — тип сущности OData в Microsoft Graph, который описывает представленный объект. |
-| @odata.id | string | @odata.id — идентификатор OData для объекта. |
+| @odata.type | строка | @odata.type — тип сущности OData в Microsoft Graph, который описывает представленный объект. |
+| @odata.id | строка | @odata.id — идентификатор OData для объекта. |
 | @odata.etag | строка | @odata.etag — HTTP-тег сущности, представляющий версию объекта. |
 | id | строка | Идентификатор объекта. |
 

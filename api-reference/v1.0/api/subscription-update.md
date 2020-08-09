@@ -2,15 +2,15 @@
 title: Обновление подписки
 description: Возобновление подписки путем увеличения срока действия.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: eb9100490ace0fdfd95b0a061d9735c2d3c72dae
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: e2528b9669607ff70ab0c29973a1097e05f524ee
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491688"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598446"
 ---
 # <a name="update-subscription"></a>Обновление подписки
 
@@ -67,7 +67,7 @@ PATCH /subscriptions/{id}
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [subscription](../resources/subscription.md) в тексте отклика.
 
-Сведения о том, как возвращаются ошибки, приведены в разделе [ошибочные ответы][error-response].
+Подробнее о том, как возвращаются ошибки, см. в статье [Возвращение ошибок][error-response].
 
 ## <a name="example"></a>Пример
 

@@ -2,15 +2,15 @@
 title: Удаление подписки
 description: Удаление подписки.
 localization_priority: Normal
-author: baywet
+author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 045b0f1e8cbbe51f64718ecbce8874e6e49d57fe
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 6c5a123bdba05db63cdd3bc57c4fb65d411217a6
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491842"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598488"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -68,7 +68,7 @@ DELETE /subscriptions/{id}
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
-Сведения о том, как возвращаются ошибки, приведены в разделе [ошибочные ответы][error-response].
+Подробнее о том, как возвращаются ошибки, см. в статье [Возвращение ошибок][error-response].
 
 ## <a name="example"></a>Пример
 
