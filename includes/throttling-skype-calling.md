@@ -1,21 +1,21 @@
 ---
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 78c8a063df2b419f7da38d53a0f68af52dc4a2fe
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 23cbaa5a8ab3da9ce7823828d1173bd10358db5d
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989973"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598123"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 
-| Тип запроса | Максимальное количество клиентов для каждого приложения |
+| Тип запроса | Ограничение на приложение для всех арендаторов |
 | ------------ | ------- |
-| Любые | 5000 запросов в течение 10 секунд |
+| Любой | 5000 запросов в течение 10 секунд |
 
-Предыдущие пределы применяются к следующим ресурсам:  
-Call, Клаудкоммуникатионс, Коммсоператион, ИнвитепартиЦипантсоператион, МутепартиЦипантоператион, onlineMeeting, участник, playPromptOperation, recordOperation, subscribeToToneOperation, unmuteParticipantOperation, updateRecordingStatusOperation.
+Указанные выше ограничения действуют для следующих ресурсов:  
+call, cloudCommunications, commsOperation, inviteParticipantsOperation, muteParticipantOperation, onlineMeeting, participant, playPromptOperation, recordOperation, subscribeToToneOperation, unmuteParticipantOperation, updateRecordingStatusOperation.

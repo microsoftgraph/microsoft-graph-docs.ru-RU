@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 9b9f961b3804d2833f15e8a510bed4f39e67c5c6
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: d8635dfaf2358d8439b4dbc00d87db0166bb2d98
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589272"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598411"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -23,6 +23,8 @@ ms.locfileid: "46589272"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 | Отслеживание изменений с помощью [разностных запросов](/graph/api/event-delta) доступно в Microsoft Graph для государственных организаций США. |
+| Удаление | бета | Удалено свойство **includeProperties** из объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta). Это свойство заменено свойством **includeResourceData**. |
+| Дополнение | бета | Добавлена возможность получать [уведомления об изменениях, доставляемые через концентратор событий](/graph/api/concepts/change-notifications-delivery?view=graph-rest-beta). |
 
 ## <a name="july-2020"></a>Июль 2020 г.
 
@@ -1236,7 +1238,7 @@ ms.locfileid: "46589272"
 |Дополнение|Бета|Добавлены свойства навигации **assignments**, **runSummary** и **deviceRunStates** для объекта [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены свойства навигации **deviceHealthScripts**, **userExperienceAnalyticsDevicePerformance**, **userExperienceAnalyticsRegressionSummary**, **userExperienceAnalyticsDeviceStartupHistory**, **groupPolicyMigrationReports** и **reports** для объекта [deviceManagement](/graph/api/resources/intune-devices-devicemanagement?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство навигации **singleSignOnExtensionPkinitCertificate** для объекта [iosDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-iosdevicefeaturesconfiguration?view=graph-rest-beta)|
-|Дополнение|бета|Добавлено свойство навигации **singleSignOnExtensionPkinitCertificate** для объекта [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлено свойство навигации **singleSignOnExtensionPkinitCertificate** для объекта [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-beta)|
 |Дополнение|бета|Добавлено свойство **scopeTags** для сложного типа [auditActor](/graph/api/resources/intune-auditing-auditactor?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены свойства **androidDedicatedCount**, **androidDeviceAdminCount**, **androidFullyManagedCount** и **androidWorkProfileCount** для сложного типа [deviceOperatingSystemSummary](/graph/api/resources/intune-devices-deviceoperatingsystemsummary?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены свойства **restartSettings** и **installTimeSettings** для сложного типа [win32LobAppAssignmentSettings](/graph/api/resources/intune-shared-win32lobappassignmentsettings?view=graph-rest-beta)|
@@ -1650,7 +1652,7 @@ ms.locfileid: "46589272"
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение | 1.0 | Добавлены [новые делегированные разрешения и разрешения приложений](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ и _Organization.ReadWrite.All_ для получения и обновления ресурса [organization API](/graph/api/resources/organization?view=graph-rest-1.0) и получения ресурса [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0). |
-| Дополнение | Бета-версия | Добавлены [новые делегированные разрешения и разрешения приложений](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ и _Organization.ReadWrite.All_ для получения и обновления ресурса [organization API](/graph/api/resources/organization?view=graph-rest-beta) и получения ресурса [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta). |
+| Дополнение | бета | Добавлены [новые делегированные разрешения и разрешения приложений](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ и _Organization.ReadWrite.All_ для получения и обновления ресурса [organization API](/graph/api/resources/organization?view=graph-rest-beta) и получения ресурса [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta). |
 | Дополнение | 1.0 | Добавлена [функция group:validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) и [функция directoryobject:validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) для [групп](/graph/api/group-delta?view=graph-rest-1.0), которая проверяет, соответствует ли почтовый псевдоним или отображаемое имя группы Microsoft 365 политикам именования. |
 | Дополнение | Бета-версия |Добавлены свойства version, discoveryDateTime, discoverabilities для типа ресурса [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta).|
 | Дополнение | Бета-версия |Добавлен метод [directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta).|
@@ -3222,7 +3224,7 @@ ms.locfileid: "46589272"
 |Дополнение|1.0|Добавлены новые сложные типы:<br/>[publicationFacet](/graph/api/resources/publicationfacet?view=graph-rest-1.0).<br/> |
 |Дополнение|1.0|Добавлено свойство <b>publication</b> для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0). |
 |Дополнение|1.0|Добавлено свойство навигации <b>versions</b> для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0). |
-|Дополнение|1.0|Добавлено свойство навигации <b>versions</b> для объекта [listItem](/graph/api/resources/listitem?view=graph-rest-1.0). |
+|Дополнение|v1.0|Добавлено свойство навигации <b>versions</b> для объекта [listItem](/graph/api/resources/listitem?view=graph-rest-1.0). |
 |Дополнение|1.0|Добавлено свойство <b>root</b> для объекта [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0). |
 |Дополнение|1.0|Добавлено действие [restoreVersion](/graph/api/driveitemversion-restore?view=graph-rest-1.0) для объекта [driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0). |
 |Дополнение|1.0|Добавлено действие [restoreVersion](/graph/api/listitemversion-restore?view=graph-rest-1.0) для объекта [listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0). |
@@ -3515,7 +3517,7 @@ ms.locfileid: "46589272"
 |Изменение|Бета-версия|Добавлено свойство **enableAuthenticationViaCompanyPortal** для объекта [enrollmentProfile](/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства **managedDeviceName** и **partnerReportedThreatState** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **installProgressDisplayLevel** для объекта [officeSuiteApp](/graph/api/resources/intune-apps-officesuiteapp?view=graph-rest-beta).|
-|Изменение|Бета-версия|Добавлено свойство **resourceScopes** для объекта [roleAssignment](/graph/api/resources/intune-rbac-roleassignment?view=graph-rest-beta).|
+|Изменение|бета|Добавлено свойство **resourceScopes** для объекта [roleAssignment](/graph/api/resources/intune-rbac-roleassignment?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства **rolePermissions** и **isBuiltIn** для объекта [roleDefinition](/graph/api/resources/intune-rbac-roledefinition?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **tokenActionResults** для объекта [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta).|
 |Изменение|бета|Добавлено свойство **minimumUpdateAutoInstallClassification** для объекта [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta).|
@@ -4343,7 +4345,7 @@ ms.locfileid: "46589272"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Изменение          | Бета        | Обновления API административных единиц будут предоставлены в бета-версиях. Первый набор изменений будет применен 3 мая 2017 г. Изменения включают в себя следующие переименования:<br />сложный тип - **roleMemberInfo** для объекта scopedRoleMembership теперь зовется **identity**;<br />свойство навигации - **scopedAdministratorOf** для объекта user теперь зовется **scopedRoleMemberOf**;<br />свойство навигации - **scopedAdministrators** для объекта administrativeUnit теперь зовется **scopedRoleMembers**;<br />свойство навигации - **scopedAdministrators** для объекта directoryRole теперь зовется **scopedMembers**. |
+| Изменение          | бета        | Обновления API административных единиц будут предоставлены в бета-версиях. Первый набор изменений будет применен 3 мая 2017 г. Изменения включают в себя следующие переименования:<br />сложный тип - **roleMemberInfo** для объекта scopedRoleMembership теперь зовется **identity**;<br />свойство навигации - **scopedAdministratorOf** для объекта user теперь зовется **scopedRoleMemberOf**;<br />свойство навигации - **scopedAdministrators** для объекта administrativeUnit теперь зовется **scopedRoleMembers**;<br />свойство навигации - **scopedAdministrators** для объекта directoryRole теперь зовется **scopedMembers**. |
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
@@ -4685,7 +4687,7 @@ ms.locfileid: "46589272"
 | Дополнение        | Бета-версия        | Добавлена коллекция _shared_, благодаря которой можно получать доступ к общим элементам driveItem с помощью идентификатора shareId или URL-адреса для совместного доступа. |
 | Дополнение        | Бета-версия        | Добавлена функция _search_ к объекту drive, которая позволяет искать элементы не только в корневой папке диска. |
 | Дополнение        | Бета-версия        | Добавлена поддержка элемента _createUploadSession_, который позволяет отправлять файлы размером более 4 МБ в OneDrive, OneDrive для бизнеса и библиотеки документов SharePoint. |
-| Дополнение        | Бета-версия        | Добавлено свойство _sharepointIds_, которое возвращает традиционные идентификаторы API SharePoint для элементов driveItem, хранящихся в SharePoint. |
+| Дополнение        | бета        | Добавлено свойство _sharepointIds_, которое возвращает традиционные идентификаторы API SharePoint для элементов driveItem, хранящихся в SharePoint. |
 | Дополнение        | Бета-версия        | Добавлены дополнительные свойства для _remoteItem_. |
 | Дополнение        | Бета        | Добавлено значение _quickXorHash_ для файлов в OneDrive для бизнеса. |
 | Дополнение        | Бета-версия        | Добавлена область для объекта _createSharingLink_, которая позволяет создавать ссылки для совместного доступа в компании или анонимного совместного доступа. |

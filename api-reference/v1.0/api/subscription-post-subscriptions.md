@@ -2,15 +2,15 @@
 title: Создание подписки
 description: Создание подписки для приложения прослушивателя, позволяющей ему получать уведомления об изменении данных в Microsoft Graph.
 localization_priority: Priority
-author: baywet
+author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b5cea90494262cf72aa1496af711eaf73ab83898
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 27998ac757a58e577c4e6b8397911e40f830a9a6
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408024"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598453"
 ---
 # <a name="create-subscription"></a>Создание подписки
 

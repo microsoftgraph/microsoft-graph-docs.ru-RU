@@ -2,15 +2,15 @@
 title: Перечисление подписок
 description: Получение свойств и связей подписок на веб-перехватчики с учетом идентификатора приложения, пользователя и его роли в клиенте.
 localization_priority: Priority
-author: baywet
+author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3b24eda260af4beaff36306ed69d08334edfc204
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7950d7988b9ed08fba57e9c4faa344e604828aa8
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509740"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598467"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 

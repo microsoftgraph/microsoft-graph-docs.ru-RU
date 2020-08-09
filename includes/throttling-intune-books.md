@@ -1,23 +1,23 @@
 ---
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 14409df5b027f816dbd4a5db0e47975fc58014a8
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 353454134ffaaea97dff717e3266ed25f8ff9dad
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989908"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598060"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-#### <a name="intune-books-service-limits"></a>Пределы для службы книг Intune
+#### <a name="intune-books-service-limits"></a>Ограничения службы книг Intune
 
-| Тип запроса | Максимальное количество для каждого клиента для всех приложений | Ограничение на приложение по клиенту |
+| Тип запроса | Ограничение на клиента для всех приложений | Ограничение на приложение по клиенту |
 | ------------ | ------- | ------- |
-| POST, PUT, DELETE, PATCH | 200 запросов в 20 секунд | 100 запросов в 20 секунд |
-| Любые | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
+| POST, PUT, DELETE, PATCH | 200 запросов за 20 секунд | 100 запросов за 20 секунд |
+| Любой | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
 
-Предыдущие пределы применяются к следующим ресурсам:  
+Указанные выше ограничения действуют для следующих ресурсов:  
 deviceInstallState, eBookInstallSummary, iosVppEBook, iosVppEBookAssignment, managedEBook, managedEBookAssignment, userInstallStateSummary.
