@@ -89,7 +89,7 @@ items:
           - name: Настройка прокси приложения
             href: application-proxy-configure-api.md
           - name: Настройка подготовки
-            href: 'https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api?context=/graph/context'
+            href: application-provisioning-configure-api.md
       - name: Календарь
         displayName: Outlook
         items:
@@ -364,11 +364,10 @@ items:
             href: excel-update-range-format.md
           - name: Запись данных в книгу
             href: excel-write-to-workbook.md
-          - name: Ресурсы
-            expanded: true
-            items:
-              - name: Коды ошибок
-                href: workbook-error-codes.md
+          - name: Рекомендации
+            href: workbook-best-practice.md
+          - name: Коды ошибок
+            href: workbook-error-codes.md
   - name: Разработка
     expanded: true
     items:
@@ -418,6 +417,8 @@ items:
                 href: webhooks-outlook-authz.md
               - name: Уведомления с данными ресурсов (предварительная версия)
                 href: webhooks-with-resource-data.md
+              - name: Получение уведомлений разными способами (предварительная версия)
+                href: change-notifications-delivery.md
           - name: Отслеживание изменений
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:
