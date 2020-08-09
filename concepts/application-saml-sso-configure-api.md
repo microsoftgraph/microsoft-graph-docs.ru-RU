@@ -5,16 +5,16 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b4e2c02fb5583febdaee7eb2e20bca7083b32635
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 5c6d73e0a85f185c2a903657ffe3c17277a87d11
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567472"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598432"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>Автоматизация настройки единого входа на основе SAML для приложений с помощью API Microsoft Graph
 
-Из этой статьи вы узнаете, как создать и настроить приложение из коллекции Azure Active Directory (Azure AD). В этой статье в качестве примера используется AWS, но описанные в этой статье шаги можно применить для любого другого приложения на основе SAML, включенного в коллекцию Azure AD.
+Из этой статьи вы узнаете, как создать и настроить приложение из коллекции Azure Active Directory (Azure AD). В этой статье в качестве примера используется AWS, но описанные здесь шаги можно применить для любого другого приложения на основе SAML, включенного в коллекцию Azure AD.
 
 **Шаги по автоматизации настройки единого входа на основе SAML с помощью API Microsoft Graph**
 
@@ -27,7 +27,7 @@ ms.locfileid: "46567472"
 | [5. Назначение пользователей](#step-5-assign-users) | Назначение пользователей и групп для приложения
 | [6. Настройка на стороне приложения](#step-6-configure-the-application-side)| Получение метаданных SAML из Azure AD
 
-**Список всех API, используемых в этой документации**
+**Список всех API, используемых в этой статье**
 
 Убедитесь, что у вас есть соответствующие разрешения для вызова следующих API.
 
@@ -45,7 +45,7 @@ ms.locfileid: "46567472"
 
 ### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>Вход в песочницу Microsoft Graph (рекомендуется), Postman или любой другой используемый клиент API
 
-1. Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer)
+1. Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
 2. Выберите вариант **Вход с помощью учетной записи Майкрософт** и войдите, используя учетные данные глобального администратора Azure AD или администратора приложения.
 3. После успешного входа вы увидите данные учетной записи пользователя на панели слева.
 
@@ -191,7 +191,7 @@ Content-type: application/json
 ```
 ### <a name="set-single-sign-on-mode"></a>Настройка режима единого входа
 
-В этом примере вы настроите режим единого входа `saml` для [типа ресурса servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Также вы можете настроить другие свойства единого входа SAML: `notificationEmailAddresses`, `loginUrl` и `samlSingleSignOnSettings.relayState`
+В этом примере вы настроите режим единого входа `saml` для [типа ресурса servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Также вы можете настроить другие свойства единого входа SAML: `notificationEmailAddresses`, `loginUrl` и `samlSingleSignOnSettings.relayState`.
 
 Прежде чем этот запрос заработает, необходимо предоставить согласие на вкладке **Изменить разрешения** в песочнице Graph. Кроме того, используйте идентификатор **servicePrincipal**, полученный ранее.
 
@@ -345,7 +345,7 @@ HTTP/1.1 204
 Дополнительные сведения см. в статье [Настройка утверждений, добавляемых в маркеры](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping).
 
 > [!NOTE]
-> Некоторые ключи в политике сопоставления утверждений чувствительны к регистру (например, "Version"). Если появляется сообщение об ошибке "Свойство имеет недопустимое значение", это может быть проблемой, связанной с регистром.
+> Некоторые ключи в политике сопоставления утверждений чувствительны к регистру (например, "Version"). Если появляется сообщение об ошибке "Свойство имеет недопустимое значение", это может быть проблема, связанная с регистром.
 
 #### <a name="request"></a>Запрос
 
@@ -587,7 +587,7 @@ namespace Self_signed_cert
 
 Извлеките закрытый и открытый ключи в кодировке Base64 из PFX-файла. Дополнительные сведения об их свойствах см. в описании [типа ресурса keyCredential](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0).
 
-Убедитесь, что значение keyId для keyCredential, примененное для параметра Sign, соответствует значению keyId для passwordCredential. Вы можете создать `customkeyIdentifier`, получив хэш отпечатка сертификата. См. справочный код C# выше.
+Убедитесь, что значение keyId для keyCredential, примененное для параметра Sign, соответствует значению keyId для passwordCredential. Вы можете создать `customkeyIdentifier`, получив хэш отпечатка сертификата. См. предыдущий код ссылки C#.
 
 #### <a name="request"></a>Запрос
 
@@ -731,7 +731,7 @@ Content-type: appRoleAssignments/json
 }
 ```
 
-Дополнительные сведения см. в документации по типу ресурса [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0).
+Подробнее см. в описании [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0).
 
 ## <a name="step-6-configure-the-application-side"></a>Шаг 6. Настройка на стороне приложения
 
@@ -739,7 +739,7 @@ Content-type: appRoleAssignments/json
 
 Используйте следующий URL-адрес, чтобы получить метаданные SAML из Azure AD для конкретного настроенного приложения. Эти метаданные содержат такие сведения, как сертификат для подписи, идентификатор сущности Azure AD (entityID), служба единого входа Azure AD (SingleSignOnService) и т. д.
 
-https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}
+`https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - [Настройка подготовки пользователей с помощью API Microsoft Graph](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)

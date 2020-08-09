@@ -1,16 +1,16 @@
 ---
 title: Настройка уведомлений об изменениях в пользовательских данных
 description: API Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений об изменениях для клиентов. Клиент — это веб-служба, которая настраивает свой URL-адрес для получения уведомлений об изменениях. С помощью этих уведомлений клиентские приложения обновляют свое состояние в случае изменений.
-author: baywet
+author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6138f1ea8ebd293ab6cd34003c368ae0887bf5d2
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: 697f2d61125d4f295c4fca7af14a515554e8d384
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589153"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598530"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -149,7 +149,7 @@ Content-Type: application/json
 
 В случае успешного выполнения Microsoft Graph возвращает код `201 Created` и объект [подписки](/graph/api/resources/subscription?view=graph-rest-1.0) в теле отклика.
 
-> **Примечание.** Любой параметр строки запроса, включенный в свойство `notificationUrl`, будет включен в HTTP-запрос POST при доставке уведомлений.
+> **Примечание.** Любой параметр строки запроса, включенный в свойство **notificationUrl**, будет включен в HTTP-запрос POST при доставке уведомлений.
 
 #### <a name="notification-endpoint-validation"></a>Проверка конечной точки уведомлений
 

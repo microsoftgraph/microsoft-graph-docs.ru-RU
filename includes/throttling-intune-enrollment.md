@@ -1,23 +1,23 @@
 ---
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: d47d19737e05e261eccea3b77e435b76091b6a21
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 875aa5d6ac2d83cd33f9b7ba1ce7c0caf3074b16
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989944"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598067"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-#### <a name="intune-enrollment-service-limits"></a>Пределы службы регистрации Intune
+#### <a name="intune-enrollment-service-limits"></a>Ограничения службы регистрации Intune
 
-| Тип запроса | Максимальное количество для каждого клиента для всех приложений | Ограничение на приложение по клиенту |
+| Тип запроса | Ограничение на клиента для всех приложений | Ограничение на приложение по клиенту |
 | ------------ | ------- | ------- |
-| POST, PUT, DELETE, PATCH | 200 запросов в 20 секунд | 100 запросов в 20 секунд |
-| Любые | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
+| POST, PUT, DELETE, PATCH | 200 запросов за 20 секунд | 100 запросов за 20 секунд |
+| Любой | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
 
-Предыдущие пределы применяются к следующим ресурсам:  
-Комплианцеманажементпартнер, deviceAppManagement, deviceCategory, deviceEnrollmentConfiguration, deviceEnrollmentLimitConfiguration, deviceEnrollmentPlatformRestrictionsConfiguration, deviceEnrollmentWindowsHelloForBusinessConfiguration, deviceManagementExchangeConnector, deviceManagementPartner, enrollmentConfigurationAssignment, mobileThreatDefenseConnector, onPremisesConditionalAccessSettings, vppToken.
+Указанные выше ограничения действуют для следующих ресурсов:  
+complianceManagementPartner, deviceAppManagement, deviceCategory, deviceEnrollmentConfiguration, deviceEnrollmentLimitConfiguration, deviceEnrollmentPlatformRestrictionsConfiguration, deviceEnrollmentWindowsHelloForBusinessConfiguration, deviceManagementExchangeConnector, deviceManagementPartner, enrollmentConfigurationAssignment, mobileThreatDefenseConnector, onPremisesConditionalAccessSettings, vppToken.
