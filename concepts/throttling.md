@@ -1,15 +1,15 @@
 ---
 title: Руководство по регулированию Microsoft Graph
 description: Регулирование позволяет ограничить количество одновременных вызовов службы, чтобы предотвратить перегрузку ресурсов. Служба Microsoft Graph предназначена для обработки большого количества запросов. Регулирование помогает поддерживать оптимальную производительность и надежность службы Microsoft Graph, если выполняется слишком много запросов.
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 71bb61a6bb2a72cc3e2cc4192e1a6d218ab4c3b4
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: a38c6c77daa5a9a6adab469681b4f7b0c4291e32
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589181"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598061"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -182,7 +182,7 @@ activityHistoryItem, userActivity
 | PATCH команда, канал, вкладка, установленные приложения, каталог приложений |  30 запросов в секунду                         | 300 запросов в секунду  |
 | УДАЛИТЬ канал, вкладку, установленные приложения, каталог приложений      |  15 запросов в секунду                         | 150 запросов в секунду  |
 | Получить /teams/```{team-id}```, joinedTeams              |  30 запросов в секунду                         | 300 запросов в секунду  |
-| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, клон | 6 запросов в секунду | 150 запросов в секунду  | 
+| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, клон | 6 запросов в секунду | 150 запросов в секунду  |
 | ПОЛУЧИТЬ сообщение канала  | 5 запросов в секунду | 100 запросов в секунду |
 | ПОЛУЧИТЬ 1: 1 / сообщение группового чата  | 3 запроса в секунду | 30 запросов в секунду |
 | Сообщение POST канала | 2 запроса в секунду | 20 запросов в секунду |
@@ -198,6 +198,134 @@ activityHistoryItem, userActivity
 
 Указанные выше ограничения действуют для следующих ресурсов:  
 aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessage, chatMessageHostedContent, conversationMember, offerShiftRequest, openShift, openShiftChangeRequest, schedule, scheduleChangeRequest, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, team, teamsApp, teamsAppDefinition, teamsAppInstallation, teamsAsyncOperation, teamsTab, teamsTemplate, teamwork, timeOff, timeOffReason, timeOffRequest, userSettings, workforceIntegration.
+
+### <a name="identity-and-access-service-limits"></a>Ограничения службы удостоверения и доступа
+
+Эти ограничения службы действуют для следующих объектов:
+
+- [Объект каталога](/graph/api/resources/directoryobject)
+- [Свойство расширения](/graph/api/resources/extensionproperty)
+- [Административная единица](/graph/api/resources/administrativeunit)
+- [Приложение](/graph/api/resources/application)
+- [Назначение ролей приложения](/graph/api/resources/approleassignment)
+- [Настройка проверки подлинности на основе сертификата](/graph/api/resources/certificatebasedauthconfiguration)
+- [Контакты организации](/graph/api/resources/orgcontact)
+- [Устройство](/graph/api/resources/device)
+- [Ссылка партнера на объект каталога](/graph/api/resources/directoryobjectpartnerreference)
+- [Роль каталога](/graph/api/resources/directoryrole)
+- [Шаблон для ролей каталога](/graph/api/resources/directoryroletemplate)
+- [Домен](/graph/api/resources/domain)
+- [DNS-запись домена](/graph/api/resources/domaindnsrecord)
+- [DNS-запись CNAME домена](/graph/api/resources/domaindnscnamerecord)
+- [DNS-запись MX домена](/graph/api/resources/domaindnsmxrecord)
+- [DNS-запись SRV домена](/graph/api/resources/domaindnssrvrecord)
+- [DNS-запись TXT домена](/graph/api/resources/domaindnstxtrecord)
+- [Недоступная запись DNS домена](/graph/api/resources/domaindnsunavailablerecord)
+- [Конечная точка](/graph/api/resources/endpoint)
+- [Свойство расширения](/graph/api/resources/extensionproperty)
+- [Сведения о лицензии](/graph/api/resources/licensedetails)
+- [Группа](/graph/api/resources/group)
+- [Политика времени ожидания на основании активности](/graph/api/resources/activitybasedtimeoutpolicy)
+- [Политика сопоставления утверждений](/graph/api/resources/claimsmappingpolicy)
+- [Политика обнаружения домашней области](/graph/api/resources/homerealmdiscoverypolicy)
+- [Политика выпуска маркеров](/graph/api/resources/tokenissuancepolicy)
+- [Политика времени существования маркера](/graph/api/resources/tokenlifetimepolicy)
+- [Основа политики](/graph/api/resources/policybase)
+- [Политика STS](/graph/api/resources/stspolicy)
+- [Соглашение](/graph/api/resources/contract)
+- [Субъект-служба](/graph/api/resources/serviceprincipal)
+- [Подписанная единица SKU](/graph/api/resources/subscribedsku)
+- [Предоставление разрешения OAuth2](/graph/api/resources/oauth2permissiongrant)
+- [Организация](/graph/api/resources/organization)
+- [Пользователь](/graph/api/resources/user)
+- [Параметр группы](/graph/api/resources/groupsetting)
+- [Шаблон параметров группы](/graph/api/resources/groupsettingtemplate)
+
+#### <a name="pattern"></a>Шаблон
+
+Регулирование основано на алгоритме маркерной корзины, которая работает путем добавления отдельной стоимости запросов. Затем суммарная стоимость запросов сравнивается с заранее определенными ограничениями. Регулирование применяется только для запросов, превышающих ограничения. Если превышено любое из ограничений, будет получен отклик `429 Too Many Requests`. Отклики `429 Too Many Requests` можно получить даже в том случае, если следующие ограничения не достигнуты, когда службы находятся под важной нагрузкой или на основе объема данных для определенного клиента. В следующей таблице перечислены существующие ограничения.
+
+| Тип ограничения | Квота единицы ресурса | Квота на запись |
+| ---------- | ----------- | -------------- |
+| пара "приложение + клиент" | S: 3500, M: 5000, L: 8000 за 10 секунд | 3000 за 2 минуты 30 секунд |
+| приложение | 150 000 за 20 секунд  | 70 000 за 5 минут |
+| клиент | Неприменимо | 9000 за 5 минут |
+
+> **Примечание**. Ограничение пары "приложение + клиент" зависит от количества пользователей в клиенте, в котором выполняются запросы. Размеры клиента определяются следующим образом: S — менее 50 пользователей, M — от 50 до 500 пользователей и L — более 500 пользователей.
+
+В следующей таблице перечислены базовые стоимости запросов. У любых запросов, не указанных в списке, базовая стоимость равна 1.
+
+| Операция | Путь запроса | Базовая стоимость единицы ресурса | Стоимость записи |
+| --------- | ------------ | ----------------- | ------------------ |
+| GET | `applications` | 2 | 0 |
+| GET | `applications/{id}/extensionProperties` | 2 | 0 |
+| GET | `contracts` | 3 | 0 |
+| POST | `directoryObjects/getByIds` |  3 | 0 |
+| GET | `domains/{id}/domainNameReferences` | 4 | 0 |
+| POST | `getObjectsById` | 3 | 0 |
+| GET | `groups/{id}/members` | 3 | 0 |
+| GET | `groups/{id}/transitiveMembers` | 5 | 0 |
+| POST | `isMemberOf` | 4 | 0 |
+| POST | `me/checkMemberGroups` | 4 | 0 |
+| POST | `me/checkMemberObjects` | 4 | 0 |
+| POST | `me/getMemberGroups` | 2 | 0 |
+| POST | `me/getMemberObjects` | 2 | 0 |
+| GET | `me/licenseDetails` | 2 | 0 |
+| GET | `me/memberOf` | 2 | 0 |
+| GET | `me/ownedObjects` | 2 | 0 |
+| GET | `me/transitiveMemberOf` | 2 | 0 |
+| GET | `oauth2PermissionGrants` | 2 | 0 |
+| GET | `oauth2PermissionGrants/{id}` | 2 | 0 |
+| GET | `servicePrincipals/{id}/appRoleAssignments` | 2 | 0 |
+| GET | `subscribedSkus` | 3 | 0 |
+| GET | `users` | 2 | 0 |
+| GET | Любой путь удостоверения, не указанный в таблице | 1 | 0 |
+| POST | Любой путь удостоверения, не указанный в таблице | 1 | 1 |
+| PATCH | Любой путь удостоверения, не указанный в таблице | 1 | 1 |
+| PUT | Любой путь удостоверения, не указанный в таблице | 1 | 1 |
+| DELETE | Любой путь удостоверения, не указанный в таблице | 1 | 1 |
+
+Другие факторы, влияющие на стоимость запросов:
+
+- Использование `$select` снижает стоимость на 1
+- Использование `$expand` увеличивает стоимость на 1
+- Использование `$top` со значением меньше 20 снижает стоимость на 1
+
+> **Примечание**. Стоимость запроса никогда не может быть меньше 1. Любая стоимость запроса, применяемая к пути запроса, начинающегося с `me/`, также применяется к аналогичным запросам, начинающимся с `users/{id | userPrincipalName}/`.
+
+#### <a name="additional-headers"></a>Дополнительные заголовки
+
+##### <a name="request-headers"></a>Заголовки запросов
+
+- **x-ms-throttle-priority**. Если заголовок не существует или для него задано другое значение, это означает, что это нормальный запрос. Рекомендуем присваивать приоритету значение `high` только для запросов, инициированных пользователем. Этот заголовок может иметь следующие значения:
+  - Low. Означает низкий приоритет запроса. Регулирование этого запроса не вызывает заметные для пользователя сбои.
+  - Normal. Применяется по умолчанию, если значение не указано. Означает стандартный приоритет запроса.
+  - High. Означает высокий приоритет запроса. Регулирование этого запроса вызывает заметные для пользователя сбои.
+
+> **Примечание.** Если требуется регулирование запросов, запросы с низким приоритетом будут регулироваться первыми, с нормальным приоритетом — вторыми, а с высоким приоритетом — последними. Использование заголовка запроса с приоритетом не изменяет ограничения.
+
+##### <a name="regular-responses-requests"></a>Обычные запросы откликов
+
+- **x-ms-resource-unit**. Указывает единицу ресурса, примененную для запроса. Значения: положительные целые числа.
+- **x-ms-throttle-limit-percentage**. Возвращается только в том случае, если приложение израсходовало более 0,8 от ограничения. Значения в диапазоне от 0,8 до 1,8, соответствующие проценту использования ограничения. Значение может использоваться вызывающими для настройки оповещений и выполнения действий.
+
+##### <a name="throttled-responses-requests"></a>Регулируемые запросы откликов
+
+- **x-ms-throttle-scope**. Например: `Tenant_Application/ReadWrite/9a3d526c-b3c1-4479-ba74-197b5c5751ae/0785ef7c-2d7a-4542-b048-95bcab406e0b`. Указывает область регулирования в следующем формате — `<Scope>/<Limit>/<ApplicationId>/<TenantId|UserId|ResourceId>`:
+  - Scope: (строка, обязательно)
+    - Tenant_Application — все запросы определенного клиента для текущего приложения.
+    - Tenant — все запросы для текущего клиента независимо от приложения.
+    - Application — все запросы для текущего приложения.
+  - Limit: (строка, обязательно)
+    - Read. Запросы на чтение в области (GET)
+    - Write. Запросы на запись в области (POST, PATCH, PUT, DELETE...)
+    - ReadWrite. Все запросы в области (любые)
+  - ApplicationId (GUID, обязательно)
+  - TenantId|UserId|ResourceId: (GUID, обязательно)
+- **x-ms-throttle-information**. Указывает причину регулирования и может иметь любое значение (строка). Это значение предоставляется для диагностики и устранения неполадок. Вот несколько примеров:
+  - CPULimitExceeded — регулирование вызвано превышением ограничения для выделения ЦП.
+  - WriteLimitExceeded — регулирование вызвано превышением ограничения на запись.
+  - ResourceUnitLimitExceeded — регулирование вызвано превышением ограничения для выделенного ресурса.
 
 ### <a name="information-protection"></a>Защита информации
 
