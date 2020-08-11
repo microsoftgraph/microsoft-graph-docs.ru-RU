@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8715f1f15f775b802ed4c5bc145cf5a0cffb8fc3
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 4c7ba30513b6de77628aad6790a2050ff4ca8afb
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566797"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630279"
 ---
 # <a name="get-identityprovider"></a>Получение identityProvider
 
@@ -57,7 +57,7 @@ GET /identityProviders/{id}
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-retrieves-a-specific-identityprovider"></a>Пример 1: получение определенного объекта **identityProvider**
+### <a name="example-1-retrieve-a-specific-identityprovider"></a>Пример 1: получение определенного identityProvider
 
 #### <a name="request"></a>Запрос
 
@@ -111,7 +111,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-### <a name="example-2-retrieves-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>Пример 2: получение определенного **опенидконнектпровидер** (только для Azure AD B2C)
+### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>Пример 2: получение определенного Опенидконнектпровидер (только для Azure AD B2C)
 
 #### <a name="request"></a>Запрос
 

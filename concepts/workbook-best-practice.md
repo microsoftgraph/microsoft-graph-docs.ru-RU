@@ -4,12 +4,12 @@ description: Перечисление рекомендаций и примеро
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d824cf89a07c81bae3a2e129896da9af282be49c
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: ae790dea42e3ade46b74735ad826189a13a282d5
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598597"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630349"
 ---
 # <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>Рекомендации по работе с API Excel в Microsoft Graph
 
@@ -141,6 +141,8 @@ HTTP/1.1 204 No Content
 
 ### <a name="initial-request-to-create-session"></a>Первоначальный запрос на создание сеанса
 
+#### <a name="request"></a>Запрос
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
 Prefer: respond-async
@@ -150,8 +152,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Отклик
-
+#### <a name="response"></a>Отклик
 Шаблон длительной операции возвращает `202 Accepted` ответ, аналогичный приведенному ниже.
 
 ```http
@@ -183,6 +184,7 @@ Content-length: 52
 ```http
 HTTP/1.1 500 Internal Server Error
 Content-type: application/json
+
 {
   "error":{
     "code": "internalServerError",
@@ -197,11 +199,14 @@ Content-type: application/json
     }
   }
 }
+```
+
+### <a name="poll-status-of-the-long-running-create-session"></a>Состояние опроса длительно выполняемого сеанса создания
 
 
-### Poll status of the long-running create session
+С помощью шаблона длительной операции вы можете получить состояние создания в указанном расположении с помощью следующего запроса. Рекомендуемый интервал для состояния опроса составляет около 30 секунд. Максимальный интервал не должен превышать 4 минуты.
 
-With the long-running operation pattern, you can get the creation status at specified location by using the following request. The suggested interval to poll status is around 30 seconds. The maximum interval should be no more than 4 minutes.
+#### <a name="request"></a>Запрос
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
@@ -209,11 +214,14 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 }
 ```
 
+#### <a name="response"></a>Отклик
+
 Ниже приведен ответ, в котором находится состояние операции `running` .
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": {operation-id},
     "status": "running"
@@ -225,6 +233,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": {operation-id},
     "status": "succeeded",
@@ -237,6 +246,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "id": {operation-id},
   "status": "failed",
@@ -259,6 +269,8 @@ Content-type: application/json
 
 ### <a name="acquire-session-information"></a>Получение сведений о сеансе
 
+#### <a name="request"></a>Запрос
+
 С состоянием `succeeded` можно получить сведения о созданном сеансе с помощью `resourceLocation` запроса, аналогичного приведенному ниже.
 
 ```http
@@ -267,11 +279,13 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ses
 }
 ```
 
+#### <a name="response"></a>Отклик
 Ниже приведен отклик.
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": "id-value",
     "persistChanges": true

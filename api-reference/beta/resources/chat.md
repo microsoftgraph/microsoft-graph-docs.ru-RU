@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: dc68d36c63a2cd88eeb7fed91d187b220cbb805d
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 827fb1564c9fc0c963933f94a6e04340b500c21c
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384383"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630307"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса Chat
 
@@ -22,14 +22,14 @@ ms.locfileid: "45384383"
 
 ## <a name="methods"></a>Методы
 
-|  Метод       |  Возвращаемый тип  | Описание| Разрешения |
+|  Метод       |  Возвращаемый тип  | Описание| Permissions |
 |:---------------|:--------|:----------|-----------|
 |[Список чатов](../api/chat-list.md) | Коллекция [чата](channel.md) | Получение списка сеансов, в которые входит пользователь.| **Только делегированные** |
-|[Получение чата](../api/chat-get.md) | [чат](channel.md) | Чтение свойств и связей чата.| **Только делегированные** |
+|[Получение чата](../api/chat-get.md) | [отображаются](channel.md) | Чтение свойств и связей чата.| **Только делегированные** |
 |[Список членов чата](../api/conversationmember-list.md) | Коллекция [conversationmember](conversationmember.md) | Получение списка всех пользователей в чате.| Делегирование и приложение * |
 |[Получение члена чата](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Получение одного пользователя в чате.| Делегирование и приложение * |
-|[Список сообщений в чате](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. | Делегирование и приложение * |
-|[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | Делегирование и приложение * |
+|[Список сообщений в чате](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. | Делегирование и приложение * |
+|[Получение сообщения в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | Делегирование и приложение * |
 
 \*> **Примечание:** При использовании разрешений приложений необходимо знать, как вы будете получать идентификатор чата. Так как перечисление бесед с разрешениями приложений не поддерживается, не все сценарии возможны. Можно получить идентификаторы чата с делегированными разрешениями и из [уведомлений об изменениях для/ЧАТС/аллмессажес](../api/subscription-post-subscriptions.md) с разрешениями приложений.
 
@@ -37,7 +37,7 @@ ms.locfileid: "45384383"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-| id| String| Уникальный идентификатор чата. Только для чтения.|
+| id| Строка| Уникальный идентификатор чата. Только для чтения.|
 | topic| String|  Необязательно Тема или тема чата. Доступно только для чатов групп.|
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или изменения членства. Ластупдатеддатетиме не обновляется при отправке сообщения в чат. Только для чтения.|
@@ -48,7 +48,7 @@ ms.locfileid: "45384383"
 |:---------------|:--------|:----------|
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | Коллекция всех приложений в чате. Допускается значение null. |
 | members | Коллекция [conversationMember](conversationmember.md) | Коллекция всех людей в чате. Допускается значение null. |
-| messages | Коллекция [chatMessage](chatmessage.md) | Коллекция всех сообщений в чате. Допускается значение NULL. |
+| messages | Коллекция [chatMessage](chatmessage.md) | Коллекция всех сообщений в чате. Допускается значение null. |
 
 ## <a name="json-representation"></a>Представление JSON
 

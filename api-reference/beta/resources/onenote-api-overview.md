@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: conceptualPageType
-ms.openlocfilehash: 07b8fdf5486eee041a40b7bc6dd3169ac1af8761
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 0c13ebeb6381e894684a14be42772d69b5d31e62
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896842"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630328"
 ---
 # <a name="use-the-onenote-rest-api"></a>Использование REST API для OneNote
 
@@ -20,7 +20,8 @@ Microsoft Graph позволяет вашему приложению получ�
 
 ## <a name="root-url"></a>Корневой URL-адрес
 Для всех вызовов API OneNote используется следующий формат корневого URL-адреса службы OneNote.
-```
+
+```http
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
@@ -36,7 +37,7 @@ https://graph.microsoft.com/{version}/{location}/onenote/
 ## <a name="user-notebooks"></a>Записные книжки пользователей
 Чтобы получить доступ к персональным записным книжкам в OneDrive для бизнеса или личном хранилище OneDrive, воспользуйтесь одним из следующих URL-адресов:
 
-```
+```http
 https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
@@ -50,15 +51,15 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 
 Чтобы получить доступ к записным книжкам группы, воспользуйтесь следующим корневым URL-адресом службы:
 
-```
+```http
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 ## <a name="sharepoint-site-notebooks"></a>Записные книжки на сайте SharePoint
 Чтобы получить доступ к записным книжкам на сайте группы SharePoint, воспользуйтесь следующим корневым URL-адресом службы:
 
-```
+```http
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 
 ## <a name="whats-new"></a>Новые возможности
-Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 421ed3b1c439a7ae550100a113c651ab3e0a34b9
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 8f1577ab7ded60dfd3cad88641bfb11f83d6ad5b
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791071"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630293"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>Тип ресурса Чатмессажехостедконтент
 
@@ -19,7 +19,7 @@ ms.locfileid: "44791071"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет контент Teams, размещенный в сообщении чата, например в виде изображений или фрагментов кода.
-[Вложенные файлы](chatmessageattachment.md) не являются размещающих контентом, они хранятся в SharePoint или OneDrive.
+[Вложенные файлы](chatmessageattachment.md) не являются размещающих контентом; они хранятся в SharePoint или OneDrive.
 
 ## <a name="methods"></a>Методы
 
@@ -32,7 +32,18 @@ ms.locfileid: "44791071"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String| Только для чтения.|
+|id            |String       | Только для чтения. Представляет размещенный идентификатор контента сообщения чата.|
+|contentBytes  |Edm.Binary   | Только для записи. При учете нового контента, размещенного в чате, представляет байты полезных данных. Они представлены в виде строки base64Encoded.|
+|contentType   |String       | Только для записи. При учете нового контента, размещенного в чате, представляет тип контента, например Image/PNG.|
+
+### <a name="instance-attributes"></a>Атрибуты экземпляра
+
+Атрибуты экземпляра — это свойства с особым поведением.
+Эти свойства являются временными и задают поведение службы или предоставляют краткосрочные значения свойств, например URL-адрес скачивания для элемента, срок действия которого истечет.
+
+| Имя свойства                     | Тип   | Описание
+|:----------------------------------|:-------|:--------------------------------
+| @microsoft. Graph. Темпорарид      | string | Только для записи. Представляет Темпорарид для размещаемого контента при публикации сообщения для ссылки на размещенный контент в ресурсе **chatMessage** , который отправляется.|
 
 ## <a name="relationships"></a>Отношения
 
@@ -54,7 +65,10 @@ ms.locfileid: "44791071"
 
 ```json
 {
-  "id": "String (identifier)"
+  "@microsoft.graph.temporaryId": "String (identifier)",
+  "id": "String (identifier)",
+  "contentBytes": "String (binary)",
+  "contentType": "String",
 }
 ```
 
