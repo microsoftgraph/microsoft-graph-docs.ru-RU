@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d8635dfaf2358d8439b4dbc00d87db0166bb2d98
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 66e0b8d31bbd89ab09516c5c1d355889d06dca21
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598411"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630363"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -25,6 +25,22 @@ ms.locfileid: "46598411"
 | Дополнение | 1.0 | Отслеживание изменений с помощью [разностных запросов](/graph/api/event-delta) доступно в Microsoft Graph для государственных организаций США. |
 | Удаление | бета | Удалено свойство **includeProperties** из объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta). Это свойство заменено свойством **includeResourceData**. |
 | Дополнение | бета | Добавлена возможность получать [уведомления об изменениях, доставляемые через концентратор событий](/graph/api/concepts/change-notifications-delivery?view=graph-rest-beta). |
+
+### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | бета | Добавлен метод [getM365AppUserDetail](/graph/api/reportRoot-getM365AppUserDetail?view=graph-rest-beta). |
+| Дополнение | бета | Добавлен метод [getM365AppUserCounts](/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-beta). |
+| Дополнение | бета | Добавлен метод [getM365AppPlatformUserCounts](/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-beta). |
+
+### <a name="teamwork"></a>Командная работа 
+
+| **Тип изменения** | **Версия** | **Описание** |
+|:---|:---|:---|
+|Дополнение|бета|Добавлено свойство **contentBytes** для ресурса [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta).|
+|Дополнение|бета|Добавлено свойство **contentType** для ресурса [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta).|
+|Дополнение|бета|Добавлена поддержка отправки встроенных изображений для ресурса [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta).|
 
 ## <a name="july-2020"></a>Июль 2020 г.
 
@@ -588,7 +604,7 @@ ms.locfileid: "46598411"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | Бета        | Добавлено свойство навигации **followedSites** в объект [user](/graph/api/resources/user?view=graph-rest-beta), чтобы [список сайтов, на которые подписан выполнивший вход пользователь](/graph/api/sites-list-followed?view=graph-rest-beta). |
-| Дополнение        | 1.0        | Добавлено свойство навигации **followedSites** в объект [user](/graph/api/resources/user?view=graph-rest-1.0), чтобы [список сайтов, на которые подписан выполнивший вход пользователь](/graph/api/sites-list-followed?view=graph-rest-1.0). |
+| Дополнение        | v1.0        | Добавлено свойство навигации **followedSites** в объект [user](/graph/api/resources/user?view=graph-rest-1.0), чтобы [список сайтов, на которые подписан выполнивший вход пользователь](/graph/api/sites-list-followed?view=graph-rest-1.0). |
 | Дополнение        | 1.0        | Добавлено свойство **dataLocatonCode** на ресурсе [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0). |
 | Дополнение        | 1.0        | Добавлено свойство **tenantId** в ресурс [sharepointIds](/graph/api/resources/sharepointids?view=graph-rest-1.0). |
 
@@ -1228,7 +1244,7 @@ ms.locfileid: "46598411"
 |Дополнение|Бета|Добавлено свойство **isDeleted** для объекта [importedAppleDeviceIdentity](/graph/api/resources/intune-enrollment-importedappledeviceidentity?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены свойства **filesNetworkDriveAccessBlocked**, **filesUsbDriveAccessBlocked** и **wifiPowerOnForced** для объекта [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta)|
 |Удаление|Бета|Удалено свойство **wiFiBlockPowerModification** из объекта [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлены свойства **previousPinBlockCount**, **maximumAllowedDeviceThreatLevel** и **mobileThreatDefenseRemediationAction** для объекта [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta)|
+|Дополнение|бета|Добавлены свойства **previousPinBlockCount**, **maximumAllowedDeviceThreatLevel** и **mobileThreatDefenseRemediationAction** для объекта [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены свойства **source** и **sourceId** для объекта [mobileAppAssignment](/graph/api/resources/intune-apps-mobileappassignment?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены свойства **androidMobileApplicationManagementEnabled** и **iosMobileApplicationManagementEnabled** для объекта [mobileThreatDefenseConnector](/graph/api/resources/intune-onboarding-mobilethreatdefenseconnector?view=graph-rest-beta)|
 |Изменение|бета|Изменены следующие свойства объекта [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta):<br/>**energySaverOnBatteryThresholdPercentage** преобразовано из обязательного в необязательное<br/>**energySaverPluggedInThresholdPercentage** преобразовано из обязательного в необязательное<br/>|
