@@ -1,0 +1,61 @@
+---
+title: Тип ресурса Термсекспиратион
+description: Предоставляет дополнительные параметры при настройке запланированного срока действия соглашения.
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
+author: raprakasMSFT
+doc_type: resourcePageType
+ms.openlocfilehash: e811e4816fa63e98201d1a14403d6c3525ace2c0
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46644042"
+---
+# <a name="termsexpiration-resource-type"></a>Тип ресурса Термсекспиратион
+
+Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Предоставляет дополнительные параметры при настройке запланированного срока действия соглашения.
+
+## <a name="properties"></a>Свойства
+
+| Свойство                     | Тип                      | Описание |
+| :--------------------------- | :------------------------ | :---------- |
+| startDateTime|DateTimeOffset | Дата и время истечения срока действия соглашения для всех пользователей. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z".|
+| повторяем| Длительность | Представляет частоту, с которой истекает срок действия терминов, после его первого истечения срока действия, как задано в "startDateTime". Значение представляется в формате ISO 8601 для длительности.|
+
+## <a name="json-representation"></a>Представление JSON
+
+Ниже представлено представление этого ресурса в формате JSON.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.termsExpiration",
+  "baseType": ""
+}-->
+
+```json
+{
+   "startDateTime": "2018-10-01T00:00:00.0000000Z",
+   "frequency": ""
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "termsExpiration complex type",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

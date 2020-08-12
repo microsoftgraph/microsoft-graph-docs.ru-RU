@@ -5,12 +5,12 @@ author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 065e7cdc84a353c4636fc4e7d13c32d22c7bce70
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: d7b60e19cb0d3b1c6b015c47ddac604f4ebb2d55
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142373"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46644004"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>Автоматизация настройки прокси-сервера приложений с помощью API Microsoft Graph
 
@@ -18,25 +18,25 @@ ms.locfileid: "45142373"
 
 В этой статье предполагается, что вы уже установили соединитель и выполнили [необходимые условия](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) для прокси приложения, чтобы соединители могли общаться со СЛУЖБАМИ Azure AD.
 
-Убедитесь, что у вас есть соответствующие разрешения на вызов следующих интерфейсов API.
+Убедитесь, что у вас есть соответствующие разрешения для вызова следующих API.
 
 |Тип ресурса |Метод |
 |---------|---------|
-| [аппликатионтемплате](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)| [Создание экземпляра Аппликатионтемплате](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) |
-|[заявлен](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [онпремисеспублишинг](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)|[Обновление приложения](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Добавление приложения в Коннекторграуп](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
+| [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)| [Создание экземпляра applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) |
+|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [онпремисеспублишинг](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)|[Обновление приложения](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Добавление приложения в Коннекторграуп](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
 |[PDIF](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)| [Получение соединителей](https://docs.microsoft.com/graph/api/connector-get?view=graph-rest-beta)
 |[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Создание connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Добавление соединителя для connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
-|[сервицепринЦипалс](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Обновление servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Создание Аппролеассигнментс](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
+|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Обновление servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Создание appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 >[!NOTE]
 > В запросах, показанных в этой статье, используются примеры значений. Их необходимо обновить. Отображаемые объекты ответа также могут быть сокращены для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 ## <a name="step-1-create-a-custom-application"></a>Шаг 1: Создание настраиваемого приложения
 
-### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>Выполните вход в Microsoft Graph Explorer (рекомендуется), POST или любой другой клиент API, который вы используете
+### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>Вход в песочницу Microsoft Graph (рекомендуется), Postman или любой другой используемый клиент API
 
-1. Запустите [обозреватель Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
-2. Выберите **Вход в систему с помощью Microsoft** и войдите с помощью глобального администратора Azure AD или учетных данных администратора приложения.
+1. Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
+2. Выберите вариант **Вход с помощью учетной записи Майкрософт** и войдите, используя учетные данные глобального администратора Azure AD или администратора приложения.
 3. После успешного входа вы увидите сведения об учетной записи пользователя в области слева.
 
 ### <a name="create-a-custom-application"></a>Создание пользовательского приложения
@@ -139,8 +139,8 @@ Content-type: application/json
 ```
 
 
-### <a name="retrieve-app-object-id-and-service-principal-object-id"></a>Получение идентификатора объекта приложения и идентификатора объекта участника службы
-Используйте ответ из предыдущего вызова, чтобы получить и сохранить идентификатор объекта приложения и идентификатор объекта участника службы.
+### <a name="retrieve-app-object-id-and-service-principal-object-id"></a>Получение идентификаторов объектов для приложения и субъекта-службы
+Из отклика на предыдущий вызов извлеките и сохраните идентификаторы объекта для приложения и субъекта-службы.
 ```
 "application": {
     "objectId": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83"
@@ -205,7 +205,7 @@ HTTP/1.1 204 No content
 ### <a name="set-the-redirecturi-identifieruri-and-homepageurl-properties"></a>Установка свойств redirectUri, Идентифиерури и Хомепажеурл
 Обновите **redirectUri**, **идентифиерури**и **хомепажеурл** приложения до внешнего URL-адреса.
 
-#### <a name="request"></a>Запросить
+#### <a name="request"></a>Запрос
 
 <!-- {
   "blockType": "request",
@@ -224,7 +224,7 @@ Content-type: appplication/json
    }
 }
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -310,7 +310,7 @@ Content-type: application/json
 ### <a name="create-a-connectorgroup"></a>Создание Коннекторграуп
 В этом примере создается новый Коннекторграуп с именем "Ива Demo Connector Group Connector", который используется для приложения. Кроме того, вы можете пропустить этот шаг, если соединитель уже назначен соответствующему Коннекторграуп. Извлеките и сохраните идентификатор объекта Коннекторграуп, который будет использоваться на следующем шаге.
 
-#### <a name="request"></a>Запросить
+#### <a name="request"></a>Запрос
 
 <!-- {
   "blockType": "request",
@@ -326,7 +326,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -348,7 +348,7 @@ Content-type: connectorGroup/json
 
 ### <a name="assign-a-connector-to-the-connectorgroup"></a>Назначение соединителя для Коннекторграуп
 
-#### <a name="request"></a>Запросить
+#### <a name="request"></a>Запрос
 
 <!-- {
   "blockType": "request",
@@ -364,7 +364,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -423,7 +423,7 @@ HTTP/1.1 204 No content
 Это приложение использует встроенную проверку подлинности Windows (ИВА). Чтобы настроить Ива, установите свойства единого входа в тип ресурса [синглесигнонсеттингс](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) .
 
 
-#### <a name="request"></a>Запросить
+#### <a name="request"></a>Запрос
 
 <!-- {
   "blockType": "request",
@@ -447,7 +447,7 @@ Content-type: appplication/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -458,7 +458,7 @@ Content-type: appplication/json
 HTTP/1.1 204 No content
 ```
 
-## <a name="step-5-assign-users"></a>Шаг 5: назначение пользователей
+## <a name="step-5-assign-users"></a>Шаг 5. Назначение пользователей
 ### <a name="retrieve-approle-for-the-applicaiton"></a>Получение Аппроле для приложения
 
 #### <a name="request"></a>Запрос
@@ -534,7 +534,7 @@ Content-type: application/json
         }
 ```
 
-### <a name="assign-users-and-groups-to-the-application"></a>Назначение пользователям и группам приложения
+### <a name="assign-users-and-groups-to-the-application"></a>Назначение пользователей и групп для приложения
 
 Используйте следующие свойства, чтобы назначить пользователя приложению.
 
@@ -547,6 +547,8 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -563,6 +565,12 @@ Content-type: appRoleAssignments/json
   "resourceId":"b00c693f-9658-4c06-bd1b-c402c4653dea"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Отклик
 
 <!-- {
@@ -586,10 +594,10 @@ Content-type: application/json
 }
 ```
 
-Дополнительные сведения см. в разделе Тип ресурса [аппролеассигнмент](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-beta) .
+Дополнительные сведения см. в документации по типу ресурса [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-beta).
 
 
 
 ## <a name="additional-steps"></a>Дополнительные действия
 - [Автоматизация конфигурации с помощью примеров PowerShell для прокси-сервера приложений](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
-- [Автоматизация настройки приложения единого входа на основе SAML с помощью API Microsoft Graph](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)
+- [Автоматизация настройки единого входа на основе SAML для приложений с помощью API Microsoft Graph](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)

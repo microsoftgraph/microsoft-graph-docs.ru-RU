@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Агриментфиле
-description: Представляет настраиваемый термин файла соглашения об использовании, который клиент управляет с помощью Azure Active Directory (Azure AD). Он содержит метаданные о файле соглашения (например, имя, язык и является ли он файлом по умолчанию).
+title: Тип ресурса Агриментфилелокализатион
+description: Представляет локализованные файлы политики условий соглашения об использовании в Azure Active Directory (Azure AD). Он содержит метаданные о файле соглашения (например, имя, язык и является ли он файлом по умолчанию).
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 0f8030680088a99c598d5c3576792583758840d9
+ms.openlocfilehash: 63d498b37980a57b3653b41cb337e792b8c1a838
 ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643983"
+ms.locfileid: "46644040"
 ---
-# <a name="agreementfile-resource-type"></a>Тип ресурса Агриментфиле
+# <a name="agreementfilelocalization-resource-type"></a>Тип ресурса Агриментфилелокализатион
 
 Пространство имен: microsoft.graph
 
@@ -40,13 +40,6 @@ ms.locfileid: "46643983"
 |language|String|Язык и региональные параметры файла соглашения в формате languagecode2-Country/regioncode2. languagecode2 это код из двух букв в нижнем регистре, производный от стандарта ISO 639-1. страна или regioncode2 является производной от стандарта ISO 3166 и обычно состоит из двух прописных букв или тега языка BCP-47 (например, EN-US). Только для чтения.|
 
 
-<!--
-## Relationships
-| Relationship | Type        | Description |
-|:-------------|:------------|:------------|
-|localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized version of the agreement files attached to the agreement.|
--->
-
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
@@ -56,7 +49,7 @@ ms.locfileid: "46643983"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.agreementFile"
+  "@odata.type": "microsoft.graph.agreementFileLocalization"
 }-->
 
 ```json
@@ -75,7 +68,7 @@ ms.locfileid: "46643983"
 <!--
 {
   "type": "#page.annotation",
-  "description": "agreementFile resource",
+  "description": "agreementFileLocalization resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

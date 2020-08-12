@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: b838a98e421592d1c45ee54daa0bbef7159f949f
+ms.openlocfilehash: f9228257d39e49e01c95fefd59808d2b9864d70c
 ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/12/2020
-ms.locfileid: "45224809"
+ms.locfileid: "46643870"
 ---
 ```javascript
 
@@ -15,8 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/devices/{id}/registeredUsers/{id}/$ref')
+const applicationServicePrincipal = {
+  displayName: "AWS Contoso"
+};
+
+let res = await client.api('/applicationTemplates/8b1025e4-1dd2-430b-a150-2ef79cd700f5/instantiate')
     .version('beta')
-    .delete();
+    .post(applicationServicePrincipal);
 
 ```
