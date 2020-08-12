@@ -3,12 +3,12 @@ title: Настраиваемый поставщик
 description: Создайте настраиваемый поставщик, чтобы включить проверку подлинности и доступ к Graph для компонентов набора средств Microsoft Graph, если в вашем приложении есть код проверки подлинности.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: acd96e6dc7e13b1e1fbfc5353e3db2132a23e246
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 4e287a38a584f77b7dfedf6e36d56da7a4e29715
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35243081"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643738"
 ---
 # <a name="custom-provider"></a>Настраиваемый поставщик
 
@@ -49,7 +49,7 @@ let provider = new SimpleProvider(getAccessToken, login, logout);
 
 ### <a name="manage-state"></a>Управление состоянием
 
-Чтобы компоненты могли знать о состоянии поставщика, необходимо вызвать `provider.setState(state: ProviderState)` метод при изменении состояния. Например, если пользователь выполнил вход, вызовите `provider.setState(ProviderState.SignedIn)`. `ProviderState` Перечисление определяет три состояния, как показано ниже.
+Чтобы компоненты могли знать о состоянии поставщика, необходимо вызвать `provider.setState(state: ProviderState)` метод при изменении состояния. Например, если пользователь выполнил вход, вызовите `provider.setState(ProviderState.SignedIn)` . `ProviderState`Перечисление определяет три состояния, как показано ниже.
 
 ```ts
 export enum ProviderState {
@@ -61,15 +61,15 @@ export enum ProviderState {
 
 ## <a name="iprovider"></a>ипровидер
 
-`IProvider` Абстрактный класс можно расширить для создания собственного поставщика.
+`IProvider`Абстрактный класс можно расширить для создания собственного поставщика.
 
-### <a name="state"></a>Состояние
+### <a name="state"></a>State
 
-Поставщик должен отслеживать состояние проверки подлинности и обновлять компоненты при изменении состояния. `IProvider` Класс уже реализует `onStateChanged(eventHandler)` обработчик и `state: ProviderState` свойство. Для обновления состояния при изменении состояния `setState(state:ProviderState)` необходимо просто использовать метод в реализации. При обновлении состояния `stateChanged` событие будет срабатывать и автоматически обновлены все компоненты.
+Поставщик должен отслеживать состояние проверки подлинности и обновлять компоненты при изменении состояния. `IProvider`Класс уже реализует `onStateChanged(eventHandler)` обработчик и `state: ProviderState` свойство. Для `setState(state:ProviderState)` обновления состояния при изменении состояния необходимо просто использовать метод в реализации. При обновлении состояния событие будет срабатывать `stateChanged` и автоматически обновлены все компоненты.
 
 ### <a name="loginlogout"></a>Вход/выход
 
-Если поставщик предоставляет функции входа или выхода, реализуйте методы `login(): Promise<void>` и `logout(): Promise<void>` . Эти методы являются необязательными.
+Если поставщик предоставляет функции входа или выхода, реализуйте `login(): Promise<void>` методы и `logout(): Promise<void>` . Эти методы являются необязательными.
 
 ### <a name="access-token"></a>Маркер доступа
 
@@ -87,7 +87,7 @@ this.graph = new Graph(this);
 
 ### <a name="example"></a>Пример
 
-Все поставщики расширяют `IProvider` абстрактный класс. В качестве примера рассмотрим исходный код для любого из [существующих поставщиков](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/src/providers).
+Все поставщики расширяют `IProvider` абстрактный класс. В качестве примера рассмотрим исходный код для любого из [существующих поставщиков](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt/src/providers).
 
 ## <a name="set-the-global-provider"></a>Настройка глобального поставщика
 
