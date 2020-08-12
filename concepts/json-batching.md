@@ -4,12 +4,12 @@ description: 'Пакетная обработка JSON позволяет опт
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6327fec0f19782adebf6504c367a559857616c16
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 5737d57ef9256333c6485abe4da400be9e7ec745
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598425"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643990"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Объединение нескольких запросов в один вызов HTTP с помощью пакетной обработки JSON
 
@@ -183,5 +183,4 @@ Content-Type: application/json
 
 ## <a name="see-also"></a>См. также
 
-Дополнительные сведения о формате пакетных запросов и ответов JSON см. в [спецификации формата JSON OData версии 4.01][odata-4.01-json], раздел 18. Обратите внимание, что это рабочая версия спецификации, но внесение изменений не планируется.
-
+Дополнительные сведения о формате пакетных запросов и ответов JSON см. в [спецификации формата JSON OData версии 4.01](http://docs.oasis-open.org/odata/odata-json-format/v4.01/odata-json-format-v4.01.html#sec_BatchRequestsandResponses), раздел _Пакетные запросы и ответы_.
