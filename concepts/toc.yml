@@ -370,6 +370,8 @@ items:
             href: workbook-best-practice.md
           - name: Коды ошибок
             href: workbook-error-codes.md
+          - name: Обработка ошибок
+            href: workbook-error-handling.md
   - name: Разработка
     expanded: true
     items:
