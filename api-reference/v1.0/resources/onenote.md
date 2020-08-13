@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 207d7ce3f5cf572d3c32de23882e04a8cc9dd54d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 72adb53bdf50ee0a5c909b54cb11698fc593f8db
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447327"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657919"
 ---
 # <a name="onenote-resource-type"></a>Тип ресурса onenote
 
@@ -20,15 +20,15 @@ ms.locfileid: "42447327"
 
 Все вызовы службы OneNote через API Microsoft Graph выполняются с помощью следующего корневого URL-адреса службы:
 
-```
+```http
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-В качестве расположений можно задавать записные книжки пользователя в Office 365 или личные хранилища OneDrive, записные книжки группы (в том числе размещенные на сайте SharePoint) в Office 365. 
+В качестве расположений можно задавать записные книжки пользователя в Microsoft 365 или личные хранилища OneDrive, записные книжки группы (в том числе размещенные на сайте SharePoint) в Microsoft 365. 
 
 **Записные книжки пользователей.** Чтобы получить доступ к персональным записным книжкам в OneDrive для бизнеса или личном хранилище OneDrive, воспользуйтесь одним из следующих URL-адресов:
 
-```
+```http
 https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
@@ -36,12 +36,12 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 
 **Записные книжки группы.** Чтобы получить доступ к записным книжкам группы, воспользуйтесь следующим корневым URL-адресом службы:
 
-```
+```http
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 **Записные книжки на сайте SharePoint.** Чтобы получить доступ к записным книжкам на сайте группы SharePoint, воспользуйтесь следующим корневым URL-адресом службы:
 
-```
+```http
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 ## <a name="authorization"></a>Авторизация
@@ -78,8 +78,14 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.onenote"
 }-->
-``` json
+```json
 {
+  "notebooks": [{ "@odata.type": "microsoft.graph.notebook" }],
+  "operations": [{ "@odata.type": "microsoft.graph.onenoteOperation" }],
+  "pages": [{ "@odata.type": "microsoft.graph.onenotePage" }],
+  "resources": [ { "@odata.type": "microsoft.graph.onenoteResource" } ],
+  "sectionGroups": [ { "@odata.type": "microsoft.graph.sectionGroup" } ],
+  "sections": [ { "@odata.type": "microsoft.graph.onenoteSection" } ]
 }
 ```
 

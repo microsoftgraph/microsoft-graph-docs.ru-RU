@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 27daff269c95ab3434836baa10158081bf8ce2ec
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: e57fc67980f4cfac6cf7ca3077d2fc0ba1b6efd2
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643962"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46658108"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -29,8 +29,9 @@ ms.locfileid: "46643962"
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлены следующие свойства для [Условий соглашения об использовании](/graph/api/resources/agreement.md):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
-| Дополнение | бета | Добавлен новый тип ресурса для [Условий соглашения об использовании](/graph/api/resources/agreement.md):</br>[agreementFile](/graph/api/resources/agreementfile.md)|
+| Дополнение | бета | Добавлены следующие свойства для [Условий соглашения об использовании](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
+| Дополнение | бета | Добавлен новый тип ресурса для [Условий соглашения об использовании](/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
+| Дополнение | бета | Добавлено свойство [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) для ресурса [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
 
@@ -812,7 +813,7 @@ ms.locfileid: "46643962"
 |Добавление|бета|Добавлено свойство **certificateSerialNumber** в сущность [applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate)|
 |Добавление|Бета|Добавлены свойства **isGlobalScript** и **highestAvailableVersion** в [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript)|
 |Добавление|Бета|Добавлено свойство **hasRequiredSetting** в сущность [deviceManagementSettingCategory](/graph/api/resources/intune-deviceintent-devicemanagementsettingcategory)|
-|Добавление|бета|Добавлены свойства **sendDeviceOwnershipChangePushNotification**, **enrollmentAvailability** и **roleScopeTagIds** в [intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile)|
+|Дополнение|бета|Добавлены свойства **sendDeviceOwnershipChangePushNotification**, **enrollmentAvailability** и **roleScopeTagIds** в [intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile)|
 |Дополнение|Бета|Добавлены свойства **updateScheduleType** и **customUpdateTimeWindows** в [iosUpdateConfiguration](/graph/api/resources/intune-deviceconfig-iosupdateconfiguration)|
 |Добавление|Бета|Добавлено свойство **appActionIfUnableToAuthenticateUser** в сущность [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection)|
 |Добавление|Бета|Добавлено свойство **userPrincipalName** в сущность [termsAndConditionsAcceptanceStatus](/graph/api/resources/intune-companyterms-termsandconditionsacceptancestatus)|
@@ -2859,7 +2860,7 @@ ms.locfileid: "46643962"
 |Дополнение|Бета|Для сущности [deviceManagementExchangeConnector](/graph/api/resources/intune-onboarding-devicemanagementexchangeconnector?view=graph-rest-beta) добавлено свойство **connectorServerName**|
 |Удаление|Бета|Для сущности [iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-beta) удалено свойство **settingXml**|
 |Дополнение|Бета|Для сущности [iosVppApp](/graph/api/resources/intune-apps-iosvppapp?view=graph-rest-beta) добавлены свойства **vppTokenId** и **revokeLicenseActionResults**|
-|Дополнение|Бета|Для сущности [macOSCompliancePolicy](/graph/api/resources/intune-deviceconfig-macoscompliancepolicy?view=graph-rest-beta) добавлены свойства **firewallEnabled**, **firewallBlockAllIncoming** и **firewallEnableStealthMode**|
+|Дополнение|Бета-версия|Для сущности [macOSCompliancePolicy](/graph/api/resources/intune-deviceconfig-macoscompliancepolicy?view=graph-rest-beta) добавлены свойства **firewallEnabled**, **firewallBlockAllIncoming** и **firewallEnableStealthMode**|
 |Удаление|бета|Для сущности [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) удалено свойство **remoteAssistanceSessionErrorString**|
 |Дополнение|Бета|Для сущности [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta) добавлены свойства **antivirusRequired** и **antiSpywareRequired**|
 |Дополнение|Бета|Для сущности [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) добавлены свойства **defenderOfficeAppsOtherProcessInjection**, **defenderOfficeAppsExecutableContentCreationOrLaunch**, **defenderOfficeAppsLaunchChildProcess**, **defenderOfficeMacroCodeAllowWin32Imports**, **defenderScriptObfuscatedMacroCode**, **defenderScriptDownloadedPayloadExecution**, **defenderProcessCreation**, **defenderUntrustedUSBProcess**, **defenderUntrustedExecutable** и **defenderEmailContentExecution **|
@@ -4108,7 +4109,7 @@ ms.locfileid: "46643962"
 | Изменение      | Бета-версия    | Добавлены свойства навигации **mobileAppIdentifierDeployments** и **deploymentSummary** для объекта [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлено свойство навигации **mobileAppIdentifierDeployments** для объекта [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлены свойства навигации **deviceConfigurationUserStateSummaries** и **iosUpdateStatuses** для объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta). |
-| Изменение      | Бета-версия    | Удалено свойство навигации **complianceSettingStateSummaries** для объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta). |
+| Изменение      | бета    | Удалено свойство навигации **complianceSettingStateSummaries** для объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta). |
 | Изменение      | бета    | Добавлены свойства навигации **runSummary**, **deviceRunStates** и **userRunStates** для объекта [deviceManagementScript](/graph/api/resources/intune-devicefe-devicemanagementscript?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Удалено свойство навигации **runStates** для объекта [deviceManagementScript](/graph/api/resources/intune-devicefe-devicemanagementscript?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлены свойства навигации **mobileAppIdentifierDeployments** и **deploymentSummary** для объекта [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-beta). |
@@ -4989,7 +4990,7 @@ ms.locfileid: "46643962"
 | Дополнение        | 1.0 и бета-версия | Добавлено свойство _internetMessageId_ для объекта **message**. Идентификатор сообщения в формате, установленном документом [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
 | Изменение          | Бета-версия          | Свойство _mobilePhone1_ теперь называется _mobilePhone_ в объекте **message**. |
 | Изменение          | Бета-версия          | У методов _createReply_ и _createReplyAll_ объекта **message** появились новый параметры — _message_ и _comment_. |
-| Изменение          | бета          | У метода _createForward_ объекта **message** появились новые параметры _Message_, _ToRecipients_ и _comment_. |
+| Изменение          | Бета-версия          | У метода _createForward_ объекта **message** появились новые параметры _Message_, _ToRecipients_ и _comment_. |
 | Изменение          | бета          | У методов _reply_, _replyAll_ и _forward_ объекта **message** появился новый параметр — _Message_. |
 
 ### <a name="permission"></a>Разрешение
