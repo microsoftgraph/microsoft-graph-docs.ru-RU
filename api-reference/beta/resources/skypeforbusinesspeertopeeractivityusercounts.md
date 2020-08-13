@@ -14,7 +14,7 @@ ms.locfileid: "42520459"
 ---
 # <a name="skypeforbusinesspeertopeeractivityusercounts-resource-type"></a>Тип ресурса Скипефорбусинесспиртопирактивитюсеркаунтс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 
@@ -27,7 +27,7 @@ ms.locfileid: "42520459"
 | филетрансфер      | Int64  |
 | репортрефрешдате | Дата   |
 | reportDate        | Дата   |
-| репортпериод      | String |
+| репортпериод      | Строка |
 
 ## <a name="json-representation"></a>Представление JSON
 

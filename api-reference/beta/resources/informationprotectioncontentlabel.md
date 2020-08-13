@@ -14,7 +14,7 @@ ms.locfileid: "42496084"
 ---
 # <a name="informationprotectioncontentlabel-resource-type"></a>Тип ресурса Информатионпротектионконтентлабел
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42496084"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|assignmentMethod|String| Возможные значения: `standard`, `privileged`, `auto`.|
+|assignmentMethod|Строка| Возможные значения: `standard`, `privileged`, `auto`.|
 |креатиондатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |label|[лабелдетаилс](labeldetails.md)| Сведения о метке, которая в настоящее время применяется к файлу. |
 

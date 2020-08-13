@@ -15,7 +15,7 @@ ms.locfileid: "42453162"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>Перечисление страниц в списке страниц сайта
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

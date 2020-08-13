@@ -15,7 +15,7 @@ ms.locfileid: "42505485"
 ---
 # <a name="driverecipient-resource"></a>Ресурс DriveRecipient
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

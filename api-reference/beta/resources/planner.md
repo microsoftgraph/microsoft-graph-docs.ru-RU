@@ -14,7 +14,7 @@ ms.locfileid: "42521830"
 ---
 # <a name="planner-resource-type"></a>Тип ресурса планировщика
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "42521830"
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Идентификатор ресурса **планировщика** .|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |buckets|Коллекция объектов [plannerBucket](plannerbucket.md)| Только для чтения. Допускается значение null. Возвращает коллекцию указанных сегментов|

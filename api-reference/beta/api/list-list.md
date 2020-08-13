@@ -15,7 +15,7 @@ ms.locfileid: "42457150"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Перечисление списков на сайте
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

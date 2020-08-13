@@ -14,7 +14,7 @@ ms.locfileid: "42519213"
 ---
 # <a name="workbooknameditem-resource-type"></a>Тип ресурса Воркбукнамедитем
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,19 +30,19 @@ ms.locfileid: "42519213"
 |[Get NamedItem](../api/nameditem-get.md) | [воркбукнамедитем](workbooknameditem.md) |Чтение свойств и связей объекта namedItem.|
 |[Обновление](../api/nameditem-update.md) | [воркбукнамедитем](workbooknameditem.md)   |Обновление объекта NamedItem. |
 |[Range](../api/nameditem-range.md)|[workbookRange](workbookrange.md)|Возвращает объект Range, сопоставленный с именем. Вызывает исключение, если тип именованного элемента не является диапазоном.|
-|[Список](../api/nameditem-list.md) | Коллекция [воркбукнамедитем](workbooknameditem.md) |Получение коллекции объектов namedItem. |
+|[Список](../api/nameditem-list.md) | Коллекция [workbookNamedItem](workbooknameditem.md) |Получение коллекции объектов namedItem. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|string|Имя объекта. Только для чтения.|
-|comment|строка|Представляет примечание, связанное с этим именем.|
+|comment|string|Представляет примечание, связанное с этим именем.|
 |scope|string|Указывает, относится ли имя к книге или определенному листу. Только для чтения.|
 |type|string|Указывает тип ссылки, связанный с именем. Возможные значения: `String`, `Integer`, `Double`, `Boolean`, `Range`. Только для чтения.|
 |value|строка|Представляет формулу, на которую ссылается имя. Например, =Sheet14!$B$2:$H$12, =4.75 и т. д. Только для чтения.|
 |visible|boolean|Определяет, является ли объект видимым.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |worksheet|[воркбукворкшит](workbookworksheet.md)|Возвращает лист, к которому относится именованный элемент. Доступно, только если элемент относится к листу. Только для чтения.|

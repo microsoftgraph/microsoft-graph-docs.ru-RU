@@ -14,7 +14,7 @@ ms.locfileid: "42521806"
 ---
 # <a name="plannerassignment-resource-type"></a>Тип ресурса Планнерассигнмент
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

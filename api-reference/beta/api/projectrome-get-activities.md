@@ -14,7 +14,7 @@ ms.locfileid: "42454908"
 ---
 # <a name="get-user-activities"></a>Получение действий пользователей
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

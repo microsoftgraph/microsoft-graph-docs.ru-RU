@@ -14,7 +14,7 @@ ms.locfileid: "42519353"
 ---
 # <a name="workbookchartdatalabelformat-resource-type"></a>Тип ресурса Воркбукчартдаталабелформат
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42519353"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fill|[воркбукчартфилл](workbookchartfill.md)|Представляет формат заливки для текущей метки данных диаграммы. Только для чтения.|

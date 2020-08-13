@@ -14,7 +14,7 @@ ms.locfileid: "42453550"
 ---
 # <a name="create-securityaction"></a>Создание объекта securityAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42453550"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | SecurityActions.ReadWrite.All |
+| Приложение                            | SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ POST /security/securityActions
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [securityAction](../resources/securityaction.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [securityAction](../resources/securityaction.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

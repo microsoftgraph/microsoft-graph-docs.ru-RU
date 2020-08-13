@@ -14,7 +14,7 @@ ms.locfileid: "42455671"
 ---
 # <a name="get-plannerplandetails"></a>Получение объекта plannerPlanDetails
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ GET /planner/plans/{id}/details
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код ответа `200 OK` и объект [plannerPlanDetails](../resources/plannerplandetails.md) в тексте ответа.
 

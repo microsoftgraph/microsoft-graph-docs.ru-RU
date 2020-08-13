@@ -14,7 +14,7 @@ ms.locfileid: "42454923"
 ---
 # <a name="delete-an-activity"></a>Удаление действия
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

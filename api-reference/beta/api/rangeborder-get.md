@@ -14,7 +14,7 @@ ms.locfileid: "42454677"
 ---
 # <a name="get-rangeborder"></a>Получение объекта RangeBorder
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +47,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукранжебордер](../resources/workbookrangeborder.md) в тексте отклика.
 ## <a name="example"></a>Пример

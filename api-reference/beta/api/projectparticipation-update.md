@@ -14,7 +14,7 @@ ms.locfileid: "42454929"
 ---
 # <a name="update-projectparticipation"></a>Обновление прожектпартиЦипатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,7 +56,7 @@ PATCH /me/profile/projects/{id}
 |Клиенты        |[компанидетаил](../resources/companydetail.md)            | Содержит подробные сведения о клиенте, для которого выполнялся проект.                                |
 |коллег    |Коллекция [релатедперсон](../resources/relatedperson.md) | Пользователи, которые также работали над проектом.                                                            |
 |описаны        |[поситиондетаил](../resources/positiondetail.md)          | Содержит подробные сведения о роли пользователей в проекте.                                               |
-|displayName   |String                                                    | Содержит понятное имя проекта.                                                          |
+|displayName   |Строка                                                    | Содержит понятное имя проекта.                                                          |
 |спонсорами      |Коллекция [релатедперсон](../resources/relatedperson.md) | Пользователь (люди), который спонсор проекта.                                                          |
 
 ## <a name="response"></a>Отклик

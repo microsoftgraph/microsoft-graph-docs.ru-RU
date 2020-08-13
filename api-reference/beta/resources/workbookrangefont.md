@@ -14,7 +14,7 @@ ms.locfileid: "42519178"
 ---
 # <a name="workbookrangefont-resource-type"></a>Тип ресурса Воркбукранжефонт
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,13 +32,13 @@ ms.locfileid: "42519178"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |bold|boolean|Указывает, является ли шрифт полужирным.|
-|color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
+|color|string|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
 |name|string|Имя шрифта (например, Calibri)|
 |size|double|размер шрифта|
-|underline| String |Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|underline| Строка |Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

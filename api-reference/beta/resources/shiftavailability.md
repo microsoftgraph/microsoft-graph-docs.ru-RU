@@ -14,7 +14,7 @@ ms.locfileid: "42520627"
 ---
 # <a name="shiftavailability-resource-type"></a>Тип ресурса Шифтаваилабилити
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

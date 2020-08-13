@@ -14,7 +14,7 @@ ms.locfileid: "42454705"
 ---
 # <a name="update-range"></a>Обновление диапазона
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

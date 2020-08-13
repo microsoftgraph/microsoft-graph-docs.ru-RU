@@ -14,7 +14,7 @@ ms.locfileid: "42520550"
 ---
 # <a name="siteactivitysummary-resource-type"></a>Тип ресурса Ситеактивитисуммари
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 
@@ -26,7 +26,7 @@ ms.locfileid: "42520550"
 | шарединтерналли  | Int64  |
 | шаредекстерналли  | Int64  |
 | reportDate        | Дата   |
-| репортпериод      | String |
+| репортпериод      | Строка |
 
 ## <a name="json-representation"></a>Представление JSON
 
