@@ -12,47 +12,47 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/01/2020
 ms.locfileid: "43991761"
 ---
-# <a name="create-conversation-thread"></a><span data-ttu-id="5b01a-103">Создание цепочки беседы</span><span class="sxs-lookup"><span data-stu-id="5b01a-103">Create conversation thread</span></span>
+# <a name="create-conversation-thread"></a><span data-ttu-id="b6331-103">Создание цепочки беседы</span><span class="sxs-lookup"><span data-stu-id="b6331-103">Create conversation thread</span></span>
 
-<span data-ttu-id="5b01a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5b01a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b6331-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b6331-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="5b01a-105">Начните групповой чат, создав цепочку.</span><span class="sxs-lookup"><span data-stu-id="5b01a-105">Start a new group conversation by first creating a thread.</span></span> 
+<span data-ttu-id="b6331-105">Начните групповой чат, создав цепочку.</span><span class="sxs-lookup"><span data-stu-id="b6331-105">Start a new group conversation by first creating a thread.</span></span> 
 
-<span data-ttu-id="5b01a-p101">В группе создаются беседа, цепочка беседы и запись. Размещать в цепочке дальнейшие записи можно с помощью ответов на [цепочки](conversationthread-reply.md) и [записи](post-reply.md).</span><span class="sxs-lookup"><span data-stu-id="5b01a-p101">A new conversation, conversation thread, and post are created in the group. Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that thread.</span></span>
+<span data-ttu-id="b6331-p101">В группе создаются беседа, цепочка беседы и запись. Размещать в цепочке дальнейшие записи можно с помощью ответов на [цепочки](conversationthread-reply.md) и [записи](post-reply.md).</span><span class="sxs-lookup"><span data-stu-id="b6331-p101">A new conversation, conversation thread, and post are created in the group. Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that thread.</span></span>
 
-<span data-ttu-id="5b01a-108">Примечание. Вы также можете [создать цепочку и существующей беседе](conversation-post-threads.md).</span><span class="sxs-lookup"><span data-stu-id="5b01a-108">Note: You can also [start a new thread in an existing conversation](conversation-post-threads.md).</span></span> 
+<span data-ttu-id="b6331-108">Примечание. Вы также можете [создать цепочку и существующей беседе](conversation-post-threads.md).</span><span class="sxs-lookup"><span data-stu-id="b6331-108">Note: You can also [start a new thread in an existing conversation](conversation-post-threads.md).</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="5b01a-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5b01a-109">Permissions</span></span>
-<span data-ttu-id="5b01a-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5b01a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b6331-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b6331-109">Permissions</span></span>
+<span data-ttu-id="b6331-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b6331-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5b01a-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5b01a-112">Permission type</span></span>      | <span data-ttu-id="5b01a-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5b01a-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b6331-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b6331-112">Permission type</span></span>      | <span data-ttu-id="b6331-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b6331-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5b01a-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5b01a-114">Delegated (work or school account)</span></span> | <span data-ttu-id="5b01a-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5b01a-115">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="5b01a-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5b01a-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5b01a-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5b01a-117">Not supported.</span></span>    |
-|<span data-ttu-id="5b01a-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5b01a-118">Application</span></span> | <span data-ttu-id="5b01a-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5b01a-119">Not supported.</span></span> |
+|<span data-ttu-id="b6331-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b6331-114">Delegated (work or school account)</span></span> | <span data-ttu-id="b6331-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b6331-115">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b6331-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b6331-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b6331-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b6331-117">Not supported.</span></span>    |
+|<span data-ttu-id="b6331-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b6331-118">Application</span></span> | <span data-ttu-id="b6331-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b6331-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5b01a-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5b01a-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b6331-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b6331-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/threads
 ```
-## <a name="request-headers"></a><span data-ttu-id="5b01a-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5b01a-121">Request headers</span></span>
-| <span data-ttu-id="5b01a-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="5b01a-122">Header</span></span>       | <span data-ttu-id="5b01a-123">Значение</span><span class="sxs-lookup"><span data-stu-id="5b01a-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="b6331-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b6331-121">Request headers</span></span>
+| <span data-ttu-id="b6331-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="b6331-122">Header</span></span>       | <span data-ttu-id="b6331-123">Значение</span><span class="sxs-lookup"><span data-stu-id="b6331-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="5b01a-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5b01a-124">Authorization</span></span>  | <span data-ttu-id="5b01a-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5b01a-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="5b01a-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5b01a-127">Content-Type</span></span>  | <span data-ttu-id="5b01a-128">application/json</span><span class="sxs-lookup"><span data-stu-id="5b01a-128">application/json</span></span>  |
+| <span data-ttu-id="b6331-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b6331-124">Authorization</span></span>  | <span data-ttu-id="b6331-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b6331-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b6331-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b6331-127">Content-Type</span></span>  | <span data-ttu-id="b6331-128">application/json</span><span class="sxs-lookup"><span data-stu-id="b6331-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="5b01a-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5b01a-129">Request body</span></span>
-<span data-ttu-id="5b01a-130">Предоставьте в тексте запроса описание объекта [conversationThread](../resources/conversationthread.md), содержащего объект [post](../resources/post.md), в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5b01a-130">In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object containing a [post](../resources/post.md).</span></span>
+## <a name="request-body"></a><span data-ttu-id="b6331-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b6331-129">Request body</span></span>
+<span data-ttu-id="b6331-130">Предоставьте в тексте запроса описание объекта [conversationThread](../resources/conversationthread.md), содержащего объект [post](../resources/post.md), в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b6331-130">In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object containing a [post](../resources/post.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="5b01a-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b01a-131">Response</span></span>
-<span data-ttu-id="5b01a-132">В случае успеха этот метод возвращает код отклика `201 Created` и объект [conversationThread](../resources/conversationthread.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5b01a-132">If successful, this method returns `201 Created` response code and [conversationThread](../resources/conversationthread.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b6331-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="b6331-131">Response</span></span>
+<span data-ttu-id="b6331-132">В случае успеха этот метод возвращает код отклика `201 Created` и объект [conversationThread](../resources/conversationthread.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b6331-132">If successful, this method returns `201 Created` response code and [conversationThread](../resources/conversationthread.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5b01a-133">Пример</span><span class="sxs-lookup"><span data-stu-id="5b01a-133">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="5b01a-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="5b01a-134">Request</span></span>
-<span data-ttu-id="5b01a-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5b01a-135">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b6331-133">Пример</span><span class="sxs-lookup"><span data-stu-id="b6331-133">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="b6331-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="b6331-134">Request</span></span>
+<span data-ttu-id="b6331-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b6331-135">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5b01a-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="5b01a-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b6331-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="b6331-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversationthread_from_group"
@@ -77,27 +77,27 @@ Content-type: application/json
   }]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="5b01a-137">C#</span><span class="sxs-lookup"><span data-stu-id="5b01a-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b6331-137">C#</span><span class="sxs-lookup"><span data-stu-id="b6331-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conversationthread-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5b01a-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5b01a-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b6331-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b6331-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-conversationthread-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5b01a-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5b01a-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b6331-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b6331-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversationthread-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="5b01a-140">Java</span><span class="sxs-lookup"><span data-stu-id="5b01a-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b6331-140">Java</span><span class="sxs-lookup"><span data-stu-id="b6331-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conversationthread-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="5b01a-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b01a-141">Response</span></span>
-<span data-ttu-id="5b01a-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="5b01a-142">The following is an example of the response.</span></span>
-><span data-ttu-id="5b01a-143">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="5b01a-143">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5b01a-144">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5b01a-144">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="b6331-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="b6331-141">Response</span></span>
+<span data-ttu-id="b6331-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b6331-142">The following is an example of the response.</span></span>
+><span data-ttu-id="b6331-143">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="b6331-143">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b6331-144">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b6331-144">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

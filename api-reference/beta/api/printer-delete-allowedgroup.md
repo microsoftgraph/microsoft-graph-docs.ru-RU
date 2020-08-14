@@ -1,55 +1,55 @@
 ---
-title: Удаление Алловедграуп
+title: Удаление Алловедграуп с принтера
 description: Отозвать доступ указанной группы, чтобы послать задания печати на связанный принтер.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: abed131494de92c302b819388f45b0feda85d0d7
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: e23d8dce85a030eb775c0e098c14389855a78a8f
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896299"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674080"
 ---
-# <a name="delete-allowedgroup"></a><span data-ttu-id="3b30a-103">Удаление Алловедграуп</span><span class="sxs-lookup"><span data-stu-id="3b30a-103">Delete allowedGroup</span></span>
+# <a name="delete-allowedgroup-from-printer"></a><span data-ttu-id="50404-103">Удаление Алловедграуп с принтера</span><span class="sxs-lookup"><span data-stu-id="50404-103">Delete allowedGroup from printer</span></span>
 
-<span data-ttu-id="3b30a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3b30a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="50404-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="50404-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3b30a-105">Отозвать доступ указанной группы, чтобы послать задания печати на связанный [принтер](../resources/printer.md).</span><span class="sxs-lookup"><span data-stu-id="3b30a-105">Revoke the specified group's access to submit print jobs to the associated [printer](../resources/printer.md).</span></span>
+<span data-ttu-id="50404-105">Отозвать доступ указанной группы, чтобы послать задания печати на связанный [принтер](../resources/printer.md).</span><span class="sxs-lookup"><span data-stu-id="50404-105">Revoke the specified group's access to submit print jobs to the associated [printer](../resources/printer.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3b30a-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3b30a-106">Permissions</span></span>
-<span data-ttu-id="3b30a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3b30a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="50404-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="50404-106">Permissions</span></span>
+<span data-ttu-id="50404-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="50404-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="3b30a-109">В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.</span><span class="sxs-lookup"><span data-stu-id="3b30a-109">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
+<span data-ttu-id="50404-109">Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице.</span><span class="sxs-lookup"><span data-stu-id="50404-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="50404-110">Пользователь, вошедшего в систему, должен быть [администратором принтера](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="50404-110">The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="3b30a-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3b30a-110">Permission type</span></span> | <span data-ttu-id="3b30a-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3b30a-111">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="50404-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="50404-111">Permission type</span></span> | <span data-ttu-id="50404-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="50404-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="3b30a-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3b30a-112">Delegated (work or school account)</span></span>| <span data-ttu-id="3b30a-113">Users. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="3b30a-113">Users.Read.All</span></span> |
-|<span data-ttu-id="3b30a-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3b30a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3b30a-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3b30a-115">Not Supported.</span></span>|
-|<span data-ttu-id="3b30a-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3b30a-116">Application</span></span>|<span data-ttu-id="3b30a-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3b30a-117">Not Supported.</span></span>|
+|<span data-ttu-id="50404-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="50404-113">Delegated (work or school account)</span></span>| <span data-ttu-id="50404-114">Printer. ReadWrite. ALL, Printer. FullControl. ALL</span><span class="sxs-lookup"><span data-stu-id="50404-114">Printer.ReadWrite.All, Printer.FullControl.All</span></span> |
+|<span data-ttu-id="50404-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="50404-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="50404-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="50404-116">Not Supported.</span></span>|
+|<span data-ttu-id="50404-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="50404-117">Application</span></span>| <span data-ttu-id="50404-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="50404-118">Not Supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3b30a-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3b30a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="50404-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="50404-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /print/printers/{id}/allowedGroups/{id}/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="3b30a-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3b30a-119">Request headers</span></span>
-| <span data-ttu-id="3b30a-120">Имя</span><span class="sxs-lookup"><span data-stu-id="3b30a-120">Name</span></span>          | <span data-ttu-id="3b30a-121">Описание</span><span class="sxs-lookup"><span data-stu-id="3b30a-121">Description</span></span>   |
+## <a name="request-headers"></a><span data-ttu-id="50404-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="50404-120">Request headers</span></span>
+| <span data-ttu-id="50404-121">Имя</span><span class="sxs-lookup"><span data-stu-id="50404-121">Name</span></span>          | <span data-ttu-id="50404-122">Описание</span><span class="sxs-lookup"><span data-stu-id="50404-122">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="3b30a-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3b30a-122">Authorization</span></span> | <span data-ttu-id="3b30a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3b30a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="50404-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="50404-123">Authorization</span></span> | <span data-ttu-id="50404-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="50404-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3b30a-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="3b30a-125">Request body</span></span>
-<span data-ttu-id="3b30a-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="3b30a-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="50404-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="50404-126">Request body</span></span>
+<span data-ttu-id="50404-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="50404-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3b30a-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="3b30a-127">Response</span></span>
-<span data-ttu-id="3b30a-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="3b30a-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="50404-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="50404-128">Response</span></span>
+<span data-ttu-id="50404-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="50404-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3b30a-130">Пример</span><span class="sxs-lookup"><span data-stu-id="3b30a-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="3b30a-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="3b30a-131">Request</span></span>
-<span data-ttu-id="3b30a-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3b30a-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="50404-131">Пример</span><span class="sxs-lookup"><span data-stu-id="50404-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="50404-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="50404-132">Request</span></span>
+<span data-ttu-id="50404-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="50404-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_allowedgroup"
@@ -57,9 +57,9 @@ DELETE /print/printers/{id}/allowedGroups/{id}/$ref
 ```http
 DELETE https://graph.microsoft.com/beta/print/printers/{id}/allowedGroup/{id}/$ref
 ```
-##### <a name="response"></a><span data-ttu-id="3b30a-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="3b30a-133">Response</span></span>
-<span data-ttu-id="3b30a-134">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3b30a-134">The following is an example of the response.</span></span>
-><span data-ttu-id="3b30a-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3b30a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="50404-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="50404-134">Response</span></span>
+<span data-ttu-id="50404-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="50404-135">The following is an example of the response.</span></span>
+><span data-ttu-id="50404-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="50404-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
