@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 27998ac757a58e577c4e6b8397911e40f830a9a6
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: ee1a5d1b0ae6f90f2e5fecc8347e35e3f68b729e
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598453"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673884"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -129,7 +129,7 @@ Content-type: application/json
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
 |Список|sites/{site-id}/lists/{list-id}|
-|Оповещение безопасности|security/alerts?$filter=status eq 'New'|
+|Оповещение безопасности|security/alerts?$filter=status eq 'NewAlert'|
 |Записи звонков|communications/callRecords|
 
 ##### <a name="response"></a>Отклик
