@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 50d53f66629e31d490717cd2fcea047d5a5e10ff
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
-ms.translationtype: MT
+ms.openlocfilehash: 38d9f6044a90e422d68e55466ffd1e6191c54caf
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335807"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643920"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -28,9 +28,9 @@ ms.locfileid: "44335807"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All, Auditlogs.Read.All |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Auditlogs.Read.All |
+|Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,16 +41,16 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа, включая `$search` , `$count` и `$filter` . Можно использовать `$search` свойство **DisplayName** . При добавлении или обновлении элементов для этого ресурса они могут индексироваться для использования с `$count` `$search` параметрами запроса. Между добавлением или обновлением элемента может быть небольшая задержка, а когда он доступен в индексе.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок | Значение |
 |:------ |:----- |
 | Авторизация | Bearer {токен} (обязательный)  |
-| консистенцилевел | закончить. Этот заголовок и `$count` обязательные при использовании `$search` `$filter` с `$orderby` параметром Query. Он использует индекс, который может быть не последним в актуальном изменении объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`или применении `$filter` с параметром запроса `$orderby`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -60,7 +60,7 @@ GET /users
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-all-users"></a>Пример 1: получение всех пользователей
+### <a name="example-1-get-all-users"></a>Пример 1. Получение всех пользователей
 
 #### <a name="request"></a>Запрос
 
@@ -117,7 +117,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a>Пример 2: получение учетной записи пользователя с помощью имени для входа
+### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a>Пример 2. Получение учетной записи пользователя с помощью имени для входа
 
 Найдите учетную запись пользователя, используя имя для входа (также называемое локальной учетной записью).
 
@@ -174,7 +174,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-users-including-their-last-sign-in-time"></a>Пример 3: получение пользователей, включая время последнего входа
+### <a name="example-3-get-users-including-their-last-sign-in-time"></a>Пример 3. Получение пользователей с указанием времени их последнего входа в систему
 
 #### <a name="request"></a>Запрос
 
@@ -370,7 +370,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-6-get-only-a-count-of-users"></a>Пример 6: получение только количества пользователей
+### <a name="example-6-get-only-a-count-of-users"></a>Пример 6. Получение только количества пользователей
 
 #### <a name="request"></a>Запрос
 
@@ -419,7 +419,7 @@ Content-type: text/plain
 893
 
 
-### <a name="example-7-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 7: используйте $filter и $top, чтобы получить одного пользователя с отображаемым именем, начинающимся с "a", включая количество возвращаемых объектов.
+### <a name="example-7-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 7. Использование параметров $filter и $top для получения одного пользователя с отображаемым именем, которое начинается с "а", включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
@@ -481,7 +481,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-8-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>Пример 8: использование $search для получения пользователям с отображаемыми именами, содержащими "WA", в том числе от количества возвращаемых объектов.
+### <a name="example-8-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>Пример 8. Использование параметра $search для получения пользователей с отображаемыми именами, содержащими буквы "wa", включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
@@ -543,7 +543,7 @@ Content-type: application/json
 
 ```
 
-### <a name="example-9-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a>Пример 9: использование $search для получения пользователям с отображаемыми именами, содержащими буквы "WA" или "to", включая количество возвращаемых объектов
+### <a name="example-9-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a>Пример 9. Использование параметра $search для получения пользователей с отображаемыми именами, содержащими буквы "wa" или буквы "to", включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
