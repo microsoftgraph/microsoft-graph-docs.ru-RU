@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 162230dc7a197d9f7b927a0b25be734834a5322b
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 8c20ecd7452477519e5543dfd36a02aa5796cd38
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896933"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674071"
 ---
 # <a name="groupsetting-resource-type"></a>Тип ресурса groupSetting
 
@@ -34,7 +34,7 @@ ms.locfileid: "44896933"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|displayName|Строка| Отображаемое имя группы параметров, поступающих из связанного шаблона. |
+|displayName|String| Отображаемое имя группы параметров, поступающих из связанного шаблона. |
 |id|String| Уникальный идентификатор для этих параметров. Только для чтения. |
 |templateId|String| Уникальный идентификатор шаблона, который используется для создания этой группы параметров. Только для чтения. |
 |values|Коллекция [settingValue](settingvalue.md)| Коллекция пар "имя-значение". Должен содержать и задавать все параметры, определенные в шаблоне. |
@@ -63,7 +63,6 @@ ms.locfileid: "44896933"
   "templateId": "String",
   "values": [{"@odata.type": "microsoft.graph.settingValue"}]
 }
-
 ```
 
 

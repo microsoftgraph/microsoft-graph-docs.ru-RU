@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f9a9f89ff7350f4b76641a2a6f3cfb9f7f97679b
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: bf100a99d573c186efa64af1692250534a31c50a
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566374"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674094"
 ---
 # <a name="printer-create"></a>принтер: Create
 
@@ -23,13 +23,13 @@ ms.locfileid: "46566374"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
+В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать. Пользователь, вошедшего в систему, должен быть [администратором принтера](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| User.Read.All |
+|Делегированные (рабочая или учебная учетная запись)| Printer. Create, Printer. ReadWrite. ALL, Printer. FullControl. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ POST /print/printers/create
 |manufacturer|String|Производитель принтера.|Да|
 |model|String|Модель принтера.|Да|
 |фисикалдевицеид|String|UUID физического устройства принтера. Является обязательным, если `hasPhysicalDevice` свойство имеет значение true.|Нет|
-|хасфисикалдевице|Логический|True, если принтер имеет физическое устройство вывода, в противном случае — значение false. Если этот параметр опущен, значение по умолчанию — true.|Нет|
+|хасфисикалдевице|Boolean|True, если принтер имеет физическое устройство вывода, в противном случае — значение false. Если этот параметр опущен, значение по умолчанию — true.|Нет|
 |цертификатесигнингрекуест|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|Запрос подписи сертификата X. 509 (CSR) для сертификата, созданного и используемого принтером для идентификации.|Да|
 |коннекторид|String|Идентификатор соединителя, который выступает в качестве прокси-сервера для принтера.|Нет|
 

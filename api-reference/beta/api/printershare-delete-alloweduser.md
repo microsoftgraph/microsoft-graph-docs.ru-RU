@@ -1,18 +1,18 @@
 ---
-title: Удаление Алловедусер
+title: Удаление Алловедусер из Принтершаре
 description: Отозвать доступ указанного пользователя, чтобы отправить задания печати на связанный общий принтер.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9812f462561a04ffd88e0e927f58b34d963173d4
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 9660b15f486259ce657879df33df61d5fb3db346
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43807136"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674311"
 ---
-# <a name="delete-alloweduser"></a>Удаление Алловедусер
+# <a name="delete-alloweduser-from-printershare"></a>Удаление Алловедусер из Принтершаре
 
 Пространство имен: microsoft.graph
 
@@ -23,11 +23,11 @@ ms.locfileid: "43807136"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
+Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице. Пользователь, вошедшего в систему, должен быть [администратором принтера](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись)| Принтершаре. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -41,10 +41,10 @@ DELETE /print/printerShare/{id}/allowedUsers/{id}/$ref
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -59,7 +59,7 @@ DELETE /print/printerShare/{id}/allowedUsers/{id}/$ref
 DELETE https://graph.microsoft.com/beta/print/printerShare/{id}/allowedUsers/{id}/$ref
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {

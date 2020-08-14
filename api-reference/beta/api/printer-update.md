@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: fd44a74bd1a0a5a8c872f49515edce23c27d6907
-ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
+ms.openlocfilehash: 4040174e1f1ad0278dcdfcd1dd94dbe9b6d94b27
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024441"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674402"
 ---
 # <a name="update-printer"></a>Обновление принтера
 
@@ -23,15 +23,15 @@ ms.locfileid: "45024441"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать. 
+В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать. Пользователь, вошедшего в систему, должен быть [администратором принтера](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 Только приложение, которое зарегистрировало принтер, может обновлять принтер с помощью разрешений приложения.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)| Users. Read. ALL |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Printer. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)| Printer. ReadWrite. ALL, Printer. FullControl. ALL |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений| Printer.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ PATCH /print/printers/{id}
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация | Bearer {токен}. Обязательный. |
-| Content-Type  | `application/json`При использовании делегированных разрешений `application/ipp` при использовании разрешений приложения. Обязательный элемент.|
+| Content-Type  | `application/json` При использовании делегированных разрешений `application/ipp` при использовании разрешений приложения. Обязательный элемент.|
 
 ## <a name="request-body"></a>Текст запроса
 

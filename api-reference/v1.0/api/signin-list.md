@@ -2,15 +2,15 @@
 title: Перечисление входов
 description: Описывает метод List ресурса SignIn (Entity) из API Microsoft Graph.
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a18aae68f1dbd94b7af551d6f1dc0b896535176a
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 041a77a1a96ab8652e6efd7e34131bea4c334c99
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124492"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673977"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

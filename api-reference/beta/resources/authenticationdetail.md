@@ -2,15 +2,15 @@
 title: Тип ресурса Аусентикатиондетаил
 description: Предоставляет сведения о проверке подлинности для входа пользователя, например сведения о многофакторной проверке подлинности (MFA) и сведения о ПТА/ФС.
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cdfd2abff4d947f7b51a6be0fa8bb81c1413f9c1
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: a3fd5a9a98ad0d9405bce059d8d3a47cef969b98
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845297"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673723"
 ---
 # <a name="authenticationdetail-resource-type"></a>Тип ресурса Аусентикатиондетаил
 

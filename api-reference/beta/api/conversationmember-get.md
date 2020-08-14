@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 73f89ac24bedad9cfd632674040b288aac151f23
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: MT
+ms.openlocfilehash: 33e76189c13356b0746ce020576affa952abc994
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050754"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673809"
 ---
 # <a name="get-conversationmember"></a>Получение объекта conversationMember
 
@@ -26,11 +26,11 @@ ms.locfileid: "45050754"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)| Для ресурсов " **пользователь** " или " **чат** ": Chat. ReadBasic, Chat. Read, Chat. ReadWrite<br/><br/>Для ресурса **Channel** : Чаннелмембер. Read. ALL, Чаннелмембер. ReadWrite, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)| Для ресурса **user** или **chat**: Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>Для ресурса **channel**: ChannelMember.Read.All, ChannelMember.ReadWrite, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Для ресурсов " **пользователь** " или " **чат** ": Chat. ReadBasic. ALL, Chat. Read. ALL, Chat. ReadWrite. ALL<br/><br/>Для ресурса **Channel** : Member. Read. Group *, Чаннелмембер. Read. ALL, Чаннелмембер. ReadWrite. ALL, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Приложение| Для ресурса **user** или **chat**: не поддерживается.<br/><br/>Для ресурса **channel**: Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-> **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом](https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
@@ -53,7 +53,7 @@ GET /teams/{id}/channels/{id}/members/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

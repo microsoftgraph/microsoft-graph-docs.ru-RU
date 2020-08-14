@@ -3,14 +3,14 @@ title: Получение объекта signIn
 doc_type: apiPageType
 description: Получение объекта SignIn, содержащего все входные сведения о клиенте Azure Active Directory.
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c5cc845408d5aa3077d5150dee5a1ed560065a25
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: e1bbdbdc7790bf4310947f9e927f0d0eb44171e8
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123108"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674556"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -49,11 +49,11 @@ GET /auditLogs/signIns/{id}
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [SignIn](../resources/signin.md) в теле отклика.
 

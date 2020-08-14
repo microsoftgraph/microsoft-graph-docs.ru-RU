@@ -2,15 +2,15 @@
 title: Тип ресурса Аппликатионсигниндетаиледсуммари
 description: Представляет сводку по входу в приложение.
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 79dbe02f723c9c8912ce8a227a47d6f50260c330
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b67eae972137e168218070013952dae4690bf95a
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455278"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673721"
 ---
 # <a name="applicationsigninsummary-resource-type"></a>Тип ресурса Аппликатионсигнинсуммари
 

@@ -1,18 +1,18 @@
 ---
-title: Создание Алловедусер
+title: Создание Алловедусер для Принтершаре
 description: Предоставьте заданному пользователю доступ на отправку заданий печати в соответствующую общую папку принтера.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 3d73fb4066b04bf60b854ea03e9eed43dd2bf003
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: ba3f98ce6059a154bc462f27c9769ac74c99be7a
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216779"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674563"
 ---
-# <a name="create-alloweduser"></a>Создание Алловедусер
+# <a name="create-alloweduser-for-printershare"></a>Создание Алловедусер для Принтершаре
 
 Пространство имен: microsoft.graph
 
@@ -23,11 +23,11 @@ ms.locfileid: "44216779"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.
+Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице. Пользователь, вошедшего в систему, должен быть [администратором принтера](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись)| Принтершаре. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -45,7 +45,7 @@ POST /print/shares/{id}/allowedUsers/$ref
 ## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте ссылку на объект пользователя, используя `@odata.id` Формат, как показано в следующем примере.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `201 Created`.
 
 ## <a name="example"></a>Пример
@@ -83,7 +83,7 @@ Content-length: 66
 
 В теле запроса добавьте ссылку на объект пользователя, включив URI Microsoft Graph пользователя в `@odata.id` поле тела JSON.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
