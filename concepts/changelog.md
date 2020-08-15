@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d162d4278912f4a3ef3eb23de001915736f0c304
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: ece8059ee0a627ed679488516634216ec7e51f52
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674425"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757145"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -22,6 +22,12 @@ ms.locfileid: "46674425"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | бета | Добавлено свойство [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) для ресурса [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
+
+### <a name="calendar"></a>Календарь
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | бета | Добавлены свойства **cancelledOccurrences**, **exceptionOccurrences** и **occurrenceId** для объекта [event](/graph/api/resources/event?view=graph-rest-beta).
 
 ### <a name="change-notifications"></a>Уведомления об изменениях
 
@@ -45,6 +51,7 @@ ms.locfileid: "46674425"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | бета | Добавлены следующие свойства для [Условий соглашения об использовании](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
 | Дополнение | бета | Добавлен новый тип ресурса для [Условий соглашения об использовании](/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
+| Дополнение | бета | Добавлены внутренние и внешние спонсоры [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) для управления правами.  |
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
 
@@ -54,13 +61,14 @@ ms.locfileid: "46674425"
 | Дополнение | бета | Добавлен метод [getM365AppUserCounts](/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-beta). |
 | Дополнение | бета | Добавлен метод [getM365AppPlatformUserCounts](/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-beta). |
 
-### <a name="teamwork"></a>Командная работа 
+### <a name="teamwork"></a>Командная работа
 
 | **Тип изменения** | **Версия** | **Описание** |
 |:---|:---|:---|
 |Дополнение|бета|Добавлено свойство **contentBytes** для ресурса [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta).|
 |Дополнение|бета|Добавлено свойство **contentType** для ресурса [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta).|
 |Дополнение|бета|Добавлена поддержка отправки встроенных изображений для ресурса [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta).|
+|Дополнение|бета|Добавлено свойство **isMembershipLimitedToOwners** для ресурса [team](/graph/api/resources/team?view=graph-rest-beta).|
 
 ## <a name="july-2020"></a>Июль 2020 г.
 
@@ -174,6 +182,7 @@ ms.locfileid: "46674425"
 | Дополнение        | 1.0        | В [servicePrincipal](/graph/api/serviceprincipal-delta) добавлена возможность [delta query](delta-query-overview.md). |
 | Дополнение | Бета | Добавлен объект [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) для управления правами.  |
 | Дополнение        | Версия 1.0        | Добавлена возможность [запроса изменений](delta-query-overview.md) для [oauth2PermissionGrant](/graph/api/oauth2Permissiongrant-delta). |
+| Дополнение | бета | Добавлены операции обновления для управления правами [доступа к пакету](/graph/api/resources/accesspackage?view=graph-rest-beta), [доступа к каталогу пакетов](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta) и [доступа к политике назначений пакетов](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)|
 | Дополнение | Бета | Добавлено новое свойство **isAssignableToRole** в объект [group](/graph/api/resources/group?view=graph-rest-beta).|
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
@@ -1610,7 +1619,7 @@ ms.locfileid: "46674425"
 
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Дополнение        | 1.0  | Добавлены свойства **deletedItemCount** и **deletedItemSizeInBytes** для объекта [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta).|
+| Дополнение        | v1.0  | Добавлены свойства **deletedItemCount** и **deletedItemSizeInBytes** для объекта [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta).|
 | Дополнение        | 1.0  | Добавлено свойство **groupId** для объекта [office365GroupsActivityDetail](/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta).|
 | Дополнение        | 1.0  | Добавлено свойство **ownerPrincipalName** для объекта [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta).|
 | Дополнение        | 1.0  | Добавлено свойство **ownerPrincipalName** для объекта [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
@@ -2838,7 +2847,7 @@ ms.locfileid: "46674425"
 |Удаление|Бета-версия|Удален GET /groups/{id}/team/channels/{id}, используйте GET /teams/{id}/channels/{id}. |
 |Удаление|Бета-версия|Удален PATCH /groups/{id}/team/channels/{id}, используйте PATCH /teams/{id}/channels/{id}. |
 |Удаление|Бета-версия|Удален POST /groups/{id}/team/channels/{id}/chatthreads, используйте POST /teams/{id}/channels/{id}/chatthreads. |
-|Удаление|Бета|Удален GET /groups/{id}/team/channels, используйте GET /teams/{id}/channels. |
+|Удаление|бета|Удален GET /groups/{id}/team/channels, используйте GET /teams/{id}/channels. |
 |Удаление|Бета-версия|Удален DELETE /groups/{id}/channels/{id}, используйте DELETE /teams/{id}/channels/{id}. |
 |Удаление|Бета|Удален GET /groups/{id}/channels/{id}, используйте GET /teams/{id}/channels/{id}. |
 |Удаление|Бета-версия|Удален PATCH /groups/{id}/channels/{id}, используйте PATCH /teams/{id}/channels/{id}. |
@@ -4947,7 +4956,7 @@ ms.locfileid: "46674425"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Исправление             | 1.0        | Устранена неисправность, из-за которой при выполнении запросов createLink в OneDrive возникала ошибка 500: "Неподдерживаемый тип свойства расширения". |
+| Исправление             | v1.0        | Устранена неисправность, из-за которой при выполнении запросов createLink в OneDrive возникала ошибка 500: "Неподдерживаемый тип свойства расширения". |
 
 ## <a name="march-2016"></a>Март 2016 г.
 
