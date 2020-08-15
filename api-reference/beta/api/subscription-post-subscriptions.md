@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 43be4878353000d27a50b0f7215aa343f0a195c7
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 8f1392e8539f20c0480f9c4604119b5fdf4cbb16
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673828"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757302"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -51,7 +51,8 @@ ms.locfileid: "46673828"
 
 подписки **chatMessage** с разрешениями приложений включают данные ресурсов и требуют [шифрования](/graph/webhooks-with-resource-data). Если [енкриптионцертификате](../resources/subscription.md) не указан, создание подписки завершится с ошибками. Перед созданием подписки на **chatMessage** необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Примечание:** `/teams/allMessages` и `/chats/allMessages` в настоящее время вы можете использовать этот API без сборов, в зависимости от [условий использования API Майкрософт](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). Начиная с 2020 августа, он будет доступен только пользователям и клиентам, у которых есть [необходимые лицензии](/graph/teams-licenses). Так как `/teams/allMessages` и `/chats/allMessages` доставляют уведомления для всех пользователей в клиенте, все пользователи в клиенте должны иметь лицензии. В будущем корпорация Майкрософт может потребовать от вас или ваших клиентов взимать дополнительные сборы на основе объема данных, доступ к которым осуществляется через API.
+> **Примечание:** `/teams/allMessages` и `/chats/allMessages` в настоящее время вы можете использовать этот API без сборов, в зависимости от [условий использования API Майкрософт](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). Начиная с 2020 августа, он будет доступен только пользователям и клиентам, у которых есть [необходимые лицензии](/graph/teams-licenses). Поскольку `/teams/allMessages` и `/chats/allMessages` доставлять уведомления для всех пользователей в клиенте, необходимо лицензировать всех пользователей в клиенте, а попытки создать подписки без соответствующих лицензий приведут к возникновению ошибки 401.
+В будущем корпорация Майкрософт может потребовать от вас или ваших клиентов взимать дополнительные сборы на основе объема данных, доступ к которым осуществляется через API.
 
 ### <a name="driveitem"></a>driveItem
 
@@ -150,7 +151,7 @@ Content-type: application/json
 |[Почта](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[Знак](../resources/presence.md)| `/communications/presences/{id}` (один пользователь) `/communications/presences?$filter=id in ({id},{id}…)` (несколько пользователей)|
 |[пользователи](../resources/user.md);|`users`|
-|[Оповещение системы безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
+|[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
 > **Примечание:** Любой путь, начинающийся с, `me` можно также использовать `users/{id}` вместо `me` целевого определенного пользователя вместо текущего пользователя.
 

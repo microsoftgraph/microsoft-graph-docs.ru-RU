@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cb82ac88f1f81bf7d2f3238657818d0782ed6b60
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 5356a48aae90f22fdd54a54ed5fe7132598b9d42
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46510364"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757295"
 ---
 # <a name="connectedorganization-resource-type"></a>Тип ресурса Коннектедорганизатион
 
@@ -29,6 +29,12 @@ ms.locfileid: "46510364"
 |[Получение Коннектедорганизатион](../api/connectedorganization-get.md) | [коннектедорганизатион](connectedorganization.md) | Чтение свойств и связей объекта Коннектедорганизатион. |
 |[Обновление Коннектедорганизатион](../api/connectedorganization-update.md) | | Обновление Коннектедорганизатион. |
 |[Удаление Коннектедорганизатион](../api/connectedorganization-delete.md) |Нет | Удаление объекта Коннектедорганизатион. |
+|[Список Интерналспонсорс](../api/connectedorganization-list-internalsponsors.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка внутренних спонсоров Коннектедорганизатион. |
+|[Список Екстерналспонсорс](../api/connectedorganization-list-externalsponsors.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка внешних спонсоров Коннектедорганизатион. |
+|[Добавление Интерналспонсорс](../api/connectedorganization-post-internalsponsors.md) | Нет | Добавление пользователя или группы в внутренние спонсоры Коннектедорганизатион. |
+|[Добавление Екстерналспонсорс](../api/connectedorganization-post-externalsponsors.md) | Нет | Добавление пользователя или группы во внешние спонсоры Коннектедорганизатион. |
+|[Удаление Интерналспонсорс](../api/connectedorganization-delete-internalsponsors.md) | Нет | Удаление пользователя или группы из внутренних спонсоров Коннектедорганизатион. |
+|[Удаление Екстерналспонсорс](../api/connectedorganization-delete-externalsponsors.md) | Нет | Удаление пользователя или группы из внешних спонсоров Коннектедорганизатион. |
 
 ## <a name="properties"></a>Свойства
 

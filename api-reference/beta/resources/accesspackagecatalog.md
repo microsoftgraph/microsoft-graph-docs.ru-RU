@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 66b7939541ba57dafc3be852c82c89781fc82381
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e5066337ef88db6a036839ebcbfd454e7710f3a
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508536"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757207"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>Тип ресурса Акцесспаккажекаталог
 
@@ -28,6 +28,7 @@ ms.locfileid: "42508536"
 | [Список Акцесспаккажекаталогс](../api/accesspackagecatalog-list.md) | Коллекция [акцесспаккажекаталог](accesspackagecatalog.md) | Получение списка объектов акцесспаккажекаталог. |
 | [Создание Акцесспаккажекаталог](../api/accesspackagecatalog-post.md) | [акцесспаккажекаталог](accesspackagecatalog.md) | Создание нового объекта Акцесспаккажекаталог. |
 | [Получение Акцесспаккажекаталог](../api/accesspackagecatalog-get.md) | [акцесспаккажекаталог](accesspackagecatalog.md) | Чтение свойств и связей объекта Акцесспаккажекаталог. |
+| [Обновление Акцесспаккажекаталог](../api/accesspackagecatalog-update.md)|Нет | Обновление свойств объекта Акцесспаккажекаталог. |
 | [Удаление Акцесспаккажекаталог](../api/accesspackagecatalog-delete.md) | | Удаление Акцесспаккажекаталог. |
 | [Список ресурсов Акцесспаккажекаталог](../api/accesspackagecatalog-list-accesspackageresources.md) | Коллекция [акцесспаккажересаурце](accesspackageresource.md) | Получение списка объектов Акцесспаккажересаурце в каталоге. |
 | [Список ролей ресурсов Акцесспаккажекаталог](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | Коллекция [акцесспаккажересаурцероле](accesspackageresourcerole.md) | Получение списка объектов Акцесспаккажересаурцероле для ресурсов в каталоге. |
@@ -43,7 +44,7 @@ ms.locfileid: "42508536"
 |description|String|Описание каталога пакетов Access.|
 |displayName|Строка|Отображаемое имя каталога пакетов Access.|
 |id|String| Только для чтения.|
-|исекстерналливисибле|Логическое|Указывает, могут ли пользователи за пресети клиента запрашивать пакеты доступа в этом каталоге.|
+|исекстерналливисибле|Boolean|Указывает, могут ли пользователи за пресети клиента запрашивать пакеты доступа в этом каталоге.|
 |модифиедби|Строка|Имя участника-пользователя, который последним изменил этот ресурс. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 9f7d582c64e600846a17654623ca233d0132e6bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0a9a38750cf42172a9445764e40d683e2e337600
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521462"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757253"
 ---
 # <a name="profilephoto-resource-type"></a>Тип ресурса profilePhoto
 
@@ -18,7 +18,7 @@ ms.locfileid: "42521462"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Фотография профиля пользователя, группы или контакта Outlook, доступ к которым осуществляется с помощью Exchange Online или Azure Active Directory (AAD). Это двоичные данные, не представленные в кодировке base-64.
+Фотография профиля пользователя, группы или контакта Outlook, доступ к которым осуществляется с помощью Exchange Online или Azure Active Directory (AAD). Двоичные данные, не закодированные в Base – 64.
 
 Поддерживаемые размеры фотографий в формате HD для Exchange Online: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 и 648x648. В AAD фотографии могут быть любыми измерениями.
 
@@ -59,7 +59,6 @@ ms.locfileid: "42521462"
   "height": 240,
   "width": 240
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

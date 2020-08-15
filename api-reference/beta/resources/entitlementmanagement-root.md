@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: c1eb501cb9852d6d7733a6be3e78c4206326ddbe
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 96a91194c29c5207a3e450bd70e093ef74e56a85
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509835"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757288"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления обслуживанием Azure AD
 
@@ -47,12 +47,14 @@ ms.locfileid: "46509835"
 | [Список Акцесспаккажес](../api/accesspackage-list.md) | Коллекция [акцесспаккаже](accesspackage.md) | Получение списка объектов **акцесспаккаже** . |
 | [Создание Акцесспаккаже](../api/accesspackage-post.md) | [акцесспаккаже](accesspackage.md) | Создание нового объекта **акцесспаккаже** . |
 | [Получение Акцесспаккаже](../api/accesspackage-get.md) | [акцесспаккаже](accesspackage.md) | Чтение свойств и связей объекта **акцесспаккаже** . |
+| [Обновление Акцесспаккаже](../api/accesspackage-update.md)|Нет | Обновление свойств объекта **акцесспаккаже** . |
 | [Удаление Акцесспаккаже](../api/accesspackage-delete.md) | | Удаление **акцесспаккаже**. |
 | [Список Акцесспаккажересаурцеролескопес](../api/accesspackage-list-accesspackageresourcerolescopes.md) | Коллекция [акцесспаккажересаурцеролескопе](accesspackageresourcerolescope.md) | Получение списка объектов **акцесспаккажересаурцеролескопе** для пакета Access. |
 | [Создание Акцесспаккажересаурцеролескопе](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Создайте новый объект **акцесспаккажересаурцеролескопе** для пакета Access. |
 | [Список АкцесспаккажеассигнментполиЦиес](../api/accesspackageassignmentpolicy-list.md) | Коллекция [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Получение списка объектов **акцесспаккажеассигнментполици** . |
 | [Создание Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-post.md) | [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md)| Создание нового объекта **акцесспаккажеассигнментполици** . |
 | [Получение Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-get.md) | [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Чтение свойств и связей объекта **акцесспаккажеассигнментполици** . |
+| [Обновление Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-update.md)|[акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Обновление свойств объекта **акцесспаккажеассигнментполици** . |
 | [Удаление Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-delete.md) | | Удаление **акцесспаккажеассигнментполици**. |
 | [Список Акцесспаккажеассигнментрекуестс](../api/accesspackageassignmentrequest-list.md) | Коллекция [акцесспаккажеассигнментрекуест](accesspackageassignmentrequest.md) | Получение списка объектов **акцесспаккажеассигнментрекуест** . |
 | [Создание Акцесспаккажеассигнментрекуест](../api/accesspackageassignmentrequest-post.md) | [акцесспаккажеассигнментрекуест](accesspackageassignmentrequest.md) | Создание нового **акцесспаккажеассигнментрекуест**. |
@@ -63,6 +65,7 @@ ms.locfileid: "46509835"
 | [Список Акцесспаккажекаталогс](../api/accesspackagecatalog-list.md) | Коллекция [акцесспаккажекаталог](accesspackagecatalog.md) | Получение списка объектов **акцесспаккажекаталогс** . |
 | [Создание Акцесспаккажекаталог](../api/accesspackagecatalog-post.md) | [акцесспаккажекаталог](accesspackagecatalog.md) | Создание нового объекта **акцесспаккажекаталог** . |
 | [Получение Акцесспаккажекаталог](../api/accesspackagecatalog-get.md) | [акцесспаккажекаталог](accesspackagecatalog.md) | Чтение свойств и связей объекта **акцесспаккажекаталог** . |
+| [Обновление Акцесспаккажекаталог](../api/accesspackagecatalog-update.md)|Нет | Обновление свойств объекта **акцесспаккажекаталог** . |
 | [Удаление Акцесспаккажекаталог](../api/accesspackagecatalog-delete.md) | | Удаление **акцесспаккажекаталог**. |
 | [Список ресурсов Акцесспаккажекаталог](../api/accesspackagecatalog-list-accesspackageresources.md) | Коллекция [акцесспаккажересаурце](accesspackageresource.md) | Получение списка объектов **акцесспаккажересаурце** . |
 | [Список ролей ресурсов Акцесспаккажекаталог](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | Коллекция [акцесспаккажересаурцероле](accesspackageresourcerole.md) | Получение списка объектов **акцесспаккажересаурцероле** . |
@@ -73,7 +76,12 @@ ms.locfileid: "46509835"
 | [Получение Коннектедорганизатион](../api/connectedorganization-get.md) | [коннектедорганизатион](connectedorganization.md) | Чтение свойств и связей объекта **коннектедорганизатион** . |
 | [Обновление Коннектедорганизатион](../api/connectedorganization-update.md) |Нет | Обновление **коннектедорганизатион**. |
 | [Удаление Коннектедорганизатион](../api/connectedorganization-delete.md) |Нет | Удаление объекта **коннектедорганизатион**. |
-
+|[Список Интерналспонсорс](../api/connectedorganization-list-internalsponsors.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка внутренних спонсоров **коннектедорганизатион** . |
+|[Список Екстерналспонсорс](../api/connectedorganization-list-externalsponsors.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка внешних спонсоров **коннектедорганизатион** . |
+|[Добавление Интерналспонсорс](../api/connectedorganization-post-internalsponsors.md) | Нет | Добавление пользователя или группы в внутренние спонсоры **коннектедорганизатион** . |
+|[Добавление Екстерналспонсорс](../api/connectedorganization-post-externalsponsors.md) | Нет | Добавление пользователя или группы во внешние спонсоры **коннектедорганизатион** . |
+|[Удаление Интерналспонсорс](../api/connectedorganization-delete-internalsponsors.md) | Нет | Удаление пользователя или группы из внутренних спонсоров **коннектедорганизатион** . |
+|[Удаление Екстерналспонсорс](../api/connectedorganization-delete-externalsponsors.md) | Нет | Удаление пользователя или группы из внешних спонсоров **коннектедорганизатион** . |
 
 ## <a name="types"></a>Типы
 
@@ -83,7 +91,7 @@ ms.locfileid: "46509835"
 - [акцесспаккажесубжект](accesspackagesubject.md) — используется в [акцесспаккажеассигнмент](accesspackageassignment.md) в качестве пользователя темы с назначенным пакетом Access.
 - [идентитисаурце](identitysource.md) — используется в [коннектедорганизатион](connectedorganization.md), один из [азуреактиведиректоритенант](azureactivedirectorytenant.md), [домаинидентитисаурце](domainidentitysource.md) или [externalDomainFederation](externaldomainfederation.md).
 
-## <a name="see-also"></a>Дополнительные ресурсы:
+## <a name="see-also"></a>См. также
 
  - [Что такое управление обслуживанием Azure AD?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: dd70512db17df29685c4af2d8aa4c410a78642b0
-ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
+ms.openlocfilehash: 259a8fef5d8efaae126cd722695be404ca964149
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534441"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757211"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>Тип ресурса Акцесспаккажеассигнментполици
 
@@ -30,13 +30,14 @@ ms.locfileid: "42534441"
 | [Список АкцесспаккажеассигнментполиЦиес](../api/accesspackageassignmentpolicy-list.md) | Коллекция [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Получение списка объектов Акцесспаккажеассигнментполици. |
 | [Создание Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-post.md) | [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Создание нового объекта Акцесспаккажеассигнментполици. |
 | [Получение Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-get.md) | [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Чтение свойств и связей объекта Акцесспаккажеассигнментполици. |
+| [Обновление Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-update.md)|[акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Обновление свойств объекта Акцесспаккажеассигнментполици. |
 | [Удаление Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-delete.md) | | Удаление Акцесспаккажеассигнментполици. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|акцесспаккажеид|String|Идентификатор пакета Access.|
+|акцесспаккажеид|Строка|Идентификатор пакета Access.|
 |акцессревиевсеттингс|[ассигнментревиевсеттингс](assignmentreviewsettings.md)|Кто должен проверить и как часто назначений для пакета доступа из этой политики. Это свойство имеет значение null, если проверка не требуются.|
 |canExtend|Boolean|Указывает, может ли пользователь продлить продолжительность назначения пакета доступа после утверждения.|
 |createdBy|String|Только для чтения.|

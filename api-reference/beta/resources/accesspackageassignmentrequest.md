@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7d7fcf663abf15478b0c2745e9c60e1021d1ee7b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 908d1e4b2fd27895416058a1c8528126dad7ca6b
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508550"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757190"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>Тип ресурса Акцесспаккажеассигнментрекуест
 
@@ -37,10 +37,10 @@ ms.locfileid: "42508550"
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |id|String| Только для чтения.|
 |исвалидатиононли|Boolean|Имеет значение true, если запрос не обрабатывается для назначения.|
-|текста|String|Выставляемое по запросу обоснование.|
-|рекуестстате|String|Один из `Denied`, `Delivered` `PartiallyDelivered`, `Submitted` или `Scheduled`. Только для чтения.|
-|рекуестстатус|String|Дополнительные сведения о состоянии обработки запроса. Только для чтения.|
-|requestType|String|Один из `UserAdd`, `UserRemove` `AdminAdd`, `AdminRemove` или `SystemRemove`. Только для чтения.|
+|текста|Строка|Выставляемое по запросу обоснование.|
+|рекуестстате|Строка|Один из `PendingApproval` ,,,,, `Canceled`  `Denied` `Delivering` `Delivered` `PartiallyDelivered` , `Submitted` или `Scheduled` . Только для чтения.|
+|рекуестстатус|Строка|Дополнительные сведения о состоянии обработки запроса. Только для чтения.|
+|requestType|Строка|Один из `UserAdd` , `UserRemove` , `AdminAdd` `AdminRemove` или `SystemRemove` . Только для чтения.|
 |акцесспаккажеассигнмент|[акцесспаккажеассигнмент](accesspackageassignment.md)| Требуется создать назначение пакета Access.|
 
 ## <a name="relationships"></a>Связи
