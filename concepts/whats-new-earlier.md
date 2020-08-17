@@ -3,101 +3,197 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: f9d62486ba64e0ee597872276f1f62f869d8a632
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
-ms.translationtype: MT
+ms.openlocfilehash: 3a2f253ffdb80c2bc39907537e27d7399c573c2f
+ms.sourcegitcommit: 2e6fb1c0fef8cb3af1a72c115aa54902c71c99f5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038641"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46658251"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
 
-## <a name="may-2020-new-and-generally-available"></a>Май 2020: новый и обычно доступный
+## <a name="june-2020-new-and-generally-available"></a>Июнь 2020 г.: новые и общедоступные возможности
 
-### <a name="calendar--place"></a>Календарь | Место
-GA API для почтовых [мест](/graph/api/resources/place) в версии 1.0 используйте этот API в производственных приложениях для получения, обновления или удаления [комнаты](/graph/api/resources/room) или [списка помещений](/graph/api/resources/roomlist) в клиенте. [Узнайте больше](outlook-calendar-concept-overview.md#build-apps-with-location-awareness-and-provide-intelligent-context) об API мест.
+### <a name="cloud-communications--online-meeting"></a>Облачные коммуникации | Онлайн-собрание
+- Использование `Accept-Language` заголовка HTTP при [создании онлайнового собрания](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0) для предоставления объединенной информации на основе языковой среды.
+- Использование [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-1.0) для возврата онлайнового собрания с указанным значением **externalId** или его создание в случае отсутствия, чтобы упростить внедрение получившегося собрания в стороннем календаре.
 
-### <a name="change-notifications"></a>Уведомления об изменениях
-- Подпишитесь на уведомления об изменениях в Microsoft Cloud для государственных организаций США.
-
-### <a name="cloud-communications--call-records"></a>Облачные коммуникации | Записи звонков
-- GA в [API записей вызовов](/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0) — используйте ресурс [каллрекорд](/graph/api/resources/callrecord?view=graph-rest-1.0) для получения метаданных звонков и собраний по сети в Microsoft Teams и Skype.
-- Подпишитесь на [уведомления об изменении](/graph/webhooks) всех ресурсов **каллрекорд** в Организации.
-- [Перечислите сеансы](/graph/api/callrecords-session-list?view=graph-rest-1.0) в **каллрекорд**и при необходимости [разверните каждый сеанс, чтобы отобразить сегменты](/graph/api/callrecords-session-list?view=graph-rest-1.0#example-2-get-session-list-with-segments) в записи вызова.
-- Поддержка значений диапазона 60 ГГц ( `frequency60GHz` ) и `unknownFutureValue` диапазона Wi-Fi для конечной точки мультимедиа в сегменте.
-- Поддержка голосовой почты в качестве возможного типа конечной точки на стороне службы в [сегменте](/graph/api/resources/callrecords-segment)связи.
-
-### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
-Intune [можно](changelog.md#may-2020) обновить в версии 1.0.
-
-### <a name="graph-explorer"></a>Песочница Graph
-Используйте многие новые возможности [проводника Graph](https://developer.microsoft.com/en-us/graph/graph-explorer) , которые улучшают обучение и создание прототипов в песочнице. Например,
-- Просмотрите фрагменты кода, соответствующие введенному запросу REST API, в C#, Java, JavaScript и целевом языке C.
-- Войти в систему с помощью клиента, просмотреть и скопировать маркер доступа в ваше клиентское приложение REST.
-
-Для получения дополнительных сведений см. [новый проводник Graph](https://developer.microsoft.com/graph/blogs/new-graph-explorer-is-now-ga/) .
+### <a name="files"></a>Файлы
+- Улучшенная поддержка синхронизации:
+  - Использование свойства **pendingOperations** для определения [операций](/graph/api/resources/pendingoperations), которые могут обновить бинарное содержание файла [driveItem](/graph/api/resources/driveitem), ожидающего выполнения.
+  - [Восстановление](/graph/api/driveitem-restore) объекта **driveItem**, который был удален и находится в корзине OneDrive персональный.
+- Получение или настройка ориентации ресурса [photo](/graph/api/resources/photo). Настройка поддерживается в OneDrive персональный.
+- Использование защищенного алгоритма хэширования (SHA-256) для улучшения безопасности и целостности данных ресурса [file](/graph/api/resources/file).
+- Использование параметра `deferCommit` для откладывания окончательного создания при [передаче, как правило, большого файла](/graph/api/driveitem-createuploadsession) в OneDrive для бизнеса до тех пор, пока приложение не выполнит запрос на выполнение передачи.
+- Использование свойства **fileSize** для предоставления оценки как части параметра **item**, чтобы проверить квоту до [передачи файла](/graph/api/driveitem-createuploadsession) в OneDrive персональный.
+- Поиск [storagePlanInformation](/graph/api/resources/storageplaninformation) с помощью свойства **quota** ресурса [drive](/graph/api/resources/drive), чтобы проверить доступность планов с более высокими квотами на хранение.
 
 ### <a name="groups"></a>Группы
-- Синхронизация локального каталога с Azure Active Directory через Azure AD Connect теперь возвращает свойства **onPremisesDomainName**, **онпремисеснетбиоснаме** и **onPremisesSamAccountName** как часть ресурса [Group](/graph/api/resources/group?view=graph-rest-1.0) .
-- Подпишитесь на уведомления об изменении ресурсов [группы](/graph/api/resources/group) в Microsoft Cloud Китая под управлением 21vianet.
+Использование разрешений приложений `Group.Read.All` и `Group.ReadWrite.All` для получения ресурсов группы [беседа](/graph/api/resources/conversation) и [цепочки беседы](/graph/api/resources/conversationthread).
+
+### <a name="identity-and-access"></a>Удостоверение и доступ 
+- Общедоступная версия из двух наборов API для [защиты удостоверения](/graph/api/resources/identityprotectionroot): API [выявления рисков](/graph/api/resources/riskdetection) и [рискованных пользователей](/graph/api/resources/riskyuser).
+
+### <a name="security"></a>Безопасность
+- Отслеживание указанного ниже как свойств [оповещения](/graph/api/resources/alert?view=graph-rest-1.0):
+  - Идентификаторы инцидентов, связанных с оповещением.
+  - Идентификация [ресурса](/graph/api/resources/securityResource?view=graph-rest-1.0#securityresourcetype-values) как атакованного или как связанного ресурса в оповещении.
+  - Указание начального и конечного расположений [сетевого подключения](/graph/api/resources/networkconnection?view=graph-rest-1.0), связанных с оповещением.
+
+### <a name="sites-and-lists"></a>Сайты и списки
+Указание геолокационных данных в [определении столбца](/graph/api/resources/columndefinition) для ресурса [списка](/graph/api/resources/list) SharePoint.
+
+### <a name="teamwork"></a>Командная работа
+- Использование делегированного разрешения [AppCatalog.Read.All](/graph/permissions-reference#appcatalog-resource-permissions) для перечисления [приложений](/graph/api/resources/teamsapp?view=graph-rest-1.0) из каталога приложений Microsoft Teams.
+- [Получение информации о папке](/graph/api/channel-get-filesfolder) с сопоставлением вкладки **Файлы** [канала](/graph/api/resources/channel) Teams.
+- [Получение канала по умолчанию](/graph/api/team-get-primarychannel) с меткой **Общие** [команды](/graph/api/resources/team).
+
+
+## <a name="june-2020-new-in-preview-only"></a>Июнь 2020 г.: новые возможности только в предварительной версии
+
+### <a name="calendar"></a>Календарь
+Помимо отслеживания инкрементных изменений событий в **calendarView** (коллекции или событий, ограниченных начальными _и_ конечными данными), применяется функция [delta](/graph/api/event-delta?view=graph-rest-beta) к событиям в почтовом ящике пользователя или к событиям в календаре определенного пользователя.
+
+### <a name="cloud-communications--presence"></a>Облачные коммуникации | Присутствие
+[Получение статуса присутствия](/graph/api/presence-get?view=graph-rest-beta) всех пользователей в организации или определенного пользователя организации.
+
+### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
+- Указание [полей печати](/graph/api/resources/printmargin?view=graph-rest-beta) при настройке [документа для печати](/graph/api/resources/printdocument?view=graph-rest-beta).
+- Поддержка следующих [возможностей принтера](/graph/api/resources/printercapabilities?view=graph-rest-beta):
+  - направления подачи;
+  - печати диапазонов страниц;
+  - разрешение печати в точках на дюйм;
+  - максимальный размер очереди заданий печати в байтах;
+  - входные лотки;
+  - поля;
+  - разбор по копиям;
+  - масштабирование документов.
+- Поддержка разрешения печати (в точках на дюйм) и масштабирование документов как часть [настроек принтера по умолчанию](/graph/api/resources/printerdefaults?view=graph-rest-beta).
+- Поддержка следующих настроек [конфигурации документов](/graph/api/resources/printerdocumentconfiguration?view=graph-rest-beta):
+  - входные лотки;
+  - выходные лотки;
+  - размеры носителей;
+  - поля;
+  - типы носителей;
+  - финишная обработка, например сшивание или брошюрование;
+  - количество страниц на лист;
+  - многостраничный макет с указанием направления при размещении страниц на листе;
+  - разбор по копиям;
+  - масштабирование.
+- Расширение документов при [перечислении заданий печати](/graph/api/printer-list-jobs?view=graph-rest-beta).
+- [Регистрация принтера]() и использование ресурса [printerCreateOperation](/graph/api/resources/printercreateoperation?view=graph-rest-beta) для отслеживания и проверки регистрации принтера.
+- [Получение долгосрочной регистрации принтера](/graph/api/printoperation-get?view=graph-rest-beta) для текущего пользователя или клиента приложения.
+- Несколько переименований свойств и типов нумерации. Более подробные сведения приведены в обновлениях журнала изменений для облачной печати за [июнь](changelog.md#june-2020).
+
+### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
+Обновления Intune за [июнь](changelog.md#june-2020) в бета-версии.
+
+### <a name="education"></a>Образование
+- Возможность использовать делегированные разрешения `EduRoster.ReadBasic` для [получения](/graph/api/educationuser-get?view=graph-rest-beta) идентификатора [преподавателя](/graph/api/resources/educationteacher?view=graph-rest-beta) или [учащегося](/graph/api/resources/educationstudent?view=graph-rest-beta) во внешней исходной программе как свойство **externalId**.
+- Использование свойства **externalSource** для отслеживания значения `lms`, если [организация](/graph/api/resources/educationorganization?view=graph-rest-beta) или [класс](/graph/api/resources/educationclass?view=graph-rest-beta) в сфере образования созданы в системе управления обучением (LMS).
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
-- GA API-интерфейса субъектов-служб в версии 1.0 используйте ресурс [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) в производственных приложениях для программного управления экземплярами приложений и управления действиями, которые может выполнять приложение в клиенте. Можно контролировать, кто может использовать приложение, ресурсы, к которым приложение имеет доступ, например, добавлять учетные данные пароля, пошаговые сертификаты с истекшим сроком действия и управлять назначениями ролей приложений.
-- GA API [аппролеассигнмент](/graph/api/resources/appRoleAssignment?view=graph-rest-1.0) , который записывает назначение [аппроле](/graph/api/resources/approle?view=graph-rest-1.0) (представляющее `roles` утверждения в маркерах ID и маркерах доступа) [пользователю](/graph/api/resources/user?view=graph-rest-1.0), [группе](/graph/api/resources/group?view=graph-rest-1.0)или [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).
-- Использование Facebook в качестве поставщика удостоверений в Azure Active Directory.
-- Используйте делегированное разрешение или разрешение приложения, `AppRoleAssignment.ReadWrite.All` чтобы разрешить приложению управлять предоставлением разрешений на приложения любому API (включая Microsoft Graph) и назначениям приложений для любого приложения, соответственно или без пользователя, выполнившего вход в систему.
+- ИТ-специалисты могут использовать ресурсы [connector](/graph/api/resources/connector?view=graph-rest-beta). Это легкие агенты для подключения к [прокси приложения Azure AD](/azure/active-directory/manage-apps/what-is-application-proxy) и [внешней публикации локальных веб-приложений](/graph/api/resources/onpremisespublishing?view=graph-rest-beta), чтобы удаленные пользователи организации могли безопасно получить доступ к этим приложениям.
+- Управление [политикой проверки подлинности](/graph/api/resources/authenticationflowspolicy?view=graph-rest-beta) на уровне клиента для включения или отключения [регистрации с самообслуживанием](/graph/api/resources/selfservicesignupauthenticationflowconfiguration?view=graph-rest-beta) внешних пользователей.
+- [Подготовка учетной записи пользователя по требованию](/graph/api/synchronization-synchronizationjob-provision-on-demand?view=graph-rest-beta) и возможность указывать объекты для выполнения правил подготовки и синхронизации.
+
+### <a name="search"></a>Поиск
+- Использование улучшения [свойства](/graph/api/resources/property?view=graph-rest-beta) в [схеме](/graph/api/resources/schema?view=graph-rest-beta) **isRefinable** для включения фильтрации результатов поиска и более точного управления взаимодействием при поиске, а также **псевдонимов** и **меток** для повышения релевантности.
+- Возможность указать до 128 ресурсов **свойства** в **схеме**.
+- Использование [get externalItem](/graph/api/externalitem-get?view=graph-rest-beta) для диагностики.
+
+### <a name="users"></a>Пользователи
+- Использование свойства **userPurpose** [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) для выявления и дифференциации почтового ящика для одного пользователя от общего почтового ящика и почтового ящика оборудования в Exchange Online. 
+- Использование [настроек пользователей](/graph/api/resources/usersettings?view=graph-rest-beta) для [получения](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta) или [обновления](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta) [предпочитаемых языков и региональных настроек](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta).
+- Настройки пользователей — это взаимосвязь, доступная через [пользователя](/graph/api/resources/user?view=graph-rest-beta), которая обеспечивает единообразное взаимодействие с пользователем в разных приложениях за счет использования профиля Azure AD для применения одних и тех же предпочтений пользователя. См. статью [Чем отличаются пользовательские настройки от настроек почтового ящика](/graph/api/resources/user?view=graph-rest-beta#user-preferences-for-languages-and-regional-formats).
+
+
+## <a name="may-2020-new-and-generally-available"></a>Май 2020 г.: новые и общедоступные возможности
+
+### <a name="calendar--place"></a>Календарь | Место
+Общедоступная версия [API мест](/graph/api/resources/place) в версии 1.0. Используйте этот API в производственных приложениях, чтобы получить, обновить или удалить [помещение](/graph/api/resources/room) или [список помещений](/graph/api/resources/roomlist) в клиенте. [Узнайте больше](outlook-calendar-concept-overview.md#build-apps-with-location-awareness-and-provide-intelligent-context) об API мест.
+
+### <a name="change-notifications"></a>Уведомления об изменениях
+- Подпишитесь на уведомления об изменениях в Microsoft Cloud для государственных учреждений США.
+
+### <a name="cloud-communications--call-records"></a>Облачные коммуникации | Записи звонков
+- Общедоступная версия [API записи звонков](/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0). Используйте ресурс [callRecord](/graph/api/resources/callrecord?view=graph-rest-1.0) для получения метаданных звонков и онлайн-собраний в Microsoft Teams и Skype.
+- Подпишитесь на [уведомления об изменениях](/graph/webhooks) для отслеживания изменений всех ресурсов **callRecord** в организации.
+- [Список сеансов](/graph/api/callrecords-session-list?view=graph-rest-1.0) в **callRecord** и дополнительное [разворачивание каждого сеанса на сегменты списка](/graph/api/callrecords-session-list?view=graph-rest-1.0#example-2-get-session-list-with-segments) в записи звонка.
+- Поддержка значений диапазонов на 60 ГГц (`frequency60GHz`) и `unknownFutureValue` WiFi конечной точки мультимедиа в сегменте.
+- Поддержка голосовой почты в качестве возможного типа конечной точки на стороне службы в [сегменте](/graph/api/resources/callrecords-segment) связи.
+
+### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
+Обновления Intune за [май](changelog.md#may-2020) в версии 1.0.
+
+### <a name="graph-explorer"></a>Песочница Graph
+Используйте множество новых функций [песочницы Graph](https://developer.microsoft.com/ru-RU/graph/graph-explorer), которые улучшают обучение и создание прототипов в песочнице. Например:
+- Просматривайте фрагменты кода, соответствующие введенному запросу API REST, в C#, Java, JavaScript и Objective C.
+- Войдя в систему с помощью клиента, просматривайте и копируйте маркер доступа в свое избранное клиентское приложение для REST.
+
+Дополнительные сведения см. в статье [Новая песочница Graph теперь общедоступная](https://developer.microsoft.com/graph/blogs/new-graph-explorer-is-now-ga/).
+
+### <a name="groups"></a>Группы
+- При синхронизации локального каталога с Azure Active Directory с помощью Azure AD Connect теперь возвращаются свойства **onPremisesDomainName**, **onPremisesNetBiosName** и **onPremisesSamAccountName** в составе ресурса [group](/graph/api/resources/group?view=graph-rest-1.0).
+- Подпишитесь на уведомления об изменении для ресурсов [group](/graph/api/resources/group) в службе Microsoft Cloud для Китая, предоставляемой 21Vianet.
+
+### <a name="identity-and-access"></a>Удостоверение и доступ
+- Общедоступная версия API субъектов-служб в версии 1.0 Используйте ресурс [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) в производственных приложениях для программного управления экземплярами приложений и контроля того, что приложение может сделать в рамках вашего клиента. Вы можете управлять тем, кто может использовать приложение, к каким ресурсам у приложения есть доступ, таким как добавление учетных данных, обработка сертификатов с истекающим сроком действия, а также управление делегированными разрешениями и назначениями ролей приложения.
+- Общедоступная версия API [appRoleAssignment](/graph/api/resources/appRoleAssignment?view=graph-rest-1.0), который регистрирует назначение [appRole](/graph/api/resources/approle?view=graph-rest-1.0) (представляющее утверждение `roles` в маркерах идентификатора и маркерах доступа) [пользователю](/graph/api/resources/user?view=graph-rest-1.0), [группе](/graph/api/resources/group?view=graph-rest-1.0) или [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).
+- Используйте Facebook в качестве поставщика удостоверений в Azure Active Directory.
+- Используйте делегированное разрешение или разрешение приложения `AppRoleAssignment.ReadWrite.All`, чтобы разрешить приложению управлять предоставлением разрешений для разрешений приложений для любого API (включая Microsoft Graph) и назначений приложений для любого приложения, соответственно, при наличии вошедшего в систему пользователя или без него.
 
 
 ### <a name="microsoft-graph-sdks"></a>Пакеты SDK Microsoft Graph
-Ознакомьтесь с новыми рекомендациями SDK по следующим вопросам:
+См. новые рекомендации к SDK в отношении следующего:
 - [Разбиение на страницы](/graph/sdks/paging)
 - [Пакетная обработка](/graph/sdks/batch-requests)
 - [Отправка больших файлов в OneDrive](/graph/sdks/large-file-upload)
-- [Настройка клиента службы SDK с помощью компонентов промежуточного слоя HTTP](/graph/sdks/customize-client).
+- [Настройка клиента службы SDK с помощью компонентов ПО промежуточного слоя для HTTP](/graph/sdks/customize-client).
 
 ### <a name="teamwork"></a>Командная работа
-- Если ваш сценарий включает собрания по сети в Teams, ознакомьтесь с разделом новые рекомендации по [выбору](choose-online-meeting-api.md) между [API календаря](outlook-calendar-online-meetings.md) и [API облачных коммуникаций](cloud-communications-online-meetings.md) для создания собраний по сети и присоединения к ним.
-- [Отправка](/graph/api/channel-post-messages?view=graph-rest-1.0) сообщений и [ответ на них](/graph/api/channel-post-messagereply?view=graph-rest-1.0) в [канале](/graph/api/resources/channel?view=graph-rest-1.0).
-- Получение расположения OneDrive для бизнеса файлов для [канала](/graph/api/resources/channel?view=graph-rest-1.0)с помощью свойства навигации **филефолдер** .
+- Если ваш сценарий предполагает онлайн-собрания в Teams, см. рекомендации [ Как выбрать](choose-online-meeting-api.md) между [API календаря](outlook-calendar-online-meetings.md) и [API облачных средств обмена данными](cloud-communications-online-meetings.md) для создания онлайн-собраний и подключения к ним.
+- [Отправка сообщений](/graph/api/channel-post-messages?view=graph-rest-1.0) и [ответ](/graph/api/channel-post-messagereply?view=graph-rest-1.0) на сообщения в [канале](/graph/api/resources/channel?view=graph-rest-1.0).
+- Получите расположение OneDrive для бизнеса файлов для [канала](/graph/api/resources/channel?view=graph-rest-1.0), используя свойство навигации**fileFolder**.
 
 ### <a name="teamwork--shifts"></a>Командная работа | Смены
-Конец [API смен](/graph/api/resources/shift?view=graph-rest-1.0) в версии 1.0: Используйте этот API в производственных приложениях для создания, обновления и управления расписаниями рабочих процессов задействование, чтобы обеспечить их эффективное общение и сотрудничество.
+Общедоступная версия [shifts API](/graph/api/resources/shift?view=graph-rest-1.0) в версии 1.0. Используйте этот API в производственных приложениях для создания, обновления и управления расписаниями сотрудников без компьютеров, чтобы обеспечить их взаимодействие и эффективность совместной работы.
 
 ### <a name="users"></a>Пользователи
-- Подпишитесь на уведомления об изменении [пользовательских](/graph/api/resources/user) ресурсов в Microsoft Cloud Китая под управлением 21vianet.
-- Отслеживайте состояние и дату и время последнего изменения состояния внешнего пользователя, который был [приглашен](/graph/api/invitation-post?view=graph-rest-1.0) на присоединение к Организации с помощью свойств **свойства** и **екстерналусерстатечанжедатетиме** ресурса **User** .
+- Подпишитесь на уведомления об изменении для ресурсов [user](/graph/api/resources/user) в службе Microsoft Cloud для Китая, предоставляемой 21Vianet.
+- Отслеживайте состояние и дату/время последнего изменения состояния внешнего пользователя, который был[приглашен](/graph/api/invitation-post?view=graph-rest-1.0) присоединиться к организации, с помощью свойств **externalUserState** и **externalUserStateChangeDateTime** ресурса **user**.
 
-## <a name="may-2020-new-in-preview-only"></a>Май 2020: новый только предварительный просмотр
+## <a name="may-2020-new-in-preview-only"></a>Май 2020 г.: новые возможности только в предварительной версии
 
 ### <a name="change-notifications"></a>Уведомления об изменениях
-- Используйте в формальном схематизированные типы [чанженотификатион](/graph/api/resources/changenotification?view=graph-rest-beta) и [чанженотификатионколлектион](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) для обработки уведомлений об изменении ресурсов. 
-- Отслеживайте, находятся ли уведомления в последовательности, или если отсутствует уведомление с помощью свойства **SequenceNumber** ресурса **чанженотификатион** .
+- Используйте формально схематизированные типы [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) и [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) для обработки уведомлений об изменении ресурса. 
+- Отслеживайте, находится ли уведомление в последовательности или утеряно, используя свойство **sequenceNumber** в ресурсе **changeNotification**.
 
 ### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
-- Ресурсы [принтера](/graph/api/resources/printer?view=graph-rest-beta) и [принтершаре](/graph/api/resources/printershare?view=graph-rest-beta) теперь хранятся в четном виде и имеют одинаковые свойства.
-- Некоторые свойства и имена типов очищаются в общих папках принтера:
-  - Используйте свойство **Shared** навигации для [Print](/graph/api/resources/print?view=graph-rest-beta) , чтобы получить список общих папок принтера, зарегистрированных в клиенте. 
-  - Подробные сведения [можно](changelog.md#may-2020) найти в журнале изменений в журнале.
+- Ресурсы [printer](/graph/api/resources/printer?view=graph-rest-beta) и [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) теперь аналогичны и имеют одинаковые свойства.
+- Очищены некоторые имена свойств и типов вокруг общих принтеров:
+  - Чтобы получить список общих принтеров, зарегистрированных в клиенте, используйте свойство навигации **shared** в [печати](/graph/api/resources/print?view=graph-rest-beta). 
+  - Дополнительные сведения см. в журнале изменений за[май](changelog.md#may-2020).
 
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
-Intune [может](changelog.md#may-2020) обновляться в бета-версии.
+Обновления Intune за [май](changelog.md#may-2020) в бета-версии.
 
 ### <a name="groups"></a>Группы
-- [Оценка](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta) того, является ли пользователь или устройство участником динамической группы, с помощью существующего правила для [группы](/graph/api/resources/group?view=graph-rest-beta) или указанного правила. [Динамическое членство на основе правил](/azure/active-directory/users-groups-roles/groups-dynamic-membership) снижает затраты на администрирование добавления и удаления участников.
-- При создании [группы](/graph/api/resources/group?view=graph-rest-beta)Microsoft 365 настройте поведение группы, указав ее в свойстве **ресаурцебехавиороптионс** . Например, разрешите участникам отправлять, подписываться на беседу, отключать приветственные сообщения и скрывать группу в Outlook.
-- Укажите ресурсы для подготовки в свойстве **ресаурцепровисионингоптионс** , которые обычно не входят в создание [группы](/graph/api/resources/group?view=graph-rest-beta) по умолчанию. В настоящее время поддерживается предоставление [группы в качестве группы с возможностями](/graph/api/resources/team?view=graph-rest-beta) Microsoft Teams.
+- [Оцените](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta), является ли (может являться) пользователь или устройство членом динамической группы, используя существующее правило для [группы](/graph/api/resources/group?view=graph-rest-beta) или указанное правило. [Динамическое членство на основе правила](/azure/active-directory/users-groups-roles/groups-dynamic-membership) снижает затраты на администрирование добавления и удаления участников.
+- В Microsoft 365 при создании [группы](/graph/api/resources/group?view=graph-rest-beta) настройте поведение группы, указав варианты поведения в свойстве **resourceBehaviorOptions**. Например, вы можете разрешить участникам публиковать записи, подписывать новых участников в беседы, отключать приветственные сообщения электронной почты и скрывать группу в Outlook.
+- Укажите ресурсы для подготовки в свойстве **resourceProvisioningOptions**, которые обычно не входят в объем создания [группы](/graph/api/resources/group?view=graph-rest-beta) по умолчанию. В настоящее время поддерживается подготовка группы в качестве [команды](/graph/api/resources/team?view=graph-rest-beta) с возможностями Microsoft Teams.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
-- Применяйте системные параметры запросов OData ( `$count` , `$filter` , `$search` ) при извлечении коллекций сущностей, являющихся производными от [directoryObject](). Можно [выполнить поиск определенных маркеров](/graph/query-parameters?#using-search-on-directory-object-collections) в свойствах **DisplayName** и **Description** для этих сущностей и использовать приведение OData для обрезки результатов **directoryObject** до определенных производных типов. Более подробную информацию можно найти в [статье Создание расширенных запросов в Microsoft Graph с помощью $Count, $Filter, $Search и $OrderBy](https://developer.microsoft.com/en-us/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
-- В рамках [API защиты удостоверений](/graph/api/resources/identityprotection-root?view=graph-rest-beta)используйте свойство **рискевенттипе** , чтобы [получить тип обнаруженного риска](/graph/api/riskdetection-get?view=graph-rest-beta), или [Получите тип риска в журнале пользователя](/graph/api/riskyuser-list-history?view=graph-rest-beta). Не используйте свойство **рисктипе** , так как оно является устаревшим.
-- Укажите типы клиентских приложений в свойстве **клиентапптипес** [набора условий](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) для [политики условного доступа](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
-- Используйте делегированное разрешение, `EntitlementManagement.Read.All` чтобы разрешить приложению считывать пакеты доступа и связанные ресурсы управления обслуживанием от имени пользователя, выполнившего вход в систему.
-- Используйте делегированные разрешения или разрешения приложения `Application.Read.All` , а `Application.ReadWrite.All` также [перечислите приложения](/graph/api/application-list?view=graph-rest-beta) в Организации.
-- Управление параметрами авторизации в Azure AD с помощью типа ресурса [аусоризатионполици](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) .
+- Применяйте параметры системного запроса OData (`$count`, `$filter`, `$search`) при получении коллекций сущностей, которые являются производными [directoryObject](). Вы можете выполнить [поиск определенных маркеров](/graph/query-parameters?#using-search-on-directory-object-collections) в свойствах **displayName** и **description** этих сущностей, а также использовать OData cast для обрезки результатов **directoryObject** до определенных производных типов. Подробные сведения приведены в статье [Создание расширенных запросов в Microsoft Graph с использованием атрибутов $count, $filter, $search и $orderby](https://developer.microsoft.com/ru-RU/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
+- В рамках [API защиты удостоверений](/graph/api/resources/identityprotection-root?view=graph-rest-beta) используйте свойство **riskEventType**, чтобы [получить тип определенного риска](/graph/api/riskdetection-get?view=graph-rest-beta) или [получить тип риска в журнале пользователя](/graph/api/riskyuser-list-history?view=graph-rest-beta). Не используйте свойство **riskType**, поскольку оно устарело.
+- Укажите типы клиентского приложения в свойстве **clientAppTypes** [набора свойств](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) для [политики условного доступа](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
+- Используйте делегированное разрешение `EntitlementManagement.Read.All`, чтобы разрешить приложению считывание пакетов доступа, а также связанных ресурсов по управлению правами от имени пользователя, выполнившего вход.
+- Используйте делегированные разрешения или разрешения приложения `Application.Read.All` и `Application.ReadWrite.All`, чтобы [перечислить приложения](/graph/api/application-list?view=graph-rest-beta) в организации.
+- Управляйте параметрами авторизации в Azure AD с использованием типа ресурса [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta).
 
 ### <a name="teamwork"></a>Командная работа
-- Приложения Teams, [поддерживающие единый вход (SSO)](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) , могут указывать значение `WebApplicationInfo.id` из манифеста приложения Teams в свойстве **азуреадаппид** объекта [теамсаппдефинитион](/graph/api/resources/teamsappdefinition?view=graph-rest-beta).
-- Используйте [детально детализированные разрешения](/graph/permissions-reference#teams-resource-specific-consent-permissions) для доступа к ресурсам [Team](/graph/api/resources/team?view=graph-rest-beta) и [Channel](/graph/api/resources/channel?view=graph-rest-beta) .
+- Приложения Teams, [поддерживающие единый вход (SSO),](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) могут указывать `WebApplicationInfo.id` из манифеста приложения Teams в свойстве **azureADAppId** в [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta).
+- Используйте [детализированные разрешения](/graph/permissions-reference#teams-resource-specific-consent-permissions) для доступа к ресурсам [team](/graph/api/resources/team?view=graph-rest-beta) и [channel](/graph/api/resources/channel?view=graph-rest-beta).
 
 
 ## <a name="april-2020-new-and-generally-available"></a>Апрель 2020 г.: новые и общедоступные возможности
@@ -114,10 +210,10 @@ Intune [может](changelog.md#may-2020) обновляться в бета-в
 
 ### <a name="files"></a>Файлы
 - [Извлекайте](/graph/api/driveitem-checkout?view=graph-rest-1.0) и [возвращайте](/graph/api/driveitem-checkin?view=graph-rest-1.0) файлы в OneDrive, чтобы управлять их обновлением и делать обновления доступными для других пользователей.
-- Применение необязательных параметров и даты истечения срока действия к ссылке " [пригласить](/graph/api/driveitem-invite?view=graph-rest-1.0) " и " [Создание ссылки для совместного доступа](/graph/api/driveitem-createlink?view=graph-rest-1.0) " для предоставления общего доступа к [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).
-- Получение или установка пароля и даты истечения срока действия [разрешения](/graph/api/resources/permission?view=graph-rest-1.0), а также отслеживание [набора удостоверений](/graph/api/resources/identityset?view=graph-rest-1.0) пользователей, которым предоставлено разрешение на общий доступ к **driveItem**.
-- Получение [разрешения](/graph/api/resources/permission?view=graph-rest-1.0) для [элемента общего диска](/graph/api/resources/shareddriveitem?view=graph-rest-1.0) с помощью свойства навигации **разрешений** .
-- Ограничьте для пользователей, имеющих [ссылку для совместного доступа](/graph/api/resources/sharinglink?view=graph-rest-1.0) , только просматривать и загружать содержимое общих**driveItem** в OneDrive для бизнеса или SharePoint.
+- Применяйте необязательный пароль и дату/время истечения срока действия в качестве параметров действий[пригласить](/graph/api/driveitem-invite?view=graph-rest-1.0) и [создать ссылку совместного доступа](/graph/api/driveitem-createlink?view=graph-rest-1.0) для совместного доступа к [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).
+- Получите или задайте пароль и дату/время истечения срока действия [разрешения](/graph/api/resources/permission?view=graph-rest-1.0), а также отслеживайте [identitySet](/graph/api/resources/identityset?view=graph-rest-1.0) пользователей, которым предоставлено разрешение на совместный доступ к **driveItem**.
+- Получите [разрешение](/graph/api/resources/permission?view=graph-rest-1.0) для[общего элемента диска](/graph/api/resources/shareddriveitem?view=graph-rest-1.0), используя свойство навигации **permission**.
+- Ограничьте действия пользователей со [ссылкой совместного доступа](/graph/api/resources/sharinglink?view=graph-rest-1.0) только просмотром без возможности скачивания содержимого общего элемента**driveItem** в OneDrive для бизнеса или в SharePoint.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 - Чтобы управлять ролями и назначать доступ к ресурсам в провайдерах управления доступом на основе ролей (RBAC), таких как Microsoft Intune, используйте [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-1.0). Ресурс **unifiedRoleAssignmentMultiple** поддерживает определение одной роли в массиве областей и назначение роли для нескольких субъектов (например, пользователей).
@@ -128,8 +224,8 @@ Intune [может](changelog.md#may-2020) обновляться в бета-в
 
 ### <a name="sites-and-lists"></a>Сайты и списки
 - [Список сайтов](/graph/api/sites-list-followed?view=graph-rest-1.0), на которые подписан пользователь.
-- Определите географический регион [семейства веб-сайтов](/graph/api/resources/sitecollection?view=graph-rest-1.0) с помощью свойства **даталокатионкоде** .
-- Определите клиент для файла, папки или другого элемента в SharePoint, обратившись к свойству **tenantId** , которое является частью **sharepointIds** [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).
+- Определите географическую область [семейства веб-сайтов](/graph/api/resources/sitecollection?view=graph-rest-1.0) с помощью свойства **dataLocationCode**.
+- Определите клиента файла, папки или другого элемента в SharePoint, путем доступа к свойству **tenantId**, которое является частью **sharepointIds** в [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).
 
 ## <a name="april-2020-new-in-preview-only"></a>Апрель 2020 г.: новые возможности только в предварительной версии
 
@@ -176,7 +272,7 @@ Intune [может](changelog.md#may-2020) обновляться в бета-в
 - Используйте делегированное разрешение `User.ManageIdentities.All`, чтобы разрешить приложению считывать, обновлять и удалять удостоверения, связанные с учетной записью пользователя, к которой имеет доступ зарегистрированный пользователь. Используйте это разрешение на уровне приложения без зарегистрированного пользователя. Это позволяет приложению [определить](/graph/api/user-update?view=graph-rest-1.0), с помощью каких удостоверений пользователь может войти.
 
 ### <a name="reports"></a>Отчеты
-Использование администратора службы Teams и администратора служб Teams в качестве обслуживаемых ролей пользователей позволяет приложениям читать отчеты об использовании служб Microsoft 365 от имени пользователя, а также [формы авторизации, делегированные пользователю](reportroot-authorization.md). 
+Используйте Администратор службы Teams и Администратор связи Teams в качестве принятых ролей пользователя, чтобы приложения могли читать отчеты об использовании службы Microsoft 365 от имени пользователя в качестве [форм делегированной пользователем авторизации](reportroot-authorization.md). 
 
 ### <a name="sites"></a>Сайты
 - Предоставляйте пользователям возможность [отслеживать](/graph/api/site-follow?view=graph-rest-1.0) или [прекращать отслеживание](/graph/api/site-unfollow?view=graph-rest-1.0) сайтов SharePoint. 
@@ -245,7 +341,7 @@ Intune [может](changelog.md#may-2020) обновляться в бета-в
 Обновления Intune за [Февраль](changelog.md#february-2020)
 
 ### <a name="groups"></a>Группы
-Используйте метод [ассигнлиценсе](/graph/api/group-assignlicense?view=graph-rest-beta) для назначения лицензий на продукты, такие как Microsoft 365 или Enterprise Mobility + Security, в группу. Поскольку Azure AD обеспечивает назначение лицензий членам группы, для участников, вступающих в группу или покидающих ее, больше не требуется управление лицензиями на индивидуальном уровне.
+Используйте метод [assignLicense](/graph/api/group-assignlicense?view=graph-rest-beta), чтобы назначить лицензии для продуктов, таких как Microsoft 365 или Enterprise Mobility + Security, группе. Поскольку Azure AD обеспечивает назначение лицензий членам группы, для участников, вступающих в группу или покидающих ее, больше не требуется управление лицензиями на индивидуальном уровне.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 - Установите параметры запроса, утверждения и проверки при создании [политики назначения пакетов доступа](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta).
@@ -292,7 +388,7 @@ API аналитики имеет общедоступное состояние.
 - [к которым предоставлен доступ](/graph/api/insights-list-shared?view=graph-rest-1.0) пользователю или пользователем.
 
 ### <a name="reports"></a>Отчеты
-Чтобы получить отчеты об использовании Microsoft 365 с помощью разрешений, делегированных пользователем, администраторам необходимо назначить пользователю роль ограниченного администратора Azure AD. Это может быть одна из следующих ролей: администратор организации, администратор Exchange, администратор SharePoint, администратор Lync, глобальный читатель или читатель отчетов. Для получения дополнительных сведений см. [авторизация для API для чтения отчетов об использовании Microsoft 365](reportroot-authorization.md) .
+Чтобы получать отчеты об использовании Microsoft 365 с помощью разрешений, делегированных пользователем, администраторам необходимо назначить пользователю роль администратора Azure AD с ограниченными правами. Это может быть одна из следующих ролей: администратор организации, администратор Exchange, администратор SharePoint, администратор Lync, глобальный читатель или читатель отчетов. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](reportroot-authorization.md).
 
 ### <a name="toolkit"></a>Набор средств
 Выпущен набор средств Microsoft Graph версии 1.1. Список улучшений и исправлений ошибок см. в [разделе за декабрь 2019 г.](changelog.md#december-2019) журнала изменений.
@@ -325,7 +421,7 @@ API аналитики имеет общедоступное состояние.
 - Использование разрешения приложения Group.Create для создания групп без необходимости входа пользователя.
 - Для указанной [группы](/graph/api/resources/group?view=graph-rest-1.0) [проверка участия](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) в других группах или ролях каталога.
 
-### <a name="identity-and-access"></a>Идентификация и доступ
+### <a name="identity-and-access"></a>Удостоверение и доступ
 - Регистрация [приложений](/graph/api/resources/application?view=graph-rest-1.0), проходящих проверку подлинности в Azure Active Directory (Azure AD). Используйте делегированные [разрешения](/graph/permissions-reference#application-resource-permissions), Application.Read.All и Application.ReadWrite.All, или разрешение приложения, Application.Read.All.
 - Для указанного [устройства](/graph/api/resources/device?view=graph-rest-1.0) [проверка участия](/graph/api/device-checkmemberobjects?view=graph-rest-1.0) в других группах или ролях каталога.
 
@@ -386,7 +482,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 
 ## <a name="october-2019-new-and-generally-available"></a>Октябрь 2019 г.: новые и общедоступные возможности
 
-### <a name="identity-and-access"></a>Удостоверение и доступ
+### <a name="identity-and-access"></a>Идентификация и доступ
 - Использование [контактов организации](/graph/api/resources/orgcontact?view=graph-rest-1.0) в рабочих приложениях. Контакты организации находятся под управлением администраторов организации и синхронизируются из локальной службы каталогов Active Directory или из Exchange Online.
 - Настройка [проверки подлинности на основе сертификатов](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started) в [организации](/graph/api/resources/organization?view=graph-rest-1.0).
 - Добавление и удаление [учетных данных с паролем](/graph/api/resources/passwordcredential?view=graph-rest-1.0) для [приложений](/graph/api/resources/application?view=graph-rest-1.0).
@@ -513,9 +609,9 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 
 ### <a name="reports"></a>Отчеты
 - Получите дополнительные [данные об использовании почтового ящика](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0) касательно числа и размера удаленных элементов.
-- Отслеживайте идентификаторы групп Microsoft 365 при [получения сведений о действиях в группах](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0).
+- Отслеживайте идентификаторы групп Microsoft 365 при [получении сведений о действиях групп](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0).
 - Отслеживайте имя субъекта-владельца при получении [сведений об использовании хранилища OneDrive учетной записью](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0) и [сведений об использовании сайта SharePoint](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0).
-- Получение числа активных и неактивных пользователей в Microsoft 365 при [получении отчета о счетчиках пользователей для службы microsoft 365](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0).
+- Узнайте число активных и неактивных пользователей в Microsoft 365 при [получении отчета о количестве пользователей в отдельных службах Microsoft 365](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0).
 
 ### <a name="security"></a>Безопасность
 - Используйте новую [надстройку Microsoft Graph Security API для Splunk](https://aka.ms/graphsecuritysplunkaddon), чтобы передавать оповещения системы безопасности и аналитику из различных продуктов партнеров в Splunk, облегчая сопоставление их данных по безопасности в режиме реального времени. Дополнительные сведения см. в [объявлении](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Introducing-the-new-Microsoft-Graph-Security-API-add-on-for/ba-p/815972). 
@@ -542,7 +638,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 - Администраторы могут [просматривать обзоры доступа](/graph/api/accessreview-list?view=graph-rest-beta), чтобы эффективно проверять членство в группах, доступ к корпоративным приложениям и назначения ролей. Регулярные проверки доступа позволяют гарантировать, что только уполномоченные люди получают постоянный доступ к ресурсам определенными способами.
 
 ### <a name="social-and-workplace-intelligence"></a>Социальная и рабочая аналитика
-Конечные пользователи могут использовать приложение Microsoft 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights) , чтобы получить сведения об управлении временем, совместной работе и балансировке сроков работы. Теперь с помощью [API аналитики](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) можно интегрировать данные о времени, потраченном на рабочие задачи (например, звонки, чаты и электронную почту), чтобы повысить продуктивность пользователя и улучшить его самочувствие. 
+Пользователи могли использовать приложение [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights) Microsoft 365 для получения аналитических сведений о распределении рабочего времени, совместной работе и балансе между трудовой и личной жизнью. Теперь с помощью [API аналитики](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) можно интегрировать данные о времени, потраченном на рабочие задачи (например, звонки, чаты и электронную почту), чтобы повысить продуктивность пользователя и улучшить его самочувствие. 
 
 
 ## <a name="july-2019-new-and-generally-available"></a>Июль 2019 г.: новые и общедоступные возможности 
@@ -551,7 +647,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 Теперь имеются фрагменты кода Objective-C для всех статей по API в справочных материалах для версии 1.0 и бета-версии. См. пример Objective-C для [получения события](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example).
 
 ### <a name="group"></a>Группа
-- Используйте функцию [валидатепропертиес](/graph/api/group-validateproperties?view=graph-rest-1.0) , чтобы убедиться, что отображаемое имя или псевдоним почты существующей группы Microsoft 365 соответствует политикам именования.
+- Используйте функцию [validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0), чтобы отображаемое имя или почтовый псевдоним существующей группы Microsoft 365 соответствовали политикам именования.
 - Кроме того, перед созданием группы вы можете использовать функцию [validateProperties](/graph/api/directoryobject-validateproperties?view=graph-rest-1.0) для объекта [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), чтобы сначала проверить имена.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
@@ -626,9 +722,9 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 - Разностный запрос и добавления свойств для [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta) и [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta).
 
 ### <a name="group"></a>Группа
-Получение [меток конфиденциальности](/graph/api/resources/assignedlabel?view=graph-rest-beta) для защиты конфиденциальных данных группы Microsoft 365 и соответствие политикам соответствия требованиям. Эти метки являются объектами [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta), опубликованными администраторами в Центре безопасности и соответствия требованиям Microsoft 365, в рамках возможностей Microsoft Information Protection. 
+Получите [метки конфиденциальности](/graph/api/resources/assignedlabel?view=graph-rest-beta), чтобы обеспечить защиту конфиденциальных данных группы Microsoft 365 и выполнение политик в отношении соответствия требованиям. Эти метки являются объектами [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta), опубликованными администраторами в Центре безопасности и соответствия требованиям Microsoft 365, в рамках возможностей Microsoft Information Protection. 
 
-### <a name="identity-and-access"></a>Удостоверение и доступ
+### <a name="identity-and-access"></a>Удостоверения и доступ
 - Получите экземпляр [приложения](/graph/api/resources/applicationtemplate?view=graph-rest-beta) или добавьте экземпляр из коллекции приложений Azure AD в ваш каталог в качестве шаблона.
 - Получите журнал всех [событий подготовки](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta) каталога в клиенте.
 - Получите сведения об [обнаруженном пользователе или рисках входа в систему](/graph/api/resources/riskdetection?view=graph-rest-beta) в среде Azure AD. Эта функциональность обнаружения рисков является частью Azure AD Identity Protection (Защиты идентификации Azure AD).
@@ -657,7 +753,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 ### <a name="calendar"></a>Календарь
 [Получение сведений о доступности](outlook-get-free-busy-schedule.md)
 
-### <a name="identity-and-access"></a>Удостоверение и доступ
+### <a name="identity-and-access"></a>Удостоверения и доступ
 [Поставщики удостоверений](/graph/api/resources/identityprovider?view=graph-rest-1.0)
 [Руководство по улучшенной проверке подлинности](/graph/auth)
 [Миграция приложений из Azure AD Graph в Microsoft Graph](migrate-azure-ad-graph-overview.md)
@@ -665,7 +761,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 ### <a name="sdks"></a>Пакеты SDK
 [Руководство по пакетам SDK](/sdks/sdks-overview.md) Фрагменты API ([пример](/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code))
 
-### <a name="security"></a>Безопасность
+### <a name="security"></a>Система безопасности
 [Оценка безопасности клиента](/graph/api/resources/securescore?view=graph-rest-1.0)
 
 ## <a name="january---april-2019-new-in-preview"></a>Январь–апрель 2019 г.: новые возможности в предварительной версии
