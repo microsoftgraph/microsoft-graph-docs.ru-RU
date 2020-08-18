@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 927ec039942d594fcb34665ed3ff0641904fcb60
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 0b1e8e6e6505780fcf638892c1e18b9500d54423
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123927"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790933"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -358,6 +358,7 @@ ms.locfileid: "45123927"
 - [Локальные параметры безопасности: режим отображения запроса для повышения прав стандартного пользователя](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [приемник событий Apple macOS](intune-deviceconfig-macosappleeventreceiver.md)
 - [macOS связанные домены ключей и значений](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
+- [macOS с единым входом Azure AD](intune-deviceconfig-macosazureadsinglesignonextension.md)
 - [База профилей сертификатов для macOS](intune-deviceconfig-macoscertificateprofilebase.md)
 - [Политика соответствия macOS](intune-deviceconfig-macoscompliancepolicy.md)
 - [политика клиента кэширования содержимого macOS](intune-deviceconfig-macoscontentcachingclientpolicy.md)

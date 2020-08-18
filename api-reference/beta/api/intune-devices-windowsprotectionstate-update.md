@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f315188c9a2b666f72af7b6a214a6de6cd6e6e79
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 593ba645ef109742c295c3f45bb2c2e4d3af3be6
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43378176"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790555"
 ---
 # <a name="update-windowsprotectionstate"></a>Обновление windowsProtectionState
 
@@ -29,7 +29,7 @@ ms.locfileid: "43378176"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,6 @@ ms.locfileid: "43378176"
 }
 -->
 ``` http
-PATCH /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/windowsProtectionState
 ```
 
@@ -47,7 +46,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md).
@@ -55,15 +54,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для объекта состояния защиты устройства. Это идентификатор устройства для устройства.|
-|малварепротектионенаблед|Boolean|Защита от вредоносных программ включена или нет|
+|малварепротектионенаблед|Логический|Защита от вредоносных программ включена или нет|
 |девицестате|[виндовсдевицехеалсстате](../resources/intune-devices-windowsdevicehealthstate.md)|Состояние компьютера (например, очистка или ожидание полного сканирования или Ожидание перезагрузки и т. д.). Возможные значения: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|реалтимепротектионенаблед|Boolean|Защита в режиме реального времени включена или нет?|
-|нетворкинспектионсистеменаблед|Boolean|Система проверки сети включена или нет?|
-|куиккскановердуе|Boolean|Быстрая проверка просрочена или нет?|
-|фуллскановердуе|Boolean|Полная проверка просрочена или нет?|
-|сигнатуреупдатеовердуе|Boolean|Подпись устарела или нет?|
-|ребутрекуиред|Boolean|Требуется перезагрузка или нет?|
-|фуллсканрекуиред|Boolean|Необходима полная проверка или нет?|
+|реалтимепротектионенаблед|Логический|Защита в режиме реального времени включена или нет?|
+|нетворкинспектионсистеменаблед|Логический|Система проверки сети включена или нет?|
+|куиккскановердуе|Логический|Быстрая проверка просрочена или нет?|
+|фуллскановердуе|Логический|Полная проверка просрочена или нет?|
+|сигнатуреупдатеовердуе|Логический|Подпись устарела или нет?|
+|ребутрекуиред|Логический|Требуется перезагрузка или нет?|
+|фуллсканрекуиред|Логический|Необходима полная проверка или нет?|
 |енгиневерсион|String|Текущая версия модуля Endpoint Protection|
 |сигнатуреверсион|String|Текущая версия определений вредоносных программ|
 |антималвареверсион|String|Текущая версия защиты от вредоносных программ|
@@ -83,7 +82,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/windowsProtectionState
 Content-type: application/json
 Content-length: 865
 

@@ -1,18 +1,18 @@
 ---
-title: Получение Усерекспериенцеаналитиксдевицеперформанце
-description: Чтение свойств и связей объекта Усерекспериенцеаналитиксдевицеперформанце.
+title: Получение Усерекспериенцеаналитиксапфеалсаппликатионперформанце
+description: Чтение свойств и связей объекта Усерекспериенцеаналитиксапфеалсаппликатионперформанце.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14a7afbb519a4b67019f6cf03acef7adfd80bcbc
+ms.openlocfilehash: b565e811103e21b5f70884107e71d11b28f7a45e
 ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791444"
+ms.locfileid: "46790301"
 ---
-# <a name="get-userexperienceanalyticsdeviceperformance"></a>Получение Усерекспериенцеаналитиксдевицеперформанце
+# <a name="get-userexperienceanalyticsapphealthapplicationperformance"></a>Получение Усерекспериенцеаналитиксапфеалсаппликатионперформанце
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "46791444"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .
+Чтение свойств и связей объекта [усерекспериенцеаналитиксапфеалсаппликатионперформанце](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,7 +37,7 @@ ms.locfileid: "46791444"
 }
 -->
 ``` http
-GET /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAnalyticsDevicePerformanceId}
+GET /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{userExperienceAnalyticsAppHealthApplicationPerformanceId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -53,14 +53,14 @@ GET /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAn
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [усерекспериенцеаналитиксапфеалсаппликатионперформанце](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAnalyticsDevicePerformanceId}
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{userExperienceAnalyticsAppHealthApplicationPerformanceId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -68,30 +68,26 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 743
+Content-Length: 691
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
-    "id": "852ae826-e826-852a-26e8-2a8526e82a85",
-    "deviceName": "Device Name value",
-    "model": "Model value",
-    "manufacturer": "Manufacturer value",
-    "diskType": "hdd",
-    "operatingSystemVersion": "Operating System Version value",
-    "bootScore": 9,
-    "coreBootTimeInMs": 0,
-    "groupPolicyBootTimeInMs": 7,
-    "healthStatus": "insufficientData",
-    "loginScore": 10,
-    "coreLoginTimeInMs": 1,
-    "groupPolicyLoginTimeInMs": 8,
-    "deviceCount": 11,
-    "responsiveDesktopTimeInMs": 9,
-    "blueScreenCount": 15,
-    "restartCount": 12,
-    "averageBlueScreens": 6.0,
-    "averageRestarts": 5.0
+    "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthApplicationPerformance",
+    "id": "c7962a87-2a87-c796-872a-96c7872a96c7",
+    "appName": "App Name value",
+    "appFriendlyName": "App Friendly Name value",
+    "appPublisher": "App Publisher value",
+    "activeDevices": 13,
+    "totalAppUsageDuration": 5,
+    "totalAppCrashes": 15,
+    "totalAppHangs": 13,
+    "meanTimeToFailure": 1,
+    "appHealthScore": 4.666666666666667,
+    "appHealthStatus": "App Health Status value",
+    "allOrgsHealthScore": 6.0,
+    "allOrgsMeanTimeToFailure": 8,
+    "tenantId": "Tenant Id value",
+    "memaTimeGenerated": "Mema Time Generated value"
   }
 }
 ```

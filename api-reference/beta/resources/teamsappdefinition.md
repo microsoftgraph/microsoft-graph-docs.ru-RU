@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b8dd3e7b3e50ed5642aeb23076705f4995e27759
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: b42d564f37a6e81ca48933e01c59c99de9845592
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272712"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791598"
 ---
 # <a name="teamsappdefinition-resource-type"></a>Тип ресурса Теамсаппдефинитион
 
@@ -26,6 +26,7 @@ ms.locfileid: "44272712"
 |:------------------- |:-------- |:----------- |
 | id                  | string   | Уникальный идентификатор (а не идентификаторы Teams). |
 | teamsAppId          | string   | Идентификатор из манифеста приложения Teams. |
+| publishingState| string|Опубликованное состояние определенной версии приложения Teams. Возможные значения:</br>`submitted` — Определенная версия приложения Teams была отправлена и находится в процессе рецензирования. </br>`published`  — Запрос на публикацию определенной версии приложения Teams утвержден администратором, и приложение публикуется. </br> `rejected` — Запрос на публикацию определенной версии приложения Teams был отклонен администратором. |
 | азуреадаппид        | string   | WebApplicationInfo.id из манифеста приложения Teams. |
 | displayName         | string   | Имя приложения, предоставленное разработчиком приложения. |
 | version             | string   | Номер версии приложения. |
@@ -65,4 +66,3 @@ ms.locfileid: "44272712"
   "suppressions": []
 }
 -->
-

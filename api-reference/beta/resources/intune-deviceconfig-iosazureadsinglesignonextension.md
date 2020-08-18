@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9388b46457df2390a0820c1005f0df0e1cae9b2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cd1eacccc09926c65a8e5faf3c61321b472d2013
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444208"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790464"
 ---
 # <a name="iosazureadsinglesignonextension-resource-type"></a>Тип ресурса Иосазуреадсинглесигнонекстенсион
 
@@ -28,7 +28,8 @@ ms.locfileid: "43444208"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|енаблешареддевицемоде|Boolean|Включает или отключает режим общего устройства.|
+|енаблешареддевицемоде|Логический|Включает или отключает режим общего устройства.|
+|бундлеидакцессконтроллист|Коллекция String|Необязательный список дополнительных идентификаторов пакетов, которые могут использовать расширение AAD для единого входа.|
 |построения|Коллекция [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список типизированных пар "ключ — значение", используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи
@@ -45,6 +46,9 @@ ms.locfileid: "43444208"
 {
   "@odata.type": "#microsoft.graph.iosAzureAdSingleSignOnExtension",
   "enableSharedDeviceMode": true,
+  "bundleIdAccessControlList": [
+    "String"
+  ],
   "configurations": [
     {
       "@odata.type": "microsoft.graph.keyTypedValuePair",

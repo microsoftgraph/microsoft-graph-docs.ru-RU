@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3dce597d72534aab143b4a09a45b45df959b0726
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1930f8d9229eeb92c5e3b1dd32a806fd724815f3
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435035"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790919"
 ---
 # <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>Список Андроидворкпрофилеженералдевицеконфигуратионс
 
@@ -29,7 +29,7 @@ ms.locfileid: "43435035"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3402
+Content-Length: 3584
 
 {
   "value": [
@@ -103,7 +103,9 @@ Content-Length: 3402
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "passwordBlockFaceUnlock": true,
       "passwordBlockFingerprintUnlock": true,
+      "passwordBlockIrisUnlock": true,
       "passwordBlockTrustAgents": true,
       "passwordExpirationDays": 6,
       "passwordMinimumLength": 5,
@@ -121,7 +123,9 @@ Content-Length: 3402
       "workProfileBlockCrossProfileContactsSearch": true,
       "workProfileBlockCrossProfileCopyPaste": true,
       "workProfileDefaultAppPermissionPolicy": "prompt",
+      "workProfilePasswordBlockFaceUnlock": true,
       "workProfilePasswordBlockFingerprintUnlock": true,
+      "workProfilePasswordBlockIrisUnlock": true,
       "workProfilePasswordBlockTrustAgents": true,
       "workProfilePasswordExpirationDays": 1,
       "workProfilePasswordMinimumLength": 0,

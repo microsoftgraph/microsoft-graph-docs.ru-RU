@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ccbd1e60b39caf716b9059e0a3e145e42783cae0
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 6fa0cf5dff76290f0df56860c86df13d1a4ffb3a
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123906"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791605"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -165,6 +165,7 @@ ms.locfileid: "45123906"
 - [Условие управления расположением](intune-fencing-locationmanagementcondition.md)
 - [Вошедший пользователь](intune-devices-loggedonuser.md)
 - [Состояние режима пропажи](intune-devices-lostmodestate.md)
+- [Состояние вредоносных программ для устройства с Windows](intune-devices-malwarestateforwindowsdevice.md)
 - [Управляемое устройство](intune-devices-manageddevice.md)
 - [Управляемая архитектура устройства](intune-devices-manageddevicearchitecture.md)
 - [Настройки очистки управляемых устройств](intune-devices-manageddevicecleanupsettings.md)
@@ -216,6 +217,7 @@ ms.locfileid: "45123906"
 - [Выражение условия унарного управления](intune-fencing-unarymanagementconditionexpression.md)
 - [Тип оператора выражения условия унарного управления](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Параметр действия "Обновление учетной записи устройства с Windows"](intune-devices-updatewindowsdeviceaccountactionparameter.md)
+- [Производительность приложения аналитики приложения аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsapphealthapplicationperformance.md)
 - [Базовый шаблон аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsbaseline.md)
 - [Категория анализа взаимодействия с пользователем](intune-devices-userexperienceanalyticscategory.md)
 - [Производительность устройства аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsdeviceperformance.md)
@@ -227,6 +229,8 @@ ms.locfileid: "45123906"
 - [Серьезность аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsinsightseverity.md)
 - [Сведения об аналитическом значении аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsinsightvalue.md)
 - [Метрика аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsmetric.md)
+- [Журнал метрики для аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsmetrichistory.md)
+- [Категория перезапуска операционной системы аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)
 - [Обзор анализа пользовательского интерфейса](intune-devices-userexperienceanalyticsoverview.md)
 - [Сводка по регрессии аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsregressionsummary.md)
 - [Журнал оценки для службы пользовательского интерфейса](intune-devices-userexperienceanalyticsscorehistory.md)
@@ -249,6 +253,7 @@ ms.locfileid: "45123906"
 - [Счетчик имени вредоносной программы Windows](intune-devices-windowsmalwarenamecount.md)
 - [Описание вредоносных программ для Windows](intune-devices-windowsmalwareoverview.md)
 - [Серьезность вредоносной программы для Windows](intune-devices-windowsmalwareseverity.md)
+- [Число серьезности вредоносных программ Windows](intune-devices-windowsmalwareseveritycount.md)
 - [Состояние вредоносной программы для Windows](intune-devices-windowsmalwarestate.md)
 - [Счетчик состояния вредоносной программы для Windows](intune-devices-windowsmalwarestatecount.md)
 - [Состояние угрозы вредоносных программ Windows](intune-devices-windowsmalwarethreatstate.md)

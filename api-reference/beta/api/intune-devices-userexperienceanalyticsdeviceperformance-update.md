@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 75719a81a38e70cfbfc487710358a9f75e866690
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 054f050697c3425d757b5e3d2e89fba7ef3b6b9a
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379646"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791388"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>Обновление Усерекспериенцеаналитиксдевицеперформанце
 
@@ -29,7 +29,7 @@ ms.locfileid: "43379646"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md).
@@ -68,6 +68,10 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 |граупполицилогинтимеинмс|Int32|Время входа в групповую политику устройства Analytics User Experience (в миллисекундах).|
 |deviceCount|Int64|Число устройств для аналитики взаимодействия с пользователем.|
 |респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
+|блуескринкаунт|Int32|Число синих экранов за последние 14 дней. Допустимые значения — от 0 до 9999999|
+|restartCount|Int32|Количество перезапусков за последние 14 дней. Допустимые значения — от 0 до 9999999|
+|аверажеблуескринс|Двойное с плавающей точкой|Среднее (среднее) количество синих экранов на устройство за последние 14 дней. Допустимые значения — от 0 до 9999999|
+|аверажерестартс|Двойное с плавающей точкой|Средняя (среднее) Количество перезапусков на устройство за последние 14 дней. Допустимые значения — от 0 до 9999999|
 
 
 
@@ -81,7 +85,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAnalyticsDevicePerformanceId}
 Content-type: application/json
-Content-length: 529
+Content-length: 635
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -98,7 +102,11 @@ Content-length: 529
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "deviceCount": 11,
-  "responsiveDesktopTimeInMs": 9
+  "responsiveDesktopTimeInMs": 9,
+  "blueScreenCount": 15,
+  "restartCount": 12,
+  "averageBlueScreens": 6.0,
+  "averageRestarts": 5.0
 }
 ```
 
@@ -107,7 +115,7 @@ Content-length: 529
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 578
+Content-Length: 684
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -125,7 +133,11 @@ Content-Length: 578
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "deviceCount": 11,
-  "responsiveDesktopTimeInMs": 9
+  "responsiveDesktopTimeInMs": 9,
+  "blueScreenCount": 15,
+  "restartCount": 12,
+  "averageBlueScreens": 6.0,
+  "averageRestarts": 5.0
 }
 ```
 

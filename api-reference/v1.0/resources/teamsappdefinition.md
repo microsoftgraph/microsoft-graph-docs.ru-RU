@@ -1,31 +1,30 @@
 ---
 title: Тип ресурса Теамсаппдефинитион
-description: Сведения о одной версии teamsApp.
+description: Представляет сведения о одной версии teamsApp.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 95f701151370a6f741e7fa97aa1792ef67ad15d3
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 322b7f50ccb51702ae05ca55f8e73396321a0283
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334958"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791682"
 ---
 # <a name="teamsappdefinition-resource-type"></a>Тип ресурса Теамсаппдефинитион
 
 Пространство имен: microsoft.graph
 
-
-
-Сведения о одной версии [teamsApp](teamsapp.md).
+Представляет сведения о одной версии [teamsApp](teamsapp.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | Уникальный идентификатор (а не идентификаторы Teams). |
-| teamsAppId          | string   | Идентификатор из манифеста приложения Teams. |
+| id                  | string   | Уникальный идентификатор (не идентификатор приложения Teams). |
+| teamsAppId          | string   | ИДЕНТИФИКАТОР из манифеста приложения Teams. |
+| publishingState| string|Опубликованное состояние определенной версии приложения Teams. Возможные значения:</br>`submitted` — Определенная версия приложения Teams была отправлена и находится в процессе рецензирования. </br>`published`  — Запрос на публикацию определенной версии приложения Teams утвержден администратором, и приложение публикуется. </br> `rejected` — Запрос на публикацию определенной версии приложения Teams был отклонен администратором. |
 | displayName         | string   | Имя приложения, предоставленное разработчиком приложения. |
 | version             | string   | Номер версии приложения. |
 
@@ -41,8 +40,8 @@ ms.locfileid: "44334958"
 {
   "id": "string",
   "teamsAppId": "string",
-  "displayName": "Test App",
-  "version": "1.0.0",
+  "displayName": "string",
+  "version": "string",
 }
 ```
 
@@ -61,4 +60,3 @@ ms.locfileid: "44334958"
   "section": "documentation",
   "tocPath": ""
 }-->
-

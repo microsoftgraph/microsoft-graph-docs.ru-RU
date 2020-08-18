@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fd024fa01ea8514b4dcba9fd0fd8297ec348f3bb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c31a0dde4e080e058a360371a31185678369614b
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457438"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790709"
 ---
 # <a name="list-intunebrandingprofiles"></a>Список Интунебрандингпрофилес
 
@@ -29,7 +29,7 @@ ms.locfileid: "43457438"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/intuneBrandingProfiles
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2221
+Content-Length: 2377
 
 {
   "value": [
@@ -109,6 +109,8 @@ Content-Length: 2221
       "onlineSupportSiteName": "Online Support Site Name value",
       "privacyUrl": "https://example.com/privacyUrl/",
       "customPrivacyMessage": "Custom Privacy Message value",
+      "customCanSeePrivacyMessage": "Custom Can See Privacy Message value",
+      "customCantSeePrivacyMessage": "Custom Cant See Privacy Message value",
       "isRemoveDeviceDisabled": true,
       "isFactoryResetDisabled": true,
       "companyPortalBlockedActions": [

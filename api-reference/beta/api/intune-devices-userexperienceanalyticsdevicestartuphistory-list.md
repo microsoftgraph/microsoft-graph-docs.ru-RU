@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 78e6f455625b3e21a5d09c2a70848c972dcd9a71
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 460e96c313d5231ec3059cc01f269430dc1deaae
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379501"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791339"
 ---
 # <a name="list-userexperienceanalyticsdevicestartuphistories"></a>Список Усерекспериенцеаналитиксдевицестартуфисториес
 
@@ -29,7 +29,7 @@ ms.locfileid: "43379501"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 675
+Content-Length: 722
 
 {
   "value": [
@@ -84,7 +84,8 @@ Content-Length: 675
       "totalLoginTimeInMs": 2,
       "isFirstLogin": true,
       "isFeatureUpdate": true,
-      "operatingSystemVersion": "Operating System Version value"
+      "operatingSystemVersion": "Operating System Version value",
+      "restartCategory": "restartWithUpdate"
     }
   ]
 }
