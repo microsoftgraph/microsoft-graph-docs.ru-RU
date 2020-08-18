@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e6398d9d8950fedca2951fae6a223120240ff8ce
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 730f7e0b03cca4bca0666e17d208da847f76cba4
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43378939"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792620"
 ---
 # <a name="list-userexperienceanalyticsscorehistories"></a>Список Усерекспериенцеаналитиксскорехисториес
 
@@ -29,7 +29,7 @@ ms.locfileid: "43378939"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/userExperienceAnalyticsScoreHistory
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsSco
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 353
+Content-Length: 380
 
 {
   "value": [
@@ -76,7 +76,8 @@ Content-Length: 353
       "startupScore": 12,
       "coreBootScore": 13,
       "coreSigninScore": 15,
-      "recommendedSoftwareScore": 8
+      "recommendedSoftwareScore": 8,
+      "restartScore": 12
     }
   ]
 }

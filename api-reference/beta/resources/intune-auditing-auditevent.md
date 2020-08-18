@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 245b16bbf08135b82b834ee7b86f0a89ae67aab9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1945795798033e876aa4e26631c667e198d8d5e0
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472125"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792984"
 ---
 # <a name="auditevent-resource-type"></a>Тип ресурса auditEvent
 
@@ -26,8 +26,8 @@ ms.locfileid: "43472125"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список объектов auditEvent](../api/intune-auditing-auditevent-list.md)|Коллекция [auditEvent](../resources/intune-auditing-auditevent.md)|Список свойств и связей объектов [auditEvent](../resources/intune-auditing-auditevent.md).|
-|[Получение объекта auditEvent](../api/intune-auditing-auditevent-get.md)|[auditEvent](../resources/intune-auditing-auditevent.md);|Чтение свойств и связей объекта [auditEvent](../resources/intune-auditing-auditevent.md).|
-|[Создание объекта auditEvent](../api/intune-auditing-auditevent-create.md)|[auditEvent](../resources/intune-auditing-auditevent.md);|Создание объекта [auditEvent](../resources/intune-auditing-auditevent.md).|
+|[Получение объекта auditEvent](../api/intune-auditing-auditevent-get.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Чтение свойств и связей объекта [auditEvent](../resources/intune-auditing-auditevent.md).|
+|[Создание объекта auditEvent](../api/intune-auditing-auditevent-create.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Создание объекта [auditEvent](../resources/intune-auditing-auditevent.md).|
 |[Удаление объекта auditEvent](../api/intune-auditing-auditevent-delete.md)|Нет|Удаляет объект [auditEvent](../resources/intune-auditing-auditevent.md).|
 |[Обновление объекта auditEvent](../api/intune-auditing-auditevent-update.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Обновление свойств объекта [auditEvent](../resources/intune-auditing-auditevent.md).|
 |[Функция getAuditCategories](../api/intune-auditing-auditevent-getauditcategories.md)|Коллекция строк|Н/Д|
@@ -36,8 +36,8 @@ ms.locfileid: "43472125"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Отображаемое имя события.|
+|id|String|Ключ объекта.|
+|displayName|String|Отображаемое имя события.|
 |componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
 |activity|String|Понятное имя действия.|
@@ -84,7 +84,9 @@ ms.locfileid: "43472125"
         "displayName": "String",
         "roleScopeTagId": "String"
       }
-    ]
+    ],
+    "remoteTenantId": "String",
+    "remoteUserId": "String"
   },
   "activity": "String",
   "activityDateTime": "String (timestamp)",

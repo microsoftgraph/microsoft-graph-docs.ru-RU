@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 038a08c1a1278d7f67feba4126173f7704623004
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bfa9f8b6fa28561b437a7ca9e683ffa3342b5b61
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43332109"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46789967"
 ---
 # <a name="get-windowswifienterpriseeapconfiguration"></a>Получение Виндовсвифиентерприсиапконфигуратион
 
@@ -29,7 +29,7 @@ ms.locfileid: "43332109"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2588
+Content-Length: 2719
 
 {
   "value": {
@@ -133,7 +133,10 @@ Content-Length: 2588
     ],
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEAPTTLS": "challengeHandshakeAuthenticationProtocol",
-    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+    "requireCryptographicBinding": true,
+    "performServerValidation": true,
+    "disableUserPromptForServerValidation": true
   }
 }
 ```

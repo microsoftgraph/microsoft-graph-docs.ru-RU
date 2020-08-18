@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: eafc92832fae17d36ff0baecd11237d973511d9f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d5706629d489a15c7cec9ed074612208263946a9
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392909"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791843"
 ---
 # <a name="list-auditevents"></a>Перечисление объектов auditEvent
 
@@ -29,7 +29,7 @@ ms.locfileid: "43392909"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/auditEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/auditEvents
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1873
+Content-Length: 1975
 
 {
   "value": [
@@ -92,7 +92,9 @@ Content-Length: 1873
             "displayName": "Display Name value",
             "roleScopeTagId": "Role Scope Tag Id value"
           }
-        ]
+        ],
+        "remoteTenantId": "Remote Tenant Id value",
+        "remoteUserId": "Remote User Id value"
       },
       "activity": "Activity value",
       "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",

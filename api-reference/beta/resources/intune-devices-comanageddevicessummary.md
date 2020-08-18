@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f592ba7900f0761a24b02495dc337046b615bb1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 0e12a946db3e568faa171fa53299e6ec3546d455
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793467"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791794"
 ---
 # <a name="comanageddevicessummary-resource-type"></a>Тип ресурса Команажеддевицессуммари
 
@@ -33,6 +33,7 @@ ms.locfileid: "44793467"
 |ендпоинтпротектионкаунт|Int32|Количество устройств с Ендпоинтпротектион свунг. Это свойство доступно только для чтения.|
 |модернаппскаунт|Int32|Количество устройств с Модернаппс свунг. Это свойство доступно только для чтения.|
 |оффицеаппскаунт|Int32|Количество устройств с Оффицеаппс свунг. Это свойство доступно только для чтения.|
+|тоталкоманажедкаунт|Int32|Количество совместно управляемых устройств. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -54,7 +55,8 @@ ms.locfileid: "44793467"
   "windowsUpdateForBusinessCount": 1024,
   "endpointProtectionCount": 1024,
   "modernAppsCount": 1024,
-  "officeAppsCount": 1024
+  "officeAppsCount": 1024,
+  "totalComanagedCount": 1024
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cfda57d0c94d94d771010eb4d981581347e9d391
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: c37000958539038c9cc49860e115f68e1a4911a2
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792522"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46789946"
 ---
 # <a name="update-comanagementeligibledevice"></a>Обновление Команажементелигибледевице
 
@@ -29,7 +29,7 @@ ms.locfileid: "44792522"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,16 +46,16 @@ PATCH /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства|
+|id|String|Уникальный идентификатор устройства|
 |deviceName|String|DeviceName|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|DeviceType. Возможные значения:,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` , `macMDM` , `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `blackberry` `palm` `unknown` ,,,,,,,,,,,,,,,,,,,,,,.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|DeviceType. Возможные значения:,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` ,,, `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` ,, `unknown` ,,,,,,,,,,,,,.|
 |клиентрегистратионстатус|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Клиентрегистратионстатус. Возможные значения: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType. Возможные значения: `unknown`, `company`, `personal`.|
 |managementAgents|[манажементаженттипе](../resources/intune-shared-managementagenttype.md)|ManagementAgents. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.|
@@ -72,7 +72,7 @@ PATCH /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceI
 |Основное|String|Имя участника-пользователя|
 |userEmail|String|Электронный адрес пользователя|
 |userName|String|Имя пользователя|
-|status|[команажементелигиблетипе](../resources/intune-devices-comanagementeligibletype.md)|Команажементелигиблестатус. Возможные значения: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`.|
+|status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|Команажементелигиблестатус. Возможные значения: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`.|
 
 
 

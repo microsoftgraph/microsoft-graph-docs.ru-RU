@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f9c2b8e701a830ccf9ca4bf1051b6ef2b796eed
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 676438a3fef39bc798e53f0b2e764bce2e69d606
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178047"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792578"
 ---
 # <a name="create-remoteassistancepartner"></a>Создание объекта remoteAssistancePartner
 
@@ -29,7 +29,7 @@ ms.locfileid: "44178047"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,10 +54,11 @@ POST /deviceManagement/remoteAssistancePartners
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор партнера.|
-|displayName|Строка|Отображаемое имя партнера.|
+|displayName|String|Отображаемое имя партнера.|
 |onboardingUrl|String|URL-адрес портала подключения партнера, где администратор может настроить свою службу удаленного помощника.|
 |onboardingStatus|[ремотеассистанцеонбоардингстатус](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|Понятное описание состояния текущего соединителя TeamViewer. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного в службу Intune партнером TEM.|
+|онбоардингрекуестекспиридатетиме|DateTimeOffset|Когда свойства onboardingstatus является входящей миграцией, это дата и время истечения срока действия запроса на приподключение.|
 
 
 
@@ -71,14 +72,15 @@ POST /deviceManagement/remoteAssistancePartners
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners
 Content-type: application/json
-Content-length: 266
+Content-length: 341
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistancePartner",
   "displayName": "Display Name value",
   "onboardingUrl": "https://example.com/onboardingUrl/",
   "onboardingStatus": "onboarding",
-  "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+  "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
+  "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
 }
 ```
 
@@ -87,7 +89,7 @@ Content-length: 266
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 315
+Content-Length: 390
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistancePartner",
@@ -95,7 +97,8 @@ Content-Length: 315
   "displayName": "Display Name value",
   "onboardingUrl": "https://example.com/onboardingUrl/",
   "onboardingStatus": "onboarding",
-  "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+  "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
+  "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
 }
 ```
 

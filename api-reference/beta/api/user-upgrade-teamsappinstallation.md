@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 906828d4d14bdf19cfd8b2bc5f904e7219b40e55
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 52d251346c5255b5943aeda6fde7c5ab10403b3a
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45196931"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46789904"
 ---
 # <a name="teamsappinstallation-upgrade"></a>Теамсаппинсталлатион: обновление
 
@@ -26,9 +26,9 @@ ms.locfileid: "45196931"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадвритефорусер, User. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteForUser |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Теамсаппинсталлатион. Реадвритефорусер. ALL, User. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Приложение | TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

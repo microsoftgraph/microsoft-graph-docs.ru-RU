@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dfdfe22363140d5567af531c411262205a789230
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: ba4c49d12bae10899160d0494495fc999b9d17d1
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123108"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792326"
 ---
 # <a name="list-iosikev2vpnconfigurations"></a>Список iosikEv2VpnConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "45123108"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [iosikEv2VpnConfiguration](../resources/intune-deviceconfig-iosikev2vpnconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -153,6 +153,7 @@ Content-Length: 6070
           "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
         }
       ],
+      "providerType": "appProxy",
       "proxyServer": {
         "@odata.type": "microsoft.graph.vpnProxyServer",
         "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -160,7 +161,6 @@ Content-Length: 6070
         "port": 4
       },
       "optInToDeviceIdSharing": true,
-      "providerType": "appProxy",
       "userDomain": "User Domain value",
       "strictEnforcement": true,
       "cloudName": "Cloud Name value",

@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 14efe55cecb1464253463a1ff2ecd94f03f63378
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 17233aadd5afaee212dae6f4bc10f0af52e0f2aa
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45196939"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46793117"
 ---
 # <a name="list-apps-installed-for-user"></a>Перечисление приложений, установленных для пользователя
 
@@ -26,9 +26,9 @@ ms.locfileid: "45196939"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадфорусер, Теамсаппинсталлатион. Реадвритефорусер, User. Read. ALL, User. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадфорусер, Теамсаппинсталлатион. Реадвритефорусер |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Теамсаппинсталлатион. Реадфорусер. ALL, Теамсаппинсталлатион. Реадвритефорусер. ALL, User. Read. ALL, User. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Приложение | Теамсаппинсталлатион. Реадфорусер. ALL, Теамсаппинсталлатион. Реадвритефорусер. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ GET /users/{id}/teamwork/installedApps
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [теамсаппинсталлатион](../resources/teamsappinstallation.md) в тексте отклика.
 

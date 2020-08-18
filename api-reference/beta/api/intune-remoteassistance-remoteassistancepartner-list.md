@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c21f647e1f02fe53f3b2871b2103e164e2f87c9
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 9f86208d72fbeb773b5473a995863faee893305e
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176226"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790338"
 ---
 # <a name="list-remoteassistancepartners"></a>Список объектов remoteAssistancePartner
 
@@ -29,7 +29,7 @@ ms.locfileid: "44176226"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 372
+Content-Length: 451
 
 {
   "value": [
@@ -75,7 +75,8 @@ Content-Length: 372
       "displayName": "Display Name value",
       "onboardingUrl": "https://example.com/onboardingUrl/",
       "onboardingStatus": "onboarding",
-      "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+      "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
+      "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
     }
   ]
 }

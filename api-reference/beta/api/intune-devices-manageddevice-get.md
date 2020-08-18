@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b0b80defb8b5e8de8b961f57be33917ed77e9af3
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 05e8659aed001287d61abb3c572696628ed8da69
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792291"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46789855"
 ---
 # <a name="get-manageddevice"></a>Получение managedDevice
 
@@ -29,7 +29,7 @@ ms.locfileid: "44792291"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,10 +55,10 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [managedDevice](../resources/intune-devices-manageddevice.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8249
+Content-Length: 8380
 
 {
   "value": {
@@ -98,6 +98,9 @@ Content-Length: 8249
       "operatingSystemLanguage": "Operating System Language value",
       "isSupervised": true,
       "isEncrypted": true,
+      "batterySerialNumber": "Battery Serial Number value",
+      "batteryHealthPercentage": 7,
+      "batteryChargeCycles": 3,
       "isSharedDevice": true,
       "sharedDeviceCachedUsers": [
         {

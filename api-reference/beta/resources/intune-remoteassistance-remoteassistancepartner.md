@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d82d63df7dd584d75410097d484b0187f98bb9f6
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: c2c65716371084903b2b544b8878bb2a73dd800e
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176242"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792669"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>Тип ресурса remoteAssistancePartner
 
@@ -37,10 +37,11 @@ ms.locfileid: "44176242"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор партнера.|
-|displayName|Строка|Отображаемое имя партнера.|
+|displayName|String|Отображаемое имя партнера.|
 |onboardingUrl|String|URL-адрес портала подключения партнера, где администратор может настроить свою службу удаленного помощника.|
 |onboardingStatus|[ремотеассистанцеонбоардингстатус](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|Понятное описание состояния текущего соединителя TeamViewer. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
-|lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного службе Intune партнером TEM.|
+|lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного в службу Intune партнером TEM.|
+|онбоардингрекуестекспиридатетиме|DateTimeOffset|Когда свойства onboardingstatus является входящей миграцией, это дата и время истечения срока действия запроса на приподключение.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -60,7 +61,8 @@ ms.locfileid: "44176242"
   "displayName": "String",
   "onboardingUrl": "String",
   "onboardingStatus": "String",
-  "lastConnectionDateTime": "String (timestamp)"
+  "lastConnectionDateTime": "String (timestamp)",
+  "onboardingRequestExpiryDateTime": "String (timestamp)"
 }
 ```
 

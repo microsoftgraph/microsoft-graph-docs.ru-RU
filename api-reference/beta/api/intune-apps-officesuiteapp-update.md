@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8930d7a3371ffc4ca9853ee73df9f39d9f0e1475
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 7570ac026779d0508a40991179fdbb5496c8c3b6
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793278"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791913"
 ---
 # <a name="update-officesuiteapp"></a>Обновление officeSuiteApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "44793278"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,16 +48,16 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [officeSuiteApp](../resources/intune-apps-officesuiteapp.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -68,27 +68,27 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|uploadState|Int32|Состояние отправки. Возможные значения: 0 – `Not Ready` , 1 – `Ready` , 2 `Processing` . Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|аутоакцептеула|Boolean|Значение, которое будет автоматически принимать условия лицензионного соглашения на устройстве ендусер.|
+|аутоакцептеула|Логический|Значение, которое будет автоматически принимать условия лицензионного соглашения на устройстве ендусер.|
 |productIds|Коллекция [оффицепродуктид](../resources/intune-apps-officeproductid.md)|Идентификаторы продуктов, представляющие SKU набора Office365. Возможные значения: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail`, `projectProRetail`.|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md);|Свойство для представления приложений, исключаемых из выбранного идентификатора продукта Office365.|
-|Свойства usesharedcomputeractivation|Boolean|Свойство для представления того, используется ли активация на общем компьютере не для приложений Office365.|
+|Свойства usesharedcomputeractivation|Логический|Свойство для представления того, используется ли активация на общем компьютере не для приложений Office365.|
 |updateChannel|[оффицеупдатечаннел](../resources/intune-apps-officeupdatechannel.md)|Свойство для представления канала обновления Office365. Возможные значения: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`, `monthlyEnterprise`.|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Свойство для представления версии набора приложений Office365. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|localesToInstall|Коллекция String|Свойство для представления языковых стандартов, устанавливаемых при установке приложений из Office365. В нем используется стандартная спецификация RFC 6033. Словомhttps://technet.microsoft.com/library/cc179219(v=office.16).aspx|
+|localesToInstall|Коллекция String|Свойство для представления языковых стандартов, устанавливаемых при установке приложений из Office365. В нем используется стандартная спецификация RFC 6033. Словом https://technet.microsoft.com/library/cc179219(v=office.16).aspx|
 |инсталлпрогрессдисплайлевел|[оффицесуитеинсталлпрогрессдисплайлевел](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Для указания уровня отображения пользовательского интерфейса установки хода установки на устройстве. Возможные значения: `none`, `full`.|
-|шаулдунинсталлолдерверсионсофоффице|Boolean|Свойство, определяющее, следует ли удалить существующий MSI Office, если на устройстве развернут набор приложений Office365.|
+|шаулдунинсталлолдерверсионсофоффице|Логический|Свойство, определяющее, следует ли удалить существующий MSI Office, если на устройстве развернут набор приложений Office365.|
 |Атрибута targetversion|String|Свойство, представляющее определенную целевую версию для набора приложений Office365, который должен быть развернут на устройствах.|
 |упдатеверсион|String|Свойство для представления версии обновления, в которой определенная Целевая версия доступна для набора приложений Office365.|
 |оффицеконфигуратионксмл|Binary|Свойство, представляющее XML-файл конфигурации, который можно указать для приложений Office профессиональный плюс. Имеет приоритет над всеми другими свойствами. Если этот параметр указан, для создания приложения будет использоваться XML-файл конфигурации.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

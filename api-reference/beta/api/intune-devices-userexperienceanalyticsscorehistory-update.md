@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b44ee2dcbade774c704a7c5d1df1ae31e9423c6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3e7179fb0dae2c62b2a416722eaa8d8d27ee321a
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43378828"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46789883"
 ---
 # <a name="update-userexperienceanalyticsscorehistory"></a>Обновление Усерекспериенцеаналитиксскорехистори
 
@@ -29,7 +29,7 @@ ms.locfileid: "43378828"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ PATCH /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnaly
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксскорехистори](../resources/intune-devices-userexperienceanalyticsscorehistory.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксскорехистори](../resources/intune-devices-userexperienceanalyticsscorehistory.md).
@@ -55,10 +55,11 @@ PATCH /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnaly
 |:---|:---|:---|
 |id|String|Уникальный идентификатор процесса запуска устройства аналитики взаимодействия с пользователем.|
 |стартупдатетиме|DateTimeOffset|Дата и время запуска устройства Analytics Device Experience.|
-|стартупскоре|Int32|Оценка запуска устройства Analytics для пользователя.|
-|коребутскоре|Int32|Оценка загрузки ядра устройств для службы аналитики взаимодействия с пользователем.|
-|коресигнинскоре|Int32|Показатель для входа в систему для устройства аналитики с пользовательским интерфейсом.|
-|рекоммендедсофтварескоре|Int32|Показатель для входа в систему для устройства аналитики с пользовательским интерфейсом.|
+|стартупскоре|Int32|Оценка запуска устройства Analytics для пользователя. Показатель будет находиться в диапазоне 0-100, 100 — идеальный показатель.|
+|коребутскоре|Int32|Оценка загрузки ядра устройств для службы аналитики взаимодействия с пользователем. Показатель будет находиться в диапазоне 0-100, 100 — идеальный показатель.|
+|коресигнинскоре|Int32|Показатель для входа в систему для устройства аналитики с пользовательским интерфейсом. Показатель будет находиться в диапазоне 0-100, 100 — идеальный показатель.|
+|рекоммендедсофтварескоре|Int32|Показатель для входа в систему для устройства аналитики с пользовательским интерфейсом. Показатель будет находиться в диапазоне 0-100, 100 — идеальный показатель.|
+|рестартскоре|Int32|Оценка перезапуска. Показатель будет находиться в диапазоне 0-100, 100 — идеальный показатель, 0 указывает на чрезмерные перегрузки. Допустимые значения — от 0 до 9999999|
 
 
 
@@ -72,7 +73,7 @@ PATCH /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnaly
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnalyticsScoreHistoryId}
 Content-type: application/json
-Content-length: 243
+Content-length: 266
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -80,7 +81,8 @@ Content-length: 243
   "startupScore": 12,
   "coreBootScore": 13,
   "coreSigninScore": 15,
-  "recommendedSoftwareScore": 8
+  "recommendedSoftwareScore": 8,
+  "restartScore": 12
 }
 ```
 
@@ -89,7 +91,7 @@ Content-length: 243
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 292
+Content-Length: 315
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -98,7 +100,8 @@ Content-Length: 292
   "startupScore": 12,
   "coreBootScore": 13,
   "coreSigninScore": 15,
-  "recommendedSoftwareScore": 8
+  "recommendedSoftwareScore": 8,
+  "restartScore": 12
 }
 ```
 

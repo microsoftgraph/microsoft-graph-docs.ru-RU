@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f02aa12b3a0a0f03a49ab65a11c20f642cb27986
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 3c4dfa20789599012ccbd97d9db7950b87f53a86
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123780"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46793096"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -153,6 +153,7 @@ ms.locfileid: "45123780"
 - [Тип обнаружения скрипта PowerShell для бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptdetectiontype.md)
 - [Требование к скрипту PowerShell для бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptrequirement.md)
 - [Правило скрипта PowerShell для бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptrule.md)
+- [Тип операции правила скрипта PowerShell для бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
 - [Определение кода продукта бизнес-приложения Win32](intune-apps-win32lobappproductcodedetection.md)
 - [Правило для кода продукта Win32 бизнес-приложения](intune-apps-win32lobappproductcoderule.md)
 - [Определение реестра бизнес-приложения Win32](intune-apps-win32lobappregistrydetection.md)
@@ -167,7 +168,6 @@ ms.locfileid: "45123780"
 - [Правило бизнес-приложения Win32](intune-apps-win32lobapprule.md)
 - [Оператор правила бизнес-приложения Win32](intune-apps-win32lobappruleoperator.md)
 - [Тип правила бизнес-приложения Win32](intune-apps-win32lobappruletype.md)
-- [Тип операции правила скрипта PowerShell для Win32 LOB](intune-apps-win32lobpowershellscriptruleoperationtype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Архитектура Windows](intune-apps-windowsarchitecture.md)
 - [Тип устройства Windows](intune-apps-windowsdevicetype.md)

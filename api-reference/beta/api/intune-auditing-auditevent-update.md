@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dbd6ebfae64c34a79c09426e5784f06a4616040d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3a1cbc085b1ef5c95fb5faa820d38627ee787d4c
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392862"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791850"
 ---
 # <a name="update-auditevent"></a>Update auditEvent
 
@@ -29,7 +29,7 @@ ms.locfileid: "43392862"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,15 +46,15 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [auditEvent](../resources/intune-auditing-auditevent.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [auditEvent](../resources/intune-auditing-auditevent.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Отображаемое имя события.|
+|id|String|Ключ объекта.|
+|displayName|String|Отображаемое имя события.|
 |componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
 |activity|String|Понятное имя действия.|
@@ -78,7 +78,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1603
+Content-length: 1697
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -102,7 +102,9 @@ Content-length: 1603
         "displayName": "Display Name value",
         "roleScopeTagId": "Role Scope Tag Id value"
       }
-    ]
+    ],
+    "remoteTenantId": "Remote Tenant Id value",
+    "remoteUserId": "Remote User Id value"
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -135,7 +137,7 @@ Content-length: 1603
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1652
+Content-Length: 1746
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -160,7 +162,9 @@ Content-Length: 1652
         "displayName": "Display Name value",
         "roleScopeTagId": "Role Scope Tag Id value"
       }
-    ]
+    ],
+    "remoteTenantId": "Remote Tenant Id value",
+    "remoteUserId": "Remote User Id value"
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",

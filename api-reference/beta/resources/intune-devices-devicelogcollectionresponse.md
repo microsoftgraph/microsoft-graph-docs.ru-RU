@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f9b6dcfda30845138c4576b3a100b8fbe3ff26c
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 4c3a7725f0f02c0ba2b8588c57179fa80316c595
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124289"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792977"
 ---
 # <a name="devicelogcollectionresponse-resource-type"></a>Тип ресурса Девицелогколлектионреспонсе
 
@@ -26,13 +26,16 @@ ms.locfileid: "45124289"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Девицелогколлектионреспонсес](../api/intune-devices-devicelogcollectionresponse-list.md)|Коллекция [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md)|Список свойств и связей объектов [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) .|
-|[Получение Девицелогколлектионреспонсе](../api/intune-devices-devicelogcollectionresponse-get.md)|[девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md)|Чтение свойств и связей объекта [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) .|
+|[Получение Девицелогколлектионреспонсе](../api/intune-devices-devicelogcollectionresponse-get.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Чтение свойств и связей объекта [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) .|
+|[Создание Девицелогколлектионреспонсе](../api/intune-devices-devicelogcollectionresponse-create.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Создание нового объекта [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) .|
+|[Удаление Девицелогколлектионреспонсе](../api/intune-devices-devicelogcollectionresponse-delete.md)|Нет|Удаляет объект [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md).|
+|[Обновление Девицелогколлектионреспонсе](../api/intune-devices-devicelogcollectionresponse-update.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Обновление свойств объекта [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) .|
 |[Действие createDownloadUrl](../api/intune-devices-devicelogcollectionresponse-createdownloadurl.md)|String|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор в виде tenantId_deviceId_requestId|
+|id|String|Уникальный идентификатор в виде tenantId_deviceId_requestId|
 |status|String|Состояние запроса на сбор журналов|
 |манажеддевицеид|Guid|Идентификатор устройства|
 |errorCode|Int64|Код ошибки (при наличии). Допустимые значения — 9.22337203685478 E + 18 — 9.22337203685478 E + 18|

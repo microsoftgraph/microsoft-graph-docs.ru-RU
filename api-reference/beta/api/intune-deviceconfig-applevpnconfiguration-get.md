@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d993cc29642d6762dbf028847292b45f57521c4e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2efaae951576fc815168df9d6b47d62e2b81231a
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434480"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46789848"
 ---
 # <a name="get-applevpnconfiguration"></a>Получение appleVpnConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "43434480"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2999
+Content-Length: 3032
 
 {
   "value": {
@@ -156,6 +156,7 @@ Content-Length: 2999
         "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
       }
     ],
+    "providerType": "appProxy",
     "proxyServer": {
       "@odata.type": "microsoft.graph.vpnProxyServer",
       "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",

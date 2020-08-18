@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58d6714c2d9e0214286ef9f26c9634b4f16a78f5
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 28ce2781883bf274a2244241a00a11f9647ee07a
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793460"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791801"
 ---
 # <a name="comanagementeligibledevice-resource-type"></a>Тип ресурса Команажементелигибледевице
 
@@ -26,17 +26,17 @@ ms.locfileid: "44793460"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Команажементелигибледевицес](../api/intune-devices-comanagementeligibledevice-list.md)|Коллекция [команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md)|Список свойств и связей объектов [команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md) .|
-|[Получение Команажементелигибледевице](../api/intune-devices-comanagementeligibledevice-get.md)|[команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md)|Чтение свойств и связей объекта [команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md) .|
-|[Создание Команажементелигибледевице](../api/intune-devices-comanagementeligibledevice-create.md)|[команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md)|Создание нового объекта [команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md) .|
+|[Получение Команажементелигибледевице](../api/intune-devices-comanagementeligibledevice-get.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Чтение свойств и связей объекта [команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md) .|
+|[Создание Команажементелигибледевице](../api/intune-devices-comanagementeligibledevice-create.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Создание нового объекта [команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md) .|
 |[Удаление Команажементелигибледевице](../api/intune-devices-comanagementeligibledevice-delete.md)|Нет|Удаляет объект [команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md).|
-|[Обновление Команажементелигибледевице](../api/intune-devices-comanagementeligibledevice-update.md)|[команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md)|Обновление свойств объекта [команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md) .|
+|[Обновление Команажементелигибледевице](../api/intune-devices-comanagementeligibledevice-update.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Обновление свойств объекта [команажементелигибледевице](../resources/intune-devices-comanagementeligibledevice.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства|
+|id|String|Уникальный идентификатор устройства|
 |deviceName|String|DeviceName|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|DeviceType. Возможные значения:,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` , `macMDM` , `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `blackberry` `palm` `unknown` ,,,,,,,,,,,,,,,,,,,,,,.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|DeviceType. Возможные значения:,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` ,,, `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` ,, `unknown` ,,,,,,,,,,,,,.|
 |клиентрегистратионстатус|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Клиентрегистратионстатус. Возможные значения: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType. Возможные значения: `unknown`, `company`, `personal`.|
 |managementAgents|[манажементаженттипе](../resources/intune-shared-managementagenttype.md)|ManagementAgents. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.|
@@ -53,7 +53,7 @@ ms.locfileid: "44793460"
 |Основное|String|Имя участника-пользователя|
 |userEmail|String|Электронный адрес пользователя|
 |userName|String|Имя пользователя|
-|status|[команажементелигиблетипе](../resources/intune-devices-comanagementeligibletype.md)|Команажементелигиблестатус. Возможные значения: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`.|
+|status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|Команажементелигиблестатус. Возможные значения: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`.|
 
 ## <a name="relationships"></a>Связи
 Нет

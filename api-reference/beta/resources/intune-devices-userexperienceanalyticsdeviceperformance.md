@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a3dd901a24ee8ae521838640aa31a3bd5b9b719d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2c4325ac78a1fc5f91c92fc4633d9d10146afd86
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382832"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790394"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицеперформанце
 
@@ -50,6 +50,10 @@ ms.locfileid: "43382832"
 |граупполицилогинтимеинмс|Int32|Время входа в групповую политику устройства Analytics User Experience (в миллисекундах).|
 |deviceCount|Int64|Число устройств для аналитики взаимодействия с пользователем.|
 |респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
+|блуескринкаунт|Int32|Число синих экранов за последние 14 дней. Допустимые значения — от 0 до 9999999|
+|restartCount|Int32|Количество перезапусков за последние 14 дней. Допустимые значения — от 0 до 9999999|
+|аверажеблуескринс|Двойное с плавающей точкой|Среднее (среднее) количество синих экранов на устройство за последние 14 дней. Допустимые значения — от 0 до 9999999|
+|аверажерестартс|Двойное с плавающей точкой|Средняя (среднее) Количество перезапусков на устройство за последние 14 дней. Допустимые значения — от 0 до 9999999|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -79,7 +83,11 @@ ms.locfileid: "43382832"
   "coreLoginTimeInMs": 1024,
   "groupPolicyLoginTimeInMs": 1024,
   "deviceCount": 1024,
-  "responsiveDesktopTimeInMs": 1024
+  "responsiveDesktopTimeInMs": 1024,
+  "blueScreenCount": 1024,
+  "restartCount": 1024,
+  "averageBlueScreens": "4.2",
+  "averageRestarts": "4.2"
 }
 ```
 

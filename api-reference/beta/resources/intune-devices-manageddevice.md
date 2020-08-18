@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e515e07cda0fb687d431beab64b309a9af3d76d8
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: b9535ad84fcd2a868ed0fcfe314b63949fe1ddd2
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124123"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792550"
 ---
 # <a name="manageddevice-resource-type"></a>Тип ресурса managedDevice
 
@@ -25,42 +25,42 @@ ms.locfileid: "45124123"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение объекта managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md);|Чтение свойств и связей объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
+|[Получение объекта managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Чтение свойств и связей объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
 |[Обновление объекта managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Обновление свойств объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
 |[Действие executeAction](../api/intune-devices-manageddevice-executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md);|Пока не задокументировано.|
-|[Действие enableLostMode](../api/intune-devices-manageddevice-enablelostmode.md)|Отсутствует|Включение режима потери|
-|[Действие playLostModeSound](../api/intune-devices-manageddevice-playlostmodesound.md)|Отсутствует|Удаленная блокировка|
-|[Действие setDeviceName](../api/intune-devices-manageddevice-setdevicename.md)|Отсутствует|Задание имени устройства для устройства.|
-|[действие Ротатефилеваулткэй](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|None|Пока не задокументировано|
+|[Действие enableLostMode](../api/intune-devices-manageddevice-enablelostmode.md)|Нет|Включение режима потери|
+|[Действие playLostModeSound](../api/intune-devices-manageddevice-playlostmodesound.md)|Нет|Удаленная блокировка|
+|[Действие setDeviceName](../api/intune-devices-manageddevice-setdevicename.md)|Нет|Задание имени устройства для устройства.|
+|[действие Ротатефилеваулткэй](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|Нет|Н/Д|
 |[Функция Жетфилеваулткэй](../api/intune-devices-manageddevice-getfilevaultkey.md)|String|Пока не задокументировано.|
-|[действие Креатедевицелогколлектионрекуест](../api/intune-devices-manageddevice-createdevicelogcollectionrequest.md)|[девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md)|Пока не задокументировано.|
-|[Действие retire](../api/intune-devices-manageddevice-retire.md)|Отсутствует|Прекращение использования устройства|
-|[Действие wipe](../api/intune-devices-manageddevice-wipe.md)|Отсутствует|Очистка устройства|
-|[Действие resetPasscode](../api/intune-devices-manageddevice-resetpasscode.md)|Отсутствует|Сброс секретного кода|
-|[Действие remoteLock](../api/intune-devices-manageddevice-remotelock.md)|Отсутствует|Удаленная блокировка|
-|[Действие requestRemoteAssistance](../api/intune-devices-manageddevice-requestremoteassistance.md)|Отсутствует|Запрос удаленной помощи|
-|[Действие disableLostMode](../api/intune-devices-manageddevice-disablelostmode.md)|Отсутствует|Отключение режима пропажи устройства|
-|[Действие locateDevice](../api/intune-devices-manageddevice-locatedevice.md)|Отсутствует|Поиск устройства|
-|[Действие bypassActivationLock](../api/intune-devices-manageddevice-bypassactivationlock.md)|Отсутствует|Обход блокировки активации|
-|[Действие rebootNow](../api/intune-devices-manageddevice-rebootnow.md)|Отсутствует|Перезагрузка устройства|
-|[Действие shutDown](../api/intune-devices-manageddevice-shutdown.md)|Отсутствует|Завершение работы устройства|
-|[Действие recoverPasscode](../api/intune-devices-manageddevice-recoverpasscode.md)|Отсутствует|Восстановление секретного кода|
-|[Действие cleanWindowsDevice](../api/intune-devices-manageddevice-cleanwindowsdevice.md)|Отсутствует|Очистка устройства с Windows|
-|[Действие logoutSharedAppleDeviceActiveUser](../api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md)|Отсутствует|Выход от имени активного пользователя общего устройства Apple|
+|[действие Креатедевицелогколлектионрекуест](../api/intune-devices-manageddevice-createdevicelogcollectionrequest.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Пока не задокументировано.|
+|[Действие retire](../api/intune-devices-manageddevice-retire.md)|Нет|Прекращение использования устройства|
+|[Действие wipe](../api/intune-devices-manageddevice-wipe.md)|Нет|Очистка устройства|
+|[Действие resetPasscode](../api/intune-devices-manageddevice-resetpasscode.md)|Нет|Сброс секретного кода|
+|[Действие remoteLock](../api/intune-devices-manageddevice-remotelock.md)|Нет|Удаленная блокировка|
+|[Действие requestRemoteAssistance](../api/intune-devices-manageddevice-requestremoteassistance.md)|Нет|Запрос удаленной помощи|
+|[Действие disableLostMode](../api/intune-devices-manageddevice-disablelostmode.md)|Нет|Отключение режима пропажи устройства|
+|[Действие locateDevice](../api/intune-devices-manageddevice-locatedevice.md)|Нет|Поиск устройства|
+|[Действие bypassActivationLock](../api/intune-devices-manageddevice-bypassactivationlock.md)|Нет|Обход блокировки активации|
+|[Действие rebootNow](../api/intune-devices-manageddevice-rebootnow.md)|Нет|Перезагрузка устройства|
+|[Действие shutDown](../api/intune-devices-manageddevice-shutdown.md)|Нет|Завершение работы устройства|
+|[Действие recoverPasscode](../api/intune-devices-manageddevice-recoverpasscode.md)|Нет|Восстановление секретного кода|
+|[Действие cleanWindowsDevice](../api/intune-devices-manageddevice-cleanwindowsdevice.md)|Нет|Очистка устройства с Windows|
+|[Действие logoutSharedAppleDeviceActiveUser](../api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md)|Нет|Выход от имени активного пользователя общего устройства Apple|
 |[Действие deleteUserFromSharedAppleDevice](../api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md)|Нет|Удаление пользователя с общего устройства Apple|
-|[Действие syncDevice](../api/intune-devices-manageddevice-syncdevice.md)|None|Пока не задокументировано|
-|[Действие windowsDefenderScan](../api/intune-devices-manageddevice-windowsdefenderscan.md)|None|Пока не задокументировано|
-|[Действие windowsDefenderUpdateSignatures](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|None|Н/Д|
-|[Действие updateWindowsDeviceAccount](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|Нет|Пока не задокументировано|
-|[Действие revokeAppleVppLicenses](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|Отсутствует|Отзыв всех лицензий на Apple VPP для устройства|
-|[действие Ротатебитлоккеркэйс](../api/intune-devices-manageddevice-rotatebitlockerkeys.md)|Отсутствует|Поворот Битлоккеркэйс|
-|[Действие sendCustomNotificationToCompanyPortal](../api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md)|None|Пока не задокументировано|
-|[действие Тригжерконфигуратионманажерактион](../api/intune-devices-manageddevice-triggerconfigurationmanageraction.md)|Отсутствует|Действие триггера в клиенте Конфигуратионманажер|
+|[Действие syncDevice](../api/intune-devices-manageddevice-syncdevice.md)|Нет|Н/Д|
+|[Действие windowsDefenderScan](../api/intune-devices-manageddevice-windowsdefenderscan.md)|Нет|Н/Д|
+|[Действие windowsDefenderUpdateSignatures](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|Нет|Н/Д|
+|[Действие updateWindowsDeviceAccount](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|Нет|Н/Д|
+|[Действие revokeAppleVppLicenses](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|Нет|Отзыв всех лицензий на Apple VPP для устройства|
+|[действие Ротатебитлоккеркэйс](../api/intune-devices-manageddevice-rotatebitlockerkeys.md)|Нет|Поворот Битлоккеркэйс|
+|[Действие sendCustomNotificationToCompanyPortal](../api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md)|Нет|Н/Д|
+|[действие Тригжерконфигуратионманажерактион](../api/intune-devices-manageddevice-triggerconfigurationmanageraction.md)|Нет|Действие триггера в клиенте Конфигуратионманажер|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства. Это свойство доступно только для чтения.|
+|id|String|Уникальный идентификатор устройства. Это свойство доступно только для чтения.|
 |userId|String|Уникальный идентификатор пользователя, связанного с устройством. Это свойство доступно только для чтения.|
 |deviceName|String|Имя устройства. Это свойство доступно только для чтения.|
 |Hardwareinformation.|[Hardwareinformation.](../resources/intune-devices-hardwareinformation.md)|Сведения о хардвард для устройства.  Включает такие сведения, как место хранения, производитель, серийный номер и т. д. Это свойство доступно только для чтения.|
@@ -73,12 +73,12 @@ ms.locfileid: "45124123"
 |lastSyncDateTime|DateTimeOffset|Дата и время последней успешной синхронизации устройства с Intune. Это свойство доступно только для чтения.|
 |чассистипе|[чассистипе](../resources/intune-devices-chassistype.md)|Тип корпуса устройства. Это свойство доступно только для чтения. Возможные значения: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Операционная система устройства. Windows, iOS и т. д. Это свойство доступно только для чтения.|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Платформа устройства. Это свойство доступно только для чтения. Возможные значения:,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` , `macMDM` , `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `blackberry` `palm` `unknown` ,,,,,,,,,,,,,,,,,,,,,,.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Платформа устройства. Это свойство доступно только для чтения. Возможные значения:,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` ,,, `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` ,, `unknown` ,,,,,,,,,,,,,.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Состояние соответствия устройства требованиям. Это свойство доступно только для чтения. Возможные значения: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|Указывает, является ли устройство взломанным или рутованным. Это свойство доступно только для чтения.|
 |managementAgent|[манажементаженттипе](../resources/intune-shared-managementagenttype.md)|Канал управления устройством. Intune, EAS и т. д. Это свойство доступно только для чтения. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.|
 |osVersion|String|Версия операционной системы устройства. Это свойство доступно только для чтения.|
-|easActivated|Логический|Указывает, активировано ли устройство в Exchange ActiveSync. Это свойство доступно только для чтения.|
+|easActivated|Boolean|Указывает, активировано ли устройство в Exchange ActiveSync. Это свойство доступно только для чтения.|
 |easDeviceId|String|Идентификатор устройства в Exchange ActiveSync. Это свойство доступно только для чтения.|
 |easActivationDateTime|DateTimeOffset|Время активации устройства в Exchange ActivationSync. Это свойство доступно только для чтения.|
 |аадрегистеред|Boolean|Указывает, зарегистрировано ли устройство в Azure Active Directory. Это свойство доступно только для чтения.|
@@ -91,7 +91,7 @@ ms.locfileid: "45124123"
 |azureADDeviceId|String|Уникальный идентификатор устройства Azure Active Directory. Только для чтения. Это свойство доступно только для чтения.|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Состояние регистрации устройства. Это свойство доступно только для чтения. Возможные значения: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|String|Отображаемое имя категории устройств. Это свойство доступно только для чтения.|
-|isSupervised|Логический|Состояние контролируемого устройства. Это свойство доступно только для чтения.|
+|isSupervised|Boolean|Состояние контролируемого устройства. Это свойство доступно только для чтения.|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Время последнего подключения устройства к Exchange. Это свойство доступно только для чтения.|
 |exchangeAccessState|[девицеманажементексчанжеакцессстате](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Состояние доступа к устройству в Exchange. Это свойство доступно только для чтения. Возможные значения: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[девицеманажементексчанжеакцессстатереасон](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Причина состояния доступа к устройству в Exchange. Это свойство доступно только для чтения. Возможные значения: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
@@ -103,7 +103,7 @@ ms.locfileid: "45124123"
 |manufacturer|String|Производитель устройства. Это свойство доступно только для чтения.|
 |imei|String|IMEI. Это свойство доступно только для чтения.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия устройства требованиям. Это свойство доступно только для чтения.|
-|serialNumber|Строка|Серийный. Это свойство доступно только для чтения.|
+|serialNumber|String|Серийный. Это свойство доступно только для чтения.|
 |phoneNumber|String|Номер телефона устройства. Это свойство доступно только для чтения.|
 |androidSecurityPatchLevel|String|Уровень обновления для системы безопасности Android. Это свойство доступно только для чтения.|
 |userDisplayName|String|Отображаемое имя пользователя. Это свойство доступно только для чтения.|
@@ -177,6 +177,9 @@ ms.locfileid: "45124123"
     "operatingSystemLanguage": "String",
     "isSupervised": true,
     "isEncrypted": true,
+    "batterySerialNumber": "String",
+    "batteryHealthPercentage": 1024,
+    "batteryChargeCycles": 1024,
     "isSharedDevice": true,
     "sharedDeviceCachedUsers": [
       {

@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 27335eb191352d37523975c7a506f39e7da725be
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: ecf122caa0a402d8a804efa360e71e53b6493da7
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674521"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790751"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -188,13 +188,13 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ## <a name="appcatalog-resource-permissions"></a>Разрешения ресурса AppCatalog
 
-
 #### <a name="delegated-permissions"></a>Делегированные разрешения
 
 |   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Требуется учетная запись Майкрософт |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------| :----------|
 | _AppCatalog.Read.All_ | Считывание всех каталогов приложений | Позволяет приложению считывать приложения в каталогах.| Нет | Нет |
 | _AppCatalog.ReadWrite.All_ | Чтение и запись во всех каталогах приложений  | Позволяет приложению создавать, считывать, обновлять и удалять приложения в каталогах приложений. | Да | Нет |
+|_AppCatalog.Submit_|Отправка приложения для проверки администратором|Позволяет пользователю отправить приложение на проверку администратору для публикации в каталоге приложений организации, а также отменить прошлые отправки, которые не были опубликованы.</br> &#119821;&#119822;&#119827;&#119812;: Пользователи, не являющиеся администраторами, отправляют приложения на проверку путем добавления параметра запроса `requiresReview=true`.|Да|Нет|
 
 #### <a name="application-permissions"></a>Разрешения приложений
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc09cbb5f1c3664d0f9a2bcb0cc0aceac7f85bf3
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 369631fc29203c54ef3c63c2cd32df67254c76bf
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178845"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791780"
 ---
 # <a name="hardwareinformation-resource-type"></a>Тип ресурса Hardwareinformation.
 
@@ -25,30 +25,33 @@ ms.locfileid: "44178845"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|serialNumber|Строка|Серийный номер.|
+|serialNumber|String|Серийный номер.|
 |тоталсторажеспаце|Int64|Общий объем хранилища устройства.|
 |фристоражеспаце|Int64|Свободное место на устройстве.|
-|imei|Строка|IMEI|
+|imei|String|IMEI|
 |meid|String|MEID|
-|manufacturer|Строка|Производитель устройства|
-|model|Строка|Модель устройства|
-|phoneNumber|Строка|Номер телефона устройства|
-|subscriberCarrier|Строка|Абонентская перевозчик устройства|
-|целлулартечнологи|Строка|Технология сотовой связи устройства|
-|вифимак|Строка|MAC-адрес устройства Wi-Fi|
-|оператингсистемлангуаже|Строка|Язык операционной системы устройства|
+|manufacturer|String|Производитель устройства|
+|model|String|Модель устройства|
+|phoneNumber|String|Номер телефона устройства|
+|subscriberCarrier|String|Абонентская перевозчик устройства|
+|целлулартечнологи|String|Технология сотовой связи устройства|
+|вифимак|String|MAC-адрес устройства Wi-Fi|
+|оператингсистемлангуаже|String|Язык операционной системы устройства|
 |isSupervised|Boolean|Контролируемый режим устройства|
 |isEncrypted|Boolean|Состояние шифрования устройства|
-|Свойства isshareddevice|Boolean|Общие iPad|
+|баттерисериалнумбер|String|Серийный номер текущей батареи устройства|
+|баттерихеалсперцентаже|Int32|Процент работоспособности текущего аккумулятора устройства. Допустимые значения: от 0 до 100|
+|баттеричаржециклес|Int32|Количество циклов зарядки, прошедшей через текущий аккумулятор устройства. Допустимые значения — от 0 до 2147483647|
+|Свойства isshareddevice|Логический|Общие iPad|
 |шареддевицекачедусерс|Коллекция [шаредаппледевицеусер](../resources/intune-devices-sharedappledeviceuser.md)|Все пользователи на общем устройстве Apple|
-|тпмспеЦификатионверсион|Строка|Строка, указывающая версию спецификации.|
-|оператингсистемедитион|Строка|Строка, задающая выпуск операционной системы.|
-|девицефуллкуалифиеддомаиннаме|Строка|Возвращает полное доменное имя устройства (при наличии). Если устройство не присоединено к домену, возвращается пустая строка. |
+|тпмспеЦификатионверсион|String|Строка, указывающая версию спецификации.|
+|оператингсистемедитион|String|Строка, задающая выпуск операционной системы.|
+|девицефуллкуалифиеддомаиннаме|String|Возвращает полное доменное имя устройства (при наличии). Если устройство не присоединено к домену, возвращается пустая строка. |
 |девицегуардвиртуализатионбаседсекуритихардваререкуирементстате|[девицегуардвиртуализатионбаседсекуритихардваререкуирементстате](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Состояние требования к оборудованию для обеспечения безопасности на основе виртуализации. Возможные значения: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
 |девицегуардвиртуализатионбаседсекуритистате|[девицегуардвиртуализатионбаседсекуритистате](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Состояние безопасности на основе виртуализации. . Возможные значения: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
 |девицегуардлокалсистемаусоритикредентиалгуардстате|[девицегуардлокалсистемаусоритикредентиалгуардстате](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Состояние Credential Guard в администраторе локальной системы (LSA). . Возможные значения: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
-|осбуилднумбер|Строка|Номер сборки операционной системы на устройстве с Android|
-|оператингсистемпродукттипе|Int32|Int, указывающий операционную систему Windows Продукттипе. Дополнительные сведения https://go.microsoft.com/fwlink/?linkid=2126950. Допустимые значения — от 0 до 2147483647|
+|осбуилднумбер|String|Номер сборки операционной системы на устройстве с Android|
+|оператингсистемпродукттипе|Int32|Int, указывающий операционную систему Windows Продукттипе. Дополнительные сведения https://go.microsoft.com/fwlink/?linkid=2126950 . Допустимые значения — от 0 до 2147483647|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -77,6 +80,9 @@ ms.locfileid: "44178845"
   "operatingSystemLanguage": "String",
   "isSupervised": true,
   "isEncrypted": true,
+  "batterySerialNumber": "String",
+  "batteryHealthPercentage": 1024,
+  "batteryChargeCycles": 1024,
   "isSharedDevice": true,
   "sharedDeviceCachedUsers": [
     {

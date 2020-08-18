@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e12edcc8e292cd140a9628d48e3e263c65f4f496
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: aaad8b8c79ba0600df26e0081d0c6a9450ae03ba
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386715"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46793089"
 ---
 # <a name="update-intunebrandingprofile"></a>Обновление Интунебрандингпрофиле
 
@@ -29,7 +29,7 @@ ms.locfileid: "43386715"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md).
@@ -56,10 +56,10 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |id|String|Ключ профиля|
 |имя_профиля|String|Имя профиля|
 |профиледескриптион|String|Описание профиля|
-|исдефаултпрофиле|Boolean|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
+|исдефаултпрофиле|Логический|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
 |createdDateTime|DateTimeOffset|Время создания Брандингпрофиле|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Брандингпрофиле|
-|displayName|Строка|Название компании или организации, которое отображается для конечных пользователей|
+|displayName|String|Название компании или организации, которое отображается для конечных пользователей|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, используемый в приложениях портала компании и на веб-портале|
 |showLogo|Boolean|Логическое значение, указывающее, отображаются ли изображения логотипа, предоставленные администратором.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, указывающее, будет ли отображаться отображаемое имя, предоставленное администратором, рядом с изображением логотипа.|
@@ -73,15 +73,17 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или Организации|
 |onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или Организации|
 |privacyUrl|String|URL-адрес политики конфиденциальности компании или Организации|
-|кустомпривацимессаже|String|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
-|исремоведевицедисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Remove Device" на корпоративных устройствах.|
-|исфакториресетдисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Фабричная сброс" на корпоративных устройствах.|
+|кустомпривацимессаже|String|Текстовые комментарии относительно того, что у администратора нет доступа к устройству.|
+|кустомкансипривацимессаже|String|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
+|кустомкантсипривацимессаже|String|Текстовые комментарии относительно того, что у администратора нет доступа к устройству.|
+|исремоведевицедисаблед|Логический|Логическое значение, указывающее, отключил ли админсистратор действие "Remove Device" на корпоративных устройствах.|
+|исфакториресетдисаблед|Логический|Логическое значение, указывающее, отключил ли админсистратор действие "Фабричная сброс" на корпоративных устройствах.|
 |компанипорталблоккедактионс|Коллекция [компанипорталблоккедактион](../resources/intune-shared-companyportalblockedaction.md)|Коллекция заблокированных действий на портале компании в соответствии с типом владения платформой и устройствами.|
-|шовазуреадентерприсеаппс|Boolean|Логическое значение, которое указывает, будут ли отображаться корпоративные приложения AzureAD на портале компании.|
-|шовоффицевебаппс|Boolean|Логическое значение, указывающее, будут ли отображаться приложения Office на портале компании.|
-|сенддевицеовнершипчанжепушнотификатион|Boolean|Логическое значение, указывающее, отправляются ли пользователям push-уведомления, если их тип собственности изменяется от персонального к корпоративному.|
+|шовазуреадентерприсеаппс|Логический|Логическое значение, которое указывает, будут ли отображаться корпоративные приложения AzureAD на портале компании.|
+|шовоффицевебаппс|Логический|Логическое значение, указывающее, будут ли отображаться приложения Office на портале компании.|
+|сенддевицеовнершипчанжепушнотификатион|Логический|Логическое значение, указывающее, отправляются ли пользователям push-уведомления, если их тип собственности изменяется от персонального к корпоративному.|
 |енроллментаваилабилити|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Настраиваемый процесс регистрации устройства, отображаемый для конечного пользователя. Возможные значения: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области, назначенных профилю фирменной символики|
+|roleScopeTagIds|Коллекция String|Список тегов области, назначенных профилю фирменной символики|
 
 
 
@@ -95,7 +97,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Content-type: application/json
-Content-length: 1792
+Content-length: 1940
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -134,6 +136,8 @@ Content-length: 1792
   "onlineSupportSiteName": "Online Support Site Name value",
   "privacyUrl": "https://example.com/privacyUrl/",
   "customPrivacyMessage": "Custom Privacy Message value",
+  "customCanSeePrivacyMessage": "Custom Can See Privacy Message value",
+  "customCantSeePrivacyMessage": "Custom Cant See Privacy Message value",
   "isRemoveDeviceDisabled": true,
   "isFactoryResetDisabled": true,
   "companyPortalBlockedActions": [
@@ -159,7 +163,7 @@ Content-length: 1792
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1964
+Content-Length: 2112
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -201,6 +205,8 @@ Content-Length: 1964
   "onlineSupportSiteName": "Online Support Site Name value",
   "privacyUrl": "https://example.com/privacyUrl/",
   "customPrivacyMessage": "Custom Privacy Message value",
+  "customCanSeePrivacyMessage": "Custom Can See Privacy Message value",
+  "customCantSeePrivacyMessage": "Custom Cant See Privacy Message value",
   "isRemoveDeviceDisabled": true,
   "isFactoryResetDisabled": true,
   "companyPortalBlockedActions": [

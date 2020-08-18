@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 10bc2573d2bec17f0faf8532237e7a3ebda03cce
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 44dd46dc5fd48127ed380a50a9d43f98bb2364bb
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792382"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792494"
 ---
 # <a name="getcomanageddevicessummary-function"></a>Функция Жеткоманажеддевицессуммари
 
@@ -29,7 +29,7 @@ ms.locfileid: "44792382"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ GET /deviceManagement/getComanagedDevicesSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха эта функция возвращает `200 OK` код отклика и объект [команажеддевицессуммари](../resources/intune-devices-comanageddevicessummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/getComanagedDevicesSummary
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 348
+Content-Length: 379
 
 {
   "value": {
@@ -77,7 +77,8 @@ Content-Length: 348
     "windowsUpdateForBusinessCount": 13,
     "endpointProtectionCount": 7,
     "modernAppsCount": 15,
-    "officeAppsCount": 15
+    "officeAppsCount": 15,
+    "totalComanagedCount": 3
   }
 }
 ```

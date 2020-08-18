@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c235781a73059830a3b0085bb7602e5484da7988
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 7e3c31146e42f01da7ffa426884b51c1269184da
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225020"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46789841"
 ---
 # <a name="update-windowsupdatestate"></a>Обновление Виндовсупдатестате
 
@@ -28,11 +28,11 @@ ms.locfileid: "45225020"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение||
-| &nbsp;&nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -57,20 +57,20 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Это идентификатор объекта.|
-|deviceId|Строка|Идентификатор устройства.|
+|id|String|Это идентификатор объекта.|
+|deviceId|String|Идентификатор устройства.|
 |userId|String|Идентификатор пользователя.|
 |deviceDisplayName|String|Отображаемое имя устройства.|
-|userPrincipalName|Строка|Имя участника пользователя.|
-|status||Состояние Windows удпате. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|куалитюпдатеверсион|Строка|Версия устройства для обновления качества.|
-|феатуреупдатеверсион|Строка|Текущая версия обновления компонентов устройства.|
+|userPrincipalName|String|Имя участника пользователя.|
+|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Состояние Windows удпате. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|куалитюпдатеверсион|String|Версия устройства для обновления качества.|
+|феатуреупдатеверсион|String|Текущая версия обновления компонентов устройства.|
 |ластскандатетиме|DateTimeOffset|Дата и время, когда агент обновления Windows успешно выполнил сканирование.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации устройства с Microsoft Intune.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

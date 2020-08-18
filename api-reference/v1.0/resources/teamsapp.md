@@ -5,20 +5,18 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5a7cae3ba43915f8dd024e3a9260876adb3ac2a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2307bd50509cc1a44ee4de0a30309a2be98dcb3e
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533514"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791675"
 ---
 # <a name="teamsapp-resource-type"></a>Тип ресурса teamsApp
 
 Пространство имен: microsoft.graph
 
-
-
-Приложение в каталоге приложений [Microsoft Teams](teams-api-overview.md).
+Представляет приложение в каталоге приложений [Microsoft Teams](teams-api-overview.md).
 
 Пользователи могут видеть эти приложения в магазине Microsoft Teams, а эти приложения можно устанавливать в [командах](team.md), используя метод [добавления приложения в команду](../api/teamsappinstallation-add.md).
 
@@ -38,7 +36,7 @@ ms.locfileid: "42533514"
 | id                  | string   | Сгенерированный идентификатор приложения из каталога приложений (отличающийся от предоставленного разработчиком идентификатора в [ZIP-пакете приложения Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
 | externalId          | строка   | Идентификатор каталога, предоставленный разработчиком приложения в [ZIP-пакете приложения Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
 | displayName                | string   | Название приложения каталога, предоставленное разработчиком приложения в [ZIP-пакете приложения Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
-| distributionMethod  | teamsAppDistributionMethod     | Метод распространения приложения. |
+| distributionMethod  | teamsAppDistributionMethod     | Метод распространения приложения. Только для чтения.|
 
 ### <a name="teamsappdistributionmethod-values"></a>Значения teamsAppDistributionMethod
 
@@ -66,8 +64,8 @@ ms.locfileid: "42533514"
 {
   "id": "string",
   "externalId": "string",
-  "displayName": "Test App",
-  "distributionMethod": "Organization"
+  "displayName": "string",
+  "distributionMethod": "string"
 }
 ```
 

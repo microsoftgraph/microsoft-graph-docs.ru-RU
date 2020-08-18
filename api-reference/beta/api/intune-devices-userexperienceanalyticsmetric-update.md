@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f36337e85713c708870c77a044dd44d7b19f4f4
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: cf8abacee1d94916d6c9fade6e6c10e3462b8cc2
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44175989"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792837"
 ---
 # <a name="update-userexperienceanalyticsmetric"></a>Обновление Усерекспериенцеаналитиксметрик
 
@@ -29,7 +29,7 @@ ms.locfileid: "44175989"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -40,6 +40,7 @@ ms.locfileid: "44175989"
 PATCH /deviceManagement/userExperienceAnalyticsRegressionSummary/modelRegression/{userExperienceAnalyticsMetricId}
 PATCH /deviceManagement/userExperienceAnalyticsRegressionSummary/manufacturerRegression/{userExperienceAnalyticsMetricId}
 PATCH /deviceManagement/userExperienceAnalyticsRegressionSummary/operatingSystemRegression/{userExperienceAnalyticsMetricId}
+PATCH /deviceManagement/userExperienceAnalyticsMetricHistory/{userExperienceAnalyticsMetricHistoryId}/userExperienceAnalyticsMetric
 PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues/{userExperienceAnalyticsMetricId}
 ```
 
@@ -56,9 +57,9 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
 |значение|Двойное с плавающей точкой|Значение метрики аналитики взаимодействия с пользователем.|
-|устройств|Строка|Единица измерения показателя взаимодействия с пользователем.|
+|устройств|String|Единица измерения показателя взаимодействия с пользователем.|
 
 
 
