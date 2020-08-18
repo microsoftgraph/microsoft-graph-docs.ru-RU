@@ -1186,7 +1186,7 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Category
+          - name: Категория
             href: resources/outlookcategory.md
             items:
               - name: Перечисление категорий
@@ -2669,6 +2669,8 @@ items:
                     href: resources/intune-apps-win32lobapppowershellscriptrequirement.md
                   - name: Правило скрипта PowerShell для бизнес-приложения Win32
                     href: resources/intune-apps-win32lobapppowershellscriptrule.md
+                  - name: Тип операции правила скрипта PowerShell для бизнес-приложения Win32
+                    href: resources/intune-apps-win32lobapppowershellscriptruleoperationtype.md
                   - name: Определение кода продукта бизнес-приложения Win32
                     href: resources/intune-apps-win32lobappproductcodedetection.md
                   - name: Правило для кода продукта Win32 бизнес-приложения
@@ -2697,8 +2699,6 @@ items:
                     href: resources/intune-apps-win32lobappruleoperator.md
                   - name: Тип правила бизнес-приложения Win32
                     href: resources/intune-apps-win32lobappruletype.md
-                  - name: Тип операции правила скрипта PowerShell для Win32 LOB
-                    href: resources/intune-apps-win32lobpowershellscriptruleoperationtype.md
                   - name: Windows AppX
                     href: resources/intune-apps-windowsappx.md
                     items:
@@ -5172,6 +5172,8 @@ items:
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
                   - name: macOS связанные домены ключей и значений
                     href: resources/intune-deviceconfig-macosassociateddomainskeyvaluepair.md
+                  - name: macOS с единым входом Azure AD
+                    href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
                   - name: База профилей сертификатов для macOS
                     href: resources/intune-deviceconfig-macoscertificateprofilebase.md
                     items:
@@ -6730,6 +6732,12 @@ items:
                         href: api/intune-devices-devicelogcollectionresponse-list.md
                       - name: Получение
                         href: api/intune-devices-devicelogcollectionresponse-get.md
+                      - name: Создание
+                        href: api/intune-devices-devicelogcollectionresponse-create.md
+                      - name: Удалить
+                        href: api/intune-devices-devicelogcollectionresponse-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-devicelogcollectionresponse-update.md
                       - name: Действие createDownloadUrl
                         href: api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
                   - name: Тип шаблона коллекции журнала устройств
@@ -7138,6 +7146,8 @@ items:
                         href: api/intune-deviceintent-devicemanagementtemplate-update.md
                       - name: Действие createInstance
                         href: api/intune-deviceintent-devicemanagementtemplate-createinstance.md
+                      - name: действие importOffice365DeviceConfigurationPolicies
+                        href: api/intune-deviceintent-devicemanagementtemplate-importoffice365deviceconfigurationpolicies.md
                   - name: Категория параметра шаблона управления устройствами
                     href: resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md
                     items:
@@ -7293,6 +7303,19 @@ items:
                     href: resources/intune-devices-loggedonuser.md
                   - name: Состояние режима пропажи
                     href: resources/intune-devices-lostmodestate.md
+                  - name: Состояние вредоносных программ для устройства с Windows
+                    href: resources/intune-devices-malwarestateforwindowsdevice.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-malwarestateforwindowsdevice-list.md
+                      - name: Получение
+                        href: api/intune-devices-malwarestateforwindowsdevice-get.md
+                      - name: Создание
+                        href: api/intune-devices-malwarestateforwindowsdevice-create.md
+                      - name: Удалить
+                        href: api/intune-devices-malwarestateforwindowsdevice-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-malwarestateforwindowsdevice-update.md
                   - name: Управляемое устройство
                     href: resources/intune-devices-manageddevice.md
                     items:
@@ -7596,6 +7619,19 @@ items:
                     href: resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md
                   - name: Параметр действия "Обновление учетной записи устройства с Windows"
                     href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
+                  - name: Производительность приложения аналитики приложения аналитики взаимодействия с пользователем
+                    href: resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-list.md
+                      - name: Получение
+                        href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-get.md
+                      - name: Создание
+                        href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-create.md
+                      - name: Удалить
+                        href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-update.md
                   - name: Базовый шаблон аналитики взаимодействия с пользователем
                     href: resources/intune-devices-userexperienceanalyticsbaseline.md
                     items:
@@ -7691,6 +7727,21 @@ items:
                         href: api/intune-devices-userexperienceanalyticsmetric-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsmetric-update.md
+                  - name: Журнал метрики для аналитики взаимодействия с пользователем
+                    href: resources/intune-devices-userexperienceanalyticsmetrichistory.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-userexperienceanalyticsmetrichistory-list.md
+                      - name: Получение
+                        href: api/intune-devices-userexperienceanalyticsmetrichistory-get.md
+                      - name: Создание
+                        href: api/intune-devices-userexperienceanalyticsmetrichistory-create.md
+                      - name: Удалить
+                        href: api/intune-devices-userexperienceanalyticsmetrichistory-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-userexperienceanalyticsmetrichistory-update.md
+                  - name: Категория перезапуска операционной системы аналитики взаимодействия с пользователем
+                    href: resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md
                   - name: Обзор анализа пользовательского интерфейса
                     href: resources/intune-devices-userexperienceanalyticsoverview.md
                     items:
@@ -7780,6 +7831,8 @@ items:
                     href: resources/intune-devices-windowsmalwareoverview.md
                   - name: Серьезность вредоносной программы для Windows
                     href: resources/intune-devices-windowsmalwareseverity.md
+                  - name: Число серьезности вредоносных программ Windows
+                    href: resources/intune-devices-windowsmalwareseveritycount.md
                   - name: Состояние вредоносной программы для Windows
                     href: resources/intune-devices-windowsmalwarestate.md
                   - name: Счетчик состояния вредоносной программы для Windows
@@ -8338,6 +8391,8 @@ items:
                         href: api/intune-onboarding-vpptoken-synclicenses.md
                       - name: Действие revokeLicenses
                         href: api/intune-onboarding-vpptoken-revokelicenses.md
+                      - name: действие Синклиценсекаунтс
+                        href: api/intune-onboarding-vpptoken-synclicensecounts.md
                   - name: Результат действия с токеном VPP
                     href: resources/intune-onboarding-vpptokenactionresult.md
                   - name: Сводка о лицензии для маркера VPP
@@ -9004,7 +9059,7 @@ items:
                 href: api/educationassignment-put-rubric.md
               - name: Удаление Rubric из назначения
                 href: api/educationassignment-delete-rubric.md
-          - name: Category
+          - name: Категория
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -11491,7 +11546,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Группа
                 href: resources/termstore-group.md
                 items:
                   - name: Создание
