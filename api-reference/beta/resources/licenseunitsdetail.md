@@ -4,13 +4,13 @@ description: Свойство **prepaidUnits** объекта subscribedSku от
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c302ed46843a0ef8c235ec9e3e814a069dfa0e51
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: krbain
+ms.openlocfilehash: bbff4ac919f5973caff7fbbc30fdc5d7352550b4
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522969"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807509"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>Тип ресурса licenseUnitsDetail
 
@@ -27,7 +27,7 @@ ms.locfileid: "42522969"
 |suspended|Int32| Количество приостановленных единиц. |
 |warning|Int32| Количество единиц, которые находятся в состоянии предупреждения. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

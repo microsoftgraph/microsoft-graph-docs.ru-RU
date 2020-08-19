@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 53d67c4248593b81d1091d6eb3610586a732f330
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 72ef8ceba57c9724a51c9443393774860a29dc5d
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228382"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807608"
 ---
 # <a name="update-skillproficiency"></a>Обновление скиллпрофиЦиенци
 
@@ -36,6 +36,7 @@ ms.locfileid: "43228382"
 
 ```http
 PATCH /me/profile/skills/{id}
+PATCH /users/{id | userPrincipalName}/profile/skills/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -50,12 +51,14 @@ PATCH /me/profile/skills/{id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип            | Описание                                                                                                                        |
-|:-------------|:----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-|categories    |Коллекция String| Содержит категории, связанные с навыком (например: личное, профессиональный, для увлечений)                                       |
-|displayName   |Строка           | Содержит понятное имя для навыка.                                                                                            |
-|навыки   |string           | Возможные значения: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
-|webUrl        |String           | Содержит ссылку на источник информации о навыке.                                                                          |
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Коллекция String|Содержит категории, связанные с навыком пользователя (например, персональный, профессиональный, увлеченный). |
+|коллаборатионтагс|Коллекция String|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
+|displayName|String|Содержит понятное имя для навыка. |
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|навыки|скиллпрофиЦиенцилевел|Сведения о пользователях, которые подключают этот навык. Возможные значения: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
 
 ## <a name="response"></a>Ответ
 
@@ -79,11 +82,9 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "Professional"
   ],
-  "displayName": "displayName-value",
-  "proficiency": "proficiency-value",
-  "webUrl": "webUrl-value"
+  "proficiency": "advancedProfessional"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -118,21 +119,36 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
   "categories": [
-    "categories-value"
+    "Professional"
   ],
-  "displayName": "displayName-value",
-  "proficiency": "proficiency-value",
-  "webUrl": "webUrl-value"
+  "displayName": "API Design",
+  "proficiency": "advancedProfessional",
+  "webUrl": null,
+  "collaborationTags": [
+    "ableToMentor"
+  ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update skillproficiency",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

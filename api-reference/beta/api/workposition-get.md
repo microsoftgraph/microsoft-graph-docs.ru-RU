@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 57f3f732e2f19b5cd9ffc428f83256a154406ebb
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 63a138ade10ff99514b227f31bdeeb5cc6ad9697
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228599"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807614"
 ---
 # <a name="get-workposition"></a>Получение Воркпоситион
 
@@ -28,7 +28,7 @@ ms.locfileid: "43228599"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Приложение                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -36,28 +36,21 @@ ms.locfileid: "43228599"
 
 ```http
 GET /me/profile/positions/{id}
+GET /users/{id | userPrincipalName}/profile/positions/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми. Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.                                                                                                                                         |
 
-|Имя            |Значение    |Описание                                                                                                                                                                      |
-|:---------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Разрешает отклик только на те объекты, которые содержат заданные условия.                                                                                                  |
-|$orderby        |строка   |По умолчанию объекты в отклике сортируются по значению **createdDateTime** в запросе. Вы можете изменить порядок ответа с помощью `$orderby` параметра.|
-|$select         |string   |Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.                                             |
-|$skip           |int      |Пропустите первые n результатов, которые удобно использовать для разбиения на страницы.                                                                                                                                     |
-|$top            |int      |Количество возвращаемых результатов.                                                                                                                                                |
-
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="request-headers"></a>Заголовки запросов
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.   |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -112,42 +105,55 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "categories": null,
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
+      "displayName": "Adventureworks Ltd.",
+      "pronunciation": null,
+      "department": "Consulting",
+      "officeLocation": "AW23/344",
       "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
+        "type": "business",
+        "postOfficeBox": null,
+        "street": "123 Patriachy Ponds",
+        "city": "Moscow",
+        "state": null,
+        "countryOrRegion": "Russian Federation",
+        "postalCode": "RU-34621"
       },
-      "webUrl": "webUrl-value"
+      "webUrl": "https://www.adventureworks.com"
     },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
+    "description": null,
+    "endMonthYear": null,
+    "jobTitle": "Senior Product Branding Manager II",
+    "role": "consulting",
     "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  }
+    "summary": null
+  },
+  "manager": null,
+  "colleagues": null,
+  "isCurrent": true
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get workPosition",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

@@ -4,13 +4,13 @@ description: Указывает максимальный и минимальны
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: db90f040eef98af1136be7a80323dbedfe0acb92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 055dc785c336762a1e3ae1cff400ea26fdc94111
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520515"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807880"
 ---
 # <a name="sizerange-resource-type"></a>Тип ресурса sizeRange
 
@@ -27,7 +27,7 @@ ms.locfileid: "42520515"
 | minimumSize | Int32 | Минимальный размер (в килобайтах) входящего сообщения, при котором применяется условие или исключение. |
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

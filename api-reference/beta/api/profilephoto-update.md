@@ -4,13 +4,13 @@ description: Обновление фотографии любого пользо
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: bafdd48cf95f8f6c6eddb99a0cd4f4bb3138dd78
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
+author: kevinbellinger
+ms.openlocfilehash: 72c30f03b51e186321acf6b89790c0fbd1352f06
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038683"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807987"
 ---
 # <a name="update-profilephoto"></a>Обновление объекта profilephoto
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: Profile
 doc_type: apiPageType
-ms.openlocfilehash: 5f56163db9ea7a13cc03d7199f371cdc070891fd
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: e39d4411e07d130b8974f6ff51a108acbb8da3cf
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228361"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809217"
 ---
 # <a name="get-useraccountinformation"></a>Получение Усераккаунтинформатион
 
@@ -18,29 +18,30 @@ ms.locfileid: "43228361"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [усераккаунтинформатион](../resources/useraccountinformation.md) .
+Получение свойств и связей объекта [усераккаунтинформатион](../resources/useraccountinformation.md) в [профиле](../resources/profile.md)пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
-|:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Не поддерживается.                              |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
+|:---------------------------------------|:---------------------------------------------------------------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Приложение                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /user/profile/account
+GET /me/profile/accounts/{id}
+GET /users/{id | userPrincipalName}/profile/accounts/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми. Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,7 +49,7 @@ GET /user/profile/account
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -67,7 +68,7 @@ GET /user/profile/account
 }-->
 
 ```http
-GET https://graph.microsoft.com/Beta/user/profile/account
+GET https://graph.microsoft.com/beta/user/profile/accounts/{id}
 ```
 
 ### <a name="response"></a>Отклик
@@ -87,22 +88,31 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "ageGroup": "ageGroup-value",
-  "countryCode": "countryCode-value",
-  "preferredLanguageTag": {
-    "locale": "locale-value",
-    "displayName": "displayName-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "userPrincipalName": "userPrincipalName-value"
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "ageGroup": "adult",
+  "countryCode": "NO",
+  "preferredLanguageTag": null,
+  "userPrincipalName": "innocenty.popov@adventureworks.com"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get userAccountInformation",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

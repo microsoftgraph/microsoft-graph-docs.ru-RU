@@ -4,13 +4,13 @@ description: Предоставляет город, область и стран
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: fbe356cf939236e1965a2a7005d791bc3a814acc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: SarahBar
+ms.openlocfilehash: eb4208820c1654a5b8db0d4afa2eeb1df4fb2b53
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520585"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808594"
 ---
 # <a name="signinlocation-resource-type"></a>Тип ресурса signInLocation
 
@@ -26,7 +26,7 @@ ms.locfileid: "42520585"
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|Предоставляет широту, долготу и высоту, на которой поступил вход.|
 |state|String|Предоставляет состояние, в котором поступил вход. Рассчитывается с использованием информации о широте и долготе из действия, выполняемого при входе.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

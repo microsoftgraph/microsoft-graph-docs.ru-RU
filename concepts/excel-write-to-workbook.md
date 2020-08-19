@@ -4,12 +4,12 @@ description: q=excelstarter).
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 1dd914289342a80a3efbe258a0bfad30506d63f1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 0f78069ae88cfcc7ac7ab18cd17f0ace61d24631
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793670"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806732"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>Запись данных в книгу Excel с помощью Microsoft Graph
 
@@ -31,12 +31,14 @@ REST API для Excel обеспечивает простой независим
 
 Текст запроса POST выглядит указанным ниже образом.
 
-`{
+```json
+{
   "index": null,
   "values": [
     ['alex darrow', 'adarrow@tenant.onmicrosoft.com']
   ]
-}`
+}
+```
 
 Значение первого параметра `index` указывает относительное положение строки, которую вы добавляете в массив строк, нумерация элементов которого начинается с нуля. Строки, расположенные ниже вставляемой строки, будут сдвинуты вниз. Параметр `null` указывает, что новая строка будет добавлена в конец.
 
@@ -52,52 +54,56 @@ REST API для Excel обеспечивает простой независим
 
 В файле `GraphResources.cs` есть вспомогательный класс для инкапсуляции пользовательских данных, которые вы получаете из Microsoft Graph, и тело запроса, которое вы будете использовать для записи данных в книгу.
 
-    public class UserInfo
-    {
-        public string Name { get; set; }
-        public string Address { get; set; }
+```csharp
+public class UserInfo
+{
+    public string Name { get; set; }
+    public string Address { get; set; }
 
-    }
+}
 
-    public class UserInfoRequest
-    {
-        public string index { get; set; }
-        public string[][] values { get; set; }
-    }
+public class UserInfoRequest
+{
+    public string index { get; set; }
+    public string[][] values { get; set; }
+}
+```
 
 Класс `GraphService.cs` содержит метод `AddInfoToExcel`, который заполняет эти классы, сериализует информацию в запросе в объект JSON, а затем передает этот объект в качестве тела запроса POST.
 
-        public async Task<string> AddInfoToExcel(string accessToken, string name, string address)
+```csharp
+public async Task<string> AddInfoToExcel(string accessToken, string name, string address)
+{
+    string endpoint = "https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add";
+    using (var client = new HttpClient())
+    {
+        using (var request = new HttpRequestMessage(HttpMethod.Post, endpoint))
         {
-            string endpoint = "https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add";
-            using (var client = new HttpClient())
+            // Populate UserInfoRequest object
+            string[] userInfo = { name, address  };
+            string[][] userInfoArray = { userInfo };
+            UserInfoRequest userInfoRequest = new UserInfoRequest();
+            userInfoRequest.index = null;
+            userInfoRequest.values = userInfoArray;
+
+            // Serialize the information in the UserInfoRequest object
+            string jsonBody = JsonConvert.SerializeObject(userInfoRequest);
+            request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+            request.Content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
+
+            using (var response = await client.SendAsync(request))
             {
-                using (var request = new HttpRequestMessage(HttpMethod.Post, endpoint))
+                if (response.IsSuccessStatusCode)
                 {
-                    // Populate UserInfoRequest object
-                    string[] userInfo = { name, address  };
-                    string[][] userInfoArray = { userInfo };
-                    UserInfoRequest userInfoRequest = new UserInfoRequest();
-                    userInfoRequest.index = null;
-                    userInfoRequest.values = userInfoArray;
-
-                    // Serialize the information in the UserInfoRequest object
-                    string jsonBody = JsonConvert.SerializeObject(userInfoRequest);
-                    request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-                    request.Content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
-
-                    using (var response = await client.SendAsync(request))
-                    {
-                        if (response.IsSuccessStatusCode)
-                        {
-                            return Resource.Graph_UploadToExcel_Success_Result;
-                        }
-                        return response.ReasonPhrase;
-                    }
+                    return Resource.Graph_UploadToExcel_Success_Result;
                 }
+                return response.ReasonPhrase;
             }
         }
+    }
+}
+```
 
 ## <a name="add-a-row-or-rows-to-an-excel-workbook-in-angular"></a>Добавление одной или нескольких строк в книгу Excel в Angular
 
@@ -107,25 +113,27 @@ REST API для Excel обеспечивает простой независим
 
 Функция `addInfoToExcel` в файле `home.service.ts` создает двумерный строковый массив и тело запроса, содержащее массив. Затем с помощью клиентской библиотеки JavaScript для Microsoft Graph она создает и отправляет запрос. Ответ возвращается в виде обещания.
 
-      addInfoToExcel(user: MicrosoftGraph.User) {
-        const userInfo = [];
-        const userEmail = user.mail || user.userPrincipalName;    
-        userInfo.push([user.displayName, userEmail]);
+```typescript
+addInfoToExcel(user: MicrosoftGraph.User) {
+  const userInfo = [];
+  const userEmail = user.mail || user.userPrincipalName;
+  userInfo.push([user.displayName, userEmail]);
 
-        const userInfoRequestBody = {
-          index: null,
-          values: userInfo
-        };   
+  const userInfoRequestBody = {
+    index: null,
+    values: userInfo
+  };
 
-        const body = JSON.stringify(userInfoRequestBody);
+  const body = JSON.stringify(userInfoRequestBody);
 
-        var client = this.getClient();
-        var url = `${this.url}/me/drive/root:/${this.file}:/workbook/tables/${this.table}/rows/add`
-        return Observable.fromPromise(client
-        .api(url)
-        .post(body)
-        );
-      }
+  var client = this.getClient();
+  var url = `${this.url}/me/drive/root:/${this.file}:/workbook/tables/${this.table}/rows/add`
+  return Observable.fromPromise(client
+  .api(url)
+  .post(body)
+  );
+}
+```
 
 ## <a name="add-a-row-or-rows-to-an-excel-workbook-in-react"></a>Добавление одной или нескольких строк в книгу Excel в React
 
@@ -133,26 +141,28 @@ REST API для Excel обеспечивает простой независим
 
 Функция `onWriteToExcel` создает двумерный строковый массив и передает его в виде тела запроса. Для осуществления HTTP-запроса в ней используется [axios](https://www.npmjs.com/package/axios).
 
-      onWriteToExcel() {
-        const { token, me } = this.state;
+```typescript
+onWriteToExcel() {
+  const { token, me } = this.state;
 
-        const myEmailAddress = me.mail || me.userPrincipalName;
-        const values = [];
+  const myEmailAddress = me.mail || me.userPrincipalName;
+  const values = [];
 
-        values.push([me.displayName, myEmailAddress]);
+  values.push([me.displayName, myEmailAddress]);
 
-        axios
-          .post('https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add',
-            { index: null, values },
-            { headers: { Authorization: `Bearer ${token}` }}
-          )
-          .then(res => {
-                          console.log(res);
-                          const successMessage = "Successfully wrote your data to demo.xlsx!";
-                          this.setState ({ successMessage });
-                         })
-          .catch(err => console.error(err));
-      }
+  axios
+    .post('https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add',
+      { index: null, values },
+      { headers: { Authorization: `Bearer ${token}` }}
+    )
+    .then(res => {
+                    console.log(res);
+                    const successMessage = "Successfully wrote your data to demo.xlsx!";
+                    this.setState ({ successMessage });
+                    })
+    .catch(err => console.error(err));
+}
+```
 
 ## <a name="see-also"></a>См. также
 
@@ -160,4 +170,4 @@ REST API для Excel обеспечивает простой независим
 * [Использование функций книг в Excel с помощью Microsoft Graph](excel-use-functions.md)
 * [Обновление формата диапазона в Excel с помощью Microsoft Graph](excel-update-range-format.md)
 * [Показ изображения диаграммы в Excel с помощью Microsoft Graph](excel-display-chart-image.md)
-* [Использование REST API для Excel](/graph/api/resources/excel?view=graph-rest-1.0)    
+* [Использование REST API для Excel](/graph/api/resources/excel?view=graph-rest-1.0)

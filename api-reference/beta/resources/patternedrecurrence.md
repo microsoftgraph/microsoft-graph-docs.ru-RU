@@ -4,13 +4,13 @@ description: Расписание и диапазон повторения.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: b26a5272611e27ffe29afc0254c1d1384f6a9c69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: harini84
+ms.openlocfilehash: 7ca993e0639e532338ade3c3e1dc57d1baf284fc
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521992"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807159"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Тип ресурса patternedRecurrence
 
@@ -26,7 +26,7 @@ ms.locfileid: "42521992"
 |pattern|[recurrencePattern](recurrencepattern.md)|Частота события.|
 |range|[recurrenceRange](recurrencerange.md)|Продолжительность события.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

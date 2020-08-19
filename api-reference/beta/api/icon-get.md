@@ -3,14 +3,14 @@ title: Получение объекта Icon
 description: Получение свойств и связей объекта значка.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: b80e1808cc7d9103d121d4972456d378cb7c9951
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ffa039d326c243dbabc9673a15711cea775e26a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446517"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807313"
 ---
 # <a name="get-icon"></a>Получение объекта Icon
 
@@ -42,7 +42,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

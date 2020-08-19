@@ -4,13 +4,13 @@ description: Представляет веб-сайт.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: ebdfef4a8ee4e11c2993dbd97a735c6e01960b6b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: AAmatino
+ms.openlocfilehash: 758d802a67979c4e43aefcdb4e8a3998be15b993
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519430"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809301"
 ---
 # <a name="website-resource-type"></a>Тип ресурса веб-сайта
 
@@ -28,7 +28,7 @@ ms.locfileid: "42519430"
 |address|string|URL-адрес веб-сайта.|
 |displayName|string|Отображаемое имя веб-сайта.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

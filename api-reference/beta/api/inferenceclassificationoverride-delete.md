@@ -3,14 +3,14 @@ title: Удаление объекта inferenceClassificationOverride
 description: Удаление отсортированного переопределения папки "Входящие", указанного с помощью идентификатора.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: svpsiva
 ms.prod: ''
-ms.openlocfilehash: 46596a8b8bd535d491447d5f5361aa341f72fe8f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7565fadfa68bca6c61b8d268f36a93f95c48a2a1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446403"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807222"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Удаление объекта inferenceClassificationOverride
 
@@ -39,10 +39,10 @@ DELETE /users/{id}/inferenceClassification/overrides/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 

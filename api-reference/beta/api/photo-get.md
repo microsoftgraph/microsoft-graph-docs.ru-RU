@@ -4,13 +4,13 @@ description: Получение свойств и связей объекта ф
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: a7aa378695d6d1937340df734009844d9cc69efb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: MSGraphDocsVteam
+ms.openlocfilehash: 5f010abf89299b9e25660205f5180c2bd068af57
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455846"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806767"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -43,7 +43,7 @@ GET /drive/root/createdByUser/photo
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

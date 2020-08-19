@@ -4,13 +4,13 @@ description: Страница в записной книжке OneNote.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: bf3410923cdcc7d48c78d6872e5fc6c20f4cf619
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: jewan-microsoft
+ms.openlocfilehash: d219677c70be566b5039a39c5421c91a9ab11c8c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522332"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809376"
 ---
 # <a name="onenotepage-resource-type"></a>Тип ресурса Оненотепаже
 
@@ -30,12 +30,12 @@ ms.locfileid: "42522332"
 |id|String|Уникальный идентификатор страницы.  Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения страницы. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |степень|Int32|Уровень отступа страницы. Только для чтения.|
-|links|[пажелинкс](pagelinks.md)|Ссылки для открытия страницы. `oneNoteClientURL` Ссылка открывает страницу в собственном клиенте OneNote, если она установлена. `oneNoteWebUrl` Ссылка открывает страницу в OneNote в Интернете. Только для чтения.|
+|links|[пажелинкс](pagelinks.md)|Ссылки для открытия страницы. `oneNoteClientURL`Ссылка открывает страницу в собственном клиенте OneNote, если она установлена. `oneNoteWebUrl`Ссылка открывает страницу в OneNote в Интернете. Только для чтения.|
 |порядке|Int32|Порядок страницы в родительском разделе. Только для чтения.|
 |Self|String|Конечная точка, в которой можно получить сведения о странице. Только для чтения.|
-|title|Строка|Заголовок страницы. |
+|title|String|Заголовок страницы. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |parentNotebook|[notebook](notebook.md)|Записная книжка, содержащая страницу.  Только для чтения.|
@@ -50,7 +50,7 @@ ms.locfileid: "42522332"
 |[Удаление страницы](../api/page-delete.md) | Нет |Удаление страницы. |
 |[copyToSection](../api/page-copytosection.md)| Нет |Копирует страницу в определенный раздел.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -61,7 +61,7 @@ ms.locfileid: "42522332"
     "parentSection"
   ],
   "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",  
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.onenotePage"
 }-->
 

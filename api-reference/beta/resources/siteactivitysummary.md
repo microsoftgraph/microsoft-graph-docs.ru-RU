@@ -4,13 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 0e24da683b2abe319a60e5a51144a96f9ec00135
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: f629d8b60179e83515af1e9fa5d86e55e7681f17
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520550"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807908"
 ---
 # <a name="siteactivitysummary-resource-type"></a>Тип ресурса Ситеактивитисуммари
 
@@ -26,9 +26,9 @@ ms.locfileid: "42520550"
 | шарединтерналли  | Int64  |
 | шаредекстерналли  | Int64  |
 | reportDate        | Дата   |
-| репортпериод      | Строка |
+| репортпериод      | String |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -39,12 +39,12 @@ ms.locfileid: "42520550"
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "viewedOrEdited": 1024, 
-  "synced": 1024, 
-  "sharedInternally": 1024, 
-  "sharedExternally": 1024, 
-  "reportDate": "Date", 
+  "reportRefreshDate": "Date",
+  "viewedOrEdited": 1024,
+  "synced": 1024,
+  "sharedInternally": 1024,
+  "sharedExternally": 1024,
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

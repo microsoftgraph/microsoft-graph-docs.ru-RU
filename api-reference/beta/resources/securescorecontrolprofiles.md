@@ -4,13 +4,13 @@ description: Представляет уровень безопасности к
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 7dfca5eedebe7f2fe524c79cee52e5855af7f291
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 3eeb7b0bd1575a336cdeb9ff73e808a057f61743
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520866"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807488"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>Тип ресурса Секурескореконтролпрофиле
 
@@ -34,7 +34,7 @@ ms.locfileid: "42520866"
 |:--|:--|:--|
 |   azureTenantId   |   String  |   Строка GUID для идентификатора клиента.  |
 |   контролнаме |   String  |   Имя элемента управления. |
-|   title   |   Строка  |   Название элемента управления.   |
+|   title   |   String  |   Название элемента управления.   |
 | комплианцеинформатион | Коллекция [комплианцеинформатион](complianceinformation.md) | Коллекция сведений о соответствии, связанных с контролем безопасности по показателю |
 |   контролкатегори |   String  |   Категория действий управления (учетная запись, данные, устройство, приложения, инфраструктура).  |
 |   actionType  |   String  |   Тип действия управления (config, проверка, поведение). |
@@ -45,14 +45,14 @@ ms.locfileid: "42520866"
 |   имплементатионкост |    String  |   Стоимость ресурсов элемента управления имплемментатинг (минимальная, средняя, высокая). |
 |   rank |  Int32   |   Ранжирование стека для элемента управления корпорации Майкрософт.   |
 |   угроз |   Коллекция String   |   Список угроз, по которым элемент управления уменьшается (Аккаунтбреач, Датаексфилтратион,,, elevationOfPrivilege, МалиЦиаусинсидер, Пассвордкраккинг, Фишингорвхалинг, подмена). |
-|   устаревшие |    Boolean |   Флаг, указывающий, является ли элемент управления амортизировано.   |
+|   устаревшие |    Логический |   Флаг, указывающий, является ли элемент управления амортизировано.   |
 |   исправления |   String  |   Описание того, что будет исправлено элементом управления. |
 |   ремедиатионимпакт | String  |   Описание влияния на пользователей об исправлении. |
 |   актионурл | String  |   URL-адрес, по которому можно выполнить действия с элементом управления. |
 |   контролстатеупдатес | Коллекция [секурескореконтролстатеупдате](securescorecontrolstateupdate.md) |    Флаг, указывающий, где клиент пометил элемент управления (Ignore, thirdParty, проверен) (поддерживает [Обновление](../api/securescorecontrolprofiles-update.md)). |
 |   vendorInformation | [securityVendorInformation](securityvendorinformation.md) |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

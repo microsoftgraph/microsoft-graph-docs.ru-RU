@@ -5,16 +5,18 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: Sharepoint
 author: mohitpcad
-ms.openlocfilehash: a363b3650e0f79e066f3812b7f4b8280c59bc7d8
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 2aa182f2af6e832e118bf889cae375e5b349c937
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539447"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806648"
 ---
+# <a name="microsoft-graph-termstore-enumeration-values"></a>Значения перечисления банка терминов Microsoft Graph
+
 Пространство имен: Microsoft. Graph. банка
 
-### <a name="relationtype-values"></a>значения Релатионтипе 
+### <a name="relationtype-values"></a>значения Релатионтипе
 
 Указывает, какие типы значений могут принимать связи в банке терминов
 
@@ -23,7 +25,7 @@ ms.locfileid: "46539447"
 |крепления|
 |использованием|
 
-### <a name="termgroupscope-values"></a>значения Термграупскопе 
+### <a name="termgroupscope-values"></a>значения Термграупскопе
 
 Указывает значения, которые могут принимать различные типы групп в пределах банка терминов.
 

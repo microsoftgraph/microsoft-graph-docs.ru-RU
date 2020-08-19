@@ -4,13 +4,13 @@ description: Тип участника.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: f1487523d89dc6677f2fc04b62013e7db9602b92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: harini84
+ms.openlocfilehash: 5ad86fd3cd1ec6818c6f8466f5ff47a90b17dc94
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508138"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807201"
 ---
 # <a name="attendeebase-resource-type"></a>Тип ресурсов attendeeBase
 
@@ -22,7 +22,7 @@ ms.locfileid: "42508138"
 
 Тип, производный от [recipient](recipient.md).
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление JSON ресурса.
 

@@ -4,13 +4,13 @@ description: Представляет часовой пояс. Поддержи�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 3deae74f1ffc991e6e9178a46575c21d69272d2c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 7b6e91853f595e4213b87178e87cf49fb1b64579
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519682"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806522"
 ---
 # <a name="timezoneinformation-resource-type"></a>Тип ресурса timeZoneInformation
 
@@ -26,7 +26,7 @@ ms.locfileid: "42519682"
 |alias|string|Идентификатор часового пояса.|
 |displayName|string|Отображаемое имя часового пояса.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

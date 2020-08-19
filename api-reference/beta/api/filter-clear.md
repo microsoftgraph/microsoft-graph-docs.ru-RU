@@ -3,14 +3,14 @@ title: 'Filter: clear'
 description: Сброс фильтра для определенного столбца.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 1f2a766167a629b976caadd7698884c794f2be68
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba049e3137e52d9e3450757078cec87c1eb57e78
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421650"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807353"
 ---
 # <a name="filter-clear"></a>Filter: clear
 
@@ -75,7 +75,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,

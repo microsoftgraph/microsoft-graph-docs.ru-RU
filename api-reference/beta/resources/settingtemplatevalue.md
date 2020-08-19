@@ -4,13 +4,13 @@ description: Представляет определение отдельног�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: cbd53a704e37b6f0cfa15cc875d5de000627b76c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: dkershaw10
+ms.openlocfilehash: 024007ef05edbb4c3e2e9f8cc901d654734a39ab
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520761"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806270"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>Тип ресурса Сеттингтемплатевалуе
 
@@ -26,7 +26,7 @@ ms.locfileid: "42520761"
 |:---------------|:--------|:----------|
 |Значение|string|Значение по умолчанию для параметра. Только для чтения.|
 |description|string|Описание параметра. Только для чтения.|
-|name|строка|Имя параметра. Только для чтения.|
+|name|string|Имя параметра. Только для чтения.|
 |type|string|Тип параметра. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON

@@ -4,13 +4,13 @@ description: Событие риска, обнаруженное защитой 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 29f04e030fe45fda34148902a455451e08e76324
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: cloudhandler
+ms.openlocfilehash: 4fbad6d2b2cc736167f313ad6f70b8f0aea2e63b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336047"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806564"
 ---
 # <a name="locatedriskevent-resource-type"></a>Тип ресурса Локатедрискевент
 

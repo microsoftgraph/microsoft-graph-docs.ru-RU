@@ -4,13 +4,13 @@ description: Представляет определенное имя для д�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
-author: ''
-ms.openlocfilehash: 17b9e7a04a2524febcb949829b626bc6efe6b779
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: 5d308669196945ebbd18431000ac5836ed4194cf
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519213"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807383"
 ---
 # <a name="workbooknameditem-resource-type"></a>Тип ресурса Воркбукнамедитем
 
@@ -47,7 +47,7 @@ ms.locfileid: "42519213"
 |:---------------|:--------|:----------|
 |worksheet|[воркбукворкшит](workbookworksheet.md)|Возвращает лист, к которому относится именованный элемент. Доступно, только если элемент относится к листу. Только для чтения.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -69,7 +69,7 @@ ms.locfileid: "42519213"
   "type": "string",
   "value": "string",
   "visible": true
-  
+
 }
 
 ```

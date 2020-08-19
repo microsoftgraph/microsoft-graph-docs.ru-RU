@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 571a298bec352362f0796b953b00a6df010b1ce0
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: ebcdd31572f01c88ece9c92ed5cfbd79cdd30679
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228747"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807712"
 ---
 # <a name="update-personanniversary"></a>Обновление Персонанниверсари
 
@@ -35,7 +35,8 @@ ms.locfileid: "43228747"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/anniversaries/{id} 
+PATCH /me/profile/anniversaries/{id}
+PATCH /users/{id | userPrincipalName}/profile/anniversaries/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -49,10 +50,14 @@ PATCH /me/profile/anniversaries/{id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип        | Описание                                                      |
-|:-------------|:------------|:-----------------------------------------------------------------|
-|date          |Date         | Содержит дату, связанную с типом юбилея.          |
-|type          |string       | Возможные значения: `birthday`, `wedding`, `unknownFutureValue`.|
+В следующей таблице приведены свойства, которые можно обновлять в существующем объекте [персонанниверсари](../resources/personanniversary.md) в [профиле](../resources/profile.md)пользователя.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|date|Date|Содержит дату, связанную с типом юбилея.|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|type|анниверсаритипе|Тип юбилея даты. Возможные значения: `birthday`, `wedding`, `unknownFutureValue`.|
 
 ## <a name="response"></a>Отклик
 
@@ -75,8 +80,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "allowedAudiences": "contacts"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -110,17 +114,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "contacts",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "type": "birthday",
+  "date": "Date"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update personanniversary",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

@@ -3,14 +3,14 @@ title: Получение объекта FormatProtection
 description: Получение свойств и связей объекта FormatProtection.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 089ccdeec3a371d56e38121ae805cc49d4b75b2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de7af7dc7fa5004f82180c7d8d9ec208b6eb0cf6
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421624"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807355"
 ---
 # <a name="get-formatprotection"></a>Получение объекта FormatProtection
 
@@ -43,7 +43,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

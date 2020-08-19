@@ -4,13 +4,13 @@ description: 'Классификация сообщений пользовате
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: ebd2a76a58e23fce51afcec5ffec8891859172aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: e2055e49d627edc4492df622f916518ca0ab71df
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496217"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809441"
 ---
 # <a name="inferenceclassification-resource-type"></a>Тип ресурса inferenceClassification
 
@@ -18,7 +18,7 @@ ms.locfileid: "42496217"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Классификация сообщений пользователя, позволяющая сосредоточиться на самых важных сообщениях. 
+Классификация сообщений пользователя, позволяющая сосредоточиться на самых важных сообщениях.
 
 Дополнительные сведения см. в статье [Управление сортировкой почты](manage-focused-inbox.md).
 
@@ -40,7 +40,7 @@ ms.locfileid: "42496217"
 |:---------------|:--------|:----------|
 |overrides|Коллекция объектов [inferenceClassificationOverride](inferenceclassificationoverride.md)| Набор переопределений пользователя, классифицирующих сообщения от определенных отправителей указанными способами: `focused` или `other`. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

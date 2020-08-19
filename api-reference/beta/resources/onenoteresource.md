@@ -4,13 +4,13 @@ description: 'Изображение или другой файловый рес
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 0f87d5f9606f0d178d4a92ad6b4d3038799f5c5f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: jewan-microsoft
+ms.openlocfilehash: fc4f3962e5be1eeb69598548067b61aa86c9c246
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522325"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806299"
 ---
 # <a name="onenoteresource-resource-type"></a>Тип ресурса Оненотересаурце
 
@@ -18,7 +18,7 @@ ms.locfileid: "42522325"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Изображение или другой файловый ресурс на странице OneNote. 
+Изображение или другой файловый ресурс на странице OneNote.
 
 Вы можете получить двоичные данные ресурса, но получение представления объекта ресурса или коллекции ресурсов в формате JSON не поддерживается.
 
@@ -51,19 +51,19 @@ GET ../onenote/pages/{id}/content
 
 В HTML-коде страницы `img` тег включает конечные точки для исходного ресурса изображения в `data-fullres-src` атрибуте и оптимизированное изображение в `src` атрибуте:
 ```
-<img 
-    src="image-resource-url"  
+<img
+    src="image-resource-url"
     data-src-type="media-type"
-    data-fullres-src="image-resource-url"  
+    data-fullres-src="image-resource-url"
     data-fullres-src-type="media-type" ... />
 ```
 
-`object` Тег, представляющий файлы, такие как PDF, docx и PNG, включает конечную точку для ресурса файла в `data` атрибуте:
+`object`Тег, представляющий файлы, такие как PDF, docx и PNG, включает конечную точку для ресурса файла в `data` атрибуте:
 
 ```
 <object
     data="file-resource-url"
-    data-attachment="file-name.file-type" 
+    data-attachment="file-name.file-type"
     type="media-type" ... />
 ```
 
@@ -73,7 +73,7 @@ GET ../onenote/pages/{id}/content
 | content | Модель EDM. Stream||
 | contentUrl | String ||
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 429e26ef14ed461c61f00072cdad878f59d5870f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 23e0e1098bed5260cdea1d92afccf34888336132
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451604"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809189"
 ---
 # <a name="update-useraccountinformation"></a>Обновление усераккаунтинформатион
 
@@ -35,7 +35,8 @@ ms.locfileid: "42451604"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/account/{id}
+PATCH /me/profile/accounts/{id}
+PATCH /users/{id | userPrincipalName}/profile/accounts/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -43,18 +44,18 @@ PATCH /me/profile/account/{id}
 | Имя           |Описание                 |
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type   | application/json. Обязательна |
+| Content-Type   | application/json. Обязательно |
 
 ## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство            | Тип                                    | Описание                                                                                    |
-|:--------------------|:----------------------------------------|:-----------------------------------------------------------------------------------------------|
-|ageGroup             |String                                   |Показывает группу возрастных пользователей. Допустимые `null`значения `minor`, `notAdult` и `adult`. Только для чтения. |
-|countryCode          |String                                   |Содержит два символа countryCode, связанных с учетной записью "Пользователи".                       |
-|преферредлангуажетаг |[localeInfo](../resources/localeinfo.md) |Содержит язык, который пользователь связал с учетной записью как предпочитаемый.                     |
-|userPrincipalName    |String                                   |Имя участника-пользователя (UPN) пользователя, связанного с учетной записью.                          |
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|countryCode|String|Содержит двухбуквенный код страны, связанный с учетной записью пользователя.  |
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|преферредлангуажетаг|[localeInfo](../resources/localeinfo.md)|Содержит язык, который пользователь связал с учетной записью как предпочитаемый.   |
 
 ## <a name="response"></a>Ответ
 
@@ -77,13 +78,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/account/{id}
 Content-type: application/json
 
 {
-  "ageGroup": "ageGroup-value",
-  "countryCode": "countryCode-value",
-  "preferredLanguageTag": {
-    "locale": "locale-value",
-    "displayName": "displayName-value"
-  },
-  "userPrincipalName": "userPrincipalName-value"
+  "countryCode": "NO"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -118,22 +113,31 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "ageGroup": "ageGroup-value",
-  "countryCode": "countryCode-value",
-  "preferredLanguageTag": {
-    "locale": "locale-value",
-    "displayName": "displayName-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "userPrincipalName": "userPrincipalName-value"
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "ageGroup": "adult",
+  "countryCode": "NO",
+  "preferredLanguageTag": null,
+  "userPrincipalName": "innocenty.popov@adventureworks.com"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update useraccountinformation",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

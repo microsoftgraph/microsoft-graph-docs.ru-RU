@@ -4,13 +4,13 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: ec4b6ba22aceaaaeb3c612f61eb522bfe14243c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 5b50c67dff87121caf225ff7191ea8f377616522
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496868"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807943"
 ---
 # <a name="hostsecuritystate-resource-type"></a>Тип ресурса Хостсекуритистате
 
@@ -25,16 +25,16 @@ ms.locfileid: "42496868"
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
 |полным|String|ПОЛНОЕ доменное имя узла (полное доменное имя) (например, machine.company.com).|
-|исазуреааджоинед|Boolean|True, если узел подключен к доменным службам Azure Active Directory.|
-|исазуреаадрегистеред|Boolean|True, если узел зарегистрирован с регистрацией устройств Azure Active Directory (BYOD Devices — то есть, не полностью управляется предприятием).|
-|ишибридазуредомаинжоинед|Boolean|True, если узел является доменом, присоединенным к локальному домену Active Directory.|
+|исазуреааджоинед|Логический|True, если узел подключен к доменным службам Azure Active Directory.|
+|исазуреаадрегистеред|Логический|True, если узел зарегистрирован с регистрацией устройств Azure Active Directory (BYOD Devices — то есть, не полностью управляется предприятием).|
+|ишибридазуредомаинжоинед|Логический|True, если узел является доменом, присоединенным к локальному домену Active Directory.|
 |нетбиоснаме|String|Имя локального узла без DNS-имени домена.|
 |совместим|String|Хост операционной системы. (Например, Windows10, MacOS, РХЕЛ и т. д.).|
 |приватеипаддресс|String|Частный (без маршрутизации) IPv4-или IPv6-адрес (см. [RFC 1918](https://tools.ietf.org/html/rfc1918)) на момент оповещения.|
 |публиЦипаддресс|String|IPv4-или IPv6-адрес общедоступной маршрутизации (см. [RFC 1918](https://tools.ietf.org/html/rfc1918)) во время оповещения.|
 |riskScore|String|Полученный поставщиком и вычисляемый показатель риска для узла.  Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

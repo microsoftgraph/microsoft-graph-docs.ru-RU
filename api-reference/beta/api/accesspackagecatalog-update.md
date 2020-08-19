@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3145fcd5fda95bb9c76763bf804ef3a4f4cce7d7
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: 213d771186f770b1c4ef791ec0d239d09d0afdfe
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757482"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806439"
 ---
 # <a name="update-accesspackagecatalog"></a>Обновление Акцесспаккажекаталог
 
@@ -26,7 +26,7 @@ ms.locfileid: "46757482"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,7 +50,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPac
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя каталога пакетов Access.|
+|displayName|String|Имя каталога пакетов Access.|
 |description|String|Описание каталога пакетов Access.|
 
 ## <a name="response"></a>Отклик
@@ -61,6 +61,8 @@ PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPac
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accesspackagecatalog"
@@ -75,6 +77,20 @@ Content-length: 39
   "displayName":"Catalog One"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accesspackagecatalog-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackagecatalog-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackagecatalog-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

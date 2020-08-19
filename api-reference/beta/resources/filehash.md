@@ -4,13 +4,13 @@ description: Содержит сведения о состоянии хэшей 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: a163a89e1e7ca7cb2a6bdf4c65945a601323d8fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 670addd8cc244ed5c97ceaca0b9544382d80ec92
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498240"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806585"
 ---
 # <a name="filehash-resource-type"></a>Тип ресурса fileHash
 
@@ -25,7 +25,7 @@ ms.locfileid: "42498240"
 |хаштипе|Перечисление [филехаштипе](filehashtypeenumtype.md)|Тип хэша файла. Возможные значения: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
 |хашвалуе|String|Значение хэша файла.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

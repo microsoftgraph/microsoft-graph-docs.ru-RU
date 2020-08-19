@@ -5,20 +5,95 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: a13c6025eaf83866701ea9f5a077dc34266d70e0
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 3fe3fea58f57ea2ba977b3d913c2e90051058046
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509891"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806620"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
 Пространство имен: microsoft.graph
 
+### <a name="allowedaudiences-values"></a>значения Алловедаудиенцес
+
+|Элемент|
+|:---|
+|me|
+|системами|
+|contacts|
+|граупмемберс|
+|organization|
+|федератедорганизатионс|
+|просматривающи|
+|unknownFutureValue|
+
+### <a name="emailtype-values"></a>значения Емаилтипе
+
+|Элемент|
+|:---|
+|unknown|
+|work|
+|personal|
+|рабочую|
+|остальные|
+
+### <a name="anniversarytype-values"></a>значения Анниверсаритипе 
+
+|Элемент|
+|:---|
+|birthday;|
+|свадеб|
+|unknownFutureValue|
+
+### <a name="skillproficiencylevel-values"></a>значения СкиллпрофиЦиенцилевел 
+
+|Элемент|
+|:---|
+|Элементар|
+|лимитедворкинг|
+|женералпрофессионал|
+|адванцедпрофессионал|
+|квалифицирован|
+|unknownFutureValue|
+
+### <a name="languageproficiencylevel-values"></a>значения ЛангуажепрофиЦиенцилевел 
+
+|Элемент|
+|:---|
+|Элементар|
+|разговорному|
+|лимитедворкинг|
+|профессионалворкинг|
+|фуллпрофессионал|
+|нативеорбилингуал|
+|unknownFutureValue|
+
+### <a name="personrelationship-values"></a>значения Персонрелатионшип 
+
+|Элемент|
+|:---|
+|manager|
+|передачи|
+|directReport|
+|дотлинерепорт|
+|Помощник по|
+|дотлинеманажер|
+|алтернатеконтакт|
+|специалист|
+|супруги|
+|узлом|
+|ребенка|
+|родитель|
+|Спонсор|
+|емерженциконтакт|
+|остальные|
+|unknownFutureValue|
+
 ### <a name="attachmenttype-values"></a>значения attachmentType
 
-| Member
+| Элемент
 |:--------------
 | file
 | item
@@ -26,20 +101,20 @@ ms.locfileid: "46509891"
 
 ### <a name="analyticsactivitytype-values"></a>значения Аналитиксактивититипе
 
-| Member
+| Элемент
 |:--------------
 | call
 | чат
-| email
+| рассылка
 | фокус
 | назначить
 
 ### <a name="registrationauthmethod-values"></a>значения Регистратионаусмесод
 
-|Member|
+|Элемент|
 |:---|
-|email|
-|mobilePhone|
+|рассылка|
+|mobilePhone;|
 |оффицефоне|
 |секуритикуестион|
 |аппнотификатион|
@@ -48,7 +123,7 @@ ms.locfileid: "46509891"
 
 ### <a name="entitytypes-values"></a>значения entityType
 
-|Member|
+|Элемент|
 |:---|
 |event|
 |message|
@@ -70,7 +145,7 @@ ms.locfileid: "46509891"
 
 ### <a name="scheduleentitytheme-values"></a>значения Счедулинтитисеме
 
-| Member
+| Элемент
 |:-------------------------
 | white
 | blue
@@ -89,7 +164,7 @@ ms.locfileid: "46509891"
 
 ### <a name="timeoffreasonicontype-values"></a>значения Тимеоффреасониконтипе
 
-|Member|
+|Элемент|
 |:---|
 |Нет|
 |Мойка|
@@ -116,7 +191,7 @@ ms.locfileid: "46509891"
 
 ### <a name="schedulechangestate-values"></a>значения Счедулечанжестате
 
-| Member
+| Элемент
 |:----------------------------
 |закончен
 |одобря
@@ -125,7 +200,7 @@ ms.locfileid: "46509891"
 
 ### <a name="schedulechangerequestactor-values"></a>значения Счедулечанжерекуестактор
 
-| Member
+| Элемент
 |:----------------------------
 |отправитель;
 |получатель;
@@ -135,14 +210,14 @@ ms.locfileid: "46509891"
 
 ### <a name="workforceintegrationencryptionprotocol-values"></a>значения Воркфорцеинтегратионенкриптионпротокол
 
-| Member
+| Элемент
 |:----------------------------
 |шаредсекрет
 |unknownFutureValue
 
 ### <a name="workforceintegrationsupportedentities-values"></a>значения Воркфорцеинтегратионсуппортедентитиес
 
-| Member
+| Элемент
 |:----------------------------
 |Нет
 |shift
@@ -153,7 +228,7 @@ ms.locfileid: "46509891"
 
 ### <a name="timezonestandard-values"></a>значения Тимезонестандард
 
-| Member
+| Элемент
 |:-----------------
 | под
 | IANA
@@ -173,7 +248,7 @@ ms.locfileid: "46509891"
 
 ### <a name="physicaladdresstype-values"></a>значения physicalAddressType
 
-| Member
+| Элемент
 |:-------------------------
 | unknown
 | страницу
@@ -183,7 +258,7 @@ ms.locfileid: "46509891"
 
 ### <a name="attendeetype-values"></a>значения attendeeType
 
-| Member
+| Элемент
 |:-------------------------
 | Обязательный
 | необязательный
@@ -192,7 +267,7 @@ ms.locfileid: "46509891"
 
 ### <a name="externalaudiencescope-values"></a>значения Екстерналаудиенцескопе
 
-| Member
+| Элемент
 |:-------------------------
 | Нет
 | контактсонли
@@ -201,7 +276,7 @@ ms.locfileid: "46509891"
 
 ### <a name="automaticrepliesstatus-values"></a>значения Аутоматикреплиесстатус
 
-| Member
+| Элемент
 |:-------------------------
 | отключено
 | Alwaysenabled приложение
@@ -251,7 +326,7 @@ ms.locfileid: "46509891"
 
 ### <a name="educationexternalsource-values"></a>значения Едукатионекстерналсаурце
 
-| Member
+| Элемент
 |:-------------------------
 | Гровелер
 | СУО
@@ -260,7 +335,7 @@ ms.locfileid: "46509891"
 
 ### <a name="educationgender-values"></a>значения Едукатионжендер
 
-| Member
+| Элемент
 |:-------------------------
 | женщина
 | м
@@ -270,7 +345,7 @@ ms.locfileid: "46509891"
 
 ### <a name="eventtype-values"></a>значения eventType
 
-| Member
+| Элемент
 |:-------------------------
 | синглеинстанце
 | экземпляр
@@ -280,7 +355,7 @@ ms.locfileid: "46509891"
 
 ### <a name="sensitivity-values"></a>значения чувствительности
 
-| Member
+| Элемент
 |:-------------------------
 | обычный
 | personal
@@ -290,7 +365,7 @@ ms.locfileid: "46509891"
 
 ### <a name="importance-values"></a>значения важности
 
-| Member
+| Элемент
 |:-------------------------
 | потребление
 | обычный
@@ -298,7 +373,7 @@ ms.locfileid: "46509891"
 
 
 ### <a name="educationuserrole-values"></a>значения Едукатионусерроле
-| Member
+| Элемент
 |:---------------------
 | student
 | teacher
@@ -307,7 +382,7 @@ ms.locfileid: "46509891"
 
 ### <a name="meetingmessagetype-values"></a>значения Митингмессажетипе
 
-| Member
+| Элемент
 |:-----------------
 | Нет
 | Свойство meetingrequest
@@ -319,7 +394,7 @@ ms.locfileid: "46509891"
 
 ### <a name="followupflagstatus-values"></a>значения Фолловупфлагстатус
 
-| Member
+| Элемент
 |:-------------------------
 | нотфлагжед
 | complete
@@ -328,7 +403,7 @@ ms.locfileid: "46509891"
 
 ### <a name="inferenceclassificationtype-values"></a>значения Инференцеклассификатионтипе
 
-| Member
+| Элемент
 |:-----------------
 | связаны
 | остальные
@@ -336,7 +411,7 @@ ms.locfileid: "46509891"
 
 ### <a name="iosnotificationalerttype-values"></a>значения Иоснотификатионалерттипе
 
-| Member
+| Элемент
 |:-------------------------
 | девицедефаулт
 | заголовок
@@ -345,7 +420,7 @@ ms.locfileid: "46509891"
 
 ### <a name="deviceenrollmentfailurereason-values"></a>значения Девицеенроллментфаилуререасон
 
-| Member
+| Элемент
 |:-------------
 | unknown
 | проверки подлинности
@@ -361,7 +436,7 @@ ms.locfileid: "46509891"
 
 
 ### <a name="bodytype-values"></a>значения bodyType
-| Member
+| Элемент
 |:---------
 | текст
 | html
@@ -369,9 +444,9 @@ ms.locfileid: "46509891"
 
 ### <a name="locationtype-values"></a>значения locationType
 
-| Member
+| Элемент
 |:-------------------------
-| Значение  по умолчанию
+| умолчани
 | конференцерум
 | homeAddress
 | businessAddress
@@ -384,7 +459,7 @@ ms.locfileid: "46509891"
 
 ### <a name="locationuniqueidtype-values"></a>значения Локатионуникуеидтипе
 
-| Member
+| Элемент
 |:-------------------------
 | unknown
 | локатионсторе
@@ -395,7 +470,7 @@ ms.locfileid: "46509891"
 
 ### <a name="messageactionflag-values"></a>значения Мессажеактионфлаг
 
-| Member
+| Элемент
 |:-------------------------
 | любой
 | call
@@ -404,7 +479,7 @@ ms.locfileid: "46509891"
 | сведению
 | forward
 | нореспонсенецессари
-| прочитан
+| read
 | reply
 | реплитоалл
 | Смотрите
@@ -422,7 +497,7 @@ ms.locfileid: "46509891"
 
 ### <a name="operationstatus-values"></a>значения Оператионстатус
 
-| Member
+| Элемент
 |:-----------------
 | NotStarted
 | Работает
@@ -432,7 +507,7 @@ ms.locfileid: "46509891"
 
 ### <a name="onenotepatchactiontype-values"></a>значения Оненотепатчактионтипе
 
-| Member
+| Элемент
 |:-------------------------
 | Заменить
 | Error
@@ -442,7 +517,7 @@ ms.locfileid: "46509891"
 
 ### <a name="onenotepatchinsertposition-values"></a>значения Оненотепатчинсертпоситион
 
-| Member
+| Элемент
 |:-------------------------
 | После
 | До
@@ -450,7 +525,7 @@ ms.locfileid: "46509891"
 
 ### <a name="phonetype-values"></a>значения Фонетипе
 
-| Member
+| Элемент
 |:-------------------------
 | страницу
 | подразделения
@@ -466,18 +541,18 @@ ms.locfileid: "46509891"
 
 ### <a name="plannerpreviewtype-values"></a>значения Планнерпревиевтипе
 
-| Member
+| Элемент
 |:-------------------------
 | Автоматически
 | непредварительный Просмотр
 | checklist
-| (описание)
+| description
 | ссылка
 
 
 ### <a name="status-values"></a>значения состояния
 
-| Member
+| Элемент
 |:-----------------
 | ASP
 | обновленный
@@ -488,7 +563,7 @@ ms.locfileid: "46509891"
 
 ### <a name="weekindex-values"></a>значения Викиндекс
 
-| Member
+| Элемент
 |:-------------------------
 | первыми
 | Втор
@@ -499,7 +574,7 @@ ms.locfileid: "46509891"
 
 ### <a name="dayofweek-values"></a>значения dayOfWeek
 
-| Member
+| Элемент
 |:-------------------------
 | воскресеньям
 | Вторник
@@ -511,7 +586,7 @@ ms.locfileid: "46509891"
 
 ### <a name="recurrencepatterntype-values"></a>значения Рекурренцепаттернтипе
 
-| Member
+| Элемент
 |:-------------------------
 | ежедневно
 | Табель
@@ -523,7 +598,7 @@ ms.locfileid: "46509891"
 
 ### <a name="recurrencerangetype-values"></a>значения Рекурренцеранжетипе
 
-| Member
+| Элемент
 |:-------------------------
 | endDate
 | ноенд
@@ -531,7 +606,7 @@ ms.locfileid: "46509891"
 
 
 ### <a name="onenotesourceservice-values"></a>значения Оненотесаурцесервице
-| Member
+| Элемент
 |:---------------------
 | Unknown
 | OneDrive
@@ -541,7 +616,7 @@ ms.locfileid: "46509891"
 
 ### <a name="responsetype-values"></a>значения responseType
 
-| Member
+| Элемент
 |:-------------------------
 | Нет
 | organizer
@@ -553,7 +628,7 @@ ms.locfileid: "46509891"
 
 ### <a name="activitydomain-values"></a>значения activityDomain
 
-| Member
+| Элемент
 |:-------------------------
 | unknown
 | work
@@ -563,7 +638,7 @@ ms.locfileid: "46509891"
 
 ### <a name="websitetype-values"></a>значения websiteType
 
-| Member
+| Элемент
 |:-------------------------
 | остальные
 | страницу
@@ -760,14 +835,14 @@ Enum для типов значений реестра, определенных
 
 ### <a name="scopeoperatormultivaluedcomparisontype-values"></a>значения Скопеоператормултивалуедкомпарисонтипе
 
-|Member|
+|Элемент|
 |:---|
 |ко|
 |любой|
 
 ### <a name="risklevel-values"></a>значения Рисклевел
 
-|Member|
+|Элемент|
 |:---|
 |потребление|
 |medium|
@@ -778,7 +853,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="riskstate-values"></a>значения Рискстате
 
-|Member|
+|Элемент|
 |:---|
 |Нет|
 |конфирмедсафе|
@@ -790,7 +865,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="riskdetail-values"></a>значения Рискдетаил
 
-|Member|
+|Элемент|
 |:---|
 |Нет|
 |админженератедтемпорарипассворд|
@@ -807,7 +882,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="referenceattachmentpermission-values"></a>значения referenceAttachmentPermission
 
-|Member|
+|Элемент|
 |:---|
 |остальные|
 |view|
@@ -819,7 +894,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="referenceattachmentprovider-values"></a>значения перечислений — referenceattachmentprovider
 
-|Member|
+|Элемент|
 |:---|
 |остальные|
 |онедривебусинесс|
@@ -828,7 +903,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="riskeventtype-values"></a>значения Рискевенттипе
 
-|Member|
+|Элемент|
 |:---|
 |унликелитравел|
 |анонимизедипаддресс|
@@ -848,7 +923,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="networktype-values"></a>значения Нетворктипе
 
-|Member|
+|Элемент|
 |:---|
 |Внутренняя|
 |экстрасети|
@@ -858,7 +933,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="exchangeidformat-values"></a>значения Ексчанжеидформат
 
-|Member|
+|Элемент|
 |:---|
 |Код|
 |евсид|
@@ -868,14 +943,14 @@ Enum для типов значений реестра, определенных
 
 ### <a name="attributeflowbehavior-values"></a>значения Аттрибутефловбехавиор
 
-|Member|
+|Элемент|
 |:---|
 |фловвхенчанжед|
 |фловалвайс|
 
 ### <a name="attributeflowtype-values"></a>значения Аттрибутефловтипе
 
-|Member|
+|Элемент|
 |:---|
 |Постоянное|
 |обжектаддонли|
@@ -893,13 +968,13 @@ Enum для типов значений реестра, определенных
 
 ### <a name="chatmessagetype-values"></a>значения Чатмессажетипе
 
-|Member|
+|Элемент|
 |:---|
 |message|
 
 ### <a name="chatmessageimportance-values"></a>значения Чатмессажеимпортанце
 
-|Member|
+|Элемент|
 |:---|
 |обычный|
 |высокоуровневых|
@@ -923,7 +998,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="tokenissuertype-values"></a>значения Токениссуертипе
 
-|Member|
+|Элемент|
 |:---|
 |AzureAD|
 |адфедератионсервицес|
@@ -931,7 +1006,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="riskdetectiontimingtype-values"></a>значения Рискдетектионтимингтипе
 
-|Member|
+|Элемент|
 |:---|
 |нотдефинед|
 |реальном|
@@ -941,7 +1016,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="activitytype-values"></a>значения activityType
 
-|Member|
+|Элемент|
 |:---|
 |SignIn|
 |user|
@@ -949,7 +1024,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="entitytype-values"></a>значения entityType
 
-| Member       |
+| Элемент       |
 |:--------------|
 |event|
 |message|
@@ -959,7 +1034,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="onlinemeetingprovidertype-values"></a>значения Онлинемитингпровидертипе
 
-|Member|
+|Элемент|
 |:---|
 |unknown|
 |skypeForBusiness|
@@ -968,7 +1043,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="delegatemeetingmessagedeliveryoptions-values"></a>значения Делегатемитингмессажеделиверйоптионс
 
-|Member|
+|Элемент|
 |:---|
 |сендтоделегатеандинформатионтопринЦипал|
 |сендтоделегатеандпринЦипал|
@@ -976,13 +1051,13 @@ Enum для типов значений реестра, определенных
 
 ### <a name="calendarroletype-values"></a>значения Календарролетипе
 
-|Member|
+|Элемент|
 |:---|
 |Нет|
 |фрибусиреад|
 |лимитедреад|
-|прочитан|
-|понижен|
+|read|
+|write|
 |делегатевисаутпривативентакцесс|
 |делегатевиспривативентакцесс|
 |собственный|
@@ -991,8 +1066,8 @@ Enum для типов значений реестра, определенных
 
 | Элемент  | Значение | Описание                          |
 | :------ | :---- | :----------------------------------- |
-| Значение  по умолчанию | нуль     | Контент — это файл или тип, отличный от типа электронной почты. |
-| email   | 1,1     | Контент — это электронная почта.                 |
+| умолчани | нуль     | Контент — это файл или тип, отличный от типа электронной почты. |
+| рассылка   | 1,1     | Контент — это электронная почта.                 |
 
 ### <a name="contentstate-values"></a>значения Контентстате
 
@@ -1037,14 +1112,14 @@ Enum для типов значений реестра, определенных
 
 ### <a name="conditionalaccesspolicystate"></a>кондитионалакцессполицистате
 
-|Member|
+|Элемент|
 |:---|
 |включено|
 |отключено|
 
 ### <a name="conditionalaccessclientapp"></a>кондитионалакцессклиентапп
 
-| Member       |
+| Элемент       |
 |:--------------|
 |Обозреватель|
 |современная версия|
@@ -1054,7 +1129,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="conditionalaccessgrantcontrol"></a>кондитионалакцессгрантконтрол
 
-| Member       |
+| Элемент       |
 |:--------------|
 |блок|
 |MFA|
@@ -1065,7 +1140,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="cloudappsecuritysessioncontroltype"></a>клаудаппсекуритисессионконтролтипе
 
-| Member       |
+| Элемент       |
 |:--------------|
 |мкасконфигуред|
 |мониторонли|
@@ -1073,21 +1148,21 @@ Enum для типов значений реестра, определенных
 
 ### <a name="signinfrequencytype"></a>сигнинфрекуенцитипе
 
-| Member       |
+| Элемент       |
 |:--------------|
 |срок|
 |час|
 
 ### <a name="persistentbrowsersessionmode"></a>персистентбровсерсессионмоде
 
-| Member       |
+| Элемент       |
 |:--------------|
 |Постоянное|
 |ключа|
 
 ### <a name="conditionalaccessdeviceplatform"></a>кондитионалакцессдевицеплатформ
 
-| Member       |
+| Элемент       |
 |:--------------|
 |ОС|
 |iOS|
@@ -1108,7 +1183,7 @@ Enum для типов значений реестра, определенных
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1,1     | Почтовые угрозы.            |
+| mail;   | 1,1     | Почтовые угрозы.            |
 | url    | 2     | Угроза URL-адресов.             |
 | file   | 4     | Угроза файла вложения. |
 
@@ -1123,8 +1198,8 @@ Enum для типов значений реестра, определенных
 
 | Элемент             | Значение | Описание        |
 |:-------------------|:------|:-------------------|
-| Вам               | 1,1     | Угроза нежелательной почты.       |
-| фишинговых           | 2     | Угроза фишинга.   |
+| уверенности               | 1,1     | Угроза нежелательной почты.       |
+| степенью           | 2     | Угроза фишинга.   |
 | от            | 4     | Угроза вредоносных программ.    |
 | unknownFutureValue | 4      | Элемент Sentinel. |
 
@@ -1181,7 +1256,7 @@ Enum для типов значений реестра, определенных
 
 ### <a name="riskeventtypes-values"></a>значения Рискевенттипес
 
-| Member
+| Элемент
 |:-------------------------
 | унликелитравел
 | анонимизедипаддресс
@@ -1195,7 +1270,7 @@ Enum для типов значений реестра, определенных
 | unknownFutureValue
 
 ### <a name="openidconnectresponsemode"></a>опенидконнектреспонсемоде
-| Member                
+| Элемент                
 |:----------------------
 | Нет
 | form_post
@@ -1203,7 +1278,7 @@ Enum для типов значений реестра, определенных
 | unknownFutureValue 
 
 ### <a name="openidconnectresponsetypes"></a>опенидконнектреспонсетипес
-| Member                
+| Элемент                
 |:----------------------
 | Нет
 | code

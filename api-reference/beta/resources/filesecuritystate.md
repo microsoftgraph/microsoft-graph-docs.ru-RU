@@ -4,13 +4,13 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 3827562407b0c253c1d5a16ff26071e8500010bd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: e030ce95ef2b8c5f1af5424bfdd0e727f2d3e2f6
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498170"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806543"
 ---
 # <a name="filesecuritystate-resource-type"></a>Тип ресурса объекта filesecuritystate
 
@@ -29,7 +29,7 @@ ms.locfileid: "42498170"
 |path|String|Полный путь к файлу или файлу imageFile.|
 |riskScore|String|Созданный поставщиком/вычисляемый показатель риска для файла оповещений. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

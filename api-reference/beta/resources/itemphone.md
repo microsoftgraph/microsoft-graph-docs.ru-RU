@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 4bc101ca8cbfb063fa1bba3a2ebdb4e6afc2fd57
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 0c36ea4d861738316a3ce6593c12a79a59d97c68
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229404"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809406"
 ---
 # <a name="itemphone-resource-type"></a>Тип ресурса Итемфоне
 
@@ -20,53 +20,71 @@ ms.locfileid: "43229404"
 
 Представляет подробные сведения о номерах телефонов, связанных с пользователем в различных службах.
 
+Наследуется от [итемфацет](../resources/itemfacet.md).
+
 ## <a name="methods"></a>Методы
 
-| Метод                                               | Возвращаемый тип               | Описание                                                       |
-|:-----------------------------------------------------|:--------------------------|:------------------------------------------------------------------|
-| [Получение Итемфоне](../api/itemphone-get.md)             | [итемфоне](itemphone.md) | Чтение свойств и связей объекта **итемфоне** . |
-| [Обновление Итемфоне](../api/itemphone-update.md)       | [итемфоне](itemphone.md) | Обновление объекта **итемфоне** .                                   |
-| [Удаление Итемфоне](../api/itemphone-delete.md)       | Нет                      | Удаление объекта **итемфоне** .                                   |
+|Метод|Тип возвращаемых данных|Описание|
+|:---|:---|:---|
+|[Перечисление телефонов](../api/profile-list-phones.md)|Коллекция [итемфоне](../resources/itemphone.md)|Получение ресурсов Итемфоне из свойства навигации phones.|
+|[Создание Итемфоне](../api/profile-post-phones.md)|[итемфоне](../resources/itemphone.md)|Создание нового объекта Итемфоне.|
+|[Получение Итемфоне](../api/itemphone-get.md)|[итемфоне](../resources/itemphone.md)|Чтение свойств и связей объекта [итемфоне](../resources/itemphone.md) .|
+|[Обновление Итемфоне](../api/itemphone-update.md)|[итемфоне](../resources/itemphone.md)|Обновление свойств объекта [итемфоне](../resources/itemphone.md) .|
+|[Удаление Итемфоне](../api/itemphone-delete.md)|Нет|Удаляет объект [итемфоне](../resources/itemphone.md) .|
 
 ## <a name="properties"></a>Свойства
 
-| Свойство     | Тип        | Описание                                                                                                                     |
-|:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |Строка       | Содержит понятное имя для номера телефона.                                                                                  |
-|число        |String       | Содержит номер телефона.                                                                                                      |
-|type          |string       | Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создавшего сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|displayName|String|Понятное имя, назначенное пользователю для этого номера телефона. |
+|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которое последним изменил объект. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|число|String|Номер телефона, предоставленный пользователем.|
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|type|фонетипе|Тип номера телефона в объекте. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
-Нет
+Отсутствуют.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.itemPhone",
-  "baseType": ""
-}-->
+  "baseType": "microsoft.graph.itemFacet",
+  "openType": false
+}
+-->
 
-```json
+``` json
 {
+  "@odata.type": "#microsoft.graph.itemPhone",
+  "id": "String (identifier)",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
   "displayName": "String",
-  "number": "String",
-  "type": "string"
+  "type": "String",
+  "number": "String"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "itemPhone resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

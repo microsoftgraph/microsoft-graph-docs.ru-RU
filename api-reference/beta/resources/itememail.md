@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: aaf58bd7e20caeb418946814daa7ca8f7bb9bfa3
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 0a8a69ae484afab6b558890fbd186a4850235ead
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229418"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809434"
 ---
 # <a name="itememail-resource-type"></a>Тип ресурса Итемемаил
 
@@ -20,53 +20,66 @@ ms.locfileid: "43229418"
 
 Представляет подробные сведения об адресах электронной почты, связанных с пользователем.
 
-## <a name="methods"></a>Методы
+Наследуется от [итемфацет](../resources/itemfacet.md).
 
-| Метод                                   | Возвращаемый тип               | Описание                                                      |
-|:-----------------------------------------|:--------------------------|:-----------------------------------------------------------------|
-| [получение](../api/itememail-get.md);           | [итемемаил](itememail.md) | Чтение свойств и связей объекта **итемемаил** .    |
-| [обновление](../api/itememail-update.md).     | [итемемаил](itememail.md) | Обновление объекта **итемемаил** .                                  |
-| [удаление](../api/itememail-delete.md);     | Нет                      | Удаление объекта **итемемаил** .                                  |
+## <a name="methods"></a>Методы
+|Метод|Тип возвращаемых данных|Описание|
+|:---|:---|:---|
+|[Список сообщений электронной почты](../api/profile-list-emails.md)|Коллекция [итемемаил](../resources/itememail.md)|Получение ресурсов Итемемаил из свойства навигации по электронной почте.|
+|[Создание Итемемаил](../api/profile-post-emails.md)|[итемемаил](../resources/itememail.md)|Создание нового объекта Итемемаил.|
+|[Получение Итемемаил](../api/itememail-get.md)|[итемемаил](../resources/itememail.md)|Чтение свойств и связей объекта [итемемаил](../resources/itememail.md) .|
+|[Обновление Итемемаил](../api/itememail-update.md)|[итемемаил](../resources/itememail.md)|Обновление свойств объекта [итемемаил](../resources/itememail.md) .|
+|[Удаление Итемемаил](../api/itememail-delete.md)|Нет|Удаляет объект [итемемаил](../resources/itememail.md) .|
 
 ## <a name="properties"></a>Свойства
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|address|String|Сам адрес электронной почты.|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создавшего сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|displayName|String|Имя или метка, с которыми пользователь связан с определенным адресом электронной почты.|
+|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которое последним изменил объект. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|type|емаилтипе|Тип адреса электронной почты. Возможные значения: `unknown`, `work`, `personal`, `main`, `other`.|
 
-| Свойство     | Тип        | Описание                                                               |
-|:-------------|:------------|:--------------------------------------------------------------------------|
-|address       |String       | Сам адрес электронной почты.                                                 |
-|displayName   |Строка       | Имя или метка, с которыми пользователь связан с определенным адресом электронной почты.  |
-|type          |строка       | Возможные значения: `unknown`, `work`, `personal`, `main`, `other`.      |
+## <a name="relationships"></a>Отношения
+Отсутствуют.
 
-## <a name="relationships"></a>Связи
-
-Нет
-
-## <a name="json-representation"></a>Представление JSON
-
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.itemEmail",
-  "baseType": ""
-}-->
-
-```json
+  "baseType": "microsoft.graph.itemFacet",
+  "openType": false
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.itemEmail",
+  "id": "0f30bf5d-bf5d-0f30-5dbf-300f5dbf300f",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
   "address": "String",
   "displayName": "String",
-  "type": "string"
+  "type": "String"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "itemEmail resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

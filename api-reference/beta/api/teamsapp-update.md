@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5134f4d663bcee605a5c8e3de8a932404d88fa29
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: b5de60708ec0c8a6a0e22cd4f64b847395620bd0
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790513"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806324"
 ---
 # <a name="update-teamsapp"></a>Обновление teamsApp
 
@@ -31,7 +31,7 @@ ms.locfileid: "46790513"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
 | Делегированные (рабочая или учебная учетная запись)     | CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
-| Делегированные (рабочая или учебная учетная запись) | CamlQuery. оправить|
+| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit|
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
 | Для приложений                            | Не поддерживается. |
 
@@ -94,6 +94,8 @@ Content-length: 244
 ### <a name="request"></a>Запрос
 
 <!-- markdownlint-disable MD034 -->
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_teamsapp"
@@ -106,8 +108,14 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a>Ответ
+---
+
+
+### <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и сочетание "ключ-значение" `publishingState` : `submitted` в тексте отклика. *Обратитесь к разделу* [теамсаппдефинитион](../resources/teamsappdefinition.md).
 

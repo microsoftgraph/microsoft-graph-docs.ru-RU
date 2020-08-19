@@ -4,13 +4,13 @@ description: Событие риска, обнаруженное службой 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c1fdfbfde3c1246034c885a1c8b1047408136a13
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: cloudhandler
+ms.openlocfilehash: 41d4109cb14053621baebd8383c522ad7e0ae3c0
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508326"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807572"
 ---
 # <a name="anonymousipriskevent-resource-type"></a>Тип ресурса Анонимаусиприскевент
 
@@ -46,7 +46,7 @@ ms.locfileid: "42508326"
 |userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|

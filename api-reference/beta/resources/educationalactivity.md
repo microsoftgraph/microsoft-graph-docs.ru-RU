@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: e1f4ffd3154700f59ebdd26a2213755810b561ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8ced06594426baaf9f87ff4397ac4cba0820cef
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502846"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806704"
 ---
 # <a name="educationalactivity-resource-type"></a>Тип ресурса Едукатионалактивити
 
@@ -24,55 +24,73 @@ ms.locfileid: "42502846"
 
 ## <a name="methods"></a>Методы
 
-| Метод                                                       | Возвращаемый тип                                   | Описание                                                      |
-|:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [Получение Едукатионалактивити](../api/educationalactivity-get.md) | [едукатионалактивити](educationalactivity.md) | Чтение свойств и связей объекта Едукатионалактивити. |
-| [обновление](../api/educationalactivity-update.md).               | [едукатионалактивити](educationalactivity.md) | Обновление объекта Едукатионалактивити.                               |
-| [удаление](../api/educationalactivity-delete.md);               | Нет                                          | Удаление объекта Едукатионалактивити.                               |
+|Метод|Тип возвращаемых данных|Описание|
+|:---|:---|:---|
+|[Список Едукатионалактивитиес](../api/profile-list-educationalactivities.md)|Коллекция [едукатионалактивити](../resources/educationalactivity.md)|Получение ресурсов Едукатионалактивити из свойства навигации Едукатионалактивитиес.|
+|[Создание Едукатионалактивити ](../api/profile-post-educationalactivities.md)|[едукатионалактивити](../resources/educationalactivity.md)|Создание нового объекта Едукатионалактивити.|
+|[Получение Едукатионалактивити](../api/educationalactivity-get.md)|[едукатионалактивити](../resources/educationalactivity.md)|Чтение свойств и связей объекта [едукатионалактивити](../resources/educationalactivity.md) .|
+|[Обновление Едукатионалактивити](../api/educationalactivity-update.md)|[едукатионалактивити](../resources/educationalactivity.md)|Обновление свойств объекта [едукатионалактивити](../resources/educationalactivity.md) .|
+|[Удаление Едукатионалактивити](../api/educationalactivity-delete.md)|Нет|Удаляет объект [едукатионалактивити](../resources/educationalactivity.md) .|
 
 ## <a name="properties"></a>Свойства
 
-| Свойство           | Тип                                                      | Описание                                                                |
-|:-------------------|:----------------------------------------------------------|:---------------------------------------------------------------------------|
-|комплетионмонсеар |Дата                                                       |Месяц и год, когда пользователь выполнит или выполнил действие.            |
-|ендмонсеар        |Дата                                                       |Месяц и год, когда пользователь завершил действие учебного заведения.  |
-|Организация         |[институтиондата](institutiondata.md)                      |Содержит подробные сведения о учебном заведения.                             |
-|Программа             |[едукатионалактивитидетаил](educationalactivitydetail.md)  |Содержит расширенные сведения о программе или курсе.                  |
-|стартмонсеар      |Дата                                                       |Месяц и год, когда пользователь присвоено указанному действию.              |
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|комплетионмонсеар|Дата|Месяц и год, когда пользователь выполнит или выполнил действие. |
+|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создавшего сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|ендмонсеар|Дата|Месяц и год, когда пользователь завершил действие учебного заведения.|
+|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|Организация|[институтиондата](../resources/institutiondata.md)|Содержит подробные сведения о учебном заведения. |
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которое последним изменил объект. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|Программа|[едукатионалактивитидетаил](../resources/educationalactivitydetail.md)|Содержит расширенные сведения о программе или курсе.|
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|стартмонсеар|Дата|Месяц и год, когда пользователь присвоено указанному действию.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
-
 Ниже указано представление ресурса в формате JSON.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.educationalActivity",
-  "baseType": ""
-}-->
-
-```json
+  "baseType": "microsoft.graph.itemFacet",
+  "openType": false
+}
+-->
+``` json
 {
-  "completionMonthYear": "String (timestamp)",
-  "endMonthYear": "String (timestamp)",
-  "institution": {"@odata.type": "microsoft.graph.institutionData"},
-  "program": {"@odata.type": "microsoft.graph.educationalActivityDetail"},
-  "startMonthYear": "String (timestamp)"
+  "@odata.type": "#microsoft.graph.educationalActivity",
+  "id": "String (identifier)",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
+  "completionMonthYear": "Date",
+  "endMonthYear": "Date",
+  "institution": {
+    "@odata.type": "microsoft.graph.institutionData"
+  },
+  "program": {
+    "@odata.type": "microsoft.graph.educationalActivityDetail"
+  },
+  "startMonthYear": "Date"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "educationalActivity resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

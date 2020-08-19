@@ -4,13 +4,13 @@ description: 2015-10-25 14:57:30 UTC — >
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 87de80bb6a9de28f7ed2864d630bed7e7eb4d1c4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: MSGraphDocsVteam
+ms.openlocfilehash: 32149f2f94c383cc2cfe6667396d52321a9c2bfa
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520803"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808650"
 ---
 # <a name="service-root"></a>Корневой каталог для обслуживания
 
@@ -37,7 +37,7 @@ ms.locfileid: "42520803"
 |[Список объектов subscribedSku](../api/subscribedsku-list.md) | Коллекция объектов [subscribedSku](subscribedsku.md) |Получение коллекции объектов subscribedSku. |
 |[Создание пользователя](../api/user-post-users.md) |[user](user.md)| Создание пользователя путем добавления в коллекцию пользователей.|
 |[Список пользователей](../api/user-list.md) | Коллекция объектов [user](user.md) |Получение коллекции объектов user. |
-|[Создание Коннекторграуп](../api/connectorgroup-post-connectorgroups.md) |[connectorGroup](connectorgroup.md)|Создание нового Коннекторграуп путем отправки в коллекцию Коннекторграупс.|
+|[Создание connectorGroup](../api/connectorgroup-post-connectorgroups.md) |[connectorGroup](connectorgroup.md)|Создание нового Коннекторграуп путем отправки в коллекцию Коннекторграупс.|
 |[Список Коннекторграуп](../api/connectorgroup-list.md) | Коллекция [коннекторграуп](connectorgroup.md) |Получение коллекции объектов Коннекторграуп. |
 |[Соединитель List](../api/connector-list.md) | Коллекция [соединителей](connector.md) |Получение коллекции объектов Connector. |
 

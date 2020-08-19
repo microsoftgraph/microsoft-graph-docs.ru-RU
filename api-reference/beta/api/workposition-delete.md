@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 127b13365beb5022870df7dcb5fdc8cc88a09ec7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9335b58e8f379d478f2e50e90d34c8ecfd62e3f9
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451261"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807621"
 ---
 # <a name="delete-workposition"></a>Удаление Воркпоситион
 
@@ -36,6 +36,7 @@ ms.locfileid: "42451261"
 
 ```http
 DELETE /me/profile/positions/{id}
+DELETE /users/{id | userPrincipalName}/profile/positions/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -50,7 +51,7 @@ DELETE /me/profile/positions/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -96,13 +97,3 @@ DELETE https://graph.microsoft.com/beta/me/profile/positions/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete workPosition",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

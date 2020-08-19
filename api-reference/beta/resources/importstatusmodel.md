@@ -4,13 +4,13 @@ description: Ниже представлено описание ресурса �
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: b5cc73b5401ab0761c07f6c76cb33cca8f20d83f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: MSGraphDocsVteam
+ms.openlocfilehash: 81c1896407c41d081e8b66f6429a902e0e12c8e5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496413"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807929"
 ---
 # <a name="importstatusmodel-resource-type"></a>Тип ресурса Импортстатусмодел
 
@@ -18,7 +18,7 @@ ms.locfileid: "42496413"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -42,7 +42,7 @@ ms.locfileid: "42496413"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset ||
-|id|строка||
+|id|string||
 |status|string||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: dbdae8f0035e92b1c5b74c0ef3f842d2eb5af37a
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: ae6bdc7dc16b072090a04773de93324385401f81
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228868"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809077"
 ---
 # <a name="webaccount-resource-type"></a>Тип ресурса "учетная запись"
 
@@ -24,55 +24,70 @@ ms.locfileid: "43228868"
 
 ## <a name="methods"></a>Методы
 
-| Метод                                                | Возвращаемый тип                 | Описание                                                       |
-|:------------------------------------------------------|:----------------------------|:------------------------------------------------------------------|
-| [Получение учетной записи службы](../api/webaccount-get.md)            | [Учетная запись учетной записи](webaccount.md) | Чтение свойств и связей объекта веб- **учетных записей** . |
-| [Обновление учетной записи](../api/webaccount-update.md)      | [Учетная запись учетной записи](webaccount.md) | Обновление объекта **учетной записи** .                                   |
-| [Удаление учетной записи службы](../api/webaccount-delete.md)      | Нет                        | Удаление объекта **учетной записи** .                                   |
+|Метод|Тип возвращаемых данных|Описание|
+|:---|:---|:---|
+|[Список учетных записей](../api/profile-list-webaccounts.md)|Коллекция [учетных записей](../resources/webaccount.md)|Получение ресурсов учетной записи службы из свойства навигации для учетных записей учетных записей.|
+|[Создание учетной записи](../api/profile-post-webaccounts.md)|[Учетная запись учетной записи](../resources/webaccount.md)|Создайте новый объект учетной записи.|
+|[Получение учетной записи службы](../api/webaccount-get.md)|[Учетная запись учетной записи](../resources/webaccount.md)|Чтение свойств и связей объекта веб- [учетных записей](../resources/webaccount.md) .|
+|[Обновление учетной записи](../api/webaccount-update.md)|[Учетная запись учетной записи](../resources/webaccount.md)|Обновление свойств объекта [учетной записи](../resources/webaccount.md) .|
+|[Удаление учетной записи службы](../api/webaccount-delete.md)|Нет|Удаляет объект [учетной записи](../resources/webaccount.md) .|
 
 ## <a name="properties"></a>Свойства
 
-| Свойство     | Тип                                      | Описание                                                                                    |
-|:-------------|:------------------------------------------|:-----------------------------------------------------------------------------------------------|
-|description   |String                                     | Содержит описание, предоставленное пользователем для учетной записи службы, на которую выполняется ссылка.|
-|service       |[сервицеинформатион](serviceinformation.md)| Содержит основные сведения о связанной службе.                              |
-|статусмессаже |String                                     | Содержит сообщение о состоянии от облачной службы, если оно предоставлено или синхронизировано.                  |
-|userId        |String                                     | Имя пользователя, отображаемое для учетной записи Account.                                                   |
-|webUrl        |String                                     | Содержит ссылку на профиль пользователя в облачной службе, если она существует.                      |
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создавшего сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|description|String|Содержит описание, предоставленное пользователем для учетной записи службы, на которую выполняется ссылка.|
+|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которое последним изменил объект. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|service|[сервицеинформатион](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|статусмессаже|String|Содержит сообщение о состоянии от облачной службы, если оно предоставлено или синхронизировано. |
+|userId|String|Имя пользователя, отображаемое для учетной записи Account.  |
+|webUrl|String|Содержит ссылку на профиль пользователя в облачной службе, если она существует.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
+Отсутствуют.
 
-Нет
-
-## <a name="json-representation"></a>Представление JSON
-
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.webAccount",
-  "baseType": ""
-}-->
-
-```json
+  "baseType": "microsoft.graph.itemFacet",
+  "openType": false
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.webAccount",
+  "id": "String (identifier)",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
   "description": "String",
-  "service": {"@odata.type": "microsoft.graph.serviceInformation"},
-  "statusMessage": "String",
   "userId": "String",
+  "service": {
+    "@odata.type": "microsoft.graph.serviceInformation"
+  },
+  "statusMessage": "String",
   "webUrl": "String"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "webAccount resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

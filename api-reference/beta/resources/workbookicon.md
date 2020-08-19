@@ -4,13 +4,13 @@ description: Представляет значок ячейки.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
-author: ''
-ms.openlocfilehash: 6c2cbbe26c3c1440afa8a0954bac5d0d38feea29
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: f5471c11ddc679a08430163413197df4847e8b7e
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519220"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807418"
 ---
 # <a name="workbookicon-resource-type"></a>Тип ресурса Воркбукикон
 
@@ -34,7 +34,7 @@ ms.locfileid: "42519220"
 |index|int|Представляет собой индекс значка данного набора.|
 |set|string|Представляет набор, в который входит значок. Возможные значения: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

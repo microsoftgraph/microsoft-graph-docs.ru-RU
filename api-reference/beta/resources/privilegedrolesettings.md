@@ -4,13 +4,13 @@ description: Представляет параметры привилегиро�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c072f75095267910d128396c3848b2decca4728c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: f1e213ff99f7d67894e4f764ea8862f9d3a8ce98
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521497"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807502"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>Тип ресурса Привилежедролесеттингс
 
@@ -42,7 +42,7 @@ ms.locfileid: "42521497"
 |аппровалонелеватион|boolean|**имеет значение true** , если при активации роли необходимо выполнить утверждение. **false** , если при активации роли не нужно утверждать.|
 |аппроверидс| Коллекция строк |Список идентификаторов утверждения, если для активации необходимо утверждение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
