@@ -2,15 +2,15 @@
 title: Тип ресурса NamedItem
 description: Представляет определенное имя для диапазона ячеек или значения. Имена могут быть простыми именованными объектами (как показано ниже в столбце "Тип"), объектом диапазона и ссылкой на диапазон. Этот объект может использоваться для получения объекта диапазона, связанного с именами.
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0aece739f4a65db35271e4fe6f2c87db3a2c56a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3be31cd34f1fe880c079bba50e7e612dfa26da45
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534206"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808216"
 ---
 # <a name="nameditem-resource-type"></a>Тип ресурса NamedItem
 
@@ -34,18 +34,18 @@ ms.locfileid: "42534206"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|string|Имя объекта. Только для чтения.|
-|comment|строка|Представляет примечание, связанное с этим именем.|
+|comment|string|Представляет примечание, связанное с этим именем.|
 |scope|string|Указывает, относится ли имя к книге или определенному листу. Только для чтения.|
 |type|string|Указывает тип ссылки, связанный с именем. Допустимые значения: `String`, `Integer`, `Double`, `Boolean`, `Range`. Только для чтения.|
 |value|Json|Представляет формулу, на которую ссылается имя. Например, =Sheet14!$B$2:$H$12, =4,75 и т. д. Только для чтения.|
 |visible|boolean|Определяет, является ли объект видимым.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |worksheet|[WorkbookWorksheet](worksheet.md)|Возвращает лист, к которому относится именованный элемент. Доступно, только если элемент относится к листу. Только для чтения.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -66,7 +66,7 @@ ms.locfileid: "42534206"
   "type": "string",
   "value": {"@odata.type": "microsoft.graph.Json"},
   "visible": true
-  
+
 }
 
 ```

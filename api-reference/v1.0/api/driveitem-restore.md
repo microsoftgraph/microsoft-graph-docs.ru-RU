@@ -5,12 +5,12 @@ localization_priority: Normal
 author: learafa
 ms.prod: files
 doc_type: apiPageType
-ms.openlocfilehash: 86c658ad853a11f3ff7a52a6efeb7b2cc1bdb6c2
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: c25049e05b31d473b98f7118ae4cb9b49edc3681
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007107"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808426"
 ---
 # <a name="driveitem-restore"></a>driveItem: восстановление
 
@@ -24,9 +24,9 @@ ms.locfileid: "45007107"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Files.ReadWrite.All |
-| Для приложений                            | Files.ReadWrite.All |
+| Для приложения                            | Files.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -62,8 +62,6 @@ POST /me/drive/items/{item-id}/restore
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
-
-# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

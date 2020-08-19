@@ -4,13 +4,13 @@ description: Представляет часовой пояс c нестанда
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 40ab8318931f720780ef21ae6b1c455fc6125814
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 438e9ccf93899c6024eaf9dfb16cc0a6b1d61f5f
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507319"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809838"
 ---
 # <a name="customtimezone-resource-type"></a>Тип ресурса customTimeZone
 
@@ -30,7 +30,7 @@ ms.locfileid: "42507319"
 | standardOffset | [standardTimeZoneOffset](standardtimezoneoffset.md) | Определяет, когда в часовом поясе осуществляется переход с летнего времени на стандартное. |
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

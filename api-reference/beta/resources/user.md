@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 3cfec228869d9f007959cdf243fba4651834c306
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 2ce47ccf949589856335e73bf67cbe2f84d94ea4
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509806"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808524"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -287,7 +287,6 @@ ms.locfileid: "46509806"
 |manager|[directoryObject](directoryobject.md)|Пользователь или контакт, являющийся руководителем пользователя. Только для чтения. (Методы HTTP: GET, PUT, DELETE.)|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, роли каталога и административные единицы, в которых состоит пользователь. Только для чтения. Допускается значение null.|
 |joinedTeams|Коллекция [team](team.md)|Команды Microsoft Teams, участником которых является пользователь. Только для чтения. Допускается значение null.|
-|teamwork|[userTeamwork](userteamwork.md)| Контейнер для функций Microsoft Teams, доступных пользователю. Только для чтения. Допускается значение null.|
 |messages|Коллекция [message](message.md)|Сообщения в почтовом ящике или папке. Только для чтения. Допускается значение null.|
 |onenote|[onenote](onenote.md)| Только для чтения.|
 |outlook|[outlookUser](outlookuser.md)| Выборочные службы Outlook, доступные пользователю. Только для чтения. Допускается значение null.|
@@ -297,9 +296,12 @@ ms.locfileid: "46509806"
 |photo|[profilePhoto](profilephoto.md)| Фотография профиля пользователя. Только для чтения.|
 |photos|Коллекция [photo](photo.md)| Только для чтения. Допускается значение null.|
 |planner|[plannerUser](planneruser.md)| Выборочные службы Планировщика, доступные пользователю. Только для чтения. Допускается значение null. |
+|profile |[profile](profile.md) | Представляет свойства, описывающие пользователей в клиенте. |
+|registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускается значение null.|
 |scopedRoleMemberOf|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Участие пользователя в административных единицах с ролью в заданной области. Только для чтения. Допускается значение null.|
 |параметры|[userSettings](usersettings.md) | Только для чтения. Допускается значение null.|
-|registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускается значение null.|
+|teamwork|[userTeamwork](userteamwork.md)| Контейнер для функций Microsoft Teams, доступных пользователю. Только для чтения. Допускается значение null.|
+
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>Пользовательские настройки языков и региональных форматов
 Ресурс **user** содержит свойство [mailboxSettings](../resources/mailboxsettings.md), включающее предпочитаемый язык пользователя, формат даты и времени, стандартный часовой пояс, и другие специальные параметры для основного почтового ящика Exchange. Эти настройки предназначены для почтовых клиентов и доступны только в том случае, если для пользователя подготовлен почтовый ящик. Вы можете использовать свойство **mailboxSettings**, если ваш сценарий предназначен только для почты, календаря, контактов и задач Outlook.
@@ -339,6 +341,7 @@ ms.locfileid: "46509806"
     "ownedDevices",
     "ownedObjects",
     "photo",
+    "profile",
     "registeredDevices"
   ],
   "keyProperty": "id",
@@ -438,6 +441,7 @@ ms.locfileid: "46509806"
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
+  "profile": {"@odata.type": "microsoft.graph.profile"},
   "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "signInActivity": {"@odata.type": "microsoft.graph.signInActivity"}
 }

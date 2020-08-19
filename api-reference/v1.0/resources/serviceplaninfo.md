@@ -2,15 +2,15 @@
 title: Тип ресурса servicePlanInfo
 description: Содержит сведения о плане обслуживания, связанном с подписанным SKU. Свойство **servicePlans** объекта subscribedSku представляет собой коллекцию объектов **servicePlanInfo**.
 localization_priority: Normal
-author: ''
+author: krbain
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d2b6d24c5a7cd849a5c193286a589cae9bd6db44
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1f776f667ae45e362b6e70b76ed3758f4553f167
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446907"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812620"
 ---
 # <a name="serviceplaninfo-resource-type"></a>Тип ресурса servicePlanInfo
 
@@ -27,7 +27,7 @@ ms.locfileid: "42446907"
 |provisioningStatus|String|Состояние подготовки плана обслуживания. Возможные значения:<br/>"Success" — служба полностью подготовлена.<br/>"Disabled" — служба отключена.<br/>"PendingInput" — служба еще не подготовлена; ожидается подтверждение службы.<br/>"Пендингактиватион" — служба подготовлена, но требует явной активации администратором (например, Intune_O365 план обслуживания).<br/>"Пендингпровисионинг" — Корпорация Майкрософт добавила новую службу в SKU продукта и еще не активировалась в клиенте.|
 |Тег|String|Объект, которому можно назначить план обслуживания. Возможные значения:<br/>"User" — план обслуживания можно назначить отдельным пользователям.<br/>"Company" — план обслуживания можно назначить всему клиенту.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

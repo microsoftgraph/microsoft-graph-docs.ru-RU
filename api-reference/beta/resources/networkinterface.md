@@ -4,13 +4,13 @@ description: Представляет сетевую карту (NIC), связ�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 5fd40bec964a73579863b8222cd4c90d58991502
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 4f19c2fae729e437ec2d9e91a0c6be5694a85214
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522577"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812788"
 ---
 # <a name="networkinterface-resource-type"></a>Тип ресурса Нетворкинтерфаце
 
@@ -28,7 +28,7 @@ ms.locfileid: "42522577"
 |localIpV6Address|String|IPv6-адрес последней локальной локальной связи или локального сайта, связанный с этим сетевым адаптером.|
 |macAddress|String|MAC-адрес сетевого адаптера на этом узле.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -2,15 +2,15 @@
 title: Тип ресурса assignedPlan
 description: Свойство **assignedPlans** объектов user и organization представляет собой коллекцию объектов **assignedPlan**.
 localization_priority: Normal
-author: ''
+author: krbain
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cff3987994b33be39dd274bfdd303db908a1eb7b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e4a184a45f1ec385a47fab0e51918949119523b9
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533135"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808391"
 ---
 # <a name="assignedplan-resource-type"></a>Тип ресурса assignedPlan
 
@@ -27,7 +27,7 @@ ms.locfileid: "42533135"
 |service|String|Имя службы, например "Exchange".|
 |сервицепланид|Guid|Идентификатор GUID, определяющий план обслуживания.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

@@ -2,15 +2,15 @@
 title: Тип ресурса Оператионеррор
 description: Описание ошибок в Теамсасинкоператион.
 localization_priority: Normal
-author: ''
+author: billbliss
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0cf550b0c15d5bd6632490d40eae04c0b4f5f3f1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6ae6215d00bc573e6c8d004de743b10c0d381e43
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447285"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808164"
 ---
 # <a name="operationerror-resource-type"></a>Тип ресурса Оператионеррор
 
@@ -26,7 +26,7 @@ ms.locfileid: "42447285"
 |code|string (только для чтения)|Код ошибки операции.|
 |message|string (только для чтения)|Сообщение об ошибке операции.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

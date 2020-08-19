@@ -4,13 +4,13 @@ description: Событие риска, обнаруженное службой 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 39cfbc804fc786875b7cb1b6ee8058ae2a0571e0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: cloudhandler
+ms.openlocfilehash: 377930a154cca9b0f139ea3a4e088d779064d581
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496392"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809483"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>Тип ресурса Импоссиблетравелрискевент
 

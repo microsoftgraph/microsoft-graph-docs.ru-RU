@@ -4,20 +4,20 @@ description: Представляет сведения об ошибке при 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 163352538dac4d7ba27def978b3bcc379807d4e4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: harini84
+ms.openlocfilehash: e259685415a37e89429b5e0522e89a4fbe2f9fd2
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497722"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809539"
 ---
 # <a name="freebusyerror-resource-type"></a>Тип ресурса Фрибусеррор
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+
 Представляет сведения об ошибке при попытке получить доступ к пользователю, списку рассылки или ресурсу.
 
 ## <a name="properties"></a>Свойства
@@ -27,7 +27,7 @@ ms.locfileid: "42497722"
 |респонсекоде |String |Код ответа из запроса на доступность пользователя, списка рассылки или ресурса. |
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -3,14 +3,14 @@ title: Перечисление версий элемента ListItem
 description: Вы можете настроить SharePoint так, чтобы в нем хранился журнал элементов списка.
 localization_priority: Normal
 ms.prod: sharepoint
-author: ''
+author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: e0121d7d56b17267b10d04d62b41426f2ace258e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0466116acaa447d5a45e1ecede1137a93eee965
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511700"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812732"
 ---
 # <a name="listing-versions-of-a-listitem"></a>Перечисление версий элемента ListItem
 
@@ -40,7 +40,7 @@ GET /sites/{site-id}/items/{item-id}/versions
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [ListItemVersion](../resources/listitemversion.md) в теле отклика.
 

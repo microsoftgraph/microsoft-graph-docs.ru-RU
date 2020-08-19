@@ -2,15 +2,15 @@
 title: тип перечисления Клонаблетеампартс
 description: 'Описывает, какая часть команды должна быть клонирована. '
 localization_priority: Normal
-author: ''
+author: nkramer
 ms.prod: ''
 doc_type: enumPageType
-ms.openlocfilehash: 37c63415acb5bf76172ec4962bc9faa57f2ff7dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 220da0696f15fd312df9701f561f9d7c45c3e831
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531820"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808279"
 ---
 # <a name="clonableteamparts-enum-type"></a>тип перечисления Клонаблетеампартс
 
@@ -18,7 +18,7 @@ ms.locfileid: "42531820"
 
 
 
-Описывает, какая часть [команды](../resources/team.md) должна быть клонирована. 
+Описывает, какая часть [команды](../resources/team.md) должна быть клонирована.
 
 ## <a name="members"></a>Элементы
 

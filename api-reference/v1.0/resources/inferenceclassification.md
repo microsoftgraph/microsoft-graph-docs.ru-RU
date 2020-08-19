@@ -2,21 +2,21 @@
 title: Тип ресурса inferenceClassification
 description: 'Классификация сообщений пользователя, позволяющая сосредоточиться на самых важных сообщениях. '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 894deaf58f8e2e6466a6670caadb1d587b2a227a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 67b115001bed8e95093598bc5bb9f1969fbb3493
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531317"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808937"
 ---
 # <a name="inferenceclassification-resource-type"></a>Тип ресурса inferenceClassification
 
 Пространство имен: microsoft.graph
 
-Классификация сообщений пользователя, позволяющая сосредоточиться на самых важных сообщениях. 
+Классификация сообщений пользователя, позволяющая сосредоточиться на самых важных сообщениях.
 
 Дополнительные сведения см. в статье [Управление сортировкой почты](manage-focused-inbox.md).
 
@@ -38,7 +38,7 @@ ms.locfileid: "42531317"
 |:---------------|:--------|:----------|
 |overrides|Коллекция объектов [inferenceClassificationOverride](inferenceclassificationoverride.md)| Набор переопределений пользователя, классифицирующих сообщения от определенных отправителей указанными способами: `focused` или `other`. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

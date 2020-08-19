@@ -4,13 +4,13 @@ description: Получение действий для определенног
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: 076548721fd3213ece363c1f590455cf1dc060f1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: 1e25c108d3dca6d326fd499ae59d5189b9a3971a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454908"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809980"
 ---
 # <a name="get-user-activities"></a>Получение действий пользователей
 
@@ -66,7 +66,7 @@ GET /me/activities
 
 Текст запроса отсутствует.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика с действиями пользователя для вашего приложения.
 

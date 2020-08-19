@@ -4,13 +4,13 @@ description: Свойство **assignedPlans** объектов user и organiz
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 2ba1f1286fe7d1f01af0cb70280ec9a0f38541d6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: krbain
+ms.openlocfilehash: 5e408212855e4ca0bc5af4c03302c8b79e415566
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508187"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809840"
 ---
 # <a name="assignedplan-resource-type"></a>Тип ресурса assignedPlan
 
@@ -29,7 +29,7 @@ ms.locfileid: "42508187"
 |service|String|Имя службы, например "Exchange".|
 |сервицепланид|Guid|Идентификатор GUID, определяющий план обслуживания.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

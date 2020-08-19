@@ -4,13 +4,13 @@ description: Этот ресурс содержит данные соответ�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 65eda1c24fee112ef18fc6682b537f92f924dcf8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 2c8bb3b2a016ec58da1ad58b01843a2691ad13b7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507578"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811142"
 ---
 #  <a name="complianceinformation-resource-type"></a>Тип ресурса Комплианцеинформатион
 
@@ -23,7 +23,7 @@ ms.locfileid: "42507578"
 |цертификатионнаме | string | Имя сертификации соответствия (например, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171). |
 |цертификатионконтролс | Коллекция [цертификатионконтрол](certificationcontrol.md) | Коллекция элементов управления сертификацией, связанных с сертификацией |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -4,13 +4,13 @@ description: Содержит сведения о лицензии, назнач
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 9bdf5456cd0e807ca2a2eaaef8f1d0eab302f23c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: krbain
+ms.openlocfilehash: 5c71c870d8b078a47acc4a0a0f968bcdedb760f2
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522976"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812813"
 ---
 # <a name="licensedetails-resource-type"></a>Тип ресурса licenseDetails
 
@@ -36,7 +36,7 @@ ms.locfileid: "42522976"
 |skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. Равно свойству skuId в связанном объекте [SubscribedSku](subscribedsku.md) . Только для чтения |
 |скупартнумбер|String| Имя уникального отображаемого номера SKU. Равно Скупартнумбер для связанного объекта [SubscribedSku](subscribedsku.md) ; Пример: "AAD_Premium". Только для чтения |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 04a3dc0a0580db1f41daa1e08ba8c7e196e02dcb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8c814f81a9ffbbb6f9e962c770a9a8908b288cde
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451314"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812830"
 ---
 # <a name="update-workposition"></a>Обновление Воркпоситион
 
@@ -36,6 +36,7 @@ ms.locfileid: "42451314"
 
 ```http
 PATCH /me/profile/positions/{id}
+PATCH /users/{id | userPrincipalName}/profile/positions/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -50,10 +51,16 @@ PATCH /me/profile/positions/{id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип                                        | Описание                                                                                                 |
-|:-------------|:--------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-|categories|Коллекция String                                | Содержит категории, связанные с положением пользователя. (например: цифровое преобразование, MS Graph, люди) |
-|описаны    |[поситиондетаил](../resources/positiondetail.md) | Содержит подробные сведения о положении, в котором работают пользователи.                                                                |
+## <a name="properties"></a>Свойства
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Коллекция String|Категории, связанные с этим положением пользователя.|
+|коллег|Коллекция [релатедперсон](../resources/relatedperson.md)|Коллеги, связанные с этой позицией.|
+|описаны|[поситиондетаил](../resources/positiondetail.md)|Содержит подробные сведения о позиции. |
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|по току|Логический|Указывает, является ли должность текущей.|
+|manager|[релатедперсон](../resources/relatedperson.md)|Содержит сведения о руководителе пользователя в этой позиции.|
 
 ## <a name="response"></a>Ответ
 
@@ -76,33 +83,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/positions/{id}
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
-  "detail": {
-    "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
-    },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  }
+  "isCurrent": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -137,33 +118,56 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "categories": null,
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
+      "displayName": "Adventureworks Ltd.",
+      "pronunciation": null,
+      "department": "Consulting",
+      "officeLocation": "AW23/344",
       "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
+        "type": "business",
+        "postOfficeBox": null,
+        "street": "123 Patriachy Ponds",
+        "city": "Moscow",
+        "state": null,
+        "countryOrRegion": "Russian Federation",
+        "postalCode": "RU-34621"
       },
-      "webUrl": "webUrl-value"
+      "webUrl": "https://www.adventureworks.com"
     },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
+    "description": null,
+    "endMonthYear": null,
+    "jobTitle": "Senior Product Branding Manager II",
+    "role": "consulting",
     "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  }
+    "summary": null
+  },
+  "manager": null,
+  "colleagues": null,
+  "isCurrent": true
 }
 ```
 

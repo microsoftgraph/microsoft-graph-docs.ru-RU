@@ -2,15 +2,15 @@
 title: Удаление фотографии
 description: Удаление фотографии.
 localization_priority: Normal
-author: ''
+author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 7af3cde6072b4bc709bf2cb10e56bd3b5885319f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 57cc725d5b668d4db72ec9b96c3be0cbdf20db46
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511035"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808748"
 ---
 # <a name="delete-photo"></a>Удаление фотографии
 
@@ -40,10 +40,10 @@ DELETE /drive/root/createdByUser/photo
 | if-match  | string  | Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом элемента, то возвращается отклик `412 Precondition Failed`, а элемент не удаляется.|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 

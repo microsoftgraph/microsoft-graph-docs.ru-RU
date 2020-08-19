@@ -4,13 +4,13 @@ description: Получение свойств и связей объекта С
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 3b5f2e8bb058bd609d3d7e4082d35cd467b3c1b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: f71862ecebb668da478cbf7ee56454f38a723399
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453624"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809938"
 ---
 # <a name="list-securescores"></a>Перечисление объектов secureScores
 
@@ -28,7 +28,7 @@ ms.locfileid: "42453624"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL.   |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL. |
+|Приложение | Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /security/secureScores
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

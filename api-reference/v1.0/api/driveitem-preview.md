@@ -3,14 +3,14 @@ title: 'driveItem: Preview'
 description: Это действие позволяет получать кратковременно недопустимые URL-адреса для встраиваемых элементов, чтобы отобразить временный предварительный просмотр.
 localization_priority: Normal
 ms.prod: sharepoint
-author: ''
+author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 95466aaeb0cfb9c4127391f4e19a75f58ce2931d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 470af653190001623ea90f6afb7955a3727cceb5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517687"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808440"
 ---
 # <a name="driveitem-preview"></a>driveItem: Preview
 
@@ -47,17 +47,17 @@ POST /users/{userId}/drive/items/{itemId}/preview
 POST /shares/{shareId}/driveItem/preview
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса определяются свойства внедряемого URL-адреса, запрашиваемого приложением.
 Запрос должен быть объектом JSON с указанными ниже свойствами.
 
 |   Имя      |  Тип         | Описание
 |:------------|:--------------|:-----------------------------------------------
-| page        | строка или число | Необязательное. Номер страницы для начала документа, если это необходимо. Указывается как строка для будущих случаев использования для типов файлов, таких как ZIP.
+| page        | строка или число | Необязательное свойство. Номер страницы для начала документа, если это необходимо. Указывается как строка для будущих случаев использования для типов файлов, таких как ZIP.
 | zoom        | number        | Необязательный параметр. Масштаб (при необходимости) для запуска.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ```json
 {
@@ -77,7 +77,7 @@ POST /shares/{shareId}/driveItem/preview
 
 В зависимости от текущего состояния поддержки внедрения для заданных параметров может возвращаться либо getUrl, Постурл, либо и то, и другое.
 
-i-параметры — это строка, `application/x-www-form-urlencoded`отформатированная как, и при выполнении POST для постурл Content-Type необходимо задать соответствующие параметры. Например:
+i-параметры — это строка, отформатированная как `application/x-www-form-urlencoded` , и при выполнении POST для постурл Content-Type необходимо задать соответствующие параметры. Пример:
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded

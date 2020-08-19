@@ -4,13 +4,13 @@ description: Перечислите доступные [сайты] [] в Орг
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: 266f88af6b71317b271bec5ede1d2984d4e704fa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: bfedee99e7679aead910c675d605c0f0b776d42b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453214"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809889"
 ---
 # <a name="enumerate-sites"></a>Перечисление сайтов
 

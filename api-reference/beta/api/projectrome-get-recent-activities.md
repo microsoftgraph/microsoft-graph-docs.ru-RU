@@ -4,13 +4,13 @@ description: " Функцию. Служба будет запрашивать п
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: 1aa948b9a71c0855e7bde250b90ee56c2c923579
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: 72c9e425a74f10d066b2fd958126623a5f900601
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454894"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809966"
 ---
 # <a name="get-recent-user-activities"></a>Получение последних действий пользователя
 
@@ -62,7 +62,7 @@ GET /me/activities/recent
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса.
 

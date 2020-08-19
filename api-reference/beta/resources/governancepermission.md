@@ -4,13 +4,13 @@ description: 'Представляет разрешение на доступ к
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 3efdebea07bb824b2314af516810ca36ad43adc9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: 113f25cd276cf01ce46e3c410ca4b5b409417d98
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497624"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809518"
 ---
 # <a name="governancepermission-resource-type"></a>Тип ресурса Говернанцепермиссион
 
@@ -18,17 +18,17 @@ ms.locfileid: "42497624"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет разрешение на доступ к определенному [governanceResource](../resources/governanceresource.md)в [говернанцесубжект](../resources/governancesubject.md) .  
+Представляет разрешение на доступ к определенному [governanceResource](../resources/governanceresource.md)в [говернанцесубжект](../resources/governancesubject.md) .
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|accessLevel|String|Уровень доступа. Допустимые значения ``None``: ``UserRead``, ``AdminRead``, и ``AdminReadWrite``.|
-|isActive|Boolean|Указывает, имеет ли запрашивающая сторона какие – либо активные назначения ролей для этого уровня доступа.|
-|Действительный|Boolean|Указывает, имеет ли запрашивающее назначение роли для уровня доступа.|
+|accessLevel|String|Уровень доступа. Допустимые значения: ``None`` ,, ``UserRead`` ``AdminRead`` и ``AdminReadWrite`` .|
+|isActive|Логический|Указывает, имеет ли запрашивающая сторона какие – либо активные назначения ролей для этого уровня доступа.|
+|Действительный|Логический|Указывает, имеет ли запрашивающее назначение роли для уровня доступа.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

@@ -4,13 +4,13 @@ description: Identity объект ресурса, инициирующий де
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 2d74b9d268bf61ee191fb2a8b35368b08dd5650d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: SarahBar
+ms.openlocfilehash: 49c60dc42cb84d047f36904b2af11fe5c8d3bd8e
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508096"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812550"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>Тип ресурса Аудитактивитинитиатор
 
@@ -24,7 +24,7 @@ ms.locfileid: "42508096"
 |программы|[аппидентити](appidentity.md)|Если ресурс, инициирующий действие, является приложением, это свойство указывает все связанные с приложением сведения, такие как appId, Name, СервицепринЦипалид и Name.|
 |user|[userIdentity](useridentity.md)|Если ресурс, инициирующий действие, является пользователем, это свойство указывает все связанные с пользователем сведения, такие как userId, Name, Усерприникпалнаме.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

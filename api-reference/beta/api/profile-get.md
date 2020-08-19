@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: fd6c68f79ffb417b12eb1f8e28d874f4461fb24e
-ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
+ms.openlocfilehash: 378626e8fb00e78a8fd01357d0b98614219fbbcf
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44168558"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812851"
 ---
 # <a name="get-profile"></a>Получение профиля
 
@@ -38,11 +38,12 @@ ms.locfileid: "44168558"
 
 ```http
 GET /me/profile
+GET /users/{id | userPrincipalName}/profile
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми. Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -61,9 +62,11 @@ GET /me/profile
 
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-get-a-users-profile"></a>Пример 1: получение профиля пользователя
 
-Ниже приведен пример запроса.
+Ниже приведен пример запроса на получение профиля.
+
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -88,6 +91,226 @@ GET https://graph.microsoft.com/beta/me/profile
 
 ---
 
+### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.profile"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "34545-32444234-2334452-234332-432234",
+  "accounts": [],
+  "addresses": [
+    {
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "source": null,
+      "displayName": "Home",
+      "detail": {
+        "type": "home",
+        "postOfficeBox": null,
+        "street": "221B Baker Street",
+        "city": "London",
+        "state": null,
+        "countryOrRegion": "United Kingdom",
+        "postalCode": "E14 3TD"
+      },
+      "geoCoordinates": null
+    }
+  ],
+  "anniversaries": [
+    {
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "type": "birthday",
+      "date": "Date"
+    }
+  ],
+  "websites": [],
+  "educationalActivities": [],
+  "emails": [
+    {
+      "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "user": {
+            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+            "displayName": "Innocenty Popov"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "user": {
+            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+            "displayName": "Innocenty Popov"
+        }
+      },
+      "source": {
+        "type": "User"
+      },
+      "address": "innocenty.popov@adventureworks.com",
+      "displayName": "Innocenty Popov",
+      "type": "work"
+    }
+  ],
+  "notes": [],
+  "interests": [],
+  "languages": [],
+  "names": [
+    {
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "displayName": "Innocenty Popov",
+      "first": "Innocenty",
+      "initials": "IP",
+      "last": "Popov",
+      "languageTag": "en-US",
+      "maiden": null,
+      "middle": null,
+      "nickname": "Kesha",
+      "suffix": null,
+      "title": null,
+      "pronunciation": {
+        "displayName": "In-no ken-te ",
+        "first": "In-no ken-te Pop-ov",
+        "maiden": null,
+        "middle": null,
+        "last": "Pop-ov"
+      }
+    }
+  ],
+  "phones": [
+    {
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "displayName": "Car Phone",
+      "type": "other",
+      "number": "+7 499 342 22 13"
+    }
+  ],
+  "positions": [],
+  "projects": [],
+  "skills": [],
+  "webAccounts": []
+}
+```
+
+### <a name="example-2-expand-names-and-skills-collection-and-select-properties-within-the-entities"></a>Пример 2: разверните элемент Names and Skills Collection и выберите свойства в объектах.
+
+Ниже приведен пример использования параметров запроса $expand и $select для получения частичных сведений из профиля пользователя.
+
+#### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_profile"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last),skills($select=displayName)
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### <a name="response"></a>Отклик
 
@@ -106,16 +329,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value"
+  "id": "34545-32444234-2334452-234332-432234",
+  "names": [
+      {
+          "first": "Innocenty",
+          "last": "Popov"
+      }
+  ],
+  "skills": [
+      {
+          "displayName": "Machine Learning"
+      },
+      {
+          "displayName": "Artificial Intelligence"
+      }
+  ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get profile",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

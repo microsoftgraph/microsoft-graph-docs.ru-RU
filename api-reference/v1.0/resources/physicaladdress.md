@@ -2,15 +2,15 @@
 title: Тип ресурса physicalAddress
 description: Представляет почтовый адрес ресурса, например контакта или события.
 localization_priority: Normal
-author: ''
+author: kevinbellinger
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 24ed9ce0b7a4b7d9a013888fe7b43cbba5b4a264
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7729762a93e5185d45289b2377ecd961d894552
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447180"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808860"
 ---
 # <a name="physicaladdress-resource-type"></a>Тип ресурса physicalAddress
 
@@ -28,7 +28,7 @@ ms.locfileid: "42447180"
 |state|String|Штат.|
 |street|String|Улица.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

@@ -4,13 +4,13 @@ description: Представляет защиту формата объекта
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c574ceefd33131562a0df504fad26bb225056ce7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: cbad1af0eea639b73e06d5678a2293d744964975
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497820"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809567"
 ---
 # <a name="formatprotection-resource-type"></a>Тип ресурса FormatProtection
 
@@ -34,7 +34,7 @@ ms.locfileid: "42497820"
 |formulaHidden|boolean|Указывает, скрывает ли Excel формулу для ячеек в диапазоне. Значение NULL указывает, что для всего диапазона не задан единый параметр скрытия формулы.|
 |locked|boolean|Указывает, блокирует ли Excel ячейки в объекте. Значение NULL указывает, что для всего диапазона не задан единый параметр блокировки.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

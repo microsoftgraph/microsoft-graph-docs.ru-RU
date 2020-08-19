@@ -3,14 +3,14 @@ title: Работа с сайтами SharePoint в Microsoft Graph
 description: 'API SharePoint в Microsoft Graph поддерживает следующие основные сценарии:'
 localization_priority: Priority
 ms.prod: sharepoint
-author: ''
+author: JeremyKelley
 doc_type: conceptualPageType
-ms.openlocfilehash: b3745078d28f24af9efcffadbbc2701372f1bc74
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: c805b9f0f337e180a6b50261f5be017cad80fd11
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353856"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808132"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Работа с сайтами SharePoint в Microsoft Graph
 
@@ -87,8 +87,7 @@ API SharePoint предоставляет три основных типа ре�
 | /sites/{site-id}/lists/{list-id}/items | Перечисление ресурсов [listItem](listitem.md) для ресурса [list](list.md).
 | /groups/{group-id}/sites/root          | Доступ к [сайту][] группы для группы.
 
-Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site.
-You can optionally transition back to addressing the resource model by putting another colon at the end.
+К сайту также можно обратиться с помощью соответствующего пути. Для этого укажите имя узла SharePoint, за ним — двоеточие и относительный путь к сайту. При необходимости вы можете менять способ адресации (возвращаться к ресурсной модели), добавляя в конец двоеточие.
 
 | Путь                                           | Описание
 |:-----------------------------------------------|:-----------------------------------

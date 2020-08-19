@@ -4,13 +4,13 @@ description: Общая ошибка общего назначения.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 4c68fa52046ccb48645aab1fbf2de4a772665328
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: d9c1245e89672fab3fa9cc22c87d677fd7ab9bf9
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497645"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809528"
 ---
 # <a name="genericerror-resource-type"></a>Тип ресурса Женерицеррор
 
@@ -27,7 +27,7 @@ ms.locfileid: "42497645"
 | message | String | Сообщение об ошибке. |
 | code | String | Код ошибки. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

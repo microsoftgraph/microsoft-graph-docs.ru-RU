@@ -4,13 +4,13 @@ description: Представляет правила, из которых сос
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 32be4465ffcd710bbfdaf8f3c60b3813a0b7d3be
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: 45ae44dccba67ee0b03f1941dd27795a002e810b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497323"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809532"
 ---
 # <a name="governancerulesetting-resource-type"></a>Тип ресурса Говернанцерулесеттинг
 
@@ -24,10 +24,10 @@ ms.locfileid: "42497323"
 ## <a name="properties"></a>Свойства
 |Свойство      | Тип         |Описание|
 |:-------------|:-------------|:----------|
-|рулеидентифиер|String        |Идентификатор правила. Например, ``ExpirationRule`` и ``MfaRule``.|
+|рулеидентифиер|String        |Идентификатор правила. Например, ``ExpirationRule`` и ``MfaRule`` .|
 |setting       |String        |Параметры правила. Значением является строка JSON со списком пар в формате Parameter_Name: Parameter_Value. Пример: `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

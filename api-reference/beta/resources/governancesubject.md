@@ -4,13 +4,13 @@ description: Представляет пользователей, группы �
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 4d1fbf75b4e9643dc0e3b968ace7a013616904ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: 384558109521fe93c5ef4331e88355c8757cf5fc
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497173"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809490"
 ---
 # <a name="governancesubject-resource-type"></a>Тип ресурса Говернанцесубжект
 
@@ -25,12 +25,12 @@ ms.locfileid: "42497173"
 | Свойство  | Тип       |Описание|
 |:----------|:----------|:----------|
 |id         |String     | Идентификатор субъекта.|
-|type       |String     |Тип субъекта. Возможные значения: ``User``, ``Group``и. ``ServicePrincipal``|
-|displayName|Строка     |Отображаемое имя субъекта.|
+|type       |String     |Тип субъекта. Возможные значения: ``User`` , ``Group`` и ``ServicePrincipal`` .|
+|displayName|String     |Отображаемое имя субъекта.|
 |email      |String     |Адрес электронной почты субъекта пользователя. Если тема находится в других типах, она пуста.|
 |principalName|String   |Имя субъекта пользователя. Если тема находится в других типах, она пуста.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -48,7 +48,7 @@ ms.locfileid: "42497173"
 
 ```json
 {
-  "id": "String",  
+  "id": "String",
   "displayName": "String",
   "email": "String",
   "principalName": "String",

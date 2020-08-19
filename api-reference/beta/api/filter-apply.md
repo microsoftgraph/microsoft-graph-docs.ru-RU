@@ -3,14 +3,14 @@ title: 'Filter: apply'
 description: Применяет заданные условия фильтра для определенного столбца.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 6c8d25dd3e96e2d590746d949275a38c89e45eef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d250953f7df09162a778cac878259e6aa27ab4f1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421664"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811212"
 ---
 # <a name="filter-apply"></a>Filter: apply
 
@@ -40,7 +40,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/ap
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -100,7 +100,7 @@ Content-length: 321
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,23 +2,23 @@
 title: Тип ресурса singleValueLegacyExtendedProperty
 description: 'Расширенное свойство, содержащее одно значение. '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 29abdd3f407dd627f6c8af8ddab475cdcb829d83
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b13fa96cbfbb0e0eb6fefc97ef76e2278ca26640
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533698"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811240"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>Тип ресурса singleValueLegacyExtendedProperty
 
 Пространство имен: microsoft.graph
 
-Расширенное свойство, содержащее одно значение. 
+Расширенное свойство, содержащее одно значение.
 
-Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md). 
+Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 
 ## <a name="methods"></a>Методы
@@ -34,7 +34,7 @@ ms.locfileid: "42533698"
 |id|string|Идентификатор свойства. Только для чтения.|
 |значение|string|Значение свойства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
