@@ -2,15 +2,15 @@
 title: Тип ресурса "раздел"
 description: Раздел в записной книжке OneNote. Разделы могут содержать страницы.
 localization_priority: Normal
-author: ''
+author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a701fbe2cea27db97bb7d95911c0c0ee1140b55c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6cc87845b14b45dbe84377f1be917fe4b9f873ff
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533783"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812248"
 ---
 # <a name="section-resource-type"></a>Тип ресурса "раздел"
 
@@ -18,7 +18,7 @@ ms.locfileid: "42533783"
 
 Раздел в записной книжке OneNote. Разделы могут содержать страницы.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -57,9 +57,9 @@ ms.locfileid: "42533783"
 |isDefault|Boolean|Указывает, является ли этот раздел разделом пользователя по умолчанию. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения раздела. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
-|links|[сектионлинкс](sectionlinks.md)|Ссылки для открытия раздела. `oneNoteClientURL` Ссылка открывает раздел в собственном клиенте OneNote, если он установлен. `oneNoteWebURL` Ссылка открывает раздел в OneNote в Интернете.|
-|displayName|Строка|Имя раздела. |
-|Ссылки pagesurl|String|Конечная точка, `pages` в которой можно получить сведения обо всех страницах в разделе. Только для чтения.|
+|links|[сектионлинкс](sectionlinks.md)|Ссылки для открытия раздела. `oneNoteClientURL`Ссылка открывает раздел в собственном клиенте OneNote, если он установлен. `oneNoteWebURL`Ссылка открывает раздел в OneNote в Интернете.|
+|displayName|String|Имя раздела. |
+|Ссылки pagesurl|String|`pages`Конечная точка, в которой можно получить сведения обо всех страницах в разделе. Только для чтения.|
 |Self|String|Конечная точка, где можно получить сведения о разделе. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения

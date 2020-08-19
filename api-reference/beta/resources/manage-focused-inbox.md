@@ -4,13 +4,13 @@ description: 'Сортировка папки "Входящие" позволя�
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 75d5dc07d2722964acc7975b8f41ca6d6fd18df5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 83d29b26388938e478287e342a03dab762eb1633
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522857"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811471"
 ---
 # <a name="manage-focused-inbox"></a>Управление сортировкой почты
 
@@ -37,4 +37,4 @@ ms.locfileid: "42522857"
 
 [Создание операции переопределения для отправителя](../api/inferenceclassification-post-overrides.md) | [Перечисление всех операций переопределения для пользователей](../api/inferenceclassification-list-overrides.md) |
 
-[Обновление операции переопределения для отправителя](../api/inferenceclassificationoverride-update.md) | [Удаление операции переопределения для отправителя](../api/inferenceclassificationoverride-delete.md) 
+[Обновление операции переопределения для отправителя](../api/inferenceclassificationoverride-update.md) | [Удаление операции переопределения для отправителя](../api/inferenceclassificationoverride-delete.md)

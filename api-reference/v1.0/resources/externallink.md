@@ -2,15 +2,15 @@
 title: Тип ресурса Екстерналлинк
 description: URL-адрес, который открывает страницу OneNote или записную книжку.
 localization_priority: Normal
-author: ''
+author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ccc9f4cf270f6dd46dadc668f658e4be2940ccd2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f1cc88b8b9a2ce2baf79561c96c1d3645056b93b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531449"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812276"
 ---
 # <a name="externallink-resource-type"></a>Тип ресурса Екстерналлинк
 
@@ -18,7 +18,7 @@ ms.locfileid: "42531449"
 
 URL-адрес, который открывает страницу OneNote или записную книжку.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление JSON ресурса.
 

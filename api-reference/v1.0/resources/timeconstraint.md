@@ -2,15 +2,15 @@
 title: Тип ресурсов timeConstraint
 description: Запрещает предложения по времени собранию определенным часам и дням недели в соответствии с заданным характером активности и временем открытия.
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cc6ace98b84e8b844139c148215eeffdd4c3ad49
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e2ecde664dbdf0335ce84083dfe3c29473c5b1d5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446823"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812143"
 ---
 # <a name="timeconstraint-resource-type"></a>Тип ресурсов timeConstraint
 
@@ -18,7 +18,7 @@ ms.locfileid: "42446823"
 
 Запрещает предложения по времени собранию определенным часам и дням недели в соответствии с заданным характером активности и временем открытия.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -40,7 +40,7 @@ ms.locfileid: "42446823"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|activityDomain|activityDomain|Описание действия (необязательно). `work`Возможные значения: `personal`,, `unrestricted`, или. `unknown`|
+|activityDomain|activityDomain|Описание действия (необязательно). Возможные значения: `work` , `personal` , `unrestricted` , или `unknown` .|
 |timeslots|Коллекция [timeSlot](timeslot.md)|Массив, содержащий значения периодов времени.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

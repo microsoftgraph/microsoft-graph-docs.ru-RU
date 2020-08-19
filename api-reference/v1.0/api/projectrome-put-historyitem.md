@@ -3,14 +3,14 @@ title: Создание или замена объекта historyItem
 description: Создание нового или замена существующего элемента журнала для существующего действия пользователя.
 localization_priority: Normal
 ms.prod: project-rome
-author: ''
+author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: ce1abf2ea6df1e7a289802073a47bd1b9fdeb005
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da5ba2c6f77023ac3f812a690404b23d648fb4ee
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510706"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811940"
 ---
 # <a name="create-or-replace-a-historyitem"></a>Создание или замена объекта historyItem
 
@@ -45,13 +45,13 @@ PUT /me/activities/{id}/historyItems/{id}
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [historyItem](../resources/projectrome-historyitem.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если был создан `200 OK` historyItem, или если historyItem был заменен.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если был создан historyItem, или `200 OK` Если historyItem был заменен.
 
 ## <a name="example"></a>Пример
 

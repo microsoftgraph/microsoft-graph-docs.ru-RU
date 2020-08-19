@@ -3,14 +3,14 @@ title: Создание или замена действия
 description: Создание нового или замена существующего действия пользователя для вашего приложения. Если вы хотите создать действия пользователя и связанные с ним **historyitem** в одном запросе, вы можете использовать глубокую вставку.
 localization_priority: Normal
 ms.prod: project-rome
-author: ''
+author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 7ca7d0d5b222c7e82a9dbd108071174a0df09d23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd96a94d6e247d01b2643517afdde3759b67a182
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510720"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807033"
 ---
 # <a name="create-or-replace-an-activity"></a>Создание или замена действия
 
@@ -44,13 +44,13 @@ PUT /me/activities/{appActivityId}
 |:--------------|:-------|:--------------------------|
 | Authorization | string | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [Activity](../resources/projectrome-activity.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если действие было `200 OK` создано, или если действие было заменено.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если действие было создано, или `200 OK` Если действие было заменено.
 
 ## <a name="examples"></a>Примеры
 

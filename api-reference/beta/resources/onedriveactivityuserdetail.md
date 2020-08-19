@@ -4,13 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 22702a392a76a21951c24667da0e8a1e61c8b36c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: 4021d1bdfb9322dbef75264ab88bb8b3a71c20e7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522395"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812150"
 ---
 # <a name="onedriveactivityuserdetail-resource-type"></a>Тип ресурса Онедривеактивитюсердетаил
 
@@ -22,17 +22,17 @@ ms.locfileid: "42522395"
 | :------------------------ | :---------------- |
 | репортрефрешдате         | Дата              |
 | userPrincipalName         | String            |
-| isDeleted                 | Boolean           |
+| isDeleted                 | Логический           |
 | делетеддате               | Дата              |
 | ластактивитидате          | Дата              |
 | виеведоредитедфилекаунт   | Int64             |
 | синцедфилекаунт           | Int64             |
 | шарединтерналлифилекаунт | Int64             |
 | шаредекстерналлифилекаунт | Int64             |
-| ассигнедпродуктс          | Коллекция объектов string |
+| ассигнедпродуктс          | Коллекция String |
 | репортпериод              | String            |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -43,16 +43,16 @@ ms.locfileid: "42522395"
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "userPrincipalName": "String", 
-  "isDeleted": true, 
-  "deletedDate": "Date", 
-  "lastActivityDate": "Date", 
-  "viewedOrEditedFileCount": 1024, 
-  "syncedFileCount": 1024, 
-  "sharedInternallyFileCount": 1024, 
-  "sharedExternallyFileCount": 1024, 
-  "assignedProducts": ["String"], 
+  "reportRefreshDate": "Date",
+  "userPrincipalName": "String",
+  "isDeleted": true,
+  "deletedDate": "Date",
+  "lastActivityDate": "Date",
+  "viewedOrEditedFileCount": 1024,
+  "syncedFileCount": 1024,
+  "sharedInternallyFileCount": 1024,
+  "sharedExternallyFileCount": 1024,
+  "assignedProducts": ["String"],
   "reportPeriod": "String"
 }
 ```

@@ -2,15 +2,15 @@
 title: Управление сортировкой почты
 description: 'Сортировка папки "Входящие" позволяет просматривать важные сообщения на `Focused` вкладке папки "Входящие", а остальные сообщения — на `Other` вкладке. Система классификации '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: e9debdbb7e2c44276b6af82fa37cb5b33ab89c70
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ae1801153f211ba9b4ba5d909e3a05dc0a5ee56
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447467"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807691"
 ---
 # <a name="manage-focused-inbox"></a>Управление сортировкой почты
 
@@ -35,4 +35,4 @@ ms.locfileid: "42447467"
 
 [Создание операции переопределения для отправителя](../api/inferenceclassification-post-overrides.md) | [Перечисление всех операций переопределения для пользователей](../api/inferenceclassification-list-overrides.md) |
 
-[Обновление операции переопределения для отправителя](../api/inferenceclassificationoverride-update.md) | [Удаление операции переопределения для отправителя](../api/inferenceclassificationoverride-delete.md) 
+[Обновление операции переопределения для отправителя](../api/inferenceclassificationoverride-update.md) | [Удаление операции переопределения для отправителя](../api/inferenceclassificationoverride-delete.md)

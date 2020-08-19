@@ -3,14 +3,14 @@ title: Получение ресурса DriveItemVersion
 description: В этой статье рассказывается, как получить метаданные для определенной версии ресурса DriveItem.
 localization_priority: Normal
 ms.prod: sharepoint
-author: ''
+author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 0d2ae9ca2e742ab7a9d7338be12e57ec4033e2a1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b65b9c2d1e5d27d049de8e248e98b3508c6fc99
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517645"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806200"
 ---
 # <a name="get-a-driveitemversion-resource"></a>Получение ресурса DriveItemVersion
 
@@ -41,7 +41,7 @@ GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [DriveItemVersion](../resources/driveitemversion.md) в теле отклика.
 

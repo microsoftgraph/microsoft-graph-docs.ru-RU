@@ -3,14 +3,14 @@ title: Удаление действия
 description: Удаление существующего действия пользователя для вашего приложения.
 localization_priority: Normal
 ms.prod: project-rome
-author: ''
+author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: d4874fee43956afe98eeeb39338195a6d4ae5f1b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1ab0d5510ca8cb1a3a7376259904af22f1561014
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510748"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807047"
 ---
 # <a name="delete-an-activity"></a>Удаление действия
 
@@ -43,11 +43,11 @@ DELETE /me/activities/{id}
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Текст запроса отсутствует.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `204 No Content` код отклика, если действие было удалено.
 

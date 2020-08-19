@@ -4,13 +4,13 @@ description: Представляет номер телефона.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: ca2c81531aa5bf53c8038fe7e095f056c4682eba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.openlocfilehash: 162d6a0ccb927c6a48dc01dc3d1e716ab949d89d
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521892"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812052"
 ---
 # <a name="phone-resource-type"></a>Тип ресурса Phone
 
@@ -27,7 +27,7 @@ ms.locfileid: "42521892"
 |число|string|Номер телефона.|
 |type|String|Тип номера телефона. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

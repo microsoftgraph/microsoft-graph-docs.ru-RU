@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: fac703ecb3f930066f0b186fa1cc86e021a49ae3
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 651fd2b0eb0ab34a1b9660aa7046da36be67f2a7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598264"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806759"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -32,7 +32,7 @@ ms.locfileid: "46598264"
 3. Когда приложению требуется узнать об изменениях ресурса, оно совершает новый запрос, используя URL-адрес `deltaLink`, полученный на шаге 2. Этот запрос *может* быть совершен сразу по завершении шага 2 или когда приложение проверяет наличие изменений.
 4. Microsoft Graph возвращает описание изменений ресурса с момента последнего запроса вместе с URL-адресом `nextLink` или `deltaLink`.
 
->**Примечание.** Ресурсы, хранящиеся в Azure Active Directory (например, пользователи и группы), поддерживают сценарии "синхронизировать с этого момента". Это позволит пропустить действия 1 и 2 (если вы не хотите получать полное состояние ресурса) и запросить последнюю `deltaLink`. Добавьте `$deltaToken=latest` к функции `delta`, и ответ будет содержать ссылку `deltaLink`, но не будет содержать данные ресурсов.
+>**Примечание.** Ресурсы, хранящиеся в Azure Active Directory (например, пользователи и группы), поддерживают сценарии "синхронизировать с этого момента". Это позволит пропустить действия 1 и 2 (если вы не хотите получать полное состояние ресурса) и запросить последнюю `deltaLink`. Добавьте `$deltaToken=latest` к функции `delta`, и ответ будет содержать ссылку `deltaLink`, но не будет содержать данные ресурсов. Ресурсы в OneDrive и SharePoint также поддерживают эту функцию. Для ресурсов в OneDrive и SharePoint вместо этого добавьте `token=latest`.
 
 >**Примечание:** Функция запроса изменений обычно упоминается путем добавления `/delta` к имени ресурса. Тем не менее, `/delta` - это сокращение для полного имени`/microsoft.graph.delta`, которое вы видите в запросах, генерируемых Microsoft Graph SDK.
 

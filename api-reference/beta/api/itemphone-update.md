@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 4b1dd50e9448c4b6aa06b8e29609327678cae228
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 1b384f63f0b0fb885c6a479ca0861c2802e11ded
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229019"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811800"
 ---
 # <a name="update-itemphonenumber"></a>Обновление итемфоненумбер
 
@@ -32,28 +32,35 @@ ms.locfileid: "43229019"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "ignored" } -->
-
-```http
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
 PATCH /me/profile/phones/{id}
+PATCH /user/{userId}/profile/phones/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-
-| Имя           |Описание                  |
-|:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
-| Content-Type   | application/json. Обязательный. |
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
+|Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип        | Описание                                                                                                                     |
-|:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |Строка       | Содержит понятное имя для номера телефона.                                                                                  |
-|число        |String       | Содержит номер телефона.                                                                                                      |
-|type          |string       | Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+В следующей таблице приведены свойства, которые можно задать при обновлении объекта [итемфоне](../resources/itemphone.md) в профиле пользователя.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Понятное имя, назначенное пользователю для этого номера телефона. |
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|число|String|Номер телефона, предоставленный пользователем.|
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|type|фонетипе|Тип номера телефона в объекте. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="response"></a>Ответ
 
@@ -62,68 +69,71 @@ PATCH /me/profile/phones/{id}
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
-
-Ниже приведен пример запроса.
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_itemphone"
-}-->
-
-```http
-PATCH https://graph.microsoft.com/beta/me/profile/phones/{id}
-Content-type: application/json
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/user/{userId}/profile/phones/{id}
+Content-Type: application/json
+Content-length: 382
 
 {
-  "displayName": "displayName-value",
-  "type": "type-value",
-  "number": "number-value"
+  "type": "other"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-itemphone-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-itemphone-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-personname-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-itemphone-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-personname-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### <a name="response"></a>Отклик
-
-Ниже приведен пример отклика.
-
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
-
+**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemPhone"
-} -->
-
-```http
+}
+-->
+``` http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-  "displayName": "displayName-value",
-  "type": "type-value",
-  "number": "number-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "displayName": "Car Phone",
+  "type": "other",
+  "number": "+7 499 342 22 13"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update itemphone",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

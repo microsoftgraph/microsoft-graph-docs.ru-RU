@@ -4,13 +4,13 @@ description: Этот ресурс содержит оценку и описан
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: f718e197e690d3779870e5996161461fe8f60915
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 2b718851d1a27c3317a0ce77554be7ea3f8906a4
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507417"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811499"
 ---
 #  <a name="controlscore-resource-type"></a>Тип ресурса Контролскоре
 
@@ -25,7 +25,7 @@ ms.locfileid: "42507417"
 |   контролкатегори |   String  |  Категория действий управления (идентификация, данные, устройство, приложения, инфраструктура). |
 |   description |   String  |  Описание элемента управления. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

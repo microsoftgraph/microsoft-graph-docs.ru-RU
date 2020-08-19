@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2030a208ed61b7137d22c29eee2743b67556c92d
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: 2b5c06b8b664c10483c8d4a6767a981f1a5551be
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272781"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812346"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -47,7 +47,7 @@ ms.locfileid: "44272781"
 |importance| string | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
 |языковые стандарты|string|Язык сообщения чата, заданное клиентом.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -83,9 +83,8 @@ ms.locfileid: "44272781"
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
-  "locale": "string",
+  "locale": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

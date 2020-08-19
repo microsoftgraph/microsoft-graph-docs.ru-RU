@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a38c6c77daa5a9a6adab469681b4f7b0c4291e32
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: f00ef6f5c45736724f145e036a7fa78abdd107df
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598061"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811849"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -34,7 +34,31 @@ ms.locfileid: "46598061"
 - большое количество запросов во всех приложениях клиента;
 - большое количество запросов из конкретного приложения всех клиентов.
 
-## <a name="best-practices-to-handle-throttling"></a>Рекомендации по работе с регулированием
+## <a name="sample-response"></a>Пример отклика
+
+При превышении порога регулирования Microsoft Graph реагирует с откликом, похожим на следующий.
+
+```http
+HTTP/1.1 429 Too Many Requests
+Content-Type: application/json
+Retry-After: 2.128
+
+{
+  "error": {
+    "code": "TooManyRequests",
+    "innerError": {
+      "code": "429",
+      "date": "2020-08-18T12:51:51",
+      "message": "Please retry after",
+      "request-id": "94fb3b52-452a-4535-a601-69e0a90e3aa2",
+      "status": "429"
+    },
+    "message": "Please retry again laster."
+  }
+}
+```
+
+## <a name="best-practices-to-handle-throttling"></a>Рекомендации по решению проблем с регулированием
 
 Ниже приведены рекомендации по работе с регулированием.
 
@@ -63,6 +87,12 @@ ms.locfileid: "46598061"
 
 >[!NOTE]
 >Подробные сведения — в [рекомендациях по обнаружению файлов и определению изменений в масштабе](https://docs.microsoft.com/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online).
+
+## <a name="throttling-and-batching"></a>Регулирование и пакетная обработка
+
+[Пакетная обработка JSON](./json-batching.md) позволяет оптимизировать приложение, объединив несколько запросов в один объект JSON. Запросы в пакете оцениваются отдельно по ограничениям регулирования, и если какой-либо запрос превышает ограничения, он не выполняется со значением `status` равным `429` и ошибкой, аналогичной указанной выше. Сам пакет не выполняется с кодом состояния `424` (ошибка зависимости). Возможно регулирование нескольких запросов в одном пакете. Вам следует повторно выполнить каждый неудачный запрос из пакета, используя значение, предоставленное в заголовке отклика `retry-after` из содержимого JSON. Вы можете повторить попытку выполнения всех неудачных запросов в новом пакете после самого долгого значения `retry-after`.
+
+Если пакеты SDK автоматически повторно выполняют регулируемые запросы, не являющиеся пакетными, регулируемые запросы, входящие в пакет, не выполняются повторно автоматически.
 
 ## <a name="service-specific-limits"></a>Ограничения для отдельных служб
 

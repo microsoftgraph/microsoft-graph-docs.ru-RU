@@ -2,15 +2,15 @@
 title: Тип ресурса FormatProtection
 description: Представляет защиту формата объекта Range.
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e474a29e657d19e06aa35fbebffeee85d855acfa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8169041e6d36c9e5e73d7dc928fef33be3c154c0
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531380"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812255"
 ---
 # <a name="formatprotection-resource-type"></a>Тип ресурса FormatProtection
 
@@ -32,7 +32,7 @@ ms.locfileid: "42531380"
 |formulaHidden|boolean|Указывает, скрывает ли Excel формулу для ячеек в диапазоне. Значение NULL указывает, что для всего диапазона не задан единый параметр скрытия формулы.|
 |locked|boolean|Указывает, блокирует ли Excel ячейки в объекте. Значение NULL указывает, что для всего диапазона не задан единый параметр блокировки.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

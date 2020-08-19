@@ -4,13 +4,13 @@ description: 'Расширенное свойство, содержащее од
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 411cf91d2da986f1b669fe172f30a99c0298840b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: a55fa852e128321f36cd7fb75dc8889e196885e6
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520564"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812423"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>Тип ресурса singleValueLegacyExtendedProperty
 
@@ -18,9 +18,9 @@ ms.locfileid: "42520564"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Расширенное свойство, содержащее одно значение. 
+Расширенное свойство, содержащее одно значение.
 
-Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md). 
+Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 
 ## <a name="methods"></a>Методы
@@ -36,7 +36,7 @@ ms.locfileid: "42520564"
 |id|string|Идентификатор свойства. Только для чтения.|
 |значение|string|Значение свойства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

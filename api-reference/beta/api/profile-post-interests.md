@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: People
 doc_type: apiPageType
-ms.openlocfilehash: f0d4f406004d80121f2cd9ac44b39f303af71861
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: a53e551c5a7e1704754a72b0686481ae4129b2f8
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229334"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812178"
 ---
 # <a name="create-personinterest"></a>Создание Персонинтерест
 
@@ -18,7 +18,7 @@ ms.locfileid: "43229334"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [Персонинтерест] (.. /ресаурцес/персонинтерест.МД].
+Создание нового объекта [Персонинтерест] (.. /ресаурцес/персонинтерест.МД] в [профиле](../resources/profile.md)пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -35,7 +35,8 @@ ms.locfileid: "43229334"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /user/profile/interests
+POST /me/profile/interests
+POST /users/{id | userPrincipalName}/profile/interests
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,9 +46,22 @@ POST /user/profile/interests
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type   | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [персонинтерест](../resources/personinterest.md) в формате JSON.
+
+В следующей таблице приведены свойства, которые можно задать в новом объекте [персонинтерест](../resources/personinterest.md) в [профиле](../resources/profile.md)пользователя.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Коллекция String|Содержит категории, которые пользователь связал с интересом (например, персональный, реЦипиес). |
+|коллаборатионтагс|Коллекция String|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
+|description|String|Содержит описание интереса.|
+|displayName|String|Содержит понятное имя для интереса.  |
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|webUrl|String|Содержит ссылку на веб-страницу или ресурс, представляющие интерес. |
 
 ## <a name="response"></a>Ответ
 
@@ -71,11 +85,11 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "Sports"
   ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "description": "World's greatest football club",
+  "displayName": "Chelsea FC",
+  "webUrl": "https://www.chelseafc.com"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -110,21 +124,33 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
   "categories": [
-    "categories-value"
+    "Sports"
   ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "description": "World's greatest football club",
+  "displayName": "Chelsea FC",
+  "webUrl": "https://www.chelseafc.com",
+  "collaborationTags": null
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create personInterest",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

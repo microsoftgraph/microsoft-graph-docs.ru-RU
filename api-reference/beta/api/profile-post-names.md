@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: dd9b66db16f3c9146b47e917d9417ac7bb7e7adb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ea4b8095d1af6e080e1e42162bbf1f8d56678446
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455094"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811639"
 ---
 # <a name="create-personname"></a>Создание personName
 
@@ -28,7 +28,7 @@ ms.locfileid: "42455094"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Приложение                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -36,6 +36,7 @@ ms.locfileid: "42455094"
 
 ```http
 POST /me/profile/names
+POST /users/{id | userPrincipalName}/profile/names
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,13 +46,31 @@ POST /me/profile/names
 | Авторизация  | Bearer {токен}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
-
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [PersonName](../resources/personname.md) в формате JSON.
+
+В следующей таблице приведены свойства, которые можно задать при создании объекта [PersonName](../resources/personname.md) .
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Предоставляет упорядоченную визуализацию имени и фамилии в зависимости от языкового стандарта пользователя или устройства.|
+|первыми|String|Имя пользователя.|
+|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|initials|String|Инициалы пользователя.|
+|лангуажетаг|String|Содержит имя языка (EN-US, No-NetBIOS, en-AU), следуя формату IETF BCP47.   |
+|Фамили|String|Фамилия пользователя.|
+|маиден|String|Маиден имя пользователя. |
+|назван|String|Отчество пользователя.|
+|прозвищ|String|Псевдоним пользователя.|
+|произношение|[йомиперсоннаме](../resources/yomipersonname.md)|Руководство по произношению имени пользователя.|
+|суффикс|String|Обозначения, используемые после имени пользователя (например, "доктор").  |
+|title|String|Хонорификс используется для префикса имени пользователя (например, Dr, Sir, мадам, MRS).|
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод `201, Created` возвращает код отклика и новый объект [PersonName](../resources/personname.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [PersonName](../resources/personname.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -60,6 +79,7 @@ POST /me/profile/names
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_personname_from_profilev2"
@@ -70,12 +90,12 @@ POST https://graph.microsoft.com/beta/me/profile/names
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+  "displayName": "Innocenty Popov",
+  "first": "Innocenty",
+  "initials": "IP",
+  "last": "Popov",
+  "languageTag": "en-US",
+  "maiden": null
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -91,7 +111,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>Отклик
 
@@ -110,21 +129,37 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "displayName": "Innocenty Popov",
+  "first": "Innocenty",
+  "initials": "IP",
+  "last": "Popov",
+  "languageTag": "en-US",
+  "maiden": null,
+  "middle": null,
+  "nickname": null,
+  "suffix": null,
+  "title": null,
+  "pronunciation": null
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create personName",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

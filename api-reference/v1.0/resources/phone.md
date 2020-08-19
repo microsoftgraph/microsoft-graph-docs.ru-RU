@@ -2,15 +2,15 @@
 title: Тип ресурса Phone
 description: Представляет номер телефона.
 localization_priority: Normal
-author: ''
+author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2e20932285f7009ee470ba66a6a9cd78c50d65ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2817089138a27807fc21f33f1753748ae5221c22
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447187"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806970"
 ---
 # <a name="phone-resource-type"></a>Тип ресурса Phone
 
@@ -25,7 +25,7 @@ ms.locfileid: "42447187"
 |число|string|Номер телефона.|
 |type|фонетипе|Тип номера телефона. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

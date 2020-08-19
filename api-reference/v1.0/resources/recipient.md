@@ -2,28 +2,28 @@
 title: Тип ресурса recipient
 description: 'Представляет сведения о пользователе, который отправляет или получает событие, сообщение или запись в группе. '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1ea7da375f98905447fc684cf51145b4db003725
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: daf48391c0dd26ded407659ff9159703aed31566
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447005"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806823"
 ---
 # <a name="recipient-resource-type"></a>Тип ресурса recipient
 
 Пространство имен: microsoft.graph
 
-Представляет сведения о пользователе, который отправляет или получает событие, сообщение или запись в группе. 
+Представляет сведения о пользователе, который отправляет или получает событие, сообщение или запись в группе.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|Электронный адрес получателя.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

@@ -2,15 +2,15 @@
 title: Тип ресурса publicationFacet
 description: Ресурс **publicationFacet** содержит сведения о состоянии публикации ресурса driveItemVersion или driveItem.
 localization_priority: Normal
-author: ''
+author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: defd2c9b06a0d866ce43bbd4a9e8b36bdad770fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 91abd61454df2d06131a705dabcb87c9e4ce764f
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447040"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806893"
 ---
 # <a name="publicationfacet-resource-type"></a>Тип ресурса publicationFacet
 

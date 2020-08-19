@@ -4,13 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 21bc509fd2364365e29d1e35bcbe78d67fdc40c8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: 594339072c683b053ddeb637b6f401bae2aed322
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522381"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812073"
 ---
 # <a name="onedriveusageaccountdetail-resource-type"></a>Тип ресурса Онедривеусажеаккаунтдетаил
 
@@ -24,7 +24,7 @@ ms.locfileid: "42522381"
 | siteUrl                 | String  |
 | овнердисплайнаме        | String  |
 | овнерпринЦипалнаме      | String  |
-| isDeleted               | Boolean |
+| isDeleted               | Логический |
 | ластактивитидате        | Дата    |
 | филекаунт               | Int64   |
 | активефилекаунт         | Int64   |
@@ -32,7 +32,7 @@ ms.locfileid: "42522381"
 | сторажеаллокатединбитес | Int64   |
 | репортпериод            | String  |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -43,16 +43,16 @@ ms.locfileid: "42522381"
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "siteUrl": "String", 
-  "ownerDisplayName": "String", 
-  "ownerPrincipalName": "String", 
-  "isDeleted": true, 
-  "lastActivityDate": "Date", 
-  "fileCount": 1024, 
-  "activeFileCount": 1024, 
-  "storageUsedInBytes": 1024, 
-  "storageAllocatedInBytes": 1024, 
+  "reportRefreshDate": "Date",
+  "siteUrl": "String",
+  "ownerDisplayName": "String",
+  "ownerPrincipalName": "String",
+  "isDeleted": true,
+  "lastActivityDate": "Date",
+  "fileCount": 1024,
+  "activeFileCount": 1024,
+  "storageUsedInBytes": 1024,
+  "storageAllocatedInBytes": 1024,
   "reportPeriod": "String"
 }
 ```

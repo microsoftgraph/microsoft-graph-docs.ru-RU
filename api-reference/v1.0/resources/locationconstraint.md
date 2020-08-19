@@ -2,15 +2,15 @@
 title: Тип ресурсов locationConstraint
 description: Условия, заданные клиентом в отношении расположения для проведения собрания.
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7b90e03436caf701c1fba312a9d13a1fb69da03b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c2646e361e81b5d9ec0c45e3bcfe5f867c5ebe97
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447537"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807768"
 ---
 # <a name="locationconstraint-resource-type"></a>Тип ресурсов locationConstraint
 
@@ -18,7 +18,7 @@ ms.locfileid: "42447537"
 
 Условия, заданные клиентом в отношении расположения для проведения собрания.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление JSON ресурса.
 

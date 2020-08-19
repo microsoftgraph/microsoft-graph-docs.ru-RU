@@ -3,14 +3,14 @@ title: Загрузка содержимого ресурса DriveItemVersion
 description: В этой статье рассказывается, как получить содержимое определенной версии ресурса DriveItem.
 localization_priority: Normal
 ms.prod: sharepoint
-author: ''
+author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 114d2dde51d81c1caee7cb4e66e3134b6f4ad297
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c0fd0864bd4ccdddd8ac8a6f40a3f693d431d94
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517652"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806214"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource"></a>Загрузка содержимого ресурса DriveItemVersion
 
@@ -41,7 +41,7 @@ GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Возвращает отклик `302 Found`, который выполняет перенаправление на URL-адрес, прошедший предварительную проверку подлинности и предназначенный для скачивания байтов файла.
 

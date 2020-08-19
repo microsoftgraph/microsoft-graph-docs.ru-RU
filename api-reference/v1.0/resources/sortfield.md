@@ -2,15 +2,15 @@
 title: Тип ресурса SortField
 description: Представляет условие в операции сортировки.
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1c1d5a83323c28b8ec54543d4ee633861654991e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: debc1f860e2e24306d6261444a29e126037aa3ae
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533638"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806746"
 ---
 # <a name="sortfield-resource-type"></a>Тип ресурса SortField
 
@@ -22,13 +22,13 @@ ms.locfileid: "42533638"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |ascending|boolean|Указывает, выполняется ли сортировка по возрастанию.|
-|color|строка|Представляет целевой цвет условия при сортировке по шрифту или цвету ячеек.|
-|dataOption|string|Представляет дополнительные параметры сортировки для этого поля. Возможные значения: `Normal`, `TextAsNumber`.|
+|color|string|Представляет целевой цвет условия при сортировке по шрифту или цвету ячеек.|
+|dataOption|string|Представляет дополнительные параметры сортировки для этого поля. Возможные значения: `Normal` , `TextAsNumber` .|
 |key|int|Представляет столбец (или строку в зависимости от ориентации сортировки), для которого задано условие. Представляется в виде расстояния от первого столбца (или строки).|
 |sortOn|string|Представляет тип сортировки этого условия. Допустимые значения: `Value`, `CellColor`, `FontColor`, `Icon`.|
 |значок|[воркбукикон](icon.md)|Представляет значок, определенный условием, при сортировке по значку ячейки.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

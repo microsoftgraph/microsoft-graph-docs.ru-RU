@@ -4,13 +4,13 @@ description: Ссылки для открытия записной книжки 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: f98feb5e9fbe5cede591f4edf0349b3bf4267de9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: jewan-microsoft
+ms.openlocfilehash: 4114704a13b4116534d96743ceacfba51df67847
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521259"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812458"
 ---
 # <a name="recentnotebooklinks-resource-type"></a>Тип ресурса recentNotebookLinks
 
@@ -26,7 +26,7 @@ ms.locfileid: "42521259"
 |oneNoteClientUrl|[externalLink](externallink.md)|Открывает записную книжку в клиенте OneNote, если она установлена.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Открывает записную книжку в OneNote в Интернете.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

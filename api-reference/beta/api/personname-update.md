@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 26989c4eb5b7af987ab9a50555d3abdf07e3a16a
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 7a21c071fe0279330683718e6d4f939177afa4d2
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228697"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811730"
 ---
 # <a name="update-personname"></a>Обновление PersonName
 
@@ -36,6 +36,7 @@ ms.locfileid: "43228697"
 
 ```http
 PATCH /me/profile/names/{id}
+PATCH /users/{id | userPrincipalName}/profile/names/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -49,19 +50,23 @@ PATCH /me/profile/names/{id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип                                            | Описание                                                                             |
-|:-------------|:------------------------------------------------|:----------------------------------------------------------------------------------------|
-|displayName   |Строка                                           | Предоставляет упорядоченную визуализацию имени и фамилии.                              |
-|первыми         |String                                           | Имя пользователя.                                                                 |
-|initials      |String                                           | Инициалы пользователя.                                                                   |
-|лангуажетаг   |String                                           | Содержит имя языка (EN-US, No-NetBIOS, en-AU), следуя формату IETF BCP47.   |
-|Фамили          |String                                           | Фамилия пользователя.                                                                  |
-|маиден        |String                                           | Имя пользователя, марриаже фамилию.                                                          |
-|назван        |String                                           | Отчество пользователя.                                                                     |
-|прозвищ      |String                                           | Псевдоним пользователя.                                                                        |
-|произношение |[йомиперсоннаме](../resources/yomipersonname.md) | Содержит сведения о произношении имени пользователя.                                 |
-|суффикс        |String                                           | Обозначения, используемые после имени пользователя. (например, "доктор".)                                       |
-|title         |String                                           | Хонорификс используется для префикса имени пользователя. (например, "доктор", "Sir", "Мадам", Mrs.)                      |
+В следующей таблице приведены свойства, которые можно обновлять в существующем объекте [PersonName](../resources/personname.md) в [профиле](../resources/profile.md)пользователя.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Предоставляет упорядоченную визуализацию имени и фамилии в зависимости от языкового стандарта пользователя или устройства.|
+|первыми|String|Имя пользователя.|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|initials|String|Инициалы пользователя.|
+|лангуажетаг|String|Содержит имя языка (EN-US, No-NetBIOS, en-AU), следуя формату IETF BCP47.   |
+|Фамили|String|Фамилия пользователя.|
+|маиден|String|Маиден имя пользователя. |
+|назван|String|Отчество пользователя.|
+|прозвищ|String|Псевдоним пользователя.|
+|произношение|[йомиперсоннаме](../resources/yomipersonname.md)|Руководство по произношению имени пользователя.|
+|суффикс|String|Обозначения, используемые после имени пользователя (например, "доктор").  |
+|title|String|Хонорификс используется для префикса имени пользователя (например, Dr, Sir, мадам, MRS).|
 
 ## <a name="response"></a>Ответ
 
@@ -84,13 +89,9 @@ PATCH https://graph.microsoft.com/beta/me/profile/names/{id}
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+  "nickname": "Kesha"
 }
+
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
@@ -123,21 +124,43 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "displayName": "Innocenty Popov",
+  "first": "Innocenty",
+  "initials": "IP",
+  "last": "Popov",
+  "languageTag": "en-US",
+  "maiden": null,
+  "middle": null,
+  "nickname": "Kesha",
+  "suffix": null,
+  "title": null,
+  "pronunciation": {
+    "displayName": "In-no ken-te ",
+    "first": "In-no ken-te Pop-ov",
+    "maiden": null,
+    "middle": null,
+    "last": "Pop-ov"
+  }
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update personname",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

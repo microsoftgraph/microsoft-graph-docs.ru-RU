@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8d7efbcfbdb5cf16628a0a6c83488f8422d45d94
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 7ee6eb45776b00d04a3b7d51a38411d3e515f9ad
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229355"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811667"
 ---
 # <a name="list-educationalactivities"></a>Список Едукатионалактивитиес
 
@@ -28,7 +28,7 @@ ms.locfileid: "43229355"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Приложение                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -36,11 +36,12 @@ ms.locfileid: "43229355"
 
 ```http
 GET /me/profile/educationalActivities
+GET /users/{id | userPrincipalName}/profile/educationalActivities
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 |Имя            |Значение    |Описание                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -56,8 +57,7 @@ GET /me/profile/educationalActivities
 |:---------------|:----------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.   |
 
-
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -115,45 +115,57 @@ Content-type: application/json
 {
   "value": [
     {
-      "completionMonthYear": "datetime-value",
-      "endMonthYear": "datetime-value",
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "source": null,
+      "completionMonthYear": "Date",
+      "endMonthYear": "Date",
       "institution": {
-        "description": "description-value",
-        "displayName": "displayName-value",
+        "description": null,
+        "displayName": "Colorado State University",
         "location": {
-          "type": "type-value",
-          "postOfficeBox": "postOfficeBox-value",
-          "street": "street-value",
-          "city": "city-value",
-          "state": "state-value",
-          "countryOrRegion": "countryOrRegion-value",
-          "postalCode": "postalCode-value"
+          "type": "business",
+          "postOfficeBox": null,
+          "street": "12000 E Prospect Rd",
+          "city": "Fort Collins",
+          "state": "Colorado",
+          "countryOrRegion": "USA",
+          "postalCode": "80525"
         },
-        "webUrl": "webUrl-value"
+        "webUrl": "https://www.colostate.edu"
       },
       "program": {
-        "abbreviation": "abbreviation-value",
-        "activities": "activities-value",
-        "awards": "awards-value",
-        "description": "description-value",
-        "displayName": "displayName-value",
-        "fieldsOfStudy": "fieldsOfStudy-value",
-        "grade": "grade-value",
-        "notes": "notes-value",
-        "webUrl": "webUrl-value"
+        "abbreviation": "MBA",
+        "activities": null,
+        "awards": null,
+        "description": "Master of Business Administration with a major in Entreprenuership and Finance.",
+        "displayName": "Master of Business Administration",
+        "fieldsOfStudy": null,
+        "grade": "3.9",
+        "notes": null,
+        "webUrl": "https://biz.colostate.edu"
       },
-      "startMonthYear": "datetime-value"
+      "startMonthYear": "Date"
     }
   ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List educationalActivities",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

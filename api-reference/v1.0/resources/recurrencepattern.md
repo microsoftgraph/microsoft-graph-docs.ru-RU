@@ -2,21 +2,21 @@
 title: Тип ресурса recurrencePattern
 description: 'Описывает частоту повторения события. '
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: bc9f0a2745faf2a14c6200db81a6995b0835162e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd04999c43aa248bcad7439a0d1e940ebd749129
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533874"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806809"
 ---
 # <a name="recurrencepattern-resource-type"></a>Тип ресурса recurrencePattern
 
 Пространство имен: microsoft.graph
 
-Описывает частоту повторения [события](event.md). 
+Описывает частоту повторения [события](event.md).
 
 В зависимости от того, каков конкретный сценарий, вы можете задать расписание повторения события одним из 6 способов. Для каждого типа расписания необходимо задать временной интервал между повторениями. Фактические экземпляры повторяющегося события всегда соответствуют этому расписанию и происходят в диапазоне дат, указанном для события. Повторяющееся событие всегда определяется соответствующими ресурсами **recurrencePattern** (частотой повторения события) и [recurrenceRange](recurrencerange.md) (продолжительностью повторения).
 

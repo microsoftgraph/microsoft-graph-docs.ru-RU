@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: d10ea81f3648be1896637ca866d0185c2a674097
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: beecb5fa65609196fd4514d097d97b6f64fcdb4c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227738"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812045"
 ---
 # <a name="personinterest-resource-type"></a>Тип ресурса Персонинтерест
 
@@ -26,20 +26,31 @@ ms.locfileid: "43227738"
 
 | Метод                                                    | Возвращаемый тип                         | Описание                                                           |
 |:----------------------------------------------------------|:------------------------------------|:----------------------------------------------------------------------|
-| [Получение Персонинтерест](../api/personinterest-get.md)        | [персонинтерест](personinterest.md) | Чтение свойств и связей объекта **персонинтерест** . |
-| [Обновление Персонинтерест](../api/personinterest-update.md)  | [персонинтерест](personinterest.md) | Обновление объекта **персонинтерест** .                                   |
-| [Удаление Персонинтерест](../api/personinterest-delete.md)  | Нет                                | Удаление объекта **персонинтерест** .                                   |
+|[Список интересов](../api/profile-list-interests.md)|Коллекция [персонинтерест](../resources/personinterest.md)|Получение ресурсов Персонинтерест из свойства навигации по интересам.|
+|[Создание Персонинтерест](../api/profile-post-interests.md)|[персонинтерест](../resources/personinterest.md)|Создание нового объекта Персонинтерест.|
+|[Получение Персонинтерест](../api/personinterest-get.md)|[персонинтерест](../resources/personinterest.md)|Чтение свойств и связей объекта [персонинтерест](../resources/personinterest.md) .|
+|[Обновление Персонинтерест](../api/personinterest-update.md)|[персонинтерест](../resources/personinterest.md)|Обновление свойств объекта [персонинтерест](../resources/personinterest.md) .|
+|[Удаление Персонинтерест](../api/personinterest-delete.md)|Нет|Удаляет объект [персонинтерест](../resources/personinterest.md) .|
 
 ## <a name="properties"></a>Свойства
 
-| Свойство     | Тип             | Описание                                                                                    |
-|:-------------|:-----------------|:-----------------------------------------------------------------------------------------------|
-|categories    |Коллекция String | Содержит категории, которые пользователь связал с интересом (например, персональный, реЦипиес). |
-|description   |String            | Содержит описание интереса.                                                        |
-|displayName   |Строка            | Содержит понятное имя для интереса.                                                     |
-|webUrl        |String            | Содержит ссылку на веб-страницу или ресурс, представляющие интерес.                                  |
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Коллекция String|Содержит категории, которые пользователь связал с интересом (например, персональный, реЦипиес). |
+|коллаборатионтагс|Коллекция String|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
+|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создавшего сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|description|String|Содержит описание интереса.|
+|displayName|String|Содержит понятное имя для интереса.  |
+|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которое последним изменил объект. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|webUrl|String|Содержит ссылку на веб-страницу или ресурс, представляющие интерес. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -58,19 +69,31 @@ ms.locfileid: "43227738"
 
 ```json
 {
-  "categories": ["String"],
+  "@odata.type": "#microsoft.graph.personInterest",
+  "id": "String (identifier)",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
+  "categories": [
+    "String"
+  ],
   "description": "String",
   "displayName": "String",
-  "webUrl": "String"
+  "webUrl": "String",
+  "collaborationTags": [
+    "String"
+  ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "personInterest resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

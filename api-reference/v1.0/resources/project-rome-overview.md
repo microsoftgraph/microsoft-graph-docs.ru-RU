@@ -2,15 +2,15 @@
 title: Использование API Microsoft Graph для работы с проектом Рим
 description: Проект Рим — это инициатива Майкрософт по созданию платформы взаимодействия между устройствами. Проект Рим позволяет приложению на локальном клиенте или в службе взаимодействовать с приложениями и службами на удаленном узле, когда пользователь входит с помощью учетной записи Майкрософт, которая используется для входа на клиентское устройство. Это позволяет программировать взаимодействие между устройствами и несколькими платформами, которые центрируются вокруг задач пользователя, а не для устройств.
 localization_priority: Normal
-author: ''
+author: ailae
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 59a8ab09561ab7cd23b4a37d4923e8cecac34705
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: f7e68c50e6e58c4f9f7a2b04bf2f26361fef6063
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353891"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806977"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Использование API Microsoft Graph для работы с проектом Рим
 
@@ -39,5 +39,5 @@ ms.locfileid: "44353891"
 - [Создание или замена элемента журнала](../api/projectrome-put-historyitem.md)
 - [Удаление элемента журнала](../api/projectrome-delete-historyitem.md)
 
-## <a name="whats-new"></a>Новые возможности
-Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.
+## <a name="whats-new"></a>Что нового
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.

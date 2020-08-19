@@ -2,15 +2,15 @@
 title: Тип ресурса объекта filesecuritystate
 description: Содержит сведения о файле (не процессу), связанном с предупреждением.
 localization_priority: Normal
-author: ''
+author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fc9d05e875104469a25ee742635ea8e86682d9e9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fefccfedc348a7cab23e093fdd7728f49029b52c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531429"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807796"
 ---
 # <a name="filesecuritystate-resource-type"></a>Тип ресурса объекта filesecuritystate
 
@@ -27,7 +27,7 @@ ms.locfileid: "42531429"
 |path|String|Полный путь к файлу или файлу imageFile.|
 |riskScore|String|Созданный поставщиком/вычисляемый показатель риска для файла оповещений. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

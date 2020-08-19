@@ -2,15 +2,15 @@
 title: Тип ресурса FilterDatetime
 description: Представляет способ фильтрации даты при фильтрации по значениям.
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9214e8ecde9b2c09e06cfcc6d6145ea5319eace9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 616f6a67bf761d0346c6d232eb6392ee2dc5fd96
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531407"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807761"
 ---
 # <a name="filterdatetime-resource-type"></a>Тип ресурса FilterDatetime
 
@@ -21,10 +21,10 @@ ms.locfileid: "42531407"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|дата|строка|Дата в формате ISO8601, используемая для фильтрации данных.|
+|дата|string|Дата в формате ISO8601, используемая для фильтрации данных.|
 |specificity|string|Точность, с которой производится фильтрация данных на основе даты. Например, если указана дата 2005-04-02, а для свойства specificity задано значение month, после фильтрации останутся все строки, датированные апрелем 2009 г. Допустимые значения: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: cc2619702a514bed8776d501ef26440f3a804ed2
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: b1bcf743737616ac5c48d3b8c3132b57d11464ac
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228620"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812199"
 ---
 # <a name="create-webaccount"></a>Создание учетной записи
 
@@ -36,6 +36,7 @@ ms.locfileid: "43228620"
 
 ```http
 POST /me/profile/webAccounts
+POST /users/{id | userPrincipalName}/profile/webAccounts
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,13 +46,26 @@ POST /me/profile/webAccounts
 | Авторизация  | Bearer {токен}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [учетной записи](../resources/webaccount.md) в формате JSON.
 
+В следующей таблице приведены свойства, которые можно задать при создании нового объекта [учетной записи](../resources/webaccount.md) в [профиле](../resources/profile.md)пользователя.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|String|Содержит описание, предоставленное пользователем для учетной записи службы, на которую выполняется ссылка.|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|service|[сервицеинформатион](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|статусмессаже|String|Содержит сообщение о состоянии от облачной службы, если оно предоставлено или синхронизировано. |
+|userId|String|Имя пользователя, отображаемое для учетной записи Account.  |
+|webUrl|String|Содержит ссылку на профиль пользователя в облачной службе, если она существует.|
+
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод `201, Created` возвращает код отклика и новый объект [учетной записи](../resources/webaccount.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [учетной записи](../resources/webaccount.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -70,14 +84,12 @@ POST https://graph.microsoft.com/beta/me/profile/webAccounts
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "userId": "userId-value",
+  "description": "My Github contributions!",
+  "userId": "innocenty.popov",
   "service": {
-    "name": "name-value",
-    "webUrl": "webUrl-value"
-  },
-  "statusMessage": "statusMessage-value",
-  "webUrl": "webUrl-value"
+    "name": "GitHub",
+    "webUrl": "https://github.com"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -112,23 +124,35 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "userId": "userId-value",
-  "service": {
-    "name": "name-value",
-    "webUrl": "webUrl-value"
+    "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "statusMessage": "statusMessage-value",
-  "webUrl": "webUrl-value"
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "description": "My Github contributions!",
+  "userId": "innocenty.popov",
+  "service": {
+    "name": "GitHub",
+    "webUrl": "https://github.com"
+  },
+  "statusMessage": null,
+  "webUrl": "https://github.com/innocenty.popov"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create webAccount",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

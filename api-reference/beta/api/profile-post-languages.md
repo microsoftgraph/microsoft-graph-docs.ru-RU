@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 65b2bba9f6582b103475c50f6712f2bcb2317f0e
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: ca294f73e9fbac6ea08305f8a85a3688de82b455
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229327"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811632"
 ---
 # <a name="create-languageproficiency"></a>Создание ЛангуажепрофиЦиенци
 
@@ -36,6 +36,7 @@ ms.locfileid: "43229327"
 
 ```http
 POST /me/profile/languages
+POST /users/{id | userPrincipalName}/profile/languages
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,13 +46,26 @@ POST /me/profile/languages
 | Авторизация  | Bearer {токен}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [лангуажепрофиЦиенци](../resources/languageproficiency.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+В следующей таблице приведены свойства, которые можно задать при создании нового объекта [лангуажепрофиЦиенци](../resources/languageproficiency.md) в [профиле](../resources/profile.md)пользователя.
 
-В случае успешного выполнения этот метод `201, Created` возвращает код отклика и новый объект [лангуажепрофиЦиенци](../resources/languageproficiency.md) в тексте отклика.
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Содержит имя языка в длинном формате. |
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|ознакомлен|лангуажепрофиЦиенцилевел|Представляет сведения о том, как пользователи читают сведения о языке, представленном объектом. Возможные значения: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|произносимого|лангуажепрофиЦиенцилевел|Представляет знание пользователей для языка, представленного объектом. Возможные значения: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
+|tag|String|Содержит четырехзначный BCP47 Name для языка (EN-US, No-NetBIOS, en-AU).|
+|образом|лангуажепрофиЦиенцилевел|Представляет пользователей, которым предназначено знание языка, представленного объектом. Возможные значения: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
+
+## <a name="response"></a>Отклик
+
+В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [лангуажепрофиЦиенци](../resources/languageproficiency.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -70,9 +84,11 @@ POST https://graph.microsoft.com/beta/me/profile/languages
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "tag": "tag-value",
-  "proficiency": "proficiency-value"
+  "displayName": "Norwegian Bokmål",
+  "tag": "nb-NO",
+  "spoken": "nativeOrBilingual",
+  "written": "nativeOrBilingual",
+  "reading": "nativeOrBilingual"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -107,18 +123,32 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "tag": "tag-value",
-  "proficiency": "proficiency-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "displayName": "Norwegian Bokmål",
+  "tag": "nb-NO",
+  "spoken": "nativeOrBilingual",
+  "written": "nativeOrBilingual",
+  "reading": "nativeOrBilingual"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create languageProficiency",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

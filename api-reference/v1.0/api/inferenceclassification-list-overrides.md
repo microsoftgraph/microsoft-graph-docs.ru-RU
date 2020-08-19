@@ -2,15 +2,15 @@
 title: Список переопределений
 description: Получение переопределений, настроенных пользователем для классификации сообщений от определенных отправителей.
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c6ccd43be95c7e3665823d28950e2cb646a3238e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a0a54566f2fd51c226e849be108125fd358edc08
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516747"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806179"
 ---
 # <a name="list-overrides"></a>Список переопределений
 
@@ -40,10 +40,10 @@ GET /users/{id}/inferenceClassification/overrides
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) в тексте отклика. Если у пользователя нет настроенных переопределений, возвращается пустая коллекция.
 ## <a name="example"></a>Пример

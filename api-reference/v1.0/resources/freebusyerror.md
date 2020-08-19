@@ -2,15 +2,15 @@
 title: Тип ресурса Фрибусеррор
 description: Представляет сведения об ошибке при попытке получить доступ к пользователю, списку рассылки или ресурсу.
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8e069aef1d26a409e9ebe29a516136a952604ee6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 019c21eadc65b29d74bdc6fd94c40641acd43491
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531387"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812262"
 ---
 # <a name="freebusyerror-resource-type"></a>Тип ресурса Фрибусеррор
 
@@ -25,7 +25,7 @@ ms.locfileid: "42531387"
 |респонсекоде |String |Код ответа из запроса на доступность пользователя, списка рассылки или ресурса. |
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

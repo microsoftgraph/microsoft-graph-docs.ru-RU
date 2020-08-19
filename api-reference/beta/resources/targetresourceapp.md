@@ -4,13 +4,13 @@ description: Указывает, что объект приложения был
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: a7493f24a46251ce5515eafa6f27bedd13ae63d0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: SarahBar
+ms.openlocfilehash: 60d19d61cccb5bb5eaf8619f8de71f066593e063
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519990"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811975"
 ---
 # <a name="targetresourceapp-resource-type"></a>Тип ресурса Таржетресаурцеапп
 
