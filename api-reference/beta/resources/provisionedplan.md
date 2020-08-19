@@ -4,13 +4,13 @@ description: Свойство **provisionedPlans** объектов user и orga
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 78ce5deac88c07a5f180c972d80a7c8e8798cab8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.openlocfilehash: bfb7ace1f42886a5c1335480ebb9de45b333793b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521350"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810540"
 ---
 # <a name="provisionedplan-resource-type"></a>Тип ресурса provisionedPlan
 
@@ -28,7 +28,7 @@ ms.locfileid: "42521350"
 |provisioningStatus|String|Пример: "Success".|
 |service|String|Имя службы, например “AccessControlS2S”.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

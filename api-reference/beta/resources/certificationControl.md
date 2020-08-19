@@ -4,13 +4,13 @@ description: Этот ресурс содержит данные сертифи�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: bafd2c9d66c0d696649944f88e4fcfbdea4bcca6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: f6ecfa2ffddd362ba6c166d9dc839aedaf6f4723
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507763"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810582"
 ---
 #  <a name="certificationcontrol-resource-type"></a>Тип ресурса Цертификатионконтрол
 
@@ -23,7 +23,7 @@ ms.locfileid: "42507763"
 |name | string | Имя элемента управления сертификацией |
 |url | string | URL-адрес портала доверия службы Майкрософт |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 12e9461181845b72312fffbfff7b5655216946b9
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: f4738353e4417060c3296ed1173fe97e7d3a018d
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228641"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810652"
 ---
 # <a name="list-websites"></a>Список веб-сайтов
 
@@ -28,7 +28,7 @@ ms.locfileid: "43228641"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Приложение                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -36,11 +36,12 @@ ms.locfileid: "43228641"
 
 ```http
 GET /me/profile/websites
+GET /users/{id | userPrincipalName}/profile/websites
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 |Имя            |Значение    |Описание                                                                                                                                                                      |
 |:---------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -56,7 +57,7 @@ GET /me/profile/websites
 |:---------------|:----------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.   |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -114,23 +115,34 @@ Content-type: application/json
 {
   "value": [
     {
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
       "categories": [
-        "categories-value"
+        "football"
       ],
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "webUrl": "webUrl-value"
+      "description": "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway",
+      "displayName": "Lyn Damer",
+      "webUrl": "www.lyndamer.no"
     }
   ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List websites",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

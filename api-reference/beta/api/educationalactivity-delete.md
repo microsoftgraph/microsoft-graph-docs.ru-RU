@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b1c4a5069f192a481b9f4814115e3d6fcee6fc55
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 96c717171f683d2a32e62b4e79b80639e2cb5242
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427902"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810953"
 ---
 # <a name="delete-educationalactivity"></a>Удаление Едукатионалактивити
 
@@ -36,6 +36,7 @@ ms.locfileid: "42427902"
 
 ```http
 DELETE /me/profile/educationalActivities/{id} 
+DELETE /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,11 +45,11 @@ DELETE /me/profile/educationalActivities/{id}
 |:---------------|:----------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.   |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
@@ -63,10 +64,10 @@ DELETE /me/profile/educationalActivities/{id}
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/user/profile/educationalActivities/{id}
+DELETE https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 

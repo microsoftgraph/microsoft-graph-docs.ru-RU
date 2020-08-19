@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 1faba5ca71fe9478963120ec43d9eb9da08d721a
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: bf863b7a0acc2b7ece38f10272497cb3e5267d07
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42619051"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810393"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Ответы на ошибки API безопасности Microsoft Graph
 
@@ -27,7 +27,7 @@ API безопасности Microsoft Graph — это Федеративная
 {Vendor}/{Provider}/{StatusCode}/{LatencyInMs}
 ```
 
-Этот заголовок предупреждения отправляется обратно только клиентам, когда один из поставщиков данных возвращает код ошибки, отличный от 2xx или 404. Например:
+Этот заголовок предупреждения отправляется обратно только клиентам, когда один из поставщиков данных возвращает код ошибки, отличный от 2xx или 404. Пример:
 
 - HttpStatusCode. запрещено (403) может быть возвращено, если доступ к ресурсу не предоставляется.
 - Если время ожидания поставщика истекло, в заголовке предупреждения возвращается HttpStatusCode. Гатевайтимеаут (504).
@@ -37,12 +37,14 @@ API безопасности Microsoft Graph — это Федеративная
 
 ## <a name="example"></a>Пример
 
-Пользователь запрашивает `security/alerts/{alert_id}`.
+Пользователь запрашивает `security/alerts/{alert_id}` .
 
-    Provider 1: 404 (provider does not have a record of this alert ID)
-    Provider 2: 504 (provider timed out)
-    Provider 3: 200 (success)
-    Provider 4: 403 (customer has not licensed this provider)
+```
+Provider 1: 404 (provider does not have a record of this alert ID)
+Provider 2: 504 (provider timed out)
+Provider 3: 200 (success)
+Provider 4: 403 (customer has not licensed this provider)
+```
 
 Так как 404 и 200, ожидаемые условия, заголовок предупреждения содержит следующие сведения:
 
@@ -62,9 +64,9 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 
 ## <a name="constraints"></a>Провероч
 
-Параметр `$top` запроса OData имеет лимит в 1000 оповещений. В первый запрос GET рекомендуется включить только параметр `$top`, но не параметр `$skip`. Для разбивки на страницы можно использовать параметр `@odata.nextLink`. Если требуется применить параметр `$skip`, он имеет ограничение в 500 оповещений. Например, `/security/alerts?$top=10&$skip=500` вернет код отклика `200 OK`, но `/security/alerts?$top=10&$skip=501` вернет код отклика `400 Bad Request`. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
+`$top`Параметр запроса OData имеет лимит в 1000 оповещений. В первый запрос GET рекомендуется включить только параметр `$top`, но не параметр `$skip`. Для разбивки на страницы можно использовать параметр `@odata.nextLink`. Если требуется применить параметр `$skip`, он имеет ограничение в 500 оповещений. Например, `/security/alerts?$top=10&$skip=500` вернет код отклика `200 OK`, но `/security/alerts?$top=10&$skip=501` вернет код отклика `400 Bad Request`. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
 
-Чтобы устранить это ограничения, используйте параметр запроса `$filter` OData с `eventDateTime` объектом Alert из API безопасности Microsoft Graph, используя `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` и заменив значение DateTime на Последнее (1500th) оповещение. Кроме того, можно задать диапазон для объекта `eventDateTime`; Пример: `alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z`.
+Чтобы устранить это ограничения, используйте `$filter` параметр запроса OData с `eventDateTime` объектом Alert из API безопасности Microsoft Graph, используя `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` и заменив значение DateTime на Последнее (1500th) оповещение. Кроме того, можно задать диапазон для, например `eventDateTime` , `alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z` .
 
 ## <a name="see-also"></a>См. также
 

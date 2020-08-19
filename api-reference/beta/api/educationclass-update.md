@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7e2ee8f1da830253f8f8d8a2ada0d8ec8b0c029f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8b5e6508af5b00ecdcd50180d8a5ed47c05c009
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426306"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810897"
 ---
 # <a name="update-educationclass-properties"></a>Обновление свойств educationclass
 
@@ -27,7 +27,7 @@ ms.locfileid: "42426306"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,10 +46,12 @@ PATCH /education/classes/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |description|String| Описание курса.|
-|displayName|Строка| Название курса.|
+|displayName|String| Название курса.|
 |mailNickname|String| Почтовый псевдоним для отправки электронных сообщений всем пользователям, если это возможно. |
-<!-- Please verify the revised description here. -->
-Свойство classCode типа String представляет собой код курса, используемый учебным заведением. Свойство externalId типа String представляет собой идентификатор курса из системы синхронизации. Свойство externalName типа String представляет собой название курса в системе синхронизации. Свойство externalSource типа String представляет собой способ создания курса. Возможные значения: `sis`, `manual`, `enum_sentinel`.
+|classCode|String| Код класса, используемый учебным заведением.|
+|externalId|String| Идентификатор курса из системы синхронизации. |
+|externalName|String|Название курса в системе синхронизации.|
+|externalSource|string| Способ создания этого курса. Возможные значения: `sis`, `manual`, `enum_sentinel`.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвратит код отклика `200 OK` и обновленный объект [educationClass](../resources/educationclass.md) в теле отклика.
@@ -87,7 +89,7 @@ Content-length: 224
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

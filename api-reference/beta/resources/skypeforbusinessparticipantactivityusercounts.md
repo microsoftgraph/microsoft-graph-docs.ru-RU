@@ -4,13 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: a3a7ac37aeeb68d240ffa2c0cdec81e7b2d07ddc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: kszb
+ms.openlocfilehash: e53ef85ce3fbe0be2a36adc218d565bdb78f64a0
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520368"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811072"
 ---
 # <a name="skypeforbusinessparticipantactivityusercounts-resource-type"></a>Тип ресурса СкипефорбусинесспартиЦипантактивитюсеркаунтс
 
@@ -29,7 +29,7 @@ ms.locfileid: "42520368"
 | reportDate        | Дата   |
 | репортпериод      | String |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -40,13 +40,13 @@ ms.locfileid: "42520368"
 
 ```json
 {
-  "im": 1024, 
-  "audioVideo": 196, 
-  "appSharing": 196, 
-  "web": 196, 
-  "dialInOut3rdParty": 196, 
-  "reportRefreshDate": "Date", 
-  "reportDate": "Date", 
+  "im": 1024,
+  "audioVideo": 196,
+  "appSharing": 196,
+  "web": 196,
+  "dialInOut3rdParty": 196,
+  "reportRefreshDate": "Date",
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

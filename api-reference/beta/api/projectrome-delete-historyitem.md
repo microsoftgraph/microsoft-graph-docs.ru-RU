@@ -4,13 +4,13 @@ description: Удаление существующего элемента жур
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: 852d4f7c13dd6bf710d2ec429e0a1313ff33e46f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: 42112754e7ce3388cb4e45eb1cf82426cdedbbc1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454902"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810019"
 ---
 # <a name="delete-a-historyitem"></a>Удаление historyItem
 
@@ -45,7 +45,7 @@ DELETE /me/activities/{id}/historyItems/{id}
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Текст запроса отсутствует.
 

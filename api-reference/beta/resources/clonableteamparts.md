@@ -4,13 +4,13 @@ description: 'Описывает, какая часть команды долж�
 localization_priority: Normal
 doc_type: enumPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 287e63d9972043508c62b29ccf9b72d19accc337
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: nkramer
+ms.openlocfilehash: e08beeb232e5c9b2c77200f75053e3a822945ca6
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507658"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810589"
 ---
 # <a name="clonableteamparts-enum-type"></a>тип перечисления Клонаблетеампартс
 
@@ -18,7 +18,7 @@ ms.locfileid: "42507658"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает, какая часть [команды](../resources/team.md) должна быть клонирована. 
+Описывает, какая часть [команды](../resources/team.md) должна быть клонирована.
 
 ## <a name="members"></a>Элементы
 

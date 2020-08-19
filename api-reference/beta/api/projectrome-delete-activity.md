@@ -4,13 +4,13 @@ description: Удаление существующего действия пол
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: 2c856fdfcc20ecc783cfa349302a50f53d6282e4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: 193a87003e321123be71913dcaeeaf9c14dd1c09
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454923"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810022"
 ---
 # <a name="delete-an-activity"></a>Удаление действия
 
@@ -49,7 +49,7 @@ DELETE /me/activities/{id}
 
 Текст запроса отсутствует.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `204 No Content` код отклика, если действие было удалено.
 

@@ -4,13 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 6557fcaee85c4e733e6098e469a759109425b21f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: 6303a8e61f402dc7bf965450f7eb9934fefb6f0e
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520676"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810386"
 ---
 # <a name="sharepointsiteusagefilecounts-resource-type"></a>Тип ресурса Шарепоинтситеусажефилекаунтс
 
@@ -27,7 +27,7 @@ ms.locfileid: "42520676"
 | reportDate        | Дата   |
 | репортпериод      | String |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -38,11 +38,11 @@ ms.locfileid: "42520676"
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "siteType": "String", 
-  "total": 1024, 
-  "active": 1024, 
-  "reportDate": "Date", 
+  "reportRefreshDate": "Date",
+  "siteType": "String",
+  "total": 1024,
+  "active": 1024,
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

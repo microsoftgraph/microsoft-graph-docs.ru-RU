@@ -4,13 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 2df9cd9e7887c955190c8478cd8075a077929133
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: kszb
+ms.openlocfilehash: 47e5597971c5b1417151ae202bb1e0fade17597a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520459"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810974"
 ---
 # <a name="skypeforbusinesspeertopeeractivityusercounts-resource-type"></a>Тип ресурса Скипефорбусинесспиртопирактивитюсеркаунтс
 
@@ -27,9 +27,9 @@ ms.locfileid: "42520459"
 | филетрансфер      | Int64  |
 | репортрефрешдате | Дата   |
 | reportDate        | Дата   |
-| репортпериод      | Строка |
+| репортпериод      | String |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -40,13 +40,13 @@ ms.locfileid: "42520459"
 
 ```json
 {
-  "im": 1024, 
-  "audio": 1024, 
-  "video": 1024, 
-  "appSharing": 1024, 
-  "fileTransfer": 1024, 
-  "reportRefreshDate": "Date", 
-  "reportDate": "Date", 
+  "im": 1024,
+  "audio": 1024,
+  "video": 1024,
+  "appSharing": 1024,
+  "fileTransfer": 1024,
+  "reportRefreshDate": "Date",
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

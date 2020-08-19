@@ -4,13 +4,13 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: fc6bb8b60c6c9df08373a76bd6bc5714758fc9cb
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+author: preetikr
+ms.openlocfilehash: 9d25d78d51a39d3240d0d7566b7037f55e379fe1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682140"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811114"
 ---
 # <a name="networkconnection-resource-type"></a>Тип ресурса networkConnection
 
@@ -51,7 +51,7 @@ ms.locfileid: "44682140"
 |:---|:---|:---|
 |unknown|–1|Неизвестный протокол.|
 |см|нуль|Протокол IP.|
-|полученных|1 | Протокол управления сообщениями в Интернете.|
+|полученных|1,1| Протокол управления сообщениями в Интернете.|
 |режимы|2| Протокол управления группами Интернет.|
 |ггп|4| Протокол шлюза для шлюза.|
 |IPv4|4 | Протокол Интернета версии 4.|
@@ -73,7 +73,7 @@ ms.locfileid: "44682140"
 |возмож|1256| Последовательный протокол обмена пакетами.|
 |спксии|1257| Последовательный протокол обмена пакетами версии 2.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

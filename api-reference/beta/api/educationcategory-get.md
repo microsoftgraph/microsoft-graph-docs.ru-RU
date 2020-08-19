@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 07c95e1f53ee349955e8937f558faf2940e74938
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c88e8ae48aade64fb5f219008e277063dae46f1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427069"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810883"
 ---
 # <a name="get-educationcategory"></a>Получение Едукатионкатегори
 
@@ -46,7 +46,7 @@ GET /education/classes/{id}/assignmentCategories/{id}
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentCategories
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -89,7 +89,8 @@ Content-length: 85
 {
     "displayName": "Quizzes",
     "id": "ec98f158-341d-4fea-9f8c-14a250d489ac"
-}```
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

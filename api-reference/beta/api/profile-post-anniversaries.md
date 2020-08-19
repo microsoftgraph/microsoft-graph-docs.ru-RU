@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d00734bf10467d8f76658fc3b6148f31f0201414
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 92caed6f034b53c53d21f6a0931b3f9e4786e26a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455125"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810071"
 ---
 # <a name="create-personanniversary"></a>Создание Персонанниверсари
 
@@ -35,7 +35,8 @@ ms.locfileid: "42455125"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /me/profile/anniversaries 
+POST /me/profile/anniversaries
+POST /users/{id | userPrincipalName}/profile/anniversaries
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,13 +46,23 @@ POST /me/profile/anniversaries
 | Авторизация  | Bearer {токен}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [персонанниверсари](../resources/personanniversary.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+В следующей таблице приведены свойства, которые можно задать в новом объекте * * Персонанниверсари * * * в [профиле](../resources/profile.md)пользователя.
 
-В случае успешного выполнения этот метод `201, Created` возвращает код отклика и новый объект [персонанниверсари](../resources/personanniversary.md) в тексте отклика.
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|date|Date|Содержит дату, связанную с типом юбилея.|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|type|анниверсаритипе|Тип юбилея даты. Возможные значения: `birthday`, `wedding`, `unknownFutureValue`.|
+
+## <a name="response"></a>Отклик
+
+В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [персонанниверсари](../resources/personanniversary.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -70,8 +81,8 @@ POST https://graph.microsoft.com/beta/me/profile/anniversaries
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "type": "birthday",
+  "date": "1980-01-08"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -87,7 +98,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>Отклик
 
@@ -106,17 +116,28 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "type": "birthday",
+  "date": "Date"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create personAnniversary",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

@@ -4,13 +4,13 @@ description: Получение списка объектов nameditem.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: a4ec8e4ca44919ef2e232c34ce8f2852167ead6c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: 1d1598c7b3a5ae7574a4c7f1d616c1fd67169fb3
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456840"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810813"
 ---
 # <a name="list-nameditemcollection"></a>Список NamedItemCollection
 
@@ -42,7 +42,7 @@ GET /workbook/names
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

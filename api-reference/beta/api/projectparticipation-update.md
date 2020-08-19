@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b0aa9353a9e16929bd71f41f5328c0fdaf12c531
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6a50fbae387a7599110dce8056f927f449681e04
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454929"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810034"
 ---
 # <a name="update-projectparticipation"></a>Обновление прожектпартиЦипатион
 
@@ -36,6 +36,7 @@ ms.locfileid: "42454929"
 
 ```http
 PATCH /me/profile/projects/{id}
+PATCH /users/{id | userPrincipalName}/profile/projects/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,21 +46,23 @@ PATCH /me/profile/projects/{id}
 | Авторизация  | Bearer {токен}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
-
 ## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип                                                     | Описание                                                                                        |
-|:-------------|:---------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-|categories    |Коллекция String                                         | Содержит категории, связанные с проектом пользователем (например, цифровое преобразование, на платформе для нефтегазовой платформы)   |
-|Клиенты        |[компанидетаил](../resources/companydetail.md)            | Содержит подробные сведения о клиенте, для которого выполнялся проект.                                |
-|коллег    |Коллекция [релатедперсон](../resources/relatedperson.md) | Пользователи, которые также работали над проектом.                                                            |
-|описаны        |[поситиондетаил](../resources/positiondetail.md)          | Содержит подробные сведения о роли пользователей в проекте.                                               |
-|displayName   |Строка                                                    | Содержит понятное имя проекта.                                                          |
-|спонсорами      |Коллекция [релатедперсон](../resources/relatedperson.md) | Пользователь (люди), который спонсор проекта.                                                          |
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Коллекция String|Содержит категории, связанные с проектом пользователем (например, цифровое преобразование, гидростенд). |
+|Клиенты|[компанидетаил](../resources/companydetail.md)|Содержит подробные сведения о клиенте, для которого выполнялся проект. |
+|коллаборатионтагс|Коллекция String|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
+|коллег|Коллекция [релатедперсон](../resources/relatedperson.md)|Список людей, которые также работали над проектом. |
+|описаны|[поситиондетаил](../resources/positiondetail.md)|Содержит подробные сведения о роли пользователя в проекте.|
+|displayName|String|Содержит понятное имя проекта.|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|спонсорами|Коллекция [релатедперсон](../resources/relatedperson.md)|Пользователь или люди, которые спонсорируют проект.    |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [прожектпартиЦипатион](../resources/projectparticipation.md) в тексте отклика.
 
@@ -80,64 +83,11 @@ PATCH https://graph.microsoft.com/beta/me/profile/projects/{id}
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
+  "allowedAudiences": "organization",
   "client": {
-    "displayName": "displayName-value",
-    "pronunciation": "pronunciation-value",
-    "department": "department-value",
-    "officeLocation": "officeLocation-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
-  },
-  "displayName": "displayName-value",
-  "detail": {
-    "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
-    },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  },
-  "colleagues": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ],
-  "sponsors": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+    "department": "Corporate Marketing",
+    "webUrl": "https://www.contoso.com"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -172,73 +122,57 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
   "categories": [
-    "categories-value"
+    "Branding"
   ],
   "client": {
-    "displayName": "displayName-value",
-    "pronunciation": "pronunciation-value",
-    "department": "department-value",
-    "officeLocation": "officeLocation-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
+    "displayName": "Contoso Ltd.",
+    "pronunciation": null,
+    "department": "Corporate Marketing",
+    "officeLocation": null,
+    "address": null,
+    "webUrl": "https://www.contoso.com"
   },
-  "displayName": "displayName-value",
+  "displayName": "Contoso Re-branding Project",
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
+      "displayName": "Adventureworks Inc.",
+      "pronunciation": null,
+      "department": "Consulting",
+      "officeLocation": null,
+      "address": null,
+      "webUrl": "https://adventureworks.com"
     },
-    "description": "description-value",
+    "description": "Rebranding of Contoso Ltd.",
     "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
+    "jobTitle": "Lead PM Rebranding",
+    "role": "project management",
     "startMonthYear": "datetime-value",
-    "summary": "summary-value"
+    "summary": "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
   },
-  "colleagues": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ],
-  "sponsors": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+  "colleagues": null,
+  "sponsors": null
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update projectparticipation",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

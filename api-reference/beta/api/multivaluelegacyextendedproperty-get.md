@@ -4,13 +4,13 @@ description: Разверните узел ".
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: e6b8cf1c2a08ca600192a854ecc0848701b21665
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 952b20ba5fd7825c1094559952c239681d950db2
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456822"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810880"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Получение объекта multiValueLegacyExtendedProperty
 
@@ -26,10 +26,10 @@ ms.locfileid: "42456822"
 
 - [calendar](../resources/calendar.md);
 - [contact](../resources/contact.md);
-- [contactFolder](../resources/contactfolder.md) 
+- [contactFolder](../resources/contactfolder.md)
 - [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md) 
+- [message](../resources/message.md)
 - [Задача Outlook](../resources/outlooktask.md)
 - [Папка задач Outlook](../resources/outlooktaskfolder.md)
 
@@ -37,14 +37,14 @@ ms.locfileid: "42456822"
 
 - [calendar](../resources/calendar.md) для групп;
 - group [event](../resources/event.md);
-- [post](../resources/post.md) для групп. 
+- [post](../resources/post.md) для групп.
 
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
 В зависимости от ресурса, из которого вы получаете расширенное свойство, а также от запрашиваемого типа разрешения (делегированного или приложения), для вызова этого API требуется минимум разрешение, указанное в следующей таблице. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
@@ -57,7 +57,7 @@ ms.locfileid: "42456822"
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 | [Задача Outlook](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Не поддерживается |
 | [Папка задач Outlook](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Не поддерживается |
- 
+
 ## <a name="http-request"></a>HTTP-запрос
 
 Вы можете получить экземпляр ресурса, дополненный расширенным свойством, которое совпадает с фильтром в свойстве **id**. Убедитесь, что вы применяете [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке фильтра.
@@ -145,12 +145,12 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`. 
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 Основной текст отклика содержит объект, который представляет запрошенный экземпляр ресурса, дополненный соответствующим объектом [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md).
 

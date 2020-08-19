@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0dc41b151b008ba18eeea15d397cb225f4292317
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: daeaee3034e51f0dc351b19f193b4ae529e1f0f4
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673823"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810078"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Получение объектов каталога из списка идентификаторов
 
@@ -18,7 +18,7 @@ ms.locfileid: "46673823"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Возвращение объектов каталогов, указанных в списке идентификаторов.  
+Возвращение объектов каталогов, указанных в списке идентификаторов.
 
 Ниже перечислены некоторые распространенные случаи использования этой функции.
 

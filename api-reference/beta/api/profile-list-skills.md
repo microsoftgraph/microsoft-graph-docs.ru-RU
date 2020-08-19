@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 218cbfc2a55df842cb74a6344e062b9b6f369de2
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: a4b8e5c3a3ccd32d75505c0eba5da762ec60b2aa
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228648"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810631"
 ---
 # <a name="list-skills"></a>Список навыков
 
@@ -28,7 +28,7 @@ ms.locfileid: "43228648"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Приложение                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -36,11 +36,12 @@ ms.locfileid: "43228648"
 
 ```http
 GET /me/profile/skills
+GET /users/{id | userPrincipalName}/profile/skills
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 |Имя            |Значение    |Описание                                                                                                                                                                      |
 |:---------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -115,23 +116,38 @@ Content-type: application/json
 {
   "value": [
     {
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "source": null,
       "categories": [
-        "categories-value"
+        "Professional"
       ],
-      "displayName": "displayName-value",
-      "proficiency": "proficiency-value",
-      "webUrl": "webUrl-value"
+      "displayName": "API Design",
+      "proficiency": "advancedProfessional",
+      "webUrl": null,
+      "collaborationTags": [
+        "ableToMentor"
+      ]
     }
   ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List skills",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

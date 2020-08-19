@@ -4,13 +4,13 @@ description: Обновление свойств объекта nameditem.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 5d3d6fb8bd9bae83b53ce1a39e6f385aaf4c397c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: 68a866dd55165f7d62dc912622efd6132ba764d7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456791"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810771"
 ---
 # <a name="update-nameditem"></a>Обновление объекта NamedItem
 
@@ -39,7 +39,7 @@ PATCH /workbook/names/{name}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

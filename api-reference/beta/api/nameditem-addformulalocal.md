@@ -4,13 +4,13 @@ description: Добавляет новое имя в определенную к
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: e5e8ee19488f4c81ffff4b2c1495863f989c5458
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+author: ruoyingl
+ms.openlocfilehash: d1c10057cc73726074bfef17771824917215da99
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108244"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810794"
 ---
 # <a name="add-named-item-formulalocal"></a>Add Named Item FormulaLocal
 
@@ -23,7 +23,7 @@ ms.locfileid: "43108244"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite, Sites.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Sites.Read.All |
+|Приложение | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ POST /workbook/worksheets/{id|name}/names/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

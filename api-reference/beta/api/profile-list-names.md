@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 87688a8e8049370ebe6a0bd4929450f3de7a1301
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 54c54827eb2719323078ca9325c46e0b7cf6449a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228662"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810708"
 ---
 # <a name="list-names"></a>Перечисление имен
 
@@ -28,7 +28,7 @@ ms.locfileid: "43228662"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Приложение                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -36,13 +36,22 @@ ms.locfileid: "43228662"
 
 ```http
 GET /me/profile/names
+GET /users/{id | userPrincipalName}/profile/names
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-## <a name="request-headers"></a>Заголовки запросов
+|Имя            |Значение    |Описание                                                                                                                                                                 |
+|:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|$filter         |string   |Разрешает отклик только на те объекты, которые содержат заданные условия.                                                                                             |
+|$orderby        |строка   |По умолчанию объекты в отклике сортируются по значению createdDateTime в запросе. Вы можете изменить порядок ответа с помощью параметра *$OrderBy* .|
+|$select         |string   |Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.                                        |
+|$skip           |int      |Пропустите первые n результатов, которые удобно использовать для разбиения на страницы.                                                                                                                                |
+|$top            |int      |Количество возвращаемых результатов.                                                                                                                                           |
+
+## <a name="request-headers"></a>Заголовки запроса
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
@@ -86,7 +95,6 @@ GET https://graph.microsoft.com/beta/me/profile/names
 
 ---
 
-
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
@@ -107,23 +115,45 @@ Content-type: application/json
 {
   "value": [
     {
-      "displayName": "displayName-value",
-      "first": "first-value",
-      "initials": "initials-value",
-      "last": "last-value",
-      "languageTag": "languageTag-value",
-      "maiden": "maiden-value"
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "displayName": "Innocenty Popov",
+      "first": "Innocenty",
+      "initials": "IP",
+      "last": "Popov",
+      "languageTag": "en-US",
+      "maiden": null,
+      "middle": null,
+      "nickname": "Kesha",
+      "suffix": null,
+      "title": null,
+      "pronunciation": {
+        "displayName": "In-no ken-te ",
+        "first": "In-no ken-te Pop-ov",
+        "maiden": null,
+        "middle": null,
+        "last": "Pop-ov"
+      }
     }
   ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List names",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

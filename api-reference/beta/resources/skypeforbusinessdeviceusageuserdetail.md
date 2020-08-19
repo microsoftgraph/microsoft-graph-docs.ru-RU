@@ -4,13 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 582c3483d4292f634385461508bf579834dfd12e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: kszb
+ms.openlocfilehash: 50f37fdfd3441c256241b76ebcc6b144eb1486d7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520410"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811055"
 ---
 # <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a>Тип ресурса Скипефорбусинессдевицеусажеусердетаил
 
@@ -23,14 +23,14 @@ ms.locfileid: "42520410"
 | репортрефрешдате | Дата    |
 | userPrincipalName | String  |
 | ластактивитидате  | Дата    |
-| уседвиндовс       | Boolean |
-| уседвиндовсфоне  | Boolean |
-| уседандроидфоне  | Boolean |
-| уседифоне        | Boolean |
-| уседипад          | Boolean |
+| уседвиндовс       | Логический |
+| уседвиндовсфоне  | Логический |
+| уседандроидфоне  | Логический |
+| уседифоне        | Логический |
+| уседипад          | Логический |
 | репортпериод      | String  |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -41,14 +41,14 @@ ms.locfileid: "42520410"
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "userPrincipalName": "String", 
-  "lastActivityDate": "Date", 
-  "usedWindows": true, 
-  "usedWindowsPhone": true, 
-  "usedAndroidPhone": true, 
-  "usediPhone": true, 
-  "usediPad": true, 
+  "reportRefreshDate": "Date",
+  "userPrincipalName": "String",
+  "lastActivityDate": "Date",
+  "usedWindows": true,
+  "usedWindowsPhone": true,
+  "usedAndroidPhone": true,
+  "usediPhone": true,
+  "usediPad": true,
   "reportPeriod": "String"
 }
 ```

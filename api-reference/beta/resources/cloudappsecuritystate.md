@@ -4,13 +4,13 @@ description: Содержит сведения о состоянии облач�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: d8e2df4dd25f4209996b4e5cf4f2083790385e84
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 2b16d971aa22a51552588c96f4ddbb03f1d34142
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507644"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810575"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>Тип ресурса Клаудаппсекуритистате
 
@@ -26,7 +26,7 @@ ms.locfileid: "42507644"
 |дестинатионсервиценаме|String|Имя облачного приложения или службы (например, "Salesforce", "DropBox" и т. д.).|
 |riskScore|String|Полученный поставщиком и вычисляемый показатель риска облачного приложения или службы. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

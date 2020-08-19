@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 7f0141e249e04d378724a2e3128e1e26f17e3ac2
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 9f629543692d514e6ff96f633eeed993e1e90e78
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792886"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810939"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -84,6 +84,12 @@ ms.locfileid: "46792886"
 | Дополнение | бета | Добавлены следующие свойства для [Условий соглашения об использовании](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
 | Дополнение | бета | Добавлен новый тип ресурса для [Условий соглашения об использовании](/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
 | Дополнение | бета | Добавлены внутренние и внешние спонсоры [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) для управления правами.  |
+
+### <a name="people-and-workplace-intelligence"></a>Люди и рабочая аналитика
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение | Бета-версия | Добавлены следующие новые связи для [API профиля](/graph/api/resources/profile?view=graph-rest-beta) с соответствующими объектами и методами: <ul><li>[addresses](/graph/api/resources/itemAddress?view=graph-rest-beta)</li><li>[anniversaries](/graph/api/resources/personAnniversary?view=graph-rest-beta)</li><li>[awards](/graph/api/resources/personAward?view=graph-rest-beta)</li><li>[certifications](/graph/api/resources/personCertification?view=graph-rest-beta)</li><li>[notes](/graph/api/resources/personAnnotation?view=graph-rest-beta)</li><li>[patents](/graph/api/resources/itemPatent?view=graph-rest-beta)</li><li>[publications](/graph/api/resources/itemPublication?view=graph-rest-beta)</li></ul>|
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
 
@@ -760,7 +766,7 @@ ms.locfileid: "46792886"
 | Дополнение | 1.0 | Добавлено действие **grant** для объекта [permission](/graph/api/resources/permission?view=graph-rest-1.0). |
 | Дополнение        | 1.0        | Добавлено свойство навигации **following** для объекта [drive](/graph/api/resources/drive?view=graph-rest-1.0). |
 | Дополнение        | 1.0        | Добавлено действие [follow](/graph/api/driveitem-follow?view=graph-rest-1.0) для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0). |
-| Дополнение        | 1.0        | Добавлено действие [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-1.0) для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0). |
+| Дополнение        | v1.0        | Добавлено действие [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-1.0) для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0). |
 
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
@@ -1817,7 +1823,7 @@ ms.locfileid: "46792886"
 |Изменение|бета|Изменен тип следующих свойств объекта [mobileAppDependency](/graph/api/resources/intune-apps-mobileappdependency?view=graph-rest-beta):<br/>вместо **dependencyType** из [mobileAppDependecyType](/graph/api/resources/intune-apps-mobileappdependecytype?view=graph-rest-beta) теперь используется [mobileAppDependencyType](/graph/api/resources/intune-apps-mobileappdependencytype?view=graph-rest-beta)<br/>|
 |Дополнение|Бета|Добавлено свойство **deviceGuardSecureBootWithDMA** для объекта [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены свойства **smartScreenAppInstallControl** и **lockScreenActivateAppsWithVoice** для объекта [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
-|Дополнение|Бета|Добавлено свойство навигации **deviceAppManagementTasks** для объекта [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta)|
+|Дополнение|бета|Добавлено свойство навигации **deviceAppManagementTasks** для объекта [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство навигации **domainJoinConnectors** для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство навигации **assignments** для объекта [roleScopeTag](/graph/api/resources/intune-rbac-rolescopetag?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство **isReadOnly** для сложного типа [omaSettingInteger](/graph/api/resources/intune-deviceconfig-omasettinginteger?view=graph-rest-beta)|
@@ -3658,7 +3664,7 @@ ms.locfileid: "46792886"
 |Дополнение|Бета-версия|Добавлено действие shareForSchoolDataSyncService для объекта [depOnboardingSetting](/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta). |
 |Дополнение|бета|Добавлено действие unshareForSchoolDataSyncService для объекта [depOnboardingSetting](/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлена функция getAuditCategories для коллекции [auditEvent](/graph/api/resources/intune-auditing-auditevent?view=graph-rest-beta). |
-|Дополнение|Бета-версия|Добавлена функция getAuditActivityTypes для коллекции [auditEvent](/graph/api/resources/intune-auditing-auditevent?view=graph-rest-beta). |
+|Дополнение|бета|Добавлена функция getAuditActivityTypes для коллекции [auditEvent](/graph/api/resources/intune-auditing-auditevent?view=graph-rest-beta). |
 |Удаление|Бета-версия|Удалены следующие объекты:<br/>**mobileAppIdentifierDeployment**.<br/>|
 |Удаление|Бета-версия|Удалены следующие сложные типы:<br/>**windowsInformationProtectionCloudResource**;<br/>**windowsInformationProtectionCloudResourceCollection**.<br/>|
 |Изменение|Бета-версия|Изменены следующие свойства объекта [androidDeviceComplianceLocalActionLockDeviceWithPasscode](/graph/api/resources/intune-deviceconfig-androiddevicecompliancelocalactionlockdevicewithpasscode?view=graph-rest-beta):<br/>свойство **passcode** сделано необязательным.<br/>|
@@ -4498,7 +4504,7 @@ ms.locfileid: "46792886"
 | Изменение          | Бета-версия        | Добавлено свойство **vpnConfigurationId** к объекту [mobileAppGroupAssignment](/graph/api/resources/intune-apps-mobileappgroupassignment?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Удалено свойство **fromEmailAddress** из объекта [notificationMessageTemplate](/graph/api/resources/intune-deviceconfig-notificationmessagetemplate?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Добавлено свойство **excludedApps** к объекту [officeSuiteApp](/graph/api/resources/intune-apps-officesuiteapp?view=graph-rest-beta). |
-| Изменение          | Бета-версия        | Удалено свойство **excludedOfficeApps** из объекта [officeSuiteApp](/graph/api/resources/intune-apps-officesuiteapp?view=graph-rest-beta). |
+| Изменение          | бета        | Удалено свойство **excludedOfficeApps** из объекта [officeSuiteApp](/graph/api/resources/intune-apps-officesuiteapp?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Добавлено свойство **enabled** к объекту [sharedPCConfiguration](/graph/api/resources/intune-deviceconfig-sharedpcconfiguration?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Добавлены свойства **networkProxyApplySettingsDeviceWide**, **networkProxyDisableAutoDetect**, **networkProxyAutomaticConfigurationUrl**, **networkProxyServer**, **bluetoothDeviceName**, **wiFiScanInterval**, **wirelessDisplayBlockProjectionToThisDevice**, **wirelessDisplayBlockUserInputFromReceiver**, **wirelessDisplayRequirePinForPairing**, **experienceBlockDeviceDiscovery**, **experienceBlockErrorDialogWhenNoSIM**, **experienceBlockTaskSwitcher**, **startMenuPinnedFolderDocuments**, **startMenuPinnedFolderDownloads**, **startMenuPinnedFolderFileExplorer**, **startMenuPinnedFolderHomeGroup**, **startMenuPinnedFolderMusic**, **startMenuPinnedFolderNetwork**, **startMenuPinnedFolderPersonalFolder**, **startMenuPinnedFolderPictures**, **startMenuPinnedFolderSettings**, **startMenuPinnedFolderVideos**, **startMenuAppListVisibility**, **startMenuHideFrequentlyUsedApps**, **startMenuHideRecentJumpLists**, **startMenuHideRecentlyAddedApps**, **startMenuHideRestartOptions**, **startMenuHideUserTile**, **startMenuHidePowerButton**, **startMenuLayoutEdgeAssetsXml**, **personalizationDesktopImageUrl** и **personalizationLockScreenImageUrl** к объекту [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Изменен тип следующих свойств объекта [windowsMobileMSI](/graph/api/resources/intune-apps-windowsmobilemsi?view=graph-rest-beta):<br/>**productCode** теперь относится не к Guid, а к String.<br/> |

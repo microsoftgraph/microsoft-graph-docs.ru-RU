@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 886bfa6fc9271c633689b725584bd0c57d3fc4fc
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: dc0298b61eefe8ab3897f5014875bf4d9120da4b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510634"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810904"
 ---
 # <a name="update-educationalactivity"></a>Обновление едукатионалактивити
 
@@ -35,7 +35,8 @@ ms.locfileid: "43510634"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/educationalActivities/{id} 
+PATCH /me/profile/educationalActivities/{id}
+PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -49,13 +50,15 @@ PATCH /me/profile/educationalActivities/{id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство           | Тип                                                                  | Описание                                                                |
-|:-------------------|:----------------------------------------------------------------------|:---------------------------------------------------------------------------|
-|комплетионмонсеар |Дата                                                                   | Месяц и год, когда пользователь выполнит или выполнил действие.           |
-|ендмонсеар        |Дата                                                                   | Месяц и год, когда пользователь завершил действие учебного заведения. |
-|Организация         |[институтиондата](../resources/institutiondata.md)                     | Содержит подробные сведения о учебном заведения.                            |
-|Программа             |[едукатионалактивитидетаил](../resources/educationalactivitydetail.md) | Содержит расширенные сведения о программе или курсе.                 |
-|стартмонсеар      |Дата                                                                   | Месяц и год, когда пользователь присвоено указанному действию.             |
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|комплетионмонсеар|Дата|Месяц и год, когда пользователь выполнит или выполнил действие. |
+|ендмонсеар|Дата|Месяц и год, когда пользователь завершил действие учебного заведения.|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|Организация|[институтиондата](../resources/institutiondata.md)|Содержит подробные сведения о учебном заведения. |
+|Программа|[едукатионалактивитидетаил](../resources/educationalactivitydetail.md)|Содержит расширенные сведения о программе или курсе.|
+|стартмонсеар|Дата|Месяц и год, когда пользователь присвоено указанному действию.|
 
 ## <a name="response"></a>Ответ
 
@@ -79,34 +82,17 @@ PATCH https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 Content-type: application/json
 
 {
-  "completionMonthYear": "datetime-value",
-  "endMonthYear": "datetime-value",
   "institution": {
-    "description": "description-value",
-    "displayName": "displayName-value",
     "location": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
-  },
-  "program": {
-    "abbreviation": "abbreviation-value",
-    "activities": "activities-value",
-    "awards": "awards-value",
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "fieldsOfStudy": "fieldsOfStudy-value",
-    "grade": "grade-value",
-    "notes": "notes-value",
-    "webUrl": "webUrl-value"
-  },
-  "startMonthYear": "datetime-value"
+      "type": "business",
+      "postOfficeBox": null,
+      "street": "12000 E Prospect Rd",
+      "city": "Fort Collins",
+      "state": "Colorado",
+      "countryOrRegion": "USA",
+      "postalCode": "80525"
+    }
+  }
 }
 ```
 
@@ -141,43 +127,55 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "completionMonthYear": "datetime-value",
-  "endMonthYear": "datetime-value",
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "completionMonthYear": "Date",
+  "endMonthYear": "Date",
   "institution": {
-    "description": "description-value",
-    "displayName": "displayName-value",
+    "description": null,
+    "displayName": "Colorado State University",
     "location": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
+      "type": "business",
+      "postOfficeBox": null,
+      "street": "12000 E Prospect Rd",
+      "city": "Fort Collins",
+      "state": "Colorado",
+      "countryOrRegion": "USA",
+      "postalCode": "80525"
     },
-    "webUrl": "webUrl-value"
+    "webUrl": "https://www.colostate.edu"
   },
   "program": {
-    "abbreviation": "abbreviation-value",
-    "activities": "activities-value",
-    "awards": "awards-value",
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "fieldsOfStudy": "fieldsOfStudy-value",
-    "grade": "grade-value",
-    "notes": "notes-value",
-    "webUrl": "webUrl-value"
+    "abbreviation": "MBA",
+    "activities": null,
+    "awards": null,
+    "description": "Master of Business Administration with a major in Entreprenuership and Finance.",
+    "displayName": "Master of Business Administration",
+    "fieldsOfStudy": null,
+    "grade": "3.9",
+    "notes": null,
+    "webUrl": "https://biz.colostate.edu"
   },
-  "startMonthYear": "datetime-value"
+  "startMonthYear": "Date"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update educationalactivity",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

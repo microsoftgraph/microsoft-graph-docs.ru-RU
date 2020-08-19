@@ -3,14 +3,14 @@ title: Удаление historyItem
 description: Удаление существующего элемента журнала для существующего действия пользователя.
 localization_priority: Normal
 ms.prod: project-rome
-author: ''
+author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: fc6ed6a6a2f01667c32b9f2497a93e05e0f275ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 084431ed1ad5ef6ff30986afe7a14037bbb4b5f5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510741"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810296"
 ---
 # <a name="delete-a-historyitem"></a>Удаление historyItem
 
@@ -43,11 +43,11 @@ DELETE /me/activities/{id}/historyItems/{id}
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Текст запроса отсутствует.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `204 No Content` код отклика, если элемент History был удален.
 

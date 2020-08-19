@@ -4,13 +4,13 @@ description: Расширенное свойство, содержащее ко�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 8fef15877b7ab99a1100ab1ac18055268354a33e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 2b0bfa2d8d5da5c3cca9479195a6649e25c8d7e8
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522612"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810533"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>Тип ресурса multiValueLegacyExtendedProperty
 
@@ -35,7 +35,7 @@ ms.locfileid: "42522612"
 |id|string|Идентификатор свойства. Только для чтения.|
 |значение|Коллекция строк|Коллекция значений свойств.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

@@ -4,13 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 665270996d68456dce973855a32795cd237d6c23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: kszb
+ms.openlocfilehash: fda548f97a2aa3a2236d920a0f3439fb20710dc7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520354"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810981"
 ---
 # <a name="skypeforbusinesspeertopeeractivityminutecounts-resource-type"></a>Тип ресурса Скипефорбусинесспиртопирактивитиминутекаунтс
 
@@ -26,7 +26,7 @@ ms.locfileid: "42520354"
 | reportDate        | Дата   |
 | репортпериод      | String |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -37,10 +37,10 @@ ms.locfileid: "42520354"
 
 ```json
 {
-  "audio": 1024, 
-  "video": 1024, 
-  "reportRefreshDate": "Date", 
-  "reportDate": "Date", 
+  "audio": 1024,
+  "video": 1024,
+  "reportRefreshDate": "Date",
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```
