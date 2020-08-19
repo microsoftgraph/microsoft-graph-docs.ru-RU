@@ -2,32 +2,32 @@
 title: Тип ресурса Phone
 description: Представляет номер телефона.
 localization_priority: Normal
-author: ''
+author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2e20932285f7009ee470ba66a6a9cd78c50d65ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2817089138a27807fc21f33f1753748ae5221c22
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447187"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806970"
 ---
-# <a name="phone-resource-type"></a><span data-ttu-id="ead69-103">Тип ресурса Phone</span><span class="sxs-lookup"><span data-stu-id="ead69-103">phone resource type</span></span>
+# <a name="phone-resource-type"></a><span data-ttu-id="8d5a0-103">Тип ресурса Phone</span><span class="sxs-lookup"><span data-stu-id="8d5a0-103">phone resource type</span></span>
 
-<span data-ttu-id="ead69-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ead69-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8d5a0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8d5a0-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="ead69-105">Представляет номер телефона.</span><span class="sxs-lookup"><span data-stu-id="ead69-105">Represents a phone number.</span></span>
+<span data-ttu-id="8d5a0-105">Представляет номер телефона.</span><span class="sxs-lookup"><span data-stu-id="8d5a0-105">Represents a phone number.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="ead69-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="ead69-106">Properties</span></span>
-| <span data-ttu-id="ead69-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="ead69-107">Property</span></span>     | <span data-ttu-id="ead69-108">Тип</span><span class="sxs-lookup"><span data-stu-id="ead69-108">Type</span></span>   |<span data-ttu-id="ead69-109">Описание</span><span class="sxs-lookup"><span data-stu-id="ead69-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8d5a0-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="8d5a0-106">Properties</span></span>
+| <span data-ttu-id="8d5a0-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="8d5a0-107">Property</span></span>     | <span data-ttu-id="8d5a0-108">Тип</span><span class="sxs-lookup"><span data-stu-id="8d5a0-108">Type</span></span>   |<span data-ttu-id="8d5a0-109">Описание</span><span class="sxs-lookup"><span data-stu-id="8d5a0-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ead69-110">число</span><span class="sxs-lookup"><span data-stu-id="ead69-110">number</span></span>|<span data-ttu-id="ead69-111">string</span><span class="sxs-lookup"><span data-stu-id="ead69-111">string</span></span>|<span data-ttu-id="ead69-112">Номер телефона.</span><span class="sxs-lookup"><span data-stu-id="ead69-112">The phone number.</span></span>|
-|<span data-ttu-id="ead69-113">type</span><span class="sxs-lookup"><span data-stu-id="ead69-113">type</span></span>|<span data-ttu-id="ead69-114">фонетипе</span><span class="sxs-lookup"><span data-stu-id="ead69-114">phoneType</span></span>|<span data-ttu-id="ead69-115">Тип номера телефона.</span><span class="sxs-lookup"><span data-stu-id="ead69-115">The type of phone number.</span></span> <span data-ttu-id="ead69-116">Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span><span class="sxs-lookup"><span data-stu-id="ead69-116">The possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
+|<span data-ttu-id="8d5a0-110">число</span><span class="sxs-lookup"><span data-stu-id="8d5a0-110">number</span></span>|<span data-ttu-id="8d5a0-111">string</span><span class="sxs-lookup"><span data-stu-id="8d5a0-111">string</span></span>|<span data-ttu-id="8d5a0-112">Номер телефона.</span><span class="sxs-lookup"><span data-stu-id="8d5a0-112">The phone number.</span></span>|
+|<span data-ttu-id="8d5a0-113">type</span><span class="sxs-lookup"><span data-stu-id="8d5a0-113">type</span></span>|<span data-ttu-id="8d5a0-114">фонетипе</span><span class="sxs-lookup"><span data-stu-id="8d5a0-114">phoneType</span></span>|<span data-ttu-id="8d5a0-115">Тип номера телефона.</span><span class="sxs-lookup"><span data-stu-id="8d5a0-115">The type of phone number.</span></span> <span data-ttu-id="8d5a0-116">Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span><span class="sxs-lookup"><span data-stu-id="8d5a0-116">The possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="ead69-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ead69-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8d5a0-117">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="8d5a0-117">JSON representation</span></span>
 
-<span data-ttu-id="ead69-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ead69-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8d5a0-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8d5a0-118">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

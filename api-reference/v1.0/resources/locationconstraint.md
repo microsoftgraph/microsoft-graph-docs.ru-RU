@@ -2,25 +2,25 @@
 title: Тип ресурсов locationConstraint
 description: Условия, заданные клиентом в отношении расположения для проведения собрания.
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7b90e03436caf701c1fba312a9d13a1fb69da03b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c2646e361e81b5d9ec0c45e3bcfe5f867c5ebe97
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447537"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807768"
 ---
-# <a name="locationconstraint-resource-type"></a><span data-ttu-id="c5bb9-103">Тип ресурсов locationConstraint</span><span class="sxs-lookup"><span data-stu-id="c5bb9-103">locationConstraint resource type</span></span>
+# <a name="locationconstraint-resource-type"></a><span data-ttu-id="7feb9-103">Тип ресурсов locationConstraint</span><span class="sxs-lookup"><span data-stu-id="7feb9-103">locationConstraint resource type</span></span>
 
-<span data-ttu-id="c5bb9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c5bb9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7feb9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7feb9-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c5bb9-105">Условия, заданные клиентом в отношении расположения для проведения собрания.</span><span class="sxs-lookup"><span data-stu-id="c5bb9-105">The conditions stated by a client for the location of a meeting.</span></span>
+<span data-ttu-id="7feb9-105">Условия, заданные клиентом в отношении расположения для проведения собрания.</span><span class="sxs-lookup"><span data-stu-id="7feb9-105">The conditions stated by a client for the location of a meeting.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="c5bb9-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c5bb9-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7feb9-106">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="7feb9-106">JSON representation</span></span>
 
-<span data-ttu-id="c5bb9-107">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="c5bb9-107">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="7feb9-107">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="7feb9-107">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -38,12 +38,12 @@ ms.locfileid: "42447537"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="c5bb9-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="c5bb9-108">Properties</span></span>
-| <span data-ttu-id="c5bb9-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="c5bb9-109">Property</span></span>     | <span data-ttu-id="c5bb9-110">Тип</span><span class="sxs-lookup"><span data-stu-id="c5bb9-110">Type</span></span>   |<span data-ttu-id="c5bb9-111">Описание</span><span class="sxs-lookup"><span data-stu-id="c5bb9-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7feb9-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="7feb9-108">Properties</span></span>
+| <span data-ttu-id="7feb9-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="7feb9-109">Property</span></span>     | <span data-ttu-id="7feb9-110">Тип</span><span class="sxs-lookup"><span data-stu-id="7feb9-110">Type</span></span>   |<span data-ttu-id="7feb9-111">Описание</span><span class="sxs-lookup"><span data-stu-id="7feb9-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c5bb9-112">isRequired</span><span class="sxs-lookup"><span data-stu-id="c5bb9-112">isRequired</span></span>|<span data-ttu-id="c5bb9-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="c5bb9-113">Boolean</span></span>|<span data-ttu-id="c5bb9-p101">Клиент запрашивает у службы включение в отклик данных о расположении для проведения собрания. Если задано значение true и все ресурсы заняты, [findMeetingTimes](../api/user-findmeetingtimes.md) не вернет вариантов времени для проведения собрания. Если задано значение false и все ресурсы заняты, **findMeetingTimes** все равно будет искать варианты времени для проведения собрания, но без указания расположений.</span><span class="sxs-lookup"><span data-stu-id="c5bb9-p101">The client requests the service to include in the response a meeting location for the meeting. If this is true and all the resources are busy, [findMeetingTimes](../api/user-findmeetingtimes.md) will not return any meeting time suggestions. If this is false and all the resources are busy, **findMeetingTimes** would still look for meeting times without locations.</span></span> |
-|<span data-ttu-id="c5bb9-117">locations</span><span class="sxs-lookup"><span data-stu-id="c5bb9-117">locations</span></span>|<span data-ttu-id="c5bb9-118">Коллекция [locationConstraintItem](locationconstraintitem.md)</span><span class="sxs-lookup"><span data-stu-id="c5bb9-118">[locationConstraintItem](locationconstraintitem.md) collection</span></span>|<span data-ttu-id="c5bb9-119">Ограниченные сведения об одном или нескольких расположениях, которые клиент запрашивает для собрания.</span><span class="sxs-lookup"><span data-stu-id="c5bb9-119">Constraint information for one or more locations that the client requests for the meeting.</span></span>|
-|<span data-ttu-id="c5bb9-120">сугжестлокатион</span><span class="sxs-lookup"><span data-stu-id="c5bb9-120">suggestLocation</span></span>|<span data-ttu-id="c5bb9-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="c5bb9-121">Boolean</span></span>|<span data-ttu-id="c5bb9-122">Клиент запрашивает у службы один или несколько вариантов расположений для проведения собрания.</span><span class="sxs-lookup"><span data-stu-id="c5bb9-122">The client requests the service to suggest one or more meeting locations.</span></span>|
+|<span data-ttu-id="7feb9-112">isRequired</span><span class="sxs-lookup"><span data-stu-id="7feb9-112">isRequired</span></span>|<span data-ttu-id="7feb9-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="7feb9-113">Boolean</span></span>|<span data-ttu-id="7feb9-p101">Клиент запрашивает у службы включение в отклик данных о расположении для проведения собрания. Если задано значение true и все ресурсы заняты, [findMeetingTimes](../api/user-findmeetingtimes.md) не вернет вариантов времени для проведения собрания. Если задано значение false и все ресурсы заняты, **findMeetingTimes** все равно будет искать варианты времени для проведения собрания, но без указания расположений.</span><span class="sxs-lookup"><span data-stu-id="7feb9-p101">The client requests the service to include in the response a meeting location for the meeting. If this is true and all the resources are busy, [findMeetingTimes](../api/user-findmeetingtimes.md) will not return any meeting time suggestions. If this is false and all the resources are busy, **findMeetingTimes** would still look for meeting times without locations.</span></span> |
+|<span data-ttu-id="7feb9-117">locations</span><span class="sxs-lookup"><span data-stu-id="7feb9-117">locations</span></span>|<span data-ttu-id="7feb9-118">Коллекция [locationConstraintItem](locationconstraintitem.md)</span><span class="sxs-lookup"><span data-stu-id="7feb9-118">[locationConstraintItem](locationconstraintitem.md) collection</span></span>|<span data-ttu-id="7feb9-119">Ограниченные сведения об одном или нескольких расположениях, которые клиент запрашивает для собрания.</span><span class="sxs-lookup"><span data-stu-id="7feb9-119">Constraint information for one or more locations that the client requests for the meeting.</span></span>|
+|<span data-ttu-id="7feb9-120">сугжестлокатион</span><span class="sxs-lookup"><span data-stu-id="7feb9-120">suggestLocation</span></span>|<span data-ttu-id="7feb9-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="7feb9-121">Boolean</span></span>|<span data-ttu-id="7feb9-122">Клиент запрашивает у службы один или несколько вариантов расположений для проведения собрания.</span><span class="sxs-lookup"><span data-stu-id="7feb9-122">The client requests the service to suggest one or more meeting locations.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

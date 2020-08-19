@@ -2,34 +2,34 @@
 title: Тип ресурса объекта filesecuritystate
 description: Содержит сведения о файле (не процессу), связанном с предупреждением.
 localization_priority: Normal
-author: ''
+author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fc9d05e875104469a25ee742635ea8e86682d9e9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fefccfedc348a7cab23e093fdd7728f49029b52c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531429"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807796"
 ---
-# <a name="filesecuritystate-resource-type"></a><span data-ttu-id="2c6e2-103">Тип ресурса объекта filesecuritystate</span><span class="sxs-lookup"><span data-stu-id="2c6e2-103">fileSecurityState resource type</span></span>
+# <a name="filesecuritystate-resource-type"></a><span data-ttu-id="ae228-103">Тип ресурса объекта filesecuritystate</span><span class="sxs-lookup"><span data-stu-id="ae228-103">fileSecurityState resource type</span></span>
 
-<span data-ttu-id="2c6e2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2c6e2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ae228-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ae228-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="2c6e2-105">Содержит сведения о файле (не процессу), связанном с предупреждением.</span><span class="sxs-lookup"><span data-stu-id="2c6e2-105">Contains information about the file (not process) related to the alert.</span></span>
+<span data-ttu-id="ae228-105">Содержит сведения о файле (не процессу), связанном с предупреждением.</span><span class="sxs-lookup"><span data-stu-id="ae228-105">Contains information about the file (not process) related to the alert.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2c6e2-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="2c6e2-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="ae228-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="ae228-106">Properties</span></span>
 
-| <span data-ttu-id="2c6e2-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="2c6e2-107">Property</span></span>   | <span data-ttu-id="2c6e2-108">Тип</span><span class="sxs-lookup"><span data-stu-id="2c6e2-108">Type</span></span>|<span data-ttu-id="2c6e2-109">Описание</span><span class="sxs-lookup"><span data-stu-id="2c6e2-109">Description</span></span>|
+| <span data-ttu-id="ae228-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="ae228-107">Property</span></span>   | <span data-ttu-id="ae228-108">Тип</span><span class="sxs-lookup"><span data-stu-id="ae228-108">Type</span></span>|<span data-ttu-id="ae228-109">Описание</span><span class="sxs-lookup"><span data-stu-id="ae228-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2c6e2-110">fileHash</span><span class="sxs-lookup"><span data-stu-id="2c6e2-110">fileHash</span></span>|[<span data-ttu-id="2c6e2-111">fileHash</span><span class="sxs-lookup"><span data-stu-id="2c6e2-111">fileHash</span></span>](filehash.md)|<span data-ttu-id="2c6e2-112">Сложный тип, содержащий хэши файлов (криптография и с учетом расположения).</span><span class="sxs-lookup"><span data-stu-id="2c6e2-112">Complex type containing file hashes (cryptographic and location-sensitive).</span></span>|
-|<span data-ttu-id="2c6e2-113">name</span><span class="sxs-lookup"><span data-stu-id="2c6e2-113">name</span></span>|<span data-ttu-id="2c6e2-114">String</span><span class="sxs-lookup"><span data-stu-id="2c6e2-114">String</span></span>|<span data-ttu-id="2c6e2-115">Имя файла (без пути).</span><span class="sxs-lookup"><span data-stu-id="2c6e2-115">File name (without path).</span></span>|
-|<span data-ttu-id="2c6e2-116">path</span><span class="sxs-lookup"><span data-stu-id="2c6e2-116">path</span></span>|<span data-ttu-id="2c6e2-117">String</span><span class="sxs-lookup"><span data-stu-id="2c6e2-117">String</span></span>|<span data-ttu-id="2c6e2-118">Полный путь к файлу или файлу imageFile.</span><span class="sxs-lookup"><span data-stu-id="2c6e2-118">Full file path of the file/imageFile.</span></span>|
-|<span data-ttu-id="2c6e2-119">riskScore</span><span class="sxs-lookup"><span data-stu-id="2c6e2-119">riskScore</span></span>|<span data-ttu-id="2c6e2-120">String</span><span class="sxs-lookup"><span data-stu-id="2c6e2-120">String</span></span>|<span data-ttu-id="2c6e2-121">Созданный поставщиком/вычисляемый показатель риска для файла оповещений.</span><span class="sxs-lookup"><span data-stu-id="2c6e2-121">Provider generated/calculated risk score of the alert file.</span></span> <span data-ttu-id="2c6e2-122">Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.</span><span class="sxs-lookup"><span data-stu-id="2c6e2-122">Recommended value range of 0-1, which equates to a percentage.</span></span>|
+|<span data-ttu-id="ae228-110">fileHash</span><span class="sxs-lookup"><span data-stu-id="ae228-110">fileHash</span></span>|[<span data-ttu-id="ae228-111">fileHash</span><span class="sxs-lookup"><span data-stu-id="ae228-111">fileHash</span></span>](filehash.md)|<span data-ttu-id="ae228-112">Сложный тип, содержащий хэши файлов (криптография и с учетом расположения).</span><span class="sxs-lookup"><span data-stu-id="ae228-112">Complex type containing file hashes (cryptographic and location-sensitive).</span></span>|
+|<span data-ttu-id="ae228-113">name</span><span class="sxs-lookup"><span data-stu-id="ae228-113">name</span></span>|<span data-ttu-id="ae228-114">String</span><span class="sxs-lookup"><span data-stu-id="ae228-114">String</span></span>|<span data-ttu-id="ae228-115">Имя файла (без пути).</span><span class="sxs-lookup"><span data-stu-id="ae228-115">File name (without path).</span></span>|
+|<span data-ttu-id="ae228-116">path</span><span class="sxs-lookup"><span data-stu-id="ae228-116">path</span></span>|<span data-ttu-id="ae228-117">String</span><span class="sxs-lookup"><span data-stu-id="ae228-117">String</span></span>|<span data-ttu-id="ae228-118">Полный путь к файлу или файлу imageFile.</span><span class="sxs-lookup"><span data-stu-id="ae228-118">Full file path of the file/imageFile.</span></span>|
+|<span data-ttu-id="ae228-119">riskScore</span><span class="sxs-lookup"><span data-stu-id="ae228-119">riskScore</span></span>|<span data-ttu-id="ae228-120">String</span><span class="sxs-lookup"><span data-stu-id="ae228-120">String</span></span>|<span data-ttu-id="ae228-121">Созданный поставщиком/вычисляемый показатель риска для файла оповещений.</span><span class="sxs-lookup"><span data-stu-id="ae228-121">Provider generated/calculated risk score of the alert file.</span></span> <span data-ttu-id="ae228-122">Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.</span><span class="sxs-lookup"><span data-stu-id="ae228-122">Recommended value range of 0-1, which equates to a percentage.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="2c6e2-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2c6e2-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ae228-123">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="ae228-123">JSON representation</span></span>
 
-<span data-ttu-id="2c6e2-124">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2c6e2-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ae228-124">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ae228-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
