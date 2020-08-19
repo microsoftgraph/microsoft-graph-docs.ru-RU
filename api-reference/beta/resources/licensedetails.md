@@ -4,43 +4,43 @@ description: Содержит сведения о лицензии, назнач
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 9bdf5456cd0e807ca2a2eaaef8f1d0eab302f23c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: krbain
+ms.openlocfilehash: 5c71c870d8b078a47acc4a0a0f968bcdedb760f2
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522976"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812813"
 ---
-# <a name="licensedetails-resource-type"></a><span data-ttu-id="d2169-103">Тип ресурса licenseDetails</span><span class="sxs-lookup"><span data-stu-id="d2169-103">licenseDetails resource type</span></span>
+# <a name="licensedetails-resource-type"></a><span data-ttu-id="bf320-103">Тип ресурса licenseDetails</span><span class="sxs-lookup"><span data-stu-id="bf320-103">licenseDetails resource type</span></span>
 
-<span data-ttu-id="d2169-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d2169-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bf320-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bf320-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d2169-105">Содержит сведения о лицензии, назначенной пользователю.</span><span class="sxs-lookup"><span data-stu-id="d2169-105">Contains information about a license assigned to a user.</span></span>
+<span data-ttu-id="bf320-105">Содержит сведения о лицензии, назначенной пользователю.</span><span class="sxs-lookup"><span data-stu-id="bf320-105">Contains information about a license assigned to a user.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="d2169-106">Методы</span><span class="sxs-lookup"><span data-stu-id="d2169-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="bf320-106">Методы</span><span class="sxs-lookup"><span data-stu-id="bf320-106">Methods</span></span>
 
-| <span data-ttu-id="d2169-107">Метод</span><span class="sxs-lookup"><span data-stu-id="d2169-107">Method</span></span>           | <span data-ttu-id="d2169-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="d2169-108">Return Type</span></span>    |<span data-ttu-id="d2169-109">Описание</span><span class="sxs-lookup"><span data-stu-id="d2169-109">Description</span></span>|
+| <span data-ttu-id="bf320-107">Метод</span><span class="sxs-lookup"><span data-stu-id="bf320-107">Method</span></span>           | <span data-ttu-id="bf320-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="bf320-108">Return Type</span></span>    |<span data-ttu-id="bf320-109">Описание</span><span class="sxs-lookup"><span data-stu-id="bf320-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="d2169-110">Перечисление licenseDetails</span><span class="sxs-lookup"><span data-stu-id="d2169-110">List licenseDetails</span></span>](../api/user-list-licensedetails.md) | <span data-ttu-id="d2169-111">Коллекция объектов licenseDetails</span><span class="sxs-lookup"><span data-stu-id="d2169-111">licenseDetails collection</span></span> |<span data-ttu-id="d2169-112">Получение списка объектов licenseDetails для пользователя.</span><span class="sxs-lookup"><span data-stu-id="d2169-112">Retrieve a list of licenseDetails objects for a user.</span></span>|
+|[<span data-ttu-id="bf320-110">Перечисление licenseDetails</span><span class="sxs-lookup"><span data-stu-id="bf320-110">List licenseDetails</span></span>](../api/user-list-licensedetails.md) | <span data-ttu-id="bf320-111">Коллекция объектов licenseDetails</span><span class="sxs-lookup"><span data-stu-id="bf320-111">licenseDetails collection</span></span> |<span data-ttu-id="bf320-112">Получение списка объектов licenseDetails для пользователя.</span><span class="sxs-lookup"><span data-stu-id="bf320-112">Retrieve a list of licenseDetails objects for a user.</span></span>|
 
 <!--|[Get licenseDetails](../api/licensedetails-get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
-## <a name="properties"></a><span data-ttu-id="d2169-113">Свойства</span><span class="sxs-lookup"><span data-stu-id="d2169-113">Properties</span></span>
-| <span data-ttu-id="d2169-114">Свойство</span><span class="sxs-lookup"><span data-stu-id="d2169-114">Property</span></span>     | <span data-ttu-id="d2169-115">Тип</span><span class="sxs-lookup"><span data-stu-id="d2169-115">Type</span></span>   |<span data-ttu-id="d2169-116">Описание</span><span class="sxs-lookup"><span data-stu-id="d2169-116">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="bf320-113">Свойства</span><span class="sxs-lookup"><span data-stu-id="bf320-113">Properties</span></span>
+| <span data-ttu-id="bf320-114">Свойство</span><span class="sxs-lookup"><span data-stu-id="bf320-114">Property</span></span>     | <span data-ttu-id="bf320-115">Тип</span><span class="sxs-lookup"><span data-stu-id="bf320-115">Type</span></span>   |<span data-ttu-id="bf320-116">Описание</span><span class="sxs-lookup"><span data-stu-id="bf320-116">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d2169-117">id</span><span class="sxs-lookup"><span data-stu-id="d2169-117">id</span></span>|<span data-ttu-id="d2169-118">String</span><span class="sxs-lookup"><span data-stu-id="d2169-118">String</span></span>| <span data-ttu-id="d2169-119">Уникальный идентификатор для объекта сведений о лицензии.</span><span class="sxs-lookup"><span data-stu-id="d2169-119">The unique identifier for the license detail object.</span></span> <span data-ttu-id="d2169-120">Только для чтения, ключ, не допускающий значение null</span><span class="sxs-lookup"><span data-stu-id="d2169-120">Read-only, Key, Not nullable</span></span> |
-|<span data-ttu-id="d2169-121">сервицепланс</span><span class="sxs-lookup"><span data-stu-id="d2169-121">servicePlans</span></span>|<span data-ttu-id="d2169-122">Коллекция [servicePlanInfo](serviceplaninfo.md)</span><span class="sxs-lookup"><span data-stu-id="d2169-122">[servicePlanInfo](serviceplaninfo.md) collection</span></span>| <span data-ttu-id="d2169-123">Сведения о планах обслуживания, назначенных с лицензией.</span><span class="sxs-lookup"><span data-stu-id="d2169-123">Information about the service plans assigned with the license.</span></span> <span data-ttu-id="d2169-124">Только для чтения, не допускает значение null</span><span class="sxs-lookup"><span data-stu-id="d2169-124">Read-only, Not nullable</span></span> |
-|<span data-ttu-id="d2169-125">skuId</span><span class="sxs-lookup"><span data-stu-id="d2169-125">skuId</span></span>|<span data-ttu-id="d2169-126">Guid</span><span class="sxs-lookup"><span data-stu-id="d2169-126">Guid</span></span>| <span data-ttu-id="d2169-127">Уникальный идентификатор (GUID) для SKU службы.</span><span class="sxs-lookup"><span data-stu-id="d2169-127">Unique identifier (GUID) for the service SKU.</span></span> <span data-ttu-id="d2169-128">Равно свойству skuId в связанном объекте [SubscribedSku](subscribedsku.md) .</span><span class="sxs-lookup"><span data-stu-id="d2169-128">Equal to the skuId property on the related [SubscribedSku](subscribedsku.md) object.</span></span> <span data-ttu-id="d2169-129">Только для чтения</span><span class="sxs-lookup"><span data-stu-id="d2169-129">Read-only</span></span> |
-|<span data-ttu-id="d2169-130">скупартнумбер</span><span class="sxs-lookup"><span data-stu-id="d2169-130">skuPartNumber</span></span>|<span data-ttu-id="d2169-131">String</span><span class="sxs-lookup"><span data-stu-id="d2169-131">String</span></span>| <span data-ttu-id="d2169-132">Имя уникального отображаемого номера SKU.</span><span class="sxs-lookup"><span data-stu-id="d2169-132">Unique SKU display name.</span></span> <span data-ttu-id="d2169-133">Равно Скупартнумбер для связанного объекта [SubscribedSku](subscribedsku.md) ; Пример: "AAD_Premium".</span><span class="sxs-lookup"><span data-stu-id="d2169-133">Equal to the skuPartNumber on the related [SubscribedSku](subscribedsku.md) object; for example: "AAD_Premium".</span></span> <span data-ttu-id="d2169-134">Только для чтения</span><span class="sxs-lookup"><span data-stu-id="d2169-134">Read-only</span></span> |
+|<span data-ttu-id="bf320-117">id</span><span class="sxs-lookup"><span data-stu-id="bf320-117">id</span></span>|<span data-ttu-id="bf320-118">String</span><span class="sxs-lookup"><span data-stu-id="bf320-118">String</span></span>| <span data-ttu-id="bf320-119">Уникальный идентификатор для объекта сведений о лицензии.</span><span class="sxs-lookup"><span data-stu-id="bf320-119">The unique identifier for the license detail object.</span></span> <span data-ttu-id="bf320-120">Только для чтения, ключ, не допускающий значение null</span><span class="sxs-lookup"><span data-stu-id="bf320-120">Read-only, Key, Not nullable</span></span> |
+|<span data-ttu-id="bf320-121">сервицепланс</span><span class="sxs-lookup"><span data-stu-id="bf320-121">servicePlans</span></span>|<span data-ttu-id="bf320-122">Коллекция [servicePlanInfo](serviceplaninfo.md)</span><span class="sxs-lookup"><span data-stu-id="bf320-122">[servicePlanInfo](serviceplaninfo.md) collection</span></span>| <span data-ttu-id="bf320-123">Сведения о планах обслуживания, назначенных с лицензией.</span><span class="sxs-lookup"><span data-stu-id="bf320-123">Information about the service plans assigned with the license.</span></span> <span data-ttu-id="bf320-124">Только для чтения, не допускает значение null</span><span class="sxs-lookup"><span data-stu-id="bf320-124">Read-only, Not nullable</span></span> |
+|<span data-ttu-id="bf320-125">skuId</span><span class="sxs-lookup"><span data-stu-id="bf320-125">skuId</span></span>|<span data-ttu-id="bf320-126">Guid</span><span class="sxs-lookup"><span data-stu-id="bf320-126">Guid</span></span>| <span data-ttu-id="bf320-127">Уникальный идентификатор (GUID) для SKU службы.</span><span class="sxs-lookup"><span data-stu-id="bf320-127">Unique identifier (GUID) for the service SKU.</span></span> <span data-ttu-id="bf320-128">Равно свойству skuId в связанном объекте [SubscribedSku](subscribedsku.md) .</span><span class="sxs-lookup"><span data-stu-id="bf320-128">Equal to the skuId property on the related [SubscribedSku](subscribedsku.md) object.</span></span> <span data-ttu-id="bf320-129">Только для чтения</span><span class="sxs-lookup"><span data-stu-id="bf320-129">Read-only</span></span> |
+|<span data-ttu-id="bf320-130">скупартнумбер</span><span class="sxs-lookup"><span data-stu-id="bf320-130">skuPartNumber</span></span>|<span data-ttu-id="bf320-131">String</span><span class="sxs-lookup"><span data-stu-id="bf320-131">String</span></span>| <span data-ttu-id="bf320-132">Имя уникального отображаемого номера SKU.</span><span class="sxs-lookup"><span data-stu-id="bf320-132">Unique SKU display name.</span></span> <span data-ttu-id="bf320-133">Равно Скупартнумбер для связанного объекта [SubscribedSku](subscribedsku.md) ; Пример: "AAD_Premium".</span><span class="sxs-lookup"><span data-stu-id="bf320-133">Equal to the skuPartNumber on the related [SubscribedSku](subscribedsku.md) object; for example: "AAD_Premium".</span></span> <span data-ttu-id="bf320-134">Только для чтения</span><span class="sxs-lookup"><span data-stu-id="bf320-134">Read-only</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="d2169-135">Связи</span><span class="sxs-lookup"><span data-stu-id="d2169-135">Relationships</span></span>
-<span data-ttu-id="d2169-136">Нет</span><span class="sxs-lookup"><span data-stu-id="d2169-136">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="bf320-135">Отношения</span><span class="sxs-lookup"><span data-stu-id="bf320-135">Relationships</span></span>
+<span data-ttu-id="bf320-136">Нет</span><span class="sxs-lookup"><span data-stu-id="bf320-136">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d2169-137">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d2169-137">JSON representation</span></span>
-<span data-ttu-id="d2169-138">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d2169-138">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bf320-137">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bf320-137">JSON representation</span></span>
+<span data-ttu-id="bf320-138">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bf320-138">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

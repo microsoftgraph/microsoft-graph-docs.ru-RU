@@ -2,41 +2,41 @@
 title: Тип ресурса standardTimeZoneOffset
 description: Определяет, когда в часовом поясе осуществляется переход с летнего времени на стандартное.
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2665e57dc076a671b3ee31fc7361279c9a81f598
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 23eed92e05605869ea156cdba47cf2a50e031154
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533627"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811184"
 ---
-# <a name="standardtimezoneoffset-resource-type"></a><span data-ttu-id="7cff4-103">Тип ресурса standardTimeZoneOffset</span><span class="sxs-lookup"><span data-stu-id="7cff4-103">standardTimeZoneOffset resource type</span></span>
+# <a name="standardtimezoneoffset-resource-type"></a><span data-ttu-id="b8de7-103">Тип ресурса standardTimeZoneOffset</span><span class="sxs-lookup"><span data-stu-id="b8de7-103">standardTimeZoneOffset resource type</span></span>
 
-<span data-ttu-id="7cff4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7cff4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b8de7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b8de7-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="7cff4-105">Определяет, когда в часовом поясе осуществляется переход с летнего времени на стандартное.</span><span class="sxs-lookup"><span data-stu-id="7cff4-105">Specifies when a time zone switches from daylight saving time to standard time.</span></span>
+<span data-ttu-id="b8de7-105">Определяет, когда в часовом поясе осуществляется переход с летнего времени на стандартное.</span><span class="sxs-lookup"><span data-stu-id="b8de7-105">Specifies when a time zone switches from daylight saving time to standard time.</span></span>
 
-<span data-ttu-id="7cff4-106">Например, если для указанного часового пояса заданы следующие свойства:</span><span class="sxs-lookup"><span data-stu-id="7cff4-106">For example, if a time zone is specified with the following properties:</span></span>
+<span data-ttu-id="b8de7-106">Например, если для указанного часового пояса заданы следующие свойства:</span><span class="sxs-lookup"><span data-stu-id="b8de7-106">For example, if a time zone is specified with the following properties:</span></span>
 
-- <span data-ttu-id="7cff4-107">**dayOccurrence** — 3</span><span class="sxs-lookup"><span data-stu-id="7cff4-107">**dayOccurrence** is 3</span></span>
-- <span data-ttu-id="7cff4-108">**dayOfWeek** — "Sunday"</span><span class="sxs-lookup"><span data-stu-id="7cff4-108">**dayOfWeek** is "Sunday"</span></span>
-- <span data-ttu-id="7cff4-109">**month** — 10</span><span class="sxs-lookup"><span data-stu-id="7cff4-109">**month** is 10</span></span>
-- <span data-ttu-id="7cff4-110">**time** — 02:00:00 _ **year** — 0, это означает, что переход с летнего на стандартное время осуществляется ежегодно в третье воскресенье октября в 02:00.</span><span class="sxs-lookup"><span data-stu-id="7cff4-110">**time** is 02:00:00 _ **year** is 0 That means the transition from daylight saving time to standard occurs at 2 AM on the third Sunday of October, every year.</span></span>
+- <span data-ttu-id="b8de7-107">**dayOccurrence** — 3</span><span class="sxs-lookup"><span data-stu-id="b8de7-107">**dayOccurrence** is 3</span></span>
+- <span data-ttu-id="b8de7-108">**dayOfWeek** — "Sunday"</span><span class="sxs-lookup"><span data-stu-id="b8de7-108">**dayOfWeek** is "Sunday"</span></span>
+- <span data-ttu-id="b8de7-109">**month** — 10</span><span class="sxs-lookup"><span data-stu-id="b8de7-109">**month** is 10</span></span>
+- <span data-ttu-id="b8de7-110">**time** — 02:00:00 _ **year** — 0, это означает, что переход с летнего на стандартное время осуществляется ежегодно в третье воскресенье октября в 02:00.</span><span class="sxs-lookup"><span data-stu-id="b8de7-110">**time** is 02:00:00 _ **year** is 0 That means the transition from daylight saving time to standard occurs at 2 AM on the third Sunday of October, every year.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7cff4-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="7cff4-111">Properties</span></span>
-| <span data-ttu-id="7cff4-112">Свойство</span><span class="sxs-lookup"><span data-stu-id="7cff4-112">Property</span></span>     | <span data-ttu-id="7cff4-113">Тип</span><span class="sxs-lookup"><span data-stu-id="7cff4-113">Type</span></span>   |<span data-ttu-id="7cff4-114">Описание</span><span class="sxs-lookup"><span data-stu-id="7cff4-114">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b8de7-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="b8de7-111">Properties</span></span>
+| <span data-ttu-id="b8de7-112">Свойство</span><span class="sxs-lookup"><span data-stu-id="b8de7-112">Property</span></span>     | <span data-ttu-id="b8de7-113">Тип</span><span class="sxs-lookup"><span data-stu-id="b8de7-113">Type</span></span>   |<span data-ttu-id="b8de7-114">Описание</span><span class="sxs-lookup"><span data-stu-id="b8de7-114">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="7cff4-115">dayOccurrence</span><span class="sxs-lookup"><span data-stu-id="7cff4-115">dayOccurrence</span></span> | <span data-ttu-id="7cff4-116">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="7cff4-116">Edm.Int32</span></span> | <span data-ttu-id="7cff4-117">Представляет n-е повторение дня недели, в который происходит переход с летнего на стандартное время.</span><span class="sxs-lookup"><span data-stu-id="7cff4-117">Represents the nth occurrence of the day of week that the transition from daylight saving time to standard time occurs.</span></span> |
-| <span data-ttu-id="7cff4-118">dayOfWeek</span><span class="sxs-lookup"><span data-stu-id="7cff4-118">dayOfWeek</span></span> | <span data-ttu-id="7cff4-119">dayOfWeek</span><span class="sxs-lookup"><span data-stu-id="7cff4-119">dayOfWeek</span></span> | <span data-ttu-id="7cff4-120">Представляет день недели, в который осуществляется переход с летнего времени на стандартное.</span><span class="sxs-lookup"><span data-stu-id="7cff4-120">Represents the day of the week when the transition from daylight saving time to standard time.</span></span> |
-| <span data-ttu-id="7cff4-121">month</span><span class="sxs-lookup"><span data-stu-id="7cff4-121">month</span></span> | <span data-ttu-id="7cff4-122">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="7cff4-122">Edm.Int32</span></span> | <span data-ttu-id="7cff4-123">Представляет месяц, когда осуществляется переход с летнего времени на стандартное.</span><span class="sxs-lookup"><span data-stu-id="7cff4-123">Represents the month of the year when the transition from daylight saving time to standard time occurs.</span></span> |
-| <span data-ttu-id="7cff4-124">time</span><span class="sxs-lookup"><span data-stu-id="7cff4-124">time</span></span> | <span data-ttu-id="7cff4-125">Edm.TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="7cff4-125">Edm.TimeOfDay</span></span> | <span data-ttu-id="7cff4-126">Представляет время суток, когда происходит переход с летнего времени на стандартное.</span><span class="sxs-lookup"><span data-stu-id="7cff4-126">Represents the time of day when the transition from daylight saving time to standard time occurs.</span></span> |
-| <span data-ttu-id="7cff4-127">year</span><span class="sxs-lookup"><span data-stu-id="7cff4-127">year</span></span> | <span data-ttu-id="7cff4-128">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="7cff4-128">Edm.Int32</span></span> | <span data-ttu-id="7cff4-129">Указывает периодичность перехода с летнего времени на стандартное (в годах).</span><span class="sxs-lookup"><span data-stu-id="7cff4-129">Represents how frequently in terms of years the change from daylight saving time to standard time occurs.</span></span> <span data-ttu-id="7cff4-130">Например, значение "0" указывает, что переход осуществляется ежегодно.</span><span class="sxs-lookup"><span data-stu-id="7cff4-130">For example, a value of 0 means every year.</span></span>|
+| <span data-ttu-id="b8de7-115">dayOccurrence</span><span class="sxs-lookup"><span data-stu-id="b8de7-115">dayOccurrence</span></span> | <span data-ttu-id="b8de7-116">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="b8de7-116">Edm.Int32</span></span> | <span data-ttu-id="b8de7-117">Представляет n-е повторение дня недели, в который происходит переход с летнего на стандартное время.</span><span class="sxs-lookup"><span data-stu-id="b8de7-117">Represents the nth occurrence of the day of week that the transition from daylight saving time to standard time occurs.</span></span> |
+| <span data-ttu-id="b8de7-118">dayOfWeek</span><span class="sxs-lookup"><span data-stu-id="b8de7-118">dayOfWeek</span></span> | <span data-ttu-id="b8de7-119">dayOfWeek</span><span class="sxs-lookup"><span data-stu-id="b8de7-119">dayOfWeek</span></span> | <span data-ttu-id="b8de7-120">Представляет день недели, в который осуществляется переход с летнего времени на стандартное.</span><span class="sxs-lookup"><span data-stu-id="b8de7-120">Represents the day of the week when the transition from daylight saving time to standard time.</span></span> |
+| <span data-ttu-id="b8de7-121">month</span><span class="sxs-lookup"><span data-stu-id="b8de7-121">month</span></span> | <span data-ttu-id="b8de7-122">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="b8de7-122">Edm.Int32</span></span> | <span data-ttu-id="b8de7-123">Представляет месяц, когда осуществляется переход с летнего времени на стандартное.</span><span class="sxs-lookup"><span data-stu-id="b8de7-123">Represents the month of the year when the transition from daylight saving time to standard time occurs.</span></span> |
+| <span data-ttu-id="b8de7-124">time</span><span class="sxs-lookup"><span data-stu-id="b8de7-124">time</span></span> | <span data-ttu-id="b8de7-125">Edm.TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="b8de7-125">Edm.TimeOfDay</span></span> | <span data-ttu-id="b8de7-126">Представляет время суток, когда происходит переход с летнего времени на стандартное.</span><span class="sxs-lookup"><span data-stu-id="b8de7-126">Represents the time of day when the transition from daylight saving time to standard time occurs.</span></span> |
+| <span data-ttu-id="b8de7-127">year</span><span class="sxs-lookup"><span data-stu-id="b8de7-127">year</span></span> | <span data-ttu-id="b8de7-128">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="b8de7-128">Edm.Int32</span></span> | <span data-ttu-id="b8de7-129">Указывает периодичность перехода с летнего времени на стандартное (в годах).</span><span class="sxs-lookup"><span data-stu-id="b8de7-129">Represents how frequently in terms of years the change from daylight saving time to standard time occurs.</span></span> <span data-ttu-id="b8de7-130">Например, значение "0" указывает, что переход осуществляется ежегодно.</span><span class="sxs-lookup"><span data-stu-id="b8de7-130">For example, a value of 0 means every year.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="7cff4-131">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7cff4-131">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b8de7-131">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="b8de7-131">JSON representation</span></span>
 
-<span data-ttu-id="7cff4-132">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7cff4-132">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b8de7-132">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b8de7-132">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

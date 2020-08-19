@@ -3,35 +3,35 @@ title: Перечисление версий элемента ListItem
 description: Вы можете настроить SharePoint так, чтобы в нем хранился журнал элементов списка.
 localization_priority: Normal
 ms.prod: sharepoint
-author: ''
+author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: e0121d7d56b17267b10d04d62b41426f2ace258e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0466116acaa447d5a45e1ecede1137a93eee965
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511700"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812732"
 ---
-# <a name="listing-versions-of-a-listitem"></a><span data-ttu-id="139bf-103">Перечисление версий элемента ListItem</span><span class="sxs-lookup"><span data-stu-id="139bf-103">Listing versions of a ListItem</span></span>
+# <a name="listing-versions-of-a-listitem"></a><span data-ttu-id="29613-103">Перечисление версий элемента ListItem</span><span class="sxs-lookup"><span data-stu-id="29613-103">Listing versions of a ListItem</span></span>
 
-<span data-ttu-id="139bf-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="139bf-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="29613-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="29613-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="139bf-105">Вы можете настроить SharePoint так, чтобы в нем хранился журнал элементов списка.</span><span class="sxs-lookup"><span data-stu-id="139bf-105">SharePoint can be configured to retain the history for list items.</span></span>
+<span data-ttu-id="29613-105">Вы можете настроить SharePoint так, чтобы в нем хранился журнал элементов списка.</span><span class="sxs-lookup"><span data-stu-id="29613-105">SharePoint can be configured to retain the history for list items.</span></span>
 
-<span data-ttu-id="139bf-106">Предыдущие версии можно хранить в течение конечного периода времени, настроенного администратором. Такой период можно задавать отдельно для каждого пользователя или расположения.</span><span class="sxs-lookup"><span data-stu-id="139bf-106">Previous versions may be retained for a finite period of time depending on admin settings which may be unique per user or location.</span></span>
+<span data-ttu-id="29613-106">Предыдущие версии можно хранить в течение конечного периода времени, настроенного администратором. Такой период можно задавать отдельно для каждого пользователя или расположения.</span><span class="sxs-lookup"><span data-stu-id="29613-106">Previous versions may be retained for a finite period of time depending on admin settings which may be unique per user or location.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="139bf-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="139bf-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="29613-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="29613-107">Permissions</span></span>
 
-<span data-ttu-id="139bf-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="139bf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="29613-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="29613-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="139bf-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="139bf-110">Permission type</span></span>             | <span data-ttu-id="139bf-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="139bf-111">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="29613-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="29613-110">Permission type</span></span>             | <span data-ttu-id="29613-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="29613-111">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="139bf-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="139bf-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="139bf-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="139bf-113">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
-| <span data-ttu-id="139bf-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="139bf-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="139bf-115">Н/д</span><span class="sxs-lookup"><span data-stu-id="139bf-115">n/a</span></span>                                         |
-| <span data-ttu-id="139bf-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="139bf-116">Application</span></span>                            | <span data-ttu-id="139bf-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="139bf-117">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
+| <span data-ttu-id="29613-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="29613-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="29613-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29613-113">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
+| <span data-ttu-id="29613-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="29613-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="29613-115">Н/д</span><span class="sxs-lookup"><span data-stu-id="29613-115">n/a</span></span>                                         |
+| <span data-ttu-id="29613-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="29613-116">Application</span></span>                            | <span data-ttu-id="29613-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29613-117">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
 
 
-## <a name="http-request"></a><span data-ttu-id="139bf-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="139bf-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="29613-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="29613-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored"} -->
 
@@ -40,46 +40,46 @@ GET /sites/{site-id}/items/{item-id}/versions
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ```
 
-## <a name="response"></a><span data-ttu-id="139bf-119">Ответ</span><span class="sxs-lookup"><span data-stu-id="139bf-119">Response</span></span>
+## <a name="response"></a><span data-ttu-id="29613-119">Отклик</span><span class="sxs-lookup"><span data-stu-id="29613-119">Response</span></span>
 
-<span data-ttu-id="139bf-120">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [ListItemVersion](../resources/listitemversion.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="139bf-120">If successful, this method returns a `200 OK` response code and collection of [ListItemVersion](../resources/listitemversion.md) objects in the response body.</span></span>
-
-
-## <a name="example"></a><span data-ttu-id="139bf-121">Пример</span><span class="sxs-lookup"><span data-stu-id="139bf-121">Example</span></span>
-
-<span data-ttu-id="139bf-122">В этом примере показано, как получить версии элемента listItem в списке SharePoint:</span><span class="sxs-lookup"><span data-stu-id="139bf-122">This example retrieves the versions of a listItem in a SharePoint list:</span></span>
-
-### <a name="http-request"></a><span data-ttu-id="139bf-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="139bf-123">HTTP request</span></span>
+<span data-ttu-id="29613-120">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [ListItemVersion](../resources/listitemversion.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="29613-120">If successful, this method returns a `200 OK` response code and collection of [ListItemVersion](../resources/listitemversion.md) objects in the response body.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="139bf-124">HTTP</span><span class="sxs-lookup"><span data-stu-id="139bf-124">HTTP</span></span>](#tab/http)
+## <a name="example"></a><span data-ttu-id="29613-121">Пример</span><span class="sxs-lookup"><span data-stu-id="29613-121">Example</span></span>
+
+<span data-ttu-id="29613-122">В этом примере показано, как получить версии элемента listItem в списке SharePoint:</span><span class="sxs-lookup"><span data-stu-id="29613-122">This example retrieves the versions of a listItem in a SharePoint list:</span></span>
+
+### <a name="http-request"></a><span data-ttu-id="29613-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="29613-123">HTTP request</span></span>
+
+
+# <a name="http"></a>[<span data-ttu-id="29613-124">HTTP</span><span class="sxs-lookup"><span data-stu-id="29613-124">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-previous-versions-listitem", "scopes": "files.read sites.read.all" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ```
-# <a name="c"></a>[<span data-ttu-id="139bf-125">C#</span><span class="sxs-lookup"><span data-stu-id="139bf-125">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="29613-125">C#</span><span class="sxs-lookup"><span data-stu-id="29613-125">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-previous-versions-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="139bf-126">JavaScript</span><span class="sxs-lookup"><span data-stu-id="139bf-126">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="29613-126">JavaScript</span><span class="sxs-lookup"><span data-stu-id="29613-126">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-previous-versions-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="139bf-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="139bf-127">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="29613-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="29613-127">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-previous-versions-listitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="139bf-128">Java</span><span class="sxs-lookup"><span data-stu-id="139bf-128">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="29613-128">Java</span><span class="sxs-lookup"><span data-stu-id="29613-128">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-previous-versions-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="139bf-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="139bf-129">Response</span></span>
+### <a name="response"></a><span data-ttu-id="29613-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="29613-129">Response</span></span>
 
-<span data-ttu-id="139bf-130">Возвращается коллекция версий:</span><span class="sxs-lookup"><span data-stu-id="139bf-130">This returns a collection of versions:</span></span>
+<span data-ttu-id="29613-130">Возвращается коллекция версий:</span><span class="sxs-lookup"><span data-stu-id="29613-130">This returns a collection of versions:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItemVersion)", "truncated": true } -->
 

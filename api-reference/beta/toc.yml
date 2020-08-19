@@ -171,11 +171,11 @@ items:
   - name: Документация для бета-версий
     expanded: true
     items:
-      - name: Обзор
+      - name: Общие сведения
         href: overview.md
       - name: Пользователи
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -448,7 +448,7 @@ items:
                 href: api/usersettings-update.md
       - name: Группы
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/groups-overview.md
           - name: Группа
             href: resources/group.md
@@ -1325,7 +1325,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Записи звонков
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/callrecords-api-overview.md
               - name: Запись звонка
                 items:
@@ -1374,11 +1374,11 @@ items:
       - name: Соответствие требованиям (Предварительная версия)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/complianceapioverview.md
           - name: Обнаружение электронных данных
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/eDiscoveryapioverview.md
               - name: Дело обнаружения электронных данных
                 href: resources/ediscoverycase.md
@@ -1452,7 +1452,7 @@ items:
       - name: Запись клиентов (предварительная версия)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/booking-api-overview.md
           - name: Организация в Microsoft Bookings
             href: resources/bookingbusiness.md
@@ -9178,7 +9178,7 @@ items:
       - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/onedrive.md
           - name: Диски
             href: resources/drive.md
@@ -9272,7 +9272,7 @@ items:
       - name: Финансовые показатели (предварительная версия)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/dynamics-graph-reference.md
           - name: Учетная запись
             href: resources/dynamics-account.md
@@ -9751,7 +9751,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
               - name: Методы проверки подлинности
                 items:
-                  - name: Обзор
+                  - name: Общие сведения
                     href: resources/authenticationmethods-overview.md
                   - name: Метод проверки подлинности
                     href: resources/authenticationmethod.md
@@ -10252,7 +10252,7 @@ items:
                       - name: Получение
                         href: api/accesspackagecatalog-get.md
                       - name: Обновление
-                        href: api/accesspackage-update.md
+                        href: api/accesspackagecatalog-update.md
                       - name: Delete
                         href: api/accesspackagecatalog-delete.md
                       - name: Список ресурсов
@@ -10730,15 +10730,37 @@ items:
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
               - name: Сведения об учетной записи
-                href: resources/useraccountinformation.md
                 items:
+                  - name: Сведения об учетной записи пользователя
+                    href: resources/useraccountinformation.md
                   - name: Список
-                    href: api/profile-list-account.md
+                    href: api/profile-list-accounts.md
+                  - name: Создание
+                    href: api/profile-post-accounts.md
                   - name: Получение
                     href: api/useraccountinformation-get.md
-              - name: Годовщина
-                href: resources/personanniversary.md
+                  - name: Обновление
+                    href: api/useraccountinformation-update.md
+                  - name: Delete
+                    href: api/useraccountinformation-delete.md
+              - name: Addresses
                 items:
+                  - name: Адрес элемента
+                    href: resources/itemaddress.md
+                  - name: Список
+                    href: api/profile-list-addresses.md
+                  - name: Создание
+                    href: api/profile-post-addresses.md
+                  - name: Получение
+                    href: api/itemaddress-get.md
+                  - name: Обновление
+                    href: api/itemaddress-update.md
+                  - name: Delete
+                    href: api/itemaddress-delete.md
+              - name: Годовщина
+                items:
+                  - name: Годовщина сотрудника
+                    href: resources/personanniversary.md
                   - name: Список
                     href: api/profile-list-anniversaries.md
                   - name: Создание
@@ -10749,9 +10771,38 @@ items:
                     href: api/personanniversary-update.md
                   - name: Delete
                     href: api/personanniversary-delete.md
-              - name: Образовательные действия
-                href: resources/educationalactivity.md
+              - name: Награды
                 items:
+                  - name: Награда для людей
+                    href: resources/personaward.md
+                  - name: Список
+                    href: api/profile-list-awards.md
+                  - name: Создание
+                    href: api/profile-post-awards.md
+                  - name: Получение
+                    href: api/personaward-get.md
+                  - name: Обновление
+                    href: api/personaward-update.md
+                  - name: Delete
+                    href: api/personaward-delete.md
+              - name: Сертификаты
+                items:
+                  - name: Сертификация пользователей
+                    href: resources/personcertification.md
+                  - name: Список
+                    href: api/profile-list-certifications.md
+                  - name: Создание
+                    href: api/profile-post-certifications.md
+                  - name: Получение
+                    href: api/personcertification-get.md
+                  - name: Обновление
+                    href: api/personcertification-update.md
+                  - name: Delete
+                    href: api/personcertification-delete.md
+              - name: Образовательные действия
+                items:
+                  - name: Образовательные действия
+                    href: resources/educationalactivity.md
                   - name: Список
                     href: api/profile-list-educationalactivities.md
                   - name: Создание
@@ -10763,8 +10814,9 @@ items:
                   - name: Delete
                     href: api/educationalactivity-delete.md
               - name: адрес электронной почты;
-                href: resources/itememail.md
                 items:
+                  - name: Электронная почта элемента
+                    href: resources/itememail.md
                   - name: Список
                     href: api/profile-list-emails.md
                   - name: Создание
@@ -10776,8 +10828,9 @@ items:
                   - name: Delete
                     href: api/itememail-delete.md
               - name: Увлечения
-                href: resources/personinterest.md
                 items:
+                  - name: Процентное соответственное лицо
+                    href: resources/personinterest.md
                   - name: Список
                     href: api/profile-list-interests.md
                   - name: Создание
@@ -10789,8 +10842,9 @@ items:
                   - name: Delete
                     href: api/personinterest-delete.md
               - name: Языки
-                href: resources/languageproficiency.md
                 items:
+                  - name: Знание языка
+                    href: resources/languageproficiency.md
                   - name: Список
                     href: api/profile-list-languages.md
                   - name: Создание
@@ -10802,8 +10856,9 @@ items:
                   - name: Delete
                     href: api/languageproficiency-delete.md
               - name: Имена
-                href: resources/personname.md
                 items:
+                  - name: Имя
+                    href: resources/personname.md
                   - name: Список
                     href: api/profile-list-names.md
                   - name: Создание
@@ -10814,9 +10869,38 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Phones
-                href: resources/itemphone.md
+              - name: Примечания
                 items:
+                  - name: Примечание пользователя
+                    href: resources/personannotation.md
+                  - name: Список
+                    href: api/profile-list-notes.md
+                  - name: Создание
+                    href: api/profile-post-notes.md
+                  - name: Получение
+                    href: api/personannotation-get.md
+                  - name: Обновление
+                    href: api/personannotation-update.md
+                  - name: Delete
+                    href: api/personannotation-delete.md
+              - name: Патентами
+                items:
+                  - name: Патентный товар
+                    href: resources/itempatent.md
+                  - name: Список
+                    href: api/profile-list-patents.md
+                  - name: Создание
+                    href: api/profile-post-patents.md
+                  - name: Получение
+                    href: api/itempatent-get.md
+                  - name: Обновление
+                    href: api/itempatent-update.md
+                  - name: Delete
+                    href: api/itempatent-delete.md
+              - name: Phones
+                items:
+                  - name: Телефон элемента
+                    href: resources/itemphone.md
                   - name: Список
                     href: api/profile-list-phones.md
                   - name: Создание
@@ -10828,8 +10912,9 @@ items:
                   - name: Delete
                     href: api/itemphone-delete.md
               - name: Positions
-                href: resources/workposition.md
                 items:
+                  - name: Положение работы
+                    href: resources/workposition.md
                   - name: Список
                     href: api/profile-list-positions.md
                   - name: Создание
@@ -10841,8 +10926,9 @@ items:
                   - name: Delete
                     href: api/workposition-delete.md
               - name: Projects
-                href: resources/projectparticipation.md
                 items:
+                  - name: Участие в проектах
+                    href: resources/projectparticipation.md
                   - name: Список
                     href: api/profile-list-projects.md
                   - name: Создание
@@ -10853,9 +10939,38 @@ items:
                     href: api/projectparticipation-update.md
                   - name: Delete
                     href: api/projectparticipation-delete.md
-              - name: Skill
-                href: resources/skillproficiency.md
+              - name: Публикаци
                 items:
+                  - name: Публикация элемента
+                    href: resources/itempublication.md
+                  - name: Список
+                    href: api/profile-list-publications.md
+                  - name: Создание
+                    href: api/profile-post-publications.md
+                  - name: Получение
+                    href: api/itempublication-get.md
+                  - name: Обновление
+                    href: api/itempublication-update.md
+                  - name: Delete
+                    href: api/itempublication-delete.md
+              - name: Несут
+                items:
+                  - name: Ответственность сотрудника
+                    href: resources/personresponsibility.md
+                  - name: Список
+                    href: api/profile-list-responsibilities.md
+                  - name: Создание
+                    href: api/profile-post-responsibilities.md
+                  - name: Получение
+                    href: api/personresponsibility-get.md
+                  - name: Обновление
+                    href: api/personresponsibility-update.md
+                  - name: Delete
+                    href: api/personresponsibility-delete.md
+              - name: Skill
+                items:
+                  - name: Знание навыков
+                    href: resources/skillproficiency.md
                   - name: Список
                     href: api/profile-list-skills.md
                   - name: Создание
@@ -10867,8 +10982,9 @@ items:
                   - name: Delete
                     href: api/skillproficiency-delete.md
               - name: Учетные записи веб-сайта
-                href: resources/webaccount.md
                 items:
+                  - name: Учетная запись веб-сайта
+                    href: resources/webaccount.md
                   - name: Список
                     href: api/profile-list-webaccounts.md
                   - name: Создание
@@ -10880,8 +10996,9 @@ items:
                   - name: Delete
                     href: api/webaccount-delete.md
               - name: Веб-сайты
-                href: resources/personwebsite.md
                 items:
+                  - name: Веб-сайт пользователя
+                    href: resources/personwebsite.md
                   - name: Список
                     href: api/profile-list-websites.md
                   - name: Создание
@@ -11044,7 +11161,7 @@ items:
         items:
           - name: Отчеты об активности Azure AD
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/azure-ad-auditlog-overview.md
               - name: Аудит каталога
                 href: resources/directoryaudit.md
@@ -11067,7 +11184,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Отчеты об удостоверениях и доступе
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/report-identity-access.md
               - name: Активность приложений AD FS
                 items:
@@ -11090,7 +11207,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Регистрация и использование
                 items:
-                  - name: Обзор
+                  - name: Общие сведения
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Счетчик регистрации пользователей учетных данных
                     href: resources/credentialuserregistrationcount.md
@@ -11114,7 +11231,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Отчеты об использовании Microsoft 365
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/report.md
               - name: Использование устройств Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -11326,13 +11443,13 @@ items:
         items:
           - name: Запрос
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/search-api-overview.md
               - name: Данные запроса
                 href: api/search-query.md
           - name: Индекс
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/indexing-api-overview.md
               - name: Внешнее подключение
                 items:
@@ -11420,7 +11537,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Оценка угроз
                 items:
-                  - name: Обзор
+                  - name: Общие сведения
                     href: resources/threatassessment-api-overview.md
                   - name: Запрос на оценку угроз
                     href: resources/threatassessmentrequest.md
@@ -11476,7 +11593,7 @@ items:
       - name: Сайты и списки
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/sharepoint.md
           - name: Сайты
             href: resources/site.md

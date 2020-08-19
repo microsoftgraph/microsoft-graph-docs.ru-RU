@@ -2,33 +2,33 @@
 title: Тип ресурса Клаудаппсекуритистате
 description: Содержит сведения о состоянии облачного приложения (Дестинатионсервиценаме, Дестинатионсервицеип).
 localization_priority: Normal
-author: ''
+author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 116f6a6ccdc65e518ebdb69476d3c3aaea42ab91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce08f432b980b110defdfa5a9a7816a71f3f7840
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533062"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808265"
 ---
-# <a name="cloudappsecuritystate-resource-type"></a><span data-ttu-id="f597d-103">Тип ресурса Клаудаппсекуритистате</span><span class="sxs-lookup"><span data-stu-id="f597d-103">cloudAppSecurityState resource type</span></span>
+# <a name="cloudappsecuritystate-resource-type"></a><span data-ttu-id="0f844-103">Тип ресурса Клаудаппсекуритистате</span><span class="sxs-lookup"><span data-stu-id="0f844-103">cloudAppSecurityState resource type</span></span>
 
-<span data-ttu-id="f597d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f597d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0f844-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0f844-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f597d-105">Содержит сведения о состоянии облачного приложения (Дестинатионсервиценаме, Дестинатионсервицеип).</span><span class="sxs-lookup"><span data-stu-id="f597d-105">Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp).</span></span>
+<span data-ttu-id="0f844-105">Содержит сведения о состоянии облачного приложения (Дестинатионсервиценаме, Дестинатионсервицеип).</span><span class="sxs-lookup"><span data-stu-id="0f844-105">Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f597d-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="f597d-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="0f844-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="0f844-106">Properties</span></span>
 
-| <span data-ttu-id="f597d-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="f597d-107">Property</span></span>     | <span data-ttu-id="f597d-108">Тип</span><span class="sxs-lookup"><span data-stu-id="f597d-108">Type</span></span>        | <span data-ttu-id="f597d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="f597d-109">Description</span></span> |
+| <span data-ttu-id="0f844-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="0f844-107">Property</span></span>     | <span data-ttu-id="0f844-108">Тип</span><span class="sxs-lookup"><span data-stu-id="0f844-108">Type</span></span>        | <span data-ttu-id="0f844-109">Описание</span><span class="sxs-lookup"><span data-stu-id="0f844-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="f597d-110">дестинатионсервицеип</span><span class="sxs-lookup"><span data-stu-id="f597d-110">destinationServiceIp</span></span>|<span data-ttu-id="f597d-111">String</span><span class="sxs-lookup"><span data-stu-id="f597d-111">String</span></span>|<span data-ttu-id="f597d-112">Конечный IP-адрес подключения к облачному приложению или службе.</span><span class="sxs-lookup"><span data-stu-id="f597d-112">Destination IP Address of the connection to the cloud application/service.</span></span>|
-|<span data-ttu-id="f597d-113">дестинатионсервиценаме</span><span class="sxs-lookup"><span data-stu-id="f597d-113">destinationServiceName</span></span>|<span data-ttu-id="f597d-114">String</span><span class="sxs-lookup"><span data-stu-id="f597d-114">String</span></span>|<span data-ttu-id="f597d-115">Имя облачного приложения или службы (например, "Salesforce", "DropBox" и т. д.).</span><span class="sxs-lookup"><span data-stu-id="f597d-115">Cloud application/service name (for example "Salesforce", "DropBox", etc.).</span></span>|
-|<span data-ttu-id="f597d-116">riskScore</span><span class="sxs-lookup"><span data-stu-id="f597d-116">riskScore</span></span>|<span data-ttu-id="f597d-117">String</span><span class="sxs-lookup"><span data-stu-id="f597d-117">String</span></span>|<span data-ttu-id="f597d-118">Полученный поставщиком и вычисляемый показатель риска облачного приложения или службы.</span><span class="sxs-lookup"><span data-stu-id="f597d-118">Provider-generated/calculated risk score of the Cloud Application/Service.</span></span> <span data-ttu-id="f597d-119">Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.</span><span class="sxs-lookup"><span data-stu-id="f597d-119">Recommended value range of 0-1, which equates to a percentage.</span></span>|
+|<span data-ttu-id="0f844-110">дестинатионсервицеип</span><span class="sxs-lookup"><span data-stu-id="0f844-110">destinationServiceIp</span></span>|<span data-ttu-id="0f844-111">String</span><span class="sxs-lookup"><span data-stu-id="0f844-111">String</span></span>|<span data-ttu-id="0f844-112">Конечный IP-адрес подключения к облачному приложению или службе.</span><span class="sxs-lookup"><span data-stu-id="0f844-112">Destination IP Address of the connection to the cloud application/service.</span></span>|
+|<span data-ttu-id="0f844-113">дестинатионсервиценаме</span><span class="sxs-lookup"><span data-stu-id="0f844-113">destinationServiceName</span></span>|<span data-ttu-id="0f844-114">String</span><span class="sxs-lookup"><span data-stu-id="0f844-114">String</span></span>|<span data-ttu-id="0f844-115">Имя облачного приложения или службы (например, "Salesforce", "DropBox" и т. д.).</span><span class="sxs-lookup"><span data-stu-id="0f844-115">Cloud application/service name (for example "Salesforce", "DropBox", etc.).</span></span>|
+|<span data-ttu-id="0f844-116">riskScore</span><span class="sxs-lookup"><span data-stu-id="0f844-116">riskScore</span></span>|<span data-ttu-id="0f844-117">String</span><span class="sxs-lookup"><span data-stu-id="0f844-117">String</span></span>|<span data-ttu-id="0f844-118">Полученный поставщиком и вычисляемый показатель риска облачного приложения или службы.</span><span class="sxs-lookup"><span data-stu-id="0f844-118">Provider-generated/calculated risk score of the Cloud Application/Service.</span></span> <span data-ttu-id="0f844-119">Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.</span><span class="sxs-lookup"><span data-stu-id="0f844-119">Recommended value range of 0-1, which equates to a percentage.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="f597d-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f597d-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0f844-120">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="0f844-120">JSON representation</span></span>
 
-<span data-ttu-id="f597d-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f597d-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0f844-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0f844-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

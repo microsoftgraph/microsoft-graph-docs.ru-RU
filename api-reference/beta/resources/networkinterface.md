@@ -4,33 +4,33 @@ description: Представляет сетевую карту (NIC), связ�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 5fd40bec964a73579863b8222cd4c90d58991502
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 4f19c2fae729e437ec2d9e91a0c6be5694a85214
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522577"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812788"
 ---
-# <a name="networkinterface-resource-type"></a><span data-ttu-id="6d8b0-103">Тип ресурса Нетворкинтерфаце</span><span class="sxs-lookup"><span data-stu-id="6d8b0-103">networkInterface resource type</span></span>
+# <a name="networkinterface-resource-type"></a><span data-ttu-id="e4f04-103">Тип ресурса Нетворкинтерфаце</span><span class="sxs-lookup"><span data-stu-id="e4f04-103">networkInterface resource type</span></span>
 
-<span data-ttu-id="6d8b0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6d8b0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e4f04-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e4f04-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="6d8b0-105">Представляет сетевую карту (NIC), связанную с этим узлом.</span><span class="sxs-lookup"><span data-stu-id="6d8b0-105">Represents a Network Interface Card (NIC) associated with this host.</span></span>
+<span data-ttu-id="e4f04-105">Представляет сетевую карту (NIC), связанную с этим узлом.</span><span class="sxs-lookup"><span data-stu-id="e4f04-105">Represents a Network Interface Card (NIC) associated with this host.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6d8b0-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="6d8b0-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e4f04-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="e4f04-106">Properties</span></span>
 
-| <span data-ttu-id="6d8b0-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="6d8b0-107">Property</span></span>   | <span data-ttu-id="6d8b0-108">Тип</span><span class="sxs-lookup"><span data-stu-id="6d8b0-108">Type</span></span> |<span data-ttu-id="6d8b0-109">Описание</span><span class="sxs-lookup"><span data-stu-id="6d8b0-109">Description</span></span>|
+| <span data-ttu-id="e4f04-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="e4f04-107">Property</span></span>   | <span data-ttu-id="e4f04-108">Тип</span><span class="sxs-lookup"><span data-stu-id="e4f04-108">Type</span></span> |<span data-ttu-id="e4f04-109">Описание</span><span class="sxs-lookup"><span data-stu-id="e4f04-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6d8b0-110">description</span><span class="sxs-lookup"><span data-stu-id="6d8b0-110">description</span></span>|<span data-ttu-id="6d8b0-111">String</span><span class="sxs-lookup"><span data-stu-id="6d8b0-111">String</span></span>|<span data-ttu-id="6d8b0-112">Описание сетевого адаптера (например, Ethernet-адаптера, подключения по локальной сети для адаптера беспроводной сети \* < # > и т. д.).</span><span class="sxs-lookup"><span data-stu-id="6d8b0-112">Description of the NIC (e.g. Ethernet adapter, Wireless LAN adapter Local Area Connection \*<#>, etc.).</span></span>|
-|<span data-ttu-id="6d8b0-113">ipV4Address</span><span class="sxs-lookup"><span data-stu-id="6d8b0-113">ipV4Address</span></span>|<span data-ttu-id="6d8b0-114">String</span><span class="sxs-lookup"><span data-stu-id="6d8b0-114">String</span></span>|<span data-ttu-id="6d8b0-115">Последний IPv4-адрес, связанный с этим сетевым адаптером.</span><span class="sxs-lookup"><span data-stu-id="6d8b0-115">Last IPv4 address associated with this NIC.</span></span>|
-|<span data-ttu-id="6d8b0-116">ipV6Address</span><span class="sxs-lookup"><span data-stu-id="6d8b0-116">ipV6Address</span></span>|<span data-ttu-id="6d8b0-117">String</span><span class="sxs-lookup"><span data-stu-id="6d8b0-117">String</span></span>|<span data-ttu-id="6d8b0-118">Последний открытый (с нестандартным) IPv6-адрес, связанный с этим сетевым адаптером.</span><span class="sxs-lookup"><span data-stu-id="6d8b0-118">Last Public (aka global) IPv6 address associated with this NIC.</span></span>|
-|<span data-ttu-id="6d8b0-119">localIpV6Address</span><span class="sxs-lookup"><span data-stu-id="6d8b0-119">localIpV6Address</span></span>|<span data-ttu-id="6d8b0-120">String</span><span class="sxs-lookup"><span data-stu-id="6d8b0-120">String</span></span>|<span data-ttu-id="6d8b0-121">IPv6-адрес последней локальной локальной связи или локального сайта, связанный с этим сетевым адаптером.</span><span class="sxs-lookup"><span data-stu-id="6d8b0-121">Last local (link-local or site-local) IPv6 address associated with this NIC.</span></span>|
-|<span data-ttu-id="6d8b0-122">macAddress</span><span class="sxs-lookup"><span data-stu-id="6d8b0-122">macAddress</span></span>|<span data-ttu-id="6d8b0-123">String</span><span class="sxs-lookup"><span data-stu-id="6d8b0-123">String</span></span>|<span data-ttu-id="6d8b0-124">MAC-адрес сетевого адаптера на этом узле.</span><span class="sxs-lookup"><span data-stu-id="6d8b0-124">MAC address of the NIC on this host.</span></span>|
+|<span data-ttu-id="e4f04-110">description</span><span class="sxs-lookup"><span data-stu-id="e4f04-110">description</span></span>|<span data-ttu-id="e4f04-111">String</span><span class="sxs-lookup"><span data-stu-id="e4f04-111">String</span></span>|<span data-ttu-id="e4f04-112">Описание сетевого адаптера (например, Ethernet-адаптера, подключения по локальной сети для адаптера беспроводной сети \* < # > и т. д.).</span><span class="sxs-lookup"><span data-stu-id="e4f04-112">Description of the NIC (e.g. Ethernet adapter, Wireless LAN adapter Local Area Connection \*<#>, etc.).</span></span>|
+|<span data-ttu-id="e4f04-113">ipV4Address</span><span class="sxs-lookup"><span data-stu-id="e4f04-113">ipV4Address</span></span>|<span data-ttu-id="e4f04-114">String</span><span class="sxs-lookup"><span data-stu-id="e4f04-114">String</span></span>|<span data-ttu-id="e4f04-115">Последний IPv4-адрес, связанный с этим сетевым адаптером.</span><span class="sxs-lookup"><span data-stu-id="e4f04-115">Last IPv4 address associated with this NIC.</span></span>|
+|<span data-ttu-id="e4f04-116">ipV6Address</span><span class="sxs-lookup"><span data-stu-id="e4f04-116">ipV6Address</span></span>|<span data-ttu-id="e4f04-117">String</span><span class="sxs-lookup"><span data-stu-id="e4f04-117">String</span></span>|<span data-ttu-id="e4f04-118">Последний открытый (с нестандартным) IPv6-адрес, связанный с этим сетевым адаптером.</span><span class="sxs-lookup"><span data-stu-id="e4f04-118">Last Public (aka global) IPv6 address associated with this NIC.</span></span>|
+|<span data-ttu-id="e4f04-119">localIpV6Address</span><span class="sxs-lookup"><span data-stu-id="e4f04-119">localIpV6Address</span></span>|<span data-ttu-id="e4f04-120">String</span><span class="sxs-lookup"><span data-stu-id="e4f04-120">String</span></span>|<span data-ttu-id="e4f04-121">IPv6-адрес последней локальной локальной связи или локального сайта, связанный с этим сетевым адаптером.</span><span class="sxs-lookup"><span data-stu-id="e4f04-121">Last local (link-local or site-local) IPv6 address associated with this NIC.</span></span>|
+|<span data-ttu-id="e4f04-122">macAddress</span><span class="sxs-lookup"><span data-stu-id="e4f04-122">macAddress</span></span>|<span data-ttu-id="e4f04-123">String</span><span class="sxs-lookup"><span data-stu-id="e4f04-123">String</span></span>|<span data-ttu-id="e4f04-124">MAC-адрес сетевого адаптера на этом узле.</span><span class="sxs-lookup"><span data-stu-id="e4f04-124">MAC address of the NIC on this host.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6d8b0-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6d8b0-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e4f04-125">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="e4f04-125">JSON representation</span></span>
 
-<span data-ttu-id="6d8b0-126">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6d8b0-126">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e4f04-126">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e4f04-126">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
