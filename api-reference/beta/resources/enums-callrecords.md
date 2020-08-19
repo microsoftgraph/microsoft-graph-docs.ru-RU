@@ -5,150 +5,152 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: ec07c5a5cfd4bae33848b8f0e886c7ad552164ae
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: 76a540a0c1a33a1ab1cb906888c5ee6c590c48ab
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491184"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806655"
 ---
-<span data-ttu-id="41dc1-103">Пространство имен: microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="41dc1-103">Namespace: microsoft.graph.callRecords</span></span>
+# <a name="call-records-enum-values"></a><span data-ttu-id="3abea-103">Записи вызовов перечисление значений</span><span class="sxs-lookup"><span data-stu-id="3abea-103">Call records enum values</span></span>
 
-### <a name="calltype-values"></a><span data-ttu-id="41dc1-104">значения callType</span><span class="sxs-lookup"><span data-stu-id="41dc1-104">callType values</span></span>
+<span data-ttu-id="3abea-104">Пространство имен: microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="3abea-104">Namespace: microsoft.graph.callRecords</span></span>
 
-| <span data-ttu-id="41dc1-105">Member</span><span class="sxs-lookup"><span data-stu-id="41dc1-105">Member</span></span>
+### <a name="calltype-values"></a><span data-ttu-id="3abea-105">значения callType</span><span class="sxs-lookup"><span data-stu-id="3abea-105">callType values</span></span>
+
+| <span data-ttu-id="3abea-106">Элемент</span><span class="sxs-lookup"><span data-stu-id="3abea-106">Member</span></span>
 |:--------------
-| <span data-ttu-id="41dc1-106">unknown</span><span class="sxs-lookup"><span data-stu-id="41dc1-106">unknown</span></span>
-| <span data-ttu-id="41dc1-107">граупкалл</span><span class="sxs-lookup"><span data-stu-id="41dc1-107">groupCall</span></span>
-| <span data-ttu-id="41dc1-108">пиртопир</span><span class="sxs-lookup"><span data-stu-id="41dc1-108">peerToPeer</span></span>
-| <span data-ttu-id="41dc1-109">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="41dc1-109">unknownFutureValue</span></span>
+| <span data-ttu-id="3abea-107">unknown</span><span class="sxs-lookup"><span data-stu-id="3abea-107">unknown</span></span>
+| <span data-ttu-id="3abea-108">граупкалл</span><span class="sxs-lookup"><span data-stu-id="3abea-108">groupCall</span></span>
+| <span data-ttu-id="3abea-109">пиртопир</span><span class="sxs-lookup"><span data-stu-id="3abea-109">peerToPeer</span></span>
+| <span data-ttu-id="3abea-110">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="3abea-110">unknownFutureValue</span></span>
 
-### <a name="clientplatform-values"></a><span data-ttu-id="41dc1-110">значения Клиентплатформ</span><span class="sxs-lookup"><span data-stu-id="41dc1-110">clientPlatform values</span></span>
+### <a name="clientplatform-values"></a><span data-ttu-id="3abea-111">значения Клиентплатформ</span><span class="sxs-lookup"><span data-stu-id="3abea-111">clientPlatform values</span></span>
 
-| <span data-ttu-id="41dc1-111">Member</span><span class="sxs-lookup"><span data-stu-id="41dc1-111">Member</span></span>
+| <span data-ttu-id="3abea-112">Элемент</span><span class="sxs-lookup"><span data-stu-id="3abea-112">Member</span></span>
 |:--------------
-| <span data-ttu-id="41dc1-112">unknown</span><span class="sxs-lookup"><span data-stu-id="41dc1-112">unknown</span></span>
-| <span data-ttu-id="41dc1-113">под</span><span class="sxs-lookup"><span data-stu-id="41dc1-113">windows</span></span>
-| <span data-ttu-id="41dc1-114">macOS</span><span class="sxs-lookup"><span data-stu-id="41dc1-114">macOS</span></span>
-| <span data-ttu-id="41dc1-115">iOS</span><span class="sxs-lookup"><span data-stu-id="41dc1-115">iOS</span></span>
-| <span data-ttu-id="41dc1-116">ОС</span><span class="sxs-lookup"><span data-stu-id="41dc1-116">android</span></span>
-| <span data-ttu-id="41dc1-117">web</span><span class="sxs-lookup"><span data-stu-id="41dc1-117">web</span></span>
-| <span data-ttu-id="41dc1-118">ипфоне</span><span class="sxs-lookup"><span data-stu-id="41dc1-118">ipPhone</span></span>
-| <span data-ttu-id="41dc1-119">румсистем</span><span class="sxs-lookup"><span data-stu-id="41dc1-119">roomSystem</span></span>
-| <span data-ttu-id="41dc1-120">сурфацехуб</span><span class="sxs-lookup"><span data-stu-id="41dc1-120">surfaceHub</span></span>
-| <span data-ttu-id="41dc1-121">holoLens</span><span class="sxs-lookup"><span data-stu-id="41dc1-121">holoLens</span></span>
-| <span data-ttu-id="41dc1-122">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="41dc1-122">unknownFutureValue</span></span>
+| <span data-ttu-id="3abea-113">unknown</span><span class="sxs-lookup"><span data-stu-id="3abea-113">unknown</span></span>
+| <span data-ttu-id="3abea-114">под</span><span class="sxs-lookup"><span data-stu-id="3abea-114">windows</span></span>
+| <span data-ttu-id="3abea-115">macOS</span><span class="sxs-lookup"><span data-stu-id="3abea-115">macOS</span></span>
+| <span data-ttu-id="3abea-116">iOS</span><span class="sxs-lookup"><span data-stu-id="3abea-116">iOS</span></span>
+| <span data-ttu-id="3abea-117">ОС</span><span class="sxs-lookup"><span data-stu-id="3abea-117">android</span></span>
+| <span data-ttu-id="3abea-118">web</span><span class="sxs-lookup"><span data-stu-id="3abea-118">web</span></span>
+| <span data-ttu-id="3abea-119">ипфоне</span><span class="sxs-lookup"><span data-stu-id="3abea-119">ipPhone</span></span>
+| <span data-ttu-id="3abea-120">румсистем</span><span class="sxs-lookup"><span data-stu-id="3abea-120">roomSystem</span></span>
+| <span data-ttu-id="3abea-121">сурфацехуб</span><span class="sxs-lookup"><span data-stu-id="3abea-121">surfaceHub</span></span>
+| <span data-ttu-id="3abea-122">holoLens</span><span class="sxs-lookup"><span data-stu-id="3abea-122">holoLens</span></span>
+| <span data-ttu-id="3abea-123">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="3abea-123">unknownFutureValue</span></span>
 
-### <a name="failurestage-values"></a><span data-ttu-id="41dc1-123">значения Фаилурестаже</span><span class="sxs-lookup"><span data-stu-id="41dc1-123">failureStage values</span></span>
+### <a name="failurestage-values"></a><span data-ttu-id="3abea-124">значения Фаилурестаже</span><span class="sxs-lookup"><span data-stu-id="3abea-124">failureStage values</span></span>
 
-| <span data-ttu-id="41dc1-124">Member</span><span class="sxs-lookup"><span data-stu-id="41dc1-124">Member</span></span>
+| <span data-ttu-id="3abea-125">Элемент</span><span class="sxs-lookup"><span data-stu-id="3abea-125">Member</span></span>
 |:--------------
-| <span data-ttu-id="41dc1-125">unknown</span><span class="sxs-lookup"><span data-stu-id="41dc1-125">unknown</span></span>
-| <span data-ttu-id="41dc1-126">каллсетуп</span><span class="sxs-lookup"><span data-stu-id="41dc1-126">callSetup</span></span>
-| <span data-ttu-id="41dc1-127">мидкалл</span><span class="sxs-lookup"><span data-stu-id="41dc1-127">midcall</span></span>
-| <span data-ttu-id="41dc1-128">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="41dc1-128">unknownFutureValue</span></span>
+| <span data-ttu-id="3abea-126">unknown</span><span class="sxs-lookup"><span data-stu-id="3abea-126">unknown</span></span>
+| <span data-ttu-id="3abea-127">каллсетуп</span><span class="sxs-lookup"><span data-stu-id="3abea-127">callSetup</span></span>
+| <span data-ttu-id="3abea-128">мидкалл</span><span class="sxs-lookup"><span data-stu-id="3abea-128">midcall</span></span>
+| <span data-ttu-id="3abea-129">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="3abea-129">unknownFutureValue</span></span>
 
-### <a name="mediastreamdirection-values"></a><span data-ttu-id="41dc1-129">значения Медиастреамдиректион</span><span class="sxs-lookup"><span data-stu-id="41dc1-129">mediaStreamDirection values</span></span>
+### <a name="mediastreamdirection-values"></a><span data-ttu-id="3abea-130">значения Медиастреамдиректион</span><span class="sxs-lookup"><span data-stu-id="3abea-130">mediaStreamDirection values</span></span>
 
-| <span data-ttu-id="41dc1-130">Member</span><span class="sxs-lookup"><span data-stu-id="41dc1-130">Member</span></span>
+| <span data-ttu-id="3abea-131">Элемент</span><span class="sxs-lookup"><span data-stu-id="3abea-131">Member</span></span>
 |:--------------
-| <span data-ttu-id="41dc1-131">каллертокалли</span><span class="sxs-lookup"><span data-stu-id="41dc1-131">callerToCallee</span></span>
-| <span data-ttu-id="41dc1-132">каллитокаллер</span><span class="sxs-lookup"><span data-stu-id="41dc1-132">calleeToCaller</span></span>
+| <span data-ttu-id="3abea-132">каллертокалли</span><span class="sxs-lookup"><span data-stu-id="3abea-132">callerToCallee</span></span>
+| <span data-ttu-id="3abea-133">каллитокаллер</span><span class="sxs-lookup"><span data-stu-id="3abea-133">calleeToCaller</span></span>
 
-### <a name="modality-values"></a><span data-ttu-id="41dc1-133">значения модальности</span><span class="sxs-lookup"><span data-stu-id="41dc1-133">modality values</span></span>
+### <a name="modality-values"></a><span data-ttu-id="3abea-134">значения модальности</span><span class="sxs-lookup"><span data-stu-id="3abea-134">modality values</span></span>
 
-| <span data-ttu-id="41dc1-134">Member</span><span class="sxs-lookup"><span data-stu-id="41dc1-134">Member</span></span>
+| <span data-ttu-id="3abea-135">Элемент</span><span class="sxs-lookup"><span data-stu-id="3abea-135">Member</span></span>
 |:--------------
-| <span data-ttu-id="41dc1-135">unknown</span><span class="sxs-lookup"><span data-stu-id="41dc1-135">unknown</span></span>
-| <span data-ttu-id="41dc1-136">audio</span><span class="sxs-lookup"><span data-stu-id="41dc1-136">audio</span></span>
-| <span data-ttu-id="41dc1-137">video</span><span class="sxs-lookup"><span data-stu-id="41dc1-137">video</span></span>
-| <span data-ttu-id="41dc1-138">видеобаседскриншаринг</span><span class="sxs-lookup"><span data-stu-id="41dc1-138">videoBasedScreenSharing</span></span>
-| <span data-ttu-id="41dc1-139">data</span><span class="sxs-lookup"><span data-stu-id="41dc1-139">data</span></span>
-| <span data-ttu-id="41dc1-140">скриншаринг</span><span class="sxs-lookup"><span data-stu-id="41dc1-140">screenSharing</span></span>
-| <span data-ttu-id="41dc1-141">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="41dc1-141">unknownFutureValue</span></span>
+| <span data-ttu-id="3abea-136">unknown</span><span class="sxs-lookup"><span data-stu-id="3abea-136">unknown</span></span>
+| <span data-ttu-id="3abea-137">audio</span><span class="sxs-lookup"><span data-stu-id="3abea-137">audio</span></span>
+| <span data-ttu-id="3abea-138">video</span><span class="sxs-lookup"><span data-stu-id="3abea-138">video</span></span>
+| <span data-ttu-id="3abea-139">видеобаседскриншаринг</span><span class="sxs-lookup"><span data-stu-id="3abea-139">videoBasedScreenSharing</span></span>
+| <span data-ttu-id="3abea-140">data</span><span class="sxs-lookup"><span data-stu-id="3abea-140">data</span></span>
+| <span data-ttu-id="3abea-141">скриншаринг</span><span class="sxs-lookup"><span data-stu-id="3abea-141">screenSharing</span></span>
+| <span data-ttu-id="3abea-142">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="3abea-142">unknownFutureValue</span></span>
 
-### <a name="networkconnectiontype-values"></a><span data-ttu-id="41dc1-142">значения Нетворкконнектионтипе</span><span class="sxs-lookup"><span data-stu-id="41dc1-142">networkConnectionType values</span></span>
+### <a name="networkconnectiontype-values"></a><span data-ttu-id="3abea-143">значения Нетворкконнектионтипе</span><span class="sxs-lookup"><span data-stu-id="3abea-143">networkConnectionType values</span></span>
 
-| <span data-ttu-id="41dc1-143">Member</span><span class="sxs-lookup"><span data-stu-id="41dc1-143">Member</span></span>
+| <span data-ttu-id="3abea-144">Элемент</span><span class="sxs-lookup"><span data-stu-id="3abea-144">Member</span></span>
 |:--------------
-| <span data-ttu-id="41dc1-144">unknown</span><span class="sxs-lookup"><span data-stu-id="41dc1-144">unknown</span></span>
-| <span data-ttu-id="41dc1-145">политик</span><span class="sxs-lookup"><span data-stu-id="41dc1-145">wired</span></span>
-| <span data-ttu-id="41dc1-146">подключений</span><span class="sxs-lookup"><span data-stu-id="41dc1-146">wifi</span></span>
-| <span data-ttu-id="41dc1-147">связь</span><span class="sxs-lookup"><span data-stu-id="41dc1-147">mobile</span></span>
-| <span data-ttu-id="41dc1-148">направляющ</span><span class="sxs-lookup"><span data-stu-id="41dc1-148">tunnel</span></span>
-| <span data-ttu-id="41dc1-149">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="41dc1-149">unknownFutureValue</span></span>
+| <span data-ttu-id="3abea-145">unknown</span><span class="sxs-lookup"><span data-stu-id="3abea-145">unknown</span></span>
+| <span data-ttu-id="3abea-146">политик</span><span class="sxs-lookup"><span data-stu-id="3abea-146">wired</span></span>
+| <span data-ttu-id="3abea-147">подключений</span><span class="sxs-lookup"><span data-stu-id="3abea-147">wifi</span></span>
+| <span data-ttu-id="3abea-148">связь</span><span class="sxs-lookup"><span data-stu-id="3abea-148">mobile</span></span>
+| <span data-ttu-id="3abea-149">направляющ</span><span class="sxs-lookup"><span data-stu-id="3abea-149">tunnel</span></span>
+| <span data-ttu-id="3abea-150">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="3abea-150">unknownFutureValue</span></span>
 
-### <a name="productfamily-values"></a><span data-ttu-id="41dc1-150">значения Продуктфамили</span><span class="sxs-lookup"><span data-stu-id="41dc1-150">productFamily values</span></span>
+### <a name="productfamily-values"></a><span data-ttu-id="3abea-151">значения Продуктфамили</span><span class="sxs-lookup"><span data-stu-id="3abea-151">productFamily values</span></span>
 
-| <span data-ttu-id="41dc1-151">Member</span><span class="sxs-lookup"><span data-stu-id="41dc1-151">Member</span></span>
+| <span data-ttu-id="3abea-152">Элемент</span><span class="sxs-lookup"><span data-stu-id="3abea-152">Member</span></span>
 |:--------------
-| <span data-ttu-id="41dc1-152">unknown</span><span class="sxs-lookup"><span data-stu-id="41dc1-152">unknown</span></span>
-| <span data-ttu-id="41dc1-153">Teams</span><span class="sxs-lookup"><span data-stu-id="41dc1-153">teams</span></span>
-| <span data-ttu-id="41dc1-154">skypeForBusiness</span><span class="sxs-lookup"><span data-stu-id="41dc1-154">skypeForBusiness</span></span>
-| <span data-ttu-id="41dc1-155">Lync</span><span class="sxs-lookup"><span data-stu-id="41dc1-155">lync</span></span>
-| <span data-ttu-id="41dc1-156">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="41dc1-156">unknownFutureValue</span></span>
+| <span data-ttu-id="3abea-153">unknown</span><span class="sxs-lookup"><span data-stu-id="3abea-153">unknown</span></span>
+| <span data-ttu-id="3abea-154">Teams</span><span class="sxs-lookup"><span data-stu-id="3abea-154">teams</span></span>
+| <span data-ttu-id="3abea-155">skypeForBusiness</span><span class="sxs-lookup"><span data-stu-id="3abea-155">skypeForBusiness</span></span>
+| <span data-ttu-id="3abea-156">Lync</span><span class="sxs-lookup"><span data-stu-id="3abea-156">lync</span></span>
+| <span data-ttu-id="3abea-157">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="3abea-157">unknownFutureValue</span></span>
 
-### <a name="servicerole-values"></a><span data-ttu-id="41dc1-157">значения Сервицероле</span><span class="sxs-lookup"><span data-stu-id="41dc1-157">serviceRole values</span></span>
+### <a name="servicerole-values"></a><span data-ttu-id="3abea-158">значения Сервицероле</span><span class="sxs-lookup"><span data-stu-id="3abea-158">serviceRole values</span></span>
 
-| <span data-ttu-id="41dc1-158">Member</span><span class="sxs-lookup"><span data-stu-id="41dc1-158">Member</span></span>
+| <span data-ttu-id="3abea-159">Элемент</span><span class="sxs-lookup"><span data-stu-id="3abea-159">Member</span></span>
 |:--------------
-| <span data-ttu-id="41dc1-159">unknown</span><span class="sxs-lookup"><span data-stu-id="41dc1-159">unknown</span></span>
-| <span data-ttu-id="41dc1-160">кустомбот</span><span class="sxs-lookup"><span data-stu-id="41dc1-160">customBot</span></span>
-| <span data-ttu-id="41dc1-161">скипефорбусинессмикрософттеамсгатевай</span><span class="sxs-lookup"><span data-stu-id="41dc1-161">skypeForBusinessMicrosoftTeamsGateway</span></span>
-| <span data-ttu-id="41dc1-162">скипефорбусинессаудиовидеомку</span><span class="sxs-lookup"><span data-stu-id="41dc1-162">skypeForBusinessAudioVideoMcu</span></span>
-| <span data-ttu-id="41dc1-163">скипефорбусинессаппликатионшарингмку</span><span class="sxs-lookup"><span data-stu-id="41dc1-163">skypeForBusinessApplicationSharingMcu</span></span>
-| <span data-ttu-id="41dc1-164">скипефорбусинесскаллкуеуес</span><span class="sxs-lookup"><span data-stu-id="41dc1-164">skypeForBusinessCallQueues</span></span>
-| <span data-ttu-id="41dc1-165">скипефорбусинессаутоаттендант</span><span class="sxs-lookup"><span data-stu-id="41dc1-165">skypeForBusinessAutoAttendant</span></span>
-| <span data-ttu-id="41dc1-166">mediationServer</span><span class="sxs-lookup"><span data-stu-id="41dc1-166">mediationServer</span></span>
-| <span data-ttu-id="41dc1-167">медиатионсерверклаудконнекторедитион</span><span class="sxs-lookup"><span data-stu-id="41dc1-167">mediationServerCloudConnectorEdition</span></span>
-| <span data-ttu-id="41dc1-168">ексчанжеунифиедмессагингсервице</span><span class="sxs-lookup"><span data-stu-id="41dc1-168">exchangeUnifiedMessagingService</span></span>
-| <span data-ttu-id="41dc1-169">медиаконтроллер</span><span class="sxs-lookup"><span data-stu-id="41dc1-169">mediaController</span></span>
-| <span data-ttu-id="41dc1-170">конференЦинганнаунцементсервице</span><span class="sxs-lookup"><span data-stu-id="41dc1-170">conferencingAnnouncementService</span></span>
-| <span data-ttu-id="41dc1-171">конференЦингаттендант</span><span class="sxs-lookup"><span data-stu-id="41dc1-171">conferencingAttendant</span></span>
-| <span data-ttu-id="41dc1-172">аудиотелеконференцерконтроллер</span><span class="sxs-lookup"><span data-stu-id="41dc1-172">audioTeleconferencerController</span></span>
-| <span data-ttu-id="41dc1-173">скипефорбусинессунифиедкоммуникатионаппликатионплатформ</span><span class="sxs-lookup"><span data-stu-id="41dc1-173">skypeForBusinessUnifiedCommunicationApplicationPlatform</span></span>
-| <span data-ttu-id="41dc1-174">респонсеграупсервицеаннаунцементсервице</span><span class="sxs-lookup"><span data-stu-id="41dc1-174">responseGroupServiceAnnouncementService</span></span>
-| <span data-ttu-id="41dc1-175">Шлюз</span><span class="sxs-lookup"><span data-stu-id="41dc1-175">gateway</span></span>
-| <span data-ttu-id="41dc1-176">скипетранслатор</span><span class="sxs-lookup"><span data-stu-id="41dc1-176">skypeTranslator</span></span>
-| <span data-ttu-id="41dc1-177">скипефорбусинессаттендант</span><span class="sxs-lookup"><span data-stu-id="41dc1-177">skypeForBusinessAttendant</span></span>
-| <span data-ttu-id="41dc1-178">респонсеграупсервице</span><span class="sxs-lookup"><span data-stu-id="41dc1-178">responseGroupService</span></span>
-| <span data-ttu-id="41dc1-179">voicemail</span><span class="sxs-lookup"><span data-stu-id="41dc1-179">voicemail</span></span>
-| <span data-ttu-id="41dc1-180">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="41dc1-180">unknownFutureValue</span></span>
+| <span data-ttu-id="3abea-160">unknown</span><span class="sxs-lookup"><span data-stu-id="3abea-160">unknown</span></span>
+| <span data-ttu-id="3abea-161">кустомбот</span><span class="sxs-lookup"><span data-stu-id="3abea-161">customBot</span></span>
+| <span data-ttu-id="3abea-162">скипефорбусинессмикрософттеамсгатевай</span><span class="sxs-lookup"><span data-stu-id="3abea-162">skypeForBusinessMicrosoftTeamsGateway</span></span>
+| <span data-ttu-id="3abea-163">скипефорбусинессаудиовидеомку</span><span class="sxs-lookup"><span data-stu-id="3abea-163">skypeForBusinessAudioVideoMcu</span></span>
+| <span data-ttu-id="3abea-164">скипефорбусинессаппликатионшарингмку</span><span class="sxs-lookup"><span data-stu-id="3abea-164">skypeForBusinessApplicationSharingMcu</span></span>
+| <span data-ttu-id="3abea-165">скипефорбусинесскаллкуеуес</span><span class="sxs-lookup"><span data-stu-id="3abea-165">skypeForBusinessCallQueues</span></span>
+| <span data-ttu-id="3abea-166">скипефорбусинессаутоаттендант</span><span class="sxs-lookup"><span data-stu-id="3abea-166">skypeForBusinessAutoAttendant</span></span>
+| <span data-ttu-id="3abea-167">mediationServer</span><span class="sxs-lookup"><span data-stu-id="3abea-167">mediationServer</span></span>
+| <span data-ttu-id="3abea-168">медиатионсерверклаудконнекторедитион</span><span class="sxs-lookup"><span data-stu-id="3abea-168">mediationServerCloudConnectorEdition</span></span>
+| <span data-ttu-id="3abea-169">ексчанжеунифиедмессагингсервице</span><span class="sxs-lookup"><span data-stu-id="3abea-169">exchangeUnifiedMessagingService</span></span>
+| <span data-ttu-id="3abea-170">медиаконтроллер</span><span class="sxs-lookup"><span data-stu-id="3abea-170">mediaController</span></span>
+| <span data-ttu-id="3abea-171">конференЦинганнаунцементсервице</span><span class="sxs-lookup"><span data-stu-id="3abea-171">conferencingAnnouncementService</span></span>
+| <span data-ttu-id="3abea-172">конференЦингаттендант</span><span class="sxs-lookup"><span data-stu-id="3abea-172">conferencingAttendant</span></span>
+| <span data-ttu-id="3abea-173">аудиотелеконференцерконтроллер</span><span class="sxs-lookup"><span data-stu-id="3abea-173">audioTeleconferencerController</span></span>
+| <span data-ttu-id="3abea-174">скипефорбусинессунифиедкоммуникатионаппликатионплатформ</span><span class="sxs-lookup"><span data-stu-id="3abea-174">skypeForBusinessUnifiedCommunicationApplicationPlatform</span></span>
+| <span data-ttu-id="3abea-175">респонсеграупсервицеаннаунцементсервице</span><span class="sxs-lookup"><span data-stu-id="3abea-175">responseGroupServiceAnnouncementService</span></span>
+| <span data-ttu-id="3abea-176">Шлюз</span><span class="sxs-lookup"><span data-stu-id="3abea-176">gateway</span></span>
+| <span data-ttu-id="3abea-177">скипетранслатор</span><span class="sxs-lookup"><span data-stu-id="3abea-177">skypeTranslator</span></span>
+| <span data-ttu-id="3abea-178">скипефорбусинессаттендант</span><span class="sxs-lookup"><span data-stu-id="3abea-178">skypeForBusinessAttendant</span></span>
+| <span data-ttu-id="3abea-179">респонсеграупсервице</span><span class="sxs-lookup"><span data-stu-id="3abea-179">responseGroupService</span></span>
+| <span data-ttu-id="3abea-180">voicemail</span><span class="sxs-lookup"><span data-stu-id="3abea-180">voicemail</span></span>
+| <span data-ttu-id="3abea-181">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="3abea-181">unknownFutureValue</span></span>
 
-### <a name="userfeedbackrating-values"></a><span data-ttu-id="41dc1-181">значения Усерфидбаккратинг</span><span class="sxs-lookup"><span data-stu-id="41dc1-181">userFeedbackRating values</span></span>
+### <a name="userfeedbackrating-values"></a><span data-ttu-id="3abea-182">значения Усерфидбаккратинг</span><span class="sxs-lookup"><span data-stu-id="3abea-182">userFeedbackRating values</span></span>
 
-| <span data-ttu-id="41dc1-182">Member</span><span class="sxs-lookup"><span data-stu-id="41dc1-182">Member</span></span>
+| <span data-ttu-id="3abea-183">Элемент</span><span class="sxs-lookup"><span data-stu-id="3abea-183">Member</span></span>
 |:--------------
-| <span data-ttu-id="41dc1-183">нотратед</span><span class="sxs-lookup"><span data-stu-id="41dc1-183">notRated</span></span>
-| <span data-ttu-id="41dc1-184">устойчивого</span><span class="sxs-lookup"><span data-stu-id="41dc1-184">bad</span></span>
-| <span data-ttu-id="41dc1-185">показатели</span><span class="sxs-lookup"><span data-stu-id="41dc1-185">poor</span></span>
-| <span data-ttu-id="41dc1-186">честно</span><span class="sxs-lookup"><span data-stu-id="41dc1-186">fair</span></span>
-| <span data-ttu-id="41dc1-187">проверен</span><span class="sxs-lookup"><span data-stu-id="41dc1-187">good</span></span>
-| <span data-ttu-id="41dc1-188">Отлично</span><span class="sxs-lookup"><span data-stu-id="41dc1-188">excellent</span></span>
-| <span data-ttu-id="41dc1-189">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="41dc1-189">unknownFutureValue</span></span>
+| <span data-ttu-id="3abea-184">нотратед</span><span class="sxs-lookup"><span data-stu-id="3abea-184">notRated</span></span>
+| <span data-ttu-id="3abea-185">устойчивого</span><span class="sxs-lookup"><span data-stu-id="3abea-185">bad</span></span>
+| <span data-ttu-id="3abea-186">показатели</span><span class="sxs-lookup"><span data-stu-id="3abea-186">poor</span></span>
+| <span data-ttu-id="3abea-187">честно</span><span class="sxs-lookup"><span data-stu-id="3abea-187">fair</span></span>
+| <span data-ttu-id="3abea-188">проверен</span><span class="sxs-lookup"><span data-stu-id="3abea-188">good</span></span>
+| <span data-ttu-id="3abea-189">Отлично</span><span class="sxs-lookup"><span data-stu-id="3abea-189">excellent</span></span>
+| <span data-ttu-id="3abea-190">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="3abea-190">unknownFutureValue</span></span>
 
-### <a name="wifiband-values"></a><span data-ttu-id="41dc1-190">значения Вифибанд</span><span class="sxs-lookup"><span data-stu-id="41dc1-190">wifiBand values</span></span>
+### <a name="wifiband-values"></a><span data-ttu-id="3abea-191">значения Вифибанд</span><span class="sxs-lookup"><span data-stu-id="3abea-191">wifiBand values</span></span>
 
-| <span data-ttu-id="41dc1-191">Member</span><span class="sxs-lookup"><span data-stu-id="41dc1-191">Member</span></span>
+| <span data-ttu-id="3abea-192">Элемент</span><span class="sxs-lookup"><span data-stu-id="3abea-192">Member</span></span>
 |:--------------
-| <span data-ttu-id="41dc1-192">unknown</span><span class="sxs-lookup"><span data-stu-id="41dc1-192">unknown</span></span>
-| <span data-ttu-id="41dc1-193">frequency24GHz</span><span class="sxs-lookup"><span data-stu-id="41dc1-193">frequency24GHz</span></span>
-| <span data-ttu-id="41dc1-194">frequency50GHz</span><span class="sxs-lookup"><span data-stu-id="41dc1-194">frequency50GHz</span></span>
-| <span data-ttu-id="41dc1-195">frequency60GHz</span><span class="sxs-lookup"><span data-stu-id="41dc1-195">frequency60GHz</span></span>
-| <span data-ttu-id="41dc1-196">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="41dc1-196">unknownFutureValue</span></span>
+| <span data-ttu-id="3abea-193">unknown</span><span class="sxs-lookup"><span data-stu-id="3abea-193">unknown</span></span>
+| <span data-ttu-id="3abea-194">frequency24GHz</span><span class="sxs-lookup"><span data-stu-id="3abea-194">frequency24GHz</span></span>
+| <span data-ttu-id="3abea-195">frequency50GHz</span><span class="sxs-lookup"><span data-stu-id="3abea-195">frequency50GHz</span></span>
+| <span data-ttu-id="3abea-196">frequency60GHz</span><span class="sxs-lookup"><span data-stu-id="3abea-196">frequency60GHz</span></span>
+| <span data-ttu-id="3abea-197">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="3abea-197">unknownFutureValue</span></span>
 
-### <a name="wifiradiotype-values"></a><span data-ttu-id="41dc1-197">значения Вифирадиотипе</span><span class="sxs-lookup"><span data-stu-id="41dc1-197">wifiRadioType values</span></span>
+### <a name="wifiradiotype-values"></a><span data-ttu-id="3abea-198">значения Вифирадиотипе</span><span class="sxs-lookup"><span data-stu-id="3abea-198">wifiRadioType values</span></span>
 
-| <span data-ttu-id="41dc1-198">Member</span><span class="sxs-lookup"><span data-stu-id="41dc1-198">Member</span></span>
+| <span data-ttu-id="3abea-199">Элемент</span><span class="sxs-lookup"><span data-stu-id="3abea-199">Member</span></span>
 |:--------------
-| <span data-ttu-id="41dc1-199">unknown</span><span class="sxs-lookup"><span data-stu-id="41dc1-199">unknown</span></span>
-| <span data-ttu-id="41dc1-200">wifi80211a</span><span class="sxs-lookup"><span data-stu-id="41dc1-200">wifi80211a</span></span>
-| <span data-ttu-id="41dc1-201">wifi80211b</span><span class="sxs-lookup"><span data-stu-id="41dc1-201">wifi80211b</span></span>
-| <span data-ttu-id="41dc1-202">wifi80211g</span><span class="sxs-lookup"><span data-stu-id="41dc1-202">wifi80211g</span></span>
-| <span data-ttu-id="41dc1-203">wifi80211n</span><span class="sxs-lookup"><span data-stu-id="41dc1-203">wifi80211n</span></span>
-| <span data-ttu-id="41dc1-204">wifi80211ac</span><span class="sxs-lookup"><span data-stu-id="41dc1-204">wifi80211ac</span></span>
-| <span data-ttu-id="41dc1-205">wifi80211ax</span><span class="sxs-lookup"><span data-stu-id="41dc1-205">wifi80211ax</span></span>
-| <span data-ttu-id="41dc1-206">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="41dc1-206">unknownFutureValue</span></span>
+| <span data-ttu-id="3abea-200">unknown</span><span class="sxs-lookup"><span data-stu-id="3abea-200">unknown</span></span>
+| <span data-ttu-id="3abea-201">wifi80211a</span><span class="sxs-lookup"><span data-stu-id="3abea-201">wifi80211a</span></span>
+| <span data-ttu-id="3abea-202">wifi80211b</span><span class="sxs-lookup"><span data-stu-id="3abea-202">wifi80211b</span></span>
+| <span data-ttu-id="3abea-203">wifi80211g</span><span class="sxs-lookup"><span data-stu-id="3abea-203">wifi80211g</span></span>
+| <span data-ttu-id="3abea-204">wifi80211n</span><span class="sxs-lookup"><span data-stu-id="3abea-204">wifi80211n</span></span>
+| <span data-ttu-id="3abea-205">wifi80211ac</span><span class="sxs-lookup"><span data-stu-id="3abea-205">wifi80211ac</span></span>
+| <span data-ttu-id="3abea-206">wifi80211ax</span><span class="sxs-lookup"><span data-stu-id="3abea-206">wifi80211ax</span></span>
+| <span data-ttu-id="3abea-207">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="3abea-207">unknownFutureValue</span></span>
 
 <!--
 {

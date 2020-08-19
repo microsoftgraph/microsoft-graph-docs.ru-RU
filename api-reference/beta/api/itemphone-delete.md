@@ -5,103 +5,76 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: da4866a6b5c5dbe2a8b0d65a04ae4dd7bccbb4a9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c7550f1b8e97fbc1a5efcc5d7e712f2550131a8
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457255"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808055"
 ---
-# <a name="delete-itemphonenumber"></a><span data-ttu-id="74a55-103">Удаление Итемфоненумбер</span><span class="sxs-lookup"><span data-stu-id="74a55-103">Delete itemPhoneNumber</span></span>
+# <a name="delete-itemphonenumber"></a><span data-ttu-id="51adb-103">Удаление Итемфоненумбер</span><span class="sxs-lookup"><span data-stu-id="51adb-103">Delete itemPhoneNumber</span></span>
 
-<span data-ttu-id="74a55-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="74a55-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="51adb-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="51adb-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="74a55-105">Удаление объекта [итемфоне](../resources/itemphone.md) из [профиля](../resources/profile.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="74a55-105">Delete an [itemPhone](../resources/itemphone.md) object from the user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="51adb-105">Удаление объекта [итемфоне](../resources/itemphone.md) из [профиля](../resources/profile.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="51adb-105">Delete an [itemPhone](../resources/itemphone.md) object from the user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="74a55-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="74a55-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="51adb-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="51adb-106">Permissions</span></span>
 
-<span data-ttu-id="74a55-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="74a55-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="51adb-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="51adb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="74a55-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="74a55-109">Permission type</span></span>                        | <span data-ttu-id="74a55-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="74a55-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="51adb-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="51adb-109">Permission type</span></span>                        | <span data-ttu-id="51adb-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="51adb-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="74a55-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="74a55-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="74a55-112">User. ReadWrite, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="74a55-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="74a55-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="74a55-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="74a55-114">User. ReadWrite, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="74a55-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="74a55-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="74a55-115">Application</span></span>                            | <span data-ttu-id="74a55-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="74a55-116">User.ReadWrite.All</span></span>                          |
+| <span data-ttu-id="51adb-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="51adb-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="51adb-112">User. ReadWrite, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="51adb-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="51adb-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="51adb-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="51adb-114">User. ReadWrite, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="51adb-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="51adb-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="51adb-115">Application</span></span>                            | <span data-ttu-id="51adb-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="51adb-116">User.ReadWrite.All</span></span>                          |
 
-## <a name="http-request"></a><span data-ttu-id="74a55-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="74a55-117">HTTP request</span></span>
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-DELETE /me/profile/phones/{id}
+## <a name="http-request"></a><span data-ttu-id="51adb-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="51adb-117">HTTP request</span></span>
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+DELETE /me/profile/phones/{itemPhoneId}
+DELETE /user/{userId}/profile/phones/{itemPhoneId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="74a55-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="74a55-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="51adb-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="51adb-118">Request headers</span></span>
 
-| <span data-ttu-id="74a55-119">Имя</span><span class="sxs-lookup"><span data-stu-id="74a55-119">Name</span></span>           |<span data-ttu-id="74a55-120">Описание</span><span class="sxs-lookup"><span data-stu-id="74a55-120">Description</span></span>                  |
-|:---------------|:----------------------------|
-| <span data-ttu-id="74a55-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="74a55-121">Authorization</span></span>  | <span data-ttu-id="74a55-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="74a55-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="74a55-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="74a55-124">Content-Type</span></span>   | <span data-ttu-id="74a55-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="74a55-p103">application/json. Required.</span></span> |
+|<span data-ttu-id="51adb-119">Имя</span><span class="sxs-lookup"><span data-stu-id="51adb-119">Name</span></span>|<span data-ttu-id="51adb-120">Описание</span><span class="sxs-lookup"><span data-stu-id="51adb-120">Description</span></span>|
+|:---|:---|
+|<span data-ttu-id="51adb-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="51adb-121">Authorization</span></span>|<span data-ttu-id="51adb-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="51adb-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="74a55-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="74a55-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="51adb-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="51adb-124">Request body</span></span>
 
-<span data-ttu-id="74a55-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="74a55-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="51adb-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="51adb-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="74a55-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="74a55-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="51adb-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="51adb-126">Response</span></span>
 
-<span data-ttu-id="74a55-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="74a55-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="51adb-127">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="51adb-127">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="74a55-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="74a55-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="51adb-128">Примеры</span><span class="sxs-lookup"><span data-stu-id="51adb-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="74a55-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="74a55-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="51adb-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="51adb-129">Request</span></span>
 
-<span data-ttu-id="74a55-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="74a55-134">The following is an example of the request.</span></span>
-
-# <a name="http"></a>[<span data-ttu-id="74a55-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="74a55-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_itemphone"
-}-->
+}
+-->
 
-```http
-DELETE https://graph.microsoft.com/beta/me/profile/phones/{id}
+``` http
+DELETE https://graph.microsoft.com/beta/user/{userId}/profile/phones/{itemPhoneId}
 ```
-# <a name="c"></a>[<span data-ttu-id="74a55-136">C#</span><span class="sxs-lookup"><span data-stu-id="74a55-136">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-itemphone-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="74a55-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="74a55-137">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-itemphone-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[<span data-ttu-id="74a55-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="74a55-138">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-itemphone-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### <a name="response"></a><span data-ttu-id="74a55-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="74a55-139">Response</span></span>
-
-<span data-ttu-id="74a55-140">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="74a55-140">The following is an example of the response.</span></span>
+### <a name="response"></a><span data-ttu-id="51adb-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="51adb-130">Response</span></span>
 
 <!-- {
   "blockType": "response",
   "truncated": true
-} -->
-
-```http
+}
+-->
+``` http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete itemPhone",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

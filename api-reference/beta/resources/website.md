@@ -4,33 +4,33 @@ description: Представляет веб-сайт.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: ebdfef4a8ee4e11c2993dbd97a735c6e01960b6b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: AAmatino
+ms.openlocfilehash: 758d802a67979c4e43aefcdb4e8a3998be15b993
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519430"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809301"
 ---
-# <a name="website-resource-type"></a><span data-ttu-id="6ef60-103">Тип ресурса веб-сайта</span><span class="sxs-lookup"><span data-stu-id="6ef60-103">website resource type</span></span>
+# <a name="website-resource-type"></a><span data-ttu-id="75151-103">Тип ресурса веб-сайта</span><span class="sxs-lookup"><span data-stu-id="75151-103">website resource type</span></span>
 
-<span data-ttu-id="6ef60-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6ef60-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="75151-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="75151-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6ef60-105">Представляет веб-сайт.</span><span class="sxs-lookup"><span data-stu-id="6ef60-105">Represents a web site.</span></span>
+<span data-ttu-id="75151-105">Представляет веб-сайт.</span><span class="sxs-lookup"><span data-stu-id="75151-105">Represents a web site.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="6ef60-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="6ef60-106">Properties</span></span>
-| <span data-ttu-id="6ef60-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="6ef60-107">Property</span></span>     | <span data-ttu-id="6ef60-108">Тип</span><span class="sxs-lookup"><span data-stu-id="6ef60-108">Type</span></span>   |<span data-ttu-id="6ef60-109">Описание</span><span class="sxs-lookup"><span data-stu-id="6ef60-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="75151-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="75151-106">Properties</span></span>
+| <span data-ttu-id="75151-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="75151-107">Property</span></span>     | <span data-ttu-id="75151-108">Тип</span><span class="sxs-lookup"><span data-stu-id="75151-108">Type</span></span>   |<span data-ttu-id="75151-109">Описание</span><span class="sxs-lookup"><span data-stu-id="75151-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6ef60-110">type</span><span class="sxs-lookup"><span data-stu-id="6ef60-110">type</span></span>|<span data-ttu-id="6ef60-111">String</span><span class="sxs-lookup"><span data-stu-id="6ef60-111">String</span></span>| <span data-ttu-id="6ef60-112">Возможные значения: `other`, `home`, `work`, `blog`, `profile`.</span><span class="sxs-lookup"><span data-stu-id="6ef60-112">Possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
-|<span data-ttu-id="6ef60-113">address</span><span class="sxs-lookup"><span data-stu-id="6ef60-113">address</span></span>|<span data-ttu-id="6ef60-114">string</span><span class="sxs-lookup"><span data-stu-id="6ef60-114">string</span></span>|<span data-ttu-id="6ef60-115">URL-адрес веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="6ef60-115">The URL of the website.</span></span>|
-|<span data-ttu-id="6ef60-116">displayName</span><span class="sxs-lookup"><span data-stu-id="6ef60-116">displayName</span></span>|<span data-ttu-id="6ef60-117">string</span><span class="sxs-lookup"><span data-stu-id="6ef60-117">string</span></span>|<span data-ttu-id="6ef60-118">Отображаемое имя веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="6ef60-118">The display name of the web site.</span></span>|
+|<span data-ttu-id="75151-110">type</span><span class="sxs-lookup"><span data-stu-id="75151-110">type</span></span>|<span data-ttu-id="75151-111">String</span><span class="sxs-lookup"><span data-stu-id="75151-111">String</span></span>| <span data-ttu-id="75151-112">Возможные значения: `other`, `home`, `work`, `blog`, `profile`.</span><span class="sxs-lookup"><span data-stu-id="75151-112">Possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
+|<span data-ttu-id="75151-113">address</span><span class="sxs-lookup"><span data-stu-id="75151-113">address</span></span>|<span data-ttu-id="75151-114">string</span><span class="sxs-lookup"><span data-stu-id="75151-114">string</span></span>|<span data-ttu-id="75151-115">URL-адрес веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="75151-115">The URL of the website.</span></span>|
+|<span data-ttu-id="75151-116">displayName</span><span class="sxs-lookup"><span data-stu-id="75151-116">displayName</span></span>|<span data-ttu-id="75151-117">string</span><span class="sxs-lookup"><span data-stu-id="75151-117">string</span></span>|<span data-ttu-id="75151-118">Отображаемое имя веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="75151-118">The display name of the web site.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6ef60-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6ef60-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="75151-119">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="75151-119">JSON representation</span></span>
 
-<span data-ttu-id="6ef60-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6ef60-120">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="75151-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="75151-120">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

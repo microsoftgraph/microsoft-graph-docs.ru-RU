@@ -4,31 +4,31 @@ description: Представляет часовой пояс. Поддержи�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 3deae74f1ffc991e6e9178a46575c21d69272d2c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 7b6e91853f595e4213b87178e87cf49fb1b64579
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519682"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806522"
 ---
-# <a name="timezoneinformation-resource-type"></a><span data-ttu-id="82bec-104">Тип ресурса timeZoneInformation</span><span class="sxs-lookup"><span data-stu-id="82bec-104">timeZoneInformation resource type</span></span>
+# <a name="timezoneinformation-resource-type"></a><span data-ttu-id="cba90-104">Тип ресурса timeZoneInformation</span><span class="sxs-lookup"><span data-stu-id="cba90-104">timeZoneInformation resource type</span></span>
 
-<span data-ttu-id="82bec-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="82bec-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cba90-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cba90-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="82bec-106">Представляет часовой пояс.</span><span class="sxs-lookup"><span data-stu-id="82bec-106">Represents a time zone.</span></span> <span data-ttu-id="82bec-107">Поддерживаются формат Windows и формат [часового пояса IANA](https://www.iana.org/time-zones), также известного как часовой пояс Олсона (после устранения известной проблемы).</span><span class="sxs-lookup"><span data-stu-id="82bec-107">The supported format is Windows, and [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format as well when the current known problem is fixed.</span></span>
+<span data-ttu-id="cba90-106">Представляет часовой пояс.</span><span class="sxs-lookup"><span data-stu-id="cba90-106">Represents a time zone.</span></span> <span data-ttu-id="cba90-107">Поддерживаются формат Windows и формат [часового пояса IANA](https://www.iana.org/time-zones), также известного как часовой пояс Олсона (после устранения известной проблемы).</span><span class="sxs-lookup"><span data-stu-id="cba90-107">The supported format is Windows, and [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format as well when the current known problem is fixed.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="82bec-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="82bec-108">Properties</span></span>
-| <span data-ttu-id="82bec-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="82bec-109">Property</span></span>     | <span data-ttu-id="82bec-110">Тип</span><span class="sxs-lookup"><span data-stu-id="82bec-110">Type</span></span>   |<span data-ttu-id="82bec-111">Описание</span><span class="sxs-lookup"><span data-stu-id="82bec-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="cba90-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="cba90-108">Properties</span></span>
+| <span data-ttu-id="cba90-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="cba90-109">Property</span></span>     | <span data-ttu-id="cba90-110">Тип</span><span class="sxs-lookup"><span data-stu-id="cba90-110">Type</span></span>   |<span data-ttu-id="cba90-111">Описание</span><span class="sxs-lookup"><span data-stu-id="cba90-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="82bec-112">alias</span><span class="sxs-lookup"><span data-stu-id="82bec-112">alias</span></span>|<span data-ttu-id="82bec-113">string</span><span class="sxs-lookup"><span data-stu-id="82bec-113">string</span></span>|<span data-ttu-id="82bec-114">Идентификатор часового пояса.</span><span class="sxs-lookup"><span data-stu-id="82bec-114">An identifier for the time zone.</span></span>|
-|<span data-ttu-id="82bec-115">displayName</span><span class="sxs-lookup"><span data-stu-id="82bec-115">displayName</span></span>|<span data-ttu-id="82bec-116">string</span><span class="sxs-lookup"><span data-stu-id="82bec-116">string</span></span>|<span data-ttu-id="82bec-117">Отображаемое имя часового пояса.</span><span class="sxs-lookup"><span data-stu-id="82bec-117">A display string that represents the time zone.</span></span>|
+|<span data-ttu-id="cba90-112">alias</span><span class="sxs-lookup"><span data-stu-id="cba90-112">alias</span></span>|<span data-ttu-id="cba90-113">string</span><span class="sxs-lookup"><span data-stu-id="cba90-113">string</span></span>|<span data-ttu-id="cba90-114">Идентификатор часового пояса.</span><span class="sxs-lookup"><span data-stu-id="cba90-114">An identifier for the time zone.</span></span>|
+|<span data-ttu-id="cba90-115">displayName</span><span class="sxs-lookup"><span data-stu-id="cba90-115">displayName</span></span>|<span data-ttu-id="cba90-116">string</span><span class="sxs-lookup"><span data-stu-id="cba90-116">string</span></span>|<span data-ttu-id="cba90-117">Отображаемое имя часового пояса.</span><span class="sxs-lookup"><span data-stu-id="cba90-117">A display string that represents the time zone.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="82bec-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="82bec-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cba90-118">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="cba90-118">JSON representation</span></span>
 
-<span data-ttu-id="82bec-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="82bec-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="cba90-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cba90-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
