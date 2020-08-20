@@ -1,24 +1,24 @@
 ---
-title: Удаление Едукатионалактивити
-description: Удаление объекта Едукатионалактивити из профиля пользователя.
+title: Удаление educationalActivity
+description: Удаление объекта educationalActivity из профиля пользователя.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 96c717171f683d2a32e62b4e79b80639e2cb5242
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: cfff22d975dbe9c54f3c4647cb07f42669a1fd9f
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810953"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819418"
 ---
-# <a name="delete-educationalactivity"></a>Удаление Едукатионалактивити
+# <a name="delete-educationalactivity"></a>Удаление educationalActivity
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [едукатионалактивити](../resources/educationalactivity.md) из [профиля](../resources/profile.md)пользователя.
+Удаление [объекта educationalActivity](../resources/educationalactivity.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "46810953"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -58,6 +58,8 @@ DELETE /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_educationalactivity"
@@ -66,6 +68,20 @@ DELETE /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

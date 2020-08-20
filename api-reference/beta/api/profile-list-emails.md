@@ -1,16 +1,16 @@
 ---
 title: Список сообщений электронной почты
-description: Получение списка объектов Итемемаил.
+description: Получение списка объектов itemEmail.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: fb2aead13e33cc04f56dd0bb8bfd691e0d58b9e0
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a3ab4f80069131904d9d619e7ddddb72c5a19511
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810757"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819471"
 ---
 # <a name="list-emails"></a>Список сообщений электронной почты
 
@@ -18,7 +18,7 @@ ms.locfileid: "46810757"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [итемемаил](../resources/itememail.md) из [профиля](../resources/profile.md)пользователя.
+Получение списка [объектов itemEmail](../resources/itememail.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "46810757"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Приложение                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,14 +41,14 @@ GET /users/{id | userPrincipalName}/profile/emails
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает указанные ниже параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 |Имя            |Значение    |Описание                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Разрешает отклик только на те объекты, которые содержат заданные условия.                                                                                             |
-|$orderby        |строка   |По умолчанию объекты в отклике сортируются по значению createdDateTime в запросе. Вы можете изменить порядок ответа с помощью параметра *$OrderBy* .|
+|$filter         |string   |Возвращает число в отклике только тех объектов, которые содержат указанные условия.                                                                                             |
+|$orderby        |строка   |По умолчанию объекты в ответе сортируются по их значению createdDateTime в запросе. Этот порядок ответа можно изменить с помощью *$orderby* параметра.|
 |$select         |string   |Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.                                        |
-|$skip           |int      |Пропустите первые n результатов, которые удобно использовать для разбиения на страницы.                                                                                                                                |
+|$skip           |int      |Пропуск первых n результатов; это удобно при разбиении результатов на страницы.                                                                                                                                |
 |$top            |int      |Количество возвращаемых результатов.                                                                                                                                           |
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -61,9 +61,9 @@ GET /users/{id | userPrincipalName}/profile/emails
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [итемемаил](../resources/itememail.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `200 OK` код отклика и коллекцию объектов [itemEmail в](../resources/itememail.md) тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -77,15 +77,15 @@ GET /users/{id | userPrincipalName}/profile/emails
 GET https://graph.microsoft.com/beta/me/profile/emails
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-emails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-personname-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-emails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-personname-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-emails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
