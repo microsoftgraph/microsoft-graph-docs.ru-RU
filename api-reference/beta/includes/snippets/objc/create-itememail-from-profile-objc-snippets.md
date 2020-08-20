@@ -1,27 +1,27 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 0b2af3f166dd5ac1cc50ede5dd5bf54c15ec854e
+ms.openlocfilehash: c6b13a536fb8236799b161731b6aef9bf8a4dd5a
 ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819606"
+ms.locfileid: "46819545"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/profile/webAccounts/{id}"]]];
-[urlRequest setHTTPMethod:@"PATCH"];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/profile/emails"]]];
+[urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphWebAccount *webAccount = [[MSGraphWebAccount alloc] init];
-[webAccount setWebUrl:@"https://github.com/innocenty.popov"];
+MSGraphItemEmail *itemEmail = [[MSGraphItemEmail alloc] init];
+[itemEmail setAddress:@"Innocenty.Popov@adventureworks.com"];
 
 NSError *error;
-NSData *webAccountData = [webAccount getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:webAccountData];
+NSData *itemEmailData = [itemEmail getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:itemEmailData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

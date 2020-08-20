@@ -1,23 +1,24 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e8f8ff9d985a22bee3bc5ec4f41b3c788a3c8336
+ms.openlocfilehash: a99e1e2e1332c5a1c7eba27d0df0d43ca953cccf
 ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819607"
+ms.locfileid: "46819809"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var webAccount = new WebAccount
+var itemPhone = new ItemPhone
 {
-    WebUrl = "https://github.com/innocenty.popov"
+    DisplayName = "Car Phone",
+    Number = "+7 499 342 22 13"
 };
 
-await graphClient.Me.Profile.WebAccounts["{id}"]
+await graphClient.Me.Profile.Phones
     .Request()
-    .UpdateAsync(webAccount);
+    .AddAsync(itemPhone);
 
 ```

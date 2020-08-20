@@ -1,27 +1,28 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 0b2af3f166dd5ac1cc50ede5dd5bf54c15ec854e
+ms.openlocfilehash: c94332e9d93e1857bbddfaba7b1679c6d085ce7f
 ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819606"
+ms.locfileid: "46819811"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/profile/webAccounts/{id}"]]];
-[urlRequest setHTTPMethod:@"PATCH"];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/profile/phones"]]];
+[urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphWebAccount *webAccount = [[MSGraphWebAccount alloc] init];
-[webAccount setWebUrl:@"https://github.com/innocenty.popov"];
+MSGraphItemPhone *itemPhone = [[MSGraphItemPhone alloc] init];
+[itemPhone setDisplayName:@"Car Phone"];
+[itemPhone setNumber:@"+7 499 342 22 13"];
 
 NSError *error;
-NSData *webAccountData = [webAccount getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:webAccountData];
+NSData *itemPhoneData = [itemPhone getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:itemPhoneData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

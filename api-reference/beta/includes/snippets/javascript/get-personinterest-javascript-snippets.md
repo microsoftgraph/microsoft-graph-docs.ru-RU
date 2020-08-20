@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: aba55282a5292a4472ce1f9647da430d534416bb
+ms.openlocfilehash: 3132c426bb7130da75d4b2bbe6cdc3901e1bf9de
 ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819605"
+ms.locfileid: "46819649"
 ---
 ```javascript
 
@@ -15,12 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-const webAccount = {
-  webUrl: "https://github.com/innocenty.popov"
-};
-
-let res = await client.api('/me/profile/webAccounts/{id}')
+let res = await client.api('/me/profile/interests/{id}')
     .version('beta')
-    .update(webAccount);
+    .get();
 
 ```
