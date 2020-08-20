@@ -1,24 +1,24 @@
 ---
-title: Создание Итемфоне
-description: Используйте этот API для создания нового Итемфоне.
+title: Создание объекта itemPhone
+description: С помощью этого API можно создать объект itemPhone.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f0d2b947c2045499f91d405ddef4eb79b39430ad
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: fcdb1c076d0fff4a3ae5bb6b49fdc77f6acb0aae
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811597"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819810"
 ---
-# <a name="create-itemphonenumber"></a>Создание Итемфоненумбер
+# <a name="create-itemphonenumber"></a>Создание объекта itemPhoneNumber
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы создать новый объект [итемфоне](../resources/itemphone.md) в [профиле](../resources/profile.md)пользователя.
+С помощью этого API можно [создать новый](../resources/itemphone.md) объект itemPhone в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "46811597"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,26 +47,28 @@ POST /users/{userId}/profile/phones
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [итемфоне](../resources/itemphone.md) в формате JSON.
+Представьте в тексте запроса описание объекта [itemPhone в формате JSON.](../resources/itemphone.md)
 
-В следующей таблице приведены свойства, которые можно задать при создании нового объекта [итемфоне](../resources/itemphone.md) в профиле пользователя.
+В приведенной ниже таблице указаны свойства, которые можно установить при создании объекта [itemPhone](../resources/itemphone.md) в профиле пользователей.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Понятное имя, назначенное пользователю для этого номера телефона. |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|число|String|Номер телефона, предоставленный пользователем.|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|type|фонетипе|Тип номера телефона в объекте. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|allowedAudiences|String|Аудитории, которые могут просматривать значения, содержащиеся в сущности. Наследуется от [itemFacet.](../resources/itemfacet.md) Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Понятное имя, назначенное пользователю на этот номер телефона. |
+|inference|[inferenceData](../resources/inferencedata.md)|Содержит подробные данные о подобных значениях, если сущность задана созданием или изменением приложения. Наследуется от [itemFacet.](../resources/itemfacet.md)|
+|число|String|Номер телефона, указанный пользователем.|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения инициированы при синхронизации из другой службы. Наследуется от [itemFacet.](../resources/itemfacet.md)|
+|type|phoneType|Тип номера телефона в объекте. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [итемфоне](../resources/itemphone.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `201 Created` код ответа [и объект itemPhone](../resources/itemphone.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_itemphone_from_"
@@ -82,6 +84,20 @@ Content-length: 382
   "number": "+7 499 342 22 13"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-itemphone-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-itemphone-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-itemphone-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

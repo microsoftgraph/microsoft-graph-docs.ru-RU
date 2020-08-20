@@ -1,21 +1,21 @@
 ---
-title: Список сертификатов
-description: Получение коллекции Персонцертификатионс из свойства навигации Certifications.
+title: Перечисление сертификатов
+description: Получение коллекции personCertifications из свойства навигации сертификации.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 22eaa430e24c7e196f49a3c72a3e92897b6e31b2
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: fd7f8196bf0b76ce16d1949d7e46c1d751a7f0db
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809736"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819354"
 ---
-# <a name="list-certifications"></a>Список сертификатов
+# <a name="list-certifications"></a>Перечисление сертификатов
 Пространство имен: microsoft.graph
 
-Получение списка объектов [персонцертификатион](../resources/personcertification.md) из [профиля](../resources/profile.md)пользователя.
+Получение списка [объектов personCertification](../resources/personcertification.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,9 +23,9 @@ ms.locfileid: "46809736"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Приложение                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,14 +40,14 @@ GET /users/{id | userPrincipalName}/profile/certifications
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает указанные ниже параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 |Имя            |Значение    |Описание                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Разрешает отклик только на те объекты, которые содержат заданные условия.                                                                                             |
-|$orderby        |строка   |По умолчанию объекты в отклике сортируются по значению createdDateTime в запросе. Вы можете изменить порядок ответа с помощью параметра *$OrderBy* .|
+|$filter         |string   |Возвращает число в отклике только тех объектов, которые содержат указанные условия.                                                                                             |
+|$orderby        |строка   |По умолчанию объекты в ответе сортируются по их значению createdDateTime в запросе. Этот порядок ответа можно изменить с помощью *$orderby* параметра.|
 |$select         |string   |Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.                                        |
-|$skip           |int      |Пропустите первые n результатов, которые удобно использовать для разбиения на страницы.                                                                                                                                |
+|$skip           |int      |Пропуск первых n результатов; это удобно при разбиении результатов на страницы.                                                                                                                                |
 |$top            |int      |Количество возвращаемых результатов.                                                                                                                                           |
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -58,9 +58,9 @@ GET /users/{id | userPrincipalName}/profile/certifications
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [персонцертификатион](../resources/personcertification.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `200 OK` код отклика и коллекцию объектов [personCertification](../resources/personcertification.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -74,15 +74,15 @@ GET /users/{id | userPrincipalName}/profile/certifications
 GET https://graph.microsoft.com/beta/me/profile/certifications
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-itemcertifications-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-itemcertifications-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-itemcertifications-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

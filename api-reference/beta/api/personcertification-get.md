@@ -1,21 +1,21 @@
 ---
-title: Получение Персонцертификатион
-description: Чтение свойств и связей объекта Персонцертификатион.
+title: Получение personCertification
+description: Чтение свойств и связей объекта personCertification.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: dcff70295646bb5b668dc4a14e5547b7c58daa07
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: af3bc004cec2fae525e655c3b10c8e553db961b1
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46813171"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819682"
 ---
-# <a name="get-personcertification"></a>Получение Персонцертификатион
+# <a name="get-personcertification"></a>Получение personCertification
 Пространство имен: microsoft.graph
 
-Чтение свойств и связей объекта [персонцертификатион](../resources/personcertification.md) в [профиле](../resources/profile.md)пользователя.
+Чтение свойств и связей [объекта personCertification](../resources/personcertification.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,9 +23,9 @@ ms.locfileid: "46813171"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Приложение                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/profile/certifications/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми. Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.
+Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, включаемых в ответ, разделяя их запятыми. Для оптимальной производительности выбирайте только необходимые свойства.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -50,9 +50,9 @@ GET /users/{id | userPrincipalName}/profile/certifications/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [персонцертификатион](../resources/personcertification.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `200 OK` код ответа [и объект personCertification](../resources/personcertification.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -67,15 +67,15 @@ GET /users/{id | userPrincipalName}/profile/certifications/{id}
 GET https://graph.microsoft.com/beta/me/profile/certifications/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-personcertification-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-personcertification-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-personcertification-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

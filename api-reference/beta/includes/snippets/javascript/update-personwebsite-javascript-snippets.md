@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: aba55282a5292a4472ce1f9647da430d534416bb
+ms.openlocfilehash: bf83557267af715e32ff4fc6cea732611f5ba39e
 ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819605"
+ms.locfileid: "46819853"
 ---
 ```javascript
 
@@ -15,12 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-const webAccount = {
-  webUrl: "https://github.com/innocenty.popov"
+const personWebsite = {
+  description: "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway"
 };
 
-let res = await client.api('/me/profile/webAccounts/{id}')
+let res = await client.api('/me/profile/websites/{id}')
     .version('beta')
-    .update(webAccount);
+    .update(personWebsite);
 
 ```
