@@ -1,25 +1,25 @@
 ---
-title: Список teamsApp
-description: 'Перечисление приложений из каталога приложений Microsoft Teams. '
+title: Перечисление объектов teamsApp
+description: 'Список приложений из каталога приложений Microsoft Teams. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3fa9e49c35101cd151b18c4af9066d371b729bfc
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c0948dcc2545a30480188741e1ca622c9acbde35
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806306"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819999"
 ---
-# <a name="list-teamsapp"></a>Список teamsApp
+# <a name="list-teamsapp"></a>Перечисление объектов teamsApp
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечисление [приложений](../resources/teamsapp.md) из каталога приложений Microsoft Teams.
-Сюда входят приложения из магазина Microsoft Teams, а также приложения из каталога приложений организации (Каталог приложений клиента). Чтобы получить доступ к приложениям только из каталога приложений вашей организации, укажите в `organization` качестве **distributionMethod** в запросе.
+Список [приложений](../resources/teamsapp.md) из каталога приложений Microsoft Teams.
+Сюда входят приложения из магазина Microsoft Teams, а также приложения из каталога приложений организации (каталога приложений клиента). Чтобы получать приложения только из каталога приложений организации, укажите `organization` **в качестве метода distributionMethod** в запросе.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "46806306"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | CamlQuery. Read. ALL, CamlQuery. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
 | Для приложений                            | Не поддерживается. |
 
@@ -43,9 +43,9 @@ GET /appCatalogs/teamsApps
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter`, `$select` и `$expand` для настройки отклика.
 
-Использование `$expand=AppDefinitions` возвращает дополнительные сведения о состоянии приложения, такие как **публишингстате**, которое отражает состояние проверки отправки приложения и возвращает сведения о том, утверждено ли приложение, отклонено или находится в процессе рассмотрения. 
+При использовании возвращается дополнительная информация о состоянии приложения, например `$expand=AppDefinitions` **publishingState,** отражающем состояние проверки отправки приложения и возвращает сведения об утверждении, отклонении или остальном отзыве приложения. 
 
-> **Примечание:** Можно выполнить фильтрацию по любому полю объекта [teamsApp](../resources/teamsapp.md) для сокращения списка результатов. Вы можете использовать любую из следующих операций фильтрации: EQUAL, Not Equals, and, OR и not.
+> **Примечание.** Вы можете отфильтровать любое из полей [объекта teamsApp,](../resources/teamsapp.md) чтобы сократить список результатов. Можно использовать любую из следующих операций фильтрации: равное, не равно или нет.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -57,15 +57,15 @@ GET /appCatalogs/teamsApps
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список объектов [teamsApp](../resources/teamsapp.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `200 OK` код ответа и список [объектов teamsApp](../resources/teamsapp.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-applications-in-a-tenant"></a>Пример 1: список всех приложений в клиенте
+### <a name="example-1-list-all-applications-in-a-tenant"></a>Пример 1. Список всех приложений в клиенте
 
-В приведенном ниже примере выводится список всех приложений, относящихся к вашему клиенту.
+В следующем примере выводится список всех приложений, характерных для вашего клиента.
 
 #### <a name="request"></a>Запрос
 
@@ -122,9 +122,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-list-applications-with-a-given-id"></a>Пример 2: список приложений с заданным ИДЕНТИФИКАТОРом
+### <a name="example-2-list-applications-with-a-given-id"></a>Пример 2. Перечисление приложений с данным идентификатором
 
-В следующем примере перечисляются приложения с указанным ИДЕНТИФИКАТОРом.
+В следующем примере перечисляются приложения с заданным идентификатором.
 
 #### <a name="request"></a>Запрос
 
@@ -179,20 +179,36 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Пример 3: перечисление приложений с заданным ИДЕНТИФИКАТОРом и возврат состояния проверки отправки
+### <a name="example-3-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Пример 3. Перечисление приложений с данным идентификатором и возвращение состояния проверки отправки
 
-В приведенном ниже примере перечисляются приложения с заданным ИДЕНТИФИКАТОРом, а затем **аппдефинитионс** возвращается значение **публишингстате**, которое отражает состояние проверки отправки приложения. `Submitted` означает, что проверка находится в состоянии ожидания, `published` означает, что приложение было утверждено администратором и `rejected` означает, что оно было отклонено администратором.
+В следующем примере перечислены приложения с заданным идентификатором и **расширение appDefinitions** для **возвращения publishingState,** что отражает состояние проверки отправки приложения. `Submitted` означает, что отзыв ожидал, означает, что приложение было утверждено `published` администратором, а также отклонено `rejected` приложением администратором.
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp"
 }-->
 
-```http
+```msgraph-interactive
 GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

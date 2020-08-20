@@ -1,22 +1,22 @@
 ---
 title: Создание патентов
-description: Создание нового объекта патентов.
+description: Создание объекта patents.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 193b0d9626ae94c807e2aeb50193ce2a4ed30de5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8345de1ca41dfd5e338b77c667ef06ae4b3bf31c
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46813153"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46820301"
 ---
-# <a name="create-itempatent"></a>Создание Итемпатент
+# <a name="create-itempatent"></a>Создание itemPatent
 
 Пространство имен: microsoft.graph
 
-Создайте новый объект [итемпатент](../resources/itempatent.md) в [профиле](../resources/profile.md)пользователя.
+Создание объекта [itemPatent](../resources/itempatent.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "46813153"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,26 +45,26 @@ POST /users/{id | userPrincipalName}/profile/patents
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [итемпатент](../resources/itempatent.md) в формате JSON.
+Представьте в тексте запроса описание объекта [itemPatent в формате](../resources/itempatent.md) JSON.
 
-В следующей таблице приведены свойства, которые можно задать при создании нового объекта [итемпатент](../resources/itempatent.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно установить при создании нового [объекта itemPatent](../resources/itempatent.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Дескприптион патента или для хранения. |
-|displayName|String|Название патента или его для архивации. |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|Ожидается        |Логический     |Указывает, что патент находится в состоянии ожидания.        |
-|иссуеддате       |Дата        |Дата предоставления патента.   |
-|иссуингаусорити |String      |Центр сертификации, который предоставил патент.     |
-|число           |String      |Номер патента.                      |
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|webUrl           |String      |URL-адрес, ссылающийся на патент или в систему архивации. |
+|allowedAudiences|String|Аудитории, которые могут просматривать значения, содержащиеся в сущности. Наследуется от [itemFacet.](../resources/itemfacet.md) Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|String|Почерк и сокращение патентов. |
+|displayName|String|Название патента или филинга. |
+|inference|[inferenceData](../resources/inferencedata.md)|Содержит подробные данные о подобных значениях, если сущность задана созданием или изменением приложения. Наследуется от [itemFacet.](../resources/itemfacet.md)|
+|isPending        |Boolean     |Означает патант утилю на ожидании.        |
+|issuedDate       |Дата        |Дата предоставления патента.   |
+|issuingAuthority |String      |Центр, получивший патент.     |
+|число           |String      |Patent number.                      |
+|source|[personDataSource](../resources/persondatasource.md)|Где значения инициированы при синхронизации из другой службы. Наследуется от [itemFacet.](../resources/itemfacet.md)|
+|webUrl           |String      |URL-адрес ссылается на патент или финансовое указание. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [итемпатент](../resources/itempatent.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код `201 Created` отклика [и объект itemPatent](../resources/itempatent.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -88,15 +88,15 @@ Content-length: 497
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-itempatent-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-itempatent-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-itempatent-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

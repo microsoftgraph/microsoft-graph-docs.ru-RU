@@ -5,17 +5,17 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9a97a1219a1d98b4fdd456ac24e4ac78a1b5920e
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 662b25f18734ed47cd2fb89fce90d04957429830
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809744"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46820248"
 ---
-# <a name="create-personcertification"></a>Создание Персонцертификатион
+# <a name="create-personcertification"></a>Создание personCertification
 Пространство имен: microsoft.graph
 
-Создание нового объекта [персонцертификатион](../resources/personcertification.md) в [профиле](../resources/profile.md)пользователя.
+Создание объекта [personCertification](../resources/personcertification.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,8 +23,8 @@ ms.locfileid: "46809744"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,29 +44,29 @@ POST /users/{id | userPrincipalName}/profile/certifications
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [персонцертификатион](../resources/personcertification.md) в формате JSON.
+В теле запроса добавьте представление объекта [personCertification в формате](../resources/personcertification.md) JSON.
 
-В следующей таблице приведены свойства, которые можно задать при создании нового объекта [персонцертификатион](../resources/personcertification.md) в [профиле](../resources/profile.md)пользователя.
+В таблице ниже приведены свойства, которые можно установить при создании объекта [personCertification](../resources/personcertification.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|цертификатионид  |String      |Справочный идентификатор для сертификации. |
-|description      |String      |Описание сертификата.                   |
-|displayName      |String      |Название сертификата.                         |
-|endDate          |Date        |Дата истечения срока действия сертификата.            |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|иссуеддате       |Дата        |Дата выдачи сертификата.         |
-|иссуингаусорити |String      |Центр сертификации, который предоставил сертификат.          |
-|иссуингкомпани   |String      |Центр сертификации, который предоставил сертификат.          |
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|startDate        |Date        |Дата, когда сертификация стала действительна.       |
-|thumbnailUrl     |String      |URL-адрес, ссылающийся на эскиз сертификата.   |
-|webUrl           |String      |URL-адрес, ссылающийся на сертификат.                  |
+|allowedAudiences|String|Аудитории, которые могут просматривать значения, содержащиеся в сущности. Наследуется от [itemFacet.](../resources/itemfacet.md) Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|certificationId  |String      |Указывает на идентификатор для сертификации. |
+|description      |String      |Описание сертификации.                   |
+|displayName      |String      |Название сертификации.                         |
+|endDate          |Date        |Дата окончания срока действия сертификации.            |
+|inference|[inferenceData](../resources/inferencedata.md)|Содержит подробные данные о подобных значениях, если сущность задана созданием или изменением приложения. Наследуется от [itemFacet.](../resources/itemfacet.md)|
+|issuedDate       |Дата        |Дата выпуска сертификации.         |
+|issuingAuthority |String      |Центр сертификации, который предоставил сертификат.          |
+|issuingCompany   |String      |Центр сертификации, который предоставил сертификат.          |
+|source|[personDataSource](../resources/persondatasource.md)|Где значения инициированы при синхронизации из другой службы. Наследуется от [itemFacet.](../resources/itemfacet.md)|
+|startDate        |Date        |Дата начала сертификации.       |
+|thumbnailUrl     |String      |URL-адрес ссылается на эскиз сертификации.   |
+|webUrl           |String      |URL-адрес, ссылающиеся на сертификацию.                  |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [персонцертификатион](../resources/personcertification.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `201 Created` код ответа [и объект personCertification](../resources/personcertification.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -90,15 +90,15 @@ Content-length: 497
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-personcertification-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-personcertification-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-personcertification-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

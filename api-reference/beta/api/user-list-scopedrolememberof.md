@@ -1,24 +1,24 @@
 ---
-title: Список Скопедадминистратороф
-description: Получение списка Scopedrolemembership изменен для пользователя.
+title: Перечисление scopedAdministratorOf
+description: Получение списка scopedRoleMembership для пользователя.
 author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 48b8412b8646cb6daa9d802bd48a966e7d12c58a
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 31b06e1f49833241f6a6f50e610b9286e0418edf
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107579"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46820276"
 ---
-# <a name="list-scopedadministratorof"></a>Список Скопедадминистратороф
+# <a name="list-scopedadministratorof"></a>Перечисление scopedAdministratorOf
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [scopedrolemembership изменен](../resources/scopedrolemembership.md) для пользователя.
+Получение списка [scopedRoleMembership](../resources/scopedrolemembership.md) для пользователя.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -32,8 +32,8 @@ ms.locfileid: "43107579"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/scopedAdministratorOf
-GET /users/{id}/scopedAdministratorOf
+GET /me/scopedRoleMemberOf 
+GET /users/{id}/scopedRoleMemberOf
 
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -44,12 +44,12 @@ GET /users/{id}/scopedAdministratorOf
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [scopedrolemembership изменен](../resources/scopedrolemembership.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код `200 OK` ответа и [коллекцию объектов scopedRoleMembership](../resources/scopedrolemembership.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -60,7 +60,7 @@ GET /users/{id}/scopedAdministratorOf
   "name": "get_scopedadministratorof"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/scopedAdministratorOf
+GET https://graph.microsoft.com/beta/me/scopedRoleMemberOf
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedadministratorof-csharp-snippets.md)]
