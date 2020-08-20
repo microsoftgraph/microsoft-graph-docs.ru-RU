@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 026da245e2d1be835b06275684cb9329d3070df7
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: b602111dc9ea434b0d7745f066993e17e6f273bb
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997226"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821071"
 ---
 ```objc
 
@@ -17,12 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphPersonName *personName = [[MSGraphPersonName alloc] init];
-[personName setDisplayName:@"displayName-value"];
-[personName setFirst:@"first-value"];
-[personName setInitials:@"initials-value"];
-[personName setLast:@"last-value"];
-[personName setLanguageTag:@"languageTag-value"];
-[personName setMaiden:@"maiden-value"];
+[personName setNickname:@"Kesha"];
 
 NSError *error;
 NSData *personNameData = [personName getSerializedDataWithError:&error];

@@ -1,4 +1,3 @@
-name: Документация по Graph
 metadata:
   experimental: true
   experiment_id: b8938daf-1bcb-4f
@@ -188,7 +187,7 @@ items:
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
       - name: Финансовые показатели (предварительная версия)
         href: dynamics-business-central-concept-overview.md
-        displayname: 'Dynamics, Dynamics 365 Business Central'
+        displayName: 'Dynamics, Dynamics 365 Business Central'
       - name: Удостоверение и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
@@ -439,7 +438,7 @@ items:
               - name: Получение изменений для пользователей (пример)
                 href: delta-query-users.md
           - name: Добавление пользовательских данных
-            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            displayName: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
             items:
               - name: Обзор
                 href: extensibility-overview.md
@@ -453,7 +452,7 @@ items:
         expanded: false
         items:
           - name: Azure AD Graph
-            displayname: 'Migration, Azure AD Graph'
+            displayName: 'Migration, Azure AD Graph'
             items:
               - name: Обзор
                 href: migrate-azure-ad-graph-overview.md
@@ -561,6 +560,6 @@ items:
           - name: Ошибки
             href: errors.md
       - name: Справочник по версии 1.0
-        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+        href: /graph/api/overview?view=graph-rest-1.0
       - name: Документация для бета-версий
-        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
+        href: /graph/api/overview?view=graph-rest-beta
