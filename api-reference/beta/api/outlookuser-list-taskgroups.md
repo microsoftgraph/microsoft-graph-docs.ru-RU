@@ -1,26 +1,29 @@
 ---
-title: Список taskGroups
+title: Перечисление объектов taskGroups
 description: Получение всех групп задач Outlook в почтовом ящике пользователя.
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9b53fc7c6e5dbbb4dd705bf41a2b6c4e4a8ceee6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e5dd844356b83005dd8df9d7e9b4ce52c8baa4e3
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467990"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849224"
 ---
-# <a name="list-taskgroups"></a>Список taskGroups
+# <a name="list-taskgroups"></a>Перечисление объектов taskGroups
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
 Получение всех групп задач Outlook в почтовом ящике пользователя.
 
-Ответ всегда включает группу `My Tasks`задач по умолчанию и все остальные группы задач, созданные в почтовом ящике.
+Отклик всегда включает в себя группу задач `My Tasks` по умолчанию и все другие группы задач, созданные в почтовом ящике.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -44,12 +47,12 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `200 OK` код ответа и коллекцию объектов [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

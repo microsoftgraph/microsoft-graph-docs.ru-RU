@@ -1,16 +1,16 @@
 ---
 title: Список вложений
-description: Получение списка объектов вложений, вложенных в задачу Outlook.
+description: Получение списка объектов attachment, вложенных в задачу Outlook.
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 13c989da0a0553f3991abf9fd0aa8fd4159d9da6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 301db2de06a6f96e23379f2487b5c9002546582d
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413754"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849698"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -18,7 +18,10 @@ ms.locfileid: "43413754"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [вложений](../resources/attachment.md) , вложенных в задачу Outlook.
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
+Получение списка объектов [attachment,](../resources/attachment.md) вложенных в задачу Outlook.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,13 +52,13 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [вложений](../resources/attachment.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `200 OK` код отклика и [коллекцию объектов attachment](../resources/attachment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

@@ -1,16 +1,16 @@
 ---
 title: Создание вложения
-description: Используйте этот API, чтобы добавить вложение в объект outlookTask.
+description: С помощью этого API можно добавить вложение в элемент outlookTask.
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a0d51d32c14ed3cdd2394f7b412078e7312c1e00
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 3dc0ab4e62844bf565cdff834e57ba9843d30873
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510877"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849676"
 ---
 # <a name="create-attachment"></a>Создание вложения
 
@@ -18,7 +18,10 @@ ms.locfileid: "43510877"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы добавить [вложение](../resources/attachment.md) в объект [outlookTask](../resources/outlooktask.md). Вложение может представлять собой файл (из типа [fileAttachment](../resources/fileattachment.md) ) или элемент Outlook (тип[itemAttachment](../resources/itemattachment.md) ).
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
+С помощью этого API можно [добавить вложение](../resources/attachment.md) в [outlookTask.](../resources/outlooktask.md) Допустимые значения: файл (с [типом fileAttachment)](../resources/fileattachment.md) или элемент Outlook[(тип itemAttachment).](../resources/itemattachment.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,9 +47,9 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Content-Type | Строка, представляющая тип данных в теле объекта. Обязательно. |
+| Content-Type | Строка, представляющая тип данных в теле сущности. Обязательный элемент. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.
 
@@ -56,7 +59,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-add-file-attachment"></a>Пример 1: Добавление вложенного файла 
+### <a name="example-1-add-file-attachment"></a>Пример 1. Добавление вложенного файла 
 
 #### <a name="request"></a>Запрос
 
@@ -123,11 +126,11 @@ HTTP 201 Created
 }
 ```
 
-### <a name="example-2-add-item-attachment"></a>Пример 2: Добавление вложения элемента
+### <a name="example-2-add-item-attachment"></a>Пример 2. Добавление вложенного элемента
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример, в котором присоединяется событие с другим событием в качестве вложения элемента.
+Ниже приведен пример, в котором событие прикрепляется к другому событию в виде вложения.
 
 <!-- {
   "blockType": "ignored",
@@ -161,7 +164,7 @@ Content-type: application/json
 ```
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

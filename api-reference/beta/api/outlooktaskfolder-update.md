@@ -1,26 +1,29 @@
 ---
-title: Обновление outlooktaskfolder
-description: Обновление свойств, доступных для записи, папки задач Outlook.
+title: Обновление объекта outlooktaskfolder
+description: Обновление записываемых свойств папки задач Outlook.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ca2b8ec85c944ac1eea383e107d363525d44ed31
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 948f633ae43d32a16322e60ad2cdf497642af828
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389586"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849739"
 ---
-# <a name="update-outlooktaskfolder"></a>Обновление outlooktaskfolder
+# <a name="update-outlooktaskfolder"></a>Обновление объекта outlooktaskfolder
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств, доступных для записи, папки задач Outlook.
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
-Вы не можете изменить значение свойства **Name** папки задач по умолчанию, "задачи".
+
+Обновление записываемых свойств папки задач Outlook.
+
+Невозможно изменить значение свойства **name** папки задач по умолчанию , Tasks.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -43,19 +46,19 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 |:-----------|:-----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|String|Имя папки задач.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `200 OK` код ответа и обновленный [объект outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере показано изменение имени указанной папки задач на `Charity work`.
+В следующем примере имя указанной папки задач изменяется на `Charity work` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

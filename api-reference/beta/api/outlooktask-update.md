@@ -1,28 +1,31 @@
 ---
-title: Обновление outlooktask
-description: Изменение свойств для записи в задаче Outlook.
+title: Обновление объекта outlooktask
+description: Изменение записываемых свойств задачи Outlook.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cc311b0e95e33dd189908d7bbec8fa9d57fd0282
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 55aa1216a2f1d0f2aac5257063525dadac98d3f6
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413596"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849683"
 ---
-# <a name="update-outlooktask"></a>Обновление outlooktask
+# <a name="update-outlooktask"></a>Обновление объекта outlooktask
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Изменение свойств для записи в задаче Outlook.
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
-Свойство **комплетеддатетиме** может быть задано **полным** действием или явным образом с помощью операции patch. Если вы используете патч для установки **комплетеддатетиме**, убедитесь, что вы также установили **состояние** `completed` .
 
-По умолчанию эта операция (а также операции POST, GET и [Complete](../api/outlooktask-complete.md) ) Возвращает свойства, связанные с датами, в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
+Изменение записываемых свойств задачи Outlook.
+
+Свойство **completedDateTime** может быть установлено действием **полного** действия или явно с помощью операции PATCH. При использовании операции PATCH для **установки значения completedDateTime**необходимо также **установить** `completed` состояние.
+
+По умолчанию эта операция (и операции POST, GET и [завершения](../api/outlooktask-complete.md) задач) возвращает связанные с датами свойства в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,9 +51,9 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в ответе, который будет быть указан в формате UTC, если этот заголовок не указан. Необязательное свойство.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
@@ -63,11 +66,11 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 |createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе, когда задача должна быть завершена.|
 |hasAttachments|Boolean|Присвоено значение true, если у задачи есть вложения.|
-|importance|строка|Важность события. Возможные значения: `low`, `normal`, `high`.|
+|importance|string|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Присвоено значение true, если установлено напоминание пользователю о задаче.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |owner|String|Имя пользователя, создавшего задачу.|
-|parentFolderId|Строка|Уникальный идентификатор родительской папки задачи.|
+|parentFolderId|String|Уникальный идентификатор родительской папки задачи.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Расписание повторения задачи.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время появления напоминания о задаче.|
 |sensitivity|string|Указывает уровень конфиденциальности для задачи. Возможные значения: `normal`, `personal`, `private`, `confidential`.|
@@ -75,15 +78,15 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 |status|string|Указывает состояние или ход выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |subject|String|Краткое описание или название задачи.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTask](../resources/outlooktask.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `200 OK` код ответа и обновленный [объект outlookTask](../resources/outlooktask.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-В примере ниже показано, как изменить свойство **дуедатетиме** и использовать `Prefer: outlook.timezone` заголовок, чтобы указать свойства, связанные с датами, в ответе на зимнее стандартное время (EST).
+В следующем примере изменяется **свойство dueDateTime** и используется заголовок для указания `Prefer: outlook.timezone` свойств, связанных с датой, в ответе восток азиатско-восток (EST).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

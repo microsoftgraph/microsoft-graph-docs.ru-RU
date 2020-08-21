@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: 6774991b2fc117ff35d1d209e2a12f89e7284795
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6c062ac3e832c2ce0385c4851330d5320ca34af9
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472224"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849501"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
@@ -18,11 +18,13 @@ ms.locfileid: "43472224"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вы можете добавить связанное содержимое для [события](../resources/event.md)пользователя, [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [записи](../resources/post.md) группы в виде вложения. 
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
+Вы можете добавить связанное [message](../resources/message.md)содержимое в [события пользователя, сообщение,](../resources/event.md) [задачу Outlook или](../resources/outlooktask.md)запись в группе [в](../resources/post.md) виде вложения. 
 
 События в календарях группы не поддерживают вложения.
 
-Задачи Outlook не поддерживают справочные вложения.
+Задачи Outlook не поддерживают ссылочные вложения.
 
 **attachment** — базовый ресурс для следующих производных типов вложений:
 
@@ -30,9 +32,9 @@ ms.locfileid: "43472224"
 * элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md));
 * ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).
 
->**Note**: ограничен размер вложения файла или элемента, который можно добавить в пределах 4 МБ. 
+>**Примечание.** Существует ограничение размера файла или вложенного элемента, который можно добавить не более 4 МБ. 
 >
-> Однако при присоединении к сообщению файла, который находится в диапазоне от 3 МБ и 150MB, вы можете [создать сеанс отправки](../api/attachment-createuploadsession.md) и итеративно отправлять диапазоны файлов, чтобы присоединить их. В этом примере показано, как [прикрепить большие файлы к сообщениям Outlook](/graph/outlook-large-attachments) .
+> Но если в сообщение вкладывается файл размером от 3 до 150 МБ, [вы](../api/attachment-createuploadsession.md) можете создать сеанс отправки и итеративно отправлять диапазоны файла, чтобы вложить его. Пример [см. в разделе, посвященный крупных файлам](/graph/outlook-large-attachments) outlook, вложенные в сообщения Outlook.
 
 ## <a name="methods"></a>Методы
 
@@ -40,17 +42,17 @@ ms.locfileid: "43472224"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение вложения](../api/attachment-get.md) | [attachment](attachment.md) |Чтение свойств, связей или необработанного содержимого вложения, вложенного в пользовательское событие, сообщение, задачу Outlook или POST.|
+|[Получение вложения](../api/attachment-get.md) | [attachment](attachment.md) |Чтение свойств, связей или необработанного содержимого объекта, которое было вложено к пользовательскому событию, сообщению, задаче Outlook или записи.|
 |[Добавление вложения в пользовательское событие](../api/event-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или вложения-ссылки в качестве события в пользовательском календаре.|
-|[Добавление вложения в сообщение](../api/message-post-attachments.md) | [attachment](attachment.md) |Добавление в сообщение файла, элемента или ссылки в качестве вложения. Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.|
-|[Создание сеанса для присоединения большого файла](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Создайте сеанс отправки, который позволяет приложению итеративно отправлять диапазоны файлов, чтобы прикрепить файл к указанному **сообщению**. Размер файла должен быть в пределах 3 МБ и 150MB.|
-|[Добавление вложения к задаче Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Добавление вложенного файла или элемента к задаче Outlook.|
-|[Добавление вложения в запись](../api/post-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или ссылки на вложение в группу POST.|
+|[Добавление вложения в сообщение](../api/message-post-attachments.md) | [attachment](attachment.md) |Добавление в сообщение файла, элемента или ссылки в качестве вложения. Эта операция ограничивает размер добавляемого вложения в размере не более 4 МБ.|
+|[Создание сеанса для вложения большого файла](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Создать сеанс отправки, позволяющий приложению выполнять итеративную отправку диапазонов файла, например, вложенный файл в указанное **сообщение.** Размер файла должен быть от 3 до 150 МБ.|
+|[Добавление вложения в задачу Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Добавление вложенного файла или элемента в задачу Outlook.|
+|[Добавление вложения в запись](../api/post-post-attachments.md) | [attachment](attachment.md) |Добавление в запись группы файла, элемента или ссылки в качестве вложения.|
 |[Список вложений пользовательского события](../api/event-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для события в пользовательском календаре. |
 |[Список вложений для сообщения](../api/message-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для сообщения. |
 |[Список вложений задачи Outlook](../api/outlooktask-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для задачи Outlook. |
-|[Список вложений для записи](../api/post-list-attachments.md) | Коллекция [attachment](attachment.md) | Получение списка вложений для записи. |
-|[Удаление](../api/attachment-delete.md) | Нет |Удаление вложения для события, сообщения, задачи Outlook или POST. |
+|[Список вложений для записи](../api/post-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для записи. |
+|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта, прикрепка к сообщению, задаче Outlook или записи для события. |
 
 ## <a name="properties"></a>Свойства
 
@@ -59,7 +61,7 @@ ms.locfileid: "43472224"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |contentType|String|Тип MIME.|
-|id|Строка| Только для чтения.|
+|id|String| Только для чтения.|
 |isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |имя|String|Отображаемое имя вложения. Он может не быть фактическим именем файла.|

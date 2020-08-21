@@ -5,18 +5,20 @@ author: mashriv
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 45321b95596f5156cc1747a4127cbd815be50674
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: f580c9d39ad9252cc94274c50e6c2dfca704ceff
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123696"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849585"
 ---
 # <a name="outlooktask-resource-type"></a>Тип ресурса outlookTask
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 Элемент Outlook, который может отслеживать рабочий элемент.
 

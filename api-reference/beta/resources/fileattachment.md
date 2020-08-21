@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса fileAttachment
-description: Файл (например, текстовый файл или документ Word), присоединенный к событию,
+description: Файл (например, текстовый файл или документ Word), вложенный в событие,
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: 9eb0d5e3a40c27e4f7b7b6662d7ae0b8e3bcef93
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 770cb2750df46243d6050832feeca301549b2c76
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460233"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849489"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
@@ -18,7 +18,9 @@ ms.locfileid: "43460233"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Файл (например, текстовый файл или документ Word), присоединенный к пользовательскому [событию](../resources/event.md), [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или [POST](../resources/post.md). 
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
+Файл (например, текстовый файл или документ Word), вложенный в [событие](../resources/event.md)пользователя, [сообщение,](../resources/message.md) [задачу Outlook](../resources/outlooktask.md)или [запись.](../resources/post.md) 
 
 При создании вложенного файла включите в текст запроса следующее:
 
@@ -44,7 +46,7 @@ ms.locfileid: "43460233"
 |contentId|String|Идентификатор вложения в хранилище Exchange.|
 |contentLocation|String|Не используйте это свойство, так как оно не поддерживается.|
 |contentType|String|Тип контента этого вложения.|
-|id|Строка|Идентификатор вложения.|
+|id|String|Идентификатор вложения.|
 |isInline|Boolean|Задано значение true, если это встроенное вложение.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения вложения.|
 |name|String|Имя, представляющее текст, который отображается под значком, представляющим внедренное вложение. Оно может не быть фактическим именем файла.|

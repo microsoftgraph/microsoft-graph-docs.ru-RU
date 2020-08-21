@@ -1,22 +1,25 @@
 ---
-title: Получение outlookTaskFolder
+title: Get outlookTaskFolder
 description: Получение свойств и связей указанной папки задач Outlook.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7b34ea469df9f545dfaeaac02cd3077d23e4252e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1332f59c26a78cb7c536e5f8f0a0aa93e7c8360e
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413533"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849648"
 ---
-# <a name="get-outlooktaskfolder"></a>Получение outlookTaskFolder
+# <a name="get-outlooktaskfolder"></a>Get outlookTaskFolder
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Получение свойств и связей указанной папки задач Outlook.
 ## <a name="permissions"></a>Разрешения
@@ -44,12 +47,12 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `200 OK` код ответа [и объект outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

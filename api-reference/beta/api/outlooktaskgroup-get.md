@@ -1,22 +1,25 @@
 ---
-title: Получение outlookTaskGroup
+title: Get outlookTaskGroup
 description: Получение свойств и связей указанной группы задач Outlook.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: adcb583df01aa25d0927e595b37fe09d56b3fbbb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 227de23959539187159abd92fcb1e1588419c9d4
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408388"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849281"
 ---
-# <a name="get-outlooktaskgroup"></a>Получение outlookTaskGroup
+# <a name="get-outlooktaskgroup"></a>Get outlookTaskGroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Получение свойств и связей указанной группы задач Outlook.
 ## <a name="permissions"></a>Разрешения
@@ -42,12 +45,12 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `200 OK` код ответа [и объект outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

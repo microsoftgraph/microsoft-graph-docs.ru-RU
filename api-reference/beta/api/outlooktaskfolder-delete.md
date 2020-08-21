@@ -1,22 +1,25 @@
 ---
-title: Удаление outlookTaskFolder
+title: Delete outlookTaskFolder
 description: Удаление указанной папки задач Outlook.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7738f51788f417284db5bb11f72a2dc845f76e83
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8e5517f61327ff26e9e84fdb93faf5be40e1a1d3
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403212"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849704"
 ---
-# <a name="delete-outlooktaskfolder"></a>Удаление outlookTaskFolder
+# <a name="delete-outlooktaskfolder"></a>Delete outlookTaskFolder
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Удаление указанной папки задач Outlook.
 ## <a name="permissions"></a>Разрешения
@@ -41,10 +44,10 @@ DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 

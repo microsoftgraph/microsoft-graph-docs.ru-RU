@@ -5,93 +5,93 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3fe3fea58f57ea2ba977b3d913c2e90051058046
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 06e117900adca3dd12a31e222a98bda58969621e
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806620"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849515"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
 Пространство имен: microsoft.graph
 
-### <a name="allowedaudiences-values"></a>значения Алловедаудиенцес
+### <a name="allowedaudiences-values"></a>Значения allowedAudiences
 
 |Элемент|
 |:---|
 |me|
-|системами|
+|family|
 |contacts|
-|граупмемберс|
-|organization|
-|федератедорганизатионс|
-|просматривающи|
+|groupMembers|
+|organization;|
+|federatedOrganizations|
+|everyone|
 |unknownFutureValue|
 
-### <a name="emailtype-values"></a>значения Емаилтипе
+### <a name="emailtype-values"></a>Значения объекта emailType
 
 |Элемент|
 |:---|
 |unknown|
 |work|
 |personal|
-|рабочую|
-|остальные|
+|main|
+|other|
 
-### <a name="anniversarytype-values"></a>значения Анниверсаритипе 
-
-|Элемент|
-|:---|
-|birthday;|
-|свадеб|
-|unknownFutureValue|
-
-### <a name="skillproficiencylevel-values"></a>значения СкиллпрофиЦиенцилевел 
+### <a name="anniversarytype-values"></a>Значения anniversaryType 
 
 |Элемент|
 |:---|
-|Элементар|
-|лимитедворкинг|
-|женералпрофессионал|
-|адванцедпрофессионал|
-|квалифицирован|
+|birthday|
+|wedding|
 |unknownFutureValue|
 
-### <a name="languageproficiencylevel-values"></a>значения ЛангуажепрофиЦиенцилевел 
+### <a name="skillproficiencylevel-values"></a>Значения skillProficiencyLevel 
 
 |Элемент|
 |:---|
-|Элементар|
-|разговорному|
-|лимитедворкинг|
-|профессионалворкинг|
-|фуллпрофессионал|
-|нативеорбилингуал|
+|elementary|
+|limitedWorking|
+|generalProfessional|
+|advancedProfessional|
+|expert|
 |unknownFutureValue|
 
-### <a name="personrelationship-values"></a>значения Персонрелатионшип 
+### <a name="languageproficiencylevel-values"></a>Значения languageProficiencyLevel 
+
+|Элемент|
+|:---|
+|elementary|
+|conversational|
+|limitedWorking|
+|professionalWorking|
+|fullProfessional|
+|nativeOrBilingual|
+|unknownFutureValue|
+
+### <a name="personrelationship-values"></a>Значения свойства personRelationship 
 
 |Элемент|
 |:---|
 |manager|
-|передачи|
+|коллега|
 |directReport|
-|дотлинерепорт|
-|Помощник по|
-|дотлинеманажер|
-|алтернатеконтакт|
-|специалист|
-|супруги|
-|узлом|
-|ребенка|
+|dotLineReport|
+|assistant|
+|dotLineManager|
+|alternateContact|
+|friend|
+|spouse|
+|сигнал|
+|child|
 |родитель|
-|Спонсор|
-|емерженциконтакт|
-|остальные|
+|sponsor|
+|emergencyContact|
+|other|
 |unknownFutureValue|
 
-### <a name="attachmenttype-values"></a>значения attachmentType
+### <a name="attachmenttype-values"></a>Значения attachmentType
 
 | Элемент
 |:--------------
@@ -99,7 +99,7 @@ ms.locfileid: "46806620"
 | item
 | ссылка
 
-### <a name="analyticsactivitytype-values"></a>значения Аналитиксактивититипе
+### <a name="analyticsactivitytype-values"></a>Значения analyticsActivityType
 
 | Элемент
 |:--------------
@@ -107,21 +107,21 @@ ms.locfileid: "46806620"
 | чат
 | рассылка
 | фокус
-| назначить
+| meeting
 
-### <a name="registrationauthmethod-values"></a>значения Регистратионаусмесод
+### <a name="registrationauthmethod-values"></a>Значения registrationAuthMethod
 
 |Элемент|
 |:---|
 |рассылка|
-|mobilePhone;|
-|оффицефоне|
-|секуритикуестион|
-|аппнотификатион|
-|аппкоде|
-|алтернатемобилефоне|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobilePhone|
 
-### <a name="entitytypes-values"></a>значения entityType
+### <a name="entitytypes-values"></a>Значения объекта entityTypes
 
 |Элемент|
 |:---|
@@ -130,20 +130,20 @@ ms.locfileid: "46806620"
 |driveItem|
 |externalItem|
 
-### <a name="contactrelationship-values"></a>значения Контактрелатионшип
+### <a name="contactrelationship-values"></a>Значения contactRelationship
 
 | Элемент             | Значение | Описание                              |
 | :----------------- | :---- | :--------------------------------------- |
-| родитель             | нуль     | Родительский пользователь пользователя.                       |
-| сравнения           | 1,1     | Относительный путь пользователя.                     |
-| аиде               | 2     | Аиде пользователя.                         |
-| врача             | 4     | Врач пользователя.                       |
-| Guardian           | 4      | Хранитель пользователя.                     |
-| ребенка              | 5      | Дочерний элемент пользователя.                        |
-| остальные              | 6      | Незаданное отношение для пользователя. |
-| unknownFutureValue | 7      | Значение маркера для обеспечения совместимости с будущими версиями.   |
+| родитель             | 0     | Родительский элемент пользователя.                       |
+| relative           | 1     | Относительный адрес пользователя.                     |
+| aide               | 2     | Пользователь упрощает.                         |
+| doctor             | 3     | Клиент пользователя.                       |
+| guardian           | 4      | Охрана пользователя.                     |
+| child              | 5      | Дочерний элемент пользователя.                        |
+| other              | 6      | Неопределенное отношение с пользователем. |
+| unknownFutureValue | 7      | Значение маркера для совместимости с будущими версиями.   |
 
-### <a name="scheduleentitytheme-values"></a>значения Счедулинтитисеме
+### <a name="scheduleentitytheme-values"></a>Значения scheduleEntityTheme
 
 | Элемент
 |:-------------------------
@@ -153,52 +153,52 @@ ms.locfileid: "46806620"
 | purple
 | pink
 | yellow
-| участка
-| даркблуе
-| даркгрин
-| даркпурпле
-| даркпинк
-| даркеллов
+| серый
+| darkBlue
+| darkGreen
+| darkPurple
+| darkPink
+| darkYellow
 | unknownFutureValue
 
 
-### <a name="timeoffreasonicontype-values"></a>значения Тимеоффреасониконтипе
+### <a name="timeoffreasonicontype-values"></a>Значения timeOffReasonIconType
 
 |Элемент|
 |:---|
 |Нет|
-|Мойка|
+|car|
 |calendar|
-|запускается|
-|ходил|
-|фирстаид|
-|врача|
-|нотворкинг|
-|регистрации|
-|журидути|
-|любой|
-|кружк|
+|running|
+|plane|
+|firstAid|
+|doctor|
+|notWorking|
+|часы|
+|juryDuty|
+|globe|
+|cup|
 |phone|
-|Погода|
-|Общий|
-|пиггибанк|
-|Dog|
-|очень|
-|траффикконе|
-|крепления|
-|Веселая|
+|погода|
+|umbrella|
+|piggyBank|
+|dog|
+|cake|
+|trafficCone|
+|pin|
+|sunny|
 |unknownFutureValue|
 
-### <a name="schedulechangestate-values"></a>значения Счедулечанжестате
+### <a name="schedulechangestate-values"></a>Значения scheduleChangeState
 
 | Элемент
 |:----------------------------
-|закончен
-|одобря
-|отклонено
+|pending
+|approved
+|declined
 |unknownFutureValue
 
-### <a name="schedulechangerequestactor-values"></a>значения Счедулечанжерекуестактор
+### <a name="schedulechangerequestactor-values"></a>Значения scheduleChangeRequestActor
 
 | Элемент
 |:----------------------------
@@ -208,55 +208,55 @@ ms.locfileid: "46806620"
 |system
 |unknownFutureValue
 
-### <a name="workforceintegrationencryptionprotocol-values"></a>значения Воркфорцеинтегратионенкриптионпротокол
+### <a name="workforceintegrationencryptionprotocol-values"></a>Значения параметра workforceIntegrationEncryptionProtocol
 
 | Элемент
 |:----------------------------
-|шаредсекрет
+|sharedSecret
 |unknownFutureValue
 
-### <a name="workforceintegrationsupportedentities-values"></a>значения Воркфорцеинтегратионсуппортедентитиес
+### <a name="workforceintegrationsupportedentities-values"></a>Значения объекта workforceIntegrationSupportedEntities
 
 | Элемент
 |:----------------------------
 |Нет
 |shift
-|свапрекуест
-|опеншифт
-|опеншифтрекуест
-|усершифтпреференцес
+|swapRequest
+|openShift
+|openShiftRequest
+|userShiftPreferences
 
-### <a name="timezonestandard-values"></a>значения Тимезонестандард
+### <a name="timezonestandard-values"></a>Значения timeZoneStandard
 
 | Элемент
 |:-----------------
-| под
-| IANA
+| windows
+| iana
 
 
-### <a name="freebusystatus-values"></a>значения Фрибусистатус
+### <a name="freebusystatus-values"></a>Значения freeBusyStatus
 
 | Элемент           | Значение |
 | :--------------- | :---- |
-| свободного             | нуль     |
-| занят        | 1,1     |
-| момент             | 2     |
-| OOF              | 4     |
-| воркинжелсевхере | 4      |
+| free             | 0     |
+| tentative        | 1     |
+| занят             | 2     |
+| oof              | 3     |
+| workingElsewhere | 4      |
 | unknown          | –1    |
 
 
-### <a name="physicaladdresstype-values"></a>значения physicalAddressType
+### <a name="physicaladdresstype-values"></a>Значения свойства physicalAddressType
 
 | Элемент
 |:-------------------------
 | unknown
-| страницу
-| подразделения
-| остальные
+| home
+| business
+| other
 
 
-### <a name="attendeetype-values"></a>значения attendeeType
+### <a name="attendeetype-values"></a>Значения attendeeType
 
 | Элемент
 |:-------------------------
@@ -265,237 +265,237 @@ ms.locfileid: "46806620"
 | resource
 
 
-### <a name="externalaudiencescope-values"></a>значения Екстерналаудиенцескопе
+### <a name="externalaudiencescope-values"></a>Значения externalAudienceScope
 
 | Элемент
 |:-------------------------
 | Нет
-| контактсонли
-| ко
+| contactsOnly
+| все
 
 
-### <a name="automaticrepliesstatus-values"></a>значения Аутоматикреплиесстатус
+### <a name="automaticrepliesstatus-values"></a>Значения automaticRepliesStatus
 
 | Элемент
 |:-------------------------
 | отключено
-| Alwaysenabled приложение
+| alwaysEnabled
 | scheduled
 
 
-### <a name="calendarcolor-values"></a>значения Календарколор
+### <a name="calendarcolor-values"></a>Значения calendarColor
 
 | Элемент      | Значение |
 | :---------- | :---- |
 | Авто        | –1    |
-| лигхтблуе   | нуль     |
-| лигхтгрин  | 1,1     |
-| лигхторанже | 2     |
-| лигхтграй   | 4     |
-| лигхтеллов | 4      |
-| лигхттеал   | 5      |
-| лигхтпинк   | 6      |
-| лигхтбровн  | 7      |
-| лигхтред    | 8      |
-| максколор    | 9      |
+| lightBlue   | 0     |
+| lightGreen  | 1     |
+| lightOrange | 2     |
+| lightGray   | 3     |
+| lightYellow | 4      |
+| lightTeal   | 5      |
+| lightPink   | 6      |
+| lightBrown  | 7      |
+| lightRed    | 8      |
+| maxColor    | 9      |
 
 
-### <a name="educationsynchronizationprofilestate-values"></a>значения Едукатионсинчронизатионпрофилестате
+### <a name="educationsynchronizationprofilestate-values"></a>Значения educationSynchronizationProfileState
 
 | Элемент             | Значение |
 | :----------------- | :---- |
-| удалять           | 2     |
-| делетионфаилед     | 4     |
-| провисионингфаилед | 5      |
-| предоставляемое        | 6      |
-| подготовки       | 7      |
+| удаление           | 2     |
+| deletionFailed     | 3     |
+| provisioningFailed (сбой подготовки) | 5      |
+| подготовлен        | 6      |
+| provisioning       | 7      |
 | unknownFutureValue | 8      |
 
 
-### <a name="educationsynchronizationstatus-values"></a>значения Едукатионсинчронизатионстатус
+### <a name="educationsynchronizationstatus-values"></a>Значения educationSynchronizationStatus
 
 | Элемент             | Значение |
 | :----------------- | :---- |
-| приостановлено             | нуль     |
-| inProgress         | 1,1     |
+| пауза             | 0     |
+| inProgress         | 1     |
 | success            | 2     |
-| error              | 4     |
-| валидатионеррор    | 4      |
-| карантин        | 5      |
+| error              | 3     |
+| validationError    | 4      |
+| quarantined        | 5      |
 | unknownFutureValue | 6      |
 
-### <a name="educationexternalsource-values"></a>значения Едукатионекстерналсаурце
+### <a name="educationexternalsource-values"></a>Значения educationExternalSource
 
 | Элемент
 |:-------------------------
-| Гровелер
-| СУО
+| sis
+| lms
 | Вручную
 | unknownFutureValue
 
-### <a name="educationgender-values"></a>значения Едукатионжендер
+### <a name="educationgender-values"></a>Значения educationGender
 
 | Элемент
 |:-------------------------
-| женщина
-| м
-| остальные
+| female
+| male
+| other
 | unknownFutureValue
 
 
-### <a name="eventtype-values"></a>значения eventType
+### <a name="eventtype-values"></a>Значения eventType
 
 | Элемент
 |:-------------------------
-| синглеинстанце
-| экземпляр
-| возникновения
-| сериесмастер
+| singleInstance
+| occurrence
+| exception
+| seriesMaster
 
 
-### <a name="sensitivity-values"></a>значения чувствительности
+### <a name="sensitivity-values"></a>Значения конфиденциальности
 
 | Элемент
 |:-------------------------
-| обычный
+| normal
 | personal
-| закрытый
-| конфиденциальный
+| private
+| конфиденциальность
 
 
 ### <a name="importance-values"></a>значения важности
 
 | Элемент
 |:-------------------------
-| потребление
-| обычный
-| высокоуровневых
+| low
+| normal
+| high
 
 
-### <a name="educationuserrole-values"></a>значения Едукатионусерроле
+### <a name="educationuserrole-values"></a>Значения educationUserRole
 | Элемент
 |:---------------------
 | student
 | teacher
-| преподавателей
+| преподавательский
 
 
-### <a name="meetingmessagetype-values"></a>значения Митингмессажетипе
+### <a name="meetingmessagetype-values"></a>Значения свойства meetingMessageType
 
 | Элемент
 |:-----------------
 | Нет
-| Свойство meetingrequest
-| митингканцеллед
-| митингакцептед
-| митингтентативелякцептед
-| митингдеклинед
+| meetingRequest
+| meetingCancelled
+| meetingAccepted
+| meetingTentativelyAccepted
+| meetingDeclined
 
 
-### <a name="followupflagstatus-values"></a>значения Фолловупфлагстатус
+### <a name="followupflagstatus-values"></a>Значения followupFlagStatus
 
 | Элемент
 |:-------------------------
-| нотфлагжед
+| notFlagged
 | complete
-| отмеченные
+| отмечено
 
 
-### <a name="inferenceclassificationtype-values"></a>значения Инференцеклассификатионтипе
+### <a name="inferenceclassificationtype-values"></a>Значения параметра inferenceClassificationType
 
 | Элемент
 |:-----------------
-| связаны
-| остальные
+| focused
+| other
 
 
-### <a name="iosnotificationalerttype-values"></a>значения Иоснотификатионалерттипе
+### <a name="iosnotificationalerttype-values"></a>Значения iosNotificationAlertType
 
 | Элемент
 |:-------------------------
-| девицедефаулт
-| заголовок
-| модаль
+| deviceDefault
+| banner
+| modal
 | Нет
 
-### <a name="deviceenrollmentfailurereason-values"></a>значения Девицеенроллментфаилуререасон
+### <a name="deviceenrollmentfailurereason-values"></a>Значения deviceEnrollmentFailureReason
 
 | Элемент
 |:-------------
 | unknown
-| проверки подлинности
-| проверке
-| аккаунтвалидатион
-| усервалидатион
-| девиценотсуппортед
-| необслуживание
-| бадрекуест
-| феатуренотсуппортед
-| енроллментрестриктионсенфорцед
-| клиентдисконнектед
+| проверка подлинности
+| authorization
+| accountValidation
+| userValidation
+| deviceNotSupported
+| inMaintenance
+| badRequest
+| featureNotSupported
+| enrollmentRestrictionsEnforced
+| clientDisconnected
 
 
-### <a name="bodytype-values"></a>значения bodyType
+### <a name="bodytype-values"></a>Значения свойства bodyType
 | Элемент
 |:---------
 | текст
 | html
 
 
-### <a name="locationtype-values"></a>значения locationType
+### <a name="locationtype-values"></a>Значения LocationType
 
 | Элемент
 |:-------------------------
-| умолчани
-| конференцерум
+| default
+| conferenceRoom
 | homeAddress
 | businessAddress
 | geoCoordinates
 | streetAddress
-| гостинич
-| отзыв
-| локалбусинесс
+| hotel
+| restaurant
+| localBusiness
 | postalAddress
 
-### <a name="locationuniqueidtype-values"></a>значения Локатионуникуеидтипе
+### <a name="locationuniqueidtype-values"></a>Значения locationUniqueIdType
 
 | Элемент
 |:-------------------------
 | unknown
-| локатионсторе
-| каталога
-| закрытый
-| Bing
+| locationStore
+| directory
+| private
+| bing
 
 
-### <a name="messageactionflag-values"></a>значения Мессажеактионфлаг
+### <a name="messageactionflag-values"></a>Значения messageActionFlag
 
 | Элемент
 |:-------------------------
 | любой
 | call
-| донотфорвард
-| Следующего
-| сведению
+| doNotForward
+| followUp
+| fyi
 | forward
-| нореспонсенецессари
+| noResponseNecessary
 | read
 | reply
-| реплитоалл
-| Смотрите
+| replyToAll
+| просмотр
 
 
-### <a name="onenoteuserrole-values"></a>значения Оненотеусерроле
+### <a name="onenoteuserrole-values"></a>Значения onenoteUserRole
 
 | Элемент      | Значение |
 | :---------- | :---- |
-| Владелец       | нуль     |
-| Участник | 1,1     |
-| Средств      | 2     |
+| Владелец       | 0     |
+| Участник | 1     |
+| Читатель      | 2     |
 | Нет        | –1    |
 
 
-### <a name="operationstatus-values"></a>значения Оператионстатус
+### <a name="operationstatus-values"></a>Значения operationStatus
 
 | Элемент
 |:-----------------
@@ -505,17 +505,17 @@ ms.locfileid: "46806620"
 | Не выполнено
 
 
-### <a name="onenotepatchactiontype-values"></a>значения Оненотепатчактионтипе
+### <a name="onenotepatchactiontype-values"></a>Значения onenotePatchActionType
 
 | Элемент
 |:-------------------------
 | Заменить
-| Error
+| Добавочное
 | Удалить
 | Вставка
 | Prepend
 
-### <a name="onenotepatchinsertposition-values"></a>значения Оненотепатчинсертпоситион
+### <a name="onenotepatchinsertposition-values"></a>Значения onenotePatchInsertPosition
 
 | Элемент
 |:-------------------------
@@ -523,28 +523,28 @@ ms.locfileid: "46806620"
 | До
 
 
-### <a name="phonetype-values"></a>значения Фонетипе
+### <a name="phonetype-values"></a>Значения phoneType
 
 | Элемент
 |:-------------------------
-| страницу
-| подразделения
-| связь
-| остальные
-| Помощник по
-| хомефакс
-| бусинессфакс
+| home
+| business
+| mobile
+| other
+| assistant
+| homeFax
+| businessFax
 | otherFax
 | pager
-| сети
+| radio
 
 
-### <a name="plannerpreviewtype-values"></a>значения Планнерпревиевтипе
+### <a name="plannerpreviewtype-values"></a>Значения plannerPreviewType
 
 | Элемент
 |:-------------------------
 | Автоматически
-| непредварительный Просмотр
+| noPreview
 | checklist
 | description
 | ссылка
@@ -554,79 +554,79 @@ ms.locfileid: "46806620"
 
 | Элемент
 |:-----------------
-| ASP
-| обновленный
+| active
+| updated
 | deleted
 | пропущено
 | unknownFutureValue
 
 
-### <a name="weekindex-values"></a>значения Викиндекс
+### <a name="weekindex-values"></a>Значения weekIndex
 
 | Элемент
 |:-------------------------
-| первыми
-| Втор
-| стороннего
-| 12
-| Фамили
+| first
+| second
+| третий
+| четвертый
+| last
 
 
-### <a name="dayofweek-values"></a>значения dayOfWeek
+### <a name="dayofweek-values"></a>Значения dayOfWeek
 
 | Элемент
 |:-------------------------
-| воскресеньям
-| Вторник
-| во
-| Четверг
-| Пятница
-| пятницам
-| субботу
+| sunday
+| monday
+| суббота
+| wednesday
+| thursday
+| friday
+| saturday
 
-### <a name="recurrencepatterntype-values"></a>значения Рекурренцепаттернтипе
+### <a name="recurrencepatterntype-values"></a>Значения recurrencePatternType
 
 | Элемент
 |:-------------------------
 | ежедневно
-| Табель
-| абсолутемонсли
-| релативемонсли
-| абсолутэйеарли
-| релативэйеарли
+| еженедельно
+| absoluteMonthly
+| relativeMonthly
+| absoluteYearly
+| relativeYearly
 
 
-### <a name="recurrencerangetype-values"></a>значения Рекурренцеранжетипе
+### <a name="recurrencerangetype-values"></a>Значения recurrenceRangeType
 
 | Элемент
 |:-------------------------
 | endDate
-| ноенд
-| Нумерованный
+| noEnd
+| нумерованный
 
 
-### <a name="onenotesourceservice-values"></a>значения Оненотесаурцесервице
+### <a name="onenotesourceservice-values"></a>Значения onenoteSourceService
 | Элемент
 |:---------------------
 | Unknown
 | OneDrive
-| онедривефорбусинесс
-| онпремонедривефорбусинесс
+| OneDriveForBusiness
+| OnPremOneDriveForBusiness
 
 
-### <a name="responsetype-values"></a>значения responseType
+### <a name="responsetype-values"></a>Значения параметра responseType
 
 | Элемент
 |:-------------------------
 | Нет
 | organizer
-| тентативелякцептед
-| обслуживаемый
-| отклонено
-| нотреспондед
+| tentativelyAccepted
+| accepted
+| declined
+| notResponded
 
 
-### <a name="activitydomain-values"></a>значения activityDomain
+### <a name="activitydomain-values"></a>Значения activityDomain
 
 | Элемент
 |:-------------------------
@@ -636,26 +636,26 @@ ms.locfileid: "46806620"
 | unrestricted
 
 
-### <a name="websitetype-values"></a>значения websiteType
+### <a name="websitetype-values"></a>Значения websiteType
 
 | Элемент
 |:-------------------------
-| остальные
-| страницу
+| other
+| home
 | work
 | Блог
 | profile
 
 
-### <a name="categorycolor-values"></a>значения Категориколор
+### <a name="categorycolor-values"></a>Значения категории categoryColor
 
 | Элемент   | Значение |
 | :------- | :---- |
 | Нет     | –1    |
-| preset0  | нуль     |
-| preset1  | 1,1     |
+| preset0  | 0     |
+| preset1  | 1     |
 | preset2  | 2     |
-| preset3  | 4     |
+| preset3  | 3     |
 | preset4  | 4      |
 | preset5  | 5      |
 | preset6  | 6      |
@@ -663,7 +663,7 @@ ms.locfileid: "46806620"
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | -11:00    |
+| preset11 | 11    |
 | preset12 | 12     |
 | preset13 | 13    |
 | preset14 | 14     |
@@ -672,357 +672,357 @@ ms.locfileid: "46806620"
 | preset17 | 17     |
 | preset18 | 18     |
 | preset19 | 19    |
-| preset20 | двадцать    |
+| preset20 | 20    |
 | preset21 | 21    |
 | preset22 | 22    |
 | preset23 | 23    |
-| preset24 | открыт    |
+| preset24 | 24    |
 
-### <a name="alertfeedback-values"></a>значения Алертфидбакк
+### <a name="alertfeedback-values"></a>Значения alertFeedback
 
-Возможные значения отзыва оповещений, предоставленных аналитиком.
+Возможные значения отзыва в оповещении, предоставленном учетом.
 
 | Элемент         | Значение | Описание               |
 | :------------- | :---- | :------------------------ |
-| unknown        | нуль     | Найден.                  |
-| труепоситиве   | 1,1     | Alert имеет значение true (положительно).   |
-| falsePositive  | 2     | Alert имеет значение false — положительный.  |
-| бенигнпоситиве | 4     | Оповещение — это неблагоприятное срабатывание. |
+| unknown        | 0     | Неизвестно.                  |
+| truePositive   | 1     | Предупреждение "верно-положительный".   |
+| falsePositive  | 2     | Предупреждение является ложным срабатыванием.  |
+| benignPositive | 3     | Оповещение является богативным положительным. |
 
-### <a name="filehashtype-values"></a>значения Филехаштипе
+### <a name="filehashtype-values"></a>Значения fileHashType
 
 | Элемент              | Значение | Описание                    |
 | :------------------ | :---- | :----------------------------- |
-| unknown             | нуль     | Неизвестный тип.                  |
-| хэшем                | 1,1     | Тип хеша SHA1.                |
-| хэш              | 2     | Тип хеша SHA256.              |
-| алгоритм                 | 4     | Тип хеша MD5.                 |
-| Свойства authenticodehash256 | 4      | Тип хеша свойства authenticodehash256. |
-| лшаш              | 5      | Тип хеша Лшаш.              |
-| ктф                | 6      | Тип хеша КТФ.                |
-| peSha1              | 7      | Тип хеша PESHA1.              |
-| peSha256            | 8      | Тип хеша PESHA256.            |
+| unknown             | 0     | Неизвестный тип.                  |
+| sha1                | 1     | Тип хэша SHA1.                |
+| sha256              | 2     | Тип хэша SHA256.              |
+| md5                 | 3     | Тип хэша MD5.                 |
+| authenticodeHash256 | 4      | Тип хэша AuthenticodeHash256. |
+| lsHash              | 5      | Тип хэша LsHash.              |
+| ctph                | 6      | Тип хэша CTPH.                |
+| peSha1              | 7      | Тип хэш-службы PESHA1.              |
+| peSha256            | 8      | Тип хэша PESHA256.            |
 
-### <a name="connectiondirection-values"></a>значения Коннектиондиректион
+### <a name="connectiondirection-values"></a>Значения connectionDirection
 
 | Элемент   | Значение | Описание          |
 | :------- | :---- | :------------------- |
-| unknown  | нуль     | Неизвестное подключение.  |
-| получение  | 1,1     | Входящее подключение.  |
-| прав | 2     | Исходящее подключение. |
+| unknown  | 0     | Неизвестное подключение.  |
+| входящие  | 1     | входящее подключение.  |
+| исходящие | 2     | Исходящее подключение. |
 
-### <a name="connectionstatus-values"></a>значения connectionStatus
+### <a name="connectionstatus-values"></a>Значения connectionStatus
 
 | Элемент    | Значение | Описание                |
 | :-------- | :---- | :------------------------- |
-| unknown   | нуль     | Состояние неизвестного подключения. |
-| попытка | 1,1     | Попытка подключения.      |
-| закончил | 2     | Подключение выполнено успешно.      |
-| заблокированных   | 4     | Подключение заблокировано.        |
-| сбоев    | 4      | Ошибка подключения.         |
+| unknown   | 0     | Состояние неизвестного подключения. |
+| attempted | 1     | Попытка подключения.      |
+| succeeded | 2     | Подключение успешна.      |
+| blocked   | 3     | Подключение заблокировано.        |
+| failed    | 4      | Не удалось выполнить подключение.         |
 
-### <a name="processintegritylevel-values"></a>значения Процессинтегритилевел
+### <a name="processintegritylevel-values"></a>Значения processIntegrityLevel
 
 | Элемент    | Значение | Описание                   |
 | :-------- | :---- | :---------------------------- |
-| unknown   | нуль     | Найден.                      |
-| недоверенных | 10     | Уровень целостности не является доверенным. |
-| потребление       | двадцать    | Недостаточный уровень целостности.       |
-| medium    | более    | Уровень целостности — Medium (средний).    |
-| высокоуровневых      | 40    | Уровень целостности — High.      |
-| system    | 50    | Уровень целостности — System.    |
+| unknown   | 0     | Неизвестно.                      |
+| untrusted | 10     | Уровень целостности неявляется надежным. |
+| low       | 20    | Низкий уровень целостности.       |
+| medium    | 30    | Имеет широкий уровень целостности.    |
+| high      | 40    | Высокий уровень целостности.      |
+| system    | 50    | Уровень целостности системы.    |
 
-### <a name="registryhive-values"></a>значения Регистрихиве
+### <a name="registryhive-values"></a>значения реестра
 
-Enum для кустов реестра, определенных в параметре [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives) .
+Перечисление кустов реестра, как указано [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives) .
 
 | Элемент                  | Значение | Описание                       |
 | :---------------------- | :---- | :-------------------------------- |
-| unknown                 | нуль     | Неизвестный куст.                     |
-| куррентконфиг           | 1,1     | HKEY_CURRENT_CONFIG куст.         |
+| unknown                 | 0     | Неизвестный куст.                     |
+| currentConfig           | 1     | HKEY_CURRENT_CONFIG куст.         |
 | currentUser             | 2     | HKEY_CURRENT_USER куст.           |
-| локалмачинесам         | 4     | HKEY_LOCAL_MACHINE куст \САМ.      |
-| локалмачинесамсофтваре | 4      | HKEY_LOCAL_MACHINE куст \Софтваре. |
-| локалмачинесистем      | 5      | HKEY_LOCAL_MACHINE куст \Систем.   |
-| усерсдефаулт            | 6      | HKEY_USERS \\ . Куст по УМОЛЧАНИю.        |
+| localMachineSam         | 3     | HKEY_LOCAL_MACHINE\SAM hive.      |
+| localMachineSamSoftware | 4      | HKEY_LOCAL_MACHINE\Куст программного обеспечения. |
+| localMachineSystem      | 5      | HKEY_LOCAL_MACHINE\Куст системы.   |
+| usersDefault            | 6      | \\HKEY_USERS. Куст ПО УМОЛЧАНИю.        |
 
-### <a name="registryoperation-values"></a>значения Регистрйоператион
+### <a name="registryoperation-values"></a>Значения registryOperation
 
-Операция, в которой изменилось имя и/или значение раздела реестра.
+Операция, изменявшая имя раздела реестра и/или значение.
 
 | Элемент  | Значение | Описание                  |
 | :------ | :---- | :--------------------------- |
-| unknown | нуль     | Неизвестный тип значения реестра. |
-| create  | 1,1     | Создайте реестр.             |
-| изменение  | 2     | Изменение реестра.             |
-| delete  | 4     | Удаление реестра.             |
+| unknown | 0     | Неизвестный тип значения реестра. |
+| create  | 1     | Создайте реестр.             |
+| modify  | 2     | Изменение реестра             |
+| delete  | 3     | Удалите реестр.             |
 
-### <a name="registryvaluetype-values"></a>значения Регистривалуетипе
+### <a name="registryvaluetype-values"></a>Значения registryValueType
 
-Enum для типов значений реестра, определенных [типами значений реестра](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types).
+Перечисление типов значений реестра в зависимости от [типов значений реестра.](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types)
 
 | Элемент            | Значение | Описание                                  |
 | :---------------- | :---- | :------------------------------------------- |
-| unknown           | нуль     | Неизвестный тип значения реестра.                 |
-| двоичный            | 1,1     | REG_BINARY тип значения реестра.              |
-| значени             | 2     | REG_DWORD тип значения реестра.               |
-| двордлиттлиндиан | 4     | REG_DWORD_LITTLE_ENDIAN тип значения реестра. |
-| двордбижендиан    | 4      | REG_DWORD_BIG_ENDIAN тип значения реестра.    |
-| експандсз          | 5      | REG_EXPAND_SZ тип значения реестра.           |
-| ссылка              | 6      | REG_LINK тип значения реестра.                |
-| мултисз           | 7      | REG_MULTI_SZ тип значения реестра.            |
-| Нет              | 8      | REG_NONE тип значения реестра.                |
-| 8             | 9      | REG_QWORD тип значения реестра.               |
-| квордлиттлиндиан | 10     | REG_QWORD_LITTLE_ENDIAN тип значения реестра. |
-| сз                | -11:00    | REG_SZ тип значения реестра.                  |
+| unknown           | 0     | Неизвестный тип значения реестра.                 |
+| двоичный            | 1     | REG_BINARY типа значения реестра.              |
+| dword             | 2     | REG_DWORD значения реестра.               |
+| dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN типа значения реестра. |
+| dwordBigEndian    | 4      | REG_DWORD_BIG_ENDIAN типа значения реестра.    |
+| expandSz          | 5      | REG_EXPAND_SZ типа значения реестра.           |
+| ссылка              | 6      | REG_LINK типа значения реестра.                |
+| multiSz           | 7      | REG_MULTI_SZ типа значения реестра.            |
+| Нет              | 8      | REG_NONE типа значения реестра.                |
+| qword             | 9      | REG_QWORD параметра реестра.               |
+| qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN типа. |
+| sz                | 11    | REG_SZ типа значения реестра.                  |
 
-### <a name="alertseverity-values"></a>значения Алертсеверити
+### <a name="alertseverity-values"></a>Значения alertSeverity
 
-Перечисление для серьезности оповещений.
+Перечисление серьезности оповещений.
 
 | Элемент        | Значение | Описание                       |
 | :------------ | :---- | :-------------------------------- |
-| unknown       | нуль     | Степень неизвестна.              |
-| справоч | 1,1     | Уровень важности — только для сведений. |
-| потребление           | 2     | Степень серьезности невелика.                  |
-| medium        | 4     | Степень серьезности — средняя.               |
-| высокоуровневых          | 4      | Степень серьезности высока.                 |
+| unknown       | 0     | Степень серьезности неизвестна.              |
+| informational | 1     | Серьезность информации доступна только для сведений. |
+| low           | 2     | Степень серьезности низка.                  |
+| medium        | 3     | Степень серьезности имеет средний уровень.               |
+| high          | 4      | Степень серьезности высока.                 |
 
-### <a name="alertstatus-values"></a>значения Алертстатус
+### <a name="alertstatus-values"></a>Значения alertStatus
 
-Возможные значения состояния жизненного цикла оповещений (Stage).
+Возможные значения состояния жизненного цикла оповещения (этап).
 
 | Элемент     | Значение | Описание           |
 | :--------- | :---- | :-------------------- |
-| unknown    | нуль     | Неизвестное состояние.       |
-| невалерт   | 10     | Оповещение является новым.         |
-| inProgress | двадцать    | Выполняется оповещение. |
-| определяем   | более    | Предупреждение разрешено.    |
+| unknown    | 0     | Неизвестное состояние.       |
+| newAlert   | 10     | Оповещение — это новое.         |
+| inProgress | 20    | Оповещение выполняется. |
+| разрешено   | 30    | Разрешается оповещение.    |
 
-### <a name="emailrole-values"></a>значения Емаилроле
+### <a name="emailrole-values"></a>Значения объекта emailRole
 
 Возможные значения для ролей электронной почты.
 
 | Элемент    | Значение | Описание             |
 | :-------- | :---- | :---------------------- |
-| unknown   | нуль     | Неизвестная роль.           |
-| отправитель;    | 1,1     | Отправитель сообщения электронной почты.    |
+| unknown   | 0     | Неизвестная роль.           |
+| отправитель;    | 1     | Отправитель сообщения электронной почты.    |
 | получатель; | 2     | Получатель сообщения электронной почты. |
 
-### <a name="logontype-values"></a>значения logonType
+### <a name="logontype-values"></a>Значения logonType
 
 Возможные значения для метода входа пользователя.
 
 | Элемент            | Значение | Описание                  |
 | :---------------- | :---- | :--------------------------- |
-| unknown           | –1    | Найден.                     |
-| локальный       | нуль     | Вход в систему осуществляется в интерактивном режиме.        |
-| ремотеинтерактиве | 1,1     | Вход выполняется в удаленном интерактивном режиме. |
-| сетью           | 2     | Вход в сеть.            |
-| batch             | 4     | Вход в пакет.              |
-| service           | 4      | Вход в службу.            |
+| unknown           | –1    | Неизвестно.                     |
+| interactive       | 0     | Вход в систему интерактивный.        |
+| remoteInteractive | 1     | Вход в систему выполняется удаленно. |
+| сеть           | 2     | Вход в систему сети.            |
+| batch             | 3     | Вход является пакетом.              |
+| service           | 4      | Вход в систему — это служба.            |
 
-### <a name="useraccountsecuritytype-values"></a>значения Усераккаунтсекурититипе
+### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
 
-Возможные значения для типов учетных записей пользователей (членство в группах), для каждого определения Windows.
+Возможные значения для типов учетных записей пользователей (членство в группах) и каждого определения Windows.
 
 | Элемент        | Значение | Описание                     |
 | :------------ | :---- | :------------------------------ |
-| unknown       | –1    | Найден.                        |
-| Стандартный      | нуль     | Член группы стандартных пользователей. |
-| потребление         | 1,1     | Член группы опытных пользователей.    |
-| имени | 2     | Член группы администраторов. |
+| unknown       | –1    | Неизвестно.                        |
+| standard      | 0     | Группа обычных пользователей. |
+| выключено         | 1     | Участник группы "Питание".    |
+| administrator | 2     | Членство в группе "Администраторы". |
 
-### <a name="scopeoperatormultivaluedcomparisontype-values"></a>значения Скопеоператормултивалуедкомпарисонтипе
+### <a name="scopeoperatormultivaluedcomparisontype-values"></a>Значения scopeOperatorMultiValuedComparisonType
 
 |Элемент|
 |:---|
-|ко|
+|все|
 |любой|
 
-### <a name="risklevel-values"></a>значения Рисклевел
+### <a name="risklevel-values"></a>Значения свойства riskLevel
 
 |Элемент|
 |:---|
-|потребление|
+|low|
 |medium|
-|высокоуровневых|
+|high|
 |hidden|
 |Нет|
 |unknownFutureValue|
 
-### <a name="riskstate-values"></a>значения Рискстате
+### <a name="riskstate-values"></a>Значения свойства riskState
 
 |Элемент|
 |:---|
 |Нет|
-|конфирмедсафе|
-|исправленных|
-|закрытые|
-|атриск|
-|конфирмедкомпромисед|
+|confirmedSafe|
+|исправлено|
+|Dismissed|
+|atRisk|
+|confirmedCompromised|
 |unknownFutureValue|
 
-### <a name="riskdetail-values"></a>значения Рискдетаил
+### <a name="riskdetail-values"></a>Значения riskDetail
 
 |Элемент|
 |:---|
 |Нет|
-|админженератедтемпорарипассворд|
-|усерперформедсекуредпассвордчанже|
-|усерперформедсекуредпассвордресет|
-|админконфирмедсигнинсафе|
-|аиконфирмедсигнинсафе|
-|усерпасседмфадривенбирискбаседполици|
-|админдисмисседаллрискфорусер|
-|админконфирмедсигнинкомпромисед|
-|админконфирмедусеркомпромисед|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|adminConfirmedSigninCompromised|
+|adminConfirmedUserCompromised|
 |hidden|
 |unknownFutureValue|
 
-### <a name="referenceattachmentpermission-values"></a>значения referenceAttachmentPermission
+### <a name="referenceattachmentpermission-values"></a>Значения referenceAttachmentPermission
 
 |Элемент|
 |:---|
-|остальные|
+|other|
 |view|
 |edit|
-|анонимаусвиев|
-|анонимауседит|
-|организатионвиев|
-|организатионедит|
+|anonymousView|
+|anonymousEdit|
+|organizationView|
+|organizationEdit|
 
-### <a name="referenceattachmentprovider-values"></a>значения перечислений — referenceattachmentprovider
-
-|Элемент|
-|:---|
-|остальные|
-|онедривебусинесс|
-|онедривеконсумер|
-|оставляют|
-
-### <a name="riskeventtype-values"></a>значения Рискевенттипе
+### <a name="referenceattachmentprovider-values"></a>Значения referenceAttachmentProvider
 
 |Элемент|
 |:---|
-|унликелитравел|
-|анонимизедипаддресс|
-|малиЦиаусипаддресс|
-|унфамилиарфеатурес|
-|малвареинфектедипаддресс|
-|суспиЦиаусипаддресс|
-|леакедкредентиалс|
-|инвестигатионссреатинтеллиженце|
-|шаблонов|
-|админконфирмедусеркомпромисед|
-|мкасимпоссиблетравел|
-|мкассуспиЦиаусинбоксманипулатионрулес|
-|инвестигатионссреатинтеллиженцесигнинлинкед|
-|малиЦиаусипаддрессвалидкредентиалсблоккедип|
+|other|
+|oneDriveBusiness|
+|oneDriveConsumer|
+|dropbox|
+
+### <a name="riskeventtype-values"></a>Значения свойства riskEventType
+
+|Элемент|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|generic|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
 |unknownFutureValue|
 
-### <a name="networktype-values"></a>значения Нетворктипе
+### <a name="networktype-values"></a>Значения параметра networkType
 
 |Элемент|
 |:---|
-|Внутренняя|
-|экстрасети|
-|намеднетворк|
-|проверен|
+|intranet|
+|extranet|
+|namedNetwork|
+|trusted|
 |unknownFutureValue|
 
-### <a name="exchangeidformat-values"></a>значения Ексчанжеидформат
+### <a name="exchangeidformat-values"></a>Значения параметра exchangeIdFormat
 
 |Элемент|
 |:---|
-|Код|
-|евсид|
-|иммутаблинтрид|
-|рестид|
-|рестиммутаблинтрид|
+|entryId|
+|ewsId|
+|immutableEntryId|
+|restId|
+|restImmutableEntryId|
 
-### <a name="attributeflowbehavior-values"></a>значения Аттрибутефловбехавиор
-
-|Элемент|
-|:---|
-|фловвхенчанжед|
-|фловалвайс|
-
-### <a name="attributeflowtype-values"></a>значения Аттрибутефловтипе
+### <a name="attributeflowbehavior-values"></a>Значения атрибута attributeFlowBehavior
 
 |Элемент|
 |:---|
-|Постоянное|
-|обжектаддонли|
-|мултивалуеаддонли|
-|рестид|
+|flowWhenChanged|
+|flowAlways|
 
-### <a name="objectflowtypes-values"></a>значения Обжектфловтипес
+### <a name="attributeflowtype-values"></a>Значения атрибута attributeFlowType
+
+|Элемент|
+|:---|
+|always|
+|objectAddOnly|
+|multiValueAddOnly|
+|restId|
+
+### <a name="objectflowtypes-values"></a>Значения objectFlowTypes
 
 | Элемент | Значение |
 | :----- | :---- |
-| Нет   | нуль     |
-| Добавление    | 1,1     |
+| Нет   | 0     |
+| Добавление    | 1     |
 | Update | 2     |
 | Delete | 4      |
 
-### <a name="chatmessagetype-values"></a>значения Чатмессажетипе
+### <a name="chatmessagetype-values"></a>Значения свойства chatMessageType
 
 |Элемент|
 |:---|
 |message|
 
-### <a name="chatmessageimportance-values"></a>значения Чатмессажеимпортанце
+### <a name="chatmessageimportance-values"></a>Значения параметра chatMessageImportance
 
 |Элемент|
 |:---|
-|обычный|
-|высокоуровневых|
-|передачи|
+|normal|
+|high|
+|urgent|
 
-### <a name="channelmembershiptype-values"></a>значения Чаннелмембершиптипе
+### <a name="channelmembershiptype-values"></a>Значения параметра channelMembershipType
 
 | Элемент             | Значение |
 | :----------------- | :---- |
-| Стандартный           | нуль     |
-| закрытый            | 1,1     |
+| standard           | 0     |
+| private            | 1     |
 | unknownFutureValue | 2     |
 
-### <a name="stagedfeaturename-values"></a>значения Стажедфеатуренаме
+### <a name="stagedfeaturename-values"></a>Значения stagedFeatureName
 
 | Member                    | Описание                   |
 | :------------------------ | :---------------------------- |
-| пасссраугхаусентикатион | Сквозная проверка подлинности    |
-| сеамлессссо               | Единый вход       |
-| пассвордхашсинк          | Синхронизация хэша паролей |
+| passthroughAuthentication | Сквозная проверка подлинности    |
+| seamlessSso               | Беспрепятственный единый вход       |
+| passwordHashSync          | Синхронизация хэша паролей |
 
-### <a name="tokenissuertype-values"></a>значения Токениссуертипе
+### <a name="tokenissuertype-values"></a>Значения tokenIssuerType
 
 |Элемент|
 |:---|
 |AzureAD|
-|адфедератионсервицес|
+|ADFederationServices|
 |unknownFutureValue|
 
-### <a name="riskdetectiontimingtype-values"></a>значения Рискдетектионтимингтипе
+### <a name="riskdetectiontimingtype-values"></a>Значения riskDetectionTimingType
 
 |Элемент|
 |:---|
-|нотдефинед|
-|реальном|
-|неарреалтиме|
-|содержание|
+|notDefined|
+|realtime|
+|nearRealtime|
+|offline|
 |unknownFutureValue|
 
-### <a name="activitytype-values"></a>значения activityType
+### <a name="activitytype-values"></a>Значения свойства activityType
 
 |Элемент|
 |:---|
-|SignIn|
+|signin|
 |user|
 |unknownFutureValue|
 
-### <a name="entitytype-values"></a>значения entityType
+### <a name="entitytype-values"></a>Значения объекта EntityType
 
 | Элемент       |
 |:--------------|
@@ -1032,244 +1032,244 @@ Enum для типов значений реестра, определенных
 |externalFile|
 |externalItem|
 
-### <a name="onlinemeetingprovidertype-values"></a>значения Онлинемитингпровидертипе
+### <a name="onlinemeetingprovidertype-values"></a>Значения onlineMeetingProviderType
 
 |Элемент|
 |:---|
 |unknown|
 |skypeForBusiness|
-|скипефорконсумер|
-|теамсфорбусинесс|
+|skypeForConsumer|
+|teamsForBusiness|
 
-### <a name="delegatemeetingmessagedeliveryoptions-values"></a>значения Делегатемитингмессажеделиверйоптионс
+### <a name="delegatemeetingmessagedeliveryoptions-values"></a>Значения delegateMeetingMessageDeliveryOptions
 
 |Элемент|
 |:---|
-|сендтоделегатеандинформатионтопринЦипал|
-|сендтоделегатеандпринЦипал|
-|сендтоделегатеонли|
+|sendToDelegateAndInformationToPrincipal|
+|sendToDelegateAndPrincipal|
+|sendToDelegateOnly|
 
-### <a name="calendarroletype-values"></a>значения Календарролетипе
+### <a name="calendarroletype-values"></a>Значения calendarRoleType
 
 |Элемент|
 |:---|
 |Нет|
-|фрибусиреад|
-|лимитедреад|
+|freeBusyRead|
+|limitedRead|
 |read|
 |write|
-|делегатевисаутпривативентакцесс|
-|делегатевиспривативентакцесс|
-|собственный|
+|delegateWithoutPrivateEventAccess|
+|delegateWithPrivateEventAccess|
+|custom|
 
-### <a name="contentformat-values"></a>значения Контентформат
+### <a name="contentformat-values"></a>Значения contentFormat
 
 | Элемент  | Значение | Описание                          |
 | :------ | :---- | :----------------------------------- |
-| умолчани | нуль     | Контент — это файл или тип, отличный от типа электронной почты. |
-| рассылка   | 1,1     | Контент — это электронная почта.                 |
+| default | 0     | Содержимое это файл или тип сообщений, не относящийся к электронной почте. |
+| рассылка   | 1     | Содержимое представляет собой сообщение электронной почты.                 |
 
-### <a name="contentstate-values"></a>значения Контентстате
+### <a name="contentstate-values"></a>Значения contentState
 
 | Элемент | Значение | Описание                                                                      |
 | :----- | :---- | :------------------------------------------------------------------------------- |
-| всеми   | нуль     | Данные находятся на REST; Например, файл в общем ресурсе.                                 |
-| контроллера | 1,1     | Данные находятся в движении. Файл, перехваченный сетевым устройством при передаче.         |
-| Используйте    | 2     | Данные используются. Файл открыт в клиентском приложении, например Microsoft Office. |
+| rest   | 0     | Данные нахожут статистящи Например файл, нагласившего ся в совместной работе.                                 |
+| движение | 1     | Данные найдены в движении. Файл, перехватываемый сетевым устройством при передаче.         |
+| use    | 2     | Используются данные. Файл открыт в клиентском приложении, например в Microsoft Office. |
 
-### <a name="assignmentmethod-values"></a>значения assignmentMethod
+### <a name="assignmentmethod-values"></a>Значения метода assignmentMethod
 
 | Элемент     | Значение | Описание                                                                                                                      |
 | :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
-| Стандартный   | нуль     | Метка задается службой или условием политики.                                                                              |
-| наименьш | 1,1     | Метка явно задана пользователем.                                                                                          |
-| Авто       | 2     | Разрешает переопределение любой существующей метки. Для перехода на предыдущую версию необходимо выключить. Приводит к `standard` методу присваивания в метаданных. |
+| standard   | 0     | Метка установлена службой или условием политики.                                                                              |
+| privileged | 1     | Метка была явно установлена пользователем.                                                                                          |
+| Авто       | 2     | Разрешает переопределение любой существующей метки. Требуется ли обриентировочие на понижении версии. Создается результат `standard` в метаданных. |
 
-### <a name="actionsource-values"></a>значения Актионсаурце
+### <a name="actionsource-values"></a>Значения actionSource
 
 | Элемент        | Значение | Описание                                                  |
 | :------------ | :---- | :----------------------------------------------------------- |
-| Вручную        | нуль     | Пользователь вручную выбрал метку.                          |
-| Автоматически     | 1,1     | Метка была выбрана в результате условий политики.       |
-| Рекомендуемый   | 2     | Выбранный вариант применения рекомендуемой метки.                    |
-| полицидефаулт | 4     | Для пользователя не задано действие и метка политики по умолчанию. |
-| обязателен     | 4      | Пользователь выбрал метку после принудительного выбора.         |
+| Вручную        | 0     | Пользователь вручную выбрал метку.                          |
+| Автоматически     | 1     | Метка была выбрана в результате условий политики.       |
+| Рекомендуемый   | 2     | Выбрано применение рекомендованной метки.                    |
+| policyDefault | 3     | Пользователь не применяет никаких действий, а также примененную политику. |
+| обязательный     | 4      | Пользователь выбрал метку.         |
 
-### <a name="contentalignment-values"></a>значения Контенталигнмент
+### <a name="contentalignment-values"></a>Значения contentAlignment
 
 | Элемент | Значение | Описание                         |
 | :----- | :---- | :---------------------------------- |
-| left   | нуль     | Выравнивание разметки содержимого влево.  |
-| Правильно  | 1,1     | Выравнивание разметки содержимого вправо. |
-| располагает | 2     | Пометка содержимого центра.             |
+| left   | 0     | Выравнивайте маркировку содержимого по левому краю.  |
+| Правильно  | 1     | Выравнивайте маркировку содержимого по правому краю. |
+| center | 2     | Маркировка содержимого центром.             |
 
-### <a name="watermarklayout-values"></a>значения Ватермарклайаут
+### <a name="watermarklayout-values"></a>Значения watermarkLayout
 
 | Элемент     | Значение | Описание                 |
 | :--------- | :---- | :-------------------------- |
-| полос | нуль     | Используйте горизонтальный водяной знак. |
-| уголь   | 1,1     | Используйте диагональный водяной знак.   |
+| horizontal | 0     | Используйте горизонтальный водяной знак. |
+| diagonal   | 1     | Используйте диагональную водяную знак.   |
 
-### <a name="conditionalaccesspolicystate"></a>кондитионалакцессполицистате
+### <a name="conditionalaccesspolicystate"></a>conditionalAccessPolicyState
 
 |Элемент|
 |:---|
 |включено|
 |отключено|
 
-### <a name="conditionalaccessclientapp"></a>кондитионалакцессклиентапп
+### <a name="conditionalaccessclientapp"></a>conditionalAccessClientApp
 
 | Элемент       |
 |:--------------|
 |Обозреватель|
 |современная версия|
-|еассуппортед|
-|еасунсуппортед|
-|остальные|
+|easSupported|
+|easUnsupported|
+|other|
 
-### <a name="conditionalaccessgrantcontrol"></a>кондитионалакцессгрантконтрол
-
-| Элемент       |
-|:--------------|
-|блок|
-|MFA|
-|комплиантдевице|
-|домаинжоинеддевице|
-|аппроведаппликатион|
-|комплиантаппликатион|
-
-### <a name="cloudappsecuritysessioncontroltype"></a>клаудаппсекуритисессионконтролтипе
+### <a name="conditionalaccessgrantcontrol"></a>conditionalAccessGrantControl
 
 | Элемент       |
 |:--------------|
-|мкасконфигуред|
-|мониторонли|
-|блоккдовнлоадс|
+|block|
+|mfa|
+|compliantDevice|
+|domainJoinedDevice|
+|approvedApplication|
+|compliantApplication|
 
-### <a name="signinfrequencytype"></a>сигнинфрекуенцитипе
-
-| Элемент       |
-|:--------------|
-|срок|
-|час|
-
-### <a name="persistentbrowsersessionmode"></a>персистентбровсерсессионмоде
+### <a name="cloudappsecuritysessioncontroltype"></a>cloudAppSecuritySessionControlType
 
 | Элемент       |
 |:--------------|
-|Постоянное|
-|ключа|
+|mcasConfigured|
+|monitorOnly|
+|blockDownloads|
 
-### <a name="conditionalaccessdeviceplatform"></a>кондитионалакцессдевицеплатформ
+### <a name="signinfrequencytype"></a>signinFrequencyType
 
 | Элемент       |
 |:--------------|
-|ОС|
+|days|
+|hours|
+
+### <a name="persistentbrowsersessionmode"></a>persistentBrowserSessionMode
+
+| Элемент       |
+|:--------------|
+|always|
+|никогда не|
+
+### <a name="conditionalaccessdeviceplatform"></a>conditionalAccessDevicePlatform
+
+| Элемент       |
+|:--------------|
+|android|
 |iOS|
-|под|
+|windows|
 |windowsPhone|
 |macOS|
-|ко|
+|все|
 
-### <a name="priority-values"></a>значения приоритета
+### <a name="priority-values"></a>Значения приоритета
 
 |Элемент|Значение|
 |:---|:---|
-|Нет|нуль|
-|High (Высокий)|1,1|
+|Нет|0|
+|High (Высокий)|1|
 |Низкая|2|
 
-### <a name="threatassessmentcontenttype-values"></a>значения Среатассессментконтенттипе
+### <a name="threatassessmentcontenttype-values"></a>Значения объекта threatAssessmentContentType
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail;   | 1,1     | Почтовые угрозы.            |
-| url    | 2     | Угроза URL-адресов.             |
-| file   | 4     | Угроза файла вложения. |
+| mail   | 1     | Угрозы почты.            |
+| url    | 2     | Угроза, защита URL-адреса.             |
+| file   | 3     | Угроза, касающуюся файла вложения |
 
-### <a name="threatexpectedassessment-values"></a>значения Среатекспектедассессмент
+### <a name="threatexpectedassessment-values"></a>Значения threatExpectedAssessment
 
 | Элемент  | Значение | Описание                       |
 |:--------|:------|:----------------------------------|
-| блок   | 1,1     | Угроза должна быть заблокирована.     |
-| Снятие | 2     | Угроза не должна блокироваться. |
+| block   | 1     | Угрозу необходимо заблокировать.     |
+| разблокировка | 2     | Угрозу не следует блокировать. |
 
-### <a name="threatcategory-values"></a>значения Среаткатегори
+### <a name="threatcategory-values"></a>Значения объекта threatCategory
 
 | Элемент             | Значение | Описание        |
 |:-------------------|:------|:-------------------|
-| уверенности               | 1,1     | Угроза нежелательной почты.       |
+| уверенности               | 1     | Угроза спама.       |
 | степенью           | 2     | Угроза фишинга.   |
-| от            | 4     | Угроза вредоносных программ.    |
-| unknownFutureValue | 4      | Элемент Sentinel. |
+| вредонос            | 3     | Угроза вредоносного ПО.    |
+| unknownFutureValue | 4      | Ослабионный участник. |
 
-### <a name="threatassessmentstatus-values"></a>значения Среатассессментстатус
+### <a name="threatassessmentstatus-values"></a>Значения объекта threatAssessmentStatus
 
 | Элемент    | Значение | Описание                              |
 |:----------|:------|:-----------------------------------------|
-| закончен   | 1,1     | Оценка угроз все еще выполняется. |
-| готовы | 2     | Оценка угроз завершена.         |
+| pending   | 1     | Оценка угроз по-прежнему продолжаетработаться. |
+| completed | 2     | Оценка угроз завершена.         |
 
-### <a name="threatassessmentrequestsource-values"></a>значения Среатассессментрекуестсаурце
+### <a name="threatassessmentrequestsource-values"></a>Значения объекта threatAssessmentRequestSource
 
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
-| undefined     | нуль     | Еще не известно.            |
-| user          | 1,1     | Отправка пользователя.         |
-| имени | 2     | Отправка администратором клиента. |
+| undefined     | 0     | Еще не знакомо.            |
+| user          | 1     | Отправка пользователя.         |
+| administrator | 2     | Отправка администратором клиента. |
 
-### <a name="threatassessmentresulttype-values"></a>значения Среатассессментресулттипе
+### <a name="threatassessmentresulttype-values"></a>Значения объекта threatAssessmentResultType
 
 | Элемент             | Значение | Описание                                          |
 |:-------------------|:------|:-----------------------------------------------------|
-| чеккполици        | 1,1     | Результат проверки политики только для `mail` оценки. |
-| просканированные             | 2     | Результат повторного сканирования.                                   |
-| unknownFutureValue | 4     | Элемент Sentinel.                                   |
+| checkPolicy        | 1     | Результат проверки политики, только для `mail` оценки. |
+| rescan             | 2     | Результат повторного сканирования.                                   |
+| unknownFutureValue | 3     | Ослабионный участник.                                   |
 
-### <a name="maildestinationroutingreason-values"></a>значения Маилдестинатионраутингреасон
+### <a name="maildestinationroutingreason-values"></a>Значения mailDestinationRoutingReason
 
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
-| Нет                  | нуль     | Еще не известно.                       |
-| маилфловруле          | 1,1     | Правило транспорта Exchange.            |
-| сафесендер            | 2     | Список надежных отправителей.                   |
-| блоккедсендер         | 4     | Список заблокированных отправителей.                |
-| адванцедспамфилтеринг | 4      | Дополнительные параметры флитеринг нежелательной почты.     |
-| домаиналловлист       | 5      | Список разрешений для домена отправителя.           |
-| домаинблокклист       | 6      | Список заблокированных доменов отправителей.           |
-| нотинаддрессбук      | 7      | Исключите отправителя, которого нет в адресной книге. |
-| фирсттимесендер       | 8      | Заблокировано из-за первого отправителя.   |
-| аутопуржетоинбокс      | 9      | Тиметравел переместить сообщение в папку "Входящие".   |
-| аутопуржетожунк       | 10     | Тиметравел переместить сообщение в папку "Нежелательная почта".    |
-| аутопуржетоделетед    | -11:00    | Сообщение о перемещении Тиметравел в удаленное. |
-| прав              | 12     | Исходящая почта.                      |
-| нотжунк               | 13    | Разрешить из-за отсутствия нежелательной почты.              |
-| почты                  | 14     | Заблокировано из-за нежелательной почты.                |
-| unknownFutureValue    | 15     | Элемент Sentinel.                  |
+| Нет                  | 0     | Еще не знакомо.                       |
+| mailFlowRule          | 1     | Правило транспорта Exchange.            |
+| safeSender            | 2     | Список надежных отправителей.                   |
+| blockedSender         | 3     | список заблокированных отправителей;                |
+| advancedSpamFiltering | 4      | Расширенный тип филянга нежелательной почты.     |
+| domainAllowList       | 5      | Список разрешенных доменов отправителя.           |
+| domainBlockList       | 6      | Список заблокированных доменов отправителя.           |
+| notInAddressBook      | 7      | Исключение отправителя из не адресной книги. |
+| firstTimeSender       | 8      | Заблокировано из-за первого отправителя.   |
+| autoPurgeToInbox      | 9      | Сообщение с перемещением в папку "Входящие".   |
+| autoPurgeToJunk       | 10     | Перемещаемое сообщение в спам в timeTravel.    |
+| autoPurgeToDeleted    | 11    | Сообщение о перемещении TimeTravel для удаления. |
+| исходящие              | 12     | Исходящая почта.                      |
+| notJunk               | 13    | Разрешить по причине не нежелательной почты.              |
+| junk                  | 14     | Заблокировано из-за нежелательной почты.                |
+| unknownFutureValue    | 15     | Ослабионный участник.                  |
 
-### <a name="threatassessmentrequestpivotproperty-values"></a>значения Среатассессментрекуестпивотпроперти
+### <a name="threatassessmentrequestpivotproperty-values"></a>Значения объекта threatAssessmentRequestPivotProperty
 
 | Элемент                       | Значение | Описание                                                            |
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
-| среаткатегори               | 1,1     | Агрегировать запрос на оценку угроз `threatCategory` .               |
-| маилдестинатионраутингреасон | 2     | Агрегировать запрос на оценку угроз `mailDestinationRoutingReason` . |
+| threatCategory               | 1     | Сводный запрос на оценку угроз, который отнесен. `threatCategory`               |
+| mailDestinationRoutingReason | 2     | Сводный запрос на оценку угроз, который отнесен. `mailDestinationRoutingReason` |
 
-### <a name="riskeventtypes-values"></a>значения Рискевенттипес
+### <a name="riskeventtypes-values"></a>Значения свойства riskEventTypes
 
 | Элемент
 |:-------------------------
-| унликелитравел
-| анонимизедипаддресс
-| малиЦиаусипаддресс
-| унфамилиарфеатурес
-| малвареинфектедипаддресс
-| суспиЦиаусипаддресс
-| леакедкредентиалс
-| инвестигатионссреатинтеллиженце
-| шаблонов
+| unlikelyTravel
+| anonymizedIPAddress
+| maliciousIPAddress
+| unfamiliarFeatures
+| malwareInfectedIPAddress
+| suspiciousIPAddress
+| leakedCredentials
+| investigationsThreatIntelligence
+| generic
 | unknownFutureValue
 
-### <a name="openidconnectresponsemode"></a>опенидконнектреспонсемоде
+### <a name="openidconnectresponsemode-values"></a>Значения openIdConnectResponseMode
 | Элемент                
 |:----------------------
 | Нет
@@ -1277,10 +1277,27 @@ Enum для типов значений реестра, определенных
 | Запрос 
 | unknownFutureValue 
 
-### <a name="openidconnectresponsetypes"></a>опенидконнектреспонсетипес
+### <a name="openidconnectresponsetypes-values"></a>Значения openIdConnectResponseTypes
 | Элемент                
 |:----------------------
 | Нет
 | code
 | id_token
 | token
+
+### <a name="wellknownlistname-values"></a>Значения wellknownListName
+| Элемент
+|:----------------------
+| Нет
+| defaultList
+| flaggedEmails
+| unknownFutureValue
+
+### <a name="taskstatus-values"></a>Значения taskStatus
+| Элемент
+|:----------------------
+| notStarted
+| inProgress
+| completed
+| waitingOnOthers
+| deferred

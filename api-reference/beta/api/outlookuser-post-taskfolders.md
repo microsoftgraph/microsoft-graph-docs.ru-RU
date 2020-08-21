@@ -1,24 +1,27 @@
 ---
-title: Создание outlookTaskFolder
-description: Создайте папку задач в группе задач по умолчанию (`My Tasks`) почтового ящика пользователя.
+title: Создание объекта outlookTaskFolder
+description: Создайте папку задач в группе задач по умолчанию `My Tasks` () почтового ящика пользователя.
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 63662dffac9cb36031efd11cac76eb8bd23b0da1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7f1c1767f125da2745837addb7852805630f5231
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456202"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849319"
 ---
-# <a name="create-outlooktaskfolder"></a>Создание outlookTaskFolder
+# <a name="create-outlooktaskfolder"></a>Создание объекта outlookTaskFolder
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте папку задач в группе задач по умолчанию (`My Tasks`) почтового ящика пользователя.
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
+Создайте папку задач в группе задач по умолчанию `My Tasks` () почтового ящика пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,16 +43,16 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [outlookTaskFolder](../resources/outlooktaskfolder.md) в формате JSON.
+## <a name="request-body"></a>Текст запроса
+Представьте в тексте запроса описание объекта [outlookTaskFolder в формате](../resources/outlooktaskfolder.md) JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `201 Created` код ответа [и объект outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере создается папка Task с именем "добровольный" в группе задач`My Tasks`по умолчанию () почтового ящика пользователя.
+В следующем примере создается папка задач "Волонтер" в группе задач по умолчанию `My Tasks` () почтового ящика пользователя.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -79,8 +82,8 @@ Content-length: 60
 
 ---
 
-В тексте запроса добавьте представление объекта [outlookTaskFolder](../resources/outlooktaskfolder.md) в формате JSON.
-##### <a name="response"></a>Ответ
+Представьте в тексте запроса описание объекта [outlookTaskFolder в формате](../resources/outlooktaskfolder.md) JSON.
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

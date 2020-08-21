@@ -1,26 +1,29 @@
 ---
-title: Обновление outlooktaskgroup
-description: Обновление свойств, доступных для записи, для группы задач Outlook.
+title: Обновление объекта outlooktaskgroup
+description: Обновление записываемых свойств группы задач Outlook.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a67b2cfb6f832379cad85538cc77826ca1b40a64
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 70844fbce7a59c2d40b2186b424b1662ed60f9d0
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468070"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849753"
 ---
-# <a name="update-outlooktaskgroup"></a>Обновление outlooktaskgroup
+# <a name="update-outlooktaskgroup"></a>Обновление объекта outlooktaskgroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств, доступных для записи, для группы задач Outlook.
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
-Обратите внимание, что нельзя изменить имя группы задач по умолчанию "Мои задачи".
+
+Обновление записываемых свойств группы задач Outlook.
+
+Обратите внимание, что нельзя изменить имя группы задач по умолчанию — "Мои задачи".
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -41,19 +44,19 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 |:-----------|:-----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|String|Имя группы задач.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `200 OK` код ответа и обновленный [объект outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере имя группы задач изменяется на "личные задачи". 
+В следующем примере имя группы задач изменяется на "Личные задачи". 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

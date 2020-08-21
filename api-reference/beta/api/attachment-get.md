@@ -1,16 +1,16 @@
 ---
 title: Получение вложения
-description: Считывание свойств и связей вложений, вложенных в событие, сообщение, задачу Outlook или POST.
+description: Чтение свойств и связей объекта, вложенного в сведения о событии, сообщение, задачу Outlook или запись.
 localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 30c81b14782d0186a8dc5f94b9556b9a7ace2cb9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 238818c5b64cbb4f17e544b1396942915111da2d
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367722"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849200"
 ---
 # <a name="get-attachment"></a>Получение вложения
 
@@ -18,7 +18,9 @@ ms.locfileid: "43367722"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств, связей или необработанного содержимого вложения, вложенного в пользовательское [событие](../resources/event.md), [сообщение](../resources/message.md), [задачу Outlook](../resources/outlooktask.md)или [POST](../resources/post.md).
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
+Чтение свойств, связей или необработанного содержимого объекта, которое было вложено к событию [пользователя,](../resources/event.md)сообщению, [задаче Outlook](../resources/outlooktask.md)или [message](../resources/message.md) [публикации.](../resources/post.md)
 
 Допустимые типы вложений:
 
@@ -47,10 +49,10 @@ ms.locfileid: "43367722"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-* При доступе к вложениям в сообщениях: mail. Read
-* При доступе к вложениям в событиях: Calendars. Read
-* При доступе к вложениям в задачах Outlook: Tasks. Read
-* При доступе к вложениям в записях групп: Group. Read. ALL
+* При доступе к вложениям в сообщениях: Mail.Read
+* При доступе к вложениям в событиях: Calendars.Read
+* При доступе к вложениям в задачах Outlook: Tasks.Read
+* При доступе к вложениям в записях групп: Group.Read.All
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All
@@ -58,12 +60,12 @@ ms.locfileid: "43367722"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-В этом разделе показан синтаксис HTTP-запроса GET для каждого из сущностей ([event](../resources/event.md), [Message](../resources/message.md), [Task Task](../resources/outlooktask.md)и [POST](../resources/post.md)), поддерживающих вложения:
+В этом разделе показан синтаксис HTTP-запроса GET для каждого из сущностей[(событие,](../resources/event.md) [сообщение,](../resources/message.md) [задача Outlook](../resources/outlooktask.md)и [публикация),](../resources/post.md)которые поддерживают вложения:
 
-- Чтобы получить свойства и связи вложения, укажите идентификатор вложения для индексирования в коллекции **вложений** , прикрепленных к указанному [событию](../resources/event.md), [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или экземпляру [POST](../resources/post.md) .
+- Для получения свойств и связей вложения необходимо указать идентификатор вложения, который [event](../resources/event.md)будет индексироваться в **коллекции** вложений, вложенный в указанное событие, [сообщение,](../resources/message.md) [задачу Outlook](../resources/outlooktask.md)или экземпляр [post.](../resources/post.md)
 - Если вложением является файл или элемент Outlook (контакт, событие или сообщение), вы можете также получить необработанное содержимое вложения, добавив сегмент пути `/$value` в URL-адрес запроса.
 
-Вложение [события](../resources/event.md):
+Вложение [события:](../resources/event.md)
 
 <!-- { "blockType": "ignored" } -->
 
@@ -78,7 +80,7 @@ GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
 GET /groups/{id}/events/{id}/attachments/{id}
 -->
 
-Вложение [сообщения](../resources/message.md) в почтовый ящик пользователя:
+Вложение сообщения [в](../resources/message.md) почтовый ящик пользователя:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -88,7 +90,7 @@ GET /me/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}/$value
 ```
 
-Вложение [сообщения](../resources/message.md) , содержащегося на верхнем уровне [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя:
+Вложение сообщения [в элементе](../resources/message.md) [mailFolder](../resources/mailfolder.md) верхнего уровня в почтовом ящике пользователя:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -98,7 +100,7 @@ GET /me/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-Вложение [сообщения](../resources/message.md) , содержащегося в дочерней папке [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя:
+Вложение сообщения [в дочерней](../resources/message.md) папке элемента [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -108,9 +110,9 @@ GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}/$v
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-В предыдущем примере показан один уровень вложенности, но сообщение может находиться в дочернем элементе дочернего элемента и т. д.
+В предыдущем примере показан один уровень вложенности, но сообщение может находиться в дочерней части дочернего элемента и т. д.
 
-Вложение [задачи Outlook](../resources/outlooktask.md):
+Вложение [задачи Outlook:](../resources/outlooktask.md)
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -120,7 +122,7 @@ GET /me/outlook/tasks/{id}/attachments/{id}/$value
 GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
-Вложение [записи](../resources/post.md) в [поток](../resources/conversationthread.md) , принадлежащее [беседе](../resources/conversation.md) группы:
+Вложение [записи в](../resources/post.md) цепочке, принадлежащей [thread](../resources/conversationthread.md) [беседе](../resources/conversation.md) группы:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -140,13 +142,13 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения метод GET возвращает код `200 OK` отклика. 
+При успешном выполнении метод GET возвращает код `200 OK` ответа. 
 
 При получении свойств и связей вложения текст ответа включает объект [attachment](../resources/attachment.md).
 Кроме того, возвращаются свойства этого типа вложения: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) или [referenceAttachment](../resources/referenceattachment.md).
@@ -159,7 +161,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на получение свойств вложенного файла сообщения.
+Ниже приведен пример запроса на получение свойств вложенного файла в сообщении.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -186,7 +188,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 ---
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -246,7 +248,7 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 ---
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -301,7 +303,7 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 ---
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -412,7 +414,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachmen
 ---
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -459,7 +461,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=/$value
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Фактический текст ответа содержит необработанные байты вложенного файла, которые кратко описаны ниже.
 
 <!-- {
@@ -490,7 +492,7 @@ HTTP/1.1 200 OK
 GET https://graph.microsoft.com/beta/me/messages/AAMkADI5MAAGjk2PxAAA=/attachments/AAMkADI5MAAGjk2PxAAABEgAQACEJqrbJZBNIlr3pGFvd9K8=/$value
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 <!-- {
@@ -539,7 +541,7 @@ END:VCARD
 GET https://graph.microsoft.com/beta/me/messages/AAMkADVIOAAA=/attachments/AAMkADVIOAAABEgAQACvkutl6c4FMifPyS6NvXsM=/$value
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 <!-- {

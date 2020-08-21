@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 89b790ee480fc6c92aff5652fc2c165d6eb828e0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 50bc54603005d226f6c05c03f4ccee772ec1d8fb
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413777"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849718"
 ---
 # <a name="get-outlooktask"></a>Получение outlookTask
 
@@ -18,9 +18,12 @@ ms.locfileid: "43413777"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
 Получение свойств и связей задачи Outlook в почтовом ящике пользователя.
 
-По умолчанию эта операция (а также операции POST, PATCH и [Complete](../api/outlooktask-complete.md) ) Возвращает свойства, связанные с датами, в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
+По умолчанию эта операция (post, PATCH и выполненные [операции](../api/outlooktask-complete.md) задач) возвращает связанные с датами свойства в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -50,19 +53,19 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 | Имя                     | Описание                                       |
 |:-------------------------|:--------------------------------------------------|
 | Авторизация            | Bearer {токен}. Обязательный.                         |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство. |
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в ответе, который будет быть указан в формате UTC, если этот заголовок не указан. Необязательное свойство. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTask](../resources/outlooktask.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `200 OK` код ответа [и объект outlookTask](../resources/outlooktask.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-an-outlook-task"></a>Пример 1: получение задачи Outlook
+### <a name="example-1-get-an-outlook-task"></a>Пример 1. Получение задачи Outlook
 
 #### <a name="request"></a>Запрос
 
@@ -143,11 +146,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Пример 2: получение задачи Outlook со свойствами даты и времени в стандартном Тихоокеанском времени
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Пример 2. Получение задачи Outlook со свойствами даты и времени по тихоокеанскоу времени
 
 #### <a name="request"></a>Запрос
 
-В этом примере используется `Prefer: outlook.timezone` заголовок, чтобы указать, что API должен возвращать в ответе свойства даты и времени в ответе в стандартном Тихоокеанском времени.
+В этом примере `Prefer: outlook.timezone` используется заголовок, чтобы API возвращал свойства даты и времени в ответе по тихоокеанскому времени.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -177,7 +180,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Свойства даты и времени в отклике возвращаются в указанном тихоокеанском стандартном Тихоокеанском времени.
+Ниже приведен пример отклика. Свойства даты и времени в ответе возвращаются в указанном тихоокеанское время.
 
 > **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
