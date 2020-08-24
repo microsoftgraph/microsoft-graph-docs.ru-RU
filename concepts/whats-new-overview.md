@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 2dfeaa8ba656adac608de31028772f8b5665f4f0
-ms.sourcegitcommit: 2e6fb1c0fef8cb3af1a72c115aa54902c71c99f5
+ms.openlocfilehash: 52b4ddad66eff17be04fcee612a839682f086660
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658230"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849333"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -41,6 +41,10 @@ ms.locfileid: "46658230"
 
 ### <a name="teamwork"></a>Командная работа
 Получение [контента, размещенного в сообщении чата](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta), например изображений или фрагментов кода. См. [пример](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta&branch=master#example-2-get-hosted-content-bytes-for-an-image), чтобы получить количество байтов содержимого для изображения.
+
+### <a name="to-do-tasks"></a>Задачи To-Do
+- Появление нового набора API для [Microsoft To Do](todo-concept-overview.md), позволяющего пользователям приложения упорядочивать и отслеживать личные задачи в клиентских приложениях Microsoft 365. Дополнительные сведения см. в статье [Использование API Microsoft To Do](/graph/api/resources/todo-overview?view=graph-rest-beta).
+- Прекращение поддержки [API задач Outlook](/graph/api/resources/outlooktask?view=graph-rest-beta).
 
 ## <a name="july-2020-new-and-generally-available"></a>Июль 2020 г.: новые и общедоступные возможности
 

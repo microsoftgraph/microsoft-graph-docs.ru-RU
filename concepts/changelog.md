@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 9f629543692d514e6ff96f633eeed993e1e90e78
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5d8eea4ba454490434db2cf51f9c6adfe892a562
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810939"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849305"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -110,6 +110,13 @@ ms.locfileid: "46810939"
 |Дополнение|Бета-версия и версия 1.0|Добавлено свойство **publishingState** для ресурса[teamsAppDefinition](/graph/api/resources/teamsappdefinition).|
 |Дополнение|Бета-версия и версия 1.0|Добавлено делегированное разрешение **AppCatalog.Submit** для методов:<br><ul><li> [Публикация приложений](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Удаление приложения](/graph/api/teamsapp-delete)</li>|
 |Дополнение|Бета-версия и версия 1.0|Добавлена поддержка параметра запроса `requiresReview` для методов:<br><ul><li> [Публикация приложений](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Обновление приложения](/graph/api/teamsapp-update?view=graph-rest-beta)|
+
+### <a name="to-do-tasks"></a>Задачи To-Do 
+
+| **Тип изменения** | **Версия** | **Описание** |
+|:---|:---|:---|
+|Дополнение|бета|Представлен API To Do, добавлены ресурсы [todoTask](/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta) и [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta)|
+|Изменение|бета|Прекращена поддержка API задач Outlook|
 
 ## <a name="july-2020"></a>Июль 2020 г.
 
@@ -566,7 +573,7 @@ ms.locfileid: "46810939"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение | 1.0 | Добавлены свойства **externalUserState** и **externalUserStateChangeDateTime** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0). |
+| Дополнение | v1.0 | Добавлены свойства **externalUserState** и **externalUserStateChangeDateTime** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0). |
 | Дополнение | 1.0 | Добавлена поддержка [подписки](/graph/api/resources/subscription) для ресурса **user** в [Microsoft Cloud для Китая под управлением 21Vianet](deployments.md). |
 
 

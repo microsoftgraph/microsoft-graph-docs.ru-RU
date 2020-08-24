@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: fb7fea89a7da3d98899a19614d7c40f76dcb6f8e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8a07a07ceb8af5f5c6db53dd6386caee715f4e4
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447649"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849102"
 ---
 # <a name="itembody-resource-type"></a>Тип ресурса itemBody
 
@@ -41,7 +41,6 @@ ms.locfileid: "42447649"
   "content": "string",
   "contentType": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

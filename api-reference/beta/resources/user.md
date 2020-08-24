@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 2ce47ccf949589856335e73bf67cbe2f84d94ea4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 43c83c07622d5209ec21519438d861300f971a04
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808524"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849774"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -145,6 +145,9 @@ ms.locfileid: "46808524"
 | **Параметры пользователя** |||
 | [Получение параметров](../api/usersettings-get.md) | [userSettings](usersettings.md) | Чтение объекта settings пользователя и организации. |
 | [Обновление параметров](../api/usersettings-update.md) | [userSettings](usersettings.md) | Обновление свойств объекта settings. |
+| **Списки задач To Do** |||
+|[Перечисление списков](../api/todo-list-lists.md) | Коллекция [todoTaskList](todotasklist.md) | Получение всех списков задач в почтовом ящике пользователя. |
+|[Создание todoTasklist](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Создание списка задач To Do в почтовом ящике пользователя. |
 
 ## <a name="properties"></a>Свойства
 
@@ -301,7 +304,7 @@ ms.locfileid: "46808524"
 |scopedRoleMemberOf|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Участие пользователя в административных единицах с ролью в заданной области. Только для чтения. Допускается значение null.|
 |параметры|[userSettings](usersettings.md) | Только для чтения. Допускается значение null.|
 |teamwork|[userTeamwork](userteamwork.md)| Контейнер для функций Microsoft Teams, доступных пользователю. Только для чтения. Допускается значение null.|
-
+|todo|[todo](todo.md)|Представляет службы To Do, доступные пользователю. |
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>Пользовательские настройки языков и региональных форматов
 Ресурс **user** содержит свойство [mailboxSettings](../resources/mailboxsettings.md), включающее предпочитаемый язык пользователя, формат даты и времени, стандартный часовой пояс, и другие специальные параметры для основного почтового ящика Exchange. Эти настройки предназначены для почтовых клиентов и доступны только в том случае, если для пользователя подготовлен почтовый ящик. Вы можете использовать свойство **mailboxSettings**, если ваш сценарий предназначен только для почты, календаря, контактов и задач Outlook.
@@ -427,7 +430,7 @@ ms.locfileid: "46808524"
   "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "drive": {"@odata.type": "microsoft.graph.drive"},
   "drives": [{"@odata.type": "microsoft.graph.drive"}],
-  "insights": {"@odata.type": "microsoft.graph.iteminsights"},
+  "insights": {"@odata.type": "microsoft.graph.itemInsights"},
   "settings": {"@odata.type": "microsoft.graph.userSettings"},
   "events": [{"@odata.type": "microsoft.graph.event"}],
   "extensions": [{"@odata.type": "microsoft.graph.extension"}],

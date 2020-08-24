@@ -4,12 +4,12 @@ description: 'В этой статье рассматривается приме
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 070480f7fbbc5fe3ab44509cb58476bcfb75bc3f
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: 81c1d77ecc2e57dec9ae18bf298d7390b71651dc
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757058"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849095"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>Добавление пользовательских данных в ресурсы user с помощью открытых расширений
 В этой статье рассматривается пример использования *открытых расширений*. 
@@ -23,7 +23,7 @@ ms.locfileid: "46757058"
 3. изменить данные перемещаемого профиля пользователя (значение открытого расширения);
 4. удалить данные перемещаемого профиля пользователя.
 
->**Примечание.** В этой статье показано, как добавлять, считывать, обновлять и удалять открытые расширения для ресурса **user**. Эти методы также поддерживаются для типов ресурсов **administrativeUnit**, **contact**, **device**, **event**, **group**, **group event, group post** и **organizaton**.  
+>**Примечание.** В этой статье показано, как добавлять, считывать, обновлять и удалять открытые расширения для ресурса **user**. Эти методы также поддерживаются для типов ресурсов **administrativeUnit**, **contact**, **device**, **event**, **group**, **organizaton**, **post**, **todoTask** и **todoTaskList**.  
 Вы можете обновлять примеры запросов, используя любые из этих типов ресурсов. Отклики, показанные в этих примерах, могут быть сокращены для удобства чтения. 
 
 ## <a name="1-add-roaming-profile-information"></a>1. Добавление данных перемещаемого профиля
