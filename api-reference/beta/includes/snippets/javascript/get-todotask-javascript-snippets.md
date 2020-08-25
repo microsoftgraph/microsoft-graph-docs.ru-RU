@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: baae32d72e157d4c98dec8bc213f2a15eaba26d7
+ms.openlocfilehash: 6835bdda0d5902d3caa5276e337a85b624772019
 ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872696"
+ms.locfileid: "46873193"
 ---
 ```javascript
 
@@ -15,12 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-const directoryObject = {
-    @odata.id:"https://graph.microsoft.com/beta/directoryObjects/2c891f12-928d-4da2-8d83-7d2434a0d8dc"
-};
-
-let res = await client.api('/directoryRoles/0afed502-2456-4fd4-988e-3c21924c28a7/members/$ref')
+let res = await client.api('/me/todo/lists/35e2-35e2-721a-e235-1a72e2351a7/tasks')
     .version('beta')
-    .post(directoryObject);
+    .get();
 
 ```
