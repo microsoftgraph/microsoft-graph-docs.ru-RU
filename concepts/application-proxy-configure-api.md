@@ -5,12 +5,12 @@ author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 11ce7e7388ce6ab8b17244dbe964ff99cbeaf539
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: cc99857905a0a308f49ddc41bf22da993ca8f1b4
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658058"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873106"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>Автоматизация настройки прокси-сервера приложений с помощью API Microsoft Graph
 
@@ -22,62 +22,44 @@ ms.locfileid: "46658058"
 
 |Тип ресурса |Метод |
 |---------|---------|
-| [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)| [Создание экземпляра applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) |
-|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [онпремисеспублишинг](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)|[Обновление приложения](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Добавление приложения в Коннекторграуп](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
+|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [онпремисеспублишинг](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Создание приложения](https://docs.microsoft.com/graph/api/application-post-applications?view=graph-rest-beta&tabs=http) <br> [Обновление приложения](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Добавление приложения в Коннекторграуп](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
 |[PDIF](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)| [Получение соединителей](https://docs.microsoft.com/graph/api/connector-get?view=graph-rest-beta)
 |[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Создание connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Добавление соединителя для connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
-|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Обновление servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Создание appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
+|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Создать servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-beta&tabs=http) <br> [Обновление servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Создание appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
->[!NOTE]
-> В запросах, показанных в этой статье, используются примеры значений. Их необходимо обновить. Отображаемые объекты ответа также могут быть сокращены для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> [!NOTE]
+> В запросах, показанных в этой статье, используются примеры значений. Их необходимо обновить. Отображаемые объекты ответа также могут быть сокращены для удобочитаемости. 
 
-## <a name="step-1-create-a-custom-application"></a>Шаг 1: Создание настраиваемого приложения
+## <a name="step-1-create-an-application"></a>Шаг 1: создание приложения
 
 ### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>Вход в песочницу Microsoft Graph (рекомендуется), Postman или любой другой используемый клиент API
 
 1. Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
-2. Выберите вариант **Вход с помощью учетной записи Майкрософт** и войдите, используя учетные данные глобального администратора Azure AD или администратора приложения.
+2. Выберите **Вход в систему с помощью Microsoft** и войдите с помощью глобального администратора Azure AD или учетных данных администратора приложения.
 3. После успешного входа вы увидите сведения об учетной записи пользователя в области слева.
 
-### <a name="create-a-custom-application"></a>Создание пользовательского приложения
+### <a name="create-an-application"></a>Создание приложения
 
-Чтобы настроить прокси приложения для приложения с помощью API, необходимо сначала создать пользовательское приложение, а затем обновить свойство **онпремисеспублишинг** приложения, чтобы настроить параметры прокси-сервера приложения.
-Используйте [экземпляр аппликатионтемплате](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) , чтобы создать экземпляр настраиваемого приложения и участника службы в клиенте для управления. ИДЕНТИФИКАТОРом шаблона для настраиваемого приложения является: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
+Чтобы настроить прокси приложения для приложения с помощью API, создайте приложение, добавьте субъект-службу в приложение, а затем обновите свойство **онпремисеспублишинг** приложения, чтобы настроить параметры прокси-сервера приложения. При создании приложения задайте для параметра **сигнинаудиенце** приложения значение "азуреадмйорг".
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_applicationTemplate"
+  "name": "create_application"
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
+POST https://graph.microsoft.com/beta/applications
 Content-type: application/json
 
 {
-  "displayName": "Contoso IWA App"
+  "displayName": "Contoso IWA App",
+  "signInAudience":"AzureADMyOrg"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-applicationtemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-applicationtemplate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-applicationtemplate-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -91,75 +73,124 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.applicationServicePrincipal",
-    "application": {
-        "objectId": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
-        "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
-        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
-        "displayName": "Contoso IWA App",
-        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
-        "identifierUris": [],
-        "publicClient": null,
-        "replyUrls": [],
-        "logoutUrl": null,
-        "samlMetadataUrl": null,
-        "errorUrl": null,
-        "groupMembershipClaims": null,
-        "availableToOtherTenants": false
-    },
-    "servicePrincipal": {
-        "objectId": "b00c693f-9658-4c06-bd1b-c402c4653dea",
-        "deletionTimestamp": null,
-        "accountEnabled": true,
-        "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
-        "appDisplayName": "Contoso API",
-        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
-        "appRoleAssignmentRequired": true,
-        "displayName": "Contoso API",
-        "errorUrl": null,
-        "logoutUrl": null,
-        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
-        "samlMetadataUrl": null,
-        "microsoftFirstParty": null,
-        "publisherName": "f/128 Photography",
-        "preferredTokenSigningKeyThumbprint": null,
-        "replyUrls": [],
-        "servicePrincipalNames": [
-            "d7fbfe28-c60e-46d2-8335-841923950d3b"
-        ],
-        "tags": [
-            "WindowsAzureActiveDirectoryIntegratedApp",
-            "WindowsAzureActiveDirectoryCustomSingleSignOnApplication"
-        ],
-        "notificationEmailAddresses": [],
-        "keyCredentials": [],
-        "passwordCredentials": []
-    }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
+  "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
+  "deletedDateTime": null,
+  "addIns": [],
+  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
+  "applicationTemplateId": null,
+  "identifierUris": [],
+  "createdDateTime": "2020-08-11T21:07:47.5919755Z",
+  "description": null,
+  "displayName": "Contoso IWA App",
+  "isAuthorizationServiceEnabled": false,
+  "isDeviceOnlyAuthSupported": null,
+  "isFallbackPublicClient": null,
+  "groupMembershipClaims": null,
+  "notes": null,
+  "optionalClaims": null,
+  "orgRestrictions": [],
+  "publisherDomain": "f128.info",
+  "signInAudience": "AzureADandPersonalMicrosoftAccount",
+  "tags": [],
+  "tokenEncryptionKeyId": null,
+  "uniqueName": null,
+  "verifiedPublisher": {
+      "displayName": null,
+      "verifiedPublisherId": null,
+      "addedDateTime": null
+  },
 }
 ```
 
-
-### <a name="retrieve-app-object-id-and-service-principal-object-id"></a>Получение идентификаторов объектов для приложения и субъекта-службы
-Из отклика на предыдущий вызов извлеките и сохраните идентификаторы объекта для приложения и субъекта-службы.
+### <a name="retrieve-the-application-object-id-and-appid"></a>Получение идентификатора и appId объекта Application
+Используйте ответ из предыдущего вызова, чтобы получить и сохранить идентификатор объекта приложения и идентификатор приложения.
 ```
 "application": {
-    "objectId": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83"
-    }
-"servicePrincipal": {
-    "objectId": "b00c693f-9658-4c06-bd1b-c402c4653dea"
-    }
+  "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
+  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b"
+}
+```
+### <a name="create-a-serviceprincipal-for-the-application-and-add-required-tags"></a>Создание servicePrincipal для приложения и добавление обязательных тегов
+Используйте **AppID** , чтобы создать субъекта службы для приложения. Затем добавьте теги, необходимые для настройки прокси приложения для приложения.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "create_servicePrincipal"
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/serviceprincipals
+Content-type: appplication/json
+
+{
+  "appId":"d7fbfe28-c60e-46d2-8335-841923950d3b",
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp",
+    "WindowsAzureActiveDirectoryOnPremApp"
+  ]
+}
+```
+
+#### <a name="response"></a>Ответ
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals/$entity",
+  "id": "a8cac399-cde5-4516-a674-819503c61313",
+  "deletedDateTime": null,
+  "accountEnabled": true,
+  "alternativeNames": [],
+  "createdDateTime": null,
+  "deviceManagementAppType": null,
+  "appDescription": null,
+  "appDisplayName": "Contoso IWA App",
+  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
+  "applicationTemplateId": null,
+  "appOwnerOrganizationId": "7918d4b5-0442-4a97-be2d-36f9f9962ece",
+  "appRoleAssignmentRequired": false,
+  "description": null,
+  "displayName": "vtestapi2",
+  "errorUrl": null,
+  "homepage": null,
+  "isAuthorizationServiceEnabled": false,
+  "loginUrl": null,
+  "logoutUrl": null,
+  "notes": null,
+  "notificationEmailAddresses": [],
+  "preferredSingleSignOnMode": null,
+  "preferredTokenSigningKeyEndDateTime": null,
+  "preferredTokenSigningKeyThumbprint": null,
+  "publisherName": "f/128 Photography",
+  "replyUrls": [],
+  "samlMetadataUrl": null,
+  "samlSingleSignOnSettings": null,
+  "servicePrincipalNames": [
+      "b92b92d4-3874-46a5-b715-a00ea01cff93"
+  ],
+  "servicePrincipalType": "Application",
+}
 ```
 
 ## <a name="step-2-configure-application-proxy-properties"></a>Шаг 2: Настройка свойств прокси приложения
 
 ### <a name="set-the-onpremisespublishing-configuration"></a>Настройка конфигурации Онпремисеспублишинг
 
-Используйте свойство applicationId из предыдущего шага, чтобы настроить прокси приложения для приложения и обновить свойство **онпремисеспублишинг** до нужной конфигурации. В этом примере используется приложение с внутренним URL-адресом: `https://contosoiwaapp.com` и с использованием домена по умолчанию для внешнего URL-адреса: `https://contosoiwaapp-contoso.msappproxy.net` . 
+С помощью идентификатора объекта Application из предыдущего шага Настройте прокси приложения для приложения и обновите свойство **онпремисеспублишинг** до нужной конфигурации. В этом примере используется приложение с внутренним URL-адресом: `https://contosoiwaapp.com` и с использованием домена по умолчанию для внешнего URL-адреса: `https://contosoiwaapp-contoso.msappproxy.net` . 
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_application"
@@ -177,22 +208,8 @@ Content-type: appplication/json
     }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-application-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-application-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -202,11 +219,10 @@ Content-type: appplication/json
 ```http
 HTTP/1.1 204 No content
 ```
-### <a name="set-the-redirecturi-identifieruri-and-homepageurl-properties"></a>Установка свойств redirectUri, Идентифиерури и Хомепажеурл
-Обновите **redirectUri**, **идентифиерури**и **хомепажеурл** приложения до внешнего URL-адреса.
+### <a name="complete-the-configuration-of-the-application"></a>Завершение настройки приложения
+Обновите свойства **redirectUri**, **идентифиерури**и **хомепажеурл** приложения для внешнего ур, настроенного в свойстве **онпремисеспублишинг** . Затем обновите [имплиЦитгрантсеттингс](https://docs.microsoft.com/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) до `true` **енабледтокениссуанце** и `false` для **енабледакцесстокениссуанце**.
 
 #### <a name="request"></a>Запрос
-
 <!-- {
   "blockType": "request",
   "name": "update_application"
@@ -216,15 +232,20 @@ HTTP/1.1 204 No content
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 Content-type: appplication/json
 
-{   
-   "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-   "web": {
-      "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-      "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-   }
+{
+  "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
+  "web": {
+    "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
+    "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net",
+    "implicitGrantSettings": {
+      "enableIdTokenIssuance": true,
+      "enableAccessTokenIssuance": false
+    }
+  }
 }
 ```
-#### <a name="response"></a>Отклик
+
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -243,8 +264,6 @@ HTTP/1.1 204 No content
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "connector"
@@ -254,22 +273,8 @@ HTTP/1.1 204 No content
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
 
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/connector-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/connector-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/connector-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -326,7 +331,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -364,7 +369,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -379,8 +384,6 @@ HTTP/1.1 204 No content
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "connectorGroup"
@@ -394,21 +397,8 @@ Content-type: application/json
 "@odata.id":"https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/connectorgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/connectorgroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/connectorgroup-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -421,7 +411,6 @@ HTTP/1.1 204 No content
 
 ## <a name="step-4-configure-single-sign-on"></a>Шаг 4: Настройка единого входа
 Это приложение использует встроенную проверку подлинности Windows (ИВА). Чтобы настроить Ива, установите свойства единого входа в тип ресурса [синглесигнонсеттингс](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) .
-
 
 #### <a name="request"></a>Запрос
 
@@ -464,29 +453,15 @@ HTTP/1.1 204 No content
 #### <a name="request"></a>Запрос
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoles
+GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoles
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -497,7 +472,7 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('b00c693f-9658-4c06-bd1b-c402c4653dea')/appRoles",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('a8cac399-cde5-4516-a674-819503c61313')/appRoles",
     "value": [
         {
             "allowedMemberTypes": [
@@ -543,10 +518,9 @@ Content-type: application/json
 | principalId | Идентификатор пользователя, который будет назначен приложению | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
 | principalType | Тип пользователя | Пользователь |
 | аппролеид |  Идентификатор роли приложения по умолчанию для приложения | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
-| resourceId | Идентификатор servicePrincipal приложения | b00c693f-9658-4c06-bd1b-c402c4653dea |
+| resourceId | Идентификатор servicePrincipal приложения | a8cac399-cde5-4516-a674-819503c61313 |
 
 #### <a name="request"></a>Запрос
-
 
 <!-- {
   "blockType": "ignored",
@@ -561,7 +535,7 @@ Content-type: appRoleAssignments/json
   "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
   "principalType": "User",
   "appRoleId":"18d14569-c3bd-439b-9a66-3a2aee01d14f",
-  "resourceId":"b00c693f-9658-4c06-bd1b-c402c4653dea"
+  "resourceId":"a8cac399-cde5-4516-a674-819503c61313"
 }
 ```
 
@@ -584,12 +558,11 @@ Content-type: application/json
     "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
     "principalType": "User",
     "resourceDisplayName": "Contoso IWA App",
-    "resourceId": "b00c693f-9658-4c06-bd1b-c402c4653dea"
+    "resourceId": "a8cac399-cde5-4516-a674-819503c61313"
 }
 ```
 
 Дополнительные сведения см. в документации по типу ресурса [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-beta).
-
 
 
 ## <a name="additional-steps"></a>Дополнительные действия

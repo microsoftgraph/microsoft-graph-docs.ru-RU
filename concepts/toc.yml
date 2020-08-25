@@ -457,8 +457,6 @@ items:
           - name: Azure AD Graph
             displayName: 'Migration, Azure AD Graph'
             items:
-              - name: Обзор
-                href: migrate-azure-ad-graph-overview.md
               - name: Контрольный список для переноса приложений
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: 1. Проверка различий

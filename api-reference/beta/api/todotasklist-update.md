@@ -1,21 +1,21 @@
 ---
-title: Обновление объекта todoTaskList
-description: Обновление свойств объекта todoTaskList.
+title: Обновление Тодотасклист
+description: Обновление свойств объекта Тодотасклист.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bedcf564fdc470a6bfcf1dacafe2efa82694e0ed
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: fe6a11f889978cd22807816f61be1c85ab7ec912
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46850051"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873125"
 ---
-# <a name="update-todotasklist"></a>Обновление объекта todoTaskList
-Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="update-todotasklist"></a>Обновление Тодотасклист
+Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [todoTaskList.](../resources/todotasklist.md)
+Обновление свойств объекта [тодотасклист](../resources/todotasklist.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,23 +44,25 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-Представьте в тексте запроса описание объекта [todoTaskList в формате JSON.](../resources/todotasklist.md)
+В тексте запроса добавьте представление объекта [тодотасклист](../resources/todotasklist.md) в формате JSON.
 
-В приведенной ниже таблице указаны свойства, необходимые при создании [объекта todoTaskList.](../resources/todotasklist.md)
+В следующей таблице приведены свойства, необходимые при создании [тодотасклист](../resources/todotasklist.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Поле с информацией об обновленных заголовках списка задач.|
+|displayName|Строка|Поле, указывающее обновленное название списка задач.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код `200 OK` отклика и [обновленный объект todoTaskList](../resources/todotasklist.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [тодотасклист](../resources/todotasklist.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADIyAAAhrbPWAAA="],
@@ -76,6 +78,12 @@ Content-length: 167
   "displayName": "Vacation Plan",
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-todotasklist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

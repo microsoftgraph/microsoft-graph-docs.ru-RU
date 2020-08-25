@@ -3,12 +3,12 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 3a2f253ffdb80c2bc39907537e27d7399c573c2f
-ms.sourcegitcommit: 2e6fb1c0fef8cb3af1a72c115aa54902c71c99f5
+ms.openlocfilehash: de4aec69c62c611532143d2dfee2340b485d3a0f
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658251"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873078"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
 
@@ -756,7 +756,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 ### <a name="identity-and-access"></a>Удостоверения и доступ
 [Поставщики удостоверений](/graph/api/resources/identityprovider?view=graph-rest-1.0)
 [Руководство по улучшенной проверке подлинности](/graph/auth)
-[Миграция приложений из Azure AD Graph в Microsoft Graph](migrate-azure-ad-graph-overview.md)
+[Миграция приложений из Azure AD Graph в Microsoft Graph](migrate-azure-ad-graph-planning-checklist.md)
 
 ### <a name="sdks"></a>Пакеты SDK
 [Руководство по пакетам SDK](/sdks/sdks-overview.md) Фрагменты API ([пример](/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code))
