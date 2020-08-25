@@ -3,17 +3,21 @@ title: Контрольный список планирования миграц
 description: Контрольный список для переноса приложений из Azure AD Graph в Microsoft Graph
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 59114221b91f6dc1800f9f1601cb2e2c06709ff8
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.prod: azure-active-directory
+ms.openlocfilehash: 5f859861c7c656f9287f4f6b3742f976c75299bc
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926787"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872903"
 ---
 # <a name="app-migration-planning-checklist"></a>Контрольный список планирования миграции приложений
 
-Используйте следующий контрольный список для планирования миграции:
+> [!Important]
+> API Graph Azure AD теперь устарел. Мы будем продолжать предоставлять техническую поддержку и обновления для системы безопасности, но не будут предоставлять обновления компонентов.
+> Начиная с 30 июня 2022 г. мы завершаем поддержку Azure AD Graph и больше не будут предоставлять техническую поддержку или обновления для системы безопасности. Приложения, использующие Azure AD Graph после этого, больше не будут получать ответы от конечной точки Azure AD Graph.
+
+Используйте следующий контрольный список для планирования миграции.
 
 ## <a name="step-1-review-the-differences-between-the-apis"></a>Шаг 1: Ознакомьтесь с различиями между API
 
@@ -55,7 +59,4 @@ ms.locfileid: "42926787"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Сведения о [синтаксисе вызова рескуест](migrate-azure-ad-graph-request-differences.md) для начала действия 1: обзор различий API.
-- Ознакомьтесь с основными понятиями и рекомендациями [Microsoft Graph](/graph/overview) .
-- Поэкспериментируйте с Microsoft Graph с помощью [проводника диаграмм](https://aka.ms/ge) .
-- Дополнительные сведения об обновлениях хода выполнения и временных шкалах можно найти в [статье Microsoft Graph или Azure AD Graph](https://developer.microsoft.com/en-us/graph/blogs/microsoft-graph-or-azure-ad-graph/).
+- Сведения о [синтаксисе запроса request](migrate-azure-ad-graph-request-differences.md) для начала действия 1: обзор различий API.

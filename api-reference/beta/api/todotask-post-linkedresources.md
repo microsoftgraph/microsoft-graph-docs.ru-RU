@@ -1,21 +1,21 @@
 ---
-title: Создание linkedResources
-description: Создание объекта linkedResources.
+title: Создание Линкедресаурцес
+description: Создание нового объекта Линкедресаурцес.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5180b5a38dafceb30871e574208d5321c8b0c38c
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 4311af292480a51eeaaefabb1ef8cf277b211e2c
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46850066"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873251"
 ---
-# <a name="create-linkedresources"></a>Создание linkedResources
-Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="create-linkedresources"></a>Создание Линкедресаурцес
+Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта linkedResources.
+Создание нового объекта Линкедресаурцес.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,27 +44,29 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-Представьте в тексте запроса описание объекта [linkedResource в формате](../resources/linkedresource.md) JSON.
+В тексте запроса добавьте представление объекта [линкедресаурце](../resources/linkedresource.md) в формате JSON.
 
-В приведенной ниже таблице указаны свойства, необходимые при создании [объекта linkedResource.](../resources/linkedresource.md)
+В следующей таблице приведены свойства, необходимые при создании [линкедресаурце](../resources/linkedresource.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Сгенерированный сервером ИД связанной сущности. Наследуется от [объекта.](../resources/entity.md)|
-|webUrl|String|Глубокая ссылка на связанный объект |
-|applicationName|String|Поле, указывающее имя приложения источника, отправляющего связанную сущность |
-|displayName|String|Поле, обозначающее заголовок связанной сущности. |
+|id|Строка|Созданный сервером идентификатор связанной сущности, унаследованной от [объекта](../resources/entity.md)|
+|webUrl|String|Прямой ссылки на связанный объект |
+|applicationName|String|Поле, указывающее имя приложения источника, отправляющего связанный объект |
+|displayName|Строка|Поле, указывающее название связанного объекта. |
 |externalId|String|Идентификатор объекта, связанного с этой задачей в сторонней или партнерской системе |
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает `201 Created` код ответа [и объект linkedResource](../resources/linkedresource.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [линкедресаурце](../resources/linkedresource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29"],
@@ -84,6 +86,12 @@ Content-length: 166
   "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-linkedresource-from-linkedresources-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

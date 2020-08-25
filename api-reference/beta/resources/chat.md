@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 827fb1564c9fc0c963933f94a6e04340b500c21c
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: c536e94230866b209f6d0dffef31bbf23c49b71b
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630307"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872805"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса Chat
 
@@ -22,10 +22,10 @@ ms.locfileid: "46630307"
 
 ## <a name="methods"></a>Методы
 
-|  Метод       |  Возвращаемый тип  | Описание| Permissions |
+|  Метод       |  Возвращаемый тип  | Описание| Разрешения |
 |:---------------|:--------|:----------|-----------|
-|[Список чатов](../api/chat-list.md) | Коллекция [чата](channel.md) | Получение списка сеансов, в которые входит пользователь.| **Только делегированные** |
-|[Получение чата](../api/chat-get.md) | [отображаются](channel.md) | Чтение свойств и связей чата.| **Только делегированные** |
+|[Список чатов](../api/chat-list.md) | Коллекция [чата](chat.md) | Получение списка сеансов, в которые входит пользователь.| **Только делегированные** |
+|[Получение чата](../api/chat-get.md) | [chat](chat.md) | Чтение свойств и связей чата.| **Только делегированные** |
 |[Список членов чата](../api/conversationmember-list.md) | Коллекция [conversationmember](conversationmember.md) | Получение списка всех пользователей в чате.| Делегирование и приложение * |
 |[Получение члена чата](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Получение одного пользователя в чате.| Делегирование и приложение * |
 |[Список сообщений в чате](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. | Делегирование и приложение * |

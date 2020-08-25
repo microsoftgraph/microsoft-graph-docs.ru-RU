@@ -4757,6 +4757,8 @@ items:
             href: resources/team.md
             items:
               - name: Создание команды
+                href: api/team-post.md
+              - name: Создание команды из группы
                 href: api/team-put-teams.md
               - name: Получение команды
                 href: api/team-get.md

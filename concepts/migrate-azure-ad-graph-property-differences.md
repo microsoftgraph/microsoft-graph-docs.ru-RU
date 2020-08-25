@@ -3,13 +3,13 @@ title: Различия свойств между Graph Azure AD и Microsoft Gr
 description: Описываются различия свойств между ресурсами Azure AD Graph (сущностями) и Microsoft Graph, чтобы обеспечить соответствующим образом переносить приложения.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6ce8cda894006830db456e30f1809d66ccc24025
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.prod: azure-active-directory
+ms.openlocfilehash: d9883fd85bfeaee2c6043c706c3e3c41061b90fa
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863868"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873400"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия свойств между Graph Azure AD и Microsoft Graph
 
@@ -61,7 +61,7 @@ ms.locfileid: "44863868"
 | **акцептмаппедклаимс**             | бета-версия &nbsp; - &nbsp; **API/акцептмаппедклаимс** <br> API v 1.0 &nbsp; - &nbsp; **/акцептмаппедклаимс**                                                       | Акцептмаппедклаимс теперь является частью нового ресурса API.                                                                                                                                                                                                                                                                      |
 | **С availabletoothertenants**        | бета- &nbsp; - &nbsp; **сигнинаудиенце** <br> Версия 1.0 &nbsp; - &nbsp; **сигнинаудиенце**                                                                      |                                                                                                                                                                                                                                                                                                                              |
 | **errorUrl**                       | бета-версия &nbsp; - &nbsp; _недоступна_ <br> Версия 1.0 &nbsp; - &nbsp; _недоступна_                                                                              | Это свойство является устаревшим.                                                                                                                                                                                                                                                                                                 |
-| **главную**                       | бета-версия (бета-версия) &nbsp; - &nbsp; **/хомепажеурл** <br> Версия 1.0 &nbsp; - &nbsp; **Web/хомепажеурл**                                                                     | Домашняя страница теперь является частью нового веб-ресурса.                                                                                                                                                                                                                                                                                |
+| **homepage**                       | бета-версия (бета-версия) &nbsp; - &nbsp; **/хомепажеурл** <br> Версия 1.0 &nbsp; - &nbsp; **Web/хомепажеурл**                                                                     | Домашняя страница теперь является частью нового веб-ресурса.                                                                                                                                                                                                                                                                                |
 | **информатионалурлс**              | &nbsp; - &nbsp; **сведения о** бета-версии <br> Версия 1.0 &nbsp; - &nbsp; **сведения**                                                                                           |                                                                                                                                                                                                                                                                                                                              |
 | **knownClientApplications**        | бета-версия &nbsp; - &nbsp; **API/knownClientApplications** <br> API v 1.0 &nbsp; - &nbsp; **/knownClientApplications**                                               | knownClientApplications теперь является частью нового ресурса API.                                                                                                                                                                                                                                                                 |
 | **logoutUrl**                      | бета-версия (бета-версия) &nbsp; - &nbsp; **/логаутурл** <br> Версия 1.0 &nbsp; - &nbsp; **Web/логаутурл**                                                                         | Логаутурл теперь является частью веб-ресурса.                                                                                                                                                                                                                                                                                   |
@@ -90,7 +90,7 @@ ms.locfileid: "44863868"
 
 |Azure AD Graph <br>свойство (v 1.6) |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **Йорке** | бета- &nbsp; - &nbsp; **адреса (город)** <br> адреса версии 1.0 &nbsp; - &nbsp; **(город)**  | Свойство City является частью коллекции адресов Resource. |
+| **city** | бета- &nbsp; - &nbsp; **адреса (город)** <br> адреса версии 1.0 &nbsp; - &nbsp; **(город)**  | Свойство City является частью коллекции адресов Resource. |
 | **указания** | бета- &nbsp; - &nbsp; **адреса** &nbsp; **(countryOrRegion)**<br> адреса версии 1.0 &nbsp; - &nbsp; **addresses** &nbsp; **(countryOrRegion)**  | Свойство countryOrRegion является частью семейства ресурсов Addresses. |
 | **дирсинценаблед** | бета- &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> Версия 1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled**   | |
 | **факсимилетелефоненумбер** | бета- &nbsp; - &nbsp; **телефоны** &nbsp; **(бусинессфакс)** <br> Телефоны версии 1.0 &nbsp; - &nbsp; **phones** &nbsp; **(бусинессфакс)** | Теперь в семействе phones, поддерживающем мобильные, коммерческие и Бусинессфакс. |
@@ -135,7 +135,7 @@ ms.locfileid: "44863868"
 
 |Azure AD Graph <br>свойство (v 1.6) |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **name** | &nbsp; - &nbsp; **ИД** бета-версии <br> Версия 1.0 &nbsp; - &nbsp; **ID** | В Microsoft Graph уникальный идентификатор (ID) содержит имя домена; `name`свойство не существует. |
+| **name** | &nbsp; - &nbsp; **ИД** бета-версии <br> Версия 1.0 &nbsp; - &nbsp; **ID** | В Microsoft Graph уникальный идентификатор (ID) содержит имя домена; `name` свойство не существует. |
 | **форцеделетестате** |  &nbsp; - &nbsp; **состояние** бета-версии <br> &nbsp; - &nbsp; **состояние** v 1.0 | В Azure AD Graph существуют отдельные свойства состояния Форцеделете и domain.  В Microsoft Graph все состояния домена обрабатываются свойством State. |
 | **исдефаултфорклаудредиректионс** | бета-версия &nbsp; - &nbsp; _ &nbsp; пока &nbsp; недоступна_&nbsp;<br> Версия 1.0 &nbsp; - &nbsp; _еще недоступна_ | |
 
@@ -167,7 +167,7 @@ ms.locfileid: "44863868"
 | **апповнертенантид** | бета- &nbsp; - &nbsp; **апповнерорганизатионид** <br> Версия 1.0 &nbsp; - &nbsp; **апповнерорганизатионид** | Изменен. |
 | **информатионалурлс**| &nbsp; - &nbsp; **сведения о** бета-версии <br> Версия 1.0 &nbsp; - &nbsp; **сведения** | |
 | **oauth2Permissions** | бета- &nbsp; - &nbsp; **публишедпермиссионскопес** <br> Версия 1.0 &nbsp; - &nbsp; **oauth2PermissionScopes** | Изменен. |
-| **преферредтокенсигнингкэйенддатетиме** | бета-версия &nbsp; - &nbsp; _пока недоступна_ <br> Версия 1.0 &nbsp; -  _еще недоступна_ | |
+| **preferredTokenSigningKeyEndDateTime** | бета-версия &nbsp; - &nbsp; _пока недоступна_ <br> Версия 1.0 &nbsp; -  _еще недоступна_ | |
 | **signInAudience** | бета-версия &nbsp; - &nbsp; _пока недоступна_ <br> Версия 1.0 &nbsp; -  _еще недоступна_ | |
 | **сервицеендпоинтс** | &nbsp; - &nbsp; **Конечная точка** бета-версии <br> &nbsp; - &nbsp; **Конечная точка** версии 1.0 | Изменен. |
 
@@ -202,5 +202,5 @@ ms.locfileid: "44863868"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте о [различиях между методами](migrate-azure-ad-graph-method-differences.md) в Azure AD Graph и Microsoft Graph.
-- Ознакомьтесь с основными понятиями и рекомендациями [Microsoft Graph](/graph/overview) .
-- Поэкспериментируйте с Microsoft Graph с помощью [проводника диаграмм](https://aka.ms/ge) .
+- Снова просмотрите [Контрольный список](migrate-azure-ad-graph-planning-checklist.md) .
+

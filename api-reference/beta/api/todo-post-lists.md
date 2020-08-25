@@ -1,21 +1,21 @@
 ---
-title: Создание объекта todoTaskList
-description: Создание объекта lists.
+title: Создание Тодотасклист
+description: Создание нового объекта lists.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2628721edff8ad1dad559e590c3dade972220c73
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: a0753faa0c417d8e3f5fec326b27043e14b5a5ad
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46850075"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872866"
 ---
-# <a name="create-todotasklist"></a>Создание объекта todoTaskList
+# <a name="create-todotasklist"></a>Создание Тодотасклист
 Пространство имен: microsoft.graph
 
-Создание объекта lists.
+Создание нового объекта lists.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,21 +44,23 @@ POST /users/{id|userPrincipalName}/todo/lists
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-Представьте в тексте запроса описание объекта [todoTaskList в формате JSON.](../resources/todotasklist.md)
+В тексте запроса добавьте представление объекта [тодотасклист](../resources/todotasklist.md) в формате JSON.
 
-В приведенной ниже таблице указаны свойства, необходимые при создании [объекта todoTaskList.](../resources/todotasklist.md)
+В следующей таблице приведены свойства, необходимые при создании [тодотасклист](../resources/todotasklist.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Поле, обозначающее заголовок списка задач.|
+|displayName|Строка|Поле, указывающее название списка задач.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код `201 Created` ответа [и объект todoTaskList](../resources/todotasklist.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [тодотасклист](../resources/todotasklist.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_todotasklist_from_lists"
@@ -73,6 +75,12 @@ Content-length: 60
   "displayName": "Travel items",
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-todotasklist-from-lists-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

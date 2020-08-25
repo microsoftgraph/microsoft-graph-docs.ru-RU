@@ -4,12 +4,12 @@ description: Инструкции по обработке ошибок для AP
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5b8fed4992376247bb57c3c9288cea8f66d36082
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 3d7da5aa1c0891b148affd8fd66f9926ce2053e7
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658141"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873372"
 ---
 # <a name="error-handling-for-excel-apis-in-microsoft-graph"></a>Обработка ошибок для API Excel в Microsoft Graph
 
@@ -120,7 +120,7 @@ Content-type: application/json
 
 ### <a name="3-parse-the-top-level-error-code"></a>3. Проанализируйте код ошибки верхнего уровня.
 
-Если вы не можете найти код ошибки второго уровня, приведенный в разделе [коды ошибок](/concepts/workbook-error-codes.md) , рекомендуется следовать инструкциям, приведенным для ошибок верхнего уровня, которые привязаны к коду состояния. Подробные сведения о кодах ошибок и сообщениях об ошибках верхнего уровня приведены в статье [коды ошибок](/concepts/workbook-error-codes.md).
+Если вы не можете найти код ошибки второго уровня, приведенный в разделе [коды ошибок](workbook-error-codes.md) , рекомендуется следовать инструкциям, приведенным для ошибок верхнего уровня, которые привязаны к коду состояния. Подробные сведения о кодах ошибок и сообщениях об ошибках верхнего уровня приведены в статье [коды ошибок](workbook-error-codes.md).
 
 ### <a name="4-parse-the-status-code"></a>4. анализ кода состояния
 

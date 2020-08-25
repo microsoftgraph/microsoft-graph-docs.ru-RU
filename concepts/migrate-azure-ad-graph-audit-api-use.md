@@ -3,13 +3,13 @@ title: Изучение использования приложений API Azur
 description: Сведения о том, как выполнять аудит API Azure Active Directory (Azure AD) для переноса приложения в API Microsoft Graph.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 14cc61039d97fa43f64599310cf86cce6c348fb2
-ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
+ms.prod: azure-active-directory
+ms.openlocfilehash: 405c68d1e0f88af33caa7b5f4c083bd1acdec82d
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645250"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872966"
 ---
 # <a name="examine-azure-ad-graph-apis-app-usage"></a>Изучение использования приложений API Azure AD Graph
 
@@ -34,5 +34,5 @@ Microsoft Graph поддерживает многие функции и возм
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о [регистрации приложений, разрешениях и различиях](migrate-azure-ad-graph-app-registration.md) между Azure AD Graph и Microsoft Graph.
-- Ознакомьтесь с основными понятиями и рекомендациями [Microsoft Graph](/graph/overview) .
-- Поэкспериментируйте с Microsoft Graph с помощью [проводника диаграмм](https://aka.ms/ge) .
+- Снова просмотрите [Контрольный список](migrate-azure-ad-graph-planning-checklist.md) .
+

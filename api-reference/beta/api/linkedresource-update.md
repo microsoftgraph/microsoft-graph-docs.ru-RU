@@ -1,21 +1,21 @@
 ---
-title: Обновление linkedResource
-description: Обновление свойств объекта linkedResource.
+title: Обновление Линкедресаурце
+description: Обновление свойств объекта Линкедресаурце.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b87170c634f1bd0a95bfac6118f97554426f2ecb
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 0ce6ff6c8fd519888682e53939238dab02215007
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46850083"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872573"
 ---
-# <a name="update-linkedresource"></a>Обновление linkedResource
-Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="update-linkedresource"></a>Обновление Линкедресаурце
+Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [linkedResource.](../resources/linkedresource.md)
+Обновление свойств объекта [линкедресаурце](../resources/linkedresource.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,21 +44,23 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/l
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-Представьте в тексте запроса описание объекта [linkedResource в формате](../resources/linkedresource.md) JSON.
+В тексте запроса добавьте представление объекта [линкедресаурце](../resources/linkedresource.md) в формате JSON.
 
-В приведенной ниже таблице указаны свойства, необходимые при обновлении [ресурса linkedResource.](../resources/linkedresource.md)
+В следующей таблице приведены свойства, необходимые при обновлении [линкедресаурце](../resources/linkedresource.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Сгенерированный сервером ИД связанной сущности. Наследуется от [объекта.](../resources/entity.md)|
+|id|Строка|Созданный сервером идентификатор связанной сущности, унаследованной от [объекта](../resources/entity.md)|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код `200 OK` ответа и [обновленный объект linkedResource](../resources/linkedresource.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [линкедресаурце](../resources/linkedresource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29", "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9"],
@@ -77,6 +79,12 @@ Content-length: 166
   "displayName": "Microsoft",
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-linkedresource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

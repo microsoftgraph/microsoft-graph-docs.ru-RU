@@ -3,13 +3,13 @@ title: Запрос различий между Azure AD Graph и Microsoft Grap
 description: Сведения о том, как запросы Microsoft Graph отличаются от запросов Azure AD, которые помогают перенести приложения в более новую службу..
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8130daf4037e6ef1a433ca537a8fecec996a34ce
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.prod: azure-active-directory
+ms.openlocfilehash: c4255b31f7825df3b9c0d3d44e7003e27e72b6a8
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845920"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873393"
 ---
 # <a name="request-differences-between-azure-ad-graph-and-microsoft-graph"></a>Запрос различий между Azure AD Graph и Microsoft Graph
 
@@ -43,12 +43,15 @@ Microsoft Graph и API Graph для Azure AD — это интерфейсы API
 
 В Azure AD Graph можно использовать следующий запрос:
 
-`https://graph.windows.net/contoso.com/users?$filter=startswith(givenName,'Dan')&api-version=1.6`
+`GET https://graph.windows.net/contoso.com/users?$filter=startswith(givenName,'Dan')&api-version=1.6` также
+
+`GET https://graph.windows.net/myOrganization/users?$filter=startswith(givenName,'Dan')&api-version=1.6`
+
 
 Этот запрос:
 
 - Targets версии 1,6 для Azure AD Graph.
-- Задает `contoso.com` идентификатор клиента.
+- Задает `contoso.com` идентификатор клиента. В альтернативу показано использование псевдонима на `myOrganization` основе идентификатора клиента в маркере доступа.
 - Вызывает ресурс Users.
 - Использует `$filter` параметр запроса, чтобы ограничить ответ на заданные имена, начинающиеся с `Dan` .
 
@@ -56,7 +59,7 @@ Microsoft Graph и API Graph для Azure AD — это интерфейсы API
 
 Аналогичный запрос для Microsoft Graph выглядит следующим образом:
 
-`https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName,'Dan')`
+`GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName,'Dan')`
 
 Существует
 
@@ -111,7 +114,7 @@ https://graph.microsoft.com/v1.0/me/?$select=displayName,streetAddress,city,stat
 
 В следующей таблице приведено несколько примеров.
 
-| Task | Azure AD Graph | Microsoft Graph |
+| Задача | Azure AD Graph | Microsoft Graph |
 |------|----------------|-----------------|
 | Добавление участника        | ```POST /groups/{id}/$link/members```        | ```POST /groups/{id}/members/$ref```        |
 | Ссылки на элементы списка | ```GET /groups/{id}/$link/members```         | ```GET /groups/{id}/members/$ref```         |
@@ -123,5 +126,5 @@ https://graph.microsoft.com/v1.0/me/?$select=displayName,streetAddress,city,stat
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о [различиях функций служб](migrate-azure-ad-graph-feature-differences.md) в Azure AD Graph и Microsoft Graph.
-- Ознакомьтесь с основными понятиями и рекомендациями [Microsoft Graph](/graph/overview) .
-- Поэкспериментируйте с Microsoft Graph с помощью [проводника диаграмм](https://aka.ms/ge) .
+- Снова просмотрите [Контрольный список](migrate-azure-ad-graph-planning-checklist.md) .
+

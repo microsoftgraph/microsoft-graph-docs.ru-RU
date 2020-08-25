@@ -1,16 +1,16 @@
 ---
 title: Добавление участника роли каталога
-description: Создание нового участника роли каталога.
+description: Создайте новый член роли каталога.
 author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0a62013b0a424e83eb2ad30bb554a6aba33b6d63
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 7d1b0c9aebf5cfbe1dcc502c9865f3d590367c60
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819366"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872694"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -18,13 +18,13 @@ ms.locfileid: "46819366"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового участника роли каталога.
+Создайте новый член роли каталога.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. ReadWrite. Directory, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | RoleManagement.ReadWrite.Directory |
 
@@ -41,7 +41,7 @@ POST /directoryRoles/{id}/members/$ref
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Представьте в тексте запроса описание объекта [directoryObject в формате](../resources/directoryobject.md) JSON.
+В тексте запроса добавьте представление объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
@@ -49,9 +49,9 @@ POST /directoryRoles/{id}/members/$ref
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-assign-a-built-in-role-to-a-user"></a>Пример 1. Назначение встроенной роли пользователю
+### <a name="example-1-assign-a-built-in-role-to-a-user"></a>Пример 1: назначение встроенной роли пользователю
 #### <a name="request"></a>Запрос
-В следующем примере пользователю назначается встроенная роль.
+В следующем примере для пользователя назначается встроенная роль.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -75,6 +75,10 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-directoryrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-directoryrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Отклик
@@ -89,9 +93,9 @@ Content-length: 30
 HTTP/1.1 204 No content
 ```
 
-### <a name="example-2-assign-a-built-in-role-to-a-group"></a>Пример 2. Назначение встроенной роли группе
+### <a name="example-2-assign-a-built-in-role-to-a-group"></a>Пример 2: назначение встроенной роли группе
 #### <a name="request"></a>Запрос
-Вы можете использовать определенный набор ресурсов, например пользователи или группы, в теле запроса, либо можно использовать универсальные **объекты directoryObjects.** В этом примере показано, как можно **использовать directoryObjects.**
+Вы можете использовать определенный набор ресурсов, такой как пользователи или группы, в теле запроса, или можно использовать универсальный **директорйобжектс**. В этом примере показано, как можно использовать **директорйобжектс**.
 
 <!-- {
   "blockType": "request",

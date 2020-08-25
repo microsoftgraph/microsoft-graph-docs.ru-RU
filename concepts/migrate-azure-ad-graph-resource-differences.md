@@ -3,13 +3,13 @@ title: Различия между типами ресурсов в Azure AD Gra
 description: Описываются различия между ресурсами в графике и ресурсах Azure AD в Microsoft Graph, которые помогут перенести приложения.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3cc0ce235739ae5ab85b211e1efaec3d3923be37
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.prod: azure-active-directory
+ms.openlocfilehash: 9d03f6cca4bb1da986ecfe5c2b04b6f6e9cc6cd3
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863861"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873386"
 ---
 # <a name="resource-type-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия между типами ресурсов в Azure AD Graph и Microsoft Graph
 
@@ -29,7 +29,7 @@ ms.locfileid: "44863861"
 | [контакт](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference); | бета- &nbsp; - &nbsp; [orgContact](/graph/api/resources/orgContact?view=graph-rest-beta)<br>Версия 1.0 &nbsp; - &nbsp; [orgContact](/graph/api/resources/orgContact?view=graph-rest-1.0) | |
 | [директорилинкчанже](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp; - &nbsp; _новый &nbsp; способ_ бета-тестирования <br>&nbsp; - &nbsp; _новый &nbsp; способ_ версии 1.0 | Запрос Delta поддерживает обнаружение изменений связи с механизмом, который не требует использования этого ресурса. Ознакомьтесь [с различиями между функциями Azure AD Graph и Microsoft Graph](migrate-azure-ad-graph-feature-differences.md). |
 | [OAuth2Permission](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- &nbsp; - &nbsp; [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-beta) <br> Версия 1.0 &nbsp; - &nbsp; [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-1.0) ||
- [Политика](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp; - &nbsp; [политики](/graph/api/resources/policy-overview?view=graph-rest-beta) бета-версий <br> версии 1.0 &nbsp; - &nbsp; [политики](/graph/api/resources/policy-overview?view=graph-rest-1.0)| Каждый тип политики имеет уникальное имя типа и структуру в сегменте пути URL-адреса **политик** в Microsoft Graph. В Azure AD Graph это был один тип политики. |
+ [Политика](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp; - &nbsp; [политики](/graph/api/resources/policy-overview?view=graph-rest-beta) бета-версий <br> версии 1.0 &nbsp; - &nbsp; [политики](/graph/api/resources/policy-overview?view=graph-rest-1.0)| Каждый тип политики имеет уникальное имя типа и структуру в сегменте пути URL-адреса **политик** в Microsoft Graph. В Azure AD Graph это был один тип политики. Например, для Azure AD Graph вы будете работать с ресурсом **Policy** и присвоить свойству **Type** значение `TokenIssuancePolicy` , в то время как в Microsoft Graph это будет ресурс **токениссуанцеполици** . |
 | [провисионинжеррор](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-версия &nbsp; - &nbsp; _недоступна_ <br> Версия 1.0 &nbsp; - &nbsp; _недоступна_ | Этот ресурс устарел.  Однако новый ресурс, описывающий все ошибки подготовки AD Connect, можно найти в [onPremisesProvisioningError](/graph/api/resources/onPremisesProvisioningError?view=graph-rest-1.0). |
 | [сервицеендпоинт](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp; - &nbsp; [Конечная точка](/graph/api/resources/endpoint?view=graph-rest-beta) бета-версии <br> &nbsp; - &nbsp; [Конечная точка](/graph/api/resources/endpoint?view=graph-rest-1.0) версии 1.0 | **конечные точки** доступны только в рамках ресурса [группы](/graph/api/resources/group?view=graph-rest-beta) в бета-версии, а ресурс [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) в бета-версиях и версии 1.0.|
 | [сигниннаме](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp; - &nbsp; _новый способ_ бета-тестирования <br> &nbsp; - &nbsp; _новый способ_ версии 1.0 | Новое моделирование идентификаторов, используемых для входа в учетную запись пользователя. Для получения дополнительных сведений см. тип ресурса [обжектидентити](/graph/api/resources/objectIdentity?view=graph-rest-1.0) . Поддерживает сценарии B2C для Azure AD. |
@@ -40,5 +40,4 @@ ms.locfileid: "44863861"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Сведения о [различиях свойств сущностей](migrate-azure-ad-graph-property-differences.md) в Azure AD Graph и Microsoft Graph.
-- Ознакомьтесь с основными понятиями и рекомендациями [Microsoft Graph](/graph/overview) .
-- Поэкспериментируйте с Microsoft Graph с помощью [проводника диаграмм](https://aka.ms/ge) .
+- Снова просмотрите [Контрольный список](migrate-azure-ad-graph-planning-checklist.md) .

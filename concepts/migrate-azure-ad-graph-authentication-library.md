@@ -3,13 +3,13 @@ title: Проверка изменений библиотеки проверки
 description: Описывается обновление использования библиотеки проверки подлинности для переноса приложения из приложений API Azure Active Directory (Azure AD) в API Microsoft Graph.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d0f3570ac7d16c02737c4653d66070ec1a03d0c9
-ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
+ms.prod: azure-active-directory
+ms.openlocfilehash: 17a6fa76b3aa32b0eae17bd96e6e8ec9d84ebdbb
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37113886"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872959"
 ---
 # <a name="review-app-authentication-library-changes"></a>Проверка изменений библиотеки проверки подлинности приложений
 
@@ -36,7 +36,7 @@ ms.locfileid: "37113886"
 
     После обновления **resourceurl экземпляром** и проверки работоспособности выпустите промежуточное обновление, чтобы получить доступ к пользователям и рунннинг.
 
-1.  Затем начните работу с переносом приложения, чтобы использовать MSAL, поддерживаемую библиотекой, чтобы использовать перемещение вперед.
+1.  Затем начните работу перенос приложения, чтобы использовать MSAL (поддерживаемая библиотека для переноса вперед), а теперь ADAL является устаревшим.
 
 ## <a name="migrating-to-msal"></a>Миграция в MSAL
 
@@ -57,6 +57,4 @@ var scopes = new string[] { "https://graph.microsoft.com/.default" };
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Ознакомьтесь с различиями в [клиентской библиотеке .NET](migrate-azure-ad-graph-client-libraries.md) между Azure AD Graph и Microsoft Graph.
-- Изучите [Перенос ADAL в MSAL](https://aka.ms/adal-net-to-msal-net) для получения дополнительной справки по переходу на MSAL.
-- Ознакомьтесь с основными понятиями и рекомендациями [Microsoft Graph](/graph/overview) .
-- Поэкспериментируйте с Microsoft Graph с помощью [проводника диаграмм](https://aka.ms/ge) .
+- Снова просмотрите [Контрольный список](migrate-azure-ad-graph-planning-checklist.md) .

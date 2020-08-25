@@ -1,18 +1,18 @@
 ---
-title: Группа списка memberOf
+title: Перечисление group memberOf
 description: Получение групп и административных единиц, непосредственным участником которых является группа.
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9711354a6c85933f9e7bbc440964d66990fbe898
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 463e35eca28d0f5c52a0d01a9f57a23aa356ff43
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895841"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872630"
 ---
-# <a name="list-group-memberof"></a>Группа списка memberOf
+# <a name="list-group-memberof"></a>Перечисление group memberOf
 
 Пространство имен: microsoft.graph
 
@@ -41,14 +41,14 @@ GET /groups/{id}/memberOf
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, включая `$search` , `$count` и `$filter` . Приведение OData также включено, например, можно выполнить приведение, чтобы получить только те группы, участником которых является группа. Можно использовать `$search` свойство **DisplayName** . При добавлении или обновлении элементов для этого ресурса они могут индексироваться для использования с `$count` `$search` параметрами запроса. Между добавлением или обновлением элемента может быть небольшая задержка, а когда он доступен в индексе.
+Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Приведение OData также включено, например, можно выполнить приведение, чтобы получить только те группы, участником которых является группа. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя | Описание |
 |:---- |:----------- |
 | Авторизация  | Bearer {токен}. Обязательный. |
-| консистенцилевел | закончить. Этот заголовок и `$count` при использовании `$search` `$filter` `$orderby` параметров запроса на приведение,, или OData. Он использует индекс, который может не быть актуальным с последними изменениями объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` при использовании `$search` `$filter` `$orderby` параметров запроса на приведение,, или OData. Он использует индекс, который может не быть актуальным с последними изменениями объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -278,6 +278,8 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_a_count"
@@ -286,8 +288,22 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/groups/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'A')
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a>Ответ
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

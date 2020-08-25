@@ -3,13 +3,13 @@ title: Перенос приложений .NET для Azure AD Graph в Microso
 description: Описывается перенос приложений API Azure Active Directory (Azure AD) в API Microsoft Graph.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 884802fafcccf4408b84da96f6c4f94818e31b16
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.prod: azure-active-directory
+ms.openlocfilehash: 757a8d43b3a0729e4d791c7a4f4f85640af87274
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234042"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872952"
 ---
 # <a name="migrate-net-client-library-use-to-microsoft-graph"></a>Миграция использования клиентской библиотеки .NET в Microsoft Graph
 
@@ -30,7 +30,7 @@ ms.locfileid: "41234042"
 
 В следующих шагах предполагается, что ваше приложение уже использует ADAL для получения маркеров доступа для вызова Azure AD Graph, и теперь вы будете продолжать использовать ADAL. Переключение на MSAL можно выполнить в отдельном действии, описанном в статье [Переход на MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal).
 
-1. Чтобы получить маркер доступа к Microsoft Graph, обновите **resourceurl экземпляром** с `https://graph.windows.net` " `https://graph.microsoft.com`на".
+1. Чтобы получить маркер доступа к Microsoft Graph, обновите **resourceurl экземпляром** с " `https://graph.windows.net` на" `https://graph.microsoft.com` .
 
 2. В приложении обновите ссылки на клиентскую библиотеку Microsoft Graph, изменив следующие компоненты:
 
@@ -46,7 +46,7 @@ ms.locfileid: "41234042"
 
 3. С помощью диспетчера пакетов Скачайте и обновите [пакет NuGet для Microsoft Graph](https://www.nuget.org/packages/Microsoft.Graph/) и зависимости обновлений.
 
-4. Обновите свой конструктор клиента, чтобы `GraphServiceClient`создать объект a `ActiveDirectoryClient`, а не.  Следующие фрагменты кода предполагают, что ваше приложение использует `AcquireTokenAsyncForUser()` метод для получения новых маркеров. Определение этого метода можно найти в [образце Active Directory — DotNet — графапи — Console](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).
+4. Обновите свой конструктор клиента, чтобы создать объект a `GraphServiceClient` , а не `ActiveDirectoryClient` .  Следующие фрагменты кода предполагают, что ваше приложение использует `AcquireTokenAsyncForUser()` метод для получения новых маркеров. Определение этого метода можно найти в [образце Active Directory — DotNet — графапи — Console](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).
 
     Настройки
 
@@ -66,7 +66,7 @@ ms.locfileid: "41234042"
        }));
     ```
 
-    Для клиентской библиотеки Microsoft Graph `serviceRoot` значение также включает номер версии. В настоящее время это `https://graph.microsoft.com/v1.0`значение.
+    Для клиентской библиотеки Microsoft Graph `serviceRoot` значение также включает номер версии. В настоящее время это значение `https://graph.microsoft.com/v1.0` .
 
 5. Обновление запросов на использование синтаксиса построителя запросов клиентов Microsoft Graph путем изменения следующих параметров:
 
@@ -158,5 +158,4 @@ ms.locfileid: "41234042"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как [развертывать, тестировать и расширять](/graph/migrate-azure-ad-graph-deploy-test-extend) приложения, перенесенные в Microsoft Graph.
-- Ознакомьтесь с основными понятиями и рекомендациями [Microsoft Graph](/graph/overview) .
-- Поэкспериментируйте с Microsoft Graph с помощью [проводника диаграмм](https://aka.ms/ge) .
+- Снова просмотрите [Контрольный список](migrate-azure-ad-graph-planning-checklist.md) .

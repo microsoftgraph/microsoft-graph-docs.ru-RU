@@ -1,18 +1,18 @@
 ---
-title: Список членов группы
+title: Перечисление участников группы
 description: Получение списка непосредственных участников группы.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 46fca8fe14924d2b5094db4cf9c9fad709bc48cd
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 302d0aa62f078e4209ca59b3fbfcfbb94d692bd9
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345704"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872642"
 ---
-# <a name="list-group-members"></a>Список членов группы
+# <a name="list-group-members"></a>Перечисление участников группы
 
 Пространство имен: microsoft.graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "44345704"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All, Group.Read.All, Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | Group. Read. ALL, User. Read. ALL, Directory. Read. ALL |
+| Приложение | Group. Read. ALL, User. Read. ALL, Directory. Read. ALL |
 
 > **Примечание:** Чтобы получить список членов скрытой группы членства, требуется разрешение Member. Read. Hidden.
 
@@ -43,16 +43,16 @@ GET /groups/{id}/members
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, включая `$search` , `$count` и `$filter` . Приведение OData также включено, например, можно выполнить приведение, чтобы получить только тех пользователей, которые являются членами группы. Можно использовать `$search` свойство **DisplayName** . При добавлении или обновлении элементов для этого ресурса они могут индексироваться для использования с `$count` `$search` параметрами запроса. Между добавлением или обновлением элемента может быть небольшая задержка, а когда он доступен в индексе.
+Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Приведение OData также включено, например, можно выполнить приведение, чтобы получить только тех пользователей, которые являются членами группы. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя | Описание |
 |:---- |:----------- |
 | Авторизация | Bearer {токен}. Обязательный. |
-| консистенцилевел | закончить. Этот заголовок и `$count` при использовании `$search` `$filter` `$orderby` параметров запроса на приведение,, или OData. Он использует индекс, который может не быть актуальным с последними изменениями объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` при использовании `$search` `$filter` `$orderby` параметров запроса на приведение,, или OData. Он использует индекс, который может не быть актуальным с последними изменениями объекта. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -282,6 +282,8 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_a_count"
@@ -290,8 +292,22 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/groups/{id}/members?$count=true&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a>Ответ
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
