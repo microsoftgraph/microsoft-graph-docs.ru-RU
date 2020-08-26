@@ -1,18 +1,18 @@
 ---
-title: Создание команды
+title: Создание команды из группы
 description: Создание команды в группе.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 85a351c3e7ecc276666b6ed912828828de756834
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
-ms.translationtype: MT
+ms.openlocfilehash: cdda1a24fad5827e9c320384a39325699d4d8165
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845703"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873309"
 ---
-# <a name="create-team"></a>Создание команды
+# <a name="create-team-from-group"></a>Создание команды из группы
 
 Пространство имен: microsoft.graph
 

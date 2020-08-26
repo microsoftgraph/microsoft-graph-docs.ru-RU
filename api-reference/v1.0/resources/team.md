@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса team
-description: 'Команда в Microsoft Teams — это коллекция каналов. '
+description: 'Команда Microsoft Teams — это коллекция каналов. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1a3b05eb0f055cd1cbed84f0e98c1496015f8801
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: aca1ce59f40e758c132d835214442af70a4d571d
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050913"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872875"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -29,7 +29,8 @@ ms.locfileid: "45050913"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Создание команды](../api/team-put-teams.md) | [team](team.md) | Создание команды или добавление команды в существующую группу.|
+|[Создание команды](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Создание команды с нуля. |
+|[Создание команды из группы](../api/team-put-teams.md) | [team](team.md) | Создание команды или добавление команды в существующую группу.|
 |[Получение команды](../api/team-get.md) | [team](team.md) | Получение свойств и связей указанной команды.|
 |[Обновление команды](../api/team-update.md) | [team](team.md) |Обновление свойств указанной команды. |
 |[Удаление команды](/graph/api/group-delete?view=graph-rest-1.0) | Нет |Удаление команды и ее связанной группы. |
@@ -44,26 +45,34 @@ ms.locfileid: "45050913"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип   | Описание |
+| Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
+|displayName|string| Имя команды. |
+|description|string| Необязательное описание для команды. |
+|classification|string| Необязательная метка. Обычно описывает конфиденциальность данных или работы команды. Должно соответствовать одному из предварительно настроенных наборов в каталоге клиента. |
+|specialization|[teamSpecialization](teamspecialization.md)| Необязательное свойство. Указывает, предназначена ли команда для определенного варианта использования.  У каждой специализации команды есть доступ к уникальным действиям и возможностям, предназначенным для своего варианта использования. |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| Видимость группы и команды. Значение по умолчанию: Public. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Параметры для настройки использования Giphy, мемов и наклеек в команде.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Параметры для настройки того, могут ли гости создавать, изменять или удалять каналы в команде.|
-|internalId | string | Уникальный идентификатор для команды, используемый в нескольких местах, например в журнале аудита или [API действий управления Office 365](/office/office-365-management-api/office-365-management-activity-api-reference). |
+|internalId | string | Уникальный идентификатор для команды, используемый в нескольких местах, например в журнале аудита или [API действий управления Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). |
 |isArchived|Boolean|Находится ли команда в режиме только для чтения. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Параметры для настройки того, могут ли участники выполнять определенные действия, например создавать каналы и добавлять ботов в команде.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Параметры для настройки обмена сообщениями и упоминаний в команде.|
 |webUrl|string (только для чтения) | Гиперссылка, ведущая к команде в клиенте Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по команде в клиенте Microsoft Teams и выборе пункта **Получить ссылку на команду**. Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. |
-|classSettings|[teamClassSettings](teamclasssettings.md) |Настройка параметров класса. Доступна только в том случае, если команда представляет класс.|
 
 ## <a name="relationships"></a>Связи
 
-| Связь | Тип   | Описание |
+| Связь | Тип | Описание |
 |:---------------|:--------|:----------|
 |channels|Коллекция [channel](channel.md)|Коллекция каналов и сообщений, связанных с командой.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в команде.|
+|members|Коллекция [conversationMember](../resources/conversationmember.md)|Участники и владельцы команды.|
+|operations|Коллекция [teamsAsyncOperation](teamsasyncoperation.md)| Асинхронные операции, которые выполнялись или выполняются для этой команды. | 
 |[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| Общий канал для команды. | 
+|schedule|[schedule](schedule.md)| Расписание смен для команды.|
+|шаблон|[teamsTemplate](teamstemplate.md)| Шаблон, из которого создана команда. См. [доступные шаблоны](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates). |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

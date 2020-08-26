@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 55f1e6c61f687b8a43a55b2514d3afa2bed51311
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: MT
+ms.openlocfilehash: ccdfc5ee542a8e819ecbf4d30450dcc8e2c19991
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681986"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873099"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -107,7 +107,7 @@ Content-Length: 0
 
 ### <a name="example-2-application-permissions"></a>Пример 2. Разрешения для приложения
 
-Ниже приведен пример минимального запроса с использованием разрешений для приложения. Исключив другие свойства, клиент неявно принимает значения по умолчанию из готового шаблона, представленного объектом `template`. При отправке запроса с разрешениями для приложения ресурс [user](../resources/user.md) должен быть указан в коллекции `owners`.
+Ниже приведен пример минимального запроса с использованием разрешений для приложения. Исключив другие свойства, клиент неявно принимает значения по умолчанию из готового шаблона, представленного объектом `template`. При отправке запроса с разрешениями для приложения ресурс [user](../resources/user.md) должен быть указан в коллекции `members`.
 
 #### <a name="request"></a>Запрос
 
@@ -124,8 +124,12 @@ Content-Type: application/json
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
-  "owners@odata.bind": [
-    "https://graph.microsoft.com/beta/users('userId')"
+  "members@odata.bind": [
+            {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "roles": ["owner"],
+            "userId": "0040b377-61d8-43db-94f5-81374122dc7e"
+        }
   ]
 }
 ```
@@ -289,7 +293,7 @@ Content-Length: 0
 Обратите внимание на некоторые моменты, связанные с этим вызовом:
 
 * Чтобы создать команду, в группе, из которой она создается, должен быть хотя бы один владелец.
-* Созданная команда всегда наследует из группы отображаемое имя, параметры видимости, специализацию и владельцев. Поэтому, когда выполняется этот вызов с использованием свойства **group@odata.bind**, включение свойств **displayName**, **visibility**, **specialization** или **owners@odata.bind** команды возвращает ошибку.
+* Созданная команда всегда наследует отображаемое имя, параметры видимости, специализацию и членов группы. Поэтому, когда выполняется этот вызов с использованием свойства **group@odata.bind**, включение свойств команды **displayName**, **visibility**, **specialization** или **members@odata.bind** возвращает ошибку.
 * Если группа создана менее 15 минут назад, вызов метода "Создание команды" может завершиться ошибкой с кодом 404 из-за задержек репликации. Рекомендуется повторить вызов метода "Создание команды" три раза с 10-секундной задержкой между вызовами.
 
 
