@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ca2fcc1aa0fe7f61c757d2de6a29af52d51709d8
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 5247bacbbf15274f132c5d7620b806cfe99613b6
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123519"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287458"
 ---
 # <a name="create-accessreview"></a>Создание Акцессревиев
 
@@ -20,7 +20,7 @@ ms.locfileid: "43123519"
 
 В средстве проверки [доступа](../resources/accessreviews-root.md) Azure AD создайте новый объект [акцессревиев](../resources/accessreview.md) .
 
-Перед выполнением этого запроса абонент должен был [получить список шаблонов бизнес-процесса](businessflowtemplate-list.md), чтобы включить в запрос значение `businessFlowTemplateId` для включения в запрос.
+Перед выполнением этого запроса абонент должен был [получить список шаблонов бизнес-процесса](businessflowtemplate-list.md), чтобы `businessFlowTemplateId` включить в запрос значение для включения в запрос.
 
 После выполнения этого запроса вызывающий абонент должен [создать програмконтрол](programcontrol-create.md), чтобы связать проверку доступа с программой.  
 
@@ -48,7 +48,7 @@ POST /accessReviews
 | Авторизация | Носитель \{токен\}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [акцессревиев](../resources/accessreview.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Акцессревиев.
@@ -60,18 +60,18 @@ POST /accessReviews
 | `endDateTime`             |`DateTimeOffset`                                                | Дата и время окончания запланированного рассмотрения. Это должен быть по крайней мере один день позже даты начала.   |
 | `description`             |`String`                                                        | Описание, которое будет отображаться для рецензентов. |
 | `businessFlowTemplateId`  |`String`                                                        | Идентификатор шаблона рабочего процесса, полученный из объекта [бусинессфловтемплате](../resources/businessflowtemplate.md).  |
-| `reviewerType`            |`String`                                                        | Тип отношения проверяющего к правам доступа проверенного объекта, один из `self`, `delegated`или. `entityOwners` | 
+| `reviewerType`            |`String`                                                        | Тип отношения проверяющего к правам доступа проверенного объекта, один из `self` , `delegated` или `entityOwners` . | 
 | `reviewedEntity`          |`microsoft.graph.identity`                                      | Объект, для которого создается проверка доступа, например членство в группе или назначения пользователей приложению. | 
 
 
-Если предоставленное значение Ревиевертипе имеет значение `delegated`, вызывающая сторона также должна содержать `reviewers` свойство с коллекцией [userIdentity](../resources/useridentity.md) рецензентов.
+Если предоставленное значение Ревиевертипе имеет значение `delegated` , вызывающая сторона также должна содержать `reviewers` свойство с коллекцией [userIdentity](../resources/useridentity.md) рецензентов.
 
 Если приложение вызывает этот API без вошедшего пользователя, вызывающая сторона также должна включать свойство **createdBy** , значение которого является [userIdentity](../resources/useridentity.md) пользователя, который будет идентифицирован как создатель проверки.
 
-Кроме того, вызывающий может включать в себя параметры для создания повторяющихся рядов проверки или для изменения поведения проверки по умолчанию. В частности, чтобы создать повторяющуюся проверку, вызывающая сторона должна включать в себя `accessReviewRecurrenceSettings` параметры проверки доступа,
+Кроме того, вызывающий может включать в себя параметры для создания повторяющихся рядов проверки или для изменения поведения проверки по умолчанию. В частности, чтобы создать повторяющуюся проверку, вызывающая сторона должна включать в себя `accessReviewRecurrenceSettings` Параметры проверки доступа,
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [акцессревиев](../resources/accessreview.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -94,7 +94,7 @@ Content-type: application/json
     "startDateTime":"2017-02-10T00:35:53.214Z",
     "endDateTime":"2017-03-12T00:35:53.214Z",
     "reviewedEntity": {
-        "id": "99025615-a0b1-47ec-9117-35377b10998b",
+        "id": "99025615-a0b1-47ec-9117-35377b10998b"
     },
     "reviewerType" : "delegated",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
