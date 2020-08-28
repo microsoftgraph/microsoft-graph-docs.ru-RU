@@ -1,18 +1,18 @@
 ---
-title: Удаление servicePrincipal
+title: Удалить servicePrincipal
 description: Удаление servicePrincipal.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: d57bc6d6370f433a1d67ff2acf719f99c5195877
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 3aeec8e560535eec0108331b04f3f0dda18133cd
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383569"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296513"
 ---
-# <a name="delete-serviceprincipal"></a>Удаление servicePrincipal
+# <a name="delete-serviceprincipal"></a>Удалить servicePrincipal
 
 Пространство имен: microsoft.graph
 
@@ -31,7 +31,6 @@ ms.locfileid: "44383569"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /servicePrincipals/{id}
-
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|

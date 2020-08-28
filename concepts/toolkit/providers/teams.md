@@ -3,12 +3,12 @@ title: Поставщик Microsoft Teams
 description: Используйте поставщика Teams в рамках вкладки Microsoft Teams для упрощения проверки подлинности и доступа Microsoft Graph ко всем компонентам.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 62dba210d4fbf7d3540df7fd58d33e275f0065c3
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 39a20b3946a795af34fd57d877214a9cb7dabcae
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44990257"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296486"
 ---
 # <a name="microsoft-teams-provider"></a>Поставщик Microsoft Teams
 
@@ -37,11 +37,11 @@ ms.locfileid: "44990257"
 
 | Атрибут | Описание |
 | --- | --- |
-| Client — ID   | Строковый идентификатор клиента (см. раздел [Настройка приложения Teams](#configure-your-teams-app)). Обязательный. |
-| auth-контекстное-URL  | Абсолютный или относительный путь к странице, которая будет обрабатывать проверку подлинности в всплывающем окне (см. раздел [Создание всплывающей страницы](#create-the-popup-page)). Обязательный. |
-| scopes  | Строки, разделенные запятыми, для областей, которые пользователь должен согласиться на вход в систему. Необязательный параметр. |
-| зависит от | Строка выбора элемента другого компонента поставщика с более высоким приоритетом. Необязательный параметр. |
-| авторитет    | Строка Authority. По умолчанию используется общий центр. Для приложений с одним клиентом используйте идентификатор клиента или имя клиента. Например, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` или `https://login.microsoftonline.com/[your-tenant-id]` . Необязательный параметр. |
+| Client — ID   | Строковый идентификатор клиента (см. раздел [Настройка приложения Teams](#configure-your-teams-app)). Обязательный атрибут. |
+| auth-контекстное-URL  | Абсолютный или относительный путь к странице, которая будет обрабатывать проверку подлинности в всплывающем окне (см. раздел [Создание всплывающей страницы](#create-the-popup-page)). Обязательный атрибут. |
+| scopes  | Строки, разделенные запятыми, для областей, которые пользователь должен согласиться на вход в систему. Необязательное свойство. |
+| зависит от | Строка выбора элемента другого компонента поставщика с более высоким приоритетом. Необязательное свойство. |
+| авторитет    | Строка Authority. По умолчанию используется общий центр. Для приложений с одним клиентом используйте идентификатор клиента или имя клиента. Например, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` или `https://login.microsoftonline.com/[your-tenant-id]` . Необязательное свойство. |
 
 
 ### <a name="via-npm"></a>с помощью NPM
@@ -108,7 +108,7 @@ Providers.globalProvider = new TeamsProvider(config);
 
 ```html
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js">
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 
 <script>
   mgt.TeamsProvider.handleAuth();

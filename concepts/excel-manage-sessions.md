@@ -4,12 +4,12 @@ description: Если приложению нужно вызывать API Excel
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 151119a2a2861b64db126c8f49d0b916a6f563e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c3dda46a41c5c300642fb00bb1e96847bc9ebc92
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526267"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296549"
 ---
 # <a name="manage-sessions-and-persistence-in-excel-with-microsoft-graph"></a>Управление сеансами и хранением данных в Excel с помощью Microsoft Graph
 
@@ -25,7 +25,14 @@ API Excel вызываются в одном из трех режимов:
 
 >**Примечание.** Заголовок сеанса не является обязательным для работы API Excel. Тем не менее мы рекомендуем использовать заголовок сеанса для повышения производительности. Если вы не используете заголовок сеанса, изменения, внесенные во время вызова API _сохраняются_ в файл.  
 
-## <a name="next-step"></a>Дальнейшие действия
+## <a name="request-types"></a>Типы запросов
+Рекомендуемая [Обработка ошибок](workbook-error-handling.md) для API Excel основана на типе запроса, коде ошибки и коде состояния. Ниже приведены типы запросов.
+
+- **Креатесессион Request** — используется для создания постоянного или непостоянного сеанса. В ответе на Успешный ответ идентификатор сеанса возвращается в свойстве **ID** в тексте отклика. Подробнее: [CREATE SESSION](/graph/api/workbook-createsession?view=graph-rest-1.0).
+- Запросы, выполняемые при **запросе с запросом** , которые следуют за запросом креатесессион. Обычно они содержат `workbook-session-id: {session-id}` заголовок. Исключением является запрос состояния опроса, который использует долгосрочный шаблон операции. Дополнительные сведения см. в статье [Работа с API, для выполнения которых требуется длительное время](/graph/workbook-best-practice#working-with-apis-that-take-a-long-time-to-complete).
+- **Запрос с Несеансом** используется в режиме, не поддерживающем сеансы. В этих запросах нет `workbook-session-id: {session-id}` заголовка.  
+
+## <a name="next-steps"></a>Дальнейшие действия
 Сведения о том, как создавать и использовать сеансы, см. в [справочной статье о создании сеанса](/graph/api/workbook-createsession?view=graph-rest-1.0).
 
 ## <a name="see-also"></a>См. также

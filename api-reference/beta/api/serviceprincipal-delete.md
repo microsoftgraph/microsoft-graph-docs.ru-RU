@@ -1,18 +1,18 @@
 ---
-title: Удаление servicePrincipal
+title: Удалить servicePrincipal
 description: Удаление servicePrincipal.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: ec422e251f65b3a0ead4a1d22129cfc0c09be3d6
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 6c06a7456a9c7a58103150f0417573dc056059de
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383422"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296516"
 ---
-# <a name="delete-serviceprincipal"></a>Удаление servicePrincipal
+# <a name="delete-serviceprincipal"></a>Удалить servicePrincipal
 
 Пространство имен: microsoft.graph
 
@@ -26,13 +26,12 @@ ms.locfileid: "44383422"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /servicePrincipals/{id}
-
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|

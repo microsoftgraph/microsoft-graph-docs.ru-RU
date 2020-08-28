@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fd26a0526327c4b630f52fd80d5a75b4df9430c7
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 3172f733d83ee0fd549318992f67aa61bdc2bf96
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218025"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296556"
 ---
 # <a name="unifiedroledefinition-resource-type"></a>Тип ресурса Унифиедроледефинитион
 
@@ -35,16 +35,17 @@ ms.locfileid: "43218025"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|String| Описание для Унифиедроледефинитион. Только для чтения, если для Builtin задано значение true. |
-|displayName|Строка| Отображаемое имя для Унифиедроледефинитион. Только для чтения, если для Builtin задано значение true. Обязательный.|
+|displayName|String| Отображаемое имя для Унифиедроледефинитион. Только для чтения, если для Builtin задано значение true. Обязательный.|
 |id|String| Уникальный идентификатор для Унифиедроледефинитион. Key, не допускающая значение null, только для чтения. |
 |isBuiltIn|Boolean| Флаг, указывающий, является ли Унифиедроледефинитион частью набора по умолчанию, входящего в состав продукта или настраиваемого. Только для чтения. |
 |isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения. Только для чтения, если для Builtin задано значение true. |
 |resourceScopes|Коллекция String| Список разрешений областей, к которым применяется определение роли. В настоящее время поддерживается только "/". Только для чтения, если для Builtin задано значение true. **НЕ ИСПОЛЬЗУЙТЕ. Это скоро будет рекомендуемым. Присоединение области к назначению роли** | 
-|rolePermissions|Коллекция [унифиедролепермиссион](unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, если для Builtin задано значение true. Обязательный. |
+|rolePermissions|Коллекция [унифиедролепермиссион](unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, если для Builtin задано значение true. Обязательный атрибут. |
 |templateId|String| Настраиваемый идентификатор шаблона, который можно задать, если параметру Builtin присвоено значение false. Этот идентификатор обычно используется, если необходимо, чтобы один идентификатор совпадал для разных каталогов. Только для чтения, если для Builtin задано значение true. |
+|инхеритспермиссионсфром| Коллекция [унифиедроледефинитион](unifiedroledefinition.md)| Доступная только для чтения коллекция определений ролей, от которых наследуется данное определение роли. Этот атрибут поддерживает только встроенные роли Azure AD. |
 |version|String| Указывает версию Унифиедроледефинитион. Только для чтения, если для Builtin задано значение true.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 
@@ -72,6 +73,7 @@ ms.locfileid: "43218025"
   "resourceScopes": ["String"],
   "rolePermissions": [{"@odata.type": "microsoft.graph.unifiedRolePermission"}],
   "templateId": "String",
+  "inheritsPermissionsFrom": [{"@odata.type": "microsoft.graph.unifiedRoleDefinition"}],
   "version": "String"
 }
 ```

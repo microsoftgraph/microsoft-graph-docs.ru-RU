@@ -3,12 +3,12 @@ title: Компонент "люди" в наборе инструментов Mi
 description: Вы можете использовать `mgt-people` веб-компонент для отображения группы людей или контактов с помощью фотографий или инициалов.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 8e942ad0cca446dc8bf982249a7593b8299fe22e
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 6f4ad3e8dc733da89534331b6368bb69b1013e00
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183976"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296493"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Компонент "люди" в наборе инструментов Microsoft Graph
 
@@ -97,8 +97,7 @@ mgt-people {
 
 | Ресурс | Разрешение |
 | - | - |
-| [/Users](/graph/api/user-list?view=graph-rest-1.0) | Users. ReadBasic. ALL |
-| [/ме/календарвиев](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read |
+| [/Users](/graph/api/user-list?view=graph-rest-1.0) | User.ReadBasic.All |
 
 ## <a name="authentication"></a>Проверка подлинности
 

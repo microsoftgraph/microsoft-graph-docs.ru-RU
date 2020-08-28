@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0243d4db0d60b7bdde357babb4b5090146f713b1
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: dd41fad0e87d05856f78daf7eb35bc61cdbf4c75
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43806179"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296528"
 ---
 # <a name="create-unifiedroledefinition"></a>Создание Унифиедроледефинитион
 
@@ -56,9 +56,9 @@ POST /roleManagement/directory/roleDefinitions
 |isEnabled |Boolean |Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения.|
 |rolePermissions |Коллекция [унифиедролепермиссион](../resources/unifiedrolepermission.md) |Список разрешений, включенных в роль.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и новый объект [унифиедроледефинитион](../resources/unifiedroledefinition.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [унифиедроледефинитион](../resources/unifiedroledefinition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -139,7 +139,9 @@ Content-type: application/json
             ],
             "condition": null
         }
-    ]
+    ],
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('c2cb59a3-2d01-4176-a458-95b0e674966f')/inheritsPermissionsFrom",
+    "inheritsPermissionsFrom": []
 }
 ```
 
