@@ -5,32 +5,32 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 56409c083c8c4b2926fdc05bbf9ed18c3992e431
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: 96959392b98408cad9e20a280b3800290df63f63
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589300"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296542"
 ---
-# <a name="get-unifiedroledefinition"></a><span data-ttu-id="62553-103">Получение Унифиедроледефинитион</span><span class="sxs-lookup"><span data-stu-id="62553-103">Get unifiedRoleDefinition</span></span>
+# <a name="get-unifiedroledefinition"></a><span data-ttu-id="57cb6-103">Получение Унифиедроледефинитион</span><span class="sxs-lookup"><span data-stu-id="57cb6-103">Get unifiedRoleDefinition</span></span>
 
-<span data-ttu-id="62553-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="62553-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="57cb6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="57cb6-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="62553-105">Получение свойств и связей объекта [унифиедроледефинитион](../resources/unifiedRoleDefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="62553-105">Retrieve the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object.</span></span> <span data-ttu-id="62553-106">В настоящее время "каталог" является единственным поддерживаемым приложением RBAC.</span><span class="sxs-lookup"><span data-stu-id="62553-106">Currently "directory" is the only RBAC application supported.</span></span>
+<span data-ttu-id="57cb6-105">Получение свойств и связей объекта [унифиедроледефинитион](../resources/unifiedRoleDefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="57cb6-105">Retrieve the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object.</span></span> <span data-ttu-id="57cb6-106">В настоящее время "каталог" является единственным поддерживаемым приложением RBAC.</span><span class="sxs-lookup"><span data-stu-id="57cb6-106">Currently "directory" is the only RBAC application supported.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="62553-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="62553-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="57cb6-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="57cb6-107">Permissions</span></span>
 
-<span data-ttu-id="62553-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="62553-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="57cb6-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="57cb6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="62553-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="62553-110">Permission type</span></span>      | <span data-ttu-id="62553-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="62553-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="57cb6-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="57cb6-110">Permission type</span></span>      | <span data-ttu-id="57cb6-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="57cb6-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="62553-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="62553-112">Delegated (work or school account)</span></span> | <span data-ttu-id="62553-113">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="62553-113">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="62553-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="62553-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="62553-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="62553-115">Not supported.</span></span>    |
-|<span data-ttu-id="62553-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="62553-116">Application</span></span> | <span data-ttu-id="62553-117">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="62553-117">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="57cb6-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="57cb6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="57cb6-113">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="57cb6-113">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="57cb6-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="57cb6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="57cb6-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="57cb6-115">Not supported.</span></span>    |
+|<span data-ttu-id="57cb6-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="57cb6-116">Application</span></span> | <span data-ttu-id="57cb6-117">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="57cb6-117">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="62553-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="62553-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="57cb6-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="57cb6-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,60 +38,62 @@ ms.locfileid: "46589300"
 GET /roleManagement/directory/roleDefinitions/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="62553-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="62553-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="57cb6-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="57cb6-119">Optional query parameters</span></span>
 
-<span data-ttu-id="62553-120">Этот метод поддерживает параметры запросов OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="62553-120">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="62553-121">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="62553-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="57cb6-120">Этот метод поддерживает параметры запросов OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="57cb6-120">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="57cb6-121">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="57cb6-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="62553-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="62553-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="57cb6-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="57cb6-122">Request headers</span></span>
 
-| <span data-ttu-id="62553-123">Имя</span><span class="sxs-lookup"><span data-stu-id="62553-123">Name</span></span>      |<span data-ttu-id="62553-124">Описание</span><span class="sxs-lookup"><span data-stu-id="62553-124">Description</span></span>|
+| <span data-ttu-id="57cb6-123">Имя</span><span class="sxs-lookup"><span data-stu-id="57cb6-123">Name</span></span>      |<span data-ttu-id="57cb6-124">Описание</span><span class="sxs-lookup"><span data-stu-id="57cb6-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="62553-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="62553-125">Authorization</span></span> | <span data-ttu-id="62553-126">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="62553-126">Bearer {token}</span></span> |
+| <span data-ttu-id="57cb6-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="57cb6-125">Authorization</span></span> | <span data-ttu-id="57cb6-126">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="57cb6-126">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="62553-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="62553-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="57cb6-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="57cb6-127">Request body</span></span>
 
-<span data-ttu-id="62553-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="62553-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="57cb6-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="57cb6-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="62553-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="62553-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="57cb6-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="57cb6-129">Response</span></span>
 
-<span data-ttu-id="62553-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [унифиедроледефинитион](../resources/unifiedroledefinition.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="62553-130">If successful, this method returns a `200 OK` response code and the requested [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.</span></span>
+<span data-ttu-id="57cb6-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [унифиедроледефинитион](../resources/unifiedroledefinition.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="57cb6-130">If successful, this method returns a `200 OK` response code and the requested [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="62553-131">Пример</span><span class="sxs-lookup"><span data-stu-id="62553-131">Example</span></span>
+## <a name="examples"></a><span data-ttu-id="57cb6-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="57cb6-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="62553-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="62553-132">Request</span></span>
+### <a name="example-1-get-the-definition-of-a-custom-role"></a><span data-ttu-id="57cb6-132">Пример 1: получение определения настраиваемой роли</span><span class="sxs-lookup"><span data-stu-id="57cb6-132">Example 1: Get the definition of a custom role</span></span>
 
-<span data-ttu-id="62553-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="62553-133">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="57cb6-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="57cb6-133">Request</span></span>
+
+<span data-ttu-id="57cb6-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="57cb6-134">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="62553-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="62553-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="57cb6-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="57cb6-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroledefinition"
+  "name": "get_custom_role_unifiedroledefinition"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/f189965f-f560-4c59-9101-933d4c87a91a
 ```
-# <a name="c"></a>[<span data-ttu-id="62553-135">C#</span><span class="sxs-lookup"><span data-stu-id="62553-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="57cb6-136">C#</span><span class="sxs-lookup"><span data-stu-id="57cb6-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroledefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="62553-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="62553-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="57cb6-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="57cb6-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroledefinition-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="62553-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="62553-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="57cb6-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="57cb6-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroledefinition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="62553-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="62553-138">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="57cb6-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="57cb6-139">Response</span></span>
 
-<span data-ttu-id="62553-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="62553-139">The following is an example of the response.</span></span>
+<span data-ttu-id="57cb6-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="57cb6-140">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="62553-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="62553-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="57cb6-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="57cb6-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -106,12 +108,12 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions/$entity",
-    "id": "f189965f-f560-4c59-9101-933d4c87a91a",
+    "id": "429c3819-053d-4250-9926-4c7dcb18ae17",
     "description": "Allows reading Application Registrations",
     "displayName": "Application Registration Reader",
     "isBuiltIn": false,
     "isEnabled": true,
-    "templateId": "429c3819-053d-4250-9926-4c7dcb18ae17",
+    "templateId": "f189965f-f560-4c59-9101-933d4c87a91a",
     "version": null,
     "rolePermissions": [
         {
@@ -119,6 +121,234 @@ Content-type: application/json
                 "microsoft.directory/applications/allProperties/read"
             ],
             "condition": null
+        }
+    ],
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('f189965f-f560-4c59-9101-933d4c87a91a')/inheritsPermissionsFrom",
+    "inheritsPermissionsFrom": []
+}
+```
+
+### <a name="example-2-get-the-definition-of-a-built-in-role"></a><span data-ttu-id="57cb6-143">Пример 2: получение определения встроенной роли</span><span class="sxs-lookup"><span data-stu-id="57cb6-143">Example 2: Get the definition of a built-in role</span></span>
+
+#### <a name="request"></a><span data-ttu-id="57cb6-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="57cb6-144">Request</span></span>
+
+<span data-ttu-id="57cb6-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="57cb6-145">The following is an example of the request.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_built_in_role_unifiedroledefinition"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/fdd7a751-b60b-444a-984c-02652fe8fa1c
+```
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="57cb6-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="57cb6-146">Response</span></span>
+
+<span data-ttu-id="57cb6-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="57cb6-147">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="57cb6-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="57cb6-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions/$entity",
+    "id": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "description": "Members of this role can create/manage groups, create/manage groups settings like naming and expiration policies, and view groups activity and audit reports.",
+    "displayName": "Groups Administrator",
+    "isBuiltIn": true,
+    "isEnabled": true,
+    "resourceScopes": [
+        "/"
+    ],
+    "templateId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "version": "1",
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "microsoft.directory/groups/assignLicense",
+                "microsoft.directory/groups/create",
+                "microsoft.directory/groups/delete",
+                "microsoft.directory/groups/hiddenMembers/read",
+                "microsoft.directory/groups/reprocessLicenseAssignment",
+                "microsoft.directory/groups/restore",
+                "microsoft.directory/groups/basic/update",
+                "microsoft.directory/groups/classification/update",
+                "microsoft.directory/groups/dynamicMembershipRule/update",
+                "microsoft.directory/groups/groupType/update",
+                "microsoft.directory/groups/members/update",
+                "microsoft.directory/groups/owners/update",
+                "microsoft.directory/groups/settings/update",
+                "microsoft.directory/groups/visibility/update",
+                "microsoft.azure.serviceHealth/allEntities/allTasks",
+                "microsoft.azure.supportTickets/allEntities/allTasks",
+                "microsoft.office365.serviceHealth/allEntities/allTasks",
+                "microsoft.office365.supportTickets/allEntities/allTasks",
+                "microsoft.office365.webPortal/allEntities/standard/read"
+            ],
+            "condition": null
+        }
+    ],
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('fdd7a751-b60b-444a-984c-02652fe8fa1c')/inheritsPermissionsFrom",
+    "inheritsPermissionsFrom": [
+        {
+            "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+    ]
+}
+```
+### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a><span data-ttu-id="57cb6-150">Пример 3: получение определения встроенной роли Azure AD и $expand роли, от которой он наследуется</span><span class="sxs-lookup"><span data-stu-id="57cb6-150">Example 3: Get the definition of an Azure AD built-in role and $expand on the role it inherits from</span></span>
+
+#### <a name="request"></a><span data-ttu-id="57cb6-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="57cb6-151">Request</span></span>
+
+<span data-ttu-id="57cb6-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="57cb6-152">The following is an example of the request.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_inheritsFrom_unifiedroledefinition"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/fdd7a751-b60b-444a-984c-02652fe8fa1c?$expand=inheritsPermissionsFrom
+```
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="57cb6-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="57cb6-153">Response</span></span>
+
+<span data-ttu-id="57cb6-154">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="57cb6-154">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="57cb6-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="57cb6-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions(inheritsPermissionsFrom())/$entity",
+    "id": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "description": "Members of this role can create/manage groups, create/manage groups settings like naming and expiration policies, and view groups activity and audit reports.",
+    "displayName": "Groups Administrator",
+    "isBuiltIn": true,
+    "isEnabled": true,
+    "resourceScopes": [
+        "/"
+    ],
+    "templateId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "version": "1",
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "microsoft.directory/groups/assignLicense",
+                "microsoft.directory/groups/create",
+                "microsoft.directory/groups/delete",
+                "microsoft.directory/groups/hiddenMembers/read",
+                "microsoft.directory/groups/reprocessLicenseAssignment",
+                "microsoft.directory/groups/restore",
+                "microsoft.directory/groups/basic/update",
+                "microsoft.directory/groups/classification/update",
+                "microsoft.directory/groups/dynamicMembershipRule/update",
+                "microsoft.directory/groups/groupType/update",
+                "microsoft.directory/groups/members/update",
+                "microsoft.directory/groups/owners/update",
+                "microsoft.directory/groups/settings/update",
+                "microsoft.directory/groups/visibility/update",
+                "microsoft.azure.serviceHealth/allEntities/allTasks",
+                "microsoft.azure.supportTickets/allEntities/allTasks",
+                "microsoft.office365.serviceHealth/allEntities/allTasks",
+                "microsoft.office365.supportTickets/allEntities/allTasks",
+                "microsoft.office365.webPortal/allEntities/standard/read"
+            ],
+            "condition": null
+        }
+    ],
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('fdd7a751-b60b-444a-984c-02652fe8fa1c')/inheritsPermissionsFrom",
+    "inheritsPermissionsFrom": [
+        {
+            "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+            "description": "Can read basic directory information. Commonly used to grant directory read access to applications and guests.",
+            "displayName": "Directory Readers",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+            "version": "1",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.directory/administrativeUnits/standard/read",
+                        "microsoft.directory/administrativeUnits/members/read",
+                        "microsoft.directory/applications/standard/read",
+                        "microsoft.directory/applications/owners/read",
+                        "microsoft.directory/applications/policies/read",
+                        "microsoft.directory/contacts/standard/read",
+                        "microsoft.directory/contacts/memberOf/read",
+                        "microsoft.directory/contracts/standard/read",
+                        "microsoft.directory/devices/standard/read",
+                        "microsoft.directory/devices/memberOf/read",
+                        "microsoft.directory/devices/registeredOwners/read",
+                        "microsoft.directory/devices/registeredUsers/read",
+                        "microsoft.directory/directoryRoles/standard/read",
+                        "microsoft.directory/directoryRoles/eligibleMembers/read",
+                        "microsoft.directory/directoryRoles/members/read",
+                        "microsoft.directory/domains/standard/read",
+                        "microsoft.directory/groups/standard/read",
+                        "microsoft.directory/groups/appRoleAssignments/read",
+                        "microsoft.directory/groups/memberOf/read",
+                        "microsoft.directory/groups/members/read",
+                        "microsoft.directory/groups/owners/read",
+                        "microsoft.directory/groups/settings/read",
+                        "microsoft.directory/groupSettings/standard/read",
+                        "microsoft.directory/groupSettingTemplates/standard/read",
+                        "microsoft.directory/oAuth2PermissionGrants/standard/read",
+                        "microsoft.directory/organization/standard/read",
+                        "microsoft.directory/organization/trustedCAsForPasswordlessAuth/read",
+                        "microsoft.directory/applicationPolicies/standard/read",
+                        "microsoft.directory/roleAssignments/standard/read",
+                        "microsoft.directory/roleDefinitions/standard/read",
+                        "microsoft.directory/servicePrincipals/appRoleAssignedTo/read",
+                        "microsoft.directory/servicePrincipals/appRoleAssignments/read",
+                        "microsoft.directory/servicePrincipals/standard/read",
+                        "microsoft.directory/servicePrincipals/memberOf/read",
+                        "microsoft.directory/servicePrincipals/oAuth2PermissionGrants/read",
+                        "microsoft.directory/servicePrincipals/owners/read",
+                        "microsoft.directory/servicePrincipals/ownedObjects/read",
+                        "microsoft.directory/servicePrincipals/policies/read",
+                        "microsoft.directory/subscribedSkus/standard/read",
+                        "microsoft.directory/users/standard/read",
+                        "microsoft.directory/users/appRoleAssignments/read",
+                        "microsoft.directory/users/directReports/read",
+                        "microsoft.directory/users/manager/read",
+                        "microsoft.directory/users/memberOf/read",
+                        "microsoft.directory/users/oAuth2PermissionGrants/read",
+                        "microsoft.directory/users/ownedDevices/read",
+                        "microsoft.directory/users/ownedObjects/read",
+                        "microsoft.directory/users/registeredDevices/read"
+                    ],
+                    "condition": null
+                }
+            ]
         }
     ]
 }
