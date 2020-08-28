@@ -5,12 +5,12 @@ localization_priority: Priority
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 43fd850274006d763535ad30b2de58f634375541
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 19afac29a257dac404bcd8d006462aea7ba5c4b0
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181696"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287465"
 ---
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 
@@ -34,14 +34,14 @@ ms.locfileid: "43181696"
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|Коллекция строк|Возвращает все группы, в которых состоит пользователь, группа или объект каталога. Это транзитивная проверка.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Коллекция строк| Возвращает все группы и роли каталога, участником которых является пользователь, группа или объект каталога. Это транзитивная проверка. |
 |[getByIds](../api/directoryobject-getbyids.md) | Коллекция [directoryObject](directoryobject.md) | Получение набора объектов каталога на основе указанных идентификаторов. |
-|[validateProperties](../api/directoryobject-validateproperties.md)|Json| Проверка соответствия отображаемого имени или почтового псевдонима группы Office 365 политикам именования. |
+|[validateProperties](../api/directoryobject-validateproperties.md)|Json| Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования. |
 |[delta](../api/directoryobject-delta.md)|Коллекция [directoryObject](directoryobject.md)| Получение добавочных изменений для объектов каталога. Поддерживает фильтрацию по производному типу. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|id|String|Уникальный идентификатор GUID объекта, например 12345678-9abc-def0-1234-56789abcde12. Ключ. Значение null не допускается. Только для чтения.|
+|id|String|Уникальный идентификатор объекта. Например, 12345678-9abc-def0-1234-56789abcde. Значение свойства **идентификатор**оформлено часто, но не только в виде GUID; необходимо считать его непрозрачным идентификатором и не полагаться на то, что он является GUID. Ключ. Значение null не допускается. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
 

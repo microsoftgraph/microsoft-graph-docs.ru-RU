@@ -5,12 +5,12 @@ localization_priority: Priority
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4e690598a9e93dbbbc7527bbfcd8864e0b800bc5
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: aa0134fdd39c339b2dbeb0a611850971b1a9d0ee
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225104"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287451"
 ---
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 
@@ -35,9 +35,9 @@ ms.locfileid: "45225104"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|id|String|Уникальный идентификатор GUID объекта, например 12345678-9abc-def0-1234-56789abcde. Ключ. Значение null не допускается. Только для чтения.|
+|id|String|Уникальный идентификатор пользователя объекта. Например, 12345678-9abc-def0-1234-56789abcde. Значение свойства **идентификатор** часто, но не только в форме GUID; считать его непрозрачным идентификатором и не полагаться на то, что он является идентификатор GUID. Ключ. Значение null не допускается. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 
