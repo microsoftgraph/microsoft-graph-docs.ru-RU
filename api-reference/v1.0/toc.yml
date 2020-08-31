@@ -122,6 +122,8 @@ items:
         href: /graph/sdks/batch-requests?context=graph/api/1.0
       - name: Отправка больших файлов
         href: /graph/sdks/large-file-upload?context=graph/api/1.0
+      - name: Использование бета-версии API
+        href: /graph/sdks/use-beta?context=graph/api/1.0
   - name: Использование набора средств
     items:
       - name: Общие сведения о наборе средств
