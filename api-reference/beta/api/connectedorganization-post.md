@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0bdffc4bfb6a4c87ce3949dd76f4a87d673d707d
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 1d6208b12d547e4634fb9b95b02575c80753afb1
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566546"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311860"
 ---
 # <a name="create-connectedorganization"></a>Создание Коннектедорганизатион
 
@@ -54,10 +54,10 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя подключенной Организации. |
+|displayName|String|Имя подключенной Организации. |
 |description|String|Описание подключенной Организации.|
 |идентитисаурцес|Коллекция [идентитисаурце](../resources/identitysource.md)|Коллекция с одним элементом — начальным источником идентификаторов в этой подключенной Организации.|
-
+|state|коннектедорганизатионстате|Состояние подключенной Организации определяет, применимы ли политики назначения с типом области запрашивающего `AllConfiguredConnectedOrganizationSubjects` . Возможные значения: `configured`, `proposed`.|
 
 ## <a name="response"></a>Отклик
 
@@ -87,7 +87,8 @@ Content-length: 100
       "domainName": "example.com",
       "displayName": "example.com"
       }
-  ]
+  ],
+  "state":"proposed"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -124,7 +125,8 @@ Content-type: application/json
   "createdBy": "admin@contoso.com",
   "createdDateTime": "2020-06-08T20:13:53.7099947Z",
   "modifiedBy": "admin@contoso.com",
-  "modifiedDateTime": "2020-06-08T20:13:53.7099947Z"
+  "modifiedDateTime": "2020-06-08T20:13:53.7099947Z",
+  "state":"proposed"
 }
 ```
 

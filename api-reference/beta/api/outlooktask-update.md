@@ -1,18 +1,18 @@
 ---
-title: Обновление объекта outlooktask
-description: Изменение записываемых свойств задачи Outlook.
+title: Обновление outlooktask
+description: Изменение свойств для записи в задаче Outlook.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 55aa1216a2f1d0f2aac5257063525dadac98d3f6
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 5c65cb43839506c162bd424aa1df084b44964567
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849683"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311972"
 ---
-# <a name="update-outlooktask"></a>Обновление объекта outlooktask
+# <a name="update-outlooktask-deprecated"></a>Обновление outlooktask (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -21,11 +21,11 @@ ms.locfileid: "46849683"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Изменение записываемых свойств задачи Outlook.
+Изменение свойств для записи в задаче Outlook.
 
-Свойство **completedDateTime** может быть установлено действием **полного** действия или явно с помощью операции PATCH. При использовании операции PATCH для **установки значения completedDateTime**необходимо также **установить** `completed` состояние.
+Свойство **комплетеддатетиме** может быть задано **полным** действием или явным образом с помощью операции patch. Если вы используете патч для установки **комплетеддатетиме**, убедитесь, что вы также установили **состояние** `completed` .
 
-По умолчанию эта операция (и операции POST, GET и [завершения](../api/outlooktask-complete.md) задач) возвращает связанные с датами свойства в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
+По умолчанию эта операция (а также операции POST, GET и [Complete](../api/outlooktask-complete.md) ) Возвращает свойства, связанные с датами, в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,7 +51,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в ответе, который будет быть указан в формате UTC, если этот заголовок не указан. Необязательное свойство.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -80,13 +80,13 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает `200 OK` код ответа и обновленный [объект outlookTask](../resources/outlooktask.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTask](../resources/outlooktask.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-В следующем примере изменяется **свойство dueDateTime** и используется заголовок для указания `Prefer: outlook.timezone` свойств, связанных с датой, в ответе восток азиатско-восток (EST).
+В примере ниже показано, как изменить свойство **дуедатетиме** и использовать `Prefer: outlook.timezone` заголовок, чтобы указать свойства, связанные с датами, в ответе на зимнее стандартное время (EST).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

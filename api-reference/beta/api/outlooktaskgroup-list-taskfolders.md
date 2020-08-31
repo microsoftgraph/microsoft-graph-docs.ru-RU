@@ -1,18 +1,18 @@
 ---
-title: Перечисление объектов taskFolder
-description: Получение папок задач Outlook в определенном элементе outlookTaskGroup.
+title: Список Таскфолдерс
+description: Получение папок задач Outlook в определенном outlookTaskGroup.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9dd41fcab7995c860e6ea2634a8b59185ba99e8d
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f989fbfb0d4ecc99959bf267d245507df7b65d76
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849387"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312063"
 ---
-# <a name="list-taskfolders"></a>Перечисление объектов taskFolder
+# <a name="list-taskfolders-deprecated"></a>Список Таскфолдерс (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "46849387"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Получение папок задач Outlook в определенном [элементе outlookTaskGroup.](../resources/outlooktaskgroup.md)
+Получение папок задач Outlook в определенном [outlookTaskGroup](../resources/outlooktaskgroup.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает `200 OK` код ответа и коллекцию объектов [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

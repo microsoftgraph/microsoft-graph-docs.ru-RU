@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: be58f906ae9de82240fc022e293851da44e24510
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: d1883b5f00e0662035db76964899d735023e4d58
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510466"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311832"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -73,6 +73,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) или [serviceHostedMediaConfig](servicehostedmediaconfig.md) | Настройка мультимедиа. Обязательно.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Только для чтения. Состояние мультимедиа компонентов вызова. |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) или [tokenMeetingInfo](tokenmeetinginfo.md)             | Сведения о собрании, необходимые для присоединения к собранию.                                                                                                            |
+transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                          | Сведения расшифровки для звонка. Только для чтения.    |
 | myParticipantId     | String                                                                                                 | Только для чтения.                                                                                                                                                                        |
 | requestedModalities | Коллекция String                                                                                      | Список запрошенных модальностей. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | Сведения о результате. Например, может содержать причину прекращения. Только для чтения.                                                                                                        |
@@ -104,6 +105,7 @@ incomingContext            | [incomingContext](incomingContext.md)              
     "incomingContext",
     "mediaState",
     "meetingInfo",
+    "transcription",
     "myParticipantId",
     "replacesContext",
     "resultInfo",
@@ -125,7 +127,8 @@ incomingContext            | [incomingContext](incomingContext.md)              
   "id": "String (identifier)",
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
-  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
+  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},  
+  "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
   "myParticipantId": "String",
   "replacesContext": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],

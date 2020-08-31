@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 49998005ef65fe132dbc3ff230ea40d25de06b8d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f64ddaa66d20b2caf64e0f7b59d854afd7c246a1
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440824"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311270"
 ---
 # <a name="get-call"></a>Получение вызова
 
@@ -45,10 +45,10 @@ GET /communications/calls/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Call](../resources/call.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
@@ -157,6 +157,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "meetingCapability": null,
   "toneInfo": null
 }
@@ -254,6 +255,11 @@ Content-Type: application/json
       }
     },
     "allowConversationWithoutHost": true
+  },
+  "transcription": {
+    "@odata.type": "#microsoft.graph.callTranscriptionInfo",
+    "state": "inactive",
+    "lastModifiedDateTime": "2020-05-28T00:10:54.104318Z"
   },
   "routingPolicies": [],
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",

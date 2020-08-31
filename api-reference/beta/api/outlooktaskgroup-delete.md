@@ -1,18 +1,18 @@
 ---
 title: Удаление outlookTaskGroup
-description: Удаление указанной группы outlookTaskGroup.
+description: Удаление указанного outlookTaskGroup.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fd866a3b57a159e53c6e288ba6f8a70a097877f6
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: a408268f17828ee22892504ad1c3a3baef36af24
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849396"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311615"
 ---
-# <a name="delete-outlooktaskgroup"></a>Удаление outlookTaskGroup
+# <a name="delete-outlooktaskgroup-deprecated"></a>Delete outlookTaskGroup (устаревшее)
 
 Пространство имен: microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "46849396"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Удаление указанной [группы outlookTaskGroup.](../resources/outlooktaskgroup.md)
+Удаление указанного [outlookTaskGroup](../resources/outlooktaskgroup.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 

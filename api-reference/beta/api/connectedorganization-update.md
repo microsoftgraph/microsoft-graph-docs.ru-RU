@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 804beb5db6fe42d430912fc14377764b9f4d6dcb
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: aa3cc0e2a09d09f694295742e3faabe704ec6a87
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566518"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311853"
 ---
 # <a name="update-connectedorganization"></a>Обновление Коннектедорганизатион
 
@@ -52,8 +52,9 @@ PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-| `displayName`  |`String` | Имя подключенной Организации.  |
-| `description`  |`String` | Описание подключенной Организации. |
+| displayName  |String | Имя подключенной Организации.  |
+| description  |String | Описание подключенной Организации. |
+| state        |коннектедорганизатионстате|Состояние подключенной Организации определяет, применимы ли политики назначения с типом области запрашивающего `AllConfiguredConnectedOrganizationSubjects` . Возможные значения: `configured`, `proposed`.|
 
 ## <a name="response"></a>Отклик
 
@@ -76,7 +77,8 @@ Content-length: 100
 
 {
   "displayName":"Connected organization new name",
-  "description":"Connected organization new description"
+  "description":"Connected organization new description",
+  "state":"configured"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -110,7 +112,8 @@ Content-type: application/json
 {
   "id": "006111db-0810-4494-a6df-904d368bd81b",
   "displayName":"Connected organization new name",
-  "description":"Connected organization new description"
+  "description":"Connected organization new description",
+  "state":"configured"
 }
 ```
 

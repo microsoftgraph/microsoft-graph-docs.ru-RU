@@ -1,18 +1,18 @@
 ---
 title: Список вложений
-description: Получение списка объектов attachment, вложенных в задачу Outlook.
+description: Получение списка объектов вложений, вложенных в задачу Outlook.
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 301db2de06a6f96e23379f2487b5c9002546582d
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 53909034c79b3c2936b748c93684c6ce6dcc6206
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849698"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311986"
 ---
-# <a name="list-attachments"></a>Список вложений
+# <a name="list-attachments-deprecated"></a>Список вложений (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "46849698"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Получение списка объектов [attachment,](../resources/attachment.md) вложенных в задачу Outlook.
+Получение списка объектов [вложений](../resources/attachment.md) , вложенных в задачу Outlook.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -58,7 +58,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает `200 OK` код отклика и [коллекцию объектов attachment](../resources/attachment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [вложений](../resources/attachment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

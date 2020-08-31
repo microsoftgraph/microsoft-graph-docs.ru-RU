@@ -5,20 +5,20 @@ localization_priority: Normal
 doc_type: apiPageType
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 450a6aaf065bf4216d3d4c2af1379a98305508c6
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 168c1ecc983ae6dcdfe434351ffddc2f132e8598
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181072"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311699"
 ---
-# <a name="list-impossibletravelriskevents"></a>Список Импоссиблетравелрискевентс
+# <a name="list-impossibletravelriskevents-deprecated"></a>Список Импоссиблетравелрискевентс (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
+>[!CAUTION]
 >API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Получение списка объектов импоссиблетравелрискевент.
@@ -42,10 +42,10 @@ GET /impossibleTravelRiskEvents
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [импоссиблетравелрискевент](../resources/impossibletravelriskevent.md) в тексте отклика.
 ## <a name="example"></a>Пример

@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5356a48aae90f22fdd54a54ed5fe7132598b9d42
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: f5d53e3a24ad8e99c22d61bc6a4d519888c4aafd
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757295"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311292"
 ---
 # <a name="connectedorganization-resource-type"></a>Тип ресурса Коннектедорганизатион
 
@@ -40,13 +40,14 @@ ms.locfileid: "46757295"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|createdBy|Строка|Имя участника-пользователя, создавшего этот ресурс. Только для чтения.|
+|createdBy|String|Имя участника-пользователя, создавшего этот ресурс. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |description|String|Описание подключенной Организации.|
-|displayName|Строка|Отображаемое имя подключенной Организации.|
+|displayName|String|Отображаемое имя подключенной Организации.|
 |id|String| Только для чтения.|
-|модифиедби|Строка|Имя участника-пользователя, который последним изменил этот ресурс. Только для чтения.|
+|модифиедби|String|Имя участника-пользователя, который последним изменил этот ресурс. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
+|state|коннектедорганизатионстате|Состояние подключенной Организации определяет, применимы ли политики назначения с типом области запрашивающего `AllConfiguredConnectedOrganizationSubjects` . Возможные значения: `configured`, `proposed`.|
 
 ## <a name="relationships"></a>Отношения
 
@@ -84,7 +85,8 @@ ms.locfileid: "46757295"
       "tenantId": "String (identifier)",
       "displayName": "String"
     }
-  ]
+  ],
+  "state": "String"
 }
 ```
 

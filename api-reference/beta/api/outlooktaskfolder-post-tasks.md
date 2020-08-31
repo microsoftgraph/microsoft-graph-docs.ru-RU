@@ -5,14 +5,14 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 862fc2374329396a818f668e677a15cbf3b0059c
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 3b87b511a90eb86ae63bd07bc1a306caef06d353
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849347"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311944"
 ---
-# <a name="create-outlooktask"></a>Создание объекта outlookTask
+# <a name="create-outlooktask-deprecated"></a>Создание outlookTask (устаревшее)
 
 Пространство имен: microsoft.graph
 
@@ -23,7 +23,7 @@ ms.locfileid: "46849347"
 
 Создание задачи Outlook в указанной папке задач.
 
-Метод POST всегда игнорирует время **элементов startDateTime** **и dueDateTime** в теле запроса и предполагается, что время всегда должно быть в ее поясе.
+Метод POST всегда игнорирует часть времени **startDateTime** и **дуедатетиме** в теле запроса и предполагает, что время будет всегда в полночь в заданном часовом поясе.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,14 +46,14 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в ответе, который будет быть указан в формате UTC, если этот заголовок не указан. Необязательное свойство.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
 
 ## <a name="request-body"></a>Текст запроса
-Представьте в тексте запроса описание объекта [outlookTask в формате JSON.](../resources/outlooktask.md)
+В тексте запроса добавьте представление объекта [outlookTask](../resources/outlooktask.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает `201 Created` код ответа [и объект outlookTask](../resources/outlooktask.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [outlookTask](../resources/outlooktask.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -79,9 +79,9 @@ Content-length: 376
   }
 }
 ```
-Представьте в тексте запроса описание объекта [outlookTask в формате JSON.](../resources/outlooktask.md)
+В тексте запроса добавьте представление объекта [outlookTask](../resources/outlooktask.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Метод POST игнорирует часть времени в тексте запроса и предполагает, что время всегда должно быть полуночно в указанном часовом поясе (PST). Затем по умолчанию метод POST преобразует и отображает в отклике все свойства, связанные с датой, в формате UTC.
+Метод POST игнорирует часть времени в теле запроса и принимает время в полночь всегда в заданном часовом поясе (PST). Затем по умолчанию метод POST преобразует и отображает все свойства, связанные с датой, в формате UTC в ответе.
 
 Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

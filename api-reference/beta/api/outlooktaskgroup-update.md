@@ -1,18 +1,18 @@
 ---
-title: Обновление объекта outlooktaskgroup
-description: Обновление записываемых свойств группы задач Outlook.
+title: Обновление outlooktaskgroup
+description: Обновление свойств, доступных для записи, для группы задач Outlook.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 70844fbce7a59c2d40b2186b424b1662ed60f9d0
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: b29c699bad356307ce70aaab84be6b7d990b7e86
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849753"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312098"
 ---
-# <a name="update-outlooktaskgroup"></a>Обновление объекта outlooktaskgroup
+# <a name="update-outlooktaskgroup-deprecated"></a>Обновление outlooktaskgroup (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -21,9 +21,9 @@ ms.locfileid: "46849753"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Обновление записываемых свойств группы задач Outlook.
+Обновление свойств, доступных для записи, для группы задач Outlook.
 
-Обратите внимание, что нельзя изменить имя группы задач по умолчанию — "Мои задачи".
+Обратите внимание, что нельзя изменить имя группы задач по умолчанию "Мои задачи".
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -53,10 +53,10 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает `200 OK` код ответа и обновленный [объект outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере имя группы задач изменяется на "Личные задачи". 
+В следующем примере имя группы задач изменяется на "личные задачи". 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

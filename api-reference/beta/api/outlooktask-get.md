@@ -5,14 +5,14 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 50bc54603005d226f6c05c03f4ccee772ec1d8fb
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 6fc405645d352b4de97e3a167107b4ad41710a48
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849718"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311993"
 ---
-# <a name="get-outlooktask"></a>Получение outlookTask
+# <a name="get-outlooktask-deprecated"></a>Получение outlookTask (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -23,7 +23,7 @@ ms.locfileid: "46849718"
 
 Получение свойств и связей задачи Outlook в почтовом ящике пользователя.
 
-По умолчанию эта операция (post, PATCH и выполненные [операции](../api/outlooktask-complete.md) задач) возвращает связанные с датами свойства в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
+По умолчанию эта операция (а также операции POST, PATCH и [Complete](../api/outlooktask-complete.md) ) Возвращает свойства, связанные с датами, в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,7 +53,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 | Имя                     | Описание                                       |
 |:-------------------------|:--------------------------------------------------|
 | Авторизация            | Bearer {токен}. Обязательный.                         |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в ответе, который будет быть указан в формате UTC, если этот заголовок не указан. Необязательное свойство. |
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,11 +61,11 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает `200 OK` код ответа [и объект outlookTask](../resources/outlooktask.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTask](../resources/outlooktask.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-an-outlook-task"></a>Пример 1. Получение задачи Outlook
+### <a name="example-1-get-an-outlook-task"></a>Пример 1: получение задачи Outlook
 
 #### <a name="request"></a>Запрос
 
@@ -146,11 +146,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Пример 2. Получение задачи Outlook со свойствами даты и времени по тихоокеанскоу времени
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Пример 2: получение задачи Outlook со свойствами даты и времени в стандартном Тихоокеанском времени
 
 #### <a name="request"></a>Запрос
 
-В этом примере `Prefer: outlook.timezone` используется заголовок, чтобы API возвращал свойства даты и времени в ответе по тихоокеанскому времени.
+В этом примере используется `Prefer: outlook.timezone` заголовок, чтобы указать, что API должен возвращать в ответе свойства даты и времени в ответе в стандартном Тихоокеанском времени.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -180,7 +180,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Свойства даты и времени в ответе возвращаются в указанном тихоокеанское время.
+Ниже приведен пример отклика. Свойства даты и времени в отклике возвращаются в указанном тихоокеанском стандартном Тихоокеанском времени.
 
 > **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 

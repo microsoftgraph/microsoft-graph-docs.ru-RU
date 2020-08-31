@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1c5f958f4543c985b6ecf8684080d261ed874028
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 6521438d82f02deef1334d2a7b710fa87ee9c8d6
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181380"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312018"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -31,7 +31,6 @@ ms.locfileid: "43181380"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryRoles/{id}/members/$ref
-
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -39,7 +38,7 @@ POST /directoryRoles/{id}/members/$ref
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | string  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -91,8 +90,6 @@ Content-type: application/json
 } -->
 ```http
 HTTP/1.1 204 No Content
-Content-type: text/plain
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

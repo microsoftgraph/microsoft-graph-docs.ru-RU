@@ -5,20 +5,20 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fa8fef43c462559d5c4420637b635b5371ef90ab
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: a04baa476c18dc5a581fffa2e466d3fcbdfa0c68
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181731"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312028"
 ---
-# <a name="identityriskevent-resource-type"></a>Тип ресурса Идентитирискевент
+# <a name="identityriskevent-resource-type-deprecated"></a>Тип ресурса Идентитирискевент (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
+>[!CAUTION]
 >API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Событие риска, обнаруженное [защитой удостоверений Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/). Это базовый тип для каждого конкретного типа событий риска:
@@ -54,7 +54,7 @@ ms.locfileid: "43181731"
 |userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|

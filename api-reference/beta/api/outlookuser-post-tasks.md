@@ -1,18 +1,18 @@
 ---
 title: Создание объекта outlookTask
-description: Создание задачи Outlook в группе задач по умолчанию ( `My Tasks` ) и папке задач по умолчанию ( `Tasks` ) в почтовом ящике пользователя.
+description: Создайте задачу Outlook в группе задач по умолчанию ( `My Tasks` ) и папке задач по умолчанию ( `Tasks` ) в почтовом ящике пользователя.
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8de61bceba328dbf99242cbfe5140e7ebed1296b
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 558392d6248fc6a114bf26b6c74ad2a859910d65
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849452"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311930"
 ---
-# <a name="create-outlooktask"></a>Создание объекта outlookTask
+# <a name="create-outlooktask-deprecated"></a>Создание outlookTask (устаревшее)
 
 Пространство имен: microsoft.graph
 
@@ -21,11 +21,11 @@ ms.locfileid: "46849452"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Создание задачи Outlook в группе задач по умолчанию ( `My Tasks` ) и папке задач по умолчанию ( `Tasks` ) в почтовом ящике пользователя.
+Создайте задачу Outlook в группе задач по умолчанию ( `My Tasks` ) и папке задач по умолчанию ( `Tasks` ) в почтовом ящике пользователя.
 
-Метод POST всегда игнорирует время **элементов startDateTime** **и dueDateTime** в теле запроса и предполагается, что время всегда должно быть в ее поясе.
+Метод POST всегда игнорирует часть времени **startDateTime** и **дуедатетиме** в теле запроса и предполагает, что время будет всегда в полночь в заданном часовом поясе.
 
-По умолчанию эта операция (и операции GET, PATCH и [выполненные](../api/outlooktask-complete.md) задачи) возвращают связанные с датами свойства в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
+По умолчанию эта операция (а также операции GET, PATCH и [Complete](../api/outlooktask-complete.md) ) Возвращает свойства, связанные с датами, в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,18 +46,18 @@ POST /users/{id|userPrincipalName}/outlook/tasks
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в ответе, который будет быть указан в формате UTC, если этот заголовок не указан. Необязательное свойство.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
 
 ## <a name="request-body"></a>Текст запроса
-Представьте в тексте запроса описание объекта [outlookTask в формате JSON.](../resources/outlooktask.md)
+В тексте запроса добавьте представление объекта [outlookTask](../resources/outlooktask.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает `201 Created` код ответа [и объект outlookTask](../resources/outlooktask.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [outlookTask](../resources/outlooktask.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере показано использование `Prefer: outlook.timezone` заголовка. Она создает задачу, повышает **значения startDateTime** **и dueDateTime** в восточном восточном времени (EST) и `Prefer` заголовок PST-файлов.
+В приведенном ниже примере показано использование `Prefer: outlook.timezone` заголовка. Он создает задачу, выражает **startDateTime** и **Дуедатетиме** в восточное стандартное время (EST) и включает `Prefer` заголовку тихоокеанского стандартного времени (PST).
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlookuser"
@@ -94,11 +94,11 @@ Content-length: 276
 
 ---
 
-Представьте в тексте запроса описание объекта [outlookTask в формате JSON.](../resources/outlooktask.md)
+В тексте запроса добавьте представление объекта [outlookTask](../resources/outlooktask.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Метод POST игнорирует часть времени **startDateTime** **и dueDateTime** в теле запроса и предполагает, что время всегда должно быть в обеим часовом поясе (EST).
+Метод POST игнорирует часть времени **startDateTime** и **дуедатетиме** в теле запроса и предполагает, что время будет всегда в полночь в заданном часовом поясе (EST).
 
-Так как `Prefer` заголовок задает PST, метод POST выражает все свойства, связанные с датами, в ответе PST. В частности, для **свойств startDateTime** **и dueDateTime** метод POST преобразует полуночу из EST-файл в PST-файл и возвращает их в ответе.
+Так как `Prefer` Заголовок указывает PST-файл, метод POST выражает все свойства, связанные с датами, в ответе в PST-файле. В частности, для свойств **startDateTime** и **дуедатетиме** метод POST преобразовывает полночь в СРЕДСТВе EST в PST-файл и возвращает их в PST-файле в ответе.
 
 Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

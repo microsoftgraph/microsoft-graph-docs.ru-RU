@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 327d518a3db8409dd1c8fb828752197e685c4123
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: f961ca441ddcde086a4bf3e69a451a8f0c2d1e44
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873092"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312105"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -28,6 +28,12 @@ ms.locfileid: "46873092"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | бета | Добавлены свойства **cancelledOccurrences**, **exceptionOccurrences** и **occurrenceId** для объекта [event](/graph/api/resources/event?view=graph-rest-beta).
+
+### <a name="cloud-communications"></a>Коммуникации из облака
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **transcription** к объекту [вызова](/graph/api/resources/call).|
 
 ### <a name="change-notifications"></a>Уведомления об изменениях
 
@@ -84,6 +90,9 @@ ms.locfileid: "46873092"
 | Дополнение | бета | Добавлены следующие свойства для [Условий соглашения об использовании](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
 | Дополнение | бета | Добавлен новый тип ресурса для [Условий соглашения об использовании](/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
 | Дополнение | бета | Добавлены внутренние и внешние спонсоры [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) для управления правами.  |
+| Дополнение | бета | Добавлено свойство inheritsPermissionsFrom к ресурсу [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta). |
+| Дополнение | бета | Добавлен тип перечисления **connectedOrganizationState** и свойство **state** к ресурсу [connectedOrganization](/graph/api/resources/connectedOrganization?view=graph-rest-beta).|
+| Изменение   | бета | Переименовано разрешенное **requestorSettings** значение из "AllExistingConnectedOrganizationSubjects" в "AllConfiguredConnectedOrganizationSubjects" |
 
 ### <a name="people-and-workplace-intelligence--profile"></a>Люди и рабочая аналитика | Профиль
 
@@ -982,7 +991,7 @@ ms.locfileid: "46873092"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 |:---|:---|:---|
-|Изменение | Бета |Обновлена коллекция существующих политик с использованием сегмента URL-адреса [политик](/graph/api/resources/policy-overview?view=graph-rest-beta). Ресурсы типизированных политик теперь группируются в сегменте политик, как описано в [этой записи блога](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/). Это обновление добавляет четыре ресурса типизированных политик: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>[homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) и </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li> |
+|Изменение | бета |Обновлена коллекция существующих политик с использованием сегмента URL-адреса [политик](/graph/api/resources/policy-overview?view=graph-rest-beta). Ресурсы типизированных политик теперь группируются в сегменте политик, как описано в [этой записи блога](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/). Это обновление добавляет четыре ресурса типизированных политик: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>[homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) и </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li> |
 | Дополнение | Бета | Добавленный тип ресурса [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta) управляет автоматическим выходом для веб-сессий после периода бездействия для приложений, поддерживающих функции времени ожидания на основе действий.|
 | Дополнение | Бета |Тип ресурса [claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) управляет сопоставлением утверждений для протоколов WS-Fed, SAML, OAuth 2.0 и OpenID Connect при использовании маркеров, выпущенных для конкретного приложения.|
 | Дополнение | бета | Тип ресурса [homeRealmDiscoveryPolicy](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) управляет действием проверки подлинности Azure Active Directory для федеративных пользователей, в частности, для автоматического ускорения и ограничений проверки подлинности в федеративных доменах. |
@@ -1215,7 +1224,7 @@ ms.locfileid: "46873092"
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение | Бета | Добавлено разрешение уровня приложения Policy.Read.All для операций чтения в политиках условного доступа и именованных расположениях.|
 | Дополнение | Бета | Добавлена поддержка состояния "только отчет": `enabledForReportingButNotEnforced`.|
-| Изменение | Бета | Обновлены разрешения, необходимые для выполнения операций записи для политик условного доступа и именованных расположений.|
+| Изменение | бета | Обновлены разрешения, необходимые для выполнения операций записи для политик условного доступа и именованных расположений.|
 
 ### <a name="security"></a>Безопасность
 

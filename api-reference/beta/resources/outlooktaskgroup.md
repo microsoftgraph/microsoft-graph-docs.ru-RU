@@ -1,18 +1,18 @@
 ---
 title: Тип ресурса outlookTaskGroup
-description: 'Группа папок (outlookTaskFolder), содержащая задачи Outlook (коллекция объектов outlookTask). '
+description: 'Группа папок (outlookTaskFolder), которая содержит задачи Outlook (Коллекция объектов outlookTask). '
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 112ffab7699a2c8812311ba0c21c2b0e47efff70
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: afd5da7663a9328a87b5df2616b0093a4208caeb
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849795"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312122"
 ---
-# <a name="outlooktaskgroup-resource-type"></a>Тип ресурса outlookTaskGroup
+# <a name="outlooktaskgroup-resource-type-deprecated"></a>Тип ресурса outlookTaskGroup (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -21,34 +21,34 @@ ms.locfileid: "46849795"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Группа папок[(outlookTaskFolder),](outlooktaskfolder.md)которая содержит задачи Outlook (коллекция [объектов outlookTask).](outlooktask.md) 
+Группа папок ([outlookTaskFolder](outlooktaskfolder.md)), которая содержит задачи Outlook (Коллекция объектов [outlookTask](outlooktask.md) ). 
 
-В Outlook есть группа задач по умолчанию, `My Tasks` которую невозможно переименовать или удалить. Однако можно создавать дополнительные группы задач. 
+В Outlook существует группа задач по умолчанию, `My Tasks` которую нельзя переименовать или удалить. Тем не менее, вы можете создать дополнительные группы задач. 
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Get outlookTaskGroup](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |Получение свойств и связей указанной группы задач Outlook.|
-|[Создание объекта outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Создайте папку задач Outlook.|
-|[Перечисление объектов taskFolder](../api/outlooktaskgroup-list-taskfolders.md) |[Коллекция outlookTaskFolder](outlooktaskfolder.md)| Получение коллекции папок задач Outlook.|
-|[обновление](../api/outlooktaskgroup-update.md). | [outlookTaskGroup](outlooktaskgroup.md)  |Обновление записываемых свойств группы задач Outlook. |
-|[удаление](../api/outlooktaskgroup-delete.md); | Нет |Удаление указанной группы задач Outlook. |
+|[Получение outlookTaskGroup](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |Получение свойств и связей указанной группы задач Outlook.|
+|[Создание outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Создайте папку задач Outlook.|
+|[Список Таскфолдерс](../api/outlooktaskgroup-list-taskfolders.md) |Коллекция [outlookTaskFolder](outlooktaskfolder.md)| Получение коллекции папок задач Outlook.|
+|[обновление](../api/outlooktaskgroup-update.md). | [outlookTaskGroup](outlooktaskgroup.md)  |Обновление свойств, доступных для записи, для группы задач Outlook. |
+|[Удаление](../api/outlooktaskgroup-delete.md) | Нет |Удаление указанной группы задач Outlook. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |changeKey|String|Версия группы задач.|
-|groupKey|Edm.Guid|Уникальный идентификатор GUID группы задач.|
+|граупкэй|Edm.Guid|Уникальный идентификатор GUID для группы задач.|
 |id|String|Уникальный строковый идентификатор группы задач. Только для чтения.|
-|isDefaultGroup|Boolean|True, если группа задач является группой задач по умолчанию.|
+|исдефаултграуп|Логический|Значение true, если группа задач является группой задач по умолчанию.|
 |name|String|Имя группы задач.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|taskFolders|[Коллекция outlookTaskFolder](outlooktaskfolder.md)| Коллекция папок задач в группе задач. Только для чтения. Допускается значение null.|
+|таскфолдерс|Коллекция [outlookTaskFolder](outlooktaskfolder.md)| Коллекция папок задач в группе задач. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

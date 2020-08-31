@@ -1,18 +1,18 @@
 ---
-title: Перечисление объектов taskGroups
+title: Список taskGroups
 description: Получение всех групп задач Outlook в почтовом ящике пользователя.
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e5dd844356b83005dd8df9d7e9b4ce52c8baa4e3
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 42d09fad4e238e7a11bc2799ee5ed2fb70a76116
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849224"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312140"
 ---
-# <a name="list-taskgroups"></a>Перечисление объектов taskGroups
+# <a name="list-taskgroups-deprecated"></a>Список taskGroups (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -23,7 +23,7 @@ ms.locfileid: "46849224"
 
 Получение всех групп задач Outlook в почтовом ящике пользователя.
 
-Отклик всегда включает в себя группу задач `My Tasks` по умолчанию и все другие группы задач, созданные в почтовом ящике.
+Ответ всегда включает группу задач по умолчанию `My Tasks` и все остальные группы задач, созданные в почтовом ящике.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -52,7 +52,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает `200 OK` код ответа и коллекцию объектов [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

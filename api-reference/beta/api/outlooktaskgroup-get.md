@@ -1,18 +1,18 @@
 ---
-title: Get outlookTaskGroup
+title: Получение outlookTaskGroup
 description: Получение свойств и связей указанной группы задач Outlook.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 227de23959539187159abd92fcb1e1588419c9d4
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 7c164e94898b4e5ea6836c5b9ae0787a516cc5bf
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849281"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311608"
 ---
-# <a name="get-outlooktaskgroup"></a>Get outlookTaskGroup
+# <a name="get-outlooktaskgroup-deprecated"></a>Получение outlookTaskGroup (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает `200 OK` код ответа [и объект outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

@@ -5,20 +5,20 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: a2693303195266f3396906e2bcd78b651ade759a
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 3ae7025229ad81a40ed035613715f08e9c54c806
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181303"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311846"
 ---
-# <a name="list-suspiciousipriskevents"></a>Список СуспиЦиаусиприскевентс
+# <a name="list-suspiciousipriskevents-deprecated"></a>Список СуспиЦиаусиприскевентс (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
+>[!CAUTION]
 >API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Получение списка объектов суспиЦиаусиприскевент.
@@ -42,10 +42,10 @@ GET /suspiciousIpRiskEvents
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [суспиЦиаусиприскевент](../resources/suspiciousipriskevent.md) в тексте отклика.
 ## <a name="example"></a>Пример

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b97fc0ce4ca6ead942347357dd99d125dd95f583
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 0f0d4f6f62727e9e4324bacb4d688ac9e1ab791f
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510648"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311376"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -86,7 +86,8 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Только для чтения. Состояние мультимедиа компонентов вызова. |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Содержит возможности собрания. Только для чтения.                                                                                                       |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) или [tokenMeetingInfo](tokenmeetinginfo.md)             | Сведения о собрании. Обязательные сведения для сценариев собраний.                                                                                                              |
-| myParticipantId     | String                                                                                                 | Только для чтения.                                                                                                                                                                        |
+|transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                         | Сведения расшифровки для звонка. Только для чтения.                           |
+myParticipantId     | String                                                                                                   | Только для чтения.                                                                                                                                                                        |
 | requestedModalities | Коллекция String                                                                                      | Список запрошенных модальностей. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | Сведения о результате. Например, может содержать причину прекращения. Только для чтения.                                                                                                        |
 | ringingTimeoutInSeconds | Int32                                                                                              | Время ожидания звонков в секундах для исходящих одноранговых вызовов. Максимальное значение для этого атрибута составляет 115 секунд.                                                                                        |
@@ -125,6 +126,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
     "mediaState",
     "meetingCapability",
     "meetingInfo",
+    "transcription",
     "myParticipantId",
     "replacesContext",
     "resultInfo",
@@ -156,6 +158,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
   "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
   "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
+  "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
   "myParticipantId": "String",
   "replacesContext": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],

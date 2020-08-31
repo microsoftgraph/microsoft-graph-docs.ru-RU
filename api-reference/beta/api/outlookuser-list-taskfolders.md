@@ -1,18 +1,18 @@
 ---
-title: Перечисление объектов taskFolder
+title: Список Таскфолдерс
 description: Получение всех папок задач Outlook в почтовом ящике пользователя.
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 689a377d611386c2ef24f762acddbd0543968417
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: e20150e15cf56b20f17694b54c41027dfb0c9b42
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849354"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311937"
 ---
-# <a name="list-taskfolders"></a>Перечисление объектов taskFolder
+# <a name="list-taskfolders-deprecated"></a>Список Таскфолдерс (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает `200 OK` код ответа и коллекцию объектов [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

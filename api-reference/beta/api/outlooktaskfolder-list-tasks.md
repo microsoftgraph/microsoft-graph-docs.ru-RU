@@ -5,14 +5,14 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1d17a3d0390952c604a3b12e9613df3447dd26f9
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 7e1d0327f48acb133dc42b54a8add9997a5a23a0
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849389"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312175"
 ---
-# <a name="list-tasks"></a>Перечисление задач
+# <a name="list-tasks-deprecated"></a>Список задач (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -23,9 +23,9 @@ ms.locfileid: "46849389"
 
 Получение всех задач Outlook в указанной папке.
 
-По умолчанию эта операция (post, PATCH и выполненные [операции](../api/outlooktask-complete.md) задач) возвращает связанные с датами свойства в формате UTC.  С помощью `Prefer: outlook.timezone` заголовка запроса можно с разбивать все свойства, связанные с датами, в отличие от UTC. См. [пример получения](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) одной задачи. Вы можете применить его аналогично получению нескольких задач.
+По умолчанию эта операция (а также операции POST, PATCH и [Complete](../api/outlooktask-complete.md) ) Возвращает свойства, связанные с датами, в формате UTC.  С помощью `Prefer: outlook.timezone` заголовка запроса можно получить все свойства, связанные с датами, в ответе, представленном в часовом поясе, отличном от UTC. [Пример](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) получения одной задачи. Заголовок можно применить точно так же, как и для получения нескольких задач.
 
-Если необходимо получить все задачи в определенной группе задач, сначала получите все папки задач в этой [группе,](outlooktaskgroup-list-taskfolders.md)а затем получите задачи в каждой из этих папок.
+Если имеется несколько групп задач, и вы хотите получить все задачи в определенной группе задач, сначала [получите все папки задач в этой группе задач](outlooktaskgroup-list-taskfolders.md), а затем получите задачи в каждой из этих папок задач.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,14 +51,14 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в ответе, который будет быть указан в формате UTC, если этот заголовок не указан. Необязательное свойство.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает `200 OK` код ответа и коллекцию объектов [outlookTask](../resources/outlooktask.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [outlookTask](../resources/outlooktask.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

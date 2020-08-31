@@ -5,20 +5,20 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: 7fe24b9b96fd1a36f40ed0e78fe23612962e279b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: cb4112e8d9cf8ef686b706b9f286c17e8078bfee
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181492"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311383"
 ---
-# <a name="list-unfamiliarlocationriskevents"></a>Список Унфамилиарлокатионрискевентс
+# <a name="list-unfamiliarlocationriskevents-deprecated"></a>Список Унфамилиарлокатионрискевентс (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
+>[!CAUTION]
 >API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Получение списка объектов унфамилиарлокатионрискевент.
@@ -42,10 +42,10 @@ GET /unfamiliarLocationRiskEvents
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [унфамилиарлокатионрискевент](../resources/unfamiliarlocationriskevent.md) в тексте отклика.
 ## <a name="example"></a>Пример

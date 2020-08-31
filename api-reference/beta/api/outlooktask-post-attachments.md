@@ -1,18 +1,18 @@
 ---
 title: Создание вложения
-description: С помощью этого API можно добавить вложение в элемент outlookTask.
+description: Используйте этот API, чтобы добавить вложение в объект outlookTask.
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3dc0ab4e62844bf565cdff834e57ba9843d30873
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: d589fb84e62712fa744acb373af8678e8db8242f
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849676"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311979"
 ---
-# <a name="create-attachment"></a>Создание вложения
+# <a name="create-attachment-deprecated"></a>Создание вложения (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "46849676"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-С помощью этого API можно [добавить вложение](../resources/attachment.md) в [outlookTask.](../resources/outlooktask.md) Допустимые значения: файл (с [типом fileAttachment)](../resources/fileattachment.md) или элемент Outlook[(тип itemAttachment).](../resources/itemattachment.md)
+Используйте этот API, чтобы добавить [вложение](../resources/attachment.md) в объект [outlookTask](../resources/outlooktask.md). Вложение может представлять собой файл (из типа [fileAttachment](../resources/fileattachment.md) ) или элемент Outlook (тип[itemAttachment](../resources/itemattachment.md) ).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,7 +47,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Content-Type | Строка, представляющая тип данных в теле сущности. Обязательный элемент. |
+| Content-Type | Строка, представляющая тип данных в теле объекта. Обязательный элемент. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -59,7 +59,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-add-file-attachment"></a>Пример 1. Добавление вложенного файла 
+### <a name="example-1-add-file-attachment"></a>Пример 1: Добавление вложенного файла 
 
 #### <a name="request"></a>Запрос
 
@@ -126,11 +126,11 @@ HTTP 201 Created
 }
 ```
 
-### <a name="example-2-add-item-attachment"></a>Пример 2. Добавление вложенного элемента
+### <a name="example-2-add-item-attachment"></a>Пример 2: Добавление вложения элемента
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример, в котором событие прикрепляется к другому событию в виде вложения.
+Ниже приведен пример, в котором присоединяется событие с другим событием в качестве вложения элемента.
 
 <!-- {
   "blockType": "ignored",

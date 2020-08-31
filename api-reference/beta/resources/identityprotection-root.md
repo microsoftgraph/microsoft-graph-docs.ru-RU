@@ -1,18 +1,18 @@
 ---
-title: Использование API-интерфейсов для защиты удостоверений Azure AD (Предварительная версия)
+title: Использование API-интерфейсов для защиты удостоверений Azure AD
 description: С помощью Microsoft Graph вы можете запросить API защиты удостоверений для получения сведений о риске, обнаруженном службой Azure AD Identity Protection.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 43fbfb8f0645d4d7d9a58135f2cd6fe986c62643
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 2adaf43786f1ced76a2c971815989f08967cfb3d
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181738"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312038"
 ---
-# <a name="use-the-azure-ad-identity-protection-api-preview"></a>Использование API защиты удостоверений Azure AD (Предварительная версия)
+# <a name="use-the-azure-ad-identity-protection-api"></a>Использование API защиты удостоверений Azure AD
 
 Пространство имен: microsoft.graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "43181738"
 
 * [идентитирискевентс](identityriskevent.md) — запросить Microsoft Graph, чтобы получить список обнаруженных и связанных сведений о рисках. Этот API является устаревшим; Вместо этого рекомендуется использовать **рискдетектионс** .
 
->[!NOTE]
+>[!CAUTION]
 >API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 ## <a name="see-also"></a>См. также

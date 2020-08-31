@@ -1,18 +1,18 @@
 ---
-title: Обновление объекта outlooktaskfolder
-description: Обновление записываемых свойств папки задач Outlook.
+title: Обновление outlooktaskfolder
+description: Обновление свойств, доступных для записи, папки задач Outlook.
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 948f633ae43d32a16322e60ad2cdf497642af828
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 99c3ca379760812ad3312395b3f03d2bdaf3d2a8
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849739"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311958"
 ---
-# <a name="update-outlooktaskfolder"></a>Обновление объекта outlooktaskfolder
+# <a name="update-outlooktaskfolder-deprecated"></a>Обновление outlooktaskfolder (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -21,9 +21,9 @@ ms.locfileid: "46849739"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Обновление записываемых свойств папки задач Outlook.
+Обновление свойств, доступных для записи, папки задач Outlook.
 
-Невозможно изменить значение свойства **name** папки задач по умолчанию , Tasks.
+Вы не можете изменить значение свойства **Name** папки задач по умолчанию, "задачи".
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -55,10 +55,10 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает `200 OK` код ответа и обновленный [объект outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере имя указанной папки задач изменяется на `Charity work` .
+В следующем примере показано изменение имени указанной папки задач на `Charity work` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
