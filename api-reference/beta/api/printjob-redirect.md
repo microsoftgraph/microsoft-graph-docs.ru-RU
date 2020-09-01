@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 20226ff04883eba26038fe1357377a7ea78cce97
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: a498f85238127a6816ed5d6597839862cd00f58d
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565695"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319465"
 ---
 # <a name="printjob-redirect"></a>printJob: redirect
 
@@ -22,6 +22,9 @@ ms.locfileid: "46565695"
 
 Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
+> [!IMPORTANT]
+> Приостановленные задания печати, которые не перенаправлены в течение 2 дней, будут удалены.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -31,7 +34,7 @@ ms.locfileid: "46565695"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| PrintJob. Manage. ALL |
+|Приложение| PrintJob.Manage.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

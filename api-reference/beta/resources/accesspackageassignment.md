@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2b52b9dbd7b2b76df34ab6c55a46b69718d4a0e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f7a2fe772dc7b3be328fad452a5b193ccf7a7ed0
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508564"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319460"
 ---
 # <a name="accesspackageassignment-resource-type"></a>Тип ресурса Акцесспаккажеассигнмент
 
@@ -34,7 +34,7 @@ ms.locfileid: "42508564"
 |:-------------|:------------|:------------|
 |акцесспаккажеид|String|Идентификатор пакета Access. Только для чтения.|
 |ассигнментполициид|String|Идентификатор политики назначения пакетов доступа. Только для чтения.|
-|ассигнментстате|String|Состояние пакета Access. Возможные значения: `Delivered` или `Expired`. Только для чтения.|
+|ассигнментстате|String|Состояние пакета Access. Возможные значения: `Delivered` или `Expired` . Только для чтения.|
 |Свойства assignmentstatus|String|Только для чтения.|
 |каталогид|String|Идентификатор каталога, содержащего пакет Access. Только для чтения.|
 |експиреддатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
@@ -48,7 +48,7 @@ ms.locfileid: "42508564"
 |:-------------|:------------|:------------|
 |акцесспаккаже|[акцесспаккаже](accesspackage.md)| Только для чтения. Допускается значение null.|
 |акцесспаккажеассигнментполици|[акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md)| Только для чтения. Допускается значение null.|
-|акцесспаккажеассигнментресаурцеролес|Коллекция [акцесспаккажеассигнментресаурцероле](accesspackageassignmentresourcerole.md)| Только для чтения. Допускается значение null.|
+|акцесспаккажеассигнментресаурцеролес|Коллекция [акцесспаккажеассигнментресаурцероле](accesspackageassignmentresourcerole.md)| Роли ресурсов, доставляемые конечному пользователю для этого назначения. Только для чтения. Допускается значение null.|
 |target|[акцесспаккажесубжект](accesspackagesubject.md)| Тема назначения пакета Access. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

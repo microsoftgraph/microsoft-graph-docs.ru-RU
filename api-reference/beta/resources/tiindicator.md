@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: b6998ae22263bb1c8764a0562a22b2362d115f88
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 68345ec9c443f0c83d96e54a0ee9d4fbbc5279ff
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845794"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319493"
 ---
 # <a name="tiindicator-resource-type"></a>Тип ресурса Тииндикатор
 
@@ -30,7 +30,7 @@ ms.locfileid: "44845794"
      - [Создание объекта tiIndicator](../api/tiindicators-post.md)
      - [Перечисление объектов tiIndicator](../api/tiindicators-list.md)
      - [Обновление](../api/tiindicator-update.md)
-     - [Удаление](../api/tiindicator-delete.md)
+     - [удаление](../api/tiindicator-delete.md);
 
      Поддержка массовых методов скоро появилась.
 
@@ -40,7 +40,7 @@ ms.locfileid: "44845794"
   > - IP-адреса: защитник Microsoft Defender поддерживает назначение IPv4/IPv6 — задание свойства в свойствах networkDestinationIPv4 или networkDestinationIPv6 в API безопасности Microsoft Graph **тииндикатор**.
   > - URL-адреса и домены
 
-   Для каждого клиента с помощью пакета ATP для защитника Microsoft доступно не более 5000 индикаторов.
+   Для каждого клиента с помощью пакета ATP для защитника Microsoft доступно не более 15000 индикаторов.
 
 Подробнее о поддерживаемых типах индикаторов и ограничениях относительно количества индикаторов для каждого клиента см. в статье [Управление индикаторами](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
@@ -51,8 +51,8 @@ ms.locfileid: "44845794"
 | [Получение объекта tiIndicator](../api/tiindicator-get.md) | [тииндикатор](tiindicator.md) | Чтение свойств и связей объекта Тииндикатор. |
 | [Создание объекта tiIndicator](../api/tiindicators-post.md) | [тииндикатор](tiindicator.md) | Создание нового Тииндикатор путем отправки в коллекцию Тииндикаторс. |
 | [Перечисление объектов tiIndicator](../api/tiindicators-list.md) | Коллекция [тииндикатор](tiindicator.md) | Получение коллекции объектов Тииндикатор. |
-| [Обновление](../api/tiindicator-update.md) | [тииндикатор](tiindicator.md) | Обновление объекта Тииндикатор. |
-| [Удаление](../api/tiindicator-delete.md) | Нет | Удаление объекта Тииндикатор. |
+| [обновление](../api/tiindicator-update.md). | [тииндикатор](tiindicator.md) | Обновление объекта Тииндикатор. |
+| [удаление](../api/tiindicator-delete.md); | Нет | Удаление объекта Тииндикатор. |
 |[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|Нет| Удаление нескольких объектов Тииндикатор.|
 |[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|Нет| Удаление нескольких объектов Тииндикатор в `externalId` свойстве.|
 |[submitTiIndicators](../api/tiindicator-submittiindicators.md)|Коллекция [тииндикатор](tiindicator.md)|Создание нового Тииндикаторс путем отправки коллекции Тииндикаторс.|
@@ -60,11 +60,11 @@ ms.locfileid: "44845794"
 
 ### <a name="methods-supported-by-each-target-product"></a>Методы, поддерживаемые каждым целевым продуктом
 
-| Method                                                          | Azure Sentinel                                                                                                                                                                                                                                                                                                                                                                      | ATP в Microsoft Defender                                                                                                                                                                                               |
+| Метод                                                          | Azure Sentinel                                                                                                                                                                                                                                                                                                                                                                      | ATP в Microsoft Defender                                                                                                                                                                                               |
 |:----------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Создание объекта tiIndicator](../api/tiindicators-post.md)               | Обязательные поля:,,,,,, `action` `azureTenantId` `description` `expirationDateTime` `targetProduct` `threatType` `tlpLevel` и хотя бы один наблюдаемый адрес электронной почты, сеть или файл.                                                                                                                                                                                                | Обязательные поля: `action` , и одно из следующих значений: `domainName` ,, `url` `networkDestinationIPv4` , `networkDestinationIPv6` , `fileHashValue` (должен указываться `fileHashType` в случае случая `fileHashValue` ). |
 | [Передача Тииндикаторс](../api/tiindicator-submittiindicators.md) | Обратитесь к методу [CREATE тииндикатор](../api/tiindicators-post.md) для обязательных полей для каждого тииндикатор. Для каждого запроса существует лимит 100 Тииндикаторс.                                                                                                                                                                                                                    | Обратитесь к методу [CREATE тииндикатор](../api/tiindicators-post.md) для обязательных полей для каждого тииндикатор. Для каждого запроса существует лимит 100 Тииндикаторс.                                                     |
-| [Обновление объекта tiIndicator](../api/tiindicator-update.md)              | Обязательные поля: `id` , `expirationDateTime` , `targetProduct` . <br> Редактируемые поля:,,,,,,,,,,, `action` `activityGroupNames` `additionalInformation` `confidence` `description` `diamondModel` `expirationDateTime` `externalId` `isActive` `killChain` `knownFalsePositives` `lastReportedDateTime` `malwareFamilyNames` , `passiveOnly` , `severity` , `tags` , `tlpLevel` . | Обязательные поля: `id` , `expirationDateTime` , `targetProduct` . <br> Редактируемые поля: `expirationDateTime` , `severity` , `description` .                                                                         |
+| [Обновление объекта tiIndicator](../api/tiindicator-update.md)              | Обязательные поля: `id` , `expirationDateTime` , `targetProduct` . <br> Редактируемые поля:,,,,,,,,,,,  `action` `activityGroupNames` `additionalInformation` `confidence` `description` `diamondModel` `expirationDateTime` `externalId` `isActive` `killChain` `knownFalsePositives` `lastReportedDateTime` `malwareFamilyNames` , `passiveOnly` , `severity` , `tags` , `tlpLevel` . | Обязательные поля: `id` , `expirationDateTime` , `targetProduct` . <br> Редактируемые поля: `expirationDateTime` , `severity` , `description` .                                                                         |
 | [Обновление Тииндикаторс](../api/tiindicator-updatetiindicators.md) | Обратитесь к методу [Update тииндикатор](../api/tiindicator-update.md) , чтобы получить обязательные и редактируемые поля для каждого тииндикатор.                                                                                                                                                                                                                                                       | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p>                                                                                                             |
 | [Удаление объекта tiIndicator](../api/tiindicator-delete.md)              | Обязательное поле: `id` .                                                                                                                                                                                                                                                                                                                                                            | Обязательное поле: `id` .                                                                                                                                                                                             |
 | [Удаление Тииндикаторс](../api/tiindicator-deletetiindicators.md) | Обратитесь к методу [Delete тииндикатор](../api/tiindicator-delete.md) выше, чтобы указать обязательное поле для каждого тииндикатор.                                                                                                                                                                                                                                                               | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p>                                                                                                             |
@@ -80,9 +80,9 @@ ms.locfileid: "44845794"
 |confidence|Int32|Целое число, представляющее достоверность, с помощью которой данные в индикаторе точно определяют вредоносное поведение. Допустимые значения: 0 – 100 с 100 по убыванию.|
 |description|String| Краткое описание угрозы, представленное индикатором (100 символов или меньше). **Обязательно.**|
 |диамондмодел|[диамондмодел](#diamondmodel-values)|Область модели ромба, в которой существует этот индикатор. Возможные значения: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
-|expirationDateTime|DateTimeOffset| Строка DateTime, указывающая, когда истечет срок действия индикатора. Все индикаторы должны иметь дату истечения срока действия, чтобы не допустить устаревших показателей в системе. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. **Обязательно.**|
+|expirationDateTime|DateTimeOffset| Строка DateTime, указывающая, когда истечет срок действия индикатора. Все индикаторы должны иметь дату истечения срока действия, чтобы не допустить устаревших показателей в системе. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. **Обязательно.**|
 |externalId|String| Идентификационный номер, который привязывает индикатор к системе поставщика индикаторов (например, внешнему ключу). |
-|id|Строка|Создается системой при приеме индикатора. Созданный GUID/уникальный идентификатор. Только для чтения.|
+|id|String|Создается системой при приеме индикатора. Созданный GUID/уникальный идентификатор. Только для чтения.|
 |инжестеддатетиме|DateTimeOffset| Отмечается системой при включенном индикаторе. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |isActive|Boolean| Используется для отключения индикаторов в системе. По умолчанию все отправленные индикаторы задаются как активные. Однако поставщики могут отсылать существующие индикаторы с этим набором в значение false, чтобы отключить индикаторы в системе.|
 |киллчаин|Коллекция [киллчаин](#killchain-values)|Массив строк JSON, указывающий, какая точка или точки в цепочке аннулирования этот индикатор. Точные значения представлены в разделе "значения Киллчаин". |
@@ -156,8 +156,8 @@ ms.locfileid: "44845794"
 |:-------|:----- |:------------|
 | unknown |  нуль    | |
 | Злоумышленник |  1     |Индикатор описывает.|
-| поставлен |  2   |Индикатор — это возможность злоумышленника.|
-| инфраструктур | 4 |Индикатор описывает инфраструктуру злоумышленника.|
+| поставлен |  2    |Индикатор — это возможность злоумышленника.|
+| инфраструктур | 3  |Индикатор описывает инфраструктуру злоумышленника.|
 | стала | 4  |Индикатор описывает жертвой злоумышленника.|
 | unknownFutureValue | 127 | |
 
@@ -184,7 +184,7 @@ ms.locfileid: "44845794"
 |DDoS|Индикаторы, связанные с активной или предстоящей кампанией DDoS.|
 |малиЦиаусурл|URL-адрес, который обслуживает вредоносные программы.|
 |Вредоносные программы|Индикатор, описывающий вредоносный файл или файлы.|
-|Фишинг|Индикаторы, связанные с фишинговой кампанией.|
+|Фишинговое|Индикаторы, связанные с фишинговой кампанией.|
 |Сервера|Индикатор — это то, что является прокси-службой.|
 |пуа|Потенциально нежелательное приложение.|
 |ватчлист|Это общий контейнер, в который помещаются индикаторы, когда не удается определить, какая именно угроза или потребуется ручная интерпретация. Они обычно не должны использоваться партнерами, отправляющей данные в систему.|

@@ -173,7 +173,7 @@ items:
         href: overview.md
       - name: Пользователи
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -586,18 +586,21 @@ items:
               - name: Список дочерних элементов
                 href: api/driveitem-list-children.md
           - name: Расширенные свойства
-            href: resources/extended-properties-overview.md
             items:
-              - name: Однозначное расширенное свойство
-                href: resources/singlevaluelegacyextendedproperty.md
+              - name: Обзор
+                href: resources/extended-properties-overview.md
+              - name: Однозначные расширенные свойства
                 items:
+                  - name: Однозначное расширенное свойство
+                    href: resources/singlevaluelegacyextendedproperty.md
                   - name: Создание однозначного свойства
                     href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
                   - name: Получение однозначного свойства
                     href: api/singlevaluelegacyextendedproperty-get.md
-              - name: Многозначное расширенное свойство
-                href: resources/multivaluelegacyextendedproperty.md
+              - name: Расширенные свойства с несколькими значениями
                 items:
+                  - name: Многозначное расширенное свойство
+                    href: resources/multivaluelegacyextendedproperty.md
                   - name: Создание многозначного свойства
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
@@ -722,7 +725,7 @@ items:
                 href: api/serviceprincipal-get.md
               - name: Обновление
                 href: api/serviceprincipal-update.md
-              - name: Delete
+              - name: Удаление
                 href: api/serviceprincipal-delete.md
               - name: Получение дельты
                 href: api/serviceprincipal-delta.md
@@ -969,11 +972,12 @@ items:
                 href: api/calendarpermission-get.md
               - name: Обновление
                 href: api/calendarpermission-update.md
-              - name: Delete
+              - name: Удаление
                 href: api/calendarpermission-delete.md
           - name: Категории
-            href: resources/outlookcategory.md
             items:
+              - name: Категория
+                href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
               - name: Создание категории
@@ -985,36 +989,39 @@ items:
               - name: Удаление категории
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
-            href: resources/extended-properties-overview.md
             items:
-              - name: Однозначное расширенное свойство
-                href: resources/singlevaluelegacyextendedproperty.md
+              - name: Обзор
+                href: resources/extended-properties-overview.md
+              - name: Однозначные расширенные свойства
                 items:
+                  - name: Однозначное расширенное свойство
+                    href: resources/singlevaluelegacyextendedproperty.md
                   - name: Создание однозначного свойства
                     href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
                   - name: Получение однозначного свойства
                     href: api/singlevaluelegacyextendedproperty-get.md
-              - name: Многозначное расширенное свойство
-                href: resources/multivaluelegacyextendedproperty.md
+              - name: Расширенные свойства с несколькими значениями
                 items:
+                  - name: Многозначное расширенное свойство
+                    href: resources/multivaluelegacyextendedproperty.md
                   - name: Создание многозначного свойства
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
+          - name: Заключит
+            items:
               - name: Заключит
-                items:
-                  - name: Заключит
-                    href: resources/place.md
-                  - name: Тип комнаты
-                    href: resources/room.md
-                  - name: Тип списка помещений
-                    href: resources/roomlist.md
-                  - name: Список мест
-                    href: api/place-list.md
-                  - name: Получение
-                    href: api/place-get.md
-                  - name: Обновление места
-                    href: api/place-update.md
+                href: resources/place.md
+              - name: Тип комнаты
+                href: resources/room.md
+              - name: Тип списка помещений
+                href: resources/roomlist.md
+              - name: Список мест
+                href: api/place-list.md
+              - name: Получение
+                href: api/place-get.md
+              - name: Обновление места
+                href: api/place-update.md
       - name: Уведомления об изменениях
         displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
         items:
@@ -1064,6 +1071,8 @@ items:
                     href: api/call-playprompt.md
                   - name: Ответ на запись
                     href: api/call-record.md
+                  - name: Отмена обработки мультимедиа
+                    href: api/call-cancelmediaprocessing.md
                   - name: Подписка на гудок
                     href: api/call-subscribetotone.md
               - name: Участник
@@ -3788,7 +3797,7 @@ items:
                     href: api/certificatebasedauthconfiguration-get.md
                   - name: Удаление
                     href: api/certificatebasedauthconfiguration-delete.md
-              - name: Условный доступ
+              - name: условный доступ;
                 items:
                   - name: Политики
                     items:
@@ -3802,7 +3811,7 @@ items:
                         href: api/conditionalaccesspolicy-get.md
                       - name: Обновление
                         href: api/conditionalaccesspolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/conditionalaccesspolicy-delete.md
                   - name: Именованные расположения
                     items:
@@ -3828,7 +3837,7 @@ items:
                             href: api/countrynamedlocation-get.md
                           - name: Обновление
                             href: api/countrynamedlocation-update.md
-                          - name: Delete
+                          - name: Удаление
                             href: api/countrynamedlocation-delete.md
                       - name: IP-адрес с именем
                         items:
@@ -3842,7 +3851,7 @@ items:
                             href: api/ipnamedlocation-get.md
                           - name: Обновление
                             href: api/ipnamedlocation-update.md
-                          - name: Delete
+                          - name: Удаление
                             href: api/ipnamedlocation-delete.md
               - name: Операции с политикой данных
                 href: resources/datapolicyoperation.md
@@ -3860,7 +3869,7 @@ items:
                     href: api/oauth2permissiongrant-get.md
                   - name: Обновление
                     href: api/oauth2permissiongrant-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/oauth2permissiongrant-delete.md
                   - name: Получение дельты
                     href: api/oauth2permissiongrant-delta.md
@@ -3921,7 +3930,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-get.md
                       - name: Обновление
                         href: api/activitybasedtimeoutpolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Политика обнаружения домашней области
                     href: resources/homerealmdiscoverypolicy.md
@@ -3934,7 +3943,7 @@ items:
                         href: api/homerealmdiscoverypolicy-get.md
                       - name: Обновление
                         href: api/homerealmdiscoverypolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/homerealmdiscoverypolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/homerealmdiscoverypolicy-list-appliesto.md
@@ -3949,7 +3958,7 @@ items:
                         href: api/claimsmappingpolicy-get.md
                       - name: Обновление
                         href: api/claimsmappingpolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/claimsmappingpolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/claimsmappingpolicy-list-appliesto.md
@@ -3964,7 +3973,7 @@ items:
                         href: api/tokenissuancepolicy-get.md
                       - name: Обновление
                         href: api/tokenissuancepolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/tokenissuancepolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/tokenissuancepolicy-list-appliesto.md
@@ -3979,7 +3988,7 @@ items:
                         href: api/tokenlifetimepolicy-get.md
                       - name: Обновление
                         href: api/tokenlifetimepolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/tokenlifetimepolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/tokenlifetimepolicy-list-appliesto.md
@@ -4056,8 +4065,9 @@ items:
               - name: Удаление вложения
                 href: api/attachment-delete.md
           - name: Категории
-            href: resources/outlookcategory.md
             items:
+              - name: Категория
+                href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
               - name: Создание категории
@@ -4139,18 +4149,21 @@ items:
               - name: Удаление правила
                 href: api/messagerule-delete.md
           - name: Расширенные свойства
-            href: resources/extended-properties-overview.md
             items:
-              - name: Однозначное расширенное свойство
-                href: resources/singlevaluelegacyextendedproperty.md
+              - name: Обзор
+                href: resources/extended-properties-overview.md
+              - name: Однозначные расширенные свойства
                 items:
+                  - name: Однозначное расширенное свойство
+                    href: resources/singlevaluelegacyextendedproperty.md
                   - name: Создание однозначного свойства
                     href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
                   - name: Получение однозначного свойства
                     href: api/singlevaluelegacyextendedproperty-get.md
-              - name: Многозначное расширенное свойство
-                href: resources/multivaluelegacyextendedproperty.md
+              - name: Расширенные свойства с несколькими значениями
                 items:
+                  - name: Многозначное расширенное свойство
+                    href: resources/multivaluelegacyextendedproperty.md
                   - name: Создание многозначного свойства
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
@@ -4323,8 +4336,9 @@ items:
               - name: Получение дельты контакта
                 href: api/contact-delta.md
           - name: Категории
-            href: resources/outlookcategory.md
             items:
+              - name: Категория
+                href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
               - name: Создание категории
@@ -4336,18 +4350,21 @@ items:
               - name: Удаление категории
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
-            href: resources/extended-properties-overview.md
             items:
-              - name: Однозначное расширенное свойство
-                href: resources/singlevaluelegacyextendedproperty.md
+              - name: Обзор
+                href: resources/extended-properties-overview.md
+              - name: Однозначные расширенные свойства
                 items:
+                  - name: Однозначное расширенное свойство
+                    href: resources/singlevaluelegacyextendedproperty.md
                   - name: Создание однозначного свойства
                     href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
                   - name: Получение однозначного свойства
                     href: api/singlevaluelegacyextendedproperty-get.md
-              - name: Многозначное расширенное свойство
-                href: resources/multivaluelegacyextendedproperty.md
+              - name: Расширенные свойства с несколькими значениями
                 items:
+                  - name: Многозначное расширенное свойство
+                    href: resources/multivaluelegacyextendedproperty.md
                   - name: Создание многозначного свойства
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
@@ -4968,7 +4985,7 @@ items:
                     href: api/openshift-get.md
                   - name: Обновление
                     href: api/openshift-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/openshift-delete.md
               - name: Открыть запрос на изменение сочетания клавиш
                 href: resources/openshiftchangerequest.md

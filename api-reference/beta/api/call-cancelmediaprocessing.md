@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0f9ec0eaede3383d6e99a05e4aa4023dd914d9b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3556d8b0445d51a79979434f70dc1417f021ba2d
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440887"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319416"
 ---
 # <a name="call-cancelmediaprocessing"></a>Call: Канцелмедиапроцессинг
 
@@ -18,7 +18,9 @@ ms.locfileid: "42440887"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отменяет обработку всех выполняемых [приглашений на проигрывание](./call-playprompt.md) или [запись отклика](./call-record.md) .
+Отменяет обработку всех выполняемых операций мультимедиа.
+
+Операции с мультимедиа относятся к IVR операциям [плайпромпт](./call-playprompt.md) и [рекордреспонсе](./call-record.md), которые по умолчанию находятся в очереди на обработку по порядку. Метод **канцелмедиапроцессинг** отменяет любую операцию, которая находится в процессе, а также операции, помещенные в очередь. Например, этот API можно использовать для очистки очереди операций IVR для новой операции мультимедиа. Тем не менее операция **убскрибетотоне** не будет отменена, так как она работает независимо от очереди операций.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +29,7 @@ ms.locfileid: "42440887"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Нет.                                       |
+| Приложение                            | Нет.                                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +52,7 @@ POST /communications/calls/{id}/cancelMediaProcessing
 |:---------------|:--------|:---------------------------------------------------------------|
 | Контекст  | String  | Контекст клиента.                                            |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код HTTP-ответа и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
 
 ## <a name="example"></a>Пример
@@ -142,7 +144,7 @@ Content-Type: application/json
           "@odata.type": "#microsoft.graph.resultInfo",
           "code": 400,
           "subcode": 8508,
-          "message": "Action falied, the operation was cancelled."
+          "message": "Action failed, the operation was cancelled."
         },
         "recordingLocation": "",
         "recordingAccessToken": "",
