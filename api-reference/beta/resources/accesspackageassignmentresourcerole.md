@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6ef0827736d16f1dbf3aedfb664467011e75e7b2
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 403b97dc335e57dfd2d4f2fe2aa75c4f6fd07682
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383779"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319521"
 ---
 # <a name="accesspackageassignmentresourcerole-resource-type"></a>Тип ресурса Акцесспаккажеассигнментресаурцероле
 
@@ -32,11 +32,11 @@ ms.locfileid: "44383779"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Только для чтения.|
-|оригинид|String|Уникальный идентификатор, связанный с исходной системой. |
-|оригинсистем|String|Система, в которой необходимо создать назначение роли или она была создана для назначения пакета Access, например `SharePointOnline` .|
-|status|String|Значение задается, `Fulfilled` когда назначение пакета Access было доставлено в исходную систему.|
+|оригинид|String|Уникальный идентификатор, относящийся к исходной системе, соответствующий свойству Оригинид объекта [акцесспаккажересаурцероле](accesspackageresourcerole.md). |
+|оригинсистем|String|Система, в которой необходимо создать назначение роли или она была создана для назначения пакета Access, например `SharePointOnline` , `AadGroup` или `AadApplication` соответствующего свойству оригинсистем объекта [акцесспаккажересаурцероле](accesspackageresourcerole.md).|
+|status|String|Это значение используется, `PendingFulfillment` когда назначение пакета Access еще не было доставлено в исходную систему, и `Fulfilled` когда назначение пакета Access было доставлено в исходную систему.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

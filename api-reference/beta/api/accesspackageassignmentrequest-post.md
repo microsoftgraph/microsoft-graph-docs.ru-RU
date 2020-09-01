@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4696a0c90e15eefe6e4dc9135438b911d8b6b591
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 1318455b3a9307527f47af523efd7e8ac2680a8b
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383471"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319402"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Создание Акцесспаккажеассигнментрекуест
 
@@ -42,20 +42,24 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Носитель \{токен\}. Обязательный элемент. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) в формате JSON.
 
-Чтобы создать назначение для пользователя, используется значение свойства **requestType** `AdminAdd` , а свойство **акцесспаккажеассигнмент** содержит `targetId` назначенного пользователя, свойство **ассигнментполициид** , идентифицирующее [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md), и свойство **акцесспаккажеид** , определяющее [accessPackage](../resources/accesspackage.md).
+Чтобы администратор запрашивал создание назначения для пользователя, свойство **requestType** имеет значение `AdminAdd` , а свойство **акцесспаккажеассигнмент** содержит `targetId` назначенного пользователя, свойство **ассигнментполициид** , идентифицирующее [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md), и свойство **акцесспаккажеид** , определяющее [accessPackage](../resources/accesspackage.md).
 
-Чтобы удалить назначение, значение свойства **requestType** — `AdminRemove` , и свойство **акцесспаккажеассигнмент** содержит свойство **ID** , идентифицирующее удаляемое [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) .
+Чтобы администратор запрашивал удаление назначения, свойство **requestType** имеет значение `AdminRemove` , а свойство **акцесспаккажеассигнмент** содержит свойство **ID** , идентифицирующее удаляемое [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) .
+
+Чтобы пользователь, не являющийся администратором, запрашивался для самостоятельного создания назначения, используется значение свойства **requestType** `UserAdd` , а свойство **акцесспаккажеассигнмент** содержит `targetId` идентификатор самих пользователей, свойство **ассигнментполициид** , идентифицирующее [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md), и свойство **акцесспаккажеид** , определяющее [accessPackage](../resources/accesspackage.md).  Пользователь, выполняющий запрос, должен уже существовать в каталоге.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) в тексте отклика.  Если это `AdminAdd` запрос, затем [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) и, при необходимости, также создаются [акцесспаккажесубжект](../resources/accesspackagesubject.md) . Вы можете указать их, используя параметры запроса при [выводе акцесспаккажеассигнментс](accesspackageassignment-list.md).
+В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) в тексте отклика.  
+
+Если это `AdminAdd` запрос, затем [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) и, при необходимости, также создаются [акцесспаккажесубжект](../resources/accesspackagesubject.md) . Вы можете указать их, используя параметры запроса при [выводе акцесспаккажеассигнментс](accesspackageassignment-list.md).
 
 ## <a name="examples"></a>Примеры
 

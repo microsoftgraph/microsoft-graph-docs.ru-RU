@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4c7ba30513b6de77628aad6790a2050ff4ca8afb
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 2203296635f40707673a2a8d5c621bf5c9ff8726
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630279"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319559"
 ---
 # <a name="get-identityprovider"></a>Получение identityProvider
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/identityProviders/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider"
+  "@odata.type": "microsoft.graph.identityProvider"
 } -->
 
 ```http

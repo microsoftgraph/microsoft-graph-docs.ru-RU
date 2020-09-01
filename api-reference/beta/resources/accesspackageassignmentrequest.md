@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 908d1e4b2fd27895416058a1c8528126dad7ca6b
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: 11b3095bf54f6d5ffe1af4ca4926fe4409429b48
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757190"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319535"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>Тип ресурса Акцесспаккажеассигнментрекуест
 
@@ -18,8 +18,7 @@ ms.locfileid: "46757190"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении обслуживанием в Azure AD](entitlementmanagement-root.md)запрос на назначение пакета Access создается пользователем, желающим получить назначение пакета Access. Если запрос выполнен успешно, при наличии необходимых утверждений пользователь получает назначение пакета Access и является темой этого назначенного пакета доступа.  Кроме того, Azure AD автоматически создает запросы на отправку для отслеживания удаления.
-
+В [управлении обслуживанием в Azure AD](entitlementmanagement-root.md)запрос на назначение пакета Access создается или от имени пользователя, которому требуется получить назначение пакета Access. Если запрос выполнен успешно, при наличии необходимых утверждений пользователь получает назначение пакета Access и является темой этого назначенного пакета доступа.  Кроме того, Azure AD автоматически создает запросы на отправку для отслеживания удаления.
 
 ## <a name="methods"></a>Методы
 
@@ -37,13 +36,13 @@ ms.locfileid: "46757190"
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |id|String| Только для чтения.|
 |исвалидатиононли|Boolean|Имеет значение true, если запрос не обрабатывается для назначения.|
-|текста|Строка|Выставляемое по запросу обоснование.|
-|рекуестстате|Строка|Один из `PendingApproval` ,,,,, `Canceled`  `Denied` `Delivering` `Delivered` `PartiallyDelivered` , `Submitted` или `Scheduled` . Только для чтения.|
-|рекуестстатус|Строка|Дополнительные сведения о состоянии обработки запроса. Только для чтения.|
-|requestType|Строка|Один из `UserAdd` , `UserRemove` , `AdminAdd` `AdminRemove` или `SystemRemove` . Только для чтения.|
-|акцесспаккажеассигнмент|[акцесспаккажеассигнмент](accesspackageassignment.md)| Требуется создать назначение пакета Access.|
+|текста|String|Выставляемое по запросу обоснование.|
+|рекуестстате|String|Один из `PendingApproval` ,,,,, `Canceled`  `Denied` `Delivering` `Delivered` `PartiallyDelivered` , `Submitted` или `Scheduled` . Только для чтения.|
+|рекуестстатус|String|Дополнительные сведения о состоянии обработки запроса. Только для чтения.|
+|requestType|String|Один из `UserAdd` , `UserRemove` , `AdminAdd` `AdminRemove` или `SystemRemove` . У самого пользователя запрос будет иметь значение requestType `UserAdd` или `UserRemove` . Только для чтения.|
+|акцесспаккажеассигнмент|[акцесспаккажеассигнмент](accesspackageassignment.md)| Для параметра requestType `UserAdd` или необходимо `AdminAdd` создать назначение пакета Access.  Для объекта requestType `UserRemove` , `AdminRemove` или `SystemRemove` , это свойство содержит `id` свойство существующего назначения, которое необходимо удалить.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

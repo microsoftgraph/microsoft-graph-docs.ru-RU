@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8f862972b1c061d2c95267af19b26da300978288
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e521c5140467d8e44052982e50f19fd8a2088041
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508529"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319598"
 ---
 # <a name="accesspackageresource-resource-type"></a>Тип ресурса Акцесспаккажересаурце
 
@@ -33,15 +33,15 @@ ms.locfileid: "42508529"
 |аддедби|String|Только для чтения.|
 |аддедон|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |description|String|Описание ресурса.|
-|displayName|Строка|Отображаемое имя ресурса, например имя приложения, имя группы или имя сайта.|
+|displayName|String|Отображаемое имя ресурса, например имя приложения, имя группы или имя сайта.|
 |id|String| Только для чтения.|
 |испендингонбоардинг|Boolean|Значение true, если ресурс пока недоступен для назначения.|
 |оригинид|String|Уникальный идентификатор ресурса в исходной системе. В случае группы Azure AD это идентификатор группы. |
-|оригинсистем|String|Тип ресурса в исходной системе, например `SharePointOnline` или. `AadGroup`|
+|оригинсистем|String|Тип ресурса в исходной системе, например `SharePointOnline` , `AadApplication` или `AadGroup` .|
 |Ресурса|String|Тип ресурса, например, `Application` если это приложение, подключаемое к Azure AD, или `SharePoint Online Site` сайт SharePoint Online.|
 |url|String|Уникальный указатель ресурсов для ресурса, например URL-адрес для подписания пользователя в приложении.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

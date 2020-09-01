@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c20f4dad0263e9d4c931e43da99870ed022f1e58
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: be8fb874dfd05a1e337bd9189e6542cade2e0a16
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44492232"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319591"
 ---
 # <a name="authorizationpolicy-resource-type"></a>Тип ресурса Аусоризатионполици
 
@@ -30,15 +30,19 @@ ms.locfileid: "44492232"
 ## <a name="properties"></a>Свойства  
 | Свойство | Тип | Описание | 
 |-|-|-|
-|id|String| Идентификатор политики авторизации. Обязательный элемент. Только для чтения.| 
-|displayName|Строка| Отображаемое имя для этой политики. |  
+|id|String| Идентификатор политики авторизации. Обязательно. Только для чтения.| 
+|displayName|String| Отображаемое имя для этой политики. |  
 |description|String| Описание этой политики.|  
 |гуестусерролеид|Guid| Представляет templateId роли для роли, которая должна быть выделена пользователю "гость". Обратитесь к [списку унифиедроледефинитионс](https://docs.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta&tabs=http) , чтобы найти список доступных шаблонов ролей. В настоящее время поддерживаются следующие роли: пользователь (a0b1b346-4d3e-4e8b-98f8-753987be4970), гость (10dae51f-b6af-4016-8d66-8c2a99b929b3) и незащищенный гостевой пользователь (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
 |енабледпревиевфеатурес|Коллекция (String)| Список компонентов, включенных для закрытой предварительной версии в клиенте. | 
-|блоккмсолповершелл|Логический| Чтобы отключить использование MSOL PowerShell, установите для этого свойства значение true. Если задано значение true, также будет отключен доступ пользователей к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не повлияет на Azure AD Connect или Microsoft Graph. | 
+|блоккмсолповершелл|Boolean| Чтобы отключить использование MSOL PowerShell, установите для этого свойства значение true. Если задано значение true, также будет отключен доступ пользователей к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не повлияет на Azure AD Connect или Microsoft Graph. | 
+|дефаултусерролепермиссионс|[дефаултусерролепермиссионс](defaultUserRolePermissions.md)| Задает определенные настраиваемые разрешения для роли пользователя по умолчанию. | 
+|алловедтаусесспр|Boolean| Указывает, можно ли использовать функцию самостоятельного сброса пароля для пользователей клиента. | 
+|алловедтосигнупемаилбаседсубскриптионс|Boolean| Указывает, могут ли пользователи регистрироваться на почтовые подписки. | 
+|алловемаилверифиедусерстожоинорганизатион|Boolean| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. | 
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -62,6 +66,10 @@ ms.locfileid: "44492232"
   "displayName": "String",
   "enabledPreviewFeatures": "[String]",
   "guestUserRoleId": "Guid",
-  "blockMsolPowerShell": true 
+  "blockMsolPowerShell": true,
+  "defaultUserRolePermissions": {"@odata.type": "microsoft.graph.defaultUserRolePermissions"},
+  "allowedToUseSSPR": true,
+  "allowedToSignUpEmailBasedSubscriptions": true,
+  "allowEmailVerifiedUsersToJoinOrganization": true
 }
 ```

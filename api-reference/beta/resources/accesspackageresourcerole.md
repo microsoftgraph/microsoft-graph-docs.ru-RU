@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b5ab0cc6e2179adb62316cbcdc06b7dd52abc439
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4bc0a60043c9877b4c48a889f93fa48a852c3780
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508515"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319589"
 ---
 # <a name="accesspackageresourcerole-resource-type"></a>Тип ресурса Акцесспаккажересаурцероле
 
@@ -18,7 +18,7 @@ ms.locfileid: "42508515"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении службой управления правами Azure AD](entitlementmanagement-root.md)роль ресурса пакета Access — это ссылка на роль, определенную в ресурсе, которую можно использовать в пакете Access.
+В [управлении службой управления правами Azure AD](entitlementmanagement-root.md)роль ресурса пакета Access — это ссылка на роль, определенную в ресурсе. Эту ссылку можно использовать после создания пакета Access, чтобы указать роли каждого из ресурсов каталога, к которым должен предоставлять пакет Access, путем [создания области применения роли ресурса пакета Access](../api/accesspackage-post-accesspackageresourcerolescopes.md).
 
 ## <a name="methods"></a>Методы
 
@@ -31,12 +31,12 @@ ms.locfileid: "42508515"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|String|Описание роли ресурса.|
-|displayName|Строка|Отображаемое имя роли ресурса, например роль, определяемую приложением.|
+|displayName|String|Отображаемое имя роли ресурса, например роль, определяемую приложением.|
 |id|String| Только для чтения.|
 |оригинид|String|Уникальный идентификатор роли ресурса в исходной системе. |
-|оригинсистем|String|Тип ресурса в исходной системе.|
+|оригинсистем|String|Тип ресурса в исходной системе, например `SharePointOnline` , `AadApplication` или `AadGroup` .|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
