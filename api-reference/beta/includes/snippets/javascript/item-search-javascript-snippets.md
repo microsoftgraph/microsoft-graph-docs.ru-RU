@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 59a2fa7828f393c6583e5ba4b5d3ab9713835377
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 28f86ca675b7ee5bbd4ddc26f3ed58a0927a419e
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873922"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331099"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/root/search(q='Contoso Projec}')')
+let res = await client.api('/me/drive/root/search(q='Contoso Project')')
     .version('beta')
     .get();
 

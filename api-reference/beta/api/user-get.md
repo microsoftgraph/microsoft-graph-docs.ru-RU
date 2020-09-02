@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4568b44ac0da8727a9f6155127ab3de88c8b7029
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 52ce3945a02a0b8780a81316e17109c6a2338f85
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107852"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330388"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -31,20 +31,33 @@ ms.locfileid: "43107852"
 |Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite    |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-## <a name="http-request"></a>HTTP-запрос
+Для вызова конечной точки `/me` требуется вход пользователя и, следовательно, делегированное разрешение. Разрешения приложений не поддерживаются при использовании конечной точки `/me`.
+
+Для определенного пользователя:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Для вошедшего пользователя:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me
+```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Заголовок       | Значение|
 |:-----------|:------|
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
