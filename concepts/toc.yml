@@ -195,6 +195,10 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Методы проверки подлинности
             href: authenticationmethods-get-started.md
+          - name: Управление
+            items:
+              - name: Создание пакета доступа
+                href: tutorial-access-package-api.md
       - name: Почта
         displayName: 'Outlook, Outlook mail'
         items:

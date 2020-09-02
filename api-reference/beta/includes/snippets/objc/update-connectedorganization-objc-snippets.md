@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ad9ef3304346eb52af8fd1cd2d195c89db0a6ebc
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: e0c38df5b619189ac01540b5ba21ae0525d943aa
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566524"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331082"
 ---
 ```objc
 
@@ -19,6 +19,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphConnectedOrganization *connectedOrganization = [[MSGraphConnectedOrganization alloc] init];
 [connectedOrganization setDisplayName:@"Connected organization new name"];
 [connectedOrganization setDescription:@"Connected organization new description"];
+[connectedOrganization setState:@"configured"];
 
 NSError *error;
 NSData *connectedOrganizationData = [connectedOrganization getSerializedDataWithError:&error];
