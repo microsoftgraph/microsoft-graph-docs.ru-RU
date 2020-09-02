@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a70affd0667af729e02cd77969030e082035d9e1
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: f4d35decdae3303576565e2844206c7bfe16cf23
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539480"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330296"
 ---
 # <a name="list-sets"></a>Наборы списков
 Пространство имен: Microsoft. Graph. банка
@@ -57,6 +57,8 @@ GET /termStore/groups/{groupId}/sets
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_set"
@@ -65,6 +67,20 @@ GET /termStore/groups/{groupId}/sets
 ``` http
 GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-set-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-set-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-set-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

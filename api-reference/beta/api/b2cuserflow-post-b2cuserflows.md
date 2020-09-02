@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4e001b0835e0ca902939d71b6425434cc4ee0446
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 46a4c70329e021c89bf9107b877fcf9fae88b3ca
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319820"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47329999"
 ---
 # <a name="create-b2cuserflow"></a>Создание b2cUserFlow
 
@@ -56,10 +56,10 @@ POST /identity/b2cUserFlows
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|id|String|Обязательный. Имя пользовательского процесса. Имя будет предваряться `B2C_1` после создания.|
-|усерфловтипе|String|Обязательный. Тип создаваемого пользовательского процесса. Для **усерфловтипе** поддерживаются следующие значения:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
-|усерфловтипеверсион|С плавающей запятой|Обязательно. Версия пользовательского процесса.|
-|идентитипровидерс|Коллекция [identityProvider](../resources/identityprovider.md)|Необязательное свойство. Поставщики удостоверений, которые необходимо включить в пользовательский блок.|
+|id|String|Обязательный. Имя пользовательского потока. Имя будет предваряться `B2C_1` после создания.|
+|userFlowType|String|Обязательный. Тип создаваемого пользовательского процесса. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|усерфловтипеверсион|С плавающей запятой|Обязательно. Версия пользовательского потока.|
+|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное свойство. Поставщики удостоверений, которые необходимо включить в пользовательский блок.|
 
 ## <a name="response"></a>Отклик
 
@@ -73,6 +73,8 @@ POST /identity/b2cUserFlows
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_b2cuserflow_from_b2cuserflows"
@@ -90,6 +92,20 @@ Content-length: 154
     "userFlowTypeVersion": 3
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-b2cuserflow-from-b2cuserflows-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-b2cuserflow-from-b2cuserflows-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-b2cuserflow-from-b2cuserflows-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
@@ -121,6 +137,8 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_b2cuserflow_from_b2cuserflows_identityProvider"
@@ -145,6 +163,20 @@ Content-length: 154
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-b2cuserflow-from-b2cuserflows-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-b2cuserflow-from-b2cuserflows-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-b2cuserflow-from-b2cuserflows-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

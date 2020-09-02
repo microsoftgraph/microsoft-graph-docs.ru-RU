@@ -5,12 +5,12 @@ author: mohitpcad
 ms.prod: Sharepoint
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: b33b2ac40a489909d23183319b6c8f0fe2506c60
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 22ed47e1332dbe8ff5da8597f51d58017c10093f
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539439"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47329943"
 ---
 # <a name="list-children"></a>Список дочерних элементов
 Пространство имен: Microsoft. Graph. банка
@@ -57,6 +57,8 @@ GET /termStore/sets/{setId}/terms/{termId}/children
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_term"
@@ -65,6 +67,20 @@ GET /termStore/sets/{setId}/terms/{termId}/children
 ``` http
 GET https://graph.microsoft.com/beta/termStore/sets/{setId}/children
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-term-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-term-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-term-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

@@ -5,15 +5,15 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 02f61201db78e2c4e2d8a7dbef4bc0776071f1f0
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 260e638b478e7383d08a57a98925c06117de4001
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539407"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330450"
 ---
 # <a name="get-set"></a>Получение набора
-Пространство имен: Microsoft. Graph. банка[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Пространство имен: Microsoft. Graph. банка [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Считывание свойств и связей объекта [Set](../resources/termstore-set.md) .
 
@@ -56,6 +56,8 @@ GET /termStore/sets/{setId}
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_set"
@@ -64,6 +66,20 @@ GET /termStore/sets/{setId}
 ``` http
 GET https://graph.microsoft.com/beta/termStore/sets/{setId}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-set-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-set-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-set-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

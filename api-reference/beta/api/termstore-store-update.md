@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 50a41ab87d3f105eeec04ced231ca8c3aa7e3bee
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: e097cfcb0ae83346433cf9ec9a510174e31a1bc4
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565799"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330069"
 ---
 # <a name="update-store"></a>Обновление хранилища
 Пространство имен: Microsoft. Graph. банка
@@ -52,7 +52,7 @@ PATCH /termStore
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |дефаултлангуажетаг|String|Язык по умолчанию для [Microsoft. Graph. банка данных Microsoft. Graph.](../resources/termstore-store.md)|
-|лангуажетагс|Коллекция объектов string|Доступные языки в [Microsoft. Graph. банке. Store](../resources/termstore-store.md)|
+|лангуажетагс|Коллекция строк|Доступные языки в [Microsoft. Graph. банке. Store](../resources/termstore-store.md)|
 
 
 
@@ -85,6 +85,10 @@ Content-length: 133
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-store-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-store-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

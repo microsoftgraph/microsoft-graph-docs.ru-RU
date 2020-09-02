@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 477fda55761220d61afc480ab1a8f8304bf879dc
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: c1225bf6f9aacef77ece20c659a51b36d362ff31
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539474"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47329367"
 ---
 # <a name="list-groups"></a>Список групп
 Пространство имен: Microsoft. Graph. банка
@@ -26,7 +26,7 @@ ms.locfileid: "46539474"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | Банк. чтение. ALL, банк. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Приложение | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,6 +57,8 @@ GET /termStore/groups
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_group"
@@ -66,6 +68,20 @@ GET /termStore/groups
 ``` http
 GET https://graph.microsoft.com/beta/termStore/groups
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик
