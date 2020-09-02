@@ -5,37 +5,37 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4e001b0835e0ca902939d71b6425434cc4ee0446
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 46a4c70329e021c89bf9107b877fcf9fae88b3ca
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319820"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47329999"
 ---
-# <a name="create-b2cuserflow"></a><span data-ttu-id="8993c-103">Создание b2cUserFlow</span><span class="sxs-lookup"><span data-stu-id="8993c-103">Create b2cUserFlow</span></span>
+# <a name="create-b2cuserflow"></a><span data-ttu-id="63295-103">Создание b2cUserFlow</span><span class="sxs-lookup"><span data-stu-id="63295-103">Create b2cUserFlow</span></span>
 
-<span data-ttu-id="8993c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8993c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="63295-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="63295-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8993c-105">Создание нового объекта [b2cUserFlow](../resources/b2cuserflows.md) .</span><span class="sxs-lookup"><span data-stu-id="8993c-105">Create a new [b2cUserFlow](../resources/b2cuserflows.md) object.</span></span>
+<span data-ttu-id="63295-105">Создание нового объекта [b2cUserFlow](../resources/b2cuserflows.md) .</span><span class="sxs-lookup"><span data-stu-id="63295-105">Create a new [b2cUserFlow](../resources/b2cuserflows.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8993c-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8993c-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="63295-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="63295-106">Permissions</span></span>
 
-<span data-ttu-id="8993c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8993c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="63295-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="63295-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8993c-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8993c-109">Permission type</span></span>      | <span data-ttu-id="8993c-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8993c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="63295-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="63295-109">Permission type</span></span>      | <span data-ttu-id="63295-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="63295-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8993c-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8993c-111">Delegated (work or school account)</span></span>|<span data-ttu-id="8993c-112">Идентитюсерфлов. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="8993c-112">IdentityUserFlow.ReadWrite.All</span></span>|
-|<span data-ttu-id="8993c-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8993c-113">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="8993c-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8993c-114">Not supported.</span></span>|
-|<span data-ttu-id="8993c-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="8993c-115">Application</span></span>|<span data-ttu-id="8993c-116">Идентитюсерфлов. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="8993c-116">IdentityUserFlow.ReadWrite.All</span></span>|
+|<span data-ttu-id="63295-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="63295-111">Delegated (work or school account)</span></span>|<span data-ttu-id="63295-112">Идентитюсерфлов. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="63295-112">IdentityUserFlow.ReadWrite.All</span></span>|
+|<span data-ttu-id="63295-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="63295-113">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="63295-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="63295-114">Not supported.</span></span>|
+|<span data-ttu-id="63295-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="63295-115">Application</span></span>|<span data-ttu-id="63295-116">Идентитюсерфлов. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="63295-116">IdentityUserFlow.ReadWrite.All</span></span>|
 
-<span data-ttu-id="8993c-117">Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:</span><span class="sxs-lookup"><span data-stu-id="8993c-117">The work or school account needs to belong to one of the following roles:</span></span>
+<span data-ttu-id="63295-117">Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:</span><span class="sxs-lookup"><span data-stu-id="63295-117">The work or school account needs to belong to one of the following roles:</span></span>
 
-* <span data-ttu-id="8993c-118">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="8993c-118">Global administrator</span></span>
-* <span data-ttu-id="8993c-119">Администратор внешнего пользовательского процесса идентификации</span><span class="sxs-lookup"><span data-stu-id="8993c-119">External Identity User Flow administrator</span></span>
+* <span data-ttu-id="63295-118">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="63295-118">Global administrator</span></span>
+* <span data-ttu-id="63295-119">Администратор внешнего пользовательского процесса идентификации</span><span class="sxs-lookup"><span data-stu-id="63295-119">External Identity User Flow administrator</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="8993c-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8993c-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="63295-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="63295-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,36 +43,38 @@ ms.locfileid: "47319820"
 POST /identity/b2cUserFlows
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8993c-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8993c-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="63295-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="63295-121">Request headers</span></span>
 
-|<span data-ttu-id="8993c-122">Имя</span><span class="sxs-lookup"><span data-stu-id="8993c-122">Name</span></span>|<span data-ttu-id="8993c-123">Описание</span><span class="sxs-lookup"><span data-stu-id="8993c-123">Description</span></span>|
+|<span data-ttu-id="63295-122">Имя</span><span class="sxs-lookup"><span data-stu-id="63295-122">Name</span></span>|<span data-ttu-id="63295-123">Описание</span><span class="sxs-lookup"><span data-stu-id="63295-123">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="8993c-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8993c-124">Authorization</span></span>|<span data-ttu-id="8993c-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8993c-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="8993c-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8993c-127">Content-Type</span></span>|<span data-ttu-id="8993c-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8993c-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="63295-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="63295-124">Authorization</span></span>|<span data-ttu-id="63295-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="63295-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="63295-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="63295-127">Content-Type</span></span>|<span data-ttu-id="63295-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="63295-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8993c-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8993c-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="63295-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="63295-130">Request body</span></span>
 
-<span data-ttu-id="8993c-131">В тексте запроса предоставьте представление объекта [b2cUserFlow](../resources/b2cuserflows.md)в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8993c-131">In the request body, provide a JSON representation of a [b2cUserFlow](../resources/b2cuserflows.md).</span></span>
+<span data-ttu-id="63295-131">В тексте запроса предоставьте представление объекта [b2cUserFlow](../resources/b2cuserflows.md)в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="63295-131">In the request body, provide a JSON representation of a [b2cUserFlow](../resources/b2cuserflows.md).</span></span>
 
-|<span data-ttu-id="8993c-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="8993c-132">Property</span></span>|<span data-ttu-id="8993c-133">Тип</span><span class="sxs-lookup"><span data-stu-id="8993c-133">Type</span></span>|<span data-ttu-id="8993c-134">Описание</span><span class="sxs-lookup"><span data-stu-id="8993c-134">Description</span></span>|
+|<span data-ttu-id="63295-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="63295-132">Property</span></span>|<span data-ttu-id="63295-133">Тип</span><span class="sxs-lookup"><span data-stu-id="63295-133">Type</span></span>|<span data-ttu-id="63295-134">Описание</span><span class="sxs-lookup"><span data-stu-id="63295-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8993c-135">id</span><span class="sxs-lookup"><span data-stu-id="8993c-135">id</span></span>|<span data-ttu-id="8993c-136">String</span><span class="sxs-lookup"><span data-stu-id="8993c-136">String</span></span>|<span data-ttu-id="8993c-137">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8993c-137">Required.</span></span> <span data-ttu-id="8993c-138">Имя пользовательского процесса.</span><span class="sxs-lookup"><span data-stu-id="8993c-138">The name of the user flow.</span></span> <span data-ttu-id="8993c-139">Имя будет предваряться `B2C_1` после создания.</span><span class="sxs-lookup"><span data-stu-id="8993c-139">The name will be pre-pended with `B2C_1` after creation.</span></span>|
-|<span data-ttu-id="8993c-140">усерфловтипе</span><span class="sxs-lookup"><span data-stu-id="8993c-140">userFlowType</span></span>|<span data-ttu-id="8993c-141">String</span><span class="sxs-lookup"><span data-stu-id="8993c-141">String</span></span>|<span data-ttu-id="8993c-142">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8993c-142">Required.</span></span> <span data-ttu-id="8993c-143">Тип создаваемого пользовательского процесса.</span><span class="sxs-lookup"><span data-stu-id="8993c-143">The type of user flow you are creating.</span></span> <span data-ttu-id="8993c-144">Для **усерфловтипе** поддерживаются следующие значения:</span><span class="sxs-lookup"><span data-stu-id="8993c-144">The supported values for **userFlowType** are:</span></span><br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
-|<span data-ttu-id="8993c-145">усерфловтипеверсион</span><span class="sxs-lookup"><span data-stu-id="8993c-145">userFlowTypeVersion</span></span>|<span data-ttu-id="8993c-146">С плавающей запятой</span><span class="sxs-lookup"><span data-stu-id="8993c-146">Float</span></span>|<span data-ttu-id="8993c-147">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="8993c-147">Required.</span></span> <span data-ttu-id="8993c-148">Версия пользовательского процесса.</span><span class="sxs-lookup"><span data-stu-id="8993c-148">The version of the user flow.</span></span>|
-|<span data-ttu-id="8993c-149">идентитипровидерс</span><span class="sxs-lookup"><span data-stu-id="8993c-149">identityProviders</span></span>|<span data-ttu-id="8993c-150">Коллекция [identityProvider](../resources/identityprovider.md)</span><span class="sxs-lookup"><span data-stu-id="8993c-150">[identityProvider](../resources/identityprovider.md) collection</span></span>|<span data-ttu-id="8993c-151">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="8993c-151">Optional.</span></span> <span data-ttu-id="8993c-152">Поставщики удостоверений, которые необходимо включить в пользовательский блок.</span><span class="sxs-lookup"><span data-stu-id="8993c-152">The identity providers you want to include in the user flow.</span></span>|
+|<span data-ttu-id="63295-135">id</span><span class="sxs-lookup"><span data-stu-id="63295-135">id</span></span>|<span data-ttu-id="63295-136">String</span><span class="sxs-lookup"><span data-stu-id="63295-136">String</span></span>|<span data-ttu-id="63295-137">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="63295-137">Required.</span></span> <span data-ttu-id="63295-138">Имя пользовательского потока.</span><span class="sxs-lookup"><span data-stu-id="63295-138">The name of the user flow.</span></span> <span data-ttu-id="63295-139">Имя будет предваряться `B2C_1` после создания.</span><span class="sxs-lookup"><span data-stu-id="63295-139">The name will be pre-pended with `B2C_1` after creation.</span></span>|
+|<span data-ttu-id="63295-140">userFlowType</span><span class="sxs-lookup"><span data-stu-id="63295-140">userFlowType</span></span>|<span data-ttu-id="63295-141">String</span><span class="sxs-lookup"><span data-stu-id="63295-141">String</span></span>|<span data-ttu-id="63295-142">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="63295-142">Required.</span></span> <span data-ttu-id="63295-143">Тип создаваемого пользовательского процесса.</span><span class="sxs-lookup"><span data-stu-id="63295-143">The type of user flow you are creating.</span></span> <span data-ttu-id="63295-144">Поддерживаемые значения для **userFlowType**:</span><span class="sxs-lookup"><span data-stu-id="63295-144">The supported values for **userFlowType** are:</span></span><br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|<span data-ttu-id="63295-145">усерфловтипеверсион</span><span class="sxs-lookup"><span data-stu-id="63295-145">userFlowTypeVersion</span></span>|<span data-ttu-id="63295-146">С плавающей запятой</span><span class="sxs-lookup"><span data-stu-id="63295-146">Float</span></span>|<span data-ttu-id="63295-147">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="63295-147">Required.</span></span> <span data-ttu-id="63295-148">Версия пользовательского потока.</span><span class="sxs-lookup"><span data-stu-id="63295-148">The version of the user flow.</span></span>|
+|<span data-ttu-id="63295-149">identityProviders</span><span class="sxs-lookup"><span data-stu-id="63295-149">identityProviders</span></span>|<span data-ttu-id="63295-150">Коллекция объектов [identityProvider](../resources/identityprovider.md)</span><span class="sxs-lookup"><span data-stu-id="63295-150">[identityProvider](../resources/identityprovider.md) collection</span></span>|<span data-ttu-id="63295-151">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="63295-151">Optional.</span></span> <span data-ttu-id="63295-152">Поставщики удостоверений, которые необходимо включить в пользовательский блок.</span><span class="sxs-lookup"><span data-stu-id="63295-152">The identity providers you want to include in the user flow.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8993c-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="8993c-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="63295-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="63295-153">Response</span></span>
 
-<span data-ttu-id="8993c-154">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и заголовок Location с URI для объекта [b2cUserFlow](../resources/b2cuserflows.md) , созданного для этого запроса, с `B2C_1` префиксом, добавленным к имени.</span><span class="sxs-lookup"><span data-stu-id="8993c-154">If successful, this method returns a `201 Created` response code and a Location header with a URI to the [b2cUserFlow](../resources/b2cuserflows.md) object created for this request, with the `B2C_1` prefix added to the name.</span></span> <span data-ttu-id="8993c-155">В случае неудачи возвращается ошибка `4xx` с подробностями.</span><span class="sxs-lookup"><span data-stu-id="8993c-155">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
+<span data-ttu-id="63295-154">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и заголовок Location с URI для объекта [b2cUserFlow](../resources/b2cuserflows.md) , созданного для этого запроса, с `B2C_1` префиксом, добавленным к имени.</span><span class="sxs-lookup"><span data-stu-id="63295-154">If successful, this method returns a `201 Created` response code and a Location header with a URI to the [b2cUserFlow](../resources/b2cuserflows.md) object created for this request, with the `B2C_1` prefix added to the name.</span></span> <span data-ttu-id="63295-155">В случае неудачи возвращается ошибка `4xx` с подробностями.</span><span class="sxs-lookup"><span data-stu-id="63295-155">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="8993c-156">Примеры</span><span class="sxs-lookup"><span data-stu-id="8993c-156">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="63295-156">Примеры</span><span class="sxs-lookup"><span data-stu-id="63295-156">Examples</span></span>
 
-### <a name="example-1-create-a-user-flow-with-the-default-values"></a><span data-ttu-id="8993c-157">Пример 1: создание пользовательского процесса со значениями по умолчанию</span><span class="sxs-lookup"><span data-stu-id="8993c-157">Example 1: Create a user flow with the default values</span></span>
+### <a name="example-1-create-a-user-flow-with-the-default-values"></a><span data-ttu-id="63295-157">Пример 1: создание пользовательского процесса со значениями по умолчанию</span><span class="sxs-lookup"><span data-stu-id="63295-157">Example 1: Create a user flow with the default values</span></span>
 
-#### <a name="request"></a><span data-ttu-id="8993c-158">Запрос</span><span class="sxs-lookup"><span data-stu-id="8993c-158">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="63295-158">Запрос</span><span class="sxs-lookup"><span data-stu-id="63295-158">Request</span></span>
 
-<span data-ttu-id="8993c-159">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8993c-159">The following is an example of the request.</span></span>
+<span data-ttu-id="63295-159">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="63295-159">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="63295-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="63295-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_b2cuserflow_from_b2cuserflows"
@@ -90,12 +92,26 @@ Content-length: 154
     "userFlowTypeVersion": 3
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="63295-161">C#</span><span class="sxs-lookup"><span data-stu-id="63295-161">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-b2cuserflow-from-b2cuserflows-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="8993c-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="8993c-160">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="63295-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="63295-162">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-b2cuserflow-from-b2cuserflows-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="8993c-161">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="8993c-161">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="63295-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="63295-163">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-b2cuserflow-from-b2cuserflows-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="8993c-162">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="8993c-162">**Note:** The response object shown here might be shortened for readability.</span></span>
+---
+
+
+#### <a name="response"></a><span data-ttu-id="63295-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="63295-164">Response</span></span>
+
+<span data-ttu-id="63295-165">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="63295-165">The following is an example of the response.</span></span>
+
+<span data-ttu-id="63295-166">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="63295-166">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -115,12 +131,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-user-flow-with-the-default-values-and-an-identity-provider"></a><span data-ttu-id="8993c-163">Пример 2: создание пользовательского процесса со значениями по умолчанию и поставщиком удостоверений</span><span class="sxs-lookup"><span data-stu-id="8993c-163">Example 2: Create a user flow with the default values and an identity provider</span></span>
+### <a name="example-2-create-a-user-flow-with-the-default-values-and-an-identity-provider"></a><span data-ttu-id="63295-167">Пример 2: создание пользовательского процесса со значениями по умолчанию и поставщиком удостоверений</span><span class="sxs-lookup"><span data-stu-id="63295-167">Example 2: Create a user flow with the default values and an identity provider</span></span>
 
-#### <a name="request"></a><span data-ttu-id="8993c-164">Запрос</span><span class="sxs-lookup"><span data-stu-id="8993c-164">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="63295-168">Запрос</span><span class="sxs-lookup"><span data-stu-id="63295-168">Request</span></span>
 
-<span data-ttu-id="8993c-165">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8993c-165">The following is an example of the request.</span></span>
+<span data-ttu-id="63295-169">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="63295-169">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="63295-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="63295-170">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_b2cuserflow_from_b2cuserflows_identityProvider"
@@ -145,12 +163,26 @@ Content-length: 154
     ]
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="63295-171">C#</span><span class="sxs-lookup"><span data-stu-id="63295-171">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-b2cuserflow-from-b2cuserflows-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="8993c-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="8993c-166">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="63295-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="63295-172">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-b2cuserflow-from-b2cuserflows-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="8993c-167">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="8993c-167">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="63295-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="63295-173">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-b2cuserflow-from-b2cuserflows-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="8993c-168">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="8993c-168">**Note:** The response object shown here might be shortened for readability.</span></span>
+---
+
+
+#### <a name="response"></a><span data-ttu-id="63295-174">Отклик</span><span class="sxs-lookup"><span data-stu-id="63295-174">Response</span></span>
+
+<span data-ttu-id="63295-175">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="63295-175">The following is an example of the response.</span></span>
+
+<span data-ttu-id="63295-176">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="63295-176">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
