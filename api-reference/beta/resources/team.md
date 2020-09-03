@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e9f7340b08b65bb1e86bf5ce2a5be5f525662e41
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: b548c59a72af84a1a30d30cf0edb6fdf39df26d5
+ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757271"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47340049"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -41,7 +41,6 @@ ms.locfileid: "46757271"
 |[Перечисление ваших команд](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Перечисление команд, в которых вы являетесь участником. |
 |[Перечисление всех команд](/graph/teams-list-all-teams) | Коллекция [group](group.md) | Перечисление всех групп, содержащих команды. |
 |[Получение фотографии команды](../api/team-get-photo.md) | Двоичные данные | Вы можете получить фотографию (изображение) для команды. |
-|[Обновление фотографии команды](../api/team-update-photo.md) | Отсутствует | Вы можете обновить фотографию (изображение) для команды. |
 
 ## <a name="properties"></a>Свойства
 

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a5d85e1c085bd62a02899453bb805a63c5b91e8c
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 2ded42c0bdc362fff7bdebc7eb4a1bab4dd9d8a3
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108356"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330192"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -28,6 +28,8 @@ ms.locfileid: "43108356"
 |Делегированные (рабочая или учебная учетная запись) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite    |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+Для вызова конечной точки `/me` требуется вход пользователя и, следовательно, делегированное разрешение. Разрешения приложений не поддерживаются при использовании конечной точки `/me`.
 
 ## <a name="http-request"></a>HTTP-запрос
 Для определенного пользователя:
