@@ -177,7 +177,7 @@ items:
         href: overview.md
       - name: Пользователи
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -450,7 +450,7 @@ items:
                 href: api/usersettings-update.md
       - name: Группы
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/groups-overview.md
           - name: Группа
             href: resources/group.md
@@ -621,7 +621,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Расширенные свойства
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1207,7 +1207,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1334,7 +1334,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Записи звонков
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/callrecords-api-overview.md
               - name: Запись звонка
                 items:
@@ -1383,11 +1383,11 @@ items:
       - name: Соответствие требованиям (Предварительная версия)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/complianceapioverview.md
           - name: Обнаружение электронных данных
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/eDiscoveryapioverview.md
               - name: Дело обнаружения электронных данных
                 href: resources/ediscoverycase.md
@@ -1461,7 +1461,7 @@ items:
       - name: Запись клиентов (предварительная версия)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/booking-api-overview.md
           - name: Организация в Microsoft Bookings
             href: resources/bookingbusiness.md
@@ -9187,7 +9187,7 @@ items:
       - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/onedrive.md
           - name: Диски
             href: resources/drive.md
@@ -9281,7 +9281,7 @@ items:
       - name: Финансовые показатели (предварительная версия)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/dynamics-graph-reference.md
           - name: Учетная запись
             href: resources/dynamics-account.md
@@ -9760,7 +9760,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
               - name: Методы проверки подлинности
                 items:
-                  - name: Обзор
+                  - name: Общие сведения
                     href: resources/authenticationmethods-overview.md
                   - name: Метод проверки подлинности
                     href: resources/authenticationmethod.md
@@ -9942,8 +9942,11 @@ items:
                       - name: Отклонить
                         href: api/riskyusers-dismiss.md
               - name: Поставщик удостоверений
-                href: resources/identityprovider.md
                 items:
+                  - name: Тип поставщика удостоверений
+                    href: resources/identityprovider.md
+                  - name: Тип поставщика удостоверений OpenID Connect
+                    href: resources/openidconnectprovider.md
                   - name: Список
                     href: api/identityprovider-list.md
                   - name: Создание
@@ -10643,7 +10646,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Расширенные свойства
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -11195,7 +11198,7 @@ items:
                 href: api/contact-delta.md
           - name: Расширенные свойства
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -11217,7 +11220,7 @@ items:
         items:
           - name: Отчеты об активности Azure AD
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/azure-ad-auditlog-overview.md
               - name: Аудит каталога
                 href: resources/directoryaudit.md
@@ -11240,7 +11243,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Отчеты об удостоверениях и доступе
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/report-identity-access.md
               - name: Активность приложений AD FS
                 items:
@@ -11263,7 +11266,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Регистрация и использование
                 items:
-                  - name: Обзор
+                  - name: Общие сведения
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Счетчик регистрации пользователей учетных данных
                     href: resources/credentialuserregistrationcount.md
@@ -11287,7 +11290,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Отчеты об использовании Microsoft 365
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/report.md
               - name: Использование устройств Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -11499,13 +11502,13 @@ items:
         items:
           - name: Запрос
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/search-api-overview.md
               - name: Данные запроса
                 href: api/search-query.md
           - name: Индекс
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/indexing-api-overview.md
               - name: Внешнее подключение
                 items:
@@ -11593,7 +11596,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Оценка угроз
                 items:
-                  - name: Обзор
+                  - name: Общие сведения
                     href: resources/threatassessment-api-overview.md
                   - name: Запрос на оценку угроз
                     href: resources/threatassessmentrequest.md
@@ -11649,7 +11652,7 @@ items:
       - name: Сайты и списки
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/sharepoint.md
           - name: Сайты
             href: resources/site.md
@@ -11719,7 +11722,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: Группа
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Создание
@@ -11906,7 +11909,7 @@ items:
               - name: Как получить фотографию группы
                 href: api/team-get-photo.md
               - name: Обновление фотографии команды
-                href: api/team-update-photo.md
+                href: api/profilephoto-update.md
           - name: Группа (команда)
             href: resources/group.md
             items:
@@ -12261,7 +12264,7 @@ items:
       - name: Задачи To-Do (предварительная версия)
         displayName: Microsoft To Do
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/todo-overview.md
           - name: Список задач
             href: resources/todotasklist.md
@@ -12400,7 +12403,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Расширенные свойства
                 items:
-                  - name: Обзор
+                  - name: Общие сведения
                     href: resources/extended-properties-overview.md
                   - name: Однозначные расширенные свойства
                     items:
