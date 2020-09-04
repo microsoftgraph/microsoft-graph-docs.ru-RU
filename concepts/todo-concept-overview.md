@@ -4,12 +4,12 @@ description: Приложение To Do предоставляет просто�
 author: avijityadav
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b4d99b59b73942d9093587689b92f13f8475325f
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f68aa1e4948fdac3ecaed94e75abe750f84db8f4
+ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849819"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47367231"
 ---
 # <a name="to-do-api-overview-preview"></a>Обзор API To Do (предварительная версия)
 Приложение Microsoft To Do предоставляет пользователям простой способ управления задачами и планирования дня. Задачи упорядочиваются в списках задач, доступных в клиентах To Do, Outlook и Teams с любого устройства.
@@ -33,11 +33,11 @@ Microsoft To Do предоставляет новый объект под наз
 
 |Операция|Запрос|
 |:--------|:--|
-|Перечисление всех списков задач |GET https://graph.microsoft.com/beta/me/todo/lists|
-|Перечисление всех задач в списке задач|GET https://graph.microsoft.com/me/todo/lists/{todoTaskListId}/tasks|
-|Создание задачи|POST https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks|
-|Обновление задачи|PATCH https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}|
-|Удаление задачи|DELETE https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}|
+| Перечисление всех списков задач | GET https://graph.microsoft.com/beta/me/todo/lists |
+| Перечисление всех задач в списке задач | GET https://graph.microsoft.com/me/todo/lists/{todoTaskListId}/tasks |
+| Создание задачи | POST https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks |
+| Обновление задачи | PATCH https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
+| Удаление задачи | DELETE https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
 
 ## <a name="api-reference"></a>Справочные материалы по API
 Ищете справочные материалы по API для этой службы?
