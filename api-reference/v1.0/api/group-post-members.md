@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6a9e0ddc322b21d4ac94e6bd3c63f80318be4642
-ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
+ms.openlocfilehash: 74d6ba0443cadf236c6f4af8c0194dfa0cae3d53
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47367266"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400491"
 ---
 # <a name="add-member"></a>Добавление участника
 
@@ -24,6 +24,7 @@ ms.locfileid: "47367266"
 > Вы можете добавлять пользователей только в группы безопасности и Microsoft 365, управляемые через облако.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -35,7 +36,7 @@ ms.locfileid: "47367266"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/members/$ref
+POST /groups/{group-id}/members/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -66,7 +67,7 @@ POST /groups/{id}/members/$ref
   "name": "add_member_to_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/members/$ref
+POST https://graph.microsoft.com/v1.0/groups/{group-id}/members/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -75,8 +76,11 @@ Content-length: 30
 }
 ```
 
+В тексте запроса добавьте представление идентификатора объекта directoryObject, пользователя или группы, который вы хотите добавить, в формате JSON.
+
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -100,7 +104,7 @@ HTTP/1.1 204 No Content
   "name": "add_multiple_members_to_group"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}
+PATCH https://graph.microsoft.com/v1.0/groups/{group-id}
 Content-type: application/json
 Content-length: 30
 
@@ -112,6 +116,8 @@ Content-length: 30
     ]
 }
 ```
+
+В тексте запроса добавьте представление идентификатора объекта directoryObject, пользователя или группы, который вы хотите добавить, в формате JSON.
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
