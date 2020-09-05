@@ -1,16 +1,16 @@
 ---
 title: Создание канала
-description: Создание канала в Microsoft Team, как указано в тексте запроса.
+description: Создайте новый канал в команде Майкрософт, как указано в теле запроса.
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d496f69b20613c4c42c7ce842d23299d653c2ada
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 37fe0ed34ad7dc44d760376f75a49ffa3766ba6c
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384348"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400413"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -18,7 +18,7 @@ ms.locfileid: "45384348"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание [канала](../resources/channel.md) в Microsoft Team, как указано в тексте запроса.
+Создайте новый [канал](../resources/channel.md) в команде, как указано в теле запроса.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "45384348"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Channel. Create. Group *, Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
+|Приложение | Channel. Create. Group *, Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL, сотрудничество. Migrate. ALL|
 
-> **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -45,7 +45,7 @@ POST /teams/{id}/channels
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -53,7 +53,7 @@ POST /teams/{id}/channels
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [channel](../resources/channel.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [channel](../resources/channel.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -94,7 +94,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример ответа.
+Ниже показан пример отклика.
 
 > **Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
