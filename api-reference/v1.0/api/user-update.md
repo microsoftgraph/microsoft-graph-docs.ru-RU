@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4136e62886c91092c62349f0587d60c53f4d2c83
-ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
-ms.translationtype: MT
+ms.openlocfilehash: 9331482f3665da170e2f98055627083bbf3a1132
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44413506"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330064"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -63,6 +63,7 @@ PATCH /users/{id | userPrincipalName}
 |hireDate|DateTimeOffset|Дата найма пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |interests|Коллекция строк|Список интересов пользователя.|
 |jobTitle|String|Должность пользователя.|
+|почта;|String|SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com". Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес. <br><br>Поддерживает параметр $filter.|
 |mailNickname|String|Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя.|
 |mobilePhone|String|Основной сотовый телефон пользователя.|
 |mySite|String|URL-адрес личного сайта пользователя.|
@@ -85,7 +86,7 @@ PATCH /users/{id | userPrincipalName}
 |userType|String|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость".          |
 
 > [!NOTE] 
-> Следующие свойства невозможно обновить с использованием контекста, доступного только для приложений: **aboutMe**, **день рождения**, **HireDate**, **интересы**, **личный сайт**, **пастпрожектс**, **преферреднаме**, **обязанности**, **учебные**заведения и **навыки**.
+> Следующие свойства не могут быть обновлены с помощью контекста только для приложений: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** и **skills**.
 
 ## <a name="response"></a>Отклик
 
