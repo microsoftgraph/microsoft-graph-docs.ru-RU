@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d6666bbb7cf2754a5df39da110168d433df35db2
-ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
+ms.openlocfilehash: 17cc4b172e428ccc06ca500e0664b01372318bf2
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47367273"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400484"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,6 +17,18 @@ ms.locfileid: "47367273"
 Сводную информацию о значении этих изменений API, а также о последних инструментах, компонентах, руководствах и учебных пособиях см. в разделе [Что нового в Microsoft Graph](whats-new-overview.md).
 
 ## <a name="september-2020"></a>Сентябрь 2020 г.
+
+### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+|:---|:---|:---|
+| Дополнение | бета | Добавлена поддержка параметров запросов `$expand=documents` и `$filter=createdBy/userPrincipalName` в методе [Перечисление объектов printJob](/graph/api/printer-list-jobs?view=graph-rest-beta). |
+
+### <a name="teamwork"></a>Командная работа
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Дополнение|бета| Добавлено свойство **createdDateTime** для ресурсов [channel](/graph/api/resources/channel?view=graph-rest-beta) и [team](/graph/api/resources/team?view=graph-rest-beta).|
 
 ### <a name="users"></a>Пользователи
 
@@ -27,6 +39,7 @@ ms.locfileid: "47367273"
 ## <a name="august-2020"></a>Август 2020 г.
 
 ### <a name="applications"></a>Приложения
+
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | бета | Добавлено свойство [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) для ресурса [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
@@ -36,12 +49,6 @@ ms.locfileid: "47367273"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | бета | Добавлены свойства **cancelledOccurrences**, **exceptionOccurrences** и **occurrenceId** для объекта [event](/graph/api/resources/event?view=graph-rest-beta).
-
-### <a name="cloud-communications"></a>Коммуникации из облака
-
-| **Тип изменения** | **Версия**   | **Описание**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **transcription** к объекту [вызова](/graph/api/resources/call).|
 
 ### <a name="change-notifications"></a>Уведомления об изменениях
 
@@ -57,14 +64,15 @@ ms.locfileid: "47367273"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **transcription** к объекту [вызова](/graph/api/resources/call).|
 | Дополнение | v1.0 | Добавлен API **cancelMediaProcessing** к объекту [call](/graph/api/resources/call).|
+| Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **transcription** к объекту [вызова](/graph/api/resources/call).|
 
 ### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 |:---|:---|:---|
-| Дополнение | бета | Добавлены новые [делегированные разрешения](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> | 
+| Дополнение | бета | Добавлены новые [делегированные разрешения](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> |
 | Дополнение | бета | Добавлены новые [разрешения только для приложений](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrintJob.Manage.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintTaskDefinition.ReadWrite.All</li></ul> |
-| Изменение | бета | Добавлены новые требования к разрешениям для следующих методов: <ul><li>[Перечисление принтеров](/graph/api/print-list-printers?view=graph-rest-beta)</li><li>[Получение принтера](/graph/api/printer-get?view=graph-rest-beta)</li><li>[Обновление принтера](/graph/api/printer-update?view=graph-rest-beta)</li><li>[Удаление принтера](/graph/api/printer-delete?view=graph-rest-beta)</li><li>[Перечисление объектов allowedGroup (принтер)](/graph/api/printer-list-allowedgroups?view=graph-rest-beta)</li><li>[Перечисление объектов allowedUser (принтер)](/graph/api/printer-list-allowedusers?view=graph-rest-beta)</li><li>[Создание объекта allowedGroup (принтер)](/graph/api/printer-post-allowedgroups?view=graph-rest-beta)</li><li>[Создание объекта allowedUser (принтер)](/graph/api/printer-post-allowedusers?view=graph-rest-beta)</li><li>[Удаление объекта allowedGroup (принтер)](/graph/api/printer-delete-allowedgroup?view=graph-rest-beta)</li><li>[Удаление объекта allowedUser (принтер)](/graph/api/printer-delete-alloweduser?view=graph-rest-beta)</li><li>[getCapabilities (принтер)](/graph/api/printer-getcapabilities?view=graph-rest-beta)</li><li>[Перечисление соединителей (принтер)](/graph/api/printer-list-connectors?view=graph-rest-beta)</li><li>[Перечисление заданий (принтер)](/graph/api/printer-list-jobs?view=graph-rest-beta)</li><li>[Создание задания (принтер)](/graph/api/printer-post-jobs?view=graph-rest-beta)</li><li>[resetDefaults (принтер)](/graph/api/printer-resetdefaults?view=graph-rest-beta)</li><li>[Перечисление общих ресурсов](/graph/api/print-list-shares?view=graph-rest-beta)</li><li>[Получение printerShare](/graph/api/printershare-get?view=graph-rest-beta)</li><li>[Создание printerShare](/graph/api/print-post-shares?view=graph-rest-beta)</li><li>[Обновление printerShare](/graph/api/printershare-update?view=graph-rest-beta)</li><li>[Удаление printerShare](/graph/api/printershare-delete?view=graph-rest-beta)</li><li>[Перечисление объектов allowedGroup (printerShare)](/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)</li><li>[Перечисление объектов allowedUser (printerShare)](/graph/api/printershare-list-allowedusers?view=graph-rest-beta)</li><li>[Создание объекта allowedGroup (printerShare)](/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)</li><li>[Создание объекта allowedUser (printerShare)](/graph/api/printershare-post-allowedusers?view=graph-rest-beta)</li><li>[Удаление объекта allowedGroup (printerShare)](/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta)</li><li>[Удаление объекта allowedUser (printerShare)](/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)</li><li>[Создание printJob](/graph/api/printer-post-jobs?view=graph-rest-beta)</li><li>[Получение printJob](/graph/api/printjob-get?view=graph-rest-beta)</li><li>[uploadData (printDocument)](/graph/api/printdocument-uploaddata?view=graph-rest-beta)</li><li>[startPrintJob (printJob)](/graph/api/printjob-startprintjob?view=graph-rest-beta)</li><li>[cancelPrintJob (printJob)](/graph/api/printjob-cancelprintjob?view=graph-rest-beta)</li></ul> | 
+| Изменение | бета | Добавлены новые требования к разрешениям для следующих методов: <ul><li>[Перечисление принтеров](/graph/api/print-list-printers?view=graph-rest-beta)</li><li>[Получение принтера](/graph/api/printer-get?view=graph-rest-beta)</li><li>[Обновление принтера](/graph/api/printer-update?view=graph-rest-beta)</li><li>[Удаление принтера](/graph/api/printer-delete?view=graph-rest-beta)</li><li>[Перечисление объектов allowedGroup (принтер)](/graph/api/printer-list-allowedgroups?view=graph-rest-beta)</li><li>[Перечисление объектов allowedUser (принтер)](/graph/api/printer-list-allowedusers?view=graph-rest-beta)</li><li>[Создание объекта allowedGroup (принтер)](/graph/api/printer-post-allowedgroups?view=graph-rest-beta)</li><li>[Создание объекта allowedUser (принтер)](/graph/api/printer-post-allowedusers?view=graph-rest-beta)</li><li>[Удаление объекта allowedGroup (принтер)](/graph/api/printer-delete-allowedgroup?view=graph-rest-beta)</li><li>[Удаление объекта allowedUser (принтер)](/graph/api/printer-delete-alloweduser?view=graph-rest-beta)</li><li>[getCapabilities (принтер)](/graph/api/printer-getcapabilities?view=graph-rest-beta)</li><li>[Перечисление соединителей (принтер)](/graph/api/printer-list-connectors?view=graph-rest-beta)</li><li>[Перечисление заданий (принтер)](/graph/api/printer-list-jobs?view=graph-rest-beta)</li><li>[Создание задания (принтер)](/graph/api/printer-post-jobs?view=graph-rest-beta)</li><li>[resetDefaults (принтер)](/graph/api/printer-resetdefaults?view=graph-rest-beta)</li><li>[Перечисление общих ресурсов](/graph/api/print-list-shares?view=graph-rest-beta)</li><li>[Получение printerShare](/graph/api/printershare-get?view=graph-rest-beta)</li><li>[Создание printerShare](/graph/api/print-post-shares?view=graph-rest-beta)</li><li>[Обновление printerShare](/graph/api/printershare-update?view=graph-rest-beta)</li><li>[Удаление printerShare](/graph/api/printershare-delete?view=graph-rest-beta)</li><li>[Перечисление объектов allowedGroup (printerShare)](/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)</li><li>[Перечисление объектов allowedUser (printerShare)](/graph/api/printershare-list-allowedusers?view=graph-rest-beta)</li><li>[Создание объекта allowedGroup (printerShare)](/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)</li><li>[Создание объекта allowedUser (printerShare)](/graph/api/printershare-post-allowedusers?view=graph-rest-beta)</li><li>[Удаление объекта allowedGroup (printerShare)](/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta)</li><li>[Удаление объекта allowedUser (printerShare)](/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)</li><li>[Создание printJob](/graph/api/printer-post-jobs?view=graph-rest-beta)</li><li>[Получение printJob](/graph/api/printjob-get?view=graph-rest-beta)</li><li>[uploadData (printDocument)](/graph/api/printdocument-uploaddata?view=graph-rest-beta)</li><li>[startPrintJob (printJob)](/graph/api/printjob-startprintjob?view=graph-rest-beta)</li><li>[cancelPrintJob (printJob)](/graph/api/printjob-cancelprintjob?view=graph-rest-beta)</li></ul> |
 | Изменение | бета | Добавлено свойство **allowAllUsers** для ресурса [printerShare](/graph/api/resources/printershare?view=graph-rest-beta). |
 
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
@@ -388,7 +396,7 @@ ms.locfileid: "47367273"
 |Дополнение|Бета|Добавлено свойство **errorCode** для сложного типа [resetPasscodeActionResult](/graph/api/resources/intune-devices-resetpasscodeactionresult?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлен элемент **androidnGMS** для типа перечисления [deviceType](/graph/api/resources/intune-shared-devicetype?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлен элемент **includeCompanyPortalLink** для типа перечисления [notificationTemplateBrandingOptions](/graph/api/resources/intune-notification-notificationtemplatebrandingoptions?view=graph-rest-beta)|
-|Дополнение|Бета|Добавлены элементы **aes192** и **aes192Gcm** для типа перечисления [vpnEncryptionAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnencryptionalgorithmtype?view=graph-rest-beta)|
+|Дополнение|бета|Добавлены элементы **aes192** и **aes192Gcm** для типа перечисления [vpnEncryptionAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnencryptionalgorithmtype?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлен элемент **md5** для типа перечисления [vpnIntegrityAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnintegrityalgorithmtype?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлен элемент **duplicateLocationId** для типа перечисления [vppTokenState](/graph/api/resources/intune-onboarding-vpptokenstate?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены новые объекты:<br/>[complianceManagementPartner](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-1.0)<br/>|
@@ -2050,7 +2058,7 @@ ms.locfileid: "47367273"
 |Дополнение|Бета|Добавлено свойство **subjectAlternativeNameType** для объекта [androidWorkProfileCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androidworkprofilecertificateprofilebase?view=graph-rest-beta)<br/> .|
 |Удаление|Бета|Удалено свойство **subjectAlternativeNameType** из объекта [androidWorkProfilePkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile?view=graph-rest-beta)<br/> .|
 |Удаление|Бета|Удалено свойство **subjectAlternativeNameType** из объекта [androidWorkProfileScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilescepcertificateprofile?view=graph-rest-beta)<br/> .|
-|Дополнение|Бета|Добавлено свойство **deviceNameTemplate** для объекта [depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile?view=graph-rest-beta)<br/> .|
+|Дополнение|бета|Добавлено свойство **deviceNameTemplate** для объекта [depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile?view=graph-rest-beta)<br/> .|
 |Дополнение|Бета|Добавлено действие **import** для коллекции [importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta)<br/> .|
 |Дополнение|Бета|Добавлены свойства **autoLaunchItems**, **adminShowHostInfo**, **loginWindowText**, **authorizedUsersListHidden**, **authorizedUsersListHideLocalUsers**, **authorizedUsersListHideMobileAccounts**, **authorizedUsersListIncludeNetworkUsers**, **authorizedUsersListHideAdminUsers**, **authorizedUsersListShowOtherManagedUsers**, **shutDownDisabled**, **restartDisabled**, **sleepDisabled**, **consoleAccessDisabled**, **shutDownDisabledWhileLoggedIn**, **restartDisabledWhileLoggedIn**, **powerOffDisabledWhileLoggedIn**, **logOutDisabledWhileLoggedIn** и **screenLockDisableImmediate** для объекта [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-beta)<br/> .|
 |Дополнение|Бета|Добавлено свойство **dependentAppCount** для объекта [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)<br/> .|
