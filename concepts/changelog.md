@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: dc72761a6dbd54572527b4d67fef0febb4103785
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: d6666bbb7cf2754a5df39da110168d433df35db2
+ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330046"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47367273"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -16,7 +16,7 @@ ms.locfileid: "47330046"
 
 Сводную информацию о значении этих изменений API, а также о последних инструментах, компонентах, руководствах и учебных пособиях см. в разделе [Что нового в Microsoft Graph](whats-new-overview.md).
 
-## <a name="september"></a>Сентябрь
+## <a name="september-2020"></a>Сентябрь 2020 г.
 
 ### <a name="users"></a>Пользователи
 
@@ -4087,7 +4087,7 @@ ms.locfileid: "47330046"
 | Изменение      | Бета-версия    | Добавлено свойство **notApplicableCount** для объекта [deviceComplianceUserOverview](/graph/api/resources/intune-deviceconfig-devicecomplianceuseroverview?view=graph-rest-beta) |
 | Изменение      | Бета-версия    | Добавлено свойство **notApplicableCount** для объекта [deviceConfigurationDeviceOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationdeviceoverview?view=graph-rest-beta) |
 | Изменение      | Бета-версия    | Добавлено свойство **notApplicableCount** для объекта [deviceConfigurationUserOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationuseroverview?view=graph-rest-beta) |
-| Изменение      | бета    | Добавлено свойство **configurationManagerClientEnabledFeatures** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
+| Изменение      | Бета-версия    | Добавлено свойство **configurationManagerClientEnabledFeatures** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
 | Изменение      | Бета-версия    | Удалено свойство **intuneBrand** для объекта [organization](/graph/api/resources/intune-onboarding-organization?view=graph-rest-beta) |
 | Изменение      | Бета-версия    | Добавлены свойства **smartScreenEnableInShell**, **smartScreenBlockOverrideForFiles**, **applicationGuardEnabled**, **applicationGuardBlockFileTransfer**, **applicationGuardBlockNonEnterpriseContent**, **applicationGuardAllowPersistence** и **applicationGuardForceAuditing** для объекта [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) |
 | Изменение      | Бета-версия    | Добавлены свойства **searchBlockDiacritics**, **searchDisableAutoLanguageDetection**, **searchDisableIndexingEncryptedItems**, **searchEnableRemoteQueries**, **searchDisableUseLocation**, **searchDisableIndexerBackoff**, **searchDisableIndexingRemovableDrive**, **searchEnableAutomaticIndexSizeManangement**, **smartScreenEnableAppInstallControl** и **privacyAdvertisingId** для объекта [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) |
