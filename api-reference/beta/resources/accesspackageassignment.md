@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f7a2fe772dc7b3be328fad452a5b193ccf7a7ed0
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 1cb32a36e40f419c42be8caa31d9081ac461d88f
+ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319460"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47413291"
 ---
 # <a name="accesspackageassignment-resource-type"></a>Тип ресурса Акцесспаккажеассигнмент
 
@@ -18,7 +18,7 @@ ms.locfileid: "47319460"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении обслуживанием в Azure AD](entitlementmanagement-root.md)назначение пакета Access — это назначение пакета доступа определенной теме в течение определенного периода времени.  Например, при назначении пакета доступа может быть задано, что пользователю "Алиса" назначен доступ через пакет Access "продажи" в течение периода с 2019 по 2019 июля.
+В [управлении обслуживанием в Azure AD](entitlementmanagement-root.md)назначение пакета Access — это назначение пакета доступа определенной теме в течение определенного периода времени.  Например, при назначении пакета доступа может быть задано, что пользователю Алиса был назначен доступ через пакет доступа Sales за период с 2019 по 2019 июля.
 
 ## <a name="methods"></a>Методы
 
@@ -41,6 +41,7 @@ ms.locfileid: "47319460"
 |id|String| Только для чтения.|
 |Расширенная|Boolean|Указывает, является ли назначение пакета доступа расширенным. Только для чтения.|
 |targetId|String| ИДЕНТИФИКАТОР субъекта с назначением. Только для чтения.|
+|schedule|[рекуестсчедуле](requestschedule.md)| Когда назначение доступа будет размещено. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
 

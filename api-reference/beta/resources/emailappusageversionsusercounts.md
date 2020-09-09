@@ -5,12 +5,12 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c7fec61c71b9a5343470eec87fa59d65f59020f8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 02869749e3991d53cfd949d4e0d8c78727a91d06
+ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440535"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47413277"
 ---
 # <a name="emailappusageversionsusercounts-resource-type"></a>Тип ресурса Емаилаппусажеверсионсусеркаунтс
 
@@ -27,6 +27,8 @@ ms.locfileid: "43440535"
 | outlook2007       | Int64  |
 | определено      | Int64  |
 | репортпериод      | String |
+| outlookM365       | Int64  |
+| outlook2019       | Int64  |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -45,6 +47,8 @@ ms.locfileid: "43440535"
   "outlook2010": 1024, 
   "outlook2007": 1024, 
   "undetermined": 1024, 
-  "reportPeriod": "String"
+  "reportPeriod": "String",
+  "outlookM365": 1024,
+  "outlook2019": 1024
 }
 ```

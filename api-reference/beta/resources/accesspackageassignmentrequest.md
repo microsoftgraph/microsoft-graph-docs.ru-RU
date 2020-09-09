@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 11b3095bf54f6d5ffe1af4ca4926fe4409429b48
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 3a3309df4106d30de2190b1c321adb3ea0b1a670
+ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319535"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47413312"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>Тип ресурса Акцесспаккажеассигнментрекуест
 
@@ -40,14 +40,14 @@ ms.locfileid: "47319535"
 |рекуестстате|String|Один из `PendingApproval` ,,,,, `Canceled`  `Denied` `Delivering` `Delivered` `PartiallyDelivered` , `Submitted` или `Scheduled` . Только для чтения.|
 |рекуестстатус|String|Дополнительные сведения о состоянии обработки запроса. Только для чтения.|
 |requestType|String|Один из `UserAdd` , `UserRemove` , `AdminAdd` `AdminRemove` или `SystemRemove` . У самого пользователя запрос будет иметь значение requestType `UserAdd` или `UserRemove` . Только для чтения.|
+|schedule|[рекуестсчедуле](requestschedule.md)| Диапазон дат, к которым требуется назначить доступ для запрашивающего. Только для чтения.|
 |акцесспаккажеассигнмент|[акцесспаккажеассигнмент](accesspackageassignment.md)| Для параметра requestType `UserAdd` или необходимо `AdminAdd` создать назначение пакета Access.  Для объекта requestType `UserRemove` , `AdminRemove` или `SystemRemove` , это свойство содержит `id` свойство существующего назначения, которое необходимо удалить.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |опросчика|[акцесспаккажесубжект](accesspackagesubject.md)| Тема, которая запросила или, если назначено прямое назначение, было назначено. Только для чтения. Допускается значение null.|
-
 
 ## <a name="json-representation"></a>Представление JSON
 
