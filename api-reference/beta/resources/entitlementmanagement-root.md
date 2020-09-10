@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 96a91194c29c5207a3e450bd70e093ef74e56a85
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: bde4732b54110707229dea4a1858c18239529f8f
+ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757288"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47423655"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления обслуживанием Azure AD
 
@@ -34,9 +34,11 @@ ms.locfileid: "46757288"
 - [коннектедорганизатион](connectedorganization.md): подключенная организация для внешних пользователей, которые могут запрашивать доступ.
 - [ентитлементманажементсеттингс](entitlementmanagementsettings.md): параметры на уровне клиента для управления обслуживанием Azure AD.
 
+Руководство, в котором показано, как использовать управление обслуживанием для создания пакета ресурсов, которые внутренние пользователи могут использовать для самостоятельного запроса, в разделе [Создание пакета Access с помощью API Microsoft Graph](/graph/tutorial-access-package-api).
+
 Обратите внимание, что функция управления обслуживанием, включая API, включена в Azure AD Premium P2. Клиент, на котором используется управление обслуживанием, должен иметь допустимую приобретенную или пробную подписку на Azure AD Premium P2 или EMS.
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 
 В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с управлением ресурсами.
 

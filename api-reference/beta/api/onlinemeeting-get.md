@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b4325f30133ad42e4b7c3df9669bede2b82722c8
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 7aaf1c19a6da04b3ceca9124051f056af473c04f
+ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916425"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47423662"
 ---
 # <a name="get-onlinemeeting"></a>Получение Онлинемитинг
 
@@ -30,7 +30,7 @@ ms.locfileid: "43916425"
 |:---------------------------------------|:------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Для приложений                            | OnlineMeetings.Read.All                               |
+| Приложение                            | OnlineMeetings.Read.All                               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
@@ -148,7 +148,13 @@ Content-Length: 1574
   },
   "startDateTime": "2018-05-30T00:30:00Z",
   "subject": "Test Meeting.",
-  "videoTeleconferenceId": "123456789"
+  "videoTeleconferenceId": "123456789",
+  "lobbyBypassSettings": {
+    "scope": "everyone",
+    "isDialInBypassEnabled": true
+  },
+  "isEntryExitAnnounced": true,
+  "allowedPresenters": "everyone"
 }
 ```
 >**Примечание.** если указан японский язык, в ответ будут включены перечисленные ниже данные.
