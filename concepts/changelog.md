@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d210a46682d425f702b040a39f40b133c0d14f94
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: c708581fea97f76689d092f441953f5aefb08adf
+ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413270"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47423676"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -18,11 +18,11 @@ ms.locfileid: "47413270"
 
 ## <a name="september-2020"></a>Сентябрь 2020 г.
 
-### <a name="reports"></a>Отчеты
+### <a name="cloud-communications"></a>Коммуникации из облака
 
-| **Тип изменения** | **Версия** | **Описание**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Дополнение        | Бета-версия и версия 1.0 | Добавлены свойства **outlookM365** и **outlook2019** для объекта [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta).|
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | бета | Добавлены свойства **lobbyBypassSettings**, **isEntryExitAnnounced** и **allowedPresenters** для объекта [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta).|
 
 ### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
 
@@ -34,7 +34,13 @@ ms.locfileid: "47413270"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлено свойство **schedule** для [accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta) и [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) в управлении правами.|
+| Дополнение | бета | Добавлено свойство **schedule** для [accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta) и [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) для управления правами.|
+
+### <a name="reports"></a>Отчеты
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение        | Бета-версия и версия 1.0 | Добавлены свойства **outlookM365** и **outlook2019** для объекта [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta).|
 
 ### <a name="teamwork"></a>Командная работа
 
@@ -402,7 +408,7 @@ ms.locfileid: "47413270"
 |Дополнение|Бета|Добавлено свойство **deviceCompliancePolicyScript** для объекта [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство **cryptographySuite** для объекта [windows10VpnConfiguration](/graph/api/resources/intune-deviceconfig-windows10vpnconfiguration?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены свойства навигации **assignmentFilters**, **deviceComplianceScripts**, **comanagedDevices** и **comanagementEligibleDevices** для объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
-|Дополнение|Бета|Добавлены свойства навигации **rootCertificatesForServerValidation** для объекта [macOSEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-macosenterprisewificonfiguration?view=graph-rest-beta)|
+|Дополнение|бета|Добавлены свойства навигации **rootCertificatesForServerValidation** для объекта [macOSEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-macosenterprisewificonfiguration?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство **certificateRevokeStatusLastChangeDateTime** для объекта [managedAllDeviceCertificateState](/graph/api/resources/intune-deviceconfig-managedAllDeviceCertificateState?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены свойства **deviceAndAppManagementAssignmentFilterId** и **deviceAndAppManagementAssignmentFilterType** для сложного типа [deviceAndAppManagementAssignmentTarget](/graph/api/resources/intune-shared-deviceandappmanagementassignmenttarget?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство **bing** для сложного типа [excludedApps](/graph/api/resources/intune-apps-excludedapps?view=graph-rest-beta)|
@@ -801,7 +807,7 @@ ms.locfileid: "47413270"
 |Дополнение|Бета|Добавлены [generateApplePushNotificationCertificateSigningRequest](/graph/api/intune-devices-applepushnotificationcertificate-generateapplepushnotificationcertificatesigningrequest?view=graph-rest-beta?view=graph-rest-beta) на [applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate?view=graph-rest-beta) |
 |Дополнение|Бета|Добавлено действие [getEncryptionPublicKey](/graph/api/intune-enrollment-deponboardingsetting-generateencryptionpublickey?view=graph-rest-beta?view=graph-rest-beta) для [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) |
 |Добавление|Бета|Добавлено действие [getDeviceNonComplianceReport](/graph/api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport?view=graph-rest-beta?view=graph-rest-beta) для [deviceManagementReports](/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-beta) |
-|Добавление|Бета|Добавлено действие [areGlobalScriptsAvailable](/graph/api/intune-devices-devicehealthscript-getremediationsummary?view=graph-rest-beta) в коллекции [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) |
+|Дополнение|Бета|Добавлено действие [areGlobalScriptsAvailable](/graph/api/intune-devices-devicehealthscript-getremediationsummary?view=graph-rest-beta) в коллекции [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) |
 |Удаление|Бета-версия|Удалены следующие сложные типы:<br/>**groupPolicyObjectFile**<br/>|
 |Удаление|Бета|Добавлено действие [createMigrationReport](/graph/api/intune-gpanalyticsservice-grouppolicymigrationreport-createmigrationreport?view=graph-rest-beta) для коллекции [groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport?view=graph-rest-beta) |
 |Удаление|Бета|Удалено свойство **groupPolicyObjectFiles** из объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
@@ -2249,7 +2255,7 @@ ms.locfileid: "47413270"
 |Изменение | бета | Изменен базовый тип [locationConstraintItem](/graph/api/resources/locationconstraintitem?view=graph-rest-beta) с [location](/graph/api/resources/location?view=graph-rest-beta) на [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) |
 |Изменение | Бета | Изменены типы данных следующих параметров [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta): <br> **attendeeAvailability**: с коллекции **attendeeAvailability** на коллекцию [attendeeAvailabilityDataModel](/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) <br> **locations**: с коллекции [location](/graph/api/resources/location?view=graph-rest-beta) на коллекцию [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) <br> **meetingTimeSlot**: с[timeSlot](/graph/api/resources/timeslot?view=graph-rest-beta) на [meetingTimeSlotDataModel](/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) <br> **organizerAvailability**: с **freeBusyStatus** на **availabilityStatus** |
 |Дополнение | Бета | Новые сложные типы: <br> [attendeeAvailabilityDataModel](/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) <br> [attendeeDataModel](/graph/api/resources/attendeedatamodel?view=graph-rest-beta) <br> [findMeetingTimesResponse](/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta) <br> [findMeetingTimesTimeConstraints](/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta) <br> [locationConstraints](/graph/api/resources/locationconstraints?view=graph-rest-beta) <br> [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) <br> [meetingTimeSlotDataModel](/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) <br> [postalAddress](/graph/api/resources/postaladdress?view=graph-rest-beta) <br> [searchWindowTimeSlot](/graph/api/resources/searchwindowtimeslot?view=graph-rest-beta)|
-|Дополнение | Бета | Новые перечисления: <br> **addressType** <br> **availabilityStatus** |
+|Дополнение | Бета-версия | Новые перечисления: <br> **addressType** <br> **availabilityStatus** |
 |Дополнение | Бета | Добавлено свойство **order** для [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta) |
 |Удаление | Бета-версия | Удалены следующие сложные типы: <br> **attendeeAvailability** <br> **locationConstraint** <br> **meetingTimeSuggestionsResult** <br>**timeConstraint** |
 
@@ -2851,7 +2857,7 @@ ms.locfileid: "47413270"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | v1.0 | Добавлено свойство **isMultipleDataLocationsForServicesEnabled** в ресурс [organization](/graph/api/resources/organization?view=graph-rest-beta), позволяющее приложениям проверять, включена ли для клиента поддержка нескольких регионов. Добавлено свойство **preferredDataLocation** в ресурс [group](/graph/api/resources/group?view=graph-rest-beta), позволяющее задать предпочтительное расположение данных для группы.|
-| Дополнение | 1.0 | Добавлено свойство [onPremisesProvisioningErrors](/graph/api/resources/onpremisesprovisioningerror?view=graph-rest-1.0) в объекты [User](/graph/api/resources/user?view=graph-rest-1.0) и [Group](/graph/api/resources/group?view=graph-rest-1.0), представляющее ошибки синхронизации службы каталогов при синхронизации локальных каталогов с Azure Active Directory с использованием продукта синхронизации Майкрософт (включая Azure AD Connect, DirSync и MIM + соединитель).|
+| Дополнение | v1.0 | Добавлено свойство [onPremisesProvisioningErrors](/graph/api/resources/onpremisesprovisioningerror?view=graph-rest-1.0) в объекты [User](/graph/api/resources/user?view=graph-rest-1.0) и [Group](/graph/api/resources/group?view=graph-rest-1.0), представляющее ошибки синхронизации службы каталогов при синхронизации локальных каталогов с Azure Active Directory с использованием продукта синхронизации Майкрософт (включая Azure AD Connect, DirSync и MIM + соединитель).|
 | Дополнение | 1.0 | Добавлено свойство [onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0) в объект [User](/graph/api/resources/user?view=graph-rest-1.0), содержащее 15 свойств атрибутов настраиваемых расширений. Для пользователя onPremisesSyncEnabled этот набор свойств управляется в локальной службе Active Directory, синхронизирован с Azure AD и доступен только для чтения. Для исключительно облачных пользователей (где значением для onPremisesSyncEnabled является false) эти свойства можно задать при создании или обновлении.|
 |Дополнение|1.0|Добавлены свойства **onPremisesDomainName**, **onPremisesSamAccountName** и **onPremisesUserPrincipalName** для объекта [User](/graph/api/resources/user?view=graph-rest-1.0)|
 
@@ -3058,7 +3064,7 @@ ms.locfileid: "47413270"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение        | бета          | Добавлены объект [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta) и следующие методы и действия CRUD: <br> [перечисление](/graph/api/bookingbusiness-list?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta); <br> [получение](/graph/api/bookingbusiness-get?view=graph-rest-beta); <br> [Обновление](/graph/api/bookingbusiness-update?view=graph-rest-beta) <br> [удаление](/graph/api/bookingbusiness-delete?view=graph-rest-beta); <br> [публикация](/graph/api/bookingbusiness-publish?view=graph-rest-beta); <br> [отмена публикации](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta). <br> Узнайте больше об интеграции с [API Microsoft Bookings](booking-concept-overview.md). |
+| Дополнение        | бета          | Добавлены объект [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta) и следующие методы и действия CRUD: <br> [перечисление](/graph/api/bookingbusiness-list?view=graph-rest-beta); <br> [Создание](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta) <br> [получение](/graph/api/bookingbusiness-get?view=graph-rest-beta); <br> [Обновление](/graph/api/bookingbusiness-update?view=graph-rest-beta) <br> [удаление](/graph/api/bookingbusiness-delete?view=graph-rest-beta); <br> [публикация](/graph/api/bookingbusiness-publish?view=graph-rest-beta); <br> [отмена публикации](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta). <br> Узнайте больше об интеграции с [API Microsoft Bookings](booking-concept-overview.md). |
 | Дополнение        | бета          | Добавлены объект [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta) и следующие методы и действие CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta); <br> [получение](/graph/api/bookingappointment-get?view=graph-rest-beta); <br> [Обновление](/graph/api/bookingappointment-update?view=graph-rest-beta) <br> [удаление](/graph/api/bookingappointment-delete?view=graph-rest-beta); <br> [отмена](/graph/api/bookingappointment-cancel?view=graph-rest-beta). |
 | Дополнение        | Бета          | Добавлены объект [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta) и следующие методы: <br> [перечисление](/graph/api/bookingcurrency-list?view=graph-rest-beta); <br> [получение](/graph/api/bookingcurrency-get?view=graph-rest-beta). |
 | Дополнение        | Бета          | Добавлены объект [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta) и следующие методы CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta) <br> [создание](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta); <br> [получение](/graph/api/bookingcustomer-get?view=graph-rest-beta); <br> [обновление](/graph/api/bookingcustomer-update?view=graph-rest-beta); <br> [удаление](/graph/api/bookingcustomer-delete?view=graph-rest-beta).|
@@ -4323,7 +4329,7 @@ ms.locfileid: "47413270"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | 1.0        | Добавлены операции с [domains](/graph/api/resources/domain?view=graph-rest-1.0).<br/>Новые объекты:</br>[domain](/graph/api/resources/domain?view=graph-rest-1.0);<br/>[domainDnsRecord](/graph/api/resources/domaindnsrecord?view=graph-rest-1.0);<br/>[domainDnsCnameRecord](/graph/api/resources/domaindnscnamerecord?view=graph-rest-1.0);<br/>[domainDnsMxRecord](/graph/api/resources/domaindnsmxrecord?view=graph-rest-1.0);<br/>[domainDnsSrvRecord](/graph/api/resources/domaindnssrvrecord?view=graph-rest-1.0);<br/>[domainDnsTxtRecord](/graph/api/resources/domaindnstxtrecord?view=graph-rest-1.0);<br/>[domainDnsUnavailableRecord](/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-1.0).<br/>Новые действия:</br>[verify](/graph/api/domain-verify?view=graph-rest-1.0). |
+| Дополнение        | v1.0        | Добавлены операции с [domains](/graph/api/resources/domain?view=graph-rest-1.0).<br/>Новые объекты:</br>[domain](/graph/api/resources/domain?view=graph-rest-1.0);<br/>[domainDnsRecord](/graph/api/resources/domaindnsrecord?view=graph-rest-1.0);<br/>[domainDnsCnameRecord](/graph/api/resources/domaindnscnamerecord?view=graph-rest-1.0);<br/>[domainDnsMxRecord](/graph/api/resources/domaindnsmxrecord?view=graph-rest-1.0);<br/>[domainDnsSrvRecord](/graph/api/resources/domaindnssrvrecord?view=graph-rest-1.0);<br/>[domainDnsTxtRecord](/graph/api/resources/domaindnstxtrecord?view=graph-rest-1.0);<br/>[domainDnsUnavailableRecord](/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-1.0).<br/>Новые действия:</br>[verify](/graph/api/domain-verify?view=graph-rest-1.0). |
 
 ### <a name="added-contracts-to-v10"></a>Добавлены контракты в версии 1.0
 
