@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0c51ef8d681601cbe7434ff0dd2a06eaf0cd2a7c
-ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
+ms.openlocfilehash: 3bed252af8ecbbcd4e54d34a4f5dcf53fd0a323f
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "47400470"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439873"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -409,13 +409,10 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 |Разрешение    |Отображаемая строка   |Описание |Необходимость в согласии администратора |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_CallRecords.Read.All_|Чтение всех записей звонков|Позволяет приложению читать записи звонков для всех звонков и собраний по сети без необходимости входа пользователя.|Да|
-|_CallRecords.Read.PstnCalls_|Чтение данных журнала звонков по ТСОП и прямой маршрутизации (предварительная версия)|Позволяет приложению прочесть все данные журнала звонков по ТСОП и прямой маршрутизации без необходимости входа пользователя.|Да|
 
 ### <a name="remarks"></a>Примечания
 
 Разрешение _CallRecords.Read.All_ предоставляет привилегированный доступ к [callRecords](/graph/api/resources/callrecords-callrecord) для каждого звонка и собрания по сети в вашей организации, включая звонки на и с внешних телефонных номеров. Это могут быть потенциально конфиденциальные данные о том, кто принимал участие в звонках, а также технические данные о таких звонках и собраниях, которые могут использоваться для устранения неполадок сети, к таким данным относятся IP-адреса, сведения об устройствах и другая сетевая информация.
-
-Разрешение _CallRecords.Read.PstnCalls_ предоставляет приложению доступ к журналам звонков по [ТСОП (планы звонков)](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) и [прямой маршрутизации](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta). Сюда относятся потенциально конфиденциальные сведения о пользователях, а также исходящие звонки на внешние телефонные номера и входящие с них.
 
 > **Важно.** При предоставлении этих разрешений приложениям следует соблюдать осторожность. Записи звонков могут содержать сведения о работе вашей компании и могут быть целями злоумышленников. Предоставляйте эти разрешения только приложениям, которым вы доверяете в плане соблюдения ваших требований к защите данных.
 
@@ -429,7 +426,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 * _CallRecords.Read.All_. Получение записи звонка (`GET /v1.0/communications/callRecords/{id}`).
 * _CallRecords.Read.All_. Подписка на новые записи звонков (`POST /v1.0/subscriptions`).
-* _CallRecords.Read.PstnCalls_. Получение записей звонков прямой маршрутизации в указанном периоде времени (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
+* _CallRecords.Read.All_. Получение записей звонков прямой маршрутизации в указанном периоде времени (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
