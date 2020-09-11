@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 0e668c6ee1d571287304e0920a4636c81cd06ca7
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: Auto
+ms.openlocfilehash: c24a456759a7921faf353f8c7cba6e8407362f65
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005143"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439957"
 ---
 # <a name="get-externalitem"></a>Получение Екстерналитем
 
@@ -30,9 +30,9 @@ ms.locfileid: "45005143"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalItem.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ GET /external/connections/{connection-id}/items/{item-id}
 | ИД подключения | string | `id`Свойство содержащего [екстерналконнектион](../resources/externalconnection.md) |
 | item-id       | string | Предоставляемое разработчиком `id` свойство [екстерналитем](../resources/externalitem.md). |
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод не поддерживает дополнительные параметры запроса для настройки отклика.
 
@@ -59,7 +59,7 @@ GET /external/connections/{connection-id}/items/{item-id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -99,7 +99,7 @@ Content-type: application/json
       "type": "user",
       "value": "49103559-feac-4575-8b94-254814dfca72",
       "accessType": "deny",
-      "identitySource": "Azure Active Directory"
+      "identitySource": "azureActiveDirectory"
     }
   ],
   "properties": {

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7d6b7f1abf94aacd7732c7fb767a0220d6892abf
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: dfb3d3d6e10f2da9f1032aeeae0b6a2ba1c15087
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43718607"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439974"
 ---
 # <a name="create-externalitem"></a>Создание Екстерналитем
 
@@ -32,7 +32,7 @@ ms.locfileid: "43718607"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalItem.ReadWrite.All |
+| Приложение                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,8 +46,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| ИД подключения | string | `id` Свойство содержащего [екстерналконнектион](../resources/externalconnection.md) |
-| item-id       | string | Предоставляемое `id` разработчиком свойство [екстерналитем](../resources/externalitem.md). Если такой `id`элемент уже не существует, создается новый элемент. Если такой `id`элемент уже существует, он перезаписывается объектом, отправленным в теле. |
+| ИД подключения | string | `id`Свойство содержащего [екстерналконнектион](../resources/externalconnection.md) |
+| item-id       | string | Предоставляемое разработчиком `id` свойство [екстерналитем](../resources/externalitem.md). Если такой элемент уже не существует `id` , создается новый элемент. Если такой элемент уже существует `id` , он перезаписывается объектом, отправленным в теле. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -56,17 +56,17 @@ PUT /external/connections/{connection-id}/items/{item-id}
 | Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [екстерналитем](../resources/externalitem.md) в формате JSON. Размер полезных данных не может превышать 4 МБ.
 
 ### <a name="creating-an-externalitem"></a>Создание Екстерналитем
 
-При создании `externalItem`необходимо указать следующие поля: `@odata.type`, `acl`, и. `properties` `properties` Объект должен содержать по крайней мере одно свойство.
+При создании `externalItem` необходимо указать следующие поля: `@odata.type` , `acl` , и `properties` . `properties`Объект должен содержать по крайней мере одно свойство.
 
 Все `DateTime` свойства типа должны быть в формате ISO 8601.
 
-Свойства в полезных `externalItem` данных должны использовать описатели типов в следующих сценариях:
+Свойства в `externalItem` полезных данных должны использовать описатели типов в следующих сценариях:
 
 - Для `String` свойств Type, если значение содержит символы, не входящие в набор ASCII.
 
@@ -86,9 +86,9 @@ PUT /external/connections/{connection-id}/items/{item-id}
     ```
 
     > [!IMPORTANT]
-    > При включении свойства типа `Collection(DateTime)`необходимо использовать описатель типа. `Collection(DateTimeOffset)`
+    > При включении свойства типа `Collection(DateTime)` необходимо использовать описатель типа `Collection(DateTimeOffset)` .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
@@ -117,7 +117,7 @@ Content-type: application/json
       "type": "user",
       "value": "49103559-feac-4575-8b94-254814dfca72",
       "accessType": "deny",
-      "identitySource": "Azure Active Directory"
+      "identitySource": "azureActiveDirectory"
     }
   ],
   "properties": {

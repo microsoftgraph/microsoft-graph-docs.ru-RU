@@ -5,12 +5,12 @@ author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f04f554d02b3d2a9598abf9b49d7fe139cd6733b
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: d42dc962579efd783f56bc0e2f9fd0b15c334a10
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46510234"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439859"
 ---
 # <a name="callrecord-getdirectroutingcalls"></a>Каллрекорд: Жетдиректраутингкаллс
 
@@ -28,7 +28,7 @@ ms.locfileid: "46510234"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений| Каллрекордс. Read. Пстнкаллс|
+| Приложение                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -121,7 +121,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="see-also"></a>Дополнительные ресурсы:
+## <a name="see-also"></a>См. также
 
 * [Отчет об использовании маршрутизации Microsoft Teams Direct](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) в центре администрирования Microsoft Teams
 * [Панель мониторинга работоспособности для прямой маршрутизации](https://docs.microsoft.com/MicrosoftTeams/direct-routing-health-dashboard) в центре администрирования Microsoft Teams

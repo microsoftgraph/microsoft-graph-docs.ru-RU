@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: de4b983592978ca05b2e2db8fe1eccd0697147fb
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: e9d44fe63b03ab7da1da62402d5579f58dec195b
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43718621"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439978"
 ---
 # <a name="update-externalitem"></a>Обновление екстерналитем
 
@@ -30,7 +30,7 @@ ms.locfileid: "43718621"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalItem.ReadWrite.All |
+| Приложение                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,8 +44,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| ИД подключения | string | `id` Свойство содержащего [екстерналконнектион](../resources/externalconnection.md) |
-| item-id       | string | Предоставляемое `id` разработчиком свойство [екстерналитем](../resources/externalitem.md). |
+| ИД подключения | string | `id`Свойство содержащего [екстерналконнектион](../resources/externalconnection.md) |
+| item-id       | string | Предоставляемое разработчиком `id` свойство [екстерналитем](../resources/externalitem.md). |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -56,7 +56,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства (за исключением свойств `properties` внутри объекта), не включенных в текст запроса, сохраняют свои предыдущие значения или пересчитываются в зависимости от изменений значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. Могут быть обновлены перечисленные ниже свойства.
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства (за исключением свойств внутри `properties` объекта), не включенных в текст запроса, сохраняют свои предыдущие значения или пересчитываются в зависимости от изменений значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. Могут быть обновлены перечисленные ниже свойства.
 
 | Свойство   | Тип                                  | Описание               |
 |:-----------|:--------------------------------------|:--------------------------|
@@ -72,7 +72,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 Если `properties` свойство включено в запрос на обновление, существующий контейнер свойств перезаписывается значением, включенным в запрос.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [екстерналитем](../resources/externalitem.md) в тексте отклика.
 
@@ -98,7 +98,7 @@ Content-type: application/json
       "type": "user",
       "value": "49103559-feac-4575-8b94-254814dfca72",
       "accessType": "grant",
-      "identitySource": "Azure Active Directory"
+      "identitySource": "azureActiveDirectory"
     }
   ]
 }
@@ -141,7 +141,7 @@ Content-type: application/json
       "type": "user",
       "value": "49103559-feac-4575-8b94-254814dfca72",
       "accessType": "grant",
-      "identitySource": "Azure Active Directory"
+      "identitySource": "azureActiveDirectory"
     }
   ],
   "properties": {
