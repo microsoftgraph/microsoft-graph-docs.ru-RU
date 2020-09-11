@@ -1,61 +1,61 @@
 ---
-title: Начало работы с API методов проверки подлинности Microsoft Graph
-description: API методов проверки подлинности в Microsoft Graph дает организациям возможность программно управлять методами проверки подлинности пользователей, получая пользователей, зарегистрированных для многофакторной проверки подлинности (MFA) и самостоятельного сброса пароля (SSPR).
+title: Начало работы с API способов проверки подлинности в Microsoft Graph
+description: AP способов проверки подлинности в Microsoft Graph с помощью программных средств позволяет организациям управлять способами проверки подлинности пользователей, регистрировать пользователей для выполнения многофакторной проверки подлинности (MFA) и выполнять самостоятельный сброс пароля (SSPR).
 author: mmcla
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f8f08ae59f7a2ad0e16c4fc0c3af5637bcbfaaca
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
-ms.translationtype: MT
+ms.openlocfilehash: 0b6a29e200adeedba1c42357980dd4d1315dc351
+ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272813"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47413298"
 ---
-# <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a><span data-ttu-id="b5ce0-103">Начало работы с API методов проверки подлинности Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="b5ce0-103">Get started with the Microsoft Graph authentication methods API</span></span>
+# <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a><span data-ttu-id="247b3-103">Начало работы с API способов проверки подлинности в Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="247b3-103">Get started with the Microsoft Graph authentication methods API</span></span>
 
-<span data-ttu-id="b5ce0-104">[Методы проверки подлинности](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) — это способы проверки подлинности пользователей в Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="b5ce0-104">[Authentication methods](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) are the ways that users authenticate in Azure Active Directory (Azure AD).</span></span> <span data-ttu-id="b5ce0-105">Методы проверки подлинности в Azure AD включают пароль и телефон (например, SMS и голосовые вызовы), которые могут управляться сегодня в Microsoft Graph, среди многих других, таких как ключи безопасности FIDO2 и приложение Microsoft Authenticator.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-105">Authentication methods in Azure AD include password and phone (for example, SMS and voice calls), which are manageable in Microsoft Graph today, among many others such as FIDO2 security keys and the Microsoft Authenticator app.</span></span> <span data-ttu-id="b5ce0-106">Методы проверки подлинности используются в основной, второй фактор и пошаговой проверке подлинности, а также в процессе самообслуживания пароля (SSPR).</span><span class="sxs-lookup"><span data-stu-id="b5ce0-106">Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.</span></span>
+<span data-ttu-id="247b3-104">[Способы проверки подлинности](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) — это способы, с помощью которых происходит проверка подлинности пользователей в Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="247b3-104">[Authentication methods](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) are the ways that users authenticate in Azure Active Directory (Azure AD).</span></span> <span data-ttu-id="247b3-105">Способы проверки подлинности в Azure AD включают пароль и телефон (например, SMS и голосовые вызовы), которыми можно управлять в Microsoft Graph уже сегодня, и множество других, таких как ключи безопасности FIDO2 и приложение Microsoft Authenticator.</span><span class="sxs-lookup"><span data-stu-id="247b3-105">Authentication methods in Azure AD include password and phone (for example, SMS and voice calls), which are manageable in Microsoft Graph today, among many others such as FIDO2 security keys and the Microsoft Authenticator app.</span></span> <span data-ttu-id="247b3-106">Способы проверки подлинности используются в ходе основной, двухфакторной проверки подлинности, проверки подлинности повышенного уровня, а также в процессе самостоятельного сброса пароля (SSPR).</span><span class="sxs-lookup"><span data-stu-id="247b3-106">Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.</span></span>
 
-<span data-ttu-id="b5ce0-107">Для управления методами проверки подлинности пользователя можно использовать API метода проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-107">You can use the authentication method APIs to manage a user's authentication methods.</span></span> <span data-ttu-id="b5ce0-108">Например, вы можете:</span><span class="sxs-lookup"><span data-stu-id="b5ce0-108">For example, you can:</span></span>
+<span data-ttu-id="247b3-107">Вы можете использовать API способа проверки подлинности для управления способами проверки подлинности пользователя.</span><span class="sxs-lookup"><span data-stu-id="247b3-107">You can use the authentication method APIs to manage a user's authentication methods.</span></span> <span data-ttu-id="247b3-108">Например, вы можете:</span><span class="sxs-lookup"><span data-stu-id="247b3-108">For example, you can:</span></span>
 
-* <span data-ttu-id="b5ce0-109">Добавление номера телефона для пользователя, который может использовать этот номер для проверки подлинности SMS и голосовых вызовов, если они включены для использования политикой</span><span class="sxs-lookup"><span data-stu-id="b5ce0-109">Add a phone number for a user, who can then use that number for SMS and voice call authentication if they're enabled to use it by policy</span></span>
-* <span data-ttu-id="b5ce0-110">Обновление или удаление номера телефона, назначенного пользователю</span><span class="sxs-lookup"><span data-stu-id="b5ce0-110">Update or delete the phone number assigned to a user</span></span>
-* <span data-ttu-id="b5ce0-111">Включение и выключение номера для входа в SMS</span><span class="sxs-lookup"><span data-stu-id="b5ce0-111">Enable or disable the number for SMS sign-in</span></span>
-* <span data-ttu-id="b5ce0-112">Сброс пароля пользователя</span><span class="sxs-lookup"><span data-stu-id="b5ce0-112">Reset a user's password</span></span>
+* <span data-ttu-id="247b3-109">добавить номер телефона пользователя, который затем он может использовать для проверки подлинности с помощью SMS и голосового вызова, если применение такого способа разрешено политикой;</span><span class="sxs-lookup"><span data-stu-id="247b3-109">Add a phone number for a user, who can then use that number for SMS and voice call authentication if they're enabled to use it by policy</span></span>
+* <span data-ttu-id="247b3-110">обновить или удалить номер телефона, назначенный пользователю;</span><span class="sxs-lookup"><span data-stu-id="247b3-110">Update or delete the phone number assigned to a user</span></span>
+* <span data-ttu-id="247b3-111">включить или отключить номер для входа с помощью SMS;</span><span class="sxs-lookup"><span data-stu-id="247b3-111">Enable or disable the number for SMS sign-in</span></span>
+* <span data-ttu-id="247b3-112">сбросить пароль пользователя.</span><span class="sxs-lookup"><span data-stu-id="247b3-112">Reset a user's password</span></span>
 
-<span data-ttu-id="b5ce0-113">API — это ключевой инструмент для управления методами проверки подлинности пользователей.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-113">The APIs are a key tool to manage your users' authentication methods.</span></span>
+<span data-ttu-id="247b3-113">API — это основной инструмент для управления способами проверки подлинности пользователей.</span><span class="sxs-lookup"><span data-stu-id="247b3-113">The APIs are a key tool to manage your users' authentication methods.</span></span>
 
-<span data-ttu-id="b5ce0-114">В этом руководстве вы узнаете, как:</span><span class="sxs-lookup"><span data-stu-id="b5ce0-114">In this tutorial, you'll learn how to:</span></span>
+<span data-ttu-id="247b3-114">С помощью данного руководства вы научитесь:</span><span class="sxs-lookup"><span data-stu-id="247b3-114">In this tutorial, you'll learn how to:</span></span>
 
 > [!div class="checklist"]
-> * <span data-ttu-id="b5ce0-115">Проверка подлинности в Azure AD с правильными ролями и разрешениями</span><span class="sxs-lookup"><span data-stu-id="b5ce0-115">Authenticate to Azure AD with the right roles and permissions</span></span>
-> * <span data-ttu-id="b5ce0-116">Проверка методов проверки подлинности пользователя</span><span class="sxs-lookup"><span data-stu-id="b5ce0-116">Check the user's authentication methods</span></span>
-> * <span data-ttu-id="b5ce0-117">Добавление новых номеров телефонов для пользователя</span><span class="sxs-lookup"><span data-stu-id="b5ce0-117">Add new phone numbers for the user</span></span>
-> * <span data-ttu-id="b5ce0-118">Удаление номера телефона пользователя</span><span class="sxs-lookup"><span data-stu-id="b5ce0-118">Remove a phone number from the user</span></span>
-> * <span data-ttu-id="b5ce0-119">Сброс пароля пользователя</span><span class="sxs-lookup"><span data-stu-id="b5ce0-119">Reset the user's password</span></span>
+> * <span data-ttu-id="247b3-115">выполнять проверку подлинности в Azure AD с правильными ролями и разрешениями;</span><span class="sxs-lookup"><span data-stu-id="247b3-115">Authenticate to Azure AD with the right roles and permissions</span></span>
+> * <span data-ttu-id="247b3-116">проверять способы проверки подлинности пользователя;</span><span class="sxs-lookup"><span data-stu-id="247b3-116">Check the user's authentication methods</span></span>
+> * <span data-ttu-id="247b3-117">добавлять новые номера телефонов пользователю;</span><span class="sxs-lookup"><span data-stu-id="247b3-117">Add new phone numbers for the user</span></span>
+> * <span data-ttu-id="247b3-118">удалять номера телефона у пользователя;</span><span class="sxs-lookup"><span data-stu-id="247b3-118">Remove a phone number from the user</span></span>
+> * <span data-ttu-id="247b3-119">сбрасывать пароль пользователя.</span><span class="sxs-lookup"><span data-stu-id="247b3-119">Reset the user's password</span></span>
 
-## <a name="step-1-authenticate-to-azure-ad-with-the-right-roles-and-permissions"></a><span data-ttu-id="b5ce0-120">Шаг 1: проверка подлинности в Azure AD с правильными ролями и разрешениями</span><span class="sxs-lookup"><span data-stu-id="b5ce0-120">Step 1: Authenticate to Azure AD with the right roles and permissions</span></span>
+## <a name="step-1-authenticate-to-azure-ad-with-the-right-roles-and-permissions"></a><span data-ttu-id="247b3-120">Этап 1: проверка подлинности в Azure AD с правильными ролями и разрешениями</span><span class="sxs-lookup"><span data-stu-id="247b3-120">Step 1: Authenticate to Azure AD with the right roles and permissions</span></span>
 
-<span data-ttu-id="b5ce0-121">С помощью избранного [средства для взаимодействия с Microsoft Graph](use-the-api.md#tools-for-interacting-with-microsoft-graph)выполните вход с помощью учетной записи с одной из этих ролей:</span><span class="sxs-lookup"><span data-stu-id="b5ce0-121">Using your favorite [tool for interacting with Microsoft Graph](use-the-api.md#tools-for-interacting-with-microsoft-graph), sign in using an account with one of these roles:</span></span>
+<span data-ttu-id="247b3-121">С помощью любимого[инструмента взаимодействия с Microsoft Graph](use-the-api.md#tools-for-interacting-with-microsoft-graph) выполните вход, используя учетную запись с одной из этих ролей:</span><span class="sxs-lookup"><span data-stu-id="247b3-121">Using your favorite [tool for interacting with Microsoft Graph](use-the-api.md#tools-for-interacting-with-microsoft-graph), sign in using an account with one of these roles:</span></span>
 
-* <span data-ttu-id="b5ce0-122">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="b5ce0-122">Global administrator</span></span>
-* <span data-ttu-id="b5ce0-123">Привилегированный администратор проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="b5ce0-123">Privileged authentication administrator</span></span>
-* <span data-ttu-id="b5ce0-124">Администратор проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="b5ce0-124">Authentication administrator</span></span>
+* <span data-ttu-id="247b3-122">глобальный администратор;</span><span class="sxs-lookup"><span data-stu-id="247b3-122">Global administrator</span></span>
+* <span data-ttu-id="247b3-123">привилегированный администратор проверки подлинности;</span><span class="sxs-lookup"><span data-stu-id="247b3-123">Privileged authentication administrator</span></span>
+* <span data-ttu-id="247b3-124">администратор проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="247b3-124">Authentication administrator</span></span>
 
-<span data-ttu-id="b5ce0-125">Затем измените свои разрешения.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-125">Next, modify your permissions.</span></span> <span data-ttu-id="b5ce0-126">Мы будем использовать [усераусентикатионмесод. ReadWrite. ALL](permissions-reference.md#user-authentication-method-permissions-preview) для этого руководства, поэтому убедитесь, что он включен в проводнике Graph или приложении.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-126">We'll use [UserAuthenticationMethod.ReadWrite.All](permissions-reference.md#user-authentication-method-permissions-preview) for this tutorial, so make sure it's enabled in Graph Explorer or your app.</span></span>
+<span data-ttu-id="247b3-125">Теперь можно изменить разрешения.</span><span class="sxs-lookup"><span data-stu-id="247b3-125">Next, modify your permissions.</span></span> <span data-ttu-id="247b3-126">В этом руководстве мы будем использовать метод [UserAuthenticationMethod.ReadWrite.All](permissions-reference.md#user-authentication-method-permissions-preview), поэтому убедитесь, что он включен в песочнице Graph или в приложении.</span><span class="sxs-lookup"><span data-stu-id="247b3-126">We'll use [UserAuthenticationMethod.ReadWrite.All](permissions-reference.md#user-authentication-method-permissions-preview) for this tutorial, so make sure it's enabled in Graph Explorer or your app.</span></span>
 
-<span data-ttu-id="b5ce0-127">Когда область будет назначена и отправлена, вы можете начать использовать API.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-127">Once the scope is assigned and consented, you can start using the API.</span></span> <span data-ttu-id="b5ce0-128">В приведенных ниже примерах используется стандартный пользователь с именем Avery Говард.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-128">The examples here use a standard user named Avery Howard.</span></span> <span data-ttu-id="b5ce0-129">Следует использовать уже существующую тестовую учетную запись или создать новую с помощью приведенных ниже [инструкций](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#add-a-new-user).</span><span class="sxs-lookup"><span data-stu-id="b5ce0-129">You should use a preexisting test account or create a new one following [these instructions](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#add-a-new-user).</span></span> <span data-ttu-id="b5ce0-130">Эти API являются реальными, поэтому их не следует тестировать на реальных пользователях.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-130">These APIs are live so don't test them on real users.</span></span>
+<span data-ttu-id="247b3-127">После назначения и предоставления области можно приступить к работе с API.</span><span class="sxs-lookup"><span data-stu-id="247b3-127">Once the scope is assigned and consented, you can start using the API.</span></span> <span data-ttu-id="247b3-128">Здесь в примерах используется стандартный пользователь с именем Андрей Говоров.</span><span class="sxs-lookup"><span data-stu-id="247b3-128">The examples here use a standard user named Avery Howard.</span></span> <span data-ttu-id="247b3-129">Необходимо использовать уже имеющуюся тестовую учетную запись или создать новую, соблюдая [эти инструкции](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#add-a-new-user).</span><span class="sxs-lookup"><span data-stu-id="247b3-129">You should use a preexisting test account or create a new one following [these instructions](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#add-a-new-user).</span></span> <span data-ttu-id="247b3-130">Это интерактивные API, поэтому не проверяйте их на реальных пользователях.</span><span class="sxs-lookup"><span data-stu-id="247b3-130">These APIs are live so don't test them on real users.</span></span>
 
-## <a name="step-2-check-the-users-authentication-methods"></a><span data-ttu-id="b5ce0-131">Шаг 2: проверка методов проверки подлинности пользователя</span><span class="sxs-lookup"><span data-stu-id="b5ce0-131">Step 2: Check the user's authentication methods</span></span>
+## <a name="step-2-check-the-users-authentication-methods"></a><span data-ttu-id="247b3-131">Этап 2: проверка способов проверки подлинности пользователя</span><span class="sxs-lookup"><span data-stu-id="247b3-131">Step 2: Check the user's authentication methods</span></span>
 
-<span data-ttu-id="b5ce0-132">Выполните вызов, чтобы увидеть методы проверки подлинности пользователя.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-132">Make a call to see the user's authentication methods.</span></span> <span data-ttu-id="b5ce0-133">Сделайте URL-адрес, чтобы просмотреть профиль пользователя, и добавьте `/authentication/methods` :</span><span class="sxs-lookup"><span data-stu-id="b5ce0-133">Take the URL to see a user's profile and add `/authentication/methods`:</span></span>
+<span data-ttu-id="247b3-132">Сделайте вызов для отображения способов проверки подлинности пользователя</span><span class="sxs-lookup"><span data-stu-id="247b3-132">Make a call to see the user's authentication methods.</span></span> <span data-ttu-id="247b3-133">Введите URL-адрес, чтобы просмотреть профиль пользователя, и добавьте `/authentication/methods`:</span><span class="sxs-lookup"><span data-stu-id="247b3-133">Take the URL to see a user's profile and add `/authentication/methods`:</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5ce0-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="b5ce0-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="247b3-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="247b3-134">Request</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/methods
 ```
 
-### <a name="response"></a><span data-ttu-id="b5ce0-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="b5ce0-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="247b3-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="247b3-135">Response</span></span>
 
 ```json
 {
@@ -71,11 +71,11 @@ GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/au
 }
 ```
 
-## <a name="step-3-add-new-phone-numbers-for-the-user"></a><span data-ttu-id="b5ce0-136">Шаг 3: Добавление новых номеров телефонов для пользователя</span><span class="sxs-lookup"><span data-stu-id="b5ce0-136">Step 3: Add new phone numbers for the user</span></span>
+## <a name="step-3-add-new-phone-numbers-for-the-user"></a><span data-ttu-id="247b3-136">Этап 3: добавление новых номеров телефонов пользователю</span><span class="sxs-lookup"><span data-stu-id="247b3-136">Step 3: Add new phone numbers for the user</span></span>
 
-<span data-ttu-id="b5ce0-137">На предыдущем шаге для нового пользователя (Avery) записывается только пароль.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-137">From the previous step, a new user (Avery) only has a password registered.</span></span> <span data-ttu-id="b5ce0-138">Чтобы назначить новый номер телефона для использования с помощью параметра Avery, сделайте `POST` запрос с типом телефона и номером в тексте сообщения.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-138">To assign a new phone number for Avery to use, make a `POST` request with the phone type and number in the body.</span></span> <span data-ttu-id="b5ce0-139">Чтобы сообщить системе, что номер телефона добавлен, также необходимо изменить конец URL-адреса с `methods` на `phoneMethods` .</span><span class="sxs-lookup"><span data-stu-id="b5ce0-139">To tell the system that a phone number is being added, you'll also need to change the end of the URL from `methods` to `phoneMethods`.</span></span>
+<span data-ttu-id="247b3-137">На предыдущем этапе новый пользователь (Андрей) зарегистрировал только пароль.</span><span class="sxs-lookup"><span data-stu-id="247b3-137">From the previous step, a new user (Avery) only has a password registered.</span></span> <span data-ttu-id="247b3-138">Чтобы назначить новый номер телефона, который будет использовать Андрей, выполните запрос `POST` с типом телефона и номером в теле.</span><span class="sxs-lookup"><span data-stu-id="247b3-138">To assign a new phone number for Avery to use, make a `POST` request with the phone type and number in the body.</span></span> <span data-ttu-id="247b3-139">Чтобы сообщить системе о том, что номер телефона добавлен, вам также потребуется изменить окончание URL-адреса с `methods` на `phoneMethods`.</span><span class="sxs-lookup"><span data-stu-id="247b3-139">To tell the system that a phone number is being added, you'll also need to change the end of the URL from `methods` to `phoneMethods`.</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5ce0-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="b5ce0-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="247b3-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="247b3-140">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/phoneMethods
@@ -89,7 +89,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="b5ce0-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="b5ce0-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="247b3-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="247b3-141">Response</span></span>
 
 ```json
 {
@@ -101,9 +101,9 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="b5ce0-142">Чтобы добавить номер Office для Office, `POST` повторите попытку с тем же URL-адресом, но измените тип и номер телефона:</span><span class="sxs-lookup"><span data-stu-id="b5ce0-142">To add Avery's office number, you'll `POST` again to the same URL but update the phone type and number:</span></span>
+<span data-ttu-id="247b3-142">Чтобы добавить рабочий номер телефона Андрея, вам потребуется выполнить запрос `POST` повторно на этот же URL-адрес, но обновить тип и номер телефона.</span><span class="sxs-lookup"><span data-stu-id="247b3-142">To add Avery's office number, you'll `POST` again to the same URL but update the phone type and number:</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5ce0-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="b5ce0-143">Request</span></span>
+### <a name="request"></a><span data-ttu-id="247b3-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="247b3-143">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/phoneMethods
@@ -117,7 +117,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="b5ce0-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="b5ce0-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="247b3-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="247b3-144">Response</span></span>
 
 ```json
 {
@@ -129,15 +129,15 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="b5ce0-145">Сделайте еще один дополнительный `GET` URL-адрес методов телефона, чтобы просмотреть все номера телефонов Avery:</span><span class="sxs-lookup"><span data-stu-id="b5ce0-145">Do one more `GET` to the phone methods URL to see all of Avery's phone numbers:</span></span>
+<span data-ttu-id="247b3-145">Выполните еще один запрос `GET` на URL-адрес способов проверки с помощью телефона для отображения всех номеров телефона Андрея:</span><span class="sxs-lookup"><span data-stu-id="247b3-145">Do one more `GET` to the phone methods URL to see all of Avery's phone numbers:</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5ce0-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="b5ce0-146">Request</span></span>
+### <a name="request"></a><span data-ttu-id="247b3-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="247b3-146">Request</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/phoneMethods
 ```
 
-### <a name="response"></a><span data-ttu-id="b5ce0-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="b5ce0-147">Response</span></span>
+### <a name="response"></a><span data-ttu-id="247b3-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="247b3-147">Response</span></span>
 
 ```json
 {
@@ -159,27 +159,27 @@ GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/au
 }
 ```
 
-<span data-ttu-id="b5ce0-148">Убедитесь, что вы видите оба числа, как ожидалось.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-148">Confirm that you can see both numbers as expected.</span></span>
+<span data-ttu-id="247b3-148">Убедитесь, что вы видите оба номера, как и предполагалось.</span><span class="sxs-lookup"><span data-stu-id="247b3-148">Confirm that you can see both numbers as expected.</span></span>
 
-## <a name="step-4-remove-a-phone-number-from-the-user"></a><span data-ttu-id="b5ce0-149">Шаг 4: Удаление номера телефона пользователя</span><span class="sxs-lookup"><span data-stu-id="b5ce0-149">Step 4: Remove a phone number from the user</span></span>
+## <a name="step-4-remove-a-phone-number-from-the-user"></a><span data-ttu-id="247b3-149">Этап 4: удаление номера телефона у пользователя</span><span class="sxs-lookup"><span data-stu-id="247b3-149">Step 4: Remove a phone number from the user</span></span>
 
-<span data-ttu-id="b5ce0-150">В этом сценарии Avery теперь работает с домашней страницы, поэтому вам нужно удалить номер Office из своей учетной записи.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-150">In this scenario, Avery is now working from home you need to remove their office number from their account.</span></span> <span data-ttu-id="b5ce0-151">Вам нужно позвонить по `DELETE` URL-адресу Office Phone, который можно создать, добавив идентификатор Office Phone в URL-адрес методов телефона.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-151">You need to call `DELETE` on the office phone URL, which you can create by appending the office phone's ID to the phone methods URL.</span></span> <span data-ttu-id="b5ce0-152">Просмотрите список номеров телефонов, приведенный в разделе Avery: номер офиса начинается с "e37f".</span><span class="sxs-lookup"><span data-stu-id="b5ce0-152">Look at Avery's list of phones above: the office phone ID starts with "e37f".</span></span>
+<span data-ttu-id="247b3-150">В этом случае Андрей теперь работает из дома, поэтому вам нужно удалить рабочий номер из его учетной записи.</span><span class="sxs-lookup"><span data-stu-id="247b3-150">In this scenario, Avery is now working from home you need to remove their office number from their account.</span></span> <span data-ttu-id="247b3-151">Необходимо выполнить запрос `DELETE` на URL-адрес рабочего телефона, который можно создать, добавив идентификатор рабочего номера в URL-адрес способов проверки по телефону.</span><span class="sxs-lookup"><span data-stu-id="247b3-151">You need to call `DELETE` on the office phone URL, which you can create by appending the office phone's ID to the phone methods URL.</span></span> <span data-ttu-id="247b3-152">Просмотрите список номеров телефона Андрея: идентификатор рабочего номера телефона начинается с "e37f".</span><span class="sxs-lookup"><span data-stu-id="247b3-152">Look at Avery's list of phones above: the office phone ID starts with "e37f".</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5ce0-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="b5ce0-153">Request</span></span>
+### <a name="request"></a><span data-ttu-id="247b3-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="247b3-153">Request</span></span>
 
 ```http
 DELETE https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/phoneMethods/e37fc753-ff3b-4958-9484-eaa9425c82bc
 ```
 
-<span data-ttu-id="b5ce0-154">В ответе нет данных, так как для него больше не предусмотрено Office Phone.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-154">There's no data in the response because there's no more office phone as intended.</span></span> <span data-ttu-id="b5ce0-155">Вы можете убедиться, что он просматривает все методы Avery, которые были `GET` сделаны ранее:</span><span class="sxs-lookup"><span data-stu-id="b5ce0-155">You can confirm it's gone by looking at all of Avery's methods, which is the same `GET` that was made previously:</span></span>
+<span data-ttu-id="247b3-154">В отклике нет данных, так как в нем больше нет рабочего номера.</span><span class="sxs-lookup"><span data-stu-id="247b3-154">There's no data in the response because there's no more office phone as intended.</span></span> <span data-ttu-id="247b3-155">Чтобы убедиться в том, что номер был удален, просмотрите все способы для Андрея. Процедура `GET` аналогична той, которая была сделана ранее.</span><span class="sxs-lookup"><span data-stu-id="247b3-155">You can confirm it's gone by looking at all of Avery's methods, which is the same `GET` that was made previously:</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5ce0-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="b5ce0-156">Request</span></span>
+### <a name="request"></a><span data-ttu-id="247b3-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="247b3-156">Request</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/methods
 ```
 
-### <a name="response"></a><span data-ttu-id="b5ce0-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="b5ce0-157">Response</span></span>
+### <a name="response"></a><span data-ttu-id="247b3-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="247b3-157">Response</span></span>
 
 ```json
 {
@@ -202,13 +202,13 @@ GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/au
 }
 ```
 
-<span data-ttu-id="b5ce0-158">Как и ожидалось, теперь у пользователя есть только один мобильный телефон и пароль.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-158">As expected, the user is now back to only having one mobile phone and a password.</span></span>
+<span data-ttu-id="247b3-158">Как и предполагалось, пользователь снова сможет использовать только один номер мобильного телефона и пароль.</span><span class="sxs-lookup"><span data-stu-id="247b3-158">As expected, the user is now back to only having one mobile phone and a password.</span></span>
 
-## <a name="step-5-reset-the-users-password"></a><span data-ttu-id="b5ce0-159">Шаг 5: Сброс пароля пользователя</span><span class="sxs-lookup"><span data-stu-id="b5ce0-159">Step 5: Reset the user's password</span></span>
+## <a name="step-5-reset-the-users-password"></a><span data-ttu-id="247b3-159">Этап 5: сброс пароля пользователя</span><span class="sxs-lookup"><span data-stu-id="247b3-159">Step 5: Reset the user's password</span></span>
 
-<span data-ttu-id="b5ce0-160">В этом сценарии Avery забыл пароль и его необходимо сбросить.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-160">In this scenario, Avery has forgotten their password and you need to reset it for them.</span></span> <span data-ttu-id="b5ce0-161">Для сброса необходимо указать `POST` URL-адрес своего пароля (в списке методы проверки подлинности, начинающийся с "28c1"), с указанием действия "ресетпассворд".</span><span class="sxs-lookup"><span data-stu-id="b5ce0-161">To reset, you'll make a `POST` to their password's URL (see the ID starting with "28c1" above in Avery's list of authentication methods), specifying the "resetPassword" action.</span></span> <span data-ttu-id="b5ce0-162">Введите новый пароль в теле запроса.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-162">Provide the new password in the request body.</span></span>
+<span data-ttu-id="247b3-160">В этом сценарии Андрей забыл свой пароль и вам необходимо выполнить сброс его пароля.</span><span class="sxs-lookup"><span data-stu-id="247b3-160">In this scenario, Avery has forgotten their password and you need to reset it for them.</span></span> <span data-ttu-id="247b3-161">Для сброса необходимо выполнить запрос `POST` на URL-адрес пароля (см. идентификатор, начинающийся с "28c1" выше в списке способов проверки подлинности Андрей), указав действие "resetPassword".</span><span class="sxs-lookup"><span data-stu-id="247b3-161">To reset, you'll make a `POST` to their password's URL (see the ID starting with "28c1" above in Avery's list of authentication methods), specifying the "resetPassword" action.</span></span> <span data-ttu-id="247b3-162">В теле запроса укажите новый пароль.</span><span class="sxs-lookup"><span data-stu-id="247b3-162">Provide the new password in the request body.</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5ce0-163">Запрос</span><span class="sxs-lookup"><span data-stu-id="b5ce0-163">Request</span></span>
+### <a name="request"></a><span data-ttu-id="247b3-163">Запрос</span><span class="sxs-lookup"><span data-stu-id="247b3-163">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
@@ -221,21 +221,21 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="b5ce0-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="b5ce0-164">Response</span></span>
+### <a name="response"></a><span data-ttu-id="247b3-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="247b3-164">Response</span></span>
 
-```
+``` http
 Location: https://graph.microsoft.com/beta/users/ed178e23-7447-4892-baf8-fc46f8af26ce/authentication/operations/74bfa1a6-c0e0-4957-8c37-f91048f4959e?aadgdc=BY01P&aadgsu=ssprprod-a
 ```
 
-<span data-ttu-id="b5ce0-165">Так как это приведет к синхронизации пароля в Active Directory в локальной инфраструктуре клиента, может потребоваться несколько минут, поэтому у вас есть адрес, по которому можно проверить, завершена ли работа.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-165">Because this is syncing the password down to Active Directory in the tenant's on-prem infrastructure, it might take a few minutes, so you have an address where you can check to see if it's complete.</span></span> <span data-ttu-id="b5ce0-166">Этот адрес находится в заголовке местоположения ответа, и для просмотра состояния выполните `GET` по этому URL-адресу.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-166">This address is in the location header of the response, and to see the status do a `GET` on that URL.</span></span>
+<span data-ttu-id="247b3-165">Поскольку происходит синхронизация пароля с Active Directory в локальной инфраструктуре клиента, то этот процесс может занять несколько минут, поэтому у вас есть адрес, по которому можно проверить завершение процесса синхронизации.</span><span class="sxs-lookup"><span data-stu-id="247b3-165">Because this is syncing the password down to Active Directory in the tenant's on-prem infrastructure, it might take a few minutes, so you have an address where you can check to see if it's complete.</span></span> <span data-ttu-id="247b3-166">Этот адрес находится в заголовке расположения отклика, а для просмотра статуса выполните запрос `GET` по этому URL-адресу.</span><span class="sxs-lookup"><span data-stu-id="247b3-166">This address is in the location header of the response, and to see the status do a `GET` on that URL.</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5ce0-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="b5ce0-167">Request</span></span>
+### <a name="request"></a><span data-ttu-id="247b3-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="247b3-167">Request</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/users/ed178e23-7447-4892-baf8-fc46f8af26ce/authentication/operations/74bfa1a6-c0e0-4957-8c37-f91048f4959e?aadgdc=BY01P&aadgsu=ssprprod-a
 ```
 
-### <a name="response"></a><span data-ttu-id="b5ce0-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="b5ce0-168">Response</span></span>
+### <a name="response"></a><span data-ttu-id="247b3-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="247b3-168">Response</span></span>
 
 ```json
 {
@@ -249,18 +249,18 @@ GET https://graph.microsoft.com/beta/users/ed178e23-7447-4892-baf8-fc46f8af26ce/
 }
 ```
 
-<span data-ttu-id="b5ce0-169">И успешное выполнение!</span><span class="sxs-lookup"><span data-stu-id="b5ce0-169">And success!</span></span> <span data-ttu-id="b5ce0-170">Вы проверили Просмотр профиля пользователя, методов проверки подлинности, добавления и удаления номеров телефонов, а также сброса пароля.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-170">You've walked through seeing a user's profile, their auth methods, adding and removing phone numbers, and resetting their password.</span></span> <span data-ttu-id="b5ce0-171">Теперь вы готовы к управлению методами своих пользователей.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-171">Now you're ready to go manage your own users' methods.</span></span>
+<span data-ttu-id="247b3-169">Выполнено!</span><span class="sxs-lookup"><span data-stu-id="247b3-169">And success!</span></span> <span data-ttu-id="247b3-170">Вы ознакомились с информацией о просмотре профиля пользователя, методах проверки подлинности, добавлении и удалении номеров телефонов, а также о сбросе пароля.</span><span class="sxs-lookup"><span data-stu-id="247b3-170">You've walked through seeing a user's profile, their auth methods, adding and removing phone numbers, and resetting their password.</span></span> <span data-ttu-id="247b3-171">Теперь вы можете приступать к управлению способами для своих пользователей.</span><span class="sxs-lookup"><span data-stu-id="247b3-171">Now you're ready to go manage your own users' methods.</span></span>
 
-## <a name="api-reference"></a><span data-ttu-id="b5ce0-172">Справочные материалы по API</span><span class="sxs-lookup"><span data-stu-id="b5ce0-172">API reference</span></span>
+## <a name="api-reference"></a><span data-ttu-id="247b3-172">Справочные материалы по API</span><span class="sxs-lookup"><span data-stu-id="247b3-172">API reference</span></span>
 
-<span data-ttu-id="b5ce0-173">Ищете справочные материалы по API для методов проверки подлинности?</span><span class="sxs-lookup"><span data-stu-id="b5ce0-173">Looking for the API reference for authentication methods?</span></span>
+<span data-ttu-id="247b3-173">Ищете справочные материалы по API для способов проверки подлинности?</span><span class="sxs-lookup"><span data-stu-id="247b3-173">Looking for the API reference for authentication methods?</span></span>
 
-* <span data-ttu-id="b5ce0-174">[Общие сведения об API методов проверки подлинности Azure AD](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)</span><span class="sxs-lookup"><span data-stu-id="b5ce0-174">See [Azure AD authentication methods API overview](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)</span></span>
+* <span data-ttu-id="247b3-174">См. статью [Обзор API способов проверки подлинности для Azure AD](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)</span><span class="sxs-lookup"><span data-stu-id="247b3-174">See [Azure AD authentication methods API overview](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="b5ce0-175">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="b5ce0-175">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="247b3-175">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="247b3-175">Next steps</span></span>
 
-* <span data-ttu-id="b5ce0-176">Узнайте [, как использовать REST API метода проверки подлинности](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="b5ce0-176">Find out how to [use the authentication method REST APIs](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta).</span></span>
-* <span data-ttu-id="b5ce0-177">Используйте Azure AD для [аутентификации](/graph/auth) в Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-177">Use Azure AD to [authenticate](/graph/auth) to Microsoft Graph.</span></span>
-* <span data-ttu-id="b5ce0-178">Интегрируйте [вход в Azure AD](https://azure.microsoft.com/develop/identity/signin/) в свое приложение или в свой веб-сайт.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-178">Integrate [Azure AD sign-in](https://azure.microsoft.com/develop/identity/signin/) into your app or website.</span></span>
-* <span data-ttu-id="b5ce0-179">Сведения о новых возможностях API Azure AD см. в [журнале изменений](changelog.md).</span><span class="sxs-lookup"><span data-stu-id="b5ce0-179">See the [Changelog](changelog.md) for information about what's new in the Azure AD APIs.</span></span>
-* <span data-ttu-id="b5ce0-180">Изучите [примеры](https://developer.microsoft.com/graph/graph/examples), чтобы получить более четкое представление об использовании Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="b5ce0-180">Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.</span></span>
+* <span data-ttu-id="247b3-176">Узнайте, как [использовать API REST для способов проверки подлинности](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="247b3-176">Find out how to [use the authentication method REST APIs](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta).</span></span>
+* <span data-ttu-id="247b3-177">Используйте Azure AD для [аутентификации](/graph/auth) в Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="247b3-177">Use Azure AD to [authenticate](/graph/auth) to Microsoft Graph.</span></span>
+* <span data-ttu-id="247b3-178">Интегрируйте [вход в Azure AD](https://azure.microsoft.com/develop/identity/signin/) в свое приложение или в свой веб-сайт.</span><span class="sxs-lookup"><span data-stu-id="247b3-178">Integrate [Azure AD sign-in](https://azure.microsoft.com/develop/identity/signin/) into your app or website.</span></span>
+* <span data-ttu-id="247b3-179">Сведения о новых возможностях API Azure AD см. в [журнале изменений](changelog.md).</span><span class="sxs-lookup"><span data-stu-id="247b3-179">See the [Changelog](changelog.md) for information about what's new in the Azure AD APIs.</span></span>
+* <span data-ttu-id="247b3-180">Изучите [примеры](https://developer.microsoft.com/graph/graph/examples), чтобы получить более четкое представление об использовании Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="247b3-180">Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.</span></span>
