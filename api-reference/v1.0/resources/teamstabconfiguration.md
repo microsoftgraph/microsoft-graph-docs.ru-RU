@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ad6c3bcee979e10e308b307cec780c8ddc8950dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e81813f408c561a09b89e4cb3fd490acb6988cff
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446837"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439992"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>Тип ресурса Теамстабконфигуратион (Open Type)
 
@@ -26,8 +26,8 @@ ms.locfileid: "42446837"
 |Свойство|Тип|Описание|
 |-|-|-|
 |  entityId   |   string |  Идентификатор для сущности, размещенной у поставщика вкладок.     |
-|  contentUrl |   string |  URL-адрес, используемый для отображения содержимого вкладки в Teams. Обязательный.    |
-|  removeUrl  |   string |  URL-адрес, вызываемый клиентом Teams при удалении вкладки с помощью клиента Teams.     |
+|  contentUrl |   string |  URL-адрес, используемый для отображения содержимого вкладки в Teams. Обязательно.    |
+|  removeUrl  |   строка |  URL-адрес, вызываемый клиентом Teams при удалении вкладки с помощью клиента Teams.     |
 |  websiteUrl |   string |  URL-адрес для отображения содержимого вкладки вне Teams.     |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,7 +45,6 @@ ms.locfileid: "42446837"
    "websiteUrl": "string (HTTPS Url)",
    "removeUrl": "string (HTTPS Url)"  
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
