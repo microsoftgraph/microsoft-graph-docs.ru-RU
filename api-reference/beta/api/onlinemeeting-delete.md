@@ -5,53 +5,69 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9998e67ff9e8ffe93d349115cfe50beb8d317073
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 051db73f098272bc97fe3477e6bd8dd3f49eddf5
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456525"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843270"
 ---
-# <a name="delete-onlinemeeting"></a><span data-ttu-id="43062-103">Удаление Онлинемитинг</span><span class="sxs-lookup"><span data-stu-id="43062-103">Delete onlineMeeting</span></span>
+# <a name="delete-onlinemeeting"></a><span data-ttu-id="5cf54-103">Удаление Онлинемитинг</span><span class="sxs-lookup"><span data-stu-id="5cf54-103">Delete onlineMeeting</span></span>
 
-<span data-ttu-id="43062-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="43062-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5cf54-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5cf54-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="43062-105">Удаление объекта [онлинемитинг](../resources/onlinemeeting.md) .</span><span class="sxs-lookup"><span data-stu-id="43062-105">Delete an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+<span data-ttu-id="5cf54-105">Удаление объекта [онлинемитинг](../resources/onlinemeeting.md) .</span><span class="sxs-lookup"><span data-stu-id="5cf54-105">Delete an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="43062-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="43062-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5cf54-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5cf54-106">Permissions</span></span>
 
-| <span data-ttu-id="43062-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="43062-107">Permission type</span></span> | <span data-ttu-id="43062-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="43062-108">Permissions (from least to most privileged)</span></span>                  |
-| :-------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="43062-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="43062-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="43062-110">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="43062-110">OnlineMeetings.ReadWrite</span></span>              |
-| <span data-ttu-id="43062-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="43062-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43062-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43062-112">Not Supported.</span></span>                         |
-| <span data-ttu-id="43062-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="43062-113">Application</span></span>                            | <span data-ttu-id="43062-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43062-114">Not Supported.</span></span>                                  |
+| <span data-ttu-id="5cf54-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5cf54-107">Permission type</span></span>                        | <span data-ttu-id="5cf54-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5cf54-108">Permissions (from least to most privileged)</span></span> |
+| :------------------------------------- | :------------------------------------------ |
+| <span data-ttu-id="5cf54-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5cf54-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="5cf54-110">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5cf54-110">OnlineMeetings.ReadWrite</span></span>                    |
+| <span data-ttu-id="5cf54-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5cf54-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5cf54-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5cf54-112">Not Supported.</span></span>                              |
+| <span data-ttu-id="5cf54-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5cf54-113">Application</span></span>                            | <span data-ttu-id="5cf54-114">OnlineMeetings.ReadWrite.All\*</span><span class="sxs-lookup"><span data-stu-id="5cf54-114">OnlineMeetings.ReadWrite.All\*</span></span>                |
 
-## <a name="http-request"></a><span data-ttu-id="43062-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="43062-115">HTTP request</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="5cf54-115">\* Администраторы должны создать [политику доступа к приложениям](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) и предоставить ее пользователю, достигая имени приложения, настроенного в политике, чтобы удалить собрание по сети от имени этого пользователя (идентификатор пользователя, указанный в пути реукест).</span><span class="sxs-lookup"><span data-stu-id="5cf54-115">\* Administrators must create an [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to delete an online meeting on behalf of that user (user ID specified in the reuqest path) has created.</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="5cf54-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5cf54-116">HTTP request</span></span>
+
+<span data-ttu-id="5cf54-117">Запрос при использовании делегированного маркера</span><span class="sxs-lookup"><span data-stu-id="5cf54-117">Request when using a delegated token</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{id}
+DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="43062-116">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="43062-116">Request headers</span></span>
-| <span data-ttu-id="43062-117">Имя</span><span class="sxs-lookup"><span data-stu-id="43062-117">Name</span></span>          | <span data-ttu-id="43062-118">Описание</span><span class="sxs-lookup"><span data-stu-id="43062-118">Description</span></span>               |
-|:--------------|:--------------------------|
-| <span data-ttu-id="43062-119">Авторизация</span><span class="sxs-lookup"><span data-stu-id="43062-119">Authorization</span></span> | <span data-ttu-id="43062-p101">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="43062-p101">Bearer {token}. Required.</span></span> |
+<span data-ttu-id="5cf54-118">Запрос при использовании маркера приложения:</span><span class="sxs-lookup"><span data-stu-id="5cf54-118">Request when using an application token:</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
+```
 
-## <a name="request-body"></a><span data-ttu-id="43062-122">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="43062-122">Request body</span></span>
-<span data-ttu-id="43062-123">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="43062-123">Do not supply a request body for this method.</span></span>
+> <span data-ttu-id="5cf54-119">**Примечание.**</span><span class="sxs-lookup"><span data-stu-id="5cf54-119">**Note:**</span></span>
+>
+> - <span data-ttu-id="5cf54-120">`userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade).</span><span class="sxs-lookup"><span data-stu-id="5cf54-120">`userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade).</span></span> <span data-ttu-id="5cf54-121">Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).</span><span class="sxs-lookup"><span data-stu-id="5cf54-121">For more details, see [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).</span></span>
+> - <span data-ttu-id="5cf54-122">`meetingId` — **идентификатор** [объекта онлинемитинг](../resources/onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="5cf54-122">`meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="43062-124">Ответ</span><span class="sxs-lookup"><span data-stu-id="43062-124">Response</span></span>
-<span data-ttu-id="43062-p102">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="43062-p102">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5cf54-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5cf54-123">Request headers</span></span>
+| <span data-ttu-id="5cf54-124">Имя</span><span class="sxs-lookup"><span data-stu-id="5cf54-124">Name</span></span>          | <span data-ttu-id="5cf54-125">Описание</span><span class="sxs-lookup"><span data-stu-id="5cf54-125">Description</span></span>               |
+| :------------ | :------------------------ |
+| <span data-ttu-id="5cf54-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5cf54-126">Authorization</span></span> | <span data-ttu-id="5cf54-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5cf54-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="examples"></a><span data-ttu-id="43062-127">Примеры</span><span class="sxs-lookup"><span data-stu-id="43062-127">Examples</span></span>
+## <a name="request-body"></a><span data-ttu-id="5cf54-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="5cf54-129">Request body</span></span>
+<span data-ttu-id="5cf54-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="5cf54-130">Do not supply a request body for this method.</span></span>
 
-### <a name="request"></a><span data-ttu-id="43062-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="43062-128">Request</span></span>
-<span data-ttu-id="43062-129">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="43062-129">The following example shows the request.</span></span>
+## <a name="response"></a><span data-ttu-id="5cf54-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="5cf54-131">Response</span></span>
+<span data-ttu-id="5cf54-p103">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="5cf54-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="5cf54-134">Примеры</span><span class="sxs-lookup"><span data-stu-id="5cf54-134">Examples</span></span>
+
+### <a name="request"></a><span data-ttu-id="5cf54-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="5cf54-135">Request</span></span>
+<span data-ttu-id="5cf54-136">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5cf54-136">The following example shows the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="43062-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="43062-130">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5cf54-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="5cf54-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete-call"
@@ -59,22 +75,22 @@ DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/onlineMeetings/550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype
 ```
-# <a name="c"></a>[<span data-ttu-id="43062-131">C#</span><span class="sxs-lookup"><span data-stu-id="43062-131">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5cf54-138">C#</span><span class="sxs-lookup"><span data-stu-id="5cf54-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="43062-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="43062-132">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5cf54-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5cf54-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="43062-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="43062-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5cf54-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5cf54-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-call-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="43062-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="43062-134">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5cf54-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="5cf54-141">Response</span></span>
 
 <!-- {
   "blockType": "response",
