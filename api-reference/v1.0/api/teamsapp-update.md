@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 31f7b40b8f6c1f6de1fcaf6122c4311e5a65d016
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 0dc3c5f3021c5479ef3eb6f227d7fbe512e0c122
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792144"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843165"
 ---
 # <a name="update-teamsapp"></a>Обновление teamsApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "46792144"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
 | Делегированные (рабочая или учебная учетная запись)     | CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
-| Делегированные (рабочая или учебная учетная запись) | CamlQuery. оправить|
+| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit|
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
 | Для приложений                            | Не поддерживается. |
 
@@ -41,20 +41,14 @@ ms.locfileid: "46792144"
 POST /appCatalogs/teamsApps/{id}/appDefinitions
 ```
 
-## <a name="query-parameters"></a>Параметры запроса
-
-|Свойство|Тип|Описание|
-|----|----|----|
-|рекуиресревиев| Логический | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с правами администратора могут отсылать приложения, не запуская проверку. Если пользователям требуется предварительно запросить проверку перед публикацией, необходимо задать  `requiresReview` для них значение `true` . Пользователь с правами администратора может не устанавливать `requiresReview` или устанавливать значение `false`  , и приложение считается утвержденным и будет публиковаться мгновенно.|
-
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок        | Значение           |
 |:--------------|:--------------  |
 | Авторизация | Bearer {токен}. Обязательный.  |
-| Content-Type  | Application/ZIP. Обязательный элемент. |
+| Content-Type  | Application/ZIP. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса включите полезные данные манифеста ZIP для Teams. Дополнительные сведения см. [в статье Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package)
 
@@ -86,7 +80,7 @@ Content-length: 244
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -97,67 +91,3 @@ Content-length: 244
 ```http
 HTTP/1.1 204 No Content
 ```
-
-### <a name="example-2-update-a-previously-reviewed-and-published-application-to-the-teams-app-catalog"></a>Пример 2: обновление ранее проверенного и опубликованного приложения в каталоге приложений Teams
-
-### <a name="request"></a>Запрос
-
-<!-- markdownlint-disable MD034 -->
-<!-- {
-  "blockType": "request",
-  "name": "update_teamsapp"
-}-->
-
-```http
-POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true
-Content-type: application/zip
-Content-length: 244
-
-[Zip file containing a Teams app package]
-```
-
-### <a name="response"></a>Ответ
-
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и сочетание "ключ-значение" `publishingState` : `submitted` в тексте отклика. Дополнительные сведения см. в разделе [теамсаппдефинитион](../resources/teamsappdefinition.md).
-
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions/MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1/$metadata#appDefinition",
-    "@odata.etag": "158749010",
-    "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
-    "teamsAppId": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
-    "displayName": "Test app",
-    "version": "1.0.11",
-    "azureADAppId": "a651cc7d-ec54-4fb2-9d0e-2c58dc830b0b",
-    "requiredResourceSpecificApplicationPermissions":[
-         "ChannelMessage.Read.Group",
-         "Channel.Create.Group",
-         "Tab.ReadWrite.Group",
-         "Member.Read.Group"
-    ],
-    "publishingState": "submitted",
-    "lastModifiedDateTime": "2020-02-10 22:48:33.841",
-}
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2020-08-08 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "teamsApp resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->

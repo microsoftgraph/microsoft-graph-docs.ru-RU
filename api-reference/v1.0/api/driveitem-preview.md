@@ -5,18 +5,18 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 470af653190001623ea90f6afb7955a3727cceb5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 613fab3adf4da1d3fd2f972818d0cee83db6f6cf
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808440"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843186"
 ---
 # <a name="driveitem-preview"></a>driveItem: Preview
 
 Пространство имен: microsoft.graph
 
-Это действие позволяет получать кратковременно недопустимые URL-адреса для встраиваемых элементов, чтобы отобразить временный предварительный просмотр.
+Это действие позволяет получить короткий URL-адрес, который можно внедрить для элемента, чтобы отобразить временный предварительный просмотр.
 
 Если вы хотите получить ссылки с большим сроком действия, используйте вместо этого API [CreateLink][] .
 
@@ -30,9 +30,9 @@ ms.locfileid: "46808440"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)
 |:---------------------------------------|:-------------------------------------------
-| Делегированные (рабочая или учебная учетная запись)     | Files. Read, Files. ReadWrite, Files. ReadWrite. ALL, sites. ReadWrite. ALL.
-| Делегированные (личная учетная запись Майкрософт) | Files. Read, Files. ReadWrite, Files. ReadWrite. ALL
-| Для приложений                            | Не поддерживается.
+| Делегированные (рабочая или учебная учетная запись)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.
+| Для приложений                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,14 +47,14 @@ POST /users/{userId}/drive/items/{itemId}/preview
 POST /shares/{shareId}/driveItem/preview
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса определяются свойства внедряемого URL-адреса, запрашиваемого приложением.
 Запрос должен быть объектом JSON с указанными ниже свойствами.
 
 |   Имя      |  Тип         | Описание
 |:------------|:--------------|:-----------------------------------------------
-| page        | строка или число | Необязательное свойство. Номер страницы для начала документа, если это необходимо. Указывается как строка для будущих случаев использования для типов файлов, таких как ZIP.
+| page        | строка или число | Необязательный параметр. Номер страницы для начала документа, если это необходимо. Указывается как строка для будущих случаев использования для типов файлов, таких как ZIP.
 | zoom        | number        | Необязательный параметр. Масштаб (при необходимости) для запуска.
 
 ## <a name="response"></a>Отклик
@@ -77,7 +77,7 @@ POST /shares/{shareId}/driveItem/preview
 
 В зависимости от текущего состояния поддержки внедрения для заданных параметров может возвращаться либо getUrl, Постурл, либо и то, и другое.
 
-i-параметры — это строка, отформатированная как `application/x-www-form-urlencoded` , и при выполнении POST для постурл Content-Type необходимо задать соответствующие параметры. Пример:
+i-параметры — это строка, отформатированная как `application/x-www-form-urlencoded` , и при выполнении POST для постурл Content-Type необходимо задать соответствующие параметры. Например:
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded
