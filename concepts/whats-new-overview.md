@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 8784f43683578c3dfd730f5bf08e2d4e84abed57
-ms.sourcegitcommit: f4e95b6e06dedeca0aa6b27e8ad1c655b1d45fec
+ms.openlocfilehash: 7d1fa2979084ac901c26b1f4e5da5994b9c39874
+ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47448441"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47651309"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -23,7 +23,7 @@ ms.locfileid: "47448441"
 [Получите отчет, включающий количество уникальных пользователей](/graph/api/reportroot-getemailappusageversionsusercounts) для Outlook 2019 и Outlook в Microsoft 365.
 
 ### <a name="users"></a>Пользователи
-Помимо получения SMTP адреса [пользователя](/graph/api/resources/user) через свойство **почты**, теперь вы можете установить это свойство и обновить адрес электронной почты пользователя. 
+Помимо получения SMTP-адреса [пользователя](/graph/api/resources/user) с помощью свойства **mail**, теперь вы можете установить это свойство и обновить адрес электронной почты пользователя. 
 
 ## <a name="september-2020-new-in-preview-only"></a>Сентябрь 2020г.: новые возможности только в предварительной версии
 
@@ -47,8 +47,8 @@ ms.locfileid: "47448441"
 [Отслеживание изменений](delta-query-overview.md) поддерживаемых ресурсов в национальном облаке Microsoft Graph для государственных организаций США.
 
 ### <a name="cloud-communications"></a>Коммуникации из облака
-- [Отмените](/graph/api/call-cancelmediaprocessing) любые действия действий интерактивного голосового ответа (IVR), которые находятся в процессе или в очереди, которые либо [воспроизводят звуковой сигнал](/graph/api/call-playprompt), либо[записывают ответ](/graph/api/call-record).
-- Получите [сведения о расшифровке звонка](/graph/api/resources/calltranscriptioninfo) через свойство **расшифровка**.
+- [Отмените](/graph/api/call-cancelmediaprocessing) любые действия интерактивного голосового ответа (IVR), выполняемые или находящиеся в очереди, которые [воспроизводят звуковой сигнал](/graph/api/call-playprompt) или [записывают ответ](/graph/api/call-record).
+- Получите [сведения о расшифровке звонка](/graph/api/resources/calltranscriptioninfo) с помощью свойства **transcription**.
 
 ### <a name="teamwork"></a>Командная работа
 - Используйте альтернативный способ [создания группы](/graph/api/team-post) без предварительного создания группы.
