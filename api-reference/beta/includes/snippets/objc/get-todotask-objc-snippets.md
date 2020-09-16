@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 92a3752bf3acb080e4da7e9ce56fad946de32e4c
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 4f91da2c2140f7bf98be0d804ccdbb77c733b98a
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873192"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47938452"
 ---
 ```objc
 
@@ -18,7 +18,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        MSGraphTasks *tasks = [[MSGraphTasks alloc] initWithData:data error:&nserror];
+        NSError *jsonError = nil;
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphTodoTask *todoTask = [[MSGraphTodoTask alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 
