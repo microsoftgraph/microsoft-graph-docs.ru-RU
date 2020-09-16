@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4311af292480a51eeaaefabb1ef8cf277b211e2c
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: d55a63848d26bccb8bee5f6931d42bc85f95c2ef
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873251"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843102"
 ---
 # <a name="create-linkedresources"></a>Создание Линкедресаурцес
 Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -50,15 +50,15 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Созданный сервером идентификатор связанной сущности, унаследованной от [объекта](../resources/entity.md)|
+|id|String|Созданный сервером идентификатор связанной сущности, унаследованной от [объекта](../resources/entity.md)|
 |webUrl|String|Прямой ссылки на связанный объект |
 |applicationName|String|Поле, указывающее имя приложения источника, отправляющего связанный объект |
-|displayName|Строка|Поле, указывающее название связанного объекта. |
+|displayName|String|Поле, указывающее название связанного объекта. |
 |externalId|String|Идентификатор объекта, связанного с этой задачей в сторонней или партнерской системе |
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [линкедресаурце](../resources/linkedresource.md) в тексте отклика.
 
@@ -88,6 +88,14 @@ Content-length: 166
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-linkedresource-from-linkedresources-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-linkedresource-from-linkedresources-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-linkedresource-from-linkedresources-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

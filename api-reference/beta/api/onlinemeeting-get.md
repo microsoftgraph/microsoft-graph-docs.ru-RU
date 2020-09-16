@@ -1,16 +1,16 @@
 ---
 title: Получение Онлинемитинг
-description: Получение свойств и связей объекта собрания по **сети** .
+description: Получение свойств и связей объекта Онлинемитинг.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7aaf1c19a6da04b3ceca9124051f056af473c04f
-ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
+ms.openlocfilehash: 435a8fcd37a44d6d6a31de2c8ae4e10f67a75951
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47423662"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843277"
 ---
 # <a name="get-onlinemeeting"></a>Получение Онлинемитинг
 
@@ -20,34 +20,42 @@ ms.locfileid: "47423662"
 
 Получение свойств и связей объекта [онлинемитинг](../resources/onlinemeeting.md) .
 
-> **Примечание:** В `GET` настоящее время метод поддерживается только для [идентификатора конференции VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Эти идентификаторы создаются для пользователей, лицензированных для облачных видеоконференций, и этот метод используется для получения сведений о присоединении к собранию.
-
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)           |
-|:---------------------------------------|:------------------------------------------------------|
+| :------------------------------------- | :---------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Приложение                            | OnlineMeetings.Read.All                               |
+| Для приложений                            | Онлинемитингс. Read. ALL, Онлинемитингс. ReadWrite. ALL * |
+
+> [!IMPORTANT]
+> \* Администраторы должны создать [политику доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy.md) и предоставить ее пользователю, доставке приложения, настроенного в политике, для получения собрания по сети от имени этого пользователя (идентификатора пользователя, указанного в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /users/{userId}/onlineMeetings/{meetingId}
 ```
-> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
+
+> **Примечания.**
+>
+> - Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
+> - `id` в первых двух маршрутах — [VTC Conference ID](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up).
+> - `userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy.md).
+> - `meetingId` — **идентификатор** [объекта онлинемитинг](../resources/onlinemeeting.md).
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя          | Описание               |
-|:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
-| Принять-Язык  | Язык. Необязательное. |
+| Имя            | Описание               |
+| :-------------- | :------------------------ |
+| Авторизация   | Bearer {токен}. Обязательный. |
+| Принять-Язык | Язык. Необязательное.       |
 
 Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`. Контент по умолчанию будет на английском языке.
 

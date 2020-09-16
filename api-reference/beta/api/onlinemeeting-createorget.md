@@ -1,16 +1,16 @@
 ---
 title: 'Онлинемитинг: Креатеоржет'
-description: Создайте собрание по сети с настраиваемым указанным внешним ИДЕНТИФИКАТОРом. Если внешний идентификатор уже существует, этот API возвратит объект **онлинемитинг** с этим внешним идентификатором.
+description: Создайте собрание по сети с настраиваемым указанным внешним ИДЕНТИФИКАТОРом. Если внешний идентификатор уже существует, этот API возвратит объект Онлинемитинг с этим внешним ИДЕНТИФИКАТОРом.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d99a9ac98fd5fbb4ca5c96904831bb76c93b158c
-ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
+ms.openlocfilehash: c66b3ccdf0ddc5e60b68b34c546193b8081d2c69
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651325"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47842780"
 ---
 # <a name="onlinemeeting-createorget"></a>Онлинемитинг: Креатеоржет
 
@@ -26,34 +26,47 @@ ms.locfileid: "47651325"
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.ReadWrite                    |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | Не поддерживается                |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | OnlineMeetings.ReadWrite.All*                |
+
+> [!IMPORTANT]
+> \* Администраторы должны создать [политику доступа к приложениям](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) и предоставить ее пользователю, дополнив авторизацию приложения, настроенного в политике, чтобы создать или получить собрание по сети с внешним идентификатором от имени этого пользователя (идентификатора пользователя, указанного в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Запрос при использовании делегированного маркера:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
+Запрос при использовании маркера приложения:
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/onlineMeetings/createOrGet
+```
+
+> **Примечание:** `userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
+
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя          | Описание               |
-|:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Имя          | Описание                 |
+| :------------ | :-------------------------- |
+| Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр        | Тип                                     |Описание                                                                                                                                    |
-|:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
-| chatInfo         |[chatInfo](../resources/chatinfo.md)                   |Сведения о чате, связанные с этим собранием по сети.|
-| endDateTime      | DateTime                                 | Время окончания собрания в формате UTC. |
-| externalId       | String                                   | Внешний идентификатор. Настраиваемый идентификатор. Потребоваться |
-| participants     | [митингпартиЦипантс](../resources/meetingparticipants.md)          | Участники, связанные с собранием по сети.  Сюда входят Организатор и участники. |
-| startDateTime    | DateTime                                 | Время начала собрания в формате UTC. |
-| subject          | String                                   | Тема собрания по сети. |
+| Параметр     | Тип                                                       | Описание                                                                                          |
+| :------------ | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| chatInfo      | [chatInfo](../resources/chatinfo.md)                       | Сведения о чате, связанные с этим собранием по сети.                                            |
+| endDateTime   | DateTime                                                   | Время окончания собрания в формате UTC.                                                                         |
+| externalId    | String                                                     | Внешний идентификатор. Настраиваемый идентификатор. Потребоваться                                                             |
+| participants  | [митингпартиЦипантс](../resources/meetingparticipants.md) | Участники, связанные с собранием по сети.  Сюда входят Организатор и участники. |
+| startDateTime | DateTime                                                   | Время начала собрания в формате UTC.                                                                       |
+| subject       | String                                                     | Тема собрания по сети.                                                                   |
 
 > **Примечания.**
 >
@@ -74,6 +87,8 @@ POST /me/onlineMeetings/createOrGet
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-or-get-onlinemeeting"
@@ -102,6 +117,20 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-or-get-onlinemeeting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-or-get-onlinemeeting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-or-get-onlinemeeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

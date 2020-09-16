@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 56a316e69f247842d38c5e5f606d986d0600cbc9
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 6e971c8b608ad5e42c225cea2aa5da0ad06cedbc
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45224738"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843263"
 ---
 # <a name="update-onlinemeeting"></a>Обновление Онлинемитинг
 
@@ -22,24 +22,39 @@ ms.locfileid: "45224738"
 
 ## <a name="permissions"></a>Разрешения
 
-| Тип разрешения | Разрешения (в порядке повышения привилегий)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.ReadWrite              |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Приложение                            | Не поддерживается.                                  |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.ReadWrite                    |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | OnlineMeetings.ReadWrite.All*                |
 
+> [!IMPORTANT]
+> \* Администраторы должны создать [политику доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy.md) и предоставить ее пользователю, доставке приложения, настроенного в политике, для обновления собраний по сети от имени этого пользователя (идентификатора пользователя, указанного в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Запрос с помощью делегированного маркера:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{id}
+PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
 ```
 
+Запрос с помощью маркера приложения:
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
+```
+
+> **Примечания.**
+>
+> - `userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy.md).
+> - `meetingId` — **идентификатор** [объекта онлинемитинг](../resources/onlinemeeting.md).
+
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя          | Описание               |
-|:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
-| Content-Type  | application/json. Обязательный.|
+| Имя          | Описание                 |
+| :------------ | :-------------------------- |
+| Авторизация | Bearer {токен}. Обязательный.   |
+| Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса должно быть представление объекта [onlineMeeting](../resources/onlinemeeting.md) в формате JSON. Можно изменить только свойства **startDateTime**, **endDateTime**, **Участники**и **subject** . **StartDateTime** и **endDateTime** должны указываться парами.

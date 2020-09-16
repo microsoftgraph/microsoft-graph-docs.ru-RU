@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9998e67ff9e8ffe93d349115cfe50beb8d317073
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 051db73f098272bc97fe3477e6bd8dd3f49eddf5
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456525"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843270"
 ---
 # <a name="delete-onlinemeeting"></a>Удаление Онлинемитинг
 
@@ -22,27 +22,43 @@ ms.locfileid: "42456525"
 
 ## <a name="permissions"></a>Разрешения
 
-| Тип разрешения | Разрешения (в порядке повышения привилегий)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.ReadWrite              |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Для приложений                            | Не поддерживается.                                  |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.ReadWrite                    |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | OnlineMeetings.ReadWrite.All*                |
+
+> [!IMPORTANT]
+> \* Администраторы должны создать [политику доступа к приложениям](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) и предоставить ее пользователю, достигая имени приложения, настроенного в политике, чтобы удалить собрание по сети от имени этого пользователя (идентификатор пользователя, указанный в пути реукест).
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Запрос при использовании делегированного маркера
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{id}
+DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
 ```
+
+Запрос при использовании маркера приложения:
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
+```
+
+> **Примечание.**
+>
+> - `userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> - `meetingId` — **идентификатор** [объекта онлинемитинг](../resources/onlinemeeting.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="examples"></a>Примеры
