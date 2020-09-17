@@ -37,8 +37,8 @@ ms.locfileid: "45224978"
 |**Сертификаты и секреты**| | |
 |[Добавление пароля](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Добавление надежного пароля в приложение.|
 |[Удаление пароля](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Удаление пароля приложения.|
-|[Добавление ключа](../api/application-addkey.md)|[keyCredential](keycredential.md)|Добавление в приложение учетных данных ключа.|
-|[Удаление ключа](../api/application-removekey.md)|Нет|Удаление из приложения учетных данных ключа.|
+|[Добавление ключа](../api/application-addkey.md)|[keyCredential](keycredential.md)|Добавление учетных данных ключа в приложение.|
+|[Удаление ключа](../api/application-removekey.md)|Нет|Удаление учетных данных ключа из приложения.|
 |**Расширения**| | |
 | [Список расширений](../api/application-list-extensionproperty.md) | Коллекция [extensionProperty](extensionProperty.md) | Список свойств расширения для объекта application. |
 | [Создание расширения](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Создание свойства расширения для объекта application. |
