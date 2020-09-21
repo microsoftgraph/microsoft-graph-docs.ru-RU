@@ -5,31 +5,31 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6688f26353bed9e92f60a93b688b1679e70bd75f
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 91cc7f85dc4c42f806be5e365f21adb0d5e972fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218431"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968376"
 ---
-# <a name="filterclause-resource-type"></a><span data-ttu-id="b1ac2-103">Тип ресурса Филтерклаусе</span><span class="sxs-lookup"><span data-stu-id="b1ac2-103">filterClause resource type</span></span>
+# <a name="filterclause-resource-type"></a><span data-ttu-id="ba1c0-103">Тип ресурса Филтерклаусе</span><span class="sxs-lookup"><span data-stu-id="ba1c0-103">filterClause resource type</span></span>
 
-<span data-ttu-id="b1ac2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b1ac2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ba1c0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ba1c0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b1ac2-105">Представляет одно утверждение, которое должен удовлетворять объект-кандидат, и оценивается как `true` (объект соответствует утверждению) или `false` (объект не соответствует утверждению).</span><span class="sxs-lookup"><span data-stu-id="b1ac2-105">Represents a single assertion that a candidate object must satisfy, and is evaluated to either `true` (object satisfies the assertion) or `false` (object does not satisfy the assertion).</span></span>
+<span data-ttu-id="ba1c0-105">Представляет одно утверждение, которое должен удовлетворять объект-кандидат, и оценивается как `true` (объект соответствует утверждению) или `false` (объект не соответствует утверждению).</span><span class="sxs-lookup"><span data-stu-id="ba1c0-105">Represents a single assertion that a candidate object must satisfy, and is evaluated to either `true` (object satisfies the assertion) or `false` (object does not satisfy the assertion).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b1ac2-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="b1ac2-106">Properties</span></span>
-| <span data-ttu-id="b1ac2-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="b1ac2-107">Property</span></span>     | <span data-ttu-id="b1ac2-108">Тип</span><span class="sxs-lookup"><span data-stu-id="b1ac2-108">Type</span></span>   |<span data-ttu-id="b1ac2-109">Описание</span><span class="sxs-lookup"><span data-stu-id="b1ac2-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ba1c0-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="ba1c0-106">Properties</span></span>
+| <span data-ttu-id="ba1c0-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="ba1c0-107">Property</span></span>     | <span data-ttu-id="ba1c0-108">Тип</span><span class="sxs-lookup"><span data-stu-id="ba1c0-108">Type</span></span>   |<span data-ttu-id="ba1c0-109">Описание</span><span class="sxs-lookup"><span data-stu-id="ba1c0-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b1ac2-110">операторнаме</span><span class="sxs-lookup"><span data-stu-id="b1ac2-110">operatorName</span></span>|<span data-ttu-id="b1ac2-111">String</span><span class="sxs-lookup"><span data-stu-id="b1ac2-111">String</span></span>|<span data-ttu-id="b1ac2-112">Имя оператора, применяемого к исходному и целевому операндам.</span><span class="sxs-lookup"><span data-stu-id="b1ac2-112">Name of the operator to be applied to the source and target operands.</span></span> <span data-ttu-id="b1ac2-113">Должен быть одним из поддерживаемых операторов.</span><span class="sxs-lookup"><span data-stu-id="b1ac2-113">Must be one of the supported operators.</span></span> <span data-ttu-id="b1ac2-114">Могут быть обнаружены поддерживаемые операторы.</span><span class="sxs-lookup"><span data-stu-id="b1ac2-114">Supported operators can be discovered.</span></span>|
-|<span data-ttu-id="b1ac2-115">саурцеоперанднаме</span><span class="sxs-lookup"><span data-stu-id="b1ac2-115">sourceOperandName</span></span>|<span data-ttu-id="b1ac2-116">String</span><span class="sxs-lookup"><span data-stu-id="b1ac2-116">String</span></span>|<span data-ttu-id="b1ac2-117">Имя исходного операнда (тестируемого операнда).</span><span class="sxs-lookup"><span data-stu-id="b1ac2-117">Name of source operand (the operand being tested).</span></span> <span data-ttu-id="b1ac2-118">Имя исходного операнда должно быть соответствующим одному из имен атрибутов исходного объекта.</span><span class="sxs-lookup"><span data-stu-id="b1ac2-118">The source operand name must match one of the attribute names on the source object.</span></span>|
-|<span data-ttu-id="b1ac2-119">таржетоперанд</span><span class="sxs-lookup"><span data-stu-id="b1ac2-119">targetOperand</span></span>|[<span data-ttu-id="b1ac2-120">филтероперанд</span><span class="sxs-lookup"><span data-stu-id="b1ac2-120">filterOperand</span></span>](synchronization-filteroperand.md)|<span data-ttu-id="b1ac2-121">Значения, по которым будет выполняться тестирование исходного операнда.</span><span class="sxs-lookup"><span data-stu-id="b1ac2-121">Values that the source operand will be tested against.</span></span>|
+|<span data-ttu-id="ba1c0-110">операторнаме</span><span class="sxs-lookup"><span data-stu-id="ba1c0-110">operatorName</span></span>|<span data-ttu-id="ba1c0-111">String</span><span class="sxs-lookup"><span data-stu-id="ba1c0-111">String</span></span>|<span data-ttu-id="ba1c0-112">Имя оператора, применяемого к исходному и целевому операндам.</span><span class="sxs-lookup"><span data-stu-id="ba1c0-112">Name of the operator to be applied to the source and target operands.</span></span> <span data-ttu-id="ba1c0-113">Должен быть одним из поддерживаемых операторов.</span><span class="sxs-lookup"><span data-stu-id="ba1c0-113">Must be one of the supported operators.</span></span> <span data-ttu-id="ba1c0-114">Могут быть обнаружены поддерживаемые операторы.</span><span class="sxs-lookup"><span data-stu-id="ba1c0-114">Supported operators can be discovered.</span></span>|
+|<span data-ttu-id="ba1c0-115">саурцеоперанднаме</span><span class="sxs-lookup"><span data-stu-id="ba1c0-115">sourceOperandName</span></span>|<span data-ttu-id="ba1c0-116">String</span><span class="sxs-lookup"><span data-stu-id="ba1c0-116">String</span></span>|<span data-ttu-id="ba1c0-117">Имя исходного операнда (тестируемого операнда).</span><span class="sxs-lookup"><span data-stu-id="ba1c0-117">Name of source operand (the operand being tested).</span></span> <span data-ttu-id="ba1c0-118">Имя исходного операнда должно быть соответствующим одному из имен атрибутов исходного объекта.</span><span class="sxs-lookup"><span data-stu-id="ba1c0-118">The source operand name must match one of the attribute names on the source object.</span></span>|
+|<span data-ttu-id="ba1c0-119">таржетоперанд</span><span class="sxs-lookup"><span data-stu-id="ba1c0-119">targetOperand</span></span>|[<span data-ttu-id="ba1c0-120">филтероперанд</span><span class="sxs-lookup"><span data-stu-id="ba1c0-120">filterOperand</span></span>](synchronization-filteroperand.md)|<span data-ttu-id="ba1c0-121">Значения, по которым будет выполняться тестирование исходного операнда.</span><span class="sxs-lookup"><span data-stu-id="ba1c0-121">Values that the source operand will be tested against.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="b1ac2-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b1ac2-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ba1c0-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ba1c0-122">JSON representation</span></span>
 
-<span data-ttu-id="b1ac2-123">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b1ac2-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ba1c0-123">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ba1c0-123">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -60,3 +60,5 @@ ms.locfileid: "43218431"
   "suppressions": []
 }
 -->
+
+
