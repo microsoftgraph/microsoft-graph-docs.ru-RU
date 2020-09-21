@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0d93ca2abcc75adfb35ac65333f346f95de08d1c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ab4f4043fe23102c279a3a948858e0e3ed633de3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439571"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983088"
 ---
 # <a name="workbookchartcollection-add"></a>Воркбукчартколлектион: Add
 
@@ -45,13 +45,13 @@ POST /workbook/worksheets/{id|name}/charts/add
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|type|string|Представляет тип диаграммы.  Возможные `ColumnClustered`значения:, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100`,,, `PieOfPie`,. `etc.`|
+|type|string|Представляет тип диаграммы.  Возможные значения: `ColumnClustered` , `ColumnStacked` ,,, `ColumnStacked100` `BarClustered` `BarStacked` , `BarStacked100` , `LineStacked` , `LineStacked100` , `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100` `PieOfPie` `etc.` ,,,,.|
 |sourceData|Json|Объект Range, соответствующий исходным данным.|
 |seriesBy|string|Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме.  Допустимые значения: `Auto`, `Columns`, `Rows`.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -121,3 +121,5 @@ Content-length: 52
   ]
 }
 -->
+
+

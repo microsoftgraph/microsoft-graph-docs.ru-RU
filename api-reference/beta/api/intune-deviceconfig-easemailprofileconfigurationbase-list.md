@@ -3,14 +3,14 @@ title: Список Еасемаилпрофилеконфигуратионба
 description: Список свойств и связей объектов Еасемаилпрофилеконфигуратионбасе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f79777a9514524ade5e7c5832d9d7f34c87779b9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: af0a32ddb1fbe41916e3c20d71b4d5d42dfa2e1b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433161"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077606"
 ---
 # <a name="list-easemailprofileconfigurationbases"></a>Список Еасемаилпрофилеконфигуратионбасес
 
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [еасемаилпрофилеконфигуратионбасе](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -111,6 +111,9 @@ Content-Length: 1572
   ]
 }
 ```
+
+
+
 
 
 

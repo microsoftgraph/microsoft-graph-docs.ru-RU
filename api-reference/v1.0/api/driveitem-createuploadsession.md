@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Создайте сеанс отправки, чтобы приложение могло отправлять файлы, размер которых не превышает максимальный.
 doc_type: apiPageType
-ms.openlocfilehash: 44d260d4df6edc2dae9acfc2e7db5d9a1618b947
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65c768e053175925c8f25b0d5bf603a8d15fa7b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517778"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009872"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -37,7 +37,10 @@ ms.locfileid: "42517778"
 
 ## <a name="create-an-upload-session"></a>Создание сеанса отправки
 
-Чтобы начать отправку большого файла, приложение должно сначала запросить новый сеанс отправки. При этом создается временное место хранения, где сохраняются байты файла, пока он не будет отправлен полностью. После отправки последнего байта файла сеанс отправки завершается, а готовый файл отображается в целевой папке.
+Чтобы начать отправку большого файла, приложение должно сначала запросить новый сеанс отправки.
+При этом создается временное место хранения, где сохраняются байты файла, пока он не будет отправлен полностью.
+После отправки последнего байта файла сеанс отправки завершается, а готовый файл отображается в целевой папке.
+Кроме того, вы можете отложить окончательное создание файла в пункте назначения до тех пор, пока вы явным образом не создадите запрос на завершение отправки, указав свойство `deferCommit` в аргументах запроса.
 
 ### <a name="http-request"></a>HTTP-запрос
 
@@ -54,26 +57,28 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>Тело запроса
 
 Тело запроса не требуется.
-Но вы можете указать свойство `item` в теле запроса, чтобы предоставить дополнительные данные об отправляемом файле.
+Однако вы можете указать свойства в теле запроса, предоставив дополнительные сведения об отправляемом файле, а также выполнив настройку семантики операции передачи.
 
+Например, свойство `item` позволяет задать указанные ниже параметры.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | replace",
+  "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
-  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "fileSize": 1234,
   "name": "filename.txt"
 }
 ```
 
-Например, вы можете задать необходимые действия для случая, когда имя файла уже используется, указав в теле запроса свойство поведения при конфликтах.
+В приведенном ниже примере выполняется управление поведением, если имя файла уже занято, и дается указание на то, что окончательный файл не следует создавать, пока не будет создан явный запрос на выполнение:
 
 <!-- { "blockType": "ignored" } -->
 ```json
 {
   "item": {
     "@microsoft.graph.conflictBehavior": "rename"
-  }
+  },
+  "deferCommit": true
 }
 ```
 
@@ -83,13 +88,12 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | Если указан заголовок запроса, а предоставленное значение eTag (или cTag) не совпадает с текущим значением eTag элемента, то возвращается ошибка `412 Precondition Failed`. |
 
-## <a name="properties"></a>Свойства
+## <a name="parameters"></a>Параметры
 
-| Свойство             | Тип               | Описание
-|:---------------------|:-------------------|:---------------------------------
-| description          | String             | Предоставляет видимое пользователю описание элемента. Чтение и запись. Только в личном хранилище OneDrive
-| fileSystemInfo       | [fileSystemInfo][] | Сведения о файловой системе на клиенте. Чтение и запись.
-| name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
+| Параметр            | Тип                          | Описание
+|:---------------------|:------------------------------|:---------------------------------
+| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Сведения об отправляемом файле
+| deferCommit          | Boolean                       | Если задано значение "true", то для окончательного создания файла в пункте назначения потребуется явный запрос. Только в OneDrive для бизнеса.
 
 ### <a name="request"></a>Запрос
 
@@ -115,6 +119,8 @@ Content-Type: application/json
 В случае успешного выполнения запроса ответ будет содержать сведения о том, куда отправлять остальные запросы (в виде ресурса [UploadSession](../resources/uploadsession.md)).
 
 Этот ресурс предоставляет сведения о том, куда следует отправлять диапазон байтов файла и когда истекает срок действия сеанса отправки.
+
+Если указан параметр `fileSize` и он превышает доступную квоту, то возвращается отклик `507 Insufficent Storage`, а сеанс отправки не будет создан.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -206,7 +212,14 @@ Content-Type: application/json
 
 ## <a name="completing-a-file"></a>Завершение отправки файла
 
-После получения последнего диапазона байтов файла сервер отправляет ответ `HTTP 201 Created` или `HTTP 200 OK`.
+Если параметр `deferCommit` имеет значение "false" или он не задан, то отправка автоматически завершается, когда последний диапазон байтов файла методом PUT достигает URL-адреса отправки.
+
+Если параметр `deferCommit` имеет значение "true", то можно явным образом завершить отправку двумя способами:
+- После того как последний диапазон байтов файла методом PUT достигает URL-адреса отправки, отправьте последний запрос POST на URL-адрес отправки с содержимым нулевой длины (в настоящее время поддерживается только в OneDrive для бизнеса и в SharePoint).
+- После того как последний диапазон байтов файла методом PUT достигает URL-адреса отправки, отправьте последний запрос PUT таким же образом, которым вы бы [обрабатывали ошибки отправки](#handle-upload-errors) (в настоящее время поддерживается только в OneDrive персональный).
+
+
+После завершения отправки сервер ответит на последний запрос со значением `HTTP 201 Created` или `HTTP 200 OK`.
 Текст ответа также включает набор свойств по умолчанию для ресурса **driveItem**, представляющего полностью отправленный файл.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
@@ -232,6 +245,28 @@ Content-Type: application/json
   "file": { }
 }
 ```
+
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "commit-upload", "scopes": "files.readwrite" } -->
+
+```
+POST https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
+Content-Length: 0
+```
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "912310013A123",
+  "name": "largefile.vhd",
+  "size": 128,
+  "file": { }
+}
+```
+
 
 ## <a name="handling-upload-conflicts"></a>Обработка конфликтов при отправке
 
@@ -373,7 +408,6 @@ Content-Type: application/json
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
-[fileSystemInfo]: ../resources/filesysteminfo.md
 
 <!-- {
   "type": "#page.annotation",
@@ -385,3 +419,4 @@ Content-Type: application/json
   ],
   "section": "documentation"
 } -->
+

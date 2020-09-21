@@ -3,14 +3,14 @@ title: Список windows10PFXImportCertificateProfiles
 description: Список свойств и связей объектов windows10PFXImportCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a68c11ad09b0c0fd4c34cb3aabb8879463312fc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 317636b738ae610521a9ae002536221b8ec066ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43339408"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022633"
 ---
 # <a name="list-windows10pfximportcertificateprofiles"></a>Список windows10PFXImportCertificateProfiles
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [windows10PFXImportCertificateProfile](../resources/intune-deviceconfig-windows10pfximportcertificateprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -108,6 +108,9 @@ Content-Length: 1427
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6ae920e35c3ba7c2b31c5947f15b3e9d6585a21c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7598171b4d706a639a11d425ffa409e25126dcf8
+ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522041"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137150"
 ---
 # <a name="participant-resource-type"></a>Тип ресурса участника
 
@@ -18,13 +18,15 @@ ms.locfileid: "42522041"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Тип участника.
+Представляет участника в вызове.
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                 | Возвращаемый тип                                                 | Описание                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
+| [Участник списка](../api/participant-get.md)         | [participant](participant.md)                               | Получение списка объектов **участников** в вызове. |
 | [Получение участника](../api/participant-get.md)           | [participant](participant.md)                               | Чтение свойств объекта **участника** . |
+| [Удаление участника](../api/participant-delete.md)     | Нет   | Удаление участника в вызове.                  |
 | [конфигуремиксер](../api/participant-configuremixer.md) | [commsOperation](commsoperation.md)                         | Настройка микшера звука участника.         |
 | [Приглашение](../api/participant-invite.md)                 | [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md)                         | Приглашение участника на звонок.              |
 | [Отключение звука участника](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Отключение выключения участника в вызове.                  |
@@ -34,12 +36,12 @@ ms.locfileid: "42522041"
 
 | Свойство             | Тип                                     | Описание                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | Идентификатор участника.                                          |
+| id                   | Строка                                   | Идентификатор участника.                                          |
 | info                 | [participantInfo](participantinfo.md)    | Участник участника.                          |
-| исинлобби            | Boolean                                  | `true`Если участник находится в "зале ожидания".                          |
-| Автозвук              | Boolean                                  | `true`Если участник отключен (клиент или сервер выключен).    |
+| исинлобби            | Boolean                                  | `true` Если участник находится в "зале ожидания".                          |
+| Автозвук              | Boolean                                  | `true` Если участник отключен (клиент или сервер выключен).    |
 | медиастреамс         | Коллекция [медиастреам](mediastream.md) | Список потоков мультимедиа.                                   |
-| метаданных             | String                                   | Большой двоичный объект данных, предоставляемый участником в списке.     |
+| метаданных             | Строка                                   | Большой двоичный объект данных, предоставляемый участником в списке.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Сведения о том, имеет ли участник возможность записи. |
 
 ## <a name="relationships"></a>Связи
@@ -80,3 +82,5 @@ ms.locfileid: "42522041"
   "suppressions": []
 }
 -->
+
+

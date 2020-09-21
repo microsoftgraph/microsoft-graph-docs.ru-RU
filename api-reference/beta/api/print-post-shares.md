@@ -1,18 +1,18 @@
 ---
-title: Создание Принтершаре
+title: Создание printerShare
 description: Создает новую общую папку принтера для указанного принтера.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7085309eedf661c3953b7019c45d907dbd451121
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 74c59c57042ec0fa392c4f1b33ef96626237ec6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674115"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035935"
 ---
-# <a name="create-printershare"></a>Создание Принтершаре
+# <a name="create-printershare"></a>Создание printerShare
 
 Пространство имен: microsoft.graph
 
@@ -27,7 +27,7 @@ ms.locfileid: "46674115"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Принтершаре. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)| PrinterShare.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -115,3 +115,5 @@ Content-length: 233
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

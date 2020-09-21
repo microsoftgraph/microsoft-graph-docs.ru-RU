@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bfed48bf5096fb028e5c84b42bb1992e7ff8084d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3f8fe66a8be9bff28ea1afa342a9370782591438
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439361"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982992"
 ---
 # <a name="get-chartgridlines"></a>Получение объекта ChartGridlines
 
@@ -47,7 +47,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/majorgridlines
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартгридлинес](../resources/workbookchartgridlines.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -106,3 +106,5 @@ Content-length: 21
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9630d8d35e12256b7d01c89b996333e5eaefc84e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd97562be3b9be1c10c3729c8484d2524e6f9bd9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439494"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983017"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 
@@ -100,3 +100,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

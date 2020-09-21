@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 754a7f69b4f38fa101fe2fe5c349e089ae25c457
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fca314d1d3f830572a84407ec6c5cb0a28d188d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455285"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050250"
 ---
 # <a name="applicationsignindetailedsummary-resource-type"></a>Тип ресурса Аппликатионсигниндетаиледсуммари
 
@@ -29,7 +29,7 @@ ms.locfileid: "43455285"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|аггрегатедевентдатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|аггрегатедевентдатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |appDisplayName|String|Имя приложения, в которое пользователь выполнил вход.|
 |appId|String|Идентификатор приложения, в который пользователь выполнил вход.|
 |id|Строка| Уникальный идентификатор, представляющий действия при входе.|
@@ -73,3 +73,5 @@ ms.locfileid: "43455285"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

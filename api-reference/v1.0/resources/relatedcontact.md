@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0b0647bb7c271f722129738a36f1afed5ed5365e
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: adea95729dd4e6558885223245a7225811f14677
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909739"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002949"
 ---
 # <a name="realtedcontact-resource-type"></a>Тип ресурса Реалтедконтакт
 
@@ -22,14 +22,14 @@ ms.locfileid: "44909739"
 
 | Свойство      | Тип                  | Описание                                                                                                                               |
 | :------------ | :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| id            | Строка                | Идентификатор контакта в Azure Active Directory.                                                                                    |
-| displayName   | Строка                | Имя контакта. Обязательный.                                                                                                            |
+| id            | String                | Идентификатор контакта в Azure Active Directory.                                                                                    |
+| displayName   | String                | Имя контакта. Обязательно.                                                                                                            |
 | emailAddress  | String                | Основной адрес электронной почты контакта.                                                                                                     |
 | mobilePhone   | String                | Номер мобильного телефона контакта.                                                                                                       |
 | Отношение  | `contactRelationship` | Отношение к пользователю. Возможные значения:,,,,,, `parent` `relative` `aide` `doctor` `guardian` `child` `other` , `unknownFutureValue` . |
 | акцессконсент | Boolean               | Указывает, было ли пользователь отправлен для доступа к данным учащихся.                                                                     |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -65,3 +65,4 @@ ms.locfileid: "44909739"
   ]
 }
 -->
+

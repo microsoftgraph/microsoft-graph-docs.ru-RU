@@ -5,12 +5,12 @@ title: 'driveItem: checkin'
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7cf999dc338c4a16a4040e8b48b4824c6da09e94
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: d6b38b5418b29bd9e86e664c95299a159a82c0f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43511135"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009921"
 ---
 # <a name="driveitem-checkin"></a>driveItem: checkin
 
@@ -40,7 +40,7 @@ POST /sites/{siteId}/drive/items/{itemId}/checkin
 POST /users/{userId}/drive/items/{itemId}/checkin
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -50,7 +50,7 @@ POST /users/{userId}/drive/items/{itemId}/checkin
 | checkInAs | string | Необязательный параметр. Состояние документа после завершения операции возврата. Может иметь значение `published` либо значение может быть не указано. |
 | comment   | string | Комментарий к возврату, сопоставленный с версией.                                                   |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха вызов API возвращает `204 No content` .
 
@@ -111,3 +111,4 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: bde4732b54110707229dea4a1858c18239529f8f
-ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
+ms.openlocfilehash: 7982cfd3cf167627879e2fe4d36e2f676b1ab16f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47423655"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989530"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления обслуживанием Azure AD
 
@@ -38,7 +38,7 @@ ms.locfileid: "47423655"
 
 Обратите внимание, что функция управления обслуживанием, включая API, включена в Azure AD Premium P2. Клиент, на котором используется управление обслуживанием, должен иметь допустимую приобретенную или пробную подписку на Azure AD Premium P2 или EMS.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
 В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с управлением ресурсами.
 
@@ -108,3 +108,5 @@ ms.locfileid: "47423655"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

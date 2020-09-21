@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: e53ef85ce3fbe0be2a36adc218d565bdb78f64a0
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1a2d8d94adcfc863efd014a14bcec0ca469b056b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811072"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063858"
 ---
 # <a name="skypeforbusinessparticipantactivityusercounts-resource-type"></a>Тип ресурса СкипефорбусинесспартиЦипантактивитюсеркаунтс
 
@@ -50,3 +50,5 @@ ms.locfileid: "46811072"
   "reportPeriod": "String"
 }
 ```
+
+

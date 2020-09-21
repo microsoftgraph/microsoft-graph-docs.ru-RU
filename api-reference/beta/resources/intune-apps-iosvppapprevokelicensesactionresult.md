@@ -3,14 +3,14 @@ title: Тип ресурса Иосвппаппревокелиценсесак�
 description: Определяет результаты действий в приложениях для iOS VPP, содержит унаследованные свойства для Актионресулт.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 16945bcb0043a07821803964b245319fb10b5c8a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1eae1d0a3abd5d9173f79c50c4afb8e97d07f956
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458948"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989495"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>Тип ресурса Иосвппаппревокелиценсесактионресулт
 
@@ -59,6 +59,9 @@ ms.locfileid: "43458948"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

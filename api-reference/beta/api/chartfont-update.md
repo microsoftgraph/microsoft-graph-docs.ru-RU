@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 16701ce4285ece172c8a66ffab0add43d4218a61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a1624acebcfe136f87885b837e318cb283c6fd8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439375"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982999"
 ---
 # <a name="update-chartfont"></a>Обновление объекта ChartFont
 
@@ -47,7 +47,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |bold|boolean|Указывает, является ли шрифт полужирным.|
-|color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
+|color|string|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
 |name|string|Имя шрифта (например, Calibri)|
 |size|Double|Размер шрифта (например, 11)|
@@ -128,3 +128,5 @@ Content-length: 134
   ]
 }
 -->
+
+

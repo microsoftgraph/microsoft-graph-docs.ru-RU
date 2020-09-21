@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cf031459004e0c0d56b5b09145ed897a9f960142
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6b475c96b3ecbc2caa0aa147e3fc8fd0253ac243
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523011"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084039"
 ---
 # <a name="labeldetails-resource-type"></a>Тип ресурса Лабелдетаилс
 
@@ -25,14 +25,14 @@ ms.locfileid: "42523011"
 | Свойство    | Тип    | Описание                                                                                                  |
 | :---------- | :------ | :----------------------------------------------------------------------------------------------------------- |
 | color       | String  | Цвет, который должен отображаться в пользовательском интерфейсе для метки, если она настроена.                               |
-| description | String  | Заданное администратором описание метки.                                                                 |
+| description | Строка  | Заданное администратором описание метки.                                                                 |
 | id          | Строка  | ИДЕНТИФИКАТОР метки является глобальным уникальным идентификатором (GUID).                                                          |
 | isActive    | Boolean | Указывает, активна ли метка. Активные метки должны быть скрыты или отключены в пользовательских интерфейсах. |
 | name        | String  | Имя в виде открытого текста метки.                                                                             |
 | sensitivity | Int32   | Значение чувствительности метки, где меньше конфиденциально.                                           |
-| tooltip     | String  | Всплывающая подсказка, отображаемая для метки в пользовательском интерфейсе.                                      |
+| tooltip     | Строка  | Всплывающая подсказка, отображаемая для метки в пользовательском интерфейсе.                                      |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -66,3 +66,4 @@ ms.locfileid: "42523011"
   "section": "documentation",
   "tocPath": ""
 }-->
+

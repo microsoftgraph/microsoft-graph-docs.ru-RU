@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 431f5e01f9e74f5c9c8d5adf9b9cc2ffa8473b04
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: e2d4a591a1bc200eb96248fbeed1630fe4d22def
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897185"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077746"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact: getMemberGroups
 
@@ -30,7 +30,7 @@ ms.locfileid: "44897185"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
+|Для приложения | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,11 +49,11 @@ POST /contacts/{id}/getMemberGroups
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Логическое|Значение `false` . Возвращение лишь защищенных групп поддерживается только для пользователей.|
+|securityEnabledOnly|Boolean|Значение `false` . Возвращение лишь защищенных групп поддерживается только для пользователей.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции String в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции строк в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -129,3 +129,4 @@ Content-length: 39
   ]
 }
 -->
+

@@ -3,14 +3,14 @@ title: Получение Сиделоадингкэй
 description: Чтение свойств и связей объекта Сиделоадингкэй.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d23824e4eb64f977dc5ad773f557e0ad8909079
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ca20f948afb3ab944664a1cda88910ff9f00740a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450207"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043131"
 ---
 # <a name="get-sideloadingkey"></a>Получение Сиделоадингкэй
 
@@ -52,7 +52,7 @@ GET /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,6 +82,9 @@ Content-Length: 328
   }
 }
 ```
+
+
+
 
 
 

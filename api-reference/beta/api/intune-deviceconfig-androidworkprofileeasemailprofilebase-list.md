@@ -3,14 +3,14 @@ title: Список Андроидворкпрофилиасемаилпрофи
 description: Список свойств и связей объектов Андроидворкпрофилиасемаилпрофилебасе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ad3f9c820a90ac882077edb0c0507c0167bb9ae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 400ddd388cc0b88153eaa3c17f69d9218478226b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435146"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077655"
 ---
 # <a name="list-androidworkprofileeasemailprofilebases"></a>Список Андроидворкпрофилиасемаилпрофилебасес
 
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [андроидворкпрофилиасемаилпрофилебасе](../resources/intune-deviceconfig-androidworkprofileeasemailprofilebase.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -113,6 +113,9 @@ Content-Length: 1623
   ]
 }
 ```
+
+
+
 
 
 

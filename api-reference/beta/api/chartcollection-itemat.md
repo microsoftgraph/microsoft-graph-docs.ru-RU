@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2119987a450108315c2b1fa64605a8f0188ec475
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bb3dfa39d16859068307dde8c744e40b7ab5ad81
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439550"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983067"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -49,7 +49,7 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -113,3 +113,5 @@ Content-length: 52
   ]
 }
 -->
+
+

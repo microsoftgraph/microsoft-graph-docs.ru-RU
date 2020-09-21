@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: krbain
-ms.openlocfilehash: d20eaebd15a56b6a9f68c90265b039781b53ea20
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6bfab41ca0fc6754eb08f86eed3bf16a0c1e0f12
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812816"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029206"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>Тип ресурса Лиценсеассигнментстате
 
@@ -35,7 +35,7 @@ ms.locfileid: "46812816"
 |skuId|String|Уникальный идентификатор SKU. Только для чтения.|
 |state|String|Указывает текущее состояние этого назначения. Только для чтения. Возможные значения: Active, Активевисеррор, Disabled и Error.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -54,3 +54,5 @@ ms.locfileid: "46812816"
 }
 
 ```
+
+

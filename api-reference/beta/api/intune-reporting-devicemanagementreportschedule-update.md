@@ -3,14 +3,14 @@ title: Обновление Девицеманажементрепортсчед
 description: Обновление свойств объекта Девицеманажементрепортсчедуле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83da32c440b068a560d8891ce896809f4116f6fa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 49b23869d3232f0ddb990bfabd642c75a0cd1420
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391504"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043110"
 ---
 # <a name="update-devicemanagementreportschedule"></a>Обновление Девицеманажементрепортсчедуле
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,17 +54,17 @@ PATCH /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleI
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для этой сущности|
-|репортсчедуленаме|String|Имя расписания|
+|репортсчедуленаме|Строка|Имя расписания|
 |subject|String|Тема запланированных отчетов, которые доставляются|
-|письма|Коллекция объектов string|Сообщения электронной почты, на которые доставляются запланированные отчеты|
+|письма|Коллекция String|Сообщения электронной почты, на которые доставляются запланированные отчеты|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Периодичность запланированной доставки отчета. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Время, когда начинается доставка запланированных отчетов|
 |endDateTime|DateTimeOffset|Время окончания доставки запланированных отчетов|
 |userId|String|Идентификатор пользователя, создавшего отчет|
-|репортнаме|String|Имя отчета|
-|filter|String|Фильтры, примененные к отчету|
-|select|Коллекция объектов string|Столбцы, выбранные из отчета|
-|orderBy|Коллекция объектов string|Упорядочение столбцов в отчете|
+|репортнаме|Строка|Имя отчета|
+|filter|Строка|Фильтры, примененные к отчету|
+|select|Коллекция String|Столбцы, выбранные из отчета|
+|orderBy|Коллекция String|Упорядочение столбцов в отчете|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат запланированного отчета. Возможные значения: `csv`, `pdf`.|
 
 
@@ -134,6 +134,9 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
+
+
+
 
 
 

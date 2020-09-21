@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8ec096357a689b9ee58156783a936d6510e515d7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 483ba2c324547b089f70b76b3d339c20174cb505
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439396"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983027"
 ---
 # <a name="get-workbookchartfont"></a>Получение Воркбукчартфонт
 
@@ -47,7 +47,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартфонт](../resources/workbookchartfont.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -111,3 +111,5 @@ Content-length: 134
   ]
 }
 -->
+
+

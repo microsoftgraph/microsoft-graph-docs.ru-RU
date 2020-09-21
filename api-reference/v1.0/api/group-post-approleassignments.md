@@ -1,28 +1,28 @@
 ---
-title: Предоставление Аппролеассигнмент группе
-description: Предоставьте группе назначение роли приложения.
+title: Предоставление appRoleAssignment группе
+description: Предоставление назначения роли приложения группе.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: b38b731351cf4ea5cf038901344cec29b797484f
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 4aeecf65b932a4222cce12048bc8cced1ff26a5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383828"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057502"
 ---
-# <a name="grant-an-approleassignment-to-a-group"></a>Предоставление Аппролеассигнмент группе
+# <a name="grant-an-approleassignment-to-a-group"></a>Предоставление appRoleAssignment группе
 
 Пространство имен: microsoft.graph
 
-Используйте этот API, чтобы назначить роль приложения группе. Все непосредственные участники группы будут считаться назначенными. Чтобы назначить роль приложения группе, вам понадобятся три идентификатора:
+Используйте этот API, чтобы назначить роль приложения группе. Роль будет считаться назначенной всем непосредственным участникам группы. Чтобы предоставить назначение роли приложения группе, нужны три идентификатора:
 
-- `principalId`: `id` Группа, в которую назначается роль приложения.
-- `resourceId`: Ресурс, в `id` `servicePrincipal` котором определена роль приложения.
-- `appRoleId`: Значение параметра `id` `appRole` (определенного для субъекта-службы ресурсов), назначаемое группе.
+- `principalId`: `id` группы, которой нужно назначить роль приложения.
+- `resourceId`: `id` ресурса `servicePrincipal`, который определяет роль приложения.
+- `appRoleId`: `id` объекта `appRole` (определенного в субъекте-службе ресурса) для назначения группе.
 
-Чтобы [использовать группу для управления доступом к приложениям](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-saasapps), может потребоваться дополнительная лицензия.
+Чтобы [использовать группу для управления доступом к приложениям](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-saasapps), могут потребоваться дополнительные лицензии.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,9 +30,9 @@ ms.locfileid: "44383828"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Аппролеассигнмент. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Аппролеассигнмент. ReadWrite. ALL |
+|Для приложений | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ POST /groups/{id}/appRoleAssignments
 ```
 
 > [!NOTE]
-> Рекомендуется создавать назначения ролей приложений с помощью `appRoleAssignedTo` отношения между субъектом службы _ресурсов_ , а не с `appRoleAssignments` назначенным пользователем, группой или субъектом службы.
+> Рекомендуется создавать назначения ролей приложения, используя отношение `appRoleAssignedTo` _ресурса_ субъекта-службы вместо отношения `appRoleAssignments` назначенного пользователя, группы или субъекта-службы.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -53,11 +53,11 @@ POST /groups/{id}/appRoleAssignments
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [аппролеассигнмент](../resources/approleassignment.md) в формате JSON.
+В тексте запроса укажите представление JSON объекта [appRoleAssignment](../resources/approleassignment.md).
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [аппролеассигнмент](../resources/approleassignment.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `201 Created` и объект [appRoleAssignment](../resources/approleassignment.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -102,7 +102,7 @@ Content-Length: 110
 ---
 
 
-В этом примере `{id}` и то, и `{principalId-value}` другое — это `id` назначенная группа.
+В этом примере `{id}` и `{principalId-value}` станут `id` назначенной группы.
 
 ### <a name="response"></a>Отклик
 
@@ -145,3 +145,4 @@ Content-length: 253
   ]
 }
 -->
+

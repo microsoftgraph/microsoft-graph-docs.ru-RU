@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: c7780cd7c31da98a618053febba1b75c5e318931
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 0d5182e68fd1b1d53abb5b3fa623f3048abfe723
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44990275"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083969"
 ---
 # <a name="schema-resource-type"></a>Тип ресурса схемы
 
@@ -33,7 +33,7 @@ ms.locfileid: "44990275"
 
 | Свойство   | Тип                               | Описание                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | String                             | Необходимо указать значение `microsoft.graph.externalItem`. Обязательный. |
+| baseType   | Строка                             | Необходимо указать значение `microsoft.graph.externalItem`. Обязательный. |
 | properties | Коллекция [свойств](property.md) | Свойства, заданные для элементов в подключении. Минимальное число свойств — 1, максимальное — 128. |
 
 ## <a name="relationships"></a>Связи
@@ -71,3 +71,5 @@ ms.locfileid: "44990275"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение коллекции ресурсов DriveItem, доступ к которым предоставлен владельцу ресурса Drive.
 doc_type: apiPageType
-ms.openlocfilehash: ded63a41a5d6d59e547ea914988238846e21c214
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 1b91e6c9890eee92fc4c336afc0fed435fbbe74d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524330"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009914"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Создание списка элементов, к которым предоставлен доступ пользователю, выполнившему вход в систему
 
@@ -126,3 +126,4 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   "suppressions": [
   ]
 } -->
+

@@ -3,14 +3,14 @@ title: тип перечисления Еджесеарченгинетипе
 description: Позволяет ИТ для администраторов устанавливать предварительно определенную поисковую подсистему по умолчанию для устройств под управлением MDM
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8f3f8a026f22a085ac69149d74933ee6c6f1f4d1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bb097bb0f3533d3a21e003ec843aed9f4b35b7d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386035"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016277"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>тип перечисления Еджесеарченгинетипе
 
@@ -26,7 +26,10 @@ ms.locfileid: "43386035"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |умолчани|нуль|Использует заводские настройки пограничного сервера, чтобы назначить поисковую систему по умолчанию для рынка пользователей|
-|Bing|1,1|Устанавливает Bing как поисковую систему по умолчанию|
+|Bing|1 |Устанавливает Bing как поисковую систему по умолчанию|
+
+
+
 
 
 

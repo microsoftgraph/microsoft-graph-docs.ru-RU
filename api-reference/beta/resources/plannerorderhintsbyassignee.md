@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 3fc3e8a67e92091b5e273d45c483751c63dbbf0a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 827e7a45fa12b233d78db22eb86a0bc094be9195
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521722"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084021"
 ---
 # <a name="plannerorderhintsbyassignee-resource-type"></a>Тип ресурса Планнерордерхинтсбяссигни
 
@@ -55,3 +55,5 @@ ms.locfileid: "42521722"
   "suppressions": []
 }
 -->
+
+

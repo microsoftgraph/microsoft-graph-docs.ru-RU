@@ -3,14 +3,14 @@ title: Создание Виндовсмикрософтеджеапп
 description: Создание нового объекта Виндовсмикрософтеджеапп.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7994a035aa9fdaa97927e2f9bb3aabf546f999a
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 2f1f3b91bd2304c6b384686300821402f9158b40
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791563"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976573"
 ---
 # <a name="create-windowsmicrosoftedgeapp"></a>Создание Виндовсмикрософтеджеапп
 
@@ -29,7 +29,7 @@ ms.locfileid: "46791563"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,10 +43,10 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Виндовсмикрософтеджеапп в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсмикрософтеджеапп.
@@ -71,12 +71,14 @@ POST /deviceAppManagement/mobileApps
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|Канал, который необходимо установить на целевые устройства. Возможные значения: `dev`, `beta`, `stable`.|
+|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|оптоволокон|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|Канал, который необходимо установить на целевые устройства. Возможные значения: `dev`, `beta`, `stable`.|
 |дисплайлангуажелокале|String|Языковой стандарт, используемый при отображении текста для пользователя в пограничной приложении.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсмикрософтеджеапп](../resources/intune-apps-windowsmicrosoftedgeapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -86,7 +88,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 805
+Content-length: 862
 
 {
   "@odata.type": "#microsoft.graph.windowsMicrosoftEdgeApp",
@@ -111,6 +113,8 @@ Content-length: 805
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "channel": "beta",
   "displayLanguageLocale": "Display Language Locale value"
 }
@@ -121,7 +125,7 @@ Content-length: 805
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 977
+Content-Length: 1034
 
 {
   "@odata.type": "#microsoft.graph.windowsMicrosoftEdgeApp",
@@ -149,10 +153,15 @@ Content-Length: 977
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "channel": "beta",
   "displayLanguageLocale": "Display Language Locale value"
 }
 ```
+
+
+
 
 
 

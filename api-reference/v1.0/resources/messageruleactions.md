@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 406632618c4200fc217b993a7df8631b13db3cc8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ed2486994a9ccb496dc92e241506baa867ebeb1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468348"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965388"
 ---
 # <a name="messageruleactions-resource-type"></a>Тип ресурса messageRuleActions
 
@@ -70,3 +70,4 @@ ms.locfileid: "43468348"
   "section": "documentation",
   "tocPath": ""
 }-->
+

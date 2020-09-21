@@ -3,14 +3,14 @@ title: Перечисление объектов managedAppProtection
 description: Список свойств и связей объектов managedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e30c8d7feb6bbf1722694652fc193aa06dde324
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 4f5bdeb62a6506f57df15738630993957ca6e6c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44174141"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077732"
 ---
 # <a name="list-managedappprotections"></a>Перечисление объектов managedAppProtection
 
@@ -27,7 +27,7 @@ ms.locfileid: "44174141"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,7 +49,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [managedAppProtection](../resources/intune-mam-managedappprotection.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -110,6 +110,9 @@ Content-Length: 1757
   ]
 }
 ```
+
+
+
 
 
 

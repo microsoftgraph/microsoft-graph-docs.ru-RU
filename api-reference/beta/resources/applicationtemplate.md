@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c707a9010103f4226e62782a83891ff880a245e8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1dcb5d1a4f1a86521081487ec66494d76c035b82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508263"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050236"
 ---
 # <a name="applicationtemplate-resource-type"></a>Тип ресурса Аппликатионтемплате
 
@@ -24,24 +24,24 @@ ms.locfileid: "42508263"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-|[Список Аппликатионтемплате](../api/applicationtemplate-list.md)|[аппликатионтемплате](applicationtemplate.md)|Получение списка объектов Аппликатионтемплате.|
-| [Получение Аппликатионтемплате](../api/applicationtemplate-get.md) | [аппликатионтемплате](applicationtemplate.md) | Чтение свойств и связей объекта Аппликатионтемплате. |
-|[Создание экземпляра Аппликатионтемплате](../api/applicationtemplate-instantiate.md)|[аппликатионсервицепринЦипал](applicationserviceprincipal.md)| Добавьте экземпляр приложения из коллекции приложений Azure AD в ваш каталог.|
+|[Перечисление applicationTemplate](../api/applicationtemplate-list.md)|[applicationTemplate](applicationtemplate.md)|Получение списка объектов Аппликатионтемплате.|
+| [Получение Аппликатионтемплате](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Чтение свойств и связей объекта Аппликатионтемплате. |
+|[Создание экземпляра applicationTemplate](../api/applicationtemplate-instantiate.md)|[аппликатионсервицепринЦипал](applicationserviceprincipal.md)| Добавьте экземпляр приложения из коллекции приложений Azure AD в ваш каталог.|
 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|categories|Коллекция String|Список категорий для приложения. Поддерживаются следующие значения: `Collaboration`, `Business Management`, `Consumer`,`Content management` `CRM` `Data services` `Developer services` `E-commerce` `Education` `Health` `Human resources` `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Web design & hosting`,,,,,,,,, `Tools, Travel`, `Telecommunications`,,,,,,,,,,,,,, и. `Project management` `ERP` `Finance`|
+|categories|Коллекция String|Список категорий для приложения. Поддерживаются следующие значения:,,,,,,,,,, `Collaboration` `Business Management` `Consumer` `Content management` `CRM` `Data services` `Developer services` `E-commerce` `Education` `ERP` `Finance` `Health` , `Human resources` , `IT infrastructure` , `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel` `Web design & hosting` ,,,,,,,,,,,,,, и.|
 |description|String|Описание приложения.|
 |displayName|Строка|Имя приложения.|
-|хомепажеурл|String|URL-адрес домашней страницы приложения.|
+|хомепажеурл|Строка|URL-адрес домашней страницы приложения.|
 |id|Строка| Уникальный идентификатор приложения. Только для чтения.|
-|logoUrl|String|URL-адрес для получения логотипа для этого приложения.|
+|logoUrl|Строка|URL-адрес для получения логотипа для этого приложения.|
 |publisher|String|Имя издателя для этого приложения.|
-|суппортедпровисионингтипес|Коллекция объектов string|Список режимов подготовки, поддерживаемых этим приложением. Единственное допустимое значение: `sync`.|
-|суппортедсинглесигнонмодес|Коллекция объектов string|Список режимов единого входа, поддерживаемых этим приложением. `password`Поддерживаемые значения: `saml`, `external`, и. `oidc`|
+|суппортедпровисионингтипес|Коллекция String|Список режимов подготовки, поддерживаемых этим приложением. Единственное допустимое значение: `sync` .|
+|суппортедсинглесигнонмодес|Коллекция String|Список режимов единого входа, поддерживаемых этим приложением. Поддерживаемые значения: `password` ,, `saml` `external` и `oidc` .|
 
 ## <a name="relationships"></a>Связи
 
@@ -83,3 +83,5 @@ ms.locfileid: "42508263"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

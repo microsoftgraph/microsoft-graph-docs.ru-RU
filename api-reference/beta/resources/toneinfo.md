@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 99889abd2d3d9272f4f0ecb9b4d1b5321029beea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5555ae61920751d63a70fdb86199ffa572dcb9be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519661"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083953"
 ---
 # <a name="toneinfo-resource-type"></a>Тип ресурса Тонеинфо
 
@@ -25,9 +25,9 @@ ms.locfileid: "42519661"
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
 | секуенцеид | Int64 | Добавочный идентификатор, используемый для упорядочивания событий DTMF. |
-| Новая | String | Возможные значения: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`,. `flash` |
+| Новая | Строка | Возможные значения: `tone0` , `tone1` ,,,,, `tone2` `tone3` `tone4` `tone5` `tone6` ,,, `tone7` `tone8` `tone9` ,,, `star` `pound` `a` , `b` , `c` , `d` , `flash` . |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -57,3 +57,5 @@ ms.locfileid: "42519661"
   "suppressions": []
 }
 -->
+
+

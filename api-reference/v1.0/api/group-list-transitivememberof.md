@@ -1,18 +1,18 @@
 ---
-title: Список транзитивных групп memberOf
+title: Перечисление group transitive memberOf
 description: Получение групп, членом которых является группа.  Эта операция является транзитивным и также включает все группы, в которых вложены эти группы. В отличие от того, что получает группы Microsoft 365 пользователя, возвращаются все типы групп, а не только группы Майкрософт 365.
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ba428fb4f0eb78171ac8f29e659047065148f592
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: c3f698329ba11f0c8d4d68711176318fae62debf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897857"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057551"
 ---
-# <a name="list-group-transitive-memberof"></a>Список транзитивных групп memberOf
+# <a name="list-group-transitive-memberof"></a>Перечисление group transitive memberOf
 
 Пространство имен: microsoft.graph
 
@@ -44,7 +44,7 @@ GET /groups/{id}/transitiveMemberOf
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -124,3 +124,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

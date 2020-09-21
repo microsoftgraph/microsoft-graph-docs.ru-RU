@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a9b94075b7a81fdb596038afac21fbf6cbc68f42
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7650976a437eb862acd5994d7e1dd14830d5e3b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519654"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083934"
 ---
 # <a name="trustframeworkkey-resource-type"></a>Тип ресурса Трустфрамеворккэй
 
@@ -43,7 +43,7 @@ ms.locfileid: "42519654"
 
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -86,3 +86,5 @@ ms.locfileid: "42519654"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
