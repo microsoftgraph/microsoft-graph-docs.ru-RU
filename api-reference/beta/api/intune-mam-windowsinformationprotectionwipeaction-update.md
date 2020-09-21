@@ -3,14 +3,14 @@ title: Обновление Виндовсинформатионпротекти
 description: Обновление свойств объекта Виндовсинформатионпротектионвипеактион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0943140d1c9ec48d2f7b9b93f1ab11742219ec3d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f226077835c00fd160ec29db791b9c567f3f349c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441424"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967040"
 ---
 # <a name="update-windowsinformationprotectionwipeaction"></a>Обновление Виндовсинформатионпротектионвипеактион
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInfor
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -63,7 +63,7 @@ PATCH /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInfor
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсинформатионпротектионвипеактион](../resources/intune-mam-windowsinformationprotectionwipeaction.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,6 +104,9 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса iosVppEBookAssignment
 description: Содержит свойства, используемые при назначении электронной книги в формате VPP для iOS группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f912a8610cebe1d209e4d32a755b5f639a780f8
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 4907c2e96017781a8e04ae19e234937fa1a0ae26
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788187"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966543"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>Тип ресурса iosVppEBookAssignment
 
@@ -64,6 +64,9 @@ ms.locfileid: "44788187"
   "installIntent": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: afc2e7d49352643f63f817d208e6ef552e9af7fd
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: b5187400e0881c865051522adda0398f2bac15ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290232"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966389"
 ---
 # <a name="create-application"></a>Создание приложения
 
@@ -19,7 +19,7 @@ ms.locfileid: "44290232"
 Создайте новый объект [application](../resources/application.md).
 
 > [!IMPORTANT]
-> Добавление [**пассвордкредентиал**](../resources/passwordcredential.md) при создании приложений не поддерживается. Используйте метод [аддпассворд](application-addpassword.md) , чтобы добавить пароли для приложения.
+> Добавление [**passwordCredential**](../resources/passwordcredential.md) при создании приложений не поддерживается. Используйте метод [addPassword](application-addpassword.md), чтобы добавлять пароли для приложения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,9 +27,9 @@ ms.locfileid: "44290232"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. ReadWrite. ALL, Application. ReadWrite. Овнедби |
+|Для приложений | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -88,7 +88,7 @@ Content-length: 67
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -170,3 +170,4 @@ Content-length: 1145
   ]
 }
 -->
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2ed967d04c15e060588a582cb12e25239eb56602
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c4d838f33dd667db8fab38d25574a39a97074d08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508655"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967683"
 ---
 # <a name="list-worksheetcollection"></a>Список WorksheetCollection
 
@@ -43,7 +43,7 @@ GET /workbook/worksheets
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукворкшит](../resources/worksheet.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -112,3 +112,4 @@ Content-length: 145
   "suppressions": [
   ]
 }-->
+

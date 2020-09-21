@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3be31cd34f1fe880c079bba50e7e612dfa26da45
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: e8877e9da96ccaf1fa8bd99eaeecd5971beb42fa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808216"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967354"
 ---
 # <a name="nameditem-resource-type"></a>Тип ресурса NamedItem
 
@@ -40,12 +40,12 @@ ms.locfileid: "46808216"
 |value|Json|Представляет формулу, на которую ссылается имя. Например, =Sheet14!$B$2:$H$12, =4,75 и т. д. Только для чтения.|
 |visible|boolean|Определяет, является ли объект видимым.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |worksheet|[WorkbookWorksheet](worksheet.md)|Возвращает лист, к которому относится именованный элемент. Доступно, только если элемент относится к листу. Только для чтения.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -80,3 +80,4 @@ ms.locfileid: "46808216"
   "section": "documentation",
   "tocPath": ""
 }-->
+

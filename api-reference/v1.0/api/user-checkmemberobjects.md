@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a33da99187ba8d8bbc64ea119dd3c3a13491a92e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: e0450d4bdb35978fcb1f7b375babd6900f11b88d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108412"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967753"
 ---
 # <a name="user-checkmemberobjects"></a>Пользователь: Чеккмемберобжектс
 
@@ -24,7 +24,7 @@ ms.locfileid: "43108412"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL<br><br>Дополнительно:<br><br><ul><li>Если выполняется проверка членства в группах: Group. Read. ALL, Group. ReadWrite. ALL</li><li>При проверке принадлежности к административным единицам: AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL</li><li>Если выполняется проверка членства в ролях каталога: Ролеманажемент. Read. Directory, Ролеманажемент. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+| Делегированные (рабочая или учебная учетная запись)     | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL<br><br>Кроме того:<br><br><ul><li>Если выполняется проверка членства в группах: Group. Read. ALL, Group. ReadWrite. ALL</li><li>При проверке принадлежности к административным единицам: AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL</li><li>Если выполняется проверка членства в ролях каталога: Ролеманажемент. Read. Directory, Ролеманажемент. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL<br>С<ul><li>Если выполняется проверка членства в группах: Group. Read. ALL, Group. ReadWrite. ALL</li><li>При проверке принадлежности к административным единицам: AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL</li><li>Если выполняется проверка членства в ролях каталога: Ролеманажемент. Read. Directory, Ролеманажемент. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
 
@@ -52,7 +52,7 @@ POST /users/{id}/checkMemberObjects
 |:-------------|:------------|:------------|
 |ids|Коллекция String|Коллекция, содержащая идентификаторы объектов групп, ролей каталогов или идентификаторов Ролетемплате для ролей каталогов, в которых проверяется членство. Можно указать до 20 объектов.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции String в тексте отклика.
 
@@ -136,3 +136,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

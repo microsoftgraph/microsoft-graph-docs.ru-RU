@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0b1e8e6e6505780fcf638892c1e18b9500d54423
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 416485ee39f02ba6a3b6532f159e124ecf1f1841
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790933"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966550"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -84,6 +84,7 @@ ms.locfileid: "46790933"
 - [Функция клавиатуры Android](intune-deviceconfig-androidkeyguardfeature.md)
 - [Настройка OMA cp на Android](intune-deviceconfig-androidomacpconfiguration.md)
 - [Профиль сертификата PKCS Android](intune-deviceconfig-androidpkcscertificateprofile.md)
+- [Сложность пароля, необходимая для Android](intune-deviceconfig-androidrequiredpasswordcomplexity.md)
 - [Требуемый тип пароля для Android](intune-deviceconfig-androidrequiredpasswordtype.md)
 - [Профиль сертификата SCEP для Android](intune-deviceconfig-androidscepcertificateprofile.md)
 - [Доверенный корневой сертификат для Android](intune-deviceconfig-androidtrustedrootcertificate.md)
@@ -386,6 +387,7 @@ ms.locfileid: "46790933"
 - [macOS переадресации расширения единого входа](intune-deviceconfig-macosredirectsinglesignonextension.md)
 - [Профиль сертификата SCEP для macOS](intune-deviceconfig-macosscepcertificateprofile.md)
 - [расширение единого входа macOS](intune-deviceconfig-macossinglesignonextension.md)
+- [Политика задержки обновления программного обеспечения macOS](intune-deviceconfig-macossoftwareupdatedelaypolicy.md)
 - [расширение системы macOS](intune-deviceconfig-macossystemextension.md)
 - [тип расширения системы macOS](intune-deviceconfig-macossystemextensiontype.md)
 - [Сопоставление типов расширений системы macOS](intune-deviceconfig-macossystemextensiontypemapping.md)
@@ -610,3 +612,5 @@ ms.locfileid: "46790933"
 - [Конфигурация Wi-Fi для Windows](intune-deviceconfig-windowswificonfiguration.md)
 - [Конфигурация корпоративного типа EAP для Wi-Fi в Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
 - [Интерфейс проводной сети](intune-deviceconfig-wirednetworkinterface.md)
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c08d7c7c8e545e9fdaa456a9f39cafe694285a79
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c4d66799351679a306e529ecd52935c6e086f09
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455657"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966879"
 ---
 # <a name="get-plannerprogresstaskboardtaskformat"></a>Получение объекта plannerProgressTaskBoardTaskFormat
 
@@ -42,7 +42,7 @@ GET /planner/tasks/{id}/progressTaskBoardFormat
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код ответа `200 OK` и объект [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) в тексте ответа.
 
@@ -105,3 +105,5 @@ Content-length: 76
   ]
 }
 -->
+
+

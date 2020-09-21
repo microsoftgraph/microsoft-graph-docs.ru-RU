@@ -3,14 +3,14 @@ title: Тип ресурса managedDeviceMobileAppConfigurationDeviceStatus
 description: Содержит свойства, унаследованные свойства и действия для состояния конфигурации мобильного приложения MDM для устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d0a40f6fea06f35fd7475e9e7947bf2172ff528
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 42748d1ed88b91cda422ee29fe29870b1ece7d0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458710"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966655"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>Тип ресурса managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -34,11 +34,11 @@ ms.locfileid: "43458710"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
 |userName|String|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
-|platform|Int32|Платформа для устройства, о котором сообщается|
+|платформа|Int32|Платформа для устройства, о котором сообщается|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
 |status|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
@@ -69,6 +69,9 @@ ms.locfileid: "43458710"
   "userPrincipalName": "String"
 }
 ```
+
+
+
 
 
 

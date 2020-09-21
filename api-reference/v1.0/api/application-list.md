@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 009dfc9adf0ec86d1dc3f7e9cf380b3fce13845b
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: cafaae793f68ebdfb16661f05c9798f38eb8747a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290239"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966410"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -24,9 +24,9 @@ ms.locfileid: "44290239"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /applications
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -171,3 +171,4 @@ Content-length: 1229
   ]
 }
 -->
+

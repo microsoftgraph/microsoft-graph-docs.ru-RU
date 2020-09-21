@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 88e49e674a3dd19cf8a97d2a6cbf5c989fd4f63c
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: ec119e193cbfc2cb7ea1c0294bc7d40ecb9900f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806667"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966515"
 ---
 # <a name="application-delta"></a>Приложение: Delta
 
@@ -53,18 +53,18 @@ GET /applications/delta
 
 - Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство **id** возвращается всегда.
 - Имеется ограниченная поддержка параметра `$filter`:
-  * Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам: `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}`. Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
+  * Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам:  `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}` . Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Носитель &lt;токен&gt;. Обязательно.|
+| Authorization  | Носитель &lt;токен&gt;. Обязательно.|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [приложения](../resources/application.md) в теле отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
@@ -164,3 +164,4 @@ Content-type: application/json
   ]
 }
 -->
+

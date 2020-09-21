@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 56004eafb469c15b735f2213d9ea18ee5bd17124
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: df3a11007de41b2ec503e8dd54cd6d0a1a7ee071
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806788"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967242"
 ---
 # <a name="onenoteresource-resource-type"></a>Тип ресурса Оненотересаурце
 
@@ -72,7 +72,7 @@ GET ../onenote/pages/{id}/content
 | содержимое              | Поток          | Поток содержимого
 | contentUrl           | Строка (URL-адрес)    | URL-адрес для скачивания контента
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 
@@ -90,3 +90,4 @@ GET ../onenote/pages/{id}/content
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Создание Мобилеаппинтентандстате
 description: Создание нового объекта Мобилеаппинтентандстате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d134dfb31284a18e7a26a6e1aecb98d01b648111
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 985008e7b4680f36bd2aa0c669bdc8a3912dda88
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966900"
 ---
 # <a name="create-mobileappintentandstate"></a>Создание Мобилеаппинтентандстате
 
@@ -43,7 +43,7 @@ POST /users/{usersId}/mobileAppIntentAndStates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,14 +53,14 @@ POST /users/{usersId}/mobileAppIntentAndStates
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|UUID объекта.|
+|id|String|UUID объекта.|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
 |мобилеапплист|Коллекция [мобилеаппинтентандстатедетаил](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|Список целей и состояний полезных данных для клиента.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -129,6 +129,9 @@ Content-Length: 880
   ]
 }
 ```
+
+
+
 
 
 

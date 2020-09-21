@@ -3,14 +3,14 @@ title: тип перечисления Манажедбровсертипе
 description: Тип управляемого браузера
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0c83491c07aaa16bb361abc72b98e8f116297e95
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a52bf694b30aeb18efd32c437963b73af44d97b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177263"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967585"
 ---
 # <a name="managedbrowsertype-enum-type"></a>тип перечисления Манажедбровсертипе
 
@@ -24,7 +24,9 @@ ms.locfileid: "44177263"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено|
-|микрософтедже|1,1|Microsoft Edge|
+|микрософтедже|1 |Microsoft Edge|
+
+
 
 
 

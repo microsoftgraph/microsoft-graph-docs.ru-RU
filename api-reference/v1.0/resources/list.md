@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Ресурс list представляет список на сайте.
 doc_type: resourcePageType
-ms.openlocfilehash: a63f4bdbf3ef8290a9295bc0ecb9abdee5452b45
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: c84ae2e54e0b319467951ad6fb65a419b65c013d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108447"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967445"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -116,7 +116,7 @@ ms.locfileid: "43108447"
 | **lastModifiedDateTime** | DateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.
 | **parentReference**      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
 | **sharepointIds**        | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
-| **webUrl**               | строка (url-адрес)      | URL-адрес для отображения элемента в браузере. Только для чтения.
+| **webUrl**               | string (url-адрес)      | URL-адрес для отображения элемента в браузере. Только для чтения.
 
 ## <a name="relationships"></a>Связи
 
@@ -154,3 +154,4 @@ ms.locfileid: "43108447"
     "Lists": "#"
   }
 } -->
+

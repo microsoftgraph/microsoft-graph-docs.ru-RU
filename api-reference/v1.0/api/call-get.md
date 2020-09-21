@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 57b863b7593e54b9594ce748fea58bf24326c6a9
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 3f01e69298e5c42244e3e1937b3ca5458eb63031
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311916"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966377"
 ---
 # <a name="get-call"></a>Получение вызова
 
@@ -41,7 +41,7 @@ GET /communications/calls/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -278,3 +278,4 @@ Content-Type: application/json
   ]
 }
 -->
+

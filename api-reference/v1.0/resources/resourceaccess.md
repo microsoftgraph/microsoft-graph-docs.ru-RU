@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 3a450645e126681f900d228b5d60a5201893cf2d
-ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
+ms.openlocfilehash: c5fb2478fbce4aeece78e70983ee15fda46ac602
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "44593620"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967235"
 ---
 # <a name="resourceaccess-resource-type"></a>Тип ресурса Ресаурцеакцесс
 
@@ -56,3 +56,4 @@ ms.locfileid: "44593620"
   "suppressions": []
 }
 -->
+

@@ -2,16 +2,16 @@
 author: JeremyKelley
 description: Ресурс Identity является коллекцией с ключом для ресурсов Identity.
 ms.date: 09/10/2017
-title: Identity
+title: IdentitySet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 08986af20ae7591798a222e68d9b9bee5244e273
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 60fdb901ecd74f3826604d139cad71d9d0844221
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496609"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966766"
 ---
 # <a name="identityset-resource-type"></a>Тип ресурса Identity
 
@@ -61,11 +61,11 @@ ms.locfileid: "42496609"
 
 | Свойство    | Тип                    | Описание                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
-| application | [Идентификация](identity.md) | Необязательный. Приложение, связанное с данным действием.  |
+| application | [Identity](identity.md) | Необязательный. Приложение, связанное с данным действием.  |
 | conversation| [Identity](identity.md) | Необязательный. Группа или канал, связанные с этим действием.       |
 | конверсатионидентититипе| [Identity](identity.md) | Необязательный. Указывает, идентифицирует ли свойство **беседы** группу или канал.|
-| Устройство      | [Идентификация](identity.md) | Необязательный. Устройство, связанное с данным действием.       |
-| phone       | [identity](identity.md) | Необязательное. Номер телефона, связанный с этим действием. |
+| Устройство      | [Identity](identity.md) | Необязательный. Устройство, связанное с данным действием.       |
+| phone       | [identity](identity.md) | Необязательный параметр. Номер телефона, связанный с этим действием. |
 | user        | [Identity](identity.md) | Необязательный. Пользователь, связанный с данным действием.         |
 
 ## <a name="remarks"></a>Заметки 
@@ -81,3 +81,5 @@ ms.locfileid: "42496609"
   "section": "documentation",
   "tocPath": "Resources/IdentitySet"
 } -->
+
+

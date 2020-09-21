@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: azure-ad
 doc_type: resourcePageType
-ms.openlocfilehash: 13d377f05650f50f9f87f618ca1c9c07d1da70ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d98d0aaa4850e8ef2b82f9f5deb17424c3ab98d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534219"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967382"
 ---
 # <a name="modifiedproperty-resource-type"></a>Тип ресурса Модифиедпроперти
 
@@ -55,3 +55,4 @@ ms.locfileid: "42534219"
   "section": "documentation",
   "tocPath": ""
 }-->
+

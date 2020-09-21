@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 904826370ecd5d75dbdce73cad1de820e7363d2a
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 9d15d5ed82bf442a24d815fac2a642bdf09c381e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896541"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966886"
 ---
 # <a name="update-plannerplandetails"></a>Обновление объекта plannerplandetails
 
@@ -39,7 +39,7 @@ PATCH /planner/plans/{id}/details
 | Авторизация  | Bearer {токен}. Обязательный. |
 | If-Match  | Последнее известное значение ETag обновляемого объекта plannerPlanDetails. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -135,3 +135,5 @@ Content-length: 373
   ]
 }
 -->
+
+

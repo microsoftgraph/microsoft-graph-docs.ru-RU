@@ -3,14 +3,14 @@ title: Действие syncDevice
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ad60082606f1dd55c7836267b892e760395638f
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 184ecd238a8db5985ae294dc7676e08c2dbc59ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556200"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965990"
 ---
 # <a name="syncdevice-action"></a>Действие syncDevice
 
@@ -46,7 +46,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,6 +65,9 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

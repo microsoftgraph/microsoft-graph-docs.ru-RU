@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 54223a5b9e807dc45a9868b3251b8d8b1a0fcd72
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e729a572ceb69f59ed6cc00cd0a2e132765ed8a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447691"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967494"
 ---
 # <a name="inviteparticipantsoperation-resource-type"></a>Тип ресурса ИнвитепартиЦипантсоператион
 
@@ -23,7 +23,7 @@ ms.locfileid: "42447691"
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Контекст                  | String                      | Контекст клиента.                                                                                                                               |
-| id                             | Строка                      | Идентификатор операции сервера. Только для чтения.                                                                                              |
+| id                             | String                      | Идентификатор операции сервера. только для чтения.                                                                                              |
 | participants | Коллекция [invitationParticipantInfo](invitationParticipantInfo.md) | Участники, которые необходимо пригласить. |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                             |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                  |
@@ -59,3 +59,4 @@ ms.locfileid: "42447691"
   "tocPath": "",
   "suppressions": []
 }-->
+

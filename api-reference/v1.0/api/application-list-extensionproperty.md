@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3496db47e12786b91579c440501c39d43580918b
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: c6b8445f0cbcc36046bb71572014756c992c3fe6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291141"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966505"
 ---
 # <a name="list-extensionproperties"></a>Список Екстенсионпропертиес
 
@@ -38,7 +38,7 @@ GET /applications/{id}/extensionProperties
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -129,3 +129,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

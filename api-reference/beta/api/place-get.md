@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0dc07c3c649cb472abc2a33a819fcaf9a7935589
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: a281c07e71d715ed123403fe16b2fd3fcc764a05
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006323"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966916"
 ---
 # <a name="get-place"></a>Получение
 
@@ -55,7 +55,7 @@ GET /places/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -219,3 +219,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

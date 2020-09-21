@@ -3,14 +3,14 @@ title: Действие assign
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c8ac1577057ada182c9ab93fc617f14873fcb77
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c127dc16e64196624a7383ea061ef6c2e29ced9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791309"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966935"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfile
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfile
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [виндовсфеатуреупдатепрофилеассигнмент](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md)|Н/Д|
+|assignments|Коллекция [виндовсфеатуреупдатепрофилеассигнмент](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md)|Пока не задокументировано.|
 
 
 
@@ -90,6 +90,9 @@ Content-length: 460
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

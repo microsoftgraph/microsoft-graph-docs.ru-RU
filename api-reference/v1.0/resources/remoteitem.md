@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс remoteItem указывает, что элемент driveItem ссылается на элемент, находящийся на другом диске.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 131336245f60d0f62da7bc7cc9922c32e3f545a3
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: 3688711b588ee40b8ec0aac0dc04f543cf2e2294
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986091"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967333"
 ---
 # <a name="remoteitem-resource-type"></a>Тип ресурса RemoteItem
 
@@ -64,7 +64,7 @@ ms.locfileid: "42986091"
 | file                 | [File](file.md)                     | Указывает, что удаленный элемент является файлом. Только для чтения.                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Сведения об удаленном элементе из локальной файловой системы. Только для чтения.                                                                                          |
 | folder               | [Folder](folder.md)                 | Указывает, что удаленный элемент является папкой. Только для чтения.                                                                                                            |
-| id                   | Строка                              | Уникальный идентификатор для удаленного элемента на его диске. Только для чтения.                                                                                                    |
+| id                   | String                              | Уникальный идентификатор для удаленного элемента на его диске. Только для чтения.                                                                                                    |
 | image                | [Image](image.md)                   | Метаданные изображения, если в роли элемента выступает изображение. Только для чтения.                                                                                               |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения.                                                                            |
 | lastModifiedDateTime | Timestamp                           | Дата и время последнего изменения элемента. Только для чтения.                                                                                                              |
@@ -92,3 +92,4 @@ ms.locfileid: "42986091"
   "section": "documentation",
   "tocPath": "Facets/RemoteItem"
 } -->
+

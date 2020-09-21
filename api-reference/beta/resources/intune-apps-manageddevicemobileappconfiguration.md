@@ -3,14 +3,14 @@ title: Тип ресурса managedDeviceMobileAppConfiguration
 description: Абстрактный класс для настройки мобильного приложения для зарегистрированных устройств.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d4deb062c7b927712d0557aa3257ba719e45bc12
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7418811c38c56c3d68b906e82774b2a8c1d4685e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458724"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966669"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>Тип ресурса managedDeviceMobileAppConfiguration
 
@@ -34,11 +34,11 @@ ms.locfileid: "43458724"
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |targetedMobileApps|Коллекция String|приложение-обработчик|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этой сущности конфигурации приложения.|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этой сущности конфигурации приложения.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |description|String|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 ## <a name="relationships"></a>Связи
@@ -75,6 +75,9 @@ ms.locfileid: "43458724"
   "version": 1024
 }
 ```
+
+
+
 
 
 

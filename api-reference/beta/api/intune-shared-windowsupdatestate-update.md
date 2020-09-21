@@ -3,14 +3,14 @@ title: Обновление Виндовсупдатестате
 description: Обновление свойств объекта Виндовсупдатестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e3c31146e42f01da7ffa426884b51c1269184da
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 27b486f909e7bfcd11c4d354d5a60160e79024bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46789841"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966949"
 ---
 # <a name="update-windowsupdatestate"></a>Обновление Виндовсупдатестате
 
@@ -31,7 +31,7 @@ ms.locfileid: "46789841"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложений||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -47,10 +47,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md).
@@ -62,7 +62,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |userId|String|Идентификатор пользователя.|
 |deviceDisplayName|String|Отображаемое имя устройства.|
 |userPrincipalName|String|Имя участника пользователя.|
-|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Состояние Windows удпате. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Состояние Windows удпате. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
 |куалитюпдатеверсион|String|Версия устройства для обновления качества.|
 |феатуреупдатеверсион|String|Текущая версия обновления компонентов устройства.|
 |ластскандатетиме|DateTimeOffset|Дата и время, когда агент обновления Windows успешно выполнил сканирование.|
@@ -70,7 +70,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -117,6 +117,9 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
+
+
+
 
 
 

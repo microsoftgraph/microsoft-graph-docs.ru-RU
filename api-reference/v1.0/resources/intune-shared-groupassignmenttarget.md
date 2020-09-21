@@ -3,14 +3,14 @@ title: Тип ресурса groupAssignmentTarget
 description: Представляет ресурс, назначенный группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4467c312581307a6603f5c83e4aa2e4e7fa1fa8b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e46297a1670136ffc1c7de07c4e4640121a50434
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445712"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967508"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>Тип ресурса groupAssignmentTarget
 
@@ -44,6 +44,8 @@ ms.locfileid: "43445712"
   "groupId": "String"
 }
 ```
+
+
 
 
 

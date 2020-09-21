@@ -3,14 +3,14 @@ title: Обновление объекта roleAssignment
 description: Обновление свойств объекта roleAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b346f7b40b718b4910eaf733c6dc7c24ae139a8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6d8102faa99f8229a2f767e2039fcfbbdd4eca1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467361"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965829"
 ---
 # <a name="update-roleassignment"></a>Обновление объекта roleAssignment
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -52,7 +52,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|Строка|Отображаемое или понятное имя назначения роли.|
+|displayName|String|Отображаемое или понятное имя назначения роли.|
 |description|String|Описание назначения роли.|
 |resourceScopes|Коллекция String|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory.|
 
@@ -97,6 +97,9 @@ Content-Length: 242
   ]
 }
 ```
+
+
+
 
 
 

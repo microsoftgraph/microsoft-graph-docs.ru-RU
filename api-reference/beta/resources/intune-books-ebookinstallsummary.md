@@ -3,14 +3,14 @@ title: Тип ресурса eBookInstallSummary
 description: Содержит свойства сводки по установке книги для устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b305d2814abf04725cd1a42acf05b90f96f0dd8b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1714b111399a1bf230bc208b0a1ebd4089a0cbd7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472088"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966613"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>Тип ресурса eBookInstallSummary
 
@@ -62,6 +62,9 @@ ms.locfileid: "43472088"
   "notInstalledUserCount": 1024
 }
 ```
+
+
+
 
 
 

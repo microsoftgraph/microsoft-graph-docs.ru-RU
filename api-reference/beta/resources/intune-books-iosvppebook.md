@@ -3,14 +3,14 @@ title: Тип ресурса iosVppEBook
 description: Класс, содержащий свойства электронной книги VPP для iOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5aa2323f33f58d73b21d31b1702f225d8835dc93
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f3ad21960a331de67542208082a615464c027db0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403182"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966578"
 ---
 # <a name="iosvppebook-resource-type"></a>Тип ресурса iosVppEBook
 
@@ -29,16 +29,16 @@ ms.locfileid: "43403182"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление iosVppEBooks](../api/intune-books-iosvppebook-list.md)|Коллекция [iosVppEBook](../resources/intune-books-iosvppebook.md)|Список свойств и связей объектов [iosVppEBook](../resources/intune-books-iosvppebook.md).|
-|[Получение iosVppEBook](../api/intune-books-iosvppebook-get.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md);|Считывание свойств и связей объекта [iosVppEBook](../resources/intune-books-iosvppebook.md).|
-|[Создание iosVppEBook](../api/intune-books-iosvppebook-create.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md);|Создание объекта [iosVppEBook](../resources/intune-books-iosvppebook.md).|
+|[Получение iosVppEBook](../api/intune-books-iosvppebook-get.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|Считывание свойств и связей объекта [iosVppEBook](../resources/intune-books-iosvppebook.md).|
+|[Создание iosVppEBook](../api/intune-books-iosvppebook-create.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|Создание объекта [iosVppEBook](../resources/intune-books-iosvppebook.md).|
 |[Удаление iosVppEBook](../api/intune-books-iosvppebook-delete.md)|None|Удаление экземпляра [iosVppEBook](../resources/intune-books-iosvppebook.md).|
 |[Обновление iosVppEBook](../api/intune-books-iosvppebook-update.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|Обновление свойств объекта [iosVppEBook](../resources/intune-books-iosvppebook.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
-|displayName|Строка|Имя электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
+|id|String|Ключ объекта. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
+|displayName|String|Имя электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |description|String|Описание. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |publisher|String|Издатель. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
@@ -48,21 +48,21 @@ ms.locfileid: "43403182"
 |informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |privacyInformationUrl|String|URL-адрес заявления о конфиденциальности. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |vppTokenId|Guid|Идентификатор токена VPP.|
-|appleId|Строка|Идентификатор Apple ID, связанный с токеном VPP.|
+|appleId|String|Идентификатор Apple ID, связанный с токеном VPP.|
 |vppOrganizationName|String|Название организации для токена VPP.|
 |genres|Коллекция String|Жанры.|
 |language|String|Язык.|
 |seller|String|Продавец.|
 |totalLicenseCount|Int32|Общее число лицензий.|
 |usedLicenseCount|Int32|Число используемых лицензий.|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [манажедебуккатегори](../resources/intune-books-managedebookcategory.md)|Список категорий для этой электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
-|assignments|Коллекция [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|Список назначений для этой электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
-|installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Сводка по установке мобильного приложения. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
+|assignments|Коллекция [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|Список назначений для этой электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
+|installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Сводка по установке мобильного приложения. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |deviceStates|Коллекция [deviceInstallState](../resources/intune-books-deviceinstallstate.md)|Список состояний установки для этой электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |userStateSummary|Коллекция [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md)|Список состояний установки для этой электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 
@@ -106,6 +106,9 @@ ms.locfileid: "43403182"
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cda405c9f63d52ee9741dd679e582c7fdfcd44df
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: a709c1c4ef47273f9495fc3582bb27e7de7ddbb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744014"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967522"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -26,7 +26,7 @@ ms.locfileid: "44744014"
 - Управление устройствами  
 - Endpoint Protection  
 - Профили регистрации  
-- Notifications  
+- Уведомления  
 - Политики, параметры и сведения о входящей миграции  
 - Политики управления доступом на основе ролей (RBAC)  
 - Партнеры удаленного помощника  
@@ -37,7 +37,7 @@ ms.locfileid: "44744014"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение объекта deviceManagement](../api/intune-shared-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md);|Чтение свойств и связей объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).|
+|[Получение объекта deviceManagement](../api/intune-shared-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Чтение свойств и связей объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).|
 |[Обновление объекта deviceManagement](../api/intune-shared-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Обновление свойств объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).|
 |**Адаптация**|
 |[Функция verifyWindowsEnrollmentAutoDiscovery](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|Boolean|Н/Д|
@@ -122,6 +122,8 @@ ms.locfileid: "44744014"
   "settings": {"@odata.type": "microsoft.graph.deviceManagementSettings"}
 }
 ```
+
+
 
 
 

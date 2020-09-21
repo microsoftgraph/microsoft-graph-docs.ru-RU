@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8476048a1bacdf6c3246880467cb9d476e110a4d
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 984a4cec88f8bea6e88be04dfe04807ab15f591d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384747"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967466"
 ---
 # <a name="iprange-resource-type"></a>Тип ресурса ipRange
 
@@ -49,3 +49,4 @@ ms.locfileid: "45384747"
   "section": "documentation",
   "tocPath": ""
 }-->
+

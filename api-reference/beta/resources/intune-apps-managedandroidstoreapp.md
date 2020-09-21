@@ -3,14 +3,14 @@ title: Тип ресурса managedAndroidStoreApp
 description: Содержит свойства, в том числе унаследованные, для приложений из магазина Android, которыми вы можете управлять с помощью политики защиты приложений Intune.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b297945c0e201937afbddb30d2c2cf7882e664fa
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 9971d4bedf46a9816970ef208ed87526a30c36f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792263"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966746"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>Тип ресурса managedAndroidStoreApp
 
@@ -55,6 +55,8 @@ ms.locfileid: "46792263"
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |appAvailability|[манажедаппаваилабилити](../resources/intune-apps-managedappavailability.md)|Доступность приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
 |version|String|Версия приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md).|
 |packageId|String|ИД пакета приложения.|
@@ -69,7 +71,7 @@ ms.locfileid: "46792263"
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Список отношений для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Набор прямых отношений для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -106,6 +108,8 @@ ms.locfileid: "46792263"
     "String"
   ],
   "dependentAppCount": 1024,
+  "supersedingAppCount": 1024,
+  "supersededAppCount": 1024,
   "appAvailability": "String",
   "version": "String",
   "packageId": "String",
@@ -129,6 +133,9 @@ ms.locfileid: "46792263"
   }
 }
 ```
+
+
+
 
 
 

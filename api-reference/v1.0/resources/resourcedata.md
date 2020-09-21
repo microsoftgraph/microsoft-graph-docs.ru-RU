@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: c9da2041a6d982556ec909375ff46b3a9b3e2e2d
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 29fb3d93db939ec077444c367d74aadc7cd751fb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967228"
 ---
 # <a name="resourcedata-resource-type"></a>Тип ресурса resourceData
 
@@ -35,7 +35,7 @@ ms.locfileid: "46598405"
 | @odata.etag | строка | @odata.etag — HTTP-тег сущности, представляющий версию объекта. |
 | id | строка | Идентификатор объекта. |
 
-> **Примечание:** `id`Значение, указанное в **resourceData** , является допустимым во время создания уведомления об изменении. Некоторые действия, например перемещение сообщения в другую папку, могут привести к `id` недействительности при обработке уведомления об изменении.
+> **Примечание:** `id` Значение, указанное в **resourceData** , является допустимым во время создания уведомления об изменении. Некоторые действия, например перемещение сообщения в другую папку, могут привести к `id` недействительности при обработке уведомления об изменении.
 
 ## <a name="relationships"></a>Связи
 
@@ -73,3 +73,4 @@ ms.locfileid: "46598405"
   "suppressions": []
 }
 -->
+

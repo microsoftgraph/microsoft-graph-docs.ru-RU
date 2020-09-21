@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c36a0cd83afe81ce204d99afe6595e57c692569d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1430b81ddbd9fe67902de91567b17eb1294498cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508676"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967739"
 ---
 # <a name="list-charts"></a>Список диаграмм
 
@@ -43,7 +43,7 @@ GET /workbook/worksheets/{id|name}/charts
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукчарт](../resources/chart.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -111,3 +111,4 @@ Content-length: 93
   "suppressions": [
   ]
 }-->
+
