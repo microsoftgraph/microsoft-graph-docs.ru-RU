@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b810e83e1444312ede43933edaf2d29d76ab9b07
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 7e7640b781c15f19d9ee15883d715c99243cbd5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154096"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989768"
 ---
 # <a name="create-workforceintegration"></a>Создание Воркфорцеинтегратион
 
@@ -152,9 +152,9 @@ Content-type: application/json
 }
 
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 ```
 HTTP/1.1 200 OK
 {
@@ -227,3 +227,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

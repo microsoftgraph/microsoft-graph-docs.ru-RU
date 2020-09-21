@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 41b112da0ce62765432112dabbf999106b33379e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 58c05dadf30399ef704980b3bbbf24ac74330f6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522906"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058102"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Тип ресурсов locationConstraintItem
 
@@ -22,7 +22,7 @@ ms.locfileid: "42522906"
 
 Тип, производный от [location](location.md).
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -73,3 +73,5 @@ ms.locfileid: "42522906"
   "suppressions": []
 }
 -->
+
+

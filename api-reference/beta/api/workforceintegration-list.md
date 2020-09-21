@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7854a2bded54d8480e9423fb8e7e6d6548455430
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 5d64b4b4dcaf2de295924faa38e2c026d547daf3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42451287"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989787"
 ---
 # <a name="list-workforceintegrations"></a>Список Воркфорцеинтегратионс
 
@@ -40,7 +40,7 @@ GET /teamwork/workforceIntegrations
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,7 +48,7 @@ GET /teamwork/workforceIntegrations
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -129,3 +129,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

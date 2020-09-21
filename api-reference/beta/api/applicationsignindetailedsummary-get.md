@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a18a2742c49db6a57bf5a710c3f7d5563c329393
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: c209b42d9b18ec0fc935c588a42e98a9c62c42e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107014"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996720"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>Получение Аппликатионсигниндетаиледсуммари
 
@@ -48,7 +48,7 @@ GET /reports/applicationSignInDetailedSummary/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [аппликатионсигниндетаиледсуммари](../resources/applicationsignindetailedsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -118,3 +118,5 @@ Content-length: 295
   "suppressions": [
   ]
 }-->
+
+

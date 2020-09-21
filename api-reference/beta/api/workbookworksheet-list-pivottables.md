@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ea40eb2347bc59572c3144e89f056ea6bb17c244
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c75056c9e033da23ad1a985987a05146c4822ade
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451303"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989796"
 ---
 # <a name="list-pivottables"></a>Получение списка pivotTables
 
@@ -47,7 +47,7 @@ GET /me/drive/root/workbook/worksheets/{id}/pivotTables
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [workbookPivotTable](../resources/workbookpivottable.md) в теле отклика.
 ## <a name="example"></a>Пример
@@ -109,3 +109,5 @@ Content-length: 83
   "suppressions": [
   ]
 }-->
+
+

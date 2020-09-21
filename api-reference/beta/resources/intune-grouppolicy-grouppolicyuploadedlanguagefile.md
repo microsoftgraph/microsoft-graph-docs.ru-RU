@@ -3,14 +3,14 @@ title: Тип ресурса Граупполициуплоадедлангуа�
 description: Сущность представляет XML-файл ADML (язык административного шаблона), переданный администратором.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3b2a4fd4ab035dd072af8db0cd6897bfd7d9153
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f429101601fddb23d499553e9c0bb848756bc538
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43385904"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030607"
 ---
 # <a name="grouppolicyuploadedlanguagefile-resource-type"></a>Тип ресурса Граупполициуплоадедлангуажефиле
 
@@ -31,7 +31,7 @@ ms.locfileid: "43385904"
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,6 +51,9 @@ ms.locfileid: "43385904"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

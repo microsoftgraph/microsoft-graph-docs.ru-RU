@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: Аддпассворд'
-description: Добавьте надежный пароль для servicePrincipal.
+description: Добавление стойкого пароля объекту servicePrincipal.
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 673a2fea2c198d961832a34733b028666104a6a3
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 2a9fff1b34a97e4281279da7aeed9eab581b356d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291078"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044688"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal: Аддпассворд
 
@@ -45,15 +45,15 @@ POST /servicePrincipals/{id}/addPassword
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите необязательный `passwordCredential` объект со следующими свойствами.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | String | Понятное имя для пароля. Необязательное свойство. |
+| displayName | Строка | Понятное имя для пароля. Необязательное свойство. |
 | endDateTime | DateTimeOffset | Дата и время истечения срока действия пароля, представленного в формате ISO 8601, и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательное свойство. Значение по умолчанию — "startDateTime + 2 года". |
-| startDateTime | DateTimeOffset | Дата и время, когда пароль становится действительным. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательное свойство. Значение по умолчанию — "Now". |
+| startDateTime | DateTimeOffset | Дата и время, когда пароль становится действительным. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательное свойство. Значение по умолчанию — "Now". |
 
 ## <a name="response"></a>Отклик
 
@@ -124,3 +124,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

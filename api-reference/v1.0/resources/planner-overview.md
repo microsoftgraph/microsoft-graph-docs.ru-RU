@@ -1,26 +1,26 @@
 ---
 title: Использование REST API Планировщика
-description: API Планировщика в Microsoft Graph можно использовать для создания задач и назначения их пользователям в группе Office 365.
+description: API Планировщика в Microsoft Graph можно использовать для создания задач и назначения их пользователям в группе Microsoft 365.
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: c2326aef5ba443cad8668669f189d97ca2da65ae
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: ae72d196c5d27160c94e0ba0d2309b43ece06bb5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037642"
 ---
 # <a name="use-the-planner-rest-api"></a>Использование REST API Планировщика
 
-API Планировщика в Microsoft Graph можно использовать для создания задач и назначения их пользователям в группе Office 365.
+API Планировщика в Microsoft Graph можно использовать для создания задач и назначения их пользователям в группе Microsoft 365.
 
-Прежде чем начинать работу с API Планировщика, следует понять, как основные объекты API Планировщика связаны друг с другом и группами Office 365.
+Прежде чем начинать работу с API Планировщика, следует понять, как основные объекты API Планировщика связаны друг с другом и группами Microsoft 365.
 
-## <a name="office-365-groups"></a>Группы Office 365
+## <a name="microsoft-365-groups"></a>Группы Microsoft 365
 
-Группы Office 365 являются владельцами планов в API Планировщика.
+Группы Microsoft 365 являются владельцами планов в API Планировщика.
 Чтобы [получить планы, принадлежащие группе](../api/plannergroup-list-plans.md), выполните HTTP-запрос, описанный ниже.
 
 ``` http
@@ -107,4 +107,8 @@ API Планировщика возвращает код состояния 403,
 
 Во всех запросах `POST`, `PATCH` и `DELETE` API Планировщика заголовок `If-Match` необходимо указывать с последним известным значением тега etag ресурса.
 Код состояния 412 также может быть возвращен, если значение тега etag, указанное в запросе, больше не соответствует версии ресурса в службе. В этом случае клиентам следует прочитать ресурс еще раз и получить новый тег etag.
+
+## <a name="whats-new"></a>Новые возможности
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
+
 

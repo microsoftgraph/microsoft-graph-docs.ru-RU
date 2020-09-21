@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8322f218a6dac2003a2212d4ce76c652a0ef56c1
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 8e290ae6a31b927acce27a691fad39bf00a00985
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845851"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078054"
 ---
 # <a name="attributemappingsource-resource-type"></a>Тип ресурса Аттрибутемаппингсаурце
 
@@ -129,3 +129,5 @@ ms.locfileid: "44845851"
   "suppressions": []
 }
 -->
+
+

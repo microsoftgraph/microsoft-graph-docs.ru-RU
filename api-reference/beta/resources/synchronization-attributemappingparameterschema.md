@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 12f1a38340b4c341d65930000c22a6cd2daeb567
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 32710c5411f054ad096bdd293a2f7d46e89a6944
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219174"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078086"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>Тип ресурса Аттрибутемаппингпараметерсчема
 
@@ -26,7 +26,7 @@ ms.locfileid: "43219174"
 |:---------------------------|:-------------------------|:---------------|
 |алловмултиплеоккурренцес    |Boolean                   |Данный параметр может быть указан несколько раз (например, с несколькими входными строками в `Concatenate(string,string,...)` функции). |
 |name                        |String                    |Имя параметра. |
-|Обязательный                    |Boolean                   |`true`значение, если параметр является обязательным; в `false`противном случае. |
+|Обязательный                    |Boolean                   |`true` значение, если параметр является обязательным; в противном случае `false` . |
 |type                        |String                    |Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. Значение по умолчанию: `String`.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -63,3 +63,5 @@ ms.locfileid: "43219174"
   "suppressions": []
 }
 -->
+
+

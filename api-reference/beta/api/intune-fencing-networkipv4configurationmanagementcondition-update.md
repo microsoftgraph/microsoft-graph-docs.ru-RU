@@ -3,14 +3,14 @@ title: Обновление networkIPv4ConfigurationManagementCondition
 description: Обновление свойств объекта networkIPv4ConfigurationManagementCondition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01ade0f662fc909ab8370cc17da5db239ba13893
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9ae958024dce4fcbf5444e76b191835a671d022b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384450"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970000"
 ---
 # <a name="update-networkipv4configurationmanagementcondition"></a>Обновление networkIPv4ConfigurationManagementCondition
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,7 +56,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 |uniqueName|String|Уникальное имя условия управления. Используется в выражениях условия управления. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
-|displayName|Строка|Имя условия управления, определенное администратором. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|displayName|String|Имя условия управления, определенное администратором. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 |description|String|Описание условия управления, заданное администратором. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|Время создания условия управления. Созданная сторона службы. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
@@ -65,12 +65,12 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |ipV4Prefix|String|Подсеть IPv4, к которой необходимо подключиться. Например, 10.0.0.0/8|
 |ipV4Gateway|String|IPv4-адрес шлюза. Например, 10.0.0.0|
 |ipV4DHCPServer|String|IPv4-адрес DHCP-сервера для адаптера.|
-|ipV4DNSServerList|Коллекция объектов string|DNS-серверы IPv4, настроенные для адаптера.|
-|днссуффикслист|Коллекция объектов string|Допустимые DNS-суффиксы для текущей сети. Например, seattle.contoso.com|
+|ipV4DNSServerList|Коллекция String|DNS-серверы IPv4, настроенные для адаптера.|
+|днссуффикслист|Коллекция String|Допустимые DNS-суффиксы для текущей сети. Например, seattle.contoso.com|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -133,6 +133,9 @@ Content-Length: 697
   ]
 }
 ```
+
+
+
 
 
 

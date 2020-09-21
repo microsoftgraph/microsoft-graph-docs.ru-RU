@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 04ecd6062dfbcba3ff885e9734a6802440866725
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cc5cbf0f96d3c9199ecd9b622d9724ec10dd472e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448296"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037656"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -33,12 +33,14 @@ ms.locfileid: "43448296"
 - [Объект назначения группы](intune-shared-groupassignmenttarget.md)
 - [Намерение установки](intune-shared-installintent.md)
 - [Содержимое MIME](intune-shared-mimecontent.md)
-- [Report](intune-shared-report.md)
+- [Отчет](intune-shared-report.md)
 - [Корневая папка отчета](intune-shared-reportroot.md)
 - [Сохраненные параметры создания состояния пользовательского интерфейса](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
-- [User](intune-shared-user.md)
+- [Пользователь](intune-shared-user.md)
 - [Тип учетной записи токена VPP](intune-shared-vpptokenaccounttype.md)
+
+
 
 
 

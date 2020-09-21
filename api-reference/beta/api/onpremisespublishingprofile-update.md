@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 83f4023b350357512c0c976ad63cf9c86cffc9c1
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: dc3e664ffa65b4dc8f1a4d003dade424c9d154e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199787"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010744"
 ---
 # <a name="update-onpremisespublishingprofile"></a>Обновление Онпремисеспублишингпрофиле
 
@@ -132,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -186,3 +186,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: Тип ресурса iosNotificationSettings
 description: Элемент, описывающий параметры уведомлений.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a14233ef8f74aa0aeeb7e21be3fc819aec985a4d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bfe71a68abd7ca55da6bb92654d8af0750a1ef22
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440250"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003719"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Тип ресурса iosNotificationSettings
 
@@ -59,6 +59,9 @@ ms.locfileid: "43440250"
   "soundsEnabled": true
 }
 ```
+
+
+
 
 
 

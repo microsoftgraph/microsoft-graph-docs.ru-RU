@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7f66bb02a1cb38757e18c31004c67dea7bea7b37
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 54407dcbc45d2a14011ec50aba81bc7ddd759383
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44990292"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989869"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>Перечисление объектов unifiedRoleAssignmentMultiple
 
@@ -26,8 +26,8 @@ ms.locfileid: "44990292"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированное (рабочая или учебная учетная запись) | DeviceManagementRBAC. Read. ALL, DeviceManagementRBAC. ReadWrite. ALL |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC. Read. ALL, DeviceManagementRBAC. ReadWrite. ALL |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | DeviceManagementRBAC. Read. ALL, DeviceManagementRBAC. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -39,7 +39,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Вы можете отфильтровать `roleDefinitionId` по `principalId` свойствам или. `roleDefinitionId`Свойство может быть идентификатором объекта Role или шаблоном роли. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Вы можете отфильтровать `roleDefinitionId` по `principalId` свойствам или. `roleDefinitionId`Свойство может быть идентификатором объекта Role или шаблоном роли. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -47,7 +47,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 |:---- |:----------- |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -115,3 +115,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

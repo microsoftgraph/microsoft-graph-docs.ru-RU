@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bba1be37d3a654fa6d2bd64cc443cde76d844a60
-ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
+ms.openlocfilehash: 6e0204fea1a3291bbca4c942a03e5364fc5b4a47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44491646"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983307"
 ---
 # <a name="delete-channel"></a>Удаление канала
 
@@ -31,7 +31,7 @@ ms.locfileid: "44491646"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Channel. Delete. ALL, Channel. Delete. Group *, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
 
-> **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом](https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

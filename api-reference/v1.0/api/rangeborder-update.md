@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3cce44c14eb9253bc391014a555966e1f4c50a2c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 873f5058b7e56bd825a174b760320fe19ecb1373
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051501"
 ---
 # <a name="update-rangeborder"></a>Обновление объекта RangeBorder
 
@@ -44,11 +44,11 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideInd
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|color|строка|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
-|style|string|Одна из констант стиля линии, определяющая стиль линии границы. Возможные `None`значения:, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`,. `SlantDashDot`|
+|color|string|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
+|style|string|Одна из констант стиля линии, определяющая стиль линии границы. Возможные значения:,, `None` `Continuous` ,, `Dash` `DashDot` `DashDotDot` , `Dot` , `Double` , `SlantDashDot` .|
 |weight|string|Определяет толщину границы вокруг диапазона. Допустимые значения: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукранжебордер](../resources/rangeborder.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -122,3 +122,4 @@ Content-length: 136
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ff8bf2197232110fea356f951d62aa5a511e3f50
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 216ebcdf7bd22cac6724c7e7b86132bb9784f159
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154110"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989789"
 ---
 # <a name="delete-workforceintegration"></a>Удаление Воркфорцеинтегратион
 
@@ -44,7 +44,7 @@ DELETE /teamwork/workforceIntegrations/{workforceIntegrationId}
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

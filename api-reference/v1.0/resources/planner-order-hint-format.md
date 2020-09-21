@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 585c8d34a90cf8f567014b763ebeeb9b296c7aae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c86be5481f1642833d660f9889c00ea7025fa4e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534045"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037649"
 ---
 # <a name="using-order-hints-in-planner"></a>Использование подсказок порядка в Планировщике
 
@@ -76,6 +76,7 @@ ms.locfileid: "42534045"
 1. Элемент 2 (подсказка порядка: `'  !!'`).
 2. Элемент 1 (подсказка порядка: `' !'`).
 3. Элемент 3 (подсказка порядка: `' ! !'`).
+
 
 
 

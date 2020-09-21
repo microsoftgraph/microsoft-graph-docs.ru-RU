@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9f14a39442a5119a9965753669c5837a46f8fc88
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 2ff7e5321dce2d11f82332ccabc5b52e5a871ea0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991812"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989817"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>Обновление unifiedRoleAssignmentMultiple
 
@@ -114,3 +114,5 @@ HTTP/1.1 204 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 57d83a97ce3a62d3f83c76310f183e1a53306815
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 177f51fa5026d6c6cc29f563381f7e41484a618e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510559"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051489"
 ---
 # <a name="list-rangebordercollection"></a>Список RangeBorderCollection
 
@@ -45,7 +45,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукранжебордер](../resources/rangeborder.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -115,3 +115,4 @@ Content-length: 185
   "suppressions": [
   ]
 }-->
+

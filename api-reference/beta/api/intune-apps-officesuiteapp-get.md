@@ -3,14 +3,14 @@ title: Получение officeSuiteApp
 description: Чтение свойств и связей объекта officeSuiteApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ceabdbab0d69b45d800c8292c9fb1528f834a2b7
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: fbdac2a6ab7b2fca28c29c657ad317c701ce3728
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793292"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976937"
 ---
 # <a name="get-officesuiteapp"></a>Получение officeSuiteApp
 
@@ -42,13 +42,13 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallSt
 GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1925
+Content-Length: 1986
 
 {
   "value": {
@@ -99,6 +99,8 @@ Content-Length: 1925
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "autoAcceptEula": true,
     "productIds": [
       "o365BusinessRetail"
@@ -135,6 +137,9 @@ Content-Length: 1925
   }
 }
 ```
+
+
+
 
 
 

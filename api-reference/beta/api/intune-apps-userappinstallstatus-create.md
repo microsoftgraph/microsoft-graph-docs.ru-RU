@@ -3,14 +3,14 @@ title: Создание Усераппинсталлстатус
 description: Создание нового объекта Усераппинсталлстатус.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 672cf1f7acd6e93ac129ef405953ccdd2ce8c863
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1b1a0eef5025431a2dd9550cc45a009a89abd190
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403964"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976846"
 ---
 # <a name="create-userappinstallstatus"></a>Создание Усераппинсталлстатус
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userName|String|Имя пользователя.|
 |userPrincipalName|String|Имя участника пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
@@ -101,6 +101,9 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
+
+
+
 
 
 

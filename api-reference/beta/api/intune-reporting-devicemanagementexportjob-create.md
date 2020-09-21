@@ -3,14 +3,14 @@ title: Создание Девицеманажементекспортжоб
 description: Создание нового объекта Девицеманажементекспортжоб.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dfb92ee7a0b0def4a266b3778397b42f07e0075e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9d8826b2e6a352f3af68064024753c36928d1f6c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43377278"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010754"
 ---
 # <a name="create-devicemanagementexportjob"></a>Создание Девицеманажементекспортжоб
 
@@ -43,7 +43,7 @@ POST /deviceManagement/reports/exportJobs
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,7 +56,7 @@ POST /deviceManagement/reports/exportJobs
 |id|String|Уникальный идентификатор для этой сущности|
 |репортнаме|String|Имя отчета|
 |filter|String|Фильтры, примененные к отчету|
-|select|Коллекция объектов string|Столбцы, выбранные из отчета|
+|select|Коллекция String|Столбцы, выбранные из отчета|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат экспортированного отчета. Возможные значения: `csv`, `pdf`.|
 |снапшотид|String|Моментальный снимок является идентифицируемым подмножеством набора данных, представленным Репортнаме. Здесь можно использовать идентификатор sessionId или Качедрепортконфигуратион. Если указан идентификатор sessionId, фильтрация, выбор и OrderBy применяются к данным, представленным в sessionId. Filter, SELECT и OrderBy не могут указываться вместе с идентификатором Качедрепортконфигуратион.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние задания экспорта. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
@@ -66,7 +66,7 @@ POST /deviceManagement/reports/exportJobs
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементекспортжоб](../resources/intune-reporting-devicemanagementexportjob.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -117,6 +117,9 @@ Content-Length: 453
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
+
+
+
 
 
 

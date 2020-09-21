@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fbf38412fc6442ffcc0a7037e2a1dcde30a35469
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 21c350a3ed5b1ca11257c7fc5e2fe53fed785920
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996677"
 ---
 # <a name="get-applicationtemplate"></a>Получение Аппликатионтемплате
 
@@ -42,9 +42,9 @@ GET /applicationTemplates/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-С помощью параметра `$select` запроса можно указать только те свойства, которые необходимы для достижения максимальной производительности. Свойство **id** возвращается всегда. 
+`$select`С помощью параметра запроса можно указать только те свойства, которые необходимы для достижения максимальной производительности. Свойство **id** возвращается всегда. 
 
-Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -56,7 +56,7 @@ GET /applicationTemplates/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [аппликатионтемплате](../resources/applicationtemplate.md) в тексте отклика.
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -128,3 +128,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

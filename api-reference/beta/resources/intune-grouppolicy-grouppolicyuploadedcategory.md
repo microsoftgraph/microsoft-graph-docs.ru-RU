@@ -3,14 +3,14 @@ title: Тип ресурса Граупполициуплоадедкатего�
 description: Сущность Category сохраняет категорию определения групповой политики
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2c6848a8d505980243c721ba0dabcc19f8e56ed6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 51d9abab7ae3a6e85a1e13e3fb52854f4702ca31
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442740"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030684"
 ---
 # <a name="grouppolicyuploadedcategory-resource-type"></a>Тип ресурса Граупполициуплоадедкатегори
 
@@ -37,15 +37,15 @@ ms.locfileid: "43442740"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Идентификатор строки отображаемого имени категории, унаследованной от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
+|displayName|String|Идентификатор строки отображаемого имени категории, унаследованной от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |Корень|Boolean|Определяет, является ли категория корневой категорией, унаследованной от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |id|String|Ключ объекта. Наследуется от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|верхнего|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|Родительская категория, унаследованная от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
+|родитель|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|Родительская категория, унаследованная от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |children|Коллекция [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|Категории дочерних элементов, наследуемых от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |определения|Коллекция [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Непосредственный дочерний элемент Граупполицидефинитион в категории, унаследованной от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |дефинитионфиле|[граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Идентификатор файла определения, из которого получена Категория, унаследованная из [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
@@ -67,6 +67,9 @@ ms.locfileid: "43442740"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

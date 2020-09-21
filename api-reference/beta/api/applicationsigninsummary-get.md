@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c7b085b8142c8f2bd2a2a0b0f502178a7179a398
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: cbc72087d34473345d359ba6b57653226ea03e64
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107047"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996684"
 ---
 # <a name="get-applicationsigninsummary"></a>Получение Аппликатионсигнинсуммари
 
@@ -39,7 +39,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 
 | Параметр | Описание |
 |:----------|:----------|
-| period | Либо `D7` (последние семь дней), `D30` либо (последние 30 дней); другие значения создают ошибки. |
+| period | Либо `D7` (последние семь дней), либо `D30` (последние 30 дней), другие значения создают ошибки. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -49,7 +49,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [аппликатионсигнинсуммари](../resources/applicationsigninsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание:** Объект Response, показанный здесь, ммигхт должен быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -113,3 +113,5 @@ Content-length: 157
   "suppressions": [
   ]
 }-->
+
+

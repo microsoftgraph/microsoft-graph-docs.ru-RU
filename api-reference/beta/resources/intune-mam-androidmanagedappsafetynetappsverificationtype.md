@@ -3,14 +3,14 @@ title: тип перечисления Андроидманажедаппсаф�
 description: Для управляемого приложения требуется, чтобы администратор применяет SafetyNet аттестации устройств Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f0524f820615a1662a0edf58e3f3066da5147f34
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c720d2fdc851bb0f2c48e7d5e35bcfa63e9ee653
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43385731"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030572"
 ---
 # <a name="androidmanagedappsafetynetappsverificationtype-enum-type"></a>тип перечисления Андроидманажедаппсафетинетаппсверификатионтипе
 
@@ -26,7 +26,10 @@ ms.locfileid: "43385731"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|нет набора требований|
-|включено|1,1|требовать, чтобы на устройстве Android была включена проверка приложений SafetyNet|
+|включено|1 |требовать, чтобы на устройстве Android была включена проверка приложений SafetyNet|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Функция Жетманажементкондитионсфорпла
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 12056b8a1bde39ebd77d8ab4a08fab125d2833a5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8831f5e184708807e4e017b21be2c442b61c6c4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441469"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970035"
 ---
 # <a name="getmanagementconditionsforplatform-function"></a>Функция Жетманажементкондитионсфорплатформ
 
@@ -44,7 +44,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,12 +53,12 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|platform|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Н/Д|
+|платформа|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [манажементкондитион](../resources/intune-fencing-managementcondition.md) в тексте отклика.
+В случае успеха эта функция возвращает `200 OK` код отклика и коллекцию [манажементкондитион](../resources/intune-fencing-managementcondition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -93,6 +93,9 @@ Content-Length: 504
   ]
 }
 ```
+
+
+
 
 
 

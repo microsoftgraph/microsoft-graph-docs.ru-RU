@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 326f58cdce239c2a33ac555497f67b0bc0387b71
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
+ms.openlocfilehash: 687e29bdc2668c360a935260a99b2d831f29f1c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038529"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989873"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>Создание unifiedRoleAssignmentMultiple
 
@@ -28,7 +28,7 @@ ms.locfileid: "45038529"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | DeviceManagementRBAC.ReadWrite.All |
+| Для приложений | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -199,3 +199,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
