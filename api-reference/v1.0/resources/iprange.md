@@ -5,26 +5,26 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8476048a1bacdf6c3246880467cb9d476e110a4d
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 984a4cec88f8bea6e88be04dfe04807ab15f591d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384747"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967466"
 ---
-# <a name="iprange-resource-type"></a><span data-ttu-id="5bda3-103">Тип ресурса ipRange</span><span class="sxs-lookup"><span data-stu-id="5bda3-103">ipRange resource type</span></span>
+# <a name="iprange-resource-type"></a><span data-ttu-id="4f33a-103">Тип ресурса ipRange</span><span class="sxs-lookup"><span data-stu-id="4f33a-103">ipRange resource type</span></span>
 
-<span data-ttu-id="5bda3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5bda3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4f33a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4f33a-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="5bda3-105">Базовый класс диапазона IP-адресов для представления диапазонов IPV4-и IPV6-адресов.</span><span class="sxs-lookup"><span data-stu-id="5bda3-105">IP range base class for representing IPV4 and IPV6 address ranges.</span></span>
+<span data-ttu-id="4f33a-105">Базовый класс диапазона IP-адресов для представления диапазонов IPV4-и IPV6-адресов.</span><span class="sxs-lookup"><span data-stu-id="4f33a-105">IP range base class for representing IPV4 and IPV6 address ranges.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5bda3-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="5bda3-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4f33a-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="4f33a-106">Properties</span></span>
 
-<span data-ttu-id="5bda3-107">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="5bda3-107">None.</span></span>
+<span data-ttu-id="4f33a-107">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="4f33a-107">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="5bda3-108">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="5bda3-108">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4f33a-108">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="4f33a-108">JSON representation</span></span>
 
-<span data-ttu-id="5bda3-109">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5bda3-109">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4f33a-109">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4f33a-109">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,3 +49,4 @@ ms.locfileid: "45384747"
   "section": "documentation",
   "tocPath": ""
 }-->
+
