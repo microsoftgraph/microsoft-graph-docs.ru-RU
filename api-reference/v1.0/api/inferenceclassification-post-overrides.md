@@ -5,58 +5,58 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: cccfaa892f7dbfa444ddcba33d20d735ab29bde0
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: f354a70f2425654d19612118445c052d7271bea8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033372"
 ---
-# <a name="create-inferenceclassificationoverride"></a><span data-ttu-id="11ee4-104">Создание объекта inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="11ee4-104">Create inferenceClassificationOverride</span></span>
+# <a name="create-inferenceclassificationoverride"></a><span data-ttu-id="3d992-104">Создание объекта inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="3d992-104">Create inferenceClassificationOverride</span></span>
 
-<span data-ttu-id="11ee4-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="11ee4-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3d992-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3d992-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="11ee4-p102">Создание переопределения для отправителя, определенного адресом SMTP. Последующие сообщения с этого SMTP-адреса всегда будут классифицироваться так, как указано в переопределении.</span><span class="sxs-lookup"><span data-stu-id="11ee4-p102">Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified as specified in the override.</span></span>
+<span data-ttu-id="3d992-p102">Создание переопределения для отправителя, определенного адресом SMTP. Последующие сообщения с этого SMTP-адреса всегда будут классифицироваться так, как указано в переопределении.</span><span class="sxs-lookup"><span data-stu-id="3d992-p102">Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified as specified in the override.</span></span>
 
-<span data-ttu-id="11ee4-108">**Примечание**</span><span class="sxs-lookup"><span data-stu-id="11ee4-108">**Note**</span></span>
+<span data-ttu-id="3d992-108">**Примечание**</span><span class="sxs-lookup"><span data-stu-id="3d992-108">**Note**</span></span>
 
-- <span data-ttu-id="11ee4-109">Если переопределение с таким же SMTP-адресом уже существует, то поля **classifyAs** и **Name** этого переопределения обновляются с использованием предоставленных значений.</span><span class="sxs-lookup"><span data-stu-id="11ee4-109">If an override already exists with the same SMTP address, then the **classifyAs** and **name** fields of that override are updated with the provided values.</span></span>
-- <span data-ttu-id="11ee4-110">Максимальное количество переопределений, поддерживаемых для почтового ящика, — 1000. Они основываются на уникальных SMTP-адресах отправителей.</span><span class="sxs-lookup"><span data-stu-id="11ee4-110">The maximum number of overrides supported for a mailbox is 1000, based on unique sender SMTP addresses.</span></span>
-- <span data-ttu-id="11ee4-111">Операция POST поддерживает создание только одного переопределения в один момент времени.</span><span class="sxs-lookup"><span data-stu-id="11ee4-111">The POST operation supports creating only one override at a time.</span></span>
+- <span data-ttu-id="3d992-109">Если переопределение с таким же SMTP-адресом уже существует, то поля **classifyAs** и **Name** этого переопределения обновляются с использованием предоставленных значений.</span><span class="sxs-lookup"><span data-stu-id="3d992-109">If an override already exists with the same SMTP address, then the **classifyAs** and **name** fields of that override are updated with the provided values.</span></span>
+- <span data-ttu-id="3d992-110">Максимальное количество переопределений, поддерживаемых для почтового ящика, — 1000. Они основываются на уникальных SMTP-адресах отправителей.</span><span class="sxs-lookup"><span data-stu-id="3d992-110">The maximum number of overrides supported for a mailbox is 1000, based on unique sender SMTP addresses.</span></span>
+- <span data-ttu-id="3d992-111">Операция POST поддерживает создание только одного переопределения в один момент времени.</span><span class="sxs-lookup"><span data-stu-id="3d992-111">The POST operation supports creating only one override at a time.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="11ee4-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="11ee4-112">Permissions</span></span>
-<span data-ttu-id="11ee4-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="11ee4-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3d992-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3d992-112">Permissions</span></span>
+<span data-ttu-id="3d992-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3d992-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="11ee4-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="11ee4-115">Permission type</span></span>      | <span data-ttu-id="11ee4-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="11ee4-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3d992-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3d992-115">Permission type</span></span>      | <span data-ttu-id="3d992-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3d992-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="11ee4-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="11ee4-117">Delegated (work or school account)</span></span> | <span data-ttu-id="11ee4-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11ee4-118">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="11ee4-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="11ee4-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="11ee4-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11ee4-120">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="11ee4-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="11ee4-121">Application</span></span> | <span data-ttu-id="11ee4-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11ee4-122">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="3d992-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3d992-117">Delegated (work or school account)</span></span> | <span data-ttu-id="3d992-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3d992-118">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="3d992-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3d992-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3d992-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3d992-120">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="3d992-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3d992-121">Application</span></span> | <span data-ttu-id="3d992-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3d992-122">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="11ee4-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="11ee4-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3d992-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3d992-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/inferenceClassification/overrides
 POST /users/{id}/inferenceClassification/overrides
 ```
-## <a name="request-headers"></a><span data-ttu-id="11ee4-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="11ee4-124">Request headers</span></span>
-| <span data-ttu-id="11ee4-125">Имя</span><span class="sxs-lookup"><span data-stu-id="11ee4-125">Name</span></span>       | <span data-ttu-id="11ee4-126">Тип</span><span class="sxs-lookup"><span data-stu-id="11ee4-126">Type</span></span> | <span data-ttu-id="11ee4-127">Описание</span><span class="sxs-lookup"><span data-stu-id="11ee4-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3d992-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3d992-124">Request headers</span></span>
+| <span data-ttu-id="3d992-125">Имя</span><span class="sxs-lookup"><span data-stu-id="3d992-125">Name</span></span>       | <span data-ttu-id="3d992-126">Тип</span><span class="sxs-lookup"><span data-stu-id="3d992-126">Type</span></span> | <span data-ttu-id="3d992-127">Описание</span><span class="sxs-lookup"><span data-stu-id="3d992-127">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="11ee4-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="11ee4-128">Authorization</span></span>  | <span data-ttu-id="11ee4-129">string</span><span class="sxs-lookup"><span data-stu-id="11ee4-129">string</span></span>  | <span data-ttu-id="11ee4-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="11ee4-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="11ee4-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="11ee4-132">Content-Type</span></span> | <span data-ttu-id="11ee4-133">string</span><span class="sxs-lookup"><span data-stu-id="11ee4-133">string</span></span>  | <span data-ttu-id="11ee4-p105">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="11ee4-p105">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="3d992-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="3d992-128">Authorization</span></span>  | <span data-ttu-id="3d992-129">string</span><span class="sxs-lookup"><span data-stu-id="3d992-129">string</span></span>  | <span data-ttu-id="3d992-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3d992-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3d992-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3d992-132">Content-Type</span></span> | <span data-ttu-id="3d992-133">string</span><span class="sxs-lookup"><span data-stu-id="3d992-133">string</span></span>  | <span data-ttu-id="3d992-p105">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3d992-p105">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="11ee4-136">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="11ee4-136">Request body</span></span>
-<span data-ttu-id="11ee4-137">В тексте запроса предоставьте описание объекта [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="11ee4-137">In the request body, supply a JSON representation of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3d992-136">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3d992-136">Request body</span></span>
+<span data-ttu-id="3d992-137">В тексте запроса предоставьте описание объекта [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3d992-137">In the request body, supply a JSON representation of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="11ee4-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="11ee4-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3d992-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="3d992-138">Response</span></span>
 
-<span data-ttu-id="11ee4-139">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="11ee4-139">If successful, this method returns `201 Created` response code and an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.</span></span>
+<span data-ttu-id="3d992-139">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3d992-139">If successful, this method returns `201 Created` response code and an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="11ee4-140">Пример</span><span class="sxs-lookup"><span data-stu-id="11ee4-140">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="11ee4-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="11ee4-141">Request</span></span>
-<span data-ttu-id="11ee4-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="11ee4-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3d992-140">Пример</span><span class="sxs-lookup"><span data-stu-id="3d992-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3d992-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="3d992-141">Request</span></span>
+<span data-ttu-id="3d992-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3d992-142">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="11ee4-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="11ee4-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3d992-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="3d992-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_inferenceclassificationoverride_from_inferenceclassification"
@@ -73,27 +73,27 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="11ee4-144">C#</span><span class="sxs-lookup"><span data-stu-id="11ee4-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3d992-144">C#</span><span class="sxs-lookup"><span data-stu-id="3d992-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-inferenceclassificationoverride-from-inferenceclassification-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="11ee4-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="11ee4-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3d992-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3d992-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-inferenceclassificationoverride-from-inferenceclassification-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="11ee4-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="11ee4-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3d992-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3d992-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-inferenceclassificationoverride-from-inferenceclassification-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="11ee4-147">Java</span><span class="sxs-lookup"><span data-stu-id="11ee4-147">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="3d992-147">Java</span><span class="sxs-lookup"><span data-stu-id="3d992-147">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-inferenceclassificationoverride-from-inferenceclassification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="11ee4-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="11ee4-148">Response</span></span>
-<span data-ttu-id="11ee4-p106">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="11ee4-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="3d992-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="3d992-148">Response</span></span>
+<span data-ttu-id="3d992-p106">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3d992-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -124,3 +124,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

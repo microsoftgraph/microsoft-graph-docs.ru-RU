@@ -5,33 +5,33 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 884c39273d8d474a228cd8f4a8f2b321950e8caf
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 7c32f3bc22d2357c0eca88e6f693cd958a6dd5ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217551"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013456"
 ---
-# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="97514-103">Тип ресурса Синчронизатионеррор</span><span class="sxs-lookup"><span data-stu-id="97514-103">synchronizationError resource type</span></span>
+# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="80f5a-103">Тип ресурса Синчронизатионеррор</span><span class="sxs-lookup"><span data-stu-id="80f5a-103">synchronizationError resource type</span></span>
 
-<span data-ttu-id="97514-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="97514-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="80f5a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="80f5a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="97514-105">Представляет сообщение об ошибке, возникшей во время процесса синхронизации.</span><span class="sxs-lookup"><span data-stu-id="97514-105">Represents an error that occurred during the synchronization process.</span></span>
+<span data-ttu-id="80f5a-105">Представляет сообщение об ошибке, возникшей во время процесса синхронизации.</span><span class="sxs-lookup"><span data-stu-id="80f5a-105">Represents an error that occurred during the synchronization process.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="97514-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="97514-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="80f5a-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="80f5a-106">Properties</span></span>
 
 <!-- Add descriptions for the properties. -->
-| <span data-ttu-id="97514-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="97514-107">Property</span></span>     | <span data-ttu-id="97514-108">Тип</span><span class="sxs-lookup"><span data-stu-id="97514-108">Type</span></span>   |<span data-ttu-id="97514-109">Описание</span><span class="sxs-lookup"><span data-stu-id="97514-109">Description</span></span>|
+| <span data-ttu-id="80f5a-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="80f5a-107">Property</span></span>     | <span data-ttu-id="80f5a-108">Тип</span><span class="sxs-lookup"><span data-stu-id="80f5a-108">Type</span></span>   |<span data-ttu-id="80f5a-109">Описание</span><span class="sxs-lookup"><span data-stu-id="80f5a-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="97514-110">code</span><span class="sxs-lookup"><span data-stu-id="97514-110">code</span></span>|<span data-ttu-id="97514-111">String</span><span class="sxs-lookup"><span data-stu-id="97514-111">String</span></span>||
-|<span data-ttu-id="97514-112">message</span><span class="sxs-lookup"><span data-stu-id="97514-112">message</span></span>|<span data-ttu-id="97514-113">String</span><span class="sxs-lookup"><span data-stu-id="97514-113">String</span></span>||
-|<span data-ttu-id="97514-114">тенантактионабле</span><span class="sxs-lookup"><span data-stu-id="97514-114">tenantActionable</span></span>|<span data-ttu-id="97514-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="97514-115">Boolean</span></span>||
+|<span data-ttu-id="80f5a-110">code</span><span class="sxs-lookup"><span data-stu-id="80f5a-110">code</span></span>|<span data-ttu-id="80f5a-111">String</span><span class="sxs-lookup"><span data-stu-id="80f5a-111">String</span></span>||
+|<span data-ttu-id="80f5a-112">message</span><span class="sxs-lookup"><span data-stu-id="80f5a-112">message</span></span>|<span data-ttu-id="80f5a-113">String</span><span class="sxs-lookup"><span data-stu-id="80f5a-113">String</span></span>||
+|<span data-ttu-id="80f5a-114">тенантактионабле</span><span class="sxs-lookup"><span data-stu-id="80f5a-114">tenantActionable</span></span>|<span data-ttu-id="80f5a-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="80f5a-115">Boolean</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="97514-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="97514-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="80f5a-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="80f5a-116">JSON representation</span></span>
 
-<span data-ttu-id="97514-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="97514-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="80f5a-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="80f5a-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -62,3 +62,5 @@ ms.locfileid: "43217551"
   "suppressions": []
 }
 -->
+
+
