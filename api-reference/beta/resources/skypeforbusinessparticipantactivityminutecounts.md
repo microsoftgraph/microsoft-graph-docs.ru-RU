@@ -5,29 +5,29 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 6096c14d1c657350890c55ecfaf39544ea705bc9
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 00b64aa0dfde4ba43f6cf351ce05bc761dcd2005
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808545"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063865"
 ---
-# <a name="skypeforbusinessparticipantactivityminutecounts-resource-type"></a><span data-ttu-id="5cd03-103">Тип ресурса СкипефорбусинесспартиЦипантактивитиминутекаунтс</span><span class="sxs-lookup"><span data-stu-id="5cd03-103">skypeForBusinessParticipantActivityMinuteCounts resource type</span></span>
+# <a name="skypeforbusinessparticipantactivityminutecounts-resource-type"></a><span data-ttu-id="5d7ab-103">Тип ресурса СкипефорбусинесспартиЦипантактивитиминутекаунтс</span><span class="sxs-lookup"><span data-stu-id="5d7ab-103">skypeForBusinessParticipantActivityMinuteCounts resource type</span></span>
 
-<span data-ttu-id="5cd03-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5cd03-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5d7ab-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5d7ab-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5cd03-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="5cd03-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5d7ab-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="5d7ab-105">Properties</span></span>
 
-| <span data-ttu-id="5cd03-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="5cd03-106">Property</span></span>          | <span data-ttu-id="5cd03-107">Тип</span><span class="sxs-lookup"><span data-stu-id="5cd03-107">Type</span></span>   |
+| <span data-ttu-id="5d7ab-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="5d7ab-106">Property</span></span>          | <span data-ttu-id="5d7ab-107">Тип</span><span class="sxs-lookup"><span data-stu-id="5d7ab-107">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="5cd03-108">Audiovideohttp</span><span class="sxs-lookup"><span data-stu-id="5cd03-108">audioVideo</span></span>        | <span data-ttu-id="5cd03-109">Int64</span><span class="sxs-lookup"><span data-stu-id="5cd03-109">Int64</span></span>  |
-| <span data-ttu-id="5cd03-110">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="5cd03-110">reportRefreshDate</span></span> | <span data-ttu-id="5cd03-111">Дата</span><span class="sxs-lookup"><span data-stu-id="5cd03-111">Date</span></span>   |
-| <span data-ttu-id="5cd03-112">reportDate</span><span class="sxs-lookup"><span data-stu-id="5cd03-112">reportDate</span></span>        | <span data-ttu-id="5cd03-113">Дата</span><span class="sxs-lookup"><span data-stu-id="5cd03-113">Date</span></span>   |
-| <span data-ttu-id="5cd03-114">репортпериод</span><span class="sxs-lookup"><span data-stu-id="5cd03-114">reportPeriod</span></span>      | <span data-ttu-id="5cd03-115">String</span><span class="sxs-lookup"><span data-stu-id="5cd03-115">String</span></span> |
+| <span data-ttu-id="5d7ab-108">Audiovideohttp</span><span class="sxs-lookup"><span data-stu-id="5d7ab-108">audioVideo</span></span>        | <span data-ttu-id="5d7ab-109">Int64</span><span class="sxs-lookup"><span data-stu-id="5d7ab-109">Int64</span></span>  |
+| <span data-ttu-id="5d7ab-110">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="5d7ab-110">reportRefreshDate</span></span> | <span data-ttu-id="5d7ab-111">Дата</span><span class="sxs-lookup"><span data-stu-id="5d7ab-111">Date</span></span>   |
+| <span data-ttu-id="5d7ab-112">reportDate</span><span class="sxs-lookup"><span data-stu-id="5d7ab-112">reportDate</span></span>        | <span data-ttu-id="5d7ab-113">Дата</span><span class="sxs-lookup"><span data-stu-id="5d7ab-113">Date</span></span>   |
+| <span data-ttu-id="5d7ab-114">репортпериод</span><span class="sxs-lookup"><span data-stu-id="5d7ab-114">reportPeriod</span></span>      | <span data-ttu-id="5d7ab-115">String</span><span class="sxs-lookup"><span data-stu-id="5d7ab-115">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="5cd03-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="5cd03-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5d7ab-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="5d7ab-116">JSON representation</span></span>
 
-<span data-ttu-id="5cd03-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5cd03-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5d7ab-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5d7ab-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -42,3 +42,5 @@ ms.locfileid: "46808545"
   "reportPeriod": "String"
 }
 ```
+
+

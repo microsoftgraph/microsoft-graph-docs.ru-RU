@@ -5,28 +5,28 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1e69cc5b3e2ace9418333a0db79a2b9cbc3a37d2
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: edf6013b4c0293eb79b2b21aafc5a6ce944b0fa2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806963"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002977"
 ---
-# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="fc428-103">Тип ресурса patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="fc428-103">patternedRecurrence resource type</span></span>
+# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="644a6-103">Тип ресурса patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="644a6-103">patternedRecurrence resource type</span></span>
 
-<span data-ttu-id="fc428-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fc428-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="644a6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="644a6-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="fc428-105">Расписание и диапазон повторения.</span><span class="sxs-lookup"><span data-stu-id="fc428-105">The recurrence pattern and range.</span></span>
+<span data-ttu-id="644a6-105">Расписание и диапазон повторения.</span><span class="sxs-lookup"><span data-stu-id="644a6-105">The recurrence pattern and range.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fc428-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="fc428-106">Properties</span></span>
-| <span data-ttu-id="fc428-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="fc428-107">Property</span></span>     | <span data-ttu-id="fc428-108">Тип</span><span class="sxs-lookup"><span data-stu-id="fc428-108">Type</span></span>   |<span data-ttu-id="fc428-109">Описание</span><span class="sxs-lookup"><span data-stu-id="fc428-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="644a6-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="644a6-106">Properties</span></span>
+| <span data-ttu-id="644a6-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="644a6-107">Property</span></span>     | <span data-ttu-id="644a6-108">Тип</span><span class="sxs-lookup"><span data-stu-id="644a6-108">Type</span></span>   |<span data-ttu-id="644a6-109">Описание</span><span class="sxs-lookup"><span data-stu-id="644a6-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fc428-110">pattern</span><span class="sxs-lookup"><span data-stu-id="fc428-110">pattern</span></span>|[<span data-ttu-id="fc428-111">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="fc428-111">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="fc428-112">Частота события.</span><span class="sxs-lookup"><span data-stu-id="fc428-112">The frequency of an event.</span></span>|
-|<span data-ttu-id="fc428-113">range</span><span class="sxs-lookup"><span data-stu-id="fc428-113">range</span></span>|[<span data-ttu-id="fc428-114">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="fc428-114">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="fc428-115">Продолжительность события.</span><span class="sxs-lookup"><span data-stu-id="fc428-115">The duration of an event.</span></span>|
+|<span data-ttu-id="644a6-110">pattern</span><span class="sxs-lookup"><span data-stu-id="644a6-110">pattern</span></span>|[<span data-ttu-id="644a6-111">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="644a6-111">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="644a6-112">Частота события.</span><span class="sxs-lookup"><span data-stu-id="644a6-112">The frequency of an event.</span></span>|
+|<span data-ttu-id="644a6-113">range</span><span class="sxs-lookup"><span data-stu-id="644a6-113">range</span></span>|[<span data-ttu-id="644a6-114">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="644a6-114">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="644a6-115">Продолжительность события.</span><span class="sxs-lookup"><span data-stu-id="644a6-115">The duration of an event.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="fc428-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="fc428-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="644a6-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="644a6-116">JSON representation</span></span>
 
-<span data-ttu-id="fc428-117">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fc428-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="644a6-117">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="644a6-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -53,3 +53,4 @@ ms.locfileid: "46806963"
   "section": "documentation",
   "tocPath": ""
 }-->
+
