@@ -3,14 +3,14 @@ title: тип перечисления Ресултантаппстате
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9a4b50a903dc60e9f6d152c0b11f55811f85c446
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5e39426c26f819a73d933c47a296378021d62b2c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473531"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084102"
 ---
 # <a name="resultantappstate-enum-type"></a>тип перечисления Ресултантаппстате
 
@@ -25,13 +25,16 @@ ms.locfileid: "43473531"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|устанавлива|1,1|Приложение установлено без ошибок|
-|сбоев|2|Не удалось установить приложение.|
+|устанавлива|1 |Приложение установлено без ошибок|
+|сбоев|2 |Не удалось установить приложение.|
 |нотинсталлед|4|Приложение не установлено.|
 |унинсталлфаилед|4 |Не удалось удалить приложение.|
 |пендингинсталл|5 |Выполняется установка приложения.|
 |unknown|99|Неизвестное состояние приложения.|
 |нотаппликабле|–1|Приложение неприменимо.|
+
+
+
 
 
 

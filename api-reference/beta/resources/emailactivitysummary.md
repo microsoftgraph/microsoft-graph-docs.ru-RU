@@ -5,12 +5,12 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6a8b6fd714b506404e7788a067fc655197f22ccc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 78853954ef7c6fe4a191cbccefca350e628db210
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440578"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989593"
 ---
 # <a name="emailactivitysummary-resource-type"></a>Тип ресурса Емаилактивитисуммари
 
@@ -23,7 +23,7 @@ ms.locfileid: "43440578"
 | репортрефрешдате | Дата   |
 | send              | Int64  |
 | получил           | Int64  |
-| прочитан              | Int64  |
+| read              | Int64  |
 | reportDate        | Дата   |
 | репортпериод      | String |
 
@@ -46,3 +46,5 @@ ms.locfileid: "43440578"
   "reportPeriod": "String"
 }
 ```
+
+

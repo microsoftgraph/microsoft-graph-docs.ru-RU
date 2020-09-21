@@ -3,14 +3,14 @@ title: Перечисление объектов defaultManagedAppProtection
 description: Перечисление свойств и связей объектов defaultManagedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 851772988d8b962bc8bf2afcbc5c45172c1ab3f5
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: eaa74db7ecab2053bed8e3b7656efb299059a770
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791947"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043194"
 ---
 # <a name="list-defaultmanagedappprotections"></a>Перечисление объектов defaultManagedAppProtection
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/defaultManagedAppProtections
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5428
+Content-Length: 5542
 
 {
   "value": [
@@ -181,11 +181,16 @@ Content-Length: 5428
       "appActionIfAndroidDeviceModelNotAllowed": "wipe",
       "customDialerAppProtocol": "Custom Dialer App Protocol value",
       "customDialerAppPackageId": "Custom Dialer App Package Id value",
-      "customDialerAppDisplayName": "Custom Dialer App Display Name value"
+      "customDialerAppDisplayName": "Custom Dialer App Display Name value",
+      "biometricAuthenticationBlocked": true,
+      "requiredAndroidSafetyNetEvaluationType": "hardwareBacked"
     }
   ]
 }
 ```
+
+
+
 
 
 

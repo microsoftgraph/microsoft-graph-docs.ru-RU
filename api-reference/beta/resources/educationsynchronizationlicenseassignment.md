@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9d46e19c1869f7dff96a563dd54b1b9f303ce85a
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: b5aea834ff2943046aff8a390ae110d775fd2f20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434965"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989642"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>Тип ресурса Едукатионсинчронизатионлиценсеассигнмент
 
@@ -25,7 +25,7 @@ ms.locfileid: "45434965"
 | Свойство  | Тип              | Описание                                                                                    |
 | :-------- | :---------------- | :--------------------------------------------------------------------------------------------- |
 | Тег | String            | Тип роли пользователя, назначаемый лицензии. Возможные значения: `student`, `teacher`, `faculty`. |
-| скуидс    | Коллекция строк | Представляет идентификаторы SKU назначаемых лицензий.                                      |
+| скуидс    | Коллекция String | Представляет идентификаторы SKU назначаемых лицензий.                                      |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -43,3 +43,5 @@ ms.locfileid: "45434965"
   "skuIds": ["String"]
 }
 ```
+
+

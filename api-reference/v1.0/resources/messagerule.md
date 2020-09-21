@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 34dec4fddd8373d1b2fcb49969f6048711a11beb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 87f6413b3b7bb38d45a8ba30dc39c3168a2a0d97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965402"
 ---
 # <a name="messagerule-resource-type"></a>Тип ресурса messageRule
 
@@ -29,7 +29,7 @@ ms.locfileid: "43443501"
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](messageruleactions.md) | Действия, которые нужно применить к сообщению при выполнении определенных условий. |
 | conditions | [messageRulePredicates](messagerulepredicates.md) | Условия, выполнение которых активирует соответствующие действия для указанного правила. |
-| displayName | Строка | Отображаемое имя правила. |
+| displayName | String | Отображаемое имя правила. |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Условия исключения для правила. |
 | hasError | Boolean | Указывает, является ли правило ошибкой. Только для чтения. |
 | id |String|Уникальный идентификатор правила. Только для чтения.|
@@ -82,3 +82,4 @@ ms.locfileid: "43443501"
   "section": "documentation",
   "tocPath": ""
 }-->
+

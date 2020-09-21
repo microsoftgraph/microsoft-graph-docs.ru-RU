@@ -3,14 +3,14 @@ title: Создание Граупполицимигратионрепорт
 description: Создание нового объекта Граупполицимигратионрепорт.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c0e52db29b0ce0545b42aa6951afdb4f887b511
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4f858c331ad320154ac2a61b7ac1d50b22912c8d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384138"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969881"
 ---
 # <a name="create-grouppolicymigrationreport"></a>Создание Граупполицимигратионрепорт
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyMigrationReports
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,8 +54,8 @@ POST /deviceManagement/groupPolicyMigrationReports
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
-|граупполициобжектид|GUID|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
-|displayName|Строка|Имя объекта групповой политики из XML-содержимого объекта групповой политики|
+|граупполициобжектид|Guid|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
+|displayName|String|Имя объекта групповой политики из XML-содержимого объекта групповой политики|
 |аудистингуишеднаме|String|Различающееся имя подразделения.|
 |createdDateTime|DateTimeOffset|Дата и время создания Граупполицимигратионрепорт.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Граупполицимигратионрепорт.|
@@ -69,7 +69,7 @@ POST /deviceManagement/groupPolicyMigrationReports
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -120,6 +120,9 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c10f954548d7682663fb64c5e7b94359926250f1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 79c88b17631ef72e5cac9a352db8374afe0426f9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439977"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983230"
 ---
 # <a name="list-series"></a>Список рядов
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукчартсериес](../resources/workbookchartseries.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -109,3 +109,5 @@ Content-length: 59
   ]
 }
 -->
+
+

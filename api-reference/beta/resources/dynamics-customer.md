@@ -5,12 +5,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 5abe6b5fcf56544d587edbedf20f22594be0cdd0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c6b39829d2b55dc872d281443eaad1b279715b50
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42504715"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989712"
 ---
 # <a name="customers-resource-type"></a>Тип ресурса Customers
 
@@ -99,4 +99,6 @@ ms.locfileid: "42504715"
 
 
 ```
+
+
 

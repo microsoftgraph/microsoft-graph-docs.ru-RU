@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 30f614142486cb1403d6f4ca13cecbde68fd5c7d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6696ee897a3baf98e0bc3d156771ae23386b2ccc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440012"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983209"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/Image(width=0,height=0,fittingM
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|height|число|Необязательный. Нужная высота создаваемого изображения.|
+|height|number|Необязательный. Нужная высота создаваемого изображения.|
 |width|number|Необязательный. Нужная ширина создаваемого изображения.|
 |fittingMode|string|Необязательный. Метод, используемый для масштабирования диаграммы до указанного размера (если указаны и высота, и ширина).  Возможные значения: `Fit`, `FitAndCenter`, `Fill`.|
 
@@ -98,3 +98,5 @@ Content-length: 3
   "suppressions": []
 }
 -->
+
+

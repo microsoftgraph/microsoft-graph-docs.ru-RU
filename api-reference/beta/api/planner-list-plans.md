@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c4994950b58341d4c990e2d46d4f90ee743cc40c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b1c9c903746351b1d5b28a2b7fb097844c6a567
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455797"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036080"
 ---
 # <a name="list-plans"></a>Список планов
 
@@ -41,7 +41,7 @@ GET /planner/plans
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -122,3 +122,5 @@ Content-length: 421
   ]
 }
 -->
+
+

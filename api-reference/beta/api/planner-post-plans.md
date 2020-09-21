@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ee45f0172a964837fc6b97ef068a64ccd465a73d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 37c5ffaec0ff2acf86fc8d5da27868aed8e7707c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455790"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036075"
 ---
 # <a name="create-plannerplan"></a>Создание объекта plannerPlan
 
@@ -43,7 +43,7 @@ POST /planner/plans
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Включите в текст запроса описание объекта [plannerPlan](../resources/plannerplan.md) в формате JSON. В качестве свойства владельца **PlannerPlan** необходимо указать идентификатор объекта [group](../resources/group.md).
 
@@ -93,7 +93,7 @@ Content-length: 381
 
 Включите в текст запроса описание объекта [plannerPlan](../resources/plannerplan.md) в формате JSON.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -135,3 +135,5 @@ Content-length: 357
   ]
 }
 -->
+
+

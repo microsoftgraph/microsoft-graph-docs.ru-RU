@@ -3,14 +3,14 @@ title: Тип ресурса Девицеконфигуратионтаржет�
 description: Сводка по конфликтам для набора политик конфигурации устройств.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3a553cf15a82b25d78eb983037d45c1c3c245025
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: eb569346aa16f42c50f8ddb246f127bfeadae087
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469369"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016347"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>Тип ресурса Девицеконфигуратионтаржетедусеранддевице
 
@@ -29,10 +29,10 @@ ms.locfileid: "43469369"
 |deviceName|String|Имя устройства в возврате.|
 |userId|String|Идентификатор пользователя в возврате.|
 |userDisplayName|String|Отображаемое имя пользователя в репозитории|
-|userPrincipalName|Строка|Имя участника-пользователя в возврате.|
+|userPrincipalName|String|Имя участника-пользователя в возврате.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата для этой связи пользователя и устройства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,9 @@ ms.locfileid: "43469369"
   "lastCheckinDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

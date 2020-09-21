@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 86c8189e170bba5899f82f75902dfe68dd0d3fd1
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 2db53346ae270f5441637835ec5da0427d9d4ab8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434916"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989600"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>Тип ресурса Едукатионсинчронизатионпрофиле
 
@@ -32,7 +32,7 @@ ms.locfileid: "45434916"
 | [Профиль возобновления](../api/educationsynchronizationprofile-resume.md)        | Нет                                                        | Возобновление приостановленной синхронизации.                                                                                               |
 | [Сброс профиля](../api/educationsynchronizationprofile-reset.md)          | Нет                                                        | Сбросьте состояние профиля и перезапустите синхронизацию.                                                                    |
 | [Начальный CSV-профиль](../api/educationsynchronizationprofile-start.md)      | Коллекция [едукатионфилесинчронизатионверификатионмессаже] | Проверьте отправленные исходные файлы и запустите синхронизацию. Применяется только в том случае, если поставщик данных — [едукатионксвдатапровидер]. |
-| [Получение URL-адреса отправки CSV-файла](../api/educationsynchronizationprofile-uploadurl.md) | Строка                                                      | Возвращает кратковременный URL-адрес для отправки CSV-файлов данных. Применяется только в том случае, если поставщик данных — [едукатионксвдатапровидер].        |
+| [Получение URL-адреса отправки CSV-файла](../api/educationsynchronizationprofile-uploadurl.md) | string                                                      | Возвращает кратковременный URL-адрес для отправки CSV-файлов данных. Применяется только в том случае, если поставщик данных — [едукатионксвдатапровидер].        |
 | [Получение состояния](../api/educationsynchronizationprofilestatus-get.md)         | [едукатионсинчронизатионпрофилестатус]                     | Возврат состояния определенного профиля синхронизации.                                                                       |
 | [Получение ошибок](../api/educationsynchronizationerrors-get.md)                | Коллекция [educationSynchronizationError]                  | Получение всех ошибок, возникших во время синхронизации.                                                                           |
 
@@ -41,7 +41,7 @@ ms.locfileid: "45434916"
 | Свойство                             | Тип                                                   | Описание                                                                                                                       |
 | :----------------------------------- | :----------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
 | id                                   | String                                                 | Уникальный идентификатор ресурса. (только для чтения)                                                                               |
-| displayName                          | Строка                                                 | Имя профиля конфигурации для удостоверений синхронизации.                                                                         |
+| displayName                          | String                                                 | Имя профиля конфигурации для удостоверений синхронизации.                                                                         |
 | Предоставление dataProvider                         | [едукатионсинчронизатиондатапровидер]                 | Поставщик данных, используемый для профиля.                                                                                           |
 | expirationDate                       | Дата                                                   | Дата истечения срока действия профиля и прекращение синхронизации. Когда `null` . срок действия профиля никогда не истекает. (необязательный)       |
 | хандлеспеЦиалчарактерконстраинт     | Логический                                                   | Определяет, должно ли учебная синхронизация данных автоматически заменять неподдерживаемые специальные символы при синхронизации из источника.             |
@@ -136,3 +136,5 @@ ms.locfileid: "45434916"
       "Error: microsoft.graph.educationSynchronizationProfile/dataProvider:\r\n      Referenced type microsoft.graph.educationSynchronizationDataProvider is not defined in the doc set! Potential suggestion: UNKNOWN"
   ]
 }-->
+
+

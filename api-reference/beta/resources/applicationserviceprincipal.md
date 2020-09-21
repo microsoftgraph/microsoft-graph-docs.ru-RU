@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 904e094f177adab51addcf90826ac35a016cf737
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b45da6cd8533d9522d42428f6e222a669f17e681
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455300"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050271"
 ---
 # <a name="applicationserviceprincipal-resource-type"></a>Тип ресурса АппликатионсервицепринЦипал
 
@@ -20,7 +20,7 @@ ms.locfileid: "43455300"
 
 При добавлении экземпляра приложения из коллекции приложений Azure AD объекты [Application](../resources/application.md) и [servicePrincipal](../resources/serviceprincipal.md) создаются в каталоге. **АппликатионсервицепринЦипал** представляет сцепление объекта **Application** и **servicePrincipal** .
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
 Нет
 
@@ -65,3 +65,5 @@ ms.locfileid: "43455300"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

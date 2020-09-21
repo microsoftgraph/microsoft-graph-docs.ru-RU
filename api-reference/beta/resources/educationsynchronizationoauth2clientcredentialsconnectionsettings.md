@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 00e1e531ff33f28a2e63f76925cd0b4e7759696b
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: a6a25f63c5daef72c436fe0a9a21f4d795667602
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434912"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989633"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>ресурс educationSynchronizationOAuth2ClientCredentialsConnectionSettings
 
@@ -28,8 +28,8 @@ ms.locfileid: "45434912"
 | :----------- | :----- | :------------------------------------------------------------------------------------------------------------------------- |
 | clientId     | String | Идентификатор клиента, используемый для подключения к поставщику. Наследуется от [едукатионсинчронизатионконнектионсеттингс].                    |
 | clientSecret | String | Секрет клиента для проверки подлинности подключения к поставщику. Наследуется от [едукатионсинчронизатионконнектионсеттингс]. |
-| токенурл     | Строка | URL-адрес для получения маркеров доступа для поставщика данных.                                                                        |
-| scope        | Строка | Область запроса доступа (см. [RFC6749](https://tools.ietf.org/html/rfc6749#section-3.3)).                          |
+| токенурл     | String | URL-адрес для получения маркеров доступа для поставщика данных.                                                                        |
+| scope        | String | Область запроса доступа (см. [RFC6749](https://tools.ietf.org/html/rfc6749#section-3.3)).                          |
 
 [едукатионсинчронизатионконнектионсеттингс]: educationsynchronizationconnectionsettings.md
 
@@ -49,3 +49,5 @@ ms.locfileid: "45434912"
   "scope": "String"
 }
 ```
+
+

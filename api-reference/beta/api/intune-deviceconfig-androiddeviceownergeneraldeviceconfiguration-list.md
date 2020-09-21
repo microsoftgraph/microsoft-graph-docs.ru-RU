@@ -3,14 +3,14 @@ title: Список Андроиддевицеовнерженералдевиц
 description: Список свойств и связей объектов androidDeviceOwnerGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a452a4f706e207c4e338e9d919ae59f64963b547
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: a202be51a9d1b69148e9e5c04fb6c73d27afd4cb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123367"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996054"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Список Андроиддевицеовнерженералдевицеконфигуратионс
 
@@ -44,10 +44,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6112
+Content-Length: 6905
 
 {
   "value": [
@@ -207,11 +207,28 @@ Content-Length: 6112
       "vpnAlwaysOnLockdownMode": true,
       "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
       "wifiBlockEditConfigurations": true,
-      "wifiBlockEditPolicyDefinedConfigurations": true
+      "wifiBlockEditPolicyDefinedConfigurations": true,
+      "personalProfileAppsAllowInstallFromUnknownSources": true,
+      "personalProfileCameraBlocked": true,
+      "personalProfileScreenCaptureBlocked": true,
+      "workProfilePasswordExpirationDays": 1,
+      "workProfilePasswordMinimumLength": 0,
+      "workProfilePasswordMinimumNumericCharacters": 11,
+      "workProfilePasswordMinimumNonLetterCharacters": 13,
+      "workProfilePasswordMinimumLetterCharacters": 10,
+      "workProfilePasswordMinimumLowerCaseCharacters": 13,
+      "workProfilePasswordMinimumUpperCaseCharacters": 13,
+      "workProfilePasswordMinimumSymbolCharacters": 10,
+      "workProfilePasswordPreviousPasswordCountToBlock": 15,
+      "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+      "workProfilePasswordRequiredType": "required"
     }
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f017ce3ec744bb86ee3ea6e9820a0e29f8505514
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: ec2120660ac47fa44e700dadc34712cf3a4351e3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084144"
 ---
 # <a name="report-resource-type"></a>Тип ресурса report
 
@@ -24,14 +24,13 @@ ms.locfileid: "46630223"
 
 - Отчеты об истории профилей конфигурации устройств.
 - Отчеты о сбоях регистрации.
-- Отчеты об использовании Microsoft 365
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |содержимое|Поток|Содержимое отчета; сведения зависят от типа отчета.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,6 +47,9 @@ ms.locfileid: "46630223"
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Получение androidDeviceOwnerGeneralDeviceConfiguration
 description: Чтение свойств и связей объекта androidDeviceOwnerGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05fe6905de32d91acc75543e4c9d5265cc1f5933
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 352352aefda733c98dae5cfc4457287d9a976325
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123374"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996003"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>Получение androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -42,16 +42,16 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5824
+Content-Length: 6589
 
 {
   "value": {
@@ -210,10 +210,27 @@ Content-Length: 5824
     "vpnAlwaysOnLockdownMode": true,
     "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "wifiBlockEditConfigurations": true,
-    "wifiBlockEditPolicyDefinedConfigurations": true
+    "wifiBlockEditPolicyDefinedConfigurations": true,
+    "personalProfileAppsAllowInstallFromUnknownSources": true,
+    "personalProfileCameraBlocked": true,
+    "personalProfileScreenCaptureBlocked": true,
+    "workProfilePasswordExpirationDays": 1,
+    "workProfilePasswordMinimumLength": 0,
+    "workProfilePasswordMinimumNumericCharacters": 11,
+    "workProfilePasswordMinimumNonLetterCharacters": 13,
+    "workProfilePasswordMinimumLetterCharacters": 10,
+    "workProfilePasswordMinimumLowerCaseCharacters": 13,
+    "workProfilePasswordMinimumUpperCaseCharacters": 13,
+    "workProfilePasswordMinimumSymbolCharacters": 10,
+    "workProfilePasswordPreviousPasswordCountToBlock": 15,
+    "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+    "workProfilePasswordRequiredType": "required"
   }
 }
 ```
+
+
+
 
 
 

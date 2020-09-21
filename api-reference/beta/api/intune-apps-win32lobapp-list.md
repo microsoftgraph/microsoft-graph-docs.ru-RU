@@ -3,14 +3,14 @@ title: Список win32LobApps
 description: Список свойств и связей объектов win32LobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9af22cc73a0cc3b27de7bb8ee54b46102ee4c4d5
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 2b2df0fc94f758b7d251acef1a107a9459515cfd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123430"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976657"
 ---
 # <a name="list-win32lobapps"></a>Список win32LobApps
 
@@ -43,10 +43,10 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3933
+Content-Length: 3946
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 3933
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -174,12 +176,14 @@ Content-Length: 3933
         "publisher": "Publisher value"
       },
       "setupFilePath": "Setup File Path value",
-      "installLanguage": "Install Language value",
       "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
     }
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 99206c53b6b7c9b609afb1897b6ae0c7e3224e81
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb6b10a5056531a58d02ab6c17186636b683435a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451520"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050292"
 ---
 # <a name="close-session"></a>Close Session
 
@@ -83,7 +83,7 @@ Content-length: 0
 Обратите внимание, что заголовок workbook-session-id является обязательным. 
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 <!-- {
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
+

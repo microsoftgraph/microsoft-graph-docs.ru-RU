@@ -3,14 +3,14 @@ title: Тип ресурса mediaContentRatingUnitedStates
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4d9887ee7d2375a9b954a7f62f84701b997d9b7a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 30e41727b84e7f10b82917f4dc1dd23f296cc19f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473094"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003061"
 ---
 # <a name="mediacontentratingunitedstates-resource-type"></a>Тип ресурса mediaContentRatingUnitedStates
 
@@ -43,6 +43,8 @@ ms.locfileid: "43473094"
   "tvRating": "String"
 }
 ```
+
+
 
 
 

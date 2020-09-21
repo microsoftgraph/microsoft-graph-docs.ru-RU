@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 059c087646f3fb61d1c4132400171bc0acfa090f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 645233000d0b77cde7430accee2685122458bd7d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455695"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036035"
 ---
 # <a name="get-plannerplan"></a>Получение объекта plannerPlan
 
@@ -38,10 +38,10 @@ GET /planner/plans/{plan-id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [plannerPlan](../resources/plannerplan.md) в тексте отклика.
 
@@ -116,3 +116,5 @@ Content-length: 357
   ]
 }
 -->
+
+

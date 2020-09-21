@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 796f4824b92f981f2d6c2bf27b4e8e92e18e489b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a5195b3a3300cc9d17ef3e761611e1b509513662
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518163"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009977"
 ---
 # <a name="update-conversationthread"></a>Обновление объекта conversationThread
 
@@ -46,7 +46,7 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
 |:---------------|:--------|:----------|
 |isLocked|Логическое|Указывает, заблокирована ли цепочка. Чтобы запретить добавление сообщений, задайте значение `true`.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [conversationThread](../resources/conversationthread.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -136,3 +136,4 @@ Content-length: 419
   "suppressions": [
   ]
 }-->
+

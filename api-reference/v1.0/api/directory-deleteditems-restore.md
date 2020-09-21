@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 69594e7118e8159575b8dace0fe570a98e0d4379
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: c588dee2de9ff1f4ffed128ed3b7b316f1e632e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181787"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057611"
 ---
 # <a name="restore-deleted-item"></a>Восстановление удаленного элемента
 
@@ -59,13 +59,13 @@ POST /directory/deletedItems/{id}/restore
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | &lt;&gt; *Необходим* маркер носителя|
+| Authorization  | &lt;Необходим маркер носителя &gt; *Required*|
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
@@ -135,3 +135,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

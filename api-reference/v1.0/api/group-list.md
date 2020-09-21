@@ -1,22 +1,22 @@
 ---
 title: Список групп
-description: Список всех групп, доступных в организации, в том числе Групп Office 365.
+description: Список всех групп, доступных в организации, в том числе групп Microsoft 365.
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fefccee51195adafb1bb3881b6a39336059d7857
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 4dd291610e6c25a916a76a72768a5dd456171b2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125143"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057558"
 ---
 # <a name="list-groups"></a>Список групп
 
 Пространство имен: microsoft.graph
 
-Список всех групп в организации, в том числе групп Office 365. 
+Список всех групп в организации, в том числе групп Microsoft 365. 
 
 Эта операция по умолчанию возвращает только подмножество свойств для каждой группы. Эти свойства по умолчанию указаны в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните операцию [GET](group-get.md) и укажите их в параметре `$select` запроса OData. Свойство **hasMembersWithLicenseErrors** является исключением и не возвращается в запросе `$select`.
 
@@ -36,7 +36,7 @@ GET /groups
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Чтобы получить только результаты из функции "Группы Office 365" (т. н. единые группы), примените фильтр **groupTypes**:
+Чтобы показать список только групп Microsoft 365 (т. н. единых групп), примените фильтр для **groupTypes**:
 <!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
@@ -253,3 +253,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

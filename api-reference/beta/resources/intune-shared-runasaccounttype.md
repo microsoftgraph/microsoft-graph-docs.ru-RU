@@ -3,14 +3,14 @@ title: тип перечисления Рунасаккаунттипе
 description: Указывает тип контекста выполнения, в котором работает приложение.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 95d7b5266dfdce6f7099537a126305fd927bb294
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 256dd73574b45d592679e6f8c1b29885a1391174
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084060"
 ---
 # <a name="runasaccounttype-enum-type"></a>тип перечисления Рунасаккаунттипе
 
@@ -26,7 +26,10 @@ ms.locfileid: "43473517"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |system|нуль|Контекст системы|
-|user|1,1|Контекст пользователя|
+|user|1 |Контекст пользователя|
+
+
+
 
 
 

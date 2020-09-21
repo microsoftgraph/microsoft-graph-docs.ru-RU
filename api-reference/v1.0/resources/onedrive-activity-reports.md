@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 24a2e74e9e117c13fa49efc6fba4323f75716ffe
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: d06dc9aba906f9d8e423388a39faf3ccfe414bf1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898151"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965465"
 ---
 # <a name="onedrive-activity-reports"></a>Отчеты о действиях в OneDrive
 
@@ -27,4 +27,5 @@ ms.locfileid: "44898151"
 | [Получение сведений о пользователях](../api/reportroot-getonedriveactivityuserdetail.md) | Stream      | Получите сведения о действиях в OneDrive с разбивкой по пользователям. |
 | [Получение количества пользователей](../api/reportroot-getonedriveactivityusercounts.md) | Stream      | Получение тренда в отношении количества активных пользователей OneDrive. |
 | [Получение количества файлов](../api/reportroot-getonedriveactivityfilecounts.md) | Stream      | Получение количества уникальных пользователей с лицензией, которые работали с файлами в любой учетной записи OneDrive. |
+
 

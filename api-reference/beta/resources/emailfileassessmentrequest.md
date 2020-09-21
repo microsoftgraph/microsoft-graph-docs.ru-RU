@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: de892cb10d7333b8807253f99148edbdcedf5d66
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 848ba0e1d7bfae16270f12d5acb153c083ca1d06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499409"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989572"
 ---
 # <a name="emailfileassessmentrequest-resource-type"></a>Тип ресурса Емаилфилеассессментрекуест
 
@@ -34,7 +34,7 @@ ms.locfileid: "42499409"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |контентдата|String|Содержимое файла электронной почты в кодировке Base64. EML. Не удается вернуть содержимое файла, так как оно не хранится.|
-|дестинатионраутингреасон|[маилдестинатионраутингреасон](enums.md#maildestinationroutingreason-values)|Причина, по которой почта перенаправляется в назначение. Возможные значения: `none`, `mailFlowRule`, `safeSender`, `blockedSender`, `advancedSpamFiltering`, `domainAllowList`, `domainBlockList`, `notInAddressBook`, `firstTimeSender`, `autoPurgeToInbox`, `autoPurgeToJunk`, `autoPurgeToDeleted`, `outbound`, `notJunk`,. `junk`|
+|дестинатионраутингреасон|[маилдестинатионраутингреасон](enums.md#maildestinationroutingreason-values)|Причина, по которой почта перенаправляется в назначение. Возможные значения: `none` , `mailFlowRule` ,,,,, `safeSender` `blockedSender` `advancedSpamFiltering` `domainAllowList` `domainBlockList` ,,, `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` , `autoPurgeToJunk` , `autoPurgeToDeleted` , `outbound` , `notJunk` , `junk` .|
 |реЦипиентемаил|String|Получатель почты, политики которого используются для оценки почты.|
 |category|[среаткатегори](enums.md#threatcategory-values)|Категория угроз. Возможные значения: `spam`, `phishing`, `malware`.|
 |contentType|[среатассессментконтенттипе](enums.md#threatassessmentcontenttype-values)|Тип контента для оценки угроз. Возможные значения: `mail`, `url`, `file`.|
@@ -49,7 +49,7 @@ ms.locfileid: "42499409"
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|results|Коллекция [среатассессментресулт](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию объект `GET /threatAssessmentRequests/{id}` a не возвращает это свойство, пока не `$expand` применено к нему.|
+|results|Коллекция [среатассессментресулт](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию объект a не `GET /threatAssessmentRequests/{id}` возвращает это свойство, пока не применено `$expand` к нему.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -90,3 +90,5 @@ ms.locfileid: "42499409"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

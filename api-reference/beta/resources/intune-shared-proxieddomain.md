@@ -3,14 +3,14 @@ title: Тип ресурса proxiedDomain
 description: Проксируемый домен
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4b2dff399888ba51008f84b76decae8d211862e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8e1c72ba6963e12366265d69703cec8f22ceb426
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466095"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084158"
 ---
 # <a name="proxieddomain-resource-type"></a>Тип ресурса proxiedDomain
 
@@ -45,6 +45,9 @@ ms.locfileid: "43466095"
   "proxy": "String"
 }
 ```
+
+
+
 
 
 

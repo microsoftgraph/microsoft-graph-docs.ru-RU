@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f11a2b0bb3260d834900955886ad477030fd3351
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 470dcbf33f2f3f497aafc9b4e0950cdd5f0d6725
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473538"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084151"
 ---
 # <a name="reportroot-resource-type"></a>Тип ресурса reportRoot
 
@@ -40,7 +40,7 @@ ms.locfileid: "43473538"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этого объекта.|
+|id|Строка|Уникальный идентификатор для этого объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -59,6 +59,9 @@ ms.locfileid: "43473538"
   "id": "String (identifier)"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: тип перечисления Миракастчаннел
 description: Возможные значения для канала Miracast.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1c5c7e6208e912c04e88a3b2cf75e5897544f798
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6ed102cf6be62a6c4f5e70117eb5f1fd77e6c5c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473087"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003068"
 ---
 # <a name="miracastchannel-enum-type"></a>тип перечисления Миракастчаннел
 
@@ -24,8 +24,8 @@ ms.locfileid: "43473087"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|one|1,1|Один.|
-|two|2|2.|
+|one|1 |Один.|
+|two|2 |2.|
 |three|4|Трёх.|
 |four|4 |Четыре.|
 |five|5 |Следующих.|
@@ -44,6 +44,8 @@ ms.locfileid: "43473087"
 |онехундредфифтисевен|157|Онехундредфифти — семь.|
 |онехундредсикстйоне|161|Онехундредсиксти — один.|
 |онехундредсикстифиве|165|Онехундредсиксти — пять.|
+
+
 
 
 

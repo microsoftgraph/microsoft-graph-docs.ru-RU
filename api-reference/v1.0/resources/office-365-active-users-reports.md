@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 041bbe180df2225383d704002d06359334fb8d84
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: ea360f2600cddbf52c7a1fd95782e0212cafb494
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898165"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965472"
 ---
 # <a name="microsoft-365-active-users-reports"></a>Отчеты об активных пользователях Microsoft 365
 
@@ -26,3 +26,4 @@ ms.locfileid: "44898165"
 | [Получение сведений о пользователях](../api/reportroot-getoffice365activeuserdetail.md) | Stream      | Получение сведений о активных пользователях Microsoft 365. |
 | [Получение количества пользователей](../api/reportroot-getoffice365activeusercounts.md) | Stream      | Узнайте, сколько активных пользователей в день было у каждого продукта в отчетный период. |
 | [Получение количества пользователей по службам](../api/reportroot-getoffice365servicesusercounts.md) | Поток      | Узнайте, сколько пользователей были активны и неактивны в каждой службе. |
+
