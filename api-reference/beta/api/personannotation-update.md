@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: e6a0b2db3abfd2bc1707815fd936f45a8cbd5d11
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1685d6ef406af3adb1bb73f1974f3ddcbe45e97b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809738"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969398"
 ---
 # <a name="update-personannotation"></a>Обновление Персонаннотатион
 Пространство имен: microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "46809738"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Приложение                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,7 +57,7 @@ PATCH /users/{id | userPrincipalName}/profile/notes/{id}
 |displayName|String|Содержит понятное имя для заметки.|
 |выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [персонаннотатион](../resources/personannotation.md) в тексте отклика.
 
@@ -134,4 +134,6 @@ Content-Type: application/json
   "displayName": "About Me"
 }
 ```
+
+
 

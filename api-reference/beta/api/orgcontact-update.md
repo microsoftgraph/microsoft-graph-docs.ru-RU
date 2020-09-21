@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aa9704c44dc8dc7068bf387b97669e2c42aecdd2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 189a1d9274f3a0a77392bb1ebca04911c7bf2c0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403226"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969446"
 ---
 # <a name="update-orgcontact"></a>Обновление orgcontact
 
@@ -44,25 +44,25 @@ PATCH /contacts/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |city|String||
-|country|Строка||
-|отделу;|String||
+|country|String||
+|department|String||
 |onPremisesSyncEnabled|Boolean||
 |displayName|String||
-|givenName|String||
+|givenName;|String||
 |jobTitle;|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
-|mail|String||
+|почта;|String||
 |mailNickname|String||
 |mobilePhone|String||
 |officeLocation|String||
 |postalCode|String||
 |proxyAddresses|String||
-|state|Строка||
+|state|String||
 |streetAddress|String||
 |surname|String||
 |businessPhones|Коллекция String||
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [orgContact](../resources/orgcontact.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -141,3 +141,5 @@ Content-length: 222
   ]
 }
 -->
+
+

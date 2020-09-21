@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: jewan-microsoft
-ms.openlocfilehash: 2ec9ea6b30443b0dfc25ce8ac5ccc4ff4ab0516d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 98a878ae10eb4756c631aa0031d0342aa90e6e8c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809378"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968374"
 ---
 # <a name="onenotesection-resource-type"></a>Тип ресурса Оненотесектион
 
@@ -52,7 +52,7 @@ ms.locfileid: "46809378"
 |[copyToSectionGroup](../api/section-copytosectiongroup.md)|Нет|Скопируйте раздел в определенную группу разделов.|
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -96,3 +96,5 @@ ms.locfileid: "46809378"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 931cf6b4a77993da7564b157787b29f338bc2690
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 66617937140f9c87386bde864b57a310c7684cc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896485"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968938"
 ---
 # <a name="user-assignlicense"></a>user: assignLicense
 
@@ -42,7 +42,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -100,7 +100,7 @@ Content-length: 185
 ## <a name="example"></a>Пример
 Удаление лицензий от пользователя.
 
-##### <a name="request"></a>Запросить
+##### <a name="request"></a>Запрос
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
@@ -113,7 +113,7 @@ Content-length: 185
 ```
 
 ##### <a name="response"></a>Отклик
-В обоих примерах откликом является обновленный объект пользователя. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+В обоих примерах откликом является обновленный объект пользователя. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -161,3 +161,5 @@ Content-length: 491
   ]
 }
 -->
+
+

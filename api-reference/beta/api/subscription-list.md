@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 6c04d7bb51fa5f99694d01d703b18e5073450cf9
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: ea6b726a651beaa4619d593c336598fd8890d4af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598145"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969265"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 
@@ -28,7 +28,7 @@ ms.locfileid: "46598145"
 |:---------------- |:-------------------------------------------- |
 | [Делегированная](/graph/auth-v2-user) (Рабочая или учебная учетная запись) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
 | [Делегированная](/graph/auth-v2-user) учетная запись (личная учетная запись Майкрософт) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
-| [Application](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
+| [Приложение](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
 
 Результаты отклика основаны на контексте приложения, отправившего вызов. Ниже представлена сводка общих сценариев.
 
@@ -69,7 +69,7 @@ GET /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -157,3 +157,5 @@ Content-length: 586
 > **Примечание.** Значение свойства `clientState` не возвращается в целях безопасности.  
 
 Когда запрос возвращает несколько страниц данных, отклик включает свойство `@odata.nextLink`, помогающее управлять результатами.  Дополнительные сведения см. в статье [Разбиение данных Microsoft Graph по страницам в приложении](/graph/paging).
+
+

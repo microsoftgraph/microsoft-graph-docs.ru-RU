@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 59b279d115c8815809fae97504eb0af3ef2e8d5d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a30ecf1b705dd2e2c1aab9cc8fb33c9c25a067ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471169"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969167"
 ---
 # <a name="update-synchronizationschema"></a>Обновление Синчронизатионсчема
 
@@ -46,9 +46,9 @@ PUT /applications/{id}/synchronization/templates/{templateId}/schema
 
 В теле запроса добавьте объект [синчронизатионсчема](../resources/synchronization-synchronizationschema.md) для замены существующей схемы.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха возвращает код `204 No Content` отклика. В тексте отклика не возвращается никаких данных.
+В случае успеха возвращает `204 No Content` код отклика. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 
@@ -147,3 +147,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

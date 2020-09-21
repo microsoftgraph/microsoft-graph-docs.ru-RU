@@ -3,14 +3,14 @@ title: Действие assign
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a4726b9ead55e146a65278035178afa82515c717
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ddb77bbfc0342bd5b0387a48889f1dd2e0837554
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43398229"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968068"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -41,7 +41,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -51,7 +51,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md)|Н/Д|
+|assignments|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md)|Пока не задокументировано.|
 
 
 
@@ -86,6 +86,9 @@ Content-length: 282
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

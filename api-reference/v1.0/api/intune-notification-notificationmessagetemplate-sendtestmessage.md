@@ -3,14 +3,14 @@ title: Действие sendTestMessage
 description: Отправляет проверочное сообщение, используя указанный объект notificationMessageTemplate в языковом стандарте по умолчанию.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ce1867754a5eb712a6be2e8415c0008380fab7d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fc2020d8570ff91afc13dba560dbe8b042201032
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452941"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967956"
 ---
 # <a name="sendtestmessage-action"></a>Действие sendTestMessage
 
@@ -41,13 +41,13 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -63,6 +63,9 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTempla
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7a21c071fe0279330683718e6d4f939177afa4d2
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 015ac0a0829964fb54f306375d00470ea89ab2ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811730"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969314"
 ---
 # <a name="update-personname"></a>Обновление PersonName
 
@@ -68,7 +68,7 @@ PATCH /users/{id | userPrincipalName}/profile/names/{id}
 |суффикс|String|Обозначения, используемые после имени пользователя (например, "доктор").  |
 |title|String|Хонорификс используется для префикса имени пользователя (например, Dr, Sir, мадам, MRS).|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [PersonName](../resources/personname.md) в тексте отклика.
 
@@ -164,3 +164,5 @@ Content-type: application/json
   }
 }
 ```
+
+

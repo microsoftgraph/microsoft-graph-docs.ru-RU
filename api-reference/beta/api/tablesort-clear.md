@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7d8db91751092a331b497b8fce29dbcb67d2131d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3f2eebe52f3e6d6747a71ff96fc62a222bc81afd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452640"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969118"
 ---
 # <a name="tablesort-clear"></a>TableSort: clear
 
@@ -99,3 +99,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

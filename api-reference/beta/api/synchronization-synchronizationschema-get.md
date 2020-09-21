@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e7b7d961b70be43f569c391660ef567b1852c42d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 136e24507497db7a109272b41d1ad4c11d3b971e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471191"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969179"
 ---
 # <a name="get-synchronizationschema"></a>Получение Синчронизатионсчема
 
@@ -47,7 +47,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [синчронизатионсчема](../resources/synchronization-synchronizationschema.md) в тексте отклика.
 
@@ -150,3 +150,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

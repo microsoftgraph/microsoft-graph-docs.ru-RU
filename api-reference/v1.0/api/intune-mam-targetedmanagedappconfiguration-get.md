@@ -3,14 +3,14 @@ title: Получение targetedManagedAppConfiguration
 description: Чтение свойств и связей объекта targetedManagedAppConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2d348884d053e694d06856810424f64995bf460
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6c8b139e0092982ba7619236e87a1268872d70da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43398152"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968047"
 ---
 # <a name="get-targetedmanagedappconfiguration"></a>Получение targetedManagedAppConfiguration
 
@@ -38,19 +38,19 @@ ms.locfileid: "43398152"
 GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -89,6 +89,9 @@ Content-Length: 611
   }
 }
 ```
+
+
+
 
 
 

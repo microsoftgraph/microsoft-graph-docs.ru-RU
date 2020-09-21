@@ -3,14 +3,14 @@ title: действие Хаспайлоадлинкс
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47bf788ea6f7196b1b9387c28638523576e13f5c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0592d02958fc9969e77f27a9cd085616b523bffc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43390775"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969545"
 ---
 # <a name="haspayloadlinks-action"></a>действие Хаспайлоадлинкс
 
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceCompliancePolicies/hasPayloadLinks
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -100,6 +100,9 @@ Content-Length: 249
   ]
 }
 ```
+
+
+
 
 
 

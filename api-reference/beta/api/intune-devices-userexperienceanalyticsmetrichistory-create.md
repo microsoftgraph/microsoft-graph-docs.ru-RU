@@ -3,14 +3,14 @@ title: Создание Усерекспериенцеаналитиксметр
 description: Создание нового объекта Усерекспериенцеаналитиксметричистори.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac109c158205e21e28b2fb8c5defa60ad9b3b576
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 7b5f02c4cb7558c3c3e18661e3978a16227d23b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793488"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970112"
 ---
 # <a name="create-userexperienceanalyticsmetrichistory"></a>Создание Усерекспериенцеаналитиксметричистори
 
@@ -29,7 +29,7 @@ ms.locfileid: "46793488"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,10 +43,10 @@ POST /deviceManagement/userExperienceAnalyticsMetricHistory
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксметричистори в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксметричистори.
@@ -58,7 +58,7 @@ POST /deviceManagement/userExperienceAnalyticsMetricHistory
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксметричистори](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,6 +89,9 @@ Content-Length: 185
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cc61dd5eb9d5e012f0fce672eac4f330eb460df3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ceb65ac10fed3dee257893e2629ca137c749cb13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437514"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969209"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>Синчронизатионжоб: Валидатекредентиалс
 
@@ -46,9 +46,9 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |усесаведкредентиалс|Boolean|Когда `true` `credentials` параметр будет игнорироваться и будут проверены ранее сохраненные учетные данные (если они есть). |
-|записей|Коллекция [синчронизатионсекреткэйстрингвалуепаир](../resources/synchronization-secretkeystringvaluepair.md)|Учетные данные для проверки. Игнорируется, `useSavedCredentials` если параметр `true`имеет значение.|
+|записей|Коллекция [синчронизатионсекреткэйстрингвалуепаир](../resources/synchronization-secretkeystringvaluepair.md)|Учетные данные для проверки. Игнорируется, если `useSavedCredentials` параметр имеет значение `true` .|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Если проверка прошла успешно, этот метод возвращает `204, No Content` код отклика. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -112,3 +112,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

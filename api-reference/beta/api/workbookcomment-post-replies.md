@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7fde36d6d5d40d22009a52ab279f91ce10dd2e8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fe85d3334cad78f0156c10b0ba3d2863df8fd6f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451401"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968775"
 ---
 # <a name="create-workbookcommentreply"></a>Создание Воркбуккомментрепли
 
@@ -46,7 +46,7 @@ POST /workbook/comments/{id}/replies
 
 В тексте запроса добавьте представление объекта [воркбуккомментрепли](../resources/workbookcommentreply.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [воркбуккомментрепли](../resources/workbookcommentreply.md) в тексте отклика.
 
@@ -118,3 +118,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

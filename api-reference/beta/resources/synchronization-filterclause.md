@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6688f26353bed9e92f60a93b688b1679e70bd75f
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 91cc7f85dc4c42f806be5e365f21adb0d5e972fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218431"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968376"
 ---
 # <a name="filterclause-resource-type"></a>Тип ресурса Филтерклаусе
 
@@ -60,3 +60,5 @@ ms.locfileid: "43218431"
   "suppressions": []
 }
 -->
+
+

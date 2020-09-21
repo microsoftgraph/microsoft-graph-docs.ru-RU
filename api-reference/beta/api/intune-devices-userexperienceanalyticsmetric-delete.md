@@ -3,14 +3,14 @@ title: Удаление Усерекспериенцеаналитиксметр
 description: Удаляет объект Усерекспериенцеаналитиксметрик.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 663eb0801ac02205fa5159439ffea0ad869ee99e
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 44bb8f2bb435c9dac4b6a3d14a3a5f35f02a5b62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46789897"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970147"
 ---
 # <a name="delete-userexperienceanalyticsmetric"></a>Удаление Усерекспериенцеаналитиксметрик
 
@@ -29,7 +29,7 @@ ms.locfileid: "46789897"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,10 +47,10 @@ DELETE /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyti
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -69,6 +69,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalytics
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

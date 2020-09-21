@@ -1,18 +1,18 @@
 ---
-title: Список Оргконтактс
+title: Перечисление orgContacts
 description: Получение списка контактов Организации для этой Организации.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a44c82b6eef63863577bfd64e44e3ab020fc67a0
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 85992f10a29962c2ceea9ca9fcfd8f0ce3353a71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969517"
 ---
-# <a name="list-orgcontacts"></a>Список Оргконтактс
+# <a name="list-orgcontacts"></a>Перечисление orgContacts
 
 Пространство имен: microsoft.graph
 
@@ -35,15 +35,15 @@ ms.locfileid: "44336784"
 GET /contacts
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, включая `$search` , `$count` и `$filter` . Можно использовать `$search` свойство **DisplayName** . При добавлении или обновлении элементов для этого ресурса они могут индексироваться для использования с `$count` `$search` параметрами запроса. Между добавлением или обновлением элемента может быть небольшая задержка, а когда он доступен в индексе.
+Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| консистенцилевел | закончить. Этот заголовок и `$count` обязательные при использовании `$search` `$filter` с `$orderby` параметром Query. Он использует индекс, который может быть не последним в актуальном изменении объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`или применении `$filter` с параметром запроса `$orderby`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -307,3 +307,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

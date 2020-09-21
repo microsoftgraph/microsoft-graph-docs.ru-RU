@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5eced3dfe4a796f5d6db9340a1db819a7de4781f
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 5b5a6ac62098e2d5f2bba21c0bc32c7045cb9930
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524361"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969064"
 ---
 # <a name="archive-team"></a>Архивация команды
 
@@ -32,11 +32,11 @@ ms.locfileid: "46524361"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Теамсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Теамсеттингс. Edit. Group *, Теамсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Application | Теамсеттингс. Edit. Group *, Теамсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
-> **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом](https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -57,7 +57,7 @@ POST /teams/{id}/archive
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-Этот необязательный параметр определяет, нужно ли устанавливать разрешения для участников группы только для чтения на сайте SharePoint Online, связанном с командой. Если присвоить ему значение false или не указать текст, этот этап будет пропущен.
+Этот необязательный параметр определяет, следует ли для участников команды задать разрешения только для чтения на сайте SharePoint Online, связанном с командой. Если присвоить ему значение false или не указать текст, этот этап будет пропущен.
 
 ## <a name="response"></a>Отклик
 
@@ -113,3 +113,5 @@ Content-Length: 0
   "suppressions": []
 }
 -->
+
+

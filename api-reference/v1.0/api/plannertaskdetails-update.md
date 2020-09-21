@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: d94fac4d9feab57c5493d62d2b19b36f055ccd62
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: ea626e17954cf0c3c3813e7f4a00df1faf447bf5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681844"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967869"
 ---
 # <a name="update-plannertaskdetails"></a>Обновление объекта plannertaskdetails
 
@@ -43,7 +43,7 @@ PATCH /planner/tasks/{id}/details
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|Коллекция элементов контрольного списка задачи.|
-|description|Строка|Описание задачи.|
+|description|String|Описание задачи.|
 |previewType|string|Устанавливает тип предварительного просмотра задачи. Допустимые значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если `automatic` выбран отображаемый предварительный просмотр, то приложение просматривает задачу.|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 
@@ -189,3 +189,4 @@ Content-length: 1793
   "suppressions": [
   ]
 }-->
+

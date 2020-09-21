@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a4192171bc48b0a535b75f527929d97426e3e1f8
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 02374b55c5d1905c26675ea5419dce3115e3c4c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199930"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969503"
 ---
 # <a name="list-onpremisesagentgroups"></a>Список Онпремисесажентграупс
 
@@ -46,13 +46,13 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/agentGroups
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [онпремисесажентграуп](../resources/onpremisesagentgroup.md) в тексте отклика.
 
@@ -137,3 +137,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

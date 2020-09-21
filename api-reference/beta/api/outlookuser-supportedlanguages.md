@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 47aceb842309ce7bed1c987262f5cda7ad398c67
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4828b37ec738d31806c3fecd6a5da29cefefb667
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440670"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969426"
 ---
 # <a name="outlookuser-supportedlanguages"></a>outlookUser: supportedLanguages
 
@@ -47,7 +47,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [localeInfo](../resources/localeinfo.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
@@ -122,3 +122,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

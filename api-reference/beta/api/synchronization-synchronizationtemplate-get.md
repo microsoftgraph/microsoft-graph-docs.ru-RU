@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e0f5ff93cc87bd5c4cca2ada9891ba8ce4d02ac4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cbbbc56b78523b88edd1d958179f6a479aa5163f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471162"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969139"
 ---
 # <a name="get-synchronizationtemplate"></a>Получение Синчронизатионтемплате
 
@@ -46,7 +46,7 @@ GET servicePrincipals/{id}/synchronization/templates/{templateId}
 
 Не указывайте текст запроса для этого метода.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) в тексте отклика.
 
@@ -74,3 +74,5 @@ HTTP/1.1 200 OK
         }
 }
 ```
+
+

@@ -3,14 +3,14 @@ title: Перечисление объектов iosCertificateProfile
 description: Список свойств и связей объектов iosCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 394d6e436412508c3f1259a26a6b6ef3cb5efee3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e3dea58c7cd19f078f5a9cf9d3de767c352fa257
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442073"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968195"
 ---
 # <a name="list-ioscertificateprofiles"></a>Перечисление объектов iosCertificateProfile
 
@@ -41,13 +41,13 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -79,6 +79,9 @@ Content-Length: 392
   ]
 }
 ```
+
+
+
 
 
 

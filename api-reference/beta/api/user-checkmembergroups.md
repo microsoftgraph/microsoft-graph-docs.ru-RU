@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e5559e2c581e573e8154168ba5bd1db39cdb536e
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 9e9cedfa435d235baa7099c5755fc6bead5c2aaa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896478"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968941"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -20,7 +20,7 @@ ms.locfileid: "44896478"
 
 Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых указанный пользователь состоит напрямую или транзитивно.
 
-Можно проверить не более 20 групп на каждый запрос. Эта функция поддерживает Microsoft 365 и другие типы групп, подготовленные в Azure AD. Обратите внимание, что группы Microsoft 365 не могут содержать групп. Поэтому членство в группе Microsoft 365 всегда является прямым.
+Можно проверить не более 20 групп на каждый запрос. Эта функция поддерживает Microsoft 365 и другие типы групп, подготовленные в Azure AD. Обратите внимание, что группы Майкрософт 365 не могут содержать групп. Поэтому членство в группе Microsoft 365 всегда является прямым.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -137,3 +137,5 @@ Content-length: 39
   ]
 }
 -->
+
+

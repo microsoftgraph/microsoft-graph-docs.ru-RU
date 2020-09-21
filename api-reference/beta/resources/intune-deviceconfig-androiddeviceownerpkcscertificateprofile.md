@@ -3,14 +3,14 @@ title: Тип ресурса Андроиддевицеовнерпкксцер�
 description: Профиль сертификата PKCS для владельца устройства Android
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f914caf48ae11d346cb8ccd180899e592207183
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: f223b7e26affd01bc69cd97349d310ab9921f4ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789559"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968712"
 ---
 # <a name="androiddeviceownerpkcscertificateprofile-resource-type"></a>Тип ресурса Андроиддевицеовнерпкксцертификатепрофиле
 
@@ -29,10 +29,10 @@ ms.locfileid: "44789559"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Андроиддевицеовнерпкксцертификатепрофилес](../api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-list.md)|Коллекция [андроиддевицеовнерпкксцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md)|Список свойств и связей объектов [андроиддевицеовнерпкксцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md) .|
-|[Получение Андроиддевицеовнерпкксцертификатепрофиле](../api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-get.md)|[андроиддевицеовнерпкксцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md)|Чтение свойств и связей объекта [андроиддевицеовнерпкксцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md) .|
-|[Создание Андроиддевицеовнерпкксцертификатепрофиле](../api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-create.md)|[андроиддевицеовнерпкксцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md)|Создание нового объекта [андроиддевицеовнерпкксцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md) .|
+|[Получение Андроиддевицеовнерпкксцертификатепрофиле](../api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-get.md)|[androidDeviceOwnerPkcsCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md)|Чтение свойств и связей объекта [андроиддевицеовнерпкксцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md) .|
+|[Создание Андроиддевицеовнерпкксцертификатепрофиле](../api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-create.md)|[androidDeviceOwnerPkcsCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md)|Создание нового объекта [андроиддевицеовнерпкксцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md) .|
 |[Удаление Андроиддевицеовнерпкксцертификатепрофиле](../api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-delete.md)|Нет|Удаляет объект [андроиддевицеовнерпкксцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md).|
-|[Обновление Андроиддевицеовнерпкксцертификатепрофиле](../api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-update.md)|[андроиддевицеовнерпкксцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md)|Обновление свойств объекта [андроиддевицеовнерпкксцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md) .|
+|[Обновление Андроиддевицеовнерпкксцертификатепрофиле](../api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-update.md)|[androidDeviceOwnerPkcsCertificateProfile](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md)|Обновление свойств объекта [андроиддевицеовнерпкксцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -46,7 +46,7 @@ ms.locfileid: "44789559"
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |Свойства renewalthresholdpercentage|Int32|Пороговое значение возобновления сертификата. Допустимые значения — от 1 до 99, наследуемые от [андроиддевицеовнерцертификатепрофилебасе](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)|
 |subjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Формат имени субъекта сертификата. Наследуется от [андроиддевицеовнерцертификатепрофилебасе](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md). Возможные значения: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
@@ -56,7 +56,7 @@ ms.locfileid: "44789559"
 |subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Тип альтернативного имени субъекта сертификата. Наследуется от [андроиддевицеовнерцертификатепрофилебасе](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md). Возможные значения: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |цертификатионаусорити|String|Центр сертификации PKCS|
 |цертификатионаусоритинаме|String|Имя центра сертификации PKCS|
-|цертификатионаусорититипе|[девицеманажементцертификатионаусорити](../resources/intune-deviceconfig-devicemanagementcertificationauthority.md)|Тип центра сертификации. Возможные значения: `notConfigured`, `microsoft`, `digiCert`.|
+|цертификатионаусорититипе|[deviceManagementCertificationAuthority](../resources/intune-deviceconfig-devicemanagementcertificationauthority.md)|Тип центра сертификации. Возможные значения: `notConfigured`, `microsoft`, `digiCert`.|
 |цертификатетемплатенаме|String|Имя шаблона сертификата PKCS|
 |subjectAlternativeNameFormatString|String|Настраиваемая строка, определяющая атрибут AAD.|
 |Свойства subjectnameformatstring|String|Настраиваемый формат для использования с SubjectNameFormat = Custom. Пример: CN = {EmailAddress}}, E = {EmailAddress}}, OU = Enterprise Users, O = Contoso Corporation, L = Redmond, ST = Вашингтон, C = US|
@@ -146,6 +146,9 @@ ms.locfileid: "44789559"
   ]
 }
 ```
+
+
+
 
 
 

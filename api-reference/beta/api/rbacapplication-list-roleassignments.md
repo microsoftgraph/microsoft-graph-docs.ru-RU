@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 525fa925ae3c953908138de2e2d61ff921df057f
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 6586de66b1e56820427ca2d6e5c0cdf9d70cc0de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007124"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969307"
 ---
 # <a name="list-unifiedroleassignments"></a>Список Унифиедролеассигнментс
 
@@ -26,8 +26,8 @@ ms.locfileid: "45007124"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -40,7 +40,7 @@ GET /roleManagement/directory/roleAssignments
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Для выполнения этой операции требуется `$filter` параметр запроса. Вы можете отфильтровать `roleDefinitionId` по `principalId` свойствам или. `roleDefinitionId`Свойство может быть идентификатором объекта Role или шаблоном роли. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Для выполнения этой операции требуется `$filter` параметр запроса. Вы можете отфильтровать `roleDefinitionId` по `principalId` свойствам или. `roleDefinitionId`Свойство может быть идентификатором объекта Role или шаблоном роли. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,7 +48,7 @@ GET /roleManagement/directory/roleAssignments
 |:----------|:----------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -285,3 +285,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

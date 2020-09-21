@@ -3,14 +3,14 @@ title: Список Таржетедманажедаппконфигуратио
 description: Список свойств и связей объектов Таржетедманажедаппконфигуратионполицисетитем.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e96da6c7c808c5dc7c077a79a8cd888e17c79aed
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 907408d4ef7167234a0fb8828db3297d28e65cf8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375147"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969587"
 ---
 # <a name="list-targetedmanagedappconfigurationpolicysetitems"></a>Список Таржетедманажедаппконфигуратионполицисетитемс
 
@@ -43,13 +43,13 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [таржетедманажедаппконфигуратионполицисетитем](../resources/intune-policyset-targetedmanagedappconfigurationpolicysetitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -86,6 +86,9 @@ Content-Length: 579
   ]
 }
 ```
+
+
+
 
 
 

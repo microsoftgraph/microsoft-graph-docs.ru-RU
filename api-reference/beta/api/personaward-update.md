@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a33959dda6b8316f855ea03878756aa6b9bd5ce4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1338c1990ad76611295ac34e13b30b53651839d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46813185"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969321"
 ---
 # <a name="update-personaward"></a>Обновление Персонавард
 
@@ -60,7 +60,7 @@ PATCH /users/{id | userPrincipalName}/profile/awards/{id}
 |thumbnailUrl|String|URL-адрес, ссылающийся на эскиз вознаграждения или соблюдается.  |
 |webUrl|String|URL-адрес, ссылающийся на награду или соблюдать. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [персонавард](../resources/personaward.md) в тексте отклика.
 
@@ -140,3 +140,5 @@ Content-Type: application/json
   "webUrl": "https://www.iabm.io"
 }
 ```
+
+

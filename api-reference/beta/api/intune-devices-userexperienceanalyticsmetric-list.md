@@ -3,14 +3,14 @@ title: Список Усерекспериенцеаналитиксметрик
 description: Список свойств и связей объектов Усерекспериенцеаналитиксметрик.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 30a72de1206d99d7bfd3a82e8ae57bf034810156
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 775906c3adc9b31c97aa6455e42b28fca4f2d640
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970126"
 ---
 # <a name="list-userexperienceanalyticsmetrics"></a>Список Усерекспериенцеаналитиксметрикс
 
@@ -46,13 +46,13 @@ GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsB
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [усерекспериенцеаналитиксметрик](../resources/intune-devices-userexperienceanalyticsmetric.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -81,6 +81,9 @@ Content-Length: 226
   ]
 }
 ```
+
+
+
 
 
 

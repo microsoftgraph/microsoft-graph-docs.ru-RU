@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 0c52751ff59b47b92b100dc9ed0b1d342cf80f3a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87e9c5cdb1b5c991ee240752596409f00e8f2869
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510839"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967886"
 ---
 # <a name="get-plannertask"></a>Получение объекта plannerTask
 
@@ -40,7 +40,7 @@ GET /planner/tasks/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код ответа `200 OK` и объект [plannerTask](../resources/plannertask.md) в тексте ответа.
 
@@ -127,3 +127,4 @@ Content-length: 707
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1fa0867517279954100117d60d933255a5fee587
-ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
+ms.openlocfilehash: afb8dbdb19816b487dfe7fe60cd09897120caa2b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47296506"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968985"
 ---
 # <a name="update-unifiedroledefinition"></a>Обновление Унифиедроледефинитион
 
@@ -42,7 +42,7 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -56,7 +56,7 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 |isBuiltIn|Boolean| Флаг, указывающий, является ли определение роли частью набора по умолчанию, входящего в состав продукта или настраиваемого. Только для чтения. |
 |isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения. Только для чтения, если для Builtin задано значение true. |
 |resourceScopes|Коллекция String| Список разрешений областей, к которым применяется определение роли. В настоящее время поддерживается только "/". Только для чтения, если для Builtin задано значение true. **НЕ ИСПОЛЬЗУЙТЕ. Это свойство будет нерекомендуемым в ближайшее время. Присоединение области к назначению ролей.**|
-|rolePermissions|Коллекция [унифиедролепермиссион](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, если для Builtin задано значение true. Обязательный атрибут. |
+|rolePermissions|Коллекция [унифиедролепермиссион](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, если для Builtin задано значение true. Обязательно. |
 |templateId|String| Настраиваемый идентификатор шаблона, который можно задать, если параметру Builtin присвоено значение false. Этот идентификатор обычно используется, если необходимо, чтобы один идентификатор совпадал для разных каталогов. Только для чтения, если для Builtin задано значение true. |
 |инхеритспермиссионсфром| Коллекция [унифиедроледефинитион](../resources/unifiedroledefinition.md)| Доступная только для чтения коллекция определений ролей, от которых наследуется данное определение роли. Этот атрибут поддерживает только встроенные роли Azure AD. |
 |version|String| Указывает версию определения роли. Только для чтения, если для Builtin задано значение true.|
@@ -137,3 +137,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

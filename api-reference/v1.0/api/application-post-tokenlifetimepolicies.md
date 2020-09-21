@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ab4513ebebbf6f298d7188424dc77ae135f9a1cb
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 3f10ee2a69d2546f8320277d58025b99c2c8a3c5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806735"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968320"
 ---
 # <a name="assign-tokenlifetimepolicy"></a>Назначение типа ресурса tokenLifetimePolicy
 
@@ -45,9 +45,9 @@ POST /applications/{id}/tokenLifetimePolicies/$ref
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите идентификатор объекта [токенлифетимеполици](../resources/tokenlifetimepolicy.md) (с помощью `@odata.id` свойства), который должен быть назначен для приложения или участника-службы.
+В тексте запроса укажите идентификатор объекта [токенлифетимеполици](../resources/tokenlifetimepolicy.md) (с помощью `@odata.id` Свойства), который должен быть назначен для приложения или участника-службы.
 
 ## <a name="response"></a>Отклик
 
@@ -93,7 +93,7 @@ Content-Type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -115,3 +115,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

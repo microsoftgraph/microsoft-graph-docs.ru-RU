@@ -1,24 +1,24 @@
 ---
-title: Обновление webAccount
-description: Обновление свойств объекта webAccount.
+title: Обновление учетной записи
+description: Обновление свойств объекта учетной записи.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b2eb21947edb12693ba44cdb2d19ba535df03306
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 4ad1e07d21271096f8be8968cb43be2cbd19ec87
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819608"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968885"
 ---
-# <a name="update-webaccount"></a>Обновление webAccount
+# <a name="update-webaccount"></a>Обновление учетной записи
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [webAccount](../resources/webaccount.md) в профиле [пользователя.](../resources/profile.md)
+Обновление свойств объекта [учетной записи](../resources/webaccount.md) в [профиле](../resources/profile.md)пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "46819608"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
-| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -53,17 +53,17 @@ PATCH /users/{id | userPrincipalName}/profile/webAccounts/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут просматривать значения, содержащиеся в сущности. Наследуется от [itemFacet.](../resources/itemfacet.md) Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Содержит описание, предоставленное пользователем для учетной записи в службе, на которую указывает ссылка.|
-|inference|[inferenceData](../resources/inferencedata.md)|Содержит подробные данные о подобных значениях, если сущность задана созданием или изменением приложения. Наследуется от [itemFacet.](../resources/itemfacet.md)|
-|service|[serviceInformation](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
-|statusMessage|String|Содержит сообщение о состоянии из облачной службы, если она указана или синхронизирована. |
-|userId|String|Имя пользователя, отображаемое для учетной записи веб-сайта.  |
-|webUrl|String|Содержит ссылку на профиль пользователя в облачной службе, если она есть.|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|String|Содержит описание, предоставленное пользователем для учетной записи службы, на которую выполняется ссылка.|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|service|[сервицеинформатион](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
+|статусмессаже|String|Содержит сообщение о состоянии от облачной службы, если оно предоставлено или синхронизировано. |
+|userId|String|Имя пользователя, отображаемое для учетной записи Account.  |
+|webUrl|String|Содержит ссылку на профиль пользователя в облачной службе, если она существует.|
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код `200 OK` ответа и обновленный [объект webAccount](../resources/webaccount.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [учетной записи](../resources/webaccount.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -149,3 +149,5 @@ Content-type: application/json
   "webUrl": "https://github.com/innocenty.popov"
 }
 ```
+
+

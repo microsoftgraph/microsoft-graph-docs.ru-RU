@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a37e52075002153fc4ccb81e2031a9b5d87408f5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9918c1ddf0c7ada0a4a7aeeaa902e36d13a27a10
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451164"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968740"
 ---
 # <a name="get-workbookworksheetprotection"></a>Получение Воркбукворкшитпротектион
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/protection
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукворкшитпротектион](../resources/workbookworksheetprotection.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -104,3 +104,5 @@ Content-length: 23
   ]
 }
 -->
+
+

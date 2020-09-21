@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 811c24d2ef89ee874691e79b0998117a09303840
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 621f902e01ec3026a71740a7c93b182602347ec4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451422"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968838"
 ---
 # <a name="list-workbookcommentreplies"></a>Список Воркбуккомментреплиес
 
@@ -46,7 +46,7 @@ GET /workbook/comments/{id}/replies
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуккомментрепли](../resources/workbookcommentreply.md) в тексте отклика.
 
@@ -122,3 +122,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

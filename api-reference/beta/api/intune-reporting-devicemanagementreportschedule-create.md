@@ -3,14 +3,14 @@ title: Создание Девицеманажементрепортсчедул
 description: Создание нового объекта Девицеманажементрепортсчедуле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9cfcdc8202bc6767ef723c47249f42cfba71e1d2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 506ce1a38363e75ae22e683dd0ca31de6ed34d80
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391628"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969573"
 ---
 # <a name="create-devicemanagementreportschedule"></a>Создание Девицеманажементрепортсчедуле
 
@@ -43,7 +43,7 @@ POST /deviceManagement/reports/reportSchedules
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,18 +53,18 @@ POST /deviceManagement/reports/reportSchedules
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для этой сущности|
+|id|String|Уникальный идентификатор для этой сущности|
 |репортсчедуленаме|String|Имя расписания|
 |subject|String|Тема запланированных отчетов, которые доставляются|
-|письма|Коллекция объектов string|Сообщения электронной почты, на которые доставляются запланированные отчеты|
+|письма|Коллекция String|Сообщения электронной почты, на которые доставляются запланированные отчеты|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Периодичность запланированной доставки отчета. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Время, когда начинается доставка запланированных отчетов|
 |endDateTime|DateTimeOffset|Время окончания доставки запланированных отчетов|
 |userId|String|Идентификатор пользователя, создавшего отчет|
 |репортнаме|String|Имя отчета|
 |filter|String|Фильтры, примененные к отчету|
-|select|Коллекция объектов string|Столбцы, выбранные из отчета|
-|orderBy|Коллекция объектов string|Упорядочение столбцов в отчете|
+|select|Коллекция String|Столбцы, выбранные из отчета|
+|orderBy|Коллекция String|Упорядочение столбцов в отчете|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат запланированного отчета. Возможные значения: `csv`, `pdf`.|
 
 
@@ -134,6 +134,9 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
+
+
+
 
 
 
