@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c1e7b6b55734a2eec8367413f47e7b3f77a7b2dd
-ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
+ms.openlocfilehash: 5a0d8ed68ea3e4f8027e44409246ea56b45557bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47296521"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019777"
 ---
 # <a name="list-unifiedroledefinitions"></a>Список Унифиедроледефинитионс
 
@@ -45,7 +45,7 @@ GET /roleManagement/directory/roleDefinitions
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -205,3 +205,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

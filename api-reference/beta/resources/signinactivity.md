@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 385a4484090a58682fdd7560a7b7560a1601b124
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
+ms.openlocfilehash: faba4eeb6c1e8722ddfac012658576d8b2839267
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038672"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067162"
 ---
 # <a name="signinactivity-resource-type"></a>Тип ресурса Сигнинактивити
 
@@ -56,3 +56,4 @@ ms.locfileid: "45038672"
   "section": "documentation",
   "tocPath": ""
 }-->
+

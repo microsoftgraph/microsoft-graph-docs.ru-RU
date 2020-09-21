@@ -5,12 +5,12 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 54efe4d3a24a0409e8daa2ebde6d4aff4b729118
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 76ec180ceb239f79c420f26b48521e9bc7e81787
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440571"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979485"
 ---
 # <a name="emailactivityuserdetail-resource-type"></a>Тип ресурса Емаилактивитюсердетаил
 
@@ -22,14 +22,14 @@ ms.locfileid: "43440571"
 | :---------------- | :---------------- |
 | репортрефрешдате | Дата              |
 | userPrincipalName | String            |
-| displayName       | Строка            |
+| displayName       | String            |
 | isDeleted         | Boolean           |
 | делетеддате       | Дата              |
 | ластактивитидате  | Дата              |
 | сендкаунт         | Int64             |
 | рецеивекаунт      | Int64             |
 | реадкаунт         | Int64             |
-| ассигнедпродуктс  | Коллекция объектов string |
+| ассигнедпродуктс  | Коллекция String |
 | репортпериод      | String            |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,3 +56,5 @@ ms.locfileid: "43440571"
   "reportPeriod": "String"
 }
 ```
+
+

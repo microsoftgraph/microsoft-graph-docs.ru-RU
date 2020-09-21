@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 13792bcffabbc9dceb272cd1cf156fbf9a5a5a10
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb6b665814281629836f4c5148b567de776ef2ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520571"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067127"
 ---
 # <a name="singleuser-complex-type"></a>сложный тип SingleUser.
 
@@ -18,7 +18,7 @@ ms.locfileid: "42520571"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется в параметрах просмотра запроса, утверждения и назначения для [политики назначения пакетов Access](accesspackageassignmentpolicy.md). Это `@odata.type` значение `#microsoft.graph.singleUser` указывает на то, что этот набор пользователей определяет определенного пользователя в клиенте, который будет разрешен в качестве запрашивающего, утверждающего или проверяющего.
+Используется в параметрах просмотра запроса, утверждения и назначения для [политики назначения пакетов Access](accesspackageassignmentpolicy.md). `@odata.type`Это значение `#microsoft.graph.singleUser` указывает на то, что этот набор пользователей определяет определенного пользователя в клиенте, который будет разрешен в качестве запрашивающего, утверждающего или проверяющего.
 
 ## <a name="properties"></a>Свойства
 
@@ -26,11 +26,11 @@ ms.locfileid: "42520571"
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| id |Строка | Идентификатор пользователя в Azure AD. |
+| id |String | Идентификатор пользователя в Azure AD. |
 | description |String | Имя пользователя в Azure AD. Только для чтения. |
 | Создание резервной копии | Boolean | Для **SingleUser.** на этапе утверждения указывает, является ли пользователь утверждающим резервной копии. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено представление типа в формате JSON.
 
@@ -61,3 +61,5 @@ ms.locfileid: "42520571"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

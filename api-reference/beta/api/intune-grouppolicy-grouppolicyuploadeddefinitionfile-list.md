@@ -3,14 +3,14 @@ title: Список Граупполициуплоадеддефинитионф
 description: Список свойств и связей объектов Граупполициуплоадеддефинитионфиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72a13fee0937365094438b1573ec6805ab303913
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 78fdfe7751b44269b3eb37dc67892461b56397dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440940"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000443"
 ---
 # <a name="list-grouppolicyuploadeddefinitionfiles"></a>Список Граупполициуплоадеддефинитионфилес
 
@@ -43,13 +43,13 @@ GET /deviceManagement/groupPolicyUploadedDefinitionFiles
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [граупполициуплоадеддефинитионфиле](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,6 +101,9 @@ Content-Length: 1176
   ]
 }
 ```
+
+
+
 
 
 

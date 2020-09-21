@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a6979d9f17a7a67e93da32fcc97036304e1cc6dc
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 13b2668d71dbf4bf1e1a708f46594caeacd7b8f0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124268"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973395"
 ---
 # <a name="get-datapolicyoperation"></a>Получение dataPolicyOperation
 
@@ -36,11 +36,11 @@ GET /dataPolicyOperations/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {token}|
+| Authorization  | Bearer {token}|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [dataPolicyOperation](../resources/datapolicyoperation.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -105,3 +105,4 @@ Content-length: 212
   "suppressions": [
   ]
 }-->
+

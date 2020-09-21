@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f62adf38b0c417871f207f20ab8eb5bcb530af82
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 5433504aec92d8fb96a00857ff4e27c7bfc200c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124520"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973402"
 ---
 # <a name="update-a-group-setting"></a>Обновление параметра группы
 
@@ -41,7 +41,7 @@ PATCH /groups/{id}/settings/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание |
 |:-----------|:-----------|
-| Авторизация  | {Token}. Обязательно. |
+| Authorization  | {Token}. Обязательно. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -232,3 +232,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

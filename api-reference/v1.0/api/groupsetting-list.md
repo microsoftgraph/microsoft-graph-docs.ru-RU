@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: eb540d0e1b4819abe18d6fa374e1b553eb0297b7
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 5ea98dc5d7fd2db802fb7b27e0e9536ef0830bcd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124513"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973393"
 ---
 # <a name="list-group-settings"></a>Параметры группы списка
 
@@ -51,7 +51,7 @@ GET groups/{id}/settings
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [groupSetting](../resources/groupsetting.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -127,3 +127,4 @@ Content-length: 263
   "suppressions": [
   ]
 }-->
+

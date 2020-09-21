@@ -3,14 +3,14 @@ title: Получение Рестриктедаппсвиолатион
 description: Чтение свойств и связей объекта Рестриктедаппсвиолатион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bded226cf7e86558ec7626847c0ec27f06b8156e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ca87ee5a94e2979b3c526493772d2b5ef76e244d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431716"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086132"
 ---
 # <a name="get-restrictedappsviolation"></a>Получение Рестриктедаппсвиолатион
 
@@ -49,10 +49,10 @@ GET /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedApp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [рестриктедаппсвиолатион](../resources/intune-deviceconfig-restrictedappsviolation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -91,6 +91,9 @@ Content-Length: 664
   }
 }
 ```
+
+
+
 
 
 

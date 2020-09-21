@@ -3,14 +3,14 @@ title: Тип ресурса Полицисетассигнмент
 description: Класс, содержащий свойства, которые используются для назначения политик.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7d3ff168f01a7b89c5e7abb46100de0120c677a
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 4bb199bdd78bc763fd791507cd7895ca2f9e3ada
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793768"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993422"
 ---
 # <a name="policysetassignment-resource-type"></a>Тип ресурса Полицисетассигнмент
 
@@ -61,6 +61,9 @@ ms.locfileid: "44793768"
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bbce8afa1926444af025b0b57d857f94a296e852
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2279d5da5bf663b776ec9deee5241103079d4bb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443100"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079816"
 ---
 # <a name="mailfolder-resource-type"></a>Тип ресурса mailFolder
 
@@ -142,7 +142,7 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 ## <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -157,3 +157,5 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
   "suppressions": []
 }
 -->
+
+

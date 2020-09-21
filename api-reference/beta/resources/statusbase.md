@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3afd7ea4e48c3f4c12a211c32278affea5d64b6b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ee205db24cf8591725ca7d9fc3c4a0fe8c72489e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411907"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067106"
 ---
 # <a name="statusbase-resource-type"></a>Тип ресурса Статусбасе
 
@@ -26,7 +26,7 @@ ms.locfileid: "43411907"
 |:-------------|:------------|:------------|
 |status|String| Возможные значения: `success`, `failure`, `skipped`, `unknownFutureValue`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -54,3 +54,5 @@ ms.locfileid: "43411907"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

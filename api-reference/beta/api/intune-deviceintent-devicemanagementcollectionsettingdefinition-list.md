@@ -3,14 +3,14 @@ title: Список Девицеманажементколлектионсетт
 description: Список свойств и связей объектов Девицеманажементколлектионсеттингдефинитион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5f74d2b9ab3ae856d845b4f906b0358a14d4a32
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5f719ced3546dd9c235f7a54959c503cdb1ccbc5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43329525"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054464"
 ---
 # <a name="list-devicemanagementcollectionsettingdefinitions"></a>Список Девицеманажементколлектионсеттингдефинитионс
 
@@ -49,10 +49,10 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементколлектионсеттингдефинитион](../resources/intune-deviceintent-devicemanagementcollectionsettingdefinition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -111,6 +111,9 @@ Content-Length: 1213
   ]
 }
 ```
+
+
+
 
 
 

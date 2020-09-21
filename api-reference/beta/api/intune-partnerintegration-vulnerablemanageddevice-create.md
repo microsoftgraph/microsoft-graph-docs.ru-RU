@@ -3,14 +3,14 @@ title: Создание Вулнераблеманажеддевице
 description: Создание нового объекта Вулнераблеманажеддевице.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 109a641f78fd1f29eabebbb9c73941efc557fde4
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: a15e76ec74f2e1a4d55b57eb2d7d81d1eecc0dae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790300"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986359"
 ---
 # <a name="create-vulnerablemanageddevice"></a>Создание Вулнераблеманажеддевице
 
@@ -29,7 +29,7 @@ ms.locfileid: "46790300"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,10 +43,10 @@ POST ** Collection URI for microsoft.management.services.api.vulnerableManagedDe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Вулнераблеманажеддевице в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Вулнераблеманажеддевице.
@@ -60,7 +60,7 @@ POST ** Collection URI for microsoft.management.services.api.vulnerableManagedDe
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,6 +95,9 @@ Content-Length: 263
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
+
+
+
 
 
 

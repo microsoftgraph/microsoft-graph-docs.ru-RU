@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 613fab3adf4da1d3fd2f972818d0cee83db6f6cf
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 5fea16ce14e2df4b87ddc2b3f9246dfe758ec5b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843186"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073266"
 ---
 # <a name="driveitem-preview"></a>driveItem: Preview
 
@@ -47,14 +47,14 @@ POST /users/{userId}/drive/items/{itemId}/preview
 POST /shares/{shareId}/driveItem/preview
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса определяются свойства внедряемого URL-адреса, запрашиваемого приложением.
 Запрос должен быть объектом JSON с указанными ниже свойствами.
 
 |   Имя      |  Тип         | Описание
 |:------------|:--------------|:-----------------------------------------------
-| page        | строка или число | Необязательный параметр. Номер страницы для начала документа, если это необходимо. Указывается как строка для будущих случаев использования для типов файлов, таких как ZIP.
+| page        | строка или число | Необязательное. Номер страницы для начала документа, если это необходимо. Указывается как строка для будущих случаев использования для типов файлов, таких как ZIP.
 | zoom        | number        | Необязательный параметр. Масштаб (при необходимости) для запуска.
 
 ## <a name="response"></a>Отклик
@@ -77,7 +77,7 @@ POST /shares/{shareId}/driveItem/preview
 
 В зависимости от текущего состояния поддержки внедрения для заданных параметров может возвращаться либо getUrl, Постурл, либо и то, и другое.
 
-i-параметры — это строка, отформатированная как `application/x-www-form-urlencoded` , и при выполнении POST для постурл Content-Type необходимо задать соответствующие параметры. Например:
+i-параметры — это строка, отформатированная как `application/x-www-form-urlencoded` , и при выполнении POST для постурл Content-Type необходимо задать соответствующие параметры. Пример.
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded
@@ -88,3 +88,4 @@ param1=value&param2=another%20value
 ### <a name="pagezoom"></a>Страница/масштаб
 
 Параметры "Page" и "Zoom" могут быть недоступны для всех предварительных приложений, но будут применены, если это приложение поддерживает приложение Preview.
+

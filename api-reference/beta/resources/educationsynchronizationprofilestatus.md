@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2ba9b9d8ecf6766cddfa670ae2e33b39d0e6acb6
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 0e792b55cddaee3069eaaf53cc9dce68aae041e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434874"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979555"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>Тип ресурса Едукатионсинчронизатионпрофилестатус
 
@@ -32,7 +32,7 @@ ms.locfileid: "45434874"
 
 | Свойство                    | Тип                           | Описание                                                                                                              |
 | :-------------------------- | :----------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| id                          | Строка                         | Уникальный идентификатор ресурса. (только для чтения)                                                                      |
+| id                          | String                         | Уникальный идентификатор ресурса. (только для чтения)                                                                      |
 | status                      | едукатионсинчронизатионстатус | Состояние синхронизации. Возможные значения: `paused` ,, `inProgress` , `success` , `error` `quarantined` , `validationError` . |
 | ластсинчронизатиондатетиме | DateTimeOffset                 | Представляет время, в течение которого последние изменения были просмотрены в каталоге.                                        |
 
@@ -54,3 +54,5 @@ ms.locfileid: "45434874"
   "lastSynchronizationDateTime": "DateTimeOffset"
 }
 ```
+
+

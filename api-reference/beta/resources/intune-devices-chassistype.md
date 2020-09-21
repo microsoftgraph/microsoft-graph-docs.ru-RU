@@ -3,14 +3,14 @@ title: тип перечисления Чассистипе
 description: Тип корпуса.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fcc964a2b78fafc94fab3adcd081083cf4047152
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ba727dc804aa6737f54a74c7763518c72b457ecf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465175"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060785"
 ---
 # <a name="chassistype-enum-type"></a>тип перечисления Чассистипе
 
@@ -26,14 +26,17 @@ ms.locfileid: "43465175"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Найден.|
-|системной|1,1|Системной.|
-|ноутбуков|2|Ноутбуков.|
+|системной|1 |Системной.|
+|ноутбуков|2 |Ноутбуков.|
 |ворксворкстатион|4|Рабочие.|
 |ентерприсесервер|4 |Сервер предприятия.|
 |phone|100|Звонков.|
 |ПК|101|Мобильный планшет.|
 |мобилеосер|102|Другой мобильный.|
 |мобилеункновн|103|Неизвестный мобильный телефон.|
+
+
+
 
 
 

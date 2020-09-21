@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: yyuank
-ms.openlocfilehash: bb5af31f8cad2cf6fa738d55d13775d20a589b97
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 683ef1140105666d96c83249876266db204b1b47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806711"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979429"
 ---
 # <a name="endpoint-resource-type"></a>Тип ресурса Endpoint
 
@@ -77,3 +77,5 @@ ms.locfileid: "46806711"
   "suppressions": []
 }
 -->
+
+

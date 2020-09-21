@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0c668380c05c1a76aa971eef85f133a0e9cf8a07
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: c5d84b8f6ff80f146c02da1d29074181807b16c2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44862569"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079818"
 ---
 # <a name="kerberossignonsettings-resource-type"></a>Тип ресурса Кербероссигнонсеттингс
 
@@ -60,3 +60,4 @@ ms.locfileid: "44862569"
   "section": "documentation",
   "tocPath": ""
 }-->
+

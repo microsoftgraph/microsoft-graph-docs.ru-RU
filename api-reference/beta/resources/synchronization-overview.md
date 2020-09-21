@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d1a2de9dcac9765899fa3eaff6173a3791984ade
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: f97d4d86b2cd66bc62e23dc1f99622ed7af2084c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630321"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067085"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Общие сведения об API синхронизации Azure AD
 
@@ -64,7 +64,7 @@ ms.locfileid: "46630321"
 
 Работа с API синхронизации в основном включает доступ к ресурсам [синчронизатионжоб](synchronization-synchronizationjob.md) и [синчронизатионсчема](synchronization-synchronizationschema.md) . Чтобы найти ресурс [синчронизатионжоб](synchronization-synchronizationjob.md) , необходимо знать идентификатор объекта участника службы, к которому относится задание синхронизации. В приведенных ниже примерах показано, как работать с ресурсами **синчронизатионжоб** и **синчронизатионсчема** .
 
-### <a name="authorization"></a>Authorization
+### <a name="authorization"></a>Авторизация
 
 API синхронизации Azure AD использует OAuth 2,0 для проверки подлинности. Перед выполнением запросов к API необходимо получить маркер доступа. Дополнительные сведения [можно найти в статье получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Для доступа к ресурсам синхронизации приложению требуются разрешения Directory. ReadWrite. ALL. Для получения дополнительных сведений ознакомьтесь с [разрешениями для каталогов](/graph/permissions-reference#directory-permissions).
 
@@ -205,6 +205,8 @@ HTTP/1.1 200 OK
 
 * [Настройка синхронизации с атрибутами расширения каталога](../resources/synchronization-configure-with-directory-extension-attributes.md)
 * [Настройка синхронизации с пользовательскими целевыми атрибутами](../resources/synchronization-configure-with-custom-target-attributes.md)
+
+
 
 
 

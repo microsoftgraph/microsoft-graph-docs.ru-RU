@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 973412d50aef6e57ac9d985d9d6acee8af792d2b
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: f69fb905fb886cd6dc06da90f0a8d997954b6cc4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006995"
 ---
 # <a name="list-schools"></a>Перечисление учебных заведений
 
@@ -26,9 +26,9 @@ ms.locfileid: "45006809"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!NOTE]
 > При использовании делегированных разрешений возвращаются только те ресурсы educationSchool, которые является членом пользователя проверки подлинности.
@@ -159,3 +159,5 @@ Content-length: 345
   ]
 }
 -->
+
+

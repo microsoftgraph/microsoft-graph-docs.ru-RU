@@ -3,14 +3,14 @@ title: Тип ресурса Полицисетитем
 description: Класс, содержащий свойства, используемые для элемента "набор политик".
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2701686d9f2f162a6ec01dfb143c2d8652dd098a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 530dd10960eacd0ded5c5c8d9340469c66020e8c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422508"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993415"
 ---
 # <a name="policysetitem-resource-type"></a>Тип ресурса Полицисетитем
 
@@ -36,10 +36,10 @@ ms.locfileid: "43422508"
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Полицисетитем.|
 |пайлоадид|String|Пайлоадид Полицисетитем.|
 |itemType|String|Полицисеттипе Полицисетитем.|
-|displayName|Строка|DisplayName объекта Полицисетитем.|
+|displayName|String|DisplayName объекта Полицисетитем.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние Полицисетитем. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|гуидеддеплойменттагс|Коллекция объектов string|Теги в руководстве по развертыванию|
+|гуидеддеплойменттагс|Коллекция String|Теги в руководстве по развертыванию|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -68,6 +68,9 @@ ms.locfileid: "43422508"
   ]
 }
 ```
+
+
+
 
 
 

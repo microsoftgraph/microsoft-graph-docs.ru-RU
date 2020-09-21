@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b354be83058d67dc99cd3ffd7c98798017733199
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bcda7c036c7f0f7fc37214af2d340fe0ed888e48
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518576"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013428"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -45,8 +45,8 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|height|Int32|Нужная высота создаваемого изображения. Необязательное.|
-|width|Int32|Нужная ширина создаваемого изображения. Необязательное.|
+|height|Int32|Нужная высота создаваемого изображения. Необязательный параметр.|
+|width|Int32|Нужная ширина создаваемого изображения. Необязательный параметр.|
 |fittingMode|string|Метод, используемый для масштабирования диаграммы до указанных размеров (если заданы и высота, и ширина). "  Допустимые значения: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Отклик
@@ -96,3 +96,4 @@ Content-type: application/json;odata.metadata=minimal;odata.streaming=true
   "section": "documentation",
   "tocPath": ""
 }-->
+

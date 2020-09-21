@@ -3,14 +3,14 @@ title: Создание Девицеманажементинтентсеттин
 description: Создание нового объекта Девицеманажементинтентсеттингкатегори.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1146c0f2fbfba38f7917f97589ce9015c8ef0741
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: be73deedf63368259a5f0772eab3e62b170b4062
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43428129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054457"
 ---
 # <a name="create-devicemanagementintentsettingcategory"></a>Создание Девицеманажементинтентсеттингкатегори
 
@@ -46,7 +46,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/categories
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементинтентсеттингкатегори в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементинтентсеттингкатегори.
@@ -54,12 +54,12 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/categories
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор категории, наследуемый от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
-|displayName|Строка|Имя категории, унаследованное от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|displayName|String|Имя категории, унаследованное от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |хасрекуиредсеттинг|Boolean|Категория содержит обязательный параметр верхнего уровня, наследуемого от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементинтентсеттингкатегори](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -92,6 +92,9 @@ Content-Length: 199
   "hasRequiredSetting": true
 }
 ```
+
+
+
 
 
 

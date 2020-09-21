@@ -3,14 +3,14 @@ title: Обновление Усерекспериенцеаналитиксов
 description: Обновление свойств объекта Усерекспериенцеаналитиксовервиев.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed5e6be44aaf53b907dd88737a7995a8e6d999bf
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: d92a703d548367342f8b2c6ede338edc8bf271f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047478"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>Обновление Усерекспериенцеаналитиксовервиев
 
@@ -133,6 +133,9 @@ Content-Length: 790
   "bestPracticesHealthState": "insufficientData"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса Команажементелигибледевиц�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55df0591dfcbabd997dfda1bb07dbd116c14dcbe
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: b67734bf98a48c31a1346bd730c8521fd8a8d681
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793453"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060771"
 ---
 # <a name="comanagementeligibledevicessummary-resource-type"></a>Тип ресурса Команажементелигибледевицессуммари
 
@@ -51,6 +51,9 @@ ms.locfileid: "44793453"
   "ineligibleCount": 1024
 }
 ```
+
+
+
 
 
 

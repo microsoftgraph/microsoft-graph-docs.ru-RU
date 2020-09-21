@@ -3,14 +3,14 @@ title: Перечисление объектов androidLobApp
 description: Список свойств и связей объектов androidLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75955077a911155de86f4602f11d820c79d01b54
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f2eb3486afe0f925ebefa946ddabc2f930d1b11c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463934"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013330"
 ---
 # <a name="list-androidlobapps"></a>Перечисление объектов androidLobApp
 
@@ -41,13 +41,13 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [androidLobApp](../resources/intune-apps-androidlobapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -108,6 +108,9 @@ Content-Length: 1424
   ]
 }
 ```
+
+
+
 
 
 

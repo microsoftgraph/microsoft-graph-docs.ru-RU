@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3309fb8b84750b0e7608c63e33f9eae2b75615fc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 432d7e263faab60a95084ca3d7aef6cb42f5884d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466720"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973409"
 ---
 # <a name="list-devices"></a>Список устройств
 
@@ -43,7 +43,7 @@ GET /devices
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [device](../resources/device.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -114,3 +114,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

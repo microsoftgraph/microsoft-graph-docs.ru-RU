@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f56b02963a6d2d9aa1f2ee5c11776ef3c172c735
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 02cb3b0b561df1059ffabe0a6821a436b5ec2c0f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566149"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067092"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>Удаление Кондитионалакцессполици
 
@@ -26,7 +26,7 @@ ms.locfileid: "46566149"
 |:--------------------------------------|:---------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Для приложения                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -108,3 +108,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

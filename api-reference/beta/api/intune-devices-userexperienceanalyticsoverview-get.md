@@ -3,14 +3,14 @@ title: Получение Усерекспериенцеаналитиксове
 description: Чтение свойств и связей объекта Усерекспериенцеаналитиксовервиев.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56491b123140b2fa5732b87d9a236a7411ba56d5
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: dcc74790806e9e07e89beeddc10e3298957f5e5a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177802"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047499"
 ---
 # <a name="get-userexperienceanalyticsoverview"></a>Получение Усерекспериенцеаналитиксовервиев
 
@@ -52,7 +52,7 @@ GET /deviceManagement/userExperienceAnalyticsOverview
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [усерекспериенцеаналитиксовервиев](../resources/intune-devices-userexperienceanalyticsoverview.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -97,6 +97,9 @@ Content-Length: 853
   }
 }
 ```
+
+
+
 
 
 

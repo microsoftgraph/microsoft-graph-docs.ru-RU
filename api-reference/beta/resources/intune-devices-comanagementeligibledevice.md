@@ -3,14 +3,14 @@ title: Тип ресурса Команажементелигибледевиц�
 description: Состояние возможности совместного управления устройствами
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28ce2781883bf274a2244241a00a11f9647ee07a
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: c6a912aa9631295c7331afa8f1d985b5231ac614
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791801"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060764"
 ---
 # <a name="comanagementeligibledevice-resource-type"></a>Тип ресурса Команажементелигибледевице
 
@@ -91,6 +91,9 @@ ms.locfileid: "46791801"
   "status": "String"
 }
 ```
+
+
+
 
 
 
