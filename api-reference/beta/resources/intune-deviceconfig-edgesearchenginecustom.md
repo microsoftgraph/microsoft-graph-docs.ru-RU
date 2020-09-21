@@ -3,38 +3,38 @@ title: Тип ресурса edgeSearchEngineCustom
 description: Позволяет ИТ-администраторам устанавливать поисковую систему по умолчанию для устройств под управлением MDM.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: da4186e82eb33934d1b4b4fe191b0ee035218d92
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a0ca7ad000fa34d62ceebdd8502fb59e5c21257a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386080"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016312"
 ---
-# <a name="edgesearchenginecustom-resource-type"></a><span data-ttu-id="5737c-103">Тип ресурса edgeSearchEngineCustom</span><span class="sxs-lookup"><span data-stu-id="5737c-103">edgeSearchEngineCustom resource type</span></span>
+# <a name="edgesearchenginecustom-resource-type"></a><span data-ttu-id="6cf95-103">Тип ресурса edgeSearchEngineCustom</span><span class="sxs-lookup"><span data-stu-id="6cf95-103">edgeSearchEngineCustom resource type</span></span>
 
-<span data-ttu-id="5737c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5737c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6cf95-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6cf95-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="5737c-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5737c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="6cf95-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6cf95-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="5737c-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="5737c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6cf95-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6cf95-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="5737c-107">Позволяет ИТ-администраторам устанавливать поисковую систему по умолчанию для устройств под управлением MDM.</span><span class="sxs-lookup"><span data-stu-id="5737c-107">Allows IT admins to set a custom default search engine for MDM-Controlled devices.</span></span>
+<span data-ttu-id="6cf95-107">Позволяет ИТ-администраторам устанавливать поисковую систему по умолчанию для устройств под управлением MDM.</span><span class="sxs-lookup"><span data-stu-id="6cf95-107">Allows IT admins to set a custom default search engine for MDM-Controlled devices.</span></span>
 
 
-<span data-ttu-id="5737c-108">Наследуется от [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)</span><span class="sxs-lookup"><span data-stu-id="5737c-108">Inherits from [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)</span></span>
+<span data-ttu-id="6cf95-108">Наследуется от [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)</span><span class="sxs-lookup"><span data-stu-id="6cf95-108">Inherits from [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5737c-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="5737c-109">Properties</span></span>
-|<span data-ttu-id="5737c-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="5737c-110">Property</span></span>|<span data-ttu-id="5737c-111">Тип</span><span class="sxs-lookup"><span data-stu-id="5737c-111">Type</span></span>|<span data-ttu-id="5737c-112">Описание</span><span class="sxs-lookup"><span data-stu-id="5737c-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6cf95-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="6cf95-109">Properties</span></span>
+|<span data-ttu-id="6cf95-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="6cf95-110">Property</span></span>|<span data-ttu-id="6cf95-111">Тип</span><span class="sxs-lookup"><span data-stu-id="6cf95-111">Type</span></span>|<span data-ttu-id="6cf95-112">Описание</span><span class="sxs-lookup"><span data-stu-id="6cf95-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5737c-113">edgeSearchEngineOpenSearchXmlUrl</span><span class="sxs-lookup"><span data-stu-id="5737c-113">edgeSearchEngineOpenSearchXmlUrl</span></span>|<span data-ttu-id="5737c-114">String</span><span class="sxs-lookup"><span data-stu-id="5737c-114">String</span></span>|<span data-ttu-id="5737c-115">Указывает на HTTPS-ссылку, содержащую XML-файл OpenSearch, в котором указаны по крайней мере краткое имя и URL-адрес поисковой системы.</span><span class="sxs-lookup"><span data-stu-id="5737c-115">Points to a https link containing the OpenSearch xml file that contains, at minimum, the short name and the URL to the search Engine.</span></span>|
+|<span data-ttu-id="6cf95-113">edgeSearchEngineOpenSearchXmlUrl</span><span class="sxs-lookup"><span data-stu-id="6cf95-113">edgeSearchEngineOpenSearchXmlUrl</span></span>|<span data-ttu-id="6cf95-114">String</span><span class="sxs-lookup"><span data-stu-id="6cf95-114">String</span></span>|<span data-ttu-id="6cf95-115">Указывает на HTTPS-ссылку, содержащую XML-файл OpenSearch, в котором указаны по крайней мере краткое имя и URL-адрес поисковой системы.</span><span class="sxs-lookup"><span data-stu-id="6cf95-115">Points to a https link containing the OpenSearch xml file that contains, at minimum, the short name and the URL to the search Engine.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="5737c-116">Связи</span><span class="sxs-lookup"><span data-stu-id="5737c-116">Relationships</span></span>
-<span data-ttu-id="5737c-117">Нет</span><span class="sxs-lookup"><span data-stu-id="5737c-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="6cf95-116">Отношения</span><span class="sxs-lookup"><span data-stu-id="6cf95-116">Relationships</span></span>
+<span data-ttu-id="6cf95-117">Нет</span><span class="sxs-lookup"><span data-stu-id="6cf95-117">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="5737c-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5737c-118">JSON Representation</span></span>
-<span data-ttu-id="5737c-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5737c-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6cf95-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6cf95-118">JSON Representation</span></span>
+<span data-ttu-id="6cf95-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6cf95-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeSearchEngineCustom"
@@ -46,6 +46,9 @@ ms.locfileid: "43386080"
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
+
+
+
 
 
 

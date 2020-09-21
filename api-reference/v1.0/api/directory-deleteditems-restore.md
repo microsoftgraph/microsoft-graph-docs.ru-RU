@@ -5,75 +5,75 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 69594e7118e8159575b8dace0fe570a98e0d4379
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: c588dee2de9ff1f4ffed128ed3b7b316f1e632e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181787"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057611"
 ---
-# <a name="restore-deleted-item"></a><span data-ttu-id="635a2-103">Восстановление удаленного элемента</span><span class="sxs-lookup"><span data-stu-id="635a2-103">Restore deleted item</span></span>
+# <a name="restore-deleted-item"></a><span data-ttu-id="b62ee-103">Восстановление удаленного элемента</span><span class="sxs-lookup"><span data-stu-id="b62ee-103">Restore deleted item</span></span>
 
-<span data-ttu-id="635a2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="635a2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b62ee-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b62ee-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="635a2-105">Восстановление недавно удаленного элемента из контейнера для [удаленных элементов](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="635a2-105">Restores a recently deleted item from [deleted items](../resources/directory.md).</span></span> 
+<span data-ttu-id="b62ee-105">Восстановление недавно удаленного элемента из контейнера для [удаленных элементов](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="b62ee-105">Restores a recently deleted item from [deleted items](../resources/directory.md).</span></span> 
 
-<span data-ttu-id="635a2-106">В настоящее время функции удаленных элементов поддерживаются только для ресурсов [приложения](../resources/application.md), [групп](../resources/group.md) и [пользователей](../resources/user.md) .</span><span class="sxs-lookup"><span data-stu-id="635a2-106">Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="635a2-107">Вы можете полностью восстановить случайно удаленный элемент.</span><span class="sxs-lookup"><span data-stu-id="635a2-107">If an item was accidentally deleted, you can fully restore the item.</span></span>
+<span data-ttu-id="b62ee-106">В настоящее время функции удаленных элементов поддерживаются только для ресурсов [приложения](../resources/application.md), [групп](../resources/group.md) и [пользователей](../resources/user.md) .</span><span class="sxs-lookup"><span data-stu-id="b62ee-106">Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="b62ee-107">Вы можете полностью восстановить случайно удаленный элемент.</span><span class="sxs-lookup"><span data-stu-id="b62ee-107">If an item was accidentally deleted, you can fully restore the item.</span></span>
 
-<span data-ttu-id="635a2-108">Удаленный элемент можно восстановить в течение 30 дней.</span><span class="sxs-lookup"><span data-stu-id="635a2-108">A recently deleted item will remain available for up to 30 days.</span></span> <span data-ttu-id="635a2-109">Через 30 дней элемент удаляется без возможности восстановления.</span><span class="sxs-lookup"><span data-stu-id="635a2-109">After 30 days, the item is permanently deleted.</span></span>
+<span data-ttu-id="b62ee-108">Удаленный элемент можно восстановить в течение 30 дней.</span><span class="sxs-lookup"><span data-stu-id="b62ee-108">A recently deleted item will remain available for up to 30 days.</span></span> <span data-ttu-id="b62ee-109">Через 30 дней элемент удаляется без возможности восстановления.</span><span class="sxs-lookup"><span data-stu-id="b62ee-109">After 30 days, the item is permanently deleted.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="635a2-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="635a2-110">Permissions</span></span>
-<span data-ttu-id="635a2-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="635a2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b62ee-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b62ee-110">Permissions</span></span>
+<span data-ttu-id="b62ee-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b62ee-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-### <a name="for-applications"></a><span data-ttu-id="635a2-113">Для приложений:</span><span class="sxs-lookup"><span data-stu-id="635a2-113">For applications:</span></span>
+### <a name="for-applications"></a><span data-ttu-id="b62ee-113">Для приложений:</span><span class="sxs-lookup"><span data-stu-id="b62ee-113">For applications:</span></span>
 
-|<span data-ttu-id="635a2-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="635a2-114">Permission type</span></span>      | <span data-ttu-id="635a2-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="635a2-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b62ee-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b62ee-114">Permission type</span></span>      | <span data-ttu-id="b62ee-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b62ee-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="635a2-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="635a2-116">Delegated (work or school account)</span></span> | <span data-ttu-id="635a2-117">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="635a2-117">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="635a2-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="635a2-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="635a2-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="635a2-119">Not supported.</span></span>    |
-|<span data-ttu-id="635a2-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="635a2-120">Application</span></span> | <span data-ttu-id="635a2-121">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="635a2-121">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
+|<span data-ttu-id="b62ee-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b62ee-116">Delegated (work or school account)</span></span> | <span data-ttu-id="b62ee-117">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b62ee-117">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="b62ee-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b62ee-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b62ee-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b62ee-119">Not supported.</span></span>    |
+|<span data-ttu-id="b62ee-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b62ee-120">Application</span></span> | <span data-ttu-id="b62ee-121">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b62ee-121">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
 
 
-### <a name="for-users"></a><span data-ttu-id="635a2-122">Для пользователей:</span><span class="sxs-lookup"><span data-stu-id="635a2-122">For users:</span></span>
+### <a name="for-users"></a><span data-ttu-id="b62ee-122">Для пользователей:</span><span class="sxs-lookup"><span data-stu-id="b62ee-122">For users:</span></span>
 
-|<span data-ttu-id="635a2-123">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="635a2-123">Permission type</span></span>      | <span data-ttu-id="635a2-124">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="635a2-124">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b62ee-123">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b62ee-123">Permission type</span></span>      | <span data-ttu-id="b62ee-124">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b62ee-124">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="635a2-125">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="635a2-125">Delegated (work or school account)</span></span> | <span data-ttu-id="635a2-126">User.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="635a2-126">User.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="635a2-127">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="635a2-127">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="635a2-128">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="635a2-128">Not supported.</span></span> |
-|<span data-ttu-id="635a2-129">Для приложений</span><span class="sxs-lookup"><span data-stu-id="635a2-129">Application</span></span> | <span data-ttu-id="635a2-130">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="635a2-130">User.ReadWrite.All</span></span> |
+|<span data-ttu-id="b62ee-125">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b62ee-125">Delegated (work or school account)</span></span> | <span data-ttu-id="b62ee-126">User.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b62ee-126">User.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="b62ee-127">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b62ee-127">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b62ee-128">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b62ee-128">Not supported.</span></span> |
+|<span data-ttu-id="b62ee-129">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b62ee-129">Application</span></span> | <span data-ttu-id="b62ee-130">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b62ee-130">User.ReadWrite.All</span></span> |
 
-### <a name="for-groups"></a><span data-ttu-id="635a2-131">Для групп:</span><span class="sxs-lookup"><span data-stu-id="635a2-131">For groups:</span></span>
+### <a name="for-groups"></a><span data-ttu-id="b62ee-131">Для групп:</span><span class="sxs-lookup"><span data-stu-id="b62ee-131">For groups:</span></span>
 
-|<span data-ttu-id="635a2-132">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="635a2-132">Permission type</span></span>      | <span data-ttu-id="635a2-133">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="635a2-133">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b62ee-132">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b62ee-132">Permission type</span></span>      | <span data-ttu-id="b62ee-133">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b62ee-133">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="635a2-134">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="635a2-134">Delegated (work or school account)</span></span> | <span data-ttu-id="635a2-135">Group.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="635a2-135">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="635a2-136">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="635a2-136">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="635a2-137">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="635a2-137">Not supported.</span></span>    |
-|<span data-ttu-id="635a2-138">Для приложений</span><span class="sxs-lookup"><span data-stu-id="635a2-138">Application</span></span> | <span data-ttu-id="635a2-139">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="635a2-139">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="b62ee-134">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b62ee-134">Delegated (work or school account)</span></span> | <span data-ttu-id="b62ee-135">Group.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b62ee-135">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="b62ee-136">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b62ee-136">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b62ee-137">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b62ee-137">Not supported.</span></span>    |
+|<span data-ttu-id="b62ee-138">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b62ee-138">Application</span></span> | <span data-ttu-id="b62ee-139">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b62ee-139">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="635a2-140">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="635a2-140">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b62ee-140">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b62ee-140">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directory/deletedItems/{id}/restore
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="635a2-141">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="635a2-141">Request headers</span></span>
-| <span data-ttu-id="635a2-142">Имя</span><span class="sxs-lookup"><span data-stu-id="635a2-142">Name</span></span>       | <span data-ttu-id="635a2-143">Описание</span><span class="sxs-lookup"><span data-stu-id="635a2-143">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b62ee-141">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b62ee-141">Request headers</span></span>
+| <span data-ttu-id="b62ee-142">Имя</span><span class="sxs-lookup"><span data-stu-id="b62ee-142">Name</span></span>       | <span data-ttu-id="b62ee-143">Описание</span><span class="sxs-lookup"><span data-stu-id="b62ee-143">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="635a2-144">Авторизация</span><span class="sxs-lookup"><span data-stu-id="635a2-144">Authorization</span></span>  | <span data-ttu-id="635a2-145">&lt;&gt; *Необходим* маркер носителя</span><span class="sxs-lookup"><span data-stu-id="635a2-145">Bearer &lt;token&gt; *Required*</span></span>|
-| <span data-ttu-id="635a2-146">Content-Type</span><span class="sxs-lookup"><span data-stu-id="635a2-146">Content-type</span></span> | <span data-ttu-id="635a2-147">application/json</span><span class="sxs-lookup"><span data-stu-id="635a2-147">application/json</span></span> |
+| <span data-ttu-id="b62ee-144">Authorization</span><span class="sxs-lookup"><span data-stu-id="b62ee-144">Authorization</span></span>  | <span data-ttu-id="b62ee-145">&lt;Необходим маркер носителя &gt; *Required*</span><span class="sxs-lookup"><span data-stu-id="b62ee-145">Bearer &lt;token&gt; *Required*</span></span>|
+| <span data-ttu-id="b62ee-146">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b62ee-146">Content-type</span></span> | <span data-ttu-id="b62ee-147">application/json</span><span class="sxs-lookup"><span data-stu-id="b62ee-147">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="635a2-148">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="635a2-148">Request body</span></span>
-<span data-ttu-id="635a2-149">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="635a2-149">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b62ee-148">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b62ee-148">Request body</span></span>
+<span data-ttu-id="b62ee-149">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b62ee-149">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="635a2-150">Ответ</span><span class="sxs-lookup"><span data-stu-id="635a2-150">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b62ee-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="b62ee-150">Response</span></span>
 
-<span data-ttu-id="635a2-151">В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="635a2-151">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="b62ee-151">В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b62ee-151">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="635a2-152">Пример</span><span class="sxs-lookup"><span data-stu-id="635a2-152">Example</span></span>
-### <a name="request"></a><span data-ttu-id="635a2-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="635a2-153">Request</span></span>
+## <a name="example"></a><span data-ttu-id="b62ee-152">Пример</span><span class="sxs-lookup"><span data-stu-id="b62ee-152">Example</span></span>
+### <a name="request"></a><span data-ttu-id="b62ee-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="b62ee-153">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="635a2-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="635a2-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b62ee-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="b62ee-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_directory"
@@ -81,26 +81,26 @@ POST /directory/deletedItems/{id}/restore
 ```http
 POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 ```
-# <a name="c"></a>[<span data-ttu-id="635a2-155">C#</span><span class="sxs-lookup"><span data-stu-id="635a2-155">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b62ee-155">C#</span><span class="sxs-lookup"><span data-stu-id="b62ee-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="635a2-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="635a2-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b62ee-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b62ee-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="635a2-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="635a2-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b62ee-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b62ee-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="635a2-158">Java</span><span class="sxs-lookup"><span data-stu-id="635a2-158">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b62ee-158">Java</span><span class="sxs-lookup"><span data-stu-id="b62ee-158">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="635a2-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="635a2-159">Response</span></span>
-<span data-ttu-id="635a2-p104">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="635a2-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="b62ee-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="b62ee-159">Response</span></span>
+<span data-ttu-id="b62ee-p104">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b62ee-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -135,3 +135,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
