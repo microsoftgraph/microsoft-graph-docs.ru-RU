@@ -5,37 +5,37 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 16dae5dca65b3d238c2d12fddc2b474e7e03ac0d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 0b655d9cfac5835f6887c54c5a6bcbf79887d586
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219181"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078082"
 ---
-# <a name="attributemappingfunctionschema-resource-type"></a><span data-ttu-id="16593-103">Тип ресурса Аттрибутемаппингфунктионсчема</span><span class="sxs-lookup"><span data-stu-id="16593-103">attributeMappingFunctionSchema resource type</span></span>
+# <a name="attributemappingfunctionschema-resource-type"></a><span data-ttu-id="d611d-103">Тип ресурса Аттрибутемаппингфунктионсчема</span><span class="sxs-lookup"><span data-stu-id="d611d-103">attributeMappingFunctionSchema resource type</span></span>
 
-<span data-ttu-id="16593-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="16593-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d611d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d611d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="16593-105">Описывает функцию, которая может использоваться в [сопоставлении атрибутов](synchronization-attributemapping.md) для преобразования значений во время синхронизации.</span><span class="sxs-lookup"><span data-stu-id="16593-105">Describes a function that can be used in an [attribute mapping](synchronization-attributemapping.md) to transform values during synchronization.</span></span>
+<span data-ttu-id="d611d-105">Описывает функцию, которая может использоваться в [сопоставлении атрибутов](synchronization-attributemapping.md) для преобразования значений во время синхронизации.</span><span class="sxs-lookup"><span data-stu-id="d611d-105">Describes a function that can be used in an [attribute mapping](synchronization-attributemapping.md) to transform values during synchronization.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="16593-106">Методы</span><span class="sxs-lookup"><span data-stu-id="16593-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="d611d-106">Методы</span><span class="sxs-lookup"><span data-stu-id="d611d-106">Methods</span></span>
 
-| <span data-ttu-id="16593-107">Метод</span><span class="sxs-lookup"><span data-stu-id="16593-107">Method</span></span>           | <span data-ttu-id="16593-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="16593-108">Return Type</span></span>    |<span data-ttu-id="16593-109">Описание</span><span class="sxs-lookup"><span data-stu-id="16593-109">Description</span></span>|
+| <span data-ttu-id="d611d-107">Метод</span><span class="sxs-lookup"><span data-stu-id="d611d-107">Method</span></span>           | <span data-ttu-id="d611d-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="d611d-108">Return Type</span></span>    |<span data-ttu-id="d611d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="d611d-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="16593-110">List</span><span class="sxs-lookup"><span data-stu-id="16593-110">List</span></span>](../api/synchronization-synchronizationschema-functions.md) | <span data-ttu-id="16593-111">Коллекция [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md)</span><span class="sxs-lookup"><span data-stu-id="16593-111">[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection</span></span>|<span data-ttu-id="16593-112">Список поддерживаемых функций сопоставления атрибутов.</span><span class="sxs-lookup"><span data-stu-id="16593-112">List supported attribute mapping functions.</span></span>|
+|[<span data-ttu-id="d611d-110">Список</span><span class="sxs-lookup"><span data-stu-id="d611d-110">List</span></span>](../api/synchronization-synchronizationschema-functions.md) | <span data-ttu-id="d611d-111">Коллекция [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md)</span><span class="sxs-lookup"><span data-stu-id="d611d-111">[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection</span></span>|<span data-ttu-id="d611d-112">Список поддерживаемых функций сопоставления атрибутов.</span><span class="sxs-lookup"><span data-stu-id="d611d-112">List supported attribute mapping functions.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="16593-113">Свойства</span><span class="sxs-lookup"><span data-stu-id="16593-113">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d611d-113">Свойства</span><span class="sxs-lookup"><span data-stu-id="d611d-113">Properties</span></span>
 
-| <span data-ttu-id="16593-114">Свойство</span><span class="sxs-lookup"><span data-stu-id="16593-114">Property</span></span>                   | <span data-ttu-id="16593-115">Тип</span><span class="sxs-lookup"><span data-stu-id="16593-115">Type</span></span>                      | <span data-ttu-id="16593-116">Описание</span><span class="sxs-lookup"><span data-stu-id="16593-116">Description</span></span>    |
+| <span data-ttu-id="d611d-114">Свойство</span><span class="sxs-lookup"><span data-stu-id="d611d-114">Property</span></span>                   | <span data-ttu-id="d611d-115">Тип</span><span class="sxs-lookup"><span data-stu-id="d611d-115">Type</span></span>                      | <span data-ttu-id="d611d-116">Описание</span><span class="sxs-lookup"><span data-stu-id="d611d-116">Description</span></span>    |
 |:---------------------------|:-------------------------|:---------------|
-|<span data-ttu-id="16593-117">name</span><span class="sxs-lookup"><span data-stu-id="16593-117">name</span></span>                        |<span data-ttu-id="16593-118">String</span><span class="sxs-lookup"><span data-stu-id="16593-118">String</span></span>                    |<span data-ttu-id="16593-119">Имя оператора.</span><span class="sxs-lookup"><span data-stu-id="16593-119">Operator name.</span></span> |
-|<span data-ttu-id="16593-120">parameters</span><span class="sxs-lookup"><span data-stu-id="16593-120">parameters</span></span>                  |<span data-ttu-id="16593-121">Коллекция [аттрибутемаппингпараметерсчема](../resources/synchronization-attributemappingparameterschema.md)</span><span class="sxs-lookup"><span data-stu-id="16593-121">[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection</span></span>  |<span data-ttu-id="16593-122">Коллекция параметров функции.</span><span class="sxs-lookup"><span data-stu-id="16593-122">Collection of function parameters.</span></span>|
+|<span data-ttu-id="d611d-117">name</span><span class="sxs-lookup"><span data-stu-id="d611d-117">name</span></span>                        |<span data-ttu-id="d611d-118">String</span><span class="sxs-lookup"><span data-stu-id="d611d-118">String</span></span>                    |<span data-ttu-id="d611d-119">Имя оператора.</span><span class="sxs-lookup"><span data-stu-id="d611d-119">Operator name.</span></span> |
+|<span data-ttu-id="d611d-120">parameters</span><span class="sxs-lookup"><span data-stu-id="d611d-120">parameters</span></span>                  |<span data-ttu-id="d611d-121">Коллекция [аттрибутемаппингпараметерсчема](../resources/synchronization-attributemappingparameterschema.md)</span><span class="sxs-lookup"><span data-stu-id="d611d-121">[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection</span></span>  |<span data-ttu-id="d611d-122">Коллекция параметров функции.</span><span class="sxs-lookup"><span data-stu-id="d611d-122">Collection of function parameters.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="16593-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="16593-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d611d-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d611d-123">JSON representation</span></span>
 
-<span data-ttu-id="16593-124">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="16593-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d611d-124">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d611d-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -65,3 +65,5 @@ ms.locfileid: "43219181"
   "suppressions": []
 }
 -->
+
+
