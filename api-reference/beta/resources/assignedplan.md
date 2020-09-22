@@ -5,33 +5,33 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: krbain
-ms.openlocfilehash: 5e408212855e4ca0bc5af4c03302c8b79e415566
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1088d5b3c0e46a46df393b17ccea849aa2662044
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809840"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089828"
 ---
-# <a name="assignedplan-resource-type"></a><span data-ttu-id="a48b8-103">Тип ресурса assignedPlan</span><span class="sxs-lookup"><span data-stu-id="a48b8-103">assignedPlan resource type</span></span>
+# <a name="assignedplan-resource-type"></a><span data-ttu-id="4fe8e-103">Тип ресурса assignedPlan</span><span class="sxs-lookup"><span data-stu-id="4fe8e-103">assignedPlan resource type</span></span>
 
-<span data-ttu-id="a48b8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a48b8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4fe8e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4fe8e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a48b8-105">Свойство **assignedPlans** объектов [user](user.md) и [organization](organization.md) представляет собой коллекцию объектов **assignedPlan**.</span><span class="sxs-lookup"><span data-stu-id="a48b8-105">The **assignedPlans** property of both the [user](user.md) entity and the [organization](organization.md) entity is a collection of **assignedPlan**.</span></span>
+<span data-ttu-id="4fe8e-105">Свойство **assignedPlans** объектов [user](user.md) и [organization](organization.md) представляет собой коллекцию объектов **assignedPlan**.</span><span class="sxs-lookup"><span data-stu-id="4fe8e-105">The **assignedPlans** property of both the [user](user.md) entity and the [organization](organization.md) entity is a collection of **assignedPlan**.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="a48b8-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="a48b8-106">Properties</span></span>
-| <span data-ttu-id="a48b8-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="a48b8-107">Property</span></span>     | <span data-ttu-id="a48b8-108">Тип</span><span class="sxs-lookup"><span data-stu-id="a48b8-108">Type</span></span>   |<span data-ttu-id="a48b8-109">Описание</span><span class="sxs-lookup"><span data-stu-id="a48b8-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4fe8e-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="4fe8e-106">Properties</span></span>
+| <span data-ttu-id="4fe8e-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="4fe8e-107">Property</span></span>     | <span data-ttu-id="4fe8e-108">Тип</span><span class="sxs-lookup"><span data-stu-id="4fe8e-108">Type</span></span>   |<span data-ttu-id="4fe8e-109">Описание</span><span class="sxs-lookup"><span data-stu-id="4fe8e-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a48b8-110">ассигнеддатетиме</span><span class="sxs-lookup"><span data-stu-id="a48b8-110">assignedDateTime</span></span>|<span data-ttu-id="a48b8-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a48b8-111">DateTimeOffset</span></span>|<span data-ttu-id="a48b8-p101">Дата и время назначения плана. Пример: 2013-01-02T19:32:30Z. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="a48b8-p101">The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="a48b8-115">капабилитистатус</span><span class="sxs-lookup"><span data-stu-id="a48b8-115">capabilityStatus</span></span>|<span data-ttu-id="a48b8-116">String</span><span class="sxs-lookup"><span data-stu-id="a48b8-116">String</span></span>|<span data-ttu-id="a48b8-117">Пример: "Enabled".</span><span class="sxs-lookup"><span data-stu-id="a48b8-117">For example, “Enabled”.</span></span>|
-|<span data-ttu-id="a48b8-118">service</span><span class="sxs-lookup"><span data-stu-id="a48b8-118">service</span></span>|<span data-ttu-id="a48b8-119">String</span><span class="sxs-lookup"><span data-stu-id="a48b8-119">String</span></span>|<span data-ttu-id="a48b8-120">Имя службы, например "Exchange".</span><span class="sxs-lookup"><span data-stu-id="a48b8-120">The name of the service; for example, “Exchange”.</span></span>|
-|<span data-ttu-id="a48b8-121">сервицепланид</span><span class="sxs-lookup"><span data-stu-id="a48b8-121">servicePlanId</span></span>|<span data-ttu-id="a48b8-122">Guid</span><span class="sxs-lookup"><span data-stu-id="a48b8-122">Guid</span></span>|<span data-ttu-id="a48b8-123">Идентификатор GUID, определяющий план обслуживания.</span><span class="sxs-lookup"><span data-stu-id="a48b8-123">A GUID that identifies the service plan.</span></span>|
+|<span data-ttu-id="4fe8e-110">ассигнеддатетиме</span><span class="sxs-lookup"><span data-stu-id="4fe8e-110">assignedDateTime</span></span>|<span data-ttu-id="4fe8e-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4fe8e-111">DateTimeOffset</span></span>|<span data-ttu-id="4fe8e-p101">Дата и время назначения плана. Пример: 2013-01-02T19:32:30Z. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="4fe8e-p101">The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="4fe8e-115">капабилитистатус</span><span class="sxs-lookup"><span data-stu-id="4fe8e-115">capabilityStatus</span></span>|<span data-ttu-id="4fe8e-116">String</span><span class="sxs-lookup"><span data-stu-id="4fe8e-116">String</span></span>|<span data-ttu-id="4fe8e-117">Пример: "Enabled".</span><span class="sxs-lookup"><span data-stu-id="4fe8e-117">For example, “Enabled”.</span></span>|
+|<span data-ttu-id="4fe8e-118">service</span><span class="sxs-lookup"><span data-stu-id="4fe8e-118">service</span></span>|<span data-ttu-id="4fe8e-119">String</span><span class="sxs-lookup"><span data-stu-id="4fe8e-119">String</span></span>|<span data-ttu-id="4fe8e-120">Имя службы, например "Exchange".</span><span class="sxs-lookup"><span data-stu-id="4fe8e-120">The name of the service; for example, “Exchange”.</span></span>|
+|<span data-ttu-id="4fe8e-121">сервицепланид</span><span class="sxs-lookup"><span data-stu-id="4fe8e-121">servicePlanId</span></span>|<span data-ttu-id="4fe8e-122">Guid</span><span class="sxs-lookup"><span data-stu-id="4fe8e-122">Guid</span></span>|<span data-ttu-id="4fe8e-123">Идентификатор GUID, определяющий план обслуживания.</span><span class="sxs-lookup"><span data-stu-id="4fe8e-123">A GUID that identifies the service plan.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a48b8-124">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="a48b8-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4fe8e-124">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="4fe8e-124">JSON representation</span></span>
 
-<span data-ttu-id="a48b8-125">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a48b8-125">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="4fe8e-125">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4fe8e-125">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -63,3 +63,5 @@ ms.locfileid: "46809840"
   "suppressions": []
 }
 -->
+
+

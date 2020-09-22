@@ -5,29 +5,29 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 12cdae2407ea985b28afb658c7fd7517fdbb687c
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 64f018cb0c554ae36c9ec0b8ec0bfa655b7499f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154166"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090762"
 ---
-# <a name="timerange-resource-type"></a><span data-ttu-id="15a41-103">Тип ресурса Тимеранже</span><span class="sxs-lookup"><span data-stu-id="15a41-103">timeRange resource type</span></span>
+# <a name="timerange-resource-type"></a><span data-ttu-id="14023-103">Тип ресурса Тимеранже</span><span class="sxs-lookup"><span data-stu-id="14023-103">timeRange resource type</span></span>
 
-<span data-ttu-id="15a41-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="15a41-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="14023-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="14023-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="15a41-105">Ресурс диапазона времени с временем начала и окончания.</span><span class="sxs-lookup"><span data-stu-id="15a41-105">A time range resource with a start and end time.</span></span>
+<span data-ttu-id="14023-105">Ресурс диапазона времени с временем начала и окончания.</span><span class="sxs-lookup"><span data-stu-id="14023-105">A time range resource with a start and end time.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="15a41-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="15a41-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="14023-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="14023-106">Properties</span></span>
 
-| <span data-ttu-id="15a41-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="15a41-107">Property</span></span>     | <span data-ttu-id="15a41-108">Тип</span><span class="sxs-lookup"><span data-stu-id="15a41-108">Type</span></span>        | <span data-ttu-id="15a41-109">Описание</span><span class="sxs-lookup"><span data-stu-id="15a41-109">Description</span></span> |
+| <span data-ttu-id="14023-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="14023-107">Property</span></span>     | <span data-ttu-id="14023-108">Тип</span><span class="sxs-lookup"><span data-stu-id="14023-108">Type</span></span>        | <span data-ttu-id="14023-109">Описание</span><span class="sxs-lookup"><span data-stu-id="14023-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="15a41-110">endTime</span><span class="sxs-lookup"><span data-stu-id="15a41-110">endTime</span></span>|<span data-ttu-id="15a41-111">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="15a41-111">TimeOfDay</span></span>|<span data-ttu-id="15a41-112">Время окончания для диапазона времени.</span><span class="sxs-lookup"><span data-stu-id="15a41-112">End time for the time range.</span></span>|
-|<span data-ttu-id="15a41-113">startTime</span><span class="sxs-lookup"><span data-stu-id="15a41-113">startTime</span></span>|<span data-ttu-id="15a41-114">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="15a41-114">TimeOfDay</span></span>|<span data-ttu-id="15a41-115">Время начала для диапазона времени.</span><span class="sxs-lookup"><span data-stu-id="15a41-115">Start time for the time range.</span></span>|
+|<span data-ttu-id="14023-110">endTime</span><span class="sxs-lookup"><span data-stu-id="14023-110">endTime</span></span>|<span data-ttu-id="14023-111">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="14023-111">TimeOfDay</span></span>|<span data-ttu-id="14023-112">Время окончания для диапазона времени.</span><span class="sxs-lookup"><span data-stu-id="14023-112">End time for the time range.</span></span>|
+|<span data-ttu-id="14023-113">startTime</span><span class="sxs-lookup"><span data-stu-id="14023-113">startTime</span></span>|<span data-ttu-id="14023-114">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="14023-114">TimeOfDay</span></span>|<span data-ttu-id="14023-115">Время начала для диапазона времени.</span><span class="sxs-lookup"><span data-stu-id="14023-115">Start time for the time range.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="15a41-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="15a41-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="14023-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="14023-116">JSON representation</span></span>
 
-<span data-ttu-id="15a41-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="15a41-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="14023-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="14023-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
