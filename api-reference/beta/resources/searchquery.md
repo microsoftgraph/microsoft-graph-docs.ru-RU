@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: db647c47c528428820acc2ded9b079546b991be6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d2d643fed135f97f1ccf2c6346d8fdd6e22f8b5
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985743"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193367"
 ---
 # <a name="searchquery-resource-type"></a>Тип ресурса searchQuery
 
@@ -18,15 +18,17 @@ ms.locfileid: "47985743"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет поисковый запрос, содержащий поисковые термины и необязательные фильтры.
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Представляет поисковый запрос, содержащий поисковые термины и необязательные фильтры.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|query_string|[сеарчкуеристринг](searchquerystring.md)|Поисковый запрос, содержащий условия поиска.|
+|Строку|String|Поисковый запрос, содержащий условия поиска. Обязательно.|
+|query_string (устаревшее)|[сеарчкуеристринг](searchquerystring.md)|Теперь оно заменяется свойством **queryString** . Поисковый запрос, содержащий условия поиска.|
+
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -43,6 +45,7 @@ ms.locfileid: "47985743"
 
 ```json
 {
+  "queryString": "String",
   "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
 }
 ```

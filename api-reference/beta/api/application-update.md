@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 220bf1fac87e3b1746fb8340c33dead6a4630b69
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f9851bf406943cc84c090d662a977d5e018ee80
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996726"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192431"
 ---
 # <a name="update-application"></a>Обновление приложения
 
@@ -21,7 +21,7 @@ ms.locfileid: "47996726"
 Обновление свойств объекта [Application](../resources/application.md) .
 
 > [!IMPORTANT]
-> Использование PATCH для установки [**пассвордкредентиал**](../resources/passwordcredential.md) не поддерживается. Используйте методы [аддпассворд](./application-addpassword.md) и [ремовепассворд](./application-removepassword.md) для обновления пароля приложения.
+> Использование метода PATCH для настройки [**passwordCredential**](../resources/passwordcredential.md) не поддерживается. Используйте методы [аддпассворд](./application-addpassword.md) и [ремовепассворд](./application-removepassword.md) для обновления пароля приложения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,9 +29,9 @@ ms.locfileid: "47996726"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) |  Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All    |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,7 @@ PATCH /applications/{id}
 | isFallbackPublicClient  | Boolean                                                                     | Указывает резервный тип приложения как общедоступный клиент, например установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию `false` , то есть резервный тип приложения — это конфиденциальный клиент, например веб-приложение. Существует несколько сценариев, в которых Azure AD не может определить тип клиентского приложения (например, [ропк](https://tools.ietf.org/html/rfc6749#section-4.3) , где он настроен без указания URI перенаправления). В этих случаях Azure AD будет интерпретировать тип приложения на основе значения этого свойства. |
 | keyCredentials          | Коллекция [keyCredential](../resources/keycredential.md)                   | Коллекция ключевых учетных данных, связанных с приложением. Значение null не допускается.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | logo                    | Stream                                                                      | Основной логотип для приложения. Значение null не допускается.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| онпремисеспублишинг    | [онпремисеспублишинг](../resources/onpremisespublishing.md)                | Представляет набор свойств для настройки [прокси приложения Azure AD](https://aka.ms/whyappproxy) для локального приложения. Это свойство можно задать только после создания приложения.                                                                                                                                                                                                                                                                                                                                                       |
+| onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | Представляет набор свойств для настройки [прокси приложения Azure AD](https://aka.ms/whyappproxy) для локального приложения. Это свойство можно задать только после создания приложения.                                                                                                                                                                                                                                                                                                                                                       |
 | optionalClaims          | optionalClaims                                                              | Разработчики приложений могут настраивать необязательные утверждения в своих приложениях Azure AD, чтобы указать, какие утверждения им нужны в маркерах, отправляемых в приложения службой маркеров безопасности (Майкрософт). Дополнительные сведения см. в статье дополнительные [утверждения](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims) .                                                                                                                                                                                                                                     |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | Указывает параметры родительского контроля для приложения.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | publicClient            | [publicClientApplication](../resources/publicclientapplication.md)          | Указывает параметры для установленных клиентов, например классических или мобильных устройств.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |

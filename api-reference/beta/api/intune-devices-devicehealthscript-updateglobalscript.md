@@ -3,14 +3,14 @@ title: действие Упдатеглобалскрипт
 description: Обновление сценария работоспособности собственного устройства
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42cd16873e374dfbc301674c2a7c76527311581a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4a15a793a895d766ccd45e614fc23e4ce69ba54f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426350"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48096019"
 ---
 # <a name="updateglobalscript-action"></a>действие Упдатеглобалскрипт
 
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/updateGlobalSc
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -86,6 +86,9 @@ Content-Length: 45
   "value": "Update Global Script value"
 }
 ```
+
+
+
 
 
 

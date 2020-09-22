@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0012344d2a641b892ae5e3fa905ce1e0c6282a5a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 462433a24b8515146303505865b3d356d025d6c4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502426"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095550"
 ---
 # <a name="educationassignmentresource-resource-type"></a>Тип ресурса Едукатионассигнментресаурце
 
@@ -26,14 +26,14 @@ ms.locfileid: "42502426"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение Едукатионассигнментресаурце](../api/educationassignmentresource-get.md) | [едукатионассигнментресаурце](educationassignmentresource.md) |Чтение свойств и связей объекта **едукатионассигнментресаурце** .|
-|[обновление](../api/educationassignmentresource-update.md). | [едукатионассигнментресаурце](educationassignmentresource.md) |Обновление объекта **едукатионассигнментресаурце** . |
+|[Обновление](../api/educationassignmentresource-update.md) | [едукатионассигнментресаурце](educationassignmentresource.md) |Обновление объекта **едукатионассигнментресаурце** . |
 |[удаление](../api/educationassignmentresource-delete.md); | Нет |Удаление объекта **едукатионассигнментресаурце** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |дистрибутефорстудентворк|Boolean|Указывает, следует ли копировать этот ресурс в каждую отправку учащегося для изменения и отправки.|
-|id|String| ИДЕНТИФИКАТОР этого ресурса. Только для чтения.|
+|id|Строка| ИДЕНТИФИКАТОР этого ресурса. Только для чтения.|
 |resource|[едукатионресаурце](educationresource.md)|Объект ресурса, связанный с этим назначением.|
 
 ## <a name="relationships"></a>Связи
@@ -73,3 +73,5 @@ ms.locfileid: "42502426"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f87a84d9297fbbde1d5fb9d6045dadae10e6bd72
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 972ce36307cefbc528d3efed5367a93a79926fb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455580"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095732"
 ---
 # <a name="get-planneruser"></a>Получение объекта plannerUser
 
@@ -40,9 +40,9 @@ GET /users/{id}/planner
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [plannerUser](../resources/planneruser.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -110,3 +110,5 @@ Content-length: 979
   "suppressions": []
 }
 -->
+
+

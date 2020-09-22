@@ -3,14 +3,14 @@ title: Get mdmWindowsInformationProtectionPolicy
 description: Чтение свойств и связей объекта mdmWindowsInformationProtectionPolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63ec8591c3351e0f2e436d160074a0b2810a4b0d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 29effc20b3461e7487dd645da02a554abf9a4088
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456463"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095928"
 ---
 # <a name="get-mdmwindowsinformationprotectionpolicy"></a>Get mdmWindowsInformationProtectionPolicy
 
@@ -53,10 +53,10 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -207,6 +207,9 @@ Content-Length: 4414
   }
 }
 ```
+
+
+
 
 
 

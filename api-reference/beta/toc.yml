@@ -42,7 +42,7 @@ items:
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: Отсутствие уведомлений в Outlook (предварительная версия)
             href: /graph/webhooks-outlook-authz?context=graph/api/beta
-          - name: Уведомления с данными ресурсов (предварительная версия)
+          - name: Уведомления с данными ресурсов
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
           - name: Получение уведомлений разными способами (предварительная версия)
             href: /graph/change-notifications-delivery?context=graph/api/beta
@@ -132,6 +132,20 @@ items:
     items:
       - name: Общие сведения о наборе средств
         href: /graph/toolkit/overview?context=graph/api/beta
+      - name: Начало работы
+        items:
+          - name: Обзор
+            href: /graph/toolkit/get-started/overview?context=graph/api/beta
+          - name: Создание веб-приложения (JavaScript)
+            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
+          - name: Создание веб-части SharePoint
+            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
+          - name: Создание вкладки Microsoft Teams
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/beta
+          - name: Использование набора средств с помощью React
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
+          - name: Использование набора средств с помощью Angular
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
       - name: Компоненты
         items:
           - name: Вход
@@ -147,7 +161,7 @@ items:
       - name: Поставщики
         items:
           - name: Использование поставщиков
-            href: /graph//graph/toolkit/providers?context=graph/api/beta
+            href: /graph/toolkit/providers?context=graph/api/beta
           - name: Поставщик MSAL
             href: /graph/toolkit/providers/msal?context=graph/api/beta
           - name: Поставщик SharePoint
@@ -173,11 +187,11 @@ items:
   - name: Документация для бета-версий
     expanded: true
     items:
-      - name: Общие сведения
+      - name: Обзор
         href: overview.md
-      - name: Users
+      - name: Пользователи
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -231,7 +245,7 @@ items:
                 href: api/user-list-events.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Contacts
+          - name: Контакты
             href: resources/contact.md
             items:
               - name: Создание контакта
@@ -314,7 +328,7 @@ items:
                     href: api/iteminsightssettings-get.md
                   - name: Обновление
                     href: api/iteminsightssettings-update.md
-          - name: Mail
+          - name: Почта
             href: resources/message.md
             items:
               - name: Создание папки почты
@@ -450,7 +464,7 @@ items:
                 href: api/usersettings-update.md
       - name: Группы
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/groups-overview.md
           - name: Группа
             href: resources/group.md
@@ -621,7 +635,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -876,7 +890,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: Список ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
+              - name: изменившихся
                 href: api/serviceprincipal-delta.md
               - name: Назначение ролей приложений
                 href: resources/approleassignment.md
@@ -1207,7 +1221,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1336,7 +1350,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Записи звонков
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/callrecords-api-overview.md
               - name: Запись звонка
                 items:
@@ -1385,11 +1399,11 @@ items:
       - name: Соответствие требованиям (Предварительная версия)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/complianceapioverview.md
           - name: Обнаружение электронных данных
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/eDiscoveryapioverview.md
               - name: Дело обнаружения электронных данных
                 href: resources/ediscoverycase.md
@@ -1463,7 +1477,7 @@ items:
       - name: Запись клиентов (предварительная версия)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/booking-api-overview.md
           - name: Организация в Microsoft Bookings
             href: resources/bookingbusiness.md
@@ -9296,7 +9310,7 @@ items:
       - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/onedrive.md
           - name: Диски
             href: resources/drive.md
@@ -9390,7 +9404,7 @@ items:
       - name: Финансовые показатели (предварительная версия)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/dynamics-graph-reference.md
           - name: Учетная запись
             href: resources/dynamics-account.md
@@ -9877,7 +9891,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
               - name: Методы проверки подлинности
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/authenticationmethods-overview.md
                   - name: Метод проверки подлинности
                     href: resources/authenticationmethod.md
@@ -10770,7 +10784,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -11322,7 +11336,7 @@ items:
                 href: api/contact-delta.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -11344,7 +11358,7 @@ items:
         items:
           - name: Отчеты об активности Azure AD
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/azure-ad-auditlog-overview.md
               - name: Аудит каталога
                 href: resources/directoryaudit.md
@@ -11367,7 +11381,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Отчеты об удостоверениях и доступе
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/report-identity-access.md
               - name: Активность приложений AD FS
                 items:
@@ -11390,7 +11404,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Регистрация и использование
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Счетчик регистрации пользователей учетных данных
                     href: resources/credentialuserregistrationcount.md
@@ -11414,7 +11428,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Отчеты об использовании Microsoft 365
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/report.md
               - name: Использование устройств Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -11626,13 +11640,17 @@ items:
         items:
           - name: Запрос
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/search-api-overview.md
+              - name: Тип запроса поиска
+                href: resources/searchrequest.md
+              - name: Тип ответа поиска
+                href: resources/searchresponse.md
               - name: Данные запроса
                 href: api/search-query.md
           - name: Индекс
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/indexing-api-overview.md
               - name: Внешнее подключение
                 items:
@@ -11674,6 +11692,24 @@ items:
                     href: api/externalitem-update.md
                   - name: Удаление
                     href: api/externalitem-delete.md
+              - name: Внешняя группа
+                items:
+                  - name: Внешняя группа
+                    href: resources/externalgroup.md
+                  - name: Создание
+                    href: api/externalconnection-post-groups.md
+                  - name: Удаление
+                    href: api/externalgroup-delete.md
+                  - name: Создание участников
+                    href: api/externalgroup-post-members.md
+              - name: Член внешней группы
+                items:
+                  - name: Член внешней группы
+                    href: resources/externalgroupmember.md
+                  - name: Создание
+                    href: api/externalgroup-post-members.md
+                  - name: Удаление
+                    href: api/externalgroupmember-delete.md
       - name: Безопасность
         displayname: 'Security API, Microsoft Graph Security API'
         items:
@@ -11720,7 +11756,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Оценка угроз
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/threatassessment-api-overview.md
                   - name: Запрос на оценку угроз
                     href: resources/threatassessmentrequest.md
@@ -11776,7 +11812,7 @@ items:
       - name: Сайты и списки
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/sharepoint.md
           - name: Сайты
             href: resources/site.md
@@ -12224,7 +12260,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Сдвигает
             items:
-              - name: Смена
+              - name: Shift
                 href: resources/shift.md
                 items:
                   - name: Список
@@ -12390,7 +12426,7 @@ items:
       - name: Задачи To-Do (предварительная версия)
         displayName: Microsoft To Do
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/todo-overview.md
           - name: Список задач
             href: resources/todotasklist.md
@@ -12529,7 +12565,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Расширенные свойства
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/extended-properties-overview.md
                   - name: Однозначные расширенные свойства
                     items:

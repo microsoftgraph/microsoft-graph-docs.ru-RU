@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 27410dbdd7b059e24bce0d532ebbd05381ac6aba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c66bdc31ffc9a130eed48f1e30af3f71302335a0
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034429"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192779"
 ---
 # <a name="create-workposition"></a>Создание Воркпоситион
 
@@ -59,7 +59,7 @@ POST /users/{id | userPrincipalName}/profile/positions
 |коллег|Коллекция [релатедперсон](../resources/relatedperson.md)|Коллеги, связанные с этой позицией.|
 |описаны|[поситиондетаил](../resources/positiondetail.md)|Содержит подробные сведения о позиции. |
 |выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|по току|Boolean|Указывает, является ли должность текущей.|
+|по току|Логическое|Указывает, является ли должность текущей.|
 |manager|[релатедперсон](../resources/relatedperson.md)|Содержит сведения о руководителе пользователя в этой позиции.|
 |source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 
@@ -99,7 +99,7 @@ Content-type: application/json
       "webUrl": "https://www.adventureworks.com"
     },
     "jobTitle": "Senior Product Branding Manager II",
-    "role": "consulting",
+    "role": "consulting"
   },
   "isCurrent": true
 }

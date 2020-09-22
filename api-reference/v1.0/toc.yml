@@ -42,6 +42,8 @@ items:
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: Отсутствие уведомлений в Outlook (предварительная версия)
             href: /graph/webhooks-outlook-authz?context=graph/api/1.0
+          - name: Уведомления с данными ресурсов
+            href: /graph/webhooks-with-resource-data?context=graph/api/1.0
       - name: Отслеживание изменений
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
         items:
@@ -128,6 +130,20 @@ items:
     items:
       - name: Общие сведения о наборе средств
         href: /graph/toolkit/overview?context=graph/api/1.0
+      - name: Начало работы
+        items:
+          - name: Обзор
+            href: /graph/toolkit/get-started/overview?context=graph/api/1.0
+          - name: Создание веб-приложения (JavaScript)
+            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
+          - name: Создание веб-части SharePoint
+            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
+          - name: Создание вкладки Microsoft Teams
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
+          - name: Использование набора средств с помощью React
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
+          - name: Использование набора средств с помощью Angular
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
       - name: Компоненты
         items:
           - name: Вход
@@ -169,11 +185,11 @@ items:
   - name: Справочник по версии 1.0
     expanded: true
     items:
-      - name: Общие сведения
+      - name: Обзор
         href: overview.md
-      - name: Users
+      - name: Пользователи
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -223,7 +239,7 @@ items:
                 href: api/user-list-events.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Contacts
+          - name: Контакты
             href: resources/contact.md
             items:
               - name: Создание контакта
@@ -304,7 +320,7 @@ items:
                     href: api/usersettings-get.md
                   - name: Обновление параметров
                     href: api/usersettings-update.md
-          - name: Mail
+          - name: Почта
             href: resources/message.md
             items:
               - name: Создание папки почты
@@ -387,9 +403,9 @@ items:
             items:
               - name: Список задач
                 href: api/planneruser-list-tasks.md
-      - name: Groups
+      - name: Группы
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/groups-overview.md
           - name: Группа
             href: resources/group.md
@@ -587,7 +603,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -990,7 +1006,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1100,7 +1116,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Записи звонков
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/callrecords-api-overview.md
               - name: Запись звонка
                 items:
@@ -1154,7 +1170,7 @@ items:
       - name: Устройства и приложения
         displayName: Intune
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/intune-graph-overview.md
           - name: Управление приложениями
             href: resources/intune-app-conceptual.md
@@ -3544,7 +3560,7 @@ items:
       - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/onedrive.md
           - name: Диски
             href: resources/drive.md
@@ -4181,7 +4197,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -4382,7 +4398,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -4635,7 +4651,7 @@ items:
             items:
               - name: Оценка угроз
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/threatassessment-api-overview.md
                   - name: Запрос на оценку угроз
                     href: resources/threatassessmentrequest.md
@@ -4674,7 +4690,7 @@ items:
       - name: Сайты и списки
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/sharepoint.md
           - name: Сайты
             href: resources/site.md
@@ -4957,7 +4973,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Сдвигает
             items:
-              - name: Смена
+              - name: Shift
                 href: resources/shift.md
                 items:
                   - name: Список

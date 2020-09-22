@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0d95727411b89f467804547f77795873c87dcd31
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7bf2dcd5330e3e5b414f4c895a8d128976a1a823
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983304"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192398"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>Получение ответа на сообщение канала
 
@@ -28,7 +28,7 @@ ms.locfileid: "47983304"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Чаннелмессаже. Read. Group *, Чаннелмессаже. Read. ALL, Group. Read. ALL, Group. ReadWrite. ALL |
+|Для приложений| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -52,7 +52,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -109,7 +109,8 @@ Content-type: application/json
     "etag": "1555377090002",
     "messageType": "message",
     "createdDateTime": "2019-04-16T01:11:30.002Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,

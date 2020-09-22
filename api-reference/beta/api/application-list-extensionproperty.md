@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b9f0773ebb4359c4946de151402d7648cef39476
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d40986224485a56061c4ed8582dbb9606c11ecf1
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996911"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192499"
 ---
 # <a name="list-extensionproperties"></a>Список Екстенсионпропертиес
 
@@ -27,7 +27,7 @@ ms.locfileid: "47996911"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (личная учетная запись Майкрософт) | Application. Read. ALL, Application. ReadWrite. ALL    |
 |Для приложений | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,7 +48,7 @@ GET /applications/{id}/extensionProperties
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

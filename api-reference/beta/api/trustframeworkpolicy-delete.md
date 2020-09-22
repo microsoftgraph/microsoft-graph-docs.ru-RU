@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8d3d790126acab48b716694e281b94afa8228b9b
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 71224f9adb8b57ef3787b37ec2f164c4f8cd1f89
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219006"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095648"
 ---
 # <a name="delete-trustframeworkpolicy"></a>Удаление Трустфрамеворкполици
 
@@ -45,11 +45,11 @@ DELETE /trustFramework/policies/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
+

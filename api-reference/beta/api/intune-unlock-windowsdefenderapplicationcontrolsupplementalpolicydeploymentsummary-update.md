@@ -3,14 +3,14 @@ title: Обновление Виндовсдефендераппликатион
 description: Обновление свойств объекта Виндовсдефендераппликатионконтролсупплементалполицидеплойментсуммари.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e04b7598cad9e8e577575b581e0370fc99930f15
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8ebc8e6e2cd7741debdc9e40f7d6aff92e2551be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454362"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095802"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary"></a>Обновление Виндовсдефендераппликатионконтролсупплементалполицидеплойментсуммари
 
@@ -46,20 +46,20 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [виндовсдефендераппликатионконтролсупплементалполицидеплойментсуммари](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [виндовсдефендераппликатионконтролсупплементалполицидеплойментсуммари](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |деплойеддевицекаунт|Int32|Количество устройств, успешно развернутых в этой дополнительной политике Виндовсдефендераппликатионконтрол.|
 |failedDeviceCount|Int32|Количество устройств, которые не удалось развернуть эту дополнительную политику Виндовсдефендераппликатионконтрол.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсдефендераппликатионконтролсупплементалполицидеплойментсуммари](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -92,6 +92,9 @@ Content-Length: 215
   "failedDeviceCount": 1
 }
 ```
+
+
+
 
 
 

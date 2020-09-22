@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: f7e0fb5076b9335bd18910c4898e24df8a70c157
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a2a2b112974e25840127a1deabfcb893c53dac1f
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014007"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193404"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -30,9 +30,9 @@ ms.locfileid: "48014007"
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Не поддерживается | Не поддерживается | CallRecords.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/теамс/{ИД}/чаннелс/{ИД}/мессажес) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Не поддерживается | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/теамс/аллмессажес--все сообщения каналов в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/теамс/жеталлмессажес--все сообщения каналов в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/ЧАТС/{ИД}/мессажес) | Chat.Read, Chat.ReadWrite | Не поддерживается | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/ЧАТС/аллмессажес--все сообщения чата в организации) | Не поддерживается | Не поддерживается | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/ЧАТС/жеталлмессажес--все сообщения чата в организации) | Не поддерживается | Не поддерживается | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (личное хранилище OneDrive пользователя) | Не поддерживается | Files.ReadWrite | Не поддерживается |
 |[driveItem](../resources/driveitem.md) (OneDrive для бизнеса) | Files.ReadWrite.All | Не поддерживается | Files.ReadWrite.All |
@@ -51,20 +51,20 @@ ms.locfileid: "48014007"
 
 подписки **chatMessage** с разрешениями приложений включают данные ресурсов и требуют [шифрования](/graph/webhooks-with-resource-data). Если [енкриптионцертификате](../resources/subscription.md) не указан, создание подписки завершится с ошибками. Перед созданием подписки на **chatMessage** необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Примечание:** `/teams/allMessages` и `/chats/allMessages` в настоящее время вы можете использовать этот API без сборов, в зависимости от [условий использования API Майкрософт](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). Начиная с 2020 августа, он будет доступен только пользователям и клиентам, у которых есть [необходимые лицензии](/graph/teams-licenses). Поскольку `/teams/allMessages` и `/chats/allMessages` доставлять уведомления для всех пользователей в клиенте, необходимо лицензировать всех пользователей в клиенте, а попытки создать подписки без соответствующих лицензий приведут к возникновению ошибки 401.
-В будущем корпорация Майкрософт может потребовать от вас или ваших клиентов взимать дополнительные сборы на основе объема данных, доступ к которым осуществляется через API.
+> **Примечание:** `/teams/getAllMessages` и `/chats/getAllMessages` доступны пользователям, у которых есть  
+ [необходимые лицензии](https://aka.ms/teams-changenotification-licenses).
 
 ### <a name="driveitem"></a>driveItem
 
 Дополнительные ограничения применяются к подпискам на элементы OneDrive. Ограничения применяются к созданию и управлению (получению, обновлению и удалению) подписок.
 
-В личном хранилище OneDrive можно подписаться на корневую папку или любую вложенную папку в этом хранилище. В OneDrive для бизнеса можно подписаться только на корневую папку. Уведомления об изменениях отправляются для определенных типов изменений папки, на которую оформлена подписка, любого файла, папки или других экземпляров **driveItem** в ее иерархии. Нельзя подписаться на экземпляры **drive** или **driveItem**, не являющиеся папками, например на отдельные файлы.
+В личном хранилище OneDrive можно подписаться на корневую папку или любую подпапку на этом диске. В OneDrive для бизнеса можно подписаться только на корневую папку. Уведомления об изменениях отправляются для определенных типов изменений папки, на которую оформлена подписка, любого файла, папки или других экземпляров **driveItem** в ее иерархии. Нельзя подписаться на экземпляры **drive** или **driveItem**, не являющиеся папками, например на отдельные файлы.
 
 ### <a name="contact-event-and-message"></a>контакты, события и сообщения
 
 Дополнительные ограничения применяются для подписок на элементы Outlook. Ограничения применяются к созданию и управлению (получению, обновлению и удалению) подписок.
 
-- Делегированное разрешение поддерживает подписку на элементы в папках только в почтовом ящике пользователя, выполнившего вход. Это означает, например, что нельзя использовать делегированное разрешение Calendars.Read, чтобы подписаться на события в почтовом ящике другого пользователя.
+- Делегированное разрешение поддерживает подписку на элементы в папках только в почтовом ящике пользователя, выполнившего вход. Например, нельзя использовать делегированные календари разрешений. Read для подписки на события в почтовом ящике другого пользователя.
 - Чтобы подписаться на уведомления об изменениях контактов Outlook, событий или сообщений в _общих или делегированных_ папках:
 
   - Используйте соответствующее разрешение приложения для подписки на изменения элементов в папке или почтовом ящике _любого_ пользователя в клиенте.
@@ -136,6 +136,11 @@ Content-type: application/json
 
 ---
 
+Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON.
+Поля `clientState` и `latestSupportedTlsVersion` необязательны.
+
+#### <a name="resources-examples"></a>Примеры ресурсов
+
 Ниже приведены допустимые значения свойства Resource.
 
 | Тип ресурса | Примеры |
@@ -146,18 +151,18 @@ Content-type: application/json
 |[Беседы](../resources/conversation.md)|`groups('{id}')/conversations`|
 |[Drives](../resources/driveitem.md)|`me/drive/root`|
 |[События](../resources/event.md)|`me/events`|
-|[Группы](../resources/group.md)|`groups`|
+|[Groups](../resources/group.md)|`groups`|
 |[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Почта](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[Знак](../resources/presence.md)| `/communications/presences/{id}` (один пользователь) `/communications/presences?$filter=id in ({id},{id}…)` (несколько пользователей)|
-|[пользователи](../resources/user.md);|`users`|
-|[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
+|[Users](../resources/user.md)|`users`|
+|[Оповещение системы безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
 > **Примечание:** Любой путь, начинающийся с, `me` можно также использовать `users/{id}` вместо `me` целевого определенного пользователя вместо текущего пользователя.
 
 ### <a name="response"></a>Отклик
 
-Ниже показан пример ответа. 
+Ниже приводится пример отклика. 
 
 >**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {

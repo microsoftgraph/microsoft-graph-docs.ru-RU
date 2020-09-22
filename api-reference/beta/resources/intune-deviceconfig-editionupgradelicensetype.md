@@ -3,14 +3,14 @@ title: тип перечисления Едитионупграделиценс�
 description: Тип лицензии на обновление выпуска
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 959d8f8991ed60b5dc3ad0c3ce131a3d20c87672
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 88a2b85982cf0cca44a96a407cd695421da66ef6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460126"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095284"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>тип перечисления Едитионупграделиценсетипе
 
@@ -26,8 +26,11 @@ ms.locfileid: "43460126"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |productKey|нуль|Тип ключа продукта|
-|лиценсефиле|1,1|Тип файла лицензии|
-|notConfigured|2|NotConfigured|
+|лиценсефиле|1 |Тип файла лицензии|
+|notConfigured|2 |NotConfigured|
+
+
+
 
 
 

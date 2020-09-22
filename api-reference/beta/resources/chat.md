@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8dd9ecd5f845682187fb84a9e057d7fdb7cb70d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c365fd343af3078663cbd184b67b49feb37945c
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994337"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193479"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса Chat
 
@@ -31,7 +31,7 @@ ms.locfileid: "47994337"
 |[Список сообщений в чате](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. | Делегирование и приложение * |
 |[Получение сообщения в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | Делегирование и приложение * |
 
-\*> **Примечание:** При использовании разрешений приложений необходимо знать, как вы будете получать идентификатор чата. Так как перечисление бесед с разрешениями приложений не поддерживается, не все сценарии возможны. Можно получить идентификаторы чата с делегированными разрешениями и из [уведомлений об изменениях для/ЧАТС/аллмессажес](../api/subscription-post-subscriptions.md) с разрешениями приложений.
+\*> **Примечание:** При использовании разрешений приложений необходимо знать, как вы будете получать идентификатор чата. Так как перечисление бесед с разрешениями приложений не поддерживается, не все сценарии возможны. Можно получить идентификаторы чата с делегированными разрешениями и из [уведомлений об изменениях для/ЧАТС/жеталлмессажес](../api/subscription-post-subscriptions.md) с разрешениями приложений.
 
 ## <a name="properties"></a>Свойства
 
@@ -42,7 +42,7 @@ ms.locfileid: "47994337"
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или изменения членства. Ластупдатеддатетиме не обновляется при отправке сообщения в чат. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|

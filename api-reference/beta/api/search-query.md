@@ -1,18 +1,18 @@
 ---
-title: 'Поиск: запрос'
+title: 'Сеарчентити: запрос'
 description: Выполняет запрос, указанный в теле запроса. Результаты поиска предоставляются в ответе.
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 781517d686ad0c01d2d1b7bd235bdf3dbb009f03
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e877b1e126a353aae04a90500fdfe99cd4ec8342
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074148"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193325"
 ---
-# <a name="search-query"></a>Поиск: запрос
+# <a name="searchentity-query"></a>Сеарчентити: запрос
 
 Пространство имен: microsoft.graph
 
@@ -20,15 +20,15 @@ ms.locfileid: "48074148"
 
 Выполняет запрос, указанный в теле запроса. Результаты поиска предоставляются в ответе.
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference). 
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Mail. Read, Files. Read. ALL, Calendars. Read, Екстерналитем. Read. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Mail. Read, mail. ReadWrite, Calendars. Read, Calendars. ReadWrite, Files. Read. ALL, Files. ReadWrite. ALL, sites. Read. ALL, sites. ReadWrite. ALL, Екстерналитем. Read. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -51,18 +51,12 @@ POST /search/query
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|обращения|Коллекция [сеарчрекуест](../resources/searchrequest.md)|Запрос поиска, отправляемый в конечную точку запроса, отформатированное в большом двоичном объекте JSON. Он содержит тип сущностей, ожидаемых в ответе, базовые источники, параметры разбиения по страницам, запрашиваемые поля и фактический поисковый запрос.|
+|обращения|Коллекция [сеарчрекуест](../resources/searchrequest.md)|Коллекция из одного или нескольких запросов на поиск, отформатированных в большом двоичном объекте JSON. Каждый большой двоичный объект JSON содержит типы ресурсов, ожидаемых в ответе, базовые источники, параметры разбиения по страницам, запрашиваемые поля и фактический поисковый запрос. <br> Помните об [известных ограничениях](../resources/search-api-overview.md#known-limitations) на поиск определенных комбинаций типов сущностей, сортировку или статистическую обработку результатов поиска. |
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `HTTP 200 OK` код отклика и объект коллекции [сеарчреспонсе](../resources/searchresponse.md) в тексте отклика.
-
-## <a name="common-use-cases"></a>Основные варианты использования
-
-- Поиск в [сообщениях электронной почты](/graph/search-concept-messages)
-- Поиск [событий календаря](/graph/search-concept-events)
-- Поиск [файлов](/graph/search-concept-files)
-- Данные о [настраиваемых типах (соединителях)](/graph/search-concept-custom-types) поиска
+ 
 
 ## <a name="examples"></a>Примеры
 
@@ -90,13 +84,11 @@ Content-type: application/json
         "/external/connections/connectionfriendlyname"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso product"
-        }
+        "queryString": "contoso product"
       },
       "from": 0,
       "size": 25,
-      "stored_fields": [
+      "fields": [
         "title",
         "description"
       ]
@@ -148,11 +140,10 @@ Content-type: application/json
         {
           "hits": [
             {
-              "_id": "1",
-              "_score": 1,
-              "_sortField": "Relevance",
-              "_summary": "_summary-value",
-              "_source": "The source field will contain the underlying graph entity part of the response"
+              "hitId": "1",
+              "rank": 1,
+              "summary": "_summary-value",
+              "resource": "The source field will contain the underlying graph entity part of the response"
             }
           ],
           "total": 47,
@@ -163,6 +154,15 @@ Content-type: application/json
   ]
 }
 ```
+
+## <a name="see-also"></a>См. также
+- Поиск в [сообщениях электронной почты](/graph/search-concept-messages)
+- Поиск [событий календаря](/graph/search-concept-events)
+- Поиск контента в SharePoint и OneDrive ([файлы, списки и сайты](/graph/search-concept-files))
+- Данные о [настраиваемых типах поиска (соединители Graph)](/graph/search-concept-custom-types)
+- [Сортировка](/graph/search-concept-sort) результатов поиска
+- Использование [агрегатов](/graph/search-concept-aggregations) для уточнения результатов поиска
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

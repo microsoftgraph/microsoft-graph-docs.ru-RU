@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Екстерналконнектион
-description: Подключение к Microsoft Search из внешнего источника.
+description: Подключение — это логический контейнер для внешнего контента в Microsoft Graph.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: a5db824fabc1cedb27d15c4b2cbfbce08bd59191
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82a68c8670a1381263d0b6fd3704f9d6d900d1f0
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026931"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193143"
 ---
 # <a name="externalconnection-resource-type"></a>Тип ресурса Екстерналконнектион
 
@@ -18,7 +18,7 @@ ms.locfileid: "48026931"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Подключение к Microsoft Search из внешнего источника.
+Логический контейнер для добавления контента из внешнего источника в Microsoft Graph.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -39,12 +39,13 @@ ms.locfileid: "48026931"
 
 | Свойство      | Тип                              | Описание |
 |:--------------|:----------------------------------|:------------|
-| configuration | [configuration](configuration.md) | Задает дополнительные идентификаторы приложений, которым разрешено управлять подключением и индексировать содержимое в подключении. Необязательный. |
-| description   | String                            | Описание подключения, отображаемое в центре администрирования Microsoft 365. Необязательный. |
-| id            | String                            | Предоставленный разработчиком уникальный идентификатор подключения в клиенте Azure Active Directory. Максимальная длина 32 символов. Должно содержать только буквенно-цифровые символы. Не может начинаться с `Microsoft` одного из следующих значений:,,,,,,,,,, `None` `Directory` `Exchange` `ExchangeArchive` `LinkedIn` `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` , `Connectors` . Обязательный. |
-| name          | String                            | Отображаемое имя подключения, отображаемое в центре администрирования Microsoft 365. Максимальная длина 128 символов. Обязательный. |
+| configuration | [configuration](configuration.md) | Задает дополнительные идентификаторы приложений, которым разрешено управлять подключением и индексировать содержимое в подключении. Необязательно. |
+| description   | String                            | Описание подключения, отображаемое в центре администрирования Microsoft 365. Необязательно. |
+| id            | String                            | Предоставленный разработчиком уникальный идентификатор подключения в клиенте Azure Active Directory. Максимальная длина 32 символов. Должно содержать только буквенно-цифровые символы. Не может начинаться с `Microsoft` одного из следующих значений:,,,,,,,,,, `None` `Directory` `Exchange` `ExchangeArchive` `LinkedIn` `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` , `Connectors` . Обязательно. |
+| name          | String                            | Отображаемое имя подключения, отображаемое в центре администрирования Microsoft 365. Максимальная длина 128 символов. Обязательно. |
+| state         | коннектионстате                   | Указывает текущее состояние подключения. Возможные значения: `draft` , `ready` , `obsolete` и `limitExceeded` . Обязательный. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип                                                     | Описание |
 |:-------------|:---------------------------------------------------------|:---|
@@ -71,7 +72,8 @@ ms.locfileid: "48026931"
   "configuration": {"@odata.type": "microsoft.graph.configuration"},
   "description": "String",
   "id": "String (identifier)",
-  "name": "String"
+  "name": "String",
+  "state": "String"
 }
 ```
 
@@ -84,5 +86,3 @@ ms.locfileid: "48026931"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

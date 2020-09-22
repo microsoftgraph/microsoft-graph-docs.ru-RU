@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b533d5072ab9a4e880b14b64e96f4791db399e09
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 96fc84227bc7c8e5140ef06ce62ea2d485badab7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502167"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095529"
 ---
 # <a name="educationexcelresource-resource-type"></a>Тип ресурса Едукатионексцелресаурце
 
@@ -26,9 +26,9 @@ ms.locfileid: "42502167"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fileUrl|String|Указатель на объект файла Excel.|
+|fileUrl|Строка|Указатель на объект файла Excel.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -59,3 +59,5 @@ ms.locfileid: "42502167"
   "suppressions": []
 }
 -->
+
+

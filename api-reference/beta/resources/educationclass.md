@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f4410518feca7c84e6093b9ff739feae99b631c5
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 2b6ab9495642d0e47dac796cab52411109e75167
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509590"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095508"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -50,12 +50,12 @@ ms.locfileid: "46509590"
 | Свойство             | Тип                                  | Описание                                                                                                                                                          |
 | :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | id                   | Строка                                | Уникальный идентификатор для курса.                                                                                                                                     |
-| classCode            | Строка                                | Код курса, используемый учебным заведением для идентификации курса.                                                                                                                 |
+| classCode            | String                                | Код курса, используемый учебным заведением для идентификации курса.                                                                                                                 |
 | курсе               | [едукатионкаурсе](educationcourse.md) | Сведения о курсе для класса                                                                                                                                     |
 | createdBy            | [identitySet]                         | Объект, который создал курс.                                                                                                                                         |
-| description          | String                                | Описание курса.                                                                                                                                            |
+| description          | Строка                                | Описание курса.                                                                                                                                            |
 | displayName          | Строка                                | Название курса.                                                                                                                                                   |
-| externalId           | Строка                                | Идентификатор курса из системы синхронизации.                                                                                                                             |
+| externalId           | String                                | Идентификатор курса из системы синхронизации.                                                                                                                             |
 | externalName         | String                                | Название курса в системе синхронизации.                                                                                                                             |
 | externalSource       | Строка                                | Тип внешнего источника, из которого был создан ресурс (определяется автоматически `externalSourceDetail` ). Возможные значения: `sis` , `lms` , или `manual` . |
 | екстерналсаурцедетаил | Строка                                | Имя внешнего источника, из которого были созданы ресурсы.                                                                                                   |
@@ -68,9 +68,9 @@ ms.locfileid: "46509590"
 | Связь | Тип                             | Описание                                               |
 | :----------- | :------------------------------- | :-------------------------------------------------------- |
 | assignments  | Коллекция [educationAssignment] | Все назначения, связанные с этим классом. Допускается значение null.     |
-| members      | Коллекция [educationUser]       | Все пользователи для этого курса. Допускается значение null.                         |
-| schools      | Коллекция [educationSchool]     | Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение null. |
-| teachers     | Коллекция [educationUser]       | Все преподаватели для этого курса. Допускается значение NULL.                      |
+| members      | Коллекция [educationUser]       | Все пользователи для этого курса. Допускается значение NULL.                         |
+| schools      | Коллекция [educationSchool]     | Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение NULL. |
+| teachers     | Коллекция [educationUser]       | Все преподаватели для этого курса. Допускается значение null.                      |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -126,3 +126,5 @@ ms.locfileid: "46509590"
 [едукатионтерм]: educationterm.md
 [Identity]: identityset.md
 [group]: group.md
+
+

@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 867aa4f2b143da1014c9485c0fac00872193e140
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78b58cee4581934fbb61a2477e385e5e7def4a3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455593"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095728"
 ---
 # <a name="planner-delta"></a>Планировщик: Дельта
 
@@ -45,7 +45,7 @@ GET /me/planner/all/delta
 GET /users/{id}/planner/all/delta
 ```
 
-В настоящее время дополнительные параметры запросов ( `$select`например `$expand`,, `$filter`или) не поддерживаются в реализациях разностных запросов в планировщике.
+В настоящее время дополнительные параметры запросов (например `$select` ,, `$expand` или `$filter` ) не поддерживаются в реализациях разностных запросов в планировщике.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -53,17 +53,17 @@ GET /users/{id}/planner/all/delta
 |:---------------|:--------------------------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию изменений, которые необходимо применить к объектам в тексте отклика, и ссылку на разностную синхронизацию, которую необходимо выполнить.
 
-`deltaLink` Если вызывающий абонент использует неправильный формат, эта конечная точка возвратит HTTP 400.
+Если `deltaLink` вызывающий абонент использует неправильный формат, эта конечная точка ВОЗВРАТИТ HTTP 400.
 
-Если абонент `deltaLink` использует слишком старое значение, эта конечная точка возвратит HTTP 410.
+Если `deltaLink` абонент использует слишком старое значение, эта конечная точка ВОЗВРАТИТ HTTP 410.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -169,3 +169,5 @@ preference-applied: odata.track-changes, odata.track-changes
   ]
 }
 -->
+
+

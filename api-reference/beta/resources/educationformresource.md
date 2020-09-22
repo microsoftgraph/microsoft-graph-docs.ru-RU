@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ed81e1e9e74ad311e4102963649ff4a4015bb093
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c8748c725f7289eadbca8119b47bf8a81b28c97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501964"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095448"
 ---
 # <a name="educationformresource-resource-type"></a>Тип ресурса Едукатионформресаурце
 
@@ -24,14 +24,14 @@ ms.locfileid: "42501964"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|оригиналформид|String|Исходный идентификатор формы.|
-|формид|String|Идентификатор формы.|
+|оригиналформид|Строка|Исходный идентификатор формы.|
+|формид|Строка|Идентификатор формы.|
 |исграупформ|Boolean|Принадлежность формы группе классов.|
-|виевурл|String|URL-адрес студента для формы.|
-|виевурл|String|URL-адрес студента для формы.|
-|едитурл|String|URL-адрес преподавателя для формы.|
+|виевурл|Строка|URL-адрес студента для формы.|
+|виевурл|Строка|URL-адрес студента для формы.|
+|едитурл|Строка|URL-адрес преподавателя для формы.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -66,3 +66,5 @@ ms.locfileid: "42501964"
   "suppressions": []
 }
 -->
+
+

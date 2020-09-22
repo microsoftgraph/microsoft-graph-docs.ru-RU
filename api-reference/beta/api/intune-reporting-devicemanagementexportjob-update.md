@@ -3,14 +3,14 @@ title: Обновление Девицеманажементекспортжоб
 description: Обновление свойств объекта Девицеманажементекспортжоб.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2609727b57fb4242169d135e3eb7a205db10ef03
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0b31c31a6cc86e5ea82480ad27e2de628a2692a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095949"
 ---
 # <a name="update-devicemanagementexportjob"></a>Обновление Девицеманажементекспортжоб
 
@@ -46,19 +46,19 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементекспортжоб](../resources/intune-reporting-devicemanagementexportjob.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементекспортжоб](../resources/intune-reporting-devicemanagementexportjob.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этой сущности|
-|репортнаме|String|Имя отчета|
-|filter|String|Фильтры, примененные к отчету|
-|select|Коллекция объектов string|Столбцы, выбранные из отчета|
+|id|Строка|Уникальный идентификатор для этой сущности|
+|репортнаме|Строка|Имя отчета|
+|filter|Строка|Фильтры, примененные к отчету|
+|select|Коллекция String|Столбцы, выбранные из отчета|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат экспортированного отчета. Возможные значения: `csv`, `pdf`.|
-|снапшотид|String|Моментальный снимок является идентифицируемым подмножеством набора данных, представленным Репортнаме. Здесь можно использовать идентификатор sessionId или Качедрепортконфигуратион. Если указан идентификатор sessionId, фильтрация, выбор и OrderBy применяются к данным, представленным в sessionId. Filter, SELECT и OrderBy не могут указываться вместе с идентификатором Качедрепортконфигуратион.|
+|снапшотид|Строка|Моментальный снимок является идентифицируемым подмножеством набора данных, представленным Репортнаме. Здесь можно использовать идентификатор sessionId или Качедрепортконфигуратион. Если указан идентификатор sessionId, фильтрация, выбор и OrderBy применяются к данным, представленным в sessionId. Filter, SELECT и OrderBy не могут указываться вместе с идентификатором Качедрепортконфигуратион.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние задания экспорта. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |url|String|Временное расположение экспортируемого отчета|
 |рекуестдатетиме|DateTimeOffset|Время запроса экспорта отчета|
@@ -66,7 +66,7 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементекспортжоб](../resources/intune-reporting-devicemanagementexportjob.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -117,6 +117,9 @@ Content-Length: 453
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
+
+
+
 
 
 

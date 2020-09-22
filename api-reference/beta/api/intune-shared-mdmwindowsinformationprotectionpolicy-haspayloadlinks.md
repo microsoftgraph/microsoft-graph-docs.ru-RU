@@ -3,14 +3,14 @@ title: действие Хаспайлоадлинкс
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 776034c6c68aea4b48220ca8089a64385b4148e1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a76706216402c902d9e4db1e9f98d3a8d9ac5da2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456456"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095921"
 ---
 # <a name="haspayloadlinks-action"></a>действие Хаспайлоадлинкс
 
@@ -48,7 +48,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/hasPayloadLink
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -100,6 +100,9 @@ Content-Length: 249
   ]
 }
 ```
+
+
+
 
 
 

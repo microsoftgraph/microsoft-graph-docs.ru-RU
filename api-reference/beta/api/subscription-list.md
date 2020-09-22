@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: ea6b726a651beaa4619d593c336598fd8890d4af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a9164b90d8b3156fa9abb57d41767c9a322f7c27
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969265"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193451"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 
@@ -28,7 +28,7 @@ ms.locfileid: "47969265"
 |:---------------- |:-------------------------------------------- |
 | [Делегированная](/graph/auth-v2-user) (Рабочая или учебная учетная запись) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
 | [Делегированная](/graph/auth-v2-user) учетная запись (личная учетная запись Майкрософт) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
-| [Приложение](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
+| [Application](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
 
 Результаты отклика основаны на контексте приложения, отправившего вызов. Ниже представлена сводка общих сценариев.
 
@@ -69,7 +69,7 @@ GET /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -134,7 +134,10 @@ Content-length: 586
       "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
       "expirationDateTime": "2018-03-12T05:00:00Z",
       "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
-      "latestSupportedTlsVersion": "v1_2"
+      "latestSupportedTlsVersion": "v1_2",
+      "encryptionCertificate": "",
+      "encryptionCertificateId": "",
+      "includeResourceData": false
     }
   ]
 }

@@ -4,18 +4,18 @@ description: Вы можете выполнять поиск в собствен
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 8cafb01337581d1b1d2e355363aec14f658ee4f6
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 802f6fdbb45d93ed46cd0b8033816abf5df07288
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45196829"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192597"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-calendar-events"></a>Использование API службы поиска Microsoft в Microsoft Graph для поиска событий календаря
+# <a name="use-the-microsoft-search-api-to-search-calendar-events"></a>Использование API службы поиска Microsoft для поиска событий календаря
 
-С помощью API поиска Microsoft можно искать события в основном календаре пользователя. Удостоверение пользователя для поиска основано на маркере проверки подлинности.
+Используйте API службы поиска Microsoft для поиска событий в основном календаре вошедшего пользователя. Удостоверение пользователя для поиска основано на маркере проверки подлинности.
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
+[!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
 ## <a name="example"></a>Пример
 
@@ -26,9 +26,7 @@ ms.locfileid: "45196829"
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -36,9 +34,7 @@ Content-Type: application/json
         "event"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
+        "queryString":"contoso"
       },
       "from": 0,
       "size": 25
@@ -47,10 +43,63 @@ Content-Type: application/json
 }
 ```
 
+#### <a name="response"></a>Отклик
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "value": [
+  {
+   "@odata.type": "#microsoft.graph.searchResponse",
+   "searchTerms": [
+    "contoso"
+   ],
+   "hitsContainers": [
+    {
+     "@odata.type": "#microsoft.graph.searchHitsContainer",
+     "hits": [
+      {
+       "@odata.type": "#microsoft.graph.searchHit",
+       "hitId": "AAMkADEwODY2NzllLTQ3MmEtNGRlMC05ZTUyLTE4ZDRhYmU1ZGM3NABGAAAAAAA3+iYQBnJnQabRVDelNhnzBwAejhWkAOAxQ6M4c1c9NwfrAAAAAAENAAAejhWkAOAxQ6M4c1c9NwfrAABbUZLJAAA=",
+       "rank": 1,
+       "summary": "Here is a summary of your events from last week",
+       "resource": {
+        "@odata.type": "#microsoft.graph.event",
+        "end": {
+         "dateTime": "2020-06-16T04:15:00Z",
+         "timeZone": "UTC"
+        },
+        "hasAttachments": false,
+        "iCalUId": "040000008200E00074C5B7101A82E008000000007093FDD79B3AD60100000000000000001000000036DAA2262EB4E04DA27DA77985FB8251",
+        "isAllDay": false,
+        "sensitivity": "Normal",
+        "start": {
+         "dateTime": "2020-06-16T03:30:00Z",
+         "timeZone": "UTC"
+        },
+        "subject": "Weekly digest: Microsoft 365 changes",
+        "type": "Single"
+       }
+      }
+     ],
+     "total": 1,
+     "moreResultsAvailable": false
+    }
+   ]
+  }
+ ]
+}
+```
+
 ## <a name="known-limitations"></a>Известные ограничения
 
-Можно получить доступ к собственному календарю пользователя. Сценарии общего календаря и делегированного доступа не поддерживаются.
+- Доступ к почтовому ящику вошедшего пользователя можно получить только из собственного почтового ящика. Поиск делегированных почтовых ящиков не поддерживается.
+- Для событий свойство **Total** объекта [сеарчхитсконтаинер](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) содержит количество результатов на странице, а не общее количество результатов поиска.
+- Сортировка результатов не поддерживается для событий. Предложение Sort в запросе возвратит код ошибки ошибочного запроса в ответе.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)

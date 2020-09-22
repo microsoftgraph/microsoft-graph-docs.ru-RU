@@ -1,40 +1,39 @@
 ---
-title: Получение Филесфолдер
-description: Получение пути навигации Филесфолдер для канала.
+title: Получение filesFolder
+description: Получение пути навигации filesFolder канала.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be54dc5e25d84fa9cd6c70faf926a8708ce9c475
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: b0db6dc2dc8d09b4a188ef2501f1b5d066f9dfc8
+ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863131"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137066"
 ---
-# <a name="get-filesfolder"></a>Получение Филесфолдер
+# <a name="get-filesfolder"></a>Получение filesFolder
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение метаданных для расположения, в котором хранятся файлы [канала](../resources/channel.md) . 
+Получайте метаданные для расположения, где хранятся файлы [канала](../resources/channel.md). 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | File. Read. ALL, Group. Read. ALL, File. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | File. Read. ALL, Group. Read. ALL, File. ReadWrite. ALL, Group. ReadWrite. ALL     |
+|Приложение | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All     |
 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/filesFolder
-
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -126,4 +125,6 @@ Content-length: 401
   "suppressions": [
   ]
 }-->
+
+
 

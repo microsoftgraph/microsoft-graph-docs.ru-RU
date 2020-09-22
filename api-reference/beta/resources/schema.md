@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса схемы
-description: Описывает тип контента и способ индексирования каждого свойства элементов в подключении Microsoft Search.
+description: Схема подключения определяет, как контент, добавляемый в подключение, будет использоваться в различных интерфейсах Microsoft Graph.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 0d5182e68fd1b1d53abb5b3fa623f3048abfe723
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff14f04adb31d99aadec15cb9368e09a098c7a26
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083969"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192870"
 ---
 # <a name="schema-resource-type"></a>Тип ресурса схемы
 
@@ -18,7 +18,7 @@ ms.locfileid: "48083969"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает тип контента и способ индексирования каждого свойства элементов в [подключении](externalconnection.md)Microsoft Search.
+Схема [подключения](externalconnection.md) определяет, как внешнее содержимое будет использоваться в различных интерфейсах Microsoft Graph. Schema — это плоский список всех свойств, которые вы планируете добавить к подключению вместе с их атрибутами, метками и псевдонимами. Перед добавлением элементов в подключение необходимо зарегистрировать схему.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "48083969"
 
 | Свойство   | Тип                               | Описание                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | Строка                             | Необходимо указать значение `microsoft.graph.externalItem`. Обязательный. |
+| baseType   | String                             | Необходимо указать значение `microsoft.graph.externalItem`. Обязательно. |
 | properties | Коллекция [свойств](property.md) | Свойства, заданные для элементов в подключении. Минимальное число свойств — 1, максимальное — 128. |
 
 ## <a name="relationships"></a>Связи

@@ -3,14 +3,14 @@ title: Действие sendCustomNotificationToCompanyPortal
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ca43e7c3fa83fea07b78fd0d9048c914eb7267d
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 34fe9e3e5a1aa1ab8cef7d83bf2ff7282e0a01d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792193"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48096005"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>Действие sendCustomNotificationToCompanyPortal
 
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -60,7 +60,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |нотификатионтитле|String|Пока не задокументировано.|
-|нотификатионбоди|String|Н/Д|
+|нотификатионбоди|String|Пока не задокументировано.|
 
 
 
@@ -88,6 +88,9 @@ Content-length: 105
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

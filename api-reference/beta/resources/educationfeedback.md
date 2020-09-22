@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: aac921b1e9f70bc22db2b91833a6b6d348a935db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 00514ce99860fa52d167465fb223dad2981c28db
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502146"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095487"
 ---
 # <a name="educationfeedback-resource-type"></a>Тип ресурса Едукатионфидбакк
 
@@ -28,7 +28,7 @@ ms.locfileid: "42502146"
 |фидбаккдатетиме|DateTimeOffset|Момент времени, когда была выдана обратная связь. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |текст|[itemBody](itembody.md)|Замечания.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -61,3 +61,5 @@ ms.locfileid: "42502146"
   "suppressions": []
 }
 -->
+
+

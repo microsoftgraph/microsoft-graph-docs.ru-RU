@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Сеарчхитсконтаинер
-description: УКАЖИТЕ ОПИСАНИЕ
+description: Представляет список результатов поиска.
 localization_priority: Normal
 author: nmoreau
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d314fcdd2a62be5aea05bed3b2a9e1881f95c3d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a2d120722179cb0fd771a84f867948a7fbfffdd4
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985799"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192788"
 ---
 # <a name="searchhitscontainer-resource-type"></a>Тип ресурса Сеарчхитсконтаинер
 
@@ -20,15 +20,14 @@ ms.locfileid: "47985799"
 
 Представляет список результатов поиска.
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|успешных|Коллекция [сеарчхит](searchhit.md)|Енкасулате результаты поиска.|
-|морересултсаваилабле|Boolean|Предоставляет сведения, если доступны дополнительные результаты. В этом случае можно увеличить смещение "от" и "до".|
-|total|Int32|Общее число результатов. Обратите внимание, что это не количество результатов на странице, а общее количество результатов, удовлетворяющих запросу.|
+|успешных|Коллекция [сеарчхит](searchhit.md)|Коллекция результатов поиска.|
+|морересултсаваилабле|Логическое|Предоставляет сведения, если доступны дополнительные результаты. На основе этих сведений вы можете соответствующим образом настроить свойства **from** и **size** для [сеарчрекуест](searchrequest.md) .|
+|total|Int32|Общее число результатов. Note — это не количество результатов на странице, но общее количество результатов, удовлетворяющих запросу.|
+|Aggregations|Коллекция [сеарчаггрегатион](searchaggregation.md)|Содержит коллекцию агрегатов, вычисляемых на основе предоставленного [аггрегатионоптион](aggregationoption.md) , указанного в запросе.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -43,13 +42,16 @@ ms.locfileid: "47985799"
   "baseType": null
 }-->
 
+
 ```json
 {
   "hits": [{"@odata.type": "microsoft.graph.searchHit"}],
   "moreResultsAvailable": true,
-  "total": 1024
+  "total": 1024,
+  "aggregations": [{"@odata.type": "microsoft.graph.searchAggregation"}]
 }
 ```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -60,4 +62,5 @@ ms.locfileid: "47985799"
   "section": "documentation",
   "tocPath": ""
 }-->
+
 

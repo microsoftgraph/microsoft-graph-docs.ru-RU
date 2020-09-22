@@ -3,14 +3,14 @@ title: Получение Виндовсдефендераппликатионк
 description: Чтение свойств и связей объекта Виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 435a03b0b0fdd7b5a2580b19a7c8c6d549007437
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5a523ce8132ba0ff3d7d56807e5644cd6fd68041
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473926"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095837"
 ---
 # <a name="get-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Получение Виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус
 
@@ -49,10 +49,10 @@ GET /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -86,6 +86,9 @@ Content-Length: 576
   }
 }
 ```
+
+
+
 
 
 

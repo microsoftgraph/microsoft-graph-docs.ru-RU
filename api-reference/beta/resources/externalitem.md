@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Екстерналитем
-description: Элемент, индексируемый с помощью подключения поиска Microsoft.
+description: Элемент, добавляемый в подключение Microsoft Graph.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d775cfefa7a0cd1fdb87a291ba7ac61bb4b40782
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec2c66c91612738295ac4ba49524593d61ff70e4
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013708"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193409"
 ---
 # <a name="externalitem-resource-type"></a>Тип ресурса Екстерналитем
 
@@ -18,7 +18,7 @@ ms.locfileid: "48013708"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Элемент, индексируемый с помощью [подключения](externalconnection.md)поиска Microsoft.
+Элемент, добавляемый в [Подключение](externalconnection.md)Microsoft Graph. 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -36,9 +36,9 @@ ms.locfileid: "48013708"
 | Свойство   | Тип                     | Описание                          |
 |:-----------|:-------------------------|:-------------------------------------|
 | списки        | Коллекция [списков управления доступом](acl.md) | Массив элементов управления доступом. Каждая запись указывает доступ, который предоставляется пользователю или группе. Обязательно. |
-| содержимое    | [екстерналитемконтент](externalitemcontent.md) | Представление содержимого элемента в виде обычного текста или в формате HTML. Текст в этом свойстве является полнотекстовым индексированным. Необязательный параметр. |
+| содержимое    | [екстерналитемконтент](externalitemcontent.md) | Представление содержимого элемента в виде обычного текста. Текст в этом свойстве является полнотекстовым индексированным. Необязательно. |
 | id         | String                   | Предоставленный разработчиком уникальный идентификатор элемента в содержащем [екстерналконнектион](externalconnection.md). Должен быть буквенно-цифровым и не превышать 128 символов. Обязательно. |
-| properties | Объект                   | Контейнер свойств со свойствами элемента. Свойства должны соответствовать [схеме](schema.md) , определенной для [екстерналконнектион](externalconnection.md). Обязательно. |
+| properties | Объект                   | Контейнер свойств со свойствами элемента. Свойства должны соответствовать [схеме](schema.md) , определенной для [екстерналконнектион](externalconnection.md). Обязательный. |
 
 ## <a name="relationships"></a>Связи
 
@@ -79,5 +79,3 @@ ms.locfileid: "48013708"
     "Error: microsoft.graph.externalItem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
   ]
 }-->
-
-

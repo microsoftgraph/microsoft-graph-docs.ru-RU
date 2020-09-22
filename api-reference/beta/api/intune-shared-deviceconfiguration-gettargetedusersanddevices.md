@@ -3,14 +3,14 @@ title: Действие getTargetedUsersAndDevices
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f49a0a5e7194df3727b6dae1992e8bffbe71a19
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69a8c8791a23f74b3b17efa48dc20a9870515ce4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43390622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095935"
 ---
 # <a name="gettargetedusersanddevices-action"></a>Действие getTargetedUsersAndDevices
 
@@ -28,10 +28,10 @@ ms.locfileid: "43390622"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Конфигурация устройств** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+| &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений||
-| &nbsp; &nbsp; **Конфигурация устройств** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+| &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,7 +49,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -101,6 +101,9 @@ Content-Length: 409
   ]
 }
 ```
+
+
+
 
 
 

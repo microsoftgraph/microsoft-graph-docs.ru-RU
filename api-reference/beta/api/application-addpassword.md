@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 550941789667764f7d4474ee5ca4f7d514580284
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eb0fbf216bb68c875c6f8b4c6a967cafbf8427b4
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997062"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192576"
 ---
 # <a name="application-addpassword"></a>Приложение: Аддпассворд
 
@@ -26,9 +26,9 @@ ms.locfileid: "47997062"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
+| Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,9 +51,9 @@ POST /applications/{id}/addPassword
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | String | Понятное имя для пароля. Необязательный параметр. |
-| endDateTime | DateTimeOffset | Дата и время истечения срока действия пароля, представленного в формате ISO 8601, и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный параметр. Значение по умолчанию — "startDateTime + 2 года". |
-| startDateTime | DateTimeOffset | Дата и время, когда пароль становится действительным. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный параметр. Значение по умолчанию — "Now".|
+| displayName | String | Понятное имя для пароля. Необязательно. |
+| endDateTime | DateTimeOffset | Дата и время истечения срока действия пароля, представленного в формате ISO 8601, и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательно. Значение по умолчанию — "startDateTime + 2 года". |
+| startDateTime | DateTimeOffset | Дата и время, когда пароль становится действительным. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательно. Значение по умолчанию — "Now".|
 
 ## <a name="response"></a>Отклик
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 690b3f5ee5eac190916aa1137fc90504cc1de8ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5510de45148e3fe9e66d2696f0b117920231e688
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095662"
 ---
 # <a name="update-planneruser"></a>Обновление plannerUser
 
@@ -48,7 +48,7 @@ PATCH /me/planner
 |фаворитепланреференцес|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md);|Изменения коллекции, содержащие ссылки на планы, помеченные пользователем в качестве избранного.|
 |рецентпланреференцес|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md).|Изменения коллекции, содержащие ссылки на планы, которые пользователь недавно просматривал.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [plannerUser](../resources/planneruser.md) в тексте отклика.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
@@ -84,7 +84,7 @@ If-Match: W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="
   }
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -140,3 +140,5 @@ Content-length: 979
   "suppressions": []
 }
 -->
+
+

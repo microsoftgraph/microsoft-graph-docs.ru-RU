@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: c9025ed27f9155773413cd00454be14f82d8b2e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1af347d0c043ec2b0ca2da05ba44331aab925d2
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064334"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193472"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -58,7 +58,8 @@ ms.locfileid: "48064334"
 |etag| string | Только для чтения. Номер версии сообщения чата. |
 |messageType|string|Тип сообщения чата. Возможные значения: `message` .|
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения чата.|
-|lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени создания или изменения сообщения чата, в том числе когда выполняется ответ (если он является корневым сообщением в канале) или добавляется или удаляется реакция. |
+|lastModifiedDateTime|dateTimeOffset|Только для чтения. Временная метка при создании или изменении сообщения чата (Начальная настройка), включая добавление или удаление реакции. |
+|ластедитеддатетиме|dateTimeOffset|Только для чтения. Временная метка при внесении изменений в сообщение чата. Запускает в пользовательском интерфейсе Teams флаг "отредактирован". Если не выполняется никаких изменений, значение — `null` .|
 |deletedDateTime|dateTimeOffset|Только для чтения. Временная метка, в которой сообщение чата удалено, или значение null, если оно не удалено. |
 |subject|string| Тема сообщения чата в виде открытого текста.|
 |body|[itemBody](itembody.md)|Представление содержимого сообщения чата в формате обычного текста или в формате HTML. Представление определяется параметром contentType в тексте. Если сообщение чата содержит [чатмессажементион](chatmessagemention.md), содержимое всегда находится в формате HTML. |
@@ -70,7 +71,7 @@ ms.locfileid: "48064334"
 |языковые стандарты|string|Язык сообщения чата, заданное клиентом.|
 | полицивиолатион | [чатмессажеполицивиолатион](../resources/chatmessagepolicyviolation.md) |Определяет свойства нарушения политики, заданные с помощью приложения предотвращения потери данных (DLP).|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -125,5 +126,4 @@ ms.locfileid: "48064334"
   "suppressions": []
 }
 -->
-
 

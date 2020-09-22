@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a8d7354175c9f49d7c39c1e16115fdcbadb3ba98
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: efb26734bbcb39cdad5fe451e636d836ea615243
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215863"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095606"
 ---
 # <a name="get-trustframeworkpolicy"></a>Получение Трустфрамеворкполици
 
@@ -49,15 +49,15 @@ GET /trustFramework/policies/{id}/$value
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) в тексте отклика.  
 
->**Note:** тип контента ответа будет иметь `application/xml`значение.
+>**Note:** тип контента ответа будет иметь значение `application/xml` .
 
 ## <a name="example"></a>Пример
 
@@ -102,3 +102,5 @@ Content-Type: application/xml
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: Тип ресурса ACL
 description: Запись управления доступом для элемента, индексируемого Екстерналконнектион поиска Microsoft Search.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d0745ab4a04233a654b829da8f93defb855fc0f9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d390ac0fee3063bd8f0d292d14e04b2616c1d00
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024558"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193535"
 ---
 # <a name="acl-resource-type"></a>Тип ресурса ACL
 
@@ -27,9 +27,9 @@ ms.locfileid: "48024558"
 | Свойство       | Тип   | Описание                                        |
 |:---------------|:-------|:---------------------------------------------------|
 | акцесстипе     | String | Доступ, назначенный удостоверению. Возможные значения: `grant`, `deny`. |
-| идентитисаурце | String | Необходимо указать значение `Azure Active Directory`.           |
-| type           | String | Тип удостоверения. Возможные значения: `user`, `group`, `everyone`, `everyoneExceptGuests`. |
-| value          | String | Идентификатор Azure Active Directory. Если задано значение `type` `user` или `group` , `value` для пользователя или группы задан идентификатор объекта. Если задано значение `type` `everyone` или `everyoneExceptGuests` , `value` в качестве идентификатора клиента для клиента Azure Active Directory. |
+| идентитисаурце | String | Источник удостоверения. Возможные значения: `azureActiveDirectory` или `external` .           |
+| type           | String | Тип удостоверения. Возможные значения: `user` , `group` ,, `everyone` `everyoneExceptGuests` Если идентитисаурце, `azureActiveDirectory` и только в том `group` случае, если идентитисаурце `external` . |
+| value          | String | Уникальный идентификатор удостоверения. В случае удостоверений Azure Active Directory `value` для этого параметра задается идентификатор объекта пользователя, группы или клиента для типов User, Group и Everyone (and еверйониксцептгуестс) соответственно. В случае внешних групп `value` задается идентификатор [екстерналграуп](externalgroup.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -62,5 +62,3 @@ ms.locfileid: "48024558"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

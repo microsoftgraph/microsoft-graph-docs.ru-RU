@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9f05281b34adfbabe2e740cf1211c9c25de1c711
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 82d45f8af4e9a7a80626ad83c58b4fa58c5bb5de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215870"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095669"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>Трустфрамеворккэйсет: Уплоадсекрет
 
@@ -51,12 +51,12 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Используйте|String|Аналогично свойству **use** объекта **трустфрамеворккэй**.|
-|звонить|String|Аналогично свойству **k** объекта **трустфрамеворккэй**. Это поле, используемое для отправки секрета.|
+|Используйте|Строка|Аналогично свойству **use** объекта **трустфрамеворккэй**.|
+|звонить|Строка|Аналогично свойству **k** объекта **трустфрамеворккэй**. Это поле, используемое для отправки секрета.|
 |nbf|Int64|Аналогично свойству **NBF** объекта **трустфрамеворккэй**.|
 |exp|Int64|Аналогично свойству **exp** объекта **трустфрамеворккэй**.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [трустфрамеворккэй](../resources/trustframeworkkey.md) в тексте отклика.
 
@@ -132,3 +132,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

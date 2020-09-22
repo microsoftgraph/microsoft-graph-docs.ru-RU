@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 33f96eab7af8b35720afd5946d83c43db0f20c81
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 5f4dc03514e3d62f0dca096b0e669ada9247ff39
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45435049"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095403"
 ---
 # <a name="educationidentitycreationconfiguration-resource-type"></a>Тип ресурса Едукатионидентитикреатионконфигуратион
 
@@ -49,3 +49,5 @@ ms.locfileid: "45435049"
   ]
 }
 ```
+
+

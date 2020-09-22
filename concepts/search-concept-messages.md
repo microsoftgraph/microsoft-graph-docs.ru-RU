@@ -4,18 +4,18 @@ description: Вы можете использовать API Microsoft Search API
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: b788b6be016354b31915310e3e937aaf73907107
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 439a6ca1d560a848a0e78b2105dc717abfa5ad44
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896030"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192557"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-messages"></a>Использование API службы поиска Microsoft в Microsoft Graph для поиска сообщений
+# <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a>Использование API службы поиска Microsoft для поиска сообщений Outlook
 
-Вы можете использовать API Microsoft Search API для поиска информации в сообщениях электронной почты, получения сообщений, упорядоченных по релевантности, и отображения выделенного интерфейса поиска. Поиск применяется к тексту и вложениям сообщений в собственном почтовом ящике пользователя.
+Используйте API Microsoft Search API для поиска информации в сообщениях электронной почты, получения сообщений, упорядоченных по релевантности, и отображения выделенного интерфейса поиска. Поиск применяется к основному тексту и вложениям сообщений в собственном почтовом ящике вошедшего пользователя.
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
+[!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
 Поисковый запрос может включать в себя [фильтры](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) , вводимые пользователями в текстовое поле **поиска** в Outlook.
 
@@ -25,20 +25,16 @@ ms.locfileid: "44896030"
 
 При поиске сообщений также выполняется поиск вложений. [Поддерживаются такие же типы файлов](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) , что и для поиска в SharePoint Online.
 
-## <a name="examples"></a>Примеры
-
-### <a name="example-1-search-messages-in-a-users-mailbox"></a>Пример 1: Поиск сообщений в почтовом ящике пользователя
+## <a name="example-1-search-messages-in-a-users-mailbox"></a>Пример 1: Поиск сообщений в почтовом ящике пользователя
 
 В следующем примере выполняется запрос сообщений в почтовом ящике вошедшего пользователя, который содержит строку "contoso" в любой части сообщения (имя отправителя, тема, текст сообщения или вложения). Запрос возвращает первые 25 результатов. Результаты поиска упорядочиваются по убыванию **даты и времени** .
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -46,9 +42,7 @@ Content-Type: application/json
         "message"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
+        "queryString": "contoso"
       },
       "from": 0,
       "size": 25
@@ -57,11 +51,14 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа, содержащего одно сообщение, которое соответствует заданному критерию поиска. 
+Ниже приведен пример ответа, содержащего одно сообщение, которое соответствует заданному критерию поиска.
 
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
   "value": [
@@ -75,11 +72,10 @@ Content-Type: application/json
           "moreResultsAvailable": false,
           "hits": [
             {
-              "_id": "ptWLQ4o6HYpQg8xmAAATzOzRAAA=",
-              "_score": 1,
-              "_sortField": "DateTime",
-              "_summary": "Here is a summary of your messages from last week",
-              "_source": {
+              "hitId": "ptWLQ4o6HYpQg8xmAAATzOzRAAA=",
+              "rank": 1,
+              "summary": "Here is a summary of your messages from last week",
+              "resource": {
                 "@odata.type": "#microsoft.graph.message",
                 "createdDateTime": "2019-10-07T10:00:08Z",
                 "lastModifiedDateTime": "2019-10-07T10:00:11Z",
@@ -118,19 +114,17 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-search-top-results-messages"></a>Пример 2: Поиск в сообщениях с наибольшим результатом
+## <a name="example-2-search-top-results-messages"></a>Пример 2: Поиск в сообщениях с наибольшим результатом
 
 В следующем примере используется поисковый запрос, показанный в примере 1, и отсортирует результаты по релевантности. 
 
 <!-- markdownlint-disable MD024 -->
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -138,9 +132,7 @@ Content-Type: application/json
         "message"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
+        "queryString": "contoso"
       },
       "from": 0,
       "size": 15,
@@ -150,11 +142,72 @@ Content-Type: application/json
 }
 ```
 
+#### <a name="response"></a>Отклик
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "value": [
+    {
+      "searchTerms": [
+        "contoso"
+      ],
+      "hitsContainers": [
+        {
+          "total": 1,
+          "moreResultsAvailable": false,
+          "hits": [
+            {
+              "hitId": "ptWLQ4o6HYpQg8xmAAATzOzRAAA=",
+              "rank": 1,
+              "summary": "Here is a summary of your messages from last week",
+              "resource": {
+                "@odata.type": "#microsoft.graph.message",
+                "createdDateTime": "2019-10-07T10:00:08Z",
+                "lastModifiedDateTime": "2019-10-07T10:00:11Z",
+                "receivedDateTime": "2019-10-07T10:00:09Z",
+                "sentDateTime": "2019-10-07T09:59:52Z",
+                "hasAttachments": false,
+                "subject": "Weekly digest: Microsoft 365 changes",
+                "bodyPreview": "Here is a summary of your messages from last week -   New Feature: Live captions in English-US a",
+                "importance": "normal",
+                "replyTo": [
+                  {
+                    "emailAddress": {
+                      "name": "Goncalo Torres"
+                    }
+                  }
+                ],
+                "sender": {
+                  "emailAddress": {
+                    "name": "Office365 Message Center",
+                    "address": "gtorres@contoso.com"
+                  }
+                },
+                "from": {
+                  "emailAddress": {
+                    "name": "Office365 Message Center",
+                    "address": "gtorres@contoso.com"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
 ## <a name="known-limitations"></a>Известные ограничения
 
-- Доступ к почтовому ящику пользователя можно получить только. Поиск делегированных почтовых ящиков не поддерживается.
-- Для сообщений свойство **Total** объекта [сеарчхитсконтаинер](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) содержит количество результатов на странице, а не общее число результатов поиска.
+- Доступ к почтовому ящику вошедшего пользователя можно получить только из собственного почтового ящика. Поиск делегированных почтовых ящиков не поддерживается.
+- Для сообщений свойство **Total** объекта [сеарчхитсконтаинер](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) содержит количество результатов на странице, а не общее число результатов поиска.
+- Сортировка результатов не поддерживается для событий. Предложение Sort в запросе возвратит код ошибки ошибочного запроса в ответе.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Использование API службы поиска Microsoft](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Использование API службы поиска Microsoft](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)

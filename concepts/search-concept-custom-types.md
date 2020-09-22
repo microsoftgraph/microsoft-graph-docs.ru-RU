@@ -1,40 +1,48 @@
 ---
 title: Использование API службы поиска Microsoft в Microsoft Graph для поиска пользовательских типов
-description: С помощью API Microsoft Search можно импортировать внешние данные через ресурс [екстерналитем](/graph/api/resources/externalitem?view=graph-rest-beta) и запускать поисковые запросы для этого внешнего контента.
+description: С помощью API Microsoft Search можно импортировать внешние данные через ресурс [екстерналитем](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) и запускать поисковые запросы для этого внешнего контента.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 875d6e928f5136ec0b33d013cc111739a3b6067e
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: b125b8f923e941ad73d5c578e99a67fdd9ea9eea
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142311"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192604"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-custom-types"></a>Использование API службы поиска Microsoft в Microsoft Graph для поиска пользовательских типов
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>Использование API службы поиска Microsoft для поиска настраиваемых типов, импортированных с помощью Microsoft Graph Connectors
 
-С помощью API Microsoft Search можно импортировать внешние данные через ресурс [екстерналитем](/graph/api/resources/externalitem?view=graph-rest-beta) и запускать поисковые запросы для этого внешнего контента.
+Используйте API Microsoft Search API для поиска контента, полученных и индексируемых через [соединители Microsoft Graph](https://docs.microsoft.com/microsoftsearch/connectors-overview). Содержимое импортируется либо через [встроенные соединители](https://docs.microsoft.com/microsoftsearch/connectors-gallery) , предоставляемые корпорацией Майкрософт, либо через пользовательские соединители, реализованные с помощью [API приема Microsoft Graph Connectors](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
-Чтобы выполнить поиск пользовательских типов, укажите следующие данные в тексте запроса метода [запроса](/graph/api/search-query?view=graph-rest-beta) :
+[!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-- Свойство **контентсаурцес** для включения идентификатора подключения, назначаемого во время установки соединителя
+После импорта и индексирования контента можно использовать API поиска для запроса контента.
 
-- Свойство **EntityTypes** в качестве`externalItem`
+Чтобы выполнить поиск пользовательских типов, укажите следующие свойства в теле запроса метода [запроса](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) :
 
-- Свойство **stored_fields** , включающее поля внешнего элемента, которые требуется получить
+- Свойство **контентсаурцес** для включения идентификатора подключения, назначаемого во время установки соединителя. Можно передать несколько идентификаторов подключения для поиска по нескольким подключениям. Результаты возвращаются в виде одного списка, ранжированного по нескольким подключениям.
+
+<!--
+TODOSEARCHAPI - Bug 1653398 
+-->
+
+- Свойство **EntityTypes** AS `externalItem` .
+
+- Свойство **Fields** для включения полей во внешний элемент для извлечения.
 
 ## <a name="example"></a>Пример
+
+В этом примере содержимое базы данных [AdventureWorks](https://docs.microsoft.com/sql/samples/adventureworks-install-configure) было активировано с помощью встроенного СОЕДИНИТЕЛЯ Azure SQL.
 
 ### <a name="request"></a>Запрос
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -42,21 +50,18 @@ Content-Type: application/json
         "externalItem"
       ],
       "contentSources": [
-        "/external/connections/servicenow-connector-contoso"
+          "/external/connections/azuresqlconnector",
+          "/external/connections/azuresqlconnector2"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso tickets"
-        }
+        "queryString": "yang"
       },
       "from": 0,
       "size": 25,
-      "stored_fields": [
-        "number",
-        "shortdescription",
-        "syscreatedon",
-        "accessurl",
-        "previewContent"
+      "fields": [
+        "BusinessEntityID",
+        "firstName",
+        "lastName"
       ]
     }
   ]
@@ -65,46 +70,49 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
   "value": [
     {
+      "searchTerms": ["ya"],
       "hitsContainers": [
         {
           "total": 2,
           "moreResultsAvailable": false,
           "hits": [
             {
-              "_id": "AAMkADc0NDNlNTE0",
-              "_score": 1,
-              "_sortField": "Relevance",
-              "_source": {
+              "hitId": "AAMkADc0NDNlNTE0",
+              "rank": 1,
+              "summary": "<ddd/>",
+              "contentSource": "/external/connections/azuresqlconnector",
+              "resource": {
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
-                  "number": "KB0010025",
-                  "shortdescription": "Contoso maintenance guidelines",
-                  "syscreatedon": "2019-10-14T22:45:02Z",
-                  "accessurl": "https://contoso.service-now.com/kb_view.do?sys_kb_id=6b5465781ba000104793877ddc4bcb81",
-                  "previewContent": "Contoso maintenance guidelines"
+                  "businessEntityID": 20704,
+                  "firstName": "Amy",
+                  "lastName": "Yang"
                 }
               }
             },
-            {
-              "_id": "MG+1glPAAAAAAl3AAA=",
-              "_score": 2,
-              "_sortField": "Relevance",
-              "_source": {
+           {
+              "hitId": "AQMkADg3M2I3YWMyLTEwZ",
+              "rank": 2,
+              "summary": "<ddd/>",
+              "contentSource": "/external/connections/azuresqlconnector2",
+              "resource": {
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
-                  "number": "KB0054396",
-                  "shortdescription": "Contoso : Setting Office for the first time.",
-                  "syscreatedon": "2019-08-09T01:53:26Z",
-                  "accessurl": "https://contoso.service-now.com/kb_view.do?sys_kb_id=004d8d931b0733004793877ddc4bcb29",
-                  "previewContent": "Description:  Setting Office for the first time.  Resolution:    To setup any Office app for the first time, tap any Office app like Word to launch it.    Tap Sign in if you already have a Microsoft Account or a Microsoft 365 work or school account."
+                  "businessEntityID": 20704,
+                  "shortdescription": "Contoso maintenance guidelines",
+                  "firstName": "Amy",
+                  "lastName": "Yang"
                 }
               }
-            }
+            },
           ]
         }
       ]
@@ -115,10 +123,8 @@ Content-Type: application/json
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-- Пользовательские типы не поддерживают поиск в нескольких источниках (указывается в **контентсаурцес**). Одновременно можно выполнять поиск только по одному подключению.
-
-- Необходимо указать свойство **stored_fields** ; в противном случае результаты поиска не возвращаются.
+- Для получения извлекаемых полей в схеме поиска необходимо указать свойство **Fields** .
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
