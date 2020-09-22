@@ -3,14 +3,14 @@ title: Обновление Вулнераблеманажеддевице
 description: Обновление свойств объекта Вулнераблеманажеддевице.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b4bea3922bd8d8a4a5222470323545657cfcf2f
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 13f0f5fb94476d6c7a3ae170660d008e160540ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793512"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999925"
 ---
 # <a name="update-vulnerablemanageddevice"></a>Обновление Вулнераблеманажеддевице
 
@@ -29,7 +29,7 @@ ms.locfileid: "46793512"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,10 +43,10 @@ PATCH ** Entity URI for microsoft.management.services.api.vulnerableManagedDevic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md).
@@ -60,7 +60,7 @@ PATCH ** Entity URI for microsoft.management.services.api.vulnerableManagedDevic
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,6 +95,9 @@ Content-Length: 263
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
+
+
+
 
 
 

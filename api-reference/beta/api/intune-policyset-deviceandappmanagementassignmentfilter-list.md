@@ -3,14 +3,14 @@ title: Список Девицеандаппманажементассигнме
 description: Список свойств и связей объектов Девицеандаппманажементассигнментфилтер.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 010c96d8722c55aaeaa53e1c7e62095e1547d3ed
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: dd2789691cdce08afd9e3ae8bd742bc1671d0d93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791737"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999890"
 ---
 # <a name="list-deviceandappmanagementassignmentfilters"></a>Список Девицеандаппманажементассигнментфилтерс
 
@@ -43,7 +43,7 @@ GET /deviceManagement/assignmentFilters
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -85,6 +85,9 @@ Content-Length: 523
   ]
 }
 ```
+
+
+
 
 
 

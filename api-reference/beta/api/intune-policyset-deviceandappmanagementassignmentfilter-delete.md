@@ -3,14 +3,14 @@ title: Удаление Девицеандаппманажементассигн
 description: Удаляет объект Девицеандаппманажементассигнментфилтер.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42d0db98fc6ccdb113a7dc271273cfc5f476511b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: db4b13a246d6675361cd0a3dae7d8fbf5285ce3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791751"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999904"
 ---
 # <a name="delete-deviceandappmanagementassignmentfilter"></a>Удаление Девицеандаппманажементассигнментфилтер
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilt
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/assignmentFilters/{devi
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

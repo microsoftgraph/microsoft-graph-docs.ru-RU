@@ -3,14 +3,14 @@ title: Создание Девицеандаппманажементассигн
 description: Создание нового объекта Девицеандаппманажементассигнментфилтер.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c72cb53c03c88843a252ebb8230800d1a4c7a5e1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 87ecea146896e8bfbb2265f6623d9eaf27c2732d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791758"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999911"
 ---
 # <a name="create-deviceandappmanagementassignmentfilter"></a>Создание Девицеандаппманажементассигнментфилтер
 
@@ -43,7 +43,7 @@ POST /deviceManagement/assignmentFilters
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,9 +56,9 @@ POST /deviceManagement/assignmentFilters
 |id|String|Ключ фильтра назначений.|
 |createdDateTime|DateTimeOffset|Время создания фильтра назначений.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения фильтра назначений.|
-|displayName|Строка|DisplayName фильтра назначений.|
+|displayName|String|DisplayName фильтра назначений.|
 |description|String|Описание фильтра назначений.|
-|platform|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Тип платформы устройств, к которым будет применяться фильтр назначений. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|платформа|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Тип платформы устройств, к которым будет применяться фильтр назначений. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |правила|String|Определение правила для фильтра назначений.|
 |roleScopeTags|Коллекция String|RoleScopeTags фильтра назначений.|
 
@@ -109,6 +109,9 @@ Content-Length: 446
   ]
 }
 ```
+
+
+
 
 
 
