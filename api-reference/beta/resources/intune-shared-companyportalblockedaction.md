@@ -3,37 +3,37 @@ title: Тип ресурса Компанипорталблоккедактио�
 description: Заблокированные действия на корпоративном портале в соответствии с типами владения платформой и устройствами
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ebaea7b233a4a596db12e93643992d6ef7a15cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 005d87adb78b008daea3d55a86c8b75661d41e52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457381"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073658"
 ---
-# <a name="companyportalblockedaction-resource-type"></a><span data-ttu-id="2a788-103">Тип ресурса Компанипорталблоккедактион</span><span class="sxs-lookup"><span data-stu-id="2a788-103">companyPortalBlockedAction resource type</span></span>
+# <a name="companyportalblockedaction-resource-type"></a><span data-ttu-id="31ab4-103">Тип ресурса Компанипорталблоккедактион</span><span class="sxs-lookup"><span data-stu-id="31ab4-103">companyPortalBlockedAction resource type</span></span>
 
-<span data-ttu-id="2a788-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2a788-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="31ab4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="31ab4-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="2a788-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2a788-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="31ab4-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="31ab4-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2a788-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2a788-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="31ab4-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="31ab4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2a788-107">Заблокированные действия на корпоративном портале в соответствии с типами владения платформой и устройствами</span><span class="sxs-lookup"><span data-stu-id="2a788-107">Blocked actions on the company portal as per platform and device ownership types</span></span>
+<span data-ttu-id="31ab4-107">Заблокированные действия на корпоративном портале в соответствии с типами владения платформой и устройствами</span><span class="sxs-lookup"><span data-stu-id="31ab4-107">Blocked actions on the company portal as per platform and device ownership types</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2a788-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="2a788-108">Properties</span></span>
-|<span data-ttu-id="2a788-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="2a788-109">Property</span></span>|<span data-ttu-id="2a788-110">Тип</span><span class="sxs-lookup"><span data-stu-id="2a788-110">Type</span></span>|<span data-ttu-id="2a788-111">Описание</span><span class="sxs-lookup"><span data-stu-id="2a788-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="31ab4-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="31ab4-108">Properties</span></span>
+|<span data-ttu-id="31ab4-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="31ab4-109">Property</span></span>|<span data-ttu-id="31ab4-110">Тип</span><span class="sxs-lookup"><span data-stu-id="31ab4-110">Type</span></span>|<span data-ttu-id="31ab4-111">Описание</span><span class="sxs-lookup"><span data-stu-id="31ab4-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2a788-112">platform</span><span class="sxs-lookup"><span data-stu-id="2a788-112">platform</span></span>|[<span data-ttu-id="2a788-113">девицеплатформтипе</span><span class="sxs-lookup"><span data-stu-id="2a788-113">devicePlatformType</span></span>](../resources/intune-shared-deviceplatformtype.md)|<span data-ttu-id="2a788-114">ОС устройства/платформа.</span><span class="sxs-lookup"><span data-stu-id="2a788-114">Device OS/Platform.</span></span> <span data-ttu-id="2a788-115">Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.</span><span class="sxs-lookup"><span data-stu-id="2a788-115">Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.</span></span>|
-|<span data-ttu-id="2a788-116">ownerType</span><span class="sxs-lookup"><span data-stu-id="2a788-116">ownerType</span></span>|[<span data-ttu-id="2a788-117">ownerType</span><span class="sxs-lookup"><span data-stu-id="2a788-117">ownerType</span></span>](../resources/intune-shared-ownertype.md)|<span data-ttu-id="2a788-118">Тип владения устройством.</span><span class="sxs-lookup"><span data-stu-id="2a788-118">Device ownership type.</span></span> <span data-ttu-id="2a788-119">Возможные значения: `unknown`, `company`, `personal`.</span><span class="sxs-lookup"><span data-stu-id="2a788-119">Possible values are: `unknown`, `company`, `personal`.</span></span>|
-|<span data-ttu-id="2a788-120">action</span><span class="sxs-lookup"><span data-stu-id="2a788-120">action</span></span>|[<span data-ttu-id="2a788-121">companyPortalAction</span><span class="sxs-lookup"><span data-stu-id="2a788-121">companyPortalAction</span></span>](../resources/intune-shared-companyportalaction.md)|<span data-ttu-id="2a788-122">Действие устройства.</span><span class="sxs-lookup"><span data-stu-id="2a788-122">Device Action.</span></span> <span data-ttu-id="2a788-123">Возможные значения: `unknown`, `remove`, `reset`.</span><span class="sxs-lookup"><span data-stu-id="2a788-123">Possible values are: `unknown`, `remove`, `reset`.</span></span>|
+|<span data-ttu-id="31ab4-112">платформа</span><span class="sxs-lookup"><span data-stu-id="31ab4-112">platform</span></span>|[<span data-ttu-id="31ab4-113">девицеплатформтипе</span><span class="sxs-lookup"><span data-stu-id="31ab4-113">devicePlatformType</span></span>](../resources/intune-shared-deviceplatformtype.md)|<span data-ttu-id="31ab4-114">ОС устройства/платформа.</span><span class="sxs-lookup"><span data-stu-id="31ab4-114">Device OS/Platform.</span></span> <span data-ttu-id="31ab4-115">Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.</span><span class="sxs-lookup"><span data-stu-id="31ab4-115">Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.</span></span>|
+|<span data-ttu-id="31ab4-116">ownerType</span><span class="sxs-lookup"><span data-stu-id="31ab4-116">ownerType</span></span>|[<span data-ttu-id="31ab4-117">ownerType</span><span class="sxs-lookup"><span data-stu-id="31ab4-117">ownerType</span></span>](../resources/intune-shared-ownertype.md)|<span data-ttu-id="31ab4-118">Тип владения устройством.</span><span class="sxs-lookup"><span data-stu-id="31ab4-118">Device ownership type.</span></span> <span data-ttu-id="31ab4-119">Возможные значения: `unknown`, `company`, `personal`.</span><span class="sxs-lookup"><span data-stu-id="31ab4-119">Possible values are: `unknown`, `company`, `personal`.</span></span>|
+|<span data-ttu-id="31ab4-120">action</span><span class="sxs-lookup"><span data-stu-id="31ab4-120">action</span></span>|[<span data-ttu-id="31ab4-121">companyPortalAction</span><span class="sxs-lookup"><span data-stu-id="31ab4-121">companyPortalAction</span></span>](../resources/intune-shared-companyportalaction.md)|<span data-ttu-id="31ab4-122">Действие устройства.</span><span class="sxs-lookup"><span data-stu-id="31ab4-122">Device Action.</span></span> <span data-ttu-id="31ab4-123">Возможные значения: `unknown`, `remove`, `reset`.</span><span class="sxs-lookup"><span data-stu-id="31ab4-123">Possible values are: `unknown`, `remove`, `reset`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="2a788-124">Связи</span><span class="sxs-lookup"><span data-stu-id="2a788-124">Relationships</span></span>
-<span data-ttu-id="2a788-125">Нет</span><span class="sxs-lookup"><span data-stu-id="2a788-125">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="31ab4-124">Отношения</span><span class="sxs-lookup"><span data-stu-id="31ab4-124">Relationships</span></span>
+<span data-ttu-id="31ab4-125">Нет</span><span class="sxs-lookup"><span data-stu-id="31ab4-125">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2a788-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2a788-126">JSON Representation</span></span>
-<span data-ttu-id="2a788-127">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2a788-127">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="31ab4-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="31ab4-126">JSON Representation</span></span>
+<span data-ttu-id="31ab4-127">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="31ab4-127">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.companyPortalBlockedAction"
@@ -47,6 +47,9 @@ ms.locfileid: "43457381"
   "action": "String"
 }
 ```
+
+
+
 
 
 
