@@ -3,14 +3,14 @@ title: Создание Апплинроллментпрофилеассигнм
 description: Создание нового объекта Апплинроллментпрофилеассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c53f504a88836c277f3c51decffb257b785f4a43
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: db6b389b4ac7169cf65a8293634c087543de4da4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792087"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040772"
 ---
 # <a name="create-appleenrollmentprofileassignment"></a>Создание Апплинроллментпрофилеассигнмент
 
@@ -46,14 +46,14 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedE
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Апплинроллментпрофилеассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Апплинроллментпрофилеассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ назначения.|
+|id|Строка|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для профиля развертывания, инициированного пользователем Apple.|
 
 
@@ -97,6 +97,9 @@ Content-Length: 376
   }
 }
 ```
+
+
+
 
 
 

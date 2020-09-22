@@ -3,14 +3,14 @@ title: действие Жетсеттингнонкомплианцерепор
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b175ea767f603988e6046452df4bbc9ad1c333b
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 13b0f4485cfc752895f17cdd7ed58e203367b1d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178425"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040464"
 ---
 # <a name="getsettingnoncompliancereport-action"></a>действие Жетсеттингнонкомплианцерепорт
 
@@ -43,10 +43,10 @@ POST /deviceManagement/reports/getSettingNonComplianceReport
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -61,7 +61,7 @@ POST /deviceManagement/reports/getSettingNonComplianceReport
 |skip|Int32|Пока не задокументировано.|
 |top|Int32|Пока не задокументировано.|
 |sessionId|String|Пока не задокументировано.|
-|filter|String|Н/Д|
+|filter|String|Пока не задокументировано.|
 
 
 
@@ -108,6 +108,9 @@ Content-Length: 99
   "value": "Z2V0U2V0dGluZ05vbkNvbXBsaWFuY2VSZXBvcnQgSW50dW5lIERvYyBTYW1wbGUgMTEwMDk1MTE2MA=="
 }
 ```
+
+
+
 
 
 

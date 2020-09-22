@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6f2246ad9d166bc51dae79032c95fc3b2d55b72e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e26cd675ecb1a3a50c505c019244c60eaee88c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523039"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039358"
 ---
 # <a name="justifyaction-resource-type"></a>Тип ресурса Жустифяктион
 
@@ -52,3 +52,4 @@ ms.locfileid: "42523039"
   "section": "documentation",
   "tocPath": ""
 }-->
+

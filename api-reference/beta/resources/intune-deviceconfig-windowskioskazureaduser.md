@@ -3,14 +3,14 @@ title: Тип ресурса Виндовскиосказуреадусер
 description: Класс, используемый для определения учетной записи пользователя AzureAD для конфигурации киоска
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c1dd759906ec4a4891fdbb2fb57d9c5258aa102
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 687d51118cee3c6ba2ee7a1b106cd7b0313c6c08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466780"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039806"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>Тип ресурса Виндовскиосказуреадусер
 
@@ -31,7 +31,7 @@ ms.locfileid: "43466780"
 |userId|String|Идентификатор пользователя AzureAD, который будет заблокирован для этой конфигурации киоска|
 |userPrincipalName|String|Учетные записи пользователей, которые будут заблокированы для этой конфигурации киоска|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,6 +48,9 @@ ms.locfileid: "43466780"
   "userPrincipalName": "String"
 }
 ```
+
+
+
 
 
 

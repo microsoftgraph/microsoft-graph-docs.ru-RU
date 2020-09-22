@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: f542c58d6b824b678afbe493d03ae760b3be428f
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 1fe12502832c6fb6053488989f95838e8dc77adb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657926"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039225"
 ---
 # <a name="onenote-resource-type"></a>Тип ресурса onenote
 
@@ -99,3 +99,5 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
   "suppressions": []
 }
 -->
+
+

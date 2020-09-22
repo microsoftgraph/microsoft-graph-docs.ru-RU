@@ -3,14 +3,14 @@ title: Тип ресурса Виндовскиоскактиведиректо�
 description: Класс, используемый для определения группы каталогов Azure для конфигурации киоска
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c46d3b44c28c7f07b5d0478acc3f82547b3819ee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 35446a816b8fd14e6258e4f205ca4aaa3745053b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466862"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039919"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>Тип ресурса Виндовскиоскактиведиректориграуп
 
@@ -28,7 +28,7 @@ ms.locfileid: "43466862"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupName|String|Имя группы Active Directory, которая будет заблокирована для этой конфигурации киоска|
+|groupName|Строка|Имя группы Active Directory, которая будет заблокирована для этой конфигурации киоска|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -46,6 +46,9 @@ ms.locfileid: "43466862"
   "groupName": "String"
 }
 ```
+
+
+
 
 
 

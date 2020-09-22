@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6e971c8b608ad5e42c225cea2aa5da0ad06cedbc
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 21030399181247cc46edb7119c1d9b9ac067f184
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843263"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040486"
 ---
 # <a name="update-onlinemeeting"></a>Обновление Онлинемитинг
 
@@ -29,7 +29,7 @@ ms.locfileid: "47843263"
 | Для приложений                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* Администраторы должны создать [политику доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy.md) и предоставить ее пользователю, доставке приложения, настроенного в политике, для обновления собраний по сети от имени этого пользователя (идентификатора пользователя, указанного в пути запроса).
+> \* Администраторы должны создать [политику доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy) и предоставить ее пользователю, доставке приложения, настроенного в политике, для обновления собраний по сети от имени этого пользователя (идентификатора пользователя, указанного в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 
 > **Примечания.**
 >
-> - `userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy.md).
+> - `userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` — **идентификатор** [объекта онлинемитинг](../resources/onlinemeeting.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -159,3 +159,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

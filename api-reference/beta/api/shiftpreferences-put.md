@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b3f87e6981abf18a4f082839c3e3e47455d36961
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 998a96fdf9ee874a3ae58a6029d31f270117fdca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44154327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040194"
 ---
 # <a name="update-shiftpreferences"></a>Обновление Шифтпреференцес
 
@@ -48,7 +48,7 @@ PUT /users/{userId}/settings/shiftPreferences
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [шифтпреференцес](../resources/shiftpreferences.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 NO CONTENT`.
 
@@ -129,3 +129,5 @@ HTTP/1.1 204 NO CONTENT
   ]
 }
 -->
+
+

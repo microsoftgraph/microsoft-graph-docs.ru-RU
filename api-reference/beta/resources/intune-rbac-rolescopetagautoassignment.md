@@ -3,14 +3,14 @@ title: Тип ресурса Ролескопетагаутоассигнмен�
 description: Содержит свойства для автоматического назначения тега области роли группе, которая будет применена к устройствам.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4d136ed1f67578b22b36be2e34ff2ada81b7cbf9
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 1ee37a9ca3973cb2f4a7c4ebd0f380ede2868282
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793628"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039498"
 ---
 # <a name="rolescopetagautoassignment-resource-type"></a>Тип ресурса Ролескопетагаутоассигнмент
 
@@ -37,7 +37,7 @@ ms.locfileid: "44793628"
 |id|String|Ключ объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевой объект автоматического назначения для определенного тега области применения роли.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -59,6 +59,9 @@ ms.locfileid: "44793628"
   }
 }
 ```
+
+
+
 
 
 

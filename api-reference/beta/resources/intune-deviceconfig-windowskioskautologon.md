@@ -3,14 +3,14 @@ title: Тип ресурса Виндовскиоскаутологон
 description: Класс, используемый для определения конфигурации киоска с автовходом
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 66693407bb1498e0e4419f2afbdb699889e4220a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 17a9301993215da487d1018b0659ace334daff6f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466810"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039924"
 ---
 # <a name="windowskioskautologon-resource-type"></a>Тип ресурса Виндовскиоскаутологон
 
@@ -29,7 +29,7 @@ ms.locfileid: "43466810"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,9 @@ ms.locfileid: "43466810"
   "@odata.type": "#microsoft.graph.windowsKioskAutologon"
 }
 ```
+
+
+
 
 
 

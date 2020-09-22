@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: d05b30dbbb5ecb6aa8a1934a5fe2a1b35cbe890b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a2102a77748ebef8267792a887a522fa716619ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502860"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040049"
 ---
 # <a name="vendors-resource-type"></a>Тип ресурса "поставщики"
 
@@ -53,7 +53,7 @@ ms.locfileid: "42502860"
 |lastModifiedDateTime|datetime|Дата и время последнего изменения поставщика. Только для чтения.|  
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -82,4 +82,6 @@ ms.locfileid: "42502860"
 }
 
 ```
+
+
 

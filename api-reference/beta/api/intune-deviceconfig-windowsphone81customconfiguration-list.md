@@ -3,14 +3,14 @@ title: Перечисление объектов windowsPhone81CustomConfigurati
 description: Перечисление свойств и связей объектов windowsPhone81CustomConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 032a5d1c2ea3d3c11d4c13bfee329e2dc4c5f94f
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 943b74226b33765e827d0fdaf243b25b893a4200
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178971"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041052"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>Перечисление объектов windowsPhone81CustomConfiguration
 
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -115,6 +115,9 @@ Content-Length: 1613
   ]
 }
 ```
+
+
+
 
 
 

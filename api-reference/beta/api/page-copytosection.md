@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 2f37685212c48f3afe75a9c7daf2776f08aa92f6
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 189ef82b66a972146488510a3de608c88fab4d1a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896436"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040436"
 ---
 # <a name="page-copytosection"></a>Страница: copyToSection
 
@@ -43,15 +43,15 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | `application/json` |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите объект JSON, содержащий необходимые для операции параметры.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|Идентификатор сайта SharePoint, в который необходимо скопировать. Используйте только при копировании на сайт SharePoint.|
-|siteId|String|Идентификатор веб-сайта SharePoint, в который необходимо скопировать. Используйте только при копировании на сайт SharePoint.|
+|siteCollectionId|Строка|Идентификатор сайта SharePoint, в который необходимо скопировать. Используйте только при копировании на сайт SharePoint.|
+|siteId|Строка|Идентификатор веб-сайта SharePoint, в который необходимо скопировать. Используйте только при копировании на сайт SharePoint.|
 |groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Microsoft 365.|
 |id|String|Обязательный. Идентификатор раздела назначения.|
 
@@ -118,3 +118,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: conceptualPageType
-ms.openlocfilehash: 0c13ebeb6381e894684a14be42772d69b5d31e62
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 4f9c05d1e7bf8e652d740aff80704e24b5788a01
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630328"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039239"
 ---
 # <a name="use-the-onenote-rest-api"></a>Использование REST API для OneNote
 
@@ -30,7 +30,7 @@ https://graph.microsoft.com/{version}/{location}/onenote/
 - Значение `v1.0` предназначено для стабильного производственного кода.
 - Используйте значение `beta`, чтобы опробовать функцию, находящуюся на стадии разработки. Функции бета-версии конечной точки могут меняться. Не рекомендуем использовать ее в рабочем коде.
 
-Местоположение может представлять собой записные книжки для пользователей в Microsoft 365 или OneDrive для пользователей, групповые записные книжки или записные книжки группы SharePoint, размещенные на сайте Microsoft 365. 
+В качестве расположений можно задавать записные книжки пользователя в Microsoft 365 или личные хранилища OneDrive, записные книжки группы (в том числе размещенные на сайте SharePoint) в Microsoft 365. 
 
 ![Стек разработки API OneNote](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/onenote-dev-diagram.png)
 
@@ -63,3 +63,5 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 
 ## <a name="whats-new"></a>Новые возможности
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
+
+

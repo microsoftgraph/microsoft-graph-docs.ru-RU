@@ -3,14 +3,14 @@ title: Тип ресурса Ролескопетаг
 description: Тег области применения роли
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b30b3944976b2d8d0ac13aeb658402849c0b2d6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4106ba2b3764621c94db52d92ca1d7b5e213dee0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43356819"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039484"
 ---
 # <a name="rolescopetag-resource-type"></a>Тип ресурса Ролескопетаг
 
@@ -38,11 +38,11 @@ ms.locfileid: "43356819"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|Строка|Отображаемое или понятное имя тега области применения роли.|
+|displayName|String|Отображаемое или понятное имя тега области применения роли.|
 |description|String|Описание тега области применения роли.|
 |isBuiltIn|Boolean|Описание тега области применения роли.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [ролескопетагаутоассигнмент](../resources/intune-rbac-rolescopetagautoassignment.md)|Список назначений для тега области применения роли.|
@@ -64,6 +64,9 @@ ms.locfileid: "43356819"
   "isBuiltIn": true
 }
 ```
+
+
+
 
 
 

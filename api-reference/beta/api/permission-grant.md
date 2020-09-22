@@ -6,12 +6,12 @@ description: Предоставление доступа к списку пол�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 901b5c7b7e67b0d45a0d4891b239fa950d864119
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: 851073cb23778dcec89fc876f314a9b3e1297550
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146396"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040320"
 ---
 # <a name="permission-grant"></a>разрешение: Grant
 
@@ -43,9 +43,9 @@ POST /shares/{encoded-sharing-url}/permission/grant
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -67,7 +67,7 @@ POST /shares/{encoded-sharing-url}/permission/grant
 
 Список доступных ролей приведен в разделе [значения свойств Roles](../resources/permission.md#roles-property-values).
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию [разрешений][] в тексте отклика.
 
@@ -225,3 +225,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sharing/Add permissions"
 } -->
+
+

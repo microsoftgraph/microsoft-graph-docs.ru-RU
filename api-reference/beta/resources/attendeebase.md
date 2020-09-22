@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: harini84
-ms.openlocfilehash: 5ad86fd3cd1ec6818c6f8466f5ff47a90b17dc94
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 947b137d3619cca6cc9a6faa8c3f3e761d15fb37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807201"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040163"
 ---
 # <a name="attendeebase-resource-type"></a>Тип ресурсов attendeeBase
 
@@ -22,7 +22,7 @@ ms.locfileid: "46807201"
 
 Тип, производный от [recipient](recipient.md).
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -59,3 +59,5 @@ ms.locfileid: "46807201"
   "suppressions": []
 }
 -->
+
+

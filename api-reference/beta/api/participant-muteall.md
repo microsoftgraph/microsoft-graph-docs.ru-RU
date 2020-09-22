@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5bddd241226d0e583c7c5871c8da291edc486ff6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0842ebbf4710c964a1ee35e3d63b0f8a0311cb90
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455965"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040349"
 ---
 # <a name="participant-muteall"></a>участник: Мутеалл
 
@@ -30,7 +30,7 @@ ms.locfileid: "42455965"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | Нет                                        |
+| Для приложений                            | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ POST /communications/calls/{id}/participants/muteAll
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция String|Участники, которые должны быть отключены.|
-|Контекст|Строка|Контекст клиента.|
+|Контекст|String|Контекст клиента.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
@@ -131,3 +131,5 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
   ]
 }
 -->
+
+

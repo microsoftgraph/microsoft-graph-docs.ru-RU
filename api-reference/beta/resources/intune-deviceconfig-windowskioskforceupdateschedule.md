@@ -3,14 +3,14 @@ title: Тип ресурса Виндовскиоскфорцеупдатесч�
 description: Расписание принудительного обновления Windows 10 для устройств киоска.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94a30c70ccc65464ad97589c84f83de79fefeb9a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bc53498bf14dff5c62a4646f504ae1a31c84ed1b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464114"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039778"
 ---
 # <a name="windowskioskforceupdateschedule-resource-type"></a>Тип ресурса Виндовскиоскфорцеупдатесчедуле
 
@@ -31,7 +31,7 @@ ms.locfileid: "43464114"
 |dayofMonth|Int32|День месяца. Допустимые значения — от 1 до 31.|
 |руниммедиателифафтерстартдатетиме|Boolean|Если этот параметр имеет значение true, задача выполняется немедленно, если StartDateTime находится в прошлое, иначе — выполняется при следующем повторении.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,6 +51,9 @@ ms.locfileid: "43464114"
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
+
+
+
 
 
 

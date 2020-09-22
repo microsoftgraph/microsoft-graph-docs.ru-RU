@@ -3,14 +3,14 @@ title: Тип ресурса Виндовскиосказуреадграуп
 description: Класс, используемый для идентификации группы AzureAD для конфигурации киоска
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c312f5fbefdf156bda98f8f82ce68c4e0d3213f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 50ec99efb2588e9c8adcfd314e6d9bab88fef0de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466795"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039855"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>Тип ресурса Виндовскиосказуреадграуп
 
@@ -31,7 +31,7 @@ ms.locfileid: "43466795"
 |displayName|String|Отображаемое имя группы AzureAD, которая будет заблокирована для этой конфигурации киоска|
 |groupId|String|Идентификатор группы AzureAD, которая будет заблокирована для этой конфигурации киоска|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,6 +48,9 @@ ms.locfileid: "43466795"
   "groupId": "String"
 }
 ```
+
+
+
 
 
 

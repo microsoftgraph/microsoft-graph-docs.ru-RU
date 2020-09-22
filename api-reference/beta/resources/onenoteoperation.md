@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 500a4c20583f6af9cc8bacf98dd4de60354f0ab2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e427776d1a001ad3be9badca2dd731c2b42a057
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522346"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039207"
 ---
 # <a name="onenoteoperation-resource-type"></a>Тип ресурса onenoteOperation
 
@@ -50,14 +50,14 @@ ms.locfileid: "42522346"
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |Время начала операции.|
 |error|[оненотеоператионеррор](onenoteoperationerror.md)|Ошибка, возвращенная операцией.|
-|id|строка|Идентификатор операции. Только для чтения.|
+|id|string|Идентификатор операции. только для чтения.|
 |ластактиондатетиме| DateTimeOffset |Время последнего действия операции.|
 |resourceId|string|Идентификатор ресурса.|
 |ресаурцелокатион|string|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
-|status|string|Текущее состояние операции: `notstarted`, `running`,, `completed``failed` |
+|status|string|Текущее состояние операции: `notstarted` ,, `running` `completed` , `failed` |
 |percentComplete|string|Процент завершения операции, если операция все еще находится в `running` состоянии.
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -79,3 +79,5 @@ ms.locfileid: "42522346"
   "suppressions": []
 }
 -->
+
+

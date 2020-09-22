@@ -3,14 +3,14 @@ title: Get windowsUpdateForBusinessConfiguration
 description: Чтение свойств и связей объекта windowsUpdateForBusinessConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 659306ec8a908ddc32fd08d06b162fb9d7fc0cd5
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 2a52a9356da7c4e9f3e16817103b94623b29b846
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178950"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040989"
 ---
 # <a name="get-windowsupdateforbusinessconfiguration"></a>Get windowsUpdateForBusinessConfiguration
 
@@ -54,7 +54,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -148,6 +148,9 @@ Content-Length: 3127
   }
 }
 ```
+
+
+
 
 
 

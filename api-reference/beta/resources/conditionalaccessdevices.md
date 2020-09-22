@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b10bef4904d443ca975f5f98834b3b2d1c72a7e7
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: f0610fb376b265a261b8a88ab4181dd89bb9f6c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040077"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>Тип ресурса Кондитионалакцессдевицес
 
@@ -24,10 +24,10 @@ ms.locfileid: "43916818"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| инклудедевицестатес | Коллекция объектов string | Состояния политики. `All`— Единственное допустимое значение. |
-| ексклудедевицестатес | Коллекция объектов string | Состояния, исключенные из области применения политики. Возможные значения: `Compliant`, `DomainJoined`. |
+| инклудедевицестатес | Коллекция String | Состояния политики. `All` — Единственное допустимое значение. |
+| ексклудедевицестатес | Коллекция String | Состояния, исключенные из области применения политики. Возможные значения: `Compliant` , `DomainJoined` . |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -61,3 +61,5 @@ ms.locfileid: "43916818"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

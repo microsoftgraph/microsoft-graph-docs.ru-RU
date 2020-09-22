@@ -3,14 +3,14 @@ title: Получение windowsProtectionState
 description: Чтение свойств и связей объекта windowsProtectionState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: adbd2aa6e579157ebf1c3e8dab42f12d287a0bfc
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 14ccdf80f45118857d0956c6dcc1a210630d4c90
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790583"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040912"
 ---
 # <a name="get-windowsprotectionstate"></a>Получение windowsProtectionState
 
@@ -29,7 +29,7 @@ ms.locfileid: "46790583"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -94,6 +94,9 @@ Content-Length: 971
   }
 }
 ```
+
+
+
 
 
 

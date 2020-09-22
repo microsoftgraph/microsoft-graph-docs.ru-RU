@@ -3,14 +3,14 @@ title: Обновление Девицекомплианцескриптдеви
 description: Обновление свойств объекта Девицекомплианцескриптдевицестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2506199946b3b80c983c84486cb3b6de4a209494
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: afdde65a488eeebc9ee0b6c636e3ba89d6ae7b3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792445"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040919"
 ---
 # <a name="update-devicecompliancescriptdevicestate"></a>Обновление Девицекомплианцескриптдевицестате
 
@@ -43,23 +43,23 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/devic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта состояния "сценарий соответствия требованиям устройства". Это свойство доступно только для чтения.|
+|id|Строка|Ключ объекта состояния "сценарий соответствия требованиям устройства". Это свойство доступно только для чтения.|
 |детектионстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние обнаружения с последнего выполнения скрипта соответствия устройств требованиям. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |ластстатеупдатедатетиме|DateTimeOffset|Последняя метка времени выполнения сценария соответствия требованиям устройства|
 |експектедстатеупдатедатетиме|DateTimeOffset|Следующий штамп времени, когда ожидается выполнение сценария соответствия устройства|
 |lastSyncDateTime|DateTimeOffset|Время последнего синхронизации расширения управления Intune с Intune|
-|скриптаутпут|String|Выходные данные сценария обнаружения|
-|скриптеррор|String|Ошибка сценария обнаружения|
+|скриптаутпут|Строка|Выходные данные сценария обнаружения|
+|скриптеррор|Строка|Ошибка сценария обнаружения|
 
 
 
@@ -104,6 +104,9 @@ Content-Length: 436
   "scriptError": "Script Error value"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 14c30d53dca55ce99f80cc206a6d746322887240
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 79e1a8232d08b2660f38585e50c7fc6499252972
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455993"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040429"
 ---
 # <a name="participant-invite"></a>участник: пригласить
 
@@ -31,7 +31,7 @@ ms.locfileid: "42455993"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложений     | Calls. Инитиатеграупкаллс. ALL                               |
+| Для приложений     | Calls.IniТиатеграупкаллс. ALL                               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -53,10 +53,10 @@ POST /communications/calls/{id}/participants/invite
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Приглашенных участников.|
-|Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
+|Контекст|Строка|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
-## <a name="response"></a>Ответ
-Если сукксессфул, этот метод возвращает код `200 OK` отклика и заголовок Location с URI для [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md) , созданного для этого запроса. В тексте отклика содержится созданный [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md) .
+## <a name="response"></a>Отклик
+Если сукксессфул, этот метод возвращает `200 OK` код отклика и заголовок Location с URI для [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md) , созданного для этого запроса. В тексте отклика содержится созданный [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md) .
 
 >**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление списка.
 
@@ -714,3 +714,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

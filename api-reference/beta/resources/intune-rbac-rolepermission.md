@@ -3,14 +3,14 @@ title: Тип ресурса rolePermission
 description: Содержит набор Ресаурцеактионс, определяющих разрешения "разрешено" и "не разрешено" для каждой роли.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85370ad155d769d74f29dec80a03d3203feac8fa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d8627639d0eabed4392ed3d6763731dc4b65113c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43356862"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039491"
 ---
 # <a name="rolepermission-resource-type"></a>Тип ресурса rolePermission
 
@@ -25,10 +25,10 @@ ms.locfileid: "43356862"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actions|Коллекция объектов string|Разрешенные действия — устарело|
+|actions|Коллекция String|Разрешенные действия — устарело|
 |resourceActions|Коллекция объектов [resourceAction](../resources/intune-rbac-resourceaction.md)|Действия с ресурсами, содержащие набор разрешенных и запрещенных разрешений.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,6 +57,9 @@ ms.locfileid: "43356862"
   ]
 }
 ```
+
+
+
 
 
 

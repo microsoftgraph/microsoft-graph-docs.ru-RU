@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 82d6ead5d41820f827f58d5a9069744e1b2ac49d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d56e954e39bae22db07e025f9570f1fe7a92280
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505163"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040062"
 ---
 # <a name="agedaccountsreceivable-resource-type"></a>Тип ресурса Ажедаккаунтсрецеивабле
 
@@ -44,7 +44,7 @@ ms.locfileid: "42505163"
 |периодленгсфилтер|string |Указывает длину периодов. Допустимые единицы времени: D, WD, W, M, Q и Y. C, то есть текущая единица времени на основе даты может указываться в качестве префикса для единицы времени.|
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -68,5 +68,7 @@ ms.locfileid: "42505163"
 }
 
 ```
+
+
 
 

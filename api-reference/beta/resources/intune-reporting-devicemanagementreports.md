@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементрепортс
 description: Одноэлементный объект, служащий контейнером для всех функций отчетов.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8056b2d592545dbb8cda81c559c33fd356b2c35c
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: d64f5ce049c73b74f105f3899ccf218e3c82fc85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793614"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039379"
 ---
 # <a name="devicemanagementreports-resource-type"></a>Тип ресурса Девицеманажементрепортс
 
@@ -41,7 +41,7 @@ ms.locfileid: "44793614"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для этой сущности|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |качедрепортконфигуратионс|Коллекция [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Сущность, представляющая конфигурацию кэшированного отчета|
@@ -62,6 +62,9 @@ ms.locfileid: "44793614"
   "id": "String (identifier)"
 }
 ```
+
+
+
 
 
 

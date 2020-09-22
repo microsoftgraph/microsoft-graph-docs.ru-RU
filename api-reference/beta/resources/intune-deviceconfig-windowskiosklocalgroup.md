@@ -3,14 +3,14 @@ title: Тип ресурса Виндовскиосклокалграуп
 description: Класс, используемый для идентификации локальной группы для конфигурации киоска
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7385fd0990fc7ac135a3ea9ba318e06571ecdd6d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cd26b8e7d7649d832e844ee9c6a0a68e7ed9cd5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444096"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039764"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>Тип ресурса Виндовскиосклокалграуп
 
@@ -30,7 +30,7 @@ ms.locfileid: "43444096"
 |:---|:---|:---|
 |groupName|String|Имя локальной группы, которая будет заблокирована для этой конфигурации киоска|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,9 @@ ms.locfileid: "43444096"
   "groupName": "String"
 }
 ```
+
+
+
 
 
 

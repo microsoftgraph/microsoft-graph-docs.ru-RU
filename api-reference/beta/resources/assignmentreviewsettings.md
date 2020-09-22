@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a26728fb39fccd1512a559638c595551a20c0042
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a6e92f2c31a5972528fefdea68a4fa8a61677da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508180"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040184"
 ---
 # <a name="assignmentreviewsettings-resource-type"></a>Тип ресурса Ассигнментревиевсеттингс
 
@@ -27,11 +27,11 @@ ms.locfileid: "42508180"
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
 | isEnabled| Boolean | Если этот параметр имеет значение true, для назначений из этой политики требуются обзоры доступа. |
-| recurrenceType | String | Интервал повторения, например `monthly` или. `quarterly` |
-| ревиевертипе | String | Кто должен иметь запрос на выполнение проверки, либо `Self` `Reviewers`. |
+| recurrenceType | String | Интервал повторения, например `monthly` или `quarterly` . |
+| ревиевертипе | String | Кто должен иметь запрос на выполнение проверки, либо `Self` `Reviewers` . |
 | startDateTime | DateTimeOffset | Когда должна начаться Первая проверка. |
 | дуратиониндайс | Int32 | Количество дней, в течение которого допускается ввод данных от рецензентов.|
-| обсужден | Коллекция [User](userset.md) Collection | Если задано `Reviewers`значение ревиевертипе, эта коллекция указывает пользователей, которые будут рецензентами, по идентификатору или членам группы, используя коллекцию [SingleUser.](singleuser.md) и [граупмемберс](groupmembers.md). |
+| обсужден | Коллекция [User](userset.md) Collection | Если задано значение Ревиевертипе `Reviewers` , эта коллекция указывает пользователей, которые будут рецензентами, по идентификатору или членам группы, используя коллекцию [SingleUser.](singleuser.md) и [граупмемберс](groupmembers.md). |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -68,3 +68,5 @@ ms.locfileid: "42508180"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

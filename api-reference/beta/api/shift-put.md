@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: efe7180b352ae29bc64f663fa9122d670378dff5
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: f41220c662214402e705f92d46c200c874309ce8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42453333"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040205"
 ---
 # <a name="replace-shift"></a>Замена смены
 
@@ -30,7 +30,7 @@ ms.locfileid: "42453333"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Schedule. ReadWrite. ALL * |
+|Для приложений | Schedule. ReadWrite. ALL * |
 
 >\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
@@ -223,3 +223,5 @@ Content-length: 401
   ]
 }
 -->
+
+

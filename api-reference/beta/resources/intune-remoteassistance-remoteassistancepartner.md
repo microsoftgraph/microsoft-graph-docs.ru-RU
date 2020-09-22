@@ -3,14 +3,14 @@ title: Тип ресурса remoteAssistancePartner
 description: Ресурсы Ремотеассистпартнер представляют метаданные и состояние данной службы партнерской службы удаленного помощника.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c2c65716371084903b2b544b8878bb2a73dd800e
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: a28060cbab7510d761d4d0106ac6c965276762df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792669"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039470"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>Тип ресурса remoteAssistancePartner
 
@@ -43,7 +43,7 @@ ms.locfileid: "46792669"
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного в службу Intune партнером TEM.|
 |онбоардингрекуестекспиридатетиме|DateTimeOffset|Когда свойства onboardingstatus является входящей миграцией, это дата и время истечения срока действия запроса на приподключение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -65,6 +65,9 @@ ms.locfileid: "46792669"
   "onboardingRequestExpiryDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

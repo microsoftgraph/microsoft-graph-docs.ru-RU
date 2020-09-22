@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 8ab079eb15fd2dfe2d66a07d5734b6aa9430055e
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 770968141305275f33609db3deca8bb77f5d51cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812115"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039316"
 ---
 # <a name="onedriveusageaccountcounts-resource-type"></a>Тип ресурса Онедривеусажеаккаунткаунтс
 
@@ -27,7 +27,7 @@ ms.locfileid: "46812115"
 | reportDate        | Дата   |
 | репортпериод      | String |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -46,3 +46,5 @@ ms.locfileid: "46812115"
   "reportPeriod": "String"
 }
 ```
+
+

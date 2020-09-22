@@ -3,14 +3,14 @@ title: тип перечисления Девицеманажементрепо�
 description: Возможные значения для формата файла отчета
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2cfa5535489d9622d3f62f5641c2c129d0c8b0d3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 41e8f1cb8907633f919df19431a01e9e43c9c5de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039393"
 ---
 # <a name="devicemanagementreportfileformat-enum-type"></a>тип перечисления Девицеманажементрепортфилеформат
 
@@ -26,7 +26,10 @@ ms.locfileid: "43389010"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |расширения|нуль|Значения, разделенные запятыми|
-|pdf|1,1|Формат PDF|
+|pdf|1 |Формат PDF|
+
+
+
 
 
 

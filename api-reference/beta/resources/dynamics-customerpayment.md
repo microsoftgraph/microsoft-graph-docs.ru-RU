@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: bd990ea9778ada7d43c9b8192d77cf8af618909b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bf5536181f965765615a7e2d707d6503813cfb76
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42504638"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040051"
 ---
 # <a name="customerpayments-resource-type"></a>Тип ресурса Кустомерпайментс
 
@@ -84,4 +84,6 @@ ms.locfileid: "42504638"
     "lastModifiedDateTime": "datetime"
 }
 ```
+
+
 

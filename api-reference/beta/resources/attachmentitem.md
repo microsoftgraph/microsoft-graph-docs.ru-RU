@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7402a22665fec8716156395f4a783c804a42febb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 14213afcaf555b21816a3b3ccf2481c1555c4b90
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461025"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040180"
 ---
 # <a name="attachmentitem-resource-type"></a>Тип ресурса Аттачментитем
 
@@ -25,8 +25,8 @@ ms.locfileid: "43461025"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |attachmentType|String| Тип вложения. Возможные значения: `file`, `item`, `reference`. Обязательное.|
-|contentType|String|Характер данных во вложении. Необязательное.|
-|isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`. Необязательное.|
+|contentType|String|Характер данных во вложении. Необязательный.|
+|isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`. Необязательный.|
 |name|String|Отображаемое имя вложения. Это может быть строка с описанием и не обязательно должно быть фактическим именем файла. Обязательный.|
 |size|Int64|Размер вложения в байтах. Обязательный элемент.|
 
@@ -63,3 +63,4 @@ ms.locfileid: "43461025"
   "section": "documentation",
   "tocPath": ""
 }-->
+
