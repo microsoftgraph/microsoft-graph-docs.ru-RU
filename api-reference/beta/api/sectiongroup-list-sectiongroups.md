@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: a2584a0d06525a33fd1d5c0b0c0abd0cd65047e7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 28be485fdb2f47313566edaf9b4c4c534055e13f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453662"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067652"
 ---
 # <a name="list-sectiongroups"></a>Список sectionGroups
 
@@ -41,7 +41,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 
 По умолчанию используется порядок сортировки `name asc`.
 
-Запрос по умолчанию `parentNotebook` разворачивает и выбирает `id`свойства `displayName`, и `self` . Допустимые `expand` значения для групп разделов `sections`: `sectionGroups`, `parentNotebook`, и `parentSectionGroup`.
+Запрос по умолчанию разворачивает `parentNotebook` и выбирает `id` `displayName` свойства, и `self` . Допустимые `expand` значения для групп разделов: `sections` ,, `sectionGroups` `parentNotebook` и `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -52,7 +52,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [sectionGroup](../resources/sectiongroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -130,3 +130,5 @@ Content-length: 378
   ]
 }
 -->
+
+

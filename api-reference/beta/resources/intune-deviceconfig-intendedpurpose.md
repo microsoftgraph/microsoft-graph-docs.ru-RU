@@ -3,14 +3,14 @@ title: тип перечисления intendedPurpose
 description: Параметры импорта PFX.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b72f48288ba4daaacc9f0b0e55d6ae3786ee234d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 22752542e32bc7d9a120ac033587075fd2842518
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444269"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067302"
 ---
 # <a name="intendedpurpose-enum-type"></a>тип перечисления intendedPurpose
 
@@ -25,11 +25,14 @@ ms.locfileid: "43444269"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|неназначенных|1,1|Неназначенных|
-|смиминкриптион|2|смиминкриптион|
+|неназначенных|1 |Неназначенных|
+|смиминкриптион|2 |смиминкриптион|
 |смимесигнинг|4|смимесигнинг|
 |виртуального|4 |VPN|
 |подключений|5 |Подключений|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Delete mobileAppCategory
 description: Удаляет объект mobileAppCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6da5c587bafbf054af5b97283c38f53614fec093
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 80b7508b745daa70dfb5a5e88c8d602ac3e5ba79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464867"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066980"
 ---
 # <a name="delete-mobileappcategory"></a>Delete mobileAppCategory
 
@@ -45,10 +45,10 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCatego
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -59,11 +59,14 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCatego
 DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

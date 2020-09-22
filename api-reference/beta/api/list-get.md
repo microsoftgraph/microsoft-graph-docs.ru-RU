@@ -5,12 +5,12 @@ description: Возвращает метаданные для списка.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bac6d7d28971e7850f9a9360e93346f4e9a902a6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 117a6c04cebc19927b7f62ec82aa585ca51f4863
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470284"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068051"
 ---
 # <a name="get-metadata-for-a-list"></a>Получение метаданных списка
 
@@ -220,7 +220,7 @@ Content-type: application/json
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
 В приведенном ниже примере показано, как получить метаданные для списка, содержащего три столбца: Name, Quantity и category.
-Столбцы [управляемых метаданных](/sharepoint/managed-metadata) , ```Category``` такие как возвращаемые значения, в качестве идентификатора термина и имени термина.
+Столбцы [управляемых метаданных](/sharepoint/managed-metadata) ```Category``` , такие как возвращаемые значения, в качестве идентификатора термина и имени термина.
 ```http
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Quantity,Category))
 ```
@@ -288,3 +288,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

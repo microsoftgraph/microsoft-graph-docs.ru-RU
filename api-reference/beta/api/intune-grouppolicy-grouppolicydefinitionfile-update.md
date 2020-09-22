@@ -3,14 +3,14 @@ title: Обновление Граупполицидефинитионфиле
 description: Обновление свойств объекта Граупполицидефинитионфиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c983469e4b96fb727beeedb3d9c8135c818ef200
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 28387a3afdd8111cf8212ca9a52d923da3ae0b20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454525"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068254"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>Обновление Граупполицидефинитионфиле
 
@@ -48,16 +48,16 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Локализованное понятное имя файла ADMX.|
+|displayName|String|Локализованное понятное имя файла ADMX.|
 |description|String|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
-|лангуажекодес|Коллекция объектов string|Поддерживаемые коды языков для ADMX.|
+|лангуажекодес|Коллекция String|Поддерживаемые коды языков для ADMX.|
 |таржетпрефикс|String|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
 |Атрибут|String|Указывает универсальный код ресурса (URI), используемый для идентификации пространства имен в файле ADMX.|
 |полицитипе|[граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
@@ -67,7 +67,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -115,6 +115,9 @@ Content-Length: 471
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

@@ -7,12 +7,12 @@ localization_priority: Normal
 description: " или коллекция элементов, которые должны рассматриваться как коллекция, а не как отдельные элементы."
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 10e99df4a2411fd63e8b8a2ad78d2aa5f0684571
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d263d8c37b624a8a8b60c1a0fbaf6aa7ed7e0755
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534103"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066252"
 ---
 # <a name="package-resource-type"></a>Тип ресурса Package
 
@@ -51,3 +51,4 @@ ms.locfileid: "42534103"
   "section": "documentation",
   "tocPath": "Facets/Package"
 } -->
+

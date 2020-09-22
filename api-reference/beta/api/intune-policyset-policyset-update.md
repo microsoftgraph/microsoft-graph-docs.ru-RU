@@ -3,14 +3,14 @@ title: действие обновления
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 406c27f5e57c0aa4ac68e66ab53d1bdd77b9811b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: a9a9dcf2fafa7caa4e16d4729b4ba80e3b624c96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791723"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068114"
 ---
 # <a name="update-action"></a>действие обновления
 
@@ -46,7 +46,7 @@ POST /deviceAppManagement/policySets/{policySetId}/update
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -56,7 +56,7 @@ POST /deviceAppManagement/policySets/{policySetId}/update
 |аддедполицисетитемс|Коллекция [полицисетитем](../resources/intune-policyset-policysetitem.md)|Пока не задокументировано.|
 |упдатедполицисетитемс|Коллекция [полицисетитем](../resources/intune-policyset-policysetitem.md)|Пока не задокументировано.|
 |делетедполицисетитемс|Коллекция строк|Н/Д|
-|assignments|Коллекция [полицисетассигнмент](../resources/intune-policyset-policysetassignment.md)|Н/Д|
+|assignments|Коллекция [полицисетассигнмент](../resources/intune-policyset-policysetassignment.md)|Пока не задокументировано.|
 
 
 
@@ -129,6 +129,9 @@ Content-length: 1692
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

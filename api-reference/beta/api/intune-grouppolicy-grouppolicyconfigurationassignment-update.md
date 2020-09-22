@@ -3,14 +3,14 @@ title: Обновление Граупполициконфигуратионас
 description: Обновление свойств объекта Граупполициконфигуратионассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eaed9dd4d91ddd6bb10a21cce140f8e7984672f8
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: e4bf39266670b5347f4a17b3ef1c983ac58f5822
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791968"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068338"
 ---
 # <a name="update-grouppolicyconfigurationassignment"></a>Обновление Граупполициконфигуратионассигнмент
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/a
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [граупполициконфигуратионассигнмент](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполициконфигуратионассигнмент](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md).
@@ -99,6 +99,9 @@ Content-Length: 442
   }
 }
 ```
+
+
+
 
 
 

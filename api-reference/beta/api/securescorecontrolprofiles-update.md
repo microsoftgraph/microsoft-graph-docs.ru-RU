@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 6ae4d5baa48792072ad424151fc58b0533678b13
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: eaa11591f5174f8d77e9513cb9bba3ed1de44976
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067540"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Обновление объектов secureScoreControlProfiles
 
@@ -28,7 +28,7 @@ ms.locfileid: "46806389"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |   Область securityevents. ReadWrite. ALL.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | Область securityevents. ReadWrite. ALL. |
+|Для приложений | Область securityevents. ReadWrite. ALL. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -124,3 +124,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 10d7d5b8c88feb2e6bcc2fb90a5ea7bd97f4a1fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8d95b19004b977f5170c5881777f25d2e66ed6bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508760"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066560"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
@@ -50,7 +50,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/range.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -119,3 +119,4 @@ Content-length: 157
   "suppressions": [
   ]
 }-->
+

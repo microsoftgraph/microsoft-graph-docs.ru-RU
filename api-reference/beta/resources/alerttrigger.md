@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 28bfd51a403077ee4ab456f6ca17fb176addf58d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 594061ff17f80bb1ab462647562947b16965d9dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508340"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067397"
 ---
 # <a name="alerttrigger-resource-type"></a>Тип ресурса Алерттригжер
 
@@ -24,7 +24,7 @@ ms.locfileid: "42508340"
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|name|Строка|Имя свойства, служащего триггером обнаружения.|
+|name|String|Имя свойства, служащего триггером обнаружения.|
 |type|String|Тип свойства в соотношении "ключ: значение" для интерпретации. Например, String, Boolean и т. д.|
 |value|String|Значение свойства, служащего триггером обнаружения.|
 
@@ -72,3 +72,5 @@ ms.locfileid: "42508340"
   "suppressions": []
 }
 -->
+
+

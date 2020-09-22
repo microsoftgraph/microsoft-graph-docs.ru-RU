@@ -3,14 +3,14 @@ title: Get mobileAppCategory
 description: Чтение свойств и связей объекта mobileAppCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea7d1fae284c0f898f67c1cb5d115fb55744d7a3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b6d42ebbe99f02d12f60bf4fc50d27ac8fd3e648
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464860"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066966"
 ---
 # <a name="get-mobileappcategory"></a>Get mobileAppCategory
 
@@ -48,10 +48,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -78,6 +78,9 @@ Content-Length: 239
   }
 }
 ```
+
+
+
 
 
 

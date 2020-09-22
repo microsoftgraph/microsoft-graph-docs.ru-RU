@@ -3,14 +3,14 @@ title: Получение Андроидфорворквификонфигура
 description: Чтение свойств и связей объекта Андроидфорворквификонфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac8b195ae147854d8d5c5f5d2b53142d954b7a67
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 891f046496fcb37558657e13deca6a1060c3360d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43344889"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066154"
 ---
 # <a name="get-androidforworkwificonfiguration"></a>Получение Андроидфорворквификонфигуратион
 
@@ -51,10 +51,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроидфорворквификонфигуратион](../resources/intune-deviceconfig-androidforworkwificonfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -114,6 +114,9 @@ Content-Length: 1480
   }
 }
 ```
+
+
+
 
 
 

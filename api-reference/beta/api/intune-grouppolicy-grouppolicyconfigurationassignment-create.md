@@ -3,14 +3,14 @@ title: Создание Граупполициконфигуратионасси
 description: Создание нового объекта Граупполициконфигуратионассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b21781985c0ae6d48db1cb7a264989075bcfaa37
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 22c5452d9b83beea84ad7e57ea350c6f0274b1de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791989"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068380"
 ---
 # <a name="create-grouppolicyconfigurationassignment"></a>Создание Граупполициконфигуратионассигнмент
 
@@ -46,7 +46,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/as
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Граупполициконфигуратионассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполициконфигуратионассигнмент.
@@ -99,6 +99,9 @@ Content-Length: 442
   }
 }
 ```
+
+
+
 
 
 

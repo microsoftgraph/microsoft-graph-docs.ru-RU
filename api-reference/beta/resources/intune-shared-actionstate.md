@@ -3,14 +3,14 @@ title: тип перечисления actionState
 description: Состояние действия на устройстве
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c213567b46c7aea2f91deae8bc8a27d4b0382c7d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 83370402104e4ebd42551262aaa98c109149e32e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453182"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067274"
 ---
 # <a name="actionstate-enum-type"></a>тип перечисления actionState
 
@@ -26,12 +26,15 @@ ms.locfileid: "43453182"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Недопустимое состояние действия|
-|закончен|1,1|Ожидается действие|
-|закрыт|2|Действие отменено.|
+|закончен|1 |Ожидается действие|
+|закрыт|2 |Действие отменено.|
 |ASP|4|Действие активно.|
 |done|4 |Действие выполнено без ошибок.|
 |сбоев|5 |Не удалось выполнить действие|
 |notSupported|6 |Действие не поддерживается.|
+
+
+
 
 
 

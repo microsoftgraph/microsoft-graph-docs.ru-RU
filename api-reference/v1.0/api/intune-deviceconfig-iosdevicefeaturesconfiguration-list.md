@@ -3,14 +3,14 @@ title: Перечисление объектов iosDeviceFeaturesConfiguration
 description: Список свойств и связей объектов iosDeviceFeaturesConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0f421e0768c4b02f7810820b4a0d1d45b995716
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b1f08242a1393089d8305256c60c62ba1e308200
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450575"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066679"
 ---
 # <a name="list-iosdevicefeaturesconfigurations"></a>Перечисление объектов iosDeviceFeaturesConfiguration
 
@@ -41,13 +41,13 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -139,6 +139,9 @@ Content-Length: 2461
   ]
 }
 ```
+
+
+
 
 
 

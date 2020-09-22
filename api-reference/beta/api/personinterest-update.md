@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 27b1435444702ce5567b24cd030614f36850ab75
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 812a692a721e9d9a76cb7a0fa2547e48fb849e1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811779"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067939"
 ---
 # <a name="update-personinterest"></a>Обновление персонинтерест
 
@@ -62,7 +62,7 @@ PATCH /users/{id | userPrincipalName}/profile/interests/{id}
 |выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |webUrl|String|Содержит ссылку на веб-страницу или ресурс, представляющие интерес. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [персонинтерест](../resources/personinterest.md) в тексте отклика.
 
@@ -150,3 +150,5 @@ Content-type: application/json
   "collaborationTags": null
 }
 ```
+
+

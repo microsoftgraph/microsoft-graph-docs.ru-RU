@@ -3,14 +3,14 @@ title: Тип ресурса Импортедвиндовсаутопилотд�
 description: Импорт устройств с автопилотом Windows с помощью функции отправки.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 589659ea4ecdf8c845da248bb4a5d2972e96aeb3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f2f45ee01f7ecca558ca67e6e63992a7e42a4a33
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439378"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066462"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>Тип ресурса Импортедвиндовсаутопилотдевицеидентитюплоад
 
@@ -58,6 +58,8 @@ ms.locfileid: "43439378"
   "status": "String"
 }
 ```
+
+
 
 
 

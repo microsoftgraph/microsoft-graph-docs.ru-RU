@@ -3,14 +3,14 @@ title: Функция Жетремедиатионхистори
 description: Функция для получения числа исправлений с помощью сценариев работоспособности устройств
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5469f8c5c4ae35d69e92b6d1e007bf4a0b3703ea
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 2e394a91f1a4a5e94e9103cd8645bf590f30dc8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176983"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068674"
 ---
 # <a name="getremediationhistory-function"></a>Функция Жетремедиатионхистори
 
@@ -49,8 +49,8 @@ GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/getRemediationH
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает код `200 OK` отклика и объект [девицехеалсскриптремедиатионхистори](../resources/intune-devices-devicehealthscriptremediationhistory.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успеха эта функция возвращает `200 OK` код отклика и объект [девицехеалсскриптремедиатионхистори](../resources/intune-devices-devicehealthscriptremediationhistory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -82,6 +82,9 @@ Content-Length: 397
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: тип перечисления Интернетексплорермес�
 description: Сообщение, которое будет отображаться на границе перед переключением в Internet Explorer.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a404f972985d0202037cbd1deae01cc03de497b9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0b072b1cdb74f347b826b1958c7dbb4f48efb950
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444262"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067309"
 ---
 # <a name="internetexplorermessagesetting-enum-type"></a>тип перечисления Интернетексплорермессажесеттинг
 
@@ -26,9 +26,12 @@ ms.locfileid: "43444262"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|отключено|1,1|Активирован.|
-|включено|2|Доступ.|
+|отключено|1 |Активирован.|
+|включено|2 |Доступ.|
 |кипгоинг|4|Кипгоинг.|
+
+
+
 
 
 

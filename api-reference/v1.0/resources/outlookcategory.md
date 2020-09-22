@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bc72d049d220ca7fd2cb3f6edeafabad41b09cb5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 299705f1ceb4e429f28d481721caafee0d7164c4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43353961"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066294"
 ---
 # <a name="outlookcategory-resource-type"></a>Тип ресурса outlookCategory
 
@@ -105,3 +105,4 @@ ms.locfileid: "43353961"
   "tocPath": ""
 }-->
  
+

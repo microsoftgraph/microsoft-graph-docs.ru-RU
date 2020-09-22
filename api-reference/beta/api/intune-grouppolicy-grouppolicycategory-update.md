@@ -3,14 +3,14 @@ title: Обновление Граупполицикатегори
 description: Обновление свойств объекта Граупполицикатегори.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efa4bbb2f4ab8f485d68fd6ce48d13258919ff3c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2f78ab77fc4c582b9db6289e638325e4a2aab358
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454759"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068506"
 ---
 # <a name="update-grouppolicycategory"></a>Обновление Граупполицикатегори
 
@@ -49,21 +49,21 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Идентификатор строки отображаемого имени категории|
+|displayName|String|Идентификатор строки отображаемого имени категории|
 |Корень|Boolean|Определяет, является ли категория корневой категорией|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -97,6 +97,9 @@ Content-Length: 233
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 242c90e9d0e506dbeb6576975305d0a0f8397f86
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 355838fa9f93cef7d44972b98af317a74036e421
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067526"
 ---
 # <a name="accesspackageresourcescope-resource-type"></a>Тип ресурса Акцесспаккажересаурцескопе
 
@@ -27,7 +27,7 @@ ms.locfileid: "42508501"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|String|Описание области.|
-|displayName|Строка|Отображаемое имя области.|
+|displayName|String|Отображаемое имя области.|
 |id|String| Только для чтения.|
 |исрутскопе|Boolean|Значение true, если области упорядочены в иерархию, а это верхняя или корневая область ресурса.|
 |оригинид|String|Уникальный идентификатор области ресурса в соответствии с определением в исходной системе.|
@@ -35,7 +35,7 @@ ms.locfileid: "42508501"
 |ролеоригинид|String|Исходная система для роли, если она отличается.|
 |url|String|Указатель ресурсов для области.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
@@ -77,3 +77,5 @@ ms.locfileid: "42508501"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: Создание Макосендпоинтпротектионконфи
 description: Создание нового объекта Макосендпоинтпротектионконфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d6d7f5966df7b4493ecc7b315dee2810b82bb223
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cc5040b58bfea7a2f9242a686da857e8715c016c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438094"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066077"
 ---
 # <a name="create-macosendpointprotectionconfiguration"></a>Создание Макосендпоинтпротектионконфигуратион
 
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Макосендпоинтпротектионконфигуратион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Макосендпоинтпротектионконфигуратион.
@@ -63,7 +63,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |гатекипералловедаппсаурце|[макосгатекипераппсаурцес](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Параметры системы и конфиденциальности, которые определяют, какие расположения скачивания приложения можно запускать с устройства macOS. Возможные значения: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
 |гатекиперблокковерриде|Boolean|Если задано значение true, переопределение пользователя для привратника будет отключено.|
@@ -76,11 +76,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |филеваултинститутионалрековерикэйцертификате|Binary|Обязательно, если выбранные типы ключей восстановления включают Институтионалрековерикэй. Файл сертификата в кодировке DER, который использовался для установки ключа восстановления в учреждений.|
 |филеваултинститутионалрековерикэйцертификатефиленаме|String|Имя файла сертификата ключа восстановления для сотрудников, который будет отображаться в пользовательском интерфейсе. (*. der).|
 |филеваултперсоналрековерикэйхелпмессаже|String|Обязательно, если выбранные типы ключей восстановления включают Персоналрековерикэй. Короткое сообщение, в котором показано, как получить свой ключ восстановления личных настроек.|
-|филеваулталловдеферралунтилсигнаут|Boolean|Необязательное. Если задано значение true, пользователь может отложить включение Филеваулт, пока не выйдете из системы.|
+|филеваулталловдеферралунтилсигнаут|Boolean|Необязательное свойство. Если задано значение true, пользователь может отложить включение Филеваулт, пока не выйдете из системы.|
 |филеваултнумберофтимесусерканигноре|Int32|Необязательный. При использовании параметра "отложить" это максимальное число раз, когда пользователь может игнорировать приглашения на включение Филеваулт, чтобы пользователь мог выполнить вход. Если задано значение-1, всегда будет выдаваться запрос на включение Филеваулт, пока Филеваулт не будет включен, хотя разрешить пользователю обходить включение Филеваулт. Если задать для этого параметра значение 0, эта функция будет отключена.|
-|филеваултдисаблепромптатсигнаут|Boolean|Необязательное. При использовании параметра отсрочки, если задано значение true, пользователю не предлагается включить Филеваулт при входе.|
+|филеваултдисаблепромптатсигнаут|Boolean|Необязательное свойство. При использовании параметра отсрочки, если задано значение true, пользователю не предлагается включить Филеваулт при входе.|
 |филеваултперсоналрековерикэйротатионинмонсс|Int32|Необязательный. Если выбранные типы ключей восстановления включают Персоналрековерикэй, частота вращения этого ключа в месяцах.|
-|филеваулсидеперсоналрековерикэй|Boolean|Необязательное. Скрытый персональный ключ восстановления не отображается на экране пользователя во время шифрования Филеваулт, что снижает риск его завершения в неправильной руки.|
+|филеваулсидеперсоналрековерикэй|Boolean|Необязательное свойство. Скрытый персональный ключ восстановления не отображается на экране пользователя во время шифрования Филеваулт, что снижает риск его завершения в неправильной руки.|
 |адванцедсреатпротектионреалтиме|[Включение](../resources/intune-shared-enablement.md)|Определяет, следует ли включить защиту в режиме реального времени для функции Advanced Threat Protection для защитника Майкрософт в macOS. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |адванцедсреатпротектионклаудделиверед|[Включение](../resources/intune-shared-enablement.md)|Определяет, следует ли включить защиту от облачной защиты для Advanced Threat Protection в защитнике Майкрософт для macOS. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |адванцедсреатпротектионаутоматиксамплесубмиссион|[Включение](../resources/intune-shared-enablement.md)|Определяет, следует ли включать автоматическую отправку образца файлов для Advanced Threat Protection в защитнике Майкрософт в macOS. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
@@ -92,7 +92,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [макосендпоинтпротектионконфигуратион](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -255,6 +255,9 @@ Content-Length: 2958
   ]
 }
 ```
+
+
+
 
 
 

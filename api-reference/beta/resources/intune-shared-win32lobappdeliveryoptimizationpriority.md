@@ -3,14 +3,14 @@ title: тип перечисления win32LobAppDeliveryOptimizationPriority
 description: Содержит значение приоритета оптимизации доставки.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1daf05249bfbd223c1038b4f145ec3caa0ec695b
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 65b21c27169701f43af482579f4b3afecec0455c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067239"
 ---
 # <a name="win32lobappdeliveryoptimizationpriority-enum-type"></a>тип перечисления win32LobAppDeliveryOptimizationPriority
 
@@ -26,7 +26,10 @@ ms.locfileid: "44178523"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроенный или фоновый приоритет оптимизации доставки.|
-|кист|1,1|Приоритет оптимизации доставки переднего плана.|
+|кист|1 |Приоритет оптимизации доставки переднего плана.|
+
+
+
 
 
 

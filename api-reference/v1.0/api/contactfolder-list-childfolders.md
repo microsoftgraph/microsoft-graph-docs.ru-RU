@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 170a155b31629cd8a45f36e149d0edd5196a7773
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 27d1543c3c4c0c1bca42e5478a067e8e9ebe07ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462148"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067008"
 ---
 # <a name="list-childfolders"></a>Список childFolders
 
@@ -39,10 +39,10 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [ContactFolder](../resources/contactfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -110,3 +110,4 @@ Content-length: 145
   "suppressions": [
   ]
 }-->
+

@@ -3,14 +3,14 @@ title: Получение Граупполициконфигуратионасс
 description: Чтение свойств и связей объекта Граупполициконфигуратионассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 735577cdce7a0c24b1152d88a53f8e557c65393f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 910da35621da0c15526290cf48cee9f79b676e77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791982"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068366"
 ---
 # <a name="get-grouppolicyconfigurationassignment"></a>Получение Граупполициконфигуратионассигнмент
 
@@ -49,7 +49,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/ass
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -83,6 +83,9 @@ Content-Length: 477
   }
 }
 ```
+
+
+
 
 
 

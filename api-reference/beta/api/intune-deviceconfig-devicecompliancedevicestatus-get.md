@@ -3,14 +3,14 @@ title: Get deviceComplianceDeviceStatus
 description: Чтение свойств и связей объекта deviceComplianceDeviceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa8b0a259bcc82515ac3442b5f2a6f3bb6e4c5d6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2c22eb4b42c4088ed7c8b392a1a95a902779ca0e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434163"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068828"
 ---
 # <a name="get-devicecompliancedevicestatus"></a>Get deviceComplianceDeviceStatus
 
@@ -49,10 +49,10 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -85,6 +85,9 @@ Content-Length: 532
   }
 }
 ```
+
+
+
 
 
 

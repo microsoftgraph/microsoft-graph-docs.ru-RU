@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 6af95ea02a4151f0ea1ca23d2a05cc99d6d20830
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a64a54385d0bff66cd6302323034057ac87ed0e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511301"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066595"
 ---
 # <a name="create-notebook"></a>Создание записной книжки
 
@@ -43,9 +43,9 @@ POST /sites/{id}/onenote/notebooks
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите имя записной книжки. 
 
-Имена записных книжек должны быть уникальными. Имя не может содержать более 128 символов или содержать следующие символы:? *\/: <>| ' "
+Имена записных книжек должны быть уникальными. Имя не может содержать более 128 символов или содержать следующие символы:? * \/ : <>| ' "
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [записной книжки](../resources/notebook.md) в тексте отклика.
 
@@ -127,3 +127,4 @@ Content-length: 284
   "suppressions": [
   ]
 }-->
+

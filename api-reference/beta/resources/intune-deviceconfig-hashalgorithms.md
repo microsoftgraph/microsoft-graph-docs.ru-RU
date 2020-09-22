@@ -3,14 +3,14 @@ title: тип перечисления Хашалгорисмс
 description: Параметры алгоритма хеширования.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3d9875f8f985da3fb7706fc6ea17ad7d41873cf7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f84ab57020aa5c852560a0038bef844295a0c916
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444283"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067365"
 ---
 # <a name="hashalgorithms-enum-type"></a>тип перечисления Хашалгорисмс
 
@@ -25,8 +25,11 @@ ms.locfileid: "43444283"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|хэшем|1,1|Хэш-алгоритм SHA-1.|
-|sha2|2|Хэш-алгоритм SHA-2.|
+|хэшем|1 |Хэш-алгоритм SHA-1.|
+|sha2|2 |Хэш-алгоритм SHA-2.|
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 18bcf00cad681d3003faf2dce442e4ea1f58bdb0
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: f3bad64c1cb691c5a5f5c1c5377bcb4e0188f184
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643981"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067510"
 ---
 # <a name="agreementacceptance-resource-type"></a>Тип ресурса agreementAcceptance
 
@@ -95,3 +95,5 @@ ms.locfileid: "46643981"
   "suppressions": []
 }
 -->
+
+

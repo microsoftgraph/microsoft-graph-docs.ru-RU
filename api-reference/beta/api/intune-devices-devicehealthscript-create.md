@@ -3,14 +3,14 @@ title: Создание Девицехеалсскрипт
 description: Создание нового объекта Девицехеалсскрипт.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 11e4e48f1224d7fd91c9372bfdd2e9c8e8c475a3
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 0d5376500cf088d303a02393e08715225a2555d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177074"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068744"
 ---
 # <a name="create-devicehealthscript"></a>Создание Девицехеалсскрипт
 
@@ -53,10 +53,10 @@ POST /deviceManagement/deviceHealthScripts
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сценария работоспособности устройства|
-|publisher|Строка|Имя издателя сценария работоспособности устройства|
+|id|String|Уникальный идентификатор сценария работоспособности устройства|
+|publisher|String|Имя издателя сценария работоспособности устройства|
 |version|String|Версия сценария работоспособности устройства|
-|displayName|Строка|Имя сценария работоспособности устройства|
+|displayName|String|Имя сценария работоспособности устройства|
 |description|String|Описание сценария работоспособности устройства|
 |детектионскриптконтент|Binary|Весь контент скрипта обнаружения PowerShell|
 |ремедиатионскриптконтент|Binary|Все содержимое скрипта PowerShell об исправлении|
@@ -65,15 +65,15 @@ POST /deviceManagement/deviceHealthScripts
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
 |Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
 |runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
-|roleScopeTagIds|Коллекция объектов string|Список идентификаторов тегов области для сценария работоспособности устройства|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для сценария работоспособности устройства|
 |исглобалскрипт|Boolean|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
-|хигхеставаилаблеверсион|Строка|Самая высокая доступная версия для собственного сценария Майкрософт|
+|хигхеставаилаблеверсион|String|Самая высокая доступная версия для собственного сценария Майкрософт|
 |детектионскриптпараметерс|Коллекция [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов Детектионскриптпараметерс в ComplexType.|
 |ремедиатионскриптпараметерс|Коллекция [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов Ремедиатионскриптпараметерс в ComplexType.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -172,6 +172,9 @@ Content-Length: 1393
   ]
 }
 ```
+
+
+
 
 
 

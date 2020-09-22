@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 6abdd6334d5a96dc740ce80ad119f3f8d6efb1b0
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 900f8a0a79a9c7f84e17f1d19275926463061c4e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658092"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067795"
 ---
 # <a name="reportroot-getm365appuserdetail"></a>Reportroot.: getM365AppUserDetail
 
@@ -87,7 +87,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "Report Period" (Отчетный период).
 - Windows
 - Mac
-- Мобильные устройства
+- Mobile
 - Web
 - Outlook
 - Word
@@ -304,3 +304,5 @@ Content-Length: 951
   "suppressions": [
   ]
 }-->
+
+
