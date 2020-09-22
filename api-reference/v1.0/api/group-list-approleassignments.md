@@ -1,22 +1,22 @@
 ---
-title: Список Аппролеассигнментс, назначенных группе
-description: Получение списка Аппролеассигнментс, предоставленных группе.
+title: Список объектов appRoleAssignment, предоставленных для группы
+description: Получение списка appRoleAssignment, предоставленного группе.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: e522bb2cb070bf42fb5d1e5ca291d2449941ea3b
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: a4b3be590965d66ff6c809608cf4e6794f03e691
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383842"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070165"
 ---
-# <a name="list-approleassignments-granted-to-a-group"></a>Список Аппролеассигнментс, назначенных группе
+# <a name="list-approleassignments-granted-to-a-group"></a>Список объектов appRoleAssignment, предоставленных для группы
 
 Пространство имен: microsoft.graph
 
-Получение списка [аппролеассигнмент](../resources/approleassignment.md) , предоставленных группе.
+Получение списка [appRoleAssignment](../resources/approleassignment.md), предоставленного группе.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "44383842"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory. Read. ALL, Аппролеассигнмент. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL  |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Directory. Read. ALL, Аппролеассигнмент. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,13 +51,13 @@ GET /groups/{id}/appRoleAssignments
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [аппролеассигнмент](../resources/approleassignment.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [appRoleAssignment](../resources/approleassignment.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-В приведенном ниже примере показан запрос на получение ролей приложения, назначенных группе.
+В приведенном примере показано, как запросить извлечение ролей приложения, назначенных группе.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -133,3 +133,4 @@ Content-length: 306
   ]
 }
 -->
+

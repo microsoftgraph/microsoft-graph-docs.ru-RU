@@ -3,14 +3,14 @@ title: Тип ресурса androidStoreApp
 description: Содержит свойства, в том числе унаследованные, для приложений из магазина Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70c3e407d6325d838dfd43706ec4116e2c8b7f49
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 67dba98b7aed0c5f5cbcad6494022ad17d4cd6f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397346"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069059"
 ---
 # <a name="androidstoreapp-resource-type"></a>Тип ресурса androidStoreApp
 
@@ -27,8 +27,8 @@ ms.locfileid: "43397346"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление объектов androidStoreApp](../api/intune-apps-androidstoreapp-list.md)|Коллекция объектов [androidStoreApp](../resources/intune-apps-androidstoreapp.md)|Список свойств и связей объектов [androidStoreApp](../resources/intune-apps-androidstoreapp.md).|
-|[Получение объекта androidStoreApp](../api/intune-apps-androidstoreapp-get.md)|[androidStoreApp](../resources/intune-apps-androidstoreapp.md);|Список свойств и связей объекта [androidStoreApp](../resources/intune-apps-androidstoreapp.md).|
-|[Создание объекта androidStoreApp](../api/intune-apps-androidstoreapp-create.md)|[androidStoreApp](../resources/intune-apps-androidstoreapp.md);|Создание объекта [androidStoreApp](../resources/intune-apps-androidstoreapp.md).|
+|[Получение объекта androidStoreApp](../api/intune-apps-androidstoreapp-get.md)|[androidStoreApp](../resources/intune-apps-androidstoreapp.md)|Список свойств и связей объекта [androidStoreApp](../resources/intune-apps-androidstoreapp.md).|
+|[Создание объекта androidStoreApp](../api/intune-apps-androidstoreapp-create.md)|[androidStoreApp](../resources/intune-apps-androidstoreapp.md)|Создание объекта [androidStoreApp](../resources/intune-apps-androidstoreapp.md).|
 |[Удаление объекта androidStoreApp](../api/intune-apps-androidstoreapp-delete.md)|Нет|Удаление объекта [androidStoreApp](../resources/intune-apps-androidstoreapp.md).|
 |[Обновление объекта androidStoreApp](../api/intune-apps-androidstoreapp-update.md)|[androidStoreApp](../resources/intune-apps-androidstoreapp.md)|Обновление свойств объекта [androidStoreApp](../resources/intune-apps-androidstoreapp.md).|
 
@@ -47,7 +47,7 @@ ms.locfileid: "43397346"
 |informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |packageId|String|Идентификатор пакета.|
 |appStoreUrl|String|URL-адрес магазина приложений для Android.|
@@ -103,6 +103,8 @@ ms.locfileid: "43397346"
   }
 }
 ```
+
+
 
 
 

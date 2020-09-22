@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d316c6ba9a7a9d34b34110023019169c39859c79
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: 9ff55759e71cda0876a2ce5b0a65e47bcaf917a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962548"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069269"
 ---
 # <a name="callroute-resource-type"></a>Тип ресурса Каллрауте
 
@@ -24,7 +24,7 @@ ms.locfileid: "42962548"
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
 | Наконец               | [identitySet](identityset.md) | Идентификатор, разрешенный в вызове.               |
 | Исходный текст            | [identitySet](identityset.md) | Идентификатор, который изначально использовался при вызове.           |
-| раутингтипе         | String                        | Возможные значения: `forwarded`, `lookup`, `selfFork`.  |
+| раутингтипе         | Строка                        | Возможные значения: `forwarded`, `lookup`, `selfFork`.  |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -56,3 +56,4 @@ ms.locfileid: "42962548"
   "suppressions": []
 }
 -->
+

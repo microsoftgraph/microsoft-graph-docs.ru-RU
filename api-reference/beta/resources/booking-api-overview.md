@@ -5,12 +5,12 @@ localization_priority: Priority
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: 96a30ee3a0bfe4a4b823625d024d54d4b98f4c31
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 588b7728a29e6eae3e4378da009c907b92ad32f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543382"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071873"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Использование API Microsoft Bookings в Microsoft Graph
 
@@ -29,7 +29,7 @@ Microsoft Bookings позволяет крупным организациям и
 
 Выполните указанные ниже действия перед первым резервированием встреч клиента с компанией. Убедитесь, что предоставлены подходящие [маркеры доступа](/graph/auth-overview) для соответствующих операций.
 
-1. Убедитесь, что у компании есть подписка на [Office 365 бизнес премиум](https://products.office.com/ru-RU/business/office-365-business-premium).
+1. Убедитесь, что у компании есть подписка на [Microsoft 365 бизнес премиум](https://products.office.com/ru-RU/business/office-365-business-premium).
 2. Создайте новый объект **bookingBusiness**, отправив операцию POST в набор объектов. Как минимум, следует указать имя новой компании, отображаемое для клиентов:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -74,7 +74,7 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/publish
 Authorization: Bearer {access token}
 ```
 
-Как правило, можно указать список всех компаний для резервирования в клиенте Office 365:
+Как правило, можно указать список всех компаний для резервирования в клиенте Microsoft 365:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses
@@ -96,9 +96,13 @@ Authorization: Bearer {access token}
 | Получение встреч в диапазоне дат | [bookingBusiness](bookingbusiness.md) | [Представление календаря "Список резервирований"](../api/bookingbusiness-list-calendarview.md) |
 | Получение валюты | [bookingCurrency](bookingcurrency.md) | [Методы ресурса bookingCurrency](bookingcurrency.md#methods) |
 
+## <a name="whats-new"></a>Новые возможности
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="see-also"></a>См. также
 
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 - Узнайте, как выбрать [разрешения](/graph/permissions-reference) в Microsoft Graph.
+
+

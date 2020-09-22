@@ -3,14 +3,14 @@ title: Список Виндовсфеатуреупдатепрофилес
 description: Список свойств и связей объектов Виндовсфеатуреупдатепрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9657a20b42939dfc3fca8e47669e6b8e43225926
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: c7facbabac0f8b578cbff2269df163f2836c7f52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123605"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072020"
 ---
 # <a name="list-windowsfeatureupdateprofiles"></a>Список Виндовсфеатуреупдатепрофилес
 
@@ -84,6 +84,9 @@ Content-Length: 514
   ]
 }
 ```
+
+
+
 
 
 

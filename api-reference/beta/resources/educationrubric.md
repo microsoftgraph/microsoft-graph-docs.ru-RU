@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 6c448652719f20ab2edd7c283ea18e99a37edbbd
-ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
+ms.openlocfilehash: 276a16852f546b88806c797dbe5c2501de80f5ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534435"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071271"
 ---
 # <a name="educationrubric-resource-type"></a>Тип ресурса Едукатионрубрик
 
@@ -45,7 +45,7 @@ Rubricа, который можно прикрепить к назначению
 |тонов|Коллекция [рубриклевел](rubriclevel.md)|Коллекция уровней, составляющих данный Rubric.|
 |являются|Коллекция [рубриккуалити](rubricquality.md)|Коллекция качеств, составляющих этот Rubric.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 
@@ -86,3 +86,5 @@ Rubricа, который можно прикрепить к назначению
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

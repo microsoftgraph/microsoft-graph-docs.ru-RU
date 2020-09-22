@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 1768e40edde1d02c109e77c7e7ca3c2dd0ffdafa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3862a6273e9dfca4df6bb412afcc061b057e617c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531855"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069199"
 ---
 # <a name="chartfont-resource-type"></a>Тип ресурса ChartFont
 
@@ -30,11 +30,11 @@ ms.locfileid: "42531855"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |bold|boolean|Указывает, является ли шрифт полужирным.|
-|color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
+|color|string|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
 |name|string|Имя шрифта (например, Calibri)|
 |size|Double|Размер шрифта (например, 11)|
-|underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.|
+|underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None` , `Single` .|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -72,3 +72,4 @@ ms.locfileid: "42531855"
   "section": "documentation",
   "tocPath": ""
 }-->
+

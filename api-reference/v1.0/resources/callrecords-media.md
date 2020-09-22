@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0eeefd772eb7050a829c7eaf9d65f92958c8fa64
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: edd4849cc6922695f7c03909ac04348b4171d5a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44492047"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069395"
 ---
 # <a name="media-resource-type"></a>Тип ресурса мультимедиа
 
@@ -22,7 +22,7 @@ ms.locfileid: "44492047"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|label|String|Способ идентификации мультимедиа во время этапа согласования мультимедиа.|
+|label|Строка|Способ идентификации мультимедиа во время этапа согласования мультимедиа.|
 |каллердевице|[Microsoft. Graph. Каллрекордс. Девицеинфо](callrecords-deviceinfo.md)|Сведения об устройстве, связанные с конечной точкой абонента этого носителя.|
 |каллернетворк|[Microsoft. Graph. Каллрекордс. Нетворкинфо](callrecords-networkinfo.md)|Сведения о сети, связанные с конечной точкой абонента этого носителя.|
 |каллидевице|[Microsoft. Graph. Каллрекордс. Девицеинфо](callrecords-deviceinfo.md)|Сведения об устройстве, связанные с конечной точкой вызываемого носителя.|

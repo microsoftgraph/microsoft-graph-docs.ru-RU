@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 30769d9bd7ee76494b1582a3d7afc8a7f75bb07a
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: bba9f57799a36bef4a90b7c514a5be4b4846565e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895984"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070655"
 ---
 # <a name="printusagesummarybyuser-resource-type"></a>Тип ресурса Принтусажесуммарибюсер
 
@@ -31,7 +31,7 @@ ms.locfileid: "42895984"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка|Идентификатор этой сводки использования.|
+|id|String|Идентификатор этой сводки использования.|
 |userPrincipalName|String|Имя участника-пользователя, представленное этой статистикой.|
 |усажедате|Дата|Дата, связанная с этими статистикой.|
 |комплетедблаккандвхитежобкаунт|Int64|Количество черно-белых заданий печати, выполненных от имени пользователя на соответствующую дату.|
@@ -70,3 +70,4 @@ ms.locfileid: "42895984"
   "section": "documentation",
   "tocPath": ""
 }-->
+

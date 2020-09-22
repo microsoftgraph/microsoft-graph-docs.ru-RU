@@ -3,14 +3,14 @@ title: действие Жетролескопетагсбид
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 295b7e7a0d5825d45a5f4ae6a5aceb4647904ec0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6f93eee23919a24062ec9c2a0c1523d0c579efd5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386738"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072027"
 ---
 # <a name="getrolescopetagsbyid-action"></a>действие Жетролескопетагсбид
 
@@ -47,7 +47,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -97,6 +97,9 @@ Content-Length: 257
   ]
 }
 ```
+
+
+
 
 
 

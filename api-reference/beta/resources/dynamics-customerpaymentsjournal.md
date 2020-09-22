@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 9b909676a3cce34ac15481e9ce05746e972d7f8d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a6fc1cf1541ebfbcf514de3005c7a89961531568
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42504582"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071362"
 ---
 # <a name="customerpaymentsjournals-resource-type"></a>Тип ресурса Кустомерпайментсжаурналс
 
@@ -54,4 +54,6 @@ ms.locfileid: "42504582"
   "lastModifiedDateTime": "datetime"
 }
 ```
+
+
 

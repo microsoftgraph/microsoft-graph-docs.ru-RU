@@ -6,12 +6,12 @@ description: Аспект, описывающий driveItem, который яв
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ae03674970c8861c7d1c158e62662d9691e74789
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bcc132bf4ccd21c98abd621c5ca9fa86dc7d5a27
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507868"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071650"
 ---
 # <a name="bundle-resource-type"></a>Тип ресурса пакета
 
@@ -21,9 +21,9 @@ ms.locfileid: "42507868"
 
 Пакет — это логическая группа файлов, используемых для совместного использования нескольких файлов. Он представлен объектом [driveItem][] , содержащим `bundle` аспект, и к нему можно предоставить доступ таким же образом, как и любой другой driveItem.
 
-`bundle` Аспект в [driveItem][] определяет элемент как пакет и содержит сведения, относящиеся к пакету, в единую структуру. Он включается только в ресурсы [driveItem][] , возвращенные из конечной точки " **пакеты** ".
+`bundle`Аспект в [driveItem][] определяет элемент как пакет и содержит сведения, относящиеся к пакету, в единую структуру. Он включается только в ресурсы [driveItem][] , возвращенные из конечной точки " **пакеты** ".
 
-Обратите внимание `bundle` , что сам тип ресурса сам по себе не является сущностью и является единственным аспектом [driveItem][]. Коллекция на [диске][] имеет тип [driveItem][], а не `bundle` `bundles`
+Обратите внимание, что `bundle` сам тип ресурса сам по себе не является сущностью и является единственным аспектом [driveItem][]. `bundles`Коллекция на [диске][] имеет тип [driveItem][], а не `bundle` .
 
 ## <a name="methods"></a>Методы
 
@@ -66,3 +66,5 @@ ms.locfileid: "42507868"
 [bundle-remove-item]: ../api/bundle-removeItem.md
 [bundle-update]: ../api/bundle-update.md
 [bundle-delete]: ../api/bundle-delete.md
+
+

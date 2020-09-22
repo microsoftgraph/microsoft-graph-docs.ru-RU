@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: f08b33cd223a140373f6130f19099ce0c941d8b9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1f101cc98789241de276ddb232e43d2416014b1b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442194"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071810"
 ---
 # <a name="bookingappointment-resource-type"></a>Тип ресурса Букингаппоинтмент
 
@@ -28,8 +28,8 @@ ms.locfileid: "43442194"
 |[Список встреч](../api/bookingbusiness-list-appointments.md) |  Коллекция [букингаппоинтмент](bookingappointment.md) | Получение списка объектов **букингаппоинтмент** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
 |[Создание Букингаппоинтмент](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Создание нового **букингаппоинтмент** для указанного [букингбусинесс](../resources/bookingbusiness.md). |
 |[Получение Букингаппоинтмент](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Чтение свойств и связей объекта **букингаппоинтмент** .|
-|[обновление](../api/bookingappointment-update.md). | [bookingAppointment](bookingappointment.md)    |Обновление объекта **букингаппоинтмент** . |
-|[удаление](../api/bookingappointment-delete.md); | Нет |Удаление объекта **букингаппоинтмент** . |
+|[Обновление](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)    |Обновление объекта **букингаппоинтмент** . |
+|[Удаление](../api/bookingappointment-delete.md) | Нет |Удаление объекта **букингаппоинтмент** . |
 |[Отмена](../api/bookingappointment-cancel.md)|Нет| Отмена объекта **букингаппоинтмент** .|
 
 ## <a name="properties"></a>Свойства
@@ -60,10 +60,10 @@ ms.locfileid: "43442194"
 |сервицелокатион|[location](location.md)|Место доставки службы.|
 |Служба|String|Имя **букингсервице** , связанного с этой встречей.<br>Это свойство является необязательным при создании новой встречи. Если он не указан, то он вычисляется из службы, связанной с встречей, с помощью свойства **serviceId** .|
 |сервиценотес|String|Заметки из [букингстаффмембер](bookingstaffmember.md). Значение этого свойства доступно только при чтении этого **букингаппоинтмент** с помощью идентификатора.|
-|стаффмемберидс|Коллекция объектов string|Идентификатор каждого [букингстаффмембер](bookingstaffmember.md) , запланированного в этой встрече.|
+|стаффмемберидс|Коллекция String|Идентификатор каждого [букингстаффмембер](bookingstaffmember.md) , запланированного в этой встрече.|
 |начать|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, с которого начинается встреча.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -124,3 +124,5 @@ ms.locfileid: "43442194"
   "suppressions": []
 }
 -->
+
+

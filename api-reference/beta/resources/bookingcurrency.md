@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 6d04522b3a754e5a929fd48f8ea3c94f6ee5a6c3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f4b5cc6a8fdb36c2e4543302ac32846a1b3c4388
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453764"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071796"
 ---
 # <a name="bookingcurrency-resource-type"></a>Тип ресурса Букингкурренци
 
@@ -35,7 +35,7 @@ ms.locfileid: "43453764"
 |id|String| 3-значный код валюты, основанный на [стандарте ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). Например, код валюты для доллара США равен USD, а Австралийский доллар — ауд. Только для чтения.|
 |знаки|String| Символ валюты. Например, символ денежной единицы для доллара США и Австралийский доллар — $.  |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -71,3 +71,5 @@ ms.locfileid: "43453764"
   "suppressions": []
 }
 -->
+
+

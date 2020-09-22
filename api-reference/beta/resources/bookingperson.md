@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: d5ebbd7c4abaf34b31ac3f3d8e75defd6c939ec0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 04fabd62ee89c275d25075de7b489e512ebe3167
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453677"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071775"
 ---
 # <a name="bookingperson-resource-type"></a>Тип ресурса Букингперсон
 
@@ -23,7 +23,7 @@ ms.locfileid: "43453677"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка|Имя производной сущности, которая взаимодействует с клиентами.|
+|displayName|String|Имя производной сущности, которая взаимодействует с клиентами.|
 |emailAddress|String|Адрес электронной почты пользователя.|
 |id|String| Идентификатор производной сущности. Только для чтения.|
 
@@ -64,3 +64,5 @@ ms.locfileid: "43453677"
   "suppressions": []
 }
 -->
+
+

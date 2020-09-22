@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 039f01375b2483f1bda1a63e999556d194fae048
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f12a794b6ca624d3ef41a61bc93a8a0c9a867e99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457431"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071765"
 ---
 # <a name="bookingreminder-resource-type"></a>Тип ресурса Букингреминдер
 
@@ -61,3 +61,5 @@ ms.locfileid: "43457431"
   "suppressions": []
 }
 -->
+
+

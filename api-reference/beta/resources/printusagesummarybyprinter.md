@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 86d7b4eb107ac6e2732e32bf55a65a7125edb529
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 4d33ab99780f980dcc24e267ba1ac6603f602aa2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896053"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070658"
 ---
 # <a name="printusagesummarybyprinter-resource-type"></a>Тип ресурса Принтусажесуммарибипринтер
 
@@ -70,3 +70,4 @@ ms.locfileid: "42896053"
   "section": "documentation",
   "tocPath": ""
 }-->
+

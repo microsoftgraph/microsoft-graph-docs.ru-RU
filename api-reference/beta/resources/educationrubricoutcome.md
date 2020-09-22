@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 93e6585a6963a6f31c2613e2f2e12cce7246b7d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ade372d6bd5e669f0dcde1ac36e8ef06e473cd43
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501012"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071292"
 ---
 # <a name="educationrubricoutcome-resource-type"></a>Тип ресурса Едукатионрубрикауткоме
 
@@ -37,7 +37,7 @@ ms.locfileid: "42501012"
 |рубриккуалитифидбакк|Коллекция [рубриккуалитифидбаккмодел](rubricqualityfeedbackmodel.md)|Коллекция определенных отзывов для каждого качества этого Rubric.|
 |рубриккуалитиселектедлевелс|Коллекция [рубриккуалитиселектедколумнмодел](rubricqualityselectedcolumnmodel.md)|Уровень, который преподаватель выбрал для каждого качества при ступенчатом назначении.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 
@@ -73,3 +73,4 @@ ms.locfileid: "42501012"
   "section": "documentation",
   "tocPath": ""
 }-->
+

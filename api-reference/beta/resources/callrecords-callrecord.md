@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 19519ec646e87060e3721add2188ead6533abc15
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: a119b95daf651ca5a91c269210a81a9a9a3cc1f0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509877"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071585"
 ---
 # <a name="callrecord-resource-type"></a>Тип ресурса Каллрекорд
 
@@ -33,8 +33,8 @@ ms.locfileid: "46509877"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |endDateTime|DateTimeOffset|Время в формате UTC, когда последний пользователь оставил вызов. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|id|Строка|Уникальный идентификатор для записи вызова. Только для чтения.|
-|жоинвебурл|Строка|URL-адрес собрания, связанный с вызовом. Может быть недоступен для типа записи вызовов Пиртопир.|
+|id|String|Уникальный идентификатор для записи вызова. Только для чтения.|
+|жоинвебурл|String|URL-адрес собрания, связанный с вызовом. Может быть недоступен для типа записи вызовов Пиртопир.|
 |lastModifiedDateTime|DateTimeOffset|Время в формате UTC при создании записи вызова. Тип DatetimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается как время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |модальности|коллекция Microsoft. Graph. Каллрекордс. Modal|Список всех модальности, используемых в вызове. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
 |organizer|[identitySet](identityset.md)|Удостоверение субъекта Организации.|
@@ -43,7 +43,7 @@ ms.locfileid: "46509877"
 |type|Microsoft. Graph. Каллрекордс. callType|Указывает тип вызова. Возможные значения: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
 |version|Int64|Монотонно увеличивающаяся версия записи вызова. Более высокие записи вызовов с одинаковым ИДЕНТИФИКАТОРом содержат дополнительные данные по сравнению с более низкой версией.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
@@ -87,3 +87,5 @@ ms.locfileid: "46509877"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

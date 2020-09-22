@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 76c5de4628c8b63a3babc05016a02111a20dd100
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dadeebfe65a8d502b8a401f551638c09f637625f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43360515"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071663"
 ---
 # <a name="bookingworktimeslot-resource-type"></a>Тип ресурса Букингворктимеслот
 
@@ -25,7 +25,7 @@ ms.locfileid: "43360515"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |end|TimeOfDay|Время суток, в которое начинается рабочий день. Например, 08:00:00.0000000.|
-|start|TimeOfDay|Время суток, когда работа завершается. Например, 17:00:00.0000000.|
+|начать|TimeOfDay|Время суток, когда работа завершается. Например, 17:00:00.0000000.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -59,3 +59,5 @@ ms.locfileid: "43360515"
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Тип ресурса omaSettingBoolean
 description: Логическое определение параметров OMA.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa56968ec1b427a20f564fa5dddafd250050fa0f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dabc0f58836f240d229049befe9055fc87e57b2a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473050"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068996"
 ---
 # <a name="omasettingboolean-resource-type"></a>Тип ресурса omaSettingBoolean
 
@@ -27,7 +27,7 @@ ms.locfileid: "43473050"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|Строка|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Boolean|Значение|
 
@@ -50,6 +50,8 @@ ms.locfileid: "43473050"
   "value": true
 }
 ```
+
+
 
 
 

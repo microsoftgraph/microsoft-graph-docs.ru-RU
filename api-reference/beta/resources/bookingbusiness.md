@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 2ba6da0291c0a2153908d14e74deeb83c6c138d5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3d33c182fb2456137193f01bb1d2b9a310184160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453771"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071803"
 ---
 # <a name="bookingbusiness-resource-type"></a>Тип ресурса Букингбусинесс
 
@@ -27,8 +27,8 @@ ms.locfileid: "43453771"
 |[Список Букингбусинессес](../api/bookingbusiness-list.md) | Коллекция [букингбусинесс](bookingbusiness.md) |Получение коллекции объектов букингбусинесс в клиенте. |
 |[Создание Букингбусинесс](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Создание новой книги Майкрософт для бизнеса. |
 |[Получение Букингбусинесс](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Чтение свойств и связей объекта Букингбусинесс.|
-|[обновление](../api/bookingbusiness-update.md). | [bookingBusiness](bookingbusiness.md) |Обновление свойств объекта **букингбусинесс** . |
-|[удаление](../api/bookingbusiness-delete.md); | Нет |Удаление объекта **букингбусинесс** . |
+|[Обновление](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |Обновление свойств объекта **букингбусинесс** . |
+|[Удаление](../api/bookingbusiness-delete.md) | Нет |Удаление объекта **букингбусинесс** . |
 |[Создание Букингаппоинтмент](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Создание нового Букингаппоинтмент путем публикации в коллекции встреч.|
 |[Список встреч](../api/bookingbusiness-list-appointments.md) |Коллекция [букингаппоинтмент](bookingappointment.md)| Получение коллекции объектов Букингаппоинтмент.|
 |[Создание Букингкустомер](../api/bookingbusiness-post-customers.md) |[букингкустомер](bookingcustomer.md)| Создание нового Букингкустомер путем публикации в коллекции Customers.|
@@ -48,16 +48,16 @@ ms.locfileid: "43453771"
 |businessHours|Коллекция [букингворкхаурс](bookingworkhours.md)|Количество часов работы для бизнеса.|
 |бусинесстипе|String|Тип бизнеса.|
 |дефаулткурренциисо|String|Код валюты, в которой работает предприятие, в Microsoft Books.|
-|displayName|Строка|Название организации, которая взаимодействует с клиентами. Это имя отображается в верхней части страницы "планирование бизнеса".|
+|displayName|String|Название организации, которая взаимодействует с клиентами. Это имя отображается в верхней части страницы "планирование бизнеса".|
 |email|String|Адрес электронной почты для бизнеса.|
-|id|Строка|Уникальный программный идентификатор для бизнеса. Только для чтения.|
+|id|String|Уникальный программный идентификатор для бизнеса. Только для чтения.|
 |Публикации|Boolean|Страница планирования стала доступна внешним клиентам. Для задания этого свойства используйте действия " **опубликовать** " и " **отменить публикацию** ". Только для чтения.|
 |phone|String|Номер телефона для бизнеса. Свойство **Phone** вместе с **адресами** и **вебситеурл**отображается в нижнем колонтитуле страницы бизнес-планирования.|
 |публикурл|String|URL-адрес страницы расписания, который задается после [публикации](../api/bookingbusiness-publish.md) или [отмены публикации](../api/bookingbusiness-unpublish.md) страницы. Только для чтения.|
 |счедулингполици|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Указывает, как можно создавать резервирования для этого бизнеса.|
 |вебситеурл|String|URL-адрес веб-сайта компании. Свойство **вебситеурл** вместе с параметром **Address**( **Телефон**) отображается в нижнем колонтитуле страницы бизнес-планирования.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |appointments|Коллекция [букингаппоинтмент](bookingappointment.md)| Все встречи этого бизнеса. Только для чтения. Допускается значение null.|
@@ -112,3 +112,5 @@ ms.locfileid: "43453771"
   "suppressions": []
 }
 -->
+
+

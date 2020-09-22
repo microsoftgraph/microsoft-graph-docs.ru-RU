@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: c8676ce2e43e88ce53e4c79e13b9151a0eca2b58
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 82af39c9b64d7970d92a364199404149928b7b09
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895715"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071726"
 ---
 # <a name="bookingstaffmember-resource-type"></a>Тип ресурса Букингстаффмембер
 
@@ -35,22 +35,22 @@ ms.locfileid: "44895715"
 |[Список сотрудников](../api/bookingbusiness-list-staffmembers.md) | Коллекция [букингстаффмембер](bookingstaffmember.md) | Получение списка объектов **букингстаффмембер** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
 |[Создание Букингстафф](../api/bookingbusiness-post-staffmembers.md) | Коллекция [букингстаффмембер](bookingstaffmember.md) | Создание нового **букингстаффмембер** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
 |[Получение Букингстаффмембер](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |Получение свойств и связей объекта **букингстаффмембер** в указанном [букингбусинесс](../resources/bookingbusiness.md).|
-|[Update](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |Обновление свойств объекта **букингстаффмембер** в указанном [букингбусинесс](../resources/bookingbusiness.md).|
-|[Delete](../api/bookingstaffmember-delete.md) | Нет |Удаление сотрудника в заданном [букингбусинесс](../resources/bookingbusiness.md). |
+|[Обновление](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |Обновление свойств объекта **букингстаффмембер** в указанном [букингбусинесс](../resources/bookingbusiness.md).|
+|[Удаление](../api/bookingstaffmember-delete.md) | Нет |Удаление сотрудника в заданном [букингбусинесс](../resources/bookingbusiness.md). |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |аваилабилитисаффектедбиперсоналкалендар|Boolean|True означает, что если сотрудник является пользователем Microsoft 365, то API для резервирования будет проверять доступность сотрудников в личном календаре в Microsoft 365 перед выполнением резервирования. |
 |colorIndex|Int32|Определяет цвет для представления сотрудника. Цвет соответствует цветовой палитре на странице " **сведения о персонале** " в приложении "книги".|
-|displayName|Строка|Имя сотрудника, отображаемое для клиентов. Обязательный элемент.|
+|displayName|String|Имя сотрудника, отображаемое для клиентов. Обязательно.|
 |emailAddress|String|Адрес электронной почты сотрудника. Это может быть тот же клиент Microsoft 365, что и в Организации, или в другом домене электронной почты. Этот адрес электронной почты можно использовать, если для свойства **сендконфирматионстувнер** в политике планирования бизнеса задано значение true. Обязательный.|
 |id|String| Идентификатор сотрудника в формате GUID. Только для чтения.|
-|role|string| Роль сотрудника в Организации. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`. Обязательный элемент.|
+|role|string| Роль сотрудника в Организации. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`. Обязательно.|
 |усебусинесшаурс|Boolean|Значение true означает, что уровень доступности сотрудника указан в свойстве **businessHours** предприятия. Значение false означает, что доступность определяется значением свойства **воркингхаурс** сотрудника.|
 |workingHours|Коллекция [букингворкхаурс](bookingworkhours.md)|Диапазон часов на каждый день недели, когда сотрудник становится доступен для резервирования. По умолчанию они инициализируются так же, как свойство **businessHours** для бизнеса.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -92,3 +92,5 @@ ms.locfileid: "44895715"
   "suppressions": []
 }
 -->
+
+

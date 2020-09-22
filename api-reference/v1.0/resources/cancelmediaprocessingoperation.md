@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5962b3f5aed89c7f2c0b01be3f8b4a035ac463da
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 8edbc7dcc770429fd4c1ccaf7bc3374d973cd2ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069220"
 ---
 # <a name="cancelmediaprocessingoperation-resource-type"></a>Тип ресурса Канцелмедиапроцессингоператион
 
@@ -23,12 +23,12 @@ ms.locfileid: "47319622"
 | Свойство      | Тип                        | Описание                                                                     |
 | :------------ | :-------------------------- | :------------------------------------------------------------------------------ |
 | ко           | Boolean                     | Указывает, следует ли остановить все операции или текущие.                            |
-| Контекст | String                      | Контекст клиента.                                                             |
-| id            | String                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                             |
+| Контекст | Строка                      | Контекст клиента.                                                             |
+| id            | Строка                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                             |
 | resultInfo    | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                             |
 | status        | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -61,3 +61,4 @@ ms.locfileid: "47319622"
   "section": "documentation",
   "tocPath": ""
 }-->
+

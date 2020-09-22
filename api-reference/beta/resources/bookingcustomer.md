@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 42ad0826cdabbba2c3b26101d93160f71344fc6c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5b527902c5d6e39bb752e07838c6a5e1c3022bb0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453663"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071789"
 ---
 # <a name="bookingcustomer-resource-type"></a>Тип ресурса Букингкустомер
 
@@ -28,13 +28,13 @@ ms.locfileid: "43453663"
 |[Перечисление клиентов](../api/bookingbusiness-list-customers.md) | Коллекция [букингкустомер](bookingcustomer.md) | Получение списка объектов **букингкустомер** . |
 |[Создание Букингкустомер](../api/bookingbusiness-post-customers.md) | [букингкустомер](bookingcustomer.md) | Создание нового объекта **букингкустомер** . |
 |[Получение Букингкустомер](../api/bookingcustomer-get.md) | [букингкустомер](bookingcustomer.md) |Чтение свойств и связей объекта **букингкустомер** .|
-|[обновление](../api/bookingcustomer-update.md). | [букингкустомер](bookingcustomer.md) |Обновление объекта **букингкустомер** . |
-|[удаление](../api/bookingcustomer-delete.md); | Нет |Удаление объекта **букингкустомер** . |
+|[Обновление](../api/bookingcustomer-update.md) | [букингкустомер](bookingcustomer.md) |Обновление объекта **букингкустомер** . |
+|[Удаление](../api/bookingcustomer-delete.md) | Нет |Удаление объекта **букингкустомер** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка|Имя клиента.|
+|displayName|String|Имя клиента.|
 |emailAddress|String|SMTP-адрес клиента.|
 |id|String| Идентификатор клиента. Только для чтения.|
 
@@ -75,3 +75,5 @@ ms.locfileid: "43453663"
   "suppressions": []
 }
 -->
+
+

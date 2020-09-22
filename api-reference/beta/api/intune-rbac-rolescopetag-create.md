@@ -3,14 +3,14 @@ title: Создание Ролескопетаг
 description: Создание нового объекта Ролескопетаг.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a705d41ce2e10a07dfb43e86dd662adbce3f837c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a11432a2da50c9234bcb15631a1d71837c522b96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43360634"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072048"
 ---
 # <a name="create-rolescopetag"></a>Создание Ролескопетаг
 
@@ -47,7 +47,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Ролескопетаг в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Ролескопетаг.
@@ -55,13 +55,13 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|Строка|Отображаемое или понятное имя тега области применения роли.|
+|displayName|String|Отображаемое или понятное имя тега области применения роли.|
 |description|String|Описание тега области применения роли.|
 |isBuiltIn|Boolean|Описание тега области применения роли.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ролескопетаг](../resources/intune-rbac-rolescopetag.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -96,6 +96,9 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 53c5bc6be0953c68dc431be04b17f582715582c0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 37a1e6adb6a4769601d5f9806d1e3b262fe2879f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448369"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071747"
 ---
 # <a name="bookingservice-resource-type"></a>Тип ресурса Букингсервице
 
@@ -27,8 +27,8 @@ ms.locfileid: "43448369"
 |[Список служб](../api/bookingbusiness-list-services.md) | Коллекция [букингсервице](bookingservice.md) | Получение списка объектов **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md).|
 |[Создание Букингсервице](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Создайте объект **букингсервице** для указанного [букингбусинесс](../resources/bookingbusiness.md). |
 |[Получение Букингсервице](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Получение свойств и связей объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md).|
-|[обновление](../api/bookingservice-update.md). | [bookingService](bookingservice.md)    |Обновление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
-|[удаление](../api/bookingservice-delete.md); | Нет |Удаление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
+|[Обновление](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Обновление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
+|[Удаление](../api/bookingservice-delete.md) | Нет |Удаление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -39,17 +39,17 @@ ms.locfileid: "43448369"
 |дефаултприцетипе|string|Способ оплаты службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |дефаултреминдерс|Коллекция [букингреминдер](bookingreminder.md)|Набор напоминаний по умолчанию для встречи этой службы. Значение этого свойства доступно только при чтении этого **букингсервице** с помощью идентификатора.|
 |description|String|Текстовое описание службы.|
-|displayName|Строка|Имя службы.|
+|displayName|String|Имя службы.|
 |emailAddress|String|Адрес электронной почты|
-|id|Строка|Идентификатор этой службы в формате GUID. Только для чтения.|
+|id|String|Идентификатор этой службы в формате GUID. Только для чтения.|
 |ишидденфромкустомерс|Boolean|Значение true означает, что эта служба недоступна клиентам для резервирования.|
 |notes|String|Дополнительные сведения об этой службе.|
 |Буфер буфера|Длительность|Время, в течение которого помещается в буфер после встречи для этой службы и до того, как может быть зарезервирована Следующая встреча покупателя.|
 |пребуфер|Длительность|Время, в течение которого будет помещено в буфер, прежде чем можно будет запустить встречу для этой службы.|
 |счедулингполици|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Набор политик, определяющих, как должны создаваться встречи для этого типа службы и управлять ими.|
-|стаффмемберидс|Коллекция объектов string|Представляет [сотрудников](bookingstaffmember.md) , которые предоставляют эту службу. |
+|стаффмемберидс|Коллекция String|Представляет [сотрудников](bookingstaffmember.md) , которые предоставляют эту службу. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -98,3 +98,5 @@ ms.locfileid: "43448369"
   "suppressions": []
 }
 -->
+
+

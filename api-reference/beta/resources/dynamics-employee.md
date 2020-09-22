@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 84fccbcb9d60c97a2ce0079a9ba773a8400a8069
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d404a1ede257f3a31371dba31c37ff329452fccd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42504085"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071341"
 ---
 # <a name="employees-resource-type"></a>Тип ресурса Employees
 
@@ -43,7 +43,7 @@ ms.locfileid: "42504085"
 |jobTitle;            |string  |Полное имя сотрудника                          |
 |address             |[Навигационная. посталаддресс](../resources/dynamics-complextypes.md)|Указывает адрес сотрудника. Этот адрес будет отображаться во всех документах ресурсов для сотрудника.|
 |phoneNumber         |string  |Указывает номер телефона сотрудника.             |
-|mobilePhone;         |string  |Указывает номер мобильного телефона сотрудника.      |
+|mobilePhone         |string  |Указывает номер мобильного телефона сотрудника.      |
 |email               |строка  |Указывает адрес электронной почты сотрудника.                |
 |персоналемаил       |string  |Указывает личный адрес электронной почты сотрудника.       |
 |емплойментдате      |date    |Указывает дату начала работы сотрудника в компании.|
@@ -54,7 +54,7 @@ ms.locfileid: "42504085"
 |lastModifiedDateTime|datetime|Дата и время последнего изменения сотрудника. Только для чтения.|  
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -85,4 +85,6 @@ ms.locfileid: "42504085"
 }
 
 ```
+
+
 

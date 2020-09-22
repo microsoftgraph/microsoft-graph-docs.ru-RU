@@ -5,12 +5,12 @@ author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: c9c55908f62214c386aacee34be76bb11fc318b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99dc11faa96221abab6df6c27bac0db840123d5a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507812"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071589"
 ---
 # <a name="callmediastate-resource-type"></a>Тип ресурса Каллмедиастате
 
@@ -52,3 +52,5 @@ ms.locfileid: "42507812"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

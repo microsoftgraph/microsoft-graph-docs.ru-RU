@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: de2899b3ca75660280b797dda62993789f634096
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 8a695bed829d6c7e8825898da366737427195e1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917618"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070662"
 ---
 # <a name="printuseridentity-resource-type"></a>Тип ресурса Принтусеридентити
 
@@ -24,7 +24,7 @@ ms.locfileid: "43917618"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String|Идентификатор Принтусеридентити. Только для чтения.|
-|displayName|Строка|Отображаемое имя Принтусеридентити.|
+|displayName|String|Отображаемое имя Принтусеридентити.|
 |ipAddress|String|IP-адрес Принтусеридентити. Не заполнено.|
 |userPrincipalName|String|Имя участника-пользователя Принтусеридентити (UPN).|
 
@@ -61,3 +61,5 @@ ms.locfileid: "43917618"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

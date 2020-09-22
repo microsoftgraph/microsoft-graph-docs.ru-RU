@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5fead75d9d1ea076990daf42f8818bca6fd2d83a
-ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
+ms.openlocfilehash: f465ea20335b5c30c27596d296dd8dd3581d0b58
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408341"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071395"
 ---
 # <a name="networkinfo-resource-type"></a>Тип ресурса Нетворкинфо
 
@@ -100,3 +100,4 @@ ms.locfileid: "44408341"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b4c621739ea654b479825f293944a39db1c0b66e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b37bbc2b746d3dc2de4b55fa363b7b67f30f7191
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533128"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069185"
 ---
 # <a name="chartgridlines-resource-type"></a>Тип ресурса ChartGridlines
 
@@ -65,3 +65,4 @@ ms.locfileid: "42533128"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Тип ресурса windowsPackageInformation
 description: Содержит свойства для сведений о пакете для бизнес-приложения Windows.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 544c29c29b3a2ba530953bdea5f289fdd1eb56d5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d743454f5b0acfa9a8ba6c1b205d67fcb3c11595
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450724"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070921"
 ---
 # <a name="windowspackageinformation-resource-type"></a>Тип ресурса windowsPackageInformation
 
@@ -33,7 +33,7 @@ ms.locfileid: "43450724"
 |identityVersion|String|Версия идентификатора.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -66,6 +66,9 @@ ms.locfileid: "43450724"
   }
 }
 ```
+
+
+
 
 
 

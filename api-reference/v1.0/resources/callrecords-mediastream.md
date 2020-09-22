@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4e4dcd3d9eb1a2dd70fc1d3a632f080e083ff67d
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: f8426762bd963054fa974e65d442908faf6dbbb7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44492093"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069402"
 ---
 # <a name="mediastream-resource-type"></a>Тип ресурса Медиастреам
 
@@ -45,8 +45,8 @@ ms.locfileid: "44492093"
 |постфорвардерроркорректионпаккетлоссрате|Двойное с плавающей точкой|Скорость потери пакетов после применения FEC для всех видеопотоков и кодеков.|
 |startDateTime|DateTimeOffset|Время в формате UTC при запуске потока. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |стреамдиректион|Microsoft. Graph. Каллрекордс. Медиастреамдиректион|Указывает направление потока мультимедиа. Возможные значения: `callerToCallee`, `calleeToCaller`.|
-|стреамид|String|Уникальный идентификатор для потока.|
-|васмедиабипассед|Логический|Имеет значение true, если поток мультимедиа обходит сервер-посредник и выполняет прямую связь между клиентом и PSTN Gateway/УАТС, в противном случае false.|
+|стреамид|Строка|Уникальный идентификатор для потока.|
+|васмедиабипассед|Boolean|Имеет значение true, если поток мультимедиа обходит сервер-посредник и выполняет прямую связь между клиентом и PSTN Gateway/УАТС, в противном случае false.|
 
 
 ## <a name="json-representation"></a>Представление JSON

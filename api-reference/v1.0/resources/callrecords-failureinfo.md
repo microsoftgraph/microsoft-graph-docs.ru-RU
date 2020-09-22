@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 82eb5237ab1a6a8474b46c1a4466eddd2c7acefc
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: cd720663e3025525b19ffff62d8ef9b061d154b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44492056"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069472"
 ---
 # <a name="failureinfo-resource-type"></a>Тип ресурса Фаилуреинфо
 
@@ -22,7 +22,7 @@ ms.locfileid: "44492056"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|reason|String|Классификация причин сбоя вызова или части вызова.|
+|reason|Строка|Классификация причин сбоя вызова или части вызова.|
 |разместить|Microsoft. Graph. Каллрекордс. Фаилурестаже|Рабочая область при возникновении ошибки. Возможные значения: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Представление JSON

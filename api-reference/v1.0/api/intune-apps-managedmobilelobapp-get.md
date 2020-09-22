@@ -3,14 +3,14 @@ title: Get managedMobileLobApp
 description: Чтение свойств и связей объекта managedMobileLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 06160249d9ca2f2fd4c85a506b4cef6024ae585d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a05a6f18687563a4a28c213376971ea0b8ad9703
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442478"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070081"
 ---
 # <a name="get-managedmobilelobapp"></a>Get managedMobileLobApp
 
@@ -47,10 +47,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -97,6 +97,9 @@ Content-Length: 1007
   }
 }
 ```
+
+
+
 
 
 

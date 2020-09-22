@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2e1fd73cb387ebecda55dcbd9bad9488f83bf72d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3f0db983afaba255cea1e43278666fa4888cbf84
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451205"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071901"
 ---
 # <a name="list-worksheetcollection"></a>Список WorksheetCollection
 
@@ -42,10 +42,10 @@ GET /workbook/worksheets
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукворкшит](../resources/workbookworksheet.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -112,3 +112,5 @@ Content-length: 145
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 809e1fb1dc23a1b6324d2a07c092dc83fbac8df7
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: b2e71bca93e3c27fe445d5bead5b2f579f081411
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108335"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069591"
 ---
 # <a name="user-getmailtips"></a>Пользователь: подсказки
 
@@ -18,7 +18,7 @@ ms.locfileid: "43108335"
 
 Получение подсказок одного или нескольких получателей, доступных [пользователю](../resources/user.md), вошедшего в систему.
 
-Обратите внимание, что `POST` выполнив вызов `getMailTips` действия, вы можете запросить определенные типы подсказок, которые будут возвращаться сразу для нескольких получателей. Запрошенные подсказки возвращаются в коллекции [подсказок](../resources/mailtips.md) .
+Обратите внимание, что выполнив `POST` вызов `getMailTips` действия, вы можете запросить определенные типы подсказок, которые будут возвращаться сразу для нескольких получателей. Запрошенные подсказки возвращаются в коллекции [подсказок](../resources/mailtips.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,15 +43,15 @@ POST /users/{id|userPrincipalName}/getMailTips
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|EmailAddresses|Коллекция объектов string|Коллекция SMTP-адресов получателей, для которых требуется получить подсказки.|
-|маилтипсоптионс|String|Перечисление флагов, представляющих запрашиваемые подсказки. Возможные `automaticReplies`значения:, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`и. `totalMemberCount`|
+|EmailAddresses|Коллекция String|Коллекция SMTP-адресов получателей, для которых требуется получить подсказки.|
+|маилтипсоптионс|Строка|Перечисление флагов, представляющих запрашиваемые подсказки. Возможные значения: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` и `totalMemberCount` .|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [подсказки](../resources/mailtips.md) в теле отклика.
 ## <a name="example"></a>Пример
@@ -158,3 +158,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

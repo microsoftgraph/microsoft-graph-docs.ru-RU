@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 59884eaf1fa3227214b00936298a4adee5a7491f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5839ad12b746f83e2e41648ded6ce35346e97f28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071768"
 ---
 # <a name="bookingschedulingpolicy-resource-type"></a>Тип ресурса Букингсчедулингполици
 
@@ -64,3 +64,5 @@ ms.locfileid: "43448376"
   "suppressions": []
 }
 -->
+
+

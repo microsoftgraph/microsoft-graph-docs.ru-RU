@@ -3,14 +3,14 @@ title: тип перечисления не к windowsdevicetype
 description: Содержит свойства для типа устройства Windows.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d8f953e5169945cdb3f09a5926030387c3f558b4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 214067882365a098318853c9e20e73972542b179
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450768"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070949"
 ---
 # <a name="windowsdevicetype-enum-type"></a>тип перечисления не к windowsdevicetype
 
@@ -26,10 +26,13 @@ ms.locfileid: "43450768"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Флаги не заданы.|
-|системной|1,1|Поддерживается ли тип устройства Windows для настольных ПК.|
-|связь|2|Поддерживается ли тип мобильного устройства Windows.|
+|системной|1 |Поддерживается ли тип устройства Windows для настольных ПК.|
+|связь|2 |Поддерживается ли тип мобильного устройства Windows.|
 |holographic|4 |Поддерживается ли тип устройства с Windows Holographic.|
 |team|8 |Поддерживается ли тип устройства группы Windows.|
+
+
+
 
 
 

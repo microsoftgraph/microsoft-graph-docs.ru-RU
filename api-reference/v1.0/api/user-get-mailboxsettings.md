@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e2786ed33b9d019aa28ef9562ea6582907d58353
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 42a19bc64e8be7d5e12d3d49b1342a696a1d47cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069612"
 ---
 # <a name="get-user-mailbox-settings"></a>Получение параметров почтового ящика пользователя
 
@@ -82,10 +82,10 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и один из указанных ниже запрошенных объектов в тексте отклика.
 
@@ -112,7 +112,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Отклик включает все параметры почтового ящика вошедшего пользователя.
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -196,7 +196,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 
 ---
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Отклик включает только параметры автоматических ответов. Примечание. Показанный здесь объект отклика может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -295,3 +295,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

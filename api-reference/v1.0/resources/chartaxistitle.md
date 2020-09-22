@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3da7e07e7d918d451e996e859463d31d6cf9d0a1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f43e780a6a574b465f293f432cb4581d645bba3c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069206"
 ---
 # <a name="chartaxistitle-resource-type"></a>Тип ресурса ChartAxisTitle
 
@@ -66,3 +66,4 @@ ms.locfileid: "42531886"
   "section": "documentation",
   "tocPath": ""
 }-->
+

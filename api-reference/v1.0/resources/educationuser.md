@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5ba95625c8e0b5b5f5325cd8c34dbe3b42ab5889
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: de21fabafaee8f11504da9cb41d2d35c7df869aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909781"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069150"
 ---
 # <a name="educationuser-resource-type"></a>Тип ресурса educationUser
 
@@ -28,7 +28,7 @@ ms.locfileid: "44909781"
 | [Перечисление учебных заведений](../api/educationuser-list-schools.md) | Коллекция [educationSchool] | Получение коллекции объектов **educationSchool**, для которых пользователь является участником. |
 | [Получение пользователя](../api/educationuser-get-user.md)         | [user]                       | Получение простого каталога **user**, который соответствует этому объекту **educationUser**. |
 | [Обновление](../api/educationuser-update.md)             | [educationUser]              | Обновление объекта **educationUser**.                                           |
-| [Delete](../api/educationuser-delete.md)             | Нет                         | Удаление объекта **educationUser**.                                           |
+| [удаление](../api/educationuser-delete.md);             | Нет                         | Удаление объекта **educationUser**.                                           |
 
 ## <a name="properties"></a>Свойства
 
@@ -39,11 +39,11 @@ ms.locfileid: "44909781"
 | assignedPlans     | Коллекция [assignedPlan]    | Планы, назначенные пользователю. Только для чтения. Значение null не допускается.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | businessPhones    | Коллекция строк            | Номера телефонов пользователя. **Примечание.** Несмотря на то что это коллекция строк, для этого свойства можно задать только один номер.                                                                                                                                                                                                                                                                                                                                                                                                |
 | createdBy         | [identitySet]                | Объект, который создал пользователя.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| отделу;        | String                       | Название отдела, в котором работает пользователь. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| displayName       | Строка                       | Имя пользователя, отображаемое в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает параметры $filter и $orderby.                                                                                                                                                                                                                                                           |
+| department        | String                       | Название отдела, в котором работает пользователь. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| displayName       | String                       | Имя пользователя, отображаемое в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает параметры $filter и $orderby.                                                                                                                                                                                                                                                           |
 | externalSource    | `educationExternalSource`    | Источник для создания пользователя. Возможные значения: `sis` , `manual` .                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | givenName         | String                       | Простое имя пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| id                | Строка                       | Уникальный идентификатор пользователя. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.                                                                                                                                                                                                                                                                                                                                                                                                          |
+| id                | String                       | Уникальный идентификатор пользователя. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | mail              | String                       | SMTP-адрес пользователя, например "victor@contoso.onmicrosoft.com". Только для чтения. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | mailingAddress    | [physicalAddress]            | Почтовый адрес пользователя.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | mailNickname      | String                       | Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -67,10 +67,10 @@ ms.locfileid: "44909781"
 
 | Связь | Тип                         | Описание                                    |
 | :----------- | :--------------------------- | :--------------------------------------------- |
-| classes      | Коллекция [educationClass]  | Курсы пользователя. Допускается значение null.   |
+| classes      | Коллекция [educationClass]  | Курсы пользователя. Допускается значение NULL.   |
 | schools      | Коллекция [educationSchool] | Учебные заведения пользователя. Допускается значение NULL.   |
 | assignments  | [educationAssignment]        | Список назначений для пользователя. Допускается значение null.    |
-| пользователь;         | [user]                       | Пользователь каталога, соответствующий этому пользователю. |
+| user         | [user]                       | Пользователь каталога, соответствующий этому пользователю. |
 
 >[!IMPORTANT]
 >Ресурс **[educationAssignment]** является ресурсом версии/Beta. Если вы его используете, периодически просматривайте [журнал изменений](/graph/changelog). Когда ресурсы API Microsoft Graph освобождаются до конечной точки/V1.0, в журнале изменений указывается выпуск. Если ваше приложение использует ресурс **educationAssignment** , необходимо объявить URL-адреса базового запроса, как показано в следующем блоке кода:  
@@ -80,7 +80,7 @@ ms.locfileid: "44909781"
 >var betaBaseUrl = "https://graph.microsoft.com/beta/education";  // for administrativeUnit and educationOrganization
 >```
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -156,3 +156,4 @@ ms.locfileid: "44909781"
 [Коллекция assignedlicense]: assignedlicense.md
 [user]: user.md
 [directoryobject]: directoryobject.md
+
