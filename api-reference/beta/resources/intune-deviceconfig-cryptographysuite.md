@@ -3,14 +3,14 @@ title: Тип ресурса Криптографисуите
 description: Параметры сопоставления безопасности VPN
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c09525fdc65a64272901a8823fe9a3fffbecb62
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 686799364201b004470aa80ebe1df5a1eac98fe7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790259"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998798"
 ---
 # <a name="cryptographysuite-resource-type"></a>Тип ресурса Криптографисуите
 
@@ -27,10 +27,10 @@ ms.locfileid: "44790259"
 |:---|:---|:---|
 |encryptionMethod|[vpnEncryptionAlgorithmType](../resources/intune-deviceconfig-vpnencryptionalgorithmtype.md)|Метод шифрования. Возможные значения: `aes256`, `des`, `tripleDes`, `aes128`, `aes128Gcm`, `aes256Gcm`, `aes192`, `aes192Gcm`.|
 |интегритичеккмесод|[vpnIntegrityAlgorithmType](../resources/intune-deviceconfig-vpnintegrityalgorithmtype.md)|Метод проверки целостности. Возможные значения: `sha2_256`, `sha1_96`, `sha1_160`, `sha2_384`, `sha2_512`, `md5`.|
-|дхграуп|[диффиехеллманграуп](../resources/intune-deviceconfig-diffiehellmangroup.md)|Группа Диффи Диффи/Хелмана. Возможные значения: `group1`, `group2`, `group14`, `ecp256`, `ecp384`, `group24`.|
+|дхграуп|[diffieHellmanGroup](../resources/intune-deviceconfig-diffiehellmangroup.md)|Группа Диффи Диффи/Хелмана. Возможные значения: `group1`, `group2`, `group14`, `ecp256`, `ecp384`, `group24`.|
 |Цифертрансформконстантс|[vpnEncryptionAlgorithmType](../resources/intune-deviceconfig-vpnencryptionalgorithmtype.md)|Константы преобразования шифров. Возможные значения: `aes256`, `des`, `tripleDes`, `aes128`, `aes128Gcm`, `aes256Gcm`, `aes192`, `aes192Gcm`.|
-|аусентикатионтрансформконстантс|[аусентикатионтрансформконстант](../resources/intune-deviceconfig-authenticationtransformconstant.md)|Константы преобразования проверки подлинности. Возможные значения: `md5_96`, `sha1_96`, `sha_256_128`, `aes128Gcm`, `aes192Gcm`, `aes256Gcm`.|
-|пфсграуп|[перфектфорвардсекрециграуп](../resources/intune-deviceconfig-perfectforwardsecrecygroup.md)|Безопасная пересылка группы. Возможные значения: `pfs1`, `pfs2`, `pfs2048`, `ecp256`, `ecp384`, `pfsMM`, `pfs24`.|
+|аусентикатионтрансформконстантс|[authenticationTransformConstant](../resources/intune-deviceconfig-authenticationtransformconstant.md)|Константы преобразования проверки подлинности. Возможные значения: `md5_96`, `sha1_96`, `sha_256_128`, `aes128Gcm`, `aes192Gcm`, `aes256Gcm`.|
+|пфсграуп|[perfectForwardSecrecyGroup](../resources/intune-deviceconfig-perfectforwardsecrecygroup.md)|Безопасная пересылка группы. Возможные значения: `pfs1`, `pfs2`, `pfs2048`, `ecp256`, `ecp384`, `pfsMM`, `pfs24`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -53,6 +53,9 @@ ms.locfileid: "44790259"
   "pfsGroup": "String"
 }
 ```
+
+
+
 
 
 

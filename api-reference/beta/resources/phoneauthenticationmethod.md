@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 218f4775045009c4168508dbb8678852398df125
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: 93bf64756d0da1e4199fdede55990e695f434480
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557901"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997839"
 ---
 # <a name="phoneauthenticationmethod-resource-type"></a>Тип ресурса Фонеаусентикатионмесод
 
@@ -40,7 +40,7 @@ ms.locfileid: "43557901"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [List](../api/Authentication-list-phonemethods.md) | [фонеаусентикатионмесод](phoneauthenticationmethod.md) | Чтение свойств и связей всех объектов Фонеаусентикатионмесод этого пользователя. |
+| [Список](../api/Authentication-list-phonemethods.md) | [фонеаусентикатионмесод](phoneauthenticationmethod.md) | Чтение свойств и связей всех объектов Фонеаусентикатионмесод этого пользователя. |
 | [получение](../api/phoneauthenticationmethod-get.md); | [фонеаусентикатионмесод](phoneauthenticationmethod.md) | Чтение свойств и связей объекта Фонеаусентикатионмесод. |
 | [обновление](../api/phoneauthenticationmethod-update.md). | [фонеаусентикатионмесод](phoneauthenticationmethod.md) | Обновление объекта Фонеаусентикатионмесод. |
 | [удаление](../api/phoneauthenticationmethod-delete.md); | Нет | Удаление объекта Фонеаусентикатионмесод. |
@@ -52,9 +52,9 @@ ms.locfileid: "43557901"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Идентификатор телефона, зарегистрированный для этого пользователя. Только для чтения.|
-|phoneNumber|String|Номер телефона для текста или вызов для проверки подлинности. Номера телефонов используют\<формат "+ добавочный\> \<номер\>страны x\<расширение\>", с расширением Optional. Например, допустимые + 1 5555551234 или + 1 5555551234x123. При создании или обновлении числа отклоняются, если они не совпадают с требуемым форматом. |
-|фонетипе|string|Тип телефона. Возможные значения: `mobile`, `alternateMobile`, или. `office`|
-|смссигнинстате|string|Указывает, готов ли телефон к использованию для входа в SMS. Возможные `notSupported`значения:, `notAllowedByPolicy`, `notEnabled`, `phoneNumberNotUnique`, `ready`, или. `notConfigured`|
+|phoneNumber|String|Номер телефона для текста или вызов для проверки подлинности. Номера телефонов используют формат "+ \<country code\> \<number\> x \<extension\> " с необязательным расширением. Например, допустимые + 1 5555551234 или + 1 5555551234x123. При создании или обновлении числа отклоняются, если они не совпадают с требуемым форматом. |
+|фонетипе|string|Тип телефона. Возможные значения: `mobile` , `alternateMobile` , или `office` .|
+|смссигнинстате|string|Указывает, готов ли телефон к использованию для входа в SMS. Возможные значения: `notSupported` , `notAllowedByPolicy` ,, `notEnabled` , `phoneNumberNotUnique` `ready` , или `notConfigured` .|
 
 ## <a name="relationships"></a>Связи
 
@@ -92,3 +92,5 @@ ms.locfileid: "43557901"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

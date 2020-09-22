@@ -6,12 +6,12 @@ title: Контент
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: a051a8bb31cd138d351321255e77b7fb1517fe3e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b08a6d215674ae0799838ef1488e2173336f070
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507452"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998937"
 ---
 # <a name="contenttype-resource-type"></a>Тип ресурса contentType
 
@@ -53,8 +53,8 @@ ms.locfileid: "42507452"
 |:------------------|:---------------------|:----------------------------------
 | **description**   | строка               | Текст с описанием элемента.
 | **group**         | string               | Имя группы, которой принадлежит этот тип контента. Позволяет упорядочить связанные типы контента.
-| **hidden**        | логический              | Указывает, является ли данный тип контента скрытым в меню "Создать" в списке.
-| **id**            | строка               | Уникальный идентификатор типа контента.
+| **hidden**        | boolean              | Указывает, является ли данный тип контента скрытым в меню "Создать" в списке.
+| **id**            | string               | Уникальный идентификатор типа контента.
 | **inheritedFrom** | [itemReference][]    | Если этот тип контента унаследован от другой области (например, сайта), он будет содержать ссылку на элемент, в котором определен тип контента.
 | **name**          | string               | Имя типа контента.
 | **order**         | [contentTypeOrder][] | Указывает порядок, в котором тип контента отображается в пользовательском интерфейсе выбора.
@@ -85,3 +85,5 @@ ms.locfileid: "42507452"
   "suppressions": []
 }
 -->
+
+

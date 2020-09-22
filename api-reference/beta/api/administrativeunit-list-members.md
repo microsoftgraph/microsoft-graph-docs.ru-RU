@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 672cf1a335c2b7d8b67f1581591cc608a0f9e83a
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: bcb61938d42ac38a04b90c542d3ea1ac207e034d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123337"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997251"
 ---
 # <a name="list-members"></a>Список участников
 
@@ -47,9 +47,9 @@ GET /administrativeUnits/{id}/members/$ref
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [User](../resources/user.md) и/или [Group](../resources/group.md) в тексте отклика.  Вместо этого, если вы `$ref` помещаете в конец запроса, ответ будет содержать коллекцию `@odata.id` ссылок/URL-адресов для членов.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [User](../resources/user.md) и/или [Group](../resources/group.md) в тексте отклика.  Вместо этого, если вы помещаете `$ref` в конец запроса, ответ будет содержать коллекцию `@odata.id` ссылок/URL-адресов для членов.
 
 ## <a name="examples"></a>Примеры
 ##### <a name="list-member-objects"></a>Список объектов Member
@@ -109,3 +109,5 @@ Content-length: 100
   ]
 }
 ```
+
+

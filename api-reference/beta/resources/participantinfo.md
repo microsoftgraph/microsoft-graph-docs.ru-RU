@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bd9c57961bee93e7d01e504bccb8671a8f1dd449
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b48c8d9e8e2b7b39a63b919ff30178d8c8ac8536
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522034"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998245"
 ---
 # <a name="participantinfo-resource-type"></a>Тип ресурса ПартиЦипантинфо
 
@@ -25,7 +25,7 @@ ms.locfileid: "42522034"
 | Свойство       | Тип                          | Описание                                                                                                                                                |
 |:---------------|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | countryCode    | String                        | Код страны ISO 3166-1 Alpha-2 в наиболее подсчитанном физическом расположении участника в начале звонка. Только для чтения.                             |
-| ендпоинттипе   | String                        | Тип конечной точки, используемой участником. Возможные значения: `default`, `skypeForBusiness`, или. `skypeForBusinessVoipPhone` Только для чтения.              |
+| ендпоинттипе   | String                        | Тип конечной точки, используемой участником. Возможные значения: `default` , `skypeForBusiness` , или `skypeForBusinessVoipPhone` . Только для чтения.              |
 | хищения       | [identitySet](identityset.md) | [Удостоверение](identityset.md) , связанное с этим участником. Только для чтения.                                                                             |
 | languageId     | String                        | Строка языка и региональных параметров языка. Только для чтения.                                                                                                                    |
 | региональных         | String                        | Домашняя область участника. Это может быть страна, континент или более крупный географический регион. Это не изменяется в зависимости от текущего физического расположения участника, в отличие от countryCode. Только для чтения. |
@@ -66,3 +66,5 @@ ms.locfileid: "42522034"
   "suppressions": []
 }
 -->
+
+

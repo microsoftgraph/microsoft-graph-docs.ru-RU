@@ -1,23 +1,23 @@
 ---
-title: Получение элемента itemPublication
-description: Чтение свойств и связей объекта itemPublication.
+title: Получение Итемпубликатион
+description: Чтение свойств и связей объекта Итемпубликатион.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a3a0751c925fd09756aa9b121741bd06eeea7de4
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 4dcd68e658fc6f45d139cdf04d48820d6b39a4cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820326"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999330"
 ---
-# <a name="get-itempublication"></a>Получение элемента itemPublication
+# <a name="get-itempublication"></a>Получение Итемпубликатион
 
 Пространство имен: microsoft.graph
 
 
-Чтение свойств и связей объекта [itemPublication](../resources/itempublication.md) в профиле [пользователя.](../resources/profile.md)
+Чтение свойств и связей объекта [итемпубликатион](../resources/itempublication.md) в [профиле](../resources/profile.md)пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,9 +25,9 @@ ms.locfileid: "46820326"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,18 +42,18 @@ GET /users/{id | userPrincipalName}/profile/publications/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, включаемых в ответ, разделяя их запятыми. Для оптимальной производительности выбирайте только необходимые свойства.
+Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми. Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код `200 OK` ответа [и объект itemPublication](../resources/itempublication.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [итемпубликатион](../resources/itempublication.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -125,3 +125,5 @@ Content-Type: application/json
   "webUrl": "https://www.iabm.io"
 }
 ```
+
+

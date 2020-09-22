@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: c1ba6a574f106fd095da4c16ecc5a9826a1ec90d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9fce32cfadb8f8920d830342a5ba5bd47d91c13c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809931"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999183"
 ---
 # <a name="create-or-replace-a-historyitem"></a>Создание или замена объекта historyItem
 
@@ -47,11 +47,11 @@ PUT /me/activities/{id}/historyItems/{id}
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [historyItem](../resources/projectrome-historyitem.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если был создан historyItem, или `200 OK` Если historyItem был заменен.
 
@@ -118,3 +118,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

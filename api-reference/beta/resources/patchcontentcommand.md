@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: jewan-microsoft
-ms.openlocfilehash: cd7033ba271ba777d35f2469984662edbd7ffe53
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 798eb15955ddbbed3ced2f85d091d06c5ee1d84d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807183"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998126"
 ---
 # <a name="patchcontentcommand-resource-type"></a>Тип ресурса Патчконтенткомманд
 
@@ -20,7 +20,7 @@ ms.locfileid: "46807183"
 
 Изменения, которые необходимо внести на страницу OneNote в запросе PATCH.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление ресурса в формате JSON, которое отправляется в теле запроса [Patch Pages/{ID} '](../api/page-update.md) .
 
@@ -62,3 +62,5 @@ ms.locfileid: "46807183"
   "suppressions": []
 }
 -->
+
+

@@ -1,22 +1,22 @@
 ---
-title: Удаление объекта itemPublication
-description: Удаляет объект itemPublication.
+title: Удаление Итемпубликатион
+description: Удаляет объект Итемпубликатион.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a43629bdbd20859a3c311f8efadf264a9f84bab2
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: c3427ae70af8fd59ddef0735c54257ca216ae2e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820123"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999337"
 ---
-# <a name="delete-itempublication"></a>Удаление объекта itemPublication
+# <a name="delete-itempublication"></a>Удаление Итемпубликатион
 
 Пространство имен: microsoft.graph
 
-Удаляет объект [itemPublication.](../resources/itempublication.md)
+Удаляет объект [итемпубликатион](../resources/itempublication.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "46820123"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
 | Для приложений                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,7 +44,7 @@ DELETE /users/{id | userPrincipalName}/profile/publications/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -87,3 +87,5 @@ DELETE https://graph.microsoft.com/beta/me/profile/publications/{id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

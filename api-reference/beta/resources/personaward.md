@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 3031994e3b19fdd3962118c21d86a334c63781ea
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: cf9656eee15c2f537f7ba7e2727ce406850878c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46813175"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997948"
 ---
 # <a name="personaward-resource-type"></a>Тип ресурса Персонавард
 
@@ -47,7 +47,7 @@ ms.locfileid: "46813175"
 |thumbnailUrl|String|URL-адрес, ссылающийся на эскиз вознаграждения или соблюдается.  |
 |webUrl|String|URL-адрес, ссылающийся на награду или соблюдать. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -87,3 +87,5 @@ ms.locfileid: "46813175"
   "webUrl": "String"
 }
 ```
+
+

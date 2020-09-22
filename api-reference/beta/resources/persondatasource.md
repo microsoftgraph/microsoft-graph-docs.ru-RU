@@ -5,12 +5,12 @@ localization_priority: Normal
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: b0682bae37c060b92df96fb6c92979b7ab57c259
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87277c7f7ef255ce8e42d7efd1fbbdee88a7c860
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521920"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997961"
 ---
 # <a name="persondatasource-resource-type"></a>Тип ресурса Персондатасаурце
 
@@ -55,3 +55,5 @@ ms.locfileid: "42521920"
   "suppressions": []
 }
 -->
+
+

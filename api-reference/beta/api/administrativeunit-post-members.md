@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 91767a0d83fe35363879045cc703fb564806d228
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: ef1ff3e00de98a248fbe6a3b059b2de739d7df7b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123267"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997223"
 ---
 # <a name="add-a-member"></a>Добавление участника
 
@@ -43,7 +43,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
-В тексте `id` запроса укажите [пользователя](../resources/user.md), [группу](../resources/group.md) или [directoryObject](../resources/directoryobject.md) , которого требуется добавить.
+В тексте запроса укажите `id` [пользователя](../resources/user.md),  [группу](../resources/group.md) или [directoryObject](../resources/directoryobject.md) , которого требуется добавить.
 
 ## <a name="response"></a>Отклик
 
@@ -65,9 +65,11 @@ Content-length: 109
 ```
 В тексте запроса укажите `id` объект [пользователя](../resources/user.md) или [группы](../resources/group.md) , который вы хотите добавить.
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
  
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

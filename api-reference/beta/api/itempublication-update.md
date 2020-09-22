@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 236be40542e200613d496f071f178f520e0ad422
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 407e110d3d2f0da3a130b973c2382849b1db40bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46813163"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999328"
 ---
 # <a name="update-itempublication"></a>Обновление Итемпубликатион
 
@@ -61,7 +61,7 @@ PATCH /users/{id | userPrincipalName}/profile/publications/{id}
 |thumbnailUrl   |String      |URL-адрес, ссылающийся на эскиз публикации.   |
 |webUrl         |String      |URL-адрес, ссылающийся на публикацию.                  |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [итемпубликатион](../resources/itemPublication.md) в тексте отклика.
 
@@ -141,3 +141,5 @@ Content-Type: application/json
   "webUrl": "https://www.iabm.io"
 }
 ```
+
+

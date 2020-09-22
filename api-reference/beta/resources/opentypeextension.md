@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: 1bba16d8207e6e31223ff562d016efdba01b77d0
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: fb8e0a51f840d402b14ea98dd5ffd2d66e692249
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849172"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998525"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Тип ресурсов openTypeExtension (открытые расширения)
 
@@ -28,16 +28,16 @@ ms.locfileid: "46849172"
 | Ресурс | Версия |
 |---------------|-------|
 | [administrativeUnit](administrativeunit.md)  | Только предварительная версия |
-| [event](event.md) для календаря | Общедоступная версия |
+| [Событие календаря](event.md) | Общедоступная версия |
 | [event](event.md) для календаря группы | Общедоступная версия |
 | [post](post.md) цепочки беседы группы | Общедоступная версия |
-| [device](device.md) | Общедоступная версия |
-| [group](group.md) | Общедоступная версия |
-| [message](message.md) | Общедоступная версия |
-| [organization](organization.md) | Общедоступная версия |
-| [contact](contact.md) (личный контакт) | Общедоступная версия |
-| [user](user.md) | Общедоступная версия |
-| [Task](todotask.md)  | Только предварительная версия ||
+| [Устройство](device.md) | Общедоступная версия |
+| [Группа](group.md) | Общедоступная версия |
+| [Сообщение](message.md) | Общедоступная версия |
+| [Организация](organization.md) | Общедоступная версия |
+| [Личный контакт](contact.md) | Общедоступная версия |
+| [Пользователь](user.md) | Общедоступная версия |
+| [Задача](todotask.md)  | Только предварительная версия ||
 | [Список задач](todotasklist.md)  | Только предварительная версия ||
 
 ## <a name="outlook-specific-considerations"></a>Специальные рекомендации для Outlook
@@ -51,7 +51,7 @@ ms.locfileid: "46849172"
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Использование открытых расширений (для ресурсов Outlook) или расширенных свойств
 
-Открытые расширения — рекомендуемое решение для большинства сценариев, в которых есть данные, хранение пользовательских данных и доступ к ним. Если вам нужно получить доступ к пользовательским данным для свойств MAPI Outlook, которые еще не предоставлены при помощи [метаданных API Microsoft Graph](https://developer.microsoft.com/graph/docs/overview/call_api), используйте [расширенные свойства и соответствующий REST API](extended-properties-overview.md). Вы можете проверить, какие свойства предоставляются с помощью метаданных, на странице [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
+Открытые расширения — это рекомендуемое решение для большинства сценариев, в которых используется хранение пользовательских данных и доступ к ним. Если вам нужно получить доступ к пользовательским данным для свойств MAPI Outlook, которые еще не предоставлены при помощи [метаданных API Microsoft Graph](https://developer.microsoft.com/graph/docs/overview/call_api), используйте [расширенные свойства и соответствующий REST API](extended-properties-overview.md). Вы можете проверить, какие свойства предоставляются с помощью метаданных, на странице [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -88,7 +88,7 @@ ms.locfileid: "46849172"
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[Создание](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(в существующем экземпляре ресурса) либо [message](message.md)новый [контакт,](contact.md) [событие,](event.md) [сообщение, post,](post.md) [todoTask](todotask.md)или [todoTaskList,](todotasklist.md) содержащий объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.||[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Чтение свойств и связей объекта openTypeExtension.|
+|[Создание](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(в существующем экземпляре ресурса) или новый [контакт](contact.md), [событие](event.md), [сообщение](message.md), [POST](post.md), [тодотаск](todotask.md)или [тодотасклист](todotasklist.md) , содержащее объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.||[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Чтение свойств и связей объекта openTypeExtension.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Обновление объекта openTypeExtension. |
 |[Delete](../api/opentypeextension-delete.md) | Нет |Удаление объекта openTypeExtension. |
 
@@ -104,3 +104,5 @@ ms.locfileid: "46849172"
   "suppressions": []
 }
 -->
+
+

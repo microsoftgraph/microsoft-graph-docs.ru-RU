@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: e9e495bb3f36772dc016f9e342608a676c0d6539
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 9f239845c96da851c72a7b3503d68dfd85edffe0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896499"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997650"
 ---
 # <a name="skype-for-business-organizer-activity-reports"></a>Отчеты об организации конференций Skype для бизнеса
 
@@ -29,3 +29,5 @@ ms.locfileid: "44896499"
 | [Получение количества действий](../api/reportroot-getskypeforbusinessorganizeractivitycounts.md) | Stream          | [скипефорбусинессорганизерактивитикаунтс](../resources/skypeforbusinessorganizeractivitycounts.md) | Отслеживайте динамику использования по количеству и типу проведенных и организованных конференций (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям, веб-конференции, конференции с телефонным подключением и присоединением обратным звонком через Майкрософт или стороннюю службу). |
 | [Получение количества пользователей](../api/reportroot-getskypeforbusinessorganizeractivityusercounts.md) | Stream          | [скипефорбусинессорганизерактивитюсеркаунтс](../resources/skypeforbusinessorganizeractivityusercounts.md) | Отслеживайте динамику использования по количеству уникальных пользователей и типу проведенных и организованных конференций (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям, веб-конференции, конференции с телефонным подключением и присоединением обратным звонком через Майкрософт или стороннюю службу). |
 | [Получение количества минут](../api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md) | Поток          | [скипефорбусинессорганизерактивитиминутекаунтс](../resources/skypeforbusinessorganizeractivityminutecounts.md) | Отслеживайте динамику использования по продолжительности (в минутах) и типу проведенных и организованных конференций (аудио и видео, с телефонным подключением или с присоединением обратным звонком через Майкрософт). |
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ba932538e984af37a4f005ddcc2167c29d2267d0
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: c61367520f9dccb47fe238a92366cefd41748865
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557915"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998231"
 ---
 # <a name="passwordauthenticationmethod-resource-type"></a>Тип ресурса Пассвордаусентикатионмесод
 
@@ -71,3 +71,5 @@ ms.locfileid: "43557915"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

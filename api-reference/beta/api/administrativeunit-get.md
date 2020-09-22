@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 90b068127c4ed0a4bad53be825499c7994c35e80
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: d84abad95f0165d89adc0ea5cc8bae6e5c140eb7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123365"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997307"
 ---
 # <a name="get-administrativeunit"></a>Получение administrativeUnit
 
@@ -20,7 +20,7 @@ ms.locfileid: "43123365"
 
 Получение свойств и связей объекта [administrativeUnit](../resources/administrativeunit.md) .
 
-Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), с помощью `GET` операции можно также получить настраиваемые свойства и данные расширения в экземпляре **administrativeUnit** .
+Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), с помощью операции можно также `GET` получить настраиваемые свойства и данные расширения в экземпляре **administrativeUnit** .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,7 +48,7 @@ GET /administrativeUnits/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -119,3 +119,5 @@ Content-length: 134
   ]
 }
 -->
+
+

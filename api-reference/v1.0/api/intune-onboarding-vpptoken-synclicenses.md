@@ -3,14 +3,14 @@ title: Действие syncLicenses
 description: Синхронизирует лицензии, связанные с конкретным appleVolumePurchaseProgramToken
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 36dfa24238b1e9ec5f003d16ce61736a20e3ba72
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 03129a7db4975614605461d4211539e49bdd7cf7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452799"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997342"
 ---
 # <a name="synclicenses-action"></a>Действие syncLicenses
 
@@ -41,13 +41,13 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении данное действие возвращает `200 OK`код отклика и [vppToken](../resources/intune-onboarding-vpptoken.md)в форме для обратной связи.
 
 ## <a name="example"></a>Пример
@@ -83,6 +83,9 @@ Content-Length: 619
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 29181e23833bb60d8722d3f82aaec44eafd5ad35
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b480f7ba45b0b3ea6cea7625af373650ac279414
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809747"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999414"
 ---
 # <a name="update-itempatent"></a>Обновление Итемпатент
 
@@ -55,14 +55,14 @@ PATCH /users/{id | userPrincipalName}/profile/patents/{id}
 |description|String|Дескприптион патента или для хранения. |
 |displayName|String|Название патента или его для архивации. |
 |выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|Ожидается        |Логический     |Указывает, что патент находится в состоянии ожидания.        |
+|Ожидается        |Boolean     |Указывает, что патент находится в состоянии ожидания.        |
 |иссуеддате       |Дата        |Дата предоставления патента.   |
 |иссуингаусорити |String      |Центр сертификации, который предоставил патент.     |
 |число           |String      |Номер патента.                      |
 |source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |webUrl           |String      |URL-адрес, ссылающийся на патент или в систему архивации. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [итемпатент](../resources/itempatent.md) в тексте отклика.
 
@@ -143,3 +143,5 @@ Content-Type: application/json
   "webUrl": "https://patents.gov/3954432633"
 }
 ```
+
+

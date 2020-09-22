@@ -3,14 +3,14 @@ title: Получить vppToken
 description: Чтение свойств и связей объекта vppToken.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f8fc4e13e0fc5ca9efa78d6c07042e76c7651a4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f7e97b6e7a304142b2d9646ff90232e35c077f98
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452832"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997377"
 ---
 # <a name="get-vpptoken"></a>Получить vppToken
 
@@ -38,19 +38,19 @@ ms.locfileid: "43452832"
 GET /deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения данный метод возвращает`200 OK` код отклика и объект [vppToken](../resources/intune-onboarding-vpptoken.md) в форме для обратной связи.
 
 ## <a name="example"></a>Пример
@@ -86,6 +86,9 @@ Content-Length: 619
   }
 }
 ```
+
+
+
 
 
 

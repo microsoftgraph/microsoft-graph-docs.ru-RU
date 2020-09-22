@@ -3,14 +3,14 @@ title: Тип ресурса deviceConfigurationDeviceOverview
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b2995e37e8a2de432425143a45e44f0fb83b8eb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 22df7add34b26936f7d3d991e9e1fea53e087fe0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998668"
 ---
 # <a name="deviceconfigurationdeviceoverview-resource-type"></a>Тип ресурса deviceConfigurationDeviceOverview
 
@@ -68,6 +68,9 @@ ms.locfileid: "43469405"
   "configurationVersion": 1024
 }
 ```
+
+
+
 
 
 

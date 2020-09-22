@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e041281a1922fce22f9e9b5ab8d38d1d0e572359
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: d2c0ef4b2a10877aee0c9e956a43652bb42dc0ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873066"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999221"
 ---
 # <a name="get-linkedresource"></a>Получение Линкедресаурце
 Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -42,10 +42,10 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/lin
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [линкедресаурце](../resources/linkedresource.md) в тексте отклика.
 
@@ -102,3 +102,5 @@ Content-Type: application/json
   }
 }
 ```
+
+

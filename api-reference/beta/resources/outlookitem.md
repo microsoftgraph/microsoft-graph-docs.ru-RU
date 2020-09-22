@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса outlookItem
-description: Ниже показано представление JSON ресурса.
+description: Ниже этот ресурс представлен в формате JSON.
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 88436021375c85e85fc009611b2279705801ad12
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0d0303e3a80e0231487701d66076ef8fa52be358
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463243"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998380"
 ---
 # <a name="outlookitem-resource-type"></a>Тип ресурса outlookItem
 
@@ -65,3 +65,5 @@ ms.locfileid: "43463243"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 12a30d04b27b0ed098fd12c71fabed90fa321cf8
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 6654f4e9b9c67d8fd6b9df58b9a1dfd91a79076c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200000"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999176"
 ---
 # <a name="assign-publishedresource-to-onpremisesagentgroup"></a>Назначение Публишедресаурце для Онпремисесажентграуп
 
@@ -42,13 +42,13 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/ag
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [онпремисесажентграуп](../resources/onpremisesagentgroup.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [публишедресаурце](../resources/publishedresource.md) в тексте отклика.
 
@@ -97,3 +97,5 @@ HTTP/1.1 204
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

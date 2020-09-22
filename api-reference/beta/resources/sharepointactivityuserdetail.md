@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 20b99e3c6431d945200db868cc02302600e0e76c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7394e2fab0604286e8066b64e86f413f421472cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807117"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997797"
 ---
 # <a name="sharepointactivityuserdetail-resource-type"></a>Тип ресурса Шарепоинтактивитюсердетаил
 
@@ -22,7 +22,7 @@ ms.locfileid: "46807117"
 | :------------------------ | :---------------- |
 | репортрефрешдате         | Дата              |
 | userPrincipalName         | String            |
-| isDeleted                 | Логический           |
+| isDeleted                 | Boolean           |
 | делетеддате               | Дата              |
 | ластактивитидате          | Дата              |
 | виеведоредитедфилекаунт   | Int64             |
@@ -33,7 +33,7 @@ ms.locfileid: "46807117"
 | ассигнедпродуктс          | Коллекция String |
 | репортпериод              | String            |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -58,3 +58,5 @@ ms.locfileid: "46807117"
   "reportPeriod": "String"
 }
 ```
+
+

@@ -6,12 +6,12 @@ author: JeremyKelley
 ms.date: 08/06/2019
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 31629ee29bc91b3b2bae53e954743df17cde7d30
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b7b5d162bfcc9cccdfc7a2ea769e4ea39272e2d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521971"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998097"
 ---
 # <a name="pendingoperations-resource-type"></a>Тип ресурса Пендингоператионс
 
@@ -55,3 +55,5 @@ ms.locfileid: "42521971"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

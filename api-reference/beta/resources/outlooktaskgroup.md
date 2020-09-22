@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: afd5da7663a9328a87b5df2616b0093a4208caeb
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: f2ddf43dbbe580b74e69d3f3d85ef226de673a54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312122"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998357"
 ---
 # <a name="outlooktaskgroup-resource-type-deprecated"></a>Тип ресурса outlookTaskGroup (не рекомендуется)
 
@@ -34,7 +34,7 @@ ms.locfileid: "47312122"
 |[Создание outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Создайте папку задач Outlook.|
 |[Список Таскфолдерс](../api/outlooktaskgroup-list-taskfolders.md) |Коллекция [outlookTaskFolder](outlooktaskfolder.md)| Получение коллекции папок задач Outlook.|
 |[обновление](../api/outlooktaskgroup-update.md). | [outlookTaskGroup](outlooktaskgroup.md)  |Обновление свойств, доступных для записи, для группы задач Outlook. |
-|[Удаление](../api/outlooktaskgroup-delete.md) | Нет |Удаление указанной группы задач Outlook. |
+|[удаление](../api/outlooktaskgroup-delete.md); | Нет |Удаление указанной группы задач Outlook. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -42,10 +42,10 @@ ms.locfileid: "47312122"
 |changeKey|String|Версия группы задач.|
 |граупкэй|Edm.Guid|Уникальный идентификатор GUID для группы задач.|
 |id|String|Уникальный строковый идентификатор группы задач. Только для чтения.|
-|исдефаултграуп|Логический|Значение true, если группа задач является группой задач по умолчанию.|
+|исдефаултграуп|Boolean|Значение true, если группа задач является группой задач по умолчанию.|
 |name|String|Имя группы задач.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |таскфолдерс|Коллекция [outlookTaskFolder](outlooktaskfolder.md)| Коллекция папок задач в группе задач. Только для чтения. Допускается значение null.|
@@ -86,3 +86,5 @@ ms.locfileid: "47312122"
   "suppressions": []
 }
 -->
+
+

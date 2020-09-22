@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a8124a379bd6195a71ad3377edf19e49d85edf9c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 139e718704539edc47c186c47b50265fefb345ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809760"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997930"
 ---
 # <a name="personresponsibility-resource-type"></a>Тип ресурса Персонреспонсибилити
 
@@ -47,7 +47,7 @@ ms.locfileid: "46809760"
 |source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |webUrl|String|Содержит ссылку на веб-страницу или ресурс, отвечающие за ответственность.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -87,3 +87,5 @@ ms.locfileid: "46809760"
   ]
 }
 ```
+
+

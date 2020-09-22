@@ -3,14 +3,14 @@ title: Действие targetApps
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7499d8f18774930b2e89e14b372424f3326bc3e1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 05e9b2b2511b1933c8bb70b938d9ba881060d377
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465295"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999771"
 ---
 # <a name="targetapps-action"></a>Действие targetApps
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -55,7 +55,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|apps|Коллекция [managedMobileApp](../resources/intune-mam-managedmobileapp.md)|Н/Д|
+|apps|Коллекция [managedMobileApp](../resources/intune-mam-managedmobileapp.md)|Пока нет описания|
 
 
 
@@ -91,6 +91,9 @@ Content-length: 286
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

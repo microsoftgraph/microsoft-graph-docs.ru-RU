@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ad6599e16dd9500f03b8f88b09482af4ef8d4b73
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 77a64ffacaefaf348d018b28c1b1c569196f6a6a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123316"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997247"
 ---
 # <a name="list-administrativeunits"></a>Список Административеунитс
 
@@ -45,7 +45,7 @@ GET /administrativeUnits
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -112,3 +112,5 @@ Content-length: 179
   ]
 }
 -->
+
+

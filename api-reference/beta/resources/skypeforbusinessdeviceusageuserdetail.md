@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 50f37fdfd3441c256241b76ebcc6b144eb1486d7
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 36cd6aba954206b60317520534284cd17f8d42e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811055"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997531"
 ---
 # <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a>Тип ресурса Скипефорбусинессдевицеусажеусердетаил
 
@@ -23,14 +23,14 @@ ms.locfileid: "46811055"
 | репортрефрешдате | Дата    |
 | userPrincipalName | String  |
 | ластактивитидате  | Дата    |
-| уседвиндовс       | Логический |
-| уседвиндовсфоне  | Логический |
-| уседандроидфоне  | Логический |
-| уседифоне        | Логический |
-| уседипад          | Логический |
+| уседвиндовс       | Boolean |
+| уседвиндовсфоне  | Boolean |
+| уседандроидфоне  | Boolean |
+| уседифоне        | Boolean |
+| уседипад          | Boolean |
 | репортпериод      | String  |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -52,3 +52,5 @@ ms.locfileid: "46811055"
   "reportPeriod": "String"
 }
 ```
+
+

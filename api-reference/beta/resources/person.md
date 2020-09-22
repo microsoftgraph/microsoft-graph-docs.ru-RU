@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 4df5f82bd14ba56969c26facef82b59f3ac7e3f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc63a75af497a2402955c39a2bcfc8efe370c782
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521941"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998056"
 ---
 # <a name="person-resource-type"></a>Тип ресурса person
 
@@ -107,3 +107,5 @@ ms.locfileid: "42521941"
   "suppressions": []
 }
 -->
+
+

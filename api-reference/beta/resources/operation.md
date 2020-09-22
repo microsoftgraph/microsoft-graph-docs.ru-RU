@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: billbliss
-ms.openlocfilehash: e94970609c2ccfb99e61b254b080e1dbaa244ba6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: f57b9f14603fdeae539e872d87b5af2645cedef0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809315"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998521"
 ---
 # <a name="operation-resource-type"></a>Тип ресурса Operation
 
@@ -29,7 +29,7 @@ ms.locfileid: "46809315"
 | Свойство           | Тип            | Описание                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | Время начала операции.                                                |
-| id                 | String          | Идентификатор операции. Только для чтения. Создается сервером.                                  |
+| id                 | String          | Идентификатор операции. только для чтения. Создается сервером.                                  |
 | ластактиондатетиме | DateTimeOffset  | Время последнего действия операции.                                   |
 | status             | String          | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 
@@ -83,3 +83,5 @@ ms.locfileid: "46809315"
   "suppressions": []
 }
 -->
+
+

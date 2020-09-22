@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e482edf33be72a2b01304b0c189ef6189428916a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d53c84e7e127739222086848d61eb032d38d0b15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447545"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999736"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>Функция Експортдевицеандаппманажементдата
 
@@ -48,7 +48,7 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -58,11 +58,11 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |skip|Int32|Пока не задокументировано.|
-|top|Int32|Н/Д|
+|top|Int32|Пока не задокументировано.|
 
 ## <a name="response"></a>Ответ
 
-В случае успеха эта функция возвращает код `200 OK` отклика и объект [девицеандаппманажементдата](../resources/intune-onboarding-deviceandappmanagementdata.md) в тексте отклика.
+В случае успеха эта функция возвращает `200 OK` код отклика и объект [девицеандаппманажементдата](../resources/intune-onboarding-deviceandappmanagementdata.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -90,6 +90,9 @@ Content-Length: 143
   }
 }
 ```
+
+
+
 
 
 

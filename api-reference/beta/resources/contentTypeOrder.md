@@ -6,12 +6,12 @@ title: contentTypeOrder
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 7198e6f17fc77c73c5b2334bc6d1e7b7262f5dcd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7adde2a0452e9fe13a8f547eeec6fed957460da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507445"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998905"
 ---
 # <a name="contenttypeorder-resource-type"></a>Тип ресурса contentTypeOrder
 
@@ -50,3 +50,5 @@ ms.locfileid: "42507445"
   "suppressions": []
 }
 -->
+
+

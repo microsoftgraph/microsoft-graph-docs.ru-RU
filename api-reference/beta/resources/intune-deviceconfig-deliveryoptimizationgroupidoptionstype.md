@@ -3,14 +3,14 @@ title: тип перечисления Деливерйоптимизатион�
 description: Возможные значения параметра Деливерйоптимизатионграупидоптионстипе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3c39fc2d706f2d14f149d602d8d4e543c53bdb8e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 97d16f275c95cd6946b668b3e620ed50dbb9f702
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420474"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998791"
 ---
 # <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>тип перечисления Деливерйоптимизатионграупидоптионстипе
 
@@ -26,10 +26,13 @@ ms.locfileid: "43420474"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|adSite|1,1|Сайт Active Directory.|
-|аусентикатеддомаинсид|2|SID домена с проверкой подлинности.|
+|adSite|1 |Сайт Active Directory.|
+|аусентикатеддомаинсид|2 |SID домена с проверкой подлинности.|
 |дхкпусероптион|4|Параметр пользователя DHCP.|
 |днссуффикс|4 |DNS-суффикс.|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Перечисление объектов targetedManagedAppConfiguration
 description: Список свойств и связей объектов targetedManagedAppConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66962de7861d717ee73ba73c32acafa74fcfb753
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 56d9538cb31f8467eef8491876ed0721fa625f93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465310"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999785"
 ---
 # <a name="list-targetedmanagedappconfigurations"></a>Перечисление объектов targetedManagedAppConfiguration
 
@@ -47,13 +47,13 @@ GET /deviceAppManagement/targetedManagedAppConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -97,6 +97,9 @@ Content-Length: 731
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a373789cb566653956aa9dad2732d1fac226f441
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 37df91802c8759f9490552329ca7edf22b3cea9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123309"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997186"
 ---
 # <a name="update-administrativeunit"></a>Обновление administrativeunit
 
@@ -51,9 +51,9 @@ PATCH /administrativeUnits/{id}
 |displayName|string|Отображаемое имя административной единицы.|
 |visibility|string|Видимость административной единицы. Если не задано, то значение по умолчанию — "общедоступный". Может иметь значение "значение hiddenmembership", которое скрывает членство в группах, не являющихся участниками.|
 
-Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), с помощью `PATCH` операции можно добавлять, обновлять или удалять собственные данные, зависящие от приложения, в пользовательских свойствах расширения в существующем экземпляре **administrativeUnit** .
+Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), с помощью операции можно `PATCH` добавлять, обновлять или удалять собственные данные, зависящие от приложения, в пользовательских свойствах расширения в существующем экземпляре **administrativeUnit** .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -126,3 +126,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

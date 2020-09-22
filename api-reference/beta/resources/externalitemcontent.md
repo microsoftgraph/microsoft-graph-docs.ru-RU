@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: db0276307e824faa0c5606a8fb1212a0ad25e654
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: a9121648f35dd09d8fb87d4738bb2bf6e9b3960b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805662"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998812"
 ---
 # <a name="externalitemcontent-resource-type"></a>Тип ресурса Екстерналитемконтент
 
@@ -27,7 +27,7 @@ ms.locfileid: "43805662"
 | Свойство | Тип   | Описание                                                                                 |
 |:---------|:-------|:--------------------------------------------------------------------------------------------|
 | значение    | String | Содержимое для Екстерналитем. Обязательное.                                                 |
-| type     | String | Тип контента в свойстве Value. Возможные значения: `text` и `html`. Обязательный. |
+| type     | String | Тип контента в свойстве Value. Возможные значения: `text` и `html`. Обязательно. |
 
 ## <a name="relationships"></a>Связи
 
@@ -63,3 +63,5 @@ ms.locfileid: "43805662"
   "tocPath": "",
   "suppressions": []
 }-->
+
+

@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 328d742163d04b26d2e46f7a89309e0184ea6198
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 10e48459645c8af6d03787a3b2395398098cc7e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458092"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998936"
 ---
 # <a name="contactfolder-resource-type"></a>Тип ресурса contactFolder
 
@@ -44,10 +44,10 @@ ms.locfileid: "43458092"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка|Отображаемое имя папки.|
+|displayName|String|Отображаемое имя папки.|
 |id|String|Уникальный идентификатор папки с контактами. Только для чтения.|
 |parentFolderId|String|Идентификатор родительской папки для папки.|
-|wellKnownName|string|Имя папки, если она является распознаваемой папкой. В `contacts` настоящее время это единственная распознанная папка контактов.|
+|wellKnownName|string|Имя папки, если она является распознаваемой папкой. В настоящее время `contacts` это единственная распознанная папка контактов.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
@@ -101,3 +101,5 @@ ms.locfileid: "43458092"
   "suppressions": []
 }
 -->
+
+

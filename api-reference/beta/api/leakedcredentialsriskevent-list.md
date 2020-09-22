@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 79fdece6eb3493bfc30fd9461804a720cc7fbbf3
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: f831d3bfbdf507a43f3346ffe0b85cab7e78144a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311895"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999197"
 ---
 # <a name="list-leakedcredentialsriskevents-deprecated"></a>Список Леакедкредентиалсрискевентс (не рекомендуется)
 
@@ -42,7 +42,7 @@ GET /leakedCredentialsRiskEvents
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -102,3 +102,5 @@ Content-length: 304
   "suppressions": []
 }
 -->
+
+

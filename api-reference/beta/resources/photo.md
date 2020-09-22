@@ -6,12 +6,12 @@ localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: bdb587e7440fd98c48f71a2611e2a34e039367dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 920d6e69367517b1324b6cb66b755b6b58192219
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521885"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997830"
 ---
 # <a name="photo-resource-type"></a>Тип ресурса Photo
 
@@ -30,9 +30,9 @@ ms.locfileid: "42521885"
 |:------------------|:--------------|:---------------------------------------------------------------------------|
 |cameraMake         |Строка         | Изготовитель камеры. Только для чтения.                                            |
 |cameraModel        |String         | Модель камеры. Только для чтения.                                                   |
-|exposureDenominator|Двойное с плавающей точкой         | Знаменатель дробного значения выдержки камеры. Только для чтения. |
-|exposureNumerator  |Двойное с плавающей точкой         | Числитель дробного значения выдержки камеры. Только для чтения.   |
-|fNumber            |Двойное с плавающей точкой         | Значение диафрагмы камеры. Только для чтения.                               |
+|exposureDenominator|Double         | Знаменатель дробного значения выдержки камеры. Только для чтения. |
+|exposureNumerator  |Double         | Числитель дробного значения выдержки камеры. Только для чтения.   |
+|fNumber            |Double         | Значение диафрагмы камеры. Только для чтения.                               |
 |focalLength        |Double         | Фокусное расстояние камеры. Только для чтения.                               |
 |iso                |Int32          | Значение ISO камеры. Только для чтения.                                  |
 |orientation        |Int16          | Значение ориентации камеры. Возможность записи в OneDrive персональный.      |
@@ -74,3 +74,5 @@ ms.locfileid: "42521885"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

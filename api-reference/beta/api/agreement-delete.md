@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 8641760070299e8c94271b5a3c18edd4959d8e70
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 69bcef2996fff224a5d5839667087d860f4f5b2c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218018"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997190"
 ---
 # <a name="delete-agreement"></a>Удаление соглашения
 
@@ -42,7 +42,7 @@ DELETE /agreements/{id}
 Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -93,3 +93,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

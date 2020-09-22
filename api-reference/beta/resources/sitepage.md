@@ -6,12 +6,12 @@ title: ситепаже
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 6b7ce7bc14ce95ec4573fb7660cb584703d4a54e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bdb7c0c89938eb3419607839aa1973812788063c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520536"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997699"
 ---
 # <a name="sitepage-resource"></a>ресурс Ситепаже
 
@@ -25,7 +25,7 @@ ms.locfileid: "42520536"
 ## <a name="tasks-on-a-page"></a>Задачи на странице
 
 Для ресурсов **ситепаже** доступны следующие задачи.
-Все приведенные ниже примеры относятся к [сайту][], например: `https://graph.microsoft.com/{api-version}/sites/{site-id}`.
+Все приведенные ниже примеры относятся к [сайту][], например: `https://graph.microsoft.com/{api-version}/sites/{site-id}` .
 
 | Стандартная задача                     | Метод HTTP
 |:--------------------------------|:------------------------------
@@ -109,7 +109,7 @@ ms.locfileid: "42520536"
 
 | Имя свойства        | Тип              | Описание
 |:---------------------|:------------------|:----------------------------------
-| id                   | строка            | Уникальный идентификатор элемента. Только для чтения.
+| id                   | string            | Уникальный идентификатор элемента. Только для чтения.
 | name                 | string            | Имя или название элемента.
 | createdBy            | [identitySet][]   | Удостоверение создателя данного элемента. Только для чтения.
 | eTag                 | string            | ETag для элемента. Только для чтения.
@@ -157,3 +157,5 @@ TODO:
     * Add the URL to the underlying list item resource in the API
 * PATCH for list item patches /item/{item-id}/fields.
 -->
+
+

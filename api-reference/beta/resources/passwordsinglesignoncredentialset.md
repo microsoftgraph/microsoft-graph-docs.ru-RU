@@ -5,12 +5,12 @@ localization_priority: Normal
 author: bharathramh92
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9191362f0e6c98d57c609445fbe1caf3bdd775a2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87aafa6e21171088f9b4b5eac318f6c9551e18ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522006"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998203"
 ---
 # <a name="passwordsinglesignoncredentialset-resource-type"></a>Тип ресурса Пассвордсинглесигнонкредентиалсет
 
@@ -56,3 +56,5 @@ ms.locfileid: "42522006"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

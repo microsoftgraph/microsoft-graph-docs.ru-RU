@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 3d919e8423904a3b67dfdacc0921d20ccdb4243a
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d01c9fe6c4171c16d96e5b81eb8537ea0cbeb1a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997678"
 ---
 # <a name="skillproficiency-resource-type"></a>Тип ресурса СкиллпрофиЦиенци
 
@@ -49,7 +49,7 @@ ms.locfileid: "46807411"
 |source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |webUrl|String|Содержит ссылку на источник информации о навыке. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -92,3 +92,4 @@ ms.locfileid: "46807411"
   ]
 }
 ```
+

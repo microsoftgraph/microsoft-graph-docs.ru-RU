@@ -3,14 +3,14 @@ title: Тип ресурса Девицекомплианцескриптрул�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a842d33c52774d2f2d5e251d32980e7cd28d4ec5
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: fb2e1d20828c81851d6e85f63ea05f2aa59f9f16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789424"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998770"
 ---
 # <a name="devicecompliancescriptruleerror-resource-type"></a>Тип ресурса Девицекомплианцескриптрулиррор
 
@@ -50,6 +50,9 @@ ms.locfileid: "44789424"
   "settingName": "String"
 }
 ```
+
+
+
 
 
 

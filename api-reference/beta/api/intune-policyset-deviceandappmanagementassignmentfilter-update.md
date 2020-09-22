@@ -3,14 +3,14 @@ title: Обновление Девицеандаппманажементасси
 description: Обновление свойств объекта Девицеандаппманажементассигнментфилтер.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5fd7242879c9a086b08895637ad811b5fd48160
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: ff69e8d1675e9909052e286951ee2fedc5f0b4c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791730"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999876"
 ---
 # <a name="update-deviceandappmanagementassignmentfilter"></a>Обновление Девицеандаппманажементассигнментфилтер
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilte
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,9 +56,9 @@ PATCH /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilte
 |id|String|Ключ фильтра назначений.|
 |createdDateTime|DateTimeOffset|Время создания фильтра назначений.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения фильтра назначений.|
-|displayName|Строка|DisplayName фильтра назначений.|
+|displayName|String|DisplayName фильтра назначений.|
 |description|String|Описание фильтра назначений.|
-|platform|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Тип платформы устройств, к которым будет применяться фильтр назначений. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|платформа|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Тип платформы устройств, к которым будет применяться фильтр назначений. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |правила|String|Определение правила для фильтра назначений.|
 |roleScopeTags|Коллекция String|RoleScopeTags фильтра назначений.|
 
@@ -109,6 +109,9 @@ Content-Length: 446
   ]
 }
 ```
+
+
+
 
 
 

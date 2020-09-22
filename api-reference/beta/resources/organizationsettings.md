@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 73171beee516c63f75649375b7f084c01bac543f
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: e95bae902b444735b87fa7b29e061bf9bf2629ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427258"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998476"
 ---
 # <a name="organizationsettings-resource-type"></a>Тип ресурса Организатионсеттингс
 
@@ -38,7 +38,7 @@ ms.locfileid: "45427258"
 |:-------------|:------------|:------------|
 |id |String| Идентификатор объекта параметров для Организации. |
 |профилекардпропертиес|Коллекция [профилекардпроперти](profilecardproperty.md)| Содержит коллекцию свойств, которые администратор определил как видимый в карточке профиля Microsoft 365. [Получить параметры организации](../api/organizationsettings-get.md) Возвращает свойства, настроенные для карточек профилей в Организации.|
-|итеминсигхтс|[итеминсигхтссеттингс](iteminsightssettings.md)| Содержит свойства, настроенные администратором для отображения данных, получаемых от Microsoft Graph, между пользователем и другими элементами в Microsoft 365, такими как документы и сайты. [Получите итеминсигхтссеттингс](../api/iteminsightssettings-get.md) через это свойство навигации.|
+|itemInsights|[итеминсигхтссеттингс](iteminsightssettings.md)| Содержит свойства, настроенные администратором для отображения данных, получаемых от Microsoft Graph, между пользователем и другими элементами в Microsoft 365, такими как документы и сайты. [Получите итеминсигхтссеттингс](../api/iteminsightssettings-get.md) через это свойство навигации.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -70,3 +70,5 @@ ms.locfileid: "45427258"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

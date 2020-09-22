@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b4ca3b0904ffa0ec5bf06c36e710abdf3ba2a1dc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 26dccf0d0e79e2f0427f07035ee31e5480c52b95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522181"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998560"
 ---
 # <a name="openshiftchangerequest-resource-type"></a>Тип ресурса Опеншифтчанжерекуест
 
@@ -68,3 +68,5 @@ ms.locfileid: "42522181"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

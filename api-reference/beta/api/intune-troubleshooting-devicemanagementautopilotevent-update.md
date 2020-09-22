@@ -3,14 +3,14 @@ title: Обновление Девицеманажементаутопилоте
 description: Обновление свойств объекта Девицеманажементаутопилотевент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed84a7c1bee3c1b6a6a06136392350a6883d870d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4cfe2f6029a19d9319fd197ffaebe779da96e2ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443457"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999533"
 ---
 # <a name="update-devicemanagementautopilotevent"></a>Обновление Девицеманажементаутопилотевент
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|UUID объекта.|
+|id|String|UUID объекта.|
 |deviceId|String|Идентификатор устройства, связанный с объектом|
 |eventDateTime|DateTimeOffset|Время возникновения события.|
 |девицерегистереддатетиме|DateTimeOffset|Дата регистрации устройства.|
@@ -80,7 +80,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -155,6 +155,9 @@ Content-Length: 1406
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
+
+
+
 
 
 

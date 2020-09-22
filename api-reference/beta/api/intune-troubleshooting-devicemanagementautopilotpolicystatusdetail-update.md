@@ -3,14 +3,14 @@ title: Обновление Девицеманажементаутопилотп
 description: Обновление свойств объекта Девицеманажементаутопилотполицистатусдетаил.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d5b1d364bdfbbbdde7088cb8f7150665bb03392a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ffed1d45d0ceee1e606b979dea39da72dd75dee7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467123"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999477"
 ---
 # <a name="update-devicemanagementautopilotpolicystatusdetail"></a>Обновление Девицеманажементаутопилотполицистатусдетаил
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/polic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,7 +54,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/polic
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|UUID объекта.|
-|displayName|Строка|Понятное имя политики.|
+|displayName|String|Понятное имя политики.|
 |полицитипе|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|Тип политики. Возможные значения: `unknown`, `application`, `appModel`, `configurationPolicy`.|
 |комплианцестатус|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|Состояние соответствия политике. Возможные значения: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
 |траккедоненроллментстатус|Boolean|Указывает, была ли эта пролици зарегистрирована в рамках сеанса синхронизации автоматической загрузки для автоматической пилотной установки|
@@ -62,7 +62,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/polic
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементаутопилотполицистатусдетаил](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,6 +101,9 @@ Content-Length: 344
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
+
+
 
 
 

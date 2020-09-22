@@ -3,14 +3,14 @@ title: Получение deviceManagementTroubleshootingEvent
 description: Чтение свойств и связей объекта deviceManagementTroubleshootingEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d02cca701c0e20d49ea9b84f230c90fe446a922
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7b4b6825bb15e6ece95345f8f27db468f1199587
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457452"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999456"
 ---
 # <a name="get-devicemanagementtroubleshootingevent"></a>Получение deviceManagementTroubleshootingEvent
 
@@ -40,19 +40,19 @@ ms.locfileid: "43457452"
 GET /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -101,6 +101,9 @@ Content-Length: 972
   }
 }
 ```
+
+
+
 
 
 

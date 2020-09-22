@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fbcdecdc227477dc53c137547c0e78b46b92107d
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: c2f83345b742f5bc891713904b65f03d812b6f5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123358"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997258"
 ---
 # <a name="list-scopedrolemembers"></a>Список Scopedadministrators
 
@@ -45,7 +45,7 @@ GET /administrativeUnits/{id}/scopedRoleMembers
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [scopedrolemembership изменен](../resources/scopedrolemembership.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -116,3 +116,5 @@ Content-length: 307
   ]
 }
 -->
+
+

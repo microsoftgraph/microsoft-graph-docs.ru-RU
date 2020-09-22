@@ -3,14 +3,14 @@ title: Создание Девицеманажементаутопилотпол
 description: Создание нового объекта Девицеманажементаутопилотполицистатусдетаил.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db4e90778d137b23d6e34d5503df15e137297814
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b7ea81e9099f3154d2139760bb310a8459ffa592
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443426"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999505"
 ---
 # <a name="create-devicemanagementautopilotpolicystatusdetail"></a>Создание Девицеманажементаутопилотполицистатусдетаил
 
@@ -43,7 +43,7 @@ POST /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policy
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,7 +54,7 @@ POST /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policy
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|UUID объекта.|
-|displayName|Строка|Понятное имя политики.|
+|displayName|String|Понятное имя политики.|
 |полицитипе|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|Тип политики. Возможные значения: `unknown`, `application`, `appModel`, `configurationPolicy`.|
 |комплианцестатус|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|Состояние соответствия политике. Возможные значения: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
 |траккедоненроллментстатус|Boolean|Указывает, была ли эта пролици зарегистрирована в рамках сеанса синхронизации автоматической загрузки для автоматической пилотной установки|
@@ -62,7 +62,7 @@ POST /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policy
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементаутопилотполицистатусдетаил](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,6 +101,9 @@ Content-Length: 344
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
+
+
 
 
 

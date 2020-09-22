@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7e0c5b2b08c2a901f259863f05a4dff0e8e46a00
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: c9f9958750cca1aaa40ba9394832e5974bed8cc3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312126"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998364"
 ---
 # <a name="outlooktaskfolder-resource-type-deprecated"></a>Тип ресурса outlookTaskFolder (не рекомендуется)
 
@@ -34,7 +34,7 @@ ms.locfileid: "47312126"
 |[Создание объекта outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Создание задачи Outlook в указанной папке задач.|
 |[Список задач](../api/outlooktaskfolder-list-tasks.md) |Коллекция объектов [outlookTask](outlooktask.md)| Получение всех задач Outlook в указанной папке.|
 |[обновление](../api/outlooktaskfolder-update.md). | [outlookTaskFolder](outlooktaskfolder.md)   |Обновление свойств, доступных для записи, папки задач Outlook. |
-|[Удаление](../api/outlooktaskfolder-delete.md) | Нет |Удаление указанной папки задач Outlook.|
+|[удаление](../api/outlooktaskfolder-delete.md); | Нет |Удаление указанной папки задач Outlook.|
 |**Расширенные свойства**| | |
 |[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Создайте одно или несколько расширенных свойств с одним значением в новой или существующей папке задач Outlook.   |
 |[Получение папки задач с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Получение папок задач Outlook, которые содержат расширенное свойство с одним значением, с помощью `$expand` или `$filter` . |
@@ -46,11 +46,11 @@ ms.locfileid: "47312126"
 |:---------------|:--------|:----------|
 |changeKey|String|Версия папки задач.|
 |id|String|Идентификатор папки задач, уникальный в почтовом ящике пользователя. Только для чтения.|
-|исдефаултфолдер|Логический|Значение true, если папка является папкой задач по умолчанию.|
+|исдефаултфолдер|Boolean|Значение true, если папка является папкой задач по умолчанию.|
 |name|String|Имя папки задач.|
 |парентграупкэй|Guid|Уникальный идентификатор GUID родительской группы папок задач.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|Коллекция расширенных свойств с несколькими значениями, определенных для папки задач. Только для чтения. Допускается значение null.|
@@ -95,3 +95,5 @@ ms.locfileid: "47312126"
   "suppressions": []
 }
 -->
+
+

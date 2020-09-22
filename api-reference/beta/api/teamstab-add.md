@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4c06edf2a9a98fcda693f9738cbf1133f089f785
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 3d93f86cbb98930a42a94b61de300bb5d1111f5c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491737"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999064"
 ---
 # <a name="add-tab-to-channel"></a>Добавление вкладки в канал
 
@@ -29,7 +29,7 @@ ms.locfileid: "44491737"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 | Для приложений                            | TeamsTab. Create. Group *, TeamsTab. Create, TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
-> **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -118,3 +118,5 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+
+

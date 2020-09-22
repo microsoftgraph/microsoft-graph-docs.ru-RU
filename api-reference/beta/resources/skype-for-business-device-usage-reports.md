@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 09472ef74e1f28a683a8fef340f451f75b539175
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: ef75a4b29a82cdd05b2fb726806b0732dc36c9fd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896786"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997657"
 ---
 # <a name="skype-for-business-device-usage-reports"></a>Отчеты об использовании устройств со Skype для бизнеса
 
@@ -26,6 +26,8 @@ ms.locfileid: "44896786"
 
 | Функция                                 | Возвращаемый тип CSV | Возвращаемый тип JSON                         | Описание                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getskypeforbusinessdeviceusageuserdetail.md) | Поток          | [скипефорбусинессдевицеусажеусердетаил](../resources/skypeforbusinessdeviceusageuserdetail.md) | Получите сведения об использовании устройств со Skype для бизнеса с разбивкой по пользователям. |
+| [Получение сведений о пользователях](../api/reportroot-getskypeforbusinessdeviceusageuserdetail.md) | Stream          | [скипефорбусинессдевицеусажеусердетаил](../resources/skypeforbusinessdeviceusageuserdetail.md) | Получите сведения об использовании устройств со Skype для бизнеса с разбивкой по пользователям. |
 | [Получение количества пользователей с разбивкой по устройствам](../api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md) | Stream          | [скипефорбусинессдевицеусажедистрибутионусеркаунтс](../resources/skypeforbusinessdeviceusagedistributionusercounts.md) | Узнайте, сколько сотрудников организации используют уникальные устройства. В отчете будет показано количество пользователей устройств с Windows, телефонов с Windows, телефонов с Android, iPhone и iPad. |
 | [Получение количества пользователей](../api/reportroot-getskypeforbusinessdeviceusageusercounts.md) | Stream          | [скипефорбусинессдевицеусажеусеркаунтс](../resources/skypeforbusinessdeviceusageusercounts.md) | Отследите динамику использования по количеству пользователей в организации, подключавшихся с помощью приложения Skype для бизнеса. Кроме того, вы получите статистические данные с разбивкой по типу устройства (устройство с Windows, телефон с Windows, телефон с Android, iPhone или iPad), на котором установлено клиентское приложение Skype для бизнеса, используемое в организации. |
+
+

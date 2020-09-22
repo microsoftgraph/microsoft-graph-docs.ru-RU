@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 965cf8b3c854360ea0b01f52e10e9241fd212d80
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 7ab7955de5c5bf331d954a3dc553018a87dbac44
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897815"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997671"
 ---
 # <a name="skype-for-business-activity-reports"></a>Отчеты о работе со Skype для бизнеса
 
@@ -29,3 +29,5 @@ ms.locfileid: "44897815"
 | [Получение сведений о пользователях](../api/reportroot-getskypeforbusinessactivityuserdetail.md) | Stream          | [скипефорбусинессактивитюсердетаил](../resources/skypeforbusinessactivityuserdetail.md) | Получите сведения о действиях пользователей в Skype для бизнеса. |
 | [Получение количества действий](../api/reportroot-getskypeforbusinessactivitycounts.md) | Stream          | [скипефорбусинессактивитикаунтс](../resources/skypeforbusinessactivitycounts.md) | Отслеживайте, как меняется количество организаторов и участников конференций, проводимых в вашей организации через Skype для бизнеса. Отчет также включает количество одноранговых сеансов. |
 | [Получение количества пользователей](../api/reportroot-getskypeforbusinessactivityusercounts.md) | Stream          | [скипефорбусинессактивитюсеркаунтс](../resources/skypeforbusinessactivityusercounts.md) | Отслеживайте, как меняется количество уникальных организаторов и участников конференций, проводимых в вашей организации через Skype для бизнеса. Отчет также включает количество одноранговых сеансов. |
+
+

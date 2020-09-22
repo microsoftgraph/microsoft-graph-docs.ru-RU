@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: beb67d906c5f159f94ab8f64863eb383286489b2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb98e434540dd00529963c48ff3f3296e17e0c01
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508103"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998952"
 ---
 # <a name="audiosourcelevel-resource-type"></a>Тип ресурса Аудиосаурцелевел
 
@@ -25,7 +25,7 @@ ms.locfileid: "42508103"
 | Свойство               | Тип    | Описание                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
 | дуккосерс             | Boolean | Позволяет этому источнику дукк другие источники в активном состоянии. Если задано значение true, необходимо задать уровень дуккинг.|
-| степень                  | Int64   | Дуккинг уровень источника, если `duckOthers` задано значение. `true`                                     |
+| степень                  | Int64   | Дуккинг уровень источника, если `duckOthers` задано значение `true` .                                     |
 | participant            | String  | Поток звука участника источника.                                                                |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -59,3 +59,5 @@ ms.locfileid: "42508103"
   "suppressions": []
 }
 -->
+
+
