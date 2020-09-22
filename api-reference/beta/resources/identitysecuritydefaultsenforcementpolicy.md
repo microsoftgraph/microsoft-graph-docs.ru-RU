@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 70dc63b9cba3db7c435b357f880084d314d0c884
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 0c576a7b7d309f49c14af56b12d7dc8dcdb1f75a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384397"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013554"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>Тип ресурса Идентитисекуритидефаултсенфорцементполици
 
@@ -34,7 +34,7 @@ ms.locfileid: "45384397"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|String|Описание для этой политики. Только для чтения.|
-|displayName|Строка|Отображаемое имя для этой политики. Только для чтения.|
+|displayName|String|Отображаемое имя для этой политики. Только для чтения.|
 |id|String|Идентификатор для этой политики. Только для чтения.|
 |isEnabled|Boolean|Если задано значение true, по умолчанию для клиента будет включен параметр безопасности Azure Active Directory.|
 
@@ -74,3 +74,5 @@ ms.locfileid: "45384397"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

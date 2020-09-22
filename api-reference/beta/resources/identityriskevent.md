@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a04baa476c18dc5a581fffa2e466d3fcbdfa0c68
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 555e4dd162b2a5be51e8cf9a7d98b57d6de6c24e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312028"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013582"
 ---
 # <a name="identityriskevent-resource-type-deprecated"></a>Тип ресурса Идентитирискевент (не рекомендуется)
 
@@ -54,7 +54,7 @@ ms.locfileid: "47312028"
 |userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
@@ -101,3 +101,5 @@ ms.locfileid: "47312028"
   "suppressions": []
 }
 -->
+
+
