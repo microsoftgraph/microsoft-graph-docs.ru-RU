@@ -3,14 +3,14 @@ title: Список Девицеманажементдериведкредент
 description: Список свойств и связей объектов Девицеманажементдериведкредентиалсеттингс.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7dea6677d69695771674a18fa36d756441d5d1b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0cfde9df41c52b8f31d318d424865e49a59898b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389874"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074400"
 ---
 # <a name="list-devicemanagementderivedcredentialsettingses"></a>Список Девицеманажементдериведкредентиалсеттингсес
 
@@ -48,10 +48,10 @@ GET /deviceManagement/derivedCredentials
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементдериведкредентиалсеттингс](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,6 +82,9 @@ Content-Length: 347
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 84437efcc144e05ebbabaa887fe0d59cff715ff9
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 73bc2ed1c8a94f4f3c4d1135c929d94d6990f40f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896576"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074141"
 ---
 # <a name="section-copytonotebook"></a>раздел: copyToNotebook
 
@@ -42,7 +42,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | `application/json` |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите объект JSON, содержащий необходимые для операции параметры.
@@ -119,3 +119,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

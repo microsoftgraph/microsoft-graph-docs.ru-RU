@@ -3,14 +3,14 @@ title: Получение КарттоклассассоЦиатион
 description: Чтение свойств и связей объекта КарттоклассассоЦиатион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b255723ac2797e7f15e14ac1a5b90b5f3f52e0e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5a96d086c86bd8bf62f228474839973d80ef97ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434404"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072720"
 ---
 # <a name="get-carttoclassassociation"></a>Получение КарттоклассассоЦиатион
 
@@ -49,10 +49,10 @@ GET /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -88,6 +88,9 @@ Content-Length: 488
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: тип перечисления win32LobAppDetectionOperator
 description: Содержит свойства для оператора обнаружения.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: de0a9e4bea705e1fa664289e3ffbaa2471ccf3f1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 530d464116054d0bef6ae603a18b4eeba97aa4ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460171"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073987"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>тип перечисления win32LobAppDetectionOperator
 
@@ -26,12 +26,15 @@ ms.locfileid: "43460171"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|одинаков|1,1|Оператор Equals.|
-|notEqual|2|Оператор Not Equal.|
+|одинаков|1 |Оператор Equals.|
+|notEqual|2 |Оператор Not Equal.|
 |greaterThan|4 |Оператор "больше чем".|
 |греатерсанорекуал|5 |Оператор "больше или равно".|
 |лесссан|8 |Оператор "меньше чем".|
 |лесссанорекуал|9 |Оператор "меньше или равно".|
+
+
+
 
 
 

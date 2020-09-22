@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d9398c42c8f4404e2d61a8d63f9d30870cb9d751
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: aac03c9f27d6d9d62d4781d16487538fc212be56
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510835"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073378"
 ---
 # <a name="call-redirect"></a>вызов: redirect
 
@@ -44,7 +44,7 @@ POST /communications/calls/{id}/redirect
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -52,7 +52,7 @@ POST /communications/calls/{id}/redirect
 |:---------------|:--------|:----------|
 |targets|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Целевые участники операции перенаправления. Если указано несколько целевых объектов, вызывается выполнение. Это означает, что все целевые объекты будут находиться в одном и том же периоде, и будет подключен только первый целевой объект. Поддерживается до 25 целевых объектов для выполнение.
 |timeout|Int32|Время ожидания (в секундах) для операции перенаправления. Диапазон значений времени ожидания составляет от 15 до 90 секунд включительно. Значение времени ожидания по умолчанию составляет 55 секунд для одной цели и 60 секунд для нескольких целевых объектов (подлежит изменению). |
-|callbackUri|String|Это позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления позже. Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot. Это должно быть `https`.|
+|callbackUri|String|Это позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления позже. Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot. Это должно быть `https` .|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.
@@ -291,7 +291,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Запросить
+##### <a name="request"></a>Запрос
 
 <!-- {
   "blockType": "ignored", 
@@ -334,7 +334,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response", 
@@ -413,3 +413,4 @@ Content-Type: application/json
   ]
 }
 -->
+

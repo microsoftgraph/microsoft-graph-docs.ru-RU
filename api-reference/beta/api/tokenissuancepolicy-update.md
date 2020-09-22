@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a521a6b8999abb9ff48959be8f42e7f7094d83f7
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 2c3f2453fa803ef890f8d152d724a964b88c9108
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916313"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074024"
 ---
 # <a name="update-tokenissuancepolicy"></a>Обновление Токениссуанцеполици
 
@@ -51,9 +51,9 @@ PATCH /policies/tokenIssuancePolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|RDLC|Коллекция объектов string| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный.|
+|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный.|
 |description|String| Описание для этой политики.|
-|displayName|Строка| Отображаемое имя для этой политики. Обязательный.|
+|displayName|String| Отображаемое имя для этой политики. Обязательно.|
 |исорганизатиондефаулт|Boolean|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
 
 ## <a name="response"></a>Отклик
@@ -102,7 +102,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -137,3 +137,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

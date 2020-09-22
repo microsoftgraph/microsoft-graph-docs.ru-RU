@@ -3,14 +3,14 @@ title: Получение Андроидвпнконфигуратион
 description: Чтение свойств и связей объекта Андроидвпнконфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d2a307afad410afca06193c84667a120142e10ec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d02b960072467941a1d4828e9a7e3bd3e234eaad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43343886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072811"
 ---
 # <a name="get-androidvpnconfiguration"></a>Получение Андроидвпнконфигуратион
 
@@ -51,10 +51,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -137,6 +137,9 @@ Content-Length: 2062
   }
 }
 ```
+
+
+
 
 
 

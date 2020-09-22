@@ -3,14 +3,14 @@ title: Получение Секуритиконфигуратионтаск
 description: Чтение свойств и связей объекта Секуритиконфигуратионтаск.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6403cc544dfca382d15e658a31cb8133132f2076
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 13254f98b7c3745ef92cd467a0e0f3854bdd064a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793519"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074533"
 ---
 # <a name="get-securityconfigurationtask"></a>Получение Секуритиконфигуратионтаск
 
@@ -29,7 +29,7 @@ ms.locfileid: "46793519"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ GET /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [секуритиконфигуратионтаск](../resources/intune-partnerintegration-securityconfigurationtask.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -99,6 +99,9 @@ Content-Length: 921
   }
 }
 ```
+
+
+
 
 
 

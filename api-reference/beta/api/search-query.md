@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c86a6bb7533fbda16c1796d4b4a7023c0463e4fe
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: 781517d686ad0c01d2d1b7bd235bdf3dbb009f03
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568826"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074148"
 ---
 # <a name="search-query"></a>Поиск: запрос
 
@@ -173,3 +173,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

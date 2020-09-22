@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2096149a4f42d482260270309e491b9a29174b61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ee4cac18723210e35700eeb0282b53347fa974b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453816"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074190"
 ---
 # <a name="create-timeoffreason"></a>Создание Тимеоффреасон
 
@@ -49,7 +49,7 @@ POST /teams/{teamId}/schedule/timeOffReasons
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [тимеоффреасон](../resources/timeoffreason.md) в тексте отклика.
 
@@ -137,3 +137,5 @@ Content-length: 401
   ]
 }
 -->
+
+

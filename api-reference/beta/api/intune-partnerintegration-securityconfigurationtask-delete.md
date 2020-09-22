@@ -3,14 +3,14 @@ title: Удаление Секуритиконфигуратионтаск
 description: Удаляет объект Секуритиконфигуратионтаск.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f9127ac33c6aa688a5bcc59fc4bfadcb7e011c6
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 53ffe9a20c7c2dac6bddcdae14f6f2b47b3433c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793492"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074540"
 ---
 # <a name="delete-securityconfigurationtask"></a>Удаление Секуритиконфигуратионтаск
 
@@ -29,7 +29,7 @@ ms.locfileid: "46793492"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/deviceAppManagementT
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 108091747e7fd9e0b14db9161c05bd0a25b2ef4e
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 70b0e7875a2634f6f06cea2de9bc2bf0a10ab348
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916347"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074023"
 ---
 # <a name="list-tokenissuancepolicy"></a>Список Токениссуанцеполици
 
@@ -40,7 +40,7 @@ GET policies/tokenIssuancePolicies
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$expand`запросов `$filter`, `$select`, и `$top` OData для настройки отклика. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters). При использовании `$expand`убедитесь, что приложение запрашивает разрешения на чтение развернутых объектов.
+Этот метод поддерживает `$expand` `$filter` параметры запросов,, `$select` и `$top` OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). При использовании `$expand` Убедитесь, что приложение запрашивает разрешения на чтение развернутых объектов.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,11 +48,11 @@ GET policies/tokenIssuancePolicies
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [токениссуанцеполици](../resources/tokenIssuancePolicy.md) в тексте отклика.
 
@@ -128,3 +128,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

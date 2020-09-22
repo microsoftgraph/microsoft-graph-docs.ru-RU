@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 558392d6248fc6a114bf26b6c74ad2a859910d65
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 5adb1afed482c7080cb06ecb70a2612ac37758ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311930"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074267"
 ---
 # <a name="create-outlooktask-deprecated"></a>Создание outlookTask (устаревшее)
 
@@ -100,7 +100,7 @@ Content-length: 276
 
 Так как `Prefer` Заголовок указывает PST-файл, метод POST выражает все свойства, связанные с датами, в ответе в PST-файле. В частности, для свойств **startDateTime** и **дуедатетиме** метод POST преобразовывает полночь в СРЕДСТВе EST в PST-файл и возвращает их в PST-файле в ответе.
 
-Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -157,3 +157,5 @@ Content-length: 576
   ]
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Тип ресурса Комплианцеманажементпартн�
 description: Нацеленность для группы пользователей для партнера по управлению соответствием требованиям
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cf246cd1f7fad0d168165f72a3861005e8cefbe
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: Auto
+ms.openlocfilehash: d9bdcfd0edcdf4e93b3bf11f8d30a3cef5cc9d60
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744167"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072972"
 ---
 # <a name="compliancemanagementpartnerassignment-resource-type"></a>Тип ресурса Комплианцеманажементпартнерассигнмент
 
@@ -43,6 +43,8 @@ ms.locfileid: "44744167"
   }
 }
 ```
+
+
 
 
 

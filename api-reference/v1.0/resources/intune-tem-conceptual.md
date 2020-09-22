@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: c93338c39a2dfce144688fb7c042d6e520ed6ac8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7a23f44192b17ae2dfa745496dfbc2b4b1f5a836
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445577"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072951"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Управление затратами на телекоммуникации в Microsoft Intune
 
@@ -23,6 +23,8 @@ ms.locfileid: "43445577"
 Для управления затратами на телекоммуникации в Intune используются перечисленные ниже ресурсы Graph.  
 
 - [Партнер по управлению затратами на телекоммуникации](intune-tem-telecomexpensemanagementpartner.md)
+
+
 
 
 

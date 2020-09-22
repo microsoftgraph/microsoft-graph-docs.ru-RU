@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 74bf6332de9056e621e16e8d2f0e2bc17cc4e2ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f79f6243d996193aacee66c8955ce49c8b779482
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522913"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073592"
 ---
 # <a name="locationconstraint-resource-type"></a>Тип ресурсов locationConstraint
 
@@ -59,3 +59,5 @@ ms.locfileid: "42522913"
   "suppressions": []
 }
 -->
+
+

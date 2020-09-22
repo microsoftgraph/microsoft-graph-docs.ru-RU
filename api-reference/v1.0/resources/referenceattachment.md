@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: outlook
 author: svpsiva
 doc_type: resourcePageType
-ms.openlocfilehash: cb3298d5fc316c86c3befb8a937b3d9477831121
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e410e5b039a18e32e55058d3f33c0e75be52ee79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072832"
 ---
 # <a name="referenceattachment-resource-type"></a>Тип ресурса referenceAttachment
 
@@ -24,7 +24,7 @@ ms.locfileid: "43445517"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[получение](../api/attachment-get.md); | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
+|[Получение](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
 |[удаление](../api/attachment-delete.md); | Нет |Удаление объекта referenceAttachment. |
 
 ## <a name="properties"></a>Свойства
@@ -75,3 +75,4 @@ ms.locfileid: "43445517"
   "section": "documentation",
   "tocPath": ""
 }-->
+

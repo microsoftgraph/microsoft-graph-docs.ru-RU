@@ -3,14 +3,14 @@ title: Тип ресурса Комплианцеманажементпартн�
 description: Партнер по управлению соответствием для всех платформ
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 345b0253e08e4f1dc9fb4952ddaa349531423c62
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: Auto
+ms.openlocfilehash: 44bcef5d5f593ff986ec4cee36a461a3d79341fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744170"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072979"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>Тип ресурса Комплианцеманажементпартнер
 
@@ -32,7 +32,7 @@ ms.locfileid: "44744170"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор объекта|
+|id|Строка|Идентификатор объекта|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пакета пульса после того, как администратор направил соответствие партнеру управления соответствием|
 |partnerState|[девицеманажементпартнертенантстате](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Строка|Отображаемое имя партнера|
@@ -90,6 +90,8 @@ ms.locfileid: "44744170"
   ]
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jasonbro
 ms.prod: settings
 doc_type: resourcePageType
-ms.openlocfilehash: add353f539cac8eb6bb0bc7997c7aaaeea450835
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: Auto
+ms.openlocfilehash: 2ed130135571faeced90a638e9334a7e2a185a5e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744230"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073514"
 ---
 # <a name="regionalformatoverrides-resource-type"></a>Тип ресурса Регионалформатоверридес
 
@@ -61,3 +61,5 @@ ms.locfileid: "44744230"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

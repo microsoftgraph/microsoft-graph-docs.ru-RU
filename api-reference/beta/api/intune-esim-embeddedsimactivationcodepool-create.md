@@ -3,14 +3,14 @@ title: Создание Ембеддедсимактиватионкодепул
 description: Создание нового объекта Ембеддедсимактиватионкодепул.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 12ff32850c3b72dcc77fd7221a828a50fb92be7e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 06b3670f38aa9b0c85419e8dc3fd19e07469a474
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452238"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074582"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>Создание Ембеддедсимактиватионкодепул
 
@@ -46,7 +46,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Ембеддедсимактиватионкодепул в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Ембеддедсимактиватионкодепул.
@@ -54,7 +54,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для встроенного пула кода активации SIM-карты. Созданное системой значение, назначаемое при создании.|
-|displayName|Строка|Имя администратора внедренного пула кода активации SIM-карты.|
+|displayName|String|Имя администратора внедренного пула кода активации SIM-карты.|
 |createdDateTime|DateTimeOffset|Время создания внедренного пула кода активации SIM-карты. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения пула кода активации внедренной SIM-карты. Обновленная сторона службы.|
 |активатионкодес|Коллекция [ембеддедсимактиватионкоде](../resources/intune-esim-embeddedsimactivationcode.md)|Коды активации, принадлежащие этому пулу. Это свойство навигации используется для публикации кодов активации в Intune, но не может использоваться для считывания кодов активации из Intune.|
@@ -62,7 +62,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ембеддедсимактиватионкодепул](../resources/intune-esim-embeddedsimactivationcodepool.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -113,6 +113,9 @@ Content-Length: 628
   "activationCodeCount": 3
 }
 ```
+
+
+
 
 
 

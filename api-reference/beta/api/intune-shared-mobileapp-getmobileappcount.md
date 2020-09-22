@@ -3,14 +3,14 @@ title: Функция getMobileAppCount
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b86a60fe9a9ac80152677e97682bd29f8a57ad13
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4c032c3dd8017aca170e77709e5526e6c0c8a4ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441320"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074323"
 ---
 # <a name="getmobileappcount-function"></a>Функция getMobileAppCount
 
@@ -48,18 +48,18 @@ GET /deviceAppManagement/mobileApps/getMobileAppCount
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|status|String|Н/Д|
+|status|String|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает код `200 OK` отклика и значение Int64 в тексте отклика.
+В случае успеха эта функция возвращает `200 OK` код отклика и значение Int64 в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -80,6 +80,9 @@ Content-Length: 18
   "value": 1
 }
 ```
+
+
+
 
 
 

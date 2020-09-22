@@ -3,14 +3,14 @@ title: Тип ресурса deviceEnrollmentConfiguration
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ff64f603b6cc899d3a8005dea9d65796106df0a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 73f2826af52e88f27e629ef4cb25013d17d3edb5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459584"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072965"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentConfiguration
 
@@ -18,26 +18,26 @@ ms.locfileid: "43459584"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Пока не задокументировано.
+Н/Д
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список объектов deviceEnrollmentConfigurations](../api/intune-onboarding-deviceenrollmentconfiguration-list.md)|Коллекция [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|Список свойств и связей объектов [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
 |[Получение объекта deviceEnrollmentConfiguration](../api/intune-onboarding-deviceenrollmentconfiguration-get.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|Чтение свойств и связей объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
-|[Действие setPriority](../api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md)|Нет|Пока не задокументировано.|
-|[Действие assign](../api/intune-onboarding-deviceenrollmentconfiguration-assign.md)|Нет|Пока не задокументировано|
+|[Действие setPriority](../api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md)|Нет|Н/Д|
+|[Действие assign](../api/intune-onboarding-deviceenrollmentconfiguration-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
-|displayName|Строка|Пока не задокументировано.|
-|description|String|Пока не задокументировано.|
-|priority|Int32|Пока нет описания|
-|createdDateTime|DateTimeOffset|Пока не задокументировано.|
+|id|Строка|Пока не задокументировано.|
+|displayName|Строка|Н/Д|
+|description|Строка|Н/Д|
+|priority|Int32|Н/Д|
+|createdDateTime|DateTimeOffset|Н/Д|
 |lastModifiedDateTime|DateTimeOffset|Н/Д|
-|version|Int32|Пока нет описания|
+|version|Int32|Н/Д|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -64,6 +64,8 @@ ms.locfileid: "43459584"
   "version": 1024
 }
 ```
+
+
 
 
 

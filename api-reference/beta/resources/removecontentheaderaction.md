@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 907113e20b5e4257a672190433efd055a628c17f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63dc9556ace567f4505b40c1882bd56b087a7835
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521154"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073427"
 ---
 # <a name="removecontentheaderaction-resource-type"></a>Тип ресурса Ремовеконтенсеадерактион
 
@@ -54,3 +54,4 @@ ms.locfileid: "42521154"
   "section": "documentation",
   "tocPath": ""
 }-->
+

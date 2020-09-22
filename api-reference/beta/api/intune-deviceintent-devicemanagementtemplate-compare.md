@@ -3,14 +3,14 @@ title: Функция Compare
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 624857073e52c15323ff11336fcbfc6aa265b80b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 83b158323b2e6eaa004a287db4c8859ef3d31d6f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381495"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074610"
 ---
 # <a name="compare-function"></a>Функция Compare
 
@@ -47,18 +47,18 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|templateId|String|Н/Д|
+|templateId|String|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [девицеманажементсеттингкомпарисон](../resources/intune-deviceintent-devicemanagementsettingcomparison.md) в тексте отклика.
+В случае успеха эта функция возвращает `200 OK` код отклика и коллекцию [девицеманажементсеттингкомпарисон](../resources/intune-deviceintent-devicemanagementsettingcomparison.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -89,6 +89,9 @@ Content-Length: 364
   ]
 }
 ```
+
+
+
 
 
 

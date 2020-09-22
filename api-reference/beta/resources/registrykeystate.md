@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 10d372f2184ccbee628b59866f84678ec6c843bd
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b5da3318a229ea46329466f3b403fec519ffbc61
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810449"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073434"
 ---
 # <a name="registrykeystate-resource-type"></a>Тип ресурса Регистрикэйстате
 
@@ -33,7 +33,7 @@ ms.locfileid: "46810449"
 |valueName|String|Current (то есть изменено) имя значения раздела реестра|
 |Типом|registryValueType|[Тип значения раздела реестра](/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>REG_DWORD_LITTLE_ENDIAN</li> <li>REG_DWORD_BIG_ENDIAN</li><li>REG_EXPAND_SZ</li> <li>REG_LINK</li> <li>REG_MULTI_SZ</li> <li>REG_NONE</li> <li>REG_QWORD</li> <li>REG_QWORD_LITTLE_ENDIAN</li> <li>REG_SZ</li></ul> Возможные значения: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -70,3 +70,5 @@ ms.locfileid: "46810449"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

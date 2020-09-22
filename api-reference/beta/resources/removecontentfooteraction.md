@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ddc507d4c958b7453e53df1f0475497cb0b3ad89
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 76450b0d6b0f3a532a4e3472d2ce99ead8c933e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521161"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073455"
 ---
 # <a name="removecontentfooteraction-resource-type"></a>Тип ресурса Ремовеконтентфутерактион
 
@@ -24,7 +24,7 @@ ms.locfileid: "42521161"
 
 | Свойство       | Тип              | Описание                                                |
 | :------------- | :---------------- | :--------------------------------------------------------- |
-| уиелементнамес | Коллекция объектов string | Имя элемента пользовательского интерфейса нижнего колонтитула, который требуется удалить. |
+| уиелементнамес | Коллекция String | Имя элемента пользовательского интерфейса нижнего колонтитула, который требуется удалить. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -54,3 +54,4 @@ ms.locfileid: "42521161"
   "section": "documentation",
   "tocPath": ""
 }-->
+

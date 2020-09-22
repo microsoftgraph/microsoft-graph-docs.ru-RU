@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 054d0988de977668db16c78d8d44c393dc5059b2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dcb46d6228699ddfb7234f7d8b9a30571a40c181
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453704"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074127"
 ---
 # <a name="get-section"></a>Получение раздела
 
@@ -39,7 +39,7 @@ GET /sites/{id}/onenote/sections/{id}
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает `select` `expand` [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) и для настройки отклика.
 
-Запрос по умолчанию `parentNotebook` разворачивает и выбирает `id`свойства `displayName`, и `self` . Допустимые `expand` значения для разделов `parentNotebook` — `parentSectionGroup`и.
+Запрос по умолчанию разворачивает `parentNotebook` и выбирает `id` `displayName` свойства, и `self` . Допустимые `expand` значения для разделов — `parentNotebook` и `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -50,7 +50,7 @@ GET /sites/{id}/onenote/sections/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [оненотесектион](../resources/onenotesection.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -123,3 +123,5 @@ Content-length: 272
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 94de9529f53fc018633c9fb5a361b45ad0067e73
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b9ecf552b059e60f1cc7a981d4881a83beeffb51
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811310"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072874"
 ---
 # <a name="keyvalue-resource-type"></a>Тип ресурса Ключзначение
 
@@ -25,7 +25,7 @@ ms.locfileid: "46811310"
 |key|string| Ключ для параметра "ключ — значение". |
 |value|string| Значение для параметра "ключ — значение".|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -55,3 +55,4 @@ ms.locfileid: "46811310"
   "tocPath": ""
 }
 -->
+

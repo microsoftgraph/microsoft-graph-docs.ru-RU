@@ -3,14 +3,14 @@ title: действие Жетдевицессчедуледторетире
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a86057676acf99b7c5843bbf0092880eabbc8273
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: f2dd6e19d93fc9132457c3888cc59a12c9bd1354
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178705"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072712"
 ---
 # <a name="getdevicesscheduledtoretire-action"></a>действие Жетдевицессчедуледторетире
 
@@ -49,7 +49,7 @@ POST /deviceManagement/deviceCompliancePolicies/getDevicesScheduledToRetire
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении это действие возвращает `200 OK` код отклика и коллекцию [ретиресчедуледманажеддевице](../resources/intune-deviceconfig-retirescheduledmanageddevice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -88,6 +88,9 @@ Content-Length: 670
   ]
 }
 ```
+
+
+
 
 
 

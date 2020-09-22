@@ -3,14 +3,14 @@ title: Тип ресурса androidManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности и определенного набора приложений на устройстве Android
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58f57a45594647787a28bf2035918da4a34f325c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 06c4761881684533fa2b4e26042edc1e1531d331
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457424"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073707"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>Тип ресурса androidManagedAppProtection
 
@@ -29,8 +29,8 @@ ms.locfileid: "43457424"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление объектов AndroidManagedAppProtection](../api/intune-shared-androidmanagedappprotection-list.md)|Коллекция [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md)|Перечисление свойств и связей объектов [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).|
-|[Получение объекта androidManagedAppProtection](../api/intune-shared-androidmanagedappprotection-get.md)|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md);|Чтение свойств и связей объекта [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).|
-|[Создание объекта androidManagedAppProtection](../api/intune-shared-androidmanagedappprotection-create.md)|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md);|Создание объекта [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).|
+|[Получение объекта androidManagedAppProtection](../api/intune-shared-androidmanagedappprotection-get.md)|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md)|Чтение свойств и связей объекта [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).|
+|[Создание объекта androidManagedAppProtection](../api/intune-shared-androidmanagedappprotection-create.md)|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md)|Создание объекта [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).|
 |[Удаление объекта androidManagedAppProtection](../api/intune-shared-androidmanagedappprotection-delete.md)|Нет|Удаление объекта [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).|
 |[Обновление объекта androidManagedAppProtection](../api/intune-shared-androidmanagedappprotection-update.md)|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md)|Обновление свойств объекта [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).|
 |**Набор политик**|
@@ -40,14 +40,14 @@ ms.locfileid: "43457424"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|displayName|Строка|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Унаследовано от [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|periodOfflineBeforeAccessCheck|Длительность|Время до проверки доступа, когда устройство не подключено к Интернету. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|periodOnlineBeforeAccessCheck|Длительность|Время до проверки доступа, когда устройство подключено к Интернету. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|periodOfflineBeforeAccessCheck|Duration|Время до проверки доступа, когда устройство не подключено к Интернету. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|periodOnlineBeforeAccessCheck|Duration|Время до проверки доступа, когда устройство подключено к Интернету. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |allowedInboundDataTransferSources|[манажедаппдататрансферлевел](../resources/intune-mam-managedappdatatransferlevel.md)|Источники, из которых разрешена передача данных. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `allApps`, `managedApps`, `none`.|
 |allowedOutboundDataTransferDestinations|[манажедаппдататрансферлевел](../resources/intune-mam-managedappdatatransferlevel.md)|Назначения, в которые разрешена передача данных. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `allApps`, `managedApps`, `none`.|
 |organizationalCredentialsRequired|Boolean|Указывает, необходимы ли для использования приложения учетные данные организации. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
@@ -79,7 +79,7 @@ ms.locfileid: "43457424"
 |пинрекуирединстеадофбиометриктимеаут|Длительность|Время ожидания ПИН-кода приложения (в минутах), а не биометрического кода, унаследованного от [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |алловедаутбаундклипбоардшаринжексцептионленгс|Int32|Укажите количество символов, которое может быть вырезано или скопировано из данных Организации и учетных записей в любое приложение. Этот параметр переопределяет ограничение Алловедаутбаундклипбоардшаринглевел. Значение по умолчанию "0" означает, что исключение не разрешено. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |нотификатионрестриктион|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Укажите ограничение уведомления приложения, унаследованное от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `allow`, `blockOrganizationalData`, `block`.|
-|isAssigned|Логический|Указывает, применена ли политика к группам включения. Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
+|isAssigned|Boolean|Указывает, применена ли политика к группам включения. Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
 |таржетедаппманажементлевелс|[аппманажементлевел](../resources/intune-mam-appmanagementlevel.md)|Предполагаемые уровни управления приложениями для этой политики наследуются от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md). Возможные значения: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 |screenCaptureBlocked|Boolean|Указывает, может ли управляемый пользователь делать снимки экрана управляемых приложений.|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|Когда этот параметр включен, шифрование на уровне приложения отключается, если включено шифрование на уровне устройства.|
@@ -101,7 +101,7 @@ ms.locfileid: "43457424"
 |минимумварнингкомпанипорталверсион|String|Минимальная версия корпоративного портала, который должен быть установлен на устройстве, или пользователь будет получать предупреждение|
 |минимумвипекомпанипорталверсион|String|Будет стерта минимальная версия корпоративного портала, который должен быть установлен на устройстве или данные компании в приложении.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |**Управление мобильным приложением (MAM)**|
@@ -193,6 +193,9 @@ ms.locfileid: "43457424"
   "minimumWipeCompanyPortalVersion": "String"
 }
 ```
+
+
+
 
 
 

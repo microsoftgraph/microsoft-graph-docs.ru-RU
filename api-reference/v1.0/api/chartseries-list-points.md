@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d4e01f07b96fc854c9006819c591e7aaa41bc1b9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a75f3e569dc2ea8435d55ad9e4c06d9126e343eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518366"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073308"
 ---
 # <a name="list-points"></a>Список точек
 
@@ -40,10 +40,10 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [ChartPoints](../resources/chartpoint.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -108,3 +108,4 @@ Content-length: 32
   "suppressions": [
   ]
 }-->
+

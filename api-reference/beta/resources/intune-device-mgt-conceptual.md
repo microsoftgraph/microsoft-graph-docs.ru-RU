@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6fa0cf5dff76290f0df56860c86df13d1a4ffb3a
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 4c365a5713d8a2b9da24e1a8eee89121395ec6e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791605"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073959"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -169,6 +169,7 @@ ms.locfileid: "46791605"
 - [Управляемое устройство](intune-devices-manageddevice.md)
 - [Управляемая архитектура устройства](intune-devices-manageddevicearchitecture.md)
 - [Настройки очистки управляемых устройств](intune-devices-manageddevicecleanupsettings.md)
+- [Функции управления управляемыми устройствами](intune-devices-manageddevicemanagementfeatures.md)
 - [Модели и производители управляемых устройств](intune-devices-manageddevicemodelsandmanufacturers.md)
 - [Обзор управляемых устройств](intune-devices-manageddeviceoverview.md)
 - [Указанное состояние работоспособности партнера по управляемым устройствам](intune-devices-manageddevicepartnerreportedhealthstate.md)
@@ -217,7 +218,13 @@ ms.locfileid: "46791605"
 - [Выражение условия унарного управления](intune-fencing-unarymanagementconditionexpression.md)
 - [Тип оператора выражения условия унарного управления](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Параметр действия "Обновление учетной записи устройства с Windows"](intune-devices-updatewindowsdeviceaccountactionparameter.md)
+- [Производительность приложения аналитики приложения аналитики взаимодействия с пользователем по версии приложения](intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)
+- [Производительность приложения аналитики приложения аналитики взаимодействия с пользователем по версии o s](intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)
 - [Производительность приложения аналитики приложения аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsapphealthapplicationperformance.md)
+- [Производительность модели устройства аналитики работоспособности приложения аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md)
+- [Производительность устройства аналитики приложения аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsapphealthdeviceperformance.md)
+- [Сведения о производительности устройства службы аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)
+- [Производительность приложения аналитики взаимодействия с пользователем с версией o s](intune-devices-userexperienceanalyticsapphealthosversionperformance.md)
 - [Базовый шаблон аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsbaseline.md)
 - [Категория анализа взаимодействия с пользователем](intune-devices-userexperienceanalyticscategory.md)
 - [Производительность устройства аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsdeviceperformance.md)
@@ -261,3 +268,5 @@ ms.locfileid: "46791605"
 - [Тип ресурса windowsManagementApp](intune-devices-windowsmanagementapp.md)
 - [Тип ресурса windowsManagementAppHealthState](intune-devices-windowsmanagementapphealthstate.md)
 - [Состояние защиты Windows](intune-devices-windowsprotectionstate.md)
+
+

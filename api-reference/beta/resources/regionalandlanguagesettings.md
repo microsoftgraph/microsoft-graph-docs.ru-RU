@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jasonbro
 ms.prod: settings
 doc_type: resourcePageType
-ms.openlocfilehash: ba8666b78023b7345d936516fc3aec2b116520ad
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
-ms.translationtype: Auto
+ms.openlocfilehash: 0e6178b7d2a461365c759432d62efcffc44cfe6a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073518"
 ---
 # <a name="regionalandlanguagesettings-resource-type"></a>Тип ресурса Регионаландлангуажесеттингс
 
@@ -63,3 +63,5 @@ ms.locfileid: "44845684"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

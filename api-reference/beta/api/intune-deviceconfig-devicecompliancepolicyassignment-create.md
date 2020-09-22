@@ -3,14 +3,14 @@ title: Создание объекта deviceCompliancePolicyAssignment
 description: Создание объекта deviceCompliancePolicyAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a22aa098d351471c2ddf3725250119ded077b27f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 6791da5e2726b287670a31d7ce782d25d9fe4ae1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793047"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072685"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>Создание объекта deviceCompliancePolicyAssignment
 
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта deviceCompliancePolicyAssignment в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceCompliancePolicyAssignment.
@@ -103,6 +103,9 @@ Content-Length: 437
   "sourceId": "Source Id value"
 }
 ```
+
+
+
 
 
 

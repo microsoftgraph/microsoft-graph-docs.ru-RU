@@ -3,14 +3,14 @@ title: тип перечисления Компанипорталактион
 description: Действие на устройстве, которое может быть выполнено на портале компании
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9b0e7eb1c2165a4201a185a5cb8dff2b6a073160
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 68ca6a60d74e6debb557fa85d4884d02f5af0fab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457417"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073672"
 ---
 # <a name="companyportalaction-enum-type"></a>тип перечисления Компанипорталактион
 
@@ -26,8 +26,11 @@ ms.locfileid: "43457417"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестное действие устройства|
-|удалить|1,1|Удаление устройства из корпоративного портала|
-|сброс|2|Сброс устройства, зарегистрированного на портале компании|
+|удалить|1 |Удаление устройства из корпоративного портала|
+|сброс|2 |Сброс устройства, зарегистрированного на портале компании|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса Иоседуцертификатесеттингс
 description: Доверенные корневые сертификаты и сертификаты PFX для iOS EDU.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7c3c545f65ffd019d4d3eefe672f9a665bbd41f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d71c6d83eef3089bdcae31b13ead67cd4e6b86b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463020"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073714"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>Тип ресурса Иоседуцертификатесеттингс
 
@@ -34,7 +34,7 @@ ms.locfileid: "43463020"
 |certificateValidityPeriodValue|Int32|Значение срока действия сертификата.|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Масштаб срока действия сертификата. Возможные значения: `days`, `months`, `years`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,6 +57,9 @@ ms.locfileid: "43463020"
   "certificateValidityPeriodScale": "String"
 }
 ```
+
+
+
 
 
 

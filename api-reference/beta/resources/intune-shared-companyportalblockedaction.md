@@ -3,14 +3,14 @@ title: Тип ресурса Компанипорталблоккедактио�
 description: Заблокированные действия на корпоративном портале в соответствии с типами владения платформой и устройствами
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ebaea7b233a4a596db12e93643992d6ef7a15cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 005d87adb78b008daea3d55a86c8b75661d41e52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457381"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073658"
 ---
 # <a name="companyportalblockedaction-resource-type"></a>Тип ресурса Компанипорталблоккедактион
 
@@ -25,11 +25,11 @@ ms.locfileid: "43457381"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|platform|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|ОС устройства/платформа. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|платформа|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|ОС устройства/платформа. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|Тип владения устройством. Возможные значения: `unknown`, `company`, `personal`.|
 |action|[companyPortalAction](../resources/intune-shared-companyportalaction.md)|Действие устройства. Возможные значения: `unknown`, `remove`, `reset`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,9 @@ ms.locfileid: "43457381"
   "action": "String"
 }
 ```
+
+
+
 
 
 

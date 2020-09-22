@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 45b2145c002eb17a5bc65f946646ce70bf3872f8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1cfdc09a35a0f04d5ce3e2ffffec80524f40c1e5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518667"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073364"
 ---
 # <a name="call-subscribetotone"></a>Call: Субскрибетотоне
 
@@ -44,14 +44,14 @@ POST /communications/calls/{id}/subscribeToTone
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    | Описание |
 |:---------------|:--------|:------------|
-| Контекст  | String  | Уникальная строка контекста клиента. Может содержать до 256 символов. |
+| Контекст  | Строка  | Уникальная строка контекста клиента. Может содержать до 256 символов. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 ## <a name="example"></a>Пример
@@ -166,3 +166,4 @@ Content-Type: application/json
   ]
 }
 -->
+
