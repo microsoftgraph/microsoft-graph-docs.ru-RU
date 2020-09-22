@@ -5,28 +5,28 @@ localization_priority: Normal
 author: krbain
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b7d03a4f6fd9703a3a24900f12b2e522c6535452
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a4193e09b756437d693e484a0680c27c4e8b6013
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808398"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003285"
 ---
-# <a name="assignedlicense-resource-type"></a><span data-ttu-id="d69eb-104">Тип ресурса assignedLicense</span><span class="sxs-lookup"><span data-stu-id="d69eb-104">assignedLicense resource type</span></span>
+# <a name="assignedlicense-resource-type"></a><span data-ttu-id="01959-104">Тип ресурса assignedLicense</span><span class="sxs-lookup"><span data-stu-id="01959-104">assignedLicense resource type</span></span>
 
-<span data-ttu-id="d69eb-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d69eb-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="01959-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="01959-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="d69eb-106">Представляет лицензию, назначенную пользователю.</span><span class="sxs-lookup"><span data-stu-id="d69eb-106">Represents a license assigned to a user.</span></span> <span data-ttu-id="d69eb-107">Свойство **assignedLicenses** объекта [user](user.md) представляет собой коллекцию объектов **assignedLicense**.</span><span class="sxs-lookup"><span data-stu-id="d69eb-107">The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.</span></span>
+<span data-ttu-id="01959-106">Представляет лицензию, назначенную пользователю.</span><span class="sxs-lookup"><span data-stu-id="01959-106">Represents a license assigned to a user.</span></span> <span data-ttu-id="01959-107">Свойство **assignedLicenses** объекта [user](user.md) представляет собой коллекцию объектов **assignedLicense**.</span><span class="sxs-lookup"><span data-stu-id="01959-107">The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d69eb-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="d69eb-108">Properties</span></span>
-| <span data-ttu-id="d69eb-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="d69eb-109">Property</span></span>     | <span data-ttu-id="d69eb-110">Тип</span><span class="sxs-lookup"><span data-stu-id="d69eb-110">Type</span></span>   |<span data-ttu-id="d69eb-111">Описание</span><span class="sxs-lookup"><span data-stu-id="d69eb-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="01959-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="01959-108">Properties</span></span>
+| <span data-ttu-id="01959-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="01959-109">Property</span></span>     | <span data-ttu-id="01959-110">Тип</span><span class="sxs-lookup"><span data-stu-id="01959-110">Type</span></span>   |<span data-ttu-id="01959-111">Описание</span><span class="sxs-lookup"><span data-stu-id="01959-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d69eb-112">дисабледпланс</span><span class="sxs-lookup"><span data-stu-id="d69eb-112">disabledPlans</span></span>|<span data-ttu-id="d69eb-113">Коллекция объектов Guid</span><span class="sxs-lookup"><span data-stu-id="d69eb-113">Guid collection</span></span>|<span data-ttu-id="d69eb-114">Коллекция уникальных идентификаторов отключенных планов.</span><span class="sxs-lookup"><span data-stu-id="d69eb-114">A collection of the unique identifiers for plans that have been disabled.</span></span>|
-|<span data-ttu-id="d69eb-115">skuId</span><span class="sxs-lookup"><span data-stu-id="d69eb-115">skuId</span></span>|<span data-ttu-id="d69eb-116">Guid</span><span class="sxs-lookup"><span data-stu-id="d69eb-116">Guid</span></span>|<span data-ttu-id="d69eb-117">Уникальный идентификатор SKU.</span><span class="sxs-lookup"><span data-stu-id="d69eb-117">The unique identifier for the SKU.</span></span>|
+|<span data-ttu-id="01959-112">дисабледпланс</span><span class="sxs-lookup"><span data-stu-id="01959-112">disabledPlans</span></span>|<span data-ttu-id="01959-113">Коллекция объектов Guid</span><span class="sxs-lookup"><span data-stu-id="01959-113">Guid collection</span></span>|<span data-ttu-id="01959-114">Коллекция уникальных идентификаторов отключенных планов.</span><span class="sxs-lookup"><span data-stu-id="01959-114">A collection of the unique identifiers for plans that have been disabled.</span></span>|
+|<span data-ttu-id="01959-115">skuId</span><span class="sxs-lookup"><span data-stu-id="01959-115">skuId</span></span>|<span data-ttu-id="01959-116">Guid</span><span class="sxs-lookup"><span data-stu-id="01959-116">Guid</span></span>|<span data-ttu-id="01959-117">Уникальный идентификатор SKU.</span><span class="sxs-lookup"><span data-stu-id="01959-117">The unique identifier for the SKU.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d69eb-118">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="d69eb-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="01959-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="01959-118">JSON representation</span></span>
 
-<span data-ttu-id="d69eb-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d69eb-119">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="01959-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="01959-119">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -54,3 +54,4 @@ ms.locfileid: "46808398"
   "section": "documentation",
   "tocPath": ""
 }-->
+

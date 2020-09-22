@@ -5,30 +5,30 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 195659151fd512152dca267233c50bf1870c49b4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 52b90914a3916c57cb07c8bfa84c9a8786ec1209
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436865"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003523"
 ---
-# <a name="preauthorizedapplication-resource-type"></a><span data-ttu-id="c1944-103">Тип ресурса preAuthorizedApplication</span><span class="sxs-lookup"><span data-stu-id="c1944-103">preAuthorizedApplication resource type</span></span>
+# <a name="preauthorizedapplication-resource-type"></a><span data-ttu-id="02a07-103">Тип ресурса preAuthorizedApplication</span><span class="sxs-lookup"><span data-stu-id="02a07-103">preAuthorizedApplication resource type</span></span>
 
-<span data-ttu-id="c1944-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c1944-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="02a07-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="02a07-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c1944-105">Перечисляет клиентские приложения, которые предварительно авторизованы с указанными разрешениями для доступа к API этого приложения.</span><span class="sxs-lookup"><span data-stu-id="c1944-105">Lists the client applications that are pre-authorized with the specified permissions to access this application's APIs.</span></span> <span data-ttu-id="c1944-106">Пользователям не требуется согласие с какими-либо из предварительно разрешенных приложений (для указанных разрешений).</span><span class="sxs-lookup"><span data-stu-id="c1944-106">Users are not required to consent to any pre-authorized application (for the permissions specified).</span></span> <span data-ttu-id="c1944-107">Однако все дополнительные разрешения, не указанные в Преаусоризедаппликатионс (например, по запросу добавочного согласия), требуют согласия пользователя.</span><span class="sxs-lookup"><span data-stu-id="c1944-107">However, any additional permissions not listed in preAuthorizedApplications (requested through incremental consent for example) will require user consent.</span></span>
+<span data-ttu-id="02a07-105">Перечисляет клиентские приложения, которые предварительно авторизованы с указанными разрешениями для доступа к API этого приложения.</span><span class="sxs-lookup"><span data-stu-id="02a07-105">Lists the client applications that are pre-authorized with the specified permissions to access this application's APIs.</span></span> <span data-ttu-id="02a07-106">Пользователям не требуется согласие с какими-либо из предварительно разрешенных приложений (для указанных разрешений).</span><span class="sxs-lookup"><span data-stu-id="02a07-106">Users are not required to consent to any pre-authorized application (for the permissions specified).</span></span> <span data-ttu-id="02a07-107">Однако все дополнительные разрешения, не указанные в Преаусоризедаппликатионс (например, по запросу добавочного согласия), требуют согласия пользователя.</span><span class="sxs-lookup"><span data-stu-id="02a07-107">However, any additional permissions not listed in preAuthorizedApplications (requested through incremental consent for example) will require user consent.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c1944-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="c1944-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="02a07-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="02a07-108">Properties</span></span>
 
-| <span data-ttu-id="c1944-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="c1944-109">Property</span></span> | <span data-ttu-id="c1944-110">Тип</span><span class="sxs-lookup"><span data-stu-id="c1944-110">Type</span></span> | <span data-ttu-id="c1944-111">Описание</span><span class="sxs-lookup"><span data-stu-id="c1944-111">Description</span></span> |
+| <span data-ttu-id="02a07-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="02a07-109">Property</span></span> | <span data-ttu-id="02a07-110">Тип</span><span class="sxs-lookup"><span data-stu-id="02a07-110">Type</span></span> | <span data-ttu-id="02a07-111">Описание</span><span class="sxs-lookup"><span data-stu-id="02a07-111">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c1944-112">appId</span><span class="sxs-lookup"><span data-stu-id="c1944-112">appId</span></span>|<span data-ttu-id="c1944-113">String</span><span class="sxs-lookup"><span data-stu-id="c1944-113">String</span></span>| <span data-ttu-id="c1944-114">Уникальный идентификатор приложения.</span><span class="sxs-lookup"><span data-stu-id="c1944-114">The unique identifier for the application.</span></span> |
-|<span data-ttu-id="c1944-115">пермиссионидс</span><span class="sxs-lookup"><span data-stu-id="c1944-115">permissionIds</span></span>|<span data-ttu-id="c1944-116">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="c1944-116">String collection</span></span>| <span data-ttu-id="c1944-117">Уникальный идентификатор для [oauth2PermissionScopes](permissionscope.md) , который требуется приложению.</span><span class="sxs-lookup"><span data-stu-id="c1944-117">The unique identifier for the [oauth2PermissionScopes](permissionscope.md) the application requires.</span></span> |
+|<span data-ttu-id="02a07-112">appId</span><span class="sxs-lookup"><span data-stu-id="02a07-112">appId</span></span>|<span data-ttu-id="02a07-113">String</span><span class="sxs-lookup"><span data-stu-id="02a07-113">String</span></span>| <span data-ttu-id="02a07-114">Уникальный идентификатор приложения.</span><span class="sxs-lookup"><span data-stu-id="02a07-114">The unique identifier for the application.</span></span> |
+|<span data-ttu-id="02a07-115">пермиссионидс</span><span class="sxs-lookup"><span data-stu-id="02a07-115">permissionIds</span></span>|<span data-ttu-id="02a07-116">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="02a07-116">String collection</span></span>| <span data-ttu-id="02a07-117">Уникальный идентификатор для [oauth2PermissionScopes](permissionscope.md) , который требуется приложению.</span><span class="sxs-lookup"><span data-stu-id="02a07-117">The unique identifier for the [oauth2PermissionScopes](permissionscope.md) the application requires.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="c1944-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c1944-118">JSON representation</span></span>
-<span data-ttu-id="c1944-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c1944-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="02a07-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="02a07-118">JSON representation</span></span>
+<span data-ttu-id="02a07-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="02a07-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -59,3 +59,5 @@ ms.locfileid: "43436865"
   "suppressions": []
 }
 -->
+
+
