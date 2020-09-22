@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d8f236022bed6f6a92cceeafee108e59ae970ddd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b36bbf9d8f463cef1fa56cc91d2f03862bc83379
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423583"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981114"
 ---
 # <a name="create-educationrubric"></a>Создание Едукатионрубрик
 
@@ -42,15 +42,15 @@ POST /education/me/rubrics
 
 | Имя          | Описание    |
 | :------------ | :------------- |
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [едукатионрубрик](../resources/educationrubric.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и новый объект [едукатионрубрик](../resources/educationrubric.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [едукатионрубрик](../resources/educationrubric.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -153,7 +153,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -332,9 +332,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -448,3 +448,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

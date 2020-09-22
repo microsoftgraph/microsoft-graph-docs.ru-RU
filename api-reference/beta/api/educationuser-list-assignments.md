@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 410514a30bb0f09d031fe26b2f0f02907dc943e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0fbc71cd5ac089a56a9acc6062112e69e956933
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423800"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981123"
 ---
 # <a name="list-assignments"></a>Перечисление заданий
 
@@ -51,7 +51,7 @@ GET /education/users/{id}/assignments
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [educationAssignment](../resources/educationassignment.md) в тексте отклика.
 
@@ -138,3 +138,5 @@ Content-length: 344
   "suppressions": []
 }
 -->
+
+

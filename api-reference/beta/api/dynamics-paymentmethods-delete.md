@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: b5e65e596cdf53d20b117c39c2b4e7a3b63ce417
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba51b33f62d5dda22868d12518b48fd39e6c701e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428756"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981173"
 ---
 # <a name="delete-paymentmethods"></a>Удаление Пайментмесодс
 
@@ -44,12 +44,12 @@ DELETE /financials/companies/{id}/paymentMethods/{id}
 |Заголовок         |Значение                     |
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **пайментмесодс**, **пайментмесодс** не будет обновлен. |
+|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **пайментмесодс**, **пайментмесодс** не будет обновлен. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика ```204 No Content```. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -69,4 +69,6 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods
 ```json
 HTTP/1.1 204 No Content
 ```
+
+
 

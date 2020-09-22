@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 91bcb5a8e12a159bf2c6586a0e3dc49a540a69f2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c0e34d70bd91ecd896eba4329d775a95d696bed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505793"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979653"
 ---
 # <a name="downgradejustification-resource-type"></a>Тип ресурса Довнградежустификатион
 
@@ -56,3 +56,4 @@ ms.locfileid: "42505793"
   "section": "documentation",
   "tocPath": ""
 }-->
+

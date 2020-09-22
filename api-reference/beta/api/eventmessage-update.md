@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3684ec702a0fd0e1bcd55d4087fee2c75b7af3bc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4dc0e41b8656ecc92276c8a6a7251d7e35b87a79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43364150"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980899"
 ---
 # <a name="update-eventmessage"></a>Обновление объекта eventMessage
 
@@ -128,3 +128,5 @@ Content-length: 248
   ]
 }
 -->
+
+

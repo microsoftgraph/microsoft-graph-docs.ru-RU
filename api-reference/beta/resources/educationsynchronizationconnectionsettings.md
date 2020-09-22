@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 71da1acbd9910757375acbc22dda63f412f459b2
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 449dc1c4265355d55e6d3ceb51fe86be9f84ac31
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979565"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>Тип ресурса Едукатионсинчронизатионконнектионсеттингс
 
@@ -36,3 +36,5 @@ ms.locfileid: "45434881"
 | :----------- | :----- | :------------------------------------------------------------ |
 | clientId     | String | Идентификатор клиента, используемый для подключения к поставщику.                    |
 | clientSecret | String | Секрет клиента для проверки подлинности подключения к поставщику. |
+
+

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e1bd159392c42c2f83668396bb467854f4bee886
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 52510e26cec74a0540b97bdfeff17104720f837e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366319"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981025"
 ---
 # <a name="event-cancel"></a>событие: Cancel (Отмена)
 
@@ -128,3 +128,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

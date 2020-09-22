@@ -1,5 +1,5 @@
 ---
-title: удалять элементы.
+title: Удаление элементов
 description: Удаляет объект item в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -7,14 +7,14 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 62b2662400507de668b5444c57f93a137231689e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c86848fbfe8d15e9f28a448508deeff4988213d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42429932"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981298"
 ---
-# <a name="delete-items"></a>удалять элементы.
+# <a name="delete-items"></a>Удаление элементов
 
 Пространство имен: microsoft.graph
 
@@ -43,12 +43,12 @@ DELETE /financials/companies/{id}/items/{id}
 |Заголовок       |Значение                    |
 |-------------|-------------------------|
 |Авторизация|Bearer {токен}. Обязательный.|
-|If-Match     |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **элементов**, **элементы** не будут обновлены. |
+|If-Match     |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **элементов**, **элементы** не будут обновлены. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика ```204 No Content```. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -67,4 +67,6 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/items/{id}
 ```json
 HTTP/1.1 204 No Content
 ```
+
+
 

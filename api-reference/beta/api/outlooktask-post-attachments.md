@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d589fb84e62712fa744acb373af8678e8db8242f
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 307eef5d01ca130a8ad77dcbc466560a50d98d67
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979786"
 ---
 # <a name="create-attachment-deprecated"></a>Создание вложения (не рекомендуется)
 
@@ -47,9 +47,9 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Content-Type | Строка, представляющая тип данных в теле объекта. Обязательный элемент. |
+| Content-Type | Строка, представляющая тип данных в теле объекта. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.
 
@@ -205,3 +205,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

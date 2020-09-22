@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: fc7fc9679de3a655e76b6182f218010de7e39997
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb582887e27af068b456b2fcf87971b2cdcf23d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519038"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979212"
 ---
 # <a name="yammeractivitysummary-resource-type"></a>Тип ресурса Яммерактивитисуммари
 
@@ -23,7 +23,7 @@ ms.locfileid: "42519038"
 | репортрефрешдате | Дата   |
 | метк             | Int64  |
 | размещен            | Int64  |
-| прочитан              | Int64  |
+| read              | Int64  |
 | reportDate        | Дата   |
 | репортпериод      | String |
 
@@ -46,3 +46,5 @@ ms.locfileid: "42519038"
   "reportPeriod": "String"
 }
 ```
+
+

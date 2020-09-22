@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: ed52ecf6be97f6a1e7626438a3b248cc38a03938
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb8aee3492a44273e55866f47b209f3d71f9026d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42429358"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981235"
 ---
 # <a name="update-itemcategories"></a>Обновление Итемкатегориес
 
@@ -45,7 +45,7 @@ PATCH /financials/companies/{id}/itemCategories/{id}
 |-------------|-------------------------|
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type |application/json         |
-|If-Match     |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **итемкатегориес**, **итемкатегориес** не будет обновлен. |
+|If-Match     |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **итемкатегориес**, **итемкатегориес** не будет обновлен. |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
@@ -84,3 +84,5 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-15T02:21:24.047Z"
 }
 ```
+
+

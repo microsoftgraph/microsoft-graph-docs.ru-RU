@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 795b47ff0590ef8d9cf42409eea6031a544a2e09
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6a090ef8672c68ba14396c0d155955a7d57494b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428791"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981183"
 ---
 # <a name="get-journallines"></a>Получение Жаурналлинес
 
@@ -48,7 +48,7 @@ GET /financials/companies/{id}/journals/{id}/journalLines/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **жаурналлинес** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,4 +82,6 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/jou
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
+
+
 

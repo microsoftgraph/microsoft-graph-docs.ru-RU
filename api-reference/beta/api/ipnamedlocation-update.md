@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4540e97b6cb94b89b57b3ee70e68619f15c2f1ee
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 1e9ff22fb86400214f283cb4e09fb0097f7843b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681782"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980068"
 ---
 # <a name="update-ipnamedlocation"></a>Обновление Ипнамедлокатион
 
@@ -53,7 +53,7 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |displayName|String|Удобное для человека имя расположения.|
 |ипранжес|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате IPv4 CIDR (1.2.3.4/32) или любом допустимом формате IPv6 из IETF RFC5962.|
-|Доверять|Логический|Значение, `true` если это расположение явно доверенное.|
+|Доверять|Boolean|Значение, `true` если это расположение явно доверенное.|
 
 ## <a name="response"></a>Отклик
 
@@ -128,3 +128,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

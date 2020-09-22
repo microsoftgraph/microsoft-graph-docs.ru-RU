@@ -6,12 +6,12 @@ description: Ресурс drive представляет хранилище OneD
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 7544c479673f774d5e530eb27e90ee2529799daf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c23e7f8806f103e369149429ab4c370213660dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505765"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979632"
 ---
 # <a name="drive-resource-type"></a>Тип ресурса drive
 
@@ -153,3 +153,5 @@ ms.locfileid: "42505765"
   "suppressions": []
 }
 -->
+
+

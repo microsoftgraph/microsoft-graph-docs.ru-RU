@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 876a490c3dfcf69eb993d1ba18868e2fc5a62fa8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 329bab18d90412ec8cc06b12106e0be4f1b46935
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500641"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979569"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>Тип ресурса Едукатионсубмиссионресаурце
 
@@ -31,11 +31,11 @@ ms.locfileid: "42500641"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ассигнментресаурцеурл|Строка|Указатель на назначение, из которого был скопирован данный ресурс. Если это значение равно null, учащийся передал ресурс.|
+|ассигнментресаурцеурл|String|Указатель на назначение, из которого был скопирован данный ресурс. Если это значение равно null, учащийся передал ресурс.|
 |id|String| Только для чтения.|
 |resource|[едукатионресаурце](educationresource.md)|Объект Resource.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -71,3 +71,5 @@ ms.locfileid: "42500641"
   "suppressions": []
 }
 -->
+
+

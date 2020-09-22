@@ -3,14 +3,14 @@ title: Обновление объекта windowsInformationProtectionAppLearni
 description: Обновление свойств объекта windowsInformationProtectionAppLearningSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 400bb44f1398a14f6b41a36b9ef2a785631643d6
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 5055108ec96d5d1b206c5587b3d26cb4fb9601fb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43451942"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980178"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>Обновление объекта windowsInformationProtectionAppLearningSummary
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса укажите представление объекта [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).
@@ -95,6 +95,9 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
+
 
 
 

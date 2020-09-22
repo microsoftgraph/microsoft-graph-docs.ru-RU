@@ -6,12 +6,12 @@ title: Получение аналитики
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 3b8c423037acd0af5c82bc350f8e859d00c4069a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 239b53b716a050dd59d35b25825c38bbcd4f9be8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457274"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979996"
 ---
 # <a name="get-analytics"></a>Получение аналитики
 
@@ -20,7 +20,7 @@ ms.locfileid: "42457274"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение [итеманалитикс][] о представлениях, которые были выполнены для этого ресурса.
-Ресурс **итеманалитикс** — это удобный способ получения статистики действий `allTime` и. `lastSevenDays`
+Ресурс **итеманалитикс** — это удобный способ получения статистики действий `allTime` и `lastSevenDays` .
 Для настраиваемого диапазона или интервала времени используйте API [getActivitiesByInterval][] .
 
 >**Примечание:** Ресурс **итеманалитикс** пока недоступен во всех [национальных развертываниях](/graph/deployments).
@@ -109,3 +109,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

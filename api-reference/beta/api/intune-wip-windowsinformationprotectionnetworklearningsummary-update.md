@@ -3,14 +3,14 @@ title: Обновление объекта windowsInformationProtectionNetworkLe
 description: Обновление свойств объекта windowsInformationProtectionNetworkLearningSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7fe48941f4492045554a41f2ab28f2713693a54
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ee4b9e2f6a1c0ec29c41d7073737a9448ebb9f72
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472260"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980108"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>Обновление объекта windowsInformationProtectionNetworkLearningSummary
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -92,6 +92,9 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
+
+
+
 
 
 

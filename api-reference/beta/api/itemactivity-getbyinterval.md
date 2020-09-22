@@ -6,12 +6,12 @@ title: Получение статистики по действиям элем�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: f2c3158fbc7ac8c925bc0bf2556623d01aa7b48d
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 842eb4acb160df2a25482864c5c115d1243e975e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123206"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980073"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Получение статистики по действиям элемента по интервалу
 
@@ -129,3 +129,5 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+
+

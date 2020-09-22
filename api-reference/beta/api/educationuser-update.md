@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 022b30eb68b29f4a77c34b0a8dc588d6f4bba071
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 62204793bcae4c8070bf172af1505ef4717fc160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006770"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981095"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
 
@@ -26,8 +26,8 @@ ms.locfileid: "45006770"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается.                              |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -52,11 +52,11 @@ PATCH /education/users/{id}
 
 | Свойство         | Тип               | Описание                                                                                                                                     |
 | :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName      | Строка             | Отображаемое имя пользователя                                                                                                                            |
-| givenName        | String             | Имя                                                                                                                                      |
+| displayName      | String             | Отображаемое имя пользователя                                                                                                                            |
+| givenName;        | String             | Имя                                                                                                                                      |
 | middleName       | String             | Отчество пользователя                                                                                                                             |
 | surname          | String             | Фамилия пользователя                                                                                                                                 |
-| mail             | String             | Электронный адрес                                                                                                                                   |
+| почта;             | String             | Электронный адрес                                                                                                                                   |
 | mobilePhone      | String             | Номер мобильного телефона пользователя                                                                                                                           |
 | externalSource   | string             | Источник для создания пользователя. Возможные значения: `sis` , `manual` , или `lms` .                                                               |
 | mailingAddress   | [physicalAddress]  | Почтовый адрес пользователя. Примечание: `type` и `postOfficeBox` не поддерживаются для `educationUser` ресурсов.                                         |
@@ -181,3 +181,5 @@ Content-length: 508
 
 [PhysicalAddress]: ../resources/physicaladdress.md
 [educationstudent]: ../resources/educationstudent.md
+
+

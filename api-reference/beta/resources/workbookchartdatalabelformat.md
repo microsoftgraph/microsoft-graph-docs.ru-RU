@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b11595224da70deda425d837940b60accc8ad5de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 883f2ff1ce1c0b89f1525ea39e0adb558a1870cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519353"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979296"
 ---
 # <a name="workbookchartdatalabelformat-resource-type"></a>Тип ресурса Воркбукчартдаталабелформат
 
@@ -27,7 +27,7 @@ ms.locfileid: "42519353"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fill|[воркбукчартфилл](workbookchartfill.md)|Представляет формат заливки для текущей метки данных диаграммы. Только для чтения.|
@@ -68,3 +68,5 @@ ms.locfileid: "42519353"
   "suppressions": []
 }
 -->
+
+

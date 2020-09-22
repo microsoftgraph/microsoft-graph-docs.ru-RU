@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: yyuank
-ms.openlocfilehash: 63bd41f4438fe1cdd90228e83028eb07e54cf38c
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 1b8d27c1bb91bdcba4848b69bd8626252a5d0aa6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383744"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981067"
 ---
 # <a name="get-endpoint"></a>Получение конечной точки
 
@@ -43,7 +43,7 @@ GET /groups/{id}/endpoints/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,3 +111,5 @@ Content-length: 208
   ]
 }
 -->
+
+

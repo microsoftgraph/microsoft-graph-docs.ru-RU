@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 077188c3ca30837cad6adcffa2204750753cd1cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a917a6d74b47b3e42d2457c5bf747abbf237cf4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500739"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979583"
 ---
 # <a name="educationsubmission-resource-type"></a>Тип ресурса educationSubmission
 
@@ -99,3 +99,5 @@ ms.locfileid: "42500739"
   "suppressions": []
 }
 -->
+
+

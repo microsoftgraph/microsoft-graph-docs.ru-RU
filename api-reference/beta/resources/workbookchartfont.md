@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f7b79c81ce473440084b7a2409c0d621888f2286
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2fcf382f967687b49e114be2b4db1e022eebb0c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519332"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979275"
 ---
 # <a name="workbookchartfont-resource-type"></a>Тип ресурса Воркбукчартфонт
 
@@ -32,11 +32,11 @@ ms.locfileid: "42519332"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |bold|boolean|Указывает, является ли шрифт полужирным.|
-|color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
+|color|string|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
 |name|string|Имя шрифта (например, Calibri)|
 |size|Double|Размер шрифта (например, 11)|
-|underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.|
+|underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None` , `Single` .|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -77,3 +77,5 @@ ms.locfileid: "42519332"
   "suppressions": []
 }
 -->
+
+

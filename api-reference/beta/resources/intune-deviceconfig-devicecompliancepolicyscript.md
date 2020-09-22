@@ -3,14 +3,14 @@ title: Тип ресурса Девицекомплианцеполицискр�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bddad3af25cac106d30adafc3eb787307ea0550c
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: a56c650aa5f7341b49a8cda79bd833fecffb2a65
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789447"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979401"
 ---
 # <a name="devicecompliancepolicyscript-resource-type"></a>Тип ресурса Девицекомплианцеполицискрипт
 
@@ -45,6 +45,9 @@ ms.locfileid: "44789447"
   "rulesContent": "binary"
 }
 ```
+
+
+
 
 
 

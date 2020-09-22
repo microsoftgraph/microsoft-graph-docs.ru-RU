@@ -3,14 +3,14 @@ title: Обновление Интунебрандингпрофилеассиг
 description: Обновление свойств объекта Интунебрандингпрофилеассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 718a2e538b619a4138ef64987009bd5f6415851a
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 1b65b768d37fdad43c8ecb48ae6d61409170ada4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791211"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980248"
 ---
 # <a name="update-intunebrandingprofileassignment"></a>Обновление Интунебрандингпрофилеассигнмент
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignm
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -97,6 +97,9 @@ Content-Length: 375
   }
 }
 ```
+
+
+
 
 
 

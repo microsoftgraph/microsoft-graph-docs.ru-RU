@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 58064fbc39a949e986c62dc33c4623327a240de6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: df7f695a1aab9343ec8d15d7d0976e3260511ac1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809754"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980010"
 ---
 # <a name="update-itemaddress"></a>Обновление Итемаддресс
 Пространство имен: microsoft.graph
@@ -57,7 +57,7 @@ PATCH /users/{id | userPrincipalName}/profile/addresses/{id}
 |выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [итемаддресс](../resources/itemaddress.md) в тексте отклика.
 
@@ -142,4 +142,6 @@ Content-Type: application/json
   "geoCoordinates": null
 }
 ```
+
+
 

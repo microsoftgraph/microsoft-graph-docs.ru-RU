@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 1c8d6fcf5233aff6f3d61b1c7b254f9a9314265e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 983bd3268cd1547ed7aea160193bf5da6d8f8e0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42429372"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981247"
 ---
 # <a name="get-itemcategories"></a>Получение Итемкатегориес
 
@@ -48,7 +48,7 @@ GET /financials/companies/{id}/itemCategories/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **итемкатегориес** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -74,4 +74,6 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories/{i
   "lastModifiedDateTime": "2017-03-15T02:21:24.047Z"
 }
 ```
+
+
 

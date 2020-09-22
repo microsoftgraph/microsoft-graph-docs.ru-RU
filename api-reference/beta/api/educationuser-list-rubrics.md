@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b7915093126c9051aede6f7bbf52b873683a2243
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ba2a95d5e81267477011391cc60e20b4ee2c48c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424115"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981116"
 ---
 # <a name="list-rubrics"></a>Список рубрикс
 
@@ -42,13 +42,13 @@ GET /education/me/rubrics
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [едукатионрубрик](../resources/educationrubric.md) в тексте отклика.
 
@@ -188,3 +188,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

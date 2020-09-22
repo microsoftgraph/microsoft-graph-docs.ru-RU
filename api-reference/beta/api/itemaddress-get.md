@@ -1,21 +1,21 @@
 ---
-title: Получение объекта itemAddress
-description: Чтение свойств и связей объекта itemAddress.
+title: Получение Итемаддресс
+description: Чтение свойств и связей объекта Итемаддресс.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c7004e265b683c4ed0733e4d2c3e24791af2db18
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 4f284921536827b2c005cde1b938b1ecbaf60ef4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820076"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47980008"
 ---
-# <a name="get-itemaddress"></a>Получение объекта itemAddress
+# <a name="get-itemaddress"></a>Получение Итемаддресс
 Пространство имен: microsoft.graph
 
-Чтение свойств и связей объекта [itemAddress.](../resources/itemaddress.md)
+Чтение свойств и связей объекта [итемаддресс](../resources/itemaddress.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,9 +23,9 @@ ms.locfileid: "46820076"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,19 +40,19 @@ GET /users/{id | userPrincipalName}/profile/addresses/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, включаемых в ответ, разделяя их запятыми. Для оптимальной производительности выбирайте только необходимые свойства.
+Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми. Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код `200 OK` ответа [и объект itemAddress](../resources/itemaddress.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [итемаддресс](../resources/itemaddress.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -129,3 +129,5 @@ Content-Type: application/json
   "geoCoordinates": null
 }
 ```
+
+

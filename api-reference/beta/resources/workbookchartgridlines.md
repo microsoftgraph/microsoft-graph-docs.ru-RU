@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6bc796f5bf680b017c6f9cc20bc88f60f1b1c70d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ae89fb8714cfa1c9fba90961fafa3b74f679113b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519325"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979261"
 ---
 # <a name="workbookchartgridlines-resource-type"></a>Тип ресурса Воркбукчартгридлинес
 
@@ -70,3 +70,5 @@ ms.locfileid: "42519325"
   "suppressions": []
 }
 -->
+
+

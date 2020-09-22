@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 99732cd99dafc67d9e82a7eba5676e41bcf7251b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1163843cdb393363bbb30783aa8232aa67544ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521708"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979345"
 ---
 # <a name="plannerplancontext-resource-type"></a>Тип ресурса Планнерпланконтекст
 
@@ -26,7 +26,7 @@ ms.locfileid: "42521708"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Типе|Строка|Допускается значение null. Определяемый приложением тип связи между [plannerPlan](plannerplan.md) и приложением. Приложение может использовать эту информацию для отслеживания различных видов отношений с одним и тем же [plannerPlan](plannerplan.md).|
+|Типе|String|Допускается значение null. Определяемый приложением тип связи между [plannerPlan](plannerplan.md) и приложением. Приложение может использовать эту информацию для отслеживания различных видов отношений с одним и тем же [plannerPlan](plannerplan.md).|
 |createdDateTime|DateTimeOffset|Только для чтения. Дата и время создания **планнерпланконтекст** . Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |дисплайнамесегментс|Коллекция String|Сегменты имени внешнего интерфейса взаимодействия. Сегменты представляют иерархическую структуру, которая позволяет другим приложениям отображать связь.|
 |овнераппид|String|Только для чтения. Идентификатор приложения, создавшего **планнерпланконтекст**.|
@@ -68,3 +68,5 @@ ms.locfileid: "42521708"
   "suppressions": []
 }
 -->
+
+
