@@ -3,14 +3,14 @@ title: Создание Виндовсупдатестате
 description: Создание нового объекта Виндовсупдатестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0fbc9cb8668d8d7f7ca50cd875d3aa042a2002ad
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: e457f2f6b8a2a6c3f1a235081db422a653296741
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082317"
 ---
 # <a name="create-windowsupdatestate"></a>Создание Виндовсупдатестате
 
@@ -31,7 +31,7 @@ ms.locfileid: "46790534"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложений||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -57,20 +57,20 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Это идентификатор объекта.|
+|id|Строка|Это идентификатор объекта.|
 |deviceId|String|Идентификатор устройства.|
 |userId|String|Идентификатор пользователя.|
 |deviceDisplayName|String|Отображаемое имя устройства.|
 |userPrincipalName|String|Имя участника пользователя.|
-|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Состояние Windows удпате. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|куалитюпдатеверсион|String|Версия устройства для обновления качества.|
-|феатуреупдатеверсион|String|Текущая версия обновления компонентов устройства.|
+|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Состояние Windows удпате. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|куалитюпдатеверсион|Строка|Версия устройства для обновления качества.|
+|феатуреупдатеверсион|Строка|Текущая версия обновления компонентов устройства.|
 |ластскандатетиме|DateTimeOffset|Дата и время, когда агент обновления Windows успешно выполнил сканирование.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации устройства с Microsoft Intune.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -117,6 +117,9 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
+
+
+
 
 
 

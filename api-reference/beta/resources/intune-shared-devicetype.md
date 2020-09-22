@@ -3,14 +3,14 @@ title: тип перечисления deviceType
 description: Тип устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f84763fffa3146174845d1074934eb2b40a18c5
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 71cc9a02eb0d538995a2f7e3aee39cbbe63a7304
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793810"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084319"
 ---
 # <a name="devicetype-enum-type"></a>тип перечисления deviceType
 
@@ -27,7 +27,7 @@ ms.locfileid: "44793810"
 |:---|:---|:---|
 |системной|нуль|Системной.|
 |виндовсрт|1 |Виндовсрт.|
-|winMO6|2|WinMO6.|
+|winMO6|2 |WinMO6.|
 |Nokia|4|Nokia.|
 |windowsPhone|4 |Windows Phone.|
 |mac|5 |OS.|
@@ -36,7 +36,7 @@ ms.locfileid: "44793810"
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |Иподтауч.|
-|ОС|-11:00|ОС.|
+|ОС|11 |ОС.|
 |исокконсумер|12 |Исокконсумер.|
 |формате|13 |Формате.|
 |макмдм|14 |Клиент Mac OS X, использующий встроенный агент MDM.|
@@ -49,6 +49,9 @@ ms.locfileid: "44793810"
 |BlackBerry|100|BlackBerry.|
 |Положите|101|Положите.|
 |unknown|255|Указывает, что тип устройства неизвестен.|
+
+
+
 
 
 

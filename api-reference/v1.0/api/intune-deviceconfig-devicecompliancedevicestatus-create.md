@@ -3,14 +3,14 @@ title: Создание объекта deviceComplianceDeviceStatus
 description: Создание объекта deviceComplianceDeviceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b09c3701f22bba5b7f385e92a2db5533931f471c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8aa0f835142aabcda12ec98f62ba1f7a3a29b68a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43400425"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083605"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>Создание объекта deviceComplianceDeviceStatus
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта deviceComplianceDeviceStatus в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceComplianceDeviceStatus.
@@ -105,6 +105,9 @@ Content-Length: 475
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

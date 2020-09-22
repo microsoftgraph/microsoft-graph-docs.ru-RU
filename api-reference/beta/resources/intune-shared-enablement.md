@@ -3,14 +3,14 @@ title: тип перечисления включения
 description: Возможные значения свойства
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3f8566567a51e54ca5301cdab24de9796fdce4fd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 09ad6c1c5af4474f5f06d437c39f52bb6065e8cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407860"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084312"
 ---
 # <a name="enablement-enum-type"></a>тип перечисления включения
 
@@ -26,8 +26,11 @@ ms.locfileid: "43407860"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Значение по умолчанию для устройства, без намерения.|
-|включено|1,1|Включает параметр на устройстве.|
-|отключено|2|Отключает параметр на устройстве.|
+|включено|1 |Включает параметр на устройстве.|
+|отключено|2 |Отключает параметр на устройстве.|
+
+
+
 
 
 

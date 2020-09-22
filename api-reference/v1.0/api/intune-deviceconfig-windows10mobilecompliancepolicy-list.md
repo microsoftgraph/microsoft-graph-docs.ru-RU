@@ -3,14 +3,14 @@ title: Перечисление объектов windows10MobileCompliancePolicy
 description: Список свойств и связей объектов windows10MobileCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a026bbc783fae41594f8017514c0603e7fe9c69a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e3bb5c2b0ddc12120a6a58538b87e15437080ce0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43369616"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083332"
 ---
 # <a name="list-windows10mobilecompliancepolicies"></a>Перечисление объектов windows10MobileCompliancePolicy
 
@@ -44,10 +44,10 @@ GET /deviceManagement/deviceCompliancePolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [windows10MobileCompliancePolicy](../resources/intune-deviceconfig-windows10mobilecompliancepolicy.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,6 +95,9 @@ Content-Length: 1089
   ]
 }
 ```
+
+
+
 
 
 

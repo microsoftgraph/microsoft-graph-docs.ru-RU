@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1dfce148cd74d01bd838b4d30c40cac8af145f35
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: e8217451851d12916ce8fde2d287fa68b23c48c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200283"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082217"
 ---
 # <a name="create-onpremisesagentgroup"></a>Создание Онпремисесажентграуп
 
@@ -54,7 +54,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 }
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [онпремисесажентграуп](../resources/onpremisesagentgroup.md) в тексте отклика.
 
@@ -92,7 +92,7 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

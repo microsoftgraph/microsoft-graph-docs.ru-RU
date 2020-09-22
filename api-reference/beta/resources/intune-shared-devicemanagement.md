@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a04fd011fc1f06911fdabe5dfa69d33e7cc6d18f
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 507a823d01683affb23341539221c7b6d3317129
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084375"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -64,10 +64,10 @@ ms.locfileid: "46792893"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор, связанный с устройством.|
+|id|Строка|Уникальный идентификатор, связанный с устройством.|
 |**Конфигурация устройств**|
 |интунеаккаунтид|Guid|Идентификатор учетной записи Intune для данного клиента|
-|легаципкмананжементенаблед|Логический|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -134,14 +134,14 @@ ms.locfileid: "46792893"
 |ремотеактионаудитс|Коллекция [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Список аудитов удаленных действий устройств с клиентом.|
 |windowsMalwareInformation|Коллекция [windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md)|Список уязвимых вредоносных программ в клиенте.|
 |мобилеапптраублешутинжевентс|Коллекция [мобилеапптраублешутинжевент](../resources/intune-shared-mobileapptroubleshootingevent.md)|Свойство Collection объекта Мобилеапптраублешутинжевент.|
-|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|Обзор анализа пользовательского интерфейса|
-|усерекспериенцеаналитиксбаселинес|Коллекция [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userexperienceanalyticsbaseline.md)|Шаблоны аналитики взаимодействия с пользователем|
+|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userExperienceAnalyticsOverview.md)|Обзор анализа пользовательского интерфейса|
+|усерекспериенцеаналитиксбаселинес|Коллекция [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userExperienceAnalyticsBaseline.md)|Шаблоны аналитики взаимодействия с пользователем|
 |усерекспериенцеаналитикскатегориес|Коллекция [усерекспериенцеаналитикскатегори](../resources/intune-devices-userExperienceAnalyticsCategory.md)|Категории аналитики взаимодействия с пользователем|
-|userExperienceAnalyticsDevicePerformance|Коллекция [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Производительность устройства аналитики взаимодействия с пользователем|
-|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|Сводка по регрессии аналитики взаимодействия с пользователем|
-|userExperienceAnalyticsDeviceStartupHistory|Коллекция [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|Журнал запуска устройства Analytics User Experience|
-|усерекспериенцеаналитиксдевицестартуппроцессес|Коллекция [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)|Процессы запуска устройства Analytics User Experience|
-|userExperienceAnalyticsDeviceStartupProcessPerformance|Коллекция [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|Производительность процесса запуска устройства Analytics User Experience|
+|userExperienceAnalyticsDevicePerformance|Коллекция [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userExperienceAnalyticsDevicePerformance.md)|Производительность устройства аналитики взаимодействия с пользователем|
+|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userExperienceAnalyticsRegressionSummary.md)|Сводка по регрессии аналитики взаимодействия с пользователем|
+|userExperienceAnalyticsDeviceStartupHistory|Коллекция [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userExperienceAnalyticsDeviceStartupHistory.md)|Журнал запуска устройства Analytics User Experience|
+|усерекспериенцеаналитиксдевицестартуппроцессес|Коллекция [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcess.md)|Процессы запуска устройства Analytics User Experience|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|Коллекция [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcessPerformance.md)|Производительность процесса запуска устройства Analytics User Experience|
 |**Регистрации**|
 |depOnboardingSettings|Коллекция [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Эти коллекции нескольких маркеров DEP для каждого клиента.|
 |импортеддевицеидентитиес|Коллекция [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Импортированные удостоверения устройств.|
@@ -213,6 +213,9 @@ ms.locfileid: "46792893"
   "subscriptionState": "String"
 }
 ```
+
+
+
 
 
 

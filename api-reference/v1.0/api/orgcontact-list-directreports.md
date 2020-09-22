@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 44f54c6f2767486916eabb50aff153217e390b49
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f1c530293fd763c1309adbc1d5e082a3a98cbd8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463771"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083339"
 ---
 # <a name="list-directreports"></a>Список directReports
 
@@ -25,7 +25,7 @@ ms.locfileid: "43463771"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
+|Для приложения | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -42,10 +42,10 @@ GET /contacts/{id}/directReports
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/directReports
 ---
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
@@ -130,3 +130,4 @@ Content-length: 455
   ]
 }
 -->
+

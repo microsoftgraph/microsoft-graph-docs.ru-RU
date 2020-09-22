@@ -3,14 +3,14 @@ title: Обновление Усерекспериенцеаналитиксде
 description: Обновление свойств объекта Усерекспериенцеаналитиксдевицестартуфистори.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3828ebf8a122d6c190a200e5e24625b25cd33859
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 2ff216d06922f50dabc539f046055c73aebca739
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791346"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082590"
 ---
 # <a name="update-userexperienceanalyticsdevicestartuphistory"></a>Обновление Усерекспериенцеаналитиксдевицестартуфистори
 
@@ -29,7 +29,7 @@ ms.locfileid: "46791346"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор журнала запуска устройства Analytics User Experience.|
+|id|Строка|Уникальный идентификатор журнала запуска устройства Analytics User Experience.|
 |deviceId|String|Идентификатор устройства службы аналитики взаимодействия с пользователем.|
 |startTime|DateTimeOffset|Время начала загрузки устройства Analytics User Experience.|
 |коребуттимеинмс|Int32|Время загрузки ядра устройства аналитики для пользователя (в миллисекундах).|
@@ -64,14 +64,16 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 |корелогинтимеинмс|Int32|Время входа в ядро устройства аналитики взаимодействия с пользователем (в миллисекундах).|
 |респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
 |тоталлогинтимеинмс|Int32|Общее время входа в систему для устройства аналитики взаимодействия с пользователем (в миллисекундах).|
-|исфирстлогин|Логический|Первое имя входа устройства Analytics User Experience.|
-|исфеатуреупдате|Логический|Загрузочная запись устройства аналитики взаимодействия с пользователем — это обновление компонентов.|
+|исфирстлогин|Boolean|Первое имя входа устройства Analytics User Experience.|
+|исфеатуреупдате|Boolean|Загрузочная запись устройства аналитики взаимодействия с пользователем — это обновление компонентов.|
 |operatingSystemVersion|String|Версия операционной системы для записи загрузки устройства службы аналитики взаимодействия с пользователем.|
-|рестарткатегори|[усерекспериенцеаналитиксоператингсистемрестарткатегори](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Категория перезагрузки ОС. Возможные значения: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`.|
+|рестарткатегори|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Категория перезагрузки ОС. Возможные значения: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`.|
+|рестартстопкоде|Строка|Код остановки перезапуска ОС. Здесь показан код проверки ошибки, который можно использовать для поиска причины синего экрана.|
+|рестартфаултбуккет|Строка|Сегмент сбоя при перезапуске ОС. Блок сбоя используется для поиска дополнительных сведений о сбое системы.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -81,7 +83,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperienceAnalyticsDeviceStartupHistoryId}
 Content-type: application/json
-Content-length: 576
+Content-length: 680
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -98,7 +100,9 @@ Content-length: 576
   "isFirstLogin": true,
   "isFeatureUpdate": true,
   "operatingSystemVersion": "Operating System Version value",
-  "restartCategory": "restartWithUpdate"
+  "restartCategory": "restartWithUpdate",
+  "restartStopCode": "Restart Stop Code value",
+  "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
 
@@ -107,7 +111,7 @@ Content-length: 576
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 625
+Content-Length: 729
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -125,9 +129,14 @@ Content-Length: 625
   "isFirstLogin": true,
   "isFeatureUpdate": true,
   "operatingSystemVersion": "Operating System Version value",
-  "restartCategory": "restartWithUpdate"
+  "restartCategory": "restartWithUpdate",
+  "restartStopCode": "Restart Stop Code value",
+  "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
+
+
+
 
 
 

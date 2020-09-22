@@ -3,14 +3,14 @@ title: Тип ресурса Мобилеапптраублешутинжеве�
 description: Описывает ресурс Мобилеапптраублешутинжевент API Microsoft Graph для Intune, который поддерживает несколько рабочих процессов.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a359d3b7d6e55d05fc1cf74bc848b06db958f289
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9d707b983747826a31ac35734d6f18605db7e780
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466124"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084179"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>Тип ресурса Мобилеапптраублешутинжевент
 
@@ -40,7 +40,7 @@ ms.locfileid: "43466124"
 |applicationId|String|Идентификатор приложения Intune.|
 |correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. |
 |eventDateTime|DateTimeOffset|Время возникновения события. |
-|eventName|String|Имя события, соответствующее событию устранения неполадок. Необязательна|
+|eventName|Строка|Имя события, соответствующее событию устранения неполадок. Необязательный|
 |лист|Коллекция [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Элемент журнала устранения неполадок мобильных приложений Intune|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
@@ -100,6 +100,9 @@ ms.locfileid: "43466124"
   ]
 }
 ```
+
+
+
 
 
 

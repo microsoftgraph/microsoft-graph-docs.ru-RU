@@ -3,14 +3,14 @@ title: тип перечисления windows10VpnAuthenticationMethod
 description: Типы VPN-подключений для Windows 10.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b38ffba54a45bc573e7c6031a6e5aa2aa31d9e49
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: dd472aa249fad75072841f3eae731cd73bd2c228
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124144"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084711"
 ---
 # <a name="windows10vpnauthenticationmethod-enum-type"></a>тип перечисления windows10VpnAuthenticationMethod
 
@@ -28,7 +28,10 @@ ms.locfileid: "45124144"
 |certificate|нуль|Проверка подлинности с помощью сертификата.|
 |усернамеандпассворд|1 |Используйте имя пользователя и пароль для проверки подлинности.|
 |кустомеапксмл|2 |Метод проверки подлинности указывается в пользовательском XML-коде EAP.|
-|дериведкредентиал|3 |Используйте производные учетные данные для проверки подлинности.|
+|дериведкредентиал|4|Используйте производные учетные данные для проверки подлинности.|
+
+
+
 
 
 

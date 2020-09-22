@@ -3,14 +3,14 @@ title: тип перечисления windows10EditionType
 description: Тип выпуска Windows 10.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7b42c1f37b6c3a0cda4787d8e25f0c38313e9026
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8365eb40f17b332fe86bc8f589286e508da2fa36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466884"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084851"
 ---
 # <a name="windows10editiontype-enum-type"></a>тип перечисления windows10EditionType
 
@@ -26,8 +26,8 @@ ms.locfileid: "43466884"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |windows10Enterprise|нуль|Windows 10 Корпоративная|
-|windows10EnterpriseN|1,1|Windows 10 Ентерприсен|
-|windows10Education|2|Windows 10 для образовательных учреждений|
+|windows10EnterpriseN|1 |Windows 10 Ентерприсен|
+|windows10Education|2 |Windows 10 для образовательных учреждений|
 |windows10EducationN|4|Windows 10 Едукатионн|
 |windows10MobileEnterprise|4 |Windows 10 Mobile корпоративный|
 |windows10HolographicEnterprise|5 |Windows 10 holographic Корпоративная|
@@ -38,13 +38,16 @@ ms.locfileid: "43466884"
 |windows10ProfessionalWorkstation|10 |Windows 10 профессиональная для рабочих станций|
 |windows10ProfessionalWorkstationN|11 |Windows 10 профессиональная для рабочих станций N|
 |notConfigured|12 |NotConfigured|
-|windows10Home|13|Windows 10 Домашняя|
+|windows10Home|13 |Windows 10 Домашняя|
 |windows10HomeChina|14 |Windows 10 домашняя (Китай)|
 |windows10HomeN|15 |Windows 10 Домашняя N|
 |windows10HomeSingleLanguage|16 |Windows 10 Домашняя, для одного языка|
 |windows10Mobile|17 |Windows 10 Mobile|
-|windows10IoTCore|18 |Windows 10 IoT базовая|
+|windows10IoTCore|18 |Ядро IoT Windows 10|
 |windows10IoTCoreCommercial|19|Windows 10 IoT базовая коммерческая версия|
+
+
+
 
 
 

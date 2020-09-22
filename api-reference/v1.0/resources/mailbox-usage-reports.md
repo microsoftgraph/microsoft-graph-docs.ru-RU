@@ -5,12 +5,12 @@ localization_priority: Priority
 author: pranoychaudhuri
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 3c7b932bf7f0747ff6b5050f7e19accf871c1b1a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5508b20aaa7a4727a49a780e8ebdcffd3acc388b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083052"
 ---
 # <a name="mailbox-usage-reports"></a>Отчеты об использовании почтовых ящиков
 
@@ -18,7 +18,7 @@ ms.locfileid: "42447516"
 
 Эти отчеты позволяют получить сведения о пользователях почтовых ящиков и уровне их активности, основанном на количестве отправленных и полученных писем. Вы также можете посмотреть, сколько места занимает каждый почтовый ящик и сколько почтовых ящиков скоро превысят квоту хранилища.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).
+> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в статье [Отчеты Microsoft 365 — использование почтовых ящиков](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).
 
 ## <a name="reports"></a>Отчеты
 
@@ -28,3 +28,4 @@ ms.locfileid: "42447516"
 | [Получение количества почтовых ящиков](../api/reportroot-getmailboxusagemailboxcounts.md) | Поток      | Узнайте, сколько всего почтовых ящиков в организации и сколько из них были активный в отчетный период. Почтовый ящик считается активным, если пользователь отправил или прочитал по крайней мере одно письмо. |
 | [Получение количества почтовых ящиков по состоянию квоты](../api/reportroot-getmailboxusagequotastatusmailboxcounts.md) | Поток      | Узнайте, сколько почтовых ящиков пользователей в каждой категории квоты. |
 | [Получение занятого объема хранилища](../api/reportroot-getmailboxusagestorage.md) | Поток      | Узнайте, сколько места занято в хранилище организации. |
+

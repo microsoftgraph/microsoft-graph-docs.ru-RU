@@ -3,14 +3,14 @@ title: Перечисление объектов windowsInformationProtection
 description: Список свойств и связей объектов windowsInformationProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 160d0139b9583c478e8be96149e7059b6236fb5e
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: b2c2aab0ed66038c567e0b4dcbcb2fbb0122d311
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44175436"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082394"
 ---
 # <a name="list-windowsinformationprotections"></a>Перечисление объектов windowsInformationProtection
 
@@ -51,7 +51,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -202,6 +202,9 @@ Content-Length: 4565
   ]
 }
 ```
+
+
+
 
 
 

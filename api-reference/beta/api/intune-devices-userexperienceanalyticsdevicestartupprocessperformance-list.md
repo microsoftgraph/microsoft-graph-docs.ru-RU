@@ -3,14 +3,14 @@ title: Список Усерекспериенцеаналитиксдевице
 description: Список свойств и связей объектов Усерекспериенцеаналитиксдевицестартуппроцессперформанце.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b4cd5ae3f17f53fed3b9e30226f51262dd623fc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7951d4419ba7ae57af2130cbfc2f7970a99cd4ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424825"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082471"
 ---
 # <a name="list-userexperienceanalyticsdevicestartupprocessperformances"></a>Список Усерекспериенцеаналитиксдевицестартуппроцессперформанцес
 
@@ -46,10 +46,10 @@ GET /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,6 +82,9 @@ Content-Length: 399
   ]
 }
 ```
+
+
+
 
 
 

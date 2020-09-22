@@ -3,14 +3,14 @@ title: Создание Усерекспериенцеаналитиксдеви
 description: Создание нового объекта Усерекспериенцеаналитиксдевицестартуппроцессперформанце.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd406eb8ab714266876b16b82abfa283aab1c1ad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3e6229c411ac5dee65aae2da5aa7f0d90617ea35
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424862"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082492"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocessperformance"></a>Создание Усерекспериенцеаналитиксдевицестартуппроцессперформанце
 
@@ -46,15 +46,15 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксдевицестартуппроцессперформанце в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксдевицестартуппроцессперформанце.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор производительности процесса запуска устройства Analytics User Experience.|
-|процесснаме|String|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор производительности процесса запуска устройства Analytics User Experience.|
+|процесснаме|Строка|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
 |productName|String|Имя продукта для процесса запуска устройства Analytics Device (взаимодействие с пользователем).|
 |publisher|String|Издатель процесса запуска устройства Analytics User Experience.|
 |deviceCount|Int64|Сводка по процессу запуска при запуске устройства с пользовательским интерфейсом.|
@@ -63,7 +63,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,6 +104,9 @@ Content-Length: 334
   "totalImpactInMs": 15
 }
 ```
+
+
+
 
 
 

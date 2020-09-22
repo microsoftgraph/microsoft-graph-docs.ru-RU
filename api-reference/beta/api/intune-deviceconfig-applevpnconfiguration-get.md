@@ -3,14 +3,14 @@ title: Получение appleVpnConfiguration
 description: Чтение свойств и связей объекта appleVpnConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2efaae951576fc815168df9d6b47d62e2b81231a
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: c64a051bec1862ce27f81574fd5b0fe3144d1d77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46789848"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082940"
 ---
 # <a name="get-applevpnconfiguration"></a>Получение appleVpnConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "46789848"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +54,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3032
+Content-Length: 3140
 
 {
   "value": {
@@ -157,6 +157,10 @@ Content-Length: 3032
       }
     ],
     "providerType": "appProxy",
+    "excludedDomains": [
+      "Excluded Domains value"
+    ],
+    "disableOnDemandUserOverride": true,
     "proxyServer": {
       "@odata.type": "microsoft.graph.vpnProxyServer",
       "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -167,6 +171,9 @@ Content-Length: 3032
   }
 }
 ```
+
+
+
 
 
 

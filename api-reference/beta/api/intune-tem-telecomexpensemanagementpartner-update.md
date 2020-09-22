@@ -3,14 +3,14 @@ title: Обновление объекта telecomExpenseManagementPartner
 description: Обновление свойств объекта telecomExpenseManagementPartner.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e89287034cbffdfe892558c0258c2db412d62fce
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c9d3f218f17edfdea700059cbe8aed4e327d7cbc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457480"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082177"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>Обновление объекта telecomExpenseManagementPartner
 
@@ -46,14 +46,14 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор партнера TEM.|
+|id|Строка|Уникальный идентификатор партнера TEM.|
 |displayName|Строка|Отображаемое имя партнера TEM.|
 |url|String|URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.|
 |appAuthorized|Boolean|Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.|
@@ -101,6 +101,9 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
+
 
 
 

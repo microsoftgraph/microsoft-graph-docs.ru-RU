@@ -3,14 +3,14 @@ title: Создание Виндовсфеатуреупдатепрофилеа
 description: Создание нового объекта Виндовсфеатуреупдатепрофилеассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 978a0e7b9c1c0b167bcf08c63d32fad8dc24b57c
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: dc08579bd23a73d6786555943dd2167284b19427
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791302"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082324"
 ---
 # <a name="create-windowsfeatureupdateprofileassignment"></a>Создание Виндовсфеатуреупдатепрофилеассигнмент
 
@@ -46,14 +46,14 @@ POST /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfile
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Виндовсфеатуреупдатепрофилеассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсфеатуреупдатепрофилеассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор объекта.|
+|id|Строка|Идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, которой назначен профиль обновления компонента.|
 
 
@@ -97,6 +97,9 @@ Content-Length: 393
   }
 }
 ```
+
+
+
 
 
 

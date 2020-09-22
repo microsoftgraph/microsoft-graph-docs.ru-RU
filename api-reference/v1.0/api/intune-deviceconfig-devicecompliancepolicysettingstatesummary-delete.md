@@ -3,14 +3,14 @@ title: Удаление объекта deviceCompliancePolicySettingStateSummary
 description: Удаляет объект deviceCompliancePolicySettingStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9c194f5249da2bd978fa19f50d962b5c9ef3f43
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7034eea0960e4e06d41ccb26b2d23c1857bb1405
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399889"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083458"
 ---
 # <a name="delete-devicecompliancepolicysettingstatesummary"></a>Удаление объекта deviceCompliancePolicySettingStateSummary
 
@@ -44,10 +44,10 @@ DELETE /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -58,11 +58,14 @@ DELETE /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComp
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

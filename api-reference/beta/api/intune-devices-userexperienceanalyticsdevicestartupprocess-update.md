@@ -3,14 +3,14 @@ title: Обновление Усерекспериенцеаналитиксде
 description: Обновление свойств объекта Усерекспериенцеаналитиксдевицестартуппроцесс.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7efdaddcb73c2ffa8c3aa4013c63ecd04520130b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8e8bc2d18d4028c849d7046b62aaa2034ca0b436
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424919"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082499"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocess"></a>Обновление Усерекспериенцеаналитиксдевицестартуппроцесс
 
@@ -46,23 +46,23 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses/{userExper
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор процесса запуска устройства аналитики взаимодействия с пользователем.|
-|манажеддевицеид|String|Идентификатор устройства службы аналитики взаимодействия с пользователем.|
-|процесснаме|String|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор процесса запуска устройства аналитики взаимодействия с пользователем.|
+|манажеддевицеид|Строка|Идентификатор устройства службы аналитики взаимодействия с пользователем.|
+|процесснаме|Строка|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
 |productName|String|Имя продукта для процесса запуска устройства Analytics Device (взаимодействие с пользователем).|
 |publisher|String|Издатель процесса запуска устройства Analytics User Experience.|
 |стартупимпактинмс|Int32|Влияние процесса запуска пользователя на устройство Analytics в миллисекундах.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,6 +101,9 @@ Content-Length: 325
   "startupImpactInMs": 1
 }
 ```
+
+
+
 
 
 

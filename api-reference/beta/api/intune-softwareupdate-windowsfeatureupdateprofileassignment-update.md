@@ -3,14 +3,14 @@ title: Обновление Виндовсфеатуреупдатепрофил
 description: Обновление свойств объекта Виндовсфеатуреупдатепрофилеассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97a6cf5562c92498769f81a262e3fb290c689b4b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 43a6e1fb6a6f0d4bf65c212cc359bbd8a6dc2f2b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791281"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082247"
 ---
 # <a name="update-windowsfeatureupdateprofileassignment"></a>Обновление Виндовсфеатуреупдатепрофилеассигнмент
 
@@ -46,14 +46,14 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [виндовсфеатуреупдатепрофилеассигнмент](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [виндовсфеатуреупдатепрофилеассигнмент](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор объекта.|
+|id|Строка|Идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, которой назначен профиль обновления компонента.|
 
 
@@ -97,6 +97,9 @@ Content-Length: 393
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Список Усерекспериенцеаналитиксдевице
 description: Список свойств и связей объектов Усерекспериенцеаналитиксдевицестартуфистори.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 460e96c313d5231ec3059cc01f269430dc1deaae
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 2b5563bcdfcdf78f16f931ddec99c20037c45d23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791339"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082597"
 ---
 # <a name="list-userexperienceanalyticsdevicestartuphistories"></a>Список Усерекспериенцеаналитиксдевицестартуфисториес
 
@@ -29,7 +29,7 @@ ms.locfileid: "46791339"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,7 +49,7 @@ GET /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 722
+Content-Length: 834
 
 {
   "value": [
@@ -85,11 +85,16 @@ Content-Length: 722
       "isFirstLogin": true,
       "isFeatureUpdate": true,
       "operatingSystemVersion": "Operating System Version value",
-      "restartCategory": "restartWithUpdate"
+      "restartCategory": "restartWithUpdate",
+      "restartStopCode": "Restart Stop Code value",
+      "restartFaultBucket": "Restart Fault Bucket value"
     }
   ]
 }
 ```
+
+
+
 
 
 

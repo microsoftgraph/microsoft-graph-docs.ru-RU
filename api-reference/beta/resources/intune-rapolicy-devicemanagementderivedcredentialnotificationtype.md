@@ -3,14 +3,14 @@ title: тип перечисления Девицеманажементдери�
 description: Поддерживаемые значения для используемого типа уведомления.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b7719f208667f4ee9fdc9d8ebd328196cbec064
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8609b73a217fb33f982690eb1eaa9d391a619e3c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389144"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084431"
 ---
 # <a name="devicemanagementderivedcredentialnotificationtype-enum-type"></a>тип перечисления Девицеманажементдериведкредентиалнотификатионтипе
 
@@ -25,9 +25,12 @@ ms.locfileid: "43389144"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Отсутствует|
-|компанипортал|1,1|Корпоративный портал|
-|email|2|Электронная почта|
+|Нет|нуль|Нет|
+|компанипортал|1 |Корпоративный портал|
+|email|2 |Электронная почта|
+
+
+
 
 
 

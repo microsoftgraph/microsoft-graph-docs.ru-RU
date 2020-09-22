@@ -3,14 +3,14 @@ title: Перечисление объектов iosCustomConfiguration
 description: Список свойств и связей объектов iosCustomConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b333e5cb76c7232994b94190539196e0a1692208
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 95aab8ca8c825653a99abc4a4d160f5a49c2f85d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432892"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082639"
 ---
 # <a name="list-ioscustomconfigurations"></a>Перечисление объектов iosCustomConfiguration
 
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -110,6 +110,9 @@ Content-Length: 1489
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Действие targetApps
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a65481a3aca705d8aa0b003fc47787ee81817daa
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a625a72cb82dd8e9908c5ccb6392991104aefcb8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178621"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082450"
 ---
 # <a name="targetapps-action"></a>Действие targetApps
 
@@ -55,7 +55,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|apps|Коллекция [managedMobileApp](../resources/intune-mam-managedmobileapp.md)|Н/Д|
+|apps|Коллекция [managedMobileApp](../resources/intune-mam-managedmobileapp.md)|Пока нет описания|
 
 
 
@@ -92,6 +92,9 @@ Content-length: 335
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

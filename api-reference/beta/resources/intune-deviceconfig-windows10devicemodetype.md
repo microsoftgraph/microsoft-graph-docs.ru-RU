@@ -3,14 +3,14 @@ title: тип перечисления windows10DeviceModeType
 description: Тип устройства Windows 10.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 069c4905dbb61b5001ead87be7a262df84e2cbe8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4a426c859c24c5cd31924459d31638ed2c1c2ed9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466922"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084893"
 ---
 # <a name="windows10devicemodetype-enum-type"></a>тип перечисления windows10DeviceModeType
 
@@ -26,7 +26,10 @@ ms.locfileid: "43466922"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |стандардконфигуратион|нуль|Стандартная конфигурация|
-|смодеконфигуратион|1,1|Конфигурация режима S|
+|смодеконфигуратион|1 |Конфигурация режима S|
+
+
+
 
 
 

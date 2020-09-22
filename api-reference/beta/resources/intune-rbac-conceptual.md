@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 57fc5084c2c57570f12dd8d56887a5b270d287d0
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a95c71613755cd9853cca4a56d4cd36caf0d7df7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179174"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084424"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Управление доступом на основе ролей в Microsoft Intune
 
@@ -36,3 +36,5 @@ ms.locfileid: "44179174"
 - [Разрешение роли](intune-rbac-rolepermission.md)
 - [Тег области роли](intune-rbac-rolescopetag.md)
 - [Автоматическое назначение тега области применения роли](intune-rbac-rolescopetagautoassignment.md)
+
+

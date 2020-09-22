@@ -3,14 +3,14 @@ title: List deviceComplianceDeviceStatuses
 description: Перечисление свойств и связей объектов deviceComplianceDeviceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b30d4e853af5e1193900da1951fae5b0e0315c81
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f0eda119119dd2b85659740a2adf4bf7c828af74
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43400260"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083584"
 ---
 # <a name="list-devicecompliancedevicestatuses"></a>List deviceComplianceDeviceStatuses
 
@@ -44,10 +44,10 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -81,6 +81,9 @@ Content-Length: 544
   ]
 }
 ```
+
+
+
 
 
 

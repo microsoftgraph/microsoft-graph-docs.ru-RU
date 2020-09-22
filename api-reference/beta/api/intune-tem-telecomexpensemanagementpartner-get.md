@@ -3,14 +3,14 @@ title: Получение объекта telecomExpenseManagementPartner
 description: Чтение свойств и связей объекта telecomExpenseManagementPartner.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3bcdc2551c1b6beba3347be74d2c9a93677ccd7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e6941ec9a1f857fa91fd04cec3c60a2600d1c7c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457558"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082191"
 ---
 # <a name="get-telecomexpensemanagementpartner"></a>Получение объекта telecomExpenseManagementPartner
 
@@ -49,10 +49,10 @@ GET /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -82,6 +82,9 @@ Content-Length: 330
   }
 }
 ```
+
+
+
 
 
 

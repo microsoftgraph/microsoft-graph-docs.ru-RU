@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементдериведкр�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f7456cbf22a17606dd07015ac81b0a72a041660
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 78808c25c86683fd7a9fb6e8e7466ac4ddbaa7b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407976"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084340"
 ---
 # <a name="devicemanagementderivedcredentialsettings-resource-type"></a>Тип ресурса Девицеманажементдериведкредентиалсеттингс
 
@@ -39,7 +39,7 @@ ms.locfileid: "43407976"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для производных учетных данных|
+|id|Строка|Уникальный идентификатор для производных учетных данных|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,6 +58,9 @@ ms.locfileid: "43407976"
   "id": "String (identifier)"
 }
 ```
+
+
+
 
 
 

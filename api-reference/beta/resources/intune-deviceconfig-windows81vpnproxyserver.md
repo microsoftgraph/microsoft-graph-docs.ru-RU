@@ -3,14 +3,14 @@ title: Тип ресурса windows81VpnProxyServer
 description: VPN-прокси-сервер.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5d7744fe2c501c09ff5fb2e810e61e57e91a75e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0226b443922b3adb03a186397f2a569e9dccbad0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467789"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084564"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>Тип ресурса windows81VpnProxyServer
 
@@ -28,7 +28,7 @@ VPN-прокси-сервер.
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|аутоматикконфигуратионскриптурл|String|URL-адрес скрипта автоматической настройки прокси-сервера. Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|аутоматикконфигуратионскриптурл|Строка|URL-адрес скрипта автоматической настройки прокси-сервера. Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|String|Address. Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |порта|Int32|Порта. Допустимые значения — от 0 до 65535, наследуемые от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |аутоматикаллидетектпроксисеттингс|Boolean|Автоматически определять параметры прокси-сервера.|
@@ -54,6 +54,9 @@ VPN-прокси-сервер.
   "bypassProxyServerForLocalAddress": true
 }
 ```
+
+
+
 
 
 

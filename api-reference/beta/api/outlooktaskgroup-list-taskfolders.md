@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f989fbfb0d4ecc99959bf267d245507df7b65d76
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 7a087520acd3bffb6a0e7a7ed429857b7b6610e3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082219"
 ---
 # <a name="list-taskfolders-deprecated"></a>Список Таскфолдерс (не рекомендуется)
 
@@ -117,3 +117,5 @@ Content-length: 200
   ]
 }
 -->
+
+

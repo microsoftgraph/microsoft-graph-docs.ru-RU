@@ -3,14 +3,14 @@ title: Тип ресурса groupAssignmentTarget
 description: Представляет ресурс, назначенный группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5800977f704b82ba83d82b7a0acdda8a2d6e6df2
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 8ede502c06ffcaef4f3d9be2f133ea6eb591d5de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793432"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084284"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>Тип ресурса groupAssignmentTarget
 
@@ -28,8 +28,8 @@ ms.locfileid: "44793432"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|девицеандаппманажементассигнментфилтерид|String|Идентификатор фильтра для назначения назначения. Наследуется от [девицеандаппманажементассигнменттаржет](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
-|девицеандаппманажементассигнментфилтертипе|[девицеандаппманажементассигнментфилтертипе](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|Тип фильтра целевого назначения, например, Exclude или include. Наследуется от [девицеандаппманажементассигнменттаржет](../resources/intune-shared-deviceandappmanagementassignmenttarget.md). Возможные значения: `none`, `include`.|
+|девицеандаппманажементассигнментфилтерид|Строка|Идентификатор фильтра для назначения назначения. Наследуется от [девицеандаппманажементассигнменттаржет](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
+|deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|Тип фильтра целевого назначения, например, Exclude или include. Наследуется от [девицеандаппманажементассигнменттаржет](../resources/intune-shared-deviceandappmanagementassignmenttarget.md). Возможные значения: `none`, `include`.|
 |groupId|String|Идентификатор группы-объекта назначения.|
 
 ## <a name="relationships"></a>Связи
@@ -50,6 +50,9 @@ ms.locfileid: "44793432"
   "groupId": "String"
 }
 ```
+
+
+
 
 
 

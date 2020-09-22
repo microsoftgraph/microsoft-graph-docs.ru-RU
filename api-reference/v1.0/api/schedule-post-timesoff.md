@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cd6b937cb10444fee8004001a81dd22f281dd845
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: c9c4f3d95e828e1886e1cc3d474830059de1349a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "44217533"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083185"
 ---
 # <a name="create-timeoff"></a>Создание Тимеофф
 
@@ -26,7 +26,7 @@ ms.locfileid: "44217533"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule.ReadWrite.All |
+|Для приложения | Schedule.ReadWrite.All |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
@@ -159,3 +159,4 @@ Content-length: 401
   ]
 }
 -->
+
