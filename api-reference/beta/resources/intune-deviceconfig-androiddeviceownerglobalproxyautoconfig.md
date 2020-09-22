@@ -3,14 +3,14 @@ title: Тип ресурса Андроиддевицеовнерглобалп�
 description: Автонастройка глобального прокси-сервера владельца устройств Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3cee579dbd5a8dee57b270e117a0c50aca377f94
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d6bbc652d3191d7129a0c44546e2360ccabbf0c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43402987"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085173"
 ---
 # <a name="androiddeviceownerglobalproxyautoconfig-resource-type"></a>Тип ресурса Андроиддевицеовнерглобалпроксяутоконфиг
 
@@ -28,7 +28,7 @@ ms.locfileid: "43402987"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|проксяутоконфигурл|String|URL-адрес автоматической настройки прокси-сервера|
+|проксяутоконфигурл|Строка|URL-адрес автоматической настройки прокси-сервера|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -46,6 +46,9 @@ ms.locfileid: "43402987"
   "proxyAutoConfigURL": "String"
 }
 ```
+
+
+
 
 
 

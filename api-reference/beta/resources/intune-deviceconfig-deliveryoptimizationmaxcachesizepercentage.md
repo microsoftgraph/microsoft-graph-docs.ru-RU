@@ -3,14 +3,14 @@ title: Тип ресурса Деливерйоптимизатионмакск�
 description: 'Оптимизация доставки: максимальный размер кэша типы в процентах.'
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cd4f706009990a0257a6f58cf15dd8fce87c498
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6df7f0cdb84af15e9b4cea0856abcc75e7b2812c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420412"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085152"
 ---
 # <a name="deliveryoptimizationmaxcachesizepercentage-resource-type"></a>Тип ресурса Деливерйоптимизатионмакскачесизеперцентаже
 
@@ -46,6 +46,9 @@ ms.locfileid: "43420412"
   "maximumCacheSizePercentage": 1024
 }
 ```
+
+
+
 
 
 

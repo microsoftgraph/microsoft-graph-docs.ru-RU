@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 72c9e425a74f10d066b2fd958126623a5f900601
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0d18ed3e6628575d870ebb10f1a3aea816faea8d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809966"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085544"
 ---
 # <a name="get-recent-user-activities"></a>Получение последних действий пользователя
 
@@ -66,7 +66,7 @@ GET /me/activities/recent
 
 Не указывайте текст запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика с последними действиями пользователя для вашего приложения.
 
@@ -157,3 +157,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

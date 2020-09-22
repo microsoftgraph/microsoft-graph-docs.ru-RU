@@ -3,14 +3,14 @@ title: Тип ресурса Андроиддевицеовнерглобалп�
 description: Глобальный прокси-сервер владельца устройств Android Direct.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f1b57ebdfb44504295824637352d543ff64111e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 020ad601a261427df8a573c38e4b992a830d31bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463488"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085159"
 ---
 # <a name="androiddeviceownerglobalproxydirect-resource-type"></a>Тип ресурса Андроиддевицеовнерглобалпроксидирект
 
@@ -28,9 +28,9 @@ ms.locfileid: "43463488"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|host|String|Имя узла|
+|host|Строка|Имя узла|
 |порта|Int32|Порт|
-|ексклудедхостс|Коллекция объектов string|Исключенные узлы|
+|ексклудедхостс|Коллекция String|Исключенные узлы|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -52,6 +52,9 @@ ms.locfileid: "43463488"
   ]
 }
 ```
+
+
+
 
 
 

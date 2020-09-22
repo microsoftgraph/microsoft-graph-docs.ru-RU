@@ -3,14 +3,14 @@ title: тип перечисления Деливерйоптимизатион�
 description: Значения, с помощью которых можно ограничить выбор однорангового узла.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fe29baa6ecd6951745e590ba309374c24cb2f08f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6c8a1f44050d2dc25e84529e1bab1d8c25e4a207
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085138"
 ---
 # <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>тип перечисления Деливерйоптимизатионрестриктпирселектионбйоптионс
 
@@ -26,7 +26,10 @@ ms.locfileid: "43420405"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|Сети|1,1|Маска подсети.|
+|Сети|1 |Маска подсети.|
+
+
+
 
 
 

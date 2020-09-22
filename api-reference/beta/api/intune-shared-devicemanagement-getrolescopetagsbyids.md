@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57532f6eaf9f4ba8a6dfa4efe37930e3121bc8cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a63e3f1defaa5a0be7f650424bd8a111fb468cbf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43390139"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085593"
 ---
 # <a name="getrolescopetagsbyids-function"></a>Функция Жетролескопетагсбидс
 
@@ -47,7 +47,7 @@ GET /deviceManagement/getRoleScopeTagsByIds
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -58,7 +58,7 @@ GET /deviceManagement/getRoleScopeTagsByIds
 
 
 ## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [ролескопетаг](../resources/intune-rbac-rolescopetag.md) в тексте отклика.
+В случае успеха эта функция возвращает `200 OK` код отклика и коллекцию [ролескопетаг](../resources/intune-rbac-rolescopetag.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -87,6 +87,9 @@ Content-Length: 231
   ]
 }
 ```
+
+
+
 
 
 

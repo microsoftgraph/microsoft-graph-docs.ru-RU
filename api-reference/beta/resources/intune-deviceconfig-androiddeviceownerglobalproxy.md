@@ -3,14 +3,14 @@ title: Тип ресурса Андроиддевицеовнерглобалп�
 description: Глобальный прокси-сервер владельца устройства Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c004d42aa5a6f260238407630a4c84952e62e733
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 250e3225a5bd2105d7607b02d3f6535abd665613
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403002"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085166"
 ---
 # <a name="androiddeviceownerglobalproxy-resource-type"></a>Тип ресурса Андроиддевицеовнерглобалпрокси
 
@@ -41,6 +41,9 @@ ms.locfileid: "43403002"
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGlobalProxy"
 }
 ```
+
+
+
 
 
 

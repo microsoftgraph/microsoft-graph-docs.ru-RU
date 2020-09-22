@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 86bff5b76b30e832f355ebac57af96e4948feabc
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 43b36f83206981d3f5e748365dcf5fd2b7e07563
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809952"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085474"
 ---
 # <a name="create-or-replace-an-activity"></a>Создание или замена действия
 
@@ -50,7 +50,7 @@ PUT /me/activities/{appActivityId}
 
 В тексте запроса добавьте представление объекта [Activity](../resources/projectrome-activity.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если действие было создано, или `200 OK` Если действие было заменено.
 
@@ -112,7 +112,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
     "blockType": "ignored",
@@ -308,3 +308,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

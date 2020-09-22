@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a6ff5b6d9031c142821728b31cb66f8b0c5d100f
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: a9e0f2602840344db0f9c6464f709e1c44c9a8ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845472"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085454"
 ---
 # <a name="reports-getprinterarchivedprintjobs"></a>отчеты: Жетпринтерарчиведпринтжобс
 
@@ -44,7 +44,7 @@ GET /reports/getPrinterArchivedPrintJobs
 
 ## <a name="function-parameters"></a>Параметры функции
 
-| Параметр     | Тип                 | Обязательный? | Description                                                          |
+| Параметр     | Тип                 | Обязательный? | Описание                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `printerId`   | `Edm.String`         | Да       | ИДЕНТИФИКАТОР принтера, для которого возвращаются данные.                            |
 | `periodStart` | `Edm.DateTimeOffset` | Нет        | Дата начала (включительно) периода времени, из которого требуется включить данные. |
@@ -101,3 +101,4 @@ Content-length: 236
   "section": "documentation",
   "tocPath": ""
 }-->
+
