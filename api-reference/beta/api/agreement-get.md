@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 3ed5925410f71acefecad4409f317d681c2db97a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: b36536d35a238cedd10c2affb7c0d384b8d3406c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218011"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997187"
 ---
 # <a name="get-agreement"></a>Получение соглашения
 
@@ -45,7 +45,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Agreement](../resources/agreement.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -111,3 +111,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

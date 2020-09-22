@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: e729400d27bee48a83079b95ea27bed072bc33c2
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 07b8fce1de78ac062ae9ea38ed4d22a5d345cace
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217990"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997139"
 ---
 # <a name="update-agreement"></a>Обновление соглашения
 
@@ -46,7 +46,7 @@ PATCH /agreements/{id}
 |displayName|String|Отображаемое имя соглашения.|
 |исвиевингбефореакцептанцерекуиред|Boolean|Следует ли пользователю разворачивать и просматривать соглашение перед принятием.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [Agreement](../resources/agreement.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -113,3 +113,5 @@ Content-length: 105
   ]
 }
 -->
+
+
