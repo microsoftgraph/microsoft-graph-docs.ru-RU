@@ -3,14 +3,14 @@ title: Обновление Оффицеклиентконфигуратиона
 description: Обновление свойств объекта Оффицеклиентконфигуратионассигнмент.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1125ab17915aaf56f5c5a334bd1775c1acf5be8a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c9c15a9ee6a9a6429453fc9eaca2b8242c2e4ea2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436752"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975250"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>Обновление Оффицеклиентконфигуратионассигнмент
 
@@ -43,7 +43,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,7 +54,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
-|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Пока нет описания|
+|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Пока не задокументировано.|
 
 
 
@@ -92,6 +92,9 @@ Content-Length: 221
   }
 }
 ```
+
+
+
 
 
 

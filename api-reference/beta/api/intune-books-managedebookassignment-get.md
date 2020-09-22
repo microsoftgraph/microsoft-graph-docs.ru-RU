@@ -3,14 +3,14 @@ title: Get managedEBookAssignment
 description: Чтение свойств и связей объекта managedEBookAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d34aa9c1a5970fba3c90477929c5ccd735d1171
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c4773514e81763369823a7729eb20e968ce87db4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793201"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975551"
 ---
 # <a name="get-managedebookassignment"></a>Get managedEBookAssignment
 
@@ -40,13 +40,13 @@ ms.locfileid: "44793201"
 GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -83,6 +83,9 @@ Content-Length: 439
   }
 }
 ```
+
+
+
 
 
 

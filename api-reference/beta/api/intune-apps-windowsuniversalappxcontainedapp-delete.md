@@ -3,14 +3,14 @@ title: Удаление Виндовсуниверсалаппксконтаин
 description: Удаляет объект Виндовсуниверсалаппксконтаинедапп.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4dc7517642a6688574dcb2af30609b34c4296ad6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 83aa21a36316ee43b00bae11a31ac196c6e10ffb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408845"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976006"
 ---
 # <a name="delete-windowsuniversalappxcontainedapp"></a>Удаление Виндовсуниверсалаппксконтаинедапп
 
@@ -45,13 +45,13 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniv
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -62,11 +62,14 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniv
 DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/containedApps/{mobileContainedAppId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

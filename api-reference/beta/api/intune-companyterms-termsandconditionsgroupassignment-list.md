@@ -3,14 +3,14 @@ title: Список Термсандкондитионсграупассигнм
 description: Список свойств и связей объектов Термсандкондитионсграупассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a239ea7c7e2c046dde7d2d92f0b9a4c421f2fc14
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9fa77394fd7505b0edb8526790f42c0e475c3cf5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436338"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974851"
 ---
 # <a name="list-termsandconditionsgroupassignments"></a>Список Термсандкондитионсграупассигнментс
 
@@ -43,13 +43,13 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -77,6 +77,9 @@ Content-Length: 214
   ]
 }
 ```
+
+
+
 
 
 

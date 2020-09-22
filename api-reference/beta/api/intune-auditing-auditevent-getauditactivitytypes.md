@@ -3,14 +3,14 @@ title: Функция getAuditActivityTypes
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac5aba223fbac4face840e89ae417650ae19a096
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c730a5154cbd9b8ab23572fbf9950077c6824abd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392980"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975908"
 ---
 # <a name="getauditactivitytypes-function"></a>Функция getAuditActivityTypes
 
@@ -43,7 +43,7 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -52,7 +52,7 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|category|String|Н/Д|
+|category|String|Пока не задокументировано.|
 
 
 
@@ -80,6 +80,9 @@ Content-Length: 61
   ]
 }
 ```
+
+
+
 
 
 

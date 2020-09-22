@@ -3,14 +3,14 @@ title: Создание Термсандкондитионсграупассиг
 description: Создание нового объекта Термсандкондитионсграупассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e0602405de0ad794f200cdcd2dd376c051bb56e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6a4d8ebc2c75b995d513bb2564362f3cbf32a50e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436547"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974893"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>Создание Термсандкондитионсграупассигнмент
 
@@ -43,7 +43,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -58,7 +58,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,6 +89,9 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
+
+
+
 
 
 

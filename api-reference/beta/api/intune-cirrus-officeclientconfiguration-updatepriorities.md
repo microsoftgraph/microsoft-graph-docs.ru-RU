@@ -3,14 +3,14 @@ title: Действие updatePriorities
 description: Обновление приоритетов политики.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 07bbff5017523849d3be81b800bb2ea37eab1cd8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 761cf4d51d5047f753dc87a35e0ba17740dacdb6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392062"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975320"
 ---
 # <a name="updatepriorities-action"></a>Действие updatePriorities
 
@@ -43,7 +43,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|оффицеконфигуратионполициидс|Коллекция объектов string|Список идентификаторов политик конфигурации Office|
+|оффицеконфигуратионполициидс|Коллекция String|Список идентификаторов политик конфигурации Office|
 |оффицеконфигуратионприоритиес|Коллекция Int32|Список приоритетов конфигурации Office|
 
 
@@ -86,6 +86,9 @@ Content-length: 143
 ``` http
 HTTP/1.1 200 OK
 ```
+
+
+
 
 
 

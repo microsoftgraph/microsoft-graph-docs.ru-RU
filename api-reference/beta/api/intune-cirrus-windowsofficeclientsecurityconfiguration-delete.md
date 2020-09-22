@@ -3,14 +3,14 @@ title: Удаление Виндовсоффицеклиентсекуритик
 description: Удаляет политику безопасности Виндовсоффицеклиентсекуритиконфигуратион.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ac3b985d68fc28e8e9e80bbe495e86f1b75f06c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 444d901566f11da980d7f15fdfe1df442062bf00
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436671"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975159"
 ---
 # <a name="delete-windowsofficeclientsecurityconfiguration"></a>Удаление Виндовсоффицеклиентсекуритиконфигуратион
 
@@ -43,13 +43,13 @@ DELETE /officeConfiguration/clientConfigurations/{key}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 ## <a name="example"></a>Пример
@@ -60,11 +60,14 @@ DELETE /officeConfiguration/clientConfigurations/{key}
 DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{key}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 ```
+
+
+
 
 
 

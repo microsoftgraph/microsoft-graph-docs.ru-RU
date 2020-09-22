@@ -3,14 +3,14 @@ title: Функция getAuditCategories
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 32488a84164e558a40a240212288ea6c58eea5ba
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 2502c2eaf8278550bc0c71b3c72f62bb989b77c5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43392932"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975894"
 ---
 # <a name="getauditcategories-function"></a>Функция getAuditCategories
 
@@ -46,10 +46,10 @@ GET /deviceManagement/auditEvents/getAuditCategories
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию String в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -73,6 +73,9 @@ Content-Length: 57
   ]
 }
 ```
+
+
+
 
 
 

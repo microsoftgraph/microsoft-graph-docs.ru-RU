@@ -3,14 +3,14 @@ title: Get managedEBook
 description: Чтение свойств и связей объекта managedEBook.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 32848bfd81dbc94b74a99f505f95482732451457
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1827438d6013872500aac04ed8a25e682f871301
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392497"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975600"
 ---
 # <a name="get-managedebook"></a>Get managedEBook
 
@@ -40,19 +40,19 @@ ms.locfileid: "43392497"
 GET /deviceAppManagement/managedEBooks/{managedEBookId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [managedEBook](../resources/intune-books-managedebook.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -90,6 +90,9 @@ Content-Length: 712
   }
 }
 ```
+
+
+
 
 
 

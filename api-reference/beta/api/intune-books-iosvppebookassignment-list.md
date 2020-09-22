@@ -3,14 +3,14 @@ title: Перечисление объектов iosVppEBookAssignment
 description: Список свойств и связей объектов iosVppEBookAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4a98dee31c239fac23082407d9f20575cb6935b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 54704ee6fcdffdbf9a33ebb5b6e2a090647b8df3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793229"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975656"
 ---
 # <a name="list-iosvppebookassignments"></a>Перечисление объектов iosVppEBookAssignment
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -82,6 +82,9 @@ Content-Length: 474
   ]
 }
 ```
+
+
+
 
 
 
