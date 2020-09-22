@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a544865ca3833b722f6cc0f188ecd12fb4dad719
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: cd968b8902bf3a6b8bf1c60b005992c6e120d633
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812193"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074855"
 ---
 # <a name="sizerange-resource-type"></a>Тип ресурса sizeRange
 
@@ -26,7 +26,7 @@ ms.locfileid: "46812193"
 | minimumSize | Int32 | Минимальный размер (в килобайтах) входящего сообщения, при котором применяется условие или исключение. |
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
@@ -53,3 +53,4 @@ ms.locfileid: "46812193"
   "section": "documentation",
   "tocPath": ""
 }-->
+

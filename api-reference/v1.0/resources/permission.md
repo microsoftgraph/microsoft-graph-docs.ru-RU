@@ -7,12 +7,12 @@ localization_priority: Priority
 description: Ресурс Permission содержит сведения о разрешении на совместный доступ, предоставленном для ресурса DriveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7a60b07e2368d16f588e96094926138908463310
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 0736268bfa2670a3afd05874a44a9a72f81621e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657933"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074883"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса Permission
 
@@ -247,3 +247,4 @@ ms.locfileid: "46657933"
   "section": "documentation",
   "tocPath": "Resources/Permission"
 } -->
+

@@ -3,14 +3,14 @@ title: Список Андроидворкпрофилекомплианцепо
 description: Список свойств и связей объектов androidWorkProfileCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f9d87434f36214a354995fa4f007f4fe657c2691
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4eb885e74d7cffd8527347433319062f9e906ca9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435258"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074729"
 ---
 # <a name="list-androidworkprofilecompliancepolicies"></a>Список АндроидворкпрофилекомплианцеполиЦиес
 
@@ -46,10 +46,10 @@ GET /deviceManagement/deviceCompliancePolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -107,6 +107,9 @@ Content-Length: 1687
   ]
 }
 ```
+
+
+
 
 
 

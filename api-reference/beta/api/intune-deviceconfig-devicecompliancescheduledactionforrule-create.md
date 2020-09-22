@@ -3,14 +3,14 @@ title: Создание объекта deviceComplianceScheduledActionForRule
 description: Создание объекта deviceComplianceScheduledActionForRule.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8467b36427fff27579966ffd9ac7df86835d39d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fca9632f3ef41756e6e903005770f20bf3a200f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433907"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074701"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>Создание объекта deviceComplianceScheduledActionForRule
 
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта deviceComplianceScheduledActionForRule в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceComplianceScheduledActionForRule.
@@ -89,6 +89,9 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
+
+
+
 
 
 

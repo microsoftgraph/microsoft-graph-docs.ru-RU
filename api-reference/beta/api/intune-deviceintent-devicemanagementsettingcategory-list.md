@@ -3,14 +3,14 @@ title: Список Девицеманажементсеттингкатегор
 description: Список свойств и связей объектов Девицеманажементсеттингкатегори.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a36b6554d5a56b4819e1dbfaf258f42059b62065
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8271f31b645991ade247fc2ca8ac9fc88989fc9e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427856"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074687"
 ---
 # <a name="list-devicemanagementsettingcategories"></a>Список Девицеманажементсеттингкатегориес
 
@@ -46,10 +46,10 @@ GET /deviceManagement/categories
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -78,6 +78,9 @@ Content-Length: 242
   ]
 }
 ```
+
+
+
 
 
 

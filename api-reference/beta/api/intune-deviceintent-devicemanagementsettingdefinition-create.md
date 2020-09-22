@@ -3,14 +3,14 @@ title: Создание Девицеманажементсеттингдефин
 description: Создание нового объекта Девицеманажементсеттингдефинитион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba658fe605034703c2565f3f8f3a6d70cd6685de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8c92467d3ad05422da91e5da5eccaf1df3b2a709
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074680"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>Создание Девицеманажементсеттингдефинитион
 
@@ -49,7 +49,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементсеттингдефинитион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементсеттингдефинитион.
@@ -58,18 +58,18 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |:---|:---|:---|
 |id|String|Идентификатор определения параметра|
 |Типом|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|Строка|Отображаемое имя параметра|
+|displayName|String|Отображаемое имя параметра|
 |истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
 |description|String|Описание параметра|
 |плацехолдертекст|String|Замещающий текст в качестве примера допустимых входных данных|
 |документатионурл|String|URL-адрес для установки документации|
-|keywords|Коллекция объектов string|Ключевые слова, связанные с параметром|
+|keywords|Коллекция String|Ключевые слова, связанные с параметром|
 |провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра|
 |зависящ|Коллекция [девицеманажементсеттингдепенденци](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей для других параметров|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -160,6 +160,9 @@ Content-Length: 977
   ]
 }
 ```
+
+
+
 
 
 
