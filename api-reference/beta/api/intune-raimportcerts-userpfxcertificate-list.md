@@ -3,14 +3,14 @@ title: Список Усерпфксцертификатес
 description: Список свойств и связей объектов Усерпфксцертификате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b418e2fa33294d76cbaa6597dd82147d3ce0b2af
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1c9d884e3833e4934c4a8348d81a8b51ceee9926
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43377316"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010908"
 ---
 # <a name="list-userpfxcertificates"></a>Список Усерпфксцертификатес
 
@@ -46,10 +46,10 @@ GET /deviceManagement/userPfxCertificates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [усерпфксцертификате](../resources/intune-raimportcerts-userpfxcertificate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -88,6 +88,9 @@ Content-Length: 784
   ]
 }
 ```
+
+
+
 
 
 

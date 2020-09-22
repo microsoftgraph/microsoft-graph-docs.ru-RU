@@ -3,14 +3,14 @@ title: Функция Исманажедаппусерблоккед
 description: Получает состояние блокировки пользователя управляемого приложения.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1c75fe59bfdeb90e8ebce95ca0ebda385cd0f6f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b50a42e4b1994f2efded79d617d5e9484693d55c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466520"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011013"
 ---
 # <a name="ismanagedappuserblocked-function"></a>Функция Исманажедаппусерблоккед
 
@@ -43,13 +43,13 @@ GET /users/{usersId}/isManagedAppUserBlocked
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект Boolean в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -71,6 +71,9 @@ Content-Length: 21
   "value": true
 }
 ```
+
+
+
 
 
 

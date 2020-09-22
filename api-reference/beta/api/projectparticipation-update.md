@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6a50fbae387a7599110dce8056f927f449681e04
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c44ab0be22873ae37120d99ef86b70df586eb918
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810034"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010607"
 ---
 # <a name="update-projectparticipation"></a>Обновление прожектпартиЦипатион
 
@@ -62,7 +62,7 @@ PATCH /users/{id | userPrincipalName}/profile/projects/{id}
 |выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |спонсорами|Коллекция [релатедперсон](../resources/relatedperson.md)|Пользователь или люди, которые спонсорируют проект.    |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [прожектпартиЦипатион](../resources/projectparticipation.md) в тексте отклика.
 
@@ -176,3 +176,5 @@ Content-type: application/json
   "sponsors": null
 }
 ```
+
+

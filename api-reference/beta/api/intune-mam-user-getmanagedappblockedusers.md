@@ -3,14 +3,14 @@ title: Функция Жетманажедаппблоккедусерс
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: edfd5ab37483b9acf1ed282129fa2714aac3ffba
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 819143f78af2e71fb2927a9ec5a80698d330c40d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403510"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011034"
 ---
 # <a name="getmanagedappblockedusers-function"></a>Функция Жетманажедаппблоккедусерс
 
@@ -43,13 +43,13 @@ GET /users/getManagedAppBlockedUsers
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию String в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -73,6 +73,9 @@ Content-Length: 66
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Обновление Усерекспериенцеаналитиксба
 description: Обновление свойств объекта Усерекспериенцеаналитиксбаселине.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2de10d98ff3dccd875a53a6cb11e33690c442a5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dbf41a82332d638880913246c974ac36298cc7de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43322749"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011167"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>Обновление Усерекспериенцеаналитиксбаселине
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,14 +54,14 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор базового идентификатора аналитики взаимодействия с пользователем.|
-|displayName|Строка|Имя базового объекта аналитики взаимодействия с пользователем.|
+|displayName|String|Имя базового объекта аналитики взаимодействия с пользователем.|
 |овераллскоре|Int32|Общий показатель базового уровня для аналитики взаимодействия с пользователем.|
 |isBuiltIn|Boolean|Указывает, является ли текущий базовый планом коммерческого медианы или настраиваемым базовым планом.|
 |createdDateTime|DateTimeOffset|Дата создания настраиваемого базового плана.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userexperienceanalyticsbaseline.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -97,6 +97,9 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
+
+
+
 
 
 

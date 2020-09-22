@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d78b2f73a083e5452690eaeef3c27af91285213f
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d8040e6280b4b38e22c127530faa6be4babe8385
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807740"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010712"
 ---
 # <a name="get-personanniversary"></a>Получение Персонанниверсари
 
@@ -53,7 +53,7 @@ GET /users/{id | userPrincipalName}/profile/anniversaries/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [персонанниверсари](../resources/personanniversary.md) в тексте отклика.
 
@@ -127,3 +127,5 @@ Content-type: application/json
   "date": "Date"
 }
 ```
+
+

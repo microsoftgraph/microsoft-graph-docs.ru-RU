@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 302ee25dd2856ef4ab8e275862c109d31d78f85a
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: 1308b230a9c05345a434d5e8f0012eb8fb8f276b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429583"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010642"
 ---
 # <a name="delete-phoneauthenticationmethod"></a>Удаление Фонеаусентикатионмесод
 
@@ -117,3 +117,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

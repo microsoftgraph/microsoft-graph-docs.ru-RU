@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0006fa55d7fe42c6de36faaaa556957af6556359
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 381d0bc429fda9d7ef9fb8e121f63be989993f8c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810036"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010603"
 ---
 # <a name="get-projectparticipation"></a>Получение ПрожектпартиЦипатион
 
@@ -49,11 +49,11 @@ GET /users/{id | userPrincipalName}/profile/projects/{id}
 |:---------------|:----------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.   |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [прожектпартиЦипатион](../resources/projectparticipation.md) в тексте отклика.
 
@@ -158,3 +158,5 @@ Content-type: application/json
   "sponsors": null
 }
 ```
+
+

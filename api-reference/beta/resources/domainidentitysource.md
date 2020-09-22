@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 134f0ae3c382c879b48d468545dd40f2d6bd101b
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 63301dbf42a4589fd204290c157c6e6f63e473d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46510380"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010317"
 ---
 # <a name="domainidentitysource-resource-type"></a>Тип ресурса Домаинидентитисаурце
 
@@ -24,7 +24,7 @@ ms.locfileid: "46510380"
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| displayName |Строка | Имя источника удостоверений, как правило, также доменное имя. Только для чтения. |
+| displayName |String | Имя источника удостоверений, как правило, также доменное имя. Только для чтения. |
 | domainName |String | Доменное имя. Только для чтения. |
 
 ## <a name="relationships"></a>Связи
@@ -60,3 +60,5 @@ ms.locfileid: "46510380"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

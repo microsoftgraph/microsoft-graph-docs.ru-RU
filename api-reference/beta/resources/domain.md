@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6e75eefba9a9fd26968b74bd8ca5a97b70a2c5f9
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 7a8ddeeb35306d837363523111518b7c6c424b6a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896975"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010355"
 ---
 # <a name="domain-resource-type"></a>Тип ресурса domain
 
@@ -63,9 +63,9 @@ ms.locfileid: "44896975"
 |пассворднотификатионвиндовиндайс|Int32|Указывает количество дней до того, как пользователь получит уведомление о том, что срок действия пароля не истечет. Если свойство не задано, будет использоваться значение по умолчанию (14 дней).|
 |пассвордвалидитипериодиндайс|Int32| Указывает период времени, в течение которого пароль должен быть действителен до его изменения. Если свойство не задано, будет использоваться значение по умолчанию (90 дней). |
 |суппортедсервицес|Коллекция String| Возможности, назначенные для домена.<br><br>Может содержать 0, 1 или более следующих значений: *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> При использовании Graph API можно добавить или удалить следующие значения: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Не допускает значение null|
-|состояние|[домаинстате](domainstate.md)| Состояние асинхронных операций, запланированных для домена. |
+|state|[домаинстате](domainstate.md)| Состояние асинхронных операций, запланированных для домена. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отношения между доменом и другими объектами в каталоге, такими как записи проверки и записи конфигурации службы, предоставляются через свойства навигации. Эти отношения можно прочитать, нацеливания эти свойства навигации в запросах.
 
@@ -75,7 +75,7 @@ ms.locfileid: "44896975"
 |serviceConfigurationRecords|Коллекция [domainDnsRecord](domaindnsrecord.md)| DNS-записи, которые клиент добавляет в файл зоны DNS домена, прежде чем домен можно будет использовать в Microsoft Online Services.<br>Только для чтения, Nullable |
 |verificationDnsRecords|Коллекция [domainDnsRecord](domaindnsrecord.md)| DNS-записи, которые клиент добавляет в файл зоны DNS домена, прежде чем клиент сможет выполнять проверку владения доменом с помощью Azure AD.<br>Только для чтения, Nullable|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
@@ -117,3 +117,5 @@ ms.locfileid: "44896975"
   "suppressions": []
 }
 -->
+
+

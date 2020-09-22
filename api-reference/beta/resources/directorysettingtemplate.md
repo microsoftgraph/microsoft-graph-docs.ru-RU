@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 03803fddb12401e8d04318e8f4e7d7c63029b709
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 032ddf2ffd557f88a944aafbb72164e2fe356d77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181527"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010425"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>Тип ресурса Директорисеттингтемплате
 
@@ -34,7 +34,7 @@ ms.locfileid: "43181527"
 |:---------------|:--------|:----------|
 |description|string|Описание шаблона. Только для чтения.|
 |displayName|string|Отображаемое имя шаблона. Только для чтения. |
-|id|строка| Уникальный идентификатор шаблона. Только для чтения.|
+|id|string| Уникальный идентификатор шаблона. Только для чтения.|
 |values|Коллекция [сеттингтемплатевалуе](settingtemplatevalue.md)| Коллекция Settingtemplatevalue, в которой перечислены набор доступных параметров, значения по умолчанию и типы, которые составляют этот шаблон.  Только для чтения. |
 
 ## <a name="relationships"></a>Отношения
@@ -75,3 +75,5 @@ ms.locfileid: "43181527"
   "suppressions": []
 }
 -->
+
+

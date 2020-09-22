@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 97ce611af4441027146d2ccd5d951beacd9d20d6
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: e4ac9c8f314fadd35d4c1b3279f8e844ed7a2cb0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873274"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010453"
 ---
 # <a name="list-lists"></a>Перечисление списков
 Пространство имен: microsoft.graph
@@ -45,10 +45,10 @@ GET /users/{id|userPrincipalName}/todo/lists
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тодотасклист](../resources/todotasklist.md) в тексте отклика.
 
@@ -114,4 +114,6 @@ Content-Type: application/json
   ]
 }
 ```
+
+
 

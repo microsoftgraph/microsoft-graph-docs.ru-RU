@@ -3,14 +3,14 @@ title: действие Унблоккманажедаппс
 description: Разблокирует возврат из приложения для пользователя управляемого приложения.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7360d8f19004c89a7d7e08966d80adb579f3281f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c664f10ac7a3012b13d347cb20b88ee87959850f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463161"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011020"
 ---
 # <a name="unblockmanagedapps-action"></a>действие Унблоккманажедаппс
 
@@ -43,13 +43,13 @@ POST /users/{usersId}/unblockManagedApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -65,6 +65,9 @@ POST https://graph.microsoft.com/beta/users/{usersId}/unblockManagedApps
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 
