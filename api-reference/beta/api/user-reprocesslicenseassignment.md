@@ -5,54 +5,54 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 95bed640289a6fae53b0d01e8ab3c351d3531d6b
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 80daaf6d31d9d7b1d3964f66c1bcbd46aa961862
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064474"
 ---
-# <a name="user-reprocesslicenseassignment"></a><span data-ttu-id="1a5da-103">Пользователь: Репроцесслиценсеассигнмент</span><span class="sxs-lookup"><span data-stu-id="1a5da-103">user: reprocessLicenseAssignment</span></span>
+# <a name="user-reprocesslicenseassignment"></a><span data-ttu-id="1b5f1-103">Пользователь: Репроцесслиценсеассигнмент</span><span class="sxs-lookup"><span data-stu-id="1b5f1-103">user: reprocessLicenseAssignment</span></span>
 
-<span data-ttu-id="1a5da-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1a5da-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1b5f1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1b5f1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1a5da-105">Повторно обработайте все назначения лицензий на основе группы для пользователя.</span><span class="sxs-lookup"><span data-stu-id="1a5da-105">Reprocess all group-based license assignments for the user.</span></span> <span data-ttu-id="1a5da-106">Чтобы узнать больше о лицензировании на основе групп, ознакомьтесь со статьей " [Лицензирование на основе групп" в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span><span class="sxs-lookup"><span data-stu-id="1a5da-106">To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span></span> <span data-ttu-id="1a5da-107">Кроме того, для получения дополнительных сведений ознакомьтесь с [разрешениями проблем назначения лицензий для группы в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) .</span><span class="sxs-lookup"><span data-stu-id="1a5da-107">Also see [Identify and resolve license assignment problems for a group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) for more details.</span></span>
+<span data-ttu-id="1b5f1-105">Повторно обработайте все назначения лицензий на основе группы для пользователя.</span><span class="sxs-lookup"><span data-stu-id="1b5f1-105">Reprocess all group-based license assignments for the user.</span></span> <span data-ttu-id="1b5f1-106">Чтобы узнать больше о лицензировании на основе групп, ознакомьтесь со статьей " [Лицензирование на основе групп" в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span><span class="sxs-lookup"><span data-stu-id="1b5f1-106">To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span></span> <span data-ttu-id="1b5f1-107">Кроме того, для получения дополнительных сведений ознакомьтесь с [разрешениями проблем назначения лицензий для группы в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) .</span><span class="sxs-lookup"><span data-stu-id="1b5f1-107">Also see [Identify and resolve license assignment problems for a group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) for more details.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="1a5da-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1a5da-108">Permissions</span></span>
-<span data-ttu-id="1a5da-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1a5da-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1b5f1-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1b5f1-108">Permissions</span></span>
+<span data-ttu-id="1b5f1-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1b5f1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1a5da-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1a5da-111">Permission type</span></span>      | <span data-ttu-id="1a5da-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1a5da-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1b5f1-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1b5f1-111">Permission type</span></span>      | <span data-ttu-id="1b5f1-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1b5f1-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1a5da-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1a5da-113">Delegated (work or school account)</span></span> | <span data-ttu-id="1a5da-114">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1a5da-114">User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1a5da-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1a5da-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a5da-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1a5da-116">Not supported.</span></span>    |
-|<span data-ttu-id="1a5da-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1a5da-117">Application</span></span> | <span data-ttu-id="1a5da-118">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1a5da-118">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="1b5f1-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1b5f1-113">Delegated (work or school account)</span></span> | <span data-ttu-id="1b5f1-114">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1b5f1-114">User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="1b5f1-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1b5f1-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1b5f1-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1b5f1-116">Not supported.</span></span>    |
+|<span data-ttu-id="1b5f1-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1b5f1-117">Application</span></span> | <span data-ttu-id="1b5f1-118">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1b5f1-118">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1a5da-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1a5da-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1b5f1-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1b5f1-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id}/reprocessLicenseAssignment
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="1a5da-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1a5da-120">Request headers</span></span>
-| <span data-ttu-id="1a5da-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1a5da-121">Header</span></span>       | <span data-ttu-id="1a5da-122">Значение</span><span class="sxs-lookup"><span data-stu-id="1a5da-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="1b5f1-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1b5f1-120">Request headers</span></span>
+| <span data-ttu-id="1b5f1-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1b5f1-121">Header</span></span>       | <span data-ttu-id="1b5f1-122">Значение</span><span class="sxs-lookup"><span data-stu-id="1b5f1-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="1a5da-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1a5da-123">Authorization</span></span>  | <span data-ttu-id="1a5da-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1a5da-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="1b5f1-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1b5f1-123">Authorization</span></span>  | <span data-ttu-id="1b5f1-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1b5f1-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1a5da-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="1a5da-126">Request body</span></span>
-<span data-ttu-id="1a5da-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1a5da-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1b5f1-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1b5f1-126">Request body</span></span>
+<span data-ttu-id="1b5f1-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1b5f1-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1a5da-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="1a5da-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1b5f1-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="1b5f1-128">Response</span></span>
 
-<span data-ttu-id="1a5da-129">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и обновленный объект [User](../resources/user.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1a5da-129">If successful, this method returns `200 OK` response code and an updated [user](../resources/user.md) object in the response body.</span></span>
+<span data-ttu-id="1b5f1-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [User](../resources/user.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1b5f1-129">If successful, this method returns `200 OK` response code and an updated [user](../resources/user.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1a5da-130">Пример</span><span class="sxs-lookup"><span data-stu-id="1a5da-130">Example</span></span>
-<span data-ttu-id="1a5da-131">В приведенном ниже примере показано, как повторно обработать назначения лицензий для пользователя.</span><span class="sxs-lookup"><span data-stu-id="1a5da-131">The following example shows how to reprocess license assignments for the user.</span></span>
-### <a name="request"></a><span data-ttu-id="1a5da-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="1a5da-132">Request</span></span>
+## <a name="example"></a><span data-ttu-id="1b5f1-130">Пример</span><span class="sxs-lookup"><span data-stu-id="1b5f1-130">Example</span></span>
+<span data-ttu-id="1b5f1-131">В приведенном ниже примере показано, как повторно обработать назначения лицензий для пользователя.</span><span class="sxs-lookup"><span data-stu-id="1b5f1-131">The following example shows how to reprocess license assignments for the user.</span></span>
+### <a name="request"></a><span data-ttu-id="1b5f1-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="1b5f1-132">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="1a5da-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a5da-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1b5f1-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="1b5f1-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_reprocessLicenseAssignment"
@@ -61,25 +61,25 @@ POST /users/{id}/reprocessLicenseAssignment
 POST https://graph.microsoft.com/beta/users/047dd774-f1c4-40f2-82f0-278de79f9b83/reprocessLicenseAssignment
 
 ```
-# <a name="c"></a>[<span data-ttu-id="1a5da-134">C#</span><span class="sxs-lookup"><span data-stu-id="1a5da-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1b5f1-134">C#</span><span class="sxs-lookup"><span data-stu-id="1b5f1-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-reprocesslicenseassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1a5da-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a5da-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1b5f1-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1b5f1-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-reprocesslicenseassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1a5da-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1a5da-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1b5f1-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1b5f1-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-reprocesslicenseassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="1a5da-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="1a5da-137">Response</span></span>
-<span data-ttu-id="1a5da-138">Отклик — обновленный объект User.</span><span class="sxs-lookup"><span data-stu-id="1a5da-138">The response is the updated user object.</span></span>
+### <a name="response"></a><span data-ttu-id="1b5f1-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="1b5f1-137">Response</span></span>
+<span data-ttu-id="1b5f1-138">Отклик — обновленный объект User.</span><span class="sxs-lookup"><span data-stu-id="1b5f1-138">The response is the updated user object.</span></span>
 
-><span data-ttu-id="1a5da-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1a5da-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="1b5f1-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1b5f1-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,3 +126,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
