@@ -6,12 +6,12 @@ title: итемактивитистат
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 612acf6ef619f13b0c334dd2046041b25020f450
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c21183911e111b2070d463f4552f913d93780493
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523116"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075664"
 ---
 # <a name="itemactivitystat-resource-type"></a>Тип ресурса Итемактивитистат
 
@@ -82,3 +82,5 @@ ms.locfileid: "42523116"
   "suppressions": []
 }
 -->
+
+

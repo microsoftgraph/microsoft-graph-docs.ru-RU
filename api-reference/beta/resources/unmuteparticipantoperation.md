@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d9ebb8d749f8cbe6ce01711ca6a0c36b134e8369
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2b4c0ff8132eddadebaedb7e62965a0808c96210
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519598"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075409"
 ---
 # <a name="unmuteparticipantoperation-resource-type"></a>Тип ресурса УнмутепартиЦипантоператион
 
@@ -25,7 +25,7 @@ ms.locfileid: "42519598"
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Контекст                  | String                      | Уникальная строка контекста клиента. Может содержать до 256 символов.                                                                               |
-| id                             | Строка                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                                                                            |
+| id                             | String                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                            |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                 |
 
@@ -61,3 +61,5 @@ ms.locfileid: "42519598"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1f3c35e04dddaa5f9b1e8e22ec5173d553f3332f
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: cf4feff3a8071a337be443038534928f5d8a0986
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075359"
 ---
 # <a name="create-educationschool"></a>Создание educationSchool
 
@@ -26,7 +26,7 @@ ms.locfileid: "44345753"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | EduRoster.ReadWrite.All                     |
+| Для приложения                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ POST /education/schools
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json          |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса предоставьте описание объекта [educationSchool](../resources/educationschool.md) в формате JSON.
 
@@ -164,3 +164,4 @@ Content-length: 292
   "suppressions": [
   ]
 }-->
+

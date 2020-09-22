@@ -3,14 +3,14 @@ title: тип перечисления Аусентикатионтрансфо�
 description: Значения преобразования проверки подлинности для VPN-политик Windows10 с типом подключения IKEv2.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 923f9cd507192ec59fc1c958d90ad34b38d4c6b5
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: db7f53d52ada65b35555c120feadcff9b2188942
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789576"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075898"
 ---
 # <a name="authenticationtransformconstant-enum-type"></a>тип перечисления Аусентикатионтрансформконстант
 
@@ -27,10 +27,13 @@ ms.locfileid: "44789576"
 |:---|:---|:---|
 |md5_96|нуль|MD596|
 |sha1_96|1 |SHA196|
-|sha_256_128|2|SHA256128|
+|sha_256_128|2 |SHA256128|
 |aes128Gcm|4|GCMAES128|
 |aes192Gcm|4 |GCMAES192|
 |aes256Gcm|5 |GCMAES256|
+
+
+
 
 
 

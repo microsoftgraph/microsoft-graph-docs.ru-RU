@@ -3,14 +3,14 @@ title: Тип ресурса Адванцедсреатпротектионон�
 description: Состояние входящей миграции ATP для данного устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8efa8532f91d74b62fa4aa2604041b99248673c6
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c8db9ea0fa849a789a678caec10372a0cfbb3265
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076221"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>Тип ресурса Адванцедсреатпротектиононбоардингдевицесеттингстате
 
@@ -34,7 +34,7 @@ ms.locfileid: "44793516"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта|
+|id|String|Ключ объекта|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|Тип платформы устройства. Возможные значения:,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` , `macMDM` , `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `blackberry` `palm` `unknown` ,,,,,,,,,,,,,,,,,,,,,,.|
 |setting|String|Имя класса параметров и свойства.|
 |settingName|String|Имя параметра в отчете|
@@ -48,7 +48,7 @@ ms.locfileid: "44793516"
 |state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия требования для устройства|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -77,6 +77,9 @@ ms.locfileid: "44793516"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

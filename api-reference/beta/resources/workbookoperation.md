@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: bd015045b01d0a7f886ecf0f5165a347d76dc061
-ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
+ms.openlocfilehash: 957f94087fa8c11cf3a5cc794bf194e21bbba346
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45165149"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075380"
 ---
 # <a name="workbookoperation-resource-type"></a>Тип ресурса Воркбукоператион
 
@@ -26,12 +26,12 @@ ms.locfileid: "45165149"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка| Идентификатор операции. Только для чтения.|
+|id|String| Идентификатор операции. только для чтения.|
 |status|String| Текущее состояние операции. Возможные значения: `notStarted`, `running`, `succeeded`, `failed`.|
 |error|[воркбукоператионеррор](workbookoperationerror.md)| Ошибка, возвращенная операцией.|
 |ресаурцелокатион|String| URI ресурса для результата.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -67,3 +67,5 @@ ms.locfileid: "45165149"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

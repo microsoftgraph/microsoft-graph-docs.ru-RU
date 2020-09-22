@@ -3,14 +3,14 @@ title: Тип ресурса Мобилеаппрелатионшипстате
 description: Описывает сведения о состоянии установки дочернего приложения в контексте имени участника-пользователя и идентификатора устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: daca7e69b70ccfecef181dd0bdd4eb381f010d87
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 116e57ba4bad4474e8ec28bda990ac9e2fe1df86
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792704"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076352"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>Тип ресурса Мобилеаппрелатионшипстате
 
@@ -34,7 +34,7 @@ ms.locfileid: "46792704"
 |errorCode|Int32|Код ошибки для установки или удаления сбоев конечного приложения.|
 |таржетластсинкдатетиме|DateTimeOffset|Время последней синхронизации конечного приложения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -59,6 +59,9 @@ ms.locfileid: "46792704"
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

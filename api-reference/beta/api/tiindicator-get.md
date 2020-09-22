@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 2b53284f96d65a08511820b5be6df7d2e8a76c6a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9d6f90ef13764d3b15343a47b88489de8501a210
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452374"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076577"
 ---
 # <a name="get-threat-intelligence-indicator"></a>Получение индикатора логики операций с угрозами
 
@@ -40,7 +40,7 @@ GET /security/tiIndicators/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -52,7 +52,7 @@ GET /security/tiIndicators/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [тииндикатор](../resources/tiindicator.md) в тексте отклика.
 
@@ -126,3 +126,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

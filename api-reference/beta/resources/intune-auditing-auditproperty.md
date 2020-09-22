@@ -3,14 +3,14 @@ title: Тип ресурса auditProperty
 description: Класс, содержащий свойства для свойства аудита.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dd5a43f1837ed3acf8927af5bac4e46d864f3fec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2d30f44bdf5ca002f71ac5e1f935081b032379ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472118"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076304"
 ---
 # <a name="auditproperty-resource-type"></a>Тип ресурса auditProperty
 
@@ -29,7 +29,7 @@ ms.locfileid: "43472118"
 |oldValue|String|Старое значение.|
 |newValue|String|Новое значение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,9 @@ ms.locfileid: "43472118"
   "newValue": "String"
 }
 ```
+
+
+
 
 
 

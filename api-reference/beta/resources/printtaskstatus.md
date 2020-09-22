@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: c5d46cd0c8d14b6dc07873bc503d024928e2b2e3
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: 5f340acf8357155893020985aa6036d93ed5b2df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091702"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078306"
 ---
 # <a name="printtaskstatus-resource-type"></a>Тип ресурса Принттаскстатус
 
@@ -37,10 +37,10 @@ ms.locfileid: "45091702"
 |закончен|нуль|Ожидание выполнения задачи.|
 |двухпроцессорной|1 |Выполняется выполнение задачи.|
 |готовы|2 |Выполнение задачи завершено.|
-|прерван|3 |Выполнение задачи было прервано.|
+|прерван|4|Выполнение задачи было прервано.|
 |unknownFutureValue|4 |Значение Sentinel для перечисления расширяемые. Не следует использовать.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -68,3 +68,5 @@ ms.locfileid: "45091702"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

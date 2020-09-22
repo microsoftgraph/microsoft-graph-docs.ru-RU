@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементтраублешу�
 description: Объект, представляющий ссылку на информацию об устранении неполадок, ссылка на портал Azure или документ Microsoft.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60a098774f8302ec23322fc18af1998ba6e14480
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 18537e1fa81fd082cc7fd78d2675540535195a32
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388246"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075786"
 ---
 # <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>Тип ресурса Девицеманажементтраублешутинжеррорресаурце
 
@@ -28,7 +28,7 @@ ms.locfileid: "43388246"
 |text|String|Пока не задокументировано.|
 |ссылка|String|Ссылка на веб-ресурс. Может содержать любой из следующих форматеров: {{UPN}}, {{Девицегуид}}, {{Усергуид}}|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,9 @@ ms.locfileid: "43388246"
   "link": "String"
 }
 ```
+
+
+
 
 
 

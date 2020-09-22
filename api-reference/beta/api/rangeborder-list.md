@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c9be38d3c5f7e0f9b9b470867c1afc56bc04d453
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38ab993c92b45cf33d93c94b547c5427ba3540a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454672"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078488"
 ---
 # <a name="list-rangebordercollection"></a>Список RangeBorderCollection
 
@@ -44,10 +44,10 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукранжебордер](../resources/workbookrangeborder.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -115,3 +115,5 @@ Content-length: 185
   ]
 }
 -->
+
+

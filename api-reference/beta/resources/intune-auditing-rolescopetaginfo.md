@@ -3,14 +3,14 @@ title: Тип ресурса Ролескопетагинфо
 description: Класс, содержащий свойства объекта тега области применения роли.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7240e06e34d003eceeece5c8b7fbb365ed20bf1f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 67927894be0f4209e915781169a45d5daa874b20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441215"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076246"
 ---
 # <a name="rolescopetaginfo-resource-type"></a>Тип ресурса Ролескопетагинфо
 
@@ -28,7 +28,7 @@ ms.locfileid: "43441215"
 |displayName|String|Отображаемое имя тега области.|
 |ролескопетагид|String|Идентификатор тега Scope.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,9 @@ ms.locfileid: "43441215"
   "roleScopeTagId": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3fcd7c0e046cb9ae3df9ea371329058fa0472fc3
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 166f1fe569301f6c2805867ff85b3c6354377128
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154390"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075492"
 ---
 # <a name="timeoffitem-resource-type"></a>Тип ресурса Тимеоффитем
 
@@ -23,7 +23,7 @@ ms.locfileid: "44154390"
 ## <a name="properties"></a>Свойства
 | Свойство                         | Тип                    | Описание                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| тимеоффреасонид               | string                  | Идентификатор объекта `timeOffReason` для этого `timeOffItem`параметра. Обязательный.     |
+| тимеоффреасонид               | string                  | Идентификатор объекта `timeOffReason` для этого параметра `timeOffItem` . Обязательно.     |
 | startDateTime               | DateTimeOffset                  | Дата и время начала для ресурса `timeOffItem`. Обязательный элемент. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
 | endDateTime               | DateTimeOffset                  | Дата и время окончания для ресурса `timeOffItem`. Обязательный элемент. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
 | theme | scheduleEntityTheme   | Поддерживаемые цвета: белый, синий, зеленый, фиолетовый, розовый, желтый, серый, темно-синий, темно-зеленый, темно-фиолетовый, темно-розовый, темно-желтый. |
@@ -59,3 +59,5 @@ ms.locfileid: "44154390"
   "suppressions": []
 }
 -->
+
+

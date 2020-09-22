@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6565f123dcb2d21fb6259dc6e275d51d1a4f7d1e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 898eff6c3f97038d23871950740df080aab3bed8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451373"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078486"
 ---
 # <a name="workbookpivottable-refreshall"></a>workbookPivotTable: refreshAll
 
@@ -96,3 +96,5 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+
+

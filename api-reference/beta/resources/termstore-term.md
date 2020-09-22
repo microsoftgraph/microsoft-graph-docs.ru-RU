@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 77f907ee80c0710e33771efb33c3a3eee893f2ed
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 831a873d245424bcb92c7281b1bbdc97b29223bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539448"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075562"
 ---
 # <a name="term-resource-type"></a>Тип ресурса термина
 
@@ -29,7 +29,7 @@ ms.locfileid: "46539448"
 |[Список отношений](../api/termstore-term-list-relations.md)|Коллекция [Microsoft. Graph. Банк. relation](../resources/termstore-relation.md)|Получение отношений терминов в [банке]терминов.|
 |[Создание отношения](../api/termstore-relation-post.md)|[Microsoft. Graph. Банк. отношение](../resources/termstore-relation.md)|Создание нового отношения для термина или [набора] в [банке]терминов.|
 |[Создание термина](../api/termstore-term-post.md)|[Microsoft. Graph. Банк. Term](../resources/termstore-term.md)|Создайте новый объект Term в [банке]терминов.|
-|[Получение термина](../api/termstore-term-get.md)|[Microsoft. Graph. Банк. Term](../resources/termstore-term.md)|Чтение свойств и связей объекта Term в [банке]терминов.|
+|[Получение термина](../api/termstore-term-get.md)|[Microsoft. Graph. Банк. Term](../resources/termstore-term.md)|Чтение свойств и связей объекта Term в  [банке]терминов.|
 |[Обновление термина](../api/termstore-term-update.md)|[Microsoft. Graph. Банк. Term](../resources/termstore-term.md)|Обновление свойств объекта Term в [банке]терминов.|
 |[Удаление термина](../api/termstore-term-delete.md)|Нет|Удаление объекта Term в [банке]терминов.|
 
@@ -43,7 +43,7 @@ ms.locfileid: "46539448"
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения термина. Только для чтения|
 |properties|Коллекция [Microsoft. Graph. ключзначение](../resources/keyvalue.md)|Коллекция свойств термина|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |children|Коллекция [Microsoft. Graph. Банк терминов Microsoft. Graph.](../resources/termstore-term.md)|Дочерние элементы текущего термина|
@@ -84,7 +84,7 @@ ms.locfileid: "46539448"
 }
 ```
 
-[восстановлен]: ../resources/termstore-store.md
+[store]: ../resources/termstore-store.md
 [set]: ../resources/termstore-set.md
 [term]: ../resources/termstore-term.md
 [group]: ../resources/termstore-group.md
@@ -102,3 +102,5 @@ ms.locfileid: "46539448"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fb828db87a5e883933a8cac72cf99f50c4bdd480
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a7d164996b14cd869f71331b70173420f021ff11
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806851"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078985"
 ---
 # <a name="recentnotebook-resource-type"></a>Тип ресурса recentNotebook
 
@@ -21,12 +21,12 @@ ms.locfileid: "46806851"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Имя записной книжки.|
+|displayName|Строка|Имя записной книжки.|
 |lastAccessedTime|DateTimeOffset|Дата и время последнего изменения записной книжки. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |links|[recentNotebookLinks](recentnotebooklinks.md)|Ссылки для открытия записной книжки. Ссылка `oneNoteClientURL` открывает записную книжку в клиенте OneNote, если он установлен. `oneNoteWebURL`Ссылка открывает записную книжку в OneNote в Интернете.|
 |sourceService|оненотесаурцесервице|Внутреннее хранилище, в котором находится записная книжка (`OneDriveForBusiness` или `OneDrive`).|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -52,3 +52,4 @@ ms.locfileid: "46806851"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | Коллекция [notebook](notebook.md) | Получите коллекцию записных книжек, которые недавно открывал пользователь. |
+

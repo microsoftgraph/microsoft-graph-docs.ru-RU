@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 013d2756455abebc0f20bbe5a1d186a0a4d65648
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: 970b4169dcf4d94eed01be7a15654daa51760151
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091699"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078313"
 ---
 # <a name="printtaskdefinition-resource-type"></a>Тип ресурса Принттаскдефинитион
 
@@ -27,18 +27,18 @@ ms.locfileid: "45091699"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Список](../api/print-list-taskdefinitions.md) | Коллекция [принттаскдефинитион](printtaskdefinition.md) | Получение полного списка Принттаскдефинитионс, созданных в рамках универсальной печати. |
-| [Создание](../api/print-post-taskdefinitions.md); | [принттаскдефинитион](printtaskdefinition.md) | Создание нового Принттаскдефинитион. |
-| [Update](../api/print-update-taskdefinition.md) | [принттаскдефинитион](printtaskdefinition.md) | Обновление Принттаскдефинитион. |
-| [Delete](../api/print-delete-taskdefinition.md) | Нет | Удаление объекта Принттаскдефинитион. |
-| [Перечисление задач](../api/printtaskdefinition-list-tasks.md) | [принттаск](printtask.md) | Получение списка задач, созданных на основе этого определения. Список содержит текущие выполняемые задачи и недавно выполненные задачи. |
-| [Вывод задачи](../api/printtask-get.md) | [принттаск](printtask.md) | Получает задачу, созданную на основе этого определения. |
-| [Обновление задачи](../api/printtaskdefinition-update-task.md) | Отсутствует | Обновление задачи, созданной на основе этого определения. **Приложения, которые регистрируют триггеры задач, несут ответственность за обновление состояния задачи при завершении обработки, если связанный метод printJob не будет перенаправлен на другой принтер.** Если не выполнить отчет о завершении, то соответствующее задание печати блокируется для печати и в конечном итоге удалено. |
+| [Создание](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Создание нового Принттаскдефинитион. |
+| [Обновление](../api/print-update-taskdefinition.md) | [printTaskDefinition](printtaskdefinition.md) | Обновление Принттаскдефинитион. |
+| [Удаление](../api/print-delete-taskdefinition.md) | Нет | Удаление объекта Принттаскдефинитион. |
+| [Перечисление задач](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Получение списка задач, созданных на основе этого определения. Список содержит текущие выполняемые задачи и недавно выполненные задачи. |
+| [Вывод задачи](../api/printtask-get.md) | [printTask](printtask.md) | Получает задачу, созданную на основе этого определения. |
+| [Обновление задачи](../api/printtaskdefinition-update-task.md) | Нет | Обновление задачи, созданной на основе этого определения. **Приложения, которые регистрируют триггеры задач, несут ответственность за обновление состояния задачи при завершении обработки, если связанный метод printJob не будет перенаправлен на другой принтер.** Если не выполнить отчет о завершении, то соответствующее задание печати блокируется для печати и в конечном итоге удалено. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String|Идентификатор Принттаскдефинитион. Только для чтения.|
-|displayName|Строка|Имя Принттаскдефинитион.|
+|displayName|String|Имя Принттаскдефинитион.|
 |createdBy|[аппидентити](appidentity.md)|Приложение, создавшее Принттаскдефинитион. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
@@ -79,3 +79,4 @@ ms.locfileid: "45091699"
   "section": "documentation",
   "tocPath": ""
 }-->
+

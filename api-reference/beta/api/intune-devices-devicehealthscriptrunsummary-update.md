@@ -3,14 +3,14 @@ title: Обновление Девицехеалсскриптрунсуммар
 description: Обновление свойств объекта Девицехеалсскриптрунсуммари.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 269f70594fbc171bb789a781f5f40497ba915d11
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4f6852123f88c76e8eac25f9689b7e14dbf182ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380469"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077046"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>Обновление Девицехеалсскриптрунсуммари
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицехеалсскриптрунсуммари](../resources/intune-devices-devicehealthscriptrunsummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицехеалсскриптрунсуммари](../resources/intune-devices-devicehealthscriptrunsummary.md).
@@ -67,7 +67,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицехеалсскриптрунсуммари](../resources/intune-devices-devicehealthscriptrunsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -116,6 +116,9 @@ Content-Length: 543
   "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
+
+
+
 
 
 

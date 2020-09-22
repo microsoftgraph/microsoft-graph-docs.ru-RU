@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 205737e5dee56da9a91bd290a3393487d3a5b7eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4215b4350236956bfcad3bdf6f787b7f6c77f5dd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519745"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075520"
 ---
 # <a name="timeconstraint-resource-type"></a>Тип ресурсов timeConstraint
 
@@ -42,7 +42,7 @@ ms.locfileid: "42519745"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|activityDomain|activityDomain|Описание действия (необязательно). `work`Возможные значения: `personal`,, `unrestricted`, или. `unknown`|
+|activityDomain|activityDomain|Описание действия (необязательно). Возможные значения: `work` , `personal` , `unrestricted` , или `unknown` .|
 |timeslots|Коллекция [timeSlot](timeslot.md)|Массив, содержащий значения периодов времени.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -57,3 +57,5 @@ ms.locfileid: "42519745"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: spunukol
 ms.prod: microsoft-identity-platform
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 0b396f2025a95ce9db861e7e8e4b630039e09d30
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 859cd2fa83a62f04d65f2553e2fd33f3c483e760
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466727"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078026"
 ---
 # <a name="list-device-transitive-groups"></a>Перечисление транзитивных групп устройств
 
@@ -49,11 +49,11 @@ GET /devices/{id | userPrincipalName}/transitiveMemberOf
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 
@@ -134,3 +134,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

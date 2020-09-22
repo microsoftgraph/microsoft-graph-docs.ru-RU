@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8d520ef254db5284f550cde309936968df67894b
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 92c90df5035ffa26b4a592ff8cc6d2749048308d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792732"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076640"
 ---
 # <a name="publish-teamsapp"></a>Публикация teamsApp
 
@@ -30,7 +30,7 @@ ms.locfileid: "46792732"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
 | Делегированные (рабочая или учебная учетная запись)     | CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
-| Делегированные (рабочая или учебная учетная запись) | CamlQuery. оправить|
+| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit|
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
 | Для приложений                            | Не поддерживается. |
 
@@ -52,14 +52,14 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 |Свойство|Тип|Описание|
 |----|----|----|
-|рекуиресревиев| Логический | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с правами администратора могут отсылать приложения, не запуская проверку. Если пользователям требуется предварительно запросить проверку перед публикацией, необходимо задать  `requiresReview` для них значение `true` . Пользователь с правами администратора может не устанавливать `requiresReview` или устанавливать значение `false`  , и приложение считается утвержденным и будет публиковаться мгновенно.|
+|рекуиресревиев| Boolean | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с правами администратора могут отсылать приложения, не запуская проверку. Если пользователям требуется предварительно запросить проверку перед публикацией, необходимо задать  `requiresReview` для них значение `true` . Пользователь с правами администратора может не устанавливать `requiresReview` или устанавливать значение `false`  , и приложение считается утвержденным и будет публиковаться мгновенно.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок        | Значение           |
 |:--------------|:--------------  |
 | Авторизация | Bearer {токен}. Обязательный.  |
-| Content-Type  | Application/ZIP. Обязательный элемент. |
+| Content-Type  | Application/ZIP. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -67,7 +67,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 Каждое приложение в каталоге приложений должно иметь уникальный манифест `id` .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [teamsApp](../resources/teamsapp.md) .
 
@@ -91,7 +91,7 @@ Content-length: 244
 
 Сведения о том, как создать ZIP-файл приложения Microsoft Teams, можно найти в разделе [Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package).
 <!-- markdownlint-disable MD024 -->
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -149,3 +149,5 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
   "distributionMethod": "organization"
 }
 ```
+
+

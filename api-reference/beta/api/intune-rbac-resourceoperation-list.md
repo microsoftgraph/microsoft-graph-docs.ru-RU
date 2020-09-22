@@ -3,14 +3,14 @@ title: Перечисление объектов resourceOperation
 description: Список свойств и связей объектов resourceOperation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd783dbe77e0f5b0b81d5871ff97740eb792cdf8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0c55b19e19255d3527046bba07cfaea86ecb69d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455434"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076920"
 ---
 # <a name="list-resourceoperations"></a>Перечисление объектов resourceOperation
 
@@ -46,10 +46,10 @@ GET /deviceManagement/resourceOperations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [resourceOperation](../resources/intune-rbac-resourceoperation.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -81,6 +81,9 @@ Content-Length: 359
   ]
 }
 ```
+
+
+
 
 
 

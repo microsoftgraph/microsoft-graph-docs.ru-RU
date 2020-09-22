@@ -3,14 +3,14 @@ title: Create iosVppEBook
 description: Создание объекта iosVppEBook.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a7b7fe4f5bb7e264be2b9e48db5372380833e7e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5f767648a33b7d3b056556c25813f173d96ef907
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43356007"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078012"
 ---
 # <a name="create-iosvppebook"></a>Create iosVppEBook
 
@@ -44,7 +44,7 @@ POST /deviceAppManagement/managedEBooks
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта iosVppEBook в формате JSON.
 
 Ниже показаны свойства, которые необходимо указать при создании объекта iosVppEBook.
@@ -53,7 +53,7 @@ POST /deviceAppManagement/managedEBooks
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |displayName|Строка|Имя электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
-|description|String|Описание. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
+|description|Строка|Описание. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |publisher|String|Издатель. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Обложка книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
@@ -62,7 +62,7 @@ POST /deviceAppManagement/managedEBooks
 |informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |privacyInformationUrl|String|URL-адрес заявления о конфиденциальности. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |vppTokenId|Guid|Идентификатор токена VPP.|
-|appleId|Строка|Идентификатор Apple ID, связанный с токеном VPP.|
+|appleId|String|Идентификатор Apple ID, связанный с токеном VPP.|
 |vppOrganizationName|String|Название организации для токена VPP.|
 |genres|Коллекция String|Жанры.|
 |language|String|Язык.|
@@ -145,6 +145,9 @@ Content-Length: 964
   "usedLicenseCount": 0
 }
 ```
+
+
+
 
 
 

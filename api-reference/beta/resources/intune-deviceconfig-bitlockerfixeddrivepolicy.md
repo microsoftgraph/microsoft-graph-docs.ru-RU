@@ -3,14 +3,14 @@ title: Тип ресурса свойства bitlockerfixeddrivepolicy
 description: Политики фиксированного диска BitLocker.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85cd64200bb422c1a4bb25456f1686e1fb4a88da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a7d6e0ff0b1bca991ec91627c4766490366cbc30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469815"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075821"
 ---
 # <a name="bitlockerfixeddrivepolicy-resource-type"></a>Тип ресурса свойства bitlockerfixeddrivepolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "43469815"
 |requireEncryptionForWriteAccess|Boolean|Этот параметр политики определяет, требуется ли защита BitLocker для несъемных дисков с данными на компьютере.|
 |recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md);|Этот параметр политики позволяет управлять восстановлением несъемных дисков с данными, защищенных с помощью BitLocker, в отсутствие необходимых учетных данных. Этот параметр политики применяется при включении BitLocker.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,6 +56,9 @@ ms.locfileid: "43469815"
   }
 }
 ```
+
+
+
 
 
 

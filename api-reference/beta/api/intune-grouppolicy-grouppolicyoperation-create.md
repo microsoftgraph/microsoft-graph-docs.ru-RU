@@ -3,14 +3,14 @@ title: Создание Граупполициоператион
 description: Создание нового объекта Граупполициоператион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7461bfb2e993eeeffcdc6a333638c3c0c2b9d856
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e131361edf0d563eb67fb7e12865d312f938c9f0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456329"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078852"
 ---
 # <a name="create-grouppolicyoperation"></a>Создание Граупполициоператион
 
@@ -46,7 +46,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Граупполициоператион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполициоператион.
@@ -61,7 +61,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -97,6 +97,9 @@ Content-Length: 285
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

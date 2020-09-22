@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: f2ac965d4dae0b038f3aad9fe13ed57a283a42bc
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 69a9e63960499fb50b34cd38986b1312a4313090
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812557"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076486"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>Тип ресурса Аверажекомпаративескоре
 
@@ -26,7 +26,7 @@ ms.locfileid: "46812557"
 |   Score   |   Двойное с плавающей точкой  | Средняя оценка в указанном базисе. |
 |   идентитискоре   |   Двойное с плавающей точкой  | Средняя оценка в указанном базисе. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -57,3 +57,5 @@ ms.locfileid: "46812557"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

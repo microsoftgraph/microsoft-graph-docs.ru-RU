@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: fd924b4ef79efa8b517bbf190eb3d3defc7bc1c5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8547839597e5f98cf0bcceef80f28814888d539e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447439"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079027"
 ---
 # <a name="onenoteentityhierarchymodel-resource"></a>ресурс Оненотинтитихиерарчимодел
 
@@ -45,7 +45,7 @@ ms.locfileid: "42447439"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Имя записной книжки.|
+|displayName|Строка|Имя записной книжки.|
 |createdBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения записной книжки. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
@@ -59,3 +59,4 @@ ms.locfileid: "42447439"
   "section": "documentation",
   "tocPath": ""
 }-->
+

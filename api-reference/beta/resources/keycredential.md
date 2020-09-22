@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 983cc4c9cbd19cd7f0b4261f28a00e8e020cefe9
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 6c005a44827640ed7a61e61f07837a98021d9a9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43401714"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078346"
 ---
 # <a name="keycredential-resource-type"></a>Тип ресурса Кэйкредентиал
 
@@ -24,7 +24,7 @@ ms.locfileid: "43401714"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |кустомкэйидентифиер|Binary| Настраиваемый идентификатор ключа |
-| displayName | Строка | Понятное имя для ключа. Необязательный параметр. |
+| displayName | String | Понятное имя для ключа. Необязательное свойство. |
 |endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Него значение KeyID|Guid|Уникальный идентификатор (GUID) для ключа.|
 |startDateTime|DateTimeOffset|Дата и время, когда учетные данные становятся действительными. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
@@ -70,3 +70,5 @@ ms.locfileid: "43401714"
   "suppressions": []
 }
 -->
+
+

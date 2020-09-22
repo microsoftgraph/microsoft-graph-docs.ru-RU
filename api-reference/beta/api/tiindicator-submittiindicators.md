@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 0fa3fcfad09b345cc5dac741f71b63022de38571
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 319c529f567150914a6050da85fb6a9379c4f1a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452367"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076522"
 ---
 # <a name="tiindicator-submittiindicators"></a>Тииндикатор: Субмиттииндикаторс
 
@@ -52,11 +52,11 @@ POST /security/tiIndicators/submitTiIndicators
 |:-------------|:------------|:------------|
 |значение|Коллекция Тииндикатор| Коллекция объектов **тииндикаторс** , которую необходимо создать. |
 
-Для каждого Тииндикатор добавьте представление объекта [тииндикатор](../resources/tiindicator.md) в [формате](../resources/tiindicator.md#indicator-observables---file)JSON, содержащий хотя бы один наблюдаемый [адрес электронной почты](../resources/tiindicator.md#indicator-observables---email), файл или [сеть](../resources/tiindicator.md#indicator-observables---network) , а также следующие обязательные поля `action`: `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`,.
+Для каждого Тииндикатор добавьте представление объекта [тииндикатор](../resources/tiindicator.md) в формате JSON, содержащий хотя бы один наблюдаемый [адрес электронной почты](../resources/tiindicator.md#indicator-observables---email), [файл](../resources/tiindicator.md#indicator-observables---file)или [сеть](../resources/tiindicator.md#indicator-observables---network) , а также следующие обязательные поля:,, `action` ,, `description` `expirationDateTime` `targetProduct` `threatType` , `tlpLevel` .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.  При возникновении ошибки этот метод возвращает код `206 Partial Content` отклика.  Дополнительные сведения см. в разделе [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) .
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.  При возникновении ошибки этот метод возвращает `206 Partial Content` код отклика.  Дополнительные сведения см. в разделе [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) .
 
 ## <a name="examples"></a>Примеры
 
@@ -174,3 +174,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

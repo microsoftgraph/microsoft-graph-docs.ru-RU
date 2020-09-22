@@ -3,14 +3,14 @@ title: Тип ресурса symantecCodeSigningCertificate
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a0e7c4676c730d3eacc9a5ef3dd01cd6760e2780
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1761e5d9d98c1d2cae7a0d76193e874518f94dac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462535"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078425"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>Тип ресурса symantecCodeSigningCertificate
 
@@ -42,7 +42,7 @@ ms.locfileid: "43462535"
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
 |уплоаддатетиме|DateTimeOffset|Тип сертификата сопроектировании в качестве сертификата Symantec.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -68,6 +68,9 @@ ms.locfileid: "43462535"
   "uploadDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса mobileAppAssignment
 description: Класс, содержащий свойства, которые используются для назначения групп в мобильном приложении.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4a369dbc55e7b3736fcb811fb3212cea20bf889d
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 5d963ed83c023fb12b5d47f5cc0f8844cf6bbf03
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790882"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076367"
 ---
 # <a name="mobileappassignment-resource-type"></a>Тип ресурса mobileAppAssignment
 
@@ -41,7 +41,7 @@ ms.locfileid: "44790882"
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Тип ресурса, который является источником для назначения. Возможные значения: `direct`, `policySets`.|
 |Идентификатор|String|Идентификатор источника назначения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -71,6 +71,9 @@ ms.locfileid: "44790882"
   "sourceId": "String"
 }
 ```
+
+
+
 
 
 

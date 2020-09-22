@@ -3,14 +3,14 @@ title: Тип ресурса Мобилеаппрелатионшип
 description: Описывает отношение между двумя мобильными приложениями.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d09d9d7604699ee89b6dccc0f2f980cef26225e7
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: a2c7af932983b9b3657a94a7448149b75b3c8eea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790868"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076350"
 ---
 # <a name="mobileapprelationship-resource-type"></a>Тип ресурса Мобилеаппрелатионшип
 
@@ -34,8 +34,9 @@ ms.locfileid: "44790868"
 |id|String|Идентификатор сущности отношения.|
 |targetId|String|Идентификатор приложения целевого приложения для мобильных устройств.|
 |таржетдисплайнаме|String|Отображаемое имя целевого мобильного приложения.|
+|targetType|[мобилеаппрелатионшиптипе](../resources/intune-apps-mobileapprelationshiptype.md)|Тип связи, указывающий, является ли целевой объект родительским или дочерним. Возможные значения: `child`, `parent`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,9 +52,13 @@ ms.locfileid: "44790868"
   "@odata.type": "#microsoft.graph.mobileAppRelationship",
   "id": "String (identifier)",
   "targetId": "String",
-  "targetDisplayName": "String"
+  "targetDisplayName": "String",
+  "targetType": "String"
 }
 ```
+
+
+
 
 
 

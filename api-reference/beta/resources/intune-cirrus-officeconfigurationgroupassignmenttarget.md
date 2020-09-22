@@ -3,14 +3,14 @@ title: Тип ресурса Оффицеконфигуратионграупа�
 description: Целевой объект назначения группы AAD для группы клиентов Office.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e09d73695c542c24fe6be297dec9496794d95fc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5dc17e024f1b4856391bdc5e02ecdc2337fecf74
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454285"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076213"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>Тип ресурса Оффицеконфигуратионграупассигнменттаржет
 
@@ -29,7 +29,7 @@ ms.locfileid: "43454285"
 |:---|:---|:---|
 |groupId|String|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,9 @@ ms.locfileid: "43454285"
   "groupId": "String"
 }
 ```
+
+
+
 
 
 

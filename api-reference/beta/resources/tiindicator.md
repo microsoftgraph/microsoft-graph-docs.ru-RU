@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 68345ec9c443f0c83d96e54a0ee9d4fbbc5279ff
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 339fa4c3a3ef54b8bb93b6b7517162c1fc9f8bc8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319493"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075555"
 ---
 # <a name="tiindicator-resource-type"></a>Тип ресурса Тииндикатор
 
@@ -30,7 +30,7 @@ ms.locfileid: "47319493"
      - [Создание объекта tiIndicator](../api/tiindicators-post.md)
      - [Перечисление объектов tiIndicator](../api/tiindicators-list.md)
      - [Обновление](../api/tiindicator-update.md)
-     - [удаление](../api/tiindicator-delete.md);
+     - [Удаление](../api/tiindicator-delete.md)
 
      Поддержка массовых методов скоро появилась.
 
@@ -51,8 +51,8 @@ ms.locfileid: "47319493"
 | [Получение объекта tiIndicator](../api/tiindicator-get.md) | [тииндикатор](tiindicator.md) | Чтение свойств и связей объекта Тииндикатор. |
 | [Создание объекта tiIndicator](../api/tiindicators-post.md) | [тииндикатор](tiindicator.md) | Создание нового Тииндикатор путем отправки в коллекцию Тииндикаторс. |
 | [Перечисление объектов tiIndicator](../api/tiindicators-list.md) | Коллекция [тииндикатор](tiindicator.md) | Получение коллекции объектов Тииндикатор. |
-| [обновление](../api/tiindicator-update.md). | [тииндикатор](tiindicator.md) | Обновление объекта Тииндикатор. |
-| [удаление](../api/tiindicator-delete.md); | Нет | Удаление объекта Тииндикатор. |
+| [Обновление](../api/tiindicator-update.md) | [тииндикатор](tiindicator.md) | Обновление объекта Тииндикатор. |
+| [Удаление](../api/tiindicator-delete.md) | Нет | Удаление объекта Тииндикатор. |
 |[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|Нет| Удаление нескольких объектов Тииндикатор.|
 |[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|Нет| Удаление нескольких объектов Тииндикатор в `externalId` свойстве.|
 |[submitTiIndicators](../api/tiindicator-submittiindicators.md)|Коллекция [тииндикатор](tiindicator.md)|Создание нового Тииндикаторс путем отправки коллекции Тииндикаторс.|
@@ -157,7 +157,7 @@ ms.locfileid: "47319493"
 | unknown |  нуль    | |
 | Злоумышленник |  1     |Индикатор описывает.|
 | поставлен |  2    |Индикатор — это возможность злоумышленника.|
-| инфраструктур | 3  |Индикатор описывает инфраструктуру злоумышленника.|
+| инфраструктур | 4 |Индикатор описывает инфраструктуру злоумышленника.|
 | стала | 4  |Индикатор описывает жертвой злоумышленника.|
 | unknownFutureValue | 127 | |
 
@@ -291,3 +291,5 @@ ms.locfileid: "47319493"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

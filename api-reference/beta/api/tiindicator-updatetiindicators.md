@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d4c05efc931daba5953f49f2789b54dbb163fa08
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0be11755ff976037ab593c3273ed70b30eb4e4dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452353"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076526"
 ---
 # <a name="tiindicator-updatetiindicators"></a>Тииндикатор: Упдатетииндикаторс
 
@@ -46,15 +46,15 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. Дополнительные сведения о свойствах, которые можно обновлять, можно найти в [статье Update тииндикатор](tiindicator-update.md). Обязательные поля для каждого Тииндикатор: `id`, `expirationDateTime`, `targetProduct`.
+В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. Дополнительные сведения о свойствах, которые можно обновлять, можно найти в [статье Update тииндикатор](tiindicator-update.md). Обязательные поля для каждого Тииндикатор: `id` , `expirationDateTime` , `targetProduct` .
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
 |значение|Коллекция Тииндикатор| Коллекция **тииндикаторс** , которую требуется обновить. У каждой сущности должен быть **идентификатор** и другие редактируемые свойства, которые необходимо обновить.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.  При возникновении ошибки этот метод возвращает код `206 Partial Content` отклика.  Дополнительные сведения см. в разделе [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) .
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.  При возникновении ошибки этот метод возвращает `206 Partial Content` код отклика.  Дополнительные сведения см. в разделе [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) .
 
 ## <a name="examples"></a>Примеры
 
@@ -148,3 +148,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

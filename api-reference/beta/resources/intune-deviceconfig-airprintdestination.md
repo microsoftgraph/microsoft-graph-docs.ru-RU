@@ -3,14 +3,14 @@ title: Тип ресурса Аирпринтдестинатион
 description: Представляет целевой объект Аирпринт.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a89415cfaf2555d870c2f2ebb552776fd7720e4f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 84575b172dee1f07d114abb202b3868ab936ce9a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470973"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076185"
 ---
 # <a name="airprintdestination-resource-type"></a>Тип ресурса Аирпринтдестинатион
 
@@ -30,7 +30,7 @@ ms.locfileid: "43470973"
 |порта|Int32|Прослушивающий порт назначения Аирпринт. Если этот ключ не указан, Аирпринт будет использовать порт по умолчанию. Доступно в iOS 11,0 и более поздних версиях.|
 |форцетлс|Boolean|Если задано значение true, подключения Аирпринт защищены с помощью протокола TLS. Значение по умолчанию: false. Доступно в iOS 11,0 и более поздних версиях.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,6 +49,9 @@ ms.locfileid: "43470973"
   "forceTls": true
 }
 ```
+
+
+
 
 
 

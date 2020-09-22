@@ -3,14 +3,14 @@ title: тип перечисления Ауторестартнотификат�
 description: Метод увольнения уведомления о необходимости автоматического перезапуска
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 89ec98ceaed12211a7bf344fc92a805de4945932
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: abf7b5ef00a94227ac0db46cd5ecd8f118a9cd60
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469830"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075912"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>тип перечисления Ауторестартнотификатиондисмиссалмесод
 
@@ -26,8 +26,11 @@ ms.locfileid: "43469830"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено|
-|Автоматически|1,1|Автоматическое закрытие|
-|user|2|Увольнение пользователей|
+|Автоматически|1 |Автоматическое закрытие|
+|user|2 |Увольнение пользователей|
+
+
+
 
 
 

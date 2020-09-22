@@ -3,14 +3,14 @@ title: Список Граупполициоператионс
 description: Список свойств и связей объектов Граупполициоператион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5ed24e75ecb01c2de2c36ff5510e269bc11462a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9477538e4ea62419a82c4f0fd4b6e2b1d98bc009
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456576"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078831"
 ---
 # <a name="list-grouppolicyoperations"></a>Список Граупполициоператионс
 
@@ -46,10 +46,10 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [граупполициоператион](../resources/intune-grouppolicy-grouppolicyoperation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -80,6 +80,9 @@ Content-Length: 342
   ]
 }
 ```
+
+
+
 
 
 

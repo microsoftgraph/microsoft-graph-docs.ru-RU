@@ -3,14 +3,14 @@ title: Тип ресурса auditResource
 description: Класс, содержащий свойства ресурса аудита.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3aae8d82706d25ed95e238c8c4dfa07516c64771
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3ceb5799c3b6c3a0169d347dda538bdbd014f454
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472099"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076255"
 ---
 # <a name="auditresource-resource-type"></a>Тип ресурса auditResource
 
@@ -25,12 +25,12 @@ ms.locfileid: "43472099"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя.|
+|displayName|String|Отображаемое имя.|
 |modifiedProperties|Коллекция [auditProperty](../resources/intune-auditing-auditproperty.md)|Список измененных свойств.|
 |type|String|Тип ресурса аудита.|
 |resourceId|String|ИД ресурса аудита.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,6 +56,9 @@ ms.locfileid: "43472099"
   "resourceId": "String"
 }
 ```
+
+
+
 
 
 

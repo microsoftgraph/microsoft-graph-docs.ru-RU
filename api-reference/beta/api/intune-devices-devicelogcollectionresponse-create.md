@@ -3,14 +3,14 @@ title: Создание Девицелогколлектионреспонсе
 description: Создание нового объекта Девицелогколлектионреспонсе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c11917ab1501aeebf7629cddf96ec9ea7f6d0fa
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: dad2b95eff28b48e5790a124ba3cbdc4272b8c06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124326"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077039"
 ---
 # <a name="create-devicelogcollectionresponse"></a>Создание Девицелогколлектионреспонсе
 
@@ -53,7 +53,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор в виде tenantId_deviceId_requestId|
+|id|String|Уникальный идентификатор в виде tenantId_deviceId_requestId|
 |status|String|Состояние запроса на сбор журналов|
 |манажеддевицеид|Guid|Идентификатор устройства|
 |errorCode|Int64|Код ошибки (при наличии). Допустимые значения — 9.22337203685478 E + 18 — 9.22337203685478 E + 18|
@@ -110,6 +110,9 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
+
+
+
 
 
 

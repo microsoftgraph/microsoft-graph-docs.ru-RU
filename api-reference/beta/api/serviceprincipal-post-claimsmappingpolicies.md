@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fca74b192ac261edbe4ba0e6af67760d409dd30d
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: c5b486c76210ce28280c9adef278734d5c11f58c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340042"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076804"
 ---
 # <a name="assign-claimsmappingpolicy"></a>Назначение типа ресурса claimsMappingPolicy
 
@@ -42,7 +42,7 @@ POST /servicePrincipals/{id}/claimsMappingPolicies/$ref
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -110,3 +110,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

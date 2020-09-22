@@ -3,14 +3,14 @@ title: Список Иосвификонфигуратионс
 description: Список свойств и связей объектов iosWiFiConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e7716d72633a434deac6c9041d7d16d3c5981cf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bce383c7a15829b81a7945d438622d996f9202ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438416"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077466"
 ---
 # <a name="list-ioswificonfigurations"></a>Список Иосвификонфигуратионс
 
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1821
+Content-Length: 1868
 
 {
   "value": [
@@ -112,11 +112,15 @@ Content-Length: 1821
       "proxyManualAddress": "Proxy Manual Address value",
       "proxyManualPort": 15,
       "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+      "disableMacAddressRandomization": true,
       "preSharedKey": "Pre Shared Key value"
     }
   ]
 }
 ```
+
+
+
 
 
 

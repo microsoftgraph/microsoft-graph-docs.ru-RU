@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: fdfeb1af207c8005f6018a7e5df9557a78066211
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5de9e8b01fa02f02fbfa8248a7f307360cd1c6ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452326"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076500"
 ---
 # <a name="create-threat-intelligence-indicator"></a>Создание индикатора для логики операций с угрозами
 
@@ -46,11 +46,11 @@ POST /security/tiIndicators
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [тииндикатор](../resources/tiindicator.md) в [формате](../resources/tiindicator.md#indicator-observables---file)JSON, содержащий хотя бы один наблюдаемый [адрес электронной почты](../resources/tiindicator.md#indicator-observables---email), файл или [сеть](../resources/tiindicator.md#indicator-observables---network) , а также следующие обязательные поля `action`: `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`,. 
+В тексте запроса добавьте представление объекта [тииндикатор](../resources/tiindicator.md) в формате JSON, содержащий хотя бы один наблюдаемый [адрес электронной почты](../resources/tiindicator.md#indicator-observables---email), [файл](../resources/tiindicator.md#indicator-observables---file)или [сеть](../resources/tiindicator.md#indicator-observables---network) , а также следующие обязательные поля:,, `action` ,, `description` `expirationDateTime` `targetProduct` `threatType` , `tlpLevel` . 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [тииндикатор](../resources/tiindicator.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [тииндикатор](../resources/tiindicator.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -141,3 +141,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

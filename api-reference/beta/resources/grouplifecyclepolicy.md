@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b99e79da21f7aefe523b7bebe27115d9d38d4b55
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: d01be98869a62d72b275f5840ddc2e0edcd5c698
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895505"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078432"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Тип ресурса groupLifecyclePolicy
 
@@ -25,8 +25,8 @@ ms.locfileid: "44895505"
 |[Get groupLifecyclePolicy](../api/grouplifecyclepolicy-get.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) |Чтение свойств и связей объекта groupLifecyclePolicy.|
 |[Перечисление groupLifecyclePolicies](../api/grouplifecyclepolicy-list.md) | Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md) | Перечисление всех объектов groupLifecyclePolicy. |
 |[Update groupLifecyclePolicy](../api/grouplifecyclepolicy-update.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) | Обновление объекта groupLifecyclePolicy. |
-|[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | Нет | Удаление объекта groupLifecyclePolicy. |
-|[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|Нет| Добавление группы в политику жизненного цикла. |
+|[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | None | Удаление объекта groupLifecyclePolicy. |
+|[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|None| Добавление группы в политику жизненного цикла. |
 |[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md)|None| Удаление группы из политики жизненного цикла. |
 |[Обновление группы](../api/grouplifecyclepolicy-renewgroup.md)|Нет| Обновление даты окончания срока действия группы. |
 
@@ -39,7 +39,7 @@ ms.locfileid: "44895505"
 |id|GUID| Уникальный идентификатор политики. Только для чтения.|
 |managedGroupTypes|String| Тип группы, к которому применяется политика истечения срока действия. Возможные значения — **All**, **Selected** и **None**. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -74,3 +74,5 @@ ms.locfileid: "44895505"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

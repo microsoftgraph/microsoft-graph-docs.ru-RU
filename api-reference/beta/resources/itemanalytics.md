@@ -6,12 +6,12 @@ title: итеманалитикс
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4035ff821927d520ed457c3040be01bd9368240c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ef1fd6778b9ed31c0cd6dcd5ac14316675d697f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523102"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075632"
 ---
 # <a name="itemanalytics-resource-type"></a>Тип ресурса Итеманалитикс
 
@@ -63,3 +63,5 @@ ms.locfileid: "42523102"
   "suppressions": []
 }
 -->
+
+

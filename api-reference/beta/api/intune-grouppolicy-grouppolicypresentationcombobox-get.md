@@ -3,14 +3,14 @@ title: Получение Граупполиципресентатионкомб
 description: Чтение свойств и связей объекта Граупполиципресентатионкомбобокс.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0af533b1a7d1bcbf8d6dec096a8201a10a81bae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1d19d051ce4bde1cdbdd11867ed250e4c2b77ddd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43377785"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078760"
 ---
 # <a name="get-grouppolicypresentationcombobox"></a>Получение Граупполиципресентатионкомбобокс
 
@@ -50,10 +50,10 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [граупполиципресентатионкомбобокс](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -86,6 +86,9 @@ Content-Length: 385
   }
 }
 ```
+
+
+
 
 
 

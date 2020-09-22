@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e3f85936e94da0485d62478f54eed8918967396b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0a25d9c69b3495bcc2efc38b3e87b373f247d024
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442725"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078355"
 ---
 # <a name="keyvalue-resource-type"></a>Тип ресурса Ключзначение
 
@@ -24,8 +24,8 @@ ms.locfileid: "43442725"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|key|String|Содержит имя поля, с которым связано значение. Если подсказка входа или домена включена в запрос на вход, соответствующие поля включаются в качестве пар "ключ-значение". Возможные ключи: `Login hint present`, `Domain hint present`.|
-|value|String|Содержит соответствующее значение для указанного ключа. Значение, `true` если подсказка для входа была включена в запрос на вход; в `false`противном случае. Значение, `true` если подсказка домена была включена в запрос на вход; в `false`противном случае.|
+|key|String|Содержит имя поля, с которым связано значение. Если подсказка входа или домена включена в запрос на вход, соответствующие поля включаются в качестве пар "ключ-значение". Возможные ключи: `Login hint present` , `Domain hint present` .|
+|value|String|Содержит соответствующее значение для указанного ключа. Значение, `true` Если подсказка для входа была включена в запрос на вход; в противном случае `false` . Значение, `true` Если подсказка домена включена в запрос на вход; в противном случае `false` .|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -58,3 +58,5 @@ ms.locfileid: "43442725"
   "suppressions": []
 }
 -->
+
+

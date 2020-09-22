@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: Добавление владельца'
-description: Добавьте владельца для субъекта службы.
+description: Добавление владельца для субъекта-службы.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 555d2341d68ff48d34c3bf56b112b6a7ab501c9d
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 2618223235fbc7f81eab110d272d1b02c0e14054
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44382729"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076773"
 ---
 # <a name="serviceprincipal-add-owner"></a>servicePrincipal: Добавление владельца
 
@@ -18,16 +18,16 @@ ms.locfileid: "44382729"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте владельца для [servicePrincipal](../resources/serviceprincipal.md).
+Добавление владельца для [servicePrincipal](../resources/serviceprincipal.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL и Directory. Read. ALL, Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All и Directory.Read.All, Application.ReadWrite.All и Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Application. ReadWrite. Овнедби и Directory. Read. ALL, Application. ReadWrite. ALL и Directory. Read. ALL, Application. ReadWrite. Овнедби и Directory. ReadWrite. ALL, Application. ReadWrite. ALL и Directory. ReadWrite. ALL  |
+|Для приложений | Application.ReadWrite.OwnedBy и Directory.Read.All, Application.ReadWrite.All и Directory.Read.All, Application.ReadWrite.OwnedBy и Directory.ReadWrite.All, Application.ReadWrite.All и Directory.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /servicePrincipals/{id}/owners/$ref
 | Авторизация | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
+Укажите представление JSON объекта [directoryObject](../resources/directoryobject.md) в тексте запроса.
 
 ## <a name="response"></a>Отклик
 
@@ -81,8 +81,8 @@ Content-length: 30
 ---
 
 
-В тексте запроса добавьте представление объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
-### <a name="response"></a>Ответ
+Укажите представление JSON объекта [directoryObject](../resources/directoryobject.md) в тексте запроса.
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 
 <!-- {
@@ -106,3 +106,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

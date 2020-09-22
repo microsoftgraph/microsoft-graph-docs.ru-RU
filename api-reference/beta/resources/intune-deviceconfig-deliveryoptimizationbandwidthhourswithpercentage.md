@@ -3,14 +3,14 @@ title: Тип ресурса Деливерйоптимизатионбандв�
 description: Предельная пропускная способность в процентах с рабочими часами.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85008f7aee3c2f06536ef838df04e56ede36ed46
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bac0cd6232983e506ea9fafd3167910ea0bcae7d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420583"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078418"
 ---
 # <a name="deliveryoptimizationbandwidthhourswithpercentage-resource-type"></a>Тип ресурса Деливерйоптимизатионбандвидсхаурсвисперцентаже
 
@@ -31,7 +31,7 @@ ms.locfileid: "43420583"
 |бандвидсбаккграундперцентажехаурс|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Процент загрузки в фоновом режиме.|
 |бандвидсфореграундперцентажехаурс|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Процентное соотношение загрузки в процентах.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,6 +60,9 @@ ms.locfileid: "43420583"
   }
 }
 ```
+
+
+
 
 
 

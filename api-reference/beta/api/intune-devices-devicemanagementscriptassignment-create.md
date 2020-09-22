@@ -3,14 +3,14 @@ title: Создание Девицеманажементскриптассигн
 description: Создание нового объекта Девицеманажементскриптассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b43ec4ffeb081eb4865d0fbb7e7f7110bfeefa3
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 7d809117c8503ef625b88e19d912a3360a947a06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792368"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076948"
 ---
 # <a name="create-devicemanagementscriptassignment"></a>Создание Девицеманажементскриптассигнмент
 
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементскриптассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементскриптассигнмент.
@@ -98,6 +98,9 @@ Content-Length: 376
   }
 }
 ```
+
+
+
 
 
 

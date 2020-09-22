@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: f480ff8c67c602512d7d8ef3f090366734f0ca7e
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 737a3ad71ee34641dd6d2c719a7a1975d3fb11ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808664"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075527"
 ---
 # <a name="logonuser-resource-type"></a>Тип ресурса logonUser
 
@@ -30,7 +30,7 @@ ms.locfileid: "46808664"
 |логонид|String|Идентификатор входа пользователя.|
 |Logontypes задано|Коллекция String|Коллекция типов входа в систему для вошедшего пользователя, начиная с первого до последнего обнаружения. Возможные значения: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -64,3 +64,5 @@ ms.locfileid: "46808664"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

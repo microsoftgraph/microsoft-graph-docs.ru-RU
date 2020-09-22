@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c3b6482c7ff896abb224c8e408ee8964bf7e8e96
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6b8d13c16fe2c0a70f85e704471a5bcabd55fc99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448437"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076829"
 ---
 # <a name="update-rule"></a>Обновление правила
 
@@ -41,7 +41,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -134,3 +134,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

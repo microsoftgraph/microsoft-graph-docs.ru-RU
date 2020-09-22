@@ -1,18 +1,18 @@
 ---
-title: Предоставление Аппролеассигнмент участнику службы
-description: Предоставьте участнику службы назначение роли приложения.
+title: Предоставление appRoleAssignment субъекту-службе
+description: Предоставление назначения роли приложения субъекту-службе
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 8e8bc455f8b04e4a78bfcad1795917350ec8b86b
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: ca0f3a2837062bacf592c100c4f92532483a8399
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44382666"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076806"
 ---
-# <a name="grant-an-approleassignment-to-a-service-principal"></a>Предоставление Аппролеассигнмент участнику службы
+# <a name="grant-an-approleassignment-to-a-service-principal"></a>Предоставление appRoleAssignment субъекту-службе
 
 Пространство имен: microsoft.graph
 
@@ -20,15 +20,15 @@ ms.locfileid: "44382666"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Назначьте роль приложения участнику клиентской службы.
+Назначьте роль приложения субъекту-службе клиента.
 
-Роли приложений, назначенные субъектам служб, также называются [разрешениями приложений](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Разрешения приложения могут быть предоставлены непосредственно с назначениями ролей приложения или с помощью [согласия пользователя](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
+Роли приложений, назначаемые субъектам-службам, также называются [разрешениями приложений](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Разрешения приложения можно предоставлять непосредственно в назначениях ролей приложений, а также с помощью [интерфейса согласия](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
 
-Чтобы назначить роль приложения для участника клиентской службы, необходимы три идентификатора:
+Чтобы предоставить назначение роли приложения субъекту-службе клиента, нужны три идентификатора:
 
-- `principalId`: `id` Клиент службы, которому назначается роль приложения.
-- `resourceId`: `id` Ресурс `servicePrincipal` (API), в котором определена роль приложения (разрешение приложения).
-- `appRoleId`: Значение `id` `appRole` (заданное для субъекта-службы ресурса), которое необходимо назначить участнику клиентской службы.
+- `principalId`: `id` субъекта-службы клиента, которой нужно назначить роль приложения.
+- `resourceId`: `id` ресурса `servicePrincipal` (API), в которых определена роль приложения (разрешение приложения).
+- `appRoleId`: `id` объекта `appRole` (определенного в субъекте-службе ресурса) для назначения субъекту-службе клиента.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,9 +36,9 @@ ms.locfileid: "44382666"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Аппролеассигнмент. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Аппролеассигнмент. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ POST /servicePrincipals/{id}/appRoleAssignments
 ```
 
 > [!NOTE]
-> Рекомендуется создавать назначения ролей приложений с помощью [ `appRoleAssignedTo` отношения между субъектом службы _ресурсов_ ](serviceprincipal-post-approleassignedto.md), а не с `appRoleAssignments` назначенным пользователем, группой или субъектом службы.
+> Рекомендуется создавать назначения ролей приложения, используя [`appRoleAssignedTo`отношение _ресурса_ субъекта-службы](serviceprincipal-post-approleassignedto.md) вместо `appRoleAssignments`отношения назначенного пользователя, группы или субъекта-службы.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,11 +59,11 @@ POST /servicePrincipals/{id}/appRoleAssignments
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [аппролеассигнмент](../resources/approleassignment.md) в формате JSON.
+В тексте запроса укажите представление JSON объекта [appRoleAssignment](../resources/approleassignment.md).
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [аппролеассигнмент](../resources/approleassignment.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `201 Created` и объект [appRoleAssignment](../resources/approleassignment.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -104,7 +104,7 @@ Content-Length: 110
 ---
 
 
-В этом примере и то, `{id}` и другое — это `{principalId-value}` `id` назначенный субъект-службу клиента, и будет `{resoruceId}` иметь значение `id` субъекта-службы ресурсов (API).
+В этом примере `{id}` и `{principalId-value}` оба будут `id` назначенного субъекта-службы клиента, а `{resoruceId}` будет `id` субъектом-службой ресурса (API).
 
 ### <a name="response"></a>Отклик
 
@@ -147,3 +147,5 @@ Content-length: 253
   ]
 }
 -->
+
+

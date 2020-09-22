@@ -3,14 +3,14 @@ title: Тип ресурса Деливерйоптимизатионграуп�
 description: Тип идентификатора настраиваемой группы
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d0b818a8c9e2a6a3cb13a8caa00b2115cf7f52b3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 558dbf0b0e1d2b927da8c4d7e7f159d31b4e4f95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420481"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078376"
 ---
 # <a name="deliveryoptimizationgroupidcustom-resource-type"></a>Тип ресурса Деливерйоптимизатионграупидкустом
 
@@ -30,7 +30,7 @@ ms.locfileid: "43420481"
 |:---|:---|:---|
 |граупидкустом|String|Указывает произвольный идентификатор группы, к которому относится устройство.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,9 @@ ms.locfileid: "43420481"
   "groupIdCustom": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 0a9ca4d06f43c9dd0964f0bb4c9614bfb4a78c1e
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: fc05fe9011d91ac9da5f74a6079537ebfba25160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091696"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078294"
 ---
 # <a name="printtasktrigger-resource-type"></a>Тип ресурса Принттасктригжер
 
@@ -27,7 +27,7 @@ ms.locfileid: "45091696"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Список](../api/printer-list-tasktriggers.md) | Коллекция [принттасктригжер](printtasktrigger.md) | Получение списка Принттасктригжерс, связанных с определенным [принтером](printer.md). |
-| [Get](../api/printtasktrigger-get.md) | [принттасктригжер](printtasktrigger.md) | Получение Принттасктригжер, связанного с определенным [принттаск](printtask.md). |
+| [получение](../api/printtasktrigger-get.md); | [printTaskTrigger](printtasktrigger.md) | Получение Принттасктригжер, связанного с определенным [принттаск](printtask.md). |
 
 
 ## <a name="properties"></a>Свойства
@@ -43,10 +43,10 @@ ms.locfileid: "45091696"
 |жобстартед|нуль|Представляет событие, возникающее при запуске нового задания печати.|
 |unknownFutureValue|1 |Значение Sentinel для перечисления расширяемые. Не следует использовать.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|RDLC|[принттаскдефинитион](printtaskdefinition.md)|Абстрактное определение, которое будет использоваться для создания объекта [принттаск](printtask.md) при запуске события Print. Только для чтения.|
+|RDLC|[printTaskDefinition](printtaskdefinition.md)|Абстрактное определение, которое будет использоваться для создания объекта [принттаск](printtask.md) при запуске события Print. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -80,3 +80,5 @@ ms.locfileid: "45091696"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: Создание объекта iosVppEBookAssignment
 description: Создание объекта iosVppEBookAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eb41945807d73eb956f0b38e716fd9ffb4994c79
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d1a260a20635d427cc452b2211accdb38cab331a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470494"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077956"
 ---
 # <a name="create-iosvppebookassignment"></a>Создание объекта iosVppEBookAssignment
 
@@ -44,14 +44,14 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта iosVppEBookAssignment в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта iosVppEBookAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки электронной книги. Наследуется от [managedEBookAssignment](../resources/intune-books-managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
@@ -94,6 +94,9 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
+
+
+
 
 
 

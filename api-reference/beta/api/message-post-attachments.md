@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5073f93966590be5c9fad17c5542e726ab7ea982
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 00eb01bf7ddc25c649cd5a36a0403984152fd7fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448549"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076913"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -70,7 +70,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [вложения](../resources/attachment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [вложения](../resources/attachment.md) в тексте отклика.
 
 ## <a name="example-file-attachment"></a>Пример (вложенный файл)
 
@@ -109,7 +109,7 @@ Content-length: 142
 
 
 Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
@@ -174,7 +174,7 @@ Content-length: 200
 ```
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -280,3 +280,5 @@ HTTP 201 Created
   "tocPath": ""
 }
 -->
+
+

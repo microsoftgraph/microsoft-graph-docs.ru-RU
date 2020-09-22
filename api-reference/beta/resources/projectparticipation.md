@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 535564d3b35bbccb47c54a78fe4b508a6d6a2963
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 72d36f21a156fd6239dd8466808b1fe6ba2e6889
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812024"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078299"
 ---
 # <a name="projectparticipation-resource-type"></a>Тип ресурса ПрожектпартиЦипатион
 
@@ -112,3 +112,5 @@ ms.locfileid: "46812024"
   ]
 }
 ```
+
+

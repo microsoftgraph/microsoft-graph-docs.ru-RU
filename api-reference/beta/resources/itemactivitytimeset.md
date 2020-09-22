@@ -6,12 +6,12 @@ title: ItemActivityTimeSet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 33a9f4c42393c0c77c331889d8e77244de6226e1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9295337237c681fd0ec02c9fa8061bf206059600
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523109"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075667"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>Тип ресурса ItemActivityTimeSet
 
@@ -66,3 +66,5 @@ ms.locfileid: "42523109"
   "suppressions": []
 }
 -->
+
+
