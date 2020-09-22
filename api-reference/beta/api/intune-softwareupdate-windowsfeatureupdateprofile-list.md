@@ -3,35 +3,35 @@ title: Список Виндовсфеатуреупдатепрофилес
 description: Список свойств и связей объектов Виндовсфеатуреупдатепрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9657a20b42939dfc3fca8e47669e6b8e43225926
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: c7facbabac0f8b578cbff2269df163f2836c7f52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123605"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072020"
 ---
-# <a name="list-windowsfeatureupdateprofiles"></a><span data-ttu-id="16645-103">Список Виндовсфеатуреупдатепрофилес</span><span class="sxs-lookup"><span data-stu-id="16645-103">List windowsFeatureUpdateProfiles</span></span>
+# <a name="list-windowsfeatureupdateprofiles"></a><span data-ttu-id="97cb5-103">Список Виндовсфеатуреупдатепрофилес</span><span class="sxs-lookup"><span data-stu-id="97cb5-103">List windowsFeatureUpdateProfiles</span></span>
 
-<span data-ttu-id="16645-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="16645-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="97cb5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="97cb5-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="16645-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="16645-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="97cb5-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="97cb5-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="16645-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="16645-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="97cb5-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="97cb5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="16645-107">Список свойств и связей объектов [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="16645-107">List properties and relationships of the [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) objects.</span></span>
+<span data-ttu-id="97cb5-107">Список свойств и связей объектов [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="97cb5-107">List properties and relationships of the [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="16645-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="16645-108">Prerequisites</span></span>
-<span data-ttu-id="16645-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="16645-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="97cb5-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="97cb5-108">Prerequisites</span></span>
+<span data-ttu-id="97cb5-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="97cb5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="16645-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="16645-111">Permission type</span></span>|<span data-ttu-id="16645-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="16645-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="97cb5-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="97cb5-111">Permission type</span></span>|<span data-ttu-id="97cb5-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="97cb5-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="16645-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="16645-113">Delegated (work or school account)</span></span>|<span data-ttu-id="16645-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="16645-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="16645-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="16645-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="16645-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="16645-116">Not supported.</span></span>|
-|<span data-ttu-id="16645-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="16645-117">Application</span></span>|<span data-ttu-id="16645-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="16645-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="97cb5-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="97cb5-113">Delegated (work or school account)</span></span>|<span data-ttu-id="97cb5-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="97cb5-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="97cb5-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="97cb5-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="97cb5-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="97cb5-116">Not supported.</span></span>|
+|<span data-ttu-id="97cb5-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="97cb5-117">Application</span></span>|<span data-ttu-id="97cb5-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="97cb5-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="16645-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="16645-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="97cb5-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="97cb5-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,28 +40,28 @@ ms.locfileid: "45123605"
 GET /deviceManagement/windowsFeatureUpdateProfiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="16645-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="16645-120">Request headers</span></span>
-|<span data-ttu-id="16645-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="16645-121">Header</span></span>|<span data-ttu-id="16645-122">Значение</span><span class="sxs-lookup"><span data-stu-id="16645-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="97cb5-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="97cb5-120">Request headers</span></span>
+|<span data-ttu-id="97cb5-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="97cb5-121">Header</span></span>|<span data-ttu-id="97cb5-122">Значение</span><span class="sxs-lookup"><span data-stu-id="97cb5-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="16645-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="16645-123">Authorization</span></span>|<span data-ttu-id="16645-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="16645-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="16645-125">Accept</span><span class="sxs-lookup"><span data-stu-id="16645-125">Accept</span></span>|<span data-ttu-id="16645-126">application/json</span><span class="sxs-lookup"><span data-stu-id="16645-126">application/json</span></span>|
+|<span data-ttu-id="97cb5-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="97cb5-123">Authorization</span></span>|<span data-ttu-id="97cb5-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="97cb5-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="97cb5-125">Accept</span><span class="sxs-lookup"><span data-stu-id="97cb5-125">Accept</span></span>|<span data-ttu-id="97cb5-126">application/json</span><span class="sxs-lookup"><span data-stu-id="97cb5-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="16645-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="16645-127">Request body</span></span>
-<span data-ttu-id="16645-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="16645-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="97cb5-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="97cb5-127">Request body</span></span>
+<span data-ttu-id="97cb5-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="97cb5-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="16645-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="16645-129">Response</span></span>
-<span data-ttu-id="16645-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="16645-130">If successful, this method returns a `200 OK` response code and a collection of [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="97cb5-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="97cb5-129">Response</span></span>
+<span data-ttu-id="97cb5-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="97cb5-130">If successful, this method returns a `200 OK` response code and a collection of [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="16645-131">Пример</span><span class="sxs-lookup"><span data-stu-id="16645-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="97cb5-131">Пример</span><span class="sxs-lookup"><span data-stu-id="97cb5-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="16645-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="16645-132">Request</span></span>
-<span data-ttu-id="16645-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="16645-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="97cb5-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="97cb5-132">Request</span></span>
+<span data-ttu-id="97cb5-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="97cb5-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles
 ```
 
-### <a name="response"></a><span data-ttu-id="16645-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="16645-134">Response</span></span>
-<span data-ttu-id="16645-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="16645-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="97cb5-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="97cb5-134">Response</span></span>
+<span data-ttu-id="97cb5-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="97cb5-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -84,6 +84,9 @@ Content-Length: 514
   ]
 }
 ```
+
+
+
 
 
 

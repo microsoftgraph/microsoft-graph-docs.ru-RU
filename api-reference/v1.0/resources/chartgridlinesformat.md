@@ -5,35 +5,35 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c7be34951862ab6a2ce28f738482d4609f4edc71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84cce57c9105aa9c852579433dac9ffa73e289ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531842"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069192"
 ---
-# <a name="chartgridlinesformat-resource-type"></a><span data-ttu-id="72e24-103">Тип ресурса ChartGridlinesFormat</span><span class="sxs-lookup"><span data-stu-id="72e24-103">ChartGridlinesFormat resource type</span></span>
+# <a name="chartgridlinesformat-resource-type"></a><span data-ttu-id="9a79c-103">Тип ресурса ChartGridlinesFormat</span><span class="sxs-lookup"><span data-stu-id="9a79c-103">ChartGridlinesFormat resource type</span></span>
 
-<span data-ttu-id="72e24-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="72e24-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9a79c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9a79c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="72e24-105">Инкапсулирует свойства формата для линий сетки диаграммы.</span><span class="sxs-lookup"><span data-stu-id="72e24-105">Encapsulates the format properties for chart gridlines.</span></span>
+<span data-ttu-id="9a79c-105">Инкапсулирует свойства формата для линий сетки диаграммы.</span><span class="sxs-lookup"><span data-stu-id="9a79c-105">Encapsulates the format properties for chart gridlines.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="72e24-106">Methods</span><span class="sxs-lookup"><span data-stu-id="72e24-106">Methods</span></span>
-<span data-ttu-id="72e24-107">Нет</span><span class="sxs-lookup"><span data-stu-id="72e24-107">None</span></span>
+## <a name="methods"></a><span data-ttu-id="9a79c-106">Методы</span><span class="sxs-lookup"><span data-stu-id="9a79c-106">Methods</span></span>
+<span data-ttu-id="9a79c-107">Нет</span><span class="sxs-lookup"><span data-stu-id="9a79c-107">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="72e24-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="72e24-108">Properties</span></span>
-<span data-ttu-id="72e24-109">Нет</span><span class="sxs-lookup"><span data-stu-id="72e24-109">None</span></span>
+## <a name="properties"></a><span data-ttu-id="9a79c-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="9a79c-108">Properties</span></span>
+<span data-ttu-id="9a79c-109">Нет</span><span class="sxs-lookup"><span data-stu-id="9a79c-109">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="72e24-110">Связи</span><span class="sxs-lookup"><span data-stu-id="72e24-110">Relationships</span></span>
-| <span data-ttu-id="72e24-111">Связь</span><span class="sxs-lookup"><span data-stu-id="72e24-111">Relationship</span></span> | <span data-ttu-id="72e24-112">Тип</span><span class="sxs-lookup"><span data-stu-id="72e24-112">Type</span></span>   |<span data-ttu-id="72e24-113">Описание</span><span class="sxs-lookup"><span data-stu-id="72e24-113">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="9a79c-110">Связи</span><span class="sxs-lookup"><span data-stu-id="9a79c-110">Relationships</span></span>
+| <span data-ttu-id="9a79c-111">Связь</span><span class="sxs-lookup"><span data-stu-id="9a79c-111">Relationship</span></span> | <span data-ttu-id="9a79c-112">Тип</span><span class="sxs-lookup"><span data-stu-id="9a79c-112">Type</span></span>   |<span data-ttu-id="9a79c-113">Описание</span><span class="sxs-lookup"><span data-stu-id="9a79c-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="72e24-114">line</span><span class="sxs-lookup"><span data-stu-id="72e24-114">line</span></span>|[<span data-ttu-id="72e24-115">воркбукчартлинеформат</span><span class="sxs-lookup"><span data-stu-id="72e24-115">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="72e24-116">Представляет форматирование линий диаграммы.</span><span class="sxs-lookup"><span data-stu-id="72e24-116">Represents chart line formatting.</span></span> <span data-ttu-id="72e24-117">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="72e24-117">Read-only.</span></span>|
+|<span data-ttu-id="9a79c-114">line</span><span class="sxs-lookup"><span data-stu-id="9a79c-114">line</span></span>|[<span data-ttu-id="9a79c-115">воркбукчартлинеформат</span><span class="sxs-lookup"><span data-stu-id="9a79c-115">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="9a79c-116">Представляет форматирование линий диаграммы.</span><span class="sxs-lookup"><span data-stu-id="9a79c-116">Represents chart line formatting.</span></span> <span data-ttu-id="9a79c-117">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="9a79c-117">Read-only.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="72e24-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="72e24-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9a79c-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9a79c-118">JSON representation</span></span>
 
-<span data-ttu-id="72e24-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="72e24-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9a79c-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9a79c-119">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
@@ -58,3 +58,4 @@ ms.locfileid: "42531842"
   "section": "documentation",
   "tocPath": ""
 }-->
+
