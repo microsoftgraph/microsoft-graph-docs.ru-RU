@@ -3,38 +3,38 @@ title: Тип ресурса Инсигхтвалуедаубле
 description: Значение в средстве анализа пользовательского интерфейса.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07b415eb1fc7015be076861b5db654c80dd6de22
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: aaef91b47e0554c9f94bcd48aafe33434f4496ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178838"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081358"
 ---
-# <a name="insightvaluedouble-resource-type"></a><span data-ttu-id="ba238-103">Тип ресурса Инсигхтвалуедаубле</span><span class="sxs-lookup"><span data-stu-id="ba238-103">insightValueDouble resource type</span></span>
+# <a name="insightvaluedouble-resource-type"></a><span data-ttu-id="5ac2e-103">Тип ресурса Инсигхтвалуедаубле</span><span class="sxs-lookup"><span data-stu-id="5ac2e-103">insightValueDouble resource type</span></span>
 
-<span data-ttu-id="ba238-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ba238-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5ac2e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5ac2e-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ba238-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ba238-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="5ac2e-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5ac2e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ba238-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ba238-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5ac2e-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="5ac2e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ba238-107">Значение в средстве анализа пользовательского интерфейса.</span><span class="sxs-lookup"><span data-stu-id="ba238-107">The value in an user experience analytics insight.</span></span>
+<span data-ttu-id="5ac2e-107">Значение в средстве анализа пользовательского интерфейса.</span><span class="sxs-lookup"><span data-stu-id="5ac2e-107">The value in an user experience analytics insight.</span></span>
 
 
-<span data-ttu-id="ba238-108">Наследуется от [усерекспериенцеаналитиксинсигхтвалуе](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)</span><span class="sxs-lookup"><span data-stu-id="ba238-108">Inherits from [userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)</span></span>
+<span data-ttu-id="5ac2e-108">Наследуется от [усерекспериенцеаналитиксинсигхтвалуе](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)</span><span class="sxs-lookup"><span data-stu-id="5ac2e-108">Inherits from [userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ba238-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="ba238-109">Properties</span></span>
-|<span data-ttu-id="ba238-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="ba238-110">Property</span></span>|<span data-ttu-id="ba238-111">Тип</span><span class="sxs-lookup"><span data-stu-id="ba238-111">Type</span></span>|<span data-ttu-id="ba238-112">Описание</span><span class="sxs-lookup"><span data-stu-id="ba238-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5ac2e-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="5ac2e-109">Properties</span></span>
+|<span data-ttu-id="5ac2e-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="5ac2e-110">Property</span></span>|<span data-ttu-id="5ac2e-111">Тип</span><span class="sxs-lookup"><span data-stu-id="5ac2e-111">Type</span></span>|<span data-ttu-id="5ac2e-112">Описание</span><span class="sxs-lookup"><span data-stu-id="5ac2e-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ba238-113">значение</span><span class="sxs-lookup"><span data-stu-id="ba238-113">value</span></span>|<span data-ttu-id="ba238-114">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="ba238-114">Double</span></span>|<span data-ttu-id="ba238-115">Н/Д</span><span class="sxs-lookup"><span data-stu-id="ba238-115">Not yet documented</span></span>|
+|<span data-ttu-id="5ac2e-113">значение</span><span class="sxs-lookup"><span data-stu-id="5ac2e-113">value</span></span>|<span data-ttu-id="5ac2e-114">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="5ac2e-114">Double</span></span>|<span data-ttu-id="5ac2e-115">Н/Д</span><span class="sxs-lookup"><span data-stu-id="5ac2e-115">Not yet documented</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ba238-116">Связи</span><span class="sxs-lookup"><span data-stu-id="ba238-116">Relationships</span></span>
-<span data-ttu-id="ba238-117">Нет</span><span class="sxs-lookup"><span data-stu-id="ba238-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="5ac2e-116">Связи</span><span class="sxs-lookup"><span data-stu-id="5ac2e-116">Relationships</span></span>
+<span data-ttu-id="5ac2e-117">Нет</span><span class="sxs-lookup"><span data-stu-id="5ac2e-117">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ba238-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ba238-118">JSON Representation</span></span>
-<span data-ttu-id="ba238-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ba238-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5ac2e-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5ac2e-118">JSON Representation</span></span>
+<span data-ttu-id="5ac2e-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5ac2e-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.insightValueDouble"
@@ -46,6 +46,9 @@ ms.locfileid: "44178838"
   "value": "4.2"
 }
 ```
+
+
+
 
 
 
