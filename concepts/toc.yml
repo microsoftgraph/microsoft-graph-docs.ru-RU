@@ -311,14 +311,20 @@ items:
                 href: search-concept-messages.md
               - name: Поиск событий
                 href: search-concept-events.md
-              - name: Поиск файлов
+              - name: Поиск содержимого в OneDrive и SharePoint
                 href: search-concept-files.md
               - name: Соединители поиска
                 href: search-concept-custom-types.md
+              - name: Сортировка результатов поиска
+                href: search-concept-sort.md
+              - name: Уточнение результатов поиска
+                href: search-concept-aggregation.md
           - name: Индекс
             items:
               - name: Управление подключениями
                 href: search-index-manage-connections.md
+              - name: Управление схемой
+                href: search-index-manage-schema.md
               - name: Управление элементами
                 href: search-index-manage-items.md
       - name: Безопасность
@@ -431,7 +437,7 @@ items:
                 href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: Отсутствие уведомлений в Outlook (предварительная версия)
                 href: webhooks-outlook-authz.md
-              - name: Уведомления с данными ресурсов (предварительная версия)
+              - name: Уведомления с данными ресурсов
                 href: webhooks-with-resource-data.md
               - name: Получение уведомлений разными способами (предварительная версия)
                 href: change-notifications-delivery.md
@@ -515,6 +521,16 @@ items:
             href: sdks/large-file-upload.md
           - name: Использование бета-версии API
             href: sdks/use-beta.md
+          - name: Воспользуйтесь PowerShell
+            items:
+              - name: Установка
+                href: powershell/installation.md
+              - name: Начало работы
+                href: powershell/get-started.md
+              - name: Перемещение по пакету SDK
+                href: powershell/navigating.md
+              - name: Проверка подлинности только для приложений
+                href: powershell/app-only.md
       - name: Использование набора средств
         items:
           - name: Общие сведения о наборе средств
