@@ -3,14 +3,14 @@ title: действие Жетполицисетс
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d63abb1649308f726e7dfc7e5225b50a977cef79
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 56e488d05a11d216348243ae8fba9e346a1f804c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457743"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050404"
 ---
 # <a name="getpolicysets-action"></a>действие Жетполицисетс
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/policySets/getPolicySets
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -105,6 +105,9 @@ Content-Length: 578
   ]
 }
 ```
+
+
+
 
 
 

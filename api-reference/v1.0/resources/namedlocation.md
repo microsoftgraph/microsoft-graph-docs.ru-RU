@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7519fe60702293a60fb9b5e4c59d8c810d8de14a
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: dc92ba18f51f02f03713e43d0fbd4efe4e7cb227
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384867"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022899"
 ---
 # <a name="namedlocation-resource-type"></a>Тип ресурса Намедлокатион
 
@@ -31,7 +31,7 @@ ms.locfileid: "45384867"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|Тип timestamp представляет дату и время создания расположения с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
-|displayName|Строка|Удобное для человека имя расположения.|
+|displayName|String|Удобное для человека имя расположения.|
 |id|String|Идентификатор объекта Намедлокатион. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип timestamp представляет дату и время последнего изменения расположения с использованием формата ISO 8601, которое всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 
@@ -71,3 +71,4 @@ ms.locfileid: "45384867"
   "section": "documentation",
   "tocPath": ""
 }-->
+

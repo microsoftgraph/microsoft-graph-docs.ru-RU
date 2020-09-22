@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса calendar
-description: Календарь, служащий контейнером для сведений о событиях. Это может быть календарь пользователя или календарь по умолчанию для группы Microsoft 365.
+description: Календарь, служащий контейнером для сведений о событиях. Это может быть календарь для пользователя или стандартный календарь для группы Microsoft 365.
 localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 47a63319efea2bdcdf11728bbac7d17903c6590a
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 63d00ecaba24469b9704fe6e6cc14e4792fef614
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895708"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077662"
 ---
 # <a name="calendar-resource-type"></a>Тип ресурса calendar
 
 Пространство имен: microsoft.graph
 
-Календарь, служащий контейнером для сведений о событиях. Это может быть календарь [пользователя](user.md)или календарь по умолчанию для [группы](group.md)Microsoft 365.
+Календарь, служащий контейнером для сведений о событиях. Это может быть календарь для [пользователя](user.md) или стандартный календарь для [группы](group.md) Microsoft 365.
 
 > **Примечание.** Существует несколько незначительных различий в способе взаимодействия с календарями пользователей и календарями групп:
 
@@ -30,9 +30,9 @@ ms.locfileid: "44895708"
 |:---------------|:--------|:----------|
 |[Список календарей](../api/user-list-calendars.md)|Коллекция [calendar](calendar.md)|Получение всех пользовательских календарей или календарей из стандартной либо другой указанной группы календарей.|
 |[Создание календаря](../api/user-post-calendars.md) |[calendar](calendar.md)| Создание календаря для пользователя в стандартной либо другой указанной группе календарей.|
-|[Получение календаря](../api/calendar-get.md) | [calendar](calendar.md) |Получение свойств и связей объекта **calendar**. В качестве календаря может использоваться календарь пользователя или стандартный календарь группы Microsoft 365. |
-|[Обновление](../api/calendar-update.md) | [calendar](calendar.md)  |Обновление свойств объекта **calendar**. В качестве календаря может использоваться календарь пользователя или стандартный календарь группы Microsoft 365. |
-|[Удаление](../api/calendar-delete.md) | Нет |Удаление объекта calendar. |
+|[Получение календаря](../api/calendar-get.md) | [calendar](calendar.md) |Получение свойств и связей объекта **calendar**. Это может быть календарь для пользователя или стандартный календарь для группы Microsoft 365. |
+|[Обновление](../api/calendar-update.md) | [calendar](calendar.md)  |Обновление свойств объекта **calendar**. Это может быть календарь для пользователя или стандартный календарь для группы Microsoft 365. |
+|[удаление](../api/calendar-delete.md); | Нет |Удаление объекта calendar. |
 |[Список экземпляров calendarView](../api/calendar-list-calendarview.md) |Коллекция [event](event.md)| Получение в представлении календаря повторений, исключений и отдельных экземпляров событий за определенный диапазон времени, указанных в основном календаре пользователя `(../me/calendarview)` или в другом заданном календаре.|
 |[Список событий](../api/calendar-list-events.md) |Коллекция [event](event.md)| Получение списка событий в календаре. Этот список содержит собрания с одним экземпляром и образцы рядов.|
 |[Создание события](../api/calendar-post-events.md) |[event](event.md)| Создание события в стандартном или указанном календаре.|
@@ -64,7 +64,7 @@ ms.locfileid: "44895708"
 |:---------------|:--------|:----------|
 |calendarPermissions|Коллекция [calendarPermission](calendarpermission.md)| Разрешения пользователей, которым предоставлен доступ к календарю.|
 |calendarView|Коллекция [Event](event.md)|Представление календаря для календаря. Свойство навигации. Только для чтения.|
-|events|Коллекция [Event](event.md)|События в календаре. Свойство навигации. Только для чтения.|
+|события|Коллекция [Event](event.md)|События в календаре. Свойство навигации. Только для чтения.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для календаря. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для календаря. Только для чтения. Допускается значение null.|
 
@@ -134,3 +134,4 @@ ms.locfileid: "44895708"
   "section": "documentation",
   "tocPath": ""
 }-->
+

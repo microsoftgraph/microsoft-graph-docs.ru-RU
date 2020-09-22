@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Чанженотификатионенкриптедконтент
-description: Подписка с данными ресурсов позволяет клиентскому приложению получать уведомления об изменениях, внесенные в данные в Microsoft Graph. Зашифрованное содержимое уведомления об изменении представляет зашифрованные данные, связанные с уведомлением.
+description: Объект Чанженотификатионенкриптедконтент представляет зашифрованные данные, вложенные в уведомление об изменении.
 localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4ca2230cf3735cb696136f3b3014e8545202ebfe
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: c3d5f576c5259ba69f6fa2194cf52d7834a1f717
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598495"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192163"
 ---
 # <a name="changenotificationencryptedcontent-resource-type"></a>Тип ресурса Чанженотификатионенкриптедконтент
 
@@ -22,10 +22,6 @@ ms.locfileid: "46598495"
 
 Дополнительные сведения см. в статье [Настройка уведомлений об изменениях, включающих данные ресурсов (Предварительная версия)](/graph/webhooks-with-resource-data.md).
 
-## <a name="methods"></a>Методы
-
-Нет.
-
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
@@ -36,11 +32,7 @@ ms.locfileid: "46598495"
 | енкриптионцертификатеид | string | Идентификатор сертификата, используемого для шифрования `dataKey` . |
 | енкриптионцертификатесумбпринт | string | Шестнадцатеричное представление отпечатка сертификата, используемого для шифрования `dataKey` . |
 
-## <a name="relationships"></a>Связи
-
-Отсутствуют.
-
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -74,3 +66,5 @@ ms.locfileid: "46598495"
   "suppressions": []
 }
 -->
+
+

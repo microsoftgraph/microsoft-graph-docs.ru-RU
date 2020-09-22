@@ -3,14 +3,14 @@ title: Получение политики
 description: Чтение свойств и связей объекта набора политик.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 78a690abf7d590b60340dba60ab5be71e562baa1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 224f98468102b80754df520b9fa2932e7dfbead2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457750"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050412"
 ---
 # <a name="get-policyset"></a>Получение политики
 
@@ -46,13 +46,13 @@ GET /deviceAppManagement/policySets/{policySetId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Policy](../resources/intune-policyset-policyset.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,6 +89,9 @@ Content-Length: 536
   }
 }
 ```
+
+
+
 
 
 

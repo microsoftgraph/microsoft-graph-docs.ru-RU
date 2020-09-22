@@ -6,12 +6,12 @@ title: Видео
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b80d36ce35a950fa20424124b20cba34c19307c3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a21c889f83491742af653c5702ccf886b63b001
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519472"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057745"
 ---
 # <a name="video-resource-type"></a>Тип ресурса video
 
@@ -23,7 +23,7 @@ ms.locfileid: "42519472"
 
 Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **video**, то этот ресурс представляет видеофайл. Свойства ресурса **Video** заполняются путем извлечения метаданных из такого файла.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -85,3 +85,5 @@ ms.locfileid: "42519472"
   "suppressions": []
 }
 -->
+
+

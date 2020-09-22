@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: bbcda3501faa22b1d1b31b67300caf71cff548a4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a024cfbabcff4357427ae6a814da00af83eae304
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811457"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070494"
 ---
 # <a name="process-resource-type"></a>Тип ресурса "процесс"
 
@@ -29,7 +29,7 @@ ms.locfileid: "46811457"
 |createdDateTime|DateTimeOffset|Время запуска процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хэши файлов (криптография и с учетом расположения).|
 |интегритилевел|processIntegrityLevel|Уровень целостности процесса. Возможные значения: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
-|Повышенный уровень|Логический|Значение true, если процесс повышен.|
+|Повышенный уровень|Boolean|Значение true, если процесс повышен.|
 |name|String|Имя файла образа процесса.|
 |парентпроцесскреатеддатетиме|DateTimeOffset|Дата и время начала родительского процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |парентпроцессид|Int32|Идентификатор процесса (PID) родительского процесса.|
@@ -37,7 +37,7 @@ ms.locfileid: "46811457"
 |path|String|Полный путь, включая имя файла.|
 |processId|Int32|Идентификатор процесса (PID).|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -79,3 +79,5 @@ ms.locfileid: "46811457"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: davidmu1
-ms.openlocfilehash: 18216eb54ed8efe2f6320216459807a6167a7107
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b0dd473d4358da38a09b55c7bc3ad052d2b6ce8e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809105"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057760"
 ---
 # <a name="verifieddomain-resource-type"></a>Тип ресурса verifiedDomain
 
@@ -65,3 +65,5 @@ ms.locfileid: "46809105"
   "suppressions": []
 }
 -->
+
+

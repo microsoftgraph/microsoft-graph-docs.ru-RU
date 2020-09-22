@@ -3,14 +3,14 @@ title: Тип ресурса omaSettingFloatingPoint
 description: Определение плавающей запятой параметра OMA.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a7ceacadccffea2dd8b9f140a62ace97a21a79fe
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: c0e5baa719f2c363b8609a8bff7d32594989a7e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064110"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>Тип ресурса omaSettingFloatingPoint
 
@@ -28,7 +28,7 @@ ms.locfileid: "44177697"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|String|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Single|Значение.|
@@ -52,6 +52,9 @@ ms.locfileid: "44177697"
   "value": 4.2
 }
 ```
+
+
+
 
 
 

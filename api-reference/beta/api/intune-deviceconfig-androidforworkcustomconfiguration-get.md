@@ -3,14 +3,14 @@ title: Получение Андроидфорворккустомконфигу
 description: Чтение свойств и связей объекта Андроидфорворккустомконфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2db13a6289928c7b37aad44b5ddc72989f909bda
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 8e92bd66a406e32eef739561b812925df201e20f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178502"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022780"
 ---
 # <a name="get-androidforworkcustomconfiguration"></a>Получение Андроидфорворккустомконфигуратион
 
@@ -48,13 +48,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроидфорворккустомконфигуратион](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -117,6 +117,9 @@ Content-Length: 1519
   }
 }
 ```
+
+
+
 
 
 

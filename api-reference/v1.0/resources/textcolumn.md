@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс textColumn в ресурсе columnDefinition указывает, что значения столбца представляют собой текст.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 67e6b1f24155a8cfcecb2fb2443f3b1536ba48bd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e425c3345360702fa9a2b45c84e83ffcd8708160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533472"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090916"
 ---
 # <a name="textcolumn-resource-type"></a>Тип ресурса textColumn
 
@@ -56,3 +56,4 @@ ms.locfileid: "42533472"
   ],
   "tocPath": "Resources/TextColumn"
 } -->
+

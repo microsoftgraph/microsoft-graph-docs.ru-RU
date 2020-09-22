@@ -5,18 +5,18 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e096faa7e7652c4016a88469c8d861ad10352369
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 6fcd43bba70b466cc79736ad0a97cc93c4aa0c61
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43510854"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070361"
 ---
 # <a name="create-event"></a>Создание события
 
 Пространство имен: microsoft.graph
 
-Создайте новое событие в календаре с помощью этого API. Это может быть календарь для ресурса [user](../resources/user.md) или стандартный календарь для ресурса [group](../resources/group.md), представляющего группу Office 365. 
+Создайте новое событие в календаре с помощью этого API. Это может быть календарь для [пользователя](../resources/user.md) или стандартный календарь для [группы](../resources/group.md) Microsoft 365. 
 
 ## <a name="permissions"></a>Разрешения
 В зависимости от типа календаря, к которому относится событие, а также от требуемого типа разрешений (делегированные или разрешения приложений), для вызова этого API необходимо одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -394,3 +394,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

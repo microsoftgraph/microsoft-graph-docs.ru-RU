@@ -3,14 +3,14 @@ title: Обновление Граупполиципресентатион
 description: Обновление свойств объекта Граупполиципресентатион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6532615d0e2228d1caec4cf784a7d139b9323e13
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e18c2e2cbc7669f82d43dd4ac01676f2630b5382
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375499"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043257"
 ---
 # <a name="update-grouppolicypresentation"></a>Обновление Граупполиципресентатион
 
@@ -47,20 +47,20 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|label|String|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто.|
-|id|String|Ключ объекта.|
+|label|Строка|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -92,6 +92,9 @@ Content-Length: 205
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

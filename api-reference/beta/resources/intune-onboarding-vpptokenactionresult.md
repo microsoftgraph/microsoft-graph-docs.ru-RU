@@ -3,14 +3,14 @@ title: Тип ресурса vppTokenActionResult
 description: Состояние действия, выполняемого с помощью маркера Apple Volume Purchase Program.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff272e6dea9a4778c9f2cb33f3c59f411b257da7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0cc4856901af4f97fde87acc57916742a27186ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446839"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029353"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>Тип ресурса vppTokenActionResult
 
@@ -30,7 +30,7 @@ ms.locfileid: "43446839"
 |startDateTime|DateTimeOffset|Время начала действия|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления состояния действия|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,6 +49,9 @@ ms.locfileid: "43446839"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

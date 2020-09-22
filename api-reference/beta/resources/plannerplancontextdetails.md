@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f1d360e049ad279d1a481fe9dc1ea0a672514a9b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ba8155957b015e5b826253f382281bb7852d5a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521694"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064087"
 ---
 # <a name="plannerplancontextdetails-resource-type"></a>Тип ресурса Планнерпланконтекстдетаилс
 
@@ -25,7 +25,7 @@ ms.locfileid: "42521694"
 |:---------------|:--------|:----------|
 |url|String|URL-адрес пользовательского интерфейса, представленного связанным [планнерпланконтекст](plannerplancontext.md). |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -56,3 +56,5 @@ ms.locfileid: "42521694"
   "suppressions": []
 }
 -->
+
+

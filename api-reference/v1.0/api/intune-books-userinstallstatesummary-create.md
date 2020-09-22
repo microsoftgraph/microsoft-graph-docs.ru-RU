@@ -3,14 +3,14 @@ title: Создание объекта userInstallStateSummary
 description: Создание объекта userInstallStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 847a1f28aaceec734ace36dc038c7531acbf514e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9493bf685cde5eb142f77f6504317fe05db208ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468985"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077802"
 ---
 # <a name="create-userinstallstatesummary"></a>Создание объекта userInstallStateSummary
 
@@ -44,14 +44,14 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта userInstallStateSummary в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта userInstallStateSummary.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |userName|String|Имя пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
@@ -96,6 +96,9 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
+
+
 
 
 

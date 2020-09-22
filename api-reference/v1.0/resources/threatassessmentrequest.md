@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 498698fc394c62ba296e5806cec27428312bd878
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: df3f501ad281bcfced2e476b90e95b663fedef58
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090895"
 ---
 # <a name="threatassessmentrequest-resource-type"></a>Тип ресурса Среатассессментрекуест
 
@@ -40,7 +40,7 @@ ms.locfileid: "42591511"
 |createdBy|[identitySet](identityset.md)|Создатель запроса на оценку угроз.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |експектедассессмент|[среатекспектедассессмент](enums.md#threatexpectedassessment-values)|Ожидаемая Оценка от отправителя. Возможные значения: `block`, `unblock`.|
-|id|String|Идентификатор запроса оценки угроз — это глобальный уникальный идентификатор (GUID).|
+|id|Строка|Идентификатор запроса оценки угроз — это глобальный уникальный идентификатор (GUID).|
 |рекуестсаурце|[среатассессментрекуестсаурце](enums.md#threatassessmentrequestsource-values)|Источник запроса на оценку угроз. Возможные значения: `user`, `administrator`.|
 |status|[среатассессментстатус](enums.md#threatassessmentstatus-values)|Состояние процесса оценки. Возможные значения: `pending`, `completed`.|
 
@@ -48,7 +48,7 @@ ms.locfileid: "42591511"
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|results|Коллекция [среатассессментресулт](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию объект `GET /threatAssessmentRequests/{id}` a не возвращает это свойство, пока не `$expand` применено к нему.|
+|results|Коллекция [среатассессментресулт](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию объект a не `GET /threatAssessmentRequests/{id}` возвращает это свойство, пока не применено `$expand` к нему.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -86,3 +86,4 @@ ms.locfileid: "42591511"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Priority
 ms.prod: people
 doc_type: conceptualPageType
-ms.openlocfilehash: e0a402cd01cf9dc8effd16496d7230cc8e98d5d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e509d2e712477e122651589089a2aedde8506593
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521476"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070403"
 ---
 # <a name="use-the-profile-api-in-microsoft-graph-to-retrieve-information-about-yourself-or-another-user"></a>Использование API профилей в Microsoft Graph для получения информации о себе или другом пользователе 
 
@@ -275,3 +275,5 @@ Content-type: application/json
     "webAccounts": []
 }
 ```
+
+

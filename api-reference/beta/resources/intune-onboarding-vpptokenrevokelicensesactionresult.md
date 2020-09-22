@@ -3,14 +3,14 @@ title: Тип ресурса Впптокенревокелиценсесакт�
 description: Состояние действия отзыва лицензий, выполняемого в токене Apple Volume Purchase Program.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e4033342cfb1b08563b53a00ea1314209cc1db49
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bb95f91bcdce22ca51ed9fa36fbee1dc15fa2720
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446832"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029346"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>Тип ресурса Впптокенревокелиценсесактионресулт
 
@@ -36,7 +36,7 @@ ms.locfileid: "43446832"
 |фаиледлиценсескаунт|Int32|Количество лицензий, которые не удалось отозвать.|
 |актионфаилуререасон|[впптокенактионфаилуререасон](../resources/intune-shared-vpptokenactionfailurereason.md)|Причина сбоя действия "отзыв лицензий". Возможные значения: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -58,6 +58,9 @@ ms.locfileid: "43446832"
   "actionFailureReason": "String"
 }
 ```
+
+
+
 
 
 

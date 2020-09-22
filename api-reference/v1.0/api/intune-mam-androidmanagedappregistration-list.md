@@ -3,14 +3,14 @@ title: Перечисление объектов androidManagedAppRegistration
 description: Список свойств и связей объектов androidManagedAppRegistration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 00f1cbcf35ad98a79ea5f7213fc0689a8342cda0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6dcd651d7a08564dce7bb8b7d141fef812a6eeb6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446026"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015927"
 ---
 # <a name="list-androidmanagedappregistrations"></a>Перечисление объектов androidManagedAppRegistration
 
@@ -41,13 +41,13 @@ GET /deviceAppManagement/managedAppRegistrations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -91,6 +91,9 @@ Content-Length: 862
   ]
 }
 ```
+
+
+
 
 
 

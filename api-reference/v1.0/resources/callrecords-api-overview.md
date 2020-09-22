@@ -5,12 +5,12 @@ author: stephenjust
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: f999a0ae686e0fd35e3ee31b0d59c92e56dde15c
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: d81cb0623afcf6c385645c8ebe0aba4eade192dd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44492099"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077669"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Работа с API записей звонков в Microsoft Graph
 
@@ -23,8 +23,8 @@ API записи звонков задается в подпространств
 | Ресурс | Методы |
 | :-- | :-- |
 | [callRecord](callrecords-callrecord.md) | [Получение callRecord](../api/callrecords-callrecord-get.md) |
-| [session](callrecords-session.md) | [Получение callRecord](../api/callrecords-callrecord-get.md)<br />[Список сеансов](../api/callrecords-session-list.md) |
-| [segment](callrecords-segment.md) | [Получение callRecord](../api/callrecords-callrecord-get.md)<br />[Список сеансов](../api/callrecords-session-list.md) |
+| [session](callrecords-session.md) | [Получение callRecord](../api/callrecords-callrecord-get.md)<br />[Перечисление сеансов](../api/callrecords-session-list.md) |
+| [segment](callrecords-segment.md) | [Получение callRecord](../api/callrecords-callrecord-get.md)<br />[Перечисление сеансов](../api/callrecords-session-list.md) |
 
 ## <a name="call-record-structure"></a>Структура записи звонка
 
@@ -41,3 +41,4 @@ API записи звонков задается в подпространств
 ## <a name="see-also"></a>См. также
 
 - [Подписки веб-перехватчиков](/graph/api/resources/webhooks?view=graph-rest-1.0)
+

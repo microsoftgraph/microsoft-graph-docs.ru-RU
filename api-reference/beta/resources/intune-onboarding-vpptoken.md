@@ -3,14 +3,14 @@ title: Тип ресурса vppToken
 description: Вы приобрели несколько лицензий для приложений для iOS по программе корпоративных покупок Apple Volume Purchase Program для бизнеса или образовательных учреждений. Это включает настройку учетной записи Apple VPP с веб-сайта Apple и передачу токена Apple VPP для бизнеса или образовательных учреждений в Intune. Затем вы можете синхронизировать данные корпоративных покупок с помощью Intune и отслеживать использование приложения, приобретенного по программе корпоративных покупок. Вы можете передать несколько токенов Apple VPP для бизнеса или образовательных учреждений.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ecfb2dd094fca4ae3d141d4e923c57b61b2a51b8
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: a9da38e996ddb77f0698b1541e8ea889be3e7ce9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792921"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029360"
 ---
 # <a name="vpptoken-resource-type"></a>Тип ресурса vppToken
 
@@ -51,13 +51,13 @@ ms.locfileid: "46792921"
 |lastSyncStatus|[впптокенсинкстатус](../resources/intune-onboarding-vpptokensyncstatus.md)|Текущее состояние последней синхронизации приложения, инициированной с помощью токена Apple Volume Purchase Program. Возможные значения: `none`, `inProgress`, `completed`, `failed`. Возможные значения: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
-|dataSharingConsentGranted|Логический|Разрешение, предоставленное для предоставления общего доступа к данным с помощью программы Apple Volume Purchase Program.|
+|dataSharingConsentGranted|Boolean|Разрешение, предоставленное для предоставления общего доступа к данным с помощью программы Apple Volume Purchase Program.|
 |displayName|String|Понятное имя маркера, указанного администратором.|
 |локатионнаме|String|Расположение маркера возвращено от Apple VPP.|
-|клаимтокенманажементфромекстерналмдм|Логический|Согласие администратора, чтобы разрешить управление маркерами из внешних MDM.|
+|клаимтокенманажементфромекстерналмдм|Boolean|Согласие администратора, чтобы разрешить управление маркерами из внешних MDM.|
 |roleScopeTagIds|Коллекция String|Идентификаторы тегов области ролей, назначенных этой сущности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -101,6 +101,9 @@ ms.locfileid: "46792921"
   ]
 }
 ```
+
+
+
 
 
 

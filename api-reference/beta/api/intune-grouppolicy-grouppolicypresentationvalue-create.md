@@ -3,14 +3,14 @@ title: Создание Граупполиципресентатионвалуе
 description: Создание нового объекта Граупполиципресентатионвалуе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d281f6d7b69eeeed72bc854e5bd1aca6ca35720
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e1974e597e48ef7aa82cc9ba73131a5452767d45
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461105"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043250"
 ---
 # <a name="create-grouppolicypresentationvalue"></a>Создание Граупполиципресентатионвалуе
 
@@ -46,7 +46,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Граупполиципресентатионвалуе в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполиципресентатионвалуе.
@@ -55,7 +55,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 
 
 
@@ -90,6 +90,9 @@ Content-Length: 242
   "id": "8132eaab-eaab-8132-abea-3281abea3281"
 }
 ```
+
+
+
 
 
 

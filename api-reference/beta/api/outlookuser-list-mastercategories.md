@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 223a9ae7f27005f274019e9f7d26127315e0d4ca
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2eac32961535487627ced870cbc859455db2d5cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036228"
 ---
 # <a name="list-outlook-categories"></a>Перечисление категорий Outlook
 
@@ -43,10 +43,10 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код ответа `200 OK` и коллекцию объектов [outlookCategory](../resources/outlookcategory.md) в тексте ответа.
 ## <a name="example"></a>Пример
@@ -138,3 +138,5 @@ Content-length: 727
   ]
 }
 -->
+
+

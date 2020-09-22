@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 077895872414380f9a5d6eab854c0b4b0d9ceab2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 411d64b5ec6afdd5f994c64faceb4e5fc9a2c637
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006813"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192212"
 ---
 # <a name="update-externalitem"></a>Обновление екстерналитем
 
@@ -30,7 +30,7 @@ ms.locfileid: "48006813"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalItem.ReadWrite.All |
+| Приложение                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -61,7 +61,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 | Свойство   | Тип                                  | Описание               |
 |:-----------|:--------------------------------------|:--------------------------|
 | списки        | Коллекция [списков управления доступом](../resources/acl.md) | Массив элементов управления доступом. Каждая запись указывает доступ, который предоставляется пользователю или группе. |
-| содержимое    | [екстерналитемконтент](../resources/externalitemcontent.md) | Представление содержимого элемента в виде обычного текста или в формате HTML. Текст в этом свойстве является полнотекстовым индексированным. |
+| содержимое    | [екстерналитемконтент](../resources/externalitemcontent.md) | Представление содержимого элемента в виде обычного текста. Текст в этом свойстве является полнотекстовым индексированным. |
 | properties | Объект                                | Контейнер свойств со свойствами элемента. Свойства должны соответствовать [схеме](../resources/schema.md) , определенной для [екстерналконнектион](../resources/externalconnection.md). |
 
 ### <a name="updating-the-acl-collection"></a>Обновление коллекции ACL
@@ -95,8 +95,8 @@ Content-type: application/json
 {
   "acl": [
     {
-      "type": "user",
-      "value": "49103559-feac-4575-8b94-254814dfca72",
+      "type": "everyone",
+      "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
       "identitySource": "azureActiveDirectory"
     }

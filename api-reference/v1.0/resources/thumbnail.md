@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Тип ресурса thumbnail представляет эскиз изображения, видео, документа или любого другого элемента, представленного как растровое изображение.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9db187516cd133ebeab0a352d56470e6b2e172c7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a7415a8d1c288ce65e87cb1a8653d2f7676222c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446830"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090874"
 ---
 # <a name="thumbnail-resource-type"></a>Тип ресурса thumbnail
 
@@ -63,3 +63,4 @@ ms.locfileid: "42446830"
   "section": "documentation",
   "tocPath": "Resources/Thumbnail"
 } -->
+

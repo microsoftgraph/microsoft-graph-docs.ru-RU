@@ -5,18 +5,18 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c88527e971d311ea7daaff8c3598e336031eb059
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6b064396b5ca9a7036b7427cab120b4dec5b8f63
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471857"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070375"
 ---
 # <a name="list-events"></a>Перечисление событий
 
 Пространство имен: microsoft.graph
 
-Получение списка событий в календаре.  Это может быть календарь для ресурса [user](../resources/user.md) или стандартный календарь для ресурса [group](../resources/group.md), представляющего группу Office 365. В этом списке указаны единичные собрания и главные собрания в соответствующих рядах.
+Получение списка событий в календаре.  Это может быть календарь для [пользователя](../resources/user.md) или стандартный календарь для [группы](../resources/group.md) Microsoft 365. В этом списке указаны единичные собрания и главные собрания в соответствующих рядах.
 
 Чтобы получить расширенные экземпляры события, вы можете [получить представление календаря](calendar-list-calendarview.md) или [экземпляры события](event-list-instances.md).
 
@@ -134,3 +134,4 @@ Content-length: 354
   "suppressions": [
   ]
 }-->
+

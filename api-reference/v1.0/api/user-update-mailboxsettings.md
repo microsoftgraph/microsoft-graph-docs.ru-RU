@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d85eb8c514cbe8d8841a359f5c27a1570ade9a62
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c737ff17527b6d4bb29487fb666228d71a76170c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466542"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022920"
 ---
 # <a name="update-user-mailbox-settings"></a>Обновление параметров почтового ящика пользователя
 
@@ -134,7 +134,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ответ включает обновленные параметры автоматических ответов. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ответ включает обновленные параметры автоматических ответов. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_1",
@@ -210,7 +210,7 @@ Content-Type: application/json
   }
 } 
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "ignored",
@@ -271,3 +271,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

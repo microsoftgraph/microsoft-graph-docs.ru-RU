@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: ae6bdc7dc16b072090a04773de93324385401f81
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 29d66809d14cfc72d43286aef801490cef20cb9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809077"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057684"
 ---
 # <a name="webaccount-resource-type"></a>Тип ресурса "учетная запись"
 
@@ -50,7 +50,7 @@ ms.locfileid: "46809077"
 |userId|String|Имя пользователя, отображаемое для учетной записи Account.  |
 |webUrl|String|Содержит ссылку на профиль пользователя в облачной службе, если она существует.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -91,3 +91,5 @@ ms.locfileid: "46809077"
   "webUrl": "String"
 }
 ```
+
+

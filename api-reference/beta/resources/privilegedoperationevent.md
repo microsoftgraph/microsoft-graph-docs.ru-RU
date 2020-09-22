@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 7c98b26d6c6b3458bddc8c5bf5f567f1002d082a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 02da3f408506560ba91f8139bb7bf64d0ca749dd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219202"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070548"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>Тип ресурса Привилежедоператионевент
 
@@ -36,7 +36,7 @@ ms.locfileid: "43219202"
 |id|string|Уникальный идентификатор для Привилежедоператионевент. Только для чтения.|
 |референцекэй|string|Номер билета инцидента или запроса во время активации роли. Значение отображается только в том случае, если номер билета предоставляется во время активации роли.|
 |референцесистем|string|Система билетов на инциденты и запросы, предоставляемая при активации Толе. Значение отображается только в том случае, если система билетов предоставляется во время активации роли.|
-|requestType|string|Тип операции запроса. Значение requestType может быть следующим: ```Assign``` ( ```Activate``` назначение ролей), (Активация роли), ```Unassign``` (удаление назначения роли), ```Deactivate``` (деактивация ```ScanAlersNow``` роли), (предупреждение системы безопасности при сканировании ```DismissAlert``` ), (предупреждение ```FixAlertItem``` системы безопасности) (устранение проблемы с оповещением системы безопасности), (устранение проблемы ```AccessReview_Review``` с оповещением системы безопасности), (изучите проверку ```AccessReview_Create``` доступа), (создать проверку ```AccessReview_Update``` доступа), (обновить ```AccessReview_Delete```|
+|requestType|string|Тип операции запроса. Значение requestType может быть следующим: ```Assign``` (назначение ролей), (Активация роли) ```Activate``` , ```Unassign``` (удаление назначения роли), ```Deactivate``` (деактивация роли), (предупреждение ```ScanAlersNow``` системы безопасности при сканировании), (предупреждение системы безопасности) ( ```DismissAlert``` ```FixAlertItem``` Устранение проблемы с оповещением системы безопасности), (устранение проблемы с оповещением системы безопасности), ( ```AccessReview_Review``` Изучите проверку ```AccessReview_Create``` ```AccessReview_Update``` ```AccessReview_Delete``` доступа), (создать проверку доступа), (обновить|
 |рекуесторид|string|Идентификатор пользователя запрашивающего, который инициирует операцию.|
 |рекуесторнаме|string|Имя пользователя запрашивающего, который инициирует операцию.|
 |roleId|string|Идентификатор роли, связанной с операцией.|
@@ -46,7 +46,7 @@ ms.locfileid: "43219202"
 |усермаил|string|Адрес электронной почты пользователя.|
 |userName|string|Отображаемое имя пользователя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -95,3 +95,5 @@ ms.locfileid: "43219202"
   "suppressions": []
 }
 -->
+
+

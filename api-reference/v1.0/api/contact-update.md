@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 21f6571295ca229178a050f601e19f044e10815e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15242ab1be72d7b85b1974d9fd200a59dd4db7f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462192"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057670"
 ---
 # <a name="update-contact"></a>Обновление контакта
 
@@ -62,8 +62,8 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |categories|String|Категории, связанные с контактом.|
 |children|String|Имена детей контакта.|
 |companyName|String|Название компании контакта.|
-|отделу;|String|Отдел контакта.|
-|displayName|Строка|Отображаемое имя контакта. Обратите внимание, что последующие обновления других свойств могут привести к тому, что автоматически созданное значение перезапишет указанное значение displayName. Чтобы сохранить существующее значение, всегда добавляйте его как displayName в операцию обновления.|
+|department|String|Отдел контакта.|
+|displayName|String|Отображаемое имя контакта. Обратите внимание, что последующие обновления других свойств могут привести к тому, что автоматически созданное значение перезапишет указанное значение displayName. Чтобы сохранить существующее значение, всегда добавляйте его как displayName в операцию обновления.|
 |emailAddresses|Коллекция [EmailAddress](../resources/emailaddress.md)|Электронные адреса контакта.|
 |fileAs|String|Имя, под которым хранится контакт.|
 |generation|String|Поколение контакта.|
@@ -79,7 +79,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |nickName|String|Псевдоним контакта.|
 |officeLocation|String|Расположение офиса контакта.|
 |otherAddress|[PhysicalAddress](../resources/physicaladdress.md)|Другие адреса контакта.|
-|parentFolderId|Строка|Идентификатор родительской папки контакта.|
+|parentFolderId|String|Идентификатор родительской папки контакта.|
 |personalNotes|String|Заметки пользователя о контакте.|
 |profession|String|Профессия контакта.|
 |spouseName|String|Имя супруга или супруги контакта.|
@@ -219,3 +219,4 @@ Content-length: 1977
   "suppressions": [
   ]
 }-->
+

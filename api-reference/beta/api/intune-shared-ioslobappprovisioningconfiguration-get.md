@@ -3,14 +3,14 @@ title: Получение iosLobAppProvisioningConfiguration
 description: Чтение свойств и связей объекта iosLobAppProvisioningConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c1e04875f68a16fd36ce5e89bd70622448331fa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d4685f6f8091c4507716d365997fecf0b159a453
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453847"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036193"
 ---
 # <a name="get-ioslobappprovisioningconfiguration"></a>Получение iosLobAppProvisioningConfiguration
 
@@ -50,13 +50,13 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -92,6 +92,9 @@ Content-Length: 592
   }
 }
 ```
+
+
+
 
 
 

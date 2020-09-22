@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 90ce0049f2dbd35baf122ecaafe762303b3127ac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c664d25be4e7106ca7d2024de4b8fb4dc52cc54
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973529"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192184"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -35,7 +35,7 @@ REST API Microsoft Graph использует механизм веб-перех
 | [список][] на [сайте][] SharePoint | `/sites/{id}/lists/{id}` | Нет |
 | [Оповещение][] безопасности | Изменения в конкретном предупреждении:<br>`/security/alerts/{id}` <br>Изменения в отфильтрованных оповещениях:<br> `/security/alerts/?$filter`| Нет |
 | [callRecord][] в Teams | Изменения во _всех_ записях звонков: `/communications/callRecords` | Нет |
-| [chatMessage](/graph/api/resources/subscription?view=graph-rest-beta) Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/allMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/allMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages` | Да |
+| [chatMessage][] Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/getAllMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/getAllMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages` | Да |
 | [Присутствие][] в Teams | Изменения, внесенные в сведения о присутствии одного пользователя: `/communications/presences/{id}` <br> Изменения, внесенные в сведения о присутствии нескольких пользователей:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Да |
 
 > **Примечание**. Любой путь ресурса, начинающийся с `/users/{id}`, может принимать `/me` для указания вошедшего пользователя.
@@ -46,7 +46,7 @@ REST API Microsoft Graph использует механизм веб-перех
 
 | Тип разрешения                        | Поддерживаемые типы ресурсов                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Делегированное — рабочая или учебная учетная запись     | [оповещение][], [контакт][], [беседа][], [driveItem][], [список][], [событие][], [Группа][], [сообщение][], [пользователь][], [присутствие][]|
+| Делегированное — рабочая или учебная учетная запись     | [оповещение][], [контакт][], [беседа][], [driveItem][], [список][], [событие][], [Группа][], [сообщение][], [пользователь][], [присутствие][], [chatMessage][] (Предварительная версия) |
 | Делегированное — личная учетная запись Майкрософт | [contact][], [driveItem][], [list][], [event][], [message][]                                        |
 | Приложение                            | [Alert][], [Contact][], [driveItem][], [List][], [event][], [Group][], [Message][], [User][], [каллрекорд][], [chatMessage][]|
 

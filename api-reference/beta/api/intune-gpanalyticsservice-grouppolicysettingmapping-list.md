@@ -3,14 +3,14 @@ title: Список Граупполицисеттингмаппингс
 description: Список свойств и связей объектов Граупполицисеттингмаппинг.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f3c4e48f5eb122f1cbd8d4d7762ac28307cf907
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 81b0189fc01c539458cf2eb311150983887087ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454845"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043313"
 ---
 # <a name="list-grouppolicysettingmappings"></a>Список Граупполицисеттингмаппингс
 
@@ -43,13 +43,13 @@ GET /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReport
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1139
+Content-Length: 1209
 
 {
   "value": [
@@ -94,11 +94,15 @@ Content-Length: 1139
       "intuneSettingUriList": [
         "Intune Setting Uri List value"
       ],
-      "intuneSettingDefinitionId": "Intune Setting Definition Id value"
+      "intuneSettingDefinitionId": "Intune Setting Definition Id value",
+      "admxSettingDefinitionId": "Admx Setting Definition Id value"
     }
   ]
 }
 ```
+
+
+
 
 
 

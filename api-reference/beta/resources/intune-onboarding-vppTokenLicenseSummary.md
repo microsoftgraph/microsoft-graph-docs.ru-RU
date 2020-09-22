@@ -3,14 +3,14 @@ title: Тип ресурса Впптокенлиценсесуммари
 description: Сводка по лицензии для определенного приложения в маркере.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f6eea44907cc71977cff6c53351ef5dd8155e817
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7b206d4ca825f818390421dbce23ea618917336a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446869"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029374"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>Тип ресурса Впптокенлиценсесуммари
 
@@ -27,11 +27,11 @@ ms.locfileid: "43446869"
 |:---|:---|:---|
 |vppTokenId|String|Идентификатор токена VPP.|
 |appleId|String|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
-|organizationName|String|Организация, связанная с токеном Apple Volume Purchase Program.|
+|organizationName|Строка|Организация, связанная с токеном Apple Volume Purchase Program.|
 |аваилаблелиценсекаунт|Int32|Число доступных лицензий VPP.|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,6 +51,9 @@ ms.locfileid: "43446869"
   "usedLicenseCount": 1024
 }
 ```
+
+
+
 
 
 

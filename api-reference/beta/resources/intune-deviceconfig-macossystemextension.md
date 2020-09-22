@@ -3,14 +3,14 @@ title: Тип ресурса Макоссистемекстенсион
 description: Представляет определенное расширение системы macOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bab537a60d213e2e1976c8f902ce7a8b0dbc3027
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: f72b2856d95205e17c8bfdf45974676ea9644fa6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179406"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064138"
 ---
 # <a name="macossystemextension-resource-type"></a>Тип ресурса Макоссистемекстенсион
 
@@ -25,7 +25,7 @@ ms.locfileid: "44179406"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|теамидентифиер|Строка|Получает или задает идентификатор группы, использованный для подписи расширения системы.|
+|теамидентифиер|String|Получает или задает идентификатор группы, использованный для подписи расширения системы.|
 |bundleId|String|Получает или задает идентификатор пакета расширения системы.|
 
 ## <a name="relationships"></a>Связи
@@ -45,6 +45,9 @@ ms.locfileid: "44179406"
   "bundleId": "String"
 }
 ```
+
+
+
 
 
 

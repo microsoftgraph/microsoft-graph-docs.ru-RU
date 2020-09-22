@@ -6,12 +6,12 @@ title: VersionAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 63b22b34abda4d1f268e16b00f65d6c4bb867c7e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f16858c8b62f327019d2523488827fa6b20dced
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519479"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057747"
 ---
 # <a name="versionaction-resource-type"></a>Тип ресурса VersionAction
 
@@ -57,3 +57,5 @@ ms.locfileid: "42519479"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3f906b1e98134b255858015efd765df2194c4a5b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4536607c4723a9e16d77e045e17bd151da50d36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533906"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090930"
 ---
 # <a name="rangeborder-resource-type"></a>Тип ресурса RangeBorder
 
@@ -31,10 +31,10 @@ ms.locfileid: "42533906"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|color|строка|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
-|id|строка|Представляет идентификатор границы. Возможные `EdgeTop`значения:, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`,. `DiagonalUp` Только для чтения.|
-|сидеиндекс|string|Постоянное значение, указывающее определенную сторону границы. Возможные `EdgeTop`значения:, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`,. `DiagonalUp` Только для чтения.|
-|style|string|Одна из констант стиля линии, определяющая стиль линии границы. Возможные `None`значения:, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`,. `SlantDashDot`|
+|color|string|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
+|id|string|Представляет идентификатор границы. Возможные значения:,, `EdgeTop` `EdgeBottom` ,, `EdgeLeft` `EdgeRight` `InsideVertical` , `InsideHorizontal` , `DiagonalDown` , `DiagonalUp` . Только для чтения.|
+|сидеиндекс|string|Постоянное значение, указывающее определенную сторону границы. Возможные значения:,, `EdgeTop` `EdgeBottom` ,, `EdgeLeft` `EdgeRight` `InsideVertical` , `InsideHorizontal` , `DiagonalDown` , `DiagonalUp` . Только для чтения.|
+|style|string|Одна из констант стиля линии, определяющая стиль линии границы. Возможные значения:,, `None` `Continuous` ,, `Dash` `DashDot` `DashDotDot` , `Dot` , `Double` , `SlantDashDot` .|
 |weight|string|Определяет толщину границы вокруг диапазона. Допустимые значения: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
 ## <a name="relationships"></a>Связи
@@ -72,3 +72,4 @@ ms.locfileid: "42533906"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Тип ресурса Виндовсфеатуреупдатепрофи�
 description: Профиль обновления компонентов Windows
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a800a24cd4eb41258a060b67f77f0eed5e479817
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: a1e74178c160560d806f4947e9c2fd3533d6739c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122527"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064103"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>Тип ресурса Виндовсфеатуреупдатепрофиле
 
@@ -28,7 +28,7 @@ ms.locfileid: "45122527"
 |[Список Виндовсфеатуреупдатепрофилес](../api/intune-softwareupdate-windowsfeatureupdateprofile-list.md)|Коллекция [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Список свойств и связей объектов [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) .|
 |[Получение Виндовсфеатуреупдатепрофиле](../api/intune-softwareupdate-windowsfeatureupdateprofile-get.md)|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Чтение свойств и связей объекта [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) .|
 |[Создание Виндовсфеатуреупдатепрофиле](../api/intune-softwareupdate-windowsfeatureupdateprofile-create.md)|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Создание нового объекта [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) .|
-|[Удаление Виндовсфеатуреупдатепрофиле](../api/intune-softwareupdate-windowsfeatureupdateprofile-delete.md)|Отсутствует|Удаляет объект [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md).|
+|[Удаление Виндовсфеатуреупдатепрофиле](../api/intune-softwareupdate-windowsfeatureupdateprofile-delete.md)|Нет|Удаляет объект [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md).|
 |[Обновление Виндовсфеатуреупдатепрофиле](../api/intune-softwareupdate-windowsfeatureupdateprofile-update.md)|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Обновление свойств объекта [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) .|
 |[Действие assign](../api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md)|Нет|Н/Д|
 
@@ -36,12 +36,12 @@ ms.locfileid: "45122527"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор объекта.|
-|displayName|Строка|Отображаемое имя профиля.|
+|displayName|String|Отображаемое имя профиля.|
 |description|String|Описание профиля, указанного пользователем.|
 |феатуреупдатеверсион|String|Версия обновления компонентов, которая будет развернута на устройствах, предназначенных для этого профиля. Версией может быть любая поддерживаемая версия, например 1709, 1803 или 1809 и т. д.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля.|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого элемента обновления компонента.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого элемента обновления компонента.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -71,6 +71,9 @@ ms.locfileid: "45122527"
   ]
 }
 ```
+
+
+
 
 
 
