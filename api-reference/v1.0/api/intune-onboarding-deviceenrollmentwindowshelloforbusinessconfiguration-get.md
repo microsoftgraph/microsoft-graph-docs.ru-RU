@@ -3,14 +3,14 @@ title: Получение объекта deviceEnrollmentWindowsHelloForBusiness
 description: Чтение свойств и связей объекта deviceEnrollmentWindowsHelloForBusinessConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d01ad0f4a074880dc83ceff1abb782ed59772b3c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 260d96fdf8bcb846b01f91b9209fc771599c457a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473224"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075233"
 ---
 # <a name="get-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Получение объекта deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -93,6 +93,9 @@ Content-Length: 860
   }
 }
 ```
+
+
+
 
 
 

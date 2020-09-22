@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс baseItem — это абстрактный ресурс, который содержит общий набор свойств, которые являются общими для нескольких других типов ресурсов.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 181895c835544540387c96856c9cbbfb3b5e4f5d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c247891afed001977174f3de232a8b2385e0841
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532007"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075086"
 ---
 # <a name="baseitem-resource-type"></a>Тип ресурса baseItem
 
@@ -57,10 +57,10 @@ ms.locfileid: "42532007"
 
 | Свойство             | Тип              | Описание                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| id                   | строка            | Уникальный идентификатор диска. Только для чтения.                                         |
+| id                   | string            | Уникальный идентификатор диска. Только для чтения.                                         |
 | createdBy            | [identitySet][]   | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.        |
 | createdDateTime      | dateTimeOffset    | Дата и время создания элемента. Только для чтения.                                             |
-| description          | String            | Предоставляет видимое пользователю описание элемента. Необязательное.                             |
+| description          | Строка            | Предоставляет видимое пользователю описание элемента. Необязательное.                             |
 | eTag                 | string            | ETag для элемента. Только для чтения.                                                          |
 | lastModifiedBy       | [identitySet][]   | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения. |
 | lastModifiedDateTime | dateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.                                   |
@@ -92,3 +92,4 @@ ms.locfileid: "42532007"
   "section": "documentation",
   "tocPath": "Resources/BaseItem"
 } -->
+
