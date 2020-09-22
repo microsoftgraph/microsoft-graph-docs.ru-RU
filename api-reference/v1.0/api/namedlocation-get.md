@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3978099156d8580c05e436d64cde46fd19f8f087
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: f05785844fd7ee67d0db6b89854e0bdbde94e381
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567335"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020873"
 ---
 # <a name="get-namedlocation"></a>Получение Намедлокатион
 
@@ -26,7 +26,7 @@ ms.locfileid: "46567335"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.Read.All |
+| Для приложений                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ GET /identity/conditionalAccess/namedLocations/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -135,3 +135,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

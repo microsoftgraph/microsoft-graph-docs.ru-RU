@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: faceccf2154e470f0a12452d3033e79f69997610
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c50b84fce3773d9b9e50fd1e85998f2af74b6fc4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510888"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020690"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
@@ -40,7 +40,7 @@ GET /planner/plans/{plan-id}/tasks
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [plannerTask](../resources/plannertask.md) в тексте отклика.
 
@@ -134,3 +134,4 @@ Content-length: 833
   "suppressions": [
   ]
 }-->
+

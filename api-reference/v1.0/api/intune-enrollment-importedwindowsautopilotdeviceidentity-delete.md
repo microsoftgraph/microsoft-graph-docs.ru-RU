@@ -3,14 +3,14 @@ title: Удаление importedWindowsAutopilotDeviceIdentity
 description: Удаляет importedWindowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc889f3b97a17743e1805607ecc8189fb89a9c77
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8dfcadb755f3eae632fc9a84dde283c955c082fa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43369595"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020827"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentity"></a>Удаление importedWindowsAutopilotDeviceIdentity
 
@@ -42,13 +42,13 @@ DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{imported
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -59,11 +59,14 @@ DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{imported
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

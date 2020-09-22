@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2bcea43a7870ddba0407ef546094e51a385e668c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f486e3202535882d719e5f6c083b583321e917b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445607"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020575"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -76,6 +76,8 @@ ms.locfileid: "43445607"
     "Warning: Resource microsoft.graph.user is defined in multiple files: /api-reference/v1.0/resources/intune_shared_user.md, /api-reference/v1.0/resources/user.md",
   ]
 }-->
+
+
 
 
 

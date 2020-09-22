@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a92d99d7a9e80084b8ec1ce385ce76d1f522b359
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 2a6b4175decf2d4985d17b64014b09d9299af06e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916790"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021961"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>Тип ресурса Кондитионалакцесслокатионс
 
@@ -24,14 +24,14 @@ ms.locfileid: "43916790"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| инклуделокатионс | Коллекция объектов string | Идентификаторы расположений в области применения политики, если `All`явно не `AllTrusted`исключены, или. |
-| ексклуделокатионс | Коллекция объектов string | Идентификаторы расположений, исключенные из области применения политики. |
+| инклуделокатионс | Коллекция String | Идентификаторы расположений в области применения политики, если явно не исключены, `All` или `AllTrusted` . |
+| ексклуделокатионс | Коллекция String | Идентификаторы расположений, исключенные из области применения политики. |
 
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -61,3 +61,4 @@ ms.locfileid: "43916790"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Тип ресурса officeClientConfiguration
 description: Настройка клиента Office.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7dfe98bae90f0534c915577f3195d27e3071a4b0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 10c4d65aab67c470df102e2e19bb5f3521b0ecf1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465280"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021758"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>Тип ресурса officeClientConfiguration
 
@@ -37,13 +37,13 @@ ms.locfileid: "43465280"
 |усерпреференцепайлоад|Stream|Строка JSON параметров настройки в двоичном формате. Эти значения могут быть переопределены пользователем.|
 |полиципайлоад|Stream|Строка JSON параметров политики в двоичном формате эти значения не могут быть изменены пользователем.|
 |description|String|Пока не задокументировано.|
-|displayName|Строка|Администратор предоставил описание политики конфигурации клиента Office.|
+|displayName|String|Администратор предоставил описание политики конфигурации клиента Office.|
 |lastModifiedDateTime|DateTime|Метка даты и времени последнего изменения политики.|
 |priority|Int32|Значение Priority должно быть уникальным для каждой политики в клиенте и использоваться для разрешения конфликтов, низкие значения имеют высокий приоритет.|
 |усерчеккинсуммари|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Сводка по возврату пользователя для политики.|
 |чеккинстатусес|Коллекция [оффицеклиентчеккинстатус](../resources/intune-cirrus-officeclientcheckinstatus.md)|Список состояния возврата клиента Office.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [оффицеклиентконфигуратионассигнмент](../resources/intune-cirrus-officeclientconfigurationassignment.md)|Список назначений групп для политики.|
@@ -88,6 +88,9 @@ ms.locfileid: "43465280"
   ]
 }
 ```
+
+
+
 
 
 

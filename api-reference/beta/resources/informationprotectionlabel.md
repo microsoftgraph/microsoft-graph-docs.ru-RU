@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 183a5856aafd8aa2a5b8b1fe3b1eb48bddcc5358
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b634166896932897b200d2eeb17a1e54aadb543
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496042"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021943"
 ---
 # <a name="informationprotectionlabel-resource-type"></a>Тип ресурса Информатионпротектионлабел
 
@@ -37,13 +37,13 @@ ms.locfileid: "42496042"
 | :---------- | :------ | :---------------------------------------------------------------------------------------------- |
 | color       | String  | Цвет, который должен отображаться в пользовательском интерфейсе для метки, если она настроена.                              |
 | description | String  | Заданное администратором описание метки.                                                    |
-| id          | Строка  | ИДЕНТИФИКАТОР метки является глобальным уникальным идентификатором (GUID)                                             |
+| id          | String  | ИДЕНТИФИКАТОР метки является глобальным уникальным идентификатором (GUID)                                             |
 | isActive    | Boolean | Указывает, активна ли метка. Активные метки должны быть скрыты или отключены в пользовательском интерфейсе. |
 | name        | String  | Имя в виде открытого текста метки.                                                                |
 | sensitivity | Int32   | Значение чувствительности метки, где меньше конфиденциально.                              |
 | tooltip     | String  | Всплывающая подсказка, отображаемая для метки в пользовательском интерфейсе.                                     |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -82,3 +82,5 @@ ms.locfileid: "42496042"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

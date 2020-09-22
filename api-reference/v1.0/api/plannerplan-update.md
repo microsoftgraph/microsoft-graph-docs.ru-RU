@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: b9feae78472a4ed90005904ba5d97136de1a5ba5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c9dda21c2cedb31d681d64a16ff0e4d1fdf9387e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020693"
 ---
 # <a name="update-plannerplan"></a>Обновление plannerPlan
 
@@ -132,3 +132,4 @@ Content-length: 357
   "suppressions": [
   ]
 }-->
+

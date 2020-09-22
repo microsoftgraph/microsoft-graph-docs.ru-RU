@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: a318ace2f69269a62cce728d1ececf01df97f3e0
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: e73556061c409f0b22b8ef6bfccd342d20f22c72
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427391"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021835"
 ---
 # <a name="resourcevisualization-resource-type"></a>Тип ресурса ресурсе resourcevisualization
 
@@ -67,7 +67,7 @@ ms.locfileid: "45427391"
 -   Visio
 -   Publisher
 -   Project
--   Access
+-   Доступ
 -   Почта
 -   Расширения
 -   Архив
@@ -83,7 +83,7 @@ ms.locfileid: "45427391"
 -   Folder
 -   Другое
 
-Пример запроса:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+Пример запроса: `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 ## <a name="containertype-property-values"></a>значения свойств Контаинертипе
 Поддерживаемые типы могут различаться в зависимости от контейнеров, из которых [итеминсигхтс](iteminsights.md) возвращает файлы. Например, только представление [шарединсигхт](insights-shared.md) возвращает файлы из "Dropbox", "Box" и "гдриве".
@@ -95,4 +95,6 @@ ms.locfileid: "45427391"
 -   Box
 -   гдриве
 
-Пример запроса:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+Пример запроса: `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+
+

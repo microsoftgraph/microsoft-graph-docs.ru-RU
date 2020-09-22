@@ -3,14 +3,14 @@ title: Тип ресурса Андроиддевицеовнеренроллм�
 description: Профиль регистрации, используемый для регистрации корпоративных устройств с Android с помощью облачного управления Google.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 055cafe69bcca9580763d2ce131633c53b09f174
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 5db5cf43fcd845942cf86b9b74c0646b13b6d672
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123689"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021814"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>Тип ресурса Андроиддевицеовнеренроллментпрофиле
 
@@ -28,7 +28,7 @@ ms.locfileid: "45123689"
 |[Список Андроиддевицеовнеренроллментпрофилес](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-list.md)|Коллекция [андроиддевицеовнеренроллментпрофиле](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Список свойств и связей объектов [андроиддевицеовнеренроллментпрофиле](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) .|
 |[Получение Андроиддевицеовнеренроллментпрофиле](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-get.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md);|Чтение свойств и связей объекта [андроиддевицеовнеренроллментпрофиле](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) .|
 |[Создание Андроиддевицеовнеренроллментпрофиле](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-create.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md);|Создание нового объекта [андроиддевицеовнеренроллментпрофиле](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) .|
-|[Удаление Андроиддевицеовнеренроллментпрофиле](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-delete.md)|Отсутствует|Удаляет объект [андроиддевицеовнеренроллментпрофиле](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md).|
+|[Удаление Андроиддевицеовнеренроллментпрофиле](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-delete.md)|Нет|Удаляет объект [андроиддевицеовнеренроллментпрофиле](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md).|
 |[Обновление Андроиддевицеовнеренроллментпрофиле](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-update.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md);|Обновление свойств объекта [андроиддевицеовнеренроллментпрофиле](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) .|
 |[revokeToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md)|Нет|Н/Д|
 |[Действие createToken](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md)|Нет|Н/Д|
@@ -37,10 +37,10 @@ ms.locfileid: "45123689"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |accountId|String|GUID клиента, которому принадлежит профиль регистрации.|
-|id|Строка|Уникальный GUID профиля регистрации.|
-|displayName|Строка|Отображаемое имя для профиля регистрации.|
+|id|String|Уникальный GUID профиля регистрации.|
+|displayName|String|Отображаемое имя для профиля регистрации.|
 |description|String|Описание профиля регистрации.|
-|енроллментмоде|[андроиддевицеовнеренроллментмоде](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|Режим регистрации устройств, использующих этот профиль регистрации. Возможные значения: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
+|енроллментмоде|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|Режим регистрации устройств, использующих этот профиль регистрации. Возможные значения: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
 |tokenValue|String|Значение последнего созданного маркера для этого профиля регистрации.|
@@ -51,7 +51,7 @@ ms.locfileid: "45123689"
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Строка, используемая для создания QR-кода маркера.|
 |roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -87,6 +87,9 @@ ms.locfileid: "45123689"
   ]
 }
 ```
+
+
+
 
 
 

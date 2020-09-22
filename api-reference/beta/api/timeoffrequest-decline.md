@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a76fd617ddb71d5ffcae0a82b716d2915143d1f6
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 3d59497b239763c797da716223d58d2c31b8e9fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217096"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022157"
 ---
 # <a name="timeoffrequest-decline"></a>Тимеоффрекуест: отклонить
 
@@ -28,7 +28,7 @@ ms.locfileid: "44217096"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Сервер приложений | Schedule. ReadWrite. ALL *  |
+|Для приложений | Schedule. ReadWrite. ALL *  |
 
 >\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
@@ -45,7 +45,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline
 | Имя          | Описание   |
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
-| Content-Type | приложение — JSON. Обязательный элемент.|
+| Content-Type | приложение — JSON. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -96,7 +96,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 <!-- {
@@ -118,3 +118,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

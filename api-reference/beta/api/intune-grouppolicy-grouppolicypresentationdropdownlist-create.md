@@ -3,14 +3,14 @@ title: Создание Граупполиципресентатиондропд
 description: Создание нового объекта Граупполиципресентатиондропдовнлист.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f265451d7de34d3a77a39cf95a72a3f27da3f362
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 28ea40014bd87f9f032c2a831b18a25016f13ee5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424372"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020421"
 ---
 # <a name="create-grouppolicypresentationdropdownlist"></a>Создание Граупполиципресентатиондропдовнлист
 
@@ -43,10 +43,10 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Граупполиципресентатиондропдовнлист в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполиципресентатиондропдовнлист.
@@ -120,6 +120,9 @@ Content-Length: 602
   "required": true
 }
 ```
+
+
+
 
 
 

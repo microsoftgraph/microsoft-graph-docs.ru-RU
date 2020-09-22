@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 516c675f196fbe8c77a2d66c8ee5ede00fb25662
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 86a418e75fee70d16009f0ab6f8a3f0f474760cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898081"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021261"
 ---
 # <a name="microsoft-365-activations-reports"></a>Отчеты об активации Microsoft 365
 
@@ -28,3 +28,5 @@ ms.locfileid: "44898081"
 | [Получение сведений о пользователях](../api/reportroot-getoffice365activationsuserdetail.md) | Stream          | [office365ActivationsUserDetail](../resources/office365activationsuserdetail.md) | Получение сведений о пользователях, которые активировали Microsoft 365. |
 | [Получение количества активаций](../api/reportroot-getoffice365activationcounts.md) | Поток          | [office365ActivationCounts](../resources/office365activationcounts.md) | Получение числа активаций Microsoft 365 на настольных компьютерах и устройствах. |
 | [Получение количества пользователей](../api/reportroot-getoffice365activationsusercounts.md) | Stream          | [office365ActivationsUserCounts](../resources/office365activationsusercounts.md) | Узнайте, сколько пользователей активировали подписку на Office на компьютере или мобильном устройстве. |
+
+

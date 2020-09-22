@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: f9b83608f3a5859e696c4ea2c52e22e35d291fce
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 78a7e374d0fb90b644199b83dc71abd3b701a897
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630472"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021366"
 ---
 # <a name="microsoft-365-apps-usage-reports"></a>Отчеты об использовании приложений Microsoft 365
 
@@ -27,3 +27,5 @@ ms.locfileid: "46630472"
 | [Получение сведений о пользователях](../api/reportroot-getm365appuserdetail.md)                  | [report](../resources/intune-shared-report.md) | Получение сведений об использовании приложений Microsoft 365 пользователем. |
 | [Получение количества пользователей](../api/reportroot-getm365appusercounts.md)                  | [report](../resources/intune-shared-report.md) | Получение числа ежедневных уникальных пользователей по приложению.               |
 | [Получение числа пользователей платформы](../api/reportroot-getm365appplatformusercounts.md) | [report](../resources/intune-shared-report.md) | Получение числа ежедневных уникальных пользователей по платформе.          |
+
+

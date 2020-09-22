@@ -3,14 +3,14 @@ title: Список организаций
 description: Список свойств и связей объектов organization.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7bea46772b085f68538d30806577bdf9c4ff2a70
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f790a582e89341de768de88a2d16e77cbf06be89
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43377511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020099"
 ---
 # <a name="list-organizations"></a>Список организаций
 
@@ -43,13 +43,13 @@ GET /organization
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [organization](../resources/intune-onboarding-organization.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -86,6 +86,9 @@ Content-Length: 622
   ]
 }
 ```
+
+
+
 
 
 

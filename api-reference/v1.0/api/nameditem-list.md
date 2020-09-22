@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 05d6b8dbfacf44ce7a6a8b96a27b59fa06ed452d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a32030417f2a5c4230660b626dfd4d25e41dd006
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812690"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020868"
 ---
 # <a name="list-nameditemcollection"></a>Список NamedItemCollection
 
@@ -40,7 +40,7 @@ GET /workbook/names
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -113,3 +113,4 @@ Content-length: 136
   "suppressions": [
   ]
 }-->
+

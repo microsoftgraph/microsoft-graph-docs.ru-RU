@@ -3,14 +3,14 @@ title: Тип ресурса Оффицеклиентконфигуратион�
 description: Назначение конфигурации клиента Office.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 360988d80af473819f4bf25ac72d6f0d817eadbc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c7a6e9f1ef14977a7d5694d90649d96e5d27a2fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43362745"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021688"
 ---
 # <a name="officeclientconfigurationassignment-resource-type"></a>Тип ресурса Оффицеклиентконфигуратионассигнмент
 
@@ -37,7 +37,7 @@ ms.locfileid: "43362745"
 |id|String|Идентификатор объекта Оффицеконфигуратионассигнмент.|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Целевое назначение, заданное администратором.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -56,6 +56,9 @@ ms.locfileid: "43362745"
   }
 }
 ```
+
+
+
 
 
 

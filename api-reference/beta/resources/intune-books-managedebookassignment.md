@@ -3,14 +3,14 @@ title: Тип ресурса managedEBookAssignment
 description: Содержит свойства, используемые при назначении электронной книги группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd2e8513ba10404dbab556f6833cd1f3dccf378d
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 41ed9c520757fce1e95c2cd5a59f81e1e607512d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788165"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021786"
 ---
 # <a name="managedebookassignment-resource-type"></a>Тип ресурса managedEBookAssignment
 
@@ -38,7 +38,7 @@ ms.locfileid: "44788165"
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги.|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки электронной книги. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -61,6 +61,9 @@ ms.locfileid: "44788165"
   "installIntent": "String"
 }
 ```
+
+
+
 
 
 

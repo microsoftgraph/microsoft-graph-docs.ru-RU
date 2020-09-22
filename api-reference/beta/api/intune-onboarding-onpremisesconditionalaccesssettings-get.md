@@ -3,14 +3,14 @@ title: Получение объекта onPremisesConditionalAccessSettings
 description: Чтение свойств и связей объекта onPremisesConditionalAccessSettings.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1aa3e48edfcc36f4b0cf72da77d693f63d324ff0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f528b33967994a3fbcc1509577c00988f2df3cf7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43377685"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020169"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>Получение объекта onPremisesConditionalAccessSettings
 
@@ -47,13 +47,13 @@ GET /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -86,6 +86,9 @@ Content-Length: 363
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Получение организации
 description: Чтение свойств и связей объекта organization.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cfb8429f0aba8c17f3bc940a7e020be045f905df
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 688f8a8edb20d3b46f252884e5820bc86f615604
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43377654"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020113"
 ---
 # <a name="get-organization"></a>Получение организации
 
@@ -46,13 +46,13 @@ GET /organization/{organizationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [organization](../resources/intune-onboarding-organization.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -87,6 +87,9 @@ Content-Length: 584
   }
 }
 ```
+
+
+
 
 
 

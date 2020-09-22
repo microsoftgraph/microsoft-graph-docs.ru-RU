@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c27fe67c2c57d609a7524c8d2efda27443d75efe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb79cae4f413e3d027b8dbbcccc621ba9b3b8233
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447425"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020547"
 ---
 # <a name="meetinginfo-resource-type"></a>Тип ресурса Митингинфо
 
@@ -56,3 +56,4 @@ ms.locfileid: "42447425"
   "suppressions": []
 }
 -->
+

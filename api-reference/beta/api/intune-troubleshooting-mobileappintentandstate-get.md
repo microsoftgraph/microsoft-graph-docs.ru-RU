@@ -3,14 +3,14 @@ title: Получение Мобилеаппинтентандстате
 description: Чтение свойств и связей объекта Мобилеаппинтентандстате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 289969faf158d11181a49ea33c9823c6065cb091
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a8c5d0f4d9e3c8d292df14d2a79ecce4a90a7ab2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455399"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022360"
 ---
 # <a name="get-mobileappintentandstate"></a>Получение Мобилеаппинтентандстате
 
@@ -46,13 +46,13 @@ GET /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -97,6 +97,9 @@ Content-Length: 943
   }
 }
 ```
+
+
+
 
 
 

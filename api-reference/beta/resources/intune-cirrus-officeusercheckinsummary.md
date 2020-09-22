@@ -3,14 +3,14 @@ title: Тип ресурса Оффицеусерчеккинсуммари
 description: Сущность, описывающая статистику по возврату клиента.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8564f7d0d2fb06218b141b7e9369f2096bdec982
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cccebb816e8d81c4d775754ed5a77a6e6180b956
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462521"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021681"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>Тип ресурса Оффицеусерчеккинсуммари
 
@@ -28,7 +28,7 @@ ms.locfileid: "43462521"
 |сукцеедедусеркаунт|Int32|Общее количество успешных проверок пользователей за последние 3 месяца.|
 |failedUserCount|Int32|Общее число неудачных проверок пользователей за последние 3 месяца.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,9 @@ ms.locfileid: "43462521"
   "failedUserCount": 1024
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Получение объекта macOSDeviceFeaturesConfiguration
 description: Чтение свойств и связей объекта macOSDeviceFeaturesConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75756fea7d524037878c332a0e22f26818f23952
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 833aaabdf7f6fcf06c255be5a1035ffc74ec47d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388022"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021072"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>Получение объекта macOSDeviceFeaturesConfiguration
 
@@ -38,19 +38,19 @@ ms.locfileid: "43388022"
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -80,6 +80,9 @@ Content-Length: 375
   }
 }
 ```
+
+
+
 
 
 

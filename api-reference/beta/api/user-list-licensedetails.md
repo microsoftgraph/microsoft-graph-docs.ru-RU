@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 528ea9d5d47cf3229b493259447336ebad8d253a
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: cecd66f1815da36bbb629cde7858f94698df17db
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744065"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022102"
 ---
 # <a name="list-licensedetails"></a>Перечисление licenseDetails
 
@@ -36,14 +36,14 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select` параметр запроса. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select` параметр запроса. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Код носителя &lt;&gt;|
+| Authorization  | Код носителя &lt;&gt;|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -120,3 +120,5 @@ Content-length: 389
   ]
 }
 -->
+
+

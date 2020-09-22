@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: edbd17d4730ead8e230eb7b3b38a547ac199e922
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 49754534525c3328fc2a2793a67b9c8ce5263371
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44382673"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022241"
 ---
 # <a name="list-serviceprincipals"></a>Перечисление servicePrincipals
 
@@ -18,7 +18,7 @@ ms.locfileid: "44382673"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [servicePrincipal](../resources/serviceprincipal.md) .
+Получение списка объектов [servicePrincipal](../resources/serviceprincipal.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -39,14 +39,14 @@ GET /servicePrincipals
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, включая `$search` , `$count` и `$filter` . Можно использовать `$search` свойство **DisplayName** . При добавлении или обновлении элементов для этого ресурса они могут индексироваться для использования с `$count` `$search` параметрами запроса. Между добавлением или обновлением элемента может быть небольшая задержка, а когда он доступен в индексе.
+Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя | Описание |
 |:---- |:----------- |
 | Авторизация | Bearer {токен}. Обязательный. |
-| консистенцилевел | закончить. Этот заголовок и `$count` обязательные при использовании `$search` `$filter` с `$orderby` параметром Query. Он использует индекс, который может быть не последним в актуальном изменении объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`или применении `$filter` с параметром запроса `$orderby`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,11 +54,11 @@ GET /servicePrincipals
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [servicePrincipal](../resources/serviceprincipal.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [servicePrincipal](../resources/serviceprincipal.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-a-list-of-service-principals"></a>Пример 1: получение списка субъектов службы
+### <a name="example-1-get-a-list-of-service-principals"></a>Пример 1. Получение списка субъект-служб
 
 #### <a name="request"></a>Запрос
 
@@ -116,7 +116,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-service-principals"></a>Пример 2: получение только количества субъектов службы
+### <a name="example-2-get-only-a-count-of-service-principals"></a>Пример 2. Получение только количества субъект-служб
 
 #### <a name="request"></a>Запрос
 
@@ -165,7 +165,7 @@ Content-type: text/plain
 893
 
 
-### <a name="example-3-use-filter-and-top-to-get-one-service-principal-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3: используйте $filter и $top, чтобы получить одного участника службы с отображаемым именем, начинающимся с "a", включая количество возвращаемых объектов.
+### <a name="example-3-use-filter-and-top-to-get-one-service-principal-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3. Использование параметров $filter и $top для получения субъект-службы с отображаемым именем, которое начинается с "а", включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
@@ -210,7 +210,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-service-principals-with-display-names-that-contain-the-letters-team-including-a-count-of-returned-objects"></a>Пример 4: используйте $search, чтобы получить субъекты служб с отображаемыми именами, которые содержат буквы "Team", включая количество возвращаемых объектов.
+### <a name="example-4-use-search-to-get-service-principals-with-display-names-that-contain-the-letters-team-including-a-count-of-returned-objects"></a>Пример 4. Использование параметра $search для получения субъект-служб с отображаемыми именами, содержащими буквы "Team", включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
@@ -283,3 +283,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

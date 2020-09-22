@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 5816be4175e719077836ad103a524acce86c0a1a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c1fcb03d75019f7ccb03bbcb235ac89a065e521
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521764"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021212"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>Тип ресурса Планнерчекклиститемс
 
@@ -22,7 +22,7 @@ ms.locfileid: "42521764"
 
 
 ## <a name="properties"></a>Свойства
-Клиентская возможность может определять свойства открытого типа. В этом случае клиент должен предоставлять **GUID** в качестве свойств, а их значения должны быть объектами [чекклиститем](plannerchecklistitem.md) . Пример показан ниже. Чтобы удалить элемент в контрольном списке, присвойте свойству значение `null`.
+Клиентская возможность может определять свойства открытого типа. В этом случае клиент должен предоставлять **GUID** в качестве свойств, а их значения должны быть объектами [чекклиститем](plannerchecklistitem.md) . Пример показан ниже. Чтобы удалить элемент в контрольном списке, присвойте свойству значение `null` .
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -94,3 +94,5 @@ ms.locfileid: "42521764"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: de87e7a790d2669642a0e7171d9862bc4eb8f7f2
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: bba0e61823a1f85b5e80867a1772710074f5202a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216003"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022129"
 ---
 # <a name="list-keysets"></a>Список Кэйсетс
 
@@ -44,11 +44,11 @@ GET /trustFramework/keySets
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md) в тексте отклика.
 
@@ -139,3 +139,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

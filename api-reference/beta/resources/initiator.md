@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6d279ce00855cb8125085e48bddf63f1b8f0e5e2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c0b6b326925d0ca3f0dbf8c0c25df266834ecce6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461729"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021912"
 ---
 # <a name="initiator-resource-type"></a>Тип ресурса инициатора
 
@@ -24,7 +24,7 @@ ms.locfileid: "43461729"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Имя пользователя или службы, которые инициировали событие подготовки.|
+|displayName|String|Имя пользователя или службы, которые инициировали событие подготовки.|
 |id|String|Уникальный идентификатор пользователя или службы, которые инициировали событие подготовки.|
 |инитиатортипе|String| Тип инициатора. Возможные значения: `user`, `app`, `system`, `unknownFutureValue`.|
 
@@ -58,3 +58,5 @@ ms.locfileid: "43461729"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

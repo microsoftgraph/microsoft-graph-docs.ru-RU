@@ -3,14 +3,14 @@ title: тип перечисления Androidforworkvpnconnectiontype.
 description: Тип VPN-подключения Android для работы.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c9aa93d2f4ea5c5783a2bc194249b8fe3afa6f0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cf56d66afd15717eeef8d18bd041f2ac06fdc151
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442859"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021625"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>тип перечисления Androidforworkvpnconnectiontype.
 
@@ -26,11 +26,14 @@ ms.locfileid: "43442859"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Цискоаниконнект|нуль|Cisco Аниконнект.|
-|пулсесекуре|1,1|Безопасный импульс.|
-|f5EdgeClient|2|Пограничный клиент F5.|
+|пулсесекуре|1 |Безопасный импульс.|
+|f5EdgeClient|2 |Пограничный клиент F5.|
 |деллсоникваллмобилеконнект|4|Мобильное подключение Dell Сониквалл.|
 |чеккпоинткапсулевпн|4 |Проверка покапсулы VPN.|
 |клиентов|5 |Клиентов|
+
+
+
 
 
 

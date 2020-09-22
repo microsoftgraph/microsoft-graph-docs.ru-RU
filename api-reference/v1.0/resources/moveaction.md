@@ -6,12 +6,12 @@ description: Объект MoveAction предоставляет сведения
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 04c9ddad00b5705d84af6e72ac194a0d32fd015c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ec1ac8ccaae502f66e205571e17eb5ad3eced8e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447383"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020533"
 ---
 # <a name="moveaction-resource-type"></a>Тип ресурса moveAction
 
@@ -55,3 +55,4 @@ ms.locfileid: "42447383"
   "suppressions": []
 }
 -->
+

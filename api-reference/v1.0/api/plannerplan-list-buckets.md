@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 0cddebe4a79c2c121b7df18899f647c803542d84
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 88d6156b35063ccb5454278d38505c4f4dbd6291
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510895"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020692"
 ---
 # <a name="list-buckets"></a>Перечисление сегментов
 
@@ -40,7 +40,7 @@ GET /planner/plans/{plan-id}/buckets
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [plannerBucket](../resources/plannerbucket.md) в тексте отклика.
 
@@ -115,3 +115,4 @@ Content-length: 251
   "suppressions": [
   ]
 }-->
+

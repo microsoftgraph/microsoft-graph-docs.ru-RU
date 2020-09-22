@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c80e8ae2c9fdfe4a11a02e9f71ada531a121b279
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b706d23f948b80e1d8cebf01f768c47d01c22ab2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511294"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020708"
 ---
 # <a name="create-page"></a>Создание страницы
 
@@ -18,7 +18,7 @@ ms.locfileid: "42511294"
 
 Создайте новую страницу OneNote в разделе по умолчанию записной книжки по умолчанию.
 
-Чтобы создать страницу в другом разделе записной книжки, используемой по умолчанию, `sectionName` можно использовать параметр запроса.  Пример: `../onenote/pages?sectionName=My%20section`
+Чтобы создать страницу в другом разделе записной книжки, используемой по умолчанию, можно использовать `sectionName` параметр запроса.  Пример: `../onenote/pages?sectionName=My%20section`.
 
 Эта `POST /onenote/pages` операция используется только для создания страниц в записной книжке текущего пользователя по умолчанию. Если вы нацелены на другие записные книжки, вы можете [создавать страницы в указанном разделе](../api/section-post-pages.md).  
 
@@ -62,7 +62,7 @@ POST /sites/{id}/onenote/pages
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-В `../onenote/pages` пути можно использовать параметр `sectionName` запроса, чтобы создать страницу в определенном разделе записной книжки по умолчанию. Пример: `../onenote/pages?sectionName=My%20section`. Если раздел не существует (или был переименован), API создаст новый раздел.
+В `../onenote/pages` пути можно использовать `sectionName` параметр запроса, чтобы создать страницу в определенном разделе записной книжки по умолчанию. Пример: `../onenote/pages?sectionName=My%20section`. Если раздел не существует (или был переименован), API создаст новый раздел.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -137,3 +137,4 @@ Content-length: 312
   "section": "documentation",
   "tocPath": ""
 }-->
+

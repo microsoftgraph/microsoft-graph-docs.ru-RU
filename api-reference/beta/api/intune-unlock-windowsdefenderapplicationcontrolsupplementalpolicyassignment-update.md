@@ -3,14 +3,14 @@ title: Обновление Виндовсдефендераппликатион
 description: Обновление свойств объекта Виндовсдефендераппликатионконтролсупплементалполициассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 89e958ee31dc09112f9279e7ad170f144c088d5f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 100574653c2b9639da41f81b29be3add3dac46ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791253"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022332"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a>Обновление Виндовсдефендераппликатионконтролсупплементалполициассигнмент
 
@@ -43,10 +43,10 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [виндовсдефендераппликатионконтролсупплементалполициассигнмент](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [виндовсдефендераппликатионконтролсупплементалполициассигнмент](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md).
@@ -97,6 +97,9 @@ Content-Length: 417
   }
 }
 ```
+
+
+
 
 
 

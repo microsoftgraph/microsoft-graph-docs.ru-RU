@@ -3,14 +3,14 @@ title: Тип ресурса Апплеапплиститем
 description: Представляет приложение в списке управляемых приложений Apple
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f4804f3834a63a3c446c09d383c2244def97398
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2583c617ae34d60e83194f5136efcc6c51f06826
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470127"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021492"
 ---
 # <a name="appleapplistitem-resource-type"></a>Тип ресурса Апплеапплиститем
 
@@ -28,12 +28,12 @@ ms.locfileid: "43470127"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|name|Строка|Имя приложения, унаследованное от [апплиститем](../resources/intune-deviceconfig-applistitem.md)|
+|name|String|Имя приложения, унаследованное от [апплиститем](../resources/intune-deviceconfig-applistitem.md)|
 |publisher|String|Издатель приложения, унаследованного от [апплиститем](../resources/intune-deviceconfig-applistitem.md)|
 |appStoreUrl|String|URL-адрес хранилища приложения, унаследованного от [апплиститем](../resources/intune-deviceconfig-applistitem.md)|
-|appId|String|Идентификатор пакета приложения, унаследованного от [апплиститем](../resources/intune-deviceconfig-applistitem.md)|
+|appId|String|Идентификатор приложения или пакета приложения, унаследованного от [апплиститем](../resources/intune-deviceconfig-applistitem.md)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,6 +52,9 @@ ms.locfileid: "43470127"
   "appId": "String"
 }
 ```
+
+
+
 
 
 

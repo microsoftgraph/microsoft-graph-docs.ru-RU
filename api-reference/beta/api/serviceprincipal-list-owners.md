@@ -1,33 +1,33 @@
 ---
-title: 'СервицепринЦипалс: список владельцев'
-description: Получение списка владельцев servicePrincipal.
+title: 'servicePrincipals: Перечисление владельцев'
+description: Извлечение списка владельцев servicePrincipal.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 1c020c0798015ed490a20ae7a787636ee6985520
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 8fa7885ff80c79737d376c3487e1807160120591
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44382736"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022276"
 ---
-# <a name="serviceprincipals-list-owners"></a>СервицепринЦипалс: список владельцев
+# <a name="serviceprincipals-list-owners"></a>servicePrincipals: Перечисление владельцев
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка владельцев [servicePrincipal](../resources/serviceprincipal.md).
+Извлечение списка владельцев [servicePrincipal](../resources/serviceprincipal.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -116,3 +116,5 @@ Content-length: 55
   ]
 }
 -->
+
+

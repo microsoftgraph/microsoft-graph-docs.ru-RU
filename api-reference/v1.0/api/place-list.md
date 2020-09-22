@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 742023ea4628e1e30eda89052a619a621d9701d1
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 00fd4afb1d0f2ac71109158178c131c05ec214af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334637"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020736"
 ---
 # <a name="list-places"></a>Список мест
 
@@ -64,7 +64,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 >**Note**: для получения комнат в списке помещений необходимо указать список помещений по свойству **EmailAddress** , а не по **идентификатору**.
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает следующие параметры запроса, помогающие настроить ответ:
 - `$filter`
 - `$select`
@@ -74,7 +74,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 Используется `$top` для настройки размера страницы. Размер страницы по умолчанию — 100.
 
-Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -408,3 +408,4 @@ Content-type: application/json
     "Error: Malformed function params 'id-of-roomlist'"
   ]
 }-->
+

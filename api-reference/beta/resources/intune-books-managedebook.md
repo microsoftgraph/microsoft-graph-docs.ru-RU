@@ -3,14 +3,14 @@ title: Тип ресурса managedEBook
 description: Абстрактный класс, содержащий базовые свойства управляемой электронной книги.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f3bcbd777c87150103fe21495370adddf3afe90
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 01fd5b25e4fb7861ef2ea6e2ddd0c810f706b8f7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403016"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021793"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 
@@ -32,8 +32,8 @@ ms.locfileid: "43403016"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Имя электронной книги.|
+|id|String|Ключ объекта.|
+|displayName|String|Имя электронной книги.|
 |description|String|Описание.|
 |publisher|String|Издатель.|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги.|
@@ -43,7 +43,7 @@ ms.locfileid: "43403016"
 |informationUrl|String|URL-адрес с дополнительными сведениями.|
 |privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [манажедебуккатегори](../resources/intune-books-managedebookcategory.md)|Список категорий для этой электронной книги.|
@@ -79,6 +79,9 @@ ms.locfileid: "43403016"
   "privacyInformationUrl": "String"
 }
 ```
+
+
+
 
 
 

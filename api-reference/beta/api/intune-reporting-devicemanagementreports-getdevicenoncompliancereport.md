@@ -3,14 +3,14 @@ title: действие Жетдевиценонкомплианцерепорт
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9a0b9ef5a68a5dc9742b4489895583c517988fe
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 40b2aeb8311adb7f5ff95b9f1243aeb96281d23f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178285"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020057"
 ---
 # <a name="getdevicenoncompliancereport-action"></a>действие Жетдевиценонкомплианцерепорт
 
@@ -43,7 +43,7 @@ POST /deviceManagement/reports/getDeviceNonComplianceReport
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -61,7 +61,7 @@ POST /deviceManagement/reports/getDeviceNonComplianceReport
 |skip|Int32|Пока не задокументировано.|
 |top|Int32|Пока не задокументировано.|
 |sessionId|String|Пока не задокументировано.|
-|filter|String|Н/Д|
+|filter|String|Пока не задокументировано.|
 
 
 
@@ -108,6 +108,9 @@ Content-Length: 99
   "value": "Z2V0RGV2aWNlTm9uQ29tcGxpYW5jZVJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAtMTY1MDA3NDI3OA=="
 }
 ```
+
+
+
 
 
 

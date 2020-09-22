@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 73f5f920a6fbd7f56465ff3f35457c2108ca0323
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: fd1a5948470c85e9f0214e8cd0c2fade8380424d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154418"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022197"
 ---
 # <a name="get-timeoffreason"></a>Получение Тимеоффреасон
 
@@ -136,3 +136,5 @@ Content-length: 401
   ]
 }
 -->
+
+

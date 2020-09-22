@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f0686491f0d19bf0dd4911d0f60fe05b84326081
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 0be7f15424c7e949207c8fa129df0536ecb83c22
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289951"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021156"
 ---
 # <a name="riskdetection-resource-type"></a>Тип ресурса Рискдетектион
 
@@ -107,3 +107,5 @@ Azure AD постоянно оценивает [риски пользовате�
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

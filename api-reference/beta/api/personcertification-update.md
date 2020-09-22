@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 52327323d177e9414790583cee670d300c9095c4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 66c6db323684d9530913e0f6675052ffca78739a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809762"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022272"
 ---
 # <a name="update-personcertification"></a>Обновление Персонцертификатион
 Пространство имен: microsoft.graph
@@ -63,7 +63,7 @@ PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 |thumbnailUrl     |String      |URL-адрес, ссылающийся на эскиз сертификата.   |
 |webUrl           |String      |URL-адрес, ссылающийся на сертификат.                  |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [персонцертификатион](../resources/personcertification.md) в тексте отклика.
 
@@ -147,3 +147,5 @@ Content-Type: application/json
   "webUrl": "https://www.iame.io/blackbelt"
 }
 ```
+
+

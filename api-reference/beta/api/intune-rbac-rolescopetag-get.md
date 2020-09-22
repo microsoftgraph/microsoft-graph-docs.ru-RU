@@ -3,14 +3,14 @@ title: Получение Ролескопетаг
 description: Чтение свойств и связей объекта Ролескопетаг.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f789f363811648a75743d1133ae09977d94d3540
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2e23e68175279981bf53701bacae008cf2f071b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463609"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020071"
 ---
 # <a name="get-rolescopetag"></a>Получение Ролескопетаг
 
@@ -47,13 +47,13 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [ролескопетаг](../resources/intune-rbac-rolescopetag.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -81,6 +81,9 @@ Content-Length: 233
   }
 }
 ```
+
+
+
 
 
 

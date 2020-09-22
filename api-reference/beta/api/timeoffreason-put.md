@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6e28a22e7a49d35d7ae0f06affb0652ad37ce538
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9151028749b4e5ea1e8d2d59cb87487fdfc07267
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452283"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022199"
 ---
 # <a name="replace-timeoffreason"></a>Замена Тимеоффреасон
 
@@ -20,7 +20,7 @@ ms.locfileid: "42452283"
 
 Замена существующего [тимеоффреасон](../resources/timeoffreason.md).
 
-Если указанный [тимеоффреасон](../resources/timeoffreason.md) не существует, этот метод возвращает значение `404 Not found`.
+Если указанный [тимеоффреасон](../resources/timeoffreason.md) не существует, этот метод возвращает значение `404 Not found` .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,11 +51,11 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [тимеоффреасон](../resources/timeoffreason.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [тимеоффреасон](../resources/timeoffreason.md) в тексте отклика.
 
@@ -144,3 +144,5 @@ Content-length: 401
   ]
 }
 -->
+
+
