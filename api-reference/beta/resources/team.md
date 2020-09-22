@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b548c59a72af84a1a30d30cf0edb6fdf39df26d5
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: d36cf52268ef494b44a1c87706201e009942c6e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340049"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046729"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -61,6 +61,17 @@ ms.locfileid: "47340049"
 |webUrl|string (только для чтения) | Гиперссылка, ведущая к команде в клиенте Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по команде в клиенте Microsoft Teams и выборе пункта **Получить ссылку на команду**. Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. |
 |classSettings|[teamClassSettings](teamclasssettings.md) |Настройка параметров класса. Доступна только в том случае, если команда представляет класс.|
 |isMembershipLimitedToOwners|Boolean|Если присвоено значение `true`, команда в настоящее время находится в состоянии участия только для владельцев команды и недоступна другим участникам, например учащимся.|
+|createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания команды.|
+
+### <a name="instance-attributes"></a>Атрибуты экземпляра
+
+Атрибуты экземпляра — это свойства с особым поведением. Эти свойства — временные и а) определяют поведение выполнения службы; или б) предоставляют краткосрочные значения свойств, например URL-адрес скачивания элемента, у которого истекает срок действия.
+
+| Имя свойства| Тип   | Описание
+|:-----------------------|:-------|:-------------------------|
+|@microsoft.graph.teamCreationMode|Строка|Указывает, что команда находится в состоянии миграции и в настоящее время используется для миграции. Принимает одно значение: `migration`.|
+
+Пример запроса POST см. в разделе [Запрос (создание команды в состоянии миграции)](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-team-in-migration-state).
 
 ## <a name="relationships"></a>Связи
 
@@ -104,7 +115,8 @@ ms.locfileid: "47340049"
   "specialization": "string",
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
-   "isMembershipLimitedToOwners":"boolean"
+  "isMembershipLimitedToOwners":"boolean",
+  "createdDateTime": "string (timestamp)"
 }
 ```
 
@@ -125,3 +137,5 @@ ms.locfileid: "47340049"
 
 - [Создание группы с командой](/graph/teams-create-group-and-team)
 - [Работа с Microsoft Teams при помощи API Microsoft Graph](teams-api-overview.md)
+
+

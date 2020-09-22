@@ -3,14 +3,14 @@ title: Создание объекта windowsDefenderAdvancedThreatProtectionCo
 description: Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ddb8b2c05b0d315c5f90fbed0f151b66c8efb28c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 937ee7f3cc604a1b4ba6670838645cab0b545b22
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43336267"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047779"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -47,16 +47,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта windowsDefenderAdvancedThreatProtectionConfiguration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта windowsDefenderAdvancedThreatProtectionConfiguration.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -65,13 +65,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|адванцедсреатпротектиононбоардингблоб|String|Объект выборкам входящей миграции защитника Windows.|
-|адванцедсреатпротектиононбоардингфиленаме|String|Имя файла, из которого был получен Адванцедсреатпротектиононбоардингблоб.|
+|адванцедсреатпротектиононбоардингблоб|Строка|Объект выборкам входящей миграции защитника Windows.|
+|адванцедсреатпротектиононбоардингфиленаме|Строка|Имя файла, из которого был получен Адванцедсреатпротектиононбоардингблоб.|
 |адванцедсреатпротектионаутопопулатеонбоардингблоб|Boolean|Автоматическое заполнение встроенного объекта BLOB программным способом из службы Advanced Threat protection|
 |allowSampleSharing|Boolean|Правило "Разрешить общий доступ к выборкам" службы Advanced Threat Protection в Защитнике Windows|
 |enableExpeditedTelemetryReporting|Boolean|Увеличение частоты создания отчетов о телеметрии службой Advanced Threat Protection в Защитнике Windows.|
-|адванцедсреатпротектионоффбоардингблоб|String|Большой двоичный объект отключения защитника Windows выборкам.|
-|адванцедсреатпротектионоффбоардингфиленаме|String|Имя файла, из которого был получен Адванцедсреатпротектионоффбоардингблоб.|
+|адванцедсреатпротектионоффбоардингблоб|Строка|Большой двоичный объект отключения защитника Windows выборкам.|
+|адванцедсреатпротектионоффбоардингфиленаме|Строка|Имя файла, из которого был получен Адванцедсреатпротектионоффбоардингблоб.|
 
 
 
@@ -176,6 +176,9 @@ Content-Length: 1775
   "advancedThreatProtectionOffboardingFilename": "Advanced Threat Protection Offboarding Filename value"
 }
 ```
+
+
+
 
 
 

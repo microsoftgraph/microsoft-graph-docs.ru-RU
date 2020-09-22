@@ -3,14 +3,14 @@ title: Обновление объекта deviceConfigurationDeviceStateSummary
 description: Обновление свойств объекта deviceConfigurationDeviceStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0229b605a9aa7bbee3b2555c74823edf9ced43c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 92594c71bb0d796ca7812b7c6ae5db65fe5e3fff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460694"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045791"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>Обновление объекта deviceConfigurationDeviceStateSummary
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -105,6 +105,9 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
+
+
+
 
 
 

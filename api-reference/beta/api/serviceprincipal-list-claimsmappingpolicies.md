@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 83bad7c305506814bdd931dcf29a4a3513625fd3
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: c92dae5381b1c9b2364994e8859185b054485862
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219090"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044608"
 ---
 # <a name="list-assigned-claimsmappingpolicy"></a>Список назначенных Клаимсмаппингполици
 
@@ -44,11 +44,11 @@ GET /servicePrincipals/{id}/claimsMappingPolicies
 |:--------------|:--------------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [клаимсмаппингполици](../resources/claimsMappingPolicy.md) в тексте отклика.
 
@@ -122,3 +122,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

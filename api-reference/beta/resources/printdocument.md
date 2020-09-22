@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 1e7a1d6a9c131417e4f0ef171ac364e5fe8b106b
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: e2502421f6976da3378909fd157280296a7550e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046764"
 ---
 # <a name="printdocument-resource-type"></a>Тип ресурса printDocument
 
@@ -30,7 +30,7 @@ ms.locfileid: "44863784"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String|Идентификатор документа. Только для чтения.|
-|displayName|Строка|Имя документа. Только для чтения.|
+|displayName|String|Имя документа. Только для чтения.|
 |contentType|String|Тип контента документа (MIME). Только для чтения.|
 |size|Int64|Размер документа в байтах. Только для чтения.|
 |configuration|[принтердокументконфигуратион](printerdocumentconfiguration.md) |Группа параметров, которые принтер должен использовать для печати документа. Только для чтения.|
@@ -66,3 +66,5 @@ ms.locfileid: "44863784"
 }
 
 ```
+
+

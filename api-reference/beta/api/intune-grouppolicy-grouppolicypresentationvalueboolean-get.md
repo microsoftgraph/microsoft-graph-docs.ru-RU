@@ -3,14 +3,14 @@ title: Получение Граупполиципресентатионвалу
 description: Чтение свойств и связей объекта Граупполиципресентатионвалуебулеан.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90043ab98a307d378510fdb1d1878a6c09a71638
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c06841e439e91a8e03caa0419c11bf5045b477e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047338"
 ---
 # <a name="get-grouppolicypresentationvalueboolean"></a>Получение Граупполиципресентатионвалуебулеан
 
@@ -46,13 +46,13 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [граупполиципресентатионвалуебулеан](../resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -80,6 +80,9 @@ Content-Length: 296
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: f71862ecebb668da478cbf7ee56454f38a723399
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5d2712d2d77271116d9ad59b1e0f5a28491536f9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809938"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046948"
 ---
 # <a name="list-securescores"></a>Перечисление объектов secureScores
 
@@ -28,7 +28,7 @@ ms.locfileid: "46809938"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL.   |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL. |
+|Для приложений | Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ GET /security/secureScores
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **секурескорес** в тексте отклика.
 
@@ -162,3 +162,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

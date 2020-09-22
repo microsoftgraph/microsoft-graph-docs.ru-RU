@@ -3,14 +3,14 @@ title: Получение объекта applePushNotificationCertificate
 description: Чтение свойств и связей объекта applePushNotificationCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02911792926efee24a894e0c49f90b68ebe6eaee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a96b66b155b1ffb7ffc158dd4ff25a711f1c1d93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426970"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047611"
 ---
 # <a name="get-applepushnotificationcertificate"></a>Получение объекта applePushNotificationCertificate
 
@@ -49,10 +49,10 @@ GET /deviceManagement/applePushNotificationCertificate
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -85,6 +85,9 @@ Content-Length: 633
   }
 }
 ```
+
+
+
 
 
 

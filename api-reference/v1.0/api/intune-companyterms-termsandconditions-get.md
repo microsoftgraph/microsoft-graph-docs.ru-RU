@@ -3,14 +3,14 @@ title: Get termsAndConditions
 description: Чтение свойств и связей объекта termsAndConditions.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bf00c3b04d69dec54e19e74ca56a5565fd17e6c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c47b66f3ec095e5e8e2716bfa6006a0188bdb923
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468925"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045910"
 ---
 # <a name="get-termsandconditions"></a>Get termsAndConditions
 
@@ -39,19 +39,19 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}
 GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}/termsAndConditions
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -84,6 +84,9 @@ Content-Length: 484
   }
 }
 ```
+
+
+
 
 
 

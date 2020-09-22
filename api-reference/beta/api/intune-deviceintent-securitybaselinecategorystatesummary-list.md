@@ -3,14 +3,14 @@ title: Список Секуритибаселинекатегористатес
 description: Список свойств и связей объектов Секуритибаселинекатегористатесуммари.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f02e0e3abe7fb047d34f6e43737b67a43308a7e3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 946301881f85ef29ccd30d8baae3ef46399e1204
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381230"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047618"
 ---
 # <a name="list-securitybaselinecategorystatesummaries"></a>Список Секуритибаселинекатегористатесуммариес
 
@@ -43,13 +43,13 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.sec
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -83,6 +83,9 @@ Content-Length: 379
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c66b3ccdf0ddc5e60b68b34c546193b8081d2c69
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 80efbd54109fccaa0299e08e0c172001f46fe692
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842780"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047233"
 ---
 # <a name="onlinemeeting-createorget"></a>Онлинемитинг: Креатеоржет
 
@@ -32,7 +32,7 @@ ms.locfileid: "47842780"
 | Для приложений                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* Администраторы должны создать [политику доступа к приложениям](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) и предоставить ее пользователю, дополнив авторизацию приложения, настроенного в политике, чтобы создать или получить собрание по сети с внешним идентификатором от имени этого пользователя (идентификатора пользователя, указанного в пути запроса).
+> \* Администраторы должны создать [политику доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy) и предоставить ее пользователю, дополнив авторизацию приложения, настроенного в политике, чтобы создать или получить собрание по сети с внешним идентификатором от имени этого пользователя (идентификатора пользователя, указанного в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ POST /me/onlineMeetings/createOrGet
 POST /users/{userId}/onlineMeetings/createOrGet
 ```
 
-> **Примечание:** `userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> **Примечание:** `userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание                 |
@@ -319,3 +319,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

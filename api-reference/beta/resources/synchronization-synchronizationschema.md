@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8ca137dfd96d9e363d43b5c52949fb682acd2794
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: ffcf6477b806048021fd06c5f21998561798a01b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45196906"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046739"
 ---
 # <a name="synchronizationschema-resource-type"></a>Тип ресурса Синчронизатионсчема
 
@@ -50,7 +50,7 @@ ms.locfileid: "45196906"
 
 | Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
-|id|String|Уникальный идентификатор схемы.|
+|id|Строка|Уникальный идентификатор схемы.|
 |синчронизатионрулес   |Коллекция [синчронизатионруле](synchronization-synchronizationrule.md)   |Коллекция правил синхронизации, настроенных для [синчронизатионжоб](synchronization-synchronizationjob.md) или [синчронизатионтемплате](synchronization-synchronizationtemplate.md). |
 |version                |String                             |Версия схемы, автоматически обновляемая при каждом изменении схемы.|
 
@@ -82,3 +82,5 @@ ms.locfileid: "45196906"
   "version": "String"
 }
 ```
+
+

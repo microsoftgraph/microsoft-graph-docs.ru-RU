@@ -3,14 +3,14 @@ title: Список Андроидфорворксцепцертификатеп
 description: Список свойств и связей объектов androidForWorkScepCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ee69b6d9eb8d5738274487071c3d893087ebc6bc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2590aa047a8734eb9e54062ca46801c0b569f069
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43345711"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045357"
 ---
 # <a name="list-androidforworkscepcertificateprofiles"></a>Список Андроидфорворксцепцертификатепрофилес
 
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [androidForWorkScepCertificateProfile](../resources/intune-deviceconfig-androidforworkscepcertificateprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -135,6 +135,9 @@ Content-Length: 2423
   ]
 }
 ```
+
+
+
 
 
 

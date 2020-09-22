@@ -3,14 +3,14 @@ title: Удаление объекта windows10SecureAssessmentConfiguration
 description: Удаляет экземпляр windows10SecureAssessmentConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6825f206492205e39a4c2363951820592aee01fa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 62457d082ef05e4ddb37310fd2daaeb93b0d2d4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460440"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045763"
 ---
 # <a name="delete-windows10secureassessmentconfiguration"></a>Удаление объекта windows10SecureAssessmentConfiguration
 
@@ -41,13 +41,13 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -58,11 +58,14 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

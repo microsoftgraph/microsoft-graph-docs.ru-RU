@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 10e1d95eb20bbfe4e1bcf43e75eaa51a3ebec189
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6ed731fe3f103611e0b0a7c29d546d9c9dc47e42
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519164"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046183"
 ---
 # <a name="workbookrangesort-resource-type"></a>Тип ресурса Воркбукранжесорт
 
@@ -30,7 +30,7 @@ ms.locfileid: "42519164"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 <!-- {
@@ -59,3 +59,5 @@ ms.locfileid: "42519164"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: be38d577d52e0086059f9a5627c670fb537941ce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 49b50293524b35145cb23d27ab630c64caf2ca43
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519948"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046661"
 ---
 # <a name="teamguestsettings-resource-type"></a>Тип ресурса Теамгуестсеттингс
 
@@ -54,3 +54,5 @@ ms.locfileid: "42519948"
   "suppressions": []
 }
 -->
+
+

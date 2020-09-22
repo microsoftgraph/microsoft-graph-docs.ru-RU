@@ -3,14 +3,14 @@ title: Обновление Усерекспериенцеаналитиксме
 description: Обновление свойств объекта Усерекспериенцеаналитиксметричистори.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a7d0689c1ecd3ff72f1b7d3d1f33366bfbed8f4
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: f6166bdc640a28ae2b2c375708ce6e45042c1b1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793532"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047569"
 ---
 # <a name="update-userexperienceanalyticsmetrichistory"></a>Обновление Усерекспериенцеаналитиксметричистори
 
@@ -29,7 +29,7 @@ ms.locfileid: "46793532"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,12 +53,12 @@ PATCH /deviceManagement/userExperienceAnalyticsMetricHistory/{userExperienceAnal
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор истории метрики аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор истории метрики аналитики взаимодействия с пользователем.|
 |метрикдатетиме|DateTimeOffset|Дата и время метрики аналитики взаимодействия с пользователем.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксметричистори](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,6 +89,9 @@ Content-Length: 185
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
 }
 ```
+
+
+
 
 
 

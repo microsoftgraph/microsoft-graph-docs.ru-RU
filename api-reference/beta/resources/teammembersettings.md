@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f77bc80a5723e3e00675aeaab05f2dd7ea180f76
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3d3c716937c7a10091a663ea614d3a63c91ab4b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519941"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046645"
 ---
 # <a name="teammembersettings-resource-type"></a>Тип ресурса Теаммемберсеттингс
 
@@ -62,3 +62,5 @@ ms.locfileid: "42519941"
   "suppressions": []
 }
 -->
+
+

@@ -6,12 +6,12 @@ title: Удаление страницы с сайта SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 10193e9d60d9ed254b2598a2845a487641554553
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d573553ee87b70adfd1f2cde575ce6182dedf8b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453186"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044489"
 ---
 # <a name="delete-page-from-the-site-pages-list-of-a-site"></a>Удаление страницы из списка страниц сайта
 
@@ -56,7 +56,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 Не указывайте текст запроса для этого метода.
 <!-- TODO: should we provide a URL to recover/undelete the file, if one exists? -->
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот вызов возвращает `204 No Content` ответ, указывающий на то, что ресурс был удален и что не было возвращено.
 
@@ -87,3 +87,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

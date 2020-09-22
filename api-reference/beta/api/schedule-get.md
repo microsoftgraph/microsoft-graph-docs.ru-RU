@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 705c42339dc64ff66f89ce72715d51a6753357d0
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 2f2f4e2a9e21511def764597f15b563e4900eab5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44154250"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047051"
 ---
 # <a name="get-schedule"></a>Получение расписания
 
@@ -35,7 +35,7 @@ ms.locfileid: "44154250"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Schedule. Read. All *, Schedule. ReadWrite. ALL* |
+|Для приложений | Schedule. Read. All *, Schedule. ReadWrite. ALL* |
 
 >\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
@@ -139,3 +139,5 @@ Content-length: 401
   ]
 }
 -->
+
+

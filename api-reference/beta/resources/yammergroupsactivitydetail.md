@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 66e1817fa327444b51028292bcda59c8663bd683
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 2188cf1ad583ba66fffb1d7b86009f49fba3f8fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108419"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046077"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>Тип ресурса Яммерграупсактивитидетаил
 
@@ -21,18 +21,18 @@ ms.locfileid: "43108419"
 | Свойство           | Тип    |
 | :----------------- | :------ |
 | репортрефрешдате  | Дата    |
-| граупдисплайнаме   | String  |
+| граупдисплайнаме   | Строка  |
 | isDeleted          | Boolean |
-| овнерпринЦипалнаме | String  |
+| овнерпринЦипалнаме | Строка  |
 | ластактивитидате   | Дата    |
-| groupType          | String  |
+| groupType          | Строка  |
 | office365Connected | Boolean |
 | мемберкаунт        | Int64   |
 | постедкаунт        | Int64   |
 | реадкаунт          | Int64   |
 | ликедкаунт         | Int64   |
-| нетворкдисплайнаме | String  |
-| репортпериод       | String  |
+| нетворкдисплайнаме | Строка  |
+| репортпериод       | Строка  |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -60,3 +60,5 @@ ms.locfileid: "43108419"
   "reportPeriod": "String"
 }
 ```
+
+

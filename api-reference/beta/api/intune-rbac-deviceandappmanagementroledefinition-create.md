@@ -3,14 +3,14 @@ title: Создание deviceAndAppManagementRoleDefinition
 description: Создание объекта deviceAndAppManagementRoleDefinition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef2739c53148397fc26ad95ee49345ed567c60c3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7418ab0b23a1379d0ee24c111f53e13074a970b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044972"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>Создание deviceAndAppManagementRoleDefinition
 
@@ -43,7 +43,7 @@ POST /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,14 +53,14 @@ POST /deviceManagement/roleDefinitions
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
+|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |displayName|Строка|Отображаемое имя определения роли. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |description|String|Описание определения роли. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |permissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |rolePermissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |исбуилтинроледефинитион|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |isBuiltIn|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 
 
 
@@ -183,6 +183,9 @@ Content-Length: 1278
   ]
 }
 ```
+
+
+
 
 
 

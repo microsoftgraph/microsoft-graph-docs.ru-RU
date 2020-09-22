@@ -1,31 +1,31 @@
 ---
 title: 'servicePrincipal: Добавление владельца'
-description: Используйте этот API, чтобы добавить владельца для субъекта-службы.
+description: Используйте этот API для добавления владельца для субъекта-службы.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 9f4cedfcc76093600a299fadb2e9da4ffcb7a746
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: bc6aaaa78e8c51a2d1b99284322ffdaaf5ae1287
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045511"
 ---
 # <a name="serviceprincipal-add-owner"></a>servicePrincipal: Добавление владельца
 
 Пространство имен: microsoft.graph
 
-Используйте этот API, чтобы добавить владельца для [servicePrincipal](../resources/serviceprincipal.md).
+Используйте этот API для добавления владельца для [субъекта-службы](../resources/serviceprincipal.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Application. ReadWrite. ALL и Directory. Read. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) |  Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Application. ReadWrite. Овнедби и Directory. Read. ALL, Application. ReadWrite. ALL и Directory. Read. ALL |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -81,7 +81,7 @@ Content-length: 30
 
 
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 
 <!-- {
@@ -106,3 +106,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

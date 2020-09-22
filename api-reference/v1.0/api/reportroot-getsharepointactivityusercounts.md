@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: ff4fcd543c87e1915a7a8ba1a3ce6abda045b40a
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 744b9375ab2400ff69bec6e0bde2a1749b6eefcd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895904"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045630"
 ---
 # <a name="reportroot-getsharepointactivityusercounts"></a>reportRoot: getSharePointActivityUserCounts
 
@@ -30,7 +30,7 @@ ms.locfileid: "44895904"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                           |
 | Для приложений                            | Reports.Read.All                         |
 
-**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Более подробную информацию [можно узнать в статье авторизация для API для чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
+**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityUserCounts(per
 ```
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -128,3 +128,4 @@ Report Refresh Date,Visited Page,Viewed Or Edited,Synced,Shared Internally,Share
   "suppressions": [
   ]
 }-->
+

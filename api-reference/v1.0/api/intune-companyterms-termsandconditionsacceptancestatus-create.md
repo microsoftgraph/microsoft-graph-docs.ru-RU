@@ -3,14 +3,14 @@ title: Создание объекта termsAndConditionsAcceptanceStatus
 description: Создание объекта termsAndConditionsAcceptanceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 154b995cf3e75cc66c2dbc600a79fe3ee56f8dd8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 504accc0cd0dbca5f7885f35e00914b21fbffed3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446228"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045889"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Создание объекта termsAndConditionsAcceptanceStatus
 
@@ -41,7 +41,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -51,7 +51,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |userDisplayName|String|Отображает имя пользователя, чье принятие представлено объектом.|
 |acceptedVersion|Int32|Номер последней версии условий, принятых пользователем.|
 |acceptedDateTime|DateTimeOffset|Дата и время последнего принятия условий пользователем.|
@@ -93,6 +93,9 @@ Content-Length: 260
   "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
 }
 ```
+
+
+
 
 
 

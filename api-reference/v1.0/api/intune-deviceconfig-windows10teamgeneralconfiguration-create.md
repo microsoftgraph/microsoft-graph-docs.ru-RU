@@ -3,14 +3,14 @@ title: Создание объекта windows10TeamGeneralConfiguration
 description: Создает объект windows10TeamGeneralConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b0bb69b66039aa4462407ad52de9d38c89696d7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ca152abe3374cf3cdb355012d623ff35fd34761b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442028"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045679"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>Создание объекта windows10TeamGeneralConfiguration
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -51,11 +51,11 @@ POST /deviceManagement/deviceConfigurations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |azureOperationalInsightsBlockTelemetry|Boolean|Указывает, следует ли заблокировать оперативную аналитику Azure.|
 |azureOperationalInsightsWorkspaceId|String|Идентификатор рабочей области оперативной аналитики Azure.|
@@ -157,6 +157,9 @@ Content-Length: 1322
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
+
+
+
 
 
 

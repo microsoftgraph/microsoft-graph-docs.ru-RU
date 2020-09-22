@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 27024cdc75358d80849b7fa67ff6262faadbbe46
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 08d1b0fa13e1b615912433b8fda378b89bf9f926
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519171"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046204"
 ---
 # <a name="workbookrangeformat-resource-type"></a>Тип ресурса Воркбукранжеформат
 
@@ -86,3 +86,5 @@ ms.locfileid: "42519171"
   "suppressions": []
 }
 -->
+
+

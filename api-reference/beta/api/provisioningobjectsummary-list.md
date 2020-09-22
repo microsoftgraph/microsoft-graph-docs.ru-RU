@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 51375b2f83eeeb5755e3685a159a2338c34fa3fd
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 031cbeffbd600f86d2d5878f3fb5b6582eda8c2e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123110"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047198"
 ---
 # <a name="list-provisioningobjectsummary"></a>Список Провисионингобжектсуммари
 
@@ -48,7 +48,7 @@ GET /auditLogs/provisioning
 |[$top](/graph/query-parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/provisioning?$top=20`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. Для создания маркера необходимо передать верхний фильтр в запросе. Невозможно указать число результатов, которые необходимо пропустить.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
-Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query_parameters).
+Общие сведения см. в статье [Параметры запроса OData](/graph/query_parameters).
 
 ### <a name="attributes-supported-by-the-filter-parameter"></a>Атрибуты, поддерживаемые параметром $filter
 
@@ -84,7 +84,7 @@ GET /auditLogs/provisioning
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [провисионингобжектсуммари](../resources/provisioningobjectsummary.md) в тексте отклика.
 
@@ -412,3 +412,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

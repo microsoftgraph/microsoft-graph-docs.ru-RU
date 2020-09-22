@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f623a71a7d07a019615cfb43a664d875b8dd2def
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 4a890cea9763bd8615495d4d9597601a508fafc6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791612"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046603"
 ---
 # <a name="teamsapp-resource-type"></a>Тип ресурса teamsApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "46791612"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет приложение в каталоге приложений [Microsoft Teams](teams-api-overview.md) .
+Представляет приложение в каталоге приложений [Microsoft Teams](teams-api-overview.md).
 
 Пользователи могут видеть эти приложения в магазине Microsoft Teams, а эти приложения можно устанавливать в [командах](team.md), используя метод [добавления приложения в команду](../api/teamsappinstallation-add.md).
 
@@ -44,8 +44,8 @@ ms.locfileid: "46791612"
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|store|нуль| Приложение доступно всем клиентам через магазин приложений Microsoft Teams.|
-|organization|1,1|Приложение доступно только в этом клиенте|
+|store|0| Приложение доступно всем клиентам через магазин приложений Microsoft Teams.|
+|organization|1|Приложение доступно только в этом клиенте|
 |sideloaded|2|Приложение доступно только тому пользователю или той команде, где оно установлено.|
 
 ## <a name="relationships"></a>Отношения
@@ -89,4 +89,6 @@ ms.locfileid: "46791612"
   "suppressions": []
 }
 -->
+
+
 

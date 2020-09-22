@@ -3,14 +3,14 @@ title: Действие assign
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f3927237b74436733e1c371e98873edc45425be
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 4ef96563e761921fc67b469ae15389ae3cfed7d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792585"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047639"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/assign
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/assign
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [девицеманажементинтентассигнмент](../resources/intune-deviceintent-devicemanagementintentassignment.md)|Н/Д|
+|assignments|Коллекция [девицеманажементинтентассигнмент](../resources/intune-deviceintent-devicemanagementintentassignment.md)|Пока не задокументировано.|
 
 
 
@@ -90,6 +90,9 @@ Content-length: 443
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

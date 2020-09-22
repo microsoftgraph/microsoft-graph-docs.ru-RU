@@ -3,14 +3,14 @@ title: Update termsAndConditions
 description: Обновление свойств объекта termsAndConditions.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 70ca9c1701f65e50c3a970881ffcc9357fc4bf3c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 05dd58ed04cf1e54e9aff313149f2c7b379fb75f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446235"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045896"
 ---
 # <a name="update-termsandconditions"></a>Update termsAndConditions
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -55,8 +55,8 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 |id|String|Уникальный идентификатор политики использования.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|Строка|Имя политики использования, указанное администратором. |
-|description|Строка|Описание политики использования, указанное администратором.|
+|displayName|String|Имя политики использования, указанное администратором. |
+|description|String|Описание политики использования, указанное администратором.|
 |title|String|Название условий, указанное администратором. Показывается пользователю при запросе на принятие политики использования.|
 |bodyText|String|Основной текст условий, заданный администратором (как правило, сами условия). Показывается пользователю при запросе на принятие политики использования.|
 |acceptanceStatement|String|Указанное администратором объяснение условий. Как правило, пользователю объясняется, с чем связано принятие условий, изложенных в соответствующей политике. Показывается пользователю при запросе на принятие политики использования.|
@@ -107,6 +107,9 @@ Content-Length: 445
   "version": 7
 }
 ```
+
+
+
 
 
 

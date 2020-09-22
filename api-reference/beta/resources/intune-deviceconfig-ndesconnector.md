@@ -3,14 +3,14 @@ title: Тип ресурса Ндесконнектор
 description: Сущность, представляющая локальный Соединитель NDES.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f47d66b336563a7cf2015c97b8a9a558ddbb4aa5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4e67acc025926f0e3b0a5fe2c300689c7389291f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437097"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046771"
 ---
 # <a name="ndesconnector-resource-type"></a>Тип ресурса Ндесконнектор
 
@@ -37,7 +37,7 @@ ms.locfileid: "43437097"
 |id|String|Ключ соединителя NDES Connector.|
 |lastConnectionDateTime|DateTimeOffset|Время последнего подключения для соединителя NDES Connector|
 |state|[ндесконнекторстате](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединителя NDES Connector. Возможные значения: `none`, `active`, `inactive`.|
-|displayName|Строка|Понятное имя соединителя NDES Connector.|
+|displayName|String|Понятное имя соединителя NDES Connector.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -59,6 +59,9 @@ ms.locfileid: "43437097"
   "displayName": "String"
 }
 ```
+
+
+
 
 
 

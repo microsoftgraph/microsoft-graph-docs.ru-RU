@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c5d73738a24e0ffd21b259c58ce44cbe000c54df
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 5684c98f15ed039fbba36b1df517a6d7d1d5d8c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909732"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046449"
 ---
 # <a name="teamstab-resource-type"></a>Тип ресурса teamsTab
 
@@ -35,7 +35,7 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|  id              |   строка                  |  Идентификатор, который уникальным образом определяет определенный экземпляр вкладки канала. только чтение.     |
+|  id              |   string                  |  Идентификатор, который уникальным образом определяет определенный экземпляр вкладки канала. только чтение.     |
 |  displayName            |   string                  |  Имя вкладки.     |
 |  name            |   string                  |  Устаревшие Имя вкладки.     |
 |  teamsAppId           |   string             |  Идентификатор определения приложения вкладки. Это значение нельзя изменить после создания вкладки.     |
@@ -49,7 +49,7 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md) | Приложение, связанное с вкладкой. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -88,3 +88,5 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
 ## <a name="see-also"></a>См. также
 
 [Настройка встроенных типов вкладок](/graph/teams-configuring-builtin-tabs)
+
+

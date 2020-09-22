@@ -3,14 +3,14 @@ title: Обновление Девицеманажементдомаинжоин
 description: Обновление свойств объекта Девицеманажементдомаинжоинконнектор.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28204a3f8fd81ffe526edbfb19a3e4af5851852f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 77a7c9a6a7460db29b7efdc74821c35cc1caf0eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461046"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047296"
 ---
 # <a name="update-devicemanagementdomainjoinconnector"></a>Обновление Девицеманажементдомаинжоинконнектор
 
@@ -46,14 +46,14 @@ PATCH /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnecto
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементдомаинжоинконнектор](../resources/intune-odj-devicemanagementdomainjoinconnector.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементдомаинжоинконнектор](../resources/intune-odj-devicemanagementdomainjoinconnector.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор, представляющий соединитель.|
+|id|Строка|Уникальный идентификатор, представляющий соединитель.|
 |displayName|Строка|Отображаемое имя соединителя.|
 |lastConnectionDateTime|DateTimeOffset|Последний соединитель времени с обращением к Intune.|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|Состояние соединителя. Возможные значения: `active`, `error`, `inactive`.|
@@ -61,7 +61,7 @@ PATCH /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnecto
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементдомаинжоинконнектор](../resources/intune-odj-devicemanagementdomainjoinconnector.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -98,6 +98,9 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

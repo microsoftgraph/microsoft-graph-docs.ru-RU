@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d2fadc15ba836e6df3abbf5c963d0c3543c211ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 785f328c397539b13e96a5ec2dde8df4b5ca9c80
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453837"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047049"
 ---
 # <a name="list-timeoffreasons"></a>Список Тимеоффреасонс
 
@@ -50,7 +50,7 @@ GET /teams/{teamId}/schedule/timeOffReasons
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тимеоффреасон](../resources/timeoffreason.md) в тексте отклика.
 
@@ -136,3 +136,5 @@ Content-length: 401
   ]
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Список Девицеманажементбулеансеттинги
 description: Список свойств и связей объектов Девицеманажементбулеансеттингинстанце.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3c94169b9759d9e6428872b5fc059c20a512031
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 660bf4e7be1c35646c1b9362afbf6c739e049f65
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43330033"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045126"
 ---
 # <a name="list-devicemanagementbooleansettinginstances"></a>Список Девицеманажементбулеансеттингинстанцес
 
@@ -49,10 +49,10 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементбулеансеттингинстанце](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,6 +82,9 @@ Content-Length: 278
   ]
 }
 ```
+
+
+
 
 
 

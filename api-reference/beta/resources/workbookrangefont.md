@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9ddbb607a243f4571d53dcf887f80a171b230748
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 126bff335ff8f9345bbdcf54e08cff471fc064b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519178"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046211"
 ---
 # <a name="workbookrangefont-resource-type"></a>Тип ресурса Воркбукранжефонт
 
@@ -38,7 +38,7 @@ ms.locfileid: "42519178"
 |size|double|размер шрифта|
 |underline| Строка |Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -78,3 +78,5 @@ ms.locfileid: "42519178"
   "suppressions": []
 }
 -->
+
+

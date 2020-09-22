@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 79037b8c941989ddba273a34184d00607758fafb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: da940e4267fe0964b179aebe6431d1836a4bdd25
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473911"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044818"
 ---
 # <a name="reportroot-getcredentialusagesummary"></a>Reportroot.: Жеткредентиалусажесуммари
 
@@ -44,7 +44,7 @@ GET /reports/getCredentialUsageSummary
 
 | Параметр | Тип | Описание |
 |:--------- |:---- |:----------- |
-| period | String | Задает период времени, для которого требуются данные об использовании. Пример: `/reports/getCredentialUsageSummary(period='D30')`. Поддерживаемые периоды: `D1`, `D7`, и `D30`. В периоде регистр не учитывается. |
+| period | Строка | Задает период времени, для которого требуются данные об использовании. Пример: `/reports/getCredentialUsageSummary(period='D30')`. Поддерживаемые периоды: `D1` , `D7` , и `D30` . В периоде регистр не учитывается. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -52,7 +52,7 @@ GET /reports/getCredentialUsageSummary
 
 | Свойства | Описание и пример |
 |:---- |:----------- |
-| состав | Задает тип данных об использовании (регистрация и сброс). Пример: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Поддерживаемые операторы фильтра: `eq`. |
+| состав | Задает тип данных об использовании (регистрация и сброс). Пример: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Поддерживаемые операторы фильтра: `eq` . |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -61,11 +61,11 @@ GET /reports/getCredentialUsageSummary
 | Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [кредентиалусажесуммари](../resources/credentialusagesummary.md) в тексте отклика.
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUsageSummary(period='D
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства возвращаются при фактическом вызове.
 
@@ -141,3 +141,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

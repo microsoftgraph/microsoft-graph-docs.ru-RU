@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 9b997d111f31f290c0721172fdb59d9fdd0fd3bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 828997f6bc89d23d63ab997418f6b3e8d48d1f83
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518996"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046065"
 ---
 # <a name="yammergroupsactivitycounts-resource-type"></a>Тип ресурса Яммерграупсактивитикаунтс
 
@@ -23,9 +23,9 @@ ms.locfileid: "42518996"
 | репортрефрешдате | Дата   |
 | метк             | Int64  |
 | размещен            | Int64  |
-| прочитан              | Int64  |
+| read              | Int64  |
 | reportDate        | Дата   |
-| репортпериод      | String |
+| репортпериод      | Строка |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -46,3 +46,5 @@ ms.locfileid: "42518996"
   "reportPeriod": "String"
 }
 ```
+
+

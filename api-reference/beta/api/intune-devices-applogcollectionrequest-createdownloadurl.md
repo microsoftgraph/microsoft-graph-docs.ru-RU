@@ -3,14 +3,14 @@ title: Действие createDownloadUrl
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8181a046ff8e97f789c6b5cbbfd049e23dd9594
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 235a25cd13f585c65469b1d79753c64a38b0c0cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047590"
 ---
 # <a name="createdownloadurl-action"></a>Действие createDownloadUrl
 
@@ -46,10 +46,10 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении это действие возвращает `200 OK` код отклика и объект [апплогколлектиондовнлоаддетаилс](../resources/intune-devices-applogcollectiondownloaddetails.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -76,6 +76,9 @@ Content-Length: 239
   }
 }
 ```
+
+
+
 
 
 

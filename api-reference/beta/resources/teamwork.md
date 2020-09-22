@@ -5,12 +5,12 @@ author: clearab
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: a68c7422b43106882327dd0a3068f89aad20b6e0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1d44520fd680bbfb67d4a756b24e1533a64041b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519801"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046337"
 ---
 # <a name="teamwork-resource-type"></a>Тип ресурса teamwork
 
@@ -65,3 +65,5 @@ ms.locfileid: "42519801"
 ## <a name="see-also"></a>См. также
 
 - [Ресурс userTeamwork](userteamwork.md)
+
+

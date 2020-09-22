@@ -1,16 +1,16 @@
 ---
 title: Перечисление oauth2PermissionGrants
-description: Получение списка объектов oAuth2PermissionGrant, представляющих делегированные разрешения разрешений.
+description: Извлечение списка объектов oAuth2PermissionGrant, представляющих предоставленные делегированные разрешения.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 9f1ca80170056a20ea121a6011f5cc66162e6f38
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 679d65641a7b9295b06111148c43a12237123cc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383058"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044526"
 ---
 # <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 
@@ -18,7 +18,7 @@ ms.locfileid: "44383058"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка сущностей [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) , представляющих делегированные разрешения, предоставленные субъекту-службе (представляющему клиентское приложение) для доступа к API от имени пользователя.
+Извлечение списка объектов [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md), представляющих делегированные разрешения, предоставленные субъекту-службе (представляет клиентское приложение) для доступа к API от имени пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "44383058"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory. Read. ALL, Делегатедпермиссионгрант. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Directory. Read. ALL, Делегатедпермиссионгрант. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,7 +54,7 @@ GET /servicePrincipals/{id}/oauth2PermissionGrants
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -134,3 +134,5 @@ Content-Length: 253
   ]
 }
 -->
+
+

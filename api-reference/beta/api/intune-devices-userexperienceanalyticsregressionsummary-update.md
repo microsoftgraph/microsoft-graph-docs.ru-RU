@@ -3,14 +3,14 @@ title: Обновление Усерекспериенцеаналитиксре
 description: Обновление свойств объекта Усерекспериенцеаналитиксрегрессионсуммари.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2bf55cb371c4bf6b59dfd5b6143eeef8a16abc83
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7d16184b9a44ea167d3e8932ddde14c2c9e36209
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379039"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047464"
 ---
 # <a name="update-userexperienceanalyticsregressionsummary"></a>Обновление Усерекспериенцеаналитиксрегрессионсуммари
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsRegressionSummary
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,11 +53,11 @@ PATCH /deviceManagement/userExperienceAnalyticsRegressionSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сводки по регрессии аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор сводки по регрессии аналитики взаимодействия с пользователем.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксрегрессионсуммари](../resources/intune-devices-userexperienceanalyticsregressionsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -86,6 +86,9 @@ Content-Length: 131
   "id": "41683327-3327-4168-2733-684127336841"
 }
 ```
+
+
+
 
 
 

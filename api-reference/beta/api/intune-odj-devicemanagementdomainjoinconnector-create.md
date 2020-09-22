@@ -3,14 +3,14 @@ title: Создание Девицеманажементдомаинжоинко
 description: Создание нового объекта Девицеманажементдомаинжоинконнектор.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 13b6e4dd2c2aff14b4c1003cf354e126d37ab75e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 805d2f58535dd94487e3deff782366d8a36eda08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462647"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047303"
 ---
 # <a name="create-devicemanagementdomainjoinconnector"></a>Создание Девицеманажементдомаинжоинконнектор
 
@@ -46,14 +46,14 @@ POST /deviceManagement/domainJoinConnectors
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементдомаинжоинконнектор в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементдомаинжоинконнектор.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор, представляющий соединитель.|
+|id|Строка|Уникальный идентификатор, представляющий соединитель.|
 |displayName|Строка|Отображаемое имя соединителя.|
 |lastConnectionDateTime|DateTimeOffset|Последний соединитель времени с обращением к Intune.|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|Состояние соединителя. Возможные значения: `active`, `error`, `inactive`.|
@@ -61,7 +61,7 @@ POST /deviceManagement/domainJoinConnectors
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементдомаинжоинконнектор](../resources/intune-odj-devicemanagementdomainjoinconnector.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -98,6 +98,9 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

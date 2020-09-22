@@ -1,25 +1,25 @@
 ---
-title: Создание serviceprincipal
+title: Создание объекта serviceprincipal
 description: Создание нового объекта serviceprincipal.
 author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 65ca715730dde77d50e0ed45f14615e6c211a745
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: b3b865066c498e340f917dd72aaf06e75593a66f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383933"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045523"
 ---
-# <a name="create-serviceprincipal"></a>Создание servicePrincipal
+# <a name="create-serviceprincipal"></a>Создание объекта servicePrincipal
 
 Пространство имен: microsoft.graph
 
-Создание нового объекта [servicePrincipal](../resources/serviceprincipal.md) .
+Создание нового объекта [servicePrincipal](../resources/serviceprincipal.md).
 
 > [!IMPORTANT]
-> Добавление [**пассвордкредентиал**](../resources/passwordcredential.md) при создании сервицепринЦипалс не поддерживается. Используйте метод [аддпассворд](serviceprincipal-addpassword.md) , чтобы добавить пароли для объекта servicePrincipal.
+> Добавление [**passwordCredential**](../resources/passwordcredential.md) при создании объектов servicePrincipal не поддерживается. Используйте метод [addPassword](serviceprincipal-addpassword.md), чтобы добавлять пароли для servicePrincipal.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "44383933"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -44,11 +44,11 @@ POST /serviceprincipals
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [serviceprincipal](../resources/serviceprincipal.md) в формате JSON. Текст запроса должен содержать **AppID**.
+Предоставьте в тексте запроса описание объекта [serviceprincipal](../resources/serviceprincipal.md) в формате JSON. Текст запроса должен содержать **appId**.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [serviceprincipal](../resources/serviceprincipal.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `201 Created` и объект [serviceprincipal](../resources/serviceprincipal.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
@@ -132,3 +132,4 @@ Content-type: application/json
     "passwordCredentials": []
 }
 ```
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0e1079c21fe1f33dca424a4d6a374f02baa86563
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 884bbd2c6cdb0fe6b527cd7c8bca3ed2079f522a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200182"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047156"
 ---
 # <a name="delete-publishedresource"></a>Удаление Публишедресаурце
 
@@ -44,11 +44,11 @@ DELETE ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/
 |:--------------|:--------------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
@@ -82,7 +82,7 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisionin
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

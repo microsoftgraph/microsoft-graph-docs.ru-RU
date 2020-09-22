@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9a668c9d3b234fede0ad5c151e1dbbc95fc93516
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f26c47b2e1863c3108bc23f7c388179bd8006156
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519962"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046666"
 ---
 # <a name="teamdiscoverysettings-resource-type"></a>Тип ресурса Теамдисковерисеттингс
 
@@ -23,7 +23,7 @@ ms.locfileid: "42519962"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|шовинтеамссеарчандсугжестионс|Логическое|Если задано значение true, команда становится видимой через поиск и предложения от клиента Teams.|
+|шовинтеамссеарчандсугжестионс|Boolean|Если задано значение true, команда становится видимой через поиск и предложения от клиента Teams.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -52,3 +52,5 @@ ms.locfileid: "42519962"
     "Error: /api-reference/beta/resources/teamdiscoverysettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }-->
+
+

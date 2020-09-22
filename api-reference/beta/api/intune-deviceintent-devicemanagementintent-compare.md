@@ -3,14 +3,14 @@ title: Функция Compare
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8fe8ef09b1aff798b62e995f6136e0acb7657d5e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c3d2be68278d41ba842105aa750b0f26cdc8d753
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43328288"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047646"
 ---
 # <a name="compare-function"></a>Функция Compare
 
@@ -43,7 +43,7 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/compare
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -52,12 +52,12 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/compare
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|templateId|String|Н/Д|
+|templateId|String|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [девицеманажементсеттингкомпарисон](../resources/intune-deviceintent-devicemanagementsettingcomparison.md) в тексте отклика.
+В случае успеха эта функция возвращает `200 OK` код отклика и коллекцию [девицеманажементсеттингкомпарисон](../resources/intune-deviceintent-devicemanagementsettingcomparison.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -88,6 +88,9 @@ Content-Length: 364
   ]
 }
 ```
+
+
+
 
 
 

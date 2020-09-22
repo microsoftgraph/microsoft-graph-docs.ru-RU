@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: dc2c253bc77b85576867b9a2858ff776b7a67b7a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0e08bde28f5044c733d0ec4f0c0d6cd05fbd524d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510713"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045686"
 ---
 # <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
 
@@ -50,7 +50,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/itemAt
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбукранжебордер](../resources/rangeborder.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукранжебордер](../resources/rangeborder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -117,3 +117,4 @@ Content-length: 136
   "suppressions": [
   ]
 }-->
+

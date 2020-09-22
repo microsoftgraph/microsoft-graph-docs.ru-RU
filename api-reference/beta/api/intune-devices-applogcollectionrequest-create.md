@@ -3,14 +3,14 @@ title: Создание appLogCollectionRequest
 description: Создание нового объекта appLogCollectionRequest.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fda135fbd3acb66e37da9cf33eb469f92b07e24f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 00e979ccf13573da36f3410d55428e2ac596470c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426948"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047597"
 ---
 # <a name="create-applogcollectionrequest"></a>Создание appLogCollectionRequest
 
@@ -46,22 +46,22 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта appLogCollectionRequest в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании appLogCollectionRequest.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор. Это userId_DeviceId_AppId идентификатор.|
+|id|Строка|Уникальный идентификатор. Это userId_DeviceId_AppId идентификатор.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Запись состояния отправки. Возможные значения: `pending`, `completed`, `failed`.|
-|Ошибк|String|Сообщение об ошибке, если оно возникло во время процесса отправки|
-|кустомлогфолдерс|Коллекция объектов string|Список папок журналов. |
+|Ошибк|Строка|Сообщение об ошибке, если оно возникло во время процесса отправки|
+|кустомлогфолдерс|Коллекция String|Список папок журналов. |
 |completedDateTime|DateTimeOffset|Время, когда запрос на отправку журнала достигает состояния терминала|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -102,6 +102,9 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
+
+
+
 
 
 

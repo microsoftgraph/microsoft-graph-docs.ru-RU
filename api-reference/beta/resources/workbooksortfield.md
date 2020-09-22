@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ruoyingl
-ms.openlocfilehash: d5622a727ed084f7dc8e991dd76b166527988549
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5f296d7d2d748213c24f1d49f6363f86d2b1af84
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807369"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046106"
 ---
 # <a name="workbooksortfield-resource-type"></a>Тип ресурса Воркбуксортфиелд
 
@@ -29,12 +29,12 @@ ms.locfileid: "46807369"
 |key|int|Представляет столбец (или строку в зависимости от ориентации сортировки), для которого задано условие. Представляется в виде расстояния от первого столбца (или строки).|
 |sortOn|string|Представляет тип сортировки этого условия. Возможные значения: `Value`, `CellColor`, `FontColor`, `Icon`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |icon|[воркбукикон](workbookicon.md)|Представляет значок, определенный условием, при сортировке по значку ячейки.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -71,3 +71,5 @@ ms.locfileid: "46807369"
   "suppressions": []
 }
 -->
+
+

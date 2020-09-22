@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 952cdc1aa293b393c55491590a7da7a25f6f9507
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 3f95c77df024a980e01896dc1661661efdf10292
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394794"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046883"
 ---
 # <a name="useragent-resource-type"></a>Тип ресурса userAgent
 
@@ -26,7 +26,7 @@ ms.locfileid: "42394794"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |applicationVersion|String|Определяет версию программного обеспечения приложения, используемого конечной точкой.|
-|headerValue|String|Значение заголовка User — Agent, указанное конечной точкой.|
+|headerValue|Строка|Значение заголовка User — Agent, указанное конечной точкой.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -57,3 +57,4 @@ ms.locfileid: "42394794"
   "section": "documentation",
   "tocPath": ""
 }-->
+

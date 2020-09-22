@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7a330223a7b72b32387998d458456f0661979ae2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3982b679802a2ca80eac5fe4e8f76fee91bbf1d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519822"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046351"
 ---
 # <a name="teamsuseractivityusercounts-resource-type"></a>Тип ресурса Теамсусерактивитюсеркаунтс
 
@@ -27,7 +27,7 @@ ms.locfileid: "42519822"
 | calls               | Int64  |
 | meetings            | Int64  |
 | осерактионс        | Int64  |
-| репортпериод        | String |
+| репортпериод        | Строка |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -50,3 +50,5 @@ ms.locfileid: "42519822"
   "reportPeriod": "String"
 }
 ```
+
+

@@ -3,14 +3,14 @@ title: Удаление Виндовсманажеддевице
 description: Удаляет объект Виндовсманажеддевице.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 105b39174a182d207c17d435110ed938bbc980e8
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c129978c1b67c0fb6ed6ea37a2a5d0ebb2057b71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792115"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047436"
 ---
 # <a name="delete-windowsmanageddevice"></a>Удаление Виндовсманажеддевице
 
@@ -52,7 +52,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -71,6 +71,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managed
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

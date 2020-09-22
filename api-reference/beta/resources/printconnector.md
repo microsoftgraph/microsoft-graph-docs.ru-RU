@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 84c9625bd8d5a454100cab166676c1dcbcfd8d05
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: d027344db67a26fc0af7ebffaaad63d3fe3c4971
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142430"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046813"
 ---
 # <a name="printconnector-resource-type"></a>Тип ресурса Принтконнектор
 
@@ -33,9 +33,9 @@ ms.locfileid: "45142430"
 |:-------------|:------------|:------------|
 |id|String| Только для чтения.|
 |name|String|Имя соединителя.|
-|fullyQualifiedDomainName|String|Имя узла для соединителя.|
+|fullyQualifiedDomainName|Строка|Имя узла для соединителя.|
 |operatingSystem|String|Версия операционной системы на соединителе компьютера.|
-|аппверсион|String|Версия соединителя.|
+|аппверсион|Строка|Версия соединителя.|
 |девицехеалс|[девицехеалс](devicehealth.md)|Работоспособность устройства соединителя.|
 |location|[принтерлокатион](printerlocation.md)|Физическое и/или организационное расположение соединителя.|
 |регистереддатетиме|DateTimeOffset|Значение DateTimeOffset, когда соединитель был зарегистрирован.|
@@ -76,3 +76,5 @@ ms.locfileid: "45142430"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

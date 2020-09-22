@@ -3,14 +3,14 @@ title: Список Андроидворкпрофилевпнконфигура
 description: Список свойств и связей объектов Андроидворкпрофилевпнконфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5f1950e1d42683b3e8d305c8c5386225f7dcecf
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 701a70ae9c74613edcfe514315ad79b9cf716f15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123206"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045203"
 ---
 # <a name="list-androidworkprofilevpnconfigurations"></a>Список Андроидворкпрофилевпнконфигуратионс
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2592
+Content-Length: 2951
 
 {
   "value": [
@@ -140,12 +140,25 @@ Content-Length: 2592
       "targetedPackageIds": [
         "Targeted Package Ids value"
       ],
+      "targetedMobileApps": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        }
+      ],
       "alwaysOn": true,
-      "alwaysOnLockdown": true
+      "alwaysOnLockdown": true,
+      "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
     }
   ]
 }
 ```
+
+
+
 
 
 

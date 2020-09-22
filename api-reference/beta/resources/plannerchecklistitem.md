@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 0ca5116b83d3d61fda27f1469573c9a9ab971522
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c60b2727af2fccfdac8e8f9e60e055b0471c861
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521771"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046808"
 ---
 # <a name="plannerchecklistitem-resource-type"></a>Тип ресурса Планнерчекклиститем
 
@@ -24,11 +24,11 @@ ms.locfileid: "42521771"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|с возвратом|Boolean|Значение, `true` если элемент отмечен флажком и `false` в противном случае.|
+|с возвратом|Boolean|Значение, `true` Если элемент отмечен флажком и `false` в противном случае.|
 |lastModifiedBy|[identitySet](identityset.md)| Только для чтения. Идентификатор пользователя, на который последний раз изменился.|
 |lastModifiedDateTime|DateTimeOffset|Только для чтения. Дата и время последнего изменения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |orderHint|String|Используется для задания относительного порядка элементов в контрольном списке. Формат определяется, как описано [ниже](planner-order-hint-format.md).|
-|title|String|Название элемента контрольного списка|
+|title|Строка|Название элемента контрольного списка|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -64,3 +64,5 @@ ms.locfileid: "42521771"
   "suppressions": []
 }
 -->
+
+

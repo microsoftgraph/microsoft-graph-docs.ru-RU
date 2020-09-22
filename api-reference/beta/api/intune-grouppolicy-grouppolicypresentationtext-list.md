@@ -3,14 +3,14 @@ title: Список Граупполиципресентатионтекстс
 description: Список свойств и связей объектов Граупполиципресентатионтекст.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1943b08b94175284cad17a3199257922c7df4fb9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 76146e334d96054757fb71de4153841cead53e30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408613"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045091"
 ---
 # <a name="list-grouppolicypresentationtexts"></a>Список Граупполиципресентатионтекстс
 
@@ -28,8 +28,8 @@ ms.locfileid: "43408613"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,13 +43,13 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [граупполиципресентатионтекст](../resources/intune-grouppolicy-grouppolicypresentationtext.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -78,6 +78,9 @@ Content-Length: 258
   ]
 }
 ```
+
+
+
 
 
 

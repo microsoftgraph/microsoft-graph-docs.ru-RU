@@ -3,14 +3,14 @@ title: Обновление Девицеманажементрепортс
 description: Обновление свойств объекта Девицеманажементрепортс.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99fee0974782e46a7b8846e26454350731ff9394
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a4b49f49962da7cf17392e0fa9f0ee21aca3deac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392093"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044832"
 ---
 # <a name="update-devicemanagementreports"></a>Обновление Девицеманажементрепортс
 
@@ -46,18 +46,18 @@ PATCH /deviceManagement/reports
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементрепортс](../resources/intune-reporting-devicemanagementreports.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементрепортс](../resources/intune-reporting-devicemanagementreports.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этой сущности|
+|id|Строка|Уникальный идентификатор для этой сущности|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементрепортс](../resources/intune-reporting-devicemanagementreports.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -86,6 +86,9 @@ Content-Length: 114
   "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
 }
 ```
+
+
+
 
 
 

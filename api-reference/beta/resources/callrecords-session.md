@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cf3be35bd7b1ee1a4ec6185199c3cd5ab3b9b7fc
-ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
+ms.openlocfilehash: 5c31acb452b8d30763e8ba0500354c9b6d6bbbfc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408285"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046895"
 ---
 # <a name="session-resource-type"></a>Тип ресурса Session
 
@@ -24,7 +24,7 @@ ms.locfileid: "44408285"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список сеансов](../api/callrecords-session-list.md) | Коллекция [Microsoft. Graph. каллрекордс. Session](callrecords-session.md) | Получение списка сеансов, связанных с объектом [каллрекорд](callrecords-callrecord.md) .
+| [Перечисление сеансов](../api/callrecords-session-list.md) | Коллекция [Microsoft. Graph. каллрекордс. Session](callrecords-session.md) | Получение списка сеансов, связанных с объектом [каллрекорд](callrecords-callrecord.md) .
  |
 
 ## <a name="properties"></a>Свойства
@@ -81,3 +81,4 @@ ms.locfileid: "44408285"
   "section": "documentation",
   "tocPath": ""
 }-->
+

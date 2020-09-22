@@ -3,14 +3,14 @@ title: Функция Жетассигнедроледетаилс
 description: Извлекает назначенные определения ролей и назначения ролей для текущего пользователя, прошедшего проверку подлинности.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c193b45ec7f8abbda7907530fe4c8b01e46343e3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ad876dc5759e3e8b7391d947e9e271caa39b10cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421291"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044916"
 ---
 # <a name="getassignedroledetails-function"></a>Функция Жетассигнедроледетаилс
 
@@ -46,11 +46,11 @@ GET /deviceManagement/getAssignedRoleDetails
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает код `200 OK` отклика и объект [девицеандаппманажементассигнедроледетаилс](../resources/intune-rbac-deviceandappmanagementassignedroledetails.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успеха эта функция возвращает `200 OK` код отклика и объект [девицеандаппманажементассигнедроледетаилс](../resources/intune-rbac-deviceandappmanagementassignedroledetails.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -79,6 +79,9 @@ Content-Length: 245
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c5c3815b2418f414aa552f211bbeed5f643eb0d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ddfdef3e9d5500951fc24de5beb333e822c9bbda
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519864"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046456"
 ---
 # <a name="teamsdeviceusageuserdetail-resource-type"></a>Тип ресурса Теамсдевицеусажеусердетаил
 
@@ -23,14 +23,14 @@ ms.locfileid: "42519864"
 | репортрефрешдате | Дата    |
 | userPrincipalName | String  |
 | ластактивитидате  | Дата    |
-| isDeleted         | Логическое |
+| isDeleted         | Boolean |
 | делетеддате       | Дата    |
-| уседвеб           | Логическое |
-| уседвиндовсфоне  | Логическое |
-| уседиос           | Логическое |
-| уседмак           | Логическое |
-| уседандроидфоне  | Логическое |
-| уседвиндовс       | Логическое |
+| уседвеб           | Boolean |
+| уседвиндовсфоне  | Boolean |
+| уседиос           | Boolean |
+| уседмак           | Boolean |
+| уседандроидфоне  | Boolean |
+| уседвиндовс       | Boolean |
 | репортпериод      | Строка  |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -58,3 +58,5 @@ ms.locfileid: "42519864"
   "reportPeriod": "String"
 }
 ```
+
+

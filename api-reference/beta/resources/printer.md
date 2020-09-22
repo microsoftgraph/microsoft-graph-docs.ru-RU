@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: ef636503c756d7a88321d723540ef47eaab65068
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: e262b7ab787302a73fa1cd42bc97868d9b065248
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183864"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046750"
 ---
 # <a name="printer-resource-type"></a>Тип ресурса Printer
 
@@ -25,9 +25,9 @@ ms.locfileid: "45183864"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Создание](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Создание (регистрация) нового принтера с универсальной печатью. |
-| [получение](../api/printer-get.md); | [Printer](printer.md) | Чтение свойств и связей объекта Printer. |
-| [обновление](../api/printer-update.md). | [Printer](printer.md) | Обновление объекта Printer. |
-| [удаление](../api/printer-delete.md); | Нет | Отмените регистрацию физического принтера в универсальной службе печати. |
+| [Получение](../api/printer-get.md) | [Printer](printer.md) | Чтение свойств и связей объекта Printer. |
+| [Обновление](../api/printer-update.md) | [Printer](printer.md) | Обновление объекта Printer. |
+| [Удаление](../api/printer-delete.md) | Нет | Отмените регистрацию физического принтера в универсальной службе печати. |
 | [getCapabilities](../api/printer-getcapabilities.md) | [принтеркапабилитиес](printercapabilities.md) | Получение списка возможностей принтера. |
 | [ресетдефаултс](../api/printer-resetdefaults.md) | Нет | Сброс параметров принтера по умолчанию. |
 | [Список заданий](../api/printer-list-jobs.md) | Коллекция [printJob](printjob.md) | Получение списка заданий печати, помещенных в очередь для обработки принтером. |
@@ -46,15 +46,15 @@ ms.locfileid: "45183864"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Идентификатор документа. Только для чтения.|
+|id|Строка|Идентификатор документа. Только для чтения.|
 |displayName|Строка|Имя принтера.|
 |manufacturer|String|Производитель, сообщаемый принтером. Только для чтения.|
 |model|String|Имя модели, сообщаемое принтером. Только для чтения.|
 |регистереддатетиме|DateTimeOffset|Значение DateTimeOffset при регистрации принтера. Только для чтения.|
 |status|[принтерстатус](printerstatus.md)|Состояние обработки принтера, включая ошибки. Только для чтения.|
 |IsShared|Boolean|Значение true, если принтер является общим; в противном случае — false. Только для чтения.|
-|isAcceptingJobs|Логический|Принимает ли принтер новые задания печати.|
-|расположение;|[принтерлокатион](printerlocation.md)|Физическое и/или организационное расположение принтера.|
+|isAcceptingJobs|Boolean|Принимает ли принтер новые задания печати.|
+|location|[принтерлокатион](printerlocation.md)|Физическое и/или организационное расположение принтера.|
 |defaults|[принтердефаултс](printerdefaults.md)|Параметры печати по умолчанию для принтера.|
 
 ## <a name="relationships"></a>Связи
@@ -106,3 +106,5 @@ ms.locfileid: "45183864"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

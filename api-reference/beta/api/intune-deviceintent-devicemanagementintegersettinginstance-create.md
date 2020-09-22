@@ -3,14 +3,14 @@ title: Создание Девицеманажементинтежерсетти
 description: Создание нового объекта Девицеманажементинтежерсеттингинстанце.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3815ba08bd426353cc6119b11a2109ec36314c8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1ae80f76084810f125456be935e97aa832904cfe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43329002"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047730"
 ---
 # <a name="create-devicemanagementintegersettinginstance"></a>Создание Девицеманажементинтежерсеттингинстанце
 
@@ -46,7 +46,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,14 +56,14 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|дефинитионид|String|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|валуежсон|String|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|id|Строка|Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|дефинитионид|Строка|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|валуежсон|Строка|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |value|Int32|Целое значение|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -98,6 +98,9 @@ Content-Length: 222
   "value": 5
 }
 ```
+
+
+
 
 
 

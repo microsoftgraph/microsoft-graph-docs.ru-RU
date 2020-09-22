@@ -3,14 +3,14 @@ title: Список ГраупполиципресентатиондеЦимал
 description: Список свойств и связей объектов ГраупполиципресентатиондеЦималтекстбокс.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e847e6a1b631a3897d2d773867fe69fb3f262312
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: de82a048a00cb88c21a12d9b2d7111e85740ebe2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424434"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047345"
 ---
 # <a name="list-grouppolicypresentationdecimaltextboxes"></a>Список ГраупполиципресентатиондеЦималтекстбоксес
 
@@ -43,13 +43,13 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [граупполиципресентатиондеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -84,6 +84,9 @@ Content-Length: 407
   ]
 }
 ```
+
+
+
 
 
 

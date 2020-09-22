@@ -3,14 +3,14 @@ title: Обновление Девицеманажементскриптдеви
 description: Обновление свойств объекта Девицеманажементскриптдевицестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ceae9a280a96db064413d1478165779f47aadc2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9e1b5cccf22c4d77bbb3483c97bbf79f91f48fb6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380462"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045105"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>Обновление Девицеманажементскриптдевицестате
 
@@ -45,26 +45,26 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта состояния устройства сценария управления устройствами. Это свойство доступно только для чтения.|
+|id|Строка|Ключ объекта состояния устройства сценария управления устройствами. Это свойство доступно только для чтения.|
 |рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние последнего запуска скрипта управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|ресултмессаже|String|Сведения о выходных данных выполнения.|
+|ресултмессаже|Строка|Сведения о выходных данных выполнения.|
 |ластстатеупдатедатетиме|DateTimeOffset|Последнее время выполнения скрипта управления устройствами.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочному выполнению сценария управления устройствами.|
 |errorDescription|String|Описание ошибки, соответствующее ошибочному выполнению сценария управления устройствами.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -103,6 +103,9 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
+
+
+
 
 
 

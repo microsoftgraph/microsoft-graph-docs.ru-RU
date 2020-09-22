@@ -3,14 +3,14 @@ title: Удаление объекта deviceAndAppManagementRoleAssignment
 description: Удаление объекта deviceAndAppManagementRoleAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6312381fcc175b8436f5ed1ae76a6f3cd9775f7a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: af4739b2ad37ad0a6f58a450138d9de5ca3e81d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421491"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045053"
 ---
 # <a name="delete-deviceandappmanagementroleassignment"></a>Удаление объекта deviceAndAppManagementRoleAssignment
 
@@ -43,13 +43,13 @@ DELETE /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -60,11 +60,14 @@ DELETE /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId
 DELETE https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

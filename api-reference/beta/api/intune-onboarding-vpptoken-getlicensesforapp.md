@@ -3,14 +3,14 @@ title: Функция Жетлиценсесфорапп
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bf039af8d499de281d0230872e86be6be6edf29e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dee58af29c6baed67ea5e504f047a7d93bf6470d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441357"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047212"
 ---
 # <a name="getlicensesforapp-function"></a>Функция Жетлиценсесфорапп
 
@@ -46,18 +46,18 @@ GET /deviceAppManagement/vppTokens/getLicensesForApp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|bundleId|String|Н/Д|
+|bundleId|String|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [впптокенлиценсесуммари](../resources/intune-onboarding-vpptokenlicensesummary.md) в тексте отклика.
+В случае успеха эта функция возвращает `200 OK` код отклика и коллекцию [впптокенлиценсесуммари](../resources/intune-onboarding-vpptokenlicensesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -87,6 +87,9 @@ Content-Length: 298
   ]
 }
 ```
+
+
+
 
 
 

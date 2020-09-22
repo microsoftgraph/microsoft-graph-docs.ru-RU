@@ -3,14 +3,14 @@ title: Функция Скопедфорресаурце
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f49981a46d8e11ef9880edb236d199251c63bb97
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: aae65ee899b4cc8921686c2ab503797abf5d26a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421252"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044909"
 ---
 # <a name="scopedforresource-function"></a>Функция Скопедфорресаурце
 
@@ -46,13 +46,13 @@ GET /deviceManagement/scopedForResource
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|resource|String|Н/Д|
+|resource|String|Пока не задокументировано.|
 
 
 
@@ -78,6 +78,9 @@ Content-Length: 21
   "value": true
 }
 ```
+
+
+
 
 
 

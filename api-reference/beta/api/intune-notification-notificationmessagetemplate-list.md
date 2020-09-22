@@ -3,14 +3,14 @@ title: Перечисление объектов notificationMessageTemplate
 description: Список свойств и связей объектов notificationMessageTemplate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3fd0ed622f839379ddb45eab66700a13f4b0d147
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9205625ad4bd38b35f33a118cebd84325a2d5fb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454450"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047310"
 ---
 # <a name="list-notificationmessagetemplates"></a>Перечисление объектов notificationMessageTemplate
 
@@ -46,10 +46,10 @@ GET /deviceManagement/notificationMessageTemplates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -83,6 +83,9 @@ Content-Length: 441
   ]
 }
 ```
+
+
+
 
 
 

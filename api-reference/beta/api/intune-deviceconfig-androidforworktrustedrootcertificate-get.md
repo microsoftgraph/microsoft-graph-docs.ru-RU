@@ -3,14 +3,14 @@ title: Получение Андроидфорворктрустедрутцер
 description: Чтение свойств и связей объекта Андроидфорворктрустедрутцертификате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f04106f0bf925961e951c6ad059dff8d4f964569
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 116ed75040d64e01961e1bda5b23c341e5e079e5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43345566"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045336"
 ---
 # <a name="get-androidforworktrustedrootcertificate"></a>Получение Андроидфорворктрустедрутцертификате
 
@@ -47,13 +47,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроидфорворктрустедрутцертификате](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -110,6 +110,9 @@ Content-Length: 1406
   }
 }
 ```
+
+
+
 
 
 

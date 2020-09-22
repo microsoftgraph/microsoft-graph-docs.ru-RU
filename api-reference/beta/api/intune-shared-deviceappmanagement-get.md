@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8973a5f839f547da652859ddec22ee9c52e6f82d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1a44a864a8f9c9cf519127fb93b9086881fe3d8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391175"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047196"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -29,12 +29,12 @@ ms.locfileid: "43391175"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись) | |
-| &nbsp;&nbsp; **Приложения**, **книги**, **входящая**миграция, **Интеграция партнеров**или **набор политик** | DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Реадв. ALL |
-| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; **Приложения**, **книги**, **onboarding**входящая миграция, **Интеграция партнеров**или **набор политик** | DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Реадв. ALL |
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений| |
-| &nbsp;&nbsp; **Приложения**, **книги**, **входящая**миграция, **Интеграция партнеров**или **набор политик** | DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Реадв. ALL |
-| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; **Приложения**, **книги**, **onboarding**входящая миграция, **Интеграция партнеров**или **набор политик** | DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Реадв. ALL |
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,11 +56,11 @@ GET /deviceAppManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) в теле ответа.
 
@@ -90,6 +90,9 @@ Content-Length: 133
   }
 }
 ```
+
+
+
 
 
 

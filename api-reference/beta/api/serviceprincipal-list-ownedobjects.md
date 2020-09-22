@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 2af06060eda49f904872dc7cc4d134db1d6dd34d
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 3ec40ad643ee5d337c702980ee7a164cab3c3b60
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44382706"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044517"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>СервицепринЦипалс: List ownedObjects
 
@@ -25,9 +25,9 @@ ms.locfileid: "44382706"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -44,7 +44,7 @@ GET /servicePrincipals/{id}/ownedObjects
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -115,3 +115,5 @@ Content-length: 55
   ]
 }
 -->
+
+

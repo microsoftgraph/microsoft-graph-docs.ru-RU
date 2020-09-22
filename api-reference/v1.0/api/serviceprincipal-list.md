@@ -5,18 +5,18 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9f7d6064546887a820a4d056d22de40fb084b6d2
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 46b14333d100c4c4859690978a39397a2781290c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383947"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045609"
 ---
 # <a name="list-serviceprincipals"></a>Перечисление servicePrincipals
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [servicePrincipal](../resources/serviceprincipal.md) .
+Получение списка объектов [servicePrincipal](../resources/serviceprincipal.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "44383947"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ GET /servicePrincipals
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [servicePrincipal](../resources/serviceprincipal.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [servicePrincipal](../resources/serviceprincipal.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
@@ -146,3 +146,4 @@ Content-type: application/json
   ]
 }
 -->
+

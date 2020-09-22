@@ -3,14 +3,14 @@ title: Get mobileApp
 description: Чтение свойств и связей объекта mobileApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fe080267c2f2a231282e6ba8f35e324b887fa7e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e14316cf0c189908b7f4ab6ff0cb1a4a328bf641
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448654"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047188"
 ---
 # <a name="get-mobileapp"></a>Get mobileApp
 
@@ -55,10 +55,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [mobileApp](../resources/intune-shared-mobileapp.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -106,6 +106,9 @@ Content-Length: 949
   }
 }
 ```
+
+
+
 
 
 

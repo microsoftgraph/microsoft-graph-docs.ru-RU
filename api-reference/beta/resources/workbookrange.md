@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 23748b2f92d8ba786ba6e8ef82df0243f9fe2617
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0f4afa72c4662f3f1254371a2c0170792a14196
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519199"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046227"
 ---
 # <a name="workbookrange-resource-type"></a>Тип ресурса workbookRange
 
@@ -44,7 +44,7 @@ ms.locfileid: "42519199"
 |[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|Возвращает определенное количество строк под заданным диапазоном.|
 |[Usedrange](../api/range-usedrange.md)|[workbookRange](workbookrange.md)|Возвращает используемый диапазон заданного объекта диапазона.|
 |[Clear](../api/range-clear.md)|Нет|Очищает значения, формат, заливку, границу диапазона и т. д.|
-|[Delete](../api/range-delete.md)|Нет.|Удаляет ячейки, связанные с диапазоном.|
+|[Delete](../api/range-delete.md)|Нет|Удаляет ячейки, связанные с диапазоном.|
 |[Insert](../api/range-insert.md)|[workbookRange](workbookrange.md)|Вставляет ячейку или диапазон ячеек на лист вместо этого диапазона, а также сдвигает другие ячейки, чтобы освободить место. Возвращает новый объект Range в пустом месте.|
 |[Merge](../api/range-merge.md)|Нет|Объединяет ячейки диапазона в одну область на листе.|
 |[Resizedrange](../api/workbookrange-resizedrange.md)|[workbookRangeView](workbookrangeview.md)|Возвращает объект диапазона, подобный текущему объекту диапазона, но увеличенный (или уменьшенный) на некоторое количество строк и столбцов в правом нижнем углу.|
@@ -129,3 +129,5 @@ ms.locfileid: "42519199"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 691a2843918707ab05ce798b6c191ea04aa2e42e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c4442e32b2fb84644f6ed7fcd436d5e2b79e0abc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519906"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046533"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>Тип ресурса Теамсасинкоператион
 
@@ -73,3 +73,5 @@ ms.locfileid: "42519906"
   "suppressions": []
 }
 -->
+
+

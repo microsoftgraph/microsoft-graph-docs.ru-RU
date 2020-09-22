@@ -3,14 +3,14 @@ title: Получение Усерекспериенцеаналитиксско
 description: Чтение свойств и связей объекта Усерекспериенцеаналитиксскорехистори.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c6e3374578922975ebafe1e4c81144ea6494c1e
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: eee751ad0bbe9f2280cde1724e649bf84c006738
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792627"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047443"
 ---
 # <a name="get-userexperienceanalyticsscorehistory"></a>Получение Усерекспериенцеаналитиксскорехистори
 
@@ -29,7 +29,7 @@ ms.locfileid: "46792627"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,13 +46,13 @@ GET /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnalyti
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [усерекспериенцеаналитиксскорехистори](../resources/intune-devices-userexperienceanalyticsscorehistory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -83,6 +83,9 @@ Content-Length: 350
   }
 }
 ```
+
+
+
 
 
 

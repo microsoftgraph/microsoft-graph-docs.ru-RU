@@ -3,14 +3,14 @@ title: Список Андроидфорворквпнконфигуратион
 description: Список свойств и связей объектов androidForWorkVpnConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e58dfd3cc62a083f9cc0e32dba1401e0039a96d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9bc2677e6f32ee401d061f3df3a2d412fdc004d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43345113"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045224"
 ---
 # <a name="list-androidforworkvpnconfigurations"></a>Список Андроидфорворквпнконфигуратионс
 
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -135,6 +135,9 @@ Content-Length: 2203
   ]
 }
 ```
+
+
+
 
 
 

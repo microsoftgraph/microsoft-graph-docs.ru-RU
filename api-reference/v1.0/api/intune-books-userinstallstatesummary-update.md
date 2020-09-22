@@ -3,14 +3,14 @@ title: Обновление объекта userInstallStateSummary
 description: Обновление свойств объекта userInstallStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b03442d0ebd4e0a0379003eba72b44023b7db7ec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2859c22ad2d5ad4bfab3c49f2f2515a295b2144c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468955"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045924"
 ---
 # <a name="update-userinstallstatesummary"></a>Обновление объекта userInstallStateSummary
 
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -96,6 +96,9 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
+
+
 
 
 

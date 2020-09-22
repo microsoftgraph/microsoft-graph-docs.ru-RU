@@ -3,14 +3,14 @@ title: Получение объекта windowsDefenderAdvancedThreatProtection
 description: Чтение свойств и связей объекта windowsDefenderAdvancedThreatProtectionConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a4040f81e59a54571c8113343586a1246cd4f7d9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d94788eb539eaffde2c67c8b3252f346d3b05595
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43429874"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047750"
 ---
 # <a name="get-windowsdefenderadvancedthreatprotectionconfiguration"></a>Получение объекта windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -48,13 +48,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -116,6 +116,9 @@ Content-Length: 1872
   }
 }
 ```
+
+
+
 
 
 

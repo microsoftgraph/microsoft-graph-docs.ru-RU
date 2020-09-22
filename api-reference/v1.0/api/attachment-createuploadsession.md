@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 153a7e0eef887722278c4e6ac52ba76aa8efdac2
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 6586842b36b89dda6cb5c501a85038f35feee318
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897612"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046036"
 ---
 # <a name="attachment-createuploadsession"></a>вложение: createUploadSession
 
@@ -45,7 +45,7 @@ ms.locfileid: "44897612"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Calendars. ReadWrite, mail. ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Calendars. ReadWrite, mail. ReadWrite |
-| Приложение                            | Calendars. ReadWrite, mail. ReadWrite |
+| Для приложений                            | Calendars. ReadWrite, mail. ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -67,10 +67,10 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -170,3 +170,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Обновление Девицеманажементинтежерсет
 description: Обновление свойств объекта Девицеманажементинтежерсеттингинстанце.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c4c2a96b666744fb935e3da8cf5fe08a1326429
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8588e2f41f2c465547b6163ab6df010c0368b4f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43328389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047709"
 ---
 # <a name="update-devicemanagementintegersettinginstance"></a>Обновление Девицеманажементинтежерсеттингинстанце
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,14 +56,14 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|дефинитионид|String|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|валуежсон|String|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|id|Строка|Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|дефинитионид|Строка|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|валуежсон|Строка|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |value|Int32|Целое значение|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -98,6 +98,9 @@ Content-Length: 222
   "value": 5
 }
 ```
+
+
+
 
 
 
