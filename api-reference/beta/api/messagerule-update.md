@@ -5,63 +5,63 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c3b6482c7ff896abb224c8e408ee8964bf7e8e96
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6b8d13c16fe2c0a70f85e704471a5bcabd55fc99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448437"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076829"
 ---
-# <a name="update-rule"></a><span data-ttu-id="d3cff-103">Обновление правила</span><span class="sxs-lookup"><span data-stu-id="d3cff-103">Update rule</span></span>
+# <a name="update-rule"></a><span data-ttu-id="aa717-103">Обновление правила</span><span class="sxs-lookup"><span data-stu-id="aa717-103">Update rule</span></span>
 
-<span data-ttu-id="d3cff-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d3cff-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="aa717-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="aa717-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d3cff-105">Изменение записываемых свойств объекта [messageRule](../resources/messagerule.md) и сохранение изменений.</span><span class="sxs-lookup"><span data-stu-id="d3cff-105">Change writable properties on a [messageRule](../resources/messagerule.md) object and save the changes.</span></span>
+<span data-ttu-id="aa717-105">Изменение записываемых свойств объекта [messageRule](../resources/messagerule.md) и сохранение изменений.</span><span class="sxs-lookup"><span data-stu-id="aa717-105">Change writable properties on a [messageRule](../resources/messagerule.md) object and save the changes.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d3cff-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d3cff-106">Permissions</span></span>
-<span data-ttu-id="d3cff-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d3cff-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="aa717-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="aa717-106">Permissions</span></span>
+<span data-ttu-id="aa717-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aa717-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d3cff-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d3cff-109">Permission type</span></span>      | <span data-ttu-id="d3cff-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d3cff-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="aa717-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="aa717-109">Permission type</span></span>      | <span data-ttu-id="aa717-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="aa717-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d3cff-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d3cff-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d3cff-112">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d3cff-112">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="d3cff-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d3cff-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d3cff-114">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d3cff-114">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="d3cff-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d3cff-115">Application</span></span> | <span data-ttu-id="d3cff-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d3cff-116">MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="aa717-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="aa717-111">Delegated (work or school account)</span></span> | <span data-ttu-id="aa717-112">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="aa717-112">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="aa717-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="aa717-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aa717-114">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="aa717-114">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="aa717-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="aa717-115">Application</span></span> | <span data-ttu-id="aa717-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="aa717-116">MailboxSettings.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d3cff-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d3cff-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aa717-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="aa717-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/mailFolders/inbox/messagerules/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="d3cff-118">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d3cff-118">Optional request headers</span></span>
-| <span data-ttu-id="d3cff-119">Имя</span><span class="sxs-lookup"><span data-stu-id="d3cff-119">Name</span></span>       | <span data-ttu-id="d3cff-120">Описание</span><span class="sxs-lookup"><span data-stu-id="d3cff-120">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="aa717-118">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="aa717-118">Optional request headers</span></span>
+| <span data-ttu-id="aa717-119">Имя</span><span class="sxs-lookup"><span data-stu-id="aa717-119">Name</span></span>       | <span data-ttu-id="aa717-120">Описание</span><span class="sxs-lookup"><span data-stu-id="aa717-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="d3cff-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d3cff-121">Authorization</span></span>  | <span data-ttu-id="d3cff-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d3cff-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="aa717-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="aa717-121">Authorization</span></span>  | <span data-ttu-id="aa717-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="aa717-p102">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="d3cff-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d3cff-124">Request body</span></span>
-<span data-ttu-id="d3cff-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="d3cff-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="aa717-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="aa717-124">Request body</span></span>
+<span data-ttu-id="aa717-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="aa717-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="d3cff-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="d3cff-128">Property</span></span>     | <span data-ttu-id="d3cff-129">Тип</span><span class="sxs-lookup"><span data-stu-id="d3cff-129">Type</span></span>   |<span data-ttu-id="d3cff-130">Описание</span><span class="sxs-lookup"><span data-stu-id="d3cff-130">Description</span></span>|
+| <span data-ttu-id="aa717-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="aa717-128">Property</span></span>     | <span data-ttu-id="aa717-129">Тип</span><span class="sxs-lookup"><span data-stu-id="aa717-129">Type</span></span>   |<span data-ttu-id="aa717-130">Описание</span><span class="sxs-lookup"><span data-stu-id="aa717-130">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="d3cff-131">actions</span><span class="sxs-lookup"><span data-stu-id="d3cff-131">actions</span></span> | [<span data-ttu-id="d3cff-132">messageRuleActions</span><span class="sxs-lookup"><span data-stu-id="d3cff-132">messageRuleActions</span></span>](../resources/messageruleactions.md) | <span data-ttu-id="d3cff-133">Действия, которые нужно применить к сообщению при выполнении определенных условий.</span><span class="sxs-lookup"><span data-stu-id="d3cff-133">Actions to be taken on a message when the corresponding conditions are fulfilled.</span></span> |
-| <span data-ttu-id="d3cff-134">conditions</span><span class="sxs-lookup"><span data-stu-id="d3cff-134">conditions</span></span> | [<span data-ttu-id="d3cff-135">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="d3cff-135">messageRulePredicates</span></span>](../resources/messagerulepredicates.md) | <span data-ttu-id="d3cff-136">Условия, выполнение которых активирует соответствующие действия для указанного правила.</span><span class="sxs-lookup"><span data-stu-id="d3cff-136">Conditions that when fulfilled, will trigger the corresponding actions for that rule.</span></span> |
-| <span data-ttu-id="d3cff-137">displayName</span><span class="sxs-lookup"><span data-stu-id="d3cff-137">displayName</span></span> | <span data-ttu-id="d3cff-138">String</span><span class="sxs-lookup"><span data-stu-id="d3cff-138">String</span></span> | <span data-ttu-id="d3cff-139">Отображаемое имя правила.</span><span class="sxs-lookup"><span data-stu-id="d3cff-139">The display name of the rule.</span></span> |
-| <span data-ttu-id="d3cff-140">exceptions</span><span class="sxs-lookup"><span data-stu-id="d3cff-140">exceptions</span></span> | [<span data-ttu-id="d3cff-141">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="d3cff-141">messageRulePredicates</span></span>](../resources/messagerulepredicates.md) | <span data-ttu-id="d3cff-142">Условия исключения для правила.</span><span class="sxs-lookup"><span data-stu-id="d3cff-142">Exception conditions for the rule.</span></span> |
-| <span data-ttu-id="d3cff-143">isEnabled</span><span class="sxs-lookup"><span data-stu-id="d3cff-143">isEnabled</span></span> | <span data-ttu-id="d3cff-144">Boolean</span><span class="sxs-lookup"><span data-stu-id="d3cff-144">Boolean</span></span> | <span data-ttu-id="d3cff-145">Указывает, включено ли применение правила к сообщениям.</span><span class="sxs-lookup"><span data-stu-id="d3cff-145">Indicates whether the rule is enabled to be applied to messages.</span></span> |
-| <span data-ttu-id="d3cff-146">isReadOnly</span><span class="sxs-lookup"><span data-stu-id="d3cff-146">isReadOnly</span></span> | <span data-ttu-id="d3cff-147">Boolean</span><span class="sxs-lookup"><span data-stu-id="d3cff-147">Boolean</span></span> | <span data-ttu-id="d3cff-148">Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил.</span><span class="sxs-lookup"><span data-stu-id="d3cff-148">Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.</span></span> |
-| <span data-ttu-id="d3cff-149">sequence</span><span class="sxs-lookup"><span data-stu-id="d3cff-149">sequence</span></span> | <span data-ttu-id="d3cff-150">Int32</span><span class="sxs-lookup"><span data-stu-id="d3cff-150">Int32</span></span> | <span data-ttu-id="d3cff-151">Определяет последовательность выполнения правила среди прочих правил.</span><span class="sxs-lookup"><span data-stu-id="d3cff-151">Indicates the order in which the rule is executed, among other rules.</span></span> |
+| <span data-ttu-id="aa717-131">actions</span><span class="sxs-lookup"><span data-stu-id="aa717-131">actions</span></span> | [<span data-ttu-id="aa717-132">messageRuleActions</span><span class="sxs-lookup"><span data-stu-id="aa717-132">messageRuleActions</span></span>](../resources/messageruleactions.md) | <span data-ttu-id="aa717-133">Действия, которые нужно применить к сообщению при выполнении определенных условий.</span><span class="sxs-lookup"><span data-stu-id="aa717-133">Actions to be taken on a message when the corresponding conditions are fulfilled.</span></span> |
+| <span data-ttu-id="aa717-134">conditions</span><span class="sxs-lookup"><span data-stu-id="aa717-134">conditions</span></span> | [<span data-ttu-id="aa717-135">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="aa717-135">messageRulePredicates</span></span>](../resources/messagerulepredicates.md) | <span data-ttu-id="aa717-136">Условия, выполнение которых активирует соответствующие действия для указанного правила.</span><span class="sxs-lookup"><span data-stu-id="aa717-136">Conditions that when fulfilled, will trigger the corresponding actions for that rule.</span></span> |
+| <span data-ttu-id="aa717-137">displayName</span><span class="sxs-lookup"><span data-stu-id="aa717-137">displayName</span></span> | <span data-ttu-id="aa717-138">String</span><span class="sxs-lookup"><span data-stu-id="aa717-138">String</span></span> | <span data-ttu-id="aa717-139">Отображаемое имя правила.</span><span class="sxs-lookup"><span data-stu-id="aa717-139">The display name of the rule.</span></span> |
+| <span data-ttu-id="aa717-140">exceptions</span><span class="sxs-lookup"><span data-stu-id="aa717-140">exceptions</span></span> | [<span data-ttu-id="aa717-141">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="aa717-141">messageRulePredicates</span></span>](../resources/messagerulepredicates.md) | <span data-ttu-id="aa717-142">Условия исключения для правила.</span><span class="sxs-lookup"><span data-stu-id="aa717-142">Exception conditions for the rule.</span></span> |
+| <span data-ttu-id="aa717-143">isEnabled</span><span class="sxs-lookup"><span data-stu-id="aa717-143">isEnabled</span></span> | <span data-ttu-id="aa717-144">Boolean</span><span class="sxs-lookup"><span data-stu-id="aa717-144">Boolean</span></span> | <span data-ttu-id="aa717-145">Указывает, включено ли применение правила к сообщениям.</span><span class="sxs-lookup"><span data-stu-id="aa717-145">Indicates whether the rule is enabled to be applied to messages.</span></span> |
+| <span data-ttu-id="aa717-146">isReadOnly</span><span class="sxs-lookup"><span data-stu-id="aa717-146">isReadOnly</span></span> | <span data-ttu-id="aa717-147">Boolean</span><span class="sxs-lookup"><span data-stu-id="aa717-147">Boolean</span></span> | <span data-ttu-id="aa717-148">Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил.</span><span class="sxs-lookup"><span data-stu-id="aa717-148">Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.</span></span> |
+| <span data-ttu-id="aa717-149">sequence</span><span class="sxs-lookup"><span data-stu-id="aa717-149">sequence</span></span> | <span data-ttu-id="aa717-150">Int32</span><span class="sxs-lookup"><span data-stu-id="aa717-150">Int32</span></span> | <span data-ttu-id="aa717-151">Определяет последовательность выполнения правила среди прочих правил.</span><span class="sxs-lookup"><span data-stu-id="aa717-151">Indicates the order in which the rule is executed, among other rules.</span></span> |
 
 
-## <a name="response"></a><span data-ttu-id="d3cff-152">Ответ</span><span class="sxs-lookup"><span data-stu-id="d3cff-152">Response</span></span>
-<span data-ttu-id="d3cff-153">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и обновленный объект [messageRule](../resources/messagerule.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="d3cff-153">If successful, this method returns a `200 OK` response code and updated [messageRule](../resources/messagerule.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="d3cff-154">Пример</span><span class="sxs-lookup"><span data-stu-id="d3cff-154">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d3cff-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="d3cff-155">Request</span></span>
-<span data-ttu-id="d3cff-156">В приведенном ниже примере меняется имя правила, а также действия, выполняемые с этим правилом в [примере](messagerule-get.md#example) [получения правила](messagerule-get.md), — вместо пересылки на указанный адрес устанавливается высокая важность.</span><span class="sxs-lookup"><span data-stu-id="d3cff-156">The following example changes the name of the rule, and the actions to be taken for that rule in the [example](messagerule-get.md#example) in [Get rule](messagerule-get.md), from forwarding to an address to marking its importance as high.</span></span> 
+## <a name="response"></a><span data-ttu-id="aa717-152">Ответ</span><span class="sxs-lookup"><span data-stu-id="aa717-152">Response</span></span>
+<span data-ttu-id="aa717-153">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и обновленный объект [messageRule](../resources/messagerule.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="aa717-153">If successful, this method returns a `200 OK` response code and updated [messageRule](../resources/messagerule.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="aa717-154">Пример</span><span class="sxs-lookup"><span data-stu-id="aa717-154">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="aa717-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="aa717-155">Request</span></span>
+<span data-ttu-id="aa717-156">В приведенном ниже примере меняется имя правила, а также действия, выполняемые с этим правилом в [примере](messagerule-get.md#example) [получения правила](messagerule-get.md), — вместо пересылки на указанный адрес устанавливается высокая важность.</span><span class="sxs-lookup"><span data-stu-id="aa717-156">The following example changes the name of the rule, and the actions to be taken for that rule in the [example](messagerule-get.md#example) in [Get rule](messagerule-get.md), from forwarding to an address to marking its importance as high.</span></span> 
 
-# <a name="http"></a>[<span data-ttu-id="d3cff-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="d3cff-157">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="aa717-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="aa717-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_messagerule"
@@ -77,22 +77,22 @@ Content-type: application/json
      }
 } 
 ```
-# <a name="c"></a>[<span data-ttu-id="d3cff-158">C#</span><span class="sxs-lookup"><span data-stu-id="d3cff-158">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="aa717-158">C#</span><span class="sxs-lookup"><span data-stu-id="aa717-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-messagerule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d3cff-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d3cff-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="aa717-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aa717-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-messagerule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d3cff-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d3cff-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="aa717-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="aa717-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-messagerule-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="d3cff-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="d3cff-161">Response</span></span>
-<span data-ttu-id="d3cff-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d3cff-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="aa717-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="aa717-161">Response</span></span>
+<span data-ttu-id="aa717-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="aa717-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,3 +134,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

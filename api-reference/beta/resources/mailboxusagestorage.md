@@ -5,29 +5,29 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 636417b5ec299bb11f82c406abecdebe72ee45de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 080b1e5eafb23e40df1307fc6ab3e9a4ef9c87f0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473417"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075534"
 ---
-# <a name="mailboxusagestorage-resource-type"></a><span data-ttu-id="29a98-103">Тип ресурса Маилбоксусажестораже</span><span class="sxs-lookup"><span data-stu-id="29a98-103">mailboxUsageStorage resource type</span></span>
+# <a name="mailboxusagestorage-resource-type"></a><span data-ttu-id="5339d-103">Тип ресурса Маилбоксусажестораже</span><span class="sxs-lookup"><span data-stu-id="5339d-103">mailboxUsageStorage resource type</span></span>
 
-<span data-ttu-id="29a98-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="29a98-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5339d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5339d-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="29a98-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="29a98-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5339d-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="5339d-105">Properties</span></span>
 
-| <span data-ttu-id="29a98-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="29a98-106">Property</span></span>           | <span data-ttu-id="29a98-107">Тип</span><span class="sxs-lookup"><span data-stu-id="29a98-107">Type</span></span>   |
+| <span data-ttu-id="5339d-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="5339d-106">Property</span></span>           | <span data-ttu-id="5339d-107">Тип</span><span class="sxs-lookup"><span data-stu-id="5339d-107">Type</span></span>   |
 | :----------------- | :----- |
-| <span data-ttu-id="29a98-108">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="29a98-108">reportRefreshDate</span></span>  | <span data-ttu-id="29a98-109">Дата</span><span class="sxs-lookup"><span data-stu-id="29a98-109">Date</span></span>   |
-| <span data-ttu-id="29a98-110">сторажеусединбитес</span><span class="sxs-lookup"><span data-stu-id="29a98-110">storageUsedInBytes</span></span> | <span data-ttu-id="29a98-111">Int64</span><span class="sxs-lookup"><span data-stu-id="29a98-111">Int64</span></span>  |
-| <span data-ttu-id="29a98-112">reportDate</span><span class="sxs-lookup"><span data-stu-id="29a98-112">reportDate</span></span>         | <span data-ttu-id="29a98-113">Дата</span><span class="sxs-lookup"><span data-stu-id="29a98-113">Date</span></span>   |
-| <span data-ttu-id="29a98-114">репортпериод</span><span class="sxs-lookup"><span data-stu-id="29a98-114">reportPeriod</span></span>       | <span data-ttu-id="29a98-115">String</span><span class="sxs-lookup"><span data-stu-id="29a98-115">String</span></span> |
+| <span data-ttu-id="5339d-108">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="5339d-108">reportRefreshDate</span></span>  | <span data-ttu-id="5339d-109">Дата</span><span class="sxs-lookup"><span data-stu-id="5339d-109">Date</span></span>   |
+| <span data-ttu-id="5339d-110">сторажеусединбитес</span><span class="sxs-lookup"><span data-stu-id="5339d-110">storageUsedInBytes</span></span> | <span data-ttu-id="5339d-111">Int64</span><span class="sxs-lookup"><span data-stu-id="5339d-111">Int64</span></span>  |
+| <span data-ttu-id="5339d-112">reportDate</span><span class="sxs-lookup"><span data-stu-id="5339d-112">reportDate</span></span>         | <span data-ttu-id="5339d-113">Дата</span><span class="sxs-lookup"><span data-stu-id="5339d-113">Date</span></span>   |
+| <span data-ttu-id="5339d-114">репортпериод</span><span class="sxs-lookup"><span data-stu-id="5339d-114">reportPeriod</span></span>       | <span data-ttu-id="5339d-115">String</span><span class="sxs-lookup"><span data-stu-id="5339d-115">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="29a98-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="29a98-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5339d-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5339d-116">JSON representation</span></span>
 
-<span data-ttu-id="29a98-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="29a98-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5339d-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5339d-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -42,3 +42,5 @@ ms.locfileid: "43473417"
   "reportPeriod": "String"
 }
 ```
+
+
